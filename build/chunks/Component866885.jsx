@@ -86,7 +86,7 @@ function V(e) {
   let {
     channel: p,
     isLoading: _
-  } = e, [A, G] = i.useState(false), Z = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), F = null == Z ? true : Z.applicationId, B = (0, s.e7)([T.ZP], () => null != F && T.ZP.isProxyTicketRefreshing(F), [F]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, m.q)(F), Y = null == Z ? true : Z.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == p ? true : p.id)), {
+  } = e, [A, G] = i.useState(false), Z = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), F = null == Z ? true : Z.applicationId, B = (0, s.e7)([T.ZP], () => null != F && T.ZP.isProxyTicketRefreshing(F), [F]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, h.q)(F), Y = null == Z ? true : Z.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == p ? true : p.id)), {
     dockedRect: K,
     isHidden: z
   } = (0, s.cj)([O.Z], () => {
@@ -102,7 +102,7 @@ function V(e) {
     selectedParticipant: X,
     participantsOpen: J
   } = (0, s.cj)([g.Z], () => ({
-    activityParticipant: null != Z && null != p ? g.Z.getParticipant(p.id, (0, h.gN)({
+    activityParticipant: null != Z && null != p ? g.Z.getParticipant(p.id, (0, m.gN)({
       applicationId: Z.applicationId,
       instanceId: Z.compositeInstanceId
     })) : null,
@@ -113,7 +113,7 @@ function V(e) {
   function eo() {
     if (null != p) {
       var e;
-      null != Z && u.Z.selectParticipant(p.id, (0, h.gN)({
+      null != Z && u.Z.selectParticipant(p.id, (0, m.gN)({
         applicationId: Z.applicationId,
         instanceId: Z.compositeInstanceId
       }));
@@ -136,7 +136,7 @@ function V(e) {
       isActivityInTextChannel: o,
       users: s
     } = e;
-    return ei && null != Z && ((null == Q ? true : Q.type) === j.fO.ACTIVITY || o) ? (null == (t = Z.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
+    return ei && null != Z && ((null == Q ? true : Q.type) === j.fO.ACTIVITY || o) ? (null == (t = Z.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(R.of, {
       onJumpToChannel: eo,
       applicationId: Z.applicationId,
       channel: p,
@@ -148,7 +148,7 @@ function V(e) {
       isExpanded: A,
       hideExpandedButton: o,
       embeddedActivity: Z
-    }) : o ? (0, r.jsx)(w.q5, {
+    }) : o ? (0, r.jsx)(R.q5, {
       idle: a,
       onMouseMove: n,
       onMouseDown: n,
@@ -167,7 +167,7 @@ function V(e) {
         onMouseLeave: i,
         className: M.clickShield,
         onDoubleClick: eo
-      }), (0, r.jsx)(w.YB, {
+      }), (0, r.jsx)(R.YB, {
         idle: a,
         onMouseMove: n,
         onMouseDown: n,
@@ -232,7 +232,7 @@ function V(e) {
             [M.pipModeShort]: ei && !A,
             [M.pipModeTall]: ei && A
           })
-        }) : (0, r.jsx)(R.J, {
+        }) : (0, r.jsx)(w.J, {
           allowPopups: (0, N.h)(H),
           referrerPolicy: D.um.has(Z.applicationId) ? "no-referrer" : "origin",
           url: Z.url,
@@ -243,7 +243,7 @@ function V(e) {
             [M.pipNonInteractive]: ei && !(null == (n = Z.config) ? true : n.useInteractivePIP)
           }),
           shouldRefocus: !ei && W
-        }), !ei && null != p && (0, r.jsx)(w.Ds, {
+        }), !ei && null != p && (0, r.jsx)(R.Ds, {
           participantsOpen: J,
           showToggleParticipants: false,
           channelId: p.id

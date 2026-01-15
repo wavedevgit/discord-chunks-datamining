@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,7 +107,7 @@ class y extends Chunk473749.PureComponent {
     } = this.props;
     return (0, r.jsx)(s.mh, {
       id: n.key,
-      children: i => (0, r.jsx)(c.P3F, h(_({
+      children: i => (0, r.jsx)(c.P3F, m(_({
         focusProps: {
           enabled: false
         },

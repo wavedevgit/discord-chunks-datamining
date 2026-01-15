@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Gb: () => s,
-  RD: () => m,
+  RD: () => h,
   Rs: () => p,
   WA: () => f,
   _2: () => _,
@@ -51,7 +51,7 @@ async function _(e) {
   null != t && t.setAppLocale(e)
 }
 
-function m(e) {
+function h(e) {
   if (!o()) return () => {};
   let t = r.Z.spellCheck.on("spellcheck-result", e);
   return null != t ? t : () => {}

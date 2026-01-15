@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,14 +59,14 @@ function g(e) {
     currentUser: t,
     userTeamsLoading: n,
     userTeams: p
-  } = e, [m, g] = i.useState(false), [E, b] = i.useState(false), [y, O] = i.useState(false), [v, S] = i.useState(false), [I, T] = i.useState(null), C = i.useCallback(e => {
+  } = e, [h, g] = i.useState(false), [E, b] = i.useState(false), [y, O] = i.useState(false), [v, S] = i.useState(false), [I, T] = i.useState(null), C = i.useCallback(e => {
     if (e.body.code === d.evJ.INVALID_PASSWORD) throw e;
     S(true), T(e.body.message)
   }, []), A = i.useCallback((e, t) => (0, o.ss)(e, t).then(d.dG4, C), [C]), N = i.useCallback(function() {
     var e;
     let n = arguments.length > 0 && true !== arguments[0] && arguments[0],
       i = l.Z.getGuildsArray().filter(e => e.ownerId === t.id);
-    return (null != (e = null == p ? true : p.filter(e => e.owner_user_id === t.id)) ? e : []).length > 0 ? void g(true) : i.length > 0 ? void b(true) : void(t.isClaimed() ? (0, a.h7j)(e => (0, r.jsx)(s.default, h(_({}, e), {
+    return (null != (e = null == p ? true : p.filter(e => e.owner_user_id === t.id)) ? e : []).length > 0 ? void g(true) : i.length > 0 ? void b(true) : void(t.isClaimed() ? (0, a.h7j)(e => (0, r.jsx)(s.default, m(_({}, e), {
       handleSubmit: e => A(e, n),
       title: n ? f.intl.string(f.t["8lQ2rR"]) : f.intl.string(f.t.jf5GGb),
       actionText: n ? f.intl.string(f.t["8lQ2rR"]) : f.intl.string(f.t.jf5GGb),
@@ -80,7 +80,7 @@ function g(e) {
       handleDisableAccount: () => N(false),
       handleDeleteAccount: () => N(true)
     }), (0, r.jsx)(u.Z, {
-      shouldRenderOwnedTeamsModal: m,
+      shouldRenderOwnedTeamsModal: h,
       shouldRenderOwnedGuildsModal: E,
       shouldRenderDeleteAccountConfirmModal: y,
       shouldRenderDisableAccountErrorModal: v,

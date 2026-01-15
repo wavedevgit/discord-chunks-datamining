@@ -2,7 +2,7 @@
 /** chunk id: 927723, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => m,
+  V: () => h,
   k: () => _
 });
 var Chunk54381 = require("./54381.js");
@@ -67,7 +67,7 @@ function _(e) {
   })
 }
 
-function m() {
+function h() {
   (0, i.Z)({
     title: l.intl.string(c.default.odgSTk),
     subtitle: l.intl.format(c.default.EZfHRq, {

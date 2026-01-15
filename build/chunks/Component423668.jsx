@@ -25,8 +25,8 @@ let l = {
         showSubmenus: f,
         showIcons: p,
         showHints: _,
-        showSubtext: m,
-        showDisabledItems: h,
+        showSubtext: h,
+        showDisabledItems: m,
         showColoredItems: g,
         dangerItemColor: E
       } = e, [b, y] = i.useState(true), [O, v] = i.useState(false), [S, I] = i.useState("text"), [T, C] = i.useState("cozy"), [A, N] = i.useState(true), P = e => (0, r.jsxs)(o.v2r, {
@@ -46,7 +46,7 @@ let l = {
           id: "pin",
           label: "Pin Message",
           icon: p ? o.qQX : true,
-          subtext: m ? "Pin this message to the channel" : true,
+          subtext: h ? "Pin this message to the channel" : true,
           hint: (0, r.jsx)(o.$jN, {
             type: o.$jN.Type.PULSING_ELLIPSIS
           }),
@@ -56,7 +56,7 @@ let l = {
           label: "Copy Message Link",
           icon: p ? o.TIy : true,
           action: () => {}
-        }), h && (0, r.jsx)(o.sNh, {
+        }), m && (0, r.jsx)(o.sNh, {
           id: "disabled",
           label: "Disabled Item",
           icon: p ? o.ewm : true,
@@ -176,7 +176,7 @@ let l = {
           icon: p ? o.XHJ : true,
           action: () => {}
         })]
-      }), R = i.useRef(null);
+      }), w = i.useRef(null);
       return (0, r.jsxs)("div", {
         className: s.container,
         children: [!A && (0, r.jsx)(a.zxk, {
@@ -192,10 +192,10 @@ let l = {
           position: "bottom",
           align: "center",
           shouldShow: true,
-          targetElementRef: R,
+          targetElementRef: w,
           onRequestClose: () => N(false),
           children: () => (0, r.jsx)("div", {
-            ref: R,
+            ref: w,
             style: {
               width: 1,
               height: 1,

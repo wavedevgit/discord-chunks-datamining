@@ -28,8 +28,8 @@ var Chunk507604 = require("./507604.js"),
   A = C.prototype,
   N = Chunk127849.SyntaxError,
   P = Chunk46015(A.exec),
-  R = Chunk46015("".charAt),
-  w = Chunk46015("".replace),
+  w = Chunk46015("".charAt),
+  R = Chunk46015("".replace),
   D = Chunk46015("".indexOf),
   x = Chunk46015("".slice),
   L = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
@@ -43,8 +43,8 @@ var Chunk507604 = require("./507604.js"),
   })),
   F = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {
-      if ("\\" === (t = R(e, r))) {
-        i += t + R(e, ++r);
+      if ("\\" === (t = w(e, r))) {
+        i += t + w(e, ++r);
         continue
       }
       a || "." !== t ? ("[" === t ? a = true : "]" === t && (a = false), i += t) : i += "[\\s\\S]"
@@ -53,7 +53,7 @@ var Chunk507604 = require("./507604.js"),
   },
   B = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = [], o = c(null), s = false, l = false, u = 0, d = ""; r <= n; r++) {
-      if ("\\" === (t = R(e, r))) t += R(e, ++r);
+      if ("\\" === (t = w(e, r))) t += w(e, ++r);
       else if ("]" === t) s = false;
       else if (!s) switch (true) {
         case "[" === t:
@@ -75,12 +75,12 @@ var Chunk507604 = require("./507604.js"),
 if (Chunk275717("RegExp", Z)) {
   for (var V = function(e, t) {
       var n, r, i, a, o, c, u = d(A, this),
-        m = f(e),
-        h = true === t,
+        h = f(e),
+        m = true === t,
         g = [],
         E = e;
-      if (!u && m && h && e.constructor === V) return e;
-      if ((m || d(A, e)) && (e = e.source, h && (t = _(E))), e = true === e ? "" : p(e), t = true === t ? "" : p(t), E = e, S && "dotAll" in j && (r = !!t && D(t, "s") > false) && (t = w(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && D(t, "y") > false) && G && (t = w(t, /y/g, "")), I && (e = (a = B(e))[0], g = a[1]), o = s(C(e, t), u ? this : A, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(F(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
+      if (!u && h && m && e.constructor === V) return e;
+      if ((h || d(A, e)) && (e = e.source, m && (t = _(E))), e = true === e ? "" : p(e), t = true === t ? "" : p(t), E = e, S && "dotAll" in j && (r = !!t && D(t, "s") > false) && (t = R(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && D(t, "y") > false) && G && (t = R(t, /y/g, "")), I && (e = (a = B(e))[0], g = a[1]), o = s(C(e, t), u ? this : A, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(F(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o

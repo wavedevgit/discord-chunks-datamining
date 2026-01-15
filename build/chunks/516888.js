@@ -2,7 +2,7 @@
 /** chunk id: 516888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => m
+  f: () => h
 }), require("./953529.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -24,7 +24,7 @@ function d(e, t, n) {
 let f = new Chunk579092.Yd("KvStore"),
   p = Object.prototype.hasOwnProperty,
   _ = Symbol("version");
-class m extends Chunk442837.yh {
+class h extends Chunk442837.yh {
   getMode() {
     return this.mode
   }

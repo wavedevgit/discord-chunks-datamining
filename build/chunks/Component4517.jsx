@@ -40,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,7 +108,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
     let {
       onCloseProfile: i,
       prompt: a
-    } = e, s = (0, m.Dt)(), {
+    } = e, s = (0, h.Dt)(), {
       analyticsLocations: l
     } = (0, _.ZP)(), {
       trackUserProfileAction: c
@@ -119,7 +119,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
         let {
           default: e
         } = await n.e("76215").then(n.bind(n, 66630));
-        return t => (0, r.jsx)(e, D(R({}, t), {
+        return t => (0, r.jsx)(e, D(w({}, t), {
           sourceAnalyticsLocations: l,
           prompt: a
         }))
@@ -175,7 +175,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
     let {
       emoji: p,
       text: _,
-      animate: m,
+      animate: h,
       className: g,
       renderToolbar: E,
       onShowToolbar: b,
@@ -183,9 +183,9 @@ let M = Chunk473749.forwardRef(function(e, t) {
       hasEntered: S = true
     } = e, I = (0, O.yi)(), {
       trackUserProfileAction: P
-    } = (0, y.KZ)(), R = (0, h.p)({
+    } = (0, y.KZ)(), w = (0, m.p)({
       location: "CustomStatusBubble"
-    }), w = null != p ? C.Hp : 0, D = C.hT + w, x = C.YF + w, L = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useRef(D), G = i.useRef(x), Z = null != p && null == _, [F, B] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!Z && S), K = S && F, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), R = null != p ? C.Hp : 0, D = C.hT + R, x = C.YF + R, L = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useRef(D), G = i.useRef(x), Z = null != p && null == _, [F, B] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!Z && S), K = S && F, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == I || I.onInteractionPopoutTargetRefChange(L)
     }, [I]);
@@ -219,7 +219,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       },
       $ = null != p ? (0, r.jsx)(f.Z, {
         emoji: p,
-        animate: m,
+        animate: h,
         hideTooltip: false,
         tooltipDelay: T.vB,
         className: N.statusEmoji
@@ -229,11 +229,11 @@ let M = Chunk473749.forwardRef(function(e, t) {
         className: N.statusText,
         children: _
       }) : null,
-      et = true === v || null != p && R ? null : (0, r.jsx)(u.Text, {
+      et = true === v || null != p && w ? null : (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         "aria-label": "".concat(A.intl.string(A.t.EVV6uZ), ": ").concat(v),
-        className: o()(N.statusText, R && N.italicPrompt),
+        className: o()(N.statusText, w && N.italicPrompt),
         children: null != v ? v : ""
       }),
       en = null == ee || "" === _ ? et : ee,
@@ -332,7 +332,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       onCloseProfile: o
     } = e, s = x(e, ["emoji", "text", "onCloseProfile"]);
     let [l, c] = i.useState(false);
-    return (0, r.jsx)(k, D(R({}, s), {
+    return (0, r.jsx)(k, D(w({}, s), {
       ref: t,
       emoji: n,
       text: a,
@@ -361,14 +361,14 @@ function G(e) {
     interactionType: d,
     interactionSource: f,
     resetInteraction: p
-  } = (0, O.Xo)(), _ = f === T.n_.STATUS && d === T.P.REACT, m = f === T.n_.STATUS && d === T.P.REPLY, h = _ || m, g = i.useRef(null), b = i.useRef(t), I = i.useRef(n);
+  } = (0, O.Xo)(), _ = f === T.n_.STATUS && d === T.P.REACT, h = f === T.n_.STATUS && d === T.P.REPLY, m = _ || h, g = i.useRef(null), b = i.useRef(t), I = i.useRef(n);
   i.useEffect(() => {
     f === T.n_.STATUS && ((b.current !== t || I.current !== n) && p(), b.current = t, I.current = n)
   }, [f, p, t, n]);
   let [C, A] = i.useState(false), P = i.useCallback(e => {
-    (e || !h) && A(e)
-  }, [h]), w = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : E.ZP.translateSurrogatesToInlineEmoji(e.name), L = (e, t) => null == e ? t : "".concat(e, " ").concat(t), j = () => {
-    let e = w(t);
+    (e || !m) && A(e)
+  }, [m]), R = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : E.ZP.translateSurrogatesToInlineEmoji(e.name), L = (e, t) => null == e ? t : "".concat(e, " ").concat(t), j = () => {
+    let e = R(t);
     return null == n ? e : L(e, n)
   };
   return (0, r.jsx)(v.Z, {
@@ -380,18 +380,18 @@ function G(e) {
     sourceType: T.n_.STATUS,
     onAction: u,
     onClose: () => A(false),
-    children: () => (0, r.jsx)(k, D(R({}, c), {
+    children: () => (0, r.jsx)(k, D(w({}, c), {
       ref: g,
       emoji: t,
       text: n,
       themeType: l,
-      className: h ? N.hoisted : true,
+      className: m ? N.hoisted : true,
       onShowToolbar: P,
       renderToolbar: e => (0, r.jsx)(S.ZP, {
         targetRef: g,
         user: a,
         sourceType: T.n_.STATUS,
-        isVisible: C && !h,
+        isVisible: C && !m,
         isExpandable: e,
         onAction: u
       })
@@ -408,7 +408,7 @@ let Z = Chunk473749.forwardRef(function(e, t) {
     placeholderText: u,
     prompt: d,
     disableToolbar: f = false
-  } = e, m = x(e, ["user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText", "prompt", "disableToolbar"]), h = (0, g.Z)(a.id), {
+  } = e, h = x(e, ["user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText", "prompt", "disableToolbar"]), m = (0, g.Z)(a.id), {
     analyticsLocations: E
   } = (0, _.ZP)(p.Z.USER_PROFILE_CUSTOM_STATUS_BUBBLE), y = (0, l.e7)([b.default], () => b.default.getId() === a.id), O = y && !f, v = !y && !a.bot && !f;
   if (null != s || null != c) {
@@ -416,45 +416,45 @@ let Z = Chunk473749.forwardRef(function(e, t) {
       n = null != s && "" !== s ? s : null;
     return (0, r.jsx)(_.Gt, {
       value: E,
-      children: (0, r.jsx)(k, R({
+      children: (0, r.jsx)(k, w({
         emoji: e,
         text: n,
         placeholderText: u,
         ref: t
-      }, m))
+      }, h))
     })
   }
-  let S = null != (n = null == h ? true : h.emoji) ? n : null,
-    I = null != (i = null == h ? true : h.state) ? i : null,
+  let S = null != (n = null == m ? true : m.emoji) ? n : null,
+    I = null != (i = null == m ? true : m.state) ? i : null,
     T = null != I && "" !== I ? I : null;
   return null != S || null != T || O ? null == S && null == T ? (0, r.jsx)(_.Gt, {
     value: E,
-    children: (0, r.jsx)(M, R({
+    children: (0, r.jsx)(M, w({
       onCloseProfile: o,
       prompt: d,
       ref: t
-    }, m))
+    }, h))
   }) : v ? (0, r.jsx)(_.Gt, {
     value: E,
-    children: (0, r.jsx)(G, R({
+    children: (0, r.jsx)(G, w({
       user: a,
       emoji: S,
       text: T
-    }, m))
+    }, h))
   }) : O ? (0, r.jsx)(_.Gt, {
     value: E,
-    children: (0, r.jsx)(U, R({
+    children: (0, r.jsx)(U, w({
       emoji: S,
       text: T,
       onCloseProfile: o,
       ref: t
-    }, m))
+    }, h))
   }) : (0, r.jsx)(_.Gt, {
     value: E,
-    children: (0, r.jsx)(k, R({
+    children: (0, r.jsx)(k, w({
       emoji: S,
       text: T,
       ref: t
-    }, m))
+    }, h))
   }) : null
 })

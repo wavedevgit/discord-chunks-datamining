@@ -7,7 +7,7 @@ require.d(exports, {
   Sk: () => d.Skl,
   W5: () => P,
   lm: () => O,
-  qb: () => R,
+  qb: () => w,
   rs: () => N,
   vP: () => A,
   vj: () => y
@@ -35,7 +35,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -195,8 +195,8 @@ function A(e, t, n) {
     cutoutWidth: f,
     cutoutHeight: p,
     cutoutRadius: _,
-    polygonScale: m,
-    polygonOrigin: h,
+    polygonScale: h,
+    polygonOrigin: m,
     dotY: g,
     dotX: E,
     dotRadius: b
@@ -222,9 +222,9 @@ function A(e, t, n) {
     }), (0, r.jsx)(o.animated.polygon, {
       points: C(t),
       fill: "black",
-      transform: m,
+      transform: h,
       style: {
-        transformOrigin: h
+        transformOrigin: m
       }
     }), (0, r.jsx)(o.animated.circle, {
       fill: "black",
@@ -267,7 +267,7 @@ function P(e, t, n) {
   }
 }
 
-function R(e) {
+function w(e) {
   let {
     status: t,
     isMobile: n = false,
@@ -276,7 +276,7 @@ function R(e) {
     style: s,
     color: l
   } = e, c = t === d.Skl.ONLINE && n, f = y(t, l);
-  return (0, r.jsx)(u.ZP, g(m({
+  return (0, r.jsx)(u.ZP, g(h({
     mask: N(t, c),
     className: a()(p.mask, o),
     style: s

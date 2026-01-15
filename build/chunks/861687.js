@@ -105,8 +105,8 @@ function e_(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let em = /^https/.test("https:") ? "wss:" : "ws:",
-  eh = 200,
+let eh = /^https/.test("https:") ? "wss:" : "ws:",
+  em = 200,
   eg = 20,
   eE = 500,
   eb = 250,
@@ -151,12 +151,12 @@ class eP extends Chunk47770.Z {
       }), null == e) this._endpoint = null, this.hostname = null;
     else {
       var t;
-      e = "".concat(em, "//").concat(e);
+      e = "".concat(eh, "//").concat(e);
       let {
         hostname: n,
         port: r
       } = null != (t = z.Z.toURLSafe(e)) ? t : {}, i = null != r ? parseInt(r) : NaN;
-      null != n && (80 === i || 443 === i) && (e = "".concat(em, "//").concat(n)), this._endpoint = e + "/", this.hostname = n
+      null != n && (80 === i || 443 === i) && (e = "".concat(eh, "//").concat(n)), this._endpoint = e + "/", this.hostname = n
     }
   }
   connect(e, t) {
@@ -170,7 +170,7 @@ class eP extends Chunk47770.Z {
       endpoint: n,
       token: r
     } = this;
-    if (this.endpoint = e, this.token = t, (n !== this.endpoint || r !== t) && (this._cleanupSocket(), this._mediaSessionId = null, null != n && (this._rtcConnectionId = (0, c.Z)(), m.Z.dispatch({
+    if (this.endpoint = e, this.token = t, (n !== this.endpoint || r !== t) && (this._cleanupSocket(), this._mediaSessionId = null, null != n && (this._rtcConnectionId = (0, c.Z)(), h.Z.dispatch({
         type: "RTC_CONNECTION_UPDATE_ID",
         connection: this
       }))), null == this.endpoint) return void this.setState(el.hes.AWAITING_ENDPOINT);
@@ -380,7 +380,7 @@ class eP extends Chunk47770.Z {
     } = (0, y.h)({
       location: "_chooseExperiments"
     });
-    n && t.push("should_analyze_user_voice_volume"), t.push("keyframe_on_join"), w.Z.getCurrentConfig({
+    n && t.push("should_analyze_user_voice_volume"), t.push("keyframe_on_join"), R.Z.getCurrentConfig({
       location: "_chooseExperiments"
     }, {
       autoTrackExposure: true
@@ -418,7 +418,7 @@ class eP extends Chunk47770.Z {
     })
   }
   _handleDisconnect(e, t, n, r) {
-    var i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, I, T, C;
+    var i, a, o, s, l, c, u, d, f, p, _, h, m, g, E, b, y, O, v, I, T, C;
     this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (V.default.track(el.rMx.VOICE_CONNECTION_SOCKET_FAILURE, e_(ef({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
@@ -486,7 +486,7 @@ class eP extends Chunk47770.Z {
       let n = F.Z.shouldIncludePreferredRegion() ? F.Z.getPreferredRegion() : null,
         i = U.Z.getSettings(),
         a = k.Z.getChannel(this.channelId),
-        o = null == (u = R.Z.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : c.sampleRateMismatchPercent,
+        o = null == (u = w.Z.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : c.sampleRateMismatchPercent,
         s = e_(ef(e_(ef({}, this._getAnalyticsProperties()), {
           hostname: this.hostname,
           port: this.port,
@@ -494,7 +494,7 @@ class eP extends Chunk47770.Z {
           reconnect: A,
           reason: r,
           duration: this.getDuration()
-        }), G.Z.getUserVoiceSettingsStats(this.context), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (p = this._voiceQuality) ? true : p.getBytesStats(), null == (_ = this._voiceQuality) ? true : _.getBufferStats(), null == (m = this._voiceQuality) ? true : m.getNetworkStats(), null == (h = this._voiceQuality) ? true : h.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (O = this._voiceQuality) ? true : O.getAudioDeviceStats(), null == (v = this._voiceQuality) ? true : v.getAudioLevelStats(), null == (I = this._voiceDuration) ? true : I.getDurationStats(), N.Z.getUsageStats(), this.getAudioDeviceStates(), null == (T = this._systemResponsiveness) ? true : T.getPttQueueLatencyStats()), {
+        }), G.Z.getUserVoiceSettingsStats(this.context), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (p = this._voiceQuality) ? true : p.getBytesStats(), null == (_ = this._voiceQuality) ? true : _.getBufferStats(), null == (h = this._voiceQuality) ? true : h.getNetworkStats(), null == (m = this._voiceQuality) ? true : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (O = this._voiceQuality) ? true : O.getAudioDeviceStats(), null == (v = this._voiceQuality) ? true : v.getAudioLevelStats(), null == (I = this._voiceDuration) ? true : I.getDurationStats(), N.Z.getUsageStats(), this.getAudioDeviceStates(), null == (T = this._systemResponsiveness) ? true : T.getPttQueueLatencyStats()), {
           num_noise_cancellation_changes: this._numNoiseCancellationChanges,
           media_session_id: this.getMediaSessionId(),
           channel_bitrate: null != a ? a.bitrate : null,
@@ -591,7 +591,7 @@ class eP extends Chunk47770.Z {
         qosEnabled: U.Z.getQoS(),
         signingKeyId: c ? u : true
       }, this.getExtraConnectionOptions())),
-      h = (0, _.zO)() - d;
+      m = (0, _.zO)() - d;
     f.setUseElectronVideo(l.supports(ec.AN.ELECTRON_VIDEO)), U.Z.supports(ec.AN.IMAGE_QUALITY_MEASUREMENT) && f.setVideoQualityMeasurement("imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec");
     let E = ["unk"];
     if (this.context === ec.Yn.STREAM) E.push("nvRelaxRc=250"), E.push("nvNewPresets");
@@ -627,7 +627,7 @@ class eP extends Chunk47770.Z {
     }), f.on(p.Sh.Connected, (r, i) => {
       if (this.logger.info("RTC connected to media server: ".concat(t, ":").concat(n)), e !== this._socket) return void this.logger.warn("Socket mismatch, disconnecting");
       switch (this._voiceQuality = new eo.Z(f), this._voiceQuality.start(), this._voiceQuality.on(eo.B.InputDeviceSampleRateChanged, e => {
-          m.Z.dispatch({
+          h.Z.dispatch({
             type: "AUDIO_INPUT_DEVICE_SAMPLE_RATE_CHANGED",
             sampleRate: e
           })
@@ -699,7 +699,7 @@ class eP extends Chunk47770.Z {
           this.setState(el.hes.DTLS_CONNECTING)
       }
       if (n === el.hes.RTC_CONNECTING && this.state === el.hes.RTC_DISCONNECTED ? this.reconnect() : this.state === el.hes.NO_ROUTE && (0 === this._backoff.fails && this._handleNoRoute(), this._backoff.fail(this.reconnect)), this.state === el.hes.RTC_CONNECTED) {
-        var r, i, a, o, s, l, c, u, d, p, m, g, E, b;
+        var r, i, a, o, s, l, c, u, d, p, h, g, E, b;
         let e = F.Z.shouldIncludePreferredRegion() ? F.Z.getPreferredRegion() : null;
         if (this._connecting) {
           let t = U.Z.getSettings(),
@@ -724,14 +724,14 @@ class eP extends Chunk47770.Z {
           V.default.track(el.rMx.VOICE_CONNECTION_TTC_COLLECTED, {
             rtc_connection_id: n.rtc_connection_id,
             time_1_creation_to_connect: this._connectStartTime - this._createdTime,
-            time_2_media_engine_connect: h,
+            time_2_media_engine_connect: m,
             time_3_media_engine_create_native_connection: null == (a = f.transportInfo) ? true : a.createConnectionTime,
             time_4_media_engine_connect_to_socket: null == (o = f.transportInfo) ? true : o.connectTime,
             time_5_scheduling_connected_callback: i(null == (s = this._connection) ? true : s.onConnectCallbackAt, null == (c = this._connection) || null == (l = c.transportInfo) ? true : l.connectCallbackScheduledMs),
             time_6_state_connected_to_end_measure: i(r, null == (u = this._connection) ? true : u.onConnectCallbackAt),
             connect_count: this._connectCount,
             rtc_connecting_native_connect: i(null == (d = this._connection) ? true : d.onConnectCallbackAt, null == (p = this._connection) ? true : p.beginInitializeAt),
-            rtc_connecting_native_codecs: i(null == (m = this._connection) ? true : m.onVideoCodecsCallbackAt, null == (g = this._connection) ? true : g.onConnectCallbackAt),
+            rtc_connecting_native_codecs: i(null == (h = this._connection) ? true : h.onVideoCodecsCallbackAt, null == (g = this._connection) ? true : g.onConnectCallbackAt),
             rtc_connecting_native_crypto_modes: i(null == (E = this._connection) ? true : E.onEncryptionModesCallbackAt, null == (b = this._connection) ? true : b.onVideoCodecsCallbackAt)
           })
         }
@@ -855,7 +855,7 @@ class eP extends Chunk47770.Z {
       for (this._pings.push({
           time: Date.now(),
           value: e
-        }); this._pings.length >= eh;) this._pings.shift();
+        }); this._pings.length >= em;) this._pings.shift();
       e > eE && this._pingBadCount++, this.emit(X.z.Ping, this._pings, this.quality)
     }
   }
@@ -922,7 +922,7 @@ class eP extends Chunk47770.Z {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       raw_thermal_state: t
-    })), m.Z.dispatch({
+    })), h.Z.dispatch({
       type: "MEDIA_SESSION_JOINED",
       mediaSessionId: this.getMediaSessionId(),
       context: this.context
@@ -930,7 +930,7 @@ class eP extends Chunk47770.Z {
   }
   _handleMediaSinkWants(e) {
     let t = this._connection;
-    this.logger.info("Remote media sink wants: ".concat(JSON.stringify(e))), this._remoteVideoSinkWants = e, m.Z.dispatch({
+    this.logger.info("Remote media sink wants: ".concat(JSON.stringify(e))), this._remoteVideoSinkWants = e, h.Z.dispatch({
       type: "RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS",
       context: this.context,
       wants: e,
@@ -1179,7 +1179,7 @@ class eP extends Chunk47770.Z {
       firstOccurrence: n,
       timeSinceInit: null != this._mlsInitReceivedTime ? n - this._mlsInitReceivedTime : true,
       eventLog: eN()
-    }), e.includes("GetPersistedKeyPair") ? h.Z.show({
+    }), e.includes("GetPersistedKeyPair") ? m.Z.show({
       title: eu.intl.string(eu.t.fJUioH),
       body: eu.intl.string(eu.t.CQLWvo)
     }) : this._alertMLSFailureDebouced(e, t)
@@ -1220,7 +1220,7 @@ class eP extends Chunk47770.Z {
   }
   _alertMLSFailure(e, t) {
     let n = B.default.getCurrentUser();
-    ((null == n ? true : n.isStaff()) || (null == n ? true : n.isStaffPersonal())) && h.Z.show({
+    ((null == n ? true : n.isStaff()) || (null == n ? true : n.isStaffPersonal())) && m.Z.show({
       title: "MLS Error in ".concat(e),
       body: "Error: ".concat(t, "! Please upload your logs in A/V settings and ask everyone in the call to do the same, and ping us in #av-e2ee in Core Tech!")
     })

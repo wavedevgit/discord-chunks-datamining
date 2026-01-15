@@ -18,8 +18,8 @@ var Chunk17042 = require("./17042.js"),
 function p(e, t, n) {
   var p;
   let {
-    node: m,
-    isVirtualized: h,
+    node: h,
+    isVirtualized: m,
     focusMode: g = "child",
     shouldSelectOnPressUp: E,
     onAction: b
@@ -37,19 +37,19 @@ function p(e, t, n) {
         if (n.current.contains(document.activeElement) && n.current !== document.activeElement) return;
         let r = "last" === t.selectionManager.childFocusStrategy ? _(e) : e.firstChild();
         if (r) return void(0, i.e)(r)
-      }(null == S.current || m.key === S.current) && n.current.contains(document.activeElement) || (0, i.e)(n.current)
+      }(null == S.current || h.key === S.current) && n.current.contains(document.activeElement) || (0, i.e)(n.current)
     }
   }, {
     itemProps: T,
     isPressed: C
   } = (0, f.C)({
     selectionManager: t.selectionManager,
-    key: m.key,
+    key: h.key,
     ref: n,
-    isVirtualized: h,
+    isVirtualized: m,
     focus: I,
     shouldSelectOnPressUp: E,
-    onAction: v ? () => v(m.key) : b,
+    onAction: v ? () => v(h.key) : b,
     isDisabled: 0 === t.collection.size
   }), A = e => {
     var r, a, c, u, d;
@@ -62,7 +62,7 @@ function p(e, t, n) {
           containingElement: (0, l.r)(n.current)
         });
         else {
-          if ((null == (r = O.getKeyLeftOf) ? true : r.call(O, m.key)) !== m.key) {
+          if ((null == (r = O.getKeyLeftOf) ? true : r.call(O, h.key)) !== h.key) {
             null == (a = n.current.parentElement) || a.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent));
             break
           }
@@ -80,7 +80,7 @@ function p(e, t, n) {
           containingElement: (0, l.r)(n.current)
         });
         else {
-          if ((null == (c = O.getKeyRightOf) ? true : c.call(O, m.key)) !== m.key) {
+          if ((null == (c = O.getKeyRightOf) ? true : c.call(O, h.key)) !== h.key) {
             null == (u = n.current.parentElement) || u.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent));
             break
           }
@@ -97,8 +97,8 @@ function p(e, t, n) {
         !e.altKey && n.current.contains(e.target) && (e.stopPropagation(), e.preventDefault(), null == (d = n.current.parentElement) || d.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent)))
     }
   }, N = e => {
-    if (S.current = m.key, e.target !== n.current) {
-      (0, a.E)() || t.selectionManager.setFocusedKey(m.key);
+    if (S.current = h.key, e.target !== n.current) {
+      (0, a.E)() || t.selectionManager.setFocusedKey(h.key);
       return
     }
     requestAnimationFrame(() => {
@@ -107,12 +107,12 @@ function p(e, t, n) {
   }, P = (0, c.d)(T, {
     role: "gridcell",
     onKeyDownCapture: A,
-    "aria-colspan": m.colSpan,
-    "aria-colindex": null != m.colIndex ? m.colIndex + 1 : true,
-    colSpan: h ? true : m.colSpan,
+    "aria-colspan": h.colSpan,
+    "aria-colindex": null != h.colIndex ? h.colIndex + 1 : true,
+    colSpan: m ? true : h.colSpan,
     onFocus: N
   });
-  return h && (P["aria-colindex"] = (null != (p = m.colIndex) ? p : m.index) + 1), E && null != P.tabIndex && null == P.onPointerDown && (P.onPointerDown = e => {
+  return m && (P["aria-colindex"] = (null != (p = h.colIndex) ? p : h.index) + 1), E && null != P.tabIndex && null == P.onPointerDown && (P.onPointerDown = e => {
     let t = e.currentTarget,
       n = t.getAttribute("tabindex");
     t.removeAttribute("tabindex"), requestAnimationFrame(() => {

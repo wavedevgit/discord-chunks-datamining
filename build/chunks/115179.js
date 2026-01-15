@@ -3,23 +3,23 @@
 "use strict";
 require.d(exports, {
   B3: () => N,
-  Bg: () => h,
+  Bg: () => m,
   FX: () => _,
   K: () => O,
-  Kr: () => m,
+  Kr: () => h,
   LM: () => v,
   Xv: () => E,
   _p: () => I,
   f$: () => S,
   hF: () => T,
   o9: () => P,
-  oo: () => R,
+  oo: () => w,
   vQ: () => b,
   w8: () => A,
   wj: () => y,
   xN: () => g,
   xn: () => p,
-  zG: () => w
+  zG: () => R
 }), require("./388685.js");
 var Chunk991998 = require("./991998.js"),
   Chunk551910 = require("./551910.js"),
@@ -43,7 +43,7 @@ function _(e) {
   return null != t && "expiresAtPremium" in t && null != t.expiresAtPremium ? (0, u.E8)(t.expiresAtPremium) : null
 }
 
-function m(e) {
+function h(e) {
   let t = p(e);
   if (null == t || !("expiresAt" in t) || null == t.expiresAt) return null;
   let n = new Date(e.expiresAt),
@@ -72,7 +72,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return e.rewardsConfig.rewards.some(e => e.type === o.w.FRACTIONAL_PREMIUM)
 }
 
@@ -120,7 +120,7 @@ function T(e) {
 }
 
 function C(e, t) {
-  if (h(e)) return (0, l.o8)(e);
+  if (m(e)) return (0, l.o8)(e);
   let n = (0, c.M1)(e);
   return t ? n.messages.nameWithArticle : n.messages.name
 }
@@ -143,7 +143,7 @@ function P(e) {
   return r.type === o.w.REWARD_CODE ? r : null
 }
 
-function R(e) {
+function w(e) {
   let {
     quest: {
       config: t
@@ -152,7 +152,7 @@ function R(e) {
   return n.assignmentMethod === i.j.TIERED && n.rewards.length > 0 && n.rewards.every(e => e.type === o.w.REWARD_CODE)
 }
 
-function w(e) {
+function R(e) {
   let t = e.rewardsConfig.platforms;
   return t.length > 0 ? t[0] : s.y$.CROSS_PLATFORM
 }

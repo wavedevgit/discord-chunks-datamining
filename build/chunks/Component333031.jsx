@@ -65,7 +65,7 @@ class S {
     null != this.zones.get(e) && (null == (t = this.resizeObserver) || t.unobserve(e), this.zones.delete(e), this.elements.delete(e), this.updateZones())
   }
   updateZones() {
-    if (!m.isPlatformEmbedded) return;
+    if (!h.isPlatformEmbedded) return;
     let e = p.Z.getWindow(b.$J);
     null != e && f.Z.setClickZones(Array.from(this.zones.values()).map(t => {
       let {
@@ -114,7 +114,7 @@ function T(e) {
     className: n,
     style: a,
     children: s
-  } = e, l = i.useContext(I), c = (0, u.e7)([g.Z], () => g.Z.hasRenderDebugMode(h.GO.ClickZones)), d = (0, u.e7)([_.default], () => _.default.disableClickableRegions), [{
+  } = e, l = i.useContext(I), c = (0, u.e7)([g.Z], () => g.Z.hasRenderDebugMode(m.GO.ClickZones)), d = (0, u.e7)([_.default], () => _.default.disableClickableRegions), [{
     refHandler: f,
     setObserve: p
   }] = i.useState(() => {

@@ -38,15 +38,15 @@ var a = /^\s*class\b/,
   f = "[object HTMLAllCollection]",
   p = "[object HTML document.all class]",
   _ = "[object HTMLCollection]",
-  m = "function" == typeof Symbol && !!Symbol.toStringTag,
-  h = !(0 in [, ]),
+  h = "function" == typeof Symbol && !!Symbol.toStringTag,
+  m = !(0 in [, ]),
   g = function() {
     returnfalse
   };
 if ("object" == typeof document) {
   var E = document.all;
   l.call(E) === l.call(document.all) && (g = function(e) {
-    if ((h || !e) && (true === e || "object" == typeof e)) try {
+    if ((m || !e) && (true === e || "object" == typeof e)) try {
       var t = l.call(e);
       return (t === f || t === p || t === _ || t === c) && null == e("")
     } catch (e) {}
@@ -65,7 +65,7 @@ module.exports = i ? function(e) {
 } : function(e) {
   if (g(e)) returntrue;
   if (!e || "function" != typeof e && "object" != typeof e) returnfalse;
-  if (m) return s(e);
+  if (h) return s(e);
   if (o(e)) returnfalse;
   var t = l.call(e);
   return (t === u || t === d || !!/^\[object HTML/.test(t)) && s(e)

@@ -23,8 +23,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = null,
-  m = {},
-  h = null;
+  h = {},
+  m = null;
 
 function g() {
   return {
@@ -59,11 +59,11 @@ function y(e) {
       channel: t,
       index: false
     }), n[t.id] = []
-  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, o.Z)(n._categories, n).forEach(b), m[e] = n, n
+  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, o.Z)(n._categories, n).forEach(b), h[e] = n, n
 }
 
 function O() {
-  m = {}, null != _ && y(_)
+  h = {}, null != _ && y(_)
 }
 
 function v(e) {
@@ -72,7 +72,7 @@ function v(e) {
       id: t
     }
   } = e;
-  m[t] = true, _ === t && y(t)
+  h[t] = true, _ === t && y(t)
 }
 
 function S(e) {
@@ -81,7 +81,7 @@ function S(e) {
       id: t
     }
   } = e;
-  delete m[t]
+  delete h[t]
 }
 
 function I(e) {
@@ -91,7 +91,7 @@ function I(e) {
     }
   } = e;
   if (null == t) returnfalse;
-  m[t] = true, _ === t && y(t)
+  h[t] = true, _ === t && y(t)
 }
 
 function T(e) {
@@ -101,7 +101,7 @@ function T(e) {
   for (let {
       guild_id: e
     }
-    of t) null != e && (m[e] = true, n = true, _ === e && y(e));
+    of t) null != e && (h[e] = true, n = true, _ === e && y(e));
   return n
 }
 
@@ -111,7 +111,7 @@ function C(e) {
     user: n
   } = e;
   if (l.default.getId() !== n.id) returnfalse;
-  m[t] = true, t === _ && y(t)
+  h[t] = true, t === _ && y(t)
 }
 
 function A() {
@@ -123,23 +123,23 @@ function N(e) {
   let {
     guildId: t
   } = e;
-  m[t] = true, t === _ && y(t)
+  h[t] = true, t === _ && y(t)
 }
 
 function P(e, t) {
-  if (h = t, null == e || null == e.getGuildId()) returnfalse;
+  if (m = t, null == e || null == e.getGuildId()) returnfalse;
   let n = e.getGuildId();
-  return null != n && (m[n] = true, n === _ && y(n), true)
-}
-
-function R(e) {
-  let {
-    channelId: t
-  } = e;
-  return null == t && null != h ? P(c.Z.getChannel(h), null) : P(c.Z.getChannel(t), t)
+  return null != n && (h[n] = true, n === _ && y(n), true)
 }
 
 function w(e) {
+  let {
+    channelId: t
+  } = e;
+  return null == t && null != m ? P(c.Z.getChannel(m), null) : P(c.Z.getChannel(t), t)
+}
+
+function R(e) {
   let {
     voiceStates: t
   } = e;
@@ -156,7 +156,7 @@ function D(e) {
   let {
     guildId: t
   } = e;
-  if (_ = null != t ? t : null, null == t || null != m[t]) returnfalse;
+  if (_ = null != t ? t : null, null == t || null != h[t]) returnfalse;
   y(t)
 }
 
@@ -165,7 +165,7 @@ function x() {
 }
 
 function L(e) {
-  let t = m[e];
+  let t = h[e];
   return null != t ? t : y(e)
 }
 class j extends(r = Chunk442837.ZP.Store) {
@@ -195,6 +195,6 @@ let M = new j(Chunk570140.Z, {
   GUILD_ROLE_DELETE: N,
   IMPERSONATE_UPDATE: N,
   IMPERSONATE_STOP: N,
-  VOICE_CHANNEL_SELECT: R,
-  VOICE_STATE_UPDATES: w
+  VOICE_CHANNEL_SELECT: w,
+  VOICE_STATE_UPDATES: R
 })

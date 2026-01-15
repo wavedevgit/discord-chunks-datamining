@@ -10,7 +10,7 @@ require.d(exports, {
   cW: () => T,
   dW: () => g,
   jH: () => d,
-  q_: () => m,
+  q_: () => h,
   qr: () => A,
   t8: () => _,
   wC: () => N,
@@ -75,12 +75,12 @@ function _(e, t) {
   return null != t.era && (n.era = t.era), null != t.year && (n.year = t.year), null != t.month && (n.month = t.month), null != t.day && (n.day = t.day), d(n), n
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = e.copy();
   return null != t.hour && (n.hour = t.hour), null != t.minute && (n.minute = t.minute), null != t.second && (n.second = t.second), null != t.millisecond && (n.millisecond = t.millisecond), g(n), n
 }
 
-function h(e) {
+function m(e) {
   e.second += Math.floor(e.millisecond / 1e3), e.millisecond = E(e.millisecond, 1e3), e.minute += Math.floor(e.second / 60), e.second = E(e.second, 60), e.hour += Math.floor(e.minute / 60), e.minute = E(e.minute, 60);
   let t = Math.floor(e.hour / 24);
   return e.hour = E(e.hour, 24), t
@@ -96,7 +96,7 @@ function E(e, t) {
 }
 
 function b(e, t) {
-  return e.hour += t.hours || 0, e.minute += t.minutes || 0, e.second += t.seconds || 0, e.millisecond += t.milliseconds || 0, h(e)
+  return e.hour += t.hours || 0, e.minute += t.minutes || 0, e.second += t.seconds || 0, e.millisecond += t.milliseconds || 0, m(e)
 }
 
 function y(e, t) {
@@ -202,18 +202,18 @@ function A(e, t, n, o) {
         t = 12 * !!n, s = n ? 23 : 11
       }
       let l = (0, r.IO)(e),
-        c = (0, r.Mw)(m(l, {
+        c = (0, r.Mw)(h(l, {
           hour: t
         }), new(0, i.IQ)),
         u = [(0, r.xA)(c, e.timeZone, "earlier"), (0, r.xA)(c, e.timeZone, "later")].filter(t => (0, r.FD)(t, e.timeZone).day === c.day)[0],
-        d = (0, r.Mw)(m(l, {
+        d = (0, r.Mw)(h(l, {
           hour: s
         }), new(0, i.IQ)),
         f = [(0, r.xA)(d, e.timeZone, "earlier"), (0, r.xA)(d, e.timeZone, "later")].filter(t => (0, r.FD)(t, e.timeZone).day === d.day).pop(),
         p = (0, r.ZI)(e) - e.offset,
         _ = Math.floor(p / a),
-        h = p % a;
-      return p = I(_, n, Math.floor(u / a), Math.floor(f / a), null == o ? true : o.round) * a + h, (0, r.Mw)((0, r.FD)(p, e.timeZone), e.calendar)
+        m = p % a;
+      return p = I(_, n, Math.floor(u / a), Math.floor(f / a), null == o ? true : o.round) * a + m, (0, r.Mw)((0, r.FD)(p, e.timeZone), e.calendar)
     }
     case "minute":
     case "second":
@@ -234,7 +234,7 @@ function A(e, t, n, o) {
 
 function N(e, t, n) {
   let i = (0, r.IO)(e),
-    a = m(_(i, t), t);
+    a = h(_(i, t), t);
   if (0 === a.compare(i)) return e;
   let o = (0, r.xA)(a, e.timeZone, n);
   return (0, r.Mw)((0, r.FD)(o, e.timeZone), e.calendar)

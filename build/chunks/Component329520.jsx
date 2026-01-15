@@ -22,8 +22,8 @@ function d(e) {
     textClassName: f,
     iconClassName: p,
     hideIcon: _ = false,
-    hideText: m = false,
-    hideTooltip: h = false,
+    hideText: h = false,
+    hideTooltip: m = false,
     canTruncate: g = true,
     showChannelName: E = false
   } = e, b = (0, i.e7)([s.Z], () => s.Z.getChannel(t.channelId)), y = (0, o.ZP)(b), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, v = null != O ? O : u.intl.string(u.t.eXan7B), S = null != y ? "".concat(v, " (").concat(y, ")") : v, I = E ? S : v, T = S;
@@ -33,12 +33,12 @@ function d(e) {
       className: p
     }),
     text: I,
-    tooltipText: h ? true : S,
+    tooltipText: m ? true : S,
     textVariant: d,
     className: f,
     canTruncate: g,
-    hideTooltip: h,
+    hideTooltip: m,
     "aria-label": T,
-    hideText: m
+    hideText: h
   })
 }

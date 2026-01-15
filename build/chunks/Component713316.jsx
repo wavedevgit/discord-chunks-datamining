@@ -2,7 +2,7 @@
 /** chunk id: 713316, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => m
+  w: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,26 +18,26 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk629183 = require("./629183.js");
 
-function m(e) {
+function h(e) {
   var t;
   let {
     handleClose: n
   } = e, {
     skusById: i,
-    selectedSkuId: m,
-    application: h
+    selectedSkuId: h,
+    application: m
   } = (0, c.JL)(), {
     isGift: g,
     giftRecipient: E
   } = (0, l.wD)();
-  a()(null != m, "Expected selectedSkuId"), a()(null != h, "Expected application");
-  let b = i[m];
+  a()(null != h, "Expected selectedSkuId"), a()(null != m, "Expected application");
+  let b = i[h];
   a()(null != b, "Expected sku");
   let y = g ? p.intl.formatToPlainString(p.t["2VjPTw"], {
     itemName: b.name,
     giftRecipient: null != (t = null == E ? true : E.username) ? t : "your recipient"
   }) : p.intl.formatToPlainString(p.t.wK0IbP, {
-    applicationName: h.name,
+    applicationName: m.name,
     itemName: b.name
   });
   return (0, r.jsxs)(f.C3, {

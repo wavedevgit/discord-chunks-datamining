@@ -17,7 +17,7 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk987650 = require("./987650.js"),
   Chunk501787 = require("./501787.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -85,16 +85,16 @@ function P(e) {
   N() || (y = n, C(n, "timer_expired")), O = [...n]
 }
 
-function R(e, t) {
+function w(e, t) {
   if (!f.Z.isOverlayEnabled) {
     if (0 === y.length) return;
-    w("overlay_disabled");
+    R("overlay_disabled");
     return
   }
   C(e, t), y = e, O = [...e]
 }
 
-function w(e) {
+function R(e) {
   for (let e of Object.values(v)) null != e && clearTimeout(e);
   v = {}, y = [], O = [], C([], e)
 }
@@ -108,7 +108,7 @@ function x() {
 }
 
 function L(e, t, n, r) {
-  let i = c.Z.getWindow(m.$J);
+  let i = c.Z.getWindow(h.$J);
   if (null == i) return;
   let a = Math.ceil(n * i.innerWidth),
     o = Math.ceil(r * i.innerHeight),
@@ -125,18 +125,18 @@ function L(e, t, n, r) {
 }
 
 function j(e) {
-  return w("crashed"), true
+  return R("crashed"), true
 }
 
 function M(e) {
   let {
     zones: t
   } = e;
-  return R(t, "set_click_zones"), true
+  return w(t, "set_click_zones"), true
 }
 
 function k() {
-  return w("refresh_host_window"), true
+  return R("refresh_host_window"), true
 }
 
 function U() {
@@ -164,7 +164,7 @@ class F extends(r = Chunk442837.ZP.Store) {
     return O
   }
 }
-h(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
+m(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
 let B = new F(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
   OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,

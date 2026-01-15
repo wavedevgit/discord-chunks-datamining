@@ -37,9 +37,9 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -47,7 +47,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -60,7 +60,7 @@ function g(e) {
     children: t,
     text: n,
     keyboardShortcut: p,
-    __unsupportedReactNodeAsText: h,
+    __unsupportedReactNodeAsText: m,
     asContainer: g = false,
     tag: E = "span",
     position: b = "top",
@@ -72,13 +72,13 @@ function g(e) {
     caretConfig: T,
     positionKey: C,
     ariaHidden: A = false
-  } = e, N = m(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]);
-  let [P, R] = i.useState(null);
+  } = e, N = h(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]);
+  let [P, w] = i.useState(null);
   i.useLayoutEffect(() => {
-    null != I && R(I.current)
+    null != I && w(I.current)
   }, [I]);
-  let w = i.useCallback(e => {
-      null == I && R(e), (0, c.k$)(S, e)
+  let R = i.useCallback(e => {
+      null == I && w(e), (0, c.k$)(S, e)
     }, [S, I]),
     {
       tooltipId: D,
@@ -87,7 +87,7 @@ function g(e) {
       trigger: j
     } = (0, d.Q)(_({
       children: t,
-      targetElementRef: w,
+      targetElementRef: R,
       asContainer: g,
       containerTag: E,
       ariaHidden: A
@@ -96,7 +96,7 @@ function g(e) {
     {
       defaultLayerContext: U
     } = (0, o.ZFG)(),
-    G = i.useMemo(() => null != h ? h : null == n || "" === n ? null : null != p && "" !== p ? (0, r.jsxs)("div", {
+    G = i.useMemo(() => null != m ? m : null == n || "" === n ? null : null != p && "" !== p ? (0, r.jsxs)("div", {
       className: f.tooltipWithShortcut,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
@@ -104,7 +104,7 @@ function g(e) {
       }), (0, r.jsx)(s.M2$, {
         shortcut: p
       })]
-    }) : n, [n, p, h]),
+    }) : n, [n, p, m]),
     Z = null != G && ("string" != typeof G || "" !== G),
     F = x || M;
   i.useEffect(() => {

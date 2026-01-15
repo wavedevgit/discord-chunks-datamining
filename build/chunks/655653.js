@@ -78,8 +78,8 @@ module.exports = function(e) {
       literal: "true false NULL",
       built_in: "std string wstring cin cout cerr clog stdin stdout stderr stringstream istringstream ostringstream auto_ptr deque list queue stack vector map set pair bitset multiset multimap unordered_set unordered_map unordered_multiset unordered_multimap priority_queue make_pair array shared_ptr abort terminate abs acos asin atan2 atan calloc ceil cosh cos exit exp fabs floor fmod fprintf fputs free frexp fscanf future isalnum isalpha iscntrl isdigit isgraph islower isprint ispunct isspace isupper isxdigit tolower toupper labs ldexp log10 log malloc realloc memchr memcmp memcpy memset modf pow printf putchar puts scanf sinh sin snprintf sprintf sqrt sscanf strcat strchr strcmp strcpy strcspn strlen strncat strncmp strncpy strpbrk strrchr strspn strstr tanh tan vfprintf vprintf vsprintf endl initializer_list unique_ptr"
     },
-    m = [d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
-    h = {
+    h = [d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    m = {
       variants: [{
         begin: /=/,
         end: /;/
@@ -91,11 +91,11 @@ module.exports = function(e) {
         end: /;/
       }],
       keywords: _,
-      contains: m.concat([{
+      contains: h.concat([{
         begin: /\(/,
         end: /\)/,
         keywords: _,
-        contains: m.concat(["self"]),
+        contains: h.concat(["self"]),
         relevance: 0
       }]),
       relevance: 0
@@ -142,7 +142,7 @@ module.exports = function(e) {
     keywords: _,
     disableAutodetect: true,
     illegal: "</",
-    contains: [].concat(h, g, m, [d, {
+    contains: [].concat(m, g, h, [d, {
       begin: e.IDENT_RE + "::",
       keywords: _
     }, {

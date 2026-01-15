@@ -22,10 +22,10 @@ function p(e) {
     constrain: a = "height",
     className: p,
     alt: _,
-    fallbackSrc: m,
-    "aria-hidden": h,
+    fallbackSrc: h,
+    "aria-hidden": m,
     showTooltip: g = false
-  } = e, E = (0, u.ZP)(), b = "".concat(n, "px"), [y, O] = i.useState(false), [v, S] = i.useState(false), I = null == m || v;
+  } = e, E = (0, u.ZP)(), b = "".concat(n, "px"), [y, O] = i.useState(false), [v, S] = i.useState(false), I = null == h || v;
   if (null == t || y && I) return (0, r.jsx)(c.IMN, {
     size: "custom",
     width: "100%",
@@ -50,9 +50,9 @@ function p(e) {
     children: (0, r.jsx)("img", {
       style: T,
       className: o()(f.contentImage, p),
-      src: y && null != m ? m : t,
-      "aria-hidden": h,
-      alt: null != _ ? _ : h ? true : d.intl.string(d.t["2B/phM"]),
+      src: y && null != h ? h : t,
+      "aria-hidden": m,
+      alt: null != _ ? _ : m ? true : d.intl.string(d.t["2B/phM"]),
       onError: e => y ? S(true) : O(true)
     })
   }, "content-image")

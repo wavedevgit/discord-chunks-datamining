@@ -30,7 +30,7 @@ function E(e) {
   }), [v, S] = i.useState(false), I = i.useCallback(e => {
     e && S(true)
   }, []), T = (0, a.O)(I), C = i.useCallback(() => {
-    f.default.track(m.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+    f.default.track(h.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: o.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
@@ -43,7 +43,7 @@ function E(e) {
   }, [t]), i.useEffect(() => {
     v && y === _.M.FETCHED && C()
   }, [v, y, C]), i.useEffect(() => {
-    v && b && f.default.track(m.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    v && b && f.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: o.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: O,
@@ -52,7 +52,7 @@ function E(e) {
   }, [v, O, b, n.author.id, n.channel_id]), b) ? (0, r.jsxs)(c.Z, {
     containerRef: T,
     children: [(0, r.jsx)(c.Z.Header, {
-      text: h.intl.string(h.t.j4KtLa)
+      text: m.intl.string(m.t.j4KtLa)
     }), (0, r.jsx)(c.Z.Body, {
       children: (0, r.jsxs)("div", {
         className: g.invalidBody,
@@ -60,15 +60,15 @@ function E(e) {
           expired: true
         }), (0, r.jsx)(c.Z.Info, {
           expired: true,
-          title: h.intl.string(h.t.NaQLEx),
-          children: h.intl.string(h.t["0H5OT2"])
+          title: m.intl.string(m.t.NaQLEx),
+          children: m.intl.string(m.t["0H5OT2"])
         })]
       })
     })]
   }) : null == E || y === _.M.FETCHING ? (0, r.jsxs)(c.Z, {
     containerRef: T,
     children: [(0, r.jsx)(c.Z.Header, {
-      text: h.intl.string(h.t.m9hXGR)
+      text: m.intl.string(m.t.m9hXGR)
     }), (0, r.jsx)(c.Z.Body, {
       resolving: true
     })]

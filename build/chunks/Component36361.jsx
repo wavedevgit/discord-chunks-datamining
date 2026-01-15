@@ -43,7 +43,7 @@ function O(e) {
         node: t
       });
     case i.Jq.FIELD_SET:
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(m.Z, {
         node: t
       });
     case i.Jq.RELATED:
@@ -51,7 +51,7 @@ function O(e) {
         node: t
       });
     case i.Jq.CATEGORY:
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(h.Z, {
         node: t
       });
     case i.Jq.ACCORDION:

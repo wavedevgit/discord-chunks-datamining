@@ -23,8 +23,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 864e5,
-  m = 3e4,
-  h = 3e5,
+  h = 3e4,
+  m = 3e5,
   g = 1,
   E = new Chunk26842.j({
     ttlMs: _
@@ -42,7 +42,7 @@ function b() {
 }
 
 function y() {
-  (0, c.QI)(u.default.getCurrentUser()) ? E.setTtl(m): b() ? E.setTtl(h) : E.setTtl(_)
+  (0, c.QI)(u.default.getCurrentUser()) ? E.setTtl(h): b() ? E.setTtl(m) : E.setTtl(_)
 }
 
 function O() {

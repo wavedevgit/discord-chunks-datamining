@@ -2,13 +2,13 @@
 /** chunk id: 616922, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C7: () => m,
+  C7: () => h,
   Hw: () => u,
   M5: () => o,
   Ps: () => c,
   SD: () => f,
   ai: () => l,
-  c8: () => h,
+  c8: () => m,
   kG: () => d,
   lS: () => s
 });
@@ -31,7 +31,7 @@ var u = function(e) {
 let f = ["open.spotify.com", "www.spotify.com"],
   p = "https://api.spotify.com/v1",
   _ = e => "?utm_source=discord&utm_medium=".concat(e),
-  m = Object.freeze({
+  h = Object.freeze({
     PROFILE: "".concat(p, "/me"),
     NOTIFICATIONS_PLAYER: "".concat(p, "/me/notifications/player"),
     PLAYER: "".concat(p, "/me/player"),
@@ -58,7 +58,7 @@ let f = ["open.spotify.com", "www.spotify.com"],
     IOS_APP_STORE: "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8"
   });
 
-function h(e) {
+function m(e) {
   if ("string" != typeof e) return null;
   switch (e) {
     case "track":

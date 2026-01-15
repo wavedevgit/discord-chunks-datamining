@@ -68,7 +68,7 @@ function _(e) {
   return l[t] !== n && (l[t] = n, i = true), c[t] !== r && (c[t] = r, i = true), i
 }
 
-function m(e) {
+function h(e) {
   let {
     invite: t
   } = e, {
@@ -79,7 +79,7 @@ function m(e) {
   c[n.id] = r
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     count: n
@@ -105,7 +105,7 @@ let E = new g(Chunk570140.Z, {
   GUILD_CREATE: f,
   GUILD_DELETE: p,
   GUILD_MEMBER_LIST_UPDATE: _,
-  INVITE_ACCEPT_SUCCESS: m,
-  INVITE_RESOLVE_SUCCESS: m,
-  ONLINE_GUILD_MEMBER_COUNT_UPDATE: h
+  INVITE_ACCEPT_SUCCESS: h,
+  INVITE_RESOLVE_SUCCESS: h,
+  ONLINE_GUILD_MEMBER_COUNT_UPDATE: m
 })

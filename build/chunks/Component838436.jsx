@@ -68,7 +68,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     className: t,
     children: n
@@ -79,7 +79,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     setting: t,
     className: n,
@@ -118,5 +118,5 @@ function g(e) {
 }
 
 function E(e) {
-  return null != e.scrollPosition ? (0, r.jsx)(g, p({}, e)) : null != e.setting ? (0, r.jsx)(h, p({}, e)) : (0, r.jsx)(m, p({}, e))
+  return null != e.scrollPosition ? (0, r.jsx)(g, p({}, e)) : null != e.setting ? (0, r.jsx)(m, p({}, e)) : (0, r.jsx)(h, p({}, e))
 }

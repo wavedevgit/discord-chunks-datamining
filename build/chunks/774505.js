@@ -25,10 +25,10 @@ var Chunk698091 = require("./698091.js"),
   _ = function(e, t) {
     return i.defineHidden(e, d, t)
   },
-  m = function(e) {
+  h = function(e) {
     return e && e[d] && e[d].getPayload()
   },
-  h = function() {
+  m = function() {
     function e() {
       this.payload = true, _(this, this)
     }
@@ -55,7 +55,7 @@ var Chunk698091 = require("./698091.js"),
       var e = this.done;
       this.done = false, i.is.num(this._value) && (this.elapsedTime = 0, this.lastPosition = this._value, e && (this.lastVelocity = null), this.v0 = null)
     }, t
-  }(h),
+  }(m),
   E = function(e) {
     function t(t, n) {
       var r;
@@ -117,12 +117,12 @@ var Chunk698091 = require("./698091.js"),
     }, n._addToPayload = function(e) {
       var t = this;
       i.getFluidConfig(e) && b.current && b.current.dependencies.add(e);
-      var n = m(e);
+      var n = h(e);
       n && i.each(n, function(e) {
         return t.add(e)
       })
     }, t
-  }(h),
+  }(m),
   O = function(e) {
     function t(t, n) {
       var r;
@@ -240,4 +240,4 @@ var T = Symbol.for("AnimatedComponent"),
   A = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-exports.Animated = h, exports.AnimatedArray = O, exports.AnimatedObject = y, exports.AnimatedProps = v, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = C, exports.getAnimated = p, exports.getPayload = m, exports.isAnimated = f, exports.setAnimated = _
+exports.Animated = m, exports.AnimatedArray = O, exports.AnimatedObject = y, exports.AnimatedProps = v, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = C, exports.getAnimated = p, exports.getPayload = h, exports.isAnimated = f, exports.setAnimated = _

@@ -6,7 +6,7 @@ require.d(exports, {
   Jz: () => C,
   Kf: () => N,
   _w: () => A,
-  mG: () => w
+  mG: () => R
 });
 var Chunk990415 = require("./990415.js"),
   Chunk21814 = require("./21814.js"),
@@ -24,20 +24,20 @@ let c = null,
     Escape: true
   };
 
-function m(e, t) {
+function h(e, t) {
   for (let n of u) n(e, t)
 }
 
-function h(e) {
+function m(e) {
   return !(e.metaKey || !(0, i.V5)() && e.altKey || e.ctrlKey || "Control" === e.key || "Shift" === e.key || "Meta" === e.key)
 }
 
 function g(e) {
-  f = true, h(e) && (c = "keyboard", m("keyboard", e))
+  f = true, m(e) && (c = "keyboard", h("keyboard", e))
 }
 
 function E(e) {
-  c = "pointer", ("mousedown" === e.type || "pointerdown" === e.type) && (f = true, m("pointer", e))
+  c = "pointer", ("mousedown" === e.type || "pointerdown" === e.type) && (f = true, h("pointer", e))
 }
 
 function b(e) {
@@ -45,7 +45,7 @@ function b(e) {
 }
 
 function y(e) {
-  e.target !== window && e.target !== document && !r.uR && e.isTrusted && (f || p || (c = "virtual", m("virtual", e)), f = false, p = false)
+  e.target !== window && e.target !== document && !r.uR && e.isTrusted && (f || p || (c = "virtual", h("virtual", e)), f = false, p = false)
 }
 
 function O() {
@@ -89,7 +89,7 @@ function C() {
 }
 
 function A(e) {
-  c = e, m(e, null)
+  c = e, h(e, null)
 }
 
 function N() {
@@ -107,7 +107,7 @@ function N() {
 "undefined" != typeof document && I();
 let P = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = (0, o.r3)(null == n ? true : n.target),
     i = "undefined" != typeof window ? (0, o.kR)(null == n ? true : n.target).HTMLInputElement : HTMLInputElement,
     a = "undefined" != typeof window ? (0, o.kR)(null == n ? true : n.target).HTMLTextAreaElement : HTMLTextAreaElement,
@@ -116,10 +116,10 @@ function R(e, t, n) {
   return !((e = e || r.activeElement instanceof i && !P.has(r.activeElement.type) || r.activeElement instanceof a || r.activeElement instanceof s && r.activeElement.isContentEditable) && "keyboard" === t && n instanceof l && !_[n.key])
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   v(), (0, s.useEffect)(() => {
     let t = (t, r) => {
-      R(!!(null == n ? true : n.isTextInput), t, r) && e(T())
+      w(!!(null == n ? true : n.isTextInput), t, r) && e(T())
     };
     return u.add(t), () => {
       u.delete(t)

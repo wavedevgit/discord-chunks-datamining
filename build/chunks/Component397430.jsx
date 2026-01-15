@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   GQ: () => g,
-  MC: () => h,
+  MC: () => m,
   P: () => E,
   ZP: () => b
 });
@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk51144 = require("./51144.js"),
   Chunk707306 = require("./707306.js");
 
-function h(e) {
+function m(e) {
   let {
     channel: t,
     avatarSize: n,
@@ -36,14 +36,14 @@ function h(e) {
     let a = i.getAvatarURL(null, o.ny6[n].size);
     return (0, r.jsx)(o.qEK, {
       "aria-hidden": true,
-      className: m.searchResultDMChannelIcon,
+      className: h.searchResultDMChannelIcon,
       size: n,
       src: a
     })
   }
   if (t.isGroupDM()) return (0, r.jsx)(c.Z, {
     "aria-hidden": true,
-    className: m.searchResultGDMChannelIcon,
+    className: h.searchResultGDMChannelIcon,
     channel: t,
     size: n
   });
@@ -60,7 +60,7 @@ function g(e) {
     channel: t
   } = e;
   return t.isDM() || t.isGroupDM() ? (0, r.jsx)("span", {
-    className: m.searchResultDMChannelName,
+    className: h.searchResultDMChannelName,
     children: (0, s.F6)(t, p.default, d.Z)
   }) : (0, r.jsx)("strong", {
     children: (0, s.F6)(t, p.default, d.Z)
@@ -75,14 +75,14 @@ function E(e) {
     let e = t.getRecipientId(),
       n = p.default.getUser(e);
     return null == n ? null : (0, r.jsx)("span", {
-      className: m.searchResultDMUserName,
+      className: h.searchResultDMUserName,
       children: _.ZP.getUserTag(n, {
         identifiable: f.Z.enabled && f.Z.hidePersonalInformation ? "never" : "always"
       })
     })
   }
   if (null != n) return (0, r.jsx)("span", {
-    className: m.searchResultChannelCategory,
+    className: h.searchResultChannelCategory,
     children: (0, s.F6)(n, p.default, d.Z)
   })
 }
@@ -97,8 +97,8 @@ function b(e) {
   return null == t ? (0, r.jsx)("strong", {
     children: n
   }) : (0, r.jsxs)("div", {
-    className: a()(m.resultChannel, i),
-    children: [(0, r.jsx)(h, {
+    className: a()(h.resultChannel, i),
+    children: [(0, r.jsx)(m, {
       channel: t,
       avatarSize: o.EFr.SIZE_20,
       iconSize: "refresh_sm"

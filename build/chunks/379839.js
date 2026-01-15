@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => _,
-  p: () => m
+  p: () => h
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk410030 = require("./410030.js"),
@@ -29,9 +29,9 @@ function _(e) {
   }, [e, t]), n
 }
 
-function m(e, t, n, o, s) {
+function h(e, t, n, o, s) {
   let l = (0, i.ZP)(),
-    c = (0, r.useMemo)(() => null == t ? null : h({
+    c = (0, r.useMemo)(() => null == t ? null : m({
       palette: t.palette,
       theme: l,
       hover: n,
@@ -60,7 +60,7 @@ function m(e, t, n, o, s) {
   }, [e, c, f]), u
 }
 
-function h(e) {
+function m(e) {
   let {
     palette: t,
     theme: n,
@@ -69,13 +69,13 @@ function h(e) {
     placement: _
   } = e;
   if (!(0, o.ic)(t)) return;
-  let m = n === s.BR.LIGHT,
-    h = m ? t.lightBackground : t.darkBackground;
+  let h = n === s.BR.LIGHT,
+    m = h ? t.lightBackground : t.darkBackground;
   if (_ === a.i.MEMBER_LIST || _ === a.i.CHANNEL) {
     let e = "".concat(i ? p : r && _ === a.i.MEMBER_LIST ? d : u);
-    return "linear-gradient(90deg, transparent 0%, ".concat(h).concat(l, " 20%, ").concat(h).concat(l, " 50%, ").concat(h).concat(e, " 100%)")
+    return "linear-gradient(90deg, transparent 0%, ".concat(m).concat(l, " 20%, ").concat(m).concat(l, " 50%, ").concat(m).concat(e, " 100%)")
   }
   let g = _ === a.i.MINI_PREVIEW ? u : c,
-    E = m ? d : f;
-  return "linear-gradient(90deg, ".concat(h).concat(g, " 0%, ").concat(h).concat(E, " 100%)")
+    E = h ? d : f;
+  return "linear-gradient(90deg, ".concat(m).concat(g, " 0%, ").concat(m).concat(E, " 100%)")
 }

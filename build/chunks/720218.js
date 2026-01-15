@@ -14,12 +14,12 @@ var Chunk50153 = require("./50153.js"),
   Chunk652092 = require("./652092.js"),
   Chunk348568 = require("./348568.js"),
   Chunk20271 = require("./20271.js"),
-  h = Chunk65183.OrderedSet,
+  m = Chunk65183.OrderedSet,
   g = {
     replaceText: function(e, t, n, i, a) {
       var o = _(p(e, t), t),
         s = r.create({
-          style: i || h(),
+          style: i || m(),
           entity: a || null
         });
       return u(o, o.getSelectionAfter(), n, s)
@@ -58,7 +58,7 @@ var Chunk50153 = require("./50153.js"),
     },
     splitBlock: function(e, t) {
       var n = _(p(e, t), t);
-      return m(n, n.getSelectionAfter())
+      return h(n, n.getSelectionAfter())
     },
     applyInlineStyle: function(e, t, n) {
       return i.add(e, t, n)

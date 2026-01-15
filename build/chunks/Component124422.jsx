@@ -17,17 +17,17 @@ function d(t, e, d) {
   var g;
   let {
     canManageGuildEvent: f
-  } = (0, u.XJ)(null != d ? d : e), b = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(t), [t]), v = f(b), E = null != (0, c.qY)(null != (g = null == d ? true : d.id) ? g : a.lds), p = null != b && (0, o.xt)(b);
-  return !v || p || E ? null : (0, l.jsx)(i.sNh, {
+  } = (0, u.XJ)(null != d ? d : e), v = (0, i.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(t), [t]), b = f(v), E = null != (0, c.qY)(null != (g = null == d ? true : d.id) ? g : a.lds), p = null != v && (0, o.xt)(v);
+  return !b || p || E ? null : (0, l.jsx)(r.sNh, {
     id: s.intl.string(s.t.cK1GGY),
     label: s.intl.string(s.t.cK1GGY),
     action: function() {
-      null != b && (0, i.ZDy)(async () => {
+      null != v && (0, r.ZDy)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("84722"), n.e("65413")]).then(n.bind(n, 296864));
         return e => {
-          var n, r;
+          var n, i;
           return (0, l.jsx)(t, (n = function(t) {
             for (var e = 1; e < arguments.length; e++) {
               var n = null != arguments[e] ? arguments[e] : {},
@@ -45,17 +45,17 @@ function d(t, e, d) {
               })
             }
             return t
-          }({}, e), r = r = {
-            event: b
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
+          }({}, e), i = i = {
+            event: v
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
             var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
               var l = Object.getOwnPropertySymbols(t);
               n.push.apply(n, l)
             }
             return n
-          })(Object(r)).forEach(function(t) {
-            Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(r, t))
+          })(Object(i)).forEach(function(t) {
+            Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(i, t))
           }), n))
         }
       })

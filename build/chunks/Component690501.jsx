@@ -19,12 +19,12 @@ function f(e) {
     gameFriends: t,
     hasIncomingPendingGameFriends: n,
     hasOutgoingPendingGameFriends: f
-  } = e, [p, _] = i.useState(false), m = i.useCallback(() => _(true), []), h = i.useMemo(() => p ? t.map(e => {
+  } = e, [p, _] = i.useState(false), h = i.useCallback(() => _(true), []), m = i.useMemo(() => p ? t.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }) : d, [p, t]), g = (0, o.Z)(h, p), E = i.useMemo(() => g.filter(s.lm), [g]), {
+  }) : d, [p, t]), g = (0, o.Z)(m, p), E = i.useMemo(() => g.filter(s.lm), [g]), {
     tooltipText: b,
     ariaLabel: y
   } = i.useMemo(() => {
@@ -54,7 +54,7 @@ function f(e) {
     throw Error("[GameRelationshipButton] Tooltip text and aria label should not be undefined.")
   }, [E, t.length, n, f]);
   return {
-    onMouseEnter: m,
+    onMouseEnter: h,
     ariaLabel: y,
     tooltipText: b,
     icon: i.useMemo(() => {

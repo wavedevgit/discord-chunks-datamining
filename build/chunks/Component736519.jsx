@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   L: () => _,
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,22 +18,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk558585 = require("./558585.js");
 let _ = e => e === d.Si.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.Ve9Ge6),
-  m = e => {
+  h = e => {
     let {
       className: t,
       textOptions: n,
       color: i,
       look: d,
       hideIcon: f,
-      subscriptionTier: m,
-      premiumModalAnalyticsLocation: h,
+      subscriptionTier: h,
+      premiumModalAnalyticsLocation: m,
       giftMessage: g,
       onClick: E
-    } = e, b = (0, c.ZP)(), y = _(m);
+    } = e, b = (0, c.ZP)(), y = _(h);
     return (0, r.jsx)(u.Z, {
       isGift: true,
-      subscriptionTier: m,
-      premiumModalAnalyticsLocation: h,
+      subscriptionTier: h,
+      premiumModalAnalyticsLocation: m,
       giftMessage: g,
       onClick: E,
       children: e => {

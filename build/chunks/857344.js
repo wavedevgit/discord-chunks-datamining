@@ -27,7 +27,7 @@ function l(e) {
     columns: []
   }), [e.children, u, c, d]), p = (0, o.K)(e, (0, a.useCallback)(e => new(0, r.J)(e, null, f), [f]), f), {
     disabledKeys: _,
-    selectionManager: m
+    selectionManager: h
   } = (0, i.S)({
     ...e,
     collection: p,
@@ -36,7 +36,7 @@ function l(e) {
   return {
     collection: p,
     disabledKeys: _,
-    selectionManager: m,
+    selectionManager: h,
     showSelectionCheckboxes: e.showSelectionCheckboxes || false,
     sortDescriptor: null != (t = e.sortDescriptor) ? t : null,
     isKeyboardNavigationDisabled: 0 === p.size || n,

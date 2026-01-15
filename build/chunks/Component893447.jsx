@@ -58,8 +58,8 @@ function p(e) {
     selectionMode: d = "none",
     layout: p = "default",
     items: _,
-    onRemove: m,
-    children: h
+    onRemove: h,
+    children: m
   } = e, [g, E] = i.useState(() => new Set), b = i.useContext(o.z);
   return (0, r.jsxs)(a.QS, {
     "aria-label": n,
@@ -71,7 +71,7 @@ function p(e) {
     selectedKeys: g,
     onSelectionChange: E,
     disabledKeys: c,
-    onRemove: m,
+    onRemove: h,
     children: [(0, r.jsx)(a.PS, {
       ref: t,
       className: l.tagList,
@@ -80,6 +80,6 @@ function p(e) {
         layout: p,
         accessibilityHint: e.accessibilityHint
       })))
-    }), h]
+    }), m]
   })
 }

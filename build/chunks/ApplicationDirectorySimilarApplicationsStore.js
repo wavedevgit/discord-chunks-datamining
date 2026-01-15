@@ -61,10 +61,10 @@ function _(e) {
   } = e;
   return "applicationId:".concat(t, " guildId:").concat(n, " page:").concat(r)
 }
-let m = new(a())({
+let h = new(a())({
     max: f
   }),
-  h = {};
+  m = {};
 
 function g(e) {
   let {
@@ -76,7 +76,7 @@ function g(e) {
     guildId: n,
     page: r
   });
-  h = d(c({}, h), {
+  m = d(c({}, m), {
     [i]: 1
   })
 }
@@ -94,13 +94,13 @@ function E(e) {
     guildId: n,
     page: a
   });
-  m.set(s, {
+  h.set(s, {
     lastFetchTimeMs: Date.now(),
     applications: r,
     loadId: i,
     page: a,
     totalPages: o
-  }), h = d(c({}, h), {
+  }), m = d(c({}, m), {
     [s]: 2
   })
 }
@@ -115,7 +115,7 @@ function b(e) {
     guildId: n,
     page: r
   });
-  h = d(c({}, h), {
+  m = d(c({}, m), {
     [i]: 3
   })
 }
@@ -132,7 +132,7 @@ class y extends(r = Chunk442837.ZP.Store) {
       guildId: n,
       page: r
     });
-    return m.get(i)
+    return h.get(i)
   }
   getFetchState(e) {
     let {
@@ -140,7 +140,7 @@ class y extends(r = Chunk442837.ZP.Store) {
       guildId: n,
       page: r
     } = e;
-    if (null != t) return h[_({
+    if (null != t) return m[_({
       applicationId: t,
       guildId: n,
       page: r

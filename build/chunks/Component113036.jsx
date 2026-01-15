@@ -66,14 +66,14 @@ let C = e => {
   let {
     channel: t,
     width: n
-  } = e, a = (0, s.e7)([c.Z], () => c.Z.getFilteredParticipants(t.id)), v = (0, g.Z)(t.id), I = i.useMemo(() => (0, u.F6)(t, h.default, m.Z), [t]), C = (0, d.Z)(t), A = n * (E.U.height / E.U.width), N = 1156, P = 1050, [R, w] = i.useState(.65), [D, x] = i.useState({
+  } = e, a = (0, s.e7)([c.Z], () => c.Z.getFilteredParticipants(t.id)), v = (0, g.Z)(t.id), I = i.useMemo(() => (0, u.F6)(t, m.default, h.Z), [t]), C = (0, d.Z)(t), A = n * (E.U.height / E.U.width), N = 1156, P = 1050, [w, R] = i.useState(.65), [D, x] = i.useState({
     x: 0,
     y: 0
   }), L = (0, l.y)(e => {
     let {
       contentRect: t
     } = e, n = Math.max(t.width / E.U.width * 1.5, t.height / E.U.height * 1.5), r = t.width / 2 - N * n, i = t.height / 2 - P * n;
-    w(n), x({
+    R(n), x({
       x: r,
       y: i
     })
@@ -99,7 +99,7 @@ let C = e => {
         children: (0, r.jsx)("div", {
           className: o()(b.haven, b.noTransition),
           style: {
-            transform: "translate(".concat(D.x, "px, ").concat(D.y, "px) scale(").concat(R, ")")
+            transform: "translate(".concat(D.x, "px, ").concat(D.y, "px) scale(").concat(w, ")")
           },
           children: (0, r.jsx)(E.Z, {
             roomSeats: v.seats,

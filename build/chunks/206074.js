@@ -17,9 +17,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk131734 = require("./131734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js");
-let m = new Set;
+let h = new Set;
 
-function h(e) {
+function m(e) {
   return (0, i.yE)(e.flags, p.udG.CLOUD_GAMING_DEMO) && (0, i.yE)(e.flags, p.udG.EMBEDDED)
 }
 
@@ -39,7 +39,7 @@ function E(e) {
       refetch: a
     } = (0, l.IX)(n);
   return r.useEffect(() => {
-    null == n || null == i || null != i.bot || m.has(n) || (a(), m.add(n))
+    null == n || null == i || null != i.bot || h.has(n) || (a(), h.add(n))
   }, [n, i, a]), i
 }
 
@@ -54,7 +54,7 @@ function b(e) {
   return null != e && ((null == e ? true : e.embeddedActivityConfig) == null || !!g({
     countryCode: null == t ? true : t.alpha2,
     activity: e.embeddedActivityConfig
-  })) && (!!h(e) || null != r && null != n && !!(0, s.ye)(n) && ((null == n ? true : n.embeddedActivityConfig) == null || !!g({
+  })) && (!!m(e) || null != r && null != n && !!(0, s.ye)(n) && ((null == n ? true : n.embeddedActivityConfig) == null || !!g({
     countryCode: null == t ? true : t.alpha2,
     activity: n.embeddedActivityConfig
   })))
@@ -72,7 +72,7 @@ function y(e) {
     bot: u
   } = null != l ? l : {
     bot: null
-  }, f = null == l ? true : l.id, m = null == u ? true : u.id;
+  }, f = null == l ? true : l.id, h = null == u ? true : u.id;
   return r.useMemo(() => {
     if (!i || null == t) return null;
     let e = () => {
@@ -82,7 +82,7 @@ function y(e) {
         dismissAction: _.L.TAKE_ACTION
       })
     };
-    return h(t) && null != s ? () => {
+    return m(t) && null != s ? () => {
       e(), d.default.track(p.rMx.CLOUD_PLAY_CTA_CLICKED, {
         source_application_id: t.id,
         launching_application_id: t.id,
@@ -92,16 +92,16 @@ function y(e) {
         botId: s.id,
         analyticsLocations: null != n ? n : []
       })
-    } : null != f && null != m ? () => {
+    } : null != f && null != h ? () => {
       e(), d.default.track(p.rMx.CLOUD_PLAY_CTA_CLICKED, {
         source_application_id: t.id,
         launching_application_id: f,
         location_stack: n
       }), (0, o.W)({
         appId: f,
-        botId: m,
+        botId: h,
         analyticsLocations: null != n ? n : []
       })
     } : true
-  }, [i, t, s, f, m, n])
+  }, [i, t, s, f, h, n])
 }

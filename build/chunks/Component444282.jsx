@@ -27,7 +27,7 @@ function b(e) {
     option: n,
     keyboardModeEnabled: a
   } = e, b = i.useRef(null), [y, O] = i.useState(false), v = f.Z.getUpload(t, n.name, d.d.SlashCommand), S = i.useRef(null), I = e => {
-    if (e.which === m.yXg.ENTER) {
+    if (e.which === h.yXg.ENTER) {
       var t;
       e.preventDefault(), null == (t = b.current) || t.activateUploadDialogue()
     }
@@ -124,7 +124,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           className: g.optionHelp,
           variant: "text-sm/normal",
-          children: h.intl.string(h.t.IJyOUf)
+          children: m.intl.string(m.t.IJyOUf)
         }), (0, r.jsx)(c.Z, {
           ref: b,
           onChange: N,

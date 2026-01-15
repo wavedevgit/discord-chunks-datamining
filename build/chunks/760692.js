@@ -51,8 +51,8 @@ let c = "--custom-display-name-styles-gradient-start-color",
   f = "--custom-display-name-styles-light-1-color",
   p = "--custom-display-name-styles-light-2-color",
   _ = "--custom-display-name-styles-dark-1-color",
-  m = "--custom-display-name-styles-dark-2-color",
-  h = "--custom-display-name-styles-toon-stroke-color",
+  h = "--custom-display-name-styles-dark-2-color",
+  m = "--custom-display-name-styles-toon-stroke-color",
   g = "--custom-display-name-styles-neon-stroke-color",
   E = "--custom-display-name-styles-wrap",
   b = "--custom-display-name-styles-font-opacity";
@@ -72,8 +72,8 @@ function y(e) {
     [f]: n,
     [p]: r,
     [_]: a,
-    [m]: o,
-    [h]: s,
+    [h]: o,
+    [m]: s,
     [g]: l
   }
 }

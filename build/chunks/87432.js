@@ -47,37 +47,37 @@ function s(e, t) {
 
 function l(e, t, n) {
   var i, o, c, u, d, f, p, _;
-  let m = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+  let h = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (!t.has(e.key)) return null;
   if (!(0, r.Lk)(e)) return n.register({
     node: e,
-    parentPanelKey: null == (d = m.panel) ? true : d.key,
-    parentTabKey: null == (f = m.tab) ? true : f.key,
-    parentCategoryKey: null == (p = m.category) ? true : p.key,
-    parentAccordionKey: null == (_ = m.accordion) ? true : _.key
+    parentPanelKey: null == (d = h.panel) ? true : d.key,
+    parentTabKey: null == (f = h.tab) ? true : f.key,
+    parentCategoryKey: null == (p = h.category) ? true : p.key,
+    parentAccordionKey: null == (_ = h.accordion) ? true : _.key
   }), e;
-  let h = m;
-  e.type === r.Jq.SIDEBAR_ITEM && (h = s(a({}, m), {
+  let m = h;
+  e.type === r.Jq.SIDEBAR_ITEM && (m = s(a({}, h), {
     panel: e.layout[0]
-  })), e.type === r.Jq.PANEL && (h = s(a({}, m), {
+  })), e.type === r.Jq.PANEL && (m = s(a({}, h), {
     panel: e
-  })), e.type === r.Jq.CATEGORY && (h = s(a({}, m), {
+  })), e.type === r.Jq.CATEGORY && (m = s(a({}, h), {
     category: e
-  })), e.type === r.Jq.ACCORDION && (h = s(a({}, m), {
+  })), e.type === r.Jq.ACCORDION && (m = s(a({}, h), {
     accordion: e
-  })), e.type === r.Jq.TAB_ITEM && (h = s(a({}, m), {
+  })), e.type === r.Jq.TAB_ITEM && (m = s(a({}, h), {
     tab: e
   }));
-  let g = e.layout.map(e => l(e, t, n, h)).filter(e => null != e);
+  let g = e.layout.map(e => l(e, t, n, m)).filter(e => null != e);
   if (0 === g.length && !("StronglyDiscouragedCustomComponent" in e || e.type === r.Jq.SIDEBAR_ITEM && "onClick" in e)) return null;
   let E = s(a({}, e), {
     layout: g
   });
   return n.register({
     node: E,
-    parentPanelKey: null == (i = h.panel) ? true : i.key,
-    parentTabKey: null == (o = h.tab) ? true : o.key,
-    parentCategoryKey: null == (c = h.category) ? true : c.key,
-    parentAccordionKey: null == (u = h.accordion) ? true : u.key
+    parentPanelKey: null == (i = m.panel) ? true : i.key,
+    parentTabKey: null == (o = m.tab) ? true : o.key,
+    parentCategoryKey: null == (c = m.category) ? true : c.key,
+    parentAccordionKey: null == (u = m.accordion) ? true : u.key
   }), E
 }

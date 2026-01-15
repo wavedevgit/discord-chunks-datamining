@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -75,13 +75,13 @@ function g(e) {
     children: t,
     label: n,
     description: a
-  } = e, d = m(e, ["children", "label", "description"]);
+  } = e, d = h(e, ["children", "label", "description"]);
   let {
     spacing: p
-  } = i.useContext(c.q), h = i.useId(), g = null != a && "" !== a;
+  } = i.useContext(c.q), m = i.useId(), g = null != a && "" !== a;
   return (0, r.jsxs)("fieldset", _(f({}, d), {
     className: o()(u.fieldset, d.className),
-    "aria-describedby": g ? h : true,
+    "aria-describedby": g ? m : true,
     children: [null != n ? (0, r.jsx)(l.x, {
       tag: "legend",
       variant: "text-lg/medium",
@@ -92,7 +92,7 @@ function g(e) {
       variant: "text-sm/normal",
       color: "text-default",
       className: u.description,
-      id: h,
+      id: m,
       children: a
     }) : null, (0, r.jsx)(s.K, {
       direction: "vertical",

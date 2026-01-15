@@ -19,8 +19,8 @@ let p = Chunk473749.forwardRef(function(e, t) {
   let {
     onCardClick: p,
     tooltipConfig: _,
-    shouldScalePreview: m = true,
-    renderPreview: h,
+    shouldScalePreview: h = true,
+    renderPreview: m,
     moreCount: g,
     isSingleCard: E = false,
     wishlistId: b,
@@ -32,7 +32,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
     skuProductLine: I
   } = y, {
     trackUserProfileWishlistAction: T
-  } = (0, u.KZ)(), C = m ? f.cardPreview : f.cardPreviewNoScale, A = E ? f.cardSingle : f.card, N = null != g && g > 0, P = (0, r.jsxs)(l.P3F, {
+  } = (0, u.KZ)(), C = h ? f.cardPreview : f.cardPreviewNoScale, A = E ? f.cardSingle : f.card, N = null != g && g > 0, P = (0, r.jsxs)(l.P3F, {
     onClick: () => {
       p(), T({
         action: N ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
@@ -48,7 +48,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
     innerRef: t,
     children: [(0, r.jsx)("div", {
       className: C,
-      children: h()
+      children: m()
     }), N && (0, r.jsx)("div", {
       className: f.moreOverlay,
       children: (0, r.jsxs)(l.Text, {
@@ -57,12 +57,12 @@ let p = Chunk473749.forwardRef(function(e, t) {
         children: ["+", g]
       })
     })]
-  }), R = !N && null != v;
+  }), w = !N && null != v;
   return (0, r.jsxs)("div", {
     className: o()({
-      [f.wrapperContainer]: R
+      [f.wrapperContainer]: w
     }),
-    children: [R && (0, r.jsx)("div", {
+    children: [w && (0, r.jsx)("div", {
       className: f.contextContainer,
       children: v === c.lr.POPULAR ? (0, r.jsx)(l.YqE, {
         className: o()(f.contextIcon, f.fireIcon),

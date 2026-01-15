@@ -27,7 +27,7 @@ function b(e) {
     guild: n,
     onAction: i,
     onClose: b
-  } = e, y = (0, c.ZP)(t), O = (0, o.e7)([p.Z], () => t.isPrivate() || p.Z.can(h.Pl.CONNECT, t)), v = () => {
+  } = e, y = (0, c.ZP)(t), O = (0, o.e7)([p.Z], () => t.isPrivate() || p.Z.can(m.Pl.CONNECT, t)), v = () => {
     if (!O) return y;
     let e = e => {
       e.stopPropagation(), t.isGuildStageVoice() ? (0, f.Cq)(t) : (l.default.selectVoiceChannel(t.id), (0, u.Kh)(t.id)), null == i || i({
@@ -59,7 +59,7 @@ function b(e) {
       variant: "heading-sm/semibold",
       color: "text-default",
       className: E.voiceChannelHeading,
-      children: [(0, r.jsx)(m.Z, {
+      children: [(0, r.jsx)(h.Z, {
         channel: t,
         size: "xxs",
         color: s.TVs.colors.TEXT_DEFAULT,

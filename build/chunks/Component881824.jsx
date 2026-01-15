@@ -6,7 +6,7 @@ require.d(exports, {
   Ev: () => g,
   Gy: () => I,
   R5: () => S,
-  T: () => h,
+  T: () => m,
   Us: () => O,
   Zl: () => v,
   vu: () => y
@@ -55,18 +55,18 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   (0, i.openModalLazy)(async () => {
     let {
       default: t
     } = await n.e("24753").then(n.bind(n, 581355));
-    return n => (0, r.jsx)(t, m(p({}, n), {
+    return n => (0, r.jsx)(t, h(p({}, n), {
       channel: e
     }))
   }, {
@@ -79,7 +79,7 @@ function g(e, t) {
     let {
       default: t
     } = await n.e("2634").then(n.bind(n, 548841));
-    return n => (0, r.jsx)(t, m(p({}, n), {
+    return n => (0, r.jsx)(t, h(p({}, n), {
       channel: e
     }))
   }, {
@@ -98,7 +98,7 @@ function y(e, t) {
     let {
       default: i
     } = await n.e("1906").then(n.bind(n, 854510));
-    return n => (0, r.jsx)(i, m(p({}, n), {
+    return n => (0, r.jsx)(i, h(p({}, n), {
       channel: e,
       onAccept: t
     }))
@@ -110,7 +110,7 @@ function O(e, t) {
     let {
       default: t
     } = await n.e("85885").then(n.bind(n, 124779));
-    return n => (0, r.jsx)(t, m(p({}, n), {
+    return n => (0, r.jsx)(t, h(p({}, n), {
       channel: e
     }))
   }, {

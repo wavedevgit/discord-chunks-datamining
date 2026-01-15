@@ -45,8 +45,8 @@ let p = {
     locked: Chunk692547.Z.unsafe_rawColors.PRIMARY_400.css,
     unlocked: Chunk692547.Z.unsafe_rawColors.GREEN_330.css
   },
-  m = .8,
-  h = .4,
+  h = .8,
+  m = .4,
   g = 1;
 
 function E(e) {
@@ -66,11 +66,11 @@ function E(e) {
       color: S
     } = (0, c.F7)(v),
     I = (0, a.wj)(E) ? p : _,
-    T = (y.size - y.offset - 2 * y.stroke) * m,
+    T = (y.size - y.offset - 2 * y.stroke) * h,
     C = y.size - y.stroke,
     A = {
-      width: T * h,
-      height: T * h
+      width: T * m,
+      height: T * m
     },
     N = {
       width: A.width + g,

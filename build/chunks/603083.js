@@ -18,8 +18,8 @@ let c = {
   f = "STATE_LANG",
   p = "STATE_TRANSLATED_KEYWORD",
   _ = "STATE_TEXT",
-  m = 1,
   h = 1,
+  m = 1,
   g = 6;
 
 function E(e, t, n, r) {
@@ -73,7 +73,7 @@ function E(e, t, n, r) {
 function b(e, t, n, i, o) {
   let s, l = [],
     c = [],
-    h = [],
+    m = [],
     g = u,
     E = r.p4;
   for (let r = 0; r < n && t + r < e.byteLength; r++) {
@@ -82,7 +82,7 @@ function b(e, t, n, i, o) {
         type: i,
         dataView: e,
         offset: t + r
-      }), i === a.Jn && (r += m), g = O(i, g);
+      }), i === a.Jn && (r += h), g = O(i, g);
       continue
     }
     if (g === _) {
@@ -90,7 +90,7 @@ function b(e, t, n, i, o) {
       break
     }
     let o = e.getUint8(t + r);
-    0 === o ? g = O(i, g) : g === u ? l.push(o) : g === f ? c.push(o) : g === p && h.push(o)
+    0 === o ? g = O(i, g) : g === u ? l.push(o) : g === f ? c.push(o) : g === p && m.push(o)
   }
   if (E !== r.p4 && !o) return {};
   let b = (0, r.Lj)(s, E, v(i));
@@ -103,7 +103,7 @@ function y({
   offset: n
 }) {
   if (e === a.Jn) {
-    if (t.getUint8(n) === h) return t.getUint8(n + 1)
+    if (t.getUint8(n) === m) return t.getUint8(n + 1)
   } else if (e === a.z_) return t.getUint8(n);
   return r.p4
 }
@@ -149,10 +149,10 @@ function N(e, t) {
 }
 
 function P(e) {
-  return R(e.match(/\n(exif|iptc)\n\s*\d+\n([\s\S]*)$/)[2].replace(/\n/g, ""))
+  return w(e.match(/\n(exif|iptc)\n\s*\d+\n([\s\S]*)$/)[2].replace(/\n/g, ""))
 }
 
-function R(e) {
+function w(e) {
   let t = new DataView(new ArrayBuffer(e.length / 2));
   for (let n = 0; n < e.length; n += 2) t.setUint8(n / 2, parseInt(e.substring(n, n + 2), 16));
   return t

@@ -2,8 +2,8 @@
 /** chunk id: 33154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
-  s: () => m
+  Z: () => m,
+  s: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,19 +17,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk739255 = require("./739255.js"),
-  m = function(e) {
+  h = function(e) {
     return e[e.CHAT = 0] = "CHAT", e[e.REACTIONS = 1] = "REACTIONS", e
   }({});
-let h = e => {
+let m = e => {
   let {
     type: t,
-    guild: m,
-    closePopout: h,
+    guild: h,
+    closePopout: m,
     ctaRef: g
-  } = e, E = (0, c.Dt)(), [b, y] = i.useState(false), O = (0, a.e7)([d.Z], () => d.Z.isLurking(m.id), [m.id]);
+  } = e, E = (0, c.Dt)(), [b, y] = i.useState(false), O = (0, a.e7)([d.Z], () => d.Z.isLurking(h.id), [h.id]);
   i.useEffect(() => {
-    b && !O && h()
-  }, [b, O, h]);
+    b && !O && m()
+  }, [b, O, m]);
   let v = null,
     S = p.intl.string(p.t.d7b1p6);
   switch (t) {
@@ -46,9 +46,9 @@ let h = e => {
   let I = async () => {
     y(true);
     try {
-      await l.Z.joinGuild(m.id, {
+      await l.Z.joinGuild(h.id, {
         source: f.vtS.CHAT_INPUT_BLOCKER
-      }), h()
+      }), m()
     } catch (e) {
       y(false)
     }
@@ -79,7 +79,7 @@ let h = e => {
           onClick: I,
           loading: b
         }), (0, r.jsx)(o.zx, {
-          onClick: h,
+          onClick: m,
           look: o.zx.Looks.BLANK,
           className: _.cancel,
           children: p.intl.string(p.t["2m+Sqk"])

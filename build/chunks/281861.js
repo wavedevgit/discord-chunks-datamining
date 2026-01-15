@@ -49,12 +49,12 @@ function A(e, t, n) {
 
 function N(e = true) {
   let t = P(false, e);
-  return t.parsers.unshift(new c.Z), t.parsers.unshift(new u.Z), t.parsers.unshift(new b.Z), t.parsers.unshift(new m.Z), t.parsers.unshift(new O.Z), t.parsers.unshift(new y.Z), t
+  return t.parsers.unshift(new c.Z), t.parsers.unshift(new u.Z), t.parsers.unshift(new b.Z), t.parsers.unshift(new h.Z), t.parsers.unshift(new O.Z), t.parsers.unshift(new y.Z), t
 }
 
 function P(e = true, t = true) {
   return (0, r.l)({
-    parsers: [new d.Z(t), new f.Z, new _.Z, new m.Z, new p.Z, new E.Z, new h.Z, new g.Z(e), new v.Z(e), new S.Z(e)],
+    parsers: [new d.Z(t), new f.Z, new _.Z, new h.Z, new p.Z, new E.Z, new m.Z, new g.Z(e), new v.Z(e), new S.Z(e)],
     refiners: [new l.Z, new s.Z]
   }, e)
 }

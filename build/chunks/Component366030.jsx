@@ -132,9 +132,9 @@ function B(e) {
         u = c.filter(e => null != e.operator),
         d = c.find(e => null != e.application),
         p = E.Z.get(e),
-        m = null == d ? true : d.application,
-        g = (null == m ? true : m.bot) != null ? new S.Z(m.bot) : null;
-      return C.SJ.includes(null != (t = null == m ? true : m.id) ? t : "") ? l = (0, r.jsx)(R.Z, {
+        h = null == d ? true : d.application,
+        g = (null == h ? true : h.bot) != null ? new S.Z(h.bot) : null;
+      return C.SJ.includes(null != (t = null == h ? true : h.id) ? t : "") ? l = (0, r.jsx)(w.Z, {
         className: M.botTag,
         color: i,
         size: 16
@@ -149,14 +149,14 @@ function B(e) {
             src: (0, f.wj)(n) ? p.icon.darkSVG : p.icon.lightSVG,
             alt: "",
             className: M.popoutCheckGroupPlatformIcon
-          }) : null, null != g ? (0, r.jsx)(h.Z, {
+          }) : null, null != g ? (0, r.jsx)(m.Z, {
             user: g,
             size: _.EFr.SIZE_20,
             className: M.popoutCheckGroupPlatformIcon
           }) : null, (0, r.jsx)(_.Text, {
             variant: "text-sm/medium",
             color: "interactive-text-active",
-            children: null != (s = null == p ? true : p.name) ? s : null == m ? true : m.name
+            children: null != (s = null == p ? true : p.name) ? s : null == h ? true : h.name
           }), l]
         }), u.map(e => {
           let {
@@ -238,10 +238,10 @@ function H(e) {
     channel: s
   } = e, {
     analyticsLocations: l
-  } = (0, y.ZP)(), u = (0, N.Z)(a, t, s.id, true), f = (0, c.e7)([A.Z], () => A.Z.getGuildRoleConnectionEligibility(null == u ? true : u.id)), [p, h] = i.useState(null == f), g = i.useRef(null);
+  } = (0, y.ZP)(), u = (0, N.Z)(a, t, s.id, true), f = (0, c.e7)([A.Z], () => A.Z.getGuildRoleConnectionEligibility(null == u ? true : u.id)), [p, m] = i.useState(null == f), g = i.useRef(null);
   if (null == u) return null;
   async function E() {
-    o()(null != u, "visibleConnectionsRole is null"), p && null == f && (await m.Z.fetchGuildRoleConnectionsEligibility(a.id, u.id), h(false))
+    o()(null != u, "visibleConnectionsRole is null"), p && null == f && (await h.Z.fetchGuildRoleConnectionsEligibility(a.id, u.id), m(false))
   }
 
   function b() {
@@ -256,7 +256,7 @@ function H(e) {
         channelId: s.id,
         guildId: a.id,
         onGetRolesClicked: () => {
-          (0, w.Am)(a.id)
+          (0, R.Am)(a.id)
         },
         onOpenProfile: () => {
           (0, v.openUserProfileModal)({

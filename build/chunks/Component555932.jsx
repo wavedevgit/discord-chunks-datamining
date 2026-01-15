@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk993346 = require("./993346.js");
-let m = 200,
-  h = 250,
+let h = 200,
+  m = 250,
   g = 36,
   E = 660,
   b = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, Chunk981631.Eu4.TIER_3];
@@ -29,7 +29,7 @@ function y(e) {
     premiumTier: r,
     isRevealed: a,
     useReducedMotion: o
-  } = e, [l, c] = i.useState(o ? r : false), [u, p] = i.useState(0 === n), [_, h] = i.useState(false), b = i.useRef(true);
+  } = e, [l, c] = i.useState(o ? r : false), [u, p] = i.useState(0 === n), [_, m] = i.useState(false), b = i.useRef(true);
 
   function y(e) {
     let {
@@ -60,9 +60,9 @@ function y(e) {
       p(false)
     },
     onRest: () => {
-      p(true), r === f.Eu4.TIER_3 && (h(true), window.setTimeout(() => {
-        b.current && h(false)
-      }, m))
+      p(true), r === f.Eu4.TIER_3 && (m(true), window.setTimeout(() => {
+        b.current && m(false)
+      }, h))
     }
   });
   return i.useEffect(() => () => {
@@ -70,7 +70,7 @@ function y(e) {
   }, []), {
     isProgressBarAnimationComplete: u,
     progressBarFillWidthFactor: O,
-    setShouldFireConfetti: h,
+    setShouldFireConfetti: m,
     shouldFireConfetti: _,
     tierMarkerAnimationPosition: l
   }
@@ -79,7 +79,7 @@ function y(e) {
 function O(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, m] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
+  } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
     fillFactor: S,
     totalAvailableBoostsCount: I
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
@@ -97,8 +97,8 @@ function O(e) {
   });
   return i.useEffect(() => {
     let e = window.setTimeout(() => {
-      m(true)
-    }, h);
+      h(true)
+    }, m);
     return () => {
       window.clearTimeout(e)
     }

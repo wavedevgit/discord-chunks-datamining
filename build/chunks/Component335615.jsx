@@ -134,7 +134,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       user: u,
       currentUser: f,
       activities: p,
-      applicationStream: m,
+      applicationStream: h,
       status: E,
       channel: b,
       guildId: y,
@@ -142,7 +142,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isMobileOnline: v,
       premiumSince: S,
       nameplate: I
-    } = e, T = $(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), C = i.useRef(null), [A, N] = i.useState(false), R = null != S ? new Date(S) : null, w = i.useCallback(e => {
+    } = e, T = $(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), C = i.useRef(null), [A, N] = i.useState(false), w = null != S ? new Date(S) : null, R = i.useCallback(e => {
       (0, _.jW)(e, async () => {
         let {
           default: e
@@ -164,7 +164,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       }), B.S.dispatchToLastSubscribed(W.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: t
-      }), h.Z.startTyping(b.id)
+      }), m.Z.startTyping(b.id)
     }, [u, b.id]), x = i.useCallback(e => {
       null != y && (e.stopPropagation(), (0, P.f)({
         guildId: y,
@@ -195,16 +195,16 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
         return (0, r.jsx)(g.Z, Q({
           ref: C,
           className: z.member,
-          onContextMenu: w,
+          onContextMenu: R,
           shouldAnimateStatus: et,
           user: u,
           currentUser: f,
           nick: c,
           status: E,
           activities: p,
-          applicationStream: m,
+          applicationStream: h,
           isOwner: l,
-          premiumSince: R,
+          premiumSince: w,
           colorString: t,
           colorStrings: a,
           colorRoleName: o,
@@ -236,7 +236,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, s = (0, c.JA)("".concat(o)), l = (0, f.e7)([G.Z], () => G.Z.isTyping(i.id, a.id)), u = (0, f.e7)([Z.default], () => Z.default.getCurrentUser()), d = (0, f.e7)([k.Z], () => {
       var e;
       return null != t ? null == (e = k.Z.getRole(i.guild_id, t)) ? true : e.name : true
-    }, [i, t]), p = (0, w.K)({
+    }, [i, t]), p = (0, R.K)({
       user: a,
       guildId: i.guild_id
     });
@@ -254,7 +254,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       count: i,
       guildId: a,
       className: o
-    } = e, s = (0, R.p9)({
+    } = e, s = (0, w.p9)({
       roleId: t,
       guildId: a,
       size: 16
@@ -549,7 +549,7 @@ class ec extends Chunk473749.Component {
         y: n,
         height: r
       } = this.getDimensions();
-      (0, m.TV)({
+      (0, h.TV)({
         guildId: e.guild_id,
         channelId: e.id,
         y: n,
@@ -592,8 +592,8 @@ function eu(e) {
   } = (0, O.ZP)(b.Z.MEMBER_LIST), s = (0, f.e7)([E.Z], () => E.Z.keyboardModeEnabled), l = (0, f.cj)([M.ZP], () => M.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: _,
-    version: m,
-    updateMaxRowSeen: h
+    version: h,
+    updateMaxRowSeen: m
   } = (0, C.H)({
     memberStoreProps: l,
     channelId: t.id,
@@ -645,11 +645,11 @@ function eu(e) {
       children: (0, r.jsx)(c.bG, {
         navigator: A,
         children: (0, r.jsx)(ec, J(Q({}, e, l), {
-          version: m,
+          version: h,
           groups: _,
           rows: d,
           listRef: g,
-          updateMaxContentFeedRowSeen: h,
+          updateMaxContentFeedRowSeen: m,
           sectionHeight: y,
           rowHeight: v
         }))

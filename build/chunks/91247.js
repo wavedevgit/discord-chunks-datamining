@@ -2,7 +2,7 @@
 /** chunk id: 91247, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  TO: () => h,
+  TO: () => m,
   dm: () => _,
   uB: () => S,
   vW: () => O,
@@ -74,9 +74,9 @@ function p(e, t) {
 
 function _(e, t, n, a, l) {
   var u, f, p;
-  let _ = m(t);
+  let _ = h(t);
   null != a && r.Z.addDetail("payload_size(kb)", Math.round(a.uncompressed_byte_size / 1024)), r.Z.addDetail("server_time(ms)", null != (u = _.identify_total_server_duration_ms) ? u : 0);
-  let h = d(c({}, a, _, y(t), l), {
+  let m = d(c({}, a, _, y(t), l), {
     duration_ms_since_identify_start: n - e.identifyStartTime,
     duration_ms_since_connection_start: n - e.connectionStartTime,
     duration_ms_since_emit_start: Date.now() - n,
@@ -88,12 +88,12 @@ function _(e, t, n, a, l) {
     had_cache_at_startup: null != (f = e.analytics.hadCacheAtStartup) && f,
     used_cache_at_startup: null != (p = e.analytics.usedCacheAtStartup) && p
   });
-  i.Z.attachReadyPayloadProperties(h), o.default.track(s.rMx.READY_PAYLOAD_RECEIVED, h, {
+  i.Z.attachReadyPayloadProperties(m), o.default.track(s.rMx.READY_PAYLOAD_RECEIVED, m, {
     logEventProperties: true
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     _trace: t
   } = e, n = {};
@@ -106,7 +106,7 @@ function m(e) {
   return n
 }
 
-function h(e) {
+function m(e) {
   try {
     var t;
     let n = g(null == (t = e._trace) ? true : t[0]);
@@ -166,8 +166,8 @@ function O(e) {
       user_settings_proto: d,
       experiments: p,
       guild_experiments: _,
-      relationships: m,
-      users: h
+      relationships: h,
+      users: m
     } = e,
     g = f(e, ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"]),
     E = [],
@@ -194,13 +194,13 @@ function O(e) {
     E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), b.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), y.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), O.push(a), v.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), S.push(r), I.push(o), T.push(s, i)
   }), {
     presences_size: JSON.stringify(null != (t = null == a ? true : a.friends) ? t : []).length,
-    users_size: JSON.stringify(h).length,
+    users_size: JSON.stringify(m).length,
     read_states_size: JSON.stringify(s).length,
     private_channels_size: JSON.stringify(l).length,
     user_settings_size: JSON.stringify(null != u ? u : "").length + (null != d ? d : "").length,
     experiments_size: JSON.stringify(null != p ? p : []).length + JSON.stringify(null != _ ? _ : []).length,
     user_guild_settings_size: JSON.stringify(c).length,
-    relationships_size: JSON.stringify(m).length,
+    relationships_size: JSON.stringify(h).length,
     remaining_data_size: JSON.stringify(null != g ? g : {}).length,
     guild_channels_size: JSON.stringify(E).length,
     guild_members_size: JSON.stringify(null != o ? o : []).length,

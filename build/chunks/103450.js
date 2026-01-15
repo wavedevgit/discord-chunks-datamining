@@ -57,8 +57,8 @@ function G(e) {
     } = (0, E.ZP)(null != Y ? Y : []),
     [z, q] = r.useState(false),
     Q = null != (t = null == F ? true : F.applicationId) ? t : null == Z ? true : Z.application_id,
-    X = null != F || (0, h.Z)(Z),
-    J = (0, i.e7)([R.default], () => R.default.getCurrentUser()),
+    X = null != F || (0, m.Z)(Z),
+    J = (0, i.e7)([w.default], () => w.default.getCurrentUser()),
     $ = B.id === (null == J ? true : J.id),
     ee = (0, p.Z)({
       channelId: (0, f.p)(null == F ? true : F.location),
@@ -88,7 +88,7 @@ function G(e) {
       channelId: ee,
       application: ei
     }),
-    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, w.Z, A.Z], () => null != F ? eo === _.Fw.CAN_JOIN : (0, d.Z)({
+    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, R.Z, A.Z], () => null != F ? eo === _.Fw.CAN_JOIN : (0, d.Z)({
       user: B,
       activity: Z,
       application: ei,
@@ -100,7 +100,7 @@ function G(e) {
       GuildMemberCountStore: I.Z,
       RelationshipStore: N.Z,
       SelectedChannelStore: P.Z,
-      VoiceStateStore: w.Z,
+      VoiceStateStore: R.Z,
       PermissionStore: A.Z
     })),
     el = (0, i.e7)([c.ZP], () => {
@@ -109,9 +109,9 @@ function G(e) {
       return null != e && e.applicationId === (null == Z ? true : Z.application_id)
     }),
     ec = (0, l.O)();
-  if (X && null == F && (null == Z || !(0, m.Z)(Z, M.xjy.CONTEXTLESS))) return null;
+  if (X && null == F && (null == Z || !(0, h.Z)(Z, M.xjy.CONTEXTLESS))) return null;
   let eu = !L.isPlatformEmbedded;
-  if (!((0, m.Z)(Z, M.xjy.JOIN) || X) || null == Q) return null;
+  if (!((0, h.Z)(Z, M.xjy.JOIN) || X) || null == Q) return null;
   let ed = !$ || X && !el,
     ef = ed && (eu || et) && !z && !en;
   ed ? eu || et || null == Z || (G = U.intl.formatToPlainString(U.t.SqJBnN, {
@@ -120,7 +120,7 @@ function G(e) {
   let ep = null != (n = null == F ? true : F.launchId) ? n : null == Z ? true : Z.session_id,
     e_ = async (e, t) => {
       if (null == ep || null == Q) return;
-      let n = (0, m.Z)(t, M.xjy.EMBEDDED),
+      let n = (0, h.Z)(t, M.xjy.EMBEDDED),
         r = P.Z.getVoiceChannelId(),
         i = v.Z.getChannel(r);
       if (await o.Z.join({
@@ -147,7 +147,7 @@ function G(e) {
           analyticsLocations: K
         })
       }
-    }, em = async () => {
+    }, eh = async () => {
       let e = false;
       async function t() {
         let e;
@@ -180,11 +180,11 @@ function G(e) {
       }
     };
   if (!es && !W || !ef && null == G) return null;
-  let eh = es ? U.intl.string(U.t.VJlc0S) : U.intl.string(U.t.OKsSCR);
-  return el && (eh = U.intl.string(U.t.DPfdsq)), {
-    buttonCTA: eh,
+  let em = es ? U.intl.string(U.t.VJlc0S) : U.intl.string(U.t.OKsSCR);
+  return el && (em = U.intl.string(U.t.DPfdsq)), {
+    buttonCTA: em,
     tooltip: G,
-    handleJoinRequest: em,
+    handleJoinRequest: eh,
     isEnabled: ef,
     isJoining: er,
     isEmbedded: X

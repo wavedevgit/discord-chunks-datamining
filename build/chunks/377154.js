@@ -48,7 +48,7 @@ function c(e, t) {
 }
 
 function u(e, t) {
-  var n, o, l, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T;
+  var n, o, l, u, d, f, p, _, h, m, g, E, b, y, O, v, S, I, T;
   let C = null == (n = t.powerup_metadata) ? true : n.category_type;
   if (null == C) return;
   let A = null == (o = t.sku) ? true : o.powerup_metadata;
@@ -72,7 +72,7 @@ function u(e, t) {
         d = t.sku.dependent_sku_id;
       for (; null != d;) {
         let t = e.find(e => d === e.sku.id);
-        o += null != (v = null == t || null == (m = t.sku) || null == (_ = m.powerup_metadata) || null == (p = _.guild_features) ? true : p.additional_emoji_slots) ? v : 0, l += null != (S = null == t || null == (E = t.sku) || null == (g = E.powerup_metadata) || null == (h = g.guild_features) ? true : h.additional_sound_slots) ? S : 0, u += null != (I = null == t || null == (O = t.sku) || null == (y = O.powerup_metadata) || null == (b = y.guild_features) ? true : b.additional_sticker_slots) ? I : 0, d = null == t ? true : t.sku.dependent_sku_id
+        o += null != (v = null == t || null == (h = t.sku) || null == (_ = h.powerup_metadata) || null == (p = _.guild_features) ? true : p.additional_emoji_slots) ? v : 0, l += null != (S = null == t || null == (E = t.sku) || null == (g = E.powerup_metadata) || null == (m = g.guild_features) ? true : m.additional_sound_slots) ? S : 0, u += null != (I = null == t || null == (O = t.sku) || null == (y = O.powerup_metadata) || null == (b = y.guild_features) ? true : b.additional_sticker_slots) ? I : 0, d = null == t ? true : t.sku.dependent_sku_id
       }
       return s({
         type: i.Us.LEVEL,

@@ -28,12 +28,12 @@ function g(e) {
     dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, j = [];
   null == h || x || !g || b || j.push(h.dismissibleContentType);
-  let [Z, _] = (0, c.US)(j), C = i.useCallback(() => {
-    _(p.L.INDIRECT_ACTION)
-  }, [_]);
+  let [Z, C] = (0, c.US)(j), _ = i.useCallback(() => {
+    C(p.L.INDIRECT_ACTION)
+  }, [C]);
   return ((0, f.Z)({
     targetRef: n,
-    onShouldClose: C,
+    onShouldClose: _,
     enabled: null != Z
   }), null == h || null == Z) ? null : (0, r.jsx)(u.J2, {
     targetElementRef: n,
@@ -47,7 +47,7 @@ function g(e) {
     title: h.title,
     body: h.body,
     onRequestClose: () => {
-      _(p.L.USER_DISMISS)
+      C(p.L.USER_DISMISS)
     }
   })
 }

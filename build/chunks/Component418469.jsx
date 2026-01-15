@@ -39,15 +39,15 @@ function f(e) {
 function p(e, t, d) {
   var p;
   let _ = (0, s.Cf)(e),
-    m = (0, i.e7)([l.default], () => l.default.getId());
+    h = (0, i.e7)([l.default], () => l.default.getId());
   if (null == e) return null;
-  let h = (0, o.V9)(e),
-    g = null != (p = c.Z.getVideoStats(h)) ? p : {},
+  let m = (0, o.V9)(e),
+    g = null != (p = c.Z.getVideoStats(m)) ? p : {},
     E = f({
-      media_session_id: c.Z.getMediaSessionId(h),
-      rtc_connection_id: c.Z.getRtcConnectionId(h),
-      stream_region: c.Z.getRegion(h),
-      max_viewers: c.Z.getMaxViewers(h)
+      media_session_id: c.Z.getMediaSessionId(m),
+      rtc_connection_id: c.Z.getRtcConnectionId(m),
+      stream_region: c.Z.getRegion(m),
+      max_viewers: c.Z.getMaxViewers(m)
     }, g),
     b = () => {
       null == d || d(), null != e && (0, a.ZDy)(async () => {
@@ -57,7 +57,7 @@ function p(e, t, d) {
         return n => (0, r.jsx)(t, f({
           stream: e,
           streamApplication: _,
-          isStreamer: m === (null == e ? true : e.ownerId),
+          isStreamer: h === (null == e ? true : e.ownerId),
           analyticsData: E
         }, n))
       })

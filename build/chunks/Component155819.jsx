@@ -2,7 +2,7 @@
 /** chunk id: 155819, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -149,7 +149,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     currentTier: t
   } = e, n = f(t);
@@ -167,7 +167,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     className: t,
     guild: n
@@ -180,7 +180,7 @@ function h(e) {
       children: c.intl.string(c.t["9GGb9k"])
     }), (0, r.jsxs)("div", {
       className: u.tableWrapper,
-      children: [null != n && (0, r.jsx)(m, {
+      children: [null != n && (0, r.jsx)(h, {
         currentTier: n.premiumTier
       }), (0, r.jsxs)("div", {
         className: u.table,

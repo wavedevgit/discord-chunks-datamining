@@ -38,8 +38,8 @@ let I = false,
   A = 0,
   N = [],
   P = [],
-  R = false,
-  w = true,
+  w = false,
+  R = true,
   D = Object.freeze([]),
   x = Object.freeze([]),
   L = [],
@@ -54,11 +54,11 @@ function M(e) {
 }
 
 function k(e) {
-  return (0, m.OT)(e, E.Z)
+  return (0, h.OT)(e, E.Z)
 }
 
 function U(e) {
-  let t = h.Z.getGameByName(e);
+  let t = m.Z.getGameByName(e);
   return null != t ? k(t.id) : p.G6.getSetting()
 }
 
@@ -80,12 +80,12 @@ function G(e) {
 }
 
 function Z() {
-  w = true, C = T, F()
+  R = true, C = T, F()
 }
 
 function F() {
   var e;
-  if (A = null != (e = g.Z.getIdleSince()) ? e : 0, R = g.Z.isAFK(), w) T = C;
+  if (A = null != (e = g.Z.getIdleSince()) ? e : 0, w = g.Z.isAFK(), R) T = C;
   else if (I) T = v.Skl.INVISIBLE;
   else {
     let e = p.co.getSetting();
@@ -93,7 +93,7 @@ function F() {
   }
   T === v.Skl.ONLINE && A > 0 && (T = v.Skl.IDLE);
   let t = false,
-    n = w || T === v.Skl.INVISIBLE ? [] : b.Z.getActivities().filter(G);
+    n = R || T === v.Skl.INVISIBLE ? [] : b.Z.getActivities().filter(G);
   a()(N, n) || (N = n, P = M(n), t = true);
   let r = O.Z.getRemoteActivities();
   D !== r && (D = r, t = true);
@@ -110,7 +110,7 @@ function V() {
 }
 
 function H() {
-  w = false, C = v.Skl.UNKNOWN, F(), y.Z.setCurrentUserOnConnectionOpen(T, L)
+  R = false, C = v.Skl.UNKNOWN, F(), y.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
 function Y() {
@@ -118,14 +118,14 @@ function Y() {
 }
 class W extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(h.Z, g.Z, E.Z, b.Z, y.Z, O.Z, f.Z, _.Z), this.syncWith([b.Z], F)
+    this.waitFor(m.Z, g.Z, E.Z, b.Z, y.Z, O.Z, f.Z, _.Z), this.syncWith([b.Z], F)
   }
   getLocalPresence() {
     return {
       status: T,
       since: A,
       activities: P,
-      afk: R
+      afk: w
     }
   }
   getStatus() {

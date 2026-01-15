@@ -2,7 +2,7 @@
 /** chunk id: 53558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,7 +54,7 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     user: t,
     onClick: n
@@ -68,7 +68,7 @@ function m(e) {
   }, i))
 }
 
-function h(e) {
+function m(e) {
   var t, {
       user: s,
       guildId: c
@@ -80,7 +80,7 @@ function h(e) {
     }),
     _ = (0, o.R)(null != (t = null == d ? true : d.id) ? t : "");
   if (null == d || !_) return null;
-  let h = () => {
+  let m = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -91,9 +91,9 @@ function h(e) {
       }, t))
     })
   };
-  return (0, r.jsx)(m, f({
+  return (0, r.jsx)(h, f({
     user: s,
     guildId: c,
-    onClick: h
+    onClick: m
   }, u))
 }

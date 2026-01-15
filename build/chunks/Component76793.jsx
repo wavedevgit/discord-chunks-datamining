@@ -36,15 +36,15 @@ function g(e) {
   return i.useEffect(() => {
     (0, s.PR)(t)
   }, [t]), (0, r.jsxs)("div", {
-    className: h.section,
+    className: m.section,
     children: [null != g && (0, r.jsx)(l.Z, {
-      className: h.avatar,
+      className: m.avatar,
       user: g,
       size: o.EFr.SIZE_40
     }), (0, r.jsxs)("div", {
-      className: h.text,
+      className: m.text,
       children: [(0, r.jsx)(o.P3F, {
-        className: h.username,
+        className: m.username,
         onClick: y,
         children: (0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
@@ -54,13 +54,13 @@ function g(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-default",
-        children: m.intl.format(m.t["/MBjYF"], {
+        children: h.intl.format(h.t["/MBjYF"], {
           count: n
         })
       })]
     }), (0, r.jsx)(o.P3F, {
       onClick: b,
-      className: h.sectionIconContainer,
+      className: m.sectionIconContainer,
       children: (0, r.jsx)(o.XHJ, {
         size: "xs"
       })
@@ -80,11 +80,11 @@ function E(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsxs)("div", {
-      className: h.text,
+      className: m.text,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "interactive-text-active",
-        children: m.intl.format(m.t.N4qBBO, {
+        children: h.intl.format(h.t.N4qBBO, {
           index: s + 1
         })
       }), (0, r.jsx)(o.Text, {
@@ -93,7 +93,7 @@ function E(e) {
         children: l
       })]
     }), (0, r.jsx)(o.P3F, {
-      className: h.icon,
+      className: m.icon,
       onClick: c,
       children: (0, r.jsx)(o.Dio, {
         size: "md",
@@ -113,12 +113,12 @@ function b(e) {
       count: n.length
     }), n.map((e, a) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(E, {
-        className: h.row,
+        className: m.row,
         userId: t,
         index: a,
         verification: e
       }), a !== n.length - 1 && (0, r.jsx)("div", {
-        className: h.divider
+        className: m.divider
       })]
     }, "".concat(a, "-").concat(e.timestamp)))]
   })

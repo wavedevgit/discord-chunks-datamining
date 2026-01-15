@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ function E(e) {
   let t, n;
   var {
     afk: a
-  } = e, s = h(e, ["afk"]);
+  } = e, s = m(e, ["afk"]);
   let [c, u] = i.useState(false);
   return a ? (t = d.intl.string(d.t.Y40Jke), n = d.intl.string(d.t["5J4yGc"])) : (t = d.intl.string(d.t.FJSZVM), n = d.intl.string(d.t.etJjgW)), (0, r.jsx)(o.u_l, p({
     size: "md",
@@ -111,7 +111,7 @@ let b = () => {
       let {
         default: e
       } = await n.e("41281").then(n.bind(n, 669732));
-      return t => (0, r.jsx)(e, m(p({}, t), {
+      return t => (0, r.jsx)(e, h(p({}, t), {
         showHideSuppressWarning: true
       }))
     }).then(t => {

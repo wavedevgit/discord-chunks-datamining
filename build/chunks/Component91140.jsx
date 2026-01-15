@@ -58,14 +58,14 @@ let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
           alt: null != (t = null == O ? true : O.text) ? t : null == O ? true : O.alt,
           src: null == O ? true : O.src,
           size: 48,
-          className: h.thumbnail,
+          className: m.thumbnail,
           showTooltip: (null == O ? true : O.text) != null
         })]
       }), S && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.xx, {}), (0, r.jsxs)(p.lS, {
-          className: m.cloudPlaySection,
+          className: h.cloudPlaySection,
           children: [(0, r.jsxs)("div", {
-            className: m.cloudPlaySectionTextContainer,
+            className: h.cloudPlaySectionTextContainer,
             children: [(0, r.jsx)(o.v3n, {
               color: o.TVs.colors.ICON_SUBTLE,
               size: "xxs"

@@ -16,8 +16,8 @@ var Chunk658722 = require("./658722.js"),
 let f = 100,
   p = 8,
   _ = 7,
-  m = 6,
-  h = 5,
+  h = 6,
+  m = 5,
   g = 4,
   E = 3,
   b = 2,
@@ -52,7 +52,7 @@ function C(e, t, n, r) {
     O = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, false) : null,
     v = null != O ? l.ZP.getByName(O) : null,
     S = null != d ? [d.name] : null != (a = null == v ? true : v.names) ? a : [];
-  return e === c && (o += p), S.includes(e) && (o += _), c.startsWith(e) && (o += m), S.some(t => t.startsWith(e)) && (o += h), c.endsWith(e) && (o += g), S.some(t => t.endsWith(e)) && (o += E), i()(e, t.name.toLocaleLowerCase()) && (o += b), S.some(t => i()(e, t)) && (o += y), o > 0 && (0, u.Nq)(n, t, r) && (o += f), o
+  return e === c && (o += p), S.includes(e) && (o += _), c.startsWith(e) && (o += h), S.some(t => t.startsWith(e)) && (o += m), c.endsWith(e) && (o += g), S.some(t => t.endsWith(e)) && (o += E), i()(e, t.name.toLocaleLowerCase()) && (o += b), S.some(t => i()(e, t)) && (o += y), o > 0 && (0, u.Nq)(n, t, r) && (o += f), o
 }
 
 function A(e, t, n, r, i) {

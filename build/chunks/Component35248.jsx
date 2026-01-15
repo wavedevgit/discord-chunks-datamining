@@ -41,27 +41,27 @@ let b = 1e3,
       {
         isGift: N
       } = (0, d.wD)(),
-      [P, R] = i.useState(false);
+      [P, w] = i.useState(false);
     switch (n) {
       case p.h8.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
-        t = m.i$l.GOOGLE_PAY;
+        t = h.i$l.GOOGLE_PAY;
         break;
       case p.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
-        t = m.i$l.APPLE_PAY
+        t = h.i$l.APPLE_PAY
     }
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        P || (R(true), (0, o.r5)(A.loadId), (0, u.ko)({
-          planId: null != (e = null == y ? true : y.id) ? e : h.Xh.PREMIUM_MONTH_TIER_2,
+        P || (w(true), (0, o.r5)(A.loadId), (0, u.ko)({
+          planId: null != (e = null == y ? true : y.id) ? e : m.Xh.PREMIUM_MONTH_TIER_2,
           isGift: N,
           loadId: A.loadId,
           paymentMethodType: t
         }, c))
       }, b);
       return () => clearTimeout(e)
-    }, [y, N, A, c, R, P, t]), i.useEffect(() => {
-      null !== T && (h.YQ.includes(T) && ((0, s.GZ)(T), (0, o.jg)()), v(T)), null !== C && O(C), I === A.loadId && S === _.Y.DONE && l()
+    }, [y, N, A, c, w, P, t]), i.useEffect(() => {
+      null !== T && (m.YQ.includes(T) && ((0, s.GZ)(T), (0, o.jg)()), v(T)), null !== C && O(C), I === A.loadId && S === _.Y.DONE && l()
     }, [v, O, S, I, T, C, A, l]), (0, r.jsxs)("div", {
       className: E.body,
       children: [(0, r.jsx)(a.Heading, {

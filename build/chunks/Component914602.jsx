@@ -41,7 +41,7 @@ class v extends(r = Chunk473749.PureComponent) {
       renderCustomTitle: o,
       renderCustomMedia: s,
       isEmbed: l
-    } = this.props, c = l ? h.$G : g.Z;
+    } = this.props, c = l ? m.$G : g.Z;
     return (0, i.jsx)(c, {
       className: r,
       renderMedia: null != s ? s : this.renderMedia,
@@ -95,8 +95,8 @@ class v extends(r = Chunk473749.PureComponent) {
           className: s()(b.splashContainer, {
             [b.splashContainerHorizontal]: l
           }),
-          video: null != c.previewVideo ? (0, m._W)(o.applicationId, c.previewVideo) : true,
-          image: null != c.thumbnail ? (0, m._W)(o.applicationId, c.thumbnail, O) : true,
+          video: null != c.previewVideo ? (0, h._W)(o.applicationId, c.previewVideo) : true,
+          image: null != c.thumbnail ? (0, h._W)(o.applicationId, c.thumbnail, O) : true,
           title: o.name,
           playing: e,
           muted: t,

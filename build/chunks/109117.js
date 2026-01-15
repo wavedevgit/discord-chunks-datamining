@@ -36,9 +36,9 @@ function p(e) {
   return e
 }
 let _ = window.DiscordNative,
-  m = "".concat(Chunk981631.rMx.APP_NATIVE_CRASH, "Storage");
+  h = "".concat(Chunk981631.rMx.APP_NATIVE_CRASH, "Storage");
 
-function h(e) {
+function m(e) {
   var t, n, r, i;
   return {
     did_crash: true,
@@ -50,7 +50,7 @@ function h(e) {
 }
 
 function g(e, t) {
-  let n = h(t);
+  let n = m(t);
   s.default.track(d.rMx.APP_NATIVE_CRASH, n)
 }
 async function E() {
@@ -62,9 +62,9 @@ async function E() {
     {
       didCrashReporterSeeCrash: r,
       didCrashOrUncleanExit: a
-    } = b(i.K.get(m, {}), n),
+    } = b(i.K.get(h, {}), n),
     o = O(r, a, n);
-  s.default.track(d.rMx.APP_NATIVE_CRASH, o), i.K.set(m, {
+  s.default.track(d.rMx.APP_NATIVE_CRASH, o), i.K.set(h, {
     lastId: null == n ? true : n.id
   }), a && setTimeout(async () => await y(), 1e4)
 }
@@ -89,7 +89,7 @@ async function y() {
 }
 
 function O(e, t, n) {
-  var i, a, o, s, l, c, u, d, f, _, m, h, g, E, b, y, O, v, S;
+  var i, a, o, s, l, c, u, d, f, _, h, m, g, E, b, y, O, v, S;
 
   function I(e) {
     return (null == n ? true : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -115,8 +115,8 @@ function O(e, t, n) {
     intentional_crash_reason: T(r.X4.IntentionalCrashReason),
     last_memory_usage_kb: null != (f = null == n || null == (i = n.lastMemoryInformation) ? true : i.memoryUsageKB) ? f : null,
     last_used_js_heap_size_kb: null != (_ = null == n || null == (a = n.lastMemoryInformation) ? true : a.usedJSHeapSizeKB) ? _ : null,
-    last_memory_usage_uptime: null != (m = null == n || null == (o = n.lastMemoryInformation) ? true : o.uptimeSeconds) ? m : null,
-    highest_memory_usage_kb: null != (h = null == n || null == (s = n.highestMemoryInformation) ? true : s.memoryUsageKB) ? h : null,
+    last_memory_usage_uptime: null != (h = null == n || null == (o = n.lastMemoryInformation) ? true : o.uptimeSeconds) ? h : null,
+    highest_memory_usage_kb: null != (m = null == n || null == (s = n.highestMemoryInformation) ? true : s.memoryUsageKB) ? m : null,
     highest_used_js_heap_size_kb: null != (g = null == n || null == (l = n.highestMemoryInformation) ? true : l.usedJSHeapSizeKB) ? g : null,
     highest_memory_usage_uptime: null != (E = null == n || null == (c = n.highestMemoryInformation) ? true : c.uptimeSeconds) ? E : null
   };

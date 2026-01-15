@@ -12,7 +12,7 @@ require.d(exports, {
   BZ: () => W,
   Cw: () => P,
   Cy: () => Z,
-  EK: () => em,
+  EK: () => eh,
   ET: () => eg,
   Et: () => K,
   GZ: () => L,
@@ -20,14 +20,14 @@ require.d(exports, {
   He: () => O,
   Jj: () => x,
   MA: () => eE,
-  NY: () => w,
-  OL: () => m,
+  NY: () => R,
+  OL: () => h,
   OM: () => ep,
   Pl: () => k,
-  Py: () => R,
+  Py: () => w,
   Q: () => e_,
   QL: () => v,
-  RG: () => eh,
+  RG: () => em,
   RK: () => er,
   S7: () => M,
   Sk: () => p,
@@ -49,7 +49,7 @@ require.d(exports, {
   dG: () => U,
   fK: () => el,
   fr: () => Y,
-  gg: () => h,
+  gg: () => m,
   ht: () => g,
   i$: () => y,
   j8: () => A,
@@ -106,8 +106,8 @@ var p = function(e) {
   _ = function(e) {
     return e.DESKTOP = "desktop", e.WEB = "web", e.MOBILE = "mobile", e.VR = "vr", e.UNKNOWN = "unknown", e
   }({});
-let m = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
-var h = function(e) {
+let h = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
+var m = function(e) {
     return e[e.STRIPE = 1] = "STRIPE", e[e.BRAINTREE = 2] = "BRAINTREE", e[e.APPLE = 3] = "APPLE", e[e.GOOGLE = 4] = "GOOGLE", e[e.ADYEN = 5] = "ADYEN", e[e.APPLE_PARTNER = 6] = "APPLE_PARTNER", e[e.VIRTUAL_CURRENCY = 8] = "VIRTUAL_CURRENCY", e[e.APPLE_ADVANCED_COMMERCE = 9] = "APPLE_ADVANCED_COMMERCE", e
   }({}),
   g = function(e) {
@@ -165,10 +165,10 @@ let v = new Map([
 var P = function(e) {
     return e[e.NEW = 1] = "NEW", e
   }({}),
-  R = function(e) {
+  w = function(e) {
     return e[e.PENDING = 0] = "PENDING", e[e.COMPLETED = 1] = "COMPLETED", e[e.FAILED = 2] = "FAILED", e[e.REVERSED = 3] = "REVERSED", e[e.REFUNDED = 4] = "REFUNDED", e[e.CANCELED = 5] = "CANCELED", e
   }({}),
-  w = function(e) {
+  R = function(e) {
     return e[e.PREMIUM = 1] = "PREMIUM", e[e.GUILD = 2] = "GUILD", e[e.APPLICATION = 3] = "APPLICATION", e
   }({}),
   D = function(e) {
@@ -356,10 +356,10 @@ let ep = "US";
 var e_ = function(e) {
     return e[e.SINGLE_PLAYER = 1] = "SINGLE_PLAYER", e[e.ONLINE_MULTIPLAYER = 2] = "ONLINE_MULTIPLAYER", e[e.LOCAL_MULTIPLAYER = 3] = "LOCAL_MULTIPLAYER", e[e.PVP = 4] = "PVP", e[e.LOCAL_COOP = 5] = "LOCAL_COOP", e[e.CROSS_PLATFORM = 6] = "CROSS_PLATFORM", e[e.RICH_PRESENCE = 7] = "RICH_PRESENCE", e[e.DISCORD_GAME_INVITES = 8] = "DISCORD_GAME_INVITES", e[e.SPECTATOR_MODE = 9] = "SPECTATOR_MODE", e[e.CONTROLLER_SUPPORT = 10] = "CONTROLLER_SUPPORT", e[e.CLOUD_SAVES = 11] = "CLOUD_SAVES", e[e.ONLINE_COOP = 12] = "ONLINE_COOP", e[e.SECURE_NETWORKING = 13] = "SECURE_NETWORKING", e
   }({}),
-  em = function(e) {
+  eh = function(e) {
     return e[e.ACTION = 1] = "ACTION", e[e.ACTION_RPG = 2] = "ACTION_RPG", e[e.BRAWLER = 3] = "BRAWLER", e[e.HACK_AND_SLASH = 4] = "HACK_AND_SLASH", e[e.PLATFORMER = 5] = "PLATFORMER", e[e.STEALTH = 6] = "STEALTH", e[e.SURVIVAL = 7] = "SURVIVAL", e[e.ADVENTURE = 8] = "ADVENTURE", e[e.ACTION_ADVENTURE = 9] = "ACTION_ADVENTURE", e[e.METROIDVANIA = 10] = "METROIDVANIA", e[e.OPEN_WORLD = 11] = "OPEN_WORLD", e[e.PSYCHOLOGICAL_HORROR = 12] = "PSYCHOLOGICAL_HORROR", e[e.SANDBOX = 13] = "SANDBOX", e[e.SURVIVAL_HORROR = 14] = "SURVIVAL_HORROR", e[e.VISUAL_NOVEL = 15] = "VISUAL_NOVEL", e[e.DRIVING_RACING = 16] = "DRIVING_RACING", e[e.VEHICULAR_COMBAT = 17] = "VEHICULAR_COMBAT", e[e.MASSIVELY_MULTIPLAYER = 18] = "MASSIVELY_MULTIPLAYER", e[e.MMORPG = 19] = "MMORPG", e[e.ROLE_PLAYING = 20] = "ROLE_PLAYING", e[e.DUNGEON_CRAWLER = 21] = "DUNGEON_CRAWLER", e[e.ROGUELIKE = 22] = "ROGUELIKE", e[e.SHOOTER = 23] = "SHOOTER", e[e.LIGHT_GUN = 24] = "LIGHT_GUN", e[e.SHOOT_EM_UP = 25] = "SHOOT_EM_UP", e[e.FPS = 26] = "FPS", e[e.DUAL_JOYSTICK_SHOOTER = 27] = "DUAL_JOYSTICK_SHOOTER", e[e.SIMULATION = 28] = "SIMULATION", e[e.FLIGHT_SIMULATOR = 29] = "FLIGHT_SIMULATOR", e[e.TRAIN_SIMULATOR = 30] = "TRAIN_SIMULATOR", e[e.LIFE_SIMULATOR = 31] = "LIFE_SIMULATOR", e[e.FISHING = 32] = "FISHING", e[e.SPORTS = 33] = "SPORTS", e[e.BASEBALL = 34] = "BASEBALL", e[e.BASKETBALL = 35] = "BASKETBALL", e[e.BILLIARDS = 36] = "BILLIARDS", e[e.BOWLING = 37] = "BOWLING", e[e.BOXING = 38] = "BOXING", e[e.FOOTBALL = 39] = "FOOTBALL", e[e.GOLF = 40] = "GOLF", e[e.HOCKEY = 41] = "HOCKEY", e[e.SKATEBOARDING_SKATING = 42] = "SKATEBOARDING_SKATING", e[e.SNOWBOARDING_SKIING = 43] = "SNOWBOARDING_SKIING", e[e.SOCCER = 44] = "SOCCER", e[e.TRACK_FIELD = 45] = "TRACK_FIELD", e[e.SURFING_WAKEBOARDING = 46] = "SURFING_WAKEBOARDING", e[e.WRESTLING = 47] = "WRESTLING", e[e.STRATEGY = 48] = "STRATEGY", e[e.FOUR_X = 49] = "FOUR_X", e[e.ARTILLERY = 50] = "ARTILLERY", e[e.RTS = 51] = "RTS", e[e.TOWER_DEFENSE = 52] = "TOWER_DEFENSE", e[e.TURN_BASED_STRATEGY = 53] = "TURN_BASED_STRATEGY", e[e.WARGAME = 54] = "WARGAME", e[e.MOBA = 55] = "MOBA", e[e.FIGHTING = 56] = "FIGHTING", e[e.PUZZLE = 57] = "PUZZLE", e[e.CARD_GAME = 58] = "CARD_GAME", e[e.EDUCATION = 59] = "EDUCATION", e[e.FITNESS = 60] = "FITNESS", e[e.GAMBLING = 61] = "GAMBLING", e[e.MUSIC_RHYTHM = 62] = "MUSIC_RHYTHM", e[e.PARTY_MINI_GAME = 63] = "PARTY_MINI_GAME", e[e.PINBALL = 64] = "PINBALL", e[e.TRIVIA_BOARD_GAME = 65] = "TRIVIA_BOARD_GAME", e[e.TACTICAL = 66] = "TACTICAL", e[e.INDIE = 67] = "INDIE", e[e.ARCADE = 68] = "ARCADE", e[e.POINT_AND_CLICK = 69] = "POINT_AND_CLICK", e
   }({}),
-  eh = function(e) {
+  em = function(e) {
     return e[e.GUILD_ROLE_SUBSCRIPTIONS = 1] = "GUILD_ROLE_SUBSCRIPTIONS", e[e.GUILD_PRODUCTS = 2] = "GUILD_PRODUCTS", e
   }({}),
   eg = function(e) {

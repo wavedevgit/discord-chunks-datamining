@@ -32,7 +32,7 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk797258 = require("./797258.js"),
   Chunk981631 = require("./981631.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -82,14 +82,14 @@ function k() {
   n.push(...i);
   let o = C.Z.getStream();
   null != o && n.push(D({
-    type: R.IIU.STREAMING
+    type: w.IIU.STREAMING
   }, o));
   let l = new Set;
   s().forEach(M, e => {
     let [, t] = e;
     null != t.application_id && (l.add(t.name), n.push(t))
   });
-  let c = m.ZP.getVisibleGame(),
+  let c = h.ZP.getVisibleGame(),
     u = null != c && null != c.name && (l.has(c.name) || (0, b.G)(c, [...n, ...P.Z.getRemoteActivities()])),
     d = null != c && c.isLauncher,
     f = null != I.Z.getCurrentUserActiveStream(),
@@ -97,7 +97,7 @@ function k() {
   if (null != c && null != c.name && !p) {
     let t = A.Z.getGameByName(c.name);
     n.push(D({
-      type: R.IIU.PLAYING,
+      type: w.IIU.PLAYING,
       name: c.name,
       application_id: null != (e = c.id) ? e : null == t ? true : t.id,
       timestamps: {
@@ -107,21 +107,21 @@ function k() {
   }
   let S = O.Z.getActivity();
   null != S && n.push(D({
-    type: R.IIU.LISTENING
+    type: w.IIU.LISTENING
   }, S));
-  let w = g.Z.getCurrentHangStatus();
-  if (null != w) {
+  let R = g.Z.getCurrentHangStatus();
+  if (null != R) {
     let e = g.Z.getCustomHangStatus(),
       {
         defaultStatusVariant: r
-      } = (0, h.gx)({
+      } = (0, m.gx)({
         guildId: null == (t = T.Z.getChannel(N.Z.getVoiceChannelId())) ? true : t.guild_id,
         location: "LocalActivityStore"
       });
     n.push({
-      type: R.IIU.HANG_STATUS,
+      type: w.IIU.HANG_STATUS,
       name: "Hang Status",
-      state: "".concat(w, ":").concat(r),
+      state: "".concat(R, ":").concat(r),
       details: null == e ? true : e.status,
       emoji: null == e ? true : e.emoji
     })
@@ -164,7 +164,7 @@ function B() {
   for (let [i, [a, o, s]] of Object.entries(M)) {
     var n, r;
     let c = null != (n = o.flags) ? n : 0,
-      u = (0, f.S)(o, (0, l.yE)(null != (r = null == o ? true : o.flags) ? r : 0, R.xjy.INSTANCE), o.platform === R.M7m.EMBEDDED, (0, f.D)(o), s);
+      u = (0, f.S)(o, (0, l.yE)(null != (r = null == o ? true : o.flags) ? r : 0, w.xjy.INSTANCE), o.platform === w.M7m.EMBEDDED, (0, f.D)(o), s);
     u !== c ? (e[i] = [a, L(D({}, o), {
       flags: u
     }), s], t = true) : e[i] = [a, o, s]
@@ -177,7 +177,7 @@ function V() {
 }
 class H extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, I.Z, T.Z, d.ZP, C.Z, E.Z, A.Z, g.Z, m.ZP, N.Z, P.Z, O.Z, S.Z), this.syncWith([E.Z, g.Z], () => k())
+    this.waitFor(p.Z, I.Z, T.Z, d.ZP, C.Z, E.Z, A.Z, g.Z, h.ZP, N.Z, P.Z, O.Z, S.Z), this.syncWith([E.Z, g.Z], () => k())
   }
   getActivities() {
     return j
@@ -189,7 +189,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     return this.findActivity(t => t.application_id === e)
   }
   getCustomStatusActivity() {
-    return this.findActivity(e => e.type === R.IIU.CUSTOM_STATUS)
+    return this.findActivity(e => e.type === w.IIU.CUSTOM_STATUS)
   }
   findActivity(e) {
     return j.find(e)
@@ -203,7 +203,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     return null
   }
 }
-w(H, "displayName", "LocalActivityStore");
+R(H, "displayName", "LocalActivityStore");
 let Y = new H(Chunk570140.Z, {
   ROBLOX_SUBGAME_UPDATE: k,
   ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: k,

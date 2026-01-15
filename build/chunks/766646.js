@@ -32,9 +32,9 @@ let S = 3e5,
   N = 512,
   P = 288;
 A.width = 512, A.height = P;
-let R = A.getContext("2d");
+let w = A.getContext("2d");
 
-function w() {
+function R() {
   T.stop(), null != r && (r = null)
 }
 let D = s().debounce((e, t, n, r) => {
@@ -55,10 +55,10 @@ function x(e) {
     a = i.getContext("2d");
   i.width = e.width, i.height = e.height;
   let o = new ImageData(e.data, e.width, e.height);
-  null == a || a.putImageData(o, 0, 0), null == R || R.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r)
+  null == a || a.putImageData(o, 0, 0), null == w || w.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r)
 }
 async function L(e, t) {
-  if (r !== e || (0, g.isWeb)() && _.I0.getSetting() || m.Z.getIsActiveStreamPreviewDisabled(t)) return;
+  if (r !== e || (0, g.isWeb)() && _.I0.getSetting() || h.Z.getIsActiveStreamPreviewDisabled(t)) return;
   let n = () => L(e, t);
   if (!C) try {
     let n = await j(e, 60);
@@ -69,7 +69,7 @@ async function L(e, t) {
         streamKey: t,
         previewURL: r
       }), g.isPlatformEmbedded) {
-      let e = h.default.getToken();
+      let e = m.default.getToken();
       a()(null != e, "Auth token was null while sending screenshot."), await E.ZP.makeChunkedRequest(O.ANM.STREAM_PREVIEW(t), {
         thumbnail: r
       }, {
@@ -141,7 +141,7 @@ function k(e, t) {
 }
 let U = {
   init() {
-    f.Z.subscribe("CONNECTION_OPEN", w), f.Z.subscribe("LOGOUT", w), f.Z.subscribe("STREAM_DELETE", w), f.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    f.Z.subscribe("CONNECTION_OPEN", R), f.Z.subscribe("LOGOUT", R), f.Z.subscribe("STREAM_DELETE", R), f.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -149,7 +149,7 @@ let U = {
         streamId: a,
         context: o
       } = e;
-      null == a || o !== v.Yn.STREAM || i !== h.default.getId() || __OVERLAY__ || (w(), r = a, D(a, t, n, i))
+      null == a || o !== v.Yn.STREAM || i !== m.default.getId() || __OVERLAY__ || (R(), r = a, D(a, t, n, i))
     }), f.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t

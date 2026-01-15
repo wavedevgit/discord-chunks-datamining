@@ -60,39 +60,39 @@ function S(e) {
   let {
     userId: n,
     last: a
-  } = e, _ = (0, s.e7)([f.Z], () => f.Z.isBlocked(n)), m = (0, s.e7)([p.default], () => p.default.getUser(n)), [h, g] = i.useState(false), E = i.useCallback(() => {
+  } = e, _ = (0, s.e7)([f.Z], () => f.Z.isBlocked(n)), h = (0, s.e7)([p.default], () => p.default.getUser(n)), [m, g] = i.useState(false), E = i.useCallback(() => {
     g(true), _ ? c.Z.unblockUser(n).catch(() => {
       g(false)
     }) : c.Z.unignoreUser(n, d.Z.USER_SETTINGS).catch(() => {
       g(false)
     })
   }, [_, n]);
-  return null == m ? null : (0, r.jsxs)("div", {
+  return null == h ? null : (0, r.jsxs)("div", {
     className: o()(y.row, {
       [y.lastRow]: a
     }),
     children: [(0, r.jsxs)("div", {
       className: y.userInfo,
       children: [(0, r.jsx)(u.Z, {
-        user: m,
+        user: h,
         size: l.EFr.SIZE_40
       }), (0, r.jsxs)("div", {
         className: y.text,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: null != (t = m.globalName) ? t : m.username
+          children: null != (t = h.globalName) ? t : h.username
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: null != m.globalName ? m.username : null
+          children: null != h.globalName ? h.username : null
         })]
       })]
     }), (0, r.jsx)(l.Button, {
       variant: "secondary",
       text: b.intl.string(_ ? b.t.XyHpKH : b.t["8wXU9B"]),
       onClick: E,
-      loading: h
+      loading: m
     })]
   })
 }
@@ -105,7 +105,7 @@ function I(e) {
   } = e, [o, s] = i.useState(O), c = () => {
     s(e => e + O)
   };
-  return (0, r.jsx)(m.U, {
+  return (0, r.jsx)(h.U, {
     setting: t,
     children: (0, r.jsxs)("div", {
       className: y.card,
@@ -155,11 +155,11 @@ function C() {
 }
 
 function A() {
-  return (0, r.jsxs)(m.U, {
+  return (0, r.jsxs)(h.U, {
     setting: g.s6.RESTRICTED_USERS,
-    scrollPosition: h.FY.RESTRICTED_ACCOUNTS,
+    scrollPosition: m.FY.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
-    children: [(0, r.jsx)(m.H, {
+    children: [(0, r.jsx)(h.H, {
       header: b.intl.string(b.t["3wRort"]),
       description: b.intl.format(b.t["0aNQo9"], {
         helpArticle: _.Z.getArticleURL(E.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)

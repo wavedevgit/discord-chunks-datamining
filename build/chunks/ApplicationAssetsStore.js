@@ -59,7 +59,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     applicationId: t
   } = e;
@@ -68,7 +68,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t,
     assets: n
@@ -117,8 +117,8 @@ class E extends(r = Chunk442837.ZP.Store) {
 l(E, "displayName", "ApplicationAssetsStore");
 let b = new E(Chunk570140.Z, {
   APPLICATION_ASSETS_FETCH: _,
-  APPLICATION_ASSETS_FETCH_SUCCESS: m,
-  APPLICATION_ASSETS_UPDATE: h,
+  APPLICATION_ASSETS_FETCH_SUCCESS: h,
+  APPLICATION_ASSETS_UPDATE: m,
   EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: g,
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: g
 })

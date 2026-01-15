@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Y: () => C,
-  Z: () => w
+  Z: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -89,7 +89,7 @@ let C = Chunk473749.memo(function(e) {
     onNotificationShow: a,
     onDismissClick: u,
     onConfirmClick: f,
-    onCancelClick: m,
+    onCancelClick: h,
     onNotificationClick: b,
     hint: y,
     cancelText: O,
@@ -100,10 +100,10 @@ let C = Chunk473749.memo(function(e) {
     renderFooter: A,
     contentOpacity: N,
     status: P,
-    containerRef: R,
-    className: w,
+    containerRef: w,
+    className: R,
     wrapperClassName: D
-  } = e, [x, L] = i.useState(false), j = n || x || P === h._1z.FOCUSED, M = (0, l.e7)([_.Z, p.Z], () => _.Z.isInputLocked(p.Z.getTargetPID()));
+  } = e, [x, L] = i.useState(false), j = n || x || P === m._1z.FOCUSED, M = (0, l.e7)([_.Z, p.Z], () => _.Z.isInputLocked(p.Z.getTargetPID()));
   i.useEffect(() => {
     null == a || a()
   }, [a]);
@@ -114,8 +114,8 @@ let C = Chunk473749.memo(function(e) {
       e.stopPropagation(), null == f || f(e)
     }, [f]),
     G = i.useCallback(e => {
-      e.stopPropagation(), null == m || m(e)
-    }, [m]),
+      e.stopPropagation(), null == h || h(e)
+    }, [h]),
     Z = i.useCallback(() => {
       L(true)
     }, []),
@@ -142,7 +142,7 @@ let C = Chunk473749.memo(function(e) {
   }
 
   function H() {
-    return null == f && null == m ? null : (0, r.jsxs)("div", {
+    return null == f && null == h ? null : (0, r.jsxs)("div", {
       className: E.buttonContainer,
       children: [null != f ? (0, r.jsx)("div", {
         className: E.button,
@@ -152,7 +152,7 @@ let C = Chunk473749.memo(function(e) {
           onClick: U,
           text: null != v ? v : g.intl.string(g.t.BddRzS)
         })
-      }) : null, null != m ? (0, r.jsx)("div", {
+      }) : null, null != h ? (0, r.jsx)("div", {
         className: E.button,
         children: (0, r.jsx)(c.Button, {
           size: "sm",
@@ -211,14 +211,14 @@ let C = Chunk473749.memo(function(e) {
       className: o()(E.overflowWrapper, D),
       onScroll: T,
       children: (0, r.jsx)(c.P3F, {
-        innerRef: R,
+        innerRef: w,
         ignoreKeyPress: true,
         onMouseOver: Z,
         onMouseLeave: F,
         onClick: b,
         className: o()(E.container, {
           [E.clickable]: null != b
-        }, w),
+        }, R),
         children: W()
       })
     }), B()]
@@ -270,7 +270,7 @@ let P = {
   tension: 300
 };
 
-function R() {
+function w() {
   let [e, t] = i.useState(false), [n, r] = i.useState(false), a = (0, c.q_F)({
     scale: e ? .975 : 1,
     config: P,
@@ -288,7 +288,7 @@ function R() {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     notification: t,
     index: n,
@@ -303,7 +303,7 @@ function w(e) {
       onDismissClick: f,
       onNotificationClick: p,
       onConfirmClick: _,
-      onCancelClick: h,
+      onCancelClick: m,
       renderFooter: g,
       animationWrapperClassName: E
     }
@@ -314,13 +314,13 @@ function w(e) {
   }, [c, f]), {
     clickSpring: I,
     handleMouseClick: T
-  } = R(), P = i.useCallback(e => {
+  } = w(), P = i.useCallback(e => {
     null == p || p(e, c), T()
-  }, [p, c, T]), w = i.useCallback(e => {
+  }, [p, c, T]), R = i.useCallback(e => {
     null == _ || _(e, c)
   }, [_, c]), D = i.useCallback(e => {
-    null == h || h(e, c)
-  }, [h, c]), x = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
+    null == m || m(e, c)
+  }, [m, c]), x = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
     props: {
       onNotificationShow: L,
       onDismissClick: j,
@@ -334,7 +334,7 @@ function w(e) {
   } = t, B = S(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !Z && !V, {
     ref: Y,
     springs: W
-  } = (0, m.X4)(t.id, s, l);
+  } = (0, h.X4)(t.id, s, l);
   return (0, r.jsx)(A, {
     transitionState: s,
     springs: W,
@@ -351,8 +351,8 @@ function w(e) {
         onNotificationShow: 0 === n ? b : true,
         onDismissClick: O,
         onNotificationClick: P,
-        onConfirmClick: null != _ ? w : true,
-        onCancelClick: null != h ? D : true,
+        onConfirmClick: null != _ ? R : true,
+        onCancelClick: null != m ? D : true,
         renderFooter: x,
         expand: false,
         index: n,

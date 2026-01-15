@@ -50,8 +50,8 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = null,
-  h = null,
+let h = null,
+  m = null,
   g = null,
   E = null,
   b = null,
@@ -72,7 +72,7 @@ function A(e) {
     if (e.user_id !== u) return;
     let t = s.Q.createFromServer(e);
     r[t.id] = t, U(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && a.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && o.push(t))
-  }), m = r, h = i, E = a, b = o, C = n
+  }), h = r, m = i, E = a, b = o, C = n
 }
 
 function N(e) {
@@ -93,9 +93,9 @@ function P(e) {
   } = e;
   if (t.user_id !== l.default.getId()) return;
   let n = s.Q.createFromServer(t);
-  m = _(f({}, m), {
+  h = _(f({}, h), {
     [n.id]: n
-  }), U(n) && (h = _(f({}, h), {
+  }), U(n) && (m = _(f({}, m), {
     [n.id]: n
   })), null != E && n.type === c.NYc.GUILD && (E = N({
     activeSubscriptions: E,
@@ -106,7 +106,7 @@ function P(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   let {
     subscription: t
   } = e;
@@ -119,7 +119,7 @@ function R(e) {
   }
 }
 
-function w() {
+function R() {
   T = false
 }
 
@@ -157,7 +157,7 @@ function M(e) {
 }
 
 function k() {
-  m = null, h = null, g = null, E = null, b = null, y = false, O = null, v = false, S = false, T = false, C = null
+  h = null, m = null, g = null, E = null, b = null, y = false, O = null, v = false, S = false, T = false, C = null
 }
 
 function U(e) {
@@ -166,7 +166,7 @@ function U(e) {
 
 function G(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    r = n ? h : m;
+    r = n ? m : h;
   if (null == r) return null;
   for (let n in r) {
     let i = r[n];
@@ -180,7 +180,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
     this.waitFor(l.default)
   }
   hasFetchedSubscriptions() {
-    return null != m
+    return null != h
   }
   hasFetchedMostRecentPremiumTypeSubscription() {
     return y
@@ -202,11 +202,11 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
   getSubscriptions() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return e ? h : m
+    return e ? m : h
   }
   getSubscriptionById(e) {
     var t;
-    return null != (t = null == m ? true : m[e]) ? t : true
+    return null != (t = null == h ? true : h[e]) ? t : true
   }
   getActiveGuildSubscriptions() {
     return E
@@ -218,7 +218,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
     var t;
     let n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       r = new Set(e),
-      i = n ? h : m;
+      i = n ? m : h;
     return null == i ? null : null != (t = Object.values(i).find(e => e.items.some(e => r.has(e.planId)))) ? t : null
   }
   getMostRecentPremiumTypeSubscription() {
@@ -248,8 +248,8 @@ let F = new Z(Chunk570140.Z, {
   BILLING_SUBSCRIPTION_FETCH_SUCCESS: A,
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: P,
   BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: L,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: R,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL: w,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: w,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL: R,
   BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: D,
   BILLING_SUBSCRIPTION_RESET: k,
   BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START: x,

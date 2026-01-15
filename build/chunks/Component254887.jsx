@@ -90,7 +90,7 @@ function S(e) {
   }), v = i.useMemo(() => null == t || null == n || 0 === n.length ? [] : n.map(e => (0, p.wD)(t.id, e)).sort(f.Z), [t, n]);
   if (null == t || 0 === v.length) return null;
   let S = v.length,
-    I = m.intl.formatToPlainString(m.t.PCs0oo, {
+    I = h.intl.formatToPlainString(h.t.PCs0oo, {
       numRoles: S
     });
   return (0, r.jsx)(c.bG, {
@@ -101,19 +101,19 @@ function S(e) {
           ref: n
         } = e, i = O(e, ["ref"]);
         return (0, r.jsxs)("div", {
-          className: o()(h.root, a),
+          className: o()(m.root, a),
           children: [(0, r.jsx)(u.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            className: h.rolesHeading,
-            children: m.intl.string(m.t.stcSfI)
+            className: m.rolesHeading,
+            children: h.intl.string(h.t.stcSfI)
           }), (0, r.jsx)("div", y(E({
-            className: h.rolesList,
+            className: m.rolesList,
             "aria-label": I,
             ref: n
           }, i), {
             children: v.map(e => (0, r.jsx)(d.UB, {
-              className: h.rolePill,
+              className: m.rolePill,
               role: e,
               canRemove: false,
               onRemove: () => {},

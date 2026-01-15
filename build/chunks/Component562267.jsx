@@ -20,15 +20,15 @@ function p(e) {
   let {
     channelId: n,
     chatInputType: p
-  } = e, [_, m] = i.useState(null), h = (0, a.e7)([l.Z], () => l.Z.getStickerPreview(n, p.drafts.type));
-  return (null == (t = p.stickers) ? true : t.allowSending) && null != h && 0 !== h.length ? (0, r.jsxs)(r.Fragment, {
+  } = e, [_, h] = i.useState(null), m = (0, a.e7)([l.Z], () => l.Z.getStickerPreview(n, p.drafts.type));
+  return (null == (t = p.stickers) ? true : t.allowSending) && null != m && 0 !== m.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.stickerPreviews,
-      children: h.map(e => (0, r.jsxs)("div", {
+      children: m.map(e => (0, r.jsxs)("div", {
         className: f.stickerPreviewContainer,
         children: [(0, r.jsx)(o.P3F, {
-          onFocus: () => m(e.id),
-          onBlur: () => m(null),
+          onFocus: () => h(e.id),
+          onBlur: () => h(null),
           className: f.closeButton,
           "aria-label": d.intl.formatToPlainString(d.t.BGAQRd, {
             name: e.name

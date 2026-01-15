@@ -19,6 +19,7 @@ function s(e) {
     className: a()(o.container, n),
     style: {
       backgroundImage: "url(".concat(t, ")")
-    }
+    },
+    "data-type": "event-image"
   })
 }

@@ -18,7 +18,7 @@ require("./900285.js"), require("./164327.js");
 var Chunk895255 = require("./895255.js"),
   Chunk673650 = require("./673650.js"),
   Chunk11120 = require("./11120.js");
-let h = {
+let m = {
     skuId: Chunk242433.d.SEASONAL_GIFTING_2025_HEAD_IN_THE_CLOUDS_SKU_ID,
     assetId: "a_670b722e56740d11d1e6fe55b8094013",
     type: Chunk979554.Z.AVATAR_DECORATION,
@@ -47,8 +47,8 @@ let h = {
     gradient: ["rgba(74, 87, 192, 1)", "rgba(8, 5, 67, 1)"]
   },
   O = {
-    rewards: [h, g, E],
-    rewardAssetIdMap: (0, Chunk717401.YV)([h, g, E]),
+    rewards: [m, g, E],
+    rewardAssetIdMap: (0, Chunk717401.YV)([m, g, E]),
     chatGiftIcon: {
       trinketsAnimation: {
         getAnimationData: () => n.e("27569").then(n.bind(n, 628011)).then(e => {
@@ -98,7 +98,7 @@ let h = {
       }),
       gradientConfig: b,
       getImageUrl: (e, t) => t ? f.Z : d.Z,
-      getBannerImageUrl: () => m.Z,
+      getBannerImageUrl: () => h.Z,
       getBackgroundImageUrl: () => _.Z
     },
     planSelectionBanner: {
@@ -106,7 +106,7 @@ let h = {
       mobileBannerText: () => l.intl.string(l.t.cMiNit),
       getImageUrl: () => f.Z,
       gradientConfig: () => b,
-      getBackgroundImageUrl: () => m.Z
+      getBackgroundImageUrl: () => h.Z
     },
     billingSettingsMarketingBanner: {
       getImageUrl: e => e ? f.Z : d.Z,

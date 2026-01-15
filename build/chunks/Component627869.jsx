@@ -2,8 +2,8 @@
 /** chunk id: 627869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
-  j: () => m
+  Z: () => m,
+  j: () => h
 }), require("./388685.js"), require("./781311.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,7 +53,7 @@ function _(e, t) {
   }), e
 }
 
-function m() {
+function h() {
   let e = (0, a.e7)([s.Z], () => s.Z.getSettings().autoClipPhrases),
     [t, n] = i.useState(""),
     c = i.useMemo(() => e.map(e => ({
@@ -91,7 +91,7 @@ function m() {
   })
 }
 
-function h() {
+function m() {
   let {
     maxAutoClips: e,
     clipSignals: t
@@ -105,7 +105,7 @@ function h() {
     }))
   }, [t]), p = i.useCallback(e => {
     l.W6(Math.floor(e))
-  }, []), h = i.useMemo(() => {
+  }, []), m = i.useMemo(() => {
     let e = [c.qb];
     for (let t = 10; t <= c.b0; t += 10) e.push(t);
     return e[e.length - 1] !== c.b0 && e.push(c.b0), e
@@ -120,7 +120,7 @@ function h() {
       minValue: c.qb,
       maxValue: c.b0,
       onValueChange: p,
-      markers: h,
+      markers: m,
       onMarkerRender: e => "".concat(Math.floor(e))
     }), (0, r.jsx)(o.izJ, {}), (0, r.jsx)(o.rsf, {
       label: u.intl.string(u.t.iV6KcI),
@@ -132,6 +132,6 @@ function h() {
       description: u.intl.string(u.t["s6wq+m"]),
       checked: t.enablePhraseSignals,
       onChange: d
-    }), t.enablePhraseSignals && (0, r.jsx)(m, {})]
+    }), t.enablePhraseSignals && (0, r.jsx)(h, {})]
   })
 }

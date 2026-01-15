@@ -36,8 +36,8 @@ function _(e) {
   }
   return e
 }
-let m = new Chunk710845.Z("ChannelMessages"),
-  h = true;
+let h = new Chunk710845.Z("ChannelMessages"),
+  m = true;
 
 function g(e, t) {
   var n, r;
@@ -340,7 +340,7 @@ class y {
   }
   truncateBottom(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-    return !h || this._array.length <= e ? this : this.mutate(t => {
+    return !m || this._array.length <= e ? this : this.mutate(t => {
       for (let n = e; n < this._array.length; n++) delete t._map[t._array[n].id];
       t._after.cache(t._array.slice(e, this._array.length), !t.hasMoreAfter), t._array = t._array.slice(0, e), t.hasMoreAfter = true
     }, t)
@@ -424,7 +424,7 @@ class y {
     })
   }
   loadComplete(e) {
-    var t, n, r, s, l, u, d, p, _, h, g, b;
+    var t, n, r, s, l, u, d, p, _, m, g, b;
     let y = [...e.newMessages],
       O = null != (t = e.isBefore) && t,
       v = null != (n = e.isAfter) && n,
@@ -444,16 +444,16 @@ class y {
       let e = this._array.filter(e => e.state === f.yb.SENDING),
         t = this._array.filter(e => e.state === f.yb.SEND_FAILED),
         n = e.length > 0 || t.length > 0;
-      P = this.reset(N), !n || O || v || (null == S ? true : S.messageId) != null || (null == S ? true : S.offset) != null ? m.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (m.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), P = P.merge(t)), e.length > 0 && (m.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), P = P.merge(e)))
+      P = this.reset(N), !n || O || v || (null == S ? true : S.messageId) != null || (null == S ? true : S.offset) != null ? h.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (h.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), P = P.merge(t)), e.length > 0 && (h.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), P = P.merge(e)))
     }
-    let R = !A && P.cached && !C;
+    let w = !A && P.cached && !C;
     return P.mutate({
       ready: true,
       loadingMore: false,
       jumpType: null != (p = null == S ? true : S.jumpType) ? p : o.SR.ANIMATED,
       jumpFlash: null != (_ = null == S ? true : S.flash) && _,
       jumped: null != S,
-      jumpedToPresent: null != (h = null == S ? true : S.present) && h,
+      jumpedToPresent: null != (m = null == S ? true : S.present) && m,
       jumpTargetId: null != (g = null == S ? true : S.messageId) ? g : null,
       jumpTargetOffset: null != S && null != S.messageId && null != S.offset ? S.offset : 0,
       jumpSequenceId: null == S || C ? P.jumpSequenceId : P.jumpSequenceId + 1,
@@ -463,7 +463,7 @@ class y {
       cached: A,
       hasFetched: e.hasFetched,
       error: false,
-      initialScrollSequenceId: R ? P.initialScrollSequenceId + 1 : P.initialScrollSequenceId
+      initialScrollSequenceId: w ? P.initialScrollSequenceId + 1 : P.initialScrollSequenceId
     })
   }
   addCachedMessages(e, t) {

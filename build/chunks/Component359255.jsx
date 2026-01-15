@@ -22,12 +22,12 @@ let d = e => {
     className: a,
     minValue: d,
     maxValue: f
-  } = e, [p, _] = i.useState(t), m = u(p) || null != d && p <= d, h = u(p) || null != f && p >= f, g = e => {
+  } = e, [p, _] = i.useState(t), h = u(p) || null != d && p <= d, m = u(p) || null != f && p >= f, g = e => {
     n(u(e) ? null != d ? d : 0 : e), _(e)
   }, E = e => {
-    e.stopPropagation(), m || g(p - 1)
+    e.stopPropagation(), h || g(p - 1)
   }, b = e => {
-    e.stopPropagation(), h || g(p + 1)
+    e.stopPropagation(), m || g(p + 1)
   }, y = e => {
     if (u(e)) return g(e);
     let t = parseInt(e);
@@ -41,7 +41,7 @@ let d = e => {
       icon: s.V_R,
       onClick: E,
       "aria-label": l.intl.string(l.t["k+ohJm"]),
-      disabled: m
+      disabled: h
     }), (0, r.jsx)("div", {
       className: c.value,
       children: (0, r.jsx)(s.oil, {
@@ -54,7 +54,7 @@ let d = e => {
       icon: s.qJs,
       onClick: b,
       "aria-label": l.intl.string(l.t.w8Sc4B),
-      disabled: h
+      disabled: m
     })]
   })
 }

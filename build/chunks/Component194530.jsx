@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
 function p(e) {
   var t, n, p, _;
   let {
-    transitionState: m,
-    onSuccess: h,
+    transitionState: h,
+    onSuccess: m,
     onClose: g,
     requirementsUpdated: E
-  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, C] = i.useState(null), [A, N] = i.useState(null), P = (0, o.e7)([c.Z], () => c.Z.getErrors()), R = (0, o.e7)([c.Z], () => c.Z.getFormState()), w = i.useRef(null);
+  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, C] = i.useState(null), [A, N] = i.useState(null), P = (0, o.e7)([c.Z], () => c.Z.getErrors()), w = (0, o.e7)([c.Z], () => c.Z.getFormState()), R = i.useRef(null);
   async function D(e) {
     e.preventDefault(), (0, l.b9)();
     let t = false;
@@ -31,21 +31,21 @@ function p(e) {
       password: b,
       newPassword: O
     });
-    if (null == n ? true : n.ok) h();
+    if (null == n ? true : n.ok) m();
     else {
       var r;
       (null == n || null == (r = n.body) ? true : r.username) != null && (0, u.P)()
     }
   }
   return i.useEffect(() => {
-    if (m === s.Dvm.ENTERED) {
+    if (h === s.Dvm.ENTERED) {
       var e;
-      null == (e = w.current) || e.focus()
+      null == (e = R.current) || e.focus()
     }
-  }, [m]), (0, r.jsx)("form", {
+  }, [h]), (0, r.jsx)("form", {
     onSubmit: D,
     children: (0, r.jsx)(a.Modal, {
-      transitionState: m,
+      transitionState: h,
       onClose: g,
       title: f.intl.string(f.t.geta79),
       subtitle: E ? f.intl.string(f.t["37iHbZ"]) : f.intl.string(f.t.iOurYj),
@@ -56,7 +56,7 @@ function p(e) {
       }, {
         variant: "primary",
         text: f.intl.string(f.t.i4jeWR),
-        loading: R === d.QZA.SUBMITTING,
+        loading: w === d.QZA.SUBMITTING,
         type: "submit"
       }],
       children: (0, r.jsxs)(s.Kqy, {
@@ -67,7 +67,7 @@ function p(e) {
           type: "password",
           value: b,
           onChange: y,
-          inputRef: w,
+          inputRef: R,
           autoComplete: "current-password",
           required: true
         }), (0, r.jsx)(s.oil, {

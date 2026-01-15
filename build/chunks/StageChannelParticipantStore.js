@@ -35,16 +35,16 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 let C = "NO_GUILD",
-  A = new Chunk759174.h(e => [R(e)], e => e.id),
+  A = new Chunk759174.h(e => [w(e)], e => e.id),
   N = new Set,
   P = {};
 
-function R(e) {
+function w(e) {
   var t;
   return null != (t = e.getGuildId()) ? t : C
 }
 
-function w(e) {
+function R(e) {
   return A.values(null != e ? e : true, true).map(e => {
     let {
       id: t
@@ -81,7 +81,7 @@ function M(e, t) {
 }
 
 function k(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : R();
   return t.reduce((t, n) => {
     let r = L(n);
     return e(r) ? (M(n, r), true) : t
@@ -89,7 +89,7 @@ function k(e) {
 }
 
 function U(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : R();
   return k(t => t.updateParticipant(e), t)
 }
 
@@ -134,7 +134,7 @@ function H(e) {
 
 function Y(e) {
   let t = false;
-  for (let n of w(e.guildId)) t = L(n).rebuild() || t;
+  for (let n of R(e.guildId)) t = L(n).rebuild() || t;
   return t
 }
 
@@ -203,12 +203,12 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  if (N.has(t)) return k(e => e.rebuild(), w(t))
+  if (N.has(t)) return k(e => e.rebuild(), R(t))
 }
 let ee = [];
 class et extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(p.default, b.default, _.Z, E.Z, y.Z, h.Z, O.ZP, m.Z, S.ZP, g.Z, I.Z, f.Z)
+    this.waitFor(p.default, b.default, _.Z, E.Z, y.Z, m.Z, O.ZP, h.Z, S.ZP, g.Z, I.Z, f.Z)
   }
   getParticipantsVersion(e) {
     var t, n;

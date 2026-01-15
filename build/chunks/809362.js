@@ -22,22 +22,22 @@ function l(e, t) {
   });
   let {
     direction: f
-  } = (0, s.j)(), p = "rtl" === f && "horizontal" === c, _ = (0, r.E7)(t), m = e => {
+  } = (0, s.j)(), p = "rtl" === f && "horizontal" === c, _ = (0, r.E7)(t), h = e => {
     if (e.currentTarget.contains(e.target)) {
       if ("horizontal" === c && "ArrowRight" === e.key || "vertical" === c && "ArrowDown" === e.key) p ? _.focusPrevious() : _.focusNext();
       else if ("horizontal" === c && "ArrowLeft" === e.key || "vertical" === c && "ArrowUp" === e.key) p ? _.focusNext() : _.focusPrevious();
       else {
         if ("Tab" !== e.key) return;
-        e.stopPropagation(), h.current = document.activeElement, e.shiftKey ? _.focusFirst() : _.focusLast();
+        e.stopPropagation(), m.current = document.activeElement, e.shiftKey ? _.focusFirst() : _.focusLast();
         return
       }
       e.stopPropagation(), e.preventDefault()
     }
-  }, h = (0, o.useRef)(null), g = e => {
-    e.currentTarget.contains(e.relatedTarget) || h.current || (h.current = e.target)
+  }, m = (0, o.useRef)(null), g = e => {
+    e.currentTarget.contains(e.relatedTarget) || m.current || (m.current = e.target)
   }, E = e => {
     var n, r;
-    h.current && !e.currentTarget.contains(e.relatedTarget) && (null == (n = t.current) ? true : n.contains(e.target)) && (null == (r = h.current) || r.focus(), h.current = null)
+    m.current && !e.currentTarget.contains(e.relatedTarget) && (null == (n = t.current) ? true : n.contains(e.target)) && (null == (r = m.current) || r.focus(), m.current = null)
   };
   return {
     toolbarProps: {
@@ -48,7 +48,7 @@ function l(e, t) {
       "aria-orientation": c,
       "aria-label": n,
       "aria-labelledby": null == n ? l : true,
-      onKeyDownCapture: u ? true : m,
+      onKeyDownCapture: u ? true : h,
       onFocusCapture: u ? true : E,
       onBlurCapture: u ? true : g
     }

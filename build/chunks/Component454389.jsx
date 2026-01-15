@@ -77,15 +77,15 @@ function p(e) {
     validation: f,
     className: p,
     ref: _,
-    containerClassName: m
-  } = e, h = d(e, ["as", "readOnly", "disabled", "fullWidth", "children", "validation", "className", "ref", "containerClassName"]);
+    containerClassName: h
+  } = e, m = d(e, ["as", "readOnly", "disabled", "fullWidth", "children", "validation", "className", "ref", "containerClassName"]);
   let g = null != t ? t : "div",
     E = null == f ? true : f.hasError;
   return (0, r.jsx)(g, u(l({
     ref: _,
-    className: a()(o.container, m),
+    className: a()(o.container, h),
     "data-full-width": s
-  }, h), {
+  }, m), {
     children: (0, r.jsx)("div", {
       className: a()(o.wrapper, p),
       "data-error": E,

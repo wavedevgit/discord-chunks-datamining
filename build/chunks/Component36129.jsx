@@ -50,7 +50,7 @@ let T = e => e.map(e => "#".concat(e)),
             colors: T(n.colors),
             chassisMixAmount: n.base_mix,
             gradientAngle: n.gradient_angle
-          }), (0, h.y)((0, b.e)(n.base_theme))
+          }), (0, m.y)((0, b.e)(n.base_theme))
         }
       })]
     })
@@ -70,7 +70,7 @@ let T = e => e.map(e => "#".concat(e)),
       message: t
     } = e, {
       sharedClientTheme: n
-    } = t, c = (0, m.ZP)(t), u = i.useMemo(() => (0, a.once)(() => {
+    } = t, c = (0, h.ZP)(t), u = i.useMemo(() => (0, a.once)(() => {
       (0, f.h)({
         type: o.ImpressionTypes.VIEW,
         name: s.z.CUSTOM_THEME_SHARE,
@@ -82,7 +82,7 @@ let T = e => e.map(e => "#".concat(e)),
       },
       threshold: 1,
       minTimeVisibleMs: 200
-    }), h = i.useMemo(() => {
+    }), m = i.useMemo(() => {
       var e;
       return true === n ? "" : (0, y.yz)(T(n.colors), null != (e = n.gradient_angle) ? e : 0)
     }, [n]);
@@ -92,14 +92,14 @@ let T = e => e.map(e => "#".concat(e)),
       children: [(0, r.jsx)("div", {
         className: I.colorPreview,
         style: {
-          background: "".concat(h)
+          background: "".concat(m)
         }
       }), (0, r.jsxs)("div", {
         className: I.sharedByContainer,
         children: [(0, r.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
           className: I.sharedTitle,
-          children: [S.intl.string(v.default.KSBBpC), " ", (0, r.jsx)(l.SrA, {})]
+          children: [S.intl.string(v.default.KSBBpC), " ", (0, r.jsx)(l.NitroWheelIcon, {})]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",

@@ -2,7 +2,7 @@
 /** chunk id: 37258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,25 +54,25 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     label: t,
     onAction: n,
     icon: d
   } = e, _ = p(e, ["label", "onAction", "icon"]);
   let {
-    analyticsLocations: m
+    analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: h
+    context: m
   } = (0, s.KZ)(), g = (0, o.Aq)(), E = (0, o.bp)();
   return (0, r.jsx)(i.sNh, {
     id: "user-profile",
     label: null != t ? t : u.intl.string(u.t.LYju5J),
     action: () => {
       null == n || n(), (0, l.openUserProfileModal)(f({
-        sourceAnalyticsLocations: m,
+        sourceAnalyticsLocations: h,
         appContext: E
-      }, h, _)), g.dispatch(c.CkL.POPOUT_CLOSE)
+      }, m, _)), g.dispatch(c.CkL.POPOUT_CLOSE)
     },
     icon: d
   })

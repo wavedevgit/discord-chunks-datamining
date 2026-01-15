@@ -18,8 +18,8 @@ var Chunk512722 = require("./512722.js"),
   Chunk887490 = require("./887490.js");
 let p = /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
   _ = new Set(["emoji", "customEmoji", "textMention", "userMention", "roleMention", "channelMention", "staticRouteLink", "soundboard", "timestamp", "gameMention"]),
-  m = new Set(["gameMentionInput", "timestampMentionInput"]),
-  h = new Set(["line", "blockQuote"]),
+  h = new Set(["gameMentionInput", "timestampMentionInput"]),
+  m = new Set(["line", "blockQuote"]),
   g = new Set(["applicationCommandOption"]);
 
 function E(e, t, n) {
@@ -28,7 +28,7 @@ function E(e, t, n) {
     isVoid: i,
     onChange: a
   } = e;
-  e.isVoid = e => !!_.has(e.type) || i(e), e.isInline = e => !!(_.has(e.type) || m.has(e.type)) || r(e);
+  e.isVoid = e => !!_.has(e.type) || i(e), e.isInline = e => !!(_.has(e.type) || h.has(e.type)) || r(e);
   let o = null,
     s = true;
   return e.onChange = () => {
@@ -42,7 +42,7 @@ function E(e, t, n) {
 function b(e, t, n) {
   let r = f.bN.areStylesDisabled(e);
   for (let i of f.bN.blocks(e))
-    if (h.has(i[0].type)) r ? O(e, i, true, null) : y(e, i, t, n);
+    if (m.has(i[0].type)) r ? O(e, i, true, null) : y(e, i, t, n);
     else {
       let [a, o] = i;
       for (let i = a.children.length - 1; i >= 0; i--) {
@@ -241,7 +241,7 @@ function S(e, t, n, r, i) {
     let u, d = a.children[c];
     if (!f.LC.isText(d)) continue;
     let _ = f.C0.child(o, c),
-      m = [];
+      h = [];
     for (p.lastIndex = 0; null != (u = p.exec(d.text));) {
       if (0 !== u.index && null == d.text.charAt(u.index - 1).match(/(\t|\s)/)) {
         p.lastIndex = u.index + 1;
@@ -252,13 +252,13 @@ function S(e, t, n, r, i) {
           offset: u.index
         }, i)) continue;
       let a = (0, s.i)(u[0], n, r);
-      null != a && C(r, t[0], a) ? m.push({
+      null != a && C(r, t[0], a) ? h.push({
         index: u.index,
         length: u[0].length,
         node: a
       }) : p.lastIndex = u.index + 1
     }
-    for (let t of m.reverse()) I(e, [d, f.C0.child(o, c)], t.index, t.length, t.node), l = true
+    for (let t of h.reverse()) I(e, [d, f.C0.child(o, c)], t.index, t.length, t.node), l = true
   }
   return l
 }

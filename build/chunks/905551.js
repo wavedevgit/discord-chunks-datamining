@@ -10,8 +10,8 @@ require.d(exports, {
   _k: () => S,
   ce: () => _,
   hz: () => b,
-  iX: () => h,
-  mF: () => m,
+  iX: () => m,
+  mF: () => h,
   s9: () => v
 }), require("./642613.js");
 var Chunk544891 = require("./544891.js"),
@@ -60,7 +60,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 ? arguments[2] : true;
   return t ? (setTimeout(() => {
@@ -86,7 +86,7 @@ function m(e) {
   })
 }
 
-function h(e, t) {
+function m(e, t) {
   return r.tn.get({
     url: p.ANM.PRODUCT_FOR_SKU(t),
     rejectWithError: true,

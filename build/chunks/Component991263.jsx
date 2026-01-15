@@ -16,7 +16,7 @@ function d(e) {
   let {
     rating: t,
     onClick: n
-  } = e, o = t === s.aZ.BAD ? l.kZ9 : l.lbB, c = i.useCallback(() => {
+  } = e, o = t === s.aZ.BAD ? l.ThumbsDownIcon : l.ThumbsUpIcon, c = i.useCallback(() => {
     n(t)
   }, [n, t]);
   return (0, r.jsx)(a.P3F, {

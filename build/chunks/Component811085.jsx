@@ -17,12 +17,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk750412 = require("./750412.js");
-let h = 36;
+let m = 36;
 
 function g() {
   let e = (0, d.P)(),
     t = (0, o.e7)([c.default], () => c.default.getCurrentUser()),
-    [n, g] = i.useState(h),
+    [n, g] = i.useState(m),
     E = i.useRef({
       [u.Sn.ALL_GOOD]: null,
       [u.Sn.LIMITED]: null,
@@ -33,8 +33,8 @@ function g() {
     b = i.useCallback(() => {
       g(Math.max(Math.max(...Object.values(E.current).map(e => {
         var t;
-        return null != (t = null == e ? true : e.getBoundingClientRect().height) ? t : h
-      })), h))
+        return null != (t = null == e ? true : e.getBoundingClientRect().height) ? t : m
+      })), m))
     }, []);
   i.useEffect(() => {
     b();
@@ -89,18 +89,18 @@ function g() {
     } = y[e.state],
     T = Object.keys(y).length;
   return (0, r.jsxs)(l.Zbd, {
-    className: m.container,
+    className: h.container,
     outline: false,
     children: [(0, r.jsx)("div", {
-      className: m.profile,
+      className: h.profile,
       children: (0, r.jsx)(f.Z, {
         user: t,
         size: l.EFr.SIZE_80
       })
     }), (0, r.jsxs)("div", {
-      className: m.status,
+      className: h.status,
       children: [(0, r.jsxs)("div", {
-        className: m.title,
+        className: h.title,
         children: [(0, r.jsx)(l.Heading, {
           color: "text-strong",
           variant: "heading-lg/normal",
@@ -120,36 +120,36 @@ function g() {
           children: v
         })]
       }), (0, r.jsxs)("div", {
-        className: m.health,
+        className: h.health,
         style: {
           height: n
         },
         children: [(0, r.jsx)("div", {
-          className: m.line
+          className: h.line
         }), Object.entries(y).map((t, n) => {
           let [i, a] = t, o = parseInt(i) === e.state;
           return (0, r.jsxs)("div", {
-            className: m.statusOption,
+            className: h.statusOption,
             ref: e => {
               E.current[parseInt(i)] = e
             },
             children: [o ? (0, r.jsx)(I, {
-              className: m.marker,
+              className: h.marker,
               color: a.color
             }) : (0, r.jsx)("div", {
-              className: m.marker,
+              className: h.marker,
               style: {
                 marginLeft: 0 === n ? false : 0,
                 marginRight: n === T - 1 ? false : 0
               },
               children: (0, r.jsx)("div", {
-                className: m.empty
+                className: h.empty
               })
             }), _.intl.format(a.status, {
               hook: e => (0, r.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: m.statusLabel,
+                className: h.statusLabel,
                 children: e
               })
             })]

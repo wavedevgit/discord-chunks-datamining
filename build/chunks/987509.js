@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => I,
-  dL: () => m,
-  hC: () => h,
+  dL: () => h,
+  hC: () => m,
   hl: () => g,
   qx: () => E
 }), require("./388685.js"), require("./539854.js");
@@ -22,7 +22,7 @@ var Chunk392711 = require("./392711.js"),
 require("./388032.jsx");
 let _ = 15;
 
-function m(e) {
+function h(e) {
   let t = l.Z.getChannel(e);
   return (null == t ? true : t.type) === p.d4z.DM ? {
     type: "user",
@@ -33,7 +33,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return "".concat(e.type, "-").concat(e.id)
 }
 
@@ -107,10 +107,10 @@ function I(e) {
   } = e;
   if (n) return v(S(t, f));
   let p = null != u && u.length > 0 ? u.map(e => b(e)) : [],
-    m = s.Z.getChannelHistory(),
-    h = m.length > 0 ? m.map(e => (0, o.Z)(e)) : [],
+    h = s.Z.getChannelHistory(),
+    m = h.length > 0 ? h.map(e => (0, o.Z)(e)) : [],
     g = a.length > 0 ? a.map(e => (0, o.Z)(e.id)) : [],
-    E = S([...p, null != l ? b(l) : null, ...h, ...g], f),
+    E = S([...p, null != l ? b(l) : null, ...m, ...g], f),
     y = (null == c ? true : c.find(e => (0, r.isEqual)(e, d))) != null,
     O = null == d || y ? [] : [d.id];
   return null != i ? v(E.filter(e => e.type === i)) : v(E, O).slice(0, _)

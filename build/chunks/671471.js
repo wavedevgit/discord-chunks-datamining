@@ -71,7 +71,7 @@ module.exports = function(e) {
       built_in: ["_Pragma"],
       _type_hints: ["any", "auto_ptr", "barrier", "binary_semaphore", "bitset", "complex", "condition_variable", "condition_variable_any", "counting_semaphore", "deque", "false_type", "flat_map", "flat_set", "future", "imaginary", "initializer_list", "istringstream", "jthread", "latch", "lock_guard", "multimap", "multiset", "mutex", "optional", "ostringstream", "packaged_task", "pair", "promise", "priority_queue", "queue", "recursive_mutex", "recursive_timed_mutex", "scoped_lock", "set", "shared_future", "shared_lock", "shared_mutex", "shared_timed_mutex", "shared_ptr", "stack", "string_view", "stringstream", "timed_mutex", "thread", "true_type", "tuple", "unique_lock", "unique_ptr", "unordered_map", "unordered_multimap", "unordered_multiset", "unordered_set", "variant", "vector", "weak_ptr", "wstring", "wstring_view"]
     },
-    m = {
+    h = {
       className: "function.dispatch",
       relevance: 0,
       keywords: {
@@ -79,7 +79,7 @@ module.exports = function(e) {
       },
       begin: t.concat(/\b/, /(?!decltype)/, /(?!if)/, /(?!for)/, /(?!switch)/, /(?!while)/, e.IDENT_RE, t.lookahead(/(<[^<>]+>|)\s*\(/))
     },
-    h = [m, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    m = [h, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
     g = {
       variants: [{
         begin: /=/,
@@ -92,11 +92,11 @@ module.exports = function(e) {
         end: /;/
       }],
       keywords: _,
-      contains: h.concat([{
+      contains: m.concat([{
         begin: /\(/,
         end: /\)/,
         keywords: _,
-        contains: h.concat(["self"]),
+        contains: m.concat(["self"]),
         relevance: 0
       }]),
       relevance: 0
@@ -151,7 +151,7 @@ module.exports = function(e) {
     classNameAliases: {
       "function.dispatch": "built_in"
     },
-    contains: [].concat(g, E, m, h, [d, {
+    contains: [].concat(g, E, h, m, [d, {
       begin: "\\b(deque|list|queue|priority_queue|pair|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array|tuple|optional|variant|function|flat_map|flat_set)\\s*<(?!<)",
       end: ">",
       keywords: _,

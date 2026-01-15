@@ -21,12 +21,12 @@ function f(e) {
     productId: f
   } = e, p = (0, o.e7)([l.Z], () => l.Z.getGuildProduct(f)), {
     isLoading: _,
-    downloadAttachment: m
-  } = (0, c.Z)(i, f), h = r.useCallback(() => {
+    downloadAttachment: h
+  } = (0, c.Z)(i, f), m = r.useCallback(() => {
     var e, t;
     let n = null == p || null == (t = p.attachments) || null == (e = t[0]) ? true : e.id;
-    a()(null != n, "No attachment"), m(n)
-  }, [m, null == p ? true : p.attachments]), g = r.useCallback(() => u.Z.open({
+    a()(null != n, "No attachment"), h(n)
+  }, [h, null == p ? true : p.attachments]), g = r.useCallback(() => u.Z.open({
     guildId: i,
     productId: f
   }), [i, f]);
@@ -42,6 +42,6 @@ function f(e) {
     icon: s._8t,
     iconPosition: "end",
     loading: _,
-    onClick: h
+    onClick: m
   }
 }

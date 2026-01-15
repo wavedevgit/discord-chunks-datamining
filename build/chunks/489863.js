@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Iq: () => p,
-  UR: () => m,
+  UR: () => h,
   Ww: () => _,
-  c$: () => h,
+  c$: () => m,
   g: () => f,
   i2: () => b,
   tR: () => E,
@@ -54,8 +54,8 @@ async function p(e) {
     permissions: f,
     guildId: p,
     channelId: _,
-    integrationType: m,
-    nonce: h,
+    integrationType: h,
+    nonce: m,
     dmSettings: g
   } = e;
   return (await i.tn.post({
@@ -68,7 +68,7 @@ async function p(e) {
       code_challenge_method: c,
       scope: r.join(" "),
       state: u,
-      nonce: h
+      nonce: m
     },
     body: {
       guild_id: p,
@@ -76,7 +76,7 @@ async function p(e) {
       channel_id: null == p && null != _ ? _ : true,
       permissions: f,
       authorize: t,
-      integration_type: m,
+      integration_type: h,
       location_context: d(),
       dm_settings: {
         allow_mobile_push: null == g ? true : g.allowMobilePush
@@ -118,7 +118,7 @@ async function _(e) {
     rejectWithError: false
   })).body
 }
-async function m(e) {
+async function h(e) {
   let {
     body: t
   } = await i.tn.get({
@@ -132,7 +132,7 @@ async function m(e) {
   return t
 }
 
-function h(e, t) {
+function m(e, t) {
   a.Z.logout(t, (0, r.Ui)(e.pathname + e.search, false))
 }
 async function g(e) {

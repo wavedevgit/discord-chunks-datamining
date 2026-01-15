@@ -60,7 +60,7 @@ function p(e) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -68,14 +68,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var h = 0,
+var m = 0,
   g = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"),
   E = (0, Chunk473749.memo)(function(e) {
     var t = e.children,
@@ -85,9 +85,9 @@ var h = 0,
     return (0, i.useEffect)(function() {
       if (c) {
         var e = O();
-        return ++h,
+        return ++m,
           function() {
-            0 == --h && (e[g] = null)
+            0 == --m && (e[g] = null)
           }
       }
     }, []), (0, r.jsx)(o.L.Provider, Object.assign({

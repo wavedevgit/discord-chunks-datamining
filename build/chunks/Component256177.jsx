@@ -23,9 +23,9 @@ let s = {
         align: u,
         shape: d,
         label: f
-      } = e, [p, _] = i.useState(false), m = i.useCallback((e, t) => {
+      } = e, [p, _] = i.useState(false), h = i.useCallback((e, t) => {
         _(t)
-      }, []), h = i.useCallback(() => {
+      }, []), m = i.useCallback(() => {
         _(true)
       }, []), g = i.useCallback(() => {
         _(false)
@@ -38,7 +38,7 @@ let s = {
         children: [(0, r.jsx)(a.$q, {
           "data-migration-pending": true,
           value: p,
-          onChange: m,
+          onChange: h,
           disabled: t,
           readOnly: n,
           displayOnly: s,
@@ -60,7 +60,7 @@ let s = {
             variant: "secondary",
             size: "sm",
             text: "Check",
-            onClick: h,
+            onClick: m,
             disabled: t || n
           }), (0, r.jsx)(o.Button, {
             variant: "secondary",

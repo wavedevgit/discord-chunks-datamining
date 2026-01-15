@@ -382,7 +382,7 @@ class q extends Chunk473749.Component {
         applicationId: r.id,
         guildId: r.guildId,
         isStorefront: false,
-        analyticsLocations: [m.Z.GIFT_CODE_EMBED]
+        analyticsLocations: [h.Z.GIFT_CODE_EMBED]
       })) : null != t && t.isSubscription && (e.preventDefault(), (0, C.openUserSettings)(T.n.NITRO_PANEL, {
         section: G.oAB.PREMIUM
       }))
@@ -431,7 +431,7 @@ let Q = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
     } = (0, c.cj)([N.Z], () => ({
       giftCode: N.Z.get(t),
       resolved: N.Z.getIsResolved(t)
-    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([w.Z], () => null != i ? w.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([A.default], () => null != i ? A.default.getId() === i.userId : A.default.getId() === n.id);
+    })), o = (0, c.e7)([w.default], () => null != i && null != i.userId ? w.default.getUser(i.userId) : null), s = (0, c.e7)([R.Z], () => null != i ? R.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, m.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([A.default], () => null != i ? A.default.getId() === i.userId : A.default.getId() === n.id);
     return (0, r.jsx)(Q, W(H({}, e), {
       skuApplication: u,
       giftCode: i,

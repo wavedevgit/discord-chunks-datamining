@@ -73,7 +73,7 @@ function L(e) {
 function j(e) {
   var t;
   if (null == e) return null;
-  let n = m.Z.getGuild(e);
+  let n = h.Z.getGuild(e);
   if (null == n) return null;
   let r = _.Z.getNumRoles(n.id),
     i = c.default.getId(),
@@ -91,7 +91,7 @@ function j(e) {
     guild_num_roles: r,
     guild_member_num_roles: null != a ? a.roles.length : 0,
     guild_member_perms: String(null != (t = g.Z.getGuildPermissions(n)) ? t : N.Hn),
-    guild_is_vip: n.features.has(R.GuildFeatures.VIP_REGIONS),
+    guild_is_vip: n.features.has(w.GuildFeatures.VIP_REGIONS),
     is_member: null != a,
     num_voice_channels_active: L(u)
   }
@@ -119,7 +119,7 @@ function U(e) {
     let t = e => {
       if (null == e) returnfalse;
       let t = e.permissionOverwrites[r];
-      return null != t && a.e$(t.deny, R.Plq.VIEW_CHANNEL)
+      return null != t && a.e$(t.deny, w.Plq.VIEW_CHANNEL)
     };
     n = t(l.Ec.has(e.type) && null != e.parent_id ? u.Z.getChannel(e.parent_id) : e)
   }
@@ -136,7 +136,7 @@ function G(e) {
   if (null == e) return null;
   let t = u.Z.getChannel(e);
   if (null == t) return null;
-  let n = h.Z.isVideoEnabled(),
+  let n = m.Z.isVideoEnabled(),
     r = b.Z.getMediaSessionId();
   return x({
     channel_id: t.id,
@@ -155,25 +155,25 @@ function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (C.default.isThrottled(e)) return;
-  let r = !("location" in t) || t.location !== R.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
+  let r = !("location" in t) || t.location !== w.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
     i = "guild_id" in t ? t.guild_id : r ? v.Z.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? O.Z.getChannelId(i) : null,
     o = u.Z.getChannel(a),
-    s = x({}, t, j(Z(o, i)), null != i && null != a && (0, w.AB)(a) ? M(i, a) : U(o));
+    s = x({}, t, j(Z(o, i)), null != i && null != a && (0, R.AB)(a) ? M(i, a) : U(o));
   C.default.track(e, s, {
     flush: n
   })
 }
 
 function B(e) {
-  if ((0, w.AB)(e)) return {
+  if ((0, R.AB)(e)) return {
     channel_static_route: e
   };
   let t = u.Z.getChannel(e);
   if (null == t) return {
     channel_id: e
   };
-  let n = m.Z.getGuild(t.guild_id);
+  let n = h.Z.getGuild(t.guild_id);
   if (null == n) {
     let n = false;
     if (t.isDM()) {
@@ -203,7 +203,7 @@ function B(e) {
     parent_id: t.parent_id,
     parent_channel_type: t.parentChannelThreadType,
     has_pending_member_action: (0, o.P)(t.guild_id, e),
-    can_send_message: g.Z.can(R.Plq.SEND_MESSAGES, t),
+    can_send_message: g.Z.can(w.Plq.SEND_MESSAGES, t),
     is_app_dm: false
   }
 }
@@ -224,7 +224,7 @@ function H(e, t) {
     custom_status_count: 0
   };
   return i()(T.Z.getVoiceStates(e)).forEach(e => {
-    e.channelId === t && null != E.Z.findActivity(e.userId, e => e.type === R.IIU.CUSTOM_STATUS) && n.custom_status_count++
+    e.channelId === t && null != E.Z.findActivity(e.userId, e => e.type === w.IIU.CUSTOM_STATUS) && n.custom_status_count++
   }), n
 }
 let Y = {

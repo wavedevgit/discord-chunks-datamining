@@ -57,7 +57,7 @@ function _(e) {
     guildProductListing: t,
     guildId: u,
     sourceAnalyticsLocations: f
-  } = e, _ = false, m = (0, i.Z)(), h = t.id, g = () => {
+  } = e, _ = false, h = (0, i.Z)(), m = t.id, g = () => {
     _ = true
   };
   (0, a.ZDy)(async () => {
@@ -66,22 +66,22 @@ function _(e) {
     } = await n.e("88806").then(n.bind(n, 578780));
     return n => (0, r.jsx)(e, p(d({}, n), {
       applicationId: t.application_id,
-      skuId: h,
+      skuId: m,
       sourceAnalyticsLocations: f,
       guildProductContext: {
         guildProductListingId: t.id,
         guildId: u
       },
-      loadId: m,
+      loadId: h,
       onComplete: g
     }))
   }, {
     onCloseCallback: () => {
       _ || l.default.track(c.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: m,
+        load_id: h,
         payment_type: c.Zuq[c.GZQ.ONE_TIME],
         is_gift: false,
-        sku_id: h,
+        sku_id: m,
         location_stack: Array.isArray(f) ? f : [f]
       }), (0, o.fw)(), (0, s.p)()
     },

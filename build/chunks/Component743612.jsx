@@ -19,7 +19,7 @@ let l = e => {
     description: f,
     titleClassName: p = "",
     subtitle: _ = "",
-    subtitleClassName: m
+    subtitleClassName: h
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Heading, {
@@ -27,7 +27,7 @@ let l = e => {
       className: a()(s.cardHeading, p),
       children: c
     }), "" !== _ && (null == u || u(null == d ? true : d.subtitle)) && (0, r.jsxs)("div", {
-      className: m,
+      className: h,
       children: [(0, r.jsx)(o.Text, {
         variant: null != (i = null == d || null == (t = d.subtitle) ? true : t.textVariant) ? i : "text-sm/normal",
         children: _

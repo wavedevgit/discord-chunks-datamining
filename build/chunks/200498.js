@@ -2,11 +2,11 @@
 /** chunk id: 200498, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => h,
+  B: () => m,
   Os: () => _,
   _L: () => p,
   jU: () => g,
-  nG: () => m
+  nG: () => h
 });
 var Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
@@ -39,7 +39,7 @@ function _(e) {
   return r.fS(t, c.Hn) && r.fS(n, c.Hn)
 }
 
-function m(e) {
+function h(e) {
   return (0, i.e7)([l.Z, s.Z, o.Z], () => {
     let t = o.Z.getChannel(e),
       n = s.Z.getGuild(null == t ? true : t.getGuildId());
@@ -47,7 +47,7 @@ function m(e) {
   }, [e])
 }
 
-function h(e) {
+function m(e) {
   return (0, i.e7)([o.Z, l.Z], () => null != e && l.Z.can(f.Plq.MUTE_MEMBERS, o.Z.getChannel(e)), [e])
 }
 

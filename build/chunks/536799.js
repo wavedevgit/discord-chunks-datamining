@@ -31,7 +31,7 @@ let S = (0, Chunk473749.createContext)(null),
   T = (0, Chunk473749.forwardRef)(function(e, t) {
     return [e, t] = (0, a.pE)(e, t, S), v.createElement(s.a$.Provider, {
       value: null
-    }, v.createElement(h.yF, {
+    }, v.createElement(m.yF, {
       content: e.children
     }, n => v.createElement(C, {
       props: e,
@@ -55,9 +55,9 @@ function C({
   let {
     filter: p,
     shouldUseVirtualFocus: _,
-    ...m
-  } = u, [h, g] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), b = (0, O.n)({
-    ...m,
+    ...h
+  } = u, [m, g] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), b = (0, O.n)({
+    ...h,
     children: true,
     collection: n
   }), y = (0, O.d)(b, p), S = (0, E.z)(u, {
@@ -68,7 +68,7 @@ function C({
     descriptionProps: N,
     errorMessageProps: P
   } = (0, f.H)({
-    ...m,
+    ...h,
     ...T,
     label: g
   }, y, i);
@@ -84,7 +84,7 @@ function C({
       [o.n, {
         ...A,
         elementType: "span",
-        ref: h
+        ref: m
       }],
       [I, {
         ...C,
@@ -104,7 +104,7 @@ let A = (0, Chunk473749.forwardRef)(function(e, t) {
   return (0, v.useContext)(s.a$) ? v.createElement(N, {
     props: e,
     forwardedRef: t
-  }) : v.createElement(h.FE, e)
+  }) : v.createElement(m.FE, e)
 });
 
 function N({
@@ -127,25 +127,25 @@ function N({
       isFocusVisible: f,
       state: n
     },
-    m = (0, a.aX)({
+    h = (0, a.aX)({
       className: e.className,
       style: e.style,
       defaultClassName: "react-aria-TagList",
       values: _
     }),
-    h = (0, i.pd)(n.selectionManager.focusedKey),
+    m = (0, i.pd)(n.selectionManager.focusedKey),
     g = (0, E.z)(e, {
       global: true
     });
   return v.createElement("div", {
-    ...(0, b.d)(g, m, o, c),
+    ...(0, b.d)(g, h, o, c),
     ref: l,
     "data-empty": 0 === n.collection.size || true,
     "data-focused": d || true,
     "data-focus-visible": f || true
   }, v.createElement(u.y, null, 0 === n.collection.size && e.renderEmptyState ? e.renderEmptyState(_) : v.createElement(r, {
     collection: n.collection,
-    persistedKeys: h
+    persistedKeys: m
   })))
 }
 let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
@@ -159,7 +159,7 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
     }),
     {
       rowProps: f,
-      gridCellProps: h,
+      gridCellProps: m,
       removeButtonProps: g,
       ...O
     } = (0, _.E)({
@@ -168,7 +168,7 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
     {
       hoverProps: S,
       isHovered: I
-    } = (0, m.X)({
+    } = (0, h.X)({
       isDisabled: !O.allowsSelection,
       onHoverStart: n.props.onHoverStart,
       onHoverChange: n.props.onHoverChange,
@@ -205,7 +205,7 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
     "data-allows-removing": O.allowsRemoving || true,
     "data-selection-mode": "none" === o.selectionManager.selectionMode ? true : o.selectionManager.selectionMode
   }, v.createElement("div", {
-    ...h,
+    ...m,
     style: {
       display: "contents"
     }

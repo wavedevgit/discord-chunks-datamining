@@ -65,12 +65,12 @@ function S(e, t) {
 
 function I(e) {
   switch (e) {
-    case m.Eu4.TIER_3:
-      return m.AnalyticsObjectTypes.TIER_3;
-    case m.Eu4.TIER_2:
-      return m.AnalyticsObjectTypes.TIER_2;
-    case m.Eu4.TIER_1:
-      return m.AnalyticsObjectTypes.TIER_1;
+    case h.Eu4.TIER_3:
+      return h.AnalyticsObjectTypes.TIER_3;
+    case h.Eu4.TIER_2:
+      return h.AnalyticsObjectTypes.TIER_2;
+    case h.Eu4.TIER_1:
+      return h.AnalyticsObjectTypes.TIER_1;
     default:
       throw Error("Unsupported Boosting tier: ".concat(e))
   }
@@ -93,15 +93,15 @@ let T = {
       tierMarkerAnimationPosition: N,
       totalAvailableBoostsCount: P
     } = e, {
-      analyticsLocations: R
-    } = (0, c.ZP)(), w = (0, u.Z)(), D = m.oCV[A], x = D - P, L = A <= N || y, j = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, U = i.premiumTier < A && P >= D, {
+      analyticsLocations: w
+    } = (0, c.ZP)(), R = (0, u.Z)(), D = h.oCV[A], x = D - P, L = A <= N || y, j = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, U = i.premiumTier < A && P >= D, {
       scaleFactor: G
     } = (0, l.q_F)({
       from: {
         scaleFactor: 0
       },
       to: {
-        scaleFactor: N >= A || y && N + 1 === A || y && false === N && A === m.Eu4.NONE ? 1 : 0
+        scaleFactor: N >= A || y && N + 1 === A || y && false === N && A === h.Eu4.NONE ? 1 : 0
       },
       config: {
         tension: 360,
@@ -113,7 +113,7 @@ let T = {
         style: {
           transform: G.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== m.Eu4.NONE ? U ? (0, r.jsx)(l.zkc, {
+      }), A !== h.Eu4.NONE ? U ? (0, r.jsx)(l.zkc, {
         className: a()(b.boostedTierIcon, b.disabledIndicator),
         size: "xxs",
         color: "currentColor"
@@ -126,18 +126,18 @@ let T = {
 
     function F() {
       L && (U || (0, p.u)({
-        analyticsLocations: R,
+        analyticsLocations: w,
         analyticsLocation: {
-          page: m.ZY5.PREMIUM_GUILD_USER_MODAL,
-          section: m.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
-          object: m.qAy.SUBSCRIBE_TO_TIER_BUTTON,
+          page: h.ZY5.PREMIUM_GUILD_USER_MODAL,
+          section: h.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
+          object: h.qAy.SUBSCRIBE_TO_TIER_BUTTON,
           objectType: I(A)
         },
         numberOfBoostsToAdd: x,
         guild: i
       }))
     }
-    let B = !j && w.fractionalState === h.a$.NONE,
+    let B = !j && R.fractionalState === m.a$.NONE,
       V = B ? l.P3F : "div",
       H = B ? {
         onClick: F
@@ -169,7 +169,7 @@ let T = {
       }, H), {
         children: [!j && (0, r.jsx)("div", {
           className: b.boostedTierIconBackground
-        }), j && A === m.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
+        }), j && A === h.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
           confettiTriggerRef: n,
           setConfettiCount: v,
           setShouldFireConfetti: C,
@@ -177,14 +177,14 @@ let T = {
         }) : Z, (0, r.jsxs)(l.Text, {
           className: b.progressBarMarkerLabel,
           variant: "text-md/normal",
-          children: [j && A !== m.Eu4.NONE && (0, r.jsx)(l.dz2, {
+          children: [j && A !== h.Eu4.NONE && (0, r.jsx)(l.dz2, {
             size: "md",
             color: "currentColor",
             className: b.progressBarMarkerUnlockedIcon
           }), t]
         })]
       }));
-    return A !== m.Eu4.NONE ? (0, r.jsx)(s.u, {
+    return A !== h.Eu4.NONE ? (0, r.jsx)(s.u, {
       text: Y,
       children: W
     }) : W

@@ -23,8 +23,8 @@ function p(e) {
     textClassName: i,
     iconClassName: p,
     hideText: _ = false,
-    hideTooltip: m = false,
-    canTruncate: h = true,
+    hideTooltip: h = false,
+    canTruncate: m = true,
     showChannelName: g = false
   } = e, E = (0, o.vjg)(o.Skl.ONLINE), b = (0, s.ZP)(t), y = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: O
@@ -39,11 +39,11 @@ function p(e) {
       className: a()(f.icon, p)
     }),
     text: I,
-    tooltipText: m ? true : S,
+    tooltipText: h ? true : S,
     textVariant: n,
     textClassName: i,
-    hideTooltip: m,
-    canTruncate: h,
+    hideTooltip: h,
+    canTruncate: m,
     "aria-label": S,
     hideText: _
   })

@@ -16,10 +16,10 @@ let u = e => {
     searchQuery: t,
     selectedUsers: n,
     limit: i
-  } = e, u = (0, o.e7)([c.Z], () => c.Z.getRecipientStatus()), d = (0, o.e7)([c.Z], () => c.Z.getReferralsRemaining()), [f, p] = r.useState(0), [_, m] = r.useState([]), [h, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(new Map);
+  } = e, u = (0, o.e7)([c.Z], () => c.Z.getRecipientStatus()), d = (0, o.e7)([c.Z], () => c.Z.getReferralsRemaining()), [f, p] = r.useState(0), [_, h] = r.useState([]), [m, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(new Map);
   a()(null != d, "Referrals remaining should not be null");
   let v = async (e, r) => {
-    if (!h && !E && null != e && 0 !== d) try {
+    if (!m && !E && null != e && 0 !== d) try {
       g(true);
       let i = [...y.values()];
       for (let [e, t] of u)
@@ -27,7 +27,7 @@ let u = e => {
           let t = await (0, s.PR)(e);
           i.push(t)
         } let a = await (0, l.iF)(e, t, r);
-      m(t => {
+      h(t => {
         let r = a.users.filter(e => !n.has(e.id));
         return (i = i.filter(e => !n.has(e.id)), 0 === e) ? [...n.values(), ...i.values(), ...r] : [...t, ...r]
       }), O(e => {
@@ -49,7 +49,7 @@ let u = e => {
         if (n === l.Fe.PENDING && !y.has(t)) {
           let n = await (0, s.PR)(t);
           e.set(n.id, n)
-        } O(e), m(Array.from(e.values()))
+        } O(e), h(Array.from(e.values()))
     }
   }, I = r.useRef(S);
   return r.useEffect(() => {
@@ -65,7 +65,7 @@ let u = e => {
     eligibleUsers: _,
     fetchUsers: () => v(f, i),
     hasError: E,
-    isFetching: h,
+    isFetching: m,
     resendUsers: y
   }
 }

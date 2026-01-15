@@ -16,7 +16,7 @@ function o(e, t) {
   var l = p(e);
   if (l.date) {
     var c = _(l.date, s);
-    r = m(c.restDateString, c.year)
+    r = h(c.restDateString, c.year)
   }
   if (!r || isNaN(r.getTime())) return new Date(NaN);
   var u = r.getTime(),
@@ -26,8 +26,8 @@ function o(e, t) {
     if (isNaN(o = b(l.timezone))) return new Date(NaN)
   } else {
     var f = new Date(u + d),
-      h = new Date(0);
-    return h.setFullYear(f.getUTCFullYear(), f.getUTCMonth(), f.getUTCDate()), h.setHours(f.getUTCHours(), f.getUTCMinutes(), f.getUTCSeconds(), f.getUTCMilliseconds()), h
+      m = new Date(0);
+    return m.setFullYear(f.getUTCFullYear(), f.getUTCMonth(), f.getUTCDate()), m.setHours(f.getUTCHours(), f.getUTCMinutes(), f.getUTCSeconds(), f.getUTCMilliseconds()), m
   }
   return new Date(u + d + o)
 }
@@ -64,22 +64,22 @@ function _(e, t) {
   }
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null === t) return new Date(NaN);
   var n = e.match(u);
   if (!n) return new Date(NaN);
   var r = !!n[4],
-    i = h(n[1]),
-    a = h(n[2]) - 1,
-    o = h(n[3]),
-    s = h(n[4]),
-    l = h(n[5]) - 1;
+    i = m(n[1]),
+    a = m(n[2]) - 1,
+    o = m(n[3]),
+    s = m(n[4]),
+    l = m(n[5]) - 1;
   if (r) return T(t, s, l) ? y(t, s, l) : new Date(NaN);
   var c = new Date(0);
   return S(t, a, o) && I(t, i) ? (c.setUTCFullYear(t, a, Math.max(i, o)), c) : new Date(NaN)
 }
 
-function h(e) {
+function m(e) {
   return e ? parseInt(e) : 1
 }
 

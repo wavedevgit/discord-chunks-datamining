@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,10 +76,10 @@ let g = e => {
     className: a,
     color: d,
     roleColors: p,
-    iconType: h,
+    iconType: m,
     onMouseEnter: g,
     onMouseLeave: E
-  } = e, b = m(e, ["ref", "children", "className", "color", "roleColors", "iconType", "onMouseEnter", "onMouseLeave"]);
+  } = e, b = h(e, ["ref", "children", "className", "color", "roleColors", "iconType", "onMouseEnter", "onMouseLeave"]);
   let [y, O] = i.useState(false), {
     gradientStyle: v,
     gradientClassname: S
@@ -106,8 +106,8 @@ let g = e => {
     onMouseLeave: T,
     style: C,
     tabIndex: null != b.onClick ? 0 : false,
-    children: null != h ? (0, r.jsx)(c.Z, {
-      iconType: h,
+    children: null != m ? (0, r.jsx)(c.Z, {
+      iconType: m,
       children: n
     }) : null != p ? (0, r.jsx)("span", {
       style: f({}, v),

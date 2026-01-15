@@ -60,15 +60,15 @@ class C extends Chunk147913.Z {
   constructor(...e) {
     super(...e), O(this, "_previousAgeVerificationStatus", null), O(this, "handlePostConnectionOpen", () => {
       var e, t;
-      this._previousAgeVerificationStatus = null != (t = null == (e = h.default.getCurrentUser()) ? true : e.ageVerificationStatus) ? t : null
+      this._previousAgeVerificationStatus = null != (t = null == (e = m.default.getCurrentUser()) ? true : e.ageVerificationStatus) ? t : null
     }), O(this, "handleCurrentUserUpdate", e => {
       var t;
       let {
         user: n
-      } = e, r = null != (t = (0, h.transformUser)(n).ageVerificationStatus) ? t : null, i = this._previousAgeVerificationStatus !== r && r === a.F$.VERIFIED_ADULT, o = (0, f.U)("age-verification-manager"), l = i && ((0, d.c_)("age-verification-manager") || o);
+      } = e, r = null != (t = (0, m.transformUser)(n).ageVerificationStatus) ? t : null, i = this._previousAgeVerificationStatus !== r && r === a.F$.VERIFIED_ADULT, o = (0, f.U)("age-verification-manager"), l = i && ((0, d.c_)("age-verification-manager") || o);
       try {
         if (l) {
-          let e = m.Z.getChannelId(),
+          let e = h.Z.getChannelId(),
             t = false;
           s.Z.forEach(n => {
             let {

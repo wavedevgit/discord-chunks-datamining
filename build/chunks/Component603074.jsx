@@ -2,7 +2,7 @@
 /** chunk id: 603074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,13 +17,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk526617 = require("./526617.jsx"),
   Chunk976734 = require("./976734.js");
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     channel: n,
     containerWidth: a,
-    onClose: m,
-    onSelect: h,
+    onClose: h,
+    onSelect: m,
     analyticsSource: g,
     suppressPlaySound: E,
     shouldValidateSelectedSound: b,
@@ -40,14 +40,14 @@ function m(e) {
   } = (0, f.Z)(), P = (0, d.Z)({
     location: "SoundboardSoundPicker"
   }), {
-    analyticsLocations: R
+    analyticsLocations: w
   } = (0, c.ZP)(l.Z.SOUNDBOARD_POPOUT);
   return i.useEffect(() => {
     N()
   }, [N]), i.useEffect(() => {
     v || (0, u.ql)("")
   }, [v]), (0, r.jsx)(c.Gt, {
-    value: R,
+    value: w,
     children: (0, r.jsx)(s.VqE, {
       className: o()(_.picker, {
         [_.fetching]: A,
@@ -56,8 +56,8 @@ function m(e) {
       children: A ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(p.Z, {
         guildId: t,
         channel: n,
-        onClose: m,
-        onSelect: h,
+        onClose: h,
+        onSelect: m,
         shouldValidateSelectedSound: b,
         containerWidth: a,
         suppressPlaySound: E,

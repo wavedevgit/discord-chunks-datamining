@@ -4,10 +4,10 @@
 require.d(exports, {
   AT: () => E,
   DQ: () => C,
-  Hz: () => w,
+  Hz: () => R,
   LD: () => A,
   MD: () => T,
-  SI: () => R,
+  SI: () => w,
   UJ: () => P,
   X6: () => S,
   aQ: () => U,
@@ -33,7 +33,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk774863 = require("./774863.js"),
   Chunk294509 = require("./294509.js");
 let g = false,
-  E = () => Object.values(h.Fj).filter(e => {
+  E = () => Object.values(m.Fj).filter(e => {
     var t;
     return null == e.isEligible || (null == (t = e.isEligible) ? true : t.call(e))
   }),
@@ -42,17 +42,17 @@ let g = false,
       channelId: t,
       authorId: n
     } = G(e);
-    return null == t || null == e ? h.qn.NONE : y(t, n)
+    return null == t || null == e ? m.qn.NONE : y(t, n)
   },
   y = (e, t) => {
     let n = f.default.getCurrentUser();
-    if (null == n || t === n.id) return h.qn.NONE;
+    if (null == n || t === n.id) return m.qn.NONE;
     let r = x(e, t, [c.Z, d.Z]);
-    return null == r ? h.qn.NONE : O(r)
+    return null == r ? m.qn.NONE : O(r)
   },
   O = e => {
     let t = E();
-    return null == e ? h.qn.NONE : w(t.map(t => U(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(p.lm))
+    return null == e ? m.qn.NONE : R(t.map(t => U(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(p.lm))
   };
 
 function v(e) {
@@ -62,7 +62,7 @@ function v(e) {
 
 function S(e, t) {
   var n, r;
-  if (t === h.qn.NONE || null == e) returnfalse;
+  if (t === m.qn.NONE || null == e) returnfalse;
   if ((null == (n = e.attachments) ? true : n.some(e => A({
       type: _.l.Attachment,
       media: e
@@ -98,7 +98,7 @@ function I(e) {
 function T(e, t) {
   var n, r;
   let i = null != t ? t : b(e);
-  if (i === h.qn.NONE) returnfalse;
+  if (i === m.qn.NONE) returnfalse;
   if ((null == (n = e.attachments) ? true : n.some(e => P({
       type: _.l.Attachment,
       media: e
@@ -119,7 +119,7 @@ function T(e, t) {
 function C(e) {
   var t, n, r, i;
   let a = b(e);
-  if (a === h.qn.NONE) return {
+  if (a === m.qn.NONE) return {
     attachmentIds: [],
     embedIds: []
   };
@@ -138,19 +138,19 @@ function C(e) {
 }
 
 function A(e, t) {
-  if (t === h.qn.NONE) return [];
+  if (t === m.qn.NONE) return [];
   let n = D(t);
-  return 0 === n.length ? [] : n.filter(t => R(t, e)).map(e => h.Fj[e].obscureReason)
+  return 0 === n.length ? [] : n.filter(t => w(t, e)).map(e => m.Fj[e].obscureReason)
 }
 
 function N(e, t) {
-  if (t === h.qn.NONE) returnfalse;
+  if (t === m.qn.NONE) returnfalse;
   let n = D(t);
-  return 0 !== n.length && n.filter(t => R(t, e)).length > 0
+  return 0 !== n.length && n.filter(t => w(t, e)).length > 0
 }
 
 function P(e, t) {
-  if (t === h.qn.NONE || o.ZP.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
+  if (t === m.qn.NONE || o.ZP.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
   let n = D(t);
   if (0 === n.length) returnfalse;
   switch (e.type) {
@@ -165,10 +165,10 @@ function P(e, t) {
   }
 }
 
-function R(e, t) {
+function w(e, t) {
   var n, i, a, s;
   if (null == e) returnfalse;
-  let l = h.Fj[e];
+  let l = m.Fj[e];
   if (null != l.devSettingKey && o.ZP.get(l.devSettingKey)) returntrue;
   switch (t.type) {
     case _.l.Embed:
@@ -182,23 +182,23 @@ function R(e, t) {
   }
 }
 
-function w(e) {
-  let t = h.qn.NONE;
+function R(e) {
+  let t = m.qn.NONE;
   for (let n of e) switch (n) {
-    case h._.EXPLICIT:
-      t |= h.qn.EXPLICIT;
+    case m._.EXPLICIT:
+      t |= m.qn.EXPLICIT;
       break;
-    case h._.GORE:
-      t |= h.qn.GORE;
+    case m._.GORE:
+      t |= m.qn.GORE;
       break;
-    case h._.SELF_HARM:
-      t |= h.qn.SELF_HARM
+    case m._.SELF_HARM:
+      t |= m.qn.SELF_HARM
   }
   return t
 }
 
 function D(e) {
-  if (e === h.qn.NONE) return [];
+  if (e === m.qn.NONE) return [];
   let t = [];
   for (let n of E())(e & n.bitmask) > 0 && t.push(n.harmType);
   return t
@@ -214,7 +214,7 @@ function x(e, t) {
 
 function L(e, t) {
   var n, r, i, a, o, s, l;
-  return !(0 === t.length || null == e || 0 === t.filter(t => !R(t, {
+  return !(0 === t.length || null == e || 0 === t.filter(t => !w(t, {
     type: _.l.Embed,
     media: e
   })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? true : o.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(Z(e), t)
@@ -222,7 +222,7 @@ function L(e, t) {
 
 function j(e, t) {
   var n;
-  return 0 !== t.length && 0 !== t.filter(t => !R(t, {
+  return 0 !== t.length && 0 !== t.filter(t => !w(t, {
     type: _.l.Attachment,
     media: e
   })).length && k(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
@@ -230,15 +230,15 @@ function j(e, t) {
 
 function M(e, t) {
   var n;
-  return 0 !== t.length && 0 !== t.filter(t => !R(t, {
+  return 0 !== t.length && 0 !== t.filter(t => !w(t, {
     type: _.l.GenericMedia,
     media: e
   })).length && k(null == (n = e.contentScanMetadata) ? true : n.version, t)
 }
 
 function k(e, t) {
-  let n = m.Z.validContentScanVersion;
-  return e !== g && (t.includes(h._.GORE) || t.includes(h._.SELF_HARM) ? null == e || e < n : null == e)
+  let n = h.Z.validContentScanVersion;
+  return e !== g && (t.includes(m._.GORE) || t.includes(m._.SELF_HARM) ? null == e || e < n : null == e)
 }
 
 function U(e) {

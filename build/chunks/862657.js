@@ -6,13 +6,13 @@ require.d(exports, {
   E8: () => S,
   GN: () => g,
   K8: () => D,
-  NS: () => w,
+  NS: () => R,
   PM: () => I,
-  R_: () => R,
+  R_: () => w,
   UE: () => v,
   VB: () => C,
   Zp: () => T,
-  _x: () => h,
+  _x: () => m,
   iQ: () => O,
   jY: () => P,
   qe: () => N,
@@ -69,9 +69,9 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 2592e6;
+let h = 2592e6;
 
-function h(e, t, n) {
+function m(e, t, n) {
   var r;
   let i = Array.isArray(t) ? new Map(t.map(e => [e.id, e])) : t,
     a = Array.isArray(n) ? new Map(n.map(e => [e.id, e])) : n,
@@ -101,7 +101,7 @@ function y(e) {
 
 function O(e) {
   if (!y(e)) returnfalse;
-  let t = Date.now() - m,
+  let t = Date.now() - h,
     n = new Date(e.config.expiresAt).valueOf();
   return null != e.config.expiresAt && !(n <= t)
 }
@@ -191,13 +191,13 @@ function P(e) {
   if (null != n) return null == (t = A(n)) ? true : t.metadataRaw
 }
 
-function R(e) {
+function w(e) {
   var t;
   let n = T(e);
   if (null != n) return null == (t = A(n)) ? true : t.metadataSealed
 }
 
-function w(e, t) {
+function R(e, t) {
   var n;
   let r = T(e);
   if (null == r) return;

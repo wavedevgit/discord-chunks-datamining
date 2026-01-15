@@ -76,17 +76,17 @@ function _(e) {
     onMouseLeave: u
   } = e, p = f(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]);
   let _ = t ? o.d : o.Z,
-    m = () => {
+    h = () => {
       null == n || n(), a.default.disconnect()
     },
-    h = () => s.intl.string(s.t["6vrfgt"]),
+    m = () => s.intl.string(s.t["6vrfgt"]),
     {
       Component: g,
       events: E
     } = (0, i.K)();
   return (0, r.jsx)(_, d(c({}, p), {
     isTrayButton: false,
-    onClick: m,
+    onClick: h,
     iconComponent: g,
     onMouseEnter: e => {
       null == l || l(e), E.onMouseEnter()
@@ -94,6 +94,6 @@ function _(e) {
     onMouseLeave: e => {
       null == u || u(e), E.onMouseLeave()
     },
-    label: h()
+    label: m()
   }))
 }

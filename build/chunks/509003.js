@@ -2,8 +2,8 @@
 /** chunk id: 509003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FT: () => m,
-  Jc: () => h,
+  FT: () => h,
+  Jc: () => m,
   LK: () => p,
   bP: () => E,
   le: () => g,
@@ -81,7 +81,7 @@ function _(e) {
   return (null == (t = e.metadata) ? true : t.distributor) === a.GQo.ROBLOX && e.application_id !== i.eB
 }
 
-function m(e) {
+function h(e) {
   if (!_(e)) return e;
   let t = r.m.getConfig({
     location: "transformRobloxSubgameNames"
@@ -93,7 +93,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   if (e.type !== a.IIU.PLAYING || !_(e)) return e;
   let t = Number(e.sync_id),
     n = l({}, e);

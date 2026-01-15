@@ -24,24 +24,24 @@ function g() {
     t = (0, a.e7)([l.Z], () => l.Z.hasConsented(_.pjP.USAGE_STATISTICS)),
     n = i.useCallback(e => {
       e ? (0, o.g)([_.pjP.USAGE_STATISTICS], []).catch(f.S) : (0, f.V)({
-        header: m.intl.string(m.t.OdPCbN),
-        body: m.intl.string(m.t.MGWabA),
-        confirmText: m.intl.string(m.t["D3+rU4"]),
-        cancelText: m.intl.string(m.t.kYpG0u),
+        header: h.intl.string(h.t.OdPCbN),
+        body: h.intl.string(h.t.MGWabA),
+        confirmText: h.intl.string(h.t["D3+rU4"]),
+        cancelText: h.intl.string(h.t.kYpG0u),
         onConfirm: () => (0, o.g)([], [_.pjP.USAGE_STATISTICS]).catch(f.S)
       })
     }, []);
   return (0, r.jsx)(u.U, {
     setting: p.s6.PRIVACY_DATA_IMPROVE_DISCORD_V2,
     children: (0, r.jsx)(d.ZP, {
-      title: m.intl.string(m.t.XuADY2),
-      note: m.intl.format(m.t["igTSG/"], {
+      title: h.intl.string(h.t.XuADY2),
+      note: h.intl.format(h.t["igTSG/"], {
         helpdeskArticle: c.Z.getArticleURL(_.BhN.DATA_PRIVACY_CONTROLS)
       }),
       value: t,
       onChange: n,
       disabled: e,
-      tooltipText: e ? m.intl.string(h.default["6Af/cw"]) : true
+      tooltipText: e ? h.intl.string(m.default["6Af/cw"]) : true
     })
   })
 }

@@ -100,8 +100,8 @@ let A = {
   },
   N = Chunk473749.createContext(A),
   P = {},
-  R = 1e3,
-  w = 1e4,
+  w = 1e3,
+  R = 1e4,
   D = 6e4,
   x = 12e4,
   L = 3e5,
@@ -193,7 +193,7 @@ let V = {
     }
   },
   [Chunk981631.rMx.QUICKSWITCHER_OPENED]: {
-    throttlePeriod: w,
+    throttlePeriod: R,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
@@ -317,7 +317,7 @@ let V = {
     deduplicate: true
   },
   [Chunk981631.rMx.MEMBER_LIST_SWIPE_PEEK]: {
-    throttlePeriod: R,
+    throttlePeriod: w,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.REDACTABLE_MESSAGE_LOADED]: {
@@ -329,7 +329,7 @@ let V = {
     throttleKeys: e => [e.type]
   } : true,
   [Chunk981631.rMx.MODERATOR_QUEUE_ACTION]: {
-    throttlePeriod: w,
+    throttlePeriod: R,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.NOTIFICATION_PERMISSION_STATUS]: {
@@ -357,7 +357,7 @@ let V = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.VIDEO_STREAM_ZOOM_CHANGED]: {
-    throttlePeriod: R,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.CACHE_STATS_RECORDED]: {
@@ -419,8 +419,8 @@ function Q(e) {
     } = a;
     a = v({}, T(a, ["source"]), Y(e))
   }
-  a.client_performance_cpu = m.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = m.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = m.Z.getCPUCoreCount(), a.accessibility_features = W(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / R);
-  let o = m.Z.getProcessUptime();
+  a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = W(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / w);
+  let o = h.Z.getProcessUptime();
   null != o && (a.uptime_process_renderer = Math.floor(o));
   let {
     utmSource: s,
@@ -463,7 +463,7 @@ function ei(e, t) {
 function ea(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     r = String(e);
-  if (f.R.includes(r) || h.Z.addBreadcrumb({
+  if (f.R.includes(r) || m.Z.addBreadcrumb({
       category: "analytics",
       message: "".concat(r)
     }), ei(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();

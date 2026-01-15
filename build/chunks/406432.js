@@ -5,7 +5,7 @@ require.d(exports, {
   CO: () => u,
   NU: () => N,
   TN: () => E,
-  X2: () => R,
+  X2: () => w,
   cb: () => C,
   d$: () => p,
   hU: () => c,
@@ -32,9 +32,9 @@ let o = (e, t) => {
   f = /\.(webp|gif|avif)$/i,
   p = e => o(e, f),
   _ = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
-  m = /\.(mp3|m4a|wav|ogg|opus|flac)$/i,
-  h = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
-  g = (0, Chunk358085.isIOS)() ? _ : (0, Chunk358085.isAndroid)() ? m : h,
+  h = /\.(mp3|m4a|wav|ogg|opus|flac)$/i,
+  m = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
+  g = (0, Chunk358085.isIOS)() ? _ : (0, Chunk358085.isAndroid)() ? h : m,
   E = e => null != e && g.test(e),
   b = /\.(webm)$/i,
   y = /\.(mp4|mov)$/i,
@@ -51,4 +51,4 @@ let o = (e, t) => {
   }).enabled && b.test(e),
   N = e => null != e && (I.test(e) || A(e)),
   P = e => null != e && S.test(e),
-  R = e => s(e, "video")
+  w = e => s(e, "video")

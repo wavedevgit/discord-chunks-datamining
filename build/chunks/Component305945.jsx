@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk483566 = require("./483566.jsx"),
   Chunk117325 = require("./117325.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -114,7 +114,7 @@ function P(e) {
     onChange: t,
     checked: n,
     disabled: a,
-    focusProps: m,
+    focusProps: h,
     innerRef: g
   } = e, y = b(e, ["onChange", "checked", "disabled", "focusProps", "innerRef"]), {
     reducedMotion: v
@@ -125,11 +125,11 @@ function P(e) {
     state: I ? n ? .7 : .3 : +!!n
   }, "animate-always");
 
-  function R(e) {
+  function w(e) {
     T(false), e.stopPropagation(), null == t || t(e.currentTarget.checked)
   }
 
-  function w(e) {
+  function R(e) {
     a || e.repeat || (" " === e.key || "Enter" === e.key) && T(true)
   }
 
@@ -137,14 +137,14 @@ function P(e) {
     var t;
     a || !I || e.repeat || (T(false), "Enter" === e.key && (null == (t = S.current) || t.click()))
   }
-  return (0, r.jsx)(p.g, E(h({}, y), {
+  return (0, r.jsx)(p.g, E(m({}, y), {
     disabled: a,
     layout: "horizontal",
     layoutConfig: {
       horizontalControlColumnWidth: "auto"
     },
     auxiliaryContentPosition: "under-label",
-    children: e => (0, r.jsx)(f.tE, E(h({}, m), {
+    children: e => (0, r.jsx)(f.tE, E(m({}, h), {
       within: true,
       offset: false,
       children: (0, r.jsxs)(s.animated.div, {
@@ -203,9 +203,9 @@ function P(e) {
           },
           className: _.input,
           tabIndex: a ? false : 0,
-          onKeyDown: w,
+          onKeyDown: R,
           onKeyUp: D,
-          onChange: R,
+          onChange: w,
           checked: n,
           disabled: a
         })]

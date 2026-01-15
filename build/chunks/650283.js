@@ -49,7 +49,7 @@ module.exports = function(e) {
       end: ";|:",
       excludeEnd: true
     },
-    m = {
+    h = {
       className: "function",
       variants: [{
         begin: "процедура|функция",
@@ -91,6 +91,6 @@ module.exports = function(e) {
       type: o,
       literal: s
     },
-    contains: [p, m, f, _, l, c, u, d]
+    contains: [p, h, f, _, l, c, u, d]
   }
 }

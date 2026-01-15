@@ -36,7 +36,7 @@ function E(e) {
     children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
       color: "text-default",
-      children: h.intl.string(h.t.uT1CPa)
+      children: m.intl.string(m.t.uT1CPa)
     }), (0, r.jsx)(o.X6q, {
       variant: "heading-xxl/bold",
       color: "text-strong",
@@ -53,11 +53,11 @@ function E(e) {
     }), b.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "text-default",
-      children: h.intl.string(h.t.jFbDnJ)
+      children: m.intl.string(m.t.jFbDnJ)
     }) : (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "text-default",
-      children: h.intl.string(h.t["X+Fdpo"])
+      children: m.intl.string(m.t["X+Fdpo"])
     })]
   }), [b.length, n, E, v]);
   return (0, r.jsxs)("header", {
@@ -68,7 +68,7 @@ function E(e) {
       children: [(0, r.jsx)(s.qE, {
         className: g.avatar,
         src: I,
-        size: m.EF.SIZE_80,
+        size: h.EF.SIZE_80,
         "aria-label": n.name
       }), (0, r.jsxs)("div", {
         className: g.ellipseGroup,
@@ -82,7 +82,7 @@ function E(e) {
       }), (0, r.jsx)(s.qE, {
         className: g.avatar,
         src: T,
-        size: m.EF.SIZE_80,
+        size: h.EF.SIZE_80,
         "aria-label": t.username
       })]
     }), C, y ? (0, r.jsx)("div", {
@@ -90,7 +90,7 @@ function E(e) {
       children: (0, r.jsxs)(l.x, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: [h.intl.format(h.t.qRvpYU, {
+        children: [m.intl.format(m.t.qRvpYU, {
           userHook: () => (0, r.jsxs)(l.x, {
             className: g.currentUserTag,
             variant: "text-sm/normal",
@@ -104,7 +104,7 @@ function E(e) {
           tag: "a",
           className: g.logoutLink,
           onClick: () => (0, d.c$)(O, "oauth2_logout"),
-          children: h.intl.string(h.t["yV/hjC"])
+          children: m.intl.string(m.t["yV/hjC"])
         })]
       })
     }) : null]

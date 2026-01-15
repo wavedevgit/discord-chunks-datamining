@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk168524 = require("./168524.js"),
   Chunk214288 = require("./214288.js"),
   Chunk35583 = require("./35583.js");
-let m = 10,
-  h = 2;
+let h = 10,
+  m = 2;
 
 function g(e) {
   let {
@@ -51,15 +51,15 @@ function g(e) {
           alt: t.name
         }), b && (0, r.jsx)(u.ZP, {
           mask: u.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
-          width: m + 2 * h,
-          height: m + 2 * h,
+          width: h + 2 * m,
+          height: h + 2 * m,
           className: _.gameActivityLevel,
           children: (0, r.jsx)("div", {
             className: _.gameActivityLevelInner,
             children: (0, r.jsx)(c.YqE, {
               color: c.TVs.unsafe_rawColors.ORANGE_330.css,
-              width: m,
-              height: m,
+              width: h,
+              height: h,
               size: "custom"
             })
           })

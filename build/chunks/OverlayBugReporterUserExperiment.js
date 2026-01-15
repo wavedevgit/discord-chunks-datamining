@@ -2,7 +2,7 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => R,
+  F3: () => w,
   KK: () => C,
   RD: () => _,
   Se: () => u,
@@ -15,7 +15,7 @@ require.d(exports, {
   eV: () => O,
   hS: () => d,
   hb: () => S,
-  lj: () => h,
+  lj: () => m,
   mB: () => f,
   tU: () => b,
   td: () => c
@@ -119,7 +119,7 @@ function p(e) {
 var _ = function(e) {
   return e[e.GREEN_BUTTON_WITH_TEXT = 0] = "GREEN_BUTTON_WITH_TEXT", e[e.GRAY_BUTTON_WITH_TEXT = 1] = "GRAY_BUTTON_WITH_TEXT", e[e.SINGLE_ICON_BUTTON = 2] = "SINGLE_ICON_BUTTON", e
 }({});
-let m = (0, Chunk427164.le)({
+let h = (0, Chunk427164.le)({
   name: "2025-08-overlay-stream-watch-nudge",
   kind: "user",
   defaultConfig: {
@@ -142,14 +142,14 @@ let m = (0, Chunk427164.le)({
   }
 });
 
-function h(e) {
-  return m.getConfig({
+function m(e) {
+  return h.getConfig({
     location: e
   })
 }
 
 function g(e) {
-  return m.useConfig({
+  return h.useConfig({
     location: e
   })
 }
@@ -356,6 +356,6 @@ function P(e) {
   }).enabled
 }
 
-function R() {
-  h("OVERLAY_INITIALIZED"), b("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
+function w() {
+  m("OVERLAY_INITIALIZED"), b("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
 }

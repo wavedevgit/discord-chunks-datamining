@@ -25,6 +25,6 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.ADVANCED_PANEL, {
   E = (0, Chunk509613.m7)(Chunk313789.n.ADVANCED_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t["8/udY0"]),
     getLegacySearchKey: () => (0, u.Gl)("AdvancedPanel") ? true : o.s6.SETTINGS_ADVANCED,
-    icon: Chunk657707.xhG,
+    icon: Chunk657707.MoreHorizontalIcon,
     buildLayout: () => (0, u.Gl)("AdvancedPanel") ? [c] : [S]
   })

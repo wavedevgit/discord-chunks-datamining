@@ -78,10 +78,10 @@ function U(e) {
     quest: Z,
     questContent: b.jn.MEMBERS_LIST,
     sourceQuestContent: b.jn.MEMBERS_LIST
-  }), Q = (null == Z || null == (t = Z.userStatus) ? true : t.claimedAt) != null, X = (null == Z || null == (I = Z.userStatus) ? true : I.enrolledAt) != null, J = (null == Z || null == (x = Z.userStatus) ? true : x.completedAt) != null, $ = (0, s.e7)([h.Z], () => h.Z.getState().theme), ee = (0, c.wj)($) ? R.BR.DARK : R.BR.LIGHT, et = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), {
+  }), Q = (null == Z || null == (t = Z.userStatus) ? true : t.claimedAt) != null, X = (null == Z || null == (I = Z.userStatus) ? true : I.enrolledAt) != null, J = (null == Z || null == (x = Z.userStatus) ? true : x.completedAt) != null, $ = (0, s.e7)([m.Z], () => m.Z.getState().theme), ee = (0, c.wj)($) ? w.BR.DARK : w.BR.LIGHT, et = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), {
     ref: en,
     height: er
-  } = (0, p.ZP)(), [ei, ea] = i.useState(et), eo = (0, m.Aq)(), es = (0, o.eg)();
+  } = (0, p.ZP)(), [ei, ea] = i.useState(et), eo = (0, h.Aq)(), es = (0, o.eg)();
   i.useEffect(() => {
     let e = es.current;
     return null == e || e.addEventListener("scroll", H), () => {
@@ -152,7 +152,7 @@ function U(e) {
     e_ = e => {
       e.stopPropagation(), ef()
     },
-    em = () => {
+    eh = () => {
       (0, S.Rc)(B, z) && null != z ? ((0, E._3)({
         questId: Z.id,
         questContent: b.jn.MEMBERS_LIST,
@@ -175,31 +175,31 @@ function U(e) {
         }, t))
       })) : ep()
     },
-    eh = (0, y.CR)({
+    em = (0, y.CR)({
       quest: Z
     }),
     eg = (() => {
       if (J && !Q) return {
-        headerText: w.intl.string(w.t.gHerLS),
-        ctaText: w.intl.string(w.t.cfY4PE),
+        headerText: R.intl.string(R.t.gHerLS),
+        ctaText: R.intl.string(R.t.cfY4PE),
         handleClickCta: q,
         tileAssetType: "reward"
       };
       if (X && !Q) return {
-        headerText: w.intl.string(w.t.uH2sf2),
-        ctaText: w.intl.string(w.t.VN1Ajl),
+        headerText: R.intl.string(R.t.uH2sf2),
+        ctaText: R.intl.string(R.t.VN1Ajl),
         handleClickCta: ep,
         tileAssetType: "reward"
       };
       if ((0, S.Rc)(B, z)) return {
-        headerText: w.intl.string(w.t.Bz6SkH),
-        ctaText: w.intl.string(w.t.BXFP30),
-        handleClickCta: em,
+        headerText: R.intl.string(R.t.Bz6SkH),
+        ctaText: R.intl.string(R.t.BXFP30),
+        handleClickCta: eh,
         tileAssetType: "game"
       };
-      let e = (0, S.Rt)(Z) ? eh : w.intl.string(w.t["BSXPZ+"]);
+      let e = (0, S.Rt)(Z) ? em : R.intl.string(R.t["BSXPZ+"]);
       return {
-        headerText: (0, S.Rt)(Z) && (0, v.pO)(Z) && !Z.config.features.includes(N.S7.CLOUD_GAMING_ACTIVITY) ? e : w.intl.string(w.t.Bz6SkH),
+        headerText: (0, S.Rt)(Z) && (0, v.pO)(Z) && !Z.config.features.includes(N.S7.CLOUD_GAMING_ACTIVITY) ? e : R.intl.string(R.t.Bz6SkH),
         ctaText: e,
         handleClickCta: ep,
         tileAssetType: "game"
@@ -241,7 +241,7 @@ function U(e) {
               variant: "text-xs/medium",
               color: "text-muted",
               className: D.helpText,
-              children: w.intl.format(w.t["Lm8/mH"], {
+              children: R.intl.format(R.t["Lm8/mH"], {
                 gamePublisher: Z.config.messages.gamePublisher
               })
             }), (0, r.jsx)(u.idN, {
@@ -260,7 +260,7 @@ function U(e) {
               style: e,
               className: D.imgUnderlay
             })), "game" === eg.tileAssetType && (0, r.jsx)("img", {
-              alt: w.intl.formatToPlainString(w.t.IskzPg, {
+              alt: R.intl.formatToPlainString(R.t.IskzPg, {
                 gameTitle: Z.config.messages.gameTitle,
                 gamePublisher: Z.config.messages.gamePublisher
               }),

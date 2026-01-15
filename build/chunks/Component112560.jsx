@@ -28,7 +28,7 @@ function u(e) {
     className: f,
     artURL: p,
     noArt: _ = false,
-    selected: m = false
+    selected: h = false
   } = e;
   return (0, r.jsxs)(s.Z, {
     className: f,
@@ -59,7 +59,7 @@ function u(e) {
       className: l.description,
       variant: "text-sm/medium",
       children: c
-    }) : null, m || null == n ? null : (0, r.jsx)("div", {
+    }) : null, h || null == n ? null : (0, r.jsx)("div", {
       className: l.outerButton,
       children: (0, r.jsx)(o.Button, {
         size: "small" === d ? "sm" : "md",

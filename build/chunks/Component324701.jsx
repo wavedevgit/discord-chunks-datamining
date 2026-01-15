@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -59,12 +59,12 @@ function g(e, t) {
 async function E(e) {
   var {
     displayToast: t = false
-  } = e, _ = h(e, ["displayToast"]);
+  } = e, _ = m(e, ["displayToast"]);
   if (null == c.Z.getSavedMessage(_.channelId, _.messageId) && !(0, u.Z)()) return void(0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("34906").then(n.bind(n, 639565));
-    return t => (0, r.jsx)(e, m({
+    return t => (0, r.jsx)(e, h({
       source: o.Z.FOR_LATER_HELPERS
     }, t))
   });
@@ -88,7 +88,7 @@ async function E(e) {
 async function b(e) {
   var {
     displayToast: t = false
-  } = e, n = h(e, ["displayToast"]);
+  } = e, n = m(e, ["displayToast"]);
   if (null != await (0, l.ep)(n).catch(e => {
       var t, n;
       return (0, i.showToast)((0, i.createToast)(null != (n = null == e || null == (t = e.body) ? true : t.message) ? n : p.intl.string(p.t.R0RpRX), i.ToastType.FAILURE)), null

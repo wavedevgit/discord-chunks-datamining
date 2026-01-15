@@ -44,7 +44,7 @@ let x = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, a = P.t["6iNxrl"], o = h.ZP.getName(t.guild_id, t.id, n);
+  } = e, a = P.t["6iNxrl"], o = m.ZP.getName(t.guild_id, t.id, n);
   return P.intl.formatToMarkdownString(a, {
     artist: r,
     userName: o,
@@ -80,17 +80,17 @@ function L(e) {
     }
   }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
-    className: R.listeningTimeline,
+    className: w.listeningTimeline,
     children: [(0, r.jsx)(I.x, {
       entry: n
     }), (0, r.jsx)("div", {
-      className: R.seekBarContainer,
+      className: w.seekBarContainer,
       children: (0, r.jsx)("div", {
-        className: R.seekBarFill,
+        className: w.seekBarFill,
         style: s
       })
     }), (0, r.jsx)(l.Text, {
-      className: R.timestamp,
+      className: w.timestamp,
       variant: "text-xs/normal",
       tabularNumbers: true,
       color: true,
@@ -101,9 +101,9 @@ function L(e) {
 
 function j(e) {
   var t;
-  let n, h, I, {
+  let n, m, I, {
       channel: C,
-      entry: R,
+      entry: w,
       closePopout: j,
       onReaction: M,
       onVoiceChannelPreview: k
@@ -111,7 +111,7 @@ function j(e) {
     {
       largeImage: U
     } = (0, g.rv)({
-      entry: R
+      entry: w
     }),
     {
       activity: G,
@@ -119,7 +119,7 @@ function j(e) {
       artist: F,
       title: B,
       user: V
-    } = (0, v.pi)(R),
+    } = (0, v.pi)(w),
     {
       primaryColor: H,
       secondaryColor: Y
@@ -132,7 +132,7 @@ function j(e) {
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
-        } : R, Date.now());
+        } : w, Date.now());
       return (0, b.CR)({
         user: V,
         channel: C,
@@ -147,12 +147,12 @@ function j(e) {
           timestamp: n
         })
       })
-    }, [G, F, C, R, null == U ? true : U.src, H, Y, B, V]);
+    }, [G, F, C, w, null == U ? true : U.src, H, Y, B, V]);
   if (null == G || null == Z) return null;
   let q = F,
     Q = [];
   if (Z.media.provider === a.p.SPOTIFY) {
-    h = () => {
+    m = () => {
       (0, c.aG)(G)
     }, I = () => {
       (0, c.Z5)(G, V.id)
@@ -166,7 +166,7 @@ function j(e) {
     if (q = (0, r.jsx)(d.Z, {
         artists: F,
         canOpen: null != G.sync_id,
-        linkClassName: w.popoutTextSecondary,
+        linkClassName: R.popoutTextSecondary,
         onOpenSpotifyArtist: e
       }), (null == K ? true : K.syncDisabled) === false) {
       let e = () => {
@@ -185,15 +185,15 @@ function j(e) {
   let X = (0, r.jsx)(S.wG, {
     onClickThumbnail: I,
     channel: C,
-    entry: R,
+    entry: w,
     headerIcons: Z.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
       onClick: n,
       "aria-label": P.intl.string(P.t.rRffNz),
-      Icon: m.Z
+      Icon: h.Z
     }) : null,
-    userDescription: (0, E.kr)(R) ? P.t.Tzx5D2 : P.t.CcVI1T,
+    userDescription: (0, E.kr)(w) ? P.t.Tzx5D2 : P.t.CcVI1T,
     title: B,
-    onClickTitle: h,
+    onClickTitle: m,
     subtitle: q,
     badges: null,
     children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
@@ -209,7 +209,7 @@ function j(e) {
         channel: C,
         generateReactionImage: z,
         reactionImageAltText: D(F, V),
-        entry: R,
+        entry: w,
         buttons: Q
       })
     })]

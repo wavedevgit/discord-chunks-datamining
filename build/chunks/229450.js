@@ -13,24 +13,24 @@ var Chunk754981 = require("./754981.js"),
   Chunk467159 = require("./467159.js"),
   p = 20,
   _ = false,
-  m = false,
-  h = null;
+  h = false,
+  m = null;
 
 function g(e) {
-  h || (h = new r(c(e))).start()
+  m || (m = new r(c(e))).start()
 }
 var E = {
   onCompositionStart: function(e) {
-    m = true, g(e)
+    h = true, g(e)
   },
   onCompositionEnd: function(e) {
-    _ = false, m = false, setTimeout(function() {
+    _ = false, h = false, setTimeout(function() {
       _ || E.resolveComposition(e)
     }, p)
   },
   onSelect: Chunk266254,
   onKeyDown: function(e, t) {
-    if (!m) {
+    if (!h) {
       E.resolveComposition(e), e._onKeyDown(t);
       return
     }(t.which === s.RIGHT || t.which === s.LEFT) && t.preventDefault()
@@ -39,9 +39,9 @@ var E = {
     t.which === s.RETURN && t.preventDefault()
   },
   resolveComposition: function(e) {
-    if (!m) {
-      var t = f(h).stopAndFlushMutations();
-      h = null, _ = true;
+    if (!h) {
+      var t = f(m).stopAndFlushMutations();
+      m = null, _ = true;
       var n = o.set(e._latestEditorState, {
         inCompositionMode: false
       });
@@ -55,16 +55,16 @@ var E = {
           f = n.getBlockTree(l).getIn([c, "leaves", u]),
           p = f.start,
           _ = f.end,
-          m = n.getSelection().merge({
+          h = n.getSelection().merge({
             anchorKey: l,
             focusKey: l,
             anchorOffset: p,
             focusOffset: _,
             isBackward: false
           }),
-          h = d(r, m),
+          m = d(r, h),
           g = r.getBlockForKey(l).getInlineStyleAt(p);
-        r = i.replaceText(r, m, e, g, h), n = o.set(n, {
+        r = i.replaceText(r, h, e, g, m), n = o.set(n, {
           currentContent: r
         })
       });

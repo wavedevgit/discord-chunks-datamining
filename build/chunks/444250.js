@@ -30,6 +30,6 @@ let N = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
   O = (0, Chunk509613.m7)(Chunk313789.n.ACCESSIBILITY_SIDEBAR_ITEM, {
     useTitle: () => I.intl.string(I.t.G0neg7),
     getLegacySearchKey: () => (0, u.Gl)("AccessibilityPanel") ? true : g.s6.ACCESSIBILITY,
-    icon: Chunk657707.O0f,
+    icon: Chunk657707.AccessibilityIcon,
     buildLayout: () => (0, u.Gl)("AccessibilityPanel") ? [A] : [N]
   })

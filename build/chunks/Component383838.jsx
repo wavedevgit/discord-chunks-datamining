@@ -2,7 +2,7 @@
 /** chunk id: 383838, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  To: () => h
+  To: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,14 +54,14 @@ function _(e, t) {
   return i
 }
 Chunk49800.Z.Types;
-let m = "right";
+let h = "right";
 
-function h(e) {
+function m(e) {
   let t, n, {
       type: i = o.Z.Types.DANGER,
       imageData: d,
       button: _,
-      className: h,
+      className: m,
       iconClassName: g,
       title: E,
       body: b,
@@ -80,11 +80,11 @@ function h(e) {
         alt: "",
         className: a()(u.icon, g)
       }, n))
-    }), e === m && (v = s.Z.Direction.HORIZONTAL_REVERSE)
+    }), e === h && (v = s.Z.Direction.HORIZONTAL_REVERSE)
   } else null != _ && (n = _);
   let S = true;
   return i === o.Z.Types.PRIMARY && (S = false), (0, r.jsx)(o.Z, {
-    className: a()(u.formNotice, h),
+    className: a()(u.formNotice, m),
     type: i,
     style: y,
     children: (0, r.jsxs)(s.Z, {
@@ -106,4 +106,4 @@ function h(e) {
     })
   })
 }
-h.Types = Chunk49800.Z.Types
+m.Types = Chunk49800.Z.Types

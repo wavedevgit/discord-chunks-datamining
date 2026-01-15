@@ -2,7 +2,7 @@
 /** chunk id: 374481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,14 +68,14 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     children: t,
     gradientClassName: n
   } = e, a = p(e, ["children", "gradientClassName"]);
   let c = i.useRef(null),
     [d, _] = i.useState(true),
-    m = () => {
+    h = () => {
       var e;
       (null == (e = c.current) ? true : e.isScrolledToBottom()) === true ? _(false) : _(true)
     };
@@ -84,9 +84,9 @@ function m(e) {
       fade: true
     }, a), {
       ref: e => {
-        null != e && (c.current = e, m())
+        null != e && (c.current = e, h())
       },
-      onScroll: m,
+      onScroll: h,
       children: t
     })), (0, r.jsx)("div", {
       className: o()(l.containerScrollGradient, n),

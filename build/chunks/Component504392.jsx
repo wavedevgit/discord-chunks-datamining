@@ -51,9 +51,9 @@ function R(e) {
       modalConfig: M
     } = (0, P.Z)(t, "GuildPowerupsOverview"),
     G = null == o && null != M,
-    V = [];
-  D && G && V.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [B, W] = (0, c.US)(V), F = (0, h._P)(t, R), z = F.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), K = (0, E.f)(z, t);
+    B = [];
+  D && G && B.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  let [V, W] = (0, c.US)(B), F = (0, h._P)(t, R), z = F.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), K = (0, E.f)(z, t);
   return (i.useEffect(() => {
     if (null != o && !U.current)
       for (let e of F)
@@ -78,7 +78,7 @@ function R(e) {
           }
         }
   }, [t, o, F, K]), i.useEffect(() => {
-    null != B && null != M && (0, u.ZDy)(async () => {
+    null != V && null != M && (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("61879").then(n.bind(n, 802426));
@@ -107,9 +107,9 @@ function R(e) {
       onCloseCallback: () => {
         W(N.L.USER_DISMISS)
       },
-      modalKey: "dismissible_content_".concat(B)
+      modalKey: "dismissible_content_".concat(V)
     })
-  }, [t, B, W, M]), (null == L ? true : L.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
+  }, [t, V, W, M]), (null == L ? true : L.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
     className: A.container,
     children: [(0, r.jsxs)(d.Z, {
       className: A.toolbar,
@@ -174,7 +174,7 @@ function R(e) {
                       nextPowerup: null == (o = i[n + 1]) ? true : o.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "singlePerk":
-                    return (0, r.jsx)(_.Z, {
+                    return (0, r.jsx)(C.Z, {
                       guildId: t,
                       powerup: e.powerup
                     }, "powerup-".concat(e.powerup.skuId));
@@ -195,7 +195,7 @@ function R(e) {
         })
       }), (0, r.jsxs)("div", {
         className: A.sidebarContainer,
-        children: [k ? (0, r.jsx)(C.Z, {
+        children: [k ? (0, r.jsx)(_.Z, {
           guildId: t
         }) : (0, r.jsx)(w.Z, {
           guildId: t

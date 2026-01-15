@@ -50,12 +50,12 @@ class I extends Chunk147913.Z {
     }).delay()
   }
   maybeSendGiftingPromptSystemMessage(e, t, n, r) {
-    let i = h.Z.getChannelId(),
+    let i = m.Z.getChannelId(),
       a = b.ZP.isGiftIntentMessageInCooldown(n),
-      o = m.Z.isReady(e);
+      o = h.Z.isReady(e);
     if (!a && e === i) {
-      if (!o) return void m.Z.whenReady(e, () => {
-        h.Z.getChannelId() === e && this.maybeSendGiftingPromptSystemMessage(e, t, n, r)
+      if (!o) return void h.Z.whenReady(e, () => {
+        m.Z.getChannelId() === e && this.maybeSendGiftingPromptSystemMessage(e, t, n, r)
       });
       s.Z.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
@@ -91,10 +91,10 @@ class I extends Chunk147913.Z {
       let e = await o.Z.getOrEnsurePrivateChannel(n),
         t = _.Z.getChannel(e);
       if (null == t) return;
-      if (m.Z.isReady(t.id) || await d.Z.fetchMessages({
+      if (h.Z.isReady(t.id) || await d.Z.fetchMessages({
           channelId: t.id,
           isPreload: true
-        }), m.Z.getMessages(t.id).cached) return void S.info("Skipping gift intent notification - fetched messages marked as stale", {
+        }), h.Z.getMessages(t.id).cached) return void S.info("Skipping gift intent notification - fetched messages marked as stale", {
         channelId: t.id,
         recipientUserID: n
       });
@@ -130,7 +130,7 @@ class I extends Chunk147913.Z {
   }
   onPostConnectionOpen() {
     this.sendGiftingNotificationIfEligible();
-    let e = h.Z.getChannelId();
+    let e = m.Z.getChannelId();
     null != e && this.sendGiftPromptMessageInSelectedChannelIfEligible(e)
   }
   constructor(...e) {

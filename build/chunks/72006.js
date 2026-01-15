@@ -13,10 +13,10 @@ require.d(exports, {
   eE: () => M,
   iE: () => F,
   iK: () => L,
-  l8: () => w,
+  l8: () => R,
   lv: () => P,
   m1: () => G,
-  nR: () => R,
+  nR: () => w,
   q0: () => a.a,
   x0: () => T,
   xb: () => V,
@@ -34,7 +34,7 @@ var Chunk923010 = require("./923010.js"),
   Chunk76443 = require("./76443.js"),
   p = require.n(Chunk76443),
   Chunk633868 = require("./633868.js"),
-  m = require.n(Chunk633868),
+  h = require.n(Chunk633868),
   Chunk277816 = require("./277816.js"),
   g = require.n(Chunk277816),
   Chunk257834 = require("./257834.js"),
@@ -99,7 +99,7 @@ function A(e, t) {
     case "move-selection-to-start-of-block":
       return g()(t);
     case "move-selection-to-end-of-block":
-      return m()(t);
+      return h()(t);
     default:
       return t
   }
@@ -144,11 +144,11 @@ function P(e, t) {
   }), t
 }
 
-function R(e) {
+function w(e) {
   return r.EditorState.createEmpty(new r.CompositeDecorator(e))
 }
 
-function w(e, t) {
+function R(e, t) {
   return r.EditorState.createWithContent(t, new r.CompositeDecorator(e))
 }
 

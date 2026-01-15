@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B5: () => L,
-  PI: () => R,
+  PI: () => w,
   WD: () => k,
   aM: () => U,
   ui: () => G
@@ -55,8 +55,8 @@ function C(e) {
 let A = 100,
   N = 60,
   P = 1,
-  R = .5,
-  w = new Set;
+  w = .5,
+  R = new Set;
 
 function D(e, t) {
   return "".concat(e, "_").concat(t)
@@ -77,7 +77,7 @@ class x {
     if (!(null == n ? true : n.is_campaign_ias_enabled) || !t || true === r || true === i) return null;
     let a = () => {
         let e = r(),
-          t = m.Z.getGuilds();
+          t = h.Z.getGuilds();
         return e.map(e => {
           var n;
           let r = t[e];
@@ -96,8 +96,8 @@ class x {
           return null !== a && (i.icon_url = a), i
         }).filter(e => null !== e)
       },
-      o = h.Z.getGuildId(),
-      s = null != o ? m.Z.getGuild(o) : null,
+      o = m.Z.getGuildId(),
+      s = null != o ? h.Z.getGuild(o) : null,
       l = () => null == s ? [] : i().map(e => {
         let t = _.Z.getChannel(e);
         if (true === t) return null;
@@ -141,7 +141,7 @@ class x {
           n = (0, S.Zp)(this.questContent);
         if (null != n) {
           let r = D(e.id, n);
-          (t = !w.has(r) && (0, S.VB)(this.questContent)) && w.add(r)
+          (t = !R.has(r) && (0, S.VB)(this.questContent)) && R.add(r)
         }
         let r = (0, S.jY)(this.questContent),
           i = (0, S.R_)(this.questContent),
@@ -235,7 +235,7 @@ class x {
     }), T(this, "stop", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
       e && _.beat(true), _.lastBeatTime = true, clearInterval(_.heartbeatTimeoutId), clearTimeout(_.minViewTimeReachedTimeoutId), _.isRunning = false
-    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = R, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
+    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = w, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
   }
 }
 let L = (e, t) => {

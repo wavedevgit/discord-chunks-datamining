@@ -2,7 +2,7 @@
 /** chunk id: 80966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +61,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class h extends Chunk473749.Component {
+class m extends Chunk473749.Component {
   render() {
     let e = this.props,
       {
@@ -77,8 +77,8 @@ class h extends Chunk473749.Component {
         className: i,
         mediaPlayerClassName: u,
         poster: f,
-        fileName: m,
-        naturalWidth: h,
+        fileName: h,
+        naturalWidth: m,
         naturalHeight: g,
         playable: E,
         downloadable: b = true,
@@ -92,8 +92,8 @@ class h extends Chunk473749.Component {
         renderLinkComponent: A,
         onClick: N,
         onPlay: P,
-        onPause: R,
-        onEnded: w,
+        onPause: w,
+        onEnded: R,
         onControlsShow: D,
         onControlsHide: x,
         onVolumeChange: L,
@@ -120,7 +120,7 @@ class h extends Chunk473749.Component {
             width: o,
             height: c
           }
-        } = e, d = !(h <= l.N_j && g <= l.XKF || h <= l.XKF && g <= l.N_j);
+        } = e, d = !(m <= l.N_j && g <= l.XKF || m <= l.XKF && g <= l.N_j);
         return (0, r.jsx)(s.ZP, {
           alt: k,
           className: u,
@@ -135,7 +135,7 @@ class h extends Chunk473749.Component {
           autoMute: null != v && v,
           type: s.ZP.Types.VIDEO,
           mediaLayoutType: I,
-          fileName: m,
+          fileName: h,
           fileSize: null == n ? true : (0, a.Ng)(n),
           fileSizeBytes: null == n ? true : n,
           playable: E,
@@ -143,8 +143,8 @@ class h extends Chunk473749.Component {
           renderOverlayContent: C,
           onClick: N,
           onPlay: P,
-          onPause: R,
-          onEnded: w,
+          onPause: w,
+          onEnded: R,
           onVolumeChange: L,
           onMute: j,
           onControlsShow: D,

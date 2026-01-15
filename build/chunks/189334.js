@@ -2,7 +2,7 @@
 /** chunk id: 189334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk282397 = require("./282397.js"),
@@ -52,7 +52,7 @@ function _(e, t) {
     duration_open_ms: n
   })
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "iframeModalOpenTimeMs", true), c(this, "actions", {
       INTERACTION_MODAL_CREATE: e => {
@@ -70,4 +70,4 @@ class m extends Chunk147913.Z {
     })
   }
 }
-let h = new m
+let m = new h

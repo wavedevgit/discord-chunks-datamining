@@ -72,11 +72,11 @@ function p(e, t) {
       video: f = false,
       stream: p = false,
       hasActiveThreads: _ = false,
-      textFocused: m = false
+      textFocused: h = false
     } = n;
   if (null == e) return null;
   null == t && (t = o.Z.getGuild(e.getGuildId()));
-  let h = (0, i.n)(null == t ? true : t.id, [o.Z, s.default, a.ZP]);
+  let m = (0, i.n)(null == t ? true : t.id, [o.Z, s.default, a.ZP]);
   if (e.isModeratorReportChannel()) return r.U65;
   if ((null == e ? true : e.id) === (null == t ? true : t.rulesChannelId)) return r.snC;
   let g = e.isNSFW();
@@ -116,15 +116,15 @@ function p(e, t) {
       if ((0, l.Z)(e)) return r.D7T;
       return r.XBm;
     case u.d4z.GUILD_STAGE_VOICE:
-      if (h) return (0, l.Z)(e) ? r.mBM : r.pki;
+      if (m) return (0, l.Z)(e) ? r.mBM : r.pki;
       if (d) return r.mBM;
       if ((0, l.Z)(e)) return r.pki;
       else return r.ewx;
     case u.d4z.GUILD_VOICE:
-      if (m) return r.kBi;
+      if (h) return r.kBi;
       if (g) return r.BVY;
       if (p) return r.hGI;
-      if (h)
+      if (m)
         if ((0, l.Z)(e)) return r.mBM;
         else return f ? r.TLW : r.gjC;
       if (d) return r.mBM;

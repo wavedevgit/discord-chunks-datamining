@@ -234,7 +234,7 @@ class ef extends Chunk473749.PureComponent {
       streamId: t,
       component: B.Z.getVideoComponent(),
       mirror: s,
-      children: (0, r.jsx)(R.Z, {
+      children: (0, r.jsx)(w.Z, {
         size: d.EFr.SIZE_80,
         src: null == n ? true : n.user.getAvatarURL(e.guild_id, 80),
         "aria-label": null == n ? true : n.user.username,
@@ -278,7 +278,7 @@ class ef extends Chunk473749.PureComponent {
       let {
         channel: t
       } = this.props;
-      (0, m.Ou)();
+      (0, h.Ou)();
       let n = null != (e = t.getGuildId()) ? e : ei.ME;
       (0, D.XU)(n, t.id), _.Z.channelListScrollTo(n, t.id);
       let r = this.activeStreamForSelectedParticipant;
@@ -292,12 +292,12 @@ class ef extends Chunk473749.PureComponent {
       let {
         channel: e
       } = this.props;
-      h.Cp(e.id)
+      m.Cp(e.id)
     }), el(this, "handleOpenPopout", () => {
       let {
         channel: e
       } = this.props;
-      (0, v.v)(g.Z.VIDEO_PIP, v.d.POPOUT, true), w.openChannelCallPopout(e)
+      (0, v.v)(g.Z.VIDEO_PIP, v.d.POPOUT, true), R.openChannelCallPopout(e)
     }), el(this, "renderBottomLeftControls", () => {
       let {
         canSeeParticipantName: e
@@ -366,7 +366,7 @@ function ep(e) {
   let {
     channel: t,
     width: n
-  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([B.Z], () => l()(B.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== ea.fO.ACTIVITY && a.type !== ea.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, p = (0, c.e7)([B.Z], () => !d && B.Z.isVideoEnabled(), [d]), _ = (0, c.e7)([B.Z], () => (0, A.Z)(B.Z)), m = (0, c.e7)([F.default], () => F.default.getId()), h = (0, c.e7)([Z.Z], () => Z.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, T.Z)((null == a ? true : a.type) === ea.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, I.Z)(g), v = (0, c.Wu)([Z.Z], () => Z.Z.getAllActiveStreams());
+  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([B.Z], () => l()(B.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== ea.fO.ACTIVITY && a.type !== ea.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, p = (0, c.e7)([B.Z], () => !d && B.Z.isVideoEnabled(), [d]), _ = (0, c.e7)([B.Z], () => (0, A.Z)(B.Z)), h = (0, c.e7)([F.default], () => F.default.getId()), m = (0, c.e7)([Z.Z], () => Z.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, T.Z)((null == a ? true : a.type) === ea.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, I.Z)(g), v = (0, c.Wu)([Z.Z], () => Z.Z.getAllActiveStreams());
   return (0, r.jsx)(ef, {
     channel: t,
     streamId: s,
@@ -374,9 +374,9 @@ function ep(e) {
     isVideoAvailable: f,
     isVideoEnabled: p,
     canGoLive: _,
-    currentUserId: m,
+    currentUserId: h,
     activeStreams: v,
-    activeSelfStream: h,
+    activeSelfStream: m,
     isMainWindowFocused: K.Z.isFocused(),
     width: n,
     isOverlayRenderingVideo: false,

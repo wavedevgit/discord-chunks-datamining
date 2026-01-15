@@ -21,8 +21,8 @@ let c = new Chunk579092.Yd("LegacyOverlayLogger"),
     error: console.error.bind(console)
   },
   _ = 0,
-  m = 3;
-async function h(e, t) {
+  h = 3;
+async function m(e, t) {
   if (!__OVERLAY__) return void c.warn("sendLegacyOverlayLog called from main app context, logging locally instead");
   if (_ > 10) return;
   let {
@@ -58,33 +58,33 @@ async function h(e, t) {
   try {
     await i.lW(d), _ = 0
   } catch (e) {
-    ++_ <= m && (c.error("Failed to send log to main app (failure ".concat(_, "):"), e), _ === m && c.error("Too many RPC send failures, suppressing further error logs"))
+    ++_ <= h && (c.error("Failed to send log to main app (failure ".concat(_, "):"), e), _ === h && c.error("Too many RPC send failures, suppressing further error logs"))
   }
 }
 
 function g(e) {
   return {
-    log: (t, n) => h({
+    log: (t, n) => m({
       level: "log",
       message: t,
       context: n
     }, e),
-    info: (t, n) => h({
+    info: (t, n) => m({
       level: "info",
       message: t,
       context: n
     }, e),
-    warn: (t, n) => h({
+    warn: (t, n) => m({
       level: "warn",
       message: t,
       context: n
     }, e),
-    error: (t, n) => h({
+    error: (t, n) => m({
       level: "error",
       message: t,
       context: n
     }, e),
-    crash: (t, n) => h({
+    crash: (t, n) => m({
       level: "crash",
       message: t,
       context: n

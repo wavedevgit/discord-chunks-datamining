@@ -24,7 +24,7 @@ let c = (0, Chunk509613.wf)(Chunk313789.n.LINUX_PANEL, {
   d = (0, Chunk509613.m7)(Chunk313789.n.LINUX_SIDEBAR_ITEM, {
     useTitle: () => S.intl.string(S.t["7pPjTW"]),
     getLegacySearchKey: () => (0, r.Gl)("LinuxPanel") ? true : T.s6.LINUX_SETTINGS,
-    icon: Chunk657707.pzj,
+    icon: Chunk657707.ScreenIcon,
     usePredicate: () => s.isPlatformEmbedded && (0, s.isLinux)(),
     buildLayout: () => [(0, r.Gl)("LinuxPanel") ? c : E]
   })

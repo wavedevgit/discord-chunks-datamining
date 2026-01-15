@@ -70,13 +70,13 @@ let k = (e, t, n) => (0, i.wj)(e) ? t : n,
       badge: {
         title: p.intl.string(p.t.SS87rQ),
         description: p.intl.string(p.t.oD6CRr),
-        imageSource: h,
+        imageSource: m,
         imageClassName: t.badgeImage
       },
       badgeAlt: {
         title: p.intl.string(p.t["5cYMu0"]),
         description: p.intl.string(p.t.vxk9va),
-        imageSource: k(i, _, m),
+        imageSource: k(i, _, h),
         imageClassName: t.badgeNewImage
       },
       clientThemes: {
@@ -95,7 +95,7 @@ let k = (e, t, n) => (0, i.wj)(e) ? t : n,
       emoji: {
         title: p.intl.string(p.t["R2IV/Q"]),
         description: p.intl.string(p.t.R5Xag2),
-        imageSource: R,
+        imageSource: w,
         imageClassName: t.emojiImage
       },
       guildProfile: {
@@ -107,7 +107,7 @@ let k = (e, t, n) => (0, i.wj)(e) ? t : n,
       longerMessages: {
         title: p.intl.string(p.t.BUScid),
         description: p.intl.string(p.t.vN6XpQ),
-        imageSource: k(i, w, D),
+        imageSource: k(i, R, D),
         imageClassName: t.longerMessagesImage
       },
       moreGuilds: {

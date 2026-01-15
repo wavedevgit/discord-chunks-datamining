@@ -22,8 +22,8 @@ function f(e) {
     introText: f,
     className: p,
     scrollTargetId: _,
-    headingClassName: m,
-    headingVariant: h = "text-xs/semibold",
+    headingClassName: h,
+    headingVariant: m = "text-xs/semibold",
     headingColor: g = "text-default"
   } = e, E = (0, l.Dt)(), b = i.useRef(null), y = (0, u.b)(), O = null != _ && y === _;
   return (0, c.Z)(b, O), (0, r.jsxs)("section", {
@@ -35,9 +35,9 @@ function f(e) {
       children: [(0, r.jsxs)("div", {
         className: d.header,
         children: [(0, r.jsx)(s.Heading, {
-          variant: h,
+          variant: m,
           color: g,
-          className: m,
+          className: h,
           id: E,
           children: n
         }), a]

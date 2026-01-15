@@ -37,8 +37,8 @@ function I(e) {
     pendingBanner: A,
     pendingAccentColor: N,
     pendingBio: P,
-    pendingPronouns: R,
-    pendingAvatar: w,
+    pendingPronouns: w,
+    pendingAvatar: R,
     pendingAvatarDecoration: D,
     pendingNickname: x,
     pendingGlobalName: L,
@@ -57,7 +57,7 @@ function I(e) {
     shouldOpenBadgeTooltip: K,
     hideExampleButton: z = false,
     interactive: q = true
-  } = e, Q = (0, c.ZP)(i.id, null == I ? true : I.id), X = (0, o.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), J = (0, m.Ys)({
+  } = e, Q = (0, c.ZP)(i.id, null == I ? true : I.id), X = (0, o.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), J = (0, h.Ys)({
     pendingValue: D,
     userValue: null == i ? true : i.avatarDecoration,
     guildValue: null == X ? true : X.avatarDecoration,
@@ -69,10 +69,10 @@ function I(e) {
     userId: null == i ? true : i.id,
     guildId: null == I ? true : I.id,
     avatarDecorationOverride: J,
-    avatarOverride: w,
+    avatarOverride: R,
     size: s.EFr.SIZE_80,
     showPending: true
-  }), et = (0, m.Ys)({
+  }), et = (0, h.Ys)({
     pendingValue: M,
     userValue: null == Q || null == (t = Q._userProfile) ? true : t.profileEffect,
     guildValue: null == Q || null == (n = Q._guildMemberProfile) ? true : n.profileEffect,
@@ -106,7 +106,7 @@ function I(e) {
         onUpsellClick: () => null == C ? true : C({
           object: y.qAy.EDIT_PROFILE_BANNER
         })
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(m.Z, {
         user: i,
         guild: I,
         displayProfile: Q,
@@ -130,11 +130,11 @@ function I(e) {
       user: i,
       displayProfile: Q,
       guild: I,
-      pendingAvatar: w,
+      pendingAvatar: R,
       pendingNickname: x,
       pendingGlobalName: L,
       pendingBio: P,
-      pendingPronouns: R,
+      pendingPronouns: w,
       pendingLegacyUsernameDisabled: k,
       pendingDisplayNameStyles: U,
       isTryItOut: F,

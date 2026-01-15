@@ -9,10 +9,10 @@ require.d(exports, {
   SA: () => x,
   SV: () => C,
   Um: () => A,
-  eu: () => R,
+  eu: () => w,
   hW: () => L,
   lY: () => N,
-  qB: () => w
+  qB: () => R
 }), require("./415506.js"), require("./953529.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -73,7 +73,7 @@ let S = async (e, t) => {
   let {
     body: n
   } = await (0, p.Kb)({
-    url: h.ANM.STICKER_PACK(e),
+    url: m.ANM.STICKER_PACK(e),
     rejectWithError: false
   });
   return o.Z.dispatch({
@@ -97,7 +97,7 @@ let S = async (e, t) => {
       sticker_packs: t
     }
   } = await a.tn.get({
-    url: h.ANM.STICKER_PACKS,
+    url: m.ANM.STICKER_PACKS,
     query: {
       locale: e
     },
@@ -111,14 +111,14 @@ let S = async (e, t) => {
   let {
     body: t
   } = await a.tn.get({
-    url: h.ANM.STICKER(e),
+    url: m.ANM.STICKER(e),
     rejectWithError: false
   });
-  if ((0, m.J8)(t)) o.Z.dispatch({
+  if ((0, h.J8)(t)) o.Z.dispatch({
     type: "GUILD_STICKER_FETCH_SUCCESS",
     sticker: t
   });
-  else if ((0, m.jl)(t)) o.Z.dispatch({
+  else if ((0, h.jl)(t)) o.Z.dispatch({
     type: "PACK_STICKER_FETCH_SUCCESS",
     sticker: t
   });
@@ -127,7 +127,7 @@ let S = async (e, t) => {
   let {
     body: n
   } = await a.tn.get({
-    url: h.ANM.GUILD_STICKER_PACKS(e),
+    url: m.ANM.GUILD_STICKER_PACKS(e),
     rejectWithError: false,
     signal: t
   });
@@ -141,7 +141,7 @@ let S = async (e, t) => {
   })
 }, A = async e => {
   await a.tn.del({
-    url: h.ANM.GUILD_STICKER(e.guild_id, e.id),
+    url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: false
   })
 }, N = async e => {
@@ -149,7 +149,7 @@ let S = async (e, t) => {
   let {
     guildId: n
   } = e, r = await a.tn.post({
-    url: h.ANM.GUILD_STICKER_PACKS(n),
+    url: m.ANM.GUILD_STICKER_PACKS(n),
     body: "web" === e.platform ? e.body : true,
     fields: "mobile" === e.platform ? [{
       name: "name",
@@ -179,12 +179,12 @@ let S = async (e, t) => {
     })
   }), r.body
 }, P = async (e, t, n) => (await a.tn.patch({
-  url: h.ANM.GUILD_STICKER(e, t),
+  url: m.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: false
 })).body;
 
-function R(e, t, n) {
+function w(e, t, n) {
   o.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,
@@ -193,7 +193,7 @@ function R(e, t, n) {
   })
 }
 
-function w(e, t) {
+function R(e, t) {
   o.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,

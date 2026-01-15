@@ -17,7 +17,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk579132 = require("./579132.js"),
   Chunk671955 = require("./671955.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -60,18 +60,18 @@ function y(e) {
     themeType: n,
     primaryColor: i,
     secondaryColor: _,
-    forceUserTheme: m = false
-  } = e, [y, O] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), v = (0, p.f)(t), S = O || m ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
+    forceUserTheme: h = false
+  } = e, [y, O] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), v = (0, p.f)(t), S = O || h ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
       if (null == i || null == _ || null == v || null == S) return b;
       let e = (e, t) => (0, o.ho)(e, y, null, t);
-      return h({
+      return m({
         "--profile-gradient-primary-color": e(i),
         "--profile-gradient-secondary-color": e(_),
         "--profile-gradient-overlay-color": S,
         "--profile-gradient-button-color": e((0, f.ZB)(i)),
-        "--profile-gradient-modal-background-color": e((0, f.oU)(i, _, O || m ? t : true))
+        "--profile-gradient-modal-background-color": e((0, f.oU)(i, _, O || h ? t : true))
       }, (0, u.W4)({
         enabled: true,
         primaryColor: i,
@@ -79,7 +79,7 @@ function y(e) {
         isDarkTheme: (0, l.wjy)(t),
         textMixAmount: 25
       }))
-    }, [i, _, v, S, O, m, t, y]),
+    }, [i, _, v, S, O, h, t, y]),
     profileThemeClassName: a()((0, l.QeD)(t), null != n ? {
       [g[n]]: true
     } : true, {

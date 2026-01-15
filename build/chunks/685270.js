@@ -57,8 +57,8 @@ let u = (e, t, n) => c({
       timestamp: f,
       episodeDescription: p,
       colors: _,
-      channelId: m
-    } = e, h = n.extra.media_title, g = u(l, t), E = e => {
+      channelId: h
+    } = e, m = n.extra.media_title, g = u(l, t), E = e => {
       let t = _.map((e, t) => ({
         color: e,
         stop: t
@@ -127,9 +127,9 @@ let u = (e, t, n) => c({
       exportConfigs: {
         format: i.kH.CloudUpload,
         quality: 1,
-        fileName: "user-reacting-to-".concat(h, ".png").toLowerCase(),
+        fileName: "user-reacting-to-".concat(m, ".png").toLowerCase(),
         fileType: "png",
-        channelId: m
+        channelId: h
       }
     })
   }

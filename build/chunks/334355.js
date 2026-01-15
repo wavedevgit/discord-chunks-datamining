@@ -20,8 +20,8 @@ module.exports = function(e) {
     f = "<>",
     p = "</>",
     _ = /<[A-Za-z0-9\\._:-]+\s*\/>/,
-    m = /<[A-Za-z0-9\\._:-]+/,
-    h = /\/[A-Za-z0-9\\._:-]+>|\/>/,
+    h = /<[A-Za-z0-9\\._:-]+/,
+    m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
     g = (e, t) => {
       let n, r = e[0].length + e.index,
         i = e.input[r];
@@ -142,12 +142,12 @@ module.exports = function(e) {
     keywords: E,
     contains: ["self"].concat(P)
   });
-  let R = [].concat(N, S.contains),
-    w = R.concat([{
+  let w = [].concat(N, S.contains),
+    R = w.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
-      contains: ["self"].concat(R)
+      contains: ["self"].concat(w)
     }]),
     D = {
       className: "params",
@@ -156,7 +156,7 @@ module.exports = function(e) {
       excludeBegin: true,
       excludeEnd: true,
       keywords: E,
-      contains: w
+      contains: R
     },
     x = {
       variants: [{
@@ -250,7 +250,7 @@ module.exports = function(e) {
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: w,
+      PARAMS_CONTAINS: R,
       CLASS_REFERENCE: L
     },
     illegal: /#(?![$_A-z])/,
@@ -288,7 +288,7 @@ module.exports = function(e) {
             excludeBegin: true,
             excludeEnd: true,
             keywords: E,
-            contains: w
+            contains: R
           }]
         }]
       }, {
@@ -304,14 +304,14 @@ module.exports = function(e) {
         }, {
           match: _
         }, {
-          begin: m,
+          begin: h,
           "on:begin": g,
-          end: h
+          end: m
         }],
         subLanguage: "xml",
         contains: [{
-          begin: m,
-          end: h,
+          begin: h,
+          end: m,
           skip: true,
           contains: ["self"]
         }]

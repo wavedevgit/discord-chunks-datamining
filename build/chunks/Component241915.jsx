@@ -17,7 +17,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk354459 = require("./354459.js"),
   Chunk684692 = require("./684692.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -116,9 +116,9 @@ class C extends(r = Chunk473749.PureComponent) {
       getDockedRectPositionY: c
     } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), _ = Math.round(o - a - this._boundWidth);
     if (null != l) {
-      var m, h, g;
+      var h, m, g;
       return {
-        y: null != (h = null != (m = null == c ? true : c(l.y)) ? m : l.y) ? h : 0,
+        y: null != (m = null != (h = null == c ? true : c(l.y)) ? h : l.y) ? m : 0,
         x: null != (g = null == l ? true : l.x) ? g : 0
       }
     }
@@ -246,11 +246,11 @@ class C extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "state", {
+    super(...e), h(this, "state", {
       isResizing: false
-    }), m(this, "_draggable", true), m(this, "_innerDivRef", a.createRef()), m(this, "_resizeObserver", true), m(this, "_width", null), m(this, "_boundWidth", 0), m(this, "_boundHeight", 0), m(this, "_velocityX", 0), m(this, "_velocityY", 0), m(this, "_lastMoveTime", true), m(this, "_lastMoveX", 0), m(this, "_lastMoveY", 0), m(this, "ensureIsInPosition", () => {
+    }), h(this, "_draggable", true), h(this, "_innerDivRef", a.createRef()), h(this, "_resizeObserver", true), h(this, "_width", null), h(this, "_boundWidth", 0), h(this, "_boundHeight", 0), h(this, "_velocityX", 0), h(this, "_velocityY", 0), h(this, "_lastMoveTime", true), h(this, "_lastMoveX", 0), h(this, "_lastMoveY", 0), h(this, "ensureIsInPosition", () => {
       this.setPosition(this.props.position)
-    }), m(this, "ensureWidth", () => {
+    }), h(this, "ensureWidth", () => {
       let {
         onResize: e,
         edgeOffsetLeft: t,
@@ -261,20 +261,20 @@ class C extends(r = Chunk473749.PureComponent) {
       if (null == i) return;
       let a = I(r - (t + n), i);
       this.getWidth() > a && (this._width = a, null == e || e(a))
-    }), m(this, "handleSetInnerDivRef", e => {
+    }), h(this, "handleSetInnerDivRef", e => {
       this._innerDivRef.current = e;
       let t = null == e ? true : e.ownerDocument.defaultView;
       if (null != e && null != t) {
         var n;
         this._resizeObserver = new t.ResizeObserver(this.ensureIsInPosition), null == (n = this._resizeObserver) || n.observe(e)
       }
-    }), m(this, "handleSetDraggableRef", e => {
+    }), h(this, "handleSetDraggableRef", e => {
       this._draggable = e
-    }), m(this, "handleResize", e => {
+    }), h(this, "handleResize", e => {
       this._width = e, this.state.isResizing || this.setState({
         isResizing: true
       })
-    }), m(this, "handleResizeEnd", e => {
+    }), h(this, "handleResizeEnd", e => {
       let {
         onResize: t,
         resizeConfig: n
@@ -284,14 +284,14 @@ class C extends(r = Chunk473749.PureComponent) {
       this._width = r, null == t || t(r), this.setState({
         isResizing: false
       }), this.ensureWidth()
-    }), m(this, "handleDragStart", (e, t) => {
+    }), h(this, "handleDragStart", (e, t) => {
       var n, r;
       this._velocityX = 0, this._velocityY = 0, this._lastMoveX = e, this._lastMoveY = t, this._lastMoveTime = new Date, null == (n = (r = this.props).onDragStart) || n.call(r, e, t)
-    }), m(this, "handleDrag", (e, t) => {
+    }), h(this, "handleDrag", (e, t) => {
       let n = new Date,
         r = Number(n) - Number(this._lastMoveTime);
       0 !== r && (this._velocityX = (e - this._lastMoveX) / r, this._velocityY = (t - this._lastMoveY) / r, this._lastMoveX = e, this._lastMoveY = t, this._lastMoveTime = n)
-    }), m(this, "handleDragEnd", (e, t) => {
+    }), h(this, "handleDragEnd", (e, t) => {
       var n, r;
       let i, {
           maxX: a,
@@ -311,7 +311,7 @@ class C extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-m(C, "defaultProps", {
+h(C, "defaultProps", {
   hidden: false,
   roundCorners: true
 });
@@ -325,7 +325,7 @@ let A = e => {
       onWindowMove: c,
       onWindowResize: u,
       dockedRect: p,
-      pictureInPictureComponents: m,
+      pictureInPictureComponents: h,
       appContext: g,
       roundCorners: E,
       resizeConfig: v,
@@ -333,15 +333,15 @@ let A = e => {
       getDockedRectPositionY: I
     } = e, [T, A] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
-      let n = "string" == typeof e.component ? m[e.component] : e.component;
-      return (0, i.jsx)(n, h({
+      let n = "string" == typeof e.component ? h[e.component] : e.component;
+      return (0, i.jsx)(n, m({
         width: r
       }, e.props), e.id)
-    }), [n, t, r, m]), P = a.useCallback(() => {
+    }), [n, t, r, h]), P = a.useCallback(() => {
       A(true)
-    }, []), R = a.useCallback(() => {
+    }, []), w = a.useCallback(() => {
       A(false)
-    }, []), w = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), D = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
+    }, []), R = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), D = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
     return null == t ? (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
         className: _.pictureInPicture
@@ -359,7 +359,7 @@ let A = e => {
           onMove: c,
           onResize: u,
           onDragStart: P,
-          onDragEnd: R,
+          onDragEnd: w,
           maxX: o,
           maxY: l,
           width: r,
@@ -370,7 +370,7 @@ let A = e => {
           edgeOffsetLeft: O,
           edgeOffsetRight: b,
           roundCorners: E,
-          resizeConfig: w || D ? true : v,
+          resizeConfig: R || D ? true : v,
           children: N
         })
       })

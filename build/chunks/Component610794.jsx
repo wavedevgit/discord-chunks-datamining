@@ -29,7 +29,7 @@ function O(e) {
     account: n,
     refreshed: o,
     handleRefresh: l
-  } = e, [c, u] = i.useState(false), f = null != (t = n.metadata) ? t : {}, m = (0, a.e7)([_.default], () => _.default.locale), O = i.useCallback(async () => {
+  } = e, [c, u] = i.useState(false), f = null != (t = n.metadata) ? t : {}, h = (0, a.e7)([_.default], () => _.default.locale), O = i.useCallback(async () => {
     u(true);
     try {
       await l(n)
@@ -56,14 +56,14 @@ function O(e) {
     case g.ABu.TIKTOK:
       v = (0, p.hf)(f, y.metadataItem)
   }
-  let S = (0, d.FI)(f[E.PC.CREATED_AT], m),
+  let S = (0, d.FI)(f[E.PC.CREATED_AT], h),
     I = null,
     T = b.intl.string(b.t.wzzjk9);
   return (null == v || 0 === v.length) && null == S && (I = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "text-default",
     children: b.intl.format(b.t.Up2ni7, {
-      helpdeskUrl: h.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
+      helpdeskUrl: m.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
     })
   }, "label"), T = b.intl.string(b.t["LVh3/5"])), o && (T = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
     className: y.metadataContainer,
@@ -99,7 +99,7 @@ function v(e) {
     account: t,
     handleRefresh: n,
     refreshedAccountIds: a
-  } = e, [d, p] = i.useState(t.visibility), [_, m] = i.useState(t.metadataVisibility), h = (0, c.ZP)();
+  } = e, [d, p] = i.useState(t.visibility), [_, h] = i.useState(t.metadataVisibility), m = (0, c.ZP)();
 
   function g(e) {
     let {
@@ -120,16 +120,16 @@ function v(e) {
       verified: n
     } = t, r = +!!e;
     if (e && !n) {
-      m(r), (0, f.Z)({
+      h(r), (0, f.Z)({
         platformType: t.type,
         location: "User Settings"
       });
       return
     }
-    m(r), l.Z.setMetadataVisibility(t.type, t.id, r)
+    h(r), l.Z.setMetadataVisibility(t.type, t.id, r)
   }
   i.useEffect(() => {
-    p(t.visibility), m(t.metadataVisibility)
+    p(t.visibility), h(t.metadataVisibility)
   }, [t]);
   let v = u.Z.get(t.type),
     S = true === v.hasMetadata;
@@ -139,7 +139,7 @@ function v(e) {
       children: [(0, r.jsx)("img", {
         alt: v.name,
         className: y.connectionIcon,
-        src: (0, o.wj)(h) ? v.icon.darkSVG : v.icon.lightSVG
+        src: (0, o.wj)(m) ? v.icon.darkSVG : v.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: y.activitySettings,
         children: [(0, r.jsxs)("div", {
@@ -164,7 +164,7 @@ function v(e) {
 }
 
 function S() {
-  let e = (0, a.e7)([m.Z], () => m.Z.getAccounts()),
+  let e = (0, a.e7)([h.Z], () => h.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => u.Z.isSupported(e.type)), [e]),
     [n, o] = i.useState([]),
     c = i.useCallback(e => l.Z.refresh(e.type, e.id).finally(() => {

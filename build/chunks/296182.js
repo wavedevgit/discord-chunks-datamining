@@ -2,9 +2,9 @@
 /** chunk id: 296182, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jj: () => m,
+  Jj: () => h,
   Lz: () => g,
-  gS: () => h,
+  gS: () => m,
   lT: () => E,
   s$: () => b,
   wV: () => c
@@ -22,21 +22,21 @@ let c = "png",
   p = "3000",
   _ = "http://localhost:4000";
 
-function m(e) {
+function h(e) {
   return !((0, a.B0)(e) || (0, r.zt)(e))
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   let r = l.ZP.canSaveImage(e, null != n ? n : t),
     i = s.Z.isDiscordAssetUrl(e, t, n),
-    a = m(e);
+    a = h(e);
   return r && i && a
 }
 
 function g(e, t, n) {
   let r = l.ZP.canCopyImage(e),
     i = s.Z.isDiscordAssetUrl(e, t, n),
-    a = m(e);
+    a = h(e);
   return r && i && a
 }
 

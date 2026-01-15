@@ -2,7 +2,7 @@
 /** chunk id: 203247, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk589339 = require("./589339.js");
-let m = 3,
-  h = e => {
+let h = 3,
+  m = e => {
     let {
       emojis: t
     } = e, {
@@ -29,9 +29,9 @@ let m = 3,
         location_stack: n
       })
     }, [n]);
-    let h = (0, r.jsx)("div", {
+    let m = (0, r.jsx)("div", {
       className: _.emojis,
-      children: t.slice(0, m).map((e, t) => {
+      children: t.slice(0, h).map((e, t) => {
         if (null == e.id) return null;
         let n = 2 === t,
           i = (0, r.jsx)("div", {
@@ -62,7 +62,7 @@ let m = 3,
           })
         })
       }), (0, r.jsx)(o.dY, {
-        children: h
+        children: m
       })]
     })
   }

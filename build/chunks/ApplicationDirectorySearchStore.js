@@ -54,7 +54,7 @@ var _ = function(e) {
   return e[e.FETCHING = 0] = "FETCHING", e[e.FETCHED = 1] = "FETCHED", e[e.ERROR = 2] = "ERROR", e
 }({});
 
-function m(e) {
+function h(e) {
   let {
     query: t,
     guildId: n,
@@ -70,7 +70,7 @@ function m(e) {
   } = e;
   return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(r, " pageSize:").concat(i, " categoryId:").concat(a, " integrationType:").concat(s, " minUserInstallCommandCount:").concat(l, " excludeAppsWithCustomInstallUrl:").concat(c, " excludeNonEmbeddedApps:").concat(u, " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:").concat(d, " source:").concat(f)
 }
-let h = new(a())({
+let m = new(a())({
     max: p
   }),
   g = {};
@@ -88,7 +88,7 @@ function E(e) {
     excludeNonEmbeddedApps: c,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
     source: p
-  } = e, _ = m({
+  } = e, _ = h({
     query: t,
     guildId: n,
     page: r,
@@ -120,7 +120,7 @@ function b(e) {
     excludeNonEmbeddedApps: d,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: p,
     source: _
-  } = e, E = m({
+  } = e, E = h({
     query: t,
     guildId: n,
     page: r,
@@ -133,7 +133,7 @@ function b(e) {
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: p,
     source: _
   });
-  h.set(E, u({
+  m.set(E, u({
     lastFetchTimeMs: Date.now()
   }, o)), g = f(u({}, g), {
     [E]: 1
@@ -153,7 +153,7 @@ function y(e) {
     excludeNonEmbeddedApps: c,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
     source: p
-  } = e, _ = m({
+  } = e, _ = h({
     query: t,
     guildId: n,
     page: r,
@@ -184,7 +184,7 @@ class O extends(r = Chunk442837.ZP.Store) {
       excludeNonEmbeddedApps: c,
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
       source: d
-    } = e, f = m({
+    } = e, f = h({
       query: t,
       guildId: n,
       page: r,
@@ -197,7 +197,7 @@ class O extends(r = Chunk442837.ZP.Store) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
       source: d
     });
-    return h.get(f)
+    return m.get(f)
   }
   getFetchState(e) {
     let {
@@ -213,7 +213,7 @@ class O extends(r = Chunk442837.ZP.Store) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
       source: d
     } = e;
-    return g[m({
+    return g[h({
       query: t,
       guildId: n,
       page: r,

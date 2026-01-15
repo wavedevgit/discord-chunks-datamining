@@ -79,16 +79,16 @@ let d = (e, t) => {
     [i, o] = r.useState(false),
     [d, f] = r.useState({}),
     p = r.useRef(new AbortController),
-    [_, m] = r.useState(t),
-    h = r.useRef(new Map),
+    [_, h] = r.useState(t),
+    m = r.useRef(new Map),
     g = r.useRef(new Map),
     E = r.useRef(null == e ? true : e.skuId);
   return r.useEffect(() => {
-    t && !_ && m(true)
+    t && !_ && h(true)
   }, [t, _]), r.useEffect(() => {
     if ((null == e ? true : e.skuId) !== E.current) {
       var r;
-      E.current = null == e ? true : e.skuId, m(t);
+      E.current = null == e ? true : e.skuId, h(t);
       let i = null != (r = null == e ? true : e.config.effects.every(e => {
         let {
           src: t
@@ -99,20 +99,20 @@ let d = (e, t) => {
         for (let {
             src: t
           }
-          of e.config.effects) h.current.has(t) || h.current.set(t, 0)
+          of e.config.effects) m.current.has(t) || m.current.set(t, 0)
     }
   }, [e, t]), r.useEffect(() => {
     if (null == e || 0 === e.config.effects.length || false === _ || 0 !== n.current) return;
     n.current = 1;
     let t = p.current;
     e.config.effects.forEach(async e => {
-      if (g.current.has(e.src)) h.current.set(e.src, 2), u(h.current) && (o(true), n.current = 2);
+      if (g.current.has(e.src)) m.current.set(e.src, 2), u(m.current) && (o(true), n.current = 2);
       else try {
         let r = await l(e.src, t.signal);
         if (t.signal.aborted) return;
-        h.current.set(e.src, 2), g.current.set(e.src, r.src), f(t => s(a({}, t), {
+        m.current.set(e.src, 2), g.current.set(e.src, r.src), f(t => s(a({}, t), {
           [e.src]: r
-        })), u(h.current) && (o(true), n.current = 2)
+        })), u(m.current) && (o(true), n.current = 2)
       } catch (e) {}
     })
   }, [e, _]), r.useEffect(() => {

@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -147,7 +147,7 @@ let g = [{
         var {
           selectionMode: t,
           withLeadingAndTrailing: n
-        } = e, a = m(e, ["selectionMode", "withLeadingAndTrailing"]);
+        } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]);
         let [o, s] = i.useState(null), [l, u] = i.useState([]), d = y(n, a.asyncOptions);
         return "single" === t ? (0, r.jsx)(c.P, _(f({}, a), {
           selectionMode: t,
@@ -283,7 +283,7 @@ let g = [{
           selectionMode: t,
           withLeadingAndTrailing: n,
           asyncOptions: a
-        } = e, o = m(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
+        } = e, o = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
         let [s, c] = i.useState(null), [u, d] = i.useState([]), p = y(n, a);
         return "single" === t ? (0, r.jsx)(l.V, _(f({}, o), {
           selectionMode: t,
@@ -405,8 +405,8 @@ let g = [{
           successMessage: u,
           wrapTags: d,
           withLeadingAndTrailing: p,
-          placeholder: h
-        } = e, g = m(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing", "placeholder"]);
+          placeholder: m
+        } = e, g = h(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing", "placeholder"]);
         let {
           required: E,
           disabled: b
@@ -420,7 +420,7 @@ let g = [{
           children: [(0, r.jsx)(s.Ct, {
             label: n,
             hideLabel: a,
-            placeholder: h,
+            placeholder: m,
             required: E,
             disabled: b,
             description: o,

@@ -18,7 +18,7 @@ var Chunk924557 = require("./924557.js"),
   Chunk981631 = require("./981631.js"),
   Chunk37113 = require("./37113.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -66,8 +66,8 @@ let y = "default",
   A = {},
   N = null,
   P = [],
-  R = null,
-  w = {},
+  w = null,
+  R = {},
   D = new Map,
   x = {
     clipsEnabled: false,
@@ -153,7 +153,7 @@ function G(e) {
   if (I += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === p.X9.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
-    R = null != R ? R : e, w[n] = [...null != (i = w[n]) ? i : [], {
+    w = null != w ? w : e, R[n] = [...null != (i = R[n]) ? i : [], {
       timestamp: e,
       thumbnail: r
     }]
@@ -165,7 +165,7 @@ function Z(e) {
     streamKey: t,
     timestamp: n
   } = e;
-  R === n && (R = null), null == n ? w[t] = [] : w[t] = w[t].filter(e => e.timestamp !== n)
+  w === n && (w = null), null == n ? R[t] = [] : R[t] = R[t].filter(e => e.timestamp !== n)
 }
 
 function F() {
@@ -268,7 +268,7 @@ function Q(e) {
   let {
     streamKey: t
   } = e;
-  if (R = null, w[t] = [], null == C || (0, c.my)(t).ownerId !== u.default.getId()) returnfalse;
+  if (w = null, R[t] = [], null == C || (0, c.my)(t).ownerId !== u.default.getId()) returnfalse;
   C = 0 === C.newClipIds.length ? null : b(g({}, C), {
     ended: true
   })
@@ -385,14 +385,14 @@ class el extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return T === e
   }
   getActiveAnimation() {
-    return R
+    return w
   }
   getStreamClipAnimations(e) {
     var t;
-    return null != (t = w[e]) ? t : O
+    return null != (t = R[e]) ? t : O
   }
   hasAnyClipAnimations() {
-    return Object.values(w).some(e => e.length > 0)
+    return Object.values(R).some(e => e.length > 0)
   }
   getHardwareClassification() {
     return L.hardwareClassification
@@ -450,7 +450,7 @@ class el extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return null != (n = null == r ? true : r.has(e)) && n
   }
 }
-h(el, "displayName", "ClipsStore"), h(el, "persistKey", "ClipsStore"), h(el, "migrations", [e => ({
+m(el, "displayName", "ClipsStore"), m(el, "persistKey", "ClipsStore"), m(el, "migrations", [e => ({
   clipsSettings: null != e ? e : x,
   newClipsCount: 0
 }), e => {

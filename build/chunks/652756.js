@@ -51,17 +51,17 @@ function u(e, t, n, a, s) {
     },
     p = e.offsetWidth,
     _ = e.offsetHeight,
-    m = a.anchorX,
-    h = a.anchorY,
+    h = a.anchorX,
+    m = a.anchorY,
     g = c(u, t, p, _),
     E = g.dragPreviewWidth,
     b = g.dragPreviewHeight,
     y = function() {
-      var e = new i.I([0, .5, 1], [f.y, f.y / _ * b, f.y + b - _]).interpolate(h);
+      var e = new i.I([0, .5, 1], [f.y, f.y / _ * b, f.y + b - _]).interpolate(m);
       return (0, r.G)() && u && (e += (window.devicePixelRatio - 1) * b), e
     },
     O = function() {
-      return new i.I([0, .5, 1], [f.x, f.x / p * E, f.x + E - p]).interpolate(m)
+      return new i.I([0, .5, 1], [f.x, f.x / p * E, f.x + E - p]).interpolate(h)
     },
     v = s.offsetX,
     S = s.offsetY,

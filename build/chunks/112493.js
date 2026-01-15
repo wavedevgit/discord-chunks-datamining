@@ -10,13 +10,13 @@ var r, i, a, Chunk621523 = require("./621523.js"),
   Chunk751736 = require("./751736.js"),
   Chunk511696 = require("./511696.js"),
   _ = Chunk751736("iterator"),
-  m = false;
-[].keys && ("next" in (a = [].keys()) ? (i = Chunk961050(Chunk961050(a))) !== Object.prototype && (r = i) : m = true), !Chunk434431(r) || Chunk621523(function() {
+  h = false;
+[].keys && ("next" in (a = [].keys()) ? (i = Chunk961050(Chunk961050(a))) !== Object.prototype && (r = i) : h = true), !Chunk434431(r) || Chunk621523(function() {
   var e = {};
   return r[_].call(e) !== e
 }) ? r = {} : Chunk511696 && (r = Chunk713411(r)), Chunk880181(r[_]) || Chunk556585(r, _, function() {
   return this
 }), module.exports = {
   IteratorPrototype: r,
-  BUGGY_SAFARI_ITERATORS: m
+  BUGGY_SAFARI_ITERATORS: h
 }

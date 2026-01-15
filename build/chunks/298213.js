@@ -52,7 +52,7 @@ function _(e, t) {
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     userId: t,
     applicationId: n,
@@ -71,7 +71,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     userId: t,
     applicationId: n,
@@ -81,7 +81,7 @@ function h(e) {
   } = e, u = (0, o.c_)("useFriendRequestActions"), d = (0, s.q)("maybeConfirmFriendRequestAccept"), f = u || d, p = l.Z.isStranger(t);
   return null == n && f && false !== p ? p && f ? void(0, c.c)({
     onConfirm: () => {
-      m({
+      h({
         userId: t,
         applicationId: n,
         location: r,
@@ -91,7 +91,7 @@ function h(e) {
     onCancel: () => {
       null == a || a()
     }
-  }) : f ? void m({
+  }) : f ? void h({
     userId: t,
     applicationId: n,
     location: r
@@ -111,7 +111,7 @@ function h(e) {
       onConfirm: i,
       onCancel: a
     })
-  }) : true : m({
+  }) : true : h({
     userId: t,
     applicationId: n,
     location: r,
@@ -130,7 +130,7 @@ function g(e, t) {
   }), (0, c.c)({
     onConfirm: () => {
       var e;
-      m(_(f({}, t), {
+      h(_(f({}, t), {
         confirmStrangerRequest: true
       })), null == (e = t.onConfirm) || e.call(t)
     },
@@ -171,6 +171,6 @@ let E = {
       location: r
     })
   },
-  acceptFriendRequest: m,
-  maybeConfirmFriendRequestAccept: h
+  acceptFriendRequest: h,
+  maybeConfirmFriendRequestAccept: m
 }

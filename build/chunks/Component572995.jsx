@@ -110,11 +110,11 @@ let J = e => ({
     },
     emojis: {
       thumbnail: P.Z,
-      assetUrl: e ? N.Z : R.Z
+      assetUrl: e ? N.Z : w.Z
     },
     noLimits: {
       thumbnail: D.Z,
-      assetUrl: e ? w.Z : x.Z
+      assetUrl: e ? R.Z : x.Z
     }
   }),
   $ = () => {
@@ -125,7 +125,7 @@ let J = e => ({
         scrollPosition: E.Y_.TRY_IT_OUT,
         analyticsLocations: t
       }),
-      I = (0, m.QL)(),
+      I = (0, h.QL)(),
       T = (0, i.useCallback)(() => {
         (0, f.openUserSettings)(d.n.PROFILE_PANEL, {
           section: g.oAB.PROFILE_CUSTOMIZATION,
@@ -148,7 +148,7 @@ let J = e => ({
       A = (0, p.rO)(),
       N = _.Z.getArticleURL(g.BhN.REFERRAL_PROGRAM),
       P = J(A),
-      R = {
+      w = {
         name: "serverProfiles",
         title: y.intl.string(y.t.I9TYMg),
         description: y.intl.string(y.t.HMSHeH),
@@ -157,7 +157,7 @@ let J = e => ({
         previewImage: P.serverProfiles.thumbnail,
         videoUrl: P.serverProfiles.assetUrl
       },
-      w = {
+      R = {
         name: "referralProgram",
         title: y.intl.string(y.t.tPY4o9),
         description: y.intl.format(y.t.jRPQUH, {
@@ -190,11 +190,11 @@ let J = e => ({
       L = {
         name: "premiumGroup",
         title: y.intl.formatToPlainString(b.default.VFEDDB, {
-          premiumGroupProductName: (0, h.sO)()
+          premiumGroupProductName: (0, m.sO)()
         }),
         description: y.intl.formatToPlainString(b.default.WudmR3, {
-          totalSeats: h.Q5,
-          premiumGroupProductName: (0, h.sO)()
+          totalSeats: m.Q5,
+          premiumGroupProductName: (0, m.sO)()
         }),
         descriptionCta: y.intl.string(y.t.hvVgAZ),
         previewImage: P.premiumGroup.thumbnail,
@@ -249,10 +249,10 @@ let J = e => ({
     return {
       whatsNewBoxes: e = I ? [
         [L],
-        [R, w]
+        [w, R]
       ] : [
         [x],
-        [D, w]
+        [D, R]
       ],
       bestOfBoxes: U
     }

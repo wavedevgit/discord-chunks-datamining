@@ -76,14 +76,14 @@ function p(e) {
       }
     }), _ = (0, o.Z)(e => {
       p(e.contentRect)
-    }), m = (0, a.y)(_);
+    }), h = (0, a.y)(_);
     return i.useImperativeHandle(n, () => ({
       triggerResize: () => {
         var e;
-        p(null == (e = m.current) ? true : e.getBoundingClientRect())
+        p(null == (e = h.current) ? true : e.getBoundingClientRect())
       }
     })), (0, r.jsx)("div", {
-      ref: m,
+      ref: h,
       style: d,
       children: (0, r.jsx)(e, u(l({}, t), {
         width: s.width,

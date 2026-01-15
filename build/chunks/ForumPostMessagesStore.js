@@ -51,11 +51,11 @@ function p(e, t) {
 }
 let _ = {};
 
-function m() {
+function h() {
   _ = {}
 }
 
-function h(e) {
+function m(e) {
   let {
     threads: t
   } = e;
@@ -194,7 +194,7 @@ class N extends(r = Chunk442837.ZP.Store) {
 }
 u(N, "displayName", "ForumPostMessagesStore");
 let P = new N(Chunk570140.Z, {
-  CONNECTION_OPEN: m,
+  CONNECTION_OPEN: h,
   MESSAGE_CREATE: E,
   MESSAGE_UPDATE: y,
   MESSAGE_DELETE: O,
@@ -204,7 +204,7 @@ let P = new N(Chunk570140.Z, {
   MESSAGE_REACTION_REMOVE_ALL: T,
   MESSAGE_REACTION_REMOVE_EMOJI: C,
   MESSAGE_REACTION_ADD_MANY: I,
-  LOAD_FORUM_POSTS: h,
+  LOAD_FORUM_POSTS: m,
   LOAD_THREADS_SUCCESS: g,
   LOAD_ARCHIVED_THREADS_SUCCESS: g,
   LOAD_MESSAGES_SUCCESS: A

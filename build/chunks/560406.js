@@ -13,8 +13,8 @@ var Chunk46015 = require("./46015.js"),
   f = "-",
   p = /[^\0-\u007E]/,
   _ = /[.\u3002\uFF0E\uFF61]/g,
-  m = "Overflow: input needs wider integers to process",
-  h = 35,
+  h = "Overflow: input needs wider integers to process",
+  m = 35,
   g = RangeError,
   E = Chunk46015(_.exec),
   b = Math.floor,
@@ -40,34 +40,34 @@ var Chunk46015 = require("./46015.js"),
   },
   P = function(e, t, n) {
     var r = 0;
-    for (e = n ? b(e / c) : e >> 1, e += b(e / t); e > h * s >> 1;) e = b(e / h), r += a;
-    return b(r + (h + 1) * e / (e + l))
+    for (e = n ? b(e / c) : e >> 1, e += b(e / t); e > m * s >> 1;) e = b(e / m), r += a;
+    return b(r + (m + 1) * e / (e + l))
   },
-  R = function(e) {
+  w = function(e) {
     var t, n, r = [],
       l = (e = A(e)).length,
       c = d,
       p = 0,
       _ = u;
     for (t = 0; t < e.length; t++)(n = e[t]) < 128 && S(r, y(n));
-    var h = r.length,
-      E = h;
-    for (h && S(r, f); E < l;) {
+    var m = r.length,
+      E = m;
+    for (m && S(r, f); E < l;) {
       var O = i;
       for (t = 0; t < e.length; t++)(n = e[t]) >= c && n < O && (O = n);
       var I = E + 1;
-      if (O - c > b((i - p) / I)) throw new g(m);
+      if (O - c > b((i - p) / I)) throw new g(h);
       for (p += (O - c) * I, c = O, t = 0; t < e.length; t++) {
-        if ((n = e[t]) < c && ++p > i) throw new g(m);
+        if ((n = e[t]) < c && ++p > i) throw new g(h);
         if (n === c) {
           for (var T = p, C = a;;) {
-            var R = C <= _ ? o : C >= _ + s ? s : C - _;
-            if (T < R) break;
-            var w = T - R,
-              D = a - R;
-            S(r, y(N(R + w % D))), T = b(w / D), C += a
+            var w = C <= _ ? o : C >= _ + s ? s : C - _;
+            if (T < w) break;
+            var R = T - w,
+              D = a - w;
+            S(r, y(N(w + R % D))), T = b(R / D), C += a
           }
-          S(r, y(N(T))), _ = P(p, I, E === h), p = 0, E++
+          S(r, y(N(T))), _ = P(p, I, E === m), p = 0, E++
         }
       }
       p++, c++
@@ -77,6 +77,6 @@ var Chunk46015 = require("./46015.js"),
 module.exports = function(e) {
   var t, n, r = [],
     i = T(I(C(e), _, "."), ".");
-  for (t = 0; t < i.length; t++) S(r, E(p, n = i[t]) ? "xn--" + R(n) : n);
+  for (t = 0; t < i.length; t++) S(r, E(p, n = i[t]) ? "xn--" + w(n) : n);
   return v(r, ".")
 }

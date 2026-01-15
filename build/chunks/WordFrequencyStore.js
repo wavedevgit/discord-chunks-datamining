@@ -23,8 +23,8 @@ function d(e, t, n) {
 let f = 5,
   p = 250,
   _ = .001,
-  m = .01,
-  h = 10,
+  h = .01,
+  m = 10,
   g = new Map,
   E = 0;
 
@@ -58,7 +58,7 @@ function S() {
 }
 
 function I(e) {
-  null == r && (r = l.t.createEstimate(_, m));
+  null == r && (r = l.t.createEstimate(_, h));
   let t = false;
   for (let n of e)
     if (S())
@@ -105,13 +105,13 @@ let P = e => {
     } = e;
     return N(t)
   },
-  R = e => {
+  w = e => {
     let {
       message: t
     } = e;
     return N([t])
   };
-class w extends(i = Chunk442837.ZP.PersistedStore) {
+class R extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(s.Z), null != e) {
       var t;
@@ -142,13 +142,13 @@ class w extends(i = Chunk442837.ZP.PersistedStore) {
   }
   isFrequentlyUsedWord(e) {
     let t = g.get(e.toLowerCase());
-    return null != t && t > h
+    return null != t && t > m
   }
 }
-d(w, "displayName", "WordFrequencyStore"), d(w, "persistKey", "WordFrequencyStore");
-let D = new w(Chunk570140.Z, {
+d(R, "displayName", "WordFrequencyStore"), d(R, "persistKey", "WordFrequencyStore");
+let D = new R(Chunk570140.Z, {
     LOAD_MESSAGES_SUCCESS: P,
-    MESSAGE_CREATE: R,
+    MESSAGE_CREATE: w,
     DEV_TOOLS_WORD_FREQUENCY_RESET: A
   }),
   x = D

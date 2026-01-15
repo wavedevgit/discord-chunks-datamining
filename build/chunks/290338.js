@@ -34,7 +34,7 @@ let v = (0, Chunk473749.createContext)(null),
     } = (0, a.jn)(c.q) || {}, A = null != (T = null != (n = e.validationBehavior) ? n : C) ? T : "native", N = (0, g.N)({
       ...e,
       validationBehavior: A
-    }), P = (0, O.useRef)(null), [R, w] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), {
+    }), P = (0, O.useRef)(null), [w, R] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), {
       groupProps: D,
       labelProps: x,
       fieldProps: L,
@@ -44,9 +44,9 @@ let v = (0, Chunk473749.createContext)(null),
       descriptionProps: U,
       errorMessageProps: G,
       ...Z
-    } = (0, m.k)({
+    } = (0, h.k)({
       ...(0, a.vl)(e),
-      label: w,
+      label: R,
       validationBehavior: A
     }, N, P), [F, B] = (0, O.useState)(null), V = (0, O.useCallback)(() => {
       P.current && B(P.current.offsetWidth + "px")
@@ -59,7 +59,7 @@ let v = (0, Chunk473749.createContext)(null),
       focusProps: H,
       isFocused: Y,
       isFocusVisible: W
-    } = (0, h.F)({
+    } = (0, m.F)({
       within: true
     }), K = (0, a.aX)({
       ...e,
@@ -91,7 +91,7 @@ let v = (0, Chunk473749.createContext)(null),
         }],
         [f.n, {
           ...x,
-          ref: R,
+          ref: w,
           elementType: "span"
         }],
         [i.Ah, k],

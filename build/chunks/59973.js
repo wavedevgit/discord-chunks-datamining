@@ -27,26 +27,26 @@ function l(e) {
       l = n.clientOffset,
       p = n.getSourceClientOffset,
       _ = e.getMonitor(),
-      m = e.getRegistry();
-    e.dispatch((0, i.T)(l)), c(t, _, m);
-    var h = f(t, _);
-    if (null === h) return void e.dispatch(s);
+      h = e.getRegistry();
+    e.dispatch((0, i.T)(l)), c(t, _, h);
+    var m = f(t, _);
+    if (null === m) return void e.dispatch(s);
     var g = null;
     if (l) {
       if (!p) throw Error("getSourceClientOffset must be defined");
-      u(p), g = p(h)
+      u(p), g = p(m)
     }
     e.dispatch((0, i.T)(l, g));
-    var E = m.getSource(h).beginDrag(_, h);
+    var E = h.getSource(m).beginDrag(_, m);
     if (null != E) {
-      d(E), m.pinSource(h);
-      var b = m.getSourceType(h);
+      d(E), h.pinSource(m);
+      var b = h.getSourceType(m);
       return {
         type: o.qu,
         payload: {
           itemType: b,
           item: E,
-          sourceId: h,
+          sourceId: m,
           clientOffset: l || null,
           sourceClientOffset: g || null,
           isSourcePublic: !!a

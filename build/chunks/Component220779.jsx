@@ -76,7 +76,7 @@ function T(e) {
     autoFocus: c = true,
     onFocus: p,
     channel: _,
-    className: m
+    className: h
   } = e, [g, E] = i.useState(""), [y, v] = i.useState((0, d.JM)("")), T = () => {
     E(""), v((0, d.JM)(""))
   }, C = u.Ie.ATOMIC_REACTOR_REPLY_INPUT, A = i.useRef(null), N = () => {
@@ -88,11 +88,11 @@ function T(e) {
   return (0, r.jsx)(f.ZP, {
     ref: A,
     placeholder: t,
-    editorClassName: m,
-    className: o()(b.replyInput, m),
+    editorClassName: h,
+    className: o()(b.replyInput, h),
     showRemainingCharsAfterCount: false,
     allowNewLines: false,
-    maxCharacterCount: h.z,
+    maxCharacterCount: m.z,
     channel: null != _ ? _ : I,
     onChange: (e, t, n) => {
       E(t), v(n)
@@ -108,7 +108,7 @@ function T(e) {
       let {
         value: t
       } = e;
-      return t.length > h.z ? Promise.resolve({
+      return t.length > m.z ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
       }) : (n(t), T(), Promise.resolve({

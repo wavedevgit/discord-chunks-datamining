@@ -34,18 +34,18 @@ function _(e) {
   return e.filter(e => u[e] <= 1).map(p)
 }
 
-function m(e, t) {
+function h(e, t) {
   e.forEach(e => {
     u[e] = t
   })
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   u[d(e, t)] = n
 }
 
 function g(e, t) {
-  t.forEach(t => h(e, t, 3))
+  t.forEach(t => m(e, t, 3))
 }
 var E = function(e) {
   return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BOT = 1] = "BOT", e[e.INTEGRATION = 2] = "INTEGRATION", e[e.DISCOVERY = 3] = "DISCOVERY", e[e.HUB = 4] = "HUB", e[e.INVITE = 5] = "INVITE", e[e.VANITY_URL = 6] = "VANITY_URL", e[e.MANUAL_MEMBER_VERIFICATION = 7] = "MANUAL_MEMBER_VERIFICATION", e[e.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL = 8] = "SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL", e
@@ -106,7 +106,7 @@ async function S(e, t) {
   let n = f(e, t),
     i = _(n);
   if (0 === i.length) return [];
-  m(n, 2);
+  h(n, 2);
   try {
     let t = await r.tn.post({
       url: l.ANM.MEMBER_SAFETY_SUPPLEMENTAL(e),
@@ -115,7 +115,7 @@ async function S(e, t) {
       },
       rejectWithError: true
     });
-    if (!Array.isArray(t.body)) return m(n, 0), [];
+    if (!Array.isArray(t.body)) return h(n, 0), [];
     let a = t.body.map(v),
       o = [];
     a.forEach(e => {
@@ -127,9 +127,9 @@ async function S(e, t) {
     let s = f(e, o),
       c = i.filter(e => !o.includes(e)),
       u = f(e, c);
-    return m(s, 3), m(u, 0), a
+    return h(s, 3), h(u, 0), a
   } catch (e) {
-    m(n, 0)
+    h(n, 0)
   }
   return []
 }

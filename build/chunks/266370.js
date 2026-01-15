@@ -140,7 +140,7 @@
       get: function() {
         return a.shimGetDisplayMedia
       }
-    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = f, n.shimSenderReceiverGetStats = p, n.shimAddTrackRemoveTrackWithNative = _, n.shimAddTrackRemoveTrack = m, n.shimPeerConnection = h, n.fixNegotiationNeeded = g;
+    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = f, n.shimSenderReceiverGetStats = p, n.shimAddTrackRemoveTrackWithNative = _, n.shimAddTrackRemoveTrack = h, n.shimPeerConnection = m, n.fixNegotiationNeeded = g;
     var o = s(e("../utils.js"));
 
     function s(e) {
@@ -424,7 +424,7 @@
       }
     }
 
-    function m(e, t) {
+    function h(e, t) {
       if (e.RTCPeerConnection) {
         if (e.RTCPeerConnection.prototype.addTrack && t.version >= 65) return _(e);
         var n = e.RTCPeerConnection.prototype.getLocalStreams;
@@ -540,7 +540,7 @@
       }
     }
 
-    function h(e, t) {
+    function m(e, t) {
       !e.RTCPeerConnection && e.webkitRTCPeerConnection && (e.RTCPeerConnection = e.webkitRTCPeerConnection), e.RTCPeerConnection && t.version < 53 && ["setLocalDescription", "setRemoteDescription", "addIceCandidate"].forEach(function(t) {
         var n = e.RTCPeerConnection.prototype[t],
           r = l({}, t, function() {
@@ -940,7 +940,7 @@
       get: function() {
         return a.shimGetDisplayMedia
       }
-    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = f, n.shimRemoveStream = p, n.shimRTCDataChannel = _, n.shimAddTransceiver = m, n.shimGetParameters = h, n.shimCreateOffer = g, n.shimCreateAnswer = E;
+    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = f, n.shimRemoveStream = p, n.shimRTCDataChannel = _, n.shimAddTransceiver = h, n.shimGetParameters = m, n.shimCreateOffer = g, n.shimCreateAnswer = E;
     var o = s(e("../utils"));
 
     function s(e) {
@@ -1061,7 +1061,7 @@
       e.DataChannel && !e.RTCDataChannel && (e.RTCDataChannel = e.DataChannel)
     }
 
-    function m(e) {
+    function h(e) {
       if ((true === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.addTransceiver;
         t && (e.RTCPeerConnection.prototype.addTransceiver = function() {
@@ -1088,7 +1088,7 @@
       }
     }
 
-    function h(e) {
+    function m(e) {
       if ((true === e ? "undefined" : r(e)) === "object" && e.RTCRtpSender) {
         var t = e.RTCRtpSender.prototype.getParameters;
         t && (e.RTCRtpSender.prototype.getParameters = function() {
@@ -1417,7 +1417,7 @@
         writable: true
       }) : e[t] = n, e
     }
-    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = p, n.compactObject = m, n.walkStats = h, n.filterStats = g;
+    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = p, n.compactObject = h, n.walkStats = m, n.filterStats = g;
     var a = true,
       o = true;
 
@@ -1486,19 +1486,19 @@
       return "[object Object]" === Object.prototype.toString.call(e)
     }
 
-    function m(e) {
+    function h(e) {
       return _(e) ? Object.keys(e).reduce(function(t, n) {
         var r = _(e[n]),
-          a = r ? m(e[n]) : e[n],
+          a = r ? h(e[n]) : e[n],
           o = r && !Object.keys(a).length;
         return true === a || o ? t : Object.assign(t, i({}, n, a))
       }, {}) : e
     }
 
-    function h(e, t, n) {
+    function m(e, t, n) {
       !t || n.has(t.id) || (n.set(t.id, t), Object.keys(t).forEach(function(r) {
-        r.endsWith("Id") ? h(e, e.get(t[r]), n) : r.endsWith("Ids") && t[r].forEach(function(t) {
-          h(e, e.get(t), n)
+        r.endsWith("Id") ? m(e, e.get(t[r]), n) : r.endsWith("Ids") && t[r].forEach(function(t) {
+          m(e, e.get(t), n)
         })
       }))
     }
@@ -1512,7 +1512,7 @@
         "track" === e.type && e.trackIdentifier === t.id && a.push(e)
       }), a.forEach(function(t) {
         e.forEach(function(n) {
-          n.type === r && n.trackId === t.id && h(e, n, i)
+          n.type === r && n.trackId === t.id && m(e, n, i)
         })
       }), i
     }

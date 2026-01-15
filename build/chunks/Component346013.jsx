@@ -84,7 +84,7 @@ function G(e) {
     channel: Z
   } = e, F = i.useRef(null), B = i.useRef(null), V = (0, P.J)(k, G), {
     setPopout: H
-  } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, A.n)(), [z, q] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
+  } = (0, b.Z)(G.id, R.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, A.n)(), [z, q] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
     var e;
     return S.ZP.isMember(null == V ? true : V.guildId, null == (e = I.default.getCurrentUser()) ? true : e.id)
   }, [V]), $ = (0, l.e7)([S.ZP], () => (null == V ? true : V.authorId) != null ? S.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, p.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -97,12 +97,12 @@ function G(e) {
   }, [q]), ec = i.useCallback(() => {
     q(false)
   }, [q]), eu = i.useCallback(async () => {
-    null != V && ((0, f.yw)(R.rMx.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
+    null != V && ((0, f.yw)(w.rMx.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
       media_post_id: V.threadId,
       channel_id: Z.id,
       can_access: V.canAccess,
       is_member: J
-    }), V.canAccess ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : J ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await C.Ub(V.guildId, {}, {
+    }), V.canAccess ? (0, m.Z)(w.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : J ? (0, m.Z)(w.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await C.Ub(V.guildId, {}, {
       channelId: V.parentChannelId
     }))
   }, [V, Z, J]);
@@ -138,8 +138,8 @@ function G(e) {
         className: x.authorName
       }))
     }, (0, s.Z)()),
-    em = V.coverImage,
-    eh = null != em && (0, g.d$)(em),
+    eh = V.coverImage,
+    em = null != eh && (0, g.d$)(eh),
     eg = K && (W || z);
   return (0, r.jsxs)("div", {
     className: x.postPreviewContainer,
@@ -155,9 +155,9 @@ function G(e) {
         }),
         onContextMenu: Y,
         onError: () => X(true)
-      }) : (0, r.jsx)(m.Z, {
-        src: !eg && eh ? "".concat(em, "?format=png") : em,
-        backgroundSrc: "".concat(em, "?format=png"),
+      }) : (0, r.jsx)(h.Z, {
+        src: !eg && em ? "".concat(eh, "?format=png") : eh,
+        backgroundSrc: "".concat(eh, "?format=png"),
         alt: D.intl.string(D.t.rIbh8H),
         aspectRatio: 16 / 9,
         className: o()(x.thumbnail, {

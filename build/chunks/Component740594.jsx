@@ -74,8 +74,8 @@ let p = function(e) {
     premiumModalAnalyticsLocation: f,
     applicationId: p,
     confirmationFooter: _,
-    buttonTextOverride: m,
-    defaultTextOverride: h,
+    buttonTextOverride: h,
+    defaultTextOverride: m,
     iconOverride: g,
     variantOverride: E
   } = e, b = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
@@ -92,8 +92,8 @@ let p = function(e) {
       subscribeButtonProps: O
     } = (0, o.F)({
       subscriptionTier: t,
-      buttonTextOverride: m,
-      defaultTextOverride: h,
+      buttonTextOverride: h,
+      defaultTextOverride: m,
       iconOverride: g,
       variantOverride: E
     });

@@ -92,7 +92,7 @@ function _({
   }
 }
 
-function m({
+function h({
   red: e,
   green: t,
   blue: n,
@@ -130,7 +130,7 @@ function m({
     alpha: r
   }
 }
-let h = /^#[0-9a-f]{3,8}$/i,
+let m = /^#[0-9a-f]{3,8}$/i,
   g = /^((?:rgb|hsl)a?)\s*\(([^)]*)\)/i;
 class E {
   constructor(e, t, n, r) {
@@ -143,13 +143,13 @@ class E {
     return "#" + (this.red > 15.5 ? e : "0" + e) + (this.green > 15.5 ? t : "0" + t) + (this.blue > 15.5 ? n : "0" + n)
   }
   static parseString(e) {
-    return e.match(g) ? this.parseColorFnString(e) : e.match(h) ? this.parseHexString(e) : true
+    return e.match(g) ? this.parseColorFnString(e) : e.match(m) ? this.parseHexString(e) : true
   }
   static parseRgbString(e) {
     return "transparent" === e ? new E(0, 0, 0, 0) : this.parseColorFnString(e)
   }
   static parseHexString(e) {
-    if (!e.match(h) || [6, 8].includes(e.length)) return;
+    if (!e.match(m) || [6, 8].includes(e.length)) return;
     if ((e = e.replace("#", "")).length < 6) {
       let [t, n, r, i] = e.split("");
       e = t + t + n + n + r + r, i && (e += i + i)
@@ -174,7 +174,7 @@ class E {
     return new E(i[0], i[1], i[2], "number" == typeof i[3] ? i[3] : 1)
   }
   toHSL() {
-    return m({
+    return h({
       red: this.red,
       green: this.green,
       blue: this.blue,
@@ -332,13 +332,13 @@ var P = function(e, t, n, r) {
   }
   returntrue
 };
-let R = false,
-  w, D = {};
+let w = false,
+  R, D = {};
 
 function x() {
-  if (!R) return;
+  if (!w) return;
   let e = null == r ? true : r.getStyle();
-  null == e || P(e, D) ? null != w && cancelAnimationFrame(w) : (D = e, null == r || r.invalidate()), w = requestAnimationFrame(x)
+  null == e || P(e, D) ? null != R && cancelAnimationFrame(R) : (D = e, null == r || r.invalidate()), R = requestAnimationFrame(x)
 }
 let L = false,
   j = {
@@ -349,10 +349,10 @@ let L = false,
       L = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      R = true, w = requestAnimationFrame(x)
+      w = true, R = requestAnimationFrame(x)
     },
     disableAnimationTracking() {
-      R = false, null != w && cancelAnimationFrame(w)
+      w = false, null != R && cancelAnimationFrame(R)
     }
   };
 
@@ -397,7 +397,7 @@ function G(e) {
   } = e;
   null != o && f(null != s, "FocusRing was given a focusTarget but the required ringTarget was not provided. A ringTarget is required to avoid ambiguity of where the ring will be applied."), null != r && f(null != s, "FocusRing was given a controlled focused prop but no ringTarget to apply the ring to. A ringTarget is required since it cannot be inferred through regular focus events.");
   let _ = a.useRef(false),
-    [m, h] = a.useState(false),
+    [h, m] = a.useState(false),
     g = a.useContext(N),
     E = a.Children.only(p),
     {
@@ -432,24 +432,24 @@ function G(e) {
           _.current = true, g.showElement(n, v);
           return
         }
-        h(true), t && g.showElement(n, v)
+        m(true), t && g.showElement(n, v)
       }
     }
 
     function a() {
-      g.hide(), _.current = false, h(false)
+      g.hide(), _.current = false, m(false)
     }
   }, [t, v, r, g, o, s]);
   let S = a.useCallback(e => {
-      g.hide(), _.current = false, h(false), null == b || b(e)
+      g.hide(), _.current = false, m(false), null == b || b(e)
     }, [b, g]),
     I = a.useCallback(e => {
       let n = null == s ? true : s.current;
-      e.currentTarget === e.target ? (_.current = true, g.showElement(null != n ? n : e.currentTarget, v)) : (h(true), t && g.showElement(null != n ? n : e.currentTarget, v)), null == y || y(e)
+      e.currentTarget === e.target ? (_.current = true, g.showElement(null != n ? n : e.currentTarget, v)) : (m(true), t && g.showElement(null != n ? n : e.currentTarget, v)), null == y || y(e)
     }, [s, t, y, g, v]);
   return n && null == o && null == r ? a.cloneElement(E, {
     ...O,
-    className: d(O.className, _.current ? c : true, m ? u : true),
+    className: d(O.className, _.current ? c : true, h ? u : true),
     onBlur: S,
     onFocus: I
   }) : E

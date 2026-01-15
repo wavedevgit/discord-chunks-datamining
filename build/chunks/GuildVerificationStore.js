@@ -16,7 +16,7 @@ var r, Chunk95015 = require("./95015.js"),
   Chunk981631 = require("./981631.js"),
   Chunk372897 = require("./372897.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = {
+let m = {
     notClaimed: false,
     notEmailVerified: false,
     notPhoneVerified: false,
@@ -54,16 +54,16 @@ function b(e) {
       r = null == a.joinedAt || new Date(a.joinedAt) < t;
     if (!(n.features.has(p.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED) && !r) && e.size > 0) return
   }
-  let m = +r.createdAt + 6e4 * p.YeM.ACCOUNT_AGE - Date.now(),
-    h = +n.joinedAt + 6e4 * p.YeM.MEMBER_AGE - Date.now(),
+  let h = +r.createdAt + 6e4 * p.YeM.ACCOUNT_AGE - Date.now(),
+    m = +n.joinedAt + 6e4 * p.YeM.MEMBER_AGE - Date.now(),
     b = n.verificationLevel >= p.sFg.LOW && !r.isClaimed(),
     O = false,
     v = false,
     S = false,
     I = false;
-  r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= p.sFg.LOW && !r.verified, v = n.verificationLevel >= p.sFg.VERY_HIGH, S = n.verificationLevel >= p.sFg.MEDIUM && m > 0, I = n.verificationLevel >= p.sFg.HIGH && h > 0);
+  r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= p.sFg.LOW && !r.verified, v = n.verificationLevel >= p.sFg.VERY_HIGH, S = n.verificationLevel >= p.sFg.MEDIUM && h > 0, I = n.verificationLevel >= p.sFg.HIGH && m > 0);
   let T = [];
-  I && T.push(h), S && T.push(m), T.length > 0 && (t = setTimeout(() => o.Z.dispatch({
+  I && T.push(m), S && T.push(h), T.length > 0 && (t = setTimeout(() => o.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
   }), Math.max(...T))), E[e] = {
@@ -73,8 +73,8 @@ function b(e) {
     newAccount: S,
     newMember: I,
     canChat: !(b || O || v || S || I),
-    accountDeadline: new Date(Date.now() + m),
-    memberDeadline: new Date(Date.now() + h),
+    accountDeadline: new Date(Date.now() + h),
+    memberDeadline: new Date(Date.now() + m),
     timeoutRef: t
   }
 }
@@ -129,13 +129,13 @@ class N extends(r = Chunk442837.ZP.Store) {
   }
   getCheck(e) {
     var t;
-    return null == e ? h : (g.has(e) || b(e), null != (t = E[e]) ? t : h)
+    return null == e ? m : (g.has(e) || b(e), null != (t = E[e]) ? t : m)
   }
   canChatInGuild(e) {
     return this.getCheck(e).canChat
   }
 }
-m(N, "displayName", "GuildVerificationStore");
+h(N, "displayName", "GuildVerificationStore");
 let P = new N(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   CONNECTION_CLOSED: v,

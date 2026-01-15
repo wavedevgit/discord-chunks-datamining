@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -103,7 +103,7 @@ class v extends Chunk473749.PureComponent {
       body: a,
       className: o,
       onClickSkipAll: u
-    } = this.props, d = "string" == typeof a ? "p" : "div", _ = "left" === t || n, m = "center" === t || !_;
+    } = this.props, d = "string" == typeof a ? "p" : "div", _ = "left" === t || n, h = "center" === t || !_;
     return (0, i.jsxs)(l.VqE, {
       className: s()(p.popoutRoot, o),
       children: [null != e && (0, i.jsx)(c.Z, {
@@ -112,13 +112,13 @@ class v extends Chunk473749.PureComponent {
         children: e()
       }), (0, i.jsx)(l.H, {
         className: s()({
-          [p.titleCenter]: m,
+          [p.titleCenter]: h,
           [p.titleLeft]: _
         }),
         children: r
       }), (0, i.jsx)(d, {
         className: s()({
-          [p.bodyCenter]: m,
+          [p.bodyCenter]: h,
           [p.bodyLeft]: _
         }),
         children: a
@@ -169,11 +169,11 @@ class S extends(r = Chunk473749.PureComponent) {
         innerRef: p
       } = e,
       _ = E(e, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
-      h = "top" === _.position || "bottom" === _.position ? "center" : "top";
-    return (0, i.jsx)(l.yRy, g(m({
+      m = "top" === _.position || "bottom" === _.position ? "center" : "top";
+    return (0, i.jsx)(l.yRy, g(h({
       targetElementRef: p
     }, _), {
-      align: h,
+      align: m,
       spacing: null != d ? d : 0,
       renderPopout: this.renderPopoutContent,
       nudgeAlignIntoViewport: true,
@@ -203,7 +203,7 @@ class S extends(r = Chunk473749.PureComponent) {
       } = this.props, u = null != c;
       return (0, i.jsx)(l.f6W, {
         theme: r,
-        children: e => (0, i.jsx)(v, g(m({}, this.props), {
+        children: e => (0, i.jsx)(v, g(h({}, this.props), {
           className: s()({
             [p.bottom]: "bottom" === n,
             [p.contentNarrowNoMedia]: !a && !u,

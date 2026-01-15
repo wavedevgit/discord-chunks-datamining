@@ -2,7 +2,7 @@
 /** chunk id: 91907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,27 +52,27 @@ function _(e, t) {
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     text: n,
     channel: a,
     textClassName: d,
     onPopoutClosed: p,
-    enableDisplayNameStyles: m = false
-  } = e, h = i.useMemo(() => [t], [t]), g = i.useRef(null), E = (0, l.j)({
+    enableDisplayNameStyles: h = false
+  } = e, m = i.useMemo(() => [t], [t]), g = i.useRef(null), E = (0, l.j)({
     displayNameStyles: null == t ? true : t.displayNameStyles
   });
   return (0, r.jsx)(u.Z, {
     targetElementRef: g,
-    participants: h,
+    participants: m,
     channel: a,
     onPopoutClosed: p,
     children: e => (0, r.jsx)(c.Z, _(f({}, e), {
       tag: "span",
       children: (0, r.jsx)(s.xvT, {
         ref: g,
-        className: m ? o()(d, E) : d,
+        className: h ? o()(d, E) : d,
         variant: "text-sm/semibold",
         color: "text-strong",
         lineClamp: 1,

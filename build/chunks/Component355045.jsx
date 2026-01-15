@@ -30,14 +30,14 @@ let I = function(e) {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: a
-  } = e, I = i.useRef(null), T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), C = (0, s.e7)([g.Z], () => g.Z.boostSlots), A = null == T ? true : T.isPremiumGroupMember(), {
+  } = e, I = i.useRef(null), T = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (0, s.e7)([g.Z], () => g.Z.boostSlots), A = null == T ? true : T.isPremiumGroupMember(), {
     analyticsLocations: N
   } = (0, d.ZP)(), P = i.useMemo(() => Object.keys(C).filter(e => {
     let t = C[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
-  }).length, [C, n.id]), R = (0, _.Z)(e.guild.id).total;
+  }).length, [C, n.id]), w = (0, _.Z)(e.guild.id).total;
 
-  function w() {
+  function R() {
     (0, p.Z)({
       initialPlanId: null,
       subscriptionTier: O.Si.TIER_2,
@@ -83,15 +83,15 @@ let I = function(e) {
       children: [(0, r.jsxs)("div", {
         className: S.guildBoostCount,
         children: [(0, r.jsx)(u.Ucv, {
-          color: R > 0 ? u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
+          color: w > 0 ? u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
           className: o()(S.guildBoostBadge, {
-            [S.guildBoostBadgeWithBoosts]: R > 0
+            [S.guildBoostBadgeWithBoosts]: w > 0
           })
         }), (0, r.jsx)(u.Text, {
           className: S.guildStatusCopy,
           variant: "text-md/bold",
           children: v.intl.format(v.t["pob/cL"], {
-            subscriptions: R
+            subscriptions: w
           })
         })]
       }), P > 0 ? (0, r.jsx)(u.Text, {
@@ -101,7 +101,7 @@ let I = function(e) {
           numSubscriptions: P
         })
       }) : null]
-    }), A ? (0, r.jsx)(m.Z, {
+    }), A ? (0, r.jsx)(h.Z, {
       alwaysWhite: true
     }) : null, (0, r.jsxs)("div", {
       className: S.guildBoostCtas,
@@ -147,7 +147,7 @@ let I = function(e) {
         className: o()(S.guildBoostCta, S.guildBoostCtaSecondary),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
-        onClick: w,
+        onClick: R,
         size: c.zx.Sizes.LARGE,
         disabled: A,
         children: v.intl.string(v.t.Q43TvC)

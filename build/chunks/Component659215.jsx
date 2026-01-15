@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk116411 = require("./116411.js"),
   Chunk784370 = require("./784370.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,14 +28,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function E(e, t) {
 function b(e) {
   var t, n, {
       onClose: i,
-      analyticsSource: m
+      analyticsSource: h
     } = e,
     E = g(e, ["onClose", "analyticsSource"]);
   let b = f.intl.format(f.t["JmbS+T"], {
@@ -75,7 +75,7 @@ function b(e) {
     y = (0, l.N)(),
     O = (0, s.N)(),
     v = null != y || null != O;
-  return (0, r.jsx)(c.Z, h({
+  return (0, r.jsx)(c.Z, m({
     artURL: _,
     artContainerClassName: p.artContainer,
     modalClassName: p.modalContainer,
@@ -84,7 +84,7 @@ function b(e) {
     title: f.intl.string(f.t.N4SCJ0),
     body: b,
     glowUp: b,
-    analyticsSource: m,
+    analyticsSource: h,
     analyticsLocation: {
       page: d.ZY5.PREMIUM_UPSELL_BURST_REACTIONS,
       object: d.qAy.BUTTON_CTA
@@ -104,7 +104,7 @@ function y(e) {
     let {
       default: e
     } = await Promise.resolve().then(n.bind(n, 659215));
-    return n => (0, r.jsx)(e, h({
+    return n => (0, r.jsx)(e, m({
       analyticsSource: t
     }, n))
   })

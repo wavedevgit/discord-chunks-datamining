@@ -16,7 +16,7 @@ let c = "0.3",
   f = "var(--background-base-low)",
   p = "url(#gradient)",
   _ = "url(#gradient_nitro_logo)",
-  m = (e, t) => {
+  h = (e, t) => {
     switch (e) {
       case s.Qo.NITRO_LOGO:
         return t ? c : u;
@@ -26,7 +26,7 @@ let c = "0.3",
         return
     }
   },
-  h = e => {
+  m = e => {
     switch (e) {
       case s.Qo.NITRO_GEM:
       case s.Qo.AVATAR_DECO:
@@ -67,8 +67,8 @@ let c = "0.3",
     let O = (0, o.ZP)(),
       v = (0, a.ap)(O),
       S = (1 - b / 100) * E,
-      I = h(f),
-      T = m(f, v),
+      I = m(f),
+      T = h(f, v),
       C = null != p ? p : g(v, f);
     return (0, r.jsxs)("div", {
       className: l.circleContainer,

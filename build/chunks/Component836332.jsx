@@ -37,26 +37,26 @@ let y = (e, t) => {
       value: S,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: o()(h.container, n),
+        className: o()(m.container, n),
         children: [(0, r.jsx)(s.Heading, {
-          className: h.footerHeader,
+          className: m.footerHeader,
           variant: "display-md",
           color: "text-strong",
-          children: m.intl.string(m.t.lEw32m)
+          children: h.intl.string(h.t.lEw32m)
         }), (0, r.jsx)(p.PK, {
           subscriptionTier: v,
           inOfferExperience: I,
-          containerClassName: h.footerCTAContainer,
+          containerClassName: m.footerCTAContainer,
           isApplicationHome: true,
           isDarkMode: y
         }), (0, r.jsx)("div", {
-          className: h.footerArtContainer,
+          className: m.footerArtContainer,
           children: (0, r.jsx)(u.Z, {
             playsInline: true,
             muted: true,
             preload: "auto",
             poster: E.Z,
-            className: h.footerArt,
+            className: m.footerArt,
             onEnded: () => {
               N(true)
             },
@@ -67,9 +67,9 @@ let y = (e, t) => {
             })
           })
         }), (0, r.jsx)("div", {
-          className: h.leftGradient
+          className: m.leftGradient
         }), (0, r.jsx)("div", {
-          className: h.rightGradient
+          className: m.rightGradient
         })]
       })
     })

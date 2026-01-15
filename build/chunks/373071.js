@@ -52,18 +52,18 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = "__DEBUG_PROFILE_EFFECTS_STORE",
-  h = {
-    profileEffects: null != (r = Chunk433517.K.get(m)) ? r : {}
+let h = "__DEBUG_PROFILE_EFFECTS_STORE",
+  m = {
+    profileEffects: null != (r = Chunk433517.K.get(h)) ? r : {}
   },
   g = e => {
     try {
-      l.K.set(m, e.profileEffects)
+      l.K.set(h, e.profileEffects)
     } catch (e) {
       console.error(e), (0, c.showToast)((0, c.createToast)("This file is too large to save into localstorage. You will be able to view but not persist these changes.", c.ToastType.FAILURE))
     }
   },
-  E = (0, Chunk748521.F)(e => _(f({}, h), {
+  E = (0, Chunk748521.F)(e => _(f({}, m), {
     upsertConfig: t => (0, s.j)(() => {
       e(e => {
         let n = f({}, e);
@@ -77,7 +77,7 @@ let m = "__DEBUG_PROFILE_EFFECTS_STORE",
       })
     }),
     clearAll: () => (0, s.j)(() => {
-      e(() => (l.K.remove(m), {
+      e(() => (l.K.remove(h), {
         profileEffects: {}
       }))
     })

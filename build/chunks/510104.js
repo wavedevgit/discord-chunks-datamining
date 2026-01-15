@@ -20,9 +20,9 @@ function f(e, t) {
     f = n.placement,
     p = true === f ? e.placement : f,
     _ = n.strategy,
-    m = true === _ ? e.strategy : _,
-    h = n.boundary,
-    g = true === h ? l.zV : h,
+    h = true === _ ? e.strategy : _,
+    m = n.boundary,
+    g = true === m ? l.zV : m,
     E = n.rootBoundary,
     b = true === E ? l.Pj : E,
     y = n.elementContext,
@@ -35,21 +35,21 @@ function f(e, t) {
     A = O === l.k5 ? l.YP : l.k5,
     N = e.rects.popper,
     P = e.elements[S ? A : O],
-    R = (0, r.Z)((0, c.kK)(P) ? P : P.contextElement || (0, i.Z)(e.elements.popper), g, b, m),
-    w = (0, a.Z)(e.elements.reference),
+    w = (0, r.Z)((0, c.kK)(P) ? P : P.contextElement || (0, i.Z)(e.elements.popper), g, b, h),
+    R = (0, a.Z)(e.elements.reference),
     D = (0, o.Z)({
-      reference: w,
+      reference: R,
       element: N,
       strategy: "absolute",
       placement: p
     }),
     x = (0, s.Z)(Object.assign({}, N, D)),
-    L = O === l.k5 ? x : w,
+    L = O === l.k5 ? x : R,
     j = {
-      top: R.top - L.top + C.top,
-      bottom: L.bottom - R.bottom + C.bottom,
-      left: R.left - L.left + C.left,
-      right: L.right - R.right + C.right
+      top: w.top - L.top + C.top,
+      bottom: L.bottom - w.bottom + C.bottom,
+      left: w.left - L.left + C.left,
+      right: L.right - w.right + C.right
     },
     M = e.modifiersData.offset;
   if (O === l.k5 && M) {

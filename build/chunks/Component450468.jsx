@@ -68,7 +68,7 @@ function I(e) {
     onClose: a
   } = e, {
     analyticsLocations: d
-  } = (0, m.ZP)(_.Z.GUILD_BOOST_UNCANCELLATION_MODAL);
+  } = (0, h.ZP)(_.Z.GUILD_BOOST_UNCANCELLATION_MODAL);
   i.useEffect(() => {
     g.Z.hasFetchedSubscriptions() || (0, u.jg)()
   }, []);
@@ -76,17 +76,17 @@ function I(e) {
     [I, T] = i.useState(1),
     [C, A] = i.useState(false),
     [N, P] = i.useState(null),
-    R = i.useCallback(async () => {
+    w = i.useCallback(async () => {
       if (null != y) try {
         A(true), P(null);
-        let e = (0, h.g)(y, 1);
+        let e = (0, m.g)(y, 1);
         o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), T(2)
       } catch (t) {
         let e = t instanceof f.HF ? t : new f.HF(t, t.code);
         P(b.intl.string(e.code === p.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), A(false)
       }
     }, [y, t, d]),
-    w = () => {
+    R = () => {
       switch (I) {
         case 1:
           return b.intl.string(b.t.l52ih2);
@@ -108,7 +108,7 @@ function I(e) {
             variant: "primary",
             text: b.intl.string(b.t.etZP4B),
             loading: C,
-            onClick: R
+            onClick: w
           }];
         case 2:
           return [{
@@ -133,13 +133,13 @@ function I(e) {
           throw Error("Unexpected step: ".concat(I))
       }
     };
-  return (0, r.jsx)(m.Gt, {
+  return (0, r.jsx)(h.Gt, {
     value: d,
     children: (0, r.jsx)(s.Modal, {
       transitionState: n,
       onClose: async () => await a(),
       size: "sm",
-      title: w(),
+      title: R(),
       actions: D(),
       children: x()
     })

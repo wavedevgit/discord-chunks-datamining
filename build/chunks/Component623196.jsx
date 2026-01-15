@@ -74,9 +74,9 @@ function O() {
         }
       })
     };
-  return (0, r.jsxs)(m.U, {
-    setting: h.s6.PRIVACY_DATA_REQUEST_V2,
-    children: [(0, r.jsx)(m.H, {
+  return (0, r.jsxs)(h.U, {
+    setting: m.s6.PRIVACY_DATA_REQUEST_V2,
+    children: [(0, r.jsx)(h.H, {
       header: E.intl.string(E.t.XAHCgJ),
       description: E.intl.format(E.t.P3kNfr, {
         helpdeskArticle: d.Z.getArticleURL(g.BhN.GDPR_REQUEST_DATA)

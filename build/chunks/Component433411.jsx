@@ -51,21 +51,21 @@ function g(e) {
     title: f,
     errors: I,
     children: [(0, r.jsxs)("div", {
-      className: h.buttonsContainer,
+      className: m.buttonsContainer,
       children: [(0, r.jsx)(N, {
         size: o.zx.Sizes.SMALL,
         onClick: C,
         className: a()({
-          [h.buttonHighlighted]: E
+          [m.buttonHighlighted]: E
         }),
-        children: m.intl.string(m.t.BVcYCx)
+        children: h.intl.string(h.t.BVcYCx)
       }), T && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: h.removeButton,
+        className: m.removeButton,
         children: (0, r.jsx)(s.Button, {
           variant: "secondary",
           size: "sm",
-          text: (0, c.ad)(t, n) ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.OrokWm),
+          text: (0, c.ad)(t, n) ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.OrokWm),
           onClick: A
         })
       })]
@@ -80,7 +80,7 @@ let E = "PALUE000000001",
       user: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: h.overrideButtonsContainer,
+      className: m.overrideButtonsContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
         children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
@@ -93,7 +93,7 @@ let E = "PALUE000000001",
         },
         size: "sm",
         variant: "primary",
-        text: m.intl.string(m.t.a9F1Qu)
+        text: h.intl.string(h.t.a9F1Qu)
       })]
     })
   }

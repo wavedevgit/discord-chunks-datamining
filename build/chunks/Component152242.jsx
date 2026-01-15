@@ -103,7 +103,7 @@ function H(e) {
     loading: o = false
   } = e, {
     hasPaymentSources: s
-  } = (0, _.JL)(), c = s ? m.h8.REVIEW : m.h8.ADD_PAYMENT_STEPS;
+  } = (0, _.JL)(), c = s ? h.h8.REVIEW : h.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Button, {
       onClick: () => t(c),
@@ -126,13 +126,13 @@ let Y = e => {
     emojiConfetti: c,
     soundEffect: d,
     setEmojiConfetti: f,
-    setSoundEffect: m,
-    giftingOrigin: h,
+    setSoundEffect: h,
+    giftingOrigin: m,
     additionalUserIds: b
   } = (0, p.wD)(), {
     selectedSkuId: v,
     application: T
-  } = (0, _.JL)(), N = (0, s.e7)([S.default], () => S.default.getCurrentUser()), P = V(null == N ? true : N.id, o, b), x = (0, s.e7)([I.Z], () => null != v ? I.Z.get(v) : null, [v]), L = (0, A.Do)(x), G = (0, A.a7)(x), Z = (0, w.K)(x, {
+  } = (0, _.JL)(), N = (0, s.e7)([S.default], () => S.default.getCurrentUser()), P = V(null == N ? true : N.id, o, b), x = (0, s.e7)([I.Z], () => null != v ? I.Z.get(v) : null, [v]), L = (0, A.Do)(x), G = (0, A.a7)(x), Z = (0, R.K)(x, {
     shouldFetchIfMissing: true
   }), F = async (e, t) => {}, B = () => (0, r.jsx)(g.Z, {
     onTextChange: e => null == a ? true : a(e),
@@ -141,7 +141,7 @@ let Y = e => {
     disableThemedBackground: true,
     className: U.customGiftMessageWrapper,
     innerClassName: U.customGiftMessage
-  }), H = () => null != o && (h === j.Wt.USER_PROFILE_WISHLIST || h === j.Wt.DM_CHANNEL_WISHLIST) ? (0, r.jsx)(y.s, {
+  }), H = () => null != o && (m === j.Wt.USER_PROFILE_WISHLIST || m === j.Wt.DM_CHANNEL_WISHLIST) ? (0, r.jsx)(y.s, {
     giftRecipient: o
   }) : (0, r.jsx)(u.Z, {
     selectedSkuId: v,
@@ -149,7 +149,7 @@ let Y = e => {
     searchableSelectWrapperClassName: U.recipientPickerSelectWrapper,
     recipients: P
   }), Y = e => {
-    null != m && m(null == e ? true : e)
+    null != h && h(null == e ? true : e)
   }, W = () => {
     var e;
     return (0, r.jsxs)("div", {
@@ -193,7 +193,7 @@ let Y = e => {
           })
         }), (0, r.jsxs)("div", {
           className: U.giftPreviewTextContainer,
-          children: [null != T && (0, r.jsx)(R.e, {
+          children: [null != T && (0, r.jsx)(w.e, {
             application: T
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
@@ -240,9 +240,9 @@ function W(e) {
     handleClose: n
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.C3, {
+    children: [(0, r.jsx)(m.C3, {
       children: i()
-    }), (0, r.jsx)(h.O3, {
+    }), (0, r.jsx)(m.O3, {
       children: (0, r.jsx)(l.mzw, {
         "data-migration-pending": true,
         justify: f.Z.Justify.BETWEEN,

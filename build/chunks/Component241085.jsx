@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764055 = require("./764055.js");
 
-function R(e) {
+function w(e) {
   let {
     dropping: t,
     fileInputRef: n,
@@ -91,7 +91,7 @@ function R(e) {
   })
 }
 
-function w() {
+function R() {
   return (0, r.jsxs)("div", {
     className: o()(P.mainWrapper, P.mainBody),
     children: [(0, r.jsx)(u.owK, {
@@ -122,14 +122,14 @@ function D(e) {
     }),
     children: [(0, r.jsx)(g.r, {
       upload: n,
-      size: a ? h.q.XSMALL : h.q.XXSMALL
+      size: a ? m.q.XSMALL : m.q.XXSMALL
     }), (0, r.jsx)(u.Text, {
       variant: "text-".concat(a ? "md" : "xs", "/medium"),
       className: P.filename,
       children: null != (t = n.filename) ? t : N.intl.string(N.t.ZMirp0)
     }), (0, r.jsx)(E.ZP, {
       className: P.miniPopover,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(h.Z, {
         className: P.action,
         tooltip: N.intl.string(N.t.N86XcP),
         onClick: () => i(n.id),
@@ -149,7 +149,7 @@ function x(e) {
   let {
     minValues: n,
     maxValues: a
-  } = e, s = i.useRef(null), u = i.useRef(null), [m, h] = i.useState(false), g = (0, T.CJ)();
+  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, T.CJ)();
   l()(null != g, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   let E = g.channelId;
   l()(null != E, "FileUploadActionComponent must be used inside a channel");
@@ -164,11 +164,11 @@ function x(e) {
   l()(null != M, "FileUploadActionComponent requires a valid channel");
   let k = i.useCallback(e => {
       var t;
-      e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && h(true)
+      e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && m(true)
     }, []),
     U = i.useCallback(e => {
       var t;
-      null != (t = u.current) && t.contains(e.relatedTarget) || h(false)
+      null != (t = u.current) && t.contains(e.relatedTarget) || m(false)
     }, []),
     G = i.useCallback((e, t) => {
       if (0 === e.length) return;
@@ -199,7 +199,7 @@ function x(e) {
     }, [v, a, M, x, O, E]),
     Z = i.useCallback(e => {
       var t, n;
-      e.preventDefault(), h(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
+      e.preventDefault(), m(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
     }, [G]),
     F = e => {
       var t;
@@ -220,11 +220,11 @@ function x(e) {
   }) : (0, r.jsxs)("div", {
     ref: u,
     className: o()(P.container, {
-      [P.dropping]: m,
+      [P.dropping]: h,
       [P.error]: null != j
     }),
-    children: [v.length >= a ? (0, r.jsx)(w, {}) : (0, r.jsx)(R, {
-      dropping: m,
+    children: [v.length >= a ? (0, r.jsx)(R, {}) : (0, r.jsx)(w, {
+      dropping: h,
       fileInputRef: s,
       minValues: n,
       maxValues: a,

@@ -50,13 +50,13 @@ let d = Object.freeze([]),
   f = {},
   p = {},
   _ = {},
-  m = {},
-  h = {};
+  h = {},
+  m = {};
 
 function g(e, t) {}
 
 function E() {
-  h = {}
+  m = {}
 }
 
 function b(e, t) {
@@ -87,7 +87,7 @@ function v(e) {
   let {
     items: c
   } = i;
-  null != c && (m[o.id] = u(l({}, i), {
+  null != c && (h[o.id] = u(l({}, i), {
     items: c
   })), null != (n = o.nonce) || o.id
 }
@@ -113,7 +113,7 @@ function T(e, t) {
   if (null == n) returnfalse;
   f[e] = n.map(e => e.id === t.id ? l({}, e, t) : e);
   let r = _[t.id];
-  null != r && null != m[r.id] && (m[r.id] = l({}, m[r.id], t))
+  null != r && null != h[r.id] && (h[r.id] = l({}, h[r.id], t))
 }
 
 function C(e) {
@@ -152,7 +152,7 @@ function P(e) {
   setImmediate(() => r.cancelItem(n))
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t,
     file: n
@@ -164,12 +164,12 @@ function R(e) {
   T(t, n)
 }
 
-function w(e) {
+function R(e) {
   let {
     file: t,
     messageId: n
   } = e;
-  m[n] = t
+  h[n] = t
 }
 class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -183,10 +183,10 @@ class D extends(r = Chunk442837.ZP.Store) {
     return _[e]
   }
   getUploaderFileForMessageId(e) {
-    return m[e]
+    return h[e]
   }
   getUploadAttachments(e) {
-    if (null != e) return h[e]
+    if (null != e) return m[e]
   }
 }
 s(D, "displayName", "UploadStore");
@@ -200,6 +200,6 @@ let x = new D(Chunk570140.Z, {
   UPLOAD_FAIL: A,
   UPLOAD_CANCEL_REQUEST: N,
   UPLOAD_ITEM_CANCEL_REQUEST: P,
-  UPLOAD_FILE_UPDATE: R,
-  UPLOAD_RESTORE_FAILED_UPLOAD: w
+  UPLOAD_FILE_UPDATE: w,
+  UPLOAD_RESTORE_FAILED_UPLOAD: R
 })

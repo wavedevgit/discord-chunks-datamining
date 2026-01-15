@@ -17,7 +17,7 @@
 
   function d(e, t, n, r) {
     var i = Object.create((t && t.prototype instanceof E ? t : E).prototype);
-    return i._invoke = A(e, n, new w(r || [])), i
+    return i._invoke = A(e, n, new R(r || [])), i
   }
 
   function f(e, t, n) {
@@ -35,8 +35,8 @@
   }(u = t.regeneratorRuntime = c ? e.exports : {}).wrap = d;
   var p = "suspendedStart",
     _ = "suspendedYield",
-    m = "executing",
-    h = "completed",
+    h = "executing",
+    m = "completed",
     g = {};
 
   function E() {}
@@ -96,8 +96,8 @@
   function A(e, t, n) {
     var r = p;
     return function(i, a) {
-      if (r === m) throw Error("Generator is already running");
-      if (r === h) {
+      if (r === h) throw Error("Generator is already running");
+      if (r === m) {
         if ("throw" === i) throw a;
         return x()
       }
@@ -112,19 +112,19 @@
         }
         if ("next" === n.method) n.sent = n._sent = n.arg;
         else if ("throw" === n.method) {
-          if (r === p) throw r = h, n.arg;
+          if (r === p) throw r = m, n.arg;
           n.dispatchException(n.arg)
         } else "return" === n.method && n.abrupt("return", n.arg);
-        r = m;
+        r = h;
         var l = f(e, t, n);
         if ("normal" === l.type) {
-          if (r = n.done ? h : _, l.arg === g) continue;
+          if (r = n.done ? m : _, l.arg === g) continue;
           return {
             value: l.arg,
             done: n.done
           }
         }
-        "throw" === l.type && (r = h, n.method = "throw", n.arg = l.arg)
+        "throw" === l.type && (r = m, n.method = "throw", n.arg = l.arg)
       }
     }
   }
@@ -151,12 +151,12 @@
     1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
   }
 
-  function R(e) {
+  function w(e) {
     var t = e.completion || {};
     t.type = "normal", delete t.arg, e.completion = t
   }
 
-  function w(e) {
+  function R(e) {
     this.tryEntries = [{
       tryLoc: "root"
     }], e.forEach(P, this), this.reset(true)
@@ -219,10 +219,10 @@
         }
         return n.done = true, n
       }
-  }, u.values = D, w.prototype = {
-    constructor: w,
+  }, u.values = D, R.prototype = {
+    constructor: R,
     reset: function(e) {
-      if (this.prev = 0, this.next = 0, this.sent = this._sent = n, this.done = false, this.delegate = null, this.method = "next", this.arg = n, this.tryEntries.forEach(R), !e)
+      if (this.prev = 0, this.next = 0, this.sent = this._sent = n, this.done = false, this.delegate = null, this.method = "next", this.arg = n, this.tryEntries.forEach(w), !e)
         for (var t in this) "t" === t.charAt(0) && i.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = n)
     },
     stop: function() {
@@ -275,7 +275,7 @@
     finish: function(e) {
       for (var t = this.tryEntries.length - 1; t >= 0; --t) {
         var n = this.tryEntries[t];
-        if (n.finallyLoc === e) return this.complete(n.completion, n.afterLoc), R(n), g
+        if (n.finallyLoc === e) return this.complete(n.completion, n.afterLoc), w(n), g
       }
     },
     catch: function(e) {
@@ -285,7 +285,7 @@
           var r = n.completion;
           if ("throw" === r.type) {
             var i = r.arg;
-            R(n)
+            w(n)
           }
           return i
         }

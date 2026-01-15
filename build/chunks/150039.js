@@ -9,8 +9,8 @@ require.d(exports, {
   Wh: () => A,
   Ys: () => N,
   Zx: () => g,
-  f$: () => R,
-  gc: () => h,
+  f$: () => w,
+  gc: () => m,
   gd: () => P,
   i3: () => b,
   mD: () => E,
@@ -32,7 +32,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js");
 
-function h(e) {
+function m(e) {
   return r.useMemo(() => {
     let t = p.ZP.getMutableAllGuildsAndMembers(),
       n = {};
@@ -149,7 +149,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  let n = m.default.getCurrentUser();
+  let n = h.default.getCurrentUser();
   if (a()(null != n, "user cannot be null"), null == t) {
     let t = n.avatarDecoration;
     (0, l.ZB)({
@@ -168,7 +168,7 @@ function T(e, t) {
 
 function C(e, t) {
   var n, r;
-  let i = m.default.getCurrentUser();
+  let i = h.default.getCurrentUser();
   if (a()(null != i, "user cannot be null"), null == t) {
     let t = null == (n = f.Z.getUserProfile(i.id)) ? true : n.profileEffect;
     (0, l.ZB)({
@@ -186,7 +186,7 @@ function C(e, t) {
 
 function A(e, t) {
   var n, r, i;
-  let s = m.default.getCurrentUser();
+  let s = h.default.getCurrentUser();
   if (a()(null != s, "user cannot be null"), null == t) {
     let t = null == (n = s.collectibles) ? true : n.nameplate;
     (0, l.ZB)({
@@ -216,6 +216,6 @@ function P(e, t) {
   return true === e ? null != t : null != e
 }
 
-function R(e, t) {
+function w(e, t) {
   return true === e ? null != t : null != e
 }

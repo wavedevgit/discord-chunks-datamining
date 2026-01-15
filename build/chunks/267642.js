@@ -6,7 +6,7 @@ require.d(exports, {
   FZ: () => S,
   Hl: () => Y,
   Je: () => C,
-  Jh: () => w,
+  Jh: () => R,
   KK: () => Z,
   Oe: () => v,
   Qi: () => M,
@@ -15,7 +15,7 @@ require.d(exports, {
   aq: () => L,
   e9: () => N,
   ee: () => B,
-  ge: () => R,
+  ge: () => w,
   ig: () => T,
   nL: () => U,
   nW: () => A,
@@ -65,12 +65,12 @@ let O = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     var t;
     return e === _.Eu4.NONE ? _.Eu4.TIER_1 : null == (t = j.find(t => t.tier === e)) ? true : t.nextTier
   },
-  I = (e, t) => null != t && t.features.has(_.GuildFeatures.MORE_STICKERS) && e === _.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : h.$8[e],
-  T = e => h.pH[e],
+  I = (e, t) => null != t && t.features.has(_.GuildFeatures.MORE_STICKERS) && e === _.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : m.$8[e],
+  T = e => m.pH[e],
   C = e => {
-    if (e === _.Eu4.NONE) return h._k[e];
+    if (e === _.Eu4.NONE) return m._k[e];
     let t = O[O.indexOf(e) - 1];
-    return h._k[e] - h._k[t]
+    return m._k[e] - m._k[t]
   };
 
 function A(e) {
@@ -106,10 +106,10 @@ function N(e) {
       throw Error("Not a valid tier type")
   }
 }
-let P = i().memoize(e => h.HO[_.Eu4.TIER_1].features.includes(e) ? _.Eu4.TIER_1 : h.HO[_.Eu4.TIER_2].features.includes(e) ? _.Eu4.TIER_2 : h.HO[_.Eu4.TIER_3].features.includes(e) ? _.Eu4.TIER_3 : null),
-  R = e => e === _.Eu4.NONE ? _.AnalyticsObjectTypes.NONE : e === _.Eu4.TIER_1 ? _.AnalyticsObjectTypes.TIER_1 : e === _.Eu4.TIER_2 ? _.AnalyticsObjectTypes.TIER_2 : e === _.Eu4.TIER_3 ? _.AnalyticsObjectTypes.TIER_3 : null;
+let P = i().memoize(e => m.HO[_.Eu4.TIER_1].features.includes(e) ? _.Eu4.TIER_1 : m.HO[_.Eu4.TIER_2].features.includes(e) ? _.Eu4.TIER_2 : m.HO[_.Eu4.TIER_3].features.includes(e) ? _.Eu4.TIER_3 : null),
+  w = e => e === _.Eu4.NONE ? _.AnalyticsObjectTypes.NONE : e === _.Eu4.TIER_1 ? _.AnalyticsObjectTypes.TIER_1 : e === _.Eu4.TIER_2 ? _.AnalyticsObjectTypes.TIER_2 : e === _.Eu4.TIER_3 ? _.AnalyticsObjectTypes.TIER_3 : null;
 
-function w(e) {
+function R(e) {
   var t;
   let n = null == (t = c.Z.getGuild(e)) ? true : t.premiumTier;
   return null != n ? n : _.Eu4.NONE
@@ -131,7 +131,7 @@ function L(e) {
   let i = x(d.Z.boostSlots),
     a = null == n ? true : n.isPausedOrPausePending,
     s = i.length > 0;
-  if (a && t === h.a$.NONE && !s) return E.intl.string(E.t.mOWsF1);
+  if (a && t === m.a$.NONE && !s) return E.intl.string(E.t.mOWsF1);
   if (null == r ? true : r.isPremiumGroupMember()) return E.intl.formatToPlainString(b.default["5xN/C1"], {
     premiumGroupProductName: (0, g.sO)()
   });
@@ -147,8 +147,8 @@ function L(e) {
   if (n.status === _.O0b.ACCOUNT_HOLD) return E.intl.string(E.t.JakNQ8);
   if (c > 0) return E.intl.string(E.t.x25mZR);
   if (null == n.renewalMutations) return null;
-  let m = p.uV(n.renewalMutations.additionalPlans);
-  return p.uV(n.additionalPlans) > m ? E.intl.string(E.t.x25mZR) : E.intl.string(E.t["W/bb8f"])
+  let h = p.uV(n.renewalMutations.additionalPlans);
+  return p.uV(n.additionalPlans) > h ? E.intl.string(E.t.x25mZR) : E.intl.string(E.t["W/bb8f"])
 }
 let j = [{
   tier: Chunk981631.Eu4.TIER_3,
@@ -180,14 +180,14 @@ function k(e, t, n) {
 
 function U(e) {
   var t, n;
-  let r = h.XB + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalSoundSlots) ? n : 0);
-  return Math.max(e.features.has(_.GuildFeatures.MORE_SOUNDBOARD) ? h.w1 : h.XB, r)
+  let r = m.XB + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalSoundSlots) ? n : 0);
+  return Math.max(e.features.has(_.GuildFeatures.MORE_SOUNDBOARD) ? m.w1 : m.XB, r)
 }
 
 function G(e) {
   var t, n;
-  let r = m.xD + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalEmojiSlots) ? n : 0);
-  return Math.max(e.features.has(_.GuildFeatures.MORE_EMOJI) ? m.IE : m.xD, r)
+  let r = h.xD + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalEmojiSlots) ? n : 0);
+  return Math.max(e.features.has(_.GuildFeatures.MORE_EMOJI) ? h.IE : h.xD, r)
 }
 
 function Z(e, t) {

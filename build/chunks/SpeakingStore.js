@@ -2,7 +2,7 @@
 /** chunk id: 606304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = new Map,
-  h = null,
+let h = new Map,
+  m = null,
   g = null,
   E = null,
   b = false,
@@ -32,30 +32,30 @@ let m = new Map,
 
 function O() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT,
-    t = m.get(e);
-  return null == t && (t = new Map, m.set(e, t)), t
+    t = h.get(e);
+  return null == t && (t = new Map, h.set(e, t)), t
 }
 
 function v(e, t) {
-  let n = m.get(e);
+  let n = h.get(e);
   if (null == n) returnfalse;
   let r = n.delete(t);
-  return 0 === n.size && m.delete(e), r
+  return 0 === n.size && h.delete(e), r
 }
 
 function S(e, t, n) {
   var r, i, a;
-  return ((null != (a = null == (i = m.get(e)) || null == (r = i.get(t)) ? true : r.flags) ? a : p.Dg.NONE) & n) === n
+  return ((null != (a = null == (i = h.get(e)) || null == (r = i.get(t)) ? true : r.flags) ? a : p.Dg.NONE) & n) === n
 }
 
 function I(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    r = m.get(e);
+    r = h.get(e);
   if (null == r) returnfalse;
   for (let [e, {
       flags: i
     }] of r)
-    if ((!n || e !== h) && (i & t) === t) returntrue;
+    if ((!n || e !== m) && (i & t) === t) returntrue;
   returnfalse
 }
 
@@ -66,7 +66,7 @@ function T(e, t, n) {
     s = o.get(t),
     l = null != (r = null == s ? true : s.flags) ? r : 0;
   if (0 === l && 0 === n) returnfalse;
-  if (0 === n) o.delete(t), 0 === o.size && m.delete(e);
+  if (0 === n) o.delete(t), 0 === o.size && h.delete(e);
   else {
     let e = null != (i = null == s ? true : s.since) ? i : null,
       r = (l & p.Dg.VOICE) === p.Dg.VOICE,
@@ -85,7 +85,7 @@ function C(e) {
     user: t,
     sessionId: n
   } = e;
-  h = t.id, g = n, E = null
+  m = t.id, g = n, E = null
 }
 
 function A(e) {
@@ -116,7 +116,7 @@ function N(e) {
       channelId: r,
       sessionId: i
     } = t, a = false, o = E;
-    return n === h && i === g && (E = null != r ? r : null), o !== E && (a = m.delete(p.Yn.DEFAULT) || a), null == r ? a = n === h && i === g ? m.delete(p.Yn.DEFAULT) || a : v(p.Yn.DEFAULT, n) || a : n === h && i !== g ? a = m.delete(p.Yn.DEFAULT) || a : n !== h && r !== u.Z.getChannelId() && (a = v(p.Yn.DEFAULT, n) || a), a || e
+    return n === m && i === g && (E = null != r ? r : null), o !== E && (a = h.delete(p.Yn.DEFAULT) || a), null == r ? a = n === m && i === g ? h.delete(p.Yn.DEFAULT) || a : v(p.Yn.DEFAULT, n) || a : n === m && i !== g ? a = h.delete(p.Yn.DEFAULT) || a : n !== m && r !== u.Z.getChannelId() && (a = v(p.Yn.DEFAULT, n) || a), a || e
   }, false)
 }
 
@@ -127,20 +127,20 @@ function P(e) {
   } = e;
   b = n, y = t
 }
-class R extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(l.Z, c.Z, u.Z, d.Z)
   }
   getSpeakingDuration(e, t) {
     var n, r;
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : p.Yn.DEFAULT,
-      a = null == (r = m.get(i)) || null == (n = r.get(e)) ? true : n.since;
+      a = null == (r = h.get(i)) || null == (n = r.get(e)) ? true : n.since;
     return null != a ? t - a : 0
   }
   getSpeakers() {
     var e, t;
     let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
-    return Array.from(null != (t = null == (e = m.get(n)) ? true : e.keys()) ? t : []).filter(e => S(n, e, p.Dg.VOICE))
+    return Array.from(null != (t = null == (e = h.get(n)) ? true : e.keys()) ? t : []).filter(e => S(n, e, p.Dg.VOICE))
   }
   isSpeaking(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
@@ -160,7 +160,7 @@ class R extends(r = Chunk442837.ZP.Store) {
   }
   isCurrentUserSpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
-    return null != h && this.isSpeaking(h, e)
+    return null != m && this.isSpeaking(m, e)
   }
   isCurrentUserPTTActive() {
     return y
@@ -174,22 +174,22 @@ class R extends(r = Chunk442837.ZP.Store) {
   }
   isCurrentUserPrioritySpeaker() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
-    return null != h && this.isPrioritySpeaker(h, e)
+    return null != m && this.isPrioritySpeaker(m, e)
   }
   isCurrentUserPrioritySpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
-    return null != h && this.isPrioritySpeaker(h, e) && this.isSpeaking(h, e)
+    return null != m && this.isPrioritySpeaker(m, e) && this.isSpeaking(m, e)
   }
   getVoiceVolume(e) {
     var t, n, r;
     let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
     return (0, o.h)({
       location: "SpeakingStore"
-    }).enabled && null != (r = null == (n = m.get(i)) || null == (t = n.get(e)) ? true : t.voiceDb) ? r : false / 0
+    }).enabled && null != (r = null == (n = h.get(i)) || null == (t = n.get(e)) ? true : t.voiceDb) ? r : false / 0
   }
 }
-_(R, "displayName", "SpeakingStore");
-let w = new R(Chunk570140.Z, {
+_(w, "displayName", "SpeakingStore");
+let R = new w(Chunk570140.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
   SPEAKING: A,

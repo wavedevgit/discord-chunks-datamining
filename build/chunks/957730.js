@@ -187,7 +187,7 @@ let V = Chunk428595.Z.RULES,
         let a = Q.exec(e);
         if (null != a && i[0].length <= a[0].length) return null;
         if ("" === n) {
-          let t = m.v.exec(e);
+          let t = h.v.exec(e);
           if (null != t && i[0].length <= t[0].length) return null
         }
         return i
@@ -277,12 +277,12 @@ let V = Chunk428595.Z.RULES,
         if (null == s) return {
           content: e[0]
         };
-        let l = w.ZP.getUserTag(s, {
+        let l = R.ZP.getUserTag(s, {
           identifiable: r && C.Z.enabled ? "never" : "always"
         });
         if (r) {
           var c;
-          let e = null != (c = R.ZP.getNickname(null == a ? true : a.id, o, s)) ? c : w.ZP.getGlobalName(s);
+          let e = null != (c = w.ZP.getNickname(null == a ? true : a.id, o, s)) ? c : R.ZP.getGlobalName(s);
           return {
             content: null != e ? "@".concat(e) : "@".concat(l)
           }
@@ -513,14 +513,14 @@ function ea(e) {
       id: e.channel.id,
       text: e.channel.name
     }))).value() : [],
-    d = h.Z.computeAllActiveJoinedThreads(n).map(e => ({
+    d = m.Z.computeAllActiveJoinedThreads(n).map(e => ({
       id: e.id,
       text: e.name
     })),
     f = c.ZP.getDisambiguatedEmojiContext(n),
     p = f.getEscapedCustomEmoticonNames(),
     _ = f.getCustomEmoji(),
-    m = f.getCustomEmoticonRegex();
+    h = f.getCustomEmoticonRegex();
   return {
     inline: true,
     mentionableRoles: s,
@@ -528,7 +528,7 @@ function ea(e) {
     users: o,
     channels: l.concat(u).concat(d),
     emojiContext: f,
-    customEmoticonsRegex: m,
+    customEmoticonsRegex: h,
     customEmoji: _,
     textExclusions: p,
     disableErrorGuards: true,

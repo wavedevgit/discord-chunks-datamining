@@ -53,7 +53,7 @@ let C = Chunk981631.kod,
   N = new Set,
   P = 0;
 
-function R(e) {
+function w(e) {
   var t;
   let n = A[null != e ? e : C];
   return {
@@ -68,13 +68,13 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   var t;
-  return A[null != e ? e : C] = null != (t = A[null != e ? e : C]) ? t : R(e)
+  return A[null != e ? e : C] = null != (t = A[null != e ? e : C]) ? t : w(e)
 }
 
 function D(e) {
-  let t = w(e);
+  let t = R(e);
   t.sentinel++, P++
 }
 
@@ -85,7 +85,7 @@ function x(e, t, n) {
 function L(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? l.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (x(e, t, (0, a.r1)(e.guild_id)) || !h.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === S.i.ALL_MESSAGES)
+  return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? l.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (x(e, t, (0, a.r1)(e.guild_id)) || !m.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === S.i.ALL_MESSAGES)
 }
 
 function j(e) {
@@ -93,7 +93,7 @@ function j(e) {
 }
 
 function M(e, t, n) {
-  return !((0, u.bw)(e.type) && 0 === t || !h.Z.canBasicChannel((0, u.Gz)(e.type), e) || x(e, t, n) || j(e) && e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === S.i.ALL_MESSAGES)
+  return !((0, u.bw)(e.type) && 0 === t || !m.Z.canBasicChannel((0, u.Gz)(e.type), e) || x(e, t, n) || j(e) && e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL)) && (t > 0 || b.ZP.resolveUnreadSetting(e) === S.i.ALL_MESSAGES)
 }
 
 function k(e) {
@@ -113,7 +113,7 @@ function U(e, t) {
 }
 
 function G(e, t) {
-  let n = R(e);
+  let n = w(e);
   return n.mentionCounts = T({}, t.mentionCounts), n.unreadByType = T({}, t.unreadByType), n
 }
 
@@ -135,7 +135,7 @@ function B(e, t, n) {
 
 function V(e, t) {
   let n = k(e),
-    r = w(n),
+    r = R(n),
     i = G(n, r),
     a = false;
   if (t.forEach(e => {
@@ -157,14 +157,14 @@ function V(e, t) {
 
 function H(e, t) {
   if (null == e) return;
-  let n = w(e),
+  let n = R(e),
     r = G(e, n);
   return r.unreadByType[S.W.GUILD_EVENT] = U(e, t), B(e, r, n)
 }
 
 function Y(e, t) {
   let n = k(e),
-    r = R(n);
+    r = w(n);
   if (null == n) {
     let e = p.Z.getMutablePrivateChannels();
     for (let t in e) {
@@ -212,7 +212,7 @@ function Y(e, t) {
       }!r.unreadByType[S.W.GUILD_EVENT] && U(n, S.W.GUILD_EVENT) && (r.unreadByType[S.W.GUILD_EVENT] = true)
   }
   Z(r);
-  let i = w(n);
+  let i = R(n);
   return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (A[null != n ? n : C] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), P++, D(null != n ? n : C), F(r, i), true)
 }
 
@@ -301,7 +301,7 @@ function et(e) {
   } = e, n = p.Z.getChannel(t);
   if (null == n) returnfalse;
   if (null != n.guild_id) {
-    let e = w(n.guild_id);
+    let e = R(n.guild_id);
     if (((n.isThread() ? !l.Z.hasJoined(n.id) || l.Z.isMuted(n.id) : b.ZP.isGuildOrCategoryOrChannelMuted(n.guild_id, n.id)) || e.unreadByType[S.W.CHANNEL]) && 0 === g.ZP.getMentionCount(t)) returnfalse
   }
   return V(n.getGuildId(), [n.id])
@@ -404,14 +404,14 @@ function e_(e) {
   return Y(t)
 }
 
-function em(e) {
+function eh(e) {
   let {
     guildId: t
   } = e;
   return Y(t)
 }
 
-function eh(e) {
+function em(e) {
   let {
     userGuildSettings: t
   } = e, n = new Set(t.map(e => {
@@ -443,7 +443,7 @@ function eb(e) {
 }
 class ey extends Chunk750041.Z {
   initialize() {
-    this.waitFor(p.Z, E.Z, g.ZP, h.Z, f.default, y.default, b.ZP, s.Z, l.Z, o.ZP)
+    this.waitFor(p.Z, E.Z, g.ZP, m.Z, f.default, y.default, b.ZP, s.Z, l.Z, o.ZP)
   }
   loadCache() {
     let e = this.readSnapshot(ey.LATEST_SNAPSHOT_VERSION);
@@ -474,17 +474,17 @@ class ey extends Chunk750041.Z {
     return N.has(e)
   }
   getMentionCount(e) {
-    let t = w(e);
+    let t = R(e);
     return t.highImportanceMentionCount + t.lowImportanceMentionCount
   }
   getIsMentionLowImportance(e) {
-    return 0 === w(e).highImportanceMentionCount
+    return 0 === R(e).highImportanceMentionCount
   }
   getGuildHasUnreadIgnoreMuted(e) {
     let t = p.Z.getMutableGuildChannelsForGuild(e);
     for (let e in t) {
       let n = t[e];
-      if (null != n && (!n.isGuildVocal() || 0 !== g.ZP.getMentionCount(e)) && h.Z.can(n.accessPermissions, n) && g.ZP.hasUnreadOrMentions(e)) returntrue
+      if (null != n && (!n.isGuildVocal() || 0 !== g.ZP.getMentionCount(e)) && m.Z.can(n.accessPermissions, n) && g.ZP.hasUnreadOrMentions(e)) returntrue
     }
     let n = s.Z.getActiveJoinedThreadsForGuild(e);
     for (let e in n)
@@ -519,7 +519,7 @@ class ey extends Chunk750041.Z {
     return null != (n = null == (t = A[C]) ? true : t.mentionCounts[e]) ? n : 0
   }
   getGuildChangeSentinel(e) {
-    return w(e).sentinel
+    return R(e).sentinel
   }
   constructor() {
     super({
@@ -536,9 +536,9 @@ class ey extends Chunk750041.Z {
       CHANNEL_DELETE: X,
       WINDOW_FOCUS: J,
       GUILD_ACK: e_,
-      GUILD_ROLE_CREATE: em,
-      GUILD_ROLE_DELETE: em,
-      GUILD_ROLE_UPDATE: em,
+      GUILD_ROLE_CREATE: eh,
+      GUILD_ROLE_DELETE: eh,
+      GUILD_ROLE_UPDATE: eh,
       CHANNEL_CREATE: er,
       CHANNEL_UPDATES: ei,
       THREAD_CREATE: eo,
@@ -549,7 +549,7 @@ class ey extends Chunk750041.Z {
       THREAD_MEMBERS_UPDATE: ed,
       PASSIVE_UPDATE_V2: ep,
       GUILD_MEMBER_UPDATE: $,
-      USER_GUILD_SETTINGS_FULL_UPDATE: eh,
+      USER_GUILD_SETTINGS_FULL_UPDATE: em,
       USER_GUILD_SETTINGS_CHANNEL_UPDATE: eE,
       USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: eE,
       USER_GUILD_SETTINGS_GUILD_UPDATE: eE,

@@ -47,12 +47,12 @@ function P() {
   return f.Z.supports(y.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
-function R() {
+function w() {
   return f.Z.getUseSystemScreensharePicker()
 }
 
-function w() {
-  let e = R() && (C > 0 || I && 0 === T);
+function R() {
+  let e = w() && (C > 0 || I && 0 === T);
   if (e !== A) {
     var t, n;
     A = e, null == (n = f.Z.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, A)
@@ -60,20 +60,20 @@ function w() {
 }
 
 function D() {
-  return (0, a.useEffect)(() => (T++, w(), () => {
-    0 == --T && w()
+  return (0, a.useEffect)(() => (T++, R(), () => {
+    0 == --T && R()
   }), [])
 }
 
 function x() {
-  return (0, a.useEffect)(() => (C++, w(), () => {
-    --C, w()
+  return (0, a.useEffect)(() => (C++, R(), () => {
+    --C, R()
   }), [])
 }
 
 function L() {
   let e = u.Z.getChannel(_.Z.getVoiceChannelId());
-  return I = null != e && (0, h.Z)(f.Z) && (0, m.JL)(e, d.Z, p.Z, false), w(), false
+  return I = null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, p.Z, false), R(), false
 }
 
 function j() {
@@ -104,7 +104,7 @@ class U extends(i = Chunk442837.ZP.Store) {
     return P()
   }
   enabled() {
-    return R()
+    return w()
   }
   releasePickerStream() {
     (0, b.t)()
@@ -135,7 +135,7 @@ function G(e) {
       lastPickerAction: 1
     }, r = n, 0 === T && !t) {
     let e = u.Z.getChannel(_.Z.getVoiceChannelId());
-    null != e && (0, h.Z)(f.Z) && (0, m.JL)(e, d.Z, p.Z, false) && (0, l.WH)(e.getGuildId(), e.id, k())
+    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, p.Z, false) && (0, l.WH)(e.getGuildId(), e.id, k())
   }
 }
 

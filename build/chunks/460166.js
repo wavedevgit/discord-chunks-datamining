@@ -52,7 +52,7 @@ function f(e, t, n) {
       raw: a
     } = p(t, n);
     e._raw = (e._raw || "") + a;
-    let o = h(i);
+    let o = m(i);
     return (0, r.wB)(e, T(g(o, true))), true
   } catch (e) {
     returnfalse
@@ -64,7 +64,7 @@ function p(e, t) {
   if (!n) throw console.warn("Warning: DOMParser is not available. It is needed to be able to parse XMP tags."), Error();
   let i = "string" == typeof e ? e : (0, r.oH)(e, 0, e.byteLength);
   return {
-    doc: m(n, _(i)),
+    doc: h(n, _(i)),
     raw: i
   }
 }
@@ -73,21 +73,21 @@ function _(e) {
   return e.replace(/^.+(<\?xpacket begin)/, "$1").replace(/(<\?xpacket end=".*"\?>).+$/, "$1")
 }
 
-function m(e, t, n = false) {
+function h(e, t, n = false) {
   try {
     let n = e.parseFromString(t, "application/xml"),
       r = n.getElementsByTagName("parsererror");
     if (r.length > 0) throw new l(r[0].textContent);
     return n
   } catch (r) {
-    if ("ParseError" === r.name && (0, o.U)(r) && !n) return m(e, (0, o.v)(t), true);
+    if ("ParseError" === r.name && (0, o.U)(r) && !n) return h(e, (0, o.v)(t), true);
     throw r
   }
 }
 
-function h(e) {
+function m(e) {
   for (let t = 0; t < e.childNodes.length; t++) {
-    if ("x:xmpmeta" === e.childNodes[t].tagName) return h(e.childNodes[t]);
+    if ("x:xmpmeta" === e.childNodes[t].tagName) return m(e.childNodes[t]);
     if ("rdf:RDF" === e.childNodes[t].tagName) return e.childNodes[t]
   }
   throw Error()
@@ -157,7 +157,7 @@ function C(e) {
     A(n) && (t[P(n)] = {
       value: e[n],
       attributes: {},
-      description: R(e[n], n)
+      description: w(e[n], n)
     })
   } catch (e) {}
   return t
@@ -175,9 +175,9 @@ function P(e) {
   return /^MicrosoftPhoto(_\d+_)?:Rating$/i.test(e) ? "RatingPercent" : e.split(":")[1]
 }
 
-function R(e, t) {
+function w(e, t) {
   if (Array.isArray(e)) {
-    let n = w(e);
+    let n = R(e);
     return t && "function" == typeof i.Z[t] ? i.Z[t](e, n) : n
   }
   if ("object" == typeof e) return D(e);
@@ -189,13 +189,13 @@ function R(e, t) {
   }
 }
 
-function w(e) {
-  return e.map(e => true !== e.value ? R(e.value) : R(e)).join(", ")
+function R(e) {
+  return e.map(e => true !== e.value ? w(e.value) : w(e)).join(", ")
 }
 
 function D(e) {
   let t = [];
-  for (let n in e) t.push(`${x(n)}: ${R(e[n].value)}`);
+  for (let n in e) t.push(`${x(n)}: ${w(e[n].value)}`);
   return t.join("; ")
 }
 
@@ -242,7 +242,7 @@ function Z(e, t) {
   return {
     value: i,
     attributes: n,
-    description: R(i, t)
+    description: w(i, t)
   }
 }
 
@@ -271,7 +271,7 @@ function Y(e, t) {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, C(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, F(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, L(e.value)), n.description = R(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, C(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, F(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, L(e.value)), n.description = w(n.value, t), n
 }
 
 function W(e) {
@@ -283,7 +283,7 @@ function K(e, t) {
   return {
     value: n,
     attributes: {},
-    description: R(n, t)
+    description: w(n, t)
   }
 }
 
@@ -304,7 +304,7 @@ function Q(e, t) {
   }), {
     value: i,
     attributes: r,
-    description: R(i, t)
+    description: w(i, t)
   }
 }
 
@@ -317,7 +317,7 @@ function J(e, t) {
   return {
     value: n,
     attributes: F(e),
-    description: R(n, t)
+    description: w(n, t)
   }
 }
 

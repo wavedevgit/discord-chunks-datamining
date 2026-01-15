@@ -59,9 +59,9 @@ function f(e) {
     {
       title: p,
       provider: _,
-      image_url: m
+      image_url: h
     } = u,
-    h = f.name,
+    m = f.name,
     g = {
       onClick: () => (0, i.o)(o.Hw.TRACK, u.external_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
@@ -71,15 +71,15 @@ function f(e) {
     E = {
       onClick: () => (0, i.o)(o.Hw.ARTIST, f.external_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
-        itemName: h
+        itemName: m
       })
     };
   return _ === r.p.SPOTIFY && (t = {
     type: a.kG.SPOTIFY
   }), d(c({}, l), {
     title: p,
-    subtitle: h,
-    thumbnailUrl: m,
+    subtitle: m,
+    thumbnailUrl: h,
     titleClickable: g,
     subtitleClickable: E,
     thumbnailClickable: g,

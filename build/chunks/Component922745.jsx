@@ -85,7 +85,7 @@ function v(e) {
       children: [(0, r.jsx)(l.whL, {
         size: "custom",
         color: "currentColor",
-        "aria-label": h.intl.string(h.t.mSfLs0),
+        "aria-label": m.intl.string(m.t.mSfLs0),
         className: g.backButton,
         width: 20,
         height: 20
@@ -95,9 +95,9 @@ function v(e) {
         color: "always-white",
         children: t
       })]
-    }), _ && null != i ? (0, r.jsx)(m.Z, {
+    }), _ && null != i ? (0, r.jsx)(h.Z, {
       onClick: i,
-      label: h.intl.string(h.t.BEuDEn)
+      label: m.intl.string(m.t.BEuDEn)
     }) : null, d]
   })
 }
@@ -112,8 +112,8 @@ function S(e) {
     onActive: u,
     onForceIdle: f,
     renderBottomLeftControls: p,
-    renderBottomRightControls: m,
-    screenMessage: h,
+    renderBottomRightControls: h,
+    screenMessage: m,
     hideControls: E = false,
     className: O,
     innerClassName: S,
@@ -132,9 +132,9 @@ function S(e) {
         className: S,
         children: t
       }, l)
-    }), null != h ? (0, r.jsx)(_.Z, b({
+    }), null != m ? (0, r.jsx)(_.Z, b({
       size: "small"
-    }, h)) : null, !E && (0, r.jsxs)("div", {
+    }, m)) : null, !E && (0, r.jsxs)("div", {
       className: a()(g.videoControls, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: g.topControls,
@@ -158,7 +158,7 @@ function S(e) {
           justify: c.Z.Justify.END,
           basis: "50%",
           align: c.Z.Align.CENTER,
-          children: null == m ? true : m()
+          children: null == h ? true : h()
         })]
       })]
     })]

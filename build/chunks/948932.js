@@ -64,7 +64,7 @@ function f(e, t, n, c) {
       calendar: e.calendar.identifier,
       timeZone: n
     }),
-    m = (0, o.a)({
+    h = (0, o.a)({
       month: "long",
       year: "numeric",
       day: "numeric",
@@ -79,8 +79,8 @@ function f(e, t, n, c) {
       if (e.calendar.getFormattableMonth && (r = e.calendar.getFormattableMonth(e)), t.calendar.getFormattableMonth && (a = t.calendar.getFormattableMonth(t)), (0, i.KC)(t, (0, i.Vf)(e))) return _.format(r.toDate(n));
       if ((0, i.KC)(t, (0, i.Vf)(t))) return c ? p(_, d, r, a, n) : _.formatRange(r.toDate(n), a.toDate(n))
     }
-    return c ? p(m, d, e, t, n) : m.formatRange(e.toDate(n), t.toDate(n))
-  }, [e, t, _, m, d, n, c])
+    return c ? p(h, d, e, t, n) : h.formatRange(e.toDate(n), t.toDate(n))
+  }, [e, t, _, h, d, n, c])
 }
 
 function p(e, t, n, r, i) {

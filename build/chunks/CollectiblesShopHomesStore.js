@@ -23,23 +23,23 @@ let u = [],
   f = new Map,
   p = new Map,
   _ = new Map,
-  m = new Map,
   h = new Map,
+  m = new Map,
   g = new Map,
   E = e => {
-    m.set(e.tab, true), _.set(e.tab, true), p.set(e.tab, e.options), p.set(e.tab, e.options), f.set(e.tab, true), h.set(e.tab, false)
+    h.set(e.tab, true), _.set(e.tab, true), p.set(e.tab, e.options), p.set(e.tab, e.options), f.set(e.tab, true), m.set(e.tab, false)
   },
   b = e => {
-    g.set(e.tab, e.shopHome.shopBlocks), d.set(e.tab, Date.now()), m.set(e.tab, false), _.set(e.tab, true), f.set(e.tab, true), h.set(e.tab, false)
+    g.set(e.tab, e.shopHome.shopBlocks), d.set(e.tab, Date.now()), h.set(e.tab, false), _.set(e.tab, true), f.set(e.tab, true), m.set(e.tab, false)
   },
   y = e => {
-    g.set(e.tab, u), m.set(e.tab, false), _.set(e.tab, e.error), f.set(e.tab, Date.now()), h.set(e.tab, true)
+    g.set(e.tab, u), h.set(e.tab, false), _.set(e.tab, e.error), f.set(e.tab, Date.now()), m.set(e.tab, true)
   },
   O = e => {
-    null != e.appliedUserDiscounts && e.appliedUserDiscounts.some(e => e.discount.id === l.$X || e.discount.id === l.nC) && h.set(s.AW.HOME, true)
+    null != e.appliedUserDiscounts && e.appliedUserDiscounts.some(e => e.discount.id === l.$X || e.discount.id === l.nC) && m.set(s.AW.HOME, true)
   },
   v = () => {
-    g.clear(), p.clear(), _.clear(), m.clear(), d.clear(), f.clear(), h.clear(), r = true
+    g.clear(), p.clear(), _.clear(), h.clear(), d.clear(), f.clear(), m.clear(), r = true
   },
   S = e => {
     r = e.shopHomeConfigOverride
@@ -58,14 +58,14 @@ class I extends(i = Chunk442837.ZP.Store) {
     return _.get(e)
   }
   getIsFetchingShopHome(e) {
-    return m.get(e)
+    return h.get(e)
   }
   getShopBlocks(e) {
     var t;
     return null != (t = g.get(e)) ? t : u
   }
   getHasKnownStaleData(e) {
-    return h.get(e)
+    return m.get(e)
   }
   getShopHomeConfigOverride() {
     return r

@@ -19,12 +19,12 @@ module.exports = function(e, t, n) {
   if (!r) {
     if (s(n)) throw new i("This environment does not support accessor property descriptors.");
     var _ = !(t in e) && n["[[Writable]]"] && n["[[Enumerable]]"] && n["[[Configurable]]"] && "[[Value]]" in n,
-      m = t in e && (!("[[Configurable]]" in n) || n["[[Configurable]]"]) && (!("[[Enumerable]]" in n) || n["[[Enumerable]]"]) && (!("[[Writable]]" in n) || n["[[Writable]]"]) && "[[Value]]" in n;
-    if (_ || m) return e[t] = n["[[Value]]"], d(e[t], n["[[Value]]"]);
+      h = t in e && (!("[[Configurable]]" in n) || n["[[Configurable]]"]) && (!("[[Enumerable]]" in n) || n["[[Enumerable]]"]) && (!("[[Writable]]" in n) || n["[[Writable]]"]) && "[[Value]]" in n;
+    if (_ || h) return e[t] = n["[[Value]]"], d(e[t], n["[[Value]]"]);
     throw new i("This environment does not support defining non-writable, non-enumerable, or non-configurable properties")
   }
-  var h = r(e, t),
-    g = h && u(h),
+  var m = r(e, t),
+    g = m && u(m),
     E = l(e);
   return f(e, t, E, n, g)
 }

@@ -21,9 +21,9 @@ function u(e) {
     variant: d = "default",
     layout: f,
     initialize: p
-  } = t, _ = null == n ? true : n(), m = null == u ? true : u(), h = i.useId(), g = null != _ && "" !== _, E = null != m && "" !== m;
+  } = t, _ = null == n ? true : n(), h = null == u ? true : u(), m = i.useId(), g = null != _ && "" !== _, E = null != h && "" !== h;
   return (0, l.D)(p), (0, r.jsxs)("fieldset", {
-    "aria-describedby": E ? h : true,
+    "aria-describedby": E ? m : true,
     children: [g || E ? (0, r.jsxs)("div", {
       className: c.header,
       children: [g ? (0, r.jsx)(a.Text, {
@@ -35,9 +35,9 @@ function u(e) {
       }) : null, E ? (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        id: h,
+        id: m,
         className: c.subtitle,
-        children: m
+        children: h
       }) : null]
     }) : null, (0, r.jsx)(a.Kqy, {
       direction: "vertical",

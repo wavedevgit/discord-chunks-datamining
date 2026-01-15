@@ -22,8 +22,8 @@ function p(e) {
     displayProfile: n,
     guildId: p,
     canUsePremiumCustomization: _,
-    pendingBanner: m,
-    pendingAccentColor: h,
+    pendingBanner: h,
+    pendingAccentColor: m,
     isTryItOut: g,
     disabledInputs: E,
     onUpsellClick: b
@@ -45,8 +45,8 @@ function p(e) {
     displayProfile: n,
     guildId: p,
     themeType: u.l.POPOUT,
-    pendingBanner: m,
-    pendingAccentColor: h,
+    pendingBanner: h,
+    pendingAccentColor: m,
     canUsePremiumProfileCustomization: _,
     children: !E && (0, r.jsxs)(i.P3F, {
       onClick: I,

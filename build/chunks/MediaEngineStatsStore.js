@@ -24,12 +24,12 @@ let u = 30,
   p = {},
   _ = {};
 
-function m(e) {
+function h(e) {
   return "packetsSent" in e
 }
 
-function h(e, t, n, r, i) {
-  var a, o, s, l, c, u, d, f, p, _, h, g, E, b, y, O, v, S;
+function m(e, t, n, r, i) {
+  var a, o, s, l, c, u, d, f, p, _, m, g, E, b, y, O, v, S;
   let I = r.find(e => "video" === e.type);
   if (null == n && (n = {
       packetsSentOrReceived: 0,
@@ -44,20 +44,20 @@ function h(e, t, n, r, i) {
       entropyAggregated: 0,
       minVersion: e
     }), null == I) return n;
-  let T = m(I) ? null != (o = I.packetsSent) ? o : 0 : null != (s = I.packetsReceived) ? s : 0,
-    C = m(I) ? null != (l = I.packetsLost) ? l : 0 : null != (c = I.packetsLost) ? c : 0,
-    A = m(I) ? null != (u = I.frameRateEncode) ? u : 0 : null != (d = I.frameRateDecode) ? d : 0,
+  let T = h(I) ? null != (o = I.packetsSent) ? o : 0 : null != (s = I.packetsReceived) ? s : 0,
+    C = h(I) ? null != (l = I.packetsLost) ? l : 0 : null != (c = I.packetsLost) ? c : 0,
+    A = h(I) ? null != (u = I.frameRateEncode) ? u : 0 : null != (d = I.frameRateDecode) ? d : 0,
     N = null != (f = null == (a = I.resolution) ? true : a.height) ? f : 0,
-    P = m(I) && null != (p = I.videoEntropy) ? p : 0;
+    P = h(I) && null != (p = I.videoEntropy) ? p : 0;
   n.numDatapoints += 1, n.frameRateAggregated += A, n.resolutionAggregated += N, n.entropyAggregated += P;
-  let R = null == i ? true : i.find(e => "video" === e.type);
-  if (null != R && t >= n.minVersion) {
+  let w = null == i ? true : i.find(e => "video" === e.type);
+  if (null != w && t >= n.minVersion) {
     n.numDatapoints -= 1;
-    let e = m(R) ? null != (h = R.packetsSent) ? h : 0 : null != (g = R.packetsReceived) ? g : 0,
-      t = m(R) ? null != (E = R.packetsLost) ? E : 0 : null != (b = R.packetsLost) ? b : 0,
-      r = m(R) ? null != (y = R.frameRateEncode) ? y : 0 : null != (O = R.frameRateDecode) ? O : 0,
-      i = m(R) && null != (v = R.videoEntropy) ? v : 0,
-      a = null != (S = null == (_ = R.resolution) ? true : _.height) ? S : 0;
+    let e = h(w) ? null != (m = w.packetsSent) ? m : 0 : null != (g = w.packetsReceived) ? g : 0,
+      t = h(w) ? null != (E = w.packetsLost) ? E : 0 : null != (b = w.packetsLost) ? b : 0,
+      r = h(w) ? null != (y = w.frameRateEncode) ? y : 0 : null != (O = w.frameRateDecode) ? O : 0,
+      i = h(w) && null != (v = w.videoEntropy) ? v : 0,
+      a = null != (S = null == (_ = w.resolution) ? true : _.height) ? S : 0;
     n.frameRateAggregated -= r, n.resolutionAggregated -= a, n.entropyAggregated -= i, n.packetsSentOrReceived = T - e, n.packetsLost = C - t
   } else n.packetsSentOrReceived = T, n.packetsLost = C;
   return n.frameRate = n.frameRateAggregated / n.numDatapoints, n.resolution = n.resolutionAggregated / n.numDatapoints, n.entropy = n.entropyAggregated / n.numDatapoints, n.packetLossRate = n.packetsLost / (n.packetsSentOrReceived + n.packetsLost), n
@@ -67,7 +67,7 @@ function g(e, t, n, r) {
   var i, a;
   null == e[t] && (e[t] = {});
   let o = s.default.getId();
-  for (let s of (e[t][o] = h(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][o], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][s] = h(n.version, null != (a = null == r ? true : r.version) ? a : 0, e[t][s], n.stats.rtp.inbound[s], null == r ? true : r.stats.rtp.inbound[s])
+  for (let s of (e[t][o] = m(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][o], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][s] = m(n.version, null != (a = null == r ? true : r.version) ? a : 0, e[t][s], n.stats.rtp.inbound[s], null == r ? true : r.stats.rtp.inbound[s])
 }
 
 function E(e) {

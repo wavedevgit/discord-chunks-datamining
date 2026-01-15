@@ -16,12 +16,12 @@ var Chunk54381 = require("./54381.js"),
 function d(e) {
   let {
     channel: t
-  } = e, n = i.useRef(null), d = i.useRef(0), [f, p] = i.useState(false), [_, m] = i.useState(false), h = _ || f, g = () => {
+  } = e, n = i.useRef(null), d = i.useRef(0), [f, p] = i.useState(false), [_, h] = i.useState(false), m = _ || f, g = () => {
     var e;
     null == (e = n.current) || e.activateUploadDialogue()
   }, E = i.useCallback(async (e, n, r) => {
     var i;
-    m(true), await (0, o.i)({
+    h(true), await (0, o.i)({
       userImage: {
         data: e,
         file: n,
@@ -32,21 +32,21 @@ function d(e) {
         section: l.jXE.EXPRESSION_PICKER,
         page: (null == t ? true : t.guild_id) != null ? l.ZY5.GUILD_CHANNEL : l.ZY5.DM_CHANNEL
       }
-    }), d.current += 1, m(false)
+    }), d.current += 1, h(false)
   }, [t]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Button, {
       text: c.intl.string(c.t.iMJO37),
       variant: "secondary",
       onClick: g,
-      disabled: h
+      disabled: m
     }), (0, r.jsx)("div", {
       className: u.fileInput,
       children: (0, r.jsx)(s.ZP, {
         ref: n,
         onChange: E,
         setLoading: p,
-        disabled: h
+        disabled: m
       }, d.current)
     })]
   })

@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk574775 = require("./574775.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function O(e) {
   var t, n, i, o, s;
   let {
     compact: p = false
-  } = e, h = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "486171", v = "df909f9ad41cba8a6b94ba9bae1cbf2058d6d211".substring(0, 7), S = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), I = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), C = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, A = y(), N = [E, O, "(".concat(v, ")")];
+  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "486195", v = "a64a3f2becccd89dd068d0ed0ea98b3fa3b6bf71".substring(0, 7), S = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), I = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), C = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, A = y(), N = [E, O, "(".concat(v, ")")];
   return (null != S && (N.push("Host ".concat(S)), null != T && N.push(T.toLowerCase()), null != I && N.push("(".concat(I, ")"))), N.push("Build Override: ".concat(null != C ? C.id : "N/A")), null != A && N.push(A), p) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),
@@ -83,17 +83,17 @@ function O(e) {
       "aria-label": false,
       dataMeticulousIgnore: "true",
       children: e => (0, r.jsxs)(l.P3F, b(g({}, e), {
-        "aria-describedby": h,
-        className: a()(m.clickable, m.compact),
+        "aria-describedby": m,
+        className: a()(h.clickable, h.compact),
         children: [(0, r.jsxs)("div", {
-          className: m.compactInfo,
+          className: h.compactInfo,
           "data-mtctest-ignore": "true",
           children: [(0, r.jsxs)(l.Text, {
             tag: "span",
             variant: "text-xxs/normal",
             color: "text-muted",
             children: [E, " ", O, " ", (0, r.jsxs)("span", {
-              className: m.versionHash,
+              className: h.versionHash,
               children: ["(", v, ")"]
             })]
           }), null != S && (0, r.jsxs)(l.Text, {
@@ -101,7 +101,7 @@ function O(e) {
             variant: "text-xxs/normal",
             color: "text-muted",
             children: [S, null != T && (0, r.jsxs)("span", {
-              className: m.appArch,
+              className: h.appArch,
               children: [" ", T.toLowerCase()]
             }), null != I && (0, r.jsxs)("span", {
               children: [" (", I, ")"]
@@ -112,13 +112,13 @@ function O(e) {
           variant: "text-xxs/normal",
           color: "text-muted",
           children: (0, r.jsxs)("span", {
-            className: m.versionHash,
+            className: h.versionHash,
             children: ["Build Override: ", C.id]
           })
         })]
       }))
     }), (0, r.jsx)(l.nn4, {
-      id: h,
+      id: m,
       children: _.intl.string(_.t["9Al4Qd"])
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -128,37 +128,37 @@ function O(e) {
       "aria-label": false,
       dataMeticulousIgnore: "true",
       children: e => (0, r.jsx)(l.P3F, b(g({}, e), {
-        "aria-describedby": h,
-        className: a()(m.clickable, m.compact),
+        "aria-describedby": m,
+        className: a()(h.clickable, h.compact),
         children: (0, r.jsxs)("div", {
-          className: m.info,
+          className: h.info,
           "data-mtctest-ignore": "true",
           children: [(0, r.jsxs)(l.Text, {
             tag: "span",
-            className: m.line,
+            className: h.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: [E, " ", O, " ", (0, r.jsxs)("span", {
-              className: m.versionHash,
+              className: h.versionHash,
               children: ["(", v, ")"]
             })]
           }), " ", null != C && (0, r.jsx)(l.Text, {
             tag: "span",
-            className: m.line,
+            className: h.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: (0, r.jsxs)("span", {
-              className: m.versionHash,
+              className: h.versionHash,
               children: ["Build Override: ", C.id]
             })
           }), null != S ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(l.Text, {
               tag: "span",
-              className: m.line,
+              className: h.line,
               variant: "text-xs/normal",
               color: "text-muted",
               children: ["Host ", S, " ", null != T ? (0, r.jsxs)("span", {
-                className: m.appArch,
+                className: h.appArch,
                 children: [T.toLowerCase(), " "]
               }) : null, null != I ? (0, r.jsxs)("span", {
                 children: ["(", I, ")"]
@@ -166,7 +166,7 @@ function O(e) {
             }), " "]
           }) : null, null != A ? (0, r.jsx)(l.Text, {
             tag: "span",
-            className: a()(m.line, m.os),
+            className: a()(h.line, h.os),
             variant: "text-xs/normal",
             color: "text-muted",
             children: A
@@ -174,7 +174,7 @@ function O(e) {
         })
       }))
     }), (0, r.jsx)(l.nn4, {
-      id: h,
+      id: m,
       children: _.intl.string(_.t["9Al4Qd"])
     })]
   })

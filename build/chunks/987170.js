@@ -53,7 +53,7 @@ function p(e) {
       n = arguments.length > 2 ? arguments[2] : true,
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
     if (t.exposureType = n ? c.a0.AUTO_FALLBACK : c.a0.AUTO, t.excluded = false, null == r) return void _(e, t);
-    m(e, t, r)
+    h(e, t, r)
   }
 
   function _(t) {
@@ -62,10 +62,10 @@ function p(e) {
         exposureType: c.a0.MANUAL
       },
       i = d(e.kind, n.id, t);
-    null != i && m(t, r, i)
+    null != i && h(t, r, i)
   }
 
-  function m(e, t, r) {
+  function h(e, t, r) {
     if (null != r) {
       var i, s, l, u, d;
       let f = c.a0.MANUAL,
@@ -80,7 +80,7 @@ function p(e) {
     }
   }
 
-  function h(n, r) {
+  function m(n, r) {
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       a = null != i.disable && i.disable,
       o = d(e.kind, e.id, n),
@@ -110,25 +110,25 @@ function p(e) {
         },
         u = null != (a = l.disable) && a,
         _ = false !== l.autoTrackExposure,
-        m = d(e.kind, e.id, n),
+        h = d(e.kind, e.id, n),
         g = null == l.trackExposureOptions ? true : (0, i.Z)(null != (o = l.trackExposureOptions) ? o : {}),
-        E = null != (s = null == m ? true : m.triggerDebuggingEnabled) && s,
+        E = null != (s = null == h ? true : h.triggerDebuggingEnabled) && s,
         [
           [b, y, O], v
         ] = (0, r.useState)(() => {
-          let n = null == m || u ? c.NZ.NOT_ELIGIBLE : m.bucket;
-          return [f(e, n, t, m), n, null == m ? false : m.revision]
+          let n = null == h || u ? c.NZ.NOT_ELIGIBLE : h.bucket;
+          return [f(e, n, t, h), n, null == h ? false : h.revision]
         }),
         S = (0, i.Z)(n);
       return (0, r.useEffect)(() => {
         !u && (_ || E) && null == e.commonTriggerPoint && p(S, g, false === _)
-      }, [u, _, S, g, y, O, E]), (0, r.useEffect)(() => h(S, (e, t, n) => {
+      }, [u, _, S, g, y, O, E]), (0, r.useEffect)(() => m(S, (e, t, n) => {
         v(r => r[0] === e && r[1] === t && r[2] === n ? r : [e, t, n])
       }, {
         disable: u
       }), [u, S]), b
     },
-    subscribe: h,
+    subscribe: m,
     trackExposure: _,
     getCurrentConfig: function(n) {
       let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {

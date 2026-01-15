@@ -94,10 +94,10 @@ function Z(e) {
     analyticsLocations: M
   } = (0, _.ZP)(), U = n !== P.A3.INACTIVE, Z = (0, S.Z)(t), F = (0, u.e7)([E.default], () => E.default.getCurrentUser()), [B, V] = i.useState(false), [H, Y] = i.useState(false), W = H, K = i.useCallback(() => {
     let e = g.Z.getGuild(t);
-    null != e && (0, m.u)({
+    null != e && (0, h.u)({
       analyticsLocation: {
-        page: R.ZY5.GUILD_POWERUPS_MARKETING,
-        section: R.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
+        page: w.ZY5.GUILD_POWERUPS_MARKETING,
+        section: w.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
       analyticsLocations: M,
@@ -149,7 +149,7 @@ function Z(e) {
         transform: X.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(j.contentContainer, L.contentContainer),
-      children: [(0, r.jsx)(h.xm, {
+      children: [(0, r.jsx)(m.xm, {
         heading: a,
         description: c,
         label: x.intl.formatToPlainString(D.default.QOacIS, {
@@ -161,7 +161,7 @@ function Z(e) {
         style: J,
         className: j.buttonsContainer,
         children: [(0, r.jsx)(d.u, {
-          text: x.intl.formatToPlainString(w.default["5xN/C1"], {
+          text: x.intl.formatToPlainString(R.default["5xN/C1"], {
             premiumGroupProductName: (0, N.sO)()
           }),
           shouldShow: (null == F ? true : F.isPremiumGroupMember()) === true,
@@ -240,7 +240,7 @@ let B = 3,
       }), (0, r.jsx)(c.xvT, {
         variant: "text-lg/medium",
         children: x.intl.format(D.default.OdCzjA, {
-          helpDeskArticle: b.Z.getArticleURL(R.BhN.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: b.Z.getArticleURL(w.BhN.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsx)("div", {
         className: L.powerupsContainer,

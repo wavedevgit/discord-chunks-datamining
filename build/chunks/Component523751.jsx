@@ -67,9 +67,9 @@ function P(e, t) {
   }), e
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -77,7 +77,7 @@ function R(e, t) {
   return i
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -211,10 +211,10 @@ function j(e) {
     disableBoostClick: C,
     "aria-label": N = false
   } = e;
-  let w = null != (a = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
-    x = (0, s.e7)([h.default, m.ZP], () => {
-      let e = h.default.getCurrentUser();
-      return m.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
+  let R = null != (a = w(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
+    x = (0, s.e7)([m.default, h.ZP], () => {
+      let e = m.default.getCurrentUser();
+      return h.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
     }),
     j = (0, s.e7)([_.Z], () => _.Z.theme),
     M = (0, O.XX)(o),
@@ -245,7 +245,7 @@ function j(e) {
   let z = (0, c.wj)(j) ? V : H,
     q = (0, c.wj)(j) ? F : B;
   t = null != t ? t : z, n = null != n ? n : q;
-  let Q = Math.floor(.75 * w) - (null != K ? K : 0);
+  let Q = Math.floor(.75 * R) - (null != K ? K : 0);
   return (0, r.jsx)(u.aML, {
     color: l,
     position: d,
@@ -264,7 +264,7 @@ function j(e) {
         allowFullSizedIcon: true,
         color: null != n ? n : I,
         stroke: v,
-        size: w,
+        size: R,
         children: (0, r.jsx)(Z, {
           size: "custom",
           width: Q,

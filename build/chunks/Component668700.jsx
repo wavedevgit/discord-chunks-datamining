@@ -37,14 +37,14 @@ function I(e) {
     onClose: C
   } = e, {
     themeType: A
-  } = (0, g.z)(), N = (0, m.Z)(I), P = (0, u.ZP)(I), {
-    canViewChannel: R,
-    canConnect: w
+  } = (0, g.z)(), N = (0, h.Z)(I), P = (0, u.ZP)(I), {
+    canViewChannel: w,
+    canConnect: R
   } = (0, i.cj)([_.Z], () => ({
     canViewChannel: _.Z.can(b.Plq.VIEW_CHANNEL, I),
     canConnect: I.isPrivate() || _.Z.can(b.Plq.CONNECT, I)
   }));
-  if (!R) return null;
+  if (!w) return null;
   let D = () => {
       let e = e => {
         e.stopPropagation(), (0, p.X)(n.id), null == T || T({
@@ -64,7 +64,7 @@ function I(e) {
       })
     },
     x = () => {
-      if (!w) return (0, r.jsx)(l.Text, {
+      if (!R) return (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-subtle",
         lineClamp: 1,
@@ -92,7 +92,7 @@ function I(e) {
     },
     L = A !== y.l.MODAL && A !== y.l.MODAL_V2 && A !== y.l.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.Z, {
+    children: [(0, r.jsx)(m.Z, {
       className: v.voiceChannelDivider
     }), (0, r.jsxs)("div", {
       className: v.voiceChannel,

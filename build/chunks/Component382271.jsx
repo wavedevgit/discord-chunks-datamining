@@ -62,7 +62,7 @@ let T = (e, t) => {
     } = (0, f.Z)({
       userId: null == t ? true : t.id,
       size: u.EFr.SIZE_56
-    }), l = h.ZP.getName(t), c = n === g.Fz.FAIL;
+    }), l = m.ZP.getName(t), c = n === g.Fz.FAIL;
     return (0, r.jsxs)("div", {
       className: O.trialRecipientRow,
       children: [(0, r.jsx)(u.qEK, I({
@@ -119,10 +119,10 @@ let T = (e, t) => {
         type: "rive"
       },
       p = () => 0 === t.filter(e => e.status === g.Fz.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : true === a ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
-      h = () => true === a ? y.intl.format(y.t["4gJJfD"], {
-        helpdeskArticle: m.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
+      m = () => true === a ? y.intl.format(y.t["4gJJfD"], {
+        helpdeskArticle: h.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
       }) : y.intl.format(y.t.AwGSWl, {
-        helpdeskArticle: m.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: h.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
       }),
       S = () => (0, r.jsx)("div", {
         className: O.trialRecipientContainer,
@@ -136,7 +136,7 @@ let T = (e, t) => {
       graphic: f(),
       gradientColor: "nitro-pink",
       title: p(),
-      subtitle: h(),
+      subtitle: m(),
       onClose: n,
       transitionState: s.Dvm.ENTERED,
       children: S()

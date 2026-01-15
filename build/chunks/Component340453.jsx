@@ -2,7 +2,7 @@
 /** chunk id: 340453, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -53,21 +53,21 @@ function p(e, t) {
 }
 let _ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function m(e) {
+function h(e) {
   let {
     otherUser: t,
     status: n
   } = e, o = (0, s.j_)(t.id, n), {
     avatarSrc: u,
     avatarDecorationSrc: f,
-    eventHandlers: m
+    eventHandlers: h
   } = (0, a.Z)({
     userId: t.id,
     size: i.EFr.SIZE_40,
     animateOnHover: true
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", p(d({}, m), {
+    children: [(0, r.jsx)("div", p(d({}, h), {
       children: (0, r.jsx)(_, {
         className: c.avatar,
         src: u,

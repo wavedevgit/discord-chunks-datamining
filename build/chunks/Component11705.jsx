@@ -21,7 +21,7 @@ let p = e => {
     isListingPublished: n,
     expanded: p,
     onToggleExpanded: _
-  } = e, m = (0, c.Z)(), [h] = l._T(t), [g] = l.d9(t, m), [E] = l.H9(t);
+  } = e, h = (0, c.Z)(), [m] = l._T(t), [g] = l.d9(t, h), [E] = l.H9(t);
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(u.BM, {
@@ -29,7 +29,7 @@ let p = e => {
     }), (0, r.jsxs)("div", {
       className: f.tierTextInfoContainer,
       children: [(0, r.jsx)(u.Ey, {
-        listingName: h
+        listingName: m
       }), (0, r.jsxs)("div", {
         className: f.tierPriceContainer,
         children: [!n && (0, r.jsx)(a.v, {}), (0, r.jsxs)(i.Text, {

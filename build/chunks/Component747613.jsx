@@ -82,8 +82,8 @@ function P(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = 20,
-  w = 125,
+let w = 20,
+  R = 125,
   D = (0, Chunk313201.hQ)(),
   x = Chunk336317.Z.convert.fromCodePoint("1f44f"),
   L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
@@ -138,13 +138,13 @@ let k = e => {
       id: t,
       selectedSurrogate: n,
       onClick: a
-    } = e, o = (0, h.Z)("diversity"), s = (0, p.q_F)({
+    } = e, o = (0, m.Z)("diversity"), s = (0, p.q_F)({
       height: (j + 2 * L) * (E.gw.length + 1),
       from: {
         height: j
       },
       config: {
-        duration: w
+        duration: R
       }
     });
     i.useEffect(() => {
@@ -167,7 +167,7 @@ let k = e => {
             children: d.map((e, t) => (0, r.jsx)(k, {
               index: t,
               fade: 0 !== t,
-              delay: t * R,
+              delay: t * w,
               surrogate: e,
               onClick: a
             }, t))
@@ -181,9 +181,9 @@ let k = e => {
       searchBarRef: t,
       selectedSurrogate: n,
       className: a
-    } = e, s = b.ZP.getURL(x + n), [l, c] = i.useState(false), u = (0, m.Z)(null, () => c(false)), d = i.useRef(null), f = () => {
+    } = e, s = b.ZP.getURL(x + n), [l, c] = i.useState(false), u = (0, h.Z)(null, () => c(false)), d = i.useRef(null), f = () => {
       c(true)
-    }, h = e => {
+    }, m = e => {
       e.key === O.vn.ESCAPE && (e.stopPropagation(), c(false), null != d.current && d.current.focus())
     }, g = e => {
       var n;
@@ -208,7 +208,7 @@ let k = e => {
           }
         })
       }), l ? (0, r.jsx)("div", {
-        onKeyDown: h,
+        onKeyDown: m,
         children: (0, r.jsx)(U, {
           id: D,
           selectedSurrogate: n,

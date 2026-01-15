@@ -146,11 +146,11 @@ class A extends(r = Chunk473749.Component) {
       clickTrap: p = false
     } = this.props, {
       resizeKey: _,
-      isLoading: h,
+      isLoading: m,
       shouldShowLoadingState: g
     } = this.state;
-    return h && !g ? null : (0, i.jsx)(f.mh4, {
-      layerContext: null != d ? d : m.nz,
+    return m && !g ? null : (0, i.jsx)(f.mh4, {
+      layerContext: null != d ? d : h.nz,
       children: (0, i.jsx)(f.jRF, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,

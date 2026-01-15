@@ -75,11 +75,11 @@ function p(e) {
       color: p = a.Z.colors.INTERACTIVE_TEXT_DEFAULT,
       colorClass: _ = ""
     } = e,
-    m = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let h = (0, i.m)(s),
-    g = null != (t = null == h ? true : h.width) ? t : c,
-    E = null != (n = null == h ? true : h.height) ? n : f;
-  return (0, r.jsx)("svg", u(l({}, (0, o.Z)(m)), {
+    h = d(e, ["size", "width", "height", "color", "colorClass"]);
+  let m = (0, i.m)(s),
+    g = null != (t = null == m ? true : m.width) ? t : c,
+    E = null != (n = null == m ? true : m.height) ? n : f;
+  return (0, r.jsx)("svg", u(l({}, (0, o.Z)(h)), {
     width: g,
     height: E,
     viewBox: "0 0 16 16",

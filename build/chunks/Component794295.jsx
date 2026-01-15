@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,9 +77,9 @@ let g = 1,
       title: a,
       href: d,
       children: p,
-      messageId: h,
+      messageId: m,
       channelId: E
-    } = e, b = m(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
+    } = e, b = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
       analyticsLocations: y
     } = (0, c.ZP)(l.Z.MASKED_LINK), O = i.useCallback(t => (0, u.q)(e, t, y), [y, e]), v = i.useCallback(e => {
       e.button === g && O(e)

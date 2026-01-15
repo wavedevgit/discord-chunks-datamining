@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk754024 = require("./754024.js");
-let h = (0, Chunk313201.hQ)(),
+let m = (0, Chunk313201.hQ)(),
   g = (0, Chunk131704.createChannelRecord)({
     id: "1",
     type: Chunk981631.d4z.DM
@@ -55,15 +55,15 @@ function b(e) {
     C.current = y
   }, [y]), (0, r.jsxs)(f.Z, {
     title: t,
-    titleId: h,
+    titleId: m,
     description: _.intl.string(_.t.Bbw6Ac),
     errors: n,
     disabled: O,
     children: [(0, r.jsx)(l.ZP, {
       "aria-describedby": E,
-      "aria-labelledby": h,
-      className: m.bioTextAreaContainer,
-      innerClassName: m.bioTextArea,
+      "aria-labelledby": m,
+      className: h.bioTextAreaContainer,
+      innerClassName: h.bioTextArea,
       maxCharacterCount: p.tPV,
       onChange: N,
       placeholder: b,

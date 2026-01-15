@@ -32,9 +32,9 @@ function O(e) {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), v = _.default.getCurrentUser(), S = null == v || (0, m.I5)(v) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, T] = (0, p.US)(S), [C, A] = i.useState(false), [N, P] = (0, d.q_F)(() => ({})), R = (0, s.animated)(d.Pt5);
+  } = e, O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), v = _.default.getCurrentUser(), S = null == v || (0, h.I5)(v) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, T] = (0, p.US)(S), [C, A] = i.useState(false), [N, P] = (0, d.q_F)(() => ({})), w = (0, s.animated)(d.Pt5);
 
-  function w() {
+  function R() {
     P({
       from: {
         rotate: t ? "360deg" : "0deg"
@@ -47,7 +47,7 @@ function O(e) {
   }
   i.useEffect(() => {
     let e = I === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
-    e && (T(h.L.DISMISS), setTimeout(() => A(e), 200))
+    e && (T(m.L.DISMISS), setTimeout(() => A(e), 200))
   }, [I, T]);
   let D = C ? g.intl.string(g.t["Osi/uy"]) : t ? g.intl.string(g.t["5cRA/b"]) : g.intl.string(g.t.buV4av),
     x = C ? g.intl.string(g.t.ORK94p) : true;
@@ -66,7 +66,7 @@ function O(e) {
       children: [(0, r.jsx)("input", {
         className: E.visuallyHidden,
         checked: t,
-        onChange: w,
+        onChange: R,
         id: a,
         type: "checkbox"
       }), (0, r.jsxs)("label", {
@@ -74,7 +74,7 @@ function O(e) {
         className: o()(E.label, {
           [E.labelChecked]: t
         }),
-        children: [(0, r.jsx)(R, {
+        children: [(0, r.jsx)(w, {
           style: O ? true : N,
           size: "custom",
           width: y,

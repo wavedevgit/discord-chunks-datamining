@@ -40,7 +40,7 @@ function I(e) {
     guildId: a.guild_id,
     messageId: t.id
   })(u);
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     compact: false,
     children: O.intl.format(s === t.author.id ? O.t.anvg2q : O.t.AxVbYF, {
       username: u.nick,
@@ -74,19 +74,19 @@ function T(e) {
     header: f,
     currentUserId: p,
     launchableAppId: _,
-    isEmbeddedApplication: m,
+    isEmbeddedApplication: h,
     tryWithGdnAction: S,
     staticBannerSrc: T,
     onClickContent: C,
     iconSrc: A,
     onView: N,
     presenceActivity: P,
-    analyticsLocations: R,
-    showAuthButton: w,
+    analyticsLocations: w,
+    showAuthButton: R,
     startAuthorization: D,
     accountLinkButtonRef: x,
     renderAccountLinkUpsell: L
-  } = e, j = (0, s.e7)([h.Z], () => h.Z.getMessages(o.id)), {
+  } = e, j = (0, s.e7)([m.Z], () => m.Z.getMessages(o.id)), {
     actions: M,
     hasAccountLinkButton: k
   } = i.useMemo(() => {
@@ -100,7 +100,7 @@ function T(e) {
         onClick: () => {
           c.Z.launch({
             applicationId: _,
-            embedded: m
+            embedded: h
           })
         }
       }] : null != S && (e = [S], r = false), e.length > 0)
@@ -108,12 +108,12 @@ function T(e) {
         actions: [],
         hasAccountLinkButton: false
       };
-      else w && r && (e.push({
+      else R && r && (e.push({
         label: O.intl.string(O.t.lw71Nf),
         trackingArea: d.j_.CONNECT_ACCOUNT,
         onClick: () => {
           D({
-            analyticsLocations: R
+            analyticsLocations: w
           })
         },
         icon: l.uIJ,
@@ -124,8 +124,8 @@ function T(e) {
       actions: e,
       hasAccountLinkButton: i
     }
-  }, [m, _, S, j, P, n.id, t.id, w, D, R, x]), U = M.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
-  (0, b.Z)(U, R);
+  }, [h, _, S, j, P, n.id, t.id, R, D, w, x]), U = M.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
+  (0, b.Z)(U, w);
   let G = M.length > 0,
     Z = i.useMemo(() => (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",

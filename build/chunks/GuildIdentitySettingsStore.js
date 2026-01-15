@@ -5,7 +5,7 @@ let r, i, a, o, s, l, c, u, d, f, p, _;
 require.d(exports, {
   Z: () => V
 });
-var m, Chunk979554 = require("./979554.js"),
+var h, Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
@@ -54,14 +54,14 @@ function P(e) {
   r = t
 }
 
-function R(e) {
+function w(e) {
   let {
     item: t
   } = e;
-  t.type === h.Z.AVATAR_DECORATION ? i = t.value : t.type === h.Z.PROFILE_EFFECT ? o = t.value : t.type === h.Z.NAMEPLATE && (a = t.value)
+  t.type === m.Z.AVATAR_DECORATION ? i = t.value : t.type === m.Z.PROFILE_EFFECT ? o = t.value : t.type === m.Z.NAMEPLATE && (a = t.value)
 }
 
-function w(e) {
+function R(e) {
   let {
     banner: t
   } = e;
@@ -122,7 +122,7 @@ function Z() {
 function F() {
   k(), I()
 }
-class B extends(m = Chunk442837.ZP.Store) {
+class B extends(h = Chunk442837.ZP.Store) {
   getFormState() {
     return O
   }
@@ -198,9 +198,9 @@ let V = new B(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: A,
   USER_PROFILE_UPDATE_FAILURE: N,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: P,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM: R,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: M,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: w,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,

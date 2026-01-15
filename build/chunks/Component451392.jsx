@@ -41,13 +41,13 @@ function E(e) {
     displayProfile: I,
     pendingThemeColors: i,
     isPreview: true
-  }), A = p.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), P = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), R = (0, u.Cf)(N, P, false);
+  }), A = p.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), P = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), w = (0, u.Cf)(N, P, false);
   if (null == T || null == C) return null;
-  let w = e => {
+  let R = e => {
     o(s()(e, null == I ? true : I.themeColors) ? true : e)
   };
-  return (0, r.jsx)(m.Z, {
-    title: h.intl.string(h.t.DMeO2X),
+  return (0, r.jsx)(h.Z, {
+    title: m.intl.string(m.t.DMeO2X),
     disabled: !A && !E,
     className: a()(g.__invalid_profileThemesSection, y),
     showPremiumIcon: O,
@@ -57,31 +57,31 @@ function E(e) {
       children: [(0, r.jsx)("div", {
         className: g.sparkleContainer,
         children: (0, r.jsx)(_.Z, {
-          onChange: e => w([e, C]),
+          onChange: e => R([e, C]),
           color: T,
-          suggestedColors: R,
+          suggestedColors: w,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
             className: g.colorSwatchLabel,
             color: "text-default",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: h.intl.string(h.t.C3KTQk)
+            children: m.intl.string(m.t.C3KTQk)
           })
         })
       }), (0, r.jsx)("div", {
         className: g.sparkleContainer,
         children: (0, r.jsx)(_.Z, {
-          onChange: e => w([T, e]),
+          onChange: e => R([T, e]),
           color: C,
-          suggestedColors: R,
+          suggestedColors: w,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
             className: g.colorSwatchLabel,
             color: "text-default",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: h.intl.string(h.t["8elvy6"])
+            children: m.intl.string(m.t["8elvy6"])
           })
         })
       }), v && null != b && (0, r.jsx)("div", {
@@ -90,8 +90,8 @@ function E(e) {
         children: (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",
-          text: h.intl.string(h.t["L+GmoR"]),
-          onClick: () => w([null, null])
+          text: m.intl.string(m.t["L+GmoR"]),
+          onClick: () => R([null, null])
         })
       })]
     })

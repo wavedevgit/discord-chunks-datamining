@@ -102,10 +102,10 @@ function A(e) {
     colorStrings: A,
     colorRoleName: N,
     authorId: P,
-    displayNameStyles: R
-  } = (0, f.ZP)(a), w = (0, p.X7)(g, P, A), D = (0, d.j)({
-    displayNameStyles: R
-  }), x = T(i, a), L = (0, h.NE)(i, a), j = n.showThreadPromptOnReply && x >= S && L, M = () => (0, m.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+    displayNameStyles: w
+  } = (0, f.ZP)(a), R = (0, p.X7)(g, P, A), D = (0, d.j)({
+    displayNameStyles: w
+  }), x = T(i, a), L = (0, m.NE)(i, a), j = n.showThreadPromptOnReply && x >= S && L, M = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function k(e) {
     e.stopPropagation(), (0, _.qx)(i.id, !s)
@@ -139,7 +139,7 @@ function A(e) {
                 className: v.name,
                 name: E,
                 colorString: I,
-                colorStrings: w,
+                colorStrings: R,
                 roleName: N,
                 displayNameStylesFont: D
               }, t)

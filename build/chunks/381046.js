@@ -50,25 +50,25 @@ var Chunk260674 = require("./260674.js"),
   _ = function(e) {
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
-  m = {},
-  h = function e(t, n, a, o, s, c, d, f, h, g, E, b, y, O, v, S, I, T) {
-    for (var C, A = t, N = T, P = 0, R = false; true !== (N = N.get(m)) && !R;) {
-      var w = N.get(t);
-      if (P += 1, true !== w)
-        if (w === P) throw RangeError("Cyclic object value");
-        else R = true;
-      true === N.get(m) && (P = 0)
+  h = {},
+  m = function e(t, n, a, o, s, c, d, f, m, g, E, b, y, O, v, S, I, T) {
+    for (var C, A = t, N = T, P = 0, w = false; true !== (N = N.get(h)) && !w;) {
+      var R = N.get(t);
+      if (P += 1, true !== R)
+        if (R === P) throw RangeError("Cyclic object value");
+        else w = true;
+      true === N.get(h) && (P = 0)
     }
     if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = y(A) : "comma" === a && l(A) && (A = i.maybeMap(A, function(e) {
         return e instanceof Date ? y(e) : e
       })), null === A) {
-      if (c) return h && !S ? h(n, p.encoder, I, "key", O) : n;
+      if (c) return m && !S ? m(n, p.encoder, I, "key", O) : n;
       A = ""
     }
-    if (_(A) || i.isBuffer(A)) return h ? [v(S ? n : h(n, p.encoder, I, "key", O)) + "=" + v(h(A, p.encoder, I, "value", O))] : [v(n) + "=" + v(String(A))];
+    if (_(A) || i.isBuffer(A)) return m ? [v(S ? n : m(n, p.encoder, I, "key", O)) + "=" + v(m(A, p.encoder, I, "value", O))] : [v(n) + "=" + v(String(A))];
     var D = [];
     if (true === A) return D;
-    if ("comma" === a && l(A)) S && h && (A = i.maybeMap(A, h)), C = [{
+    if ("comma" === a && l(A)) S && m && (A = i.maybeMap(A, m)), C = [{
       value: A.length > 0 ? A.join(",") || null : true
     }];
     else if (l(g)) C = g;
@@ -87,7 +87,7 @@ var Chunk260674 = require("./260674.js"),
           Z = l(A) ? "function" == typeof a ? a(j, G) : j : j + (b ? "." + G : "[" + G + "]");
         T.set(t, P);
         var F = r();
-        F.set(m, T), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && S && l(A) ? null : h, g, E, b, y, O, v, S, I, F))
+        F.set(h, T), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && S && l(A) ? null : m, g, E, b, y, O, v, S, I, F))
       }
     }
     return D
@@ -140,9 +140,9 @@ module.exports = function(e, t) {
     f = "comma" === d && o.commaRoundTrip;
   n || (n = Object.keys(a)), o.sort && n.sort(o.sort);
   for (var p = r(), _ = 0; _ < n.length; ++_) {
-    var m = n[_],
-      E = a[m];
-    o.skipNulls && null === E || u(c, h(E, m, d, f, o.allowEmptyArrays, o.strictNullHandling, o.skipNulls, o.encodeDotInKeys, o.encode ? o.encoder : null, o.filter, o.sort, o.allowDots, o.serializeDate, o.format, o.formatter, o.encodeValuesOnly, o.charset, p))
+    var h = n[_],
+      E = a[h];
+    o.skipNulls && null === E || u(c, m(E, h, d, f, o.allowEmptyArrays, o.strictNullHandling, o.skipNulls, o.encodeDotInKeys, o.encode ? o.encoder : null, o.filter, o.sort, o.allowDots, o.serializeDate, o.format, o.formatter, o.encodeValuesOnly, o.charset, p))
   }
   var b = c.join(o.delimiter),
     y = true === o.addQueryPrefix ? "?" : "";

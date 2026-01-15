@@ -2,9 +2,9 @@
 /** chunk id: 444295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  JS: () => m,
+  JS: () => h,
   OverlayToggledClientSettingType: () => u,
-  Qu: () => h,
+  Qu: () => m,
   Ws: () => E,
   bk: () => g,
   ee: () => p,
@@ -34,8 +34,8 @@ function d(e) {
   }
 }
 async function f(e, t, r) {
-  var o, u, f, p, _, m;
-  let h = null != r ? a.Z.getDetectableGame(r) : null,
+  var o, u, f, p, _, h;
+  let m = null != r ? a.Z.getDetectableGame(r) : null,
     {
       default: g
     } = n(371651),
@@ -45,10 +45,10 @@ async function f(e, t, r) {
     enabled: e,
     setting_type: d(t),
     client_setting_type: t,
-    application_id: null != (p = null == h ? true : h.id) ? p : true,
-    application_name: null != (_ = null == h ? true : h.name) ? _ : true,
+    application_id: null != (p = null == m ? true : m.id) ? p : true,
+    application_name: null != (_ = null == m ? true : m.name) ? _ : true,
     most_recent_overlay_render_method: b,
-    hardware_display_count: null != (m = await (null === i.Z || true === i.Z || null == (u = i.Z.hardware) || null == (o = u.getDisplayCount) ? true : o.call(u))) ? m : null
+    hardware_display_count: null != (h = await (null === i.Z || true === i.Z || null == (u = i.Z.hardware) || null == (o = u.getDisplayCount) ? true : o.call(u))) ? h : null
   })
 }
 
@@ -87,7 +87,7 @@ function _(e, t) {
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   let {
     pinned: n,
     opacity: r
@@ -98,7 +98,7 @@ function m(e, t) {
     opacity: r
   })
 }
-var h = function(e) {
+var m = function(e) {
     return e.SCREEN_SHARE = "screen share", e.CAMERA = "camera", e.MICROPHONE = "microphone", e.AUDIO = "audio", e.VOICE = "voice", e.CALL_BUTTON = "call button", e.SOUNDBOARD = "soundboard", e.GO_LIVE = "go live", e.INVITE = "invite", e.REDIRECT = "redirect", e.FRIEND_LIST = "friend list", e.FRIEND_REQUEST = "friend request", e.KEYBIND_HINT = "keybind hint", e
   }({}),
   g = function(e) {

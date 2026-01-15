@@ -190,7 +190,7 @@ function P(e) {
     titleTextVariant: s,
     subtitle: l,
     alignCenter: c = false,
-    leading: h,
+    leading: m,
     trailing: b,
     stepNumber: O,
     stepCount: v
@@ -216,12 +216,12 @@ function P(e) {
     className: o()(E.section, E.header, {
       [E.headerCentered]: c
     }),
-    children: (0, r.jsxs)(m.K, {
+    children: (0, r.jsxs)(h.K, {
       gap: 8,
       children: [(0, r.jsx)("div", {
         className: E.headerLayout,
         children: (0, r.jsx)(D, {
-          leading: h,
+          leading: m,
           trailing: b,
           hasGradient: T,
           children: (0, r.jsxs)("div", {
@@ -242,9 +242,9 @@ function P(e) {
             }), j]
           })
         })
-      }), (0, r.jsx)(R, {
+      }), (0, r.jsx)(w, {
         badge: i
-      }), null != n && null != a && L, null != l && (0, r.jsx)(w, {
+      }), null != n && null != a && L, null != l && (0, r.jsx)(R, {
         subtitle: l
       })]
     })
@@ -256,7 +256,7 @@ function P(e) {
   }) : M
 }
 
-function R(e) {
+function w(e) {
   let {
     badge: t
   } = e;
@@ -268,12 +268,12 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     subtitle: t
   } = e;
   if (null == t) return null;
-  let n = (0, r.jsx)(h.x, {
+  let n = (0, r.jsx)(m.x, {
       className: E.headerSubtitle,
       variant: "text-md/normal",
       color: "text-subtle",

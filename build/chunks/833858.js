@@ -74,7 +74,7 @@ let _ = () => ({
       icon: r.FGi
     }
   }),
-  m = () => ({
+  h = () => ({
     [a.tN.BRB]: {
       title: s.intl.string(s.t.fFTJTI),
       emoji: {
@@ -111,7 +111,7 @@ let _ = () => ({
       }
     }
   }),
-  h = () => p(d({}, m()), {
+  m = () => p(d({}, h()), {
     [a.tN.CHILLING]: {
       title: s.intl.string(s.t.IeolFa),
       emoji: {
@@ -126,9 +126,9 @@ let _ = () => ({
         return _();
       case "twemoji":
       default:
-        return m();
+        return h();
       case "twemojimild":
-        return h()
+        return m()
     }
   },
   E = function(e, t) {

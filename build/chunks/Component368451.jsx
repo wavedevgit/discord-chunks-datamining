@@ -65,24 +65,24 @@ function O(e) {
     description: i,
     isDisabled: a,
     isOffset: s
-  } = e, l = o()(h.labelContainer, {
-    [h.disabled]: a,
-    [h.offset]: null == t && s
+  } = e, l = o()(m.labelContainer, {
+    [m.disabled]: a,
+    [m.offset]: null == t && s
   });
   return (0, r.jsxs)("div", {
-    className: h.option,
+    className: m.option,
     children: [null != t ? (0, r.jsx)(u.Z, {
-      className: h.emoji,
+      className: m.emoji,
       emojiId: t.id,
       emojiName: t.name,
       animated: t.animated
     }) : null, (0, r.jsxs)("div", {
       className: l,
       children: [(0, r.jsx)("strong", {
-        className: h.label,
+        className: m.label,
         children: n
       }), null != i ? (0, r.jsx)("span", {
-        className: h.description,
+        className: m.description,
         children: i
       }) : null]
     })]
@@ -95,17 +95,17 @@ function v(e) {
     label: n
   } = e;
   return (0, r.jsx)("div", {
-    className: h.option,
+    className: m.option,
     children: (0, r.jsxs)("div", {
-      className: o()(h.value, h.singleValue),
+      className: o()(m.value, m.singleValue),
       children: [null != t ? (0, r.jsx)(u.Z, {
-        className: h.emoji,
+        className: m.emoji,
         src: t.src,
         emojiId: t.id,
         emojiName: t.name,
         animated: t.animated
       }) : null, (0, r.jsx)("span", {
-        className: h.singleValueLabel,
+        className: m.singleValueLabel,
         children: n
       })]
     })
@@ -117,19 +117,19 @@ function S(e) {
     options: t
   } = e;
   return (0, r.jsx)("div", {
-    className: h.option,
+    className: m.option,
     children: (0, r.jsx)("div", {
-      className: h.value,
+      className: m.value,
       children: t.map((e, t) => (0, r.jsxs)("div", {
-        className: h.optionTag,
+        className: m.optionTag,
         children: [null != e.emoji ? (0, r.jsx)(u.Z, {
-          className: h.smallEmoji,
+          className: m.smallEmoji,
           src: e.emoji.src,
           emojiId: e.emoji.id,
           emojiName: e.emoji.name,
           animated: e.emoji.animated
         }) : null, (0, r.jsx)("span", {
-          className: h.tag,
+          className: m.tag,
           children: e.label
         }, e.value)]
       }, t))
@@ -145,18 +145,18 @@ function I(e) {
     maxValues: s,
     minValues: u,
     disabled: g
-  } = e, b = (0, m.Wo)(e), I = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), T = (0, p.CJ)();
+  } = e, b = (0, h.Wo)(e), I = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), T = (0, p.CJ)();
   l()(null != T, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
   let {
     state: C,
     executeStateUpdate: A,
     visualState: N,
     isDisabled: P,
-    error: R
+    error: w
   } = T.useComponentState(e, I.length > 0 ? {
     type: t,
     values: I
-  } : true), w = null != T.modal, D = s > 1, x = N === _.gH.LOADING, [L, j] = i.useState(false), [M, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(M), Z = i.useMemo(() => n.some(e => null != e.emoji), [n]);
+  } : true), R = null != T.modal, D = s > 1, x = N === _.gH.LOADING, [L, j] = i.useState(false), [M, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(M), Z = i.useMemo(() => n.some(e => null != e.emoji), [n]);
   i.useEffect(() => {
     if ((null == C ? true : C.type) === d.re.STRING_SELECT) {
       let e = new Set(C.values);
@@ -184,12 +184,12 @@ function I(e) {
   });
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: h.container,
+      className: m.container,
       children: (0, r.jsx)(c.B6, E({
         isProcessing: x,
         isDisabled: g || N === _.gH.DISABLED || P,
-        className: o()(h.select, {
-          [h.inModal]: w
+        className: o()(m.select, {
+          [m.inModal]: R
         }),
         options: n.map(e => y(E({}, e), {
           disabled: D && !M.has(e.value) && M.size === s
@@ -199,7 +199,7 @@ function I(e) {
         onOpen: () => j(true),
         maxVisibleItems: 5,
         closeOnSelect: !D,
-        optionClassName: h.selectOption,
+        optionClassName: m.selectOption,
         renderOptionLabel: e => (0, r.jsx)(O, y(E({}, e), {
           isDisabled: D && !M.has(e.value) && M.size === s,
           isOffset: Z
@@ -208,8 +208,8 @@ function I(e) {
           options: e
         }) : (0, r.jsx)(v, E({}, e[0]))
       }, V))
-    }), null == R || w ? null : (0, r.jsx)(f.st, y(E({}, (0, f.c4)(R)), {
-      className: h.error
+    }), null == w || R ? null : (0, r.jsx)(f.st, y(E({}, (0, f.c4)(w)), {
+      className: m.error
     }))]
   })
 }

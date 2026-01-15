@@ -5,7 +5,7 @@ require.d(exports, {
   A_: () => I,
   Ok: () => N,
   U4: () => T,
-  Ye: () => m.Z,
+  Ye: () => h.Z,
   ZJ: () => A,
   q: () => C
 }), require("./997841.js");
@@ -108,9 +108,9 @@ function A(e, t) {
   let o = e.getGuildId(),
     s = e.parent_id,
     c = (0, f.I)(o, s),
-    p = e => (0, a.yE)(e, h.iN.ALL_MESSAGES) ? f.$R[g.bL.ALL_MESSAGES] : (0, a.yE)(e, h.iN.ONLY_MENTIONS) ? f.$R[g.bL.ONLY_MENTIONS] : (0, a.yE)(e, h.iN.NO_MESSAGES) ? f.$R[g.bL.NO_MESSAGES] : f.$R[g.bL.NULL],
-    m = null != (n = _.Z.flags(e.id)) ? n : 0,
-    E = p(m),
+    p = e => (0, a.yE)(e, m.iN.ALL_MESSAGES) ? f.$R[g.bL.ALL_MESSAGES] : (0, a.yE)(e, m.iN.ONLY_MENTIONS) ? f.$R[g.bL.ONLY_MENTIONS] : (0, a.yE)(e, m.iN.NO_MESSAGES) ? f.$R[g.bL.NO_MESSAGES] : f.$R[g.bL.NULL],
+    h = null != (n = _.Z.flags(e.id)) ? n : 0,
+    E = p(h),
     y = _.Z.isMuted(e.id),
     S = (0, f.sK)(_.Z.getMuteConfig(e.id)),
     {
@@ -122,7 +122,7 @@ function A(e, t) {
       guild_id: o,
       parent_id: s,
       channel_type: e.type,
-      has_interacted_with_thread: (m & h.iN.HAS_INTERACTED) != 0,
+      has_interacted_with_thread: (h & m.iN.HAS_INTERACTED) != 0,
       parent_is_muted: u.ZP.isGuildOrCategoryOrChannelMuted(o, s),
       old_thread_notification_setting: E,
       new_thread_notification_setting: null != t.flags ? p(t.flags) : E,

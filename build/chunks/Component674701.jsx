@@ -2,7 +2,7 @@
 /** chunk id: 674701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -62,24 +62,24 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function R(e) {
   let {
     giftIntentType: t,
     recipientUser: A,
     analyticsPage: P,
-    analyticsSection: w,
+    analyticsSection: R,
     innerRef: D
-  } = e, x = (0, o.e7)([h.default], () => h.default.getCurrentUser()), {
+  } = e, x = (0, o.e7)([m.default], () => m.default.getCurrentUser()), {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.PREMIUM_GIFT_INTENT_CARD), j = (0, o.e7)([y.ZP], () => y.ZP.getFriendAnniversaryYears(A.id)), {
     Component: M
-  } = (0, s.V)(), k = (0, m.ao)({
+  } = (0, s.V)(), k = (0, h.ao)({
     location: "gift-intent-card",
     isGift: true,
     giftRecipient: A
@@ -114,7 +114,7 @@ function w(e) {
         analyticsLocation: r.chat,
         analyticsObject: {
           page: P,
-          section: w,
+          section: R,
           object: S.qAy.BUTTON_CTA,
           objectType: S.AnalyticsObjectTypes.GIFT
         }
@@ -126,7 +126,7 @@ function w(e) {
         analyticsLocations: L,
         analyticsObject: {
           page: P,
-          section: w,
+          section: R,
           object: S.qAy.BUTTON_CTA,
           objectType: S.AnalyticsObjectTypes.GIFT
         }
@@ -188,7 +188,7 @@ function w(e) {
               let {
                 default: e
               } = await n.e("5890").then(n.bind(n, 171793));
-              return n => (0, r.jsx)(e, R(N({}, n), {
+              return n => (0, r.jsx)(e, w(N({}, n), {
                 giftIntentType: t,
                 analyticsLocationHistory: L
               }))

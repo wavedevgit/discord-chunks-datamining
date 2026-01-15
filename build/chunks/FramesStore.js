@@ -50,8 +50,8 @@ function f(e, t) {
 }
 let p = null,
   _ = new Map,
-  m = new Map,
-  h = new Map;
+  h = new Map,
+  m = new Map;
 
 function g(e) {
   let {
@@ -115,7 +115,7 @@ function S(e) {
     lockState: n,
     pictureInPictureLockState: r
   } = e;
-  null == n ? m.delete(t) : m.set(t, n), null === r ? h.delete(t) : true !== r && h.set(t, r)
+  null == n ? h.delete(t) : h.set(t, n), null === r ? m.delete(t) : true !== r && m.set(t, r)
 }
 class I extends(r = Chunk442837.ZP.Store) {
   getConnectedFrame() {
@@ -136,11 +136,11 @@ class I extends(r = Chunk442837.ZP.Store) {
     return null != e ? null != (t = _.get(e)) && t : _.size > 0
   }
   getOrientationLockStateForApp(e) {
-    return m.get(e)
+    return h.get(e)
   }
   getPipOrientationLockStateForApp(e) {
     var t;
-    return null != (t = h.get(e)) ? t : this.getOrientationLockStateForApp(e)
+    return null != (t = m.get(e)) ? t : this.getOrientationLockStateForApp(e)
   }
 }
 c(I, "displayName", "FramesStore");

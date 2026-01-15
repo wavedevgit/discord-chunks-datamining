@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk607889 = require("./607889.js"),
   Chunk94432 = require("./94432.js"),
   Chunk94863 = require("./94863.js");
-let h = 40,
+let m = 40,
   g = Chunk94432.e3 / 1e3,
   E = 294,
   b = 45,
@@ -53,12 +53,12 @@ function P(e, t) {
   }
 }
 
-function R(e) {
+function w(e) {
   let t;
-  return Math.floor(((t = e <= g ? h : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - h) + h) + O) / v) * v - O
+  return Math.floor(((t = e <= g ? m : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - m) + m) + O) / v) * v - O
 }
 
-function w(e) {
+function R(e) {
   if (null == e) return;
   let t = 2 * y + O;
   return Math.floor((e + O) / t)
@@ -92,7 +92,7 @@ function L(e) {
 
 function j(e, t) {
   let n = i.useMemo(() => N(e), [e]),
-    r = i.useMemo(() => w(t), [t]);
+    r = i.useMemo(() => R(t), [t]);
   return i.useMemo(() => {
     var e;
     return null != (e = P(null != n ? n : [], r)) ? e : C
@@ -117,14 +117,14 @@ function k(e, t) {
     c = t ? a : n,
     [u, d] = M(c, t, e),
     [f, p] = M(t ? o : e ? i : r, t, e),
-    [_, m] = M(e ? c : r, t, e);
+    [_, h] = M(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
     lastActiveFillColor: f,
     activeFillColor: p,
     lastInactiveFillColor: _,
-    inactiveFillColor: m
+    inactiveFillColor: h
   }
 }
 
@@ -144,13 +144,13 @@ function G(e) {
     playing: d,
     onDrag: f,
     onDragStart: _,
-    onDragEnd: h
+    onDragEnd: m
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => R(s), [s]), y = i.useRef(true), O = j(n, E), v = i.useRef(l), I = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
+  } = (0, c.ZP)(), b = i.useMemo(() => w(s), [s]), y = i.useRef(true), O = j(n, E), v = i.useRef(l), I = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
     lastBackgroundFillColor: P,
-    backgroundFillColor: w,
+    backgroundFillColor: R,
     lastActiveFillColor: D,
     activeFillColor: M,
     lastInactiveFillColor: G,
@@ -203,7 +203,7 @@ function G(e) {
       (v.current !== l || I.current !== d) && (v.current = l, I.current = d, C.current = n), null != C.current && n > C.current + A && (C.current = null);
       let s = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
-      let [c, u] = U(P, w, n, C.current);
+      let [c, u] = U(P, R, n, C.current);
       o = o || u, i.fillStyle = c;
       for (let e = 0; e < O.length; e++) L({
         context: i,
@@ -216,8 +216,8 @@ function G(e) {
       i.fill();
       let [f, p] = U(G, Z, n, C.current);
       o = o || p;
-      let [_, m] = U(D, M, n, C.current);
-      o = o || m;
+      let [_, h] = U(D, M, n, C.current);
+      o = o || h;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],
           n = Math.max(t.getCurrentValue(), O[e] - .1);
@@ -235,16 +235,16 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, N, O, E, a, s, l, d, P, w, D, M, G, Z]);
+  }, [g, N, O, E, a, s, l, d, P, R, D, M, G, Z]);
   let [, V] = (0, u.Z)({
     ref: g,
     onDrag: f,
     onDragStart: _,
-    onDragEnd: h
+    onDragEnd: m
   });
   return (0, r.jsx)("canvas", {
     onMouseDown: V,
-    className: o()(m.canvas, t),
+    className: o()(h.canvas, t),
     style: {
       width: b
     },

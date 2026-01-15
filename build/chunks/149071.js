@@ -51,14 +51,14 @@ function f(e, t) {
 }
 let p = {},
   _ = 0,
-  m = 15 * Chunk70956.Z.Millis.SECOND;
+  h = 15 * Chunk70956.Z.Millis.SECOND;
 
-function h() {
+function m() {
   p = u({}, a.Z.getCollapsedCategories())
 }
 
 function g() {
-  __OVERLAY__ || (clearTimeout(_), _ = setTimeout(() => b({}), m))
+  __OVERLAY__ || (clearTimeout(_), _ = setTimeout(() => b({}), h))
 }
 async function E(e, t) {
   null == e || e === l.ME ? await r.tn.patch({
@@ -107,7 +107,7 @@ class v extends Chunk147913.Z {
       CATEGORY_EXPAND: g,
       CATEGORY_COLLAPSE_ALL: g,
       CATEGORY_EXPAND_ALL: g,
-      POST_CONNECTION_OPEN: h,
+      POST_CONNECTION_OPEN: m,
       USER_GUILD_SETTINGS_FULL_UPDATE: O
     }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", b)
   }

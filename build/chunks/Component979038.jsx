@@ -2,7 +2,7 @@
 /** chunk id: 979038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -34,56 +34,56 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js");
 
-function w(e) {
+function R(e) {
   var t;
   let {
     user: n,
-    activity: w,
+    activity: R,
     onAction: D,
     onClose: x,
     application: L,
     containerClassName: j
   } = e, {
     themeType: M
-  } = (0, y.z)(), k = (0, i.e7)([h.default], () => h.default.getId() === n.id), U = (0, u.q)(L), G = (0, _.L)(null != (t = null == w ? true : w.application_id) ? t : null == L ? true : L.id), {
+  } = (0, y.z)(), k = (0, i.e7)([m.default], () => m.default.getId() === n.id), U = (0, u.q)(L), G = (0, _.L)(null != (t = null == R ? true : R.application_id) ? t : null == L ? true : L.id), {
     analyticsLocations: Z
   } = (0, p.ZP)(f.Z.USER_PROFILE_ACTIVITY_BUTTONS), F = (0, b.Un)({
     location: "UserProfileActivityButtons"
-  }), B = M === R.l.MODAL || M === R.l.MODAL_V2, V = M === R.l.POPOUT, H = (() => k ? V && (null == w ? true : w.type) === P.IIU.PLAYING && (null == L ? true : L.id) != null && F ? (0, r.jsx)(d.Z, {
+  }), B = M === w.l.MODAL || M === w.l.MODAL_V2, V = M === w.l.POPOUT, H = (() => k ? V && (null == R ? true : R.type) === P.IIU.PLAYING && (null == L ? true : L.id) != null && F ? (0, r.jsx)(d.Z, {
     applicationId: L.id,
     onAction: D,
     onClose: x
-  }) : null : G || !U || null == L || B ? (0, l.Z)(w) ? (0, r.jsx)(T.Z, {
+  }) : null : G || !U || null == L || B ? (0, l.Z)(R) ? (0, r.jsx)(T.Z, {
     platformType: P.ABu.XBOX,
     icon: () => (0, r.jsx)(E.Z, {}),
     onAction: D
-  }) : (0, s.Z)(w) ? (0, r.jsx)(T.Z, {
+  }) : (0, s.Z)(R) ? (0, r.jsx)(T.Z, {
     platformType: P.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(g.Z, {}),
     onAction: D
-  }) : (0, c.Z)(w) ? (0, r.jsx)(A.Z, {
-    activity: w,
+  }) : (0, c.Z)(R) ? (0, r.jsx)(A.Z, {
+    activity: R,
     onAction: D
-  }) : (0, a.Z)(w, P.xjy.JOIN) || (0, o.Z)(w) ? (0, r.jsx)(S.Z, {
+  }) : (0, a.Z)(R, P.xjy.JOIN) || (0, o.Z)(R) ? (0, r.jsx)(S.Z, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: D,
     onClose: x
-  }) : (null == w ? true : w.type) === P.IIU.HANG_STATUS ? (0, r.jsx)(v.Z, {
+  }) : (null == R ? true : R.type) === P.IIU.HANG_STATUS ? (0, r.jsx)(v.Z, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: D,
     onClose: x
-  }) : (null == w ? true : w.buttons) != null && (null == w ? true : w.buttons.length) >= 1 ? (0, r.jsx)(O.Z, {
+  }) : (null == R ? true : R.buttons) != null && (null == R ? true : R.buttons.length) >= 1 ? (0, r.jsx)(O.Z, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: D
-  }) : (0, a.Z)(w, P.xjy.INSTANCE) ? (0, r.jsx)(I.Z, {
+  }) : (0, a.Z)(R, P.xjy.INSTANCE) ? (0, r.jsx)(I.Z, {
     user: n,
-    activity: w,
+    activity: R,
     onAction: D
-  }) : (0, m.dS)(w) ? (0, r.jsx)(C.Z, {
-    activity: w,
+  }) : (0, h.dS)(R) ? (0, r.jsx)(C.Z, {
+    activity: R,
     onAction: D,
     onClose: x
   }) : null : (0, r.jsx)(N.Z, {

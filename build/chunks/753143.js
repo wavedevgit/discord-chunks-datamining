@@ -64,8 +64,8 @@ function f(e) {
     sidebarHeight: f,
     listHeaderHeight: p,
     chunkSize: _ = 256,
-    paddingTop: m = 0,
-    paddingBottom: h = 0,
+    paddingTop: h = 0,
+    paddingBottom: m = 0,
     getScrollerState: g,
     getAnchorId: E
   } = e, b = (0, a.Z)(), y = (0, r.useRef)(d), [O] = (0, r.useState)(() => new i.Z), {
@@ -100,17 +100,17 @@ function f(e) {
       let e = Math.max(0, S * _);
       return null != f && e < f
     }, [_, S, f]),
-    R = (0, r.useMemo)(() => v > 0 ? y.current : (O.mergeProps({
+    w = (0, r.useMemo)(() => v > 0 ? y.current : (O.mergeProps({
       sectionHeight: n,
       rowHeight: s,
       footerHeight: c,
       listHeaderHeight: p,
-      paddingBottom: h,
-      paddingTop: m,
+      paddingBottom: m,
+      paddingTop: h,
       sections: t,
       getAnchorId: E
-    }), O.compute(Math.max(0, S * _), I * _)), [v, S, I, n, s, c, p, h, m, t, O, _, E]);
-  return (0, r.useLayoutEffect)(() => void(y.current = R)), u(l({}, R), {
+    }), O.compute(Math.max(0, S * _), I * _)), [v, S, I, n, s, c, p, m, h, t, O, _, E]);
+  return (0, r.useLayoutEffect)(() => void(y.current = w)), u(l({}, w), {
     listComputer: O,
     forceUpdateOnChunkChange: T,
     anchor: A,

@@ -69,8 +69,8 @@ let S = e => {
     onUnmount: s,
     target: u,
     rect: _,
-    position: m,
-    align: h,
+    position: h,
+    align: m,
     impressionName: E,
     impressionProperties: b,
     disableClickTrap: y = false
@@ -116,16 +116,16 @@ let S = e => {
       C.dispatch(g.CkL.POPOUT_HIDE)
     }, [C]),
     P = (0, l.E)("ContextMenu"),
-    R = u.ownerDocument;
+    w = u.ownerDocument;
   return P ? (0, r.jsx)(o.pS, {
     spacing: 0,
     open: true,
-    ownerDocument: R,
+    ownerDocument: w,
     onOpenChange: e => {
       e ? A() : (N(), v(), I.current())
     },
     overrideTargetRect: _,
-    placement: (0, o.a_)(null != m ? m : "right", null != h ? h : "top"),
+    placement: (0, o.a_)(null != h ? h : "right", null != m ? m : "top"),
     blockPointerEvents: !y,
     crossAccessFlip: false,
     renderLayer: e => {
@@ -133,7 +133,7 @@ let S = e => {
         update: n
       } = e;
       return t({
-        position: m
+        position: h
       }, n)
     },
     children: () => null
@@ -142,8 +142,8 @@ let S = e => {
     onUnmount: N,
     targetRef: S,
     overrideTargetRect: _,
-    position: null != m ? m : "right",
-    align: null != h ? h : "top",
+    position: null != h ? h : "right",
+    align: null != m ? m : "top",
     autoInvert: true,
     ref: O,
     nudgeAlignIntoViewport: true,
@@ -157,7 +157,7 @@ class I extends Chunk473749.PureComponent {
       renderLazy: e,
       renderWindow: t
     } = this.props;
-    if (t.addEventListener("resize", this.closeResize, true), h.S.subscribe(g.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != e) {
+    if (t.addEventListener("resize", this.closeResize, true), m.S.subscribe(g.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != e) {
       let t = setTimeout(() => {
         this.setState({
           render: () => (0, r.jsx)(c.TlX, {})
@@ -183,7 +183,7 @@ class I extends Chunk473749.PureComponent {
     let {
       renderWindow: e
     } = this.props;
-    e.removeEventListener("resize", this.closeResize, true), h.S.unsubscribe(g.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
+    e.removeEventListener("resize", this.closeResize, true), m.S.unsubscribe(g.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
   }
   render() {
     var e, t, n;
@@ -244,10 +244,10 @@ function T() {
     contextMenu: e,
     version: t,
     isOpen: n
-  } = (0, s.cj)([m.Z], () => ({
-    contextMenu: m.Z.getContextMenu(),
-    version: m.Z.version,
-    isOpen: m.Z.isOpen()
+  } = (0, s.cj)([h.Z], () => ({
+    contextMenu: h.Z.getContextMenu(),
+    version: h.Z.version,
+    isOpen: h.Z.isOpen()
   })), a = (0, s.e7)([_.Z], () => _.Z.theme), {
     appContext: o,
     renderWindow: l

@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -89,15 +89,15 @@ let E = function(e) {
       innerClassName: A,
       wrapContent: N,
       highlighted: P,
-      focusProps: R
+      focusProps: w
     } = e,
-    w = h(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  w.className = o()(w.className, d.container, {
+    R = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
+  R.className = o()(R.className, d.container, {
     [d.selected]: v,
     [d.highlighted]: P,
     [null != C ? C : ""]: v,
     [d.clickable]: !v && (null != I || null != y)
-  }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
+  }), R["aria-selected"] = null != (t = R["aria-selected"]) ? t : v;
   let D = i.useRef(null),
     x = (0, r.jsxs)("div", {
       className: o()(d.childContainer, {
@@ -138,24 +138,24 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != I ? (0, r.jsx)(l.tEY, m(p({}, R), {
-    children: (0, r.jsx)(s.rU, m(p({
+  return null != I ? (0, r.jsx)(l.tEY, h(p({}, w), {
+    children: (0, r.jsx)(s.rU, h(p({
       to: I,
       onClick: y
-    }, w), {
+    }, R), {
       role: "listitem",
       ref: n,
       children: x
     }))
-  })) : null != y ? (0, r.jsx)(l.P3F, m(p({
+  })) : null != y ? (0, r.jsx)(l.P3F, h(p({
     onClick: y,
-    focusProps: R
-  }, w), {
+    focusProps: w
+  }, R), {
     role: "listitem",
     innerRef: n,
     children: x
-  })) : (0, r.jsx)(l.tEY, m(p({}, R), {
-    children: (0, r.jsx)("div", m(p({}, w), {
+  })) : (0, r.jsx)(l.tEY, h(p({}, w), {
+    children: (0, r.jsx)("div", h(p({}, R), {
       role: "listitem",
       ref: n,
       children: x

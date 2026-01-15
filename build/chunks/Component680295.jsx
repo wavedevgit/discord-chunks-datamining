@@ -53,24 +53,24 @@ let v = e => {
       useOpacityOnHover: c = true,
       autoPlay: u = true,
       restartMethod: d,
-      profileEffectConfig: m,
+      profileEffectConfig: h,
       noBorderRadius: E = false,
       delayIntro: y = true,
       layerData: O
     } = e, v = i.useRef(null), [S, I] = i.useState([]), [T, C] = i.useState(0), [A, N] = i.useState(0), {
       accessibilityLabel: P
-    } = m, R = y ? f.JH : .1, [w, D] = i.useState(-R), {
+    } = h, w = y ? f.JH : .1, [R, D] = i.useState(-w), {
       stop: x,
       reset: L,
       ticking: j
     } = (0, _.Z)(e => {
       D(t => t + e)
-    }), M = i.useRef(R);
+    }), M = i.useRef(w);
     i.useEffect(() => {
-      M.current = R
+      M.current = w
     }), i.useEffect(() => {
-      D(-M.current), I((0, h.H)(m.effects))
-    }, [m]), i.useEffect(() => {
+      D(-M.current), I((0, m.H)(h.effects))
+    }, [h]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
       S.forEach(n => {
@@ -80,8 +80,8 @@ let v = e => {
     }, [N, S]);
     let [k, U] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (x(), D(0)), !l && k && j.current && (x(), D(0)), a && l && !j.current && (L(), m.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === p.Q.FromStart ? 0 : T) : D(0))
-    }, [l, k, T, a, x, L, j, m.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (x(), D(0)), !l && k && j.current && (x(), D(0)), a && l && !j.current && (L(), h.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === p.Q.FromStart ? 0 : T) : D(0))
+    }, [l, k, T, a, x, L, j, h.animationType, u, d]), (0, r.jsx)("div", {
       ref: v,
       className: o()(b.profileEffects, {
         [b.hovered]: l && c
@@ -91,11 +91,11 @@ let v = e => {
       children: (0, r.jsx)("div", {
         className: E ? b.innerNoRadius : b.inner,
         children: S.map((e, i) => {
-          if (!j.current && m.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != m.staticFrameSrc && 0 === i && true === u) {
+          if (!j.current && h.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != h.staticFrameSrc && 0 === i && true === u) {
             var a, o, l, c;
             let {
               staticFrameSrc: n
-            } = m;
+            } = h;
             return (0, r.jsx)("img", {
               className: b.effect,
               style: {
@@ -109,9 +109,9 @@ let v = e => {
           }
           return (0, r.jsx)(g.Z, {
             layerConfig: e,
-            animationType: m.animationType,
+            animationType: h.animationType,
             ticking: j.current,
-            time: w,
+            time: R,
             hasPlayedThrough: k,
             setHasPlayedThrough: U,
             maxLoops: n,
@@ -159,9 +159,9 @@ let v = e => {
   I = e => {
     let t = (0, d.n)(),
       n = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
-      i = (0, m.V)(e.skuId),
+      i = (0, h.V)(e.skuId),
       a = (0, u.ex)(null == i ? true : i.config),
-      o = (0, h.C)(null == i ? true : i.config),
+      o = (0, m.C)(null == i ? true : i.config),
       f = null != a ? a : o,
       {
         autoPlay: p = true,

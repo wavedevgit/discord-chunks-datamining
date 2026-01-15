@@ -29,11 +29,11 @@ function _() {
   }).enabled && (0, o.N)()
 }
 
-function m() {
+function h() {
   u = {}, d = null
 }
 
-function h(e) {
+function m(e) {
   let {
     statistics: t
   } = e;
@@ -93,8 +93,8 @@ class E extends(r = Chunk442837.ZP.Store) {
 }
 c(E, "displayName", "LibraryApplicationStatisticsStore");
 let b = new E(Chunk570140.Z, {
-  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: h,
+  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: m,
   ACTIVITY_UPDATE_START: g,
-  LOGOUT: m,
+  LOGOUT: h,
   CONNECTION_OPEN: _
 })

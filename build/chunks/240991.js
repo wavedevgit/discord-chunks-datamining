@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   getOrParseBioAST: () => g,
-  parseBioReact: () => m,
+  parseBioReact: () => h,
   parseBioReactWithCachedAST: () => E,
   parseBioReactWithoutScrolling: () => y
 }), require("./781311.js");
@@ -25,12 +25,12 @@ let p = (0, Chunk364458.Z)([Chunk428595.Z.PROFILE_BIO_RULES, (0, Chunk691424.Z)(
   _ = new(o())({
     max: 2e3
   }),
-  m = Chunk25209.w4(p),
-  h = true;
+  h = Chunk25209.w4(p),
+  m = true;
 
 function g(e) {
   let t = _.get(e);
-  return null != t || (t = h(e, true), _.set(e, t)), t
+  return null != t || (t = m(e, true), _.set(e, t)), t
 }
 
 function E(e) {

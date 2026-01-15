@@ -98,7 +98,7 @@ class T {
     } = this.internalCheckoutFlowControls;
     return "one_time_payment" === e ? l.WA : "unified" === e ? {
       key: null,
-      renderStep: e => (0, r.jsx)(m.I, {
+      renderStep: e => (0, r.jsx)(h.I, {
         paymentModalStepProps: e,
         defaultStep: o.h8.REVIEW
       })
@@ -147,7 +147,7 @@ class T {
     let e = this.getUnifiedStepDefinition(o.h8.REVIEW);
     return (0, d._)(e) ? l.wo : {
       key: o.h8.REVIEW,
-      renderStep: t => (0, r.jsx)(h.z, {
+      renderStep: t => (0, r.jsx)(m.z, {
         paymentModalStepProps: t,
         unifiedStepDefinition: e
       }),
@@ -192,8 +192,8 @@ class T {
       applicationId: f,
       analyticsSourceLocation: p,
       analyticsLocations: _
-    } = e, m = null != d ? d : (0, i.Z)(), {
-      modalKey: h
+    } = e, h = null != d ? d : (0, i.Z)(), {
+      modalKey: m
     } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), b = false, O = null != o ? o : true;
     return (0, a.ZDy)(async () => {
       let {
@@ -212,7 +212,7 @@ class T {
         onClose: c,
         renderHeader: g,
         skuId: u,
-        loadId: m,
+        loadId: h,
         applicationId: E,
         analyticsLocations: _,
         analyticsSourceLocation: p,
@@ -222,9 +222,9 @@ class T {
       })
     }, v(y({}, t), {
       onCloseRequest() {
-        null != t.onCloseRequest && t.onCloseRequest(b, m), (0, a.Mr3)(h)
+        null != t.onCloseRequest && t.onCloseRequest(b, h), (0, a.Mr3)(m)
       },
-      modalKey: h
+      modalKey: m
     }))
   }
   constructor({

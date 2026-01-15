@@ -34,7 +34,7 @@ function E(e, t, n) {
     sensitivity: "base"
   }), {
     direction: S
-  } = (0, _.j)(), I = t.selectionManager.disabledBehavior, T = (0, h.useMemo)(() => E || new(0, a.x)({
+  } = (0, _.j)(), I = t.selectionManager.disabledBehavior, T = (0, m.useMemo)(() => E || new(0, a.x)({
     collection: t.collection,
     disabledKeys: t.disabledKeys,
     disabledBehavior: I,
@@ -56,16 +56,16 @@ function E(e, t, n) {
   let {
     column: N,
     direction: P
-  } = t.sortDescriptor || {}, R = (0, m.q)(g(i.Z), "@react-aria/table"), w = (0, h.useMemo)(() => {
+  } = t.sortDescriptor || {}, w = (0, h.q)(g(i.Z), "@react-aria/table"), R = (0, m.useMemo)(() => {
     var e, n;
     let r = null != (n = null == (e = t.collection.columns.find(e => e.key === N)) ? true : e.textValue) ? n : "";
-    return P && N ? R.format(`${P}Sort`, {
+    return P && N ? w.format(`${P}Sort`, {
       columnName: r
     }) : true
-  }, [P, N, t.collection.columns]), D = (0, c.P)(w);
+  }, [P, N, t.collection.columns]), D = (0, c.P)(R);
   return (0, u.r)(() => {
-    w && (0, o.xQ)(w, "assertive", 500)
-  }, [w]), {
+    R && (0, o.xQ)(R, "assertive", 500)
+  }, [R]), {
     gridProps: (0, d.d)(A, D, {
       "aria-describedby": [D["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ")
     })

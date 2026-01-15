@@ -15,7 +15,7 @@ var a, Chunk392711 = require("./392711.js"),
   Chunk999382 = require("./999382.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,14 +24,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -55,7 +55,7 @@ function N(e) {
   if (t !== _.pNK.INTEGRATIONS) returnfalse;
   if (null == r) {
     let e = p.Z.getGuildId();
-    null != e && (u.Z.fetchForGuild(e), v = true), R(false)
+    null != e && (u.Z.fetchForGuild(e), v = true), w(false)
   }
 }
 
@@ -67,7 +67,7 @@ function P(e) {
   i = t, A = n
 }
 
-function R(e) {
+function w(e) {
   if (null != (r = p.Z.getProps().guild) && d.Z.can(_.Plq.MANAGE_GUILD, r)) {
     let e = p.Z.getProps().integrations;
     null == e && (S = true), g = null != e ? e : []
@@ -83,7 +83,7 @@ function R(e) {
   b = null, I = _.QZA.OPEN, T = {}, C = false
 }
 
-function w() {
+function R() {
   r = null, g = [], E = [], b = null, y = null, O = null, I = _.QZA.CLOSED, C = false
 }
 let D = s().debounce(() => {
@@ -95,7 +95,7 @@ function x(e) {
     settings: t
   } = e;
   if (null == y) returnfalse;
-  y = h({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, C = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, C = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, C = true), C && D()
+  y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, C = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, C = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, C = true), C && D()
 }
 
 function L(e) {
@@ -103,7 +103,7 @@ function L(e) {
     settings: t
   } = e;
   if (null == O) returnfalse;
-  O = h({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && D()
+  O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && D()
 }
 
 function j() {
@@ -140,7 +140,7 @@ function k(e) {
         if (n === t.id) returntrue
       });
     if (null != r) {
-      let n = h({}, t, r);
+      let n = m({}, t, r);
       (null == y ? true : y.id) === n.id && (false === n.enabled ? y = null : C || (y = n)), g[e] = n
     } else(null == y ? true : y.id) === t.id && (y = null), g.splice(e, 1)
   }
@@ -164,7 +164,7 @@ function U(e) {
         if (n === t.id) returntrue
       });
       if (null != r) {
-        let n = h({}, t, r);
+        let n = m({}, t, r);
         E[e] = n, C || (null == O ? true : O.id) !== n.id || (O = n)
       } else(null == O ? true : O.id) === t.id && (O = null), E.splice(e, 1)
     }
@@ -218,11 +218,11 @@ function H() {
 }
 
 function Y() {
-  return R(false)
+  return w(false)
 }
 
 function W() {
-  return R(true)
+  return w(true)
 }
 
 function K(e) {
@@ -299,7 +299,7 @@ class q extends(a = Chunk442837.ZP.Store) {
     })) ? true : t.application
   }
 }
-m(q, "displayName", "GuildSettingsIntegrationsStore");
+h(q, "displayName", "GuildSettingsIntegrationsStore");
 let Q = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: Y,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: W,
@@ -314,7 +314,7 @@ let Q = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: L,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
-    GUILD_SETTINGS_CLOSE: w,
+    GUILD_SETTINGS_CLOSE: R,
     GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
     WEBHOOKS_UPDATE: U,
     INTEGRATION_SETTINGS_SUBMITTING: j,

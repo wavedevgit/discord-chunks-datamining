@@ -19,11 +19,11 @@ var i = r(require("./830184.js")),
   f = /^--/;
 
 function p(e, t) {
-  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || h.hasOwnProperty(e) && h[e] ? ("" + t).trim() : t + "px"
+  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || m.hasOwnProperty(e) && m[e] ? ("" + t).trim() : t + "px"
 }
 var _ = {};
 
-function m(e, t) {
+function h(e, t) {
   if (!e.nodeType || !e.setAttribute) returnfalse;
   var n = "filter" === e.nodeName || e.parentNode && "filter" === e.parentNode.nodeName,
     r = t,
@@ -33,7 +33,7 @@ function m(e, t) {
     l = r.scrollLeft,
     c = i(r, ["style", "children", "scrollTop", "scrollLeft"]),
     d = Object.values(c),
-    m = Object.keys(c).map(function(t) {
+    h = Object.keys(c).map(function(t) {
       return n || e.hasAttribute(t) ? t : _[t] || (_[t] = t.replace(/([A-Z])/g, function(e) {
         return "-" + e.toLowerCase()
       }))
@@ -43,12 +43,12 @@ function m(e, t) {
       if (a.hasOwnProperty(t)) {
         var n = p(t, a[t]);
         "float" === t ? t = "cssFloat" : f.test(t) ? e.style.setProperty(t, n) : e.style[t] = n
-      } m.forEach(function(t, n) {
+      } h.forEach(function(t, n) {
       e.setAttribute(t, d[n])
     }), true !== s && (e.scrollTop = s), true !== l && (e.scrollLeft = l)
   })
 }
-var h = {
+var m = {
     animationIterationCount: true,
     borderImageOutset: true,
     borderImageSlice: true,
@@ -95,11 +95,11 @@ var h = {
     return e + t.charAt(0).toUpperCase() + t.substring(1)
   },
   E = ["Webkit", "Ms", "Moz", "O"];
-h = Object.keys(h).reduce(function(e, t) {
+m = Object.keys(m).reduce(function(e, t) {
   return E.forEach(function(n) {
     return e[g(n, t)] = e[t]
   }), e
-}, h);
+}, m);
 var b = /^(matrix|translate|scale|rotate|skew)/,
   y = /^(translate)/,
   O = /^(rotate|skew)/,
@@ -195,7 +195,7 @@ Chunk247901.Globals.assign({
   batchedUpdates: Chunk24156.unstable_batchedUpdates
 });
 var A = Chunk774505.createHost(C, {
-  applyAnimatedValues: m,
+  applyAnimatedValues: h,
   createAnimatedStyle: function(e) {
     return new I(e)
   },

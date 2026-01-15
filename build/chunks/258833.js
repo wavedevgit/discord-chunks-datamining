@@ -20,11 +20,11 @@ function _(e, t) {
   if (t.has(e)) throw TypeError("Cannot initialize the same private elements twice on an object")
 }
 
-function m(e, t) {
+function h(e, t) {
   return t.get ? t.get.call(e) : t.value
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   if (t.set) t.set.call(e, n);
   else {
     if (!t.writable) throw TypeError("attempted to set read only private field");
@@ -39,7 +39,7 @@ function g(e, t, n) {
 
 function E(e, t) {
   var n = g(e, t, "get");
-  return m(e, n)
+  return h(e, n)
 }
 
 function b(e, t, n) {
@@ -48,7 +48,7 @@ function b(e, t, n) {
 
 function y(e, t, n) {
   var r = g(e, t, "set");
-  return h(e, r, n), n
+  return m(e, r, n), n
 }
 
 function O(e, t, n) {

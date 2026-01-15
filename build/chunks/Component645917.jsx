@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,7 +100,7 @@ function y(e) {
       title: n,
       body: a,
       graphic: p,
-      size: m = "md",
+      size: h = "md",
       actions: E,
       gradientColor: y,
       onRequestClose: O,
@@ -113,8 +113,8 @@ function y(e) {
       returnRef: N,
       onNudgeChange: P
     } = e,
-    R = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
-  let [w, D] = i.useState(null != v ? v : "top");
+    w = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
+  let [R, D] = i.useState(null != v ? v : "top");
   i.useEffect(() => {
     null != v && D(v)
   }, [v]);
@@ -136,10 +136,10 @@ function y(e) {
     }, []),
     k = C ? f.caretHoverable : true,
     U = _({
-      targetElementRef: R.targetElementRef,
-      shouldShow: R.shouldShow,
-      hasVideo: R.hasVideo,
-      position: w,
+      targetElementRef: w.targetElementRef,
+      shouldShow: w.shouldShow,
+      hasVideo: w.hasVideo,
+      position: R,
       caretConfig: x,
       onRequestClose: L,
       gradientColor: y,
@@ -150,13 +150,13 @@ function y(e) {
       returnRef: N,
       gradientOffsetBottom: 0,
       experimental_ignoreModalClicks: false
-    }, "edge" === R.alignmentStrategy ? {
+    }, "edge" === w.alignmentStrategy ? {
       alignmentStrategy: "edge",
-      align: R.align
+      align: w.align
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(s.m, h(_({}, U), {
+  return (0, r.jsx)(s.m, m(_({}, U), {
     children: (0, r.jsxs)("div", {
       "data-mana-component": "popover",
       children: [T && (0, r.jsx)(u.u, {
@@ -164,10 +164,10 @@ function y(e) {
         variant: null != y ? "color-mix" : true
       }), null != p && (0, r.jsx)("div", {
         className: o()(f.graphic, {
-          [f["graphic--".concat(m)]]: null != m
+          [f["graphic--".concat(h)]]: null != h
         }),
-        children: (0, r.jsx)(d.zsu, h(_({}, p), {
-          aspectRatio: null != (t = p.aspectRatio) ? t : "sm" === m ? "2/1" : "16/9"
+        children: (0, r.jsx)(d.zsu, m(_({}, p), {
+          aspectRatio: null != (t = p.aspectRatio) ? t : "sm" === h ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(b, {
         title: n,

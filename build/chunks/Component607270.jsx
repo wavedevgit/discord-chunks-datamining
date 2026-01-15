@@ -41,16 +41,16 @@ function g() {
       }), (0, d.default)()
     };
   return (0, r.jsxs)("div", {
-    className: m.container,
+    className: h.container,
     children: [(0, r.jsx)("div", {
-      className: m.iconContainer,
+      className: h.iconContainer,
       children: (0, r.jsx)("img", {
-        src: h.Z,
-        className: m.bannerImage,
+        src: m.Z,
+        className: h.bannerImage,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.textContent,
+      className: h.textContent,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
@@ -60,7 +60,7 @@ function g() {
         children: _.intl.string(p.default.nla4RG)
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: h.buttonContainer,
       children: (0, r.jsx)(a.zxk, {
         variant: "primary",
         text: _.intl.string(_.t.uw9zI7),

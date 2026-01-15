@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   IS: () => f,
-  MH: () => m,
+  MH: () => h,
   UE: () => _,
   as: () => l,
   fP: () => d,
@@ -86,7 +86,7 @@ let d = () => (0, r.Z)(),
       official_guild_id: c
     })
   },
-  m = e => {
+  h = e => {
     let {
       viewId: t,
       applicationId: n,

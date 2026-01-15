@@ -29,7 +29,7 @@ function b(e) {
     var e;
     let n = p.Z.getChannel(t.parent_id);
     return null != (e = null == n ? true : n.isForumLikeChannel()) && e
-  }), i = [m.Ie.NORMAL, m.Ie.SIDEBAR].includes(n);
+  }), i = [h.Ie.NORMAL, h.Ie.SIDEBAR].includes(n);
   return {
     shouldShow: t.isThread() && !r && i
   }
@@ -39,10 +39,10 @@ function y(e) {
   let {
     thread: t,
     pendingScheduledMessage: n
-  } = e, m = (0, d.KN)({
+  } = e, h = (0, d.KN)({
     location: "ThreadsAlsoSendToChannelArea"
   }), [b, y] = (0, o.Wu)([p.Z, f.Z], () => [t.isThread() ? p.Z.getChannel(t.parent_id) : null, f.Z.getAlsoSendToChannel(t.id)]), O = i.useCallback(e => {
-    _.default.track(h.rMx.MESSAGE_ALSO_SEND_TO_CHANNEL_TOGGLED, {
+    _.default.track(m.rMx.MESSAGE_ALSO_SEND_TO_CHANNEL_TOGGLED, {
       value: e,
       guild_id: t.guild_id,
       channel_id: t.id
@@ -55,10 +55,10 @@ function y(e) {
     name: a.ImpressionNames.MESSAGE_ALSO_SEND_TO_CHANNEL,
     type: a.ImpressionTypes.VIEW
   }, {
-    disableTrack: null == b || !m.enabled
-  }, [b, m.enabled]);
+    disableTrack: null == b || !h.enabled
+  }, [b, h.enabled]);
   let v = null != n;
-  if (!m.enabled || null == b) return null;
+  if (!h.enabled || null == b) return null;
   let S = (0, c.KS)(b),
     I = g.intl.format(g.t.UqL10G, {
       callToActionHook: (e, t) => (0, r.jsx)(s.Text, {

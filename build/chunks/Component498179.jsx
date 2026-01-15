@@ -59,8 +59,8 @@ function _(e) {
     size: u = "md",
     playButtonVariant: f,
     disabledVariant: _,
-    hideNotLaunchable: m,
-    tooltipPosition: h,
+    hideNotLaunchable: h,
+    tooltipPosition: m,
     onClick: g,
     className: E,
     source: b,
@@ -70,7 +70,7 @@ function _(e) {
     fullWidth: n,
     size: u,
     disabledVariant: _,
-    tooltipPosition: h,
+    tooltipPosition: m,
     onClick: g,
     className: E,
     hover: y,
@@ -84,7 +84,7 @@ function _(e) {
     children: "deprecated!"
   }) : (0, r.jsx)(l.Z, p(d({}, v), {
     variant: f,
-    hideNotLaunchable: m,
+    hideNotLaunchable: h,
     applicationId: t.id
   }))
 }

@@ -30,7 +30,7 @@ function y(e) {
     showReportOption: S = false,
     disableChangeWindows: I = false,
     minimal: T = false,
-    appContext: C = h.IlC.APP
+    appContext: C = m.IlC.APP
   } = e, {
     desktopSourceId: A,
     lastPickedContent: N
@@ -43,7 +43,7 @@ function y(e) {
       desktopSourceId: null == t ? true : t.id,
       lastPickedContent: n
     }
-  }), P = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), R = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), w = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), D = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, m.Z)(O, C), L = (0, _.Z)(O, C, g.Vq), j = null != A && w && (!A.startsWith("screen") || D), M = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
+  }), P = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), w = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), R = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), D = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, h.Z)(O, C), L = (0, _.Z)(O, C, g.Vq), j = null != A && R && (!A.startsWith("screen") || D), M = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
     (null == A ? true : A.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
@@ -87,7 +87,7 @@ function y(e) {
       checked: P,
       action: B
     }) : null,
-    Y = !R || I || M ? null : (0, r.jsx)(o.sNh, {
+    Y = !w || I || M ? null : (0, r.jsx)(o.sNh, {
       id: "change-windows",
       label: F,
       icon: o.hGI,

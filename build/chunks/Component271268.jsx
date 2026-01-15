@@ -2,7 +2,7 @@
 /** chunk id: 271268, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
 let N = 100,
   P = 1;
 
-function R() {
+function w() {
   let {
     voice: {
       totalVoiceMinutes: e,
@@ -48,9 +48,9 @@ function R() {
       }
     }
   } = (0, s.e7)([f.Z], () => f.Z.getCheckpointData()), {
-    duration: R,
-    unit: w
-  } = (0, p.Bi)(e), D = w === l.J6.HOURS, x = i.useContext(m.$r), L = i.useRef(null), j = i.useContext(b.xS), M = i.useContext(d.Q), k = (0, c.dQu)(M.primaryColor).hex(), U = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), G = i.useCallback(e => {
+    duration: w,
+    unit: R
+  } = (0, p.Bi)(e), D = R === l.J6.HOURS, x = i.useContext(h.$r), L = i.useRef(null), j = i.useContext(b.xS), M = i.useContext(d.Q), k = (0, c.dQu)(M.primaryColor).hex(), U = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), G = i.useCallback(e => {
     let t = L.current;
     if (null == t || t.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) return;
     let n = 0,
@@ -98,29 +98,29 @@ function R() {
           variant: "eyebrow",
           className: T.eyebrow,
           children: I.intl.format(S.default.Xu0QsX, {
-            numHours: R
+            numHours: w
           })
         }) : (0, r.jsx)(y.Z, {
           variant: "eyebrow",
           className: T.eyebrow,
           children: I.intl.format(S.default.UZbUtl, {
-            numMinutes: R
+            numMinutes: w
           })
         })]
       }), (0, r.jsx)(O.Z, {
-        end: R,
+        end: w,
         alignment: "center"
       }), (0, r.jsx)(y.Z, {
         variant: "heading-xxl/medium",
         className: C.subtitle,
         children: F ? I.intl.format(S.default["36PZwu"], {
           percent: 100 - t,
-          percentHook: (e, t) => (0, r.jsx)(h.Z, {
+          percentHook: (e, t) => (0, r.jsx)(m.Z, {
             children: e
           }, t)
         }) : I.intl.format(S.default.VaydtR, {
           month: Z,
-          monthHook: (e, t) => (0, r.jsx)(h.Z, {
+          monthHook: (e, t) => (0, r.jsx)(m.Z, {
             children: e
           }, t)
         })

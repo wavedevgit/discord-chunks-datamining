@@ -14,13 +14,13 @@ var Chunk98405 = require("./98405.js"),
   p = Chunk127849.Symbol,
   _ = p && p.prototype;
 if (Chunk507604 && Chunk880181(p) && (!("description" in _) || true !== p().description)) {
-  var m = {},
-    h = function() {
+  var h = {},
+    m = function() {
       var e = arguments.length < 1 || true === arguments[0] ? true : u(arguments[0]),
         t = c(_, this) ? new p(e) : true === e ? p() : p(e);
-      return "" === e && (m[t] = true), t
+      return "" === e && (h[t] = true), t
     };
-  Chunk190289(h, p), h.prototype = _, _.constructor = h;
+  Chunk190289(m, p), m.prototype = _, _.constructor = m;
   var g = "Symbol(description detection)" === String(p("description detection")),
     E = Chunk46015(_.valueOf),
     b = Chunk46015(_.toString),
@@ -31,7 +31,7 @@ if (Chunk507604 && Chunk880181(p) && (!("description" in _) || true !== p().desc
     configurable: true,
     get: function() {
       var e = E(this);
-      if (s(m, e)) return "";
+      if (s(h, e)) return "";
       var t = b(e),
         n = g ? v(t, 7, false) : O(t, y, "$1");
       return "" === n ? true : n
@@ -41,6 +41,6 @@ if (Chunk507604 && Chunk880181(p) && (!("description" in _) || true !== p().desc
     constructor: true,
     forced: true
   }, {
-    Symbol: h
+    Symbol: m
   })
 }

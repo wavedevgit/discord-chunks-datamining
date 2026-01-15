@@ -33,12 +33,12 @@ function y(e) {
   } = e, {
     newestAnalyticsLocation: S
   } = (0, o.ZP)(), I = (0, u.Aq)(), T = (0, i.e7)([p.default], () => p.default.getId() === (null == t ? true : t.id)), C = (0, l.m)(null != n ? n : null), A = (0, i.e7)([_.Z], () => null != y ? y : _.Z.getChannelId(n, true), [y, n]);
-  return null == n || !C || T ? null : (0, r.jsx)(m.oY, {
+  return null == n || !C || T ? null : (0, r.jsx)(h.oY, {
     action: "PRESS_MOD_VIEW",
     icon: a.HI3,
     tooltipText: b.intl.string(b.t.kj3tz2),
     onClick: () => {
-      c.Z.close(), null != A && (0, f.Kh)(A), (0, d.i)(v), I.dispatch(h.CkL.POPOUT_CLOSE), (0, s.r)(n, t.id, null != A ? A : g.oC.MEMBER_SAFETY, {
+      c.Z.close(), null != A && (0, f.Kh)(A), (0, d.i)(v), I.dispatch(m.CkL.POPOUT_CLOSE), (0, s.r)(n, t.id, null != A ? A : g.oC.MEMBER_SAFETY, {
         modViewPanel: E.k.INFO,
         sourceLocation: S
       }), null == O || O()

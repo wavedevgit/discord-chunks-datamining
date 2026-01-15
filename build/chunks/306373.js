@@ -20,8 +20,8 @@ function f(e, t) {
     form: f,
     isReadOnly: p,
     isRequired: _,
-    isDisabled: m,
-    orientation: h = "vertical",
+    isDisabled: h,
+    orientation: m = "vertical",
     validationBehavior: g = "aria"
   } = e, {
     direction: E
@@ -54,10 +54,10 @@ function f(e, t) {
     let n, r;
     switch (e.key) {
       case "ArrowRight":
-        n = "rtl" === E && "vertical" !== h ? "prev" : "next";
+        n = "rtl" === E && "vertical" !== m ? "prev" : "next";
         break;
       case "ArrowLeft":
-        n = "rtl" === E && "vertical" !== h ? "next" : "prev";
+        n = "rtl" === E && "vertical" !== m ? "next" : "prev";
         break;
       case "ArrowDown":
         n = "next";
@@ -89,8 +89,8 @@ function f(e, t) {
       "aria-errormessage": e["aria-errormessage"],
       "aria-readonly": p || true,
       "aria-required": _ || true,
-      "aria-disabled": m || true,
-      "aria-orientation": h,
+      "aria-disabled": h || true,
+      "aria-orientation": m,
       ...S,
       ...A
     }),

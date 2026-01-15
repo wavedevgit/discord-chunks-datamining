@@ -2,7 +2,7 @@
 /** chunk id: 92951, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -84,8 +84,8 @@ let _ = e => {
       responsive: u,
       mediaLayoutType: f,
       useReducedMotion: _
-    } = e, m = d(e, ["alt", "externalRef", "autoPlay", "playOnHover", "onPlayError", "responsive", "mediaLayoutType", "useReducedMotion"]);
-    let h = !_ && !s && o,
+    } = e, h = d(e, ["alt", "externalRef", "autoPlay", "playOnHover", "onPlayError", "responsive", "mediaLayoutType", "useReducedMotion"]);
+    let m = !_ && !s && o,
       g = i.useRef(null);
 
     function E() {
@@ -112,8 +112,8 @@ let _ = e => {
 
     function O() {
       return {
-        maxWidth: m.width,
-        maxHeight: m.height,
+        maxWidth: h.width,
+        maxHeight: h.height,
         width: "100%",
         height: "100%"
       }
@@ -128,14 +128,14 @@ let _ = e => {
     }), [n, g]), (0, r.jsx)("video", l({
       "aria-label": t,
       ref: g,
-      autoPlay: h,
+      autoPlay: m,
       onMouseEnter: E,
       onMouseLeave: b,
       onFocus: E,
       onBlur: b,
       style: y()
-    }, m))
+    }, h))
   },
-  m = Chunk473749.forwardRef((e, t) => (0, r.jsx)(_, u(l({}, e), {
+  h = Chunk473749.forwardRef((e, t) => (0, r.jsx)(_, u(l({}, e), {
     externalRef: t
   })))

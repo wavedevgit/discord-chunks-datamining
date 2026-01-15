@@ -59,16 +59,16 @@ let p = e => {
     size: f = "sm",
     onAction: p
   } = e, _ = d(e, ["guildId", "channelId", "variant", "size", "onAction"]);
-  let m = (0, i.e7)([s.Z], () => s.Z.isInChannel(n), [n]),
-    h = () => {
+  let h = (0, i.e7)([s.Z], () => s.Z.isInChannel(n), [n]),
+    m = () => {
       null == p || p(), o.AC(t, n)
     };
   return (0, r.jsx)(a.Button, u({
     variant: c,
     size: f,
     text: l.intl.string(l.t.ZYO5OK),
-    disabled: m,
-    onClick: h,
+    disabled: h,
+    onClick: m,
     fullWidth: true
   }, _))
 }

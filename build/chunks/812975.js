@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ci: () => g,
-  DY: () => h,
-  WN: () => m,
+  DY: () => m,
+  WN: () => h,
   hn: () => _
 });
 var Chunk695170 = require("./695170.js"),
@@ -27,7 +27,7 @@ var Chunk695170 = require("./695170.js"),
     SA: new Chunk713267.O(5),
     SU: new Chunk713267.O(6)
   },
-  m = {
+  h = {
     freq: Chunk707908.D.YEARLY,
     dtstart: null,
     interval: 1,
@@ -48,7 +48,7 @@ var Chunk695170 = require("./695170.js"),
     bysecond: null,
     byeaster: null
   },
-  h = Object.keys(m),
+  m = Object.keys(h),
   g = function() {
     function e(e, t) {
       true === e && (e = {}), true === t && (t = false), this._cache = t ? null : new d.C, this.origOptions = (0, l.Fx)(e);

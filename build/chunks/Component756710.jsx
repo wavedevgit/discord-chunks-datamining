@@ -2,7 +2,7 @@
 /** chunk id: 756710, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => m
+  o: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,15 +52,15 @@ function _(e, t) {
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     color: n = "default",
     isFocused: a = false,
     disabled: d = false,
     keepItemStyles: p = false,
-    menuItemProps: m,
-    action: h,
+    menuItemProps: h,
+    action: m,
     dontCloseOnActionIfHoldingShiftKey: g,
     dontCloseOnAction: E,
     onClose: b
@@ -69,9 +69,9 @@ function m(e) {
     a && (0, l.F)(y)
   }, [a]);
   let O = i.useCallback(e => {
-      if (null == h) returnfalse;
-      e.shiftKey && g || E || b(), e.persist(), requestAnimationFrame(() => h(e))
-    }, [h, b, g, E]),
+      if (null == m) returnfalse;
+      e.shiftKey && g || E || b(), e.persist(), requestAnimationFrame(() => m(e))
+    }, [m, b, g, E]),
     v = p ? o()(u.item, c._e[n], {
       [u.focused]: a
     }) : u.customItem;
@@ -80,7 +80,7 @@ function m(e) {
     className: v,
     onClick: d ? true : O,
     "aria-disabled": d
-  }, m), {
+  }, h), {
     children: t({
       color: n,
       disabled: d,

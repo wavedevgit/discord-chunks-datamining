@@ -60,13 +60,13 @@ class b extends Chunk495852.C {
         case 5:
           a.properties = {
             oneofKind: "marketingPageBanner",
-            marketingPageBanner: h.w.internalBinaryRead(e, e.uint32(), n, a.properties.marketingPageBanner)
+            marketingPageBanner: m.w.internalBinaryRead(e, e.uint32(), n, a.properties.marketingPageBanner)
           };
           break;
         case 6:
           a.properties = {
             oneofKind: "paymentModalBanner",
-            paymentModalBanner: m.j.internalBinaryRead(e, e.uint32(), n, a.properties.paymentModalBanner)
+            paymentModalBanner: h.j.internalBinaryRead(e, e.uint32(), n, a.properties.paymentModalBanner)
           };
           break;
         case 7:
@@ -130,7 +130,7 @@ class b extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "placeholder" === e.properties.oneofKind && t.tag(1, r.TD.LengthDelimited).string(e.properties.placeholder), "announcementModalVariant1" === e.properties.oneofKind && E.xY.internalBinaryWrite(e.properties.announcementModalVariant1, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "premiumTab" === e.properties.oneofKind && g.C.internalBinaryWrite(e.properties.premiumTab, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "marketingPageBanner" === e.properties.oneofKind && h.w.internalBinaryWrite(e.properties.marketingPageBanner, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "paymentModalBanner" === e.properties.oneofKind && m.j.internalBinaryWrite(e.properties.paymentModalBanner, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "mobileBottomSheet" === e.properties.oneofKind && _.g.internalBinaryWrite(e.properties.mobileBottomSheet, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), "giftIcon" === e.properties.oneofKind && p.O.internalBinaryWrite(e.properties.giftIcon, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), "giftIconCoachmark" === e.properties.oneofKind && f.h.internalBinaryWrite(e.properties.giftIconCoachmark, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), "giftPlanSelectionCardBanner" === e.properties.oneofKind && d.C.internalBinaryWrite(e.properties.giftPlanSelectionCardBanner, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), "giftCustomizationBanner" === e.properties.oneofKind && u.m.internalBinaryWrite(e.properties.giftCustomizationBanner, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), "billingSettingsNitroGiftBanner" === e.properties.oneofKind && c.V.internalBinaryWrite(e.properties.billingSettingsNitroGiftBanner, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), "giftReminderNagbar" === e.properties.oneofKind && l.p.internalBinaryWrite(e.properties.giftReminderNagbar, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), "giftReminderCoachmark" === e.properties.oneofKind && s.r.internalBinaryWrite(e.properties.giftReminderCoachmark, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), "" !== e.contentIdentifier && t.tag(3, r.TD.LengthDelimited).string(e.contentIdentifier);
+    "placeholder" === e.properties.oneofKind && t.tag(1, r.TD.LengthDelimited).string(e.properties.placeholder), "announcementModalVariant1" === e.properties.oneofKind && E.xY.internalBinaryWrite(e.properties.announcementModalVariant1, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "premiumTab" === e.properties.oneofKind && g.C.internalBinaryWrite(e.properties.premiumTab, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "marketingPageBanner" === e.properties.oneofKind && m.w.internalBinaryWrite(e.properties.marketingPageBanner, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "paymentModalBanner" === e.properties.oneofKind && h.j.internalBinaryWrite(e.properties.paymentModalBanner, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "mobileBottomSheet" === e.properties.oneofKind && _.g.internalBinaryWrite(e.properties.mobileBottomSheet, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), "giftIcon" === e.properties.oneofKind && p.O.internalBinaryWrite(e.properties.giftIcon, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), "giftIconCoachmark" === e.properties.oneofKind && f.h.internalBinaryWrite(e.properties.giftIconCoachmark, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), "giftPlanSelectionCardBanner" === e.properties.oneofKind && d.C.internalBinaryWrite(e.properties.giftPlanSelectionCardBanner, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), "giftCustomizationBanner" === e.properties.oneofKind && u.m.internalBinaryWrite(e.properties.giftCustomizationBanner, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), "billingSettingsNitroGiftBanner" === e.properties.oneofKind && c.V.internalBinaryWrite(e.properties.billingSettingsNitroGiftBanner, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), "giftReminderNagbar" === e.properties.oneofKind && l.p.internalBinaryWrite(e.properties.giftReminderNagbar, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), "giftReminderCoachmark" === e.properties.oneofKind && s.r.internalBinaryWrite(e.properties.giftReminderCoachmark, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), "" !== e.contentIdentifier && t.tag(3, r.TD.LengthDelimited).string(e.contentIdentifier);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -158,13 +158,13 @@ class b extends Chunk495852.C {
       name: "marketing_page_banner",
       kind: "message",
       oneof: "properties",
-      T: () => h.w
+      T: () => m.w
     }, {
       no: 6,
       name: "payment_modal_banner",
       kind: "message",
       oneof: "properties",
-      T: () => m.j
+      T: () => h.j
     }, {
       no: 7,
       name: "mobile_bottom_sheet",

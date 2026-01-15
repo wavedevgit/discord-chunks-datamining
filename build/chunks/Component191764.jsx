@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function y(e) {
   let {
     user: t,
     activity: n,
-    onAction: h,
+    onAction: m,
     onClose: E
   } = e, {
     newestAnalyticsLocation: y
@@ -71,10 +71,10 @@ function y(e) {
     return c.Z.getChannel(null == (e = d.Z.getVoiceStateForUser(t.id)) ? true : e.channelId)
   }), v = (0, i.e7)([u.Z], () => u.Z.getChannelId() === (null == O ? true : O.id));
   return (null == n ? true : n.type) !== _.IIU.HANG_STATUS || null == O ? null : (0, r.jsx)(p.i6, {
-    text: v ? m.intl.string(m.t.BXxdl7) : m.intl.string(m.t["9C444m"]),
+    text: v ? h.intl.string(h.t.BXxdl7) : h.intl.string(h.t["9C444m"]),
     fullWidth: true,
     onClick: e => {
-      e.stopPropagation(), null == h || h({
+      e.stopPropagation(), null == m || m({
         action: "PRESS_HANG_STATUS_BUTTON"
       }), a.default.selectVoiceChannel(O.id), (0, l.Kh)(O.id), f.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, b(g({}, (0, s.Z)(O.id)), {
         source: y,

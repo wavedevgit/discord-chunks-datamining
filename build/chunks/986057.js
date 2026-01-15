@@ -2,7 +2,7 @@
 /** chunk id: 986057, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk846027 = require("./846027.js"),
   Chunk147913 = require("./147913.js"),
@@ -43,7 +43,7 @@ function _() {
     });
   return !(n || r || i)
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   handleExperimentStateChange() {
     !p() && l.Z.getVoiceFilterPlaybackEnabled() && (0, u._j)(false)
   }
@@ -62,4 +62,4 @@ class m extends Chunk147913.Z {
     }), f(this, "stores", new Map().set(a.Z, this.handleExperimentStateChange))
   }
 }
-let h = new m
+let m = new h

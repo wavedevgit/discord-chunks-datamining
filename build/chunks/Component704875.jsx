@@ -2,7 +2,7 @@
 /** chunk id: 704875, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -48,34 +48,34 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   var i, l;
   let {
     attributes: u,
     children: f,
     element: _,
-    decorations: h
-  } = e, b = E(null != (i = null == h ? true : h[0]) ? i : {});
+    decorations: m
+  } = e, b = E(null != (i = null == m ? true : m[0]) ? i : {});
   switch (_.type) {
     case "line":
-      if (null == (l = _.codeBlockState) ? true : l.isInCodeBlock) return (0, r.jsx)("div", m(p({
+      if (null == (l = _.codeBlockState) ? true : l.isInCodeBlock) return (0, r.jsx)("div", h(p({
         className: c.codeLine,
         spellCheck: null == _.codeBlockState || null == _.codeBlockState.lang
       }, u), {
         children: f
       }));
-      return (0, r.jsx)("div", m(p({}, u), {
+      return (0, r.jsx)("div", h(p({}, u), {
         children: f
       }));
     case "blockQuote": {
       let e = a()(d.blockquoteContainer, d.slateBlockquoteContainer);
-      return (0, r.jsxs)("div", m(p({}, u), {
+      return (0, r.jsxs)("div", h(p({}, u), {
         className: e,
         children: [(0, r.jsx)("span", {
           contentEditable: false,
@@ -189,7 +189,7 @@ let g = e => {
     attributes: n,
     children: i
   } = e, o = a()(u.inlineElement, u.inlineVoid, t);
-  return (0, r.jsx)("span", m(p({}, n), {
+  return (0, r.jsx)("span", h(p({}, n), {
     className: o,
     contentEditable: false,
     children: i

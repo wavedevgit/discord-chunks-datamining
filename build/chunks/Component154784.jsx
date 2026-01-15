@@ -2,7 +2,7 @@
 /** chunk id: 154784, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,17 +18,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function m(e) {
   let {
     isRedesign: t = false
-  } = e, n = (0, o.O)(), h = i.useRef(false), g = (0, a.e7)([f.Z], () => f.Z.getVideoDeviceId()), [E, b] = i.useState((0, l.P)(p.default.getCurrentUser())), y = i.useRef(E);
+  } = e, n = (0, o.O)(), m = i.useRef(false), g = (0, a.e7)([f.Z], () => f.Z.getVideoDeviceId()), [E, b] = i.useState((0, l.P)(p.default.getCurrentUser())), y = i.useRef(E);
   i.useEffect(() => () => {
-    h.current && (0, c.Up)(y.current)
+    m.current && (0, c.Up)(y.current)
   }, []);
   let O = e => {
-    h.current = true, y.current = e, b(e), (0, u.wG)(e, {
+    m.current = true, y.current = e, b(e), (0, u.wG)(e, {
       location: n.location
-    }).catch(m.dG4)
+    }).catch(h.dG4)
   };
   return (0, r.jsx)(s.F, {
     setting: _.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,

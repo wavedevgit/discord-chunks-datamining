@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
 
 function O() {
   let e, t = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    n = (0, m.N)(),
+    n = (0, h.N)(),
     a = (0, _.N)(),
     o = (0, f.Vi)(),
     l = null != (0, p.Z)(),
@@ -37,7 +37,7 @@ function O() {
   let [O, v] = (0, d.US)(y, true, true);
   return i.useEffect(() => {
     true === t && O === s.z.BOGO_2025_NITRO_TAB_BADGE && v(E.L.AUTO_DISMISS)
-  }, [v, t, O]), c ? e = (0, r.jsx)(h.Z, {}) : null != a ? e = (0, r.jsx)(g.GN, {
+  }, [v, t, O]), c ? e = (0, r.jsx)(m.Z, {}) : null != a ? e = (0, r.jsx)(g.GN, {
     isTabSelected: t,
     userDiscount: a,
     includesAmountOff: false

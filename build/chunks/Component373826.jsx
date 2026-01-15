@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  f: () => h
+  f: () => m
 }), require("./781311.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -70,7 +70,7 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     text: t,
     onClick: n,
@@ -78,17 +78,17 @@ function m(e) {
   } = e, d = p(e, ["text", "onClick", "component"]);
   let {
     themeType: _
-  } = (0, o.z)(), m = "string" == typeof t ? t.trim() : t;
-  if (null == m || "" === m) return null;
-  let h = () => _ === s.l.MODAL || _ === s.l.MODAL_V2 ? (0, r.jsx)(c, f(u({
+  } = (0, o.z)(), h = "string" == typeof t ? t.trim() : t;
+  if (null == h || "" === h) return null;
+  let m = () => _ === s.l.MODAL || _ === s.l.MODAL_V2 ? (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
-    children: m
+    children: h
   })) : (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
     children: (0, r.jsx)(i.Z, {
-      children: m
+      children: h
     })
   }));
   return null != n ? (0, r.jsx)(a.P3F, {
@@ -96,18 +96,18 @@ function m(e) {
       e.stopPropagation(), n(e)
     },
     className: l.clickableText,
-    children: h()
-  }) : h()
+    children: m()
+  }) : m()
 }
 
-function h(e) {
-  return (0, r.jsx)(m, u({
+function m(e) {
+  return (0, r.jsx)(h, u({
     component: a.Heading
   }, e))
 }
 
 function g(e) {
-  return (0, r.jsx)(m, u({
+  return (0, r.jsx)(h, u({
     component: a.Text
   }, e))
 }

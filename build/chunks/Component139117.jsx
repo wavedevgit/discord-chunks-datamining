@@ -2,7 +2,7 @@
 /** chunk id: 139117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -41,17 +41,17 @@ function _() {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     className: t,
     maxGuilds: n,
     guilds: i,
     onFocus: o,
-    onClick: m,
-    size: h = d.Z.Sizes.SMALLER,
+    onClick: h,
+    size: m = d.Z.Sizes.SMALLER,
     hideOverflowCount: g = false,
     disableGuildNameTooltip: E = false
-  } = e, b = p(h);
+  } = e, b = p(m);
 
   function y() {
     let e = i.length - n,
@@ -66,8 +66,8 @@ function m(e) {
           className: o,
           children: (0, r.jsx)(d.Z, {
             guild: e,
-            onClick: m,
-            size: h,
+            onClick: h,
+            size: m,
             showTooltip: false
           })
         }) : (0, r.jsx)(l.u, {
@@ -75,17 +75,17 @@ function m(e) {
           text: n,
           children: (0, r.jsx)(d.Z, {
             guild: e,
-            onClick: m,
-            size: h
+            onClick: h,
+            size: m
           })
         }, e.id)
       }).value();
     if (p) {
-      let e = _(h);
+      let e = _(m);
       O[O.length - 1] = (0, r.jsx)(c.zx, {
         className: a()(f.overflow, b),
         onFocus: o,
-        onClick: e => null == m ? true : m(e),
+        onClick: e => null == h ? true : h(e),
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.NONE,
         children: (0, r.jsx)(u.Text, {

@@ -20,9 +20,9 @@ function d(e) {
     centered: a = true,
     verticalFlow: d = false,
     className: f
-  } = e, p = i.useContext(l.Q), _ = (0, s.dQu)(p.primaryColor).hex(), m = (0, c.Sg)();
+  } = e, p = i.useContext(l.Q), _ = (0, s.dQu)(p.primaryColor).hex(), h = (0, c.Sg)();
   return (0, r.jsx)(c.Qr.Provider, {
-    value: m,
+    value: h,
     children: (0, r.jsx)("div", {
       className: o()(u.container, {
         [u.containerPadding]: !n,

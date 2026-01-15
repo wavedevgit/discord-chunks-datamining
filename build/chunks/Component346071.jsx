@@ -19,7 +19,7 @@ function u(e) {
     variant: n = "default",
     enablePremiumBrandRefresh: u = false,
     style: d
-  } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, p = (0, a.Z)(t.endsAt, f), _ = "", m = {
+  } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, p = (0, a.Z)(t.endsAt, f), _ = "", h = {
     trial: {
       days_and_hours: s.t.SQyVVd,
       days: s.t["2ifAYG"],
@@ -31,12 +31,12 @@ function u(e) {
       hours: s.t["8Xm6uL"]
     }
   };
-  return (p.days > 0 && p.hours > 0 ? _ = s.intl.format(m[n].days_and_hours, {
+  return (p.days > 0 && p.hours > 0 ? _ = s.intl.format(h[n].days_and_hours, {
     days: p.days,
     hours: p.hours
-  }) : p.days > 0 ? _ = s.intl.format(m[n].days, {
+  }) : p.days > 0 ? _ = s.intl.format(h[n].days, {
     days: p.days
-  }) : p.hours > 0 && (_ = s.intl.format(m[n].hours, {
+  }) : p.hours > 0 && (_ = s.intl.format(h[n].hours, {
     hours: p.hours
   })), "" === _) ? null : u ? (0, r.jsxs)("div", {
     className: l.premiumBrandRefreshContainer,

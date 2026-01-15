@@ -24,13 +24,13 @@ class g extends Chunk473749.PureComponent {
       tier: e
     } = this.props;
     return (0, r.jsxs)("div", {
-      className: h.tierPill,
+      className: m.tierPill,
       children: [(0, r.jsx)(c.Z, {
-        className: h.tierPillStar,
+        className: m.tierPillStar,
         children: (0, r.jsx)(u.Z, {
           tier: e,
           color: "currentColor",
-          className: h.tierPillGem
+          className: m.tierPillGem
         })
       }), (0, f.nW)(e)]
     })
@@ -40,14 +40,14 @@ let E = e => {
   let {
     subscriptionChange: t,
     guild: n
-  } = e, i = (0, m.Z)(n.id);
+  } = e, i = (0, h.Z)(n.id);
   if (0 === t) return null;
   let a = (0, f.Jh)(n.id),
     o = (0, f.ee)(i + t),
     s = o - a;
   return 0 === s ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
-      className: s > 0 ? h.levelUpIcon : h.levelDownIcon
+      className: s > 0 ? m.levelUpIcon : m.levelDownIcon
     }), (0, r.jsx)(g, {
       tier: o
     })]
@@ -63,17 +63,17 @@ function b(e) {
   return i.useEffect(() => {
     c || (0, p.BN)(t.id)
   }, [c, t.id]), (0, r.jsxs)("div", {
-    className: o()(h.subscription, n),
+    className: o()(m.subscription, n),
     children: [(0, r.jsx)(l.Z, {
       guild: t,
       size: l.Z.Sizes.LARGE
     }), (0, r.jsxs)("div", {
-      className: h.subscriptionInfo,
+      className: m.subscriptionInfo,
       children: [(0, r.jsx)("div", {
-        className: h.guildName,
+        className: m.guildName,
         children: t.name
       }), (0, r.jsxs)("div", {
-        className: h.tierInfo,
+        className: m.tierInfo,
         children: [(0, r.jsx)(g, {
           tier: t.premiumTier
         }), (0, r.jsx)(E, {

@@ -77,13 +77,13 @@ function P(e) {
     channelId: c,
     messageId: u
   } = (0, b.pE)(), [g, E] = i.useState(""), [y, v] = i.useState(false), S = "" !== g && y, I = i.useCallback(() => {
-    E((0, h.e1)(u, c, o))
+    E((0, m.e1)(u, c, o))
   }, [u, c, o]), T = i.useCallback(() => {
     I(), v(true)
   }, [I]), C = i.useCallback(() => {
     v(false)
   }, []), A = i.useCallback(() => {
-    (0, m.n)({
+    (0, h.n)({
       channelId: c,
       messageId: u,
       answerId: o
@@ -143,7 +143,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -166,7 +166,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -214,7 +214,7 @@ function D(e) {
       [O.currentlyVoting]: i !== g.Y7.LIST,
       [O.selected]: c
     }),
-    children: [a ? (0, r.jsx)(R, {
+    children: [a ? (0, r.jsx)(w, {
       percentage: t.votesPercentage,
       shouldAnimate: p
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(E.sc, {
@@ -233,7 +233,7 @@ function D(e) {
       label: t.votes,
       canShowVoterDetails: l,
       answerId: t.answerId
-    }), (0, r.jsx)(w, {
+    }), (0, r.jsx)(R, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,

@@ -124,7 +124,7 @@ class A extends Chunk473749.Component {
         message: r,
         isForumToolbar: i
       } = this.props;
-      (0, m.rU)(n.id, r.id, (0, h.g1)(e), i ? m.TW.FORUM_TOOLBAR : m.TW.MESSAGE_INLINE_BUTTON, {
+      (0, h.rU)(n.id, r.id, (0, m.g1)(e), i ? h.TW.FORUM_TOOLBAR : h.TW.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
     }), S(this, "handleReactionPickerToggle", () => {

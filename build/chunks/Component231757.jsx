@@ -42,8 +42,8 @@ function _(e) {
   let {
     platformType: f,
     location: _,
-    overrideUrl: m,
-    successRedirect: h
+    overrideUrl: h,
+    successRedirect: m
   } = e;
   return (f === d.ABu.LEAGUE_OF_LEGENDS && (f = d.ABu.RIOT_GAMES), f === d.ABu.CRUNCHYROLL) ? void o.K([null != _ ? _ : "unknown"]) : f === d.ABu.XBOX ? void l.K([null != _ ? _ : "unknown"]) : f === d.ABu.PLAYSTATION || f === d.ABu.PLAYSTATION_STAGING ? void s.K([null != _ ? _ : "unknown"], f) : f === d.ABu.DOMAIN ? void(0, i.ZDy)(async () => {
     let {
@@ -59,19 +59,19 @@ function _(e) {
     return t => (0, r.jsx)(e, p({
       platformType: f,
       location: _,
-      successRedirect: h
+      successRedirect: m
     }, t))
-  }) : null != m ? void(0, c.q)({
+  }) : null != h ? void(0, c.q)({
     shouldConfirm: true,
-    href: m,
+    href: h,
     onConfirm: () => {
       (0, u.H)(f, {
         location: _,
-        successRedirect: h
-      }, m)
+        successRedirect: m
+      }, h)
     }
   }) : void(0, u.H)(f, {
     location: _,
-    successRedirect: h
+    successRedirect: m
   })
 }

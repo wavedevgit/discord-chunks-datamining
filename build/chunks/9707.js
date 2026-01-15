@@ -31,11 +31,11 @@ module.exports = function(e) {
         begin: f
       }]
     },
-    m = {
+    h = {
       className: "named-character",
       begin: /\\\[[$a-zA-Z][$a-zA-Z0-9]+\]/
     },
-    h = {
+    m = {
       className: "operator",
       relevance: 0,
       begin: /[+\-*/,;.:@~=><&|_`'^?!%]+/
@@ -74,6 +74,6 @@ module.exports = function(e) {
     },
     contains: [e.COMMENT(/\(\*/, /\*\)/, {
       contains: ["self"]
-    }), g, E, y, _, m, e.QUOTE_STRING_MODE, d, h, b]
+    }), g, E, y, _, h, e.QUOTE_STRING_MODE, d, m, b]
   }
 }

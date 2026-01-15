@@ -5,12 +5,12 @@ require.d(exports, {
   C0: () => g,
   Ew: () => y,
   Jz: () => E,
-  LC: () => h,
+  LC: () => m,
   M8: () => b,
   aj: () => _,
   bN: () => p,
   lP: () => I,
-  q: () => m
+  q: () => h
 }), require("./784620.js"), require("./973216.js"), require("./583741.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -87,18 +87,18 @@ if (require("./789952.js"), !Chunk327432.ML._addedDiscordOverrides) {
       for (let n = I; !N && (!d ? n <= T : n >= T); n += S) {
         let l = r.children[n],
           p = g.child(i, n);
-        if (m.isElement(l)) {
+        if (h.isElement(l)) {
           let e = d ? O.path : y.path;
           if (!(g.equals(p, e) || g.isAncestor(p, e))) {
             let e = t.isVoid(l);
-            if ("line" === c && m.isElement(l) && !e) {
+            if ("line" === c && h.isElement(l) && !e) {
               null != o && (yield o, o = true), N = true;
               return
             }
             if (!_ && e) continue
           }
           for (let e of P([l, p])) yield e
-        } else if (h.isText(l))
+        } else if (m.isText(l))
           if ("line" === c) o = {
             path: p,
             offset: d ? 0 : l.text.length
@@ -114,7 +114,7 @@ if (require("./789952.js"), !Chunk327432.ML._addedDiscordOverrides) {
             })))) yield r
         }
       }
-      "line" === c && m.isElement(r) && !t.isVoid(r) && (null != o && (yield o, o = true), N = true)
+      "line" === c && h.isElement(r) && !t.isVoid(r) && (null != o && (yield o, o = true), N = true)
     }
     "line" === c && (yield d ? O : y);
     for (let e = C; !N && (!d ? e <= A : e >= A); e += S)
@@ -129,16 +129,16 @@ if (require("./789952.js"), !Chunk327432.ML._addedDiscordOverrides) {
 let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     richValue: e => e.children,
     blocks: e => p.richValue(e).map((e, t) => [e, [t]]),
-    isBlock: (e, t) => m.isElement(t) && a.ML.isBlock(e, t),
-    isInline: (e, t) => m.isElement(t) && a.ML.isInline(e, t),
-    isVoid: (e, t) => m.isElement(t) && a.ML.isVoid(e, t),
+    isBlock: (e, t) => h.isElement(t) && a.ML.isBlock(e, t),
+    isInline: (e, t) => h.isElement(t) && a.ML.isInline(e, t),
+    isVoid: (e, t) => h.isElement(t) && a.ML.isVoid(e, t),
     isEditorEmpty(e) {
       let t = p.richValue(e);
-      return !(t.length > 1) && (0 === t.length || "line" === t[0].type && m.isEmpty(t[0]))
+      return !(t.length > 1) && (0 === t.length || "line" === t[0].type && h.isEmpty(t[0]))
     },
     getFirstText(e) {
       let t = p.node(e, l.u9);
-      return h.isText(t[0]) ? t[0] : null
+      return m.isText(t[0]) ? t[0] : null
     },
     getCurrentBlock(e) {
       return null == e.selection ? null : this.getParentBlock(e, e.selection)
@@ -160,7 +160,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       var n;
       return null != (n = p.above(e, {
         at: t,
-        match: t => m.isElement(t) && p.isBlock(e, t),
+        match: t => h.isElement(t) && p.isBlock(e, t),
         mode: "lowest"
       })) ? n : null
     },
@@ -168,7 +168,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       var n;
       return null != (n = p.above(e, {
         at: t,
-        match: e => m.isElement(e),
+        match: e => h.isElement(e),
         mode: "lowest"
       })) ? n : null
     },
@@ -192,7 +192,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       var r;
       return null != (r = p.above(e, {
         at: t,
-        match: e => m.isElement(e) && n.includes(e.type),
+        match: e => h.isElement(e) && n.includes(e.type),
         mode: "lowest"
       })) ? r : null
     },
@@ -203,7 +203,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     },
     getNodesOfType: (e, t) => p.nodes(e, {
       at: l.Ql,
-      match: e => m.isElement(e) && t.includes(e.type),
+      match: e => h.isElement(e) && t.includes(e.type),
       mode: "highest"
     }),
     getSelectedVoid(e) {
@@ -238,7 +238,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       let [n, r] = b.edges(t), i = p.nodes(e, {
         at: t,
         mode: "lowest",
-        match: e => h.isText(e)
+        match: e => m.isText(e)
       }), a = "";
       for (let [e, t] of i) {
         let i = g.equals(t, n.path) ? n.offset : 0,
@@ -263,7 +263,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       let n = p.richValue(e),
         r = n[0],
         i = (null == r ? true : r.type) === "line" ? r.children[0] : null;
-      if (null == i || !h.isText(i)) returnfalse;
+      if (null == i || !m.isText(i)) returnfalse;
       let a = e.chatInputType,
         o = i.text;
       return 1 === n.length && 1 === r.children.length && (true === a.sedReplace && o.startsWith("s/") || (null == (t = a.autocomplete) ? true : t.reactions) === true && o.startsWith("+"))
@@ -279,7 +279,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       if (g.isPath(t)) {
         let n = p.range(e, t),
           [r] = p.node(e, t);
-        if (m.isElement(r)) {
+        if (h.isElement(r)) {
           let r = p.before(e, t),
             i = p.after(e, t);
           t = {
@@ -299,15 +299,15 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     isType: (e, t) => a.W_.isElement(e) && e.type === t,
     isInTypes: (e, t) => a.W_.isElement(e) && t.has(e.type)
   }),
-  m = f(u({}, Chunk327432.W_), {
+  h = f(u({}, Chunk327432.W_), {
     updateElement(e, t) {
       let n = p.node(e, t[1]);
-      return i()(!p.isEditor(t[0]), "Element is the root node"), i()(null != n, "Failed to find element"), i()(m.isElement(n[0]), "Node at this path is no longer an element"), i()(n[0].type === t[0].type, "Node at this path is a different type"), n
+      return i()(!p.isEditor(t[0]), "Element is the root node"), i()(null != n, "Failed to find element"), i()(h.isElement(n[0]), "Node at this path is no longer an element"), i()(n[0].type === t[0].type, "Node at this path is a different type"), n
     },
     markdown(e, t, n) {
       var r;
       let i = "line" === e.type && (null == (r = e.codeBlockState) ? true : r.wasInCodeBlock) === true,
-        a = e.children.map(e => h.isText(e) ? e.text : "?"),
+        a = e.children.map(e => m.isText(e) ? e.text : "?"),
         o = a.join("");
       return {
         entries: s.Q(o, null != t ? t : null, i, n),
@@ -318,10 +318,10 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       if (e.children.length > 1) returnfalse;
       if (0 === e.children.length) returntrue;
       let t = e.children[0];
-      return h.isText(t) && 0 === t.text.length
+      return m.isText(t) && 0 === t.text.length
     }
   }),
-  h = u({}, Chunk327432.xv),
+  m = u({}, Chunk327432.xv),
   g = f(u({}, Chunk327432.y$), {
     isFirstEditorBlock: e => g.equals(e, l.YD),
     isFirstEditorText: e => g.equals(e, l.u9),
@@ -340,7 +340,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       let [t, n] = e, r = t.children[t.children.length - 1];
       return {
         path: g.child(n, t.children.length - 1),
-        offset: h.isText(r) ? r.text.length : 0
+        offset: m.isText(r) ? r.text.length : 0
       }
     },
     isAtStart(e, t) {
@@ -365,7 +365,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
         },
         focus: {
           path: g.child(n, t.children.length - 1),
-          offset: h.isText(r) ? r.text.length : 0
+          offset: m.isText(r) ? r.text.length : 0
         }
       }
     },
@@ -390,7 +390,7 @@ let p = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       } = t;
       if (!p.hasPath(e, n.path) || !p.hasPath(e, r.path)) returnfalse;
       let [i] = p.node(e, n.path), [a] = p.node(e, r.path);
-      return h.isText(i) && h.isText(a) && n.offset <= i.text.length && r.offset <= a.text.length
+      return m.isText(i) && m.isText(a) && n.offset <= i.text.length && r.offset <= a.text.length
     }
   },
   O = (e, t) => {

@@ -2,7 +2,7 @@
 /** chunk id: 870630, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,10 +17,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk724641 = require("./724641.js"),
   Chunk184229 = require("./184229.js"),
   Chunk504309 = require("./504309.js");
-let h = function(e) {
+let m = function(e) {
   let t = (0, l.ZP)(),
     n = i.useRef(null),
-    [h, g] = i.useState({}),
+    [m, g] = i.useState({}),
     E = (0, s.dQu)(s.TVs.colors.BACKGROUND_BASE_LOWER).hex();
   switch (i.useLayoutEffect(() => {
       let {
@@ -47,7 +47,7 @@ let h = function(e) {
       })
     }, [n, E]), e.type) {
     case c.He.PRZELEWY24: {
-      let i = (0, o.wj)(t) ? _ : m,
+      let i = (0, o.wj)(t) ? _ : h,
         {
           onNameChange: l,
           onEmailChange: c,
@@ -80,7 +80,7 @@ let h = function(e) {
             }), (0, r.jsx)(a.P24BankElement, {
               options: {
                 value: p,
-                style: h
+                style: m
               },
               onChange: e => f(e.value)
             }), (0, r.jsx)("div", {
@@ -100,7 +100,7 @@ let h = function(e) {
         onEPSBankChange: l,
         epsBankValue: c,
         billingAddressInfo: _
-      } = e, m = (0, o.wj)(t) ? f : p;
+      } = e, h = (0, o.wj)(t) ? f : p;
       return (0, r.jsx)("div", {
         className: d.body,
         children: (0, r.jsxs)(s.Kqy, {
@@ -120,13 +120,13 @@ let h = function(e) {
             }), (0, r.jsx)(a.EpsBankElement, {
               options: {
                 value: c,
-                style: h
+                style: m
               },
               onChange: e => l(e.value)
             }), (0, r.jsx)("div", {
               className: d.bankSelectionStub,
               children: (0, r.jsx)("img", {
-                src: m,
+                src: h,
                 alt: "EPS"
               })
             })]

@@ -80,10 +80,10 @@ function F(e, t) {
   }), e
 }
 async function B(e) {
-  var t, n, r, o, l, u, d, _, m, h, g, E, b, v, I, T, C;
+  var t, n, r, o, l, u, d, _, h, m, g, E, b, v, I, T, C;
   let {
     command: A,
-    optionValues: w,
+    optionValues: R,
     context: M,
     commandTargetId: k,
     maxSizeCallback: U,
@@ -107,10 +107,10 @@ async function B(e) {
   if (null != A.options)
     for (let e of A.options) {
       let t;
-      if (e.type === c.jw.SUB_COMMAND || e.type === c.jw.SUB_COMMAND_GROUP || !(e.name in w)) continue;
+      if (e.type === c.jw.SUB_COMMAND || e.type === c.jw.SUB_COMMAND_GROUP || !(e.name in R)) continue;
       let n = (null == (l = M.autocomplete) ? true : l.name) === e.name || true;
       if (e.type === c.jw.STRING) {
-        let r = null != (d = null == (u = R.li(w, e.name)) ? true : u.trim()) ? d : "";
+        let r = null != (d = null == (u = w.li(R, e.name)) ? true : u.trim()) ? d : "";
         if (null != e.choices ? t = (0, P.cT)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, P.Wv)(M.channel.id, e.name, r)), null == t && (t = r), "" === t && null != M.autocomplete && !n) continue;
         i()(null != M.autocomplete || null != t, 'Option "'.concat(e.name, '" expects a value')), q.push({
           type: e.type,
@@ -133,7 +133,7 @@ async function B(e) {
         });
         continue
       }
-      let r = R.OU(w[e.name]);
+      let r = w.OU(R[e.name]);
       if (i()(null != M.autocomplete || 1 === r.length, 'Option "'.concat(e.name, '" expects a single option type')), null == r[0] && !n) continue;
       let a = null != (_ = r[0]) ? _ : {
         type: "text",
@@ -145,7 +145,7 @@ async function B(e) {
           else if ("text" === a.type)
             if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
-              let e = (0, p.K)(a.text, null == (m = M.guild) ? true : m.id, M.channel.id);
+              let e = (0, p.K)(a.text, null == (h = M.guild) ? true : h.id, M.channel.id);
               i()((null == e ? true : e.type) === "channelMention", "Failed to resolve ".concat(a.text)), t = e.channelId
             } break;
         case c.jw.ROLE:
@@ -153,7 +153,7 @@ async function B(e) {
           else if ("text" === a.type)
             if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
-              let e = (0, p.K)(a.text, null == (h = M.guild) ? true : h.id, M.channel.id, {
+              let e = (0, p.K)(a.text, null == (m = M.guild) ? true : m.id, M.channel.id, {
                 allowUsers: false
               });
               i()((null == e ? true : e.type) === "roleMention", "Failed to resolve ".concat(a.text)), t = e.roleId
@@ -186,13 +186,13 @@ async function B(e) {
         case c.jw.INTEGER:
           if ("text" === a.type) {
             let r = a.text.trim();
-            null != e.choices ? t = (0, P.l1)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, P.xg)(M.channel.id, e.name, r)), null == t && (t = Number(R.AS(O.default.locale, r)))
+            null != e.choices ? t = (0, P.l1)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, P.xg)(M.channel.id, e.name, r)), null == t && (t = Number(w.AS(O.default.locale, r)))
           }
           break;
         case c.jw.NUMBER:
           if ("text" === a.type) {
             let r = a.text.trim();
-            null != e.choices ? t = (0, P.l1)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, P.xg)(M.channel.id, e.name, r)), null == t && (t = Number(R.AS(O.default.locale, r)))
+            null != e.choices ? t = (0, P.l1)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, P.xg)(M.channel.id, e.name, r)), null == t && (t = Number(w.AS(O.default.locale, r)))
           }
           break;
         default:
@@ -234,7 +234,7 @@ async function B(e) {
       application_command: A.rootCommand
     },
     $ = () => {
-      V(w)
+      V(R)
     };
   null != k && (J.target_id = k), null != M.autocomplete ? (0, N.GV)(A, M, J) : (s.Z.clearAll(M.channel.id, X), Y({
     applicationId: A.applicationId,
@@ -250,7 +250,7 @@ async function B(e) {
   }))
 }
 let V = e => {
-    let t = Object.values(e).flatMap(e => e.map(e => "emoji" === e.type ? new m.dy({
+    let t = Object.values(e).flatMap(e => e.map(e => "emoji" === e.type ? new h.dy({
       names: [e.name.replaceAll(":", "")],
       surrogates: "",
       unicodeVersion: 6
@@ -291,9 +291,9 @@ let V = e => {
     let {
       channel: p,
       guild: _
-    } = i, m = p.id, g = null == _ ? true : _.id, E = {
+    } = i, h = p.id, g = null == _ ? true : _.id, E = {
       applicationId: n,
-      channelId: m,
+      channelId: h,
       guildId: g,
       data: r,
       nonce: null != (t = f.nonce) ? t : (0, b.r)(),
@@ -303,7 +303,7 @@ let V = e => {
       sectionName: u,
       source: d
     };
-    h.kz(E.nonce, {
+    m.kz(E.nonce, {
       messageId: f.messageId,
       onCreate: f.onCreate,
       onSuccess: f.onSuccess,
@@ -311,7 +311,7 @@ let V = e => {
       data: {
         interactionType: c.B8.APPLICATION_COMMAND,
         applicationId: n,
-        channelId: m
+        channelId: h
       }
     }), null != a && a.length > 0 ? Q(a, E.nonce, g, o).then(e => {
       e && W(E, s)
@@ -330,7 +330,7 @@ function W(e, t) {
 async function K(e, t, n) {
   var r;
   if (null == t.channel) return {};
-  let i = w.Nk({
+  let i = R.Nk({
     channel: t.channel,
     type: "channel"
   }, n.type, e.applicationId);
@@ -429,7 +429,7 @@ async function q(e, t) {
 async function Q(e, t, n, r) {
   let i = (0, T.dg)(n),
     a = e => {
-      null == r || r(i, e), h.yr(t, j.evJ.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdS, {
+      null == r || r(i, e), m.yr(t, j.evJ.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdS, {
         maxSize: (0, T.Ng)(i)
       }))
     },
@@ -441,7 +441,7 @@ async function Q(e, t, n, r) {
   try {
     await (0, d.Z)(e)
   } catch (n) {
-    h.yr(t, true, k.intl.formatToPlainString(k.t["9h1/1p"], {
+    m.yr(t, true, k.intl.formatToPlainString(k.t["9h1/1p"], {
       count: e.length
     }))
   }

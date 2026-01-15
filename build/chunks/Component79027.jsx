@@ -2,7 +2,7 @@
 /** chunk id: 79027, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => h
+  o: () => m
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,11 +50,11 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {
+let h = {
   friction: 7,
   tension: 60
 };
-class h extends(r = Chunk473749.Component) {
+class m extends(r = Chunk473749.Component) {
   componentWillAppear(e) {
     this.animateTo(1).start(e)
   }
@@ -68,7 +68,7 @@ class h extends(r = Chunk473749.Component) {
     t.enabled ? this.animateTo(0).start(e) : l.Z.stagger(250, [this.animateTo(1.3), this.animateTo(0)]).start(e)
   }
   animateTo(e) {
-    return l.Z.spring(this.animation, _(f({}, m), {
+    return l.Z.spring(this.animation, _(f({}, h), {
       toValue: e
     }))
   }
@@ -101,4 +101,4 @@ class h extends(r = Chunk473749.Component) {
     super(...e), d(this, "animation", new l.Z.Value(0))
   }
 }
-d(h, "contextType", Chunk481060.Sfi)
+d(m, "contextType", Chunk481060.Sfi)

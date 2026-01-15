@@ -50,7 +50,7 @@ function f(e, t) {
 }
 
 function p(e) {
-  var t = h();
+  var t = m();
   return function() {
     var n, r = g(e);
     return n = t ? Reflect.construct(r, arguments, g(this).constructor) : r.apply(this, arguments), _(this, n)
@@ -58,15 +58,15 @@ function p(e) {
 }
 
 function _(e, t) {
-  return t && ("object" === s(t) || "function" == typeof t) ? t : m(e)
+  return t && ("object" === s(t) || "function" == typeof t) ? t : h(e)
 }
 
-function m(e) {
+function h(e) {
   if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
 
-function h() {
+function m() {
   if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
   if ("function" == typeof Proxy) returntrue;
   try {
@@ -98,7 +98,7 @@ var b = function(e) {
     var e;
     l(this, n);
     for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-    return E(m(e = t.call.apply(t, [this].concat(i))), "priority", 130), E(m(e), "incompatibleTokens", ["y", "R", "u", "Q", "q", "M", "L", "I", "d", "D", "i", "t", "T"]), e
+    return E(h(e = t.call.apply(t, [this].concat(i))), "priority", 130), E(h(e), "incompatibleTokens", ["y", "R", "u", "Q", "q", "M", "L", "I", "d", "D", "i", "t", "T"]), e
   }
   return u(n, [{
     key: "parse",

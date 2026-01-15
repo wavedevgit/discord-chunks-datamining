@@ -101,8 +101,8 @@ function I(e) {
       submitting: c
     } = e,
     f = ["discord_web"];
-  m.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
-  let p = (0, h.Z)(a, f);
+  h.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
+  let p = (0, m.Z)(a, f);
   if (!p.valid) return T(p.reason);
   l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {

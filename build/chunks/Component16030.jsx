@@ -56,12 +56,12 @@ let c = function(e) {
       p = s(n, ["color"]);
     let _ = "currentColor";
     null != f && (_ = "string" != typeof f && "css" in f ? f.css : f);
-    let m = null != (a = p.size) ? a : "md",
-      h = (0, i.m)(m),
+    let h = null != (a = p.size) ? a : "md",
+      m = (0, i.m)(h),
       g = {
         color: _,
-        width: null != (c = null != (l = null == h ? true : h.width) ? l : p.width) ? c : 24,
-        height: null != (d = null != (u = null == h ? true : h.height) ? u : p.height) ? d : 24,
+        width: null != (c = null != (l = null == m ? true : m.width) ? l : p.width) ? c : 24,
+        height: null != (d = null != (u = null == m ? true : m.height) ? u : p.height) ? d : 24,
         foreground: p.colorClass
       };
     for (let [e, n] of Object.entries(t)) null != p[e] && (g[n] = p[e]);

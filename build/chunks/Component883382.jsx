@@ -25,26 +25,26 @@ function g() {
     g = (0, s.LN)(),
     E = e => {
       e ? (0, o.g)([_.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
-        header: m.intl.string(m.t["9SNpzv"]),
-        confirmText: m.intl.string(m.t["9g5UGw"]),
-        cancelText: m.intl.string(m.t["+ZLPw9"]),
+        header: h.intl.string(h.t["9SNpzv"]),
+        confirmText: h.intl.string(h.t["9g5UGw"]),
+        cancelText: h.intl.string(h.t["+ZLPw9"]),
         onConfirm: () => {
           (0, o.g)([], [_.pjP.PERSONALIZATION]).catch(f.S).then(() => n(false))
         },
-        body: m.intl.string(m.t.gJvDDh)
+        body: h.intl.string(h.t.gJvDDh)
       })
     };
   return (0, r.jsx)(u.U, {
     setting: p.s6.PRIVACY_DATA_PERSONALIZE_V2,
     children: (0, r.jsx)(d.ZP, {
-      title: m.intl.string(m.t.MNKzyg),
-      note: m.intl.format(m.t["eQL/Mr"], {
+      title: h.intl.string(h.t.MNKzyg),
+      note: h.intl.format(h.t["eQL/Mr"], {
         helpdeskArticle: c.Z.getArticleURL(_.BhN.DATA_USED_FOR_RECOMMENDED)
       }),
       value: t,
       onChange: E,
       disabled: g,
-      tooltipText: g ? m.intl.string(h.default["6Af/cw"]) : true
+      tooltipText: g ? h.intl.string(m.default["6Af/cw"]) : true
     })
   })
 }

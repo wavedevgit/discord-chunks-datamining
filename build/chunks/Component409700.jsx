@@ -4,7 +4,7 @@
 require.d(exports, {
   Dp: () => N,
   Hh: () => P,
-  ZP: () => R,
+  ZP: () => w,
   hq: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -70,7 +70,7 @@ function C() {
   let {
     volume: e,
     onVolumeChange: t
-  } = (0, h.Z)();
+  } = (0, m.Z)();
   return (0, r.jsxs)(u.P3F, {
     className: y.sliderContainer,
     onClick: e => e.stopPropagation(),
@@ -90,7 +90,7 @@ function A(e) {
   let {
     sound: t,
     forceShowBetaLabel: n = false
-  } = e, i = (0, m.V2)({
+  } = e, i = (0, h.V2)({
     location: "SoundmojiBanner"
   }), a = (0, s.e7)([f.default], () => _.ZP.canUseSoundboardEverywhere(f.default.getCurrentUser())), o = (0, s.e7)([d.Z], () => d.Z.getGuildId());
   return n || a || t.guildId === E.X8 || t.guildId === o || !i ? (0, r.jsx)(u.IGR, {
@@ -160,9 +160,9 @@ function P(e) {
     children: o,
     setTooltipShowing: s,
     clickableClassName: l
-  } = e, [d, f] = i.useState(false), [p, _] = i.useState(String(Date.now())), m = i.useCallback(e => {
+  } = e, [d, f] = i.useState(false), [p, _] = i.useState(String(Date.now())), h = i.useCallback(e => {
     e.stopPropagation(), f(!d)
-  }, [d]), h = i.useCallback(() => {
+  }, [d]), m = i.useCallback(() => {
     _(String(Date.now()))
   }, []), g = i.useRef(null);
   i.useEffect(() => {
@@ -176,7 +176,7 @@ function P(e) {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
       children: t(T(S({}, e), {
-        refreshPosition: h
+        refreshPosition: m
       }))
     }),
     align: "center",
@@ -200,7 +200,7 @@ function P(e) {
       children: (0, r.jsx)(u.P3F, T(S({}, e), {
         innerRef: g,
         "aria-label": a,
-        onClick: m,
+        onClick: h,
         className: l,
         children: o
       }))
@@ -208,7 +208,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     sound: t,
     channel: n,

@@ -13,7 +13,7 @@ require.d(exports, {
   MG: () => b,
   OT: () => a,
   Qr: () => O,
-  SU: () => R,
+  SU: () => w,
   Ut: () => y,
   WM: () => _,
   X9: () => s,
@@ -25,9 +25,9 @@ require.d(exports, {
   jF: () => f,
   ji: () => N,
   jp: () => A,
-  nU: () => m,
-  qb: () => w,
-  rI: () => h,
+  nU: () => h,
+  qb: () => R,
+  rI: () => m,
   wD: () => S,
   yl: () => T,
   zh: () => x
@@ -52,8 +52,8 @@ let c = "alt+c",
   f = new Chunk710845.Z("Clips"),
   p = 4,
   _ = 2,
-  m = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
-  h = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/,
+  h = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
+  m = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/,
   g = .1,
   E = 0,
   b = 200,
@@ -68,8 +68,8 @@ let c = "alt+c",
   N = 30,
   P = 10;
 Chunk70956.Z.Millis.DAY;
-let R = 20,
-  w = 1,
+let w = 20,
+  R = 1,
   D = 50;
 var x = function(e) {
   return e.ALL = ":all", e.APPLICATION = ":application", e.VOICE = ":voice", e.SOUNDBOARD = ":soundboard", e

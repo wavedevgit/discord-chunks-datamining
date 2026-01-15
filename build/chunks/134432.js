@@ -29,7 +29,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,7 +39,7 @@ function m(e, t) {
   }
   return n
 }
-let h = 5,
+let m = 5,
   g = /\.webp($|\?|#)/i,
   E = /\.avif($|\?|#)/i,
   b = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
@@ -53,7 +53,7 @@ function O(e, t) {
     backoff: n
   } = e;
   return async () => {
-    await u.Z.isOnline(), n.fails < h ? n.fail(() => {
+    await u.Z.isOnline(), n.fails < m ? n.fail(() => {
       v(e)
     }) : S(true, e, t)
   }
@@ -144,15 +144,15 @@ function N(e) {
     srcIsAnimated: _ = false
   } = e;
   if (t.startsWith("data:image") || d.Z.isDiscordCdnUrl(t)) return t;
-  let [m, h] = A(t);
-  null != l && (h.format = l), null != u && (h.quality = u), f && _ && (g.test(t) || E.test(t)) && (h.animated = true), E.test(t) && (h.format = "webp");
+  let [h, m] = A(t);
+  null != l && (m.format = l), null != u && (m.quality = u), f && _ && (g.test(t) || E.test(t)) && (m.animated = true), E.test(t) && (m.format = "webp");
   let b = (0, c.Tj)({
     width: a,
     height: o,
     maxWidth: p.hiG,
     maxHeight: p.hiG
   });
-  return a = b.width, o = b.height, (a !== n || o !== r) && (h.width = 0 | a, h.height = 0 | o), i().isEmpty(h) || (m += "?" + s.stringify(h)), m
+  return a = b.width, o = b.height, (a !== n || o !== r) && (m.width = 0 | a, m.height = 0 | o), i().isEmpty(m) || (h += "?" + s.stringify(m)), h
 }
 
 function P(e) {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => S,
-  m: () => w
+  m: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -84,7 +84,7 @@ let S = Chunk473749.createContext(null),
   N = 4,
   P = Chunk231338.Vq;
 
-function R() {
+function w() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "center",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "top",
     n = arguments.length > 2 ? arguments[2] : true,
@@ -105,16 +105,16 @@ function R() {
   }
 }
 
-function w(e) {
+function R(e) {
   var t;
   let {
     children: n,
     targetElementRef: a,
-    shouldShow: m = true,
+    shouldShow: h = true,
     onRequestClose: g,
     position: b = "top",
     align: v,
-    alignmentStrategy: w = "trigger-center",
+    alignmentStrategy: R = "trigger-center",
     caretConfig: D,
     hasVideo: x = false,
     gradientColor: L,
@@ -126,7 +126,7 @@ function w(e) {
     returnRef: Z,
     experimental_ignoreModalClicks: F = true,
     closeOnClickOutside: B = false
-  } = e, [V, H] = i.useState(m), [Y, W] = i.useState(b), K = i.useRef(b), z = i.useRef(0), {
+  } = e, [V, H] = i.useState(h), [Y, W] = i.useState(b), K = i.useRef(b), z = i.useRef(0), {
     ref: q,
     width: Q,
     height: X
@@ -143,20 +143,20 @@ function w(e) {
       return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === $
     }, [a, $]);
   i.useEffect(() => {
-    en && m ? H(true) : en || H(false)
-  }, [en, m]), i.useEffect(() => {
+    en && h ? H(true) : en || H(false)
+  }, [en, h]), i.useEffect(() => {
     et(b)
   }, [b, et]);
   let er = () => {
       H(false)
     },
     ei = (0, _.i)({
-      shouldShow: m,
+      shouldShow: h,
       caretPosition: (0, p.z)(Y),
       onExitComplete: er
     }),
     ea = i.useMemo(() => {
-      if ("edge" === w && null != v) {
+      if ("edge" === R && null != v) {
         let e = "top" === Y || "bottom" === Y,
           t = "left" === Y || "right" === Y;
         if (e) {
@@ -164,11 +164,11 @@ function w(e) {
         } else if (t && ("top" === v || "center" === v || "bottom" === v)) return v;
       }
       return "center"
-    }, [w, v, Y]),
+    }, [R, v, Y]),
     eo = i.useMemo(() => {
       var e;
-      if ("edge" !== w) return R(null != (e = null == D ? true : D.align) ? e : "center", Y, Q, X)
-    }, [w, D, Y, Q, X]),
+      if ("edge" !== R) return w(null != (e = null == D ? true : D.align) ? e : "center", Y, Q, X)
+    }, [R, D, Y, Q, X]),
     es = i.useMemo(() => ({
       position: Y,
       caretConfig: null != D ? D : {
@@ -186,8 +186,8 @@ function w(e) {
         let u = (0, r.jsx)(l.VqE, y(E({}, c), {
           setDialogRef: t,
           modal: G,
-          className: o()(null != L ? h.popoverContentWithGradient : h.popover, {
-            [h["popover--video"]]: x
+          className: o()(null != L ? m.popoverContentWithGradient : m.popover, {
+            [m["popover--video"]]: x
           }),
           returnRef: Z,
           children: (0, r.jsx)(S.Provider, {
@@ -207,7 +207,7 @@ function w(e) {
           children: null != L ? (0, r.jsx)(l.$1m, {
             offsetBottom: j,
             color: L,
-            className: h.popoverGradientWrapper,
+            className: m.popoverGradientWrapper,
             children: u
           }) : u
         })

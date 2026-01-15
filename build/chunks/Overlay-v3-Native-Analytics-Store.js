@@ -17,7 +17,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -105,7 +105,7 @@ function T(e, t) {
 }
 
 function C(e) {
-  s.default.track(m.rMx.OVERLAY_HOOK_RESULT, I(e))
+  s.default.track(h.rMx.OVERLAY_HOOK_RESULT, I(e))
 }
 
 function A(e, t) {
@@ -128,7 +128,7 @@ function P() {
   y = {}
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = o.ZP.getGameOrTransformedSubgameForPID(e);
   return {
     crash_type: t,
@@ -136,16 +136,16 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     pid: t,
     error: n,
     crashType: r
   } = e, i = n instanceof Error ? n : Error(null != n ? n : "Unknown error");
   return "native" === r ? (A(t, i), (0, c.V6)(i, u.gl.OutOfProcess, {
-    extra: R(t, "host")
+    extra: w(t, "host")
   })) : (N(t, i), (0, c.V6)(i, u.gl.OutOfProcess, {
-    extra: R(t, "renderer")
+    extra: w(t, "renderer")
   })), true
 }
 
@@ -212,16 +212,16 @@ class U extends(r = Chunk442837.ZP.Store) {
     return I(e)
   }
   getCrashExtra(e, t) {
-    return R(e, t)
+    return w(e, t)
   }
 }
-h(U, "displayName", "Overlay-v3-Native-Analytics-Store");
+m(U, "displayName", "Overlay-v3-Native-Analytics-Store");
 let G = new U(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_PRE_CREATE_POPOUT: D,
   OVERLAY_V3_POST_CREATE_POPOUT: x,
   OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: L,
   OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: M,
   OVERLAY_SUCCESSFULLY_SHOWN: k,
-  OVERLAY_CRASHED: w,
+  OVERLAY_CRASHED: R,
   OVERLAY_V3_NATIVE_TRACK_GAME: j
 })

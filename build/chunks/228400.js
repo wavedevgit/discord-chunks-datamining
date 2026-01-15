@@ -20,22 +20,22 @@ function l(e) {
       ...e,
       value: c
     }),
-    m = t => {
+    h = t => {
       e.isReadOnly || e.isDisabled || (u(t), _.commitValidation())
     },
-    h = _.displayValidation.isInvalid;
+    m = _.displayValidation.isInvalid;
   return {
     ..._,
     name: l,
     selectedValue: c,
     defaultSelectedValue: true !== e.value ? d : null != (n = e.defaultValue) ? n : null,
-    setSelectedValue: m,
+    setSelectedValue: h,
     lastFocusedValue: f,
     setLastFocusedValue: p,
     isDisabled: e.isDisabled || false,
     isReadOnly: e.isReadOnly || false,
     isRequired: e.isRequired || false,
-    validationState: e.validationState || (h ? "invalid" : null),
-    isInvalid: h
+    validationState: e.validationState || (m ? "invalid" : null),
+    isInvalid: m
   }
 }

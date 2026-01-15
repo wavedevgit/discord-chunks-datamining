@@ -66,9 +66,9 @@ let v = {
     let A = o.default.getRemoteSessionId(),
       N = _.Z.getVoiceStateForSession(f.default.getId(), A),
       P = (null == N ? true : N.channelId) === t.id || p.Z.getChannelId() === _.Z.getCurrentClientVoiceChannelId(t.guild_id),
-      R = c.Z.getBlockedUsersForVoiceChannel(t.id),
-      w = c.Z.getIgnoredUsersForVoiceChannel(t.id);
-    return ((0, l.Fd)(new Set([...R, ...w])) && (T = true), T || v || s || !(R.size > 0) && !(w.size > 0)) ? !I && !v && (0, h._)(t) ? new Promise(e => {
+      w = c.Z.getBlockedUsersForVoiceChannel(t.id),
+      R = c.Z.getIgnoredUsersForVoiceChannel(t.id);
+    return ((0, l.Fd)(new Set([...w, ...R])) && (T = true), T || v || s || !(w.size > 0) && !(R.size > 0)) ? !I && !v && (0, m._)(t) ? new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
@@ -97,8 +97,8 @@ let v = {
           } = n;
           return (0, r.jsx)(i, {
             channelId: t.id,
-            blockedUserIds: R,
-            ignoredUserIds: w,
+            blockedUserIds: w,
+            ignoredUserIds: R,
             transitionState: o,
             onClose: a,
             onJoin: () => e(this.handleVoiceConnect({
@@ -114,11 +114,11 @@ let v = {
         }
       }, {
         onCloseCallback: () => {
-          m.default.track(g.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+          h.default.track(g.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
             action: E.q.DISMISS,
             channel_id: t.id,
-            blocked_user_ids: Array.from(R),
-            ignored_user_ids: Array.from(w),
+            blocked_user_ids: Array.from(w),
+            ignored_user_ids: Array.from(R),
             warning_surface: E.fz.PRE_JOIN_MODAL
           })
         }

@@ -22,14 +22,14 @@ function l(e) {
   r.useEffect(() => i.Z.addRouteChangeListener(() => {
     d(s)
   }), []);
-  let [m] = r.useState(() => new a.Z(_, n, true, l));
+  let [h] = r.useState(() => new a.Z(_, n, true, l));
   return r.useEffect(() => {
-    t ? (null == c || c(m), m.createSearchContext()) : (m.clean(), d(s))
-  }, [t, m, c]), {
+    t ? (null == c || c(h), h.createSearchContext()) : (h.clean(), d(s))
+  }, [t, h, c]), {
     queryResults: f,
     query: u,
     updateQuery: r.useCallback(e => {
-      d(e), m.search(e)
-    }, [m])
+      d(e), h.search(e)
+    }, [h])
   }
 }

@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 let T = new Chunk177523.ZP(e => {
-  for (let t in e) null != E.Z.getGuild(t) || h.Z.isUnavailable(t) || delete e[t];
+  for (let t in e) null != E.Z.getGuild(t) || m.Z.isUnavailable(t) || delete e[t];
   l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: e
@@ -45,7 +45,7 @@ function C(e, t) {
   let n = {};
   T.forEach(i => {
     var a;
-    i !== v.Z.getGuildId() && i !== b.Z.getGuildId() && i !== (null == (a = m.Z.getChannel(O.Z.getChannelId())) ? true : a.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
+    i !== v.Z.getGuildId() && i !== b.Z.getGuildId() && i !== (null == (a = h.Z.getChannel(O.Z.getChannelId())) ? true : a.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
   }), o().isEmpty(n) || l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: n
@@ -58,7 +58,7 @@ function A(e, t) {
 
 function N(e, t, n) {
   if (t === p.oL) return T.subscribeChannel(e, t, n);
-  let r = m.Z.getChannel(t);
+  let r = h.Z.getChannel(t);
   if (null == r) returnfalse;
   let i = r.getGuildId();
   return (i !== e && e === S.I_8 && T.subscribeToGuild(i), null != r && r.isThread()) ? r.type === S.d4z.ANNOUNCEMENT_THREAD ? T.subscribeChannel(i, r.parent_id, n) : !!r.isActiveThread() && T.subscribeThreadMemberList(i, t, O.Z.getChannelId()) : T.subscribeChannel(i, t, n)
@@ -80,11 +80,11 @@ function P(e) {
   })
 }
 
-function R() {
+function w() {
   C(false, false)
 }
 
-function w(e) {
+function R(e) {
   let {
     idle: t
   } = e;
@@ -173,7 +173,7 @@ function B(e) {
     guildId: t,
     channelId: n
   } = e;
-  return !h.Z.isUnavailable(t) && A(t, n)
+  return !m.Z.isUnavailable(t) && A(t, n)
 }
 
 function V() {
@@ -222,7 +222,7 @@ function K(e) {
 }
 class z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(f.default, _.ZP, m.Z, u.Z, h.Z, g.ZP, E.Z, b.Z, y.Z, O.Z, v.Z, d.Z), this.syncWith([d.Z], W), this.syncWith([_.ZP], V)
+    this.waitFor(f.default, _.ZP, h.Z, u.Z, m.Z, g.ZP, E.Z, b.Z, y.Z, O.Z, v.Z, d.Z), this.syncWith([d.Z], W), this.syncWith([_.ZP], V)
   }
   getSubscribedThreadIds() {
     return T.getSubscribedThreadIds()
@@ -245,8 +245,8 @@ I(z, "displayName", "GuildSubscriptionsStore");
 let q = new z(Chunk570140.Z, {
   CONNECTION_OPEN: P,
   CONNECTION_RESUMED: P,
-  CONNECTION_CLOSED: R,
-  IDLE: w,
+  CONNECTION_CLOSED: w,
+  IDLE: R,
   LOGOUT: D,
   VOICE_CHANNEL_SELECT: B,
   CHANNEL_SELECT: B,

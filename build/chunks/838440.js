@@ -2,7 +2,7 @@
 /** chunk id: 838440, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => m
+  v: () => h
 }), require("./388685.js"), require("./473749.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -37,8 +37,8 @@ function _(e) {
     content: l,
     stickers: u,
     uploads: _,
-    channel: m,
-    restrictMentions: h,
+    channel: h,
+    restrictMentions: m,
     respectCooldown: g,
     userCanUsePremiumMessageLength: E,
     resolve: b
@@ -50,9 +50,9 @@ function _(e) {
   let y = E ? d.en1 : d.J6R,
     O = !E;
   if (l.length > y) {
-    O && null != m ? r.Z.dispatch({
+    O && null != h ? r.Z.dispatch({
       type: "MESSAGE_LENGTH_UPSELL",
-      channel: m,
+      channel: h,
       content: l
     }) : p(l.length, y), b({
       valid: false,
@@ -60,8 +60,8 @@ function _(e) {
     });
     return
   }
-  if (null != m) {
-    if (null != m.getGuildId() && g && o.Z.getSlowmodeCooldownGuess(m.id) > 0) return void b({
+  if (null != h) {
+    if (null != h.getGuildId() && g && o.Z.getSlowmodeCooldownGuess(h.id) > 0) return void b({
       valid: false,
       failureReason: d.zYc.SLOWMODE_COOLDOWN
     });
@@ -72,10 +72,10 @@ function _(e) {
           animation: r
         }
         of c.$) {
-        let i = e(l, m, h);
+        let i = e(l, h, m);
         if (false !== i) return void n({
           analyticsType: t,
-          channel: m,
+          channel: h,
           onCancel: () => b({
             valid: false,
             failureReason: d.zYc.SHOUTING_CANCELLED
@@ -104,7 +104,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     openWarningPopout: t,
     type: n,

@@ -46,7 +46,7 @@ function g(e) {
     }))
   }, [g, null == C ? true : C.benefits]), {
     openModal: P,
-    subscriptionPurchaseButtonState: R
+    subscriptionPurchaseButtonState: w
   } = (0, d.Z)({
     skuId: y,
     initialSubscribeForGuild: null != O ? O : true
@@ -57,15 +57,15 @@ function g(e) {
     transitionState: v,
     onHeaderTitleClick: null != S ? S : b,
     onClose: b,
-    footer: (0, r.jsx)(m.pV, {
+    footer: (0, r.jsx)(h.pV, {
       onClick: P,
       appId: g,
       subscriptionType: E,
       skuId: y,
       subscriptionPlan: T,
-      state: R
+      state: w
     }),
-    children: (0, r.jsx)(h.i, {
+    children: (0, r.jsx)(m.i, {
       appId: g,
       skuId: y,
       benefits: null != N ? N.map(e => (0, r.jsx)(a.Gm, {

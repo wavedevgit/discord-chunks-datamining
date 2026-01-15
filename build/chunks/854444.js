@@ -42,13 +42,13 @@ function N() {
   let e = l.Z.getFavoriteChannels(),
     t = O.ZP.isGuildCollapsed(I._),
     n = y.Z.getChannelId(),
-    r = m.Z.getChannel(n),
+    r = h.Z.getChannel(n),
     i = y.Z.getVoiceChannelId(),
     s = [],
     u = {};
   for (let t in e) {
     let n = e[t],
-      r = m.Z.getChannel(n.id);
+      r = h.Z.getChannel(n.id);
     if (null == r || n.type === o.Dd.CATEGORY) continue;
     let i = (0, c.r)(e, n, r);
     if (null == n.parentId || !(n.parentId in e)) {
@@ -69,16 +69,16 @@ function N() {
       let u = null != r && (r.id === n.id || i === n.id),
         f = null != r && r.isThread() && r.parent_id === n.id,
         _ = null != (c = u || f || !s ? d.Z.getActiveJoinedRelevantThreadsForParent(n.guild_id, n.id) : d.Z.getActiveJoinedUnreadThreadsForParent(n.guild_id, n.id)) ? c : {},
-        m = (0, S.zR)(n, _, r, i, t),
-        g = h.Z.isCollapsed(n.id),
+        h = (0, S.zR)(n, _, r, i, t),
+        g = m.Z.isCollapsed(n.id),
         y = O.ZP.isChannelMuted(n.guild_id, n.id),
         v = {
           id: n.id,
           record: n,
           category: o,
           position: e[n.id].order,
-          threadIds: m,
-          threadCount: a().size(m),
+          threadIds: h,
+          threadCount: a().size(h),
           isCollapsed: g,
           isMuted: y,
           isFirstVoiceChannel: false,
@@ -175,7 +175,7 @@ function N() {
       for (let t of [C, ...A])
         for (let n of t.channelList)
           for (let t of (e(n.record), n.threadIds)) {
-            let n = m.Z.getChannel(t);
+            let n = h.Z.getChannel(t);
             null != n && e(n)
           }
     },

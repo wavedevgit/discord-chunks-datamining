@@ -42,8 +42,8 @@ function p(e) {
     currentUser: d,
     activity: p,
     application: _,
-    entry: m,
-    onClose: h
+    entry: h,
+    onClose: m
   } = e, g = (0, s.Z)(f({
     location: t,
     source: o.m1.UserProfile,
@@ -51,10 +51,10 @@ function p(e) {
   }, (0, c.nK)({
     user: n,
     activity: p,
-    entry: m
+    entry: h
   }))), E = (0, u.Z)({
     applicationId: null == _ ? true : _.id,
-    onClose: h
+    onClose: m
   }), b = (0, i.Z)(p);
   return b && null != _ ? E : !b && (0, a.Z)(p) ? g : (0, r.Z)(p) && n.id !== d.id ? () => (0, l.s)({
     activity: p,

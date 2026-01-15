@@ -57,32 +57,32 @@ function _(e, t) {
     children: i,
     element: a
   } = t;
-  return "gameMentionInput" === a.type ? (0, r.jsx)(m, {
+  return "gameMentionInput" === a.type ? (0, r.jsx)(h, {
     attributes: n,
     element: a,
     children: i
   }) : null
 }
-let m = e => {
+let h = e => {
   let {
     element: t,
     attributes: n,
     children: a
-  } = e, u = (0, s.vt)(), f = (0, s.UE)(), _ = (0, s._7)(), m = o()(c.inlineElement, c.optionPill, c.gameMention, {
+  } = e, u = (0, s.vt)(), f = (0, s.UE)(), _ = (0, s._7)(), h = o()(c.inlineElement, c.optionPill, c.gameMention, {
     [c.selectedPill]: f && u,
     [c.erroredPill]: t.error
-  }), h = i.useCallback(() => {
+  }), m = i.useCallback(() => {
     l.bN.isVoid(_, t)
   }, [_, t]), g = (0, r.jsx)("span", {
     className: c.optionPillValue,
     children: a
   });
   return (0, r.jsxs)("span", p(d({}, n), {
-    className: m,
+    className: h,
     children: [(0, r.jsxs)("span", {
       className: c.optionPillKey,
       contentEditable: false,
-      onClick: h,
+      onClick: m,
       children: ["@game", "​"]
     }), g, (0, r.jsx)("span", {
       contentEditable: false,

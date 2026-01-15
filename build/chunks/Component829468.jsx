@@ -20,14 +20,14 @@ function _(e) {
   var t, n;
   let {
     className: _,
-    textSize: m = 18
-  } = e, h = (0, i.e7)([o.default], () => o.default.getCurrentUser()), {
+    textSize: h = 18
+  } = e, m = (0, i.e7)([o.default], () => o.default.getCurrentUser()), {
     avatarDecoration: g
   } = (0, i.e7)([c.Z], () => c.Z.getCheckpointData()), E = (0, i.Wu)([s.Z], () => {
     if ((null == g ? true : g.skuId) == null) return [];
     let e = s.Z.getForSku(null == g ? true : g.skuId);
     return null != e ? [...e] : []
-  }), b = null != (n = null == h || null == (t = h.avatarDecoration) ? true : t.skuId) ? n : null, y = null != b && b === (null == g ? true : g.skuId), O = null != E[0], v = () => {
+  }), b = null != (n = null == m || null == (t = m.avatarDecoration) ? true : t.skuId) ? n : null, y = null != b && b === (null == g ? true : g.skuId), O = null != E[0], v = () => {
     O || (0, l._Z)()
   }, S = async () => {
     O && !y && await (0, a.Mn)({
@@ -41,7 +41,7 @@ function _(e) {
     children: (0, r.jsx)(d.Z, {
       variant: "eyebrow",
       style: {
-        fontSize: m
+        fontSize: h
       },
       children: O ? y ? p.intl.string(p.t["h+WsPb"]) : p.intl.string(p.t.MAS7uK) : p.intl.string(f.default.mDxM7m)
     })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $x: () => T,
-  ZP: () => R,
+  ZP: () => w,
   d7: () => A,
   w6: () => C
 }), require("./539854.js"), require("./361932.js"), require("./187205.js"), require("./388685.js");
@@ -86,7 +86,7 @@ function N(e) {
   });
   let c = null != (t = null == i ? true : i.element) ? t : g.VqG,
     u = null != (n = null == i ? true : i.elementProps) ? n : {};
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     section: i.section,
     children: (0, r.jsx)(c, S(O({}, u), {
       setPreventNavigation: o,
@@ -159,13 +159,13 @@ class P extends Chunk473749.PureComponent {
           }) : null, e.map((e, t) => {
             if (null != e.tabPredicate && !e.tabPredicate()) return null;
             switch (e.section) {
-              case h.ID.HEADER:
+              case m.ID.HEADER:
                 return (0, r.jsx)(s.njP.Header, {
                   children: e.label
                 }, t);
-              case h.ID.DIVIDER:
+              case m.ID.DIVIDER:
                 return (0, r.jsx)(s.njP.Separator, {}, t);
-              case h.ID.CUSTOM:
+              case m.ID.CUSTOM:
                 var n;
                 let i = null != (n = e.element) ? n : g.VqG;
                 return (0, r.jsx)(i, {}, t);
@@ -205,7 +205,7 @@ class P extends Chunk473749.PureComponent {
       children: [(0, r.jsx)(c.yY, {
         location: i,
         subsection: u
-      }), (0, r.jsx)(h.ZP, {
+      }), (0, r.jsx)(m.ZP, {
         sidebarTheme: t,
         scrollerRef: this.scrollerRef,
         section: n,
@@ -276,8 +276,8 @@ class P extends Chunk473749.PureComponent {
         icon: f,
         className: p,
         newIndicator: _,
-        newIndicatorDismissibleContentTypes: m,
-        badgeCount: h
+        newIndicatorDismissibleContentTypes: h,
+        badgeCount: m
       } = e, y = null;
       i === g.oAB.ACCOUNT && this.props.isEligibleForPomelo ? y = (0, r.jsx)(s.Mgn, {
         size: "custom",
@@ -288,10 +288,10 @@ class P extends Chunk473749.PureComponent {
         variant: "text-md/normal",
         color: "text-muted",
         children: e.decoration
-      }) : null != n && (null == m ? true : m.includes(n)) && !t ? y = null != _ ? _ : (0, r.jsx)(s.IGR, {
+      }) : null != n && (null == h ? true : h.includes(n)) && !t ? y = null != _ ? _ : (0, r.jsx)(s.IGR, {
         text: E.intl.string(E.t.y2b7CA)
-      }) : null != f ? y = f : null != h && h > 0 && (y = (0, r.jsx)(s.mAB, {
-        count: h
+      }) : null != f ? y = f : null != m && m > 0 && (y = (0, r.jsx)(s.mAB, {
+        count: m
       }));
       let O = i === g.oAB.PREMIUM ? (0, r.jsx)(d.Z, {
         label: a,
@@ -312,4 +312,4 @@ class P extends Chunk473749.PureComponent {
     })
   }
 }
-let R = P
+let w = P

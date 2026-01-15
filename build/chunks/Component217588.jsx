@@ -96,9 +96,9 @@ let Z = 80,
   };
 
 function z(e) {
-  I.default.track(w.rMx.PREMIUM_PROMOTION_OPENED, {
-    location_page: null != e.guild_id ? w.ZY5.GUILD_CHANNEL : w.ZY5.DM_CHANNEL,
-    location_section: w.jXE.STICKER_POPOUT
+  I.default.track(R.rMx.PREMIUM_PROMOTION_OPENED, {
+    location_page: null != e.guild_id ? R.ZY5.GUILD_CHANNEL : R.ZY5.DM_CHANNEL,
+    location_section: R.jXE.STICKER_POPOUT
   }), (0, y.z)()
 }
 
@@ -107,14 +107,14 @@ function q(e) {
     sticker: t,
     description: n
   } = e;
-  return (0, r.jsxs)(m.Z, {
+  return (0, r.jsxs)(h.Z, {
     children: [(0, r.jsx)(P.Z, {
       sticker: t,
       size: F,
       isInteracting: true
-    }), (0, r.jsxs)(m.Z, {
-      direction: m.Z.Direction.VERTICAL,
-      justify: m.Z.Justify.CENTER,
+    }), (0, r.jsxs)(h.Z, {
+      direction: h.Z.Direction.VERTICAL,
+      justify: h.Z.Justify.CENTER,
       className: j.truncatingText,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/semibold",
@@ -140,24 +140,24 @@ let Q = e => {
     });
     (0, C.Pq)(n.pack_id);
     let p = (0, C.Sd)(a),
-      m = {
+      h = {
         refreshPositionKey: o,
         channel: a
       },
-      h = i.useRef(m);
+      m = i.useRef(h);
     if (i.useEffect(() => {
-        h.current = m
+        m.current = h
       }), i.useEffect(() => {
         let {
           refreshPositionKey: e
-        } = h.current;
+        } = m.current;
         e()
       }, [c]), i.useEffect(() => {
         let {
           channel: e
-        } = h.current;
-        I.default.track(w.rMx.OPEN_POPOUT, k({
-          type: w.jXE.STICKER_POPOUT,
+        } = m.current;
+        I.default.track(R.rMx.OPEN_POPOUT, k({
+          type: R.jXE.STICKER_POPOUT,
           guild_id: e.getGuildId(),
           sticker_pack_id: n.pack_id
         }, (0, _.v_)(e)))
@@ -166,7 +166,7 @@ let Q = e => {
     });
     let g = u,
       E = () => {
-        g && (0, R.m)({
+        g && (0, w.m)({
           stickerPack: l,
           stickerPickerCategories: p
         }), t()
@@ -205,7 +205,7 @@ let Q = e => {
         refreshPositionKey: y
       } = e,
       [C, A] = i.useState(null),
-      [N, R] = i.useState(false),
+      [N, w] = i.useState(false),
       M = S.default.getCurrentUser(),
       U = T.ZP.canUseCustomStickersEverywhere(M),
       Z = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
@@ -213,8 +213,8 @@ let Q = e => {
       [H, W] = i.useState(false),
       [K, Q] = i.useState(null),
       X = i.useMemo(() => ({
-        page: null != a.guild_id ? w.ZY5.GUILD_CHANNEL : w.ZY5.DM_CHANNEL,
-        section: w.jXE.STICKER_POPOUT
+        page: null != a.guild_id ? R.ZY5.GUILD_CHANNEL : R.ZY5.DM_CHANNEL,
+        section: R.jXE.STICKER_POPOUT
       }), [a.guild_id]),
       {
         current: J
@@ -233,7 +233,7 @@ let Q = e => {
         stickerSourceGuild: e
       } = ee.current;
       (async () => {
-        (null == e || e.features.has(w.GuildFeatures.DISCOVERABLE)) && A(await (0, g.Z)(n.id)), R(true)
+        (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && A(await (0, g.Z)(n.id)), w(true)
       })()
     }, [n.id, F]);
     let et = n.guild_id === a.getGuildId(),
@@ -252,7 +252,7 @@ let Q = e => {
         } = ee.current;
         e()
       }, [N, C]), (0, p.ZP)(() => {
-        I.default.track(w.rMx.OPEN_POPOUT, k({
+        I.default.track(R.rMx.OPEN_POPOUT, k({
           type: ei
         }, J))
       }), !N) return (0, r.jsx)(b.SE, {
@@ -304,7 +304,7 @@ let Q = e => {
             i = () => {
               y(), W(!H)
             },
-            a = null != C ? h.JO.createFromDiscoverableGuild(C) : h.JO.createFromGuildRecord(Z);
+            a = null != C ? m.JO.createFromDiscoverableGuild(C) : m.JO.createFromGuildRecord(Z);
           return (0, r.jsxs)("div", {
             className: j.guildSection,
             children: [(0, r.jsx)(d.Text, {
@@ -320,7 +320,7 @@ let Q = e => {
               children: [(0, r.jsx)(d.P3F, {
                 onClick: i,
                 className: j.showMoreEmojis,
-                children: (0, r.jsxs)(m.Z, {
+                children: (0, r.jsxs)(h.Z, {
                   children: [(0, r.jsx)(d.Text, {
                     className: j.__invalid_showMoreEmojisLabel,
                     variant: "text-xs/normal",
@@ -334,10 +334,10 @@ let Q = e => {
                     })
                   })]
                 })
-              }), H && (0, r.jsx)(m.Z, {
-                wrap: m.Z.Wrap.WRAP,
-                align: m.Z.Align.START,
-                justify: m.Z.Justify.START,
+              }), H && (0, r.jsx)(h.Z, {
+                wrap: h.Z.Wrap.WRAP,
+                align: h.Z.Align.START,
+                justify: h.Z.Justify.START,
                 className: j.otherEmojisContainer,
                 children: t.map(e => (0, r.jsx)(c.u, G(k({
                   text: e.name

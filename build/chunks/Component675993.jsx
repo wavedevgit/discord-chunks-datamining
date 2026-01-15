@@ -40,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function R(e) {
   }
   return e
 }
-let w = 2,
+let R = 2,
   D = 2e3;
 
 function x(e) {
@@ -67,18 +67,18 @@ function x(e) {
     var e;
     return null != (e = (0, y.jD)(n)) ? e : ""
   }, [n]), _ = (0, s.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), {
-    isSlideReady: m
+    isSlideReady: h
   } = (0, O.hH)(), [g, E] = i.useState(false);
   i.useEffect(() => {
-    m && E(true)
-  }, [m]);
+    h && E(true)
+  }, [h]);
   let b = null != a;
   return (0, r.jsxs)("div", {
     className: A.container,
     children: [(0, r.jsxs)("div", {
       children: [b ? (0, r.jsxs)("div", {
         className: A.videoContainer,
-        children: [g ? (0, r.jsx)(h.Z, {
+        children: [g ? (0, r.jsx)(m.Z, {
           className: o()(A.videoCover, A.video),
           loop: true,
           muted: true,
@@ -220,33 +220,33 @@ function U(e) {
     sectionName: o,
     hasCommands: s,
     isDeveloperOfThisApp: c
-  } = e, u = (0, _.Fs)(n, a.id), d = (0, m.q)(a.id), h = null == d || null == (t = d.bot) ? true : t.id, g = (0, p.Z)({
+  } = e, u = (0, _.Fs)(n, a.id), d = (0, h.q)(a.id), m = null == d || null == (t = d.bot) ? true : t.id, g = (0, p.Z)({
     context: n,
     application: a,
-    botUserId: h
+    botUserId: m
   }), {
     analyticsLocations: E
   } = (0, f.ZP)();
   return (i.useEffect(() => {
     if (!(0, y.BQ)(a) || !(0, y.ye)(a)) return;
     let e = setTimeout(() => {
-      (null == u || null == h) && b.default.track(T.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+      (null == u || null == m) && b.default.track(T.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
         application_id: a.id,
         is_primary_entry_point_command_non_null: null != u,
-        is_bot_user_id_non_null: null != h,
+        is_bot_user_id_non_null: null != m,
         show_try_it_out_button: g
       })
     }, D);
     return () => clearTimeout(e)
-  }, [a, u, h, g]), (0, y.BQ)(a) && (0, y.ye)(a)) ? null != u && null != h ? (0, r.jsxs)(l.ButtonGroup, {
+  }, [a, u, m, g]), (0, y.BQ)(a) && (0, y.ye)(a)) ? null != u && null != m ? (0, r.jsxs)(l.ButtonGroup, {
     fullWidth: true,
     children: [(0, r.jsx)(S.Z, {
       context: n,
       application: a,
       sectionName: o,
       primaryEntryPointCommand: u
-    }), g && null != h ? (0, r.jsx)(I.Z, {
-      botUserId: h,
+    }), g && null != m ? (0, r.jsx)(I.Z, {
+      botUserId: m,
       applicationId: a.id,
       analyticsLocations: E
     }) : null]
@@ -275,7 +275,7 @@ function G(e) {
       let e = c * u;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, w * c),
+        minHeightOverride: Math.min(e, R * c),
         maxHeightOverride: e
       }
     }, [u, c]),
@@ -283,10 +283,10 @@ function G(e) {
       ref: f,
       isTransitioning: p,
       onTransitionEnd: _
-    } = (0, v.Z)(R({
+    } = (0, v.Z)(w({
       isExpanded: n
     }, d)),
-    m = n || p;
+    h = n || p;
   return (0, r.jsxs)("div", {
     className: A.descriptionContainer,
     children: [(0, r.jsx)("div", {
@@ -297,20 +297,20 @@ function G(e) {
         ref: s,
         className: N.markup,
         variant: "text-sm/medium",
-        lineClamp: m ? true : w,
+        lineClamp: h ? true : R,
         style: {
-          maxHeight: m ? true : d.minHeightOverride
+          maxHeight: h ? true : d.minHeightOverride
         },
         children: o
       })
-    }), null != u && u > w ? (0, r.jsxs)(l.P3F, {
+    }), null != u && u > R ? (0, r.jsxs)(l.P3F, {
       className: A.expandableDescriptionClickable,
       onClick: () => a(e => !e),
       children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: m ? C.intl.string(C.t.u4YJ8g) : C.intl.string(C.t["N/tajD"])
-      }), m ? (0, r.jsx)(l.u04, {
+        children: h ? C.intl.string(C.t.u4YJ8g) : C.intl.string(C.t["N/tajD"])
+      }), h ? (0, r.jsx)(l.u04, {
         size: "sm",
         color: l.TVs.colors.TEXT_BRAND
       }) : (0, r.jsx)(l.CJ0, {

@@ -45,10 +45,10 @@ function y(e) {
       u()(null == r || 1 === i || 2 === i, "cannot submit multiple modals at once"), r = n, i = 0;
       let d = e => {
         setTimeout(() => {
-          r === n && 0 === i && (0, m.yr)(n)
+          r === n && 0 === i && (0, h.yr)(n)
         }, e)
       };
-      return null != c ? (d(2 * h.Z.Millis.MINUTE), c.then(() => d(10 * h.Z.Millis.SECOND)).catch(() => (0, m.yr)(n))) : d(10 * h.Z.Millis.SECOND), true;
+      return null != c ? (d(2 * m.Z.Millis.MINUTE), c.then(() => d(10 * m.Z.Millis.SECOND)).catch(() => (0, h.yr)(n))) : d(10 * m.Z.Millis.SECOND), true;
     default:
       returnfalse
   }

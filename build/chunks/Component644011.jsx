@@ -49,16 +49,16 @@ function y(e) {
     location: O,
     includeWishlists: true,
     userIds: a
-  }), R = i.useMemo(() => new Set(a), [a]), w = i.useMemo(() => N.length > 0 && N.every(e => {
+  }), w = i.useMemo(() => new Set(a), [a]), R = i.useMemo(() => N.length > 0 && N.every(e => {
     var t;
-    return null == (t = P[e.skuId]) ? true : t.some(e => e.reason === f.g.WISHLIST && R.has(e.userId))
-  }), [N, P, R]), D = i.useMemo(() => {
-    let e = w && 1 === a.length;
+    return null == (t = P[e.skuId]) ? true : t.some(e => e.reason === f.g.WISHLIST && w.has(e.userId))
+  }), [N, P, w]), D = i.useMemo(() => {
+    let e = R && 1 === a.length;
     return N.map(t => {
       var n, i;
-      let o = null != (i = null == (n = P[t.skuId]) ? true : n.filter(e => e.reason === f.g.WISHLIST && R.has(e.userId)).map(e => e.userId).filter(d.lm)) ? i : [];
-      return (0, r.jsx)(m.Z, {
-        variant: e ? m.B.NO_ICON : o.length > 0 ? m.B.WISHLIST : m.B.POPULAR,
+      let o = null != (i = null == (n = P[t.skuId]) ? true : n.filter(e => e.reason === f.g.WISHLIST && w.has(e.userId)).map(e => e.userId).filter(d.lm)) ? i : [];
+      return (0, r.jsx)(h.Z, {
+        variant: e ? h.B.NO_ICON : o.length > 0 ? h.B.WISHLIST : h.B.POPULAR,
         userIdsForRecommendation: o,
         userIdsForGifting: a,
         wishlistItem: t,
@@ -68,9 +68,9 @@ function y(e) {
         contextContainerClassName: b.contextContainer
       }, t.skuId)
     })
-  }, [y, S, v, N, P, w, a, R]);
+  }, [y, S, v, N, P, R, a, w]);
   i.useEffect(() => {
-    0 !== N.length && u.default.track(h.rMx.COMMERCE_SHOP_GIFTING_BREADCRUMB_VIEWED, {
+    0 !== N.length && u.default.track(m.rMx.COMMERCE_SHOP_GIFTING_BREADCRUMB_VIEWED, {
       guild_id: v,
       channel_id: S,
       sku_ids: N.map(e => e.skuId),
@@ -85,7 +85,7 @@ function y(e) {
       children: [(0, r.jsx)(s.xvT, {
         variant: "text-xs/medium",
         color: "text-muted",
-        children: w ? E.intl.string(E.t["7lZ31J"]) : E.intl.string(E.t.BCi1gT)
+        children: R ? E.intl.string(E.t["7lZ31J"]) : E.intl.string(E.t.BCi1gT)
       }), null != C ? C : null]
     }), (0, r.jsx)("div", {
       className: b.items,

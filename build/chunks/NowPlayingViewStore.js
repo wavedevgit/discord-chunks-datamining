@@ -2,7 +2,7 @@
 /** chunk id: 801077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eR
+  Z: () => ew
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -123,12 +123,12 @@ function ea(e) {
 function eo(e) {
   if ((0, d.Z)(e)) return I.r9;
   if ((0, f.Z)(e)) return er(e.name);
-  let t = null != e.application_id ? h.Z.getApplication(e.application_id) : null;
+  let t = null != e.application_id ? m.Z.getApplication(e.application_id) : null;
   return null != t ? t : (0, p.Z)(e) && null != e.url ? ei(e.url) : (null != e.application_id && ea(e.application_id), t)
 }
 
 function es(e) {
-  let t = h.Z.getApplication(e);
+  let t = m.Z.getApplication(e);
   return null != t ? t : "string" != typeof e ? (new g.Z("NowPlayingViewStore").error("Unknown type for applicationId: ".concat(typeof e, ", value: ").concat(e), {
     tags: {
       source: "ACTIVITIES"
@@ -168,8 +168,8 @@ function ef(e, t, n) {
     d = s.map(e => e.id),
     f = s.filter(t => e.has(t.id)),
     p = false,
-    m = [],
-    h = new Set,
+    h = [],
+    m = new Set,
     g = false,
     E = [];
   for (let e of s) {
@@ -199,21 +199,21 @@ function ef(e, t, n) {
           ChannelStore: N.Z,
           VoiceStateStore: M.Z,
           PermissionStore: D.Z,
-          GuildStore: w.Z
+          GuildStore: R.Z
         }) !== c.Fw.CAN_JOIN) continue
     }
-    if (!y.JE(r) || null == d || h.has(d.id)) continue;
+    if (!y.JE(r) || null == d || m.has(d.id)) continue;
     let f = null != r ? eo(r) : null;
     (null == f || f.id !== d.id) && (r = null);
     let O = [];
-    O = null != r && null != r.party && null != r.party.id ? Array.from(null != (P = R.Z.getParty(r.party.id)) ? P : []).reduce((e, t) => {
+    O = null != r && null != r.party && null != r.party.id ? Array.from(null != (P = w.Z.getParty(r.party.id)) ? P : []).reduce((e, t) => {
       let n = j.default.getUser(t);
       return null != n && e.push(n), e
     }, []) : s.filter(e => {
       let t = en(e.id),
         n = null != t ? eo(t) : null;
       return null != n && n.id === d.id
-    }), (O = a().orderBy(O, [ed], ["desc"])).length !== s.length && (p = true), h.add(d.id), m.push({
+    }), (O = a().orderBy(O, [ed], ["desc"])).length !== s.length && (p = true), m.add(d.id), h.push({
       game: d,
       activity: r,
       activityUser: e,
@@ -229,7 +229,7 @@ function ef(e, t, n) {
     let t = el(e.id),
       n = N.Z.getChannel(t),
       i = null != n ? n.getGuildId() : null,
-      o = w.Z.getGuild(i);
+      o = R.Z.getGuild(i);
     if (F.has(i) && Z.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
       let e = M.Z.getVoiceStatesForChannel(n.id),
@@ -265,7 +265,7 @@ function ef(e, t, n) {
     partiedMembers: s,
     showPlayingMembers: p,
     guildContext: r,
-    currentActivities: eu(m, e => {
+    currentActivities: eu(h, e => {
       var t;
       return null != (t = e.startedPlayingTime) ? t : 0
     }).value(),
@@ -286,10 +286,10 @@ function e_(e) {
     i = e => e.applicationStreams.length > 0,
     a = e => e.partiedMembers.length > 1,
     o = e => e.isSpotifyActivity;
-  return e.values().orderBy([em, a, i, r, n, o, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
+  return e.values().orderBy([eh, a, i, r, n, o, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
 }
 
-function em(e) {
+function eh(e) {
   return 0 !== e.voiceChannels.length && e.voiceChannels.length > 0 && e.voiceChannels.some(e => {
     let {
       voiceStates: t
@@ -298,7 +298,7 @@ function em(e) {
   })
 }
 
-function eh(e) {
+function em(e) {
   return 0 !== e.voiceChannels.length && e.voiceChannels.length > 0 && e.voiceChannels.every(e => {
     let {
       voiceStates: t
@@ -314,7 +314,7 @@ function eg(e) {
 function eE(e) {
   return e.filter(e => {
     let t = eg(e),
-      n = eh(e);
+      n = em(e);
     return (e.voiceChannels.length >= 1 || e.currentActivities.length > 0 || e.applicationStreams.length > 0) && !t && !n
   })
 }
@@ -329,7 +329,7 @@ function eb(e) {
 function ey() {
   if ($.size > 0) {
     let e = Array.from($);
-    m.ZP.fetchApplications(e), e.forEach(e => ee.add(e)), $.clear()
+    h.ZP.fetchApplications(e), e.forEach(e => ee.add(e)), $.clear()
   }
 }
 
@@ -365,7 +365,7 @@ function eA() {
 }
 class eN extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([j.default, h.Z, x.Z, R.Z, M.Z, A.Z, L.Z, P.Z, O.Z], eI), this.waitFor(h.Z, A.Z, N.Z, P.Z, R.Z, E.Z, w.Z, D.Z, x.Z, L.Z, O.Z, j.default, M.Z)
+    this.syncWith([j.default, m.Z, x.Z, w.Z, M.Z, A.Z, L.Z, P.Z, O.Z], eI), this.waitFor(m.Z, A.Z, N.Z, P.Z, w.Z, E.Z, R.Z, D.Z, x.Z, L.Z, O.Z, j.default, M.Z)
   }
   get currentActivityParties() {
     return q
@@ -386,4 +386,4 @@ let eP = new eN(Chunk570140.Z, {
     NOW_PLAYING_MOUNTED: eC,
     NOW_PLAYING_UNMOUNTED: eA
   }),
-  eR = eP
+  ew = eP

@@ -20,11 +20,11 @@ function f(e) {
     totalPageCount: n,
     disabled: a,
     onPageChange: s
-  } = e, [c, u] = i.useState(false), [f, p] = i.useState(null), _ = null != f && f >= 1 && f <= n, m = e => {
+  } = e, [c, u] = i.useState(false), [f, p] = i.useState(null), _ = null != f && f >= 1 && f <= n, h = e => {
     let t = parseInt(e);
     if ("" === e || isNaN(t)) return void p(null);
     p(t)
-  }, h = e => {
+  }, m = e => {
     "Enter" === e.key && null != f && _ && (s(f), u(false), p(null))
   };
   return a ? (0, r.jsx)(l.Heading, {
@@ -38,11 +38,11 @@ function f(e) {
       type: "number",
       autoFocus: true,
       value: null == f ? "" : "".concat(f),
-      onChange: m,
+      onChange: h,
       onBlur: () => {
         u(false), p(null)
       },
-      onKeyUp: h,
+      onKeyUp: m,
       disabled: a
     }, t.key)
   }) : (0, r.jsx)(l.P3F, {
@@ -64,8 +64,8 @@ function p(e) {
     maxVisiblePages: a,
     disablePaginationGap: p,
     onPageChange: _,
-    hideMaxPage: m = false,
-    className: h,
+    hideMaxPage: h = false,
+    className: m,
     renderPageWrapper: g
   } = e, E = Math.ceil(n / i);
 
@@ -159,7 +159,7 @@ function p(e) {
       hasMultiplePages: n
     } = e;
     return n ? (0, r.jsx)("div", {
-      className: o()(d.pageControlContainer, h),
+      className: o()(d.pageControlContainer, m),
       children: (0, r.jsx)("nav", {
         className: d.pageControl,
         children: t.map(e => {
@@ -183,7 +183,7 @@ function p(e) {
     totalPageCount: E,
     selectedPage: t,
     maxVisiblePages: a,
-    hideMaxPage: m,
+    hideMaxPage: h,
     onPageChange: b,
     children: T
   })

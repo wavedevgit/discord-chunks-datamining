@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
 function I(e, t, n, r, i) {
   if (null == e) return;
   let a = () => {
-    let a = m.Z.getChannel(e);
+    let a = h.Z.getChannel(e);
     if (null == a) return;
     let {
       command: o,
@@ -64,7 +64,7 @@ function I(e, t, n, r, i) {
       })
     }
   };
-  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, o.Z)({
+  "" !== m.Z.getDraft(e, m.d.ChannelMessage) ? (0, o.Z)({
     title: S.intl.string(S.t.pe26Cj),
     subtitle: S.intl.string(S.t["+awCIy"]),
     confirmText: S.intl.string(S.t.VkKicb),
@@ -83,12 +83,12 @@ function T(e) {
     node: n,
     stateKey: o,
     children: s
-  } = e, l = (0, a.e7)([m.Z, E.Z], () => {
+  } = e, l = (0, a.e7)([h.Z, E.Z], () => {
     var e;
-    return m.Z.getChannel(null != (e = n.channelId) ? e : E.Z.getChannelId())
+    return h.Z.getChannel(null != (e = n.channelId) ? e : E.Z.getChannelId())
   }, [n.channelId]), {
     hasSendMessagePerm: c,
-    hasUseAppCommandsPerm: h
+    hasUseAppCommandsPerm: m
   } = (0, a.cj)([g.Z], () => ({
     hasSendMessagePerm: g.Z.can(y.Plq.SEND_MESSAGES, l),
     hasUseAppCommandsPerm: g.Z.can(y.Plq.USE_APPLICATION_COMMANDS, l)
@@ -104,8 +104,8 @@ function T(e) {
     let e = l.isPrivate();
     if ((0, p.xl)(l) || !e && !c) returnfalse;
     let t = (null == S ? true : S.applicationId) === O.bi.BUILT_IN;
-    return !!e || !!t || !!h
-  }, [l, S, c, h, n.commandName, T]), A = i.useCallback(e => {
+    return !!e || !!t || !!m
+  }, [l, S, c, m, n.commandName, T]), A = i.useCallback(e => {
     null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && I(l.id, n.commandName, n.commandKey, d.Vh.MENTION)
   }, [l, n.commandKey, n.commandName]);
   return C ? (0, r.jsxs)(f.Z, {

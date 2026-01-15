@@ -8,12 +8,12 @@ require.d(exports, {
   WY: () => A,
   YD: () => D,
   a7: () => p,
-  aD: () => m,
-  j: () => R,
+  aD: () => h,
+  j: () => w,
   oo: () => f,
   rj: () => _,
   vq: () => g,
-  wh: () => w,
+  wh: () => R,
   xj: () => L
 }), require("./415506.js"), require("./388685.js"), require("./35282.js"), require("./539854.js"), require("./642613.js");
 var Chunk688619 = require("./688619.js"),
@@ -108,7 +108,7 @@ function _(e, t) {
   return "rgba(".concat(n, ", ").concat(r, ", ").concat(i, ", ").concat(null != t ? t : a, ")")
 }
 
-function m(e, t) {
+function h(e, t) {
   let {
     r: n,
     g: r,
@@ -117,7 +117,7 @@ function m(e, t) {
   return "rgba(".concat(n, ", ").concat(r, ", ").concat(i, ", ").concat(t, ")")
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   let r = Math.min(e /= 255, t /= 255, n /= 255),
     i = Math.max(e, t, n),
     a = i - r,
@@ -156,12 +156,12 @@ function b(e) {
     f = c / 255,
     p = Math.max(u, d, f),
     _ = p - Math.min(u, d, f),
-    m = e => (p - e) / 6 / _ + .5,
-    h = e => Math.round(100 * e) / 100;
-  return 0 === _ ? i = a = 0 : (a = _ / p, t = m(u), n = m(d), r = m(f), (i = u === p ? r - n : d === p ? 1 / 3 + t - r : f === p ? 2 / 3 + n - t : 0) < 0 ? i += 1 : i > 1 && (i -= 1)), {
+    h = e => (p - e) / 6 / _ + .5,
+    m = e => Math.round(100 * e) / 100;
+  return 0 === _ ? i = a = 0 : (a = _ / p, t = h(u), n = h(d), r = h(f), (i = u === p ? r - n : d === p ? 1 / 3 + t - r : f === p ? 2 / 3 + n - t : 0) < 0 ? i += 1 : i > 1 && (i -= 1)), {
     h: Math.round(360 * i),
-    s: h(100 * a),
-    v: h(100 * p)
+    s: m(100 * a),
+    v: m(100 * p)
   }
 }
 
@@ -207,7 +207,7 @@ function A(e) {
       h: r,
       s: i,
       l: a
-    } = h(e[0], e[1], e[2]),
+    } = m(e[0], e[1], e[2]),
     o = r,
     s = i,
     l = a;
@@ -266,13 +266,13 @@ function P(e, t, n) {
   return new a.Z(Math.round(255 * r), Math.round(255 * i), Math.round(255 * o), 1)
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = N(e.red, e.green, e.blue);
   return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, P(r.hue, r.saturation, r.lightness)
 }
 
-function w(e) {
+function R(e) {
   let {
     foreground: t,
     background: n,

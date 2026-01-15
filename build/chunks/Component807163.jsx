@@ -119,7 +119,7 @@ function ep(e, t) {
   }), e
 }
 let e_ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK,
-  em = {
+  eh = {
     boostItemVisual: Chunk652528,
     emojiStickersVisual: Chunk874692,
     screenShareItemVisual: Chunk360088,
@@ -128,7 +128,7 @@ let e_ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
     PL: Chunk674264,
     TR: Chunk304880
   },
-  eh = {
+  em = {
     boostItemVisual: Chunk834982,
     emojiStickersVisual: Chunk912450,
     screenShareItemVisual: Chunk360088,
@@ -139,8 +139,8 @@ let e_ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
   };
 
 function eg() {
-  let e = (0, h.ZP)();
-  return (0, f.wj)(e) ? eh : em
+  let e = (0, m.ZP)();
+  return (0, f.wj)(e) ? em : eh
 }
 
 function eE(e) {
@@ -177,7 +177,7 @@ function eb(e) {
   var t = ec({}, eu(e));
   let {
     theme: n
-  } = (0, R.z)(), i = (0, p.dQu)(p.TVs.colors.INTERACTIVE_TEXT_ACTIVE, n).hex();
+  } = (0, w.z)(), i = (0, p.dQu)(p.TVs.colors.INTERACTIVE_TEXT_ACTIVE, n).hex();
   return (0, r.jsx)(p.SrA, ep(ed({
     size: "md"
   }, t), {
@@ -195,7 +195,7 @@ function ey(e) {
     s = (0, d.e7)([g.Z], () => g.Z.useReducedMotion),
     l = i === K.PremiumTypes.TIER_1,
     c = () => {
-      a(), (0, D.openUserSettings)(w.n.PROFILE_PANEL, {
+      a(), (0, D.openUserSettings)(R.n.PROFILE_PANEL, {
         section: z.oAB.PROFILE_CUSTOMIZATION
       }), M.default.track(z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "user_profile_customization"
@@ -268,8 +268,8 @@ function eO(e) {
   if (!(0, G.M5)(a, K.PremiumTypes.TIER_2) || null == c) return null;
   let f = null != (n = null == s ? true : s.status) ? n : F.Vq.UPCOMING,
     _ = null != (i = null == s ? true : s.nameUnformatted) ? i : K.vK[K.VU.PREMIUM_TENURE_1_MONTH].nameUnformatted,
-    m = (0, V.J)(u),
-    h = q.intl.string(_),
+    h = (0, V.J)(u),
+    m = q.intl.string(_),
     g = f === F.Vq.EARNED,
     y = null != s && "daysLeft" in s ? s.daysLeft : 1,
     O = q.t.pwkxYF;
@@ -294,8 +294,8 @@ function eO(e) {
       className: Q.badgeGradientWrapper,
       color: d,
       children: (0, r.jsx)("img", {
-        alt: h,
-        src: m,
+        alt: m,
+        src: h,
         className: Q.badgeImage
       })
     })
@@ -342,7 +342,7 @@ function eS(e) {
     premiumType: t,
     onClose: n
   } = e;
-  i.useEffect(() => _.Z.wait(() => (0, m.X8)()), []);
+  i.useEffect(() => _.Z.wait(() => (0, h.X8)()), []);
   let a = (0, d.e7)([g.Z], () => g.Z.useReducedMotion),
     [s, l] = (0, d.Wu)([j.Z, x.Z], () => {
       let e = j.Z.boostSlots,
@@ -360,8 +360,8 @@ function eS(e) {
     }),
     c = null != s && l > 0,
     f = eg().boostItemVisual,
-    h = () => {
-      n(), (0, D.openUserSettings)(w.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+    m = () => {
+      n(), (0, D.openUserSettings)(R.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         section: z.oAB.GUILD_BOOSTING
       }), M.default.track(z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "boosts"
@@ -369,7 +369,7 @@ function eS(e) {
     };
   return (0, r.jsx)(eE, {
     description: t === K.PremiumTypes.TIER_1 ? q.intl.format(q.t.K4Hv69, {}) : q.intl.format(q.t.wRxEDW, {}),
-    onLearnMore: h,
+    onLearnMore: m,
     renderVisual: () => c ? (0, r.jsx)("div", {
       className: Q.boostCardContainer,
       children: (0, r.jsxs)("div", {
@@ -533,8 +533,8 @@ let eP = function(e) {
     onContinue: u,
     analyticsLocations: f,
     isLoading: _ = false,
-    churnUserDiscountOffer: m = null,
-    isDowngrade: h = false,
+    churnUserDiscountOffer: h = null,
+    isDowngrade: m = false,
     subtitleIcon: g,
     subtitleClassName: E
   } = e, b = (0, d.e7)([L.default], () => {
@@ -544,13 +544,13 @@ let eP = function(e) {
   i.useEffect(() => {
     (0, C.Z)(b.id, b.getAvatarURL(null, 80))
   }, [b]);
-  let y = null != m && !_;
+  let y = null != h && !_;
   return (i.useEffect(() => {
     y && M.default.track(z.rMx.CANCELLATION_FLOW_DISCOUNT_OFFER_PROMPT_VIEWED, {
       location_stack: f,
-      discount_id: null == m ? true : m.discount_id
+      discount_id: null == h ? true : h.discount_id
     })
-  }, [y, f, m]), _) ? (0, r.jsxs)(r.Fragment, {
+  }, [y, f, h]), _) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(W.Z, {
       premiumType: t,
       onClose: s
@@ -583,13 +583,13 @@ let eP = function(e) {
         currentUser: b,
         premiumType: t,
         onClose: s,
-        isDowngrade: h
+        isDowngrade: m
       })]
     }), !y && (0, r.jsx)(p.mzw, {
       "data-migration-pending": true,
       children: o
     }), y && (0, r.jsx)(Y.Z, {
-      churnUserDiscountOffer: m,
+      churnUserDiscountOffer: h,
       onDiscountClaim: c,
       onContinue: u
     })]

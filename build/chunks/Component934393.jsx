@@ -23,10 +23,10 @@ function _(e) {
     icon: n,
     onAction: _
   } = e, {
-    newestAnalyticsLocation: m
+    newestAnalyticsLocation: h
   } = (0, o.ZP)(), {
-    themeType: h
-  } = (0, c.z)(), g = h === f.l.MODAL_V2;
+    themeType: m
+  } = (0, c.z)(), g = m === f.l.MODAL_V2;
   if ((0, i.e7)([l.Z], () => null != l.Z.getAccount(null, t))) return null;
   let E = e => {
     e.stopPropagation();
@@ -35,7 +35,7 @@ function _(e) {
       action: n ? "PRESS_CONNECT_XBOX_BUTTON" : "PRESS_CONNECT_PLAYSTATION_BUTTON"
     }), (0, s.Z)({
       platformType: t,
-      location: m
+      location: h
     })
   };
   return (0, r.jsx)(u.i6, {

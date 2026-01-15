@@ -2,7 +2,7 @@
 /** chunk id: 551228, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => h,
+  ZP: () => m,
   pi: () => _,
   te: () => p
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
@@ -35,7 +35,7 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     entry: t,
     channel: n,
@@ -45,7 +45,7 @@ function m(e) {
     activity: o,
     artist: l
   } = _(t), {
-    largeImage: m
+    largeImage: h
   } = (0, s.rv)({
     entry: t
   });
@@ -66,10 +66,10 @@ function m(e) {
         }, n))
       })]
     }), (0, r.jsx)(c.f, {
-      src: null == m ? true : m.src,
+      src: null == h ? true : h.src,
       size: 48,
       className: f.thumbnail
     })]
   })
 }
-let h = Chunk473749.memo(m)
+let m = Chunk473749.memo(h)

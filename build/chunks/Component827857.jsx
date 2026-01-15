@@ -2,7 +2,7 @@
 /** chunk id: 827857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => h
+  J: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,7 +55,7 @@ function _(e) {
   return e.renderStepBody ? (0, r.jsx)(c.t, p({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(o.Ch, p({}, n, e)) : (0, r.jsx)(o.Tr, p({}, n, e))
 }
 
-function m(e) {
+function h(e) {
   let {
     paymentRequestWallet: t
   } = e, n = i.useRef(null), [a, o] = i.useState(false), s = () => {
@@ -78,7 +78,7 @@ function m(e) {
     })
   })
 }
-let h = {
+let m = {
   name: "Payment Request",
   component: function(e) {
     let {
@@ -105,7 +105,7 @@ let h = {
           })
         }), (0, r.jsx)(u.E_, {
           label: "Add Payment Step Body Connector View",
-          children: (0, r.jsx)(m, {
+          children: (0, r.jsx)(h, {
             paymentRequestWallet: t
           })
         })]

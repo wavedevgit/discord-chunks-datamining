@@ -23,9 +23,9 @@ function c(e, t, n) {
 
 function u(e, t, n) {
   if ("string" == typeof e) return _(e, t);
-  if (ArrayBuffer.isView(e)) return m(e);
+  if (ArrayBuffer.isView(e)) return h(e);
   if (null == e) throw TypeError("The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type " + typeof e);
-  if (X(e, ArrayBuffer) || e && X(e.buffer, ArrayBuffer) || "undefined" != typeof SharedArrayBuffer && (X(e, SharedArrayBuffer) || e && X(e.buffer, SharedArrayBuffer))) return h(e, t, n);
+  if (X(e, ArrayBuffer) || e && X(e.buffer, ArrayBuffer) || "undefined" != typeof SharedArrayBuffer && (X(e, SharedArrayBuffer) || e && X(e.buffer, SharedArrayBuffer))) return m(e, t, n);
   if ("number" == typeof e) throw TypeError('The "value" argument must not be of type number. Received type number');
   var r = e.valueOf && e.valueOf();
   if (null != r && r !== e) return c.from(r, t, n);
@@ -56,12 +56,12 @@ function _(e, t) {
   return i !== n && (r = r.slice(0, i)), r
 }
 
-function m(e) {
+function h(e) {
   for (var t = e.length < 0 ? 0 : 0 | E(e.length), n = l(t), r = 0; r < t; r += 1) n[r] = 255 & e[r];
   return n
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   var r;
   if (t < 0 || e.byteLength < t) throw RangeError('"offset" is outside of buffer bounds');
   if (e.byteLength < t + (n || 0)) throw RangeError('"length" is outside of buffer bounds');
@@ -74,7 +74,7 @@ function g(e) {
       n = l(t);
     return 0 === n.length || e.copy(n, 0, 0, t), n
   }
-  return true !== e.length ? "number" != typeof e.length || J(e.length) ? l(0) : m(e) : "Buffer" === e.type && Array.isArray(e.data) ? m(e.data) : true
+  return true !== e.length ? "number" != typeof e.length || J(e.length) ? l(0) : h(e) : "Buffer" === e.type && Array.isArray(e.data) ? h(e.data) : true
 }
 
 function E(e) {
@@ -131,7 +131,7 @@ function O(e, t, n) {
     case "binary":
       return M(this, t, n);
     case "base64":
-      return w(this, t, n);
+      return R(this, t, n);
     case "ucs2":
     case "ucs-2":
     case "utf16le":
@@ -225,11 +225,11 @@ function P(e, t, n, r) {
   return Q(q(t), e, n, r)
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   return Q(z(t, e.length - n), e, n, r)
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   return 0 === t && n === e.length ? i.fromByteArray(e) : i.fromByteArray(e.slice(t, n))
 }
 
@@ -394,7 +394,7 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     case "ucs-2":
     case "utf16le":
     case "utf-16le":
-      return R(this, e, t, n);
+      return w(this, e, t, n);
     default:
       if (a) throw TypeError("Unknown encoding: " + r);
       r = ("" + r).toLowerCase(), a = true

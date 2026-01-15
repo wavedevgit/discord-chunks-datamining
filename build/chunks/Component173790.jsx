@@ -33,7 +33,7 @@ function T(e) {
     context: n,
     application: l,
     sectionName: c
-  } = e, S = "channel" === n.type ? n.channel : true, T = (0, a.e7)([f.Z], () => f.Z.entrypoint()), A = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.ye)(A) ? C : E.Z, P = i.useRef(null), [R, w] = i.useState(false), {
+  } = e, S = "channel" === n.type ? n.channel : true, T = (0, a.e7)([f.Z], () => f.Z.entrypoint()), A = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.ye)(A) ? C : E.Z, P = i.useRef(null), [w, R] = i.useState(false), {
     iconURL: D,
     name: x
   } = i.useMemo(() => (0, _.sl)(A, {
@@ -57,7 +57,7 @@ function T(e) {
       iconURL: D,
       scrollerRef: P,
       sectionName: c
-    }), null != D && (0, r.jsx)(m.Z, {
+    }), null != D && (0, r.jsx)(h.Z, {
       src: D,
       className: O.appIcon
     }), (0, r.jsx)(o.Z, {
@@ -66,13 +66,13 @@ function T(e) {
       context: n,
       application: A,
       sectionName: c,
-      hasCommands: R
-    }), T === p._b.TEXT ? (0, r.jsx)(h.Z, {
+      hasCommands: w
+    }), T === p._b.TEXT ? (0, r.jsx)(m.Z, {
       context: n,
       application: A,
       sectionName: c,
       installOnDemand: k,
-      setHasCommands: w
+      setHasCommands: R
     }) : null]
   })
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   LM: () => _,
-  Rf: () => h,
+  Rf: () => m,
   UW: () => p,
   sG: () => c,
   to: () => f,
@@ -51,7 +51,7 @@ function _(e) {
   return `${p(e)}T${f(e)}`
 }
 
-function m(e) {
+function h(e) {
   let t = 0 > Math.sign(e) ? "-" : "+",
     n = Math.floor((e = Math.abs(e)) / 36e5),
     r = Math.floor(e % 36e5 / 6e4),
@@ -60,6 +60,6 @@ function m(e) {
   return 0 !== i && (a += `:${String(i).padStart(2,"0")}`), a
 }
 
-function h(e) {
-  return `${_(e)}${m(e.offset)}[${e.timeZone}]`
+function m(e) {
+  return `${_(e)}${h(e.offset)}[${e.timeZone}]`
 }

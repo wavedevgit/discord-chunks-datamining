@@ -52,17 +52,17 @@ let f = {},
   p = {},
   _ = null;
 
-function m() {
+function h() {
   p = {}, f = {}
 }
 
-function h(e) {
+function m(e) {
   let {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
   if (t === n) returnfalse;
-  m()
+  h()
 }
 
 function g(e) {
@@ -106,7 +106,7 @@ function b(e) {
 function y() {
   if (o.Z.getWasMoved()) {
     if (o.Z.getChannelId() === _) returnfalse;
-    _ = o.Z.getChannelId(), m()
+    _ = o.Z.getChannelId(), h()
   } else {
     if (null == _) returnfalse;
     _ = null
@@ -124,7 +124,7 @@ let v = new O(Chunk570140.Z, {
   STREAM_WATCH: b,
   MESSAGE_CREATE: E,
   MESSAGE_DELETE: g,
-  VOICE_CHANNEL_SELECT: h,
+  VOICE_CHANNEL_SELECT: m,
   VOICE_STATE_UPDATES: y,
-  LOGOUT: m
+  LOGOUT: h
 })

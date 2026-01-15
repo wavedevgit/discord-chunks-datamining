@@ -48,13 +48,13 @@ let S = function(e) {
           className: g.bannerHeader,
           variant: "heading-md/extrabold",
           color: "text-strong",
-          children: h.intl.string(h.t["+5UxML"])
+          children: m.intl.string(m.t["+5UxML"])
         }), (0, r.jsx)(s.Text, {
           className: g.bannerText,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: h.intl.format(h.t["lVOH/p"], {
-            helpCenterLink: d.Z.getArticleURL(m.BhN.SUMMER_BOGO_2025)
+          children: m.intl.format(m.t["lVOH/p"], {
+            helpCenterLink: d.Z.getArticleURL(h.BhN.SUMMER_BOGO_2025)
           })
         })]
       }), (0, r.jsx)(p.Z, {
@@ -81,17 +81,17 @@ let S = function(e) {
             className: g.bannerHeader,
             variant: "heading-lg/extrabold",
             color: "text-strong",
-            children: h.intl.string(h.t["+5UxML"])
+            children: m.intl.string(m.t["+5UxML"])
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: h.intl.format(h.t["lVOH/p"], {
-              helpCenterLink: d.Z.getArticleURL(m.BhN.SUMMER_BOGO_2025)
+            children: m.intl.format(m.t["lVOH/p"], {
+              helpCenterLink: d.Z.getArticleURL(h.BhN.SUMMER_BOGO_2025)
             })
           }), (0, r.jsx)(p.Z, {
             textOptions: {
-              textOverride: h.intl.string(h.t.J61px0),
+              textOverride: m.intl.string(m.t.J61px0),
               textClassName: g.subscribeButtonText
             },
             subscriptionTier: _.Si.TIER_2,
@@ -123,7 +123,7 @@ let S = function(e) {
           children: (0, r.jsx)(s.Text, {
             variant: "eyebrow",
             color: "always-white",
-            children: h.intl.string(h.t.OS9KPu)
+            children: m.intl.string(m.t.OS9KPu)
           })
         }), (0, r.jsxs)("div", {
           className: g.bannerContent,
@@ -131,17 +131,17 @@ let S = function(e) {
             className: g.bannerHeader,
             variant: "heading-xxl/extrabold",
             color: "text-strong",
-            children: h.intl.string(h.t["+5UxML"])
+            children: m.intl.string(m.t["+5UxML"])
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,
             variant: "text-md/medium",
             color: "text-subtle",
-            children: h.intl.format(h.t["lVOH/p"], {
-              helpCenterLink: d.Z.getArticleURL(m.BhN.SUMMER_BOGO_2025)
+            children: m.intl.format(m.t["lVOH/p"], {
+              helpCenterLink: d.Z.getArticleURL(h.BhN.SUMMER_BOGO_2025)
             })
           }), (0, r.jsx)(p.Z, {
             textOptions: {
-              textOverride: h.intl.string(h.t.J61px0),
+              textOverride: m.intl.string(m.t.J61px0),
               textClassName: g.subscribeButtonText
             },
             subscriptionTier: _.Si.TIER_2,

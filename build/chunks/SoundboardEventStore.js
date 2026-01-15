@@ -76,7 +76,7 @@ function C(e) {
   } = e;
   if (!j()) return;
   let r = t.soundId.toString();
-  n === m.YQ.SOUNDBOARD && P(r)
+  n === h.YQ.SOUNDBOARD && P(r)
 }
 
 function A(e) {
@@ -87,7 +87,7 @@ function A(e) {
   } = e;
   if (!L()) return;
   let i = n.toString();
-  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && R(i) && N(i)
+  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && w(i) && N(i)
 }
 
 function N(e) {
@@ -101,13 +101,13 @@ function P(e) {
   }), T.compute()
 }
 
-function R(e) {
+function w(e) {
   for (let t of _.Z.getSounds().values())
     if (null != t.find(t => t.soundId.toString() === e)) returntrue;
   returnfalse
 }
 
-function w(e) {
+function R(e) {
   return a().mapValues(e, e => v(y({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   }))
@@ -117,7 +117,7 @@ function D() {
   var e;
   if (!j()) return;
   let t = null == (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : e.playedSounds;
-  T.overwriteHistory(w(null != t ? t : {}), S)
+  T.overwriteHistory(R(null != t ? t : {}), S)
 }
 
 function x(e) {
@@ -138,7 +138,7 @@ function L() {
 }
 
 function j() {
-  return (0, h.Lq)("soundboard_event_store")
+  return (0, m.Lq)("soundboard_event_store")
 }
 class M extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {

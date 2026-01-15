@@ -108,7 +108,7 @@ function H(e) {
   } = (0, d.ZP)(u.Z.BADGE), {
     context: K,
     trackUserProfileAction: z
-  } = (0, N.KZ)(), q = I.default.getCurrentUser(), Q = (0, C.yd)(null == q ? true : q.premiumType, j.PremiumTypes.TIER_2), X = (0, w.Of)(null != (t = null == q ? true : q.id) ? t : null), J = (0, R.Z)(X).some(e => e.id === v.l.ORB_PROFILE_BADGE), $ = (0, m.c)(q, "UserProfileBadgeList"), ee = (0, _.T)("UserProfileBadgeList");
+  } = (0, N.KZ)(), q = I.default.getCurrentUser(), Q = (0, C.yd)(null == q ? true : q.premiumType, j.PremiumTypes.TIER_2), X = (0, R.Of)(null != (t = null == q ? true : q.id) ? t : null), J = (0, w.Z)(X).some(e => e.id === v.l.ORB_PROFILE_BADGE), $ = (0, h.c)(q, "UserProfileBadgeList"), ee = (0, _.T)("UserProfileBadgeList");
   return (0, r.jsx)("div", {
     className: o()(U.container, a),
     "aria-label": k.intl.string(k.t.VWV0y5),
@@ -160,7 +160,7 @@ function H(e) {
           if (null != n) return null == G || G(), n(t)
         },
         C = () => {
-          e.id === R.i && T.default.track(x.rMx.QUEST_CONTENT_VIEWED, B(Z({}, (0, b.mH)(y.jn.QUEST_BADGE)), {
+          e.id === w.i && T.default.track(x.rMx.QUEST_CONTENT_VIEWED, B(Z({}, (0, b.mH)(y.jn.QUEST_BADGE)), {
             is_targeted: false
           })), z({
             action: "HOVER_BADGE"
@@ -170,7 +170,7 @@ function H(e) {
           }, K))
         },
         N = true !== a && e.id !== M.a,
-        w = _ && $ && N,
+        R = _ && $ && N,
         X = (0, r.jsx)("img", {
           alt: " ",
           "aria-hidden": true,
@@ -186,13 +186,13 @@ function H(e) {
             filter: H && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : true
           }
         };
-      if (w) {
+      if (R) {
         let n = (0, r.jsx)(l.eee, B(Z({}, et), {
           ref: Y,
           children: X
         }));
         return (0, r.jsx)("div", {
-          children: (0, r.jsx)(m.Z, {
+          children: (0, r.jsx)(h.Z, {
             targetElementRef: Y,
             mode: "tooltip",
             tooltipDelay: D.vB,
@@ -222,7 +222,7 @@ function H(e) {
           }] : true,
           s = a ? 262 : 220;
         return (0, r.jsx)("div", {
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(m.Z, {
             badgeId: e.id,
             targetElementRef: Y,
             mode: "tooltip",

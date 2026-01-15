@@ -20,8 +20,8 @@ function d(e) {
     guildId: d
   } = e, f = (0, i.e7)([c.default], () => c.default.getCurrentUser()), p = (0, a.Z)(n), {
     pendingAvatar: _,
-    pendingAvatarDecoration: m,
-    pendingErrors: h
+    pendingAvatarDecoration: h,
+    pendingErrors: m
   } = (0, i.cj)([l.Z, o.Z], () => ({
     pendingAvatar: t ? l.Z.getTryItOutAvatar() : null != d ? o.Z.getPendingAvatar() : l.Z.getPendingAvatar(),
     pendingAvatarDecoration: t ? l.Z.getTryItOutAvatarDecoration() : null != d ? o.Z.getPendingAvatarDecoration() : l.Z.getPendingAvatarDecoration(),
@@ -31,8 +31,8 @@ function d(e) {
   }, [p, d]);
   return {
     pendingAvatar: _,
-    pendingAvatarDecoration: m,
-    pendingErrors: h,
+    pendingAvatarDecoration: h,
+    pendingErrors: m,
     setPendingAvatar: t ? u.c_ : g,
     setPendingAvatarDecoration: t ? u.Xz : E
   }

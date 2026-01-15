@@ -47,18 +47,18 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = new Chunk710845.Z("ConnectedAccounts");
+let m = new Chunk710845.Z("ConnectedAccounts");
 
 function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return i.tn.post({
     url: d.ANM.CONNECTIONS_CALLBACK(e),
-    body: m(p({}, t), {
+    body: h(p({}, t), {
       insecure: n,
       friend_sync: d.BFP.has(e)
     }),
@@ -97,15 +97,15 @@ let E = {
     let p = d.ANM.CONNECTIONS_AUTHORIZE(e),
       _ = new URLSearchParams;
     null != a && _.append("two_way_user_code", a), null != u && _.append("success_redirect", u), null != r ? (_.append("two_way_link_type", r), _.append("two_way_link", "true")) : null != s && _.append("two_way_link", String(s)), null != f && _.append("handle", f), p = p + "?" + _.toString();
-    let m = await i.tn.get({
+    let h = await i.tn.get({
         url: p,
         oldFormErrors: true,
         rejectWithError: false
       }),
       {
-        state: h
-      } = (0, o.xp)(null != (t = m.body.url) ? t : "");
-    return null != h && l.Z.addPendingAuthorizedState(h), m
+        state: m
+      } = (0, o.xp)(null != (t = h.body.url) ? t : "");
+    return null != m && l.Z.addPendingAuthorizedState(m), h
   },
   callback: g,
   connect(e, t, n, i, a) {
@@ -224,13 +224,13 @@ let E = {
     rejectWithError: false
   }),
   async completeTwoWayLink(e, t, n, r, i) {
-    if (null == t) return void h.error("Two-way link: missing authorize location");
+    if (null == t) return void m.error("Two-way link: missing authorize location");
     let {
       code: a,
       error: s,
       errorDescription: l
     } = (0, o.xp)(t);
-    return null != s ? void h.error("Two-way link: missing authorize code", {
+    return null != s ? void m.error("Two-way link: missing authorize code", {
       error: s,
       errorDescription: l
     }) : await g(e, {

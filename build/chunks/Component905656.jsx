@@ -24,9 +24,9 @@ var Chunk54381 = require("./54381.js"),
 function b(e) {
   let {
     movDark: t = d,
-    movLight: n = m,
+    movLight: n = h,
     mp4Dark: i = f,
-    mp4Light: a = h,
+    mp4Light: a = m,
     pngDark: o = p,
     pngLight: s = g,
     webmDark: c = _,
@@ -76,9 +76,9 @@ let y = Chunk197344.Z.getAppSpinnerSources(),
       theme: p
     } = (0, o.TCT)(), {
       reducedMotion: _
-    } = i.useContext(o.Sfi), m = v;
-    null != O && (m = O);
-    let h = null != (t = m[(0, a.wj)(p) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : m[u.BRd.DARK];
+    } = i.useContext(o.Sfi), h = v;
+    null != O && (h = O);
+    let m = null != (t = h[(0, a.wj)(p) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,
@@ -87,6 +87,6 @@ let y = Chunk197344.Z.getAppSpinnerSources(),
       autoPlay: !_.enabled && s,
       playsInline: true,
       "data-testid": "app-spinner",
-      children: h
+      children: m
     }, p)
   }

@@ -51,7 +51,7 @@ let v = function(e) {
     roleFilter: s,
     onSelect: c,
     onClose: y
-  } = e, v = (0, d.e7)([h.Z], () => h.Z.getSortedRoles(n.id)), S = (0, m.ZP)(n.id, null), I = i.useMemo(() => u()(v).filter(s).map(e => {
+  } = e, v = (0, d.e7)([m.Z], () => m.Z.getSortedRoles(n.id)), S = (0, h.ZP)(n.id, null), I = i.useMemo(() => u()(v).filter(s).map(e => {
     var t, n;
     return {
       id: e.id,

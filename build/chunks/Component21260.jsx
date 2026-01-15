@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   AJ: () => _,
-  Ep: () => h,
+  Ep: () => m,
   te: () => p,
   zP: () => f
 }), require("./388685.js");
@@ -103,18 +103,18 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   return "string" == typeof e ? e : e.key
 }
 
-function h(e) {
+function m(e) {
   let {
     className: t,
     items: n,
     renderItem: a,
     itemGapPx: s = 0,
     maxLines: d,
-    renderOverflow: h
+    renderOverflow: m
   } = e, {
     ref: g,
     width: E = 0
@@ -130,7 +130,7 @@ function h(e) {
   }), v = i.useCallback(e => (0, r.jsx)(p, {
     items: e,
     renderItem: a
-  }), [a]), S = null != h ? h : v, I = i.useMemo(() => n.slice(0, b + 1), [n, b]), T = i.useMemo(() => n.slice(b + 1), [n, b]);
+  }), [a]), S = null != m ? m : v, I = i.useMemo(() => n.slice(0, b + 1), [n, b]), T = i.useMemo(() => n.slice(b + 1), [n, b]);
   return (0, r.jsxs)("div", {
     className: o()(t, u.items),
     ref: g,
@@ -143,7 +143,7 @@ function h(e) {
           index: t,
           onItemLayout: y,
           children: a(e)
-        }, m(e)))
+        }, h(e)))
       }), (0, r.jsx)("div", {
         className: u.overflowMeasurement,
         ref: O,

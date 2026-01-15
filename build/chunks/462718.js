@@ -12,7 +12,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
   useTitle: () => o.intl.string(o.t["2jxGer"]),
-  icon: Chunk657707.PBZ,
+  icon: Chunk657707.DoorExitIcon,
   onClick: () => {
     (0, l.Z)({
       title: o.intl.string(o.t["2jxGer"]),

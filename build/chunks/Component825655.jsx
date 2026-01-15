@@ -19,25 +19,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799214 = require("./799214.js");
 
-function h(e) {
+function m(e) {
   let {
     game: t,
     application: n
   } = e;
   return null == t || null == n ? (0, r.jsx)("div", {
-    className: m.iconContainer,
+    className: h.iconContainer,
     children: (0, r.jsx)(s.Mgn, {
       size: "sm",
       color: s.TVs.colors.TEXT_FEEDBACK_WARNING
     })
   }) : (0, r.jsxs)("div", {
-    className: m.gameIconContainer,
+    className: h.gameIconContainer,
     children: [(0, r.jsx)(c.Z, {
       game: n,
       pid: t.pid,
       size: c.A.MEDIUM
     }), (0, r.jsx)("div", {
-      className: m.warningCorner,
+      className: h.warningCorner,
       children: (0, r.jsx)(s.Mgn, {
         size: "sm",
         color: s.TVs.colors.TEXT_FEEDBACK_WARNING
@@ -81,12 +81,12 @@ function b(e) {
     (0, f.sU)(n + (null != o ? "-with-game" : "-no-game"))
   }
   return (0, r.jsxs)("div", {
-    className: a()(m.container, t),
-    children: [(0, r.jsx)(h, {
+    className: a()(h.container, t),
+    children: [(0, r.jsx)(m, {
       game: o,
       application: l
     }), (0, r.jsxs)("div", {
-      className: m.textContainer,
+      className: h.textContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-strong",

@@ -71,7 +71,7 @@ var _ = function(e) {
   return e.LEFT = "LEFT", e.RIGHT = "RIGHT", e.UP = "UP", e.DOWN = "DOWN", e.UP_LEFT = "UP_LEFT", e.DOWN_RIGHT = "DOWN_RIGHT", e
 }({});
 
-function m(e) {
+function h(e) {
   switch (e) {
     case "LEFT":
       return s.left;
@@ -89,7 +89,7 @@ function m(e) {
       throw Error("Invalid Direction ".concat(e))
   }
 }
-let h = e => {
+let m = e => {
   var {
     width: t = 24,
     height: n = 24,
@@ -102,7 +102,7 @@ let h = e => {
   return (0, r.jsxs)("svg", d(c({}, (0, o.Z)(_)), {
     width: t,
     height: n,
-    className: a()(u, m(s)),
+    className: a()(u, h(s)),
     viewBox: "0 0 24 24",
     children: [null != p ? (0, r.jsx)("title", {
       children: p
@@ -114,5 +114,5 @@ let h = e => {
     })]
   }))
 };
-h.Directions = _;
-let g = h
+m.Directions = _;
+let g = m

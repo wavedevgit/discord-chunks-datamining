@@ -5,8 +5,8 @@ require.d(exports, {
   A1: () => A,
   LO: () => y,
   S1: () => E,
-  Wx: () => R,
-  XT: () => w,
+  Wx: () => w,
+  XT: () => R,
   al: () => N,
   cG: () => O,
   li: () => S,
@@ -79,7 +79,7 @@ function y(e) {
     applicationId: t.id,
     branchId: n,
     installationPath: o
-  }), u.default.track(m.rMx.LIBRARY_INSTALL_INITIATED, {
+  }), u.default.track(h.rMx.LIBRARY_INSTALL_INITIATED, {
     application_id: t.id,
     application_name: t.name,
     sku_id: t.primarySkuId,
@@ -94,7 +94,7 @@ function O(e, t, n) {
       applicationId: e.id,
       branchId: t
     })
-  }), u.default.track(m.rMx.LIBRARY_REPAIR_INITIATED, {
+  }), u.default.track(h.rMx.LIBRARY_REPAIR_INITIATED, {
     application_id: e.id,
     application_name: e.name,
     sku_id: e.primarySkuId,
@@ -129,7 +129,7 @@ function S(e, t, n, r) {
 
 function I(e, t, n) {
   let r = a.Z.getApplication(e);
-  null != r && (f.Z.removeShortcuts(r.name), u.default.track(m.rMx.LIBRARY_UNINSTALL_INITIATED, {
+  null != r && (f.Z.removeShortcuts(r.name), u.default.track(h.rMx.LIBRARY_UNINSTALL_INITIATED, {
     application_id: r.id,
     application_name: r.name,
     sku_id: r.primarySkuId,
@@ -173,27 +173,27 @@ function P(e, t) {
   })
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = a.Z.getApplication(e);
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
-function w(e, t) {
+function R(e, t) {
   let i = a.Z.getApplication(e);
   r.tn.post({
-    url: m.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
+    url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
     oldFormErrors: true,
     rejectWithError: true
   }), null != i && (f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), i.name, i.id, t.installPath), Promise.resolve().then(n.bind(n, 292556)).then(e => {
     let {
       default: t
     } = e;
-    t.showNotification(i.getIconURL(g), h.intl.string(h.t["1wR7yI"]), h.intl.formatToPlainString(h.t["89VAgW"], {
+    t.showNotification(i.getIconURL(g), m.intl.string(m.t["1wR7yI"]), m.intl.formatToPlainString(m.t["89VAgW"], {
       name: i.name
     }), {
       notif_type: "Game Library Game Installed"
     }, {
-      onClick: () => (0, s.uL)(m.Z5c.APPLICATION_LIBRARY),
+      onClick: () => (0, s.uL)(h.Z5c.APPLICATION_LIBRARY),
       omitViewTracking: true,
       isUserAvatar: false
     })

@@ -2,7 +2,7 @@
 /** chunk id: 955418, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -70,17 +70,17 @@ let P = (0, Chunk131704.createChannelRecord)({
   type: Chunk981631.d4z.DM
 });
 
-function R(e) {
+function w(e) {
   let {
     user: t,
     guildId: a,
-    channelId: h,
+    channelId: m,
     onClose: O,
     disableAutoFocus: T = false,
     upsell: A = false
   } = e, {
-    newestAnalyticsLocation: R,
-    analyticsLocations: w
+    newestAnalyticsLocation: w,
+    analyticsLocations: R
   } = (0, u.ZP)(), {
     trackUserProfileAction: D
   } = (0, E.KZ)(), [x, L] = i.useState(""), [j, M] = i.useState((0, f.JM)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useRef(null), {
@@ -88,7 +88,7 @@ function R(e) {
   } = (0, s.V)(), F = i.useMemo(() => N(C({}, d.Ie.USER_PROFILE), {
     disableAutoFocus: T
   }), [T]), B = i.useCallback(async () => {
-    (0, m.PV)(t.id), await c.Z.openPrivateChannel({
+    (0, h.PV)(t.id), await c.Z.openPrivateChannel({
       recipientIds: [t.id]
     }), (0, l.ZDy)(async () => {
       let {
@@ -96,10 +96,10 @@ function R(e) {
       } = await n.e("5890").then(n.bind(n, 171793));
       return t => (0, r.jsx)(e, N(C({}, t), {
         giftIntentType: v.hX.FRIEND_ANNIVERSARY,
-        analyticsLocationHistory: w
+        analyticsLocationHistory: R
       }))
     })
-  }, [t.id, w]), V = i.useCallback(() => (0, r.jsxs)("div", {
+  }, [t.id, R]), V = i.useCallback(() => (0, r.jsxs)("div", {
     className: I.buttons,
     children: [(0, r.jsx)(l.hU, {
       size: "sm",
@@ -109,9 +109,9 @@ function R(e) {
       onClick: B
     }), (0, r.jsx)(y.Z, {
       user: t,
-      analyticsLocations: w
+      analyticsLocations: R
     })]
-  }), [Z, B, t, w]);
+  }), [Z, B, t, R]);
   return (0, r.jsx)(p.ZP, {
     className: o()(I.container, {
       [I.upsell]: A
@@ -119,7 +119,7 @@ function R(e) {
     editorClassName: I.editor,
     type: F,
     placeholder: S.intl.formatToPlainString(S.t["0ZQw/X"], {
-      name: g.ZP.getName(a, h, t)
+      name: g.ZP.getName(a, m, t)
     }),
     channel: P,
     textValue: x,
@@ -152,7 +152,7 @@ function R(e) {
           content: r,
           openChannel: true,
           whenReady: true,
-          location: R,
+          location: w,
           nonce: null != (i = G.current) ? i : true
         }), U.current = null, G.current = null, null == O || O(), {
           shouldClear: true,

@@ -2,8 +2,8 @@
 /** chunk id: 535322, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => m,
-  Z: () => h
+  A: () => h,
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,7 +54,7 @@ function _(e, t) {
   }), e
 }
 
-function m(e) {
+function h(e) {
   return (0, r.jsx)("svg", _(f({}, (0, s.Z)(f({}, e))), {
     width: "25",
     height: "48",
@@ -68,7 +68,7 @@ function m(e) {
   }))
 }
 
-function h(e) {
+function m(e) {
   let {
     className: t,
     forceUseColorForSparkles: n = false,

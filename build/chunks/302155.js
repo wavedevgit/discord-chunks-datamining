@@ -57,8 +57,8 @@ class _ extends Chunk147913.Z {
         i = null
       }
       r = _.id;
-      let m = a.getToken();
-      null != m && "" !== m && a.setToken(m, _.id), null == (e = (t = this).onTokenSet) || e.call(t, _)
+      let h = a.getToken();
+      null != h && "" !== h && a.setToken(h, _.id), null == (e = (t = this).onTokenSet) || e.call(t, _)
     }), f(this, "handleLogout", e => {
       if (e.isSwitchingAccount) {
         var t, n;

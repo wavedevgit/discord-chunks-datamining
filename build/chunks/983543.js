@@ -68,7 +68,7 @@ class v extends Chunk147913.Z {
     return 0 === t.length ? Promise.resolve() : e.try(t, async () => {
       E.verbose("fetching dm previews (via: http, channel_ids: ".concat(t.join(", "), ")"));
       let e = (await a.tn.post({
-        url: h.ANM.MESSAGE_PREVIEWS,
+        url: m.ANM.MESSAGE_PREVIEWS,
         body: {
           channel_ids: t
         },
@@ -86,7 +86,7 @@ class v extends Chunk147913.Z {
     null != n && _.Z.isLatest(e, t) && n.removeWant(t)
   }
   getOrCreate(e) {
-    return this.remote.has(e) || this.remote.set(e, new m.p), this.remote.get(e)
+    return this.remote.has(e) || this.remote.set(e, new h.p), this.remote.get(e)
   }
   cleanup() {
     for (let [e, t] of this.remote) t.empty() && this.remote.delete(e)

@@ -37,7 +37,7 @@ function y() {
   });
   let O = [{
       title: b.intl.string(b.t.iIwmV5),
-      component: m.Z,
+      component: h.Z,
       setting: E.s6.CLIPS_RECORDING_TAB,
       subsection: g.M6,
       predicate: () => t
@@ -60,7 +60,7 @@ function y() {
       header: b.intl.string(b.t.z2jK6X),
       children: (0, r.jsx)(u.Z, {
         parentSetting: E.s6.CLIPS,
-        settingsSection: h.oAB.CLIPS,
+        settingsSection: m.oAB.CLIPS,
         tabs: O,
         defaultTabIndex: v > false ? v : true
       })

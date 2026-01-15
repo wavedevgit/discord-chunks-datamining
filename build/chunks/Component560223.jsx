@@ -95,12 +95,12 @@ let T = e => {
       leftAlignHeaders: O = false,
       showAllPerksButton: S,
       headerClassname: C
-    } = e, A = i.useRef(null), N = n === g.gM.WHATS_NEW, P = (0, s.e7)([d.default], () => d.default.getCurrentUser()), R = (0, m.x)();
+    } = e, A = i.useRef(null), N = n === g.gM.WHATS_NEW, P = (0, s.e7)([d.default], () => d.default.getCurrentUser()), w = (0, h.x)();
     i.useEffect(() => {
-      N && R()
-    }, [R, N]);
-    let w = (0, E.re)(N),
-      D = (0, h.Z)(),
+      N && w()
+    }, [w, N]);
+    let R = (0, E.re)(N),
+      D = (0, m.Z)(),
       x = (0, E.mN)(),
       {
         fractionalState: L
@@ -135,7 +135,7 @@ let T = e => {
       children: [(0, r.jsx)(T, {
         showAllPerksButton: S,
         leftAlignHeaders: O,
-        title: w.title,
+        title: R.title,
         headerClassname: C
       }), (0, r.jsx)(l.Text, {
         variant: "text-lg/normal",
@@ -148,7 +148,7 @@ let T = e => {
           [y.leftAlignSubtitle]: O,
           [y.centerAlignSubtitle]: !O
         }),
-        children: w.subtitle
+        children: R.subtitle
       }), !O && null != S && (0, r.jsx)("div", {
         className: y.showAllPerksButtonCenter,
         children: S

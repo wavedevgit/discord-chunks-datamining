@@ -19,7 +19,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk522558 = require("./522558.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -61,8 +61,8 @@ function A() {
 }
 let N = A(),
   P = [],
-  R = new Set,
   w = new Set,
+  R = new Set,
   D = {},
   x = null,
   L = null;
@@ -90,20 +90,20 @@ function U() {
   if (e) {
     let e = Math.ceil(P.length / 2);
     P.slice(0, e).forEach(e => {
-      R.add(e)
-    }), P.forEach(e => {
       w.add(e)
+    }), P.forEach(e => {
+      R.add(e)
     })
   } else
     for (let e of P) {
       let t = d.Z.getUserAffinity(e);
-      null != t && t.dmProbability > T && R.add(e), null != t && t.dmProbability > C && w.add(e)
+      null != t && t.dmProbability > T && w.add(e), null != t && t.dmProbability > C && R.add(e)
     }
 }
 
 function G() {
   if (null != x) return void es(x);
-  if (B(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
+  if (B(), !f.Z.hasConsented(h.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = _.w.getConfig({
@@ -129,11 +129,11 @@ function Z(e) {
 }
 
 function F() {
-  return Array.from(w).some(e => !N.lastShownFriendsListGiftIntents.includes(e))
+  return Array.from(R).some(e => !N.lastShownFriendsListGiftIntents.includes(e))
 }
 
 function B() {
-  P.length = 0, R.clear(), w.clear(), D = {}
+  P.length = 0, w.clear(), R.clear(), D = {}
 }
 
 function V() {
@@ -266,7 +266,7 @@ class el extends(r = Chunk442837.ZP.PersistedStore) {
     return P
   }
   getNextRecipientUserIDForNotification() {
-    if (!this.isNotificationCooldownActive()) return Array.from(R).find(e => null == N.messageGiftIntentLastShownMap[e])
+    if (!this.isNotificationCooldownActive()) return Array.from(w).find(e => null == N.messageGiftIntentLastShownMap[e])
   }
   isNotificationCooldownActive() {
     z();
@@ -296,10 +296,10 @@ class el extends(r = Chunk442837.ZP.PersistedStore) {
     return L
   }
   getHighestAffinityFriendAnniversaries() {
-    return Array.from(R)
+    return Array.from(w)
   }
   getHighAffinityFriendAnniversaries() {
-    return Array.from(w)
+    return Array.from(R)
   }
   getGiftUnreadNotificationLastDismissedTimes() {
     return N.giftUnreadNotificationLastDismissedTimes
@@ -311,7 +311,7 @@ class el extends(r = Chunk442837.ZP.PersistedStore) {
     return N.profilePopoutGiftIntentsDismissMap
   }
 }
-h(el, "displayName", "PremiumGiftingIntentStore"), h(el, "persistKey", "PremiumGiftingIntentStore"), h(el, "migrations", [e => {
+m(el, "displayName", "PremiumGiftingIntentStore"), m(el, "persistKey", "PremiumGiftingIntentStore"), m(el, "migrations", [e => {
   var t, n;
   return null == e ? e : {
     friendsTabBadgeLastDismissedTime: null != (t = e.friendsTabBadgeLastDismissedTime) ? t : null,

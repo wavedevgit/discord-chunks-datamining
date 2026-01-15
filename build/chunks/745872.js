@@ -44,7 +44,7 @@ var r, Chunk533937 = require("./533937.js"),
   Chunk138676 = require("./138676.js"),
   Chunk365088 = require("./365088.js"),
   Chunk947599 = require("./947599.js"),
-  w = {},
+  R = {},
   D = "undefined" != typeof Uint8Array && Chunk143988 ? Chunk143988(Uint8Array) : r,
   x = {
     __proto__: null,
@@ -53,10 +53,10 @@ var r, Chunk533937 = require("./533937.js"),
     "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
     "%ArrayIteratorPrototype%": T && Chunk143988 ? Chunk143988([][Symbol.iterator]()) : r,
     "%AsyncFromSyncIteratorPrototype%": r,
-    "%AsyncFunction%": w,
-    "%AsyncGenerator%": w,
-    "%AsyncGeneratorFunction%": w,
-    "%AsyncIteratorPrototype%": w,
+    "%AsyncFunction%": R,
+    "%AsyncGenerator%": R,
+    "%AsyncGeneratorFunction%": R,
+    "%AsyncIteratorPrototype%": R,
     "%Atomics%": "undefined" == typeof Atomics ? r : Atomics,
     "%BigInt%": "undefined" == typeof BigInt ? r : BigInt,
     "%BigInt64Array%": "undefined" == typeof BigInt64Array ? r : BigInt64Array,
@@ -76,7 +76,7 @@ var r, Chunk533937 = require("./533937.js"),
     "%Float64Array%": "undefined" == typeof Float64Array ? r : Float64Array,
     "%FinalizationRegistry%": "undefined" == typeof FinalizationRegistry ? r : FinalizationRegistry,
     "%Function%": b,
-    "%GeneratorFunction%": w,
+    "%GeneratorFunction%": R,
     "%Int8Array%": "undefined" == typeof Int8Array ? r : Int8Array,
     "%Int16Array%": "undefined" == typeof Int16Array ? r : Int16Array,
     "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
@@ -226,7 +226,7 @@ var j = function e(t) {
     var n, r = e;
     if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
       var i = x[r];
-      if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+      if (i === R && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
         name: r,
@@ -250,8 +250,8 @@ module.exports = function(e, t) {
   for (var d = 1, f = true; d < n.length; d += 1) {
     var p = n[d],
       _ = B(p, 0, 1),
-      m = B(p, false);
-    if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
+      h = B(p, false);
+    if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
     if ("constructor" !== p && f || (s = true), r += "." + p, U(x, a = "%" + r + "%")) o = x[a];
     else if (null != o) {
       if (!(p in o)) {
@@ -259,8 +259,8 @@ module.exports = function(e, t) {
         return
       }
       if (O && d + 1 >= n.length) {
-        var h = O(o, p);
-        o = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : o[p]
+        var m = O(o, p);
+        o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
       } else f = U(o, p), o = o[p];
       f && !s && (x[a] = o)
     }

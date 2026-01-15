@@ -22,28 +22,28 @@ var Chunk399606 = require("./399606.js"),
 let g = () => {
   let e = (0, l.ZM)().length > 0,
     t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
-    n = (0, s.o)(m.intl.string(_.default["5RZ8Tq"]), m.intl.string(_.default.bmhCnL)),
-    g = (0, s.o)(m.intl.string(_.default.XKnFFq), m.intl.string(_.default["68zfxD"])),
-    E = (0, s.o)(m.intl.string(_.default["Rm/6a0"]), m.intl.string(_.default["1xPTwE"]));
+    n = (0, s.o)(h.intl.string(_.default["5RZ8Tq"]), h.intl.string(_.default.bmhCnL)),
+    g = (0, s.o)(h.intl.string(_.default.XKnFFq), h.intl.string(_.default["68zfxD"])),
+    E = (0, s.o)(h.intl.string(_.default["Rm/6a0"]), h.intl.string(_.default["1xPTwE"]));
   return true === t ? null : (0, r.jsxs)("div", {
-    className: h.container,
+    className: m.container,
     children: [e ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: h.banner,
+        className: m.banner,
         children: (0, r.jsx)(c.Z, {})
       }), (0, r.jsxs)("div", {
-        className: h.featureCards,
+        className: m.featureCards,
         children: [(0, r.jsx)(f.Z, {
           icon: a.eQA,
-          header: m.intl.string(_.default["001l3m"]),
+          header: h.intl.string(_.default["001l3m"]),
           description: n
         }), (0, r.jsx)(f.Z, {
           icon: a.tEF,
-          header: m.intl.string(_.default.yipAeP),
+          header: h.intl.string(_.default.yipAeP),
           description: g
         }), (0, r.jsx)(f.Z, {
           icon: a.IkH,
-          header: m.intl.string(_.default.hhOuMe),
+          header: h.intl.string(_.default.hhOuMe),
           description: E
         })]
       })]

@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,15 +48,15 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function g(e) {
   var t;
-  let a, p, m, {
+  let a, p, h, {
       className: g,
       activeCommand: E,
       activeOption: b,
@@ -71,7 +71,7 @@ function g(e) {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
-        return t => (0, r.jsx)(e, h(_({}, t), {
+        return t => (0, r.jsx)(e, m(_({}, t), {
           id: i,
           label: d.intl.string(d.t.oJ1Muw)
         }))
@@ -87,8 +87,8 @@ function g(e) {
   if (null == E) return null;
   if (null != b) {
     let e = y[b.name].lastValidationResult;
-    a = b.displayName, p = b.displayDescription, m = (null == e ? true : e.success) ? null : null == e ? true : e.error
-  } else a = "".concat(u.GI).concat(E.displayName), p = E.displayDescription, m = null;
+    a = b.displayName, p = b.displayDescription, h = (null == e ? true : e.success) ? null : null == e ? true : e.error
+  } else a = "".concat(u.GI).concat(E.displayName), p = E.displayDescription, h = null;
   return (0, r.jsxs)("div", {
     className: o()(g, f.bar),
     onContextMenu: v,
@@ -97,9 +97,9 @@ function g(e) {
       children: [(0, r.jsx)("span", {
         className: f.name,
         children: a
-      }), null != m ? (0, r.jsx)("span", {
+      }), null != h ? (0, r.jsx)("span", {
         className: f.error,
-        children: m
+        children: h
       }) : (0, r.jsx)("span", {
         className: f.description,
         children: p

@@ -2,7 +2,7 @@
 /** chunk id: 503082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./415506.js"), require("./388685.js"), require("./35282.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -51,7 +51,7 @@ function d(e, t) {
 let f = "undefined" != typeof OffscreenCanvas,
   p = 4,
   _ = 2176;
-class m {
+class h {
   reset() {
     this.context.clearRect(0, 0, this.MAX_ROW_WIDTH, this.MAX_HEIGHT), this.imageMap.clear(), this.nextX = 0, this.nextY = 0, this.tallestImageHeight = 0, this.needsReset = false
   }
@@ -87,10 +87,10 @@ class m {
     this.context = e
   }
 }
-class h extends Chunk129508.Z {
+class m extends Chunk129508.Z {
   setupOffscreenCanvas() {
     try {
-      this.offscreenCanvasCache = new m
+      this.offscreenCanvasCache = new h
     } catch (e) {
       this.offscreenCanvasCache = true
     }
@@ -287,9 +287,9 @@ class h extends Chunk129508.Z {
             h: o.height
           },
           _ = +(a.w / a.h).toFixed(1),
-          m = +(n.w / n.h).toFixed(1);
-        if (m > _) {
-          let e = a.w / m;
+          h = +(n.w / n.h).toFixed(1);
+        if (h > _) {
+          let e = a.w / h;
           i = d(c({}, {
             x: 0,
             y: (a.h - e) * (null != (u = null == r || null == (l = r.focus) ? true : l.y) ? u : .5)
@@ -298,7 +298,7 @@ class h extends Chunk129508.Z {
             h: e
           })
         } else {
-          let e = a.h * m;
+          let e = a.h * h;
           i = d(c({}, {
             x: (o.width - e) * (null != (p = null == r || null == (f = r.focus) ? true : f.x) ? p : .5),
             y: 0

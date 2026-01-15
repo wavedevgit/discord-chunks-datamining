@@ -37,8 +37,8 @@ let D = "MMM DD, YYYY",
   x = (e, t, n, a) => {
     let s, x = (0, c.e7)([E.Z], () => E.Z.isLurking(t)),
       L = (0, g.J)(t),
-      j = (0, c.e7)([h.Z], () => null != t ? h.Z.getRequest(t) : null),
-      M = (null == j ? true : j.applicationStatus) === m.wB.SUBMITTED,
+      j = (0, c.e7)([m.Z], () => null != t ? m.Z.getRequest(t) : null),
+      M = (null == j ? true : j.applicationStatus) === h.wB.SUBMITTED,
       k = null == e ? true : e.subscription_plans[0],
       U = null == k ? true : k.id,
       G = (null == e ? true : e.published) === true,
@@ -65,9 +65,9 @@ let D = "MMM DD, YYYY",
       } = (0, p.ZP)(),
       $ = null == B ? true : B.isPurchasedViaAppleGeneric,
       ee = !x && null != F && H && !M && !K && !z && !$;
-    M || x && !L ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTl, {
+    M || x && !L ? s = R.intl.string(R.t.pQK5ho) : W === U ? s = R.intl.formatToPlainString(R.t.UlBRTl, {
       changeDate: null != B ? l()(B.currentPeriodEnd).format(D) : ""
-    }) : K ? s = w.intl.string(w.t.ePFYOS) : z ? s = w.intl.string(w.t["0lPoT2"]) : $ && (s = w.intl.string(w.t.cEMaCt));
+    }) : K ? s = R.intl.string(R.t.ePFYOS) : z ? s = R.intl.string(R.t["0lPoT2"]) : $ && (s = R.intl.string(R.t.cEMaCt));
     let et = (0, f.Z)(P.iP);
     i.useEffect(() => {
       G && null != Z && u.Z.wait(() => {
@@ -81,19 +81,19 @@ let D = "MMM DD, YYYY",
           if ((null == r ? true : r.is_eligible) === true) {
             var s;
             n = null == X || null == (s = X.active_trial) ? true : s.id
-          } else i = w.intl.string(w.t.vuvsK5)
+          } else i = R.intl.string(R.t.vuvsK5)
         }(0, b.Z)({
           activeSubscription: B,
-          analyticsSubscriptionType: R.NYc.GUILD,
+          analyticsSubscriptionType: w.NYc.GUILD,
           trialId: n,
-          trialFooterMessageOverride: (null == X ? true : X.active_trial) != null ? w.intl.format(w.t.zyGyNk, {
-            buttonText: w.intl.string(w.t.BEeXib),
+          trialFooterMessageOverride: (null == X ? true : X.active_trial) != null ? R.intl.format(R.t.zyGyNk, {
+            buttonText: R.intl.string(R.t.BEeXib),
             interval: (0, v.iG)(k),
             days: 1,
-            contactLink: R.EYA.CONTACT,
-            cancelSubscriptionArticle: O.Z.getArticleURL(R.BhN.ROLE_SUBSCRIPTION_CANCEL),
-            helpdeskArticle: O.Z.getArticleURL(R.BhN.ROLE_SUBSCRIPTION_TRIAL),
-            paidServiceTermsArticle: O.Z.getArticleURL(R.BhN.PAID_TERMS),
+            contactLink: w.EYA.CONTACT,
+            cancelSubscriptionArticle: O.Z.getArticleURL(w.BhN.ROLE_SUBSCRIPTION_CANCEL),
+            helpdeskArticle: O.Z.getArticleURL(w.BhN.ROLE_SUBSCRIPTION_TRIAL),
+            paidServiceTermsArticle: O.Z.getArticleURL(w.BhN.PAID_TERMS),
             tierName: k.name
           }) : true,
           analyticsLocations: J,

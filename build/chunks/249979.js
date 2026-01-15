@@ -13,8 +13,8 @@ module.exports = function(e, t, n, l) {
       _ = n;
     if ("__proto__" === p || "constructor" === p || "prototype" === p) break;
     if (c != d) {
-      var m = f[p];
-      true === (_ = l ? l(m, p, f) : true) && (_ = o(m) ? m : a(t[c + 1]) ? [] : {})
+      var h = f[p];
+      true === (_ = l ? l(h, p, f) : true) && (_ = o(h) ? h : a(t[c + 1]) ? [] : {})
     }
     r(f, p, _), f = f[p]
   }

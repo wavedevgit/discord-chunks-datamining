@@ -2,7 +2,7 @@
 /** chunk id: 228666, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => h
+  P: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,11 +37,11 @@ function m(e) {
   }
   return e
 }
-let h = e => {
+let m = e => {
   let t, {
       billingAddressInfo: n,
       billingError: _,
-      onBillingAddressChange: h,
+      onBillingAddressChange: m,
       paymentSourceType: g
     } = e,
     E = null != _ && (null == _.code || (0, u.ly)(_) === u.Rg.ADDRESS),
@@ -72,9 +72,9 @@ let h = e => {
         type: "critical",
         children: f.intl.string(f.t.vZ8y7l)
       })
-    }) : null, (0, r.jsx)(s.ZP, m({
+    }) : null, (0, r.jsx)(s.ZP, h({
       className: p.__invalid_formItem,
-      onBillingAddressChange: h,
+      onBillingAddressChange: m,
       error: _,
       layout: t
     }, n))]

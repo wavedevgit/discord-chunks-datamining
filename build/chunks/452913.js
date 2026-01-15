@@ -16,22 +16,22 @@ var Chunk392711 = require("./392711.js"),
   Chunk774343 = require("./774343.js"),
   Chunk475468 = require("./475468.js"),
   Chunk981631 = require("./981631.js");
-let m = false,
-  h = false,
+let h = false,
+  m = false,
   g = false;
 
 function E(e) {
   let t = s.Z.getState().guildId;
-  if (null == t) return h;
+  if (null == t) return m;
   if (t === _.I_8) return g;
   let n = e.indexOf(t);
-  return false === n ? h : n
+  return false === n ? m : n
 }
 let b = i().throttle(function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
     t = d.ZP.getFlattenedGuildIds(),
     n = E(t);
-  if ((n += e) !== g || (0, o.z)(a.Z, l.Z, c.Z) || (n += e), n === m && (n = t.length - 1), n >= t.length || n === h) return void(0, p.z)(f.Z.getHomeLink());
+  if ((n += e) !== g || (0, o.z)(a.Z, l.Z, c.Z) || (n += e), n === h && (n = t.length - 1), n >= t.length || n === m) return void(0, p.z)(f.Z.getHomeLink());
   let r = n === g ? _.I_8 : t[n],
     i = u.Z.getChannelId(r);
   (0, p.K)(r, i === r ? null : i, false)

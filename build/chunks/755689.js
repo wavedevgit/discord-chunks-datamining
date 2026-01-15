@@ -86,7 +86,7 @@ module.exports = function(e) {
       relevance: 0,
       contains: [e.TITLE_MODE]
     },
-    m = {
+    h = {
       className: "function",
       begin: /function\s+/,
       end: /\s*\{|$/,
@@ -109,7 +109,7 @@ module.exports = function(e) {
         contains: [s]
       }]
     },
-    h = {
+    m = {
       begin: /using\s/,
       end: /$/,
       returnBegin: true,
@@ -170,6 +170,6 @@ module.exports = function(e) {
     aliases: ["pwsh", "ps", "ps1"],
     case_insensitive: true,
     keywords: i,
-    contains: y.concat(_, m, h, g, O)
+    contains: y.concat(_, h, m, g, O)
   }
 }

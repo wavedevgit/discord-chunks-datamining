@@ -146,7 +146,7 @@ function z(e) {
     let r = parseInt(t, 10);
     if (isNaN(r)) return;
     let i = Math.max(0, Math.min(360, r));
-    c("".concat(i, "\xb0")), (0, R.Ac)(), n(i)
+    c("".concat(i, "\xb0")), (0, w.Ac)(), n(i)
   };
   return (0, r.jsxs)("div", {
     className: o()(G.sliderContainer, G.gradientDirectionSliderContainer),
@@ -183,7 +183,7 @@ function z(e) {
         minValue: 0,
         maxValue: 360,
         onValueChange: e => {
-          (0, R.fR)();
+          (0, w.fR)();
           let t = K(e);
           t !== e || s(e), n(t)
         },
@@ -211,7 +211,7 @@ function q(e) {
     let r = parseInt(t, 10);
     if (isNaN(r)) return;
     let i = Math.max(0, Math.min(100, r));
-    l("".concat(i, "%")), (0, R.PI)(), n(i)
+    l("".concat(i, "%")), (0, w.PI)(), n(i)
   };
   return (0, r.jsxs)("div", {
     className: G.sliderContainer,
@@ -233,7 +233,7 @@ function q(e) {
       minValue: 0,
       maxValue: 100,
       onValueChange: e => {
-        (0, R.z3)(), o(e), n(e)
+        (0, w.z3)(), o(e), n(e)
       },
       onValueRender: () => null,
       keyboardStep: 1
@@ -245,9 +245,9 @@ function Q(e) {
   let {
     isCoachmark: t,
     isMobile: n
-  } = e, [a, o] = i.useState(false), s = i.useRef(false), [l, u] = i.useState(false), p = i.useRef(null), _ = i.useRef(null), m = i.useCallback(() => {
+  } = e, [a, o] = i.useState(false), s = i.useRef(false), [l, u] = i.useState(false), p = i.useRef(null), _ = i.useRef(null), h = i.useCallback(() => {
     var e;
-    (0, R.Om)();
+    (0, w.Om)();
     let t = (0, A.C)();
     C.Ig.getState().setAll({
       colors: t.colors,
@@ -262,7 +262,7 @@ function Q(e) {
       null != p.current && clearTimeout(p.current)
     }
   }, [t]);
-  let h = i.useCallback(() => {
+  let m = i.useCallback(() => {
       s.current = true
     }, []),
     g = i.useCallback(() => {
@@ -272,7 +272,7 @@ function Q(e) {
     b = () => (0, r.jsx)(d.zxk, {
       buttonRef: _,
       variant: "secondary",
-      onClick: m,
+      onClick: h,
       onMouseEnter: () => u(true),
       onMouseLeave: () => u(false),
       icon: n ? {
@@ -297,7 +297,7 @@ function Q(e) {
     position: "left",
     asset: E ? (0, r.jsx)(f.kBK, {}) : true,
     forceOpen: a,
-    onTooltipShow: h,
+    onTooltipShow: m,
     onTooltipHide: g,
     targetElementRef: _,
     children: b()
@@ -328,7 +328,7 @@ function J(e) {
     onSaveTheme: t,
     canApply: n
   } = e, i = (0, y.m)(M.PremiumTypes.TIER_2);
-  return (0, R.hf)(i, m.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsx)("div", {
+  return (0, w.hf)(i, h.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsx)("div", {
     className: G.coachmarkFooterContainer,
     children: i ? (0, r.jsx)(X, {
       disabled: !n,
@@ -353,9 +353,9 @@ function $(e) {
     canApply: i,
     metadata: a
   } = e, s = (0, y.m)(M.PremiumTypes.TIER_2), c = (null == (t = (0, g.oq)().metadata) ? true : t.from) === g.tE.SHARE_MESSAGE;
-  (0, R.hf)(s, m.Z.CUSTOM_THEMES_EDITOR);
+  (0, w.hf)(s, h.Z.CUSTOM_THEMES_EDITOR);
   let u = () => {
-      (0, R.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, I.openUserSettings)(S.n.APPEARANCE_PANEL, {
+      (0, w.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, I.openUserSettings)(S.n.APPEARANCE_PANEL, {
         section: L.oAB.APPEARANCE
       }), (0, g.Ll)()) : (null == a ? true : a.from) === g.tE.CLIENT_THEMES_EDITOR ? (0, g.XO)(g.wh.CLIENT_THEMES) : (0, g.Ll)()
     },
@@ -410,7 +410,7 @@ function ee(e) {
     setGradientAngle: L
   } = (0, C.Ig)(), [M, Z] = i.useState(null != (t = S[0]) ? t : C.Dp), F = (0, s.e7)([v.Z], () => v.Z.theme), B = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: V
-  } = (0, h.ZP)(m.Z.CUSTOM_THEMES_EDITOR), H = (0, s.e7)([P.Z], () => P.Z.getSavedCustomTheme()), W = async () => {
+  } = (0, m.ZP)(h.Z.CUSTOM_THEMES_EDITOR), H = (0, s.e7)([P.Z], () => P.Z.getSavedCustomTheme()), W = async () => {
     y.current = true, await (0, p.ZI)({
       theme: F,
       customUserThemeSettings: {
@@ -419,9 +419,9 @@ function ee(e) {
         gradientAngle: T,
         baseMix: I
       }
-    }), (0, R.u7)(S, I, T, F, V), null == a || a(j.L.TAKE_ACTION), B || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, w.u7)(S, I, T, F, V), null == a || a(j.L.TAKE_ACTION), B || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, K = () => {
-    u(N._m.RESET_BUTTON), (0, R.uf)()
+    u(N._m.RESET_BUTTON), (0, w.uf)()
   }, X = S.length > 0;
   return i.useEffect(() => () => {
     y.current || u(N._m.EDITOR_CLOSE)
@@ -458,7 +458,7 @@ function ee(e) {
             variant: "text-sm/semibold",
             color: "text-subtle",
             children: U.intl.string(k.default.uSL2Gy)
-          }), (0, r.jsx)(w.U, {
+          }), (0, r.jsx)(R.U, {
             onChange: e => {
               Z(e), 0 === S.length && (0, N.lT)(S, e, A)
             },

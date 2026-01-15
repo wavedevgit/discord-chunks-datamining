@@ -2,7 +2,7 @@
 /** chunk id: 353903, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G0: () => h,
+  G0: () => m,
   u$: () => g
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -47,7 +47,7 @@ class _ extends Chunk473749.PureComponent {
     })
   }
 }
-class m extends(r = Chunk473749.Component) {
+class h extends(r = Chunk473749.Component) {
   componentDidMount() {
     this.animateSlide()
   }
@@ -109,10 +109,10 @@ class m extends(r = Chunk473749.Component) {
     }
   }
 }
-d(m, "defaultProps", {
+d(h, "defaultProps", {
   direction: false
 });
-let h = e => {
+let m = e => {
   let {
     columns: t
   } = e;

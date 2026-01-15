@@ -23,7 +23,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,7 +48,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -130,14 +130,14 @@ function P(e) {
   if (null == n) returnfalse;
   let s = y[n];
   if (null == s) returnfalse;
-  null == (t = s.onFailure) || t.call(s, r, i, a, o), s.data.interactionType === c.B8.APPLICATION_COMMAND ? k(n) : y[n] = g(m({}, s), {
+  null == (t = s.onFailure) || t.call(s, r, i, a, o), s.data.interactionType === c.B8.APPLICATION_COMMAND ? k(n) : y[n] = g(h({}, s), {
     state: p.F.FAILED,
     errorCode: r,
     errorMessage: i
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t
   } = e;
@@ -145,7 +145,7 @@ function R(e) {
   for (let [e, t] of Object.entries(y)) t.state === p.F.FAILED && k(e)
 }
 
-function w(e) {
+function R(e) {
   let {
     nonce: t
   } = e;
@@ -238,10 +238,10 @@ let G = new U(Chunk570140.Z, {
   INTERACTION_SUCCESS: A,
   INTERACTION_FAILURE: P,
   MESSAGE_CREATE: N,
-  CHANNEL_SELECT: R,
+  CHANNEL_SELECT: w,
   INTERACTION_IFRAME_MODAL_CREATE: D,
   INTERACTION_IFRAME_MODAL_CLOSE: x,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: L,
-  INTERACTION_MODAL_CREATE: w,
+  INTERACTION_MODAL_CREATE: R,
   EMBEDDED_ACTIVITY_UPDATE_V2: j
 })

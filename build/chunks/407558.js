@@ -23,13 +23,13 @@ function s(e) {
   r.useEffect(() => {
     _.current = c
   }, [c]);
-  let m = r.useRef(u);
+  let h = r.useRef(u);
   r.useEffect(() => {
-    m.current = u
+    h.current = u
   }, [u]);
-  let h = r.useRef(l);
+  let m = r.useRef(l);
   r.useEffect(() => {
-    h.current = l
+    m.current = l
   }, [l]);
   let {
     refs: g,
@@ -45,11 +45,11 @@ function s(e) {
           rects: t,
           elements: n
         } = e;
-        h.current && Object.assign(n.floating.style, {
+        m.current && Object.assign(n.floating.style, {
           minWidth: "".concat(t.reference.width, "px"),
           width: "".concat(t.reference.width, "px")
-        }), null != m.current && Object.assign(n.floating.style, {
-          width: "".concat(m.current(t.reference), "px")
+        }), null != h.current && Object.assign(n.floating.style, {
+          width: "".concat(h.current(t.reference), "px")
         }), null != _.current && Object.assign(n.floating.style, {
           maxHeight: "".concat(_.current(t.reference), "px")
         })

@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   $w: () => E,
-  Bh: () => h,
+  Bh: () => m,
   Gx: () => y,
   TA: () => p,
-  V$: () => m,
+  V$: () => h,
   g5: () => g,
   i7: () => b,
   rD: () => u,
@@ -57,11 +57,11 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   return null == e ? "None" : u(e) ? "Custom" : "blur" === e ? "Blur" : "Preset - ".concat(_(e))
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   let s = a.Z.getGuildId(),
     l = a.Z.getChannelId(),
     u = i.Z.getChannel(l),
@@ -69,7 +69,7 @@ function h(e, t, n) {
   o.default.track(c.rMx.VIDEO_EFFECT_UPDATED, {
     location: t,
     effect_type: p(e),
-    effect_detail: m(e),
+    effect_detail: h(e),
     effect_state: n,
     channel_id: l,
     channel_type: null == u ? true : u.type,

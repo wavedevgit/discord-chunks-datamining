@@ -21,11 +21,11 @@ function p(e) {
     slide: n,
     videoEntrySrc: a,
     videoLoopSrc: p
-  } = e, _ = i.useRef(null), m = i.useRef(null), h = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), [g, E] = i.useState(h), b = i.useContext(u.$r), y = i.useContext(d.xS), O = i.useCallback(() => {
+  } = e, _ = i.useRef(null), h = i.useRef(null), m = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), [g, E] = i.useState(m), b = i.useContext(u.$r), y = i.useContext(d.xS), O = i.useCallback(() => {
     var e, t;
-    E(true), h || null == (t = m.current) || t.play(), null == (e = _.current) || e.pause()
-  }, [h]), v = i.useCallback(e => {
-    let t = (g ? m : _).current,
+    E(true), m || null == (t = h.current) || t.play(), null == (e = _.current) || e.pause()
+  }, [m]), v = i.useCallback(e => {
+    let t = (g ? h : _).current,
       r = e.detail.canvas,
       i = e.detail.context;
     if (null == t || t.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) return;
@@ -48,7 +48,7 @@ function p(e) {
       style: {
         opacity: 0
       },
-      autoPlay: !h,
+      autoPlay: !m,
       muted: true,
       playsInline: true,
       onEnded: O,
@@ -57,7 +57,7 @@ function p(e) {
         type: "video/webm"
       })
     }), (0, r.jsx)(s.Z, {
-      ref: m,
+      ref: h,
       className: f.loopingVideo,
       style: {
         opacity: 0

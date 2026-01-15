@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk427679 = require("./427679.js"),
   Chunk754277 = require("./754277.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,9 +27,9 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = e => e / 400,
+let m = e => e / 400,
   g = false,
-  E = (0, Chunk460181.tu)("stage_waiting", "stage_waiting", h(Chunk131951.Z.getOutputVolume()));
+  E = (0, Chunk460181.tu)("stage_waiting", "stage_waiting", m(Chunk131951.Z.getOutputVolume()));
 
 function b() {
   let e = l.Z.getVoiceChannelId();
@@ -43,7 +43,7 @@ function b() {
     return
   }
   if (_.Z.shouldPlay()) {
-    E.volume = h(s.Z.getOutputVolume()), E.loop(), g = true;
+    E.volume = m(s.Z.getOutputVolume()), E.loop(), g = true;
     return
   }
   if (p.Z.isLive(e)) {
@@ -55,7 +55,7 @@ function b() {
     return
   }
   let n = null != Object.values(c.Z.getVoiceStatesForChannel(e)).find(e => !e.suppress && !e.isVoiceMuted());
-  n || g ? n && (E.pause(), g = false) : (E.volume = h(s.Z.getOutputVolume()), E.loop(), g = true)
+  n || g ? n && (E.pause(), g = false) : (E.volume = m(s.Z.getOutputVolume()), E.loop(), g = true)
 }
 
 function y(e) {
@@ -103,13 +103,13 @@ class v extends Chunk147913.Z {
     let {
       volume: t
     } = e;
-    E.volume = h(t)
+    E.volume = m(t)
   }
   handleToggleSelfDeaf() {
     b()
   }
   constructor(...e) {
-    super(...e), m(this, "actions", {
+    super(...e), h(this, "actions", {
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect,
       LOGOUT: this.handleLogout,
       STAGE_MUSIC_MUTE: this.handleMute,

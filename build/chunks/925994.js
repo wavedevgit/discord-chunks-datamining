@@ -18,7 +18,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk51144 = require("./51144.js"),
   Chunk887490 = require("./887490.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -100,8 +100,8 @@ function y(e, t) {
       }
       if (t === f) return ""
     }
-  let m = f > 0 && _.aj.isType(e[f - 1], "blockQuote"),
-    h = _.aj.isType(e[f], "blockQuote"),
+  let h = f > 0 && _.aj.isType(e[f - 1], "blockQuote"),
+    m = _.aj.isType(e[f], "blockQuote"),
     g = _.aj.isType(e[p], "blockQuote"),
     E = [];
   for (let t = f; t <= p; t++) {
@@ -118,7 +118,7 @@ function y(e, t) {
           path: o.path.slice(1),
           offset: o.offset
         } : true,
-        allowBlockQuotePrefix: null == a || null == o || !m && (!h || g),
+        allowBlockQuotePrefix: null == a || null == o || !h && (!m || g),
         preventEmojiSurrogates: u
       });
     (!l || s.length > 0) && E.push(s)
@@ -131,7 +131,7 @@ function O(e, t) {
     mode: n,
     start: r,
     allowBlockQuotePrefix: i = false,
-    preventEmojiSurrogates: m = false
+    preventEmojiSurrogates: h = false
   } = null != t ? t : {};
   if (_.LC.isText(e)) return v(e.text, t);
   switch (e.type) {
@@ -149,7 +149,7 @@ function O(e, t) {
     }
     case "emoji": {
       let t = e.emoji;
-      if (!m && null != t.surrogate) return t.surrogate;
+      if (!h && null != t.surrogate) return t.surrogate;
       return t.name
     }
     case "customEmoji": {
@@ -208,7 +208,7 @@ function O(e, t) {
       return n
     }
     case "applicationCommand":
-      return y(e.children, E(h({}, t), {
+      return y(e.children, E(m({}, t), {
         separator: " ",
         ignoreEmptyNodes: true
       }));

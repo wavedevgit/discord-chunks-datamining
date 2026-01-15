@@ -29,9 +29,9 @@ let d = new Chunk710845.Z("BackForwardNavStore"),
     optional: true
   }), ":messageId?"), Chunk981631.Z5c.CHANNELS_GAME_SHOP(Chunk893607.Hw.guildId(), ":pageIndex", ":skuId?", ":slug?"), Chunk981631.Z5c.NOTIFICATIONS, Chunk981631.Z5c.FRIENDS, Chunk981631.Z5c.ME, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.USERS(":userId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.GLOBAL_DISCOVERY_SERVERS, Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS],
   _ = [],
-  m = 0;
+  h = 0;
 
-function h(e, t) {
+function m(e, t) {
   if (t < 0 || t >= e.length) throw RangeError("index out of bounds");
   let n = 0,
     r = t;
@@ -46,16 +46,16 @@ function g(e) {
   } = e, r = (0, i.LX)(t, p);
   if (null == r) returnfalse;
   if (r.params.guildId === c.STv && true === r.params.messageId) return d.verbose("Ignoring weird notification sidebar route lacking messageId"), false;
-  if (n && _.length > 0) return _[m] = {
+  if (n && _.length > 0) return _[h] = {
     path: t,
     params: r.params
   }, true;
   if (_.length > 0) {
-    if (t === _[m].path) returnfalse;
+    if (t === _[h].path) returnfalse;
     let e = _.findIndex(e => e.path === t);
-    false !== e && (m >= e && (m -= 1), _.splice(e, 1))
+    false !== e && (h >= e && (h -= 1), _.splice(e, 1))
   }
-  for (r.params.guildId !== c.STv && (m > 0 && h(_, m), m = 0); _.length > f;) _.pop();
+  for (r.params.guildId !== c.STv && (h > 0 && m(_, h), h = 0); _.length > f;) _.pop();
   _.unshift({
     path: t,
     params: r.params
@@ -63,30 +63,30 @@ function g(e) {
 }
 
 function E(e) {
-  m < _.length - 1 && m++
+  h < _.length - 1 && h++
 }
 
 function b(e) {
-  m > 0 && m--
+  h > 0 && h--
 }
 class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    _ = [], m = 0
+    _ = [], h = 0
   }
   get pastPlaces() {
     return _
   }
   get canGoBack() {
-    return m < _.length - 1
+    return h < _.length - 1
   }
   get canGoForward() {
-    return m > 0
+    return h > 0
   }
   get backDestination() {
-    return this.canGoBack ? _[m + 1] : null
+    return this.canGoBack ? _[h + 1] : null
   }
   get forwardDestination() {
-    return this.canGoForward ? _[m - 1] : null
+    return this.canGoForward ? _[h - 1] : null
   }
 }
 u(y, "displayName", "BackForwardNavStore");

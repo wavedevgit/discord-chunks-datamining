@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk188785 = require("./188785.js"),
   Chunk436620 = require("./436620.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -202,7 +202,7 @@ class ea extends Chunk473749.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = n === g.P.IN_PROGRESS ? null : R.KO ? C.isPlatformEmbedded ? (0, r.jsxs)(o.rs, {
+    return e = n === g.P.IN_PROGRESS ? null : w.KO ? C.isPlatformEmbedded ? (0, r.jsxs)(o.rs, {
       children: [t ? null : (0, r.jsx)(o.AW, {
         path: N.Z5c.ACCOUNT_STANDING,
         component: Q
@@ -362,7 +362,7 @@ class ea extends Chunk473749.Component {
       children: (0, r.jsx)(_.Z, {
         component: j
       })
-    }), (0, r.jsxs)(h.Z, {
+    }), (0, r.jsxs)(m.Z, {
       skipsSettingDefaultPageTitle: i,
       children: [e, C.isPlatformEmbedded && (n === g.P.NOT_STARTED || n === g.P.IN_PROGRESS) && true !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
     })

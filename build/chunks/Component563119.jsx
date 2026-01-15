@@ -18,7 +18,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ let b = "game_console_alert_modal",
         let n = () => {
             (0, l.Q3)(a.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(i.Modal, E(h({}, e), {
+          s = e => (0, r.jsx)(i.Modal, E(m({}, e), {
             title: t,
             subtitle: _.intl.string(_.t.bL21zs),
             actions: [{
@@ -95,7 +95,7 @@ let b = "game_console_alert_modal",
         dismissCallback: () => (0, o.closeModal)(b)
       });
 
-      function m() {
+      function h() {
         null != l && ((0, s.Z)({
           platformType: l
         }), u.default.track(p.rMx.ACCOUNT_LINK_STEP, {
@@ -104,11 +104,11 @@ let b = "game_console_alert_modal",
           platform_type: l
         }))
       }
-      let g = e => (0, r.jsx)(i.Modal, E(h({}, e), {
+      let g = e => (0, r.jsx)(i.Modal, E(m({}, e), {
         title: t,
         actions: [{
           text: _.intl.string(_.t.BddRzS),
-          onClick: m
+          onClick: h
         }],
         children: c
       }));

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   L6: () => N,
-  ZP: () => m,
+  ZP: () => h,
   iF: () => A
 }), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./704826.js");
 var Chunk466332 = require("./466332.js"),
@@ -19,18 +19,18 @@ var Chunk466332 = require("./466332.js"),
 let p = new Set(["line"]),
   _ = /^[a-z0-9_+\-.#]+$/i;
 
-function m(e) {
+function h(e) {
   let {
     onChange: t
   } = e, n = null;
   return e.onChange = () => {
     d.bN.richValue(e) !== n && (l.T.withMergedEntry(e, () => {
-      d.bN.withoutNormalizing(e, () => h(e))
+      d.bN.withoutNormalizing(e, () => m(e))
     }), n = d.bN.richValue(e)), t()
   }, e
 }
 
-function h(e) {
+function m(e) {
   let t = E(e);
   y(e, t)
 }
@@ -58,19 +58,19 @@ function b(e, t, n, r, i) {
   }
   let f = n && null != l,
     p = n && 0 === o.length,
-    m = r && 0 === o.length,
-    h = (f ? o.slice(1) : o).length % 2 == 1,
-    g = h && (null == u || "" === u || null != u.match(_)),
+    h = r && 0 === o.length,
+    m = (f ? o.slice(1) : o).length % 2 == 1,
+    g = m && (null == u || "" === u || null != u.match(_)),
     E = g && null != u && null != (a = s.default.resolveLanguageName(u)) ? a : null;
   return {
     blockEntry: t,
     wasInCodeBlock: n,
     isInCodeBlock: p,
-    isStyledCodeBlockLine: m,
-    lang: h || f ? E : i,
+    isStyledCodeBlockLine: h,
+    lang: m || f ? E : i,
     hljsTypes: null,
     closesCodeBlock: f,
-    opensCodeBlock: h,
+    opensCodeBlock: m,
     opensCodeBlockOnOwnLine: g
   }
 }

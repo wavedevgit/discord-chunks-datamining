@@ -46,9 +46,9 @@ function g(e, t, n) {
 function E(e, t) {
   let n = (0, a.e7)([f.Z, p.Z], () => e === p.Z.getChannelId() ? f.Z.getDesyncedVoiceStates() : null),
     i = (0, a.Wu)([s.Z], () => null == e ? [] : [...s.Z.getGuildRingingUsers(e)]),
-    o = (0, a.Wu)([_.default], () => i.map(e => _.default.getUser(e)).filter(h.lm)),
+    o = (0, a.Wu)([_.default], () => i.map(e => _.default.getUser(e)).filter(m.lm)),
     c = (0, a.e7)([u.Z], () => u.Z.getBasicChannel(e)),
-    m = r.useMemo(() => o.map(e => ({
+    h = r.useMemo(() => o.map(e => ({
       voiceState: new l.Z(e.id),
       user: e,
       member: (null == c ? true : c.guild_id) != null ? d.ZP.getMember(null == c ? true : c.guild_id, e.id) : null,
@@ -56,7 +56,7 @@ function E(e, t) {
       comparator: e.globalName,
       _isPlaceholder: false
     })), [o, null == c ? true : c.guild_id]);
-  return r.useMemo(() => g(n, t, m), [n, t, m])
+  return r.useMemo(() => g(n, t, h), [n, t, h])
 }
 
 function b(e, t) {
@@ -82,8 +82,8 @@ function v(e, t) {
     o = r.useRef(null),
     [s, l] = r.useState(false),
     [u, d] = r.useState(false),
-    f = (0, a.e7)([p.Z, m.Z], () => null != t && null != e && p.Z.getChannelId() === e && null != m.Z.isInChannel(e, t) && p.Z.isUserConnected(t)),
-    _ = (0, a.e7)([p.Z, m.Z], () => null != t && null != e && p.Z.getChannelId() === e && null != m.Z.isInChannel(e, t) && !p.Z.isUserConnected(t));
+    f = (0, a.e7)([p.Z, h.Z], () => null != t && null != e && p.Z.getChannelId() === e && null != h.Z.isInChannel(e, t) && p.Z.isUserConnected(t)),
+    _ = (0, a.e7)([p.Z, h.Z], () => null != t && null != e && p.Z.getChannelId() === e && null != h.Z.isInChannel(e, t) && !p.Z.isUserConnected(t));
   return r.useEffect(() => {
     f && d(true)
   }, [f]), r.useEffect(() => {

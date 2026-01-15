@@ -10,10 +10,10 @@ require.d(exports, {
   Hk: () => O,
   NL: () => C,
   NO: () => d,
-  P2: () => R,
-  Q1: () => h,
+  P2: () => w,
+  Q1: () => m,
   Rx: () => S,
-  T1: () => m,
+  T1: () => h,
   Tg: () => E,
   Us: () => u,
   ad: () => f,
@@ -21,7 +21,7 @@ require.d(exports, {
   br: () => P,
   cG: () => v,
   d5: () => y,
-  m: () => w,
+  m: () => R,
   os: () => A,
   vW: () => D,
   ye: () => b
@@ -45,12 +45,12 @@ let d = "1340102344645283891",
     [Chunk981631.Eu4.TIER_3]: Chunk494497.XW,
     [Chunk981631.Eu4.NONE]: true
   },
-  m = {
+  h = {
     [Chunk494497.h_]: Chunk981631.Eu4.TIER_1,
     [Chunk494497.NJ]: Chunk981631.Eu4.TIER_2,
     [Chunk494497.XW]: Chunk981631.Eu4.TIER_3
   },
-  h = {
+  m = {
     [Chunk981631.Eu4.TIER_1]: Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK,
     [Chunk981631.Eu4.TIER_2]: Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK,
     [Chunk981631.Eu4.TIER_3]: Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK,
@@ -168,10 +168,10 @@ let C = new Set([Chunk494497.MB, Chunk494497.Vk]),
 var P = function(e) {
     return e[e.AVAILABLE = 0] = "AVAILABLE", e[e.SPENT = 1] = "SPENT", e[e.TOTAL = 2] = "TOTAL", e
   }({}),
-  R = function(e) {
+  w = function(e) {
     return e[e.LEVEL = 0] = "LEVEL", e[e.PERK = 1] = "PERK", e
   }({}),
-  w = function(e) {
+  R = function(e) {
     return e.START = "start", e.MIDDLE = "middle", e.END = "end", e
   }({}),
   D = function(e) {

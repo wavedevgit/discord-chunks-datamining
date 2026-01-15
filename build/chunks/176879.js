@@ -2,8 +2,8 @@
 /** chunk id: 176879, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QX: () => h,
-  ZP: () => m,
+  QX: () => m,
+  ZP: () => h,
   fA: () => _
 });
 var Chunk473749 = require("./473749.js"),
@@ -19,19 +19,19 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = 4;
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     numItems: n = d.zL,
     location: p,
     source: _
-  } = e, m = (0, c.ZP)(t.id), h = (0, s.R)({
+  } = e, h = (0, c.ZP)(t.id), m = (0, s.R)({
     location: p
   }), {
     showRecommendations: g
   } = (0, l.E)({
     location: p
-  }), E = r.useMemo(() => _ === d.bd.POPOUT ? g : _ !== d.bd.DM_SIDE_PANEL || h, [_, h, g]), b = r.useMemo(() => _ === d.bd.POPOUT ? d.Yw.POPOUT : d.Yw.USER_PROFILE, [_]), {
+  }), E = r.useMemo(() => _ === d.bd.POPOUT ? g : _ !== d.bd.DM_SIDE_PANEL || m, [_, m, g]), b = r.useMemo(() => _ === d.bd.POPOUT ? d.Yw.POPOUT : d.Yw.USER_PROFILE, [_]), {
     defaultWishlistId: y,
     wishlist: O,
     popularCollectiblesProducts: v,
@@ -44,7 +44,7 @@ function m(e) {
     minNumItems: E ? n : 0,
     source: b
   }), A = (0, a.Z)({
-    displayProfile: m,
+    displayProfile: h,
     location: p
   }), N = r.useMemo(() => [t.id], [t.id]), {
     recommendations: P
@@ -55,23 +55,23 @@ function m(e) {
     applicationId: f.t9,
     userIds: N,
     includeWishlists: true
-  }), R = r.useMemo(() => {
+  }), w = r.useMemo(() => {
     var e;
     return E && ((null != (e = null == O ? true : O.items) ? e : []).filter(e => true !== e.isOwned && (0, u.F)(e)).length > 0 || A) ? P : []
   }, [null == O ? true : O.items, A, E, P]), {
-    displayItems: w,
+    displayItems: R,
     hasMoreItems: D,
     totalWishlistItemCount: x,
     wishlistItemCountToBeDisplayed: L
   } = (0, d.UD)({
     wishlist: O,
     popularCollectiblesProducts: v,
-    popularSocialLayerStorefrontItems: R,
+    popularSocialLayerStorefrontItems: w,
     wishlistError: C,
     numItems: n
   });
   return {
-    displayItems: w,
+    displayItems: R,
     hasMoreItems: D,
     totalWishlistItemCount: x,
     wishlistItemCountToBeDisplayed: L,
@@ -88,7 +88,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     user: t,
     numItems: n = d.zL,
@@ -98,7 +98,7 @@ function h(e) {
     displayItems: o,
     defaultWishlistId: s,
     wishlist: l
-  } = m({
+  } = h({
     user: t,
     numItems: n,
     source: i,

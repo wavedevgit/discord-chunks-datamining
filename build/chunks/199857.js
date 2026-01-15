@@ -106,7 +106,7 @@ class I extends Chunk912095.Z {
     this.enableAudioNack = e > 0
   }
   setSDP(e) {
-    if (!(0, h.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
+    if (!(0, m.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
     if ("have-local-offer" !== this.signalingState) throw Error("Invalid signaling state ".concat(this.signalingState));
     let {
       outboundStreams: t
@@ -236,8 +236,8 @@ class I extends Chunk912095.Z {
         audioSSRC: i,
         videoSSRC: a,
         rtxSSRC: o
-      } = (0, h.Nl)(t, this.experimentFlags.has(g.V8.BROWSER_HEVC)),
-      s = (0, h.nX)(t);
+      } = (0, m.Nl)(t, this.experimentFlags.has(g.V8.BROWSER_HEVC)),
+      s = (0, m.nX)(t);
     return {
       sdp: t,
       outboundStreams: n,
@@ -286,7 +286,7 @@ class I extends Chunk912095.Z {
           ssrc: s.ssrc,
           cname: s.cname,
           type: a,
-          direction: (0, h.Mg)(o),
+          direction: (0, m.Mg)(o),
           mid: i
         }
       }),
@@ -307,12 +307,12 @@ class I extends Chunk912095.Z {
     let {
       ssrcs: p,
       remainingAudioStreams: _,
-      remainingVideoStreams: m
+      remainingVideoStreams: h
     } = this.buildSSRCsFromOutboundStreams(e, t, n, r);
     return {
       remainingAudioStreams: _,
-      remainingVideoStreams: m,
-      answer: (0, h.Rx)({
+      remainingVideoStreams: h,
+      answer: (0, m.Rx)({
         type: "answer",
         baseSDP: f,
         audioCodec: o,
@@ -371,13 +371,13 @@ class I extends Chunk912095.Z {
       audioSSRC: f,
       videoSSRC: p,
       rtxSSRC: _,
-      extensions: m
+      extensions: h
     } = this.parseLocalDescription();
-    if (this.codecs = u, this.extensions = m, f !== this.audioSSRC || p !== this.videoSSRC) {
+    if (this.codecs = u, this.extensions = h, f !== this.audioSSRC || p !== this.videoSSRC) {
       var E;
       null == (E = this.daveSessionManager) || E.updateSsrcs(this.userId, f, [p])
     }
-    this.audioSSRC = f, this.videoSSRC = p, this.videoReady = p > 0 && _ > 0, (this.videoStreamParameters[0].ssrc !== p || this.videoStreamParameters[0].rtxSsrc !== _ || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === p ? this.videoStreamParameters[0].ssrc : p, this.videoStreamParameters[0].rtxSsrc = 0 === _ ? this.videoStreamParameters[0].rtxSsrc : _, this.videoStreamParameters[0].active = this.videoReady, this.emit(d.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, p, _, this.videoStreamParameters)), null == this.sdp ? this.emit(d.Sh.Connected, "webrtc", (0, h.sc)(l, this.experimentFlags.has(g.V8.BROWSER_HEVC))) : this.setRemoteAnswer(c, t, n, r)
+    this.audioSSRC = f, this.videoSSRC = p, this.videoReady = p > 0 && _ > 0, (this.videoStreamParameters[0].ssrc !== p || this.videoStreamParameters[0].rtxSsrc !== _ || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === p ? this.videoStreamParameters[0].ssrc : p, this.videoStreamParameters[0].rtxSsrc = 0 === _ ? this.videoStreamParameters[0].rtxSsrc : _, this.videoStreamParameters[0].active = this.videoReady, this.emit(d.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, p, _, this.videoStreamParameters)), null == this.sdp ? this.emit(d.Sh.Connected, "webrtc", (0, m.sc)(l, this.experimentFlags.has(g.V8.BROWSER_HEVC))) : this.setRemoteAnswer(c, t, n, r)
   }
   constructor(e) {
     var t;
@@ -440,7 +440,7 @@ class I extends Chunk912095.Z {
       }
     }), this.logger = new u.Yd("UnifiedConnection(".concat(e.context, ")"));
     let n = e.dave;
-    null == n || (0, m.IT)() || (this.logger.warn("DAVE is initialized but encoded transforms are not supported"), n = null), null != n && (this.daveSessionManager = new p.j(n, e.transientKeys, this.userId), this.daveSessionManager.on(d.Sh.MLSFailure, (e, t) => {
+    null == n || (0, h.IT)() || (this.logger.warn("DAVE is initialized but encoded transforms are not supported"), n = null), null != n && (this.daveSessionManager = new p.j(n, e.transientKeys, this.userId), this.daveSessionManager.on(d.Sh.MLSFailure, (e, t) => {
       this.emit(d.Sh.MLSFailure, e, t)
     }), this.daveSessionManager.on(d.Sh.SecureFramesUpdate, e => {
       this.emit(d.Sh.SecureFramesUpdate, e)

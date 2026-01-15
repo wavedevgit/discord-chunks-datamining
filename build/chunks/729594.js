@@ -19,11 +19,11 @@ var a = /^([a-z0-9.+-]+:)/i,
     javascript: true,
     "javascript:": true
   },
-  m = {
+  h = {
     javascript: true,
     "javascript:": true
   },
-  h = {
+  m = {
     http: true,
     https: true,
     ftp: true,
@@ -73,9 +73,9 @@ i.prototype.parse = function(e, t, n) {
   }
   if (n || v || y.match(/^\/\/[^@/]+@[^@/]+/)) {
     var I = "//" === y.substr(0, 2);
-    I && !(v && m[v]) && (y = y.substr(2), this.slashes = true)
+    I && !(v && h[v]) && (y = y.substr(2), this.slashes = true)
   }
-  if (!m[v] && (I || v && !h[v])) {
+  if (!h[v] && (I || v && !m[v])) {
     for (var T, C, A = false, N = 0; N < u.length; N++) {
       var P = y.indexOf(u[N]);
       false !== P && (false === A || P < A) && (A = P)
@@ -86,25 +86,25 @@ i.prototype.parse = function(e, t, n) {
       false !== P && (false === A || P < A) && (A = P)
     }
     false === A && (A = y.length), this.host = y.slice(0, A), y = y.slice(A), this.parseHost(), this.hostname = this.hostname || "";
-    var R = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];
-    if (!R)
-      for (var w = this.hostname.split(/\./), N = 0, D = w.length; N < D; N++) {
-        var x = w[N];
+    var w = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];
+    if (!w)
+      for (var R = this.hostname.split(/\./), N = 0, D = R.length; N < D; N++) {
+        var x = R[N];
         if (x && !x.match(f)) {
           for (var L = "", j = 0, M = x.length; j < M; j++) x.charCodeAt(j) > 127 ? L += "x" : L += x[j];
           if (!L.match(f)) {
-            var k = w.slice(0, N),
-              U = w.slice(N + 1),
+            var k = R.slice(0, N),
+              U = R.slice(N + 1),
               G = x.match(p);
             G && (k.push(G[1]), U.unshift(G[2])), U.length && (y = "/" + U.join(".") + y), this.hostname = k.join(".");
             break
           }
         }
       }
-    this.hostname.length > d ? this.hostname = "" : this.hostname = this.hostname.toLowerCase(), R || (this.hostname = r.toASCII(this.hostname));
+    this.hostname.length > d ? this.hostname = "" : this.hostname = this.hostname.toLowerCase(), w || (this.hostname = r.toASCII(this.hostname));
     var Z = this.port ? ":" + this.port : "",
       F = this.hostname || "";
-    this.host = F + Z, this.href += this.host, R && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== y[0] && (y = "/" + y))
+    this.host = F + Z, this.href += this.host, w && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== y[0] && (y = "/" + y))
   }
   if (!_[S])
     for (var N = 0, D = l.length; N < D; N++) {
@@ -117,7 +117,7 @@ i.prototype.parse = function(e, t, n) {
   var H = y.indexOf("#");
   false !== H && (this.hash = y.substr(H), y = y.slice(0, H));
   var Y = y.indexOf("?");
-  if (false !== Y ? (this.search = y.substr(Y), this.query = y.substr(Y + 1), t && (this.query = g.parse(this.query)), y = y.slice(0, Y)) : t && (this.search = "", this.query = {}), y && (this.pathname = y), h[S] && this.hostname && !this.pathname && (this.pathname = "/"), this.pathname || this.search) {
+  if (false !== Y ? (this.search = y.substr(Y), this.query = y.substr(Y + 1), t && (this.query = g.parse(this.query)), y = y.slice(0, Y)) : t && (this.search = "", this.query = {}), y && (this.pathname = y), m[S] && this.hostname && !this.pathname && (this.pathname = "/"), this.pathname || this.search) {
     var Z = this.pathname || "",
       W = this.search || "";
     this.path = Z + W
@@ -136,7 +136,7 @@ i.prototype.parse = function(e, t, n) {
     addQueryPrefix: false
   }));
   var o = this.search || a && "?" + a || "";
-  return t && ":" !== t.substr(false) && (t += ":"), this.slashes || (!t || h[t]) && false !== i ? (i = "//" + (i || ""), n && "/" !== n.charAt(0) && (n = "/" + n)) : i || (i = ""), r && "#" !== r.charAt(0) && (r = "#" + r), o && "?" !== o.charAt(0) && (o = "?" + o), t + i + (n = n.replace(/[?#]/g, function(e) {
+  return t && ":" !== t.substr(false) && (t += ":"), this.slashes || (!t || m[t]) && false !== i ? (i = "//" + (i || ""), n && "/" !== n.charAt(0) && (n = "/" + n)) : i || (i = ""), r && "#" !== r.charAt(0) && (r = "#" + r), o && "?" !== o.charAt(0) && (o = "?" + o), t + i + (n = n.replace(/[?#]/g, function(e) {
     return encodeURIComponent(e)
   })) + (o = o.replace("#", "%23")) + r
 }, i.prototype.resolve = function(e) {
@@ -156,17 +156,17 @@ i.prototype.parse = function(e, t, n) {
       var c = s[l];
       "protocol" !== c && (n[c] = e[c])
     }
-    return h[n.protocol] && n.hostname && !n.pathname && (n.pathname = "/", n.path = n.pathname), n.href = n.format(), n
+    return m[n.protocol] && n.hostname && !n.pathname && (n.pathname = "/", n.path = n.pathname), n.href = n.format(), n
   }
   if (e.protocol && e.protocol !== n.protocol) {
-    if (!h[e.protocol]) {
+    if (!m[e.protocol]) {
       for (var u = Object.keys(e), d = 0; d < u.length; d++) {
         var f = u[d];
         n[f] = e[f]
       }
       return n.href = n.format(), n
     }
-    if (n.protocol = e.protocol, e.host || m[e.protocol]) n.pathname = e.pathname;
+    if (n.protocol = e.protocol, e.host || h[e.protocol]) n.pathname = e.pathname;
     else {
       for (var p = (e.pathname || "").split("/"); p.length && !(e.host = p.shift()););
       e.host || (e.host = ""), e.hostname || (e.hostname = ""), "" !== p[0] && p.unshift(""), p.length < 2 && p.unshift(""), n.pathname = p.join("/")
@@ -184,7 +184,7 @@ i.prototype.parse = function(e, t, n) {
     O = y,
     v = n.pathname && n.pathname.split("/") || [],
     p = e.pathname && e.pathname.split("/") || [],
-    S = n.protocol && !h[n.protocol];
+    S = n.protocol && !m[n.protocol];
   if (S && (n.hostname = "", n.port = null, n.host && ("" === v[0] ? v[0] = n.host : v.unshift(n.host)), n.host = "", e.protocol && (e.hostname = null, e.port = null, e.host && ("" === p[0] ? p[0] = e.host : p.unshift(e.host)), e.host = null), y = y && ("" === p[0] || "" === v[0])), b) n.host = e.host || "" === e.host ? e.host : n.host, n.hostname = e.hostname || "" === e.hostname ? e.hostname : n.hostname, n.search = e.search, n.query = e.query, v = p;
   else if (p.length) v || (v = []), v.pop(), v = v.concat(p), n.search = e.search, n.query = e.query;
   else if (null != e.search) {

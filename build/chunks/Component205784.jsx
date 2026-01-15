@@ -1,5 +1,5 @@
 /** Chunk was on 52590 **/
-/** chunk id: 205784, original params: e,t,n (module,exports,require) **/
+/** chunk id: 205784, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -12,86 +12,82 @@ var Chunk442837 = require("./442837.js"),
   Chunk664915 = require("./664915.js"),
   Chunk771845 = require("./771845.js"),
   Chunk181945 = require("./181945.js"),
-  Chunk945983 = require("./945983.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e) {
-  var t;
   let {
-    folderId: p,
-    folderName: j,
-    folderColor: g,
-    unread: m,
-    onSelect: O
-  } = e, h = (0, l.e7)([s.ZP], () => s.ZP.getGuildFolderById(p), [p]), y = (0, u.Z)(null != (t = null == h ? true : h.guildIds) ? t : []), k = (0, l.e7)([d.Z], () => d.Z.getExpandedFolders().size > 0);
-  return (0, r.jsxs)(i.v2r, {
+    folderId: t,
+    folderName: p,
+    folderColor: f,
+    unread: y,
+    onSelect: j
+  } = e, O = (0, l.e7)([a.ZP], () => a.ZP.getGuildFolderById(t), [t]), g = (0, l.e7)([s.Z], () => s.Z.getExpandedFolders().size > 0);
+  return (0, n.jsxs)(o.v2r, {
     navId: "guild-context",
-    "aria-label": f.intl.string(f.t.HpQykc),
-    onClose: o.Zy,
-    onSelect: O,
-    children: [(0, r.jsx)(i.kSQ, {
-      children: (0, r.jsx)(i.sNh, {
+    "aria-label": u.intl.string(u.t.HpQykc),
+    onClose: i.Zy,
+    onSelect: j,
+    children: [(0, n.jsx)(o.kSQ, {
+      children: (0, n.jsx)(o.sNh, {
         id: "mark-folder-read",
-        label: f.intl.string(f.t.thzRJA),
+        label: u.intl.string(u.t.thzRJA),
         action: function() {
-          if (null == h) return;
+          if (null == O) return;
           let {
             guildIds: e
-          } = h;
-          (0, c.Z)(e, b.jXE.GUILD_LIST)
+          } = O;
+          (0, d.Z)(e, b.jXE.GUILD_LIST)
         },
-        disabled: !m
+        disabled: !y
       })
-    }), null != y ? (0, r.jsx)(i.kSQ, {
-      children: y
-    }) : null, (0, r.jsxs)(i.kSQ, {
-      children: [(0, r.jsx)(i.sNh, {
+    }), (0, n.jsxs)(o.kSQ, {
+      children: [(0, n.jsx)(o.sNh, {
         id: "folder-settings",
-        label: f.intl.string(f.t.Dx7im5),
-        action: () => (0, i.ZDy)(async () => {
+        label: u.intl.string(u.t.Dx7im5),
+        action: () => (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await n.e("77250").then(n.bind(n, 643087));
-          return t => {
-            var n, l;
-            return (0, r.jsx)(e, (n = function(e) {
+          } = await r.e("77250").then(r.bind(r, 643087));
+          return r => {
+            var l, o;
+            return (0, n.jsx)(e, (l = function(e) {
               for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
+                var r = null != arguments[t] ? arguments[t] : {},
+                  n = Object.keys(r);
+                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(r, e).enumerable
+                }))), n.forEach(function(t) {
+                  var n;
+                  n = r[t], t in e ? Object.defineProperty(e, t, {
+                    value: n,
                     enumerable: true,
                     configurable: true,
                     writable: true
-                  }) : e[t] = r
+                  }) : e[t] = n
                 })
               }
               return e
-            }({}, t), l = l = {
-              folderId: p,
-              folderName: j,
-              folderColor: g
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-              var n = Object.keys(e);
+            }({}, r), o = o = {
+              folderId: t,
+              folderName: p,
+              folderColor: f
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+              var r = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
+                var n = Object.getOwnPropertySymbols(e);
+                r.push.apply(r, n)
               }
-              return n
-            })(Object(l)).forEach(function(e) {
-              Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-            }), n))
+              return r
+            })(Object(o)).forEach(function(e) {
+              Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+            }), l))
           }
         })
-      }), k && (0, r.jsx)(i.sNh, {
+      }), g && (0, n.jsx)(o.sNh, {
         id: "folder-collapse",
-        label: f.intl.string(f.t.rCPsbo),
-        action: () => a.Z.collapseAllFolders()
+        label: u.intl.string(u.t.rCPsbo),
+        action: () => c.Z.collapseAllFolders()
       })]
     })]
   })

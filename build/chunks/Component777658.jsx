@@ -41,8 +41,8 @@ function _(e) {
     user: t,
     location: f = "ContextMenu",
     onFriendRequestSent: _,
-    onFriendRemove: m,
-    appContext: h
+    onFriendRemove: h,
+    appContext: m
   } = e, {
     id: g,
     username: E,
@@ -70,11 +70,11 @@ function _(e) {
         onConfirm: () => {
           s.Z.removeFriend(g, {
             location: f
-          }), T(false), null == m || m()
+          }), T(false), null == h || h()
         }
       }, t))
     }, {
-      contextKey: null != h ? (0, o.VnL)(h) : true
+      contextKey: null != m ? (0, o.VnL)(m) : true
     })
   }
   return v ? (0, r.jsx)(o.sNh, {

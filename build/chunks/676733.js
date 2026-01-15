@@ -168,14 +168,14 @@ function F({
     filter: O,
     ...v
   } = e, S = (0, L.useContext)(M);
-  t = (0, P.B)((0, L.useMemo)(() => (0, R.l)(t, null == S ? true : S.tableRef), [t, null == S ? true : S.tableRef]));
-  let I = (0, m.o)({
+  t = (0, P.B)((0, L.useMemo)(() => (0, w.l)(t, null == S ? true : S.tableRef), [t, null == S ? true : S.tableRef]));
+  let I = (0, h.o)({
       ...v,
       collection: r,
       children: true,
       UNSAFE_selectionState: n
     }),
-    T = (0, m.w)(I, O),
+    T = (0, h.w)(I, O),
     {
       isVirtualized: C,
       layoutDelegate: A,
@@ -187,7 +187,7 @@ function F({
     } = e,
     {
       gridProps: j
-    } = (0, h.x)({
+    } = (0, m.x)({
       ...v,
       layoutDelegate: A,
       isVirtualized: C
@@ -253,7 +253,7 @@ function F({
     width: "fit-content"
   }));
   let $ = B("table"),
-    ee = (0, w.z)(e, {
+    ee = (0, R.z)(e, {
       global: true
     });
   return L.createElement(o.zt, {
@@ -329,7 +329,7 @@ let Y = (0, Chunk406581.IW)(H, (e, t) => {
       }
     });
   return L.createElement(i, {
-    ...(0, y.d)((0, w.z)(e, {
+    ...(0, y.d)((0, R.z)(e, {
       global: true
     }), a, s),
     ...c,
@@ -397,10 +397,10 @@ let z = (0, Chunk406581.G5)(K, (e, t, n) => {
         focusProps: p
       } = (0, E.F)(),
       _ = (0, L.useContext)(G),
-      m = false;
-    _ && (m = _.resizingColumn === n.key);
+      h = false;
+    _ && (h = _.resizingColumn === n.key);
     let {
-      hoverProps: h,
+      hoverProps: m,
       isHovered: g
     } = (0, v.X)({
       isDisabled: !e.allowsSorting
@@ -415,7 +415,7 @@ let z = (0, Chunk406581.G5)(K, (e, t, n) => {
         isFocusVisible: f,
         allowsSorting: n.props.allowsSorting,
         sortDirection: (null == (r = l.sortDescriptor) ? true : r.column) === n.key ? l.sortDescriptor.direction : true,
-        isResizing: m,
+        isResizing: h,
         startResize: () => {
           if (_) _.startResize(n.key), l.setKeyboardNavigationDisabled(true);
           else throw Error("Wrap your <Table> in a <ResizableTableContainer> to enable column resizing")
@@ -430,18 +430,18 @@ let z = (0, Chunk406581.G5)(K, (e, t, n) => {
       width: _.getColumnWidth(n.key)
     });
     let S = B("th"),
-      I = (0, w.z)(e, {
+      I = (0, R.z)(e, {
         global: true
       });
     return delete I.id, L.createElement(S, {
-      ...(0, y.d)(I, u, p, h),
+      ...(0, y.d)(I, u, p, m),
       ...b,
       style: O,
       ref: s,
       "data-hovered": g || true,
       "data-focused": d || true,
       "data-focus-visible": f || true,
-      "data-resizing": m || true,
+      "data-resizing": h || true,
       "data-allows-sorting": n.props.allowsSorting || true,
       "data-sort-direction": (null == (i = l.sortDescriptor) ? true : i.column) === n.key ? l.sortDescriptor.direction : true
     }, L.createElement(o.zt, {
@@ -475,22 +475,22 @@ let X = (0, Chunk406581.IW)(Q, (e, t) => {
     _ = p && !!f && null != (n = f.isDropTarget({
       type: "root"
     })) && n,
-    m = 0 === c.size,
-    h = {
+    h = 0 === c.size,
+    m = {
       isDropTarget: _,
-      isEmpty: m
+      isEmpty: h
     },
     g = (0, o.aX)({
       ...e,
       id: true,
       children: true,
       defaultClassName: "react-aria-TableBody",
-      values: h
+      values: m
     }),
     E = B("tr"),
     b = B("td"),
     v = c.columnCount;
-  if (m && e.renderEmptyState && i) {
+  if (h && e.renderEmptyState && i) {
     let t = {},
       n = {},
       i = {};
@@ -504,17 +504,17 @@ let X = (0, Chunk406581.IW)(Q, (e, t) => {
       role: "rowheader",
       ...n,
       style: i
-    }, e.renderEmptyState(h)))
+    }, e.renderEmptyState(m)))
   }
   let {
     rowGroupProps: S
-  } = (0, O.LA)(), I = B("tbody"), T = (0, w.z)(e, {
+  } = (0, O.LA)(), I = B("tbody"), T = (0, R.z)(e, {
     global: true
   });
   return L.createElement(I, {
     ...(0, y.d)(T, g, S),
     ref: t,
-    "data-empty": m || true
+    "data-empty": h || true
   }, p && L.createElement(ea, null), L.createElement(u, {
     collection: c,
     parent: c.body,
@@ -537,10 +537,10 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
     {
       dragAndDropHooks: p,
       dragState: _,
-      dropState: m
+      dropState: h
     } = (0, L.useContext)(s.Ed),
     {
-      isVirtualized: h,
+      isVirtualized: m,
       CollectionBranch: g
     } = (0, L.useContext)(a.Qk),
     {
@@ -549,7 +549,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
     } = (0, C.U)({
       node: n,
       shouldSelectOnPressUp: !!_,
-      isVirtualized: h
+      isVirtualized: m
     }, f, d),
     {
       isFocused: S,
@@ -557,7 +557,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
       focusProps: N
     } = (0, E.F)(),
     {
-      isFocusVisible: R,
+      isFocusVisible: w,
       focusProps: D
     } = (0, E.F)({
       within: true
@@ -584,13 +584,13 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
     {
       visuallyHiddenProps: G
     } = (0, A.S)();
-  m && p && (u = p.useDropIndicator({
+  h && p && (u = p.useDropIndicator({
     target: {
       type: "item",
       key: n.key,
       dropPosition: "on"
     }
-  }, m, k));
+  }, h, k));
   let Z = (0, L.useRef)(null);
   (0, L.useEffect)(() => {
     _ && Z.current
@@ -613,13 +613,13 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
         selectionBehavior: f.selectionManager.selectionBehavior,
         isDragging: F,
         isDropTarget: null == u ? true : u.isDropTarget,
-        isFocusVisibleWithin: R,
+        isFocusVisibleWithin: w,
         id: n.key
       }
     }),
     W = B("tr"),
     K = B("td"),
-    z = (0, w.z)(e, {
+    z = (0, R.z)(e, {
       global: true
     });
   return delete z.id, delete z.onClick, L.createElement(L.Fragment, null, u && !u.isHidden && L.createElement(W, {
@@ -650,7 +650,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
     "data-dragging": F || true,
     "data-drop-target": (null == u ? true : u.isDropTarget) || true,
     "data-selection-mode": "none" === f.selectionManager.selectionMode ? true : f.selectionManager.selectionMode,
-    "data-focus-visible-within": R || true
+    "data-focus-visible-within": w || true
   }, L.createElement(o.zt, {
     values: [
       [i.cP, {
@@ -712,8 +712,8 @@ let et = (0, Chunk406581.G5)(ee, (e, t, n) => {
     isFocusVisible: p,
     focusProps: _
   } = (0, E.F)(), {
-    hoverProps: m,
-    isHovered: h
+    hoverProps: h,
+    isHovered: m
   } = (0, v.X)({}), g = (0, o.aX)({
     ...e,
     id: true,
@@ -722,14 +722,14 @@ let et = (0, Chunk406581.G5)(ee, (e, t, n) => {
       isFocused: f,
       isFocusVisible: p,
       isPressed: d,
-      isHovered: h,
+      isHovered: m,
       id: n.key
     }
-  }), b = B("td"), O = (0, w.z)(e, {
+  }), b = B("td"), O = (0, R.z)(e, {
     global: true
   });
   return delete O.id, L.createElement(b, {
-    ...(0, y.d)(O, g, u, _, m),
+    ...(0, y.d)(O, g, u, _, h),
     ref: r,
     "data-focused": f || true,
     "data-focus-visible": p || true,
@@ -774,7 +774,7 @@ function er(e, t) {
     }
   }), u = B("tr"), d = B("td");
   return L.createElement(u, {
-    ...(0, w.z)(e, {
+    ...(0, R.z)(e, {
       global: true
     }),
     ...c,
@@ -863,19 +863,19 @@ function ea() {
       defaultClassName: "react-aria-TableLoadingIndicator",
       values: null
     }),
-    m = B("tr"),
-    h = B("td"),
+    h = B("tr"),
+    m = B("td"),
     g = {},
     E = {},
     b = {};
   return i ? (E["aria-colspan"] = d, b = {
     display: "contents"
-  }) : E.colSpan = d, L.createElement(L.Fragment, null, L.createElement(m, {
+  }) : E.colSpan = d, L.createElement(L.Fragment, null, L.createElement(h, {
     style: {
       height: 0
     },
     inert: (0, x.P)(true)
-  }, L.createElement(h, {
+  }, L.createElement(m, {
     style: {
       padding: 0,
       border: 0
@@ -888,14 +888,14 @@ function ea() {
       height: 1,
       width: 1
     }
-  }))), s && _.children && L.createElement(m, {
-    ...(0, y.d)((0, w.z)(e, {
+  }))), s && _.children && L.createElement(h, {
+    ...(0, y.d)((0, R.z)(e, {
       global: true
     }), g),
     ..._,
     role: "row",
     ref: t
-  }, L.createElement(h, {
+  }, L.createElement(m, {
     role: "rowheader",
     ...E,
     style: b

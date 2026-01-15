@@ -12,8 +12,8 @@ var Chunk56135 = require("./56135.js"),
   f = "[object Date]",
   p = "[object Error]",
   _ = "[object Map]",
-  m = "[object Number]",
-  h = "[object RegExp]",
+  h = "[object Number]",
+  m = "[object RegExp]",
   g = "[object Set]",
   E = "[object String]",
   b = "[object Symbol]",
@@ -31,11 +31,11 @@ module.exports = function(e, t, n, r, v, I, T) {
       returntrue;
     case d:
     case f:
-    case m:
+    case h:
       return a(+e, +t);
     case p:
       return e.name == t.name && e.message == t.message;
-    case h:
+    case m:
     case E:
       return e == t + "";
     case _:

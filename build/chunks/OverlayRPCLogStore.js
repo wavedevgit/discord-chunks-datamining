@@ -2,7 +2,7 @@
 /** chunk id: 951806, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F0: () => m,
+  F0: () => h,
   bk: () => p
 }), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
@@ -24,8 +24,8 @@ let d = new Chunk579092.Yd("LegacyOverlayClient"),
   f = 1e3,
   p = 1e4,
   _ = 2e4,
-  m = "Heartbeat",
-  h = new Chunk188274.Z(f),
+  h = "Heartbeat",
+  m = new Chunk188274.Z(f),
   g = null,
   E = null;
 
@@ -37,12 +37,12 @@ function b(e) {
     context: i
   } = e;
   if (!c.Z.hasRenderDebugMode(l.GO.LegacyOverlayLogging) || __OVERLAY__) returnfalse;
-  if (h.push({
+  if (m.push({
       level: t,
       message: n,
       timestamp: r,
       context: i
-    }), n === m && (g = Date.now()), n !== m) switch (t) {
+    }), n === h && (g = Date.now()), n !== h) switch (t) {
     case "error":
     case "crash":
       d.error(n);
@@ -91,13 +91,13 @@ class I extends(r = Chunk442837.ZP.Store) {
     this.waitFor(c.Z), c.Z.hasRenderDebugMode(l.GO.LegacyOverlayLogging) && y()
   }
   getAllLogs() {
-    return h
+    return m
   }
   getLogsByLevel(e) {
-    return h.filter(t => t.level === e)
+    return m.filter(t => t.level === e)
   }
   getErrorLogs() {
-    return h.filter(e => "error" === e.level || "crash" === e.level)
+    return m.filter(e => "error" === e.level || "crash" === e.level)
   }
 }
 u(I, "displayName", "OverlayRPCLogStore"), new I(Chunk570140.Z, {

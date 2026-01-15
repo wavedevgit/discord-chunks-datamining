@@ -132,19 +132,19 @@ let eM = e => {
     let {
       error: n,
       allowClick: i = false
-    } = e, a = null == (t = (0, G.hp)(n)) ? true : t.errorCode, o = eR.intl.formatToPlainString(eR.t.ejOT95, {
+    } = e, a = null == (t = (0, G.hp)(n)) ? true : t.errorCode, o = ew.intl.formatToPlainString(ew.t.ejOT95, {
       errorCode: a
     }), s = (0, r.jsx)(f.Text, {
       variant: "text-sm/bold",
       color: "currentColor",
       tag: "span",
-      className: ew.errorCodeNoticeText,
+      className: eR.errorCodeNoticeText,
       selectable: true,
       children: o
     });
     return i ? (0, r.jsx)(f.P3F, {
       tag: "span",
-      className: ew.errorCodeNoticeClickable,
+      className: eR.errorCodeNoticeClickable,
       onClick: () => i && open(ev.Z.getArticleURL(eT.BhN.AV_ERROR_CODES)),
       children: s
     }) : s
@@ -160,12 +160,12 @@ let eM = e => {
         onClick: () => {
           eY()
         }
-      }), eR.intl.string(eR.t.o3zuYz), (0, r.jsx)(eM, {
+      }), ew.intl.string(ew.t.o3zuYz), (0, r.jsx)(eM, {
         error: G.u.NO_INPUT_DEVICES
       }), (0, r.jsx)(f.u3T, {
         href: ev.Z.getArticleURL(eT.BhN.NO_INPUT_DETECTED),
         noticeType: t,
-        children: eR.intl.string(eR.t.RYKKox)
+        children: ew.intl.string(ew.t.RYKKox)
       })]
     })
   },
@@ -186,12 +186,12 @@ let eZ = e => {
         onClick: () => {
           eY(), (0, ef.b)()
         }
-      }), eR.intl.string(eR.t.ppW3ri), (0, r.jsx)(eM, {
+      }), ew.intl.string(ew.t.ppW3ri), (0, r.jsx)(eM, {
         error: G.u.NO_AUDIO_INPUT_DETECTED
       }), (0, r.jsx)(f.u3T, {
         href: eG(t),
         noticeType: n,
-        children: eR.intl.string(eR.t.pxYBbM)
+        children: ew.intl.string(ew.t.pxYBbM)
       })]
     })
   },
@@ -207,12 +207,12 @@ let eZ = e => {
         onClick: () => {
           eY(), (0, ef.b)()
         }
-      }), eR.intl.string(eR.t.j4gGA4), (0, r.jsx)(eM, {
+      }), ew.intl.string(ew.t.j4gGA4), (0, r.jsx)(eM, {
         error: G.u.NO_AUDIO_INPUT_DETECTED
       }), (0, r.jsx)(f.u3T, {
         href: eG(t),
         noticeType: n,
-        children: eR.intl.string(eR.t.pxYBbM)
+        children: ew.intl.string(ew.t.pxYBbM)
       })]
     })
   },
@@ -227,12 +227,12 @@ let eZ = e => {
         onClick: () => {
           eY(), (0, ef.b)()
         }
-      }), eR.intl.string(eR.t.nCO9bI), (0, r.jsx)(eM, {
+      }), ew.intl.string(ew.t.nCO9bI), (0, r.jsx)(eM, {
         error: G.u.NO_AUDIO_INPUT_DETECTED
       }), (0, r.jsx)(f.u3T, {
         href: ev.Z.getArticleURL(eT.BhN.NO_INPUT_DETECTED),
         noticeType: t,
-        children: eR.intl.string(eR.t.RYKKox)
+        children: ew.intl.string(ew.t.RYKKox)
       })]
     })
   },
@@ -247,7 +247,7 @@ let eZ = e => {
         onClick: () => {
           eY(), (0, ef.b)()
         }
-      }), eR.intl.string(eR.t.dNAJ18), (0, r.jsx)(eM, {
+      }), ew.intl.string(ew.t.dNAJ18), (0, r.jsx)(eM, {
         allowClick: true,
         error: G.u.NO_AUDIO_INPUT_DETECTED
       }), (0, r.jsx)(f.EyT, {
@@ -256,7 +256,7 @@ let eZ = e => {
             section: eT.oAB.VOICE
           })
         },
-        children: eR.intl.string(eR.t.I6YlB4)
+        children: ew.intl.string(ew.t.I6YlB4)
       })]
     })
   };
@@ -276,11 +276,11 @@ function eY(e) {
 let eW = Chunk473749.memo(function() {
   var e, t;
   let a = (0, u.e7)([eg.default], () => eg.default.getCurrentUser()),
-    l = (0, u.e7)([eh.Z], () => eh.Z.getGuildId()),
+    l = (0, u.e7)([em.Z], () => em.Z.getGuildId()),
     c = (0, u.e7)([ey.ZP], () => ey.ZP.getNotice()),
     {
       analyticsLocations: g
-    } = (0, R.ZP)(),
+    } = (0, w.ZP)(),
     A = (0, W.J)(l),
     {
       windowsMuteAndZeroVolumeDetectionEnabled: P
@@ -359,7 +359,7 @@ let eW = Chunk473749.memo(function() {
         children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(eQ),
           noticeType: c.type
-        }), eR.intl.format(eR.t["08KQ1P"], {
+        }), ew.intl.format(ew.t["08KQ1P"], {
           helpCenterLink: ev.Z.getArticleURL(eT.BhN.WIN32_DEPRECATE)
         })]
       });
@@ -372,7 +372,7 @@ let eW = Chunk473749.memo(function() {
         children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(eX),
           noticeType: c.type
-        }), eR.intl.format(eR.t["8Je+dX"], {
+        }), ew.intl.format(ew.t["8Je+dX"], {
           helpCenterLink: ev.Z.getArticleURL(eT.BhN.WIN7_8_DEPRECATE)
         })]
       });
@@ -385,7 +385,7 @@ let eW = Chunk473749.memo(function() {
         children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(eJ),
           noticeType: c.type
-        }), eR.intl.format(eR.t.q8VPLo, {
+        }), ew.intl.format(ew.t.q8VPLo, {
           helpCenterLink: ev.Z.getArticleURL(eT.BhN.MACOS_19_DEPRECATE)
         })]
       });
@@ -421,13 +421,13 @@ let eW = Chunk473749.memo(function() {
             E.Z.clearRemoteDisconnectVoiceChannelId(), eY()
           },
           noticeType: c.type
-        }), eR.intl.string(eR.t.bOQ3jV), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t.bOQ3jV), (0, r.jsx)(f.NoS, {
           onClick: () => {
-            let e = em.Z.getRemoteDisconnectVoiceChannelId();
+            let e = eh.Z.getRemoteDisconnectVoiceChannelId();
             null != e && null != ep.Z.getChannel(e) && b.default.selectVoiceChannel(e)
           },
           noticeType: c.type,
-          children: eR.intl.string(eR.t.vD60Pv)
+          children: ew.intl.string(ew.t.vD60Pv)
         })]
       });
     case eT.kVF.VOICE_CONNECTED_LAST_SESSION:
@@ -438,13 +438,13 @@ let eW = Chunk473749.memo(function() {
             E.Z.clearLastSessionVoiceChannelId(), eY()
           },
           noticeType: c.type
-        }), eR.intl.string(eR.t.jY2lUA), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t.jY2lUA), (0, r.jsx)(f.NoS, {
           onClick: () => {
-            let e = em.Z.getLastSessionVoiceChannelId();
+            let e = eh.Z.getLastSessionVoiceChannelId();
             null != e && null != ep.Z.getChannel(e) && b.default.selectVoiceChannel(e)
           },
           noticeType: c.type,
-          children: eR.intl.string(eR.t.vD60Pv)
+          children: ew.intl.string(ew.t.vD60Pv)
         })]
       });
     case eT.kVF.SPOTIFY_AUTO_PAUSED:
@@ -456,46 +456,46 @@ let eW = Chunk473749.memo(function() {
           noticeType: c.type
         }), (0, r.jsx)("img", {
           alt: "",
-          className: ew.platformIcon,
+          className: eR.platformIcon,
           src: e$.icon.whiteSVG
-        }), eR.intl.string(eR.t.D8Cp76), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t.D8Cp76), (0, r.jsx)(f.NoS, {
           onClick: () => (0, ed.openUserSettings)(eu.n.VOICE_AND_VIDEO_PANEL, {
             section: eT.oAB.VOICE
           }),
           noticeType: c.type,
-          children: eR.intl.string(eR.t.NiTd0e)
+          children: ew.intl.string(ew.t.NiTd0e)
         }), (0, r.jsx)(f.eee, {
-          className: ew.textLinkSmall,
+          className: eR.textLinkSmall,
           href: ev.Z.getArticleURL(eT.BhN.SPOTIFY_AUTO_PAUSED),
           target: "_blank",
-          children: eR.intl.string(eR.t.CiqAIU)
+          children: ew.intl.string(ew.t.CiqAIU)
         })]
       });
     case eT.kVF.UNCLAIMED_ACCOUNT:
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.DEFAULT,
-        children: [eR.intl.string(eR.t["f+Zaol"]), (0, r.jsx)(f.NoS, {
+        children: [ew.intl.string(ew.t["f+Zaol"]), (0, r.jsx)(f.NoS, {
           noticeType: c.type,
           onClick: () => A && null != l ? (0, Y.hk)(l) : D.j(),
-          children: eR.intl.string(eR.t.fiNVin)
+          children: ew.intl.string(ew.t.fiNVin)
         })]
       });
     case eT.kVF.UNVERIFIED_ACCOUNT:
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.DEFAULT,
-        children: [eR.intl.string(eR.t["3sWbf3"]), (0, r.jsx)(f.NoS, {
+        children: [ew.intl.string(ew.t["3sWbf3"]), (0, r.jsx)(f.NoS, {
           noticeType: c.type,
           onClick: () => {
-            m.Z.verifyResend(), p.Z.show({
-              title: eR.intl.string(eR.t.LykQYk),
-              body: eR.intl.format(eR.t.azKEPy, {
+            h.Z.verifyResend(), p.Z.show({
+              title: ew.intl.string(ew.t.LykQYk),
+              body: ew.intl.format(ew.t.azKEPy, {
                 email: null == a ? true : a.email
               }),
-              cancelText: eR.intl.string(eR.t.Vm8akB),
+              cancelText: ew.intl.string(ew.t.Vm8akB),
               onCancel: D.j
             })
           },
-          children: eR.intl.string(eR.t.WnX4J2)
+          children: ew.intl.string(ew.t.WnX4J2)
         })]
       });
     case eT.kVF.SCHEDULED_MAINTENANCE:
@@ -505,10 +505,10 @@ let eW = Chunk473749.memo(function() {
         children: [(0, r.jsx)(f.RyX, {
           onClick: () => y.Z.ackScheduledMaintenance(),
           noticeType: c.type
-        }), eR.intl.format(eR.t["yb96S+"], c.metadata), (0, r.jsx)(f.u3T, {
+        }), ew.intl.format(ew.t["yb96S+"], c.metadata), (0, r.jsx)(f.u3T, {
           href: "".concat(eT.yXt.STATUS, "/incidents/").concat(c.metadata.id),
           noticeType: c.type,
-          children: eR.intl.string(eR.t.hvVgAZ)
+          children: ew.intl.string(ew.t.hvVgAZ)
         })]
       });
     case eT.kVF.NO_INPUT_DETECTED:
@@ -541,7 +541,7 @@ let eW = Chunk473749.memo(function() {
       } = c.metadata;
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.DANGER,
-        children: [eR.intl.format(eR.t.qoDex7, {
+        children: [ew.intl.format(ew.t.qoDex7, {
           vendorName: e0.name,
           modelName: e1.name
         }), (0, r.jsx)(f.RyX, {
@@ -554,7 +554,7 @@ let eW = Chunk473749.memo(function() {
           target: "_blank",
           rel: "noreferrer noopener",
           noticeType: c.type,
-          children: eR.intl.string(eR.t["Yl/Riu"])
+          children: ew.intl.string(ew.t["Yl/Riu"])
         })]
       });
     case eT.kVF.STREAMER_MODE:
@@ -563,17 +563,17 @@ let eW = Chunk473749.memo(function() {
         children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
           noticeType: eT.kVF.STREAMER_MODE
-        }), eR.intl.string(eR.t.iEgBXp), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t.iEgBXp), (0, r.jsx)(f.NoS, {
           onClick: () => v.Z.setEnabled(false),
           noticeType: eT.kVF.STREAMER_MODE,
-          children: eR.intl.string(eR.t.R9GHya)
+          children: ew.intl.string(ew.t.R9GHya)
         })]
       });
     case eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
       if (null == c.metadata) return null;
       let {
         skuId: e3, applicationId: e2
-      } = c.metadata, e4 = eE.Z.get(e3), e5 = w.Z.getApplication(e2);
+      } = c.metadata, e4 = eE.Z.get(e3), e5 = R.Z.getApplication(e2);
       if (null == e4 || null == e5) return null;
       let e8 = {
         page: eT.ZY5.IN_APP
@@ -581,13 +581,13 @@ let eW = Chunk473749.memo(function() {
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.PREMIUM_TIER_1,
         children: [(0, r.jsx)(f.RyX, {
-          onClick: () => h.Z(e4.id),
+          onClick: () => m.Z(e4.id),
           noticeType: eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK
         }), (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: ew.premiumIcon
-        }), eR.intl.format(eR.t["g3MU/+"], {
+          className: eR.premiumIcon
+        }), ew.intl.format(ew.t["g3MU/+"], {
           applicationName: e5.name,
           skuName: e4.name
         }), (0, r.jsx)(f.NoS, {
@@ -606,8 +606,8 @@ let eW = Chunk473749.memo(function() {
             analyticsLocations: g,
             analyticsLocationObject: e8,
             context: __OVERLAY__ ? eT.IlC.OVERLAY : eT.IlC.APP
-          }).then(() => h.Z(e4.id)),
-          children: eR.intl.string(eR.t.KEwPYx)
+          }).then(() => m.Z(e4.id)),
+          children: ew.intl.string(ew.t.KEwPYx)
         })]
       });
     case eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
@@ -615,7 +615,7 @@ let eW = Chunk473749.memo(function() {
       let {
         skuId: e,
         applicationId: t
-      } = c.metadata, n = eE.Z.get(e), i = w.Z.getApplication(t);
+      } = c.metadata, n = eE.Z.get(e), i = R.Z.getApplication(t);
       if (null == n || null == i) return null;
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.PREMIUM_TIER_1,
@@ -625,8 +625,8 @@ let eW = Chunk473749.memo(function() {
         }), (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: ew.premiumIcon
-        }), eR.intl.format(eR.t.LquIKC, {
+          className: eR.premiumIcon
+        }), ew.intl.format(ew.t.LquIKC, {
           applicationName: i.name,
           skuName: n.name
         }), (0, r.jsx)(f.EyT, {
@@ -638,7 +638,7 @@ let eW = Chunk473749.memo(function() {
                 scrollRestoration: false
               }
             },
-            children: eR.intl.string(eR.t.hvVgAZ)
+            children: ew.intl.string(ew.t.hvVgAZ)
           })
         })]
       })
@@ -673,11 +673,11 @@ let eW = Chunk473749.memo(function() {
     case eT.kVF.CORRUPT_INSTALLATION:
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.DANGER,
-        children: [eR.intl.string(eR.t["ugxmk/"]), (0, r.jsx)(f.u3T, {
+        children: [ew.intl.string(ew.t["ugxmk/"]), (0, r.jsx)(f.u3T, {
           href: ev.Z.getArticleURL(eT.BhN.CORRUPT_INSTALLATION),
           target: "_blank",
           noticeType: c.type,
-          children: eR.intl.string(eR.t["6ik4Xk"])
+          children: ew.intl.string(ew.t["6ik4Xk"])
         })]
       });
     case eT.kVF.VIDEO_UNSUPPORTED_BROWSER:
@@ -686,7 +686,7 @@ let eW = Chunk473749.memo(function() {
         children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
           noticeType: eT.kVF.VIDEO_UNSUPPORTED_BROWSER
-        }), eR.intl.string(eR.t.wVjKGi), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t.wVjKGi), (0, r.jsx)(f.NoS, {
           noticeType: eT.kVF.VIDEO_UNSUPPORTED_BROWSER,
           onClick: () => {
             (0, f.ZDy)(async () => {
@@ -698,7 +698,7 @@ let eW = Chunk473749.memo(function() {
               }, t))
             })
           },
-          children: eR.intl.string(eR.t["1WjMbC"])
+          children: ew.intl.string(ew.t["1WjMbC"])
         })]
       });
     case eT.kVF.DISPATCH_ERROR:
@@ -719,7 +719,7 @@ let eW = Chunk473749.memo(function() {
             } = await n.e("20212").then(n.bind(n, 915194));
             return t => (0, r.jsx)(e, ex({}, t))
           }),
-          children: eR.intl.string(eR.t.hvVgAZ)
+          children: ew.intl.string(ew.t.hvVgAZ)
         })]
       });
     case eT.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS:
@@ -734,16 +734,16 @@ let eW = Chunk473749.memo(function() {
           noticeType: eT.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS
         }), (0, r.jsxs)(x.Z, {
           justify: x.Z.Justify.CENTER,
-          children: [null != te ? eR.intl.formatToPlainString(eR.t["pHj+z4"], {
+          children: [null != te ? ew.intl.formatToPlainString(ew.t["pHj+z4"], {
             name: "".concat(te),
             progress: e7,
             total: e9
-          }) : eR.intl.formatToPlainString(eR.t["lHZn+A"], {
+          }) : ew.intl.formatToPlainString(ew.t["lHZn+A"], {
             progress: e7,
             total: e9
           }), (0, r.jsx)(f.$jN, {
             type: f.$jN.Type.PULSING_ELLIPSIS,
-            className: ew.ellipsis
+            className: eR.ellipsis
           })]
         })]
       });
@@ -755,7 +755,7 @@ let eW = Chunk473749.memo(function() {
           justify: x.Z.Justify.CENTER,
           align: x.Z.Align.CENTER,
           children: [(0, r.jsx)("div", {
-            children: eR.intl.format(eR.t["1qxVe4"], {
+            children: ew.intl.format(ew.t["1qxVe4"], {
               applicationName: c.metadata.applicationName
             })
           }), (0, r.jsx)(f.RyX, {
@@ -770,12 +770,12 @@ let eW = Chunk473749.memo(function() {
           justify: x.Z.Justify.CENTER,
           align: x.Z.Align.CENTER,
           children: [(0, r.jsx)("div", {
-            children: eR.intl.format(eR.t.Fv5HrE, {
+            children: ew.intl.format(ew.t.Fv5HrE, {
               applicationName: c.metadata.applicationName
             })
           }), (0, r.jsx)(C.Z, {
             dropdownSize: C.E.DropdownSizes.SMALL,
-            className: ew.testModeSKUSelector,
+            className: eR.testModeSKUSelector,
             color: C.E.Colors.WHITE,
             look: C.E.Looks.OUTLINED,
             size: C.E.Sizes.MIN,
@@ -787,7 +787,7 @@ let eW = Chunk473749.memo(function() {
               }
             }),
             applicationId: c.metadata.applicationId,
-            children: eR.intl.string(eR.t.Q5ZgpK)
+            children: ew.intl.string(ew.t.Q5ZgpK)
           }), (0, r.jsx)(f.RyX, {
             onClick: I.mc,
             noticeType: eT.kVF.APPLICATION_TEST_MODE
@@ -808,12 +808,12 @@ let eW = Chunk473749.memo(function() {
         }), (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: ew.premiumIcon
-        }), ez === eA.PremiumTypes.TIER_1 ? eR.intl.formatToPlainString(eR.t.fXv4wm, {
+          className: eR.premiumIcon
+        }), ez === eA.PremiumTypes.TIER_1 ? ew.intl.formatToPlainString(ew.t.fXv4wm, {
           daysLeft: c.metadata.daysLeft
-        }) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.formatToPlainString(eR.t.ZOHZMr, {
+        }) : ez === eA.PremiumTypes.TIER_0 ? ew.intl.formatToPlainString(ew.t.ZOHZMr, {
           daysLeft: c.metadata.daysLeft
-        }) : eR.intl.formatToPlainString(eR.t.outyHh, {
+        }) : ew.intl.formatToPlainString(ew.t.outyHh, {
           daysLeft: c.metadata.daysLeft
         }), (0, r.jsx)(f.NoS, {
           noticeType: eT.kVF.PREMIUM_UNCANCEL,
@@ -831,7 +831,7 @@ let eW = Chunk473749.memo(function() {
               }))
             })
           },
-          children: ez === eA.PremiumTypes.TIER_1 ? eR.intl.string(eR.t.BkbUPM) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.string(eR.t.Px978X) : eR.intl.string(eR.t.LW5tCE)
+          children: ez === eA.PremiumTypes.TIER_1 ? ew.intl.string(ew.t.BkbUPM) : ez === eA.PremiumTypes.TIER_0 ? ew.intl.string(ew.t.Px978X) : ew.intl.string(ew.t.LW5tCE)
         })]
       });
     case eT.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
@@ -845,7 +845,7 @@ let eW = Chunk473749.memo(function() {
           onClick: () => {
             eY(tn)
           }
-        }), eR.intl.format(eR.t.zxU0Kp, {
+        }), ew.intl.format(ew.t.zxU0Kp, {
           daysPastDue: tt
         }), (0, r.jsx)(f.NoS, {
           noticeType: eT.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
@@ -854,7 +854,7 @@ let eW = Chunk473749.memo(function() {
               section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: eR.intl.string(eR.t.q8rxeS)
+          children: ew.intl.string(ew.t.q8rxeS)
         })]
       });
     case eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT:
@@ -866,7 +866,7 @@ let eW = Chunk473749.memo(function() {
             var e, t;
             eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), eR.intl.string(eR.t.LlZaoX), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t.LlZaoX), (0, r.jsx)(f.NoS, {
           noticeType: eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
           onClick: () => {
             var e, t;
@@ -874,7 +874,7 @@ let eW = Chunk473749.memo(function() {
               section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: eR.intl.string(eR.t["Zpd+Yq"])
+          children: ew.intl.string(ew.t["Zpd+Yq"])
         })]
       });
     case eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT:
@@ -886,7 +886,7 @@ let eW = Chunk473749.memo(function() {
             var e, t;
             eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), eR.intl.string(eR.t["30YfCr"]), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t["30YfCr"]), (0, r.jsx)(f.NoS, {
           noticeType: eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
@@ -894,7 +894,7 @@ let eW = Chunk473749.memo(function() {
               section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: eR.intl.string(eR.t.U5pKWA)
+          children: ew.intl.string(ew.t.U5pKWA)
         })]
       });
     case eT.kVF.PREMIUM_MISSING_PAYMENT:
@@ -906,11 +906,11 @@ let eW = Chunk473749.memo(function() {
             var e, t;
             eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), ez === eA.PremiumTypes.TIER_1 ? eR.intl.formatToPlainString(eR.t.b6QUvf, {
+        }), ez === eA.PremiumTypes.TIER_1 ? ew.intl.formatToPlainString(ew.t.b6QUvf, {
           daysLeft: c.metadata.daysLeft
-        }) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.formatToPlainString(eR.t["tURZ/M"], {
+        }) : ez === eA.PremiumTypes.TIER_0 ? ew.intl.formatToPlainString(ew.t["tURZ/M"], {
           daysLeft: c.metadata.daysLeft
-        }) : eR.intl.formatToPlainString(eR.t.AyC74I, {
+        }) : ew.intl.formatToPlainString(ew.t.AyC74I, {
           daysLeft: c.metadata.daysLeft
         }), (0, r.jsx)(f.NoS, {
           noticeType: eT.kVF.PREMIUM_MISSING_PAYMENT,
@@ -920,12 +920,12 @@ let eW = Chunk473749.memo(function() {
               section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: ez === eA.PremiumTypes.TIER_1 ? eR.intl.string(eR.t.lboF5O) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.string(eR.t["4UPwOq"]) : eR.intl.string(eR.t["P/VvGb"])
+          children: ez === eA.PremiumTypes.TIER_1 ? ew.intl.string(ew.t.lboF5O) : ez === eA.PremiumTypes.TIER_0 ? ew.intl.string(ew.t["4UPwOq"]) : ew.intl.string(ew.t["P/VvGb"])
         })]
       });
     case eT.kVF.BACK_TO_PREVIOUS_SCREEN:
       return (0, r.jsx)(z.h, {
-        buttonText: null != (t = c.buttonText) ? t : eR.intl.string(eR.t["/g10LC"]),
+        buttonText: null != (t = c.buttonText) ? t : ew.intl.string(ew.t["/g10LC"]),
         onGoBack: c.callback,
         onDismiss: () => eY(),
         showCloseButton: true
@@ -938,25 +938,25 @@ let eW = Chunk473749.memo(function() {
     case eT.kVF.QUARANTINED:
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.DANGER,
-        children: [eR.intl.string(eR.t.DVFJYf), (0, r.jsx)(f.u3T, {
+        children: [ew.intl.string(ew.t.DVFJYf), (0, r.jsx)(f.u3T, {
           href: eN.Z,
           target: "_blank",
           noticeType: c.type,
-          children: eR.intl.string(eR.t.kvHdFN)
+          children: ew.intl.string(ew.t.kvHdFN)
         }), (0, r.jsx)(f.eee, {
           href: ev.Z.getArticleURL(eT.BhN.QUARANTINE),
           target: "_blank",
-          className: ew.quarantineLearnMoreLink,
-          children: eR.intl.string(eR.t.hvVgAZ)
+          className: eR.quarantineLearnMoreLink,
+          children: ew.intl.string(ew.t.hvVgAZ)
         })]
       });
     case eT.kVF.BLOCKED_BY_PROXY:
       return (0, r.jsxs)(f.qXd, {
         color: f.DM8.WARNING,
-        children: [eR.intl.string(eR.t.Ugijzi), (0, r.jsx)(f.u3T, {
+        children: [ew.intl.string(ew.t.Ugijzi), (0, r.jsx)(f.u3T, {
           href: "".concat(eT.yXt.STATUS),
           noticeType: c.type,
-          children: eR.intl.string(eR.t.hvVgAZ)
+          children: ew.intl.string(ew.t.hvVgAZ)
         }), (0, r.jsx)(f.RyX, {
           onClick: () => eY(),
           noticeType: eT.kVF.BLOCKED_BY_PROXY
@@ -973,16 +973,16 @@ let eW = Chunk473749.memo(function() {
           onClick: () => {
             null != l && (0, V.T9)(l), eY(tr)
           }
-        }), eR.intl.string(eR.t.B8ruyY), (0, r.jsx)(f.EyT, {
+        }), ew.intl.string(ew.t.B8ruyY), (0, r.jsx)(f.EyT, {
           onClick: () => {
             null != l && (0, V.UE)(l, ti, () => {
               eY(tr), (0, V.T9)(l)
             })
           },
-          children: eR.intl.string(eR.t.oX14El)
+          children: ew.intl.string(ew.t.oX14El)
         }), null != l ? (0, r.jsx)(f.EyT, {
           onClick: () => q.Z.open(l, eT.pNK.GUILD_AUTOMOD, true, eT.KsC.AUTOMOD_MENTION_SPAM),
-          children: eR.intl.string(eR.t["1R7QIx"])
+          children: ew.intl.string(ew.t["1R7QIx"])
         }) : null]
       });
     case eT.kVF.SAFETY_USER_SENTIMENT_NAGBAR:
@@ -993,7 +993,7 @@ let eW = Chunk473749.memo(function() {
           onClick: () => {
             ea.hZ(), eY()
           }
-        }), eR.intl.string(eR.t.I1nKfO), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t.I1nKfO), (0, r.jsx)(f.NoS, {
           noticeType: eT.kVF.SAFETY_USER_SENTIMENT_NAGBAR,
           onClick: () => {
             (0, f.ZDy)(async () => {
@@ -1003,7 +1003,7 @@ let eW = Chunk473749.memo(function() {
               return t => (0, r.jsx)(e, ex({}, t))
             }), ea.hZ(), eY()
           },
-          children: eR.intl.string(eR.t.l5xYnH)
+          children: ew.intl.string(ew.t.l5xYnH)
         })]
       });
     case eT.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
@@ -1031,7 +1031,7 @@ let eW = Chunk473749.memo(function() {
             var e;
             (null == (e = c.metadata) ? true : e.streamKey) != null && (0, ei.nE)(c.metadata.streamKey)
           }
-        }), eR.intl.string(eR.t.rOx44m)]
+        }), ew.intl.string(ew.t.rOx44m)]
       });
     case eT.kVF.BLOCK_USER_FEEDBACK_NAGBAR:
       return (0, r.jsxs)(f.qXd, {
@@ -1042,13 +1042,13 @@ let eW = Chunk473749.memo(function() {
             eY(null == (e = c.metadata) ? true : e.dismissUntil)
           },
           noticeType: eT.kVF.BLOCK_USER_FEEDBACK_NAGBAR
-        }), eR.intl.string(eR.t["0klLS7"]), (0, r.jsx)(f.NoS, {
+        }), ew.intl.string(ew.t["0klLS7"]), (0, r.jsx)(f.NoS, {
           onClick: () => {
             var e;
             (0, es.Z)(), eY(null == (e = c.metadata) ? true : e.dismissUntil)
           },
           noticeType: eT.kVF.BLOCK_USER_FEEDBACK_NAGBAR,
-          children: eR.intl.string(eR.t.e4y2VM)
+          children: ew.intl.string(ew.t.e4y2VM)
         })]
       });
     case eT.kVF.IGNORE_USER_FEEDBACK_NAGBAR:
@@ -1063,8 +1063,8 @@ let eW = Chunk473749.memo(function() {
 function eK() {
   let {
     analyticsLocations: e
-  } = (0, R.ZP)(P.Z.NOTICE);
-  return (0, r.jsx)(R.Gt, {
+  } = (0, w.ZP)(P.Z.NOTICE);
+  return (0, r.jsx)(w.Gt, {
     value: e,
     children: (0, r.jsx)(eW, {})
   })

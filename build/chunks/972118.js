@@ -20,13 +20,13 @@ function _(e, t) {
   (0, c.pR)(t ? null : e)
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = (0, p.t)(e),
     r = (0, f.mA)(e, {});
   return (_(e, t), t) ? ((0, a.Z1)(e), false) : ((0, f.Bn)(e, n, r), true)
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = (0, f.mA)(e, {});
   return (_(e, t), t) ? ((0, a.Z1)(e), false) : ((0, f.po)(e, l.default.fromTimestamp(Date.now() + f.wx), n), true)
 }
@@ -64,8 +64,8 @@ function v(e) {
       guildId: t
     }),
     a = (0, r.useCallback)(() => {
-      if ((0, u.lg)(e)) return m(e, n);
-      if ((0, u.I0)(e)) return h(e, n);
+      if ((0, u.lg)(e)) return h(e, n);
+      if ((0, u.I0)(e)) return m(e, n);
       if ((0, u.OQ)(e)) return g(e, n);
       if ((0, u.Vc)(e)) return b(e, t, n);
       if ((0, u.ms)(e)) return y(e, t, n);

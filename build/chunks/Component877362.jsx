@@ -56,16 +56,16 @@ function T(e) {
       className: I.textContainer,
       children: [(0, r.jsx)(l.xvT, {
         variant: "text-md/semibold",
-        children: w.intl.string(y ? C.default.KSWK1U : C.default.XXXX5l)
+        children: w.intl.string(y ? _.default.KSWK1U : _.default.XXXX5l)
       }), (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
-        children: w.intl.format(y ? C.default["7fWTg4"] : C.default["7PXeeQ"], {
+        children: w.intl.format(y ? _.default["7fWTg4"] : _.default["7PXeeQ"], {
           onClick: () => {
             (0, f.f)({
               guildId: i,
               location: {
-                section: _.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
-                object: _.qAy.LEARN_MORE
+                section: C.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
+                object: C.qAy.LEARN_MORE
               }
             })
           }
@@ -122,8 +122,8 @@ function T(e) {
       guild: c,
       className: I.content,
       analyticsLocation: {
-        page: _.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: _.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: C.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: C.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: s.Tt.BRAND,
       size: s.Ph.MEDIUM,

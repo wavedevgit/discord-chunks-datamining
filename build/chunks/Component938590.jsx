@@ -27,7 +27,7 @@ let c = e => {
       size: "sm",
       "aria-label": "Copy Link",
       variant: "icon-only",
-      icon: i.TIy,
+      icon: i.CopyIcon,
       onClick: () => (0, s.JG)(n)
     })]
   })

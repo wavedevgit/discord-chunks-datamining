@@ -6,7 +6,7 @@ require.d(exports, {
   Fc: () => S,
   Ft: () => A,
   W5: () => C,
-  XM: () => h,
+  XM: () => m,
   ZP: () => P,
   _T: () => E,
   oY: () => g,
@@ -51,19 +51,19 @@ let u = 864e5,
     forcePomelo: false
   };
 
-function m(e) {
+function h(e) {
   return !!(null != e && e.length > 0)
 }
 
-function h(e) {
-  return m(e.global_name) ? e.global_name : m(e.globalName) ? e.globalName : m(e.username) ? e.username : d
+function m(e) {
+  return h(e.global_name) ? e.global_name : h(e.globalName) ? e.globalName : h(e.username) ? e.username : d
 }
 
 function g(e) {
   var t;
   if (null == e) return;
   let n = i.Z.hidePersonalInformation,
-    r = h(e);
+    r = m(e);
   return n && r.toLocaleLowerCase() === (null == (t = e.username) ? true : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = f(r)), r
 }
 
@@ -71,14 +71,14 @@ function E(e) {
   var t;
   let n = (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation);
   if (null == e) return;
-  let a = h(e);
+  let a = m(e);
   return n && a.toLocaleLowerCase() === (null == (t = e.username) ? true : t.toLocaleLowerCase()) && "0" === e.discriminator && (a = f(a)), a
 }
 
 function b(e) {
   if (null != e)
-    if (m(e.globalName)) return e.globalName;
-    else if (m(e.global_name)) return e.global_name;
+    if (h(e.globalName)) return e.globalName;
+    else if (h(e.global_name)) return e.global_name;
   else return
 }
 
@@ -140,7 +140,7 @@ function I(e) {
 
 function T(e, t, n) {
   if (null == e) return s.intl.string(s.t.sKdZ6U);
-  if (!m(e.username)) return d;
+  if (!h(e.username)) return d;
   let r = n;
   if ("always" === t.identifiable ? r = false : "never" === t.identifiable && (r = true), "0" !== e.discriminator && e.discriminator !== o.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
   let i = r ? f(e.username) : e.username;

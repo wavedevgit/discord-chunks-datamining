@@ -28,13 +28,13 @@ function b(e) {
     app: n,
     currentSubscription: a,
     currentListing: _,
-    alternativeListings: h,
+    alternativeListings: m,
     navigateToHome: b,
     subscriptionGroup: O,
     renewalSkuId: v
   } = e, S = (0, s.y)(n, 100), I = (0, p.KK)(O.flags), T = I ? o.QTo : o.tBG, C = I ? g.intl.string(g.t["46YF2D"]) : g.intl.string(g.t.fFyGiA), A = null == (t = a.metadata) ? true : t.application_subscription_guild_id, N = (0, i.e7)([d.Z], () => I && null != A ? d.Z.getGuild(A) : true, [A, I]), P = (0, i.e7)([f.Z], () => {
     if (null != v) return f.Z.get(v)
-  }, [v]), R = (0, m.p)(a.currentPeriodEnd);
+  }, [v]), w = (0, h.p)(a.currentPeriodEnd);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       className: E.header,
@@ -109,17 +109,17 @@ function b(e) {
             variant: "text-sm/semibold",
             color: "text-subtle",
             children: g.intl.format(g.t["OQk+jr"], {
-              endDate: R
+              endDate: w
             })
           })]
         })
-      }), h.map(e => e.skuId === v ? (0, r.jsx)(c.Z, {
+      }), m.map(e => e.skuId === v ? (0, r.jsx)(c.Z, {
         storeListing: e,
         cta: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-subtle",
           children: g.intl.format(g.t.nn88hB, {
-            startDate: R
+            startDate: w
           })
         })
       }, e.id) : (0, r.jsx)(y, {
@@ -139,7 +139,7 @@ function y(e) {
   } = e, {
     openModal: o
   } = (0, _.Z)({
-    analyticsLocation: h.Sbl.APP_SUBSCRIPTIONS_MANAGEMENT,
+    analyticsLocation: m.Sbl.APP_SUBSCRIPTIONS_MANAGEMENT,
     skuId: t.skuId,
     initialSubscribeForGuild: n,
     disableGuildSelector: true,

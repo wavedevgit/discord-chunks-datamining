@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => v,
-  Z: () => w
+  Z: () => R
 }), require("./35282.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -18,7 +18,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -97,7 +97,7 @@ function A(e) {
     },
     wasSaved: n
   } = e;
-  return t === m.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (P.pendingUsages = [], true)
+  return t === h.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (P.pendingUsages = [], true)
 }
 
 function N() {
@@ -111,7 +111,7 @@ function N() {
 let P = {
   pendingUsages: []
 };
-class R extends(r = Chunk442837.ZP.PersistedStore) {
+class w extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(u.Z, d.Z, f.Z, p.Z, c.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && _.Xyh.test(e.key)), P = e), this.syncWith([c.Z], N)
   }
@@ -142,8 +142,8 @@ class R extends(r = Chunk442837.ZP.PersistedStore) {
     return O
   }
 }
-h(R, "displayName", "FrecencyStore"), h(R, "persistKey", "FrecencyStore");
-let w = new R(Chunk570140.Z, {
+m(w, "displayName", "FrecencyStore"), m(w, "persistKey", "FrecencyStore");
+let R = new w(Chunk570140.Z, {
   CHANNEL_SELECT: C,
   VOICE_CHANNEL_SELECT: C,
   USER_SETTINGS_PROTO_UPDATE: A

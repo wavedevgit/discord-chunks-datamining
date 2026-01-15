@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
 function d(e) {
   let {
     children: t
-  } = e, [n, d] = i.useState(null), [f, p] = i.useState(null), _ = i.useRef(new Set), [m, h] = i.useState(false), g = (0, o.e7)([s.Z], () => s.Z.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
-    _.current.delete(e), h(_.current.size > 0)
-  }, []), b = i.useCallback(e => (_.current.add(e), h(true), () => E(e)), [E]), y = i.useCallback((e, t) => {
+  } = e, [n, d] = i.useState(null), [f, p] = i.useState(null), _ = i.useRef(new Set), [h, m] = i.useState(false), g = (0, o.e7)([s.Z], () => s.Z.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
+    _.current.delete(e), m(_.current.size > 0)
+  }, []), b = i.useCallback(e => (_.current.add(e), m(true), () => E(e)), [E]), y = i.useCallback((e, t) => {
     for (let n of _.current) n(e, t)
   }, []);
   return i.useEffect(() => {
@@ -35,7 +35,7 @@ function d(e) {
       ref: p,
       className: u.canvas,
       environment: c.rq,
-      onClick: m ? y : true
+      onClick: h ? y : true
     }), (0, r.jsx)(a.Ji, {
       ref: d,
       colors: c.Br,

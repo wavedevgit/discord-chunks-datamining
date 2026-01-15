@@ -74,12 +74,12 @@ let f = e => {
       colorClass: p = ""
     } = e,
     _ = u(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, a.m)(o),
-    h = null != (t = null == m ? true : m.width) ? t : l,
-    g = null != (n = null == m ? true : m.height) ? n : d;
+  let h = (0, a.m)(o),
+    m = null != (t = null == h ? true : h.width) ? t : l,
+    g = null != (n = null == h ? true : h.height) ? n : d;
   return (0, r.jsx)("svg", c(s({}, (0, i.Z)(_)), {
     xmlns: "http://www.w3.org/2000/svg",
-    width: h,
+    width: m,
     height: g,
     fill: "none",
     viewBox: "0 0 24 24",

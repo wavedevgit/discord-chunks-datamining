@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk580747 = require("./580747.js"),
   Chunk326913 = require("./326913.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -43,7 +43,7 @@ function g(e, t) {
   let {
     color: a,
     useLottieDefaultColors: s,
-    src: m,
+    src: h,
     size: g = "md",
     width: E,
     height: b,
@@ -52,10 +52,10 @@ function g(e, t) {
     initialFrame: v,
     markers: S,
     onBeforeDismount: I
-  } = e, [T, C] = i.useState(null), A = i.useRef(null), N = i.useRef(null), P = i.useRef(null), R = "custom" === g ? {
+  } = e, [T, C] = i.useState(null), A = i.useRef(null), N = i.useRef(null), P = i.useRef(null), w = "custom" === g ? {
     width: E,
     height: b
-  } : (0, u.m)(g), w = !(0, p.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.Sfi).reducedMotion.enabled, {
+  } : (0, u.m)(g), R = !(0, p.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.Sfi).reducedMotion.enabled, {
     enabled: x
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
@@ -73,7 +73,7 @@ function g(e, t) {
         let t = S[e];
         P.current.resetSegments(true), P.current.setSegment(t.start + t.duration, t.start + t.duration), P.current.stop()
       } else {
-        P.current.setLoop(!w && e.includes("hover")), P.current.resetSegments(true);
+        P.current.setLoop(!R && e.includes("hover")), P.current.resetSegments(true);
         let n = t && null != v && v >= S[e].start && v <= S[e].start + S[e].duration ? v : S[e].start;
         P.current.playSegments([n, S[e].start + S[e].duration], true)
       }
@@ -86,9 +86,9 @@ function g(e, t) {
     },
     getDuration: e => null == P.current ? null : P.current.getDuration(e),
     getCurrentFrame: () => null == P.current ? null : P.current.currentFrame
-  }), [L, w, S, v]), i.useEffect(() => {
-    null == T && m().then(e => C(e.default))
-  }, [T, m]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
+  }), [L, R, S, v]), i.useEffect(() => {
+    null == T && h().then(e => C(e.default))
+  }, [T, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
     var t, n;
     let r, {
         default: i
@@ -111,10 +111,10 @@ function g(e, t) {
     var e;
     null == (e = P.current) || e.destroy()
   }), [T, S, v, L]), (0, r.jsx)("div", {
-    style: h({
+    style: m({
       "--__lottieIconColor": null != a && "string" == typeof a ? a : null == a ? true : a.css,
       display: "flex"
-    }, R),
+    }, w),
     className: o()(_.lottieIcon, s ? true : _.lottieIconColors, y),
     ref: A
   })

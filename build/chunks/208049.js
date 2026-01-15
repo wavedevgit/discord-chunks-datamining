@@ -2,8 +2,8 @@
 /** chunk id: 208049, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $d: () => R,
-  AA: () => w,
+  $d: () => w,
+  AA: () => R,
   Db: () => G,
   Dx: () => P,
   R: () => k,
@@ -38,7 +38,7 @@ let y = false,
       let e = (await a.tn.get({
         url: g.ANM.SOUNDBOARD_DEFAULT_SOUNDS,
         rejectWithError: false
-      })).body.map(e => (0, p.o3)(e, h.X8));
+      })).body.map(e => (0, p.o3)(e, m.X8));
       o.Z.dispatch({
         type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS",
         soundboardSounds: e
@@ -92,7 +92,7 @@ let y = false,
     let e = S("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
     return (0, _.sI)("maybeFetchDefaultSounds") && v(), O(), e
   }, C = () => {
-    let e = (0, m.D)();
+    let e = (0, h.D)();
     if (0 === e.length) return Promise.resolve();
     let t = S("SOUNDBOARD_SOUNDS_RECEIVED");
     return o.Z.dispatch({
@@ -145,7 +145,7 @@ async function P(e) {
   });
   return (0, p.o3)(l.body, t)
 }
-async function R(e) {
+async function w(e) {
   let {
     guildId: t,
     soundId: n,
@@ -165,7 +165,7 @@ async function R(e) {
   });
   return (0, p.o3)(l.body, t)
 }
-async function w(e, t) {
+async function R(e, t) {
   await a.tn.del({
     url: g.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
     oldFormErrors: true,

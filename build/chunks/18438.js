@@ -16,8 +16,8 @@ require.d(exports, {
   g_: () => f,
   iq: () => o,
   pG: () => b,
-  sr: () => m,
-  z5: () => h
+  sr: () => h,
+  z5: () => m
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -133,14 +133,14 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME",
     nickname: e
   })
 }
 
-function h(e) {
+function m(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS",
     themeColors: e

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   DT: () => A,
-  Ef: () => w,
-  HO: () => R,
+  Ef: () => R,
+  HO: () => w,
   NZ: () => D,
   Pq: () => P,
   Q1: () => S,
@@ -57,7 +57,7 @@ function v(e) {
 
 function S(e, t) {
   let n = e.getGuildId();
-  return i()(null != n, "This channel cannot be guildless."), t && (0, c.yw)(b.rMx.REQUEST_TO_SPEAK_INITIATED, v({}, (0, m.s$)(e))), o.tn.patch({
+  return i()(null != n, "This channel cannot be guildless."), t && (0, c.yw)(b.rMx.REQUEST_TO_SPEAK_INITIATED, v({}, (0, h.s$)(e))), o.tn.patch({
     url: b.ANM.UPDATE_VOICE_STATE(n),
     body: {
       request_to_speak_timestamp: t ? new Date().toISOString() : null,
@@ -86,7 +86,7 @@ function T(e, t) {
   i()(null != r, "This channel cannot be guildless.");
   let a = f.Z.getVoiceStateForChannel(e.id),
     s = (0, g.gf)(a);
-  return !t && (0, E.u1)() ? Promise.resolve() : (s !== g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || t || (0, c.yw)(b.rMx.PROMOTED_TO_SPEAKER, v({}, (0, m.s$)(e))), o.tn.patch({
+  return !t && (0, E.u1)() ? Promise.resolve() : (s !== g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || t || (0, c.yw)(b.rMx.PROMOTED_TO_SPEAKER, v({}, (0, h.s$)(e))), o.tn.patch({
     url: b.ANM.UPDATE_VOICE_STATE(r),
     body: v({
       suppress: t,
@@ -152,15 +152,15 @@ function P(e, t, n) {
     }, o);
   n ? (c.allow = a.IH(c.allow, t), c.deny = a.Od(c.deny, t)) : (c.allow = a.Od(c.allow, t), c.deny = a.IH(c.deny, t)), s.Z.updatePermissionOverwrite(e.id, c)
 }
-async function R(e, t, n, r) {
+async function w(e, t, n, r) {
   if ("" === t) return;
   d.Z.getVoiceChannelId() !== e.id && (0, _.TM)(e);
-  let i = await (0, h.me)(e.id, t, n, r);
+  let i = await (0, m.me)(e.id, t, n, r);
   return T(e, false, true), i
 }
-async function w(e, t, n) {
-  if ("" !== t) return await (0, h.Dk)(e.id, t, n)
+async function R(e, t, n) {
+  if ("" !== t) return await (0, m.Dk)(e.id, t, n)
 }
 async function D(e) {
-  await (0, h.Ix)(e.id)
+  await (0, m.Ix)(e.id)
 }

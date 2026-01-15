@@ -2,8 +2,8 @@
 /** chunk id: 371991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
-  x: () => m
+  Z: () => m,
+  x: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk368176 = require("./368176.js"),
   Chunk288469 = require("./288469.js"),
   Chunk14743 = require("./14743.js");
-let m = e => {
+let h = e => {
     let {
       entry: t,
       inline: n = false,
@@ -25,8 +25,8 @@ let m = e => {
       textTabularNumbers: s = true,
       textFontCode: c = true,
       hovered: u = false,
-      bold: m = false,
-      scaleFontToUserSetting: h = false
+      bold: h = false,
+      scaleFontToUserSetting: m = false
     } = e, {
       now: g
     } = (0, p.g)(u), {
@@ -41,18 +41,18 @@ let m = e => {
     }, [t]), (0, r.jsx)(l.Text, {
       className: o()({
         [_.fontCode]: !!E || c,
-        [_.bold]: !E && m,
+        [_.bold]: !E && h,
         [_.inlineTimestamp]: n
       }),
       variant: E ? "text-xs/normal" : "text-xs/medium",
       tabularNumbers: s,
       color: a,
-      scaleFontToUserSetting: h,
+      scaleFontToUserSetting: m,
       "aria-label": y.current,
       children: b
     })
   },
-  h = e => {
+  m = e => {
     var t, n;
     let {
       entry: i,
@@ -60,8 +60,8 @@ let m = e => {
       hovered: o = false,
       bold: f = false,
       scaleFontToUserSetting: p = false
-    } = e, _ = (0, d.Jg)(i), h = (0, s.e7)([c.default], () => c.default.locale), g = (0, s.e7)([u.Z], () => u.Z.getMatchingActivity(i)), E = null != (n = null == g || null == (t = g.timestamps) ? true : t.start) ? n : null == g ? true : g.created_at;
-    return null != E ? (0, r.jsx)(m, {
+    } = e, _ = (0, d.Jg)(i), m = (0, s.e7)([c.default], () => c.default.locale), g = (0, s.e7)([u.Z], () => u.Z.getMatchingActivity(i)), E = null != (n = null == g || null == (t = g.timestamps) ? true : t.start) ? n : null == g ? true : g.created_at;
+    return null != E ? (0, r.jsx)(h, {
       entry: {
         start: E
       },
@@ -69,7 +69,7 @@ let m = e => {
       hovered: o,
       bold: f,
       scaleFontToUserSetting: p
-    }) : _ ? (0, r.jsx)(m, {
+    }) : _ ? (0, r.jsx)(h, {
       entry: i,
       textColor: a,
       hovered: o,
@@ -80,6 +80,6 @@ let m = e => {
       color: a,
       lineClamp: 1,
       scaleFontToUserSetting: p,
-      children: (0, d.GL)(i, h)
+      children: (0, d.GL)(i, m)
     })
   }

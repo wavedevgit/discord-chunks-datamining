@@ -5,7 +5,7 @@ require.d(exports, {
   Fs: () => _,
   Xu: () => p,
   ZP: () => f,
-  ms: () => h,
+  ms: () => m,
   sV: () => u
 }), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ function _(e, t) {
   let {
     commands: n,
     loading: i
-  } = m(e, t), a = n[0], o = null != a;
+  } = h(e, t), a = n[0], o = null != a;
   return r.useEffect(() => {
     o || i || (0, s.j)({
       type: "application",
@@ -57,7 +57,7 @@ function _(e, t) {
   }, [t, o, i]), a
 }
 
-function m(e, t) {
+function h(e, t) {
   return (0, l.v1)(e, {
     commandTypes: d
   }, {
@@ -69,7 +69,7 @@ function m(e, t) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     context: t,
     applicationId: n,

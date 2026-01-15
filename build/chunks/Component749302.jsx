@@ -2,7 +2,7 @@
 /** chunk id: 749302, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ function _(e, t) {
   }, [n])
 }
 
-function m(e) {
+function h(e) {
   let {
     application: t
   } = e;
@@ -41,13 +41,13 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     menuItemId: t,
     user: n,
     label: s,
     gameRelationships: f,
-    onClick: h,
+    onClick: m,
     color: g
   } = e, {
     id: E,
@@ -70,11 +70,11 @@ function h(e) {
       color: g,
       id: t,
       label: s,
-      subtext: (0, r.jsx)(m, {
+      subtext: (0, r.jsx)(h, {
         application: n
       }),
       onFocus: I,
-      action: () => h(n)
+      action: () => m(n)
     })
   }
   let N = [];
@@ -89,7 +89,7 @@ function h(e) {
         game: n,
         size: l.A.XXSMALL
       }),
-      action: () => h(n)
+      action: () => m(n)
     }, t))
   }), 0 === N.length) ? null : (0, r.jsx)(o.sNh, {
     color: g,

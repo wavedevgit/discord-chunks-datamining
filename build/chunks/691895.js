@@ -20,7 +20,7 @@ function s(e) {
       logs: f,
       nativeLogs: p,
       serverTrace: _
-    } = r, m = 0 === c ? null != (s = null == (a = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) ? true : a.timestamp) ? s : e : d, h = l(u(f, p, t, n), m), g = "Trace #".concat(c + 1, " started ").concat((0, o.Ye)(d), "\n").concat(h);
+    } = r, h = 0 === c ? null != (s = null == (a = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) ? true : a.timestamp) ? s : e : d, m = l(u(f, p, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, o.Ye)(d), "\n").concat(m);
     return null != _ && (g += "\n Server trace for trace #".concat(c + 1).concat(_)), g
   }).join("\n\n")
 }

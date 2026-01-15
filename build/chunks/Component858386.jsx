@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,7 +70,7 @@ class E extends Chunk147913.Z {
         }, i = () => {
           l.default.track(d.rMx.FORCED_UPDATE_PASSWORD_SUCCEEDED), t.onClose()
         };
-        return (0, r.jsx)(e, h(_({}, t), {
+        return (0, r.jsx)(e, m(_({}, t), {
           onSuccess: i,
           onClose: n,
           requirementsUpdated: true

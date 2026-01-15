@@ -2,8 +2,8 @@
 /** chunk id: 937111, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R,
-  j: () => m
+  Z: () => w,
+  j: () => h
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -25,7 +25,7 @@ let u = null,
   p = {},
   _ = {};
 
-function m(e) {
+function h(e) {
   return {
     joinRequestId: e.join_request_id,
     guildId: e.guild_id,
@@ -42,7 +42,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   delete d[e], u === e && (u = null)
 }
 
@@ -54,7 +54,7 @@ function g(e) {
     let {
       guild_id: t
     } = e;
-    null != t && (d[t] = m(e))
+    null != t && (d[t] = h(e))
   })
 }
 
@@ -63,9 +63,9 @@ function E(e) {
     request: t,
     guildId: n
   } = e;
-  if (null == t) return void h(n);
-  let r = m(t);
-  (0, l.d3)(r) ? h(n): d[n] = r
+  if (null == t) return void m(n);
+  let r = h(t);
+  (0, l.d3)(r) ? m(n): d[n] = r
 }
 
 function b(e) {
@@ -74,24 +74,24 @@ function b(e) {
     request: n
   } = e;
   if (null == n) return;
-  let r = m(n),
+  let r = h(n),
     i = o.default.getCurrentUser();
   if (null != i && r.userId !== i.id) returnfalse;
-  (0, l.d3)(r) ? h(t): d[t] = r
+  (0, l.d3)(r) ? m(t): d[t] = r
 }
 
 function y(e) {
   let {
     guildId: t
   } = e;
-  h(t)
+  m(t)
 }
 
 function O(e) {
   let {
     guild: t
   } = e;
-  h(t.id)
+  m(t.id)
 }
 
 function v(e) {
@@ -105,7 +105,7 @@ function v(e) {
     let {
       guild_id: e
     } = r;
-    d[e] = m(r);
+    d[e] = h(r);
     let {
       id: t,
       name: i,
@@ -180,7 +180,7 @@ function C(e) {
   let {
     guildId: t
   } = e;
-  h(t)
+  m(t)
 }
 
 function A(e) {
@@ -217,7 +217,7 @@ class P extends(r = Chunk442837.ZP.Store) {
   }
 }
 c(P, "displayName", "UserGuildJoinRequestStore");
-let R = new P(Chunk570140.Z, {
+let w = new P(Chunk570140.Z, {
   CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: b,
   GUILD_JOIN_REQUEST_CREATE: b,

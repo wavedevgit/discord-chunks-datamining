@@ -86,19 +86,19 @@ let ee = (0, Chunk663993.Un)({
     } = e, a = (0, Y.getPlatform)(), f = s.tq || s.Em, g = (0, u.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), V = i.useRef(document.body), H = "".concat(g);
     (0, N.G)(), (0, x.G)("AppSkeleton");
     let W = (0, D.Co)("AppSkeleton"),
-      X = w.KA.useConfig({
+      X = R.KA.useConfig({
         location: "AppSkeleton"
       }).enableFastConnectEarlyIdentify;
     return i.useEffect(() => {
       Y.isPlatformEmbedded && (W ? d.K.set(D.j4, "json") : d.K.remove(D.j4))
     }, [W]), i.useEffect(() => {
-      X ? d.K.set(w.bq, true) : d.K.remove(w.bq)
+      X ? d.K.set(R.bq, true) : d.K.remove(R.bq)
     }, [X]), (0, r.jsx)(F.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(K.Z, {
           skipsSettingDefaultPageTitle: n
-        }), (0, r.jsx)(h.T, {
-          children: (0, r.jsx)(R.Z, {
+        }), (0, r.jsx)(m.T, {
+          children: (0, r.jsx)(w.Z, {
             children: (0, r.jsxs)(p.JcV, {
               containerRef: V,
               children: [(0, r.jsx)(Q.Co, {}), (0, r.jsx)(q.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(k.Wu, {
@@ -119,7 +119,7 @@ let ee = (0, Chunk663993.Un)({
                                 children: [(0, r.jsx)("div", {
                                   className: o()(f ? $.mobileApp : $.app),
                                   children: t
-                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(B.Z, {}), (0, r.jsx)(j.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(L.Un, {}), (0, r.jsx)(M.ot, {}), (0, r.jsx)(p.Ixi, {
+                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(B.Z, {}), (0, r.jsx)(j.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(L.Un, {}), (0, r.jsx)(M.ot, {}), (0, r.jsx)(p.Ixi, {
                                   appContext: J.IlC.APP
                                 }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(U.Z, {}), (0, r.jsx)(ee, {}), (0, r.jsx)(Z.Z, {})]
                               })

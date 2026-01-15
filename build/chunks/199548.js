@@ -28,6 +28,6 @@ let d = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
   g = (0, Chunk509613.m7)(Chunk313789.n.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
     useTitle: () => E.intl.string(E.t.Cq98yL),
     getLegacySearchKey: () => (0, u.Gl)("ActivityPrivacyPanel") ? true : c.s6.ACTIVITY_PRIVACY,
-    icon: Chunk657707.KED,
+    icon: Chunk657707.UserPlatformIcon,
     buildLayout: () => (0, u.Gl)("ActivityPrivacyPanel") ? [_] : [d]
   })

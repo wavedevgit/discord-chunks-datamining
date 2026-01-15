@@ -66,15 +66,15 @@ function T(e) {
   var t, n, a;
   let {
     file: s
-  } = e, [l, c] = i.useState(), [d, f] = i.useState(false), [p, _] = i.useState({}), m = i.useRef(null);
+  } = e, [l, c] = i.useState(), [d, f] = i.useState(false), [p, _] = i.useState({}), h = i.useRef(null);
   i.useEffect(() => {
-    if (null != m.current && f(false), null == s) return;
+    if (null != h.current && f(false), null == s) return;
     let e = URL.createObjectURL(s);
     return c(e), () => {
       c(true), URL.revokeObjectURL(e)
     }
   }, [s]), i.useLayoutEffect(() => {
-    let e = m.current;
+    let e = h.current;
     null != e && (e.onload = () => {
       let t = Math.max(.66, Math.min(e.naturalWidth / e.naturalHeight, 4));
       1 === t ? _({
@@ -89,10 +89,10 @@ function T(e) {
       }), f(true)
     })
   }, []);
-  let h = (0, u.Z)(m),
-    g = Math.max(16, (I + S - (null != (t = null == h ? true : h.width) ? t : 0)) / 2);
+  let m = (0, u.Z)(h),
+    g = Math.max(16, (I + S - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
-    ref: m,
+    ref: h,
     src: l,
     className: o()(E.fileIcon, {
       [E.image]: !d
@@ -123,7 +123,7 @@ class C extends Chunk473749.Component {
 }
 class A extends Chunk473749.Component {
   componentDidMount() {
-    _.isPlatformEmbedded && m.ZP.focus()
+    _.isPlatformEmbedded && h.ZP.focus()
   }
   shouldComponentUpdate(e) {
     return null != e.upload
@@ -169,7 +169,7 @@ class A extends Chunk473749.Component {
               filename: e
             }),
             onKeyDown: e => {
-              if (e.which === h.yXg.ENTER) return this.handleSubmit()
+              if (e.which === m.yXg.ENTER) return this.handleSubmit()
             }
           }), e.isImage ? (0, r.jsx)(l.oil, {
             label: g.intl.string(g.t.eOB2eR),
@@ -179,7 +179,7 @@ class A extends Chunk473749.Component {
               description: e
             }),
             onKeyDown: e => {
-              if (e.which === h.yXg.ENTER) return this.handleSubmit()
+              if (e.which === m.yXg.ENTER) return this.handleSubmit()
             }
           }) : null]
         }), true !== n && (0, r.jsx)(l.Checkbox, {

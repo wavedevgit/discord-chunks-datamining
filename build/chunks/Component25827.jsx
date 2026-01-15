@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -83,8 +83,8 @@ function y(e) {
       onCameraUnavailable: d,
       hasPermission: p,
       children: _,
-      channelLimitReached: m = false,
-      join: h
+      channelLimitReached: h = false,
+      join: m
     } = e,
     g = (0, c.bp)(),
     E = a ? () => d() : () => o(!e.enabled, g),
@@ -92,20 +92,20 @@ function y(e) {
       Component: b,
       play: y,
       events: O
-    } = (0, s.o)(h || n ? "disable" : "enable");
+    } = (0, s.o)(m || n ? "disable" : "enable");
   i.useEffect(() => () => y(), [n, y]);
-  let v = h ? l.Odl : g === f.IlC.POPOUT ? n ? l.Odl : l.Amn : b;
+  let v = m ? l.Odl : g === f.IlC.POPOUT ? n ? l.Odl : l.Amn : b;
   return (0, r.jsx)(r.Fragment, {
     children: _({
       onClick: E,
       isActive: n,
-      disabled: !n && (!p || m),
+      disabled: !n && (!p || h),
       iconComponent: v,
       iconColor: "currentColor",
       label: t,
       unavailable: a,
-      onMouseEnter: h ? true : O.onMouseEnter,
-      onMouseLeave: h ? true : O.onMouseLeave
+      onMouseEnter: m ? true : O.onMouseEnter,
+      onMouseLeave: m ? true : O.onMouseLeave
     })
   })
 }
@@ -122,10 +122,10 @@ function O(e) {
     className: u,
     channelLimitReached: f,
     channelLimit: _,
-    centerButton: h = false,
+    centerButton: m = false,
     onPopoutClick: b
   } = e, O = E(e, ["enabled", "join", "channel", "onChange", "onCameraUnavailable", "cameraUnavailable", "hasPermission", "className", "channelLimitReached", "channelLimit", "centerButton", "onPopoutClick"]);
-  let v = h ? d.d : d.Z,
+  let v = m ? d.d : d.Z,
     S = () => n ? "join" : t ? "green" : "primaryDark",
     I = e => n ? "join" : e ? "green" : O.color;
   return (0, r.jsx)(y, {
@@ -145,7 +145,7 @@ function O(e) {
         onMouseLeave: a,
         isActive: s
       } = e, l = E(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
-      return (0, r.jsx)(v, g(m({}, l, O), {
+      return (0, r.jsx)(v, g(h({}, l, O), {
         color: I(s),
         caretColor: S(),
         isActive: s,

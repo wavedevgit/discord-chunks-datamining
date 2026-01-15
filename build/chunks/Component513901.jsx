@@ -40,7 +40,7 @@ function y(e) {
   }), {
     pendingProfileEffect: N,
     errors: P
-  } = (0, p.xZ)(null == n ? true : n.id), R = true === N ? null != A : null != N, w = () => {
+  } = (0, p.xZ)(null == n ? true : n.id), w = true === N ? null != A : null != N, R = () => {
     (0, u.H)({
       analyticsLocations: T,
       guild: n,
@@ -50,7 +50,7 @@ function y(e) {
     (0, p.UK)(null, null == n ? true : n.id)
   };
   i.useEffect(() => {
-    C && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+    C && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
       type: g.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
       location_stack: T
     })
@@ -58,7 +58,7 @@ function y(e) {
   let x = S ? l.gtL : s.zx;
   return (0, r.jsx)(_.Z, {
     forcedDivider: v,
-    borderType: m.Y.PREMIUM,
+    borderType: h.Y.PREMIUM,
     hasBackground: true,
     title: O,
     showBorder: I,
@@ -68,12 +68,12 @@ function y(e) {
       className: b.buttonsContainer,
       children: [(0, r.jsx)(x, {
         size: s.zx.Sizes.SMALL,
-        onClick: w,
+        onClick: R,
         className: o()({
           [b.buttonHighlighted]: S
         }),
         children: E.intl.string(E.t["/dRfCf"])
-      }), R && (0, r.jsx)("div", {
+      }), w && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: b.removeButton,
         children: (0, r.jsx)(l.Button, {

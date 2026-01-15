@@ -51,7 +51,7 @@ var Chunk98405 = require("./98405.js"),
   Q = "BYTES_PER_ELEMENT",
   X = "Wrong length",
   J = function(e, t) {
-    R(e, t, {
+    w(e, t, {
       configurable: true,
       get: function() {
         return M(this)[t]
@@ -95,7 +95,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
       var i = M(e);
       i.view[d](t * o + i.byteOffset, n ? g(r) : r, true)
     },
-    R = function(e, t) {
+    w = function(e, t) {
       G(e, t, {
         get: function() {
           return v(this, t)
@@ -108,7 +108,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     };
   Y ? s && (E = t(function(e, t, n, r) {
     return u(e, b), j(function() {
-      return O(t) ? $(t) ? true !== r ? new p(t, h(n, o), r) : true !== n ? new p(t, h(n, o)) : new p(t) : q(t) ? x(E, t) : a(A, E, t) : new p(m(t))
+      return O(t) ? $(t) ? true !== r ? new p(t, m(n, o), r) : true !== n ? new p(t, m(n, o)) : new p(t) : q(t) ? x(E, t) : a(A, E, t) : new p(h(t))
     }(), e, E)
   }), T && T(E, K), N(C(p), function(e) {
     e in E || f(E, e, p[e])
@@ -118,7 +118,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
       d = 0;
     if (O(t))
       if ($(t)) {
-        i = t, d = h(n, o);
+        i = t, d = m(n, o);
         var f = t.byteLength;
         if (true === r) {
           if (f % o || (s = f - d) < 0) throw new F(X)
@@ -126,20 +126,20 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         l = s / o
       } else if (q(t)) return x(E, t);
     else return a(A, E, t);
-    else i = new B(s = (l = m(t)) * o);
+    else i = new B(s = (l = h(t)) * o);
     for (k(e, {
         buffer: i,
         byteOffset: d,
         byteLength: s,
         length: l,
         view: new H(i)
-      }); c < l;) R(e, c++)
+      }); c < l;) w(e, c++)
   }), T && T(E, K), b = E.prototype = S(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
-  var w = E !== p;
+  var R = E !== p;
   y[l] = E, r({
     global: true,
     constructor: true,
-    forced: w,
+    forced: R,
     sham: !Y
   }, y), Q in E || f(E, Q, o), Q in b || f(b, Q, o), P(l)
 }) : module.exports = function() {}

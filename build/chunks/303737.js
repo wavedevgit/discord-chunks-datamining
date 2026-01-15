@@ -24,7 +24,7 @@ var Chunk991637 = require("./991637.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 i().shim();
-let h = {};
+let m = {};
 
 function g(e) {
   let t = (0, a.e7)([l.Z], () => l.Z.getChannel(e)),
@@ -77,8 +77,8 @@ function b(e) {
 
 function y(e) {
   let t = b(e);
-  h[e] = t, t.forEach(e => {
-    let t = e.set("flags", m.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
+  m[e] = t, t.forEach(e => {
+    let t = e.set("flags", h.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
     o.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
@@ -88,7 +88,7 @@ function y(e) {
 
 function O(e) {
   var t;
-  (null != (t = h[e]) ? t : b(e)).forEach(e => {
+  (null != (t = m[e]) ? t : b(e)).forEach(e => {
     o.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e

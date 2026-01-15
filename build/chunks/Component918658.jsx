@@ -44,8 +44,8 @@ function D(e) {
   } = e;
   return (0, r.jsx)(u.zx, {
     buttonRef: a,
-    className: o()(w.button, t),
-    innerClassName: w.buttonInner,
+    className: o()(R.button, t),
+    innerClassName: R.buttonInner,
     look: u.zx.Looks.OUTLINED,
     color: u.zx.Colors.WHITE,
     size: u.zx.Sizes.NONE,
@@ -60,25 +60,25 @@ function x(e) {
   } = e;
   return (0, r.jsx)(D, {
     onClick: t,
-    children: R.intl.string(R.t.R9GHya)
+    children: w.intl.string(w.t.R9GHya)
   })
 }
 
 function L(e) {
   switch (e) {
     case C.pNK.INTEGRATIONS:
-      return R.intl.string(R.t.k7LGdh);
+      return w.intl.string(w.t.k7LGdh);
     case C.pNK.ROLE_SUBSCRIPTIONS:
-      return R.intl.string(R.t.bRqiqa);
+      return w.intl.string(w.t.bRqiqa);
     case C.pNK.ONBOARDING:
-      return R.intl.string(R.t.qZpU3S);
+      return w.intl.string(w.t.qZpU3S);
     default:
-      return R.intl.string(R.t.MTIXhi)
+      return w.intl.string(w.t.MTIXhi)
   }
 }
 
 function j(e) {
-  return e === C.pNK.ROLE_SUBSCRIPTIONS ? R.intl.string(R.t.hZUCzd) : R.intl.string(R.t["/djIh7"])
+  return e === C.pNK.ROLE_SUBSCRIPTIONS ? w.intl.string(w.t.hZUCzd) : w.intl.string(w.t["/djIh7"])
 }
 
 function M() {
@@ -104,35 +104,35 @@ function M() {
       let {
         backToSettings: n
       } = e;
-      null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(C.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && h.Z.open(t, o), o === C.pNK.ROLE_SUBSCRIPTIONS && (0, m.GN)(t))
+      null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(C.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && m.Z.open(t, o), o === C.pNK.ROLE_SUBSCRIPTIONS && (0, h.GN)(t))
     };
   return (0, r.jsxs)(d.qXd, {
     color: d.DM8.BRAND,
-    className: w.notice,
+    className: R.notice,
     children: [(0, r.jsxs)(D, {
       onClick: () => G({
         backToSettings: true
       }),
-      className: w.backButton,
+      className: R.backButton,
       children: [(0, r.jsx)(y.Z, {
         width: 16,
         height: 16,
         direction: y.Z.Directions.LEFT,
-        className: w.backArrow
+        className: R.backArrow
       }), M]
     }), U && u ? (0, r.jsx)("div", {
-      className: w.noticeContents,
+      className: R.noticeContents,
       children: (0, r.jsx)("div", {
-        className: w.noticeText,
-        children: R.intl.string(R.t.PxbiAf)
+        className: R.noticeText,
+        children: w.intl.string(w.t.PxbiAf)
       })
     }) : (0, r.jsxs)("div", {
-      className: w.noticeContents,
+      className: R.noticeContents,
       children: [(0, r.jsx)("div", {
-        className: w.noticeText,
-        children: u ? R.intl.formatToPlainString(R.t["0PHahI"], {
+        className: R.noticeText,
+        children: u ? w.intl.formatToPlainString(w.t["0PHahI"], {
           numRoles: Object.keys(a).length
-        }) : R.intl.formatToPlainString(R.t.vMlK8t, {
+        }) : w.intl.formatToPlainString(w.t.vMlK8t, {
           numRoles: Object.keys(a).length
         })
       }), (0, r.jsx)(d.yRy, {
@@ -152,20 +152,20 @@ function M() {
               width: 16,
               height: 16,
               direction: O.Z.Directions.DOWN,
-              className: w.selectCaret
+              className: R.selectCaret
             })]
           })
         }
       }), u && (0, r.jsx)(c.u, {
         asContainer: true,
-        text: R.intl.string(R.t.mW4DUE),
+        text: w.intl.string(w.t.mW4DUE),
         children: (0, r.jsx)(d.Mgn, {
           size: "xs",
           color: l.Z.unsafe_rawColors.YELLOW_300.css
         })
       }), v && (0, r.jsx)(c.u, {
         asContainer: true,
-        text: R.intl.formatToPlainString(R.t.eummvd, {
+        text: w.intl.formatToPlainString(w.t.eummvd, {
           maxTiers: P.fF,
           maxProducts: N.dD
         }),
@@ -187,9 +187,9 @@ function k(e) {
     guildId: t
   } = e;
   return (0, s.e7)([I.Z], () => I.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: o()(w.settingsWrapper, {
-      [w.windows]: (0, v.isWindows)(),
-      [w.osx]: (0, v.isMac)()
+    className: o()(R.settingsWrapper, {
+      [R.windows]: (0, v.isWindows)(),
+      [R.osx]: (0, v.isMac)()
     }),
     children: (0, r.jsx)(M, {})
   }) : null

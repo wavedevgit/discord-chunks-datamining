@@ -20,7 +20,7 @@ var Chunk46015 = require("./46015.js"),
       returnfalse
     }
   },
-  m = function(e) {
+  h = function(e) {
     if (!a(e)) returnfalse;
     switch (o(e)) {
       case "AsyncFunction":
@@ -34,9 +34,9 @@ var Chunk46015 = require("./46015.js"),
       returntrue
     }
   };
-m.sham = true, module.exports = !u || Chunk621523(function() {
+h.sham = true, module.exports = !u || Chunk621523(function() {
   var e;
   return _(_.call) || !_(Object) || !_(function() {
     e = true
   }) || e
-}) ? m : _
+}) ? h : _

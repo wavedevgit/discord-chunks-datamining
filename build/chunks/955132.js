@@ -19,7 +19,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk755278 = require("./755278.js"),
   Chunk866483 = require("./866483.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,14 +28,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ y.handleIdentify = () => {
     n = s.default.getInstallationForTracking();
   return {
     token: e,
-    properties: h(E(h({}, l.default.getSuperProperties()), {
+    properties: m(E(m({}, l.default.getSuperProperties()), {
       client_app_state: t,
       is_fast_connect: false,
       gateway_connect_reasons: _.Pf()

@@ -136,12 +136,12 @@ function C(e) {
     setExpanded: n,
     isWholeFile: i,
     numLines: a
-  } = e, o = h.intl.formatToPlainString(i ? h.t.Go5Vvs : h.t.yJcYan, {
+  } = e, o = m.intl.formatToPlainString(i ? m.t.Go5Vvs : m.t.yJcYan, {
     lines: a
   });
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: "".concat(t ? h.intl.string(h.t.iTcuma) : h.intl.string(h.t.dcl9MQ), " (").concat(o, ")"),
+    text: "".concat(t ? m.intl.string(m.t.iTcuma) : m.intl.string(m.t.dcl9MQ), " (").concat(o, ")"),
     children: (0, r.jsxs)(u.P3F, {
       className: g.toggleExpandSection,
       onClick: () => {
@@ -149,7 +149,7 @@ function C(e) {
       },
       children: [(0, r.jsx)(_.Z, {
         direction: t ? _.Z.Directions.UP : _.Z.Directions.DOWN
-      }), t ? h.intl.string(h.t.iTcuma) : h.intl.string(h.t.dcl9MQ)]
+      }), t ? m.intl.string(m.t.iTcuma) : m.intl.string(m.t.dcl9MQ)]
     })
   })
 }
@@ -159,7 +159,7 @@ function A(e) {
     url: t,
     fileName: n,
     fileSize: i
-  } = e, a = "".concat(n, " (").concat((0, m.IC)(i), ")");
+  } = e, a = "".concat(n, " (").concat((0, h.IC)(i), ")");
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.u, {
       text: a,
@@ -171,10 +171,10 @@ function A(e) {
       text: a,
       children: (0, r.jsx)("span", {
         className: o()(g.downloadSection, g.formattedSize),
-        children: (0, m.IC)(i)
+        children: (0, h.IC)(i)
       })
     }), (0, r.jsx)(c.u, {
-      text: "".concat(h.intl.string(h.t["1WjMbC"]), " ").concat(a),
+      text: "".concat(m.intl.string(m.t["1WjMbC"]), " ").concat(a),
       children: (0, r.jsx)(u.eee, {
         className: g.downloadSection,
         href: t,
@@ -205,7 +205,7 @@ function N(e) {
         closePopout: i
       } = e;
       return (0, r.jsx)(u.VqE, {
-        "aria-label": h.intl.string(h.t.utm4qs),
+        "aria-label": m.intl.string(m.t.utm4qs),
         children: (0, r.jsx)("div", {
           className: g.languageSelector,
           children: (0, r.jsxs)(l.uz, {
@@ -220,14 +220,14 @@ function N(e) {
             })),
             value: t,
             children: [(0, r.jsx)(l.Ct, {
-              placeholder: h.intl.string(h.t.GofftW)
+              placeholder: m.intl.string(m.t.GofftW)
             }), (0, r.jsx)(l.px, {})]
           })
         })
       })
     },
     children: e => (0, r.jsx)(c.u, {
-      text: h.intl.string(h.t.utm4qs),
+      text: m.intl.string(m.t.utm4qs),
       children: (0, r.jsx)(u.nF$, v(y({}, e), {
         size: "md",
         color: "currentColor",
@@ -241,11 +241,11 @@ function N(e) {
 function P(e) {
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: h.intl.string(h.t["0PQYk3"]),
+    text: m.intl.string(m.t["0PQYk3"]),
     children: (0, r.jsx)(u.P3F, {
       className: g.openFullPreviewSection,
       onClick: () => {
-        (0, u.h7j)(t => (0, r.jsx)(w, y({}, e, t)))
+        (0, u.h7j)(t => (0, r.jsx)(R, y({}, e, t)))
       },
       children: (0, r.jsx)(u.bJT, {
         size: "xs",
@@ -255,7 +255,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     url: n,
@@ -269,14 +269,14 @@ function R(e) {
     bytesLeft: _,
     className: E
   } = e, b = null == s ? true : s.split("\n"), y = null != (t = null == b ? true : b.length) ? t : 0, O = l ? 100 : 6, v = 0 === _, S = "";
-  v && l && y > O ? S = "\n..." : v || (S = "..."), "" !== S && (v ? S += " " + h.intl.formatToPlainString(h.t.DQnFp2, {
+  v && l && y > O ? S = "\n..." : v || (S = "..."), "" !== S && (v ? S += " " + m.intl.formatToPlainString(m.t.DQnFp2, {
     lines: y - O
-  }) : S += " " + h.intl.formatToPlainString(h.t["1+gGcK"], {
-    formattedBytes: (0, m.IC)(_)
+  }) : S += " " + m.intl.formatToPlainString(m.t["1+gGcK"], {
+    formattedBytes: (0, h.IC)(_)
   }));
   let I = (null == b ? true : b.slice(0, O).join("\n")) + S,
-    R = (0, f.nM)(I),
-    w = l || O < y;
+    w = (0, f.nM)(I),
+    R = l || O < y;
   return (0, r.jsxs)("div", {
     className: o()(E, g.container),
     children: [(0, r.jsx)("div", {
@@ -286,14 +286,14 @@ function R(e) {
       children: null == s ? (0, r.jsx)(u.$jN, {
         className: g.spinner
       }) : (0, r.jsx)(T, {
-        text: R,
+        text: w,
         language: d
       })
     }), (0, r.jsxs)(u.Text, {
       color: "text-default",
       className: g.footer,
       variant: "text-sm/normal",
-      children: [w ? (0, r.jsxs)(r.Fragment, {
+      children: [R ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(C, {
           expanded: l,
           setExpanded: c,
@@ -322,7 +322,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     url: t,
     fileName: n,
@@ -333,11 +333,11 @@ function w(e) {
     bytesLeft: c,
     onClose: d
   } = e, [f, p] = i.useState(s), _ = null != l ? l : "";
-  return 0 !== c && (_ += "... ".concat(h.intl.formatToPlainString(h.t["1+gGcK"], {
-    formattedBytes: (0, m.IC)(c)
+  return 0 !== c && (_ += "... ".concat(m.intl.formatToPlainString(m.t["1+gGcK"], {
+    formattedBytes: (0, h.IC)(c)
   }))), (0, r.jsx)(u.IX, {
     transitionState: o,
-    "aria-label": h.intl.string(h.t["qxQjc+"]),
+    "aria-label": m.intl.string(m.t["qxQjc+"]),
     size: "xxl",
     onClose: d,
     children: (0, r.jsxs)("div", {
@@ -378,8 +378,8 @@ let D = Chunk473749.memo(function(e) {
     className: l,
     onClick: c,
     onContextMenu: u
-  } = e, [f, p] = i.useState(false), [_, m] = i.useState(n.split(".").slice(false)[0]), {
-    fileContents: h,
+  } = e, [f, p] = i.useState(false), [_, h] = i.useState(n.split(".").slice(false)[0]), {
+    fileContents: m,
     bytesLeft: E,
     hadError: b
   } = I(t, s);
@@ -390,16 +390,16 @@ let D = Chunk473749.memo(function(e) {
     onClick: c,
     onContextMenu: u,
     className: l
-  }) : (0, r.jsx)(R, {
+  }) : (0, r.jsx)(w, {
     url: t,
     fileName: n,
     fileSize: a,
-    fileContents: h,
+    fileContents: m,
     bytesLeft: E,
     expanded: f,
     setExpanded: p,
     language: _,
-    setLanguage: m,
+    setLanguage: h,
     className: o()(g.newMosaicStyle, l)
   })
 }, (e, t) => e.url === t.url && e.className === t.className)

@@ -19,8 +19,8 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   let {
     onKeyDown: n,
     stickersListRef: _,
-    channel: m
-  } = e, h = (0, u.fQ)(m), g = i.useRef(null), {
+    channel: h
+  } = e, m = (0, u.fQ)(h), g = i.useRef(null), {
     searchQuery: E,
     isSearchSuggestion: b
   } = (0, c.Iu)(e => ({
@@ -45,11 +45,11 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   }, [b]), (0, r.jsx)("div", {
     className: p.wrapper,
     children: (0, r.jsx)(s.E1j, {
-      autoFocus: h,
-      disabled: !h,
+      autoFocus: m,
+      disabled: !m,
       query: E,
       ref: g,
-      placeholder: null != y ? y : h ? f.intl.string(f.t.dt5h1C) : f.intl.string(f.t["Pck/4U"]),
+      placeholder: null != y ? y : m ? f.intl.string(f.t.dt5h1C) : f.intl.string(f.t["Pck/4U"]),
       onClear: S,
       onKeyDown: n,
       onChange: v,

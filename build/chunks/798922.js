@@ -44,7 +44,7 @@ let g = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_CATEGORY, {
   A = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["+1h0k/"]),
     getLegacySearchKey: () => (0, T.Gl)("SessionsPanel") ? true : d.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
-    icon: Chunk657707.dW3,
+    icon: Chunk657707.LaptopPhoneIcon,
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: () => [s.z.AUTH_SESSIONS_NEW]

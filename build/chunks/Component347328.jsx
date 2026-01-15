@@ -2,7 +2,7 @@
 /** chunk id: 347328, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,12 +18,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   let {
     activity: t,
     entry: n,
-    display: m,
-    onAction: h,
+    display: h,
+    onAction: m,
     onClose: g
   } = e, E = (0, i.e7)([f.Z], () => null != f.Z.getAccount(null, p.ABu.CRUNCHYROLL));
   if (!(0, s.Z)(t) && !(0, c.gr)(n)) return null;
@@ -33,20 +33,20 @@ function m(e) {
       platform: o.Z.get(p.ABu.CRUNCHYROLL).name
     }),
     action: () => {
-      null == h || h({
+      null == m || m({
         action: "PRESS_CONNECT_CRUNCHYROLL_MENU_ITEM"
       }), (0, d.openUserSettings)(u.n.CONNECTIONS_PANEL, {
         section: p.oAB.CONNECTIONS
       }), null == g || g()
     }
   });
-  if ("recent" !== m || !(0, c.gr)(n)) return null;
+  if ("recent" !== h || !(0, c.gr)(n)) return null;
   let b = n.extra.url;
   return null == b || "" === b ? null : (0, r.jsx)(a.sNh, {
     id: "watch-on-crunchyroll",
     label: _.intl.string(_.t.OpxQVH),
     action: () => {
-      null == h || h({
+      null == m || m({
         action: "PRESS_WATCH_ON_CRUNCHYROLL_MENU_ITEM"
       }), (0, l.Y)(b)
     }

@@ -2,7 +2,7 @@
 /** chunk id: 881493, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => m
+  w: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,14 +16,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk870206 = require("./870206.js");
-let m = () => {
+let h = () => {
   let {
     transitionState: e,
     planId: t,
     renewalInvoice: n,
     onClose: a,
-    handleCancellation: m,
-    renewalInvoiceDetails: h,
+    handleCancellation: h,
+    renewalInvoiceDetails: m,
     fullPrice: g,
     premiumSubscription: E
   } = (0, f.a)(), [b, y] = i.useState(false), [O, v] = i.useState(false);
@@ -31,7 +31,7 @@ let m = () => {
   let S = async () => {
     y(true), v(false);
     try {
-      await m(), a()
+      await h(), a()
     } catch (e) {
       v(true), y(false)
     }
@@ -48,11 +48,11 @@ let m = () => {
     variant: "critical-primary",
     loading: b
   }];
-  if (null == h) return null;
+  if (null == m) return null;
   let {
     intervalType: T,
     intervalCount: C
-  } = h, A = (0, c.og)("".concat(g), T, C);
+  } = m, A = (0, c.og)("".concat(g), T, C);
   return (0, r.jsxs)(s.Modal, {
     size: "md",
     transitionState: e,

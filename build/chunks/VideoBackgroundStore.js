@@ -46,12 +46,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = false,
+let m = false,
   g = null,
   E = false,
   b = {};
@@ -67,7 +67,7 @@ function O(e) {
   let {
     videoFilterAsset: t
   } = e;
-  b = m(p({}, b), {
+  b = h(p({}, b), {
     [t.id]: t
   })
 }
@@ -98,7 +98,7 @@ function T(e) {
   let {
     settings: t
   } = e;
-  a.TO.CAMERA_BACKGROUND_LIVE in t && (h = true)
+  a.TO.CAMERA_BACKGROUND_LIVE in t && (m = true)
 }
 
 function C() {
@@ -106,7 +106,7 @@ function C() {
 }
 
 function A() {
-  h = false, E = false, g = null, b = {}
+  m = false, E = false, g = null, b = {}
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -116,7 +116,7 @@ class N extends(r = Chunk442837.ZP.Store) {
     return b
   }
   get hasBeenApplied() {
-    return h
+    return m
   }
   get hasUsedBackgroundInCall() {
     return E

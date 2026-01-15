@@ -42,8 +42,8 @@ let _ = Chunk473749.forwardRef(function(e, t) {
     description: l,
     children: f,
     className: _,
-    errors: m,
-    disabled: h = false,
+    errors: h,
+    disabled: m = false,
     hideDivider: g = false,
     showBorder: E = false,
     borderType: b,
@@ -53,7 +53,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   } = e;
   return (0, r.jsx)("div", {
     className: o()(d.customizationSection, _, {
-      [d.disabled]: h,
+      [d.disabled]: m,
       [d.hideDivider]: g,
       [d.showBorder]: E,
       [d.withDivider]: O
@@ -75,8 +75,8 @@ let _ = Chunk473749.forwardRef(function(e, t) {
         className: d.sectionDescription,
         "data-migration-pending": true,
         children: l
-      }) : null, f, null != m && (0, r.jsx)(p, {
-        errors: m
+      }) : null, f, null != h && (0, r.jsx)(p, {
+        errors: h
       })]
     })
   })

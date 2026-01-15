@@ -26,16 +26,16 @@ let d = {
       n = e.options,
       a = e.name;
     if (!t.modifiersData[a]._skip) {
-      for (var d = n.mainAxis, f = true === d || d, p = n.altAxis, _ = true === p || p, m = n.fallbackPlacements, h = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, v = n.allowedAutoPlacements, S = t.options.placement, I = (0, i.Z)(S), T = I === S, C = m || (T || !O ? [(0, r.Z)(S)] : u(S)), A = [S].concat(C).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = true === d || d, p = n.altAxis, _ = true === p || p, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, v = n.allowedAutoPlacements, S = t.options.placement, I = (0, i.Z)(S), T = I === S, C = h || (T || !O ? [(0, r.Z)(S)] : u(S)), A = [S].concat(C).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,
             rootBoundary: E,
-            padding: h,
+            padding: m,
             flipVariations: O,
             allowedAutoPlacements: v
           }) : n)
-        }, []), N = t.rects.reference, P = t.rects.popper, R = new Map, w = true, D = A[0], x = 0; x < A.length; x++) {
+        }, []), N = t.rects.reference, P = t.rects.popper, w = new Map, R = true, D = A[0], x = 0; x < A.length; x++) {
         var L = A[x],
           j = (0, i.Z)(L),
           M = (0, c.Z)(L) === l.BL,
@@ -46,7 +46,7 @@ let d = {
             boundary: g,
             rootBoundary: E,
             altBoundary: b,
-            padding: h
+            padding: m
           }),
           Z = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
         N[U] > P[U] && (Z = (0, r.Z)(Z));
@@ -55,15 +55,15 @@ let d = {
         if (f && B.push(G[j] <= 0), _ && B.push(G[Z] <= 0, G[F] <= 0), B.every(function(e) {
             return e
           })) {
-          D = L, w = false;
+          D = L, R = false;
           break
         }
-        R.set(L, B)
+        w.set(L, B)
       }
-      if (w)
+      if (R)
         for (var V = O ? 3 : 1, H = function(e) {
             var t = A.find(function(t) {
-              var n = R.get(t);
+              var n = w.get(t);
               if (n) return n.slice(0, e).every(function(e) {
                 return e
               })

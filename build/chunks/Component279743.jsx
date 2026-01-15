@@ -16,15 +16,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk663389 = require("./663389.js"),
   Chunk7822 = require("./7822.js");
 let _ = 200,
-  m = 200;
+  h = 200;
 
-function h(e) {
+function m(e) {
   let {
     children: t,
     className: n,
     onFlashEnd: a,
     animationDelay: u = 500
-  } = e, f = c.TVs.colors.TEXT_LINK, h = (0, c.dQu)(f).spring({
+  } = e, f = c.TVs.colors.TEXT_LINK, m = (0, c.dQu)(f).spring({
     opacity: 0
   }), g = (0, c.dQu)(f).spring({
     opacity: .1
@@ -36,11 +36,11 @@ function h(e) {
     e.finished && (null == a || a())
   }, [O, v] = (0, c.q_F)(() => ({
     from: {
-      backgroundColor: h,
-      borderColor: h
+      backgroundColor: m,
+      borderColor: m
     }
   }), "animate-never"), S = {
-    startColor: h,
+    startColor: m,
     handleRest: y,
     endColor: E,
     targetBorderColor: b,
@@ -59,7 +59,7 @@ function h(e) {
       animationDelay: a
     } = I.current, {
       useReducedMotion: o
-    } = d.Z, s = o ? 0 : _, c = a + _ + m;
+    } = d.Z, s = o ? 0 : _, c = a + _ + h;
     v({
       reset: true,
       immediate: false,
@@ -110,7 +110,7 @@ function g(e) {
   } = e, o = (0, u.e7)([f.Z], () => f.Z.getScrollPosition() === n), [s, l] = i.useState(false);
   return (i.useEffect(() => {
     o && l(true)
-  }, [o]), s) ? (0, r.jsx)(h, {
+  }, [o]), s) ? (0, r.jsx)(m, {
     animationDelay: a,
     onFlashEnd: () => l(false),
     children: t

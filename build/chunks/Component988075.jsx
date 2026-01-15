@@ -21,8 +21,8 @@ function p(e) {
     name: n,
     size: a,
     spoiler: p
-  } = e, _ = i.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [m, h] = i.useState(p), [g, E] = i.useState(p);
-  p !== m && (h(p), E(p));
+  } = e, _ = i.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [h, m] = i.useState(p), [g, E] = i.useState(p);
+  p !== h && (m(p), E(p));
   let b = i.useMemo(() => () => (0, r.jsx)(c.mz, {
       mimeType: _,
       downloadURL: t.url,

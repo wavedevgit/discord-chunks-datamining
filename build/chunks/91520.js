@@ -19,7 +19,7 @@ if (!O) {
   var v = new Chunk557655,
     S = function() {
       var e, t;
-      for (h && (e = b.domain) && e.exit(); t = v.get();) try {
+      for (m && (e = b.domain) && e.exit(); t = v.get();) try {
         t()
       } catch (e) {
         throw v.head && r(), e

@@ -28,7 +28,7 @@ let g = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
   N = (0, Chunk509613.m7)(Chunk313789.n.SUBSCRIPTIONS_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t.trSpHX),
     getLegacySearchKey: () => (0, c.Gl)("SubscriptionsPanel") ? true : d.s6.SUBSCRIPTIONS,
-    icon: Chunk657707.XOf,
+    icon: Chunk657707.SubscriptionIcon,
     trailing: {
       type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
       useCustomDecoration: () => (0, r.U)() ? (0, i.jsx)(s.Mgn, {

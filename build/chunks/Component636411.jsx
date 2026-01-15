@@ -27,7 +27,7 @@ function y(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = h.intl.string(h.t.eikz43), v = (0, d.N)(), S = (0, u.N)(), I = (null == v ? true : v.subscription_trial) != null || null != S, T = {
+  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.N)(), S = (0, u.N)(), I = (null == v ? true : v.subscription_trial) != null || null != S, T = {
     object: _.qAy.BUTTON_CTA,
     section: _.jXE.SUPER_REACTION_PICKER
   };
@@ -36,7 +36,7 @@ function y(e) {
     children: [(0, r.jsx)(s.P3F, {
       onClick: i,
       className: g.closeButton,
-      "aria-label": h.intl.string(h.t.WAI6xu),
+      "aria-label": m.intl.string(m.t.WAI6xu),
       children: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor"
@@ -56,9 +56,9 @@ function y(e) {
           controls: true
         })
       }), I ? (0, r.jsx)(p.ZP, {
-        type: m.cd.BURST_REACTION_QUICK_ACTION_UPSELL,
-        subscriptionTier: null != (n = null == v || null == (t = v.subscription_trial) ? true : t.sku_id) ? n : m.Si.TIER_2,
-        headingText: h.intl.string(h.t.Wfl5zp),
+        type: h.cd.BURST_REACTION_QUICK_ACTION_UPSELL,
+        subscriptionTier: null != (n = null == v || null == (t = v.subscription_trial) ? true : t.sku_id) ? n : h.Si.TIER_2,
+        headingText: m.intl.string(m.t.Wfl5zp),
         analyticsLocationObject: T,
         discountOffer: S,
         trialOffer: v,
@@ -75,7 +75,7 @@ function y(e) {
           }), (0, r.jsx)(s.Heading, {
             className: g.headerText,
             variant: "heading-xl/bold",
-            children: h.intl.string(h.t.Wfl5zp)
+            children: m.intl.string(m.t.Wfl5zp)
           })]
         }), (0, r.jsx)(s.Text, {
           className: g.subheaderText,
@@ -84,9 +84,9 @@ function y(e) {
         }), (0, r.jsx)("div", {
           className: g.ctaActionWrapper,
           children: (0, r.jsx)(f.Z, {
-            subscriptionTier: m.Si.TIER_2,
+            subscriptionTier: h.Si.TIER_2,
             textOptions: {
-              textOverride: h.intl.string(h.t.sEAnVH)
+              textOverride: m.intl.string(m.t.sEAnVH)
             }
           })
         })]

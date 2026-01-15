@@ -4,8 +4,8 @@
 require.d(exports, {
   Ao: () => g,
   Jv: () => _,
-  M0: () => m,
-  Qj: () => h,
+  M0: () => h,
+  Qj: () => m,
   VO: () => b,
   YO: () => E
 }), require("./413496.js"), require("./433524.js"), require("./35282.js");
@@ -21,9 +21,9 @@ let l = Array.from(require("./176505.js").Vg).map(e => o.Z.escape(e)).join("|"),
   f = RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?"),
   p = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   _ = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|".concat(Chunk981631.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
-  m = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
+  h = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 
-function h(e) {
+function m(e) {
   if (null == e) return null;
   let t = e.match(u);
   if (null != t && t.length > 3) return {

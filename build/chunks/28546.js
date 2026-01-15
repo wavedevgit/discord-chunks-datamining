@@ -6,9 +6,9 @@ require.d(exports, {
   PG: () => d,
   RO: () => _,
   _Q: () => f,
-  hr: () => m,
+  hr: () => h,
   j9: () => p,
-  ql: () => h
+  ql: () => m
 });
 var Chunk97613 = require("./97613.js"),
   i = require.n(Chunk97613),
@@ -63,13 +63,13 @@ let c = Object.freeze({
   _ = (e, t, n) => {
     u.getState().activeView === e ? f() : d(e, t, n)
   },
-  m = e => {
+  h = e => {
     (0, s.j)(() => u.setState({
       activeView: e,
       lastActiveView: u.getState().activeView
     }))
   },
-  h = function(e) {
+  m = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     (0, s.j)(() => u.setState({
       searchQuery: e,

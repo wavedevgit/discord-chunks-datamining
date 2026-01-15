@@ -25,8 +25,8 @@ function o(e) {
     isMessageSnapshot: f,
     renderThreadAccessory: p,
     renderSuppressEmbeds: _,
-    renderReactions: m,
-    forceAddReactions: h,
+    renderReactions: h,
+    forceAddReactions: m,
     disableComponentInteractivity: g,
     className: E
   } = e;
@@ -45,8 +45,8 @@ function o(e) {
       renderThreadAccessory: p,
       disableComponentInteractivity: g,
       renderSuppressEmbeds: _,
-      forceAddReactions: h,
-      renderReactions: m
+      forceAddReactions: m,
+      renderReactions: h
     })
   })
 }

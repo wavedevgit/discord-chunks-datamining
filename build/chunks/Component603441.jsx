@@ -76,8 +76,8 @@ function _(e) {
     badge: u,
     title: p,
     subtitle: _,
-    actionBarInput: m,
-    actions: h,
+    actionBarInput: h,
+    actions: m,
     children: g
   } = e, E = f(e, ["size", "gradientColor", "graphic", "badge", "title", "subtitle", "actionBarInput", "actions", "children"]);
   return (0, r.jsxs)(i.I, d(c({}, E), {
@@ -92,9 +92,9 @@ function _(e) {
     }), (0, r.jsx)(o.f, {
       children: g
     }), (0, r.jsx)(a.G, {
-      leading: m,
-      actions: h,
-      actionsFullWidth: null == m
+      leading: h,
+      actions: m,
+      actionsFullWidth: null == h
     })]
   }))
 }

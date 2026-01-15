@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B7: () => N,
-  ZP: () => w,
+  ZP: () => R,
   v0: () => P,
   wu: () => A
 });
@@ -46,7 +46,7 @@ function C() {
 function A(e) {
   let {
     showHeader: t = false
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.isSyncing), o = (0, a.e7)([h.Z], () => h.Z.paymentSources), l = (0, a.e7)([h.Z], () => h.Z.defaultPaymentSourceId), c = (0, a.e7)([E.default], () => E.default.locale), d = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), f = (0, a.e7)([m.Z], () => m.Z.isRemovingPaymentSource), p = (0, a.e7)([m.Z], () => m.Z.isUpdatingPaymentSource);
+  } = e, n = (0, a.e7)([h.Z], () => h.Z.isSyncing), o = (0, a.e7)([m.Z], () => m.Z.paymentSources), l = (0, a.e7)([m.Z], () => m.Z.defaultPaymentSourceId), c = (0, a.e7)([E.default], () => E.default.locale), d = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), f = (0, a.e7)([h.Z], () => h.Z.isRemovingPaymentSource), p = (0, a.e7)([h.Z], () => h.Z.isUpdatingPaymentSource);
   return (i.useEffect(() => {
     s.tZ(), s.jg()
   }, []), n && 0 === Object.keys(o).length) ? (0, r.jsx)(T, {}) : (0, r.jsx)(u.Z, {
@@ -82,7 +82,7 @@ function P() {
   })
 }
 
-function R() {
+function w() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(f.F, {
       setting: O.s6.BILLING_PAYMENT_METHODS,
@@ -107,8 +107,8 @@ function R() {
   })
 }
 
-function w() {
+function R() {
   let e = (0, a.e7)([_.default], () => null != _.default.getCurrentUser()),
     t = (0, a.e7)([p.Z], () => p.Z.enabled);
-  return e ? t ? (0, r.jsx)(l.Z, {}) : (0, r.jsx)(R, {}) : (0, r.jsx)(T, {})
+  return e ? t ? (0, r.jsx)(l.Z, {}) : (0, r.jsx)(w, {}) : (0, r.jsx)(T, {})
 }

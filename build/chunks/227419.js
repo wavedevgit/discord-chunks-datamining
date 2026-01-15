@@ -18,11 +18,11 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   switch (e) {
     case _.nkL.GIF.title:
     case _.nkL.TENOR.title:
-      return m.intl.string(m.t["0vrCgJ"]);
+      return h.intl.string(h.t["0vrCgJ"]);
     default:
       return ""
   }
@@ -35,20 +35,20 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
   inputType: f.iw.BUILT_IN_INTEGRATION,
   applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
-    return h(e.title)
+    return m(e.title)
   },
   get displayDescription() {
-    return h(e.title)
+    return m(e.title)
   },
   options: e.type === _.q9n.GIF ? [{
     name: "query",
     displayName: "query",
     type: l.jw.STRING,
     get description() {
-      return m.intl.string(m.t["+9g3Du"])
+      return h.intl.string(h.t["+9g3Du"])
     },
     get displayDescription() {
-      return m.intl.string(m.t["+9g3Du"])
+      return h.intl.string(h.t["+9g3Du"])
     },
     required: true
   }] : [],
@@ -62,20 +62,20 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
   inputType: Chunk895924.iw.BUILT_IN,
   applicationId: Chunk689079.bi.BUILT_IN,
   get untranslatedDescription() {
-    return m.intl.string(m.t["26C4oi"])
+    return h.intl.string(h.t["26C4oi"])
   },
   get displayDescription() {
-    return m.intl.string(m.t["26C4oi"])
+    return h.intl.string(h.t["26C4oi"])
   },
   options: [{
     name: "silent",
     displayName: "silent",
     type: Chunk911969.jw.BOOLEAN,
     get description() {
-      return m.intl.string(m.t.YH7PkD)
+      return h.intl.string(h.t.YH7PkD)
     },
     get displayDescription() {
-      return m.intl.string(m.t.bq3JXs)
+      return h.intl.string(h.t.bq3JXs)
     },
     required: false
   }],
@@ -92,29 +92,29 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
     } = t;
     if (null == i) return;
     let l = (0, c.F6)(i, d.default, u.Z),
-      f = m.intl.formatToPlainString(m.t.hJ5Ap4, {
+      f = h.intl.formatToPlainString(h.t.hJ5Ap4, {
         name: l
       }),
-      p = m.intl.format(m.t.SSIVOu, {
+      p = h.intl.format(h.t.SSIVOu, {
         name: l
       }),
       _ = null != (r = null == (n = e.find(e => "silent" === e.name)) ? true : n.value) && r;
-    async function h() {
+    async function m() {
       if (null != i) try {
         await o.Z.closePrivateChannel(i.id, true, _)
       } catch (e) {
-        s.Z.sendBotMessage(i.id, m.intl.string(m.t["YOsuT/"]))
+        s.Z.sendBotMessage(i.id, h.intl.string(h.t["YOsuT/"]))
       }
     }
-    i.isManaged() && (f = m.intl.formatToPlainString(m.t.hVGjEW, {
+    i.isManaged() && (f = h.intl.formatToPlainString(h.t.hVGjEW, {
       name: l
-    }), p = m.intl.format(m.t.IK1Qvs, {
+    }), p = h.intl.format(h.t.IK1Qvs, {
       name: l
     })), (0, a.Z)({
       title: f,
       subtitle: p,
-      confirmText: m.intl.string(m.t["26C4oi"]),
-      onConfirm: h
+      confirmText: h.intl.string(h.t["26C4oi"]),
+      onConfirm: m
     })
   }
 }, {
@@ -125,20 +125,20 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
   inputType: Chunk895924.iw.BUILT_IN_INTEGRATION,
   applicationId: Chunk689079.bi.BUILT_IN,
   get untranslatedDescription() {
-    return m.intl.string(m.t.GUH9II)
+    return h.intl.string(h.t.GUH9II)
   },
   get displayDescription() {
-    return m.intl.string(m.t.GUH9II)
+    return h.intl.string(h.t.GUH9II)
   },
   options: [{
     name: "query",
     displayName: "query",
     type: Chunk911969.jw.STRING,
     get description() {
-      return m.intl.string(m.t.hIbHm1)
+      return h.intl.string(h.t.hIbHm1)
     },
     get displayDescription() {
-      return m.intl.string(m.t.hIbHm1)
+      return h.intl.string(h.t.hIbHm1)
     },
     required: true
   }],

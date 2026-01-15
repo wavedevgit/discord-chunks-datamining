@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   b: () => _,
-  z: () => m
+  z: () => h
 });
 var Chunk595707 = require("./595707.js"),
   Chunk582465 = require("./582465.js"),
@@ -17,17 +17,17 @@ var Chunk595707 = require("./595707.js"),
   Chunk880016 = require("./880016.js"),
   Chunk473749 = require("./473749.js");
 let _ = (0, Chunk473749.createContext)({}),
-  m = (0, Chunk176159.qW)(function(e, t) {
+  h = (0, Chunk176159.qW)(function(e, t) {
     [e, t] = (0, r.pE)(e, t, _);
     let n = e,
       {
         isPending: d
       } = n,
       {
-        buttonProps: m,
+        buttonProps: h,
         isPressed: g
       } = (0, o.U)(e, t);
-    m = h(m, d);
+    h = m(h, d);
     let {
       focusProps: E,
       isFocused: b,
@@ -49,8 +49,8 @@ let _ = (0, Chunk473749.createContext)({}),
       ...e,
       values: S,
       defaultClassName: "react-aria-Button"
-    }), T = (0, c.Me)(m.id), C = (0, c.Me)(), A = m["aria-labelledby"];
-    d && (A ? A = `${A} ${C}` : m["aria-label"] && (A = `${T} ${C}`));
+    }), T = (0, c.Me)(h.id), C = (0, c.Me)(), A = h["aria-labelledby"];
+    d && (A ? A = `${A} ${C}` : h["aria-label"] && (A = `${T} ${C}`));
     let N = (0, p.useRef)(d);
     (0, p.useEffect)(() => {
       let e = {
@@ -62,13 +62,13 @@ let _ = (0, Chunk473749.createContext)({}),
       global: true
     });
     return delete P.onClick, p.createElement("button", {
-      ...(0, u.d)(P, I, m, E, O),
-      type: "submit" === m.type && d ? "button" : m.type,
+      ...(0, u.d)(P, I, h, E, O),
+      type: "submit" === h.type && d ? "button" : h.type,
       id: T,
       ref: t,
       "aria-labelledby": A,
       slot: e.slot || true,
-      "aria-disabled": d ? "true" : m["aria-disabled"],
+      "aria-disabled": d ? "true" : h["aria-disabled"],
       "data-disabled": e.isDisabled || true,
       "data-pressed": S.isPressed || true,
       "data-hovered": v || true,
@@ -82,7 +82,7 @@ let _ = (0, Chunk473749.createContext)({}),
     }, I.children))
   });
 
-function h(e, t) {
+function m(e, t) {
   if (t) {
     for (let t in e) t.startsWith("on") && !(t.includes("Focus") || t.includes("Blur")) && (e[t] = true);
     e.href = true, e.target = true

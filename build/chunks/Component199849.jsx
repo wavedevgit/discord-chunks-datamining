@@ -150,12 +150,12 @@ function P(e, t) {
   }
 }
 
-function R(e) {
+function w(e) {
   return null == e ? true : e.label
 }
 
-function w(e) {
-  return e.map(e => R(e)).join(", ")
+function R(e) {
+  return e.map(e => w(e)).join(", ")
 }
 
 function D(e) {
@@ -166,14 +166,14 @@ function D(e) {
     isDisabled: s = false,
     maxVisibleItems: l = 7,
     autoFocus: f = false,
-    popoutWidth: m,
-    clearable: h = false,
+    popoutWidth: h,
+    clearable: m = false,
     size: b = "md",
     variant: O = "filled",
     onClose: I,
     onOpen: T,
-    renderOptionLabel: C = R,
-    renderOptionValue: A = w,
+    renderOptionLabel: C = w,
+    renderOptionValue: A = R,
     popoutClassName: N,
     popoutPosition: P = "bottom",
     popoutLayerContext: D,
@@ -244,7 +244,7 @@ function D(e) {
         className: N,
         closeOnSelect: j,
         maxVisibleItems: l,
-        width: "auto" === m ? true : null != m ? m : $,
+        width: "auto" === h ? true : null != h ? h : $,
         isSelected: k,
         closePopout: n,
         buttonHeight: null != ee ? ee : 0,
@@ -317,7 +317,7 @@ function D(e) {
               dotRadius: 3.5,
               themed: true
             }) : (0, r.jsxs)(r.Fragment, {
-              children: [h ? (0, r.jsx)(p.P3F, {
+              children: [m ? (0, r.jsx)(p.P3F, {
                 role: "button",
                 "aria-disabled": s,
                 onClick: ea,
@@ -349,25 +349,25 @@ function x(e) {
     options: f,
     width: p,
     maxVisibleItems: _,
-    renderOptionLabel: h,
+    renderOptionLabel: m,
     serialize: g,
     optionClassName: b,
     buttonHeight: O,
     updatePosition: I,
     popoutPosition: T
-  } = e, [C, A] = i.useState(0), N = i.useRef(null), P = i.useId(), R = (0, s.ZP)({
+  } = e, [C, A] = i.useState(0), N = i.useRef(null), P = i.useId(), w = (0, s.ZP)({
     id: P,
     async scrollToEnd() {},
     async scrollToStart() {},
     isEnabled: true,
     wrap: true
-  }), w = i.useRef(null);
-  (0, u.Tbt)(w), i.useLayoutEffect(() => {
+  }), R = i.useRef(null);
+  (0, u.Tbt)(R), i.useLayoutEffect(() => {
     var e;
-    null == (e = w.current) || e.focus()
+    null == (e = R.current) || e.focus()
   }, []), i.useEffect(() => {
     O > 0 && I()
-  }, [O, I]), (0, m.Z)(I), i.useLayoutEffect(() => {
+  }, [O, I]), (0, h.Z)(I), i.useLayoutEffect(() => {
     var e, t;
     let n = null == (t = N.current) || null == (e = t.getBoundingClientRect()) ? true : e.height;
     null != n && A(n)
@@ -382,17 +382,17 @@ function x(e) {
       return (0, r.jsx)(L, {
         isSelected: d(e.value),
         value: e.value,
-        label: h(e),
+        label: m(e),
         onSelect: D,
         className: b,
         isDisabled: e.disabled,
         preventCloseOnSelect: e.preventCloseOnSelect,
         serialize: g
       }, null != (n = e.key) ? n : t)
-    }), [D, d, b, f, h, g]),
+    }), [D, d, b, f, m, g]),
     j = f.length <= _ ? u.xVE : u.h21;
   return (0, r.jsx)(l.bG, {
-    navigator: R,
+    navigator: w,
     children: (0, r.jsx)(l.SJ, {
       children: e => {
         var {
@@ -410,7 +410,7 @@ function x(e) {
             ref: e => {
               var t;
               let r = null != (t = null == e ? true : e.getScrollerNode()) ? t : null;
-              n.current = r, w.current = r
+              n.current = r, R.current = r
             }
           }, i), {
             role: "listbox",
@@ -468,7 +468,7 @@ function j(e) {
     value: i,
     onChange: a
   } = e, o = S(e, ["renderLeading", "renderTrailing", "value", "onChange"]);
-  let s = (0, h.l)("SingleSelect"),
+  let s = (0, m.l)("SingleSelect"),
     l = T({
       value: i,
       onChange: a
@@ -478,7 +478,7 @@ function j(e) {
       options: d,
       autoFocus: p,
       required: _,
-      isDisabled: m,
+      isDisabled: h,
       isProcessing: g,
       clearable: b,
       closeOnSelect: O = true,
@@ -489,11 +489,11 @@ function j(e) {
       renderOptionLabel: P
     } = o,
     {
-      fieldProps: R
+      fieldProps: w
     } = (0, u.XF_)(o),
-    w = "text-only" === N || null != P;
-  if (s && !w) {
-    let e = null == R.label && null != C;
+    R = "text-only" === N || null != P;
+  if (s && !R) {
+    let e = null == w.label && null != C;
     return (0, r.jsx)(f.P, v(y({
       id: c,
       selectionMode: "single",
@@ -521,15 +521,15 @@ function j(e) {
       fullWidth: true,
       autoFocus: p,
       required: _,
-      disabled: m,
+      disabled: h,
       loading: g,
       clearable: b,
       closeOnSelect: O,
       maxOptionsVisible: I,
       placeholder: A
-    }, R), {
-      label: e ? C : R.label,
-      hideLabel: true === R.hideLabel || e
+    }, w), {
+      label: e ? C : w.label,
+      hideLabel: true === w.hideLabel || e
     }))
   }
 
@@ -550,14 +550,14 @@ function M(e) {
       renderTrailing: a
     } = e,
     o = S(e, ["renderLeading", "renderTrailing"]);
-  let s = (0, h.l)("Select"),
+  let s = (0, m.l)("Select"),
     {
       id: l,
       serialize: c,
       options: d,
       select: p,
       autoFocus: _,
-      required: m,
+      required: h,
       isDisabled: g,
       isProcessing: b,
       clearable: O,
@@ -567,14 +567,14 @@ function M(e) {
       "aria-label": A,
       variant: N,
       isSelected: P,
-      renderOptionLabel: R
+      renderOptionLabel: w
     } = o,
     {
-      fieldProps: w
+      fieldProps: R
     } = (0, u.XF_)(o),
-    x = "text-only" === N || null != R;
+    x = "text-only" === N || null != w;
   if (s && !x) {
-    let e = null == w.label && null != A;
+    let e = null == R.label && null != A;
     return (0, r.jsx)(f.P, v(y({
       id: l,
       selectionMode: "single",
@@ -601,16 +601,16 @@ function M(e) {
       },
       fullWidth: true,
       autoFocus: _,
-      required: m,
+      required: h,
       disabled: g,
       loading: b,
       clearable: O,
       closeOnSelect: I,
       maxOptionsVisible: T,
       placeholder: C
-    }, w), {
-      label: e ? A : w.label,
-      hideLabel: true === w.hideLabel || e
+    }, R), {
+      label: e ? A : R.label,
+      hideLabel: true === R.hideLabel || e
     }))
   }
 
@@ -621,6 +621,6 @@ function M(e) {
     })
   }
   return (0, r.jsx)(D, v(y({}, o), {
-    renderOptionLabel: null != R ? R : L()
+    renderOptionLabel: null != w ? w : L()
   }))
 }

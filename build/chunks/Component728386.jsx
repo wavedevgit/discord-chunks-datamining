@@ -68,23 +68,23 @@ function O(e, t) {
   }, [a, g.id]), {
     Component: N,
     events: P,
-    play: R
-  } = (0, l.z)(), w = (0, f.v)(u.U);
+    play: w
+  } = (0, l.z)(), R = (0, f.v)(u.U);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(_.CT, h.buttonContainer),
+    className: o()(_.CT, m.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.u, {
-      shouldShow: null != w,
-      text: m.intl.string(m.t.oOJ7KU),
-      keyboardShortcut: w,
+      shouldShow: null != R,
+      text: h.intl.string(h.t.oOJ7KU),
+      keyboardShortcut: R,
       children: (0, r.jsx)(p.Z, y(E({
-        className: o()(h.button, h.stickerButton)
+        className: o()(m.button, m.stickerButton)
       }, P), {
         onClick: () => {
-          A(), R()
+          A(), w()
         },
         isActive: T,
-        "aria-label": m.intl.string(m.t.rZpidU),
+        "aria-label": h.intl.string(h.t.rZpidU),
         "aria-expanded": T,
         "aria-haspopup": "dialog",
         "aria-controls": O,

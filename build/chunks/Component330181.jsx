@@ -2,7 +2,7 @@
 /** chunk id: 330181, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ let p = "MMM DD, YYYY",
     }
   };
 
-function m(e) {
+function h(e) {
   let {
     groupListingId: t,
     subscription: n,
@@ -41,8 +41,8 @@ function m(e) {
   } = e, {
     analyticsLocations: s
   } = (0, c.ZP)(l.Z.PENDING_PLAN_CHANGE_NOTICE), {
-    resetRenewalMutation: m,
-    submitting: h,
+    resetRenewalMutation: h,
+    submitting: m,
     error: g
   } = _(s), E = (0, u._k)(t, {
     includeSoftDeleted: true
@@ -62,7 +62,7 @@ function m(e) {
     }
   }, [n, E]);
   if (null == n || null == b || null == y) return null;
-  let O = () => m(n),
+  let O = () => h(n),
     v = o()(n.currentPeriodEnd).format(p);
   return (0, r.jsx)(d.Z, {
     message: f.intl.format(f.t.chw89X, {
@@ -72,7 +72,7 @@ function m(e) {
     }),
     error: null == g ? true : g.message,
     onClick: O,
-    submitting: h,
+    submitting: m,
     ctaMessage: f.intl.string(f.t.De4wI8),
     className: a
   })

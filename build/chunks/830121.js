@@ -14,7 +14,7 @@ var r, i, a, o, s, l, c, u, d, Chunk512722 = require("./512722.js"),
   p = require.n(Chunk512722),
   Chunk593473 = require("./593473.js"),
   Chunk159635 = require("./159635.js"),
-  h = require.n(Chunk159635),
+  m = require.n(Chunk159635),
   Chunk729594 = require("./729594.js"),
   Chunk243814 = require("./243814.js"),
   Chunk421474 = require("./421474.js");
@@ -30,8 +30,8 @@ var Chunk807675 = require("./807675.js"),
 let A = 10,
   N = /^\/([a-zA-Z0-9-]+)$/,
   P = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
-  R = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
-  w = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
+  w = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
+  R = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
   x = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
   L = /^\/activities\/([0-9-]+)\/?$/,
@@ -70,7 +70,7 @@ function X(e) {
   }
 }
 let J = e => e.replaceAll(ee, " $2 "),
-  $ = null == (a = h().defaultRules.link) || null == (i = a.match) || null == (r = i.regex) ? true : r.source;
+  $ = null == (a = m().defaultRules.link) || null == (i = a.match) || null == (r = i.regex) ? true : r.source;
 p()($, "SimpleMarkdown link regex is not set."), "^" === $[0] && ($ = $.substring(1));
 let ee = RegExp($, "g");
 
@@ -96,7 +96,7 @@ function er(e) {
 
 function ei(e) {
   if (null == e) return null;
-  let t = e.match(w);
+  let t = e.match(R);
   return null != t && t.length >= 4 ? {
     guildId: t[1],
     guildEventId: t[2],
@@ -166,7 +166,7 @@ function es(e) {
       if (v.Z.getInvite(t), e.includes("\\")) continue;
       d(T.g.INVITE, t)
     }(null == c ? true : c.match(N)) != null && d(T.g.TEMPLATE, c.substring(1));
-    let f = null == u ? true : u.match(R);
+    let f = null == u ? true : u.match(w);
     if (null != f) {
       let t = f[1].toUpperCase();
       if (t === T.g.INVITE) {
@@ -181,15 +181,15 @@ function es(e) {
         t = e.clientId;
       null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== E.x.APPLICATIONS_COMMANDS)) || d(T.g.APP_OAUTH2_LINK, t)
     }
-    let m = null == u ? true : u.match(D);
-    if (null != m) {
-      let e = m[2];
+    let h = null == u ? true : u.match(D);
+    if (null != h) {
+      let e = h[2];
       d(T.g.APP_DIRECTORY_PROFILE, e)
     }
-    let h = null == u ? true : u.match(x);
-    if (null != h) {
-      let e = h[2],
-        t = h[3];
+    let m = null == u ? true : u.match(x);
+    if (null != m) {
+      let e = m[2],
+        t = m[3];
       if (null != t) {
         let n = (0, b.l)(e, t);
         d(T.g.APP_DIRECTORY_STOREFRONT_SKU, n)
@@ -206,8 +206,8 @@ function es(e) {
     null != I && d(T.g.SERVER_SHOP, I[1]);
     let C = null == u ? true : u.match(M);
     null != C && d(T.g.SOCIAL_LAYER_STOREFRONT, "".concat(C[3], "-").concat(null != (o = C[1]) ? o : C[2]));
-    let w = el(e);
-    if (null != w && d(T.g.QUESTS_EMBED, w), "/shop" === u) {
+    let R = el(e);
+    if (null != R && d(T.g.QUESTS_EMBED, R), "/shop" === u) {
       let e = null != r.query ? (0, _.parse)(r.query).tab : null,
         t = null == (s = r.hash) ? true : s.match(Z);
       d(T.g.COLLECTIBLES_SHOP, "".concat(null != e ? e : "", "-").concat(null != (l = null == t ? true : t[1]) ? l : ""))

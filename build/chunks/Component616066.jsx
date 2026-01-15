@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,7 +62,7 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       isHighlighted: i = false,
       avatarSize: u = s.EFr.SIZE_152,
       avatarPlaceholderSrc: p,
-      className: m
+      className: h
     } = e, E = (0, l.y9)(u), {
       avatarDecorationSrc: b,
       eventHandlers: y,
@@ -75,11 +75,11 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
     }), v = d.intl.formatToPlainString(d.t.Do2lxE, {
       a11y_text: t.label
     });
-    return (0, r.jsx)(g, h(_({}, y), {
+    return (0, r.jsx)(g, m(_({}, y), {
       avatarDecoration: b,
       src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != p ? p : O,
       imageClassName: i ? f.fadeInAvatarImg : true,
-      className: a()(m, f.avatar),
+      className: a()(h, f.avatar),
       size: u,
       "aria-label": v
     }))

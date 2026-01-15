@@ -5,8 +5,8 @@ require.d(exports, {
   F6: () => _,
   ZP: () => g,
   cO: () => p,
-  le: () => m,
-  mA: () => h,
+  le: () => h,
+  mA: () => m,
   on: () => f,
   pT: () => d
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
@@ -64,7 +64,7 @@ function _(e, t, n) {
     case c.d4z.GUILD_VOICE:
     case c.d4z.GUILD_STAGE_VOICE:
     case c.d4z.GUILD_CATEGORY:
-      if (i) return '#"'.concat(m(e.name), '"');
+      if (i) return '#"'.concat(h(e.name), '"');
       if (r && e.isThread()) return '"'.concat(e.name, '"');
       return e.name;
     default:
@@ -72,11 +72,11 @@ function _(e, t, n) {
   }
 }
 
-function m(e) {
+function h(e) {
   return e.replace(/\\/g, "\\\\").replace(/"/g, '\\"')
 }
 
-function h(e) {
+function m(e) {
   return e.replace(/\\"/g, '"').replace(/\\\\/g, "\\")
 }
 

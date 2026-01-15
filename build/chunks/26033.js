@@ -4,10 +4,10 @@
 require.d(exports, {
   Cb: () => a,
   KF: () => u,
-  Mq: () => h,
+  Mq: () => m,
   Q0: () => o,
   Rh: () => g,
-  aA: () => m,
+  aA: () => h,
   dU: () => c,
   dX: () => s,
   kq: () => d,
@@ -57,11 +57,11 @@ function _(e) {
   return !!s(e) && e.extra.platform === i.z.PLAYSTATION
 }
 
-function m(e) {
+function h(e) {
   return p(e) || _(e)
 }
 
-function h(e) {
+function m(e) {
   return (null == e ? true : e.content_type) === r.s.LAUNCHED_ACTIVITY
 }
 

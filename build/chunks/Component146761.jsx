@@ -73,7 +73,7 @@ let T = () => (0, r.jsxs)(o.Kqy, {
     children: [(0, r.jsx)(o.Heading, {
       variant: "display-md",
       className: y.logoHeader,
-      children: (0, h.sO)()
+      children: (0, m.sO)()
     }), (0, r.jsx)(o.Cts, {
       type: "beta",
       variant: "expressive"
@@ -137,8 +137,8 @@ let T = () => (0, r.jsxs)(o.Kqy, {
           case g.O0b.PAUSED:
             return {
               title: b.intl.string(E.default.IDyd1e), description: b.intl.format(E.default["8MfYhr"], {
-                premiumGroupProductName: (0, h.sO)(),
-                helpCenterLink: h.j3
+                premiumGroupProductName: (0, m.sO)(),
+                helpCenterLink: m.j3
               })
             };
           case g.O0b.PAST_DUE:
@@ -147,17 +147,17 @@ let T = () => (0, r.jsxs)(o.Kqy, {
             return {
               title: b.intl.string(E.default.Duq8zp), description: b.intl.format(E.default["MHn/D6"], {
                 endDate: _,
-                premiumGroupProductName: (0, h.sO)()
+                premiumGroupProductName: (0, m.sO)()
               })
             };
           default:
             return {
               title: b.intl.formatToPlainString(E.default.xiUjMF, {
-                premiumGroupProductName: (0, h.sO)()
+                premiumGroupProductName: (0, m.sO)()
               }), description: b.intl.format(E.default["2HEyqG"], {
                 primaryName: (0, u.XM)(O),
-                premiumGroupProductName: (0, h.sO)(),
-                helpCenterLink: h.j3
+                premiumGroupProductName: (0, m.sO)(),
+                helpCenterLink: m.j3
               })
             }
         }
@@ -198,10 +198,10 @@ let T = () => (0, r.jsxs)(o.Kqy, {
             color: "text-strong",
             className: y.usersListHeader,
             children: b.intl.string(E.default["oqw/KW"])
-          }), (0, r.jsx)(m.Vl, {
+          }), (0, r.jsx)(h.Vl, {
             user: O,
             isOwnUser: false
-          }), S.map(e => (0, r.jsx)(m.kg, {
+          }), S.map(e => (0, r.jsx)(h.kg, {
             user: e,
             isOwnUser: e.id === (null == i ? true : i.id)
           }, e.id))]
@@ -225,7 +225,7 @@ let T = () => (0, r.jsxs)(o.Kqy, {
     let {
       primary: f,
       members: p,
-      invitedUsers: h
+      invitedUsers: m
     } = t;
     return (0, r.jsxs)(o.Kqy, {
       direction: "vertical",
@@ -264,18 +264,18 @@ let T = () => (0, r.jsxs)(o.Kqy, {
             totalSeats: c
           })
         })]
-      }), (0, r.jsx)(m.Vl, {
+      }), (0, r.jsx)(h.Vl, {
         user: f,
         isOwnUser: true
-      }), p.map(e => (0, r.jsx)(m.UA, {
+      }), p.map(e => (0, r.jsx)(h.UA, {
         user: e,
         onRemove: () => s(e)
-      }, e.id)), h.map(e => (0, r.jsx)(m.gk, {
+      }, e.id)), m.map(e => (0, r.jsx)(h.gk, {
         user: e,
         onRemove: () => l(e)
       }, e.id)), Array.from({
         length: d
-      }).map((e, t) => (0, r.jsx)(m.QU, {
+      }).map((e, t) => (0, r.jsx)(h.QU, {
         onInvite: a,
         canInvite: i
       }, "seat-available-".concat(t)))]
@@ -289,7 +289,7 @@ let T = () => (0, r.jsxs)(o.Kqy, {
       premiumGroupMembers: p,
       isLoading: _
     } = (0, f.Z)(t.id), {
-      numAvailableInvites: m,
+      numAvailableInvites: h,
       numTotalSeats: O,
       numUsedSeats: S
     } = (0, a.cj)([d.Z], () => ({
@@ -297,8 +297,8 @@ let T = () => (0, r.jsxs)(o.Kqy, {
       numTotalSeats: d.Z.getNumTotalSeats(),
       numUsedSeats: d.Z.getNumUsedSeats()
     })), [A, P] = i.useState(false), {
-      status: R
-    } = t, w = i.useCallback(() => {
+      status: w
+    } = t, R = i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: e
@@ -348,18 +348,18 @@ let T = () => (0, r.jsxs)(o.Kqy, {
         }))
       })
     }, M = () => {
-      switch (R) {
+      switch (w) {
         case g.O0b.CANCELED:
           return {
             title: b.intl.string(E.default.KME8Q6), description: b.intl.format(E.default["1sNA+Y"], {
               endDate: t.currentPeriodEnd,
-              premiumGroupProductName: (0, h.sO)()
+              premiumGroupProductName: (0, m.sO)()
             })
           };
         case g.O0b.PAUSED:
           return {
             title: b.intl.string(E.default["4flKoC"]), description: b.intl.format(E.default["Q++BmO"], {
-              premiumGroupProductName: (0, h.sO)()
+              premiumGroupProductName: (0, m.sO)()
             })
           };
         case g.O0b.PAST_DUE:
@@ -368,17 +368,17 @@ let T = () => (0, r.jsxs)(o.Kqy, {
           return {
             title: b.intl.string(E.default.cfeFEt), description: b.intl.format(E.default["5+LPUW"], {
               endDate: t.currentPeriodEnd,
-              helpCenterLink: h.j3
+              helpCenterLink: m.j3
             })
           };
         default:
           return {
             title: b.intl.formatToPlainString(E.default.NRCfnQ, {
-              premiumGroupProductName: (0, h.sO)()
+              premiumGroupProductName: (0, m.sO)()
             }), description: b.intl.format(E.default.lvnrnb, {
-              totalSeats: h.v$,
-              premiumGroupProductName: (0, h.sO)(),
-              helpCenterLink: h.j3
+              totalSeats: m.v$,
+              premiumGroupProductName: (0, m.sO)(),
+              helpCenterLink: m.j3
             })
           }
       }
@@ -392,8 +392,8 @@ let T = () => (0, r.jsxs)(o.Kqy, {
       variant: "secondary",
       size: "md",
       text: b.intl.string(E.default.oO0EYw),
-      onClick: w
-    }), U = i.useMemo(() => !h.Ou.includes(t.status) && m > 0, [t.status, m]), {
+      onClick: R
+    }), U = i.useMemo(() => !m.Ou.includes(t.status) && h > 0, [t.status, h]), {
       title: G,
       description: Z
     } = M();
@@ -415,7 +415,7 @@ let T = () => (0, r.jsxs)(o.Kqy, {
           onRemoveInvitedUser: j,
           numTotalSeats: O,
           numUsedSeats: S,
-          numAvailableInvites: m
+          numAvailableInvites: h
         })]
       })]
     })

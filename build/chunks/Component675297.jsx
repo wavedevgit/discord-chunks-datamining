@@ -58,14 +58,14 @@ function I(e) {
     cardWidth: A,
     cardHeight: N,
     thumbnailHeight: P,
-    descriptionTextVariant: R = "text-sm/normal",
-    showOpaqueBackground: w = false
+    descriptionTextVariant: w = "text-sm/normal",
+    showOpaqueBackground: R = false
   } = e, D = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
     var e;
     return c.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.lds)
-  }), L = (0, o.U)(t, S), j = (0, h.C)(t), M = (0, f.SO)(D), {
+  }), L = (0, o.U)(t, S), j = (0, m.C)(t), M = (0, f.SO)(D), {
     shouldHideGuildPurchaseEntryPoints: k
-  } = (0, l.uP)(n), U = (0, h.k)(t), G = (0, E.Z)({
+  } = (0, l.uP)(n), U = (0, m.k)(t), G = (0, E.Z)({
     guildId: n,
     guildProductListingId: t.id,
     sourceAnalyticsLocations: O
@@ -103,7 +103,7 @@ function I(e) {
       onCopyProductLink: V,
       onTestDownload: () => {}
     });
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     imageUrl: L,
     name: t.name,
     description: t.description,
@@ -115,13 +115,13 @@ function I(e) {
     onShowFullDescription: Z,
     onTapCard: Z,
     actionMenu: H,
-    showOpaqueBackground: w,
+    showOpaqueBackground: R,
     hideRoleTag: T,
     lineClamp: C,
     cardWidth: A,
     cardHeight: N,
     thumbnailHeight: P,
-    descriptionTextVariant: R,
+    descriptionTextVariant: w,
     isDraft: !t.published
   }, t.id)
 }

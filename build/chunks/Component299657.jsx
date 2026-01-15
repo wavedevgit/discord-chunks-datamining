@@ -43,17 +43,17 @@ let k = function(e) {
     entrypoint: t = L.EZ.UserSettings
   } = e;
   (0, y.z)(b.X);
-  let n = (0, h.Q)(),
+  let n = (0, m.Q)(),
     {
       sourceAnalyticsLocations: a,
       analyticsLocations: k
-    } = (0, m.ZP)(_.Z.PREMIUM_MARKETING),
+    } = (0, h.ZP)(_.Z.PREMIUM_MARKETING),
     U = (0, s.e7)([I.Z], () => I.Z.hasFetchedSubscriptions()),
     G = (0, s.e7)([S.Z], () => S.Z.hasFetchedPaymentSources),
     Z = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
     F = null == Z ? true : Z.id,
-    B = (0, w.N)(),
-    V = (0, R.N)(),
+    B = (0, R.N)(),
+    V = (0, w.N)(),
     H = (0, g.V)(L.nS),
     [Y, W] = i.useState(true),
     K = i.useRef(0),
@@ -79,7 +79,7 @@ let k = function(e) {
   }, [n, B, V]);
   let X = (0, s.e7)([O.Z], () => O.Z.enabled),
     J = t === L.EZ.ApplicationStoreHome,
-    $ = X ? (0, r.jsx)(f.Z, {}) : n ? (0, r.jsx)(E.c8, {}) : J && z ? (0, r.jsx)(m.Gt, {
+    $ = X ? (0, r.jsx)(f.Z, {}) : n ? (0, r.jsx)(E.c8, {}) : J && z ? (0, r.jsx)(h.Gt, {
       value: k,
       children: (0, r.jsx)(x.Z, {
         userId: F
@@ -90,7 +90,7 @@ let k = function(e) {
     });
   return null != $ ? (0, r.jsxs)(r.Fragment, {
     children: [J && (0, r.jsx)(p.Z, {}), $]
-  }) : (0, r.jsxs)(m.Gt, {
+  }) : (0, r.jsxs)(h.Gt, {
     value: k,
     children: [J && !q && (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Z, {
       entrypoint: t

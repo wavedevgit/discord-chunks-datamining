@@ -55,7 +55,7 @@ let f = i().throttle(e => {
     confettiEnabled: f,
     confettiSize: p,
     confettiCount: _,
-    confettiEnabledLocations: m
+    confettiEnabledLocations: h
   } = e;
   a.default.track(s.rMx.POGGERMODE_SETTINGS_UPDATED, {
     enabled: t,
@@ -67,6 +67,6 @@ let f = i().throttle(e => {
     confetti_enabled: f,
     confetti_size: p,
     confetti_count: _,
-    confetti_enabled_locations: d(m, u)
+    confetti_enabled_locations: d(h, u)
   })
 }, l)

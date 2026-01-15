@@ -42,18 +42,18 @@ let p = 1080,
       participants: a,
       channel: d,
       idle: _,
-      enableAnimations: m = true
-    } = e, h = t.find(e => e.claimedBy === n.userId), g = null != h, [E, b] = i.useState(false), y = (0, l.Z)(n), {
+      enableAnimations: h = true
+    } = e, m = t.find(e => e.claimedBy === n.userId), g = null != m, [E, b] = i.useState(false), y = (0, l.Z)(n), {
       x: O,
       y: v
     } = i.useMemo(() => {
       let e = f({}, n.position);
       if (g) {
-        let t = s.Is[h.id - 1];
+        let t = s.Is[m.id - 1];
         null != t && (e.x = t.x + t.player.x, e.y = t.y + t.player.y - y.height)
       }
       return e
-    }, [n.position, h, g, y]);
+    }, [n.position, m, g, y]);
     return (0, r.jsx)("div", {
       className: o()(u.participant, {
         [u.hovering]: E
@@ -66,14 +66,14 @@ let p = 1080,
         className: u.avatar,
         children: (0, r.jsx)(c.Z, {
           seats: t,
-          claimedSeat: h,
+          claimedSeat: m,
           participant: n,
           participants: a,
           channel: d,
           idle: _,
           flip: O > p,
           handleHover: e => b(e),
-          enableAnimations: m
+          enableAnimations: h
         })
       })
     })

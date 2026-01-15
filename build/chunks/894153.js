@@ -89,7 +89,7 @@ function p(e, t, n, r) {
     u = c.formatToParts(false),
     p = c.formatToParts(10000.111),
     _ = f.map(e => c.formatToParts(e)),
-    h = null != (l = null == (i = u.find(e => "minusSign" === e.type)) ? true : i.value) ? l : "-",
+    m = null != (l = null == (i = u.find(e => "minusSign" === e.type)) ? true : i.value) ? l : "-",
     g = null == (a = p.find(e => "plusSign" === e.type)) ? true : a.value;
   g || (null == r ? true : r.signDisplay) !== "exceptZero" && (null == r ? true : r.signDisplay) !== "always" || (g = "+");
   let E = null == (o = new Intl.NumberFormat(e, {
@@ -98,14 +98,14 @@ function p(e, t, n, r) {
       maximumFractionDigits: 2
     }).formatToParts(.001).find(e => "decimal" === e.type)) ? true : o.value,
     b = null == (s = u.find(e => "group" === e.type)) ? true : s.value,
-    y = [...new Set([...u.filter(e => !d.has(e.type)).map(e => m(e.value)), ..._.flatMap(e => e.filter(e => !d.has(e.type)).map(e => m(e.value)))])].sort((e, t) => t.length - e.length),
+    y = [...new Set([...u.filter(e => !d.has(e.type)).map(e => h(e.value)), ..._.flatMap(e => e.filter(e => !d.has(e.type)).map(e => h(e.value)))])].sort((e, t) => t.length - e.length),
     O = 0 === y.length ? RegExp("[\\p{White_Space}]", "gu") : RegExp(`${y.join("|")}|[\\p{White_Space}]`, "gu"),
     v = [...new Intl.NumberFormat(n.locale, {
       useGrouping: false
     }).format(0x24cb016ea)].reverse(),
     S = new Map(v.map((e, t) => [e, t]));
   return {
-    minusSign: h,
+    minusSign: m,
     plusSign: g,
     decimal: E,
     group: b,
@@ -119,6 +119,6 @@ function _(e, t, n) {
   return e.replaceAll ? e.replaceAll(t, n) : e.split(t).join(n)
 }
 
-function m(e) {
+function h(e) {
   return e.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
 }

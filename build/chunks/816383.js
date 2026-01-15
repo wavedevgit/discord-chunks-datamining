@@ -36,26 +36,26 @@ var s = function() {
       return t[e] < t[n] ? false : 1
     });
     for (var d = [], f = [], p = [], _ = 0; _ < l - 1; _++) i = t[_ + 1] - t[_], a = n[_ + 1] - n[_], f.push(i), d.push(a), p.push(a / i);
-    for (var m = [p[0]], h = 0; h < f.length - 1; h++) {
-      var g = p[h],
-        E = p[h + 1];
-      if (g * E <= 0) m.push(0);
+    for (var h = [p[0]], m = 0; m < f.length - 1; m++) {
+      var g = p[m],
+        E = p[m + 1];
+      if (g * E <= 0) h.push(0);
       else {
-        i = f[h];
-        var b = f[h + 1],
+        i = f[m];
+        var b = f[m + 1],
           y = i + b;
-        m.push(3 * y / ((y + b) / g + (y + i) / E))
+        h.push(3 * y / ((y + b) / g + (y + i) / E))
       }
     }
-    m.push(p[p.length - 1]);
-    for (var O = [], v = [], S = 0; S < m.length - 1; S++) {
+    h.push(p[p.length - 1]);
+    for (var O = [], v = [], S = 0; S < h.length - 1; S++) {
       s = p[S];
-      var I = m[S],
+      var I = h[S],
         T = 1 / f[S],
-        C = I + m[S + 1] - s - s;
+        C = I + h[S + 1] - s - s;
       O.push((s - I - C) * T), v.push(C * T * T)
     }
-    this.xs = t, this.ys = n, this.c1s = m, this.c2s = O, this.c3s = v
+    this.xs = t, this.ys = n, this.c1s = h, this.c2s = O, this.c3s = v
   }
   return a(e, [{
     key: "interpolate",

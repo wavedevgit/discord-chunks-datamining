@@ -87,11 +87,11 @@ function A(e) {
 async function N(e, t) {
   var n, _, E, b, v, I, C, N;
   let P = p.default.getCurrentUser(),
-    R = f.Z.getVoiceChannelId(),
-    w = c.Z.getChannel(R),
-    D = null == w ? true : w.getGuildId(),
+    w = f.Z.getVoiceChannelId(),
+    R = c.Z.getChannel(w),
+    D = null == R ? true : R.getGuildId(),
     x = null == (n = u.Z.getGuild(D)) ? true : n.premiumTier;
-  if (null == P || null == w || null == R) return [false, "no user or channel"];
+  if (null == P || null == R || null == w) return [false, "no user or channel"];
   let L = null;
   if (null == (L = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(O.Eu.SCREEN_RECORDING, {
@@ -104,7 +104,7 @@ async function N(e, t) {
     soundshareEnabled: U
   } = l.Z.getState(), G = null != (E = null == t ? true : t.preset) ? E : j, {
     allowAutoQuality: Z
-  } = (0, m.IK)({
+  } = (0, h.IK)({
     location: "startStreamWithSource"
   });
   G !== y.tI.PRESET_AUTO || Z || (G = y.tI.PRESET_VIDEO);
@@ -114,12 +114,12 @@ async function N(e, t) {
     Y = null != (I = null != V ? V : null == t ? true : t.fps) ? I : k,
     W = null != (C = null == t ? true : t.previewDisabled) ? C : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
-  return (0, h.Z)(F, H, Y, P, x, w) || (G = y.tI.PRESET_VIDEO, H = y.LY.RESOLUTION_720, Y = y.ws.FPS_30), (0, i.Rc)({
+  return (0, m.Z)(F, H, Y, P, x, R) || (G = y.tI.PRESET_VIDEO, H = y.LY.RESOLUTION_720, Y = y.ws.FPS_30), (0, i.Rc)({
     preset: G,
     resolution: H,
     frameRate: Y,
     soundshareEnabled: K
-  }), (0, i.WH)(D, R, T(S({}, A(L)), {
+  }), (0, i.WH)(D, w, T(S({}, A(L)), {
     audioSourceId: (null == (_ = L.id) ? true : _.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: K,
     previewDisabled: W,

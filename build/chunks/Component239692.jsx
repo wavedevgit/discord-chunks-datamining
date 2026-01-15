@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -129,8 +129,8 @@ function y(e) {
           null != o && true !== s && p.push(o())
       }
     }), p.length > 0) {
-    var m;
-    f.push(null != (m = null == c ? true : c(_, p)) ? m : p)
+    var h;
+    f.push(null != (h = null == c ? true : c(_, p)) ? h : p)
   }
   return l()(f)
 }
@@ -168,8 +168,8 @@ function v(e, t, n, a) {
       sectionHeight: A,
       rowHeight: N,
       footerHeight: P = 0,
-      sidebarHeight: R,
-      listHeaderHeight: w = 0,
+      sidebarHeight: w,
+      listHeaderHeight: R = 0,
       renderSection: D,
       renderRow: x,
       renderFooter: L,
@@ -191,7 +191,7 @@ function v(e, t, n, a) {
       innerAriaOrientation: Q,
       innerClassName: X,
       innerTag: J = "div"
-    } = a, $ = h(a, ["className", "onScroll", "onResize", "onContentResize", "dir", "sections", "sectionHeight", "rowHeight", "footerHeight", "sidebarHeight", "listHeaderHeight", "renderSection", "renderRow", "renderFooter", "renderSidebar", "renderListHeader", "stickyListHeader", "wrapSection", "getAnchorId", "paddingTop", "paddingBottom", "fade", "customTheme", "chunkSize", "style", "innerId", "innerRole", "innerAriaLabel", "innerAriaMultiselectable", "innerAriaOrientation", "innerClassName", "innerTag"]);
+    } = a, $ = m(a, ["className", "onScroll", "onResize", "onContentResize", "dir", "sections", "sectionHeight", "rowHeight", "footerHeight", "sidebarHeight", "listHeaderHeight", "renderSection", "renderRow", "renderFooter", "renderSidebar", "renderListHeader", "stickyListHeader", "wrapSection", "getAnchorId", "paddingTop", "paddingBottom", "fade", "customTheme", "chunkSize", "style", "innerId", "innerRole", "innerAriaLabel", "innerAriaMultiselectable", "innerAriaOrientation", "innerClassName", "innerTag"]);
     let ee = i.useRef(null),
       et = i.useRef(null),
       [en, er] = i.useState(false),
@@ -220,22 +220,22 @@ function v(e, t, n, a) {
       sectionHeight: A,
       rowHeight: N,
       footerHeight: P,
-      sidebarHeight: R,
-      listHeaderHeight: w,
+      sidebarHeight: w,
+      listHeaderHeight: R,
       paddingTop: Z,
       paddingBottom: F,
       chunkSize: H,
       getScrollerState: eo,
       getAnchorId: G
-    }), e_ = (0, u.t2)(ei), em = i.useRef(S), eh = i.useRef(I);
+    }), e_ = (0, u.t2)(ei), eh = i.useRef(S), em = i.useRef(I);
     i.useLayoutEffect(() => {
-      em.current = S, eh.current = I
+      eh.current = S, em.current = I
     });
     let eg = i.useCallback(function() {
         let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 2;
         if (e > ea.current.dirty && (ea.current.dirty = e), 2 === e) {
           var t;
-          null == (t = em.current) || t.call(em)
+          null == (t = eh.current) || t.call(eh)
         }
         ef(e)
       }, [ef, ea]),
@@ -250,7 +250,7 @@ function v(e, t, n, a) {
       ref: et,
       onUpdate: () => {
         var e;
-        return null == (e = eh.current) ? true : e.call(eh)
+        return null == (e = em.current) ? true : e.call(em)
       },
       key: "content",
       resizeObserver: f,
@@ -278,7 +278,7 @@ function v(e, t, n, a) {
       listComputer: ed,
       getAnchorId: G,
       totalHeight: el
-    }), (0, r.jsxs)("div", m(p({
+    }), (0, r.jsxs)("div", h(p({
       ref: ei,
       onScroll: eO,
       className: o()(g, {
@@ -316,9 +316,9 @@ function v(e, t, n, a) {
       }), [J, W, K, z, q, Q, el, X, ec, M, k, D, x, L, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
         renderSidebar: j,
-        sidebarHeight: R,
+        sidebarHeight: w,
         isListVisible: 0 !== ec.length
-      }), [eu, j, R, ec.length])]
+      }), [eu, j, w, ec.length])]
     }))
   })
 }

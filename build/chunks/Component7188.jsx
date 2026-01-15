@@ -2,7 +2,7 @@
 /** chunk id: 7188, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -93,7 +93,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     className: t
   } = e;
@@ -102,32 +102,32 @@ function R(e) {
       className: t,
       mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
       children: (0, r.jsx)(P, {})
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(h.Z, {
       className: v.badgeUpgrade
     })]
   })
 }
 
-function w(e) {
+function R(e) {
   var {
     hideBadges: t = false,
     stream: n,
     location: u
-  } = e, m = A(e, ["hideBadges", "stream", "location"]);
+  } = e, h = A(e, ["hideBadges", "stream", "location"]);
   let v = i.useRef(null),
     {
       analyticsLocations: S,
       parentAnalyticsLocation: T
     } = (0, s.ZP)(),
-    N = (0, a.e7)([_.default], () => h.ZP.isPremium(_.default.getCurrentUser(), y.PremiumTypes.TIER_1)),
-    w = (0, a.e7)([p.Z], () => p.Z.getChannel(null == n ? true : n.channelId)),
+    N = (0, a.e7)([_.default], () => m.ZP.isPremium(_.default.getCurrentUser(), y.PremiumTypes.TIER_1)),
+    R = (0, a.e7)([p.Z], () => p.Z.getChannel(null == n ? true : n.channelId)),
     D = i.useMemo(() => null != n ? [n] : [], [n]),
     x = i.useCallback(() => {
-      null != w && (0, f.Z)(w.getGuildId(), w.id, S)
-    }, [w, S]);
-  if (null == n || null == w) return null;
+      null != R && (0, f.Z)(R.getGuildId(), R.id, S)
+    }, [R, S]);
+  if (null == n || null == R) return null;
   let L = P;
-  return t || N || (L = R), (0, r.jsx)(o.yRy, {
+  return t || N || (L = w), (0, r.jsx)(o.yRy, {
     targetElementRef: v,
     position: "top",
     renderPopout: e => {
@@ -136,7 +136,7 @@ function w(e) {
       } = e;
       return (0, r.jsx)(g.Z, {
         children: (0, r.jsx)(d.Z, {
-          channel: w,
+          channel: R,
           currentUser: _.default.getCurrentUser(),
           activeStreams: D,
           onClose: t,
@@ -156,6 +156,6 @@ function w(e) {
       onClick: t => {
         (null != T || null != u) && (0, l.v)(null != T ? T : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
       }
-    }), m))
+    }), h))
   })
 }

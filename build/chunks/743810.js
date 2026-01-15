@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Nv: () => b,
-  pd: () => h,
+  pd: () => m,
   uX: () => y,
   wk: () => g
 });
@@ -22,11 +22,11 @@ let p = (e, t) => {
     return null != n && ((0, o.hv)(n.type) || d.TPd.GUILD_VOCAL.has(n.type) ? l.ZP.getMentionCount(t) > 0 || c.Z.getVoiceChannelId() === t : (!u.ZP.isChannelMuted(e, t) || l.ZP.getMentionCount(t) > 0) && (0, i.d)(n))
   },
   _ = (e, t) => t === f.W.GUILD_EVENT ? !u.ZP.isMuteScheduledEventsEnabled(e) && l.ZP.hasUnread(e, t) : l.ZP.hasUnread(e, t),
-  m = (e, t) => {
+  h = (e, t) => {
     let n = s.Z.getChannel(t);
     return null != n && !!d.TPd.GUILD_VOCAL.has(n.type) && (l.ZP.getMentionCount(t) > 0 || c.Z.getVoiceChannelId() === t && l.ZP.getUnreadCount(t) > 0)
   },
-  h = {
+  m = {
     binds: ["alt+shift+down"],
     comboKeysBindGlobal: true,
     action() {
@@ -36,7 +36,7 @@ let p = (e, t) => {
         channelPredicate: p,
         guildPredicate: e => e === t || !u.ZP.isMuted(e),
         guildFeaturePredicate: _,
-        ensureChatIsVisible: m,
+        ensureChatIsVisible: h,
         withVoiceChannels: true
       }), false
     }
@@ -51,7 +51,7 @@ let p = (e, t) => {
         channelPredicate: p,
         guildPredicate: e => e === t || !u.ZP.isMuted(e),
         guildFeaturePredicate: _,
-        ensureChatIsVisible: m,
+        ensureChatIsVisible: h,
         withVoiceChannels: true
       }), false
     }
@@ -62,7 +62,7 @@ let p = (e, t) => {
     comboKeysBindGlobal: true,
     action: () => ((0, r.Z)(1, {
       channelPredicate: E,
-      ensureChatIsVisible: m,
+      ensureChatIsVisible: h,
       withVoiceChannels: true
     }), false)
   },
@@ -71,7 +71,7 @@ let p = (e, t) => {
     comboKeysBindGlobal: true,
     action: () => ((0, r.Z)(false, {
       channelPredicate: E,
-      ensureChatIsVisible: m,
+      ensureChatIsVisible: h,
       withVoiceChannels: true
     }), false)
   }

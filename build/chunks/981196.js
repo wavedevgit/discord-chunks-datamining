@@ -37,19 +37,19 @@ function l(e) {
             break;
           default:
             if ((0, i.kJ)(f)) {
-              for (var _ = [], m = 0; m < f.length; m++) _[m] = String(f[m]);
+              for (var _ = [], h = 0; h < f.length; h++) _[h] = String(f[h]);
               p = _.toString()
             } else p = String(f)
         }
         p && t.push([d, p])
       }
-    } var h = t.map(function(e) {
+    } var m = t.map(function(e) {
       var t = e[0],
         n = e[1];
       return "".concat(t, "=").concat(n.toString())
     }).join(";"),
     g = "";
-  return "" !== h && (g = "RRULE:".concat(h)), [n, g].filter(function(e) {
+  return "" !== m && (g = "RRULE:".concat(m)), [n, g].filter(function(e) {
     return !!e
   }).join("\n")
 }

@@ -42,9 +42,9 @@ function p(e) {
     disabledInputs: p,
     containerClassName: _
   } = e, {
-    reducedMotion: m
+    reducedMotion: h
   } = i.useContext(o.Sfi), {
-    pendingAvatar: h,
+    pendingAvatar: m,
     pendingBanner: g,
     pendingAvatarDecoration: E,
     pendingProfileEffect: b,
@@ -59,7 +59,7 @@ function p(e) {
     tryItOutDisplayNameStyles: N
   } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), P = (0, s.SD)({
     userId: d.id,
-    image: null != T ? T : h
+    image: null != T ? T : m
   });
   return (0, r.jsx)(c.Z, {
     containerClassName: _,
@@ -72,7 +72,7 @@ function p(e) {
     pendingThemeColors: null != I ? I : O,
     pendingAvatarDecoration: true !== A ? A : E,
     pendingProfileEffect: b,
-    avatarClassName: null != T || null != h || m.enabled ? true : u.spinningAvatar,
+    avatarClassName: null != T || null != m || h.enabled ? true : u.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOut: true,
     disabledInputs: p,

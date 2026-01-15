@@ -38,9 +38,9 @@ let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
   A = false,
   N = new Map,
   P = false,
-  R = null;
+  w = null;
 
-function w() {
+function R() {
   let e = {
     queue: v,
     paused: I,
@@ -86,7 +86,7 @@ function j(e, t, n, r) {
     o = S.indexOf(i);
   false !== o && S.splice(o, 1);
   let s = L(e, t);
-  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && I && _.Z.resume(), w()
+  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && I && _.Z.resume(), R()
 }
 
 function M(e, t) {
@@ -94,7 +94,7 @@ function M(e, t) {
     r = S.indexOf(n);
   false !== r && S.splice(r, 1);
   let i = L(e, t);
-  false !== i && (v.splice(i, 1), w()), x()
+  false !== i && (v.splice(i, 1), R()), x()
 }
 
 function k(e) {
@@ -140,7 +140,7 @@ function B(e) {
     branchId: n
   } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.Z.resume(), w()
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.Z.resume(), R()
 }
 
 function V(e) {
@@ -165,7 +165,7 @@ function H(e) {
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, p.CP)(t), o = h.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
+    } = (0, p.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
     if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
       if (S.push(t), N.has(t)) {
         switch (N.get(t)) {
@@ -180,7 +180,7 @@ function H(e) {
       return r = true, false
     }
     returntrue
-  }), x(), (r || n !== I) && w()
+  }), x(), (r || n !== I) && R()
 }
 
 function Y() {
@@ -215,15 +215,15 @@ function W(e) {
 function K() {
   for (let e of u.ZP.getRunningDiscordApplicationIds()) c.al(e, e);
   let e = u.ZP.getVisibleGame();
-  return I || null == e || e.pid === R || c.wO(), R = null == e ? null : e.pid, false
+  return I || null == e || e.pid === w || c.wO(), w = null == e ? null : e.pid, false
 }
 
 function z() {
-  (0, m.isDesktop)() && Y()
+  (0, h.isDesktop)() && Y()
 }
 
 function q() {
-  s.K.remove(O), (0, m.isDesktop)() && _.Z.pause()
+  s.K.remove(O), (0, h.isDesktop)() && _.Z.pause()
 }
 
 function Q(e) {
@@ -240,7 +240,7 @@ class X extends(r = Chunk442837.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != t.queue && (v = Q(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(h.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(f.Z, d.default, h.Z)
+    null != t.queue && (v = Q(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(f.Z, d.default, m.Z)
   }
   get activeItems() {
     return v.map(e => {

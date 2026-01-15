@@ -29,8 +29,8 @@ module.exports = function(e) {
       return c.apply(e, a(u, arguments))
     }, f = r(0, c.length - u.length), p = [], _ = 0; _ < f; _++) p[_] = "$" + _;
   if (l = Function("binder", "return function (" + s(p, ",") + "){ return binder.apply(this,arguments); }")(d), c.prototype) {
-    var m = function() {};
-    m.prototype = c.prototype, l.prototype = new m, m.prototype = null
+    var h = function() {};
+    h.prototype = c.prototype, l.prototype = new h, h.prototype = null
   }
   return l
 }

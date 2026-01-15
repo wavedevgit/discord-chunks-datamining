@@ -38,44 +38,44 @@ function g(e) {
     onMouseEnter: S,
     onMouseLeave: I,
     children: (0, r.jsx)(p.Z, {
-      className: a()(h.mainContainer, {
-        [h.compact]: i
+      className: a()(m.mainContainer, {
+        [m.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(f.S, {
         src: v
       }),
-      iconContainerClassName: h.iconContainer,
+      iconContainerClassName: m.iconContainer,
       compact: i,
       children: (0, r.jsxs)("div", {
-        className: a()(h.content, {
-          [h.compact]: i
+        className: a()(m.content, {
+          [m.compact]: i
         }),
         children: [(0, r.jsx)(d.nD, {
           message: n,
-          messageClassname: h.spanCorrection,
-          className: a()(h.usernameContainer, h.spanCorrection, {
-            [h.compact]: i
+          messageClassname: m.spanCorrection,
+          className: a()(m.usernameContainer, m.spanCorrection, {
+            [m.compact]: i
           }),
           username: (0, r.jsxs)("div", {
-            className: h.spanCorrection,
+            className: m.spanCorrection,
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: h.username,
-              children: m.intl.string(m.t.hG1StD)
+              className: m.username,
+              children: h.intl.string(h.t.hG1StD)
             }), (0, r.jsx)(l.Z, {
               type: _.Hb.SYSTEM_DM,
-              className: h.systemTag
+              className: m.systemTag
             })]
           }),
           compact: i,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: a()(h.__invalid_messageContent, {
-            [h.compact]: i
+          className: a()(m.__invalid_messageContent, {
+            [m.compact]: i
           }),
-          children: m.intl.format(m.t.W0UBI3, {
+          children: h.intl.format(h.t.W0UBI3, {
             username: y.nick,
             usernameHook: O,
             guildName: null != (t = null == b ? true : b.name) ? t : ""

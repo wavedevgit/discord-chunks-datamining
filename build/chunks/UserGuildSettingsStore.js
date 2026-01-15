@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   U2: () => Q,
-  ZP: () => em,
+  ZP: () => eh,
   wL: () => q
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -69,8 +69,8 @@ let T = {},
   P = {
     flags: 0
   },
-  R = new Chunk798140.ZP,
   w = new Chunk798140.ZP,
+  R = new Chunk798140.ZP,
   D = {
     suppress_everyone: false,
     suppress_roles: false,
@@ -109,8 +109,8 @@ function F(e, t) {
     l = I(v({}, q(e), r, t), {
       channel_overrides: s
     });
-  R.clearTimer(e), a().forEach(i, e => {
-    w.clearTimer(e.channel_id)
+  w.clearTimer(e), a().forEach(i, e => {
+    R.clearTimer(e.channel_id)
   }), B(e, l), T[e] = l, L[e] = ed(T[e]);
   let c = a().filter(l.channel_overrides, e => {
     var t;
@@ -120,7 +120,7 @@ function F(e, t) {
 }
 
 function B(e, t) {
-  true === t.muted && R.setTimer(e, t.mute_config, () => {
+  true === t.muted && w.setTimer(e, t.mute_config, () => {
     H(e, {
       muted: false
     }), l.Z.dispatch({
@@ -128,7 +128,7 @@ function B(e, t) {
       guildId: e
     })
   }) && (t.muted = false), a().forEach(t.channel_overrides, t => {
-    true === t.muted && w.setTimer(t.channel_id, t.mute_config, () => {
+    true === t.muted && R.setTimer(t.channel_id, t.mute_config, () => {
       Y(e, t.channel_id, {
         muted: false
       }), l.Z.dispatch({
@@ -199,7 +199,7 @@ function z(e, t, n) {
 }
 
 function q(e) {
-  let t = m.Z.getGuild(e);
+  let t = h.Z.getGuild(e);
   return x[null != t ? t.defaultMessageNotifications : g.bL.ALL_MESSAGES]
 }
 
@@ -229,7 +229,7 @@ function J(e) {
 }
 
 function $(e) {
-  en(e.notificationSettings), R.reset(), w.reset(), e.userGuildSettings.partial || (T = {}, L = {}, j = {});
+  en(e.notificationSettings), w.reset(), R.reset(), e.userGuildSettings.partial || (T = {}, L = {}, j = {});
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
@@ -353,7 +353,7 @@ function ep() {
 }
 class e_ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(_.Z, m.Z, u.Z, d.Z, h.default), null != e) {
+    if (this.waitFor(_.Z, h.Z, u.Z, d.Z, m.default), null != e) {
       var t, n;
       A = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (T = e.userGuildSettings, j = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(T, (e, t) => {
         L[t] = ed(e)
@@ -564,7 +564,7 @@ class e_ extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 O(e_, "displayName", "UserGuildSettingsStore"), O(e_, "persistKey", "collapsedGuilds");
-let em = new e_(Chunk570140.Z, {
+let eh = new e_(Chunk570140.Z, {
   USER_GUILD_SETTINGS_FULL_UPDATE: er,
   USER_GUILD_SETTINGS_GUILD_UPDATE: ei,
   USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: ea,

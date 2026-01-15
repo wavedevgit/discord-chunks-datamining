@@ -30,8 +30,8 @@ function g(e) {
     renderOptionSuffix: l
   } = e;
   return (0, r.jsx)(u.Z, {
-    className: o()(h.section, n),
-    title: m.intl.string(m.t.ref7Ki),
+    className: o()(m.section, n),
+    title: h.intl.string(h.t.ref7Ki),
     hideDivider: a,
     forcedDivider: true,
     children: (0, r.jsx)(E, {
@@ -61,7 +61,7 @@ function E(e) {
   }, [g, E, n]), y = i.useCallback(e => {
     let t = (null == e ? true : e.label) === (null == n ? true : n.label) && (null == e ? true : e.value) === (null == n ? true : n.value);
     return null == e || "" === e.value || t ? null : (0, r.jsx)(c.Z, {
-      className: h.guildSelectOptionIcon,
+      className: m.guildSelectOptionIcon,
       guild: E[e.value],
       size: c.Z.Sizes.SMOL,
       active: true
@@ -78,6 +78,6 @@ function E(e) {
     options: b,
     renderOptionPrefix: y,
     renderOptionSuffix: o,
-    placeholder: m.intl.string(m.t["kMgj+e"])
+    placeholder: h.intl.string(h.t["kMgj+e"])
   })
 }

@@ -17,12 +17,12 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m() {
+function h() {
   let e = c.Z.getVoiceStateForUser(s.default.getId()),
     t = l.Z.getChannel(null == e ? true : e.channelId);
   return s.default.getSessionId() === (null == e ? true : e.sessionId) && null != t && t.type !== p.d4z.GUILD_STAGE_VOICE ? t.id : null
 }
-async function h(e, t) {
+async function m(e, t) {
   if (e) {
     r.Z.dispatch({
       type: "SECURE_FRAMES_SETTINGS_UPDATE",
@@ -53,17 +53,17 @@ let g = {
     })
   },
   updatePersistentCodesEnabled: async function(e) {
-    let t = m();
+    let t = h();
     null != t ? u.Z.openSecureFramesUpdateConfirmation({
       title: e ? _.intl.string(_.t.DRFN1B) : _.intl.string(_.t.q29xJz),
       subtitle: e ? _.intl.string(_.t.y015ZY) : _.intl.string(_.t.E66FQn),
       confirmText: _.intl.string(_.t.aTuFYT),
       onConfirm: async () => {
-        await h(e, () => {
+        await m(e, () => {
           a.default.disconnect(), a.default.selectVoiceChannel(t)
         })
       }
-    }) : await h(e)
+    }) : await m(e)
   },
   addUploadedKeyVersion: function(e) {
     r.Z.dispatch({

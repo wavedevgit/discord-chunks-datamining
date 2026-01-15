@@ -54,9 +54,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,7 +64,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -90,7 +90,7 @@ let g = e => {
     } = e;
     let c = f({
         text: s
-      }, m(e, ["onClick", "loading", "disabled", "text", "tooltipText"])),
+      }, h(e, ["onClick", "loading", "disabled", "text", "tooltipText"])),
       u = (0, r.jsx)(a.zxk, _(f({}, c), {
         onClick: t,
         loading: n,
@@ -108,7 +108,7 @@ let g = e => {
       primaryCTAButtonProps: t,
       showLockIcon: n,
       onBackClick: i
-    } = e, a = m(e, ["primaryCTAButtonProps", "showLockIcon", "onBackClick"]);
+    } = e, a = h(e, ["primaryCTAButtonProps", "showLockIcon", "onBackClick"]);
     return (0, r.jsxs)(o.mzw, _(f({
       className: u.checkoutModalFooter,
       direction: s.Z.Direction.HORIZONTAL,

@@ -41,14 +41,14 @@ function _(e) {
   }), c = true
 }
 
-function m(e) {
+function h(e) {
   let {
     channelId: t
   } = e;
   l.add(t)
 }
 
-function h(e) {
+function m(e) {
   let {
     channel: t
   } = e;
@@ -120,11 +120,11 @@ class O extends Chunk750041.Z {
       CONNECTION_OPEN_SUPPLEMENTAL: _,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       OVERLAY_INITIALIZE: b,
-      CHANNEL_CREATE: h,
+      CHANNEL_CREATE: m,
       CHANNEL_UPDATES: g,
       CHANNEL_DELETE: E,
       SET_LOCATION_METADATA: y,
-      MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: m
+      MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: h
     })
   }
 }

@@ -47,12 +47,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = 3 * Chunk70956.Z.Millis.SECOND;
+let m = 3 * Chunk70956.Z.Millis.SECOND;
 class g {
   getSearchIndex() {
     return null == this._search || this._search.hasDefaultQuery ? l.R_.CURRENT_GUILD_MEMBER : l.R_.INCLUDED_IN_SEARCH_RESULTS
@@ -152,11 +152,11 @@ class g {
     for (let a of e) {
       if (null == a.joinedAt) continue;
       let e = a;
-      if (t && (e = m(p({}, e), {
+      if (t && (e = h(p({}, e), {
           isIncludedInSearchResults: true
         })), n) {
         let t = (0, s.Dw)(a.joinedAt);
-        e = m(p({}, e), {
+        e = h(p({}, e), {
           isCurrentGuildMemberByTimestamp: t <= this._members.newMemberTimestamp,
           refreshTimestamp: this.lastRefreshTimestamp
         })
@@ -222,7 +222,7 @@ class g {
   _scheduleRefresh(e) {
     this.lastRefreshTimestamp = e, this.lastCursorTimestamp = Date.now(), null != this._lastRefreshTimer && clearTimeout(this._lastRefreshTimer), this._lastRefreshTimer = setTimeout(() => {
       this._lastRefreshTimer = null, this.lastRefreshTimestamp = 0
-    }, h)
+    }, m)
   }
   refreshNewMembersAndSearchResults() {
     if (null == this._search || null == this._members || !this._initialized) returnfalse;

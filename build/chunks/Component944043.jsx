@@ -2,7 +2,7 @@
 /** chunk id: 944043, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,26 +18,26 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk195581 = require("./195581.js");
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     className: n
   } = e, {
     isPendingIncoming: i,
-    isBlocked: m,
-    isIgnored: h
+    isBlocked: h,
+    isIgnored: m
   } = (0, s.cj)([u.Z], () => ({
     isPendingIncoming: u.Z.getRelationshipType(t.id) === f.OGo.PENDING_INCOMING,
     isBlocked: u.Z.isBlocked(t.id),
     isIgnored: u.Z.isIgnored(t.id)
   }));
-  return m || h && !i ? (0, r.jsxs)(d.Z.Overlay, {
+  return h || m && !i ? (0, r.jsxs)(d.Z.Overlay, {
     className: a()(_.container, n),
-    children: [m && (0, r.jsx)(o.xvT, {
+    children: [h && (0, r.jsx)(o.xvT, {
       variant: "text-sm/semibold",
       color: "text-default",
       children: p.intl.string(p.t["oC/fU6"])
-    }), h && (0, r.jsxs)(r.Fragment, {
+    }), m && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.xvT, {
         variant: "text-sm/semibold",
         color: "text-default",

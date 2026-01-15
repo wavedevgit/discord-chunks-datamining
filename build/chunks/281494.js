@@ -2,11 +2,11 @@
 /** chunk id: 281494, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C$: () => h,
+  C$: () => m,
   Fe: () => d,
   Fz: () => f,
   IB: () => E,
-  iF: () => m,
+  iF: () => h,
   jy: () => g
 }), require("./388685.js"), require("./49124.js"), require("./539854.js");
 var Chunk544891 = require("./544891.js"),
@@ -51,7 +51,7 @@ class p {
   }
 }
 let _ = new p;
-async function m(e, t, n) {
+async function h(e, t, n) {
   let i = JSON.stringify({
     index: e,
     searchQuery: t
@@ -75,7 +75,7 @@ async function m(e, t, n) {
   };
   return _.set(i, u), u
 }
-let h = () => (i.Z.dispatch({
+let m = () => (i.Z.dispatch({
   type: "BILLING_REFERRALS_REMAINING_FETCH_START"
 }), r.tn.get({
   url: s.ANM.GET_REFERRALS_REMAINING,

@@ -6,7 +6,7 @@ require.d(exports, {
   JF: () => p,
   LN: () => a,
   RA: () => b,
-  SH: () => m,
+  SH: () => h,
   _$: () => o,
   aK: () => f,
   km: () => E,
@@ -176,15 +176,15 @@ function p(e) {
 }
 let _ = "(?:[1-9][0-9]{0,3}\\s*(?:voor Christus|na Christus)|[1-2][0-9]{3}|[5-9][0-9])";
 
-function m(e) {
+function h(e) {
   if (/voor Christus/i.test(e)) return -parseInt(e = e.replace(/voor Christus/i, ""));
   if (/na Christus/i.test(e)) return parseInt(e = e.replace(/na Christus/i, ""));
   let t = parseInt(e);
   return (0, i.y)(t)
 }
-let h = `(${u})\\s{0,5}(${(0,Chunk800911.q3)(c)})\\s{0,5}`,
-  g = RegExp(h, "i"),
-  E = (0, Chunk800911.Xf)("(?:(?:binnen|in)\\s*)?", h);
+let m = `(${u})\\s{0,5}(${(0,Chunk800911.q3)(c)})\\s{0,5}`,
+  g = RegExp(m, "i"),
+  E = (0, Chunk800911.Xf)("(?:(?:binnen|in)\\s*)?", m);
 
 function b(e) {
   let t = {},

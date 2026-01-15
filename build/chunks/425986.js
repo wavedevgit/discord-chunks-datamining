@@ -53,8 +53,8 @@ var f = function(e) {
 }({});
 let p = [],
   _ = {},
-  m = {},
-  h = {};
+  h = {},
+  m = {};
 
 function g(e) {
   let {
@@ -69,7 +69,7 @@ function E(e) {
     surface: t,
     activeState: n
   } = e;
-  m = d(c({}, m), {
+  h = d(c({}, h), {
     [g({
       surface: t,
       activeState: n
@@ -96,11 +96,11 @@ function O(e) {
   }), a = b(t.map(e => (e.application_directory_collection_items = y(e.application_directory_collection_items), e)));
   _ = d(c({}, _), {
     [i]: a
-  }), m = d(c({}, m), {
+  }), h = d(c({}, h), {
     [i]: 1
   });
   let o = Date.now();
-  h = d(c({}, h), {
+  m = d(c({}, m), {
     [i]: o
   })
 }
@@ -110,7 +110,7 @@ function v(e) {
     surface: t,
     activeState: n
   } = e;
-  m = d(c({}, m), {
+  h = d(c({}, h), {
     [g({
       surface: t,
       activeState: n
@@ -123,7 +123,7 @@ class S extends(r = Chunk442837.ZP.Store) {
       surface: t,
       activeState: n
     } = e;
-    return h[g({
+    return m[g({
       surface: t,
       activeState: n
     })]
@@ -133,7 +133,7 @@ class S extends(r = Chunk442837.ZP.Store) {
       surface: t,
       activeState: n
     } = e;
-    return m[g({
+    return h[g({
       surface: t,
       activeState: n
     })]

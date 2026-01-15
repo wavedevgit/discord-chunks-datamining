@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,12 +72,12 @@ function g(e, t) {
   if (null != t.interaction && "SENDING" === t.state) return (0, r.jsx)(r.Fragment, {});
   let p = null != t.webhookId ? t.author : d.default.getUser(t.author.id);
   a()(null != p, "renderUserGuildPopout: user should never be null");
-  let m = d.default.getCurrentUser();
-  a()(null != m, "renderUserGuildPopout: currentUser should never be null");
+  let h = d.default.getCurrentUser();
+  a()(null != h, "renderUserGuildPopout: currentUser should never be null");
   let g = u.Z.getChannel(t.channel_id);
-  return a()(null != g, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, h(_({}, e), {
+  return a()(null != g, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, m(_({}, e), {
     user: p,
-    currentUser: m,
+    currentUser: h,
     guildId: g.guild_id,
     channelId: t.channel_id,
     messageId: t.id

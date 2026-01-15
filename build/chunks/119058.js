@@ -16,19 +16,19 @@ var Chunk310644 = require("./310644.js"),
   Chunk633605 = require("./633605.js"),
   Chunk393655 = require("./393655.js"),
   _ = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g,
-  m = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g,
-  h = /^'([^]*?)'?$/,
+  h = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g,
+  m = /^'([^]*?)'?$/,
   g = /''/g,
   E = /[a-zA-Z]/;
 
 function b(e, t, n) {
   (0, d.Z)(2, arguments);
-  var h, g, b, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M = String(t),
+  var m, g, b, O, v, S, I, T, C, A, N, P, w, R, D, x, L, j, M = String(t),
     k = (0, f.j)(),
-    U = null != (h = null != (g = null == n ? true : n.locale) ? g : k.locale) ? h : p.Z,
+    U = null != (m = null != (g = null == n ? true : n.locale) ? g : k.locale) ? m : p.Z,
     G = (0, u.Z)(null != (b = null != (O = null != (v = null != (S = null == n ? true : n.firstWeekContainsDate) ? S : null == n || null == (I = n.locale) || null == (T = I.options) ? true : T.firstWeekContainsDate) ? v : k.firstWeekContainsDate) ? O : null == (C = k.locale) || null == (A = C.options) ? true : A.firstWeekContainsDate) ? b : 1);
   if (!(G >= 1 && G <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  var Z = (0, u.Z)(null != (N = null != (P = null != (R = null != (w = null == n ? true : n.weekStartsOn) ? w : null == n || null == (D = n.locale) || null == (x = D.options) ? true : x.weekStartsOn) ? R : k.weekStartsOn) ? P : null == (L = k.locale) || null == (j = L.options) ? true : j.weekStartsOn) ? N : 0);
+  var Z = (0, u.Z)(null != (N = null != (P = null != (w = null != (R = null == n ? true : n.weekStartsOn) ? R : null == n || null == (D = n.locale) || null == (x = D.options) ? true : x.weekStartsOn) ? w : k.weekStartsOn) ? P : null == (L = k.locale) || null == (j = L.options) ? true : j.weekStartsOn) ? N : 0);
   if (!(Z >= 0 && Z <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if (!U.localize) throw RangeError("locale must contain localize property");
   if (!U.formatLong) throw RangeError("locale must contain formatLong property");
@@ -42,7 +42,7 @@ function b(e, t, n) {
       locale: U,
       _originalDate: F
     };
-  return M.match(m).map(function(e) {
+  return M.match(h).map(function(e) {
     var t = e[0];
     return "p" === t || "P" === t ? (0, s.Z[t])(e, U.formatLong) : e
   }).join("").match(_).map(function(r) {
@@ -57,6 +57,6 @@ function b(e, t, n) {
 }
 
 function y(e) {
-  var t = e.match(h);
+  var t = e.match(m);
   return t ? t[1].replace(g, "'") : e
 }

@@ -16,9 +16,9 @@ var Chunk682404 = require("./682404.js"),
   f = "morning",
   p = "afternoon",
   _ = "evening",
-  m = "night";
+  h = "night";
 
-function h(e, t) {
+function m(e, t) {
   var n = e > 0 ? "-" : "+",
     r = Math.abs(e),
     i = Math.floor(r / 60),
@@ -404,7 +404,7 @@ let b = {
   },
   B: function(e, t, n) {
     var r, i = e.getUTCHours();
-    switch (r = i >= 17 ? _ : i >= 12 ? p : i >= 4 ? f : m, t) {
+    switch (r = i >= 17 ? _ : i >= 12 ? p : i >= 4 ? f : h, t) {
       case "B":
       case "BB":
       case "BBB":
@@ -494,7 +494,7 @@ let b = {
       case "O":
       case "OO":
       case "OOO":
-        return "GMT" + h(i, ":");
+        return "GMT" + m(i, ":");
       default:
         return "GMT" + E(i, ":")
     }
@@ -505,7 +505,7 @@ let b = {
       case "z":
       case "zz":
       case "zzz":
-        return "GMT" + h(i, ":");
+        return "GMT" + m(i, ":");
       default:
         return "GMT" + E(i, ":")
     }

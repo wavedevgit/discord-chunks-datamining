@@ -181,10 +181,10 @@ let T = e => {
           K = V || F.length > 0,
           Y = U - M,
           q = n(872732),
-          J = B - F.length,
-          X = V ? Math.min(5 - (F.length + 0) % 5, J) : 0,
+          X = B - F.length,
+          J = V ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           Q = [];
-        for (let e = 0; e < X; e++) Q.push((0, r.jsx)(P, {}, "placeholder-".concat(e)));
+        for (let e = 0; e < J; e++) Q.push((0, r.jsx)(P, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < O.tier && j >= E.oCV[O.tier],
           ee = S.intl.string(S.t.dtFw5c),
           et = () => {

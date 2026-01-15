@@ -83,10 +83,10 @@ function A(e) {
   true !== d && (e.premiumUsageFlags = d, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
   let _ = e.avatar_decoration_data;
   true !== _ && (e.avatarDecorationData = (0, s.FG)(_), delete e.avatar_decoration_data);
-  let m = e.collectibles;
-  true !== m && (delete e.collectibles, e.collectibles = (0, l.X)(m));
-  let h = e.global_name;
-  true !== h && (e.globalName = h, delete e.global_name);
+  let h = e.collectibles;
+  true !== h && (delete e.collectibles, e.collectibles = (0, l.X)(h));
+  let m = e.global_name;
+  true !== m && (e.globalName = m, delete e.global_name);
   let g = e.primary_guild;
   true !== g && (e.primary_guild = (0, u.l)(g));
   let E = e.display_name_styles;
@@ -96,31 +96,31 @@ function A(e) {
 }
 
 function N(e) {
-  return e.id !== h.default.getId()
+  return e.id !== m.default.getId()
 }
 
 function P(e) {
   let t, n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = O[e.id],
-    i = true !== e.id && e.id === h.default.getId();
-  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = w((0, p.QI)(r), r.premiumType));
+    i = true !== e.id && e.id === m.default.getId();
+  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = R((0, p.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = A(e);
-    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, p.VR)(n) && (n = R(n)), n = C(r, n), r = r.merge(n)
+    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, p.VR)(n) && (n = w(n)), n = C(r, n), r = r.merge(n)
   }(0, p.jX)((0, p.QI)(r), t, r.premiumType);
   let o = O[e.id] !== r;
   return O[e.id] = r, o && v++, o
 }
 
-function R(e) {
+function w(e) {
   var t;
   let n = null != (t = e.premium_type) ? t : e.premiumType,
-    r = w((0, p.VR)(e), n);
+    r = R((0, p.VR)(e), n);
   return true !== e.premiumType ? e.premiumType = r : true !== e.premium_type && (e.premium_type = r), e
 }
 
-function w(e, t) {
+function R(e, t) {
   if (!e) return t;
   let n = d.Z.getPremiumTypeOverride(),
     r = d.Z.getPremiumTypeActual();
@@ -164,7 +164,7 @@ function L(e) {
     e.members.forEach(t => {
       I(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
     })
-  }), null != O[h.default.getId()] && (O[S] = new _.Z({
+  }), null != O[m.default.getId()] && (O[S] = new _.Z({
     id: S,
     username: "Wumpus",
     discriminator: "0",
@@ -352,8 +352,8 @@ function J(e) {
     message: t
   } = e;
   if (x(t, true), null != t.flags && i.yE(t.flags, E.iLy.URGENT)) {
-    let e = O[h.default.getId()];
-    return null != e && (O[h.default.getId()] = e.set("flags", i.mB(e.flags, E.xW$.HAS_UNREAD_URGENT_MESSAGES, true)), true)
+    let e = O[m.default.getId()];
+    return null != e && (O[m.default.getId()] = e.set("flags", i.mB(e.flags, E.xW$.HAS_UNREAD_URGENT_MESSAGES, true)), true)
   }
   returnfalse
 }
@@ -494,7 +494,7 @@ function e_(e) {
       },
       avatar: s
     } = e;
-    n !== h.default.getId() && P({
+    n !== m.default.getId() && P({
       id: n,
       username: r,
       avatar: i,
@@ -504,11 +504,11 @@ function e_(e) {
   })
 }
 
-function em(e) {
+function eh(e) {
   return P(e.relationship.user)
 }
 
-function eh(e) {
+function em(e) {
   return P(e.gameRelationship.user)
 }
 
@@ -615,11 +615,11 @@ function eN(e) {
 function eP(e) {
   let {
     members: t
-  } = e, n = h.default.getId();
+  } = e, n = m.default.getId();
   return t.reduce((e, t) => t.member.user.id === n ? e : P(t.member.user) || e, false)
 }
 
-function eR(e) {
+function ew(e) {
   let {
     messageItems: t
   } = e;
@@ -628,7 +628,7 @@ function eR(e) {
   }, false)
 }
 
-function ew(e) {
+function eR(e) {
   let {
     participants: t
   } = e;
@@ -636,15 +636,15 @@ function ew(e) {
 }
 
 function eD(e) {
-  let {} = e, t = O[h.default.getId()];
-  return null != t && (O[h.default.getId()] = t.set("ageVerificationStatus", a.F$.CLIENT_ONLY_PENDING), true)
+  let {} = e, t = O[m.default.getId()];
+  return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", a.F$.CLIENT_ONLY_PENDING), true)
 }
 
 function ex(e) {
   let {
     status: t
-  } = e, n = O[h.default.getId()];
-  return null != n && n.ageVerificationStatus === a.F$.CLIENT_ONLY_PENDING && (O[h.default.getId()] = n.set("ageVerificationStatus", t), true)
+  } = e, n = O[m.default.getId()];
+  return null != n && n.ageVerificationStatus === a.F$.CLIENT_ONLY_PENDING && (O[m.default.getId()] = n.set("ageVerificationStatus", t), true)
 }
 
 function eL(e) {
@@ -662,14 +662,14 @@ function ej(e) {
 }
 class eM extends Chunk750041.Z {
   initialize() {
-    this.waitFor(h.default, d.Z)
+    this.waitFor(m.default, d.Z)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
       version: eM.LATEST_SNAPSHOT_VERSION,
       data: {
-        users: [e].filter(m.lm)
+        users: [e].filter(h.lm)
       }
     }
   }
@@ -714,7 +714,7 @@ class eM extends Chunk750041.Z {
     return t && n.sort((e, t) => e.username > t.username ? 1 : e.username < t.username ? false : 0), n
   }
   getCurrentUser() {
-    return O[h.default.getId()]
+    return O[m.default.getId()]
   }
   constructor() {
     super({
@@ -754,8 +754,8 @@ class eM extends Chunk750041.Z {
       THREAD_MEMBERS_UPDATE: ep,
       CHANNEL_CREATE: $,
       CHANNEL_UPDATES: ee,
-      RELATIONSHIP_ADD: em,
-      GAME_RELATIONSHIP_ADD: eh,
+      RELATIONSHIP_ADD: eh,
+      GAME_RELATIONSHIP_ADD: em,
       LOAD_RELATIONSHIPS_SUCCESS: eg,
       FRIEND_SUGGESTION_CREATE: eE,
       LOAD_FRIEND_SUGGESTIONS_SUCCESS: eb,
@@ -778,8 +778,8 @@ class eM extends Chunk750041.Z {
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eN,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eC,
       MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eP,
-      LOAD_ICYMI_HYDRATED: eR,
-      EMBEDDED_ACTIVITY_UPDATE_V2: ew,
+      LOAD_ICYMI_HYDRATED: ew,
+      EMBEDDED_ACTIVITY_UPDATE_V2: eR,
       INITIATE_AGE_VERIFICATION: eD,
       CLOSE_AGE_VERIFICATION_MODAL: ex,
       INTERACTION_MODAL_CREATE: eL

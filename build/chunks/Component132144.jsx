@@ -2,7 +2,7 @@
 /** chunk id: 132144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => m
+  W: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ let _ = e => i.useMemo(() => {
         }
     }
   }, [e]),
-  m = e => {
+  h = e => {
     let {
       dismissibleContent: t,
       noticeType: n

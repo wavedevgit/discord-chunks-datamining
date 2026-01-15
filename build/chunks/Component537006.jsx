@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk577832 = require("./577832.js");
 
-function R(e) {
+function w(e) {
   let {
     onClose: t
   } = e;
@@ -48,7 +48,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     tiny: t,
     isPremiumUser: n,
@@ -120,9 +120,9 @@ function D(e) {
     className: a
   } = e, c = (0, p.Dt)(), {
     themeType: d
-  } = (0, O.z)(), f = d === A.l.MODAL, g = (0, m.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
+  } = (0, O.z)(), f = d === A.l.MODAL, g = (0, h.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
   if (i.useEffect(() => {
-      if (!g) return (0, h.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
+      if (!g) return (0, m.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
         (0, _.gE)({
           content: l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS
         }, false)
@@ -133,16 +133,16 @@ function D(e) {
       id: c,
       children: N.intl.string(N.t.EIYbj6)
     }),
-    v = (0, r.jsx)(R, {
+    v = (0, r.jsx)(w, {
       onClose: () => {
-        (0, m.Q3)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
+        (0, h.Q3)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
           dismissAction: T.L.USER_DISMISS,
           guildId: E,
           forceTrack: true
         })
       }
     }),
-    S = (0, r.jsx)(w, {
+    S = (0, r.jsx)(R, {
       isPremiumUser: t,
       onInteraction: n,
       tiny: f

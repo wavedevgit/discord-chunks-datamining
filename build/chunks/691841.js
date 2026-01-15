@@ -28,14 +28,14 @@ function l(e) {
       })
     }
     null == f || f(+t)
-  }, m = (e, t, n) => {
+  }, h = (e, t, n) => {
     var r;
     if (null == (r = u.current) || r.scrollToTop(), e && null != d.query) {
       let e = d.query.typeInfo.focusMode,
         r = e !== s.QZ.MANUAL && (e !== s.QZ.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
       d.isVisible && (true !== t || false !== r) && true !== n ? (g.setFocus("0"), null == f || f(0)) : (g.setFocus(null), null == f || f(null))
     }
-  }, h = e => {
+  }, m = e => {
     var t;
     if (null == (t = u.current) || t.scrollToBottom(), e && null != d.query && d.query.resultCount > 0) {
       let e = d.query.resultCount - 1;
@@ -47,13 +47,13 @@ function l(e) {
     orientation: a.hy.VERTICAL,
     useVirtualFocus: true,
     setFocus: _,
-    onNavigateNextAtEnd: () => m(true),
-    onNavigatePreviousAtStart: () => h(true),
-    scrollToStart: () => (m(false, false), Promise.resolve()),
-    scrollToEnd: () => (h(false), Promise.resolve())
-  }), E = r.useRef(m);
+    onNavigateNextAtEnd: () => h(true),
+    onNavigatePreviousAtStart: () => m(true),
+    scrollToStart: () => (h(false, false), Promise.resolve()),
+    scrollToEnd: () => (m(false), Promise.resolve())
+  }), E = r.useRef(h);
   return r.useEffect(() => {
-    E.current = m
+    E.current = h
   }), r.useEffect(() => {
     E.current(true, true, d.isInitialAfterError)
   }, [null == (t = d.query) ? true : t.type, null == (n = d.query) ? true : n.queryText, null == (l = d.query) ? true : l.isLoading, d.isVisible, d.isInitialAfterError]), g

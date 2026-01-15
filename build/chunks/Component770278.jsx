@@ -2,7 +2,7 @@
 /** chunk id: 770278, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,14 +52,14 @@ function _() {
     [l.fCB.TOP_RADIAL]: t
   }
 }
-let m = Chunk473749.forwardRef(function(e, t) {
+let h = Chunk473749.forwardRef(function(e, t) {
   let {
     backdropStyle: n = l.fCB.SUBTLE,
     backdropInstant: i = false,
     zIndexBoost: a = 0,
     LayerComponent: d,
-    isVisible: m,
-    onClose: h
+    isVisible: h,
+    onClose: m
   } = e, g = _()[n], E = (0, l.dQu)(l.TVs.colors.MOBILE_BACKGROUND_SCRIM_OPAQUE).spring({
     opacity: 0
   }), b = n === l.fCB.BLUR ? p : 0, y = {
@@ -68,7 +68,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
   }, O = {
     background: g,
     backdropFilter: "blur(".concat(b, "px)")
-  }, v = (0, c.Z)(i), S = (0, l.Yzy)(m, {
+  }, v = (0, c.Z)(i), S = (0, l.Yzy)(h, {
     keys: e => e ? "backdrop" : "empty",
     config: {
       duration: i || v ? 0 : 200
@@ -84,7 +84,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
     return S((t, n) => n ? (0, r.jsx)(s.animated.div, {
       className: u.backdrop,
       style: f({}, t, e),
-      onClick: h
+      onClick: m
     }) : null)
   }
   return (0, r.jsx)(d, {
@@ -93,7 +93,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
       style: n === l.fCB.TOP_RADIAL ? {
         background: "radial-gradient(96.68% 96.68% at 50.04% 3.32%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.00) 100%)"
       } : e,
-      onClick: h
+      onClick: m
     }) : null)
   })
 })

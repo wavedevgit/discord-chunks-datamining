@@ -2,7 +2,7 @@
 /** chunk id: 238607, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,22 +18,22 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     activity: n,
-    onAction: m,
-    onClose: h
+    onAction: h,
+    onClose: m
   } = e, {
     themeType: g
   } = (0, u.z)(), E = (0, f.Z)({
     applicationId: null == n ? true : n.application_id,
-    onClose: h
+    onClose: m
   }), b = (0, c.e)({
     activity: null != n ? n : true,
     embeddedActivity: true,
     user: t,
-    onClose: h
+    onClose: m
   }), y = (0, l.h)(null == n ? true : n.application_id);
   if (null == b && null != n && (0, s.Z)(n)) return (0, r.jsx)(d.i6, {
     icon: a.jje,
@@ -42,7 +42,7 @@ function m(e) {
     onClick: e => {
       e.stopPropagation(), null != y ? o.Z.launch({
         applicationId: y
-      }) : (null == m || m({
+      }) : (null == h || h({
         action: "PRESS_PLAY_BUTTON"
       }), E())
     }
@@ -66,7 +66,7 @@ function m(e) {
       loading: O,
       fullWidth: g !== p.l.MODAL_V2,
       onClick: e => {
-        e.stopPropagation(), null == m || m({
+        e.stopPropagation(), null == h || h({
           action: C ? "PRESS_JOIN_BUTTON" : "PRESS_ASK_TO_JOIN_BUTTON"
         }), v()
       }

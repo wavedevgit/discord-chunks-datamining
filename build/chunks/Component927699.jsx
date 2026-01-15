@@ -26,7 +26,7 @@ let g = (0, Chunk131704.createChannelRecord)({
 
 function b(e) {
   let {
-    label: t = m.intl.string(m.t.B3miE8),
+    label: t = h.intl.string(h.t.B3miE8),
     onTextChange: n,
     pendingText: a,
     currentText: d,
@@ -55,15 +55,15 @@ function b(e) {
       O(d), S(e)
     }
   }, [a, d]), (0, r.jsx)("div", {
-    className: o()(h.body, f),
+    className: o()(m.body, f),
     children: (0, r.jsx)(s.gNt, {
       label: t,
       children: e => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.ZP, {
           "aria-describedby": "".concat(e.describedById, " ").concat(E),
           "aria-labelledby": e.labelId,
-          innerClassName: o()(h.textArea, _),
-          editorClassName: h.editorTextArea,
+          innerClassName: o()(m.textArea, _),
+          editorClassName: m.editorTextArea,
           maxCharacterCount: p.$n,
           onChange: T,
           channel: g,
@@ -81,7 +81,7 @@ function b(e) {
           disableThemedBackground: b
         }), (0, r.jsx)(s.nn4, {
           id: E,
-          children: m.intl.format(m.t["+DFxLc"], {
+          children: h.intl.format(h.t["+DFxLc"], {
             maxLength: p.$n
           })
         })]

@@ -46,7 +46,7 @@ function P() {
   return Math.random() * (e + 1) * O
 }
 
-function R(e, t) {
+function w(e, t) {
   a.Z.dispatch({
     type: "CONTENT_INVENTORY_SET_FEED_STATE",
     feedId: e,
@@ -54,10 +54,10 @@ function R(e, t) {
   })
 }
 
-function w(e) {
-  if (T.has(e) || e === g.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || true !== h.Z.getFeed(e))) returnfalse;
+function R(e) {
+  if (T.has(e) || e === g.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || true !== m.Z.getFeed(e))) returnfalse;
   if (e === v) {
-    if (!(0, p.sA)("ContentInventoryManager") || m.Z.hidden && null != h.Z.getFeed(e) || !d.Z.isFocused() || !l.Z.isConnected()) returnfalse;
+    if (!(0, p.sA)("ContentInventoryManager") || h.Z.hidden && null != m.Z.getFeed(e) || !d.Z.isFocused() || !l.Z.isConnected()) returnfalse;
     let t = u.Z.getIdleSince();
     if (null != t && Date.now() - t > S) returnfalse
   }
@@ -65,7 +65,7 @@ function w(e) {
 }
 
 function D(e) {
-  R(e, {
+  w(e, {
     loading: false
   });
   let t = I.get(e);
@@ -75,12 +75,12 @@ function D(e) {
 function x() {
   var e;
   let t = null != (e = C.get(v)) ? e : 0;
-  if (t > 0 && t <= y || (D(v), !w(v))) return;
-  let n = h.Z.getFeed(v);
+  if (t > 0 && t <= y || (D(v), !R(v))) return;
+  let n = m.Z.getFeed(v);
   if ((null == n ? true : n.refresh_stale_inbox_after_ms) != null && null == A) return;
   let r = (null == n ? true : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
     a = Math.max(0, null == A ? 0 : new Date(A).getTime() - Date.now(), r) + (t > 0 ? P() : 0);
-  R(v, {
+  w(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + a)
   }), I.set(v, setTimeout(() => L({
@@ -94,9 +94,9 @@ async function L(e) {
     feature: n,
     force: r = false
   } = e;
-  if (w(t) || r) try {
-    let e = h.Z.getFeed(t);
-    T.add(t), R(t, {
+  if (R(t) || r) try {
+    let e = m.Z.getFeed(t);
+    T.add(t), w(t, {
       loading: true
     });
     let r = await (0, _.mt)({
@@ -108,7 +108,7 @@ async function L(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), C.set(t, 0), T.delete(t), R(t, {
+    }), C.set(t, 0), T.delete(t), w(t, {
       loading: false
     }), t === v && (A = null, x())
   } catch (o) {
@@ -156,7 +156,7 @@ function U(e) {
 function G(e) {
   let {
     refreshAfterMs: t
-  } = e, n = h.Z.getFeed(v);
+  } = e, n = m.Z.getFeed(v);
   (null == n ? true : n.refresh_stale_inbox_after_ms) != null && (A = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 

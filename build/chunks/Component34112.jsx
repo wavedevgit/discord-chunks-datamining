@@ -211,7 +211,7 @@ function M(e) {
     className: a()(Z.roleRow, Z.roleRowDragging)
   });
 
-  function J() {
+  function X() {
     _(d.id)
   }
   return (0, r.jsxs)(g.P3F, {
@@ -220,7 +220,7 @@ function M(e) {
       [Z.containerDragBefore]: null != V && v < V,
       [Z.containerDragAfter]: null != V && v > V
     }),
-    onClick: J,
+    onClick: X,
     onContextMenu: Y,
     innerRef: e => {
       W(K(e))
@@ -273,7 +273,7 @@ function M(e) {
       children: (0, r.jsxs)(g.P3F, {
         className: a()(Z.memberCountContainer, R.memberSpacing),
         onClick: function() {
-          J(), P(T.ZI.MEMBERS)
+          X(), P(T.ZI.MEMBERS)
         },
         children: [(0, r.jsx)(g.Text, {
           variant: "text-md/normal",
@@ -295,7 +295,7 @@ function M(e) {
           variant: "secondary",
           "aria-label": G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75uw),
           icon: G ? g.tEF : g.vdY,
-          onClick: J
+          onClick: X
         })
       }), (0, r.jsx)(u.u, {
         text: w.intl.string(w.t["UKOtz+"]),

@@ -53,10 +53,10 @@ function p(e) {
   }) : null, _ = a()({
     [d.fractionalUnactivatedPill]: t,
     [d.fractionalTimeRemainingPill]: !t
-  }), m = a()({
+  }), h = a()({
     [d.fractionalUnactivatedPillText]: t,
     [d.fractionalTimeRemainingPillText]: !t
-  }), h = a()({
+  }), m = a()({
     [d.fractionalTimeRemainingRowHeader]: !t
   });
   return (0, r.jsxs)("div", {
@@ -65,7 +65,7 @@ function p(e) {
       className: d.fractionalTimeRemainingRowDetails,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
-        className: h,
+        className: m,
         children: f
       }), null !== p && (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
@@ -77,7 +77,7 @@ function p(e) {
         className: _,
         children: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
-          className: m,
+          className: h,
           children: n
         })
       })

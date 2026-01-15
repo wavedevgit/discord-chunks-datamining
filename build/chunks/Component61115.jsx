@@ -78,17 +78,17 @@ function T(e) {
       duration: S
     }
   })), P = e => {
-    f(), O(1), null != p && d.default.track(m.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, N(p, n)), {
+    f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, N(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
-  }, R = async e => {
+  }, w = async e => {
     1 === e && (await A({
       width: "100%"
     }), o())
   };
   return (0, c.ZP)(() => {
-    null != p && d.default.track(m.rMx.QUEST_SURVEY_DISPLAYED, N(p, n))
+    null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, N(p, n))
   }), null == p && o(), (0, r.jsx)(l.Y0X, {
     "data-migration-pending": true,
     transitionState: a,
@@ -98,7 +98,7 @@ function T(e) {
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: b,
       width: I,
-      onSlideReady: R,
+      onSlideReady: w,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
         children: [(0, r.jsxs)(l.xBx, {
@@ -141,11 +141,11 @@ function T(e) {
             className: g.asset
           }), (0, r.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
-            children: h.intl.string(h.t.KTjjrG)
+            children: m.intl.string(m.t.KTjjrG)
           }), (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: h.intl.string(h.t.AvbrEM)
+            children: m.intl.string(m.t.AvbrEM)
           })]
         }), (0, r.jsx)(l.mzw, {
           "data-migration-pending": true,
@@ -153,7 +153,7 @@ function T(e) {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.Button, {
               variant: "primary",
-              text: h.intl.string(h.t.cpT0Cq),
+              text: m.intl.string(m.t.cpT0Cq),
               onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
@@ -196,7 +196,7 @@ function A(e) {
   }, {
     onCloseCallback: () => {
       let n = p.Z.getQuest(e.questId);
-      null != n && d.default.track(m.rMx.QUEST_SURVEY_DISMISSED, v(y({}, N(n, e.survey)), {
+      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, v(y({}, N(n, e.survey)), {
         submitted: t
       }))
     }

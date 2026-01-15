@@ -33,8 +33,8 @@ function g(e) {
   let A = null != (n = T.name) ? n : "",
     N = null != (g = null == I || null == (t = I.description) ? true : t.trim()) ? g : true,
     P = (null == I ? true : I.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, I.headerBackground, 256))) ? E : true,
-    R = T.type === m.epS.DURABLE && C,
-    w = T.type === m.epS.DURABLE ? R ? h.intl.string(h.t.bm82mm) : h.intl.string(h.t["6gprwf"]) : true,
+    w = T.type === h.epS.DURABLE && C,
+    R = T.type === h.epS.DURABLE ? w ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
     {
       price: D
     } = T;
@@ -54,8 +54,8 @@ function g(e) {
       title: A,
       description: N,
       imgSrc: P,
-      tag: null != w ? (0, r.jsx)(i.V, {
-        text: w
+      tag: null != R ? (0, r.jsx)(i.V, {
+        text: R
       }) : true,
       FallbackIcon: o.Prq
     })

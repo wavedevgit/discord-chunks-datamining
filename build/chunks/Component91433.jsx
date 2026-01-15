@@ -30,7 +30,7 @@ function E(e) {
     className: y
   } = e, {
     themeType: O
-  } = (0, _.z)(), v = O === m.l.MODAL_V2, S = f.ZP.getName(n, a, t), {
+  } = (0, _.z)(), v = O === h.l.MODAL_V2, S = f.ZP.getName(n, a, t), {
     trackUserProfileAction: I
   } = (0, p.KZ)(), {
     newestAnalyticsLocation: T
@@ -50,23 +50,23 @@ function E(e) {
     A(), I({
       action: b ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [A, b, I]), R = null != E, w = (0, c.q)(E);
-  return R && null == w ? null : (0, r.jsxs)("div", {
+  }, [A, b, I]), w = null != E, R = (0, c.q)(E);
+  return w && null == R ? null : (0, r.jsxs)("div", {
     className: o()(g.container, y),
-    children: [R ? (0, r.jsx)(s.Text, {
+    children: [w ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: h.intl.format(b ? h.t.syHjLL : h.t.V15uUI, {
+      children: m.intl.format(b ? m.t.syHjLL : m.t.V15uUI, {
         username: S,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: g.gameIcon,
-          game: w,
+          game: R,
           size: u.A.XXSMALL
-        }, null == w ? true : w.id),
-        applicationName: null == w ? true : w.name
+        }, null == R ? true : R.id),
+        applicationName: null == R ? true : R.name
       })
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: h.intl.format(h.t.uIomXw, {
+      children: m.intl.format(m.t.uIomXw, {
         username: S
       })
     }), (0, r.jsxs)("div", {
@@ -75,12 +75,12 @@ function E(e) {
         variant: v ? "secondary" : "primary",
         size: "sm",
         onClick: N,
-        text: h.intl.string(h.t.Zcibdf)
+        text: m.intl.string(m.t.Zcibdf)
       }), (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
         onClick: P,
-        text: h.intl.string(h.t.xuio0C)
+        text: m.intl.string(m.t.xuio0C)
       })]
     })]
   })

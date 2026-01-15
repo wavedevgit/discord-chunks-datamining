@@ -56,7 +56,7 @@ class i {
       renderer: t.renderer || e.renderer
     }
   }* getFullNode(e, t, n, i) {
-    var l, c, u, d, f, p, _, m;
+    var l, c, u, d, f, p, _, h;
     if (r.isValidElement(e.element) && e.element.type === r.Fragment) {
       let a = [];
       r.Children.forEach(e.element.props.children, e => {
@@ -69,40 +69,40 @@ class i {
       }, t, n, i);
       return
     }
-    let h = e.element;
-    if (!h && e.value && t && t.renderer) {
+    let m = e.element;
+    if (!m && e.value && t && t.renderer) {
       let n = this.cache.get(e.value);
       if (n && (!n.shouldInvalidate || !n.shouldInvalidate(this.context))) {
         n.index = e.index, n.parentKey = i ? i.key : null, yield n;
         return
       }
-      h = t.renderer(e.value)
+      m = t.renderer(e.value)
     }
-    if (r.isValidElement(h)) {
-      let r = h.type;
+    if (r.isValidElement(m)) {
+      let r = m.type;
       if ("function" != typeof r && "function" != typeof r.getCollectionNode) {
-        let e = h.type;
+        let e = m.type;
         throw Error(`Unknown element <${e}> in collection.`)
       }
-      let a = r.getCollectionNode(h.props, this.context),
+      let a = r.getCollectionNode(m.props, this.context),
         l = null != (c = e.index) ? c : 0,
         _ = a.next();
       for (; !_.done && _.value;) {
         let r = _.value;
         e.index = l;
         let c = null != (u = r.key) ? u : null;
-        null == c && (c = r.element ? null : this.getKey(h, e, t, n));
-        let m = [...this.getFullNode({
+        null == c && (c = r.element ? null : this.getKey(m, e, t, n));
+        let h = [...this.getFullNode({
           ...r,
           key: c,
           index: l,
           wrapper: o(e.wrapper, r.wrapper)
-        }, this.getChildState(t, r), n ? `${n}${h.key}` : h.key, i)];
-        for (let t of m) {
+        }, this.getChildState(t, r), n ? `${n}${m.key}` : m.key, i)];
+        for (let t of h) {
           if (t.value = null != (f = null != (d = r.value) ? d : e.value) ? f : null, t.value && this.cache.set(t.value, t), e.type && t.type !== e.type) throw Error(`Unsupported type <${s(t.type)}> in <${s(null!=(p=null==i?true:i.type)?p:"unknown parent type")}>. Only <${s(e.type)}> is supported.`);
           l++, yield t
         }
-        _ = a.next(m)
+        _ = a.next(h)
       }
       return
     }
@@ -117,7 +117,7 @@ class i {
         level: i ? i.level + 1 : 0,
         index: e.index,
         rendered: e.rendered,
-        textValue: null != (m = e.textValue) ? m : "",
+        textValue: null != (h = e.textValue) ? h : "",
         "aria-label": e["aria-label"],
         wrapper: e.wrapper,
         shouldInvalidate: e.shouldInvalidate,

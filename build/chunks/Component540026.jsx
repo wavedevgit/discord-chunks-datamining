@@ -2,7 +2,7 @@
 /** chunk id: 540026, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -46,7 +46,7 @@ function _(e) {
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
 }
-class m extends(r = Chunk473749.Component) {
+class h extends(r = Chunk473749.Component) {
   componentDidMount() {
     let {
       previewWidth: e,
@@ -244,7 +244,7 @@ class m extends(r = Chunk473749.Component) {
     })
   }
 }
-u(m, "Types", p), u(m, "defaultProps", {
+u(h, "Types", p), u(h, "defaultProps", {
   currentWindow: window
 });
-let h = m
+let m = h

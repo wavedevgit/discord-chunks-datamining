@@ -5,7 +5,7 @@ require.d(exports, {
   Em: () => l,
   HO: () => c,
   TB: () => s,
-  lx: () => h
+  lx: () => m
 });
 let r = new(require("./710845.js")).Z("mp4box"),
   i = {
@@ -94,8 +94,8 @@ function d(e) {
 let f = 524288,
   p = 524288,
   _ = 5e3,
-  m = 5e3;
-async function h(e) {
+  h = 5e3;
+async function m(e) {
   try {
     let t;
     if ("undefined" == typeof fetch) return i;
@@ -124,7 +124,7 @@ async function h(e) {
     if (!t.ok && 206 !== t.status) return r.warn("Unexpected response status:", t.status), i;
     if ("opaque" === t.type) return r.warn("Opaque response, CORS headers may be missing"), i;
     let c = await t.arrayBuffer(),
-      h = s.createFile();
+      m = s.createFile();
     return new Promise(t => {
       let n = false,
         s = false,
@@ -136,8 +136,8 @@ async function h(e) {
         y = setTimeout(() => {
           r.warn("Timeout after", _, "ms, moov atom not found"), b()
         }, _);
-      h.onReady = e => {
-        var r, i, s, l, c, f, p, _, m, h, g, b, O, v, S;
+      m.onReady = e => {
+        var r, i, s, l, c, f, p, _, h, m, g, b, O, v, S;
         if (n) return;
         n = true, clearTimeout(y), null != E && clearTimeout(E);
         let I = e.videoTracks[0],
@@ -149,8 +149,8 @@ async function h(e) {
             audioCodecDescription: null != T ? o(T.codec) : null,
             videoBitrate: null != (p = null == I ? true : I.bitrate) ? p : null,
             audioBitrate: null != (_ = null == T ? true : T.bitrate) ? _ : null,
-            audioChannels: null != (m = null == T || null == (r = T.audio) ? true : r.channel_count) ? m : null,
-            audioSampleRate: null != (h = null == T || null == (i = T.audio) ? true : i.sample_rate) ? h : null,
+            audioChannels: null != (h = null == T || null == (r = T.audio) ? true : r.channel_count) ? h : null,
+            audioSampleRate: null != (m = null == T || null == (i = T.audio) ? true : i.sample_rate) ? m : null,
             frameRate: null != I ? d(I) : null,
             videoWidth: null != (g = null == I || null == (s = I.video) ? true : s.width) ? g : null,
             videoHeight: null != (b = null == I || null == (l = I.video) ? true : l.height) ? b : null,
@@ -159,12 +159,12 @@ async function h(e) {
             containerFormat: u(null != (S = e.brands) ? S : [])
           };
         t(C)
-      }, h.onError = () => {
+      }, m.onError = () => {
         b()
-      }, h.onSeek = async t => {
+      }, m.onSeek = async t => {
         if (n || s || null == l || !(l > f)) {
           if (s) {
-            if (null != g && performance.now() - g < m) return;
+            if (null != g && performance.now() - g < h) return;
             b();
             return
           }
@@ -183,7 +183,7 @@ async function h(e) {
               let i = n;
               i.fileStart = e;
               try {
-                h.appendBuffer(i), h.flush(), g = performance.now();
+                m.appendBuffer(i), m.flush(), g = performance.now();
                 return
               } catch (e) {
                 r.warn("Failed to append end chunk:", e), b();
@@ -200,8 +200,8 @@ async function h(e) {
       let O = c;
       O.fileStart = 0;
       try {
-        h.appendBuffer(O), h.flush(), E = setTimeout(() => {
-          n || s || null == h.onSeek || h.onSeek({
+        m.appendBuffer(O), m.flush(), E = setTimeout(() => {
+          n || s || null == m.onSeek || m.onSeek({
             offset: 0,
             isLast: false
           })

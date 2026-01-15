@@ -5,7 +5,7 @@ require.d(exports, {
   Go: () => P,
   LZ: () => D,
   Pq: () => v,
-  RJ: () => R,
+  RJ: () => w,
   Sd: () => j,
   XW: () => L,
   el: () => I,
@@ -36,7 +36,7 @@ let v = e => {
     C();
     let t = (0, i.e7)([g.Z], () => g.Z.hasLoadedStickerPacks);
     r.useEffect(() => {
-      t && null == g.Z.getStickerPack(e) && (0, m.FQ)(e)
+      t && null == g.Z.getStickerPack(e) && (0, h.FQ)(e)
     }, [e, t])
   },
   S = e => {
@@ -58,8 +58,8 @@ let v = e => {
         r = Math.floor(Math.max(s, (o - i - u * e) / (e - 1))),
         p = [],
         _ = [],
-        m = [],
-        h = 0,
+        h = [],
+        m = 0,
         g = 0,
         y = 0;
       if (0 !== o) {
@@ -84,7 +84,7 @@ let v = e => {
                 sticker: e,
                 packId: (0, b.jl)(e) ? e.pack_id : "TODO - fix",
                 gridSectionIndex: g,
-                rowIndex: h,
+                rowIndex: m,
                 columnIndex: t,
                 visibleRowIndex: y,
                 category: n
@@ -94,21 +94,21 @@ let v = e => {
               guild_id: i.id,
               name: O.intl.string(O.t["UwF+Cw"]),
               gridSectionIndex: g,
-              rowIndex: h,
+              rowIndex: m,
               columnIndex: l.length,
               visibleRowIndex: y
-            }), r || (y++, m.push(l), p.push(l.length)), h++
+            }), r || (y++, h.push(l), p.push(l.length)), m++
           }
           g++
         };
         if (null == n)
-          for (let e of d) e.stickers.length > 0 ? (h++, r(e.stickers, e.type, (null == t ? true : t.has(e.id)) === true)) : e.type === E.Ih.EMPTY_GUILD_UPSELL && (_[g] = 0, g++);
+          for (let e of d) e.stickers.length > 0 ? (m++, r(e.stickers, e.type, (null == t ? true : t.has(e.id)) === true)) : e.type === E.Ih.EMPTY_GUILD_UPSELL && (_[g] = 0, g++);
         else n.sendable.length > 0 && r(n.sendable, E.Ih.SEARCH_RESULTS), n.sendableWithPremium.length > 0 && r(n.sendableWithPremium, E.Ih.SEARCH_RESULTS)
       }
       return {
-        rowCount: h,
+        rowCount: m,
         rowCountBySection: _,
-        stickersGrid: m,
+        stickersGrid: h,
         gutterWidth: r,
         columnCounts: p
       }
@@ -117,7 +117,7 @@ let v = e => {
   T = e => true,
   C = () => {
     r.useEffect(() => {
-      (0, m.$p)()
+      (0, h.$p)()
     }, [])
   },
   A = e => {
@@ -173,12 +173,12 @@ function P() {
   return null != (t = null == (e = (0, s.D)().favoriteStickers) ? true : e.stickerIds) ? t : N
 }
 
-function R() {
+function w() {
   let e = P();
   return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, b.J8)(e) || (0, b.V9)(e))), [e])
 }
 
-function w() {
+function R() {
   var e, t;
   let n = (0, s.D)(),
     r = N;
@@ -186,17 +186,17 @@ function w() {
 }
 
 function D() {
-  let e = w();
+  let e = R();
   return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [e])
 }
 let x = e => {
-    let t = R(),
+    let t = w(),
       {
         packs: n,
         frequentlyUsedStickers: a
-      } = (0, i.cj)([g.Z, h.Z], () => ({
+      } = (0, i.cj)([g.Z, m.Z], () => ({
         packs: g.Z.getPremiumPacks(),
-        frequentlyUsedStickers: h.Z.stickerFrecencyWithoutFetchingLatest.frequently
+        frequentlyUsedStickers: m.Z.stickerFrecencyWithoutFetchingLatest.frequently
       }), []),
       o = (0, i.e7)([d.default], () => d.default.getCurrentUser()),
       s = A(e);
@@ -250,7 +250,7 @@ let x = e => {
         if (t && !n && null == a && i && !e) {
           o(false);
           try {
-            await (0, m.Il)(r.id)
+            await (0, h.Il)(r.id)
           } catch (e) {}
           l(true)
         }

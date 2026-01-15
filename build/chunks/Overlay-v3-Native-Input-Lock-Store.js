@@ -23,15 +23,15 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = new Set,
-  m = null,
   h = null,
+  m = null,
   g = null;
 
 function E(e) {
   var t;
   if (d.y3) returntrue;
-  if (null == h) returnfalse;
-  let n = null != (t = null == h ? true : h.isCrashedDisabled) && t;
+  if (null == m) returnfalse;
+  let n = null != (t = null == m ? true : m.isCrashedDisabled) && t;
   return !!e || !n
 }
 
@@ -49,17 +49,17 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  return !!E(e) && (y(e, t), null == h || h.setInteractionEnabled(!e), L.emitChange(), true)
+  return !!E(e) && (y(e, t), null == m || m.setInteractionEnabled(!e), L.emitChange(), true)
 }
 
 function v(e, t) {
-  return !!E(e) && (y(e, t), null == m || (clearTimeout(m), m = null, !e)) && (e ? O(e, t) : m = setTimeout(() => {
+  return !!E(e) && (y(e, t), null == h || (clearTimeout(h), h = null, !e)) && (e ? O(e, t) : h = setTimeout(() => {
     O(e, t), S()
   }, 100), true)
 }
 
 function S() {
-  null != m && (clearTimeout(m), m = null)
+  null != h && (clearTimeout(h), h = null)
 }
 
 function I() {
@@ -67,11 +67,11 @@ function I() {
 }
 
 function T() {
-  return h = u.Z.getNativeModule(), I(), true
+  return m = u.Z.getNativeModule(), I(), true
 }
 
 function C() {
-  return h = null, I(), true
+  return m = null, I(), true
 }
 
 function A(e) {
@@ -98,11 +98,11 @@ function P() {
   return (0, c.PY)(null != e ? e : null, "deactivate_all_regions"), null != e && O(true, e), true
 }
 
-function R() {
+function w() {
   return I(), true
 }
 
-function w(e) {
+function R(e) {
   let {
     lastAssociatedPID: t
   } = e;
@@ -110,7 +110,7 @@ function w(e) {
 }
 
 function D() {
-  I(), null == h || h.setInteractionEnabled(false)
+  I(), null == m || m.setInteractionEnabled(false)
 }
 class x extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -130,7 +130,7 @@ let L = new x(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
     OVERLAY_ACTIVATE_REGION: N,
     OVERLAY_DEACTIVATE_ALL_REGIONS: P,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: D,
-    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: R,
-    OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: w
+    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: w,
+    OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: R
   }),
   j = L

@@ -39,21 +39,21 @@ let p = 5 * Chunk70956.Z.Millis.MINUTE;
 function _() {
   return s.isPlatformEmbedded
 }
-async function m() {
-  var e, t, n, r, a, o, s, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k;
+async function h() {
+  var e, t, n, r, a, o, s, c, u, d, f, p, _, h, m, g, E, b, y, O, v, S, I, T, C, A, N, P, w, R, D, x, L, j, M, k;
   let U = l.Z.getMemoryUsageElectronProcessTypeDetails();
   if (null == U) return null;
   let G = [null != (y = null == (e = U.unknown) ? true : e.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : t.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : n.wss_priv_kb) ? v : false, null != (S = null == (r = U.gpu) ? true : r.wss_priv_kb) ? S : false, null != (I = null == (a = U.crashpad) ? true : a.wss_priv_kb) ? I : false, null != (T = null == (o = U.utility) ? true : o.wss_priv_kb) ? T : false],
     Z = {
       electron_process_memory_private: G,
-      electron_process_memory_private_and_shared: [null != (C = null == (s = U.unknown) ? true : s.wss_kb) ? C : false, null != (A = null == (c = U.main) ? true : c.wss_kb) ? A : false, null != (N = null == (u = U.renderer) ? true : u.wss_kb) ? N : false, null != (P = null == (d = U.gpu) ? true : d.wss_kb) ? P : false, null != (R = null == (f = U.crashpad) ? true : f.wss_kb) ? R : false, null != (w = null == (p = U.utility) ? true : p.wss_kb) ? w : false],
-      electron_process_type_count: [null != (D = null == (_ = U.unknown) ? true : _.proc_count) ? D : 0, null != (x = null == (m = U.main) ? true : m.proc_count) ? x : 0, null != (L = null == (h = U.renderer) ? true : h.proc_count) ? L : 0, null != (j = null == (g = U.gpu) ? true : g.proc_count) ? j : 0, null != (M = null == (E = U.crashpad) ? true : E.proc_count) ? M : 0, null != (k = null == (b = U.utility) ? true : b.proc_count) ? k : 0]
+      electron_process_memory_private_and_shared: [null != (C = null == (s = U.unknown) ? true : s.wss_kb) ? C : false, null != (A = null == (c = U.main) ? true : c.wss_kb) ? A : false, null != (N = null == (u = U.renderer) ? true : u.wss_kb) ? N : false, null != (P = null == (d = U.gpu) ? true : d.wss_kb) ? P : false, null != (w = null == (f = U.crashpad) ? true : f.wss_kb) ? w : false, null != (R = null == (p = U.utility) ? true : p.wss_kb) ? R : false],
+      electron_process_type_count: [null != (D = null == (_ = U.unknown) ? true : _.proc_count) ? D : 0, null != (x = null == (h = U.main) ? true : h.proc_count) ? x : 0, null != (L = null == (m = U.renderer) ? true : m.proc_count) ? L : 0, null != (j = null == (g = U.gpu) ? true : g.proc_count) ? j : 0, null != (M = null == (E = U.crashpad) ? true : E.proc_count) ? M : 0, null != (k = null == (b = U.utility) ? true : b.proc_count) ? k : 0]
     },
     F = await (0, i.q)();
   return null != F && (null != F.cpu_memory && (Z.system_memory_total = F.cpu_memory / 1024), null != F.cpu_memory_avail && (Z.system_memory_available = F.cpu_memory_avail / 1024)), Z
 }
 
-function h() {
+function m() {
   let e = l.Z.getMemoryHeapStats(),
     t = l.Z.getBlinkMemoryInfo(),
     n = null;
@@ -103,9 +103,9 @@ class E extends Chunk147913.Z {
     }, p))
   }
   async trackPerfAnalytics() {
-    let e = await m();
+    let e = await h();
     if (null == e) return;
-    let t = f({}, e, h(), await g());
+    let t = f({}, e, m(), await g());
     a.default.track(u.rMx.DESKTOP_PERF_HEARTBEAT, t)
   }
   constructor(...e) {

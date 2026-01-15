@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,7 +87,7 @@ function b(e) {
       type: n,
       "aria-label": i
     } = e,
-    a = m(e, ["type", "aria-label"]);
+    a = h(e, ["type", "aria-label"]);
   let o = g[n];
   if (null == o) return null;
   let s = null != i ? i : null == (t = E[n]) ? true : t.call(E);

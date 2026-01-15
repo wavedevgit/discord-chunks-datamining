@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   DB: () => o,
-  Lm: () => m,
+  Lm: () => h,
   Ob: () => d,
   Rw: () => f,
   Sd: () => a,
-  Vm: () => h,
+  Vm: () => m,
   gS: () => p,
   mG: () => _
 });
@@ -84,7 +84,7 @@ function _(e) {
   return t
 }
 
-function m() {
+function h() {
   let {
     enableCreatorMonetizationNagActivateForUser: e
   } = r.aC.getCurrentConfig({
@@ -95,7 +95,7 @@ function m() {
   return e
 }
 
-function h(e) {
+function m(e) {
   let {
     hideMonetizatonOnboardingInServerSettings: t
   } = r.kR.getCurrentConfig({

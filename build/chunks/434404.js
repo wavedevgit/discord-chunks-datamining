@@ -2,7 +2,7 @@
 /** chunk id: 434404, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./953529.js");
 var Chunk990547 = require("./990547.js"),
   Chunk925477 = require("./925477.js"),
@@ -82,7 +82,7 @@ function N(e, t) {
   return i
 }
 let P = new Chunk710845.Z("GuildSettingsActionCreators"),
-  R = {
+  w = {
     init(e, t, n, r) {
       o.Z.dispatch({
         type: "GUILD_SETTINGS_INIT",
@@ -94,7 +94,7 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var a;
-      await Promise.all([n.e("53870"), n.e("57804"), n.e("36599"), n.e("7654"), n.e("49049"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("9414"), n.e("6850"), n.e("58227"), n.e("63575"), n.e("44686"), n.e("38697"), n.e("9536"), n.e("96795"), n.e("39206"), n.e("93375"), n.e("69937"), n.e("22516"), n.e("15227")]).then(n.bind(n, 994763)), (null == (a = E.Z.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, r, i), m.Z.closeGuildSidebar(e), (0, s.jN)(O.S9g.GUILD_SETTINGS)
+      await Promise.all([n.e("53870"), n.e("57804"), n.e("36599"), n.e("7654"), n.e("49049"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("9414"), n.e("6850"), n.e("58227"), n.e("63575"), n.e("44686"), n.e("38697"), n.e("9536"), n.e("96795"), n.e("39206"), n.e("93375"), n.e("69937"), n.e("22516"), n.e("15227")]).then(n.bind(n, 994763)), (null == (a = E.Z.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), w.init(e, t, r, i), h.Z.closeGuildSidebar(e), (0, s.jN)(O.S9g.GUILD_SETTINGS)
     },
     close() {
       o.Z.dispatch({
@@ -211,8 +211,8 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
         afkChannelId: f,
         afkTimeout: p,
         systemChannelId: _,
-        verificationLevel: m,
-        defaultMessageNotifications: h,
+        verificationLevel: h,
+        defaultMessageNotifications: m,
         explicitContentFilter: g,
         features: E,
         systemChannelFlags: b,
@@ -222,8 +222,8 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
         ownerConfiguredContentLevel: T,
         discoverySplash: A,
         publicUpdatesChannelId: N,
-        premiumProgressBarEnabled: R,
-        profile: w,
+        premiumProgressBarEnabled: w,
+        profile: R,
         moderatorReportingEnabled: D
       } = t, x = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, L = C(I({
         name: n,
@@ -237,8 +237,8 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
         afk_channel_id: f,
         afk_timeout: p,
         system_channel_id: _,
-        verification_level: m,
-        default_message_notifications: h,
+        verification_level: h,
+        default_message_notifications: m,
         explicit_content_filter: g,
         system_channel_flags: b,
         rules_channel_id: v,
@@ -246,10 +246,10 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
         discovery_splash: A,
         public_updates_channel_id: N,
         safety_alerts_channel_id: S
-      }, null != R ? {
-        premium_progress_bar_enabled: R
+      }, null != w ? {
+        premium_progress_bar_enabled: w
       } : null), {
-        profile: null != w ? (0, c.n)(w) : w,
+        profile: null != R ? (0, c.n)(R) : R,
         moderator_reporting_enabled: D
       });
       return o.Z.dispatch({
@@ -325,7 +325,7 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
       oldFormErrors: true,
       rejectWithError: false
     }).then(() => {
-      R.close()
+      w.close()
     }),
     async leaveGuild(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -339,10 +339,10 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
         rejectWithError: false
       }).then(() => {
         i.uv.announce(v.intl.string(v.t["7iPyVW"]))
-      }), R.close(), t && n && (0, _.uL)(O.Z5c.GUILD_DISCOVERY)
+      }), w.close(), t && n && (0, _.uL)(O.Z5c.GUILD_DISCOVERY)
     },
     async updateMemberRoles(e, t, n, r, i) {
-      if (f.Z.isFullServerPreview(e) && t === h.default.getId()) return void(0, d.og)(e, n);
+      if (f.Z.isFullServerPreview(e) && t === m.default.getId()) return void(0, d.og)(e, n);
       await a.tn.patch({
         url: O.ANM.GUILD_MEMBER(e, t),
         body: {
@@ -433,7 +433,7 @@ let P = new Chunk710845.Z("GuildSettingsActionCreators"),
         migratePin: n,
         migrateSlowmode: r
       } = t;
-      n && await R.migratePinPermission(e), r && await R.migrateSlowmodePermission(e)
+      n && await w.migratePinPermission(e), r && await w.migrateSlowmodePermission(e)
     }
   },
-  w = R
+  R = w

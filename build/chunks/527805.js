@@ -4,7 +4,7 @@
 require.d(exports, {
   Fw: () => p,
   ZP: () => _,
-  s5: () => m
+  s5: () => h
 });
 var Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
@@ -31,8 +31,8 @@ function _(e) {
     isActivitiesEnabledForCurrentPlatform: u,
     ChannelStore: p,
     VoiceStateStore: _,
-    PermissionStore: m,
-    GuildStore: h
+    PermissionStore: h,
+    GuildStore: m
   } = e;
   if (null == i) return 8;
   if ((null == l ? true : l.nsfwAllowed) === false && (null == o || null == (t = o.embeddedActivityConfig) ? true : t.requires_age_gate) === true) return 7;
@@ -45,12 +45,12 @@ function _(e) {
   if (!E.isPrivate()) {
     let e = E.getGuildId();
     if (null == e) return 10;
-    let t = h.getGuild(e);
+    let t = m.getGuild(e);
     if ((null == t ? true : t.afkChannelId) === E.id) return 9;
     let n = _.getCurrentClientVoiceChannelId(E.getGuildId()) === g,
-      r = (0, c.rY)(E, _, h),
-      i = m.can(f.Plq.CONNECT, E);
-    if (!m.can(f.Plq.USE_EMBEDDED_ACTIVITIES, E)) return 1;
+      r = (0, c.rY)(E, _, m),
+      i = h.can(f.Plq.CONNECT, E);
+    if (!h.can(f.Plq.USE_EMBEDDED_ACTIVITIES, E)) return 1;
     if (E.isVocal() && !n) {
       if (r) return 3;
       if (!i) return 2
@@ -59,7 +59,7 @@ function _(e) {
   return 0
 }
 
-function m(e) {
+function h(e) {
   let {
     userId: t,
     activity: n,

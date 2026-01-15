@@ -94,7 +94,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         onRequestClose: () => {
           _(true)
         },
-        renderPopout: e => (0, r.jsx)(h.Z, S(O({}, e), {
+        renderPopout: e => (0, r.jsx)(m.Z, S(O({}, e), {
           renderableSticker: t,
           channel: n,
           refreshPositionKey: () => E(String(Date.now()))
@@ -118,7 +118,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
                 _(!f), n(e)
               },
               tag: "span",
-              children: (0, r.jsx)(m.Z, {
+              children: (0, r.jsx)(h.Z, {
                 isInteracting: o,
                 size: I,
                 sticker: null != y ? y : t

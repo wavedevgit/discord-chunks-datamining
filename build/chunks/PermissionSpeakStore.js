@@ -22,9 +22,9 @@ function d(e, t, n) {
 let f = "hideSuppressWarning",
   p = false,
   _ = true,
-  m = false;
+  h = false;
 
-function h(e) {
+function m(e) {
   r = e.sessionId, p = false
 }
 
@@ -36,18 +36,18 @@ function E(e) {
   let {
     voiceStates: t
   } = e;
-  return t.reduce((e, t) => r !== t.sessionId ? e : (p !== t.suppress && (_ = !(p = t.suppress)), i !== t.channelId && (i = t.channelId, _ = !p), (m || null == t.channelId) && (_ = true), true), false)
+  return t.reduce((e, t) => r !== t.sessionId ? e : (p !== t.suppress && (_ = !(p = t.suppress)), i !== t.channelId && (i = t.channelId, _ = !p), (h || null == t.channelId) && (_ = true), true), false)
 }
 
 function b(e) {
   let {
     forever: t
   } = e;
-  _ = true, t && (m = true, s.K.set(f, m))
+  _ = true, t && (h = true, s.K.set(f, h))
 }
 class y extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(c.Z, u.Z), m = s.K.get(f) || m
+    this.waitFor(c.Z, u.Z), h = s.K.get(f) || h
   }
   isAFKChannel() {
     let e = c.Z.getChannel(i);
@@ -62,7 +62,7 @@ class y extends(a = Chunk442837.ZP.Store) {
 }
 d(y, "displayName", "PermissionSpeakStore");
 let O = new y(Chunk570140.Z, {
-  CONNECTION_OPEN: h,
+  CONNECTION_OPEN: m,
   CONNECTION_CLOSED: g,
   VOICE_STATE_UPDATES: E,
   PERMISSION_CLEAR_SUPPRESS_WARNING: b

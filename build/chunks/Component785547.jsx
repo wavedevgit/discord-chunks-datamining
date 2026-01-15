@@ -51,7 +51,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,7 +88,7 @@ function j(e) {
 }
 class M extends(r = Chunk473749.Component) {
   get analyticsLocation() {
-    return w(P({}, this.props.analyticsContext.location), {
+    return R(P({}, this.props.analyticsContext.location), {
       object: T.qAy.BUTTON_CTA
     })
   }
@@ -268,8 +268,8 @@ class M extends(r = Chunk473749.Component) {
 function k(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, f.O)(), [r, a] = (0, s.Wu)([E.Z, b.Z], () => [(0, h.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), o = (0, s.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, s.e7)([m.Z], () => m.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, i.jsx)(M, w(P({}, e), {
+  } = e, n = (0, f.O)(), [r, a] = (0, s.Wu)([E.Z, b.Z], () => [(0, m.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), o = (0, s.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, s.e7)([h.Z], () => h.Z.hasNoBuild(t.id, t.branchId), [t]);
+  return (0, i.jsx)(M, R(P({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: a,

@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk612776 = require("./612776.js"),
   Chunk905796 = require("./905796.js");
 let _ = 256,
-  m = 512,
-  h = 70,
+  h = 512,
+  m = 70,
   g = 40,
   E = 45,
   b = 45,
@@ -31,8 +31,8 @@ let _ = 256,
   A = "\nprecision mediump float;\n\nvarying vec2 v_texcoord;\nvarying highp vec3 v_lighting;\n\nuniform sampler2D u_texture;\n\nvoid main() {\n  highp vec4 texelColor = texture2D(u_texture, v_texcoord);\n  gl_FragColor = vec4(texelColor.rgb * v_lighting, texelColor.a);\n}\n",
   N = [false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, false, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5, .5, false, .5, false, false, .5, .5, .5, .5, false, false, .5, .5, .5, .5, .5, .5, .5, false, false, false, false, .5, false, false, false, false, .5, false, false, .5, .5, false, false, .5, false, .5, false, false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, .5, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5],
   P = [0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0],
-  R = [0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
-  w = e => {
+  w = [0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
+  R = e => {
     let t = new Float32Array(N);
     e.bufferData(e.ARRAY_BUFFER, t, e.STATIC_DRAW)
   },
@@ -40,7 +40,7 @@ let _ = 256,
     e.bufferData(e.ARRAY_BUFFER, new Float32Array(P), e.STATIC_DRAW)
   },
   x = e => {
-    e.bufferData(e.ARRAY_BUFFER, new Float32Array(R), e.STATIC_DRAW)
+    e.bufferData(e.ARRAY_BUFFER, new Float32Array(w), e.STATIC_DRAW)
   };
 
 function L(e, t, n, r, s) {
@@ -66,13 +66,13 @@ function L(e, t, n, r, s) {
     let f = i.getAttribLocation(d, "a_position"),
       p = i.getAttribLocation(d, "a_texcoord"),
       _ = i.getUniformLocation(d, "u_matrix"),
-      m = i.getUniformLocation(d, "u_texture"),
-      h = i.getAttribLocation(d, "a_vertexNormal"),
+      h = i.getUniformLocation(d, "u_texture"),
+      m = i.getAttribLocation(d, "a_vertexNormal"),
       g = i.getUniformLocation(d, "u_normalMatrix"),
       E = i.createBuffer();
-    i.bindBuffer(i.ARRAY_BUFFER, E), x(i), i.vertexAttribPointer(h, 3, i.FLOAT, false, 0, 0), i.enableVertexAttribArray(h);
+    i.bindBuffer(i.ARRAY_BUFFER, E), x(i), i.vertexAttribPointer(m, 3, i.FLOAT, false, 0, 0), i.enableVertexAttribArray(m);
     let b = i.createBuffer();
-    i.bindBuffer(i.ARRAY_BUFFER, b), w(i);
+    i.bindBuffer(i.ARRAY_BUFFER, b), R(i);
     let y = i.createBuffer();
     i.bindBuffer(i.ARRAY_BUFFER, y), D(i);
     let O = a.c$(60),
@@ -84,13 +84,13 @@ function L(e, t, n, r, s) {
         i.clear(i.COLOR_BUFFER_BIT | i.DEPTH_BUFFER_BIT), i.useProgram(d), i.enableVertexAttribArray(f), i.bindBuffer(i.ARRAY_BUFFER, b), i.vertexAttribPointer(f, 3, i.FLOAT, false, 0, 0), i.enableVertexAttribArray(p), i.bindBuffer(i.ARRAY_BUFFER, y), i.vertexAttribPointer(p, 2, i.FLOAT, false, 0, 0);
         let c = e.clientWidth / e.clientHeight,
           u = o.G3(o.Ue(), O, c, 1, 2e3),
-          h = o.zB(o.Ue(), S, T, I),
-          E = o.Jp(o.Ue(), u, h),
+          m = o.zB(o.Ue(), S, T, I),
+          E = o.Jp(o.Ue(), u, m),
           C = o.Ue();
         o.lM(C, C, t), o.uD(C, C, l);
         let A = o.Jp(o.Ue(), E, C),
           N = o.Ue();
-        o.U_(N, C), o.p4(N, N), i.uniformMatrix4fv(g, false, N), i.uniformMatrix4fv(_, false, A), i.uniform1i(m, 0), i.drawArrays(i.TRIANGLES, 0, 36), n = requestAnimationFrame(v)
+        o.U_(N, C), o.p4(N, N), i.uniformMatrix4fv(g, false, N), i.uniformMatrix4fv(_, false, A), i.uniform1i(h, 0), i.drawArrays(i.TRIANGLES, 0, 36), n = requestAnimationFrame(v)
       };
     return n = requestAnimationFrame(v), () => cancelAnimationFrame(n)
   }, [r, s, e, t])
@@ -99,7 +99,7 @@ function L(e, t, n, r, s) {
 function j(e) {
   let {
     emoji: t
-  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, C] = i.useState(null), [A, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), w = d.E[f.yD.EMOJIS], D = (0, l.dQu)(w.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), F = i.useRef(false), B = i.useRef(0), V = i.useRef(0);
+  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, C] = i.useState(null), [A, N] = i.useState(false), P = i.useRef(0), w = i.useRef(0), R = d.E[f.yD.EMOJIS], D = (0, l.dQu)(R.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : m, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), F = i.useRef(false), B = i.useRef(0), V = i.useRef(0);
   L(n, o, T, x, j);
   let H = i.useCallback(() => {
     let e = null == o ? true : o.getContext("2d");
@@ -110,7 +110,7 @@ function j(e) {
   }, [t, H, I]), i.useEffect(() => {
     let e = t => {
       let n = .001 * t,
-        r = n - R.current;
+        r = n - w.current;
       if (j.current += -Z.current * r, x.current += -G.current * r, !F.current) {
         if (Math.abs(G.current) > k) {
           let e = G.current > 0 ? 1 : false;
@@ -121,7 +121,7 @@ function j(e) {
           Z.current -= O * e * window.devicePixelRatio
         }
       }
-      R.current = n, P.current = requestAnimationFrame(e)
+      w.current = n, P.current = requestAnimationFrame(e)
     };
     return e(0), () => cancelAnimationFrame(P.current)
   }, [k, U]);
@@ -143,8 +143,8 @@ function j(e) {
     children: [(0, r.jsx)("canvas", {
       className: A ? p.visibleCanvas : p.invisible,
       ref: a,
-      height: m,
-      width: m,
+      height: h,
+      width: h,
       onMouseDown: Y
     }), (0, r.jsx)("canvas", {
       className: p.hidden,

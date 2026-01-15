@@ -46,10 +46,10 @@ var p = function(e) {
   return e.INITIALIZED = "INITIALIZED", e.LOADING = "LOADING", e.LOADED = "LOADED", e.ERROR = "ERROR", e
 }({});
 let _ = "INITIALIZED",
-  m = [];
+  h = [];
 
-function h() {
-  f = d(), _ = "INITIALIZED", m = []
+function m() {
+  f = d(), _ = "INITIALIZED", h = []
 }
 
 function g() {
@@ -68,7 +68,7 @@ function b(e) {
     applicationId: t,
     timestamp: n
   } = e;
-  if (null == m.find(e => e.id === t)) returnfalse;
+  if (null == h.find(e => e.id === t)) returnfalse;
   f.lastUsedObject[t] = n
 }
 
@@ -76,7 +76,7 @@ function y(e) {
   let {
     applications: t
   } = e;
-  _ = "LOADED", m = t.filter(e => null != e.flags && (0, i.yE)(e.flags, l.udG.EMBEDDED))
+  _ = "LOADED", h = t.filter(e => null != e.flags && (0, i.yE)(e.flags, l.udG.EMBEDDED))
 }
 
 function O(e) {
@@ -100,7 +100,7 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return f
   }
   getIsEnabled() {
-    return s.Sb.getSetting() && m.length > 0
+    return s.Sb.getSetting() && h.length > 0
   }
   getLastUsedObject() {
     return f.lastUsedObject
@@ -118,15 +118,15 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return this.getIsEnabled() ? f.filter : ""
   }
   getDeveloperShelfItems() {
-    return this.getIsEnabled() ? m : []
+    return this.getIsEnabled() ? h : []
   }
   inDevModeForApplication(e) {
-    return this.getIsEnabled() && null != m.find(t => t.id === e)
+    return this.getIsEnabled() && null != h.find(t => t.id === e)
   }
 }
 c(S, "displayName", "DeveloperActivityShelfStore"), c(S, "persistKey", "DeveloperActivityShelfStore"), c(S, "migrations", [e => (delete e.isEnabled, u({}, e))]);
 let I = new S(Chunk570140.Z, {
-  LOGOUT: h,
+  LOGOUT: m,
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: b,

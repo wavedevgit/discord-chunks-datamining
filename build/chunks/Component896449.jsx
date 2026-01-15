@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214226 = require("./214226.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -63,14 +63,14 @@ function O(e) {
   var t;
   let {
     user: n,
-    guildId: h,
+    guildId: m,
     channel: E,
     entry: O,
     onSelect: v,
     disableGameProfileLinks: S
   } = e, I = i.useRef(null), T = i.useContext(p.Ir), C = (0, d.Z)({
     userId: n.id,
-    guildId: h,
+    guildId: m,
     channelId: null == E ? true : E.id,
     onAction: T
   }), A = (0, l.Z)({
@@ -79,9 +79,9 @@ function O(e) {
   }), N = "application_id" in O.extra ? O.extra.application_id : null, P = (0, l.Z)({
     id: N,
     label: _.intl.string(_.t["FfCL+6"])
-  }), R = (0, f.dX)(O), w = (0, u.Z)({
+  }), w = (0, f.dX)(O), R = (0, u.Z)({
     location: "ContentPopoutContextMenu",
-    applicationId: R && true !== S ? null == (t = O.extra) ? true : t.application_id : true,
+    applicationId: w && true !== S ? null == (t = O.extra) ? true : t.application_id : true,
     source: c.m1.ActivityCardContextMenu,
     trackEntryPointImpression: true,
     sourceUserId: O.author_id
@@ -104,11 +104,11 @@ function O(e) {
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(o.kSQ, {
-            children: [C, null != w && (0, r.jsx)(o.sNh, {
+            children: [C, null != R && (0, r.jsx)(o.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGn),
               action: e => {
-                w(e), null == T || T()
+                R(e), null == T || T()
               }
             })]
           }), (0, r.jsxs)(o.kSQ, {
@@ -122,7 +122,7 @@ function O(e) {
       text: _.intl.string(_.t["UKOtz+"]),
       children: (0, r.jsx)(o.P3F, b(g({
         innerRef: I,
-        className: m.menuIcon
+        className: h.menuIcon
       }, e), {
         children: (0, r.jsx)(o.xhG, {
           color: "currentColor",

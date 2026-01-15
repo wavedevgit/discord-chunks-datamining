@@ -5,8 +5,8 @@ require.d(exports, {
   Dq: () => g,
   hf: () => y,
   li: () => E,
-  oP: () => m,
-  rJ: () => h,
+  oP: () => h,
+  rJ: () => m,
   rm: () => O,
   ul: () => b
 }), require("./539854.js"), require("./388685.js");
@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk883337 = require("./883337.js");
 
-function m(e) {
+function h(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
     i = [],
@@ -44,7 +44,7 @@ function m(e) {
   }, f.PC.REDDIT_MOD)), i
 }
 
-function h(e) {
+function m(e) {
   var t, n;
   let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
     a = [],

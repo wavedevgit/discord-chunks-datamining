@@ -28,9 +28,9 @@ function c(e) {
         onClick: () => {
           n(a.L.USER_DISMISS)
         },
-        icon: i.Uz9
+        icon: i.XLargeIcon
       })
-    }), (0, r.jsx)(i.Mgn, {
+    }), (0, r.jsx)(i.CircleErrorIcon, {
       color: l.Z.colors.TEXT_FEEDBACK_WARNING,
       className: u.icon
     }), (0, r.jsx)(o.xvT, {

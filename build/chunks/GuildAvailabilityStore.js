@@ -41,10 +41,10 @@ function _(e) {
   u.delete(e.guild.id), c.info("Guild has become available: ".concat(e.guild.id))
 }
 
-function m(e) {
+function h(e) {
   true !== e.guild.unavailable && u.delete(e.guild.id)
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(s.Z)
   }
@@ -61,12 +61,12 @@ class h extends(r = Chunk442837.ZP.Store) {
     return Array.from(u)
   }
 }
-l(h, "displayName", "GuildAvailabilityStore");
-let g = new h(Chunk570140.Z, {
+l(m, "displayName", "GuildAvailabilityStore");
+let g = new m(Chunk570140.Z, {
   CONNECTION_OPEN: d,
   OVERLAY_INITIALIZE: d,
   GUILD_UNAVAILABLE: p,
-  GUILD_DELETE: m,
+  GUILD_DELETE: h,
   GUILD_CREATE: _,
   GUILD_UPDATE: _,
   GUILD_GEO_RESTRICTED: f

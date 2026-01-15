@@ -23,8 +23,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 0x7fffffff,
-  m = {},
-  h = new Map,
+  h = {},
+  m = new Map,
   g = [],
   E = [],
   b = [],
@@ -36,20 +36,20 @@ let _ = 0x7fffffff,
 function I(e) {
   let t = u.Z.createFromServer(e),
     n = t.code;
-  if (h.has(n)) h.set(n, h.get(n).merge(t));
-  else if (h.set(n, t), null != t.expiresAt) {
+  if (m.has(n)) m.set(n, m.get(n).merge(t));
+  else if (m.set(n, t), null != t.expiresAt) {
     let e = new s.V7;
-    m[n] = e, T(n)
+    h[n] = e, T(n)
   }
 }
 
 function T(e) {
-  let t = h.get(e);
+  let t = m.get(e);
   if (null == t || null == t.expiresAt) return;
   let n = t.expiresAt.valueOf() - a()().valueOf();
-  if (n <= 0) h.delete(e), delete m[e], q.emitChange();
+  if (n <= 0) m.delete(e), delete h[e], q.emitChange();
   else {
-    let t = m[e];
+    let t = h[e];
     if (null == t) return;
     t.start(Math.min(_, n), () => T(e))
   }
@@ -84,14 +84,14 @@ function P(e) {
   g.includes(t) || (g = [...g, t])
 }
 
-function R(e) {
+function w(e) {
   let {
     giftCode: t
   } = e;
   return g = g.filter(e => e !== t.code), b.includes(t.code) || (b = [...b, t.code]), I(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     code: t
   } = e;
@@ -102,9 +102,9 @@ function D(e) {
   let {
     code: t
   } = e;
-  h.delete(t);
-  let n = m[t];
-  null != n && (n.stop(), delete m[t]), b.includes(t) || (b = [...b, t])
+  m.delete(t);
+  let n = h[t];
+  null != n && (n.stop(), delete h[t]), b.includes(t) || (b = [...b, t])
 }
 
 function x(e) {
@@ -125,8 +125,8 @@ function j(e) {
   let {
     uses: t,
     code: n
-  } = e, r = h.get(n);
-  null != r && h.set(n, r.set("uses", Math.max(r.uses, t)))
+  } = e, r = m.get(n);
+  null != r && m.set(n, r.set("uses", Math.max(r.uses, t)))
 }
 
 function M(e) {
@@ -161,8 +161,8 @@ function G(e) {
     code: t
   } = e;
   E = E.filter(e => e !== t);
-  let n = h.get(t);
-  null != n && h.set(t, n.merge({
+  let n = m.get(t);
+  null != n && m.set(t, n.merge({
     redeemed: true,
     uses: n.uses + 1
   }))
@@ -174,13 +174,13 @@ function Z(e) {
     error: n
   } = e;
   E = E.filter(e => e !== t);
-  let r = h.get(t);
+  let r = m.get(t);
   if (v[t] = n, null != r) switch (n.code) {
     case f.evJ.UNKNOWN_GIFT_CODE:
-      h.set(t, r.set("revoked", true));
+      m.set(t, r.set("revoked", true));
       break;
     case f.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-      h.set(t, r.set("uses", r.maxUses))
+      m.set(t, r.set("uses", r.maxUses))
   }
 }
 
@@ -253,14 +253,14 @@ function K(e) {
 }
 class z extends(r = Chunk442837.ZP.Store) {
   get(e) {
-    let t = h.get(e);
+    let t = m.get(e);
     return null == t || t.isExpired() ? null : t
   }
   getError(e) {
     return null != e ? v[e] : null
   }
   getForGifterSKUAndPlan(e, t, n) {
-    return Array.from(h.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
+    return Array.from(m.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
   }
   getIsResolving(e) {
     return g.includes(e)
@@ -292,8 +292,8 @@ let q = new z(Chunk570140.Z, {
     CONNECTION_OPEN: A,
     CHANNEL_SELECT: N,
     GIFT_CODE_RESOLVE: P,
-    GIFT_CODE_RESOLVE_SUCCESS: R,
-    GIFT_CODE_RESOLVE_FAILURE: w,
+    GIFT_CODE_RESOLVE_SUCCESS: w,
+    GIFT_CODE_RESOLVE_FAILURE: R,
     GIFT_CODE_REDEEM: x,
     GIFT_CODE_REDEEM_SUCCESS: G,
     GIFT_CODE_REDEEM_FAILURE: Z,

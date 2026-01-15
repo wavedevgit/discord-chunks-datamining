@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  c: () => h
+  c: () => m
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,11 +19,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk407661 = require("./407661.jsx"),
   Chunk72775 = require("./72775.js");
 
-function h(e) {
+function m(e) {
   let {
     channel: t,
     type: n,
-    activeCommand: h,
+    activeCommand: m,
     pendingReply: g,
     pendingScheduledMessage: E,
     selectedAutocompleteInputType: b,
@@ -41,9 +41,9 @@ function h(e) {
     return null != t.guild_id && n === p.Ie.NORMAL && i.push((0, r.jsx)(d.Z, {
       guildId: t.guild_id,
       channel: t,
-      className: m.newMemberActionBar
-    })), null != h && e.push((0, r.jsx)(s.Z, {
-      activeCommand: h,
+      className: h.newMemberActionBar
+    })), null != m && e.push((0, r.jsx)(s.Z, {
+      activeCommand: m,
       activeOption: null != O ? O : null,
       optionStates: v,
       channelId: t.id
@@ -58,7 +58,7 @@ function h(e) {
       stacked: e,
       floating: i
     }
-  }, [h, O, v, t, g, S, n, E, b, y])
+  }, [m, O, v, t, g, S, n, E, b, y])
 }
 
 function g(e) {
@@ -71,10 +71,10 @@ function g(e) {
   }, t));
   return 0 === n.length && 0 === a.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [a.length > 0 && (0, r.jsx)("div", {
-      className: m.floatingBars,
+      className: h.floatingBars,
       children: a
     }), n.length > 0 && (0, r.jsx)("div", {
-      className: m.stackedBars,
+      className: h.stackedBars,
       children: n
     })]
   })

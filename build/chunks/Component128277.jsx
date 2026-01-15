@@ -40,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function x(e) {
     currentUser: n,
     activity: a,
     className: P,
-    onClose: w
+    onClose: R
   } = e, x = (0, _.Dt)(), L = (0, _.Dt)(), {
     themeType: j
   } = (0, b.z)(), M = (0, p.Z)({
@@ -86,7 +86,7 @@ function x(e) {
     largeImage: G
   } = (0, d.FO)(a), {
     analyticsLocations: Z
-  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), F = (0, h.Z)({
+  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), F = (0, m.Z)({
     display: "live",
     user: t,
     activity: a,
@@ -111,7 +111,7 @@ function x(e) {
             onClick: e => {
               e.stopPropagation(), F({
                 action: "OPEN_SPOTIFY_ARTIST"
-              }), (0, m.d$)(a, t.id, n)
+              }), (0, h.d$)(a, t.id, n)
             },
             children: e
           }), n < l.length - 1 ? ", " : ""]
@@ -146,9 +146,9 @@ function x(e) {
       ref: B,
       className: o()(N.card, P),
       onAction: F,
-      onClose: w,
+      onClose: R,
       "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
-      children: [(0, r.jsx)(v.Z, D(R({
+      children: [(0, r.jsx)(v.Z, D(w({
         textId: L
       }, k), {
         contextMenu: (0, r.jsx)(C.Z, {
@@ -156,7 +156,7 @@ function x(e) {
           user: t,
           activity: a,
           entry: M,
-          onClose: w
+          onClose: R
         })
       })), (0, r.jsx)("div", {
         className: N.body,
@@ -169,7 +169,7 @@ function x(e) {
             onClick: e => {
               e.stopPropagation(), F({
                 action: "OPEN_SPOTIFY_ALBUM"
-              }), (0, m.Z5)(a, t.id)
+              }), (0, h.Z5)(a, t.id)
             }
           }), (0, r.jsxs)("div", {
             className: N.details,
@@ -180,7 +180,7 @@ function x(e) {
                 onClick: () => {
                   F({
                     action: "OPEN_SPOTIFY_TRACK"
-                  }), (0, m.aG)(a)
+                  }), (0, h.aG)(a)
                 },
                 id: x
               }), V()]

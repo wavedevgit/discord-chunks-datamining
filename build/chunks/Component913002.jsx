@@ -86,40 +86,40 @@ function S(e) {
     }), p.Ok.updateSetting(true)
   };
   return (0, r.jsxs)(f.ZP, {
-    className: o()(h.popover, {
-      [h.visible]: t,
-      [h.expandable]: n
+    className: o()(m.popover, {
+      [m.visible]: t,
+      [m.expandable]: n
     }),
     children: [(0, r.jsx)(l.u, {
       asContainer: true,
       targetElementRef: b,
-      text: m.intl.string(m.t.bt75uw),
+      text: h.intl.string(h.t.bt75uw),
       delay: T,
       ariaHidden: true,
       children: (0, r.jsx)(f.zx, {
         ref: b,
-        className: o()(h.button, h.left),
-        "aria-label": m.intl.string(m.t.QdHxos),
+        className: o()(m.button, m.left),
+        "aria-label": h.intl.string(h.t.QdHxos),
         "aria-haspopup": "dialog",
         onClick: C,
         children: (0, r.jsx)(c.vdY, {
           size: "xs",
-          colorClass: h.icon
+          colorClass: m.icon
         })
       })
     }), (0, r.jsx)(l.u, {
       asContainer: true,
-      text: m.intl.string(m.t.VkKicb),
+      text: h.intl.string(h.t.VkKicb),
       delay: T,
       ariaHidden: true,
       children: (0, r.jsx)(f.zx, {
         ref: y,
-        className: o()(h.button, h.right),
-        "aria-label": m.intl.string(m.t.wfYTHe),
+        className: o()(m.button, m.right),
+        "aria-label": h.intl.string(h.t.wfYTHe),
         onClick: A,
         children: (0, r.jsx)(c.XHJ, {
           size: "xs",
-          colorClass: h.icon
+          colorClass: m.icon
         })
       })
     })]

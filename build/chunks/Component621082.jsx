@@ -2,7 +2,7 @@
 /** chunk id: 621082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gm: () => m,
+  Gm: () => h,
   Uj: () => _,
   ZI: () => p
 }), require("./953529.js");
@@ -25,8 +25,8 @@ function _(e) {
     imgSrc: n,
     renderPurchaseButton: i,
     onPurchase: _,
-    title: m,
-    onDetails: h,
+    title: h,
+    onDetails: m,
     benefitItems: g,
     benefitsSummary: E,
     subtitle: b,
@@ -37,10 +37,10 @@ function _(e) {
       className: a()(u.container, d.hoverCard),
       tabIndex: 0,
       onClick: () => {
-        null != h ? h() : null != _ && _()
+        null != m ? m() : null != _ && _()
       },
       onKeyUp: e => {
-        "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != h ? h() : null != _ && _())
+        "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != m ? m() : null != _ && _())
       },
       children: [(0, r.jsx)("div", {
         className: u.card,
@@ -49,7 +49,7 @@ function _(e) {
           children: [(0, r.jsx)(l.xvT, {
             tag: "div",
             variant: "heading-lg/semibold",
-            children: m
+            children: h
           }), (0, r.jsx)("div", {
             className: u.image,
             children: null != n ? (0, r.jsx)("img", {
@@ -107,7 +107,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     icon: t,
     header: n,

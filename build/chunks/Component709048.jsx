@@ -22,14 +22,14 @@ function u(e) {
     customBackgroundClassName: p,
     children: _
   } = e, {
-    theme: m
+    theme: h
   } = i.useContext(s.Ni);
   return (0, r.jsx)(l.z, {
     theme: a,
     gradient: u,
     disableAdaptiveTheme: d,
     reduceAdaptiveTheme: f,
-    children: _(o()((0, c.Q)(null != (n = null != (t = null == u ? true : u.theme) ? t : a) ? n : m), {
+    children: _(o()((0, c.Q)(null != (n = null != (t = null == u ? true : u.theme) ? t : a) ? n : h), {
       [null != p ? p : ""]: null != u && null != p,
       "disable-adaptive-theme": d,
       "reduce-adaptive-theme": f

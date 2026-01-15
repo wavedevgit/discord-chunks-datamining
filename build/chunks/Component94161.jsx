@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk72775 = require("./72775.js");
 
-function h(e, t) {
+function m(e, t) {
   let {
     disabled: n,
     type: a,
-    channelId: h,
+    channelId: m,
     pickerView: g = p.X1.EMOJI
   } = e, [E, b, y, O] = (0, u.Iu)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.X), v = (0, d.v)(l.S), S = a === f.Ie.NORMAL, {
     tooltipsWithKeybinds: I,
@@ -30,17 +30,17 @@ function h(e, t) {
   } = d.n.useConfig({
     location: "EmojiButton"
   }), C = T ? true : S ? v : true, A = I && T && S ? _.intl.string(_.t.DSBQ6F) : true, N = i.useCallback(() => {
-    (0, u.RO)(g, a, h)
-  }, [a, g, h]);
+    (0, u.RO)(g, a, m)
+  }, [a, g, m]);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(p.CT, m.buttonContainer),
+    className: o()(p.CT, h.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.Z, {
       "aria-label": A,
       tooltipText: A,
-      className: m.emojiButton,
+      className: h.emojiButton,
       onClick: N,
-      active: E === g && b === a && O === h,
+      active: E === g && b === a && O === m,
       "aria-controls": y,
       tabIndex: 0,
       focusProps: {
@@ -56,4 +56,4 @@ function h(e, t) {
     })
   })
 }
-let g = Chunk473749.memo(Chunk473749.forwardRef(h))
+let g = Chunk473749.memo(Chunk473749.forwardRef(m))

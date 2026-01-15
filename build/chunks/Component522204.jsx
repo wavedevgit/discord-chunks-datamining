@@ -86,7 +86,7 @@ let C = Chunk473749.forwardRef(function(e, t) {
         performSearch: n,
         replace: r
       } = e;
-      m.Z.setSearchQuery({
+      h.Z.setSearchQuery({
         query: t,
         performSearch: n,
         replace: r,
@@ -96,7 +96,7 @@ let C = Chunk473749.forwardRef(function(e, t) {
     }, [o, p]), {
       items: g,
       itemsData: E
-    } = (0, h.Z)({
+    } = (0, m.Z)({
       resultsState: o,
       searchContext: n,
       selectedChannel: l,
@@ -175,7 +175,7 @@ let C = Chunk473749.forwardRef(function(e, t) {
       (0, E.bh)({
         searchContext: s,
         searchQuery: g.Z.getSearchResultsQuery(t),
-        searchQueryString: m.Z.getSearchInputText(s),
+        searchQueryString: h.Z.getSearchInputText(s),
         searchTokenType: a.mode.filter,
         searchAutocompleteGroup: v.rtL.DATES,
         searchAutocompleteMode: a.mode,
@@ -183,7 +183,7 @@ let C = Chunk473749.forwardRef(function(e, t) {
         isSearchFilterAnswer: true,
         isSearchFilterComplete: false,
         searchAutocompleteSelectAction: O.ZW.CLICK
-      }), m.Z.setSearchQuery({
+      }), h.Z.setSearchQuery({
         query: e.format(v.b2L) + " ",
         performSearch: true,
         replace: false,

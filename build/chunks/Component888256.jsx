@@ -20,11 +20,11 @@ function f(e) {
     disabled: n,
     handleDisableAccount: f,
     handleDeleteAccount: p
-  } = e, _ = t.isClaimed(), m = i.useRef(null);
-  return (0, s.Z)(m, l.KQ.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(o.F, {
+  } = e, _ = t.isClaimed(), h = i.useRef(null);
+  return (0, s.Z)(h, l.KQ.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(o.F, {
     setting: c.s6.ACCOUNT_DISABLE_ACCOUNT,
     children: (0, r.jsx)("div", {
-      ref: m,
+      ref: h,
       children: (0, r.jsx)(a.gNt, {
         label: u.intl.string(u.t.ZKsIks),
         description: _ ? u.intl.string(u.t.TIh3Yj) : u.intl.string(u.t.czsGA8),

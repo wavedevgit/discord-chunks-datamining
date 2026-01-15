@@ -50,14 +50,14 @@ function f(e) {
     focusedX: f,
     focusedY: p,
     onSelect: _,
-    prepareFocus: m,
-    getNewFocusPosition: h,
+    prepareFocus: h,
+    getNewFocusPosition: m,
     dispatch: g,
     maintainFocusPosition: E,
     enabled: b,
     autoFocusElement: y,
     useVirtualFocus: O
-  } = e, v = r.useRef(b), S = u(c(t, f, p)), [I, T] = r.useState(false), [C, A] = r.useState(false), [N, P] = r.useState(false), [R] = r.useState(() => new o.$o(e => {
+  } = e, v = r.useRef(b), S = u(c(t, f, p)), [I, T] = r.useState(false), [C, A] = r.useState(false), [N, P] = r.useState(false), [w] = r.useState(() => new o.$o(e => {
     let [t, n] = e.split(",").map(Number);
     return () => {
       T(true), g({
@@ -67,44 +67,44 @@ function f(e) {
       })
     }
   }));
-  r.useEffect(() => () => R.clean(), [R]);
-  let w = r.useCallback(e => {
+  r.useEffect(() => () => w.clean(), [w]);
+  let R = r.useCallback(e => {
       if (!v.current || !y) returnfalse;
       e.focus()
     }, [y]),
     D = r.useCallback((e, n) => {
       let r = c(t, e, n);
-      (null != m ? m(e, n, r) : Promise.resolve()).then(() => {
+      (null != h ? h(e, n, r) : Promise.resolve()).then(() => {
         let e = u(r);
-        null != e ? (w(e), A(false)) : requestAnimationFrame(() => A(true))
+        null != e ? (R(e), A(false)) : requestAnimationFrame(() => A(true))
       })
-    }, [t, m, w]),
+    }, [t, h, R]),
     x = r.useCallback(function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-        [n, r] = null != h ? h(f, p) : [f, p];
+        [n, r] = null != m ? m(f, p) : [f, p];
       if ((n !== f || r !== p) && (g({
           type: i.s.SET_FOCUSED_POSITION,
           x: n,
           y: r
         }), !e)) return void P(true);
       let a = u(c(t, n, r));
-      null != a && (P(true), w(a))
-    }, [g, f, p, h, t, w]),
+      null != a && (P(true), R(a))
+    }, [g, f, p, m, t, R]),
     [L, j] = r.useState(false);
   r.useEffect(() => {
     if (!L || !I) return;
     j(false);
     let e = u(c(t, f, p));
-    if (null != e) return void w(e);
+    if (null != e) return void R(e);
     T(false);
     let n = u(c(t));
-    null != n && w(n)
-  }, [t, L, I, w, f, p]);
+    null != n && R(n)
+  }, [t, L, I, R, f, p]);
   let M = r.useCallback(e => {
     v.current && null == e && j(true)
   }, []);
   r.useEffect(() => {
-    I && C && null != S && (w(S), A(false))
+    I && C && null != S && (R(S), A(false))
   }, [C, S]), r.useEffect(() => {
     I && (N || D(f, p), P(false))
   }, [f, p]);
@@ -160,10 +160,10 @@ function f(e) {
         "aria-colindex": e + 1,
         id: (0, o.NE)(t, e, n),
         tabIndex: E && e === f && n === p ? 0 : false,
-        onFocus: R.get("".concat(e, ",").concat(n))
+        onFocus: w.get("".concat(e, ",").concat(n))
       };
       return e === f && n === p && (r.ref = M), r
-    }, [t, E, f, p, R, M]),
+    }, [t, E, f, p, w, M]),
     V = r.useCallback(e => ({
       role: "row",
       "aria-rowindex": e + 1
@@ -188,8 +188,8 @@ function p(e) {
     maintainFocusPosition: d = true,
     enabled: p = true,
     onDispatch: _,
-    autoFocusElement: m = true,
-    useVirtualFocus: h = false
+    autoFocusElement: h = true,
+    useVirtualFocus: m = false
   } = e, g = r.useCallback((e, t) => {
     let n = (0, i.Z)(e, t);
     return null != _ && _(e, n, t), n
@@ -218,7 +218,7 @@ function p(e) {
     getNewFocusPosition: u,
     maintainFocusPosition: d,
     enabled: p,
-    autoFocusElement: m,
-    useVirtualFocus: h
+    autoFocusElement: h,
+    useVirtualFocus: m
   })
 }

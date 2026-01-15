@@ -75,7 +75,7 @@ function p(e) {
   } = e, f = d(e, ["value", "onChange", "hideValue", "disabled"]);
   let p = i.useRef(null),
     _ = i.useMemo(() => new o.tR, []),
-    [m, h] = i.useState("");
+    [h, m] = i.useState("");
 
   function g(e) {
     null != t && n((0, o.rK)(t, _.selectValue(e)))
@@ -83,7 +83,7 @@ function p(e) {
 
   function E(e) {
     if ("Enter" === e.key) {
-      let e = (0, o.tj)(t, m);
+      let e = (0, o.tj)(t, h);
       if (null != e) {
         var n;
         g(e), null == (n = p.current) || n.close()
@@ -92,11 +92,11 @@ function p(e) {
   }
   return (0, r.jsx)(a.d, u(l({}, f), {
     ref: p,
-    options: _.getOptions(m),
+    options: _.getOptions(h),
     value: s ? true : _.lookupByValue(t),
     onChange: g,
     isDisabled: c,
-    onSearchChange: h,
+    onSearchChange: m,
     onKeyDown: E
   }))
 }

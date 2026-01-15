@@ -2,12 +2,12 @@
 /** chunk id: 430561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GY: () => w,
+  GY: () => R,
   PI: () => S,
   RT: () => D,
   XM: () => P,
   bc: () => I,
-  ls: () => R,
+  ls: () => w,
   xZ: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -82,14 +82,14 @@ function P(e) {
     keybindClassName: v.keybind
   });
   return a ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.Z, {
+    children: [(0, r.jsx)(m.Z, {
       className: v.titleWrapperWithHint,
       children: (0, r.jsx)(u.P3F, {
         className: v.titleWrapperClickable,
         onClick: () => {
-          null != i && (f.Z.setInputLocked(false, g.Z.getTargetPID()), (0, m.Ws)(i.type, {
-            type: m.Qu.KEYBIND_HINT,
-            value: m.bk.OVERLAY_UNLOCKED
+          null != i && (f.Z.setInputLocked(false, g.Z.getTargetPID()), (0, h.Ws)(i.type, {
+            type: h.Qu.KEYBIND_HINT,
+            value: h.bk.OVERLAY_UNLOCKED
           }))
         },
         children: (0, r.jsx)(u.Text, {
@@ -111,7 +111,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     onClick: t
   } = e;
@@ -131,7 +131,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     widgetId: t,
     showAllStreams: n

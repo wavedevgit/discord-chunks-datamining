@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   U: () => _,
-  Z: () => m
+  Z: () => h
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -74,19 +74,19 @@ let _ = {
   mentionSuggestionSimpleColorVariant: Chunk299477.mentionSuggestionSimpleColorVariant
 };
 
-function m(e, t) {
+function h(e, t) {
   let n, {
       attributes: i,
       children: c,
       leaf: u,
       text: f
     } = t,
-    m = false,
-    [h] = o.bN.node(e, o.C0.parent(o.bN.findPath(e, f)));
-  switch (o.bN.isEditor(h) ? "editor" : h.type) {
+    h = false,
+    [m] = o.bN.node(e, o.C0.parent(o.bN.findPath(e, f)));
+  switch (o.bN.isEditor(m) ? "editor" : m.type) {
     case "line":
     case "blockQuote": {
-      m = true;
+      h = true;
       let e = Object.entries(u).filter(e => {
         let [t] = e;
         return "text" !== t
@@ -94,7 +94,7 @@ function m(e, t) {
         let [t, n] = e;
         if ("hljsTypes" === t) return n;
         if (true === n) {
-          if (("codeBlockLang" === t || "codeBlockSyntax" === t) && (m = false), t.startsWith("before_") || t.startsWith("after_")) return [s[t]];
+          if (("codeBlockLang" === t || "codeBlockSyntax" === t) && (h = false), t.startsWith("before_") || t.startsWith("after_")) return [s[t]];
           if (t in _) return [_[t]];
           throw Error("Slate: Unknown decoration attribute: ".concat(t))
         }
@@ -108,7 +108,7 @@ function m(e, t) {
     [l.emptyText]: "" === f.text
   }), (0, r.jsx)("span", p(d({}, i), {
     className: n,
-    spellCheck: m,
+    spellCheck: h,
     children: c
   }))
 }

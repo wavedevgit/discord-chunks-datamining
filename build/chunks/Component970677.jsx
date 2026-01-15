@@ -59,16 +59,16 @@ function _(e) {
     showDefaultFocus: u = false,
     menuItemProps: f,
     children: _
-  } = e, m = i.useRef(null);
+  } = e, h = i.useRef(null);
   return i.useLayoutEffect(() => {
     if (!a) return;
-    let e = m.current;
+    let e = h.current;
     if (null == e) return;
-    (0, s.F)(m);
+    (0, s.F)(h);
     let t = e.querySelector('[tabindex="0"]');
     null == t || t.focus()
   }, [a]), (0, r.jsx)("div", p(d({
-    ref: m,
+    ref: h,
     className: o()(c.item, l._e[t], {
       [c.disabled]: n,
       [c.focused]: u && a,

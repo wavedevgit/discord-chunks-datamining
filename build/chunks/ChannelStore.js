@@ -66,8 +66,8 @@ function A(e, t) {
 }
 let N = new Chunk710845.Z("ChannelStore"),
   P = {},
-  R = {},
   w = {},
+  R = {},
   D = {},
   x = null,
   L = {},
@@ -140,33 +140,33 @@ function z(e, t, n) {
     return
   }
   let [a, s] = i;
-  for (let n of ((0, p.ZP)(a), 0 !== t && (Y += 1), Z.add(e), f.Z.restored(e), o.Z.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(R, n.id) || en((0, g._H)(n));
+  for (let n of ((0, p.ZP)(a), 0 !== t && (Y += 1), Z.add(e), f.Z.restored(e), o.Z.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(w, n.id) || en((0, g._H)(n));
   N.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(a.length, ", guilds_loaded: ").concat(Y, ")"))
 }
 
 function q(e, t, n) {
-  if (!Object.hasOwn(R, e) && !Object.hasOwn(D, e) && !Object.hasOwn(L, e) && !Object.hasOwn(G, e) && 1 === t) {
+  if (!Object.hasOwn(w, e) && !Object.hasOwn(D, e) && !Object.hasOwn(L, e) && !Object.hasOwn(G, e) && 1 === t) {
     let r = f.Z.getBasicChannel(e);
     (null == r ? true : r.guild_id) != null && z(r.guild_id, t, n)
   }
 }
 
 function Q(e) {
-  if (N.fileOnly("Deleting guild channels for ".concat(e)), null != w[e]) {
-    for (let t of b.default.keys(w[e])) delete R[t];
-    delete w[e]
+  if (N.fileOnly("Deleting guild channels for ".concat(e)), null != R[e]) {
+    for (let t of b.default.keys(R[e])) delete w[t];
+    delete R[e]
   }
   null != j[e] && delete j[e]
 }
 
 function X(e) {
   var t, n, r, i;
-  return q(e, 0, "getBasicChannel"), null != (i = null != (r = null != (n = null != (t = R[e]) ? t : D[e]) ? n : L[e]) ? r : G[e]) ? i : f.Z.getBasicChannel(e)
+  return q(e, 0, "getBasicChannel"), null != (i = null != (r = null != (n = null != (t = w[e]) ? t : D[e]) ? n : L[e]) ? r : G[e]) ? i : f.Z.getBasicChannel(e)
 }
 
 function J(e) {
   var t, n, r, i;
-  return q(e, 1, "getChannel"), null != (i = null != (r = null != (n = null != (t = R[e]) ? t : D[e]) ? n : L[e]) ? r : G[e]) ? i : V[e]
+  return q(e, 1, "getChannel"), null != (i = null != (r = null != (n = null != (t = w[e]) ? t : D[e]) ? n : L[e]) ? r : G[e]) ? i : V[e]
 }
 
 function $(e) {
@@ -179,7 +179,7 @@ function ee(e) {
 }
 
 function et(e) {
-  let t = R[e.parent_id];
+  let t = w[e.parent_id];
   L[e.id] = e.merge({
     nsfw: (null == t ? true : t.nsfw) === true,
     parentChannelThreadType: null == t ? true : t.type
@@ -195,7 +195,7 @@ function en(e) {
     id: a,
     guild_id: o
   } = e;
-  R[a] = e, w[o] = null != (t = w[o]) ? t : {}, w[o][a] = e, U[o] = (null != (n = U[o]) ? n : 0) + 1, null != e.linkedLobby ? (j[o] = null != (r = j[o]) ? r : {}, j[o][a] = e) : null == (i = j[o]) || delete i[a]
+  w[a] = e, R[o] = null != (t = R[o]) ? t : {}, R[o][a] = e, U[o] = (null != (n = U[o]) ? n : 0) + 1, null != e.linkedLobby ? (j[o] = null != (r = j[o]) ? r : {}, j[o][a] = e) : null == (i = j[o]) || delete i[a]
 }
 
 function er(e) {
@@ -211,9 +211,9 @@ function ei(e) {
 }
 
 function ea(e) {
-  let t = w;
-  for (let n of (M = {}, R = {}, w = {}, j = {}, L = {}, U = {}, V = {}, F = {}, B = Date.now(), x = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
-  ew()
+  let t = R;
+  for (let n of (M = {}, w = {}, R = {}, j = {}, L = {}, U = {}, V = {}, F = {}, B = Date.now(), x = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
+  eR()
 }
 
 function eo(e) {
@@ -227,7 +227,7 @@ function eo(e) {
       for (let e of (N.fileOnly("ConnectionOpen contained full channels for ".concat(t, " #:").concat(n.items.length)), Q(t), Z.add(t), f.Z.restored(t), n.items)) en(e);
       break;
     case "update":
-      for (let e of ((n.writes.length > 0 || n.deletes.length > 0) && f.Z.invalidate(t), n.deletes)) ev(R[e]);
+      for (let e of ((n.writes.length > 0 || n.deletes.length > 0) && f.Z.invalidate(t), n.deletes)) ev(w[e]);
       for (let e of n.writes) en(e)
   }
   if (null != r)
@@ -244,14 +244,14 @@ function es(e) {
 function el(e) {
   let {
     guilds: t
-  } = e, n = w;
-  R = {}, w = {}, U = {}, j = {}, t.forEach(e => {
+  } = e, n = R;
+  w = {}, R = {}, U = {}, j = {}, t.forEach(e => {
     if ("unavailable" === e.data_mode) N.fileOnly("Restoring guild channels b/c unavailable in bg sync, for ".concat(e.id, " #:").concat(eL(e.id))), a().forEach(n[e.id], en);
     else if ("partial" === e.data_mode) {
       var t, r;
       N.fileOnly("Restoring guild channels b/c partial in bg sync, for ".concat(e.id, " #:").concat(eL(e.id))), a().forEach(n[e.id], en);
       let i = null != (r = e.partial_updates.deleted_channel_ids) ? r : [];
-      i.length > 0 && (z(e.id, 1, "handleBackgroundSync"), i.forEach(e => ev(R[e]))), null == (t = e.partial_updates.channels) || t.forEach(t => en((0, g.q_)(t, e.id)))
+      i.length > 0 && (z(e.id, 1, "handleBackgroundSync"), i.forEach(e => ev(w[e]))), null == (t = e.partial_updates.channels) || t.forEach(t => en((0, g.q_)(t, e.id)))
     } else N.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), Q(e.id), Z.add(e.id), f.Z.restored(e.id), e.channels.forEach(t => en((0, g.q_)(t, e.id)))
   })
 }
@@ -262,12 +262,12 @@ function ec(e) {
       channels: n
     }
     of e.channels)
-    for (let e of (N.fileOnly("Lazy loaded guild channels for ".concat(t)), (0, p.ZP)(n), Z.add(t), f.Z.restored(t), n)) Object.hasOwn(R, e.id) || en((0, g._H)(e));
+    for (let e of (N.fileOnly("Lazy loaded guild channels for ".concat(t)), (0, p.ZP)(n), Z.add(t), f.Z.restored(t), n)) Object.hasOwn(w, e.id) || en((0, g._H)(e));
   returnfalse
 }
 
 function eu() {
-  N.fileOnly("initializeClear()"), M = {}, R = {}, w = {}, U = {}, j = {}, D = {}, V = {}, L = {}, Z = new Set, F = {}, B = Date.now()
+  N.fileOnly("initializeClear()"), M = {}, w = {}, R = {}, U = {}, j = {}, D = {}, V = {}, L = {}, Z = new Set, F = {}, B = Date.now()
 }
 
 function ed(e) {
@@ -296,7 +296,7 @@ function e_(e) {
   $(e.channel)
 }
 
-function em(e) {
+function eh(e) {
   if (!g.AW.has(e.channel.type)) returnfalse;
   let t = J(e.channel.id);
   if (null == t) t = e.channel;
@@ -309,7 +309,7 @@ function em(e) {
   $(t)
 }
 
-function eh(e) {
+function em(e) {
   let {
     channelId: t,
     overwrite: n
@@ -367,14 +367,14 @@ function eO(e) {
 function ev(e) {
   if (null == e) return;
   let t = e.guild_id;
-  e.id in D && delete D[e.id], e.id in R && delete R[e.id], e.id in L && delete L[e.id], null != t && (null != w[t] && e.id in w[t] && delete w[t][e.id], null != j[t] && e.id in j[t] && delete j[t][e.id]), ei(e)
+  e.id in D && delete D[e.id], e.id in w && delete w[e.id], e.id in L && delete L[e.id], null != t && (null != R[t] && e.id in R[t] && delete R[t][e.id], null != j[t] && e.id in j[t] && delete j[t][e.id]), ei(e)
 }
 
 function eS(e) {
   var t, n;
   let {
     channel: r
-  } = e, i = null != (n = null != (t = R[r.id]) ? t : D[r.id]) ? n : L[r.id];
+  } = e, i = null != (n = null != (t = w[r.id]) ? t : D[r.id]) ? n : L[r.id];
   if (null == i) returnfalse;
   ev(i), eO(i)
 }
@@ -417,9 +417,9 @@ function eP(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        eR(e.thread)
+        ew(e.thread)
       })
-    }), n.forEach(eR), r.forEach(e => {
+    }), n.forEach(ew), r.forEach(e => {
       let t = (0, g.q_)(e),
         n = null != J(e.id),
         r = null != V[e.id];
@@ -428,13 +428,13 @@ function eP(e) {
   })
 }
 
-function eR(e) {
+function ew(e) {
   null != e && !(e.id in L) && g.AW.has(e.type) && et((0, g.q_)(e))
 }
 
-function ew() {
-  for (let e in G = {}, h.Z.getFavoriteChannels()) {
-    let t = h.Z.getCategoryRecord(e);
+function eR() {
+  for (let e in G = {}, m.Z.getFavoriteChannels()) {
+    let t = m.Z.getCategoryRecord(e);
     null != t && (G[e] = t)
   }
 }
@@ -444,7 +444,7 @@ function eD() {
 }
 class ex extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, f.Z, h.Z, O.Z, v.default), this.syncWith([h.Z], ew)
+    this.waitFor(y.default, f.Z, m.Z, O.Z, v.default), this.syncWith([m.Z], eR)
   }
   hasChannel(e) {
     return null != X(e)
@@ -457,22 +457,22 @@ class ex extends(r = Chunk442837.ZP.Store) {
   }
   loadAllGuildAndPrivateChannelsFromDisk() {
     for (let e of O.Z.getGuildIds()) z(e, 1, "loadAllGuildAndPrivateChannelsFromDisk");
-    return T({}, R, D)
+    return T({}, w, D)
   }
   getChannelIds(e) {
     var t, n;
-    return (z(e, 0, "getChannelIds"), null == e) ? b.default.keys(D) : b.default.keys(null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : w[e]) ? n : P)
+    return (z(e, 0, "getChannelIds"), null == e) ? b.default.keys(D) : b.default.keys(null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : R[e]) ? n : P)
   }
   getMutablePrivateChannels() {
     return D
   }
   getMutableBasicGuildChannelsForGuild(e) {
     var t, n;
-    return z(e, 0, "getMutableBasicGuildChannelsForGuild"), null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : w[e]) ? n : P
+    return z(e, 0, "getMutableBasicGuildChannelsForGuild"), null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : R[e]) ? n : P
   }
   getMutableGuildChannelsForGuild(e) {
     var t;
-    return z(e, 1, "getMutableGuildChannelsForGuild"), null != (t = w[e]) ? t : P
+    return z(e, 1, "getMutableGuildChannelsForGuild"), null != (t = R[e]) ? t : P
   }
   getSortedLinkedChannelsForGuild(e) {
     var t;
@@ -507,19 +507,19 @@ class ex extends(r = Chunk442837.ZP.Store) {
     return a().values(L).filter(t => t.guild_id === e)
   }
   getInitialOverlayState() {
-    return T({}, R, D, L)
+    return T({}, w, D, L)
   }
   getDebugInfo() {
     return {
       loadedGuildIds: Array.from(Z).sort(b.default.compare),
       pendingGuildLoads: Object.keys(F).sort(b.default.compare),
-      guildSizes: Object.keys(w).sort(b.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
+      guildSizes: Object.keys(R).sort(b.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
     }
   }
 }
 
 function eL(e) {
-  return null == w[e] ? null : Object.keys(w[e]).length
+  return null == R[e] ? null : Object.keys(R[e]).length
 }
 I(ex, "displayName", "ChannelStore");
 let ej = new ex(Chunk570140.Z, {
@@ -533,7 +533,7 @@ let ej = new ex(Chunk570140.Z, {
   CHANNEL_UPDATES: eE,
   CONNECTION_OPEN_SUPPLEMENTAL: es,
   CONNECTION_OPEN: ea,
-  CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: eh,
+  CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: em,
   CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: eg,
   GUILD_CREATE: eI,
   GUILD_DELETE: eT,
@@ -546,8 +546,8 @@ let ej = new ex(Chunk570140.Z, {
   OVERLAY_INITIALIZE: ef,
   SEARCH_MESSAGES_SUCCESS: eP,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: eP,
-  THREAD_CREATE: em,
+  THREAD_CREATE: eh,
   THREAD_DELETE: eS,
   THREAD_LIST_SYNC: eb,
-  THREAD_UPDATE: em
+  THREAD_UPDATE: eh
 })

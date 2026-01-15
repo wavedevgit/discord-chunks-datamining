@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,7 +69,7 @@ function b(e, t, n) {
       invite_code: e
     }), E.has(e)) return E.get(e);
   let a = (0, u.fU)(e),
-    d = h(_({}, n), {
+    d = m(_({}, n), {
       with_counts: true,
       with_expiration: true,
       guild_scheduled_event_id: a.guildScheduledEventId,
@@ -83,24 +83,24 @@ function b(e, t, n) {
         event: r.NetworkActionNames.INVITE_RESOLVE,
         properties: e => {
           var r, l, c, u, d, p, _;
-          let m = e.body,
-            h = (null == (r = e.body) ? true : r.code) === f.evJ.USER_BANNED;
+          let h = e.body,
+            m = (null == (r = e.body) ? true : r.code) === f.evJ.USER_BANNED;
           return (0, i.iG)({
             resolved: e.ok,
-            guild_id: null == m || null == (l = m.guild) ? true : l.id,
-            channel_id: null == m || null == (c = m.channel) ? true : c.id,
-            channel_type: null == m || null == (u = m.channel) ? true : u.type,
-            inviter_id: null == m || null == (d = m.inviter) ? true : d.id,
+            guild_id: null == h || null == (l = h.guild) ? true : l.id,
+            channel_id: null == h || null == (c = h.channel) ? true : c.id,
+            channel_type: null == h || null == (u = h.channel) ? true : u.type,
+            inviter_id: null == h || null == (d = h.inviter) ? true : d.id,
             code: a.baseCode,
             input_value: null == n ? true : n.inputValue,
             location: t,
             authenticated: o.default.isAuthenticated(),
-            size_total: null == m ? true : m.approximate_member_count,
-            size_online: null == m ? true : m.approximate_presence_count,
-            destination_user_id: null == m || null == (p = m.target_user) ? true : p.id,
-            invite_type: g(m),
-            user_banned: h,
-            user_is_member: null != s.Z.getGuild(null == m || null == (_ = m.guild) ? true : _.id)
+            size_total: null == h ? true : h.approximate_member_count,
+            size_online: null == h ? true : h.approximate_presence_count,
+            destination_user_id: null == h || null == (p = h.target_user) ? true : p.id,
+            invite_type: g(h),
+            user_banned: m,
+            user_is_member: null != s.Z.getGuild(null == h || null == (_ = h.guild) ? true : _.id)
           })
         }
       },

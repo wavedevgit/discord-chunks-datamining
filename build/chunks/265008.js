@@ -24,9 +24,9 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 5 * Chunk70956.Z.Millis.MINUTE,
-  m = .5 * Chunk70956.Z.Millis.MINUTE;
+  h = .5 * Chunk70956.Z.Millis.MINUTE;
 
-function h() {
+function m() {
   return c.Z.getCurrentConfig({
     location: "FriendOnlineTimer"
   }).useOnlineTimer
@@ -35,10 +35,10 @@ function h() {
 function g() {
   return c.Z.getCurrentConfig({
     location: "FriendOnlineTimer"
-  }).useTestTimerDuration ? m : _
+  }).useTestTimerDuration ? h : _
 }
 async function E() {
-  if (h()) try {
+  if (m()) try {
     await r.tn.post({
       url: d.ANM.USER_MEANINGFULLY_ONLINE,
       rejectWithError: true
@@ -71,7 +71,7 @@ class y extends Chunk147913.Z {
       CONNECTION_INTERRUPTED: () => this.clear(),
       SELF_PRESENCE_STORE_UPDATE: () => this.start()
     }), p(this, "start", () => {
-      h() && u.Z.isCooldownElapsed() && null == this.timerId && b(o.Z.getStatus()) && (this.timerId = setTimeout(() => {
+      m() && u.Z.isCooldownElapsed() && null == this.timerId && b(o.Z.getStatus()) && (this.timerId = setTimeout(() => {
         this.timerId = null, b(o.Z.getStatus()) && u.Z.isCooldownElapsed() && E()
       }, g()))
     }), p(this, "clear", () => {

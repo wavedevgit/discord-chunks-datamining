@@ -92,10 +92,10 @@ function _(e) {
   var {
     variant: t
   } = e, n = u(e, ["variant"]);
-  return "clickable" === t ? (0, r.jsx)(h, c({}, n)) : (0, r.jsx)(m, c({}, n))
+  return "clickable" === t ? (0, r.jsx)(m, c({}, n)) : (0, r.jsx)(h, c({}, n))
 }
 
-function m(e) {
+function h(e) {
   let {
     icon: t,
     title: n,
@@ -107,8 +107,8 @@ function m(e) {
     iconClassName: f,
     color: p,
     buttonText: _,
-    buttonVariant: m = "secondary",
-    buttonSize: h = "sm",
+    buttonVariant: h = "secondary",
+    buttonSize: m = "sm",
     buttonDisabled: g,
     buttonIcon: E,
     buttonIconPosition: b = "start",
@@ -118,8 +118,8 @@ function m(e) {
     index: S,
     noInset: I = false
   } = e, T = null != _ ? (0, r.jsx)(o.Button, {
-    variant: m,
-    size: h,
+    variant: h,
+    size: m,
     text: _,
     icon: E,
     iconPosition: b,
@@ -163,7 +163,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     icon: t,
     title: n,
@@ -175,14 +175,14 @@ function h(e) {
     buttonDisabled: f,
     iconClassName: p,
     color: _,
-    buttonIcon: m,
-    onButtonPress: h,
+    buttonIcon: h,
+    onButtonPress: m,
     listType: g = "icon",
     index: E,
     noInset: b = false
   } = e;
   return (0, r.jsxs)(o.P3F, {
-    onClick: h,
+    onClick: m,
     className: a()(s.row, s.clickable, {
       [s.noInset]: b,
       [s.disabled]: f
@@ -215,6 +215,6 @@ function h(e) {
           children: c
         })]
       })]
-    }), null != m ? (0, r.jsx)(m, {}) : (0, r.jsx)(o.Fbu, {})]
+    }), null != h ? (0, r.jsx)(h, {}) : (0, r.jsx)(o.Fbu, {})]
   })
 }

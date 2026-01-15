@@ -2,7 +2,7 @@
 /** chunk id: 321051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,16 +17,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk13083 = require("./13083.js");
 let _ = [54, 8, 8, 8];
 
-function m(e) {
+function h(e) {
   let {
     onSelect: t,
     sound: n
-  } = e, [a, m] = i.useState(false), h = i.useRef(null), g = (0, c.Z)({
+  } = e, [a, h] = i.useState(false), m = i.useRef(null), g = (0, c.Z)({
     location: "GiftSoundboard"
   }), E = o()(p.text, g && p.refresh);
 
   function b(e) {
-    m(false), null == t || t(e)
+    h(false), null == t || t(e)
   }
   let y = e => (0, r.jsxs)("div", {
     className: p.customGiftHeader,
@@ -45,11 +45,11 @@ function m(e) {
     })]
   });
   return (0, r.jsx)(l.yRy, {
-    targetElementRef: h,
+    targetElementRef: m,
     shouldShow: a,
     position: "bottom",
     align: "left",
-    onRequestClose: () => m(false),
+    onRequestClose: () => h(false),
     renderPopout: e => {
       let {
         closePopout: t
@@ -72,8 +72,8 @@ function m(e) {
     },
     children: () => (0, r.jsx)(l.P3F, {
       className: o()(p.container, g && p.refresh),
-      onClick: () => m(true),
-      innerRef: h,
+      onClick: () => h(true),
+      innerRef: m,
       children: null == n ? (0, r.jsxs)("div", {
         className: p.contentContainer,
         children: [(0, r.jsx)(l.KY1, {

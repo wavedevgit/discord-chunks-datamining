@@ -40,7 +40,7 @@ function C() {
   let [e, t] = i.useState(false);
   if (null == (0, f.e7)([_.C], () => {
       var e;
-      return (0, m.fD)() ? null == (e = _.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
+      return (0, h.fD)() ? null == (e = _.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     })) return null;
   let n = async () => {
     try {
@@ -58,7 +58,7 @@ function C() {
   })
 }
 let A = o().throttle(e => {
-  h.Z.increment({
+  m.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
   }, true)

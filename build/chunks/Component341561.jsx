@@ -84,15 +84,15 @@ let P = {
     o && (p = _.ZP.querySoundmoji(n, e).map(e => ({
       sound: e
     })).slice(0, S), "-" === n[0] && (p = p.filter(e => e.sound.name === n)));
-    let m = d.slice(0, Math.max(T, u - f.length - p.length));
+    let h = d.slice(0, Math.max(T, u - f.length - p.length));
     return {
       results: {
-        emojis: m,
+        emojis: h,
         stickers: f,
         soundmoji: p
       },
       metadata: {
-        numEmojiResults: m.length,
+        numEmojiResults: h.length,
         numStickerResults: f.length,
         numSoundmojiResults: p.length
       }
@@ -111,7 +111,7 @@ let P = {
       onClick: c
     } = e, u = t.length > 0, d = n.length > 0;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, m.HI)({
+      children: [(0, h.HI)({
         query: s,
         selectedIndex: o,
         autocompletes: t,
@@ -130,7 +130,7 @@ let P = {
         key: "emoji"
       }), u && d && (0, r.jsx)(i.ZP.Divider, {
         className: y.divider
-      }), (0, m.HI)({
+      }), (0, h.HI)({
         query: s,
         selectedIndex: o,
         autocompletes: n,
@@ -157,7 +157,7 @@ let P = {
         headerClassName: u ? y.secondarySection : true
       }), (u || d) && a.length > 0 && (0, r.jsx)(i.ZP.Divider, {
         className: y.divider
-      }), (0, m.HI)({
+      }), (0, h.HI)({
         query: s,
         selectedIndex: o,
         autocompletes: a,
@@ -196,7 +196,7 @@ let P = {
     if (i < t.length) {
       let e = t[i];
       return a.insertText(A(e), N(e)), {
-        type: h.z2.EMOJI,
+        type: m.z2.EMOJI,
         metadata: {
           emojiId: e.id,
           numEmojiResults: t.length,
@@ -210,7 +210,7 @@ let P = {
     if ((i -= t.length) < r.length) {
       let e = r[i];
       return a.insertText(""), a.sendSticker(e.sticker, u.V0.AUTOCOMPLETE), {
-        type: h.z2.STICKER,
+        type: m.z2.STICKER,
         metadata: {
           numEmojiResults: t.length,
           numStickerResults: r.length,
@@ -227,7 +227,7 @@ let P = {
         sound_id: e.sound.soundId,
         source: "autocomplete"
       }), {
-        type: h.z2.SOUNDMOJI,
+        type: m.z2.SOUNDMOJI,
         metadata: {
           numEmojiResults: t.length,
           numStickerResults: r.length

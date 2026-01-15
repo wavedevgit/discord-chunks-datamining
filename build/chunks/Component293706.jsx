@@ -2,7 +2,7 @@
 /** chunk id: 293706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -69,7 +69,7 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     focusProps: t,
     lineClamp: n = 1,
@@ -77,18 +77,18 @@ function m(e) {
     text: c,
     textVariant: d = "text-md/medium",
     type: _ = "button",
-    variant: m = "primary",
-    buttonRef: h,
+    variant: h = "primary",
+    buttonRef: m,
     className: g,
     style: E
   } = e, b = p(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "buttonRef", "className", "style"]);
   return (0, r.jsx)(o.tE, f(u({}, t), {
     children: (0, r.jsx)("button", f(u({
-      className: a()(l.textButton, l[m]),
+      className: a()(l.textButton, l[h]),
       "data-mana-component": "text-button",
       role: i,
       type: _,
-      ref: h
+      ref: m
     }, b), {
       children: (0, r.jsx)(s.x, {
         tag: "span",

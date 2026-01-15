@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => R
+  w: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -102,7 +102,7 @@ function P(e, t, n, r, o) {
   }, [l]), u
 }
 
-function R(e) {
+function w(e) {
   let {
     windowKey: t,
     themeOverride: n,
@@ -112,8 +112,8 @@ function R(e) {
     theme: b,
     focused: A,
     currentWindow: N,
-    fontScale: R,
-    fontScaleClass: w,
+    fontScale: w,
+    fontScaleClass: R,
     keyboardModeEnabled: D,
     saturation: x,
     desaturateUserColors: L,
@@ -144,12 +144,12 @@ function R(e) {
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, F = (0, m.Z)(N, __OVERLAY__ || A), B = 0;
+  }).enabled, F = (0, h.Z)(N, __OVERLAY__ || A), B = 0;
   1 !== x && (B = (0, u.OdO)(B, u.bgu.REDUCE_SATURATION_ENABLED));
   let V = (0, T.A)(),
-    H = (0, h.Ml)("RootThemeContextProvider"),
-    Y = (0, h.CL)("RootThemeContextProvider"),
-    W = (0, h.VM)("RootThemeContextProvider"),
+    H = (0, m.Ml)("RootThemeContextProvider"),
+    Y = (0, m.CL)("RootThemeContextProvider"),
+    W = (0, m.VM)("RootThemeContextProvider"),
     K = (0, g.U)("RootThemeContextProvider"),
     z = (0, E.A)("RootThemeContextProvider"),
     q = (0, _.On)({
@@ -171,8 +171,8 @@ function R(e) {
         theme: b,
         density: V,
         focused: A,
-        fontScale: R,
-        fontScaleClass: w,
+        fontScale: w,
+        fontScaleClass: R,
         keyboardModeEnabled: D,
         mouseMode: F,
         saturation: x,

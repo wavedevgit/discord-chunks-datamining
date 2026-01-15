@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Uc: () => _,
-  Xh: () => m,
+  Xh: () => h,
   aQ: () => d,
   m_: () => u,
   xF: () => f,
@@ -39,7 +39,7 @@ function _() {
   return null == e ? true : e.previousView
 }
 
-function m() {
+function h() {
   var e, t, n;
   let {
     location: {
@@ -85,8 +85,8 @@ function m() {
     }),
     {
       applicationId: _,
-      section: m,
-      skuId: h
+      section: h,
+      skuId: m
     } = null != (t = null == p ? true : p.params) ? t : {};
   if (null != p && null != _) {
     let e = null == (n = o.Z.getApplication(_)) ? true : n.name;
@@ -94,7 +94,7 @@ function m() {
       type: "application",
       applicationId: _,
       applicationName: e,
-      section: null != m ? m : null != h ? l.GlobalDiscoveryAppsSections.STORE : l.GlobalDiscoveryAppsSections.ABOUT
+      section: null != h ? h : null != m ? l.GlobalDiscoveryAppsSections.STORE : l.GlobalDiscoveryAppsSections.ABOUT
     }
   }
 }

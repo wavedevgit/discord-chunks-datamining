@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Nq: () => _,
-  O1: () => m,
+  O1: () => h,
   TE: () => c,
   US: () => o,
   XR: () => s,
@@ -100,7 +100,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     contentType: t,
     newSnowflakeId: n,

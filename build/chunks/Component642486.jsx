@@ -2,7 +2,7 @@
 /** chunk id: 642486, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => h
+  S: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,9 +18,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk889139 = require("./889139.js"),
   Chunk444675 = require("./444675.js");
 
-function h() {
+function m() {
   let e = (0, a.e7)([c.default], () => c.default.locale),
-    [t, h] = i.useState(e),
+    [t, m] = i.useState(e),
     g = i.useMemo(() => (0, p.getAvailableLocales)().map(e => ({
       value: e.value,
       label: e.name,
@@ -45,7 +45,7 @@ function h() {
       })
     }, []),
     b = i.useCallback(e => {
-      h(e), m.nextTick(() => {
+      m(e), h.nextTick(() => {
         l.ZP.updateLocale(e), (0, s.Mr3)(d.USER_SETTINGS_MODAL_KEY) && (0, d.openUserSettings)(u.n.LANGUAGE_AND_TIME_PANEL, {
           section: f.oAB.LANGUAGE
         })

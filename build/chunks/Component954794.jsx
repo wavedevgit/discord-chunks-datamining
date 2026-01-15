@@ -2,7 +2,7 @@
 /** chunk id: 954794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,10 +17,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk770827 = require("./770827.js");
 
-function m(e) {
+function h(e) {
   let {
     onBackClick: t
-  } = e, n = (0, a.e7)([u.Z], () => u.Z.getAllUnlockedAchievements()), m = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), h = i.useMemo(() => Object.values(d.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
+  } = e, n = (0, a.e7)([u.Z], () => u.Z.getAllUnlockedAchievements()), h = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), m = i.useMemo(() => Object.values(d.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.P3F, {
       onClick: t,
@@ -55,11 +55,11 @@ function m(e) {
           height: 40
         })
       })]
-    }), m.length > 0 && (0, r.jsx)("div", {
+    }), h.length > 0 && (0, r.jsx)("div", {
       className: _.divider,
       children: (0, r.jsx)("div", {
         className: _.achievementGrid,
-        children: m.map(e => {
+        children: h.map(e => {
           let {
             achievementId: t,
             dateUnlocked: n
@@ -70,7 +70,7 @@ function m(e) {
           }, t)
         })
       })
-    }), h.length > 0 && (0, r.jsxs)("div", {
+    }), m.length > 0 && (0, r.jsxs)("div", {
       className: _.divider,
       children: [(0, r.jsx)("div", {
         className: _.headerTextContainer,
@@ -81,7 +81,7 @@ function m(e) {
         })
       }), (0, r.jsx)("div", {
         className: _.achievementGrid,
-        children: h.map(e => (0, r.jsx)(f.Z, {
+        children: m.map(e => (0, r.jsx)(f.Z, {
           achievementId: e.id
         }, e.id))
       })]

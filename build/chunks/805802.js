@@ -29,7 +29,7 @@ function u(e, t) {
     c = o.tzid;
   return g(e, t.unfold).forEach(function(e) {
     if (e) {
-      var t, o = h(e),
+      var t, o = m(e),
         s = o.name,
         u = o.parms,
         d = o.value;
@@ -87,8 +87,8 @@ function d(e, t) {
       _.exdate(e)
     }), t.compatible && t.dtstart && _.rdate(c), _
   }
-  var m = r[0] || {};
-  return new i.Ci(p(m, m.dtstart || t.dtstart || c, m.tzid || t.tzid || d), f)
+  var h = r[0] || {};
+  return new i.Ci(p(h, h.dtstart || t.dtstart || c, h.tzid || t.tzid || d), f)
 }
 
 function f(e, t) {
@@ -112,7 +112,7 @@ function _(e) {
   return (0, r.pi)((0, r.pi)({}, c), e)
 }
 
-function m(e) {
+function h(e) {
   if (false === e.indexOf(":")) return {
     name: "RRULE",
     value: e
@@ -124,8 +124,8 @@ function m(e) {
   }
 }
 
-function h(e) {
-  var t = m(e),
+function m(e) {
+  var t = h(e),
     n = t.name,
     r = t.value,
     i = n.split(";");

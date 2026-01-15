@@ -66,7 +66,7 @@ async function I(e) {
       a = "System Logs failed ".concat(e)
     }
     try {
-      o = await (0, p.Z)().then(e => (0, m.Z)(e, true))
+      o = await (0, p.Z)().then(e => (0, h.Z)(e, true))
     } catch (e) {
       o = "Push logs failed: ".concat(e)
     }
@@ -84,7 +84,7 @@ async function I(e) {
     let E = (null == O ? true : O.AppOpenedTimestamp) != null ? O.AppOpenedTimestamp : null,
       b = "\n    ".concat((0, _.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(o, "\n    ");
     u.ZH();
-    let v = h.ANM.DEBUG_LOG(e, "discord_app_logs");
+    let v = m.ANM.DEBUG_LOG(e, "discord_app_logs");
     await r.tn.post({
       url: v,
       body: b,

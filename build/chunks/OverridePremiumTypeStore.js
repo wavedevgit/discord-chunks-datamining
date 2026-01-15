@@ -61,14 +61,14 @@ function _(e) {
   p.premiumTypeOverride = t
 }
 
-function m(e) {
+function h(e) {
   let {
     createdAt: t
   } = e;
   p.createdAtOverride = t
 }
 
-function h(e) {
+function m(e) {
   let {
     user: t
   } = e;
@@ -105,7 +105,7 @@ l(g, "displayName", f), l(g, "persistKey", f), l(g, "migrations", [e => {
 }]);
 let E = new g(Chunk570140.Z, {
   SET_PREMIUM_TYPE_OVERRIDE: _,
-  SET_CREATED_AT_OVERRIDE: m,
-  CURRENT_USER_UPDATE: h,
-  CONNECTION_OPEN: h
+  SET_CREATED_AT_OVERRIDE: h,
+  CURRENT_USER_UPDATE: m,
+  CONNECTION_OPEN: m
 })

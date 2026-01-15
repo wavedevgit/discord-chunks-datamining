@@ -40,16 +40,16 @@ function E(e) {
   } = e, P = e => null == C ? e : (0, r.jsx)(s.kL8, {
     onClick: C,
     className: g.clickableUsername,
-    "aria-label": h.intl.string(h.t["+Xp3hq"]),
+    "aria-label": m.intl.string(m.t["+Xp3hq"]),
     children: e
-  }), R = null != v && v.length > 0, w = (0, c.D)(t), D = (0, d.Z)({
+  }), w = null != v && v.length > 0, R = (0, c.D)(t), D = (0, d.Z)({
     userId: t.id,
     guildId: n,
     pendingDisplayNameStyles: O
   }), x = null != D;
   return (0, r.jsxs)("div", {
     className: a()(g.container, {
-      [g.bot]: null != w
+      [g.bot]: null != R
     }, S),
     children: [(0, r.jsxs)("div", {
       className: g.usernameRow,
@@ -69,8 +69,8 @@ function E(e) {
         className: g.nickname,
         variant: N,
         children: b
-      })), null != w && (0, r.jsx)(u.Z, {
-        type: w,
+      })), null != R && (0, r.jsx)(u.Z, {
+        type: R,
         verified: t.isVerifiedBot()
       }), null != y && (0, r.jsx)("div", {
         className: g.nicknameIcons,
@@ -78,8 +78,8 @@ function E(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: a()(g.tags, {
-        [g.pronouns]: R,
-        [g.bot]: null != w
+        [g.pronouns]: w,
+        [g.bot]: null != R
       }),
       children: [!t.isProvisional && P((0, r.jsx)(l.Z, {
         user: t,
@@ -90,14 +90,14 @@ function E(e) {
         usernameClass: g.userTagUsername,
         discriminatorClass: g.userTagDiscriminator,
         hideBotTag: true
-      })), R && (0, r.jsxs)(r.Fragment, {
+      })), w && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: g.dotSpacer
         }), (0, r.jsx)(o.u, {
           asContainer: true,
-          text: h.intl.string(h.t.GI2A8C),
-          delay: m.vB,
+          text: m.intl.string(m.t.GI2A8C),
+          delay: h.vB,
           children: (0, r.jsx)(s.Text, {
             className: a()(g.pronounsText, I),
             variant: "text-sm/medium",

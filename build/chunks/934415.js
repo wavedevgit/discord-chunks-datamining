@@ -7,12 +7,12 @@ require.d(exports, {
   Nj: () => a.Z,
   a5: () => L,
   c4: () => x,
-  g7: () => w,
+  g7: () => R,
   jZ: () => A,
   mE: () => Z,
   oQ: () => C,
   rX: () => N,
-  rY: () => R,
+  rY: () => w,
   rt: () => P,
   wR: () => k,
   wl: () => j
@@ -46,21 +46,21 @@ function S(e, t) {
 }
 
 function I(e, t, n) {
-  let i = m.Hn;
+  let i = h.Hn;
   return ((0, c.r8)(t) || t === O) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), S(t, y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
     type: n,
-    allow: m.Hn,
+    allow: h.Hn,
     deny: i
   }
 }
 
 function T(e, t, n) {
-  let i = m.Hn;
+  let i = h.Hn;
   return ((0, c.r8)(t) || t === O) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), (S(t, y) || S(t, v)) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
     type: n,
-    deny: m.Hn,
+    deny: h.Hn,
     allow: i
   }
 }
@@ -86,11 +86,11 @@ function P(e) {
     id: e,
     type: i.BN.ROLE,
     deny: g.Plq.SEND_MESSAGES,
-    allow: m.Hn
+    allow: h.Hn
   }]
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   var r, i;
   let a = e.getGuildId(),
     s = n.getGuild(a),
@@ -99,13 +99,13 @@ function R(e, t, n) {
     u = _.ZP.countVoiceStatesForChannel(e.id),
     d = _.ZP.getVoiceStatesForChannel(e),
     p = f.Z.can(g.Plq.MOVE_MEMBERS, e) && f.Z.can(g.Plq.CONNECT, e),
-    m = false;
-  m = e.type === v ? null != a && (t.hasVideo(e.id) || (0, o.a)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
-  let h = e.userLimit > 0 && u >= e.userLimit;
-  return m || h && !p
+    h = false;
+  h = e.type === v ? null != a && (t.hasVideo(e.id) || (0, o.a)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
+  let m = e.userLimit > 0 && u >= e.userLimit;
+  return h || m && !p
 }
 
-function w(e, t) {
+function R(e, t) {
   return t.isGuildStageVoice() ? g.epw : null == e ? g.eWB : Math.max(e.features.has(g.GuildFeatures.VIP_REGIONS) ? E.HO[g.Eu4.TIER_3].limits.bitrate : g.eWB, E.HO[e.premiumTier].limits.bitrate)
 }
 
@@ -203,7 +203,7 @@ function U(e, t, n, r) {
 function G(e, t, n, r) {
   let i, a = e.getGuildId(),
     o = (0, s.BC)(a, t);
-  return null != t && o ? U(a, t.id, e.id, h.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(a, e.id, n)
+  return null != t && o ? U(a, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(a, e.id, n)
 }
 
 function Z(e) {

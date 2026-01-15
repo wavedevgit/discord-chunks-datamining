@@ -24,68 +24,68 @@ let g = function(e) {
     guild: t
   } = e;
   return (0, r.jsx)("div", {
-    className: h.tierCards,
+    className: m.tierCards,
     children: p.C.map(e => (0, r.jsxs)("div", {
-      className: h.tierCard,
+      className: m.tierCard,
       children: [e.tier === _.Eu4.TIER_3 && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: a()(h.tierCardBorderHighlight, h.tierCardBorderHighlightTopRight)
+          className: a()(m.tierCardBorderHighlight, m.tierCardBorderHighlightTopRight)
         }), (0, r.jsx)("div", {
-          className: a()(h.tierCardBorderHighlight, h.tierCardBorderHighlightBottomLeft)
+          className: a()(m.tierCardBorderHighlight, m.tierCardBorderHighlightBottomLeft)
         }), (0, r.jsxs)("div", {
-          className: a()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightTopRight),
+          className: a()(m.tierCardSparkleHighlight, m.tierCardSparkleHighlightTopRight),
           children: [(0, r.jsx)(u.Z, {
-            className: h.tierCardSparkle1
+            className: m.tierCardSparkle1
           }), (0, r.jsx)(u.Z, {
-            className: h.tierCardSparkle2
+            className: m.tierCardSparkle2
           }), (0, r.jsx)(c.Z, {
-            className: h.tierCardSparkle3
+            className: m.tierCardSparkle3
           })]
         }), (0, r.jsx)("div", {
-          className: a()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightBottomLeft),
+          className: a()(m.tierCardSparkleHighlight, m.tierCardSparkleHighlightBottomLeft),
           children: (0, r.jsx)(u.Z, {
-            className: h.tierCardSparkle1
+            className: m.tierCardSparkle1
           })
         })]
       }), e.tier === t.premiumTier && (0, r.jsx)(s.Text, {
-        className: h.tierCardCurrentTier,
+        className: m.tierCardCurrentTier,
         tag: "div",
         variant: "text-xs/semibold",
         color: "always-white",
-        children: m.intl.string(m.t["9JbE3J"])
+        children: h.intl.string(h.t["9JbE3J"])
       }), (0, r.jsxs)("div", {
-        className: h.tierCardHeader,
+        className: m.tierCardHeader,
         children: [(0, r.jsx)(s.Heading, {
-          className: h.tierCardHeading,
+          className: m.tierCardHeading,
           variant: "heading-xxl/semibold",
           color: "always-white",
           children: (0, d.nW)(e.tier, {
             useLevels: false
           })
         }), (0, r.jsx)(s.Text, {
-          className: h.tierCardBoostRequirement,
+          className: m.tierCardBoostRequirement,
           variant: "text-md/normal",
           color: "always-white",
-          children: m.intl.format(m.t.vbAsA7, {
+          children: h.intl.format(h.t.vbAsA7, {
             numBoostsRequired: _.oCV[e.tier]
           })
         })]
       }), (0, r.jsx)("ul", {
-        className: h.tierCardList,
+        className: m.tierCardList,
         children: e.perks.map((e, t) => {
           let n = (0, f.P)(e.perkIcon);
           return null == e.predicate || e.predicate() ? (0, r.jsxs)("li", {
-            className: h.tierCardPerkRow,
+            className: m.tierCardPerkRow,
             children: [(0, r.jsxs)(s.Text, {
-              className: h.tierCardListItem,
+              className: m.tierCardListItem,
               variant: "text-md/normal",
               color: "always-white",
               children: [(0, r.jsx)(n, {
-                className: h.tierCardListIcon,
+                className: m.tierCardListIcon,
                 color: o.Z.colors.WHITE
               }), e.getCopy()]
             }), e.isNew ? (0, r.jsx)(l.Z, {
-              className: h.tierCardNewFeatureBadge,
+              className: m.tierCardNewFeatureBadge,
               forceUseColorForSparkles: true,
               shouldInheritBackgroundColor: true,
               shouldInheritTextColor: true

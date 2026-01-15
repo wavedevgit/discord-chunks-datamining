@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -127,24 +127,24 @@ function v(e) {
     leadingIcon: a,
     name: u,
     value: _,
-    isSelected: m
-  } = e, h = (0, i.useRef)(null), g = (0, i.useRef)(null), [E, b] = (0, i.useState)(true), y = (0, i.useRef)(false);
+    isSelected: h
+  } = e, m = (0, i.useRef)(null), g = (0, i.useRef)(null), [E, b] = (0, i.useState)(true), y = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
     if (!y.current) {
       y.current = true;
       return
     }
-    b(m ? "animateIn" : "animateOut")
-  }, [m]), (0, r.jsx)(c.tE, {
-    focusTarget: h,
-    ringTarget: h,
+    b(h ? "animateIn" : "animateOut")
+  }, [h]), (0, r.jsx)(c.tE, {
+    focusTarget: m,
+    ringTarget: m,
     within: true,
     children: (0, r.jsxs)(s.Y8, {
       className: o()([p.radioGroupOption, "string" == typeof E && p[E]]),
       value: _,
       isDisabled: n,
       inputRef: g,
-      ref: h,
+      ref: m,
       children: [(0, r.jsx)(O, {}), (0, r.jsxs)(d.K, {
         gap: 4,
         children: [(0, r.jsxs)(l._, {
@@ -181,7 +181,7 @@ function S(e) {
     let r = n.find(t => String(t.value) === e);
     null != r && t(r.value)
   } : true;
-  return (0, r.jsx)(u.g, g(m({}, l), {
+  return (0, r.jsx)(u.g, g(h({}, l), {
     children: e => (0, r.jsx)(s.Ee, {
       id: e.controlId,
       className: p.group,
@@ -192,7 +192,7 @@ function S(e) {
       "aria-errormessage": e.errorMessageId,
       "data-mana-component": "BaseRadioGroup",
       value: null != i ? String(i) : true,
-      children: n.map((e, t) => (0, r.jsx)(v, g(m({
+      children: n.map((e, t) => (0, r.jsx)(v, g(h({
         index: t
       }, e), {
         value: String(e.value),

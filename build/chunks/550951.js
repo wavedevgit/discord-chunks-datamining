@@ -19,6 +19,6 @@ function u(e, t) {
     f = (0, r.e7)([s.Z], () => null != e && s.Z.can(c.Plq.ADMINISTRATOR, e)),
     p = null != (n = null == e ? true : e.features.has(c.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) && n,
     _ = (0, o.y)(null == e ? true : e.id, "useGuildShopPreviewVisible"),
-    m = [c.GuildFeatures.CREATOR_MONETIZABLE, c.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL, c.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED].some(t => null == e ? true : e.features.has(t));
-  return null != e && f && !p && m && u && _ && !d
+    h = [c.GuildFeatures.CREATOR_MONETIZABLE, c.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL, c.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED].some(t => null == e ? true : e.features.has(t));
+  return null != e && f && !p && h && u && _ && !d
 }

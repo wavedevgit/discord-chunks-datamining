@@ -76,7 +76,7 @@ module.exports = function(e) {
       begin: u
     }),
     _ = "(\\(.*\\)\\s*)?\\B[-=]>",
-    m = {
+    h = {
       className: "params",
       begin: "\\([^\\(]",
       returnBegin: true,
@@ -87,7 +87,7 @@ module.exports = function(e) {
         contains: ["self"].concat(f)
       }]
     },
-    h = {
+    m = {
       variants: [{
         match: [/class\s+/, u, /\s+extends\s+/, u]
       }, {
@@ -109,7 +109,7 @@ module.exports = function(e) {
       begin: "^\\s*" + u + "\\s*=\\s*" + _,
       end: "[-=]>",
       returnBegin: true,
-      contains: [p, m]
+      contains: [p, h]
     }, {
       begin: /[:\(,=]\s*/,
       relevance: 0,
@@ -118,9 +118,9 @@ module.exports = function(e) {
         begin: _,
         end: "[-=]>",
         returnBegin: true,
-        contains: [m]
+        contains: [h]
       }]
-    }, h, {
+    }, m, {
       begin: u + ":",
       end: ":",
       returnBegin: true,

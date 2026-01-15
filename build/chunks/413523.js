@@ -2,8 +2,8 @@
 /** chunk id: 413523, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Lc: () => w,
-  Yr: () => R,
+  Lc: () => R,
+  Yr: () => w,
   ZP: () => L,
   gN: () => P,
   sI: () => D
@@ -78,7 +78,7 @@ function P(e) {
   return null != n ? "activity-".concat(t, "-").concat(n) : "activity-".concat(t)
 }
 
-function R(e) {
+function w(e) {
   switch (e.type) {
     case O.fO.ACTIVITY:
       return "\x01".concat(e.sortKey);
@@ -92,7 +92,7 @@ function R(e) {
   }
 }
 
-function w(e, t) {
+function R(e, t) {
   let [, n] = e, [, r] = t;
   return n === r
 }
@@ -201,16 +201,16 @@ class L {
   _getParticipantsForUser(e) {
     var t, n, r, i, o, d;
     let b, y, v = [],
-      I = m.default.getUser(e);
+      I = h.default.getUser(e);
     if (null == I) return v;
     let C = g.Z.getVoiceStateForChannel(this.channelId, e),
       N = g.Z.getVoicePlatformForChannel(this.channelId, e),
       P = f.Z.getChannel(this.channelId),
-      R = null == P ? true : P.getGuildId(),
-      w = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
-    (null != C || w) && (b = A(T({
+      w = null == P ? true : P.getGuildId(),
+      R = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
+    (null != C || R) && (b = A(T({
       type: O.fO.USER
-    }, h.Z.getUserStreamData(e, R)), {
+    }, m.Z.getUserStreamData(e, w)), {
       user: I,
       id: I.id,
       voiceState: C,
@@ -223,13 +223,13 @@ class L {
       latched: x(e),
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: _.Z.isSoundSharing(e),
-      ringing: w,
-      userNick: E.ZP.getName(R, this.channelId, I),
-      userAvatarDecoration: (0, s.o)(I, R),
+      ringing: R,
+      userNick: E.ZP.getName(w, this.channelId, I),
+      userAvatarDecoration: (0, s.o)(I, w),
       localVideoDisabled: p.Z.isLocalVideoDisabled(I.id),
       isPoppedOut: this.poppedOutParticipants.has(I.id)
     }), v.push(b));
-    let D = null != (o = c.Z.getStreamForUser(e, R)) ? o : c.Z.getActiveStreamForUser(e, R);
+    let D = null != (o = c.Z.getStreamForUser(e, w)) ? o : c.Z.getActiveStreamForUser(e, w);
     if (null != D && D.channelId === this.channelId) {
       let t = (0, l.V9)(D),
         n = this.getParticipant(t),
@@ -238,12 +238,12 @@ class L {
           maxResolution: null != n.maxResolution ? T({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
         } : null;
-      y = A(T({}, h.Z.getUserStreamData(e, R, S.Yn.STREAM), i), {
+      y = A(T({}, m.Z.getUserStreamData(e, w, S.Yn.STREAM), i), {
         type: r ? O.fO.HIDDEN_STREAM : O.fO.STREAM,
         id: t,
         userVideo: null != (d = null == C ? true : C.selfVideo) && d,
         user: I,
-        userNick: E.ZP.getName(R, this.channelId, I),
+        userNick: E.ZP.getName(w, this.channelId, I),
         stream: D,
         isPoppedOut: this.poppedOutParticipants.has(t)
       }), v.push(y)
@@ -265,6 +265,6 @@ class L {
         e.type !== O.fO.HIDDEN_STREAM && (null != e.streamId || t) && !e.isPoppedOut && n.push("FILTERED")
       }
       return e.type === O.fO.ACTIVITY && n.push("ACTIVITY"), "isPoppedOut" in e && e.isPoppedOut || n.push("NOT_POPPED_OUT"), n
-    }, R)), this.channelId = e
+    }, w)), this.channelId = e
   }
 }

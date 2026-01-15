@@ -2,7 +2,7 @@
 /** chunk id: 333200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => m
+  V: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -69,7 +69,7 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     hideTags: t,
     wrapTags: n,
@@ -78,8 +78,8 @@ function m(e) {
   let {
     fieldProps: _
   } = (0, i.XF_)(d), {
-    disabled: m,
-    required: h,
+    disabled: h,
+    required: m,
     onQueryChange: g,
     onKeyDown: E,
     onFocus: b,
@@ -94,7 +94,7 @@ function m(e) {
     floatingStyles: A,
     getFloatingProps: N,
     getReferenceProps: P,
-    transitionStyles: R
+    transitionStyles: w
   } = (0, s.C)();
   return (0, r.jsxs)(a.uz, f(u({}, d), {
     isCollapsible: true,
@@ -103,8 +103,8 @@ function m(e) {
     closeOnSelect: null != v ? v : "single" === S,
     children: [(0, r.jsx)(a.Ct, u({
       hideTags: t,
-      required: h,
-      disabled: m,
+      required: m,
+      disabled: h,
       wrapTags: n,
       onBlur: y,
       onQueryChange: g,
@@ -116,7 +116,7 @@ function m(e) {
     }, _, P())), I && (0, r.jsx)("div", f(u({
       ref: C.setFloating,
       className: l.selectDropdown,
-      style: u({}, A, R)
+      style: u({}, A, w)
     }, N()), {
       children: (0, r.jsx)(a.px, {
         renderListItem: e => (0, r.jsx)(o.W, u({}, e)),

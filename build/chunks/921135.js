@@ -35,14 +35,14 @@ class c {
     let u, d, f, p = this.videoElement;
     (null == (e = this.cachedCodecInfo) ? true : e.videoWidth) != null && (null == (t = this.cachedCodecInfo) ? true : t.videoHeight) != null ? (u = this.cachedCodecInfo.videoWidth, d = this.cachedCodecInfo.videoHeight, f = "".concat(u, "x").concat(d)) : (u = 0 !== p.videoWidth ? p.videoWidth : 0, d = 0 !== p.videoHeight ? p.videoHeight : 0, f = u > 0 && d > 0 ? "".concat(u, "x").concat(d) : "Unknown");
     let _ = Math.round(p.clientWidth),
-      m = Math.round(p.clientHeight),
-      h = [],
+      h = Math.round(p.clientHeight),
+      m = [],
       g = 0,
       E = p.currentTime;
     for (let e = 0; e < p.buffered.length; e++) {
       let t = p.buffered.start(e),
         n = p.buffered.end(e);
-      h.push({
+      m.push({
         start: t,
         end: n
       }), n > E && (t <= E ? g += n - E : g += n - t)
@@ -80,10 +80,10 @@ class c {
       videoWidth: u,
       videoHeight: d,
       viewportWidth: _,
-      viewportHeight: m,
+      viewportHeight: h,
       currentTime: p.currentTime,
       duration: p.duration,
-      bufferedRanges: h,
+      bufferedRanges: m,
       bufferedSeconds: g,
       droppedFrames: b,
       totalFrames: y,

@@ -91,15 +91,15 @@ let k = {
     name: "Checkout Test Panel",
     id: "checkout-test-panel",
     component: () => {
-      let [e, t] = i.useState(R.Si.TIER_2), [n, y] = i.useState(null), O = (0, s.Wu)([A.Z], () => A.Z.getGuildsArray()), [D] = (0, s.Wu)([N.Z], () => [N.Z.getPremiumSubscription()]), L = O.map(e => ({
+      let [e, t] = i.useState(w.Si.TIER_2), [n, y] = i.useState(null), O = (0, s.Wu)([A.Z], () => A.Z.getGuildsArray()), [D] = (0, s.Wu)([N.Z], () => [N.Z.getPremiumSubscription()]), L = O.map(e => ({
         value: e,
         label: e.name
       })), [k, U] = i.useState(L.length > 0 ? L[0].value : null), [G, Z] = i.useState(""), [F, B] = i.useState({
-        plan_id: R.Xh.PREMIUM_MONTH_TIER_2,
+        plan_id: w.Xh.PREMIUM_MONTH_TIER_2,
         gift: "true"
       }), V = "true" !== F.gift && null != D, [H, Y] = i.useState(L.length > 0 ? L[0].value : null), {
         analyticsLocations: W
-      } = (0, h.ZP)(m.Z.PAYMENT_FLOW_TEST_PAGE), [K, z] = i.useState(""), [q, Q] = i.useState(P.lds), {
+      } = (0, m.ZP)(h.Z.PAYMENT_FLOW_TEST_PAGE), [K, z] = i.useState(""), [q, Q] = i.useState(P.lds), {
         balance: X,
         isFetching: J,
         error: $
@@ -108,10 +108,10 @@ let k = {
         responseMessage: et,
         redeemVirtualCurrency: en
       } = (0, T.f)(), [er, ei] = i.useState(P.lds), [ea, eo] = i.useState(""), [es, el] = i.useState(P.lds);
-      return (0, r.jsx)(h.Gt, {
+      return (0, r.jsx)(m.Gt, {
         value: W,
         children: (0, r.jsx)(d.zJl, {
-          className: w.scroller,
+          className: R.scroller,
           children: (0, r.jsxs)(d.Kqy, {
             direction: "vertical",
             gap: 24,
@@ -123,13 +123,13 @@ let k = {
                 label: "Gift",
                 value: e,
                 options: [{
-                  value: R.Si.TIER_2,
+                  value: w.Si.TIER_2,
                   label: "Nitro"
                 }, {
-                  value: R.Si.TIER_1,
+                  value: w.Si.TIER_1,
                   label: "Nitro Classic"
                 }, {
-                  value: R.Si.TIER_0,
+                  value: w.Si.TIER_0,
                   label: "Nitro Basic"
                 }, {
                   value: null,
@@ -150,13 +150,13 @@ let k = {
                 label: "Premium Select Plan",
                 value: n,
                 options: [{
-                  value: R.Si.TIER_2,
+                  value: w.Si.TIER_2,
                   label: "Nitro"
                 }, {
-                  value: R.Si.TIER_1,
+                  value: w.Si.TIER_1,
                   label: "Nitro Classic"
                 }, {
-                  value: R.Si.TIER_0,
+                  value: w.Si.TIER_0,
                   label: "Nitro Basic"
                 }, {
                   value: null,
@@ -219,13 +219,13 @@ let k = {
                 label: "Plan",
                 value: F.plan_id,
                 options: [{
-                  value: R.Xh.PREMIUM_MONTH_TIER_2,
+                  value: w.Xh.PREMIUM_MONTH_TIER_2,
                   label: "Nitro"
                 }, {
-                  value: R.Xh.PREMIUM_MONTH_TIER_1,
+                  value: w.Xh.PREMIUM_MONTH_TIER_1,
                   label: "Nitro Classic"
                 }, {
-                  value: R.Xh.PREMIUM_MONTH_TIER_0,
+                  value: w.Xh.PREMIUM_MONTH_TIER_0,
                   label: "Nitro Basic"
                 }],
                 onChange: e => B(t => j(x({}, t), {
@@ -266,12 +266,12 @@ let k = {
                   variant: "text-sm/normal",
                   children: "Virtual Currency Balance:"
                 }), J ? (0, r.jsx)("div", {
-                  className: w.loader,
+                  className: R.loader,
                   children: (0, r.jsx)(d.$jN, {
                     type: d.RAz.SPINNING_CIRCLE
                   })
                 }) : (0, r.jsxs)("div", {
-                  className: w.balanceWidgetPillContainer,
+                  className: R.balanceWidgetPillContainer,
                   children: [null !== $ && (0, r.jsxs)(d.Text, {
                     variant: "text-sm/normal",
                     children: ["Error fetching Virtual Currency Balance: ", $.message]

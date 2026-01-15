@@ -2,7 +2,7 @@
 /** chunk id: 260430, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./472816.js"), require("./794429.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -48,21 +48,21 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   var t;
   let {
     application: n,
     accountScopes: i,
     requestedScopes: l,
-    integrationType: m,
-    errors: h,
+    integrationType: h,
+    errors: m,
     isTrustedName: g = false,
     noDivider: E = false
   } = e, b = (0, u.Z)(() => d.ZW[Math.floor(Math.random() * d.ZW.length)]);
   if (0 === i.length) return null;
   let y = b(),
     O = g ? f.t.PZpY9c : f.t["1Hz+Sl"],
-    v = m === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
+    v = h === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
     className: a()(p.scopes, E ? p.noDivider : true),
     children: [(0, r.jsx)(c.Heading, {
@@ -75,7 +75,7 @@ function m(e) {
       var i;
       return (0, r.jsx)(_, {
         text: t,
-        error: 0 === n ? null == h || null == (i = h[e]) ? true : i[0] : true
+        error: 0 === n ? null == m || null == (i = m[e]) ? true : i[0] : true
       }, "".concat(e, "-").concat(n))
     })).flat(), v && (0, r.jsx)(_, {
       text: f.intl.string(f.t.Ls2XRq)

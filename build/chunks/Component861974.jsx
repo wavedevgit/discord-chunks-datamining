@@ -21,15 +21,15 @@ function d(e, t) {
   if (null != t) return t;
   switch (e) {
     case "warn":
-      return s.aNP;
+      return s.WarningIcon;
     case "info":
-      return s.d3s;
+      return s.CircleInformationIcon;
     case "danger":
-      return s.Mgn;
+      return s.CircleErrorIcon;
     case "positive":
-      return s.dz2;
+      return s.CheckmarkLargeIcon;
     case "preview":
-      return s.Che
+      return s.ScienceIcon
   }
 }
 
@@ -67,9 +67,9 @@ function _(e) {
     textVariant: u = "text-sm/medium",
     icon: d,
     hidden: _ = false
-  } = e, m = f(n);
+  } = e, h = f(n);
   return (0, r.jsx)("div", {
-    className: o()(c.container, m, a, {
+    className: o()(c.container, h, a, {
       [c.hidden]: _
     }),
     children: (0, r.jsxs)("div", {

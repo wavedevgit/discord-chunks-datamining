@@ -33,7 +33,7 @@ function v(e) {
   } = e, {
     autocompletes: I,
     mode: T
-  } = t, C = (0, h.Z)({
+  } = t, C = (0, m.Z)({
     autocompletes: I,
     mode: T
   }), A = (0, g.Z)({
@@ -57,10 +57,10 @@ function v(e) {
       selectedAutocomplete: s,
       selectedAutocompleteGroup: d
     } = e, f = T.type, p = T.filter, {
-      token: h,
+      token: m,
       group: g
-    } = s, E = null != g && (0, c._m)(g) ? g : null, y = null != (t = null != h ? h : p) ? t : E, O = s.channel, v = y === b.dCx.FILTER_IN && null != O && O.id === o.Z.getChannelId(), S = (0, l.Tm)(n);
-    (0, m.bh)({
+    } = s, E = null != g && (0, c._m)(g) ? g : null, y = null != (t = null != m ? m : p) ? t : E, O = s.channel, v = y === b.dCx.FILTER_IN && null != O && O.id === o.Z.getChannelId(), S = (0, l.Tm)(n);
+    (0, h.bh)({
       searchContext: n,
       searchQuery: _.Z.getSearchResultsQuery(S),
       searchQueryString: u.Z.getSearchInputText(n),
@@ -75,7 +75,7 @@ function v(e) {
       isInFilterForSelectedChannel: v,
       searchAutocompleteSelectAction: a
     })
-  }, R = i.useCallback(e => {
+  }, w = i.useCallback(e => {
     let {
       hasOtherSearchFiltersVisible: t
     } = e, i = t ? y.intl.string(y.t.diOL4i) : y.intl.string(y.t["M1tf+7"]);
@@ -98,7 +98,7 @@ function v(e) {
       onSelect: () => u.Z.openSearchFiltersModal(n)
     })
   }, [n]), {
-    items: w
+    items: R
   } = (0, ({
     [b.Sap.EMPTY]: () => {
       let e = [];
@@ -110,7 +110,7 @@ function v(e) {
               selectedChannel: r,
               searchAutocompleteSelectAction: i
             } = e;
-            (0, m.tA)({
+            (0, h.tA)({
               searchContext: n,
               searchAutocompleteSelectAction: i
             });
@@ -147,7 +147,7 @@ function v(e) {
           });
         e.push(o)
       }
-      let t = [...A, R({
+      let t = [...A, w({
         hasOtherSearchFiltersVisible: true
       })];
       e.push((0, p.fC)(f.i.GROUP, {
@@ -179,11 +179,11 @@ function v(e) {
               value: t.text,
               avatarSize: a.EFr.SIZE_16,
               iconSize: "xs"
-            }), h = e => {
+            }), m = e => {
               let {
                 selectedIndex: t
               } = e;
-              (0, m.$z)({
+              (0, h.$z)({
                 searchContext: n,
                 searchHistoryIndex: t - i,
                 searchHistoryTotalResults: o
@@ -200,7 +200,7 @@ function v(e) {
                 suggestion: _
               }),
               resultText: l,
-              onSelect: h
+              onSelect: m
             })
           },
           getAutocompleteGroupItem: e => {
@@ -292,7 +292,7 @@ function v(e) {
           } = (0, d.Nk)(n), _ = o === b.dCx.FILTER_FROM || o === b.dCx.FILTER_MENTIONS ? (0, r.jsx)(d.mW, {
             searchTokenType: o,
             answer: null == (t = n.user) ? true : t.username
-          }) : true, m = e => {
+          }) : true, h = e => {
             let {
               selectedIndex: t,
               searchAutocompleteSelectAction: r
@@ -315,7 +315,7 @@ function v(e) {
             sublabel: _,
             ariaLabel: u,
             resultText: s,
-            onSelect: m
+            onSelect: h
           })
         },
         getAutocompleteGroupItem: e => {
@@ -330,7 +330,7 @@ function v(e) {
         }
       });
       if (0 === i) {
-        let t = [...A, R({
+        let t = [...A, w({
           hasOtherSearchFiltersVisible: true
         })];
         e.push((0, p.fC)(f.i.GROUP, {
@@ -338,7 +338,7 @@ function v(e) {
           title: y.intl.string(y.t.UdhTtk)
         }))
       } else {
-        let t = R({
+        let t = w({
           hasOtherSearchFiltersVisible: false
         });
         e.push(t)
@@ -410,7 +410,7 @@ function v(e) {
     }
   })[T.type])(), D = i.useMemo(() => {
     let e = [];
-    return w.forEach(t => {
+    return R.forEach(t => {
       switch (t.type) {
         case f.i.ROW:
           e.push(t);
@@ -419,9 +419,9 @@ function v(e) {
           t.data.rows.forEach(t => e.push(t))
       }
     }), e
-  }, [w]);
+  }, [R]);
   return {
-    items: w,
+    items: R,
     itemsData: D
   }
 }

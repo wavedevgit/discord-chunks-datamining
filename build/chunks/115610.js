@@ -41,7 +41,7 @@ async function y(e, t) {
         channel_id: t.id,
         message_id: e
       },
-      location: h.dy.CHANNEL_PROMPT
+      location: m.dy.CHANNEL_PROMPT
     });
     return
   }
@@ -49,12 +49,12 @@ async function y(e, t) {
     emoji: e,
     channel: t,
     guildId: O,
-    intention: m.Hz.CHAT
+    intention: h.Hz.CHAT
   })).sort((e, t) => -p.default.compare(e.id, t.id));
   if (I.length > E) {
     let n = I[Math.floor(Math.pow(Math.random(), 2) * I.length)];
     r.Z.sendMessage(t.id, a.ZP.parse(t, (0, f.nY)(n)), false, {
-      location: h.dy.CHANNEL_PROMPT,
+      location: m.dy.CHANNEL_PROMPT,
       messageReference: {
         guild_id: null != (_ = t.getGuildId()) ? _ : true,
         channel_id: t.id,
@@ -71,6 +71,6 @@ async function y(e, t) {
       channel_id: t.id,
       message_id: e
     },
-    location: h.dy.CHANNEL_PROMPT
+    location: m.dy.CHANNEL_PROMPT
   })
 }

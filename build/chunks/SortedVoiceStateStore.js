@@ -64,7 +64,7 @@ let v = Object.freeze([]),
 
 function I(e) {
   let t = S[e];
-  return null == t && (t = new R(e), S[e] = t), t
+  return null == t && (t = new w(e), S[e] = t), t
 }
 
 function T(e, t) {
@@ -73,7 +73,7 @@ function T(e, t) {
 
 function C(e, t, n) {
   var r;
-  let i = null != (r = null == t ? true : t.nick) ? r : h.ZP.getName(n);
+  let i = null != (r = null == t ? true : t.nick) ? r : m.ZP.getName(n);
   return {
     member: t,
     comparator: A(e, i)
@@ -110,7 +110,7 @@ function P(e, t, n, r) {
   };
   return o && (u._isPlaceholder = true), u
 }
-class R {
+class w {
   updateVoiceState(e) {
     if (null != this._pending) return this._pending.add(e), false;
     let t = _.Z.getVoiceState(this.guildId, e),
@@ -121,7 +121,7 @@ class R {
       else if (n.voiceState !== t) {
         var i;
         let a = T(this.guildId, r),
-          o = null != (i = null == a ? true : a.nick) ? i : h.ZP.getName(r);
+          o = null != (i = null == a ? true : a.nick) ? i : m.ZP.getName(r);
         return this._voiceStates.set(e, O(b({}, n), {
           member: a,
           comparator: A(t, o),
@@ -198,7 +198,7 @@ class R {
   }
 }
 
-function w() {
+function R() {
   S = {}
 }
 
@@ -266,7 +266,7 @@ function G(e) {
 function Z() {
   S = {};
   let e = _.Z.getAllVoiceStates();
-  m.default.keys(e).forEach(t => {
+  h.default.keys(e).forEach(t => {
     Object.keys(e[t]).forEach(e => {
       I(null != t ? t : g.ME).updateVoiceState(e)
     })
@@ -302,7 +302,7 @@ class F extends(r = Chunk442837.ZP.Store) {
 }
 E(F, "displayName", "SortedVoiceStateStore");
 let B = new F(Chunk570140.Z, {
-  CONNECTION_OPEN: w,
+  CONNECTION_OPEN: R,
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: j,
   VOICE_STATE_UPDATES: x,

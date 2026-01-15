@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,9 +77,9 @@ function E(e) {
     onSelect: n,
     dateFormat: d = g,
     minDate: p,
-    maxDate: h,
+    maxDate: m,
     disabled: E = false
-  } = e, b = m(e, ["value", "onSelect", "dateFormat", "minDate", "maxDate", "disabled"]);
+  } = e, b = h(e, ["value", "onSelect", "dateFormat", "minDate", "maxDate", "disabled"]);
   let y = i.useRef(null);
 
   function O(e) {
@@ -89,7 +89,7 @@ function E(e) {
     return (0, r.jsx)(s.V, {
       children: (0, r.jsx)(o.CalendarPicker, {
         minDate: p,
-        maxDate: h,
+        maxDate: m,
         value: t,
         onSelect: e => {
           n(e), i()
@@ -107,7 +107,7 @@ function E(e) {
     children: e => {
       var {
         onClick: n
-      } = e, i = m(e, ["onClick"]);
+      } = e, i = h(e, ["onClick"]);
       return (0, r.jsx)(a.gNt, _(f({}, b), {
         children: e => (0, r.jsxs)(a.UPk, _(f({
           as: c.P3F,

@@ -90,15 +90,15 @@ let O = Chunk473749.forwardRef(function(e, t) {
       allowUnknownGameIcon: C = true
     } = e,
     [A, N] = i.useState(null),
-    [P, R] = i.useState(false),
-    w = i.useCallback(e => {
-      R(e)
+    [P, w] = i.useState(false),
+    R = i.useCallback(e => {
+      w(e)
     }, []),
     D = i.useRef(null);
   i.useEffect(() => {
     null != D.current && P && (cancelIdleCallback(D.current), D.current = null)
   }, [P]);
-  let x = (0, s.O)(w);
+  let x = (0, s.O)(R);
   if (null != O && (n = b(O)), null != a && null == n && (a instanceof f.ZP ? n = a.getIconURL(E(T)) : null != a.icon && (n = p.ZP.getApplicationIconURL({
       id: a.id,
       icon: a.icon
@@ -121,7 +121,7 @@ let O = Chunk473749.forwardRef(function(e, t) {
     }, [n, P]), true === n && null != _) {
     let e = y(T);
     return (0, r.jsx)(u.Z, {
-      className: o()(h.gameIcon, I, S),
+      className: o()(m.gameIcon, I, S),
       guild: _,
       size: e
     })
@@ -129,31 +129,31 @@ let O = Chunk473749.forwardRef(function(e, t) {
   if (null == n || "" === n) return C ? (0, r.jsx)(l.IMN, {
     size: "md",
     color: "currentColor",
-    className: o()(h.gameIcon, T, S)
+    className: o()(m.gameIcon, T, S)
   }) : null;
   let L = null == a ? true : a.name,
-    j = null != L && "" !== L ? m.intl.formatToPlainString(m.t.tiKyYg, {
+    j = null != L && "" !== L ? h.intl.formatToPlainString(h.t.tiKyYg, {
       applicationName: L
-    }) : m.intl.string(m.t["2B/phM"]),
+    }) : h.intl.string(h.t["2B/phM"]),
     M = (0, p.pU)(n),
     k = (0, d.Vv)(n),
     U = A === n || M || k;
   return (0, r.jsxs)(r.Fragment, {
     children: [U ? null : (0, r.jsx)("div", {
-      className: o()(h.gameIconLoading, T, S)
+      className: o()(m.gameIconLoading, T, S)
     }), (0, r.jsx)("img", {
       ref: t,
       alt: j,
       src: n,
-      className: o()(h.gameIcon, T, S),
+      className: o()(m.gameIcon, T, S),
       style: U ? true : {
         display: "none"
       }
     }), (0, r.jsx)("div", {
-      className: h.intersectionContainer,
+      className: m.intersectionContainer,
       children: (0, r.jsx)("div", {
         ref: x,
-        className: h.intersectionRef
+        className: m.intersectionRef
       })
     })]
   })

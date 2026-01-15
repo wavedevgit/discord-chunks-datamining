@@ -140,7 +140,7 @@ let ei = e => {
       }
     }, [t]), (0, r.jsxs)("div", {
       className: W.burstEmojiSection,
-      children: [d, (0, r.jsx)(m.Z, {
+      children: [d, (0, r.jsx)(h.Z, {
         className: o()(W.burstEmoji, {
           [W.hideEmoji]: s
         }),
@@ -162,12 +162,12 @@ let ei = e => {
       setSelected: s,
       reactionType: l,
       colors: u
-    } = e, f = i.useMemo(() => en(t), [t]), p = i.useMemo(() => er(t, ee, W.emoji, o()(W.emoji, W.emojiText)), [t]), m = l === I.O.BURST, h = m ? Y.t.VmiNjd : Y.t["cNfs1/"], g = Y.intl.formatToPlainString(h, {
+    } = e, f = i.useMemo(() => en(t), [t]), p = i.useMemo(() => er(t, ee, W.emoji, o()(W.emoji, W.emojiText)), [t]), h = l === I.O.BURST, m = h ? Y.t.VmiNjd : Y.t["cNfs1/"], g = Y.intl.formatToPlainString(m, {
       name: f,
       n: n
     }), E = i.useMemo(() => {
       let e = {};
-      if (m) {
+      if (h) {
         var t, n, r, i;
         let {
           backgroundColor: o = "",
@@ -176,16 +176,16 @@ let ei = e => {
         a ? (e.background = null != (t = (0, c.wK)(o, s)) ? t : "", e.border = "1px solid ".concat(null != (n = (0, c.wK)(o, 1.1 * s)) ? n : "")) : (e.background = null != (r = (0, c.wK)(o, et)) ? r : "", e.border = "1px solid ".concat(null != (i = (0, c.wK)(o, 2 * et)) ? i : ""))
       }
       return e
-    }, [m, u, a]), b = i.useMemo(() => {
+    }, [h, u, a]), b = i.useMemo(() => {
       let e = {};
-      if (m) {
+      if (h) {
         let {
           accentColor: t = ""
         } = null != u ? u : {};
         e.color = t
       }
       return e
-    }, [m, u]), y = i.useCallback(() => {
+    }, [h, u]), y = i.useCallback(() => {
       s({
         emoji: t,
         reactionType: l
@@ -222,7 +222,7 @@ function eo(e) {
     guildId: s,
     reactionType: l,
     onRemoveReactor: c
-  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, A.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(H.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, y = (0, u.e7)([w.ZP, R.Z, j.Z], () => G.ZP.getName(s, a.id, n));
+  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), h = (0, A.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(H.Plq.MANAGE_MESSAGES, a) && h) || d === n.id, y = (0, u.e7)([R.ZP, w.Z, j.Z], () => G.ZP.getName(s, a.id, n));
 
   function O() {
     B.WO({
@@ -261,7 +261,7 @@ function eo(e) {
           className: W.ellipsized,
           children: y
         })
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(m.Z, {
         user: n,
         className: null != y && "" !== y ? W.tagFaded : null,
         usernameClass: o()(W.username, W.ellipsized),
@@ -447,14 +447,14 @@ function ed(e) {
     onClose: a,
     transitionState: o,
     "aria-label": s = Y.intl.string(Y.t.gHp0C4)
-  } = e, l = (0, u.e7)([R.Z], () => R.Z.getChannel(t.getChannelId())), c = null == l ? true : l.getGuildId(), d = (0, u.e7)([x.Z, v.Z], () => {
+  } = e, l = (0, u.e7)([w.Z], () => w.Z.getChannel(t.getChannelId())), c = null == l ? true : l.getGuildId(), d = (0, u.e7)([x.Z, v.Z], () => {
     var e, n;
     let r = null != (n = x.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = v.Z.getMessage(Z.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;
     return null != r ? r.reactions : []
-  }, [t]), m = ec(d), h = m[0], [g, b] = eu(n, null != h ? {
-    emoji: h.emoji,
-    reactionType: h.burst_count > 0 ? I.O.BURST : I.O.NORMAL
-  } : null, m), y = i.useMemo(() => {
+  }, [t]), h = ec(d), m = h[0], [g, b] = eu(n, null != m ? {
+    emoji: m.emoji,
+    reactionType: m.burst_count > 0 ? I.O.BURST : I.O.NORMAL
+  } : null, h), y = i.useMemo(() => {
     var e;
     return null == g ? null : null != (e = d.find(e => (0, V.ir)(e.emoji, g.emoji))) ? e : null
   }, [d, g]), T = (0, u.e7)([E.Z], () => E.Z.saturation), C = (0, u.e7)([N.Z], () => (0, p.wj)(N.Z.theme));
@@ -478,7 +478,7 @@ function ed(e) {
         children: [(0, r.jsx)(_.Ttm, {
           className: W.scroller,
           fade: true,
-          children: m.map(e => {
+          children: h.map(e => {
             var t;
             let n = e.burst_count > 0;
             return (0, r.jsx)(ea, {

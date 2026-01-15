@@ -200,7 +200,7 @@ let T = {
         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
         guildId: e,
         request: a
-      }), (0, h.YG)(t.formFields) && n !== S && setTimeout(() => I(e), n), a
+      }), (0, m.YG)(t.formFields) && n !== S && setTimeout(() => I(e), n), a
     } catch (t) {
       let {
         status: e
@@ -240,7 +240,7 @@ let T = {
       reasonOther: a,
       responses: o
     } = e;
-    m.default.track(g.rMx.GUILD_MEMBER_APPLICATION_REPORTED, {
+    h.default.track(g.rMx.GUILD_MEMBER_APPLICATION_REPORTED, {
       application_id: n.joinRequestId,
       applicant_id: r.id,
       guild_id: t.id,

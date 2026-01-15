@@ -99,7 +99,7 @@ function P(e) {
   return null == t && A(e, t = T(1)), t
 }
 
-function R(e) {
+function w(e) {
   (0, s.j)(() => {
     C.setState(t => {
       let n = b({}, t);
@@ -108,7 +108,7 @@ function R(e) {
   })
 }
 
-function w(e, t, n, r, i) {
+function R(e, t, n, r, i) {
   let a = N(e);
   if ((null == a ? true : a.requestState) === 2) {
     var o;
@@ -149,7 +149,7 @@ function L(e) {
 }
 
 function j(e) {
-  R(I(e))
+  w(I(e))
 }
 
 function M(e) {
@@ -178,7 +178,7 @@ function k(e) {
   } = e, l = {};
   i && (l.unusual_dm_activity_until = {
     range: {
-      gte: Date.now() - m.rL
+      gte: Date.now() - h.rL
     }
   }), a && (l.communication_disabled_until = {
     range: {
@@ -216,10 +216,10 @@ function k(e) {
     })
   }
   let {
-    selectedSourceInviteCode: h
+    selectedSourceInviteCode: m
   } = e;
-  null != h && (t.source_invite_code = {
-    or_query: [h]
+  null != m && (t.source_invite_code = {
+    or_query: [m]
   });
   let {
     selectedJoinSourceType: g
@@ -324,15 +324,15 @@ async function H(e) {
     l = P(s),
     [c, u] = B(e, l, o),
     d = U(k(i), u),
-    f = null != (t = i.selectedSort) ? t : m.d$.ORDER_BY_GUILD_JOINED_AT_DESC;
+    f = null != (t = i.selectedSort) ? t : h.d$.ORDER_BY_GUILD_JOINED_AT_DESC;
   if (V(s, d) && (0, a.isEqual)(c, l.cursor)) return;
-  let p = w(s, d, c, o, f);
+  let p = R(s, d, c, o, f);
   try {
     if (S.info("Making member search request", {
         query: p.query,
         guildId: e
       }), null == p.query) throw Error("Query is null");
-    await (0, h.D)(e, p.query, {
+    await (0, m.D)(e, p.query, {
       signal: null != (r = null == (n = p.abortController) ? true : n.signal) ? r : true
     })
   } catch (e) {

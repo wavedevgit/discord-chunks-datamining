@@ -2,7 +2,7 @@
 /** chunk id: 70382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => m
+  H: () => h
 });
 var Chunk720479 = require("./720479.js"),
   Chunk745597 = require("./745597.js");
@@ -52,7 +52,7 @@ function _(e, t) {
   let n = p(e);
   return 2 === t ? 2 === n ? 30 : 29 : 3 === t ? 0 === n ? 29 : 30 : 6 === t ? 30 * !!l(e) : 30
 }
-class m {
+class h {
   fromJulianDay(e) {
     let t = e - a,
       n = Math.floor((t * o / s * 19 + 234) / 235) + 1,

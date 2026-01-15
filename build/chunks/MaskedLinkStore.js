@@ -22,15 +22,15 @@ function d(e, t, n) {
 let f = "MaskedLinkStore",
   p = new Set,
   _ = new Set,
-  m = null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.replace("//", "");
+  h = null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.replace("//", "");
 
-function h(e) {
+function m(e) {
   let t = (0, c.F)(e);
   switch (t) {
     case window.GLOBAL_ENV.INVITE_HOST:
     case window.GLOBAL_ENV.GIFT_CODE_HOST:
     case window.GLOBAL_ENV.GUILD_TEMPLATE_HOST:
-    case m:
+    case h:
     case location.hostname:
       returntrue;
     default:
@@ -47,7 +47,7 @@ function E(e) {
   let {
     url: t
   } = e;
-  if (h(t)) returnfalse;
+  if (m(t)) returnfalse;
   p.add((0, c.F)(t)), o.K.set(f, {
     trustedDomains: p,
     trustedProtocols: _
@@ -78,7 +78,7 @@ class y extends(i = Chunk442837.ZP.Store) {
     }
   }
   isTrustedDomain(e) {
-    return h(e)
+    return m(e)
   }
   isTrustedProtocol(e) {
     return g(e)

@@ -20,8 +20,8 @@ let f = function(e) {
     errorMessage: f,
     submitting: p,
     onReset: _,
-    onSave: m,
-    onSaveText: h,
+    onSave: h,
+    onSaveText: m,
     onResetText: g,
     onSaveButtonColor: E,
     disabled: b,
@@ -59,15 +59,15 @@ let f = function(e) {
             children: (0, r.jsx)("span", {
               children: null != g ? g : u.intl.string(u.t.yBZMsQ)
             })
-          }), null != m ? (0, r.jsx)(a.u, {
+          }), null != h ? (0, r.jsx)(a.u, {
             text: y,
             children: (0, r.jsx)(o.zx, {
               size: o.zx.Sizes.SMALL,
               color: null != E ? E : o.zx.Colors.GREEN,
               submitting: p,
               disabled: b,
-              onClick: m,
-              children: null != h ? h : u.intl.string(u.t.K344S7)
+              onClick: h,
+              children: null != m ? m : u.intl.string(u.t.K344S7)
             })
           }) : null]
         })]

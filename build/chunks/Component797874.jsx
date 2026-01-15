@@ -65,7 +65,7 @@ let T = function(e) {
   let {
     gameId: t,
     channelId: a
-  } = e, O = i.useRef(null), S = (0, s.e7)([m.Z], () => m.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(a)), C = null != T ? T.getGuildId() : null, A = null != S ? e => {
+  } = e, O = i.useRef(null), S = (0, s.e7)([h.Z], () => h.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(a)), C = null != T ? T.getGuildId() : null, A = null != S ? e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -78,7 +78,7 @@ let T = function(e) {
   } : true, N = null != S ? (0, r.jsx)("img", {
     alt: "",
     className: o()(y.icon, y.imageIcon),
-    src: h.ZP.getApplicationIconURL({
+    src: m.ZP.getApplicationIconURL({
       id: S.id,
       icon: S.icon,
       size: 32
@@ -89,14 +89,14 @@ let T = function(e) {
     source: d.m1.GameMention,
     trackEntryPointImpression: false,
     autoTrackExposure: false
-  }), R = i.useCallback(() => {
+  }), w = i.useCallback(() => {
     (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("36427").then(n.bind(n, 196738));
       return t => (0, r.jsx)(e, v({}, t))
     })
-  }, []), w = null != S ? "@game ".concat(S.name) : true;
+  }, []), R = null != S ? "@game ".concat(S.name) : true;
   return (0, r.jsx)(p.Z, {
     applicationId: t,
     targetElementRef: O,
@@ -106,8 +106,8 @@ let T = function(e) {
       return (0, r.jsx)(l.u, {
         asContainer: true,
         tag: "span",
-        text: w,
-        "aria-label": w,
+        text: R,
+        "aria-label": R,
         delay: 750,
         children: (0, r.jsxs)(g.Z, I(v({
           onContextMenu: A,
@@ -117,7 +117,7 @@ let T = function(e) {
             if (P.shouldOpenGameProfile && null != t) {
               var r;
               null == (r = e.onClick) || r.call(e, n)
-            } else R()
+            } else w()
           },
           children: [(0, r.jsx)(E.Z, {
             children: N

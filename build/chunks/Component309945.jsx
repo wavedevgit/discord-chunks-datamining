@@ -23,7 +23,7 @@ function u(e) {
   } = (0, a.Z)(t, n);
   return c ? (0, r.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)(i.Mgn, {
+    children: [(0, r.jsx)(i.CircleErrorIcon, {
       color: l.Z.colors.TEXT_FEEDBACK_WARNING,
       className: s.icon
     }), (0, r.jsx)(o.xvT, {

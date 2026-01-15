@@ -30,15 +30,15 @@ let O = e => {
     channel: s,
     messageId: O,
     reportedTimestamp: v
-  } = e, S = _.default.getUser(t), I = i.useMemo(() => a ? (0, f.Z)((0, m.vc)(l()(), "LT")) : null, [a]), T = (0, p.l)({
+  } = e, S = _.default.getUser(t), I = i.useMemo(() => a ? (0, f.Z)((0, h.vc)(l()(), "LT")) : null, [a]), T = (0, p.l)({
     user: S,
     channelId: s.id,
     guildId: n,
     messageId: O
-  })((0, u.JZ)(S, s)), C = null != S ? S.getAvatarURL(n, (0, c.dcp)(c.EFr.SIZE_16)) : y, A = null != S ? g.intl.format(h.default["+zqXZs"], {
+  })((0, u.JZ)(S, s)), C = null != S ? S.getAvatarURL(n, (0, c.dcp)(c.EFr.SIZE_16)) : y, A = null != S ? g.intl.format(m.default["+zqXZs"], {
     username: S.username,
     onUserClick: T
-  }) : g.intl.string(h.default.xpRjfS);
+  }) : g.intl.string(m.default.xpRjfS);
   return (0, r.jsxs)("div", {
     className: o()(b.messageSpine, b.repliedMessage, I),
     children: [(0, r.jsx)(c.qEK, {

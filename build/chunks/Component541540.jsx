@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,7 +62,7 @@ class b extends Chunk473749.Component {
         location: e
       }
     } = this.props;
-    return g(m({}, e), {
+    return g(h({}, e), {
       object: f.qAy.BUTTON_CTA
     })
   }
@@ -134,7 +134,7 @@ class b extends Chunk473749.Component {
         }), Error("Cannnot redeem promotion code as gift");
         u.default.track(f.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: g(m({}, this.analyticsLocation), {
+          location: g(h({}, this.analyticsLocation), {
             object: f.qAy.BUTTON_CTA
           })
         }), (0, l.V)({

@@ -62,50 +62,50 @@ function y() {
     },
     I = [{
       value: i.Q4.BLUR,
-      label: h.intl.string(h.t.S49Uad)
+      label: m.intl.string(m.t.S49Uad)
     }, {
       value: i.Q4.BLOCK,
-      label: h.intl.string(h.t["D/157Y"])
+      label: m.intl.string(m.t["D/157Y"])
     }],
     T = [{
       value: i.Q4.BLUR,
-      label: h.intl.string(h.t.S49Uad)
+      label: m.intl.string(m.t.S49Uad)
     }],
     C = {
       value: i.Q4.SHOW,
-      label: h.intl.string(h.t["5k5OFp"])
+      label: m.intl.string(m.t["5k5OFp"])
     };
   t && (I.unshift(C), T.unshift(C));
   let A = {
     isDisabled: E,
-    tooltipText: n ? h.intl.string(g.default["6Af/cw"]) : true
+    tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : true
   };
   return (0, r.jsxs)(p.n, {
-    setting: m.s6.GORE_MEDIA_REDACTION,
-    description: h.intl.string(h.t.XgH9eh),
+    setting: h.s6.GORE_MEDIA_REDACTION,
+    description: m.intl.string(m.t.XgH9eh),
     children: [(0, r.jsx)(_.Z, b({
-      title: h.intl.string(h.t["+uI23H"]),
+      title: m.intl.string(m.t["+uI23H"]),
       value: O,
       onChange: e => S({
         goreContentFriendDm: e
       }),
       options: I
     }, A)), (0, r.jsx)(_.Z, b({
-      title: h.intl.string(h.t["Yh+HX1"]),
+      title: m.intl.string(m.t["Yh+HX1"]),
       value: v,
       onChange: e => S({
         goreContentNonFriendDm: e
       }),
       options: I
     }, A)), (0, r.jsx)(_.Z, {
-      title: h.intl.string(h.t["FP+a42"]),
+      title: m.intl.string(m.t["FP+a42"]),
       value: y,
       onChange: e => S({
         goreContentGuilds: e
       }),
       isDisabled: !t || E,
       options: T,
-      tooltipText: n ? h.intl.string(g.default["6Af/cw"]) : true
+      tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : true
     })]
   })
 }

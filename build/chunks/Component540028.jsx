@@ -67,7 +67,7 @@ function I(e) {
     idle: n,
     pipWindows: i,
     voiceChannelId: o,
-    onSelect: m
+    onSelect: h
   } = e;
   n && t();
   let b = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
@@ -82,7 +82,7 @@ function I(e) {
   }
 
   function I(e) {
-    if (e.pipWindow.component === h.NYg.ACTIVITY && null != b) {
+    if (e.pipWindow.component === m.NYg.ACTIVITY && null != b) {
       var t;
       let e = null == (t = d.Z.getApplication(b.applicationId)) ? true : t.name;
       return null == e ? E.intl.string(E.t["8raC1P"]) : E.intl.formatToPlainString(E.t["a9+V+V"], {
@@ -96,7 +96,7 @@ function I(e) {
 
   function T() {
     let e = [],
-      t = i.find(e => e.component === h.NYg.VIDEO);
+      t = i.find(e => e.component === m.NYg.VIDEO);
     return null != t && v.forEach(n => {
       let r = p.Z.getActiveStreamForApplicationStream(n.stream),
         i = n.id === (null == O ? true : O.id) && (null == y ? true : y.id) === t.id;
@@ -124,7 +124,7 @@ function I(e) {
     navId: "pip-menu",
     "aria-label": "switch PIP",
     onClose: t,
-    onSelect: m,
+    onSelect: h,
     children: T().map(C)
   })
 }
@@ -132,10 +132,10 @@ let T = function(e) {
   let {
     voiceChannelId: t,
     idle: n
-  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([_.Z], () => _.Z.pipWindows).values()).filter(e => e.component !== h.NYg.ACTIVITY), u = (0, a.Wu)([p.Z], () => p.Z.getAllActiveStreamsForChannel(t)).filter(e => {
+  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([_.Z], () => _.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, a.Wu)([p.Z], () => p.Z.getAllActiveStreamsForChannel(t)).filter(e => {
     var n;
-    return e.ownerId !== (null == (n = m.default.getCurrentUser()) ? true : n.id) && e.channelId === t
-  }), d = 1 === c.length && c[0].component === h.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
+    return e.ownerId !== (null == (n = h.default.getCurrentUser()) ? true : n.id) && e.channelId === t
+  }), d = 1 === c.length && c[0].component === m.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
   return d || f ? null : (0, r.jsx)(s.yRy, {
     targetElementRef: l,
     position: "bottom",

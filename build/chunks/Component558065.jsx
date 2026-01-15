@@ -62,16 +62,16 @@ class _ {
     c(this, "refcount", true), c(this, "stream", true), this.refcount = 1, this.stream = window.createDiscordStream(e)
   }
 }
-let m = new Map;
+let h = new Map;
 
-function h(e) {
-  let t = m.get(e);
-  return null == t ? (t = new _(e), (0, l.zS)().addDirectVideoOutputSink(e), m.set(e, t)) : t.addref(), t.stream
+function m(e) {
+  let t = h.get(e);
+  return null == t ? (t = new _(e), (0, l.zS)().addDirectVideoOutputSink(e), h.set(e, t)) : t.addref(), t.stream
 }
 
 function g(e) {
-  let t = m.get(e);
-  null != t && t.release() && ((0, l.zS)().removeDirectVideoOutputSink(e), m.delete(e))
+  let t = h.get(e);
+  null != t && t.release() && ((0, l.zS)().removeDirectVideoOutputSink(e), h.delete(e))
 }
 
 function E(e, t) {
@@ -83,7 +83,7 @@ function E(e, t) {
     reportContainerResized: c = true,
     className: f
   } = e, _ = d(e, ["streamId", "paused", "onReady", "onResize", "reportContainerResized", "className"]);
-  let m = i.useRef(null),
+  let h = i.useRef(null),
     E = i.useRef(null),
     b = i.useRef({
       width: 0,
@@ -99,7 +99,7 @@ function E(e, t) {
   return i.useLayoutEffect(() => {
     let {
       current: e
-    } = m;
+    } = h;
 
     function t() {
       var e, t, n, r, i, a;
@@ -146,12 +146,12 @@ function E(e, t) {
   }), i.useEffect(() => {
     let e = E.current;
     if (null != e)
-      if (!a) return p.info("attaching srcObject for ".concat(n)), e.srcObject = h(n), () => {
+      if (!a) return p.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
         g(n), e.srcObject = null
       };
       else null != e.srcObject && (e.srcObject = null, g(n))
   }, [a, n]), (0, r.jsx)("div", u({
     className: o()("media-engine-video", f),
-    ref: m
+    ref: h
   }, _))
 }

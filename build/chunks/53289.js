@@ -24,14 +24,14 @@ function f(e, t) {
     i = (0, a.e7)([s.Z], () => s.Z.keyboardModeEnabled),
     f = (0, o.Z)(),
     [p, _] = r.useState(false),
-    m = (0, l.Aq)();
+    h = (0, l.Aq)();
   return r.useEffect(() => {
     if (t) return n.addEventListener("blur", e), () => n.removeEventListener("blur", e);
 
     function e() {
-      f && (m.dispatch(u.CkL.POPOUT_CLOSE), c.S.dispatch(u.CkL.CONTEXT_MENU_CLOSE))
+      f && (h.dispatch(u.CkL.POPOUT_CLOSE), c.S.dispatch(u.CkL.CONTEXT_MENU_CLOSE))
     }
-  }, [n, f, t, m]), r.useEffect(() => {
+  }, [n, f, t, h]), r.useEffect(() => {
     var r;
     if (i || !p || !t) return;
     let {

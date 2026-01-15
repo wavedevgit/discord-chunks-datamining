@@ -50,13 +50,13 @@ function k() {
     {
       teams: i,
       loading: a
-    } = (0, m.Z)({
+    } = (0, h.Z)({
       refreshOnDepChange: true
     });
   return (0, r.jsxs)(l.l09, {
     children: [(0, r.jsxs)(_.F, {
       setting: x.s6.ACCOUNT_PROFILE,
-      children: [n && (0, r.jsx)(P.Z, {}), (0, r.jsx)(w.Z, {
+      children: [n && (0, r.jsx)(P.Z, {}), (0, r.jsx)(R.Z, {
         currentUser: e
       }), (0, r.jsx)(D.Z, {})]
     }), (0, r.jsx)(_.F, {
@@ -76,7 +76,7 @@ function k() {
       })
     }), (0, r.jsxs)(_.F, {
       setting: x.s6.ACCOUNT_REMOVAL,
-      children: [(0, r.jsx)(l.izJ, {}), (0, r.jsx)(R.Z, {
+      children: [(0, r.jsx)(l.izJ, {}), (0, r.jsx)(w.Z, {
         currentUser: e,
         userTeamsLoading: a,
         userTeams: i
@@ -92,7 +92,7 @@ class G extends Chunk473749.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    (0, h.Z)(e.id, e.getAvatarURL(true, 80))
+    (0, m.Z)(e.id, e.getAvatarURL(true, 80))
   }
   componentWillUnmount() {
     c.Z.clearBackupCodes(), (0, u.Zy)()

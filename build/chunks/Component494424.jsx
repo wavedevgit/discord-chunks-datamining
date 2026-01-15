@@ -64,7 +64,7 @@ let A = e => {
     targetElementRef: p
   } = e, {
     analyticsLocations: S
-  } = (0, l.ZP)(s.Z.TIERED_TENURE_BADGE_CHURN_REMINDER), I = v(), C = T(), A = null != (t = (0, _.kG)()) ? t : h.VU.PREMIUM_TENURE_1_MONTH, N = (0, i.useCallback)(() => {
+  } = (0, l.ZP)(s.Z.TIERED_TENURE_BADGE_CHURN_REMINDER), I = v(), C = T(), A = null != (t = (0, _.kG)()) ? t : m.VU.PREMIUM_TENURE_1_MONTH, N = (0, i.useCallback)(() => {
     d.default.track(g.rMx.TOOLTIP_VIEWED, {
       type: "tiered_tenure_badge_churn_reminder"
     })
@@ -74,14 +74,14 @@ let A = e => {
       subscriptionTier: null,
       analyticsLocations: S
     })
-  }, [n, S]), R = [{
+  }, [n, S]), w = [{
     text: b.intl.string(b.t.iIvF2z),
     variant: "expressive",
     icon: o.SrA,
     iconPosition: "start",
     onClick: P
-  }], w = C >= y && C <= O ? Math.max(1, Math.min(100, (O - C) / O * 100)) : 1, D = C <= 10 ? "critical" : "warning";
-  return (0, r.jsx)(m.Z, {
+  }], R = C >= y && C <= O ? Math.max(1, Math.min(100, (O - C) / O * 100)) : 1, D = C <= 10 ? "critical" : "warning";
+  return (0, r.jsx)(h.Z, {
     badgeId: A,
     targetElementRef: p,
     body: I,
@@ -89,9 +89,9 @@ let A = e => {
     tooltipDelay: f,
     markAsDismissed: n,
     progressCircleText: "" + C,
-    progressCirclePercent: w,
+    progressCirclePercent: R,
     progressCircleUrgency: D,
-    actions: R,
+    actions: w,
     onShow: "tooltip" === u ? N : true,
     estimatedTooltipHeight: 300,
     children: a

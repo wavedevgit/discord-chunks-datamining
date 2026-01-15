@@ -80,16 +80,16 @@ let f = e => {
     },
     {
       buttonText: _,
-      marketingSubscriptionTierSkuId: m
+      marketingSubscriptionTierSkuId: h
     } = (0, r.G)(p),
     {
-      subscribeButtonProps: h
+      subscribeButtonProps: m
     } = (0, i.F)(c(s({}, f), {
-      subscriptionTier: m,
+      subscriptionTier: h,
       buttonTextOverride: null != d ? d : _
     }));
   return {
-    subscribeButtonProps: h,
-    subscriptionTier: m === a.Si.NONE ? null : m
+    subscribeButtonProps: m,
+    subscriptionTier: h === a.Si.NONE ? null : h
   }
 }

@@ -10,11 +10,11 @@ var Chunk127849 = require("./127849.js"),
   Chunk275717 = require("./275717.js");
 module.exports = function(e, t) {
   var n, u, d, f, p, _ = e.target,
-    m = e.global,
-    h = e.stat;
-  if (n = m ? r : h ? r[_] || s(_, {}) : r[_] && r[_].prototype)
+    h = e.global,
+    m = e.stat;
+  if (n = h ? r : m ? r[_] || s(_, {}) : r[_] && r[_].prototype)
     for (u in t) {
-      if (f = t[u], d = e.dontCallGetSet ? (p = i(n, u)) && p.value : n[u], !c(m ? u : _ + (h ? "." : "#") + u, e.forced) && true !== d) {
+      if (f = t[u], d = e.dontCallGetSet ? (p = i(n, u)) && p.value : n[u], !c(h ? u : _ + (m ? "." : "#") + u, e.forced) && true !== d) {
         if (typeof f == typeof d) continue;
         l(f, d)
       }(e.sham || d && d.sham) && a(f, "sham", true), o(n, u, f, e)

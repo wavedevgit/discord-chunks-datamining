@@ -92,5 +92,5 @@ function C(e) {
     } = e;
     return "channel" === t ? p.Z.getChannel(n) : null
   }).filter(E.lm).filter(e => T(e, _.Z)), [e]);
-  return (0, a.Wu)([h.default, m.Z], () => t.map(e => (0, l.F6)(e, h.default, m.Z, true)), [t])
+  return (0, a.Wu)([m.default, h.Z], () => t.map(e => (0, l.F6)(e, m.default, h.Z, true)), [t])
 }

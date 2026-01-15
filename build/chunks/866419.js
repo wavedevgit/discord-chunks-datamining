@@ -2,7 +2,7 @@
 /** chunk id: 866419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bv: () => h,
+  Bv: () => m,
   SK: () => O,
   _m: () => _,
   ft: () => E,
@@ -24,11 +24,11 @@ var Chunk473749 = require("./473749.js"),
     return e.RESET_BUTTON = "reset_button", e.EDITOR_CLOSE = "editor_close", e
   }({});
 
-function m(e) {
+function h(e) {
   return (0, a.wj)(e) ? p.BR.DARK : p.BR.LIGHT
 }
 
-function h(e) {
+function m(e) {
   let t = l.L1.getSetting(),
     n = null != t.backgroundGradientPresetId && t.backgroundGradientPresetId in f.qt && f.qt[t.backgroundGradientPresetId].theme !== e;
   (0, o.y)(e), n && (0, u.kj)()
@@ -47,15 +47,15 @@ function g() {
       colors: n,
       gradientAngle: r,
       chassisMixAmount: i
-    }), "reset_button" === t ? h(m(null != a ? a : s.Z.theme)) : (0, o.UD)();
+    }), "reset_button" === t ? m(h(null != a ? a : s.Z.theme)) : (0, o.UD)();
     let d = l.L1.getSetting().backgroundGradientPresetId;
     null != d && (0, u.zO)(d)
   }, [e])
 }
 
 function E() {
-  let e = m(s.Z.theme);
-  e !== s.Z.theme && h(e)
+  let e = h(s.Z.theme);
+  e !== s.Z.theme && m(e)
 }
 
 function b(e, t, n) {

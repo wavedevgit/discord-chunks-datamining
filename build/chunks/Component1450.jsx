@@ -34,9 +34,9 @@ let v = e => {
     location: I
   } = (0, c.O)(), {
     analyticsLocations: T
-  } = (0, d.ZP)(), C = (0, s.e7)([h.Z], () => h.Z.getGuild(n)), {
+  } = (0, d.ZP)(), C = (0, s.e7)([m.Z], () => m.Z.getGuild(n)), {
     canManageAllExpressions: A
-  } = (0, m.XJ)(C), N = null != C && 0 === (0, g.A3)(C.premiumTier) && !C.features.has(E.GuildFeatures.MORE_STICKERS);
+  } = (0, h.XJ)(C), N = null != C && 0 === (0, g.A3)(C.premiumTier) && !C.features.has(E.GuildFeatures.MORE_STICKERS);
   if (i.useEffect(() => {
       A && N && v && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
         location: I,

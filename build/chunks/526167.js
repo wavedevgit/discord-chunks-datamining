@@ -19,13 +19,13 @@ function p() {
 }
 let _ = "electron" === d.toLowerCase() ? parseInt(null != (a = u().version) ? a : "", 10) : false;
 
-function m() {
+function h() {
   return _
 }
-let h = "firefox" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
+let m = "firefox" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
 
 function g() {
-  return h
+  return m
 }
 let E = "edge" === d.toLowerCase() ? parseInt(null != (s = u().version) ? s : "", 10) : false;
 
@@ -39,7 +39,7 @@ function O() {
 }
 
 function v() {
-  return false !== p() || false !== m() || false !== g() || false !== b() || O() >= 14
+  return false !== p() || false !== h() || false !== g() || false !== b() || O() >= 14
 }
 
 function S() {

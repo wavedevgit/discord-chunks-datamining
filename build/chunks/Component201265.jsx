@@ -59,10 +59,10 @@ function f(e) {
     onCancel: f,
     onCloseCallback: p,
     variant: _ = "critical"
-  } = e, m = u(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant"]);
+  } = e, h = u(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant"]);
   let {
-    i18n: h
-  } = (0, a.ZF)(), g = h.CANCEL, E = h.INLINE_NOTICE_GENERIC_ERROR, [b, y] = i.useState(false), O = i.useRef(p);
+    i18n: m
+  } = (0, a.ZF)(), g = m.CANCEL, E = m.INLINE_NOTICE_GENERIC_ERROR, [b, y] = i.useState(false), O = i.useRef(p);
   i.useLayoutEffect(() => {
     O.current = p
   }), i.useLayoutEffect(() => () => {
@@ -77,7 +77,7 @@ function f(e) {
       text: null != n ? n : g,
       variant: "secondary",
       onClick: () => {
-        null == f || f(), m.onClose()
+        null == f || f(), h.onClose()
       }
     }, {
       text: t,
@@ -85,7 +85,7 @@ function f(e) {
       onClick: async () => {
         S(true), y(true);
         try {
-          await (null == d ? true : d(I)), m.onClose()
+          await (null == d ? true : d(I)), h.onClose()
         } catch (e) {
           throw y(false), S(e => null != e ? e : E), e
         }
@@ -99,5 +99,5 @@ function f(e) {
       message: v,
       type: "critical"
     } : true
-  }, m))
+  }, h))
 }

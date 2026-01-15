@@ -119,7 +119,7 @@ module.exports = function(e) {
         end: /"/
       }]
     },
-    m = {
+    h = {
       className: "function",
       beginKeywords: "def defp defmacro defmacrop",
       end: /\B\b/,
@@ -128,12 +128,12 @@ module.exports = function(e) {
         endsParent: true
       })]
     },
-    h = e.inherit(m, {
+    m = e.inherit(h, {
       className: "class",
       beginKeywords: "defimpl defmodule defprotocol defrecord",
       end: /\bdo\b|$|;/
     }),
-    g = [_, p, f, d, e.HASH_COMMENT_MODE, h, m, {
+    g = [_, p, f, d, e.HASH_COMMENT_MODE, m, h, {
       begin: "::"
     }, {
       className: "symbol",

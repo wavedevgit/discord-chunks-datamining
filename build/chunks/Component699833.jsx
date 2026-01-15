@@ -19,18 +19,18 @@ function f(e) {
   var t, i, a, f, p;
   if (null == e.message.embeds || null == e.message.embeds[0].fields) return null;
   let _ = e.message.embeds[0],
-    m = null != (a = null == (t = _.fields) ? true : t.find(e => e.rawName === l.Cg.CLASSIFICATION_ID)) ? a : true,
-    h = null != (f = null == m ? true : m.rawValue) ? f : true,
+    h = null != (a = null == (t = _.fields) ? true : t.find(e => e.rawName === l.Cg.CLASSIFICATION_ID)) ? a : true,
+    m = null != (f = null == h ? true : h.rawValue) ? f : true,
     g = null != (p = null == (i = _.fields) ? true : i.find(e => e.rawName === l.Cg.INCIDENT_TIMESTAMP)) ? p : true,
     E = null == g || null == g.rawValue ? true : parseFloat(g.rawValue);
-  if (null == h || null == E) return null;
+  if (null == m || null == E) return null;
   let b = () => {
     (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("18831").then(n.bind(n, 41164));
       return t => (0, r.jsx)(e, {
-        classificationId: h,
+        classificationId: m,
         source: l.s.SystemDM,
         transitionState: t.transitionState,
         onClose: t.onClose

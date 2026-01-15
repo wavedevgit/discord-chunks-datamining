@@ -84,13 +84,13 @@ function A(e) {
     onClose: N,
     entry: P
   } = e, {
-    resetInteraction: R,
-    setInteractionToast: w
+    resetInteraction: w,
+    setInteractionToast: R
   } = (0, g.Xo)(), {
     primaryColor: D
   } = (0, b.z)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.JM)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
-    e.key === O.vn.ESCAPE && (e.stopPropagation(), R())
-  }, [R]);
+    e.key === O.vn.ESCAPE && (e.stopPropagation(), w())
+  }, [w]);
   i.useEffect(() => {
     null == p || p(null == U ? true : U.current)
   }, [U, p]);
@@ -105,13 +105,13 @@ function A(e) {
     });
     let n = T({
       input: e,
-      username: m.ZP.getName(t),
+      username: h.ZP.getName(t),
       sourceType: s,
       sourceDetails: f
     });
-    w(null);
+    R(null);
     try {
-      await (0, h.Z)({
+      await (0, m.Z)({
         userId: t.id,
         content: n,
         location: "UserProfileReplyPopout",
@@ -120,7 +120,7 @@ function A(e) {
         entry: P
       })
     } catch (e) {}
-    w(y.P.REPLY)
+    R(y.P.REPLY)
   }, F = {
     [S.status]: s === y.n_.STATUS,
     [S.avatar]: s === y.n_.AVATAR,
@@ -162,7 +162,7 @@ function A(e) {
             shouldRefocus: false
           };
           try {
-            return await Z(n), R(), null == N || N(), {
+            return await Z(n), w(), null == N || N(), {
               shouldClear: true,
               shouldRefocus: false
             }

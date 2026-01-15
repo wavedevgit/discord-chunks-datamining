@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk675654 = require("./675654.js"),
   Chunk81329 = require("./81329.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -66,8 +66,8 @@ let b = [],
   A = 12,
   N = 48,
   P = .01,
-  R = new Set(["jack_o_lantern", "nose"]),
-  w = {
+  w = new Set(["jack_o_lantern", "nose"]),
+  R = {
     jack_o_lantern: {
       sprites: (0, Chunk661637.Z)(["chocolate_bar", "lollipop", "candy"])
     },
@@ -78,7 +78,7 @@ let b = [],
 
 function D(e) {
   if (null == e) return null;
-  for (let t of R)
+  for (let t of w)
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
   return null
 }
@@ -125,7 +125,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
   } = i.useContext(s.h), u = (0, a.uR)(c, o);
   return i.useImperativeHandle(t, () => ({
     fireConfetti: (e, t) => {
-      u.createMultipleConfetti(E(h({}, p.We), {
+      u.createMultipleConfetti(E(m({}, p.We), {
         position: {
           type: "static",
           value: {
@@ -167,18 +167,18 @@ let M = Chunk473749.forwardRef(function(e, t) {
 function k(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, s] = i.useState(null), l = j(a), p = i.useRef(null), [m, h] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.bp)(), b = i.useCallback(e => {
-    if (!m) {
+  } = e, n = i.useRef({}), [a, s] = i.useState(null), l = j(a), p = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.bp)(), b = i.useCallback(e => {
+    if (!h) {
       let t = D(e);
-      null != t && (g.current = t, h(true), s(null))
+      null != t && (g.current = t, m(true), s(null))
     }
-  }, [m]), y = i.useMemo(() => ({
+  }, [h]), y = i.useMemo(() => ({
     triggerAnimation: b,
     untriggerAnimation: () => {}
   }), [b]), O = i.useCallback(e => {
     s(e)
   }, []), v = i.useCallback(e => {
-    "exit" === e && h(false)
+    "exit" === e && m(false)
   }, []), S = i.useCallback(e => {
     p.current = e
   }, []);
@@ -193,15 +193,15 @@ function k(e) {
     }
   }, [a]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
     value: y,
-    children: [t, Object.keys(w).map(e => {
-      let t = w[e];
+    children: [t, Object.keys(R).map(e => {
+      let t = R[e];
       return (0, r.jsx)(M, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },
         sprites: t.sprites
       }, e)
-    }), m ? (0, r.jsx)(c.ZP, {
+    }), h ? (0, r.jsx)(c.ZP, {
       children: (0, r.jsx)("div", {
         className: _.animationWrapper,
         children: (0, r.jsx)(o.kci, {

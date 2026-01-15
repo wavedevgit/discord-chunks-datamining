@@ -29,21 +29,21 @@ let c = {
 };
 
 function u() {
-  let [e, t] = (0, r.useState)(""), [n, l] = (0, r.useState)("server-order"), u = (0, i.e7)([s.ZP], () => s.ZP.getFlattenedGuildIds()), d = (0, i.e7)([o.Z], () => o.Z.getGuilds()), f = u.map(e => d[e]), p = a.CW.useSetting(), [_, m] = (0, r.useState)(p), h = async e => {
-    m(e);
+  let [e, t] = (0, r.useState)(""), [n, l] = (0, r.useState)("server-order"), u = (0, i.e7)([s.ZP], () => s.ZP.getFlattenedGuildIds()), d = (0, i.e7)([o.Z], () => o.Z.getGuilds()), f = u.map(e => d[e]), p = a.CW.useSetting(), [_, h] = (0, r.useState)(p), m = async e => {
+    h(e);
     try {
       await a.CW.updateSetting(e)
     } catch (e) {
-      m(p)
+      h(p)
     }
   }, g = e => {
     let {
       checked: t,
       guildId: n
     } = e, r = new Set(_);
-    t ? r.delete(n) : r.add(n), h([...r])
+    t ? r.delete(n) : r.add(n), m([...r])
   }, E = e => _.includes(e), b = 0 !== _.length, y = () => {
-    b ? h([]) : h(u)
+    b ? m([]) : m(u)
   }, [O, v] = (0, r.useState)(() => c[n](f, p)), S = O.map(e => d[e.id]).filter(Boolean);
   return {
     guilds: "" === e ? S : S.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),

@@ -28,8 +28,8 @@ function E(e) {
     guildId: y,
     context: O,
     onItemClick: v
-  } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, a.e7)([m.Z], () => null != I ? m.Z.can(h.Plq.MANAGE_GUILD, I) : null), C = true, A = true, N = (0, l.LD)(y, A), P = (0, l.PL)(C, A), R = (0, a.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
-    isUserApp: w,
+  } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, a.e7)([h.Z], () => null != I ? h.Z.can(m.Plq.MANAGE_GUILD, I) : null), C = true, A = true, N = (0, l.LD)(y, A), P = (0, l.PL)(C, A), w = (0, a.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
+    isUserApp: R,
     isGuildApp: D
   } = i.useMemo(() => {
     var e, t, n, r;
@@ -54,24 +54,24 @@ function E(e) {
     n(145260)
   }, []);
   let x = i.useCallback(() => {
-      (null == I ? true : I.id) != null && (c.Z.open(I.id, h.pNK.INTEGRATIONS), s.Z.setSection(h.b4C.APPLICATION, S), null == v || v())
+      (null == I ? true : I.id) != null && (c.Z.open(I.id, m.pNK.INTEGRATIONS), s.Z.setSection(m.b4C.APPLICATION, S), null == v || v())
     }, [S, null == I ? true : I.id, v]),
     L = i.useCallback(() => {
       (0, f.openUserSettings)(u.n.AUTHORIZED_APPS_PANEL, {
-        section: h.oAB.AUTHORIZED_APPS
+        section: m.oAB.AUTHORIZED_APPS
       });
       let e = "";
       null != b ? e = b.name : null != E && (e = E.username), "" !== e && d.JJ.setState({
         searchQuery: e
       }), null == v || v()
     }, [b, v, E]);
-  if (O === h.IlC.POPOUT) return null;
+  if (O === m.IlC.POPOUT) return null;
   let j = [];
   return D && T && j.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
     action: x
-  }, "manage-server-integration")), w && R && j.push((0, r.jsx)(o.sNh, {
+  }, "manage-server-integration")), R && w && j.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruvz),
     action: L

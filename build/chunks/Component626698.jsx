@@ -31,8 +31,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk221943 = require("./221943.js"),
   Chunk653506 = require("./653506.js"),
   Chunk900268 = require("./900268.js");
-let R = 2.8,
-  w = 2,
+let w = 2.8,
+  R = 2,
   D = 1e3,
   x = 500,
   L = 1e3 + Chunk935212.t;
@@ -40,8 +40,8 @@ let R = 2.8,
 function j(e) {
   let {
     onNextStep: t
-  } = e, n = (0, c.e7)([m.Z], () => m.Z.getFetchState() === m.p.ERROR || null == m.Z.getCheckpointData().messages), [a, j] = i.useState(true), M = i.useRef(null), k = i.useContext(_.Q), U = (0, u.dQu)(k.primaryColor).hex(), G = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), Z = i.useCallback(e => {
-    e.currentTarget.currentTime >= R && j(false)
+  } = e, n = (0, c.e7)([h.Z], () => h.Z.getFetchState() === h.p.ERROR || null == h.Z.getCheckpointData().messages), [a, j] = i.useState(true), M = i.useRef(null), k = i.useContext(_.Q), U = (0, u.dQu)(k.primaryColor).hex(), G = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), Z = i.useCallback(e => {
+    e.currentTarget.currentTime >= w && j(false)
   }, []), F = (0, u.q_F)({
     from: {
       opacity: 0
@@ -61,7 +61,7 @@ function j(e) {
     pause: a
   });
   i.useEffect(() => {
-    null != M.current && (M.current.playbackRate = w)
+    null != M.current && (M.current.playbackRate = R)
   }, []), i.useEffect(() => {
     if (G) {
       null != M.current && (M.current.currentTime = .2);
@@ -180,7 +180,7 @@ function j(e) {
         children: [(0, r.jsx)(E.Z, {
           className: A.knickKnacks,
           slide: S.yD.WELCOME
-        }), (0, r.jsxs)(h.Z, {
+        }), (0, r.jsxs)(m.Z, {
           contentClassName: A.startButtonContent,
           onClick: t,
           "aria-label": C.intl.string(C.t.I0v0Qv),

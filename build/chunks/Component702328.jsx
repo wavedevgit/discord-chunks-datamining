@@ -50,7 +50,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk197874 = require("./197874.js"),
   Chunk107283 = require("./107283.js");
 let z = () => {
-  (0, h.z)(m.X);
+  (0, m.z)(h.X);
   let e = i.useRef(null),
     t = i.useRef(null),
     n = i.useRef(null),
@@ -72,12 +72,12 @@ let z = () => {
     ep = (0, O.Vi)(),
     e_ = null != ep && ep,
     {
-      analyticsLocations: em
+      analyticsLocations: eh
     } = (0, _.ZP)(p.Z.PREMIUM_MARKETING),
-    eh = (0, S.Z)({
+    em = (0, S.Z)({
       location: "PremiumMarketing"
     }),
-    eg = !$ && !er && (eh || !et);
+    eg = !$ && !er && (em || !et);
   i.useEffect(() => {
     el(true)
   }, []);
@@ -93,24 +93,24 @@ let z = () => {
       plans: eI,
       compare: eT
     } = eb,
-    eC = eh ? Y : W,
+    eC = em ? Y : W,
     {
       variant: eA
     } = (0, v.ZP)("PremiumBrandRefreshMarketingHeroHeading"),
     eN = (0, T.N)(),
     eP = (0, I.N)(),
-    eR = E.Z.getAlmostExpiringTrialOffers([B.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== B.a7,
-    ew = E.Z.getAlmostExpiringDiscountOffers([B.Si.TIER_2]).length > 0 && null != eP && null != eP.expires_at,
-    eD = eR ? eN.expires_at : ew ? eP.expires_at : null,
-    ex = eA === v.tE.HERO_COUNTDOWN && (eR || ew) && null != eD,
+    ew = E.Z.getAlmostExpiringTrialOffers([B.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== B.a7,
+    eR = E.Z.getAlmostExpiringDiscountOffers([B.Si.TIER_2]).length > 0 && null != eP && null != eP.expires_at,
+    eD = ew ? eN.expires_at : eR ? eP.expires_at : null,
+    ex = eA === v.tE.HERO_COUNTDOWN && (ew || eR) && null != eD,
     eL = (0, r.jsxs)("div", {
       className: o()(eC.container, eC.responsiveContainer, {
-        [eC.containerBackground]: eh || J,
-        [Y.fadeInFromTop]: !Q && eh
+        [eC.containerBackground]: em || J,
+        [Y.fadeInFromTop]: !Q && em
       }),
       "data-cy": "tier-0-marketing-page",
-      children: [eh && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(R.Z, {
+      children: [em && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(w.Z, {
           className: o()(Y.topOfPageGradient, {
             [Y.topOfPageGradientWithCountdown]: ex
           })
@@ -118,7 +118,7 @@ let z = () => {
           navBarSections: eb,
           activeSectionId: ey
         })]
-      }), !eh && (0, r.jsxs)(r.Fragment, {
+      }), !em && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: W.heroHeaderSideGradient
         }), (0, r.jsx)("img", {
@@ -136,7 +136,7 @@ let z = () => {
             onChange: e => ee(e),
             threshold: 0,
             active: true,
-            children: eh ? (0, r.jsx)(L.Z, {
+            children: em ? (0, r.jsx)(L.Z, {
               ref: a,
               subscriptionTier: ef,
               isEligibleForBogoPromotion: ep,
@@ -160,7 +160,7 @@ let z = () => {
           children: (0, r.jsx)(P.g, {
             shouldLoadVideo: es,
             isReducedMotion: Q,
-            enablePremiumBrandRefreshDesign: eh
+            enablePremiumBrandRefreshDesign: em
           })
         }), (0, r.jsx)("div", {
           className: eC.bestOfNitroSectionContainer,
@@ -168,7 +168,7 @@ let z = () => {
           children: (0, r.jsx)(P.G_, {
             shouldLoadVideo: es,
             isReducedMotion: Q,
-            enablePremiumBrandRefreshDesign: eh
+            enablePremiumBrandRefreshDesign: em
           })
         }), (0, r.jsx)("div", {
           className: eC.premiumTierCardsContainer,
@@ -178,7 +178,7 @@ let z = () => {
             onChange: e => ei(e),
             threshold: .1,
             active: true,
-            children: eh ? (0, r.jsx)(A.rz, {
+            children: em ? (0, r.jsx)(A.rz, {
               innerRef: n
             }) : (0, r.jsx)(N.Ub, {
               innerRef: n,
@@ -188,9 +188,9 @@ let z = () => {
         }), (0, r.jsx)("div", {
           className: eC.planComparisonTableContainer,
           ref: eT.ref,
-          children: eh ? (0, r.jsx)(M.Z, {}) : (0, r.jsx)(D.Z, {})
+          children: em ? (0, r.jsx)(M.Z, {}) : (0, r.jsx)(D.Z, {})
         })]
-      }), !eh && (0, r.jsx)(w.Z, {
+      }), !em && (0, r.jsx)(R.Z, {
         isVisible: eg && es,
         subscriptionTier: ef,
         isApplicationHome: true,
@@ -199,7 +199,7 @@ let z = () => {
         innerRef: z,
         onChange: e => {
           e && !ea && (b.default.track(V.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-            location_stack: em
+            location_stack: eh
           }), eo(true))
         },
         children: (0, r.jsx)("div", {
@@ -211,7 +211,7 @@ let z = () => {
         onChange: e => {
           en(e)
         },
-        children: eh ? (0, r.jsx)(x.Z, {
+        children: em ? (0, r.jsx)(x.Z, {
           ref: q
         }) : (0, r.jsx)(k.Z, {
           ref: q,
@@ -220,18 +220,18 @@ let z = () => {
           isReducedMotion: Q,
           subscriptionTier: ef
         })
-      }), eh && (0, r.jsxs)(r.Fragment, {
+      }), em && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(j.Z, {
           isVisible: eg && es,
           subscriptionTier: ef,
           isEligibleForBogoPromotion: ep
-        }), (0, r.jsx)(R.Z, {
+        }), (0, r.jsx)(w.Z, {
           className: Y.bottomOfPageGradient
         })]
       })]
     });
   return (0, r.jsx)(u.f6W, {
-    theme: eh ? H.BR.DARKER : X,
+    theme: em ? H.BR.DARKER : X,
     children: t => (0, r.jsx)(u.yWw, {
       className: o()(eC.scroller, t),
       ref: e,

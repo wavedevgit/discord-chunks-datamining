@@ -12,8 +12,8 @@ var Chunk939793 = require("./939793.js"),
   f = "[object RegExp]",
   p = "[object Set]",
   _ = "[object String]",
-  m = "[object Symbol]",
-  h = "[object ArrayBuffer]",
+  h = "[object Symbol]",
+  m = "[object ArrayBuffer]",
   g = "[object DataView]",
   E = "[object Float32Array]",
   b = "[object Float64Array]",
@@ -27,7 +27,7 @@ var Chunk939793 = require("./939793.js"),
 module.exports = function(e, t, n) {
   var A = e.constructor;
   switch (t) {
-    case h:
+    case m:
       return r(e);
     case l:
     case c:
@@ -53,7 +53,7 @@ module.exports = function(e, t, n) {
       return a(e);
     case p:
       return new A;
-    case m:
+    case h:
       return o(e)
   }
 }

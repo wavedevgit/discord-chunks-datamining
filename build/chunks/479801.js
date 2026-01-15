@@ -2,7 +2,7 @@
 /** chunk id: 479801, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => h
+  e: () => m
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk311570 = require("./311570.js"),
@@ -51,40 +51,40 @@ function p(e, t) {
   }), e
 }
 let _ = 6e5,
-  m = 6e5;
+  h = 6e5;
 
-function h(e, t, n) {
+function m(e, t, n) {
   (0, c.a)("useMaybeFetchCollectiblesCategoriesShared");
   let u = (0, a.e7)([o.Z], () => o.Z.hasLoadedExperiments),
     f = null == e ? true : e.includeBundles,
-    h = i.v.VARIANTS_GROUP,
+    m = i.v.VARIANTS_GROUP,
     [g, E, b, y, O, v, S] = (0, a.Wu)([l.Z], () => {
       var e, t;
       return [l.Z.isFetchingCategories, l.Z.lastFetchOptions, l.Z.error, null != (e = l.Z.lastErrorTimestamp) ? e : 0, null != (t = l.Z.lastSuccessfulFetch) ? t : 0, l.Z.categories, l.Z.skipNumCategories]
     });
   return (0, r.useEffect)(() => {
     if (!u || g) return;
-    let r = Date.now() - y < m;
+    let r = Date.now() - y < h;
     if (b && r) return;
     let i = p(d({}, e), {
-        variantsReturnStyle: h,
+        variantsReturnStyle: m,
         includeBundles: f,
         skipNumCategories: S
       }),
       a = !(0, s.oc)(E, i),
       o = Date.now() - O < _;
     (a || !o) && (0, s.F$)(i, t, n)
-  }, [u, g, E, O, e, b, f, y, t, n, S, h]), {
+  }, [u, g, E, O, e, b, f, y, t, n, S, m]), {
     isFetching: g,
     categories: v,
     fetchCategoriesError: b,
     refreshCategories: (0, r.useCallback)(() => {
       let t = p(d({}, e), {
-        variantsReturnStyle: h,
+        variantsReturnStyle: m,
         includeBundles: f,
         skipNumCategories: S
       });
       (0, s.F$)(t, true, n)
-    }, [e, f, n, S, h])
+    }, [e, f, n, S, m])
   }
 }

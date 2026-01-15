@@ -18,7 +18,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk561308 = require("./561308.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function b(e) {
 }
 
 function y(e) {
-  return (0, _.n2)(e) ? null : (0, _.kr)(e) && e.author_type === o.i.USER ? u.Z.getActivities(e.author_id).find(t => t.type === m.IIU.PLAYING && (0, f.m9)(e) ? (0, p.cN)(e, t) : !!(t.type === m.IIU.LISTENING && (0, f.dU)(e)) && (0, p.pB)(e, t)) : true
+  return (0, _.n2)(e) ? null : (0, _.kr)(e) && e.author_type === o.i.USER ? u.Z.getActivities(e.author_id).find(t => t.type === h.IIU.PLAYING && (0, f.m9)(e) ? (0, p.cN)(e, t) : !!(t.type === h.IIU.LISTENING && (0, f.dU)(e)) && (0, p.pB)(e, t)) : true
 }
 
 function O(e) {
@@ -91,10 +91,10 @@ class T extends(r = Chunk442837.ZP.Store) {
     return (0, _.n2)(e) ? null : E.get(b(e))
   }
   constructor(...e) {
-    super(...e), h(this, "canRenderContent", e => !(0, _.n2)(e) && (!g.has(e.content_type) || null != this.getMatchingActivity(e)))
+    super(...e), m(this, "canRenderContent", e => !(0, _.n2)(e) && (!g.has(e.content_type) || null != this.getMatchingActivity(e)))
   }
 }
-h(T, "displayName", "ContentInventoryActivityStore");
+m(T, "displayName", "ContentInventoryActivityStore");
 let C = new T(Chunk570140.Z, {
   CONNECTION_OPEN: S,
   CONTENT_INVENTORY_SET_FEED: v

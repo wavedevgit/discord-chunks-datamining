@@ -39,7 +39,7 @@ function y(e) {
   o()(null != O, "Expected selectedSkuId"), o()(null != v, "Expected application");
   let T = y[O];
   return (o()(null != T, "Expected sku"), i.useEffect(() => {
-    S || ((0, h.U)(), n(), (0, m.I)({
+    S || ((0, m.U)(), n(), (0, h.I)({
       sku: T,
       application: v,
       analyticsLocations: a

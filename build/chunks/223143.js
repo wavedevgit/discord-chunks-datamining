@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   QJ: () => g,
-  QN: () => h,
+  QN: () => m,
   ZP: () => E,
-  c7: () => m,
+  c7: () => h,
   mw: () => b
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -56,16 +56,16 @@ function _(e, t) {
   }), e
 }
 
-function m() {
+function h() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   (0, c.a)("useFetchPurchases");
   let t = (0, a.e7)([o.Z], () => o.Z.hasLoadedExperiments),
     n = i.v.VARIANTS_GROUP,
-    [u, d, f, p, _, m] = (0, a.Wu)([l.Z], () => [l.Z.isFetching, l.Z.isClaiming, l.Z.fetchError, l.Z.claimError, l.Z.purchases, l.Z.hasPreviouslyFetched]),
-    h = (0, r.useRef)(l.Z.hasPreviouslyFetched);
+    [u, d, f, p, _, h] = (0, a.Wu)([l.Z], () => [l.Z.isFetching, l.Z.isClaiming, l.Z.fetchError, l.Z.claimError, l.Z.purchases, l.Z.hasPreviouslyFetched]),
+    m = (0, r.useRef)(l.Z.hasPreviouslyFetched);
   (0, r.useEffect)(() => {
-    h.current = m
-  }, [m]);
+    m.current = h
+  }, [h]);
   let g = (0, r.useRef)(l.Z.fetchError);
   (0, r.useEffect)(() => {
     g.current = f
@@ -74,7 +74,7 @@ function m() {
   return (0, r.useEffect)(() => {
     E.current = u
   }, [u]), (0, r.useEffect)(() => {
-    !t || E.current || true === e && h.current && null == g.current || (0, s.qg)({
+    !t || E.current || true === e && m.current && null == g.current || (0, s.qg)({
       variantsReturnStyle: n
     })
   }, [e, n, t]), {
@@ -83,16 +83,16 @@ function m() {
     claimError: p,
     isFetching: u,
     purchases: _,
-    hasPreviouslyFetched: m
+    hasPreviouslyFetched: h
   }
 }
 require("./25251.js");
-let h = () => m(true),
+let m = () => h(true),
   g = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       {
         purchases: n
-      } = m(t);
+      } = h(t);
     return null != e ? n.get(e) : true
   };
 
@@ -116,7 +116,7 @@ function E(e, t) {
       isFetching: d,
       purchases: f,
       hasPreviouslyFetched: p
-    } = m(null == e ? true : e.stalePurchasesOK);
+    } = h(null == e ? true : e.stalePurchasesOK);
   return {
     isFetching: r || d,
     isFetchingCategories: r,

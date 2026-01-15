@@ -2,7 +2,7 @@
 /** chunk id: 694569, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517319 = require("./517319.js");
 
-function m() {
+function h() {
   let e = l.xq.useSetting(),
     t = i.useMemo(() => (0, s.bL)(e), [e]),
     n = (0, o.LN)();

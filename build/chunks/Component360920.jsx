@@ -2,7 +2,7 @@
 /** chunk id: 360920, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => m
+  P: () => h
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -66,7 +66,7 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends(r = Chunk473749.Component) {
+class h extends(r = Chunk473749.Component) {
   renderNonInteractive() {
     let e = this.props,
       {
@@ -128,7 +128,7 @@ class m extends(r = Chunk473749.Component) {
     })
   }
 }
-c(m, "contextType", Chunk873294.g), c(m, "defaultProps", {
+c(h, "contextType", Chunk873294.g), c(h, "defaultProps", {
   tag: "div",
   role: "button",
   tabIndex: 0

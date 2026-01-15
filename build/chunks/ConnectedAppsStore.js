@@ -2,7 +2,7 @@
 /** chunk id: 757266, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -68,7 +68,7 @@ function _(e) {
   } = e;
   u = c({}, t)
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   isConnected(e) {
     return null != u[e]
   }
@@ -82,8 +82,8 @@ class m extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-l(m, "displayName", "ConnectedAppsStore");
-let h = new m(Chunk570140.Z, {
+l(h, "displayName", "ConnectedAppsStore");
+let m = new h(Chunk570140.Z, {
   OVERLAY_INITIALIZE: _,
   RPC_APP_CONNECTED: d,
   RPC_APP_AUTHENTICATED: f,

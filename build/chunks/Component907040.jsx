@@ -146,8 +146,8 @@ let ec = (e, t) => {
         })
       }
     }, [a, l, n, f, t, d]), {
-      gridDispatch: m,
-      getItemProps: h,
+      gridDispatch: h,
+      getItemProps: m,
       getRowProps: g,
       gridContainerProps: E,
       handleGridContainerKeyDown: b,
@@ -167,13 +167,13 @@ let ec = (e, t) => {
         rowIndex: n,
         source: r
       } = e;
-      r !== C.u.GRID_NAVIGATOR_EVENT && m({
+      r !== C.u.GRID_NAVIGATOR_EVENT && h({
         type: c.s.SET_FOCUSED_POSITION,
         x: t,
         y: n
       })
-    }), [m]), {
-      getItemProps: h,
+    }), [h]), {
+      getItemProps: m,
       getRowProps: g,
       gridContainerProps: E,
       handleGridContainerKeyDown: b,
@@ -201,8 +201,8 @@ let ec = (e, t) => {
   },
   ep = 200,
   e_ = l()(Chunk543241.to, ep),
-  em = l()(Chunk543241.jA, ep),
-  eh = {
+  eh = l()(Chunk543241.jA, ep),
+  em = {
     section: true,
     openPopoutType: true,
     popoutLocation: true
@@ -224,7 +224,7 @@ let ec = (e, t) => {
         persistSearch: eg,
         className: eE,
         headerClassName: eb,
-        analyticsOverride: ey = eh,
+        analyticsOverride: ey = em,
         searchProps: eO = {},
         wrapper: ev,
         shouldHidePickerActions: eS = false,
@@ -236,8 +236,8 @@ let ec = (e, t) => {
         showOnlyUnicode: eP = false
       } = e,
       {
-        onFocus: eR,
-        onKeyDown: ew,
+        onFocus: ew,
+        onKeyDown: eR,
         autoFocus: eD = true,
         accessory: ex
       } = eO,
@@ -258,7 +258,7 @@ let ec = (e, t) => {
     }));
     let {
       location: eK
-    } = (0, h.O)(), {
+    } = (0, m.O)(), {
       page: ez,
       section: eq,
       object: eQ,
@@ -272,8 +272,8 @@ let ec = (e, t) => {
       diversitySurrogate: e1
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
-    })), e3 = (0, k.DV)(eU, c, l, eP), e2 = null == e3 ? 0 : e3.locked.length + e3.unlocked.length, e4 = w.d4.useSetting(), e5 = i.useMemo(() => new Set(e4), [e4]), e8 = i.useCallback(e => {
-      w.d4.updateSetting(Array.from(e))
+    })), e3 = (0, k.DV)(eU, c, l, eP), e2 = null == e3 ? 0 : e3.locked.length + e3.unlocked.length, e4 = R.d4.useSetting(), e5 = i.useMemo(() => new Set(e4), [e4]), e8 = i.useCallback(e => {
+      R.d4.updateSetting(Array.from(e))
     }, []), e6 = (0, A.ep)({
       gridWrapperRef: eG,
       containerWidth: ec,
@@ -386,15 +386,15 @@ let ec = (e, t) => {
       if ("" === ek.current && "" !== eU && (0, k.PC)(e$, l), 0 === e2 && "" !== eU) e_(e$, eU);
       else if ("" !== eU && ek.current !== eU) {
         var e;
-        em(e2, null != (e = null == e3 ? true : e3.locked.length) ? e : 0, e$, eU, l)
+        eh(e2, null != (e = null == e3 ? true : e3.locked.length) ? e : 0, e$, eU, l)
       }
       ek.current = eU
     }, [eU, e$, e2, e3, l]);
     let td = null != ev ? ev : M ? "div" : p.VqE,
       tf = null != e6;
     if ((null == ej ? true : ej.type) === H.Bg.PREMIUM) {
-      let e = R.p.NONE;
-      2 === ee ? e = R.p.PARENT_CONTAINER : 1 === ee && (e = R.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(z.Z, {
+      let e = w.p.NONE;
+      2 === ee ? e = w.p.PARENT_CONTAINER : 1 === ee && (e = w.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(z.Z, {
         onLearnMore: ta,
         emojiDescriptor: ej.emojiDescriptor,
         pickerIntention: l,
@@ -419,15 +419,15 @@ let ec = (e, t) => {
         var e;
         eH(!eV), null == (e = eF.current) || e.focus()
       },
-      tm = (0, r.jsx)(V.Z, {
+      th = (0, r.jsx)(V.Z, {
         channel: c,
         pickerIntention: l,
         emojiListRef: eZ,
         onKeyDown: e => {
-          null == tc || tc(e), null == ew || ew(e)
+          null == tc || tc(e), null == eR || eR(e)
         },
         searchBarRef: eF,
-        onFocus: eR,
+        onFocus: ew,
         autoFocus: eD,
         accessory: ex,
         headerClassName: eb,
@@ -436,9 +436,9 @@ let ec = (e, t) => {
         onBurstReactionToggle: t_,
         renderHeader: eT
       }),
-      th = [];
-    l === J.Hz.REACTION && th.push(d.z.SUPER_REACTIONS_NITRO_MARKETING), O.ZP.hasFavoriteEmojis(eB) || th.push(d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP);
-    let tg = (0, r.jsx)(m.Z, er(et({}, e$), {
+      tm = [];
+    l === J.Hz.REACTION && tm.push(d.z.SUPER_REACTIONS_NITRO_MARKETING), O.ZP.hasFavoriteEmojis(eB) || tm.push(d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP);
+    let tg = (0, r.jsx)(h.Z, er(et({}, e$), {
       children: (0, r.jsxs)(td, {
         id: q.cZ,
         "aria-labelledby": M ? q.td : true,
@@ -447,17 +447,17 @@ let ec = (e, t) => {
           [$.emojiPickerHasTabWrapper]: M,
           [$.isBurstReactionPicker]: eV && eW
         }),
-        children: [M ? null : tm, (0, r.jsxs)("div", {
+        children: [M ? null : th, (0, r.jsxs)("div", {
           className: o()($.emojiPicker, eE),
           onScroll: es,
-          children: [M ? tm : null, (0, r.jsxs)("div", {
+          children: [M ? th : null, (0, r.jsxs)("div", {
             className: $.bodyWrapper,
             ref: eG,
             children: [(0, r.jsx)(K.Z, {
               channel: c,
               closePopout: _
             }), (0, r.jsx)(y.ZP, {
-              contentTypes: th,
+              contentTypes: tm,
               children: e => {
                 let {
                   visibleContent: t,

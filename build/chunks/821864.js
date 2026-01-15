@@ -96,7 +96,7 @@ async function _(e) {
     defaultEverywhereValue: o,
     guildId: s,
     permissions: l
-  } = e, c = n === t ? m(s, l, r, o) : l, u = await a.dh(t, s, n, c);
+  } = e, c = n === t ? h(s, l, r, o) : l, u = await a.dh(t, s, n, c);
   u.ok && i.Z.dispatch({
     type: "INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE",
     applicationId: t,
@@ -106,7 +106,7 @@ async function _(e) {
   })
 }
 
-function m(e, t, n, r) {
+function h(e, t, n, r) {
   if (!n || !r) return t;
   let i = {
     [e]: n,

@@ -34,12 +34,12 @@ let E = () => {
   }, [n]), (0, r.jsx)("div", {
     className: g.container,
     children: (0, r.jsxs)(l.C3N, {
-      label: h.intl.string(m.default.USIXU7),
+      label: m.intl.string(h.default.USIXU7),
       children: [(0, r.jsx)(l.rsf, {
         checked: e,
-        description: h.intl.string(m.default["5MdB3j"]),
+        description: m.intl.string(h.default["5MdB3j"]),
         onChange: d.Ex.updateSetting,
-        label: h.intl.string(m.default.zkEceS)
+        label: m.intl.string(h.default.zkEceS)
       }), e ? (0, r.jsx)(l.Zbd, {
         className: g.enableCard,
         type: l.Zbd.Types.CUSTOM,
@@ -50,7 +50,7 @@ let E = () => {
             children: (0, r.jsx)(l.Text, {
               variant: "text-sm/semibold",
               color: "text-default",
-              children: h.intl.string(m.default.xAVm7K)
+              children: m.intl.string(h.default.xAVm7K)
             })
           }), (0, r.jsx)(l.P3F, {
             children: (0, r.jsx)(a.rU, {
@@ -61,7 +61,7 @@ let E = () => {
                   scrollRestoration: false
                 }
               },
-              children: h.intl.string(m.default.cUIXFY)
+              children: m.intl.string(h.default.cUIXFY)
             })
           }), (0, r.jsx)(l.G2e, {
             icon: l.ZSh,
@@ -71,9 +71,9 @@ let E = () => {
         })
       }) : null, (0, r.jsx)(l.rsf, {
         checked: !!t[_.$Z.FAMILY_CENTER_DIGEST],
-        description: h.intl.string(m.default.y34S46),
+        description: m.intl.string(h.default.y34S46),
         onChange: E,
-        label: h.intl.string(m.default.irvJKR)
+        label: m.intl.string(h.default.irvJKR)
       })]
     })
   })

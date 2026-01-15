@@ -21,7 +21,7 @@ function s(e) {
     wrap: f = true,
     fullWidth: p = false,
     fullWidthContainer: _ = false
-  } = e, m = i.useMemo(() => ({
+  } = e, h = i.useMemo(() => ({
     size: t,
     fullWidth: p
   }), [t, p]);
@@ -35,7 +35,7 @@ function s(e) {
     className: u,
     fullWidth: !!_ || p,
     children: (0, r.jsx)(o.u.Provider, {
-      value: m,
+      value: h,
       children: d
     })
   })

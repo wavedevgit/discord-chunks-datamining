@@ -4,7 +4,7 @@
 require.d(exports, {
   Cf: () => v,
   Dq: () => y,
-  SR: () => h,
+  SR: () => m,
   ZP: () => O,
   vM: () => E
 }), require("./388685.js");
@@ -51,26 +51,26 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = (0, Chunk663042.U)(() => ({
+let m = (0, Chunk663042.U)(() => ({
   palette: {},
   fetching: {}
 }));
 
 function g(e) {
-  return null != h.getState().palette[e]
+  return null != m.getState().palette[e]
 }
 async function E(e) {
   g(e) || await b(e)
 }
 async function b(e) {
-  if (!h.getState().fetching[e]) {
-    (0, s.j)(() => h.setState(t => ({
-      fetching: m(p({}, t.fetching), {
+  if (!m.getState().fetching[e]) {
+    (0, s.j)(() => m.setState(t => ({
+      fetching: h(p({}, t.fetching), {
         [e]: true
       })
     })));
@@ -78,18 +78,18 @@ async function b(e) {
       let t = await (0, d.OF)(e),
         n = (0, u.WY)(t[0]);
       (0, s.j)(() => {
-        h.setState(r => ({
-          fetching: m(p({}, r.fetching), {
+        m.setState(r => ({
+          fetching: h(p({}, r.fetching), {
             [e]: false
           }),
-          palette: m(p({}, r.palette), {
+          palette: h(p({}, r.palette), {
             [e]: [...t.slice(0, 2), ...n]
           })
         }))
       })
     } catch (t) {
-      (0, s.j)(() => h.setState(t => ({
-        fetching: m(p({}, t.fetching), {
+      (0, s.j)(() => m.setState(t => ({
+        fetching: h(p({}, t.fetching), {
           [e]: false
         })
       })))
@@ -98,7 +98,7 @@ async function b(e) {
 }
 
 function y(e) {
-  return !h(t => null != e && t.fetching[e])
+  return !m(t => null != e && t.fetching[e])
 }
 
 function O(e, t) {
@@ -109,7 +109,7 @@ function O(e, t) {
 
 function v(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    i = h(t => null == e ? true : t.palette[e]),
+    i = m(t => null == e ? true : t.palette[e]),
     o = (0, l.e7)([c.Z], () => n && c.Z.desaturateUserColors ? c.Z.saturation : 1);
   r.useEffect(() => {
     null != e && null == i && b(e)

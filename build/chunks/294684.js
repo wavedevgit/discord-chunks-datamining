@@ -142,7 +142,7 @@ var Chunk98405 = require("./98405.js"),
   e_ = function(e) {
     return J(Y(e), ed, ep)
   },
-  em = Chunk280481(function(e, t) {
+  eh = Chunk280481(function(e, t) {
     M(this, {
       type: j,
       target: k(e).entries,
@@ -163,10 +163,10 @@ var Chunk98405 = require("./98405.js"),
     }
     return P([r.key, r.value], false)
   }, true),
-  eh = function(e) {
+  em = function(e) {
     this.entries = [], this.url = null, true !== e && (S(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : I(e)))
   };
-eh.prototype = {
+em.prototype = {
   type: L,
   bindURL: function(e) {
     this.url = e, this.update()
@@ -208,20 +208,20 @@ eh.prototype = {
 var eg = function() {
     g(this, eE);
     var e = arguments.length > 0 ? arguments[0] : true,
-      t = M(this, new eh(e));
+      t = M(this, new em(e));
     c || (this.size = t.entries.length)
   },
   eE = eg.prototype;
 if (Chunk477732(eE, {
     append: function(e, t) {
       var n = k(this);
-      R(arguments.length, 2), X(n.entries, {
+      w(arguments.length, 2), X(n.entries, {
         key: I(e),
         value: I(t)
       }), !c && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = k(this), n = R(arguments.length, 1), r = t.entries, i = I(e), a = n < 2 ? true : arguments[1], o = true === a ? a : I(a), s = 0; s < r.length;) {
+      for (var t = k(this), n = w(arguments.length, 1), r = t.entries, i = I(e), a = n < 2 ? true : arguments[1], o = true === a ? a : I(a), s = 0; s < r.length;) {
         var l = r[s];
         if (l.key === i && (true === o || l.value === o)) {
           if (ee(r, s, 1), true !== o) break
@@ -231,19 +231,19 @@ if (Chunk477732(eE, {
     },
     get: function(e) {
       var t = k(this).entries;
-      R(arguments.length, 1);
+      w(arguments.length, 1);
       for (var n = I(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
       var t = k(this).entries;
-      R(arguments.length, 1);
+      w(arguments.length, 1);
       for (var n = I(e), r = [], i = 0; i < t.length; i++) t[i].key === n && X(r, t[i].value);
       return r
     },
     has: function(e) {
-      for (var t = k(this).entries, n = R(arguments.length, 1), r = I(e), i = n < 2 ? true : arguments[1], a = true === i ? i : I(i), o = 0; o < t.length;) {
+      for (var t = k(this).entries, n = w(arguments.length, 1), r = I(e), i = n < 2 ? true : arguments[1], a = true === i ? i : I(i), o = 0; o < t.length;) {
         var s = t[o++];
         if (s.key === r && (true === a || s.value === a)) returntrue
       }
@@ -251,7 +251,7 @@ if (Chunk477732(eE, {
     },
     set: function(e, t) {
       var n, r = k(this);
-      R(arguments.length, 1);
+      w(arguments.length, 1);
       for (var i = r.entries, a = false, o = I(e), s = I(t), l = 0; l < i.length; l++)(n = i[l]).key === o && (a ? ee(i, l--, 1) : (a = true, n.value = s));
       a || X(i, {
         key: o,
@@ -268,13 +268,13 @@ if (Chunk477732(eE, {
       for (var t, n = k(this).entries, r = y(e, arguments.length > 1 ? arguments[1] : true), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)
     },
     keys: function() {
-      return new em(this, "keys")
+      return new eh(this, "keys")
     },
     values: function() {
-      return new em(this, "values")
+      return new eh(this, "values")
     },
     entries: function() {
-      return new em(this, "entries")
+      return new eh(this, "entries")
     }
   }, {
     enumerable: true

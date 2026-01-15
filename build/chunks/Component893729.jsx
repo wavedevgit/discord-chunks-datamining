@@ -64,7 +64,7 @@ function v(e) {
     guildId: t,
     role: n,
     theme: a,
-    content: E = h.intl.string(h.t["6OSasb"]),
+    content: E = m.intl.string(m.t["6OSasb"]),
     className: y
   } = e, v = (0, s.e7)([p.default], () => p.default.getCurrentUser()), S = _.ZP.useName(t, null, v), I = (0, c.Kz)(n), T = i.useMemo(() => (0, u.e5)(O(b({}, (0, d.ZP)({
     channelId: "0",
@@ -75,7 +75,7 @@ function v(e) {
     allowedMentions: true,
     author: v
   })), {
-    state: m.yb.SENT,
+    state: h.yb.SENT,
     id: "0"
   })), [v, E]), C = {
     nick: S,

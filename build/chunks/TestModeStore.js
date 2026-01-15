@@ -33,11 +33,11 @@ function _(e) {
   }
   return e
 }
-let m = {
+let h = {
     applicationId: null,
     originURL: null
   },
-  h = m,
+  m = h,
   g = new Set,
   E = false;
 
@@ -46,7 +46,7 @@ function b() {
 }
 
 function y() {
-  r = null, i = null, g = new Set, h.applicationId = null, h.originURL = null, b()
+  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, b()
 }
 
 function O(e) {
@@ -61,7 +61,7 @@ function v(e) {
     applicationId: t,
     originURL: n
   } = e;
-  r = t, i = n, g.delete(t), a = null, h.applicationId = t, h.originURL = n
+  r = t, i = n, g.delete(t), a = null, m.applicationId = t, m.originURL = n
 }
 
 function S(e) {
@@ -80,7 +80,7 @@ function I(e) {
 }
 class T extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    r = (h = _({}, null != e ? e : m)).applicationId, i = h.originURL, this.waitFor(f.Z, c.Z, d.Z), this.syncWith([d.Z, c.Z], () => true), f.Z.whenInitialized(() => {
+    r = (m = _({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(f.Z, c.Z, d.Z), this.syncWith([d.Z, c.Z], () => true), f.Z.whenInitialized(() => {
       E = true
     })
   }
@@ -94,7 +94,7 @@ class T extends(o = Chunk442837.ZP.PersistedStore) {
     return u.Sb.getSetting() && this.inTestModeForApplication(e)
   }
   getState() {
-    return h
+    return m
   }
   get isTestMode() {
     return null != r

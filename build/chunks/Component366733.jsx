@@ -29,7 +29,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function m(e) {
   }
   return e
 }
-let h = e => {
+let m = e => {
     let {
       user: t,
       isOwnUser: n,
@@ -50,7 +50,7 @@ let h = e => {
       isFaded: d
     } = e, {
       avatarSrc: _,
-      eventHandlers: h
+      eventHandlers: m
     } = (0, c.Z)({
       userId: null == t ? true : t.id,
       size: l.EFr.SIZE_24
@@ -65,12 +65,12 @@ let h = e => {
         className: o()(p.userInfoContainer, {
           [p.faded]: d
         }),
-        children: [(0, r.jsx)(l.qEK, m({
+        children: [(0, r.jsx)(l.qEK, h({
           className: p.avatar,
           src: _,
           "aria-label": g,
           size: l.EFr.SIZE_24
-        }, h)), (0, r.jsxs)(l.Text, {
+        }, m)), (0, r.jsxs)(l.Text, {
           className: p.username,
           variant: "text-sm/medium",
           color: "text-strong",
@@ -100,7 +100,7 @@ let h = e => {
       user: t,
       isOwnUser: n
     } = e;
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(m, {
       user: t,
       isOwnUser: n,
       label: f.intl.string(d.default.vc2xys)
@@ -111,7 +111,7 @@ let h = e => {
       user: t,
       onRemove: n
     } = e;
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(m, {
       user: t,
       label: f.intl.string(d.default.mnt50A),
       removeButton: {
@@ -125,7 +125,7 @@ let h = e => {
       user: t,
       isOwnUser: n
     } = e;
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(m, {
       user: t,
       isOwnUser: n,
       label: f.intl.string(d.default.mnt50A)
@@ -136,7 +136,7 @@ let h = e => {
       user: t,
       onRemove: n
     } = e;
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(m, {
       user: t,
       label: f.intl.string(d.default["1RH5t9"]),
       isFaded: true,

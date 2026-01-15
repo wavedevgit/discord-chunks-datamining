@@ -2,7 +2,7 @@
 /** chunk id: 359138, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,11 +18,11 @@ var Chunk442837 = require("./442837.js"),
 let p = 387,
   _ = 218;
 
-function m() {
+function h() {
   let e = c.Z.getCameraComponent(),
     t = (0, i.e7)([c.Z], () => c.Z.getVideoDeviceId()),
     n = u.Z.useField("previewEnabled"),
-    m = (0, i.e7)([c.Z], () => c.Z.isVideoAvailable());
+    h = (0, i.e7)([c.Z], () => c.Z.isVideoAvailable());
   return ((0, s.zq)(() => {
     u.Z.setState({
       previewEnabled: false
@@ -41,14 +41,14 @@ function m() {
   }) : (0, r.jsx)("div", {
     className: f.cameraWrapper,
     children: (0, r.jsx)(a.u, {
-      text: m ? null : d.intl.string(d.t["8jSzSe"]),
+      text: h ? null : d.intl.string(d.t["8jSzSe"]),
       children: (0, r.jsx)(o.Button, {
         variant: "primary",
         text: d.intl.string(d.t.JIf4v7),
         onClick: () => u.Z.setState({
           previewEnabled: true
         }),
-        disabled: !m
+        disabled: !h
       })
     })
   })

@@ -62,14 +62,14 @@ function y(e, t) {
 let O = 2700,
   v = "> -# *",
   S = {
-    [Chunk228168.n_.AVATAR]: () => m.intl.string(m.t["fEUP/i"]),
-    [Chunk228168.n_.STATUS]: () => m.intl.string(m.t.TKdBC8),
-    [Chunk228168.n_.ACTIVITY]: () => m.intl.string(m.t.bSe71F)
+    [Chunk228168.n_.AVATAR]: () => h.intl.string(h.t["fEUP/i"]),
+    [Chunk228168.n_.STATUS]: () => h.intl.string(h.t.TKdBC8),
+    [Chunk228168.n_.ACTIVITY]: () => h.intl.string(h.t.bSe71F)
   },
   I = {
-    [Chunk228168.n_.AVATAR]: () => m.intl.string(m.t.xvN0fV),
-    [Chunk228168.n_.STATUS]: () => m.intl.string(m.t["C/vzS7"]),
-    [Chunk228168.n_.ACTIVITY]: () => m.intl.string(m.t.ObfsSj)
+    [Chunk228168.n_.AVATAR]: () => h.intl.string(h.t.xvN0fV),
+    [Chunk228168.n_.STATUS]: () => h.intl.string(h.t["C/vzS7"]),
+    [Chunk228168.n_.ACTIVITY]: () => h.intl.string(h.t.ObfsSj)
   };
 
 function T(e) {
@@ -84,11 +84,11 @@ function T(e) {
     renderMoreButtonPopout: T
   } = e, C = i.useRef(null), A = (0, s.e7)([d.default], () => d.default.getId() === t.id), N = (0, f.Z)(t.id), {
     onInteraction: P,
-    onInteractionPopoutTargetRefChange: R
+    onInteractionPopoutTargetRefChange: w
   } = (0, p.Xo)();
   if (t.bot || A || !N) return null;
-  let w = () => {
-      R(O), n === _.n_.AVATAR ? v({
+  let R = () => {
+      w(O), n === _.n_.AVATAR ? v({
         action: "PRESS_REACT_AVATAR"
       }) : n === _.n_.STATUS ? v({
         action: "PRESS_REACT_CUSTOM_STATUS"
@@ -101,7 +101,7 @@ function T(e) {
       })
     },
     D = () => {
-      R(O), n === _.n_.AVATAR ? v({
+      w(O), n === _.n_.AVATAR ? v({
         action: "PRESS_REPLY_AVATAR"
       }) : n === _.n_.STATUS ? v({
         action: "PRESS_REPLY_CUSTOM_STATUS"
@@ -114,53 +114,53 @@ function T(e) {
       })
     };
   return (0, r.jsxs)(u.ZP, {
-    className: o()(h.popover, {
-      [h.visible]: a,
-      [h.expandable]: g,
-      [h.statusPopover]: n === _.n_.STATUS,
-      [h.avatarPopover]: n === _.n_.AVATAR,
-      [h.activityPopover]: n === _.n_.ACTIVITY
+    className: o()(m.popover, {
+      [m.visible]: a,
+      [m.expandable]: g,
+      [m.statusPopover]: n === _.n_.STATUS,
+      [m.avatarPopover]: n === _.n_.AVATAR,
+      [m.activityPopover]: n === _.n_.ACTIVITY
     }),
     children: [(0, r.jsx)(l.u, {
       asContainer: true,
-      text: m.intl.string(m.t.nhaI4b),
+      text: h.intl.string(h.t.nhaI4b),
       shouldShow: a,
       delay: 0,
       ariaHidden: true,
       children: (0, r.jsx)(u.zx, {
-        onClick: w,
-        className: h.button,
+        onClick: R,
+        className: m.button,
         "aria-label": S[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.EO4, {
           size: "xs",
-          className: h.icon
+          className: m.icon
         })
       })
     }), (0, r.jsx)(l.u, {
       asContainer: true,
-      text: m.intl.string(m.t.RmDYKK),
+      text: h.intl.string(h.t.RmDYKK),
       shouldShow: a,
       delay: 0,
       ariaHidden: true,
       children: (0, r.jsx)(u.zx, {
         onClick: D,
-        className: h.button,
+        className: m.button,
         "aria-label": I[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.n$P, {
           size: "xs",
-          className: h.icon
+          className: m.icon
         })
       })
     }), null == T ? true : T(e => {
       let t = () => {
         var t;
-        R(C), null == (t = e.onClick) || t.call(e)
+        w(C), null == (t = e.onClick) || t.call(e)
       };
       return (0, r.jsx)(l.u, {
         asContainer: true,
-        text: m.intl.string(m.t["UKOtz+"]),
+        text: h.intl.string(h.t["UKOtz+"]),
         shouldShow: a,
         delay: 0,
         ariaHidden: true,
@@ -168,11 +168,11 @@ function T(e) {
           ref: C
         }, e), {
           onClick: t,
-          className: h.button,
-          "aria-label": m.intl.string(m.t["UKOtz+"]),
+          className: m.button,
+          "aria-label": h.intl.string(h.t["UKOtz+"]),
           children: (0, r.jsx)(c.xhG, {
             size: "xs",
-            className: h.icon
+            className: m.icon
           })
         }))
       })

@@ -41,7 +41,7 @@ function _(e) {
   return c !== t && (c = t, n = true), l || (l = true, n = true), n
 }
 
-function m(e) {
+function h(e) {
   let {
     credential: t
   } = e;
@@ -49,7 +49,7 @@ function m(e) {
   c = [...c, t]
 }
 
-function h(e) {
+function m(e) {
   let {
     credential: t
   } = e;
@@ -82,8 +82,8 @@ s(E, "displayName", "WebAuthnStore");
 let b = new E(Chunk570140.Z, {
   LOGOUT: d,
   MFA_WEBAUTHN_CREDENTIALS_LOADED: _,
-  AUTHENTICATOR_CREATE: m,
-  AUTHENTICATOR_UPDATE: h,
+  AUTHENTICATOR_CREATE: h,
+  AUTHENTICATOR_UPDATE: m,
   AUTHENTICATOR_DELETE: g,
   WEBAUTHN_TRIGGER_REGISTER: f,
   WEBAUTHN_CLEAR_REGISTER_TRIGGER: p

@@ -8,9 +8,9 @@ require.d(exports, {
   ZN: () => g,
   ZP: () => a,
   a0: () => p,
-  oT: () => h,
+  oT: () => m,
   vx: () => d,
-  z_: () => m,
+  z_: () => h,
   zi: () => c
 });
 var Chunk822632 = require("./822632.js"),
@@ -28,8 +28,8 @@ let a = {
   f = "XML:com.adobe.xmp\0",
   p = "tEXt",
   _ = "iTXt",
-  m = "zTXt",
-  h = "pHYs",
+  h = "zTXt",
+  m = "pHYs",
   g = "tIME",
   E = "eXIf",
   b = "iCCP";
@@ -95,7 +95,7 @@ function S(e, t) {
 
 function I(e, t, n) {
   let i = (0, r.oH)(e, t + u, l);
-  return i === p || i === _ || i === m && n
+  return i === p || i === _ || i === h && n
 }
 
 function T(e, t) {
@@ -107,7 +107,7 @@ function C(e, t) {
 }
 
 function A(e, t) {
-  return [h, g].includes((0, r.oH)(e, t + u, l))
+  return [m, g].includes((0, r.oH)(e, t + u, l))
 }
 
 function N(e, t) {

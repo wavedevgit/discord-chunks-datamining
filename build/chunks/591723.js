@@ -27,7 +27,7 @@ function d(e, t, n) {
 }
 
 function f(e, t) {
-  return g(e) || h(e, t) || _(e, t) || p()
+  return g(e) || m(e, t) || _(e, t) || p()
 }
 
 function p() {
@@ -36,20 +36,20 @@ function p() {
 
 function _(e, t) {
   if (e) {
-    if ("string" == typeof e) return m(e, t);
+    if ("string" == typeof e) return h(e, t);
     var n = Object.prototype.toString.call(e).slice(8, false);
     if ("Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n) return Array.from(e);
-    if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return m(e, t)
+    if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return h(e, t)
   }
 }
 
-function m(e, t) {
+function h(e, t) {
   (null == t || t > e.length) && (t = e.length);
   for (var n = 0, r = Array(t); n < t; n++) r[n] = e[n];
   return r
 }
 
-function h(e, t) {
+function m(e, t) {
   if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
     var n = [],
       r = true,

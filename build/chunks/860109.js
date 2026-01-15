@@ -20,8 +20,8 @@ function s(e) {
   } = e, p = null != d ? d : u, _ = (0, i.useViewModel)(t);
   (0, i.useViewModelInstance)(_);
   let {
-    theme: m,
-    saturation: h
+    theme: h,
+    saturation: m
   } = (0, o.ZF)(), {
     highContrastModeEnabled: g
   } = r.useContext(a.S), E = r.useRef(null), b = l(), y = r.useCallback((e, t) => {
@@ -57,8 +57,8 @@ function s(e) {
               let e = A;
               if ("resolve" in e) {
                 let [n, r, i, l] = e.resolve({
-                  theme: m,
-                  saturation: h,
+                  theme: h,
+                  saturation: m,
                   highContrastModeEnabled: g
                 }).rgba();
                 null == (o = t.viewModelInstance) || null == (a = o.color(s)) || a.rgba(n, r, i, 255 * l)
@@ -74,9 +74,9 @@ function s(e) {
             null != P && (P.value = A);
             break;
           case "trigger":
-            let R = null != A && ("boolean" == typeof A ? A : 0 !== A),
-              w = y(E.current, s);
-            R && w !== A && (null == (O = t.viewModelInstance) || null == (_ = O.trigger(s)) || _.trigger());
+            let w = null != A && ("boolean" == typeof A ? A : 0 !== A),
+              R = y(E.current, s);
+            w && R !== A && (null == (O = t.viewModelInstance) || null == (_ = O.trigger(s)) || _.trigger());
             break;
           case "string":
             let D = null == (v = t.viewModelInstance) ? true : v.string(s);
@@ -104,7 +104,7 @@ function s(e) {
     }), () => {
       e.abort("New data binding applied - aborting previous image fetches."), E.current = p
     }
-  }, [y, p, t, n, s, m, null == t ? true : t.viewModelInstance, h, g, b])
+  }, [y, p, t, n, s, h, null == t ? true : t.viewModelInstance, m, g, b])
 }
 
 function l() {

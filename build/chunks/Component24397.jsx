@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => A,
-  Z: () => R
+  Z: () => w
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -68,7 +68,7 @@ function N() {
 function P(e) {
   return "".concat(O.GI).concat(e.displayName)
 }
-let R = {
+let w = {
   sentinel: Chunk761652.GI,
   stores: [Chunk998698.Z, Chunk213459.ZP, Chunk496675.Z],
   matches: (e, t, n, r, i) => i.commands !== y.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== y.L8.OLD_BUILT_INS),
@@ -91,7 +91,7 @@ let R = {
         }
       }
     }
-    let a = (0, m.hV)(e, n),
+    let a = (0, h.hV)(e, n),
       {
         commands: s,
         sections: c
@@ -134,7 +134,7 @@ let R = {
       options: s,
       onHover: l,
       onClick: c
-    } = e, u = (0, m.hV)(a, o), d = s.commands === y.L8.OLD_BUILT_INS;
+    } = e, u = (0, h.hV)(a, o), d = s.commands === y.L8.OLD_BUILT_INS;
     return (0, b.HI)({
       query: u.text,
       selectedIndex: n,
@@ -144,7 +144,7 @@ let R = {
       titleWithQuery: S.t.HFRoZR,
       titleWithoutQuery: S.intl.string(S.t["0hKkS+"]),
       getQuery: e => "".concat(O.GI).concat(e),
-      Component: d ? h.ZP.Command : h.ZP.NewCommand,
+      Component: d ? m.ZP.Command : m.ZP.NewCommand,
       getProps: e => {
         let {
           command: t,

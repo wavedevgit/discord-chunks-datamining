@@ -10,12 +10,12 @@ require.d(exports, {
   Xz: () => P,
   Z: () => b,
   c_: () => N,
-  f4: () => R,
+  f4: () => w,
   g_: () => S,
   ho: () => v,
   pG: () => O,
   rH: () => D,
-  rf: () => w,
+  rf: () => R,
   x3: () => x,
   z5: () => A
 });
@@ -33,7 +33,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function g(e) {
 function E(e) {
   c.default.track(_.rMx.PREMIUM_FEATURE_TRY_OUT, {
     feature_name: e,
-    feature_tier: m.h1.PREMIUM_STANDARD
+    feature_tier: h.h1.PREMIUM_STANDARD
   })
 }
 async function b(e, t) {
@@ -160,41 +160,41 @@ function N(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR",
     avatar: e
-  }), E(m.QP.ANIMATED_AVATAR)
+  }), E(h.QP.ANIMATED_AVATAR)
 }
 
 function P(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION",
     avatarDecoration: e
-  }), E(m.QP.AVATAR_DECORATION)
-}
-
-function R(e) {
-  a.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
-    banner: e
-  }), E(m.QP.PROFILE_BANNER)
+  }), E(h.QP.AVATAR_DECORATION)
 }
 
 function w(e) {
   a.Z.dispatch({
+    type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
+    banner: e
+  }), E(h.QP.PROFILE_BANNER)
+}
+
+function R(e) {
+  a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
     themeColors: e
-  }), E(m.QP.PROFILE_THEME_COLOR)
+  }), E(h.QP.PROFILE_THEME_COLOR)
 }
 
 function D(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES",
     displayNameStyles: e
-  }), E(m.QP.DISPLAY_NAME_STYLES)
+  }), E(h.QP.DISPLAY_NAME_STYLES)
 }
 
 function x(e) {
   a.Z.dispatch(g({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET"
-  }, e)), E(m.QP.PRESET)
+  }, e)), E(h.QP.PRESET)
 }
 async function L() {
   if (null == f.Z.applicationWidgetConfigs || !(f.Z.applicationWidgetConfigs.length > 0)) {

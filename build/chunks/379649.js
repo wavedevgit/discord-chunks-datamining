@@ -2,7 +2,7 @@
 /** chunk id: 379649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => m,
+  A3: () => h,
   CI: () => E,
   G9: () => u,
   J6: () => _,
@@ -137,7 +137,7 @@ var _ = function(e) {
   return e.NONE = "NONE", e.SECONDS = "SECONDS", e.MINUTES = "MINUTES", e.HOURS = "HOURS", e.DAYS = "DAYS", e.WEEKS = "WEEKS", e.MONTHS = "MONTHS", e.YEARS = "YEARS", e
 }({});
 
-function m(e, t) {
+function h(e, t) {
   switch (t) {
     case "NONE":
       return 0;
@@ -157,7 +157,7 @@ function m(e, t) {
       return e / 60 / 24 / 365
   }
 }
-let h = [{
+let m = [{
   unit: "NONE",
   max: 0
 }, {
@@ -184,21 +184,21 @@ let h = [{
 }];
 
 function g(e, t) {
-  let n = h.findIndex(t => {
+  let n = m.findIndex(t => {
       let {
         max: n,
         unit: r
       } = t;
       return "NONE" === r && e === n || e < n
     }),
-    r = i()(h, e => {
+    r = i()(m, e => {
       let {
         unit: n
       } = e;
       return t(n)
     }, n);
   if (null != r) return r.unit;
-  let a = h.find(e => {
+  let a = m.find(e => {
     let {
       unit: n
     } = e;
@@ -213,7 +213,7 @@ function E(e, t) {
     time: 0
   };
   let n = g(e, e => t.includes(e)),
-    r = null != n ? m(e, n) : null;
+    r = null != n ? h(e, n) : null;
   return {
     unit: n,
     time: null != r ? Math.floor(r) : null

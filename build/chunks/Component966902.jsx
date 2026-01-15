@@ -29,14 +29,14 @@ function p(e) {
     caretConfig: d
   } = n, p = (0, c.z)(a), {
     align: _,
-    customOffset: m
-  } = d, h = "custom" === _ && true !== m ? {
-    "--custom-caret-offset-x": ["top", "bottom"].includes(p) ? "".concat(f(m), "px") : "0px",
-    "--custom-caret-offset-y": ["left", "right"].includes(p) ? "".concat(f(m), "px") : "0px"
+    customOffset: h
+  } = d, m = "custom" === _ && true !== h ? {
+    "--custom-caret-offset-x": ["top", "bottom"].includes(p) ? "".concat(f(h), "px") : "0px",
+    "--custom-caret-offset-y": ["left", "right"].includes(p) ? "".concat(f(h), "px") : "0px"
   } : true, g = o()(u.caret, u["caret--".concat(p)], u["caret--".concat(_)], t);
   return (0, r.jsx)("div", {
     className: g,
-    style: h,
+    style: m,
     children: (0, r.jsx)(l.v, {})
   })
 }

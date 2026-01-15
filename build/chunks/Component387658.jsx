@@ -50,20 +50,20 @@ function k(e) {
     let e = O.Z.entrypoint();
     y.y(v.ti.COMMAND), (0, E.Mo)({
       command: o,
-      location: h.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+      location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
     }), "channel" === a.type && (p.Po({
       channelId: a.channel.id,
       command: o,
       section: l,
-      location: h.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+      location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c,
       source: e,
-      commandOrigin: h.bB.APPLICATION_LAUNCHER
+      commandOrigin: m.bB.APPLICATION_LAUNCHER
     }), b.S.dispatch(P.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: a.channel.id
     }))
-  }, [a, o, l, c]), f = (null != (n = null == (t = o.options) ? true : t.length) ? n : 0) > 0, _ = i.useMemo(() => (0, A.ae)(o.displayDescription, true), [o.displayDescription]), m = i.useMemo(() => (0, r.jsxs)("div", {
+  }, [a, o, l, c]), f = (null != (n = null == (t = o.options) ? true : t.length) ? n : 0) > 0, _ = i.useMemo(() => (0, A.ae)(o.displayDescription, true), [o.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
     className: x.commandTextContainer,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/semibold",
@@ -81,7 +81,7 @@ function k(e) {
     onClick: d,
     children: [(0, r.jsx)(u.Rny, {
       className: x.commandFocusBlock,
-      children: m
+      children: h
     }), f ? (0, r.jsx)(s.F, {}) : (0, r.jsx)(G, {
       context: a,
       command: o,
@@ -159,7 +159,7 @@ function G(e) {
           commandIntegrationTypes: n.integration_types,
           appLauncherContext: {
             entrypoint: r,
-            location: h.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+            location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
             sectionName: a
           }
         });
@@ -168,7 +168,7 @@ function G(e) {
           optionValues: {},
           context: o,
           sectionName: a,
-          commandOrigin: h.bB.APP_LAUNCHER_APPLICATION_VIEW
+          commandOrigin: m.bB.APP_LAUNCHER_APPLICATION_VIEW
         }), y.y(v.ti.COMMAND))
       } finally {
         c(false)
@@ -179,10 +179,10 @@ function G(e) {
     onClick: d,
     disabled: s,
     variant: "secondary",
-    "aria-label": w.intl.formatToPlainString(w.t.UXw6W2, {
+    "aria-label": R.intl.formatToPlainString(R.t.UXw6W2, {
       commandName: n.untranslatedName
     }),
-    text: w.intl.string(w.t.TXNS7S),
+    text: R.intl.string(R.t.TXNS7S),
     icon: l.U,
     iconPosition: "end",
     size: "md"
@@ -231,14 +231,14 @@ function F(e) {
     commandsByActiveSection: u,
     sectionDescriptors: f,
     loading: p
-  } = m.wi({
+  } = h.wi({
     context: n,
     filters: {
       commandTypes: [d.yU.CHAT]
     },
     options: {
       placeholderCount: 0,
-      limit: R.tn,
+      limit: w.tn,
       includeFrecency: true,
       allowApplicationState: s,
       installOnDemand: s,
@@ -246,7 +246,7 @@ function F(e) {
     },
     allowFetch: true
   }), _ = null != (t = f.find(e => e.id === a.id)) ? t : null, {
-    sortOrder: h,
+    sortOrder: m,
     setSortOrder: g,
     commands: E,
     canSort: b
@@ -270,16 +270,16 @@ function F(e) {
       context: n,
       section: _,
       commands: y,
-      headerName: w.intl.string(w.t.acSE0h),
+      headerName: R.intl.string(R.t.acSE0h),
       sectionName: o
     }), (0, r.jsx)(Z, {
       context: n,
       section: _,
       commands: p ? M : E,
-      headerName: w.intl.string(w.t.DUU9L3),
+      headerName: R.intl.string(R.t.DUU9L3),
       sectionName: o,
       children: b && (0, r.jsx)(N.Z, {
-        sortOrder: h,
+        sortOrder: m,
         onSortOptionClick: g
       })
     })]

@@ -144,28 +144,28 @@ let W = {
   }),
   J = () => G.intl.format(G.t.Jae48E, {
     onClick: () => {
-      (0, j.openUserSettings)(w.n.SYNC_FORCED_COLORS, {
+      (0, j.openUserSettings)(R.n.SYNC_FORCED_COLORS, {
         section: k.oAB.ACCESSIBILITY
       })
     }
   }),
   $ = () => G.intl.format(G.t["5LEQdc"], {
     onAccessibilityClick: () => {
-      (0, j.openUserSettings)(w.n.ACCESSIBILITY_PANEL, {
+      (0, j.openUserSettings)(R.n.ACCESSIBILITY_PANEL, {
         section: k.oAB.ACCESSIBILITY
       })
     }
   }),
   ee = () => {
-    let e = R.jU.useSetting(),
-      t = R.RS.useSetting(),
-      n = R.NA.useSetting(),
+    let e = w.jU.useSetting(),
+      t = w.RS.useSetting(),
+      n = w.NA.useSetting(),
       {
         theme: a,
         messageGroupSpacing: l
-      } = (0, s.cj)([N.Z, m.Z], () => ({
+      } = (0, s.cj)([N.Z, h.Z], () => ({
         theme: N.Z.theme,
-        messageGroupSpacing: m.Z.messageGroupSpacing
+        messageGroupSpacing: h.Z.messageGroupSpacing
       })),
       [d] = i.useState(() => Q(k.BRd.DARK)),
       [f] = i.useState(() => Q(k.BRd.LIGHT)),
@@ -248,7 +248,7 @@ class et extends Chunk473749.Component {
       label: G.intl.string(G.t.Ksh3ik),
       children: (0, r.jsx)(u.Wn, {
         messageType: u.QYI.INFO,
-        children: (0, h.b)() ? (0, r.jsx)(J, {}) : G.intl.string(G.t.AUMSZP)
+        children: (0, m.b)() ? (0, r.jsx)(J, {}) : G.intl.string(G.t.AUMSZP)
       })
     }) : (0, r.jsx)(u.C3N, {
       label: G.intl.string(G.t.Ksh3ik),
@@ -373,35 +373,35 @@ class et extends Chunk473749.Component {
       let {
         value: t
       } = e;
-      R.jU.updateSetting(t === W.COMPACT), (0, _.ZZ)()
+      w.jU.updateSetting(t === W.COMPACT), (0, _.ZZ)()
     }), B(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== l.Pi.UNSET_UI_DENSITY && R.YC.updateSetting(t)
+      t !== l.Pi.UNSET_UI_DENSITY && w.YC.updateSetting(t)
     })
   }
 }
 
 function en() {
-  let e = R.jU.useSetting(),
-    t = R.RS.useSetting(),
-    n = R.NA.useSetting(),
-    i = R.L1.useSetting(),
-    a = R.YC.useSetting();
+  let e = w.jU.useSetting(),
+    t = w.RS.useSetting(),
+    n = w.NA.useSetting(),
+    i = w.L1.useSetting(),
+    a = w.YC.useSetting();
   (0, f.ZP)(() => {
     (0, E.w)()
   });
   let o = (0, T.A6)(),
-    l = (0, s.cj)([N.Z, P.ZP, m.Z, C.default, g.Z], () => {
+    l = (0, s.cj)([N.Z, P.ZP, h.Z, C.default, g.Z], () => {
       var e, t;
       return {
         theme: N.Z.theme,
-        useForcedColors: m.Z.useForcedColors,
+        useForcedColors: h.Z.useForcedColors,
         useSystemTheme: P.ZP.useSystemTheme,
-        fontSize: m.Z.fontSize,
-        zoom: m.Z.zoom,
-        messageGroupSpacing: m.Z.messageGroupSpacing,
+        fontSize: h.Z.fontSize,
+        zoom: h.Z.zoom,
+        messageGroupSpacing: h.Z.messageGroupSpacing,
         displayCompactAvatars: P.ZP.displayCompactAvatars,
         isStaff: null != (t = null == (e = C.default.getCurrentUser()) ? true : e.isStaff) && t,
         gradientPreset: g.Z.gradientPreset

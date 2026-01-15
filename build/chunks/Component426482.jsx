@@ -23,7 +23,7 @@ function d(e) {
     application: a,
     size: u,
     className: d
-  } = e, [f, p] = i.useState(false), _ = null != (t = null == a ? true : a.name) ? t : n.name, m = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null, h = () => {
+  } = e, [f, p] = i.useState(false), _ = null != (t = null == a ? true : a.name) ? t : n.name, h = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null, m = () => {
     p(true)
   }, g = () => {
     p(false)
@@ -42,7 +42,7 @@ function d(e) {
     }), (0, r.jsx)(s.xvT, {
       variant: 1 === u ? "text-sm/normal" : "text-xxs/normal",
       color: "always-white",
-      children: null != m ? "(".concat(null == m ? true : m.getFullYear(), ")") : null
+      children: null != h ? "(".concat(null == h ? true : h.getFullYear(), ")") : null
     })]
   }) : (0, r.jsx)("img", {
     className: d,
@@ -50,7 +50,7 @@ function d(e) {
     alt: l.intl.formatToPlainString(l.t["3ev90U"], {
       game: _
     }),
-    onError: h,
+    onError: m,
     onLoad: g
   })
 }

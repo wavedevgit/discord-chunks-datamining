@@ -36,7 +36,7 @@ let p = e => {
       className: f.nameplatePreview
     })
   },
-  m = e => {
+  h = e => {
     let {
       displayName: t,
       product: n
@@ -47,7 +47,7 @@ let p = e => {
       className: f.avatarDecorationPreview
     })
   },
-  h = e => {
+  m = e => {
     let {
       subscriptionPlanId: t
     } = e;
@@ -90,7 +90,7 @@ let p = e => {
           product: n
         });
       case s.Z.PROFILE_EFFECT:
-        return (0, r.jsx)(m, {
+        return (0, r.jsx)(h, {
           displayName: t,
           product: n
         });
@@ -112,14 +112,14 @@ let p = e => {
       product: p
     } = (0, c.Z)(t), {
       displayName: _,
-      typeName: m,
+      typeName: h,
       isSubscription: E
     } = (0, d.HB)(null != p ? p : null, n);
     if (null != t && !E && null == p || null == _) return null;
     let b = (0, u.T4)(i, a);
     return (0, r.jsxs)("div", {
       className: o()(f.container, s),
-      children: [E ? (0, r.jsx)(h, {
+      children: [E ? (0, r.jsx)(m, {
         subscriptionPlanId: n
       }) : (0, r.jsx)(g, {
         displayName: _,
@@ -127,7 +127,7 @@ let p = e => {
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: null != m ? "".concat(_, " • ").concat(m) : _
+          children: null != h ? "".concat(_, " • ").concat(h) : _
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",

@@ -2,7 +2,7 @@
 /** chunk id: 912152, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -42,15 +42,15 @@ function _(e) {
   };
   let p = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
     _ = o.ZP.getDefaultPrice(p.id, n),
-    m = (0, s.og)((0, s.T4)(_.amount, _.currency), p.interval, p.intervalCount);
+    h = (0, s.og)((0, s.T4)(_.amount, _.currency), p.interval, p.intervalCount);
   return {
     subtitle: n ? f.intl.string(f.t.bhPzXR) : f.intl.string(f.t.Zs9h9Z),
     flavor: f.intl.formatToPlainString(f.t.PGgTdA, {
-      monthlyGuildBoostPrice: m
+      monthlyGuildBoostPrice: h
     })
   }
 }
-let m = function(e) {
+let h = function(e) {
   let {
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,

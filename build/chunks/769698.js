@@ -16,8 +16,8 @@ var Chunk126182 = require("./126182.js"),
   Chunk65183 = require("./65183.js"),
   Chunk799995 = require("./799995.js"),
   _ = Chunk65183.List,
-  m = Chunk65183.Record,
-  h = Chunk65183.Repeat;
+  h = Chunk65183.Record,
+  m = Chunk65183.Repeat;
 module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
@@ -92,12 +92,12 @@ module.exports = function(e) {
           key: u(),
           text: e,
           type: "unstyled",
-          characterList: _(h(a.EMPTY, e.length))
+          characterList: _(m(a.EMPTY, e.length))
         })
       });
     return t.createFromBlockArray(r)
   }, t
-}(m({
+}(h({
   entityMap: null,
   blockMap: null,
   selectionBefore: null,

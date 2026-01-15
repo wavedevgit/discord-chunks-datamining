@@ -29,18 +29,18 @@ function p(e) {
     activity: f
   } = e, {
     channelId: p
-  } = null != (t = (0, c.rq)(f)) ? t : {}, _ = (0, a.e7)([u.Z], () => u.Z.getStageInstanceByChannel(p), [p]), m = i.useRef(null), h = i.useCallback(() => {
+  } = null != (t = (0, c.rq)(f)) ? t : {}, _ = (0, a.e7)([u.Z], () => u.Z.getStageInstanceByChannel(p), [p]), h = i.useRef(null), m = i.useCallback(() => {
     let e = s.Z.getChannel(p);
     null != e && l.Cq(e)
   }, [p]), g = null != (n = null == _ ? true : _.topic) ? n : f.name, E = d.intl.formatToPlainString(d.t["T+DNAA"], {
     channel: g
   });
   return (0, r.jsx)("div", {
-    ref: m,
+    ref: h,
     children: (0, r.jsx)(o.P3F, {
-      onClick: h,
+      onClick: m,
       focusProps: {
-        ringTarget: m
+        ringTarget: h
       },
       children: (0, r.jsx)(o.Heading, {
         variant: "heading-sm/semibold",

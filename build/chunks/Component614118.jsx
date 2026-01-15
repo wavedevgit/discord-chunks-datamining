@@ -29,10 +29,10 @@ var Chunk54381 = require("./54381.js"),
 function I(e) {
   var t, n, I, T, C, A, N, P;
   let {
-    guildId: R,
-    skuId: w,
+    guildId: w,
+    skuId: R,
     channel: D
-  } = e, x = (0, o.e7)([p.Z], () => p.Z.isFetchingForSKU(w)), L = (0, o.e7)([f.Z], () => f.Z.get(w)), j = null == L ? true : L.applicationId, {
+  } = e, x = (0, o.e7)([p.Z], () => p.Z.isFetchingForSKU(R)), L = (0, o.e7)([f.Z], () => f.Z.get(R)), j = null == L ? true : L.applicationId, {
     analyticsLocations: M
   } = (0, c.ZP)(l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
   (0, u.p2)();
@@ -40,19 +40,19 @@ function I(e) {
     {
       primaryIconAsset: U,
       primaryIconLabel: G
-    } = i.useMemo(() => (0, m.FE)(L, j), [L, j]);
+    } = i.useMemo(() => (0, h.FE)(L, j), [L, j]);
   i.useEffect(() => {
-    null == R || null == w || p.Z.isFetchingForSKU(w) || (0, h.y)(R, w)
-  }, [R, w]);
+    null == w || null == R || p.Z.isFetchingForSKU(R) || (0, m.y)(w, R)
+  }, [w, R]);
   let Z = i.useCallback(e => {
-      e.stopPropagation(), (null == L ? true : L.applicationId) != null && null != R && (0, g.g)({
-        skuId: w,
+      e.stopPropagation(), (null == L ? true : L.applicationId) != null && null != w && (0, g.g)({
+        skuId: R,
         applicationId: L.applicationId,
-        guildId: R,
+        guildId: w,
         isStorefront: false,
         analyticsLocations: M
       })
-    }, [w, null == L ? true : L.applicationId, R, M]),
+    }, [R, null == L ? true : L.applicationId, w, M]),
     F = i.useCallback(() => {
       null != L && (0, E.P)(L, {
         isGift: false
@@ -78,8 +78,8 @@ function I(e) {
     children: [(0, r.jsx)(y.C, {
       className: S.card,
       applicationId: L.applicationId,
-      skuId: w,
-      guildId: R,
+      skuId: R,
+      guildId: w,
       variant: y.Z.EMBEDDED,
       onClick: Z,
       analyticsLocations: M

@@ -2,7 +2,7 @@
 /** chunk id: 401419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
+  Z: () => m,
   j: () => _
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js");
@@ -18,7 +18,7 @@ let c = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"]
   f = 300,
   p = 6,
   _ = ["PlayStation"],
-  m = (e, t) => {
+  h = (e, t) => {
     let {
       host: n,
       pathname: r
@@ -38,7 +38,7 @@ let c = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"]
     return null
   };
 
-function h(e) {
+function m(e) {
   var t;
   let n = e.embed.url,
     i = null == (t = e.embed.provider) ? true : t.name;
@@ -49,7 +49,7 @@ function h(e) {
   } catch (e) {
     return null
   }
-  let c = m(i, s);
+  let c = h(i, s);
   return null == c ? null : (0, r.jsx)("iframe", {
     src: c.embedUrl,
     className: a()(l.embedIFrame, e.className),

@@ -16,7 +16,7 @@ var r, i, a, o, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk115164 = require("./115164.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,9 +24,9 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var h = function(e) {
+var m = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
-}(h || {});
+}(m || {});
 let g = {
   normal: {
     BEG: 0,
@@ -90,7 +90,7 @@ class E extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-m(E, "Scenes", h);
+h(E, "Scenes", m);
 var b = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
 }(b || {});
@@ -157,7 +157,7 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-m(O, "Scenes", b);
+h(O, "Scenes", b);
 var v = function(e) {
   return e.IDLE_ENTRY = "idle_entry", e.IDLE_LOOP = "idle_loop", e.BOOST_START = "boost_start", e.BOOST_LOOP = "boost_loop", e.BOOST_END = "boost_end", e.VICTORY = "victory", e.ERROR = "error", e
 }(v || {});
@@ -345,25 +345,25 @@ class A extends(a = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "backgroundAnimation", new f.Z.ValueXY({
+    super(...e), h(this, "backgroundAnimation", new f.Z.ValueXY({
       x: 0,
       y: 0
-    })), m(this, "foregroundAnimation", new f.Z.ValueXY({
+    })), h(this, "foregroundAnimation", new f.Z.ValueXY({
       x: 0,
       y: 0
-    })), m(this, "didUnmount", false), m(this, "animateIdleLoopBackground", () => {
+    })), h(this, "didUnmount", false), h(this, "animateIdleLoopBackground", () => {
       this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
         toValue: T.IDLE_LOOP.toValue,
         duration: T.IDLE_LOOP.duration * C,
         easing: f.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
-    }), m(this, "animateIdleLoopForeground", () => {
+    }), h(this, "animateIdleLoopForeground", () => {
       this.didUnmount || (this.foregroundAnimation.x.setValue(0), f.Z.timing(this.foregroundAnimation.x, {
         toValue: T.IDLE_LOOP.toValue,
         duration: T.IDLE_LOOP.duration,
         easing: T.IDLE_LOOP.easing
       }).start(this.animateIdleLoopForeground))
-    }), m(this, "handleScenePlay", e => {
+    }), h(this, "handleScenePlay", e => {
       switch (e) {
         case "idle_entry":
           this.animateIdleEntry(), this.animateIdleLoop();
@@ -381,7 +381,7 @@ class A extends(a = Chunk473749.PureComponent) {
     })
   }
 }
-m(A, "Scenes", v);
+h(A, "Scenes", v);
 var N = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(N || {});
@@ -409,34 +409,34 @@ let P = {
       END: 778
     }
   },
-  R = Object.freeze({
+  w = Object.freeze({
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
-  w = [{
+  R = [{
     left: 29,
     top: 100,
-    color: R.WHITE
+    color: w.WHITE
   }, {
     left: 245,
     top: 11,
-    color: R.PINK
+    color: w.PINK
   }, {
     left: 393,
     top: 22,
-    color: R.WHITE
+    color: w.WHITE
   }, {
     left: 74,
     top: 30,
-    color: R.PINK
+    color: w.PINK
   }, {
     left: 188,
     top: 9,
-    color: R.WHITE
+    color: w.WHITE
   }, {
     left: 379,
     top: 97,
-    color: R.PINK
+    color: w.PINK
   }],
   D = Object.freeze({
     SCALE_INITIAL: 0,
@@ -459,7 +459,7 @@ let P = {
 function x(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, p.bYB)(w.length, w.map((e, i) => {
+  } = e, [n, r] = l.useState(0), i = (0, p.bYB)(R.length, R.map((e, i) => {
     let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
       o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
@@ -491,7 +491,7 @@ function x(e) {
           scale: D.SCALE_INITIAL,
           rotate: D.ROTATE_INITIAL,
           immediate: true
-        }), i === w.length - 1 && r(n + 1)) : await e({
+        }), i === R.length - 1 && r(n + 1)) : await e({
           scale: D.SCALE_INITIAL,
           rotate: D.ROTATE_INITIAL
         })
@@ -500,7 +500,7 @@ function x(e) {
   }));
   return (0, s.jsx)(s.Fragment, {
     children: i.map((e, t) => {
-      let n = w[t];
+      let n = R[t];
       return (0, s.jsx)(d.animated.svg, {
         style: e,
         className: _.guildStar,
@@ -559,4 +559,4 @@ class L extends(o = Chunk473749.PureComponent) {
     })
   }
 }
-m(L, "Scenes", N)
+h(L, "Scenes", N)

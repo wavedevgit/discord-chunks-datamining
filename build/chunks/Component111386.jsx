@@ -22,7 +22,7 @@ let d = e => {
     }, 300);
     return () => clearTimeout(e)
   }, []);
-  let m = i.useCallback(() => {
+  let h = i.useCallback(() => {
     d(l.L.USER_DISMISS)
   }, [d]);
   return n !== a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP ? t : (0, r.jsxs)(r.Fragment, {
@@ -32,7 +32,7 @@ let d = e => {
     }), (0, r.jsx)(o.J, {
       targetElementRef: _,
       shouldShow: f,
-      onRequestClose: m,
+      onRequestClose: h,
       position: "left",
       title: c.intl.string(c.t.V5y3qZ),
       body: c.intl.string(c.t.eSDHDk),

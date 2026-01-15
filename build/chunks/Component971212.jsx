@@ -73,13 +73,13 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function R(e) {
   let {
     searchContext: t,
     filter: n,
@@ -116,7 +116,7 @@ function D(e) {
     user: t,
     guildId: n,
     channelId: r
-  } = e, i = h.ZP.getName(n, r, t), a = t.getAvatarURL(n, (0, u.dcp)(u.EFr.SIZE_24));
+  } = e, i = m.ZP.getName(n, r, t), a = t.getAvatarURL(n, (0, u.dcp)(u.EFr.SIZE_24));
   return {
     value: t.id,
     label: i,
@@ -140,7 +140,7 @@ function x(e, t) {
       filterAutocompleteResults: u,
       handleFocusFilter: d,
       autocompleteStoreState: f
-    } = w({
+    } = R({
       searchContext: e,
       filter: t,
       queryString: l
@@ -186,7 +186,7 @@ function x(e, t) {
         t.add(n), e.unshift(o)
       }), e
     }, [f, u, o, r, a]),
-    h = i.useCallback(() => {
+    m = i.useCallback(() => {
       s([]), c("")
     }, []),
     E = i.useCallback(() => {
@@ -200,14 +200,14 @@ function x(e, t) {
         if (null == n) return null;
         let r = g.ZP.getUserTag(n);
         return "" === r ? null : "".concat(t.key, " ").concat(r)
-      }).filter(m.lm).join(" ")
+      }).filter(h.lm).join(" ")
     }, [o]);
   return {
     options: p,
     query: o,
     setQuery: s,
     setQueryString: c,
-    handleClearFilter: h,
+    handleClearFilter: m,
     getApplyQueryString: b,
     handleFocusFilter: d,
     handleBlurFilter: E
@@ -247,7 +247,7 @@ function j(e) {
       filterAutocompleteResults: s,
       handleFocusFilter: l,
       autocompleteStoreState: c
-    } = w({
+    } = R({
       searchContext: e,
       filter: T.dCx.FILTER_IN,
       queryString: a
@@ -350,7 +350,7 @@ function k(e) {
     {
       filterAutocompleteResults: o,
       handleFocusFilter: s
-    } = w({
+    } = R({
       searchContext: e,
       filter: T.dCx.FILTER_HAS,
       queryString: ""
@@ -445,24 +445,24 @@ function G() {
       } = e;
       n(e => {
         let n = [...e];
-        return n[r] = R(N({}, n[r]), {
+        return n[r] = w(N({}, n[r]), {
           query: t
         }), n
       })
     }, []),
-    m = i.useCallback(e => {
+    h = i.useCallback(e => {
       let {
         date: t,
         index: r
       } = e;
       n(e => {
         let n = [...e];
-        return n[r] = R(N({}, n[r]), {
+        return n[r] = w(N({}, n[r]), {
           date: t
         }), n
       })
     }, []),
-    h = i.useCallback(() => {
+    m = i.useCallback(() => {
       n(e => [...e, f()])
     }, [f]),
     g = i.useCallback(e => {
@@ -486,8 +486,8 @@ function G() {
     dates: t,
     validDates: o,
     handleDateQueryChange: _,
-    handleDateChange: m,
-    handleAddDateFilter: h,
+    handleDateChange: h,
+    handleAddDateFilter: m,
     handleRemoveDateFilter: g,
     handleClearDateFilter: E,
     getDateQueryString: b
@@ -512,7 +512,7 @@ function F(e) {
     {
       filterAutocompleteResults: o,
       handleFocusFilter: s
-    } = w({
+    } = R({
       searchContext: e,
       filter: T.dCx.FILTER_AUTHOR_TYPE,
       queryString: ""
@@ -652,22 +652,22 @@ function V(e, t) {
         case T.dCx.ANSWER_BEFORE:
           let p = t[T.dCx.FILTER_BEFORE],
             _ = e.getData("end"),
-            m = {
+            h = {
               query: n,
               date: s()(_),
               id: (0, l.Z)()
             };
-          p.push(m), i.push(m), c += 1;
+          p.push(h), i.push(h), c += 1;
           break;
         case T.dCx.ANSWER_ON:
-          let h = t[T.dCx.FILTER_ON],
+          let m = t[T.dCx.FILTER_ON],
             g = e.getData("start"),
             E = {
               query: a,
               date: s()(g),
               id: (0, l.Z)()
             };
-          h.push(E), i.push(E), c += 1;
+          m.push(E), i.push(E), c += 1;
           break;
         case T.dCx.ANSWER_AFTER:
           let b = t[T.dCx.FILTER_AFTER],

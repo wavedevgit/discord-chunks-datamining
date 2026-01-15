@@ -52,7 +52,7 @@ function S(e, t) {
 let I = new Chunk727258.g8;
 
 function T(e, t) {
-  for (let n of g.Z.getGuildIds()) !e(n) || u.Z.isLurking(n) || h.ZP.isCurrentUserGuest(n) || t(n)
+  for (let n of g.Z.getGuildIds()) !e(n) || u.Z.isLurking(n) || m.ZP.isCurrentUserGuest(n) || t(n)
 }
 
 function C(e) {
@@ -81,7 +81,7 @@ function A(e, t) {
         else {
           let e = (0, c.qQ)(t, true, _.Z.isFolderExpanded(t.folderId));
           for (let n of (I.addNode(e), t.guildIds)) I.addNode((0, c.Mg)(n), e)
-        } for (let e of I.allNodes()) e.type === c.eD.GUILD && (u.Z.isLurking(e.id) || h.ZP.isCurrentUserGuest(e.id) || null == g.Z.getGuild(e.id) && !m.Z.isUnavailable(e.id)) && I.removeNode(e);
+        } for (let e of I.allNodes()) e.type === c.eD.GUILD && (u.Z.isLurking(e.id) || m.ZP.isCurrentUserGuest(e.id) || null == g.Z.getGuild(e.id) && !h.Z.isUnavailable(e.id)) && I.removeNode(e);
   for (let e of Object.values(I.nodes)) e.type === c.eD.FOLDER && 0 === e.children.length && I.removeNode(e);
   T(e => null == I.nodes[e], e => I.addNode((0, c.Mg)(e), I.root, false)), I.version = n.version;
   let r = a()(n, I);
@@ -99,7 +99,7 @@ function P() {
   return !(null != r && a()(r, n)) && A(null != (r = n) ? r : [], null != (t = null == (e = d.Z.settings.guildFolders) ? true : e.guildPositions) ? t : [])
 }
 
-function R(e) {
+function w(e) {
   let {
     sourceId: t,
     targetId: n,
@@ -113,7 +113,7 @@ function R(e) {
   } else I.moveNextTo(a, o, r)
 }
 
-function w(e) {
+function R(e) {
   let {
     sourceIds: t,
     name: n
@@ -220,7 +220,7 @@ let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, Chunk251625.oH)((e, t) => e.root.children.map(C));
 class V extends Chunk750041.Z {
   initialize() {
-    this.waitFor(g.Z, b.ZP, d.Z, m.Z, u.Z, _.Z, l.Z)
+    this.waitFor(g.Z, b.ZP, d.Z, h.Z, u.Z, _.Z, l.Z)
   }
   getGuildsTree() {
     return I
@@ -260,8 +260,8 @@ class V extends Chunk750041.Z {
       GUILD_DELETE: N,
       GUILD_MEMBER_ADD: L,
       USER_SETTINGS_PROTO_UPDATE: P,
-      GUILD_MOVE_BY_ID: R,
-      GUILD_FOLDER_CREATE_LOCAL: w,
+      GUILD_MOVE_BY_ID: w,
+      GUILD_FOLDER_CREATE_LOCAL: R,
       GUILD_FOLDER_EDIT_LOCAL: D,
       GUILD_FOLDER_DELETE_LOCAL: x,
       TOGGLE_GUILD_FOLDER_EXPAND: j,

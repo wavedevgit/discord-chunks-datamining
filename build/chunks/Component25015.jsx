@@ -2,7 +2,7 @@
 /** chunk id: 25015, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,11 +16,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk653198 = require("./653198.js");
-let m = Chunk473749.lazy(() => Promise.all([n.e("30385"), n.e("85831")]).then(n.bind(n, 120314)));
+let h = Chunk473749.lazy(() => Promise.all([n.e("30385"), n.e("85831")]).then(n.bind(n, 120314)));
 
-function h(e, t) {
+function m(e, t) {
   let {
-    hideSimpleEmbedContent: h,
+    hideSimpleEmbedContent: m,
     formatInline: g = false,
     noStyleAndInteraction: E = false,
     isInteracting: b = false,
@@ -34,7 +34,7 @@ function h(e, t) {
     location: "useMessageRenderedContent"
   }).enabled, A = (0, d.o)({
     location: "useMessageRenderedContent"
-  }), [N, P] = i.useState(false), R = i.useCallback(e => {
+  }), [N, P] = i.useState(false), w = i.useCallback(e => {
     e && P(true)
   }, []);
   return i.useEffect(() => {
@@ -65,9 +65,9 @@ function h(e, t) {
             channelId: e.channel_id,
             viewingChannelId: T,
             guildId: (0, s.k)(e),
-            setHasSpoilerEmbeds: R
+            setHasSpoilerEmbeds: w
           },
-          children: (0, r.jsx)(m, {
+          children: (0, r.jsx)(h, {
             content: e.content
           })
         })
@@ -75,7 +75,7 @@ function h(e, t) {
       hasSpoilerEmbeds: N,
       hasBailedAst: false
     } : (0, l.ZP)(e, {
-      hideSimpleEmbedContent: h,
+      hideSimpleEmbedContent: m,
       formatInline: g,
       noStyleAndInteraction: E,
       isInteracting: b,
@@ -87,5 +87,5 @@ function h(e, t) {
       viewingChannelId: T,
       allowGameMentions: C
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, g, E, b, y, O, v, I, S, T, A.enabled, C, N])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, m, g, E, b, y, O, v, I, S, T, A.enabled, C, N])
 }

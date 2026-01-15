@@ -40,10 +40,10 @@ var r, i, Chunk19784 = require("./19784.js"),
       requestAnimationFrame: d,
       batchedUpdates: f,
       willAdvance: p
-    }, m(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, p = t.willAdvance, t
+    }, h(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, p = t.willAdvance, t
   };
 
-function m(e) {
+function h(e) {
   var t = {};
   for (var n in e) true !== e[n] && (t[n] = e[n]);
   return t

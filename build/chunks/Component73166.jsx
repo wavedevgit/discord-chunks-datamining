@@ -2,7 +2,7 @@
 /** chunk id: 73166, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Oi: () => m
+  Oi: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -100,7 +100,7 @@ let _ = {
       defaultValue: false
     }
   },
-  m = {
+  h = {
     title: "Balance Widget Pill",
     stories: [{
       name: "Balance Widget Pill",

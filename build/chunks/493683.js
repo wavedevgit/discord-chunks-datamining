@@ -154,9 +154,9 @@ let C = {
   closePrivateChannel(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-    return (0, s.Z)(e) && h.default.track(y.rMx.CHANGE_LOG_DM_REMOVED, {
+    return (0, s.Z)(e) && m.default.track(y.rMx.CHANGE_LOG_DM_REMOVED, {
       last_changelog_id: o.Z.latestChangelogId(),
-      unread_count: m.ZP.getUnreadCount(e)
+      unread_count: h.ZP.getUnreadCount(e)
     }), a.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: {
@@ -251,7 +251,7 @@ let C = {
         new_icon_set: null != t,
         location: n
       };
-    h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
+    m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
       status: "initiated"
     }));
     try {
@@ -264,14 +264,14 @@ let C = {
         rejectWithError: true,
         failImmediatelyWhenRateLimited: true
       });
-      h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
+      m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
         status: "success"
       }));
       let o = null == i ? true : i.getGuildId();
       return null == o || (null == i ? true : i.isThread()) || l.Z.checkGuildTemplateDirty(o), n
     } catch (e) {
       var o, s;
-      throw h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
+      throw m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
         status: "failed",
         is_rate_limited: (null == e || null == (o = e.body) ? true : o.retry_after) != null,
         error_message: null == e || null == (s = e.body) ? true : s.message
@@ -289,7 +289,7 @@ let C = {
         new_icon_set: null != o,
         location: n
       };
-    i && h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
+    i && m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
       status: "initiated"
     }));
     try {
@@ -303,13 +303,13 @@ let C = {
           rejectWithError: true
         }),
         c = null == a ? true : a.getGuildId();
-      return null == c || (null == a ? true : a.isThread()) || l.Z.checkGuildTemplateDirty(c), i && h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
+      return null == c || (null == a ? true : a.isThread()) || l.Z.checkGuildTemplateDirty(c), i && m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
         status: "success"
       })), o
     } catch (e) {
       if (i) {
         var c, u;
-        h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
+        m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
           status: "failed",
           is_rate_limited: (null == e || null == (c = e.body) ? true : c.retry_after) != null,
           error_message: null == e || null == (u = e.body) ? true : u.message

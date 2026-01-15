@@ -5,7 +5,7 @@ require.d(exports, {
   Ld: () => u,
   O5: () => d,
   fG: () => p,
-  fw: () => m,
+  fw: () => h,
   tq: () => _,
   v4: () => f
 });
@@ -120,7 +120,7 @@ async function _(e, t, n, r, i, o) {
   }
 }
 
-function m() {
+function h() {
   a.Z.dispatch({
     type: "PREMIUM_PAYMENT_ERROR_CLEAR"
   })

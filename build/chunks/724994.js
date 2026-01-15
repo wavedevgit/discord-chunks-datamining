@@ -25,9 +25,9 @@ let l = (e, t) => {
         };
       case a.Z.VARIANTS_GROUP:
         let _ = null == (o = t.variants) ? true : o.every(t => null != e.getPurchase(t.skuId)),
-          m = (null == (s = t.variants) ? true : s.some(t => null != e.getPurchase(t.skuId))) && !_;
+          h = (null == (s = t.variants) ? true : s.some(t => null != e.getPurchase(t.skuId))) && !_;
         return {
-          isPurchased: null != _ && _, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null != m && m, isRented: d, rentalExpiresAt: u
+          isPurchased: null != _ && _, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null != h && h, isRented: d, rentalExpiresAt: u
         };
       default:
         return {

@@ -19,8 +19,8 @@ function p(e) {
   let {
     enabled: t
   } = e, n = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), p = r.useRef(null), _ = r.useRef(0), {
-    createMultipleConfettiAt: m
-  } = r.useContext(s.h), h = r.useMemo(() => ({
+    createMultipleConfettiAt: h
+  } = r.useContext(s.h), m = r.useMemo(() => ({
     size: {
       type: "static-random",
       minValue: c - u,
@@ -45,8 +45,8 @@ function p(e) {
     var e;
     if (n) return;
     let t = null == (e = p.current) ? true : e.getBoundingClientRect();
-    null != t && m(t.left + t.width / 2, t.top + t.height / 2, h, d)
-  }, [m, n, h]);
+    null != t && h(t.left + t.width / 2, t.top + t.height / 2, m, d)
+  }, [h, n, m]);
   return r.useEffect(() => {
     if (!t || n) return;
     let e = new a.sW(f, g);

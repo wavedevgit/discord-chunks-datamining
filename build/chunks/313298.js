@@ -25,12 +25,12 @@ let c = 75e3,
   p = 2e3,
   _ = 1e4;
 
-function m(e) {
+function h(e) {
   var t;
   return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? u : f
 }
 
-function h(e) {
+function m(e) {
   var t;
   return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? d : p
 }
@@ -64,12 +64,12 @@ function v(e) {
 function S(e) {
   let t = g[e];
   if (null == t) returnfalse;
-  let n = t.size >= m(e),
+  let n = t.size >= h(e),
     r = E[e];
   if (n) returntrue;
   if (null == r) returnfalse;
   let i = Date.now() - r;
-  return null != r && i >= h(e)
+  return null != r && i >= m(e)
 }
 
 function I(e) {

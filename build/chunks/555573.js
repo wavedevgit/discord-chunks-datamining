@@ -5,9 +5,9 @@ require.d(exports, {
   GV: () => E,
   Po: () => p,
   Sg: () => _,
-  VP: () => h,
+  VP: () => m,
   dh: () => g,
-  g7: () => m
+  g7: () => h
 }), require("./467055.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -33,7 +33,7 @@ function p(e) {
     query: f,
     searchResultsPosition: p,
     source: _,
-    commandOrigin: m
+    commandOrigin: h
   } = e;
   null != n && i()(n.inputType !== d.iw.PLACEHOLDER, "command should not be placeholder"), o.Z.dispatch({
     type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
@@ -48,7 +48,7 @@ function p(e) {
     query: f,
     searchResultsPosition: p,
     source: _,
-    commandOrigin: m
+    commandOrigin: h
   })
 }
 
@@ -60,7 +60,7 @@ function _(e, t) {
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   o.Z.dispatch({
     type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
     channelId: e,
@@ -68,8 +68,8 @@ function m(e, t) {
   })
 }
 
-function h(e, t) {
-  m(e, Object.fromEntries(Object.entries(t).map(e => {
+function m(e, t) {
+  h(e, Object.fromEntries(Object.entries(t).map(e => {
     let [t, n] = e;
     return [t, {
       lastValidationResult: n

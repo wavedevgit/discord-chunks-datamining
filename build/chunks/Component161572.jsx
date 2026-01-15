@@ -22,8 +22,8 @@ function p(e) {
     guildId: n,
     channelId: p,
     onClose: _,
-    appContext: m,
-    disableAutoFocus: h = false
+    appContext: h,
+    disableAutoFocus: m = false
   } = e, g = (0, c.Z)(t.id, n), E = (0, o.i)(a.Z.USER_PROFILE_POPOUT), b = (0, i.e7)([s.ZP], () => s.ZP.canShowProfilePopoutGiftIntents(t.id), [t.id]), y = E && b;
   return (0, r.jsxs)("div", {
     className: f.footer,
@@ -35,7 +35,7 @@ function p(e) {
         guildId: n,
         channelId: p,
         onClose: _,
-        disableAutoFocus: h,
+        disableAutoFocus: m,
         upsell: y
       })]
     }), !g && (0, r.jsx)(u.Z, {
@@ -43,7 +43,7 @@ function p(e) {
       guildId: n,
       onClose: _,
       fullWidth: true,
-      appContext: m
+      appContext: h
     })]
   })
 }

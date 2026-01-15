@@ -23,11 +23,11 @@ let d = 12e4,
   f = 1e4,
   p = 5,
   _ = {},
-  m = {},
-  h = new Set;
+  h = {},
+  m = new Set;
 
 function g() {
-  _ = {}, m = {}
+  _ = {}, h = {}
 }
 
 function E(e) {
@@ -38,7 +38,7 @@ function E(e) {
   _[t] = {
     url: n,
     expires: Date.now() + d
-  }, m[t] = 0, h.delete(t)
+  }, h[t] = 0, m.delete(t)
 }
 
 function b(e) {
@@ -48,8 +48,8 @@ function b(e) {
   } = e;
   _[t] = {
     url: null,
-    expires: Date.now() + (null != n ? n : f * m[t])
-  }, h.delete(t)
+    expires: Date.now() + (null != n ? n : f * h[t])
+  }, m.delete(t)
 }
 
 function y(e) {
@@ -57,14 +57,14 @@ function y(e) {
   let {
     streamKey: n
   } = e;
-  m[n] = (null != (t = m[n]) ? t : 0) + 1, h.add(n)
+  h[n] = (null != (t = h[n]) ? t : 0) + 1, m.add(n)
 }
 
 function O(e) {
   let {
     voiceStates: t
   } = e;
-  return !(a().isEmpty(_) && a().isEmpty(m)) && t.reduce((e, t) => {
+  return !(a().isEmpty(_) && a().isEmpty(h)) && t.reduce((e, t) => {
     let {
       userId: n,
       guildId: r,
@@ -78,7 +78,7 @@ function O(e) {
       channelId: i,
       ownerId: n
     });
-    return delete _[o], delete m[o], true
+    return delete _[o], delete h[o], true
   }, false)
 }
 class v extends(r = Chunk442837.ZP.Store) {
@@ -100,9 +100,9 @@ class v extends(r = Chunk442837.ZP.Store) {
         ownerId: n
       }),
       a = _[i],
-      o = null != (r = m[i]) ? r : 0,
+      o = null != (r = h[i]) ? r : 0,
       s = null != a && Date.now() > a.expires;
-    return (null == a && o < p || s) && !h.has(i)
+    return (null == a && o < p || s) && !m.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {
@@ -119,7 +119,7 @@ class v extends(r = Chunk442837.ZP.Store) {
       channelId: t,
       ownerId: n
     });
-    return h.has(r)
+    return m.has(r)
   }
 }
 u(v, "displayName", "ApplicationStreamPreviewStore");

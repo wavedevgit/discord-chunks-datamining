@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,7 +77,7 @@ function b(e) {
     channel: t,
     centerButton: n = false,
     onCallJoined: p
-  } = e, m = g(e, ["channel", "centerButton", "onCallJoined"]);
+  } = e, h = g(e, ["channel", "centerButton", "onCallJoined"]);
   let {
     parentAnalyticsLocation: E
   } = (0, s.ZP)(), b = n ? u.d : u.Z, y = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
@@ -85,7 +85,7 @@ function b(e) {
   }, [t.id, p, E]);
   return i.useEffect(() => (c.S.subscribe(d.CkL.CALL_ACCEPT, O), () => {
     c.S.unsubscribe(d.CkL.CALL_ACCEPT, O)
-  }), [O]), (0, r.jsx)(b, h(_({}, m), {
+  }), [O]), (0, r.jsx)(b, m(_({}, h), {
     iconComponent: a.Csw,
     label: y,
     onClick: O,

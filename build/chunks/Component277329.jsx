@@ -38,32 +38,32 @@ function g() {
         case p.Z.MY_GAMES:
         default:
           return (0, r.jsx)(u.ZP, {
-            className: h.body,
+            className: m.body,
             showHeader: false
           })
       }
     };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Heading, {
-      className: h.heading,
+      className: m.heading,
       variant: "heading-xl/semibold",
-      children: m.intl.string(m.t.URyqtP)
+      children: h.intl.string(h.t.URyqtP)
     }), (0, r.jsx)(a.njP, {
-      className: h.tabBar,
+      className: m.tabBar,
       selectedItem: n,
       onItemSelect: g,
       orientation: "horizontal",
       type: "top",
       look: "brand",
       children: e.map(e => (0, r.jsxs)(a.njP.Item, {
-        className: h.tab,
+        className: m.tab,
         id: e.id,
         "aria-label": e.title,
         children: [(0, r.jsx)(e.icon, {
-          className: h.tabIcon,
+          className: m.tabIcon,
           color: "currentColor"
         }), (0, r.jsx)("div", {
-          className: h.iconTitle,
+          className: m.iconTitle,
           children: e.title
         })]
       }, e.id))

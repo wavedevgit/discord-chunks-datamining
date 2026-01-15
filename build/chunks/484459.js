@@ -16,9 +16,9 @@ var Chunk570140 = require("./570140.js"),
 let f = 6e4;
 
 function p(e, t) {
-  var n, p, _, m;
+  var n, p, _, h;
   let {
-    type: h,
+    type: m,
     withMutualGuilds: g = false,
     withMutualFriendsCount: E = false,
     withMutualFriends: b = false,
@@ -31,14 +31,14 @@ function p(e, t) {
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if ("" === e || u.Z.isFetchingProfile(e, v)) return Promise.resolve();
   let C = u.Z.getUserProfile(e),
-    A = Date.now() - (null != (m = null == C ? true : C.fetchEndedAt) ? m : 0) >= f;
+    A = Date.now() - (null != (h = null == C ? true : C.fetchEndedAt) ? h : 0) >= f;
   if (((null == C || null == (n = C.fetchError) ? true : n.status) === 404 || (null == C || null == (p = C.fetchError) ? true : p.status) === 429) && !A) return Promise.resolve();
   let N = u.Z.getGuildMemberProfile(e, v),
     P = u.Z.getMutualGuilds(e),
-    R = u.Z.getMutualFriends(e),
-    w = u.Z.getMutualFriendsCount(e),
-    D = null == R && b,
-    x = null == w && E,
+    w = u.Z.getMutualFriends(e),
+    R = u.Z.getMutualFriendsCount(e),
+    D = null == w && b,
+    x = null == R && E,
     L = null == P && g || D || x,
     j = null == v ? null == C : null == N,
     M = !j && (A || L);
@@ -46,7 +46,7 @@ function p(e, t) {
   let k = null != v ? null == N ? true : N.profileEffect : null == C ? true : C.profileEffect;
   null != k && (0, o.lW)(k.skuId), null != t && (0, a.vM)(t);
   let U = {
-    type: h,
+    type: m,
     withMutualGuilds: g,
     withMutualFriends: b,
     withMutualFriendsCount: E,

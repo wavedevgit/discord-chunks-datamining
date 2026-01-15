@@ -43,7 +43,7 @@ function b(e) {
     } = e,
     I = new Date(f.default.extractTimestamp(i.id)),
     T = (0, _.W3)(l),
-    C = (0, s.yE)(null != (t = i.flags) ? t : 0, m.udG.EMBEDDED);
+    C = (0, s.yE)(null != (t = i.flags) ? t : 0, h.udG.EMBEDDED);
   if (null != b && !C && !v) try {
     let e = new URL(b);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
@@ -59,7 +59,7 @@ function b(e) {
     }),
     children: [null != n ? (0, r.jsx)(y, {
       icon: c.xPt,
-      text: h.intl.format(h.t["5k5OKD"], {
+      text: m.intl.format(m.t["5k5OKD"], {
         origin: n
       })
     }) : null, (0, r.jsx)(y, {
@@ -67,12 +67,12 @@ function b(e) {
       text: (0, p.i)(i)
     }), (0, r.jsx)(y, {
       icon: c.T39,
-      text: h.intl.formatToPlainString(h.t["+1bjc8"], {
+      text: m.intl.formatToPlainString(m.t["+1bjc8"], {
         date: I
       })
     }), l.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: c.wGt,
-      text: h.intl.formatToPlainString(h.t.UHGHSP, {
+      text: m.intl.formatToPlainString(m.t.UHGHSP, {
         guildCount: O
       })
     }) : null, (0, r.jsx)(y, {

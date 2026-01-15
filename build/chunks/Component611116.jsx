@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,7 +63,7 @@ function g(e) {
     shouldLoadVideo: a,
     isReducedMotion: u,
     includeSideGradient: p = false,
-    startLeftAligned: m = false,
+    startLeftAligned: h = false,
     enablePremiumBrandRefreshDesign: g
   } = e, E = g ? f : d;
   return (0, r.jsxs)("div", {
@@ -88,8 +88,8 @@ function g(e) {
             n = l.y$.LARGE
         }
         return (0, r.jsx)(r.Fragment, {
-          children: e.map(e => (0, r.jsx)(c.Z, h(_({
-            index: t + +!!m
+          children: e.map(e => (0, r.jsx)(c.Z, m(_({
+            index: t + +!!h
           }, e), {
             size: n,
             shouldLoadVideo: a,

@@ -64,10 +64,10 @@ function A() {
 }
 class N extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    false !== c.K.get(E) && (b = m.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
+    false !== c.K.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
   isHandoffAvailable() {
-    return !h.s.isDisallowPopupsSet() && b
+    return !m.s.isDisallowPopupsSet() && b
   }
   get user() {
     return a

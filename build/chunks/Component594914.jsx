@@ -48,12 +48,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = "slayer-payment-modal";
+let m = "slayer-payment-modal";
 
 function g(e, t) {
   let {
@@ -64,7 +64,7 @@ function g(e, t) {
   } = t, {
     analyticsLocations: f
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, p = false, _ = (0, i.Z)(), {
-    enabled: m
+    enabled: h
   } = (0, l.VL)({
     location: "openCollectiblesPaymentModal"
   }), g = () => {
@@ -90,9 +90,9 @@ function g(e, t) {
     additionalUserIds: c,
     onCloseCallback: g,
     onComplete: y,
-    modalKey: h
+    modalKey: m
   };
-  if (m) return void E(O);
+  if (h) return void E(O);
   b(O)
 }
 let E = e => {
@@ -137,13 +137,13 @@ let E = e => {
       additionalUserIds: d,
       onCloseCallback: f,
       onComplete: _,
-      modalKey: h
+      modalKey: m
     } = e;
     return (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 556266));
-      return n => (0, r.jsx)(e, m(p({}, n), {
+      return n => (0, r.jsx)(e, h(p({}, n), {
         loadId: t,
         applicationId: i,
         skuId: o,
@@ -156,7 +156,7 @@ let E = e => {
       }))
     }, {
       onCloseCallback: f,
-      modalKey: h
+      modalKey: m
     })
   };
 

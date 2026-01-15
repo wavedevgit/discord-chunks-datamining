@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk867219 = require("./867219.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,14 +48,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -176,7 +176,7 @@ function G(e) {
   }), {
     confettiCanvas: A,
     environment: P,
-    setConfettiCanvas: R,
+    setConfettiCanvas: w,
     customConfettiVisible: G,
     setCustomConfettiVisible: Z,
     customConfettiDisplayOptions: F,
@@ -200,8 +200,8 @@ function G(e) {
     onClose: t,
     giftingOrigin: p
   }), z = i.useMemo(() => [b.WA, ...c ? [S.Dd] : [], O.n, ...b.yp, b.wo, {
-    key: h.h8.CONFIRM,
-    renderStep: e => (0, r.jsx)(v.x, w({
+    key: m.h8.CONFIRM,
+    renderStep: e => (0, r.jsx)(v.x, R({
       confettiCanvas: A,
       analyticsLocations: C,
       hideConfetti: B
@@ -212,10 +212,10 @@ function G(e) {
     value: C,
     children: [(0, r.jsx)(k, {
       environment: P,
-      setConfettiCanvas: R,
+      setConfettiCanvas: w,
       customConfettiDisplayOptions: F,
       customConfettiVisible: G
-    }), (0, r.jsx)(m.PaymentContextProvider, {
+    }), (0, r.jsx)(h.PaymentContextProvider, {
       loadId: s,
       stepConfigs: z,
       applicationId: T.XAJ,

@@ -21,13 +21,13 @@ function d(e) {
     savedUserColor: d,
     pendingColor: f,
     setPendingAccentColor: p
-  } = e, _ = n.getAvatarURL(null, 80), m = (0, o.dQu)(a.Z.unsafe_rawColors.PRIMARY_530).hex(), h = (0, s.Cf)(_, m, false), g = (0, i._i)(h[0]);
+  } = e, _ = n.getAvatarURL(null, 80), h = (0, o.dQu)(a.Z.unsafe_rawColors.PRIMARY_530).hex(), m = (0, s.Cf)(_, h, false), g = (0, i._i)(m[0]);
   return (0, r.jsx)(c.Z, {
     title: u.intl.string(u.t["/X3fkf"]),
     children: (0, r.jsx)(l.Z, {
       onChange: e => p(e),
       color: null != (t = null != f ? f : d) ? t : g,
-      suggestedColors: h,
+      suggestedColors: m,
       showEyeDropper: true
     })
   })

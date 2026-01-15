@@ -2,7 +2,7 @@
 /** chunk id: 565384, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ez: () => m,
+  Ez: () => h,
   Ps: () => u,
   Xo: () => p,
   dT: () => f,
@@ -71,6 +71,6 @@ function _() {
   }), e
 }
 
-function m() {
+function h() {
   return c.getState().impressions
 }

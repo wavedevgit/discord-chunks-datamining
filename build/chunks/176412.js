@@ -2,9 +2,9 @@
 /** chunk id: 176412, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bm: () => R,
+  Bm: () => w,
   P7: () => P,
-  X: () => w,
+  X: () => R,
   ae: () => N
 });
 var Chunk473749 = require("./473749.js"),
@@ -65,7 +65,7 @@ let C = function(e, t) {
     return e
   }({}, Chunk428595.Z.RULES.commandMention), {
     parse: (e, t, n) => ({
-      content: m.Z.RULES.commandMention.parse(e, t, n).content
+      content: h.Z.RULES.commandMention.parse(e, t, n).content
     })
   }),
   A = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
@@ -84,8 +84,8 @@ function P(e) {
     sectionName: a,
     commandName: s,
     autoDismissOnClick: _ = true,
-    launchingComponentId: m,
-    submitting: h = false,
+    launchingComponentId: h,
+    submitting: m = false,
     fetchesApplication: g = true,
     onConfirmActivityLaunchChecksAlertOpen: I
   } = e, T = (0, l.O)(), C = (0, c.Qv)({
@@ -95,7 +95,7 @@ function P(e) {
   }), A = (0, O.Q)(C), N = (0, o.e7)([b.Z], () => b.Z.entrypoint()), P = r.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, f.If)(t, n.id).descriptor) ? true : r.botId
-  }, [t, n.id, n.bot]), R = (0, c.w1)({
+  }, [t, n.id, n.bot]), w = (0, c.w1)({
     application: n,
     botUserIdForAppDM: P,
     embeddedActivitiesManager: u.Z,
@@ -113,22 +113,22 @@ function P(e) {
         source: N
       })
     },
-    launchingComponentId: m,
+    launchingComponentId: h,
     commandOrigin: p.bB.APPLICATION_LAUNCHER,
     sectionName: a,
     source: N,
     fetchesApplication: g,
     onConfirmActivityLaunchChecksAlertOpen: I
-  }), w = "primary", D = null != s ? s : S.intl.string(S.t.zKX8Nu);
-  return A === c.JS.JOIN ? (w = "active", D = S.intl.string(S.t.d9PsMj)) : A !== c.JS.LEAVE || h || (w = "critical-primary", D = S.intl.string(S.t["Hi1/aQ"])), {
-    onActivityItemSelected: R,
+  }), R = "primary", D = null != s ? s : S.intl.string(S.t.zKX8Nu);
+  return A === c.JS.JOIN ? (R = "active", D = S.intl.string(S.t.d9PsMj)) : A !== c.JS.LEAVE || m || (R = "critical-primary", D = S.intl.string(S.t["Hi1/aQ"])), {
+    onActivityItemSelected: w,
     activityAction: A,
-    buttonVariant: w,
+    buttonVariant: R,
     buttonText: D
   }
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = b.Z.entrypoint(),
     a = r.useMemo(() => (0, i.debounce)((e, t) => {
       (0, d.yw)(v.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
@@ -144,7 +144,7 @@ function R(e, t) {
   }, [e, t, n, a])
 }
 
-function w(e) {
+function R(e) {
   g.S.dispatchToLastSubscribed(v.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })

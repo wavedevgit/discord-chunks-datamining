@@ -53,7 +53,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -207,7 +207,7 @@ class k extends Chunk476326.ZP {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
     if (D.log("Attempting to upload attachment with resumeFrom: ".concat(t, " and attempts: ").concat(this.uploadAttempts)), t > 0) {
       var n;
-      this.uploadAnalytics.uploadResumptionCount++, e.headers = w(P({}, null != (n = e.headers) ? n : {}), {
+      this.uploadAnalytics.uploadResumptionCount++, e.headers = R(P({}, null != (n = e.headers) ? n : {}), {
         "Content-Range": "bytes ".concat(t, "-").concat(this.currentSize - 1, "/").concat(this.currentSize)
       })
     }
@@ -319,7 +319,7 @@ class k extends Chunk476326.ZP {
       D.log("Requesting upload url for ".concat(this.id));
       let e = await this.trackTime("getUploadUrlTimeMs", async () => {
         let e = o.getCreateAttachmentURL(this.channelId);
-        return await s.tn.post(w(P({
+        return await s.tn.post(R(P({
           url: e,
           body: {
             files: [a]
@@ -466,13 +466,13 @@ class k extends Chunk476326.ZP {
     g.default.track(A.rMx.ATTACHMENT_UPLOAD_STARTED, {
       file_size: this.currentSize,
       mime_type: null != (e = this.mimeType) ? e : "unknown",
-      video_upload_quality: m.ZP.videoUploadQuality,
-      data_saving_mode: m.ZP.dataSavingMode,
-      low_quality_image_mode: m.ZP.dataSavingMode,
+      video_upload_quality: h.ZP.videoUploadQuality,
+      data_saving_mode: h.ZP.dataSavingMode,
+      low_quality_image_mode: h.ZP.dataSavingMode,
       channel_id: this.channelId,
-      connection_type: h.Z.getType(),
-      effective_connection_speed: h.Z.getEffectiveConnectionSpeed(),
-      service_provider: h.Z.getServiceProvider()
+      connection_type: m.Z.getType(),
+      effective_connection_speed: m.Z.getEffectiveConnectionSpeed(),
+      service_provider: m.Z.getServiceProvider()
     })
   }
   trackUploadFinished(e) {
@@ -486,9 +486,9 @@ class k extends Chunk476326.ZP {
       mime_type: null != (t = this.mimeType) ? t : "unknown",
       num_upload_attempts: null != (n = this.uploadAnalytics.numUploadAttempts) ? n : 1,
       error_code: this.error,
-      video_upload_quality: m.ZP.videoUploadQuality,
-      data_saving_mode: m.ZP.dataSavingMode,
-      low_quality_image_mode: m.ZP.dataSavingMode,
+      video_upload_quality: h.ZP.videoUploadQuality,
+      data_saving_mode: h.ZP.dataSavingMode,
+      low_quality_image_mode: h.ZP.dataSavingMode,
       compress_time_ms: this.uploadAnalytics.timing.compressTimeMs,
       get_upload_url_time_ms: this.uploadAnalytics.timing.getUploadUrlTimeMs,
       upload_time_ms: this.uploadAnalytics.timing.uploadTimeMs,
@@ -528,9 +528,9 @@ class k extends Chunk476326.ZP {
       upload_resumption_check_time_ms: this.uploadAnalytics.timing.resumptionCheckTimeMs,
       conversion_failure_reason: this.uploadAnalytics.conversionFailureReason,
       upload_http_client: this._libdiscoreEnabled ? "libdiscore" : "httputils",
-      connection_type: h.Z.getType(),
-      effective_connection_speed: h.Z.getEffectiveConnectionSpeed(),
-      service_provider: h.Z.getServiceProvider()
+      connection_type: m.Z.getType(),
+      effective_connection_speed: m.Z.getEffectiveConnectionSpeed(),
+      service_provider: m.Z.getServiceProvider()
     })
   }
   constructor(e, t, n, r) {

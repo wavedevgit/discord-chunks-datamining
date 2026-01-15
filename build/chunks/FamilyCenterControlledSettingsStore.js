@@ -42,7 +42,7 @@ function _(e) {
   d[t] = n
 }
 
-function m(e) {
+function h(e) {
   let {
     userId: t,
     settings: n
@@ -50,7 +50,7 @@ function m(e) {
   u[t] = (0, s.re)(a.o8, u[t], r)
 }
 
-function h() {
+function m() {
   u = {}, d = {}, c = false
 }
 class g extends(r = Chunk442837.ZP.Store) {
@@ -80,6 +80,6 @@ let E = new g(Chunk570140.Z, {
   FAMILY_CENTER_TEEN_SETTINGS_FETCH_START: f,
   FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS: p,
   FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS: _,
-  FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS: m,
-  LOGOUT: h
+  FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS: h,
+  LOGOUT: m
 })

@@ -21,8 +21,8 @@ let u = 5500,
       y: f,
       assetKey: p,
       onClick: _,
-      skipNewUserEducation: m = false,
-      shadowPosition: h
+      skipNewUserEducation: h = false,
+      shadowPosition: m
     } = e, g = (0, l.Z)(), E = i.useMemo(() => null == g ? true : g.seats[p], [g, p]), b = i.useMemo(() => null == E ? true : E.seat, [E]), y = i.useMemo(() => null == E ? true : E.shadow, [E]);
     return (0, r.jsx)(s.P3F, {
       "aria-label": "claim seat",
@@ -37,10 +37,10 @@ let u = 5500,
       },
       children: (0, r.jsxs)("div", {
         className: c.seatWrapper,
-        children: [null != y && null != h && (0, r.jsx)("img", {
+        children: [null != y && null != m && (0, r.jsx)("img", {
           className: o()(c.image, c.shadow),
           style: {
-            transform: "translate(".concat(h.x, "px, ").concat(h.y, "px)")
+            transform: "translate(".concat(m.x, "px, ").concat(m.y, "px)")
           },
           src: null == E ? true : E.shadow,
           alt: ""
@@ -48,7 +48,7 @@ let u = 5500,
           onDragStart: e => e.preventDefault(),
           className: o()(c.image, {
             [c.claimed]: null != n,
-            [c.noAnimation]: m
+            [c.noAnimation]: h
           }),
           style: {
             animationDelay: "".concat(u + d * t, "ms")

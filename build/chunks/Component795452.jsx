@@ -21,22 +21,22 @@ function o(e) {
     density: f,
     disableAdaptiveTheme: p,
     reduceAdaptiveTheme: _
-  } = e, m = i.useContext(a.Ni);
+  } = e, h = i.useContext(a.Ni);
   a.qF;
-  let h = i.useMemo(() => (0, a.TT)({
-    theme: null != n ? n : m.theme,
-    primaryColor: null != o ? o : m.primaryColor,
-    secondaryColor: null != s ? s : m.secondaryColor,
-    gradient: null != l ? l : m.gradient,
-    flags: null != c ? c : m.flags,
-    contrast: null != u ? u : m.contrast,
-    saturation: null != d ? d : m.saturation,
-    density: null != f ? f : m.density,
-    disableAdaptiveTheme: null != p ? p : m.disableAdaptiveTheme,
-    reduceAdaptiveTheme: null != _ ? _ : m.reduceAdaptiveTheme
-  }), [n, m.theme, m.primaryColor, m.secondaryColor, m.gradient, m.flags, m.contrast, m.saturation, m.density, m.disableAdaptiveTheme, m.reduceAdaptiveTheme, o, s, l, c, u, d, f, p, _]);
+  let m = i.useMemo(() => (0, a.TT)({
+    theme: null != n ? n : h.theme,
+    primaryColor: null != o ? o : h.primaryColor,
+    secondaryColor: null != s ? s : h.secondaryColor,
+    gradient: null != l ? l : h.gradient,
+    flags: null != c ? c : h.flags,
+    contrast: null != u ? u : h.contrast,
+    saturation: null != d ? d : h.saturation,
+    density: null != f ? f : h.density,
+    disableAdaptiveTheme: null != p ? p : h.disableAdaptiveTheme,
+    reduceAdaptiveTheme: null != _ ? _ : h.reduceAdaptiveTheme
+  }), [n, h.theme, h.primaryColor, h.secondaryColor, h.gradient, h.flags, h.contrast, h.saturation, h.density, h.disableAdaptiveTheme, h.reduceAdaptiveTheme, o, s, l, c, u, d, f, p, _]);
   return (0, r.jsx)(a.Ni.Provider, {
-    value: h,
+    value: m,
     children: t
   })
 }

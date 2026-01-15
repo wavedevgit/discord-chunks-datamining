@@ -2,7 +2,7 @@
 /** chunk id: 955415, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -64,13 +64,13 @@ let y = e => {
       onClick: u,
       expired: d = false,
       user: _,
-      className: h
-    } = e, E = null != (t = (0, c.ZP)(a)) ? t : "", y = m.QK.useSetting();
+      className: m
+    } = e, E = null != (t = (0, c.ZP)(a)) ? t : "", y = h.QK.useSetting();
     if (d) return (0, r.jsx)("div", {
       className: b.guildIconExpired
     });
     let O = null == i || null != i.icon,
-      v = o()((0, g.l)(b, "guildIcon", O ? "Image" : "", null != u ? "Joined" : ""), h);
+      v = o()((0, g.l)(b, "guildIcon", O ? "Image" : "", null != u ? "Joined" : ""), m);
     return null != n ? (0, r.jsx)(f.Z, {
       game: n,
       onClick: u,
@@ -186,7 +186,7 @@ let y = e => {
   A = e => {
     let {
       guild: t
-    } = e, [n, a] = i.useState(false), s = h.ZP.getGuildSplashURL({
+    } = e, [n, a] = i.useState(false), s = m.ZP.getGuildSplashURL({
       id: t.id,
       splash: t.splash,
       size: 400 * (0, _.x_)()
@@ -230,4 +230,4 @@ let y = e => {
     })
   };
 C.Header = y, C.Body = O, C.Icon = v, C.Info = S, C.Data = I, C.Channel = T, C.GuildSplash = A, C.GuildName = N, C.GuildTemplateName = P, y.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", S.displayName = "InviteButton.Info", I.displayName = "InviteButton.Data", T.displayName = "InviteButton.Channel", A.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", P.displayName = "InviteButton.GuildTemplateName";
-let R = C
+let w = C

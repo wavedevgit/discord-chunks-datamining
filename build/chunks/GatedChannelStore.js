@@ -32,7 +32,7 @@ let b = {},
 
 function O(e, t) {
   if (null == e) returnfalse;
-  let n = h.default.getCurrentUser();
+  let n = m.default.getCurrentUser();
   if (null == n) returnfalse;
   let r = p.ZP.getMember(t, n.id);
   return null != r && r.roles.includes(e.id)
@@ -75,7 +75,7 @@ function S(e, t) {
 }
 
 function I(e) {
-  let t = m.Z.getGuild(e);
+  let t = h.Z.getGuild(e);
   if (null == t) return;
   let n = b[e] = new Set;
   if (!t.features.has(g.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) return;
@@ -91,7 +91,7 @@ function T(e, t) {
   if (null == n) returnfalse;
   let r = f.Z.getChannel(t);
   if (null == r) returnfalse;
-  let i = m.Z.getGuild(r.getGuildId());
+  let i = h.Z.getGuild(r.getGuildId());
   if (null == i) returnfalse;
   let a = n.has(t),
     o = S(r, i);
@@ -123,7 +123,7 @@ function P(e) {
   return null != t.guild_id && T(t.guild_id, t.id)
 }
 
-function R(e) {
+function w(e) {
   let {
     channels: t
   } = e, n = false;
@@ -131,7 +131,7 @@ function R(e) {
   return n
 }
 
-function w(e) {
+function R(e) {
   let {
     guildId: t,
     restrictions: n
@@ -147,7 +147,7 @@ function D(e) {
 }
 class x extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(f.Z, p.ZP, _.Z, m.Z, c.Z, h.default)
+    this.waitFor(f.Z, p.ZP, _.Z, h.Z, c.Z, m.default)
   }
   isChannelGated(e, t) {
     if (null == e) returnfalse;
@@ -179,7 +179,7 @@ let L = new x(Chunk570140.Z, {
   IMPERSONATE_STOP: N,
   CHANNEL_CREATE: P,
   CHANNEL_DELETE: P,
-  CHANNEL_UPDATES: R,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: w,
+  CHANNEL_UPDATES: w,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: R,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: D
 })

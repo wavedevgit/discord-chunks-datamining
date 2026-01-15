@@ -18,34 +18,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk719426 = require("./719426.js"),
   Chunk791541 = require("./791541.js");
 
-function h(e) {
+function m(e) {
   let {
     channelId: t,
     messageId: n,
-    emoji: h,
+    emoji: m,
     useChatFontScaling: g,
     color: E,
     count: b,
     emojiSize: y
-  } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, h)), v = g ? m : _, S = i.useMemo(() => (0, p.Zn)(h, E, t, {
+  } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, m)), v = g ? h : _, S = i.useMemo(() => (0, p.Zn)(m, E, t, {
     key: O,
     messageId: n
-  }), [E, O, h, t, n]), [I, T] = i.useState(false), C = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), A = c.Yk.useSetting(), N = i.useCallback(() => {
+  }), [E, O, m, t, n]), [I, T] = i.useState(false), C = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), A = c.Yk.useSetting(), N = i.useCallback(() => {
     o.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
       messageId: n,
-      emoji: h
+      emoji: m
     })
-  }, [h, t, n]);
+  }, [m, t, n]);
   return (i.useEffect(() => {
     let e = () => {
       if (I) return;
-      let e = (0, d.vJ)("".concat(Date.now()).concat(t).concat(n).concat(h.name)) % 10;
+      let e = (0, d.vJ)("".concat(Date.now()).concat(t).concat(n).concat(m.name)) % 10;
       (e += b > 4 ? 4 : b - 1) > 7 && (T(true), (0, l.T6)({
         channelId: t,
         messageId: n,
-        emoji: h,
+        emoji: m,
         key: u.I.RANDOM
       }))
     };
@@ -55,11 +55,11 @@ function h(e) {
     return () => {
       clearInterval(r)
     }
-  }, [A, t, b, h, h.name, I, n, C]), null == O) ? null : (0, r.jsx)(f.Z, {
+  }, [A, t, b, m, m.name, I, n, C]), null == O) ? null : (0, r.jsx)(f.Z, {
     className: v.effect,
     effect: S,
     onComplete: N,
     emojiSize: y
   })
 }
-let g = Chunk473749.memo(h)
+let g = Chunk473749.memo(m)

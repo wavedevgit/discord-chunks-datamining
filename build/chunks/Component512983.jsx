@@ -77,20 +77,20 @@ function _(e) {
     disabled: u,
     required: p = false,
     error: _,
-    errorId: m
-  } = e, h = f(e, ["tag", "children", "className", "disabled", "required", "error", "errorId"]);
+    errorId: h
+  } = e, m = f(e, ["tag", "children", "className", "disabled", "required", "error", "errorId"]);
   return t = "legend" === n ? n : o.H, (0, r.jsxs)(t, d(c({
     className: a()(s[n], "h5" !== n ? s.defaultColor : null, l, {
       [s["defaultMargin".concat(n)]]: null == l,
       [s.disabled]: u,
       [s.error]: null != _
     })
-  }, h), {
+  }, m), {
     children: [i, p && null == _ ? (0, r.jsx)("span", {
       className: s.required,
       children: "*"
     }) : null, null != _ ? (0, r.jsxs)("span", {
-      id: m,
+      id: h,
       className: s.errorMessage,
       children: [null != i ? (0, r.jsx)("span", {
         className: s.errorSeparator,

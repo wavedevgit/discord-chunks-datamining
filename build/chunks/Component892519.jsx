@@ -2,7 +2,7 @@
 /** chunk id: 892519, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e) {
+function h(e) {
   switch (e.type) {
     case o.re.BUTTON:
       return (0, r.jsx)(u.Z, _({}, e));
@@ -47,14 +47,14 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     components: t,
     accessory: n,
     renderComponents: i
   } = e, {
     message: u
-  } = (0, l.CJ)(), [d, p] = (0, c.e4)(), _ = (0, c.$Y)(p), h = n.type === o.re.BUTTON;
+  } = (0, l.CJ)(), [d, p] = (0, c.e4)(), _ = (0, c.$Y)(p), m = n.type === o.re.BUTTON;
   return (0, r.jsxs)("div", {
     className: f.section,
     ref: d,
@@ -62,14 +62,14 @@ function h(e) {
       className: f.children,
       children: [(0, r.jsx)("div", {
         className: a()(f.textChildren, {
-          [f.verticallyCenterAlign]: h
+          [f.verticallyCenterAlign]: m
         }),
         children: i(t)
       }), (0, r.jsx)("div", {
         className: a()(f.accessory, {
           [f.restrictWidth]: _
         }),
-        children: m(n)
+        children: h(n)
       })]
     }), null != u ? (0, r.jsx)(s.ZP, {
       message: u,

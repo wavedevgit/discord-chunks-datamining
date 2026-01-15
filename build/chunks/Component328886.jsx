@@ -53,7 +53,7 @@ function M(e) {
           color: "currentColor"
         });
       case P.Ol.ANDROID:
-        return (0, r.jsx)(R.j, {
+        return (0, r.jsx)(w.j, {
           width: s.Z.xxs,
           height: s.Z.xxs,
           color: "currentColor"
@@ -74,7 +74,7 @@ function M(e) {
           color: "currentColor"
         });
       case P.Ol.VR:
-        return (0, r.jsx)(o.Pb9, {
+        return (0, r.jsx)(o.VrHeadsetIcon, {
           size: "xxs",
           color: "currentColor"
         });
@@ -108,7 +108,7 @@ function k(e) {
     application: y,
     applicationName: C,
     channel: P,
-    header: R,
+    header: w,
     currentUserId: k,
     launchableAppId: U,
     isEmbeddedApplication: G,
@@ -133,7 +133,7 @@ function k(e) {
       children: [(0, r.jsx)(c.iWm, {
         size: "xxs",
         color: "currentColor"
-      }), (0, r.jsx)(m.x, {
+      }), (0, r.jsx)(h.x, {
         entry: {
           start: ee,
           end: null == Y || null == (e = Y.timestamps) ? true : e.end
@@ -143,7 +143,7 @@ function k(e) {
         textFontCode: false
       })]
     }) : null
-  }, [ee, null == Y || null == (n = Y.timestamps) ? true : n.end]), en = (0, I.H)(s), er = (0, E.N)(y.id), ei = i.useMemo(() => er.some(e => (0, h.ig)(e) === a.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }, [ee, null == Y || null == (n = Y.timestamps) ? true : n.end]), en = (0, I.H)(s), er = (0, E.N)(y.id), ei = i.useMemo(() => er.some(e => (0, m.ig)(e) === a.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.YqE, {
       size: "xxs",
       color: "currentColor"
@@ -170,8 +170,8 @@ function k(e) {
     isFrameApplication: el,
     isGameLaunchable: es
   }), ed = (0, v.p)(Y, W, s, y), ef = (0, S.L)(Y, s, y, k), ep = (0, T.g)(W, Y), e_ = (0, l.e7)([b.Z], () => null != Y && null != Y.application_id && b.Z.getState(Y.application_id, D.mFx.JOIN) === D.OcF.LOADING), {
-    actions: em,
-    hasAccountLinkButton: eh
+    actions: eh,
+    hasAccountLinkButton: em
   } = i.useMemo(() => {
     let e = null,
       t = true,
@@ -246,22 +246,22 @@ function k(e) {
       actions: r,
       hasAccountLinkButton: n
     }
-  }, [ec, ed, ef, ep, Z, s.author.id, s.id, Y, P.id, P.guild_id, q, eu, k, e_, Q, X, J]), eg = em.some(e => e.trackingArea === _.j_.CLOUD_PLAY);
-  (0, w.Z)(eg, q);
+  }, [ec, ed, ef, ep, Z, s.author.id, s.id, Y, P.id, P.guild_id, q, eu, k, e_, Q, X, J]), eg = eh.some(e => e.trackingArea === _.j_.CLOUD_PLAY);
+  (0, R.Z)(eg, q);
   let eE = i.useMemo(() => ep ? null : (0, r.jsx)(M, {
     presenceActivity: Y,
     remoteJoinPlatform: eu
   }), [ep, Y, eu]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.W, {
-      header: R,
+      header: w,
       title: C,
       staticBannerSrc: F,
       onClickBanner: B,
       bannerAspectRatio: p.u.ACTIVITY,
       iconSrc: null != V ? V : true,
       info: eo,
-      actions: em,
+      actions: eh,
       primaryActionFirst: true,
       onClickContent: B,
       trackingConfig: {
@@ -274,6 +274,6 @@ function k(e) {
         messageId: s.id
       },
       footer: eE
-    }), eh ? $() : null]
+    }), em ? $() : null]
   })
 }

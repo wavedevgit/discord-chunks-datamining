@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ae: () => g,
-  QR: () => h
+  QR: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk781614 = require("./781614.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   let {
     highlightAdminWarningIfElevated: i,
     useFlexboxLayout: a,
@@ -40,8 +40,8 @@ let g = (e, t) => (0, r.jsx)(r.Fragment, {
     keybind: e,
     keybindHook: (t, n) => (0, r.jsx)(a.M2$, {
       shortcut: e,
-      className: m.keyCombo,
-      keyClassName: m.keyComboKey
+      className: h.keyCombo,
+      keyClassName: h.keyComboKey
     }, n)
   })
 });
@@ -50,7 +50,7 @@ function E(e) {
   let {
     keybind: t,
     message: n,
-    messageWithoutKeybind: h,
+    messageWithoutKeybind: m,
     highlightAdminWarningIfElevated: g = false,
     useFlexboxLayout: E = false,
     keybindClassName: b
@@ -69,7 +69,7 @@ function E(e) {
       }
     }) : _.intl.string(_.t.PIeSHF)
   }) : y ? E ? (0, r.jsx)("div", {
-    className: m.keybindFlexboxLayout,
+    className: h.keybindFlexboxLayout,
     children: _.intl.format(n, {
       keybind: t,
       keybindHook: e => (0, r.jsx)(f.l, {
@@ -84,5 +84,5 @@ function E(e) {
         keybind: t
       }, t.join("+"))
     })
-  }) : h
+  }) : m
 }

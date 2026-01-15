@@ -20,10 +20,10 @@ function f(e) {
     subscriptionPlanId: n,
     buttonTextOverride: f,
     defaultTextOverride: _
-  } = e, m = (0, r.e7)([a.default], () => a.default.getCurrentUser()), h = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()), g = (0, r.e7)([l.Z], () => l.Z.getPremiumTypeOverride()), E = null != _ ? _ : d.intl.string(d.t["2pG5Ga"]), b = null != h ? (0, s.Af)(h) : null, y = true !== g ? g : null != b ? (0, s.Rd)(b.planId) : null == m ? true : m.premiumType, O = t === c.Si.TIER_2 && null != y && [c.PremiumTypes.TIER_0, c.PremiumTypes.TIER_1].includes(y), v = null != n && null != b && (null == b ? true : b.planId) !== n;
+  } = e, h = (0, r.e7)([a.default], () => a.default.getCurrentUser()), m = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()), g = (0, r.e7)([l.Z], () => l.Z.getPremiumTypeOverride()), E = null != _ ? _ : d.intl.string(d.t["2pG5Ga"]), b = null != m ? (0, s.Af)(m) : null, y = true !== g ? g : null != b ? (0, s.Rd)(b.planId) : null == h ? true : h.premiumType, O = t === c.Si.TIER_2 && null != y && [c.PremiumTypes.TIER_0, c.PremiumTypes.TIER_1].includes(y), v = null != n && null != b && (null == b ? true : b.planId) !== n;
   (O || v) && (E = d.intl.string(d.t.IJI7yk));
-  let S = null != h && (0, s.m3)(h);
-  if (!(null != h && h.status !== u.O0b.ACCOUNT_HOLD && !(0, i.Q0)(h.planId) && !O && !v && true === g || S)) return {
+  let S = null != m && (0, s.m3)(m);
+  if (!(null != m && m.status !== u.O0b.ACCOUNT_HOLD && !(0, i.Q0)(m.planId) && !O && !v && true === g || S)) return {
     buttonText: null != f ? f : E
   };
   {
@@ -32,7 +32,7 @@ function f(e) {
       ctaSubscriptionSkuId: t,
       currentPremiumType: y,
       isSwitchingDisabled: S,
-      subscription: h
+      subscription: m
     });
     return {
       buttonText: null != (T = null != (I = e.disabledButtonText) ? I : f) ? T : E,

@@ -40,7 +40,7 @@ module.exports = function(e) {
       c = n.getDecorator();
     return i !== a || o !== s || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, p = e.textDirectionality, _ = d.getCurrentContent(), m = d.getSelection(), h = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = _.getBlocksAsArray()[0], y = [], O = b; O;) {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, p = e.textDirectionality, _ = d.getCurrentContent(), h = d.getSelection(), m = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = _.getBlocksAsArray()[0], y = [], O = b; O;) {
       var v = O.getKey(),
         S = {
           blockRenderMap: t,
@@ -52,8 +52,8 @@ module.exports = function(e) {
           decorator: g,
           editorKey: f,
           editorState: d,
-          forceSelection: h,
-          selection: m,
+          forceSelection: m,
+          selection: h,
           block: O,
           direction: p || E.get(v),
           tree: d.getBlockTree(v)
@@ -75,11 +75,11 @@ module.exports = function(e) {
       if (N.wrapperTemplate) {
         var P = [];
         do P.push(y[A].block), A++; while (A < y.length && y[A].wrapperTemplate === N.wrapperTemplate);
-        var R = l.cloneElement(N.wrapperTemplate, {
+        var w = l.cloneElement(N.wrapperTemplate, {
           key: N.key + "-wrap",
           "data-offset-key": N.offsetKey
         }, P);
-        C.push(R)
+        C.push(w)
       } else C.push(N.block), A++
     }
     return l.createElement("div", {

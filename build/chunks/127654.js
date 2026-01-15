@@ -50,7 +50,7 @@ function S(e) {
 function I(e, t, n) {
   let r = p.default.getCurrentUser(),
     i = e.guild_id,
-    a = m.dg(i),
+    a = h.dg(i),
     s = Array.from(t).map(e => e.size),
     l = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
     u = s.reduce((e, t) => e + t, 0),
@@ -72,14 +72,14 @@ function I(e, t, n) {
     }), (0, o.openUploadError)({
       title: O.intl.string(O.t["/tGlcj"]),
       help: (0, g.BK)(r, i),
-      showPremiumUpsell: !(0, h.M5)(r, y.PremiumTypes.TIER_2),
+      showPremiumUpsell: !(0, m.M5)(r, y.PremiumTypes.TIER_2),
       fileSize: d
     });
     return
   }(0, o.openUploadError)({
     title: O.intl.string(O.t["/tGlcj"]),
     help: O.intl.formatToPlainString(O.t.tUOJdH, {
-      maxSize: m.Ng(m.OC())
+      maxSize: h.Ng(h.OC())
     })
   })
 }
@@ -87,8 +87,8 @@ async function T(e, t, n) {
   let {
     filesMetadata: c,
     requireConfirm: p = true,
-    isThumbnail: m = false,
-    origin: h
+    isThumbnail: h = false,
+    origin: m
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (e.length < 1) return;
   if (null != c && c.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
@@ -115,8 +115,8 @@ async function T(e, t, n) {
     let e = v.map((e, t) => S({
       file: e,
       platform: l.ow.WEB,
-      isThumbnail: m,
-      origin: h,
+      isThumbnail: h,
+      origin: m,
       compressionMetadata: T[t]
     }, null == c ? true : c[t]));
     a.Z.addFiles({
@@ -130,8 +130,8 @@ async function T(e, t, n) {
       return new s.nH(S({
         file: e,
         platform: l.ow.WEB,
-        isThumbnail: m,
-        origin: h,
+        isThumbnail: h,
+        origin: m,
         compressionMetadata: T[n]
       }, r), t.id)
     });

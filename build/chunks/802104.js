@@ -24,8 +24,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = +Chunk70956.Z.Millis.HOUR,
-  m = 7 * Chunk70956.Z.Millis.DAY,
-  h = +Chunk70956.Z.Millis.DAY,
+  h = 7 * Chunk70956.Z.Millis.DAY,
+  m = +Chunk70956.Z.Millis.DAY,
   g = Chunk433517.K.get("lastNonRequiredUpdateShown", Date.now()),
   E = new Chunk710845.Z("AutoUpdateManager");
 class b extends Chunk147913.Z {
@@ -90,9 +90,9 @@ class b extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "df909f9ad41cba8a6b94ba9bae1cbf2058d6d211" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "a64a3f2becccd89dd068d0ed0ea98b3fa3b6bf71" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
-        let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : h;
+        let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
         if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
       }, () => this._handleUpdateError())
     }), p(this, "_handleUpdateNotAvailable", () => {

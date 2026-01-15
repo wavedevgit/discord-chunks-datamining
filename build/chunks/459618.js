@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,7 +66,7 @@ function b(e) {
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
     i = (0, s.d)();
-  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, _(h(_({}, (0, o.Z)()), {
+  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, _(m(_({}, (0, o.Z)()), {
     api_latency_ms: n,
     gateway_latency_ms: r,
     channel_id: t.id,
@@ -110,7 +110,7 @@ class O extends Chunk442837.ZP.Store {
   recordMessageSendApiResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = h(_({}, t), {
+      let n = m(_({}, t), {
         apiResponseTimestamp: Date.now()
       });
       E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
@@ -119,7 +119,7 @@ class O extends Chunk442837.ZP.Store {
   recordGatewayResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = h(_({}, t), {
+      let n = m(_({}, t), {
         gatewaySeenTimestamp: Date.now()
       });
       E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)

@@ -24,8 +24,8 @@ function p(e) {
     minDate: s,
     maxDate: p,
     onSelect: _,
-    calendarClassName: m,
-    autoFocus: h,
+    calendarClassName: h,
+    autoFocus: m,
     onClickOutside: g
   } = e, E = i.useCallback((e, t) => {
     null == _ || _(o()(e), t)
@@ -42,10 +42,10 @@ function p(e) {
     ref: I,
     className: f.calendarPicker,
     children: (0, r.jsx)(l(), {
-      calendarClassName: m,
+      calendarClassName: h,
       selected: b,
       onChange: E,
-      autoFocus: h,
+      autoFocus: m,
       fixedHeight: true,
       inline: true,
       locale: v,

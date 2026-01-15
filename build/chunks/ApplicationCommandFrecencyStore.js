@@ -48,12 +48,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {
+let m = {
     pendingUsages: []
   },
   g = new Chunk704907.Z({
@@ -84,7 +84,7 @@ function y(e) {
     wasSaved: n
   } = e;
   if (t !== d.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
-  h.pendingUsages = []
+  m.pendingUsages = []
 }
 
 function O(e) {
@@ -92,7 +92,7 @@ function O(e) {
     command: t,
     context: n
   } = e, r = b(n, t);
-  h.pendingUsages.push({
+  m.pendingUsages.push({
     key: r,
     timestamp: Date.now()
   }), g.track(r), g.compute()
@@ -101,19 +101,19 @@ function O(e) {
 function v() {
   var e, t;
   let n = null != (t = null == (e = c.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? true : e.applicationCommands) ? t : {};
-  g.overwriteHistory(a().mapValues(n, e => m(p({}, e), {
+  g.overwriteHistory(a().mapValues(n, e => h(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), h.pendingUsages)
+  })), m.pendingUsages)
 }
 class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (h = e), this.syncWith([c.Z], v)
+    null != e && (m = e), this.syncWith([c.Z], v)
   }
   getState() {
-    return h
+    return m
   }
   hasPendingUsage() {
-    return h.pendingUsages.length > 0
+    return m.pendingUsages.length > 0
   }
   getCommandFrecencyWithoutLoadingLatest() {
     return g

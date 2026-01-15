@@ -30,7 +30,7 @@ function _() {
     s.Z.setActiveInputProfile(n, {
       analyticsLocations: e
     })
-  }, [e]), m = [{
+  }, [e]), h = [{
     value: d._.VOICE_ISOLATION,
     name: f.intl.string(f.t.cjPbpT),
     desc: f.intl.string(f.t.CzhvnE)
@@ -55,7 +55,7 @@ function _() {
       onChange: e => _({
         value: e
       }),
-      options: m,
+      options: h,
       value: null != t ? t : d._.CUSTOM
     })
   })

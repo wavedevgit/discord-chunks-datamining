@@ -50,14 +50,14 @@ module.exports = function(e) {
         begin: "~?" + e + ".*?" + e
       }
     },
-    m = function(e, t, n) {
+    h = function(e, t, n) {
       return {
         className: e,
         begin: t,
         relevance: n
       }
     },
-    h = {
+    m = {
       $pattern: /[a-z-]+/,
       keyword: "and or not only",
       attribute: r.join(" ")
@@ -66,7 +66,7 @@ module.exports = function(e) {
       begin: "\\(",
       end: "\\)",
       contains: p,
-      keywords: h,
+      keywords: m,
       relevance: 0
     };
   p.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, _("'"), _('"'), l.CSS_NUMBER_MODE, {
@@ -76,7 +76,7 @@ module.exports = function(e) {
       end: "[\\)\\n]",
       excludeEnd: true
     }
-  }, l.HEXCOLOR, g, m("variable", "@@?" + u, 10), m("variable", "@\\{" + u + "\\}"), m("built_in", "~?`[^`]*?`"), {
+  }, l.HEXCOLOR, g, h("variable", "@@?" + u, 10), h("variable", "@\\{" + u + "\\}"), h("built_in", "~?`[^`]*?`"), {
     className: "attribute",
     begin: u + "\\s*:",
     end: ":",
@@ -121,7 +121,7 @@ module.exports = function(e) {
       begin: "@(import|media|charset|font-face|(-[a-z]+-)?keyframes|supports|document|namespace|page|viewport|host)\\b",
       starts: {
         end: "[;{}]",
-        keywords: h,
+        keywords: m,
         returnEnd: true,
         contains: p,
         relevance: 0
@@ -153,10 +153,10 @@ module.exports = function(e) {
       returnEnd: true,
       illegal: "[<='$\"]",
       relevance: 0,
-      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, m("keyword", "all\\b"), m("variable", "@\\{" + u + "\\}"), {
+      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h("keyword", "all\\b"), h("variable", "@\\{" + u + "\\}"), {
         begin: "\\b(" + n.join("|") + ")\\b",
         className: "selector-tag"
-      }, l.CSS_NUMBER_MODE, m("selector-tag", d, 0), m("selector-id", "#" + d), m("selector-class", "\\." + d, 0), m("selector-tag", "&", 0), l.ATTRIBUTE_SELECTOR_MODE, {
+      }, l.CSS_NUMBER_MODE, h("selector-tag", d, 0), h("selector-id", "#" + d), h("selector-class", "\\." + d, 0), h("selector-tag", "&", 0), l.ATTRIBUTE_SELECTOR_MODE, {
         className: "selector-pseudo",
         begin: ":(" + i.join("|") + ")"
       }, {

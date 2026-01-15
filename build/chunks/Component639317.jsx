@@ -46,13 +46,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -158,11 +158,11 @@ class y extends(i = Chunk473749.PureComponent) {
         className: n,
         onResize: r
       } = e,
-      i = h(e, ["style", "className", "onResize"]);
+      i = m(e, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
     let o = p({}, this.state, t);
     return (0, a.jsx)(u.tEY, {
-      children: (0, a.jsx)("textarea", m(p({}, i), {
+      children: (0, a.jsx)("textarea", h(p({}, i), {
         className: l()(n, d.scrollbarGhostHairline),
         ref: this.handleSetRef,
         style: o,

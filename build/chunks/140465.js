@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   B4: () => O,
-  Nx: () => m,
+  Nx: () => h,
   UV: () => b,
   WR: () => E,
   Yi: () => y,
   lr: () => g,
-  t7: () => h
+  t7: () => m
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
@@ -23,14 +23,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk639119 = require("./639119.js"),
   Chunk474936 = require("./474936.js");
 
-function m() {
+function h() {
   let e = (0, p.N)(),
     t = (0, c._O)(),
     n = (0, f.N)(),
-    r = h();
+    r = m();
   return null != e || t || null != n || r
 }
-let h = () => {
+let m = () => {
     var e;
     let t = (0, o.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
       n = null == t || null == (e = t.metadata) ? true : e.active_discount_expires_at;
@@ -88,7 +88,7 @@ let h = () => {
   },
   b = () => {
     let e = (0, o.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
-      t = h(),
+      t = m(),
       n = null !== e && e.hasPremiumNitroMonthly,
       r = !!(null == e ? true : e.hasActiveTrial);
     return n && !r && !t

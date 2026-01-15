@@ -121,7 +121,7 @@ class T extends(r = Chunk473749.PureComponent) {
         variant: "secondary",
         onClick: this.handleDropdownClick
       }) : null]
-    }) : l ? null : this.renderDisabledButton(b.intl.string(b.t["359Pbd"]), h.isPlatformEmbedded ? b.intl.string(b.t.NASLa3) : b.intl.string(b.t.o1bhkD))
+    }) : l ? null : this.renderDisabledButton(b.intl.string(b.t["359Pbd"]), m.isPlatformEmbedded ? b.intl.string(b.t.NASLa3) : b.intl.string(b.t.o1bhkD))
   }
   constructor(...e) {
     super(...e), O(this, "handleDropdownClick", e => {
@@ -165,7 +165,7 @@ function C(e) {
   let {
     applicationId: t,
     libraryApplication: n
-  } = e, r = (0, d.O)(), [a, o] = (0, s.Wu)([_.Z, p.Z, m.Z], () => [_.Z.isConnected(t) || p.Z.isLaunchable(t) || null != n && m.Z.isLaunchable(n.id, n.branchId), p.Z.launchingGames.has(t)], [t, n]), l = (0, s.e7)([f.ZP], () => new Set(f.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([m.Z], () => null != n ? m.Z.getState(n.id, n.branchId) : null, [n]);
+  } = e, r = (0, d.O)(), [a, o] = (0, s.Wu)([_.Z, p.Z, h.Z], () => [_.Z.isConnected(t) || p.Z.isLaunchable(t) || null != n && h.Z.isLaunchable(n.id, n.branchId), p.Z.launchingGames.has(t)], [t, n]), l = (0, s.e7)([f.ZP], () => new Set(f.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([h.Z], () => null != n ? h.Z.getState(n.id, n.branchId) : null, [n]);
   return (0, i.jsx)(T, I(v({}, e), {
     analyticsContext: r,
     isLaunchable: a,

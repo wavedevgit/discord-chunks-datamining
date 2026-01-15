@@ -75,7 +75,7 @@ let _ = e => {
     onClick: u,
     buttonTextOverride: p
   } = e, _ = f(e, ["subscriptionTier", "premiumModalAnalyticsLocation", "giftMessage", "onClick", "buttonTextOverride"]);
-  let m = {
+  let h = {
     subscriptionTier: t,
     premiumModalAnalyticsLocation: n,
     giftMessage: l,
@@ -83,7 +83,7 @@ let _ = e => {
   };
   return (0, r.jsx)(s.Z, d(c({
     isGift: true
-  }, m), {
+  }, h), {
     children: e => {
       let {
         onClick: n

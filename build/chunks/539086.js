@@ -26,7 +26,7 @@ function y(e) {
   let {
     location: t,
     onMountEffect: n
-  } = e, y = (0, m.Z)(), O = (0, h.M8)(), {
+  } = e, y = (0, h.Z)(), O = (0, m.M8)(), {
     familyCenterInitialized: v,
     isLoading: S
   } = (0, a.cj)([f.Z], () => ({
@@ -39,15 +39,15 @@ function y(e) {
   (0, o.ZP)(() => {
     (0, c.e)("family-center"), null != n && n()
   });
-  let R = {
+  let w = {
       isConsideredAdult: y,
       numOfAcceptedRequests: O,
       selectedTab: T,
       selectedTeenId: I
     },
-    w = r.useRef(R);
+    R = r.useRef(w);
   return r.useEffect(() => {
-    w.current = R
+    R.current = w
   }), r.useEffect(() => {
     if (v && N) {
       let {
@@ -55,7 +55,7 @@ function y(e) {
         numOfAcceptedRequests: n,
         selectedTab: r,
         selectedTeenId: a
-      } = w.current;
+      } = R.current;
       d.default.track(E.rMx.FAMILY_CENTER_VIEWED, {
         is_considered_adult: e,
         num_of_accepted_links: n,

@@ -2,7 +2,7 @@
 /** chunk id: 667708, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,12 +18,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
     onSuccess: a
-  } = e, h = (0, u.ZP)(t.id, null != n ? n : true), g = d.Sb.useSetting(), {
+  } = e, m = (0, u.ZP)(t.id, null != n ? n : true), g = d.Sb.useSetting(), {
     tidaWebformEnabled: E
   } = c.Z.useExperiment({
     location: "useCopyUserInfoItem"
@@ -31,12 +31,12 @@ function h(e) {
     autoTrackExposure: false
   }), b = (0, l.Z)({
     id: t.id,
-    label: m.intl.string(m.t["/AXYnE"]),
+    label: h.intl.string(h.t["/AXYnE"]),
     onSuccess: a
-  }), y = i.useMemo(() => null == h ? null : h.getBannerURL({
+  }), y = i.useMemo(() => null == m ? null : m.getBannerURL({
     canAnimate: true,
     size: _.dGM
-  }), [h]), O = i.useCallback(() => {
+  }), [m]), O = i.useCallback(() => {
     (0, p.JG)(t.id), null == a || a()
   }, [t.id, a]), v = i.useCallback(() => {
     let e = f.ZP.getUserAvatarURL(t, true, _.dGM);
@@ -46,19 +46,19 @@ function h(e) {
   }, [y, a]);
   return !__OVERLAY__ && g && p.wS && null != t.id ? E ? (0, r.jsxs)(s.sNh, {
     id: "copy-user-info",
-    label: m.intl.string(m.t.QvQeLv),
+    label: h.intl.string(h.t.QvQeLv),
     children: [(0, r.jsx)(s.sNh, {
       id: "copy-user-id",
-      label: m.intl.string(m.t["/AXYnE"]),
+      label: h.intl.string(h.t["/AXYnE"]),
       action: O,
       icon: s.VuL
     }), null != t.avatar && (0, r.jsx)(s.sNh, {
       id: "copy-user-avatar-link",
-      label: m.intl.string(m.t.gERDvM),
+      label: h.intl.string(h.t.gERDvM),
       action: v
     }), null != y && (0, r.jsx)(s.sNh, {
       id: "copy-user-banner-link",
-      label: m.intl.string(m.t.hsNv0R),
+      label: h.intl.string(h.t.hsNv0R),
       action: S
     })]
   }) : b : null

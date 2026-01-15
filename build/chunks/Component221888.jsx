@@ -67,7 +67,7 @@ function N(e, t) {
 }
 let P = 150;
 
-function R(e, t) {
+function w(e, t) {
   switch (e) {
     case O.fO.ACTIVITY:
       return S.intl.formatToPlainString(S.t.TCM94S, {
@@ -82,7 +82,7 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     users: t,
     disableInteraction: n,
@@ -90,7 +90,7 @@ function w(e) {
     participantType: a,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = R(a, t.length);
+  } = e, c = w(a, t.length);
   return (0, r.jsx)(f.VqE, {
     "aria-label": c,
     className: I.popoutWrapper,
@@ -101,7 +101,7 @@ function w(e) {
         className: I.memberListHeader,
         children: c
       }), (0, r.jsx)("div", {
-        children: t.map(e => (0, r.jsx)(h.Z, {
+        children: t.map(e => (0, r.jsx)(m.Z, {
           user: e,
           guildId: null != i ? i : true,
           channelId: s,
@@ -126,7 +126,7 @@ function D(e) {
     maxVisibleUsers: a = 3,
     className: s,
     participantType: l
-  } = e, c = R(l, t.length), u = t.length < a ? S.intl.format(S.t["A+bT9O"], {
+  } = e, c = w(l, t.length), u = t.length < a ? S.intl.format(S.t["A+bT9O"], {
     users: t.length,
     user1: y.ZP.getName(n, i, t[0]),
     user2: y.ZP.getName(n, i, t[1]),
@@ -156,10 +156,10 @@ function L(e) {
     guildId: a,
     participant: s,
     className: d,
-    compact: h = false,
+    compact: m = false,
     disableInteraction: y = false,
     maxVisibleUsers: S = 3
-  } = e, T = i.useRef(null), A = (0, m.Z)(), [R, L] = i.useState(false), j = i.useRef(new u.sW(P, () => L(false))), M = (0, c.Wu)([g.Z, E.default], () => {
+  } = e, T = i.useRef(null), A = (0, h.Z)(), [w, L] = i.useState(false), j = i.useRef(new u.sW(P, () => L(false))), M = (0, c.Wu)([g.Z, E.default], () => {
     if (s.type === O.fO.STREAM) {
       let e = g.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : x
@@ -188,7 +188,7 @@ function L(e) {
       })
     }, [U, k]);
   if (0 === M.length) return null;
-  if (h) return (0, r.jsx)(D, {
+  if (m) return (0, r.jsx)(D, {
     maxVisibleUsers: S,
     users: M,
     guildId: a,
@@ -212,7 +212,7 @@ function L(e) {
       onMouseLeave: U,
       children: (0, r.jsx)(f.yRy, {
         targetElementRef: T,
-        renderPopout: () => (0, r.jsx)(w, {
+        renderPopout: () => (0, r.jsx)(R, {
           participantType: s.type,
           handleUserContextMenu: G,
           guildId: a,
@@ -220,7 +220,7 @@ function L(e) {
           users: M,
           disableInteraction: y
         }),
-        shouldShow: R && !A,
+        shouldShow: w && !A,
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: T,

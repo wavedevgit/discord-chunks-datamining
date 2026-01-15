@@ -29,11 +29,11 @@ var Chunk50153 = require("./50153.js"),
     return n && !t && (e.characterList = s(d(i.EMPTY, n.length))), e
   };
 
-function m(e, t) {
+function h(e, t) {
   return e.getStyle() === t.getStyle()
 }
 
-function h(e, t) {
+function m(e, t) {
   return e.getEntity() === t.getEntity()
 }
 module.exports = function(e) {
@@ -63,8 +63,8 @@ module.exports = function(e) {
     var t = this.getCharacterList().get(e);
     return t ? t.getEntity() : null
   }, n.findStyleRanges = function(e, t) {
-    a(this.getCharacterList(), m, e, t)
-  }, n.findEntityRanges = function(e, t) {
     a(this.getCharacterList(), h, e, t)
+  }, n.findEntityRanges = function(e, t) {
+    a(this.getCharacterList(), m, e, t)
   }, t
 }(p)

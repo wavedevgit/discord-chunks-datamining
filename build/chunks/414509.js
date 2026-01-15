@@ -28,7 +28,7 @@ let f = 3 * Chunk70956.Z.Millis.DAY,
   p = 2 * Chunk70956.Z.Millis.DAY,
   _ = +Chunk70956.Z.Millis.HOUR;
 
-function m(e) {
+function h(e) {
   let {
     channelId: t
   } = e;
@@ -45,7 +45,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     state: t
   } = e
@@ -77,8 +77,8 @@ class O extends Chunk147913.Z {
   }
   constructor(...e) {
     super(...e), d(this, "actions", {
-      CHANNEL_SELECT: m,
-      APP_STATE_UPDATE: h
+      CHANNEL_SELECT: h,
+      APP_STATE_UPDATE: m
     })
   }
 }

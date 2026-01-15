@@ -16,10 +16,10 @@ var Chunk828700 = require("./828700.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 let _ = {},
-  m = false;
+  h = false;
 
-function h() {
-  m || (m = true, a.Z.subscribe("CONNECTION_OPEN", () => {
+function m() {
+  h || (h = true, a.Z.subscribe("CONNECTION_OPEN", () => {
     _ = {};
     let e = d.Z.getChannelId(),
       t = u.Z.getChannel(e);
@@ -28,7 +28,7 @@ function h() {
 }
 
 function g(e) {
-  if (null == e || e === o.V || (0, p.AB)(e) || null != u.Z.getChannel(e) || (h(), !s.Z.isConnected())) return Promise.resolve();
+  if (null == e || e === o.V || (0, p.AB)(e) || null != u.Z.getChannel(e) || (m(), !s.Z.isConnected())) return Promise.resolve();
   let t = _[e];
   if (null != t)
     if ("LOADING" === t.type) return t.promise;

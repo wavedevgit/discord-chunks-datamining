@@ -2,7 +2,7 @@
 /** chunk id: 663924, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -136,8 +136,8 @@ function P(e) {
   }), [I, y, O]), (0, s.Tbt)(p), i.useEffect(() => {
     (!v && (0, o.hasAnyModalOpen)() || v && !S) && N()
   }, [S, v]);
-  let T = (0, h.Z)();
-  return (0, r.jsx)(m.Z, {
+  let T = (0, m.Z)();
+  return (0, r.jsx)(h.Z, {
     ref: p,
     context: {
       channel: t,
@@ -147,4 +147,4 @@ function P(e) {
     initHistory: T
   })
 }
-let R = Chunk473749.memo(A)
+let w = Chunk473749.memo(A)

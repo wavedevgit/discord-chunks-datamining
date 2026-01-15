@@ -23,12 +23,12 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 2,
-  h = async () => {
-    if (0 !== m) return;
+let h = 2,
+  m = async () => {
+    if (0 !== h) return;
     let e = s.Z.database();
     if (null == e) return;
-    m = 2;
+    h = 2;
     let t = await (0, l.gs)("StickerStore.loadSavedGuildStickers", () => i.Z.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => c.Z.getAsync(e)));
     null != t && o.Z.dispatch({
       type: "CACHED_STICKERS_LOADED",
@@ -38,32 +38,32 @@ let m = 2,
     let {
       guilds: t
     } = e;
-    m = +!!t.every(e => null != e.stickers.items)
+    h = +!!t.every(e => null != e.stickers.items)
   }, E = () => {
-    m = 0
+    h = 0
   };
 
 function b(e) {
   let {
     guild: t
   } = e;
-  1 === m && "update" === t.stickers.op && null == t.stickers.items && (m = 0)
+  1 === h && "update" === t.stickers.op && null == t.stickers.items && (h = 0)
 }
 let y = () => {
-  m = 0
+  h = 0
 };
 class O extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(u.Z, f.Z, d.Z, p.Z), this.syncWith([f.Z, p.Z], () => true)
   }
   get isLoaded() {
-    return 0 !== m
+    return 0 !== h
   }
   get loadState() {
-    return m
+    return h
   }
   getStickerMetadataArrays() {
-    return h(), [f.Z.getStickerMetadataMap(), p.Z.getStickerMetadataMap()]
+    return m(), [f.Z.getStickerMetadataMap(), p.Z.getStickerMetadataMap()]
   }
   get hasLoadedStickerPacks() {
     return p.Z.hasLoadedStickerPacks
@@ -73,7 +73,7 @@ class O extends(r = Chunk442837.ZP.Store) {
   }
   getStickerById(e) {
     var t;
-    return h(), null != (t = f.Z.getStickerById(e)) ? t : p.Z.getStickerById(e)
+    return m(), null != (t = f.Z.getStickerById(e)) ? t : p.Z.getStickerById(e)
   }
   getStickerPack(e) {
     return p.Z.getStickerPack(e)
@@ -88,13 +88,13 @@ class O extends(r = Chunk442837.ZP.Store) {
     return f.Z.getAllGuildStickers()
   }
   getAllGuildStickers() {
-    return h(), f.Z.getAllGuildStickers()
+    return m(), f.Z.getAllGuildStickers()
   }
   getAllPackStickers() {
     return p.Z.getAllPackStickers()
   }
   getStickersByGuildId(e) {
-    return h(), f.Z.getStickersByGuildId(e)
+    return m(), f.Z.getStickersByGuildId(e)
   }
 }
 _(O, "displayName", "StickersStore");

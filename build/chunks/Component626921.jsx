@@ -23,8 +23,8 @@ function u(e) {
     fullWidth: u,
     isOpen: p,
     isInert: _,
-    hasValue: m,
-    hasError: h,
+    hasValue: h,
+    hasError: m,
     showChevronButton: g = true,
     children: E,
     handleToggle: b,
@@ -43,7 +43,7 @@ function u(e) {
     disabled: n,
     readOnly: i,
     fullWidth: u,
-    validation: h ? {
+    validation: m ? {
       hasError: true
     } : true,
     "aria-busy": s,
@@ -51,7 +51,7 @@ function u(e) {
       className: c.selectFieldContent,
       children: E
     }), (0, r.jsx)(d, {
-      show: true === l && !_ && true === m,
+      show: true === l && !_ && true === h,
       iconSize: g ? "xs" : "sm",
       onClick: y
     }), (0, r.jsx)(f, {

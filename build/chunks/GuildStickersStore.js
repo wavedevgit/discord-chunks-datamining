@@ -72,7 +72,7 @@ function _(e) {
   return t
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = [],
     {
       tags: r
@@ -106,7 +106,7 @@ function m(e, t) {
   }
   return n
 }
-class h extends Chunk429091.d {
+class m extends Chunk429091.d {
   constructor(...e) {
     super(...e), c(this, "getAllGuildStickers", this.memoized(e => {
       let t = new Map;
@@ -115,13 +115,13 @@ class h extends Chunk429091.d {
     })), c(this, "getStickersByGuildId", this.memoizedPartition((e, t) => Object.values(t))), c(this, "getStickerMetadataMap", this.memoized(e => {
       let t = new Map;
       for (let n in e)
-        for (let [r, i] of Object.entries(e[n].root)) t.set(r, m(n, i));
+        for (let [r, i] of Object.entries(e[n].root)) t.set(r, h(n, i));
       return t
     })), c(this, "getStickerById", this.memoizedSecondaryIndex())
   }
 }
-c(h, "displayName", "GuildStickersStore");
-let g = new h({
+c(m, "displayName", "GuildStickersStore");
+let g = new m({
   LOGOUT: (e, t) => t.reset(),
   BACKGROUND_SYNC: (e, t) => t.reset(),
   CONNECTION_OPEN: (e, t) => {

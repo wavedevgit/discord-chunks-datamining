@@ -18,11 +18,11 @@ function c(e) {
   } = e, c = i.useMemo(() => {
     switch (t) {
       case o.Q4.BLUR:
-        return a.XBm;
+        return a.ImageIcon;
       case o.Q4.BLOCK:
-        return a.t6m;
+        return a.DenyIcon;
       case o.Q4.SHOW:
-        return a.tEF;
+        return a.EyeIcon;
       default:
         return null
     }

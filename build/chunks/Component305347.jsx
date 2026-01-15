@@ -4,7 +4,7 @@
 require.d(exports, {
   Ft: () => _,
   R$: () => p,
-  ZP: () => m
+  ZP: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,12 +43,12 @@ function _(e) {
     iconSize: a,
     className: p,
     acronymClassName: _,
-    animate: m
-  } = e, h = (0, s.e7)([c.Z], () => c.Z.isFocused()), g = (0, u.pU)(i) ? i : u.ZP.getGuildIconURL({
+    animate: h
+  } = e, m = (0, s.e7)([c.Z], () => c.Z.isFocused()), g = (0, u.pU)(i) ? i : u.ZP.getGuildIconURL({
     id: t,
     icon: i,
     size: a,
-    canAnimate: m && h
+    canAnimate: h && m
   });
   if (null == g) {
     let e = (0, d.Zg)(n);
@@ -75,7 +75,7 @@ function _(e) {
     })
   })
 }
-let m = Chunk473749.memo(function(e) {
+let h = Chunk473749.memo(function(e) {
   let {
     guild: t,
     iconSize: n,

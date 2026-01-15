@@ -4,7 +4,7 @@
 require.d(exports, {
   EO: () => l,
   JM: () => _,
-  Lt: () => h,
+  Lt: () => m,
   ND: () => y,
   PL: () => v,
   UY: () => L,
@@ -46,7 +46,7 @@ class c extends Chunk495852.C {
           a.favoriteGifs = f.internalBinaryRead(e, e.uint32(), n, a.favoriteGifs);
           break;
         case 3:
-          a.favoriteStickers = h.internalBinaryRead(e, e.uint32(), n, a.favoriteStickers);
+          a.favoriteStickers = m.internalBinaryRead(e, e.uint32(), n, a.favoriteStickers);
           break;
         case 4:
           a.stickerFrecency = E.internalBinaryRead(e, e.uint32(), n, a.stickerFrecency);
@@ -67,7 +67,7 @@ class c extends Chunk495852.C {
           a.applicationFrecency = L.internalBinaryRead(e, e.uint32(), n, a.applicationFrecency);
           break;
         case 10:
-          a.heardSoundFrecency = R.internalBinaryRead(e, e.uint32(), n, a.heardSoundFrecency);
+          a.heardSoundFrecency = w.internalBinaryRead(e, e.uint32(), n, a.heardSoundFrecency);
           break;
         case 11:
           a.playedSoundFrecency = D.internalBinaryRead(e, e.uint32(), n, a.playedSoundFrecency);
@@ -88,7 +88,7 @@ class c extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && s.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.favoriteGifs && f.internalBinaryWrite(e.favoriteGifs, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.favoriteStickers && h.internalBinaryWrite(e.favoriteStickers, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.stickerFrecency && E.internalBinaryWrite(e.stickerFrecency, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.favoriteEmojis && y.internalBinaryWrite(e.favoriteEmojis, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.emojiFrecency && v.internalBinaryWrite(e.emojiFrecency, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.applicationCommandFrecency && I.internalBinaryWrite(e.applicationCommandFrecency, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.favoriteSoundboardSounds && N.internalBinaryWrite(e.favoriteSoundboardSounds, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.applicationFrecency && L.internalBinaryWrite(e.applicationFrecency, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.heardSoundFrecency && R.internalBinaryWrite(e.heardSoundFrecency, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.playedSoundFrecency && D.internalBinaryWrite(e.playedSoundFrecency, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.guildAndChannelFrecency && M.internalBinaryWrite(e.guildAndChannelFrecency, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.emojiReactionFrecency && v.internalBinaryWrite(e.emojiReactionFrecency, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && s.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.favoriteGifs && f.internalBinaryWrite(e.favoriteGifs, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.favoriteStickers && m.internalBinaryWrite(e.favoriteStickers, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.stickerFrecency && E.internalBinaryWrite(e.stickerFrecency, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.favoriteEmojis && y.internalBinaryWrite(e.favoriteEmojis, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.emojiFrecency && v.internalBinaryWrite(e.emojiFrecency, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.applicationCommandFrecency && I.internalBinaryWrite(e.applicationCommandFrecency, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.favoriteSoundboardSounds && N.internalBinaryWrite(e.favoriteSoundboardSounds, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.applicationFrecency && L.internalBinaryWrite(e.applicationFrecency, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.heardSoundFrecency && w.internalBinaryWrite(e.heardSoundFrecency, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.playedSoundFrecency && D.internalBinaryWrite(e.playedSoundFrecency, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.guildAndChannelFrecency && M.internalBinaryWrite(e.guildAndChannelFrecency, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.emojiReactionFrecency && v.internalBinaryWrite(e.emojiReactionFrecency, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -107,7 +107,7 @@ class c extends Chunk495852.C {
       no: 3,
       name: "favorite_stickers",
       kind: "message",
-      T: () => h
+      T: () => m
     }, {
       no: 4,
       name: "sticker_frecency",
@@ -142,7 +142,7 @@ class c extends Chunk495852.C {
       no: 10,
       name: "heard_sound_frecency",
       kind: "message",
-      T: () => R
+      T: () => w
     }, {
       no: 11,
       name: "played_sound_frecency",
@@ -317,7 +317,7 @@ class p extends Chunk495852.C {
   }
 }
 let _ = new p;
-class m extends Chunk495852.C {
+class h extends Chunk495852.C {
   create(e) {
     let t = {
       stickerIds: []
@@ -364,7 +364,7 @@ class m extends Chunk495852.C {
     }])
   }
 }
-let h = new m;
+let m = new h;
 class g extends Chunk495852.C {
   create(e) {
     let t = {
@@ -783,8 +783,8 @@ class P extends Chunk495852.C {
     }])
   }
 }
-let R = new P;
-class w extends Chunk495852.C {
+let w = new P;
+class R extends Chunk495852.C {
   create(e) {
     let t = {
       playedSounds: {}
@@ -846,7 +846,7 @@ class w extends Chunk495852.C {
     }])
   }
 }
-let D = new w;
+let D = new R;
 class x extends Chunk495852.C {
   create(e) {
     let t = {

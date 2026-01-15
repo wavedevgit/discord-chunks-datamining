@@ -24,9 +24,9 @@ function d(e, t, n) {
 let f = +Chunk70956.Z.Millis.SECOND,
   p = 30 * Chunk70956.Z.Millis.SECOND,
   _ = 360,
-  m = new Chunk710845.Z("RTCLatencyTestManager");
-m.enableNativeLogger(true);
-class h extends Chunk147913.Z {
+  h = new Chunk710845.Z("RTCLatencyTestManager");
+h.enableNativeLogger(true);
+class m extends Chunk147913.Z {
   _terminate() {
     null != this.refetchTimeout && clearTimeout(this.refetchTimeout)
   }
@@ -36,11 +36,11 @@ class h extends Chunk147913.Z {
     }), d(this, "_handleTestRegionsResponse", e => {
       let t = e.map(e => e.region);
       s.Z.shouldPerformLatencyTest(t) ? o.Z.getMediaEngine().rankRtcRegions(e).then(e => {
-        m.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
-      }).catch(e => m.warn(e)) : m.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
+        h.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
+      }).catch(e => h.warn(e)) : h.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
     }), d(this, "_fetchAndScheduleRefetch", () => {
       let e = o.Z.supports(u.AN.PORT_AWARE_LATENCY_TESTING) ? 2 : 1;
-      (0, r.J)(e).then(e => this._handleTestRegionsResponse(e.body)).catch(e => m.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, _ * l.Z.Millis.MINUTE)
+      (0, r.J)(e).then(e => this._handleTestRegionsResponse(e.body)).catch(e => h.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, _ * l.Z.Millis.MINUTE)
     }), d(this, "_handleConnectionOpen", () => {
       if (c.isPlatformEmbedded && !__OVERLAY__) {
         let e = Math.floor(f + Math.random() * p);
@@ -49,4 +49,4 @@ class h extends Chunk147913.Z {
     })
   }
 }
-let g = new h
+let g = new m

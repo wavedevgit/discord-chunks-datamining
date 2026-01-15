@@ -26,16 +26,16 @@ function _(e, t, n) {
     let {
       naaBlock: r,
       dataOffset: i
-    } = m(e, t);
+    } = h(e, t);
     return b(e, r, i, n)
   } catch (e) {
     return {}
   }
 }
 
-function m(e, t) {
+function h(e, t) {
   for (; t + u <= e.byteLength;) {
-    let n = h(e, t);
+    let n = m(e, t);
     if (g(n)) return {
       naaBlock: n,
       dataOffset: t + n.headerSize
@@ -45,7 +45,7 @@ function m(e, t) {
   throw Error("No IPTC NAA resource block.")
 }
 
-function h(e, t) {
+function m(e, t) {
   if (e.getUint32(t, false) !== a) throw Error("Not an IPTC resource block.");
   let n = e.getUint8(t + o + s),
     r = (n % 2 == 0 ? n + 1 : n) + l;
@@ -110,7 +110,7 @@ function y(e, t, n, i, a) {
       value: u,
       description: C(r.Z.iptc[l], u, n, i)
     };
-  return P(l) && (d.repeatable = true), R(l) && (d.encoding = r.Z.iptc[l].encoding_name(u)), {
+  return P(l) && (d.repeatable = true), w(l) && (d.encoding = r.Z.iptc[l].encoding_name(u)), {
     tag: d,
     tagSize: c
   }
@@ -158,6 +158,6 @@ function P(e) {
   return r.Z.iptc[e] && r.Z.iptc[e].repeatable
 }
 
-function R(e) {
+function w(e) {
   return r.Z.iptc[e] && true !== r.Z.iptc[e].encoding_name
 }

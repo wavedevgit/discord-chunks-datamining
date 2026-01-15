@@ -45,11 +45,11 @@ function E(e, t, n) {
       errorMessage: e.errorMessage || S
     }),
     P = (0, a.H)(t, n),
-    R = C["aria-labelledby"] || C.id,
+    w = C["aria-labelledby"] || C.id,
     {
-      locale: w
-    } = (0, m.j)(),
-    D = t.formatValue(w, {
+      locale: R
+    } = (0, h.j)(),
+    D = t.formatValue(R, {
       month: "long"
     }),
     x = D ? O.format("selectedDateDescription", {
@@ -58,8 +58,8 @@ function E(e, t, n) {
     L = (0, l.P)(x),
     j = [L["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ") || true,
     M = (0, c.z)(e),
-    k = (0, h.useMemo)(() => (0, o.E7)(n), [n]),
-    U = (0, h.useRef)(false),
+    k = (0, m.useMemo)(() => (0, o.E7)(n), [n]),
+    U = (0, m.useRef)(false),
     {
       focusWithinProps: G
     } = (0, p.L)({
@@ -83,7 +83,7 @@ function E(e, t, n) {
     groupProps: (0, u.d)(M, P, C, L, G, {
       role: "group",
       "aria-disabled": e.isDisabled || null,
-      "aria-labelledby": R,
+      "aria-labelledby": w,
       "aria-describedby": j,
       onKeyDown(n) {
         !t.isOpen && e.onKeyDown && e.onKeyDown(n)
@@ -127,7 +127,7 @@ function E(e, t, n) {
       id: E,
       "aria-haspopup": "dialog",
       "aria-label": O.format("calendar"),
-      "aria-labelledby": `${E} ${R}`,
+      "aria-labelledby": `${E} ${w}`,
       "aria-describedby": j,
       "aria-expanded": t.isOpen,
       isDisabled: e.isDisabled || e.isReadOnly,
@@ -135,7 +135,7 @@ function E(e, t, n) {
     },
     dialogProps: {
       id: b,
-      "aria-labelledby": `${E} ${R}`
+      "aria-labelledby": `${E} ${w}`
     },
     calendarProps: {
       autoFocus: true,

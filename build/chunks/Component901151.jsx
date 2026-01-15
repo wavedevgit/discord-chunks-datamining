@@ -2,7 +2,7 @@
 /** chunk id: 901151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R,
+  Z: () => w,
   e: () => P
 }), require("./642613.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
@@ -118,7 +118,7 @@ function I(e) {
 
 function T() {
   let e = d._j.useSetting();
-  return (0, r.jsx)(h.U, {
+  return (0, r.jsx)(m.U, {
     setting: E.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
     children: (0, r.jsx)(g.ZP, {
       title: y.intl.string(y.t.XpBObB),
@@ -144,9 +144,9 @@ function C() {
       name: y.intl.string(y.t.AolKwN),
       value: a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
     }];
-  return (0, r.jsxs)(h.U, {
+  return (0, r.jsxs)(m.U, {
     setting: E.s6.PRIVACY_AND_SAFETY_IN_GAME_DMS,
-    children: [(0, r.jsx)(h.H, {
+    children: [(0, r.jsx)(m.H, {
       header: y.intl.string(y.t["ms+Tme"]),
       description: y.intl.string(y.t["4NN4+/"])
     }), (0, r.jsx)(s.FXm, {
@@ -194,12 +194,12 @@ function P() {
   })
 }
 
-function R() {
+function w() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
   } = (0, p.Z)(true);
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     children: e ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N, {
         applications: t

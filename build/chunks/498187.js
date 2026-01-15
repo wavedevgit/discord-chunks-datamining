@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,7 +69,7 @@ function b(e) {
     } = e,
     u = (0, a.q)(i.extra.application_id),
     p = null == u ? true : u.getIconURL(d.Si.LARGE),
-    m = i.extra.game_name;
+    h = i.extra.game_name;
   if (null != i.extra.platform) {
     let e = g[i.extra.platform];
     null != e && (t = {
@@ -87,12 +87,12 @@ function b(e) {
         sourceUserId: i.author_id
       }),
       ariaDescription: f.intl.formatToPlainString(f.t["9sZWVp"], {
-        gameName: m
+        gameName: h
       })
     };
-  return h(_({}, c), {
+  return m(_({}, c), {
     thumbnailUrl: p,
-    title: m,
+    title: h,
     titleClickable: y,
     thumbnailClickable: y,
     userDescription: n,

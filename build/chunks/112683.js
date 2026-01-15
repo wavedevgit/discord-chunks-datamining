@@ -2,7 +2,7 @@
 /** chunk id: 112683, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Av: () => m,
+  Av: () => h,
   gP: () => d
 });
 var Chunk473749 = require("./473749.js");
@@ -42,7 +42,7 @@ function c(e) {
 
 function u(e) {
   let t = r.useId(),
-    [n] = (0, r.useState)(m()),
+    [n] = (0, r.useState)(h()),
     a = n ? "react-aria" : `react-aria${i.prefix}`;
   return e || `${a}-${t}`
 }
@@ -60,6 +60,6 @@ function _(e) {
   return () => {}
 }
 
-function m() {
+function h() {
   return "function" == typeof r.useSyncExternalStore ? r.useSyncExternalStore(_, f, p) : (0, r.useContext)(o)
 }

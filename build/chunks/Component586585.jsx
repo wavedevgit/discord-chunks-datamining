@@ -39,7 +39,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,8 +50,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -80,7 +80,7 @@ let E = e => {
     };
     return 2 === n ? (0, r.jsx)(o.zxk, _({
       variant: "expressive"
-    }, u)) : (0, r.jsx)(o.zxk, h(_({}, u), {
+    }, u)) : (0, r.jsx)(o.zxk, m(_({}, u), {
       variant: 0 === n ? "primary" : "active"
     }))
   },
@@ -90,7 +90,7 @@ let E = e => {
       backText: n,
       primaryIcon: f,
       primaryCTA: p,
-      primaryType: m,
+      primaryType: h,
       primaryText: g,
       primaryTooltip: b,
       primaryDisabled: y,
@@ -103,7 +103,7 @@ let E = e => {
       let e = {
         primaryIcon: f,
         primaryCTA: p,
-        primaryType: m,
+        primaryType: h,
         primaryText: g,
         primaryDisabled: y,
         primarySubmitting: O,
@@ -113,7 +113,7 @@ let E = e => {
         text: b,
         asContainer: true,
         children: (0, r.jsx)(E, _({}, e))
-      }) : (0, r.jsx)(E, h(_({}, e), {
+      }) : (0, r.jsx)(E, m(_({}, e), {
         onPrimary: v
       }))
     }, T = () => null == t ? null : (0, r.jsx)(o.Avr, {

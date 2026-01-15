@@ -69,10 +69,10 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   A = (e, t) => Array(t).fill(true).map(() => "[".concat(C, "]{").concat(e, "}")).join("-?"),
   N = A(4, 4),
   P = A(4, 6),
-  R = A(5, 3),
-  w = "WUMP-?",
-  D = [N, P, R, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  x = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
+  w = A(5, 3),
+  R = "WUMP-?",
+  D = [N, P, w, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  x = new RegExp("^(".concat(R, ")?(").concat(D, ")$")),
   L = "-";
 var j = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
@@ -100,7 +100,7 @@ function Z(e) {
 }
 let F = e => {
     var t;
-    return (null == e ? true : e.type) === m.uaV.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? true : t.length) === 1 && (null == e ? true : e.embeds[0].type) === m.hBH.GIFT
+    return (null == e ? true : e.type) === h.uaV.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? true : t.length) === 1 && (null == e ? true : e.embeds[0].type) === h.hBH.GIFT
   },
   B = e => {
     let t;
@@ -121,7 +121,7 @@ async function H(e) {
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   try {
     let r = (await (0, _.Kb)({
-      url: m.ANM.GIFT_CODE_RESOLVE(e),
+      url: h.ANM.GIFT_CODE_RESOLVE(e),
       query: {
         with_application: t,
         with_subscription_plan: n
@@ -129,7 +129,7 @@ async function H(e) {
       oldFormErrors: true,
       rejectWithError: false
     })).body;
-    return u.default.track(m.rMx.GIFT_CODE_RESOLVED, {
+    return u.default.track(h.rMx.GIFT_CODE_RESOLVED, {
       resolved: true,
       gift_code: r.code,
       gift_code_max_uses: r.max_uses,
@@ -141,7 +141,7 @@ async function H(e) {
       flush: true
     }), r
   } catch (t) {
-    throw u.default.track(m.rMx.GIFT_CODE_RESOLVED, {
+    throw u.default.track(h.rMx.GIFT_CODE_RESOLVED, {
       resolved: false,
       gift_code: e
     }), new o.Z(t)
@@ -149,7 +149,7 @@ async function H(e) {
 }
 
 function Y(e, t) {
-  u.default.track(m.rMx.GIFT_CODE_COPIED, b({}, (0, s.Z)(t, false, false), e.analyticsData))
+  u.default.track(h.rMx.GIFT_CODE_COPIED, b({}, (0, s.Z)(t, false, false), e.analyticsData))
 }
 
 function W(e, t, n) {
@@ -160,18 +160,18 @@ function W(e, t, n) {
     opened: o,
     isCustomGift: s
   } = n;
-  return null == r && (i || a || null == e) ? !s || o || i || a ? i && (t.isSubscription || null != e) ? m.wZ8.SUCCESS : m.wZ8.CONFIRM : m.wZ8.OPEN : m.wZ8.ERROR
+  return null == r && (i || a || null == e) ? !s || o || i || a ? i && (t.isSubscription || null != e) ? h.wZ8.SUCCESS : h.wZ8.CONFIRM : h.wZ8.OPEN : h.wZ8.ERROR
 }
 
 function K(e, t, n) {
   switch (e) {
-    case m.wZ8.ERROR:
+    case h.wZ8.ERROR:
       return g.intl.formatToMarkdownString(g.t.JUvC0s, {});
-    case m.wZ8.SUCCESS:
+    case h.wZ8.SUCCESS:
       return t.isSubscription ? g.intl.formatToPlainString(g.t["1C2BG/"], {
         skuName: n.name
       }) : g.intl.string(g.t["+BNMcF"]);
-    case m.wZ8.CONFIRM:
+    case h.wZ8.CONFIRM:
     default:
       return t.isSubscription ? g.intl.formatToPlainString(g.t["2VN4N9"], {
         skuName: n.name
@@ -184,15 +184,15 @@ function z(e, t, n) {
     isCustomGift: r
   } = n;
   switch (e) {
-    case m.wZ8.ERROR:
+    case h.wZ8.ERROR:
       return g.intl.string(g.t.w19zb6);
-    case m.wZ8.SUCCESS:
+    case h.wZ8.SUCCESS:
       if (__OVERLAY__) return g.intl.string(g.t.zW87EM);
       if (t.isSubscription) return g.intl.string(g.t.ex5TKr);
       return g.intl.string(g.t.OOkjql);
-    case m.wZ8.OPEN:
+    case h.wZ8.OPEN:
       return g.intl.string(g.t.F8ktci);
-    case m.wZ8.CONFIRM:
+    case h.wZ8.CONFIRM:
     default:
       if (null != r && r) return g.intl.string(g.t.n6I6k4);
       if (null != t.giftStyle) return t.isClaimed ? g.intl.string(g.t.OgpR0c) : g.intl.string(g.t["2BWscv"]);
@@ -202,23 +202,23 @@ function z(e, t, n) {
 
 function q(e) {
   return (0, r.EQ)(e).with({
-    interval: h.rV.MONTH,
-    premiumSubscriptionType: h.PremiumTypes.TIER_2
+    interval: m.rV.MONTH,
+    premiumSubscriptionType: m.PremiumTypes.TIER_2
   }, () => g.intl.formatToPlainString(g.t["vFfV+J"], {
     timeInterval: g.intl.string(g.t.FPybU7)
   })).with({
-    interval: h.rV.YEAR,
-    premiumSubscriptionType: h.PremiumTypes.TIER_2
+    interval: m.rV.YEAR,
+    premiumSubscriptionType: m.PremiumTypes.TIER_2
   }, () => g.intl.formatToPlainString(g.t["vFfV+J"], {
     timeInterval: g.intl.string(g.t.tfqrhj)
   })).with({
-    interval: h.rV.MONTH,
-    premiumSubscriptionType: h.PremiumTypes.TIER_1
+    interval: m.rV.MONTH,
+    premiumSubscriptionType: m.PremiumTypes.TIER_1
   }, () => g.intl.formatToPlainString(g.t.gjKbF4, {
     intervalCount: e.intervalCount
   })).with({
-    interval: h.rV.YEAR,
-    premiumSubscriptionType: h.PremiumTypes.TIER_1
+    interval: m.rV.YEAR,
+    premiumSubscriptionType: m.PremiumTypes.TIER_1
   }, () => g.intl.formatToPlainString(g.t.GIe7Bw, {
     intervalCount: e.intervalCount
   })).otherwise(() => g.intl.string(g.t["5ayf7w"]))
@@ -236,17 +236,17 @@ function Q(e) {
     subscriptionPlan: l = null
   } = e;
   switch (t) {
-    case m.wZ8.ERROR:
+    case h.wZ8.ERROR:
       return X(r, i, a, o, s);
-    case m.wZ8.SUCCESS:
+    case h.wZ8.SUCCESS:
       if (null != l) return q(l);
       return g.intl.formatToPlainString(g.t["3CPsbo"], {
         skuName: n.name
       });
-    case m.wZ8.CONFIRM:
+    case h.wZ8.CONFIRM:
     default:
       if (null != l) {
-        let e = l.interval === h.rV.MONTH ? g.t.P9eTKt : g.t.d8rUdy;
+        let e = l.interval === m.rV.MONTH ? g.t.P9eTKt : g.t.d8rUdy;
         return g.intl.format(e, {
           skuName: n.name,
           intervalCount: l.intervalCount
@@ -287,25 +287,25 @@ let ee = (e, t) => (0, a.e7)([l.Z], () => {
 
 function et(e, t) {
   switch (e.code) {
-    case m.evJ.INVALID_GIFT_SELF_REDEMPTION:
+    case h.evJ.INVALID_GIFT_SELF_REDEMPTION:
       return g.intl.string(g.t.wa9h7F);
-    case m.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED:
+    case h.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED:
       return g.intl.string(g.t.Iw2TUW);
-    case m.evJ.INVALID_GIFT_REDEMPTION_OWNED:
+    case h.evJ.INVALID_GIFT_REDEMPTION_OWNED:
       return g.intl.string(g.t.mdLtb5);
-    case m.evJ.UNKNOWN_GIFT_CODE:
+    case h.evJ.UNKNOWN_GIFT_CODE:
       return g.intl.string(g.t.roztIr);
-    case m.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
+    case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
       return g.intl.formatToPlainString(g.t["4YTHKw"], {
-        planName: (0, f.M5)(t, h.PremiumTypes.TIER_2) ? g.intl.string(g.t.lG6a5x) : g.intl.string(g.t.FSOz78)
+        planName: (0, f.M5)(t, m.PremiumTypes.TIER_2) ? g.intl.string(g.t.lG6a5x) : g.intl.string(g.t.FSOz78)
       });
-    case m.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
+    case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
       return g.intl.string(g.t["9i1J30"]);
-    case m.evJ.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
+    case h.evJ.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
       return g.intl.string(g.t["U26WX+"]);
-    case m.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
+    case h.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
       return g.intl.string(g.t.ypuSd8);
-    case m.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
+    case h.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
       return g.intl.string(g.t.mXMmWE);
     default:
       return g.intl.string(g.t["s9+XlB"])

@@ -20,14 +20,14 @@ function s(e, t) {
     f = n.allowedAutoPlacements,
     p = true === f ? i.Ct : f,
     _ = (0, r.Z)(s),
-    m = _ ? d ? i.bw : i.bw.filter(function(e) {
+    h = _ ? d ? i.bw : i.bw.filter(function(e) {
       return (0, r.Z)(e) === _
     }) : i.mv,
-    h = m.filter(function(e) {
+    m = h.filter(function(e) {
       return p.indexOf(e) >= 0
     });
-  0 === h.length && (h = m);
-  var g = h.reduce(function(t, n) {
+  0 === m.length && (m = h);
+  var g = m.reduce(function(t, n) {
     return t[n] = (0, a.Z)(e, {
       placement: n,
       boundary: l,

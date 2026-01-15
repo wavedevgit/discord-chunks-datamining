@@ -16,7 +16,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = {},
+let m = {},
   g = {},
   E = {},
   b = {},
@@ -36,11 +36,11 @@ let h = {},
   T = {};
 
 function C() {
-  h = {}, E = {}, b = {}, y = false, O = false, v = false, S = new Set, I = new Set
+  m = {}, E = {}, b = {}, y = false, O = false, v = false, S = new Set, I = new Set
 }
 
 function A(e) {
-  h[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
+  m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
 function N(e) {
@@ -48,7 +48,7 @@ function N(e) {
 }
 
 function P(e) {
-  delete h[e.id];
+  delete m[e.id];
   let t = b[e.application_id];
   null != t && t.delete(e.id);
   let n = E[e.sku_id];
@@ -58,14 +58,14 @@ function P(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   let {
     applicationId: t
   } = e;
   S.add(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     applicationId: t,
     entitlements: n
@@ -126,7 +126,7 @@ class F extends(r = Chunk442837.yh) {
     this.syncWith([u.Z], () => true)
   }
   get(e) {
-    return h[e]
+    return m[e]
   }
   getGiftable() {
     return a().values(g)
@@ -135,14 +135,14 @@ class F extends(r = Chunk442837.yh) {
     let t = b[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(h[e]);
+    for (let e of t) n.add(m[e]);
     return n
   }
   getForSku(e) {
     let t = E[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(h[e]);
+    for (let e of t) n.add(m[e]);
     return n
   }
   get fetchingAllEntitlements() {
@@ -170,7 +170,7 @@ class F extends(r = Chunk442837.yh) {
     let t = T[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(h[e]);
+    for (let e of t) n.add(m[e]);
     return n
   }
   isEntitledToSku(e, t, n) {
@@ -178,7 +178,7 @@ class F extends(r = Chunk442837.yh) {
       i = E[t];
     if (null != i)
       for (let t of i) {
-        let n = h[t];
+        let n = m[t];
         if (null != n && n.isValid(e, f.Z, r)) returntrue
       }
     if (I.has(n)) returnfalse;
@@ -228,10 +228,10 @@ class F extends(r = Chunk442837.yh) {
     }), t
   }
 }
-m(F, "displayName", "EntitlementStore");
+h(F, "displayName", "EntitlementStore");
 let B = new F(Chunk570140.Z, {
-  ENTITLEMENT_FETCH_APPLICATION_START: R,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
+  ENTITLEMENT_FETCH_APPLICATION_START: w,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: R,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: x,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
   SKU_PURCHASE_SUCCESS: k,

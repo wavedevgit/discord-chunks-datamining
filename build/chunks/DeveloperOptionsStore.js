@@ -24,7 +24,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function m(e) {
   }
   return e
 }
-let h = (() => {
+let m = (() => {
     let e = "".concat(location.protocol, "//").concat(location.host, "/__development/source_maps"),
       t = null,
       n = new i.Z(5 * d.Z.Millis.SECOND, +d.Z.Millis.MINUTE, true),
@@ -93,10 +93,10 @@ let h = (() => {
     personaForceIdVerificationFail: false,
     personaDisableModularPilotTestTemplate: false
   },
-  b = m({}, E);
+  b = h({}, E);
 
 function y(e) {
-  b = m({}, E, b, e), h.set(b.sourceMapsEnabled), l.K.set(g, b)
+  b = h({}, E, b, e), m.set(b.sourceMapsEnabled), l.K.set(g, b)
 }
 
 function O(e) {
@@ -114,14 +114,14 @@ function S(e) {
   var t;
   let n = ((null != (t = e.user.flags) ? t : 0) & p.xW$.STAFF) === p.xW$.STAFF,
     r = n || null != e.user.personal_connection_id;
-  n && h.set(b.sourceMapsEnabled), f.Z.setTags({
+  n && m.set(b.sourceMapsEnabled), f.Z.setTags({
     isStaff: r.toString()
   })
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
     let e = l.K.get(g);
-    null != e && (b = m({}, E, e))
+    null != e && (b = h({}, E, e))
   }
   get isTracingRequests() {
     return b.trace

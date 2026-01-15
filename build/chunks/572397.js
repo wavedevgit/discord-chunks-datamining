@@ -2,8 +2,8 @@
 /** chunk id: 572397, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => m,
-  q: () => h
+  J: () => h,
+  q: () => m
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk874893 = require("./874893.js");
-let m = () => {
+let h = () => {
     let e = (0, i.e7)([d.Z], () => d.Z.gradientPreset),
       t = (0, i.e7)([s.ZP], () => s.ZP.useSystemTheme === _.KW.ON),
       [n, a] = (0, r.useState)(t);
@@ -27,7 +27,7 @@ let m = () => {
       null != e && ((0, u.kj)(), n && (0, o.hi)(_.KW.ON))
     }, [e, n])
   },
-  h = () => {
+  m = () => {
     let {
       previewPaneVariant: e
     } = (0, i.cj)([d.Z], () => ({

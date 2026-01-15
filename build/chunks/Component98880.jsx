@@ -123,8 +123,8 @@ function X(e) {
     sectionOverallPosition: d,
     tracksImpression: p = true,
     disabled: _ = false,
-    overrideImageUrl: m,
-    showsPromoted: h
+    overrideImageUrl: h,
+    showsPromoted: m
   } = e, g = null != (t = (0, f.Z)(_)) ? t : _;
   return (0, r.jsx)(J, {
     application: n,
@@ -145,8 +145,8 @@ function X(e) {
       imageStyle: o,
       enableVideoBanner: s,
       disableBannerFadeIn: g !== _,
-      overrideImageUrl: m,
-      showsPromoted: h,
+      overrideImageUrl: h,
+      showsPromoted: m,
       children: l
     })
   })
@@ -163,8 +163,8 @@ function J(e) {
     tracksImpression: f,
     disabled: p,
     containerStyle: _,
-    look: m
-  } = e, h = i.useCallback(e => {
+    look: h
+  } = e, m = i.useCallback(e => {
     if ((0, D.BQ)(t)) {
       let n = t instanceof C.ZP ? t : C.ZP.createFromServer(t);
       (0, u.vq)(e, e => (0, r.jsx)(M.Z, Y({
@@ -188,11 +188,11 @@ function J(e) {
   }), y = i.useMemo(() => {
     let e = p ? F.containerDisabled : F.container;
     return o()(e, {
-      [F.containerBorderRadius]: "row" !== m,
-      [F.rowContainer]: "row" === m,
-      [F.iconCard]: "icon" === m
+      [F.containerBorderRadius]: "row" !== h,
+      [F.rowContainer]: "row" === h,
+      [F.iconCard]: "icon" === h
     }, _)
-  }, [_, p, m]);
+  }, [_, p, h]);
   return p ? (0, r.jsx)("div", {
     ref: f ? b : true,
     className: y,
@@ -201,7 +201,7 @@ function J(e) {
     innerRef: f ? b : true,
     className: y,
     onClick: n,
-    onContextMenu: h,
+    onContextMenu: m,
     "aria-label": Z.intl.formatToPlainString(Z.t["zLhr9+"], {
       applicationName: g,
       applicationDescription: E
@@ -246,16 +246,16 @@ function ee(e) {
     disableBannerFadeIn: u,
     children: f,
     overrideImageUrl: p,
-    showsPromoted: m
+    showsPromoted: h
   } = e, {
-    iconURL: h,
+    iconURL: m,
     name: g,
     description: E
   } = i.useMemo(() => (0, D.sl)(t, {
     fakeAppIconURL: B
-  }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, S.ZP)(h, ""), [v, I] = i.useState(false), T = i.useCallback(() => {
+  }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, S.ZP)(m, ""), [v, I] = i.useState(false), T = i.useCallback(() => {
     true === l && I(true)
-  }, [l]), C = m || (0, D.lf)(t), A = "large_banner" === n || "medium_banner" === n, P = i.useCallback(() => I(false), []), R = (0, s.e7)([_.Z, N.Z], () => _.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), w = (0, D.WA)(t);
+  }, [l]), C = h || (0, D.lf)(t), A = "large_banner" === n || "medium_banner" === n, P = i.useCallback(() => I(false), []), w = (0, s.e7)([_.Z, N.Z], () => _.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), R = (0, D.WA)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [A ? (0, r.jsxs)("div", {
       onMouseEnter: T,
@@ -275,7 +275,7 @@ function ee(e) {
           disableFadeIn: u,
           overrideImageUrl: p
         })
-      }), R || C || w !== d.ww.NONE ? (0, r.jsxs)("div", {
+      }), w || C || R !== d.ww.NONE ? (0, r.jsxs)("div", {
         className: F.bannerUpperRightContainer,
         children: [C && (0, r.jsx)("div", {
           className: F.promotedLabelWrapperBanner,
@@ -284,8 +284,8 @@ function ee(e) {
             color: "text-strong",
             children: Z.intl.string(Z.t["/eVltv"])
           })
-        }), R && (0, r.jsx)(et, {}), w !== d.ww.NONE && (0, r.jsx)(O.Z, {
-          labelType: w
+        }), w && (0, r.jsx)(et, {}), R !== d.ww.NONE && (0, r.jsx)(O.Z, {
+          labelType: R
         })]
       }) : null, (0, r.jsx)("div", {
         className: F.bannerImageChildContainer,
@@ -296,7 +296,7 @@ function ee(e) {
         [F.appDetailsRowContainer]: "row" === n
       }),
       children: [(0, r.jsx)(k.Z, {
-        src: h,
+        src: m,
         className: o()(F.icon, {
           [F.rowIcon]: "row" === n
         }),
@@ -447,7 +447,7 @@ function ea(e) {
     bot: t,
     fallbackColor: n,
     disableFadeIn: i
-  } = e, a = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), l = (0, R.aN)({
+  } = e, a = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), l = (0, w.aN)({
     id: t.id,
     banner: t.banner,
     canAnimate: !a,
@@ -492,14 +492,14 @@ function es(e) {
     pushHistory: l
   } = (0, x.hH)(), {
     friends: c
-  } = (0, h.Z)(t);
+  } = (0, m.Z)(t);
   return {
     onClickAppCard: i.useCallback(e => {
       e.stopPropagation(), (0, v.yw)(U.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
         application_id: t.id,
         section_name: n,
         search_results_position: r,
-        source: w.Z.entrypoint(),
+        source: R.Z.entrypoint(),
         promotional_label: (0, D.dF)(t),
         location: s,
         query: a,
@@ -534,8 +534,8 @@ function ec(e) {
   } = e, d = z(e, ["context", "application", "location", "sectionName", "isOneClickCTA", "fetchesApplication"]);
   if (!(0, D.BQ)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
   let f = i.useId(),
-    [p, _, h] = (0, s.Wu)([m.ZP, T.Z], () => [m.ZP.isLaunchingActivity(), m.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), T.Z.isLaunchingFrame(n.id)]),
-    g = null != _ && _.isLaunching && _.componentId === f || h,
+    [p, _, m] = (0, s.Wu)([h.ZP, T.Z], () => [h.ZP.isLaunchingActivity(), h.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), T.Z.isLaunchingFrame(n.id)]),
+    g = null != _ && _.isLaunching && _.componentId === f || m,
     {
       onActivityItemSelected: b,
       activityAction: y,
@@ -553,7 +553,7 @@ function ec(e) {
     sectionName: o,
     application: n,
     onClick: b,
-    disabled: p || h,
+    disabled: p || m,
     enableVideoBanner: !g,
     children: g ? (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.PULSING_ELLIPSIS,
@@ -579,7 +579,7 @@ function ec(e) {
         type: "submit",
         size: "md",
         variant: O,
-        disabled: p || h,
+        disabled: p || m,
         onClick: b,
         "aria-label": Z.intl.formatToPlainString(Z.t["XjP/R+"], {
           buttonText: v,

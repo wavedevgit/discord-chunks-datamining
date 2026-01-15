@@ -13,22 +13,22 @@ var Chunk127849 = require("./127849.js"),
   Chunk920542 = require("./920542.js"),
   p = Chunk840475.aTypedArray,
   _ = Chunk840475.exportTypedArrayMethod,
-  m = Chunk127849.Uint16Array,
-  h = m && Chunk35760(m.prototype.sort),
-  g = !!h && !(Chunk621523(function() {
-    h(new m(2), null)
+  h = Chunk127849.Uint16Array,
+  m = h && Chunk35760(h.prototype.sort),
+  g = !!m && !(Chunk621523(function() {
+    m(new h(2), null)
   }) && Chunk621523(function() {
-    h(new m(2), {})
+    m(new h(2), {})
   })),
-  E = !!h && !Chunk621523(function() {
+  E = !!m && !Chunk621523(function() {
     if (d) return d < 74;
     if (c) return c < 67;
     if (u) returntrue;
     if (f) return f < 602;
-    var e, t, n = new m(516),
+    var e, t, n = new h(516),
       r = Array(516);
     for (e = 0; e < 516; e++) t = e % 4, n[e] = 515 - e, r[e] = e - 2 * t + 3;
-    for (h(n, function(e, t) {
+    for (m(n, function(e, t) {
         return (e / 4 | 0) - (t / 4 | 0)
       }), e = 0; e < 516; e++)
       if (n[e] !== r[e]) returntrue
@@ -39,5 +39,5 @@ var Chunk127849 = require("./127849.js"),
     }
   };
 _("sort", function(e) {
-  return (true !== e && o(e), E) ? h(this, e) : s(p(this), b(e))
+  return (true !== e && o(e), E) ? m(this, e) : s(p(this), b(e))
 }, !E || g)

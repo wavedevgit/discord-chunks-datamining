@@ -64,14 +64,14 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     instance: t
   } = e;
   d(t.guild_id, [t])
 }
 
-function h(e, t) {
+function m(e, t) {
   var n;
   if (delete u[t], null == e) return;
   let r = l({}, null != (n = c[e]) ? n : {});
@@ -82,14 +82,14 @@ function g(e) {
   let {
     instance: t
   } = e;
-  h(t.guild_id, t.channel_id)
+  m(t.guild_id, t.channel_id)
 }
 
 function E(e) {
   let {
     channel: t
   } = e;
-  h(t.guild_id, t.id)
+  m(t.guild_id, t.id)
 }
 
 function b() {
@@ -119,8 +119,8 @@ let O = new y(Chunk570140.Z, {
   CONNECTION_OPEN: f,
   GUILD_CREATE: p,
   GUILD_DELETE: _,
-  STAGE_INSTANCE_CREATE: m,
-  STAGE_INSTANCE_UPDATE: m,
+  STAGE_INSTANCE_CREATE: h,
+  STAGE_INSTANCE_UPDATE: h,
   STAGE_INSTANCE_DELETE: g,
   CHANNEL_DELETE: E,
   LOGOUT: b

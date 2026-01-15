@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  y: () => h
+  y: () => m
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,7 +54,7 @@ var _ = function(e) {
   return e[e.ABOVE = 0] = "ABOVE", e[e.VISIBLE = 1] = "VISIBLE", e[e.BELOW = 2] = "BELOW", e
 }(_ || {});
 
-function m(e, t) {
+function h(e, t) {
   return {
     toValue: e,
     duration: null != t ? t : 300,
@@ -62,7 +62,7 @@ function m(e, t) {
   }
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   if (null != t) {
     let r = Math.ceil(Math.log10(e + 1));
     return null != n && n > 0 ? Math.min(r, n) * t : r * t
@@ -94,7 +94,7 @@ class g extends(r = Chunk473749.PureComponent) {
       forcePosition: r,
       animationSpeed: i
     } = this.props;
-    this.prevAnimate.setValue(1), null != r ? 0 === r ? (this.currAnimate.setValue(0), n = 2) : 2 === r && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), l.Z.parallel([l.Z.timing(this.prevAnimate, m(n, i)), l.Z.timing(this.currAnimate, m(1, i))]).start(this.animateNext)
+    this.prevAnimate.setValue(1), null != r ? 0 === r ? (this.currAnimate.setValue(0), n = 2) : 2 === r && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), l.Z.parallel([l.Z.timing(this.prevAnimate, h(n, i)), l.Z.timing(this.currAnimate, h(1, i))]).start(this.animateNext)
   }
   getAnimatedStyle(e) {
     let {
@@ -121,7 +121,7 @@ class g extends(r = Chunk473749.PureComponent) {
       digitWidth: t,
       padStartLength: n
     } = this.props;
-    return h(e, t, n)
+    return m(e, t, n)
   }
   padValue(e) {
     let {

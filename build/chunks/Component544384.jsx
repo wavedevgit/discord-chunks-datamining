@@ -45,7 +45,7 @@ function E(e) {
     handleGoLive: p,
     onClose: _,
     onSelect: E,
-    appContext: b = m.IlC.APP,
+    appContext: b = h.IlC.APP,
     disableChangeWindows: y = false,
     onInteraction: O
   } = e, v = null != (t = a.find(e => e.ownerId === (null == i ? true : i.id))) ? t : null, S = g(n, i, a), I = (0, c.Z)(v, b), T = (0, u.b)({
@@ -57,13 +57,13 @@ function E(e) {
     appContext: b
   });
   return (0, r.jsx)(s.Z, {
-    section: m.jXE.CONTEXT_MENU,
+    section: h.jXE.CONTEXT_MENU,
     children: (0, r.jsxs)(o.v2r, {
       onSelect: E,
       navId: "manage-streams",
       onClose: _,
       onInteraction: O,
-      "aria-label": null != v ? h.intl.string(h.t.S5anIc) : h.intl.string(h.t.fjBNo1),
+      "aria-label": null != v ? m.intl.string(m.t.S5anIc) : m.intl.string(m.t.fjBNo1),
       children: [(0, r.jsx)(o.kSQ, {
         children: S.map(e => {
           let {
@@ -72,7 +72,7 @@ function E(e) {
           } = e;
           return (0, r.jsx)(o.sNh, {
             id: t.ownerId,
-            label: h.intl.formatToPlainString(h.t["7rkg+/"], {
+            label: m.intl.formatToPlainString(m.t["7rkg+/"], {
               username: n
             }),
             icon: o.g5r,
@@ -82,7 +82,7 @@ function E(e) {
       }), l ? null : T, l ? null : (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
-          label: h.intl.string(h.t.PdRCRg),
+          label: m.intl.string(m.t.PdRCRg),
           children: I
         })
       })]

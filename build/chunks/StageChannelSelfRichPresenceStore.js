@@ -35,13 +35,13 @@ function v() {
   var e, t, n, r, i, a, o;
   let s = d.Z.getVoiceChannelId();
   if (null == s) return null;
-  let u = h.Z.getStageInstanceByChannel(s);
+  let u = m.Z.getStageInstanceByChannel(s);
   if (null == u) return null;
   let y = l.Z.getChannel(s);
   if (null == y || !f.oz(b.Plq.VIEW_CHANNEL, y)) return null;
   let v = c.Z.getGuild(y.getGuildId());
   if (null == v || !v.features.has(b.GuildFeatures.DISCOVERABLE)) return null;
-  let S = (0, m.Lw)(y, u),
+  let S = (0, h.Lw)(y, u),
     I = (null == O || null == (e = O.party) ? true : e.id) === S ? O : null,
     T = p.Z.getMutableParticipants(y.id, _.pV.SPEAKER),
     C = T.filter(e => e.type === _.Ui.STREAM).length,
@@ -76,7 +76,7 @@ function I(e) {
     voiceStates: t
   } = e;
   if (null == O) return;
-  let n = (0, m.rq)(O);
+  let n = (0, h.rq)(O);
   null != n && null != t.find(e => e.channelId === n.channelId) && S()
 }
 
@@ -89,7 +89,7 @@ function T(e) {
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(l.Z, c.Z, u.Z, d.Z, p.Z, h.Z)
+    this.waitFor(l.Z, c.Z, u.Z, d.Z, p.Z, m.Z)
   }
   getActivity() {
     return O

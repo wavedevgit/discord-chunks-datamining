@@ -39,8 +39,8 @@ let y = 1048576,
   A = true,
   N = 15 * Chunk70956.Z.Millis.MINUTE,
   P = +y,
-  R = 1.5 * y,
-  w = 256,
+  w = 1.5 * y,
+  R = 256,
   D = 12,
   x = true,
   L = 15 * Chunk70956.Z.Millis.MINUTE,
@@ -104,7 +104,7 @@ class W extends Chunk147913.Z {
         n.push(e), r.push(null != (s = t.total_allocation_kb) ? s : 0), i.push(null != (l = t.allocation_count) ? l : 0), a.push(null != (u = t.module_version) ? u : "")
       } let f = _.Z.getPerfAttributedMemoryStats(),
       p = null == f ? true : f.events_dropped,
-      m = {
+      h = {
         memory_type: "native_heap",
         module_name: n,
         allocation_total_size_kb: r,
@@ -112,7 +112,7 @@ class W extends Chunk147913.Z {
         module_version: a,
         events_dropped: p
       };
-    if (d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, m), C) {
+    if (d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, h), C) {
       let e = o.slice(0, 3).map(e => e[0]),
         t = 3;
       for (let n of e.map(e => _.Z.getPerfAttributedMemoryCallstacks(e)).filter(e => null != e).flatMap(e => e).sort((e, t) => {
@@ -134,7 +134,7 @@ class W extends Chunk147913.Z {
         d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, e)
       }
     }
-    A && this._pushedNativeDeadlockMinidumpCount < 5 && (await h.ZP.submitLiveCrashReport({
+    A && this._pushedNativeDeadlockMinidumpCount < 5 && (await m.ZP.submitLiveCrashReport({
       message: "Desktop Memory Thread State",
       extra: {
         renderer_memory_kb: e,
@@ -163,10 +163,10 @@ class W extends Chunk147913.Z {
       s.Z.persist(), i.K.set(B, {
         timeSinceStartup: t,
         timestamp: Date.now()
-      }), h.ZP.setCrashInformation(r.X4.IntentionalCrashReason, "excessive-memory-usage".concat(n ? "-forced" : "")), m.Z.addBreadcrumb({
+      }), m.ZP.setCrashInformation(r.X4.IntentionalCrashReason, "excessive-memory-usage".concat(n ? "-forced" : "")), h.Z.addBreadcrumb({
         category: "excessive-memory-usage-restart",
         message: "Restarting due to excessive renderer memory usage: ".concat(e, "kB")
-      }), h.ZP.crash(3)
+      }), m.ZP.crash(3)
     }, H)
   }
   trackPartitionAllocPerformanceStats() {
@@ -182,7 +182,7 @@ class W extends Chunk147913.Z {
       null != e && e && (this._paHeapHooksInstalled = true)
     }
     if (this._paHeapHooksInstalled) {
-      if (i < R) return;
+      if (i < w) return;
       let e = _.Z.getPerfAttributedPAMemory();
       if (null == e) return;
       let r = [],
@@ -213,7 +213,7 @@ class W extends Chunk147913.Z {
             return (null != (n = t.total_alloc_kb) ? n : 0) - (null != (r = e.total_alloc_kb) ? r : 0)
           }).slice(0, t).filter(e => {
             var t;
-            return (null != (t = e.total_alloc_kb) ? t : 0) > w
+            return (null != (t = e.total_alloc_kb) ? t : 0) > R
           })) {
           let e = {
             memory_type: "part_alloc",

@@ -2,7 +2,7 @@
 /** chunk id: 623488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -72,14 +72,14 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     imageUrl: t,
     name: n,
     description: i,
     formattedPrice: c,
-    role: m,
-    ctaComponent: h,
+    role: h,
+    ctaComponent: m,
     shouldShowFullDescriptionButton: g = true,
     onShowFullDescription: E,
     productType: b,
@@ -93,7 +93,7 @@ function m(e) {
     thumbnailHeight: A = 187,
     descriptionTextVariant: N = "text-sm/normal",
     isDraft: P = false
-  } = e, R = (0, s.hQ)(), w = e => {
+  } = e, w = (0, s.hQ)(), R = e => {
     e.stopPropagation()
   }, D = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p, {
@@ -115,7 +115,7 @@ function m(e) {
           variant: "text-md/medium",
           color: "text-strong",
           className: f.productName,
-          id: R,
+          id: w,
           children: n
         }), (0, r.jsx)(o.Rny, {
           children: (0, r.jsx)(l.Z, {
@@ -127,11 +127,11 @@ function m(e) {
         }), g && (0, r.jsx)(_, {
           onShowFullDescription: E,
           variant: N
-        }), S || null == m || "" === m.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), S || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
-            role: m
+            role: h
           })]
         })]
       }), O]
@@ -149,14 +149,14 @@ function m(e) {
         children: b
       }), (0, r.jsx)("div", {
         className: f.productActionButton,
-        onClick: w,
-        children: h
+        onClick: R,
+        children: m
       })]
     })]
   });
   return null == y ? (0, r.jsx)("article", {
     className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground),
-    "aria-labelledby": R,
+    "aria-labelledby": w,
     children: D
   }) : (0, r.jsx)("div", {
     style: {

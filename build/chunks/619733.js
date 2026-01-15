@@ -10,8 +10,8 @@ require.d(exports, {
   Sg: () => d,
   TG: () => s,
   YX: () => u,
-  Z4: () => m,
-  fj: () => h,
+  Z4: () => h,
+  fj: () => m,
   nd: () => _,
   tq: () => f
 });
@@ -53,5 +53,5 @@ Chunk763600.Z.SHOCKBYTE, window.GLOBAL_ENV.RELEASE_CHANNEL, Chunk48541.C.STAGING
 let _ = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  m = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t),
-  h = "0"
+  h = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t),
+  m = "0"

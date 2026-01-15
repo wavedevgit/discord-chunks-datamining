@@ -36,13 +36,13 @@ function g(e) {
     return (0, f.xg)(e)
   }, [O]);
   return null == v ? null : (0, r.jsxs)(s.l, {
-    className: o()(h.wrapper, a),
+    className: o()(m.wrapper, a),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: h.headerTitle,
+        className: m.headerTitle,
         children: [null != y && (0, r.jsx)(c.Eep, {
           src: y.href,
-          imageClassName: h.subscriptionImg,
+          imageClassName: m.subscriptionImg,
           width: 48,
           height: 48
         }), (0, r.jsxs)("div", {
@@ -57,13 +57,13 @@ function g(e) {
       }), t]
     }),
     children: [!(0, p.Ew)(b) && (0, r.jsx)("div", {
-      className: h.description,
-      children: (0, r.jsx)(m.Z, {
+      className: m.description,
+      children: (0, r.jsx)(h.Z, {
         variant: "text-sm/medium",
         children: b
       })
     }), null != E && E.length > 0 && (0, r.jsx)("div", {
-      className: h.benefits,
+      className: m.benefits,
       children: E.map(e => {
         let {
           id: t,

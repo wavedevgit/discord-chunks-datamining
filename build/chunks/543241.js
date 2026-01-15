@@ -2,7 +2,7 @@
 /** chunk id: 543241, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => R,
+  A3: () => w,
   C1: () => H,
   DV: () => Z,
   Gn: () => j,
@@ -11,7 +11,7 @@ require.d(exports, {
   MZ: () => Y,
   NJ: () => V,
   Nf: () => U,
-  PC: () => w,
+  PC: () => R,
   Y1: () => G,
   ZF: () => P,
   fe: () => M,
@@ -57,13 +57,13 @@ let N = function(e, t) {
       c = B(n),
       f = V(n),
       {
-        topEmojis: h,
+        topEmojis: m,
         newlyAddedEmojis: g
       } = (0, O.Z)(n, e),
       {
         allEmojis: S
       } = (0, y.Z)({
-        topEmojis: h,
+        topEmojis: m,
         newlyAddedEmojis: g
       }),
       T = (0, o.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
@@ -71,9 +71,9 @@ let N = function(e, t) {
         var e;
         return null == (e = p.Z.getGuild(n)) ? true : e.name
       }),
-      N = (0, o.e7)([m.default], () => m.default.getCurrentUser()),
+      N = (0, o.e7)([h.default], () => h.default.getCurrentUser()),
       P = (0, b.I5)(N),
-      R = (0, d.g2)({
+      w = (0, d.g2)({
         location: "useEmojiCategories"
       });
     return r.useMemo(() => {
@@ -86,7 +86,7 @@ let N = function(e, t) {
           id: v.UX.SOUNDMOJI,
           isNitroLocked: false
         },
-        m = r => E.ZP.getEmojiUnavailableReasons({
+        h = r => E.ZP.getEmojiUnavailableReasons({
           categoryEmojis: r,
           channel: t,
           guildId: n,
@@ -103,7 +103,7 @@ let N = function(e, t) {
             emojisUnfiltered: s,
             emojisPremiumLockedCount: l,
             emojiNitroLocked: c
-          } = m(a);
+          } = h(a);
           if (0 === s.length) continue;
           let d = null;
           t === v.En.GUILD && (d = {
@@ -119,7 +119,7 @@ let N = function(e, t) {
           let {
             emojisDisabled: e,
             emojisUnfiltered: n
-          } = m(S);
+          } = h(S);
           if (null == n || 0 === n.length) return t;
           t.push({
             type: v.En.TOP_GUILD_EMOJI,
@@ -135,7 +135,7 @@ let N = function(e, t) {
           let {
             emojisDisabled: n,
             emojisUnfiltered: i
-          } = m([I.Hz.REACTION, I.Hz.DEFAULT_REACT_EMOJI].includes(e) ? c : s);
+          } = h([I.Hz.REACTION, I.Hz.DEFAULT_REACT_EMOJI].includes(e) ? c : s);
           if (null == i || 0 === i.length) return t;
           t.push({
             type: v.En.RECENT,
@@ -149,7 +149,7 @@ let N = function(e, t) {
           let {
             emojisDisabled: e,
             emojisUnfiltered: n
-          } = m(f);
+          } = h(f);
           if (null == n || 0 === n.length) return t;
           t.push({
             type: v.En.FAVORITES,
@@ -169,8 +169,8 @@ let N = function(e, t) {
           isNitroLocked: false
         });
         return t
-      }, R && i ? [d] : [])
-    }, [T, t, n, e, P, S, C, c, s, f, a, R, i])
+      }, w && i ? [d] : [])
+    }, [T, t, n, e, P, S, C, c, s, f, a, w, i])
   },
   P = () => c.ZP.getCategories().map(e => ({
     type: v.En.UNICODE,
@@ -178,14 +178,14 @@ let N = function(e, t) {
     name: e,
     isNitroLocked: false
   })),
-  R = e => {
+  w = e => {
     let t = (null == e ? true : e.getGuildId()) != null;
-    h.default.track(S.rMx.PREMIUM_PROMOTION_OPENED, {
+    m.default.track(S.rMx.PREMIUM_PROMOTION_OPENED, {
       location_page: t ? S.ZY5.GUILD_CHANNEL : S.ZY5.DM_CHANNEL,
       location_section: null != e ? S.jXE.EMOJI_PICKER_POPOUT : S.jXE.CUSTOM_STATUS_MODAL
     })
   },
-  w = (e, t) => {
+  R = (e, t) => {
     s.ZP.trackWithMetadata(S.rMx.SEARCH_STARTED, {
       search_type: null != t && t === I.Hz.REACTION ? S.aib.EMOJI_REACTION : S.aib.EMOJI,
       location: e

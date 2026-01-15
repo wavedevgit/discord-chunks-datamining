@@ -2,7 +2,7 @@
 /** chunk id: 584973, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,13 +38,13 @@ function m(e) {
   return e
 }
 
-function h(e) {
+function m(e) {
   let {
     emoji: t,
     className: n,
     animate: a = true,
     hideTooltip: _ = false,
-    tooltipDelay: h = f.X
+    tooltipDelay: m = f.X
   } = e, g = u.Yk.useSetting(), E = i.useRef(null), b = null != t.id ? ":".concat(t.name, ":") : c.ZP.translateSurrogatesToInlineEmoji(t.name);
   if (null == t.id && d.T.has(t.name)) return (0, r.jsx)("span", {
     className: o()(p.emoji, n),
@@ -60,10 +60,10 @@ function h(e) {
       E.current = e
     }
   };
-  return _ ? (0, r.jsx)(l.Z, m({}, y)) : (0, r.jsx)(s.u, {
+  return _ ? (0, r.jsx)(l.Z, h({}, y)) : (0, r.jsx)(s.u, {
     targetElementRef: E,
     text: b,
-    delay: h,
-    children: (0, r.jsx)(l.Z, m({}, y))
+    delay: m,
+    children: (0, r.jsx)(l.Z, h({}, y))
   })
 }

@@ -143,9 +143,9 @@ function H(e) {
     account: n,
     theme: a,
     locale: o
-  } = e, [l, p] = i.useState(n.friendSync), [m, h] = i.useState(n.visibility), [v, I] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [A, P] = i.useState(null), [D, G] = i.useState(null), [F, H] = i.useState(false), [Y, W] = i.useState([]), K = (0, E.rR)(n.type), z = g.Z.get(K);
+  } = e, [l, p] = i.useState(n.friendSync), [h, m] = i.useState(n.visibility), [v, I] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [A, P] = i.useState(null), [D, G] = i.useState(null), [F, H] = i.useState(false), [Y, W] = i.useState([]), K = (0, E.rR)(n.type), z = g.Z.get(K);
   i.useEffect(() => {
-    p(n.friendSync), h(n.visibility), I(n.metadataVisibility), C(n.showActivity)
+    p(n.friendSync), m(n.visibility), I(n.metadataVisibility), C(n.showActivity)
   }, [n]);
   let q = {
       inProgressVisibility: A,
@@ -303,12 +303,12 @@ function H(e) {
       label: k.intl.string(k.t.FYKGsL),
       checked: 1 === v,
       onChange: eo,
-      disabled: 1 !== m || null == n.metadata
+      disabled: 1 !== h || null == n.metadata
     })), (0, r.jsxs)("div", {
       className: U.connectionOptions,
       children: [(0, r.jsx)(f.rsf, {
         label: k.intl.string(k.t.f7yOAX),
-        checked: 1 === m,
+        checked: 1 === h,
         onChange: ea
       }), o, a, i]
     })
@@ -360,7 +360,7 @@ function H(e) {
         variant: "primary"
       }]
     }, i), {
-      children: (0, R.Z)(n) && (0, r.jsx)(w.Z, {
+      children: (0, w.Z)(n) && (0, r.jsx)(R.Z, {
         children: k.intl.format(k.t.COW3Xn, {
           platformName: e.name
         })
@@ -379,7 +379,7 @@ function H(e) {
       });
       return
     }
-    h(r), _.Z.setVisibility(n.type, n.id, r)
+    m(r), _.Z.setVisibility(n.type, n.id, r)
   }
 
   function eo(e) {
@@ -411,7 +411,7 @@ function H(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = Q.current;
-    null != e && (h(e), _.Z.setVisibility(n.type, n.id, e), P(null)), null != t && (I(t), _.Z.setMetadataVisibility(n.type, n.id, t), G(null))
+    null != e && (m(e), _.Z.setVisibility(n.type, n.id, e), P(null)), null != t && (I(t), _.Z.setMetadataVisibility(n.type, n.id, t), G(null))
   }, [n]), (0, r.jsxs)("div", {
     className: U.connection,
     children: [X(n), J(n), $(n), ee(z), en(), et()]
@@ -449,7 +449,7 @@ function K() {
   let t = (0, E.fq)();
   return (0, r.jsxs)("div", {
     className: U.connectionsContainer,
-    children: [t.slice(0, 10).map(e => (0, r.jsx)(m.Z, {
+    children: [t.slice(0, 10).map(e => (0, r.jsx)(h.Z, {
       type: e.type,
       className: U.__invalid_accountButton,
       innerClassName: U.accountButtonInner
@@ -513,7 +513,7 @@ function q() {
   let e = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation),
     t = (0, l.e7)([I.Z], () => I.Z.isFetching()),
     n = (0, l.e7)([I.Z], () => I.Z.getAccounts()),
-    i = (0, h.ZP)(),
+    i = (0, m.ZP)(),
     a = (0, l.e7)([P.default], () => P.default.locale);
   return e ? null : (0, r.jsx)(z, {
     fetching: t,
@@ -525,7 +525,7 @@ function q() {
 let Q = () => {
   let e = (0, l.e7)([I.Z], () => I.Z.isFetching()),
     t = (0, l.e7)([I.Z], () => I.Z.getAccounts()),
-    n = (0, h.ZP)(),
+    n = (0, m.ZP)(),
     a = (0, l.e7)([P.default], () => P.default.locale);
   return i.useEffect(() => {
     _.Z.fetch()

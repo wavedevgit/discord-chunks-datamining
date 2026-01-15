@@ -66,7 +66,7 @@ let d = {
     flashQueue: []
   }));
 
-function m(e) {
+function h(e) {
   let t, n, r;
   for (let i of e.titles) {
     if (null != t && null != n) break;
@@ -75,7 +75,7 @@ function m(e) {
   return [t, r, n]
 }
 
-function h(e) {
+function m(e) {
   let {
     notificationCount: t
   } = e;
@@ -131,7 +131,7 @@ function I() {
   let [e, t] = _(e => {
     let {
       flashQueue: t
-    } = e, n = m(e).filter(e => null != e).join(" | "), r = h(e);
+    } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
   }, i.X), [n, a] = r.useState(false), o = r.useRef(0), s = null == t ? true : t.messages[o.current % t.messages.length];
   return r.useEffect(() => {

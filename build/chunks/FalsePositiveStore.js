@@ -50,8 +50,8 @@ function p(e, t) {
   }), e
 }
 let _ = 3,
-  m = 4,
-  h = 14 * Chunk70956.Z.Millis.DAY,
+  h = 4,
+  m = 14 * Chunk70956.Z.Millis.DAY,
   g = Object.freeze([]),
   E = {},
   b = {};
@@ -107,10 +107,10 @@ class T extends(i = Chunk442837.ZP.Store) {
   }
   canSubmitFpReport(e) {
     let t = E[e];
-    return null != t && !t.reportSubmit && l.default.age(t.messageId) < h
+    return null != t && !t.reportSubmit && l.default.age(t.messageId) < m
   }
   get validContentScanVersion() {
-    return (0, c.zV)("ExplicitMediaStore.validContentScanVersion") ? null != r ? r : m : Math.min(null != r ? r : _, _)
+    return (0, c.zV)("ExplicitMediaStore.validContentScanVersion") ? null != r ? r : h : Math.min(null != r ? r : _, _)
   }
 }
 u(T, "displayName", "FalsePositiveStore");

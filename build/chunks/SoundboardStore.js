@@ -39,11 +39,11 @@ let b = new Map,
   N = new Map,
   P = false;
 
-function R() {
+function w() {
   b.clear(), y.clear(), C = 0, O.clear(), N.clear(), P = false, I = 0, T = 0, S = 0
 }
 
-function w() {
+function R() {
   O.clear(), N.clear()
 }
 
@@ -102,7 +102,7 @@ function G(e) {
   let {
     soundboardSounds: t
   } = e;
-  b.set(m.X8, t), S = 2
+  b.set(h.X8, t), S = 2
 }
 
 function Z() {
@@ -138,7 +138,7 @@ function H(e) {
   a <= 0 ? O.delete(r) : O.set(r, a), o <= 0 ? N.delete(i) : N.set(i, o)
 }
 let Y = a().debounce((e, t) => {
-  d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
+  d.default.track(m.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
     volume: Math.round((0, f.P)(e)),
     location_stack: t
   }), l.kU.updateSetting({
@@ -264,7 +264,7 @@ class X extends(r = Chunk442837.ZP.Store) {
 }
 E(X, "displayName", "SoundboardStore");
 let J = new X(Chunk570140.Z, {
-  LOGOUT: R,
+  LOGOUT: w,
   GUILD_SOUNDBOARD_FETCH: D,
   GUILD_SOUNDBOARD_SOUND_CREATE: j,
   GUILD_SOUNDBOARD_SOUND_UPDATE: j,
@@ -273,7 +273,7 @@ let J = new X(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_END: H,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: M,
   USER_SOUNDBOARD_SET_VOLUME: W,
-  VOICE_CHANNEL_SELECT: w,
+  VOICE_CHANNEL_SELECT: R,
   USER_SETTINGS_PROTO_UPDATE: z,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: U,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: G,

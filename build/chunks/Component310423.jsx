@@ -79,18 +79,18 @@ function P(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   var t, n, a, o, s, u, d;
   let f, {
       option: g,
       channel: v,
       guild: S,
       messageId: T,
-      parentOptionKey: w,
+      parentOptionKey: R,
       commandOptionSpec: D,
       sourceAnalyticsLocations: x
     } = e,
-    L = null != w ? w + " " + g.name : g.name;
+    L = null != R ? R + " " + g.name : g.name;
   if (g.type === c.jw.SUB_COMMAND || g.type === c.jw.SUB_COMMAND_GROUP) {
     let e = [(0, r.jsxs)(i.Fragment, {
         children: [" ", (0, r.jsx)(l.Text, C(I({}, A), {
@@ -98,7 +98,7 @@ function R(e) {
         }))]
       }, L)],
       s = Object.fromEntries(null == (t = null != (a = null == D ? true : D.options) ? a : []) ? true : t.map(e => [e.name, e]));
-    for (let t of null != (o = g.options) ? o : []) e = e.concat(R({
+    for (let t of null != (o = g.options) ? o : []) e = e.concat(w({
       option: t,
       channel: v,
       guild: S,
@@ -131,7 +131,7 @@ function R(e) {
     }
     case c.jw.CHANNEL: {
       let e = g.value.toString(),
-        t = m.Z.getChannel(e);
+        t = h.Z.getChannel(e);
       null != t && (f = (0, r.jsxs)(p.Z, C(I({}, N), {
         children: [y.zy, t.name]
       })));
@@ -139,7 +139,7 @@ function R(e) {
     }
     case c.jw.ROLE: {
       let e = g.value.toString(),
-        t = null != S ? h.Z.getRole(S.id, e) : true;
+        t = null != S ? m.Z.getRole(S.id, e) : true;
       null != t && (f = (0, r.jsxs)(p.Z, C(I({}, N), {
         children: [y.ME, t.name]
       })));
@@ -147,7 +147,7 @@ function R(e) {
     }
     case c.jw.MENTIONABLE: {
       let e = g.value.toString(),
-        t = null != S ? h.Z.getRole(S.id, e) : true;
+        t = null != S ? m.Z.getRole(S.id, e) : true;
       if (null != t) f = (0, r.jsxs)(p.Z, {
         children: [y.ME, t.name]
       });
@@ -182,10 +182,10 @@ function R(e) {
   }, L)]
 }
 
-function w(e) {
+function R(e) {
   var t, n, a, o, p, _;
-  let m, {
-      channel: h,
+  let h, {
+      channel: m,
       messageId: E,
       interactionData: b
     } = e,
@@ -195,27 +195,27 @@ function w(e) {
     {
       onCopy: O,
       copyRef: S
-    } = (0, d.Z)(h, null == b || null == (t = b.application_command) ? true : t.id),
-    T = (0, s.e7)([g.Z], () => g.Z.getGuild(h.guild_id), [h.guild_id]);
+    } = (0, d.Z)(m, null == b || null == (t = b.application_command) ? true : t.id),
+    T = (0, s.e7)([g.Z], () => g.Z.getGuild(m.guild_id), [m.guild_id]);
   if (i.useEffect(() => {
-      (null == b || b.type === c.yU.CHAT && true === b.application_command) && f.OG(h.id, E)
-    }, [h.id, E, b]), null == b) m = (0, r.jsx)(l.$jN, {
+      (null == b || b.type === c.yU.CHAT && true === b.application_command) && f.OG(m.id, E)
+    }, [m.id, E, b]), null == b) h = (0, r.jsx)(l.$jN, {
     type: l.$jN.Type.SPINNING_CIRCLE,
     className: v.spinner
   });
   else {
     let e = [],
       t = Object.fromEntries((null != (o = null == (n = b.application_command) ? true : n.options) ? o : []).map(e => [e.name, e]));
-    for (let n of null != (p = b.options) ? p : []) e = e.concat(R({
+    for (let n of null != (p = b.options) ? p : []) e = e.concat(w({
       option: n,
-      channel: h,
+      channel: m,
       guild: T,
       messageId: E,
       parentOptionKey: null,
       commandOptionSpec: t[n.name],
       sourceAnalyticsLocations: y
     }));
-    m = (0, r.jsxs)(r.Fragment, {
+    h = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(l.Text, C(I({}, A), {
         children: ["/", null != (_ = null == (a = b.application_command) ? true : a.name_localized) ? _ : b.name]
       })), e]
@@ -232,10 +232,10 @@ function w(e) {
     children: [(0, r.jsx)("div", {
       className: v.tooltip,
       ref: S,
-      children: m
+      children: h
     }), (0, r.jsx)("div", {
       className: v.tooltipPointer
     })]
   })
 }
-let D = Chunk473749.memo(w)
+let D = Chunk473749.memo(R)

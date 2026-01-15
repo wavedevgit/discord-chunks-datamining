@@ -22,8 +22,8 @@ function l(e, t) {
     validationDetails: p
   } = t.displayValidation, {
     labelProps: _,
-    fieldProps: m,
-    descriptionProps: h,
+    fieldProps: h,
+    descriptionProps: m,
     errorMessageProps: g
   } = (0, o.U)({
     ...e,
@@ -34,7 +34,7 @@ function l(e, t) {
   r.k.set(t, {
     name: l,
     form: c,
-    descriptionId: h.id,
+    descriptionId: m.id,
     errorMessageId: g.id,
     validationBehavior: u
   });
@@ -52,11 +52,11 @@ function l(e, t) {
     groupProps: (0, a.d)(E, {
       role: "group",
       "aria-disabled": n || true,
-      ...m,
+      ...h,
       ...b
     }),
     labelProps: _,
-    descriptionProps: h,
+    descriptionProps: m,
     errorMessageProps: g,
     isInvalid: d,
     validationErrors: f,

@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,7 +85,7 @@ function S() {
   var e;
   let t = null == (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? true : e.stickers;
   if (null == t) returnfalse;
-  b.overwriteHistory(a().mapValues(t, e => h(_({}, e), {
+  b.overwriteHistory(a().mapValues(t, e => m(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }

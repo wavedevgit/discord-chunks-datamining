@@ -98,10 +98,10 @@ function F(e) {
     guildId: a,
     channelId: o,
     role: s
-  } = e, c = i.useRef(null), u = (0, l.e7)([R.Z], () => {
+  } = e, c = i.useRef(null), u = (0, l.e7)([w.Z], () => {
     var e;
-    return null == (e = R.Z.getGuild(a)) ? true : e.ownerId
-  }, [a]), p = (0, l.e7)([w.default], () => w.default.getUser(t.userId), [t.userId]), _ = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
+    return null == (e = w.Z.getGuild(a)) ? true : e.ownerId
+  }, [a]), p = (0, l.e7)([R.default], () => R.default.getUser(t.userId), [t.userId]), _ = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
   return null == p || null == _ ? null : (0, r.jsx)(T.Z, {
     targetElementRef: c,
     userId: t.userId,
@@ -158,30 +158,30 @@ function B(e) {
     null == (e = t.setPopoutRef) || e.call(t, null)
   });
   let f = (0, y.Z)(a),
-    _ = (0, l.e7)([R.Z], () => {
-      let e = R.Z.getGuild(a);
+    _ = (0, l.e7)([w.Z], () => {
+      let e = w.Z.getGuild(a);
       return null == e ? null : (0, C.lV)(e)
     }, [a]),
-    m = (0, l.Wu)([N.ZP, w.default], () => {
+    h = (0, l.Wu)([N.ZP, R.default], () => {
       let e = N.ZP.getMembers(a),
         t = null == n || n === _ ? e : e.filter(e => e.roles.includes(n));
-      return o()(t).filter(e => null != w.default.getUser(e.userId)).sortBy(e => {
+      return o()(t).filter(e => null != R.default.getUser(e.userId)).sortBy(e => {
         var t;
-        return null != (t = e.nick) ? t : D.ZP.getName(w.default.getUser(e.userId))
+        return null != (t = e.nick) ? t : D.ZP.getName(R.default.getUser(e.userId))
       }).value()
     }, [a, n, _]),
-    h = (0, l.e7)([P.Z], () => {
+    m = (0, l.e7)([P.Z], () => {
       let e = null != n ? n : _;
       return null == e ? null : P.Z.getRole(a, e)
     }, [a, n, _]),
     b = null == n ? null : null == f ? true : f[n],
-    O = i.useMemo(() => null != h ? m.map(e => (0, r.jsx)(F, {
+    O = i.useMemo(() => null != m ? h.map(e => (0, r.jsx)(F, {
       member: e,
       guildId: a,
       channelId: s,
-      role: h
-    }, e.userId)) : [], [s, a, h, m]);
-  return null == h ? null : (0, r.jsx)(c.d.Provider, {
+      role: m
+    }, e.userId)) : [], [s, a, m, h]);
+  return null == m ? null : (0, r.jsx)(c.d.Provider, {
     value: true,
     children: (0, r.jsx)("div", G(k({
       className: L.rolePopout,
@@ -192,7 +192,7 @@ function B(e) {
         children: [(0, r.jsx)(g.Z, {
           id: n,
           guildId: a,
-          title: h.name,
+          title: m.name,
           count: b,
           className: L.roleHeader
         }), O, null == b || b <= O.length ? null : (0, r.jsx)(E.Z, {
@@ -216,7 +216,7 @@ function V(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, h.ZP)(m.Z.ROLE_MENTION), p = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = (0, l.e7)([P.Z], () => null == o || null == t ? null : P.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, S.Gr)(g), y = b && "dot" === p, T = b && "username" === p, C = E && null != g ? g.colorStrings : null, A = i.useRef(null), N = e => (0, r.jsxs)(v.Z, G(k({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), p = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = (0, l.e7)([P.Z], () => null == o || null == t ? null : P.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, S.Gr)(g), y = b && "dot" === p, T = b && "username" === p, C = E && null != g ? g.colorStrings : null, A = i.useRef(null), N = e => (0, r.jsxs)(v.Z, G(k({
     ref: A,
     className: L.roleMention,
     color: T ? g.color : null,
@@ -230,16 +230,16 @@ function V(e) {
       tooltip: false
     }), c]
   })), {
-    enabled: R
+    enabled: w
   } = Z.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: false
   });
-  return !R || d || null == n || null == o || null == t && "@everyone" !== a ? (0, r.jsx)(h.Gt, {
+  return !w || d || null == n || null == o || null == t && "@everyone" !== a ? (0, r.jsx)(m.Gt, {
     value: f,
     children: N()
-  }) : (0, r.jsx)(h.Gt, {
+  }) : (0, r.jsx)(m.Gt, {
     value: f,
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,

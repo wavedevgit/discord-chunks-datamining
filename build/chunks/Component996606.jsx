@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk130692 = require("./130692.js"),
   Chunk354459 = require("./354459.js"),
   Chunk246447 = require("./246447.js");
-let m = 13e3,
-  h = (e, t) => e.type === p.fO.USER && e.speaking && e.user.id !== t,
+let h = 13e3,
+  m = (e, t) => e.type === p.fO.USER && e.speaking && e.user.id !== t,
   g = e => {
     let {
       seats: t,
@@ -34,13 +34,13 @@ let m = 13e3,
       animationState: A,
       updateAnimationState: N,
       characterAssets: P
-    } = (0, u.o)(null == I ? true : I.name), R = i.useMemo(() => Object.values(null != P ? P : {}).flat(), [P]), w = g.find(e => e.type === p.fO.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => h(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
+    } = (0, u.o)(null == I ? true : I.name), w = i.useMemo(() => Object.values(null != P ? P : {}).flat(), [P]), R = g.find(e => e.type === p.fO.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => m(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
       let n = t.find(t => t.claimedBy === e.user.id);
       return null != n ? [n] : []
     }), [D, t]), [L, j] = i.useState(false), [M, k] = i.useState(0), [U, G] = i.useState(0);
     return i.useEffect(() => {
       j(false)
-    }, [I, R]), i.useEffect(() => {
+    }, [I, w]), i.useEffect(() => {
       let e = S.current;
       return () => {
         [...e].forEach(e => window.clearTimeout(e))
@@ -50,15 +50,15 @@ let m = 13e3,
       let e = v.current;
       if (null == e || true === L) return;
       let t = C(),
-        n = R.findIndex(e => e === t);
+        n = w.findIndex(e => e === t);
       T(t), G(n), [...e.children].forEach((e, t) => {
         if ("VIDEO" !== e.nodeName) return;
         let r = e;
         r.currentTime = 0, t === n && (r.play(), j(true))
       })
-    }, [L, R, C, T, O]), i.useEffect(() => {
-      O && ((null == w ? true : w.speaking) ? N(u.O.TALKING) : A === u.O.TALKING && N(u.O.IDLE))
-    }, [w, A, N, O]), i.useEffect(() => {
+    }, [L, w, C, T, O]), i.useEffect(() => {
+      O && ((null == R ? true : R.speaking) ? N(u.O.TALKING) : A === u.O.TALKING && N(u.O.IDLE))
+    }, [R, A, N, O]), i.useEffect(() => {
       O && x.some(e => {
         switch (n.id) {
           case 1:
@@ -72,7 +72,7 @@ let m = 13e3,
           default:
             returnfalse
         }
-      }) && M + m < Date.now() && (N(u.O.HEAD_TURN), k(Date.now()))
+      }) && M + h < Date.now() && (N(u.O.HEAD_TURN), k(Date.now()))
     }, [x, n, M, N, O]), (0, r.jsxs)(s.P3F, {
       className: _.wrapper,
       style: {
@@ -108,7 +108,7 @@ let m = 13e3,
         }
       }), (0, r.jsx)("div", {
         ref: v,
-        children: R.map((e, t) => (0, r.jsx)(l.Z, {
+        children: w.map((e, t) => (0, r.jsx)(l.Z, {
           style: {
             opacity: +(t === U),
             width: I.width

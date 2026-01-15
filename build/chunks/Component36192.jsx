@@ -77,7 +77,7 @@ function I(e) {
 }
 
 function T() {
-  let e = (0, h.gN)("OtherSessionsSetting"),
+  let e = (0, m.gN)("OtherSessionsSetting"),
     {
       currentSession: t,
       otherSessions: n
@@ -128,8 +128,8 @@ function A(e) {
     session: c,
     current: f,
     setChecked: p,
-    checked: m,
-    useChecks: h
+    checked: h,
+    useChecks: m
   } = e, g = null != (s = null == (t = c.client_info) ? true : t.location) ? s : null == (n = c.client_info) ? true : n.ip, E = null == (i = c.client_info) ? true : i.platform, {
     text: b,
     icon: v
@@ -173,13 +173,13 @@ function A(e) {
             })]
           })]
         })]
-      }), f ? null : h ? (0, r.jsx)("div", {
+      }), f ? null : m ? (0, r.jsx)("div", {
         className: O.sessionCheckbox,
         children: (0, r.jsx)(l.Cnq, {
           onChange: e => {
             null == p || p(e)
           },
-          checked: m
+          checked: h
         })
       }) : (0, r.jsx)(l.P3F, {
         className: O.sessionMoreButton,
@@ -224,7 +224,7 @@ function N() {
           color: "text-muted",
           children: (0, r.jsx)("span", {
             children: y.intl.format(y.t["044+8i"], {
-              onClick: () => (0, E.openUserSettings)(m.n.ACCOUNT_PANEL, {
+              onClick: () => (0, E.openUserSettings)(h.n.ACCOUNT_PANEL, {
                 section: b.oAB.ACCOUNT,
                 analyticsLocations: [c.Z.USER_SETTINGS_SESSIONS]
               })

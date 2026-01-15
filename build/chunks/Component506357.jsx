@@ -68,10 +68,10 @@ function T(e) {
     onDismiss: S
   } = e, T = (0, a.e7)([f.Z], () => f.Z.getGuildId()), C = (0, a.e7)([d.Z], () => null != T ? d.Z.getChannelId(T) : null, [T]), A = null != T ? T : null, N = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null, [A]), {
     shouldShowIncidentActions: P,
-    incidentData: R,
-    isUnderLockdown: w
+    incidentData: w,
+    isUnderLockdown: R
   } = (0, _.mI)(A), D = (0, l.n2)(null != (t = null == N ? true : N.id) ? t : g.lds), x = i.useCallback(() => null != N && (0, c._X)(N.id), [N]);
-  if (null == N || null == R || !P) return null;
+  if (null == N || null == w || !P) return null;
   let L = e => {
       if (e && D && C !== E.oC.MEMBER_SAFETY && x()) return void p.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: g.kVF.GUILD_RAID_NOTIFICATION,
@@ -79,8 +79,8 @@ function T(e) {
       });
       (0, o.ZDy)(async () => {
         let e = {
-            source: m.Zu.NAGBAR,
-            alertType: (0, h.T1)(R)
+            source: h.Zu.NAGBAR,
+            alertType: (0, m.T1)(w)
           },
           {
             default: t
@@ -96,8 +96,8 @@ function T(e) {
       guild: N,
       size: s.Z.Sizes.MINI
     }),
-    M = (0, h.OY)(R, N.name);
-  if (null != (null != (O = R.dmsDisabledUntil) ? O : R.invitesDisabledUntil) && w) return (0, r.jsxs)(o.qXd, {
+    M = (0, m.OY)(w, N.name);
+  if (null != (null != (O = w.dmsDisabledUntil) ? O : w.invitesDisabledUntil) && R) return (0, r.jsxs)(o.qXd, {
     className: y.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
@@ -117,9 +117,9 @@ function T(e) {
       })
     })]
   });
-  let k = (0, h.CG)(R) ? b.intl.formatToPlainString(b.t.tZTx2E, {
+  let k = (0, m.CG)(w) ? b.intl.formatToPlainString(b.t.tZTx2E, {
       guildName: N.name
-    }) : (0, h.kk)(R) ? b.intl.formatToPlainString(b.t["1bSmxr"], {
+    }) : (0, m.kk)(w) ? b.intl.formatToPlainString(b.t["1bSmxr"], {
       guildName: N.name
     }) : b.intl.formatToPlainString(b.t.W87xDE, {
       guildName: N.name

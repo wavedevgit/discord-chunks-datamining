@@ -2,7 +2,7 @@
 /** chunk id: 441110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,23 +17,23 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk908940 = require("./908940.js");
-let m = function(e) {
+let h = function(e) {
   let {
     guild: t,
     message: n,
-    onClose: m
-  } = e, h = c.Z.getChannel(u.Z.getChannelId(t.id));
+    onClose: h
+  } = e, m = c.Z.getChannel(u.Z.getChannelId(t.id));
   if ((0, a.ZP)(() => {
       d.default.track(f.rMx.OPEN_POPOUT, {
         type: "New Member Badge Popout",
         guild_id: t.id,
-        channel_id: null == h ? true : h.id
+        channel_id: null == m ? true : m.id
       })
-    }), null == h) return null;
+    }), null == m) return null;
   let g = () => {
     o.ZP.trackWithMetadata(f.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {
       target_user_id: n.author.id
-    }), m(), (0, l.q)(n.author, h.id)
+    }), h(), (0, l.q)(n.author, m.id)
   };
   return (0, r.jsx)(s.W_, {
     className: _.messagePopoutContent,

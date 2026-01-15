@@ -21,17 +21,17 @@ let d = Chunk473749.forwardRef(function(e, t) {
     size: f = 20,
     enableTooltip: p = true,
     enableHeight: _ = true,
-    onClick: m
+    onClick: h
   } = e;
   if (null == i && null == a) return null;
-  let h = () => {
+  let m = () => {
     let e = (0, r.jsx)("img", {
       ref: t,
       alt: c.intl.formatToPlainString(c.t["9+YWrE"], {
         name: d
       }),
       className: o()(u.roleIcon, n, {
-        [u.clickable]: null != m
+        [u.clickable]: null != h
       }),
       height: _ ? f : true,
       src: i,
@@ -41,18 +41,18 @@ let d = Chunk473749.forwardRef(function(e, t) {
       ref: t,
       alt: a.allNamesString,
       className: o()(u.roleIcon, n, {
-        [u.clickable]: null != m
+        [u.clickable]: null != h
       }),
       height: _ ? f : true,
       src: a.url,
       width: f
-    })), null == m) ? (0, r.jsx)(l.tEY, {
+    })), null == h) ? (0, r.jsx)(l.tEY, {
       offset: {
         left: 5
       },
       children: e
     }) : (0, r.jsx)(l.P3F, {
-      onClick: m,
+      onClick: h,
       tag: "span",
       focusProps: {
         offset: {
@@ -68,6 +68,6 @@ let d = Chunk473749.forwardRef(function(e, t) {
     "aria-label": false,
     shouldShow: p,
     tag: "span",
-    children: h()
+    children: m()
   })
 })

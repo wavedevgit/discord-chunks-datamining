@@ -24,7 +24,7 @@ var Chunk95015 = require("./95015.js"),
 function E(e) {
   let {
     message: t
-  } = (0, h.CJ)(), n = (0, a.e7)([_.Z], () => _.Z.getChannel(null == t ? true : t.channel_id)), {
+  } = (0, m.CJ)(), n = (0, a.e7)([_.Z], () => _.Z.getChannel(null == t ? true : t.channel_id)), {
     shouldHideMediaOptions: E,
     enabledContentHarmTypeFlags: b,
     gifAutoPlay: y,
@@ -81,7 +81,7 @@ function E(e) {
         canRemoveItem: false,
         onRemoveItem: g.dG4
       },
-      c = (0, m.q)({
+      c = (0, h.q)({
         proxyURL: r.proxyUrl,
         url: r.url
       });

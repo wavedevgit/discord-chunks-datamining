@@ -75,12 +75,12 @@ let l = () => ({
       })
     }
   },
-  m = () => ({
+  h = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_GOLD.css,
     icon: i.r7p,
     description: s.intl.string(s.t["ThRK/u"])
   }),
-  h = function() {
+  m = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : s.intl.string(s.t.SQV8g6);
     return {
       color: r.Z.unsafe_rawColors.PREMIUM_PERK_BLUE.css,
@@ -103,25 +103,25 @@ let l = () => ({
   };
 
 function b() {
-  return [f(), u(), p(), h()]
+  return [f(), u(), p(), m()]
 }
 
 function y() {
-  return [f(), _(o.Eu4.TIER_2), E(), h()]
+  return [f(), _(o.Eu4.TIER_2), E(), m()]
 }
 
 function O() {
-  return [_(o.Eu4.TIER_3, r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css), g(), m(), h()]
+  return [_(o.Eu4.TIER_3, r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css), g(), h(), m()]
 }
 
 function v() {
-  return [m(), d(), _(o.Eu4.TIER_3), h()]
+  return [h(), d(), _(o.Eu4.TIER_3), m()]
 }
 
 function S() {
-  return [l(), p(), c(), h()]
+  return [l(), p(), c(), m()]
 }
 
 function I() {
-  return [p(), h()]
+  return [p(), m()]
 }

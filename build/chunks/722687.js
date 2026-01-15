@@ -4,12 +4,12 @@
 require.d(exports, {
   IU: () => f,
   J7: () => g,
-  O8: () => h,
+  O8: () => m,
   Ov: () => p,
   eD: () => u,
   sx: () => c,
   up: () => d,
-  vB: () => m,
+  vB: () => h,
   vV: () => _
 });
 var Chunk381499 = require("./381499.js"),
@@ -37,13 +37,13 @@ let c = (0, Chunk592792.c)("textAndImages", "explicitContentSettings", Chunk6953
   _ = (0, Chunk592792.c)("privacy", "defaultGuildsRestrictedV2", e => null == e ? true : e.value, e => r.D5.create({
     value: e
   })),
-  m = (0, Chunk592792.c)("privacy", "friendSourceFlags", e => {
+  h = (0, Chunk592792.c)("privacy", "friendSourceFlags", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : l.HGf
   }, e => r.yC.create({
     value: e
   })),
-  h = (0, Chunk592792.c)("privacy", "dropsOptedOut", e => {
+  m = (0, Chunk592792.c)("privacy", "dropsOptedOut", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => r.D5.create({

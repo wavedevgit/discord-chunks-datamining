@@ -45,7 +45,7 @@ class S extends Chunk317770.Z {
   constructor(...e) {
     super(...e), v(this, "callbackActions", {
       [b.tS.VIDEO]: () => {
-        h.Z.isVideoEnabled() ? l.Z.setVideoEnabled(false) : (0, _.Z)(() => l.Z.setVideoEnabled(true), y.IlC.APP)
+        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(false) : (0, _.Z)(() => l.Z.setVideoEnabled(true), y.IlC.APP)
       },
       [b.tS.MUTE]: () => l.Z.toggleSelfMute({
         location: "Thumbar"
@@ -60,11 +60,11 @@ class S extends Chunk317770.Z {
     }), v(this, "handleViewUpdate", o().debounce(() => {
       let e = g.Z.getVoiceChannelId();
       if (null == e) return void this.setThumbarButtons([]);
-      let t = h.Z.isSelfMute(),
-        n = h.Z.isSelfDeaf(),
-        r = h.Z.isVideoEnabled(),
-        i = h.Z.isVideoAvailable(),
-        a = m.Z.getChannel(e),
+      let t = m.Z.isSelfMute(),
+        n = m.Z.isSelfDeaf(),
+        r = m.Z.isVideoEnabled(),
+        i = m.Z.isVideoAvailable(),
+        a = h.Z.getChannel(e),
         o = null == a || (0, f.y)(a),
         {
           reachedLimit: s,

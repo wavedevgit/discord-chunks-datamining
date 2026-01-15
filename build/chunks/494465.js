@@ -13,8 +13,8 @@ var Chunk46015 = require("./46015.js"),
   f = Chunk199838.get,
   p = String,
   _ = Object.defineProperty,
-  m = Chunk46015("".slice),
-  h = Chunk46015("".replace),
+  h = Chunk46015("".slice),
+  m = Chunk46015("".replace),
   g = Chunk46015([].join),
   E = Chunk507604 && !Chunk621523(function() {
     return 8 !== _(function() {}, "length", {
@@ -23,7 +23,7 @@ var Chunk46015 = require("./46015.js"),
   }),
   b = String(String).split("String"),
   y = module.exports = function(e, t, n) {
-    "Symbol(" === m(p(t), 0, 7) && (t = "[" + h(p(t), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!o(e, "name") || l && e.name !== t) && (s ? _(e, "name", {
+    "Symbol(" === h(p(t), 0, 7) && (t = "[" + m(p(t), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!o(e, "name") || l && e.name !== t) && (s ? _(e, "name", {
       value: t,
       configurable: true
     }) : e.name = t), E && n && o(n, "arity") && e.length !== n.arity && _(e, "length", {

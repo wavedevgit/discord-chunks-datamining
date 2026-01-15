@@ -2,7 +2,7 @@
 /** chunk id: 348066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,18 +17,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk686834 = require("./686834.jsx"),
   Chunk447544 = require("./447544.js");
 
-function m(e) {
+function h(e) {
   let {
     questId: t
   } = e, {
     quests: n,
-    excludedQuests: m,
-    isFetchingCurrentQuests: h
+    excludedQuests: h,
+    isFetchingCurrentQuests: m
   } = (0, s.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), g = i.useMemo(() => (0, l._x)(t, n, m), [t, n, m]), E = i.useMemo(() => m.find(e => e.id === t), [t, m]);
-  return h ? (0, r.jsx)(a.$jN, {
+  }), g = i.useMemo(() => (0, l._x)(t, n, h), [t, n, h]), E = i.useMemo(() => h.find(e => e.id === t), [t, h]);
+  return m ? (0, r.jsx)(a.$jN, {
     className: _.spinner
   }) : null == g ? null != E ? (0, r.jsx)(u.q, {
     questId: t

@@ -19,8 +19,8 @@ function l(e, t, n) {
     form: f,
     children: p,
     "aria-label": _,
-    "aria-labelledby": m,
-    validationState: h = "valid",
+    "aria-labelledby": h,
+    validationState: m = "valid",
     isInvalid: g,
     onPressStart: E,
     onPressEnd: b,
@@ -57,15 +57,15 @@ function l(e, t, n) {
     isDisabled: l || c
   }), {
     focusableProps: P
-  } = (0, s.kc)(e, n), R = (0, r.d)(T, P), w = (0, i.z)(e, {
+  } = (0, s.kc)(e, n), w = (0, r.d)(T, P), R = (0, i.z)(e, {
     labelable: true
   });
   return (0, a.y)(n, t.defaultSelected, t.setSelected), {
     labelProps: (0, r.d)(A, {
       onClick: e => e.preventDefault()
     }),
-    inputProps: (0, r.d)(w, {
-      "aria-invalid": g || "invalid" === h || true,
+    inputProps: (0, r.d)(R, {
+      "aria-invalid": g || "invalid" === m || true,
       "aria-errormessage": e["aria-errormessage"],
       "aria-controls": e["aria-controls"],
       "aria-readonly": c || true,
@@ -77,12 +77,12 @@ function l(e, t, n) {
       name: d,
       form: f,
       type: "checkbox",
-      ...R
+      ...w
     }),
     isSelected: t.isSelected,
     isPressed: C || N,
     isDisabled: l,
     isReadOnly: c,
-    isInvalid: g || "invalid" === h
+    isInvalid: g || "invalid" === m
   }
 }

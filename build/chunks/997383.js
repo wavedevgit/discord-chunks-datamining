@@ -51,7 +51,7 @@ function I(e, t) {
 }
 class T {
   createSearchContext() {
-    null == this.userSearchContext && (this.userSearchContext = h.Z.getUserSearchContext(this.parseUserResults, this._limit))
+    null == this.userSearchContext && (this.userSearchContext = m.Z.getUserSearchContext(this.parseUserResults, this._limit))
   }
   setLimit(e) {
     let {
@@ -238,8 +238,8 @@ class T {
       pathname: i,
       hostname: a = "",
       host: s
-    } = n, l = m.Z.isDiscordHostname(a) || window.location.host === s;
-    return null !== i && l && m.Z.isAppRoute(i) ? [{
+    } = n, l = h.Z.isDiscordHostname(a) || window.location.host === s;
+    return null !== i && l && h.Z.isAppRoute(i) ? [{
       type: E.h8.LINK,
       record: c.Z.fromPath(i),
       score: 1

@@ -50,9 +50,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -106,8 +106,8 @@ class v extends(r = Chunk473749.PureComponent) {
         style: c,
         wrap: d
       } = e,
-      p = m(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
-      h = f({
+      p = h(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
+      m = f({
         style: f({
           flexGrow: i,
           flexShrink: r,
@@ -117,9 +117,9 @@ class v extends(r = Chunk473749.PureComponent) {
       }, p);
     if (!d && "string" != typeof t && 1 === o.Children.count(t)) {
       let e = o.Children.only(t);
-      return h.style = f({}, h.style, e.props.style), h.className = l()(e.props.className, n), o.cloneElement(e, h)
+      return m.style = f({}, m.style, e.props.style), m.className = l()(e.props.className, n), o.cloneElement(e, m)
     }
-    return (0, a.jsx)("div", _(f({}, h), {
+    return (0, a.jsx)("div", _(f({}, m), {
       children: t
     }))
   }
@@ -142,15 +142,15 @@ class S extends(i = Chunk473749.PureComponent) {
         shrink: c,
         grow: d,
         basis: p,
-        style: h,
+        style: m,
         gutter: g
       } = e,
-      E = m(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
+      E = h(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
       b = f({
         flexShrink: c,
         flexGrow: d,
         flexBasis: p
-      }, h);
+      }, m);
     return (0, a.jsx)("div", _(f({
       style: b,
       className: l()(u.flex, r, i, o, s, g, n)

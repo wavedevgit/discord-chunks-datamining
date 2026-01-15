@@ -28,7 +28,7 @@ let u = (e, t, n) => {
     } = e, {
       joinedEmojiSourceGuildRecord: s,
       emoji: d
-    } = (0, i.cj)([o.ZP, a.Z], () => u(o.ZP, a.Z, t)), f = null != s, p = null != s && s.features.has(c.GuildFeatures.DISCOVERABLE), _ = (!f || p) && null != t, [m, h] = r.useState(_), [g, E] = r.useState(null), b = null != s ? l.JO.createFromGuildRecord(s) : null, [y, O] = r.useState(b), [v, S] = r.useState(null), I = r.useRef(n);
+    } = (0, i.cj)([o.ZP, a.Z], () => u(o.ZP, a.Z, t)), f = null != s, p = null != s && s.features.has(c.GuildFeatures.DISCOVERABLE), _ = (!f || p) && null != t, [h, m] = r.useState(_), [g, E] = r.useState(null), b = null != s ? l.JO.createFromGuildRecord(s) : null, [y, O] = r.useState(b), [v, S] = r.useState(null), I = r.useRef(n);
     return r.useEffect(() => {
       I.current = n
     }), r.useEffect(() => {
@@ -44,7 +44,7 @@ let u = (e, t, n) => {
           case l.w6.GUILD:
             O(n.guild)
         }
-        h(false), null == (e = I.current) || e.call(I)
+        m(false), null == (e = I.current) || e.call(I)
       };
       if (_) return void r();
       null == (n = I.current) || n.call(I)
@@ -55,6 +55,6 @@ let u = (e, t, n) => {
       joinedEmojiSourceGuildRecord: s,
       hasJoinedEmojiSourceGuild: f,
       emoji: d,
-      isFetching: m
+      isFetching: h
     }
   }

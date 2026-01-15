@@ -153,7 +153,7 @@ function q(e) {
               variant: "text-sm/semibold",
               color: "button-outline-primary-text",
               children: U.intl.format(B.default.VpEDJc, {
-                magical: (0, r.jsx)(J, {})
+                magical: (0, r.jsx)(X, {})
               })
             }), (0, r.jsx)(f.Text, {
               variant: "text-xs/medium",
@@ -172,7 +172,7 @@ function q(e) {
   })
 }
 
-function J() {
+function X() {
   let e = (0, d.e7)([p.Z], () => p.Z.useReducedMotion),
     {
       gradientStyle: t,
@@ -209,7 +209,7 @@ function J() {
   })
 }
 
-function X(e) {
+function J(e) {
   var t, n;
   let {
     role: i,
@@ -370,7 +370,7 @@ function ee(e) {
         selectedStyle: u,
         disabled: m,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(X, {
+      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
         role: n,
         disabled: m,
         currentStyle: u,

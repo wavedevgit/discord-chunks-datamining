@@ -116,7 +116,7 @@ function er(e) {
 function ei(e) {
   let {
     onClose: t
-  } = e, n = (0, C.Z)(), a = (0, T.Z)(), [g, b] = i.useState(0), S = a[g], L = H.bq[S], Q = en(L, (0, m.e7)([I.Z], () => I.Z.getCheckpointData()).cardId), X = (0, h.dQu)(Q.primaryColor).hex(), [J] = i.useState(new N.EP), [$, ee] = i.useState(false), et = (0, A.T)(d.Z), ei = (0, A.T)(u.Z), eo = (0, A.T)(s.Z), es = (0, A.T)(l.Z), el = (0, A.T)(c.Z), ec = i.useRef(H.ij.WELCOME), eu = i.useCallback(() => {
+  } = e, n = (0, C.Z)(), a = (0, T.Z)(), [g, b] = i.useState(0), S = a[g], L = H.bq[S], Q = en(L, (0, h.e7)([I.Z], () => I.Z.getCheckpointData()).cardId), X = (0, m.dQu)(Q.primaryColor).hex(), [J] = i.useState(new N.EP), [$, ee] = i.useState(false), et = (0, A.T)(d.Z), ei = (0, A.T)(u.Z), eo = (0, A.T)(s.Z), es = (0, A.T)(l.Z), el = (0, A.T)(c.Z), ec = i.useRef(H.ij.WELCOME), eu = i.useCallback(() => {
     ee(true), ei()
   }, [ei]), ed = i.useCallback(() => {
     S === H.ij.END_CLAIM ? eo() : S === H.ij.END_REWARD ? el() : H.Kz.has(S) || es()
@@ -150,19 +150,19 @@ function ei(e) {
       })) ? t : [], r = Number.parseInt(null != n ? n : "0");
       ed(), b(r)
     }, [ed, a]),
-    em = i.useCallback(() => {
+    eh = i.useCallback(() => {
       $ && ((0, O.R5)(), t())
     }, [$, t]);
   return (0, r.jsx)(N.$r.Provider, {
     value: J,
     children: (0, r.jsx)(v.Q.Provider, {
       value: Q,
-      children: (0, r.jsx)(h.f6W, {
+      children: (0, r.jsx)(m.f6W, {
         theme: W.BR.DARKER,
-        children: e => (0, r.jsxs)(R.Z, {
+        children: e => (0, r.jsxs)(w.Z, {
           playEntryAnimation: n,
           isLeaving: $,
-          onRest: em,
+          onRest: eh,
           children: [(0, r.jsx)(_.OUJ, {}), (0, r.jsxs)("div", {
             className: o()(q.container, e),
             "aria-label": z.intl.string(K.default["CdU/PF"]),
@@ -170,37 +170,37 @@ function ei(e) {
               slide: L
             }), (0, r.jsxs)(x.ZP, {
               activeSlide: L,
-              children: [(0, r.jsx)(h.Mi4, {
+              children: [(0, r.jsx)(m.Mi4, {
                 id: H.yD.WELCOME,
                 children: (0, r.jsx)(V.Z, {
                   onNextStep: ef
                 })
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.MESSAGES,
                 children: (0, r.jsx)(Z.Z, {})
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.EMOJIS,
                 children: (0, r.jsx)(j.Z, {})
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.VOICE,
                 children: (0, r.jsx)(B.Z, {})
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.GUILDS,
                 children: (0, r.jsx)(G.Z, {})
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.FRIENDS,
                 children: (0, r.jsx)(k.Z, {
                   step: S,
                   onNextStep: ef,
                   onPreviousStep: ep
                 })
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.GAMING,
                 children: (0, r.jsx)(U.Z, {})
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.QUESTS,
                 children: (0, r.jsx)(F.Z, {})
-              }), (0, r.jsx)(h.Mi4, {
+              }), (0, r.jsx)(m.Mi4, {
                 id: H.yD.END,
                 children: (0, r.jsx)(M.Z, {
                   step: S,
@@ -211,10 +211,10 @@ function ei(e) {
               className: o()(q.header, e),
               children: [L !== H.yD.WELCOME && (0, r.jsxs)("div", {
                 className: q.logo,
-                children: [(0, r.jsx)(h.gw7, {
+                children: [(0, r.jsx)(m.gw7, {
                   colorClass: q.iconColor,
                   color: X
-                }), (0, r.jsx)(h.Text, {
+                }), (0, r.jsx)(m.Text, {
                   variant: "display-sm",
                   className: q.logoText,
                   style: {
@@ -229,13 +229,13 @@ function ei(e) {
                 color: X
               }), (0, r.jsxs)("div", {
                 className: q.actions,
-                children: [(0, r.jsx)(w.Z, {}), (0, r.jsx)(h.P3F, {
+                children: [(0, r.jsx)(R.Z, {}), (0, r.jsx)(m.P3F, {
                   onClick: () => eu(),
                   className: q.closeButton,
                   style: {
                     color: X
                   },
-                  children: (0, r.jsx)(h.Uz9, {
+                  children: (0, r.jsx)(m.Uz9, {
                     colorClass: q.iconColor,
                     color: X,
                     size: "sm"
@@ -243,13 +243,13 @@ function ei(e) {
                 })]
               })]
             }), L !== H.yD.WELCOME && (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(h.P3F, {
+              children: [(0, r.jsx)(m.P3F, {
                 onClick: ep,
                 className: q.backButton,
                 style: {
                   borderColor: X
                 },
-                children: (0, r.jsx)(h.j9r, {
+                children: (0, r.jsx)(m.j9r, {
                   colorClass: q.iconColor,
                   color: X
                 })
@@ -258,7 +258,7 @@ function ei(e) {
                 contentClassName: q.nextButtonContent,
                 className: q.nextButton,
                 muteSound: true,
-                children: (0, r.jsx)(h.d4D, {
+                children: (0, r.jsx)(m.d4D, {
                   colorClass: q.iconColor,
                   color: X
                 })
@@ -276,7 +276,7 @@ function ei(e) {
 function ea(e) {
   let {
     primaryColor: t
-  } = e, n = (0, m.e7)([I.Z], () => I.Z.getCheckpointData()), i = () => {
+  } = e, n = (0, h.e7)([I.Z], () => I.Z.getCheckpointData()), i = () => {
     let e = new b.ZP({
       content: "",
       components: [{
@@ -302,7 +302,7 @@ function ea(e) {
         color: t
       },
       children: z.intl.string(z.t.RDE0Sc)
-    }), (0, r.jsx)(h.Gr1, {
+    }), (0, r.jsx)(m.Gr1, {
       colorClass: Q.iconColor,
       color: t
     })]

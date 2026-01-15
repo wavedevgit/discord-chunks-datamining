@@ -5,7 +5,7 @@ require.d(exports, {
   Ck: () => f,
   DJ: () => p,
   Nj: () => d,
-  dZ: () => m,
+  dZ: () => h,
   h8: () => u,
   ly: () => _
 }), require("./388685.js"), require("./415506.js");
@@ -63,7 +63,7 @@ function _(e) {
   return null
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   r.useEffect(() => {
     null != e && "review" !== e && t !== s.A.WAITING && t !== s.A.COMPLETED && n(s.A.WAITING)
   }, [e, t, n])

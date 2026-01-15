@@ -92,7 +92,7 @@ function T() {
 }
 
 function C(e) {
-  p.default.track(h.rMx.PERMISSIONS_ACKED, {
+  p.default.track(m.rMx.PERMISSIONS_ACKED, {
     type: "audio",
     action: e
   })
@@ -100,7 +100,7 @@ function C(e) {
 
 function A() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  return T() ? Promise.resolve(false) : (p.default.track(h.rMx.PERMISSIONS_REQUESTED, {
+  return T() ? Promise.resolve(false) : (p.default.track(m.rMx.PERMISSIONS_REQUESTED, {
     type: "audio"
   }), c.Z.getMediaEngine().enable().then(() => {
     o.Z.dispatch({
@@ -110,13 +110,13 @@ function A() {
     }), C(g.PQ.ACCEPTED)
   }, e => {
     switch (e) {
-      case h.ETv.NO_DEVICES_FOUND:
+      case m.ETv.NO_DEVICES_FOUND:
         C(g.PQ.NO_DEVICES);
         break;
-      case h.ETv.PERMISSION_DENIED:
+      case m.ETv.PERMISSION_DENIED:
         C(g.PQ.DENIED);
         break;
-      case h.ETv.PERMISSION_DISMISSED:
+      case m.ETv.PERMISSION_DISMISSED:
         C(g.PQ.DISMISSED);
         break;
       default:
@@ -129,13 +129,13 @@ function N(e) {
   let {
     usedKeybind: t = false,
     location: n
-  } = e, r = d.ZP.getKeybindForAction(h.kg4.TOGGLE_MUTE, false, true), i = u.Z.getVoiceChannelId(), a = null != i ? l.Z.getChannel(i) : null;
-  p.default.track(h.rMx.INPUT_MUTE_TOGGLED, {
+  } = e, r = d.ZP.getKeybindForAction(m.kg4.TOGGLE_MUTE, false, true), i = u.Z.getVoiceChannelId(), a = null != i ? l.Z.getChannel(i) : null;
+  p.default.track(m.rMx.INPUT_MUTE_TOGGLED, {
     enabled: !c.Z.isSelfMute(),
     custom_keybind_assigned: null != r && r.id !== d.Ek.id,
     used_keybind: t,
     app_in_focus: f.Z.isAppFocused(),
-    overlay_activated: null != (0, m.Z)(),
+    overlay_activated: null != (0, h.Z)(),
     voice_channel_type: null != a ? a.type : null,
     location: n
   })
@@ -145,13 +145,13 @@ function P(e) {
   let {
     usedKeybind: t = false,
     location: n
-  } = e, r = d.ZP.getKeybindForAction(h.kg4.TOGGLE_DEAFEN, false, true), i = u.Z.getVoiceChannelId(), a = null != i ? l.Z.getChannel(i) : null;
-  p.default.track(h.rMx.SELF_DEAFEN_TOGGLED, {
+  } = e, r = d.ZP.getKeybindForAction(m.kg4.TOGGLE_DEAFEN, false, true), i = u.Z.getVoiceChannelId(), a = null != i ? l.Z.getChannel(i) : null;
+  p.default.track(m.rMx.SELF_DEAFEN_TOGGLED, {
     enabled: !c.Z.isSelfDeaf(),
     keybind_assigned: null != r ? (0, _.BB)(r.shortcut) : true,
     used_keybind: t,
     app_in_focus: f.Z.isAppFocused(),
-    overlay_activated: null != (0, m.Z)(),
+    overlay_activated: null != (0, h.Z)(),
     voice_channel_type: null != a ? a.type : null,
     location: n
   })

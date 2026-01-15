@@ -36,15 +36,15 @@ var Chunk54381 = require("./54381.js"),
 let D = () => {
     var e, t, n;
     let i = (0, s.e7)([O.default], () => S.ZP.isPremium(O.default.getCurrentUser())),
-      a = (0, h.N)(),
+      a = (0, m.N)(),
       o = (null == a || null == (e = a.subscription_trial) ? true : e.sku_id) === P.Si.TIER_2;
     return (0, r.jsx)(g.Z, {
       size: c.zx.Sizes.MEDIUM,
       textOptions: {
-        textOverride: i ? R.intl.string(R.t.IJI7yk) : o ? (0, S.Rt)({
+        textOverride: i ? w.intl.string(w.t.IJI7yk) : o ? (0, S.Rt)({
           intervalType: null == a || null == (t = a.subscription_trial) ? true : t.interval,
           intervalCount: null == a || null == (n = a.subscription_trial) ? true : n.interval_count
-        }) : R.intl.string(R.t.mr4K7D)
+        }) : w.intl.string(w.t.mr4K7D)
       },
       subscriptionTier: P.Si.TIER_2
     })
@@ -53,25 +53,25 @@ let D = () => {
     let {
       markAsDismissed: t
     } = e, n = () => {
-      null == t || t(N.L.DISMISS), (0, m.Ll)(), (0, I.O)()
+      null == t || t(N.L.DISMISS), (0, h.Ll)(), (0, I.O)()
     };
     return (0, r.jsxs)("div", {
-      className: w.editorHeader,
+      className: R.editorHeader,
       children: [(0, r.jsx)(u.P3F, {
-        className: w.closeCircleButton,
+        className: R.closeCircleButton,
         onClick: () => n(),
         children: (0, r.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: w.closeCircle
+          className: R.closeCircle
         })
       }), (0, r.jsxs)("div", {
-        className: w.title,
+        className: R.title,
         children: [(0, r.jsx)(u.Heading, {
           variant: "heading-lg/extrabold",
-          children: R.intl.string(R.t["hb/wE0"])
+          children: w.intl.string(w.t["hb/wE0"])
         }), (0, r.jsx)(E.Z, {
-          className: w.premiumIcon
+          className: R.premiumIcon
         })]
       })]
     })
@@ -81,17 +81,17 @@ let D = () => {
       isCoachmark: t,
       markAsDismissed: n
     } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), a = () => {
-      null == n || n(N.L.DISMISS), (0, m.Ll)(), (0, I.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
+      null == n || n(N.L.DISMISS), (0, h.Ll)(), (0, I.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
         section: A.oAB.APPEARANCE
       })
     };
     return (0, r.jsxs)("div", {
-      className: w.editorFooter,
+      className: R.editorFooter,
       children: [i && (0, r.jsx)(D, {}), (0, r.jsx)(l.zxk, {
         onClick: a,
         variant: "secondary",
         fullWidth: true,
-        text: i || t ? R.intl.string(R.t["dqH+qr"]) : R.intl.string(R.t.Olc2K3)
+        text: i || t ? w.intl.string(w.t["dqH+qr"]) : w.intl.string(w.t.Olc2K3)
       })]
     })
   };
@@ -104,11 +104,11 @@ function j(e) {
     analyticsLocations: a
   } = (0, _.ZP)(p.Z.APP_ICON_EDITOR), l = (0, s.e7)([O.default], () => O.default.getCurrentUser()), {
     isUpsellPreview: c,
-    shouldEditorAnimate: h
+    shouldEditorAnimate: m
   } = (0, s.cj)([T.Z, f.Z], () => ({
     isUpsellPreview: T.Z.isUpsellPreview,
     shouldEditorAnimate: t && !f.Z.useReducedMotion
-  })), g = m.oq.getState().activePanel === m.wh.APP_ICON;
+  })), g = h.oq.getState().activePanel === h.wh.APP_ICON;
   i.useEffect(() => {
     c && v.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
       type: P.cd.APP_ICON_UPSELL,
@@ -122,15 +122,15 @@ function j(e) {
     value: a,
     children: (0, r.jsx)("div", {
       ref: E,
-      className: o()(w.editor, h ? w.editorAnimate : null),
+      className: o()(R.editor, m ? R.editorAnimate : null),
       "data-app-right-panel": true,
       children: (0, r.jsxs)(u.y5t, {
         children: [(0, r.jsx)(x, {
           markAsDismissed: n
         }), (0, r.jsx)(u.Ttm, {
-          className: w.editorBody,
+          className: R.editorBody,
           children: (0, r.jsx)(C.Z, {
-            className: w.selectionGroup,
+            className: R.selectionGroup,
             isEditor: true
           })
         }), (0, r.jsx)(L, {

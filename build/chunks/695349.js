@@ -2,7 +2,7 @@
 /** chunk id: 695349, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => m,
+  G: () => h,
   W: () => g
 });
 var Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
 let _ = 2592e5;
-async function m(e) {
+async function h(e) {
   let t = o.default.getCurrentUser(),
     n = (0, u.I5)(t);
   null == t || n || c.Z.fetchedEndedEntitlements || await (0, i.p0)({
@@ -28,7 +28,7 @@ async function m(e) {
   return !(!(!n && null != r && null != r.endsAt && r.endsAt.getTime() < Date.now()) || r.endsAt.getTime() < Date.now() - _) && r.sourceType === p.kNB.REVERSE_TRIAL && (null == e && await (0, d.Tf)(), null != l.Z.getUserTrialOffer(f.Rt)) || false
 }
 
-function h() {
+function m() {
   let e = (0, r.e7)([o.default], () => o.default.getCurrentUser()),
     t = s.Z.getPremiumTypeSubscription(),
     n = null != t && !t.isBoostOnly,
@@ -41,5 +41,5 @@ function h() {
 }
 
 function g() {
-  return null != h()
+  return null != m()
 }

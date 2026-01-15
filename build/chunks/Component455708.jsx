@@ -2,7 +2,7 @@
 /** chunk id: 455708, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -105,8 +105,8 @@ class P extends Chunk473749.PureComponent {
           children: v.intl.string(v.t.H6zNFz)
         });
       default: {
-        let t = (0, h.eE)(),
-          n = (0, m.n)(t);
+        let t = (0, m.eE)(),
+          n = (0, h.n)(t);
         return (0, r.jsx)(l.E1j, {
           query: e,
           onChange: this.handleChangeQuery,
@@ -232,7 +232,7 @@ class P extends Chunk473749.PureComponent {
     })
   }
 }
-let R = Chunk473749.forwardRef((e, t) => {
+let w = Chunk473749.forwardRef((e, t) => {
   i.useEffect(() => {
     if (!e.persistSearch) {
       var t;
@@ -249,7 +249,7 @@ let R = Chunk473749.forwardRef((e, t) => {
     resultQuery: p.Z.getResultQuery(),
     resultItems: p.Z.getResultItems(),
     suggestions: p.Z.getSuggestions()
-  })), c = (0, f.Iu)(e => e.searchQuery), u = null != n && "" !== n ? n : c, d = (0, _.HI)(), m = i.useRef(null);
+  })), c = (0, f.Iu)(e => e.searchQuery), u = null != n && "" !== n ? n : c, d = (0, _.HI)(), h = i.useRef(null);
   return (0, r.jsx)(P, A(T({}, e), {
     forwardedRef: t,
     query: u,
@@ -260,7 +260,7 @@ let R = Chunk473749.forwardRef((e, t) => {
     searchOffset: 0,
     searchTotalResults: p.Z.getResultItems().length,
     searchLimit: null,
-    searchBarRef: m,
+    searchBarRef: h,
     selectedGIF: e.selectedGIF
   }))
 })

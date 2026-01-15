@@ -24,15 +24,15 @@ function p(e) {
   var p = {};
   p.years = Math.abs((0, u.Z)(n, t));
   var _ = (0, r.Z)(n, t),
-    m = (0, i.Z)(t, {
+    h = (0, i.Z)(t, {
       years: _ * p.years
     });
-  p.months = Math.abs((0, l.Z)(n, m));
-  var h = (0, i.Z)(m, {
+  p.months = Math.abs((0, l.Z)(n, h));
+  var m = (0, i.Z)(h, {
     months: _ * p.months
   });
-  p.days = Math.abs((0, a.Z)(n, h));
-  var g = (0, i.Z)(h, {
+  p.days = Math.abs((0, a.Z)(n, m));
+  var g = (0, i.Z)(m, {
     days: _ * p.days
   });
   p.hours = Math.abs((0, o.Z)(n, g));

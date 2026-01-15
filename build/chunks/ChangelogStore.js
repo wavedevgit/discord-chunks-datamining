@@ -2,7 +2,7 @@
 /** chunk id: 802098, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -23,8 +23,8 @@ function d(e, t, n) {
 let f = {},
   p = {},
   _ = null,
-  m = null,
   h = null,
+  m = null,
   g = "lastChangeLogDate",
   E = null,
   b = null,
@@ -51,7 +51,7 @@ function S(e) {
     config: t,
     latestChangelogId: n
   } = e;
-  _ = n, h = t
+  _ = n, m = t
 }
 
 function I(e) {
@@ -82,7 +82,7 @@ function C(e) {
   let {
     id: t
   } = e;
-  m = t
+  h = t
 }
 
 function A(e) {
@@ -117,13 +117,13 @@ class P extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = p[e]) ? true : n[t]) ? r : u.LU.NOT_LOADED
   }
   hasLoadedConfig() {
-    return null != h
+    return null != m
   }
   getConfig() {
-    return h
+    return m
   }
   overrideId() {
-    return m
+    return h
   }
   lastSeenChangelogId() {
     return E
@@ -133,7 +133,7 @@ class P extends(r = Chunk442837.ZP.Store) {
   }
   getStateForDebugging() {
     return {
-      changelogConfig: h,
+      changelogConfig: m,
       loadedChangelogs: p,
       lastSeenChangelogId: E,
       lastSeenChangelogDate: b
@@ -144,7 +144,7 @@ class P extends(r = Chunk442837.ZP.Store) {
   }
 }
 d(P, "displayName", "ChangelogStore");
-let R = new P(Chunk570140.Z, {
+let w = new P(Chunk570140.Z, {
   CHANGE_LOG_LOCK: O,
   CHANGE_LOG_UNLOCK: v,
   CHANGE_LOG_SET_CONFIG: S,

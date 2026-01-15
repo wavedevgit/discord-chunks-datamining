@@ -2,7 +2,7 @@
 /** chunk id: 729154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => m
+  x: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk881493 = require("./881493.jsx"),
   Chunk407965 = require("./407965.jsx"),
   Chunk981631 = require("./981631.js");
-let m = e => {
+let h = e => {
     let {
       transitionState: t,
       onClose: n,
@@ -26,15 +26,15 @@ let m = e => {
       planId: u,
       renewalInvoice: f,
       renewalInvoiceDetails: p,
-      errorOnCancel: m,
+      errorOnCancel: h,
       errorOnRedeem: g,
       setActiveStep: E,
       activeStep: b
     } = e, {
       analyticsLocations: y
-    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(h(b));
+    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(m(b));
     return (0, i.useEffect)(() => {
-      v(h(b))
+      v(m(b))
     }, [b]), (0, r.jsx)(d.CancellationContext.Provider, {
       value: {
         setStep: E,
@@ -55,7 +55,7 @@ let m = e => {
         renewalInvoiceDetails: p,
         handleCancellation: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (m) return void t();
+            if (h) return void t();
             e()
           }, 1e3)
         }),
@@ -71,7 +71,7 @@ let m = e => {
       children: O
     })
   },
-  h = e => {
+  m = e => {
     switch (e) {
       case u.R.DISCOUNT_APPLIED:
         return (0, r.jsx)(c.i, {});

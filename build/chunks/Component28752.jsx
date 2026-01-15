@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk960324 = require("./960324.js"),
   Chunk413097 = require("./413097.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -48,9 +48,9 @@ function b(e) {
   } = e, c = (0, d.X)(), {
     iconURL: _
   } = i.useMemo(() => (0, s.sl)(t, {
-    fakeAppIconURL: m,
+    fakeAppIconURL: h,
     size: E
-  }), [t]), h = i.useMemo(() => [{
+  }), [t]), m = i.useMemo(() => [{
     type: a.Y.USER_INSTALL,
     icon: o.oLu,
     title: f.intl.string(f.t.aCg60P),
@@ -82,7 +82,7 @@ function b(e) {
       })]
     }), (0, r.jsx)("ul", {
       className: p.rows,
-      children: h.map(e => (0, r.jsxs)(o.P3F, {
+      children: m.map(e => (0, r.jsxs)(o.P3F, {
         tag: "li",
         className: p.row,
         onClick: () => n(e.type),
@@ -165,26 +165,26 @@ function S(e) {
     {
       ref: u,
       lineHeight: d,
-      lineCount: m
+      lineCount: h
     } = I(),
-    h = i.useMemo(() => {
-      if (null == d || null == m) return {
+    m = i.useMemo(() => {
+      if (null == d || null == h) return {
         key: 0
       };
-      let e = d * m;
+      let e = d * h;
       return {
         key: 1,
         minHeightOverride: Math.min(e, v * d),
         maxHeightOverride: e
       }
-    }, [m, d]),
+    }, [h, d]),
     {
       ref: E,
       isTransitioning: b,
       onTransitionEnd: y
     } = (0, c.Z)(g({
       isExpanded: a
-    }, h)),
+    }, m)),
     O = a || b;
   return (0, r.jsxs)("div", {
     className: p.descriptionContainer,
@@ -198,11 +198,11 @@ function S(e) {
         variant: "text-sm/medium",
         lineClamp: O ? true : v,
         style: {
-          maxHeight: O ? true : h.minHeightOverride
+          maxHeight: O ? true : m.minHeightOverride
         },
         children: l
       })
-    }), null != m && m > v ? (0, r.jsxs)(o.P3F, {
+    }), null != h && h > v ? (0, r.jsxs)(o.P3F, {
       className: p.expandableDescriptionClickable,
       onClick: () => s(e => !e),
       children: [(0, r.jsx)(o.Text, {

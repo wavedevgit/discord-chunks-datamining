@@ -67,13 +67,13 @@ function p(e, t) {
   return i
 }
 let _ = /url\(['"](.*)['"]\)/,
-  m = e => {
+  h = e => {
     if (null == e || "" === e || "none" === e) return null;
     let t = e.match(_);
     return null != t ? t[1] : e
   };
 
-function h(e) {
+function m(e) {
   return null == e || "" === e || "none" === e ? "none" : "url(".concat(e, ")")
 }
 
@@ -86,7 +86,7 @@ function g(e) {
         loaded: r
       } = this.state, {
         style: i
-      } = this.props, a = null != i ? m(i.backgroundImage) : null;
+      } = this.props, a = null != i ? h(i.backgroundImage) : null;
       null == a && a !== n || this.cachedURLs.indexOf(a) >= 0 ? this.setState({
         loaded: true,
         cached: a
@@ -118,7 +118,7 @@ function g(e) {
           cached: o
         } = this.state;
       return a || null == n || (n = d(c({}, n), {
-        backgroundImage: h(o)
+        backgroundImage: m(o)
       })), (0, r.jsx)(e, c({
         style: n
       }, i))
@@ -127,7 +127,7 @@ function g(e) {
       super(e), l(this, "cachedURLs", []), l(this, "canceller", null);
       let {
         style: t
-      } = e, n = null != t ? m(t.backgroundImage) : null;
+      } = e, n = null != t ? h(t.backgroundImage) : null;
       this.cachedURLs = [n], this.state = {
         cached: n,
         loaded: true

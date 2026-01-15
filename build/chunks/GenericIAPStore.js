@@ -43,13 +43,13 @@ function _(e) {
   l = t, u = n
 }
 
-function m(e) {
+function h(e) {
   let {
     storeFront: t
   } = e;
   u = t
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   isGenericIapConnected() {
     return c
   }
@@ -63,11 +63,11 @@ class h extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-s(h, "displayName", "GenericIAPStore");
-let g = new h(Chunk570140.Z, {
+s(m, "displayName", "GenericIAPStore");
+let g = new m(Chunk570140.Z, {
   IAP_LOAD_GENERIC_PRODUCTS: _,
   GENERIC_IAP_INIT_CONNECTION: d,
   GENERIC_IAP_INIT_CONNECTION_FAILED: f,
   GENERIC_IAP_END_CONNECTION: p,
-  GENERIC_IAP_SET_STORE_FRONT: m
+  GENERIC_IAP_SET_STORE_FRONT: h
 })

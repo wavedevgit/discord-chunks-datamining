@@ -83,8 +83,8 @@ let A = new Chunk710845.Z("ChoosePaymentSourceType"),
     [Chunk981631.HeQ.CASH_APP]: Chunk219929.ZP.Types.CASH_APP
   },
   P = 1e3,
-  R = "40c266_1";
-class w extends Chunk473749.PureComponent {
+  w = "40c266_1";
+class R extends Chunk473749.PureComponent {
   componentDidMount() {
     var e;
     (0, u.GE)(), (null != (e = this.props.paymentRequestWallets) ? e : []).length > 0 && setTimeout(() => {
@@ -122,14 +122,14 @@ class w extends Chunk473749.PureComponent {
     return e.map(e => {
       var t;
       let n = N[e],
-        i = h.W[e](),
+        i = m.W[e](),
         a = null == this.props.paymentSourceTypeRestrictions || (null == (t = this.props.paymentSourceTypeRestrictions) ? true : t.includes(e));
       return (0, r.jsx)(l.zxk, {
         onClick: () => this.props.onChooseType(e),
         disabled: !a,
         fullWidth: true,
         text: i,
-        icon: () => (0, r.jsx)(m.ZP, {
+        icon: () => (0, r.jsx)(h.ZP, {
           className: O.buttonIcon,
           type: n
         })
@@ -148,13 +148,13 @@ class w extends Chunk473749.PureComponent {
       ipCountryCodeHasError: l,
       paymentRequestPaymentContext: u,
       isEligibleForTrial: _ = false
-    } = this.props, m = null != (e = this.props.paymentRequestWallets) ? e : [], h = {
+    } = this.props, h = null != (e = this.props.paymentRequestWallets) ? e : [], m = {
       iconClassName: O.buttonIcon,
       paymentLabel: y.intl.string(y.t.ZURqX0),
       onStripePaymentMethodReceived: a,
       onChooseType: n,
       paymentRequestPaymentContext: u
-    }, g = m.map((e, t) => {
+    }, g = h.map((e, t) => {
       let n = () => this.setState({
           ["".concat(e, "Loaded")]: true
         }),
@@ -163,11 +163,11 @@ class w extends Chunk473749.PureComponent {
           onPaymentRequestFailure: n
         },
         a = "".concat(e, "-").concat(t);
-      return "applePay" === e ? (0, r.jsx)(p.Ch, I({}, h, i), a) : (0, r.jsx)(p.Tr, I({}, h, i), a)
+      return "applePay" === e ? (0, r.jsx)(p.Ch, I({}, m, i), a) : (0, r.jsx)(p.Tr, I({}, m, i), a)
     }), E = [], b = [], S = true === s || this.arePaymentRequestWalletsLoading();
     if (l) E.push(...this.createPaymentButtons((0, f.Q)({
       ipCountryCode: "ALL",
-      location: R
+      location: w
     }).countryPaymentMethods));
     else {
       let {
@@ -175,7 +175,7 @@ class w extends Chunk473749.PureComponent {
         remainingPaymentMethods: t
       } = (0, f.Q)({
         ipCountryCode: s,
-        location: R
+        location: w
       });
       E.push(...this.createPaymentButtons(e)), b.push(...this.createPaymentButtons(t))
     }
@@ -231,4 +231,4 @@ class w extends Chunk473749.PureComponent {
 let D = Chunk442837.ZP.connectStores([Chunk351402.Z], () => ({
   ipCountryCode: g.Z.ipCountryCode,
   ipCountryCodeHasError: g.Z.ipCountryCodeHasError
-}))(w)
+}))(R)

@@ -51,7 +51,7 @@ function f(e, t) {
 let p = null,
   _ = new Map;
 
-function m(e) {
+function h(e) {
   let t = _.get(e);
   return null == t ? (console.warn("Window state not initialized", e), {
     isElementFullscreen: false,
@@ -64,7 +64,7 @@ function m(e) {
   }) : t
 }
 
-function h(e) {
+function m(e) {
   a()(!_.has(e.windowId), "Window initialized multiple times");
   let {
     width: t,
@@ -85,28 +85,28 @@ function h(e) {
 }
 
 function g(e) {
-  let t = m(e.windowId);
+  let t = h(e.windowId);
   return t.isElementFullscreen !== e.isElementFullscreen && (_.set(e.windowId, f(u({}, t), {
     isElementFullscreen: e.isElementFullscreen
   })), true)
 }
 
 function E(e) {
-  let t = m(e.windowId);
+  let t = h(e.windowId);
   return t.focused !== e.focused && (e.focused && (p = e.windowId), _.set(e.windowId, f(u({}, t), {
     focused: e.focused
   })), true)
 }
 
 function b(e) {
-  let t = m(e.windowId);
+  let t = h(e.windowId);
   return t.visible !== e.visible && (_.set(e.windowId, f(u({}, t), {
     visible: e.visible
   })), true)
 }
 
 function y(e) {
-  let t = m(e.windowId);
+  let t = h(e.windowId);
   return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (_.set(e.windowId, f(u({}, t), {
     windowSize: {
       width: e.width,
@@ -121,14 +121,14 @@ function O(e) {
 class v extends(r = Chunk442837.ZP.Store) {
   isFocused() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
-    return m(e).focused
+    return h(e).focused
   }
   isAppFocused() {
     return null != this.getFocusedWindowId()
   }
   isVisible() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
-    return m(e).visible
+    return h(e).visible
   }
   getFocusedWindowId() {
     let e = null;
@@ -141,16 +141,16 @@ class v extends(r = Chunk442837.ZP.Store) {
   }
   isElementFullScreen() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
-    return m(e).isElementFullscreen
+    return h(e).isElementFullscreen
   }
   windowSize() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
-    return m(e).windowSize
+    return h(e).windowSize
   }
 }
 c(v, "displayName", "WindowStore");
 let S = new v(Chunk570140.Z, {
-  WINDOW_INIT: h,
+  WINDOW_INIT: m,
   WINDOW_FULLSCREEN_CHANGE: g,
   WINDOW_FOCUS: E,
   WINDOW_RESIZED: y,

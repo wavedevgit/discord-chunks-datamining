@@ -5,7 +5,7 @@ require.d(exports, {
   Gi: () => O,
   H0: () => S,
   P0: () => b,
-  UD: () => h,
+  UD: () => m,
   WF: () => y,
   gT: () => E,
   iZ: () => g,
@@ -37,11 +37,11 @@ function _(e) {
   return r && null != i
 }
 
-function m(e) {
+function h(e) {
   return b(l.Z.getChannel(e))
 }
 
-function h(e) {
+function m(e) {
   return g(l.Z.getChannel(e))
 }
 
@@ -58,7 +58,7 @@ function b(e) {
 }
 
 function y(e) {
-  if (null == e || !(0, s.U)() || !m(e)) returntrue;
+  if (null == e || !(0, s.U)() || !h(e)) returntrue;
   let {
     loaded: t,
     firstMessage: n

@@ -41,7 +41,7 @@ class O {
         displayName: r,
         canViewChannel: i
       }
-    }).sort((e, t) => h.default.compare(e.userId, t.userId)).sortBy(e => e.displayName).forEach(e => {
+    }).sort((e, t) => m.default.compare(e.userId, t.userId)).sortBy(e => e.displayName).forEach(e => {
       this.addUser(e.userId, e.sectionId, e.displayName, e.canViewChannel, true)
     })
   }
@@ -120,7 +120,7 @@ class O {
       a = p.default.getUser(e),
       o = p.default.getCurrentUser(),
       s = (null == a ? true : a.id) === (null == o ? true : o.id) ? f.Z.getStatus() : d.Z.getStatus(e, this.guildId),
-      l = null != a && null != t && m.BT({
+      l = null != a && null != t && h.BT({
         permission: E.Plq.VIEW_CHANNEL,
         user: a,
         context: t
@@ -196,7 +196,7 @@ function P(e) {
   return r
 }
 
-function R(e) {
+function w(e) {
   let {
     chunks: t
   } = e, n = false;
@@ -211,7 +211,7 @@ function R(e) {
   return n
 }
 
-function w(e) {
+function R(e) {
   var t;
   let {
     channel: n
@@ -275,7 +275,7 @@ b(j, "displayName", "ThreadMemberListStore");
 let M = new j(Chunk570140.Z, {
   CONNECTION_OPEN: v,
   THREAD_MEMBERS_UPDATE: S,
-  THREAD_UPDATE: w,
+  THREAD_UPDATE: R,
   THREAD_DELETE: D,
   CHANNEL_UPDATES: L,
   THREAD_MEMBER_LIST_UPDATE: I,
@@ -285,7 +285,7 @@ let M = new j(Chunk570140.Z, {
   GUILD_MEMBER_UPDATE: T,
   GUILD_MEMBER_REMOVE: T,
   PRESENCES_REPLACE: P,
-  GUILD_MEMBERS_CHUNK_BATCH: R,
+  GUILD_MEMBERS_CHUNK_BATCH: w,
   GUILD_ROLE_UPDATE: x,
   GUILD_ROLE_DELETE: x,
   PASSIVE_UPDATE_V2: A

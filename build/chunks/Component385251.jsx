@@ -89,7 +89,7 @@ function A(e) {
       currency: t.currency,
       paymentSourceId: t.paymentSourceId
     }),
-    m = (0, p.T4)(_.amount, _.currency);
+    h = (0, p.T4)(_.amount, _.currency);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-xl/semibold",
@@ -103,12 +103,12 @@ function A(e) {
       children: o ? b.intl.format(b.t["3ZiutU"], {
         percent: n.percentage,
         numMonths: n.duration,
-        regularPrice: m
+        regularPrice: h
       }) : b.intl.format(b.t.N43FMx, {
         numMonths: n.duration,
         discountedPrice: d,
         billingPeriod: b.intl.string(b.t.FPybU7),
-        fullPrice: m
+        fullPrice: h
       })
     })]
   })
@@ -148,9 +148,9 @@ let P = function(e) {
     discountOffer: I
   } = e, {
     analyticsLocations: P
-  } = (0, s.ZP)(o.Z.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), R = () => {
-    t.status !== E.O0b.CANCELED && w()
-  }, w = e => {
+  } = (0, s.ZP)(o.Z.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), w = () => {
+    t.status !== E.O0b.CANCELED && R()
+  }, R = e => {
     (0, a.ZDy)(async () => {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: i
@@ -171,7 +171,7 @@ let P = function(e) {
       size: "md",
       text: b.intl.string(b.t.zrCzVB),
       loading: p,
-      onClick: () => w(h.R.CONFIRM_DISCOUNT)
+      onClick: () => R(m.R.CONFIRM_DISCOUNT)
     }) : (0, r.jsxs)("div", {
       className: y.activeSubButtons,
       children: [(0, r.jsx)(i.u, {
@@ -197,10 +197,10 @@ let P = function(e) {
         size: "md",
         text: b.intl.string(b.t["ETE/oC"]),
         loading: p,
-        onClick: R
+        onClick: w
       })]
     })
-  }, x = f.ZP.getPlanIdFromInvoice(t, u), L = (0, m.eQ)(null == I ? true : I.expires_at);
+  }, x = f.ZP.getPlanIdFromInvoice(t, u), L = (0, h.eQ)(null == I ? true : I.expires_at);
   return (0, c.Q0)(x) ? null : (0, r.jsx)("div", {
     className: y.churnDiscountBannerBackground,
     children: (0, r.jsx)(a.$1m, {

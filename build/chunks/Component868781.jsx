@@ -17,7 +17,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk981631 = require("./981631.js");
 let p = function(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, s.dS)(e) ? i.ewx : (0, a.Z)(e) ? t ? i.iWm : i.jje : e.type === f.IIU.PLAYING ? i.iWm : e.type === f.IIU.LISTENING ? i.RZG : e.type === f.IIU.WATCHING || e.type === f.IIU.STREAMING ? i.ARS : e.type === f.IIU.COMPETING ? i.iWm : null
+  return (0, s.dS)(e) ? i.StageIcon : (0, a.Z)(e) ? t ? i.GameControllerIcon : i.AppsIcon : e.type === f.IIU.PLAYING ? i.GameControllerIcon : e.type === f.IIU.LISTENING ? i.MusicIcon : e.type === f.IIU.WATCHING || e.type === f.IIU.STREAMING ? i.TvIcon : e.type === f.IIU.COMPETING ? i.GameControllerIcon : null
 };
 
 function _(e) {
@@ -29,9 +29,9 @@ function _(e) {
     hideIcon: s = false,
     hideText: f = false,
     hideTooltip: _ = false,
-    canTruncate: m = true
+    canTruncate: h = true
   } = e, {
-    descriptiveTextEnabled: h
+    descriptiveTextEnabled: m
   } = (0, l.f)({
     location: "PresenceActivityStatusWithCombinedTooltip"
   }), {
@@ -41,7 +41,7 @@ function _(e) {
   }), {
     text: E,
     tooltip: b
-  } = (0, c.Z)(t, h || g), y = p(t), O = null != y && !s;
+  } = (0, c.Z)(t, m || g), y = p(t), O = null != y && !s;
   return (0, r.jsx)(d.Z, {
     icon: O ? (0, r.jsx)(u.Z, {
       icon: y,
@@ -51,7 +51,7 @@ function _(e) {
     textVariant: n,
     textClassName: i,
     hideTooltip: _,
-    canTruncate: m,
+    canTruncate: h,
     "aria-label": null != b ? b : "",
     hideText: f
   })

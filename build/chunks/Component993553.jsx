@@ -2,7 +2,7 @@
 /** chunk id: 993553, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,12 +68,12 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     children: t,
     lineClamp: n = 2
   } = e, c = p(e, ["children", "lineClamp"]);
-  let [d, _] = i.useState(false), [m, h] = i.useState(null), g = null != m && (0, r.jsx)("button", {
+  let [d, _] = i.useState(false), [h, m] = i.useState(null), g = null != h && (0, r.jsx)("button", {
     className: l.button,
     onClick: () => _(e => !e),
     children: (0, r.jsxs)(o.Text, {
@@ -94,7 +94,7 @@ function m(e) {
       scrollHeight: e,
       clientHeight: t
     } = E;
-    e > t && h({
+    e > t && m({
       truncatedHeight: t,
       expandedHeight: e
     })
@@ -103,7 +103,7 @@ function m(e) {
     requestAnimationFrame(y)
   }, [y, t, n]);
   let O = "auto";
-  return null != m && (O = d ? "".concat(m.expandedHeight, "px") : "".concat(m.truncatedHeight, "px")), (0, r.jsxs)("div", {
+  return null != h && (O = d ? "".concat(h.expandedHeight, "px") : "".concat(h.truncatedHeight, "px")), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Text, f(u({}, c), {
       className: l.content,
       lineClamp: d ? true : n,

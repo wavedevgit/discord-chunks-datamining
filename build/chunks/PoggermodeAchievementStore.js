@@ -50,13 +50,13 @@ function p(e, t) {
   }), e
 }
 let _ = 2e3,
-  m = {
+  h = {
     unlockedAchievements: {}
   },
-  h = d({}, m);
+  m = d({}, h);
 
 function g(e) {
-  return null == h.unlockedAchievements[e] && (h.unlockedAchievements = p(d({}, h.unlockedAchievements), {
+  return null == m.unlockedAchievements[e] && (m.unlockedAchievements = p(d({}, m.unlockedAchievements), {
     [e]: {
       achievementId: e,
       dateUnlocked: Date.now()
@@ -76,18 +76,18 @@ function E(e) {
 class b extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(o.default, l.Z, c.ZP);
-    let t = null != e ? e : d({}, m);
-    for (let e in t) h[e] = t[e]
+    let t = null != e ? e : d({}, h);
+    for (let e in t) m[e] = t[e]
   }
   getState() {
-    return h
+    return m
   }
   getAllUnlockedAchievements() {
-    return h.unlockedAchievements
+    return m.unlockedAchievements
   }
   getUnlocked(e) {
     var t;
-    return null != (t = h.unlockedAchievements[e]) ? t : null
+    return null != (t = m.unlockedAchievements[e]) ? t : null
   }
 }
 u(b, "displayName", "PoggermodeAchievementStore"), u(b, "persistKey", "PoggermodeAchievementStore");

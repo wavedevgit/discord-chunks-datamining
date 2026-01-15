@@ -39,7 +39,7 @@ function I(e) {
 function T(e) {
   var t;
   let n = _.Z.getChannel(e.channel_id),
-    r = null == n ? null : m.Z.getGuild(n.getGuildId());
+    r = null == n ? null : h.Z.getGuild(n.getGuildId());
   return (0, a.Rp)(y.intl.formatToParts(y.t.PJsjbP, {
     emoji: e.content,
     guildName: null != (t = null == r ? true : r.name) ? t : y.intl.string(y.t.dtwqPR)
@@ -55,7 +55,7 @@ function C(e) {
 
 function A(e, t) {
   let n = _.Z.getChannel(t);
-  return null == n || null == m.Z.getGuild(n.getGuildId()) ? C(e) : (0, a.Rp)(y.intl.formatToParts(y.t.ihxM9x, {
+  return null == n || null == h.Z.getGuild(n.getGuildId()) ? C(e) : (0, a.Rp)(y.intl.formatToParts(y.t.ihxM9x, {
     username: e,
     usernameOnClick: b.dG4
   }))
@@ -64,7 +64,7 @@ function A(e, t) {
 function N(e, t, n) {
   let r = _.Z.getChannel(t);
   if (null == r) return null;
-  let i = m.Z.getGuild(r.getGuildId());
+  let i = h.Z.getGuild(r.getGuildId());
   return null == i ? null : (0, a.Rp)(y.intl.formatToParts(y.t.iOuWPk, {
     username: e,
     guildName: i.name,
@@ -78,17 +78,17 @@ function N(e, t, n) {
 function P(e, t) {
   let n = _.Z.getChannel(t);
   if (null == n) return null;
-  let r = m.Z.getGuild(n.getGuildId());
+  let r = h.Z.getGuild(n.getGuildId());
   return null == r ? null : (0, a.Rp)(y.intl.formatToParts(y.t.axmbpm, {
     username: e,
     guildName: r.name
   }))
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = _.Z.getChannel(e);
   if (null == n) return null;
-  let r = m.Z.getGuild(n.getGuildId());
+  let r = h.Z.getGuild(n.getGuildId());
   if (null == r) return null;
   switch (t) {
     case i.p.ACTIVITY_ALERTS_ENABLED:
@@ -106,37 +106,37 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function R(e) {
   var t, n, r;
   let [i] = null != (t = e.mentions) ? t : [];
-  return null == i ? null : "object" == typeof i ? null != (n = h.default.getUser(i.id)) ? n : null : "string" == typeof i && null != (r = h.default.getUser(i)) ? r : null
+  return null == i ? null : "object" == typeof i ? null != (n = m.default.getUser(i.id)) ? n : null : "string" == typeof i && null != (r = m.default.getUser(i)) ? r : null
 }
 let D = {
   stringify: function(e, t) {
-    var n, i, _, m;
-    let h = w(e),
+    var n, i, _, h;
+    let m = R(e),
       E = e.channel_id,
       O = g.ZP.getName(null, E, e.author);
     switch (e.type) {
       case b.uaV.RECIPIENT_ADD:
-        if (null == h) return;
+        if (null == m) return;
         return (0, a.Rp)(y.intl.formatToParts(y.t["7/Xl0S"], {
           username: O,
           usernameOnClick: b.dG4,
-          otherUsername: g.ZP.getName(null, E, h),
+          otherUsername: g.ZP.getName(null, E, m),
           otherUsernameOnClick: b.dG4
         }));
       case b.uaV.RECIPIENT_REMOVE:
-        if (null == h) return;
+        if (null == m) return;
         let v = e.author;
-        if (null == v || v.id === h.id) return (0, a.Rp)(y.intl.formatToParts(y.t["Qn5+Lf"], {
+        if (null == v || v.id === m.id) return (0, a.Rp)(y.intl.formatToParts(y.t["Qn5+Lf"], {
           username: O,
           usernameOnClick: b.dG4
         }));
         return (0, a.Rp)(y.intl.formatToParts(y.t.QtZ0RD, {
           username: O,
           usernameOnClick: b.dG4,
-          otherUsername: g.ZP.getName(null, E, h),
+          otherUsername: g.ZP.getName(null, E, m),
           otherUsernameOnClick: b.dG4
         }));
       case b.uaV.CALL:
@@ -229,8 +229,8 @@ let D = {
               } = e;
               return t === b.hBH.AUTO_MODERATION_NOTIFICATION
             }),
-            n = null == t || null == (m = t.fields) ? true : m.find(e => "name" in e && e.name === r.D.NOTIFICATION_TYPE);
-          return R(E, null != n && "value" in n ? n.value : true)
+            n = null == t || null == (h = t.fields) ? true : h.find(e => "name" in e && e.name === r.D.NOTIFICATION_TYPE);
+          return w(E, null != n && "value" in n ? n.value : true)
         }
         return e.content;
       case b.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED:

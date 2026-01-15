@@ -27,15 +27,15 @@ function c(e) {
     let n = null != c && e.shiftKey ? c : t;
     a()(null != n, "cannot copy null text"), (0, l.JG)(n, i)
   }
-  let m = d || p;
-  if (__OVERLAY__ || !m || !l.wS || null == t) return null;
-  let h = "devmode-copy-id-".concat(t);
+  let h = d || p;
+  if (__OVERLAY__ || !h || !l.wS || null == t) return null;
+  let m = "devmode-copy-id-".concat(t);
   return (0, r.jsx)(o.sNh, {
-    id: h,
+    id: m,
     label: n,
     action: _,
     icon: u ? true : o.VuL,
     iconLeft: u ? o.VuL : true,
     focusedClassName: f
-  }, h)
+  }, m)
 }

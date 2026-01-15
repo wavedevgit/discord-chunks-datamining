@@ -13,38 +13,38 @@ var Chunk815329 = require("./815329.js"),
   Chunk414235 = require("./414235.js"),
   Chunk71256 = require("./71256.js"),
   Chunk951575 = require("./951575.js");
-module.exports = function(e, t, n, m, h) {
+module.exports = function(e, t, n, h, m) {
   var g, E, b = p(e);
   if (true !== e && !_(e)) throw new r("Assertion failed: O must be undefined or an Object");
   if (!d(t)) throw new r("Assertion failed: P must be a Property Key");
   if ("boolean" != typeof n) throw new r("Assertion failed: extensible must be a Boolean");
-  if (!o(m)) throw new r("Assertion failed: Desc must be a Property Descriptor");
-  if (true !== h && !o(h)) throw new r("Assertion failed: current must be a Property Descriptor, or undefined");
-  if (true === h) return !!n && ("Undefined" === b || (l(m) ? i(c, f, s, e, t, m) : i(c, f, s, e, t, {
-    "[[Configurable]]": !!m["[[Configurable]]"],
-    "[[Enumerable]]": !!m["[[Enumerable]]"],
-    "[[Value]]": m["[[Value]]"],
-    "[[Writable]]": !!m["[[Writable]]"]
+  if (!o(h)) throw new r("Assertion failed: Desc must be a Property Descriptor");
+  if (true !== m && !o(m)) throw new r("Assertion failed: current must be a Property Descriptor, or undefined");
+  if (true === m) return !!n && ("Undefined" === b || (l(h) ? i(c, f, s, e, t, h) : i(c, f, s, e, t, {
+    "[[Configurable]]": !!h["[[Configurable]]"],
+    "[[Enumerable]]": !!h["[[Enumerable]]"],
+    "[[Value]]": h["[[Value]]"],
+    "[[Writable]]": !!h["[[Writable]]"]
   })));
   if (!a({
       IsAccessorDescriptor: l,
       IsDataDescriptor: c
-    }, h)) throw new r("`current`, when present, must be a fully populated and valid Property Descriptor");
-  if (!h["[[Configurable]]"]) {
-    if ("[[Configurable]]" in m && m["[[Configurable]]"] || "[[Enumerable]]" in m && !f(m["[[Enumerable]]"], h["[[Enumerable]]"]) || !u(m) && !f(l(m), l(h))) returnfalse;
-    if (l(h)) {
-      if ("[[Get]]" in m && !f(m["[[Get]]"], h["[[Get]]"]) || "[[Set]]" in m && !f(m["[[Set]]"], h["[[Set]]"])) returnfalse
-    } else if (!h["[[Writable]]"] && ("[[Writable]]" in m && m["[[Writable]]"] || "[[Value]]" in m && !f(m["[[Value]]"], h["[[Value]]"]))) returnfalse
+    }, m)) throw new r("`current`, when present, must be a fully populated and valid Property Descriptor");
+  if (!m["[[Configurable]]"]) {
+    if ("[[Configurable]]" in h && h["[[Configurable]]"] || "[[Enumerable]]" in h && !f(h["[[Enumerable]]"], m["[[Enumerable]]"]) || !u(h) && !f(l(h), l(m))) returnfalse;
+    if (l(m)) {
+      if ("[[Get]]" in h && !f(h["[[Get]]"], m["[[Get]]"]) || "[[Set]]" in h && !f(h["[[Set]]"], m["[[Set]]"])) returnfalse
+    } else if (!m["[[Writable]]"] && ("[[Writable]]" in h && h["[[Writable]]"] || "[[Value]]" in h && !f(h["[[Value]]"], m["[[Value]]"]))) returnfalse
   }
-  return "Undefined" === b || (c(h) && l(m) ? i(c, f, s, e, t, {
-    "[[Configurable]]": !!(g = ("[[Configurable]]" in m ? m : h)["[[Configurable]]"]),
-    "[[Enumerable]]": !!(E = ("[[Enumerable]]" in m ? m : h)["[[Enumerable]]"]),
-    "[[Get]]": ("[[Get]]" in m ? m : h)["[[Get]]"],
-    "[[Set]]": ("[[Set]]" in m ? m : h)["[[Set]]"]
-  }) : l(h) && c(m) ? i(c, f, s, e, t, {
-    "[[Configurable]]": !!(g = ("[[Configurable]]" in m ? m : h)["[[Configurable]]"]),
-    "[[Enumerable]]": !!(E = ("[[Enumerable]]" in m ? m : h)["[[Enumerable]]"]),
-    "[[Value]]": ("[[Value]]" in m ? m : h)["[[Value]]"],
-    "[[Writable]]": !!("[[Writable]]" in m ? m : h)["[[Writable]]"]
-  }) : i(c, f, s, e, t, m))
+  return "Undefined" === b || (c(m) && l(h) ? i(c, f, s, e, t, {
+    "[[Configurable]]": !!(g = ("[[Configurable]]" in h ? h : m)["[[Configurable]]"]),
+    "[[Enumerable]]": !!(E = ("[[Enumerable]]" in h ? h : m)["[[Enumerable]]"]),
+    "[[Get]]": ("[[Get]]" in h ? h : m)["[[Get]]"],
+    "[[Set]]": ("[[Set]]" in h ? h : m)["[[Set]]"]
+  }) : l(m) && c(h) ? i(c, f, s, e, t, {
+    "[[Configurable]]": !!(g = ("[[Configurable]]" in h ? h : m)["[[Configurable]]"]),
+    "[[Enumerable]]": !!(E = ("[[Enumerable]]" in h ? h : m)["[[Enumerable]]"]),
+    "[[Value]]": ("[[Value]]" in h ? h : m)["[[Value]]"],
+    "[[Writable]]": !!("[[Writable]]" in h ? h : m)["[[Writable]]"]
+  }) : i(c, f, s, e, t, h))
 }

@@ -40,7 +40,7 @@ let T = e => {
     } = (0, y.q)({
       searchQuery: O,
       selectedUsers: f
-    }), [R, w] = i.useState(false), D = T.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), x = () => (0, r.jsx)(c.uzC, {
+    }), [w, R] = i.useState(false), D = T.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), x = () => (0, r.jsx)(c.uzC, {
       selectionMode: "multiple",
       value: Array.from(f.values()),
       options: Array.from(D.values()),
@@ -49,7 +49,7 @@ let T = e => {
         return {
           id: t.id,
           value: t,
-          label: h.ZP.getName(t)
+          label: m.ZP.getName(t)
         }
       },
       onSelectionChange: e => {
@@ -79,13 +79,13 @@ let T = e => {
         className: o()(I.footer, I.footerSeparator),
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
-          disabled: 0 === f.size && !s || R,
+          disabled: 0 === f.size && !s || w,
           text: i,
           size: "md",
           fullWidth: true,
           onClick: async () => {
             if (s) return void t();
-            w(true), await n([...f.values()]), w(false)
+            R(true), await n([...f.values()]), R(false)
           }
         })
       })
@@ -125,7 +125,7 @@ let T = e => {
       size: "sm",
       title: S.intl.string(S.t["2YigPp"]),
       subtitle: S.intl.format(S.t.OOCbz8, {
-        helpdeskArticle: m.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: h.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
       }),
       onClose: t,
       actions: []
@@ -149,7 +149,7 @@ let T = e => {
     let {
       onClose: t,
       onShare: n
-    } = e, a = (0, l.e7)([E.Z], () => E.Z.getRecipientStatus()), [d, f] = i.useState(new Map), [p, _] = i.useState(new Map), [m, h] = i.useState(false);
+    } = e, a = (0, l.e7)([E.Z], () => E.Z.getRecipientStatus()), [d, f] = i.useState(new Map), [p, _] = i.useState(new Map), [h, m] = i.useState(false);
     i.useEffect(() => {
       (async () => {
         let e = new Map;
@@ -168,12 +168,12 @@ let T = e => {
         className: o()(I.footer, I.footerSeparator),
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
-          disabled: 0 === p.size || m,
+          disabled: 0 === p.size || h,
           text: e,
           size: "md",
           fullWidth: true,
           onClick: async () => {
-            h(true), await n([...p.values()]), h(false)
+            m(true), await n([...p.values()]), m(false)
           }
         })
       })
@@ -208,10 +208,10 @@ let N = e => {
     onClose: t,
     startingScreen: n = 1
   } = e, a = (0, l.e7)([E.Z], () => E.Z.getReferralsRemaining()), [o, s] = i.useState(n), [u, d] = i.useState([]), {
-    analyticsLocations: m
-  } = (0, p.ZP)([f.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), h = async e => {
+    analyticsLocations: h
+  } = (0, p.ZP)([f.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), m = async e => {
     _.default.track(v.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
-      location_stack: m
+      location_stack: h
     });
     let t = await (0, g.jy)(Object.values(e).map(e => e.id));
     d(e.map(e => ({
@@ -230,9 +230,9 @@ let N = e => {
   }
   return 1 === o ? (0, r.jsx)(T, {
     onClose: t,
-    onShare: h
+    onShare: m
   }) : 3 === o ? (0, r.jsx)(C, {
     onClose: t,
-    onShare: h
+    onShare: m
   }) : true
 }

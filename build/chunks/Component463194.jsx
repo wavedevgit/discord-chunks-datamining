@@ -2,7 +2,7 @@
 /** chunk id: 463194, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => h
+  F: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     trait: t,
     ellipsize: n
@@ -55,7 +55,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     items: t
   } = e, n = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
@@ -68,7 +68,7 @@ function h(e) {
       color: "text-default",
       children: e
     })
-  }, "overflow") : (0, r.jsx)(m, {
+  }, "overflow") : (0, r.jsx)(h, {
     trait: e,
     ellipsize: t.ellipsize
   }, e.key), []), a = i.useCallback(e => n(e, {

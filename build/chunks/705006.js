@@ -51,9 +51,9 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = .1;
+let h = .1;
 
-function h(e, t) {
+function m(e, t) {
   let n = e => null == e ? "null" : null == e.questId ? "no_serve" : "quest",
     r = n(e),
     i = n(t);
@@ -61,8 +61,8 @@ function h(e, t) {
 }
 
 function g(e, t, n) {
-  var l, c, d, p, h;
-  if (Math.random() > m) return;
+  var l, c, d, p, m;
+  if (Math.random() > h) return;
   let g = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     E = (0, a.d)();
   s.default.track(u.rMx.QUEST_DECISION_ROUNDTRIP, _(f(_(f({}, (0, i.Z)()), {
@@ -77,7 +77,7 @@ function g(e, t, n) {
     ad_request_id: e.adRequestId,
     fetched_at: n,
     previous_ad_request_id: null != (p = null == (c = e.previousAdDecision) || null == (l = c.adDecisionData) ? true : l.decision_id) ? p : null,
-    previous_fetched_at: null != (h = null == (d = e.previousAdDecision) ? true : d.fetchedAt) ? h : null,
+    previous_fetched_at: null != (m = null == (d = e.previousAdDecision) ? true : d.fetchedAt) ? m : null,
     transition_case: t,
     is_foregrounded: (0, r.H)()
   }))
@@ -129,7 +129,7 @@ class E {
             decision_id: r
           } : true
         } : null;
-        t = h(o.previousAdDecision, e), s = a
+        t = m(o.previousAdDecision, e), s = a
       } else t = "legacy", s = null;
       g(_(f({}, o), {
         apiResponseTimestamp: Date.now(),

@@ -47,7 +47,7 @@ class f extends Chunk473749.PureComponent {
         breadcrumbs: a,
         renderCustomBreadcrumb: l,
         separatorClassName: d
-      } = this.props, f = e.id === n, p = () => this.handleClick(e), _ = t === a.length - 1, m = null != l ? l(e, f) : (0, r.jsx)("span", {
+      } = this.props, f = e.id === n, p = () => this.handleClick(e), _ = t === a.length - 1, h = null != l ? l(e, f) : (0, r.jsx)("span", {
         className: o()(u.breadcrumb, {
           [u.activeBreadcrumb]: f,
           [u.interactiveBreadcrumb]: null != i
@@ -62,8 +62,8 @@ class f extends Chunk473749.PureComponent {
           tag: "span",
           onClick: p,
           className: u.breadcrumbClickWrapper,
-          children: m
-        }) : m, _ ? null : (0, r.jsx)(c.Z, {
+          children: h
+        }) : h, _ ? null : (0, r.jsx)(c.Z, {
           className: o()(u.breadcrumbArrow, d),
           direction: c.Z.Directions.RIGHT
         })]

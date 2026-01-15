@@ -36,11 +36,11 @@ function C(e) {
   } = e, a = (0, y.gl)(), {
     unit: s,
     duration: l
-  } = (0, m.Bi)(n.numVoiceMinutes);
+  } = (0, h.Bi)(n.numVoiceMinutes);
   return (0, r.jsx)(y.QR, {
     className: o()(T.guildContainer, T.topGuild),
     spring: a,
-    children: (0, r.jsxs)(h.Z, {
+    children: (0, r.jsxs)(m.Z, {
       innerClassName: T.topGuildBorder,
       useTopRightClipPath: true,
       children: [(0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ function A(e) {
   return (0, r.jsx)(y.QR, {
     className: T.guildContainer,
     spring: a,
-    children: (0, r.jsxs)(h.Z, {
+    children: (0, r.jsxs)(m.Z, {
       innerClassName: T.guildBorder,
       useTopRightClipPath: true,
       children: [(0, r.jsxs)("div", {

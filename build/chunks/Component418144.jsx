@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -87,14 +87,14 @@ let O = (0, Chunk473749.createContext)({
       hideConfirmStepConfetti: n,
       confettiCanvas: i
     } = v();
-    return (0, r.jsx)(d.x, h({
+    return (0, r.jsx)(d.x, m({
       analyticsLocations: t,
       hideConfetti: n,
       confettiCanvas: i
     }, e))
   },
   I = {
-    renderStep: e => (0, r.jsx)(S, h({}, e)),
+    renderStep: e => (0, r.jsx)(S, m({}, e)),
     options: Chunk608579.Kf
   },
   T = e => {
@@ -108,7 +108,7 @@ let O = (0, Chunk473749.createContext)({
       confettiCanvas: d,
       setConfettiCanvas: f,
       customConfettiVisible: p,
-      setCustomConfettiVisible: m,
+      setCustomConfettiVisible: h,
       customConfettiDisplayOptions: g,
       hideConfirmStepConfetti: y
     } = (0, u.dc)({
@@ -122,10 +122,10 @@ let O = (0, Chunk473749.createContext)({
     }), I = (0, i.useMemo)(() => ({
       analyticsLocations: v,
       skuIDs: S,
-      setCustomConfettiVisible: m,
+      setCustomConfettiVisible: h,
       hideConfirmStepConfetti: y,
       confettiCanvas: d
-    }), [v, S, m, y, d]);
+    }), [v, S, h, y, d]);
     return (0, r.jsxs)(a.Gt, {
       value: v,
       children: [(0, r.jsx)(u.sy, {
@@ -133,7 +133,7 @@ let O = (0, Chunk473749.createContext)({
         setConfettiCanvas: f,
         customConfettiDisplayOptions: g,
         customConfettiVisible: p
-      }), (0, r.jsx)(l.PaymentContextProvider, E(h({}, s), {
+      }), (0, r.jsx)(l.PaymentContextProvider, E(m({}, s), {
         skuIDs: S,
         stepConfigs: s.stepConfigs,
         activeSubscription: null,
@@ -206,8 +206,8 @@ let O = (0, Chunk473749.createContext)({
       } = e, f = o.onClose, _ = e => {
         f(), null == s || s(e)
       }, {
-        skuIDs: m,
-        setCustomConfettiVisible: h,
+        skuIDs: h,
+        setCustomConfettiVisible: m,
         analyticsLocations: g
       } = v(), {
         paymentModalSkuId: E,
@@ -216,8 +216,8 @@ let O = (0, Chunk473749.createContext)({
       } = (0, u.$g)({
         onClose: _,
         onComplete: l,
-        skuIDs: m,
-        setCustomConfettiVisible: h
+        skuIDs: h,
+        setCustomConfettiVisible: m
       }), O = (0, i.useMemo)(() => ({
         loadId: n,
         skuId: t,

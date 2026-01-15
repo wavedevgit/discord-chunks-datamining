@@ -50,12 +50,12 @@ module.exports = function(e) {
       begin: "`",
       end: "`[cwd]?"
     },
-    m = {
+    h = {
       className: "string",
       begin: 'x"[\\da-fA-F\\s\\n\\r]*"[cwd]?',
       relevance: 10
     },
-    h = {
+    m = {
       className: "string",
       begin: 'q"\\{',
       end: '\\}"'
@@ -83,6 +83,6 @@ module.exports = function(e) {
   return {
     name: "D",
     keywords: t,
-    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, m, f, p, _, h, u, c, d, g, E, b]
+    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, h, f, p, _, m, u, c, d, g, E, b]
   }
 }

@@ -20,29 +20,29 @@ function f(e, t) {
 }
 let p = Chunk664751.parse(location.search.slice(1)),
   _ = parseInt(null != p.rpc && "" !== p.rpc ? p.rpc : Chunk981631.V6Z, 10),
-  m = null;
-class h extends Chunk836560.EventEmitter {
+  h = null;
+class m extends Chunk836560.EventEmitter {
   get port() {
     return _
   }
   get connected() {
-    return null != m && m.readyState === WebSocket.OPEN
+    return null != h && h.readyState === WebSocket.OPEN
   }
   connect() {
-    if (null == m) {
+    if (null == h) {
       if (_ > d) {
         _ = u.V6Z, this.emit("disconnected");
         return
       }
       try {
-        m = new WebSocket("ws://127.0.0.1:".concat(this.port, "/?v=").concat(u.X6Q))
+        h = new WebSocket("ws://127.0.0.1:".concat(this.port, "/?v=").concat(u.X6Q))
       } catch (e) {
         this.disconnect({
           code: u.$VG.CLOSE_ABNORMAL
         });
         return
       }
-      null != m && (m.onmessage = e => {
+      null != h && (h.onmessage = e => {
         let t;
         try {
           if ("string" == typeof e.data) t = JSON.parse(e.data);
@@ -71,15 +71,15 @@ class h extends Chunk836560.EventEmitter {
         r === u.zMe.ERROR && (o = new c.Z({
           errorCode: a.code
         }, a.message), a = null), this.emit(f(n, i), o, a)
-      }, m.onclose = m.onerror = e => this.disconnect(e))
+      }, h.onclose = h.onerror = e => this.disconnect(e))
     }
   }
   disconnect(e) {
     if (null != e && "code" in e && [u.$VG.CLOSE_ABNORMAL, u.$VG.INVALID_CLIENTID].includes(e.code)) {
-      _++, m = null, this.connect();
+      _++, h = null, this.connect();
       return
     }
-    null != m && (this.emit("disconnected"), m.close(), m = null)
+    null != h && (this.emit("disconnected"), h.close(), h = null)
   }
   subscribe(e, t, n) {
     return this.on(f(u.Etm.DISPATCH, e), n), this.request(u.Etm.SUBSCRIBE, t, e)
@@ -104,7 +104,7 @@ class h extends Chunk836560.EventEmitter {
           evt: n,
           nonce: a
         });
-      this.once(f(e, a), (e, t) => null != e ? i(e) : r(t)), null == m || m.send(o)
+      this.once(f(e, a), (e, t) => null != e ? i(e) : r(t)), null == h || h.send(o)
     })
   }
   requestOnce(e, t, n) {
@@ -142,4 +142,4 @@ class h extends Chunk836560.EventEmitter {
     return window.open("http://127.0.0.1:".concat(this.port, "/rpc?v=").concat(u.X6Q, "&payload=").concat(r, "&callback=").concat(i), "_self"), new Promise(() => null)
   }
 }
-let g = new h
+let g = new m

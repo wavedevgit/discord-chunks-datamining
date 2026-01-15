@@ -20,16 +20,16 @@ let d = async e => {
     openChannel: f = true,
     whenReady: p = false,
     entry: _,
-    nonce: m
+    nonce: h
   } = e, {
-    valid: h,
+    valid: m,
     failureReason: g
   } = await (0, c.v)({
     type: a.Ie.NORMAL,
     content: n,
     channel: null
   });
-  if (!h) throw Error(g);
+  if (!m) throw Error(g);
   let E = f ? await r.Z.openPrivateChannel({
       recipientIds: t,
       location: d
@@ -48,7 +48,7 @@ let d = async e => {
     let e = s.ZP.parse(b, n);
     return i.Z.sendMessage(b.id, e, p, {
       location: u.dy.USER_PROFILE,
-      nonce: m
+      nonce: h
     })
   }
 }

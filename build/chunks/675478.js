@@ -4,14 +4,14 @@
 require.d(exports, {
   BU: () => L,
   Cd: () => U,
-  DZ: () => w,
+  DZ: () => R,
   PS: () => x,
   T6: () => N,
   Z1: () => F,
   aj: () => D,
   bE: () => V,
   fy: () => O.fy,
-  hW: () => R,
+  hW: () => w,
   m9: () => G,
   nm: () => j,
   sr: () => B,
@@ -121,8 +121,8 @@ class P {
     });
     let o = null != (n = t.delaySeconds) ? n : 0;
     if (null != a.timeout && o < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = true), null == a.timeout) {
-      let e = o * m.Z.Millis.SECOND;
-      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * m.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
+      let e = o * h.Z.Millis.SECOND;
+      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * h.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
     }
     null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, y.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
   }
@@ -269,7 +269,7 @@ class P {
           this.logger.log("Rate limited, scheduling retry");
           let t = parseInt(e.headers["retry-after"]);
           isNaN(t) && (t = 60);
-          let n = setTimeout(this.persistChanges, Math.min(30 * m.Z.Millis.SECOND, t * m.Z.Millis.SECOND));
+          let n = setTimeout(this.persistChanges, Math.min(30 * h.Z.Millis.SECOND, t * h.Z.Millis.SECOND));
           this.dispatchChanges({
             rateLimited: true,
             timeout: n
@@ -280,15 +280,15 @@ class P {
     }, this.logger = new d.Z(this.ProtoClass.typeName)
   }
 }
-let R = new P(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
-  w = new P(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+let w = new P(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
+  R = new P(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
   D = {
-    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: R,
-    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: w
+    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: w,
+    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: R
   };
 
 function x(e, t, n) {
-  return R.updateAsync("guilds", n => (0, y.u0)(n, e, t), n)
+  return w.updateAsync("guilds", n => (0, y.u0)(n, e, t), n)
 }
 
 function L(e, t, n, r) {
@@ -296,9 +296,9 @@ function L(e, t, n, r) {
 }
 
 function j(e) {
-  return M(e), R.updateAsync("userContent", t => {
-    if ((0, h.jl)(t.dismissedContents, e)) returnfalse;
-    t.dismissedContents = (0, h.GV)(t.dismissedContents, e)
+  return M(e), w.updateAsync("userContent", t => {
+    if ((0, m.jl)(t.dismissedContents, e)) returnfalse;
+    t.dismissedContents = (0, m.GV)(t.dismissedContents, e)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
@@ -311,10 +311,10 @@ function M(e) {
 function k(e) {
   var t;
   let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
-  return null != n && (0, h.jl)(n, e)
+  return null != n && (0, m.jl)(n, e)
 }
 async function U(e, t) {
-  return await R.updateAsync("userContent", n => {
+  return await w.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = I({}, n.recurringDismissibleContentStates[e], t)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
@@ -325,9 +325,9 @@ async function G(e, t, n) {
 }
 
 function Z(e) {
-  return R.updateAsync("userContent", t => {
-    if (!(0, h.jl)(t.dismissedContents, e)) returnfalse;
-    t.dismissedContents = (0, h.jx)(t.dismissedContents, e)
+  return w.updateAsync("userContent", t => {
+    if (!(0, m.jl)(t.dismissedContents, e)) returnfalse;
+    t.dismissedContents = (0, m.jx)(t.dismissedContents, e)
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
@@ -341,15 +341,15 @@ function F(e) {
 }
 
 function B() {
-  return R.updateAsync("userContent", e => {
+  return w.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, O.fy.INFREQUENT_USER_ACTION)
 }
 
 function V() {
-  return R.updateAsync("userContent", e => {
+  return w.updateAsync("userContent", e => {
     let t = new Uint8Array;
-    for (let n of f.V_)(0, f.O2)(n) ? t = (0, h.GV)(t, n) : e.recurringDismissibleContentStates[n] = (0, p.F8)(n);
+    for (let n of f.V_)(0, f.O2)(n) ? t = (0, m.GV)(t, n) : e.recurringDismissibleContentStates[n] = (0, p.F8)(n);
     e.dismissedContents = t
   }, O.fy.INFREQUENT_USER_ACTION)
 }

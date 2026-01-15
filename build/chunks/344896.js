@@ -36,10 +36,10 @@ function l(e) {
     success: false,
     error: (0, o.al)(t)
   };
-  let m = n.length > 1 ? {
+  let h = n.length > 1 ? {
       type: "text",
       text: f
     } : n[0],
-    h = a.Z[t.type](m, t, c, l, d);
-  return h.success || null != h.error || (h.error = (0, o.al)(t)), h
+    m = a.Z[t.type](h, t, c, l, d);
+  return m.success || null != m.error || (m.error = (0, o.al)(t)), m
 }

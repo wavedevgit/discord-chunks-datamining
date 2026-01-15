@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   return ({
     [u.h7.AUDIO_INPUT]: {
       setDevice: o.Z.setInputDevice,
@@ -89,12 +89,12 @@ function g(e) {
     setDevice: O,
     getLabel: v,
     getLocation: S
-  } = h(n), [I, T] = i.useState(_), C = S(o[o.length - 1]), [A, N] = (0, l.Ls)(n, {
+  } = m(n), [I, T] = i.useState(_), C = S(o[o.length - 1]), [A, N] = (0, l.Ls)(n, {
     location: C
   }), P = I ? A.concat(N) : A, {
-    id: R,
-    name: w
-  } = (0, l.p6)(n), D = null != g ? g : R, x = i.useMemo(() => A.concat(N).find(e => {
+    id: w,
+    name: R
+  } = (0, l.p6)(n), D = null != g ? g : w, x = i.useMemo(() => A.concat(N).find(e => {
     let {
       id: t
     } = e;
@@ -138,13 +138,13 @@ function g(e) {
       })
     }
   }), M = !I && (null == N ? true : N.length) > 0;
-  return u ? (0, r.jsxs)(a.sNh, m(p({
+  return u ? (0, r.jsxs)(a.sNh, h(p({
     id: "".concat(n, "-devices"),
     label: v(),
-    subtext: null != (t = null == x ? true : x.name) ? t : w
+    subtext: null != (t = null == x ? true : x.name) ? t : R
   }, b), {
     children: [L, M && j]
-  })) : (0, r.jsxs)(a.kSQ, m(p({
+  })) : (0, r.jsxs)(a.kSQ, h(p({
     label: v()
   }, E), {
     children: [L, M && j]

@@ -32,7 +32,7 @@ let E = function(e) {
       className: g.guildInfoContainer,
       children: (0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
-        children: h.intl.string(h.t["6Kwwuo"])
+        children: m.intl.string(m.t["6Kwwuo"])
       })
     })
   }) : (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ let E = function(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: h.intl.format(h.t["pob/cL"], {
+          children: m.intl.format(m.t["pob/cL"], {
             subscriptions: b
           })
         }), (0, r.jsx)("div", {
@@ -70,23 +70,23 @@ let E = function(e) {
     }), i ? (0, r.jsx)(d.Z, {
       guild: E,
       analyticsLocation: {
-        page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
-        section: m.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-        object: m.qAy.BUTTON_CTA,
-        objectType: m.AnalyticsObjectTypes.BUY
+        page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
+        section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+        object: h.qAy.BUTTON_CTA,
+        objectType: h.AnalyticsObjectTypes.BUY
       },
       pauseAnimation: true,
       size: s.zx.Sizes.MEDIUM,
       color: s.zx.Colors.PRIMARY,
-      buttonText: h.intl.string(h.t.aBHecF)
+      buttonText: m.intl.string(m.t.aBHecF)
     }) : (0, r.jsx)(l.Button, {
       variant: "secondary",
-      text: h.intl.string(h.t.KLOhbO),
+      text: m.intl.string(m.t.KLOhbO),
       onClick: () => {
         (0, u.f)({
           guildId: E.id,
           location: {
-            section: m.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+            section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
           }
         })
       }

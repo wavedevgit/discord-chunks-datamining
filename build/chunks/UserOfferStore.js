@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -121,7 +121,7 @@ function P() {
   !(0, u.I5)(e) && Object.keys(b.userDiscountOffers).length > 0 && (0, s.Tf)("UserOfferStore", true)
 }
 
-function R() {
+function w() {
   var e;
   let t = null == (e = l.default.getCurrentUser()) ? true : e.id;
   if (null == t) returnfalse;
@@ -132,9 +132,9 @@ function R() {
   }
   returnfalse
 }
-class w extends(r = Chunk442837.ZP.PersistedStore) {
+class R extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : E, this.waitFor(c.Z, o.Z, d.Z, l.default), this.syncWith([l.default], A), this.syncWith([d.Z], N), this.syncWith([o.Z], R)
+    b = null != e ? e : E, this.waitFor(c.Z, o.Z, d.Z, l.default), this.syncWith([l.default], A), this.syncWith([d.Z], N), this.syncWith([o.Z], w)
   }
   getUserTrialOffer(e) {
     if (null !== e) return b.userTrialOffers[e]
@@ -210,19 +210,19 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
     return b.lastFetchSuccessful
   }
 }
-p(w, "displayName", "UserOfferStore"), p(w, "persistKey", "UserOfferStore"), p(w, "migrations", [e => {
+p(R, "displayName", "UserOfferStore"), p(R, "persistKey", "UserOfferStore"), p(R, "migrations", [e => {
   let t = null == e ? true : e.userDiscounts;
-  if (null != t) return h(_({}, e), {
+  if (null != t) return m(_({}, e), {
     userDiscountOffers: t
   })
 }, e => {
   if (null != e) return Object.hasOwn(e, "userAnnualOfferLastFetchedAtDate") && delete e.userAnnualOfferLastFetchedAtDate, e
 }, e => {
-  if (null != e) return (null == e ? true : e.isFetching) == null ? h(_({}, e), {
+  if (null != e) return (null == e ? true : e.isFetching) == null ? m(_({}, e), {
     isFetching: false
   }) : e
 }]);
-let D = new w(Chunk570140.Z, {
+let D = new R(Chunk570140.Z, {
   BILLING_USER_OFFER_FETCH_START: y,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: O,
   BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: I,

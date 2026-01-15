@@ -16,6 +16,6 @@ let a = (0, Chunk509613.wf)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
   o = (0, Chunk509613.m7)(Chunk313789.n.DEVELOPER_OPTIONS_SIDEBAR_ITEM, {
     useTitle: () => "Developer Options",
     getLegacySearchKey: () => r.s6.DEVELOPER_OPTIONS,
-    icon: Chunk657707.Che,
+    icon: Chunk657707.ScienceIcon,
     buildLayout: () => [a]
   })

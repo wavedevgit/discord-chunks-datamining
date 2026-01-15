@@ -6,8 +6,8 @@ require.d(exports, {
   FN: () => O,
   NE: () => d,
   NO: () => f,
-  Ni: () => w,
-  Oq: () => R,
+  Ni: () => R,
+  Oq: () => w,
   RF: () => I,
   Un: () => v,
   X: () => E,
@@ -19,13 +19,13 @@ require.d(exports, {
   dr: () => A,
   fY: () => b,
   iU: () => u,
-  kk: () => h,
+  kk: () => m,
   l7: () => y,
   qm: () => _,
   rZ: () => M,
   t9: () => j,
   yZ: () => C,
-  yx: () => m,
+  yx: () => h,
   zz: () => S
 }), require("./953529.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var Chunk348327 = require("./348327.js"),
@@ -56,8 +56,8 @@ let u = 100,
   f = 100,
   p = 15,
   _ = 50,
-  m = 10,
-  h = 100,
+  h = 10,
+  m = 100,
   g = 4,
   E = 1,
   b = 13;
@@ -176,11 +176,11 @@ function P(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return null == e || null == e.id && null == e.name
 }
-let w = new Set([Chunk981631.ABu.PLAYSTATION_STAGING, Chunk981631.ABu.CONTACTS, Chunk981631.ABu.DOMAIN, Chunk981631.ABu.TWITTER_LEGACY, Chunk981631.ABu.MASTODON, Chunk981631.ABu.INSTAGRAM, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.SKYPE]),
-  D = Object.values(Chunk981631.ABu).filter(e => !w.has(e));
+let R = new Set([Chunk981631.ABu.PLAYSTATION_STAGING, Chunk981631.ABu.CONTACTS, Chunk981631.ABu.DOMAIN, Chunk981631.ABu.TWITTER_LEGACY, Chunk981631.ABu.MASTODON, Chunk981631.ABu.INSTAGRAM, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.SKYPE]),
+  D = Object.values(Chunk981631.ABu).filter(e => !R.has(e));
 
 function x(e) {
   return 0 === e.connection_type ? "app:".concat(e.application_id) : "provider:".concat(e.provider_id)
@@ -199,7 +199,7 @@ function L(e) {
 
 function j(e) {
   let t = [];
-  return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : D.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > h && t.push("Description must be ".concat(h, " characters or less"))), t
+  return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : D.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > m && t.push("Description must be ".concat(m, " characters or less"))), t
 }
 
 function M(e) {

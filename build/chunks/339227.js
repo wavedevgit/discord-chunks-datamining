@@ -253,7 +253,7 @@ function P(e) {
     originalMatch: e
   }
 }
-let R = {
+let w = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -281,7 +281,7 @@ let R = {
     codeBlockSyntax: {
       order: Chunk159635.defaultRules.inlineCode.order - .1,
       match: e => /^(```)([a-z0-9_+\-.#]+$)?/.exec(e),
-      parse: e => null != e[2] && "" !== e[2] && m.default.isKnownLanguage(e[2]) ? [{
+      parse: e => null != e[2] && "" !== e[2] && h.default.isKnownLanguage(e[2]) ? [{
         type: "codeBlockSyntax",
         content: e[1],
         originalMatch: e
@@ -296,9 +296,9 @@ let R = {
       }
     }
   },
-  w = /(-# +)/,
-  D = (0, Chunk364458.Z)([C, R]),
-  x = (0, Chunk364458.Z)([A, R]),
+  R = /(-# +)/,
+  D = (0, Chunk364458.Z)([C, w]),
+  x = (0, Chunk364458.Z)([A, w]),
   L = Chunk25209._p(D),
   j = Chunk25209._p(x),
   M = {
@@ -479,7 +479,7 @@ function B(e, t, n, r, a) {
         }
       });
     case "timestamp":
-      let d = h.Z.getConfig({
+      let d = m.Z.getConfig({
         location: "flattenMarkdown"
       }).enabled;
       if (g.Z.getCurrentConfig({
@@ -496,7 +496,7 @@ function B(e, t, n, r, a) {
       });
       return H(e, t, l[0], r, a);
     case "timestampMentionInput":
-      if (h.Z.getConfig({
+      if (m.Z.getConfig({
           location: "flattenMarkdown-input"
         }).enabled) return W({
         result: e,
@@ -544,7 +544,7 @@ function V(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: w.exec(r.input)[1],
+    before: R.exec(r.input)[1],
     after: ""
   };
   let i = I["link" === t ? "url" : t];

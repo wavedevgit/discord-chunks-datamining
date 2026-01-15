@@ -74,8 +74,8 @@ let u = {
         rightTitleDescriber: f,
         rightPrimaryText: p,
         rightSubtext: _,
-        rightShowSubtext: m,
-        rightSubtextStrikethrough: h
+        rightShowSubtext: h,
+        rightSubtextStrikethrough: m
       } = e, [g, E] = i.useState(0);
       return (0, r.jsxs)("div", {
         className: c.verticalContainerCentered,
@@ -104,8 +104,8 @@ let u = {
             }),
             titleDescriber: f,
             primaryText: p,
-            subtext: m ? (0, r.jsx)(o.zl, {
-              strikethrough: h,
+            subtext: h ? (0, r.jsx)(o.zl, {
+              strikethrough: m,
               price: _
             }) : true
           }]

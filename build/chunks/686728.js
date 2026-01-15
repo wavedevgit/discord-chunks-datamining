@@ -42,12 +42,12 @@ function _(e, t, n) {
   let a = e.getInt8(t + u.CAMERA_ORIENTATION);
   i.CameraOrientation = {
     value: a,
-    description: m(a)
+    description: h(a)
   };
   let o = e.getInt16(t + u.ROLL_ANGLE, n === r.Z.LITTLE_ENDIAN);
   i.RollAngle = {
     value: o,
-    description: h(o)
+    description: m(o)
   };
   let s = e.getInt16(t + u.PITCH_ANGLE, n === r.Z.LITTLE_ENDIAN);
   return i.PitchAngle = {
@@ -56,11 +56,11 @@ function _(e, t, n) {
   }, i
 }
 
-function m(e) {
+function h(e) {
   return 0 === e ? "Horizontal (normal)" : 1 === e ? "Rotate 270 CW" : 2 === e ? "Rotate 180" : 3 === e ? "Rotate 90 CW" : 4 === e ? "Upwards" : 5 === e ? "Downwards" : "Unknown"
 }
 
-function h(e) {
+function m(e) {
   return "" + false * e
 }
 

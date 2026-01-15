@@ -36,14 +36,14 @@ function _(e, t) {
   return "Could not find contentEditable parent of node"
 }
 
-function m(e) {
+function h(e) {
   return null === e.nodeValue ? e.childNodes.length : e.nodeValue.length
 }
 
-function h(e, t, n, r) {
+function m(e, t, n, r) {
   var a = s();
   if (e.extend && o(a, t)) {
-    n > m(t) && i.logSelectionStateFailure({
+    n > h(t) && i.logSelectionStateFailure({
       anonymizedDom: _(t),
       extraParams: JSON.stringify({
         offset: n
@@ -82,7 +82,7 @@ function h(e, t, n, r) {
 
 function g(e, t, n, a) {
   var o = l(t).createRange();
-  if (n > m(t) && (i.logSelectionStateFailure({
+  if (n > h(t) && (i.logSelectionStateFailure({
       anonymizedDom: _(t),
       extraParams: JSON.stringify({
         offset: n
@@ -104,23 +104,23 @@ module.exports = {
         p = e.getIsBackward();
       if (!s.extend && p) {
         var _ = c,
-          m = u;
-        c = d, u = f, d = _, f = m, p = false
+          h = u;
+        c = d, u = f, d = _, f = h, p = false
       }
       var E = c === n && r <= u && i >= u,
         b = d === n && r <= f && i >= f;
       if (E && b) {
-        s.removeAllRanges(), g(s, t, u - r, e), h(s, t, f - r, e);
+        s.removeAllRanges(), g(s, t, u - r, e), m(s, t, f - r, e);
         return
       }
       if (p) {
         if (b && (s.removeAllRanges(), g(s, t, f - r, e)), E) {
           var y = s.focusNode,
             O = s.focusOffset;
-          s.removeAllRanges(), g(s, t, u - r, e), h(s, y, O, e)
+          s.removeAllRanges(), g(s, t, u - r, e), m(s, y, O, e)
         }
-      } else E && (s.removeAllRanges(), g(s, t, u - r, e)), b && h(s, t, f - r, e)
+      } else E && (s.removeAllRanges(), g(s, t, u - r, e)), b && m(s, t, f - r, e)
     }
   },
-  addFocusToSelection: h
+  addFocusToSelection: m
 }

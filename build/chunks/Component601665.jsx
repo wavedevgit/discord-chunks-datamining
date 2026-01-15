@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk155493 = require("./155493.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,14 +41,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function D(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: R,
+    guildId: w,
     channelId: D,
     messageId: x,
     roleId: L,
@@ -74,18 +74,18 @@ function D(e) {
   } = (0, l.ZP)([...G, s.Z.USER_PROFILE_POPOUT]), V = (0, d.Aq)(), H = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
-    guildId: R,
+    guildId: w,
     channelId: D,
     messageId: x,
     roleId: L
-  }), Y = (0, h.ZP)(t.id, R), W = (0, a.e7)([f.Z], () => null != R ? f.Z.getGuild(R) : null), K = i.useRef(null), {
+  }), Y = (0, m.ZP)(t.id, w), W = (0, a.e7)([f.Z], () => null != w ? f.Z.getGuild(w) : null), K = i.useRef(null), {
     isHoveringOrFocusing: z
   } = (0, u.Z)(K);
   i.useEffect(() => {
     null == k || k(null == K ? true : K.current)
   }, [K, k]);
   let q = e => {
-      null == M || M(), V.dispatch(C.CkL.POPOUT_CLOSE), (0, g.openUserProfileModal)(w({
+      null == M || M(), V.dispatch(C.CkL.POPOUT_CLOSE), (0, g.openUserProfileModal)(R({
         sourceAnalyticsLocations: B,
         hideRestrictedProfile: true
       }, H, e))
@@ -94,7 +94,7 @@ function D(e) {
       id: "view-profile",
       label: N.intl.string(N.t["+Xp3hq"]),
       action: () => {
-        q(), (0, m.pQ)(w({
+        q(), (0, h.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: B
         }, H))
@@ -102,7 +102,7 @@ function D(e) {
     }),
     X = Z ? "div" : o.VqE,
     J = (0, c.Dt)(),
-    $ = p.ZP.useName(R, D, t);
+    $ = p.ZP.useName(w, D, t);
   return (0, r.jsx)(l.Gt, {
     value: B,
     children: (0, r.jsx)(_.Mt, {
@@ -129,7 +129,7 @@ function D(e) {
           children: [(0, r.jsx)(v.Z, {
             children: (0, r.jsx)(O.Z, {
               user: t,
-              guildId: R,
+              guildId: w,
               viewProfileItem: Q()
             })
           }), (0, r.jsxs)("div", {
@@ -137,12 +137,12 @@ function D(e) {
             children: [(0, r.jsx)(b.Z, {
               user: t,
               displayProfile: Y,
-              guildId: R,
+              guildId: w,
               themeType: A.l.POPOUT
             }), (0, r.jsx)(E.Z, {
               user: t,
               displayProfile: Y,
-              guildId: R,
+              guildId: w,
               channelId: D,
               themeType: A.l.POPOUT,
               onOpenProfile: U ? true : q
@@ -163,7 +163,7 @@ function D(e) {
             onClose: M
           }), (0, r.jsx)(T.Z, {
             user: t,
-            guildId: R,
+            guildId: w,
             channelId: D,
             onClose: M,
             disableAutoFocus: Z

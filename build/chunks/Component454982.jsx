@@ -2,7 +2,7 @@
 /** chunk id: 454982, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk803053 = require("./803053.js");
 
-function m(e) {
+function h(e) {
   let {
     onClose: t,
     transitionState: n
@@ -48,29 +48,29 @@ function m(e) {
     children: i()
   })
 }
-let h = function(e) {
+let m = function(e) {
   let {
     onClose: t,
     onClaim: n,
-    code: h,
+    code: m,
     outboundPromotion: g,
     transitionState: E
   } = e, [b, y] = i.useState(null), O = (0, d.Dt)(), {
     analyticsLocations: v
   } = (0, u.ZP)(c.Z.USER_SETTINGS_GIFT_INVENTORY);
   if (i.useEffect(() => {
-      null == h && (0, f.A2)({
+      null == m && (0, f.A2)({
         promotionId: g.id,
         analyticsLocations: v
       }).then(e => n(e)).catch(e => {
         var t;
         return y(null == e || null == (t = e.body) ? true : t.code)
       })
-    }, [h, g.id, n, v]), null != b) return (0, r.jsx)(m, {
+    }, [m, g.id, n, v]), null != b) return (0, r.jsx)(h, {
     onClose: t,
     transitionState: E
   });
-  if (null == h) return (0, r.jsx)(s.$jN, {
+  if (null == m) return (0, r.jsx)(s.$jN, {
     className: _.loading
   });
   let S = () => (0, r.jsxs)("div", {
@@ -99,7 +99,7 @@ let h = function(e) {
       text: p.intl.string(p.t["+zx47d"]),
       variant: "primary",
       onClick: () => {
-        let e = (0, f.BU)(h, g);
+        let e = (0, f.BU)(m, g);
         window.open(e, "_blank")
       }
     }],
@@ -112,7 +112,7 @@ let h = function(e) {
         label: p.intl.string(p.t.s9LFQh),
         helperText: p.intl.string(p.t["F+nFTZ"]),
         children: (0, r.jsx)(l.Z, {
-          value: h,
+          value: m,
           buttonColor: o.zx.Colors.BRAND,
           buttonLook: o.zx.Looks.FILLED,
           delay: 1e3

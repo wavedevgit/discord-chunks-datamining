@@ -5,14 +5,14 @@ require.d(exports, {
   $B: () => k,
   AW: () => P,
   EN: () => D,
-  F0: () => h,
+  F0: () => m,
   LX: () => N,
   TH: () => j,
   UO: () => M,
   k6: () => L,
   l_: () => S,
-  rs: () => w,
-  s6: () => m
+  rs: () => R,
+  s6: () => h
 });
 var Chunk282253 = require("./282253.js"),
   Chunk473749 = require("./473749.js");
@@ -31,11 +31,11 @@ var Chunk791819 = require("./791819.js"),
     var t = (0, o.Z)();
     return t.displayName = e, t
   }("Router-History"),
-  m = function(e) {
+  h = function(e) {
     var t = (0, o.Z)();
     return t.displayName = e, t
   }("Router"),
-  h = function(e) {
+  m = function(e) {
     function t(t) {
       var n;
       return (n = e.call(this, t) || this).state = {
@@ -61,7 +61,7 @@ var Chunk791819 = require("./791819.js"),
     }, n.componentWillUnmount = function() {
       this.unlisten && this.unlisten()
     }, n.render = function() {
-      return i.createElement(m.Provider, {
+      return i.createElement(h.Provider, {
         value: {
           history: this.props.history,
           location: this.state.location,
@@ -111,7 +111,7 @@ function S(e) {
     n = e.to,
     r = e.push,
     o = true !== r && r;
-  return i.createElement(m.Consumer, null, function(e) {
+  return i.createElement(h.Consumer, null, function(e) {
     e || (0, s.Z)(false);
     var r = e.history,
       c = e.staticContext,
@@ -192,7 +192,7 @@ var P = function(e) {
   }
   return (0, r.Z)(t, e), t.prototype.render = function() {
     var e = this;
-    return i.createElement(m.Consumer, null, function(t) {
+    return i.createElement(h.Consumer, null, function(t) {
       t || (0, s.Z)(false);
       var n = e.props.location || t.location,
         r = e.props.computedMatch ? e.props.computedMatch : e.props.path ? N(n.pathname, e.props) : t.match,
@@ -204,24 +204,24 @@ var P = function(e) {
         c = o.children,
         u = o.component,
         d = o.render;
-      return Array.isArray(c) && 0 === c.length && (c = null), i.createElement(m.Provider, {
+      return Array.isArray(c) && 0 === c.length && (c = null), i.createElement(h.Provider, {
         value: a
       }, a.match ? c ? "function" == typeof c ? c(a) : c : u ? i.createElement(u, a) : d ? d(a) : null : "function" == typeof c ? c(a) : null)
     })
   }, t
 }(Chunk473749.Component);
 
-function R(e) {
+function w(e) {
   return "/" === e.charAt(0) ? e : "/" + e
 }
 Chunk473749.Component;
-var w = function(e) {
+var R = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
   return (0, r.Z)(t, e), t.prototype.render = function() {
     var e = this;
-    return i.createElement(m.Consumer, null, function(t) {
+    return i.createElement(h.Consumer, null, function(t) {
       t || (0, s.Z)(false);
       var n, r, a = e.props.location || t.location;
       return i.Children.forEach(e.props.children, function(e) {
@@ -245,7 +245,7 @@ function D(e) {
     n = function(t) {
       var n = t.wrappedComponentRef,
         r = (0, d.Z)(t, ["wrappedComponentRef"]);
-      return i.createElement(m.Consumer, null, function(t) {
+      return i.createElement(h.Consumer, null, function(t) {
         return t || (0, s.Z)(false), i.createElement(e, (0, l.Z)({}, r, t, {
           ref: n
         }))
@@ -260,16 +260,16 @@ function L() {
 }
 
 function j() {
-  return x(m).location
+  return x(h).location
 }
 
 function M() {
-  var e = x(m).match;
+  var e = x(h).match;
   return e ? e.params : {}
 }
 
 function k(e) {
   var t = j(),
-    n = x(m).match;
+    n = x(h).match;
   return e ? N(t.pathname, e) : n
 }

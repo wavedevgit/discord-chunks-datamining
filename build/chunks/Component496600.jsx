@@ -64,13 +64,13 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -99,33 +99,33 @@ function L(e) {
     isOpen: o,
     setIsOpen: l,
     options: c
-  } = e, u = w(e, ["children", "isCollapsible", "maxOptionsVisible", "isOpen", "setIsOpen", "options"]);
+  } = e, u = R(e, ["children", "isCollapsible", "maxOptionsVisible", "isOpen", "setIsOpen", "options"]);
   let {
     selectionMode: d,
     disabled: f,
     readOnly: p,
     closeOnSelect: _,
-    formatOption: m,
-    onSelectionChange: h,
+    formatOption: h,
+    onSelectionChange: m,
     value: g,
     customMatchSorter: E,
     matchSorterOptions: y,
     required: v
-  } = u, S = i.useId(), I = i.useRef(null), [T, C] = i.useState(null), [A, P] = i.useState(false), [R, D] = i.useState(""), [L, j] = i.useState(""), {
+  } = u, S = i.useId(), I = i.useRef(null), [T, C] = i.useState(null), [A, P] = i.useState(false), [w, D] = i.useState(""), [L, j] = i.useState(""), {
     options: M,
     loading: k,
     onQueryChange: U
   } = (0, O.U)({
     active: null == o || o,
     options: c,
-    renderOption: m
+    renderOption: h
   }), G = i.useCallback((e, t) => {
     j(e), D(null != t ? t : e)
   }, []);
   i.useEffect(() => {
-    U(R)
-  }, [U, R]);
-  let Z = i.useMemo(() => "" === R ? M : null != E ? E(M, R) : (0, s.Lu)(M, R, null != y ? y : x), [M, R, E, y]),
+    U(w)
+  }, [U, w]);
+  let Z = i.useMemo(() => "" === w ? M : null != E ? E(M, w) : (0, s.Lu)(M, w, null != y ? y : x), [M, w, E, y]),
     F = i.useRef(true),
     B = i.useMemo(() => ("single" === d ? F.current = M.find(e => e.value === g) : F.current = true, null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
   i.useEffect(() => {
@@ -146,14 +146,14 @@ function L(e) {
     H = i.useCallback(e => {
       if (V || v && 0 === e.length) return;
       let t = Array.from(e);
-      if ("multiple" === d && t.length < 1) h([]);
-      else if ("multiple" === d) h(t.map(e => e.value));
+      if ("multiple" === d && t.length < 1) m([]);
+      else if ("multiple" === d) m(t.map(e => e.value));
       else {
         var n, r;
-        h(null != (r = null == (n = t[0]) ? true : n.value) ? r : null)
+        m(null != (r = null == (n = t[0]) ? true : n.value) ? r : null)
       }
       _ && o && (null == l || l(false)), P(false)
-    }, [V, d, h, _, o, l, v]),
+    }, [V, d, m, _, o, l, v]),
     Y = B.length > 0;
   return (0, r.jsx)(b.Z.Provider, {
     value: N({
@@ -185,17 +185,17 @@ function L(e) {
 function j(e) {
   var {
     ref: t
-  } = e, n = w(e, ["ref"]);
+  } = e, n = R(e, ["ref"]);
   let {
     fieldProps: a,
     props: o
-  } = (0, c.X)(n), s = (0, h.dQu)(_.Z.modules.select.MAX_WIDTH), l = i.useMemo(() => ({
+  } = (0, c.X)(n), s = (0, m.dQu)(_.Z.modules.select.MAX_WIDTH), l = i.useMemo(() => ({
     horizontalControlColumnWidth: "minmax(".concat(s, ", auto)")
   }), [s]);
-  return (0, r.jsx)(c.g, R(N({}, a), {
+  return (0, r.jsx)(c.g, w(N({}, a), {
     "data-mana-component": "combobox",
     layoutConfig: l,
-    children: (0, r.jsx)(M, R(N({}, o), {
+    children: (0, r.jsx)(M, w(N({}, o), {
       ref: t
     }))
   }))
@@ -211,11 +211,11 @@ function M(e) {
     form: d,
     showChevronButton: f = false,
     onQueryChange: _,
-    onFocus: h,
+    onFocus: m,
     onBlur: O,
     onKeyDown: A,
     wrapTags: P,
-    ref: w
+    ref: R
   } = e, D = i.useRef(null), x = i.useRef(null), L = i.useRef(null), j = i.useContext(u.z), {
     activeDescendantIndex: M,
     setActiveDescendantIndex: k,
@@ -249,8 +249,8 @@ function M(e) {
     "multiple" === U ? X([]) : X(null), ei(""), null == (e = x.current) || e.focus()
   }, [X, U, ei]), ed = i.useCallback(e => {
     var t, n, r;
-    eo(true), null == h || h(e), null == (t = x.current) || t.setSelectionRange(null != (n = null == er ? true : er.length) ? n : 0, null != (r = null == er ? true : er.length) ? r : 0)
-  }, [h, eo, er]), ef = i.useCallback(() => {
+    eo(true), null == m || m(e), null == (t = x.current) || t.setSelectionRange(null != (n = null == er ? true : er.length) ? n : 0, null != (r = null == er ? true : er.length) ? r : 0)
+  }, [m, eo, er]), ef = i.useCallback(() => {
     K || null == $ || $(true)
   }, [$, K]), ep = i.useCallback(e => {
     var t;
@@ -269,11 +269,11 @@ function M(e) {
       var e;
       K || (null == $ || $(true), null == (e = x.current) || e.focus())
     }, [$, K]),
-    em = i.useCallback(() => {
+    eh = i.useCallback(() => {
       var e;
       null == (e = x.current) || e.select()
     }, []),
-    eh = i.useCallback(e => {
+    em = i.useCallback(e => {
       if (K) return;
       let t = Array.from(e)[0];
       Q(et.filter(e => e.id !== t))
@@ -336,8 +336,8 @@ function M(e) {
         let e = Array.from(et)[0];
         return (0, r.jsx)("div", {
           className: T.singleSelectOption,
-          children: (0, r.jsx)(E.W, R(N({}, e), {
-            onClick: em,
+          children: (0, r.jsx)(E.W, w(N({}, e), {
+            onClick: eh,
             "aria-hidden": true,
             inInput: true
           }))
@@ -359,10 +359,10 @@ function M(e) {
         label: I.intl.string(S.default.VMNfsY),
         items: e,
         layout: "inline",
-        onRemove: eh
+        onRemove: em
       })
-    }, [U, G, em, eh, ea, et, s]),
-    ey = (0, l.Z)(Y, w);
+    }, [U, G, eh, em, ea, et, s]),
+    ey = (0, l.Z)(Y, R);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.q, {
       ref: ey,
@@ -388,7 +388,7 @@ function M(e) {
           className: T.comboBoxInputContainer,
           children: [eb, (0, r.jsx)(p.tEY, {
             ringTarget: Y,
-            children: (0, r.jsx)(m.I, {
+            children: (0, r.jsx)(h.I, {
               ref: x,
               id: t,
               className: o()(C.input, T.comboBoxInput, {
@@ -443,8 +443,8 @@ function k(e) {
     activeDescendantIndex: c,
     selectionMode: u,
     listBoxId: _,
-    required: m,
-    disabled: h,
+    required: h,
+    disabled: m,
     handleSelectionChange: g,
     query: E,
     loading: y
@@ -453,8 +453,8 @@ function k(e) {
   } = i.useContext(p.KJG);
   return (0, r.jsx)(d.w, {
     id: _,
-    required: m,
-    disabled: h,
+    required: h,
+    disabled: m,
     items: null != o ? o : l,
     tabIndex: false,
     selectionMode: u,

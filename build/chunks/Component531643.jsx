@@ -27,7 +27,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,47 +40,47 @@ function m(e) {
   return e
 }
 
-function h(e) {
+function m(e) {
   let {
     title: t,
     help: n,
     showPremiumUpsell: i,
     transitionState: _,
-    fileSize: m,
-    onClose: h
+    fileSize: h,
+    onClose: m
   } = e, g = (0, s.Z)({
     location: "UploadError"
   }), E = () => {
-    (0, o.Z)(), h(), d.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
+    (0, o.Z)(), m(), d.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: f.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: f.qAy.NAVIGATION_LINK
     }), (0, u.uL)(f.Z5c.APPLICATION_STORE)
   };
   return i ? g ? (0, r.jsx)(c.Z, {
     transitionState: _,
-    onClose: h,
+    onClose: m,
     handleLearnMore: E
   }) : (0, r.jsx)(l.Z, {
     transitionState: _,
-    onClose: h,
+    onClose: m,
     handleLearnMore: E,
-    fileSize: m
+    fileSize: h
   }) : (0, r.jsx)(a.u_l, {
     title: t,
     subtitle: n,
     transitionState: _,
     actions: [{
       text: p.intl.string(p.t["NX+WJN"]),
-      onClick: h,
+      onClick: m,
       variant: "primary"
     }],
-    onClose: h
+    onClose: m
   })
 }
 let g = "UPLOAD_ERROR_MODAL_KEY";
 
 function E(e) {
-  (0, i.openModal)(t => (0, r.jsx)(h, m({}, t, e)), {
+  (0, i.openModal)(t => (0, r.jsx)(m, h({}, t, e)), {
     modalKey: g
   })
 }

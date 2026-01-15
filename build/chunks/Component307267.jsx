@@ -77,7 +77,7 @@ function p(e) {
   } = (0, a.ZF)();
   return (0, r.jsx)(o.Y, u(l({}, s), {
     "aria-label": null != n ? n : c.CLOSE_BUTTON_LABEL,
-    icon: i.Uz9,
+    icon: i.XLargeIcon,
     variant: t,
     text: true,
     fullWidth: false

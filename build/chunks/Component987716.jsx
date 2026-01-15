@@ -91,7 +91,7 @@ let C = e => {
     soundEffect: A,
     setEmojiConfetti: N,
     setSoundEffect: P
-  } = (0, c.wD)(), [R, w] = i.useState(false), D = i.useRef(null), x = (0, s.Jb)({
+  } = (0, c.wD)(), [w, R] = i.useState(false), D = i.useRef(null), x = (0, s.Jb)({
     orientation: "horizontal"
   }), {
     ref: L
@@ -103,7 +103,7 @@ let C = e => {
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
       className: o()(b.giftMainAnimation, n),
-      children: [null != v ? (0, r.jsx)(m.Z, {
+      children: [null != v ? (0, r.jsx)(h.Z, {
         giftStyle: v,
         defaultAnimationState: f.SR.ACTION,
         idleAnimationState: f.SR.LOOP,
@@ -116,13 +116,13 @@ let C = e => {
         children: [(0, r.jsx)(u.Z, {
           sound: A,
           onSelect: F
-        }), (0, r.jsx)(h.Z, {
+        }), (0, r.jsx)(m.Z, {
           setEmojiConfetti: N,
           emojiConfetti: null == C ? true : C
         })]
       })]
     }), (0, r.jsx)("div", S(O({
-      tabIndex: null != v || R ? true : 0,
+      tabIndex: null != v || w ? true : 0,
       onFocus: e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
@@ -136,8 +136,8 @@ let C = e => {
         giftStyle: e,
         setSelectedGiftStyle: T,
         ref: 0 === t ? D : null,
-        onFocus: () => w(true),
-        onBlur: () => w(false)
+        onFocus: () => R(true),
+        onBlur: () => R(false)
       }, e))
     })), (0, r.jsx)("div", {
       className: b.__invalid_selectPlanDivider

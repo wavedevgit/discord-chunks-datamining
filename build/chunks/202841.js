@@ -24,7 +24,7 @@ let E = (0, Chunk509613.wf)(Chunk313789.n.DATA_AND_PRIVACY_PANEL, {
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.DATA_AND_PRIVACY_SIDEBAR_ITEM, {
     useTitle: () => c.intl.string(c.t.OAuOHD),
-    icon: Chunk657707.tQf,
+    icon: Chunk657707.ShieldLockIcon,
     getLegacySearchKey: () => (0, u.Gl)("DataAndPrivacyPanel") ? true : S.s6.DATA_PRIVACY,
     buildLayout: () => [(0, u.Gl)("DataAndPrivacyPanel") ? d : E]
   })

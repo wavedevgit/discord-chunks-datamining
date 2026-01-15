@@ -2,7 +2,7 @@
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  FT: () => J,
+  FT: () => X,
   L3: () => q,
   ZP: () => Q
 }), require("./388685.js"), require("./583741.js");
@@ -236,7 +236,7 @@ let V = d().throttle(Chunk80932.OQ, 1e3),
         title: F.intl.string(F.t.sMOuuS),
         maxSlots: (0, D.y4)(s),
         emojiCount: i.length,
-        children: (0, r.jsx)(J, {
+        children: (0, r.jsx)(X, {
           emojis: i,
           guild: s,
           onEdit: o,
@@ -246,7 +246,7 @@ let V = d().throttle(Chunk80932.OQ, 1e3),
         title: F.intl.string(F.t.wWjQye),
         maxSlots: (0, D.y4)(s),
         emojiCount: l.length,
-        children: (0, r.jsx)(J, {
+        children: (0, r.jsx)(X, {
           emojis: l,
           guild: s,
           onEdit: o,
@@ -270,7 +270,7 @@ let V = d().throttle(Chunk80932.OQ, 1e3),
       children: l
     })
   },
-  J = e => {
+  X = e => {
     let {
       emojis: t,
       guild: n,
@@ -333,7 +333,7 @@ let V = d().throttle(Chunk80932.OQ, 1e3),
       })]
     })
   },
-  X = e => {
+  J = e => {
     let t, n, i, {
         staticEmojiCount: l,
         animatedEmojiCount: a,
@@ -399,7 +399,7 @@ let V = d().throttle(Chunk80932.OQ, 1e3),
     }, [u, p, l.id]), i.useEffect(() => {
       if (null != m && null == K) return void q(m)
     }, [m, K]);
-    let J = i.useMemo(() => null == K ? new Set : new Set(d().differenceBy(m, K, "id").map(e => e.id)), [m, K]),
+    let X = i.useMemo(() => null == K ? new Set : new Set(d().differenceBy(m, K, "id").map(e => e.id)), [m, K]),
       Q = i.useCallback(function() {
         let {
           emoji: e
@@ -485,7 +485,7 @@ let V = d().throttle(Chunk80932.OQ, 1e3),
               count: Z
             })
           })]
-        }), (0, r.jsx)(X, {
+        }), (0, r.jsx)(J, {
           guild: l,
           staticEmojiCount: A,
           animatedEmojiCount: W
@@ -525,7 +525,7 @@ let V = d().throttle(Chunk80932.OQ, 1e3),
           onEdit: e => Q({
             emoji: e
           }),
-          newlyAddedEmojiIds: J
+          newlyAddedEmojiIds: X
         })]
       })]
     })

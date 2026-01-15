@@ -22,11 +22,11 @@ function s(e) {
   } = t, [f, p] = i.useState(false), _ = i.useCallback(() => {
     let e = d();
     e instanceof Promise && (p(true), e.finally(() => p(false)))
-  }, [d]), m = s(), h = null == l ? true : l(), g = n(), E = null == c ? true : c(), b = null == u ? true : u();
+  }, [d]), h = s(), m = null == l ? true : l(), g = n(), E = null == c ? true : c(), b = null == u ? true : u();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(a.gNt, {
-      label: m,
-      description: h,
+      label: h,
+      description: m,
       disabled: b,
       layout: "horizontal",
       children: (0, r.jsx)(a.Button, {

@@ -38,8 +38,8 @@ let v = "GameStoreReportedGames",
   A = {},
   N = null != (i = Chunk433517.K.get(v)) ? i : {},
   P = "",
-  R = null,
-  w = false,
+  w = null,
+  R = false,
   D = null,
   x = false,
   L = [],
@@ -104,7 +104,7 @@ function B() {
 }
 
 function V() {
-  r = false, w = true
+  r = false, R = true
 }
 
 function H(e) {
@@ -113,7 +113,7 @@ function H(e) {
     etag: n
   } = e;
   for (let e of (null != n && P !== n && (T.clear(), C = {}, A = {}, P = n), t)) Z(U(e));
-  r = true, R = Date.now(), w = true
+  r = true, w = Date.now(), R = true
 }
 
 function Y() {
@@ -185,16 +185,16 @@ class z extends(a = Chunk442837.ZP.PersistedStore) {
     return P
   }
   get lastFetched() {
-    return R
+    return w
   }
   get hasAttemptedFetch() {
-    return w
+    return R
   }
   get detectableGamesTtl() {
     return I
   }
   canFetchDetectableGames() {
-    returntrue !== r && (null == R || Date.now() >= R + I)
+    returntrue !== r && (null == w || Date.now() >= w + I)
   }
   canFetchExecutableBlocklist() {
     return !!d.x.getConfig({
@@ -233,7 +233,7 @@ class z extends(a = Chunk442837.ZP.PersistedStore) {
     let a = null != (r = e.exePath.split(/[/\\]/).pop()) ? r : "unknown",
       o = M.get(a),
       s = Date.now();
-    (null == o || s - o >= k) && (M.set(a, s), m.default.track(b.rMx.GAME_BLOCKLIST_TRIGGERED, {
+    (null == o || s - o >= k) && (M.set(a, s), h.default.track(b.rMx.GAME_BLOCKLIST_TRIGGERED, {
       block_type: t,
       matched_entry: n,
       game_name: null != (i = e.gameName) ? i : e.origGameName,

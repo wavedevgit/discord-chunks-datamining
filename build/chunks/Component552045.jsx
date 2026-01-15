@@ -28,7 +28,7 @@ let b = () => {
         handleTabChange: n
       } = (0, l.Z)();
     return (0, u.VM)() || t && e ? null : (0, r.jsx)("div", {
-      className: m.button,
+      className: h.button,
       children: t ? (0, r.jsx)(o.Button, {
         variant: "primary",
         text: _.intl.string(_.t.LhlgY9),
@@ -45,11 +45,11 @@ let b = () => {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, r.jsxs)("div", {
-      className: a()(m.container, h.box),
+      className: a()(h.container, m.box),
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
           children: (0, r.jsxs)("div", {
-            className: m.headerText,
+            className: h.headerText,
             children: [(0, r.jsx)(o.Heading, {
               variant: "heading-xl/medium",
               children: (0, r.jsx)(o.y5t, {
@@ -63,7 +63,7 @@ let b = () => {
           })
         }), (0, r.jsx)(b, {})]
       }), (0, r.jsx)("div", {
-        className: m.headerImage,
+        className: h.headerImage,
         children: (0, r.jsx)("img", {
           src: e ? g : E,
           alt: _.intl.string(p.default.ffg6xd)

@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -69,7 +69,7 @@ function m(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   let {
     children: t,
     messageReference: n,
@@ -109,11 +109,11 @@ function g(e) {
     content: o,
     timestamp: u,
     messageReference: d
-  } = i, f = (0, s.ZP)(i), p = t(f), _ = (null != o ? o : "").split(" ").slice(0, false).join(" "), m = c.intl.format(c.t["47CZc2"], {
+  } = i, f = (0, s.ZP)(i), p = t(f), _ = (null != o ? o : "").split(" ").slice(0, false).join(" "), h = c.intl.format(c.t["47CZc2"], {
     username: f.nick,
     usernameHook: p,
     webhookName: o,
-    webhookNameHook: (e, t) => (0, r.jsx)(h, {
+    webhookNameHook: (e, t) => (0, r.jsx)(m, {
       messageReference: d,
       guildName: _,
       children: e
@@ -123,6 +123,6 @@ function g(e) {
     icon: n(570111),
     timestamp: u,
     compact: a,
-    children: m
+    children: h
   })
 }

@@ -83,8 +83,8 @@ function C() {
 
 function A(e) {
   let t = "" !== e,
-    n = (0, o.Wu)([p.ZP, f.Z, m.Z], () => {
-      let e = m.Z.getGuildId();
+    n = (0, o.Wu)([p.ZP, f.Z, h.Z], () => {
+      let e = h.Z.getGuildId();
       if (t || null == e) return [];
       let n = [];
       for (let t of p.ZP.getVocalChannelIds(e)) {
@@ -105,7 +105,7 @@ function N(e) {
     o.current = a
   });
   let [c, d] = i.useState(null != (n = null == (t = a.params) ? true : t.channelId) ? n : true), f = i.useCallback(() => {
-    (0, s.ZDy)(async () => e => (0, r.jsx)(R, v(y({}, e), {
+    (0, s.ZDy)(async () => e => (0, r.jsx)(w, v(y({}, e), {
       onSelect: e => {
         d(e), l.Z.setKeybind(v(y({}, o.current), {
           params: {
@@ -123,7 +123,7 @@ function N(e) {
         align: u.Z.Align.STRETCH,
         children: [(0, r.jsx)("div", {
           className: E.selectedVoiceChannel,
-          children: (0, r.jsx)(w, {
+          children: (0, r.jsx)(R, {
             channelId: c
           })
         }), (0, r.jsx)(u.Z.Child, {
@@ -150,14 +150,14 @@ function P(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   let {
     transitionState: t,
     onClose: n,
     onSelect: o
   } = e, l = i.useId(), u = i.useRef(null), {
     query: p,
-    updateQuery: m,
+    updateQuery: h,
     queryResults: b
   } = (0, c.Z)({
     visible: true,
@@ -184,7 +184,7 @@ function R(e) {
     } = e, i = (() => {
       if (null != y) return y[t];
       let e = b[t];
-      if ((null == e ? true : e.type) === h.h8.VOICE_CHANNEL) return e.record
+      if ((null == e ? true : e.type) === m.h8.VOICE_CHANNEL) return e.record
     })();
     if (null == i) return null;
     let a = null != i.parent_id ? f.Z.getChannel(i.parent_id) : true,
@@ -206,7 +206,7 @@ function R(e) {
     }, i.id)
   }
 
-  function R(e) {
+  function w(e) {
     let t = e.key.toLowerCase();
     if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
       case "escape":
@@ -216,7 +216,7 @@ function R(e) {
         let e = (() => {
           if (null != y) return y[O];
           let e = b[O];
-          if ((null == e ? true : e.type) === h.h8.VOICE_CHANNEL) return e.record
+          if ((null == e ? true : e.type) === m.h8.VOICE_CHANNEL) return e.record
         })();
         null == e ? o(true) : o(e.id), n();
         break
@@ -228,13 +228,13 @@ function R(e) {
         O >= S - 1 ? v(0) : v(O + 1)
     }
   }
-  let w = (() => {
+  let R = (() => {
       if (null != y) {
         var e;
         return null == (e = y[O]) ? true : e.id
       }
       let t = b[O];
-      if ((null == t ? true : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
+      if ((null == t ? true : t.type) === m.h8.VOICE_CHANNEL) return t.record.id
     })(),
     D = S > 0 || "" === p ? {
       innerId: l,
@@ -259,13 +259,13 @@ function R(e) {
     actions: true,
     input: (0, r.jsx)(s.oil, {
       value: p,
-      onChange: m,
-      onKeyDown: R,
+      onChange: h,
+      onKeyDown: w,
       placeholder: g.intl.string(g.t.tG0r7g),
       role: "combobox",
       "aria-controls": l,
       "aria-expanded": S > 0,
-      "aria-activedescendant": S > 0 && null != w ? w : true,
+      "aria-activedescendant": S > 0 && null != R ? R : true,
       "aria-autocomplete": "list",
       spellCheck: false,
       autoFocus: true
@@ -274,7 +274,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t
   } = e, {

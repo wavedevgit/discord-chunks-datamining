@@ -43,7 +43,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -112,7 +112,7 @@ let O = () => {
     let n = i()().diff(e, "days"),
       r = t[0],
       a = 30 * r.tenureReqNumMonths - n;
-    return a <= 0 ? null : h(_({}, r), {
+    return a <= 0 ? null : m(_({}, r), {
       daysLeft: a,
       status: "upcoming"
     })
@@ -122,7 +122,7 @@ let O = () => {
       t = T(null == e ? true : e.id),
       n = v(),
       r = S();
-    return null != t ? h(_({}, t), {
+    return null != t ? m(_({}, t), {
       earnedOnDate: n,
       status: "earned"
     }) : null != r ? r : null

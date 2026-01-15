@@ -36,8 +36,8 @@ let O = function(e) {
     A = (0, f.O5)(),
     N = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
     P = i.useMemo(() => (0, p.fh)(a, p.eC.REWARD), [a]),
-    R = i.useMemo(() => (0, p.fh)(a, p.eC.REWARD_IMAGE), [a]),
-    w = i.useCallback(t => {
+    w = i.useMemo(() => (0, p.fh)(a, p.eC.REWARD_IMAGE), [a]),
+    R = i.useCallback(t => {
       var n;
       (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), A({
         questId: a.id,
@@ -61,16 +61,16 @@ let O = function(e) {
       }
       O && !x.current ? D.current.play() : !O && x.current && (D.current.currentTime = 0, D.current.pause()), x.current = O
     }
-  }, [O, P, N]), t = L ? (0, r.jsx)(m.Fl, {
+  }, [O, P, N]), t = L ? (0, r.jsx)(h.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(g.Z, {
       ref: e,
       className: y.questRewardTileAsset
     })
-  }) : T ? (0, r.jsx)(h.K, {
+  }) : T ? (0, r.jsx)(m.K, {
     showVideo: O,
-    imageAsset: null != R ? {
-      asset: R,
+    imageAsset: null != w ? {
+      asset: w,
       assetId: "QuestRewardTile_rewardTileStatic",
       className: y.imageVideoOverlay,
       alt: b.intl.string(b.t.UMclVN)
@@ -81,7 +81,7 @@ let O = function(e) {
       className: o()(y.questRewardTileAsset, y.questRewardTileAssetLazyVideo)
     },
     onLoadComplete: e.onLoadComplete
-  }) : P.isAnimated ? (0, r.jsx)(m.Fl, {
+  }) : P.isAnimated ? (0, r.jsx)(h.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: t => {
       var n;
@@ -102,7 +102,7 @@ let O = function(e) {
         })
       })
     }
-  }) : (0, r.jsx)(m.Fl, {
+  }) : (0, r.jsx)(h.Fl, {
     id: "QuestRewardTile_rewardTileStatic",
     children: t => (0, r.jsx)("img", {
       ref: t,
@@ -117,7 +117,7 @@ let O = function(e) {
     children: t
   }) : (0, r.jsxs)(c.P3F, {
     className: o()(y.questRewardTileInteractive, y.questRewardTile, y.rewardHighlight, n),
-    onClick: w,
+    onClick: R,
     style: C,
     children: [t, "text" === v && (0, r.jsx)(c.Text, {
       color: "always-white",

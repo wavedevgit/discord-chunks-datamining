@@ -131,7 +131,7 @@ let z = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       positionContainerRef: t,
       drawerRef: n,
       orientation: r
-    } = e, a = (0, d.e7)([R.ZP], () => R.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : L._j.MIN), f = i.useMemo(() => {
+    } = e, a = (0, d.e7)([w.ZP], () => w.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : L._j.MIN), f = i.useMemo(() => {
       switch (c) {
         case L._j.MIN:
           return L.Om;
@@ -142,7 +142,7 @@ let z = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       }
     }, [c]), p = i.useCallback(e => {
       let t = e >= o ? L._j.MAX : e <= L.Om ? L._j.MIN : e;
-      null == t && null != n.current && (n.current.style.width = ""), m.ZP.updatedUnsyncedSettings({
+      null == t && null != n.current && (n.current.style.width = ""), h.ZP.updatedUnsyncedSettings({
         expressionPickerWidth: t
       }), u(t)
     }, [n, o]), _ = (0, g.Z)({
@@ -174,8 +174,8 @@ function X(e) {
   var t, n, a, s;
   let {
     positionTargetRef: l,
-    hideGifFavorites: m,
-    onSelectGIF: R,
+    hideGifFavorites: h,
+    onSelectGIF: w,
     onSelectEmoji: B,
     onSelectSticker: V,
     onSelectSound: H,
@@ -198,13 +198,13 @@ function X(e) {
     windowDispatch: eu
   } = i.useContext(I.ZP), ed = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), ef = (0, T.V2)({
     location: "expression_picker"
-  }), ep = (0, d.e7)([w.Z], () => w.Z.isOpen()), e_ = null != ee, em = (0, p.useIsModalAtTop)(null != ee ? ee : ""), {
-    reorderExpressionPickerTabs: eh
+  }), ep = (0, d.e7)([R.Z], () => R.Z.isOpen()), e_ = null != ee, eh = (0, p.useIsModalAtTop)(null != ee ? ee : ""), {
+    reorderExpressionPickerTabs: em
   } = b.n.useConfig({
     location: "expression_picker"
-  }), eg = (null == (t = W.gifs) ? true : t.allowSending) && !c.tq && null != R, eE = (null == (n = W.stickers) ? true : n.allowSending) && null != V, eb = !(null == (a = W.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), ey = i.useCallback(e => {
+  }), eg = (null == (t = W.gifs) ? true : t.allowSending) && !c.tq && null != w, eE = (null == (n = W.stickers) ? true : n.allowSending) && null != V, eb = !(null == (a = W.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), ey = i.useCallback(e => {
     var t;
-    if (!e_ && (0, p.hasAnyModalOpen)() || e_ && !(em && $) || ep || e.defaultPrevented) return;
+    if (!e_ && (0, p.hasAnyModalOpen)() || e_ && !(eh && $) || ep || e.defaultPrevented) return;
     let {
       target: n
     } = e;
@@ -216,7 +216,7 @@ function X(e) {
     }(0, x._Q)();
     let r = null == (t = (0, u.uB)(e)) ? true : t.activeElement;
     (null == r || "BODY" === r.tagName) && D.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
-  }, [$, em, e_, ep]), eO = i.useCallback(() => {
+  }, [$, eh, e_, ep]), eO = i.useCallback(() => {
     (0, x._Q)()
   }, []);
   i.useLayoutEffect(() => {
@@ -235,8 +235,8 @@ function X(e) {
   }, [eI, eS]), i.useEffect(() => {
     (0, x.ql)("")
   }, []), i.useEffect(() => {
-    (!e_ && (0, p.hasAnyModalOpen)() || e_ && !em) && (0, x._Q)()
-  }, [em, e_]), i.useEffect(() => {
+    (!e_ && (0, p.hasAnyModalOpen)() || e_ && !eh) && (0, x._Q)()
+  }, [eh, e_]), i.useEffect(() => {
     if (null != ei.current && !en.current) {
       var e, t, n, r;
       es === L.X1.EMOJI ? (null == er || null == (e = er.current) ? true : e.onPickerOpen) != null && (null == er || null == (t = er.current) || t.onPickerOpen(), en.current = true) : es === L.X1.STICKER ? (null == er || null == (n = er.current) ? true : n.onPickerOpen) == null || ed || (null == er || null == (r = er.current) || r.onPickerOpen(), en.current = true) : (E.ZP.trackWithMetadata(j.rMx.EXPRESSION_PICKER_OPENED, {
@@ -250,8 +250,8 @@ function X(e) {
     eA = i.useCallback((e, t) => null == H ? true : H(e, "soundboard_picker", t), [H]),
     eN = (null == (s = W.soundmoji) ? true : s.allowSending) === true && null != H,
     eP = "left" === X ? "right" : "left",
-    eR = null != J ? J : "left" === X ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
-    ew = eg ? (0, r.jsx)(q, {
+    ew = null != J ? J : "left" === X ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
+    eR = eg ? (0, r.jsx)(q, {
       id: k._3,
       "aria-controls": k.vO,
       "aria-selected": es === L.X1.GIF,
@@ -279,10 +279,10 @@ function X(e) {
       viewType: L.X1.EMOJI,
       children: Z.intl.string(Z.t.Xu3wE3)
     });
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     section: j.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(S.W5, {
-      className: o()(F.positionLayer, eR),
+      className: o()(F.positionLayer, ew),
       targetRef: l,
       position: K,
       align: X,
@@ -322,10 +322,10 @@ function X(e) {
                   className: F.navList,
                   role: "tablist",
                   "aria-label": Z.intl.string(Z.t["2j4Vgd"]),
-                  children: [eh ? (0, r.jsxs)(r.Fragment, {
-                    children: [ex, ew, eD]
+                  children: [em ? (0, r.jsxs)(r.Fragment, {
+                    children: [ex, eR, eD]
                   }) : (0, r.jsxs)(r.Fragment, {
-                    children: [ew, eD, ex]
+                    children: [eR, eD, ex]
                   }), ef && eN && (0, r.jsx)(q, {
                     id: k.Hr,
                     "aria-controls": k.gV,
@@ -350,8 +350,8 @@ function X(e) {
                   er.current = e
                 }
               }) : null, es === L.X1.GIF && eg ? (0, r.jsx)(v.Z, {
-                onSelectGIF: R,
-                hideFavorites: m,
+                onSelectGIF: w,
+                hideFavorites: h,
                 persistSearch: true
               }) : null, es === L.X1.EMOJI ? (0, r.jsx)(O.Z, {
                 hasTabWrapper: true,

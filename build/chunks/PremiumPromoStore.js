@@ -2,7 +2,7 @@
 /** chunk id: 571474, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -26,7 +26,7 @@ let d = 10,
 function _() {
   return p !== (p = c.Z.getFriendIDs().length >= d && s.default.extractTimestamp(l.default.getId()) < Date.now() - f)
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, l.default)
   }
@@ -34,7 +34,7 @@ class m extends(r = Chunk442837.ZP.Store) {
     return p
   }
 }
-u(m, "displayName", "PremiumPromoStore");
-let h = new m(Chunk570140.Z, {
+u(h, "displayName", "PremiumPromoStore");
+let m = new h(Chunk570140.Z, {
   CONNECTION_OPEN: _
 })

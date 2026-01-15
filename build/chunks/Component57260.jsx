@@ -20,7 +20,7 @@ function f(e) {
     className: n,
     collapsibleContent: a,
     isExpanded: f
-  } = e, [p, _] = i.useState(false), [m, h] = i.useState(true), [g, E] = i.useState(false), b = null != f ? f : p, {
+  } = e, [p, _] = i.useState(false), [h, m] = i.useState(true), [g, E] = i.useState(false), b = null != f ? f : p, {
     ref: y,
     height: O = 0
   } = (0, c.ZP)(), {
@@ -30,12 +30,12 @@ function f(e) {
     height: b ? O + S : S,
     config: s.config.stiff,
     onRest: () => E(true)
-  }, m ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
+  }, h ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
     _(!p)
   }, [p, _]);
   return i.useLayoutEffect(() => {
     let e = setTimeout(() => {
-      h(false)
+      m(false)
     }, d);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)("div", {

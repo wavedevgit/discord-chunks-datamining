@@ -62,7 +62,7 @@ module.exports = function(e) {
       match: t.concat(/\b_/, n),
       scope: "variable"
     },
-    m = {
+    h = {
       relevance: 0,
       match: /\b[A-Z]+[a-z]+([A-Z]+[a-z]+)*/,
       scope: "title.class",
@@ -70,7 +70,7 @@ module.exports = function(e) {
         _: o
       }
     },
-    h = e.C_NUMBER_MODE,
+    m = e.C_NUMBER_MODE,
     g = {
       match: [n, /\s*/, /=/, /\s*/, /\(/, n, /\)\s*\{/],
       scope: {
@@ -89,7 +89,7 @@ module.exports = function(e) {
       scope: "subst",
       begin: /%\(/,
       end: /\)/,
-      contains: [h, m, l, _, d]
+      contains: [m, h, l, _, d]
     },
     y = {
       scope: "string",
@@ -138,6 +138,6 @@ module.exports = function(e) {
       "variable.language": a,
       literal: i
     },
-    contains: [S, h, y, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, m, u, g, c, l, d, _, p, v]
+    contains: [S, m, y, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, _, p, v]
   }
 }

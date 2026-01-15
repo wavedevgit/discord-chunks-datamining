@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk699728 = require("./699728.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -93,7 +93,7 @@ function v(e) {
   } = e, {
     reducedMotion: a
   } = i.useContext(l.S);
-  return (0, r.jsx)(c.F, h({
+  return (0, r.jsx)(c.F, m({
     className: _.lottie,
     importData: t,
     autoplay: true,
@@ -106,7 +106,7 @@ function S(e) {
     rive: t,
     props: n
   } = e;
-  return (0, r.jsx)(t, h({
+  return (0, r.jsx)(t, m({
     className: _.rive,
     withReducedMotion: "short-loop",
     autoplay: true,
@@ -163,11 +163,11 @@ function T(e) {
     c = (0, s.C)(),
     p = null != (n = null == (t = l.isWindowFocused) ? true : t.call(l)) ? n : c;
 
-  function m() {
-    if ((0, f.Or)(a)) return (0, r.jsx)(O, h({}, a));
-    if ((0, f.Am)(a)) return (0, r.jsx)(v, h({}, a));
-    if ((0, f.ko)(a)) return (0, r.jsx)(S, h({}, a));
-    if ((0, f.Wv)(a)) return (0, r.jsx)(I, E(h({}, a), {
+  function h() {
+    if ((0, f.Or)(a)) return (0, r.jsx)(O, m({}, a));
+    if ((0, f.Am)(a)) return (0, r.jsx)(v, m({}, a));
+    if ((0, f.ko)(a)) return (0, r.jsx)(S, m({}, a));
+    if ((0, f.Wv)(a)) return (0, r.jsx)(I, E(m({}, a), {
       isWindowFocused: p
     }));
     if ((0, f.Mf)(a)) return null == l.dynamicGraphicComponents ? (console.warn("Dynamic graphic used but no dynamicGraphicComponents provided in ManaContext"), null) : (0, d.a)({
@@ -179,6 +179,6 @@ function T(e) {
   }
   return null == a ? null : (0, r.jsx)("div", {
     className: o()(_.container, _["aspect-ratio-".concat(i)]),
-    children: m()
+    children: h()
   })
 }

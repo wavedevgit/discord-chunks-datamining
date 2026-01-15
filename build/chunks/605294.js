@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E7: () => L,
-  MT: () => m,
+  MT: () => h,
   QL: () => x
 });
 var Chunk159447 = require("./159447.js"),
@@ -19,25 +19,25 @@ let f = Chunk473749.createContext(null),
   p = "react-aria-focus-scope-restore",
   _ = null;
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     contain: n,
     restoreFocus: o,
     autoFocus: s
   } = e, l = (0, d.useRef)(null), c = (0, d.useRef)(null), u = (0, d.useRef)([]), {
-    parentNode: m
+    parentNode: h
   } = (0, d.useContext)(f) || {}, g = (0, d.useMemo)(() => new k({
     scopeRef: u
   }), [u]);
   (0, r.b)(() => {
-    let e = m || U.root;
+    let e = h || U.root;
     if (U.getTreeNode(e.scopeRef) && _ && !I(_, e.scopeRef)) {
       let t = U.getTreeNode(_);
       t && (e = t)
     }
     e.addChild(g), U.addNode(g)
-  }, [g, m]), (0, r.b)(() => {
+  }, [g, h]), (0, r.b)(() => {
     let e = U.getTreeNode(u);
     e && (e.contain = !!n)
   }, [n]), (0, r.b)(() => {
@@ -49,7 +49,7 @@ function m(e) {
     return u.current = n, () => {
       for (let e of n) e.removeEventListener(p, r)
     }
-  }, [t]), P(u, o, n), y(u, n), w(u, o, n), N(u, s), (0, d.useEffect)(() => {
+  }, [t]), P(u, o, n), y(u, n), R(u, o, n), N(u, s), (0, d.useEffect)(() => {
     let e = (0, i.vY)((0, a.r3)(u.current ? u.current[0] : true)),
       t = null;
     if (v(e, u.current)) {
@@ -61,7 +61,7 @@ function m(e) {
     let r = null != (n = null == (t = U.getTreeNode(u)) || null == (e = t.parent) ? true : e.scopeRef) ? n : null;
     (u === _ || I(u, _)) && (!r || U.getTreeNode(r)) && (_ = r), U.removeTreeNode(u)
   }, [u]);
-  let E = (0, d.useMemo)(() => h(u), []),
+  let E = (0, d.useMemo)(() => m(u), []),
     b = (0, d.useMemo)(() => ({
       focusManager: E,
       parentNode: g
@@ -79,7 +79,7 @@ function m(e) {
   }))
 }
 
-function h(e) {
+function m(e) {
   return {
     focusNext(t = {}) {
       var n;
@@ -305,7 +305,7 @@ function P(e, t, n) {
   }, [e, t, n])
 }
 
-function R(e) {
+function w(e) {
   let t = U.getTreeNode(_);
   for (; t && t.scopeRef !== e;) {
     if (t.nodeToRestore) returnfalse;
@@ -314,7 +314,7 @@ function R(e) {
   return (null == t ? true : t.scopeRef) === e
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let o = (0, d.useRef)("undefined" != typeof document ? (0, i.vY)((0, a.r3)(e.current ? e.current[0] : true)) : null);
   (0, r.b)(() => {
     let r = e.current,
@@ -332,7 +332,7 @@ function w(e, t, n) {
     let i = t => {
       if ("Tab" !== t.key || t.altKey || t.ctrlKey || t.metaKey || !E(e) || t.isComposing) return;
       let n = r.activeElement;
-      if (!S(n, e) || !R(e)) return;
+      if (!S(n, e) || !w(e)) return;
       let i = U.getTreeNode(e);
       if (!i) return;
       let a = i.nodeToRestore,
@@ -360,7 +360,7 @@ function w(e, t, n) {
       if (!n) return;
       let a = n.nodeToRestore,
         o = (0, i.vY)(r);
-      if (t && a && (o && S(o, e) || o === r.body && R(e))) {
+      if (t && a && (o && S(o, e) || o === r.body && w(e))) {
         let t = U.clone();
         requestAnimationFrame(() => {
           if (r.activeElement === r.body) {

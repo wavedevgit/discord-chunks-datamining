@@ -5,7 +5,7 @@ require.d(exports, {
   $I: () => d,
   Fc: () => O,
   Ku: () => c,
-  Qk: () => m,
+  Qk: () => h,
   VF: () => v,
   WX: () => f,
   X_: () => I,
@@ -14,7 +14,7 @@ require.d(exports, {
   gG: () => s,
   gv: () => T,
   j8: () => _,
-  nz: () => h,
+  nz: () => m,
   p: () => a,
   p1: () => u,
   pg: () => E,
@@ -44,8 +44,8 @@ var f = function(e) {
   _ = function(e) {
     return e[e.PUBLIC = 1] = "PUBLIC", e[e.GUILD_ONLY = 2] = "GUILD_ONLY", e
   }({});
-let m = new Set([1, 4]),
-  h = {
+let h = new Set([1, 4]),
+  m = {
     1: Chunk981631.d4z.GUILD_STAGE_VOICE,
     2: Chunk981631.d4z.GUILD_VOICE
   },

@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ function I(e) {
     children: n,
     value: a,
     onChange: p,
-    className: m,
+    className: h,
     listClassName: E,
     "aria-label": O,
     multiSelect: I = false,
@@ -104,10 +104,10 @@ function I(e) {
     itemToString: A = v,
     emptyStateText: N,
     emptyStateHeader: P,
-    onQueryChange: R
-  } = e, [w, D] = i.useState(""), x = i.useCallback(e => {
-    D(e), null == R || R(e)
-  }, [R]), [L] = i.useState(true), [j, M] = i.useState(null), k = i.useId(), U = i.useRef(null);
+    onQueryChange: w
+  } = e, [R, D] = i.useState(""), x = i.useCallback(e => {
+    D(e), null == w || w(e)
+  }, [w]), [L] = i.useState(true), [j, M] = i.useState(null), k = i.useId(), U = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(b, '="').concat(j, '"]')),
       t = U.current;
@@ -116,7 +116,7 @@ function I(e) {
       padding: 12
     })
   }, [j]);
-  let G = n(w),
+  let G = n(R),
     Z = 0 === G.length,
     F = null != P ? P : d.intl.string(d.t["4o4z3e"]),
     B = i.useId(),
@@ -166,14 +166,14 @@ function I(e) {
           "aria-controls": L ? k : true,
           "aria-owns": k,
           "aria-haspopup": "listbox",
-          className: o()(f.combobox, m),
+          className: o()(f.combobox, h),
           children: [(0, r.jsx)("div", {
             className: f.header,
             children: (0, r.jsx)(c.E, {
               size: "sm",
               autoFocus: T,
               placeholder: t,
-              query: w,
+              query: R,
               onChange: x,
               onKeyDown: i,
               onBlur: () => M(null),
@@ -201,7 +201,7 @@ function I(e) {
                 setSelected: p,
                 itemToString: A
               },
-              children: (0, r.jsx)(u.Tvr, h(_({}, s), {
+              children: (0, r.jsx)(u.Tvr, m(_({}, s), {
                 style: {
                   maxHeight: C * (y + 6)
                 },
@@ -239,11 +239,11 @@ function C(e) {
     d = g(e, ["value", "children", "disabled", "selectedColor"]);
   let {
     activeDescendant: p,
-    selected: m,
+    selected: h,
     setSelected: E,
     itemToString: y
-  } = i.useContext(S), v = y(n), I = p === v, C = null != (t = null == d ? true : d.selected) ? t : m.has(n), A = (0, l.JA)(v);
-  return (0, r.jsx)(u.P3F, h(_({
+  } = i.useContext(S), v = y(n), I = p === v, C = null != (t = null == d ? true : d.selected) ? t : h.has(n), A = (0, l.JA)(v);
+  return (0, r.jsx)(u.P3F, m(_({
     tag: "li",
     id: v,
     onClick: () => s ? null : E(n),

@@ -4,7 +4,7 @@
 require.d(exports, {
   JJ: () => ep,
   Wg: () => e_,
-  ZP: () => em
+  ZP: () => eh
 }), require("./997841.js"), require("./388685.js"), require("./539854.js"), require("./953529.js"), require("./781311.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -127,13 +127,13 @@ let ec = e => {
     } = e;
     return i.useMemo(() => {
       switch (t) {
-        case h.u$.IP_LOCATION:
+        case m.u$.IP_LOCATION:
           return (0, r.jsx)(E.enf, {
             size: "md",
             color: "currentColor",
             className: ee.disclosureIcon
           });
-        case h.u$.DISPLAYS_ADVERTISEMENTS:
+        case m.u$.DISPLAYS_ADVERTISEMENTS:
           return (0, r.jsx)(E.FLu, {
             className: ee.disclosureIcon
           });
@@ -244,16 +244,16 @@ let ec = e => {
       onDelete: c,
       disclosures: d,
       locale: _,
-      id: h
-    } = e, b = a.id, v = i.useMemo(() => D.ZP.createFromServer(a), [a]), S = (0, p.yE)(v.flags, X.udG.EMBEDDED), A = (0, m.e7)([Y.Z], () => {
+      id: m
+    } = e, b = a.id, v = i.useMemo(() => D.ZP.createFromServer(a), [a]), S = (0, p.yE)(v.flags, X.udG.EMBEDDED), A = (0, h.e7)([Y.Z], () => {
       var e, t, n, r;
       return null == (r = Y.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [b]), x = T.w.useExperiment({
       location: "oauth2_authorize"
-    }), j = a.bot, U = (0, m.e7)([L.Z], () => L.Z.getDMFromUserId(null == j ? true : j.id)), {
+    }), j = a.bot, U = (0, h.e7)([L.Z], () => L.Z.getDMFromUserId(null == j ? true : j.id)), {
       appDMChannelMuteConfig: F,
       dmChannelMuted: B
-    } = (0, m.cj)([M.ZP], () => null == U ? {
+    } = (0, h.cj)([M.ZP], () => null == U ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
@@ -261,7 +261,7 @@ let ec = e => {
       dmChannelMuted: M.ZP.isChannelMuted(null, U)
     }), [K, z] = i.useState(false), [er, ea] = i.useState(false), eo = () => {
       let e = [];
-      for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push($.intl.string($.t.Ls2XRq));
+      for (let n of t) e.push(...(0, R.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push($.intl.string($.t.Ls2XRq));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
         className: ee.appDetailsSection,
         isExpanded: er,
@@ -325,7 +325,7 @@ let ec = e => {
         className: et.markup,
         variant: "text-sm/normal",
         color: "text-default",
-        children: (0, R.parseBioReact)(a.description)
+        children: (0, w.parseBioReact)(a.description)
       })
     }, [a.description]), ef = () => {
       let e = null != a.description && "" !== a.description,
@@ -376,7 +376,7 @@ let ec = e => {
             alt: ""
           })
         }) : null,
-        n = new Date(Z.default.extractTimestamp(h)).toLocaleDateString(_);
+        n = new Date(Z.default.extractTimestamp(m)).toLocaleDateString(_);
       return (0, r.jsxs)("div", {
         className: ee.headerV2,
         children: [t, (0, r.jsxs)("div", {
@@ -412,7 +412,7 @@ let ec = e => {
         application_id: a.id,
         label: e ? G.ZB.Unmuted : G.ZB.Muted
       })
-    }, em = i.useCallback(async () => {
+    }, eh = i.useCallback(async () => {
       u()(null != j, "dm channel mute setting requires having a bot user");
       let e = U;
       null == e && (e = await y.Z.ensurePrivateChannel(j.id)), B ? O.Z.updateAppDMOverrideSettings(null, e, a.id, {
@@ -426,7 +426,7 @@ let ec = e => {
           applicationId: a.id
         }, n))
       })
-    }, [U, j, B, a.id]), eh = () => x.enabled ? (0, r.jsxs)("div", {
+    }, [U, j, B, a.id]), em = () => x.enabled ? (0, r.jsxs)("div", {
       className: ee.directMessagesSection,
       children: [(0, r.jsx)(E.Heading, {
         variant: "heading-sm/medium",
@@ -446,7 +446,7 @@ let ec = e => {
             })
           }) : true,
           checked: B,
-          onChange: em
+          onChange: eh
         }) : null, S && x.enabled ? (0, r.jsx)(E.rsf, {
           label: $.intl.string($.t["Pkw//o"]),
           description: $.intl.string($.t.hw1nKf),
@@ -486,7 +486,7 @@ let ec = e => {
         component: ep(),
         children: (0, r.jsxs)("div", {
           className: ee.appDetailsContainer,
-          children: [ef(), eo(), eh(), eb()]
+          children: [ef(), eo(), em(), eb()]
         })
       })
     })
@@ -498,10 +498,10 @@ let ec = e => {
     let {
       fetchState: e,
       appAuthTokens: t
-    } = (0, m.cj)([x.default], () => ({
+    } = (0, h.cj)([x.default], () => ({
       fetchState: x.default.getFetchState(),
       appAuthTokens: x.default.getNewestTokensForNonChildrenApplications()
-    })), n = (0, m.e7)([F.default], () => F.default.locale), a = (0, m.e7)([v.ZP], () => v.ZP.getSelfEmbeddedActivities()), o = (0, m.e7)([L.Z, j.Z], () => L.Z.getChannel(j.Z.getChannelId())), s = null == o ? true : o.getGuildId(), c = e => {
+    })), n = (0, h.e7)([F.default], () => F.default.locale), a = (0, h.e7)([v.ZP], () => v.ZP.getSelfEmbeddedActivities()), o = (0, h.e7)([L.Z, j.Z], () => L.Z.getChannel(j.Z.getChannelId())), s = null == o ? true : o.getGuildId(), c = e => {
       let {
         id: t,
         application: n
@@ -528,7 +528,7 @@ let ec = e => {
         placeholder: $.intl.string($.t["5prvKe"]),
         "aria-label": $.intl.string($.t["5prvKe"])
       })
-    }), h = (e, t) => (0, r.jsx)(es, {
+    }), m = (e, t) => (0, r.jsx)(es, {
       className: ee.__invalid_marginTop20,
       children: (0, r.jsx)(E.OZU, {
         note: e,
@@ -540,8 +540,8 @@ let ec = e => {
     }, [t, u]), y = () => null == t || null == g || e !== x.FetchState.FETCHED ? (0, r.jsx)(E.$jN, {
       className: en.marginTop20,
       type: E.$jN.Type.SPINNING_CIRCLE
-    }) : 0 === t.length ? h($.intl.string($.t.CpPv5l), $.intl.string($.t["E+SM6T"])) : 0 === g.length ? (0, r.jsxs)(r.Fragment, {
-      children: [_(), h(null, $.intl.string($.t.EVWFNr))]
+    }) : 0 === t.length ? m($.intl.string($.t.CpPv5l), $.intl.string($.t["E+SM6T"])) : 0 === g.length ? (0, r.jsxs)(r.Fragment, {
+      children: [_(), m(null, $.intl.string($.t.EVWFNr))]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [_(), g.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, ei({
         locale: n,
@@ -565,7 +565,7 @@ let ec = e => {
       children: y()
     })
   },
-  em = () => (i.useEffect(() => {
+  eh = () => (i.useEffect(() => {
     b.Z.fetch()
   }, []), i.useEffect(() => () => {
     ep.setState({

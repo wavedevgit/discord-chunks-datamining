@@ -2,7 +2,7 @@
 /** chunk id: 194544, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t,
     onAction: n,
-    onClose: h
+    onClose: m
   } = e, g = (0, o.e7)([f.default], () => f.default.getId()), E = (0, c.ZP)(g, null), b = (0, o.e7)([p.Z], () => p.Z.getDetectableGame(t)), y = i.useMemo(() => {
     var e;
     return !(null == b || (null == E || null == (e = E.widgets) ? true : e.some(e => {
@@ -42,10 +42,10 @@ function h(e) {
       userId: g,
       tabSection: _.oh.WIDGETS,
       scrollTarget: a.l.CURRENT_GAMES
-    }), null == h || h()
-  }, [t, g, n, h]);
+    }), null == m || m()
+  }, [t, g, n, m]);
   return y ? (0, r.jsx)(d.i6, {
-    text: m.intl.string(m.t.BjYzmC),
+    text: h.intl.string(h.t.BjYzmC),
     onClick: O,
     fullWidth: true
   }) : null

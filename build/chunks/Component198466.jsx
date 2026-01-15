@@ -2,7 +2,7 @@
 /** chunk id: 198466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
+  Z: () => h,
   m: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -24,14 +24,14 @@ function _(e) {
     setConfettiCount: c,
     setShouldFireConfetti: f,
     tooltipProps: _
-  } = e, [m, h] = i.useState(0), g = i.useRef(false), E = i.useRef(true), b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
+  } = e, [h, m] = i.useState(0), g = i.useRef(false), E = i.useRef(true), b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
     scaleFactor: y
   } = (0, s.q_F)({
     from: {
       scaleFactor: 1
     },
     to: {
-      scaleFactor: 1 === m ? .9 : 2 === m ? 1.2 : 1
+      scaleFactor: 1 === h ? .9 : 2 === h ? 1.2 : 1
     },
     config: {
       tension: 380,
@@ -48,27 +48,27 @@ function _(e) {
     children: (0, r.jsx)(s.P3F, {
       className: u.confettiTrigger,
       onMouseDown: () => {
-        h(1), f(true), c(e => Math.min(e + 2, p)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
+        m(1), f(true), c(e => Math.min(e + 2, p)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
           E.current && c(0)
         }, d)
       },
       onMouseUp: () => {
-        h(0), f(false)
+        m(0), f(false)
       },
       onMouseEnter: () => {
         var e;
-        h(2), null == _ || null == (e = _.onMouseEnter) || e.call(_)
+        m(2), null == _ || null == (e = _.onMouseEnter) || e.call(_)
       },
       onMouseLeave: () => {
         var e;
-        h(0), null == _ || null == (e = _.onMouseLeave) || e.call(_)
+        m(0), null == _ || null == (e = _.onMouseLeave) || e.call(_)
       },
       innerRef: n,
       children: t
     })
   })
 }
-let m = function(e) {
+let h = function(e) {
   let {
     confettiCount: t,
     confettiTriggerRef: n,

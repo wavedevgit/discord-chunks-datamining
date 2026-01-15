@@ -20,12 +20,12 @@ let f = e => {
     removeSetHeight: a = false,
     withScaleAnimation: f = false,
     delayProfileEffectIntro: p = false
-  } = e, [_, m] = i.useState(true);
+  } = e, [_, h] = i.useState(true);
   return (i.useEffect(() => {
-    if (true !== f) m(false);
+    if (true !== f) h(false);
     else {
       let e = setTimeout(() => {
-        m(false)
+        h(false)
       }, s.JH);
       return () => {
         clearTimeout(e)

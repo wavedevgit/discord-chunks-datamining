@@ -2,7 +2,7 @@
 /** chunk id: 483566, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => h,
+  X: () => m,
   g: () => g
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
@@ -34,29 +34,29 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   let {
     id: t,
     errorMessage: n,
     helperText: r,
     successMessage: a,
     description: o
-  } = e, [s, l] = i.useState(false), c = i.useId(), u = i.useId(), d = i.useId(), f = i.useId(), p = i.useId(), _ = null != o && "" !== o, m = null != r && "" !== r || null != a && "" !== a, h = [];
-  _ && h.push(f), m && h.push(d);
-  let g = h.length > 0 ? h.join(" ") : true;
+  } = e, [s, l] = i.useState(false), c = i.useId(), u = i.useId(), d = i.useId(), f = i.useId(), p = i.useId(), _ = null != o && "" !== o, h = null != r && "" !== r || null != a && "" !== a, m = [];
+  _ && m.push(f), h && m.push(d);
+  let g = m.length > 0 ? m.join(" ") : true;
   return i.useMemo(() => ({
     labelId: c,
     controlId: null != t ? t : u,
     describedById: g,
     errorMessageId: null != n && "" !== n ? p : true,
-    helperTextId: m ? d : true,
+    helperTextId: h ? d : true,
     descriptionId: _ ? f : true,
     isLabelHovered: s,
     setIsLabelHovered: l
-  }), [c, t, u, g, n, p, m, d, _, f, s, l])
+  }), [c, t, u, g, n, p, h, d, _, f, s, l])
 }
 
-function h(e) {
+function m(e) {
   let {
     label: t,
     hideLabel: n,
@@ -102,7 +102,7 @@ function g(e) {
     helperText: c,
     children: p,
     errorMessage: _,
-    successMessage: h,
+    successMessage: m,
     role: g,
     layout: b = "vertical",
     layoutConfig: y,
@@ -112,11 +112,11 @@ function g(e) {
     auxiliaryContentPosition: I = "under-control",
     trailingAuxiliaryContent: T,
     ref: C
-  } = e, A = m(e), {
+  } = e, A = h(e), {
     labelId: N,
     controlId: P,
-    errorMessageId: R,
-    describedById: w,
+    errorMessageId: w,
+    describedById: R,
     helperTextId: D,
     descriptionId: x
   } = A, L = null == y ? true : y.horizontalControlColumnWidth, j = "group" === g || "radiogroup" === g, M = j ? "span" : "label", k = j ? "fieldset" : "div", U = j ? (0, r.jsx)("legend", {
@@ -150,12 +150,12 @@ function g(e) {
       })
     }) : null]
   }) : null, B = (0, r.jsx)(E, {
-    successMessage: h,
+    successMessage: m,
     errorMessage: _,
     helperText: c,
     trailing: T,
     helperTextId: D,
-    errorMessageId: R
+    errorMessageId: w
   });
   return (0, r.jsx)(d.z.Provider, {
     value: A,
@@ -168,7 +168,7 @@ function g(e) {
         "--custom-field-horizontal-control-width": L
       } : true,
       "data-disabled": a,
-      "aria-describedby": j ? w : true,
+      "aria-describedby": j ? R : true,
       disabled: j ? a : true,
       children: [U, G && n ? (0, r.jsx)(s.n, {
         children: F

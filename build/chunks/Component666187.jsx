@@ -132,9 +132,9 @@ class S extends(r = Chunk473749.Component) {
       required: C,
       onInvalid: A,
       inputRef: N
-    } = this.props, P = T ? f.g : "textarea", R = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? true : e.titleId, D = this.getAriaDescribedBy();
+    } = this.props, P = T ? f.g : "textarea", w = this.hasError(), R = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? true : e.titleId, D = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
-      className: s()(m.inputWrapper, {
+      className: s()(h.inputWrapper, {
         [_.flex]: I
       }),
       children: [(0, i.jsxs)("div", {
@@ -144,14 +144,14 @@ class S extends(r = Chunk473749.Component) {
         children: [(0, i.jsx)(c.tEY, {
           children: (0, i.jsx)(P, {
             type: "text",
-            className: s()(m.input, _.textArea, h.scrollbarDefault, O, {
-              [m.error]: R,
-              [m.disabled]: n,
+            className: s()(h.input, _.textArea, m.scrollbarDefault, O, {
+              [h.error]: w,
+              [h.disabled]: n,
               [_.resizeable]: E
             }),
-            "aria-labelledby": w,
+            "aria-labelledby": R,
             "aria-describedby": D,
-            "aria-invalid": R,
+            "aria-invalid": w,
             style: {
               paddingRight: this.getPaddingRight()
             },

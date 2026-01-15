@@ -80,11 +80,11 @@ let k = () => (0, r.jsx)("div", {
       markAsDismissed: o
     } = e, {
       analyticsLocations: s
-    } = (0, h.ZP)(m.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([I.default, A.Z], () => [A.Z.gradientPreset, C.ZP.isPremium(I.default.getCurrentUser())]), p = (0, b.N)(), _ = (0, C.Rt)({
+    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([I.default, A.Z], () => [A.Z.gradientPreset, C.ZP.isPremium(I.default.getCurrentUser())]), p = (0, b.N)(), _ = (0, C.Rt)({
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
     }), g = d ? j.intl.string(j.t.IJI7yk) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === L.Si.TIER_2 ? _ : j.intl.string(j.t.mr4K7D), E = e => {
-      e && (null == a || a(), null != o && o(x.L.PRIMARY), null != u && ((0, w.Yk)({
+      e && (null == a || a(), null != o && o(x.L.PRIMARY), null != u && ((0, R.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -154,7 +154,7 @@ function F(e) {
     showClientThemesCoachmark: n
   } = e, {
     analyticsLocations: a
-  } = (0, h.ZP)(m.Z.CLIENT_THEMES_EDITOR), {
+  } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), {
     isPreview: s,
     shouldEditorAnimate: c
   } = (0, l.cj)([A.Z, _.Z], () => ({
@@ -171,7 +171,7 @@ function F(e) {
     b = (0, p.Z)(null, s ? E : D.dG4);
   return i.useEffect(() => {
     if (s && !u) return E
-  }, [s, u, E]), (0, r.jsx)(h.Gt, {
+  }, [s, u, E]), (0, r.jsx)(m.Gt, {
     value: a,
     children: (0, r.jsx)("div", {
       ref: b,
@@ -180,13 +180,13 @@ function F(e) {
       children: (0, r.jsxs)(d.y5t, {
         children: [n ? (0, r.jsx)(k, {}) : (0, r.jsx)(U, {
           markAsDismissed: t
-        }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(d.Ttm, {
+        }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(d.Ttm, {
           className: M.editorBody,
-          children: (0, r.jsxs)(w.ZP, {
-            type: w.yH.EDITOR,
-            children: [!s && (0, r.jsx)(w.ZP.Basic, {
+          children: (0, r.jsxs)(R.ZP, {
+            type: R.yH.EDITOR,
+            children: [!s && (0, r.jsx)(R.ZP.Basic, {
               className: M.selectionGroup
-            }), (0, r.jsx)(w.ZP.Gradient, {
+            }), (0, r.jsx)(R.ZP.Gradient, {
               className: M.selectionGroup,
               isCoachmark: n
             })]

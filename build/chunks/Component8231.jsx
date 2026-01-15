@@ -62,12 +62,12 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = () => (0, r.jsx)("div", {
+let R = () => (0, r.jsx)("div", {
     className: v.comparisonTablePill,
     children: (0, r.jsx)(c.Heading, {
       className: v.mostPopularText,
@@ -174,7 +174,7 @@ let w = () => (0, r.jsx)("div", {
             variant: "text-lg/bold"
           })
         }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {})]
-      }), n.map((e, t) => (0, r.jsx)(j, R(N({}, e), {
+      }), n.map((e, t) => (0, r.jsx)(j, w(N({}, e), {
         withBottomMargin: t === n.length - 1
       }), e.id))]
     })
@@ -185,7 +185,7 @@ let w = () => (0, r.jsx)("div", {
       } = e,
       i = (0, u.ZP)();
     t = n === y.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? S : I : (0, l.wj)(i) ? T : C;
-    let a = (0, m.Px)(n);
+    let a = (0, h.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
       className: v.logo,
@@ -237,12 +237,12 @@ let w = () => (0, r.jsx)("div", {
       }), (0, r.jsx)("td", {
         className: v.cell,
         children: (0, r.jsx)(x, {
-          text: m.ZP.formatPriceString(t, y.rV.MONTH)
+          text: h.ZP.formatPriceString(t, y.rV.MONTH)
         })
       }), (0, r.jsx)("td", {
         className: v.cell,
         children: (0, r.jsx)(x, {
-          text: i ? a : m.ZP.formatPriceString(n, y.rV.MONTH)
+          text: i ? a : h.ZP.formatPriceString(n, y.rV.MONTH)
         })
       })]
     })
@@ -262,15 +262,15 @@ let w = () => (0, r.jsx)("div", {
       I = (0, p.V)(y.nS),
       T = (0, g.N)(),
       C = null == T || null == (t = T.subscription_trial) ? true : t.sku_id,
-      A = (0, h.N)(),
+      A = (0, m.N)(),
       P = null != A && (0, E.Wp)(A, y.Si.TIER_2),
       x = (0, E.Aq)(y.Xh.PREMIUM_MONTH_TIER_2),
-      L = "".concat(x, "/").concat((0, m.eP)(y.rV.MONTH)),
-      j = (0, m.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
-      k = (0, m.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
+      L = "".concat(x, "/").concat((0, h.eP)(y.rV.MONTH)),
+      j = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
+      k = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
       Z = (0, b.e)();
     if (!S || !I) return null;
-    n = l ? null : null != T ? (0, r.jsx)(D, {}) : (0, r.jsx)(w, {});
+    n = l ? null : null != T ? (0, r.jsx)(D, {}) : (0, r.jsx)(R, {});
     let F = C === y.Si.TIER_0 || u === y.PremiumTypes.TIER_0;
     return (0, r.jsx)(f.Gt, {
       value: O,
@@ -298,7 +298,7 @@ let w = () => (0, r.jsx)("div", {
                 tier2MonthlyPrice: k,
                 shouldUseDiscountPrice: P,
                 tier2DiscountedPriceString: L
-              }), Z.map(e => (0, i.createElement)(M, R(N({}, e), {
+              }), Z.map(e => (0, i.createElement)(M, w(N({}, e), {
                 key: e.id
               })))]
             })]

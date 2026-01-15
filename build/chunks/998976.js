@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Cp: () => b,
-  RR: () => h,
+  RR: () => m,
   X5: () => E,
   YF: () => f,
   cv: () => p,
   dp: () => g,
-  dr: () => m,
+  dr: () => h,
   uY: () => _
 });
 var Chunk615673 = require("./615673.js"),
@@ -68,8 +68,8 @@ function f(e) {
       reference: p,
       floating: _
     } = {},
-    transform: m = true,
-    whileElementsMounted: h,
+    transform: h = true,
+    whileElementsMounted: m,
     open: g
   } = e, [E, b] = i.useState({
     x: 0,
@@ -81,17 +81,17 @@ function f(e) {
   }), [y, O] = i.useState(o);
   l(y, o) || O(o);
   let [v, S] = i.useState(null), [I, T] = i.useState(null), C = i.useCallback(e => {
-    e !== R.current && (R.current = e, S(e))
+    e !== w.current && (w.current = e, S(e))
   }, []), A = i.useCallback(e => {
-    e !== w.current && (w.current = e, T(e))
-  }, []), N = p || v, P = _ || I, R = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != h, L = d(h), j = d(f), M = d(g), k = i.useCallback(() => {
-    if (!R.current || !w.current) return;
+    e !== R.current && (R.current = e, T(e))
+  }, []), N = p || v, P = _ || I, w = i.useRef(null), R = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), j = d(f), M = d(g), k = i.useCallback(() => {
+    if (!w.current || !R.current) return;
     let e = {
       placement: t,
       strategy: n,
       middleware: y
     };
-    j.current && (e.platform = j.current), (0, r.oo)(R.current, w.current, e).then(e => {
+    j.current && (e.platform = j.current), (0, r.oo)(w.current, R.current, e).then(e => {
       let t = {
         ...e,
         isPositioned: false !== M.current
@@ -111,14 +111,14 @@ function f(e) {
   s(() => (U.current = true, () => {
     U.current = false
   }), []), s(() => {
-    if (N && (R.current = N), P && (w.current = P), N && P) {
+    if (N && (w.current = N), P && (R.current = P), N && P) {
       if (L.current) return L.current(N, P, k);
       k()
     }
   }, [N, P, k, L, x]);
   let G = i.useMemo(() => ({
-      reference: R,
-      floating: w,
+      reference: w,
+      floating: R,
       setReference: C,
       setFloating: A
     }), [C, A]),
@@ -135,7 +135,7 @@ function f(e) {
       if (!Z.floating) return e;
       let t = u(Z.floating, E.x),
         r = u(Z.floating, E.y);
-      return m ? {
+      return h ? {
         ...e,
         transform: "translate(" + t + "px, " + r + "px)",
         ...c(Z.floating) >= 1.5 && {
@@ -146,7 +146,7 @@ function f(e) {
         left: t,
         top: r
       }
-    }, [n, m, Z.floating, E.x, E.y]);
+    }, [n, h, Z.floating, E.x, E.y]);
   return i.useMemo(() => ({
     ...E,
     update: k,
@@ -163,11 +163,11 @@ let p = (e, t) => ({
     ...(0, r.uY)(e),
     options: [e, t]
   }),
-  m = (e, t) => ({
+  h = (e, t) => ({
     ...(0, r.dr)(e),
     options: [e, t]
   }),
-  h = (e, t) => ({
+  m = (e, t) => ({
     ...(0, r.RR)(e),
     options: [e, t]
   }),

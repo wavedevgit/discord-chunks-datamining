@@ -24,8 +24,8 @@ function c(e, t, n) {
     {
       labelProps: p,
       inputProps: _,
-      isSelected: m,
-      isPressed: h,
+      isSelected: h,
+      isPressed: m,
       isDisabled: g,
       isReadOnly: E
     } = (0, l.O)({
@@ -60,12 +60,12 @@ function c(e, t, n) {
     }), [])),
     inputProps: {
       ..._,
-      checked: m,
+      checked: h,
       "aria-required": y && "aria" === O || true,
       required: y && "native" === O
     },
-    isSelected: m,
-    isPressed: h,
+    isSelected: h,
+    isPressed: m,
     isDisabled: g,
     isReadOnly: E,
     isInvalid: u,

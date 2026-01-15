@@ -26,8 +26,8 @@ function f(e, t) {
 }
 let p = "Stats for Nerds",
   _ = "Close",
-  m = "Copy to JSON",
-  h = "Copied!",
+  h = "Copy to JSON",
+  m = "Copied!",
   g = "Resolution",
   E = "Viewport",
   b = "Video",
@@ -39,7 +39,7 @@ let p = "Stats for Nerds",
   T = "Error";
 
 function C(e) {
-  var t, n, r, i, a, o, s, l, c, u, d, f, p, _, m;
+  var t, n, r, i, a, o, s, l, c, u, d, f, p, _, h;
   return JSON.stringify({
     media: {
       video: {
@@ -51,7 +51,7 @@ function C(e) {
         height: e.videoHeight
       },
       audio: {
-        codec: null != (m = null == (a = e.codecInfo) ? true : a.audioCodecDescription) ? m : null == (o = e.codecInfo) ? true : o.audioCodec,
+        codec: null != (h = null == (a = e.codecInfo) ? true : a.audioCodecDescription) ? h : null == (o = e.codecInfo) ? true : o.audioCodec,
         codecRaw: null == (s = e.codecInfo) ? true : s.audioCodec,
         bitRate: (null == (l = e.codecInfo) ? true : l.audioBitrate) != null ? Math.round(e.codecInfo.audioBitrate) : null,
         channels: null == (c = e.codecInfo) ? true : c.audioChannels,
@@ -78,7 +78,7 @@ function C(e) {
 }
 
 function A(e) {
-  var t, n, A, N, P, R, w, D, x, L, j, M;
+  var t, n, A, N, P, w, R, D, x, L, j, M;
   let {
     stats: k,
     onClose: U
@@ -104,11 +104,11 @@ function A(e) {
       }), (0, r.jsxs)("div", {
         className: c.headerButtons,
         children: [(0, r.jsx)(a.u, {
-          text: G ? h : m,
+          text: G ? m : h,
           children: (0, r.jsx)(o.P3F, {
             className: c.copyButton,
             onClick: B,
-            "aria-label": G ? h : m,
+            "aria-label": G ? m : h,
             focusProps: {
               offset: 2
             },
@@ -151,7 +151,7 @@ function A(e) {
           children: S
         }), (0, r.jsx)("span", {
           className: c.statValue,
-          children: f(null != (w = k.codecInfo.isProgressive) ? w : null, null != (D = k.codecInfo.isFragmented) ? D : null)
+          children: f(null != (R = k.codecInfo.isProgressive) ? R : null, null != (D = k.codecInfo.isFragmented) ? D : null)
         })]
       }), null != k.codecInfo && (0, r.jsxs)("div", {
         className: c.statRow,
@@ -189,7 +189,7 @@ function A(e) {
           className: c.statValue,
           children: [null != (M = null != (j = k.codecInfo.audioCodecDescription) ? j : k.codecInfo.audioCodec) ? M : "Unknown", null != k.codecInfo.audioBitrate && " @ ".concat((0, l.TB)(k.codecInfo.audioBitrate))]
         })]
-      }), (null == (R = k.codecInfo) ? true : R.audioChannels) != null && (0, r.jsxs)("div", {
+      }), (null == (w = k.codecInfo) ? true : w.audioChannels) != null && (0, r.jsxs)("div", {
         className: c.statRow,
         children: [(0, r.jsx)("span", {
           className: c.statLabel,

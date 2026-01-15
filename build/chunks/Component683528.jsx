@@ -43,7 +43,7 @@ function y(e) {
   }, a) ? (0, r.jsx)(s.Kqy, {
     align: "center",
     justify: "center",
-    className: h.obscured,
+    className: m.obscured,
     style: {
       width: g,
       height: g
@@ -84,23 +84,23 @@ function v(e) {
       padding: g / 2
     })
   }, [n]), (0, r.jsx)("div", {
-    className: o()(h.galleryContainer, c),
+    className: o()(m.galleryContainer, c),
     children: (0, r.jsx)(s.h21, {
       orientation: "horizontal",
-      className: o()(h.gallery, c),
+      className: o()(m.gallery, c),
       ref: d,
       onClick: e => e.stopPropagation(),
       children: t.map((e, i) => {
         let l = i === n,
-          c = l ? m.t["qv/U5V"] : m.t.zviMAG;
+          c = l ? h.t["qv/U5V"] : h.t.zviMAG;
         return (0, r.jsx)(s.P3F, {
           id: E(i),
-          className: o()(h.galleryItem, {
-            [h.inactive]: !l,
-            [h.first]: 0 === i,
-            [h.last]: i === t.length - 1
+          className: o()(m.galleryItem, {
+            [m.inactive]: !l,
+            [m.first]: 0 === i,
+            [m.last]: i === t.length - 1
           }),
-          "aria-label": m.intl.formatToPlainString(c, {
+          "aria-label": h.intl.formatToPlainString(c, {
             pageNumber: i + 1,
             totalPages: t.length
           }),

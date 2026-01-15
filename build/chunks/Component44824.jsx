@@ -2,7 +2,7 @@
 /** chunk id: 44824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./853839.js"), require("./570086.js"), require("./479048.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,7 +68,7 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   let {
     poster: t,
     src: n,
@@ -80,11 +80,11 @@ function m(e) {
     className: f,
     alt: p,
     responsive: _
-  } = e, m = i.useRef(null);
+  } = e, h = i.useRef(null);
   return (i.useEffect(() => {
     let {
       current: e
-    } = m;
+    } = h;
     if (d) {
       var t;
       null == e || null == (t = e.play()) || t.catch(e => {
@@ -92,7 +92,7 @@ function m(e) {
       })
     } else null == e || e.pause()
   }, [d]), c <= s.N_j && u <= s.XKF || c <= s.XKF && u <= s.N_j) ? (0, r.jsx)(a.Z, {
-    ref: m,
+    ref: h,
     className: f,
     poster: t,
     src: n,
@@ -113,7 +113,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   var {
     src: t,
     poster: n,
@@ -123,12 +123,12 @@ function h(e) {
     autoPlay: c,
     className: d,
     playable: _ = true,
-    renderImageComponent: h,
+    renderImageComponent: m,
     alt: g = l.intl.string(l.t.I5gL2H),
     sourceMetadata: E
   } = e, b = p(e, ["src", "poster", "naturalWidth", "naturalHeight", "responsive", "autoPlay", "className", "playable", "renderImageComponent", "alt", "sourceMetadata"]);
   return (0, r.jsx)(o.h.Consumer, {
-    children: e => h(f(u({}, b), {
+    children: e => m(f(u({}, b), {
       alt: g,
       src: n,
       containerClassName: d,
@@ -145,7 +145,7 @@ function h(e) {
           animating: l,
           alt: c
         } = e;
-        return (0, r.jsx)(m, {
+        return (0, r.jsx)(h, {
           alt: c,
           className: d,
           poster: n,

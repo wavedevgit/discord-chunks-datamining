@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   ZP: () => g,
-  nJ: () => h,
+  nJ: () => m,
   od: () => _,
-  rX: () => m
+  rX: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -27,7 +27,7 @@ function _() {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     inOldSettings: t = false
   } = e;
@@ -39,7 +39,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     inOldSettings: t = false
   } = e;
@@ -62,12 +62,12 @@ function g() {
       children: (0, r.jsx)(_, {})
     }), (0, r.jsx)(c.F, {
       setting: f.s6.GIFT_INVENTORY_QUESTS,
-      children: (0, r.jsx)(m, {
+      children: (0, r.jsx)(h, {
         inOldSettings: true
       })
     }), (0, r.jsx)(c.F, {
       setting: f.s6.GIFT_INVENTORY_LIST,
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(m, {
         inOldSettings: true
       })
     }), (0, r.jsx)(c.F, {

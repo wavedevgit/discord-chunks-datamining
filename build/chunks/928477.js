@@ -65,7 +65,7 @@ function M(e, t) {
   if ("" !== u) return j(u, 40);
   {
     if ("" !== d) return j(d, 80);
-    let t = m.ZP.unparse(null != (l = null == c ? true : c.content) ? l : "", e.id, true),
+    let t = h.ZP.unparse(null != (l = null == c ? true : c.content) ? l : "", e.id, true),
       n = (0, A.Z)(t.split("\n")[0], true);
     n = n.replace(/^[ #-]+/, "");
     let r = [];
@@ -100,12 +100,12 @@ function k(e) {
   } = e;
   return r.useCallback(async (e, r, p) => {
     var _;
-    let m = null == n,
-      h = L(i, o),
+    let h = null == n,
+      m = L(i, o),
       g = null != (_ = i.name) ? _ : "";
     if ("" === g && d) {
       let e = M(t, n);
-      g = "" !== e ? e : w.intl.string(w.t["7Xm5QI"])
+      g = "" !== e ? e : R.intl.string(R.t["7Xm5QI"])
     }
     let y = (0, T.WD)(t),
       O = E.Z.getChannel(S.default.castMessageIdAsChannelId(n)),
@@ -115,14 +115,14 @@ function k(e) {
           url: e,
           body: {
             name: g,
-            type: h ? P.d4z.PRIVATE_THREAD : t.type === P.d4z.GUILD_ANNOUNCEMENT ? P.d4z.ANNOUNCEMENT_THREAD : P.d4z.PUBLIC_THREAD,
+            type: m ? P.d4z.PRIVATE_THREAD : t.type === P.d4z.GUILD_ANNOUNCEMENT ? P.d4z.ANNOUNCEMENT_THREAD : P.d4z.PUBLIC_THREAD,
             auto_archive_duration: y,
             location: s
           },
           rejectWithError: false
         })
       });
-    v !== O && (l.Z.clearDraft(t.id, b.d.ThreadSettings), l.Z.clearDraft(t.id, b.d.FirstThreadMessage), null == c || c(v), (m || e.length > 0 || null != r && r.length > 0 || null != p && p.length > 0) && Z(v, e, r, p, f)), u.Z.clearAll(t.id, b.d.FirstThreadMessage)
+    v !== O && (l.Z.clearDraft(t.id, b.d.ThreadSettings), l.Z.clearDraft(t.id, b.d.FirstThreadMessage), null == c || c(v), (h || e.length > 0 || null != r && r.length > 0 || null != p && p.length > 0) && Z(v, e, r, p, f)), u.Z.clearAll(t.id, b.d.FirstThreadMessage)
   }, [t, n, i, c, o, s, d, f])
 }
 
@@ -149,9 +149,9 @@ function G(e) {
     upload: d
   } = e;
   return r.useCallback(async (e, r, f) => {
-    let m, h = 0,
+    let h, m = 0,
       [E, y] = (0, g.Z)(e);
-    E && (e = y, h = (0, i.pj)(h, P.iLy.SUPPRESS_NOTIFICATIONS));
+    E && (e = y, m = (0, i.pj)(m, P.iLy.SUPPRESS_NOTIFICATIONS));
     let O = (0, T.WD)(t, null),
       v = P.ANM.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
       S = {
@@ -161,12 +161,12 @@ function G(e) {
         message: {
           content: e,
           sticker_ids: r,
-          flags: 0 !== h ? h : true
+          flags: 0 !== m ? m : true
         }
       };
     if (null != f && f.length > 0) try {
       let e = await d(f);
-      m = e.uploaderFile, S.message.attachments = e.files.map((e, t) => (0, I.B)(e, t))
+      h = e.uploaderFile, S.message.attachments = e.files.map((e, t) => (0, I.B)(e, t))
     } catch (i) {
       let {
         file: e,
@@ -181,7 +181,7 @@ function G(e) {
         reason: r
       }), i
     }
-    let C = await F(t, s, m, () => a.tn.post({
+    let C = await F(t, s, h, () => a.tn.post({
       url: v,
       body: S,
       rejectWithError: false
@@ -197,18 +197,18 @@ function G(e) {
 function Z(e, t, n, r, i) {
   if (null != i && null != r && r.length > 0) i(e, r, t, n);
   else if (null != n && n.length > 0) return c.Z.sendStickers(e.id, n, t, {
-    location: R.dy.THREAD_CREATION
+    location: w.dy.THREAD_CREATION
   });
-  else return c.Z.sendMessage(e.id, m.ZP.parse(e, t), true, {
-    location: R.dy.THREAD_CREATION
+  else return c.Z.sendMessage(e.id, h.ZP.parse(e, t), true, {
+    location: w.dy.THREAD_CREATION
   })
 }
 async function F(e, t, n, r) {
   let i, a = e.isForumLikeChannel();
   try {
     i = await r(), null == i.body ? s.Z.show({
-      title: w.intl.string(w.t.j2d6Km),
-      body: w.intl.string(w.t.fEptJP)
+      title: R.intl.string(R.t.j2d6Km),
+      body: R.intl.string(R.t.fEptJP)
     }) : (o.Z.dispatch({
       type: "SLOWMODE_RESET_COOLDOWN",
       slowmodeType: O.S.CreateThread,
@@ -218,14 +218,14 @@ async function F(e, t, n, r) {
       channelId: i.body.id
     }))
   } catch (r) {
-    var l, u, p, m, g, b, y, S, I;
+    var l, u, p, h, g, b, y, S, I;
     if ((null == (l = r.body) ? true : l.code) === P.evJ.TOO_MANY_THREADS) s.Z.show({
-      title: a ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
-      body: a ? w.intl.string(w.t.KGaiEK) : w.intl.string(w.t.P0wT5S)
+      title: a ? R.intl.string(R.t.vWNFkx) : R.intl.string(R.t["1KEdvB"]),
+      body: a ? R.intl.string(R.t.KGaiEK) : R.intl.string(R.t.P0wT5S)
     });
     else if ((null == (u = r.body) ? true : u.code) === P.evJ.TOO_MANY_ANNOUNCEMENT_THREADS) s.Z.show({
-      title: w.intl.string(w.t["1KEdvB"]),
-      body: w.intl.string(w.t.jDMxz2)
+      title: R.intl.string(R.t["1KEdvB"]),
+      body: R.intl.string(R.t.jDMxz2)
     });
     else if ((null == (p = r.body) ? true : p.code) === P.evJ.SLOWMODE_RATE_LIMITED) {
       let t = null != (b = r.body.retry_after) ? b : 0;
@@ -236,14 +236,14 @@ async function F(e, t, n, r) {
         cooldownMs: t * v.Z.Millis.SECOND
       })
     } else if (429 === r.status) s.Z.show({
-      title: a ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
-      body: w.intl.string(w.t.Whhv4w)
+      title: a ? R.intl.string(R.t.vWNFkx) : R.intl.string(R.t["1KEdvB"]),
+      body: R.intl.string(R.t.Whhv4w)
     });
-    else if (N.fZ.has(null == (m = r.body) ? true : m.code)) throw r;
+    else if (N.fZ.has(null == (h = r.body) ? true : h.code)) throw r;
     else if (N.RN.has(null == (g = r.body) ? true : g.code)) {
       if (null != n)
         if ((null == (y = r.body) ? true : y.code) === P.evJ.EXPLICIT_CONTENT) {
-          let t = (0, h.r)();
+          let t = (0, m.r)();
           null != r.body.attachments && r.body.attachments.length > 0 && (o.Z.dispatch({
             type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE",
             messageId: t,
@@ -269,8 +269,8 @@ async function F(e, t, n, r) {
         })
       })
     } else s.Z.show({
-      title: w.intl.string(w.t.j2d6Km),
-      body: w.intl.string(w.t.fEptJP)
+      title: R.intl.string(R.t.j2d6Km),
+      body: R.intl.string(R.t.fEptJP)
     })
   }
   let T = await new Promise((e, t) => {

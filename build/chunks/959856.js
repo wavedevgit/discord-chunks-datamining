@@ -113,7 +113,7 @@ class N extends Chunk47770.Z {
       streamParameters: l,
       dave: this.dave,
       transientKeys: this.transientKeys
-    }, u = (0, h.Q)(c);
+    }, u = (0, m.Q)(c);
     return u.streamUserId = s, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.S.Destroy, e => this.connections.delete(e)), u.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), u.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.S.AudioPermission, this.handleAudioPermission), u.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === I.Yn.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.aB.Connection, u), u
   }
   findConnection(e) {
@@ -132,7 +132,7 @@ class N extends Chunk47770.Z {
   async _enable() {
     if (this.enabled) return;
     await this.getAudioContext().audioWorklet.addModule(E);
-    let e = new m.Z(this.getAudioContext());
+    let e = new h.Z(this.getAudioContext());
     e.on("permission", this.handleAudioPermission);
     try {
       var t;
@@ -321,7 +321,7 @@ class N extends Chunk47770.Z {
           }, this.handleDeviceChange());
           break;
         case f.aB.VoiceActivity:
-          null == this.voiceActivityInput && (this.voiceActivityInput = new m.Z(this.getAudioContext()), this.voiceActivityInput.setSource(this.sourceId), this.voiceActivityInput.on("voiceactivity", this.handleVoiceActivity), this.enabled && this.voiceActivityInput.enable())
+          null == this.voiceActivityInput && (this.voiceActivityInput = new h.Z(this.getAudioContext()), this.voiceActivityInput.setSource(this.sourceId), this.voiceActivityInput.on("voiceactivity", this.handleVoiceActivity), this.enabled && this.voiceActivityInput.enable())
       }
     }), C(this, "handleRemoveListener", e => {
       switch (e) {

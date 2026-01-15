@@ -32,33 +32,33 @@ function g(e) {
       }
     })
   }, []), (0, r.jsxs)("div", {
-    className: h.container,
+    className: m.container,
     children: [(0, r.jsx)("div", {
-      className: h.closeButton,
+      className: m.closeButton,
       children: (0, r.jsx)(s.hU, {
         icon: s.Dio,
         size: "sm",
         variant: "icon-only",
-        "aria-label": m.intl.string(m.t.cpT0Cq),
+        "aria-label": h.intl.string(h.t.cpT0Cq),
         onClick: () => (0, d.X9)(t)
       })
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: m.intl.string(m.t.icDVNb)
+      children: h.intl.string(h.t.icDVNb)
     }), (0, r.jsxs)("div", {
-      className: h.subtitleContainer,
+      className: m.subtitleContainer,
       children: [null != n && (0, r.jsx)(l.Z, {
         size: _.EF.SIZE_16,
         user: n
       }), null != g && (0, r.jsx)(l.Z, {
-        className: h.currentUserAvatar,
+        className: m.currentUserAvatar,
         size: _.EF.SIZE_16,
         user: g
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-strong",
-        children: m.intl.formatToPlainString(m.t.PpG27s, {
+        children: h.intl.formatToPlainString(h.t.PpG27s, {
           numberOfYears: E
         })
       })]

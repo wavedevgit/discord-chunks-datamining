@@ -28,11 +28,11 @@ let E = () => {
       getWarpInstallationStatus: a,
       connect: o,
       installTimeout: E
-    } = (0, h.xf)(), {
+    } = (0, m.xf)(), {
       status: b
     } = (0, s.e7)([l.Z], () => l.Z.state, []), [y, O] = (0, i.useState)(0), {
       installedDiscordPrivateBrowsingPerk: v
-    } = (0, s.e7)([m.Z], () => m.Z.getState(), []), [S, I] = (0, i.useState)(false), [T, C] = (0, i.useState)(null);
+    } = (0, s.e7)([h.Z], () => h.Z.getState(), []), [S, I] = (0, i.useState)(false), [T, C] = (0, i.useState)(null);
     return (0, i.useEffect)(() => {
       S || (I(true), e !== p._n.INSTALLING && (0, d.Y)().then(e => e === p._n.NOT_INSTALLED ? void t(p._n.NOT_INSTALLED) : e === p._n.EXISTING_INSTALLATION && v ? void t(p._n.INSTALLING) : void t(e)))
     }, [t, v, S, e]), (0, i.useEffect)(() => {

@@ -20,12 +20,12 @@ function u(e) {
     text: a,
     variant: u,
     delay: d
-  } = e, f = (0, i.useRef)(0), p = (0, i.useRef)(0), [_, m] = (0, i.useState)("");
+  } = e, f = (0, i.useRef)(0), p = (0, i.useRef)(0), [_, h] = (0, i.useState)("");
   return (0, i.useEffect)(() => {
     let e = () => {
       let t = Date.now() - f.current,
         n = Math.max(Math.min(t / c, 1), 0);
-      m(a.substring(0, Math.floor(n * a.length))), t < c && (p.current = window.requestAnimationFrame(e))
+      h(a.substring(0, Math.floor(n * a.length))), t < c && (p.current = window.requestAnimationFrame(e))
     };
     return f.current = Date.now() + (null != d ? d : 0), p.current = window.requestAnimationFrame(e), () => cancelAnimationFrame(p.current)
   }, [d, a]), (0, r.jsxs)("div", {

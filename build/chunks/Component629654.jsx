@@ -22,7 +22,7 @@ function f(e) {
     useReducedMotion: f
   }), {
     name: _,
-    header: m
+    header: h
   } = i.useMemo(() => {
     let e = (0, c.Ib)(t);
     return {
@@ -48,7 +48,7 @@ function f(e) {
       children: [(0, r.jsx)("img", {
         alt: "",
         "aria-hidden": true,
-        src: m,
+        src: h,
         className: d.presetImage
       }), (0, r.jsx)(o.Text, {
         className: d.presetLabel,

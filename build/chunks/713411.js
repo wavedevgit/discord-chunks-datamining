@@ -12,8 +12,8 @@ var r, Chunk179122 = require("./179122.js"),
   f = "<",
   p = "prototype",
   _ = "script",
-  m = Chunk661314("IE_PROTO"),
-  h = function() {},
+  h = Chunk661314("IE_PROTO"),
+  m = function() {},
   g = function(e) {
     return f + _ + d + e + f + "/" + _ + d
   },
@@ -35,7 +35,7 @@ var r, Chunk179122 = require("./179122.js"),
     for (var e = o.length; e--;) delete y[p][o[e]];
     return y()
   };
-Chunk485073[m] = true, module.exports = Object.create || function(e, t) {
+Chunk485073[h] = true, module.exports = Object.create || function(e, t) {
   var n;
-  return null !== e ? (h[p] = i(e), n = new h, h[p] = null, n[m] = e) : n = y(), true === t ? n : a.f(n, t)
+  return null !== e ? (m[p] = i(e), n = new m, m[p] = null, n[h] = e) : n = y(), true === t ? n : a.f(n, t)
 }

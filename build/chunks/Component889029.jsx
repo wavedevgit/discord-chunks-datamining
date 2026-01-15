@@ -53,14 +53,14 @@ function b() {
     enableContentProtection: v
   } = (0, i.cj)([l.Z], () => E({}, l.Z.getSettings())), S = () => (0, r.jsxs)(a.Zbd, {
     type: a.Zbd.Types.PRIMARY,
-    className: h.noticeCard,
+    className: m.noticeCard,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/medium",
-        children: m.intl.string(m.t.bxGbHL)
+        children: h.intl.string(h.t.bxGbHL)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: m.intl.format(m.t["4rmZnx"], {
+        children: h.intl.format(h.t["4rmZnx"], {
           streamkitURL: _.EYA.STREAMKIT
         })
       })]
@@ -69,12 +69,12 @@ function b() {
       width: 184,
       height: 110,
       alt: "",
-      className: h.noticeImage
+      className: m.noticeImage
     })]
   }), I = () => {
     if (c.isPlatformEmbedded) return (0, r.jsx)(a.rsf, {
-      label: m.intl.string(m.t["PKDAJ/"]),
-      description: m.intl.string(m.t.ZPi4lM),
+      label: h.intl.string(h.t["PKDAJ/"]),
+      description: h.intl.string(h.t.ZPi4lM),
       checked: t,
       onChange: e => T("autoToggle", e)
     })
@@ -88,7 +88,7 @@ function b() {
     })
   };
   return (0, r.jsx)(d.Z, {
-    title: m.intl.string(m.t.S5GfOW),
+    title: h.intl.string(h.t.S5GfOW),
     children: (0, r.jsxs)(a.Kqy, {
       gap: 24,
       children: [(0, r.jsx)(s.F, {
@@ -99,8 +99,8 @@ function b() {
         children: (0, r.jsxs)(a.Kqy, {
           gap: 16,
           children: [(0, r.jsx)(a.rsf, {
-            label: m.intl.string(m.t.p9ZAJZ),
-            description: m.intl.format(m.t.MLVL2M, {
+            label: h.intl.string(h.t.p9ZAJZ),
+            description: h.intl.format(h.t.MLVL2M, {
               onClick: C
             }),
             checked: e,
@@ -108,45 +108,45 @@ function b() {
           }), I(), (0, r.jsx)(a.izJ, {})]
         })
       }), (0, r.jsxs)(a.C3N, {
-        label: m.intl.string(m.t["+1H47t"]),
-        className: h.sectionLabel,
+        label: h.intl.string(h.t["+1H47t"]),
+        className: m.sectionLabel,
         children: [(0, r.jsx)(s.F, {
           setting: p.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
           children: (0, r.jsx)(a.rsf, {
-            label: m.intl.string(m.t.UpQziA),
-            description: m.intl.string(m.t["+9Lra7"]),
+            label: h.intl.string(h.t.UpQziA),
+            description: h.intl.string(h.t["+9Lra7"]),
             checked: b,
             onChange: e => T("hidePersonalInformation", e)
           })
         }), (0, r.jsx)(s.F, {
           setting: p.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
           children: (0, r.jsx)(a.rsf, {
-            label: m.intl.string(m.t.q7WNGv),
-            description: m.intl.string(m.t.m7mS2U),
+            label: h.intl.string(h.t.q7WNGv),
+            description: h.intl.string(h.t.m7mS2U),
             checked: g,
             onChange: e => T("hideInstantInvites", e)
           })
         }), (0, r.jsx)(s.F, {
           setting: p.s6.STREAMER_MODE_DISABLE_SOUNDS,
           children: (0, r.jsx)(a.rsf, {
-            label: m.intl.string(m.t.o56OZu),
-            description: m.intl.string(m.t.eAkaik),
+            label: h.intl.string(h.t.o56OZu),
+            description: h.intl.string(h.t.eAkaik),
             checked: y,
             onChange: e => T("disableSounds", e)
           })
         }), (0, r.jsx)(s.F, {
           setting: p.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
           children: (0, r.jsx)(a.rsf, {
-            label: m.intl.string(m.t.qmYiYd),
-            description: m.intl.string(m.t["ZAmpQ/"]),
+            label: h.intl.string(h.t.qmYiYd),
+            description: h.intl.string(h.t["ZAmpQ/"]),
             checked: O,
             onChange: e => T("disableNotifications", e)
           })
         }), (0, r.jsx)(s.F, {
           setting: p.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
           children: (0, r.jsx)(a.rsf, {
-            label: m.intl.string(m.t["iA81+a"]),
-            description: m.intl.string(m.t.P4vj0h),
+            label: h.intl.string(h.t["iA81+a"]),
+            description: h.intl.string(h.t.P4vj0h),
             checked: v,
             onChange: e => T("enableContentProtection", e)
           })

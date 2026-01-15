@@ -98,12 +98,12 @@ class S extends Chunk178635.Z {
       let {
         streamKey: o,
         canShowFeedback: s
-      } = e, u = (0, l.my)(o), f = (0, c.L2)(u, p.Z), _ = null != (i = m.Z.getVideoStats(o)) ? i : {}, h = y({
-        media_session_id: m.Z.getMediaSessionId(o),
-        rtc_connection_id: m.Z.getRtcConnectionId(o),
-        stream_region: m.Z.getRegion(o),
-        max_viewers: m.Z.getMaxViewers(o),
-        parent_media_session_id: null == (t = m.Z.getRTCConnection(o)) ? true : t.parentMediaSessionId
+      } = e, u = (0, l.my)(o), f = (0, c.L2)(u, p.Z), _ = null != (i = h.Z.getVideoStats(o)) ? i : {}, m = y({
+        media_session_id: h.Z.getMediaSessionId(o),
+        rtc_connection_id: h.Z.getRtcConnectionId(o),
+        stream_region: h.Z.getRegion(o),
+        max_viewers: h.Z.getMaxViewers(o),
+        parent_media_session_id: null == (t = h.Z.getRTCConnection(o)) ? true : t.parentMediaSessionId
       }, _);
       s && this.possiblyShowFeedbackModal(g.nw.STREAM, () => {
         (0, a.ZDy)(async () => {
@@ -115,7 +115,7 @@ class S extends Chunk178635.Z {
             streamApplication: f,
             isStreamer: u.ownerId === d.default.getId()
           }, t), {
-            analyticsData: h
+            analyticsData: m
           }))
         })
       })
@@ -138,10 +138,10 @@ class S extends Chunk178635.Z {
         applicationId: t,
         location: i,
         showFeedback: l
-      } = e, c = s.Z.getApplication(t), d = (0, o.p)(i), p = f.Z.getChannel(d), m = {
+      } = e, c = s.Z.getApplication(t), d = (0, o.p)(i), p = f.Z.getChannel(d), h = {
         rtc_connection_id: _.Z.getRTCConnectionId(),
         media_session_id: _.Z.getMediaSessionId()
-      }, h = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? a.u1M : a.z1l;
+      }, m = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? a.u1M : a.z1l;
       null != c && l && this.possiblyShowFeedbackModal(g.nw.ACTIVITY, () => {
         (0, a.ZDy)(async () => {
           let {
@@ -151,10 +151,10 @@ class S extends Chunk178635.Z {
             activityApplication: c,
             channel: p,
             embeddedActivityLocation: i,
-            analyticsData: m
+            analyticsData: h
           }))
         }, {
-          contextKey: h
+          contextKey: m
         })
       })
     }), b(this, "handleInAppReportsFeedback", e => {

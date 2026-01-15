@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
 function _(e) {
   let {
     channelTypes: t
-  } = e, n = (0, c.CJ)(), _ = null == n ? true : n.channelId, m = s.Z.getChannel(_), h = l.Z.getGuild(null == m ? true : m.getGuildId()), g = e => (0, u.af)(e, _, t), E = (e, t) => {
+  } = e, n = (0, c.CJ)(), _ = null == n ? true : n.channelId, h = s.Z.getChannel(_), m = l.Z.getGuild(null == h ? true : h.getGuildId()), g = e => (0, u.af)(e, _, t), E = (e, t) => {
     let n = s.Z.getChannel(null == e ? true : e.value);
     if (null == n) return null;
     let i = n.type === f.d4z.GUILD_CATEGORY ? a.ROc : (0, o.KS)(n);
@@ -32,7 +32,7 @@ function _(e) {
   }, b = e => (0, r.jsx)("span", {
     className: p.label,
     children: e.label
-  }), y = i.useMemo(() => (0, u.tx)(e.defaultValues, null == h ? true : h.id, t), [e.defaultValues, h, t]);
+  }), y = i.useMemo(() => (0, u.tx)(e.defaultValues, null == m ? true : m.id, t), [e.defaultValues, m, t]);
   return (0, r.jsx)(d.ZP, {
     selectActionComponent: e,
     queryOptions: g,

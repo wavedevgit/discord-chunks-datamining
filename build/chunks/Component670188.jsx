@@ -48,13 +48,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -104,16 +104,16 @@ function O(e) {
     onClosePopout: C,
     shouldShow: A,
     shouldPreload: N = true
-  } = e, P = h(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
-  let R = i.useRef(true),
-    w = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
+  } = e, P = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
+  let w = i.useRef(true),
+    R = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
       type: "popout",
       withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: d
     }), [v, a, n, O, s, d]),
-    D = i.useCallback(e => (R.current = Date.now(), null != S) ? S(e, R.current) : (0, r.jsx)(c.Z, m(p({}, e), {
+    D = i.useCallback(e => (w.current = Date.now(), null != S) ? S(e, w.current) : (0, r.jsx)(c.Z, h(p({}, e), {
       user: n,
       currentUser: a,
       guildId: s,
@@ -123,15 +123,15 @@ function O(e) {
       disableUserProfileLink: g,
       newAnalyticsLocations: b,
       appContext: y,
-      openedAt: R.current,
+      openedAt: w.current,
       closePopout: () => {
         e.closePopout(), null == C || C()
       }
     })), [n, a, S, s, d, _, f, g, b, y, C]);
-  return (0, r.jsx)(o.yRy, m(p({
+  return (0, r.jsx)(o.yRy, h(p({
     popoutKey: u.Tg,
     shouldShow: A,
-    preload: N ? w : true,
+    preload: N ? R : true,
     renderPopout: D,
     onRequestOpen: I,
     onRequestClose: T
@@ -145,10 +145,10 @@ function v(e) {
     children: t,
     userId: n,
     user: i
-  } = e, o = h(e, ["children", "userId", "user"]);
+  } = e, o = m(e, ["children", "userId", "user"]);
   let l = (0, a.e7)([s.default], () => s.default.getCurrentUser()),
     c = (0, a.e7)([s.default], () => null != i ? i : s.default.getUser(n));
-  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, m(p({}, o), {
+  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, h(p({}, o), {
     user: c,
     currentUser: l,
     children: t

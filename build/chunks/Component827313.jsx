@@ -23,7 +23,7 @@ function p(e) {
     onOpenProfile: i
   } = e, {
     note: p
-  } = (0, c.Z)(t), _ = null != p && "" !== p, m = _ ? s.hH0 : s.Wos, h = _ ? d.intl.string(d.t["gs+qcM"]) : d.intl.string(d.t["1ZZtts"]), g = _ ? p : d.intl.string(d.t["1ZZtts"]), {
+  } = (0, c.Z)(t), _ = null != p && "" !== p, h = _ ? s.hH0 : s.Wos, m = _ ? d.intl.string(d.t["gs+qcM"]) : d.intl.string(d.t["1ZZtts"]), g = _ ? p : d.intl.string(d.t["1ZZtts"]), {
     trackUserProfileAction: E
   } = (0, l.KZ)(), b = () => {
     E({
@@ -37,10 +37,10 @@ function p(e) {
     asContainer: true,
     text: g,
     children: (0, r.jsx)(s.P3F, {
-      "aria-label": h,
+      "aria-label": m,
       onClick: b,
       className: a()(f.button, n && f.visible),
-      children: (0, r.jsx)(m, {
+      children: (0, r.jsx)(h, {
         size: "xs",
         color: "currentColor"
       })

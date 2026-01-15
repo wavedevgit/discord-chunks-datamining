@@ -66,7 +66,7 @@ let I = e => {
       startingScreen: t,
       analyticsLocations: i
     } = e;
-    c.default.track(h.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    c.default.track(m.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: i
     }), (0, s.ZDy)(async () => {
       let {
@@ -151,13 +151,13 @@ let I = e => {
     } = e, {
       referralSentUsers: n
     } = (0, _.G)(), i = (0, o.e7)([p.Z], () => p.Z.getRecipientStatus()), l = (0, o.e7)([p.Z], () => p.Z.getHasEligibleFriends()), c = i.size === _.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === _.Q, b = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
-      helpdeskArticle: u.Z.getArticleURL(h.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     }) : n.length === _.Q ? true === c ? g.intl.format(g.t["1aEjsH"], {
-      helpdeskArticle: u.Z.getArticleURL(h.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     }) : g.intl.format(g.t["+u3AOO"], {
-      helpdeskArticle: u.Z.getArticleURL(h.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     }) : g.intl.format(g.t["omMr+V"], {
-      helpdeskArticle: u.Z.getArticleURL(h.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     });
     return (0, r.jsxs)("div", {
       className: a()(E.container, t),
@@ -186,7 +186,7 @@ let I = e => {
           disabled: false === l || true === d,
           text: g.intl.string(g.t.Lm2nFc),
           onClick: () => I({
-            startingScreen: m.SelectFriendsModalScreens.SELECT_FRIENDS,
+            startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
             analyticsLocations: []
           })
         })]

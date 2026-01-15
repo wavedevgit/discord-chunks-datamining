@@ -30,11 +30,11 @@ function _(e) {
   u = e.incident
 }
 
-function m(e) {
+function h(e) {
   d = e.maintenance
 }
 
-function h() {
+function m() {
   if (null == d) returnfalse;
   f = d.id, a.K.set(c, f)
 }
@@ -53,6 +53,6 @@ l(g, "displayName", "MaintenanceStore");
 let E = new g(Chunk570140.Z, {
   CONNECTION_OPEN: p,
   STATUS_PAGE_INCIDENT: _,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE: m,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: h
+  STATUS_PAGE_SCHEDULED_MAINTENANCE: h,
+  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: m
 })

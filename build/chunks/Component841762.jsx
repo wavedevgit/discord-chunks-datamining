@@ -2,7 +2,7 @@
 /** chunk id: 841762, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,7 +68,7 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     alt: t
   } = e, n = p(e, ["alt"]);
@@ -84,7 +84,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   var {
     src: t,
     backgroundSrc: n,
@@ -106,7 +106,7 @@ function h(e) {
         aspectRatio: a
       },
       className: l.imageContainer,
-      children: (0, r.jsx)(m, u({
+      children: (0, r.jsx)(h, u({
         src: t,
         alt: i,
         className: o()(l.image, c)

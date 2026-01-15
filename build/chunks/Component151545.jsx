@@ -67,7 +67,7 @@ function O(e) {
   (0, c.q)(null == b ? true : b.application_id);
   let A = (0, a.e7)([l.Z], () => (null == b ? true : b.application_id) != null ? l.Z.getApplication(b.application_id) : (null == b ? true : b.name) != null ? l.Z.getApplicationByName(b.name) : null);
   return (i.useEffect(() => {
-    (null == b ? true : b.type) === E.IIU.HANG_STATUS && T && m.default.track(E.rMx.VIEW_HANG_STATUS, y({
+    (null == b ? true : b.type) === E.IIU.HANG_STATUS && T && h.default.track(E.rMx.VIEW_HANG_STATUS, y({
       source: "UserProfilePopout",
       other_user_id: t.id
     }, (0, u.Z)(null == C ? true : C.id)))
@@ -77,7 +77,7 @@ function O(e) {
     activity: b,
     className: O,
     onClose: v
-  }) : (0, r.jsx)(h.Z, {
+  }) : (0, r.jsx)(m.Z, {
     user: t,
     currentUser: n,
     activity: b,

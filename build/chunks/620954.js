@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Pb: () => g,
-  Rg: () => m,
-  wq: () => h
+  Rg: () => h,
+  wq: () => m
 }), require("./35282.js");
 var Chunk13245 = require("./13245.js"),
   Chunk556296 = require("./556296.js"),
@@ -57,7 +57,7 @@ function _() {
   return a.default.isLocked(s.Z.getTargetPID()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
 }
 
-function m(e, t) {
+function h(e, t) {
   return {
     trackView() {
       let n = _();
@@ -75,11 +75,11 @@ function m(e, t) {
   }
 }
 
-function h() {
+function m() {
   let e = i.ZP.getOverlayKeybind();
   return null != e ? (0, o.BB)(e.shortcut, true) : "???"
 }
 
 function g() {
-  return h().split(" + ")
+  return m().split(" + ")
 }

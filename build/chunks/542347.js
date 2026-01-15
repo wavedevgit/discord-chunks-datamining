@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   BM: () => O,
-  F9: () => h,
+  F9: () => m,
   FI: () => p,
   Mo: () => b,
-  ZS: () => m,
+  ZS: () => h,
   bA: () => g,
   u7: () => y,
   z1: () => E
@@ -28,11 +28,11 @@ function p(e, t) {
 }
 let _ = "landscape";
 
-function m(e) {
+function h(e) {
   let t = e.assets.video;
   return null == t || null == t.width || null == t.height ? _ : t.width > t.height ? "landscape" : "portrait"
 }
-let h = e => e.percentComplete > 0 ? f.intl.formatToPlainString(f.t["c59/Tp"], {
+let m = e => e.percentComplete > 0 ? f.intl.formatToPlainString(f.t["c59/Tp"], {
   remainTime: (0, u.Ah)(e)
 }) : f.intl.formatToPlainString(f.t.GNsKiW, {
   remainTime: (0, u.Ah)(e)

@@ -18,7 +18,7 @@ var Chunk846519 = require("./846519.js"),
   Chunk367907 = require("./367907.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -51,7 +51,7 @@ class b extends Chunk147913.Z {
     if (this._currentUserSpeaking) {
       let e = c.Z.getChannelId(),
         t = c.Z.getGuildId();
-      (0, _.yw)(m.rMx.START_SPEAKING, g({
+      (0, _.yw)(h.rMx.START_SPEAKING, g({
         mode: l.Z.getMode(),
         priority: d.Z.isCurrentUserPrioritySpeaking(),
         channel: e,
@@ -68,7 +68,7 @@ class b extends Chunk147913.Z {
     if (l.Z.isDeaf() || !this._anyoneElseSpeaking) return;
     let e = c.Z.getChannelId(),
       t = c.Z.getGuildId();
-    (0, _.yw)(m.rMx.START_LISTENING, g({
+    (0, _.yw)(h.rMx.START_LISTENING, g({
       mute: l.Z.isMute(),
       anyone_priority: d.Z.isAnyonePrioritySpeaking(),
       channel: e,
@@ -84,7 +84,7 @@ class b extends Chunk147913.Z {
     this._reset(), d.Z.removeChangeListener(this._handleSpeakingStoreChanged), c.Z.removeChangeListener(this._handleRTCConnectionStoreChanged)
   }
   getGameMetadata() {
-    let e = u.Z.findActivity(e => e.type === m.IIU.PLAYING),
+    let e = u.Z.findActivity(e => e.type === h.IIU.PLAYING),
       t = o.ZP.getCurrentGameForAnalytics();
     return {
       game_platform: (0, a.Z)(e),
@@ -97,7 +97,7 @@ class b extends Chunk147913.Z {
     }
   }
   constructor(...e) {
-    super(...e), h(this, "_currentUserSpeaking", false), h(this, "_anyoneElseSpeaking", false), h(this, "_voiceChannelId", true), h(this, "_reportInterval", true), h(this, "_handleRTCConnectionStoreChanged", () => {
+    super(...e), m(this, "_currentUserSpeaking", false), m(this, "_anyoneElseSpeaking", false), m(this, "_voiceChannelId", true), m(this, "_reportInterval", true), m(this, "_handleRTCConnectionStoreChanged", () => {
       let e = c.Z.getChannelId();
       if (this._voiceChannelId !== e) {
         if (this._voiceChannelId = e, null == e) return void this._reset();
@@ -105,7 +105,7 @@ class b extends Chunk147913.Z {
           this._trackStartSpeaking(), this._trackStartListening()
         }))
       }
-    }), h(this, "_handleSpeakingStoreChanged", () => {
+    }), m(this, "_handleSpeakingStoreChanged", () => {
       let e = d.Z.isCurrentUserSpeaking();
       this._currentUserSpeaking !== e && (this._currentUserSpeaking = e, this._trackStartSpeaking());
       let t = d.Z.isAnyoneElseSpeaking();

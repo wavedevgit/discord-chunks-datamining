@@ -41,7 +41,7 @@ function E() {
       group: "input-modes",
       label: i,
       disabled: b,
-      checked: E === m.KW.ON ? "system" === e : e === n,
+      checked: E === h.KW.ON ? "system" === e : e === n,
       action: () => {
         (0, d.Yk)({
           isPersisted: true,
@@ -53,7 +53,7 @@ function E() {
       }
     }),
     v = [(0, r.jsxs)(o.kSQ, {
-      children: [O(h.BRd.LIGHT, g.intl.string(g.t.K2sFfo)), O(h.BRd.DARK, g.intl.string(g.t.SMPT1k)), O(h.BRd.DARKER, g.intl.string(g.t.b8Cei3)), O(h.BRd.MIDNIGHT, g.intl.string(g.t.Do4ZJx)), O("system", g.intl.string(g.t["7rOU6j"]))]
+      children: [O(m.BRd.LIGHT, g.intl.string(g.t.K2sFfo)), O(m.BRd.DARK, g.intl.string(g.t.SMPT1k)), O(m.BRd.DARKER, g.intl.string(g.t.b8Cei3)), O(m.BRd.MIDNIGHT, g.intl.string(g.t.Do4ZJx)), O("system", g.intl.string(g.t["7rOU6j"]))]
     }, "theme-items")];
   return v.push((0, r.jsxs)(o.kSQ, {
     label: "UI Density",

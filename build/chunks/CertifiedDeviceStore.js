@@ -24,12 +24,12 @@ let d = "CertifiedDeviceStore",
   p = {},
   _ = 0;
 
-function m(e, t, n) {
+function h(e, t, n) {
   let r = p[e];
   return null != r ? n(r) : t
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = f[e];
   null != n && n.forEach(e => delete p[e.id]), f[e] = t, t.forEach(e => p[e.id] = e)
 }
@@ -39,7 +39,7 @@ function g(e) {
     applicationId: t,
     devices: n
   } = e;
-  h(t, n), s.K.set(d, f), _++
+  m(t, n), s.K.set(d, f), _++
 }
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -47,7 +47,7 @@ class E extends(r = Chunk442837.ZP.Store) {
     null != e && a().forEach(e, (e, t) => {
       e.forEach(e => {
         "audioinput" === e.type && e.hardwareMute && (e.hardwareMute = false)
-      }), h(t, e)
+      }), m(t, e)
     })
   }
   isCertified(e) {
@@ -64,22 +64,22 @@ class E extends(r = Chunk442837.ZP.Store) {
     return a().find(p, t => t.type === e)
   }
   isHardwareMute(e) {
-    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.hardwareMute)
+    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.hardwareMute)
   }
   hasEchoCancellation(e) {
-    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.echoCancellation)
+    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.echoCancellation)
   }
   hasNoiseSuppression(e) {
-    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.noiseSuppression)
+    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.noiseSuppression)
   }
   hasAutomaticGainControl(e) {
-    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.automaticGainControl)
+    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.automaticGainControl)
   }
   getVendor(e) {
-    return m(e, null, e => e.vendor)
+    return h(e, null, e => e.vendor)
   }
   getModel(e) {
-    return m(e, null, e => e.model)
+    return h(e, null, e => e.model)
   }
   getRevision() {
     return _

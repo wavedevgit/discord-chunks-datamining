@@ -2,10 +2,10 @@
 /** chunk id: 894276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E3: () => h,
+  E3: () => m,
   Re: () => l,
   fg: () => _,
-  iZ: () => m
+  iZ: () => h
 }), require("./953529.js"), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -139,6 +139,6 @@ class p extends u {
   }
 }
 let _ = new f("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv"),
-  m = new f("2025-10-libdiscore-guildstickersstore", "GuildStickersStore", "Kkv");
+  h = new f("2025-10-libdiscore-guildstickersstore", "GuildStickersStore", "Kkv");
 new p("2025-09-libdiscore-telemetry");
-let h = new d("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")
+let m = new d("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")

@@ -49,7 +49,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -57,14 +57,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = {
+let m = {
   SMALL: Chunk946170.sizeSmall,
   MEDIUM: Chunk946170.sizeMedium,
   LARGE: Chunk946170.sizeLarge
@@ -131,8 +131,8 @@ class g extends(r = Chunk473749.PureComponent) {
     }
   }
 }
-u(g, "Header", Chunk481060.xBx), u(g, "Footer", Chunk481060.mzw), u(g, "Content", Chunk481060.hzk), u(g, "ListContent", Chunk481060.YAO), u(g, "CloseButton", Chunk481060.olH), u(g, "Sizes", h), u(g, "defaultProps", {
+u(g, "Header", Chunk481060.xBx), u(g, "Footer", Chunk481060.mzw), u(g, "Content", Chunk481060.hzk), u(g, "ListContent", Chunk481060.YAO), u(g, "CloseButton", Chunk481060.olH), u(g, "Sizes", m), u(g, "defaultProps", {
   fullscreenOnMobile: true,
-  size: h.SMALL,
+  size: m.SMALL,
   tag: "div"
 })

@@ -40,15 +40,15 @@ function I(e) {
     className: a
   } = e, {
     trackUserProfileAction: u
-  } = (0, _.KZ)(), I = S(t.filter(e => e instanceof m.q)), C = (0, i.useMemo)(() => [...new Set(t.map(e => {
-    if (e instanceof h.zy) return e.games.map(e => e.applicationId);
-    if (e instanceof m.q) {
+  } = (0, _.KZ)(), I = S(t.filter(e => e instanceof h.q)), C = (0, i.useMemo)(() => [...new Set(t.map(e => {
+    if (e instanceof m.zy) return e.games.map(e => e.applicationId);
+    if (e instanceof h.q) {
       var t;
       return null == (t = I[e.applicationId]) ? true : t.id
     }
   }).filter(p.lm).flat())], [t, I]), A = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [N, P] = (0, i.useState)([]), {
-    themeType: R
-  } = (0, E.z)(), w = R === b.l.SIDEBAR, D = (0, i.useRef)(false);
+    themeType: w
+  } = (0, E.z)(), R = w === b.l.SIDEBAR, D = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
     if (A) return void c.Z.getDetectableGames();
     P(C.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
@@ -76,7 +76,7 @@ function I(e) {
     children: (0, r.jsxs)(g.Z.Overlay, {
       className: o()(O.innerContainer, a),
       children: [(0, r.jsx)(l.Text, {
-        variant: w ? "text-sm/medium" : "text-xs/medium",
+        variant: R ? "text-sm/medium" : "text-xs/medium",
         children: y.intl.string(y.t.JjiwFx)
       }), (0, r.jsx)("div", {
         className: O.icons,

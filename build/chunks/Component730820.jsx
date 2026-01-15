@@ -54,13 +54,13 @@ class I extends Chunk473749.PureComponent {
       togglingSMS: i
     } = this.props;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.Z, {
+      children: [(0, r.jsx)(h.Z, {
         backupCodes: e,
         currentUser: n,
         hasTOTPEnabled: t
       }), e.length > 0 && (0, r.jsxs)(l.Kqy, {
         gap: 16,
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(m.Z, {
           backupCodes: e
         }), (0, r.jsx)(l.izJ, {})]
       }), t && (0, r.jsx)(c.F, {

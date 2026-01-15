@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ge: () => o,
-  H6: () => h,
-  JF: () => m,
+  H6: () => m,
+  JF: () => h,
   LN: () => a,
   RA: () => I,
   SH: () => g,
@@ -208,11 +208,11 @@ function p(e) {
 }
 let _ = `(?:${(0,Chunk800911.q3)(c)}|[0-9]{1,2}(?:st|nd|rd|th)?)`;
 
-function m(e) {
+function h(e) {
   let t = e.toLowerCase();
   return true !== c[t] ? c[t] : parseInt(t = t.replace(/(?:st|nd|rd|th)$/i, ""))
 }
-let h = "(?:[1-9][0-9]{0,3}\\s{0,2}(?:BE|AD|BC|BCE|CE)|[1-2][0-9]{3}|[5-9][0-9]|2[0-5])";
+let m = "(?:[1-9][0-9]{0,3}\\s{0,2}(?:BE|AD|BC|BCE|CE)|[1-2][0-9]{3}|[5-9][0-9]|2[0-5])";
 
 function g(e) {
   if (/BE/i.test(e)) return parseInt(e = e.replace(/BE/i, "")) - 543;

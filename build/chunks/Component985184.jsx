@@ -20,8 +20,8 @@ function f(e) {
     accentColor: n,
     spoiler: a,
     renderComponents: f
-  } = e, [p, _] = i.useState(a), [m, h] = i.useState(a);
-  a !== p && (_(a), h(a));
+  } = e, [p, _] = i.useState(a), [h, m] = i.useState(a);
+  a !== p && (_(a), m(a));
   let g = e => (0, r.jsx)(c.am.AutoMeasuredNestedContainer, {
     children: i => (0, r.jsx)("div", {
       ref: i,
@@ -41,8 +41,8 @@ function f(e) {
   return null == t || 0 === t.length ? null : a ? (0, r.jsx)(l.ZP, {
     type: l.ZP.Types.ATTACHMENT,
     reason: s.wk.SPOILER,
-    obscured: m,
-    onToggleObscurity: () => h(e => !e),
+    obscured: h,
+    onToggleObscurity: () => m(e => !e),
     children: e => g(e)
   }) : g(false)
 }

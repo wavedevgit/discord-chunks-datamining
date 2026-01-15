@@ -69,17 +69,17 @@ let I = e => {
       analyticsLocation: T,
       containerContext: C
     } = e,
-    A = (0, a.e7)([f.Z], () => f.Z.theme) === h.BRd.LIGHT ? "light" : "dark",
+    A = (0, a.e7)([f.Z], () => f.Z.theme) === m.BRd.LIGHT ? "light" : "dark",
     N = "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_".concat(A, ".png"),
     P = (0, c.Iu)(e => e.searchQuery),
     {
-      analyticsLocations: R
+      analyticsLocations: w
     } = (0, l.ZP)(s.Z.EMOJI_PICKER);
-  t = I === g.Hz.REACTION ? E.cd.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == v ? E.cd.EMOJI_PICKER_FLOATING_UPSELL : v.subCategory === m.t0.TOP_GUILD_EMOJI ? E.cd.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : v.subCategory === m.t0.NEWLY_ADDED_EMOJI ? E.cd.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.cd.EMOJI_PICKER_EMOJI_CLICKED;
-  let w = null != v ? v.emoji : true,
-    D = null != w && w.animated,
-    x = null != w && !p.ZP.isInternalEmojiForGuildId(w, null == y ? true : y.getGuildId()),
-    L = null != w ? h.qAy.EMOJI : h.qAy.EMOJI_PICKER_FLOATING_UPSELL,
+  t = I === g.Hz.REACTION ? E.cd.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == v ? E.cd.EMOJI_PICKER_FLOATING_UPSELL : v.subCategory === h.t0.TOP_GUILD_EMOJI ? E.cd.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : v.subCategory === h.t0.NEWLY_ADDED_EMOJI ? E.cd.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.cd.EMOJI_PICKER_EMOJI_CLICKED;
+  let R = null != v ? v.emoji : true,
+    D = null != R && R.animated,
+    x = null != R && !p.ZP.isInternalEmojiForGuildId(R, null == y ? true : y.getGuildId()),
+    L = null != R ? m.qAy.EMOJI : m.qAy.EMOJI_PICKER_FLOATING_UPSELL,
     j = (0, a.e7)([u.Z], () => u.Z.hasFetched);
   return i.useEffect(() => {
     j || o.MH()
@@ -93,7 +93,7 @@ let I = e => {
     title: b.intl.string(b.t["0+11FF"]),
     description: b.intl.string(b.t.dURIzS),
     enableSocialProof: false,
-    analyticsLocationSection: h.jXE.EMOJI_UPSELL_POPOUT,
+    analyticsLocationSection: m.jXE.EMOJI_UPSELL_POPOUT,
     onClose: n,
     upsellViewedTrackingData: {
       type: t,
@@ -101,7 +101,7 @@ let I = e => {
       location: S(O({}, T), {
         object: L
       }),
-      location_stack: R,
+      location_stack: w,
       sku_id: (0, _.Wz)(_.ZP.getSkuIdForPremiumType(E.PremiumTypes.TIER_2)),
       has_search_query: null != P && "" !== P,
       is_animated: D

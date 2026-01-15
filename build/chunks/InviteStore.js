@@ -50,9 +50,9 @@ function d(e, t) {
 let f = new Map,
   p = new Map,
   _ = {},
-  m = new Map;
+  h = new Map;
 
-function h(e, t) {
+function m(e, t) {
   var n;
   e = null != e ? e : "";
   let r = (0, o.fU)(e),
@@ -79,82 +79,82 @@ function g(e) {
 }
 
 function E(e) {
-  return h(e.code, t => {
+  return m(e.code, t => {
     var n, r;
     t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null != (n = e.invite.approximate_member_count) ? n : null, t.approximate_presence_count = null != (r = e.invite.approximate_presence_count) ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.expires_at = e.invite.expires_at, t.friends_count = e.invite.friends_count, t.is_contact = e.invite.is_contact, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.flags = e.invite.flags, t.is_nickname_changeable = e.invite.is_nickname_changeable, t.profile = e.invite.profile, t.roles = e.invite.roles
   })
 }
 
 function b(e) {
-  return h(e.invite.code, t => {
+  return m(e.invite.code, t => {
     var n, r;
     t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null != (n = e.invite.approximate_member_count) ? n : null, t.approximate_presence_count = null != (r = e.invite.approximate_presence_count) ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.is_nickname_changeable = e.invite.is_nickname_changeable, t.profile = e.invite.profile, t.roles = e.invite.roles
   })
 }
 
 function y(e) {
-  return h(e.invite.code, t => {
+  return m(e.invite.code, t => {
     t.state = s.r2o.RESOLVED, t.inviter = e.invite.inviter
   })
 }
 
 function O(e) {
-  e.invites.forEach(e => h(e.code, e => {
+  e.invites.forEach(e => m(e.code, e => {
     e.state = s.r2o.EXPIRED
   }))
 }
 
 function v(e) {
-  return h(e.code, t => {
+  return m(e.code, t => {
     t.state = "banned" in e && e.banned ? s.r2o.BANNED : s.r2o.EXPIRED
   })
 }
 
 function S(e) {
-  return h(e.code, e => {
+  return m(e.code, e => {
     e.state = s.r2o.ACCEPTING
   })
 }
 
 function I(e) {
-  return h(e.code, t => {
+  return m(e.code, t => {
     t.state = s.r2o.ACCEPTED, t.guild = e.invite.guild, t.new_member = e.invite.new_member, t.channel = c({}, t.channel, e.invite.channel)
   })
 }
 
 function T(e) {
-  return p.set(e.code, e.error), h(e.code, e => {
+  return p.set(e.code, e.error), m(e.code, e => {
     e.state = s.r2o.ERROR
   })
 }
 
 function C(e) {
-  return h(e.code, e => {
+  return m(e.code, e => {
     e.state = s.r2o.APP_OPENING
   })
 }
 
 function A(e) {
-  return h(e.code, e => {
+  return m(e.code, e => {
     e.state = s.r2o.APP_OPENED
   })
 }
 
 function N(e) {
-  return h(e.code, e => {
+  return m(e.code, e => {
     e.state = s.r2o.APP_NOT_OPENED
   })
 }
 
 function P(e) {
-  (m = new Map(m)).set(e.code, e.friendMemberIds)
+  (h = new Map(h)).set(e.code, e.friendMemberIds)
 }
 
-function R(e) {
-  if (!m.has(e.code)) returnfalse;
-  (m = new Map(m)).delete(e.code)
+function w(e) {
+  if (!h.has(e.code)) returnfalse;
+  (h = new Map(h)).delete(e.code)
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk442837.ZP.Store) {
   getInvite(e) {
     return f.get(e)
   }
@@ -168,11 +168,11 @@ class w extends(r = Chunk442837.ZP.Store) {
     return _[e]
   }
   getFriendMemberIds(e) {
-    return m.get(e)
+    return h.get(e)
   }
 }
-l(w, "displayName", "InviteStore");
-let D = new w(Chunk570140.Z, {
+l(R, "displayName", "InviteStore");
+let D = new R(Chunk570140.Z, {
   INVITE_RESOLVE: g,
   INVITE_RESOLVE_SUCCESS: E,
   INVITE_RESOLVE_FAILURE: v,
@@ -187,5 +187,5 @@ let D = new w(Chunk570140.Z, {
   INVITE_APP_OPENED: A,
   INVITE_APP_NOT_OPENED: N,
   INVITE_FRIEND_MEMBERS_FETCH_SUCCESS: P,
-  INVITE_FRIEND_MEMBERS_FETCH_FAILURE: R
+  INVITE_FRIEND_MEMBERS_FETCH_FAILURE: w
 })

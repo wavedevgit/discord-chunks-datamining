@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => w,
+  Z: () => R,
   c: () => N
 }), require("./415506.js"), require("./358797.js"), require("./457542.js");
 var Chunk990547 = require("./990547.js"),
@@ -79,7 +79,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
   if (P(), null == t) return;
   let n = (0, f.D)();
@@ -93,7 +93,7 @@ function R(e) {
     }]
   })
 }
-let w = {
+let R = {
   startSession(e) {
     l.Z.wait(() => {
       l.Z.dispatch({
@@ -219,7 +219,7 @@ let w = {
         ticket: n,
         login_source: r,
         gift_code_sku_id: a,
-        login_instance_id: null != c ? c : m.default.getLoginInstanceId()
+        login_instance_id: null != c ? c : h.default.getLoginInstanceId()
       },
       retries: 2,
       oldFormErrors: true,
@@ -394,12 +394,12 @@ let w = {
     }), {
       rejectWithError: false
     })).finally(() => {
-      (null == r || r === m.default.getId()) && R(e, n)
+      (null == r || r === h.default.getId()) && w(e, n)
     })
   },
   switchAccountToken(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-      n = m.default.getToken();
+      n = h.default.getToken();
     return T.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
@@ -407,7 +407,7 @@ let w = {
       isSwitchingAccount: true,
       goHomeAfterSwitching: t
     }), this.loginToken(e, true).then(() => {
-      let t = e === m.default.getToken();
+      let t = e === h.default.getToken();
       return T.log("Switched accounts finished", {
         isCorrectToken: t
       }), t
@@ -419,7 +419,7 @@ let w = {
       url: b.ANM.ME,
       oldFormErrors: true,
       rejectWithError: true
-    }).catch(() => R(e, t))
+    }).catch(() => w(e, t))
   },
   async verify(e) {
     let t = await g.Z.post({
@@ -604,7 +604,7 @@ let w = {
     rejectWithError: true
   }).then(e => {
     var t, n, i, a, o;
-    if (clearTimeout(r), null == h.Z.getAuthenticationConsentRequired()) {
+    if (clearTimeout(r), null == m.Z.getAuthenticationConsentRequired()) {
       let t = null == (a = null == e || null == (i = e.body) ? true : i.consent_required) || a;
       l.Z.dispatch({
         type: "SET_CONSENT_REQUIRED",

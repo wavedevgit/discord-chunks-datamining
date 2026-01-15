@@ -52,8 +52,8 @@ let {
   strong: f,
   u: p,
   br: _,
-  em: m,
-  image: h,
+  em: h,
+  image: m,
   text: g
 } = Chunk159635.defaultRules, E = {
   newline: l,
@@ -68,8 +68,8 @@ let {
   strong: f,
   u: p,
   br: _,
-  em: m,
-  image: h,
+  em: h,
+  image: m,
   hook: {
     order: g.order,
     match: (0, Chunk159635.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),

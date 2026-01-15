@@ -25,33 +25,33 @@ let l = 100,
   p = 0,
   _ = null;
 
-function m(e, t) {
+function h(e, t) {
   let n = Math.round(100 * e),
     r = Math.round(100 * p),
     a = Math.round(100 * f);
   n > 0 && a >= r || n < 0 && a <= r ? (clearInterval(_), 0 === r && null != t && t()) : (a += n, f = a / 100, d.volume = i()(f, 0, c))
 }
 
-function h(e) {
+function m(e) {
   null != _ && clearInterval(_), p = 0;
   let t = y();
   _ = setInterval(() => {
-    m(t, e)
+    h(t, e)
   }, l)
 }
 
 function g() {
   null != _ && clearInterval(_), d.loop(), p = c;
   let e = y();
-  _ = setInterval(() => m(e), l)
+  _ = setInterval(() => h(e), l)
 }
 
 function E() {
-  h(d.pause.bind(d))
+  m(d.pause.bind(d))
 }
 
 function b() {
-  h(d.stop.bind(d))
+  m(d.stop.bind(d))
 }
 
 function y() {

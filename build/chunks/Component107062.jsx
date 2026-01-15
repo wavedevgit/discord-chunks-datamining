@@ -34,7 +34,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  R = (e, t, n) => {
+  w = (e, t, n) => {
     let r = N.t["bES+y2"],
       i = E.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
@@ -43,7 +43,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       userName: i
     }).replaceAll("*", "")
   },
-  w = e => {
+  R = e => {
     let {
       entry: t,
       channel: n,
@@ -77,23 +77,23 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
     } = (0, C.n)(n), {
       primaryColor: G,
       secondaryColor: Z
-    } = (0, S.Z)(null == L ? true : L.src), F = (0, a.e7)([h.default], () => h.default.locale), {
+    } = (0, S.Z)(null == L ? true : L.src), F = (0, a.e7)([m.default], () => m.default.locale), {
       displayParticipants: B,
       participant1: V,
       participant2: H,
       numOtherParticipants: Y
     } = (0, y.Z)(n, 3), W = () => {
-      f._(p._b.TEXT, m.Ie.NORMAL, {
+      f._(p._b.TEXT, h.Ie.NORMAL, {
         applicationId: n.extra.application_id
       })
     }, K = i.useCallback(e => {
       if ((null == L ? true : L.src) == null || null == t || null == j) return;
-      let r = Y > 0 ? w({
+      let r = Y > 0 ? R({
         entry: n,
         channel: t,
         users: [V, H],
         countOthers: Y
-      }) : R(n, t, j);
+      }) : w(n, t, j);
       return (0, v.C4)({
         entry: n,
         applicationImageSrc: null == L ? true : L.src,

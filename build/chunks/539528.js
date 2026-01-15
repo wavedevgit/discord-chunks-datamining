@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ep: () => p,
-  Hp: () => m,
+  Hp: () => h,
   PP: () => j,
   lX: () => C,
   ob: () => _,
@@ -68,11 +68,11 @@ function _(e, t, n, a) {
   return n && (o.key = n), a ? o.pathname ? "/" !== o.pathname.charAt(0) && (o.pathname = (0, i.Z)(o.pathname, a.pathname)) : o.pathname = a.pathname : o.pathname || (o.pathname = "/"), o
 }
 
-function m(e, t) {
+function h(e, t) {
   return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash && e.key === t.key && (0, a.Z)(e.state, t.state)
 }
 
-function h() {
+function m() {
   var e = null,
     t = [];
   return {
@@ -151,7 +151,7 @@ function C(e) {
     l = a.forceRefresh,
     c = true !== l && l,
     f = a.getUserConfirmation,
-    m = true === f ? E : f,
+    h = true === f ? E : f,
     O = a.keyLength,
     C = true === O ? 6 : O,
     A = e.basename ? d(s(e.basename)) : "";
@@ -168,10 +168,10 @@ function C(e) {
   function P() {
     return Math.random().toString(36).substr(2, C)
   }
-  var R = h();
+  var w = m();
 
-  function w(e) {
-    (0, r.Z)(Q, e), Q.length = t.length, R.notifyListeners(Q.location, Q.action)
+  function R(e) {
+    (0, r.Z)(Q, e), Q.length = t.length, w.notifyListeners(Q.location, Q.action)
   }
 
   function D(e) {
@@ -184,11 +184,11 @@ function C(e) {
   var L = false;
 
   function j(e) {
-    if (L) L = false, w();
+    if (L) L = false, R();
     else {
       var t = "POP";
-      R.confirmTransitionTo(e, t, m, function(n) {
-        n ? w({
+      w.confirmTransitionTo(e, t, h, function(n) {
+        n ? R({
           action: t,
           location: e
         }) : M(e)
@@ -215,7 +215,7 @@ function C(e) {
   function Z(e, r) {
     var i = "PUSH",
       a = _(e, r, P(), Q.location);
-    R.confirmTransitionTo(a, i, m, function(e) {
+    w.confirmTransitionTo(a, i, h, function(e) {
       if (e) {
         var r = G(a),
           o = a.key,
@@ -228,7 +228,7 @@ function C(e) {
           else {
             var l = U.indexOf(Q.location.key),
               u = U.slice(0, l + 1);
-            u.push(a.key), U = u, w({
+            u.push(a.key), U = u, R({
               action: i,
               location: a
             })
@@ -241,7 +241,7 @@ function C(e) {
   function F(e, r) {
     var i = "REPLACE",
       a = _(e, r, P(), Q.location);
-    R.confirmTransitionTo(a, i, m, function(e) {
+    w.confirmTransitionTo(a, i, h, function(e) {
       if (e) {
         var r = G(a),
           o = a.key,
@@ -253,7 +253,7 @@ function C(e) {
             }, null, r), c) window.location.replace(r);
           else {
             var l = U.indexOf(Q.location.key);
-            false !== l && (U[l] = a.key), w({
+            false !== l && (U[l] = a.key), R({
               action: i,
               location: a
             })
@@ -283,7 +283,7 @@ function C(e) {
 
   function z(e) {
     true === e && (e = false);
-    var t = R.setPrompt(e);
+    var t = w.setPrompt(e);
     return K || (W(1), K = true),
       function() {
         return K && (K = false, W(false)), t()
@@ -291,7 +291,7 @@ function C(e) {
   }
 
   function q(e) {
-    var t = R.appendListener(e);
+    var t = w.appendListener(e);
     return W(1),
       function() {
         W(false), t()
@@ -337,13 +337,13 @@ function P(e) {
   return false === t ? e : e.slice(0, t)
 }
 
-function R() {
+function w() {
   var e = window.location.href,
     t = e.indexOf("#");
   return false === t ? "" : e.substring(t + 1)
 }
 
-function w(e) {
+function R(e) {
   window.location.hash = e
 }
 
@@ -361,15 +361,15 @@ function x(e) {
     l = n.hashType,
     c = true === l ? "slash" : l,
     f = e.basename ? d(s(e.basename)) : "",
-    m = N[c],
-    b = m.encodePath,
-    y = m.decodePath;
+    h = N[c],
+    b = h.encodePath,
+    y = h.decodePath;
 
   function v() {
-    var e = y(R());
+    var e = y(w());
     return f && (e = u(e, f)), _(e)
   }
-  var S = h();
+  var S = m();
 
   function I(e) {
     (0, r.Z)(J, e), J.length = t.length, S.notifyListeners(J.location, J.action)
@@ -382,7 +382,7 @@ function x(e) {
   }
 
   function L() {
-    var e = R(),
+    var e = w(),
       t = b(e);
     if (e !== t) D(t);
     else {
@@ -415,7 +415,7 @@ function x(e) {
     var i = n - r;
     i && (T = true, H(i))
   }
-  var k = R(),
+  var k = w(),
     U = b(k);
   k !== U && D(U);
   var G = v(),
@@ -434,9 +434,9 @@ function x(e) {
       if (e) {
         var t = p(r),
           i = b(f + t),
-          a = R() !== i;
+          a = w() !== i;
         if (a) {
-          C = t, w(i);
+          C = t, R(i);
           var o = Z.lastIndexOf(p(J.location)),
             s = Z.slice(0, o + 1);
           s.push(t), Z = s, I({
@@ -455,7 +455,7 @@ function x(e) {
       if (e) {
         var t = p(r),
           i = b(f + t),
-          a = R() !== i;
+          a = w() !== i;
         a && (C = t, D(i));
         var o = Z.indexOf(p(J.location));
         false !== o && (Z[o] = t), I({
@@ -530,7 +530,7 @@ function j(e) {
     s = true === o ? 0 : o,
     l = t.keyLength,
     c = true === l ? 6 : l,
-    u = h();
+    u = m();
 
   function d(e) {
     (0, r.Z)(A, e), A.length = A.entries.length, u.notifyListeners(A.location, A.action)
@@ -539,7 +539,7 @@ function j(e) {
   function f() {
     return Math.random().toString(36).substr(2, c)
   }
-  var m = L(s, 0, a.length - 1),
+  var h = L(s, 0, a.length - 1),
     g = a.map(function(e) {
       return "string" == typeof e ? _(e, true, f()) : _(e, true, e.key || f())
     }),
@@ -610,8 +610,8 @@ function j(e) {
   var A = {
     length: g.length,
     action: "POP",
-    location: g[m],
-    index: m,
+    location: g[h],
+    index: h,
     entries: g,
     createHref: E,
     push: b,

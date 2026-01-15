@@ -71,8 +71,8 @@ let N = {
     confettiEnabled: false
   },
   P = (0, Chunk392711.range)(0, 11),
-  R = (0, Chunk392711.range)(0, 2.25, .25),
-  w = (0, Chunk392711.range)(1, 11),
+  w = (0, Chunk392711.range)(0, 2.25, .25),
+  R = (0, Chunk392711.range)(1, 11),
   D = (0, Chunk392711.range)(1, 26),
   x = () => [{
     location: O.Hn.CHAT_INPUT,
@@ -146,7 +146,7 @@ function k(e) {
     },
     updateSettings: i
   } = e, a = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), s = e => {
-    e || (0, m.T)(h.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.Z)({
+    e || (0, h.T)(m.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.Z)({
       title: a ? v.intl.string(v.t["FxT+p0"]) : v.intl.string(v.t.TAZ4F9),
       subtitle: a ? v.intl.string(v.t.gmixrx) : v.intl.string(v.t.jN3t3K),
       confirmText: v.intl.string(v.t.JFfins),
@@ -197,10 +197,10 @@ function U(e) {
         children: v.intl.string(v.t.a18Sug)
       }), (0, r.jsx)(c.iRW, {
         disabled: l,
-        markers: w,
+        markers: R,
         stickToMarkers: true,
-        minValue: w[0],
-        maxValue: w[w.length - 1],
+        minValue: R[0],
+        maxValue: R[R.length - 1],
         initialValue: i,
         onValueChange: e => s({
           confettiCount: e
@@ -300,7 +300,7 @@ function Z(e) {
     },
     updateSettings: s
   } = e, l = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), d = !t || !n || l, f = (e, t) => {
-    null != e.shakeIntensity && e.shakeIntensity > i && (0, m.T)(h.hn.MORE), s(e, t)
+    null != e.shakeIntensity && e.shakeIntensity > i && (0, h.T)(m.hn.MORE), s(e, t)
   };
   return (0, r.jsxs)(c.C3N, {
     label: v.intl.string(v.t.wVS5Sd),
@@ -322,16 +322,16 @@ function Z(e) {
         children: v.intl.string(v.t.CEOEOb)
       }), (0, r.jsx)(c.iRW, {
         disabled: d,
-        markers: R,
+        markers: w,
         equidistant: true,
         stickToMarkers: true,
-        minValue: R[0],
-        maxValue: R[R.length - 1],
+        minValue: w[0],
+        maxValue: w[w.length - 1],
         initialValue: i,
         onValueChange: e => f({
           shakeIntensity: e
         }, 1),
-        onMarkerRender: e => e === R[R.length - 1] ? v.intl.string(v.t["4rbMWc"]) : "".concat(100 * e, "%")
+        onMarkerRender: e => e === w[w.length - 1] ? v.intl.string(v.t["4rbMWc"]) : "".concat(100 * e, "%")
       })]
     }), (0, r.jsx)(j, {
       disabled: d,
@@ -434,7 +434,7 @@ function H(e) {
         })
       }
     },
-    m = (e, t) => {
+    h = (e, t) => {
       if (p(e), (0, g.AI)(e), null == t) return;
       let n = 0 === t,
         r = d(a.confettiEnabled, e.confettiEnabled, a.enabled, e.enabled);
@@ -451,30 +451,30 @@ function H(e) {
         })
       }
     },
-    h = e => {
+    m = e => {
       l({
         x: e.clientX,
         y: e.clientY
       })
     };
-  return i.useEffect(() => (window.addEventListener("mousemove", h), () => window.removeEventListener("mousemove", h)), []), (0, r.jsxs)(c.Kqy, {
+  return i.useEffect(() => (window.addEventListener("mousemove", m), () => window.removeEventListener("mousemove", m)), []), (0, r.jsxs)(c.Kqy, {
     gap: 24,
     children: [(0, r.jsx)(k, {
       settings: a,
-      updateSettings: m
+      updateSettings: h
     }), (0, r.jsx)(B, {
       onChangePage: t
     }), (0, r.jsx)(G, {
       settings: a,
-      updateSettings: m
+      updateSettings: h
     }), (0, r.jsx)(Z, {
       settings: a,
-      updateSettings: m
+      updateSettings: h
     }), (0, r.jsx)(U, {
       settings: a,
-      updateSettings: m
+      updateSettings: h
     }), (0, r.jsx)(F, {
-      updateSettings: m
+      updateSettings: h
     })]
   })
 }
@@ -507,7 +507,7 @@ function z() {
     }, W);
     return () => clearTimeout(t)
   }, [e]), i.useEffect(() => {
-    Math.random() > .99 && (0, m.T)(h.hn.VISITOR_100)
+    Math.random() > .99 && (0, h.T)(m.hn.VISITOR_100)
   }, []), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       className: S.slideAnimator,

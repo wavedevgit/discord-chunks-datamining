@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,7 +105,7 @@ function I(e) {
   if (null == r) return;
   let i = O(r),
     a = i[t];
-  null == a && (a = i[t] = {}), a[1] = h(_({
+  null == a && (a = i[t] = {}), a[1] = m(_({
     timestamp: Date.now()
   }, a[1], n), {
     parentChannelId: t
@@ -148,7 +148,7 @@ function P(e) {
   return delete r[t], false
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t
   } = e, n = u.default.getId();
@@ -172,7 +172,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   e.isSwitchingAccount || (b = {})
 }
 
@@ -258,12 +258,12 @@ p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migra
 }]);
 let j = new L(Chunk570140.Z, {
   CONNECTION_OPEN: A,
-  LOGOUT: w,
+  LOGOUT: R,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: N,
   CHANNEL_DELETE: P,
   THREAD_DELETE: P,
-  THREAD_CREATE: R,
+  THREAD_CREATE: w,
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
   DRAFT_CLEAR: S,

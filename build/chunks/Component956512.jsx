@@ -73,22 +73,22 @@ function N(e) {
     application: C,
     channel: N,
     analyticsLocations: P,
-    onView: R
+    onView: w
   } = e, {
-    staticBannerSrc: w,
+    staticBannerSrc: R,
     videoBannerSrc: D,
     bannerAspectRatio: x
   } = (0, d.E)(C), L = g.ZP.getApplicationIconURL({
     id: C.id,
     icon: C.icon
-  }), j = (0, i.e7)([f.ZP, m.Z], () => f.ZP.getVisibleRunningGames().find(e => {
+  }), j = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
     let {
       id: t
     } = e;
     if (t === C.id) returntrue;
-    let n = m.Z.getGameByApplication(C);
+    let n = h.Z.getGameByApplication(C);
     return null != n && t === n.id
-  })), M = (0, i.e7)([_.Z], () => _.Z.getCurrentUserActiveStream()), k = (0, i.e7)([h.Z], () => h.Z.getChannelId()), U = b.default.extractTimestamp(I.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
+  })), M = (0, i.e7)([_.Z], () => _.Z.getCurrentUserActiveStream()), k = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(I.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
     children: (0, o._0)(I, N, t)
   }), {
     analyticsLocations: Z
@@ -96,7 +96,7 @@ function N(e) {
   return U ? (F = S.intl.string(v.default.u4QmWl), B = true) : null != M ? (F = S.intl.string(v.default.P0wwmM), B = true) : k !== N.id ? (F = S.intl.string(v.default.qRXats), B = true) : null == j && (F = S.intl.string(v.default["43zohO"]), B = true), (0, r.jsx)(c.W, {
     header: S.intl.string(v.default.nAyuPp),
     title: C.name,
-    staticBannerSrc: w,
+    staticBannerSrc: R,
     videoBannerSrc: D,
     bannerAspectRatio: x,
     iconSrc: null != L ? L : true,
@@ -122,7 +122,7 @@ function N(e) {
       guildId: N.guild_id,
       channelId: N.id,
       messageId: I.id,
-      onView: R,
+      onView: w,
       isDeadEnd: U
     }
   })

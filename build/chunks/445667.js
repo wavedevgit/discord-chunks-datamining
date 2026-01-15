@@ -36,6 +36,6 @@ module.exports = !f || Chunk621523(function() {
   }), 7 !== f({}, e)[n] || s(f({}, t)).join("") !== i
 }) ? function(e, t) {
   for (var n = u(e), i = arguments.length, o = 1, f = l.f, p = c.f; i > o;)
-    for (var m, h = d(arguments[o++]), g = f ? _(s(h), f(h)) : s(h), E = g.length, b = 0; E > b;) m = g[b++], (!r || a(p, h, m)) && (n[m] = h[m]);
+    for (var h, m = d(arguments[o++]), g = f ? _(s(m), f(m)) : s(m), E = g.length, b = 0; E > b;) h = g[b++], (!r || a(p, m, h)) && (n[h] = m[h]);
   return n
 } : f

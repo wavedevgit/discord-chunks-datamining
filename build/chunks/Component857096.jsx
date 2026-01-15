@@ -30,7 +30,7 @@ var Chunk120356 = require("./120356.js"),
 function I(e) {
   let {
     isLoading: t
-  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([m.Z], () => m.Z.isFrameHidden()), I = i === b.U.PIP && !d, T = I && null != m.Z.pipVideoWindow && null != m.Z.pipFrameWindow;
+  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), I = i === b.U.PIP && !d, T = I && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
   if (null == n || null == u) return null;
   let C = {
     instance_id: "example-cl-instance",
@@ -55,7 +55,7 @@ function I(e) {
         onMouseDown: t,
         onMouseLeave: i,
         onFocus: () => {
-          h.Z.updateFrameLayoutMode({
+          m.Z.updateFrameLayoutMode({
             applicationId: n.applicationId,
             layoutMode: b.U.FOCUSED
           })

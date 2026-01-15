@@ -37,12 +37,12 @@ function _(e) {
   }
   return e
 }
-let m = () => (0, r.jsx)("img", {
+let h = () => (0, r.jsx)("img", {
     className: f.notificationBadge,
     src: n(808824),
     alt: ""
   }),
-  h = "balance-widget-pill",
+  m = "balance-widget-pill",
   g = (e, t) => e === c.b.SELECTED ? f.selected : t ? f.highlighted : f.default,
   E = (0, Chunk473749.forwardRef)(function(e, t) {
     let {
@@ -55,10 +55,10 @@ let m = () => (0, r.jsx)("img", {
       disabled: O,
       isInModalOverlay: v,
       className: S
-    } = e, [I, T] = (0, i.useState)(false), C = (0, i.useMemo)(() => g(p, I), [p, I]), [A, N] = (0, i.useState)(false), [P, R] = (0, i.useState)(false), [w, D] = (0, i.useState)(.9 * l.D2), x = null === a;
+    } = e, [I, T] = (0, i.useState)(false), C = (0, i.useMemo)(() => g(p, I), [p, I]), [A, N] = (0, i.useState)(false), [P, w] = (0, i.useState)(false), [R, D] = (0, i.useState)(.9 * l.D2), x = null === a;
     (0, i.useEffect)(() => {
       x && !A && (N(true), setTimeout(() => {
-        R(true)
+        w(true)
       }, 500))
     }, [x, N, A]), (0, i.useEffect)(() => {
       P && !x && N(false)
@@ -84,7 +84,7 @@ let m = () => (0, r.jsx)("img", {
       className: o()(f.clickable, {
         [f.disabled]: O
       }),
-      id: null != n ? n : h,
+      id: null != n ? n : m,
       children: (0, r.jsxs)("span", {
         onMouseDown: y,
         onMouseEnter: O ? true : () => T(true),
@@ -102,9 +102,9 @@ let m = () => (0, r.jsx)("img", {
           value: j,
           onValueChange: Z,
           onValueReached: G,
-          targetTotalCounterTime: w,
+          targetTotalCounterTime: R,
           className: L ? f.counterLoading : true
-        }), E && (0, r.jsx)(m, {})]
+        }), E && (0, r.jsx)(h, {})]
       })
     })
   })

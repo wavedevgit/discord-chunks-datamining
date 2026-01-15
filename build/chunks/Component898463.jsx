@@ -74,15 +74,15 @@ function P(e) {
     renderContent: a,
     size: s
   } = e, [l, c] = i.useState(false);
-  return (0, r.jsx)(h.aQ.Provider, {
+  return (0, r.jsx)(m.aQ.Provider, {
     value: !n,
-    children: (0, r.jsx)(h.ZP, {
+    children: (0, r.jsx)(m.ZP, {
       containerStyles: s === O.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
       } : true,
-      type: h.ZP.Types.ATTACHMENT,
+      type: m.ZP.Types.ATTACHMENT,
       onReveal: () => c(true),
       className: o()(S.spoilerContainer, {
         [S.sizeXSmall]: s === O.q.XSMALL,
@@ -105,7 +105,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     file: t,
     alt: n,
@@ -137,7 +137,7 @@ function R(e) {
       }), URL.revokeObjectURL(e)
     }
   }, [t]);
-  let h = i.useCallback(function(e) {
+  let m = i.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       return null == u ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)("img", {
         src: u,
@@ -153,7 +153,7 @@ function R(e) {
       })
     }, [u, _, s, n, f]),
     g = i.useCallback(() => {
-      null != u && (0, m.K)({
+      null != u && (0, h.K)({
         location: "ChannelAttachmentUpload",
         items: [{
           type: "IMAGE",
@@ -182,13 +182,13 @@ function R(e) {
         size: s,
         alt: n,
         spoiler: a,
-        renderContent: h
+        renderContent: m
       })
     })
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     file: t,
     alt: n,
@@ -234,13 +234,13 @@ function D(e) {
     size: a = O.q.MEDIUM,
     onMouseEnter: s
   } = e, [l, c] = i.useState(false);
-  return n.isImage && n.item.platform === f.ow.WEB ? (0, r.jsx)(R, {
+  return n.isImage && n.item.platform === f.ow.WEB ? (0, r.jsx)(w, {
     file: n.item.file,
     alt: n.description,
     spoiler: n.spoiler,
     size: a,
     onMouseEnter: s
-  }) : !l && n.isVideo && n.item.platform === f.ow.WEB ? (0, r.jsx)(w, {
+  }) : !l && n.isVideo && n.item.platform === f.ow.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     size: a,
     alt: n.description,
@@ -271,14 +271,14 @@ function x(e) {
     upload: a,
     keyboardModeEnabled: f,
     label: _,
-    size: m = O.q.MEDIUM,
-    canEdit: h = true,
+    size: h = O.q.MEDIUM,
+    canEdit: m = true,
     hideFileName: E = false,
     clip: I
-  } = e, C = null != I, N = (m = C ? O.q.CLIP : m) === O.q.SMALL, P = (0, s.e7)([g.Z], () => {
+  } = e, C = null != I, N = (h = C ? O.q.CLIP : h) === O.q.SMALL, P = (0, s.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getChannel(t)) ? true : e.guild_id
-  }), R = e => {
+  }), w = e => {
     e.stopPropagation(), (0, c.h7j)(e => (0, r.jsx)(d.default, A(T({}, e), {
       draftType: n,
       upload: a,
@@ -299,7 +299,7 @@ function x(e) {
   };
   return (0, r.jsxs)(O.Z, {
     actions: (0, r.jsxs)(i.Fragment, {
-      children: [h ? (0, r.jsx)(y.Z, {
+      children: [m ? (0, r.jsx)(y.Z, {
         className: o()({
           [S.action]: N
         }),
@@ -320,12 +320,12 @@ function x(e) {
             [S.actionBarIcon]: N
           })
         })
-      }) : null, h && !C ? (0, r.jsx)(y.Z, {
+      }) : null, m && !C ? (0, r.jsx)(y.Z, {
         className: o()({
           [S.action]: N
         }),
         tooltip: v.intl.string(v.t.Y8ujqr),
-        onClick: R,
+        onClick: w,
         children: (0, r.jsx)(c.vdY, {
           size: "xs",
           color: "currentColor",
@@ -352,15 +352,15 @@ function x(e) {
     draftType: n,
     id: a.id,
     channelId: t,
-    handleEditModal: R,
+    handleEditModal: w,
     keyboardModeEnabled: f,
-    size: m,
+    size: h,
     className: o()({
       [S.attachmentItemSmall]: N
     }),
     children: [(0, r.jsx)(D, {
       upload: a,
-      size: m
+      size: h
     }), !E && !C && (0, r.jsx)("div", {
       className: S.filenameContainer,
       "aria-hidden": true,

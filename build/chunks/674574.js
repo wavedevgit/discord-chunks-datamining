@@ -19,7 +19,7 @@ let E = (0, Chunk509613.wf)(Chunk313789.n.NOTIFICATIONS_PANEL, {
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.NOTIFICATIONS_SIDEBAR_ITEM, {
     useTitle: () => c.intl.string(c.t.HcoRu0),
-    icon: Chunk657707.Dkj,
+    icon: Chunk657707.BellIcon,
     usePredicate: () => (0, u.gj)("NotificationsPanel"),
     buildLayout: () => [E]
   })

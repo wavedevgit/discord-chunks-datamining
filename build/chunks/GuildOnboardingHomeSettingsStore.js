@@ -51,14 +51,14 @@ function _(e) {
   null != n && (null == t && (u[n] = l), u[n] = t, p(n), d.delete(n))
 }
 
-function m(e) {
+function h(e) {
   let {
     guildId: t
   } = e;
   d.add(t)
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t
   } = e;
@@ -152,9 +152,9 @@ class O extends(r = Chunk442837.ZP.Store) {
 }
 o(O, "displayName", "GuildOnboardingHomeSettingsStore");
 let v = new O(Chunk570140.Z, {
-  GUILD_HOME_SETTINGS_FETCH_START: m,
+  GUILD_HOME_SETTINGS_FETCH_START: h,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: _,
-  GUILD_HOME_SETTINGS_FETCH_FAIL: h,
+  GUILD_HOME_SETTINGS_FETCH_FAIL: m,
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: _,
   GUILD_HOME_SETTINGS_TOGGLE_ENABLED: g,
   GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: b,

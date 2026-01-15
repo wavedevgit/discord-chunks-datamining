@@ -21,15 +21,15 @@ function u(e) {
     state: i,
     executeStateUpdate: u,
     error: d
-  } = t.useComponentState(e), f = r.useMemo(() => (null == i ? true : i.type) === o.re.FILE_UPLOAD ? i.uploadIds : [], [i]), p = l.Z.getUploads(n, s.d.InteractionModal), _ = r.useMemo(() => f.map(e => p.find(t => t.id === e)).filter(e => null != e), [f, p]), m = r.useCallback(e => u({
+  } = t.useComponentState(e), f = r.useMemo(() => (null == i ? true : i.type) === o.re.FILE_UPLOAD ? i.uploadIds : [], [i]), p = l.Z.getUploads(n, s.d.InteractionModal), _ = r.useMemo(() => f.map(e => p.find(t => t.id === e)).filter(e => null != e), [f, p]), h = r.useCallback(e => u({
     type: o.re.FILE_UPLOAD,
     uploadIds: e
   }), [u]);
   return r.useEffect(() => {
-    f.length > _.length && m(f.filter(e => _.some(t => t.id === e)))
-  }, [f, _, m]), {
+    f.length > _.length && h(f.filter(e => _.some(t => t.id === e)))
+  }, [f, _, h]), {
     uploadIds: f,
-    setUploadIds: m,
+    setUploadIds: h,
     currentUploads: _,
     error: d
   }

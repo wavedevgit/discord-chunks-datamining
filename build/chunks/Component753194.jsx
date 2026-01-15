@@ -21,15 +21,15 @@ function f(e) {
       size: f,
       forcedIconColor: p,
       className: _,
-      iconClassName: m,
-      tooltipText: h
+      iconClassName: h,
+      tooltipText: m
     } = e,
     [g, E] = (0, a.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.saturation]),
     b = (0, l.dQu)(o.Z.unsafe_rawColors.PRIMARY_300).hex(),
     y = (0, i._i)(null != n ? n : b),
     O = (0, i.ho)(y, false, g ? E : null);
   return t = null != p ? p : .3 > (0, i.Bd)(y) ? o.Z.unsafe_rawColors.PRIMARY_630.css : o.Z.unsafe_rawColors.WHITE.css, (0, r.jsx)(s.u, {
-    text: null != h ? h : d.intl.string(d.t.T3PvV4),
+    text: null != m ? m : d.intl.string(d.t.T3PvV4),
     children: (0, r.jsx)(u.Z, {
       className: _,
       color: O,
@@ -39,7 +39,7 @@ function f(e) {
         color: t,
         height: f,
         width: f,
-        className: m
+        className: h
       })
     })
   })

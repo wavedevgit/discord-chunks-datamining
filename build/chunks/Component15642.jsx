@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk56324 = require("./56324.js");
-let m = 6,
-  h = 1e3;
+let h = 6,
+  m = 1e3;
 
 function g(e) {
   let {
@@ -29,8 +29,8 @@ function g(e) {
   } = i.useContext(c.h), O = i.useCallback(e => ({
     size: {
       type: "static-random",
-      minValue: e.confettiSize - m,
-      maxValue: e.confettiSize + m
+      minValue: e.confettiSize - h,
+      maxValue: e.confettiSize + h
     },
     velocity: {
       type: "static-random",
@@ -52,7 +52,7 @@ function g(e) {
     let n = O({
         confettiSize: 8
       }),
-      r = new o.sW(h, () => {
+      r = new o.sW(m, () => {
         y(t.left + t.width / 2, t.top + t.height / 2, n, 60)
       });
     return r.delay(), () => {

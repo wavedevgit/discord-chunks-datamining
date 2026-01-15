@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -167,7 +167,7 @@ class g extends(r = Chunk473749.PureComponent) {
       baseHeight: a,
       targetHeight: o
     } = this.state, s = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
-    return h(_({}, {
+    return m(_({}, {
       overflow: d || u ? "hidden" : "visible",
       position: u ? "absolute" : true,
       top: u ? l : true,

@@ -25,6 +25,6 @@ let o = (0, Chunk509613.k4)(Chunk313789.n.EXPERIMENTS_CATEGORY, {
   }),
   c = (0, Chunk509613.m7)(Chunk313789.n.EXPERIMENTS_SIDEBAR_ITEM, {
     useTitle: () => "Experiments",
-    icon: Chunk657707.uOV,
+    icon: Chunk657707.BeakerIcon,
     buildLayout: () => (0, u.Gl)("ExperimentsPanel") ? [S] : [T]
   })

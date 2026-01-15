@@ -24,15 +24,15 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = "RPC_STORE_WAIT",
-  h = [];
+let h = "RPC_STORE_WAIT",
+  m = [];
 
 function g(e, t) {
   return o().isEqual(e, o().pick(t, Object.keys(e)))
 }
 
 function E(e) {
-  return !!h.includes(e) || (h.unshift(e), h.splice(50), false)
+  return !!m.includes(e) || (m.unshift(e), m.splice(50), false)
 }
 class b {
   registerTransport(e) {
@@ -191,14 +191,14 @@ class b {
     let r = t();
     if (r || 0 === n) return Promise.resolve(r);
     let i = o().uniqueId(),
-      a = () => this.removeSubscription(e, m, {
+      a = () => this.removeSubscription(e, h, {
         uniqueId: i
       });
     return new Promise((r, o) => {
       let s = setTimeout(() => {
         a(), o(Error("timeout"))
       }, n * l.Z.Millis.SECOND);
-      this.addSubscription(e, m, {
+      this.addSubscription(e, h, {
         uniqueId: i
       }, () => {
         let e = t();

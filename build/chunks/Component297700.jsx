@@ -2,7 +2,7 @@
 /** chunk id: 297700, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,24 +68,24 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     size: n = 16,
     className: a,
     flowerStarClassName: c
-  } = e, d = p(e, ["children", "size", "className", "flowerStarClassName"]), _ = i.Children.only(t), m = {
+  } = e, d = p(e, ["children", "size", "className", "flowerStarClassName"]), _ = i.Children.only(t), h = {
     width: n,
     height: n
-  }, h = !e.allowFullSizedIcon;
+  }, m = !e.allowFullSizedIcon;
   return (0, r.jsxs)("div", {
     className: o()(l.flowerStarContainer, a),
-    style: m,
+    style: h,
     children: [(0, r.jsx)(s.Z, f(u({}, d), {
       className: o()(c, l.flowerStar)
     })), (0, r.jsx)("div", {
       className: o()(l.childContainer, {
-        [l.redesignIconChildContainer]: h
+        [l.redesignIconChildContainer]: m
       }),
       children: _
     })]

@@ -2,7 +2,7 @@
 /** chunk id: 128077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => m
+  f: () => h
 }), require("./388685.js"), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,8 +17,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
-  let [t, n] = (0, r.useState)(""), [m, h] = (0, r.useState)([]), [g, E] = (0, r.useState)(null), [b, y] = (0, r.useState)(false), O = (0, r.useRef)(null), {
+function h(e) {
+  let [t, n] = (0, r.useState)(""), [h, m] = (0, r.useState)([]), [g, E] = (0, r.useState)(null), [b, y] = (0, r.useState)(false), O = (0, r.useRef)(null), {
     enabled: v
   } = f.Z.useConfig({
     location: "orb_checkout_modal"
@@ -76,8 +76,8 @@ function m(e) {
           await new Promise(e => setTimeout(e, 500));
           let t = await T(e, a);
           if (0 === t.length) throw Error("No entitlements found after order signing");
-          h(t), y(false), null == n || n(t)
-        } else h(c), y(false), null == n || n(c)
+          m(t), y(false), null == n || n(t)
+        } else m(c), y(false), null == n || n(c)
       } catch (e) {
         E(e instanceof o.ZP ? e : new o.ZP(e)), y(false)
       }
@@ -88,7 +88,7 @@ function m(e) {
           y(true), E(null)
         },
         a = e => {
-          h(e), y(false), null == n || n(e)
+          m(e), y(false), null == n || n(e)
         },
         o = e => {
           E(e), y(false)
@@ -117,20 +117,20 @@ function m(e) {
       amount: "1 orb",
       errorMessage: g.message
     }));
-    if (null != m && m.length > 0) {
-      let e = m.map(e => {
+    if (null != h && h.length > 0) {
+      let e = h.map(e => {
         var t;
         return null == (t = e.sku) ? true : t.name
       });
       n(_.intl.format(_.t.JxNFav, {
         amountDescription: "1 orb",
-        redeemedItemDescription: "".concat(1 === e.length ? "SKU" : "SKUs", ": ").concat(e.join(", "), ". Entitlement ").concat(1 === m.length ? "ID" : "IDs", ": ").concat(m.map(e => e.id).join(", "))
+        redeemedItemDescription: "".concat(1 === e.length ? "SKU" : "SKUs", ": ").concat(e.join(", "), ". Entitlement ").concat(1 === h.length ? "ID" : "IDs", ": ").concat(h.map(e => e.id).join(", "))
       }));
       return
     }
     n("")
-  }, [m, g]), {
-    entitlements: m,
+  }, [h, g]), {
+    entitlements: h,
     error: g,
     isSubmitting: b || v && S,
     responseMessage: t,

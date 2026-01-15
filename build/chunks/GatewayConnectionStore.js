@@ -38,9 +38,9 @@ function P(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let R = window.DiscordNative;
+let w = window.DiscordNative;
 Chunk955132.Wb.dispatcher.getDispatchHandler = Chunk344651.Z;
-let w = new Chunk710845.Z("ConnectionStore"),
+let R = new Chunk710845.Z("ConnectionStore"),
   D = 100,
   x = 0,
   L = null,
@@ -49,15 +49,15 @@ let w = new Chunk710845.Z("ConnectionStore"),
   k = null;
 
 function U() {
-  return I.Wb.isClosed() ? (w.verbose("Socket is reconnecting because of starting new session"), I.Wb.connect()) : (w.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
+  return I.Wb.isClosed() ? (R.verbose("Socket is reconnecting because of starting new session"), I.Wb.connect()) : (R.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
 }
 
 function G(e) {
-  e.isSwitchingAccount && I.RR.handleAccountSwitch(), w.verbose("Closing socket because of logout"), I.Wb.close()
+  e.isSwitchingAccount && I.RR.handleAccountSwitch(), R.verbose("Closing socket because of logout"), I.Wb.close()
 }
 
 function Z() {
-  return w.verbose("session refresh dispatched", {
+  return R.verbose("session refresh dispatched", {
     isEstablished: I.Wb.isSessionEstablished()
   }), !!I.Wb.isSessionEstablished() && (I.Wb.close(), I.Wb.connect())
 }
@@ -67,9 +67,9 @@ async function F(e) {
     n = b.Z.getVoiceChannelId();
   if (null != n) {
     var r, i, a, o, s, c, u, f;
-    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (f = R.processUtils) || null == (u = f.getLastCrash) ? true : u.call(f))) ? true : c.rendererCrashReason) == null && j) g.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == w || null == (f = w.processUtils) || null == (u = f.getLastCrash) ? true : u.call(f))) ? true : c.rendererCrashReason) == null && j) g.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
-      let e = m.Z.getChannel(n);
+      let e = h.Z.getChannel(n);
       null != e && (t = {
         guildId: e.getGuildId(),
         channelId: n
@@ -80,7 +80,7 @@ async function F(e) {
 }
 
 function B() {
-  w.verbose("connection closed dispatched"), x = Date.now()
+  R.verbose("connection closed dispatched"), x = Date.now()
 }
 
 function V() {
@@ -114,7 +114,7 @@ function z(e) {
   return t.reduce((e, t) => {
     if (p.default.getId() !== t.userId) return e;
     if (t.sessionId === L) {
-      if (null != k) return w.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
+      if (null != k) return R.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
       I.GC.setState({
         guildId: t.guildId,
         channelId: t.channelId
@@ -254,7 +254,7 @@ function ed(e) {
   } = e;
   if (I.Wb.isSessionEstablished()) {
     var i, a;
-    let e = null != n ? null == (i = m.Z.getChannel(r)) ? true : i.rtcRegion : null == (a = _.Z.getCall(r)) ? true : a.region;
+    let e = null != n ? null == (i = h.Z.getChannel(r)) ? true : i.rtcRegion : null == (a = _.Z.getCall(r)) ? true : a.region;
     I.Wb.streamCreate(t, n, r, null != e ? e : E.Z.getPreferredRegion())
   }
   returnfalse
@@ -283,11 +283,11 @@ function e_(e) {
   return el(t), W(), false
 }
 
-function em() {
+function eh() {
   return I.Wb.expeditedHeartbeat(5e3, "user clicked on notification", true), false
 }
 
-function eh(e) {
+function em(e) {
   let {
     guildId: t,
     channelId: n,
@@ -308,7 +308,7 @@ function eE(e) {
 }
 class eb extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(p.default, _.Z, m.Z, h.Z, g.Z, E.Z, b.Z, y.Z, O.Z, f.Z), this.syncWith([h.Z], ee), this.syncWith([y.Z], et)
+    this.waitFor(p.default, _.Z, h.Z, m.Z, g.Z, E.Z, b.Z, y.Z, O.Z, f.Z), this.syncWith([m.Z], ee), this.syncWith([y.Z], et)
   }
   getSocket() {
     return I.Wb
@@ -354,8 +354,8 @@ let ey = new eb(Chunk570140.Z, {
   STREAM_WATCH: ep,
   STREAM_STOP: e_,
   STREAM_SET_PAUSED: ef,
-  PUSH_NOTIFICATION_CLICK: em,
-  REQUEST_FORUM_UNREADS: eh,
+  PUSH_NOTIFICATION_CLICK: eh,
+  REQUEST_FORUM_UNREADS: em,
   REQUEST_SOUNDBOARD_SOUNDS: eE,
   REMOTE_COMMAND: es,
   RESET_SOCKET: eg,

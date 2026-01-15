@@ -17,14 +17,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk448169 = require("./448169.js"),
   Chunk428094 = require("./428094.js"),
   Chunk464163 = require("./464163.js");
-let h = e => {
+let m = e => {
     let t = (0, l.rO)(),
       [n, i] = (0, r.useState)({
         modalGlowEntry: true,
         modalGlowIdle: true,
         modalGlowExit: true
       }),
-      [o, h] = (0, r.useState)(false),
+      [o, m] = (0, r.useState)(false),
       [g, E] = (0, r.useState)(false),
       [b, y] = (0, r.useState)(false),
       O = (0, r.useRef)(true);
@@ -34,7 +34,7 @@ let h = e => {
     let v = (0, r.useCallback)(() => null != n.modalGlowEntry && null != n.modalGlowIdle && null != n.modalGlowExit, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]),
       S = (0, r.useCallback)(async () => {
         if (!v() && !b) {
-          y(true), E(false), h(false);
+          y(true), E(false), m(false);
           try {
             let e = Date.now(),
               [n, r, o] = await Promise.all([a.tn.get({
@@ -46,7 +46,7 @@ let h = e => {
                 binary: true,
                 rejectWithError: true
               }), a.tn.get({
-                url: t ? _.Z : m.Z,
+                url: t ? _.Z : h.Z,
                 binary: true,
                 rejectWithError: true
               })]);
@@ -54,7 +54,7 @@ let h = e => {
               modalGlowEntry: window.URL.createObjectURL(n.body),
               modalGlowExit: window.URL.createObjectURL(r.body),
               modalGlowIdle: window.URL.createObjectURL(o.body)
-            }), h(true), s.default.track(c.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
+            }), m(true), s.default.track(c.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
               load_duration_ms: Date.now() - e
             }))
           } catch (e) {
@@ -83,7 +83,7 @@ let h = e => {
       mediaUrls: t,
       isSuccess: n,
       isLoading: a
-    } = h(e), {
+    } = m(e), {
       status: l
     } = (0, o.VG8)(e ? i.Z : null);
     return {

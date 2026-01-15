@@ -23,7 +23,7 @@ var Chunk149765 = require("./149765.js"),
 
 function g(e) {
   let t = u.default.getCurrentUser(),
-    n = m.Z.getIncidentsByGuild();
+    n = h.Z.getIncidentsByGuild();
   for (let i of f.default.keys(n).map(e => s.Z.getGuild(e))) {
     if (null == i) continue;
     let a = n[i.id];
@@ -31,7 +31,7 @@ function g(e) {
         user: t,
         context: i,
         checkElevated: false
-      }), h.cv)) return i.id
+      }), m.cv)) return i.id
   }
   return null
 }
@@ -41,9 +41,9 @@ function E(e) {
       let t = s.Z.getGuild(e);
       if (null == t) returnfalse;
       let n = l.Z.getGuildPermissions(t);
-      return null != n && r.Db(n, h.cv)
+      return null != n && r.Db(n, m.cv)
     }),
-    n = (0, i.e7)([m.Z], () => null != e ? m.Z.getGuildIncident(e) : null),
+    n = (0, i.e7)([h.Z], () => null != e ? h.Z.getGuildIncident(e) : null),
     a = null != n && (0, _.ur)(n);
   return {
     shouldShowIncidentActions: t,

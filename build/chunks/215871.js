@@ -29,7 +29,7 @@ let g = (0, Chunk509613.wf)(Chunk313789.n.OVERLAY_PANEL, {
   }),
   N = (0, Chunk509613.m7)(Chunk313789.n.OVERLAY_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["9cb1Uz"]),
-    icon: Chunk657707.epB,
+    icon: Chunk657707.WindowTopOutlineIcon,
     usePredicate: Chunk168308.bC,
     getLegacySearchKey: () => (0, u.Gl)("OverlayPanel") ? true : d.s6.OVERLAY,
     buildLayout: () => (0, u.Gl)("OverlayPanel") ? [g] : [I]

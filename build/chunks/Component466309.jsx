@@ -24,19 +24,19 @@ let f = function(e) {
     className: d.priceSpinner
   });
   let _ = (0, c.gy)(f, n, false, t),
-    m = u.rV.MONTH,
-    h = p ? "text-strong" : "always-white";
+    h = u.rV.MONTH,
+    m = p ? "text-strong" : "always-white";
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Text, {
       variant: "heading-xxl/extrabold",
-      color: h,
+      color: m,
       tag: "span",
       children: _
     }), (0, r.jsxs)(o.Text, {
       variant: "text-xs/medium",
       tag: "span",
       color: "text-muted",
-      children: ["/", (0, c.eP)(m)]
+      children: ["/", (0, c.eP)(h)]
     })]
   })
 }

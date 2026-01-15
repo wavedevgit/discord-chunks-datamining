@@ -22,7 +22,7 @@ function f(e) {
     onGuildChange: f,
     guilds: p,
     disabled: _ = false
-  } = e, m = p.filter(e => i.e$(e.permissions, l.Plq.MANAGE_GUILD)).map(e => ({
+  } = e, h = p.filter(e => i.e$(e.permissions, l.Plq.MANAGE_GUILD)).map(e => ({
     value: e.id,
     label: e.name
   }));
@@ -40,7 +40,7 @@ function f(e) {
       wrapperClassName: u.select,
       maxVisibleItems: d,
       placeholder: c.intl.string(c.t.oM4E1A),
-      options: m,
+      options: h,
       onChange: f,
       isDisabled: _,
       value: n

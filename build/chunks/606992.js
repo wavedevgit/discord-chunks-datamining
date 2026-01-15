@@ -33,20 +33,20 @@ function s(e) {
       p = null != l && l.rangeCount > 0 ? l.getRangeAt(0) : null;
     if (null == p) return;
     let _ = p.startContainer,
-      m = p.startOffset;
+      h = p.startOffset;
     for (; null != _;) {
       if (_.nodeType !== Node.TEXT_NODE || null == _.nodeValue) return void c(null);
       if ((null == (t = _.nodeValue) ? true : t.length) === 0) {
-        m = null != (i = null == (_ = _.previousSibling) || null == (r = _.nodeValue) ? true : r.length) ? i : 0;
+        h = null != (i = null == (_ = _.previousSibling) || null == (r = _.nodeValue) ? true : r.length) ? i : 0;
         continue
       }
-      null != u && (m >= u.queryText.length ? m -= u.queryText.length : m = 0);
+      null != u && (h >= u.queryText.length ? h -= u.queryText.length : h = 0);
       break
     }
     if (null == _) return;
-    let h = f.document.createRange();
-    h.setStart(_, m), h.setEnd(_, m);
-    let g = h.getBoundingClientRect();
+    let m = f.document.createRange();
+    m.setStart(_, h), m.setEnd(_, h);
+    let g = m.getBoundingClientRect();
     (null == g ? true : g.height) !== 0 && c(null != g ? g : null)
   }, [f.document, s, d, u, n]);
   return r.useEffect(() => (f.document.addEventListener("selectionchange", p), () => f.document.removeEventListener("selectionchange", p)), [f.document, p]), r.useEffect(() => {

@@ -24,9 +24,9 @@ let c = {
         showIcons: d
       } = e, [f, p] = i.useState(false), _ = i.useCallback(() => {
         p(true)
-      }, []), m = i.useCallback(() => {
-        p(false)
       }, []), h = i.useCallback(() => {
+        p(false)
+      }, []), m = i.useCallback(() => {
         p(e => !e)
       }, []);
       return (0, r.jsxs)(o.Kqy, {
@@ -40,7 +40,7 @@ let c = {
           description: null != n || "" === n ? n : true,
           value: "checkbox-value",
           labelType: u,
-          leadingIcon: d ? a.d3s : true
+          leadingIcon: d ? a.CircleInformationIcon : true
         }), (0, r.jsxs)(o.xvT, {
           variant: "text-sm/normal",
           children: ["Current state: ", f ? "Checked" : "Unchecked"]
@@ -57,13 +57,13 @@ let c = {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
-            onClick: m,
+            onClick: h,
             disabled: c
           }), (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",
-            onClick: h,
+            onClick: m,
             disabled: c
           })]
         })]

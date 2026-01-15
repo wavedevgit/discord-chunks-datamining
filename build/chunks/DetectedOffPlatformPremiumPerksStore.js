@@ -44,7 +44,7 @@ function S() {
           skuId: n,
           applicationId: r
         }
-        of g.Lg6) r !== t || v.includes(n) || null == O[n] && (m.Z.applicationIdsFetched.has(r) || m.Z.applicationIdsFetching.has(r) || null != m.Z.getForSku(n) || c.yD(r), O[n] = {
+        of g.Lg6) r !== t || v.includes(n) || null == O[n] && (h.Z.applicationIdsFetched.has(r) || h.Z.applicationIdsFetching.has(r) || null != h.Z.getForSku(n) || c.yD(r), O[n] = {
         skuId: n,
         applicationId: r
       }, e = true);
@@ -64,12 +64,12 @@ function I() {
       f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || d.ZP.fetchApplication(n);
       continue
     }
-    let i = h.Z.get(t);
+    let i = m.Z.get(t);
     if (null == i) {
-      h.Z.isFetching(t) || h.Z.didFetchingSkuFail(t) || u.$N(r.id, t);
+      m.Z.isFetching(t) || m.Z.didFetchingSkuFail(t) || u.$N(r.id, t);
       continue
     }
-    m.Z.applicationIdsFetching.has(r.id) || m.Z.isEntitledToSku(_.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = true) : (y[t] = {
+    h.Z.applicationIdsFetching.has(r.id) || h.Z.isEntitledToSku(_.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = true) : (y[t] = {
       skuId: t,
       applicationId: n
     }, e = true)
@@ -91,7 +91,7 @@ function C() {
 class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(f.Z, m.Z, p.ZP, h.Z, _.default), v = null != (e = s.K.get(b)) ? e : v
+    this.waitFor(f.Z, h.Z, p.ZP, m.Z, _.default), v = null != (e = s.K.get(b)) ? e : v
   }
   getDetectedOffPlatformPremiumPerks() {
     return a().values(y)

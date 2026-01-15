@@ -8,19 +8,19 @@ require.d(exports, {
   Go: () => I,
   I4: () => E,
   JB: () => L,
-  KX: () => R,
+  KX: () => w,
   NM: () => l,
   Qq: () => y,
   Rn: () => g,
   VV: () => o,
   Wh: () => O,
   gy: () => S,
-  hp: () => h,
+  hp: () => m,
   i8: () => v,
-  k3: () => m,
+  k3: () => h,
   ku: () => _,
   mA: () => r,
-  pw: () => w,
+  pw: () => R,
   uZ: () => p,
   yd: () => x,
   ze: () => u
@@ -55,11 +55,11 @@ function _(e, t) {
   return "function" == typeof e ? e(t) : e
 }
 
-function m(e) {
+function h(e) {
   return e.split("-")[0]
 }
 
-function h(e) {
+function m(e) {
   return e.split("-")[1]
 }
 
@@ -73,7 +73,7 @@ function E(e) {
 let b = new Set(["top", "bottom"]);
 
 function y(e) {
-  return b.has(m(e)) ? "y" : "x"
+  return b.has(h(e)) ? "y" : "x"
 }
 
 function O(e) {
@@ -82,15 +82,15 @@ function O(e) {
 
 function v(e, t, n) {
   true === n && (n = false);
-  let r = h(e),
+  let r = m(e),
     i = O(e),
     a = E(i),
     o = "x" === i ? r === (n ? "end" : "start") ? "right" : "left" : "start" === r ? "bottom" : "top";
-  return t.reference[a] > t.floating[a] && (o = w(o)), [o, w(o)]
+  return t.reference[a] > t.floating[a] && (o = R(o)), [o, R(o)]
 }
 
 function S(e) {
-  let t = w(e);
+  let t = R(e);
   return [I(e), t, I(t)]
 }
 
@@ -116,13 +116,13 @@ function P(e, t, n) {
   }
 }
 
-function R(e, t, n, r) {
-  let i = h(e),
-    a = P(m(e), "start" === n, r);
+function w(e, t, n, r) {
+  let i = m(e),
+    a = P(h(e), "start" === n, r);
   return i && (a = a.map(e => e + "-" + i), t && (a = a.concat(a.map(I)))), a
 }
 
-function w(e) {
+function R(e) {
   return e.replace(/left|right|bottom|top/g, e => d[e])
 }
 

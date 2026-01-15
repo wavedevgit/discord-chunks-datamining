@@ -102,7 +102,7 @@ function et(e) {
   let {
     className: s,
     user: l
-  } = e, c = i.useRef(null), p = (0, v.o9)(), _ = (0, S.b)(), m = (0, y.gS)(), h = null != (a = null == m || null == (t = m.nick) ? true : t[0]) ? a : null, [g, E] = i.useState(false);
+  } = e, c = i.useRef(null), p = (0, v.o9)(), _ = (0, S.b)(), h = (0, y.gS)(), m = null != (a = null == h || null == (t = h.nick) ? true : t[0]) ? a : null, [g, E] = i.useState(false);
   i.useEffect(() => {
     E(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [l.username]);
@@ -146,10 +146,10 @@ function et(e) {
           color: u.Z.colors.STATUS_WARNING.css
         })
       })
-    }), null != h && (0, r.jsx)("div", {
+    }), null != m && (0, r.jsx)("div", {
       className: z.pomeloWarning,
       children: (0, r.jsx)(d.u, {
-        __unsupportedReactNodeAsText: h,
+        __unsupportedReactNodeAsText: m,
         "aria-label": false,
         children: (0, r.jsx)(f.Mgn, {
           size: "custom",
@@ -195,9 +195,9 @@ function en(e) {
   let {
     user: a,
     className: s
-  } = e, l = (0, y.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, p = j.ZP.getGlobalName(a), _ = i.useRef(null), [m, h] = i.useState(false);
+  } = e, l = (0, y.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, p = j.ZP.getGlobalName(a), _ = i.useRef(null), [h, m] = i.useState(false);
   return i.useEffect(() => {
-    h(null != _.current && _.current.scrollWidth > _.current.clientWidth)
+    m(null != _.current && _.current.scrollWidth > _.current.clientWidth)
   }, [p]), (0, r.jsxs)("div", {
     className: o()(z.field, s),
     children: [(0, r.jsx)("div", {
@@ -237,7 +237,7 @@ function en(e) {
       children: (0, r.jsx)(f.Button, {
         variant: "secondary",
         size: "sm",
-        text: m ? K.intl.string(K.t["16kTw/"]) : K.intl.string(K.t.bt75uw),
+        text: h ? K.intl.string(K.t["16kTw/"]) : K.intl.string(K.t.bt75uw),
         "aria-label": K.intl.string(K.t.YXeWYM),
         onClick: ee
       })
@@ -365,7 +365,7 @@ function ea(e) {
   }
 
   function p() {
-    (0, f.h7j)(e => (0, r.jsx)(w.default, J(Q({}, e), {
+    (0, f.h7j)(e => (0, r.jsx)(R.default, J(Q({}, e), {
       title: K.intl.string(K.t["3CTiKi"]),
       children: a.hasFlag(H.xW$.MFA_SMS) ? K.intl.string(K.t.jrhJyo) : true,
       actionText: K.intl.string(K.t.N86XcP),
@@ -458,7 +458,7 @@ function eo(e) {
 function es(e) {
   let {
     className: t
-  } = e, n = (0, h.l6)(), a = (0, h.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? K.intl.string(K.t.sK0dmH) : K.intl.string(K.t.XxRj7f) : K.intl.string(K.t.UX0Ode), [n, a]);
+  } = e, n = (0, m.l6)(), a = (0, m.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? K.intl.string(K.t.sK0dmH) : K.intl.string(K.t.XxRj7f) : K.intl.string(K.t.UX0Ode), [n, a]);
   return (0, r.jsxs)("div", {
     className: o()(z.field, t),
     children: [(0, r.jsx)("div", {
@@ -486,7 +486,7 @@ function es(e) {
         text: a ? K.intl.string(K.t.KPGVWl) : K.intl.string(K.t.yNGjyK),
         "aria-label": a ? K.intl.string(K.t.KPGVWl) : K.intl.string(K.t.yNGjyK),
         onClick: () => _.Z.showAgeVerificationGetStartedModal({
-          entryPoint: m.cU.ACCOUNT_AGE_GROUP
+          entryPoint: h.cU.ACCOUNT_AGE_GROUP
         })
       })
     })]
@@ -512,12 +512,12 @@ function el() {
       size: f.EFr.SIZE_80
     }),
     _ = (0, T.Z)(),
-    m = (0, k.pY)("UserSettingsAccountProfileCard"),
-    h = (0, U.s)("UserSettingsAccountProfileCard"),
-    g = m || h;
+    h = (0, k.pY)("UserSettingsAccountProfileCard"),
+    m = (0, U.s)("UserSettingsAccountProfileCard"),
+    g = h || m;
   return (0, r.jsxs)("div", {
     className: z.accountProfileCard,
-    children: [(0, r.jsx)(R.b, {
+    children: [(0, r.jsx)(w.b, {
       user: t,
       displayProfile: n,
       avatarSize: f.EFr.SIZE_80,

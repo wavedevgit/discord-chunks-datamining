@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk939350 = require("./939350.js"),
   Chunk564546 = require("./564546.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ function b(e) {
     color: t = "default",
     label: n,
     icon: a,
-    iconLeft: m,
+    iconLeft: h,
     iconLeftSize: g = "md",
     hint: b,
     subtext: y,
@@ -74,8 +74,8 @@ function b(e) {
     onClose: A,
     onFocus: N,
     className: P,
-    focusedClassName: R,
-    subMenuIconClassName: w,
+    focusedClassName: w,
+    subMenuIconClassName: R,
     dontCloseOnActionIfHoldingShiftKey: D,
     dontCloseOnAction: x,
     iconProps: L
@@ -91,22 +91,22 @@ function b(e) {
   }, [C, A, j, D, x, M]);
   return i.useEffect(() => {
     I && ((0, u.F)(k), null == N || N())
-  }, [I, N]), (0, r.jsxs)(s.P3F, E(h({
+  }, [I, N]), (0, r.jsxs)(s.P3F, E(m({
     innerRef: k,
     className: o()(_.item, _.labelContainer, p._e[t], P, {
       [_.disabled]: S,
       [_.focused]: I,
-      [null != R ? R : ""]: I
+      [null != w ? w : ""]: I
     }),
     onClick: S ? true : U,
     "aria-disabled": S
   }, T), {
     "data-menu-item": "true",
-    children: [null != m && (0, r.jsx)("div", {
+    children: [null != h && (0, r.jsx)("div", {
       className: o()(_.iconContainerLeft, {
         [_.iconContainerLarge]: "lg" === g
       }),
-      children: (0, r.jsx)(m, E(h({
+      children: (0, r.jsx)(h, E(m({
         color: "currentColor"
       }, L), {
         className: o()(_.icon, null == L ? true : L.className)
@@ -128,7 +128,7 @@ function b(e) {
       children: (0, l.I)(b, e)
     }), (0, d.Y)(a) ? a : null != a && (0, r.jsx)("div", {
       className: _.iconContainer,
-      children: (0, r.jsx)(a, E(h({
+      children: (0, r.jsx)(a, E(m({
         color: "currentColor"
       }, L), {
         className: o()(_.icon, null == L ? true : L.className)
@@ -138,7 +138,7 @@ function b(e) {
       children: (0, r.jsx)(s.Fbu, {
         size: "md",
         color: "currentColor",
-        className: o()(_.caret, w)
+        className: o()(_.caret, R)
       })
     })]
   }))

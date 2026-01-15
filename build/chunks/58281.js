@@ -74,7 +74,7 @@ module.exports = function(e) {
       scope: "char.escape",
       match: /\\(?!\$)./
     },
-    m = {
+    h = {
       scope: "string",
       variants: [{
         begin: "''",
@@ -95,14 +95,14 @@ module.exports = function(e) {
         }, p, _]
       }]
     },
-    h = {
+    m = {
       scope: "params",
       match: RegExp(`${i}\\s*:(?=\\s)`)
     },
     g = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
       subLanguage: "markdown",
       relevance: 0
-    }), r, m, a, s, h, f, d, c];
+    }), r, h, a, s, m, f, d, c];
   return p.contains = g, {
     name: "Nix",
     aliases: ["nixos"],

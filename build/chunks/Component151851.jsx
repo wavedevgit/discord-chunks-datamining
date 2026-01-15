@@ -48,7 +48,7 @@ let S = "#ffffff",
       onClick: e => C(n, e),
       "aria-label": O.intl.string(O.t.G1u0hK),
       tabIndex: false,
-      children: (0, r.jsx)(m.Z, {})
+      children: (0, r.jsx)(h.Z, {})
     }), u = (0, r.jsx)(s.P3F, {
       className: v.winButtonMinMax,
       onClick: () => T(n),
@@ -111,7 +111,7 @@ let S = "#ffffff",
             onClick: e => C(n, e),
             "aria-label": O.intl.string(O.t["2nM3Pk"]),
             tabIndex: false,
-            children: (0, r.jsx)(h.Z, {
+            children: (0, r.jsx)(m.Z, {
               color: "#006500"
             })
           })]

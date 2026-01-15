@@ -4,7 +4,7 @@
 require.d(exports, {
   $z: () => P,
   BH: () => A,
-  BO: () => w,
+  BO: () => R,
   D7: () => L,
   Dd: () => N,
   Ft: () => D,
@@ -12,7 +12,7 @@ require.d(exports, {
   X0: () => M,
   XA: () => k,
   Z8: () => v,
-  bD: () => R,
+  bD: () => w,
   nG: () => C,
   qJ: () => U,
   t0: () => G,
@@ -87,11 +87,11 @@ function v(e) {
     i[e.id] = e
   })));
   let p = (null != l ? l : []).map(e => e.name),
-    h = (null != l ? l : []).map(e => e.displayName);
+    m = (null != l ? l : []).map(e => e.displayName);
   return {
     version: a.version,
     guildId: a.guild_id,
-    id: [a.id, ...p].join(m.oQ),
+    id: [a.id, ...p].join(h.oQ),
     untranslatedName: [a.name, ...p].join(" "),
     serverLocalizedName: o.name_localized,
     applicationId: s,
@@ -104,7 +104,7 @@ function v(e) {
     defaultMemberPermissions: null == a.default_member_permissions ? true : c.vB(a.default_member_permissions),
     dmPermission: a.dm_permission,
     permissions: i,
-    displayName: [null != (n = a.name_localized) ? n : a.name, ...h].join(" "),
+    displayName: [null != (n = a.name_localized) ? n : a.name, ...m].join(" "),
     displayDescription: null != (r = o.description_localized) ? r : o.description,
     nsfw: a.nsfw,
     contexts: a.contexts,
@@ -215,7 +215,7 @@ function C(e, t) {
 }
 
 function A(e) {
-  return h.Xyh.test(e.trim())
+  return m.Xyh.test(e.trim())
 }
 
 function N(e, t, n, r) {
@@ -242,10 +242,10 @@ function P(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return i()(e).subtract(1).toString()
 }
-let w = Chunk149765.vB(0);
+let R = Chunk149765.vB(0);
 
 function D(e) {
   let {
@@ -263,7 +263,7 @@ function D(e) {
     if ("boolean" == typeof e) return e
   }
   let l = x(r, s, i);
-  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, w) && t.can(o, n))
+  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, R) && t.can(o, n))
 }
 
 function x(e, t, n) {
@@ -304,8 +304,8 @@ function L(e) {
 
 function j(e) {
   if (null != e)
-    if (e.id === m.bi.BUILT_IN) return _.ub.BUILT_IN;
-    else if (e.id === m.bi.FRECENCY) return _.ub.FRECENCY;
+    if (e.id === h.bi.BUILT_IN) return _.ub.BUILT_IN;
+    else if (e.id === h.bi.FRECENCY) return _.ub.FRECENCY;
   else return _.ub.APP
 }
 
@@ -325,9 +325,9 @@ function k(e) {
   let t = e.id,
     n = e.options,
     r = null == n ? true : n.find(e => e.type === u.jw.SUB_COMMAND_GROUP);
-  null != r && (t += "".concat(m.oQ).concat(r.name), n = r.options);
+  null != r && (t += "".concat(h.oQ).concat(r.name), n = r.options);
   let i = null == n ? true : n.find(e => e.type === u.jw.SUB_COMMAND);
-  return null != i && (t += "".concat(m.oQ).concat(i.name), n = i.options), {
+  return null != i && (t += "".concat(h.oQ).concat(i.name), n = i.options), {
     commandKey: t,
     interactionOptions: n
   }
@@ -345,7 +345,7 @@ function U(e) {
     searchResultsPosition: c,
     source: u
   } = e;
-  (0, d.yw)(h.rMx.APPLICATION_COMMAND_SELECTED, {
+  (0, d.yw)(m.rMx.APPLICATION_COMMAND_SELECTED, {
     command_id: null != (n = null == (t = r.rootCommand) ? true : t.id) ? n : r.id,
     application_id: r.applicationId,
     location: i,

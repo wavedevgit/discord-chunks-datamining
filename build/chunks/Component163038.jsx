@@ -47,10 +47,10 @@ function Z(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), _ = (0, o.e7)([N.Z, L.default, D.Z, w.Z, R.Z, p.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, R.Z, p.Z).footerInfo, [f], s.Z), m = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), _ = (0, o.e7)([N.Z, L.default, D.Z, R.Z, w.Z, p.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, R.Z, w.Z, p.Z).footerInfo, [f], s.Z), h = i.useCallback(() => {
     var e, n;
     let r = N.Z.getChannel(t.channel_id),
-      i = R.Z.getGuild(null == r ? true : r.guild_id),
+      i = w.Z.getGuild(null == r ? true : r.guild_id),
       a = null == (e = t.messageReference) ? true : e.channel_id,
       o = x.Z.getCurrentlySelectedChannelId(),
       s = A.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
@@ -67,7 +67,7 @@ function Z(e) {
   }, [t]);
   return null == _ ? null : (0, r.jsxs)(c.P3F, {
     className: G.footerContainer,
-    onClick: m,
+    onClick: h,
     "aria-label": _.accessibilityLabel,
     children: [null != _.originIconUrl ? (0, r.jsx)("img", {
       className: G.originIcon,
@@ -113,14 +113,14 @@ function B(e) {
     channel: i,
     reportingUserId: a,
     reportedTimestamp: o
-  } = e, s = (0, m.JZ)(t.author, i), {
+  } = e, s = (0, h.JZ)(t.author, i), {
     onClickUsername: l,
     onClickAvatar: c,
     onPopoutRequestClose: u,
     showUsernamePopout: d,
     showAvatarPopout: f
   } = F(t, i);
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     childrenExecutedCommand: (0, r.jsx)(M.Z, {
       reportingUserId: a,
       guildId: i.guild_id,
@@ -169,21 +169,21 @@ function V(e) {
       p(e)
     }).catch(() => {})
   }, [null == l || null == (t = l.moderatorReport) ? true : t.reported_user_id]);
-  let m = i.useMemo(() => {
+  let h = i.useMemo(() => {
       var e;
       let t = (0, f.Z)(s, l);
       return null != d && (null == l || null == (e = l.moderatorReport) ? true : e.reported_user_id) != null ? t.set("author", d) : t
     }, [s, l, d]),
-    h = C.RS.useSetting(),
+    m = C.RS.useSetting(),
     g = C.NA.useSetting(),
-    E = h && g,
+    E = m && g,
     b = (0, o.e7)([P.Z], () => P.Z.isDeveloper),
-    y = (0, _.A)((null != (a = m.editedTimestamp) ? a : m.timestamp).valueOf()),
+    y = (0, _.A)((null != (a = h.editedTimestamp) ? a : h.timestamp).valueOf()),
     {
       content: O,
       hasSpoilerEmbeds: I,
       hasBailedAst: T
-    } = (0, v.Z)(m, {
+    } = (0, v.Z)(h, {
       hideSimpleEmbedContent: E,
       isInteracting: false,
       formatInline: false,
@@ -199,14 +199,14 @@ function V(e) {
     children: (0, r.jsxs)("div", {
       className: G.content,
       children: [(0, r.jsx)(B, {
-        mergedMessageRecord: m,
+        mergedMessageRecord: h,
         content: O,
         channel: A,
         reportingUserId: null == l || null == (n = l.moderatorReport) ? true : n.reporting_user_id,
         reportedTimestamp: s.timestamp
       }), (0, S.Z)({
         channelMessageProps: {
-          message: m,
+          message: h,
           channel: A,
           compact: false
         },

@@ -109,7 +109,7 @@ function ei(e) {
   }).enabled;
   let t = (0, E.A)("UserSettingsAccessibility"),
     n = (0, y.A)("UserSettingsAccessibility"),
-    i = (0, h.z)("UserSettingsAccessibility");
+    i = (0, m.z)("UserSettingsAccessibility");
   return (0, r.jsx)(U.Z, {
     title: Y.intl.string(Y.t.G0neg7),
     children: (0, r.jsxs)(c.Kqy, {
@@ -142,12 +142,12 @@ function ei(e) {
         })]
       }), (0, r.jsxs)(N.F, {
         setting: F.s6.ACCESSIBILITY_CONTRAST,
-        children: [(0, r.jsx)(em, {}), (0, r.jsx)(c.izJ, {
+        children: [(0, r.jsx)(eh, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
       }), (0, r.jsxs)(N.F, {
         setting: F.s6.ACCESSIBILITY_REDUCED_MOTION,
-        children: [(0, r.jsx)(eh, {}), (0, r.jsx)(c.izJ, {
+        children: [(0, r.jsx)(em, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
       }), (0, r.jsxs)(N.F, {
@@ -382,7 +382,7 @@ function ep() {
     } = (0, g.ZP)();
 
   function n(e) {
-    (0, f.X2)(e), w.default.track(B.rMx.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
+    (0, f.X2)(e), R.default.track(B.rMx.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
       enabled: e
     })
   }
@@ -422,7 +422,7 @@ function e_() {
   })
 }
 
-function em() {
+function eh() {
   let [e] = (0, s.Wu)([p.Z], () => [p.Z.syncForcedColors, p.Z.systemForcedColors]), [t, n] = i.useState(e);
   i.useEffect(() => {
     n(e)
@@ -439,7 +439,7 @@ function em() {
     children: [(0, r.jsx)(N.F, {
       setting: F.s6.ACCESSIBILITY_HIGH_CONTRAST,
       children: (0, r.jsx)(eo, {})
-    }), (0, m.b)() ? (0, r.jsx)(N.F, {
+    }), (0, h.b)() ? (0, r.jsx)(N.F, {
       setting: F.s6.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
       children: (0, r.jsx)(c.rsf, {
         label: Y.intl.string(Y.t.cguiec),
@@ -451,7 +451,7 @@ function em() {
   })
 }
 
-function eh() {
+function em() {
   let e = L.QK.useSetting(),
     t = L.Yk.useSetting(),
     {
@@ -471,7 +471,7 @@ function eh() {
     _ = i.useCallback(e => {
       (0, f.Zt)(e ? "auto" : o)
     }, [o]),
-    m = i.useCallback(e => {
+    h = i.useCallback(e => {
       (0, f.Zt)(e ? "reduce" : "no-preference")
     }, []);
   return (0, r.jsx)("div", {
@@ -491,7 +491,7 @@ function eh() {
         children: (0, r.jsx)(c.rsf, {
           label: Y.intl.string(Y.t.b3XBzg),
           checked: n,
-          onChange: m
+          onChange: h
         })
       }), (0, r.jsx)(N.F, {
         setting: F.s6.ACCESSIBILITY_REDUCED_MOTION_AUTO_PLAY_GIFS,
@@ -564,7 +564,7 @@ function eE() {
           description: Y.intl.string(Y.t.Q7wgHc),
           checked: t,
           onChange: e => {
-            w.default.track(B.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
+            R.default.track(B.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
               enabled: e,
               location: {
                 section: B.jXE.SETTINGS_ACCESSIBILITY
@@ -578,7 +578,7 @@ function eE() {
 }
 
 function eb() {
-  let e = (0, s.e7)([R.Z], () => R.Z.speechRate);
+  let e = (0, s.e7)([w.Z], () => w.Z.speechRate);
   return (0, r.jsxs)(c.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(c.iRW, {

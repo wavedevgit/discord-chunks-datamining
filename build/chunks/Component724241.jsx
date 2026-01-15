@@ -22,8 +22,8 @@ function _(e) {
     user: t,
     displayProfile: n,
     guild: _,
-    pendingAvatar: m,
-    pendingNickname: h,
+    pendingAvatar: h,
+    pendingNickname: m,
     pendingGlobalName: g,
     pendingBio: E,
     pendingPronouns: b,
@@ -33,15 +33,15 @@ function _(e) {
     isTryItOut: S,
     hideBioSection: I,
     shouldOpenBadgeTooltip: T
-  } = e, C = (0, i.e7)([c.ZP], () => null == _ ? null : c.ZP.getMember(_.id, t.id)), A = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), P = null != b ? b : null == n ? true : n.pronouns, R = (0, d.Ly)({
-    pendingNickname: h,
+  } = e, C = (0, i.e7)([c.ZP], () => null == _ ? null : c.ZP.getMember(_.id, t.id)), A = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), P = null != b ? b : null == n ? true : n.pronouns, w = (0, d.Ly)({
+    pendingNickname: m,
     pendingGlobalName: g,
     user: t,
     guildMember: C
-  }), w = () => {
-    if (null != C && null !== m && (null != C.avatar || null != m)) return (0, r.jsx)(l.Z, {
+  }), R = () => {
+    if (null != C && null !== h && (null != C.avatar || null != h)) return (0, r.jsx)(l.Z, {
       user: t,
-      nickname: R
+      nickname: w
     })
   };
   return (0, r.jsxs)("div", {
@@ -50,8 +50,8 @@ function _(e) {
     children: [(0, r.jsx)(o.Z, {
       user: t,
       guildId: null == _ ? true : _.id,
-      usernameIcon: w(),
-      nickname: R,
+      usernameIcon: R(),
+      nickname: w,
       pendingDisplayNameStyles: v,
       pronouns: P,
       isTryItOut: S,

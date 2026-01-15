@@ -13,7 +13,7 @@ var Chunk127849 = require("./127849.js"),
   f = Chunk630489 && Chunk630489.prototype,
   p = Chunk751736("species"),
   _ = false,
-  m = Chunk880181(Chunk127849.PromiseRejectionEvent);
+  h = Chunk880181(Chunk127849.PromiseRejectionEvent);
 module.exports = {
   CONSTRUCTOR: Chunk275717("Promise", function() {
     var e = s(i),
@@ -28,8 +28,8 @@ module.exports = {
         };
       if ((n.constructor = {})[p] = r, !(_ = n.then(function() {}) instanceof r)) returntrue
     }
-    return !t && ("BROWSER" === c || "DENO" === c) && !m
+    return !t && ("BROWSER" === c || "DENO" === c) && !h
   }),
-  REJECTION_EVENT: m,
+  REJECTION_EVENT: h,
   SUBCLASSING: _
 }

@@ -73,7 +73,7 @@ function O(e) {
   } = (0, d.KZ)(), N = i.useRef(null);
   return v ? null == S ? (0, r.jsx)(_.i6, {
     action: "EDIT_PROFILE",
-    text: m.intl.string(m.t.s5vZlQ),
+    text: h.intl.string(h.t.s5vZlQ),
     icon: o.vdY,
     autoFocus: true,
     fullWidth: g,
@@ -89,15 +89,15 @@ function O(e) {
         closePopout: t
       } = e;
       return (0, r.jsxs)(o.v2r, {
-        className: h.popoutMenu,
+        className: m.popoutMenu,
         onSelect: true,
         navId: "edit-profile-popout",
         onClose: t,
-        "aria-label": m.intl.string(m.t.AXIHpV),
+        "aria-label": h.intl.string(h.t.AXIHpV),
         children: [(0, r.jsx)(o.sNh, {
           id: "edit-server-profile",
-          label: m.intl.string(m.t["PKQB/H"]),
-          subtext: m.intl.string(m.t.VYHWKJ),
+          label: h.intl.string(h.t["PKQB/H"]),
+          subtext: h.intl.string(h.t.VYHWKJ),
           action: () => {
             A({
               action: "EDIT_GUILD_PROFILE"
@@ -105,8 +105,8 @@ function O(e) {
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
-          label: m.intl.string(m.t.HmFaFB),
-          subtext: m.intl.string(m.t["+EERMk"]),
+          label: h.intl.string(h.t.HmFaFB),
+          subtext: h.intl.string(h.t["+EERMk"]),
           action: () => {
             A({
               action: "EDIT_PROFILE"
@@ -121,7 +121,7 @@ function O(e) {
       } = e, n = b(e, ["onClick"]);
       return (0, r.jsx)(_.i6, E({
         buttonRef: N,
-        text: m.intl.string(m.t.s5vZlQ),
+        text: h.intl.string(h.t.s5vZlQ),
         icon: o.vdY,
         autoFocus: true,
         fullWidth: g,

@@ -2,9 +2,9 @@
 /** chunk id: 883166, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QR: () => m,
+  QR: () => h,
   Qr: () => f,
-  Sg: () => h,
+  Sg: () => m,
   gl: () => _
 }), require("./388685.js"), require("./358797.js");
 var Chunk54381 = require("./54381.js"),
@@ -72,7 +72,7 @@ function _() {
   }), [n, r]), t
 }
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     spring: n,
@@ -86,7 +86,7 @@ function m(e) {
   })
 }
 
-function h() {
+function m() {
   let e = (0, i.useRef)(new Set),
     [t, n] = (0, i.useState)([]),
     r = t.map((e, n) => t.length <= 1 ? -c : Math.max(0, p(n / (t.length - 1) * d, u) - c));

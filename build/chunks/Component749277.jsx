@@ -2,7 +2,7 @@
 /** chunk id: 749277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => R
+  A: () => w
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -67,7 +67,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = e => {
+let w = e => {
   let {
     dismissibleContent: t,
     noticeType: C
@@ -193,7 +193,7 @@ let R = e => {
                 E.default.track(O.rMx.PREMIUM_PROMOTION_OPENED, {
                   location_section: O.jXE.NOTIFICATION_BAR,
                   location_object: O.qAy.BUTTON_CTA
-                }), (0, h.openUserSettings)(m.n.NITRO_PANEL, {
+                }), (0, m.openUserSettings)(h.n.NITRO_PANEL, {
                   section: O.oAB.PREMIUM
                 })
               },
@@ -224,7 +224,7 @@ let R = e => {
             }), I.intl.string(I.t["0KFB2B"]), (0, r.jsx)(a.NoS, {
               noticeType: C,
               onClick: () => {
-                b(y.L.UNKNOWN), (0, h.openUserSettings)(m.n.NITRO_PANEL, {
+                b(y.L.UNKNOWN), (0, m.openUserSettings)(h.n.NITRO_PANEL, {
                   section: O.oAB.PREMIUM
                 })
               },

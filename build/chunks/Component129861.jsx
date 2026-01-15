@@ -80,15 +80,15 @@ let v = e => {
       location: "DiscordTag"
     });
     return (0, r.jsxs)("div", {
-      className: a()(h.info, {
-        [h.withDisplayNameStyles]: y && null != E
+      className: a()(m.info, {
+        [m.withDisplayNameStyles]: y && null != E
       }, f),
       children: [(0, r.jsx)(s.u, {
-        text: m.intl.string(m.t.Br1ls3),
+        text: h.intl.string(h.t.Br1ls3),
         shouldShow: g,
         "aria-label": !!g && true,
         children: (0, r.jsx)("span", {
-          className: a()(h.__invalid_username, p),
+          className: a()(m.__invalid_username, p),
           children: null != E ? (0, r.jsx)(d.Z, {
             userName: t,
             displayNameStyles: E,
@@ -96,11 +96,11 @@ let v = e => {
           }) : t
         })
       }), null != n ? (0, r.jsx)("span", {
-        className: a()(h.infoSpacing, u),
+        className: a()(m.infoSpacing, u),
         children: n
       }) : true, null != i && (0, r.jsx)(l.Z, {
         type: i,
-        className: a()(h.infoSpacing, _),
+        className: a()(m.infoSpacing, _),
         verified: o
       })]
     })
@@ -115,8 +115,8 @@ let v = e => {
       forcePomelo: l,
       hideBotTag: c = false,
       hideDiscriminator: d = false,
-      displayNameStylesType: m = u.F.PLAIN
-    } = e, h = b(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]);
+      displayNameStylesType: h = u.F.PLAIN
+    } = e, m = b(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]);
     let g = (0, o.e7)([p.Z], () => p.Z.hidePersonalInformation),
       y = g || d || t.isNonUserBot(),
       S = t.toString(),
@@ -137,13 +137,13 @@ let v = e => {
         botVerified: T,
         showStreamerModeTooltip: g && _.ZP.isNameConcealed(e),
         displayNameStyles: A !== S ? t.displayNameStyles : null,
-        displayNameStylesType: m
-      }, h))
+        displayNameStylesType: h
+      }, m))
     }
     return (0, r.jsx)(f.Z, E({
       name: A,
       botType: I,
       botVerified: T,
       discriminator: y || A !== S ? null : null != s ? s : t.discriminator
-    }, h))
+    }, m))
   }

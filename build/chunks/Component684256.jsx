@@ -2,7 +2,7 @@
 /** chunk id: 684256, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,13 +17,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk108864 = require("./108864.js");
 
-function m(e) {
+function h(e) {
   let {
     context: t,
     entrypoint: n,
     title: a,
-    look: m,
-    items: h,
+    look: h,
+    items: m,
     sectionName: g,
     sectionOverallPosition: E
   } = e, b = (0, u.s)(), y = i.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
@@ -44,10 +44,10 @@ function m(e) {
     }), (0, r.jsx)(s.Ttm, {
       children: (0, r.jsx)("div", {
         className: o()({
-          [_.appGrid]: m !== d.U4.ROW,
-          [_.rows]: m === d.U4.ROW
+          [_.appGrid]: h !== d.U4.ROW,
+          [_.rows]: h === d.U4.ROW
         }),
-        children: h.map((e, n) => {
+        children: m.map((e, n) => {
           let {
             application: i,
             installOnDemand: a,
@@ -56,7 +56,7 @@ function m(e) {
           return (0, r.jsx)(y, {
             context: t,
             application: i,
-            look: m,
+            look: h,
             sectionName: g,
             resultsPosition: n,
             location: l.Vh.APP_LAUNCHER_LIST_VIEW_ALL,

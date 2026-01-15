@@ -74,8 +74,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
     currentAutocompleteType: ef,
     "aria-owns": ep,
     "aria-expanded": e_,
-    "aria-haspopup": em,
-    "aria-activedescendant": eh,
+    "aria-haspopup": eh,
+    "aria-activedescendant": em,
     "aria-controls": eg,
     "aria-invalid": eE,
     "aria-describedby": eb,
@@ -90,12 +90,12 @@ let k = Chunk473749.forwardRef(function(e, t) {
     if (true !== i && i !== o) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === p.Ie.EDIT) {
         try {
-          e.previewMarkdown = true, (0, R.KH)(e, k.guild_id, k.id)
+          e.previewMarkdown = true, (0, w.KH)(e, k.guild_id, k.id)
         } finally {
           e.previewMarkdown = false
-        }(0, R.KH)(e, k.guild_id, k.id), a = true
+        }(0, w.KH)(e, k.guild_id, k.id), a = true
       }
-      "undo" !== t && true !== i && i !== o && m.T.insertEntry(e, "other", false, o, s), l = true
+      "undo" !== t && true !== i && i !== o && h.T.insertEntry(e, "other", false, o, s), l = true
     }
     if (null == a || b.Ew.isValid(e, a) || (a = true), (l || !b.Ew.isValid(e, s)) && true === a) {
       let t = b.bN.end(e, []);
@@ -107,11 +107,11 @@ let k = Chunk473749.forwardRef(function(e, t) {
     let u = null != a && !b.Ew.equals(a, s);
     if (l && !el && b.bN.focus(e), null != a && u) {
       e.selection = a;
-      let t = m.T.currentEntry(e);
+      let t = h.T.currentEntry(e);
       null != t && (t.selection = a), l = true
     }
     let d = _.cr(e);
-    if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(k.id)) ? true : r.id) && m.T.withMergedEntry(e, () => {
+    if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(k.id)) ? true : r.id) && h.T.withMergedEntry(e, () => {
         (0, P.L)(e, k.id, null, true)
       }), l)
       if ("parent" === t) try {
@@ -123,7 +123,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
     eI.current = false
   }, []), eP = i.useCallback(() => {
     eI.current = true
-  }, []), eR = (0, I.Z)({
+  }, []), ew = (0, I.Z)({
     channel: k,
     chatInputType: a,
     canUseCommands: eo,
@@ -131,30 +131,30 @@ let k = Chunk473749.forwardRef(function(e, t) {
     onChangeStart: eN,
     onChangeEnd: eP,
     updateState: eA
-  }), ew = i.useCallback((e, t) => {
-    let n = _.tM(eR, e, k.id),
+  }), eR = i.useCallback((e, t) => {
+    let n = _.tM(ew, e, k.id),
       r = _.lk(e, k.guild_id, k.id, n, t);
     return {
       values: n,
       results: r
     }
-  }, [k.guild_id, k.id, eR]), eD = i.useCallback(() => {
-    let e, t = b.bN.getNodesOfType(eR, ["gameMentionInput", "timestampMentionInput"]),
+  }, [k.guild_id, k.id, ew]), eD = i.useCallback(() => {
+    let e, t = b.bN.getNodesOfType(ew, ["gameMentionInput", "timestampMentionInput"]),
       n = null != t ? [...t] : null,
       r = eo ? c.Z.getActiveCommand(k.id) : null,
       i = false;
     if (null != r && null != r.options) {
-      let t = ew(r, false);
+      let t = eR(r, false);
       e = t.values;
-      let n = _.cu(eR).filter(e => !t.results[e].success).map(e => {
+      let n = _.cu(ew).filter(e => !t.results[e].success).map(e => {
         var t;
         return (null != (t = r.options) ? t : []).find(t => t.name === e)
       });
-      for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eR, e), n.push(e));
+      for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(ew, e), n.push(e));
       if (n.length > 0) {
         var a, o;
         let e = n[0];
-        E.Q.selectCommandOption(eR, e.name), i = true, (0, l.yw)(j.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
+        E.Q.selectCommandOption(ew, e.name), i = true, (0, l.yw)(j.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == r ? true : r.applicationId,
           command_id: null == r || null == (a = r.rootCommand) ? true : a.id,
           argument_type: s.jw[null != (o = null == e ? true : e.type) ? o : 3],
@@ -163,11 +163,11 @@ let k = Chunk473749.forwardRef(function(e, t) {
       }
     }
     if (null != n)
-      for (let [e, t] of n) E.Q.setNodes(eR, {
+      for (let [e, t] of n) E.Q.setNodes(ew, {
         error: true
       }, {
         at: t
-      }), i || E.Q.select(eR, b.bN.end(eR, t)), i = true;
+      }), i || E.Q.select(ew, b.bN.end(ew, t)), i = true;
     if (i) {
       f.S.dispatch(j.CkL.SHAKE_APP, {
         duration: 200,
@@ -175,17 +175,17 @@ let k = Chunk473749.forwardRef(function(e, t) {
       }), null == et || et();
       return
     }
-    null == ee || ee((0, g.sk)(b.bN.richValue(eR), {
+    null == ee || ee((0, g.sk)(b.bN.richValue(ew), {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
-  }, [k.id, eR, ee, et, ew, eo]);
-  (0, T.Z)(t, eR, k, eD), (0, N.Z)(eR, ev, K);
+  }, [k.id, ew, ee, et, eR, eo]);
+  (0, T.Z)(t, ew, k, eD), (0, N.Z)(ew, ev, K);
   let {
     handleKeyDown: ex,
     handleKeyUp: eL
   } = (0, C.Z)({
-    editor: eR,
+    editor: ew,
     channel: k,
     disableEnterToSubmit: ec,
     onKeyDown: Q,
@@ -199,7 +199,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
   }), {
     handlePaste: ej,
     handleGlobalPaste: eM
-  } = (0, A.Z)(eR, eC, W), ek = i.useCallback(e => {
+  } = (0, A.Z)(ew, eC, W), ek = i.useCallback(e => {
     null == en || en()
   }, [en]), eU = i.useCallback(e => {
     e !== eS.current ? eT.current && (null == Y || Y(null, (0, g.sk)(e, {
@@ -207,25 +207,25 @@ let k = Chunk473749.forwardRef(function(e, t) {
     }), e)) : eT.current && en()
   }, [en, Y]);
   i.useLayoutEffect(() => {
-    eI.current && (eS.current = n, eA(eR, "parent", {
+    eI.current && (eS.current = n, eA(ew, "parent", {
       value: n
     }))
-  }, [eR, n, eA]), i.useEffect(() => {
+  }, [ew, n, eA]), i.useEffect(() => {
     let e = () => {
       var e;
       let t = null != (e = c.Z.getActiveCommand(k.id)) ? e : null;
-      null !== t && null != t.options && ew(t, true)
+      null !== t && null != t.options && eR(t, true)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
-  }, [k, eR, ew]);
-  let eG = i.useCallback(e => [...(0, v.Z)(eR, e, k.guild_id), ...(0, y.Z)(eR, e), ...(0, O.Z)(eR, e), ...(0, S.Z)(eR, e, k, {
+  }, [k, ew, eR]);
+  let eG = i.useCallback(e => [...(0, v.Z)(ew, e, k.guild_id), ...(0, y.Z)(ew, e), ...(0, O.Z)(ew, e), ...(0, S.Z)(ew, e, k, {
       isIdle: ed,
       currentAutocompleteType: ef
-    })], [eR, k, ed, ef]),
+    })], [ew, k, ed, ef]),
     eZ = i.useCallback(e => {
-      let t = (0, w.Z)(eR, e, k.id);
-      return null == t && (t = (0, x.Z)(eR, e)), null == t && (t = (0, L.Z)(eR, e)), t
-    }, [k.id, eR]),
+      let t = (0, R.Z)(ew, e, k.id);
+      return null == t && (t = (0, x.Z)(ew, e)), null == t && (t = (0, L.Z)(ew, e)), t
+    }, [k.id, ew]),
     eF = i.useCallback(e => (0, D.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
@@ -234,9 +234,9 @@ let k = Chunk473749.forwardRef(function(e, t) {
     }), (0, r.jsx)("div", {
       ref: ev,
       className: o()(U, M.slateContainer),
-      children: (0, r.jsx)(h.Z, {
+      children: (0, r.jsx)(m.Z, {
         id: G,
-        editor: eR,
+        editor: ew,
         channelId: k.id,
         guildId: k.guild_id,
         className: o()(M.slateTextArea, H),
@@ -256,9 +256,9 @@ let k = Chunk473749.forwardRef(function(e, t) {
         renderExtraElement: eZ,
         renderExtraLeaf: eF,
         "aria-owns": ep,
-        "aria-haspopup": em,
+        "aria-haspopup": eh,
         "aria-expanded": e_,
-        "aria-activedescendant": eh,
+        "aria-activedescendant": em,
         "aria-controls": eg,
         "aria-labelledby": ey,
         "aria-describedby": eb,

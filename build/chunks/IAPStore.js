@@ -50,8 +50,8 @@ function p(e, t) {
   }), e
 }
 let _ = Chunk667354.vk.DISCONNECTED,
-  m = null,
-  h = new Map,
+  h = null,
+  m = new Map,
   g = new Set,
   E = new Set,
   b = null,
@@ -98,25 +98,25 @@ function P() {
   O = false
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     skus: n,
     skusType: r
   } = e;
   n.forEach(e => {
-    h.set(e.identifier, e)
-  }), null == (m = null == (t = Array.from(h.values())) ? true : t.filter(e => null != e)) || m.forEach(e => {
+    m.set(e.identifier, e)
+  }), null == (h = null == (t = Array.from(m.values())) ? true : t.filter(e => null != e)) || h.forEach(e => {
     let t = null == e ? true : e.offerIds;
     null != t && t.forEach(e => g.add(e))
   });
   try {
-    m = null == m ? true : m.map(T)
+    h = null == h ? true : h.map(T)
   } catch (e) {
     (0, o.q2)(e)
   }
-  switch (null == m || m.forEach(e => {
-      h.set(e.identifier, e)
+  switch (null == h || h.forEach(e => {
+      m.set(e.identifier, e)
     }), r) {
     case l.oo.IN_APP:
       O = false;
@@ -126,7 +126,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     productId: t
   } = e;
@@ -163,14 +163,14 @@ function j(e) {
 }
 class M extends(r = Chunk442837.ZP.Store) {
   getProducts() {
-    return m
+    return h
   }
   getOfferIds() {
     return g
   }
   getProduct(e) {
     var t;
-    return null != (t = h.get(e)) ? t : null
+    return null != (t = m.get(e)) ? t : null
   }
   isBusy() {
     return E.size > 0 || y
@@ -201,12 +201,12 @@ u(M, "displayName", "IAPStore");
 let k = new M(Chunk570140.Z, {
   GPLAY_UPDATE_CONNECTION_STATE: I,
   GPLAY_FETCH_SUBSCRIPTION_SKUS_START: C,
-  GPLAY_SUBSCRIPTION_SKUS_LOADED: R,
+  GPLAY_SUBSCRIPTION_SKUS_LOADED: w,
   GPLAY_FETCH_SUBSCRIPTION_SKUS_FAILED: A,
   GPLAY_FETCH_IN_APP_SKUS_START: N,
-  GPLAY_IN_APP_SKUS_LOADED: R,
+  GPLAY_IN_APP_SKUS_LOADED: w,
   GPLAY_FETCH_IN_APP_SKUS_FAILED: P,
-  GPLAY_VERIFICATION_START: w,
+  GPLAY_VERIFICATION_START: R,
   GPLAY_VERIFICATION_END: D,
   GPLAY_UPDATE_PENDING_DOWNGRADE: x,
   GPLAY_UPDATE_IS_DOWNGRADING: L,

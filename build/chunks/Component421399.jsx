@@ -41,7 +41,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -98,7 +98,7 @@ function M(e) {
     author: n,
     message: a,
     channel: P,
-    userOverride: w,
+    userOverride: R,
     compact: L = false,
     withMentionPrefix: j = false,
     showPopout: M = false,
@@ -129,8 +129,8 @@ function M(e) {
     authorId: a.author.id
   });
   let {
-    gradientStyle: em,
-    gradientClassname: eh
+    gradientStyle: eh,
+    gradientClassname: em
   } = (0, d.Icv)({
     colorStrings: ee,
     roleStyle: "username",
@@ -140,7 +140,7 @@ function M(e) {
     if (ei) {
       if (ep && null != ee) {
         var e;
-        return D(R({}, em), {
+        return D(w({}, eh), {
           textDecorationColor: null != (e = null == ee ? true : ee.primaryColor) ? e : true
         })
       }
@@ -150,16 +150,16 @@ function M(e) {
     }
   }, eE = (0, u.EJ)(X + J), eb = {
     className: o()(N.username, eo, {
-      [eh]: ep,
+      [em]: ep,
       [N.usernameColorOnName]: "username" === er && null != $
     }),
     style: eg(),
     onClick: Z,
     onContextMenu: F,
-    children: e_ ? (0, r.jsx)(h.Z, {
+    children: e_ ? (0, r.jsx)(m.Z, {
       userName: eE,
       displayNameStyles: en,
-      effectDisplayType: ed ? m.F.ANIMATED : m.F.PLAIN,
+      effectDisplayType: ed ? h.F.ANIMATED : h.F.PLAIN,
       loop: true,
       shouldUnderlineOnHover: null != Z
     }) : eE,
@@ -170,7 +170,7 @@ function M(e) {
     contextGuildId: q,
     className: N.clanTagChiplet,
     badgeSize: A.Gg.SIZE_12
-  }) : null, [L, n.primaryGuild, q, a.author.id, k]), eO = null != w ? w : a.author, ev = null != V && null != M ? (0, r.jsx)(v.Z, {
+  }) : null, [L, n.primaryGuild, q, a.author.id, k]), eO = null != R ? R : a.author, ev = null != V && null != M ? (0, r.jsx)(v.Z, {
     targetElementRef: K,
     user: eO,
     renderPopout: V,
@@ -190,7 +190,7 @@ function M(e) {
         onClick: t
       } = e, n = x(e, ["onClick"]);
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.P3F, D(R({
+        children: [(0, r.jsx)(d.P3F, D(w({
           tag: "span",
           innerRef: K
         }, n, eb), {
@@ -199,7 +199,7 @@ function M(e) {
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.P3F, D(R({}, eb), {
+    children: [(0, r.jsx)(d.P3F, D(w({}, eb), {
       className: o()(eb.className, G)
     })), ey]
   }), eS = null != H ? H[0] : null, eI = null != H ? H[1] : null;

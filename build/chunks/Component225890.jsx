@@ -33,7 +33,7 @@ function O(e) {
     guild: T,
     channel: C,
     isMember: A
-  } = (0, a.cj)([g.ZP, _.Z, f.Z, p.ZP, m.default], () => {
+  } = (0, a.cj)([g.ZP, _.Z, f.Z, p.ZP, h.default], () => {
     var e, t;
     let r = null != (t = g.ZP.getGuildScheduledEvent(O)) ? t : true,
       i = _.Z.getGuild(n),
@@ -42,7 +42,7 @@ function O(e) {
       guildScheduledEvent: r,
       guild: i,
       channel: a,
-      isMember: p.ZP.isMember(n, null == (e = m.default.getCurrentUser()) ? true : e.id)
+      isMember: p.ZP.isMember(n, null == (e = h.default.getCurrentUser()) ? true : e.id)
     }
   }, [n, O]), N = () => {
     if ((0, u.o)({
@@ -62,7 +62,7 @@ function O(e) {
     (null == C ? true : C.isGuildStageVoice()) ? (0, d.Cq)(C) : (null == C ? true : C.isGuildVoice()) && E.Z.joinVoiceEvent(C.guild_id, C.id)
   }
   return i.useEffect(() => {
-    (null == I ? true : I.id) == null && E.Z.fetchGuildEvent(n, O), h.Z.getGuildEventUserCounts(n, O, null != v ? [v] : []), h.Z.getGuildEventsForCurrentUser(n)
+    (null == I ? true : I.id) == null && E.Z.fetchGuildEvent(n, O), m.Z.getGuildEventUserCounts(n, O, null != v ? [v] : []), m.Z.getGuildEventsForCurrentUser(n)
   }, [O, n, null == I ? true : I.id, v]), (0, r.jsx)(b.ZP, {
     guild: T,
     channel: C,

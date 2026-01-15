@@ -4,8 +4,8 @@
 require.d(exports, {
   CR: () => P,
   ZP: () => Q,
-  oL: () => R,
-  so: () => w
+  oL: () => w,
+  so: () => R
 }), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -68,8 +68,8 @@ function N(e, t) {
   }), e
 }
 let P = "everyone",
-  R = 0;
-var w = function(e) {
+  w = 0;
+var R = function(e) {
   return e.GROUP = "GROUP", e.MEMBER = "MEMBER", e.CONTENT_INVENTORY = "CONTENT_INVENTORY", e.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", e.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY", e.CONTENT_INVENTORY_LEADERBOARD = "CONTENT_INVENTORY_LEADERBOARD", e
 }({});
 
@@ -119,7 +119,7 @@ function x(e, t, n) {
 }
 
 function L(e) {
-  let t = m.Z.getChannel(e);
+  let t = h.Z.getChannel(e);
   return null == t ? P : null == t.memberListId ? j(t) : t.memberListId
 }
 
@@ -322,7 +322,7 @@ function z() {
 }
 class q extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(v.default, b.Z, E.Z, m.Z, g.ZP, y.Z, O.Z, _.default, h.Z, p.Z, d.Z), this.syncWith([O.Z], K), this.syncWith([p.Z], W)
+    this.waitFor(v.default, b.Z, E.Z, h.Z, g.ZP, y.Z, O.Z, _.default, m.Z, p.Z, d.Z), this.syncWith([O.Z], K), this.syncWith([p.Z], W)
   }
   getProps(e, t) {
     let n = U.get(e, L(t));

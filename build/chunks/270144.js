@@ -37,7 +37,7 @@ let b = e => {
     forceRefetch: a = false
   } = e, o = (0, i.e7)([_.Z], () => null != t ? _.Z.getEntitlementsForGuildFetchState(t) : null, [t]);
   return r.useEffect(() => {
-    if (null == t || t === h.ME) return;
+    if (null == t || t === m.ME) return;
     let e = _.Z.getEntitlementsForGuildFetchState(t);
     n && (e === _.M.NOT_FETCHED || a) && (0, f.i1)(t)
   }, [t, n, a]), {
@@ -47,12 +47,12 @@ let b = e => {
 
 function y(e) {
   var t;
-  let n = null != (t = null == e ? true : e.id) ? t : h.lds,
+  let n = null != (t = null == e ? true : e.id) ? t : m.lds,
     {
       entitlementsLoaded: a
     } = b({
       guildId: n,
-      canFetch: (0, i.e7)([s.Z], () => s.Z.can(h.Plq.ADMINISTRATOR, e))
+      canFetch: (0, i.e7)([s.Z], () => s.Z.can(m.Plq.ADMINISTRATOR, e))
     }),
     o = (0, i.e7)([d.Z], () => d.Z.getLastGuildDismissedTime(n)),
     l = (0, i.Wu)([_.Z], () => {
@@ -74,11 +74,11 @@ let O = () => {
     t(1), Promise.all([(0, a.p0)({
       withSku: true,
       withApplication: true,
-      entitlementType: h.qc2.APPLICATION_SUBSCRIPTION
+      entitlementType: m.qc2.APPLICATION_SUBSCRIPTION
     }), (0, a.p0)({
       withSku: true,
       withApplication: true,
-      entitlementType: h.qc2.PURCHASE
+      entitlementType: m.qc2.PURCHASE
     })]).catch(() => {
       t(3)
     }).then(() => {
@@ -145,7 +145,7 @@ function N(e) {
     flags: c
   } = r;
   for (let e of null != (t = i.getActiveApplicationSubscriptions()) ? t : []) {
-    if ((0, m.KK)(c) && null != s && (null == (n = e.metadata) ? true : n.application_subscription_guild_id) !== s) continue;
+    if ((0, h.KK)(c) && null != s && (null == (n = e.metadata) ? true : n.application_subscription_guild_id) !== s) continue;
     let t = o(e).map(e => a.get(e.planId)).find(e => null != e && l.includes(e.skuId));
     if (null != t) return [e, t]
   }

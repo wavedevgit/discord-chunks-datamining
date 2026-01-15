@@ -20,8 +20,8 @@ let d = e => {
     titleClassName: f,
     buttonClassName: p,
     perkImage: _,
-    isCarousel: m,
-    onCtaClick: h,
+    isCarousel: h,
+    onCtaClick: m,
     perkComponent: g,
     subtitle: E = "",
     descriptionCta: b = "",
@@ -42,13 +42,13 @@ let d = e => {
       subtitleClassName: v
     }), null != _ && (0, r.jsxs)("div", {
       className: a()(u.relative, {
-        [u.cardImage]: !m,
-        [u.hoverCardImage]: !m && !(null == T || null == (t = T.perkImage) ? true : t.disableHoverAnimation)
+        [u.cardImage]: !h,
+        [u.hoverCardImage]: !h && !(null == T || null == (t = T.perkImage) ? true : t.disableHoverAnimation)
       }, null == T || null == (n = T.perkImage) ? true : n.className),
       children: [(0, r.jsx)("img", {
         src: _,
         alt: "",
-        className: m ? C ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+        className: h ? C ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
       }), C ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(s.Text, {
@@ -59,11 +59,11 @@ let d = e => {
       }) : null]
     }), null != g && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
-      children: [g, 0 !== b.length && null != h && (0, r.jsx)(o.zx, {
+      children: [g, 0 !== b.length && null != m && (0, r.jsx)(o.zx, {
         "data-migration-pending": true,
         className: p,
         fullWidth: true,
-        onClick: h,
+        onClick: m,
         children: (0, r.jsx)("div", {
           className: null == T || null == (i = T.descriptionCta) ? true : i.className,
           children: b

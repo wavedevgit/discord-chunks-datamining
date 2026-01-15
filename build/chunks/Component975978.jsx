@@ -138,7 +138,7 @@ let A = e => {
       }), n.map(e => (0, r.jsx)(N, I({}, e), e.id))]
     })
   },
-  R = e => {
+  w = e => {
     let {
       premiumType: t,
       priceString: n
@@ -159,7 +159,7 @@ let A = e => {
       })]
     })
   },
-  w = e => {
+  R = e => {
     let {
       tier0Price: t,
       tier2Price: n,
@@ -179,14 +179,14 @@ let A = e => {
         }), (0, r.jsx)("th", {
           scope: "col",
           className: y.cell,
-          children: (0, r.jsx)(R, {
+          children: (0, r.jsx)(w, {
             premiumType: E.PremiumTypes.TIER_0,
             priceString: (0, f.T4)(t.amount, t.currency)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
           className: y.cell,
-          children: (0, r.jsx)(R, {
+          children: (0, r.jsx)(w, {
             premiumType: E.PremiumTypes.TIER_2,
             priceString: o
           })
@@ -207,8 +207,8 @@ let A = e => {
       T = (0, _.N)(),
       A = null == T || null == (t = T.subscription_trial) ? true : t.sku_id,
       N = (0, p.N)(),
-      R = null != N && (0, m.Wp)(N, E.Si.TIER_2),
-      D = (0, m.Aq)(E.Xh.PREMIUM_MONTH_TIER_2),
+      w = null != N && (0, h.Wp)(N, E.Si.TIER_2),
+      D = (0, h.Aq)(E.Xh.PREMIUM_MONTH_TIER_2),
       x = "".concat(D, "/").concat((0, d.eP)(E.rV.MONTH)),
       L = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_0),
       j = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_2),
@@ -216,7 +216,7 @@ let A = e => {
     if (s) n = null;
     else {
       let e = null != T ? b.intl.string(b.t.IBYG5U) : b.intl.string(b.t.TR2B4T);
-      n = (0, r.jsx)(h.E, {
+      n = (0, r.jsx)(m.E, {
         className: o()(y.pill, y.pillGradient),
         text: e
       })
@@ -254,10 +254,10 @@ let A = e => {
             })]
           }), (0, r.jsxs)("table", {
             className: y.table,
-            children: [(0, r.jsx)(w, {
+            children: [(0, r.jsx)(R, {
               tier0Price: L,
               tier2Price: j,
-              shouldUseDiscountPrice: R,
+              shouldUseDiscountPrice: w,
               tier2DiscountedPriceString: x
             }), M.map(e => (0, i.createElement)(P, C(I({}, e), {
               key: e.id

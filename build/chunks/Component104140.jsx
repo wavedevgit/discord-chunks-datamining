@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +61,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = 16,
+let m = 16,
   g = 2,
   E = e => {
     switch (e) {
@@ -101,8 +101,8 @@ function y(e) {
   var {
     selected: t = false,
     lowerBadgeSize: n = {
-      width: h,
-      height: h
+      width: m,
+      height: m
     },
     highlight: i = false,
     rounded: a = false
@@ -110,8 +110,8 @@ function y(e) {
   let c = !!o.isFolder,
     u = (0, l.Ml)("BlobMask"),
     f = (0, s.dQu)(s.TVs.modules.guildbar.AVATAR_SIZE),
-    m = (0, s.dQu)(s.TVs.modules.guildbar.FOLDER_SIZE),
-    g = !u && c ? m : f,
+    h = (0, s.dQu)(s.TVs.modules.guildbar.FOLDER_SIZE),
+    g = !u && c ? h : f,
     E = g / 2;
   return (0, r.jsx)(O, p(d({}, o), {
     selected: t,
@@ -140,7 +140,7 @@ function O(e) {
     lowerBadgeSize: f,
     highlight: p,
     badgeMaskStroke: _,
-    badgeMaskSize: m,
+    badgeMaskSize: h,
     upperBadge: y,
     lowerBadge: O,
     rounded: v = false,
@@ -149,12 +149,12 @@ function O(e) {
     T(true)
   }, A = () => {
     T(false)
-  }, N = null != y, P = null != O, R = i.useId(), w = "".concat(R, "-upper_badge_masks"), D = "".concat(R, "-lower_badge_masks"), x = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), j = "".concat(R, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : h, k = (null == f ? true : f.height) != null ? f.height : h, U = {
+  }, N = null != y, P = null != O, w = i.useId(), R = "".concat(w, "-upper_badge_masks"), D = "".concat(w, "-lower_badge_masks"), x = "".concat(w, "-blob_mask"), L = "".concat(w, "-stroke_mask"), j = "".concat(w, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : m, k = (null == f ? true : f.height) != null ? f.height : m, U = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
     y: d ? 0 : false
-  }, G = d ? 20 : m, Z = v ? b(n) : E(n);
+  }, G = d ? 20 : h, Z = v ? b(n) : E(n);
   return (0, r.jsxs)("div", {
     className: o()(a, c.wrapper),
     style: l,
@@ -179,7 +179,7 @@ function O(e) {
           d: Z,
           id: x
         }), null != y ? (0, r.jsx)("rect", {
-          id: w,
+          id: R,
           x: n - G + _,
           y: -_,
           width: G,
@@ -192,11 +192,11 @@ function O(e) {
           y: n - (k + 2 * _) + _,
           width: M + 2 * _,
           height: k + 2 * _,
-          rx: m / 2,
-          ry: m / 2
+          rx: h / 2,
+          ry: h / 2
         }) : null]
       }), (0, r.jsxs)("mask", {
-        id: R,
+        id: w,
         fill: "black",
         x: 0,
         y: 0,
@@ -212,7 +212,7 @@ function O(e) {
             [c.isHighlighted]: p
           })
         }), N ? (0, r.jsx)("use", {
-          href: "#".concat(w),
+          href: "#".concat(R),
           fill: "black"
         }) : null, P ? (0, r.jsx)("use", {
           href: "#".concat(D),
@@ -227,7 +227,7 @@ function O(e) {
           y: "-25%",
           fill: "white"
         }), N ? (0, r.jsx)("use", {
-          href: "#".concat(w),
+          href: "#".concat(R),
           fill: "black"
         }) : null, P ? (0, r.jsx)("use", {
           href: "#".concat(D),
@@ -243,7 +243,7 @@ function O(e) {
         }), (0, r.jsxs)("g", {
           className: c.focusFill,
           children: [null != y ? (0, r.jsx)("use", {
-            href: "#".concat(w)
+            href: "#".concat(R)
           }) : null, null != O ? (0, r.jsx)("use", {
             href: "#".concat(D)
           }) : null]
@@ -255,7 +255,7 @@ function O(e) {
         className: c.highlight,
         mask: "url(#".concat(L, ")")
       }), (0, r.jsx)("foreignObject", {
-        mask: "url(#".concat(R, ")"),
+        mask: "url(#".concat(w, ")"),
         x: 0,
         y: 0,
         className: u,

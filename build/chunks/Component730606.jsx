@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Qk: () => A,
-  WG: () => R,
-  ZP: () => w
+  WG: () => w,
+  ZP: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -89,9 +89,9 @@ function P(e) {
   })
 }
 
-function R(e, t) {
+function w(e, t) {
   if ("IMAGE" === e.type) {
-    if (!(0, h._H)(e)) return void(0, d.po)(e.url);
+    if (!(0, m._H)(e)) return void(0, d.po)(e.url);
     A({
       src: (0, _.q)({
         proxyURL: e.proxyUrl,
@@ -105,7 +105,7 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     items: t,
     onIndexChange: n,
@@ -113,22 +113,22 @@ function w(e) {
     enabledContentHarmTypeFlags: c = 0,
     shouldHideMediaOptions: d = false
   } = e, [f, p] = i.useState(a), _ = i.useRef(a), {
-    zoomed: h,
+    zoomed: m,
     setZoomed: A
-  } = (0, E.Y)(), R = i.useCallback(e => {
+  } = (0, E.Y)(), w = i.useCallback(e => {
     p(e = N(e, t.length)), _.current = e, null == n || n(e), A(false)
   }, [n, t, A]);
   i.useEffect(() => {
-    let e = () => R(_.current + 1),
-      t = () => R(_.current - 1);
-    return m.S.subscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), m.S.subscribe(I.CkL.MODAL_CAROUSEL_PREV, t), () => {
-      m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_PREV, t)
+    let e = () => w(_.current + 1),
+      t = () => w(_.current - 1);
+    return h.S.subscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(I.CkL.MODAL_CAROUSEL_PREV, t), () => {
+      h.S.unsubscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(I.CkL.MODAL_CAROUSEL_PREV, t)
     }
-  }, [R, A]);
-  let w = t[f],
+  }, [w, A]);
+  let R = t[f],
     D = (0, u.g4)({
       type: l.l.GenericMedia,
-      media: w
+      media: R
     }, c),
     x = d ? e => {
       e.stopPropagation(), e.preventDefault()
@@ -139,14 +139,14 @@ function w(e) {
       children: e => L ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), m.S.dispatch(I.CkL.MODAL_CAROUSEL_PREV)
+            e.stopPropagation(), h.S.dispatch(I.CkL.MODAL_CAROUSEL_PREV)
           },
           icon: s.j9r,
           tooltip: T.intl.string(T.t.vgfxaA),
           className: o()(C.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), m.S.dispatch(I.CkL.MODAL_CAROUSEL_NEXT)
+            e.stopPropagation(), h.S.dispatch(I.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
           tooltip: T.intl.string(T.t.XiOHRX),
@@ -157,10 +157,10 @@ function w(e) {
       items: t,
       currentIndex: f,
       children: (e, t) => (0, r.jsx)(P, {
-        isObscured: !h && D,
-        src: w.url,
+        isObscured: !m && D,
+        src: R.url,
         children: n => (0, r.jsx)(S.ZP, {
-          media: w,
+          media: R,
           maxWidth: e,
           maxHeight: t,
           obscured: n,
@@ -171,7 +171,7 @@ function w(e) {
       children: e => (0, r.jsx)(O.Z, {
         items: t,
         currentIndex: f,
-        onGalleryItemClick: R,
+        onGalleryItemClick: w,
         className: e,
         enabledContentHarmTypeFlags: c
       })

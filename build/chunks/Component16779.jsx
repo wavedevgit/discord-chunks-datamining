@@ -2,7 +2,7 @@
 /** chunk id: 16779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Rg: () => m,
+  Rg: () => h,
   Xh: () => _,
   ho: () => p
 });
@@ -27,12 +27,12 @@ function p(e) {
   let {
     activity: p
   } = e, _ = null != (c = null == (t = p.timestamps) ? true : t.start) ? c : p.created_at, {
-    now: m
+    now: h
   } = (0, o.t)();
   if (null == _ || (0, u.Z)(p)) return null;
-  let h = null == (n = p.timestamps) ? true : n.end,
+  let m = null == (n = p.timestamps) ? true : n.end,
     g = null != (d = null == (a = p.timestamps) ? true : a.isCountDown) && d,
-    E = f(p, g && null != h && h > m);
+    E = f(p, g && null != m && m > h);
   return (0, r.jsxs)(s.m7, {
     children: [(0, r.jsx)(E, {
       size: "xxs",
@@ -40,7 +40,7 @@ function p(e) {
     }), (0, r.jsx)(l.x, {
       entry: {
         start: _,
-        end: h,
+        end: m,
         isCountDown: g
       },
       textColor: "text-feedback-positive",
@@ -61,7 +61,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   var t;
   let {
     activity: n

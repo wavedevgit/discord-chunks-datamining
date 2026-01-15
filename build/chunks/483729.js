@@ -125,7 +125,7 @@ module.exports = function(e) {
         end: "(?=\\\\end\\{" + e + "\\})"
       }
     },
-    m = (e = "string") => ({
+    h = (e = "string") => ({
       relevance: 0,
       begin: /\{/,
       starts: {
@@ -151,13 +151,13 @@ module.exports = function(e) {
     })), d("mint", u(l, {
       contains: [p()]
     })), d("mintinline", u(l, {
-      contains: [m(), p()]
+      contains: [h(), p()]
     })), d("url", {
-      contains: [m("link"), m("link")]
+      contains: [h("link"), h("link")]
     }), d("hyperref", {
-      contains: [m("link")]
+      contains: [h("link")]
     }), d("href", u(c, {
-      contains: [m("link")]
+      contains: [h("link")]
     })), ...[].concat(...["", "\\*"].map(e => [f("verbatim" + e, _("verbatim" + e)), f("filecontents" + e, u(l, _("filecontents" + e))), ...["", "B", "L"].map(t => f(t + "Verbatim" + e, u(c, _(t + "Verbatim" + e))))])), f("minted", u(c, u(l, _("minted")))), ...i]
   }
 }

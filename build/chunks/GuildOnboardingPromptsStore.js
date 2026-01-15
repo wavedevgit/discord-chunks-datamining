@@ -16,7 +16,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk819553 = require("./819553.js"),
   Chunk290511 = require("./290511.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,14 +25,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -73,11 +73,11 @@ function T(e, t, n) {
   for (let t = 0; t < e.options.length; t++) {
     let a = e.options[t],
       o = null == n[a.id];
-    o && (r = true), i.push(E(h({}, a), {
+    o && (r = true), i.push(E(m({}, a), {
       isUnseen: o
     }))
   }
-  return E(h({}, e), {
+  return E(m({}, e), {
     options: i,
     hasNewAnswers: r,
     isNew: null == t[e.id]
@@ -115,7 +115,7 @@ function A(e) {
     onboardingPromptsSeen: o,
     onboardingResponsesSeen: s,
     connections: null != u ? u : []
-  }, d || w(t, a), O[t] = Date.now()
+  }, d || R(t, a), O[t] = Date.now()
 }
 
 function N() {
@@ -128,22 +128,22 @@ function P(e) {
     guildId: u,
     updates: d
   } = e, f = null != (a = null != (i = d.onboardingPromptsSeen) ? i : null == (t = b[u]) ? true : t.onboardingPromptsSeen) ? a : {}, p = null != (s = null != (o = d.onboardingResponsesSeen) ? o : null == (n = b[u]) ? true : n.onboardingResponsesSeen) ? s : {}, _ = C(null != (c = null != (l = d.prompts) ? l : null == (r = b[u]) ? true : r.prompts) ? c : [], f, p);
-  b[u] = E(h({}, b[u], d), {
+  b[u] = E(m({}, b[u], d), {
     prompts: _
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t,
     optionId: n,
     selected: r,
     removedOptionIds: i
   } = e;
-  return !!l.Z.isFullServerPreview(t) || null != b[t] && (null != i && i.length > 0 && a().pullAll(b[t].responses, i), r ? b[t].responses.push(n) : a().pull(b[t].responses, n), null == y[t] && (y[t] = {}), y[t][n] = r, null != i && i.forEach(e => y[t][e] = false), y[t] = h({}, y[t]), true)
+  return !!l.Z.isFullServerPreview(t) || null != b[t] && (null != i && i.length > 0 && a().pullAll(b[t].responses, i), r ? b[t].responses.push(n) : a().pull(b[t].responses, n), null == y[t] && (y[t] = {}), y[t][n] = r, null != i && i.forEach(e => y[t][e] = false), y[t] = m({}, y[t]), true)
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == y[e]) return;
   let n = {};
   Object.keys(y[e]).forEach(r => {
@@ -152,7 +152,7 @@ function w(e, t) {
   let r = t.filter(e => null == n[e] || true === n[e]);
   Object.keys(n).forEach(e => {
     true !== n[e] || t.includes(e) || r.push(e)
-  }), b[e] = E(h({}, b[e]), {
+  }), b[e] = E(m({}, b[e]), {
     responses: r
   })
 }
@@ -164,11 +164,11 @@ function D(e) {
     prompts_seen: r,
     options_seen: i
   } = e;
-  w(t, n);
+  R(t, n);
   let a = b[t];
   if (null == a) returnfalse;
   let o = C(a.prompts, r, i);
-  b[t] = E(h({}, a), {
+  b[t] = E(m({}, a), {
     prompts: o,
     onboardingPrompts: o.filter(e => e.inOnboarding),
     onboardingPromptsSeen: r,
@@ -181,7 +181,7 @@ function x(e) {
     guildId: t,
     channelIds: n
   } = e;
-  b[t] = E(h({}, b[t]), {
+  b[t] = E(m({}, b[t]), {
     defaultChannelIds: n
   })
 }
@@ -192,7 +192,7 @@ function L(e) {
     connections: n
   } = e;
   if (null == b[t]) returnfalse;
-  b[t] = E(h({}, b[t]), {
+  b[t] = E(m({}, b[t]), {
     connections: n
   })
 }
@@ -290,14 +290,14 @@ class F extends(r = Chunk442837.ZP.Store) {
     return null != (n = null == (t = b[e]) ? true : t.connections) ? n : Z
   }
 }
-m(F, "displayName", "GuildOnboardingPromptsStore");
+h(F, "displayName", "GuildOnboardingPromptsStore");
 let B = new F(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   GUILD_DELETE: M,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: S,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: A,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: N,
-  GUILD_ONBOARDING_SELECT_OPTION: R,
+  GUILD_ONBOARDING_SELECT_OPTION: w,
   GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: P,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: P,

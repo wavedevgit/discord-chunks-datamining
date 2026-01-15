@@ -95,8 +95,8 @@ function C(e) {
       shouldAnimate: A,
       onMouseEnter: N,
       onMouseLeave: P,
-      canSelect: R = true,
-      autoplay: w,
+      canSelect: w = true,
+      autoplay: R,
       registerInnerRef: D,
       registerAnimatedElementRef: x,
       surrogate: L
@@ -105,17 +105,17 @@ function C(e) {
   let [M, k] = i.useState(false), [U, G] = i.useState(true), Z = i.useRef(true), {
     triggerAnimation: F,
     untriggerAnimation: B
-  } = i.useContext(u.Rm), V = p.Yk.useSetting(), H = T(), Y = null == w ? V : w, W = E.kV[I], K = i.useRef(null), z = i.useMemo(() => {
+  } = i.useContext(u.Rm), V = p.Yk.useSetting(), H = T(), Y = null == R ? V : R, W = E.kV[I], K = i.useRef(null), z = i.useMemo(() => {
     if (null != a) return a;
     if (null != f) {
       let e = true === A && Y;
-      return m.ZP.getEmojiURL({
+      return h.ZP.getEmojiURL({
         id: f,
         animated: H && true === O && (e || M || true === C),
         size: W
       })
     }
-    if (null != _) return h.ZP.getURL(_);
+    if (null != _) return m.ZP.getURL(_);
     throw Error("Unknown Src for Emoji")
   }, [O, Y, f, _, W, H, M, C, A, a]), q = i.useCallback(() => {
     null != z && (Z.current = (0, d.po)(z, e => {
@@ -160,7 +160,7 @@ function C(e) {
       emojiName: _,
       disable: false === Y || false === V,
       emojiRef: ee
-    }), R ? (0, r.jsx)("img", v(y({}, J), {
+    }), w ? (0, r.jsx)("img", v(y({}, J), {
       ref: $,
       src: z,
       alt: null != (t = null != s ? s : _) ? t : true,

@@ -2,7 +2,7 @@
 /** chunk id: 564344, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,13 +32,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk37149 = require("./37149.js");
 
-function R() {
+function w() {
   let e = (0, _.gN)("ProfileCustomizationSettingsPage"),
     t = (0, s.e7)([d.Z], () => d.Z.getGuild()),
     n = (0, v.Z)(),
     a = (0, s.e7)([d.Z, E.Z], () => d.Z.showNotice() || E.Z.showNotice()),
-    R = null != t ? t : n,
-    w = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+    w = null != t ? t : n,
+    R = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
     {
       subsection: D,
       setSubsection: x
@@ -55,17 +55,17 @@ function R() {
         }), y.S.dispatch(I.CkL.EMPHASIZE_NOTICE);
         return
       }
-      e === C.NB.GUILD && null == t && null != R && (0, u.Fq)(R), x(e)
+      e === C.NB.GUILD && null == t && null != w && (0, u.Fq)(w), x(e)
     }
   }
   i.useEffect(() => {
-    null != w && (null == R ? true : R.id) !== T._ && (0, p.Z)(w.id, w.getAvatarURL(null == R ? true : R.id, 80), {
-      guildId: null == R ? true : R.id
+    null != R && (null == w ? true : w.id) !== T._ && (0, p.Z)(R.id, R.getAvatarURL(null == w ? true : w.id, 80), {
+      guildId: null == w ? true : w.id
     })
-  }, [null == R ? true : R.id, w]);
+  }, [null == w ? true : w.id, R]);
   let k = true,
     U = true;
-  return L && 1 === j.length && (j.includes(A.s6.PROFILE_SERVER_PROFILES) ? (M(C.NB.GUILD), U = false) : j.includes(A.s6.PROFILE_USER_PROFILE) && (M(C.NB.USER_PROFILE), k = false)), (0, r.jsxs)(m.N, {
+  return L && 1 === j.length && (j.includes(A.s6.PROFILE_SERVER_PROFILES) ? (M(C.NB.GUILD), U = false) : j.includes(A.s6.PROFILE_USER_PROFILE) && (M(C.NB.USER_PROFILE), k = false)), (0, r.jsxs)(h.N, {
     header: N.intl.string(N.t["vi7f+q"]),
     children: [(0, r.jsxs)(l.njP, {
       className: P.tabBar,
@@ -84,7 +84,7 @@ function R() {
         children: N.intl.string(N.t.kPHroX)
       }, C.NB.GUILD) : null]
     }), D === C.NB.GUILD ? (0, r.jsx)(f.Z, {
-      selectedGuild: R
-    }) : (0, r.jsx)(h.Z, {})]
+      selectedGuild: w
+    }) : (0, r.jsx)(m.Z, {})]
   })
 }

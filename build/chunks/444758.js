@@ -70,7 +70,7 @@ function C(e) {
   return {
     type: "guild",
     guildId: e.id,
-    content: (0, h.aF)(e.name, 32),
+    content: (0, m.aF)(e.name, 32),
     icon: _.ZP.getGuildIconURL({
       id: e.id,
       icon: e.icon,
@@ -80,7 +80,7 @@ function C(e) {
 }
 
 function A(e, t) {
-  let n, r = D((0, h.aF)(e.name, 32));
+  let n, r = D((0, m.aF)(e.name, 32));
   return {
     type: "channel",
     content: [n = "italics" === t ? {
@@ -117,11 +117,11 @@ function P(e) {
   }
 }
 
-function R(e, t) {
+function w(e, t) {
   var n;
   let r = c.Z.getChannel(e),
     i = (0, s.$)(e, c.Z, a.Z, d.Z).isSubscriptionGated,
-    u = null != (n = (0, m.wl)(r)) ? n : "text";
+    u = null != (n = (0, h.wl)(r)) ? n : "text";
   if (null != t) {
     let n = t.find(t => t.id === e);
     if (null != n) return {
@@ -153,7 +153,7 @@ function R(e, t) {
   } : null
 }
 
-function w(e) {
+function R(e) {
   return {
     type: "link",
     content: [{
@@ -173,7 +173,7 @@ function D(e) {
 }
 
 function x(e) {
-  return null != e ? w(e) : D("#".concat(y.intl.string(y.t.J90oLW)))
+  return null != e ? R(e) : D("#".concat(y.intl.string(y.t.J90oLW)))
 }
 
 function L() {
@@ -211,7 +211,7 @@ function M(e, t, n, r) {
           inContent: [A({
             name: e.name,
             type: e.type,
-            iconType: null != (s = (0, m.wl)(e)) ? s : "forum"
+            iconType: null != (s = (0, h.wl)(e)) ? s : "forum"
           })],
           content: [a]
         }
@@ -265,7 +265,7 @@ let U = {
         type: "channelMention",
         id: r
       };
-      let i = R(r, n.mentionChannels);
+      let i = w(r, n.mentionChannels);
       return null == i ? j(null, r, null, T(n.channelId)) : k(i, null, T(n.channelId))
     }
   },
@@ -283,8 +283,8 @@ let U = {
           i = e[1],
           a = e[2],
           o = e[3];
-        if (null == a) return w(r);
-        let s = R(a, null);
+        if (null == a) return R(r);
+        let s = w(a, null);
         return null == s ? j(i, a, o, T(n.channelId), r) : k(s, o, T(n.channelId), r)
       }
     },
@@ -298,10 +298,10 @@ let U = {
           a = e[2],
           o = e[3],
           s = e[4];
-        if (null == a || null == o) return w(r);
-        let l = R(o, null);
+        if (null == a || null == o) return R(r);
+        let l = w(o, null);
         if (null != l) return k(l, s, T(n.channelId), r);
-        let c = R(a, null);
+        let c = w(a, null);
         return null != c ? k(c, s, T(n.channelId), r) : j(i, a, s, T(n.channelId), r)
       }
     }

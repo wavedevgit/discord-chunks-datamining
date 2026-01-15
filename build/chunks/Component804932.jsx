@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   CP: () => S,
-  HP: () => m,
+  HP: () => h,
   Qz: () => y,
   RZ: () => O,
-  fJ: () => h,
+  fJ: () => m,
   s_: () => b,
   vU: () => I
 }), require("./388685.js");
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk982183 = require("./982183.js"),
   Chunk981631 = require("./981631.js");
 let _ = Chunk473749.createContext(""),
-  m = e => {
+  h = e => {
     let {
       children: t
     } = e, [n] = i.useState(() => (0, a.Z)());
@@ -31,7 +31,7 @@ let _ = Chunk473749.createContext(""),
       children: t
     })
   },
-  h = () => i.useContext(_);
+  m = () => i.useContext(_);
 
 function g(e) {
   let {
@@ -149,7 +149,7 @@ function I(e) {
     unreadMessages: a,
     viewId: c,
     messagesByCategory: p
-  } = e, _ = i.useRef(null), m = i.useRef(false), h = (0, o.e7)([u.Z], () => u.Z.isLoading), b = (0, l.Z)(h), y = (0, o.e7)([u.Z], () => {
+  } = e, _ = i.useRef(null), h = i.useRef(false), m = (0, o.e7)([u.Z], () => u.Z.isLoading), b = (0, l.Z)(m), y = (0, o.e7)([u.Z], () => {
     var e;
     return null != (e = u.Z.currentRequestAnalyticsPayload) ? e : null
   }), {
@@ -163,9 +163,9 @@ function I(e) {
       entrypoint: n
     }), _.current = Date.now()
   }), i.useEffect(() => {
-    if (null != _.current && ((null == r ? true : r.length) > 0 || (null == a ? true : a.length) > 0) && !m.current) {
+    if (null != _.current && ((null == r ? true : r.length) > 0 || (null == a ? true : a.length) > 0) && !h.current) {
       let e = Date.now() - _.current;
-      m.current = true, E({
+      h.current = true, E({
         timeToLoad: e,
         unreadsCount: a.length,
         totalMessagesCount: r.length,
@@ -178,7 +178,7 @@ function I(e) {
     }
   }, [r, a, c, I, O, p]), i.useEffect(() => {
     let e = (null == y ? true : y.loadingTrigger) === f.X.AUTO_LOAD;
-    if (null != y && true === b && false === h && !e) {
+    if (null != y && true === b && false === m && !e) {
       var t;
       S({
         timeToLoad: null == y ? true : y.timeToLoad,
@@ -190,7 +190,7 @@ function I(e) {
         mentionsFetched: null == y ? true : y.mentionsFetched
       })
     }
-  }, [h, r, a, c, b, y]), (0, s.zq)(() => {
+  }, [m, r, a, c, b, y]), (0, s.zq)(() => {
     var e, t;
     v({
       unreadsCount: null != (e = null == a ? true : a.length) ? e : 0,

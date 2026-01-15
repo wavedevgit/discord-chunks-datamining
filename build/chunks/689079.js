@@ -2,13 +2,13 @@
 /** chunk id: 689079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fu: () => m,
+  Fu: () => h,
   Lu: () => o,
   Vd: () => p,
   WO: () => a,
   _n: () => f,
   ak: () => s,
-  al: () => h,
+  al: () => m,
   bi: () => l,
   hz: () => u,
   lr: () => _,
@@ -37,9 +37,9 @@ let c = 10,
   f = 100,
   p = 3,
   _ = 10,
-  m = 500;
+  h = 500;
 
-function h(e) {
+function m(e) {
   if (null != e.choices) return i.intl.string(i.t.xi5aah);
   switch (e.type) {
     case r.jw.BOOLEAN:

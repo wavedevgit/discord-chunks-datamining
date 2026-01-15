@@ -2,7 +2,7 @@
 /** chunk id: 853856, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
@@ -49,7 +49,7 @@ function _() {
     }
   }
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(s.Z), _(), this.syncWith([s.Z], _)
   }
@@ -74,5 +74,5 @@ class m extends(r = Chunk442837.ZP.Store) {
     return null != (t = null == n ? true : n.nickname) ? t : true
   }
 }
-u(m, "displayName", "FavoriteStore");
-let h = new m(Chunk570140.Z, {})
+u(h, "displayName", "FavoriteStore");
+let m = new h(Chunk570140.Z, {})

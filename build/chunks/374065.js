@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Hn: () => _,
-  KF: () => m,
+  KF: () => h,
   e4: () => p,
-  g5: () => h,
+  g5: () => m,
   jy: () => f
 });
 var Chunk442837 = require("./442837.js"),
@@ -55,7 +55,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   return (0, r.e7)([i.Z, a.Z, o.Z, s.Z], () => p({
     channelId: e,
     ChannelStore: i.Z,
@@ -65,7 +65,7 @@ function m(e) {
   }), [e])
 }
 
-function h(e) {
+function m(e) {
   switch (e) {
     case 0:
       return d.intl.string(d.t.qJvTKQ);

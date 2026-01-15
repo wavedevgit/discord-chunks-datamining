@@ -60,15 +60,15 @@ function f(e) {
     source: f,
     size: p = "sm",
     variant: _ = "secondary",
-    onAction: m
-  } = e, h = u(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]);
+    onAction: h
+  } = e, m = u(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]);
   let {
     tooltip: g,
     loading: E,
     disabled: b,
     onClick: y
   } = (0, s.Fe)(t, n, f, o.ZP.getNickname(d, l, n)), O = () => {
-    null == m || m(), y()
+    null == h || h(), y()
   };
   return (0, r.jsx)(i.u, {
     text: g,
@@ -80,6 +80,6 @@ function f(e) {
       disabled: b,
       loading: E,
       "aria-label": null != g ? g : t.name
-    }, h))
+    }, m))
   })
 }

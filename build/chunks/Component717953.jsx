@@ -68,7 +68,7 @@ function v(e) {
   }), {
     shouldShowNewBadge: v,
     markNewBadgeAsDismissed: S
-  } = (0, g.w)(), I = (0, p.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), T = (0, f.ZP)(), C = (0, d.wjy)(T) ? y.darkOverlay : y.lightOverlay, A = null != a && null != a.colors && a.colors.length > 0, N = (0, l.e7)([m.Z], () => m.Z.getSavedCustomTheme()), P = A, R = A || null != N, w = i.useMemo(() => {
+  } = (0, g.w)(), I = (0, p.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), T = (0, f.ZP)(), C = (0, d.wjy)(T) ? y.darkOverlay : y.lightOverlay, A = null != a && null != a.colors && a.colors.length > 0, N = (0, l.e7)([h.Z], () => h.Z.getSavedCustomTheme()), P = A, w = A || null != N, R = i.useMemo(() => {
     let e, t;
     if (A) e = a.colors, t = a.gradientAngle;
     else {
@@ -79,23 +79,23 @@ function v(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [A, a, N]), D = R ? u.Z.unsafe_rawColors.WHITE.css : true, x = i.useCallback(() => {
+  }, [A, a, N]), D = w ? u.Z.unsafe_rawColors.WHITE.css : true, x = i.useCallback(() => {
     v && S(), null == n || n()
   }, [v, S, n]);
   return (0, r.jsxs)("div", {
     className: y.badgeContainer,
-    children: [(0, r.jsxs)(h.S4, {
+    children: [(0, r.jsxs)(m.S4, {
       onSelect: t ? true : x,
       isSelected: false,
       showSelectionCircle: P,
       name: b.intl.string(E.default.KSBBpC),
-      className: o()(y.container, R && C, t && y.disabled),
+      className: o()(y.container, w && C, t && y.disabled),
       showBadge: false,
       showLockedBadge: false,
-      style: w,
-      children: [!I && !R && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
+      style: R,
+      children: [!I && !w && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
         className: y.borderOverlay
-      }), (0, r.jsx)(s.V3v, {
+      }), (0, r.jsx)(s.PaintPaletteIcon, {
         color: D,
         className: y.paletteIcon
       })]

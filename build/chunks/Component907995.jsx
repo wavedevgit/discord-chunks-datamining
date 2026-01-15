@@ -22,11 +22,11 @@ function f(e) {
     dismissNotice: f,
     className: p,
     noticeType: _
-  } = e, m = null != f;
+  } = e, h = null != f;
   i.useEffect(() => {
     (0, l.l)(_, c.up.VIEWED)
   }, [_]);
-  let h = i.useCallback(() => {
+  let m = i.useCallback(() => {
       null != f && (f(), (0, l.l)(_, c.up.DISMISS))
     }, [_, f]),
     g = i.useCallback(() => {
@@ -51,9 +51,9 @@ function f(e) {
           children: e
         }, t)
       })
-    }), m && (0, r.jsx)(s.P3F, {
+    }), h && (0, r.jsx)(s.P3F, {
       className: d.closeButton,
-      onClick: h,
+      onClick: m,
       children: (0, r.jsx)(s.Dio, {})
     })]
   })

@@ -302,8 +302,8 @@ function z(e) {
   }, [v, e.previewQuest, a]);
   let O = (0, s.e7)([b.Z], () => {
       var e;
-      let t = null == (e = b.Z.earnedQuestForPlacement.get(j.jn.QUEST_LIVE_STREAM)) ? true : e.quest;
-      return (null == t ? true : t.id) === x ? t : null
+      let t = b.Z.earnedQuestForPlacement.get(j.jn.QUEST_LIVE_STREAM);
+      return null == t || null == x ? null : null != (e = t.quests.get(x)) ? e : null
     }, [x]),
     [T, N] = l.useState(null);
   l.useEffect(() => {

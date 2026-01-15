@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   AT: () => _,
-  fC: () => h,
-  gr: () => m,
+  fC: () => m,
+  gr: () => h,
   hQ: () => p
 });
 var Chunk473749 = require("./473749.js"),
@@ -43,7 +43,7 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let t = (0, o.e7)([u.Z], () => u.Z.getChannel(e.saveData.channelId));
   return r.useMemo(() => null != t ? t : null != e.message ? new c.nl({
     id: e.saveData.channelId,
@@ -52,7 +52,7 @@ function m(e) {
     name: f.intl.string(f.t.J90oLW)
   }) : true, [t, e])
 }
-async function h(e, t) {
+async function m(e, t) {
   if ((null == t ? true : t.type) === d.d4z.UNKNOWN && null == e.saveData.guildId) try {
     let t = await s.Z.fetchChannel(e.saveData.channelId);
     if (null == t.recipients || t.recipients.length > 1) return;

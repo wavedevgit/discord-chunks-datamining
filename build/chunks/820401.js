@@ -2,8 +2,8 @@
 /** chunk id: 820401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  XXH64: () => m,
-  hash: () => h
+  XXH64: () => h,
+  hash: () => m
 });
 let r = 0x9e3779b185ebca87n,
   i = 0xc2b2ae3d27d4eb4fn,
@@ -29,7 +29,7 @@ function p(e, t) {
 function _(e) {
   return BigInt.asUintN(64, e)
 }
-class m {
+class h {
   #e;
   #t;
   #n;
@@ -79,6 +79,6 @@ class m {
   }
 }
 
-function h(e, t = 0) {
-  return new m(t).update(e).digest()
+function m(e, t = 0) {
+  return new h(t).update(e).digest()
 }

@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk645298 = require("./645298.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -64,12 +64,12 @@ function b(e) {
     onClose: o,
     transitionState: u
   } = e, {
-    getSurveyResponses: m,
+    getSurveyResponses: h,
     setResponse: g,
     trackDisplayedQuestions: b
-  } = (0, c.H)(), y = m(t), O = (0, d.l6)(n), [v, S] = i.useState(O.blockId), [I, T] = i.useState(O.pageIndex), [C, A] = i.useState(false), N = (e, n) => {
+  } = (0, c.H)(), y = h(t), O = (0, d.l6)(n), [v, S] = i.useState(O.blockId), [I, T] = i.useState(O.pageIndex), [C, A] = i.useState(false), N = (e, n) => {
     g(t, e, n)
-  }, P = i.useCallback(() => (C ? o() : (0, s.h7j)(e => (0, r.jsx)(a.Modal, E(h({
+  }, P = i.useCallback(() => (C ? o() : (0, s.h7j)(e => (0, r.jsx)(a.Modal, E(m({
     title: p.intl.string(p.t.T9Sx3z),
     actions: [{
       variant: "secondary",
@@ -87,25 +87,25 @@ function b(e) {
       variant: "text-md/normal",
       children: p.intl.string(p.t.iCK6G0)
     })
-  }))), Promise.resolve()), [o, C]), R = i.useMemo(() => null == v ? [] : (0, d.B_)(n, {
+  }))), Promise.resolve()), [o, C]), w = i.useMemo(() => null == v ? [] : (0, d.B_)(n, {
     blockId: v,
     pageIndex: I,
     responses: y
-  }), [n, v, I, y]), w = i.useCallback(() => {
+  }), [n, v, I, y]), R = i.useCallback(() => {
     if (null == n || null == v) return;
     let e = (0, d.KZ)(n, {
       blockId: v,
       pageIndex: I,
       responses: y
     });
-    b(t, R), e.isComplete && l.ZP.submitSurveyResponse(t, y), S(e.blockId), T(e.pageIndex), A(e.isComplete)
-  }, [n, v, I, y, t, R, b]);
+    b(t, w), e.isComplete && l.ZP.submitSurveyResponse(t, y), S(e.blockId), T(e.pageIndex), A(e.isComplete)
+  }, [n, v, I, y, t, w, b]);
   i.useEffect(() => {
-    0 === R.length && w()
-  }, [R, w]);
-  let D = e => 0 === R.length ? null : (0, r.jsx)("div", {
+    0 === w.length && R()
+  }, [w, R]);
+  let D = e => 0 === w.length ? null : (0, r.jsx)("div", {
       className: _.content,
-      children: R.map(t => {
+      children: w.map(t => {
         let n = e.Questions[t];
         return null == n ? null : (0, r.jsx)(f.Z, {
           question: n,
@@ -117,7 +117,7 @@ function b(e) {
     }),
     x = i.useMemo(() => {
       if (C) returnfalse;
-      for (let r of R) {
+      for (let r of w) {
         var e, t;
         let i = n.Questions[r];
         if ((null == i || null == (t = i.Validation) || null == (e = t.Settings) ? true : e.ForceResponse) === "ON") {
@@ -126,7 +126,7 @@ function b(e) {
         }
       }
       returntrue
-    }, [C, R, n, y]);
+    }, [C, w, n, y]);
   return C ? (0, r.jsxs)(a.Modal, {
     transitionState: u,
     onClose: o,
@@ -152,7 +152,7 @@ function b(e) {
     actions: [{
       variant: "primary",
       text: p.intl.string(p.t.PDTjLN),
-      onClick: w,
+      onClick: R,
       disabled: !x
     }],
     children: (0, r.jsx)("div", {
@@ -168,7 +168,7 @@ async function y(e) {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 126916));
-    return n => (0, r.jsx)(t, E(h({}, n), {
+    return n => (0, r.jsx)(t, E(m({}, n), {
       surveyId: e
     }))
   }, {

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk152242 = require("./152242.jsx"),
   Chunk231338 = require("./231338.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function y(e, t) {
 }
 let O = (0, Chunk467368.Dz)(),
   v = {
-    renderStep: e => (0, r.jsx)(d.d, h({}, e))
+    renderStep: e => (0, r.jsx)(d.d, m({}, e))
   },
   S = e => {
     let {
@@ -114,14 +114,14 @@ let O = (0, Chunk467368.Dz)(),
       } = e, d = b(e, ["children", "loadId", "applicationId", "isGift", "skuId", "analyticsLocations"]);
       let {
         analyticsLocations: f
-      } = (0, u.V)(h({
+      } = (0, u.V)(m({
         applicationId: i,
         skuId: s,
         analyticsLocations: c
       }, d));
       return (0, r.jsx)(a.Gt, {
         value: f,
-        children: (0, r.jsx)(l.PaymentContextProvider, E(h({
+        children: (0, r.jsx)(l.PaymentContextProvider, E(m({
           loadId: n,
           applicationId: i,
           skuIDs: null != s ? [s] : [],
@@ -146,26 +146,26 @@ let O = (0, Chunk467368.Dz)(),
         children: f
       } = e, {
         analyticsLocations: p
-      } = (0, a.ZP)(), _ = l.onClose, m = i.useCallback(e => {
+      } = (0, a.ZP)(), _ = l.onClose, h = i.useCallback(e => {
         _(), null != c && c(e)
-      }, [_, c]), h = i.useMemo(() => ({
-        onClose: m,
+      }, [_, c]), m = i.useMemo(() => ({
+        onClose: h,
         onComplete: u,
         applicationId: o,
         skuId: t,
         initialPlanId: null,
         analyticsObject: s,
         analyticsLocations: p
-      }), [m, u, o, t, s, p]), g = i.useMemo(() => ({
+      }), [h, u, o, t, s, p]), g = i.useMemo(() => ({
         skuId: t,
         loadId: n,
         flowSpecificOptions: d,
         analyticsLocations: p
       }), [t, n, d, p]), E = i.useMemo(() => ({
         sharedCheckoutContext: g,
-        paymentModalProps: h,
+        paymentModalProps: m,
         renderModalProps: l
-      }), [g, h, l]);
+      }), [g, m, l]);
       return (0, r.jsx)(O.Provider, {
         value: E,
         children: f

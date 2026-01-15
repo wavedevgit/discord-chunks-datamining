@@ -76,7 +76,7 @@ let p = Chunk473749.createContext({
       impression: c,
       disableTrack: f,
       returnRef: _
-    } = e, m = d(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), h = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(false), y = E ? g : h;
+    } = e, h = d(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), m = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(false), y = E ? g : m;
     (0, a.Tbt)(y, {
       returnRef: _
     }), i.useContext(o.Z)({
@@ -85,7 +85,7 @@ let p = Chunk473749.createContext({
       properties: null == c ? true : c.impressionProperties
     }, {
       disableTrack: f
-    }), i.useImperativeHandle(t, () => h.current);
+    }), i.useImperativeHandle(t, () => m.current);
     let O = i.useCallback(e => {
       E !== e && b(e)
     }, [E]);
@@ -94,15 +94,15 @@ let p = Chunk473749.createContext({
         inDialog: true,
         setFocusLockDisabled: O
       },
-      children: (0, r.jsx)("div", u(l({}, m), {
-        ref: h,
+      children: (0, r.jsx)("div", u(l({}, h), {
+        ref: m,
         role: "dialog",
         tabIndex: false,
         "aria-modal": true,
         children: (0, r.jsx)(a.y5t, {
           forceLevel: 1,
           children: (0, r.jsx)(a.JcV, {
-            containerRef: h,
+            containerRef: m,
             children: n
           })
         })

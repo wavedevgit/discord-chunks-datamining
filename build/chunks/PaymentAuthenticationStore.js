@@ -23,11 +23,11 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = false,
-  m = null,
-  h = null;
+  h = null,
+  m = null;
 
 function g() {
-  _ = false, h = null, m = null
+  _ = false, m = null, h = null
 }
 
 function E(e) {
@@ -38,7 +38,7 @@ function E(e) {
     paymentId: r
   } = t;
   if (n !== l.ZP.ErrorCodes.CONFIRMATION_REQUIRED && n !== l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED) return _ = false, false;
-  _ || (_ = true, m = r, n === l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED && b(r))
+  _ || (_ = true, h = r, n === l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED && b(r))
 }
 async function b(e) {
   if (null == e) return;
@@ -59,29 +59,29 @@ function y(e) {
   let {
     error: t
   } = e;
-  h = t, _ = false
+  m = t, _ = false
 }
 
 function O(e) {
   let {
     payment: t
   } = e, n = [d.PyE.COMPLETED, d.PyE.FAILED, d.PyE.CANCELED];
-  if (!_ || t.id !== m || !n.includes(t.status)) returnfalse;
-  if (_ = false, m = null, t.status === d.PyE.FAILED) {
+  if (!_ || t.id !== h || !n.includes(t.status)) returnfalse;
+  if (_ = false, h = null, t.status === d.PyE.FAILED) {
     var r;
     let e = null;
-    (null == (r = t.metadata) ? true : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), h = new l.ZP(f.intl.string(f.t.khEaRI), e)
-  } else h = null, a.Z.wait(o.fw), a.Z.wait(s.pB)
+    (null == (r = t.metadata) ? true : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), m = new l.ZP(f.intl.string(f.t.khEaRI), e)
+  } else m = null, a.Z.wait(o.fw), a.Z.wait(s.pB)
 }
 class v extends(r = Chunk442837.ZP.Store) {
   get isAwaitingAuthentication() {
     return _
   }
   get error() {
-    return h
+    return m
   }
   get awaitingPaymentId() {
-    return m
+    return h
   }
 }
 p(v, "displayName", "PaymentAuthenticationStore");

@@ -41,12 +41,12 @@ function O(e) {
     isDisplayingWowMomentConfirmation: A,
     isPremiumGroupPurchase: N,
     isEligibleForTrial: P,
-    isEligibleForDiscount: R
+    isEligibleForDiscount: w
   } = (0, _.JL)(), {
-    isGift: w,
+    isGift: R,
     selectedGiftStyle: D,
     giftRecipient: x
-  } = (0, p.wD)(), L = (null == T ? true : T.productLine) === h.POd.COLLECTIBLES, j = (null == T ? true : T.productLine) === h.POd.SOCIAL_LAYER_GAME_ITEM, M = w && (0, f.pO)(x) && O === m.h8.CONFIRM && null != D && !L && !j, k = null != t && null != O, U = [m.h8.SKU_SELECT, m.h8.SELECT_FREE_SKU], G = null != O && !U.includes(O) && null != a;
+  } = (0, p.wD)(), L = (null == T ? true : T.productLine) === m.POd.COLLECTIBLES, j = (null == T ? true : T.productLine) === m.POd.SOCIAL_LAYER_GAME_ITEM, M = R && (0, f.pO)(x) && O === h.h8.CONFIRM && null != D && !L && !j, k = null != t && null != O, U = [h.h8.SKU_SELECT, h.h8.SELECT_FREE_SKU], G = null != O && !U.includes(O) && null != a;
   return i.useMemo(() => {
     if (null == O) return;
     let e = null;
@@ -70,13 +70,13 @@ function O(e) {
       premiumType: g.y7[a],
       onClose: n,
       showTrialBadge: P,
-      showDiscountBadge: R,
-      isGift: w,
+      showDiscountBadge: w,
+      isGift: R,
       giftRecipient: x,
       isEligibleForTrial: P,
       enablePremiumBrandRefresh: C,
       isDisplayingWowMomentConfirmation: A,
       isPremiumGroupPurchase: N
     })), e
-  }, [D, n, S, t, v, a, O, P, R, M, G, k, I, w, x, C, A, N])
+  }, [D, n, S, t, v, a, O, P, w, M, G, k, I, R, x, C, A, N])
 }

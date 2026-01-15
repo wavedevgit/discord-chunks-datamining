@@ -199,8 +199,8 @@ class f {
   getGoliveLQQuality() {
     var e, t, n, r, a, o, s, l, c, d, f, p;
     let _ = Math.min(i.ef, null != (s = null == (e = this.goliveMaxQuality.encode) ? true : e.width) ? s : i.ef),
-      m = Math.min(i.ru, null != (l = null == (t = this.goliveMaxQuality.encode) ? true : t.height) ? l : i.ru),
-      h = Math.min(i.R$, null != (c = null == (n = this.goliveMaxQuality.encode) ? true : n.framerate) ? c : i.R$),
+      h = Math.min(i.ru, null != (l = null == (t = this.goliveMaxQuality.encode) ? true : t.height) ? l : i.ru),
+      m = Math.min(i.R$, null != (c = null == (n = this.goliveMaxQuality.encode) ? true : n.framerate) ? c : i.R$),
       g = Math.min(i.ef, null != (d = null == (r = this.goliveMaxQuality.capture) ? true : r.width) ? d : i.ef);
     return new u({
       capture: {
@@ -210,9 +210,9 @@ class f {
       },
       encode: {
         width: _,
-        height: m,
-        framerate: h,
-        pixelCount: _ * m
+        height: h,
+        framerate: m,
+        pixelCount: _ * h
       },
       bitrateMin: i.UC,
       bitrateMax: this.goliveSimulcastLQBitrateMax,

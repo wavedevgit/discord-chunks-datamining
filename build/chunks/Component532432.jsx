@@ -2,7 +2,7 @@
 /** chunk id: 532432, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,17 +16,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk282341 = require("./282341.js");
-let m = [{
+let h = [{
   name: "gif",
   extensions: ["gif"]
 }];
 
-function h(e) {
+function m(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
     onAvatarChange: a,
-    sectionTitle: h,
+    sectionTitle: m,
     changeAvatarButtonText: g,
     guildId: E,
     className: b,
@@ -40,14 +40,14 @@ function h(e) {
     (0, u.$r)({
       uploadType: f.pC.AVATAR,
       analyticsSource: I,
-      filters: O ? m : true,
+      filters: O ? h : true,
       guildId: E,
       isTryItOut: O
     })
   }, [E, I, O]);
   return (0, r.jsx)(d.Z, {
     className: b,
-    title: h,
+    title: m,
     errors: n,
     disabled: y,
     forcedDivider: v,

@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -108,8 +108,8 @@ class y extends(r = Chunk473749.Component) {
       preload: f,
       disablePointerEvents: p,
       ignoreModalClicks: _,
-      scrollBehavior: m,
-      useMouseEnter: h,
+      scrollBehavior: h,
+      useMouseEnter: m,
       renderPopout: g,
       layerContext: E,
       position: y = "right",
@@ -138,8 +138,8 @@ class y extends(r = Chunk473749.Component) {
       popoutKey: d,
       disablePointerEvents: p,
       ignoreModalClicks: _,
-      scrollBehavior: m,
-      useMouseEnter: h,
+      scrollBehavior: h,
+      useMouseEnter: m,
       layerContext: E,
       clickTrap: I,
       children: e
@@ -172,12 +172,12 @@ class y extends(r = Chunk473749.Component) {
 function O(e) {
   var {
     renderPopout: t
-  } = e, n = m(e, ["renderPopout"]);
+  } = e, n = h(e, ["renderPopout"]);
   let r = a.useRef(null),
     [l, c] = a.useState(0);
 
   function d() {
-    return h(), (0, i.jsx)(i.Fragment, {})
+    return m(), (0, i.jsx)(i.Fragment, {})
   }
   a.useLayoutEffect(() => {
     if (l > 0) {
@@ -189,7 +189,7 @@ function O(e) {
     return () => clearTimeout(e)
   });
   let p = a.useRef(false);
-  async function h() {
+  async function m() {
     if (!p.current) {
       p.current = true;
       let e = setTimeout(() => {

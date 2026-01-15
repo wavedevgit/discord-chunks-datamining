@@ -71,13 +71,13 @@ function N(e) {
     game: n,
     index: a
   } = e, l = (0, i.useContext)(f.Q), p = (0, c.dQu)(l.primaryColor).hex(), {
-    id: m,
-    name: h,
+    id: h,
+    name: m,
     coverImageHash: b
   } = n, {
     coverImageUrl: I
-  } = (0, u.$)(m), T = null != I ? I : d.ZP.getGameAssetURL({
-    id: m,
+  } = (0, u.$)(h), T = null != I ? I : d.ZP.getGameAssetURL({
+    id: h,
     hash: b
   }), C = (0, E.gl)();
   return (0, r.jsxs)(E.QR, {
@@ -116,7 +116,7 @@ function N(e) {
     }), (0, r.jsx)(g.Z, {
       variant: "eyebrow",
       className: S.name,
-      children: h
+      children: m
     }), (0, r.jsx)(g.Z, {
       variant: "text-sm/bold",
       className: S.sessions,
@@ -139,7 +139,7 @@ function P() {
         applications: []
       }
     } = (0, l.e7)([p.Z], () => p.Z.getCheckpointData());
-  return (0, r.jsxs)(h.Z, {
+  return (0, r.jsxs)(m.Z, {
     verticalFlow: true,
     className: S.container,
     children: [(0, r.jsxs)("div", {
@@ -171,7 +171,7 @@ function P() {
               children: e
             }, t)
           })
-        }), (0, r.jsx)(m.o, {
+        }), (0, r.jsx)(h.o, {
           slide: b.yD.GAMING
         })]
       })]

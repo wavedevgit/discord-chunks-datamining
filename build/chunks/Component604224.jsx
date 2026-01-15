@@ -27,30 +27,30 @@ function E() {
   } = (0, o.ZP)([a.Z.USER_SETTINGS_VOICE_AND_VIDEO]), t = (0, i.e7)([s.Z], () => s.Z.getSubsection()), n = [{
     title: g.intl.string(g.t.K3lovD),
     component: f.Z,
-    setting: m.s6.VOICE_AND_VIDEO_VOICE_TAB,
+    setting: h.s6.VOICE_AND_VIDEO_VOICE_TAB,
     subsection: _.CO
   }, {
     title: g.intl.string(g.t.FlNoSV),
     component: d.Z,
-    setting: m.s6.VOICE_AND_VIDEO_VIDEO_TAB,
+    setting: h.s6.VOICE_AND_VIDEO_VIDEO_TAB,
     subsection: _.gP
   }, {
     title: g.intl.string(g.t.ABjMWI),
     component: u.Z,
-    setting: m.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB,
+    setting: h.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB,
     subsection: _.GA
   }, {
     title: g.intl.string(g.t.OFpL3c),
     component: p.Z,
-    setting: m.s6.VOICE_AND_VIDEO_DEBUG_TAB
+    setting: h.s6.VOICE_AND_VIDEO_DEBUG_TAB
   }], E = n.findIndex(e => null != e.subsection && e.subsection === t);
   return (0, r.jsx)(o.Gt, {
     value: e,
     children: (0, r.jsx)(l.N, {
       header: g.intl.string(g.t.B1fFpf),
       children: (0, r.jsx)(c.Z, {
-        parentSetting: m.s6.VOICE_AND_VIDEO,
-        settingsSection: h.oAB.VOICE,
+        parentSetting: h.s6.VOICE_AND_VIDEO,
+        settingsSection: m.oAB.VOICE,
         tabs: n,
         defaultTabIndex: E > false ? E : true
       })

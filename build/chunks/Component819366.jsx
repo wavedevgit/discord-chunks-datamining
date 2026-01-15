@@ -98,19 +98,19 @@ function I(e) {
     viewingChannelId: C
   } = e, A = i.useRef(null), {
     analyticsLocations: N
-  } = (0, c.ZP)(l.Z.USER_MENTION), P = (0, o.e7)([h.default], () => h.default.getUser(u)), R = (0, o.e7)([p.Z], () => p.Z.getChannel(b)), w = null != R ? R.getGuildId() : null, D = T || null == P || null == w || null == b ? true : e => {
-    null != R && (0, s.jW)(e, async () => {
+  } = (0, c.ZP)(l.Z.USER_MENTION), P = (0, o.e7)([m.default], () => m.default.getUser(u)), w = (0, o.e7)([p.Z], () => p.Z.getChannel(b)), R = null != w ? w.getGuildId() : null, D = T || null == P || null == R || null == b ? true : e => {
+    null != w && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("4040"), n.e("6915"), n.e("92524"), n.e("7717"), n.e("75548")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, v(y({}, t), {
         viewingChannelId: C,
         user: P,
-        channel: R,
-        guildId: w
+        channel: w,
+        guildId: R
       }))
     })
-  }, x = E.ZP.useName(P), L = (0, o.e7)([p.Z, _.ZP, m.Z], () => g.ZP.getNickname(w, b, P));
+  }, x = E.ZP.useName(P), L = (0, o.e7)([p.Z, _.ZP, h.Z], () => g.ZP.getNickname(R, b, P));
   if (null == P) return (0, r.jsx)(S, {
     userId: O,
     className: t,
@@ -131,7 +131,7 @@ function I(e) {
     children: (0, r.jsx)(f.Z, {
       targetElementRef: A,
       user: P,
-      guildId: null != w ? w : true,
+      guildId: null != R ? R : true,
       channelId: b,
       position: a.tq ? "top" : "right",
       clickTrap: true,

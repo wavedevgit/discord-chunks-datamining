@@ -46,12 +46,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class h extends(r = Chunk473749.Component) {
+class m extends(r = Chunk473749.Component) {
   componentDidMount() {
     let {
       visible: e,
@@ -138,13 +138,13 @@ function g(e) {
   let {
     tutorialId: t
   } = e, n = (0, s.e7)([d.Z], () => d.Z.shouldShow(t), [t]), r = (0, s.e7)([c.Z], () => c.Z.isFocused()), a = (0, s.e7)([c.Z], () => c.Z.windowSize(), []);
-  return (0, i.jsx)(h, m(p({}, e), {
+  return (0, i.jsx)(m, h(p({}, e), {
     visible: n,
     windowFocused: r,
     windowSize: a
   }))
 }
-f(h, "defaultProps", {
+f(m, "defaultProps", {
   position: "top",
   offsetX: 0,
   offsetY: 0,

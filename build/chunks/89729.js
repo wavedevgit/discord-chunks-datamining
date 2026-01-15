@@ -46,13 +46,13 @@ let f = 3,
 function _(e, t) {
   var n, r;
   let _ = arguments.length > 2 && true !== arguments[2] ? arguments[2] : u.O.NORMAL,
-    m = arguments.length > 3 ? arguments[3] : true,
-    h = s.Z.getReactions(e.getChannelId(), e.id, t, f, _),
+    h = arguments.length > 3 ? arguments[3] : true,
+    m = s.Z.getReactions(e.getChannelId(), e.id, t, f, _),
     g = o.Z.getChannel(e.getChannelId()),
     E = null == g || g.isPrivate() ? null : g.getGuildId(),
     b = e.getReaction(t),
     y = _ === u.O.BURST,
-    O = i()(Array.from(null != (n = null == h ? true : h.values()) ? n : [])).reject(e => l.Z.isBlockedOrIgnored(e.id)).take(f).map(e => c.ZP.getName(E, null == g ? true : g.id, e)).value();
+    O = i()(Array.from(null != (n = null == m ? true : m.values()) ? n : [])).reject(e => l.Z.isBlockedOrIgnored(e.id)).take(f).map(e => c.ZP.getName(E, null == g ? true : g.id, e)).value();
   if (0 === O.length) return "";
   let v = y ? p.burst : p.standard,
     S = Math.max(0, (null != (r = y ? null == b ? true : b.burst_count : null == b ? true : b.count) ? r : 0) - O.length),
@@ -62,11 +62,11 @@ function _(e, t) {
       a: O[0],
       emojiName: I
     });
-    else if (null != m) return d.intl.format(v.reactionTooltip1NInteractive, {
+    else if (null != h) return d.intl.format(v.reactionTooltip1NInteractive, {
     a: O[0],
     n: S,
     emojiName: I,
-    onClick: m
+    onClick: h
   });
   else return d.intl.formatToPlainString(v.reactionTooltip1N, {
     a: O[0],
@@ -79,12 +79,12 @@ function _(e, t) {
       b: O[1],
       emojiName: I
     });
-    else if (null != m) return d.intl.format(v.reactionTooltip2NInteractive, {
+    else if (null != h) return d.intl.format(v.reactionTooltip2NInteractive, {
     a: O[0],
     b: O[1],
     n: S,
     emojiName: I,
-    onClick: m
+    onClick: h
   });
   else return d.intl.formatToPlainString(v.reactionTooltip2N, {
     a: O[0],
@@ -92,20 +92,20 @@ function _(e, t) {
     n: S,
     emojiName: I
   });
-  return 3 !== O.length ? null != m ? d.intl.format(v.reactionTooltipNInteractive, {
+  return 3 !== O.length ? null != h ? d.intl.format(v.reactionTooltipNInteractive, {
     n: S,
     emojiName: I,
-    onClick: m
+    onClick: h
   }) : d.intl.formatToPlainString(v.reactionTooltipN, {
     n: S,
     emojiName: I
-  }) : S > 0 ? null != m ? d.intl.format(v.reactionTooltip3NInteractive, {
+  }) : S > 0 ? null != h ? d.intl.format(v.reactionTooltip3NInteractive, {
     a: O[0],
     b: O[1],
     c: O[2],
     n: S,
     emojiName: I,
-    onClick: m
+    onClick: h
   }) : d.intl.formatToPlainString(v.reactionTooltip3N, {
     a: O[0],
     b: O[1],

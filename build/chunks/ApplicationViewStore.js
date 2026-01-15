@@ -49,7 +49,7 @@ let L = 5,
   U = false;
 
 function G(e, t) {
-  return e.application.name.localeCompare(t.application.name, m.default.locale, {
+  return e.application.name.localeCompare(t.application.name, h.default.locale, {
     sensitivity: "base"
   })
 }
@@ -106,17 +106,17 @@ function q(e, t, n, r, i) {
     isNew: Z(e, o),
     isLaunching: _.Z.launchingGames.has(e.id),
     isRunning: r.has(e.id),
-    isLaunchable: (0, R.t)({
+    isLaunchable: (0, w.t)({
       LibraryApplicationStore: E.Z,
       LaunchableGameStore: _.Z,
       DispatchApplicationStore: v.Z,
-      ConnectedAppsStore: h.Z,
+      ConnectedAppsStore: m.Z,
       applicationId: e.id,
       branchId: e.branchId
     }),
     isUpdatingFlags: E.Z.isUpdatingFlags(e.id, e.branchId),
     shouldShowInLibrary: (0, A.d0)(a, e, b.Z),
-    defaultAction: (0, w.i)(e, v.Z, S.Z)
+    defaultAction: (0, R.i)(e, v.Z, S.Z)
   } : null
 }
 
@@ -132,11 +132,11 @@ function Q(e, t, n, r) {
     isNew: false,
     isLaunching: _.Z.launchingGames.has(e),
     isRunning: r.has(e),
-    isLaunchable: (0, R.t)({
+    isLaunchable: (0, w.t)({
       LibraryApplicationStore: E.Z,
       LaunchableGameStore: _.Z,
       DispatchApplicationStore: v.Z,
-      ConnectedAppsStore: h.Z,
+      ConnectedAppsStore: m.Z,
       applicationId: e,
       branchId: null
     }),
@@ -161,7 +161,7 @@ function X() {
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([f.Z, g.Z, _.Z, p.ZP, v.Z, S.Z, E.Z, y.Z, b.Z, h.Z], X, 200), this.syncWith([O.Z, m.default], () => true)
+    this.syncWith([f.Z, g.Z, _.Z, p.ZP, v.Z, S.Z, E.Z, y.Z, b.Z, m.Z], X, 200), this.syncWith([O.Z, h.default], () => true)
   }
   get applicationFilterQuery() {
     return k
@@ -179,7 +179,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return H(this.libraryApplicationViewItems, k)
   }
   get sortedFilteredLibraryApplicationViewItems() {
-    return Y(this.filteredLibraryApplicationViewItems, O.Z.sortKey, O.Z.sortDirection, m.default.locale)
+    return Y(this.filteredLibraryApplicationViewItems, O.Z.sortKey, O.Z.sortDirection, h.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
     return W(M)

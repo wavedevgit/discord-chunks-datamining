@@ -17,7 +17,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ function y(e) {
     breadcrumbSteps: r,
     handleStepChange: l,
     onReturn: _,
-    continueSessionToInitialStep: m
+    continueSessionToInitialStep: h
   } = e, {
     contextMetadata: g,
     step: y,
@@ -80,14 +80,14 @@ function y(e) {
     paymentAuthenticationState: A,
     selectedSkuId: N,
     activeSubscription: P,
-    previousStepRef: R,
-    setPurchaseState: w,
+    previousStepRef: w,
+    setPurchaseState: R,
     paymentElementsEnabled: D,
     isPremiumGroupPurchase: x,
     isEligibleForTrial: L
   } = (0, u.JL)(), {
     isGift: j
-  } = (0, c.wD)(), M = E(h({}, (0, o.fL)()), {
+  } = (0, c.wD)(), M = E(m({}, (0, o.fL)()), {
     paymentSources: O,
     paymentSourceId: v,
     setPaymentSourceId: S,
@@ -104,7 +104,7 @@ function y(e) {
   }, U = null != _ ? _ : k;
   i()(y, "Step should be set here");
   let G = (0, a.Z)(() => Date.now(), [y]),
-    Z = (0, a.Z)(() => null != m && null == R.current ? D ? d.h8.PAYMENT_ELEMENT : m : D ? d.h8.PAYMENT_ELEMENT : d.h8.PAYMENT_TYPE, [m, R.current, D]);
+    Z = (0, a.Z)(() => null != h && null == w.current ? D ? d.h8.PAYMENT_ELEMENT : h : D ? d.h8.PAYMENT_ELEMENT : d.h8.PAYMENT_TYPE, [h, w.current, D]);
   return (0, o.vP)({
     paymentModalArgs: M,
     initialStep: Z,
@@ -116,7 +116,7 @@ function y(e) {
     analyticsData: t,
     onReturn: x ? true : U,
     onComplete: e => {
-      d.Nj.has(e) ? (w(f.A.COMPLETED), l(d.h8.CONFIRM, {
+      d.Nj.has(e) ? (R(f.A.COMPLETED), l(d.h8.CONFIRM, {
         trackedFromStep: e
       })) : l(d.h8.REVIEW, {
         trackedFromStep: e
@@ -127,7 +127,7 @@ function y(e) {
         currentStep: n,
         toStep: r
       } = e, i = Date.now();
-      s.default.track(p.rMx.PAYMENT_FLOW_STEP, E(h({}, t), {
+      s.default.track(p.rMx.PAYMENT_FLOW_STEP, E(m({}, t), {
         from_step: n,
         to_step: r,
         step_duration_ms: i - G,
@@ -136,6 +136,6 @@ function y(e) {
     },
     isEligibleForTrial: L,
     allowDesktopRedirectPurchase: b(N, j, P),
-    continueSessionToInitialStep: m
+    continueSessionToInitialStep: h
   })
 }

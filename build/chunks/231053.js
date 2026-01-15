@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Fi: () => _,
-  JO: () => m,
+  JO: () => h,
   w6: () => p
 }), require("./953529.js");
 var Chunk843991 = require("./843991.js"),
@@ -64,16 +64,16 @@ let _ = async e => {
       rejectWithError: true
     })).body;
     (null == n ? true : n.type) === "GUILD" ? t = {
-      guild: m.createFromServer(n.guild),
+      guild: h.createFromServer(n.guild),
       type: n.type
     }: (null == n ? true : n.type) === "APPLICATION" && (t = {
-      application: h.createFromServer(n.application),
+      application: m.createFromServer(n.application),
       type: n.type
     })
   } catch (e) {}
   return t
 };
-class m extends Chunk81825.Z {
+class h extends Chunk81825.Z {
   getIconURL(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     return o.ZP.getGuildIconURL({
@@ -112,7 +112,7 @@ class m extends Chunk81825.Z {
     }
   }
   static createFromGuildRecord(e) {
-    return new m(f(u({}, m._mapCommon(e)), {
+    return new h(f(u({}, h._mapCommon(e)), {
       premiumTier: e.premiumTier,
       premiumSubscriberCount: e.premiumSubscriberCount,
       presenceCount: null,
@@ -121,7 +121,7 @@ class m extends Chunk81825.Z {
     }))
   }
   static createFromDiscoverableGuild(e) {
-    return new m(f(u({}, m._mapCommon(e)), {
+    return new h(f(u({}, h._mapCommon(e)), {
       premiumTier: null,
       premiumSubscriberCount: e.premiumSubscriptionCount,
       presenceCount: e.presenceCount,
@@ -130,7 +130,7 @@ class m extends Chunk81825.Z {
     }))
   }
   static createFromServer(e) {
-    return new m(f(u({}, m._mapCommon(e)), {
+    return new h(f(u({}, h._mapCommon(e)), {
       premiumTier: e.premium_tier,
       premiumSubscriberCount: e.premium_subscription_count,
       presenceCount: e.approximate_presence_count,
@@ -139,15 +139,15 @@ class m extends Chunk81825.Z {
     }))
   }
   static createFromGuildType(e) {
-    return e instanceof m ? e : (0, s.lM)(e) ? m.createFromGuildRecord(e) : m.createFromDiscoverableGuild(e)
+    return e instanceof h ? e : (0, s.lM)(e) ? h.createFromGuildRecord(e) : h.createFromDiscoverableGuild(e)
   }
   constructor(e) {
     super(), c(this, "id", true), c(this, "name", true), c(this, "icon", true), c(this, "description", true), c(this, "features", true), c(this, "premiumTier", true), c(this, "premiumSubscriberCount", true), c(this, "presenceCount", true), c(this, "memberCount", true), c(this, "emojis", true), this.id = e.id, this.name = e.name, this.icon = e.icon, this.description = e.description, this.features = e.features, this.premiumTier = e.premiumTier, this.premiumSubscriberCount = e.premiumSubscriberCount, this.presenceCount = e.presenceCount, this.memberCount = e.memberCount, this.emojis = e.emojis
   }
 }
-class h extends Chunk81825.Z {
+class m extends Chunk81825.Z {
   static createFromServer(e) {
-    return new h({
+    return new m({
       id: e.id,
       name: e.name
     })

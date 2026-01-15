@@ -73,7 +73,7 @@ let I = O(b({}, u().defaultRules), {
     }),
     paragraph: O(b({}, u().defaultRules.paragraph), {
       react: (e, t, n) => (0, a.jsx)("div", {
-        className: h.paragraph,
+        className: m.paragraph,
         children: t(e.content, n)
       }, n.key)
     }),
@@ -96,7 +96,7 @@ let I = O(b({}, u().defaultRules), {
     }),
     blockQuote: O(b({}, u().defaultRules.blockQuote), {
       react: (e, t, n) => (0, a.jsx)("blockquote", {
-        className: h.blockquote,
+        className: m.blockquote,
         children: S(e)
       }, n.key)
     }),
@@ -116,7 +116,7 @@ let I = O(b({}, u().defaultRules), {
     inlineCode: O(b({}, Chunk428595.Z.RULES.inlineCode), {
       order: 6,
       react: (e, t, n) => (0, a.jsx)("code", {
-        className: h.codeInline,
+        className: m.codeInline,
         children: S(e)
       }, n.key)
     }),
@@ -164,7 +164,7 @@ class A extends(i = Chunk473749.PureComponent) {
       inline: false
     }, n)));
     return (0, a.jsx)("div", {
-      className: l()(h.markdown, e),
+      className: l()(m.markdown, e),
       children: o
     })
   }

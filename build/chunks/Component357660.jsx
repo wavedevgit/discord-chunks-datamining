@@ -92,7 +92,7 @@ function v(e) {
     children: t.map((e, n) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(_.Z, {
         node: e
-      }), n !== t.length - 1 && (0, r.jsx)(m.Z, {
+      }), n !== t.length - 1 && (0, r.jsx)(h.Z, {
         className: b.divider
       })]
     }, e.key))
@@ -169,7 +169,7 @@ function I(e) {
     notice: n,
     layout: a
   } = e, o = i.useRef(null);
-  return (0, h.i)(t, a, o), (0, r.jsx)(O, {
+  return (0, m.i)(t, a, o), (0, r.jsx)(O, {
     scrollerRef: o,
     panelKey: t,
     notice: n,

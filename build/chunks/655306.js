@@ -60,8 +60,8 @@ class N extends Chunk47770.Z {
   }
   shouldReceiveFromUser(e) {
     var t, n;
-    let r = !((null == (t = this.connection) ? true : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null == (n = this.videoHealthManager) ? true : n.getCurrentVideoToggleState(e)) !== h.ZUi.AUTO_PROBING);
-    return m.w.isIncomingVideoEnabled() && r
+    let r = !((null == (t = this.connection) ? true : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null == (n = this.videoHealthManager) ? true : n.getCurrentVideoToggleState(e)) !== m.ZUi.AUTO_PROBING);
+    return h.w.isIncomingVideoEnabled() && r
   }
   getAudioSSRCs() {
     return this.audioSsrcs
@@ -106,7 +106,7 @@ class N extends Chunk47770.Z {
     return delete this.audioSsrcs[e], delete this.videoSsrcs[e], this.participants.delete(e), delete this.streamPixelCounts[this.streamIds[e]], delete this.streamIds[e], this.update(Array.from(this.participants))
   }
   reset() {
-    this.setConnection(null, false), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.streamPixelCounts = {}, this.latestWants = O, m.w.off(m.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)
+    this.setConnection(null, false), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.streamPixelCounts = {}, this.latestWants = O, h.w.off(h.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)
   }
   setSelectedParticipant(e) {
     if (e === this.selectedParticipantId) return this.latestWants;
@@ -210,6 +210,6 @@ class N extends Chunk47770.Z {
       return C ? a.latestWants : (null == a.connection || i().isEqual(a.latestWants, o) || (a.latestWants = o, a.emit("update", o)), o)
     }, this.incomingVideoEnabledChanged = () => {
       this.update()
-    }, this.delayedCall = new c.sW(v, this.update), this.offscreenTimeout = new c.V7, m.w.on(m.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)
+    }, this.delayedCall = new c.sW(v, this.update), this.offscreenTimeout = new c.V7, h.w.on(h.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)
   }
 }

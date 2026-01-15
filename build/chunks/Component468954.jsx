@@ -58,8 +58,8 @@ function _(e) {
     containerWidth: u,
     store: f,
     onSelectItem: _,
-    onSearchExpressions: m,
-    onScroll: h,
+    onSearchExpressions: h,
+    onScroll: m,
     hasSearchResults: g,
     defaultSearchPlaceholder: E,
     emptySearchPlaceholder: b,
@@ -73,8 +73,8 @@ function _(e) {
     renderCategoryList: A,
     renderHeaderAccessories: N,
     rowHeight: P,
-    sectionHeaderHeight: R,
-    sectionFooterHeight: w,
+    sectionHeaderHeight: w,
+    sectionFooterHeight: R,
     itemNodeWidth: D,
     listPaddingRight: x,
     itemNodeMargin: L,
@@ -124,8 +124,8 @@ function _(e) {
     return null == T ? true : T(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
   }, [K, Y.columnIndex, Y.rowIndex, T]);
   i.useEffect(() => {
-    m(H)
-  }, [m, H]), i.useEffect(() => {
+    h(H)
+  }, [h, H]), i.useEffect(() => {
     var e, t;
     f.setBottomPosition(null != (t = null == (e = Z.current) ? true : e.getBoundingClientRect().bottom) ? t : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
@@ -172,10 +172,10 @@ function _(e) {
           rowCount: z,
           rowCountBySection: q,
           rowHeight: P,
-          sectionHeaderHeight: R,
-          sectionFooterHeight: w,
+          sectionHeaderHeight: w,
+          sectionFooterHeight: R,
           renderUpsell: G,
-          onScroll: h
+          onScroll: m
         }) : null
       }))]
     })]

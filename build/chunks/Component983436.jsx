@@ -2,7 +2,7 @@
 /** chunk id: 983436, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,39 +18,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk222922 = require("./222922.js");
 
-function h(e) {
+function m(e) {
   let {
     guild: t,
     channel: n,
-    message: h
+    message: m
   } = e, g = d.Z.getGuildId(), E = u.Z.getChannelId(g), b = i.useCallback(() => {
     var e;
     f.default.track(p.rMx.CHANNEL_LINK_PREVIEW_JOINED, {
-      author_id: null == (e = h.author) ? true : e.id,
+      author_id: null == (e = m.author) ? true : e.id,
       link_guild_id: t.id,
       link_channel_id: n.id,
       link_channel_type: n.type,
       guild_id: g,
       channel_id: E
     }), (0, s.K)(t.id, n.id), o.default.selectVoiceChannel(n.id)
-  }, [h, t, n, g, E]), y = (0, r.jsx)(c.Z.Channel, {
+  }, [m, t, n, g, E]), y = (0, r.jsx)(c.Z.Channel, {
     channel: n
   });
   return (0, r.jsx)(c.Z, {
     children: (0, r.jsxs)(c.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: m.headerLine,
+        className: h.headerLine,
         children: [(0, r.jsx)(c.Z.Icon, {
           guild: t
         }), (0, r.jsx)(c.Z.Info, {
           title: y,
           onClick: b,
           children: (0, r.jsxs)("span", {
-            className: m.infoTitle,
+            className: h.infoTitle,
             children: [_.intl.format(_.t["2wimj5"], {
               guildName: t.name
             }), (0, r.jsx)("span", {
-              className: m.infoBadge,
+              className: h.infoBadge,
               children: (0, r.jsx)(l.Z, {
                 guild: t,
                 isBannerVisible: false
@@ -59,7 +59,7 @@ function h(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: m.buttonContainer,
+        className: h.buttonContainer,
         children: (0, r.jsx)(a.zxk, {
           fullWidth: true,
           onClick: b,

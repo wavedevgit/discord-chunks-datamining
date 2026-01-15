@@ -2,7 +2,7 @@
 /** chunk id: 498405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js"), require("./35282.js");
 var Chunk473749 = require("./473749.js"),
   Chunk808629 = require("./808629.js"),
@@ -73,23 +73,23 @@ function _(e, t) {
   return e.getElementById(t)
 }
 
-function m(e) {
+function h(e) {
   return e.tabIndex >= 0
 }
 
-function h(e) {
+function m(e) {
   let {
     navId: t,
     items: n,
     initialFocusPath: s,
     onSelect: c,
-    enabled: h = true,
+    enabled: m = true,
     closeMenu: g,
     defaultIsUsingKeyboardNavigation: E = false
-  } = e, b = r.useRef(h);
+  } = e, b = r.useRef(m);
   r.useLayoutEffect(() => {
-    b.current = h
-  }, [h]);
+    b.current = m
+  }, [m]);
   let [y, O] = r.useReducer(i.Z, {
     items: n,
     focusPath: s,
@@ -119,7 +119,7 @@ function h(e) {
         path: e.split(d)
       })
     })
-  })), R = r.useCallback(e => {
+  })), w = r.useCallback(e => {
     if (!b.current) return;
     e.key === a.R8.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
     let n = f(e);
@@ -134,14 +134,14 @@ function h(e) {
         return;
       case a.Us.SELECT_FOCUSED_ITEM:
         var r;
-        if (e.repeat || m(e.target)) return;
+        if (e.repeat || h(e.target)) return;
         if (e.preventDefault(), e.stopPropagation(), A(false), v({
             type: n
           }), null != c) return void c(S);
         let i = _(null != (r = e.target.ownerDocument) ? r : document, p(t, S));
         null == i || i.click()
     }
-  }, [v, t, S, c, g]), w = r.useCallback(() => {
+  }, [v, t, S, c, g]), R = r.useCallback(() => {
     I || T(true)
   }, [I]), D = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && T(false)
@@ -154,12 +154,12 @@ function h(e) {
     role: "menu",
     id: t,
     tabIndex: false,
-    onKeyDown: R,
-    onFocus: w,
+    onKeyDown: w,
+    onFocus: R,
     onBlur: D,
     onMouseLeave: x,
     "aria-activedescendant": S.length > 0 ? (0, o.qR)(t, S.join(d)) : true
-  }), [t, R, w, D, x, S]), M = r.useCallback(e => {
+  }), [t, w, R, D, x, S]), M = r.useCallback(e => {
     let {
       path: n
     } = e;

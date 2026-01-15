@@ -30,11 +30,11 @@ let p = e => {
     primaryName: e,
     premiumGroupProductName: (0, u.sO)()
   }),
-  m = (e, t, n) => {
+  h = (e, t, n) => {
     let r = e === i.bF.PRIMARY ? p(n) : _(t);
     return null == r ? "..." : r
   },
-  h = (e, t) => e === i.bF.PRIMARY ? f.intl.format(d.default["+R/K74"], {
+  m = (e, t) => e === i.bF.PRIMARY ? f.intl.format(d.default["+R/K74"], {
     helpCenterLink: u.j3,
     premiumGroupProductName: (0, u.sO)()
   }) : f.intl.format(t ? d.default["xF+upx"] : d.default.qqfnOm, {
@@ -48,7 +48,7 @@ let p = e => {
       }),
       s = (0, r.e7)([o.Z], () => o.Z.getPremiumGroupSubscription());
     return e === i.bF.UNSPECIFIED ? null : {
-      subheaderString: m(e, a, s),
-      bodyString: h(e, t)
+      subheaderString: h(e, a, s),
+      bodyString: m(e, t)
     }
   }

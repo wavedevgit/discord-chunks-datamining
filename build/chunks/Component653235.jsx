@@ -2,7 +2,7 @@
 /** chunk id: 653235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -79,7 +79,7 @@ function P(e) {
     format: null != (t = null == n ? true : n.format) ? t : u.EO.IMAGE
   }
 }
-class R extends Chunk473749.PureComponent {
+class w extends Chunk473749.PureComponent {
   componentDidMount() {
     0 === this.props.trendingCategories.length && (0, p.Tg)()
   }
@@ -148,7 +148,7 @@ class R extends Chunk473749.PureComponent {
       if (e > 0) return null;
       let n = this.getData()[t];
       return null != n ? n.name : null
-    }), I(this, "memoizedData", (0, h.oH)(function(e, t) {
+    }), I(this, "memoizedData", (0, m.oH)(function(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return n ? [...t] : [e, ...t]
     })), I(this, "renderItem", (e, t, n, i) => {
@@ -210,11 +210,11 @@ class R extends Chunk473749.PureComponent {
   }
 }
 
-function w(e) {
-  let t = (0, c.e7)([m.Z], () => m.Z.getTrendingCategories()),
+function R(e) {
+  let t = (0, c.e7)([h.Z], () => h.Z.getTrendingCategories()),
     n = (0, g.gG)(),
     i = (0, y.PY)();
-  return (0, r.jsx)(R, A(T({}, e, i), {
+  return (0, r.jsx)(w, A(T({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

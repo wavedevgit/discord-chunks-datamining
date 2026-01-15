@@ -43,8 +43,8 @@ function d(e) {
     voiceChannelId: p,
     analyticsLocations: _
   } = e, {
-    context: m,
-    trackUserProfileAction: h
+    context: h,
+    trackUserProfileAction: m
   } = (0, s.KZ)(), {
     analyticsLocations: g
   } = (0, a.ZP)(), E = null != _ ? _ : g, b = (0, i.e7)([o.Z], () => o.Z.getUserOutbox(t.id));
@@ -52,7 +52,7 @@ function d(e) {
     let {
       action: t
     } = e;
-    h({
+    m({
       action: t,
       analyticsLocations: E
     }), (0, l.z7)(u({
@@ -64,6 +64,6 @@ function d(e) {
       outbox: b,
       voiceChannelId: p,
       analyticsLocations: E
-    }, m))
-  }, [h, m, n, c, f, d, b, p, E])
+    }, h))
+  }, [m, h, n, c, f, d, b, p, E])
 }

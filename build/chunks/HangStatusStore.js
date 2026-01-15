@@ -74,7 +74,7 @@ function P() {
   A = N()
 }
 
-function R(e) {
+function w(e) {
   let {
     status: t,
     guildId: n,
@@ -103,7 +103,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     status: t,
     emoji: n,
@@ -164,7 +164,7 @@ function L(e) {
 
 function j() {
   if (null == o) returnfalse;
-  if (!h.ZP.getRunningVerifiedApplicationIds().includes(o)) {
+  if (!m.ZP.getRunningVerifiedApplicationIds().includes(o)) {
     var e;
     return o = null, (null == (e = A.currentDefaultStatus) ? true : e.gameActivityHangStatus) != null && (A.currentDefaultStatus.gameActivityHangStatus = null), true
   }
@@ -185,7 +185,7 @@ function M(e) {
 }
 class k extends(s = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    A = v({}, N(), null != e ? e : {}), this.waitFor(h.ZP), this.syncWith([h.ZP], j)
+    A = v({}, N(), null != e ? e : {}), this.waitFor(m.ZP), this.syncWith([m.ZP], j)
   }
   getState() {
     return A
@@ -229,8 +229,8 @@ O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O
 }, e => ("recentCustomStatuses" in e && delete e.recentCustomStatuses, e), e => (null != e.currentDefaultStatus && "expiresAt" in e.currentDefaultStatus && delete e.currentDefaultStatus.expiresAt, e)]);
 let U = new k(Chunk570140.Z, {
   LOGOUT: P,
-  UPDATE_HANG_STATUS: R,
-  UPDATE_HANG_STATUS_CUSTOM: w,
+  UPDATE_HANG_STATUS: w,
+  UPDATE_HANG_STATUS_CUSTOM: R,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
   DELETE_INVALID_HANG_STATUSES: M,
   CLEAR_HANG_STATUS: x,

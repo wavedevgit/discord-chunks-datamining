@@ -61,11 +61,11 @@ function y(e, t, n) {
       clearLoading: u
     } = E(i),
     p = r.useCallback(() => {
-      c(), (0, m.Z)(i, h.kG.USER_ACTIVITY_PLAY, n).catch(u)
+      c(), (0, h.Z)(i, m.kG.USER_ACTIVITY_PLAY, n).catch(u)
     }, [i, n, c, u]);
   return {
-    label: (0, d.Z)(i, h.kG.USER_ACTIVITY_PLAY),
-    tooltip: (0, f.Z)(i, h.kG.USER_ACTIVITY_PLAY),
+    label: (0, d.Z)(i, m.kG.USER_ACTIVITY_PLAY),
+    tooltip: (0, f.Z)(i, m.kG.USER_ACTIVITY_PLAY),
     disabled: !l && (o || a || s),
     loading: l,
     onClick: p,
@@ -83,18 +83,18 @@ function O(e, t, n, i) {
       isCurrentUser: p
     } = o,
     {
-      loading: m,
+      loading: h,
       startLoading: g,
       clearLoading: y
     } = E(o),
     O = r.useCallback(() => {
-      g(), (0, _.Z)(o, h.kG.USER_ACTIVITY_SYNC, n).catch(y)
+      g(), (0, _.Z)(o, m.kG.USER_ACTIVITY_SYNC, n).catch(y)
     }, [o, n, g, y]);
   return {
-    label: (0, d.Z)(o, h.kG.USER_ACTIVITY_SYNC),
-    tooltip: (0, f.Z)(o, h.kG.USER_ACTIVITY_SYNC, a),
-    disabled: !m && (s || p || l || u),
-    loading: m,
+    label: (0, d.Z)(o, m.kG.USER_ACTIVITY_SYNC),
+    tooltip: (0, f.Z)(o, m.kG.USER_ACTIVITY_SYNC, a),
+    disabled: !h && (s || p || l || u),
+    loading: h,
     onClick: O,
     spotifyData: o
   }
@@ -113,15 +113,15 @@ function v(e, t, n) {
       startLoading: u,
       clearLoading: p
     } = E(i),
-    m = r.useCallback(() => {
-      u(), (0, _.Z)(i, h.kG.EMBED_SYNC, n).catch(p)
+    h = r.useCallback(() => {
+      u(), (0, _.Z)(i, m.kG.EMBED_SYNC, n).catch(p)
     }, [i, n, u, p]);
   return {
-    label: (0, d.Z)(i, h.kG.EMBED_SYNC),
-    tooltip: (0, f.Z)(i, h.kG.EMBED_SYNC),
+    label: (0, d.Z)(i, m.kG.EMBED_SYNC),
+    tooltip: (0, f.Z)(i, m.kG.EMBED_SYNC),
     disabled: !c && (l || o || s || a),
     loading: c,
-    onClick: m,
+    onClick: h,
     spotifyData: i
   }
 }

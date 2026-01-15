@@ -23,8 +23,8 @@ class s extends Chunk473749.PureComponent {
       onVolumeHide: f,
       autoMute: p,
       onMute: _,
-      mimeType: m,
-      onPlay: h
+      mimeType: h,
+      onPlay: m
     } = this.props;
     return (0, r.jsx)(o.ZP, {
       src: e,
@@ -41,8 +41,8 @@ class s extends Chunk473749.PureComponent {
       onVolumeShow: d,
       onVolumeHide: f,
       renderLinkComponent: c,
-      mimeType: m,
-      onPlay: h
+      mimeType: h,
+      onPlay: m
     })
   }
 }

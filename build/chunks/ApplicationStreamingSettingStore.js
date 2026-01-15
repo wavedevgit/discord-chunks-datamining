@@ -2,7 +2,7 @@
 /** chunk id: 361291, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -40,7 +40,7 @@ function _(e) {
   } = e, a = false;
   return null != t && t !== c && (c = t, a = true), null != n && n !== u && (u = n, a = true), null != r && r !== d && (d = r, a = true), null != i && i !== f && (f = i, a = true), a
 }
-class m extends(r = Chunk442837.ZP.PersistedStore) {
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
@@ -56,8 +56,8 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-l(m, "displayName", "ApplicationStreamingSettingsStore"), l(m, "persistKey", "ApplicationStreamingSettingStore");
-let h = new m(Chunk570140.Z, {
+l(h, "displayName", "ApplicationStreamingSettingsStore"), l(h, "persistKey", "ApplicationStreamingSettingStore");
+let m = new h(Chunk570140.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: p,
   STREAM_UPDATE_SETTINGS: _
 })

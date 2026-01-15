@@ -49,15 +49,15 @@ function y(e) {
     useForcedColors: A,
     systemForcedColors: N,
     useReducedMotion: P,
-    alwaysShowLinkDecorations: R,
-    hardwareAccelerationEnabled: w,
+    alwaysShowLinkDecorations: w,
+    hardwareAccelerationEnabled: R,
     highContrastMode: D,
     isPopoutWindow: x,
     children: L
-  } = e, j = window.CSS.supports("selector(::-webkit-scrollbar)"), M = (0, l.e7)([d.Z], () => d.Z.zoom), k = x ? "" : "--custom-zoom: ".concat(M, ";"), U = (0, m.Z)("highlight_mana_buttons"), G = (0, m.Z)("highlight_mana_components"), Z = (0, m.Z)("highlight_void_toggleables"), F = (0, m.Z)("highlight_void_buttons"), B = (0, l.e7)([h.ZP], () => h.ZP.hdrDynamicRange), V = "font-size: ".concat(O, "%; --saturation-factor: ").concat(T, "; dynamic-range-limit: ").concat(B, "; ").concat(k), H = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(b), v, {
+  } = e, j = window.CSS.supports("selector(::-webkit-scrollbar)"), M = (0, l.e7)([d.Z], () => d.Z.zoom), k = x ? "" : "--custom-zoom: ".concat(M, ";"), U = (0, h.Z)("highlight_mana_buttons"), G = (0, h.Z)("highlight_mana_components"), Z = (0, h.Z)("highlight_void_toggleables"), F = (0, h.Z)("highlight_void_buttons"), B = (0, l.e7)([m.ZP], () => m.ZP.hdrDynamicRange), V = "font-size: ".concat(O, "%; --saturation-factor: ").concat(T, "; dynamic-range-limit: ").concat(B, "; ").concat(k), H = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(b), v, {
     "low-saturation": T <= c.AEw,
     "keyboard-mode": I,
-    "decorate-links": R,
+    "decorate-links": w,
     "no-webkit-scrollbar": !j,
     "has-webkit-scrollbar": j,
     "mouse-mode": S,
@@ -69,7 +69,7 @@ function y(e) {
     "disable-forced-colors": !A && "active" === N,
     "enable-forced-colors": A,
     "visual-refresh": true,
-    "hardware-acceleration-disabled": !w,
+    "hardware-acceleration-disabled": !R,
     "visual-refresh-chat-input": false,
     "mana-toggle-inputs": (0, _.A)("RootElementContextProvider"),
     "mana-text-inputs": (0, p.U)("RootElementContextProvider"),

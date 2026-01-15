@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk379286 = require("./379286.js"),
   Chunk94627 = require("./94627.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let y = function(e) {
   let {
     onCardInfoChange: t,
     error: n
-  } = e, a = i.useRef(t), [h, E] = i.useState(false), [y, O] = i.useState({}), [v, S] = i.useState({
+  } = e, a = i.useRef(t), [m, E] = i.useState(false), [y, O] = i.useState({}), [v, S] = i.useState({
     name: "",
     country: "",
     postalCode: ""
@@ -74,36 +74,36 @@ let y = function(e) {
     true !== N && N(true)
   }, [N]);
 
-  function R(e, t) {
+  function w(e, t) {
     !!y[e] !== t && O(n => b(g({}, n), {
       [e]: t
     }))
   }
-  let w = i.useCallback(function() {
+  let R = i.useCallback(function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       t = {};
     return (e || I.name) && "" === v.name && (t.name = p.intl.string(p.t.lIkVsi)), t
   }, [I, v]);
 
   function D() {
-    A(w())
+    A(R())
   }
   i.useEffect(() => {
-    let e = y.cardNumber && y.cardExpiry && y.cardCvc && 0 === Object.keys(w(true)).length;
+    let e = y.cardNumber && y.cardExpiry && y.cardCvc && 0 === Object.keys(R(true)).length;
     a.current({
       name: v.name
     }, !!e)
-  }, [y, v, w]);
+  }, [y, v, R]);
   let x = [{
     fields: [{
       id: "card-number",
       name: "cardNumber",
       title: () => p.intl.string(p.t.cVyJ3o),
-      getClassNameForLayout: () => m.width100,
+      getClassNameForLayout: () => h.width100,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardNumber",
-        flipped: h,
-        updateCompleted: e => R("cardNumber", e),
+        flipped: m,
+        updateCompleted: e => w("cardNumber", e),
         onFocus: P
       })
     }]
@@ -112,20 +112,20 @@ let y = function(e) {
       id: "card-expiration-date",
       name: "cardExpiry",
       title: () => p.intl.string(p.t["CeBa/4"]),
-      getClassNameForLayout: () => m.width50,
+      getClassNameForLayout: () => h.width50,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardExpiry",
-        updateCompleted: e => R("cardExpiry", e),
+        updateCompleted: e => w("cardExpiry", e),
         onFocus: P
       })
     }, {
       id: "card-cvc",
       name: "cardCvc",
       title: () => p.intl.string(p.t.Fd3rOz),
-      getClassNameForLayout: () => m.width50,
+      getClassNameForLayout: () => h.width50,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardCvc",
-        updateCompleted: e => R("cardCvc", e),
+        updateCompleted: e => w("cardCvc", e),
         onFocus: () => {
           P(), E(true)
         },
@@ -141,7 +141,7 @@ let y = function(e) {
       title: () => p.intl.string(p.t.VUlFdU),
       autoComplete: "cc-name",
       placeholder: () => p.intl.string(p.t["yf7ms+"]),
-      getClassNameForLayout: () => m.width100,
+      getClassNameForLayout: () => h.width100,
       renderInput: e => (0, r.jsx)(l.oil, g({}, e))
     }]
   }];

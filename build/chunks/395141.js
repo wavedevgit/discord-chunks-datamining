@@ -92,7 +92,7 @@ module.exports = function(e) {
     _ = {
       begin: "(#=>|=>|\\|>>|-?->|!->)"
     },
-    m = {
+    h = {
       variants: [{
         match: [/class\s+/, l, /\s+extends\s+/, l]
       }, {
@@ -123,7 +123,7 @@ module.exports = function(e) {
         begin: "(" + l + "\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B!?[-~]{1,2}>\\*?",
         end: "!?[-~]{1,2}>\\*?"
       }]
-    }, m, {
+    }, h, {
       begin: l + ":",
       end: ":",
       returnBegin: true,

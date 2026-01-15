@@ -6,12 +6,12 @@ require.d(exports, {
   H8: () => C,
   HD: () => f,
   O0: () => _,
-  PD: () => R,
+  PD: () => w,
   P_: () => E,
   aW: () => p,
   hj: () => I,
-  hs: () => m,
-  qT: () => w,
+  hs: () => h,
+  qT: () => R,
   qc: () => T,
   sS: () => g
 }), require("./388685.js"), require("./642613.js");
@@ -34,7 +34,7 @@ function _(e) {
   return (0, u.hS)(e).shortTimeout
 }
 
-function m(e) {
+function h(e) {
   let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [a.ZP], n = t.getGameOrTransformedSubgameForPID(e);
   try {
     return null == n ? s.ZP.GetWindowFullscreenTypeByPid(e) : s.ZP.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
@@ -44,12 +44,12 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
     [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [a.ZP];
   return new Promise(r => {
     setTimeout(() => {
-      r(m(e, [n]))
+      r(h(e, [n]))
     }, t)
   })
 }
@@ -99,7 +99,7 @@ let y = {
 async function I(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v,
-    r = await h(e, n),
+    r = await m(e, n),
     i = a.ZP.getGameOrTransformedSubgameForPID(e);
   if (null == i || null == i.name) return r;
   let s = null == (t = o.Z.getGameByName(i.name)) ? true : t.id;
@@ -137,7 +137,7 @@ function P(e, t, n) {
   returnfalse
 }
 
-function R(e, t) {
+function w(e, t) {
   if (!t) returnfalse;
   switch (e) {
     case r.Jx.UNKNOWN:
@@ -148,7 +148,7 @@ function R(e, t) {
   returntrue
 }
 
-function w(e) {
+function R(e) {
   return null == e ? {
     source: c.d0.DEFAULT,
     enabledOOP: false,

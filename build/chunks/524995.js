@@ -4,7 +4,7 @@
 require.d(exports, {
   FG: () => g,
   lI: () => b,
-  ro: () => m
+  ro: () => h
 }), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk764011 = require("./764011.js"),
@@ -18,10 +18,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk928994 = require("./928994.js"),
   Chunk981631 = require("./981631.js");
 let _ = "AUTHORIZE_REQUEST";
-var m = function(e) {
+var h = function(e) {
   return e.RPC = "rpc", e.WEB = "web", e
 }({});
-let h = ["rpc", "web"];
+let m = ["rpc", "web"];
 
 function g(e) {
   var t, n, i, a, o, s;
@@ -32,22 +32,22 @@ function g(e) {
     f = (0, u.R)(e),
     p = y(f, l),
     _ = null == p ? true : p.preferredFlow,
-    m = null != _,
+    h = null != _,
     {
-      token: h,
+      token: m,
       fetched: g
     } = (0, d.o)(null != (i = null == f ? true : f.parentId) ? i : null == f ? true : f.id),
-    E = g && null != h;
+    E = g && null != m;
   return {
     fetched: g,
     hasAlreadyLinked: E,
-    canStartAuthorization: m,
+    canStartAuthorization: h,
     startAuthorization: r.useCallback(e => null == _ ? null : (_.initiate(e), _.type), [_]),
     connectionApp: f,
     chosenFlow: null != (a = null == _ ? true : _.type) ? a : null,
     debug: c ? {
       isSubscribedToAuthorizeRequest: null != (o = null == p || null == (t = p.context) ? true : t.isSubscribedToAuthorizeRequest) && o,
-      oauth2Token: h,
+      oauth2Token: m,
       hasConnectionEntrypointUrl: (null == f ? true : f.connectionEntrypointUrl) != null,
       validFlows: null != (s = null == p || null == (n = p.availableFlows) ? true : n.map(e => e.type)) ? s : []
     } : true
@@ -60,7 +60,7 @@ function E(e) {
 
 function b(e, t) {
   var n;
-  let u = (0, i.Z)(null != (n = null == t ? true : t.allowedFlows) ? n : h),
+  let u = (0, i.Z)(null != (n = null == t ? true : t.allowedFlows) ? n : m),
     d = (0, f.Z)(E, r.useCallback(() => e.map(e => ({
       application: e,
       isSubscribedToAuthorizeRequest: o.Z.isSubscribed(e.id, _)

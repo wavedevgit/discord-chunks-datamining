@@ -28,8 +28,8 @@ function y(e) {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: i
-  } = e, a = (0, o.e7)([m.default, _.ZP], () => {
-    let e = m.default.getCurrentUser();
+  } = e, a = (0, o.e7)([h.default, _.ZP], () => {
+    let e = h.default.getCurrentUser();
     return _.ZP.isMember(t.id, null == e ? true : e.id)
   }), {
     premiumTier: c,
@@ -45,7 +45,7 @@ function y(e) {
         }
       })
     },
-    y = c === g.Eu4.NONE ? E.intl.string(E.t.c2wsn6) : h.nW(c);
+    y = c === g.Eu4.NONE ? E.intl.string(E.t.c2wsn6) : m.nW(c);
   return (0, r.jsx)("div", {
     className: b.guildIconContainer,
     children: (0, r.jsx)(s.i_, {

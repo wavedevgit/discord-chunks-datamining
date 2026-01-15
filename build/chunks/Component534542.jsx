@@ -72,8 +72,8 @@ let _ = {
     DEFAULT: "default",
     DESCRIPTION: "description"
   },
-  m = "modeDefault",
-  h = "modeDisabled";
+  h = "modeDefault",
+  m = "modeDisabled";
 
 function g(e) {
   var {
@@ -83,8 +83,8 @@ function g(e) {
     children: l,
     style: u
   } = e, p = f(e, ["type", "className", "disabled", "children", "style"]);
-  let g = m;
-  return i && (g = h), (0, r.jsx)(o.Text, d(c({
+  let g = h;
+  return i && (g = m), (0, r.jsx)(o.Text, d(c({
     variant: "text-sm/normal",
     className: a()(s[t], n, s[g]),
     style: u

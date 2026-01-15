@@ -2,7 +2,7 @@
 /** chunk id: 749681, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  transitionToGlobalDiscovery: () => m
+  transitionToGlobalDiscovery: () => h
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./415506.js");
 var Chunk258971 = require("./258971.js"),
   Chunk726115 = require("./726115.js"),
@@ -17,7 +17,7 @@ var Chunk258971 = require("./258971.js"),
   Chunk979007 = require("./979007.js"),
   Chunk128449 = require("./128449.js");
 
-function m(e) {
+function h(e) {
   var t, n, g;
   let E = e.tab;
   switch (u.Z.setState({
@@ -48,7 +48,7 @@ function m(e) {
             session_id: t,
             guild_id: n,
             user_id: null == (g = l.default.getCurrentUser()) ? true : g.id
-          }), e.newSessionState.restorePreviousView) return m(h())
+          }), e.newSessionState.restorePreviousView) return h(m())
       }
       if (null != e.applicationId) {
         if (e.section === p.GlobalDiscoveryAppsSections.STORE)
@@ -75,7 +75,7 @@ function m(e) {
   }
 }
 
-function h() {
+function m() {
   let {
     lastItem: e
   } = r.aQ.getState();

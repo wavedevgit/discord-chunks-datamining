@@ -66,16 +66,16 @@ function c(e) {
       inlineSize: d.width - (parseFloat(f.paddingLeft) + parseFloat(f.paddingRight)),
       blockSize: d.height - (parseFloat(f.paddingTop) + parseFloat(f.paddingBottom))
     }],
-    m = null != (s = window.devicePixelRatio) ? s : 1,
-    h = [{
-      inlineSize: _[0].inlineSize * m,
-      blockSize: _[0].blockSize * m
+    h = null != (s = window.devicePixelRatio) ? s : 1,
+    m = [{
+      inlineSize: _[0].inlineSize * h,
+      blockSize: _[0].blockSize * h
     }];
   return {
     target: l,
     borderBoxSize: p,
     contentBoxSize: _,
-    devicePixelContentBoxSize: h,
+    devicePixelContentBoxSize: m,
     contentRect: d
   }
 }

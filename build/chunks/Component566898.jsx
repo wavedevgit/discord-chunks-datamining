@@ -6,7 +6,7 @@ require.d(exports, {
   Pb: () => y,
   XX: () => E,
   ZP: () => v,
-  ZT: () => m,
+  ZT: () => h,
   iv: () => b,
   pk: () => g
 });
@@ -58,7 +58,7 @@ function _() {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     width: t,
     height: n,
@@ -76,28 +76,28 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let t, {
       groupStart: n = false,
       compact: i = false,
       attachmentSpecs: o,
       usernameWidth: u,
       usernameOpacity: f,
-      className: h,
+      className: m,
       style: g
     } = e,
     E = i ? 50 : s().random(40, 50);
   return !i && n ? t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {}), (0, r.jsx)(l.H, {
       className: c.header,
-      children: (0, r.jsx)(m, {
+      children: (0, r.jsx)(h, {
         width: u,
         opacity: f,
         className: c.__invalid_username
       })
     })]
   }) : i && (t = (0, r.jsxs)(r.Fragment, {
-    children: [i && (0, r.jsx)(m, {
+    children: [i && (0, r.jsx)(h, {
       width: E,
       className: a()({
         [c.compactTimestamp]: true,
@@ -105,14 +105,14 @@ function h(e) {
       })
     }), (0, r.jsx)(l.H, {
       className: c.header,
-      children: (0, r.jsx)(m, {
+      children: (0, r.jsx)(h, {
         width: u,
         opacity: f
       })
     })]
   })), (0, r.jsxs)("div", {
     "aria-hidden": true,
-    className: a()(h, {
+    className: a()(m, {
       [c.wrapper]: true,
       [c.compact]: i,
       [c.cozy]: !i
@@ -122,7 +122,7 @@ function h(e) {
       className: c.contents,
       children: [t, (0, r.jsx)("div", {
         className: c.content,
-        children: p().map((e, t) => (0, r.jsx)(m, {
+        children: p().map((e, t) => (0, r.jsx)(h, {
           width: e,
           opacity: .06
         }, t))
@@ -153,7 +153,7 @@ function v(e) {
     className: o
   } = e, l = null != a ? a.last ? t - 1 : s().random(0, t - 1) : false, c = s().random(80, 120), u = s().random(.1, .2);
   return (0, r.jsx)(r.Fragment, {
-    children: Array(t).fill(null).map((e, t) => (0, r.jsx)(h, {
+    children: Array(t).fill(null).map((e, t) => (0, r.jsx)(m, {
       compact: i,
       className: o,
       usernameWidth: c,

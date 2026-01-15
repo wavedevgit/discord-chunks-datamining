@@ -21,13 +21,13 @@ function o(e) {
     useDisabledMessage: d,
     useBadge: f,
     hasIcon: p
-  } = n, _ = l(), m = null == c ? true : c(), h = o(), g = null != (t = null == u ? true : u()) && t, E = null == d ? true : d(), b = null == f ? true : f();
+  } = n, _ = l(), h = null == c ? true : c(), m = o(), g = null != (t = null == u ? true : u()) && t, E = null == d ? true : d(), b = null == f ? true : f();
   return (0, r.jsxs)(a.X, {
     children: [(0, r.jsx)(i.rsf, {
       label: _,
-      description: m,
+      description: h,
       badge: b,
-      checked: h,
+      checked: m,
       hasIcon: p,
       onChange: e => s(e),
       disabled: g

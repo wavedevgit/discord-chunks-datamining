@@ -48,12 +48,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = () => {
+let m = () => {
     let {
       enabled: e
     } = (0, i.VL)({
@@ -83,7 +83,7 @@ let h = () => {
       currency: c.pKx.DISCORD_ORB
     }, null != a && {
       source: a
-    }, h()))
+    }, m()))
   },
   E = e => {
     let {
@@ -100,7 +100,7 @@ let h = () => {
       startTime: b
     } = g, y = (0, r.useMemo)(() => {
       var e, r;
-      return p(m(p({
+      return p(h(p({
         load_id: E,
         application_id: (0, l.Nb)(t),
         location: i,
@@ -115,26 +115,26 @@ let h = () => {
         currency: c.pKx.DISCORD_ORB
       }), null != u && {
         source: u
-      }, h())
+      }, m())
     }, [E, f, t, i, u, n]);
     return {
       emitOrbCheckoutPaymentFlowEvent: (0, r.useCallback)((e, t) => {
         let n = Date.now() - b;
-        e === c.rMx.PAYMENT_FLOW_STARTED ? s.default.track(c.rMx.PAYMENT_FLOW_STARTED, m(p({}, y), {
+        e === c.rMx.PAYMENT_FLOW_STARTED ? s.default.track(c.rMx.PAYMENT_FLOW_STARTED, h(p({}, y), {
           has_saved_payment_source: _,
           payment_gateway: d.ht.VIRTUAL_CURRENCY,
           continue_session_initial_step: null
-        })) : e === c.rMx.PAYMENT_FLOW_LOADED ? s.default.track(c.rMx.PAYMENT_FLOW_LOADED, m(p({}, y), {
+        })) : e === c.rMx.PAYMENT_FLOW_LOADED ? s.default.track(c.rMx.PAYMENT_FLOW_LOADED, h(p({}, y), {
           has_saved_payment_source: _,
           initial_step: o.h8.REVIEW,
           duration_ms: n
-        })) : e === c.rMx.PAYMENT_FLOW_CANCELED ? s.default.track(c.rMx.PAYMENT_FLOW_CANCELED, m(p({}, y), {
+        })) : e === c.rMx.PAYMENT_FLOW_CANCELED ? s.default.track(c.rMx.PAYMENT_FLOW_CANCELED, h(p({}, y), {
           duration_ms: n
-        })) : e === c.rMx.PAYMENT_FLOW_COMPLETED ? s.default.track(c.rMx.PAYMENT_FLOW_COMPLETED, m(p({}, y), {
+        })) : e === c.rMx.PAYMENT_FLOW_COMPLETED ? s.default.track(c.rMx.PAYMENT_FLOW_COMPLETED, h(p({}, y), {
           duration_ms: n
-        })) : e === c.rMx.PAYMENT_FLOW_SUCCEEDED ? s.default.track(c.rMx.PAYMENT_FLOW_SUCCEEDED, m(p({}, y), {
+        })) : e === c.rMx.PAYMENT_FLOW_SUCCEEDED ? s.default.track(c.rMx.PAYMENT_FLOW_SUCCEEDED, h(p({}, y), {
           duration_ms: n
-        })) : e === c.rMx.PAYMENT_FLOW_FAILED && s.default.track(c.rMx.PAYMENT_FLOW_FAILED, p(m(p({}, y), {
+        })) : e === c.rMx.PAYMENT_FLOW_FAILED && s.default.track(c.rMx.PAYMENT_FLOW_FAILED, p(h(p({}, y), {
           duration_ms: n
         }), null != t ? {
           payment_error_code: t.code,

@@ -24,8 +24,8 @@ function d(e) {
   i.useEffect(() => {
     f(false, a.hX(n, _))
   }, [_, f, n]);
-  let m = l.VY.filter(e => a.e$(n, e)),
-    h = m.filter(e => !a.e$(_, e)).map(e => {
+  let h = l.VY.filter(e => a.e$(n, e)),
+    m = h.filter(e => !a.e$(_, e)).map(e => {
       let t = (0, l.wt)(e),
         n = !a.e$(d, e);
       return (0, r.jsx)("li", {
@@ -37,7 +37,7 @@ function d(e) {
         })
       }, String(e))
     }),
-    g = m.filter(e => a.e$(_, e)).map(e => {
+    g = h.filter(e => a.e$(_, e)).map(e => {
       let t = (0, l.wt)(e);
       return (0, r.jsxs)("li", {
         className: u.permission,
@@ -56,7 +56,7 @@ function d(e) {
     });
   return (0, r.jsxs)("div", {
     className: u.botPermissions,
-    children: [h.length > 0 ? (0, r.jsxs)("div", {
+    children: [m.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "text-default",
@@ -66,7 +66,7 @@ function d(e) {
         })
       }), (0, r.jsx)("ul", {
         className: u.permissionsList,
-        children: h
+        children: m
       })]
     }) : null, g.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {

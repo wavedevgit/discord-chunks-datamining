@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => x,
-  u: () => w
+  u: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,9 +67,9 @@ function N(e, t) {
   }), e
 }
 let P = Chunk185923.Hz.CHAT,
-  R = [Chunk633302.ZP.getByName("thumbsup"), Chunk633302.ZP.getByName("eyes"), Chunk633302.ZP.getByName("laughing"), Chunk633302.ZP.getByName("watermelon"), Chunk633302.ZP.getByName("fork_and_knife"), Chunk633302.ZP.getByName("yum")].filter(Chunk823379.lm);
+  w = [Chunk633302.ZP.getByName("thumbsup"), Chunk633302.ZP.getByName("eyes"), Chunk633302.ZP.getByName("laughing"), Chunk633302.ZP.getByName("watermelon"), Chunk633302.ZP.getByName("fork_and_knife"), Chunk633302.ZP.getByName("yum")].filter(Chunk823379.lm);
 
-function w(e) {
+function R(e) {
   let {
     emoji: t,
     isDisabled: n = false,
@@ -84,7 +84,7 @@ function w(e) {
         enabled: !n
       },
       children: (0, r.jsx)(u.AMe, {
-        config: m.u,
+        config: h.u,
         from: {
           value: 0
         },
@@ -146,19 +146,19 @@ function x(e) {
     onFocus: l,
     onSelectEmoji: d,
     onSelectDisabledEmoji: p,
-    onExpandedToggle: m,
+    onExpandedToggle: h,
     emojiSearchProps: g,
     recentlyUsedEmojis: y,
     analyticsOverride: T,
     ref: A
-  } = e, x = (0, f.Dt)(), [L, j] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !b.ZP.isEmojiFilteredOrLocked({
+  } = e, x = (0, f.Dt)(), [L, j] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...w], "name").filter(e => !b.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: P
   })).slice(0, O.e5);
   null != y && y.length > 0 && k.splice(k.length - 1, 1, y[0]);
   let U = e => {
-      j(e), null == m || m(e)
+      j(e), null == h || h(e)
     },
     G = e => {
       let {
@@ -184,7 +184,7 @@ function x(e) {
       })
     }), (0, r.jsxs)("div", {
       className: I.container,
-      children: [(0, r.jsx)(h.Z, {
+      children: [(0, r.jsx)(m.Z, {
         analyticsOverride: T,
         channel: t,
         className: o()(I.animatedPicker, {
@@ -223,7 +223,7 @@ function x(e) {
                 text: e.name,
                 position: "top",
                 asContainer: true,
-                children: (0, r.jsx)(w, {
+                children: (0, r.jsx)(R, {
                   emoji: e,
                   isDisabled: n,
                   onClick: () => {

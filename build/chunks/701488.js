@@ -5,10 +5,10 @@ require.d(exports, {
   $y: () => j,
   Cr: () => O,
   Ev: () => s,
-  Fu: () => h,
+  Fu: () => m,
   GM: () => L,
   Gu: () => D,
-  JT: () => m,
+  JT: () => h,
   K8: () => v,
   OF: () => x,
   P9: () => y,
@@ -26,8 +26,8 @@ require.d(exports, {
   sI: () => g,
   u2: () => l,
   um: () => A,
-  wP: () => w,
-  wT: () => R,
+  wP: () => R,
+  wT: () => w,
   xK: () => T
 }), require("./388685.js");
 var Chunk911969 = require("./911969.js"),
@@ -42,8 +42,8 @@ let a = 160,
   f = "1050941315912835122",
   p = "880218394199220334",
   _ = "755827207812677713",
-  m = "1234546995360694434",
-  h = "1214629548377768066",
+  h = "1234546995360694434",
+  m = "1214629548377768066",
   g = "https://discord.com/blog/server-activities-games-voice-watch-together",
   E = {
     SMALL: 64,
@@ -76,7 +76,7 @@ let P = {
     label_until: null,
     omit_badge_from_surfaces: []
   },
-  R = {
+  w = {
     application_id: "",
     requires_age_gate: false,
     legacy_responsive_aspect_ratio: false,
@@ -93,8 +93,8 @@ let P = {
     blocked_locales: [],
     supported_locales: []
   },
-  w = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
-  D = [...w, Chunk981631.d4z.GUILD_VOICE],
+  R = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
+  D = [...R, Chunk981631.d4z.GUILD_VOICE],
   x = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
 var L = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e

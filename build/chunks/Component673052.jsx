@@ -26,7 +26,7 @@ function d(e) {
     messageId: t.id
   })(f), _ = (0, a.q)(t.applicationId);
   if (null == _) return null;
-  let m = c.intl.format(c.t.mAtJTC, {
+  let h = c.intl.format(c.t.mAtJTC, {
     username: t.author.username,
     usernameHook: p,
     applicationName: _.name,
@@ -46,6 +46,6 @@ function d(e) {
     timestamp: t.timestamp,
     compact: d,
     contentClassName: u.systemMessage,
-    children: m
+    children: h
   })
 }

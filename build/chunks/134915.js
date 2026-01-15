@@ -4,7 +4,7 @@
 require.d(exports, {
   PS: () => o,
   Q3: () => c,
-  W0: () => m,
+  W0: () => h,
   tL: () => l
 });
 var Chunk473749 = require("./473749.js");
@@ -62,10 +62,10 @@ function u(e) {
     value: l,
     builtinValidation: c,
     validate: u,
-    validationBehavior: m = "aria"
+    validationBehavior: h = "aria"
   } = e;
   n && (t || (t = "invalid" === n));
-  let h = true !== t ? {
+  let m = true !== t ? {
       isInvalid: t,
       validationErrors: [],
       validationDetails: a
@@ -82,24 +82,24 @@ function u(e) {
     [C, A] = (0, r.useState)(o),
     N = (0, r.useRef)(o),
     P = () => {
-      if (!R) return;
-      w(false);
+      if (!w) return;
+      R(false);
       let e = g || c || T.current;
       _(e, N.current) || (N.current = e, A(e))
     },
-    [R, w] = (0, r.useState)(false);
+    [w, R] = (0, r.useState)(false);
   return (0, r.useEffect)(P), {
-    realtimeValidation: h || I || g || c || o,
-    displayValidation: "native" === m ? h || I || C : h || I || g || c || C,
+    realtimeValidation: m || I || g || c || o,
+    displayValidation: "native" === h ? m || I || C : m || I || g || c || C,
     updateValidation(e) {
-      "aria" !== m || _(C, e) ? T.current = e : A(e)
+      "aria" !== h || _(C, e) ? T.current = e : A(e)
     },
     resetValidation() {
       let e = o;
-      _(e, N.current) || (N.current = e, A(e)), "native" === m && w(false), S(true)
+      _(e, N.current) || (N.current = e, A(e)), "native" === h && R(false), S(true)
     },
     commitValidation() {
-      "native" === m && w(true), S(true)
+      "native" === h && R(true), S(true)
     }
   }
 }
@@ -128,7 +128,7 @@ function _(e, t) {
   return e === t || !!e && !!t && e.isInvalid === t.isInvalid && e.validationErrors.length === t.validationErrors.length && e.validationErrors.every((e, n) => e === t.validationErrors[n]) && Object.entries(e.validationDetails).every(([e, n]) => t.validationDetails[e] === n)
 }
 
-function m(...e) {
+function h(...e) {
   let t = new Set,
     n = false,
     r = {

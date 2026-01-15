@@ -36,7 +36,7 @@ function _(e) {
     children: a
   } = e, {
     reducedMotion: d
-  } = i.useContext(s.Sfi), _ = d.enabled ? 3 : n, [m, h] = i.useState(null != t), [g] = i.useState(() => new l.V7), [E, b] = i.useState(true), y = i.useRef(null);
+  } = i.useContext(s.Sfi), _ = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new l.V7), [E, b] = i.useState(true), y = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
     null == (e = y.current) || e.addEventListener("transitionend", () => {
@@ -45,12 +45,12 @@ function _(e) {
       b(false)
     }, u)
   }, []), i.useEffect(() => () => g.stop(), [g]), i.useEffect(() => {
-    null != t && g.start(10, () => h(true))
+    null != t && g.start(10, () => m(true))
   }, [t, g]), (0, r.jsx)("div", {
     "data-popout-animating": E,
     className: o()(null != t ? p[t] : null, {
       [f[_]]: null != t,
-      [c.didRender]: m
+      [c.didRender]: h
     }),
     children: a
   })

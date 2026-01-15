@@ -65,8 +65,8 @@ var Chunk329554 = require("./329554.js"),
   Chunk581079 = require("./581079.js"),
   Chunk207303 = require("./207303.js"),
   Chunk467159 = require("./467159.js"),
-  w = Chunk169774.isBrowser("IE"),
-  D = !w,
+  R = Chunk169774.isBrowser("IE"),
+  D = !R,
   x = {
     edit: Chunk529742,
     composite: Chunk229450,
@@ -151,7 +151,7 @@ var Chunk329554 = require("./329554.js"),
       return function(n) {
         if (!t.props.readOnly) {
           var r = t._handler && t._handler[e];
-          r && (m ? m(function() {
+          r && (h ? h(function() {
             return r(t, n)
           }) : r(t, n))
         }
@@ -161,12 +161,12 @@ var Chunk329554 = require("./329554.js"),
     }, r._renderPlaceholder = function() {
       if (this._showPlaceholder()) {
         var e = {
-          text: R(this.props.placeholder),
+          text: w(this.props.placeholder),
           editorState: this.props.editorState,
           textAlignment: this.props.textAlignment,
           accessibilityID: this._placeholderAccessibilityID
         };
-        return b.createElement(h, e)
+        return b.createElement(m, e)
       }
       return null
     }, r.render = function() {
@@ -181,13 +181,13 @@ var Chunk329554 = require("./329554.js"),
         d = e.readOnly,
         p = e.textAlignment,
         _ = e.textDirectionality,
-        m = S({
+        h = S({
           "DraftEditor/root": true,
           "DraftEditor/alignLeft": "left" === p,
           "DraftEditor/alignRight": "right" === p,
           "DraftEditor/alignCenter": "center" === p
         }),
-        h = {
+        m = {
           outline: "none",
           userSelect: "text",
           WebkitUserSelect: "text",
@@ -208,7 +208,7 @@ var Chunk329554 = require("./329554.js"),
           textDirectionality: _
         };
       return b.createElement("div", {
-        className: m
+        className: h
       }, this._renderPlaceholder(), b.createElement("div", {
         className: S("DraftEditor/editorContainer"),
         ref: this._handleEditorContainerRef
@@ -254,7 +254,7 @@ var Chunk329554 = require("./329554.js"),
         ref: this.props.editorRef,
         role: d ? null : g,
         spellCheck: D && this.props.spellCheck,
-        style: h,
+        style: m,
         suppressContentEditableWarning: true,
         tabIndex: this.props.tabIndex
       }, b.createElement(j, {
@@ -264,7 +264,7 @@ var Chunk329554 = require("./329554.js"),
         key: "contents" + this.state.contentsKey
       })))))
     }, r.componentDidMount = function() {
-      this._blockSelectEvents = false, !L && A("draft_ods_enabled") && (L = true, g.initODS()), this.setMode("edit"), w && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
+      this._blockSelectEvents = false, !L && A("draft_ods_enabled") && (L = true, g.initODS()), this.setMode("edit"), R && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
     }, r.componentDidUpdate = function() {
       this._blockSelectEvents = false, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
     }, t

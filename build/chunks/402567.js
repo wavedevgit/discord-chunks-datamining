@@ -25,8 +25,8 @@ function _() {
     {
       banner: f,
       themeColors: _,
-      avatarDecorationSkuId: m,
-      displayNameStyles: h
+      avatarDecorationSkuId: h,
+      displayNameStyles: m
     } = (0, r.useMemo)(() => {
       let n = (0, u.Ib)(t);
       return {
@@ -37,7 +37,7 @@ function _() {
       }
     }, [t, e]),
     g = (0, i.e7)([o.Z], () => {
-      let e = o.Z.getProduct(m);
+      let e = o.Z.getProduct(h);
       return (0, s.M)(null == e ? true : e.items[0]) ? e.items[0] : null
     });
   (0, r.useEffect)(() => {
@@ -45,9 +45,9 @@ function _() {
       banner: f,
       themeColors: _,
       avatarDecoration: g,
-      displayNameStyles: h
+      displayNameStyles: m
     })
-  }, [f, _, g, h]);
+  }, [f, _, g, m]);
   let E = (0, r.useCallback)(() => {
     let e = p(t);
     n(e), c.default.track(d.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {

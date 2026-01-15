@@ -22,25 +22,25 @@ function u(e) {
     avatarOverride: p
   } = e, {
     onMouseEnter: _,
-    onMouseLeave: m,
-    shouldAnimate: h
+    onMouseLeave: h,
+    shouldAnimate: m
   } = (0, c.Z)(f), {
     pendingAvatar: g
   } = (0, l.Z)({}), E = d && null != t ? (0, o.SD)({
     userId: t.id,
     image: g,
-    canAnimate: h,
+    canAnimate: m,
     size: u
   }) : true, b = true !== p ? p : E, y = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
   return {
     avatarSrc: r.useMemo(() => null != t ? (0, a.SG)(b, y, t, {
-      canAnimate: h,
+      canAnimate: m,
       size: u
-    }) : true, [b, y, t, h, u]),
-    isAvatarAnimating: h,
+    }) : true, [b, y, t, m, u]),
+    isAvatarAnimating: m,
     eventHandlers: {
       onMouseEnter: _,
-      onMouseLeave: m
+      onMouseLeave: h
     }
   }
 }

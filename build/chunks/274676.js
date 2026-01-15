@@ -52,8 +52,8 @@ require.d(exports, {
   hT: () => y,
   kK: () => l,
   tF: () => o,
-  tR: () => h,
-  wK: () => R,
+  tR: () => m,
+  wK: () => w,
   wk: () => i
 });
 let d = new Set(["inline", "contents"]);
@@ -72,10 +72,10 @@ let p = new Set(["table", "td", "th"]);
 function _(e) {
   return p.has(i(e))
 }
-let m = [":popover-open", ":modal"];
+let h = [":popover-open", ":modal"];
 
-function h(e) {
-  return m.some(t => {
+function m(e) {
+  return h.some(t => {
     try {
       return e.matches(t)
     } catch (e) {
@@ -97,7 +97,7 @@ function O(e) {
   let t = A(e);
   for (; c(t) && !I(t);) {
     if (y(t)) return t;
-    if (h(t)) break;
+    if (m(t)) break;
     t = A(t)
   }
   return null
@@ -144,12 +144,12 @@ function P(e, t, n) {
     o = i === (null == (r = e.ownerDocument) ? true : r.body),
     s = a(i);
   if (o) {
-    let e = R(s);
+    let e = w(s);
     return t.concat(s, s.visualViewport || [], f(i) ? i : [], e && n ? P(e) : [])
   }
   return t.concat(i, P(i, [], n))
 }
 
-function R(e) {
+function w(e) {
   return e.parent && Object.getPrototypeOf(e.parent) ? e.frameElement : null
 }

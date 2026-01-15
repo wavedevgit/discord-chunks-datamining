@@ -95,7 +95,7 @@ let C = e => {
     analyticsLocations: l
   } = (0, o.ZP)(r, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), c = (0, s.q)(t);
   return i.useEffect(() => {
-    null == c || null == c.guildId || null == n || m.Z.isFetchingForSKU(n) || null != _.Z.get(n) || (0, h.y)(c.guildId, n)
+    null == c || null == c.guildId || null == n || h.Z.isFetchingForSKU(n) || null != _.Z.get(n) || (0, m.y)(c.guildId, n)
   }, [c, n]), {
     analyticsLocations: l
   }

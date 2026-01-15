@@ -84,10 +84,10 @@ module.exports = function(e) {
   u.contains = [p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.C_BLOCK_COMMENT_MODE], d.contains = [_, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.inherit(e.C_BLOCK_COMMENT_MODE, {
     illegal: /\n/
   })];
-  let m = {
+  let h = {
       variants: [s, p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
-    h = {
+    m = {
       begin: "<",
       end: ">",
       contains: [{
@@ -125,14 +125,14 @@ module.exports = function(e) {
       keywords: {
         keyword: "if else elif endif define undef warning error line region endregion pragma checksum"
       }
-    }, m, o, {
+    }, h, o, {
       beginKeywords: "class interface",
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:,]/,
       contains: [{
         beginKeywords: "where class"
-      }, a, h, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      }, a, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       beginKeywords: "namespace",
       relevance: 0,
@@ -144,7 +144,7 @@ module.exports = function(e) {
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:]/,
-      contains: [a, h, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      contains: [a, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       className: "meta",
       begin: "^\\s*\\[(?=[\\w])",
@@ -172,7 +172,7 @@ module.exports = function(e) {
       }, {
         begin: e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
         returnBegin: true,
-        contains: [e.TITLE_MODE, h],
+        contains: [e.TITLE_MODE, m],
         relevance: 0
       }, {
         match: /\(\)/
@@ -184,7 +184,7 @@ module.exports = function(e) {
         excludeEnd: true,
         keywords: i,
         relevance: 0,
-        contains: [m, o, e.C_BLOCK_COMMENT_MODE]
+        contains: [h, o, e.C_BLOCK_COMMENT_MODE]
       }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, E]
   }

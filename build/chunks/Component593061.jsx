@@ -43,10 +43,10 @@ function p(e) {
     }
   };
 
-  function m(e, t) {
+  function h(e, t) {
     s.Z.open(e, t)
   }
-  let h = null != t.paymentSource && t.status === c.Py.COMPLETED,
+  let m = null != t.paymentSource && t.status === c.Py.COMPLETED,
     g = null == n ? true : n.invoiceLink,
     E = null == n ? true : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
@@ -75,11 +75,11 @@ function p(e) {
       type: "critical",
       children: l
     })]
-  }) : h ? (0, r.jsx)("div", {
+  }) : m ? (0, r.jsx)("div", {
     className: d.downloadInvoice,
     children: (0, r.jsx)(o.eee, {
       onClick: () => {
-        m(t, t.paymentSource)
+        h(t, t.paymentSource)
       },
       children: u.intl.formatToPlainString(u.t.onRIxS, {})
     })

@@ -2,14 +2,14 @@
 /** chunk id: 873115, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dz: () => h,
+  Dz: () => m,
   Nj: () => y,
   RS: () => O,
   by: () => E,
   eI: () => _,
   f6: () => g,
   i0: () => v,
-  ib: () => m,
+  ib: () => h,
   og: () => S
 }), require("./415506.js"), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
@@ -36,14 +36,14 @@ function _() {
       i.Z.dispatch({
         type: "BRAINTREE_CREATE_CLIENT_SUCCESS",
         client: e
-      }), h(), m()
+      }), m(), h()
     }).catch(() => i.Z.dispatch({
       type: "BRAINTREE_CREATE_CLIENT_FAIL"
     }))
   })
 }
 
-function m() {
+function h() {
   let e = a.Z.getClient();
   if (null == e) throw Error("Braintree client must be initialized before creating Venmo client.");
   (0, s.S)().then(t => {
@@ -64,7 +64,7 @@ function m() {
   })
 }
 
-function h() {
+function m() {
   let e = a.Z.getClient();
   if (null == e) throw Error("braintree client must be initialized before calling this");
   (0, s.S)().then(t => {

@@ -23,12 +23,12 @@ function a(e, t, n) {
         [d, f] = (0, i.Wu)([t], () => t.getEvaluationAndAssignment(s, u, o), [u]),
         p = null == f ? true : f.variantId,
         _ = null != (a = null == f ? true : f.trackedVariantId) ? a : p,
-        m = null == f ? true : f.revision,
-        h = null == f ? true : f.isOverride,
+        h = null == f ? true : f.revision,
+        m = null == f ? true : f.isOverride,
         g = null == f ? true : f.exposureTrackingEnabled;
       if ((0, r.useEffect)(() => {
-          null != d && null != _ && null != m && false === h && true === g && t.trackExperimentExposure(d, o, e.location, s, m, _)
-        }, [u, d, _, m, e.location, h, g]), null == p) return c;
+          null != d && null != _ && null != h && false === m && true === g && t.trackExperimentExposure(d, o, e.location, s, h, _)
+        }, [u, d, _, h, e.location, m, g]), null == p) return c;
       {
         let e = l[p];
         return null != e ? e : c
@@ -42,8 +42,8 @@ function a(e, t, n) {
         f = null != (r = null == u ? true : u.trackedVariantId) ? r : d,
         p = null == u ? true : u.revision,
         _ = null == u ? true : u.isOverride,
-        m = null == u ? true : u.exposureTrackingEnabled;
-      if (null != a && null != f && null != p && false === _ && true === m && t.trackExperimentExposure(a, o, e.location, s, p, f), null == d) return c;
+        h = null == u ? true : u.exposureTrackingEnabled;
+      if (null != a && null != f && null != p && false === _ && true === h && t.trackExperimentExposure(a, o, e.location, s, p, f), null == d) return c;
       {
         let e = l[d];
         return null != e ? e : c

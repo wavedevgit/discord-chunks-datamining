@@ -28,6 +28,6 @@ let S = (0, Chunk509613.k4)(Chunk313789.n.KEYBINDS_CATEGORY, {
   d = (0, Chunk509613.m7)(Chunk313789.n.KEYBINDS_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t.T9DA2K),
     getLegacySearchKey: () => (0, u.Gl)("KeybindsPanel") ? true : o.s6.KEYBINDS,
-    icon: Chunk657707.YiA,
+    icon: Chunk657707.KeyboardIcon,
     buildLayout: () => (0, u.Gl)("KeybindsPanel") ? [E] : [c]
   })

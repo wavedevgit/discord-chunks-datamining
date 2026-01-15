@@ -264,7 +264,7 @@ E.serializeObject = y, E.parseString = v, E.types = {
   }
   for (let e in this.header) null !== this.header[e] && _(this.header, e) && t.setRequestHeader(e, this.header[e]);
   this._responseType && (t.responseType = this._responseType), this.emit("request", this), t.send(true === n ? null : n)
-}, E.agent = () => new h;
+}, E.agent = () => new m;
 for (var A = 0, N = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; A < N.length; A++) {
   let e = N[A];
   Chunk675246.prototype[module.toLowerCase()] = function(t, n) {

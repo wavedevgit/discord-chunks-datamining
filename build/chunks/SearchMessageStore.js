@@ -64,14 +64,14 @@ function p(e) {
 }
 
 function _() {
-  h()
-}
-
-function m() {
-  h()
+  m()
 }
 
 function h() {
+  m()
+}
+
+function m() {
   c = {}
 }
 class g extends(r = Chunk442837.ZP.Store) {
@@ -88,6 +88,6 @@ let E = new g(Chunk570140.Z, {
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: d,
   MESSAGE_UPDATE: f,
   LOGOUT: _,
-  CONNECTION_OPEN: m,
+  CONNECTION_OPEN: h,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: p
 })

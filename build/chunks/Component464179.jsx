@@ -17,7 +17,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk94627 = require("./94627.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -86,8 +86,8 @@ let v = "US",
   }), {})),
   N = (0, Chunk313201.hQ)(),
   P = (0, Chunk313201.hQ)(),
-  R = (0, Chunk313201.hQ)(),
   w = (0, Chunk313201.hQ)(),
+  R = (0, Chunk313201.hQ)(),
   D = (0, Chunk313201.hQ)(),
   x = (0, Chunk313201.hQ)(),
   L = (0, Chunk313201.hQ)();
@@ -110,7 +110,7 @@ let k = {
     id: N,
     title: () => _.intl.string(_.t.vyuULb),
     autoComplete: "name",
-    getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? m.width100 : m.width60,
+    getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? h.width100 : h.width60,
     renderInput: e => (0, i.jsx)(u.oil, g({}, e))
   }),
   Z = e => ({
@@ -124,9 +124,9 @@ let k = {
         case "modalInternational":
         case "modalUSWithName":
         case "modalInternationalWithName":
-          return m.width100;
+          return h.width100;
         default:
-          return m.width75
+          return h.width75
       }
     },
     renderInput(e, t) {
@@ -151,20 +151,20 @@ let k = {
   }),
   F = e => ({
     name: "line1",
-    id: R,
+    id: w,
     title: () => _.intl.string(_.t.x0beVT),
     autoComplete: "address-line1",
     placeholder: () => _.intl.string(_.t["ynII/6"]),
-    getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? m.width100 : m.width60,
+    getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? h.width100 : h.width60,
     renderInput: e => (0, i.jsx)(u.oil, g({}, e))
   }),
   B = e => ({
     name: "line2",
-    id: w,
+    id: R,
     title: () => _.intl.string(_.t.i2Z0gI),
     placeholder: () => _.intl.string(_.t.fKLoNo),
     autoComplete: "address-line2",
-    getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? m.width100 : m.width40,
+    getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? h.width100 : h.width40,
     renderInput: e => (0, i.jsx)(u.oil, g({}, e))
   }),
   V = e => ({
@@ -182,11 +182,11 @@ let k = {
         case "settingsUSMobile":
         case "settingsInternationalMobile":
         case "settingsInternationalWithoutNameMobile":
-          return m.width100;
+          return h.width100;
         case "settingsInternational":
-          return m.width60;
+          return h.width60;
         default:
-          return m.width50
+          return h.width50
       }
     },
     renderInput: e => (0, i.jsx)(u.oil, g({}, e))
@@ -213,17 +213,17 @@ let k = {
         switch (e) {
           case "modalInternational":
           case "modalInternationalWithName":
-            return m.width100;
+            return h.width100;
           case "modalUS":
           case "modalUSWithName":
           case "settingsUSMobile":
           case "settingsInternationalMobile":
           case "settingsInternationalWithoutNameMobile":
-            return m.width50;
+            return h.width50;
           case "settingsInternational":
-            return m.width30;
+            return h.width30;
           default:
-            return m.width25
+            return h.width25
         }
       },
       renderInput: e => (0, i.jsx)(u.oil, g({}, e))
@@ -253,14 +253,14 @@ let k = {
           case "settingsUSMobile":
           case "settingsInternationalMobile":
           case "settingsInternationalWithoutNameMobile":
-            return m.width100;
+            return h.width100;
           case "modalUS":
           case "modalUSWithName":
-            return m.width50;
+            return h.width50;
           case "settingsInternational":
-            return m.width30;
+            return h.width30;
           default:
-            return m.width25
+            return h.width25
         }
       },
       renderInput(t, n, r) {
@@ -440,7 +440,7 @@ class K extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), m(this, "state", {
       values: {
         name: this.props.name,
         country: this.props.country,
@@ -452,11 +452,11 @@ class K extends(r = Chunk473749.PureComponent) {
       },
       dirtyFields: {},
       errors: {}
-    }), h(this, "handleFieldBlur", () => {
+    }), m(this, "handleFieldBlur", () => {
       this.setState({
         errors: this.validateForm(true)
       })
-    }), h(this, "handleFieldChange", (e, t) => {
+    }), m(this, "handleFieldChange", (e, t) => {
       if (null == t) return;
       let {
         values: n,
@@ -475,7 +475,7 @@ class K extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-h(K, "Layouts", j), h(K, "Modes", M), h(K, "defaultProps", {
+m(K, "Layouts", j), m(K, "Modes", M), m(K, "defaultProps", {
   name: "",
   country: "",
   line1: "",

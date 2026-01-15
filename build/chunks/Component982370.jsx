@@ -22,7 +22,7 @@ let _ = e => {
     onBackClick: n
   } = e, i = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
     visibilityPercentageRef: _,
-    visibilityPercentage: m
+    visibilityPercentage: h
   } = (0, u.E)(!i);
   return (0, r.jsxs)("div", {
     className: a()(p.container, t),
@@ -40,7 +40,7 @@ let _ = e => {
       children: (0, r.jsxs)("div", {
         className: p.headerContainer,
         children: [(0, r.jsx)(d.Z, {
-          containerVisibilityPercentage: m,
+          containerVisibilityPercentage: h,
           isMotionReduced: i
         }), (0, r.jsx)(c.Z, {
           children: f.intl.string(f.t["hqjDX/"])

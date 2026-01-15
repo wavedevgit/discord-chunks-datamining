@@ -2,7 +2,7 @@
 /** chunk id: 225055, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => m,
+  ZP: () => h,
   sc: () => p,
   xS: () => _
 }), require("./388685.js");
@@ -22,18 +22,18 @@ let p = {
   },
   _ = Chunk473749.createContext(null);
 
-function m(e) {
+function h(e) {
   let {
     activeSlide: t,
     children: n,
     className: a,
     slideClassName: l
-  } = e, m = (0, u.Z)(t), h = i.useMemo(() => {
+  } = e, h = (0, u.Z)(t), m = i.useMemo(() => {
     let e = {};
     return i.Children.forEach(n, t => {
       e[t.props.id] = t.props.children
     }), e
-  }, [...n]), g = t === d.yD.WELCOME && (null == m || m === d.yD.WELCOME), E = (0, c.Yzy)(t, {
+  }, [...n]), g = t === d.yD.WELCOME && (null == h || h === d.yD.WELCOME), E = (0, c.Yzy)(t, {
     from: g ? {
       transform: "translate3d(0, 0px, 0)",
       opacity: 1,
@@ -70,7 +70,7 @@ function m(e) {
         return (0, r.jsx)(s.animated.div, {
           className: o()(f.slide, l),
           style: e,
-          children: h[t]
+          children: m[t]
         }, i)
       })
     })

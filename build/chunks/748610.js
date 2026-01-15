@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   if (!Array.isArray(e.pinned)) return;
   let t = e.pinned.some(e => true === e);
   e.pinned = t
@@ -73,10 +73,10 @@ let E = {
       getId: d,
       getLimit: f,
       onFetchStart: _,
-      onFetchSuccess: m,
+      onFetchSuccess: h,
       searchMode: E
     } = e, b = (0, l.kG)(r), y = (0, l.$G)(b);
-    h(y);
+    m(y);
     let O = p({}, y, (0, l.zH)(E)),
       v = (0, l.s5)(t);
     null != v && (0, l.jW)(O, v);
@@ -121,7 +121,7 @@ let E = {
             documentsIndexed: n.documents_indexed
           }
         })
-      }), null == m || m({
+      }), null == h || h({
         searchContext: t,
         tabEntries: r
       })
@@ -146,13 +146,13 @@ let E = {
       searchMode: i,
       searchEverywhere: s,
       onFetchStart: u
-    } = e, d = (0, l.kG)(n), f = m(p({}, (0, l.$G)(d), (0, l.zH)(i)), {
+    } = e, d = (0, l.kG)(n), f = h(p({}, (0, l.$G)(d), (0, l.zH)(i)), {
       offset: r.offset
     }), _ = (0, l.s5)(t);
     null != _ && (0, l.jW)(f, _), s && (f.search_everywhere = true);
-    let h = (0, l.Tm)(t),
+    let m = (0, l.Tm)(t),
       E = c.Z.create({
-        id: h,
+        id: m,
         searchType: t.type,
         searchQuery: f
       });
@@ -162,14 +162,14 @@ let E = {
       searchQuery: f
     }), a.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
-      ids: [h]
+      ids: [m]
     }), E.fetch(e => {
       var t, n, r;
       a.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
         guildId: g(_),
         data: [{
-          id: h,
+          id: m,
           analyticsId: e.body.analytics_id,
           totalResults: e.body.total_results,
           messages: e.body.messages,
@@ -184,12 +184,12 @@ let E = {
     }, () => {
       a.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
-        ids: [h]
+        ids: [m]
       })
     }, e => {
       a.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
-        ids: [h],
+        ids: [m],
         error: e
       })
     })

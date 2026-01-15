@@ -34,22 +34,22 @@ function S(e) {
     allowFetch: a = true,
     includeEmbeddedApps: o,
     includeNonEmbeddedApps: s
-  } = e, l = "channel" === t.type ? t.channel : true, u = (0, p.Hs)(l, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, f.em)(t, u, a), _ = (0, f.PL)(u, a), m = r.useCallback(e => {
+  } = e, l = "channel" === t.type ? t.channel : true, u = (0, p.Hs)(l, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, f.em)(t, u, a), _ = (0, f.PL)(u, a), h = r.useCallback(e => {
     let t = e.descriptor.application;
     return null != t && (!!(o && (0, y.ye)(t)) || null != t && s && !(0, y.ye)(t) && (!n || Object.keys(e.commands).length > 0))
-  }, [o, s, n]), h = [], g = new Set;
+  }, [o, s, n]), m = [], g = new Set;
   if (null != d.result)
     for (let e of Object.values(d.result.sections)) {
       let t = e.descriptor.application;
-      null != t && m(e) && (h.push(t), g.add(t.id))
+      null != t && h(e) && (m.push(t), g.add(t.id))
     }
   if (null != _.result)
     for (let e of Object.values(_.result.sections)) {
       let t = e.descriptor.application;
-      null != t && !g.has(t.id) && m(e) && h.push(t)
+      null != t && !g.has(t.id) && h(e) && m.push(t)
     }
-  return s && i && h.push(y.Wx), {
-    apps: h,
+  return s && i && m.push(y.Wx), {
+    apps: m,
     loading: (null == d ? true : d.fetchState.fetching) === true || (null == _ ? true : _.fetchState.fetching) === true
   }
 }
@@ -109,7 +109,7 @@ function T(e) {
 }
 
 function C(e) {
-  return [A(e), N(e), P(e), R(e)]
+  return [A(e), N(e), P(e), w(e)]
 }
 
 function A(e) {
@@ -128,7 +128,7 @@ function P(e) {
   }
 }
 
-function R(e) {
+function w(e) {
   return t => {
     var n, r;
     let i = null == (n = (0, y.jD)(t)) ? true : n.toLocaleLowerCase();
@@ -136,9 +136,9 @@ function R(e) {
   }
 }
 
-function w(e, t) {
-  let n = m.Z.getScoreWithoutLoadingLatest(e.id);
-  return m.Z.getScoreWithoutLoadingLatest(t.id) - n
+function R(e, t) {
+  let n = h.Z.getScoreWithoutLoadingLatest(e.id);
+  return h.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
 function D(e, t) {
@@ -286,9 +286,9 @@ function V(e) {
     includeBuiltIn: true,
     includeEmbeddedApps: c,
     includeNonEmbeddedApps: l
-  }), m = (0, u.Z)({
+  }), h = (0, u.Z)({
     guildId: "channel" === t.type ? t.channel.guild_id : null
-  }), h = r.useMemo(() => s ? (0, E.N)(d, {
+  }), m = r.useMemo(() => s ? (0, E.N)(d, {
     limit: i,
     filterPredicates: [x(t)],
     bucketPredicates: L(n),
@@ -296,9 +296,9 @@ function V(e) {
       channel: "channel" === t.type ? t.channel : true
     })
   }) : [], [s, d, i, t, n]), g = r.useMemo(() => {
-    if (0 === h.length) return [];
+    if (0 === m.length) return [];
     let e = new Map(_.map(e => [e.id, e]));
-    return a().compact(h.map(t => {
+    return a().compact(m.map(t => {
       var n;
       let r = e.get(t.applicationId);
       if (null == r) return null;
@@ -309,7 +309,7 @@ function V(e) {
         section: i
       }
     }))
-  }, [_, h, f]), b = r.useMemo(() => {
+  }, [_, m, f]), b = r.useMemo(() => {
     let e = [];
     if (c) {
       let t = new Set(_.map(e => {
@@ -318,7 +318,7 @@ function V(e) {
         } = e;
         return t
       }));
-      e.push(..._), e.push(...m.filter(e => {
+      e.push(..._), e.push(...h.filter(e => {
         let {
           application: {
             id: n
@@ -336,9 +336,9 @@ function V(e) {
       limit: o,
       filterPredicates: [T(t)],
       bucketPredicates: C(n),
-      sortComparers: [w, D]
+      sortComparers: [R, D]
     })
-  }, [l, c, o, t, n, _, m]), y = g.length > 0, O = b.length > 0, A = !y && !O;
+  }, [l, c, o, t, n, _, h]), y = g.length > 0, O = b.length > 0, A = !y && !O;
   return {
     commandResults: g,
     hasCommandResults: y,
@@ -364,7 +364,7 @@ function H(e) {
     _ = r.useRef(f);
   _.current = f;
   let {
-    fetchState: m,
+    fetchState: h,
     totalPages: E
   } = (0, l.cj)([g.Z], () => {
     var e, t;
@@ -393,7 +393,7 @@ function H(e) {
       })) ? true : e.totalPages) ? t : 0
     }
   }, [n, d, f, u]), y = r.useMemo(() => Array.from({
-    length: m === g.M.FETCHED || m === g.M.ERROR ? f : f - 1
+    length: h === g.M.FETCHED || h === g.M.ERROR ? f : f - 1
   }, (e, t) => {
     var r, i;
     return null != (i = null == (r = g.Z.getSearchResults({
@@ -407,16 +407,16 @@ function H(e) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true,
       source: s.F.APP_LAUNCHER
     })) ? true : r.results) ? i : []
-  }), [m, d, n, f, u]), O = r.useCallback(() => {
+  }), [h, d, n, f, u]), O = r.useCallback(() => {
     let e = y.length;
-    m === g.M.FETCHED && e === _.current && e > 0 && e < E && e < a && y[e - 1].length > 0 && (_.current++, p(e => e + 1))
-  }, [m, a, y, E]), S = r.useCallback(e => {
+    h === g.M.FETCHED && e === _.current && e > 0 && e < E && e < a && y[e - 1].length > 0 && (_.current++, p(e => e + 1))
+  }, [h, a, y, E]), S = r.useCallback(e => {
     let {
       query: t,
       page: n,
       guildId: r
     } = e;
-    h.yC({
+    m.yC({
       query: t,
       guildId: r,
       options: {
@@ -439,7 +439,7 @@ function H(e) {
   }, [n, d, S, f, i]), r.useEffect(() => {
     p(1)
   }, [d, n]), {
-    fetchState: m,
+    fetchState: h,
     applicationResults: y.flat(),
     fetchNextPage: O
   }

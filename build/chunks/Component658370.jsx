@@ -35,16 +35,16 @@ let g = e => {
     intervalType: null == T ? true : T.interval,
     intervalCount: null == T ? true : T.interval_count
   }), N = (0, l._)({
-    defaultResponse: m.intl.string(m.t["8x0jKT"]),
-    onNonTier2Subscriber: m.intl.string(m.t.IJI7yk),
+    defaultResponse: h.intl.string(h.t["8x0jKT"]),
+    onNonTier2Subscriber: h.intl.string(h.t.IJI7yk),
     onTier2TrialOffer: A,
     onTier0TrialOffer: A,
-    onDiscountOffer: m.intl.formatToPlainString(m.t.bkQ4bH, {
+    onDiscountOffer: h.intl.formatToPlainString(h.t.bkQ4bH, {
       percent: null == C ? true : C.discount.amount
     })
-  }), P = (0, f._)(S), R = e => (null == e ? true : e.hideOnHoverComponent) !== true;
+  }), P = (0, f._)(S), w = e => (null == e ? true : e.hideOnHoverComponent) !== true;
   return (0, r.jsxs)("div", {
-    className: a()(h.cardDescription, null == P || null == (t = P.description) ? true : t.className),
+    className: a()(m.cardDescription, null == P || null == (t = P.description) ? true : t.className),
     children: [(0, r.jsx)(p.Z, {
       title: n,
       cardVariantStyleInfo: P,
@@ -60,7 +60,7 @@ let g = e => {
         textOverride: N
       },
       showGradient: true
-    }), 0 !== y.length && R(null == P ? true : P.descriptionCta) && null != v && (0, r.jsx)(o.zx, {
+    }), 0 !== y.length && w(null == P ? true : P.descriptionCta) && null != v && (0, r.jsx)(o.zx, {
       "data-migration-pending": true,
       className: g,
       onClick: v,

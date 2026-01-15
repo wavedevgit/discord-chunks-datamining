@@ -66,13 +66,13 @@ let I = Chunk473749.forwardRef(function(e, t) {
     channelId: a
   } = e, {
     tooltipsWithKeybinds: y
-  } = m.n.useConfig({
+  } = h.n.useConfig({
     location: "ChannelAppLauncherButton"
   }), v = (0, l.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === n && p.Z.activeChannelId() === a), {
     Component: I,
     events: T,
     play: C
-  } = (0, c.w)(), A = i.useContext(h.ZP);
+  } = (0, c.w)(), A = i.useContext(m.ZP);
   i.useEffect(() => {
     let e = () => {
       T.onMouseEnter()

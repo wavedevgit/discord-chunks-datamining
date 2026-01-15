@@ -85,13 +85,13 @@ function _(e) {
   let u = p(t, {
     utm_source: "discord.gg"
   });
-  return (0, r.jsx)(h, l({
+  return (0, r.jsx)(m, l({
     src: u,
     ref: o
   }, a))
 }
 
-function m(e) {
+function h(e) {
   var {
     src: t,
     autoMute: n
@@ -101,11 +101,11 @@ function m(e) {
     auto_play: "1",
     mute: n ? "1" : true
   });
-  return (0, r.jsx)(h, l({
+  return (0, r.jsx)(m, l({
     src: a
   }, i))
 }
-let h = Chunk473749.forwardRef(function(e, t) {
+let m = Chunk473749.forwardRef(function(e, t) {
   var {
     allowFullScreen: n
   } = e, i = c(e, ["allowFullScreen"]);
@@ -128,10 +128,10 @@ var g = function(e) {
 function E(e) {
   switch (e.provider) {
     case "YouTube":
-      return (0, r.jsx)(m, l({}, e));
+      return (0, r.jsx)(h, l({}, e));
     case "TikTok":
       return (0, r.jsx)(_, l({}, e));
     default:
-      return (0, r.jsx)(h, l({}, e))
+      return (0, r.jsx)(m, l({}, e))
   }
 }

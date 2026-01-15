@@ -28,17 +28,17 @@ class p extends Chunk473749.PureComponent {
         error: f,
         working: p,
         transitionState: _,
-        validPhone: m,
-        layerContext: h
+        validPhone: h,
+        layerContext: m
       } = this.props,
       {
         phone: g
       } = this.state,
       E = [];
-    return m ? e = u.intl.string(u.t["4qMI6A"]) : (e = u.intl.string(u.t.Vp9je2), t = (0, r.jsx)(s.Text, {
+    return h ? e = u.intl.string(u.t["4qMI6A"]) : (e = u.intl.string(u.t.Vp9je2), t = (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: u.intl.format(u.t["3BTmqX"], {})
-    })), m ? (n = (0, r.jsx)(s.gNt, {
+    })), h ? (n = (0, r.jsx)(s.gNt, {
       label: u.intl.string(u.t.Xclkxp),
       hideLabel: true,
       errorMessage: null != f ? f : true,
@@ -56,14 +56,14 @@ class p extends Chunk473749.PureComponent {
       className: d.field,
       onChange: this.handlePhoneChange,
       submitting: p,
-      layerContext: h
+      layerContext: m
     }), E = [{
       text: u.intl.string(u.t.TXNS7S),
       disabled: "" === g,
       loading: p,
       onClick: this.handleAddPhone
-    }]), i = m ? u.intl.string(u.t.Xclkxp) : u.intl.string(u.t.uR76s6), (0, r.jsx)(o.Modal, {
-      size: m ? "sm" : "md",
+    }]), i = h ? u.intl.string(u.t.Xclkxp) : u.intl.string(u.t.uR76s6), (0, r.jsx)(o.Modal, {
+      size: h ? "sm" : "md",
       title: i,
       subtitle: e,
       actions: E,

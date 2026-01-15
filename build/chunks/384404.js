@@ -63,7 +63,7 @@ var Chunk131522 = require("./131522.js"),
       var n = e.currentContent,
         i = e.decorator;
       return new t(new p(r({}, e, {
-        treeMap: h(n, i),
+        treeMap: m(n, i),
         directionMap: s.getDirectionMap(n)
       })))
     }, t.set = function(e, n) {
@@ -74,7 +74,7 @@ var Chunk131522 = require("./131522.js"),
         var a = n.currentContent || e.getCurrentContent();
         if (i !== r) {
           var o, s = t.get("treeMap");
-          o = i && r ? E(a, a.getBlockMap(), s, i, r) : h(a, i), t.merge({
+          o = i && r ? E(a, a.getBlockMap(), s, i, r) : m(a, i), t.merge({
             decorator: i,
             treeMap: o,
             nativelyRenderedContent: null
@@ -135,9 +135,9 @@ var Chunk131522 = require("./131522.js"),
     }, e.getDirectionMap = function() {
       return this.getImmutable().get("directionMap")
     }, t.acceptSelection = function(e, t) {
-      return m(e, t, false)
+      return h(e, t, false)
     }, t.forceSelection = function(e, t) {
-      return t.getHasFocus() || (t = t.set("hasFocus", true)), m(e, t, true)
+      return t.getHasFocus() || (t = t.set("hasFocus", true)), h(e, t, true)
     }, t.moveSelectionToEnd = function(e) {
       var n = e.getCurrentContent().getLastBlock(),
         r = n.getKey(),
@@ -223,7 +223,7 @@ var Chunk131522 = require("./131522.js"),
     }, t
   }();
 
-function m(e, t, n) {
+function h(e, t, n) {
   return _.set(e, {
     selection: t,
     forceSelection: n,
@@ -232,7 +232,7 @@ function m(e, t, n) {
   })
 }
 
-function h(e, t) {
+function m(e, t) {
   return e.getBlockMap().map(function(n) {
     return a.generate(e, n, t)
   }).toOrderedMap()

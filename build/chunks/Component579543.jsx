@@ -21,28 +21,28 @@ function u(e) {
     message: f,
     onView: p,
     partyStatusElement: _,
-    presenceActivity: m,
-    guildId: h
-  } = e, g = !(0, s.Z)(m, f, n.id), E = (0, o.dQ)(n.name, null == (t = f.activity) ? true : t.type, g), b = i.useMemo(() => {
-    if (null != m) return () => (0, a.aG)(m)
-  }, [m]);
+    presenceActivity: h,
+    guildId: m
+  } = e, g = !(0, s.Z)(h, f, n.id), E = (0, o.dQ)(n.name, null == (t = f.activity) ? true : t.type, g), b = i.useMemo(() => {
+    if (null != h) return () => (0, a.aG)(h)
+  }, [h]);
   return g ? (0, r.jsx)(l.Z, {
     application: n,
     message: f,
     header: E,
     onClickContent: b,
     onView: p,
-    guildId: h
+    guildId: m
   }) : (0, r.jsx)(c.Z, {
     application: n,
     message: f,
     header: E,
-    presenceActivity: m,
+    presenceActivity: h,
     hideParty: d,
     partyStatusElement: _,
     currentUserPresenceActivity: u,
     onClickContent: b,
     onView: p,
-    guildId: h
+    guildId: m
   })
 }

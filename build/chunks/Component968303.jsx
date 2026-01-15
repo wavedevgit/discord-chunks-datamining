@@ -16,7 +16,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk295907 = require("./295907.js"),
   Chunk923416 = require("./923416.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +32,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ let v = {
     return (0, a.jsx)(f.P, {
       innerRef: t,
       tabIndex: null == r ? false : 0,
-      className: l()(m.header, n),
+      className: l()(h.header, n),
       onClick: r,
       "aria-expanded": o,
       "aria-controls": s,
@@ -100,7 +100,7 @@ let v = {
       children: (0, a.jsx)(p.x, {
         variant: "eyebrow",
         color: "none",
-        className: m.headerText,
+        className: h.headerText,
         children: i
       })
     })
@@ -111,7 +111,7 @@ function I(e) {
     style: t
   } = e;
   return (0, a.jsx)("div", {
-    className: m.separator,
+    className: h.separator,
     style: t
   })
 }
@@ -189,15 +189,15 @@ class N extends(r = Chunk473749.Component) {
       clickableInnerRef: d,
       look: p,
       disableItemStyles: _
-    } = this.props, h = this.props["aria-label"], g = r === n;
+    } = this.props, m = this.props["aria-label"], g = r === n;
     return (0, a.jsx)(f.P, {
       className: l()(t, {
-        [m.item]: !_,
-        [m.brand]: "brand" === p,
-        [m.selected]: null == i && g,
-        [m.themed]: "grey" === p,
-        [m.disabled]: null == i && s,
-        [m.destructive]: "destructive" === o
+        [h.item]: !_,
+        [h.brand]: "brand" === p,
+        [h.selected]: null == i && g,
+        [h.themed]: "grey" === p,
+        [h.disabled]: null == i && s,
+        [h.destructive]: "destructive" === o
       }),
       style: this.getStyle(),
       role: "tab",
@@ -211,17 +211,17 @@ class N extends(r = Chunk473749.Component) {
       onMouseUp: null != i ? this.handleMouseUp : true,
       onMouseDown: this.handleMouseDown,
       onContextMenu: c,
-      "aria-label": h,
+      "aria-label": m,
       innerRef: d,
       ref: u,
       children: e
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), m(this, "state", {
       hover: false,
       active: false
-    }), h(this, "handleClick", e => {
+    }), m(this, "handleClick", e => {
       let {
         disabled: t,
         onClick: n,
@@ -229,22 +229,22 @@ class N extends(r = Chunk473749.Component) {
         onItemSelect: i
       } = this.props;
       t || (null != n ? n(e) : null != i && i(r))
-    }), h(this, "handleMouseDown", () => {
+    }), m(this, "handleMouseDown", () => {
       let {
         color: e
       } = this.props;
       null != e && this.setState({
         active: true
       })
-    }), h(this, "handleMouseUp", () => {
+    }), m(this, "handleMouseUp", () => {
       this.setState({
         active: false
       })
-    }), h(this, "handleMouseOver", () => {
+    }), m(this, "handleMouseOver", () => {
       this.setState({
         hover: true
       })
-    }), h(this, "handleMouseOut", () => {
+    }), m(this, "handleMouseOut", () => {
       this.setState({
         hover: false,
         active: false
@@ -252,7 +252,7 @@ class N extends(r = Chunk473749.Component) {
     })
   }
 }
-h(N, "defaultProps", {
+m(N, "defaultProps", {
   disabled: false,
   look: "grey",
   disableItemStyles: false
@@ -279,7 +279,7 @@ class P extends(i = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "tabBarRef", o.createRef()), h(this, "focusManager", (0, c.E)({
+    super(...e), m(this, "tabBarRef", o.createRef()), m(this, "focusManager", (0, c.E)({
       getFocusableElements: () => {
         let e = this.tabBarRef.current;
         return null != e ? Array.from(e.querySelectorAll('[role="tab"][aria-disabled="false"]')) : []
@@ -288,7 +288,7 @@ class P extends(i = Chunk473749.Component) {
         var e;
         return null == (e = this.tabBarRef.current) ? true : e.ownerDocument.activeElement
       }
-    })), h(this, "renderChildren", e => {
+    })), m(this, "renderChildren", e => {
       let {
         selectedItem: t,
         onItemSelect: n,
@@ -301,7 +301,7 @@ class P extends(i = Chunk473749.Component) {
         itemType: r,
         look: i
       }) : null
-    }), h(this, "getNodeForKeydownEvent", async e => {
+    }), m(this, "getNodeForKeydownEvent", async e => {
       let {
         orientation: t = "horizontal"
       } = this.props, n = "vertical" === t ? _.vn.ARROW_UP : _.vn.ARROW_LEFT, r = "vertical" === t ? _.vn.ARROW_DOWN : _.vn.ARROW_RIGHT;
@@ -316,10 +316,10 @@ class P extends(i = Chunk473749.Component) {
           return this.focusManager.getLastFocusableElement()
       }
       return null
-    }), h(this, "handleKeyDown", async e => {
+    }), m(this, "handleKeyDown", async e => {
       let t = await this.getNodeForKeydownEvent(e);
       null != t && (e.preventDefault(), t.focus())
     })
   }
 }
-h(P, "Header", S), h(P, "Item", N), h(P, "Separator", I), h(P, "Panel", T)
+m(P, "Header", S), m(P, "Item", N), m(P, "Separator", I), m(P, "Panel", T)

@@ -17,10 +17,10 @@ require("./445392.js");
 var Chunk783097 = require("./783097.js"),
   Chunk701488 = require("./701488.js"),
   Chunk689079 = require("./689079.js");
-let m = {
+let h = {
     commandTypes: [Chunk911969.yU.CHAT, Chunk911969.yU.PRIMARY_ENTRY_POINT]
   },
-  h = {
+  m = {
     placeholderCount: 0,
     limit: Chunk689079.tn,
     includeFrecency: true
@@ -37,8 +37,8 @@ function g(e) {
     loading: o
   } = l.wi({
     context: t,
-    filters: m,
-    options: h,
+    filters: h,
+    options: m,
     allowFetch: r
   });
   return {
@@ -58,17 +58,17 @@ function E(e) {
     context: n,
     onlyActivityApps: s,
     includeAuthorizedAppsAndFetch: l
-  } = e, m = (0, a.e7)([d.default], () => d.default.getFetchState());
+  } = e, h = (0, a.e7)([d.default], () => d.default.getFetchState());
   r.useEffect(() => {
-    l && m === d.FetchState.NOT_FETCHED && o.Z.fetch()
-  }, [l, m]);
-  let h = (0, a.Wu)([d.default], () => l ? d.default.getNewestTokens().filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS)) : []),
+    l && h === d.FetchState.NOT_FETCHED && o.Z.fetch()
+  }, [l, h]);
+  let m = (0, a.Wu)([d.default], () => l ? d.default.getNewestTokens().filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS)) : []),
     g = t.filter(e => e.id !== _.bi.FRECENCY && e.id !== _.bi.BUILT_IN),
     E = "contextless" === n.type,
     b = r.useMemo(() => {
       let e = [];
       return E && e.push(p.jT), e
     }, [E]),
-    y = (0, u.h)(g, h);
+    y = (0, u.h)(g, m);
   return r.useMemo(() => s ? y.filter(e => null != e.application && (0, f.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !b.includes(e.id)) : y.filter(e => !b.includes(e.id)), [s, y, n, b])
 }

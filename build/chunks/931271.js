@@ -23,12 +23,12 @@ function p(e) {
     currentUserPresenceActivity: l,
     currentUserId: p,
     message: _,
-    application: m,
-    isEmbeddedApplication: h,
+    application: h,
+    isEmbeddedApplication: m,
     isFrameApplication: g,
     isGameLaunchable: E
   } = e;
-  if (_.author.id === p || !(0, u.Z)(n, _, m.id)) return {
+  if (_.author.id === p || !(0, u.Z)(n, _, h.id)) return {
     canJoin: false,
     remoteJoinPlatform: null
   };
@@ -37,7 +37,7 @@ function p(e) {
     canJoin: false,
     remoteJoinPlatform: null
   };
-  if (h && g) return {
+  if (m && g) return {
     canJoin: true,
     remoteJoinPlatform: null
   };

@@ -53,9 +53,9 @@ var d = function(e) {
 let f = {},
   p = {},
   _ = new Set,
-  m = {};
+  h = {};
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t
   } = e;
@@ -74,7 +74,7 @@ function g(e) {
     [t.id]: 1
   });
   let n = Date.now();
-  m = u(l({}, m), {
+  h = u(l({}, h), {
     [t.id]: n
   }), _.has(t.id) && (_.delete(t.id), _ = new Set(_))
 }
@@ -116,12 +116,12 @@ class b extends(r = Chunk442837.ZP.Store) {
     return 0 === this.getApplicationFetchState(e)
   }
   getApplicationLastFetchTime(e) {
-    if (null != e) return m[e]
+    if (null != e) return h[e]
   }
 }
 s(b, "displayName", "ApplicationDirectoryApplicationsStore");
 let y = new b(Chunk570140.Z, {
-  APPLICATION_DIRECTORY_FETCH_APPLICATION: h,
+  APPLICATION_DIRECTORY_FETCH_APPLICATION: m,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: g,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE: E
 })

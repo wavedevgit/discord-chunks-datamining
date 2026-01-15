@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -89,16 +89,16 @@ let y = e => {
     backgroundStyle: a = "always",
     children: d,
     icon: p,
-    name: h,
+    name: m,
     ariaLabel: g,
     className: y,
     style: O,
     to: v,
     onClick: S,
     selected: I = false
-  } = e, T = m(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]);
+  } = e, T = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]);
   let C = (0, s.k6)();
-  null == p && null != h && (n = E(t = (0, c.Zg)(h)));
+  null == p && null != m && (n = E(t = (0, c.Zg)(m)));
   let A = i.useCallback(e => {
       if (null == v);
       else if ("string" == typeof v) C.push(v);
@@ -124,7 +124,7 @@ let y = e => {
       enabled: false
     },
     children: [(0, r.jsx)(l.nn4, {
-      children: null != g && "" !== g ? g : null != h ? h : ""
+      children: null != g && "" !== g ? g : null != m ? m : ""
     }), null != t ? (0, r.jsx)("div", {
       className: o()(b(a, false), u.acronym),
       "aria-hidden": true,

@@ -25,8 +25,8 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m() {
-  return (m = Object.assign || function(e) {
+function h() {
+  return (h = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -35,7 +35,7 @@ function m() {
   }).apply(this, arguments)
 }
 
-function h(e) {
+function m(e) {
   if (null == e) throw TypeError("Cannot destructure " + e);
   return e
 }
@@ -144,7 +144,7 @@ function T(e) {
 }
 
 function C(e) {
-  var t = m({}, h(e));
+  var t = h({}, m(e));
   let [n, a] = i.useState("intro"), [s, l] = i.useState(false), [c, u] = i.useState(false), d = [{
     stepKey: "intro",
     modalProps: {
@@ -436,7 +436,7 @@ let A = {
           text: null != (t = d.subtitle) ? t : "Default subtitle",
           leadingIcon: o.VL1
         } : d.subtitle,
-        m = i.useMemo(() => 0 === l ? {
+        h = i.useMemo(() => 0 === l ? {
           type: "image",
           src: f
         } : 1 === l ? {
@@ -472,7 +472,7 @@ let A = {
           onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.ExpressiveModal, b(g({}, e, d), {
             title: d.title,
             subtitle: _,
-            graphic: m,
+            graphic: h,
             actions: [{
               variant: "secondary",
               text: "Cancel",
@@ -685,7 +685,7 @@ let A = {
     name: "LayerModal",
     id: "layer-modal",
     component: function(e) {
-      var t = m({}, h(e));
+      var t = h({}, m(e));
       return (0, r.jsxs)(u.Kqy, {
         gap: 16,
         align: "center",
@@ -711,7 +711,7 @@ let A = {
     name: "MultiStepModal [Alpha]",
     id: "multi-step-modal",
     component: function(e) {
-      var t = m({}, h(e));
+      var t = h({}, m(e));
       return (0, r.jsxs)(u.Kqy, {
         gap: 16,
         align: "center",

@@ -2,7 +2,7 @@
 /** chunk id: 771934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ac: () => h,
+  Ac: () => m,
   DI: () => I,
   HV: () => y,
   J4: () => f,
@@ -17,7 +17,7 @@ require.d(exports, {
   hf: () => C,
   u7: () => T,
   uf: () => v,
-  w8: () => m,
+  w8: () => h,
   z3: () => b,
   zW: () => u
 });
@@ -55,12 +55,12 @@ let c = "manual",
       control_name: "remove_color"
     })
   },
-  m = () => {
+  h = () => {
     a.default.track(o.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_selected"
     })
   },
-  h = () => {
+  m = () => {
     c = "manual", a.default.track(o.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "gradient_direction_input"
     })

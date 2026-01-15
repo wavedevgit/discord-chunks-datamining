@@ -19,24 +19,24 @@ let d = e => {
     size: d,
     avatarDecorationOverride: f,
     onlyAnimateOnHoverOrFocus: p = false
-  } = e, [_, m] = r.useState(false), {
-    canAnimate: h
+  } = e, [_, h] = r.useState(false), {
+    canAnimate: m
   } = (0, a.j)(_, p), g = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null), E = (0, c.Z)((0, o.Ys)({
     userValue: null == t ? true : t.avatarDecoration,
     guildValue: null == g ? true : g.avatarDecoration,
     guildId: n
   })), b = r.useMemo(() => (0, l.NZ)({
     avatarDecoration: true !== f ? f : E,
-    canAnimate: h,
+    canAnimate: m,
     size: d
-  }), [f, E, h, d]);
+  }), [f, E, m, d]);
   return {
     avatarPlaceholderSrc: u,
     avatarDecorationSrc: b,
-    isAvatarDecorationAnimating: h,
+    isAvatarDecorationAnimating: m,
     eventHandlers: {
-      onMouseEnter: r.useCallback(() => m(true), []),
-      onMouseLeave: r.useCallback(() => m(false), [])
+      onMouseEnter: r.useCallback(() => h(true), []),
+      onMouseLeave: r.useCallback(() => h(false), [])
     }
   }
 }

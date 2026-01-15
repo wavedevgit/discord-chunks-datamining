@@ -85,7 +85,7 @@ function T(e) {
     isEditor: b,
     renderCTAButtons: O
   } = e, [I] = (0, a.Wu)([f.Z], () => [f.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
-  (0, d.Z)(T, m.h1.CUSTOM_APP_ICONS);
+  (0, d.Z)(T, h.h1.CUSTOM_APP_ICONS);
   let C = (0, c.Dt)(),
     A = (0, o.Jb)({
       orientation: "horizontal",
@@ -95,7 +95,7 @@ function T(e) {
       ref: N
     } = A,
     P = S(A, ["ref"]),
-    R = e => {
+    w = e => {
       l.Z.dispatch({
         type: "APP_ICON_UPDATED",
         id: e
@@ -117,14 +117,14 @@ function T(e) {
               children: [(0, r.jsx)(s.Heading, {
                 className: g.titleText,
                 variant: "text-lg/medium",
-                children: h.intl.string(h.t.NThqTw)
+                children: m.intl.string(m.t.NThqTw)
               }), (0, r.jsx)(u.Z, {
                 className: g.premiumIcon
               })]
             }), (0, r.jsx)(s.Heading, {
               variant: "text-sm/normal",
               className: E.subtext,
-              children: h.intl.string(h.t.IgENJo)
+              children: m.intl.string(m.t.IgENJo)
             })]
           }), null == O ? true : O()]
         }), (0, r.jsx)(s.Kqy, {
@@ -142,7 +142,7 @@ function T(e) {
           }).map((e, t) => (0, r.jsx)(p.Z, {
             icon: e,
             isSelected: I === e.id,
-            onSelect: e => R(e),
+            onSelect: e => w(e),
             disabled: n,
             tabIndex: 0 !== t || n ? true : 0,
             locked: false

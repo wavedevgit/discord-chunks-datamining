@@ -2,8 +2,8 @@
 /** chunk id: 619915, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QN: () => h,
-  ZP: () => m,
+  QN: () => m,
+  ZP: () => h,
   gb: () => g,
   uF: () => E
 }), require("./388685.js"), require("./539854.js");
@@ -55,11 +55,11 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   return g((0, i.Wu)([c.ZP], () => null != e && null != e.id && "" !== e.id ? c.ZP.getEmbeddedActivitiesForChannel(e.id) : c.i6), t)
 }
 
-function h(e) {
+function m(e) {
   let t = g((0, i.e7)([c.ZP], () => null != e ? c.ZP.getEmbeddedActivitiesForGuild(e) : c.i6));
   return r.useMemo(() => {
     let e = new Map;

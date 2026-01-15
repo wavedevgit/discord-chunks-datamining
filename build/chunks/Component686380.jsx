@@ -91,11 +91,11 @@ let M = "???",
   };
 class U extends Chunk473749.Component {
   getSystemMessageHeader() {
-    let e = m.default.getUser(this.trialOffer.user_id);
+    let e = h.default.getUser(this.trialOffer.user_id);
     if (this.isSender) return P.intl.format(P.t["4/EMxl"], {
       receiver: null == e ? true : e.username
     });
-    let t = m.default.getUser(this.trialOffer.referrer_id),
+    let t = h.default.getUser(this.trialOffer.referrer_id),
       n = (null == t ? true : t.username) !== true ? t.username : "";
     return P.intl.format(P.t.yisueA, {
       sender: n,
@@ -103,9 +103,9 @@ class U extends Chunk473749.Component {
     })
   }
   getTitleText() {
-    let e = m.default.getUser(this.trialOffer.user_id),
+    let e = h.default.getUser(this.trialOffer.user_id),
       t = null != e ? e.username : M,
-      n = m.default.getUser(this.trialOffer.referrer_id),
+      n = h.default.getUser(this.trialOffer.referrer_id),
       r = null != n ? n.username : M;
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? P.intl.formatToPlainString(P.t["Mptau/"], {
       username: t
@@ -125,7 +125,7 @@ class U extends Chunk473749.Component {
     let e = this.currentUser.id !== this.trialOffer.user_id || (0, y.I5)(this.currentUser) || !this.currentUser.verified || (0, C.B)(this.trialOffer),
       t = this.renderExpirationDate();
     return (0, r.jsxs)("div", {
-      className: R.buttonContainer,
+      className: w.buttonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
@@ -143,7 +143,7 @@ class U extends Chunk473749.Component {
           }
         })
       }), (0, r.jsx)("div", {
-        className: R.metadata,
+        className: w.metadata,
         children: t
       })]
     })
@@ -164,14 +164,14 @@ class U extends Chunk473749.Component {
   }
   renderMedia() {
     return (0, r.jsx)("div", {
-      className: R.referral
+      className: w.referral
     })
   }
   render() {
     let e = () => {
-        let e = m.default.getUser(this.trialOffer.user_id),
+        let e = h.default.getUser(this.trialOffer.user_id),
           t = null != e ? e.username : M,
-          n = m.default.getUser(this.trialOffer.referrer_id),
+          n = h.default.getUser(this.trialOffer.referrer_id),
           r = null != n ? n.username : M;
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
@@ -224,33 +224,33 @@ class U extends Chunk473749.Component {
       }),
       i = this.isSender ? n : t,
       a = (0, r.jsx)(c.Eep, {
-        src: w.Z,
+        src: R.Z,
         height: 84,
         width: 144,
-        className: R.imgDMEmbedXP
+        className: w.imgDMEmbedXP
       }),
       {
         headerText: o,
         bodyText: s
       } = e();
     return (0, r.jsxs)(p.Z, {
-      className: R.systemMessageContainerDMEmbedXP,
+      className: w.systemMessageContainerDMEmbedXP,
       iconNode: (0, r.jsx)(c.SrA, {
         size: "md",
         color: "currentColor"
       }),
-      iconContainerClassName: R.systemMessageContainerIcon,
+      iconContainerClassName: w.systemMessageContainerIcon,
       compact: this.compact,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         children: this.getSystemMessageHeader()
       }), (0, r.jsxs)("div", {
-        className: R.containerDMEmbedXP,
+        className: w.containerDMEmbedXP,
         children: [a, (0, r.jsxs)("div", {
-          className: R.contentDMEmbedXP,
+          className: w.contentDMEmbedXP,
           children: [(0, r.jsxs)("div", {
-            className: R.contentTextDMEmbedXP,
+            className: w.contentTextDMEmbedXP,
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",
               color: "text-strong",
@@ -261,7 +261,7 @@ class U extends Chunk473749.Component {
               children: s
             })]
           }), (0, r.jsx)("div", {
-            className: R.buttonContainerDMEmbedXP,
+            className: w.buttonContainerDMEmbedXP,
             children: i
           })]
         })]
@@ -286,9 +286,9 @@ function G(e) {
     trialOffer: n ? O.Z.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && O.Z.isResolving(t),
     referralsSent: O.Z.getRecipientStatus()
-  }), [n, t]), p = m.default.getCurrentUser(), _ = (0, l.e7)([m.default], () => null != a && (0, y.I5)(true !== p && a.user_id === p.id ? p : m.default.getUser(a.user_id))), g = (0, l.e7)([h.Z], () => {
+  }), [n, t]), p = h.default.getCurrentUser(), _ = (0, l.e7)([h.default], () => null != a && (0, y.I5)(true !== p && a.user_id === p.id ? p : h.default.getUser(a.user_id))), g = (0, l.e7)([m.Z], () => {
     var e;
-    return _ ? null == (e = h.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
+    return _ ? null == (e = m.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
     analyticsLocations: E
   } = (0, f.ZP)(d.Z.SHARE_NITRO_EMBED);
@@ -303,9 +303,9 @@ function G(e) {
     analyticsLocations: E,
     compact: i
   }) : (0, r.jsx)("div", {
-    className: R.invalidWrapper,
+    className: w.invalidWrapper,
     children: (0, r.jsx)("div", {
-      className: R.invalid
+      className: w.invalid
     })
   })
 }

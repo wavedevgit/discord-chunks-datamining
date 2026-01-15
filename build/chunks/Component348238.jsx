@@ -9,8 +9,8 @@ require.d(exports, {
   Nk: () => D,
   R9: () => j,
   RN: () => Z,
-  Wl: () => w,
-  XO: () => R,
+  Wl: () => R,
+  XO: () => w,
   Xn: () => W,
   bb: () => H,
   qo: () => U,
@@ -90,7 +90,7 @@ function N(e, t, n) {
 
 function P(e, t, n) {
   return i.useCallback(r => {
-    let i = m.default.getUser(e);
+    let i = h.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
     let a = "@".concat(b.ZP.getUserTag(i, {
@@ -104,12 +104,12 @@ function P(e, t, n) {
   }, [e, t, n])
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   let i = N("usernameProfile", n, r);
   return P(e.author.id, t.id, i)
 }
 
-function w(e, t, n, r) {
+function R(e, t, n, r) {
   let i = N("referencedUsernameProfile", n, r);
   return P(null == e ? true : e.author.id, t.id, i)
 }
@@ -147,8 +147,8 @@ function U(e, t, a, l) {
     id: c
   } = t, {
     id: d,
-    flags: m
-  } = e, g = (0, o.yE)(m, S.iLy.EPHEMERAL), b = (0, u.bp)();
+    flags: h
+  } = e, g = (0, o.yE)(h, S.iLy.EPHEMERAL), b = (0, u.bp)();
   return i.useCallback((e, t) => {
     if (g) return;
     if (!E.isPlatformEmbedded) {
@@ -160,7 +160,7 @@ function U(e, t, a, l) {
     let i = f.Z.getChannel(c),
       o = _.Z.getMessage(c, d),
       u = p.Z.isEditing(c, d);
-    null == i || null == o || u || (h.default.track(S.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    null == i || null == o || u || (m.default.track(S.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: d,
       channel: c,
       location: "right_click"
@@ -187,7 +187,7 @@ function U(e, t, a, l) {
 
 function G(e, t) {
   return i.useCallback(n => {
-    let r = m.default.getUser(e),
+    let r = h.default.getUser(e),
       i = f.Z.getChannel(t);
     null != r && null != i && (n.stopPropagation(), (0, y.Pv)(n, r, i))
   }, [e, t])
@@ -195,7 +195,7 @@ function G(e, t) {
 
 function Z(e, t, n) {
   return i.useCallback(r => {
-    let i = m.default.getUser(e),
+    let i = h.default.getUser(e),
       a = f.Z.getChannel(t);
     null != i && null != a && (r.stopPropagation(), (0, y._j)(r, {
       user: i,
@@ -207,7 +207,7 @@ function Z(e, t, n) {
 
 function F(e, t) {
   return i.useCallback(n => {
-    let r = m.default.getUser(e),
+    let r = h.default.getUser(e),
       i = f.Z.getChannel(t);
     null != r && null != i && (n.stopPropagation(), (0, y.xS)(n, r, i.guild_id))
   }, [e, t])

@@ -50,7 +50,7 @@ let v = e => {
     })
   },
   S = () => {
-    let e = (0, h.ZM)(),
+    let e = (0, m.ZM)(),
       t = () => {
         (0, d.default)(), s.Z.openPrivateChannel({
           recipientIds: e
@@ -93,8 +93,8 @@ let v = e => {
     })
   },
   I = () => {
-    let e = (0, m.cz)(),
-      t = (0, m.$r)(),
+    let e = (0, h.cz)(),
+      t = (0, h.$r)(),
       {
         handleTabChange: n
       } = (0, _.Z)();
@@ -131,7 +131,7 @@ let v = e => {
   },
   T = () => {
     let e = (0, c.U)();
-    return 0 === (0, h.ZM)().length ? null : (0, r.jsx)("div", {
+    return 0 === (0, m.ZM)().length ? null : (0, r.jsx)("div", {
       className: O.container,
       children: e ? (0, r.jsx)(S, {}) : (0, r.jsx)(I, {})
     })

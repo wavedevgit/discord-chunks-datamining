@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
 let y = 4;
 
 function O(e) {
-  let t = (0, s.e7)([m.default], () => h.ZP.canUseSoundboardEverywhere(m.default.getCurrentUser())),
+  let t = (0, s.e7)([h.default], () => m.ZP.canUseSoundboardEverywhere(h.default.getCurrentUser())),
     n = (0, s.e7)([u.Z], () => u.Z.getSoundsForGuild(g.X8)),
     r = (0, s.Wu)([p.Z], () => p.Z.getGuildIds()),
     a = i.useMemo(() => _.Z.can(E.Pl.USE_EXTERNAL_SOUNDS, e), [e]);

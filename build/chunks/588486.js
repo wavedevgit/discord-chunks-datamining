@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   dR: () => d,
-  qK: () => m
+  qK: () => h
 }), require("./980754.js"), require("./388685.js"), require("./953529.js"), require("./539854.js"), require("./415506.js");
 var Chunk230367 = require("./230367.js"),
   Chunk320215 = require("./320215.js"),
@@ -27,10 +27,10 @@ var Chunk230367 = require("./230367.js"),
   _ = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.HOLDOUT = 1] = "HOLDOUT", e
   }({}),
-  m = function(e) {
+  h = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CONTROL = 1] = "CONTROL", e[e.TREATMENT = 2] = "TREATMENT", e[e.OVERRIDE = 3] = "OVERRIDE", e
   }({}),
-  h = function(e) {
+  m = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e
   }({}),
   g = function(e) {
@@ -463,7 +463,7 @@ class b extends Chunk495852.C {
       no: 5,
       name: "type",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Variation.Type", m]
+      T: () => ["discord_protos.discord_experimentation.v1.Variation.Type", h]
     }, {
       no: 6,
       name: "configuration",
@@ -529,7 +529,7 @@ class O extends Chunk495852.C {
       no: 3,
       name: "type",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Bucket.Type", h]
+      T: () => ["discord_protos.discord_experimentation.v1.Bucket.Type", m]
     }])
   }
 }

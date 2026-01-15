@@ -17,7 +17,7 @@ var Chunk588225 = require("./588225.js"),
   Chunk981166 = require("./981166.js"),
   Chunk624641 = require("./624641.js"),
   Chunk227399 = require("./227399.js");
-let h = {
+let m = {
     ltr: "ArrowRight",
     rtl: "ArrowLeft"
   },
@@ -33,11 +33,11 @@ function E(e, t, n) {
     isVirtualized: C
   } = e, {
     direction: A
-  } = (0, m.j)(), {
+  } = (0, h.j)(), {
     onAction: N,
     linkBehavior: P,
-    keyboardNavigationBehavior: R,
-    shouldSelectOnPressUp: w
+    keyboardNavigationBehavior: w,
+    shouldSelectOnPressUp: R
   } = r.Co.get(t), D = (0, i.mp)(), x = (0, f.useRef)(null), L = () => {
     var e;
     null === n.current || (null == x.current || T.key === x.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
@@ -66,7 +66,7 @@ function E(e, t, n) {
     key: T.key,
     ref: n,
     isVirtualized: C,
-    shouldSelectOnPressUp: e.shouldSelectOnPressUp || w,
+    shouldSelectOnPressUp: e.shouldSelectOnPressUp || R,
     onAction: N || (null == (E = T.props) ? true : E.onAction) ? (0, a.t)(null == (y = T.props) ? true : y.onAction, N ? () => N(T.key) : true) : true,
     focus: L,
     linkBehavior: P
@@ -74,7 +74,7 @@ function E(e, t, n) {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.QL)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
-      if (e.key === h[A] && t.selectionManager.focusedKey === T.key && M && !t.expandedKeys.has(T.key)) {
+      if (e.key === m[A] && t.selectionManager.focusedKey === T.key && M && !t.expandedKeys.has(T.key)) {
         t.toggleKey(T.key), e.stopPropagation();
         return
       } else if (e.key === g[A] && t.selectionManager.focusedKey === T.key && M && t.expandedKeys.has(T.key)) {
@@ -84,7 +84,7 @@ function E(e, t, n) {
     }
     switch (e.key) {
       case "ArrowLeft":
-        if ("arrow" === R) {
+        if ("arrow" === w) {
           let t = "rtl" === A ? r.nextNode() : r.previousNode();
           if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, o.G)(t, {
             containingElement: (0, s.r)(n.current)
@@ -102,7 +102,7 @@ function E(e, t, n) {
         }
         break;
       case "ArrowRight":
-        if ("arrow" === R) {
+        if ("arrow" === w) {
           let t = "rtl" === A ? r.previousNode() : r.nextNode();
           if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, o.G)(t, {
             containingElement: (0, s.r)(n.current)
@@ -132,7 +132,7 @@ function E(e, t, n) {
       return
     }
   }, B = e => {
-    if (e.currentTarget.contains(e.target) && n.current && document.activeElement && "Tab" === e.key && "tab" === R) {
+    if (e.currentTarget.contains(e.target) && n.current && document.activeElement && "Tab" === e.key && "tab" === w) {
       let t = (0, d.QL)(n.current, {
         tabbable: true
       });

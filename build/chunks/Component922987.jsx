@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   HR: () => M,
-  PR: () => w,
+  PR: () => R,
   default: () => U,
   sF: () => D
 });
@@ -70,7 +70,7 @@ function P(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = e => {
+let w = e => {
     let {
       handleClose: t,
       handleStepChange: n
@@ -83,7 +83,7 @@ let R = e => {
       onClose: t
     }) : null
   },
-  w = e => {
+  R = e => {
     let {
       handleClose: t
     } = e, {
@@ -103,11 +103,11 @@ let R = e => {
       analyticsLocations: d,
       analyticsSourceLocation: p
     } = e, {
-      selectedSkuId: m,
-      setPurchaseState: h
+      selectedSkuId: h,
+      setPurchaseState: m
     } = (0, f.JL)(), {
       product: g
-    } = (0, c.T)(m), E = (0, y.cR)(), b = (0, i.useRef)(E), {
+    } = (0, c.T)(h), E = (0, y.cR)(), b = (0, i.useRef)(E), {
       emitOrbCheckoutPaymentFlowEvent: O
     } = (0, v.S)({
       skuId: n,
@@ -122,13 +122,13 @@ let R = e => {
     }, [a, O]);
     let S = (0, i.useCallback)(() => {
         b.current = E, O(I.rMx.PAYMENT_FLOW_COMPLETED), r(() => {
-          h(_.A.COMPLETED), O(I.rMx.PAYMENT_FLOW_SUCCEEDED)
+          m(_.A.COMPLETED), O(I.rMx.PAYMENT_FLOW_SUCCEEDED)
         })
-      }, [r, h, E, O]),
+      }, [r, m, E, O]),
       C = null != (t = b.current) ? t : E,
       A = null != l ? l.orbPriceAmount : null;
     return {
-      isStepLoading: null == m || null == g,
+      isStepLoading: null == h || null == g,
       showCollectiblesDiscountWarning: (0, u.N3)({
         skuId: n,
         isOrbsPurchase: true
@@ -137,7 +137,7 @@ let R = e => {
       orbPriceAmount: A,
       orbBalanceToDisplay: C,
       onClickCheckout: S,
-      selectedSkuId: m,
+      selectedSkuId: h,
       product: g
     }
   },
@@ -154,15 +154,15 @@ let R = e => {
       analyticsSourceLocation: u,
       rentalDuration: d
     } = (0, O.CH)();
-    w({
+    R({
       handleClose: t
     });
     let {
       orbPriceAmount: f,
       orbBalanceToDisplay: p,
       onClickCheckout: _,
-      isStepLoading: m,
-      showCollectiblesDiscountWarning: h,
+      isStepLoading: h,
+      showCollectiblesDiscountWarning: m,
       errorMessage: b
     } = D({
       skuId: n,
@@ -172,7 +172,7 @@ let R = e => {
       analyticsLocations: c,
       analyticsSourceLocation: u
     });
-    return m ? (0, r.jsx)(a.$jN, {
+    return h ? (0, r.jsx)(a.$jN, {
       type: a.$jN.Type.WANDERING_CUBES
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g.Z, {}), (0, r.jsxs)(E.C3, {
@@ -182,7 +182,7 @@ let R = e => {
           children: [null != b ? (0, r.jsx)(a.M14, {
             type: "critical",
             children: b
-          }) : null, h && (0, r.jsx)(S.f4, {})]
+          }) : null, m && (0, r.jsx)(S.f4, {})]
         }), (0, r.jsx)(S.A3, {
           skuId: n,
           orbPriceAmount: f,
@@ -202,7 +202,7 @@ let R = e => {
   },
   L = [{
     key: null,
-    renderStep: e => (0, r.jsx)(R, A({}, e))
+    renderStep: e => (0, r.jsx)(w, A({}, e))
   }, {
     key: Chunk409813.h8.REVIEW,
     renderStep: e => (0, r.jsx)(x, A({}, e)),
@@ -210,7 +210,7 @@ let R = e => {
       useBreadcrumbLabel: () => T.intl.string(T.t.QBnNHq)
     }
   }],
-  j = (e, t, n) => (0, r.jsx)(m.Z, {
+  j = (e, t, n) => (0, r.jsx)(h.Z, {
     isOrbCheckout: true,
     step: n,
     onClose: () => t(false)
@@ -262,7 +262,7 @@ let R = e => {
       orbProductContext: a,
       onClose: i.onClose
     });
-    return (0, r.jsx)(h.PaymentModal, {
+    return (0, r.jsx)(m.PaymentModal, {
       applicationId: (0, b.Nb)(t),
       transitionState: i.transitionState,
       analyticsDataOverride: s,

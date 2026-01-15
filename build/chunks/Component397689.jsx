@@ -75,21 +75,21 @@ function v(e) {
     onUpsellClick: A
   } = e, N = i.useRef(null), {
     analyticsLocations: P,
-    newestAnalyticsLocation: R
-  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? true : a.canUsePremiumProfileCustomization) || f, x = (0, r.jsx)(O, {
+    newestAnalyticsLocation: w
+  } = (0, c.ZP)(), R = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? true : a.canUsePremiumProfileCustomization) || f, x = (0, r.jsx)(O, {
     src: g,
     avatarDecoration: b,
     imageClassName: o()(I, {
-      [h.overlay]: !T
+      [m.overlay]: !T
     }),
     size: l.EFr.SIZE_80,
     "aria-label": t.username,
-    status: w,
+    status: R,
     statusTooltip: false,
     statusBackdropColor: null != S ? (0, l.QFD)(v) : true
   });
   return T ? (0, r.jsx)("div", {
-    className: h.avatar,
+    className: m.avatar,
     children: x
   }) : D ? (0, r.jsx)(l.yRy, {
     targetElementRef: N,
@@ -98,12 +98,12 @@ function v(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(p.Z, {
-        className: h.menu,
+        className: m.menu,
         onClose: t,
         onChangeAvatar: () => (0, _.$r)({
-          uploadType: m.pC.AVATAR,
+          uploadType: h.pC.AVATAR,
           guildId: null == n ? true : n.id,
-          analyticsSource: R,
+          analyticsSource: w,
           isTryItOut: C
         }),
         onChangeAvatarDecoration: () => {
@@ -116,10 +116,10 @@ function v(e) {
     },
     children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
       innerRef: N,
-      className: o()(h.avatar, h.clickable),
+      className: o()(m.avatar, m.clickable),
       children: [x, (0, r.jsx)(l.vdY, {
         size: "custom",
-        className: h.overlayIcon,
+        className: m.overlayIcon,
         width: 20,
         height: 20,
         color: "white"
@@ -127,10 +127,10 @@ function v(e) {
     }))
   }) : (0, r.jsxs)(l.P3F, {
     onClick: A,
-    className: o()(h.avatar, h.clickable),
+    className: o()(m.avatar, m.clickable),
     children: [x, (0, r.jsx)(l.SrA, {
       size: "custom",
-      className: h.overlayIcon,
+      className: m.overlayIcon,
       width: 20,
       height: 20,
       color: "white"

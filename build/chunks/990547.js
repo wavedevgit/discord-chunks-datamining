@@ -15,8 +15,8 @@ require.r(exports), require.d(exports, {
   getOS: () => f.Ij,
   getSuperProperties: () => f.SL,
   getSuperPropertiesBase64: () => f.pJ,
-  isThrottled: () => m,
-  trackMaker: () => h
+  isThrottled: () => h,
+  trackMaker: () => m
 }), require("./388685.js");
 var Chunk348327 = require("./348327.js"),
   i = require.n(Chunk348327),
@@ -31,10 +31,10 @@ var Chunk348327 = require("./348327.js"),
 let p = {},
   _ = {};
 
-function m(e) {
+function h(e) {
   return null != p[e] && p[e] > Date.now()
 }
-let h = e => {
+let m = e => {
   let {
     analyticEventConfigs: t,
     dispatcher: r,
@@ -52,7 +52,7 @@ let h = e => {
     if (null != c)
       if ("throttlePeriod" in c) {
         let t = [e, ...c.throttleKeys(s)].join("_");
-        if (m(t) || "number" == typeof c.throttlePercent && Math.random() > c.throttlePercent) return Promise.resolve();
+        if (h(t) || "number" == typeof c.throttlePercent && Math.random() > c.throttlePercent) return Promise.resolve();
         if (c.deduplicate) {
           let e = _[t];
           if (i()(e, s)) return Promise.resolve();

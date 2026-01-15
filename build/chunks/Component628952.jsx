@@ -75,10 +75,10 @@ let A = e => {
     hideProfilePreview: N = false
   } = e, {
     product: P
-  } = (0, h.T)(t, true), {
-    giftRecipient: R,
-    giftRecipientError: w
-  } = (0, f.wD)(), D = (0, u.e7)([m.default], () => m.default.getCurrentUser()), x = (0, y.kd)(P), L = i.useRef(null);
+  } = (0, m.T)(t, true), {
+    giftRecipient: w,
+    giftRecipientError: R
+  } = (0, f.wD)(), D = (0, u.e7)([h.default], () => h.default.getCurrentUser()), x = (0, y.kd)(P), L = i.useRef(null);
   if (null == P) return null;
   let [j] = P.items;
   l()(null != j, "Product item should not be empty");
@@ -95,7 +95,7 @@ let A = e => {
           return null
       }
     },
-    k = null != R && R.id !== (null == D ? true : D.id) && P.type !== c.Z.BUNDLE && j.type !== c.Z.NAMEPLATE && !N,
+    k = null != w && w.id !== (null == D ? true : D.id) && P.type !== c.Z.BUNDLE && j.type !== c.Z.NAMEPLATE && !N,
     U = () => {
       null != t && null != s && s(t)
     };
@@ -107,10 +107,10 @@ let A = e => {
         label: O.intl.string(O.t.PpoJzt),
         children: k && (0, r.jsx)(d.yRy, {
           targetElementRef: L,
-          preload: () => (0, _.Z)(R.id, R.getAvatarURL(null, 80)),
+          preload: () => (0, _.Z)(w.id, w.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(p.Z, C(I({}, e), {
-            user: R,
-            pendingAvatar: R.getAvatarURL(null, (0, d.dcp)(d.EFr.SIZE_80)),
+            user: w,
+            pendingAvatar: w.getAvatarURL(null, (0, d.dcp)(d.EFr.SIZE_80)),
             pendingAvatarDecoration: (0, g.M)(j) ? j : null,
             pendingProfileEffect: (0, E.H)(j) ? j : null,
             canUsePremiumCustomization: true,
@@ -128,14 +128,14 @@ let A = e => {
               children: O.intl.string(O.t["2GnJQL"])
             })
           }))
-        }, R.id)
+        }, w.id)
       })
     }), (0, r.jsxs)(d.P3F, {
       tag: "div",
       onClick: U,
       className: o()(v.previewContainer, {
-        [v.previewContainerSelected]: n && null == w,
-        [v.previewContainerError]: n && null != w
+        [v.previewContainerSelected]: n && null == R,
+        [v.previewContainerError]: n && null != R
       }),
       children: [(0, r.jsxs)("div", {
         className: v.giftInfoContainer,
@@ -156,12 +156,12 @@ let A = e => {
           variant: "text-md/semibold",
           children: a
         })]
-      }), n && null != w && (0, r.jsx)("div", {
+      }), n && null != R && (0, r.jsx)("div", {
         className: v.recipientError,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-critical",
-          children: w
+          children: R
         })
       })]
     })]

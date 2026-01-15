@@ -41,6 +41,6 @@ let g = (0, Chunk509613.wf)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
   O = (0, Chunk509613.m7)(Chunk313789.n.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["+o1pDZ"]),
     getLegacySearchKey: () => (0, r.Gl)("ContentAndSocialPanel") ? true : d.s6.CONTENT_SOCIAL,
-    icon: Chunk657707.lZ8,
+    icon: Chunk657707.ShieldUserIcon,
     buildLayout: () => (0, r.Gl)("ContentAndSocialPanel") ? [A] : [g]
   })

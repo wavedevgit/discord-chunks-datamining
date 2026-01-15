@@ -36,8 +36,8 @@ function _(e) {
   }
   return e
 }
-let m = 16,
-  h = .05;
+let h = 16,
+  m = .05;
 
 function g(e) {
   var t, n;
@@ -47,7 +47,7 @@ function g(e) {
     channelId: d
   } = e, p = i.useRef(c), _ = (0, o.Z)({
     editorHeight: r
-  }), g = (0, u.Z)(), E = (0, a.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), b = null != (t = null == _ ? true : _.left) ? t : 0, y = (null != (n = null == _ ? true : _.top) ? n : 0) - m, O = 0 === c.length, v = i.useMemo(() => Math.random() < h, [O]);
+  }), g = (0, u.Z)(), E = (0, a.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), b = null != (t = null == _ ? true : _.left) ? t : 0, y = (null != (n = null == _ ? true : _.top) ? n : 0) - h, O = 0 === c.length, v = i.useMemo(() => Math.random() < m, [O]);
   return i.useEffect(() => {
     0 !== c.length && c !== p.current && E && (g.fire(b, y, v ? {
       sprite: f.vv

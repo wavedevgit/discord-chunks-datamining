@@ -30,18 +30,18 @@ let O = e => {
     sourceDetails: i
   } = e, a = ":".concat(t.name, ":");
   switch (r) {
-    case m.n_.ACTIVITY:
+    case h.n_.ACTIVITY:
       let o = b.intl.formatToPlainString(b.t.EUFEJt, {
           username: n
         }),
         s = "\n> ".concat(i);
       return null != i ? "".concat(p.jd).concat(o, "*").concat(s, "\n").concat(a) : "".concat(p.jd).concat(o, "*\n").concat(a);
-    case m.n_.AVATAR:
+    case h.n_.AVATAR:
       let l = b.intl.formatToPlainString(b.t.E6H15q, {
         username: n
       });
       return "".concat(p.jd).concat(l, "*\n").concat(a);
-    case m.n_.STATUS:
+    case h.n_.STATUS:
       let u = b.intl.formatToPlainString(b.t.XPQgL2, {
           username: n
         }),
@@ -67,10 +67,10 @@ function v(e) {
     setInteractionToast: C
   } = (0, f.Xo)(), {
     theme: A
-  } = (0, _.z)(), N = (0, a.e7)([l.Z], () => l.Z.theme), P = (0, o.wj)(N) ? !(0, o.wj)(A) : (0, o.wj)(A), R = i.useRef(null);
+  } = (0, _.z)(), N = (0, a.e7)([l.Z], () => l.Z.theme), P = (0, o.wj)(N) ? !(0, o.wj)(A) : (0, o.wj)(A), w = i.useRef(null);
   i.useEffect(() => {
-    null == v || v(null == R ? true : R.current)
-  }, [R, v]), i.useEffect(() => {
+    null == v || v(null == w ? true : w.current)
+  }, [w, v]), i.useEffect(() => {
     let e = e => {
       e.key === E.vn.ESCAPE && (e.stopPropagation(), T())
     };
@@ -78,11 +78,11 @@ function v(e) {
       document.removeEventListener("keydown", e)
     }
   }, [I, T]);
-  let w = async e => {
+  let R = async e => {
     if (null == e) return;
-    p === m.n_.AVATAR ? S({
+    p === h.n_.AVATAR ? S({
       action: "SEND_REACT_AVATAR"
-    }) : p === m.n_.STATUS ? S({
+    }) : p === h.n_.STATUS ? S({
       action: "SEND_REACT_CUSTOM_STATUS"
     }) : S({
       action: "SEND_REACT_ACTIVITY"
@@ -104,7 +104,7 @@ function v(e) {
         entry: c
       })
     } catch (e) {}
-    C(m.P.REACT)
+    C(h.P.REACT)
   };
   return (0, r.jsx)(s.Z, {
     headerClassName: P ? y.noBoxShadowMargin : true,
@@ -115,8 +115,8 @@ function v(e) {
         emoji: t,
         willClose: n
       } = e;
-      await w(t), n && (T(), null == I || I())
+      await R(t), n && (T(), null == I || I())
     },
-    pickerIntention: h.Hz.PROFILE
+    pickerIntention: m.Hz.PROFILE
   })
 }

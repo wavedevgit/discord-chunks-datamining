@@ -14,9 +14,9 @@ require.d(exports, {
   Y: () => G,
   cD: () => v,
   ki: () => y,
-  kn: () => w,
+  kn: () => R,
   tM: () => E,
-  tc: () => R,
+  tc: () => w,
   xl: () => L,
   yw: () => U
 }), require("./388685.js");
@@ -79,7 +79,7 @@ function S(e, t, n) {
 }
 
 function I(e) {
-  let t = (0, o.e7)([p.Z], () => p.Z.getChannel(m.default.castMessageIdAsChannelId(e.id)), [e]);
+  let t = (0, o.e7)([p.Z], () => p.Z.getChannel(h.default.castMessageIdAsChannelId(e.id)), [e]);
   return T((0, o.e7)([_.Z], () => _.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
 }
 
@@ -88,10 +88,10 @@ function T(e, t, n) {
 }
 
 function C(e) {
-  return (0, o.cj)([h.Z, _.Z], () => {
-    let t = h.Z.getActiveJoinedThreadsForParent(e.guild_id, e.id),
-      n = h.Z.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id),
-      r = h.Z.getActiveUnjoinedThreadsForParent(e.guild_id, e.id),
+  return (0, o.cj)([m.Z, _.Z], () => {
+    let t = m.Z.getActiveJoinedThreadsForParent(e.guild_id, e.id),
+      n = m.Z.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id),
+      r = m.Z.getActiveUnjoinedThreadsForParent(e.guild_id, e.id),
       a = i()(n).some(e => _.Z.can(g.Plq.VIEW_CHANNEL, e.channel)),
       o = i()(t).some(e => !(e.channel.id in n) && _.Z.can(g.Plq.VIEW_CHANNEL, e.channel)),
       s = i()(r).some(e => _.Z.can(g.Plq.VIEW_CHANNEL, e));
@@ -118,13 +118,13 @@ function P(e, t, n) {
   return null != e && !!e.isThread() && ((null == (r = e.threadMetadata) ? true : r.locked) ? n : t)
 }
 
-function R(e) {
+function w(e) {
   let t = (0, o.e7)([_.Z], () => N(e, _.Z)),
     n = M(e);
   return P(e, t, n)
 }
 
-function w(e) {
+function R(e) {
   let t = N(e, _.Z),
     n = k(e);
   return P(e, t, n)

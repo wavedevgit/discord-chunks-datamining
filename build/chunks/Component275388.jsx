@@ -49,14 +49,14 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 require("./602091.js");
-let h = "orb-checkout-payment-modal-key",
-  g = () => (0, a.VXO)(h);
+let m = "orb-checkout-payment-modal-key",
+  g = () => (0, a.VXO)(m);
 
 function E() {
   o.Z.wait(() => {
@@ -77,24 +77,24 @@ let b = e => {
       enabled: p
     } = (0, s.VL)({
       location: "openOrbCheckoutPaymentModal"
-    }), _ = (0, i.Z)(), m = false, g = () => {
-      m || (0, u._)(d.rMx.PAYMENT_FLOW_CANCELED, {
+    }), _ = (0, i.Z)(), h = false, g = () => {
+      h || (0, u._)(d.rMx.PAYMENT_FLOW_CANCELED, {
         loadId: _,
         skuId: t,
         analyticsLocations: r,
         analyticsSourceLocation: o
-      }), (0, a.Mr3)(h)
+      }), (0, a.Mr3)(m)
     }, E = {
       loadId: _,
       skuId: t,
       onCheckoutSuccess: e => {
-        m || n(e), m = true
+        h || n(e), h = true
       },
       analyticsLocations: r,
       analyticsSourceLocation: o,
       onCloseCallback: () => {
         (0, c.x)({
-          checkoutSucceeded: m
+          checkoutSucceeded: h
         }), null == l || l()
       },
       rentalDuration: f,
@@ -124,7 +124,7 @@ let b = e => {
       },
       openModalOptions: {
         onCloseCallback: o,
-        modalKey: h,
+        modalKey: m,
         onCloseRequest: c
       }
     })
@@ -144,7 +144,7 @@ let b = e => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 922987));
-      return n => (0, r.jsx)(e, m(p({
+      return n => (0, r.jsx)(e, h(p({
         skuId: t,
         analyticsLocations: l,
         analyticsSourceLocation: c,
@@ -156,6 +156,6 @@ let b = e => {
     }, {
       onCloseCallback: u,
       onCloseRequest: o,
-      modalKey: h
+      modalKey: m
     })
   }

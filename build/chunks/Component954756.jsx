@@ -23,13 +23,13 @@ function g() {
   let e = (0, a.e7)([f.Z], () => f.Z.getIsSubmitDisabled()),
     t = (0, a.e7)([f.Z], () => f.Z.getErrors()),
     [n, g] = i.useState(false),
-    E = i.useMemo(() => (null == t ? true : t.message) != null ? null == t ? true : t.message : Object.keys(null != t ? t : {}).length > 0 ? h.intl.string(h.t["84MExs"]) : null, [t]),
+    E = i.useMemo(() => (null == t ? true : t.message) != null ? null == t ? true : t.message : Object.keys(null != t ? t : {}).length > 0 ? m.intl.string(m.t["84MExs"]) : null, [t]),
     b = i.useCallback(async () => {
       var e, t, n, r, i;
       g(true);
       let a = f.Z.getAllPending(),
         o = (0, c.ED)(a),
-        h = (0, c.g9)(a),
+        m = (0, c.g9)(a),
         E = (0, c.jE)(a),
         b = true;
       if (Object.keys(o).length > 0) {
@@ -41,10 +41,10 @@ function g() {
             avatarId: o.avatarId,
             avatarAssetOrigin: null == (n = a.pendingAvatar) ? true : n.assetOrigin
           }), (0, s.si)()
-        } else(null == r || null == (e = r.body) ? true : e.username) != null && (0, m.P)()
+        } else(null == r || null == (e = r.body) ? true : e.username) != null && (0, h.P)()
       }
-      if (Object.keys(h).length > 0) {
-        let e = await (0, u.Z)(h);
+      if (Object.keys(m).length > 0) {
+        let e = await (0, u.Z)(m);
         b = b && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, u.pG)() : (0, _.r)()
       }
       if (true !== a.pendingLegacyUsernameDisabled) try {

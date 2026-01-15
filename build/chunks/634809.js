@@ -22,7 +22,7 @@ function s(e) {
     allowDuplicateSelectionEvents: s,
     selectionBehavior: c = "toggle",
     disabledBehavior: u = "all"
-  } = e, d = (0, a.useRef)(false), [, f] = (0, a.useState)(false), p = (0, a.useRef)(null), _ = (0, a.useRef)(null), [, m] = (0, a.useState)(null), h = (0, a.useMemo)(() => l(e.selectedKeys), [e.selectedKeys]), g = (0, a.useMemo)(() => l(e.defaultSelectedKeys, new(0, r.Y)), [e.defaultSelectedKeys]), [E, b] = (0, i.z)(h, g, e.onSelectionChange), y = (0, a.useMemo)(() => e.disabledKeys ? new Set(e.disabledKeys) : new Set, [e.disabledKeys]), [O, v] = (0, a.useState)(c);
+  } = e, d = (0, a.useRef)(false), [, f] = (0, a.useState)(false), p = (0, a.useRef)(null), _ = (0, a.useRef)(null), [, h] = (0, a.useState)(null), m = (0, a.useMemo)(() => l(e.selectedKeys), [e.selectedKeys]), g = (0, a.useMemo)(() => l(e.defaultSelectedKeys, new(0, r.Y)), [e.defaultSelectedKeys]), [E, b] = (0, i.z)(m, g, e.onSelectionChange), y = (0, a.useMemo)(() => e.disabledKeys ? new Set(e.disabledKeys) : new Set, [e.disabledKeys]), [O, v] = (0, a.useState)(c);
   "replace" === c && "toggle" === O && "object" == typeof E && 0 === E.size && v("replace");
   let S = (0, a.useRef)(c);
   return (0, a.useEffect)(() => {
@@ -45,7 +45,7 @@ function s(e) {
       return _.current
     },
     setFocusedKey(e, t = "first") {
-      p.current = e, _.current = t, m(e)
+      p.current = e, _.current = t, h(e)
     },
     selectedKeys: E,
     setSelectedKeys(e) {

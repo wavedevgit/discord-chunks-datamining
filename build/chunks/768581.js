@@ -6,14 +6,14 @@ require.d(exports, {
   $k: () => O,
   CA: () => D,
   F8: () => $,
-  JM: () => w,
+  JM: () => R,
   NZ: () => j,
   ZP: () => et,
   aN: () => L,
   ay: () => X,
   ff: () => E,
   gT: () => A,
-  ov: () => R,
+  ov: () => w,
   pK: () => b,
   pU: () => en,
   rI: () => K,
@@ -40,7 +40,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,10 +95,10 @@ function C(e) {
   if (null == i || null == a) return;
   let _ = null != f ? f : u && Q(a) ? er(p) : "jpg";
   u && X(a) && (_ = "mp4");
-  let m = window.GLOBAL_ENV.CDN_HOST;
-  if (null != m ? ("jpg" === _ && (_ = p ? "webp" : "png"), t = "https://".concat(m, "/").concat(r, "/").concat(i, "/").concat(a, ".").concat(_)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(i, a, _), "mp4" === _) return t;
-  let h = {};
-  return null != s && (h.size = (0, l.oO)(s * (0, l.x_)())), null != d && (h.keep_aspect_ratio = d), c && (h.quality = "lossless"), "webp" === _ && u && Q(a) && (h.animated = true), t + "?".concat(o.stringify(h))
+  let h = window.GLOBAL_ENV.CDN_HOST;
+  if (null != h ? ("jpg" === _ && (_ = p ? "webp" : "png"), t = "https://".concat(h, "/").concat(r, "/").concat(i, "/").concat(a, ".").concat(_)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(i, a, _), "mp4" === _) return t;
+  let m = {};
+  return null != s && (m.size = (0, l.oO)(s * (0, l.x_)())), null != d && (m.keep_aspect_ratio = d), c && (m.quality = "lossless"), "webp" === _ && u && Q(a) && (m.animated = true), t + "?".concat(o.stringify(m))
 }
 
 function A(e) {
@@ -156,7 +156,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
     r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : f.IXf,
@@ -165,7 +165,7 @@ function R(e) {
   return null != (t = P(e, n, r, i, a)) ? t : N(e.id, e.discriminator, e.isProvisional)
 }
 
-function w(e) {
+function R(e) {
   let t, {
       guildId: n,
       userId: r,
@@ -191,7 +191,7 @@ function D(e) {
     avatar: n,
     guildId: r
   } = e, i = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null == n ? null : w({
+  return null == n ? null : R({
     userId: t,
     avatar: n,
     guildId: r,
@@ -371,7 +371,7 @@ function Y(e) {
     guildMember: l
   } = e;
   if ((null == i ? true : i.id) != null && null != l && null != l.avatar) {
-    let e = w({
+    let e = R({
       userId: i.id,
       guildId: l.guildId,
       avatar: l.avatar,
@@ -495,10 +495,10 @@ function ee(e) {
   }
 }
 let et = {
-  getUserAvatarURL: R,
+  getUserAvatarURL: w,
   getDefaultAvatarURL: N,
   getGuildMemberAvatarURL: D,
-  getGuildMemberAvatarURLSimple: w,
+  getGuildMemberAvatarURLSimple: R,
   getGuildMemberAvatarSource: x,
   getGuildMemberBannerURL: M,
   getUserBannerURL: L,
@@ -507,7 +507,7 @@ let et = {
     return Q(null == e ? true : e.icon)
   },
   isAnimatedIconHash: Q,
-  getUserAvatarSource: (e, t, n) => ee(R(e, t, n)),
+  getUserAvatarSource: (e, t, n) => ee(w(e, t, n)),
   getGuildIconURL: V,
   getGuildSplashURL: k,
   getGuildSplashSource: U,
@@ -567,7 +567,7 @@ let et = {
     if (!(0, u.isAndroid)() || !e || "number" == typeof n) return n;
     {
       let e = t(false);
-      return "number" != typeof e && e.uri === n.uri ? e : [n, g(m({}, e), {
+      return "number" != typeof e && e.uri === n.uri ? e : [n, g(h({}, e), {
         isForceCached: true
       })]
     }

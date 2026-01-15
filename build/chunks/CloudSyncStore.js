@@ -15,7 +15,7 @@ var o, Chunk442837 = require("./442837.js"),
   Chunk209492 = require("./209492.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,7 +51,7 @@ function b(e) {
     branchId: n
   } = e, a = (0, f.Tu)(t, n);
   return i.delete(a), r[a] = {
-    type: m.TzF.DONE,
+    type: h.TzF.DONE,
     timestamp: Date.now()
   }, true
 }
@@ -71,7 +71,7 @@ function O(e) {
     remote: o
   } = e, s = (0, f.Tu)(t, n);
   r[s] = {
-    type: m.TzF.CONFLICT,
+    type: h.TzF.CONFLICT,
     next: a,
     remote: o
   }, i.delete(s)
@@ -83,7 +83,7 @@ function v(e) {
     branchId: n
   } = e, a = (0, f.Tu)(t, n);
   r[a] = {
-    type: m.TzF.ERROR
+    type: h.TzF.ERROR
   }, i.delete(a)
 }
 class S extends(o = Chunk442837.ZP.Store) {
@@ -98,7 +98,7 @@ class S extends(o = Chunk442837.ZP.Store) {
     return i.has(n)
   }
 }
-h(S, "displayName", "CloudSyncStore");
+m(S, "displayName", "CloudSyncStore");
 let I = new S(Chunk570140.Z, {
   GAME_CLOUD_SYNC_START: E,
   GAME_CLOUD_SYNC_UPDATE: y,

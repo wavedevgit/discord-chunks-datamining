@@ -102,16 +102,16 @@ var Chunk365702 = require("./365702.js"),
           _ || g(false);
           break
         }
-        var m = u.children.map(I),
-          h = new o(r({}, v(u, t), {
+        var h = u.children.map(I),
+          m = new o(r({}, v(u, t), {
             parent: d.getKey(),
-            children: b(m.map(function(e) {
+            children: b(h.map(function(e) {
               return e.key
             })),
             prevSibling: 0 === p ? null : f.get(p - 1),
             nextSibling: p === f.size - 1 ? null : f.get(p + 1)
           }));
-        n = n.set(h.getKey(), h), c = T(c, m, h)
+        n = n.set(m.getKey(), m), c = T(c, h, m)
       }
       return n
     }, O())

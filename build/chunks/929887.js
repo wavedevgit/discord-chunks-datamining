@@ -26,7 +26,7 @@ let u = (0, Chunk473749.createContext)(null),
       "aria-labelledby": n
     }, t), _ = (0, c.useContext)(d);
     f["aria-label"] || f["aria-labelledby"] || e["aria-labelledby"] && (f["aria-labelledby"] = e["aria-labelledby"]);
-    let m = (0, i.aX)({
+    let h = (0, i.aX)({
         defaultClassName: "react-aria-Dialog",
         className: e.className,
         style: e.style,
@@ -35,11 +35,11 @@ let u = (0, Chunk473749.createContext)(null),
           close: (null == _ ? true : _.close) || (() => {})
         }
       }),
-      h = (0, s.z)(e, {
+      m = (0, s.z)(e, {
         global: true
       });
     return c.createElement("section", {
-      ...(0, l.d)(h, m, f),
+      ...(0, l.d)(m, h, f),
       ref: t,
       slot: e.slot || true
     }, c.createElement(i.zt, {
@@ -62,5 +62,5 @@ let u = (0, Chunk473749.createContext)(null),
           }
         }]
       ]
-    }, m.children))
+    }, h.children))
   })

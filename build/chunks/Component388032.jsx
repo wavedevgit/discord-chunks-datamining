@@ -4,11 +4,11 @@
 require.r(exports), require.d(exports, {
   getAvailableLocales: () => c.u5,
   getLanguages: () => c.Vb,
-  getSystemLocale: () => m,
+  getSystemLocale: () => h,
   initialLocale: () => g,
   international: () => u.Z,
   intl: () => E,
-  systemLocale: () => h,
+  systemLocale: () => m,
   t: () => l.k,
   useSyncMessages: () => b
 }), require("./388685.js");
@@ -60,11 +60,11 @@ function _(e, t) {
   }), e
 }
 
-function m(e) {
+function h(e) {
   return [Array.isArray(navigator.languages) ? navigator.languages[0] : null, navigator.language, navigator.browserLanguage, navigator.userLanguage, e].find(e => null != e && "" !== e)
 }
-let h = m("en-US"),
-  g = (0, Chunk424395.YI)(h, "en-US"),
+let m = h("en-US"),
+  g = (0, Chunk424395.YI)(m, "en-US"),
   E = new Chunk354012.IntlManager({
     initialLocale: g,
     defaultLocale: "en-US"

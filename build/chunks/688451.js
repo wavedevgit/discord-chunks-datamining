@@ -66,7 +66,7 @@ function _(e) {
   return e.o || e.t
 }
 
-function m(e) {
+function h(e) {
   if (Array.isArray(e)) return Array.prototype.slice.call(e);
   var t = Q(e);
   delete t[W];
@@ -83,9 +83,9 @@ function m(e) {
   return Object.create(Object.getPrototypeOf(e), t)
 }
 
-function h(e, t) {
+function m(e, t) {
   return true === t && (t = false), E(e) || i(e) || !a(e) || (s(e) > 1 && (e.set = e.add = e.clear = e.delete = g), Object.freeze(e), t && o(e, function(e, t) {
-    return h(t, true)
+    return m(t, true)
   }, true)), e
 }
 
@@ -141,7 +141,7 @@ function A(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = true !== e && e !== n;
-  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (S(t), r(4)), a(e) && (e = N(t, e), t.l || R(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = N(t, n, []), S(t), t.u && t.v(t.u, t.s), e !== H ? e : true
+  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (S(t), r(4)), a(e) && (e = N(t, e), t.l || w(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = N(t, n, []), S(t), t.u && t.v(t.u, t.s), e !== H ? e : true
 }
 
 function N(e, t, n) {
@@ -151,15 +151,15 @@ function N(e, t, n) {
     return P(e, r, t, i, a, n)
   }, true), t;
   if (r.A !== e) return t;
-  if (!r.P) return R(e, r.t, true), r.t;
+  if (!r.P) return w(e, r.t, true), r.t;
   if (!r.I) {
     r.I = true, r.A._--;
-    var i = 4 === r.i || 5 === r.i ? r.o = m(r.k) : r.o,
+    var i = 4 === r.i || 5 === r.i ? r.o = h(r.k) : r.o,
       a = i,
       s = false;
     3 === r.i && (a = new Set(i), i.clear(), s = true), o(a, function(t, a) {
       return P(e, r, i, t, a, n, s)
-    }), R(e, i, false), n && e.u && b("Patches").N(r, n, e.u, e.s)
+    }), w(e, i, false), n && e.u && b("Patches").N(r, n, e.u, e.s)
   }
   return r.o
 }
@@ -172,15 +172,15 @@ function P(e, t, n, r, o, s, c) {
   } else c && n.add(o);
   if (a(o) && !E(o)) {
     if (!e.h.D && e._ < 1) return;
-    N(e, o), t && t.A.l || R(e, o)
+    N(e, o), t && t.A.l || w(e, o)
   }
 }
 
-function R(e, t, n) {
-  true === n && (n = false), !e.l && e.h.D && e.m && h(t, n)
+function w(e, t, n) {
+  true === n && (n = false), !e.l && e.h.D && e.m && m(t, n)
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = e[W];
   return (n ? _(n) : e)[t]
 }
@@ -199,7 +199,7 @@ function x(e) {
 }
 
 function L(e) {
-  e.o || (e.o = m(e.t))
+  e.o || (e.o = h(e.t))
 }
 
 function j(e, t, n) {
@@ -252,7 +252,7 @@ function k(e, t) {
     case 3:
       return Array.from(e)
   }
-  return m(e)
+  return h(e)
 }
 require.d(exports, {
   P2: () => en,
@@ -288,7 +288,7 @@ var U, G, Z = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
         return i ? "value" in i ? i.value : null == (r = i.get) ? true : r.call(e.k) : true
       }(e, n, t);
       var r = n[t];
-      return e.I || !a(r) ? r : r === w(e.t, t) ? (L(e), e.o[t] = j(e.A.h, r, e)) : r
+      return e.I || !a(r) ? r : r === R(e.t, t) ? (L(e), e.o[t] = j(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in _(e)
@@ -300,7 +300,7 @@ var U, G, Z = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       var r = D(_(e), t);
       if (null == r ? true : r.set) return r.set.call(e.k, n), true;
       if (!e.P) {
-        var i = w(_(e), t),
+        var i = R(_(e), t),
           a = null == i ? true : i[W];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = false, true;
         if (d(n, i) && (true !== n || l(e.t, t))) returntrue;
@@ -309,7 +309,7 @@ var U, G, Z = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       return e.o[t] === n && (true !== n || t in e.o) || Number.isNaN(n) && Number.isNaN(e.o[t]) || (e.o[t] = n, e.R[t] = true), true
     },
     deleteProperty: function(e, t) {
-      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
+      return true !== R(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
     },
     getOwnPropertyDescriptor: function(e, t) {
       var n = _(e),
@@ -375,7 +375,7 @@ var ee = new(function() {
           }) : (v(c, i), A(o, c))
         }
         if (!e || "object" != typeof e) {
-          if (true === (o = n(e)) && (o = e), o === H && (o = true), t.D && h(o, true), i) {
+          if (true === (o = n(e)) && (o = e), o === H && (o = true), t.D && m(o, true), i) {
             var f = [],
               p = [];
             b("Patches").M(e, o, f, p), i(f, p)

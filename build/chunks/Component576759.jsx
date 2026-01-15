@@ -34,7 +34,7 @@ function b(e) {
     data: S
   } = (0, u.IX)(n), I = (0, s.q)(S), {
     themeType: T
-  } = (0, _.z)(), C = T === h.l.MODAL || T === h.l.MODAL_V2, A = (0, f.L)(null != (t = null == O ? true : O.application_id) ? t : n), N = I && C && null != S && !A, P = N ? [i.z.CLOUD_PLAY_NEW_BADGE] : [], [R] = (0, d.US)(P);
+  } = (0, _.z)(), C = T === m.l.MODAL || T === m.l.MODAL_V2, A = (0, f.L)(null != (t = null == O ? true : O.application_id) ? t : n), N = I && C && null != S && !A, P = N ? [i.z.CLOUD_PLAY_NEW_BADGE] : [], [w] = (0, d.US)(P);
   return N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       className: E.cloudPlayDivider
@@ -42,14 +42,14 @@ function b(e) {
       className: E.cloudPlaySection,
       children: [(0, r.jsxs)("div", {
         className: E.cloudPlaySectionTextContainer,
-        children: [R === i.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
+        children: [w === i.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
           text: g.intl.string(g.t.y2b7CA),
           color: a.Z.colors.BACKGROUND_BRAND.css
         }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           children: g.intl.string(g.t.IQjdmV)
         })]
-      }), (0, r.jsx)(m.Z, {
+      }), (0, r.jsx)(h.Z, {
         application: S,
         onAction: b,
         onClose: y,

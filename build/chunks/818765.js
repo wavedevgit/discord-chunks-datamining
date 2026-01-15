@@ -2,7 +2,7 @@
 /** chunk id: 818765, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk570140 = require("./570140.js"),
   Chunk317770 = require("./317770.js"),
@@ -16,8 +16,8 @@ var Chunk570140 = require("./570140.js"),
   Chunk843693 = require("./843693.js"),
   Chunk981631 = require("./981631.js");
 let _ = (0, Chunk460181.uk)("poggermode_applause", Chunk474873.Z.getSoundpack()),
-  m = 7,
-  h = 1,
+  h = 7,
+  m = 1,
   g = .1,
   E = 1e3,
   b = false,
@@ -46,7 +46,7 @@ let _ = (0, Chunk460181.uk)("poggermode_applause", Chunk474873.Z.getSoundpack())
   },
   N = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
-      n = l.Z.isConnected() ? g : h;
+      n = l.Z.isConnected() ? g : m;
     O.push([e, t * n]), C()
   };
 class P extends Chunk317770.Z {
@@ -60,7 +60,7 @@ class P extends Chunk317770.Z {
     let {
       state: t
     } = e;
-    t === p.hes.RTC_CONNECTED ? _.volume = g : _.volume = h
+    t === p.hes.RTC_CONNECTED ? _.volume = g : _.volume = m
   }
   handleTypingStop(e) {
     let {
@@ -80,10 +80,10 @@ class P extends Chunk317770.Z {
       r = u.Z.isTyping(t, n),
       i = f.ZP.getUserCombo(n, t),
       a = null != (e = null == i ? true : i.multiplier) ? e : 1;
-    r && a >= m ? S() : I()
+    r && a >= h ? S() : I()
   }
   playAchievementUnlockSound() {
     T() && N("poggermode_achievement_unlock")
   }
 }
-let R = new P
+let w = new P

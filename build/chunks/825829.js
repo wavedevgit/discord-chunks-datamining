@@ -122,12 +122,12 @@ function P(e) {
   if (null != t) return t
 }
 
-function R(e) {
+function w(e) {
   let t = A(e, s.G.QUARANTINE_USER);
   if (null != t) return t
 }
 
-function w(e) {
+function R(e) {
   let t = A(e, s.G.QUARANTINE_USER_ACTION);
   if (null != t) return t
 }
@@ -203,35 +203,35 @@ function k(e, t) {
     r = arguments.length > 3 ? arguments[3] : true,
     i = arguments.length > 4 ? arguments[4] : true,
     l = D(e),
-    c = w(e),
+    c = R(e),
     u = x(e),
-    d = R(e),
+    d = w(e),
     f = P(e),
     p = A(e, s.G.INTERACTION_CALLBACK_TYPE),
-    m = A(e, s.G.APPLICATION_NAME);
+    h = A(e, s.G.APPLICATION_NAME);
   if (null != d) {
     let e = L(l, c, u);
     if (null != e) return e
   }
-  let h = _.Z.can(g.Plq.VIEW_CHANNEL, t),
-    b = j(t, h),
-    y = null != t && h ? n : g.VqG,
+  let m = _.Z.can(g.Plq.VIEW_CHANNEL, t),
+    b = j(t, m),
+    y = null != t && m ? n : g.VqG,
     O = M(e, b, n);
-  return null != O ? O : null != m ? p === o.y.MODAL && null != i ? f !== a.P.BLOCKED ? E.intl.format(E.t["4xL9Sk"], {
-    applicationName: m,
+  return null != O ? O : null != h ? p === o.y.MODAL && null != i ? f !== a.P.BLOCKED ? E.intl.format(E.t["4xL9Sk"], {
+    applicationName: h,
     interactionUserHook: i,
     integrationOwnerHook: r
   }) : E.intl.format(E.t.S3lNIT, {
-    applicationName: m,
+    applicationName: h,
     interactionUserHook: i,
     integrationOwnerHook: r
   }) : f !== a.P.BLOCKED ? E.intl.format(E.t.AXQufN, {
-    applicationName: m,
+    applicationName: h,
     channelName: b,
     channelHook: y,
     integrationOwnerHook: r
   }) : E.intl.format(E.t.s3tjMN, {
-    applicationName: m,
+    applicationName: h,
     channelName: b,
     channelHook: y,
     integrationOwnerHook: r
@@ -288,7 +288,7 @@ function Z(e) {
 function F(e) {
   let t = A(e, s.G.CHANNEL_ID),
     n = A(e, s.G.ALERT_ACTIONS_EXECUTION),
-    r = (0, m.t)(n);
+    r = (0, h.t)(n);
   return {
     content: N(e),
     ruleName: A(e, s.G.RULE_NAME),
@@ -328,11 +328,11 @@ function V(e) {
 function H(e) {
   if (null == e) return E.intl.string(E.t.Gh3A0O);
   switch (e) {
-    case h.$l.LEGITIMATE_ACTIVITY:
+    case m.$l.LEGITIMATE_ACTIVITY:
       return E.intl.string(E.t["riQ+HH"]);
-    case h.$l.DM_SPAM:
+    case m.$l.DM_SPAM:
       return E.intl.string(E.t.j5V0ij);
-    case h.$l.JOIN_RAID:
+    case m.$l.JOIN_RAID:
       return E.intl.string(E.t.qhaRbG);
     default:
       return E.intl.string(E.t.GPg6JM)

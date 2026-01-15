@@ -47,8 +47,8 @@ var a, Chunk50153 = require("./50153.js"),
   A = RegExp("\r", "g"),
   N = RegExp("\n", "g"),
   P = RegExp("^\n", "g"),
-  R = RegExp(T, "g"),
-  w = RegExp("&#13;?", "g"),
+  w = RegExp(T, "g"),
+  R = RegExp("&#13;?", "g"),
   D = RegExp("&#8203;?", "g"),
   x = ["bold", "bolder", "500", "600", "700", "800", "900"],
   L = ["light", "lighter", "normal", "100", "200", "300", "400"],
@@ -180,8 +180,8 @@ var a, Chunk50153 = require("./50153.js"),
           this._addAnchorNode(i, n, t);
           continue
         }
-        var m = t;
-        U.has(a) && (m = m.add(U.get(a))), m = V(i, m), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), m))
+        var h = t;
+        U.has(a) && (h = h.add(U.get(a))), h = V(i, h), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), h))
       }
       return n
     }, t._appendText = function(e, t) {
@@ -213,7 +213,7 @@ var a, Chunk50153 = require("./50153.js"),
         M.forEach(function(e) {
           var t = n.getAttribute(e);
           t && (r[e] = t)
-        }), this.currentEntity = this.entityMap.__create("IMAGE", "IMMUTABLE", r), m("draftjs_fix_paste_for_img") ? "presentation" !== n.getAttribute("role") && this._appendText("\uD83D\uDCF7", t) : this._appendText("\uD83D\uDCF7", t), this.currentEntity = null
+        }), this.currentEntity = this.entityMap.__create("IMAGE", "IMMUTABLE", r), h("draftjs_fix_paste_for_img") ? "presentation" !== n.getAttribute("role") && this._appendText("\uD83D\uDCF7", t) : this._appendText("\uD83D\uDCF7", t), this.currentEntity = null
       }
     }, t._addAnchorNode = function(e, t, n) {
       if (y(e)) {
@@ -263,7 +263,7 @@ var a, Chunk50153 = require("./50153.js"),
 module.exports = function(e) {
   var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : c,
-    r = t(e = e.trim().replace(A, "").replace(R, C).replace(w, "").replace(D, ""));
+    r = t(e = e.trim().replace(A, "").replace(w, C).replace(R, "").replace(D, ""));
   return r ? new Y(G(n), function(e, t) {
     return "li" === e ? "ol" === t ? "ordered-list-item" : "unordered-list-item" : null
   }).addDOMNode(r).getContentBlocks() : null

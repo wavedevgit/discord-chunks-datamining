@@ -65,7 +65,7 @@ let v = l().defaultRules.link,
   };
 
 function I() {
-  m.default.track(h.rMx.PREMIUM_PROMOTION_OPENED, {
+  h.default.track(m.rMx.PREMIUM_PROMOTION_OPENED, {
     location: S
   })
 }
@@ -93,17 +93,17 @@ let C = e => {
           o = i.startsWith("/activities");
         return r = a ? e => {
           I(), (0, _.openUserSettings)(p.n.NITRO_PANEL, {
-            section: h.oAB.PREMIUM
-          }), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
+            section: m.oAB.PREMIUM
+          }), n.changeLog.track(m.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : o ? e => {
-          (0, f.uL)(i), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, b({}, m.default.getCampaignParams(i))), (0, u.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
+          (0, f.uL)(i), n.changeLog.track(m.rMx.CHANGE_LOG_CTA_CLICKED, b({}, h.default.getCampaignParams(i))), (0, u.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : () => {
-          n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, b({
+          n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(m.rMx.CHANGE_LOG_CTA_CLICKED, b({
             target: i,
             cta_type: "inline_link"
-          }, m.default.getCampaignParams(i)))
+          }, h.default.getCampaignParams(i)))
         }, O(b({}, v.parse(e, t, n)), {
           callToAction: r
         })

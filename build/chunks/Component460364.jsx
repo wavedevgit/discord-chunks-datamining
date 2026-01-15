@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ function E(e) {
   } = e, y = i.useRef(null), O = i.useRef(null), v = i.useRef(null), S = i.useRef(null), {
     isUsingKeyboardNavigation: I,
     focusIndex: T
-  } = f, C = h(f, ["isUsingKeyboardNavigation", "focusIndex"]);
+  } = f, C = m(f, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
     n && ((0, s.F)(y), null == (e = v.current) || e.focus())
@@ -97,7 +97,7 @@ function E(e) {
     N = (0, o.E)("MenuSubmenuListItem"),
     P = () => _.length > 0 && (0, r.jsx)("div", {
       className: d.submenuPaddingContainer,
-      children: (0, r.jsx)("div", m(p({
+      children: (0, r.jsx)("div", h(p({
         className: d.submenu
       }, C), {
         ref: v,
@@ -125,14 +125,14 @@ function E(e) {
         ref: n,
         props: i
       } = e;
-      return (0, r.jsx)("div", m(p({
+      return (0, r.jsx)("div", h(p({
         ref: n
       }, i), {
         children: t
       }))
     }
   });
-  let R = (0, r.jsx)(l.jRF, {
+  let w = (0, r.jsx)(l.jRF, {
     targetRef: O,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
@@ -146,6 +146,6 @@ function E(e) {
     ref: y,
     children: [(0, r.jsx)("div", {
       ref: O
-    }), t, n ? R : null]
+    }), t, n ? w : null]
   })
 }

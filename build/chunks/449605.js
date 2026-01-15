@@ -19,8 +19,8 @@ function d(e, t, n) {
     p = (0, i.e7)([l.Z], () => null != f && l.Z.canBasicChannel(u.S7.CONNECT, f)),
     _ = (0, i.e7)([c.Z], () => c.Z.getVoiceChannelId() === t),
     {
-      shouldFetchPreview: m,
-      previewUrl: h,
+      shouldFetchPreview: h,
+      previewUrl: m,
       isLoading: g
     } = (0, i.cj)([o.Z], () => ({
       shouldFetchPreview: !d && o.Z.shouldFetchPreview(e, t, n),
@@ -29,12 +29,12 @@ function d(e, t, n) {
     })),
     E = p || _;
   return (r.useEffect(() => {
-    m && !d && E && (0, a.n9)(e, t, n)
-  }, [m, t, e, n, d, E]), d || !E) ? {
+    h && !d && E && (0, a.n9)(e, t, n)
+  }, [h, t, e, n, d, E]), d || !E) ? {
     previewUrl: true,
     isLoading: false
   } : {
-    previewUrl: h,
+    previewUrl: m,
     isLoading: g
   }
 }

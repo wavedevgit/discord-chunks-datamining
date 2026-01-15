@@ -38,7 +38,7 @@ function b(e) {
     fetchFailed: f.Z.didFetchingApplicationFail(t),
     isFetchingDetectable: _.Z.isFetching(t),
     detectableFetchFailed: _.Z.didFetchingFail(t)
-  })), A = i.useRef(null), N = i.useMemo(() => (0, m.fP)(), []);
+  })), A = i.useRef(null), N = i.useMemo(() => (0, h.fP)(), []);
   i.useEffect(() => {
     c.Z.getDetectableGamesSupplemental([t])
   }, [t]);
@@ -49,20 +49,20 @@ function b(e) {
     null == a || a(null == A ? true : A.current)
   }, [A, a]), (0, u.ZP)(() => {
     var e;
-    (0, m.IS)({
+    (0, h.IS)({
       source: y,
       viewId: N,
       applicationId: t,
       gameName: null != (e = null == v ? true : v.name) ? e : "",
-      profileType: m.j7.MiniProfile
+      profileType: h.j7.MiniProfile
     })
   });
-  let R = i.useMemo(() => S || T ? (0, r.jsx)("div", {
+  let w = i.useMemo(() => S || T ? (0, r.jsx)("div", {
     className: o()(E.container, E.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
   }) : I || C || null == O || null == v ? (0, r.jsx)("div", {
     className: E.container,
-    children: (0, r.jsx)(h.Z, {
+    children: (0, r.jsx)(m.Z, {
       name: n,
       onRetry: P
     })
@@ -77,6 +77,6 @@ function b(e) {
   return (0, r.jsx)(l.VqE, {
     ref: A,
     "aria-label": null == O ? true : O.name,
-    children: R
+    children: w
   })
 }

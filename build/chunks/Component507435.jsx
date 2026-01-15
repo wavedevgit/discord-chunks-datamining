@@ -2,7 +2,7 @@
 /** chunk id: 507435, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -143,7 +143,7 @@ function N(e) {
             className: b.victorAnswerText,
             scaleFontToUserSetting: true,
             children: o
-          }), (0, r.jsx)(h.ZY, {
+          }), (0, r.jsx)(m.ZY, {
             size: I,
             className: b.victorIcon,
             isVictor: true,
@@ -203,14 +203,14 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     message: n,
     channel: a,
     compact: o,
     disableInteraction: l = false
-  } = e, d = n.embeds[0], h = i.useMemo(() => (0, m.Z)(d), [d]), y = (0, s.aF)(null != (t = null == h ? true : h.questionText) ? t : "", g.Dv), O = (0, f.ZP)(n), v = (0, p.l)({
+  } = e, d = n.embeds[0], m = i.useMemo(() => (0, h.Z)(d), [d]), y = (0, s.aF)(null != (t = null == m ? true : m.questionText) ? t : "", g.Dv), O = (0, f.ZP)(n), v = (0, p.l)({
     user: n.author,
     channelId: a.id,
     guildId: a.guild_id,
@@ -223,7 +223,7 @@ function R(e) {
       returnMessageId: n.id
     })
   }, [n.id, S]);
-  return null == h ? null : (0, r.jsxs)(r.Fragment, {
+  return null == m ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_.Z, {
       iconNode: (0, r.jsx)(c.QDj, {
         size: "xs"
@@ -238,7 +238,7 @@ function R(e) {
       })
     }), (0, r.jsx)(P, {
       className: b.embed,
-      data: h,
+      data: m,
       onClickPollLink: l ? true : I
     })]
   })

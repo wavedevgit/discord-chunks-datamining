@@ -48,7 +48,7 @@ function b(e) {
     children: (0, r.jsx)(l.$jN, {})
   }) : null == O && I === E ? (0, r.jsx)("div", {
     className: g.container,
-    children: (0, r.jsx)(h.Z, {
+    children: (0, r.jsx)(m.Z, {
       guildId: t,
       name: n
     })
@@ -60,7 +60,7 @@ function b(e) {
     })
   }) : (0, r.jsx)("div", {
     className: g.container,
-    children: (0, r.jsx)(m.ZP, {
+    children: (0, r.jsx)(h.ZP, {
       profile: O,
       onClose: b
     })

@@ -8,7 +8,7 @@ require.d(exports, {
   og: () => y,
   qr: () => I,
   xg: () => v,
-  yH: () => h
+  yH: () => m
 }), require("./415506.js"), require("./704826.js"), require("./35282.js");
 var Chunk221513 = require("./221513.js"),
   Chunk389053 = require("./389053.js"),
@@ -42,9 +42,9 @@ function p(e) {
   return e
 }
 let _ = Object.freeze(["en-CA", "en-AU", "en-NZ"]),
-  m = 1.95583;
+  h = 1.95583;
 
-function h(e, t, n) {
+function m(e, t, n) {
   var i;
   let o = p({}, null != n ? n : {}),
     l = null != (i = null == n ? true : n.localeOverride) ? i : a.default.locale;
@@ -74,13 +74,13 @@ function g(e) {
 }
 
 function E(e, t) {
-  let n = h(e, u.pK.EUR, t),
-    r = h(e * m, u.pK.BGN, t);
+  let n = m(e, u.pK.EUR, t),
+    r = m(e * h, u.pK.BGN, t);
   return "".concat(n, " (").concat(r, ")")
 }
 
 function b(e, t, n) {
-  return g(t) ? E(e, n) : h(e, t, n)
+  return g(t) ? E(e, n) : m(e, t, n)
 }
 
 function y(e, t, n) {

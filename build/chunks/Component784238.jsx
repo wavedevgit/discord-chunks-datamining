@@ -2,7 +2,7 @@
 /** chunk id: 784238, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -53,14 +53,14 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = e => {
+let h = e => {
   var {
     textOptions: t,
     subscriptionTier: n,
     hasActivePromotion: d = false,
     isPersistentCTA: _ = false,
-    useShorterCTA: m = false,
-    showGradient: h,
+    useShorterCTA: h = false,
+    showGradient: m,
     confirmationFooter: g,
     color: E
   } = e, b = p(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]);
@@ -71,7 +71,7 @@ let m = e => {
     } = (0, c.G)({
       hasActivePromotion: d,
       subscriptionTier: n,
-      useShorterCTA: m,
+      useShorterCTA: h,
       isPersistentCTA: _
     }),
     S = (0, s.N)(),
@@ -86,7 +86,7 @@ let m = e => {
     }, t),
     onlyShineOnHover: true,
     subscriptionTier: v,
-    showGradient: h,
+    showGradient: m,
     confirmationFooter: g
   }, b))
 }

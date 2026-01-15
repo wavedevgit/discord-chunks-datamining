@@ -2,7 +2,7 @@
 /** chunk id: 116233, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
+  Z: () => m,
   a: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517319 = require("./517319.js");
 
-function h() {
+function m() {
   let e = (0, l.ZM)(),
     t = () => {
       (0, f.default)(), o.Z.openPrivateChannel({
@@ -27,7 +27,7 @@ function h() {
       })
     };
   return (0, r.jsx)(u.f, {
-    label: m.default.i284fU,
+    label: h.default.i284fU,
     labelHook: t,
     noticeType: p.nq.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
     count: e.length
@@ -50,7 +50,7 @@ function g() {
       type: d.v.INLINE_NOTICE,
       noticeType: "info",
       trackView: u,
-      useText: () => _.intl.format(m.default.i284fU, {
+      useText: () => _.intl.format(h.default.i284fU, {
         hook: (e, t) => (0, r.jsx)(a.eee, {
           onClick: n,
           children: e

@@ -18,7 +18,7 @@ var Chunk274616 = require("./274616.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -89,12 +89,12 @@ function P(e) {
     id: e
   }
 }
-async function R(e) {
+async function w(e) {
   if (Array.isArray(e) || (e = [e]), c.Z.isDeveloper || (e = e.filter(e => null == e.thirdPartySkus || false === e.thirdPartySkus.findIndex(e => {
       let {
         distributor: t
       } = e;
-      return t === m.GQo.BATTLENET
+      return t === h.GQo.BATTLENET
     }))), 0 === e.length) throw Error("No remaining launchable queries");
   let t = Date.now();
   t > v && (v = t + C, O = {});
@@ -108,11 +108,11 @@ async function R(e) {
   throw Error("could not find launchable")
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0;
   if (e()) return void t();
   setTimeout(() => {
-    r * I <= T ? w(e, t, n, r + 1) : n()
+    r * I <= T ? R(e, t, n, r + 1) : n()
   }, I)
 }
 
@@ -122,12 +122,12 @@ function D(e) {
   })
 }
 let x = {
-  waitSubscribed: (e, t) => new Promise((n, r) => w(() => o.Z.isSubscribed(e, t), n, r)),
+  waitSubscribed: (e, t) => new Promise((n, r) => R(() => o.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
-    return new Promise(w.bind(this, () => l.Z.isConnected(e)))
+    return new Promise(R.bind(this, () => l.Z.isConnected(e)))
   },
-  isLaunchable: e => R(N(e)).then(e => null != e).catch(() => false),
-  launch: e => R(N(e)).then(D),
+  isLaunchable: e => w(N(e)).then(e => null != e).catch(() => false),
+  launch: e => w(N(e)).then(D),
   launchDispatchApplication(e, t, n, i, o) {
     let {
       launchOptions: l,
@@ -135,7 +135,7 @@ let x = {
       installPath: f,
       applicationId: p,
       branchId: _,
-      buildId: h,
+      buildId: m,
       shouldPatch: g
     } = e;
     if (null == l || null == c || null == f) throw Error("Couldn't construct launchable for ".concat(e.applicationId));
@@ -148,7 +148,7 @@ let x = {
       let {
         liveBuildId: n
       } = t;
-      if (g && n !== h) return Promise.reject(Error("live build id changed"))
+      if (g && n !== m) return Promise.reject(Error("live build id changed"))
     }).then(() => d.Z.runLaunchSetup(p, _)).then(() => {
       let e = (0, a.Z)(f),
         r = {
@@ -156,7 +156,7 @@ let x = {
           DISCORD_ACCESS_TOKEN: null != t ? t : "",
           DISCORD_CURRENT_LOCALE: n,
           DISCORD_CURRENT_BRANCH: i,
-          DISCORD_STORAGE_PATH: m.SRg.ROOT_STORAGE_PATH(e, s.default.getId())
+          DISCORD_STORAGE_PATH: h.SRg.ROOT_STORAGE_PATH(e, s.default.getId())
         };
       return d.Z.launch(p, _, E.name, r)
     })
@@ -174,8 +174,8 @@ let x = {
       return null != (s = null == (i = r.createShortcuts) ? true : i.call(r, e, t, n, a, o)) && s
     })
   },
-  isGameLaunchable: e => R(P(e)).then(e => null != e).catch(() => false),
-  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : R(P(e)).then(D),
+  isGameLaunchable: e => w(P(e)).then(e => null != e).catch(() => false),
+  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : w(P(e)).then(D),
   isProtocolRegistered: e => A().then(t => {
     var n, r;
     return null != (r = null == (n = t.isProtocolSchemeRegistered) ? true : n.call(t, e)) && r

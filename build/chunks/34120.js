@@ -54,15 +54,15 @@ function _(e) {
   var t = g();
   return function() {
     var n, r = E(e);
-    return n = t ? Reflect.construct(r, arguments, E(this).constructor) : r.apply(this, arguments), m(this, n)
+    return n = t ? Reflect.construct(r, arguments, E(this).constructor) : r.apply(this, arguments), h(this, n)
   }
 }
 
-function m(e, t) {
-  return t && ("object" === l(t) || "function" == typeof t) ? t : h(e)
+function h(e, t) {
+  return t && ("object" === l(t) || "function" == typeof t) ? t : m(e)
 }
 
-function h(e) {
+function m(e) {
   if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
@@ -99,7 +99,7 @@ var y = function(e) {
     var e;
     c(this, n);
     for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-    return b(h(e = t.call.apply(t, [this].concat(i))), "priority", 100), b(h(e), "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "i", "t", "T"]), e
+    return b(m(e = t.call.apply(t, [this].concat(i))), "priority", 100), b(m(e), "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "i", "t", "T"]), e
   }
   return d(n, [{
     key: "parse",

@@ -4,12 +4,12 @@
 require.d(exports, {
   GL: () => a,
   Jq: () => i,
-  O0: () => m,
+  O0: () => h,
   U5: () => E,
   XG: () => s,
   hE: () => b,
   iA: () => l,
-  kb: () => h,
+  kb: () => m,
   l1: () => u,
   np: () => o,
   oY: () => p
@@ -41,10 +41,10 @@ function _(e) {
   return new Uint8Array(new TextEncoder().encode(e))
 }
 
-function m(e) {
+function h(e) {
   return "string" == typeof e && (e = _(e)), (0, r.aI)(e), e
 }
-class h {
+class m {
   clone() {
     return this._cloneInto()
   }
@@ -57,7 +57,7 @@ function E(e, t) {
 }
 
 function b(e) {
-  let t = t => e().update(m(t)).digest(),
+  let t = t => e().update(h(t)).digest(),
     n = e();
   return t.outputLen = n.outputLen, t.blockLen = n.blockLen, t.create = () => e(), t
 }

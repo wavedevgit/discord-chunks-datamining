@@ -22,8 +22,8 @@ function p(e) {
     onAction: p,
     onClose: _
   } = e, {
-    themeType: m
-  } = (0, c.z)(), h = (0, s.Z)({
+    themeType: h
+  } = (0, c.z)(), m = (0, s.Z)({
     application: t,
     analyticsLocations: n
   });
@@ -34,8 +34,8 @@ function p(e) {
       location_stack: n
     }
   }, {
-    disableTrack: null == h
-  }, [h]), null == h) ? null : (0, r.jsx)(a.u, {
+    disableTrack: null == m
+  }, [m]), null == m) ? null : (0, r.jsx)(a.u, {
     text: f.intl.string(f.t.JVwWva),
     position: "top",
     children: (0, r.jsx)(u.i6, {
@@ -45,9 +45,9 @@ function p(e) {
       onClick: e => {
         e.stopPropagation(), null == p || p({
           action: "PRESS_CLOUD_PLAY_BUTTON"
-        }), h(), null == _ || _()
+        }), m(), null == _ || _()
       },
-      fullWidth: m !== d.l.MODAL_V2
+      fullWidth: h !== d.l.MODAL_V2
     })
   })
 }

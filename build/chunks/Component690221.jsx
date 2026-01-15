@@ -73,8 +73,8 @@ let _ = Chunk473749.forwardRef(function(e, t) {
     onClick: u,
     onKeyPress: p,
     focusProps: _
-  } = e, m = f(e, ["href", "children", "onClick", "onKeyPress", "focusProps"]);
-  let h = i.useCallback(e => {
+  } = e, h = f(e, ["href", "children", "onClick", "onKeyPress", "focusProps"]);
+  let m = i.useCallback(e => {
       e.repeat || ((e.charCode === s.yXg.SPACE || e.charCode === s.yXg.ENTER) && (e.preventDefault(), null != n && (0, o.uL)(n), null == u || u()), null == p || p(e))
     }, [n, p, u]),
     g = i.useCallback(e => {
@@ -84,8 +84,8 @@ let _ = Chunk473749.forwardRef(function(e, t) {
       ref: t,
       href: n,
       onClick: g,
-      onKeyPress: h
-    }, m), {
+      onKeyPress: m
+    }, h), {
       children: l
     }));
   return (0, r.jsx)(a.tEY, d(c({}, _), {

@@ -44,11 +44,11 @@
       var d = function(t, r) {
           var i = [];
           for (n = r = r || n; t;) {
-            for (var l = null, c = null, u = null, f = false, p = 1e5, _ = [o.get(t.charCodeAt(0)), s], m = 0; m < _.length; m++) {
-              var h = _[m];
-              if (null != h)
-                for (var g = 0; g < h.length; g++) {
-                  var E = h[g],
+            for (var l = null, c = null, u = null, f = false, p = 1e5, _ = [o.get(t.charCodeAt(0)), s], h = 0; h < _.length; h++) {
+              var m = _[h];
+              if (null != m)
+                for (var g = 0; g < m.length; g++) {
+                  var E = m[g],
                     b = e[E],
                     y = b.order;
                   if (y > p) break;
@@ -106,7 +106,7 @@
       var i = "";
       for (var a in n = n || {}) {
         var o = n[a];
-        Object.prototype.hasOwnProperty.call(n, a) && o && (i += " " + h(a) + '="' + h(o) + '"')
+        Object.prototype.hasOwnProperty.call(n, a) && o && (i += " " + m(a) + '="' + m(o) + '"')
       }
       var s = "<" + e + i + ">";
       return r ? s + t + "</" + e + ">" : s
@@ -123,7 +123,7 @@
       return e
     },
     _ = /[<>&"']/g,
-    m = {
+    h = {
       "<": "&lt;",
       ">": "&gt;",
       "&": "&amp;",
@@ -132,9 +132,9 @@
       "/": "&#x2F;",
       "`": "&#96;"
     },
-    h = function(e) {
+    m = function(e) {
       return String(e).replace(_, function(e) {
-        return m[e]
+        return h[e]
       })
     },
     g = /\\([^0-9A-Za-z\s])/g,
@@ -168,8 +168,8 @@
     A = /\n{2,}$/,
     N = /^ (?= *`)|(` *) $/g,
     P = A,
-    R = / *\n+$/,
-    w = RegExp("^( *)(" + S + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + S + " )\\n*|\\s*\n*$)"),
+    w = / *\n+$/,
+    R = RegExp("^( *)(" + S + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + S + " )\\n*|\\s*\n*$)"),
     D = /(?:^|\n)( *)$/,
     x = function() {
       var e = /^ *\| *| *\| *$/g,
@@ -334,7 +334,7 @@
         },
         html: function(e, t, n) {
           var r = e.lang ? "markdown-code-" + e.lang : true,
-            i = d("code", h(e.content), {
+            i = d("code", m(e.content), {
               class: r
             });
           return d("pre", i)
@@ -376,7 +376,7 @@
           var n = null == t.prevCapture ? "" : t.prevCapture[0],
             r = D.exec(n),
             i = t._list || !t.inline;
-          return r && i ? (e = r[1] + e, w.exec(e)) : null
+          return r && i ? (e = r[1] + e, R.exec(e)) : null
         },
         parse: function(e, t, n) {
           var r = e[2],
@@ -396,7 +396,7 @@
               s = d;
               var f = n.inline,
                 p = n._list;
-              n._list = true, d ? (n.inline = false, i = c.replace(R, "\n\n")) : (n.inline = true, i = c.replace(R, ""));
+              n._list = true, d ? (n.inline = false, i = c.replace(w, "\n\n")) : (n.inline = true, i = c.replace(w, ""));
               var _ = t(i, n);
               return n.inline = f, n._list = p, _
             })
@@ -776,7 +776,7 @@
           })
         },
         html: function(e, t, n) {
-          return d("code", h(e.content))
+          return d("code", m(e.content))
         }
       },
       br: {
@@ -803,7 +803,7 @@
           return e.content
         },
         html: function(e, t, n) {
-          return h(e.content)
+          return m(e.content)
         }
       }
     },
@@ -886,7 +886,7 @@
     defaultReactOutput: q,
     defaultHtmlOutput: Q,
     preprocess: r,
-    sanitizeText: h,
+    sanitizeText: m,
     sanitizeUrl: p,
     unescapeUrl: E,
     htmlTag: d,

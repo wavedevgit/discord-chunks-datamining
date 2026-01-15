@@ -50,12 +50,12 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {},
-  h = new Chunk798140.ZP,
+let h = {},
+  m = new Chunk798140.ZP,
   g = new Set;
 
 function E(e) {
-  m = a()(m).reject(t => t.guildId === e).keyBy("threadId").value()
+  h = a()(h).reject(t => t.guildId === e).keyBy("threadId").value()
 }
 
 function b(e) {
@@ -64,7 +64,7 @@ function b(e) {
 }
 
 function y(e) {
-  c.AW.has(e.type) && null != e.member && (m[e.id] = {
+  c.AW.has(e.type) && null != e.member && (h[e.id] = {
     threadId: e.id,
     guildId: e.guild_id,
     flags: e.member.flags,
@@ -75,14 +75,14 @@ function y(e) {
 }
 
 function O(e) {
-  let t = m[e];
-  h.clearTimer(e), true === t.muted ? ((g = new Set(g)).add(e), h.setTimer(e, t.muteConfig, () => {
-    m[e].muted = false, (g = new Set(g)).delete(e), L.emitChange()
-  }) && (m[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
+  let t = h[e];
+  m.clearTimer(e), true === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
+    h[e].muted = false, (g = new Set(g)).delete(e), L.emitChange()
+  }) && (h[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
 function v(e) {
-  h.reset(), g = new Set, m = {}, e.guilds.forEach(e => {
+  m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
     b(e)
   })
 }
@@ -91,7 +91,7 @@ function S(e) {
   let {
     joinedThreads: t
   } = e;
-  m = a()(t).map(e => _(f({}, e), {
+  h = a()(t).map(e => _(f({}, e), {
     joinTimestamp: new Date(e.joinTimestamp)
   })).keyBy("threadId").value()
 }
@@ -123,7 +123,7 @@ function A(e) {
     members: n
   } = e;
   null != t && null != n && n.forEach(e => {
-    m[e.id] = {
+    h[e.id] = {
       threadId: e.id,
       guildId: t,
       flags: e.flags,
@@ -144,7 +144,7 @@ function N(e) {
       members: n
     } = e;
     n.forEach(e => {
-      m[e.id] = {
+      h[e.id] = {
         threadId: e.id,
         guildId: t,
         flags: e.flags,
@@ -160,13 +160,13 @@ function P(e) {
   let {
     channel: t
   } = e;
-  if (!(t.id in m)) returnfalse;
-  m = f({}, m), delete m[t.id]
+  if (!(t.id in h)) returnfalse;
+  h = f({}, h), delete h[t.id]
 }
 
-function R(e) {
+function w(e) {
   if (u.default.getId() !== e.userId) returnfalse;
-  m[e.id] = {
+  h[e.id] = {
     threadId: e.id,
     guildId: e.guildId,
     flags: e.flags,
@@ -176,7 +176,7 @@ function R(e) {
   }, O(e.id)
 }
 
-function w(e) {
+function R(e) {
   let {
     id: t,
     userId: n,
@@ -184,7 +184,7 @@ function w(e) {
     isJoining: i
   } = e;
   if (u.default.getId() !== n || null === r) returnfalse;
-  i ? m[t] = {
+  i ? h[t] = {
     threadId: t,
     guildId: r,
     flags: 0,
@@ -193,14 +193,14 @@ function w(e) {
       end_time: true
     },
     joinTimestamp: new Date
-  } : delete m[t]
+  } : delete h[t]
 }
 
 function D(e) {
   var t, n;
   let r = false;
-  return (null == (t = e.removedMemberIds) ? true : t.includes(u.default.getId())) && e.id in m && (m = f({}, m), delete m[e.id], r = true), null == (n = e.addedMembers) || n.forEach(t => {
-    t.userId === u.default.getId() && ((m = f({}, m))[e.id] = {
+  return (null == (t = e.removedMemberIds) ? true : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = true), null == (n = e.addedMembers) || n.forEach(t => {
+    t.userId === u.default.getId() && ((h = f({}, h))[e.id] = {
       threadId: e.id,
       guildId: e.guildId,
       flags: t.flags,
@@ -215,22 +215,22 @@ class x extends(r = Chunk442837.ZP.Store) {
     this.waitFor(u.default)
   }
   hasJoined(e) {
-    return e in m
+    return e in h
   }
   joinTimestamp(e) {
     var t;
-    return null == (t = m[e]) ? true : t.joinTimestamp
+    return null == (t = h[e]) ? true : t.joinTimestamp
   }
   flags(e) {
     var t;
-    return null == (t = m[e]) ? true : t.flags
+    return null == (t = h[e]) ? true : t.flags
   }
   getInitialOverlayState() {
-    return Object.values(m)
+    return Object.values(h)
   }
   getMuteConfig(e) {
     var t;
-    return null == (t = m[e]) ? true : t.muteConfig
+    return null == (t = h[e]) ? true : t.muteConfig
   }
   getMutedThreads() {
     return g
@@ -252,8 +252,8 @@ let L = new x(Chunk570140.Z, {
     LOAD_THREADS_SUCCESS: A,
     LOAD_ARCHIVED_THREADS_SUCCESS: A,
     THREAD_DELETE: P,
-    THREAD_MEMBER_UPDATE: R,
-    THREAD_MEMBER_LOCAL_UPDATE: w,
+    THREAD_MEMBER_UPDATE: w,
+    THREAD_MEMBER_LOCAL_UPDATE: R,
     THREAD_MEMBERS_UPDATE: D
   }),
   j = L

@@ -44,19 +44,19 @@ let u = Chunk473749.createContext(null),
       isLoaded: f = false
     } = e, {
       analyticsLocations: p
-    } = (0, o.ZP)(), _ = i.useRef(true), m = {
+    } = (0, o.ZP)(), _ = i.useRef(true), h = {
       analyticsLocations: p,
       value: t
-    }, h = i.useRef(m);
+    }, m = i.useRef(h);
     return i.useEffect(() => {
-      h.current = m
+      m.current = h
     }), i.useEffect(() => {
       let e = Date.now();
       if (null == _.current && null != a && (_.current = e - a), !f) return;
       let {
         analyticsLocations: t,
         value: n
-      } = h.current;
+      } = m.current;
       (0, s.pQ)(c({
         action: "VIEW",
         analyticsLocations: t

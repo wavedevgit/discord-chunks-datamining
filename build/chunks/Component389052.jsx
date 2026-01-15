@@ -2,7 +2,7 @@
 /** chunk id: 389052, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -48,18 +48,18 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   let {
     user: t,
     guildId: f,
     channelId: _,
-    onBlock: h,
+    onBlock: m,
     onIgnore: g,
     onUnblock: E,
     location: b = "ContextMenu",
@@ -83,11 +83,11 @@ function h(e) {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("66089")]).then(n.bind(n, 478923));
-        return n => (0, r.jsx)(e, m(p({}, n), {
+        return n => (0, r.jsx)(e, h(p({}, n), {
           user: t,
           guildId: f,
           channelId: _,
-          onBlock: h,
+          onBlock: m,
           onIgnore: g,
           location: b
         }))

@@ -27,7 +27,7 @@ let _ = {
     outputDeviceFrecency: Chunk65154.h7.AUDIO_OUTPUT,
     videoDeviceFrecency: Chunk65154.h7.VIDEO_INPUT
   },
-  m = {
+  h = {
     afterCompute: () => {},
     computeBonus: () => 100,
     lookupKey: e => e,
@@ -35,7 +35,7 @@ let _ = {
     numFrequentlyItems: 1 / 0
   };
 
-function h(e) {
+function m(e) {
   return ({
     [f.h7.AUDIO_INPUT]: {
       getCurrentDeviceId: e => e.getInputDeviceId()
@@ -89,9 +89,9 @@ let y = {
     [Chunk65154.h7.VIDEO_INPUT]: {}
   },
   v = {
-    [Chunk65154.h7.AUDIO_INPUT]: new Chunk704907.Z(m),
-    [Chunk65154.h7.AUDIO_OUTPUT]: new Chunk704907.Z(m),
-    [Chunk65154.h7.VIDEO_INPUT]: new Chunk704907.Z(m)
+    [Chunk65154.h7.AUDIO_INPUT]: new Chunk704907.Z(h),
+    [Chunk65154.h7.AUDIO_OUTPUT]: new Chunk704907.Z(h),
+    [Chunk65154.h7.VIDEO_INPUT]: new Chunk704907.Z(h)
   };
 class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -120,7 +120,7 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     n.stop();
     let r = n.elapsed().asMilliseconds();
     if (r > 0) {
-      let n = null != t ? t : h(e).getCurrentDeviceId(u.Z);
+      let n = null != t ? t : m(e).getCurrentDeviceId(u.Z);
       this.track(e, n, r)
     }
     n.reset()

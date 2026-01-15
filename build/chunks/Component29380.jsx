@@ -35,7 +35,7 @@ function y(e) {
   }, [S]), {
     submitting: T,
     wasSubmitting: C
-  } = (0, h.Z)({
+  } = (0, m.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: v,
@@ -43,8 +43,8 @@ function y(e) {
   }), [A, N] = i.useState(false), P = (0, s.Qv)({
     applicationId: n.id,
     context: t
-  }), R = i.useMemo(() => (0, m.XZ)(O.displayName), [O.displayName]), {
-    onActivityItemSelected: w,
+  }), w = i.useMemo(() => (0, h.XZ)(O.displayName), [O.displayName]), {
+    onActivityItemSelected: R,
     buttonVariant: D,
     buttonText: x
   } = (0, g.P7)({
@@ -52,7 +52,7 @@ function y(e) {
     application: n,
     location: l.Vh.APP_LAUNCHER_APPLICATION_VIEW,
     sectionName: y,
-    commandName: R,
+    commandName: w,
     autoDismissOnClick: P === s.JS.LEAVE || (0, c.g)(n),
     launchingComponentId: v,
     submitting: null != C ? C : T,
@@ -75,7 +75,7 @@ function y(e) {
       disabled: L,
       loading: A,
       onClick: () => {
-        N(true), w(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        N(true), R(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,
           button_action: p._y.USE_APP_COMMAND
         })

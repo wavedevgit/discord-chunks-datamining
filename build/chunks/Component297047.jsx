@@ -2,7 +2,7 @@
 /** chunk id: 297047, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
+  Z: () => h,
   q: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
@@ -30,7 +30,7 @@ function _(e, t) {
   }), null != t && o.Z.startTyping(t)
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   let [o, u] = (0, i.Wu)([c.Z, s.Z, l.Z], () => {
     let e = c.Z.getChannelId(t),
       n = s.Z.getChannel(e);
@@ -38,12 +38,12 @@ function m(e, t, n) {
   }, [t]), d = n === f.IlC.POPOUT;
   if (!u || d) return null;
 
-  function m() {
+  function h() {
     _(e, o)
   }
   return (0, r.jsx)(a.sNh, {
     id: "mention",
     label: p.intl.string(p.t.P8tvKG),
-    action: m
+    action: h
   })
 }

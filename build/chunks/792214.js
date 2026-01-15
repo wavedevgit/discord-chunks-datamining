@@ -32,8 +32,8 @@ function l(e) {
     values: f,
     dataFormatters: p,
     formatConfig: _,
-    currentPluralValue: m,
-    keyPrefix: h
+    currentPluralValue: h,
+    keyPrefix: m
   } = e;
   if (1 === u.length && "string" == typeof u[0]) return void n.pushLiteralText(u[0]);
   for (let e = 0; e < u.length; e++) {
@@ -44,8 +44,8 @@ function l(e) {
     }
     let E = g[0];
     if (E === i.FormatJsNodeType.Pound) {
-      if ("number" == typeof m) {
-        let e = p.formatNumber(m);
+      if ("number" == typeof h) {
+        let e = p.formatNumber(h);
         n.pushLiteralText(e)
       }
       continue
@@ -86,8 +86,8 @@ function l(e) {
             dataFormatters: p,
             formatConfig: _,
             values: f,
-            currentPluralValue: m,
-            keyPrefix: `${h}.${e}`
+            currentPluralValue: h,
+            keyPrefix: `${m}.${e}`
           }),
           o = null != r ? c({
             Builder: n.constructor,
@@ -96,13 +96,13 @@ function l(e) {
             dataFormatters: p,
             formatConfig: _,
             values: f,
-            currentPluralValue: m,
-            keyPrefix: `${h}.${e}-control`
+            currentPluralValue: h,
+            keyPrefix: `${m}.${e}-control`
           }) : [];
         if (a(b)) n.pushRichTextTag(b, i, o);
         else {
           if ("function" != typeof y) throw `expected a function type for a Tag formatting value, ${b}. got ${typeof y}: ${y}`;
-          let t = y(i, `${h}.${e}`);
+          let t = y(i, `${m}.${e}`);
           for (let e of t = Array.isArray(t) ? t : [t]) "string" == typeof e ? n.pushLiteralText(e) : n.pushObject(e)
         }
         break
@@ -119,7 +119,7 @@ function l(e) {
           dataFormatters: p,
           formatConfig: _,
           values: f,
-          keyPrefix: `${h}.${e}`
+          keyPrefix: `${m}.${e}`
         });
         break
       }
@@ -143,7 +143,7 @@ function l(e) {
           formatConfig: _,
           values: f,
           currentPluralValue: y - (null != r ? r : 0),
-          keyPrefix: `${h}.${e}`
+          keyPrefix: `${m}.${e}`
         })
       }
     }

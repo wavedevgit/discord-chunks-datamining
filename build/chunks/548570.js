@@ -87,10 +87,10 @@ function Y(e) {
     actuallySkipped: t,
     reason: n
   } = e;
-  if (!(0, R.n)()) return;
+  if (!(0, w.n)()) return;
   let r = j.a(),
     i = M.Pf(),
-    a = h.Z.getState(),
+    a = m.Z.getState(),
     o = i.length > 0 ? "".concat(n, " + ").concat(i) : n,
     s = r ? "paused" : "request_state";
   v.default.track(U.rMx.GATEWAY_CONNECT_SKIPPED, {
@@ -98,11 +98,11 @@ function Y(e) {
     client_app_state: a,
     connect_reason: o,
     skip_context: s
-  }), (0, R.L)() && setTimeout(() => {
+  }), (0, w.L)() && setTimeout(() => {
     v.default.track(U.rMx.POST_GATEWAY_CONNECT_SKIPPED, {
       actually_skipped: null != t ? t : r,
       original_client_app_state: a,
-      client_app_state: h.Z.getState(),
+      client_app_state: m.Z.getState(),
       skip_context: s,
       original_connect_reason: o,
       gateway_connect_reasons: M.Pf()
@@ -406,7 +406,7 @@ class ei extends Chunk183139.Z {
     this.connectionState = A.Z.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = t;
-    let [n, r, i] = await Promise.all([(0, g.O)() ? p.Z.getCommittedVersions() : {}, (0, g.O)() ? m.Z.getCommittedVersions() : {}, !!(0, g.O)() && _.Z.canUseGuildVersions()]), o = i ? {
+    let [n, r, i] = await Promise.all([(0, g.O)() ? p.Z.getCommittedVersions() : {}, (0, g.O)() ? h.Z.getCommittedVersions() : {}, !!(0, g.O)() && _.Z.canUseGuildVersions()]), o = i ? {
       guild_versions: n,
       highest_last_message_id: r.highest_last_message_id,
       read_state_version: r.read_state_version,

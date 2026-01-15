@@ -48,20 +48,20 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   let {
     contentInventoryEntry: t,
     channel: n
   } = e, {
     parsedEntry: i
   } = (0, s.B)();
-  return (0, r.jsx)(u.Z, m(p({}, i), {
+  return (0, r.jsx)(u.Z, h(p({}, i), {
     entry: t,
     channel: n
   }))
@@ -78,7 +78,7 @@ function g(e) {
     entry: e.contentInventoryEntry,
     channel: i,
     errorFallback: null,
-    children: (0, r.jsx)(h, m(p({}, e), {
+    children: (0, r.jsx)(m, h(p({}, e), {
       channel: i
     }))
   })

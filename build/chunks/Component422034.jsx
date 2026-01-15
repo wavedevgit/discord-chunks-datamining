@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   O: () => g,
-  Z: () => h
+  Z: () => m
 }), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,26 +39,26 @@ function m(e) {
   return e
 }
 
-function h(e) {
+function m(e) {
   let {
     smallerText: t,
     className: n,
     textColor: a,
     isApplicationHome: c,
     enablePremiumBrandRefresh: _
-  } = e, m = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), h = m.map((e, t) => (0, r.jsx)(g, {
+  } = e, h = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
     affinity: e,
-    applyMask: t !== m.length - 1,
+    applyMask: t !== h.length - 1,
     size: _ ? d.EF.SIZE_24 : d.EF.SIZE_32
-  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, b = i.useMemo(() => 3 === m.length ? f.intl.formatToPlainString(f.t.c7ETJH, {
-    username: E(m[2])
-  }) : 2 === m.length ? f.intl.formatToPlainString(f.t["st8Rh/"], {
-    username: E(m[1]),
-    otherUsername: E(m[0])
-  }) : 1 === m.length ? f.intl.formatToPlainString(f.t.dpjXPL, {
-    username: E(m[0])
-  }) : "", [m]);
-  if (0 === m.length) return null;
+  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, b = i.useMemo(() => 3 === h.length ? f.intl.formatToPlainString(f.t.c7ETJH, {
+    username: E(h[2])
+  }) : 2 === h.length ? f.intl.formatToPlainString(f.t["st8Rh/"], {
+    username: E(h[1]),
+    otherUsername: E(h[0])
+  }) : 1 === h.length ? f.intl.formatToPlainString(f.t.dpjXPL, {
+    username: E(h[0])
+  }) : "", [h]);
+  if (0 === h.length) return null;
 
   function y() {
     return _ ? (0, r.jsx)(l.Text, {
@@ -81,7 +81,7 @@ function h(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: p.iconContainer,
-      children: h
+      children: m
     }), (0, r.jsx)("div", {
       className: p.textContainer,
       children: (0, r.jsx)(y, {})
@@ -102,7 +102,7 @@ function g(e) {
     size: i,
     animateOnHover: true
   });
-  return (0, r.jsx)(l.qEK, m({
+  return (0, r.jsx)(l.qEK, h({
     className: o()(p.icon, {
       [p.mask]: n
     }),

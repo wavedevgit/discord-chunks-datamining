@@ -25,8 +25,8 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   A = Chunk127849.Uint8ClampedArray,
   N = A && A.prototype,
   P = T && Chunk961050(T),
-  R = C && Chunk961050(C),
-  w = Object.prototype,
+  w = C && Chunk961050(C),
+  R = Object.prototype,
   D = Chunk127849.TypeError,
   x = Chunk751736("toStringTag"),
   L = Chunk744569("TYPED_ARRAY_TAG"),
@@ -85,7 +85,7 @@ var r, i, a, Chunk848120 = require("./848120.js"),
               a.prototype[e] = t
             } catch (e) {}
           }
-        }(!R[e] || n) && m(R, e, n ? t : M && C[e] || t, r)
+        }(!w[e] || n) && h(w, e, n ? t : M && C[e] || t, r)
     }
   },
   W = function(e, t, n) {
@@ -100,10 +100,10 @@ var r, i, a, Chunk848120 = require("./848120.js"),
         }
         if (P[e] && !n) return;
         try {
-          return m(P, e, n ? t : M && P[e] || t)
+          return h(P, e, n ? t : M && P[e] || t)
         } catch (e) {}
       }
-      for (r in U)(i = l[r]) && (!i[e] || n) && m(i, e, t)
+      for (r in U)(i = l[r]) && (!i[e] || n) && h(i, e, t)
     }
   };
 for (r in U)(a = (i = Chunk127849[r]) && i.prototype) ? S(a)[j] = i : M = false;
@@ -112,10 +112,10 @@ if ((!M || !Chunk880181(P) || P === Function.prototype) && (P = function() {
     throw new D("Incorrect invocation")
   }, M))
   for (r in U) Chunk127849[r] && Chunk769827(Chunk127849[r], P);
-if ((!M || !R || R === w) && (R = P.prototype, M))
-  for (r in U) Chunk127849[r] && Chunk769827(Chunk127849[r].prototype, R);
-if (M && Chunk961050(N) !== R && Chunk769827(N, R), Chunk507604 && !Chunk77025(R, x))
-  for (r in k = true, Chunk573078(R, x, {
+if ((!M || !w || w === R) && (w = P.prototype, M))
+  for (r in U) Chunk127849[r] && Chunk769827(Chunk127849[r].prototype, w);
+if (M && Chunk961050(N) !== w && Chunk769827(N, w), Chunk507604 && !Chunk77025(w, x))
+  for (r in k = true, Chunk573078(w, x, {
       configurable: true,
       get: function() {
         return u(this) ? this[L] : true
@@ -132,5 +132,5 @@ module.exports = {
   isView: Z,
   isTypedArray: B,
   TypedArray: P,
-  TypedArrayPrototype: R
+  TypedArrayPrototype: w
 }

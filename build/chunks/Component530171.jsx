@@ -2,7 +2,7 @@
 /** chunk id: 530171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => h
+  I: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,12 +18,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk206403 = require("./206403.jsx"),
   Chunk623357 = require("./623357.js");
 
-function h(e) {
+function m(e) {
   let {
     title: t,
     collapsedSubtitle: n,
     isExpanded: a,
-    onExpandedChange: h,
+    onExpandedChange: m,
     onExpandedChangeComplete: g,
     children: E,
     animate: b = true
@@ -44,7 +44,7 @@ function h(e) {
   }, [O]), (0, r.jsxs)(l.pJ, {
     ref: A,
     isExpanded: a,
-    onExpandedChange: h,
+    onExpandedChange: m,
     children: [(0, r.jsx)(_.x, {
       ref: y,
       style: null != O ? {
@@ -55,20 +55,20 @@ function h(e) {
       secondaryTrailingElement: (0, r.jsx)(f.tEY, {
         children: (0, r.jsx)(c.z, {
           slot: "trigger",
-          className: m.triggerButton,
-          children: (0, r.jsx)(u.sXD, {
-            className: o()(m.icon, {
-              [m.iconClosed]: !a
+          className: h.triggerButton,
+          children: (0, r.jsx)(u.ChevronLargeUpIcon, {
+            className: o()(h.icon, {
+              [h.iconClosed]: !a
             }),
             color: d.Z.colors.ICON_LINK
           })
         })
       }),
-      onClick: () => h(!a),
+      onClick: () => m(!a),
       headingColor: "text-link"
     }), (0, r.jsx)(l.V2, {
-      className: o()(m.panel, {
-        [m.disablePanelAnimation]: !b
+      className: o()(h.panel, {
+        [h.disablePanelAnimation]: !b
       }),
       children: (0, r.jsx)(f.Kqy, {
         gap: 16,

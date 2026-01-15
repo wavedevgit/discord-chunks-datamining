@@ -2,7 +2,7 @@
 /** chunk id: 244526, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk634499 = require("./634499.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends(r = Chunk473749.PureComponent) {
+class m extends(r = Chunk473749.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -116,7 +116,7 @@ class h extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-m(h, "defaultProps", {
+h(m, "defaultProps", {
   isForSubscription: false,
   isDefault: false,
   showSubtext: false,

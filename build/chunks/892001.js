@@ -2,8 +2,8 @@
 /** chunk id: 892001, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  closeUserProfileModal: () => h,
-  openUserProfileModal: () => m
+  closeUserProfileModal: () => m,
+  openUserProfileModal: () => h
 });
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -29,7 +29,7 @@ let f = (0, Chunk481060.dcp)(Chunk481060.EFr.SIZE_120),
       p.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
   };
-async function m(e) {
+async function h(e) {
   let {
     userId: t,
     guildId: n,
@@ -39,8 +39,8 @@ async function m(e) {
     sessionId: l,
     joinRequestId: u,
     tabSection: p,
-    scrollTarget: m,
-    showGuildProfile: h,
+    scrollTarget: h,
+    showGuildProfile: m,
     hideRestrictedProfile: g,
     sourceAnalyticsLocations: E,
     appContext: b,
@@ -49,14 +49,14 @@ async function m(e) {
   } = e, v = c.default.getUser(t);
   _(t), null == v ? await (0, a.In)(t, {
     type: "modal",
-    guildId: h && null != n ? n : true,
+    guildId: m && null != n ? n : true,
     withMutualFriendsCount: true,
     withMutualFriends: false,
     withMutualGuilds: true,
     joinRequestId: u
   }) : (0, d.Z)(v.id, v.getAvatarURL(true, f), {
     type: "modal",
-    guildId: h && null != n ? n : true,
+    guildId: m && null != n ? n : true,
     withMutualFriendsCount: !v.bot,
     withMutualFriends: false,
     withMutualGuilds: true,
@@ -72,8 +72,8 @@ async function m(e) {
     openedAt: Date.now(),
     customStatusPrompt: y,
     tabSection: p,
-    scrollTarget: m,
-    showGuildProfile: h,
+    scrollTarget: h,
+    showGuildProfile: m,
     hideRestrictedProfile: g,
     sourceAnalyticsLocations: E,
     appContext: b,
@@ -81,7 +81,7 @@ async function m(e) {
   })
 }
 
-function h() {
+function m() {
   i.Z.dispatch({
     type: "USER_PROFILE_MODAL_CLOSE"
   })

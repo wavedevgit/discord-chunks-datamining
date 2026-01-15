@@ -34,7 +34,7 @@ var Chunk952639 = require("./952639.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -98,7 +98,7 @@ function U(e, t, n) {
 
 function G(e) {
   if (k(e, S.Pq.TIMEOUT)) {
-    let t = h.Z.getMessage(e.channel_id, e.id);
+    let t = m.Z.getMessage(e.channel_id, e.id);
     if (null != t) {
       let {
         attachmentIds: n,
@@ -155,7 +155,7 @@ function V(e) {
   let t = {},
     n = {};
   return e.forEach(e => {
-    var r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E;
+    var r, i, a, o, s, l, c, u, d, f, p, _, h, m, g, E;
     null == t[e.channel_id] && (t[e.channel_id] = {
       numOfAttachments: 0,
       numOfAttachmentsPendingScan: 0,
@@ -187,13 +187,13 @@ function V(e) {
     })).length) ? p : 0, A.numOfExplicitEmbeds = null != (_ = null == (o = e.embeds) ? true : o.filter(e => (0, C.SI)(T._.EXPLICIT, {
       type: v.l.Embed,
       media: e
-    })).length) ? _ : 0, A.numOfGoreAttachments = null != (m = null == (s = e.attachments) ? true : s.filter(e => (0, C.SI)(T._.GORE, {
+    })).length) ? _ : 0, A.numOfGoreAttachments = null != (h = null == (s = e.attachments) ? true : s.filter(e => (0, C.SI)(T._.GORE, {
       type: v.l.Attachment,
       media: e
-    })).length) ? m : 0, A.numOfGoreEmbeds = null != (h = null == (l = e.embeds) ? true : l.filter(e => (0, C.SI)(T._.GORE, {
+    })).length) ? h : 0, A.numOfGoreEmbeds = null != (m = null == (l = e.embeds) ? true : l.filter(e => (0, C.SI)(T._.GORE, {
       type: v.l.Embed,
       media: e
-    })).length) ? h : 0, A.numOfSelfHarmAttachments = null != (g = null == (c = e.attachments) ? true : c.filter(e => (0, C.SI)(T._.SELF_HARM, {
+    })).length) ? m : 0, A.numOfSelfHarmAttachments = null != (g = null == (c = e.attachments) ? true : c.filter(e => (0, C.SI)(T._.SELF_HARM, {
       type: v.l.Attachment,
       media: e
     })).length) ? g : 0, A.numOfSelfHarmEmbeds = null != (E = null == (u = e.embeds) ? true : u.filter(e => (0, C.SI)(T._.SELF_HARM, {
@@ -322,13 +322,13 @@ function z(e) {
   } = e;
   if (null == s.channel_id || null == s.id || (null == (t = s.author) ? true : t.id) === p.default.getId() || null == s.embeds && null == s.attachments && !(0, S.M0)(s) || (null == (n = s.embeds) ? true : n.length) === 0 && (null == (r = s.attachments) ? true : r.length) === 0 && !(0, S.M0)(s)) returnfalse;
   if (!(0, C.MD)(s)) {
-    let e = null != (o = null != (a = h.Z.getMessage(s.channel_id, s.id)) ? a : I.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
+    let e = null != (o = null != (a = m.Z.getMessage(s.channel_id, s.id)) ? a : I.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
     null == e || (0, C.MD)((0, u.wi)(e, s)) || k(e, S.Pq.UPDATE)
   }
   let l = g.Z.getChannelId(),
     c = _.ZP.getCurrentSidebarChannelId(l);
   if (s.channel_id !== l && s.channel_id !== c) returnfalse;
-  let d = h.Z.getMessage(s.channel_id, s.id);
+  let d = m.Z.getMessage(s.channel_id, s.id);
   return null != d && W([d], {
     isMessageUpdate: true
   })
@@ -346,7 +346,7 @@ function q(e) {
   let s = g.Z.getChannelId(),
     l = _.ZP.getCurrentSidebarChannelId(s),
     c = r === s || r === l,
-    u = m.Z.getChannel(r);
+    u = h.Z.getChannel(r);
   if (!c) returnfalse;
   let d = null == (n = null == u ? true : u.isPrivate()) || n,
     f = (null == u ? true : u.memberCount) == null || (null == u ? true : u.memberCount) > 100;
@@ -427,7 +427,7 @@ function er(e) {
     settings: t,
     local: n
   } = e;
-  if (!n || t.type !== R.yP.PRELOADED_USER_SETTINGS) returnfalse;
+  if (!n || t.type !== w.yP.PRELOADED_USER_SETTINGS) returnfalse;
   let r = g.Z.getChannelId();
   return null != r && ea(r)
 }
@@ -441,12 +441,12 @@ function ei(e) {
 }
 
 function ea(e) {
-  let t = h.Z.getMessages(e);
+  let t = m.Z.getMessages(e);
   return 0 !== t.length && K(t)
 }
 class eo extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), w(this, "actions", {
+    super(...e), R(this, "actions", {
       LOAD_MESSAGES_SUCCESS: Q,
       LOAD_FORUM_POSTS: $,
       LOAD_THREADS_SUCCESS: ee,

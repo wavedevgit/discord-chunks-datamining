@@ -85,8 +85,8 @@ class v extends Chunk473749.PureComponent {
         left: 4
       },
       children: (0, r.jsxs)(p.Z, {
-        className: o()(m.selectableItem, i, {
-          [m.selected]: t
+        className: o()(h.selectableItem, i, {
+          [h.selected]: t
         }),
         onClick: this.handleClick,
         onKeyUp: this.handleKeyUp,
@@ -96,12 +96,12 @@ class v extends Chunk473749.PureComponent {
         tabIndex: 0,
         children: [(0, r.jsx)(p.Z, {
           align: p.Z.Align.CENTER,
-          className: m.selectableItemLabel,
+          className: h.selectableItemLabel,
           shrink: 1,
           children: a
         }), t && (0, r.jsx)(p.Z, {
           wrap: p.Z.Wrap.WRAP,
-          className: h.marginReset,
+          className: m.marginReset,
           grow: 0,
           shrink: 0,
           children: (0, r.jsx)(f.dz2, {

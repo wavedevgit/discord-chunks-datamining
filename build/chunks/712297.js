@@ -47,18 +47,18 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h() {
+function m() {
   let [e, t] = r.useState({});
   return {
     previewErrorsById: e,
     setErrorById: r.useCallback((e, n) => {
-      t(t => m(p({}, t), {
+      t(t => h(p({}, t), {
         [e]: n
       }))
     }, [t])
@@ -72,36 +72,36 @@ function g(e) {
     currentPaymentSourceId: f,
     isGift: p,
     excludeSKUPurchasePreviews: _ = false
-  } = e, m = r.useMemo(() => n.filter(e => !d.YQ.includes(e)), [JSON.stringify(n)]), g = (0, a.e7)([u.Z], () => m.every(e => !u.Z.isFetching(e) && null != u.Z.get(e))), {
+  } = e, h = r.useMemo(() => n.filter(e => !d.YQ.includes(e)), [JSON.stringify(n)]), g = (0, a.e7)([u.Z], () => h.every(e => !u.Z.isFetching(e) && null != u.Z.get(e))), {
     previewErrorsById: E,
     setErrorById: b
-  } = h(), y = (0, a.cj)([u.Z], () => {
+  } = m(), y = (0, a.cj)([u.Z], () => {
     let e = {};
-    for (let n of m) {
+    for (let n of h) {
       var t;
       e[n] = null != (t = u.Z.get(n)) ? t : true
     }
     return e
-  }, [m]);
+  }, [h]);
   r.useEffect(() => {
-    for (let e of m) u.Z.isFetching(e) || null != u.Z.get(e) || (0, o.$N)(t, e, i.v.VARIANTS_GROUP)
-  }, [t, m]);
+    for (let e of h) u.Z.isFetching(e) || null != u.Z.get(e) || (0, o.$N)(t, e, i.v.VARIANTS_GROUP)
+  }, [t, h]);
   let O = (0, a.cj)([c.Z], () => {
     let e = {};
-    for (let n of m) {
+    for (let n of h) {
       var t;
       e[n] = null != (t = c.Z.getPricesForSku(n)) ? t : true
     }
     return e
-  }, [m]);
+  }, [h]);
   return r.useEffect(() => {
     if (!_)
-      for (let e of m) c.Z.isFetchingSKU(e) || (0, o.x2)(t, e, f, {
+      for (let e of h) c.Z.isFetchingSKU(e) || (0, o.x2)(t, e, f, {
         isGift: p
       }).catch(t => {
         t instanceof s.HF && (t.code === l.SM.BILLING_BUNDLE_ALREADY_PURCHASED || t.code === l.SM.BILLING_BUNDLE_PARTIALLY_OWNED || t.code === l.SM.INVALID_BILLING_ADDRESS) && b(e, t)
       })
-  }, [t, m, f, p, b, _]), {
+  }, [t, h, f, p, b, _]), {
     hasFetchedSkus: g,
     skusById: y,
     skuPricePreviewsById: O,

@@ -50,13 +50,13 @@ var u = Object.defineProperty,
   f = Object.getOwnPropertySymbols,
   p = Object.getOwnPropertyDescriptor,
   _ = Object.getPrototypeOf,
-  m = Object.prototype;
+  h = Object.prototype;
 
-function h(e, t, n) {
+function m(e, t, n) {
   if ("string" != typeof t) {
-    if (m) {
+    if (h) {
       var r = _(t);
-      r && r !== m && h(e, r, n)
+      r && r !== h && m(e, r, n)
     }
     var i = d(t);
     f && (i = i.concat(f(t)));
@@ -72,4 +72,4 @@ function h(e, t, n) {
   }
   return e
 }
-module.exports = h
+module.exports = m

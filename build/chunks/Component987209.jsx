@@ -18,8 +18,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let m = Chunk474936.Cj.STANDARD_BOX,
-  h = true,
+let h = Chunk474936.Cj.STANDARD_BOX,
+  m = true,
   [g, E, b] = (0, Chunk975104.Z)();
 
 function y(e) {
@@ -33,9 +33,9 @@ function y(e) {
     additionalUserIds: b
   } = e, {
     selectedSkuId: y
-  } = (0, d.JL)(), [O, v] = i.useState(n), [S, I] = i.useState(), [T, C] = i.useState(false), A = (0, u.pO)(O), N = h;
-  A && (N = null != f ? f : m);
-  let [P, R] = i.useState(N), w = (0, l.hi)(), D = (0, l.yX)(), [x, L] = i.useState(), [j, M] = i.useState(t && (0, u.MY)(O) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [k, U] = i.useState(true), [G, Z] = i.useState(true), F = (0, u.E5)(y, t), [B, V] = i.useState(false), [H, Y] = i.useState(false), [W, K] = i.useState(), z = i.useCallback(e => {
+  } = (0, d.JL)(), [O, v] = i.useState(n), [S, I] = i.useState(), [T, C] = i.useState(false), A = (0, u.pO)(O), N = m;
+  A && (N = null != f ? f : h);
+  let [P, w] = i.useState(N), R = (0, l.hi)(), D = (0, l.yX)(), [x, L] = i.useState(), [j, M] = i.useState(t && (0, u.MY)(O) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [k, U] = i.useState(true), [G, Z] = i.useState(true), F = (0, u.E5)(y, t), [B, V] = i.useState(false), [H, Y] = i.useState(false), [W, K] = i.useState(), z = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -63,14 +63,14 @@ function y(e) {
       customGiftMessage: j,
       setCustomGiftMessage: M,
       selectedGiftStyle: P,
-      setSelectedGiftStyle: R,
+      setSelectedGiftStyle: w,
       sendGiftMessage: z,
       hasSentMessage: B,
       isSendingMessage: H,
       giftMessageError: W,
       recommendedGiftSkuIds: q,
       giftingOrigin: p,
-      claimableRewards: w,
+      claimableRewards: R,
       claimableVariants: D,
       selectedGiftingPromotionReward: x,
       setSelectedGiftingPromotionReward: L,

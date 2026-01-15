@@ -26,15 +26,15 @@ let u = (0, Chunk473749.forwardRef)(function(e, t) {
     className: d,
     style: f,
     ...p
-  } = e, [_, m] = (0, a.useState)(c ? "visible" : "hidden"), h = (0, a.useContext)(l);
-  if (!h) throw Error("<SharedElement> must be rendered inside a <SharedElementTransition>");
-  c && "hidden" === _ && m("visible"), t = (0, s.B)(t), (0, o.b)(() => {
+  } = e, [_, h] = (0, a.useState)(c ? "visible" : "hidden"), m = (0, a.useContext)(l);
+  if (!m) throw Error("<SharedElement> must be rendered inside a <SharedElementTransition>");
+  c && "hidden" === _ && h("visible"), t = (0, s.B)(t), (0, o.b)(() => {
     let e = t.current,
-      r = h.current,
+      r = m.current,
       a = r[n],
       o = null;
     if (e && c && a) {
-      m("visible");
+      h("visible");
       let t = e.getAnimations(),
         i = a.style.map(([t, n]) => {
           let r = e.style[t];
@@ -51,10 +51,10 @@ let u = (0, Chunk473749.forwardRef)(function(e, t) {
       o = requestAnimationFrame(() => {
         for (let [t, n] of(o = null, i)) e.style[t] = n
       }), delete r[n]
-    } else e && c && !a ? (queueMicrotask(() => (0, i.flushSync)(() => m("entering"))), o = requestAnimationFrame(() => {
-      o = null, m("visible")
+    } else e && c && !a ? (queueMicrotask(() => (0, i.flushSync)(() => h("entering"))), o = requestAnimationFrame(() => {
+      o = null, h("visible")
     })) : e && !c && queueMicrotask(() => {
-      r[n] ? (delete r[n], (0, i.flushSync)(() => m("exiting")), Promise.all(e.getAnimations().map(e => e.finished)).then(() => m("hidden")).catch(() => {})) : m("hidden")
+      r[n] ? (delete r[n], (0, i.flushSync)(() => h("exiting")), Promise.all(e.getAnimations().map(e => e.finished)).then(() => h("hidden")).catch(() => {})) : h("hidden")
     });
     return () => {
       if (null != o && cancelAnimationFrame(o), e && e.isConnected && !e.hasAttribute("data-exiting")) {
@@ -68,7 +68,7 @@ let u = (0, Chunk473749.forwardRef)(function(e, t) {
         }
       }
     }
-  }, [t, h, n, c]);
+  }, [t, m, n, c]);
   let g = (0, r.aX)({
     children: u,
     className: d,

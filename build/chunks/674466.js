@@ -2,7 +2,7 @@
 /** chunk id: 674466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Mq: () => h,
+  Mq: () => m,
   Su: () => f,
   bU: () => b,
   gr: () => p,
@@ -58,7 +58,7 @@ let _ = Object.freeze({
     "mediafoundation hw": "wmf_hw",
     "mediafoundation direct3d": "wmf_direct_3d"
   }),
-  m = Object.freeze({
+  h = Object.freeze({
     videotoolbox: "videotoolbox",
     libvpx: "vp8_libvpx",
     electron: "electron",
@@ -72,7 +72,7 @@ let _ = Object.freeze({
     "c2.mtk": "mediatek",
     "omx.mtk": "mediatek"
   });
-var h = function(e) {
+var m = function(e) {
   return e[e.None = 0] = "None", e[e.ClientSideDisableVideo = 1] = "ClientSideDisableVideo", e[e.SenderStopped = 2] = "SenderStopped", e
 }({});
 
@@ -85,8 +85,8 @@ function g(e) {
 
 function E(e) {
   if (null == e) return "unknown";
-  for (let t of Object.keys(m))
-    if (e.toLowerCase().includes(t)) return m[t];
+  for (let t of Object.keys(h))
+    if (e.toLowerCase().includes(t)) return h[t];
   return "uncategorized"
 }
 
@@ -106,9 +106,9 @@ class y {
     return null == e || (f.bytes = e.bytesReceived, f.framesCodec = e.framesDecoded, f.framesCodecError = null != (n = e.framesDecodeErrors) ? n : null, f.framesNetwork = e.framesReceived, f.packets = e.packetsReceived, f.packetsLost = e.packetsLost, f.framesDropped = e.framesDropped, f.resolution = null != e.resolution ? e.resolution.height : 0, f.minorResolution = null != e.resolution ? Math.min(e.resolution.height, e.resolution.width) : 0, f.majorResolution = null != e.resolution ? Math.max(e.resolution.height, e.resolution.width) : 0, f.timestamp = t, f.nackCount = e.nackCount, f.pliCount = e.pliCount, f.decoder = E(e.decoderImplementationName), f.codecType = b(e.codec.name), f.qpSum = 0, f.freezeCount = e.freezeCount, f.pauseCount = e.pauseCount, f.totalFreezesDuration = e.totalFreezesDuration, f.totalPausesDuration = e.totalPausesDuration, f.totalFramesDuration = e.totalFramesDuration, f.keyframes = null != (r = e.keyFramesDecoded) ? r : null, f.passthroughCount = null != (i = e.passthroughCount) ? i : 0, f.cryptorSuccessCount = null != (a = e.decryptSuccessCount) ? a : 0, f.cryptorFailureCount = null != (o = e.decryptFailureCount) ? o : 0, f.cryptorDuration = null != (s = e.decryptDuration) ? s : 0, f.cryptorAttempts = null != (l = e.decryptAttempts) ? l : 0, f.cryptorMissingKeyCount = null != (c = e.decryptMissingKeyCount) ? c : 0, f.cryptorInvalidNonceCount = null != (u = e.decryptInvalidNonceCount) ? u : 0, f.localWant = null != (d = e.sinkWantLocalAsInt) ? d : 0), f
   }
   static parseOutboundStats(e, t) {
-    var n, r, i, a, o, s, l, c, u, d, f, p, _, m, h, E, O, v, S, I, T, C, A, N, P;
-    let R = new y;
-    return null == e ? R : {
+    var n, r, i, a, o, s, l, c, u, d, f, p, _, h, m, E, O, v, S, I, T, C, A, N, P;
+    let w = new y;
+    return null == e ? w : {
       bytes: e.bytesSent,
       framesCodec: e.framesEncoded,
       framesCodecError: null,
@@ -139,8 +139,8 @@ class y {
       qualityFrameDrops: null != (f = e.qualityFrameDrops) ? f : 0,
       qualitySizeMismatches: null != (p = e.qualitySizeMismatches) ? p : 0,
       psnrDb: null != (_ = e.encoderQualityPsnr) ? _ : null,
-      keyframes: null != (m = e.keyFramesEncoded) ? m : null,
-      framesDroppedRateLimiter: null != (h = e.framesDroppedRateLimiter) ? h : null,
+      keyframes: null != (h = e.keyFramesEncoded) ? h : null,
+      framesDroppedRateLimiter: null != (m = e.framesDroppedRateLimiter) ? m : null,
       framesDroppedEncoderQueue: null != (E = e.framesDroppedEncoderQueue) ? E : null,
       framesDroppedCongestionWindow: null != (O = e.framesDroppedCongestionWindow) ? O : null,
       framesDroppedEncoder: null != (v = e.framesDroppedEncoder) ? v : null,
@@ -200,18 +200,18 @@ class O {
       majorResolution: f,
       encoder: p,
       decoder: _,
-      codecType: m,
-      localWant: h
+      codecType: h,
+      localWant: m
     } = t, {
       timestamp: g
     } = n, E = (o - g) / 1e3;
-    if (this.intervalTotal += E, this.resolutionTotal += u * E, this.minorResolutionTotal += d * E, this.majorResolutionTotal += f * E, this.cryptorMaxAttempts = Math.max(this.cryptorMaxAttempts, t.cryptorMaxAttempts), null != p && null != m && "encoderBuckets" in this) {
+    if (this.intervalTotal += E, this.resolutionTotal += u * E, this.minorResolutionTotal += d * E, this.majorResolutionTotal += f * E, this.cryptorMaxAttempts = Math.max(this.cryptorMaxAttempts, t.cryptorMaxAttempts), null != p && null != h && "encoderBuckets" in this) {
       let n = this;
-      n.encoderBuckets[p] += E, n.codecBuckets[m] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (n.encoderCodec = t.codecType), null != e.vmafScore && e.vmafScore >= 0 && (n.vmafScoreNum += 1, n.vmafScoreSum += e.vmafScore, n.vmafHistogram.addSample(e.vmafScore)), null != e.psnrDb && e.psnrDb >= 0 && (n.psnrDbNum += 1, n.psnrDbSum += e.psnrDb, n.psnrHistogram.addSample(e.psnrDb)), null != e.outboundSinkWant && 0 !== e.outboundSinkWant && (n.outboundSinkWantNum += 1, n.outboundSinkWantSum += e.outboundSinkWant)
+      n.encoderBuckets[p] += E, n.codecBuckets[h] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (n.encoderCodec = t.codecType), null != e.vmafScore && e.vmafScore >= 0 && (n.vmafScoreNum += 1, n.vmafScoreSum += e.vmafScore, n.vmafHistogram.addSample(e.vmafScore)), null != e.psnrDb && e.psnrDb >= 0 && (n.psnrDbNum += 1, n.psnrDbSum += e.psnrDb, n.psnrHistogram.addSample(e.psnrDb)), null != e.outboundSinkWant && 0 !== e.outboundSinkWant && (n.outboundSinkWantNum += 1, n.outboundSinkWantSum += e.outboundSinkWant)
     }
-    if (null != _ && null != m && "decoderBuckets" in this) {
+    if (null != _ && null != h && "decoderBuckets" in this) {
       let e = this;
-      e.decoderBuckets[_] += E, e.codecBuckets[m] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (e.decoderCodec = t.codecType)
+      e.decoderBuckets[_] += E, e.codecBuckets[h] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (e.decoderCodec = t.codecType)
     }
     if (this.statsWindow.length < 6) return;
     let {
@@ -229,7 +229,7 @@ class O {
       S <= e && (this.bitrateBuckets[e] += E)
     }), l.forEach(e => {
       I <= e && (this.fpsBuckets[e] += E)
-    }), this.resolutionHistogram.addSample(u), this.bitrateHistogram.addSample(S), this.fpsHistogram.addSample(I), this.localWantHistogram.addSample(h), this.statsWindow.shift()
+    }), this.resolutionHistogram.addSample(u), this.bitrateHistogram.addSample(S), this.fpsHistogram.addSample(I), this.localWantHistogram.addSample(m), this.statsWindow.shift()
   }
   addSystemResources() {
     this.systemResources.takeSample()

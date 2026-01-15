@@ -2,7 +2,7 @@
 /** chunk id: 411405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => R,
+  ZP: () => w,
   aQ: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -68,7 +68,7 @@ let S = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: o()(g.spoilerWarning, t),
-      children: h.intl.string(h.t["F+x38C"])
+      children: m.intl.string(m.t["F+x38C"])
     })
   },
   I = e => {
@@ -87,7 +87,7 @@ let S = e => {
           variant: "text-sm/normal",
           color: "always-white",
           className: g.explicitContentWarningText,
-          children: h.intl.string(h.t.SpxcUR)
+          children: m.intl.string(m.t.SpxcUR)
         })]
       })
     })
@@ -117,7 +117,7 @@ let S = e => {
           obscureOnly: true
         });
       default:
-        return (0, m.vE)(t)
+        return (0, h.vE)(t)
     }
   },
   C = e => {
@@ -132,7 +132,7 @@ let S = e => {
       children: (0, r.jsx)(c.P3F, {
         className: g.obscureHoverButton,
         onClick: i,
-        "aria-label": h.intl.string(h.t.ex5G9m),
+        "aria-label": m.intl.string(m.t.ex5G9m),
         children: n ? (0, r.jsx)(c.tEF, {
           size: "md",
           color: "currentColor"
@@ -167,24 +167,24 @@ class N extends Chunk473749.PureComponent {
       visible: f
     } = this.state, p = (0, r.jsx)(A.Consumer, {
       children: p => {
-        let m = p || f || !a;
+        let h = p || f || !a;
         return _.Xh.has(s) && !t ? (0, r.jsxs)("div", {
-          "aria-label": m ? true : this.ariaLabel,
-          "aria-expanded": m,
+          "aria-label": h ? true : this.ariaLabel,
+          "aria-expanded": h,
           style: i,
           className: o()(n, g.spoilerContent, g.spoilerContainer, g.attachmentContainer, g.opaque, {
-            [g.hidden]: !m,
+            [g.hidden]: !h,
             [g.constrainedObscureContent]: l
           }),
-          role: m ? "presentation" : "button",
-          tabIndex: m ? false : 0,
-          children: [m || t ? null : (0, r.jsx)(T, {
+          role: h ? "presentation" : "button",
+          tabIndex: h ? false : 0,
+          children: [h || t ? null : (0, r.jsx)(T, {
             reason: s,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
-            "aria-hidden": !m,
+            "aria-hidden": !h,
             className: g.spoilerInnerContainer,
-            children: e(!m)
+            children: e(!h)
           }), d ? null : (0, r.jsx)(C, {
             obscureReason: s,
             isVisible: f,
@@ -192,23 +192,23 @@ class N extends Chunk473749.PureComponent {
             obscurityControlClassName: u
           })]
         }) : (0, r.jsxs)(c.P3F, {
-          onClick: m ? true : this.removeObscurity,
-          "aria-label": m ? true : this.ariaLabel,
-          "aria-expanded": m,
+          onClick: h ? true : this.removeObscurity,
+          "aria-label": h ? true : this.ariaLabel,
+          "aria-expanded": h,
           style: i,
           className: o()(n, g.spoilerContent, g.spoilerContainer, g.attachmentContainer, {
-            [g.hidden]: !m,
-            [g.hiddenSpoiler]: !m
+            [g.hidden]: !h,
+            [g.hiddenSpoiler]: !h
           }),
-          role: m ? "presentation" : "button",
-          tabIndex: m ? false : 0,
-          children: [m || t ? null : (0, r.jsx)(T, {
+          role: h ? "presentation" : "button",
+          tabIndex: h ? false : 0,
+          children: [h || t ? null : (0, r.jsx)(T, {
             reason: s,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
-            "aria-hidden": !m,
+            "aria-hidden": !h,
             className: g.spoilerInnerContainer,
-            children: e(!m)
+            children: e(!h)
           })]
         })
       }
@@ -320,7 +320,7 @@ class N extends Chunk473749.PureComponent {
       case "embed":
         return this.renderObscuredEmbed();
       default:
-        return (0, m.vE)(e)
+        return (0, h.vE)(e)
     }
   }
   get ariaLabel() {
@@ -329,15 +329,15 @@ class N extends Chunk473749.PureComponent {
     } = this.props;
     switch (e) {
       case _.wk.SPOILER:
-        return h.intl.string(h.t["F+x38C"]);
+        return m.intl.string(m.t["F+x38C"]);
       case _.wk.EXPLICIT_CONTENT:
       case _.wk.GORE_CONTENT:
       case _.wk.SELF_HARM_CONTENT:
-        return h.intl.string(h.t.mlJ8Vf);
+        return m.intl.string(m.t.mlJ8Vf);
       case _.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return h.intl.string(h.t.MRdR7z);
+        return m.intl.string(m.t.MRdR7z);
       default:
-        return (0, m.vE)(e)
+        return (0, h.vE)(e)
     }
   }
   get tooltipText() {
@@ -346,15 +346,15 @@ class N extends Chunk473749.PureComponent {
     } = this.props;
     switch (e) {
       case _.wk.SPOILER:
-        return h.intl.string(h.t["F+x38C"]);
+        return m.intl.string(m.t["F+x38C"]);
       case _.wk.EXPLICIT_CONTENT:
       case _.wk.GORE_CONTENT:
       case _.wk.SELF_HARM_CONTENT:
-        return h.intl.string(h.t.mlJ8Vf);
+        return m.intl.string(m.t.mlJ8Vf);
       case _.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return h.intl.string(h.t.MRdR7z);
+        return m.intl.string(m.t.MRdR7z);
       default:
-        return (0, m.vE)(e)
+        return (0, h.vE)(e)
     }
   }
   constructor(...e) {
@@ -403,4 +403,4 @@ let P = e => {
   }))
 };
 P.Types = v, P.Reasons = Chunk936141.wk;
-let R = P
+let w = P

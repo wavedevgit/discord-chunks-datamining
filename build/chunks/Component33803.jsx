@@ -271,8 +271,8 @@ let ei = Chunk473749.memo(function(e) {
     }, l), c),
     f = () => d,
     _ = T.default.getUser(s),
-    m = Q(n, i),
-    h = X(i, _, T.default.getCurrentUser());
+    h = Q(n, i),
+    m = X(i, _, T.default.getCurrentUser());
   if (null != _) {
     let e = (0, P.ij)(_, i),
       r = (0, D.CF)(Y({
@@ -281,12 +281,12 @@ let ei = Chunk473749.memo(function(e) {
         author: e,
         guildId: null == i ? true : i.guild_id,
         compact: o
-      }, m), h);
+      }, h), m);
     t = () => r
   }
   let g = () => (0, r.jsx)("div", {
     className: V.channelNameContainer,
-    children: (0, r.jsx)(R.Z, {
+    children: (0, r.jsx)(w.Z, {
       channel: a,
       className: V.channelName,
       openChatWithoutConnecting: true
@@ -317,10 +317,10 @@ function ea(e) {
   } = (0, M.m)(true), C = (0, c.JA)(null != n ? n : ""), {
     onFocus: A
   } = C, P = z(C, ["onFocus"]), {
-    isFocused: R,
+    isFocused: w,
     handleFocus: x,
     handleBlur: j
-  } = (0, L.bb)(A), U = (0, u.e7)([m.Z], () => m.Z.keyboardModeEnabled), H = (0, u.e7)([I.Z], () => I.Z.can(G.Plq.MANAGE_MESSAGES, l), [l]), {
+  } = (0, L.bb)(A), U = (0, u.e7)([h.Z], () => h.Z.keyboardModeEnabled), H = (0, u.e7)([I.Z], () => I.Z.can(G.Plq.MANAGE_MESSAGES, l), [l]), {
     ruleName: W,
     embedChannel: q,
     decisionId: X,
@@ -335,7 +335,7 @@ function ea(e) {
     interactionUserId: eu
   } = (0, E.ZP)(s), ed = i.useMemo(() => (0, N.k$)(en, ee, l.id), [en, ee, l]), ef = Q(s, l), {
     selected: ep
-  } = ef, e_ = z(ef, ["selected"]), em = ep || U && R, eh = e => {
+  } = ef, e_ = z(ef, ["selected"]), eh = ep || U && w, em = e => {
     var t;
     null == (t = e_.onContextMenuModerateUser) || t.call(e_, e)
   }, eg = i.useCallback(() => {
@@ -381,7 +381,7 @@ function ea(e) {
               tag: "span",
               className: V.username,
               children: B.intl.string(B.t.hG1StD)
-            }), (0, r.jsx)(h.Z, {
+            }), (0, r.jsx)(m.Z, {
               type: Z.Hb.SYSTEM_DM,
               className: V.systemTag
             }), (0, r.jsx)(ei, {
@@ -398,7 +398,7 @@ function ea(e) {
           className: o()(V.messageContent, {
             [V.compact]: a
           }),
-          children: (0, r.jsx)(w.Z, K(Y({}, P), {
+          children: (0, r.jsx)(R.Z, K(Y({}, P), {
             message: s,
             channel: q,
             content: ed,
@@ -407,7 +407,7 @@ function ea(e) {
             hideTimestamp: true,
             className: o()(V.embedCard, {
               [V.compact]: a,
-              [V.selected]: em,
+              [V.selected]: eh,
               [V.isClickable]: null != ea && null != q
             }),
             childrenAccessories: (0, r.jsxs)(r.Fragment, {
@@ -488,7 +488,7 @@ function ea(e) {
                 size: "sm",
                 textVariant: "text-xs/normal",
                 text: B.intl.string(B.t.DEoVWZ),
-                onClick: eh
+                onClick: em
               })]
             }), eT ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {

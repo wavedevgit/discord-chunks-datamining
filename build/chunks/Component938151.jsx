@@ -65,7 +65,7 @@ let d = [{
     value: 40
   }],
   f = () => {
-    let [e, t] = i.useState(15), [n, f] = i.useState(8), [p, _] = i.useState("xl"), [m, h] = i.useState(true), g = i.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(s.P3F, {
+    let [e, t] = i.useState(15), [n, f] = i.useState(8), [p, _] = i.useState("xl"), [h, m] = i.useState(true), g = i.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(s.P3F, {
       className: u.child,
       onClick: () => console.log(t),
       children: t
@@ -74,12 +74,12 @@ let d = [{
       children: [(0, r.jsx)(l.Z, {
         gap: n,
         edgeFade: p,
-        hideActionsWhenDisabled: m,
+        hideActionsWhenDisabled: h,
         children: g
       }), (0, r.jsx)(c.dv, {}), (0, r.jsxs)(c.BZ, {
         children: [(0, r.jsx)(s.Checkbox, {
-          checked: m,
-          onChange: () => h(!m),
+          checked: h,
+          onChange: () => m(!h),
           label: "Hide Actions When Disabled"
         }), (0, r.jsx)(s.oil, {
           type: "number",

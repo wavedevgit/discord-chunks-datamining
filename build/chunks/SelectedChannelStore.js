@@ -34,7 +34,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function Z(e) {
 }
 
 function F() {
-  __OVERLAY__ || m.K.set(x, {
+  __OVERLAY__ || h.K.set(x, {
     selectedChannelId: a,
     selectedVoiceChannelId: s,
     lastChannelFollowingDestination: o,
@@ -247,7 +247,7 @@ function er(e) {
 }
 
 function ei() {
-  M = {}, a = null, i = true, U = {}, o = {}, s = null, m.K.remove(x)
+  M = {}, a = null, i = true, U = {}, o = {}, s = null, h.K.remove(x)
 }
 
 function ea(e) {
@@ -266,7 +266,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
   initialize() {
     if (!__OVERLAY__) {
       var e, t;
-      let n = null != (e = m.K.get(x)) ? e : {
+      let n = null != (e = h.K.get(x)) ? e : {
         selectedChannelId: a,
         selectedVoiceChannelId: s,
         lastChannelFollowingDestination: o,
@@ -274,7 +274,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
         selectedChannelIds: M,
         mostRecentSelectedTextChannelIds: U
       };
-      null != n.knownThreadIds && (G = new Set(n.knownThreadIds)), s = n.selectedVoiceChannelId, o = n.lastChannelFollowingDestination, l = n.lastConnectedTime, U = null != (t = n.mostRecentSelectedTextChannelIds) ? t : {}, null != n.selectedChannelIds && (M = D(R({}, n.selectedChannelIds), {
+      null != n.knownThreadIds && (G = new Set(n.knownThreadIds)), s = n.selectedVoiceChannelId, o = n.lastChannelFollowingDestination, l = n.lastConnectedTime, U = null != (t = n.mostRecentSelectedTextChannelIds) ? t : {}, null != n.selectedChannelIds && (M = D(w({}, n.selectedChannelIds), {
         null: null
       }))
     }

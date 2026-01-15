@@ -45,7 +45,7 @@ function O(e) {
     }
   });
   let v = () => {
-      (0, f.uL)(h.Z5c.CHANNEL(n, g.oC.ROLE_SUBSCRIPTIONS), {
+      (0, f.uL)(m.Z5c.CHANNEL(n, g.oC.ROLE_SUBSCRIPTIONS), {
         sourceLocationStack: O
       })
     },
@@ -91,7 +91,7 @@ function O(e) {
         children: T
       }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(m.Z, {
+      }), (0, r.jsx)(h.Z, {
         text: C,
         onClick: v
       })]

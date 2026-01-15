@@ -35,13 +35,13 @@ module.exports = function(e) {
       f = e.leafSet,
       p = e.text,
       _ = t.getKey(),
-      m = f.get("leaves"),
-      h = a.getComponentForKey(u),
+      h = f.get("leaves"),
+      m = a.getComponentForKey(u),
       g = a.getPropsForKey(u),
       E = o.encode(_, parseInt(u, 10), 0),
-      b = p.slice(m.first().get("start"), m.last().get("end")),
+      b = p.slice(h.first().get("start"), h.last().get("end")),
       y = c.getHTMLDirIfDifferent(l.getDirection(b), d);
-    return s.createElement(h, i({}, g, {
+    return s.createElement(m, i({}, g, {
       contentState: r,
       decoratedText: b,
       dir: y,

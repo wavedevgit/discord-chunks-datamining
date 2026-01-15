@@ -42,25 +42,25 @@ function D(e) {
     onNext: a,
     onClose: o,
     transitionState: l
-  } = e, c = R.intl.format(R.t.otHdfR, {
+  } = e, c = w.intl.format(w.t.otHdfR, {
     endDate: t.currentPeriodEnd
   });
-  t.isPurchasedExternally && null != t.paymentGateway ? c = R.intl.format(R.t.HbpFLg, {
+  t.isPurchasedExternally && null != t.paymentGateway ? c = w.intl.format(w.t.HbpFLg, {
     paymentGatewayName: P.Vz[t.paymentGateway],
     subscriptionManagementLink: (0, T.JE)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
-  }) : t.isPausedForFractionalPremium ? c = R.intl.format(R.t.Hzqe6y, {
+  }) : t.isPausedForFractionalPremium ? c = w.intl.format(w.t.Hzqe6y, {
     expirationDate: n.endsAt.toDate()
-  }) : i && (c = R.intl.format(R.t.gXSnul, {
+  }) : i && (c = w.intl.format(w.t.gXSnul, {
     endDate: t.currentPeriodEnd
   }));
-  let u = i ? R.intl.string(R.t.iIoSd6) : R.intl.string(R.t.Skzv0u),
+  let u = i ? w.intl.string(w.t.iIoSd6) : w.intl.string(w.t.Skzv0u),
     d = t.isPurchasedExternally ? [] : [{
       variant: "secondary",
-      text: R.intl.string(R.t["ETE/oC"]),
+      text: w.intl.string(w.t["ETE/oC"]),
       onClick: o
     }, {
       variant: "primary",
-      text: R.intl.string(R.t.PDTjLN),
+      text: w.intl.string(w.t.PDTjLN),
       onClick: a
     }];
   return (0, r.jsx)(s.Modal, {
@@ -70,9 +70,9 @@ function D(e) {
     title: u,
     actions: d,
     children: (0, r.jsxs)("div", {
-      className: w.body,
+      className: R.body,
       children: [(0, r.jsx)("div", {
-        className: w.cancelImage
+        className: R.cancelImage
       }), (0, r.jsx)("div", {
         children: c
       })]
@@ -131,14 +131,14 @@ function j(e) {
     }
   }), {
     analyticsLocations: G
-  } = (0, p.ZP)(), [Z] = (0, h.ED)({
+  } = (0, p.ZP)(), [Z] = (0, m.ED)({
     subscriptionId: o.id,
     renewal: true,
     currency: o.currency,
     paymentSourceId: o.paymentSourceId,
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-  }), F = null != U ? (0, T.Zx)(o, null != (a = null == (t = x[0]) ? true : t.quantity) ? a : 0, U.id) : null, [B] = (0, h.ED)({
+  }), F = null != U ? (0, T.Zx)(o, null != (a = null == (t = x[0]) ? true : t.quantity) ? a : 0, U.id) : null, [B] = (0, m.ED)({
     subscriptionId: o.id,
     items: F,
     renewal: true,
@@ -168,10 +168,10 @@ function j(e) {
       interval: W,
       intervalCount: K
     } = k,
-    z = R.intl.format(R.t["0W23cu"], {
+    z = w.intl.format(w.t["0W23cu"], {
       endDate: B.subscriptionPeriodStart
     });
-  return o.isPausedForFractionalPremium && u.fetched && (z = R.intl.format(R.t.eb0xgS, {
+  return o.isPausedForFractionalPremium && u.fetched && (z = w.intl.format(w.t.eb0xgS, {
     expirationDate: u.endsAt.toDate()
   })), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(A.Z, {
@@ -179,9 +179,9 @@ function j(e) {
       onClose: O
     }), (0, r.jsxs)(c.hzk, {
       "data-migration-pending": true,
-      className: w.body,
+      className: R.body,
       children: [null !== P && (0, r.jsx)("div", {
-        className: w.error,
+        className: R.error,
         children: (0, r.jsx)(c.M14, {
           type: "critical",
           children: P
@@ -189,15 +189,15 @@ function j(e) {
       }), (0, r.jsx)("div", {
         children: z
       }), (0, r.jsxs)(E.aO, {
-        className: w.invoiceTable,
+        className: R.invoiceTable,
         children: [(0, r.jsx)(E.Z9, {
-          children: R.intl.string(R.t.iqhIp4)
+          children: w.intl.string(w.t.iqhIp4)
         }), (0, r.jsx)(E.B1, {
-          label: R.intl.format(R.t["Vg+LRr"], {
+          label: w.intl.format(w.t["Vg+LRr"], {
             subscriptionCount: 1
           }),
           value: (0, C.og)((0, C.T4)(Y, o.currency), W, K),
-          className: w.invoiceCancelRow
+          className: R.invoiceCancelRow
         }), null != F && F.length > 0 ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)(E.UN, {}), (0, r.jsx)(y.nd, {
             premiumSubscription: o,
@@ -208,17 +208,17 @@ function j(e) {
       })]
     }), (0, r.jsxs)(c.mzw, {
       "data-migration-pending": true,
-      align: m.Z.Align.CENTER,
-      justify: m.Z.Justify.BETWEEN,
+      align: h.Z.Align.CENTER,
+      justify: h.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(c.Button, {
         variant: "critical-primary",
-        text: R.intl.string(R.t["/AS/gM"]),
+        text: w.intl.string(w.t["/AS/gM"]),
         disabled: S,
         onClick: async () => {
           try {
             I(true), D(null), await L(o, x, G, s), _()
           } catch (e) {
-            D(R.intl.string(R.t["5mlOCW"])), I(false)
+            D(w.intl.string(w.t["5mlOCW"])), I(false)
           }
         }
       }), (0, r.jsx)(b.Z, {
@@ -238,21 +238,21 @@ function M(e) {
   t.isPausedForFractionalPremium && (o = n.endsAt.toDate());
   let l = [{
     variant: "primary",
-    text: R.intl.string(R.t.BddRzS),
+    text: w.intl.string(w.t.BddRzS),
     onClick: i
   }];
   return (0, r.jsx)(s.Modal, {
     transitionState: a,
     onClose: i,
     size: "sm",
-    title: R.intl.string(R.t["fZzV/B"]),
+    title: w.intl.string(w.t["fZzV/B"]),
     actions: l,
     children: (0, r.jsxs)("div", {
-      className: w.body,
+      className: R.body,
       children: [(0, r.jsx)("div", {
-        className: w.cancelImage
+        className: R.cancelImage
       }), (0, r.jsx)("div", {
-        children: R.intl.format(R.t["H+z0ns"], {
+        children: w.intl.format(w.t["H+z0ns"], {
           endDate: o
         })
       })]
@@ -271,7 +271,7 @@ function k(e) {
   }, []);
   let s = (0, l.e7)([S.Z], () => S.Z.getPremiumTypeSubscription()),
     d = (0, _.Z)(),
-    [m, h] = i.useState(1),
+    [h, m] = i.useState(1),
     {
       analyticsLocations: g
     } = (0, p.ZP)(f.Z.GUILD_BOOST_CANCELLATION_MODAL);
@@ -279,13 +279,13 @@ function k(e) {
     "data-migration-pending": true,
     children: (0, r.jsx)(c.$jN, {})
   });
-  else switch (m) {
+  else switch (h) {
     case 1:
       t = (0, r.jsx)(D, {
         premiumSubscription: s,
         fractionalPremiumInfo: d,
         isInventory: null == n.premiumGuildSubscription,
-        onNext: () => h(2),
+        onNext: () => m(2),
         onClose: o,
         transitionState: a
       });
@@ -299,8 +299,8 @@ function k(e) {
           premiumSubscription: s,
           guildBoostSlotId: n.id,
           fractionalPremiumInfo: d,
-          onBack: () => h(1),
-          onNext: () => h(3),
+          onBack: () => m(1),
+          onNext: () => m(3),
           onClose: o
         })
       });
@@ -314,7 +314,7 @@ function k(e) {
       });
       break;
     default:
-      throw Error("Unexpected step: ".concat(m))
+      throw Error("Unexpected step: ".concat(h))
   }
   return (0, r.jsx)(p.Gt, {
     value: g,

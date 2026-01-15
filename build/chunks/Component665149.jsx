@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk79712 = require("./79712.jsx"),
   Chunk195262 = require("./195262.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,14 +28,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ let O = 24,
       muted: d = false,
       level: f = 1,
       ref: p
-    } = e, m = (0, r.jsx)(u.y5t, {
+    } = e, h = (0, r.jsx)(u.y5t, {
       forceLevel: f,
       children: (0, r.jsx)(u.Heading, {
         variant: "text-md/medium",
@@ -106,13 +106,13 @@ let O = 24,
       onContextMenu: a,
       onKeyDown: l,
       className: o()(n, _.titleWrapper),
-      children: m
+      children: h
     }) : (0, r.jsx)("div", {
       ref: p,
       className: o()(n, _.titleWrapper),
       onContextMenu: a,
       onKeyDown: l,
-      children: m
+      children: h
     })
   },
   S = Chunk473749.forwardRef(function(e, t) {
@@ -124,7 +124,7 @@ let O = 24,
       disabled: l = false,
       showBadge: d = false,
       badgePosition: p = "bottom",
-      color: m,
+      color: h,
       foreground: g,
       background: E,
       icon: b,
@@ -137,15 +137,15 @@ let O = 24,
       tooltipDisabled: A,
       tooltipSpacing: N,
       role: P,
-      "aria-label": R,
-      "aria-hidden": w,
+      "aria-label": w,
+      "aria-hidden": R,
       "aria-checked": D,
       "aria-expanded": x,
       "aria-haspopup": L,
       "data-jump-section": j
     } = e, M = null != E ? {
       secondaryColorClass: E
-    } : {}, k = (0, r.jsx)(b, h({
+    } : {}, k = (0, r.jsx)(b, m({
       x: 0,
       y: 0,
       width: y,
@@ -153,8 +153,8 @@ let O = 24,
       size: "custom",
       className: o()(i, _.icon),
       colorClass: null != g ? g : true,
-      color: null != m ? m : "currentColor"
-    }, M)), U = R;
+      color: null != h ? h : "currentColor"
+    }, M)), U = w;
     return null == U && "string" == typeof I && (U = I), (0, r.jsx)(c.u, {
       __unsupportedReactNodeAsText: I,
       position: T,
@@ -168,7 +168,7 @@ let O = 24,
           [_.iconDisabled]: l
         }),
         "aria-label": U,
-        children: (0, r.jsx)(b, h({
+        children: (0, r.jsx)(b, m({
           x: 0,
           y: 0,
           width: y,
@@ -176,8 +176,8 @@ let O = 24,
           size: "custom",
           className: o()(i, _.icon),
           colorClass: null != g ? g : true,
-          color: null != m ? m : "currentColor",
-          "aria-hidden": w
+          color: null != h ? h : "currentColor",
+          "aria-hidden": R
         }, M))
       }) : (0, r.jsxs)(u.P3F, {
         innerRef: t,
@@ -192,7 +192,7 @@ let O = 24,
         }),
         role: P,
         "aria-label": U,
-        "aria-hidden": w,
+        "aria-hidden": R,
         "aria-checked": D,
         "aria-haspopup": L,
         "aria-expanded": x,
@@ -213,7 +213,7 @@ let O = 24,
     var {
       className: n
     } = e, i = b(e, ["className"]);
-    return (0, r.jsx)(S, E(h({}, i), {
+    return (0, r.jsx)(S, E(m({}, i), {
       className: o()(_.channelIcon, n),
       ref: t
     }))
@@ -250,8 +250,8 @@ let A = e => {
     children: c,
     childrenBottom: f,
     toolbar: p,
-    onDoubleClick: m,
-    "aria-label": h,
+    onDoubleClick: h,
+    "aria-label": m,
     "aria-labelledby": g,
     role: E,
     scrollable: b,
@@ -265,7 +265,7 @@ let A = e => {
       [_.themedMobile]: l.tq,
       [_.hidden]: O
     }),
-    "aria-label": h,
+    "aria-label": m,
     "aria-labelledby": g,
     role: E,
     ref: v,
@@ -277,7 +277,7 @@ let A = e => {
           className: o()(_.children, n, {
             [_.scrollable]: b
           }),
-          onDoubleClick: m,
+          onDoubleClick: h,
           children: [l.tq && null != S ? (0, r.jsx)(s.r, {
             onClick: S,
             className: _.hamburger

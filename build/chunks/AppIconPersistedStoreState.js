@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 2,
-  h = {
+let h = 2,
+  m = {
     client: {
       desktop: Chunk997945.aH.DEFAULT,
       coachmarkImpressions: 0
@@ -35,7 +35,7 @@ let m = 2,
     (g = !c.ZP.canUsePremiumAppIcons(s.default.getCurrentUser())) && b(u.aH.DEFAULT)
   },
   b = e => {
-    if (h.client.desktop = e, !g) {
+    if (m.client.desktop = e, !g) {
       var t;
       l.default.track(d.rMx.APP_ICON_UPDATED, {
         icon_id: e,
@@ -53,9 +53,9 @@ function y(e) {
 }
 
 function O() {
-  g && (h.client = {
+  g && (m.client = {
     desktop: u.aH.DEFAULT,
-    coachmarkImpressions: m
+    coachmarkImpressions: h
   })
 }
 
@@ -63,21 +63,21 @@ function v(e) {
   let {
     markAsDismissed: t
   } = e;
-  h.client.coachmarkImpressions += 1, h.client.coachmarkImpressions >= m && (null == t || t(f.L.UNKNOWN), O(), (0, o.Ll)())
+  m.client.coachmarkImpressions += 1, m.client.coachmarkImpressions >= h && (null == t || t(f.L.UNKNOWN), O(), (0, o.Ll)())
 }
 class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (h = e), this.waitFor(s.default), this.syncWith([s.default], E)
+    null != e && (m = e), this.waitFor(s.default), this.syncWith([s.default], E)
   }
   get isUpsellPreview() {
     return g
   }
   getState() {
-    return h
+    return m
   }
   getCurrentDesktopIcon() {
     var e;
-    return null == h || null == (e = h.client) ? true : e.desktop
+    return null == m || null == (e = m.client) ? true : e.desktop
   }
 }
 _(S, "displayName", "AppIconPersistedStoreState"), _(S, "persistKey", "AppIconPersistedStoreState");

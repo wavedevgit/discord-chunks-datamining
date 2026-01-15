@@ -57,7 +57,7 @@ function c(e) {
 }
 
 function u(e, t, n, i, o) {
-  var u, d, f, p, _, m, h;
+  var u, d, f, p, _, h, m;
   let g = {},
     E = {},
     b = [],
@@ -170,10 +170,10 @@ function u(e, t, n, i, o) {
     }
   }
   let I = "firefox" === (null != (p = platform.name) ? p : "unknown").toLowerCase() && 142 === parseInt(null != (_ = platform.version) ? _ : "", 10),
-    T = (null != (m = O.currentRoundTripTime) ? m : 0) * (I ? 1 : 1e3);
+    T = (null != (h = O.currentRoundTripTime) ? h : 0) * (I ? 1 : 1e3);
   return {
     transport: {
-      availableOutgoingBitrate: null != (h = O.availableOutgoingBitrate) ? h : 0,
+      availableOutgoingBitrate: null != (m = O.availableOutgoingBitrate) ? m : 0,
       bytesReceived: O.bytesReceived,
       bytesSent: O.bytesSent,
       ping: T

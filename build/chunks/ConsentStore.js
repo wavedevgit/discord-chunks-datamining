@@ -54,11 +54,11 @@ function _(e) {
   u = s({}, t), l = true
 }
 
-function m(e) {
+function h(e) {
   d = e.consentRequired
 }
 
-function h() {
+function m() {
   d = null
 }
 class g extends(r = Chunk442837.ZP.Store) {
@@ -83,6 +83,6 @@ let E = new g(Chunk570140.Z, {
   CONNECTION_OPEN: f,
   OVERLAY_INITIALIZE: p,
   UPDATE_CONSENTS: _,
-  SET_CONSENT_REQUIRED: m,
-  LOGOUT: h
+  SET_CONSENT_REQUIRED: h,
+  LOGOUT: m
 })

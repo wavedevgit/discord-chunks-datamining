@@ -40,11 +40,11 @@ let u = .5,
   }),
   _ = c({}, p);
 
-function m() {
+function h() {
   d = new Map(_.userAffinities.filter(e => !o.Z.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
 }
 
-function h() {
+function m() {
   f = true
 }
 
@@ -53,7 +53,7 @@ function g(e) {
     affineUsers: t,
     userFlags: n
   } = e;
-  _.lastFetched = Date.now(), f = false, _.userAffinities = t, _.userFlags = n, m()
+  _.lastFetched = Date.now(), f = false, _.userAffinities = t, _.userFlags = n, h()
 }
 
 function E() {
@@ -67,9 +67,9 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(o.Z), null != e) {
       var t;
-      _.userAffinities = e.userAffinities, _.userFlags = null != (t = e.userFlags) ? t : {}, _.lastFetched = e.lastFetched, m()
+      _.userAffinities = e.userAffinities, _.userFlags = null != (t = e.userFlags) ? t : {}, _.lastFetched = e.lastFetched, h()
     }
-    this.syncWith([o.Z], m)
+    this.syncWith([o.Z], h)
   }
   shouldFetch() {
     if (!f) return Date.now() - _.lastFetched > s.K
@@ -107,7 +107,7 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
 }
 l(y, "displayName", "UserAffinitiesV2Store"), l(y, "persistKey", "UserAffinitiesStoreV2");
 let O = new y(Chunk570140.Z, {
-  LOAD_USER_AFFINITIES_V2: h,
+  LOAD_USER_AFFINITIES_V2: m,
   LOAD_USER_AFFINITIES_V2_SUCCESS: g,
   LOAD_USER_AFFINITIES_V2_FAILURE: E,
   LOGOUT: b

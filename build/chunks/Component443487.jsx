@@ -101,7 +101,7 @@ function v(e) {
     participant1: v,
     participant2: S,
     numOtherParticipants: I
-  } = (0, m.Z)(a, l), T = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), C = (0, c.j)({
+  } = (0, h.Z)(a, l), T = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), C = (0, c.j)({
     displayNameStyles: null == b ? true : b.displayNameStyles
   }), A = (0, o.e7)([f.Z], () => {
     var e;
@@ -109,7 +109,7 @@ function v(e) {
   }, [n, T]), N = (0, u.X7)(n, E, null != (t = null == T ? true : T.colorStrings) ? t : null);
   if (null == b) return null;
   let P = null == T ? true : T.colorString,
-    R = _.ZP.getName(n, i, b);
+    w = _.ZP.getName(n, i, b);
   return (0, r.jsxs)("div", {
     className: g.userSection,
     children: [(0, r.jsx)(O, {
@@ -120,7 +120,7 @@ function v(e) {
       colorString: null != P ? P : null,
       roleName: A,
       colorStrings: N,
-      name: R,
+      name: w,
       className: g.userName,
       displayNameStylesFont: C,
       "aria-hidden": true
@@ -134,7 +134,7 @@ function v(e) {
         children: ["+", I]
       })
     }) : null, (0, r.jsx)(s.nn4, {
-      children: h.intl.format(h.t.rH95Gu, {
+      children: m.intl.format(m.t.rH95Gu, {
         user0: _.ZP.getName(n, i, v),
         user1: _.ZP.getName(n, i, S),
         countOthers: I,

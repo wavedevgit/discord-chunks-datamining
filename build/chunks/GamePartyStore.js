@@ -35,34 +35,34 @@ function p(e) {
   return e
 }
 let _ = {},
-  m = new Map;
+  h = new Map;
 
-function h(e, t) {
+function m(e, t) {
   var n;
   return (null != (n = _[e]) ? n : {})[t]
 }
 
 function g(e, t) {
-  let n = h(e, t);
+  let n = m(e, t);
   if (null == n) return;
   let r = _[e];
   delete r[t], a().isEmpty(r) && delete _[e];
-  let i = m.get(n);
-  null != i && (i.delete(e), 0 === i.size && m.delete(n))
+  let i = h.get(n);
+  null != i && (i.delete(e), 0 === i.size && h.delete(n))
 }
 
 function E(e, t, n) {
   var r;
   let i = _[e];
   if (null == i && (i = _[e] = {}), i[t] = n, c.Z.isBlocked(e) || c.Z.isIgnored(e)) return;
-  let a = null != (r = m.get(n)) ? r : new Set;
-  m.set(n, a), a.add(e)
+  let a = null != (r = h.get(n)) ? r : new Set;
+  h.set(n, a), a.add(e)
 }
 
 function b(e, t, n, r) {
   let i = n.find(e => null != e.party && e.party.id),
     a = null != i && null != i.party ? i.party.id : null,
-    o = h(t, e);
+    o = m(t, e);
   if (null == a || r === d.Skl.OFFLINE) return null != o && void g(t, e);
   if (null != o) {
     if (o === a) returnfalse;
@@ -93,7 +93,7 @@ function O(e) {
     parties: t,
     userParties: n
   } = e;
-  m = new Map, _ = p({}, n), Object.keys(t).forEach(e => m.set(e, new Set(t[e])))
+  h = new Map, _ = p({}, n), Object.keys(t).forEach(e => h.set(e, new Set(t[e])))
 }
 
 function v(e) {
@@ -173,37 +173,37 @@ function P(e) {
   let n = _[t.id];
   if (null == n) returnfalse;
   for (let e of a().values(n)) {
-    let n = m.get(e);
+    let n = h.get(e);
     null != n && n.delete(t.id)
   }
 }
 
-function R(e) {
+function w(e) {
   let {
     relationship: t
   } = e, n = _[t.id];
   if (null == n) returnfalse;
   for (let e of a().values(n)) {
-    let n = m.get(e);
+    let n = h.get(e);
     null != n && n.add(t.id)
   }
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.syncWith([u.Z], N), this.waitFor(l.default, c.Z, u.Z)
   }
   getParty(e) {
-    return null != e && m.has(e) ? m.get(e) : null
+    return null != e && h.has(e) ? h.get(e) : null
   }
   getUserParties() {
     return _
   }
   getParties() {
-    return m
+    return h
   }
 }
-f(w, "displayName", "GamePartyStore");
-let D = new w(Chunk570140.Z, {
+f(R, "displayName", "GamePartyStore");
+let D = new R(Chunk570140.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: y,
   OVERLAY_INITIALIZE: O,
   GUILD_CREATE: v,
@@ -213,5 +213,5 @@ let D = new w(Chunk570140.Z, {
   THREAD_MEMBERS_UPDATE: C,
   RELATIONSHIP_ADD: P,
   RELATIONSHIP_UPDATE: P,
-  RELATIONSHIP_REMOVE: R
+  RELATIONSHIP_REMOVE: w
 })

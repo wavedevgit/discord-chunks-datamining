@@ -26,7 +26,7 @@ let c = (0, Chunk509613.wf)(Chunk313789.n.BILLING_PANEL, {
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.BILLING_SIDEBAR_ITEM, {
     useTitle: () => S.intl.string(S.t.oeUm2s),
-    icon: Chunk657707.ciH,
+    icon: Chunk657707.CreditCardIcon,
     getLegacySearchKey: () => (0, u.Gl)("BillingPanel") ? true : T.s6.BILLING,
     buildLayout: () => (0, u.Gl)("BillingPanel") ? [c] : [E]
   })

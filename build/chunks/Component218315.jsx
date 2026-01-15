@@ -133,7 +133,7 @@ class S extends Chunk147913.Z {
       } = await this._getOrLoadOnboardingMemberActions(e), i = null == n ? true : n.find(e => e.channelId === t);
       (null == r ? true : r[t]) !== true && null != i && i.actionType === _.NewMemberActionTypes.CHAT && (0, f.Oh)(e, t)
     }), b(this, "_getOrLoadOnboardingMemberActions", async e => {
-      let t = (0, h.s)(e),
+      let t = (0, m.s)(e),
         n = s.Z.isFullServerPreview(e);
       if (!t && !n) return {};
       let r = u.ZP.getSelfMember(e);
@@ -156,7 +156,7 @@ class S extends Chunk147913.Z {
       let {
         completedActions: r,
         loading: a
-      } = m.Z.getState(e);
+      } = h.Z.getState(e);
       return null == r && !a && (0, i.yE)(null != (n = t.flags) ? n : 0, E.q.STARTED_HOME_ACTIONS) ? await (0, f.Fg)(e) : r
     })
   }

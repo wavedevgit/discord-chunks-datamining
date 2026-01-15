@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Sr: () => E,
-  WQ: () => h,
-  cT: () => m,
+  WQ: () => m,
+  cT: () => h,
   d$: () => p,
   ef: () => b,
   hL: () => _,
@@ -99,7 +99,7 @@ function _() {
   })
 }
 
-function m(e) {
+function h(e) {
   i.tn.del({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e.id),
     rejectWithError: true
@@ -110,7 +110,7 @@ function m(e) {
     })
   })
 }
-async function h(e, t) {
+async function m(e, t) {
   let n = await i.tn.patch({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e),
     body: {

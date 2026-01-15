@@ -19,10 +19,10 @@ async function s(e, t, s) {
     appContext: p
   } = s, _ = (0, a.Gwq)();
   try {
-    let s, m = d ? i.s.REPORT_TO_MOD.has(e.name) ? await (0, o.Lo)(e, t) : await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
-      h = [],
+    let s, h = d ? i.s.REPORT_TO_MOD.has(e.name) ? await (0, o.Lo)(e, t) : await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
+      m = [],
       g = e => {
-        h.push(e)
+        m.push(e)
       },
       E = e => {
         s = e, null == l || l()
@@ -32,7 +32,7 @@ async function s(e, t, s) {
         default: t
       } = await Promise.all([n.e("53870"), n.e("55827"), n.e("62880"), n.e("74330"), n.e("90882"), n.e("54844")]).then(n.bind(n, 186023));
       return n => (0, r.jsx)(t, {
-        menu: m,
+        menu: h,
         reportType: e,
         modalProps: n,
         onNavigate: g,
@@ -42,7 +42,7 @@ async function s(e, t, s) {
       })
     }, {
       onCloseCallback: () => {
-        (0, o.k8)(e, h, s), null == c || c(), u && (0, o.X)(e, null != s ? s : null)
+        (0, o.k8)(e, m, s), null == c || c(), u && (0, o.X)(e, null != s ? s : null)
       },
       contextKey: null != p ? (0, a.VnL)(p) : _
     })

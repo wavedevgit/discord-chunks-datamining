@@ -57,8 +57,8 @@ function I(e) {
     openedAt: A,
     onHide: N,
     newAnalyticsLocations: P = [],
-    disableAutoFocus: R = false,
-    onClickContainer: w
+    disableAutoFocus: w = false,
+    onClickContainer: R
   } = e, D = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: x
   } = (0, l.ZP)([...P, D ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), L = (0, d.ZB)({
@@ -73,7 +73,7 @@ function I(e) {
     null == v || v(null == j ? true : j.current)
   }, [j, v]);
   let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    U = R ? "div" : o.VqE;
+    U = w ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: x,
     children: (0, r.jsx)(d.Mt, {
@@ -85,8 +85,8 @@ function I(e) {
       children: (0, r.jsx)(U, {
         ref: j,
         "aria-label": t.username,
-        onClick: w,
-        children: (0, r.jsx)(m.Z, {
+        onClick: R,
+        children: (0, r.jsx)(h.Z, {
           user: t,
           displayProfile: M,
           themeType: E.l.POPOUT,
@@ -123,7 +123,7 @@ function I(e) {
                       analyticsLocations: x
                     }, L))
                   }
-                }), (0, r.jsx)(h.Z, {
+                }), (0, r.jsx)(m.Z, {
                   userId: t.id,
                   onClick: () => {
                     N(), (0, f.pQ)(S({

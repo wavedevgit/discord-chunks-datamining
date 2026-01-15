@@ -46,7 +46,7 @@ let d = [{
         let {
           disabled: t,
           placeholder: n
-        } = e, [f, p] = i.useState(true), [_, m] = i.useState(true), [h, g] = i.useState(true);
+        } = e, [f, p] = i.useState(true), [_, h] = i.useState(true), [m, g] = i.useState(true);
         return (0, r.jsxs)(u.Kqy, {
           gap: 8,
           children: [(0, r.jsx)(c.y6, {
@@ -65,12 +65,12 @@ let d = [{
             placeholder: n,
             isDisabled: t
           }), (0, r.jsx)(a.W, {
-            onSelect: m,
+            onSelect: h,
             value: _,
             disabled: t
           }), (0, r.jsx)(s.M, {
             onChange: g,
-            value: h,
+            value: m,
             disabled: t
           })]
         })

@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,13 +90,13 @@ async function E(e) {
       value: "".concat(Date.now())
     })
   }, o.fy.INFREQUENT_USER_ACTION);
-  let m = g(t, p);
-  if (r.uv.announce(m), f) return;
+  let h = g(t, p);
+  if (r.uv.announce(h), f) return;
   let E = _({
     next_status: t,
     prev_status: n
   }, a.Z.getGlobalStats());
-  null != u && (E = h(_({}, E), {
+  null != u && (E = m(_({}, E), {
     expire_duration_minutes: null != u ? u / 6e4 : null
   })), null != c && (E = _({}, E, c)), l.default.track(d.rMx.USER_STATUS_UPDATED, E)
 }

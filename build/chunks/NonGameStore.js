@@ -23,8 +23,8 @@ function d(e, t, n) {
 let f = Chunk70956.Z.Millis.DAY,
   p = new Chunk642047.Z,
   _ = "",
-  m = null,
-  h = false;
+  h = null,
+  m = false;
 
 function g(e) {
   var t, n, r, i;
@@ -43,7 +43,7 @@ function E() {
 }
 
 function b() {
-  r = false, h = true
+  r = false, m = true
 }
 
 function y(e) {
@@ -52,7 +52,7 @@ function y(e) {
     etag: n
   } = e;
   for (let e of (null != n && _ !== n && (p.clear(), _ = n), t)) p.set(e.id, g(e));
-  r = true, m = Date.now(), h = true
+  r = true, h = Date.now(), m = true
 }
 class O extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -78,10 +78,10 @@ class O extends(i = Chunk442837.ZP.PersistedStore) {
     return _
   }
   get lastFetched() {
-    return m
+    return h
   }
   get hasAttemptedFetch() {
-    return h
+    return m
   }
   get ttl() {
     return f
@@ -90,7 +90,7 @@ class O extends(i = Chunk442837.ZP.PersistedStore) {
     return p.get(e)
   }
   canFetch() {
-    return !r && (null == m || Date.now() >= m + f)
+    return !r && (null == h || Date.now() >= h + f)
   }
 }
 d(O, "displayName", "NonGameStore"), d(O, "persistKey", "NonGameStore");

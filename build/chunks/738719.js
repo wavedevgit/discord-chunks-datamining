@@ -12,18 +12,18 @@ module.exports = function(e, t, n, a, o) {
     f = r.decode(a),
     p = f.blockKey,
     _ = e.getBlockTree(p),
-    m = _ && _.getIn([f.decoratorKey, "leaves", f.leafKey]);
-  if (!d || !m) return s;
-  var h = d.get("start"),
-    g = m.get("start"),
-    E = d ? h + n : null,
-    b = m ? g + o : null;
+    h = _ && _.getIn([f.decoratorKey, "leaves", f.leafKey]);
+  if (!d || !h) return s;
+  var m = d.get("start"),
+    g = h.get("start"),
+    E = d ? m + n : null,
+    b = h ? g + o : null;
   if (s.getAnchorKey() === c && s.getAnchorOffset() === E && s.getFocusKey() === p && s.getFocusOffset() === b) return s;
   var y = false;
   if (c === p) {
     var O = d.get("end"),
-      v = m.get("end");
-    y = g === h && v === O ? o < n : g < h
+      v = h.get("end");
+    y = g === m && v === O ? o < n : g < m
   } else y = e.getCurrentContent().getBlockMap().keySeq().skipUntil(function(e) {
     return e === c || e === p
   }).first() === p;

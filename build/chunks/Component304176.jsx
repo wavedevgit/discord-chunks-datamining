@@ -76,20 +76,20 @@ let A = 40,
       g.default.track(b.rMx.OPEN_POPOUT, I({
         type: "Role Icon Popout",
         guild_id: n.id
-      }, (0, l.v_)(_.Z.getChannel(h.Z.getChannelId(n.id)))))
+      }, (0, l.v_)(_.Z.getChannel(m.Z.getChannelId(n.id)))))
     });
-    let T = (0, i.e7)([m.Z], () => null != t.roleId ? m.Z.getRole(n.id, t.roleId) : true),
+    let T = (0, i.e7)([h.Z], () => null != t.roleId ? h.Z.getRole(n.id, t.roleId) : true),
       N = (0, d.Z)(T),
       P = N ? O.intl.formatToPlainString(O.t.t0928V, {
         name: S
       }) : O.intl.formatToPlainString(O.t.UDDkGy, {
         name: S
       }),
-      R = C(I({}, t), {
+      w = C(I({}, t), {
         src: null == t.src ? t.src : (0, c.o)(t.src, A),
         size: A
       }),
-      w = () => {
+      R = () => {
         (0, u.f)({
           guildId: n.id,
           location: {
@@ -100,7 +100,7 @@ let A = 40,
       D = () => {
         (0, p.uL)(b.Z5c.CHANNEL(n.id, y.oC.ROLE_SUBSCRIPTIONS))
       },
-      x = N ? D : w;
+      x = N ? D : R;
     return (0, r.jsx)(o.VqE, {
       children: (0, r.jsx)(E.W_, {
         children: (0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ let A = 40,
             className: v.mainContent,
             children: [(0, r.jsx)("div", {
               className: v.roleIconContainer,
-              children: (0, r.jsx)(f.Z, C(I({}, R), {
+              children: (0, r.jsx)(f.Z, C(I({}, w), {
                 enableTooltip: false,
                 className: v.__invalid_roleIcon,
                 enableHeight: false

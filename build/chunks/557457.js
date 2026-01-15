@@ -8,7 +8,7 @@ require.d(exports, {
   bp: () => O,
   ml: () => y,
   nG: () => g,
-  tR: () => h
+  tR: () => m
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -24,7 +24,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   if (null == e) return;
   let t = e.maxResolution.type === _.uA.SOURCE ? f.LY.RESOLUTION_SOURCE : e.maxResolution.height,
     n = (0, f.aW)(t);
@@ -46,13 +46,13 @@ function b(e, t, n) {
 }
 
 function y(e) {
-  return e.type === _.uA.SOURCE ? m.intl.string(m.t.XjXqzh) : m.intl.formatToPlainString(m.t.TEOC0I, {
+  return e.type === _.uA.SOURCE ? h.intl.string(h.t.XjXqzh) : h.intl.formatToPlainString(h.t.TEOC0I, {
     resolution: e.height
   })
 }
 
 function O(e) {
-  return m.intl.formatToPlainString(m.t.Qb44XH, {
+  return h.intl.formatToPlainString(h.t.Qb44XH, {
     fps: e
   })
 }

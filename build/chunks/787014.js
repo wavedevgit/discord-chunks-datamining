@@ -5,10 +5,10 @@ require.d(exports, {
   S1: () => u,
   ZP: () => g,
   pW: () => _,
-  wk: () => m,
+  wk: () => h,
   xv: () => f,
   zc: () => p,
-  zz: () => h
+  zz: () => m
 }), require("./997841.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -61,8 +61,8 @@ function _(e) {
     template: f,
     defaultReactionEmoji: p,
     rtcRegion: _,
-    videoQualityMode: m,
-    autoArchiveDuration: h,
+    videoQualityMode: h,
+    autoArchiveDuration: m,
     locked: g,
     invitable: E,
     availableTags: b,
@@ -87,8 +87,8 @@ function _(e) {
     template: f,
     defaultReactionEmoji: p,
     rtcRegion: _,
-    videoQualityMode: m,
-    autoArchiveDuration: h,
+    videoQualityMode: h,
+    autoArchiveDuration: m,
     locked: g,
     invitable: E,
     availableTags: b,
@@ -99,7 +99,7 @@ function _(e) {
     themeColor: I
   })
 }
-async function m(e, t) {
+async function h(e, t) {
   let {
     name: n,
     type: l,
@@ -108,8 +108,8 @@ async function m(e, t) {
     bitrate: f,
     userLimit: p,
     nsfw: _,
-    flags: m,
-    permissionOverwrites: h,
+    flags: h,
+    permissionOverwrites: m,
     rateLimitPerUser: g,
     defaultThreadRateLimitPerUser: E,
     defaultAutoArchiveDuration: b,
@@ -123,8 +123,8 @@ async function m(e, t) {
     availableTags: A,
     defaultSortOrder: N,
     defaultForumLayout: P,
-    defaultTagSetting: R,
-    iconEmoji: w,
+    defaultTagSetting: w,
+    iconEmoji: R,
     themeColor: D
   } = t, x = s.Z.getChannel(e);
   return i.Z.dispatch({
@@ -139,8 +139,8 @@ async function m(e, t) {
       bitrate: f,
       user_limit: p,
       nsfw: _,
-      flags: m,
-      permission_overwrites: h,
+      flags: h,
+      permission_overwrites: m,
       rate_limit_per_user: g,
       default_thread_rate_limit_per_user: E,
       default_auto_archive_duration: b,
@@ -163,11 +163,11 @@ async function m(e, t) {
       })),
       default_sort_order: N,
       default_forum_layout: P,
-      default_tag_setting: R,
-      icon_emoji: null != w ? {
-        id: w.id,
-        name: w.name
-      } : null === w ? null : true,
+      default_tag_setting: w,
+      icon_emoji: null != R ? {
+        id: R.id,
+        name: R.name
+      } : null === R ? null : true,
       theme_color: D
     },
     oldFormErrors: true,
@@ -184,7 +184,7 @@ async function m(e, t) {
     errors: e.body
   }), e))
 }
-async function h(e) {
+async function m(e) {
   let t = s.Z.getChannel(e);
   await r.tn.del({
     url: c.ANM.CHANNEL(e),
@@ -206,8 +206,8 @@ let g = {
     })
   },
   updateChannel: _,
-  saveChannel: m,
-  deleteChannel: h,
+  saveChannel: h,
+  deleteChannel: m,
   updateVoiceChannelStatus: function(e, t) {
     return r.tn.put({
       url: c.ANM.UPDATE_VOICE_CHANNEL_STATUS(e),

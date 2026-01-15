@@ -58,14 +58,14 @@ function T(e) {
     paymentError: d,
     purchaseError: f,
     purchasePreviewError: p,
-    appliedUserDiscounts: m
-  } = (0, h.JL)(), g = (0, s.e7)([u.Z], () => u.Z.getProduct(l)), O = i.useRef(false);
+    appliedUserDiscounts: h
+  } = (0, m.JL)(), g = (0, s.e7)([u.Z], () => u.Z.getProduct(l)), O = i.useRef(false);
   o()(null != l, "Expected selectedSkuId"), o()(null != c, "Expected application");
   let S = a[l];
   o()(null != S, "Expected sku");
   let I = null != d || null != f || null != p,
-    T = m.length > 0 ? v.intl.formatToPlainString(v.t.VuV3Td, {
-      discountOfferAmount: m[0].discount.amount
+    T = h.length > 0 ? v.intl.formatToPlainString(v.t.VuV3Td, {
+      discountOfferAmount: h[0].discount.amount
     }) : true;
   return (i.useEffect(() => {
     null == g || I || O.current || (O.current = true, (0, _.Z)({
@@ -90,9 +90,9 @@ function C(e) {
     giftMessageError: E,
     isSendingMessage: b,
     giftingOrigin: y
-  } = (0, m.wD)(), v = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), S = i.useRef(null), {
+  } = (0, h.wD)(), v = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), S = i.useRef(null), {
     selectedSkuId: C
-  } = (0, h.JL)(), A = (0, s.e7)([u.Z], () => u.Z.getProduct(C)), {
+  } = (0, m.JL)(), A = (0, s.e7)([u.Z], () => u.Z.getProduct(C)), {
     confettiColors: N
   } = (0, d.Z)(null == A ? true : A.styles);
   return i.useEffect(() => {

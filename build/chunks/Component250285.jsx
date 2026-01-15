@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,7 +59,7 @@ let g = e => {
     children: n,
     isLast: a,
     className: p
-  } = e, m = 1, [g, E] = i.useState(false), {
+  } = e, h = 1, [g, E] = i.useState(false), {
     analyticsLocations: b
   } = (0, u.ZP)(), y = i.useCallback(() => {
     (0, d.openUserProfileModal)({
@@ -78,9 +78,9 @@ let g = e => {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(s.Z.div, h(_({
+      children: (0, r.jsx)(s.Z.div, m(_({
         style: {
-          opacity: m
+          opacity: h
         },
         className: o()(f.rowItem, p, {
           [f.last]: a,

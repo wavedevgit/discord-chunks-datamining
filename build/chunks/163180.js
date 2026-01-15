@@ -72,15 +72,15 @@ module.exports = function(e) {
         begin: "#'" + t + "(::" + t + ")*"
       }]
     },
-    m = {
+    h = {
       begin: "\\(\\s*",
       end: "\\)"
     },
-    h = {
+    m = {
       endsWithParent: true,
       relevance: 0
     };
-  return m.contains = [{
+  return h.contains = [{
     className: "name",
     variants: [{
       begin: t,
@@ -88,9 +88,9 @@ module.exports = function(e) {
     }, {
       begin: n
     }]
-  }, h], h.contains = [p, _, m, i, a, o, s, l, c, d, u], {
+  }, m], m.contains = [p, _, h, i, a, o, s, l, c, d, u], {
     name: "Lisp",
     illegal: /\S/,
-    contains: [a, e.SHEBANG(), i, o, s, p, _, m, u]
+    contains: [a, e.SHEBANG(), i, o, s, p, _, h, u]
   }
 }

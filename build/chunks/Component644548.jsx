@@ -55,7 +55,7 @@ let y = (e, t, n, r) => {
     } = (0, g.n)(n), {
       primaryColor: C,
       secondaryColor: A
-    } = (0, d.Z)(null == v ? true : v.src), N = (0, c.yA)(n), P = (0, c.Nq)(n), R = i.useCallback(e => {
+    } = (0, d.Z)(null == v ? true : v.src), N = (0, c.yA)(n), P = (0, c.Nq)(n), w = i.useCallback(e => {
       if (null != t && null != S && null != N && null != P && (0, p.qy)(P)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == v ? true : v.src,
@@ -69,12 +69,12 @@ let y = (e, t, n, r) => {
       })
     }, [null == v ? true : v.src, t, N, n, C, P, A, S]);
     if (null == S || null == N || null == P || !(0, p.qy)(P)) return null;
-    let w = null != n.extra.platform ? f.v[n.extra.platform] : null;
-    return (0, r.jsxs)(m.yR, {
-      children: [(0, r.jsx)(m.wG, {
+    let R = null != n.extra.platform ? f.v[n.extra.platform] : null;
+    return (0, r.jsxs)(h.yR, {
+      children: [(0, r.jsx)(h.wG, {
         channel: t,
-        headerIcons: null == w ? null : (0, r.jsx)(h.Z, {
-          Icon: w,
+        headerIcons: null == R ? null : (0, r.jsx)(m.Z, {
+          Icon: R,
           "aria-label": E.intl.string(E.t.YR4cHH)
         }),
         entry: n,
@@ -88,13 +88,13 @@ let y = (e, t, n, r) => {
           }, t))
         }),
         disableGameProfileLinks: a
-      }), (0, r.jsx)(m.St, {
-        children: (0, r.jsx)(m.WT, {
+      }), (0, r.jsx)(h.St, {
+        children: (0, r.jsx)(h.WT, {
           onReaction: s,
           onVoiceChannelPreview: b,
           user: S,
           channel: t,
-          generateReactionImage: R,
+          generateReactionImage: w,
           reactionImageAltText: O(n, S),
           entry: n
         })

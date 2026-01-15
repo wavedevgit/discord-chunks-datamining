@@ -66,10 +66,10 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = 7,
-  w = false,
+let w = 7,
+  R = false,
   D = new Chunk710845.Z("OverlayUsageStatsManager");
-w || (D.verbose = () => {});
+R || (D.verbose = () => {});
 class x {
   increment(e) {
     ++this.actions[e]
@@ -373,8 +373,8 @@ class U {
   async getAnalytics() {
     var e, t, n, r, i, a, o, s, c;
     let p = null != (n = this.overlayMethod) ? n : f.gl.Disabled,
-      m = {
-        setting_is_enabled: h.default.enabled,
+      h = {
+        setting_is_enabled: m.default.enabled,
         setting_method: this.getSettingMethod(),
         setting_display_user: g.default.getDisplayUserMode(),
         setting_display_name: g.default.getDisplayNameMode(),
@@ -391,8 +391,8 @@ class U {
     return {
       usage: P(A(P(A({
         event_uuid: this.uuid,
-        overlay_usage_stats_version: R
-      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), m), {
+        overlay_usage_stats_version: w
+      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), h), {
         overlay_status_game_enabled: S,
         overlay_status_game_source: E.source,
         game_name: null != (i = b.gameName) ? i : null,
@@ -475,7 +475,7 @@ class U {
 }
 
 function G() {
-  let e = h.default.getFocusedPID();
+  let e = m.default.getFocusedPID();
   if (null == e || e === y.UNSET_PID || !p.default.isOverlayOOPEnabledForPid(e)) return null;
   let t = p.default.getTrackedGameByPid(e);
   return null == t || null == t.gameName || null == t.applicationId || t.state !== f.mM.OVERLAY_RENDERING ? null : {
@@ -634,7 +634,7 @@ C(ee, "connections", new Set), C(ee, "previousHasConnection", false);
 class et {
   static handleMessageAcked(e) {
     D.verbose("MESSAGE_ACKED", e);
-    let t = m.Z.getGame();
+    let t = h.Z.getGame();
     if (null == t) return void D.error("Game not found.");
     a.Z.dispatch({
       type: "OVERLAY_MESSAGE_EVENT_ACTION",
@@ -646,7 +646,7 @@ class et {
   static handleMessageCreate(e) {
     if (e.message.state !== I.yb.SENDING) return;
     D.verbose("MESSAGE_CREATE", e, Error().stack);
-    let t = m.Z.getGame();
+    let t = h.Z.getGame();
     if (null == t) return void D.error("Game not found.");
     a.Z.dispatch({
       type: "OVERLAY_MESSAGE_EVENT_ACTION",
@@ -656,7 +656,7 @@ class et {
     })
   }
 }
-w && !__OVERLAY__ && setInterval(async () => {
+R && !__OVERLAY__ && setInterval(async () => {
   for (let e of Object.values(U.debug.gamesByName)) D.verbose("Game analytics", await e.getAnalytics())
 }, 5e3);
 class en extends Chunk147913.Z {

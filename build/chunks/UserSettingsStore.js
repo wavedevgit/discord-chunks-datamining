@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   }
   return e
 }
-let h = (window.innerWidth - Chunk981631.PrS) / 2,
+let m = (window.innerWidth - Chunk981631.PrS) / 2,
   g = "standard",
   E = null;
 
@@ -47,7 +47,7 @@ function b() {
 let y = {};
 
 function O(e) {
-  y = m({}, y, e.settings)
+  y = h({}, y, e.settings)
 }
 
 function v() {
@@ -110,7 +110,7 @@ class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   get postSidebarWidth() {
     var e;
-    return null != (e = y.postSidebarWidth) ? e : h
+    return null != (e = y.postSidebarWidth) ? e : m
   }
   get callChatSidebarWidth() {
     var e;

@@ -22,11 +22,11 @@ function f(e) {
   } = e, {
     analyticsLocations: p
   } = (0, o.ZP)(), _ = null != n, {
-    userNameplate: m,
-    guildNameplate: h,
+    userNameplate: h,
+    guildNameplate: m,
     pendingNameplate: g,
     pendingErrors: E
-  } = (0, l.Zx)(t, null == n ? true : n.id), b = true === g ? (_ ? h : m) != null : null != g, y = i.useCallback(() => {
+  } = (0, l.Zx)(t, null == n ? true : n.id), b = true === g ? (_ ? m : h) != null : null != g, y = i.useCallback(() => {
     (0, s.f)({
       analyticsLocations: p,
       guildId: null == n ? true : n.id

@@ -37,7 +37,7 @@ Chunk518187("replace", function(e, t, n) {
   var a = N ? "$" : "$0";
   return [function(e, n) {
     var r = _(this),
-      a = u(e) ? true : h(e, b);
+      a = u(e) ? true : m(e, b);
     return a ? i(a, e, r, n) : i(t, p(r), e, n)
   }, function(e, i) {
     var o = l(this),
@@ -48,20 +48,20 @@ Chunk518187("replace", function(e, t, n) {
     }
     var _ = c(i);
     _ || (i = p(i));
-    var h = o.global;
-    h && (R = o.unicode, o.lastIndex = 0);
-    for (var b = []; null !== (D = E(o, s)) && (S(b, D), h);) {
+    var m = o.global;
+    m && (w = o.unicode, o.lastIndex = 0);
+    for (var b = []; null !== (D = E(o, s)) && (S(b, D), m);) {
       ;
-      "" === p(D[0]) && (o.lastIndex = m(s, f(o.lastIndex), R))
+      "" === p(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), w))
     }
     for (var A = "", N = 0, P = 0; P < b.length; P++) {
-      for (var R, w, D = b[P], x = p(D[0]), L = y(O(d(D.index), s.length), 0), j = [], M = 1; M < D.length; M++) S(j, C(D[M]));
+      for (var w, R, D = b[P], x = p(D[0]), L = y(O(d(D.index), s.length), 0), j = [], M = 1; M < D.length; M++) S(j, C(D[M]));
       var k = D.groups;
       if (_) {
         var U = v([x], j, L, s);
-        true !== k && S(U, k), w = p(r(i, true, U))
-      } else w = g(x, s, L, j, k, i);
-      L >= N && (A += T(s, N, L) + w, N = L + x.length)
+        true !== k && S(U, k), R = p(r(i, true, U))
+      } else R = g(x, s, L, j, k, i);
+      L >= N && (A += T(s, N, L) + R, N = L + x.length)
     }
     return A + T(s, N)
   }]

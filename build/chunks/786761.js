@@ -4,9 +4,9 @@
 require.d(exports, {
   Pv: () => U,
   e5: () => P,
-  gx: () => R,
+  gx: () => w,
   lp: () => k,
-  wi: () => w
+  wi: () => R
 }), require("./997841.js"), require("./388685.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -94,15 +94,15 @@ function N(e) {
 
 function P(e) {
   var t, n, r, i, a, o, l, d;
-  let _, m, {
+  let _, h, {
       reactions: b,
       interactionData: O
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     S = N(e),
     T = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
     P = null != (a = e.mention_roles) ? a : [],
-    R = null != (o = e.mention_channels) ? o : [],
-    w = null != (l = e.mention_games) ? l : [],
+    w = null != (o = e.mention_channels) ? o : [],
+    R = null != (l = e.mention_games) ? l : [],
     D = e.message_reference,
     L = C(e),
     k = null,
@@ -111,7 +111,7 @@ function P(e) {
     Z = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
     F = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     B = e.content;
-  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), e.type === y.uaV.PREMIUM_GROUP_INVITE && (m = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), A(e)) ? I(v({}, k), {
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), e.type === y.uaV.PREMIUM_GROUP_INVITE && (h = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), A(e)) ? I(v({}, k), {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,
@@ -126,8 +126,8 @@ function P(e) {
     mentionEveryone: e.mention_everyone,
     mentions: T,
     mentionRoles: P,
-    mentionChannels: R,
-    mentionGames: w,
+    mentionChannels: w,
+    mentionGames: R,
     messageReference: D,
     mentioned: (0, E.Sz)({
       userId: f.default.getId(),
@@ -135,12 +135,12 @@ function P(e) {
       mentionEveryone: null != (d = e.mention_everyone) && d,
       mentionUsers: T,
       mentionRoles: P,
-      mentionGames: w.map(e => e.id)
+      mentionGames: R.map(e => e.id)
     }),
-    giftCodes: (0, h.Fp)(e) ? (0, h.Q_)(null == e ? true : e.embeds[0].url) : (0, h.Q_)(e.content),
+    giftCodes: (0, m.Fp)(e) ? (0, m.Q_)(null == e ? true : e.embeds[0].url) : (0, m.Q_)(e.content),
     content: B,
     referralTrialOfferId: _,
-    premiumGroupInviteId: m,
+    premiumGroupInviteId: h,
     call: x(e.call, S.timestamp),
     messageSnapshots: M(e),
     reactions: j(null != b ? b : e.reactions, e.poll),
@@ -156,14 +156,14 @@ function P(e) {
   }))
 }
 
-function R(e, t) {
+function w(e, t) {
   return null != t.edited_timestamp ? I(v({}, t), {
     reactions: e.reactions,
     interaction_data: e.interaction_data
   }) : v({}, e, t)
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null != t.edited_timestamp) return P(t, {
     reactions: e.reactions,
     interactionData: e.interactionData
@@ -201,8 +201,8 @@ function x(e, t) {
 
 function L(e) {
   if (null == e.embeds) return [];
-  let t = e.embeds.map(t => (0, m.kC)(e.channel_id, e.id, t));
-  return (0, m.o3)(t)
+  let t = e.embeds.map(t => (0, h.kC)(e.channel_id, e.id, t));
+  return (0, h.o3)(t)
 }
 
 function j(e, t) {

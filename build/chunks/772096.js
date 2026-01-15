@@ -2,7 +2,7 @@
 /** chunk id: 772096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => R,
+  ZP: () => w,
   yw: () => P
 }), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./49124.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./781311.js");
 var Chunk392711 = require("./392711.js"),
@@ -27,7 +27,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,7 +52,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -158,7 +158,7 @@ function P(e) {
     return null
   }
 }
-let R = g(m({}, l().defaultRules.link), {
+let w = g(h({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
     let [r, a, o, s] = e, u = () => ({
@@ -169,16 +169,16 @@ let R = g(m({}, l().defaultRules.link), {
     let d = b(o),
       p = b(a),
       _ = b(null != s ? s : ""),
-      h = d.whitespaceSanitized,
+      m = d.whitespaceSanitized,
       E = p.fullySanitized,
       y = _.fullySanitized,
-      R = E.trim();
-    if (0 === h.trim().length || 0 === R.length) return u();
-    let w = P(l().unescapeUrl(o)),
-      D = null == w,
+      w = E.trim();
+    if (0 === m.trim().length || 0 === w.length) return u();
+    let R = P(l().unescapeUrl(o)),
+      D = null == R,
       x = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
     if (D || x) return u();
-    let L = g(m({}, n), {
+    let L = g(h({}, n), {
         allowEscape: false,
         parseInlineCodeChildContent: true
       }),
@@ -193,7 +193,7 @@ let R = g(m({}, l().defaultRules.link), {
       B = _.whitespaceSanitized,
       {
         target: V
-      } = w;
+      } = R;
     return {
       content: F,
       target: V,

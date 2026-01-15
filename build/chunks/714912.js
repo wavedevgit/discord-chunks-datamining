@@ -29,9 +29,9 @@ function d(e, t) {
     value: d,
     description: r.Z.FocalLengthIn35mmFilm(d)
   }, i = true);
-  let h = _(a, d);
-  h && (n.ScaleFactorTo35mmEquivalent = h, i = true);
-  let g = m(d);
+  let m = _(a, d);
+  m && (n.ScaleFactorTo35mmEquivalent = m, i = true);
+  let g = h(d);
   if (g && (n.FieldOfView = g, i = true), i) return n
 }
 
@@ -57,10 +57,10 @@ function p(e, t, n, r, u, d) {
         return
     }
     let _ = e[0] / e[1] * p,
-      m = t[0] / t[1] * p,
-      h = r / _,
-      g = u / m,
-      E = Math.sqrt(h ** 2 + g ** 2);
+      h = t[0] / t[1] * p,
+      m = r / _,
+      g = u / h,
+      E = Math.sqrt(m ** 2 + g ** 2);
     return d[0] / d[1] * (f / E)
   } catch (e) {}
 }
@@ -75,7 +75,7 @@ function _(e, t) {
   } catch (e) {}
 }
 
-function m(e) {
+function h(e) {
   let t = 36;
   if (e) try {
     let n = 2 * Math.atan(t / (2 * e)) * (180 / Math.PI);

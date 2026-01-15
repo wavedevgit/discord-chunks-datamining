@@ -94,8 +94,8 @@ function v(e) {
       activeSubscription: i,
       stepConfigs: c,
       skuIDs: [y],
-      children: (0, r.jsx)(h.c1, {
-        children: (0, r.jsx)(m.KB, {
+      children: (0, r.jsx)(m.c1, {
+        children: (0, r.jsx)(h.KB, {
           children: (0, r.jsx)(o, O(b({}, n), {
             initialPlanId: t,
             skuId: y,
@@ -148,7 +148,7 @@ async function I(e) {
   a()(null != c, "Failed to find SKU");
   let _ = (0, d.KW)(c.flags);
   a()(_, "Guild application subscriptions unsupported!"), await S(n, r);
-  let m = {
+  let h = {
     initialPlanId: null != i ? i : null == (t = u[0]) ? true : t.id,
     activeSubscription: null,
     analyticsLocations: s,
@@ -161,5 +161,5 @@ async function I(e) {
     showBenefitsFirst: false,
     applicationId: n
   };
-  v(m)
+  v(h)
 }

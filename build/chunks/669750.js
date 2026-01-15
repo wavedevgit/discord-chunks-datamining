@@ -2,7 +2,7 @@
 /** chunk id: 669750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk362721 = require("./362721.js"),
@@ -24,7 +24,7 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   constructor(...e) {
     super(...e), _(this, "previousVoiceChannelId", true), _(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
@@ -83,4 +83,4 @@ class m extends Chunk147913.Z {
     })
   }
 }
-let h = new m
+let m = new h

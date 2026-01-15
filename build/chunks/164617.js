@@ -14,8 +14,8 @@ require.r(exports), require.d(exports, {
   GlowButtonRive: () => f.Q,
   JetpackWumpusWithTrinketsRive: () => p.z,
   PerfTestRive: () => _.t,
-  PulseGradientRive: () => m.z,
-  UnlockRive: () => h.a,
+  PulseGradientRive: () => h.z,
+  UnlockRive: () => m.a,
   VibingWumpusBackgroundRive: () => E.b,
   VibingWumpusRive: () => g.g,
   WandAndSparklesRive: () => b.x

@@ -11,9 +11,9 @@ require.d(exports, {
   bL: () => eS,
   hJ: () => eN,
   iV: () => eL,
-  jx: () => eR,
+  jx: () => ew,
   oR: () => eD,
-  qz: () => ew,
+  qz: () => eR,
   vB: () => eU,
   x2: () => eP
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
@@ -84,7 +84,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk957825 = require("./957825.js"),
   Chunk72775 = require("./72775.js");
 
-function em(e, t, n) {
+function eh(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -93,14 +93,14 @@ function em(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eh(e) {
+function em(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      em(e, t, n[t])
+      eh(e, t, n[t])
     })
   }
   return e
@@ -135,18 +135,18 @@ function ev(e, t) {
 }
 
 function eS(e, t, a, o, s) {
-  let [l, c] = i.useState(false), u = i.useCallback((i, d, f, p, h) => {
+  let [l, c] = i.useState(false), u = i.useCallback((i, d, f, p, m) => {
     var g, E, b;
     if (l) return;
     c(true);
     let y = null != (E = null == (g = M.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
       O = null != (b = Y.Z.getUploads(s, t.drafts.type)) ? b : [];
-    if (null == d && !p && !h && (0, w.CB)(O, s)) {
+    if (null == d && !p && !m && (0, R.CB)(O, s)) {
       c(false), (0, _.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("57804"), n.e("90508"), n.e("87646"), n.e("96551")]).then(n.bind(n, 273602));
-        return t => (0, r.jsx)(e, eE(eh({}, t), {
+        return t => (0, r.jsx)(e, eE(em({}, t), {
           threadId: s,
           attachments: O,
           sendMessage: () => u(i, true, true, true, true)
@@ -167,7 +167,7 @@ function eS(e, t, a, o, s) {
         shouldClear: l,
         shouldRefocus: u
       } = e, d = ev(l, t), f = null != a.current;
-      d && (eO(s) ? m.Z.saveDraft(s, "", t.drafts.type) : f && (null == (r = a.current) || r.clearValue(), null == (i = o.current) || i.hide())), f && (c(false), (0, P._Q)(), u && (null == (n = a.current) || n.focus()))
+      d && (eO(s) ? h.Z.saveDraft(s, "", t.drafts.type) : f && (null == (r = a.current) || r.clearValue(), null == (i = o.current) || i.hide())), f && (c(false), (0, P._Q)(), u && (null == (n = a.current) || n.focus()))
     })
   }, [a, o, e, l, t, s]);
   return {
@@ -277,7 +277,7 @@ function eP(e, t, n) {
   }
 }
 
-function eR() {
+function ew() {
   let e = i.useRef(null),
     t = i.useCallback(() => {
       var t;
@@ -294,7 +294,7 @@ function eR() {
   }
 }
 
-function ew(e) {
+function eR(e) {
   let t = i.useRef(null);
   if (null != e && "function" == typeof e) throw Error("Only Ref objects are supported");
   return null == e ? t : e
@@ -334,7 +334,7 @@ function ex(e, t, n, r) {
         canEveryoneSendMessages: q.Uu(ed.Plq.SEND_MESSAGES, e)
       }
     }, [e, t.permissions.requireCreateTherads, t.permissions.requireSendMessages, t.attachments, n, r, o]);
-  return eh({
+  return em({
     isLurking: a,
     isPendingMember: o
   }, s)
@@ -422,11 +422,11 @@ function eG(e, t) {
   var n, a, s, l, u;
   let {
     textValue: f,
-    richValue: m,
+    richValue: h,
     className: O,
     innerClassName: A,
     editorClassName: P,
-    id: w,
+    id: R,
     required: D,
     disabled: x,
     placeholder: M,
@@ -444,8 +444,8 @@ function eG(e, t) {
     onBlur: en,
     onFocus: ec,
     onKeyDown: ep,
-    onSubmit: em,
-    promptToUpload: eh,
+    onSubmit: eh,
+    promptToUpload: em,
     highlighted: eg,
     canMentionRoles: eE,
     canMentionChannels: ey,
@@ -467,11 +467,11 @@ function eG(e, t) {
   c()(null != G, "chat input type must be set");
   let {
     analyticsLocations: eX
-  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eJ = ew(t), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null), e3 = i.useRef(null), e2 = i.useRef(null);
+  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eJ = eR(t), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null), e3 = i.useRef(null), e2 = i.useRef(null);
   null == eV || eV(e1.current);
   let e4 = (0, y.Z)(U),
     [e5, e8] = i.useState(!e4);
-  (0, h.PM)(eJ, e => {
+  (0, m.PM)(eJ, e => {
     let {
       width: t
     } = e;
@@ -502,23 +502,23 @@ function eG(e, t) {
   let {
     eventEmitter: td,
     handleEditorSelectionChanged: tf
-  } = eP(e1, f, m), tp = i.useRef(f);
+  } = eP(e1, f, h), tp = i.useRef(f);
   tp.current = f;
   let t_ = i.useCallback((e, t, n) => {
       var r;
       t === ef.GI && "" === tp.current && (null == (r = G.commands) ? true : r.enabled) && td.emit("command-sentinel-typed"), null == z || z(e, t, n)
     }, [z, null == (a = G.commands) ? true : a.enabled, td]),
     {
-      submitting: tm,
-      submit: th,
+      submitting: th,
+      submit: tm,
       handleSubmit: tg
-    } = eS(em, G, e1, e2, U.id),
+    } = eS(eh, G, e1, e2, U.id),
     {
       autocompleteRef: tE,
       handleMaybeShowAutocomplete: tb,
       handleHideAutocomplete: ty
-    } = eR(),
-    tO = eI(th, G, e1),
+    } = ew(),
+    tO = eI(tm, G, e1),
     tv = eT(e1),
     tS = eC({
       editorRef: e1,
@@ -526,7 +526,7 @@ function eG(e, t) {
       textValue: f,
       channelId: U.id,
       chatInputType: G,
-      submit: em
+      submit: eh
     }),
     tI = eA(e1, U),
     tT = i.useCallback(() => {
@@ -540,10 +540,10 @@ function eG(e, t) {
     {
       handleTab: tN,
       handleEnter: tP,
-      handleMoveSelection: tR
+      handleMoveSelection: tw
     } = ej(tE, e$, ts),
     {
-      expressionPickerView: tw,
+      expressionPickerView: tR,
       shouldHideExpressionPicker: tD,
       handleOuterClick: tx
     } = eL(G, e1, U.id),
@@ -570,11 +570,11 @@ function eG(e, t) {
     }, [td]);
   (0, X.S)(td, U.guild_id, U.id);
   let tB = null != K,
-    tV = tt && !((e9 || te) && ti) || tm && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
+    tV = tt && !((e9 || te) && ti) || th && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
     tH = null;
   null != e6 ? tH = null == Y ? true : Y(e6, e7, e_.attachButton) : (!tt || tr) && (tH = null == V ? true : V(tB, e_.attachButton));
-  let tY = to && null != m && !tt && G.showCharacterCount && null == e6,
-    tW = to && !__OVERLAY__ && null != m && null == e6 && G.toolbarType !== $.OW.NONE && !tt,
+  let tY = to && null != h && !tt && G.showCharacterCount && null == e6,
+    tW = to && !__OVERLAY__ && null != h && null == e6 && G.toolbarType !== $.OW.NONE && !tt,
     tK = (0, er.c)({
       channel: U,
       type: G,
@@ -666,11 +666,11 @@ function eG(e, t) {
               ringClassName: e_.focusRing,
               children: (0, r.jsx)(ee.Z, {
                 ref: e1,
-                id: w,
+                id: R,
                 focused: F,
                 useSlate: to,
                 textValue: f,
-                richValue: m,
+                richValue: h,
                 disabled: tt,
                 placeholder: M,
                 required: D,
@@ -688,15 +688,15 @@ function eG(e, t) {
                 onBlur: en,
                 onFocus: ec,
                 onKeyDown: ep,
-                onSubmit: th,
+                onSubmit: tm,
                 onSubmitFailure: tF,
                 onTab: tN,
                 onEnter: tP,
-                onMoveSelection: tR,
+                onMoveSelection: tw,
                 onSelectionChanged: tf,
                 onMaybeShowAutocomplete: tb,
                 onHideAutocomplete: ty,
-                promptToUpload: eh,
+                promptToUpload: em,
                 fontSize: tc,
                 spellcheckEnabled: tu,
                 canOnlyUseTextCommands: tB,
@@ -732,11 +732,11 @@ function eG(e, t) {
           textValue: f,
           focused: F,
           isEditorIdle: tM,
-          expressionPickerView: tw,
+          expressionPickerView: tR,
           type: G,
           targetRef: eJ,
           editorRef: e1,
-          onSendMessage: th,
+          onSendMessage: tm,
           onSendSticker: tS,
           onVisibilityChange: tU,
           editorScrollerRef: e3,
@@ -751,7 +751,7 @@ function eG(e, t) {
         }), t0, eY]
       }), (0, r.jsx)(_.pdY, {
         error: B
-      }), tD ? null : (0, r.jsx)(R.Z, {
+      }), tD ? null : (0, r.jsx)(w.Z, {
         positionTargetRef: eJ,
         type: G,
         onSelectGIF: tO,

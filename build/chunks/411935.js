@@ -2,7 +2,7 @@
 /** chunk id: 411935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  JR: () => h,
+  JR: () => m,
   Xp: () => O,
   YL: () => g,
   g$: () => y,
@@ -56,8 +56,8 @@ function f(e, t) {
 }
 let p = 6,
   _ = 30 * Chunk70956.Z.Millis.SECOND,
-  m = 30 * Chunk70956.Z.Millis.MINUTE,
-  h = 5;
+  h = 30 * Chunk70956.Z.Millis.MINUTE,
+  m = 5;
 async function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
@@ -67,7 +67,7 @@ async function g(e) {
     c = s.Z.getStorefrontData(e),
     u = (null == c ? true : c.state) === "loading",
     d = (null == c ? true : c.state) === "error" && (null == c ? true : c.fetchedAt) != null && Date.now() - c.fetchedAt < _,
-    f = (null == c ? true : c.state) === "fetched" && (null == c ? true : c.fetchedAt) != null && Date.now() - c.fetchedAt < m;
+    f = (null == c ? true : c.state) === "fetched" && (null == c ? true : c.fetchedAt) != null && Date.now() - c.fetchedAt < h;
   if (!(u || d || f) || a) try {
     var p;
     i.Z.dispatch({

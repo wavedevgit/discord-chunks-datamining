@@ -2,7 +2,7 @@
 /** chunk id: 670863, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => R
+  j: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -99,7 +99,7 @@ function P(e) {
   })[e]
 }
 
-function R(e) {
+function w(e) {
   var {
     deviceType: t,
     location: a,
@@ -108,9 +108,9 @@ function R(e) {
     onSelectDevice: O,
     hideDeviceTypeIcon: I = false,
     label: A
-  } = e, R = C(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
+  } = e, w = C(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
   let {
-    setDevice: w,
+    setDevice: R,
     Icon: D,
     getCanSetDevice: x,
     getWarningMessage: L,
@@ -121,7 +121,7 @@ function R(e) {
     location: Z
   }), {
     id: V
-  } = (0, b.p6)(t), H = null != _ ? _ : V, Y = (0, s.e7)([h.Z], () => x(h.Z)), {
+  } = (0, b.p6)(t), H = null != _ ? _ : V, Y = (0, s.e7)([m.Z], () => x(m.Z)), {
     showDeviceSelectionImprovements: W
   } = (0, E.V)({
     location: "".concat(Z, "/SingleSelectDevices")
@@ -138,12 +138,12 @@ function R(e) {
     });
     else {
       var n;
-      (null == (n = null == O ? true : O(e)) || n) && w(e, {
+      (null == (n = null == O ? true : O(e)) || n) && R(e, {
         location: Z,
         analyticsLocations: M
       })
     }
-  }, [t, Z, F.length, B.length, M, O, w]);
+  }, [t, Z, F.length, B.length, M, O, R]);
 
   function q(e) {
     let t, i, {
@@ -156,8 +156,8 @@ function R(e) {
     null != f && ((0, E.M)({
       location: "".concat(Z, "/SingleSelectDevices.defaultRenderOptionLabel")
     }), d = f.prefix, t = f.subName);
-    let p = m.Z.getCertifiedDeviceName(s, d);
-    if (m.Z.isCertified(s)) {
+    let p = h.Z.getCertifiedDeviceName(s, d);
+    if (h.Z.isCertified(s)) {
       let e = (0, c.ap)(k) ? n(561259) : n(887695);
       i = (0, r.jsx)("img", {
         src: e,
@@ -234,6 +234,6 @@ function R(e) {
         return q(t)
       },
       optionClassName: S.singleSelectOption
-    }, R)), !Y && K]
+    }, w)), !Y && K]
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 586920, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => h
+  i: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,12 +17,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk201007 = require("./201007.js"),
   Chunk997892 = require("./997892.js"),
   Chunk7449 = require("./7449.js");
-let h = () => {
+let m = () => {
   let {
     transitionState: e,
     onClose: t,
     premiumType: n,
-    confettiCanvas: h,
+    confettiCanvas: m,
     churnUserDiscountOffer: g,
     discountedPrice: E
   } = (0, u.a)(), b = (0, i.useRef)(null), [y, O] = (0, i.useState)(false), v = (0, o.e7)([s.Z], () => s.Z.useReducedMotion);
@@ -35,7 +35,7 @@ let h = () => {
     children: [(0, r.jsx)(a.ExpressiveModal, {
       graphic: {
         type: "image",
-        src: S ? m.Z : _
+        src: S ? h.Z : _
       },
       gradientColor: S ? "nitro-pink" : "nitro-green",
       transitionState: e,
@@ -50,7 +50,7 @@ let h = () => {
       })
     }), !v && y && (0, r.jsx)(l.Z, {
       confettiTarget: b.current,
-      confettiCanvas: h,
+      confettiCanvas: m,
       confettiVelocityMultiplier: .75
     })]
   })

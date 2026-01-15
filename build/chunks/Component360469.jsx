@@ -59,16 +59,16 @@ function I() {
           color: T,
           colorClass: y.iconColor,
           className: y.titleIcon
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(h.Z, {
           variant: "eyebrow",
           className: y.eyebrow,
           children: b.intl.format(E.default.nPTMHj, {
             numMessages: e
           })
         })]
-      }), (0, r.jsx)(h.Z, {
-        end: e
       }), (0, r.jsx)(m.Z, {
+        end: e
+      }), (0, r.jsx)(h.Z, {
         variant: "heading-xxl/medium",
         className: O.subtitle,
         children: A ? b.intl.format(E.default.ixvOza, {

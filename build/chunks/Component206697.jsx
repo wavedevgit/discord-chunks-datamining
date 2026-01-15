@@ -57,11 +57,11 @@ function v() {
         className: g.header,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: h.intl.string(h.t.erEf2g)
+        children: m.intl.string(m.t.erEf2g)
       }), (0, r.jsx)(o.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: h.intl.string(h.t.NaRCXT)
+        children: m.intl.string(m.t.NaRCXT)
       })]
     })
   }) : (0, r.jsxs)("div", {
@@ -76,18 +76,18 @@ function v() {
         className: g.header,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: h.intl.string(h.t.w4DRbZ)
+        children: m.intl.string(m.t.w4DRbZ)
       }), (0, r.jsx)(o.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: h.intl.string(h.t.F6u3E3)
+        children: m.intl.string(m.t.F6u3E3)
       })]
     }), (0, r.jsx)(S, {})]
   })
 }
 
 function S() {
-  let e = (0, f.Px)(m.PremiumTypes.TIER_2),
+  let e = (0, f.Px)(h.PremiumTypes.TIER_2),
     t = i.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
@@ -96,13 +96,13 @@ function S() {
         source: c.Z.FOR_LATER_POPOUT
       }, t))
     }), []),
-    p = h.intl.format(h.t.qXh3fo, {
+    p = m.intl.format(m.t.qXh3fo, {
       nitroTierName: e,
       onClick: t
     });
   return (0, r.jsxs)("div", {
     className: g.upsellContainer,
-    children: [(0, r.jsx)(a.SrA, {
+    children: [(0, r.jsx)(a.NitroWheelIcon, {
       size: "md",
       color: u.JX.PREMIUM_TIER_2
     }), (0, r.jsx)(o.xvT, {
@@ -114,7 +114,7 @@ function S() {
       className: g.upsellButton,
       size: s.Ph.TINY,
       shinyButtonClassName: g.upsellButton,
-      subscriptionTier: m.Si.TIER_2,
+      subscriptionTier: h.Si.TIER_2,
       premiumModalAnalyticsLocation: {
         section: _.jXE.FOR_LATER_POPOUT_UPSELL
       }

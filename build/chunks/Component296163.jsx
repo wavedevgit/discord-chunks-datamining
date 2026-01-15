@@ -2,7 +2,7 @@
 /** chunk id: 296163, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e) {
+function h(e) {
   return (0, r.jsx)(o.u_l, _({
     size: "md",
     title: f.intl.string(f.t.NYklhr),
@@ -58,14 +58,14 @@ function m(e) {
   }, e))
 }
 
-function h() {
+function m() {
   let e = (0, a.e7)([u.Z], () => u.Z.shouldShowWarning(), []),
     t = i.useRef(null);
 
   function n() {
     null !== t.current && ((0, s.Mr3)(t.current), t.current = null)
   }
-  return i.useEffect(() => (e ? t.current = (0, s.h7j)(e => (0, r.jsx)(m, _({}, e))) : n(), () => {
+  return i.useEffect(() => (e ? t.current = (0, s.h7j)(e => (0, r.jsx)(h, _({}, e))) : n(), () => {
     n()
   }), [e]), null
 }

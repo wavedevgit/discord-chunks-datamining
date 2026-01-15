@@ -2,7 +2,7 @@
 /** chunk id: 226192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  UV: () => m,
+  UV: () => h,
   _s: () => p,
   kW: () => _,
   km: () => f
@@ -142,7 +142,7 @@ function _(e, t) {
   })
 }
 
-function m(e) {
+function h(e) {
   (0, i.Z)({
     title: s.intl.string(s.t.wLGrjB),
     subtitle: s.intl.string(s.t.arYQ2X),

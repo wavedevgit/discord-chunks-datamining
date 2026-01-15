@@ -5,9 +5,9 @@ require.d(exports, {
   PA: () => d,
   Tn: () => u,
   _i: () => g,
-  eI: () => m,
+  eI: () => h,
   vp: () => _,
-  y8: () => h
+  y8: () => m
 });
 var Chunk367907 = require("./367907.js"),
   Chunk200876 = require("./200876.js"),
@@ -124,11 +124,11 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   return (0, i.l)(e)
 }
 
-function h(e, t, n, i) {
+function m(e, t, n, i) {
   var a;
   r.ZP.trackWithMetadata(s.rMx.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, {
     guild_id: e,

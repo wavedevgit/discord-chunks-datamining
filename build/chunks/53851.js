@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Ge: () => o,
-  H6: () => m,
+  H6: () => h,
   JF: () => _,
   LN: () => a,
   RA: () => y,
-  SH: () => h,
+  SH: () => m,
   _$: () => s,
   aK: () => p,
   km: () => b,
@@ -162,9 +162,9 @@ function _(e) {
   let t = e.toLowerCase();
   return true !== c[t] ? c[t] : parseInt(t = t.replace(/(?:imo|ndo|rzo|rto|nto|sto|tavo|nono|cimo|timo|esimo)$/i, ""))
 }
-let m = "(?:[1-9][0-9]{0,3}\\s{0,2}(?:BE|AD|BC|BCE|CE)|[1-2][0-9]{3}|[5-9][0-9])";
+let h = "(?:[1-9][0-9]{0,3}\\s{0,2}(?:BE|AD|BC|BCE|CE)|[1-2][0-9]{3}|[5-9][0-9])";
 
-function h(e) {
+function m(e) {
   if (/BE/i.test(e)) return parseInt(e = e.replace(/BE/i, "")) - 543;
   if (/BCE?/i.test(e)) return -parseInt(e = e.replace(/BCE?/i, ""));
   if (/(AD|CE)/i.test(e)) return parseInt(e = e.replace(/(AD|CE)/i, ""));

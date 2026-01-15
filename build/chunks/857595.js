@@ -13,17 +13,17 @@ require.d(exports, {
   Zt: () => y,
   cq: () => f,
   eN: () => N,
-  f1: () => m,
+  f1: () => h,
   gs: () => I,
-  ky: () => w,
-  lq: () => h,
+  ky: () => R,
+  lq: () => m,
   o2: () => b,
   oL: () => u,
   qz: () => O,
   r_: () => g,
   rf: () => _,
   u1: () => C,
-  vW: () => R,
+  vW: () => w,
   zH: () => D
 });
 var Chunk570140 = require("./570140.js"),
@@ -72,13 +72,13 @@ function _() {
   })
 }
 
-function m() {
+function h() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_DESATURATE_ROLES_TOGGLE"
   })
 }
 
-function h() {
+function m() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_DARK_SIDEBAR_TOGGLE"
   })
@@ -190,14 +190,14 @@ function P() {
   })
 }
 
-function R(e) {
+function w(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_CONTRAST_MODE",
     contrastMode: e
   })
 }
 
-function w(e) {
+function R(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED",
     switchIconsEnabled: e

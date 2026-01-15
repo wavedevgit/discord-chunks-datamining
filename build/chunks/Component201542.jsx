@@ -62,10 +62,10 @@ function C(e, t, n) {
 
 function A(e, t, n) {
   i.useEffect(() => {
-    if (t) return m.S.dispatch(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
+    if (t) return h.S.dispatch(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
       src: e
-    }), m.S.subscribe(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
-      m.S.unsubscribe(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r)
+    }), h.S.subscribe(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
+      h.S.unsubscribe(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r)
     };
 
     function r(t) {
@@ -81,13 +81,13 @@ let N = Chunk473749.memo(function(e) {
       src: n,
       volume: a = 1,
       onVolumeChange: p,
-      onMute: m,
+      onMute: h,
       waveform: b,
       durationSecs: y,
       onVolumeShow: N,
       onVolumeHide: P,
-      onPlay: R,
-      onPause: w,
+      onPlay: w,
+      onPause: R,
       onError: D,
       playbackCacheKey: x
     } = e,
@@ -140,8 +140,8 @@ let N = Chunk473749.memo(function(e) {
       H(0 === t), ee(t), null == p || p(t)
     }, [p]),
     ed = i.useCallback(() => {
-      H(!V), null == m || m(!V)
-    }, [V, m]),
+      H(!V), null == h || h(!V)
+    }, [V, h]),
     ef = i.useCallback(() => {
       z(true)
     }, []),
@@ -155,16 +155,16 @@ let N = Chunk473749.memo(function(e) {
   i.useEffect(() => {
     !k && Y && U(true)
   }, [Y, k]);
-  let em = i.useRef(null),
-    eh = {
+  let eh = i.useRef(null),
+    em = {
       played: q,
       currentTime: G,
-      onPause: w,
-      onPlay: R
+      onPause: R,
+      onPlay: w
     },
-    eg = i.useRef(eh);
+    eg = i.useRef(em);
   i.useEffect(() => {
-    eg.current = eh
+    eg.current = em
   }), i.useEffect(() => {
     j > 0 && el(j)
   }, [j, el]), i.useEffect(() => {
@@ -172,7 +172,7 @@ let N = Chunk473749.memo(function(e) {
     return Y && !K && (e = setInterval(() => {
       var e, t;
       ea(null != (t = null == (e = L.current) ? true : e.currentTime) ? t : 0)
-    }, h.Z.Millis.SECOND)), () => {
+    }, m.Z.Millis.SECOND)), () => {
       null != e && clearInterval(e)
     }
   }, [Y, K, ea]), i.useEffect(() => {
@@ -185,12 +185,12 @@ let N = Chunk473749.memo(function(e) {
     if (e || Y)
       if (Y) {
         var i, a;
-        em.current = performance.now(), null == r || r(false, t, (null != (a = null == (i = L.current) ? true : i.duration) ? a : 0) * h.Z.Millis.SECOND)
+        eh.current = performance.now(), null == r || r(false, t, (null != (a = null == (i = L.current) ? true : i.duration) ? a : 0) * m.Z.Millis.SECOND)
       } else {
         let e = performance.now(),
-          r = em.current,
+          r = eh.current,
           i = null != r ? (e - r) / 1e3 : 0;
-        null == n || n(t, i), ea(t), em.current = null
+        null == n || n(t, i), ea(t), eh.current = null
       }
   }, [Y, n, F, ea]), C(L, Y, Z), A(n, Y, W);
   let eE = Y ? l.fpf : l.o1U,

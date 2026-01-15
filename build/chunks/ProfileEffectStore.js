@@ -53,13 +53,13 @@ let u = {},
       f(e) && (t = true)
     }), t
   },
-  m = e => {
+  h = e => {
     let {
       product: t
     } = e;
     return f(t)
   },
-  h = e => {
+  m = e => {
     let {
       categories: t
     } = e;
@@ -96,8 +96,8 @@ class O extends(r = Chunk442837.ZP.Store) {
 }
 c(O, "displayName", "ProfileEffectStore");
 let v = new O(Chunk570140.Z, {
-  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: m,
-  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: h,
+  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: h,
+  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: m,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: g,
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: E,
   COLLECTIBLES_CLAIM_SUCCESS: b,

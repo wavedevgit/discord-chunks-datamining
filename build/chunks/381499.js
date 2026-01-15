@@ -5,7 +5,7 @@ require.d(exports, {
   A8: () => u,
   D5: () => y,
   Gm: () => v,
-  T4: () => h,
+  T4: () => m,
   r1: () => f,
   wA: () => _,
   yC: () => E
@@ -199,7 +199,7 @@ class p extends Chunk495852.C {
   }
 }
 let _ = new p;
-class m extends Chunk495852.C {
+class h extends Chunk495852.C {
   internalJsonWrite(e, t) {
     return this.refJsonWriter.scalar(5, e.value, "value", false, true)
   }
@@ -244,7 +244,7 @@ class m extends Chunk495852.C {
     }])
   }
 }
-let h = new m;
+let m = new h;
 class g extends Chunk495852.C {
   internalJsonWrite(e, t) {
     return this.refJsonWriter.scalar(13, e.value, "value", false, true)

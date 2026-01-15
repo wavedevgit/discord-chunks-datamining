@@ -39,7 +39,7 @@ function p(e) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -47,14 +47,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = 40,
+let m = 40,
   g = 18;
 
 function E(e) {
@@ -97,7 +97,7 @@ function b(e) {
         className: a()(d.attachment, d.mediaMissing)
       })
     }), s && (0, r.jsx)(c.ZY, {
-      size: h,
+      size: m,
       isVictor: u,
       isExpired: n,
       className: d.selectedIcon

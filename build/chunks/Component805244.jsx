@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -60,15 +60,15 @@ function b(e) {
   let {
     backupCodes: t,
     hasTOTPEnabled: n,
-    currentUser: m
+    currentUser: h
   } = e, g = i.useCallback(e => {
-    (0, a.h7j)(t => (0, r.jsx)(c.Z, E(h({}, t), {
+    (0, a.h7j)(t => (0, r.jsx)(c.Z, E(m({}, t), {
       password: e
     })), {
       stackingBehavior: "stack"
     })
   }, []), b = i.useCallback(() => {
-    (0, a.h7j)(e => (0, r.jsx)(d.default, E(h({}, e), {
+    (0, a.h7j)(e => (0, r.jsx)(d.default, E(m({}, e), {
       handleSubmit: e => o.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
         g(e)
       }),
@@ -84,10 +84,10 @@ function b(e) {
         return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(used)" : "")
       }).join("\r\n"),
       n = _.intl.formatToPlainString(_.t["uYWwh/"], {
-        email: m.email
+        email: h.email
       });
     return "".concat(n, "\r\n\r\n").concat(e)
-  }, [t, m.email]), O = i.useMemo(() => t.length > 0 ? (0, r.jsx)(l.Z, {
+  }, [t, h.email]), O = i.useMemo(() => t.length > 0 ? (0, r.jsx)(l.Z, {
     fileContents: y,
     contentType: "text/plain",
     fileName: "discord_backup_codes.txt",

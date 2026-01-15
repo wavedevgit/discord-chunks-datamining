@@ -40,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,11 +77,11 @@ function x(e) {
     highlightAddPaymentMethodButton: a,
     dropdownClassName: s,
     analyticsLocation: P,
-    currentInvoicePreview: w,
+    currentInvoicePreview: R,
     disabled: x = false
   } = e, j = (0, c.e7)([E.Z], () => E.Z.hidePersonalInformation), [M, k] = (0, c.Wu)([b.Z], () => [b.Z.paymentSources, b.Z.hasFetchedPaymentSources]), U = (0, g.V)((0, S.yb)(t)), {
     analyticsLocations: G
-  } = (0, h.ZP)(), Z = i.useMemo(() => Object.values(M).filter(e => !e.invalid), [M]), [F, B] = i.useState(false), [V, H] = i.useState(t.currency), Y = async (e, n, r) => {
+  } = (0, m.ZP)(), Z = i.useMemo(() => Object.values(M).filter(e => !e.invalid), [M]), [F, B] = i.useState(false), [V, H] = i.useState(t.currency), Y = async (e, n, r) => {
     if (null == t) throw Error("missing subscription and paymentSource");
     null == e ? await f.fG(t, n, r, G, P) : await f.tq(t, e, n, r, G, P), B(false), H(n)
   }, W = async (e, n, r) => {
@@ -98,7 +98,7 @@ function x(e) {
         amount: i.subtotal,
         currency: i.currency
       };
-    w.currency !== i.currency || w.currency === i.currency && w.total !== i.total ? await L(i, () => {
+    R.currency !== i.currency || R.currency === i.currency && R.total !== i.total ? await L(i, () => {
       r(e, n, a)
     }, () => {
       B(false)
@@ -115,7 +115,7 @@ function x(e) {
       W(e, K(e), Y)
     }), "function" == typeof n && n(e.id)
   }, Q = () => {
-    (0, u.ZDy)(async () => e => (0, r.jsx)(p.default, D(R({}, e), {
+    (0, u.ZDy)(async () => e => (0, r.jsx)(p.default, D(w({}, e), {
       onAddPaymentSource: q,
       analyticsLocation: P
     })), {
@@ -126,7 +126,7 @@ function x(e) {
     })
   }, X = () => {
     let e = t.paymentSourceId;
-    return (0, r.jsx)(m.ZP, {
+    return (0, r.jsx)(h.ZP, {
       prependOption: null == e ? {
         label: C.intl.string(C.t.iA5vA1),
         value: null

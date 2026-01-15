@@ -8,7 +8,7 @@ require.r(exports), require.d(exports, {
   OVERLAY_LAYOUT_ID: () => p,
   OVERLAY_MIN_RESOLUTION: () => f,
   OVERLAY_VERSION: () => u,
-  UNSET_PID: () => m,
+  UNSET_PID: () => h,
   getPID: () => g,
   getRPCAuthToken: () => y,
   isValidGamePID: () => b,
@@ -36,14 +36,14 @@ let u = 2,
   },
   p = "overlay_default",
   _ = false,
-  m = false,
-  h = false;
+  h = false,
+  m = false;
 
 function g() {
   var e;
-  if (true !== r && r !== m) return r;
+  if (true !== r && r !== h) return r;
   let t = parseInt(null != (e = new URLSearchParams(window.location.search).get("pid")) ? e : "", 10);
-  return isNaN(t) && (t = m), r = t
+  return isNaN(t) && (t = h), r = t
 }
 
 function E(e) {
@@ -51,7 +51,7 @@ function E(e) {
 }
 
 function b(e) {
-  return null != e && 0 !== e && e !== m
+  return null != e && 0 !== e && e !== h
 }
 
 function y() {
@@ -72,11 +72,11 @@ function v(e) {
 }
 
 function S(e) {
-  h = e
+  m = e
 }
 
 function I() {
-  return h
+  return m
 }
 
 function T() {

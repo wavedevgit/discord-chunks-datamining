@@ -27,12 +27,12 @@ function p(e) {
     p = (0, r.e7)([u.Z], () => null != t ? u.Z.getPrimaryActivity(e.author_id, null == n ? true : n.guild_id) : null, [n, e.author_id, t]),
     _ = (0, r.e7)([s.Z], () => t ? s.Z.getStreamForUser(e.author_id, null == n ? true : n.guild_id) : null, [n, e.author_id, t]),
     {
-      previewUrl: m
+      previewUrl: h
     } = (0, o.Z)(null == _ ? true : _.guildId, null == _ ? true : _.channelId, null == _ ? true : _.ownerId);
   return {
     channel: n,
     activity: p,
-    streamPreviewUrl: m,
+    streamPreviewUrl: h,
     stream: _
   }
 }

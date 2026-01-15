@@ -32,7 +32,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk144923 = require("./144923.js"),
   Chunk354351 = require("./354351.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +48,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -96,7 +96,7 @@ function U(e) {
     locale: n,
     compactMode: r,
     numPages: o
-  } = e, l = a.useRef(null), [c, d] = a.useState(0), [p, m] = a.useState(null), h = t.slice(c * k, (c + 1) * k);
+  } = e, l = a.useRef(null), [c, d] = a.useState(0), [p, h] = a.useState(null), m = t.slice(c * k, (c + 1) * k);
   a.useEffect(() => {
     var e;
     null == (e = l.current) || e.scrollTo({
@@ -106,7 +106,7 @@ function U(e) {
   let E = a.useCallback(e => {
       d(e);
       let n = t[t.length - 1].id;
-      e >= o - 2 && p !== n && ((0, _.cQ)(k, n), m(n))
+      e >= o - 2 && p !== n && ((0, _.cQ)(k, n), h(n))
     }, [t, o, p]),
     y = (0, g.Z)("billing-history", l);
   return (0, i.jsx)(u.bG, {
@@ -127,7 +127,7 @@ function U(e) {
           children: (0, i.jsx)(f.Den, {
             className: P.bottomDivider,
             ref: l,
-            children: h.map((e, t) => (0, i.jsx)(I.Z, {
+            children: m.map((e, t) => (0, i.jsx)(I.Z, {
               className: s()(P.paymentRow, P.bottomDivider),
               payment: e,
               locale: n,
@@ -145,7 +145,7 @@ class G extends(r = Chunk473749.PureComponent) {
   }
   componentDidMount() {
     p.Z.wait(() => {
-      (0, m.N)(), (0, _.cQ)(3 * k)
+      (0, h.N)(), (0, _.cQ)(3 * k)
     })
   }
   renderPremiumExternalSubscription(e) {
@@ -181,13 +181,13 @@ class G extends(r = Chunk473749.PureComponent) {
           children: (0, i.jsxs)(E.Z, {
             className: P.paymentRowHeader,
             children: [(0, i.jsx)("div", {
-              className: R.date,
+              className: w.date,
               children: N.intl.string(N.t["5t11BV"])
             }), (0, i.jsx)("div", {
               className: P.paymentRowHeaderDescription,
               children: N.intl.string(N.t.yAAPb2)
             }), (0, i.jsx)("div", {
-              className: R.amount,
+              className: w.amount,
               children: N.intl.string(N.t["6MqHXV"])
             })]
           })
@@ -201,7 +201,7 @@ class G extends(r = Chunk473749.PureComponent) {
     }) : null
   }
   constructor(...e) {
-    super(...e), w(this, "scrollerRef", a.createRef())
+    super(...e), R(this, "scrollerRef", a.createRef())
   }
 }
 
@@ -232,13 +232,13 @@ function F(e) {
     c = a.useMemo(() => t.filter(e => e.currency !== T.pKx.DISCORD_ORB), [t]);
   return a.useEffect(() => {
     l() || p.Z.wait(() => {
-      o.forEach(e => (0, h.GZ)(e, true, true, true, true))
+      o.forEach(e => (0, m.GZ)(e, true, true, true, true))
     })
   }, [l, o]), (0, i.jsx)(G, L(D({}, e), {
     payments: c,
     subscription: n
   }))
 }
-w(G, "defaultProps", {
+R(G, "defaultProps", {
   compactMode: false
 })

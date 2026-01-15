@@ -57,13 +57,13 @@ let y = new b(Chunk570140.Z, {}),
     null != t && t.isPrivate() && (E.has(t.getRecipientId()) || (E.add(t.getRecipientId()), y.emitChange()))
   },
   S = () => (0, i.jsxs)("div", {
-    className: h.replyBar,
+    className: m.replyBar,
     children: [(0, i.jsx)(l.Text, {
       variant: "text-sm/medium",
-      className: o()(h.text, h.replyLabel),
-      children: m.intl.string(m.t["2UvR1E"])
+      className: o()(m.text, m.replyLabel),
+      children: h.intl.string(h.t["2UvR1E"])
     }), (0, i.jsx)("div", {
-      className: h.actions,
+      className: m.actions,
       children: (0, i.jsx)(u.B, {
         onClick: v
       })

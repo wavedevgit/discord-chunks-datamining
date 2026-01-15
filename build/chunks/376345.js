@@ -18,9 +18,9 @@ var Chunk688619 = require("./688619.js"),
 let {
   Themes: _
 } = Chunk15202.VV, {
-  SemanticColors: m
+  SemanticColors: h
 } = Chunk707427.V, {
-  RawColors: h
+  RawColors: m
 } = Chunk8800.V, {
   Shadows: g
 } = Chunk868858.V, {
@@ -37,10 +37,10 @@ function y(e) {
 }
 let O = {
   themes: _,
-  colors: o()(m, (e, t) => ({
+  colors: o()(h, (e, t) => ({
     [b]: t
   })),
-  unsafe_rawColors: h,
+  unsafe_rawColors: m,
   shadows: o()(g, e => {
     function t(t) {
       return {
@@ -63,17 +63,17 @@ let O = {
     resolveSemanticColor(e, t, n) {
       var r, a;
       e = y(e);
-      let o = m[t[b]],
+      let o = h[t[b]],
         {
           category: s
         } = o,
         l = o[e],
-        c = h[l.raw],
+        c = m[l.raw],
         u = l.opacity;
       if ((null == n ? true : n.gradient) != null && "gradient" in o) {
         let e = o.gradient[null == n ? true : n.gradient.theme];
         if (null != e) {
-          let t = i()(e.color in h ? h[e.color] : null == n ? true : n.gradient.colors[e.color]);
+          let t = i()(e.color in m ? m[e.color] : null == n ? true : n.gradient.colors[e.color]);
           "saturation" in e && (t = t.set("hsl.s", e.saturation)), "lightness" in e && (t = t.set("hsl.l", e.lightness)), c = t.hex(), u = "opacity" in e ? e.opacity : 1
         }
       }

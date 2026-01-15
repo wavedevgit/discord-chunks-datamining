@@ -26,16 +26,16 @@ function p(e) {
     {
       name: p,
       description: _,
-      hideDescriptionUntilUnlock: m,
-      onAction: h
+      hideDescriptionUntilUnlock: h,
+      onAction: m
     } = i,
-    g = m && !o,
+    g = h && !o,
     E = o ? "text-strong" : "text-muted",
     b = o ? "text-default" : "text-muted",
     y = s()(n),
-    O = null != h && o,
+    O = null != m && o,
     v = () => {
-      O && h()
+      O && m()
     },
     S = O ? l.P3F : "div";
   return (0, r.jsxs)(S, {

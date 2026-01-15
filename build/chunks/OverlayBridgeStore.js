@@ -107,7 +107,7 @@ class er {
   constructor() {
     B(this, "isDispatching", false), B(this, "timeout", true), B(this, "requestIdleCallback", true), B(this, "actionsToFlush", new Set), B(this, "waitingActionsToFlush", new Set), B(this, "flush", () => {
       if (null != this.timeout && (clearTimeout(this.timeout), this.timeout = null), null != this.requestIdleCallback && (cancelIdleCallback(this.requestIdleCallback), this.requestIdleCallback = null), !Q()) return void this.actionsToFlush.clear();
-      this.actionsToFlush.size > 0 && (h.lW({
+      this.actionsToFlush.size > 0 && (m.lW({
         type: Z.BmY.DISPATCH,
         pid: null,
         token: null,
@@ -118,7 +118,7 @@ class er {
     }), B(this, "queueDispatch", e => !(!Q() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
       settings: {
         type: e.settings.type,
-        proto: (0, R.cv)(e.settings.type, e.settings.proto)
+        proto: (0, w.cv)(e.settings.type, e.settings.proto)
       }
     })), this.actionsToFlush.add(e), null == this.timeout && null == this.requestIdleCallback && (this.timeout = setTimeout(() => {
       this.requestIdleCallback = requestIdleCallback(this.flush, {
@@ -183,14 +183,14 @@ let ep = "none",
     timeoutMs: 18e4
   });
 
-function em(e, t) {
+function eh(e, t) {
   return function() {
     for (var n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
     e_(() => t(...r), e)
   }
 }
 
-function eh() {
+function em() {
   try {
     var e;
     let t = null === _.Z || true === _.Z || null == (e = _.Z.fileManager) ? true : e.uploadDiscordHookCrashes;
@@ -221,7 +221,7 @@ function eh() {
 function eg(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
     r = q.get(e);
-  (null === n || r === n) && r !== t && (null == t ? q.delete(e) : q.set(e, t), (null == t || "CRASHED" === t) && (f.Z.setFocusedPID(null, null), eh()), en.delete(e), el.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), q))
+  (null === n || r === n) && r !== t && (null == t ? q.delete(e) : q.set(e, t), (null == t || "CRASHED" === t) && (f.Z.setFocusedPID(null, null), em()), en.delete(e), el.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), q))
 }
 async function eE(e) {
   try {
@@ -257,7 +257,7 @@ async function eb(e) {
   let i = await (0, G.K)();
   if (null == i) return void el.error("Trying to attach to pid=".concat(e, ", but overlay module failed loaded"));
   ep = "attach.transitionOverlayPIDStatus", eg(e, "ATTACHING"), ep = "attach.attachToProcess";
-  let a = await m.YT(e);
+  let a = await h.YT(e);
   null == a ? (ep = "attach.transitionOverlayPIDStatus (CONNECTING)", eg(e, "CONNECTING", "ATTACHING"), ep = "attach.reconcileHostProcess", await eE(i), i.connectProcess(e)) : (ep = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", eg(e, "HOOK_FAILED", "ATTACHING"), el.warn("Could not hook to pid=".concat(e, ", error=").concat(a)))
 }
 async function ey(e) {
@@ -267,7 +267,7 @@ async function ey(e) {
     ep = "detach.getOverlayModule";
     let t = await (0, G.K)();
     if (null == t) return void el.error("Trying to detach from pid=".concat(e, ", but overlay module failed loaded"));
-    e !== U.DEV_PID && (ep = "detach.cancelAttachToProcess", await m.pn(e), await (0, s._v)(16), ep = "detach.disconnectProcess", await t.disconnectProcess(e)), ep = "detach.transitionOverlayPIDStatus", eg(e, null), ep = "detach.reconcileHostProcess", await eE(t)
+    e !== U.DEV_PID && (ep = "detach.cancelAttachToProcess", await h.pn(e), await (0, s._v)(16), ep = "detach.disconnectProcess", await t.disconnectProcess(e)), ep = "detach.transitionOverlayPIDStatus", eg(e, null), ep = "detach.reconcileHostProcess", await eE(t)
   } catch (t) {
     (0, O.D1)(t, S.gl.Hook), el.error("Error during overlay detachment for pid ".concat(e, ":"), t), eg(e, null)
   }
@@ -333,8 +333,8 @@ async function eO(e) {
   for (let t of e.removed) el.verbose("updateIntendedOverlayPIDs: removedGame", t), await r(t), i = true;
   i && e0.emitChange()
 }
-let ev = em("updateIntendedOverlayPIDs", e => (el.info("updateIntendedOverlayPIDs", e), eO(e))),
-  eS = em("clearPID", e => {
+let ev = eh("updateIntendedOverlayPIDs", e => (el.info("updateIntendedOverlayPIDs", e), eO(e))),
+  eS = eh("clearPID", e => {
     if (null == e) return (0, U.setPID)(U.UNSET_PID);
     A.Z.isOverlayV3EnabledForPID(e) || (0, U.setPID)(U.UNSET_PID)
   });
@@ -346,7 +346,7 @@ function eI() {
     })
   })
 }
-let eT = em("setOverlayEnabled", async e => {
+let eT = eh("setOverlayEnabled", async e => {
   if (!(0, U.supportsLegacy)()) return;
   if (X === e) return void el.verbose("setOverlayEnabled: no change", {
     newOverlayEnabled: e
@@ -380,9 +380,9 @@ function eA(e, t, n) {
 }
 
 function eN() {
-  let e = w.default.getToken(),
-    t = w.default.getId();
-  null != e && h.lW({
+  let e = R.default.getToken(),
+    t = R.default.getId();
+  null != e && m.lW({
     type: Z.BmY.DISPATCH,
     pid: null,
     token: null,
@@ -398,22 +398,22 @@ function eP(e) {
   return null != e && (0, j.y)(e, et)
 }
 
-function eR(e) {
+function ew(e) {
   switch (es && el.info("[app data received]", e), e.type) {
     case Z.BmY.CONNECT:
-      let t = w.default.getToken();
+      let t = R.default.getToken();
       if (null == t) break;
       (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv), Promise.all([(0, I.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
           pid: i,
           token: a
         } = e;
-        h.lW({
+        m.lW({
           type: Z.BmY.STORAGE_SYNC,
           pid: i,
           token: a,
           states: r
-        }), h.lW({
+        }), m.lW({
           type: Z.BmY.DISPATCH,
           pid: i,
           token: a,
@@ -432,7 +432,7 @@ function eR(e) {
       (0, y.K)(e.payload)
   }
 }
-async function ew(e, t) {
+async function eR(e, t) {
   let n = await (0, G.K)();
   if (null == n) return void el.error("setInputLocked: overlay module failed loaded");
   let r = null != t ? t : $;
@@ -448,7 +448,7 @@ async function ew(e, t) {
 }
 
 function eD(e, t) {
-  e ? setTimeout(() => ew(e, t), 200) : ew(e, t)
+  e ? setTimeout(() => eR(e, t), 200) : eR(e, t)
 }
 let ex = null;
 
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "df909f9ad41cba8a6b94ba9bae1cbf2058d6d211"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "a64a3f2becccd89dd068d0ed0ea98b3fa3b6bf71"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -609,7 +609,7 @@ function eJ() {
 }
 class e$ extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    !(0, U.supportsLegacy)() || __OVERLAY__ || (this.waitFor(w.default, E.Z, D.Z, x.Z, T.default, N.Z, P.Z, A.Z, b.ZP), this.syncWith([E.Z], eQ), h.sr(eR, eP), w.default.addChangeListener(eN), l.Z.addInterceptor(ei.queueDispatch))
+    !(0, U.supportsLegacy)() || __OVERLAY__ || (this.waitFor(R.default, E.Z, D.Z, x.Z, T.default, N.Z, P.Z, A.Z, b.ZP), this.syncWith([E.Z], eQ), m.sr(ew, eP), R.default.addChangeListener(eN), l.Z.addInterceptor(ei.queueDispatch))
   }
   isFocusedPidInputLocked() {
     let e = this.getFocusedPID();

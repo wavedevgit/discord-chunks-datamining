@@ -12,7 +12,7 @@ require.d(exports, {
   X: () => U,
   ZD: () => S,
   fw: () => C,
-  hs: () => R,
+  hs: () => w,
   i_: () => F,
   k8: () => k,
   ox: () => v,
@@ -31,7 +31,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk484710 = require("./484710.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,14 +40,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ async function y(e, t) {
 }
 async function O(e, t) {
   var n;
-  let r = w(e),
+  let r = R(e),
     i = await s.tn.get({
       url: p.ANM.GET_UNAUTHENTICATED_REPORT_MENU(r),
       query: (null == t ? true : t.variant) != null ? {
@@ -145,7 +145,7 @@ function T(e, t, n) {
 
 function C(e, t, n, r) {
   if (u.ZP.get("iar_skip_api_report_submit")) return Promise.resolve();
-  let i = w(t);
+  let i = R(t);
   return s.tn.post({
     url: p.ANM.SUBMIT_UNAUTHENTICATED_REPORT_MENU(i),
     body: M(e, t, n, r),
@@ -180,7 +180,7 @@ async function P() {
     rejectWithError: false
   })
 }
-async function R(e) {
+async function w(e) {
   return (await s.tn.post({
     url: p.ANM.SUBMIT_REPORT_SECOND_LOOK,
     body: {
@@ -190,7 +190,7 @@ async function R(e) {
   })).body
 }
 
-function w(e) {
+function R(e) {
   let t = e.name;
   return a()(Object.values(f.BM).includes(t), "Invalid report type ".concat(e.name)), t
 }
@@ -228,7 +228,7 @@ let j = (e, t, n) => {
           multiSelect: n,
           textInput: r
         } = t;
-        return h({}, e, null != n && {
+        return m({}, e, null != n && {
           [n.name]: Object.keys(n.state)
         }, Object.fromEntries(Object.entries(null != r ? r : {}).map(e => {
           let [t, {
@@ -243,7 +243,7 @@ let j = (e, t, n) => {
         channel_id: e,
         id: n
       } = t.record;
-      return E(h({}, s, o), {
+      return E(m({}, s, o), {
         name: t.name,
         channel_id: e,
         message_id: n
@@ -277,7 +277,7 @@ let j = (e, t, n) => {
           multiSelect: n,
           textInput: r
         } = t;
-        return h({}, e, null != n && {
+        return m({}, e, null != n && {
           [n.name]: Object.keys(n.state)
         }, Object.fromEntries(Object.entries(null != r ? r : {}).map(e => {
           let [t, {
@@ -292,7 +292,7 @@ let j = (e, t, n) => {
         channel_id: e,
         id: n
       } = t.record;
-      return E(h({}, l, s), {
+      return E(m({}, l, s), {
         name: t.name,
         channel_id: e,
         message_id: n
@@ -302,7 +302,7 @@ let j = (e, t, n) => {
       let {
         id: e
       } = t.record;
-      return E(h({}, l, s), {
+      return E(m({}, l, s), {
         name: t.name,
         guild_id: e
       })
@@ -312,7 +312,7 @@ let j = (e, t, n) => {
         guildId: e,
         channelId: n
       } = t.record;
-      return E(h({}, l, s), {
+      return E(m({}, l, s), {
         name: t.name,
         channel_id: n,
         guild_id: e
@@ -324,7 +324,7 @@ let j = (e, t, n) => {
         guild_id: n,
         channel_id: r
       } = t.record;
-      return E(h({}, l, s), {
+      return E(m({}, l, s), {
         name: t.name,
         channel_id: r,
         guild_id: n,
@@ -336,40 +336,40 @@ let j = (e, t, n) => {
         id: e,
         guild_id: n
       } = t.record;
-      return E(h({}, l, s), {
+      return E(m({}, l, s), {
         name: t.name,
         guild_id: n,
         guild_scheduled_event_id: e
       })
-    } else if (t.name === f.b.USER) return E(h({}, l, s), {
+    } else if (t.name === f.b.USER) return E(m({}, l, s), {
       name: t.name,
       user_id: t.record.id,
       guild_id: t.contextualGuildId
     });
-    else if (t.name === f.BM.USER) return E(h({}, l, s), {
+    else if (t.name === f.BM.USER) return E(m({}, l, s), {
       name: t.name,
       user_id: t.record.id,
       guild_id: t.contextualGuildId,
       email_token: r
     });
-    else if (t.name === f.BM.MESSAGE) return E(h({}, l, s), {
+    else if (t.name === f.BM.MESSAGE) return E(m({}, l, s), {
       name: t.name,
       message_id: t.record.id,
       email_token: r
     });
-    else if (t.name === f.BM.GUILD) return E(h({}, l, s), {
+    else if (t.name === f.BM.GUILD) return E(m({}, l, s), {
       name: t.name,
       guild_id: t.record.id,
       email_token: r
     });
-    else if (t.name === f.b.APPLICATION) return E(h({}, l, s), {
+    else if (t.name === f.b.APPLICATION) return E(m({}, l, s), {
       name: t.name,
       application_id: t.record.id,
       guild_id: t.contextualGuildId,
       channel_id: t.contextualChannelId,
       entrypoint: t.entrypoint
     });
-    else if (t.name === f.b.WIDGET) return E(h({}, l, s), {
+    else if (t.name === f.b.WIDGET) return E(m({}, l, s), {
       name: t.name,
       user_id: t.user_id,
       widget_id: t.widget_id

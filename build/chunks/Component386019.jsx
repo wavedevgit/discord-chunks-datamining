@@ -21,8 +21,8 @@ function p(e) {
     children: n,
     user: p,
     activity: _,
-    entry: m,
-    display: h,
+    entry: h,
+    display: m,
     onSelect: g,
     onClose: E,
     appContext: b,
@@ -30,16 +30,16 @@ function p(e) {
   } = e, [O, v] = i.useState(false), {
     analyticsLocations: S
   } = (0, s.ZP)(o.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.Z)({
-    display: h,
+    display: m,
     user: p,
     activity: _,
-    entry: m,
+    entry: h,
     analyticsLocations: S
   }), T = (0, u.yi)(), C = i.useRef(null), A = null != (t = null == T ? true : T.interactionPopoutTargetRef) ? t : C, N = (0, d.Z)({
-    entry: m,
+    entry: h,
     activity: _,
     user: p,
-    display: h,
+    display: m,
     onClose: E,
     onAction: I,
     isMenuOpen: O,

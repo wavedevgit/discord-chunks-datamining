@@ -268,7 +268,7 @@ let T = {
     })
   },
   async setNotificationSettings(e, t) {
-    return (0, E.ZJ)(e, t), h.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
+    return (0, E.ZJ)(e, t), m.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
       url: y.ANM.THREAD_MEMBER_SETTINGS(e.id),
       body: t,
       rejectWithError: false
@@ -283,7 +283,7 @@ let T = {
       tagSetting: s,
       offset: l
     } = e;
-    m.Z.isLoading(n, r, o, s) || (a.Z.dispatch({
+    h.Z.isLoading(n, r, o, s) || (a.Z.dispatch({
       type: "LOAD_ARCHIVED_THREADS",
       channelId: n,
       sortOrder: r,
@@ -295,7 +295,7 @@ let T = {
         archived: true,
         sort_by: "last_message_time",
         sort_order: "desc",
-        limit: m.I,
+        limit: h.I,
         tag: o.size > 0 ? Array.from(o).join(",") : true,
         tag_setting: s,
         offset: l

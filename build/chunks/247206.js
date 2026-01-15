@@ -5,7 +5,7 @@ require.d(exports, {
   Cm: () => T,
   Hc: () => O,
   IV: () => v,
-  JO: () => w,
+  JO: () => R,
   Jl: () => D,
   Ks: () => P,
   M0: () => x,
@@ -13,9 +13,9 @@ require.d(exports, {
   Pq: () => b,
   QN: () => S,
   UU: () => g,
-  Yy: () => h,
+  Yy: () => m,
   aP: () => E,
-  m8: () => R,
+  m8: () => w,
   xx: () => I,
   yf: () => N
 });
@@ -35,8 +35,8 @@ var Chunk936141 = require("./936141.js"),
   Chunk719548 = require("./719548.js"),
   Chunk981631 = require("./981631.js");
 require("./388032.jsx");
-let m = 1;
-var h = function(e) {
+let h = 1;
+var m = function(e) {
     return e.EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY = "explicit_media_learn_more_click_age_verify_reverify", e.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE = "explicit_media_learn_more_click_age_verify_learn_more", e.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", e.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED = "explicit_media_sender_false_positive_button_clicked", e.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT = "explicit_media_false_positive_clyde_message_sent", e
   }({}),
   g = function(e) {
@@ -69,7 +69,7 @@ function y(e, t) {
   let n = Math.min(Math.floor((Date.now() - e) / 1e3), 3);
   a.Z.increment({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
-    tags: ["timingBucket:".concat(n), "source:".concat(t), "metricVersion:".concat(m)]
+    tags: ["timingBucket:".concat(n), "source:".concat(t), "metricVersion:".concat(h)]
   })
 }
 
@@ -79,24 +79,24 @@ function O(e) {
     channelId: l,
     messageId: f,
     attachmentIds: p,
-    embedIds: h
+    embedIds: m
   } = e;
-  if (null == l || null == f || (null != (t = null == p ? true : p.length) ? t : 0) === 0 && (null != (n = null == h ? true : h.length) ? n : 0) === 0) return;
+  if (null == l || null == f || (null != (t = null == p ? true : p.length) ? t : 0) === 0 && (null != (n = null == m ? true : m.length) ? n : 0) === 0) return;
   let g = c.Z.getChannel(l);
   u.default.track(_.rMx.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
     channel_id: l,
     guild_id: null == g ? true : g.guild_id,
     message_id: f,
-    embed_ids: h,
+    embed_ids: m,
     user_is_underage: (0, o.U)(),
     scan_timeout_duration: d.b2,
     attachment_ids_v2: p
   }), a.Z.increment({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
-    tags: ["metricVersion:".concat(m)]
+    tags: ["metricVersion:".concat(h)]
   }), a.Z.distribution({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION
-  }, (null != (i = null == p ? true : p.length) ? i : 0) + (null != (s = null == h ? true : h.length) ? s : 0))
+  }, (null != (i = null == p ? true : p.length) ? i : 0) + (null != (s = null == m ? true : m.length) ? s : 0))
 }
 
 function v(e) {
@@ -135,8 +135,8 @@ function S(e) {
     numOfSelfHarmEmbeds: l,
     numOfGoreEmbeds: d,
     numOfExplicitEmbeds: f
-  } = e, p = s > 0 || f > 0, m = o > 0 || d > 0, h = i > 0 || l > 0;
-  if (null == n || null == t || !p && !m && !h) return;
+  } = e, p = s > 0 || f > 0, h = o > 0 || d > 0, m = i > 0 || l > 0;
+  if (null == n || null == t || !p && !h && !m) return;
   let g = c.Z.getChannel(n);
   u.default.track(_.rMx.REDACTABLE_MESSAGE_LOADED, {
     message_id: t,
@@ -152,8 +152,8 @@ function S(e) {
     num_of_explicit_embeds: f,
     num_of_self_harm_embeds: l,
     has_redactable_explicit: p,
-    has_redactable_gore: m,
-    has_redactable_self_harm: h
+    has_redactable_gore: h,
+    has_redactable_self_harm: m
   })
 }
 
@@ -228,7 +228,7 @@ function P() {
   return n && r
 }
 
-function R() {
+function w() {
   let e = (0, s.pY)("explicit_media_redaction_utils"),
     t = (0, l.s)("explicit_media_redaction_utils"),
     n = e || t,
@@ -236,8 +236,8 @@ function R() {
   return n && r
 }
 
-function w(e) {
-  return !!R() && null != e && f.eq.has(e)
+function R(e) {
+  return !!w() && null != e && f.eq.has(e)
 }
 
 function D(e) {

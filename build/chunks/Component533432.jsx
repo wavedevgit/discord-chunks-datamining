@@ -19,8 +19,8 @@ let p = Chunk473749.forwardRef(function(e, t) {
       emojiListRef: n,
       gridNavigatorId: p,
       onKeyDown: _,
-      onFocus: m,
-      autoFocus: h,
+      onFocus: h,
+      autoFocus: m,
       defaultSearchPlaceholder: g
     } = e, E = i.useRef(null), b = (0, c.Iu)(e => e.searchQuery), [y, O] = l.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], a.X), v = i.useCallback(e => {
       var t;
@@ -43,13 +43,13 @@ let p = Chunk473749.forwardRef(function(e, t) {
         return null == (e = E.current) ? true : e.focus()
       }
     })), (0, r.jsx)(s.E1j, {
-      autoFocus: h,
+      autoFocus: m,
       query: b,
       ref: E,
       placeholder: null != O ? O : g,
       onClear: S,
       onKeyDown: I,
-      onFocus: m,
+      onFocus: h,
       onChange: v,
       inputProps: {
         "aria-label": f.intl.string(f.t.tCauZX),

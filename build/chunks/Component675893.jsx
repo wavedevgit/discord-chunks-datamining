@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -43,22 +43,22 @@ function g(e) {
   let {
     user: t,
     widgets: n = [],
-    onOpenUserProfileModal: m
+    onOpenUserProfileModal: h
   } = e, g = i.useMemo(() => n.filter(e => e instanceof l.q), [n]), {
     analyticsLocations: E
   } = (0, a.ZP)(), {
     trackUserProfileAction: b
   } = (0, s.KZ)(), y = (0, o.Z)(t.id, g), O = i.useCallback(() => {
-    null == m || m({
+    null == h || h({
       tabSection: p.oh.WIDGETS
     })
-  }, [m]), v = i.useCallback(e => {
+  }, [h]), v = i.useCallback(e => {
     let t = false,
       i = [];
-    for (let a of n) a instanceof l.q ? null != y[a.applicationId] && i.push((0, r.jsx)(d.Z, h({
+    for (let a of n) a instanceof l.q ? null != y[a.applicationId] && i.push((0, r.jsx)(d.Z, m({
       previewData: y[a.applicationId],
       onClick: O
-    }, e), "application-widget-".concat(a.applicationId))) : a instanceof c.zy && !t && (i.push((0, r.jsx)(f.Z, h({
+    }, e), "application-widget-".concat(a.applicationId))) : a instanceof c.zy && !t && (i.push((0, r.jsx)(f.Z, m({
       widgets: n,
       onClick: O
     }, e), "collection-breadcrumb")), t = true);

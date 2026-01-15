@@ -4,7 +4,7 @@
 require.d(exports, {
   FE: () => _,
   MS: () => p,
-  ec: () => m,
+  ec: () => h,
   l4: () => b,
   zj: () => y
 });
@@ -57,7 +57,7 @@ let d = {
     [Chunk973005.TI.NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK,
     [Chunk973005.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: Chunk524437.Q4.BLOCK
   },
-  m = e => {
+  h = e => {
     let {
       setting: t,
       isDm: n = false,
@@ -72,12 +72,12 @@ let d = {
     }) : (null == l ? true : l.nsfwAllowed) === false ? g({
       isDm: n,
       isFriend: o
-    }) : h({
+    }) : m({
       isDm: n,
       isFriend: o
     })
   },
-  h = e => {
+  m = e => {
     let {
       isDm: t = false,
       isFriend: n = false
@@ -105,14 +105,14 @@ let d = {
   b = e => {
     let t = null != e ? e : o.Sh.getSetting();
     return {
-      explicitContentGuilds: m({
+      explicitContentGuilds: h({
         setting: null == t ? true : t.explicitContentGuilds
       }),
-      explicitContentNonFriendDm: m({
+      explicitContentNonFriendDm: h({
         setting: null == t ? true : t.explicitContentNonFriendDm,
         isDm: true
       }),
-      explicitContentFriendDm: m({
+      explicitContentFriendDm: h({
         setting: null == t ? true : t.explicitContentFriendDm,
         isDm: true,
         isFriend: true

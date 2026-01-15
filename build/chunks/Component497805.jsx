@@ -40,7 +40,7 @@ function p(e) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -48,14 +48,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = new Set;
+let m = new Set;
 
 function g(e, t) {
   return "USER_PROFILE_MODAL_KEY:".concat(e, ":").concat(null == t ? "" : t)
@@ -65,7 +65,7 @@ async function E(e) {
       userId: a,
       tabSection: o,
       scrollTarget: f,
-      guildId: m,
+      guildId: h,
       channelId: E,
       showGuildProfile: b = true,
       appContext: y,
@@ -77,13 +77,13 @@ async function E(e) {
   if (null == I) return;
   let T = l.default.getCurrentUser();
   if (null == T) return;
-  let C = g(a, b ? m : true);
-  h.add(await (0, i.ZDy)(async () => {
+  let C = g(a, b ? h : true);
+  m.add(await (0, i.ZDy)(async () => {
     let e = (await Promise.all([n.e("53870"), n.e("55827"), n.e("62880"), n.e("74330"), n.e("90882"), n.e("93979")]).then(n.bind(n, 866035))).default;
     return t => (0, r.jsx)(e, p({
       user: I,
       currentUser: T,
-      guildId: m,
+      guildId: h,
       initialTabSection: o,
       initialScrollTarget: f,
       channelId: E,
@@ -96,15 +96,15 @@ async function E(e) {
     contextKey: (0, i.VnL)(null != (t = null != y ? y : (0, s.GB)()) ? t : d.IlC.APP),
     onCloseRequest: () => {
       if (u.Z.hasUnsavedChanges()) return void c.Z.notifyUnsavedWidgets();
-      (0, i.Mr3)(C), h.delete(C), c.Z.clearPendingWidgets()
+      (0, i.Mr3)(C), m.delete(C), c.Z.clearPendingWidgets()
     }
   }))
 }
 
 function b() {
-  if (0 !== h.size) {
-    for (let e of h)(0, i.Mr3)(e);
-    h.clear(), c.Z.clearPendingWidgets()
+  if (0 !== m.size) {
+    for (let e of m)(0, i.Mr3)(e);
+    m.clear(), c.Z.clearPendingWidgets()
   }
 }
 class y extends Chunk317770.Z {

@@ -20,12 +20,12 @@ let p = Chunk473749.memo(function(e) {
     channel: n,
     referencedMessage: f,
     compact: p = false
-  } = e, _ = f.state === s.Y.LOADED ? f.message : true, m = o.d.useExperiment({
+  } = e, _ = f.state === s.Y.LOADED ? f.message : true, h = o.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, h = i.useMemo(() => (null == _ ? true : _.content) != null && "" !== _.content ? (0, c.ZP)(_, {
+  }).enabled, m = i.useMemo(() => (null == _ ? true : _.content) != null && "" !== _.content ? (0, c.ZP)(_, {
     formatInline: true,
-    allowGameMentions: m
-  }).content : null, [_, m]), {
+    allowGameMentions: h
+  }).content : null, [_, h]), {
     isReplyAuthorBlocked: g,
     isReplyAuthorIgnored: E
   } = (0, a.cj)([l.Z], () => ({
@@ -38,7 +38,7 @@ let p = Chunk473749.memo(function(e) {
     baseMessage: t,
     channel: n,
     referencedMessage: f,
-    content: h,
+    content: m,
     compact: p,
     isReplyAuthorBlocked: g,
     isReplyAuthorIgnored: E,

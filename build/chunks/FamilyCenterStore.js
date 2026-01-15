@@ -51,8 +51,8 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = null,
-  h = null,
+let h = null,
+  m = null,
   g = {},
   E = false,
   b = L(),
@@ -66,8 +66,8 @@ let m = null,
   A = [],
   N = [],
   P = null,
-  R = null,
-  w = {},
+  w = null,
+  R = {},
   D = {};
 
 function x() {
@@ -124,7 +124,7 @@ function G(e) {
 }
 
 function Z(e) {
-  w = e.reduce((e, t) => {
+  R = e.reduce((e, t) => {
     if (null != t.invoice_items && t.invoice_items.length > 0) {
       let n = t.invoice_items[0],
         r = n.sku_id,
@@ -160,7 +160,7 @@ function B(e) {
     totalSpendCurrency: f,
     invoices: p
   } = n;
-  m = o, h = l, U(r), k(a), G(i), M(t), null != p && Z(p), A = c, N = u, P = d, R = f, I = false, T = s.default.fromTimestamp(Date.now()), S = true
+  h = o, m = l, U(r), k(a), G(i), M(t), null != p && Z(p), A = c, N = u, P = d, w = f, I = false, T = s.default.fromTimestamp(Date.now()), S = true
 }
 
 function V(e) {
@@ -194,7 +194,7 @@ function Y(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  m = a, h = o, U(n), k(r), G(i), null != f && Z(f), A = l, N = c, I = false, T = s.default.fromTimestamp(Date.now()), P = u, R = d
+  h = a, m = o, U(n), k(r), G(i), null != f && Z(f), A = l, N = c, I = false, T = s.default.fromTimestamp(Date.now()), P = u, w = d
 }
 
 function W(e) {
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  m = null, h = null, g = {}, b = L(), y = j(), D = {}, I = false, T = null, v = x(), E = false, A = [], N = [], P = null, R = null, w = {}
+  h = null, m = null, g = {}, b = L(), y = j(), D = {}, I = false, T = null, v = x(), E = false, A = [], N = [], P = null, w = null, R = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -311,7 +311,7 @@ class ei extends Chunk750041.Z {
     }
   }
   getSelectedTeenId() {
-    return m
+    return h
   }
   getLinkedUsers() {
     return g
@@ -322,7 +322,7 @@ class ei extends Chunk750041.Z {
     return null == n ? null : null != (t = n.updated_at) ? t : n.created_at
   }
   getRangeStartTimestamp() {
-    return null == h ? null : s.default.extractTimestamp(h)
+    return null == m ? null : s.default.extractTimestamp(m)
   }
   getActionsForDisplayType(e) {
     let t = b.get(e);
@@ -341,7 +341,7 @@ class ei extends Chunk750041.Z {
     return v
   }
   getStartId() {
-    return h
+    return m
   }
   getIsInitialized() {
     return S
@@ -365,10 +365,10 @@ class ei extends Chunk750041.Z {
     return P
   }
   getTotalSpendCurrency() {
-    return R
+    return w
   }
   getPurchaseInfo(e) {
-    return w[e]
+    return R[e]
   }
   canRefetch() {
     return null === T || s.default.age(T) > u.Of

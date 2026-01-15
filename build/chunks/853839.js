@@ -34,22 +34,22 @@ var Chunk98405 = require("./98405.js"),
   A = I.prototype,
   N = Chunk199838.set,
   P = Chunk199838.getterFor(v),
-  R = "stack" in new I(v),
-  w = function(e) {
+  w = "stack" in new I(v),
+  R = function(e) {
     return f(g, e) && g[e].m ? g[e].c : 0
   },
   D = function() {
     p(this, x);
     var e = arguments.length,
-      t = h(e < 1 ? true : arguments[0]),
-      n = h(e < 2 ? true : arguments[1], "Error"),
-      r = w(n);
+      t = m(e < 1 ? true : arguments[0]),
+      n = m(e < 2 ? true : arguments[1], "Error"),
+      r = R(n);
     if (N(this, {
         type: v,
         name: n,
         message: t,
         code: r
-      }), y || (this.name = n, this.message = t, this.code = r), R) {
+      }), y || (this.name = n, this.message = t, this.code = r), w) {
       var i = new I(t);
       i.name = v, c(this, "stack", l(1, E(i.stack, 1)))
     }
@@ -72,7 +72,7 @@ var M = Chunk621523(function() {
     return !(new T instanceof I)
   }),
   k = M || Chunk621523(function() {
-    return A.toString !== m || "2: 1" !== String(new T(1, 2))
+    return A.toString !== h || "2: 1" !== String(new T(1, 2))
   }),
   U = M || Chunk621523(function() {
     return 25 !== new T(1, "DataCloneError").code
@@ -89,7 +89,7 @@ Chunk98405({
 var F = Chunk154028(v),
   B = F.prototype;
 for (var V in k && (Chunk511696 || T === F) && Chunk556585(B, "toString", Chunk266101), U && Chunk507604 && T === F && Chunk573078(B, "code", L(function() {
-    return w(_(this).name)
+    return R(_(this).name)
   })), Chunk17204)
   if (Chunk77025(Chunk17204, V)) {
     var H = Chunk17204[V],

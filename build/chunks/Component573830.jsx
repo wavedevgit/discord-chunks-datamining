@@ -2,7 +2,7 @@
 /** chunk id: 573830, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => w
+  J: () => R
 }), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk635041 = require("./635041.jsx"),
   Chunk816811 = require("./816811.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ let y = "M4.10585 5.3837L5.37864 4.11091L11.884 10.61632L10.6112 11.88912L4.1058
   N = [0, .1, .2, .5, .7, 1],
   P = [0, .3, .5, .8, .9, 1];
 
-function R(e, t, n) {
+function w(e, t, n) {
   let i = e.to({
     range: A,
     output: [t, t, n, n],
@@ -97,11 +97,11 @@ function R(e, t, n) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     checked: t,
     disabled: n,
-    id: h,
+    id: m,
     onChange: E,
     focusProps: y,
     hasIcon: O = false,
@@ -110,7 +110,7 @@ function w(e) {
     innerRef: I
   } = e, {
     reducedMotion: T
-  } = i.useContext(f.S), w = i.useRef(null), D = i.useRef(null), x = null != I ? I : D, L = (0, l.l)({
+  } = i.useContext(f.S), R = i.useRef(null), D = i.useRef(null), x = null != I ? I : D, L = (0, l.l)({
     isSelected: t,
     onChange: E,
     isDisabled: n
@@ -119,7 +119,7 @@ function w(e) {
     labelProps: M,
     isPressed: k
   } = (0, a.h)({
-    id: h,
+    id: m,
     isDisabled: n,
     "aria-describedby": v,
     "aria-labelledby": S
@@ -148,16 +148,16 @@ function w(e) {
     })
   };
   return (0, r.jsx)(p.tE, b(g({}, y), {
-    ringTarget: w,
+    ringTarget: R,
     focusTarget: x,
     within: true,
     offset: false,
     children: (0, r.jsxs)("label", b(g({}, M), {
-      className: m.container,
+      className: h.container,
       "data-disabled": n || true,
       children: [(0, r.jsx)(s.animated.div, b(g({}, U), {
-        ref: w,
-        className: m.switchIndicator,
+        ref: R,
+        className: h.switchIndicator,
         "data-size": "md",
         "data-mana-component": "switch",
         style: {
@@ -175,7 +175,7 @@ function w(e) {
           })
         },
         children: (0, r.jsxs)(s.animated.svg, {
-          className: m.thumb,
+          className: h.thumb,
           viewBox: "0 0 24 24",
           preserveAspectRatio: "xMidYMin meet",
           style: {
@@ -198,7 +198,7 @@ function w(e) {
             width: T.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
             height: T.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
             rx: T.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
-          }), O && R(ee, Q, X)]
+          }), O && w(ee, Q, X)]
         })
       })), (0, r.jsx)(_.n, {
         children: (0, r.jsx)("input", b(g({}, j), {

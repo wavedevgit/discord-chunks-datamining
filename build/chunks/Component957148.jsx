@@ -60,24 +60,24 @@ function _() {
   return null != t && e - t < u
 }
 
-function m() {
+function h() {
   return Array.from(f.values()).filter(e => {
     let t = new Date(e);
     return t.getMonth() === new Date().getMonth() && t.getFullYear() === new Date().getFullYear()
   }).length >= d
 }
 
-function h() {
+function m() {
   let e = Date.now();
   f.add(e)
 }
 
 function g(e, t) {
-  _() || m() || (0, i.ZDy)(async () => {
+  _() || h() || (0, i.ZDy)(async () => {
     let {
       default: i
     } = await n.e("20114").then(n.bind(n, 536920));
-    return h(), n => (0, r.jsx)(i, c(s({}, n), {
+    return m(), n => (0, r.jsx)(i, c(s({}, n), {
       clientSettingType: e,
       gameId: t
     }))

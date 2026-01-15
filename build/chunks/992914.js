@@ -10,7 +10,7 @@ var Chunk992174 = require("./992174.js"),
         for (s = l, o = e[l]; s && t(e[s - 1], o) > 0;) e[s] = e[--s];
         s !== l++ && (e[s] = o)
       } else
-        for (var c = i(n / 2), u = a(r(e, 0, c), t), d = a(r(e, c), t), f = u.length, p = d.length, _ = 0, m = 0; _ < f || m < p;) e[_ + m] = _ < f && m < p ? 0 >= t(u[_], d[m]) ? u[_++] : d[m++] : _ < f ? u[_++] : d[m++];
+        for (var c = i(n / 2), u = a(r(e, 0, c), t), d = a(r(e, c), t), f = u.length, p = d.length, _ = 0, h = 0; _ < f || h < p;) e[_ + h] = _ < f && h < p ? 0 >= t(u[_], d[h]) ? u[_++] : d[h++] : _ < f ? u[_++] : d[h++];
     return e
   };
 module.exports = a

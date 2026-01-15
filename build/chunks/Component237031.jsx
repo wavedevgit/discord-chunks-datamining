@@ -58,8 +58,8 @@ let d = "collectibles shop product details modal",
       analyticsSource: f,
       analyticsLocations: p,
       returnRef: _,
-      tab: m,
-      rentalDuration: h
+      tab: h,
+      rentalDuration: m
     } = e;
     if (t.isCategoryReward) {
       let {
@@ -77,8 +77,8 @@ let d = "collectibles shop product details modal",
         analyticsSource: f,
         analyticsLocations: p,
         returnRef: _,
-        tab: m,
-        rentalDuration: h
+        tab: h,
+        rentalDuration: m
       }))
     }, {
       modalKey: d

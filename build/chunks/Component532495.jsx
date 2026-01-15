@@ -79,8 +79,8 @@ function U(e, t) {
 
 function G() {
   var e, t, n, i, j, k, G, Z, F;
-  let B = (0, o.e7)([w.default], () => {
-      let e = w.default.getCurrentUser();
+  let B = (0, o.e7)([R.default], () => {
+      let e = R.default.getCurrentUser();
       return a()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
     }),
     V = (0, o.e7)([A.Z], () => A.Z.getUserProfile(B.id)),
@@ -95,9 +95,9 @@ function G() {
       pendingLegacyUsernameDisabled: X,
       pendingPrimaryGuildId: J,
       errors: $
-    } = (0, o.cj)([R.Z], () => {
-      let e = R.Z.getAllPending(),
-        t = R.Z.getErrors();
+    } = (0, o.cj)([w.Z], () => {
+      let e = w.Z.getAllPending(),
+        t = w.Z.getErrors();
       return U(M({}, e), {
         errors: t
       })
@@ -141,7 +141,7 @@ function G() {
     }, "color");
   return (0, r.jsxs)("div", {
     className: L.sectionsContainer,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(h.Z, {
       placeholder: B.username,
       errors: es,
       currentGlobalName: B.globalName,
@@ -178,7 +178,7 @@ function G() {
       availablePrimaryGuilds: ec,
       pendingPrimaryGuildId: J,
       onChange: e => (0, s.s4)(e)
-    }), null != eo && (0, r.jsx)(h.Z, {
+    }), null != eo && (0, r.jsx)(m.Z, {
       legacyUsername: eo,
       pendingLegacyUsernameDisabled: X
     }, "legacy_username")]

@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ function v(e) {
   } = e, [i, o] = (0, f.ww)({
     guildId: t,
     analyticsLocations: n
-  }), s = o ? m.intl.string(m.t["6ndMcq"]) : m.intl.string(m.t["0eiu6J"]), l = o ? m.intl.string(m.t.S09nw4) : m.intl.string(m.t.tEttXd);
+  }), s = o ? h.intl.string(h.t["6ndMcq"]) : h.intl.string(h.t["0eiu6J"]), l = o ? h.intl.string(h.t.S09nw4) : h.intl.string(h.t.tEttXd);
   return (0, r.jsxs)(a.qXd, {
     color: a.DM8.DANGER,
     children: [s, (0, r.jsx)(a.EyT, {
@@ -99,9 +99,9 @@ function S() {
   });
   return (0, r.jsxs)(a.qXd, {
     color: a.DM8.DANGER,
-    children: [m.intl.string(m.t.Zqlecb), (0, r.jsx)(a.EyT, {
+    children: [h.intl.string(h.t.Zqlecb), (0, r.jsx)(a.EyT, {
       onClick: e,
-      children: m.intl.string(m.t.SJehVW)
+      children: h.intl.string(h.t.SJehVW)
     })]
   })
 }

@@ -77,18 +77,18 @@ function C(e) {
     A = (0, a.e7)([f.Z, d.Z], () => d.Z.getChannel(f.Z.getChannelId())),
     N = (0, s.Z)(A),
     P = t.id,
-    R = i.useCallback(() => {
+    w = i.useCallback(() => {
       null != C && (N ? ((0, l.X)(C.id), (0, o.Mr3)((0, E.z)(P, null == A ? true : A.guild_id)), null == n || n(), p.default.track(y.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
         application_id: C.id
-      })) : (0, h.L)(S({
+      })) : (0, m.L)(S({
         applicationId: C.id
       }, C)))
     }, [C, N, P, null == A ? true : A.guild_id, n]),
-    w = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
+    R = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
   if (null == C || !(0, u.Eb)(C)) return null;
   let {
     customInstallUrl: D
-  } = C, x = null == D || m.Z.isDiscordUrl(D) ? o.qJs : o.Gr1, L = N ? true : x;
+  } = C, x = null == D || h.Z.isDiscordUrl(D) ? o.qJs : o.Gr1, L = N ? true : x;
   return _.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: T,
     renderPopout: e => {
@@ -116,17 +116,17 @@ function C(e) {
       return (0, r.jsx)(b.i6, S({
         buttonRef: T,
         action: "PRESS_ADD_APP",
-        text: w,
+        text: R,
         icon: L,
         onContextMenu: t,
-        onClick: R
+        onClick: w
       }, n, v))
     }
   }) : (0, r.jsx)(b.i6, S({
     action: "PRESS_ADD_APP",
-    text: w,
+    text: R,
     icon: L,
-    onClick: R,
+    onClick: w,
     variant: "primary"
   }, v))
 }

@@ -49,10 +49,12 @@ class l {
     return new l(s(a({}, e), {
       assetDark: e.asset_dark,
       assetLight: e.asset_light,
-      refTargetBackground: e.ref_target_background
+      refTargetBackground: e.ref_target_background,
+      badgeIcon: e.badge_icon,
+      badgeText: e.badge_text
     }))
   }
   constructor(e) {
-    i(this, "title", true), i(this, "body", true), i(this, "assetDark", true), i(this, "assetLight", true), i(this, "version", true), i(this, "refTargetBackground", true), this.type = r.Z.COACHMARK, this.title = e.title, this.body = e.body, this.assetDark = e.assetDark, this.assetLight = e.assetLight, this.version = e.version, this.refTargetBackground = e.refTargetBackground
+    i(this, "title", true), i(this, "body", true), i(this, "assetDark", true), i(this, "assetLight", true), i(this, "version", true), i(this, "refTargetBackground", true), i(this, "badgeIcon", true), i(this, "badgeText", true), this.type = r.Z.COACHMARK, this.title = e.title, this.body = e.body, this.assetDark = e.assetDark, this.assetLight = e.assetLight, this.version = e.version, this.refTargetBackground = e.refTargetBackground, this.badgeIcon = e.badgeIcon, this.badgeText = e.badgeText
   }
 }

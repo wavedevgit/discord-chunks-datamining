@@ -133,7 +133,7 @@ function K(e) {
   } = e, o = (0, l.e7)([O.Z], () => O.Z.getGuildId());
 
   function s(e) {
-    S.default.track(R.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED, {
+    S.default.track(w.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED, {
       sound_id: t.soundId,
       sound_name: t.name,
       sound_guild_id: t.guildId,
@@ -162,11 +162,11 @@ function z(e) {
     disabled: n = false
   } = e, {
     analyticsLocations: a
-  } = (0, m.ZP)(), s = (0, l.e7)([T.Z], () => T.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
+  } = (0, h.ZP)(), s = (0, l.e7)([T.Z], () => T.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
     e.stopPropagation(), e.currentTarget.blur(), s ? (0, I.hs)(t.soundId) : ((0, A.lF)({
       sound: t,
       location: U(M({}, a), {
-        object: R.qAy.SOUNDBOARD_SOUND
+        object: w.qAy.SOUNDBOARD_SOUND
       })
     }), (0, I.TB)(t.soundId))
   }, [s, t, a]);
@@ -203,10 +203,10 @@ function q(e, t) {
   }, [t, e])
 }
 let Q = Chunk473749.forwardRef(function(e, t) {
-  var n, a, u, m, O, S, {
+  var n, a, u, h, O, S, {
       sound: I,
       channel: T,
-      containerClassName: R,
+      containerClassName: w,
       className: j,
       focused: k,
       forceSecondaryActions: Z = false,
@@ -231,24 +231,24 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     emojiId: ed,
     emojiName: ef
   } = I, ep = (0, l.e7)([v.default], () => v.default.getCurrentUser()), e_ = (0, P.z)(I, null == T ? true : T.guild_id), {
-    playSoundboardSound: em,
-    previewSound: eh,
+    playSoundboardSound: eh,
+    previewSound: em,
     isPlayingSound: eg
-  } = (0, N.Z)(I, null != (u = null == T ? true : T.id) ? u : null, null != (m = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? m : 100, !eo && (null == T ? true : T.isVocal()) ? D.w.VOICE : D.w.DEFAULT), {
+  } = (0, N.Z)(I, null != (u = null == T ? true : T.id) ? u : null, null != (h = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? h : 100, !eo && (null == T ? true : T.isVocal()) ? D.w.VOICE : D.w.DEFAULT), {
     createMultipleConfettiAt: eE
-  } = i.useContext(h.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(B), eS = i.useRef(new c.Xp), eI = I.soundId === F, eT = "sound-".concat(I.soundId), eC = (0, s.JA)(eT), eA = null != ed || null != ef, eN = !(0, A.Nq)(ep, I, T) && !eo, eP = Z || Q && !eN, eR = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, ew = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > eR ? "top" : "bottom", [eD, ex] = i.useState(false), eL = i.useCallback(() => {
+  } = i.useContext(m.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(B), eS = i.useRef(new c.Xp), eI = I.soundId === F, eT = "sound-".concat(I.soundId), eC = (0, s.JA)(eT), eA = null != ed || null != ef, eN = !(0, A.Nq)(ep, I, T) && !eo, eP = Z || Q && !eN, ew = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, eR = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > ew ? "top" : "bottom", [eD, ex] = i.useState(false), eL = i.useCallback(() => {
     ex(true)
   }, []), ej = i.useCallback(() => {
     ex(false)
   }, []), eM = eN && en;
 
   function ek() {
-    X || em(ee)
+    X || eh(ee)
   }
 
   function eU(e) {
     if (eI && !eO && (ev.current = Math.min(ev.current + H, V), Math.random() < ev.current && eE(ey.x, ey.y, true, true, {
-        sprite: w.vv
+        sprite: R.vv
       })), null != $) return void $(e);
     ek()
   }
@@ -257,7 +257,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       onMouseLeave: ej,
       children: K({
         sound: I,
-        previewSound: eh,
+        previewSound: em,
         disabled: eN && !Z
       })
     }),
@@ -348,12 +348,12 @@ let Q = Chunk473749.forwardRef(function(e, t) {
   let eH = (0, b.a)(eb.current);
   return (0, r.jsxs)("li", {
     ref: t,
-    className: o()(L.soundButtonWrapper, R),
+    className: o()(L.soundButtonWrapper, w),
     onMouseEnter: J,
     children: [(0, r.jsx)(d.u, {
       "aria-label": null != el ? I.name : true,
       __unsupportedReactNodeAsText: null != el ? el : I.name,
-      position: ew,
+      position: eR,
       shouldShow: !eD,
       delay: 500,
       children: (0, r.jsxs)(f.kL8, U(M({}, ec), {

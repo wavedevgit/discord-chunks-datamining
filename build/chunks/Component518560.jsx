@@ -48,6 +48,6 @@ function y() {
     })]
   }) : (0, r.jsxs)("div", {
     className: b.container,
-    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(h.N, {})]
+    children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)(m.N, {})]
   })
 }

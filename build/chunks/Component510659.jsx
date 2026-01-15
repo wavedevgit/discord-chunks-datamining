@@ -37,8 +37,8 @@ function d() {
       interactionSource: null,
       interactionSourceId: null
     })
-  }, [d]), [_, m] = i.useState(false), [h, g] = i.useState(null), [E] = i.useState(new s.V7), b = i.useCallback(e => {
-    g(e), m(true), null === e ? E.stop() : E.start(l._1, () => m(false))
+  }, [d]), [_, h] = i.useState(false), [m, g] = i.useState(null), [E] = i.useState(new s.V7), b = i.useCallback(e => {
+    g(e), h(true), null === e ? E.stop() : E.start(l._1, () => h(false))
   }, [E]);
   return i.useEffect(() => {
     E.stop()
@@ -50,10 +50,10 @@ function d() {
     setInteractionToast: b,
     resetInteraction: p,
     showInteractionToast: _,
-    interactionTypeSent: h,
+    interactionTypeSent: m,
     interactionPopoutTargetRef: c,
     onInteractionPopoutTargetRefChange: f
-  }), [d, b, n, a, _, e, h, p, c, f])
+  }), [d, b, n, a, _, e, m, p, c, f])
 }
 
 function f() {

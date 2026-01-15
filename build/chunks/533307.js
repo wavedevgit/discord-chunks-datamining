@@ -3,8 +3,8 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => h,
-  b: () => m
+  Z: () => m,
+  b: () => h
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -37,7 +37,7 @@ function _(e) {
   }
   return e
 }
-async function m(e) {
+async function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   a.Z.dispatch({
@@ -67,8 +67,8 @@ async function m(e) {
   }
 }
 r = require("./775644.js").Z;
-let h = _({
-  resolveGiftCode: m,
+let m = _({
+  resolveGiftCode: h,
   async fetchUserGiftCodesForSKU(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     a.Z.dispatch({

@@ -2,7 +2,7 @@
 /** chunk id: 475595, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  eC: () => m,
+  eC: () => h,
   f0: () => C,
   fh: () => b,
   nK: () => I,
@@ -20,11 +20,11 @@ var Chunk754700 = require("./754700.js"),
 let f = 3,
   p = /\.([a-zA-Z0-9]+)$/,
   _ = ["video/mp4", "video/webm"];
-var m = function(e) {
+var h = function(e) {
   return e.HERO = "hero", e.HERO_IMAGE = "hero_image", e.HERO_VIDEO = "hero_video", e.QUEST_BAR_HERO = "quest_bar_hero", e.QUEST_BAR_HERO_VIDEO = "quest_bar_hero_video", e.REWARD = "reward", e.REWARD_IMAGE = "reward_image", e.GAME_TILE = "game_tile", e.LOGO_TYPE = "logo_type", e.COSPONSOR_LOGO_TYPE = "cosponsor_logo_type", e.VIDEO_PLAYER_VIDEO = "video_player_video", e.VIDEO_PLAYER_VIDEO_LOW_RES = "video_player_video_low_res", e.VIDEO_PLAYER_VIDEO_HLS = "video_player_video_hls", e.VIDEO_PLAYER_THUMBNAIL = "video_player_thumbnail", e.VIDEO_PLAYER_CAPTION = "video_player_caption", e.VIDEO_PLAYER_TRANSCRIPT = "video_player_transcript", e
 }({});
 
-function h(e, t, n) {
+function m(e, t, n) {
   let r = O(e, t, n),
     i = v(t),
     a = null != i && _.includes(i);
@@ -135,7 +135,7 @@ function b(e, t, n, a) {
       o = s, c = true
     }
   }
-  let p = h(e.id, o, {
+  let p = m(e.id, o, {
     theme: l ? n : true
   });
   return c && null == p.mimetype ? null : p

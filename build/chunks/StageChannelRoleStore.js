@@ -35,12 +35,12 @@ let b = {},
 
 function O(e, t) {
   let n = p.Z.getVoiceStateForChannel(t, e);
-  return (0, h.gf)(n) === h.xO.ON_STAGE
+  return (0, m.gf)(n) === m.xO.ON_STAGE
 }
 
 function v(e, t, n) {
   return _.BT({
-    permission: m.yP,
+    permission: h.yP,
     user: e,
     context: t,
     overwrites: n.permissionOverwrites,
@@ -101,7 +101,7 @@ function P(e) {
   A(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t,
     user: n
@@ -109,7 +109,7 @@ function R(e) {
   return null != n && null != t && C(n.id, t)
 }
 
-function w(e) {
+function R(e) {
   let {
     voiceStates: t
   } = e;
@@ -169,11 +169,11 @@ E(j, "displayName", "StageChannelRoleStore");
 let M = new j(Chunk570140.Z, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: x,
-  GUILD_MEMBER_REMOVE: R,
-  GUILD_MEMBER_UPDATE: R,
+  GUILD_MEMBER_REMOVE: w,
+  GUILD_MEMBER_UPDATE: w,
   GUILD_ROLE_UPDATE: P,
   PASSIVE_UPDATE_V2: D,
-  VOICE_STATE_UPDATES: w,
+  VOICE_STATE_UPDATES: R,
   GUILD_CREATE: L,
   GUILD_DELETE: L
 })

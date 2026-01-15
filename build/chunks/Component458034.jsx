@@ -2,8 +2,8 @@
 /** chunk id: 458034, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Am: () => m,
-  ZP: () => h,
+  Am: () => h,
+  ZP: () => m,
   s$: () => p
 });
 var Chunk54381 = require("./54381.js");
@@ -64,7 +64,7 @@ function _() {
   }
 }
 
-function m(e) {
+function h(e) {
   (0, a.ZDy)(async () => {
     let {
       default: t
@@ -75,11 +75,11 @@ function m(e) {
   }, _())
 }
 
-function h(e) {
+function m(e) {
   return (0, i.e7)([o.Z], () => (0, s.kQ)(o.Z.getSortedRoles(e.id)), [e]) ? (0, r.jsx)(a.sNh, {
     id: "guild-connection-roles",
     label: l.intl.string(l.t.ghtnss),
     icon: a.xPt,
-    action: () => m(e.id)
+    action: () => h(e.id)
   }) : null
 }

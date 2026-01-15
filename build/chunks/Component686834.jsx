@@ -2,7 +2,7 @@
 /** chunk id: 686834, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => h
+  X: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -34,13 +34,13 @@ function m(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   let {
     quest: t,
     location: n,
     initiallyExpanded: _,
-    contentPosition: m,
-    sourceQuestContent: h
+    contentPosition: h,
+    sourceQuestContent: m
   } = e, g = (0, s.tP)(t), {
     containerRef: E,
     size: b,
@@ -59,9 +59,9 @@ function h(e) {
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
-    questContentPosition: m,
+    questContentPosition: h,
     trackGuildAndChannelMetadata: n === o.jn.QUESTS_EMBED,
-    sourceQuestContent: h,
+    sourceQuestContent: m,
     children: e => (0, r.jsx)(a.animated.div, {
       style: {
         maxHeight: n === o.jn.QUESTS_EMBED ? true : O.to({
@@ -87,9 +87,9 @@ function h(e) {
           isInteracting: T,
           isAnimating: v,
           isExpanded: S,
-          contentPosition: m,
+          contentPosition: h,
           toggleExpanded: I,
-          sourceQuestContent: h
+          sourceQuestContent: m
         }), (0, r.jsx)(c.Z, {
           quest: t,
           isQuestExpired: g,
@@ -98,8 +98,8 @@ function h(e) {
           isFocused: T,
           isExpanded: S,
           isAnimating: v,
-          contentPosition: m,
-          sourceQuestContent: h
+          contentPosition: h,
+          sourceQuestContent: m
         })]
       })
     })

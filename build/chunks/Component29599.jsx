@@ -84,12 +84,12 @@ function G(e) {
       disabled: l
     } = e,
     [c, d] = i.useState(false),
-    [f, m] = i.useState(false),
+    [f, h] = i.useState(false),
     E = () => d(e => !e),
     y = (0, p.ZP)(),
     O = (0, g.Pz)(n.id, y),
     v = null != a,
-    S = (0, h.Z)(n, v);
+    S = (0, m.Z)(n, v);
   v && c ? t = x.intl.format(x.t.pkxVx6, {
     endDate: S,
     onClickDetails: E
@@ -104,7 +104,7 @@ function G(e) {
     onClickDetails: E
   }));
   let I = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
-    T = i.useCallback(() => m(false), []),
+    T = i.useCallback(() => h(false), []),
     {
       outboundTitle: C,
       outboundTermsAndConditions: A
@@ -136,7 +136,7 @@ function G(e) {
           })]
         }), !l && (0, r.jsx)(u.Button, {
           text: I,
-          onClick: () => m(true),
+          onClick: () => h(true),
           disabled: l,
           size: "sm"
         })]
@@ -167,7 +167,7 @@ let Z = function(e) {
       giftCodeBatchId: t
     } = e;
     return null == t
-  }), p = (0, c.e7)([S.default], () => C.ZP.isPremiumExactly(S.default.getCurrentUser(), D.PremiumTypes.TIER_2)), _ = l().groupBy(a, e => (0, T.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [h, g] = i.useState(false);
+  }), p = (0, c.e7)([S.default], () => C.ZP.isPremiumExactly(S.default.getCurrentUser(), D.PremiumTypes.TIER_2)), _ = l().groupBy(a, e => (0, T.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [m, g] = i.useState(false);
   i.useEffect(() => {
     d.Z.wait(() => {
       (0, f.Qv)().then(() => g(true))
@@ -179,7 +179,7 @@ let Z = function(e) {
     claimedEndedOutboundPromotions: M,
     claimedOutboundPromotionCodeMap: k,
     addClaimedOutboundPromotionCode: U
-  } = (0, E.lG)(), Z = j.length + M.length > 0, F = m.g.useExperiment({
+  } = (0, E.lG)(), Z = j.length + M.length > 0, F = h.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: false,
@@ -187,8 +187,8 @@ let Z = function(e) {
   }).enabled && Z;
 
   function B() {
-    (0, R.openUserSettings)(A.n.NITRO_PANEL, {
-      section: w.oAB.PREMIUM
+    (0, w.openUserSettings)(A.n.NITRO_PANEL, {
+      section: R.oAB.PREMIUM
     })
   }
 
@@ -217,7 +217,7 @@ let Z = function(e) {
           className: L.promoDescription,
           children: x.intl.format(x.t.G4fwxK, {
             onClick: () => {
-              (0, P.default)(), (0, v.uL)(w.Z5c.APPLICATION_STORE)
+              (0, P.default)(), (0, v.uL)(R.Z5c.APPLICATION_STORE)
             }
           })
         }), (0, r.jsx)(y.Z, {
@@ -298,7 +298,7 @@ let Z = function(e) {
       })]
     })
   }
-  return h && b ? (0, r.jsxs)(r.Fragment, {
+  return m && b ? (0, r.jsxs)(r.Fragment, {
     children: [V(), (0, r.jsx)("div", {
       className: t ? L.marginContainer : true,
       children: (0, r.jsxs)(u.y5t, {

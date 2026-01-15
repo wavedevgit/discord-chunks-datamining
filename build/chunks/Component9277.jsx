@@ -32,14 +32,14 @@ function v(e, t) {
   } = e, [S, I] = i.useState(false), T = (0, l.e7)([p.Z], () => {
     var e, t;
     return S && Object.values(null != (t = null == (e = p.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
-  }), [C, A, N, P] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.X), R = i.useRef(0), w = i.useCallback(() => {
-    I(true), clearTimeout(R.current), R.current = setTimeout(() => {
-      I(false), R.current = 0
+  }), [C, A, N, P] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.X), w = i.useRef(0), R = i.useCallback(() => {
+    I(true), clearTimeout(w.current), w.current = setTimeout(() => {
+      I(false), w.current = 0
     }, 2e3)
   }, []);
   (0, _.yp)({
     event: E.CkL.FAVORITE_GIF,
-    handler: w
+    handler: R
   });
   let D = i.useCallback(() => {
       (0, f.RO)(b.X1.GIF, a, v.id)
@@ -49,8 +49,8 @@ function v(e, t) {
       events: L,
       play: j
     } = (0, c.V)(),
-    M = (0, m.v)(d.O),
-    k = a === h.Ie.NORMAL ? M : true;
+    M = (0, h.v)(d.O),
+    k = a === m.Ie.NORMAL ? M : true;
   if (n) return null;
   let U = C === b.X1.GIF && A === a && P === v.id;
   return (0, r.jsx)(u.u, {

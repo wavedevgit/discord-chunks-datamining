@@ -18,11 +18,11 @@ module.exports = function(e) {
     f = r.removeRange(c, t, "backward"),
     p = f.getSelectionAfter(),
     _ = p.getAnchorOffset() - 1,
-    m = p.merge({
+    h = p.merge({
       anchorOffset: _,
       focusOffset: _
     }),
-    h = r.replaceWithFragment(f, m, d),
-    g = i.push(e, h, "insert-fragment");
+    m = r.replaceWithFragment(f, h, d),
+    g = i.push(e, m, "insert-fragment");
   return i.acceptSelection(g, n)
 }

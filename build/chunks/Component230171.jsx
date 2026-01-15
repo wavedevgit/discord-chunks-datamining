@@ -46,12 +46,12 @@ function M(e) {
     linkType: a,
     activityCustomId: o,
     activityReferrerId: l,
-    message: h,
+    message: m,
     onView: g
   } = e, {
     name: E,
     bot: O
-  } = n = (0, R.O)(n), v = null == O ? true : O.id, S = (0, _.ye)(n), T = I.ZP.getApplicationIconURL({
+  } = n = (0, w.O)(n), v = null == O ? true : O.id, S = (0, _.ye)(n), T = I.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon,
     bot: O
@@ -59,14 +59,14 @@ function M(e) {
     staticBannerSrc: N,
     videoBannerSrc: x,
     bannerAspectRatio: j
-  } = (0, w.E)(n), M = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+  } = (0, R.E)(n), M = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: Z,
     instanceId: F,
     isCurrentlyInInstance: B,
     canLaunchInChannel: V
-  } = (0, C.c)(n.id), H = (0, u.Z)(), Y = (0, m.ms)({
+  } = (0, C.c)(n.id), H = (0, u.Z)(), Y = (0, h.ms)({
     context: {
       type: "contextless"
     },
@@ -123,9 +123,9 @@ function M(e) {
       referrerId: M,
       activityCustomId: o,
       onView: g,
-      guildId: null == (t = y.Z.getChannel(h.channel_id)) ? true : t.guild_id,
-      channelId: h.channel_id,
-      messageId: h.id
+      guildId: null == (t = y.Z.getChannel(m.channel_id)) ? true : t.guild_id,
+      channelId: m.channel_id,
+      messageId: m.id
     }
   })
 }
@@ -195,7 +195,7 @@ function U(e) {
         count: d.length
       })
     });
-    if (u.some(e => (0, h.ig)(e) === o.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, m.ig)(e) === o.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.YqE, {
         size: "xxs",
         color: "currentColor"

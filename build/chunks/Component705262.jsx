@@ -111,8 +111,8 @@ let H = Object.freeze({
       themeName: n,
       analyticsLocations: r
     } = e;
-    I.default.track(R.rMx.CLIENT_THEME_UPDATED, {
-      feature_name: w.QP.CLIENT_THEME,
+    I.default.track(w.rMx.CLIENT_THEME_UPDATED, {
+      feature_name: R.QP.CLIENT_THEME,
       theme_name: n,
       is_persisted: t,
       location_stack: r
@@ -154,7 +154,7 @@ let H = Object.freeze({
       isPreview: o,
       isCoachmark: s
     } = e;
-    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2 && o) return null;
+    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === R.Si.TIER_2 && o) return null;
     let l = (0, a.EQ)({
       type: i,
       isPreview: o,
@@ -163,7 +163,7 @@ let H = Object.freeze({
       type: "EDITOR",
       isPreview: true
     }, () => j.intl.format(j.t.G8yQXi, {
-      onPremiumClick: () => h.z
+      onPremiumClick: () => m.z
     })).with({
       type: "EDITOR",
       isCoachmark: true
@@ -173,7 +173,7 @@ let H = Object.freeze({
     }, () => j.intl.string(j.t.dqDFwe)).with({
       isPreview: true
     }, () => j.intl.format(j.t["DWIjJ/"], {
-      onPremiumClick: () => h.z
+      onPremiumClick: () => m.z
     })).otherwise(() => j.intl.string(j.t["np0X/u"]));
     return (0, r.jsx)(c.Heading, {
       variant: "text-sm/normal",
@@ -188,12 +188,12 @@ let H = Object.freeze({
       isCoachmark: s
     } = e, {
       type: l
-    } = i.useContext(Y), [c] = (0, o.Wu)([C.Z], () => [C.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2;
+    } = i.useContext(Y), [c] = (0, o.Wu)([C.Z], () => [C.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === R.Si.TIER_2;
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
-      type: w.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-      subscriptionTier: w.Si.TIER_2,
+      type: R.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      subscriptionTier: R.Si.TIER_2,
       children: j.intl.format(j.t.G8yQXi, {
-        onPremiumClick: () => h.z
+        onPremiumClick: () => m.z
       })
     }) : (0, r.jsxs)("div", {
       className: M.header,
@@ -218,8 +218,8 @@ let H = Object.freeze({
       type: a,
       delay: l
     } = i.useContext(Y), {
-      analyticsLocations: m
-    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [h, g] = (0, o.Wu)([C.Z], () => {
+      analyticsLocations: h
+    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [m, g] = (0, o.Wu)([C.Z], () => {
       var e;
       return [C.Z.isPreview, null == (e = C.Z.gradientPreset) ? true : e.id]
     }), [E, b] = i.useState(false), [y, O] = i.useState(false), v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
@@ -228,25 +228,25 @@ let H = Object.freeze({
     }, [y, a, g]);
     let I = (e, t) => {
         if ((0, T.zO)(e.id), W({
-            isPersisted: !h,
-            analyticsLocations: m,
+            isPersisted: !m,
+            analyticsLocations: h,
             themeName: s.Us[e.id]
-          }), h && "SETTINGS" === a ? R(e) : (0, u.ZI)({
+          }), m && "SETTINGS" === a ? w(e) : (0, u.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
-            useSystemTheme: h ? D.KW.OFF : true
+            useSystemTheme: m ? D.KW.OFF : true
           }, l), null != t) {
           if (E && b(false), t <= y || 0 === t) return void O(0);
           O(e => e + 1)
         }
       },
-      R = async e => {
+      w = async e => {
         await (0, u.ZI)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
-          useSystemTheme: h ? D.KW.OFF : true
+          useSystemTheme: m ? D.KW.OFF : true
         }, x.fy.SLOW_USER_ACTION), (0, _.XO)(_.wh.CLIENT_THEMES), (0, S.default)()
-      }, w = () => {
+      }, R = () => {
         if (!E) return null;
         let e = P.qt[s.Us.EASTER_EGG];
         if (null == e) return null;
@@ -290,7 +290,7 @@ let H = Object.freeze({
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), w()]
+      }, e.id)), R()]
     })
   },
   X = e => {
@@ -399,7 +399,7 @@ let H = Object.freeze({
     let {
       type: t,
       children: n
-    } = e, a = (0, m.Dt)(), o = (0, l.Jb)({
+    } = e, a = (0, h.Dt)(), o = (0, l.Jb)({
       orientation: "horizontal",
       labelledBy: a
     }), {

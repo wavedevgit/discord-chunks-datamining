@@ -9,7 +9,7 @@ require.d(exports, {
   Wf: () => A,
   XU: () => y,
   dL: () => v,
-  eH: () => R,
+  eH: () => w,
   m1: () => C,
   op: () => P,
   s1: () => S,
@@ -47,9 +47,9 @@ function f(e) {
 let p = new Chunk710845.Z("Routing/Utils"),
   _ = [Chunk981631.E07.DEVELOPER_PORTAL];
 r = __OVERLAY__ ? (0, Chunk539528.PP)() : (0, Chunk539528.lX)();
-let m = false,
-  h = r.listen((e, t) => {
-    "REPLACE" !== t && (m = true, h())
+let h = false,
+  m = r.listen((e, t) => {
+    "REPLACE" !== t && (h = true, m())
   });
 
 function g() {
@@ -143,13 +143,13 @@ function A(e) {
 }
 
 function N() {
-  return m
+  return h
 }
 
 function P() {
   g() && (i = null, r.goBack())
 }
 
-function R() {
+function w() {
   g() && (i = null, r.goForward())
 }

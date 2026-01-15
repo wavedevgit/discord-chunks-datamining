@@ -29,24 +29,24 @@ let p = {
       u = n.elements.arrow,
       p = n.modifiersData.popperOffsets,
       _ = (0, r.Z)(n.placement),
-      m = (0, s.Z)(_),
-      h = [d.t$, d.F2].indexOf(_) >= 0 ? "height" : "width";
+      h = (0, s.Z)(_),
+      m = [d.t$, d.F2].indexOf(_) >= 0 ? "height" : "width";
     if (u && p) {
       var g = f(c.padding, n),
         E = (0, i.Z)(u),
-        b = "y" === m ? d.we : d.t$,
-        y = "y" === m ? d.I : d.F2,
-        O = n.rects.reference[h] + n.rects.reference[m] - p[m] - n.rects.popper[h],
-        v = p[m] - n.rects.reference[m],
+        b = "y" === h ? d.we : d.t$,
+        y = "y" === h ? d.I : d.F2,
+        O = n.rects.reference[m] + n.rects.reference[h] - p[h] - n.rects.popper[m],
+        v = p[h] - n.rects.reference[h],
         S = (0, o.Z)(u),
-        I = S ? "y" === m ? S.clientHeight || 0 : S.clientWidth || 0 : 0,
+        I = S ? "y" === h ? S.clientHeight || 0 : S.clientWidth || 0 : 0,
         T = O / 2 - v / 2,
         C = g[b],
-        A = I - E[h] - g[y],
-        N = I / 2 - E[h] / 2 + T,
+        A = I - E[m] - g[y],
+        N = I / 2 - E[m] / 2 + T,
         P = (0, l.u)(C, N, A),
-        R = m;
-      n.modifiersData[a] = (t = {}, t[R] = P, t.centerOffset = P - N, t)
+        w = h;
+      n.modifiersData[a] = (t = {}, t[w] = P, t.centerOffset = P - N, t)
     }
   },
   effect: function(e) {

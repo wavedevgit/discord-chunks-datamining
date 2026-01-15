@@ -77,7 +77,7 @@ function p(e) {
   } = (0, a.ZF)();
   return (0, r.jsx)(o.Y, u(l({}, s), {
     "aria-label": null != t ? t : n ? c.PAUSE_BUTTON_LABEL : c.PLAY_BUTTON_LABEL,
-    icon: n ? i.fpf : i.o1U,
+    icon: n ? i.PauseIcon : i.PlayIcon,
     variant: "overlay-secondary",
     fullWidth: false,
     rounded: true

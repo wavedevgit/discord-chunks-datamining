@@ -27,10 +27,10 @@ function o(e, t, n, o) {
     _ = r.useCallback(e => {
       (0, a.k$)(p, e), u(e)
     }, [p, u]),
-    m = f.innerRef,
-    h = r.useCallback(e => {
-      (0, a.k$)(m, e), u(e)
-    }, [m, u]),
+    h = f.innerRef,
+    m = r.useCallback(e => {
+      (0, a.k$)(h, e), u(e)
+    }, [h, u]),
     g = {
       onMouseEnter: (0, a.tS)(f.onMouseEnter, t.onMouseEnter),
       onMouseLeave: (0, a.tS)(f.onMouseLeave, t.onMouseLeave),
@@ -39,5 +39,5 @@ function o(e, t, n, o) {
       onContextMenu: (0, a.tS)(f.onContextMenu, t.onContextMenu),
       onClick: (0, a.tS)(f.onClick, t.onClick)
     };
-  return null != n && "" !== n && (g["aria-describedby"] = (0, a.QV)(f["aria-describedby"], n)), "string" == typeof e.type ? g.ref = u : "buttonRef" in e.props ? (g.buttonRef = _, g.ref = u) : "innerRef" in e.props ? (g.innerRef = h, g.ref = u) : (g.ref = u, g.innerRef = u), r.cloneElement(e, g)
+  return null != n && "" !== n && (g["aria-describedby"] = (0, a.QV)(f["aria-describedby"], n)), "string" == typeof e.type ? g.ref = u : "buttonRef" in e.props ? (g.buttonRef = _, g.ref = u) : "innerRef" in e.props ? (g.innerRef = m, g.ref = u) : (g.ref = u, g.innerRef = u), r.cloneElement(e, g)
 }

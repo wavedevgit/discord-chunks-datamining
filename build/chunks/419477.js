@@ -33,7 +33,7 @@ let g = (0, Chunk509613.k4)(Chunk313789.n.GIFT_INVENTORY_CATEGORY, {
   A = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["jcSP+g"]),
     getLegacySearchKey: () => (0, a.Gl)("GiftPanel") ? true : d.s6.GIFT_INVENTORY,
-    icon: Chunk657707.OgN,
+    icon: Chunk657707.GiftIcon,
     trailing: {
       type: Chunk970013.W.BADGE_COUNT,
       useCount: () => (0, l.YO)().length

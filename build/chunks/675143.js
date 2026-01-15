@@ -33,7 +33,7 @@ function E(e, t, n) {
       selectedDateDescription: v
     } = r.Lh.get(t),
     S = (0, _.q)(g(i.Z), "@react-aria/calendar"),
-    I = (0, m.a)({
+    I = (0, h.a)({
       weekday: "long",
       day: "numeric",
       month: "long",
@@ -48,22 +48,22 @@ function E(e, t, n) {
     N = !y && !A,
     P = t.isValueInvalid && !!("highlightedRange" in t ? !t.anchorDate && t.highlightedRange && b.compare(t.highlightedRange.start) >= 0 && 0 >= b.compare(t.highlightedRange.end) : t.value && (0, a.KC)(t.value, b));
   P && (T = true), b = (0, o.v)(b, a.N9);
-  let R = (0, h.useMemo)(() => b.toDate(t.timeZone), [b, t.timeZone]),
-    w = (0, a.zk)(b, t.timeZone),
-    D = (0, h.useMemo)(() => {
+  let w = (0, m.useMemo)(() => b.toDate(t.timeZone), [b, t.timeZone]),
+    R = (0, a.zk)(b, t.timeZone),
+    D = (0, m.useMemo)(() => {
       let e = "";
-      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.KC)(b, t.value.start) || (0, a.KC)(b, t.value.end)) && (e = v + ", "), e += I.format(R), w ? e = S.format(T ? "todayDateSelected" : "todayDate", {
+      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.KC)(b, t.value.start) || (0, a.KC)(b, t.value.end)) && (e = v + ", "), e += I.format(w), R ? e = S.format(T ? "todayDateSelected" : "todayDate", {
         date: e
       }) : T && (e = S.format("dateSelected", {
         date: e
       })), t.minValue && (0, a.KC)(b, t.minValue) ? e += ", " + S.format("minimumDate") : t.maxValue && (0, a.KC)(b, t.maxValue) && (e += ", " + S.format("maximumDate")), e
-    }, [I, R, S, T, w, b, t, v]),
+    }, [I, w, S, T, R, b, t, v]),
     x = "";
   "anchorDate" in t && C && !t.isReadOnly && N && (x = t.anchorDate ? S.format("finishRangeSelectionPrompt") : S.format("startRangeSelectionPrompt"));
   let L = (0, s.P)(x),
-    j = (0, h.useRef)(false),
-    M = (0, h.useRef)(false),
-    k = (0, h.useRef)(true),
+    j = (0, m.useRef)(false),
+    M = (0, m.useRef)(false),
+    k = (0, m.useRef)(true),
     {
       pressProps: U,
       isPressed: G
@@ -111,17 +111,17 @@ function E(e, t, n) {
         }
       }
     });
-  y || (E = (0, a.KC)(b, t.focusedDate) ? 0 : false), (0, h.useEffect)(() => {
+  y || (E = (0, a.KC)(b, t.focusedDate) ? 0 : false), (0, m.useEffect)(() => {
     C && n.current && ((0, l.A)(n.current), "pointer" !== (0, p.Jz)() && document.activeElement === n.current && (0, c.G)(n.current, {
       containingElement: (0, u.r)(n.current)
     }))
   }, [C, n]);
-  let Z = (0, m.a)({
+  let Z = (0, h.a)({
       day: "numeric",
       timeZone: t.timeZone,
       calendar: b.calendar.identifier
     }),
-    F = (0, h.useMemo)(() => Z.formatToParts(R).find(e => "day" === e.type).value, [Z, R]);
+    F = (0, m.useMemo)(() => Z.formatToParts(w).find(e => "day" === e.type).value, [Z, w]);
   return {
     cellProps: {
       role: "gridcell",

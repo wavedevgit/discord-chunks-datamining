@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk192123 = require("./192123.js");
 let _ = 1048576,
-  m = [{
+  h = [{
     getPerkHeading: () => f.intl.string(f.t.tIiwuj),
     getPerkPreviewLightTheme: () => n(414102),
     getPerkPreviewDarkTheme: () => n(614600),
@@ -142,7 +142,7 @@ let _ = 1048576,
     getTier3Value: () => true
   }];
 
-function h(e) {
+function m(e) {
   let {
     children: t,
     className: n,
@@ -312,26 +312,26 @@ let O = function(e) {
         children: [(0, r.jsx)("thead", {
           children: (0, r.jsxs)("tr", {
             className: p.__invalid_tableRow,
-            children: [(0, r.jsx)(h, {
+            children: [(0, r.jsx)(m, {
               className: p.tableRowHeading,
               children: f.intl.string(f.t.F5MY0k)
-            }), !_ && (0, r.jsx)(h, {
+            }), !_ && (0, r.jsx)(m, {
               tier: u.Eu4.NONE,
               children: f.intl.string(f.t.mx8j2m)
-            }), (0, r.jsx)(h, {
+            }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_1,
               children: f.intl.string(f.t.nzXtaS)
-            }), (0, r.jsx)(h, {
+            }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_2,
               children: f.intl.string(f.t["h33/uW"])
-            }), (0, r.jsx)(h, {
+            }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_3,
               children: f.intl.string(f.t.BfF6ED)
             })]
           })
         }), (0, r.jsx)("tbody", {
           className: p.__invalid_tableBody,
-          children: m.map((e, i) => {
+          children: h.map((e, i) => {
             let a = n === i;
 
             function o() {

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Dw: () => _,
-  RM: () => h,
-  SC: () => m,
+  RM: () => m,
+  SC: () => h,
   iA: () => E,
   pj: () => p,
   xD: () => g
@@ -92,13 +92,13 @@ function _(e) {
   }))
 }
 
-function m(e) {
+function h(e) {
   return (0, r.jsx)(i.X2, u(l({}, e), {
     className: o.row
   }))
 }
 
-function h(e) {
+function m(e) {
   return (0, r.jsx)(i.RM, u(l({}, e), {
     className: o.body
   }))

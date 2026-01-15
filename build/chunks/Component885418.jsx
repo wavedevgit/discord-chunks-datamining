@@ -2,7 +2,7 @@
 /** chunk id: 885418, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  s: () => m
+  s: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,16 +41,16 @@ function _(e) {
   }
 }
 
-function m() {
+function h() {
   let e = (0, l.O9)(),
     [t, n] = i.useState(false),
-    [c, m] = i.useState(() => (0, l.aL)()),
-    h = (0, a.e7)([s.ZP], () => s.ZP.getSystemServiceStatus("input-service")),
+    [c, h] = i.useState(() => (0, l.aL)()),
+    m = (0, a.e7)([s.ZP], () => s.ZP.getSystemServiceStatus("input-service")),
     g = i.useCallback(async () => {
-      n(true), c ? await (0, l.OK)("windows-settings") : await (0, l.sU)("windows-settings"), n(false), m((0, l.aL)())
+      n(true), c ? await (0, l.OK)("windows-settings") : await (0, l.sU)("windows-settings"), n(false), h((0, l.aL)())
     }, [c]);
   if (!e) return null;
-  let E = "running" === h.state;
+  let E = "running" === m.state;
   return (0, r.jsxs)("div", {
     className: p.systemServiceContainer,
     children: [(0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ function m() {
         variant: "text-sm/normal",
         color: E ? "text-feedback-positive" : "text-feedback-warning",
         children: E ? f.intl.string(f.t.KHVMkW) : f.intl.format(f.t["5Rlr0b"], {
-          status: _(h)
+          status: _(m)
         })
       }) : null]
     }), (0, r.jsx)(o.Button, {

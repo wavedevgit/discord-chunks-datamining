@@ -70,12 +70,12 @@ function p(e, t) {
 var _ = function(e) {
   return e.SMALL = "SMALL", e.MEDIUM = "MEDIUM", e.LARGE = "LARGE", e
 }(_ || {});
-let m = {
+let h = {
     SMALL: Chunk938532.dropdownSmall,
     MEDIUM: Chunk938532.dropdownMedium,
     LARGE: Chunk938532.dropdownLarge
   },
-  h = e => {
+  m = e => {
     var {
       onDropdownClick: t,
       children: n,
@@ -89,7 +89,7 @@ let m = {
           className: l,
           children: n
         }), null != t ? (0, r.jsxs)(a.P3F, {
-          className: m[u],
+          className: h[u],
           onClick: e => {
             e.stopPropagation(), null != t && t(e)
           },
@@ -104,5 +104,5 @@ let m = {
       })
     }))
   };
-h.DropdownSizes = _, h.Sizes = Chunk755721.zx.Sizes, h.Colors = Chunk755721.zx.Colors, h.Looks = Chunk755721.zx.Looks;
-let g = h
+m.DropdownSizes = _, m.Sizes = Chunk755721.zx.Sizes, m.Colors = Chunk755721.zx.Colors, m.Looks = Chunk755721.zx.Looks;
+let g = m

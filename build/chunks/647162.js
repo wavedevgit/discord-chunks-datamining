@@ -4,9 +4,9 @@
 require.d(exports, {
   KV: () => _,
   PY: () => p,
-  Wo: () => m,
+  Wo: () => h,
   iy: () => E,
-  yp: () => h
+  yp: () => m
 }), require("./415506.js"), require("./358797.js"), require("./388685.js");
 var Chunk763472 = require("./763472.js"),
   Chunk726542 = require("./726542.js"),
@@ -58,7 +58,7 @@ function _() {
   })
 }
 
-function m() {
+function h() {
   let e = c.Z.getActiveSocketAndDevice();
   if (null == e) return null;
   let {
@@ -67,7 +67,7 @@ function m() {
   return t.isPremium
 }
 
-function h() {
+function m() {
   let e = c.Z.getActiveSocketAndDevice();
   if (null == e) return Promise.reject(Error("no active profile"));
   let {

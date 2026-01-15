@@ -24,9 +24,9 @@ function d(e, t, n) {
 let f = new Chunk579092.Yd("KkvStore"),
   p = Symbol("version"),
   _ = Symbol("boxedPartition"),
-  m = Object.freeze({}),
-  h = Object.freeze({
-    current: m,
+  h = Object.freeze({}),
+  m = Object.freeze({
+    current: h,
     length: 0,
     version: false
   }),
@@ -146,14 +146,14 @@ class b extends Chunk442837.yh {
   }
   getPartition(e) {
     let t = this.state.root[e];
-    return null != t ? t.root : m
+    return null != t ? t.root : h
   }
   getPartitionKeys() {
     return Object.keys(this.state.root)
   }
   getBoxedPartition(e) {
     let t = this.state.root[e];
-    if (null == t) return h;
+    if (null == t) return m;
     let {
       root: n,
       derived: {

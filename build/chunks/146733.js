@@ -13,7 +13,7 @@ var Chunk98405 = require("./98405.js"),
   f = d.prototype,
   p = Chunk35760(u.prototype.slice),
   _ = Chunk35760(f.getUint8),
-  m = Chunk35760(f.setUint8);
+  h = Chunk35760(f.setUint8);
 Chunk98405({
   target: "ArrayBuffer",
   proto: true,
@@ -24,7 +24,7 @@ Chunk98405({
 }, {
   slice: function(e, t) {
     if (p && true === t) return p(s(this), e);
-    for (var n = s(this).byteLength, r = l(e, n), i = l(true === t ? n : t, n), a = new u(c(i - r)), o = new d(this), f = new d(a), h = 0; r < i;) m(f, h++, _(o, r++));
+    for (var n = s(this).byteLength, r = l(e, n), i = l(true === t ? n : t, n), a = new u(c(i - r)), o = new d(this), f = new d(a), m = 0; r < i;) h(f, m++, _(o, r++));
     return a
   }
 })

@@ -66,7 +66,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = e => {
+let w = e => {
     let {
       disabled: t,
       invite: o,
@@ -77,13 +77,13 @@ let R = e => {
         t = o.id,
         a = d.default.getUser(o.primary_user);
       if (null == a) return;
-      let c = (0, h.XM)(a);
+      let c = (0, m.XM)(a);
       p.default.track(O.rMx.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
         invite_id: t,
         subscription_id: e
       });
       let f = (0, i.uniqueId)("premium-group-accept-invite-modal"),
-        m = false;
+        h = false;
       (0, s.ZDy)(async () => {
         let {
           default: i
@@ -94,14 +94,14 @@ let R = e => {
           premiumGroupPrimaryName: c,
           isExistingSub: l,
           onClose: async () => {
-            m || (m = true, _.S.dispatch(O.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.Z.isDisplayingWowMomentConfirmation && g.Z.isAnimated ? setTimeout(() => {
+            h || (h = true, _.S.dispatch(O.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.Z.isDisplayingWowMomentConfirmation && g.Z.isAnimated ? setTimeout(() => {
               n.onClose()
             }, u.P) : await n.onClose())
           }
         }))
       }, {
         onCloseRequest: () => {
-          m || (m = true, _.S.dispatch(O.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.Z.isDisplayingWowMomentConfirmation && g.Z.isAnimated ? setTimeout(() => {
+          h || (h = true, _.S.dispatch(O.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.Z.isDisplayingWowMomentConfirmation && g.Z.isAnimated ? setTimeout(() => {
             (0, s.Mr3)(f)
           }, u.P) : (0, s.Mr3)(f))
         },
@@ -117,13 +117,13 @@ let R = e => {
       disabled: t
     })
   },
-  w = e => {
+  R = e => {
     let {
       disabled: t,
       invite: i,
       channel: a
     } = e, o = () => {
-      if (null == i || !a.isDM()) return void m.Z.captureMessage("CancelInviteButton onClick: unexpected state", {
+      if (null == i || !a.isDM()) return void h.Z.captureMessage("CancelInviteButton onClick: unexpected state", {
         extra: {
           inviteIsNull: null == i,
           channelIsDM: a.isDM(),
@@ -226,24 +226,24 @@ let R = e => {
       }
     }, [a]);
     if (null == p) return null;
-    let m = t.author,
-      h = p.id === m.id;
+    let h = t.author,
+      m = p.id === h.id;
     if (c || s === y.bZ.FETCHING || s === y.bZ.UNKNOWN) return (0, r.jsx)(l.OR, {
       isHorizontal: true
     });
     let g = (0, b.xf)({
-      sender: m,
+      sender: h,
       channel: n,
-      isSender: h,
+      isSender: m,
       inviteState: s
     });
     if (null == g) return null;
     let O = s === y.bZ.PENDING,
-      v = h ? (0, r.jsx)(w, {
+      v = m ? (0, r.jsx)(R, {
         disabled: !O,
         invite: u,
         channel: n
-      }) : (0, r.jsx)(R, {
+      }) : (0, r.jsx)(w, {
         disabled: !O,
         invite: u,
         isExistingSub: null != _

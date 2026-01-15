@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk752305 = require("./752305.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -172,12 +172,12 @@ class v extends Chunk473749.PureComponent {
       textAreaPaddingClassName: f,
       spellcheckEnabled: p,
       "aria-controls": _,
-      "aria-expanded": h,
+      "aria-expanded": m,
       "aria-activedescendant": g
     } = this.props;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.d9, {
-        event: m.CkL.GLOBAL_CLIPBOARD_PASTE,
+        event: h.CkL.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
       }), (0, r.jsx)(s.lcI, {
         ref: this.handleSetRef,
@@ -202,7 +202,7 @@ class v extends Chunk473749.PureComponent {
         tabIndex: 0,
         spellCheck: p,
         "aria-controls": _,
-        "aria-expanded": h,
+        "aria-expanded": m,
         "aria-activedescendant": g,
         "aria-haspopup": "listbox",
         "aria-autocomplete": "list",
@@ -211,7 +211,7 @@ class v extends Chunk473749.PureComponent {
     })
   }
   handleTabOrEnterDown(e) {
-    e.which === m.yXg.TAB && this.props.onTab() || e.which === m.yXg.ENTER && this.props.onEnter(e) ? (e.preventDefault(), e.stopPropagation()) : e.which === m.yXg.ESCAPE ? (e.preventDefault(), e.stopPropagation(), this.props.hideAutocomplete()) : e.which === m.yXg.TAB && this.hasOpenCodeBlock() && (e.preventDefault(), e.stopPropagation(), this.insertText("	", true, false))
+    e.which === h.yXg.TAB && this.props.onTab() || e.which === h.yXg.ENTER && this.props.onEnter(e) ? (e.preventDefault(), e.stopPropagation()) : e.which === h.yXg.ESCAPE ? (e.preventDefault(), e.stopPropagation(), this.props.hideAutocomplete()) : e.which === h.yXg.TAB && this.hasOpenCodeBlock() && (e.preventDefault(), e.stopPropagation(), this.insertText("	", true, false))
   }
   insertEmoji(e) {
     let {
@@ -224,62 +224,62 @@ class v extends Chunk473749.PureComponent {
     return this.props.value
   }
   constructor(...e) {
-    super(...e), h(this, "_ref", true), h(this, "state", {
+    super(...e), m(this, "_ref", true), m(this, "state", {
       nextSelection: false
-    }), h(this, "focus", () => {
+    }), m(this, "focus", () => {
       let {
         _ref: e
       } = this;
       null != e && e.focus()
-    }), h(this, "handleSetRef", e => {
+    }), m(this, "handleSetRef", e => {
       this._ref = e
-    }), h(this, "handleKeyPress", e => {
-      if (e.which === m.yXg.ENTER && !e.shiftKey && !this.hasOpenCodeBlock() && (!this.props.disableEnterToSubmit || e.ctrlKey)) return e.preventDefault(), this.props.onSubmit(this.props.value)
-    }), h(this, "handleKeyDown", e => {
+    }), m(this, "handleKeyPress", e => {
+      if (e.which === h.yXg.ENTER && !e.shiftKey && !this.hasOpenCodeBlock() && (!this.props.disableEnterToSubmit || e.ctrlKey)) return e.preventDefault(), this.props.onSubmit(this.props.value)
+    }), m(this, "handleKeyDown", e => {
       switch (e.which) {
-        case m.yXg.ARROW_DOWN:
+        case h.yXg.ARROW_DOWN:
           this.props.moveSelection(1) && e.preventDefault();
           break;
-        case m.yXg.N:
+        case h.yXg.N:
           e.ctrlKey && this.props.moveSelection(1) && e.preventDefault();
           break;
-        case m.yXg.ARROW_UP:
+        case h.yXg.ARROW_UP:
           this.props.moveSelection(false) && e.preventDefault();
           break;
-        case m.yXg.P:
+        case h.yXg.P:
           e.ctrlKey && this.props.moveSelection(false) && e.preventDefault();
           break;
-        case m.yXg.TAB:
-        case m.yXg.ENTER:
+        case h.yXg.TAB:
+        case h.yXg.ENTER:
           this.handleTabOrEnterDown(e)
       }
       let {
         onKeyDown: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "handleKeyUp", e => {
+    }), m(this, "handleKeyUp", e => {
       switch (e.which) {
-        case m.yXg.ARROW_RIGHT:
-        case m.yXg.ARROW_LEFT:
-        case m.yXg.HOME:
-        case m.yXg.END:
+        case h.yXg.ARROW_RIGHT:
+        case h.yXg.ARROW_LEFT:
+        case h.yXg.HOME:
+        case h.yXg.END:
           this.props.maybeShowAutocomplete()
       }
       let {
         onKeyUp: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "handleGlobalPaste", e => {
+    }), m(this, "handleGlobalPaste", e => {
       let {
         event: t
       } = e;
       this.handlePaste(t) || this.focus()
-    }), h(this, "handlePaste", e => {
+    }), m(this, "handlePaste", e => {
       let t = this.props.onPaste(e);
       return t && e.preventDefault(), t
-    }), h(this, "handleClick", () => {
+    }), m(this, "handleClick", () => {
       this.props.maybeShowAutocomplete()
-    }), h(this, "handleContextMenu", e => {
+    }), m(this, "handleContextMenu", e => {
       f.isPlatformEmbedded && (0, l.jW)(e, async () => {
         let {
           default: e
@@ -291,7 +291,7 @@ class v extends Chunk473749.PureComponent {
         align: "bottom",
         enableSpellCheck: true
       })
-    }), h(this, "handleOnChange", e => {
+    }), m(this, "handleOnChange", e => {
       let {
         onChange: t,
         allowNewLines: n

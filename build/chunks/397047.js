@@ -12,4 +12,4 @@ var r = function(e) {
 }({});
 let i = "steelseries",
   a = "kontrolfreek",
-  o = new Set([i, a])
+  o = new Set(["steelseries", "kontrolfreek"])

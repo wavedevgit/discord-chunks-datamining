@@ -11,7 +11,7 @@ module.exports = function(e, t, r, i, a, o) {
   for (c = n(64e3), "keyup" === p && c(e) && (t = [e]), s = 0; s < d.callbacks[e].length; ++s)
     if ((l = d.callbacks[e][s], i || !l.seq || d.sequenceLevels[l.seq] === l.level) && p === l.action && (u = n(758686), "keypress" === p && !r.metaKey && !r.ctrlKey || u(t, l.modifiers))) {
       var _ = !i && l.combo === a,
-        m = i && l.seq === i && l.level === o;
-      (_ || m) && d.callbacks[e].splice(s, 1), f.push(l)
+        h = i && l.seq === i && l.level === o;
+      (_ || h) && d.callbacks[e].splice(s, 1), f.push(l)
     } return f
 }

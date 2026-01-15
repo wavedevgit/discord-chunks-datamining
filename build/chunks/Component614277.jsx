@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk573909 = require("./573909.js");
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -29,7 +29,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -45,13 +45,13 @@ function g(e) {
   return {
     header: t,
     isLargeModal: n,
-    stepProps: m(e, ["header", "isLargeModal"])
+    stepProps: h(e, ["header", "isLargeModal"])
   }
 }
 
 function E(e) {
-  var t, n, a, s, c, m;
-  let h, {
+  var t, n, a, s, c, h;
+  let m, {
       header: E,
       isLargeModal: b,
       stepProps: y
@@ -66,9 +66,9 @@ function E(e) {
       premiumBrandRefreshBackgroundClassName: A,
       selectedSkuId: N,
       isDisplayingWowMomentConfirmation: P,
-      isGift: R
+      isGift: w
     } = (0, d.JL)(),
-    w = null != N && N in p.y7,
+    R = null != N && N in p.y7,
     D = v.find(e => e.key === O);
   i.useEffect(() => {
     T(null)
@@ -78,27 +78,27 @@ function E(e) {
     j = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
   switch (true !== b && b && (j = _.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
-      h = 408;
+      m = 408;
       break;
     case f.h8.REVIEW:
-      h = 392;
+      m = 392;
       break;
     case f.h8.PLAN_SELECT:
-      w && !R && (h = "100%")
+      R && !w && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (m = null == D || null == (s = D.options) ? true : s.renderHeader) || m ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (h = null == D || null == (s = D.options) ? true : s.renderHeader) || h ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
         className: o()(L, _.body, A, {
           [_.reviewStep]: O === f.h8.REVIEW,
-          [_.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && w
+          [_.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && R
         }),
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: O,
           centered: false,
           onSlideReady: e => C(e),
-          width: h,
+          width: m,
           overflow: P ? "visible" : true,
           shouldUseMediaQueriesForSizing: true,
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {

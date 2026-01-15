@@ -51,8 +51,8 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 1e3 / 60,
-  h = 24,
+let h = 1e3 / 60,
+  m = 24,
   g = {
     velocity: {
       type: "static-random",
@@ -124,17 +124,17 @@ function y(e) {
         type: "static-random",
         minValue: {
           x: -t.width / 2,
-          y: -h
+          y: -m
         },
         maxValue: {
           x: t.width,
-          y: -h
+          y: -m
         }
       }
     }))
   }, [v, O]);
   return (i.useEffect(() => {
-    let e = n ? setInterval(I, m) : null;
+    let e = n ? setInterval(I, h) : null;
     return () => clearInterval(e)
   }, [n, I]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: S,
@@ -142,8 +142,8 @@ function y(e) {
       ref: y,
       colors: E,
       sprites: b,
-      spriteWidth: h,
-      spriteHeight: h
+      spriteWidth: m,
+      spriteHeight: m
     })]
   })
 }

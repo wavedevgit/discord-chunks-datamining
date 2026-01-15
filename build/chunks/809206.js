@@ -4,11 +4,11 @@
 require.d(exports, {
   FD: () => f,
   I5: () => E,
-  Mn: () => h,
+  Mn: () => m,
   NI: () => S,
   OU: () => P,
   P6: () => A,
-  S2: () => m,
+  S2: () => h,
   V3: () => g,
   W0: () => b,
   W3: () => C,
@@ -56,7 +56,7 @@ function _(e, t) {
     l.Z.logoutInternal(), (0, s.uL)(c.Z5c.DEFAULT_LOGGED_OUT)
   })
 }
-async function m(e) {
+async function h(e) {
   let t = await r.tn.patch({
       url: c.ANM.ME,
       oldFormErrors: true,
@@ -81,7 +81,7 @@ async function m(e) {
   }), t
 }
 
-function h(e) {
+function m(e) {
   var t, n;
   let {
     username: r,
@@ -92,7 +92,7 @@ function h(e) {
     avatar: f,
     avatarDescription: p,
     avatarId: _,
-    avatarDecoration: h,
+    avatarDecoration: m,
     newPassword: g,
     globalName: E,
     legacyUsername: b,
@@ -116,12 +116,12 @@ function h(e) {
     legacy_username: b,
     new_password: g
   };
-  true !== h && (S.avatar_decoration_sku_id = null != (t = null == h ? true : h.skuId) ? t : null), true !== y && (S.nameplate_sku_id = null != (n = null == y ? true : y.skuId) ? n : null), true !== O && (S.primary_guild_id = O), null != v ? (S.display_name_font_id = v.fontId, S.display_name_effect_id = v.effectId, S.display_name_colors = v.colors) : null === v && (S.display_name_font_id = null, S.display_name_effect_id = null, S.display_name_colors = null);
+  true !== m && (S.avatar_decoration_sku_id = null != (t = null == m ? true : m.skuId) ? t : null), true !== y && (S.nameplate_sku_id = null != (n = null == y ? true : y.skuId) ? n : null), true !== O && (S.primary_guild_id = O), null != v ? (S.display_name_font_id = v.fontId, S.display_name_effect_id = v.effectId, S.display_name_colors = v.colors) : null === v && (S.display_name_font_id = null, S.display_name_effect_id = null, S.display_name_colors = null);
   let I = i.K.get(c.JkL),
     T = (0, u.xJ)();
   null != T && null != I && (S.push_provider = T, S.push_token = I);
   let C = i.K.get(c.scU);
-  return null != u.mv && null != C && (S.push_voip_provider = u.mv, S.push_voip_token = C), m(S).then(e => (o.Z.dispatch({
+  return null != u.mv && null != C && (S.push_voip_provider = u.mv, S.push_voip_token = C), h(S).then(e => (o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
   }), (null != f || null != _) && o.Z.dispatch({
     type: "RECENT_AVATARS_UPDATE"

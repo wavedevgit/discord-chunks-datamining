@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   WebAudioSound: () => b,
   playGiftSound: () => g,
-  voiceSinkId: () => m
+  voiceSinkId: () => h
 }), require("./35282.js"), require("./415506.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -26,9 +26,9 @@ function d(e, t, n) {
 let f = "default",
   p = .6,
   _ = /^( Device)?( \([^()]+\))+$/,
-  m = f;
+  h = f;
 
-function h(e, t) {
+function m(e, t) {
   return !!t.startsWith(e) && null != t.substring(e.length).match(_)
 }
 
@@ -44,22 +44,22 @@ async function E() {
       r = i()(n).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
       o = n[l.Z.getOutputDeviceId()];
     if (null == o) {
-      m = f;
+      h = f;
       return
     }
     let s = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
       c = s[r];
-    if (h(o.name, null != (e = null == c ? true : c.label) ? e : "")) {
-      m = c.deviceId;
+    if (m(o.name, null != (e = null == c ? true : c.label) ? e : "")) {
+      h = c.deviceId;
       return
     }
     if (c = i()(s).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == c || (0, a.stringSimilarity)(c.label, o.name) < p) {
-      m = f;
+      h = f;
       return
     }
-    m = c.deviceId
+    h = c.deviceId
   } catch (e) {
-    m = f
+    h = f
   }
 }
 Chunk358085.isPlatformEmbedded && (Chunk131951.Z.addChangeListener(E), E());
@@ -106,7 +106,7 @@ let b = class {
     return this._audio = null != (e = this._audio) ? e : new Promise((e, t) => {
       let r = new Audio;
       r.src = n(451343)("./".concat(this.name, ".mp3")), r.onloadeddata = () => {
-        r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? f : m), e(r)
+        r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? f : h), e(r)
       }, r.onerror = () => t(Error("could not play audio")), r.onended = () => this.destroyAudio(), r.load()
     }), this._audio
   }

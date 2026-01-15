@@ -74,10 +74,10 @@ function O(e) {
     analyticsLocations: v,
     newestAnalyticsLocation: S
   } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), I = null != O && O.showGuildProfile ? n : true, T = {
-    action: m.yM.PRESS_OPTIONS,
+    action: h.yM.PRESS_OPTIONS,
     icon: a.xhG,
-    tooltipText: h.intl.string(h.t["UKOtz+"]),
-    "aria-label": h.intl.string(h.t["UKOtz+"])
+    tooltipText: m.intl.string(m.t["UKOtz+"]),
+    "aria-label": m.intl.string(m.t["UKOtz+"])
   }, C = (0, d.Z)({
     user: t,
     guildId: n,
@@ -130,7 +130,7 @@ function O(e) {
       action: "REPORT",
       analyticsLocations: v
     })
-  }), R = [
+  }), w = [
     [i, C],
     [N, A, P, (0, f.T)({
       user: t,
@@ -152,7 +152,7 @@ function O(e) {
       })
     })]
   ];
-  return R.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
+  return w.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
     value: v,
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: g,
@@ -164,8 +164,8 @@ function O(e) {
           navId: "user-profile-overflow-menu",
           onSelect: true,
           onClose: t,
-          "aria-label": h.intl.string(h.t.AXIHpV),
-          children: R.map((e, t) => (0, r.jsx)(a.kSQ, {
+          "aria-label": m.intl.string(m.t.AXIHpV),
+          children: w.map((e, t) => (0, r.jsx)(a.kSQ, {
             children: e.map(e => e)
           }, t))
         })

@@ -81,7 +81,7 @@ function S(e) {
   let {
     application: n,
     detectedGame: a
-  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(m.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
+  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(h.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
   return (0, r.jsxs)("div", {
     className: y.headingContainer,
     children: [(0, r.jsx)(s.X6q, {
@@ -177,7 +177,7 @@ function C(e) {
   } = e, l = (0, g.Z)({
     location: "MiniGameProfile",
     applicationId: t.id,
-    source: h.m1.MiniGameProfile,
+    source: m.m1.MiniGameProfile,
     trackEntryPointImpression: true,
     sourceUserId: true
   }, {}), c = i.useCallback(e => {

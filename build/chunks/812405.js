@@ -30,7 +30,7 @@ function v(e, t, n) {
     case "delete-word":
       return f(t);
     case "backspace":
-      return h(t);
+      return m(t);
     case "backspace-word":
       return d(t);
     case "backspace-to-start-of-line":
@@ -40,7 +40,7 @@ function v(e, t, n) {
     case "transpose-characters":
       return E(t);
     case "move-selection-to-start-of-block":
-      return m(t);
+      return h(t);
     case "move-selection-to-end-of-block":
       return _(t);
     case "secondary-cut":

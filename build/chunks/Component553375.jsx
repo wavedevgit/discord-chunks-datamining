@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => E,
-  nK: () => h,
+  nK: () => m,
   uj: () => g
 });
 var Chunk54381 = require("./54381.js");
@@ -50,13 +50,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   let {
     user: t,
     activity: n,
@@ -81,7 +81,7 @@ function g(e) {
     entry: l
   } = e, {
     applicationId: u
-  } = h({
+  } = m({
     activity: s,
     entry: l,
     user: t
@@ -91,7 +91,7 @@ function g(e) {
       let {
         default: e
       } = await Promise.all([n.e("82077"), n.e("30709")]).then(n.bind(n, 953848));
-      if (null != s) return t => (0, r.jsx)(e, m(p({}, t), {
+      if (null != s) return t => (0, r.jsx)(e, h(p({}, t), {
         detectedActivity: s,
         onSubmitted: () => {}
       }));
@@ -100,12 +100,12 @@ function g(e) {
           name: l.extra.game_name,
           application_id: l.extra.application_id
         };
-        return n => (0, r.jsx)(e, m(p({}, n), {
+        return n => (0, r.jsx)(e, h(p({}, n), {
           detectedActivity: t,
           onSubmitted: () => {}
         }))
       }
-      return t => (0, r.jsx)(e, m(p({}, t), {
+      return t => (0, r.jsx)(e, h(p({}, t), {
         onSubmitted: () => {}
       }))
     });
@@ -129,7 +129,7 @@ function E(e) {
   } = e, {
     applicationId: f,
     sourceUserId: p
-  } = h({
+  } = m({
     activity: n,
     entry: a,
     user: t

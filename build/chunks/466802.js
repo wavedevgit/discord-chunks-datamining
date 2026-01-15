@@ -27,7 +27,7 @@ let E = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
   _ = (0, Chunk509613.m7)(Chunk313789.n.NITRO_SIDEBAR_ITEM, {
     useTitle: () => c.intl.string(c.t.Ipxkog),
     getLegacySearchKey: () => (0, r.Gl)("NitroPanel") ? true : S.s6.PREMIUM,
-    icon: Chunk657707.SrA,
+    icon: Chunk657707.NitroWheelIcon,
     trailing: {
       type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
       useCustomDecoration: (t, e) => (0, o.x)(e)

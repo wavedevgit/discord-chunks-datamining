@@ -22,15 +22,15 @@ function p(e) {
     className: a,
     contentClassName: p,
     active: _ = false,
-    muteSound: m = false,
-    disabled: h = false
+    muteSound: h = false,
+    disabled: m = false
   } = e, g = i.useContext(u.Q), E = (0, c.dQu)(g.primaryColor).hex(), b = (0, c.dQu)(g.secondaryColor).hex(), y = (0, d.T)(s.Z), O = i.useCallback(() => {
-    h || (m || y(), null == t || t())
-  }, [t, m, y, h]);
+    m || (h || y(), null == t || t())
+  }, [t, h, y, m]);
   return (0, r.jsx)(l.P3F, {
     className: o()(a, f.outerButton, {
       [f.active]: _,
-      [f.disabled]: h
+      [f.disabled]: m
     }),
     style: {
       backgroundColor: E

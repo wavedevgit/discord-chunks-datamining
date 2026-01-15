@@ -2,10 +2,10 @@
 /** chunk id: 91313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  HZ: () => m,
+  HZ: () => h,
   IB: () => E,
   cr: () => _,
-  cu: () => h,
+  cu: () => m,
   lk: () => b,
   tM: () => g,
   xi: () => y,
@@ -28,7 +28,7 @@ function _(e) {
   return null == t || "applicationCommand" !== t.type ? null : [t, f.YD]
 }
 
-function m(e) {
+function h(e) {
   var t, n;
   if (null == e.selection) return null;
   let r = null != (t = d.bN.above(e, {
@@ -41,7 +41,7 @@ function m(e) {
   })) ? n : null
 }
 
-function h(e) {
+function m(e) {
   let t = _(e),
     n = [],
     r = null == t ? true : t[0].children;
@@ -138,7 +138,7 @@ function O(e, t) {
   if (null == t.options || 0 === t.options.length) return [];
   let n = d.bN.richValue(e),
     r = [],
-    i = new Set(h(e)),
+    i = new Set(m(e)),
     a = {},
     o = new Set;
   for (let e of t.options) a[e.displayName] = e, i.has(e.name) || o.add(e.displayName);
@@ -148,11 +148,11 @@ function O(e, t) {
     if ("line" === i.type || "applicationCommand" === i.type)
       for (let c = 0; c < i.children.length; c++) {
         let f, _ = i.children[c],
-          m = [t, c];
+          h = [t, c];
         if (d.aj.isType(_, "applicationCommandOption")) {
           if (null != s) {
             var l;
-            s.valueRange.focus = null != (l = d.bN.before(e, m)) ? l : d.bN.start(e, []), s.text = (0, u.sk)(n, {
+            s.valueRange.focus = null != (l = d.bN.before(e, h)) ? l : d.bN.start(e, []), s.text = (0, u.sk)(n, {
               mode: "raw",
               range: s.valueRange
             }).trim(), r.push(s), s = null
@@ -168,15 +168,15 @@ function O(e, t) {
             let t = a[e];
             if (null == t) continue;
             let i = {
-                path: m,
+                path: h,
                 offset: f.index
               },
               l = {
-                path: m,
+                path: h,
                 offset: i.offset + f[0].length
               },
               c = {
-                path: m,
+                path: h,
                 offset: l.offset
               },
               d = {

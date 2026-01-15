@@ -33,9 +33,9 @@ function A(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, A = (0, h.c_)(), N = (0, _.q)(), P = m.h2.useSetting().includes(n), R = (0, l.LN)(), w = m.mX.useSetting(), D = m.zA.useSetting().includes(n), x = i.useCallback(e => {
+  } = e, A = (0, m.c_)(), N = (0, _.q)(), P = h.h2.useSetting().includes(n), w = (0, l.LN)(), R = h.mX.useSetting(), D = h.zA.useSetting().includes(n), x = i.useCallback(e => {
     let r = (0, f.gl)();
-    e ? r.delete(n) : r.add(n), m.zA.updateSetting(Array.from(r)), u.default.track(I.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), u.default.track(I.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: y.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
       ingress: t,
       guild_id: n
@@ -58,10 +58,10 @@ function A(e) {
 
   function M(e) {
     let t = () => {
-        m.mX.updateSetting(e), m.zA.updateSetting(e ? c.Z.getGuildIds() : []), L(e, true)
+        h.mX.updateSetting(e), h.zA.updateSetting(e ? c.Z.getGuildIds() : []), L(e, true)
       },
       n = () => {
-        m.mX.updateSetting(e), L(e, false)
+        h.mX.updateSetting(e), L(e, false)
       };
     (0, b.V)({
       header: T.intl.string(T.t.yAfu1p),
@@ -78,10 +78,10 @@ function A(e) {
     scrollPosition: O.FY.MESSAGE_REQUESTS_V2,
     children: n === S.T ? (0, r.jsx)(E.ZP, {
       title: T.intl.string(T.t["3o2ojh"]),
-      value: !N && !w,
+      value: !N && !R,
       onChange: e => j(e, false),
-      disabled: N || R,
-      tooltipText: R ? T.intl.string(C.default["6Af/cw"]) : true,
+      disabled: N || w,
+      tooltipText: w ? T.intl.string(C.default["6Af/cw"]) : true,
       note: T.intl.format(T.t.wkm9a3, {
         helpdeskArticle: d.Z.getArticleURL(I.BhN.MESSAGE_REQUESTS)
       })
@@ -103,7 +103,7 @@ function N(e) {
   let {
     ingress: t = O.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
-  } = e, i = (0, h.is)();
+  } = e, i = (0, m.is)();
   return (0, r.jsx)(A, {
     ingress: t,
     guildId: null != n ? n : i

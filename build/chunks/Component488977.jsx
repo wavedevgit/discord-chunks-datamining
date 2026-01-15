@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk437773 = require("./437773.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,14 +41,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function L(e) {
   var t;
   let {
     application: a,
-    context: R,
+    context: w,
     className: D,
     sectionName: L
   } = e, j = i.useRef(null), M = (0, l.e7)([S.Z], () => S.Z.entrypoint()), k = (0, I.L1)(a), U = (0, _.Eb)(k), G = (0, f.R)(a.id), Z = (0, l.e7)([E.Z], () => {
@@ -86,12 +86,12 @@ function L(e) {
     application_id: a.id,
     section_name: L,
     source: S.Z.lastShownEntrypoint()
-  }, B = b.default.getCurrentUser(), V = (0, m.Z)({
+  }, B = b.default.getCurrentUser(), V = (0, h.Z)({
     id: a.id,
     label: N.intl.string(N.t["+NP/b2"])
   }), H = (0, T.P)({
     application: a
-  }), Y = (0, s.yE)(null != (t = a.flags) ? t : 0, A.udG.EMBEDDED), W = "channel" === R.type ? R.channel : true;
+  }), Y = (0, s.yE)(null != (t = a.flags) ? t : 0, A.udG.EMBEDDED), W = "channel" === w.type ? w.channel : true;
   return (0, r.jsxs)("div", {
     className: P.container,
     children: [(0, r.jsx)(c.P3F, {
@@ -99,7 +99,7 @@ function L(e) {
         let e = Y ? (0, p.H)({
           applicationId: a.id,
           referrerId: null == B ? true : B.id
-        }) : (0, p.J)(w({
+        }) : (0, p.J)(R({
           id: a.id
         }, k));
         (0, O.JG)(e, () => (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["L/PwZf"]), c.ToastType.SUCCESS))), y.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
@@ -146,7 +146,7 @@ function L(e) {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == k.customInstallUrl && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, F), (0, v.L)(x(w({}, k), {
+                null == k.customInstallUrl && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, F), (0, v.L)(x(R({}, k), {
                   oauth2Callback: e => {
                     let {
                       location: t
@@ -162,7 +162,7 @@ function L(e) {
               label: N.intl.string(N.t.jhJzez),
               action: () => {
                 var e;
-                (0, h.uu)({
+                (0, m.uu)({
                   application: a,
                   entrypoint: "app_launcher",
                   contextualGuildId: null != (e = null == W ? true : W.getGuildId()) ? e : true,
@@ -177,7 +177,7 @@ function L(e) {
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(c.P3F, x(w({
+      children: e => (0, r.jsx)(c.P3F, x(R({
         innerRef: j
       }, e), {
         onClick: e.onClick,

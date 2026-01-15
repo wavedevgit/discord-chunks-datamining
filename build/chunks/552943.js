@@ -7,7 +7,7 @@ require.d(exports, {
   U3: () => d,
   WP: () => f,
   Xh: () => O,
-  hQ: () => h,
+  hQ: () => m,
   q6: () => l,
   t6: () => T,
   yI: () => g
@@ -107,7 +107,7 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   return {
     id: e.id,
     startsAt: e.starts_at,
@@ -139,10 +139,10 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return {
     id: e.id,
-    config: m(e.config),
+    config: h(e.config),
     userStatus: null == e.user_status ? null : d(e.user_status)
   }
 }

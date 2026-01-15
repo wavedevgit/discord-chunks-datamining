@@ -12,8 +12,8 @@ var Chunk620014 = require("./620014.js"),
   f = "[object Arguments]",
   p = "[object Array]",
   _ = "[object Object]",
-  m = Object.prototype.hasOwnProperty;
-module.exports = function(e, t, n, h, g, E) {
+  h = Object.prototype.hasOwnProperty;
+module.exports = function(e, t, n, m, g, E) {
   var b = l(e),
     y = l(t),
     O = b ? p : s(e),
@@ -26,15 +26,15 @@ module.exports = function(e, t, n, h, g, E) {
     if (!c(t)) returnfalse;
     b = true, S = false
   }
-  if (T && !S) return E || (E = new r), b || u(e) ? i(e, t, n, h, g, E) : a(e, t, O, n, h, g, E);
+  if (T && !S) return E || (E = new r), b || u(e) ? i(e, t, n, m, g, E) : a(e, t, O, n, m, g, E);
   if (!(n & d)) {
-    var C = S && m.call(e, "__wrapped__"),
-      A = I && m.call(t, "__wrapped__");
+    var C = S && h.call(e, "__wrapped__"),
+      A = I && h.call(t, "__wrapped__");
     if (C || A) {
       var N = C ? e.value() : e,
         P = A ? t.value() : t;
-      return E || (E = new r), g(N, P, n, h, E)
+      return E || (E = new r), g(N, P, n, m, E)
     }
   }
-  return !!T && (E || (E = new r), o(e, t, n, h, g, E))
+  return !!T && (E || (E = new r), o(e, t, n, m, g, E))
 }

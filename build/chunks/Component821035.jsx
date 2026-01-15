@@ -82,8 +82,8 @@ function O() {
     tooltipText: n ? g.intl.string(E.default["6Af/cw"]) : true
   };
   return (0, r.jsxs)(p.n, {
-    setting: h.s6.PRIVACY_SENSITIVE_MEDIA_V2,
-    scrollPosition: m.FY.EXPLICIT_MEDIA_REDACTION_V2,
+    setting: m.s6.PRIVACY_SENSITIVE_MEDIA_V2,
+    scrollPosition: h.FY.EXPLICIT_MEDIA_REDACTION_V2,
     description: g.intl.string(g.t.Wnojv1),
     children: [(0, r.jsx)(_.Z, y({
       title: g.intl.string(g.t["+uI23H"]),

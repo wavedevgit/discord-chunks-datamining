@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -58,7 +58,7 @@ let g = e => {
     badgeId: t = u.VU.PREMIUM_TENURE_1_MONTH,
     markAsDismissed: n,
     children: p,
-    mode: m = "popover",
+    mode: h = "popover",
     tooltipDelay: g = 300,
     targetElementRef: E,
     body: b,
@@ -72,10 +72,10 @@ let g = e => {
   (0, i.useEffect)(() => {
     a.a[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = P
   }, [P]);
-  let R = (0, i.useCallback)(() => {
+  let w = (0, i.useCallback)(() => {
       null == n || n(d.L.USER_DISMISS)
     }, [n]),
-    w = {
+    R = {
       gradientColor: N,
       size: "lg",
       graphic: {
@@ -94,23 +94,23 @@ let g = e => {
       body: b,
       actions: S
     };
-  return "tooltip" === m ? (0, r.jsx)(c.Z, h(_({
+  return "tooltip" === h ? (0, r.jsx)(c.Z, m(_({
     targetElementRef: E,
     estimatedTooltipHeight: T,
     delay: g,
     onShow: I
-  }, w), {
+  }, R), {
     children: p
   })) : (0, r.jsxs)(r.Fragment, {
     children: [p, (0, r.jsx)(l.Z, _({
       targetElementRef: E,
       shouldShow: true,
-      onRequestClose: R,
+      onRequestClose: w,
       align: "right",
       position: "top",
       caretConfig: {
         align: "center"
       }
-    }, w))]
+    }, R))]
   })
 }

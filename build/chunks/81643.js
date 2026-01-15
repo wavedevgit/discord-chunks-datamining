@@ -8,11 +8,11 @@ require.d(exports, {
   Jm: () => P,
   L0: () => x,
   L5: () => A,
-  M$: () => R,
+  M$: () => w,
   WD: () => k,
   bj: () => T,
   g0: () => D,
-  gD: () => w,
+  gD: () => R,
   kJ: () => j,
   l6: () => M,
   pY: () => L,
@@ -64,12 +64,12 @@ function P() {
   return (null == e ? true : e.ageVerificationStatus) === o.F$.VERIFIED_TEEN
 }
 
-function R() {
+function w() {
   let e = p.default.getCurrentUser();
   return (null == e ? true : e.ageVerificationStatus) === o.F$.VERIFIED_ADULT
 }
 
-function w() {
+function R() {
   let e = (0, i.e7)([p.default], () => p.default.getCurrentUser());
   return (null == e ? true : e.ageVerificationStatus) === o.F$.VERIFIED_ADULT
 }
@@ -105,7 +105,7 @@ function k(e) {
     visibleContent: s = null,
     shouldShowExpressiveModal: d = false,
     classificationId: f = null
-  } = e, [m, g] = r.useState(false), E = (0, i.e7)([p.default], () => p.default.getCurrentUser()), {
+  } = e, [h, g] = r.useState(false), E = (0, i.e7)([p.default], () => p.default.getCurrentUser()), {
     current: b
   } = r.useRef(null == E ? true : E.ageVerificationStatus), O = (0, c.GE)(), v = r.useCallback(() => {
     a.Z.dispatch({
@@ -121,7 +121,7 @@ function k(e) {
       a.Z.dispatch({
         type: "INITIATE_AGE_VERIFICATION"
       });
-      let r = await (0, h.pU)({
+      let r = await (0, m.pU)({
         method: e,
         classificationId: null != f ? f : true
       });
@@ -142,7 +142,7 @@ function k(e) {
     }
   }, [t, v, d, f, n]);
   return {
-    loading: m,
+    loading: h,
     initiateAgeVerification: S
   }
 }

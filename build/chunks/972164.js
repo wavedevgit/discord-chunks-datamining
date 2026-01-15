@@ -18,8 +18,8 @@ function s(e, t, n, r, i, a) {
     f = e[t++] ^ n[r++],
     p = e[t++] ^ n[r++],
     _ = e[t++] ^ n[r++],
-    m = e[t++] ^ n[r++],
     h = e[t++] ^ n[r++],
+    m = e[t++] ^ n[r++],
     g = e[t++] ^ n[r++],
     E = e[t++] ^ n[r++],
     b = e[t++] ^ n[r++],
@@ -33,17 +33,17 @@ function s(e, t, n, r, i, a) {
     A = d,
     N = f,
     P = p,
-    R = _,
-    w = m,
-    D = h,
+    w = _,
+    R = h,
+    D = m,
     x = g,
     L = E,
     j = b,
     M = y,
     k = O,
     U = v;
-  for (let e = 0; e < 8; e += 2) A ^= (0, o.XG)(S + j | 0, 7), w ^= (0, o.XG)(A + S | 0, 9), j ^= (0, o.XG)(w + A | 0, 13), S ^= (0, o.XG)(j + w | 0, 18), D ^= (0, o.XG)(N + I | 0, 7), M ^= (0, o.XG)(D + N | 0, 9), I ^= (0, o.XG)(M + D | 0, 13), N ^= (0, o.XG)(I + M | 0, 18), k ^= (0, o.XG)(x + P | 0, 7), T ^= (0, o.XG)(k + x | 0, 9), P ^= (0, o.XG)(T + k | 0, 13), x ^= (0, o.XG)(P + T | 0, 18), C ^= (0, o.XG)(U + L | 0, 7), R ^= (0, o.XG)(C + U | 0, 9), L ^= (0, o.XG)(R + C | 0, 13), U ^= (0, o.XG)(L + R | 0, 18), I ^= (0, o.XG)(S + C | 0, 7), T ^= (0, o.XG)(I + S | 0, 9), C ^= (0, o.XG)(T + I | 0, 13), S ^= (0, o.XG)(C + T | 0, 18), P ^= (0, o.XG)(N + A | 0, 7), R ^= (0, o.XG)(P + N | 0, 9), A ^= (0, o.XG)(R + P | 0, 13), N ^= (0, o.XG)(A + R | 0, 18), L ^= (0, o.XG)(x + D | 0, 7), w ^= (0, o.XG)(L + x | 0, 9), D ^= (0, o.XG)(w + L | 0, 13), x ^= (0, o.XG)(D + w | 0, 18), j ^= (0, o.XG)(U + k | 0, 7), M ^= (0, o.XG)(j + U | 0, 9), k ^= (0, o.XG)(M + j | 0, 13), U ^= (0, o.XG)(k + M | 0, 18);
-  i[a++] = s + S | 0, i[a++] = l + I | 0, i[a++] = c + T | 0, i[a++] = u + C | 0, i[a++] = d + A | 0, i[a++] = f + N | 0, i[a++] = p + P | 0, i[a++] = _ + R | 0, i[a++] = m + w | 0, i[a++] = h + D | 0, i[a++] = g + x | 0, i[a++] = E + L | 0, i[a++] = b + j | 0, i[a++] = y + M | 0, i[a++] = O + k | 0, i[a++] = v + U | 0
+  for (let e = 0; e < 8; e += 2) A ^= (0, o.XG)(S + j | 0, 7), R ^= (0, o.XG)(A + S | 0, 9), j ^= (0, o.XG)(R + A | 0, 13), S ^= (0, o.XG)(j + R | 0, 18), D ^= (0, o.XG)(N + I | 0, 7), M ^= (0, o.XG)(D + N | 0, 9), I ^= (0, o.XG)(M + D | 0, 13), N ^= (0, o.XG)(I + M | 0, 18), k ^= (0, o.XG)(x + P | 0, 7), T ^= (0, o.XG)(k + x | 0, 9), P ^= (0, o.XG)(T + k | 0, 13), x ^= (0, o.XG)(P + T | 0, 18), C ^= (0, o.XG)(U + L | 0, 7), w ^= (0, o.XG)(C + U | 0, 9), L ^= (0, o.XG)(w + C | 0, 13), U ^= (0, o.XG)(L + w | 0, 18), I ^= (0, o.XG)(S + C | 0, 7), T ^= (0, o.XG)(I + S | 0, 9), C ^= (0, o.XG)(T + I | 0, 13), S ^= (0, o.XG)(C + T | 0, 18), P ^= (0, o.XG)(N + A | 0, 7), w ^= (0, o.XG)(P + N | 0, 9), A ^= (0, o.XG)(w + P | 0, 13), N ^= (0, o.XG)(A + w | 0, 18), L ^= (0, o.XG)(x + D | 0, 7), R ^= (0, o.XG)(L + x | 0, 9), D ^= (0, o.XG)(R + L | 0, 13), x ^= (0, o.XG)(D + R | 0, 18), j ^= (0, o.XG)(U + k | 0, 7), M ^= (0, o.XG)(j + U | 0, 9), k ^= (0, o.XG)(M + j | 0, 13), U ^= (0, o.XG)(k + M | 0, 18);
+  i[a++] = s + S | 0, i[a++] = l + I | 0, i[a++] = c + T | 0, i[a++] = u + C | 0, i[a++] = d + A | 0, i[a++] = f + N | 0, i[a++] = p + P | 0, i[a++] = _ + w | 0, i[a++] = h + R | 0, i[a++] = m + D | 0, i[a++] = g + x | 0, i[a++] = E + L | 0, i[a++] = b + j | 0, i[a++] = y + M | 0, i[a++] = O + k | 0, i[a++] = v + U | 0
 }
 
 function l(e, t, n, r, i) {
@@ -69,12 +69,12 @@ function c(e, t, n) {
   }, n);
   if ((0, r.Rx)(s), (0, r.Rx)(l), (0, r.Rx)(c), (0, r.Rx)(u), (0, r.Rx)(d), (0, r.Rx)(f), true !== p && "function" != typeof p) throw Error("progressCb should be function");
   let _ = 128 * l,
-    m = _ / 4;
+    h = _ / 4;
   if (s <= 1 || (s & s - 1) != 0 || s > 0x100000000) throw Error("Scrypt: N must be larger than 1, a power of 2, and less than 2^32");
   if (c < 0 || c > (0x100000000 - 1) * 32 / _) throw Error("Scrypt: p must be a positive integer less than or equal to ((2^32 - 1) * 32) / (128 * r)");
   if (u < 0 || u > (0x100000000 - 1) * 32) throw Error("Scrypt: dkLen should be positive integer less than or equal to (2^32 - 1) * 32");
-  let h = _ * (s + c);
-  if (h > f) throw Error(`Scrypt: parameters too large, ${h} (128 * r * (N + p)) > ${f} (maxmem)`);
+  let m = _ * (s + c);
+  if (m > f) throw Error(`Scrypt: parameters too large, ${m} (128 * r * (N + p)) > ${f} (maxmem)`);
   let g = (0, a.n)(i.JQ, e, t, {
       c: 1,
       dkLen: _ * c
@@ -96,7 +96,7 @@ function c(e, t, n) {
     r: l,
     p: c,
     dkLen: u,
-    blockSize32: m,
+    blockSize32: h,
     V: b,
     B32: E,
     B: g,
@@ -123,8 +123,8 @@ async function d(e, t, n) {
     V: f,
     B32: p,
     B: _,
-    tmp: m,
-    blockMixCb: h,
+    tmp: h,
+    blockMixCb: m,
     asyncTick: g
   } = c(e, t, n);
   o.iA || (0, o.l1)(p);
@@ -133,12 +133,12 @@ async function d(e, t, n) {
     for (let e = 0; e < d; e++) f[e] = p[t + e];
     let n = 0;
     await (0, o.oY)(r - 1, g, () => {
-      l(f, n, f, n += d, i), h()
-    }), l(f, (r - 1) * d, p, t, i), h(), await (0, o.oY)(r, g, () => {
+      l(f, n, f, n += d, i), m()
+    }), l(f, (r - 1) * d, p, t, i), m(), await (0, o.oY)(r, g, () => {
       let e = p[t + d - 16] % r;
-      for (let n = 0; n < d; n++) m[n] = p[t + n] ^ f[e * d + n];
-      l(m, 0, p, t, i), h()
+      for (let n = 0; n < d; n++) h[n] = p[t + n] ^ f[e * d + n];
+      l(h, 0, p, t, i), m()
     })
   }
-  return o.iA || (0, o.l1)(p), u(e, s, _, f, m)
+  return o.iA || (0, o.l1)(p), u(e, s, _, f, h)
 }

@@ -43,11 +43,11 @@ var Chunk475637 = require("./475637.js"),
     narrow: [/^s/i, /^m/i, /^t/i, /^w/i, /^t/i, /^f/i, /^s/i],
     any: [/^su/i, /^m/i, /^tu/i, /^w/i, /^th/i, /^f/i, /^sa/i]
   },
-  m = {
+  h = {
     narrow: /^(a|p|mi|n|(in the|at) (morning|afternoon|evening|night))/i,
     any: /^([ap]\.?\s?m\.?|midnight|noon|(in the|at) (morning|afternoon|evening|night))/i
   },
-  h = {
+  m = {
     any: {
       am: /^a/i,
       pm: /^p/i,
@@ -95,9 +95,9 @@ let g = {
     defaultParseWidth: "any"
   }),
   dayPeriod: (0, Chunk475637.Z)({
-    matchPatterns: m,
+    matchPatterns: h,
     defaultMatchWidth: "any",
-    parsePatterns: h,
+    parsePatterns: m,
     defaultParseWidth: "any"
   })
 }

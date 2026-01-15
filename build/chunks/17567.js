@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ class E {
   handleGuildRoleChange(e, t) {
     let n = l.Z.getGuild(e.guildId),
       r = s.Z.getUnsafeMutableRoles(e.guildId);
-    null != n && this.put(c.rk(n, u.an(h(_({}, r), {
+    null != n && this.put(c.rk(n, u.an(m(_({}, r), {
       [e.role.id]: u.wD(e.guildId, e.role)
     })), o.ZP.getSelfMember(e.guildId)), t)
   }
@@ -102,7 +102,7 @@ class E {
       let r = _({}, s.Z.getUnsafeMutableRoles(e.guildId));
       delete r[e.roleId];
       let i = o.ZP.getSelfMember(e.guildId);
-      null != i && (i = h(_({}, i), {
+      null != i && (i = m(_({}, i), {
         roles: i.roles.filter(t => t !== e.roleId)
       })), this.put(c.rk(n, u.an(r), i), t)
     }

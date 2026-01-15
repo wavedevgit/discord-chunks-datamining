@@ -2,7 +2,7 @@
 /** chunk id: 430131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,25 +17,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk362117 = require("./362117.js");
 
-function m(e) {
+function h(e) {
   let {
     errors: t,
     pendingNick: n,
-    currentNick: m,
-    username: h,
+    currentNick: h,
+    username: m,
     user: g,
     guild: E
-  } = e, b = null != n ? n : m, y = (0, i.e7)([c.Z], () => c.Z.can(d.Plq.CHANGE_NICKNAME, E) || c.Z.can(d.Plq.MANAGE_NICKNAMES, E)), O = (0, o.m)(f.PremiumTypes.TIER_2);
+  } = e, b = null != n ? n : h, y = (0, i.e7)([c.Z], () => c.Z.can(d.Plq.CHANGE_NICKNAME, E) || c.Z.can(d.Plq.MANAGE_NICKNAMES, E)), O = (0, o.m)(f.PremiumTypes.TIER_2);
 
   function v(e) {
-    (0, u.wi)(e, m)
+    (0, u.wi)(e, h)
   }
   return (0, r.jsxs)(s.Z, {
     title: p.intl.string(p.t.me1lRk),
     errors: t,
     children: [(0, r.jsx)(a.oil, {
       value: null != b ? b : "",
-      placeholder: h,
+      placeholder: m,
       maxLength: d.l$U,
       onChange: v,
       disabled: !y,

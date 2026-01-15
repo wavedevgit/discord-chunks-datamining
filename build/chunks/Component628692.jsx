@@ -48,12 +48,12 @@ function S(e) {
 function I(e) {
   let {
     soundId: t
-  } = e, n = (0, s.e7)([h.Z], () => h.Z.getSoundById(t)), i = (0, f.V2)({
+  } = e, n = (0, s.e7)([m.Z], () => m.Z.getSoundById(t)), i = (0, f.V2)({
     location: "SoundboardMentionInline"
   }), {
     isPlaying: a,
     playSound: o
-  } = (0, m.Z)(n);
+  } = (0, h.Z)(n);
   return i ? null == n ? (0, r.jsx)(S, {}) : (0, r.jsx)(T, {
     className: v.inlineTextArea,
     isPlaying: a,
@@ -97,7 +97,7 @@ let C = function(e) {
     soundId: a,
     messageSounds: o,
     jumbo: c = false
-  } = e, u = b.jU.useSetting(), f = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), O = i.useMemo(() => {
+  } = e, u = b.jU.useSetting(), f = (0, s.e7)([m.Z], () => m.Z.getSoundById(a), [a]), O = i.useMemo(() => {
     var e;
     return null != (e = (0, p.Z)(t, n, a, o)) ? e : f
   }, [t, n, a, o, f]), I = (0, s.e7)([y.Z], () => y.Z.getChannel(t)), C = (0, d.X0)({
@@ -105,20 +105,20 @@ let C = function(e) {
   }), A = i.useRef(null), {
     isPlaying: N,
     playSound: P
-  } = (0, m.Z)(O, I), R = i.useCallback(async () => {
+  } = (0, h.Z)(O, I), w = i.useCallback(async () => {
     if (await P()) {
       var e;
       null == (e = A.current) || e.addAnimation()
     }
   }, [P]);
   return C ? null == O ? (0, r.jsx)(S, {
-    playSound: R
+    playSound: w
   }) : c && !u ? (0, r.jsx)(E.ZP, {
     containerClassName: v.jumboContainer,
     className: v.jumboButton,
     sound: O,
     channel: I,
-    onSelectItem: R,
+    onSelectItem: w,
     isPlayingSoundOverride: N,
     isSoundmoji: true,
     buttonOverlay: g.Pb.SOUNDMOJI,
@@ -139,7 +139,7 @@ let C = function(e) {
     children: (0, r.jsx)("span", {
       children: (0, r.jsx)(T, {
         sound: O,
-        playSound: R,
+        playSound: w,
         isPlaying: N
       })
     })

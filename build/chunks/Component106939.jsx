@@ -65,7 +65,7 @@ function M(e) {
   } = e, i = (0, O.gU)(), a = (0, y.Z)();
   return t === N.dG.CONTENT_AND_SOCIAL || t === N.dG.DATA_AND_PRIVACY ? null : (0, r.jsxs)(c.njP, {
     className: D.settingsTabBar,
-    "aria-label": w.intl.string(R.default.RZqaJn),
+    "aria-label": R.intl.string(w.default.RZqaJn),
     selectedItem: t,
     type: "top",
     look: "brand",
@@ -73,19 +73,19 @@ function M(e) {
     children: [(0, r.jsx)(c.njP.Item, {
       className: D.settingsTabBarItem,
       id: N.dG.ACTIVITY,
-      children: w.intl.string(R.default.bdBmqy)
+      children: R.intl.string(w.default.bdBmqy)
     }), (0, r.jsxs)(c.njP.Item, {
       className: D.settingsTabBarItem,
       id: N.dG.REQUESTS,
-      "aria-label": w.intl.string(R.default["gVWG+6"]),
-      children: [w.intl.string(R.default["gVWG+6"]), i > 0 ? (0, r.jsx)(c.mAB, {
+      "aria-label": R.intl.string(w.default["gVWG+6"]),
+      children: [R.intl.string(w.default["gVWG+6"]), i > 0 ? (0, r.jsx)(c.mAB, {
         className: D.badge,
         count: i
       }) : null]
     }), a ? (0, r.jsx)(c.njP.Item, {
       className: D.settingsTabBarItem,
       id: N.dG.SETTINGS,
-      children: w.intl.string(w.t["3D5yo/"])
+      children: R.intl.string(R.t["3D5yo/"])
     }) : null]
   })
 }
@@ -98,32 +98,32 @@ function k(e) {
   } = e, a = (0, _.Dt)(), l = (0, O.gU)();
   return (0, r.jsx)(c.f6W, {
     theme: t,
-    children: e => (0, r.jsxs)(m.Z, {
+    children: e => (0, r.jsxs)(h.Z, {
       className: o()(e, D.sidebarTabBar),
       scrollable: s.tq,
       role: "navigation",
       "aria-labelledby": a,
       toolbar: true,
-      children: [(0, r.jsx)(m.Z.Icon, {
+      children: [(0, r.jsx)(h.Z.Icon, {
         icon: c.BFJ,
         "aria-hidden": true
-      }), (0, r.jsx)(m.Z.Title, {
+      }), (0, r.jsx)(h.Z.Title, {
         id: a,
-        children: w.intl.string(R.default.RZqaJn)
-      }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsxs)(c.njP, {
-        "aria-label": w.intl.string(R.default.RZqaJn),
+        children: R.intl.string(w.default.RZqaJn)
+      }), (0, r.jsx)(h.Z.Divider, {}), (0, r.jsxs)(c.njP, {
+        "aria-label": R.intl.string(w.default.RZqaJn),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
         children: [(0, r.jsx)(c.njP.Item, {
           id: N.dG.ACTIVITY,
           className: D.item,
-          children: w.intl.string(R.default.bdBmqy)
+          children: R.intl.string(w.default.bdBmqy)
         }), (0, r.jsxs)(c.njP.Item, {
           id: N.dG.REQUESTS,
           className: D.item,
-          "aria-label": w.intl.string(R.default["gVWG+6"]),
-          children: [w.intl.string(R.default["gVWG+6"]), l > 0 ? (0, r.jsx)(c.mAB, {
+          "aria-label": R.intl.string(w.default["gVWG+6"]),
+          children: [R.intl.string(w.default["gVWG+6"]), l > 0 ? (0, r.jsx)(c.mAB, {
             className: D.badge,
             count: l
           }) : null]
@@ -153,9 +153,9 @@ function U() {
   let s = x[n];
   return (0, r.jsxs)("main", {
     className: D.container,
-    "aria-label": w.intl.string(R.default.RZqaJn),
+    "aria-label": R.intl.string(w.default.RZqaJn),
     children: [(0, r.jsx)(p.yY, {
-      location: w.intl.string(R.default.RZqaJn)
+      location: R.intl.string(w.default.RZqaJn)
     }), (0, r.jsx)(M, {
       section: n,
       handleItemSelect: o
@@ -171,8 +171,8 @@ function U() {
 function G() {
   let {
     analyticsLocations: e
-  } = (0, f.ZP)(d.Z.FAMILY_CENTER), t = (0, y.Z)(), n = (0, l.e7)([b.Z], () => b.Z.getIsInitialized()), a = (0, l.e7)([h.Z], () => h.Z.theme), s = (0, _.Dt)(), {
-    isLoading: m,
+  } = (0, f.ZP)(d.Z.FAMILY_CENTER), t = (0, y.Z)(), n = (0, l.e7)([b.Z], () => b.Z.getIsInitialized()), a = (0, l.e7)([m.Z], () => m.Z.theme), s = (0, _.Dt)(), {
+    isLoading: h,
     selectedTab: O,
     handleTabChange: v,
     showAgeGateModal: S
@@ -196,9 +196,9 @@ function G() {
     value: e,
     children: (0, r.jsxs)("main", {
       className: o()(D.container, D.containerSidenav),
-      "aria-label": w.intl.string(R.default.RZqaJn),
+      "aria-label": R.intl.string(w.default.RZqaJn),
       children: [(0, r.jsx)(p.yY, {
-        location: w.intl.string(R.default.RZqaJn)
+        location: R.intl.string(w.default.RZqaJn)
       }), (0, r.jsx)(k, {
         theme: a,
         section: T,
@@ -210,7 +210,7 @@ function G() {
         children: (0, r.jsx)(c.Ttm, {
           children: (0, r.jsx)("div", {
             className: D.sideNavContent,
-            children: m ? (0, r.jsx)(j, {}) : (0, r.jsx)(C, {})
+            children: h ? (0, r.jsx)(j, {}) : (0, r.jsx)(C, {})
           })
         })
       })]

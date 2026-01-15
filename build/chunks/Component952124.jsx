@@ -52,7 +52,7 @@ function y(e) {
   } = (0, _.KZ)(), {
     analyticsLocations: v,
     newestAnalyticsLocation: S
-  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, a.e7)([m.Z], () => m.Z.getUserProfile(t.id)), T = null == I ? true : I.application, C = (0, f.Z)({
+  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, a.e7)([h.Z], () => h.Z.getUserProfile(t.id)), T = null == I ? true : I.application, C = (0, f.Z)({
     user: t,
     guildId: n,
     location: S,
@@ -93,7 +93,7 @@ function y(e) {
       action: "COPY_APP_ID",
       analyticsLocations: v
     })
-  }), R = [
+  }), w = [
     [E],
     [A, C, N],
     [(0, c.Z)({
@@ -105,7 +105,7 @@ function y(e) {
       })
     }), P]
   ];
-  return R.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return w.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: y,
     renderPopout: e => {
       let {
@@ -116,12 +116,12 @@ function y(e) {
         onSelect: true,
         onClose: t,
         "aria-label": g.intl.string(g.t.AXIHpV),
-        children: R.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: w.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })
     },
-    children: e => (0, r.jsx)(h.oY, b({
+    children: e => (0, r.jsx)(m.oY, b({
       buttonRef: y,
       action: "PRESS_OPTIONS",
       icon: o.xhG,

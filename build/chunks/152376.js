@@ -6,7 +6,7 @@ require.d(exports, {
   Mo: () => A,
   QG: () => N,
   XQ: () => S,
-  _U: () => w,
+  _U: () => R,
   dM: () => P,
   k$: () => I
 }), require("./388685.js");
@@ -71,7 +71,7 @@ function S(e, t, n, r) {
   if (u.Z.isFullServerPreview(e)) return void(0, c.zS)(e, n ? [t] : [], n ? [] : [t]);
   let a = _.ZP.getChannelIdFlags(e, t);
   n || (a = (0, i.mB)(a, E.ic.FAVORITED, false));
-  let s = (0, h.I)(e, t),
+  let s = (0, m.I)(e, t),
     f = {
       flags: (0, i.mB)(a, E.ic.OPT_IN_ENABLED, n)
     },
@@ -87,14 +87,14 @@ function S(e, t, n, r) {
     guildId: e,
     channelId: t,
     settings: f
-  }), (0, h.jz)({
+  }), (0, m.jz)({
     guildId: e,
     channelId: t,
     change: f,
     previous: s,
-    label: h.UE.optedIn(n),
+    label: m.UE.optedIn(n),
     location: r
-  }), R(e), m.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e), (0, l.v_)(p.Z.getChannel(t))), {
+  }), w(e), h.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e), (0, l.v_)(p.Z.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))
@@ -110,7 +110,7 @@ function I(e, t, n, r) {
   }
   let a = _.ZP.getChannelIdFlags(e, t);
   n || (a = (0, i.mB)(a, E.ic.FAVORITED, false));
-  let s = (0, h.I)(e, t),
+  let s = (0, m.I)(e, t),
     f = {
       flags: (0, i.mB)(a, E.ic.OPT_IN_ENABLED, n)
     };
@@ -130,14 +130,14 @@ function I(e, t, n, r) {
     guildId: e,
     channelId: t,
     settings: f
-  }), (0, h.jz)({
+  }), (0, m.jz)({
     guildId: e,
     channelId: t,
     change: f,
     previous: s,
-    label: h.UE.optedIn(n),
+    label: m.UE.optedIn(n),
     location: r
-  }), R(e), m.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e), (0, l.v_)(p.Z.getChannel(t))), {
+  }), w(e), h.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e), (0, l.v_)(p.Z.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))
@@ -178,11 +178,11 @@ function A(e, t) {
     s.Z.updateGuildAndChannelNotificationSettings(e, {
       flags: t,
       channel_overrides: a
-    }, h.ZB.OptedIn), m.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
+    }, m.ZB.OptedIn), h.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
       action_type: "add_many_and_enable_guild",
       location: r
     }))
-  } else s.Z.updateChannelOverrideSettingsBulk(e, a, h.ZB.OptedIn), m.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
+  } else s.Z.updateChannelOverrideSettingsBulk(e, a, m.ZB.OptedIn), h.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
     action_type: "add_many",
     location: r
   }))
@@ -195,7 +195,7 @@ function N(e, t, n) {
   let r = _.ZP.getGuildFlags(e);
   s.Z.updateGuildNotificationSettings(e, {
     flags: (0, i.mB)(r, E.vc.OPT_IN_CHANNELS_ON, t)
-  }, h.UE.optedIn(t)), m.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
+  }, m.UE.optedIn(t)), h.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
     action_type: t ? "guild_enabled" : "guild_disabled",
     location: n
   }))
@@ -206,17 +206,17 @@ function P(e, t, n, r) {
   let a = _.ZP.getChannelIdFlags(e, t);
   !(0, i.yE)(a, E.ic.OPT_IN_ENABLED) && n && (a = (0, i.mB)(a, E.ic.OPT_IN_ENABLED, true)), s.Z.updateChannelOverrideSettings(e, t, {
     flags: (0, i.mB)(a, E.ic.FAVORITED, n)
-  }, h.UE.favorited(n)), m.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
+  }, m.UE.favorited(n)), h.default.track(g.rMx.CHANNEL_LIST_UPDATED, v(y({}, (0, l.hH)(e)), {
     action_type: n ? "favorited" : "unfavorited",
     location: r
   }))
 }
 
-function R(e) {
+function w(e) {
   (0, f.PS)(e, e => (!(0, i.yE)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_CLEARED) || !!(0, i.yE)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, i.pj)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, i.mB)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_SHOWN, false), true), f.fy.INFREQUENT_USER_ACTION)
 }
 
-function w(e, t) {
+function R(e, t) {
   o.Z.dispatch({
     type: "DISMISS_FAVORITE_SUGGESTION",
     guildId: e,

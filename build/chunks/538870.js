@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   _: () => g,
-  h: () => h
+  h: () => m
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -18,10 +18,10 @@ let s = 0,
   p = 2,
   _ = "inset 0 0 0 2px var(--yellow-360), inset 0 0 0 3px var(--background-base-lower)";
 
-function m(e, t) {
+function h(e, t) {
   return t / (1 + Math.exp(-u * (e - d)))
 }
-var h = function(e) {
+var m = function(e) {
   return e.BOTH = "BOTH", e.INSET_ONLY = "INSET_ONLY", e.OUTSET_ONLY = "OUTSET_ONLY", e
 }({});
 
@@ -31,7 +31,7 @@ function g(e) {
     isLatched: n,
     voiceDb: u,
     spreadDirection: d = "BOTH",
-    maxOuterSpreadRadius: h = f,
+    maxOuterSpreadRadius: m = f,
     maxInnerSpreadRadius: g = p,
     hideIfVolumeMissing: E = false
   } = e, {
@@ -48,8 +48,8 @@ function g(e) {
       let t = s,
         n = l,
         r = c;
-      u !== false / 0 && !b && y && (t = m(u, "INSET_ONLY" === d ? 0 : h), n = m(u, "OUTSET_ONLY" === d ? 0 : g), r = "OUTSET_ONLY" === d ? 0 : n + 1), e.boxShadow = ["0 0 0 ".concat(t, "px var(--status-speaking)"), "inset 0 0 0 ".concat(n, "px var(--status-speaking)"), "inset 0 0 0 ".concat(r, "px var(--background-base-lower)")].join(", ")
+      u !== false / 0 && !b && y && (t = h(u, "INSET_ONLY" === d ? 0 : m), n = h(u, "OUTSET_ONLY" === d ? 0 : g), r = "OUTSET_ONLY" === d ? 0 : n + 1), e.boxShadow = ["0 0 0 ".concat(t, "px var(--status-speaking)"), "inset 0 0 0 ".concat(n, "px var(--status-speaking)"), "inset 0 0 0 ".concat(r, "px var(--background-base-lower)")].join(", ")
     } else n && (e.boxShadow = _);
     return y && (e.transition = "box-shadow 50ms ease-out"), e
-  }, [t, n, y, b, u, d, h, g, E])
+  }, [t, n, y, b, u, d, m, g, E])
 }

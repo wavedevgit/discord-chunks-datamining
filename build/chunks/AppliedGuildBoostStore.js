@@ -34,14 +34,14 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     appliedGuildBoosts: t
   } = e;
   u = false, c = t
 }
 
-function h(e) {
+function m(e) {
   let {
     endsAt: t
   } = e;
@@ -115,8 +115,8 @@ class S extends(r = Chunk442837.ZP.Store) {
 o(S, "displayName", "AppliedGuildBoostStore");
 let I = new S(Chunk570140.Z, {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: _,
-  USER_APPLIED_BOOSTS_FETCH_SUCCESS: m,
-  APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: h,
+  USER_APPLIED_BOOSTS_FETCH_SUCCESS: h,
+  APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: m,
   GUILD_UNAPPLY_BOOST_START: g,
   GUILD_APPLY_BOOST_START: g,
   GUILD_APPLY_BOOST_SUCCESS: E,

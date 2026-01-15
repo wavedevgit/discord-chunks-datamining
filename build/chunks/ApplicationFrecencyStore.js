@@ -24,7 +24,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ function I(e) {
 function T() {
   var e, t;
   let n = null != (t = null == (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) ? true : e.applications) ? t : {};
-  y.overwriteHistory(a().mapValues(n, e => g(m({}, e), {
+  y.overwriteHistory(a().mapValues(n, e => g(h({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), b.pendingUsages)
 }

@@ -5,8 +5,8 @@ require.d(exports, {
   Dv: () => _,
   G2: () => y,
   IG: () => E,
-  NG: () => h,
-  OV: () => m,
+  NG: () => m,
+  OV: () => h,
   fW: () => O,
   lB: () => b,
   mA: () => g
@@ -81,11 +81,11 @@ let _ = {
   SQUARE: ""
 };
 
-function m(e) {
+function h(e) {
   return e < 10 ? 16 : e < 100 ? 22 : 30
 }
 
-function h(e) {
+function m(e) {
   return e < 1e3 ? "".concat(e) : "".concat(Math.min(Math.floor(e / 1e3), 9), "k+")
 }
 let g = e => {
@@ -96,13 +96,13 @@ let g = e => {
       shape: l = _.ROUND,
       className: u,
       style: p,
-      renderBadgeCount: g = h
+      renderBadgeCount: g = m
     } = e, E = f(e, ["count", "color", "disableColor", "shape", "className", "style", "renderBadgeCount"]);
     return (0, r.jsx)("div", d(c({
       className: a()(u, s.numberBadge, l),
       style: c({
         backgroundColor: i ? true : n,
-        width: m(t)
+        width: h(t)
       }, p)
     }, E), {
       children: g(t)
@@ -116,13 +116,13 @@ let g = e => {
       shape: l = _.ROUND,
       disableColor: u = false,
       style: p
-    } = e, m = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
+    } = e, h = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", d(c({
       className: a()(n, s.textBadge, l),
       style: c({
         backgroundColor: u ? true : i
       }, p)
-    }, m), {
+    }, h), {
       children: t
     }))
   },

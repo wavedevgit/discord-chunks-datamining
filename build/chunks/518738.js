@@ -41,10 +41,10 @@ function c(e) {
   } = (0, i.cj)([o.Z, a.Z], () => ({
     guild: null == d ? o.Z.getGuild(t) : true,
     role: null == u && null != n ? a.Z.getRole(t, n) : true
-  }), [t, n, u, d]), _ = null != d ? d : f, m = null != u ? u : p;
+  }), [t, n, u, d]), _ = null != d ? d : f, h = null != u ? u : p;
   return r.useMemo(() => {
-    if (null != _ && null != m && (0, s._b)(_, m)) return l(m, c)
-  }, [_, m, c])
+    if (null != _ && null != h && (0, s._b)(_, h)) return l(h, c)
+  }, [_, h, c])
 }
 
 function u(e, t) {

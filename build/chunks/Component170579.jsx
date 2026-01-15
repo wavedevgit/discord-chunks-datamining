@@ -30,11 +30,11 @@ function b(e, t) {
     i = (0, p.T4)(n.amount, n.currency);
   if (t) return i;
   switch (r) {
-    case h.rV.MONTH:
+    case m.rV.MONTH:
       return g.intl.formatToPlainString(g.t.AbOLNu, {
         price: i
       });
-    case h.rV.YEAR:
+    case m.rV.YEAR:
       return g.intl.formatToPlainString(g.t["rS8FA+"], {
         price: i
       })
@@ -44,7 +44,7 @@ let y = e => {
     let {
       isTier0: t,
       discountAmount: n
-    } = e, i = (0, m.N)(), s = null != i && i.trial_id === h.a7, l = g.intl.string(g.t.IBYG5U);
+    } = e, i = (0, h.N)(), s = null != i && i.trial_id === m.a7, l = g.intl.string(g.t.IBYG5U);
     return true !== n ? l = g.intl.formatToPlainString(g.t.iiLbvu, {
       percent: n
     }) : s && (l = g.intl.string(g.t.gtNqJQ)), (0, r.jsx)("div", {
@@ -64,7 +64,7 @@ let y = e => {
         hideCloseButton: i = false,
         hideCloseOnFullScreen: f,
         shouldShowPrice: p,
-        plan: m,
+        plan: h,
         renderAnimation: g,
         onClose: O,
         isGift: v,
@@ -73,8 +73,8 @@ let y = e => {
         showTrialBadge: T = false,
         showDiscountBadge: C = false
       } = e,
-      A = S === h.PremiumTypes.TIER_2;
-    n = S === h.PremiumTypes.TIER_0 ? c.Z : S === h.PremiumTypes.TIER_1 ? u.Z : l.Z;
+      A = S === m.PremiumTypes.TIER_2;
+    n = S === m.PremiumTypes.TIER_0 ? c.Z : S === m.PremiumTypes.TIER_1 ? u.Z : l.Z;
     let N = (0, _.N)(),
       P = null == N || null == (t = N.discount) ? true : t.amount;
     return (0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ let y = e => {
               [E.nonTier2]: !A
             })
           }), (T || C) && (0, r.jsx)(y, {
-            isTier0: S === h.PremiumTypes.TIER_0,
+            isTier0: S === m.PremiumTypes.TIER_0,
             discountAmount: C ? P : true
           })]
         }), !i && (0, r.jsx)(o.olH, {
@@ -104,9 +104,9 @@ let y = e => {
           onClick: O,
           className: E.closeButton
         })]
-      }), p && null != m ? (0, r.jsx)("div", {
+      }), p && null != h ? (0, r.jsx)("div", {
         className: E.price,
-        children: b(m, v)
+        children: b(h, v)
       }) : null]
     })
   }

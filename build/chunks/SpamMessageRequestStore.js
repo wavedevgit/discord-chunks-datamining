@@ -55,23 +55,23 @@ function _(e) {
   for (let e of t) u(e)
 }
 
-function m(e) {
+function h(e) {
   let {
     channel: t
   } = e, n = false;
   return o.has(t.id) && (o.delete(t.id), n = true), n
 }
-class h extends Chunk750041.Z {
+class m extends Chunk750041.Z {
   initialize() {
     this.waitFor(r.Z)
   }
   loadCache() {
-    let e = this.readSnapshot(h.LATEST_SNAPSHOT_VERSION);
+    let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
     null != e && (o = new Set(e))
   }
   takeSnapshot() {
     return {
-      version: h.LATEST_SNAPSHOT_VERSION,
+      version: m.LATEST_SNAPSHOT_VERSION,
       data: Array.from(o)
     }
   }
@@ -97,10 +97,10 @@ class h extends Chunk750041.Z {
       CACHE_LOADED_LAZY: () => this.loadCache(),
       CHANNEL_CREATE: p,
       CHANNEL_UPDATES: _,
-      CHANNEL_DELETE: m,
+      CHANNEL_DELETE: h,
       MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: f
     })
   }
 }
-a(h, "displayName", "SpamMessageRequestStore"), a(h, "LATEST_SNAPSHOT_VERSION", 1);
-let g = new h
+a(m, "displayName", "SpamMessageRequestStore"), a(m, "LATEST_SNAPSHOT_VERSION", 1);
+let g = new m

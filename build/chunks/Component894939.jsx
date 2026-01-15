@@ -56,7 +56,7 @@ function N() {
 function P() {
   let {
     analyticsLocations: e
-  } = (0, l.ZP)(), [t, n] = i.useState(I.hY), s = (0, m.tT)(t), d = A(s), E = (null == s ? true : s.type) === m.zx.GLOBAL, y = (0, a.e7)([p.Z], () => p.Z.hasFetchedAllSounds()) && null != s && null == d;
+  } = (0, l.ZP)(), [t, n] = i.useState(I.hY), s = (0, h.tT)(t), d = A(s), E = (null == s ? true : s.type) === h.zx.GLOBAL, y = (0, a.e7)([p.Z], () => p.Z.hasFetchedAllSounds()) && null != s && null == d;
   i.useEffect(() => {
     y && (0, _.tt)({
       location: e
@@ -68,7 +68,7 @@ function P() {
     let {
       inDropdown: n
     } = t;
-    return null == e ? null : n ? (0, r.jsx)(R, {
+    return null == e ? null : n ? (0, r.jsx)(w, {
       guildId: e.value
     }) : null
   }, []);
@@ -98,7 +98,7 @@ function P() {
             className: C.nitroWheel
           })
         }),
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(m.Z, {
           sound: d,
           isGlobal: E,
           onSelect: n => {
@@ -114,7 +114,7 @@ function P() {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([E.Z], () => {

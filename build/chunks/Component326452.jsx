@@ -59,14 +59,14 @@ function u(e) {
     disabled: f = false,
     onChange: p,
     onBlur: _,
-    onFocus: m,
-    autoComplete: h,
+    onFocus: h,
+    autoComplete: m,
     inputProps: g,
     "aria-label": E = a.intl.string(a.t["5h0QOP"]),
     ref: b
   } = e;
   return (0, r.jsx)(i.oil, c(s({}, g), {
-    onFocus: m,
+    onFocus: h,
     onBlur: _,
     value: t,
     onChange: p,
@@ -74,7 +74,7 @@ function u(e) {
     placeholder: l,
     disabled: f,
     autoFocus: n,
-    autoComplete: h,
+    autoComplete: m,
     "aria-label": E,
     inputRef: b,
     leading: i._Ve,

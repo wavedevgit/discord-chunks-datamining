@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,7 +78,7 @@ class b extends(r = Chunk473749.PureComponent) {
         isWindowFocused: n
       } = e,
       r = g(e, ["appContext", "isWindowFocused"]);
-    return (0, i.jsx)(c.ZP, h(_({}, r), {
+    return (0, i.jsx)(c.ZP, m(_({}, r), {
       onZoom: this.onZoom,
       onMouseEnter: this.onMouseEnter,
       shouldAnimate: n
@@ -118,8 +118,8 @@ class b extends(r = Chunk473749.PureComponent) {
         srcIsAnimated: f,
         children: p,
         shouldHideMediaOptions: _ = false,
-        sourceMetadata: m,
-        analyticsSource: h,
+        sourceMetadata: h,
+        analyticsSource: m,
         contentType: g,
         originalContentType: E
       } = this.props, b = {
@@ -135,14 +135,14 @@ class b extends(r = Chunk473749.PureComponent) {
         srcIsAnimated: f,
         children: p,
         trigger: r,
-        sourceMetadata: m,
+        sourceMetadata: h,
         original: null != s ? s : a
       };
       (0, o.kK)(e.currentTarget) && e.currentTarget.blur(), (0, d.K)({
         onClose: this.onCloseImage,
         items: [b],
         shouldHideMediaOptions: _,
-        location: null != h ? h : "LazyImageZoomable",
+        location: null != m ? m : "LazyImageZoomable",
         contextKey: this.modalContext
       })
     })
@@ -152,7 +152,7 @@ class b extends(r = Chunk473749.PureComponent) {
 function y(e) {
   let t = (0, l.bp)(),
     n = (0, f.n)();
-  return (0, i.jsx)(b, h(_({}, e), {
+  return (0, i.jsx)(b, m(_({}, e), {
     isWindowFocused: n,
     appContext: t
   }))

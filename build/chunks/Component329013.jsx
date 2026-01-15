@@ -38,15 +38,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk830597 = require("./830597.js");
 let L = () => {
     (0, g.Q3)(o.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
-      dismissAction: R.L.PRIMARY,
+      dismissAction: w.L.PRIMARY,
       forceTrack: true
-    }), (0, h.XO)(h.wh.CLIENT_THEMES), (0, N.default)()
+    }), (0, m.XO)(m.wh.CLIENT_THEMES), (0, N.default)()
   },
   j = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, f.ZP)(d.Z.USER_SETTINGS), o = (0, a.e7)([p.Z], () => p.Z.isPreview), s = (null == (t = (0, b.N)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === w.Si.TIER_2, c = (0, E.N)(), u = (0, O.Wp)(c, w.Si.TIER_2), h = (0, A.gN)("UserSettingsAppearanceClientThemes"), g = () => {
+    } = (0, f.ZP)(d.Z.USER_SETTINGS), o = (0, a.e7)([p.Z], () => p.Z.isPreview), s = (null == (t = (0, b.N)()) || null == (e = t.subscription_trial) ? true : e.sku_id) === R.Si.TIER_2, c = (0, E.N)(), u = (0, O.Wp)(c, R.Si.TIER_2), m = (0, A.gN)("UserSettingsAppearanceClientThemes"), g = () => {
       if (!o || s) return null;
       let e = u ? D.intl.formatToPlainString(D.t.bkQ4bH, {
         percent: null == c ? true : c.discount.amount
@@ -58,7 +58,7 @@ let L = () => {
           text: D.intl.string(D.t["E+COuA"]),
           onClick: () => L()
         }), (0, r.jsx)(y.Z, {
-          subscriptionTier: w.Si.TIER_2,
+          subscriptionTier: R.Si.TIER_2,
           defaultTextOverride: e,
           premiumModalAnalyticsLocation: {
             object: P.qAy.BUTTON_CTA,
@@ -70,7 +70,7 @@ let L = () => {
     };
     i.useEffect(() => {
       o && I.default.track(P.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: w.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+        type: R.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
     }, [o, n]);
@@ -86,13 +86,13 @@ let L = () => {
         }), (0, r.jsx)("div", {
           className: x.premiumTier2Divider
         }), (0, r.jsx)(v.ZP, {
-          type: w.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
-          subscriptionTier: w.Si.TIER_2
+          type: R.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
+          subscriptionTier: R.Si.TIER_2
         })]
       }),
       T = (() => {
         let e = (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(m.ZP.Gradient, {
+          children: [(0, r.jsx)(h.ZP.Gradient, {
             disabled: false,
             renderCTAButtons: g
           }), S]
@@ -103,12 +103,12 @@ let L = () => {
         })), e
       })();
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsxs)(m.ZP, {
-        type: m.yH.SETTINGS,
-        children: [(0, r.jsx)(m.ZP.Basic, {
+      children: [(0, r.jsxs)(h.ZP, {
+        type: h.yH.SETTINGS,
+        children: [(0, r.jsx)(h.ZP.Basic, {
           className: x.basicThemeSelectors
         }), (0, r.jsx)(M, {}), (0, r.jsx)(_.Z, {}), T]
-      }), !h && (0, r.jsx)(l.izJ, {
+      }), !m && (0, r.jsx)(l.izJ, {
         className: x.divider
       })]
     })

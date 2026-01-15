@@ -89,8 +89,8 @@ function T(e) {
       caretConfig: P = {
         align: "center"
       },
-      badge: R,
-      textLink: w,
+      badge: w,
+      textLink: R,
       onWatchVideo: D,
       onRequestClose: x,
       popoverRef: L,
@@ -110,7 +110,7 @@ function T(e) {
   }), [T, O]);
   i.useEffect(() => {
     var e, t;
-    null != Z.current && (!k.enabled && G ? null == (e = Z.current) || e.play().catch(m.dG) : null == (t = Z.current) || t.pause())
+    null != Z.current && (!k.enabled && G ? null == (e = Z.current) || e.play().catch(h.dG) : null == (t = Z.current) || t.pause())
   }, [G, k.enabled]);
   let V = i.useCallback(() => {
       null !== Z.current && Z.current.pause(), null == x || x()
@@ -148,7 +148,7 @@ function T(e) {
         children: (0, r.jsx)(s.JM1, {
           playing: false,
           size: "sm",
-          "aria-label": g.intl.string(h.default.YpT3kk),
+          "aria-label": g.intl.string(m.default.YpT3kk),
           onClick: Y
         })
       })]
@@ -178,8 +178,8 @@ function T(e) {
       }), (0, r.jsx)(p.Y, {
         title: O,
         body: I,
-        badge: R,
-        textLink: w
+        badge: w,
+        textLink: R
       }), null != N ? (0, r.jsx)(d.k, {
         actions: [N]
       }) : null]

@@ -2,7 +2,7 @@
 /** chunk id: 375954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eh
+  Z: () => em
 }), require("./388685.js"), require("./997841.js"), require("./539854.js"), require("./583741.js"), require("./358797.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -229,7 +229,7 @@ function X(e) {
     n = e.message.channel_id,
     r = u.Z.getOrCreate(n);
   if (null == r || !r.has(t)) returnfalse;
-  r = r.update(t, t => (0, h.wi)(t, e.message)), u.Z.commit(r)
+  r = r.update(t, t => (0, m.wi)(t, e.message)), u.Z.commit(r)
 }
 
 function J(e) {
@@ -313,7 +313,7 @@ function es(e) {
   if (null == i) returnfalse;
   i = i.update(n, e => {
     var t;
-    return e.addReactionBatch(r, null == (t = w.default.getCurrentUser()) ? true : t.id)
+    return e.addReactionBatch(r, null == (t = R.default.getCurrentUser()) ? true : t.id)
   }), u.Z.commit(i)
 }
 
@@ -371,18 +371,18 @@ function ep(e) {
 function e_(e) {
   let {
     message: t
-  } = e, n = w.default.getCurrentUser();
+  } = e, n = R.default.getCurrentUser();
   null != t && null != t.author && null != n && t.author.id === n.id && (M = true)
 }
-class em extends(r = Chunk442837.ZP.Store) {
+class eh extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(O.default, v.Z, S.Z, I.ZP, T.ZP, C.Z, m.Z, b.default, A.Z, N.Z, P.Z, R.Z, w.default), this.syncWith([m.Z], () => {})
+    this.waitFor(O.default, v.Z, S.Z, I.ZP, T.ZP, C.Z, h.Z, b.default, A.Z, N.Z, P.Z, w.Z, R.default), this.syncWith([h.Z], () => {})
   }
   getMessages(e) {
-    if (m.Z.hasViewingRoles()) {
+    if (h.Z.hasViewingRoles()) {
       let t = v.Z.getChannel(e),
         n = null == t ? true : t.getGuildId();
-      if (m.Z.isViewingRoles(n) && !A.Z.can(D.Plq.VIEW_CHANNEL, t)) return new u.Z(e)
+      if (h.Z.isViewingRoles(n) && !A.Z.can(D.Plq.VIEW_CHANNEL, t)) return new u.Z(e)
     }
     return u.Z.getOrCreate(e)
   }
@@ -390,11 +390,11 @@ class em extends(r = Chunk442837.ZP.Store) {
     return u.Z.getOrCreate(e).get(t)
   }
   getLastEditableMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = R.default.getCurrentUser();
     return a()(this.getMessages(e).toArray()).reverse().find(e => (0, g.Z)(e, null == t ? true : t.id))
   }
   getLastChatCommandMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = R.default.getCurrentUser();
     return this.getMessages(e).toArray().reverse().find(e => {
       var n, r;
       return (null == (n = e.interaction) ? true : n.type) === c.B8.APPLICATION_COMMAND && (null == (r = e.interactionData) ? true : r.type) === c.yU.CHAT && e.interaction.user.id === (null == t ? true : t.id)
@@ -404,7 +404,7 @@ class em extends(r = Chunk442837.ZP.Store) {
     return a()(this.getMessages(e).toArray()).reverse().get(0)
   }
   getLastNonCurrentUserMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = R.default.getCurrentUser();
     return a()(this.getMessages(e).toArray()).reverse().find(e => e.author.id !== (null == t ? true : t.id))
   }
   jumpedMessageId(e) {
@@ -431,15 +431,15 @@ class em extends(r = Chunk442837.ZP.Store) {
     return u.Z.getOrCreate(e).loadingMore
   }
   hasCurrentUserSentMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = R.default.getCurrentUser();
     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? true : t.id))
   }
   hasCurrentUserSentMessageSinceAppStart() {
     return M
   }
 }
-x(em, "displayName", "MessageStore");
-let eh = new em(Chunk570140.Z, {
+x(eh, "displayName", "MessageStore");
+let em = new eh(Chunk570140.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
   CONNECTION_OPEN: k,
   OVERLAY_INITIALIZE: k,

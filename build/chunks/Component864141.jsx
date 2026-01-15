@@ -39,18 +39,18 @@ function N(e) {
     className: N,
     onClose: P
   } = e, {
-    themeType: R
+    themeType: w
   } = (0, g.z)(), {
-    analyticsLocations: w
-  } = (0, u.ZP)(c.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), D = (0, m.Z)({
+    analyticsLocations: R
+  } = (0, u.ZP)(c.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), D = (0, h.Z)({
     display: "voice",
     activity: {
       type: "VOICE"
     },
     voiceChannelId: i.id,
     user: t,
-    analyticsLocations: w
-  }), x = (0, h.Z)({
+    analyticsLocations: R
+  }), x = (0, m.Z)({
     userId: t.id,
     onAction: D
   }), L = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), j = (0, _.Z)(i), M = (0, d.ZP)(i), {
@@ -75,7 +75,7 @@ function N(e) {
     })
   }), Z = i.isDM() || i.isGroupDM() ? C.intl.string(C.t["9FaEzi"]) : i.isGuildStageVoice() ? C.intl.string(C.t.QygGCN) : C.intl.string(C.t.msxteM);
   return (0, r.jsx)(u.Gt, {
-    value: w,
+    value: R,
     children: (0, r.jsxs)(E.Z, {
       ref: x,
       className: a()(A.card, N),
@@ -108,10 +108,10 @@ function N(e) {
               voiceChannel: i,
               onAction: D,
               onClose: P
-            }), R === T.l.MODAL_V2 && G()]
-          }), R === T.l.MODAL && G()]
+            }), w === T.l.MODAL_V2 && G()]
+          }), w === T.l.MODAL && G()]
         })
-      }), R !== T.l.MODAL && R !== T.l.MODAL_V2 && G()]
+      }), w !== T.l.MODAL && w !== T.l.MODAL_V2 && G()]
     })
   })
 }

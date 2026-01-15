@@ -20,9 +20,9 @@ module.exports = function(e, t, n, s) {
     if (u && d[2]) {
       if (true === p && !(f in e)) returnfalse
     } else {
-      var m = new r;
-      if (s) var h = s(p, _, f, e, t, m);
-      if (!(true === h ? i(_, p, a | o, s, m) : h)) returnfalse
+      var h = new r;
+      if (s) var m = s(p, _, f, e, t, h);
+      if (!(true === m ? i(_, p, a | o, s, h) : m)) returnfalse
     }
   }
   returntrue

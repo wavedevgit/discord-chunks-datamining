@@ -19,7 +19,7 @@ function d(e, t, n) {
   let r = i.Z.getByteOrder(e, t),
     a = f(e, t, r, n);
   return {
-    tags: a = m(a = _(a = p(a, e, t, r, n), e, t, r, n), e, t, r, n),
+    tags: a = h(a = _(a = p(a, e, t, r, n), e, t, r, n), e, t, r, n),
     byteOrder: r
   }
 }
@@ -36,6 +36,6 @@ function _(e, t, n, i, s) {
   return true !== e[l] ? (0, r.wB)(e, (0, o.N)(t, a.C9, n, n + e[l].value, i, s)) : e
 }
 
-function m(e, t, n, i, s) {
+function h(e, t, n, i, s) {
   return true !== e[c] ? (0, r.wB)(e, (0, o.N)(t, a.$8, n, n + e[c].value, i, s)) : e
 }

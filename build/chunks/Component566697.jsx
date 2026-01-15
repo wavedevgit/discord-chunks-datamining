@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   R: () => P,
-  Z: () => R
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,8 +43,8 @@ let N = {
       guildId: n,
       nameplate: a,
       nameplateData: P,
-      className: R,
-      innerClassName: w,
+      className: w,
+      innerClassName: R,
       isHighlighted: D,
       showStatus: x,
       showPlaceholderUser: L,
@@ -80,7 +80,7 @@ let N = {
         width: null != F ? "".concat(F, "px") : "100%"
       },
       children: (0, r.jsxs)(c.Rny, {
-        className: o()(R, T.nameplatePreview, {
+        className: o()(w, T.nameplatePreview, {
           [T.xsmall]: "xsmall" === G,
           [T.small]: "small" === G,
           [T.large]: "large" === G,
@@ -111,13 +111,13 @@ let N = {
                 contextGuildId: n,
                 className: T.tagChiplet
               }),
-              name: (0, r.jsx)(h.Z, {
+              name: (0, r.jsx)(m.Z, {
                 userName: q,
                 displayNameStyles: J,
-                effectDisplayType: Z ? m.F.PLAIN : m.F.ANIMATED,
+                effectDisplayType: Z ? h.F.PLAIN : h.F.ANIMATED,
                 loop: true
               }),
-              innerClassName: w,
+              innerClassName: R,
               withDisplayNameStyles: null != J
             })
           }) : null, (0, r.jsxs)("div", {
@@ -137,4 +137,4 @@ let N = {
       })
     })
   }),
-  R = P
+  w = P

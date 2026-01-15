@@ -53,7 +53,7 @@ function I() {
   } = (0, p.Qb)(), {
     experiments: n,
     overridesInfo: a
-  } = (0, m.sI)(), o = i.useMemo(() => S({}, n, e), [n, e]), s = i.useMemo(() => S({}, a, t), [a, t]), [c, u] = i.useState(""), d = (0, b.Ro)((0, b.Tc)((0, b.Cg)(o), s), c);
+  } = (0, h.sI)(), o = i.useMemo(() => S({}, n, e), [n, e]), s = i.useMemo(() => S({}, a, t), [a, t]), [c, u] = i.useState(""), d = (0, b.Ro)((0, b.Tc)((0, b.Cg)(o), s), c);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.E1j, {
       placeholder: "Search experiments",
@@ -84,9 +84,9 @@ function T(e) {
     experimentId: n,
     overrideInfo: a,
     defaultOpen: p
-  } = e, [m, g] = i.useState(p), [b, v] = i.useState(false), S = i.useCallback(() => {
+  } = e, [h, g] = i.useState(p), [b, v] = i.useState(false), S = i.useCallback(() => {
     g(e => !e)
-  }, []), I = (0, s.e7)([h.default], () => h.default.getId()), T = (0, _.qD)(t, I), C = (0, _.aN)(t, I), A = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.USER, n), e => {
+  }, []), I = (0, s.e7)([m.default], () => m.default.getId()), T = (0, _.qD)(t, I), C = (0, _.aN)(t, I), A = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.USER, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -128,17 +128,17 @@ function T(e) {
       })]
     })
   });
-  if (!m) return (0, r.jsx)("div", {
+  if (!h) return (0, r.jsx)("div", {
     className: O.group,
     children: P
   });
-  let R = "";
-  return R = t.system === u.I.LEGACY ? "Currently assigned to bucket ".concat(null != T ? T : y.NZ.NOT_ELIGIBLE) : null != T ? "Currently assigned to variant ".concat(T) : "Currently unassigned", (0, r.jsxs)("div", {
+  let w = "";
+  return w = t.system === u.I.LEGACY ? "Currently assigned to bucket ".concat(null != T ? T : y.NZ.NOT_ELIGIBLE) : null != T ? "Currently assigned to variant ".concat(T) : "Currently unassigned", (0, r.jsxs)("div", {
     className: O.group,
     children: [P, (0, r.jsx)("div", {
       children: (0, r.jsx)(d.y, {
         label: t.system === u.I.LEGACY ? "Bucket Override" : "Variant Override",
-        description: R,
+        description: w,
         experiment: t,
         experimentId: n,
         overrideInfo: a
@@ -194,9 +194,9 @@ function C(e) {
     experiment: t,
     experimentId: n,
     overrideInfo: a
-  } = e, [c, u] = i.useState(null != a), [p, _] = i.useState(false), m = i.useCallback(() => {
+  } = e, [c, u] = i.useState(null != a), [p, _] = i.useState(false), h = i.useCallback(() => {
     u(e => !e)
-  }, []), h = (0, s.e7)([f.Z], () => f.Z.getLoadedGuildExperiment(n)), E = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.GUILD, n), e => {
+  }, []), m = (0, s.e7)([f.Z], () => f.Z.getLoadedGuildExperiment(n)), E = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.GUILD, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -215,7 +215,7 @@ function C(e) {
     let a = o()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
     return [r.join("\n"), a]
   }), S = (0, r.jsx)(l.P3F, {
-    onClick: m,
+    onClick: h,
     children: (0, r.jsxs)(l.Text, {
       variant: "text-md/medium",
       className: O.title,
@@ -243,7 +243,7 @@ function C(e) {
       overrideInfo: a
     }), (0, r.jsx)("div", {
       className: O.description,
-      children: null == h ? (0, r.jsx)(l.Text, {
+      children: null == m ? (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -264,7 +264,7 @@ function C(e) {
       }), (0, r.jsx)(l.Text, {
         variant: "code",
         className: O.pre,
-        children: null == h ? "None" : JSON.stringify(h, true, 2)
+        children: null == m ? "None" : JSON.stringify(m, true, 2)
       }), (0, r.jsx)(l.Text, {
         variant: "text-lg/medium",
         className: O.debugTitle,

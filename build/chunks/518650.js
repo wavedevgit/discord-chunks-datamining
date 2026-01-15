@@ -33,10 +33,10 @@ function A() {
   let e = r.useRef(0),
     t = r.useRef(true),
     n = (0, g.d)(),
-    i = n === h.p.SUCCESS || n === h.p.ERROR,
+    i = n === m.p.SUCCESS || n === m.p.ERROR,
     [a, o] = r.useState(false);
   return (0, r.useEffect)(() => {
-    C.forEach(n => m.tn.get({
+    C.forEach(n => h.tn.get({
       url: n,
       rejectWithError: true
     }).then(() => {

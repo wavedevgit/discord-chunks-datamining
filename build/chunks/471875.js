@@ -21,8 +21,8 @@ function c(e) {
     f = "<>",
     p = "</>",
     _ = /<[A-Za-z0-9\\._:-]+\s*\/>/,
-    m = /<[A-Za-z0-9\\._:-]+/,
-    h = /\/[A-Za-z0-9\\._:-]+>|\/>/,
+    h = /<[A-Za-z0-9\\._:-]+/,
+    m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
     g = (e, t) => {
       let n, r = e[0].length + e.index,
         i = e.input[r];
@@ -143,12 +143,12 @@ function c(e) {
     keywords: E,
     contains: ["self"].concat(P)
   });
-  let R = [].concat(N, S.contains),
-    w = R.concat([{
+  let w = [].concat(N, S.contains),
+    R = w.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
-      contains: ["self"].concat(R)
+      contains: ["self"].concat(w)
     }]),
     D = {
       className: "params",
@@ -157,7 +157,7 @@ function c(e) {
       excludeBegin: true,
       excludeEnd: true,
       keywords: E,
-      contains: w
+      contains: R
     },
     x = {
       variants: [{
@@ -251,7 +251,7 @@ function c(e) {
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: w,
+      PARAMS_CONTAINS: R,
       CLASS_REFERENCE: L
     },
     illegal: /#(?![$_A-z])/,
@@ -289,7 +289,7 @@ function c(e) {
             excludeBegin: true,
             excludeEnd: true,
             keywords: E,
-            contains: w
+            contains: R
           }]
         }]
       }, {
@@ -305,14 +305,14 @@ function c(e) {
         }, {
           match: _
         }, {
-          begin: m,
+          begin: h,
           "on:begin": g,
-          end: h
+          end: m
         }],
         subLanguage: "xml",
         contains: [{
-          begin: m,
-          end: h,
+          begin: h,
+          end: m,
           skip: true,
           contains: ["self"]
         }]
@@ -372,14 +372,14 @@ module.exports = function(e) {
       begin: /^\s*['"]use strict['"]/
     },
     _ = ["type", "interface", "public", "private", "protected", "implements", "declare", "abstract", "readonly", "enum", "override", "satisfies"],
-    m = {
+    h = {
       $pattern: t,
       keyword: n.concat(_),
       literal: r,
       built_in: l.concat(u),
       "variable.language": s
     },
-    h = {
+    m = {
       className: "meta",
       begin: "@" + o
     },
@@ -388,12 +388,12 @@ module.exports = function(e) {
       if (false === r) throw Error("can not find mode to replace");
       e.contains.splice(r, 1, n)
     };
-  Object.assign(a.keywords, m), a.exports.PARAMS_CONTAINS.push(h);
+  Object.assign(a.keywords, h), a.exports.PARAMS_CONTAINS.push(m);
   let E = a.contains.find(e => "attr" === e.scope),
     b = Object.assign({}, E, {
       match: i.concat(o, i.lookahead(/\s*\?:/))
     });
-  return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, b]), a.contains = a.contains.concat([h, d, f, b]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", p), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
+  return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, b]), a.contains = a.contains.concat([m, d, f, b]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", p), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
     name: "TypeScript",
     aliases: ["ts", "tsx", "mts", "cts"]
   }), a

@@ -2,7 +2,7 @@
 /** chunk id: 857658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => R
+  U: () => w
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -104,34 +104,34 @@ function P(e) {
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
-function R(e) {
+function w(e) {
   let {
     value: t,
     onChange: n,
     className: a,
     colors: o,
     setColors: s
-  } = e, c = (0, m.Z)(), [v, T] = i.useState(0), [C, R] = i.useState(t);
+  } = e, c = (0, h.Z)(), [v, T] = i.useState(0), [C, w] = i.useState(t);
   i.useEffect(() => {
     if (o.length > 0 && v < o.length) {
       let e = o[v];
-      (0, u.FX)(e) && (R(e), n(e))
+      (0, u.FX)(e) && (w(e), n(e))
     }
     v >= o.length && T(0)
   }, [v, o, n]);
-  let w = e => {
+  let R = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
     D = e => {
-      let t = w(e);
-      if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
+      let t = R(e);
+      if (w(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
         let e = [...o];
         e[v] = t, s(e)
       }
     },
     x = i.useCallback(e => {
-      R(e.hex)
+      w(e.hex)
     }, []),
     L = e => {
       if ((0, E.P0)(), n(e.hex), o.length > 0) {
@@ -181,7 +181,7 @@ function R(e) {
         value: C.toUpperCase(),
         onChange: e => D(e.target.value),
         maxLength: 7,
-        placeholder: h.Dp,
+        placeholder: m.Dp,
         type: "text"
       }), (0, r.jsxs)("div", {
         className: O.trailingIcons,

@@ -2,8 +2,8 @@
 /** chunk id: 778787, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
-  q: () => h
+  Z: () => h,
+  q: () => m
 });
 var Chunk587177 = require("./587177.js"),
   Chunk718424 = require("./718424.js"),
@@ -68,7 +68,7 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends Chunk803358.Z {
+class h extends Chunk803358.Z {
   static fromServer(e) {
     var {
       type: t,
@@ -78,7 +78,7 @@ class m extends Chunk803358.Z {
       bundled_products: d,
       variants: _
     } = e, g = p(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
-    return new m(f(u({}, super.fromServer(g)), {
+    return new h(f(u({}, super.fromServer(g)), {
       type: t,
       premiumType: n === l.WND ? null : n,
       categorySkuId: o,
@@ -91,7 +91,7 @@ class m extends Chunk803358.Z {
       prices: (0, a.l)(c),
       items: (0, i.i)(g.items),
       bundledProducts: null == d ? true : d.map(r.Z.fromServer),
-      variants: null == _ ? true : _.map(h.fromServer),
+      variants: null == _ ? true : _.map(m.fromServer),
       googleSkuIds: g.google_sku_ids,
       eligibleOffers: g.eligible_offers
     }))
@@ -100,7 +100,7 @@ class m extends Chunk803358.Z {
     super(e), c(this, "prices", true), c(this, "type", true), c(this, "premiumType", true), c(this, "items", true), c(this, "categorySkuId", true), c(this, "isCategoryReward", true), c(this, "bundledProducts", true), c(this, "variants", true), c(this, "variantGroupStoreListingId", true), c(this, "googleSkuIds", true), c(this, "eligibleOffers", true), this.summary = e.summary, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.isCategoryReward = e.isCategoryReward, this.prices = e.prices, this.bundledProducts = e.bundledProducts, this.googleSkuIds = e.googleSkuIds, this.variants = e.variants, this.eligibleOffers = e.eligibleOffers
   }
 }
-class h extends m {
+class m extends h {
   static fromServer(e) {
     var {
       base_variant_name: t,
@@ -108,7 +108,7 @@ class h extends m {
       variant_label: r,
       variant_value: i
     } = e, a = p(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
-    return new h(f(u({}, super.fromServer(a)), {
+    return new m(f(u({}, super.fromServer(a)), {
       baseVariantName: t,
       baseVariantSkuId: n,
       variantLabel: r,

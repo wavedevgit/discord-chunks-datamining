@@ -28,7 +28,7 @@ function b(e) {
     style: n,
     className: a
   } = (0, _.vP)(), s = (0, l.TH)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
-  (0, h.Z)(window, u);
+  (0, m.Z)(window, u);
   let d = (0, c.e7)([f.Z, p.Z], () => p.Z.getWindowOpen(g.KJ3.DEVTOOLS_POPOUT) ? 0 : f.Z.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
@@ -64,7 +64,7 @@ function O(e) {
     children: t,
     skipsSettingDefaultPageTitle: n
   } = e;
-  (0, m.ZD)({
+  (0, h.ZD)({
     skipsSettingDefaultPageTitle: n
   });
   let {

@@ -87,8 +87,8 @@ require.d(exports, {
   GT: () => E,
   gr: () => g
 });
-var m = 10,
-  h = function() {
+var h = 10,
+  m = function() {
     function e() {
       d(this, e), _(this, "subPriority", 0)
     }
@@ -118,7 +118,7 @@ var m = 10,
         return this.setValue(e, t, this.value, n)
       }
     }]), n
-  }(h),
+  }(m),
   E = function(e) {
     i(n, e);
     var t = o(n);
@@ -127,7 +127,7 @@ var m = 10,
       var e;
       d(this, n);
       for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-      return _(l(e = t.call.apply(t, [this].concat(i))), "priority", m), _(l(e), "subPriority", false), e
+      return _(l(e = t.call.apply(t, [this].concat(i))), "priority", h), _(l(e), "subPriority", false), e
     }
     return p(n, [{
       key: "set",
@@ -137,4 +137,4 @@ var m = 10,
         return n.setFullYear(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate()), n.setHours(e.getUTCHours(), e.getUTCMinutes(), e.getUTCSeconds(), e.getUTCMilliseconds()), n
       }
     }]), n
-  }(h)
+  }(m)

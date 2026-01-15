@@ -2,7 +2,7 @@
 /** chunk id: 319604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CR: () => h,
+  CR: () => m,
   UU: () => _,
   jE: () => p
 }), require("./953529.js"), require("./804061.js"), require("./704826.js"), require("./35282.js");
@@ -55,7 +55,7 @@ let p = e => {
       })
     }]
   },
-  m = e => {
+  h = e => {
     let {
       avatarSrc: t,
       mediaImageSrc: n
@@ -66,7 +66,7 @@ let p = e => {
       MediaImage: n
     })
   },
-  h = async e => {
+  m = async e => {
     let {
       user: t,
       channel: n,
@@ -75,7 +75,7 @@ let p = e => {
       description: s,
       colors: u,
       badges: d
-    } = e, f = m({
+    } = e, f = h({
       avatarSrc: t.getAvatarURL(n.guild_id, 128),
       mediaImageSrc: r
     }), p = i.replaceAll(/[^a-zA-Z0-9 ]/g, "").replaceAll(" ", "-");

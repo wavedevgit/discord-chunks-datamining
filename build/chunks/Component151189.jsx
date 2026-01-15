@@ -23,11 +23,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk430915 = require("./430915.js"),
   Chunk867250 = require("./867250.js");
-let v = () => (0, m.f)(false),
+let v = () => (0, h.f)(false),
   S = e => {
     var t, n, a;
     let {
-      onLearnMore: m
+      onLearnMore: h
     } = e, {
       analyticsLocations: S
     } = (0, c.ZP)(l.Z.PREMIUM_UPSELL);
@@ -54,9 +54,9 @@ let v = () => (0, m.f)(false),
         subscriptionTier: null != (a = null == I || null == (n = I.subscription_trial) ? true : n.sku_id) ? a : E.Si.TIER_2,
         children: C ? b.intl.format(b.t.MAGagw, {
           planName: (0, _.MF)(E.Xh.PREMIUM_MONTH_TIER_0),
-          onClick: m
+          onClick: h
         }) : b.intl.format(b.t.jt7JX6, {
-          onClick: m
+          onClick: h
         })
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
@@ -72,10 +72,10 @@ let v = () => (0, m.f)(false),
           className: y.upsellDescription,
           variant: "text-md/normal",
           children: b.intl.format(b.t.jt7JX6, {
-            onClick: m
+            onClick: h
           })
         })]
-      }), !A && (0, r.jsx)(h.Z, {
+      }), !A && (0, r.jsx)(m.Z, {
         analyticsSection: g.jXE.EXPRESSION_PICKER,
         buttonText: A ? C ? b.intl.string(b.t.hz78hE) : b.intl.string(b.t["Gd/XHF"]) : true
       }), (0, r.jsx)(s.P3F, {

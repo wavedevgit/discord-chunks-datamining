@@ -16,10 +16,10 @@ var Chunk544891 = require("./544891.js"),
 let f = 10 * Chunk70956.Z.Millis.MINUTE,
   p = 10 * Chunk70956.Z.Millis.MINUTE,
   _ = +Chunk70956.Z.Millis.MINUTE,
-  m = {};
+  h = {};
 
-function h(e, t) {
-  null == m[t] && (m[t] = new a.V7), m[t].start(f + Math.random() * p, () => {
+function m(e, t) {
+  null == h[t] && (h[t] = new a.V7), h[t].start(f + Math.random() * p, () => {
     null != l.Z.getLibraryApplication(e, t) && g(e, t)
   })
 }
@@ -61,6 +61,6 @@ async function g(e, t) {
       type: "APPLICATION_BUILD_NOT_FOUND",
       applicationId: e,
       branchId: t
-    }) : h(e, t)
+    }) : m(e, t)
   })
 }

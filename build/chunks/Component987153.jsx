@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk219855 = require("./219855.js"),
   Chunk51766 = require("./51766.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ function y(e) {
     transitionState: n,
     animationVariant: a = "default",
     size: _ = "md",
-    paddingSize: h = "sm",
+    paddingSize: m = "sm",
     fullScreenOnMobile: E = true,
     returnRef: y,
     role: O = "dialog",
@@ -79,7 +79,7 @@ function y(e) {
     headingId: "heading-".concat(N),
     onClose: I,
     dismissable: S
-  }), [S, N, I]), R = (0, p.hv)(n, a), w = i.useRef(null);
+  }), [S, N, I]), w = (0, p.hv)(n, a), R = i.useRef(null);
   return (0, r.jsx)(f.t.Provider, {
     value: P,
     children: (0, r.jsx)(c.V, {
@@ -92,18 +92,18 @@ function y(e) {
         impressionType: null != (t = null == C ? true : C.impressionType) ? t : l.ImpressionTypes.MODAL
       }),
       children: (0, r.jsx)(u.Jc, {
-        containerRef: w,
+        containerRef: R,
         children: (0, r.jsx)(d.y, {
           forceLevel: 1,
           children: (0, r.jsxs)("div", {
-            ref: w,
-            className: o()(m.outerContainer, {
-              [m.fullScreenOnMobile]: E
+            ref: R,
+            className: o()(h.outerContainer, {
+              [h.fullScreenOnMobile]: E
             }),
             children: [T, (0, r.jsx)(s.animated.div, {
               "data-mana-component": "modal",
-              className: o()(m.container, m["size-".concat(_)], m["padding-size-".concat(h)]),
-              style: R,
+              className: o()(h.container, h["size-".concat(_)], h["padding-size-".concat(m)]),
+              style: w,
               children: A
             })]
           })

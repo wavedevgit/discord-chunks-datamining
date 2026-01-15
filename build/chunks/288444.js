@@ -25,15 +25,15 @@ function f(e, t, n) {
 let p = 3,
   _ = 18e4;
 
-function m() {
+function h() {
   let e = c.Z.getCurrentClientVoiceChannelId(null);
   if (null == e) returnfalse;
   let t = l.Z.getChannel(e);
   return !(null == t || !t.isPrivate() || t.recipients.length > 1 || u.ZP.countVoiceStatesForChannel(e) > 1) && null == s.ZP.getSelfEmbeddedActivityForChannel(e)
 }
 
-function h() {
-  if (!m()) return;
+function m() {
+  if (!h()) return;
   let e = c.Z.getCurrentClientVoiceChannelId(null);
   null != e && (i.Z.sendBotMessage(e, d.intl.formatToPlainString(d.t.XYof5G, {
     number: p
@@ -44,10 +44,10 @@ class g extends Chunk147913.Z {
     super(...e), f(this, "idleTimeout", new r.V7), f(this, "handleConnectionClosed", () => {
       this.idleTimeout.stop()
     }), f(this, "handleEmbeddedActivityDisconnect", () => {
-      m() && this.idleTimeout.start(_, h, true)
+      h() && this.idleTimeout.start(_, m, true)
     }), f(this, "handleVoiceStateUpdates", () => {
-      if (!m()) return void this.idleTimeout.stop();
-      this.idleTimeout.start(_, h, false)
+      if (!h()) return void this.idleTimeout.stop();
+      this.idleTimeout.start(_, m, false)
     }), f(this, "actions", {
       VOICE_STATE_UPDATES: this.handleVoiceStateUpdates,
       CONNECTION_CLOSED: this.handleConnectionClosed,

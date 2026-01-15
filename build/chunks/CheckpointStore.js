@@ -44,12 +44,12 @@ let u = {},
   },
   _ = l({}, p);
 
-function m() {
+function h() {
   u = {}, d = 0, f = false
 }
 
-function h() {
-  m(), _ = l({}, p)
+function m() {
+  h(), _ = l({}, p)
 }
 
 function g() {
@@ -88,7 +88,7 @@ class T extends(r = Chunk442837.ZP.PersistedStore) {
     return _
   }
   initialize(e) {
-    m(), null != e && (_ = l({}, _, e))
+    h(), null != e && (_ = l({}, _, e))
   }
   getCheckpointData() {
     return u
@@ -122,5 +122,5 @@ let C = new T(Chunk570140.Z, {
   CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: v,
   CHECKPOINT_AFTER_CLOSED: S,
   CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: I,
-  LOGOUT: h
+  LOGOUT: m
 })

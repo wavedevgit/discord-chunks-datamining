@@ -4,7 +4,7 @@
 require.d(exports, {
   M9: () => N,
   aW: () => D,
-  wu: () => w
+  wu: () => R
 }), require("./388685.js");
 var Chunk997945 = require("./997945.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -42,7 +42,7 @@ function P() {
   }
 }
 
-function R() {
+function w() {
   return [{
     id: r.Ru.BRAND_DARK,
     iconSource: u,
@@ -85,7 +85,7 @@ function R() {
     name: i.intl.string(i.t.ixdjPB)
   }, {
     id: r.Ru.GALAXY,
-    iconSource: h,
+    iconSource: m,
     isPremium: true,
     name: i.intl.string(i.t.cb78Ls)
   }, {
@@ -130,7 +130,7 @@ function R() {
     name: i.intl.string(i.t["9PUXpM"])
   }, {
     id: r.Ru.CONTROLLER,
-    iconSource: m,
+    iconSource: h,
     isPremium: true,
     name: i.intl.string(i.t["4QM2U1"])
   }, {
@@ -156,11 +156,11 @@ function R() {
   }]
 }
 
-function w() {
-  return [P(), ...R()]
+function R() {
+  return [P(), ...w()]
 }
 
 function D(e) {
-  let t = w().find(t => t.id === e);
+  let t = R().find(t => t.id === e);
   return null != t ? t : P()
 }

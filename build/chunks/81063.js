@@ -19,8 +19,8 @@ let d = "mp",
   f = 36e5,
   p = "https://i.scdn.co/image/",
   _ = (e, t, n) => "https://static-cdn.jtvnw.net/previews-ttv/live_user_".concat(e, "-").concat(t, "x").concat(n, ".jpg"),
-  m = /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
-  h = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
+  h = /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
+  m = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
   g = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
   E = {
     [Chunk981631.ABu.SPOTIFY]: {
@@ -30,12 +30,12 @@ let d = "mp",
     [Chunk981631.ABu.TWITCH]: {
       deserialize: (e, t) => _(encodeURIComponent(e), t[0], t[1]),
       serialize: e => {
-        let t = e.match(m);
+        let t = e.match(h);
         return null != t ? t[1] : null
       }
     },
     [Chunk981631.ABu.YOUTUBE]: {
-      deserialize: e => h(encodeURIComponent(e)),
+      deserialize: e => m(encodeURIComponent(e)),
       serialize: e => {
         let t = e.match(g);
         return null != t ? t[1] : null

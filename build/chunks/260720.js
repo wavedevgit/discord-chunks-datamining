@@ -4,7 +4,7 @@
 require.d(exports, {
   QL: () => E,
   x9: () => g,
-  xf: () => h
+  xf: () => m
 });
 var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
@@ -18,14 +18,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
-let m = (e, t) => {
+let h = (e, t) => {
     var n;
     if (null == t) return null;
     let r = null == (n = t.recipients) ? true : n.find(t => t !== e.id),
       i = o.default.getUser(r);
     return null == i ? null : (0, l.XM)(i)
   },
-  h = e => {
+  m = e => {
     let t, n, {
         sender: r,
         channel: o,
@@ -34,7 +34,7 @@ let m = (e, t) => {
       } = e,
       u = (0, d.sO)();
     if (s) {
-      let e = m(r, o);
+      let e = h(r, o);
       if (null == e) return null;
       let s = _.intl.format(p.default.MkcFjx, {
         receiverName: e,

@@ -84,14 +84,14 @@ let T = function(e) {
       backgroundSrc: A,
       userId: N,
       guildId: P,
-      pulseSpeakingIndicator: R = false,
-      speaking: w = false
+      pulseSpeakingIndicator: w = false,
+      speaking: R = false
     } = e,
     D = S(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]);
   let x = null != A ? A : C,
     L = (0, c.ZP)(x, s.Z.unsafe_rawColors.PRIMARY_800.css),
-    j = (0, f.ZP)(null != N ? N : h.lds, P),
-    M = null != (b = (0, d.V3)(null == j || null == (t = j.themeColors) ? true : t[0])) ? b : h.BRd.DARK,
+    j = (0, f.ZP)(null != N ? N : m.lds, P),
+    M = null != (b = (0, d.V3)(null == j || null == (t = j.themeColors) ? true : t[0])) ? b : m.BRd.DARK,
     {
       profileThemeStyle: k,
       profileThemeClassName: U
@@ -103,7 +103,7 @@ let T = function(e) {
     }),
     {
       useProfileColors: G
-    } = (0, m.$i)("VideoBackground-web");
+    } = (0, h.$i)("VideoBackground-web");
   if (i.useEffect(() => {
       null != N && G && (0, _.Z)(N, true, {
         guildId: P,
@@ -122,8 +122,8 @@ let T = function(e) {
     className: o()(E.background, {
       [U]: G
     }),
-    children: R ? (0, r.jsx)(u.Z, {
-      shouldAnimate: w,
+    children: w ? (0, r.jsx)(u.Z, {
+      shouldAnimate: R,
       children: Z
     }) : Z
   })

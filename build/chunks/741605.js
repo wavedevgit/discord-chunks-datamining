@@ -48,14 +48,14 @@ function l(e, t, n, r) {
     } = o(e, t, n, r),
     p = new Uint8Array(4),
     _ = (0, a.GL)(p),
-    m = new Uint8Array(d.outputLen);
+    h = new Uint8Array(d.outputLen);
   for (let e = 1, t = 0; t < c; e++, t += d.outputLen) {
     let n = u.subarray(t, t + d.outputLen);
-    _.setInt32(0, e, false), (i = f._cloneInto(i)).update(p).digestInto(m), n.set(m.subarray(0, n.length));
+    _.setInt32(0, e, false), (i = f._cloneInto(i)).update(p).digestInto(h), n.set(h.subarray(0, n.length));
     for (let e = 1; e < l; e++) {
-      d._cloneInto(i).update(m).digestInto(m);
-      for (let e = 0; e < n.length; e++) n[e] ^= m[e]
+      d._cloneInto(i).update(h).digestInto(h);
+      for (let e = 0; e < n.length; e++) n[e] ^= h[e]
     }
   }
-  return s(d, f, u, i, m)
+  return s(d, f, u, i, h)
 }

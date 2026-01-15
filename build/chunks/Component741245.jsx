@@ -18,7 +18,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk60564 = require("./60564.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -152,7 +152,7 @@ class I extends(r = Chunk473749.PureComponent) {
     switch (e) {
       case "GUILD_BOOST_APPLIED":
         return (0, i.jsx)("svg", {
-          className: m.svgBorder,
+          className: h.svgBorder,
           width: "304",
           height: "48",
           viewBox: "0 0 304 48",
@@ -169,7 +169,7 @@ class I extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_PAYMENT_STARTED":
         return (0, i.jsx)("svg", {
-          className: m.svgBorder,
+          className: h.svgBorder,
           width: "156",
           height: "48",
           viewBox: "0 0 156 48",
@@ -187,7 +187,7 @@ class I extends(r = Chunk473749.PureComponent) {
       case "PREMIUM_ACTIVATED":
       case "PREMIUM_UPGRADED":
         return (0, i.jsx)("svg", {
-          className: m.svgBorder,
+          className: h.svgBorder,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -204,7 +204,7 @@ class I extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_UPDATED":
         return (0, i.jsx)("svg", {
-          className: m.svgBorder,
+          className: h.svgBorder,
           width: "276",
           height: "48",
           viewBox: "0 0 276 48",
@@ -230,7 +230,7 @@ class I extends(r = Chunk473749.PureComponent) {
     switch (e) {
       case "GUILD_BOOST_APPLIED":
         return (0, i.jsx)("svg", {
-          className: m.svgCopy,
+          className: h.svgCopy,
           width: "304",
           height: "48",
           viewBox: "0 0 304 48",
@@ -269,7 +269,7 @@ class I extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_PAYMENT_STARTED":
         return (0, i.jsx)("svg", {
-          className: m.svgCopy,
+          className: h.svgCopy,
           width: "156",
           height: "48",
           viewBox: "0 0 156 48",
@@ -290,7 +290,7 @@ class I extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_ACTIVATED":
         return (0, i.jsx)("svg", {
-          className: m.svgCopy,
+          className: h.svgCopy,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -301,7 +301,7 @@ class I extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_UPGRADED":
         return (0, i.jsx)("svg", {
-          className: m.svgCopy,
+          className: h.svgCopy,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -312,7 +312,7 @@ class I extends(r = Chunk473749.PureComponent) {
         });
       case "PREMIUM_UPDATED":
         return (0, i.jsx)("svg", {
-          className: m.svgCopy,
+          className: h.svgCopy,
           width: "276",
           height: "48",
           viewBox: "0 0 276 48",
@@ -330,19 +330,19 @@ class I extends(r = Chunk473749.PureComponent) {
       className: e
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: s()(m.container, e),
+      className: s()(h.container, e),
       children: [this.renderSvgBorder(), (0, i.jsxs)(l.Z.div, {
-        className: m.animationContainer,
+        className: h.animationContainer,
         style: this.getContainerStyle(),
         children: [(0, i.jsx)(d.ZX5, {
-          className: m.shine,
+          className: h.shine,
           style: this.getShineStyle()
         }), this.renderSvgCopy()]
       })]
     })
   }
   constructor(...e) {
-    super(...e), h(this, "animation", new l.Z.Value(0))
+    super(...e), m(this, "animation", new l.Z.Value(0))
   }
 }
 
@@ -358,4 +358,4 @@ function T(e) {
     flashColor: o
   }))
 }
-h(I, "Types", S), T.Types = S
+m(I, "Types", S), T.Types = S

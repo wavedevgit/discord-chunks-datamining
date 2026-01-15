@@ -21,7 +21,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk981631 = require("./981631.js"),
   Chunk372897 = require("./372897.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ function E(e, t) {
 }
 
 function b(e) {
-  u.default.track(p.rMx.GUILD_ONBOARDING_LOADED, E(h({}, (0, o.hH)(e)), {
+  u.default.track(p.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, o.hH)(e)), {
     has_new_prompts: false,
     number_of_prompts: 0
   }))
@@ -78,7 +78,7 @@ function y(e) {
     let {
       body: n
     } = t, r = (0, f.cf)(n);
-    return a.Z.dispatch(h({
+    return a.Z.dispatch(m({
       type: "GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS",
       guildId: e
     }, r)).then(() => r.prompts)
@@ -96,8 +96,8 @@ async function O(e) {
   let u = d.Z.shouldFetchPrompts(e),
     f = d.Z.getOnboardingPrompts(e);
   if (!u && f.length > 0) return f.every(e => !e.inOnboarding) ? T(e) : a || v(e), Promise.resolve();
-  let m = await y(e);
-  return Array.isArray(m) && m.every(e => !e.inOnboarding) ? (T(e), Promise.resolve()) : (a || v(e), m)
+  let h = await y(e);
+  return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (T(e), Promise.resolve()) : (a || v(e), h)
 }
 
 function v(e) {
@@ -110,10 +110,10 @@ let S = false,
   I = false;
 
 function T(e) {
-  u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(h({}, (0, o.hH)(e)), {
+  u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, o.hH)(e)), {
     step: S,
     required: true
-  })), u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(h({}, (0, o.hH)(e)), {
+  })), u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, o.hH)(e)), {
     step: S,
     skipped: false,
     is_final_step: true,

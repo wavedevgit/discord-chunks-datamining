@@ -27,27 +27,27 @@ function _(e) {
   } = E(e.createCollection);
   return c.createElement(c.Fragment, null, c.createElement(o._G, null, c.createElement(p.Provider, {
     value: n
-  }, e.content)), c.createElement(m, {
+  }, e.content)), c.createElement(h, {
     render: e.children,
     collection: t
   }))
 }
 
-function m({
+function h({
   collection: e,
   render: t
 }) {
   return t(e)
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   let r = (0, u.Av)(),
     i = (0, c.useRef)(r);
   i.current = r;
   let a = (0, c.useCallback)(() => i.current ? n() : t(), [t, n]);
   return (0, d.useSyncExternalStore)(e, a)
 }
-let g = "function" == typeof Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore : h;
+let g = "function" == typeof Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore : m;
 
 function E(e) {
   let [t] = (0, c.useState)(() => new(0, i.BB)((null == e ? true : e()) || new(0, r.Mi)));

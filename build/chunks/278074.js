@@ -109,12 +109,12 @@ function _(e) {
     })
   })
 }
-let m = (e, t) => {
+let h = (e, t) => {
     for (let n of e)
       if (!t(n)) returnfalse;
     returntrue
   },
-  h = (e, t) => {
+  m = (e, t) => {
     for (let [n, r] of e.entries())
       if (!t(r, n)) returnfalse;
     returntrue
@@ -233,8 +233,8 @@ let I = f(b(function(e) {
   A = C(b(v)),
   N = (e, t) => b(n => O(n) && e <= n && t >= n),
   P = e => b(t => O(t) && t < e),
-  R = e => b(t => O(t) && t > e),
-  w = e => b(t => O(t) && t <= e),
+  w = e => b(t => O(t) && t > e),
+  R = e => b(t => O(t) && t <= e),
   D = e => b(t => O(t) && t >= e),
   x = () => b(e => O(e) && Number.isInteger(e)),
   L = () => b(e => O(e) && Number.isFinite(e)),
@@ -243,8 +243,8 @@ let I = f(b(function(e) {
   k = e => Object.assign(f(e), {
     between: (t, n) => k(g(e, N(t, n))),
     lt: t => k(g(e, P(t))),
-    gt: t => k(g(e, R(t))),
-    lte: t => k(g(e, w(t))),
+    gt: t => k(g(e, w(t))),
+    lte: t => k(g(e, R(t))),
     gte: t => k(g(e, D(t))),
     int: () => k(g(e, x())),
     finite: () => k(g(e, L())),
@@ -332,7 +332,7 @@ var X = {
             },
             i = e[0];
           return {
-            matched: m(t, e => l(i, e, r)),
+            matched: h(t, e => l(i, e, r)),
             selections: n
           }
         },
@@ -362,7 +362,7 @@ var X = {
           if (1 === e.length) throw Error(`\`P.map\` wasn't given enough arguments. Expected (key, value), received ${null==(n=e[0])?true:n.toString()}`);
           let [a, o] = e;
           return {
-            matched: h(t, (e, t) => {
+            matched: m(t, (e, t) => {
               let n = l(a, t, i),
                 r = l(o, e, i);
               return n && r
@@ -394,8 +394,8 @@ var X = {
   string: A,
   between: N,
   lt: P,
-  gt: R,
-  lte: w,
+  gt: w,
+  lte: R,
   gte: D,
   int: x,
   finite: L,

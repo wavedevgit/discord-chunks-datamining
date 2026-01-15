@@ -46,13 +46,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -164,16 +164,16 @@ let b = e => {
       componentRef: n,
       ignoreReducedMotion: r = false
     } = e,
-    o = h(e, ["componentRef", "ignoreReducedMotion"]);
+    o = m(e, ["componentRef", "ignoreReducedMotion"]);
   let {
     isWindowFocused: s
   } = (0, u.ZF)(), d = (0, l.C)(), {
     reducedMotion: f
-  } = a.useContext(c.S), _ = f.enabled && !r, g = m(p({}, o), {
+  } = a.useContext(c.S), _ = f.enabled && !r, g = h(p({}, o), {
     isWindowFocused: null != (t = null == s ? true : s()) ? t : d,
     useReducedMotion: _
   });
-  return (0, i.jsx)(E, m(p({}, g), {
+  return (0, i.jsx)(E, h(p({}, g), {
     ref: n
   }))
 }

@@ -36,14 +36,14 @@ function _() {
   return (p[e]++, null == d[n] && (d[n] = new Set), l.ZP.isFavorite(n, e)) ? void d[n].delete(e) : (null == f[n] || !f[n].has(e)) && p[e] > u ? (d[n].add(e), true) : true
 }
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     channelId: n
   } = e;
   return null == f[t] && (f[t] = new Set), f[t].add(n), d[t].delete(n), true
 }
-class h extends(r = Chunk442837.ZP.PersistedStore) {
+class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
     if (this.waitFor(o.Z, s.Z, l.ZP), this.syncWith([s.Z], _), null == e) return;
@@ -69,7 +69,7 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-c(h, "displayName", "FavoritesSuggestionStore"), c(h, "persistKey", "FavoritesSuggestionStore");
-let g = new h(Chunk570140.Z, {
-  DISMISS_FAVORITE_SUGGESTION: m
+c(m, "displayName", "FavoritesSuggestionStore"), c(m, "persistKey", "FavoritesSuggestionStore");
+let g = new m(Chunk570140.Z, {
+  DISMISS_FAVORITE_SUGGESTION: h
 })

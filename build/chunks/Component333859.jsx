@@ -23,14 +23,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk813671 = require("./813671.js");
 let y = () => {
-    (0, d.XO)(d.wh.APP_ICON), (0, m.default)()
+    (0, d.XO)(d.wh.APP_ICON), (0, h.default)()
   },
   O = () => {
     let {
       analyticsLocations: e
     } = (0, l.ZP)(s.Z.USER_SETTINGS), t = (0, i.e7)([c.Z], () => c.Z.isUpsellPreview), n = (0, _.gN)("UserSettingsAppearanceInAppIcon");
     (0, o.ZP)(() => {
-      t && p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+      t && p.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
         type: g.cd.APP_ICON_UPSELL,
         location_stack: e
       })
@@ -45,8 +45,8 @@ let y = () => {
         subscriptionTier: g.Si.TIER_2,
         defaultTextOverride: E.intl.string(E.t.mr4K7D),
         premiumModalAnalyticsLocation: {
-          object: h.qAy.BUTTON_CTA,
-          objectType: h.AnalyticsObjectTypes.BUY
+          object: m.qAy.BUTTON_CTA,
+          objectType: m.AnalyticsObjectTypes.BUY
         },
         fullWidth: true
       }) : null]

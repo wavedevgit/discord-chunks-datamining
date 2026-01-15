@@ -2,7 +2,7 @@
 /** chunk id: 167080, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,21 +61,21 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = e => {
+let m = e => {
   var {
     href: t,
     className: n,
     iconClassName: u,
     rel: f,
-    target: m,
-    mimeType: h,
+    target: h,
+    mimeType: m,
     fileName: g,
     focusProps: E,
     onClick: b
@@ -83,14 +83,14 @@ let h = e => {
   let O = i.useMemo(() => a.X.getDefaultLinkInterceptor(t), [t]),
     v = i.useCallback(e => {
       s.default.track(l.rMx.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
-        attachment_type: null == h ? true : h[0],
-        attachment_subtype: null == h ? true : h[1]
+        attachment_type: null == m ? true : m[0],
+        attachment_subtype: null == m ? true : m[1]
       }), null == b || b(), null == O || O(e)
-    }, [O, h, b]);
+    }, [O, m, b]);
   return null != g ? (0, r.jsx)(o.eee, p(d({
     href: t,
     onClick: v,
-    target: m,
+    target: h,
     rel: f,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbC"]),
@@ -100,7 +100,7 @@ let h = e => {
   })) : (0, r.jsx)(o.eee, p(d({
     href: t,
     onClick: v,
-    target: m,
+    target: h,
     rel: f,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbC"]),

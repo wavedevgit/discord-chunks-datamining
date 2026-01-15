@@ -20,8 +20,8 @@ function p(e) {
 }
 
 function _(e, t, n) {
-  var _, m;
-  let h, g, {
+  var _, h;
+  let m, g, {
       node: E
     } = e,
     b = E.props.allowsSorting,
@@ -45,11 +45,11 @@ function _(e, t, n) {
       focusableProps: S
     } = (0, u.kc)({}, n),
     I = (null == (_ = t.sortDescriptor) ? true : _.column) === E.key,
-    T = null == (m = t.sortDescriptor) ? true : m.direction;
+    T = null == (h = t.sortDescriptor) ? true : h.direction;
   E.props.allowsSorting && !(0, a.Dt)() && (g = I ? T : "none");
   let C = (0, f.q)(p(i.Z), "@react-aria/table");
-  b && (h = `${C.format("sortable")}`, I && T && (0, a.Dt)() && (h = `${h}, ${C.format(T)}`));
-  let A = (0, o.P)(h),
+  b && (m = `${C.format("sortable")}`, I && T && (0, a.Dt)() && (m = `${m}, ${C.format(T)}`));
+  let A = (0, o.P)(m),
     N = 0 === t.collection.size;
   return (0, l.useEffect)(() => {
     N && t.selectionManager.focusedKey === E.key && t.selectionManager.setFocusedKey(null)

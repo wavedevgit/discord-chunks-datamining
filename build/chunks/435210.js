@@ -84,7 +84,7 @@ function p(e, n, r) {
   if (o) return o;
   var s = Object.keys(n),
     l = f(s);
-  if (e.showHidden && (s = Object.getOwnPropertyNames(n)), N(n) && (s.indexOf("message") >= 0 || s.indexOf("description") >= 0)) return m(n);
+  if (e.showHidden && (s = Object.getOwnPropertyNames(n)), N(n) && (s.indexOf("message") >= 0 || s.indexOf("description") >= 0)) return h(n);
   if (0 === s.length) {
     if (P(n)) {
       var c = n.name ? ": " + n.name : "";
@@ -92,16 +92,16 @@ function p(e, n, r) {
     }
     if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     if (A(n)) return e.stylize(Date.prototype.toString.call(n), "date");
-    if (N(n)) return m(n)
+    if (N(n)) return h(n)
   }
   var u = "",
     d = false,
     y = ["{", "}"];
-  if (b(n) && (d = true, y = ["[", "]"]), P(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), A(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + m(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
+  if (b(n) && (d = true, y = ["[", "]"]), P(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), A(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
   if (r < 0)
     if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     else return e.stylize("[Object]", "special");
-  return e.seen.push(n), i = d ? h(e, n, r, l, s) : s.map(function(t) {
+  return e.seen.push(n), i = d ? m(e, n, r, l, s) : s.map(function(t) {
     return g(e, n, r, l, t, d)
   }), e.seen.pop(), E(i, u, y)
 }
@@ -115,11 +115,11 @@ function _(e, t) {
   return v(t) ? e.stylize("" + t, "number") : y(t) ? e.stylize("" + t, "boolean") : O(t) ? e.stylize("null", "null") : true
 }
 
-function m(e) {
+function h(e) {
   return "[" + Error.prototype.toString.call(e) + "]"
 }
 
-function h(e, t, n, r, i) {
+function m(e, t, n, r, i) {
   for (var a = [], o = 0, s = t.length; o < s; ++o) L(t, String(o)) ? a.push(g(e, t, n, r, String(o), true)) : a.push("");
   return i.forEach(function(i) {
     i.match(/^\d+$/) || a.push(g(e, t, n, r, i, true))
@@ -173,7 +173,7 @@ function I(e) {
 }
 
 function T(e) {
-  return C(e) && "[object RegExp]" === R(e)
+  return C(e) && "[object RegExp]" === w(e)
 }
 
 function C(e) {
@@ -181,22 +181,22 @@ function C(e) {
 }
 
 function A(e) {
-  return C(e) && "[object Date]" === R(e)
+  return C(e) && "[object Date]" === w(e)
 }
 
 function N(e) {
-  return C(e) && ("[object Error]" === R(e) || e instanceof Error)
+  return C(e) && ("[object Error]" === w(e) || e instanceof Error)
 }
 
 function P(e) {
   return "function" == typeof e
 }
 
-function R(e) {
+function w(e) {
   return Object.prototype.toString.call(e)
 }
 
-function w(e) {
+function R(e) {
   return e < 10 ? "0" + e.toString(10) : e.toString(10)
 }
 exports.debuglog = function(e) {
@@ -243,7 +243,7 @@ var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "
 
 function x() {
   var e = new Date,
-    t = [w(e.getHours()), w(e.getMinutes()), w(e.getSeconds())].join(":");
+    t = [R(e.getHours()), R(e.getMinutes()), R(e.getSeconds())].join(":");
   return [e.getDate(), D[e.getMonth()], t].join(" ")
 }
 

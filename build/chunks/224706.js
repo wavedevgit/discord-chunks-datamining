@@ -53,7 +53,7 @@ function M(e) {
   if (u) {
     let e = d.Z.getApplication(t);
     if ((null == e ? true : e.deepLinkUri) != null) {
-      let r = "".concat(e.deepLinkUri).concat(w.UWR.GAME_INVITE_FRAGMENT).concat(n);
+      let r = "".concat(e.deepLinkUri).concat(R.UWR.GAME_INVITE_FRAGMENT).concat(n);
       try {
         if (r.startsWith("http")) {
           let e = window.open(r, "_blank");
@@ -77,7 +77,7 @@ function M(e) {
     source: o,
     locationObject: s,
     analyticsLocations: l
-  }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, w.zMe.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, R.zMe.ACTIVITY_JOIN)]))).then(() => {
     c.Z.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -100,7 +100,7 @@ function k(e, t) {
 
 function U(e) {
   return s.tn.post({
-    url: w.ANM.OAUTH2_AUTHORIZE,
+    url: R.ANM.OAUTH2_AUTHORIZE,
     query: {
       client_id: e,
       response_type: "token",
@@ -138,7 +138,7 @@ async function G(e) {
   } = e;
   if (i) {
     let e = d.Z.getApplication(t);
-    return null != e && (0, m.g)(e) ? (await _.Z.launchFrame({
+    return null != e && (0, h.g)(e) ? (await _.Z.launchFrame({
       applicationId: t
     }), 0) : await (0, u.Z)({
       applicationId: t,
@@ -180,7 +180,7 @@ async function G(e) {
       pids: e
     })
   }).catch(e => {
-    R.Z.show(w.kVF.LAUNCH_GAME_FAILURE, x.intl.string(x.t.YZEBdj)), c.Z.dispatch({
+    w.Z.show(R.kVF.LAUNCH_GAME_FAILURE, x.intl.string(x.t.YZEBdj)), c.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: f
@@ -196,7 +196,7 @@ let Z = {
     c.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
       pid: e
-    }), I.default.track(w.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
+    }), I.default.track(R.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
       game_name: t
     })
   },
@@ -207,10 +207,10 @@ let Z = {
       let e = v.Z.getActiveLibraryApplication(i.id);
       if (null != e) {
         let r = e.getFlags(),
-          i = o.yE(r, w.eHb.OVERLAY_DISABLED);
-        t && i !== t && (r = o.x9(r, w.eHb.OVERLAY_DISABLED));
-        let a = o.yE(r, w.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== a && (r = o.x9(r, w.eHb.OVERLAY_V3_DISABLED)), P.h(e.id, e.branchId, r);
+          i = o.yE(r, R.eHb.OVERLAY_DISABLED);
+        t && i !== t && (r = o.x9(r, R.eHb.OVERLAY_DISABLED));
+        let a = o.yE(r, R.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== a && (r = o.x9(r, R.eHb.OVERLAY_V3_DISABLED)), P.h(e.id, e.branchId, r);
         return
       }
     }
@@ -256,7 +256,7 @@ let Z = {
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
       forceFetch: false
     };
-    (0, h.R)(e, {
+    (0, m.R)(e, {
       forceFetch: t
     })
   },
@@ -267,7 +267,7 @@ let Z = {
       c.Z.dispatch({
         type: "GAMES_DATABASE_FETCH"
       }), A.Z.get({
-        url: w.ANM.GAMES_DETECTABLE,
+        url: R.ANM.GAMES_DETECTABLE,
         headers: {
           "If-None-Match": e
         },
@@ -314,7 +314,7 @@ let Z = {
     O.Z.canFetchExecutableBlocklist() && (c.Z.dispatch({
       type: "GAMES_BLOCKLIST_FETCH"
     }), s.tn.get({
-      url: w.ANM.GAMES_BLOCKLIST,
+      url: R.ANM.GAMES_BLOCKLIST,
       oldFormErrors: true,
       rejectWithError: false
     }).then(e => {
@@ -340,7 +340,7 @@ let Z = {
       c.Z.dispatch({
         type: "NON_GAMES_DATABASE_FETCH"
       }), s.tn.get({
-        url: w.ANM.NON_GAMES_DETECTABLE,
+        url: R.ANM.NON_GAMES_DETECTABLE,
         headers: {
           "If-None-Match": e
         },
@@ -390,7 +390,7 @@ let Z = {
       sku: a,
       cleanedExecutable: l
     }), null != l && s.tn.post({
-      url: w.ANM.UNVERIFIED_APPLICATIONS,
+      url: R.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
         os: (0, C.getPlatformName)(),
@@ -421,7 +421,7 @@ let Z = {
   },
   uploadIcon(e, t, n) {
     s.tn.post({
-      url: w.ANM.UNVERIFIED_APPLICATIONS_ICONS,
+      url: R.ANM.UNVERIFIED_APPLICATIONS_ICONS,
       body: {
         application_name: e,
         application_hash: t,

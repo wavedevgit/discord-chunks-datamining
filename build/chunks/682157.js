@@ -56,18 +56,18 @@ module.exports = function(e) {
       keywords: p,
       relevance: 0
     },
-    m = {
+    h = {
       className: "type",
       begin: ":[ \\t]*(" + a.trim().replace(/\s/g, "|") + ")",
       end: "[ \\t]*=",
       excludeEnd: true
     },
-    h = {
+    m = {
       className: "variable",
       keywords: p,
       begin: t,
       relevance: 0,
-      contains: [m, _]
+      contains: [h, _]
     },
     g = n + "\\(",
     E = {
@@ -88,13 +88,13 @@ module.exports = function(e) {
       returnBegin: true,
       keywords: p,
       illegal: "[\\[\\]\\|\\$\\?%,~#@]",
-      contains: [E, _, h, u, c, f]
+      contains: [E, _, m, u, c, f]
     };
   return {
     name: "ISBL",
     case_insensitive: true,
     keywords: p,
     illegal: "\\$|\\?|%|,|;$|~|#|@|</",
-    contains: [b, m, _, h, u, c, f]
+    contains: [b, h, _, m, u, c, f]
   }
 }

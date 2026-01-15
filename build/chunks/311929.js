@@ -4,8 +4,8 @@
 require.d(exports, {
   $E: () => E,
   TS: () => p,
-  Wh: () => m,
-  bk: () => h,
+  Wh: () => h,
+  bk: () => m,
   oI: () => _,
   t8: () => f
 }), require("./388685.js"), require("./49124.js"), require("./415506.js");
@@ -73,14 +73,14 @@ function p(e, t) {
 }
 
 function _(e, t, n) {
-  return (i()(null == t || t[o.O] === e, "Existing record type does not match the expected type"), null != t && E(t, n)) ? t : h(e, n)
-}
-
-function m(e, t) {
-  return "object" == typeof t && null != t && (o.O in t && t[o.O]) === e
+  return (i()(null == t || t[o.O] === e, "Existing record type does not match the expected type"), null != t && E(t, n)) ? t : m(e, n)
 }
 
 function h(e, t) {
+  return "object" == typeof t && null != t && (o.O in t && t[o.O]) === e
+}
+
+function m(e, t) {
   return t[o.O] = e, t
 }
 

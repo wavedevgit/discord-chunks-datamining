@@ -59,11 +59,11 @@ async function _(e) {
   } catch (e) {
     returnfalse
   }
-  return (0, a.C)(n, () => m(p(d({}, e), {
+  return (0, a.C)(n, () => h(p(d({}, e), {
     targetApplication: t
   })))
 }
-async function m(e) {
+async function h(e) {
   let {
     targetApplication: t,
     locationObject: n,
@@ -74,8 +74,8 @@ async function m(e) {
     sectionName: f,
     source: p,
     onExecutedCallback: _,
-    referrerId: m,
-    customId: h,
+    referrerId: h,
+    customId: m,
     inviterUserId: g,
     onConfirmActivityLaunchChecksAlertOpen: E
   } = e, b = (0, c.Z)(), y = i.default.getCurrentUser();
@@ -91,8 +91,8 @@ async function m(e) {
     analyticsLocations: l,
     source: p,
     onExecutedCallback: _,
-    referrerId: m,
-    customId: h,
+    referrerId: h,
+    customId: m,
     inviterUserId: g,
     onConfirmActivityLaunchChecksAlertOpen: E
   }))

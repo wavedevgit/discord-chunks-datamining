@@ -16,8 +16,8 @@ var Chunk48657 = require("./48657.js"),
       d = 6 === e,
       f = 7 === e,
       p = 5 === e || d;
-    return function(_, m, h, g) {
-      for (var E, b, y = o(_), O = a(y), v = s(O), S = r(m, h), I = 0, T = g || l, C = t ? T(_, v) : n || f ? T(_, 0) : true; v > I; I++)
+    return function(_, h, m, g) {
+      for (var E, b, y = o(_), O = a(y), v = s(O), S = r(h, m), I = 0, T = g || l, C = t ? T(_, v) : n || f ? T(_, 0) : true; v > I; I++)
         if ((p || I in O) && (b = S(E = O[I], I, y), e))
           if (t) C[I] = b;
           else if (b) switch (e) {

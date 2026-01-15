@@ -120,14 +120,14 @@ module.exports = function(e) {
         keywords: a
       }]
     },
-    m = {
+    h = {
       match: [/(include|extend)\s+/, i],
       scope: {
         2: "title.class"
       },
       keywords: a
     },
-    h = [u, {
+    m = [u, {
       variants: [{
         match: [/class\s+/, i, /\s+<\s+/, i]
       }, {
@@ -138,7 +138,7 @@ module.exports = function(e) {
         4: "title.class.inherited"
       },
       keywords: a
-    }, m, {
+    }, h, {
       relevance: 0,
       match: [i, /\.new[. (]/],
       scope: {
@@ -209,12 +209,12 @@ module.exports = function(e) {
       }].concat(s, l),
       relevance: 0
     }].concat(s, l);
-  c.contains = h, _.contains = h;
+  c.contains = m, _.contains = m;
   let g = [{
     begin: /^\s*=>/,
     starts: {
       end: "$",
-      contains: h
+      contains: m
     }
   }, {
     className: "meta.prompt",
@@ -222,7 +222,7 @@ module.exports = function(e) {
     starts: {
       end: "$",
       keywords: a,
-      contains: h
+      contains: m
     }
   }];
   return l.unshift(s), {
@@ -232,6 +232,6 @@ module.exports = function(e) {
     illegal: /\/\*/,
     contains: [e.SHEBANG({
       binary: "ruby"
-    })].concat(g).concat(l).concat(h)
+    })].concat(g).concat(l).concat(m)
   }
 }

@@ -137,7 +137,7 @@ module.exports = {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), r.animate(new m(i), e)
+        r.stopTracking(), r.animate(new h(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -150,7 +150,7 @@ module.exports = {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, h, i, e)) : r.animate(new h(i), e)
+        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, m, i, e)) : r.animate(new m(i), e)
       },
       stop: function() {
         t.stopAnimation()

@@ -75,7 +75,7 @@ function P(e) {
       return r.children = (0, u.JM)(""), r.selection = {
         anchor: I.nO,
         focus: I.nO
-      }, R(N(C({}, e), {
+      }, w(N(C({}, e), {
         editor: r,
         windowContext: t,
         previewMarkdown: n
@@ -91,7 +91,7 @@ function P(e) {
   }, [i, n]), i
 }
 
-function R(e) {
+function w(e) {
   var t, n, r;
   let {
     editor: a,
@@ -106,11 +106,11 @@ function R(e) {
     onChangeEnd: A,
     updateState: N
   } = e, P = a, {
-    onChange: R
+    onChange: w
   } = P;
   P.chatInputType = o, P.windowContext = u, P.previewMarkdown = I, P.composition = null, P.events = new i.EventEmitter, P.isMac = "MacIntel" === navigator.platform, P.onChange = () => {
-    P.events.emit("onChange"), R()
-  }, P = (0, y.B)(P, true === T), P = (0, b.Z)(P), P = (0, E.Z)(P), (null == (t = o.commands) ? true : t.enabled) && (P = (0, d.Z)(P, s, true === l, true === c)), P = (0, g.ZP)(P, s.guild_id, s.id), (null == (n = o.markdown) ? true : n.disableBlockQuotes) || (P = (0, f.Z)(P)), (null == (r = o.markdown) ? true : r.disableCodeBlocks) || (P = (0, p.ZP)(P)), T && (P = (0, v.Z)(P)), P = (0, h.Z)(P), P = (0, _.Z)(P), P = (0, O.Z)(P), P = (0, S.Z)(P, C, A), P = (0, m.Z)(P, e => {
+    P.events.emit("onChange"), w()
+  }, P = (0, y.B)(P, true === T), P = (0, b.Z)(P), P = (0, E.Z)(P), (null == (t = o.commands) ? true : t.enabled) && (P = (0, d.Z)(P, s, true === l, true === c)), P = (0, g.ZP)(P, s.guild_id, s.id), (null == (n = o.markdown) ? true : n.disableBlockQuotes) || (P = (0, f.Z)(P)), (null == (r = o.markdown) ? true : r.disableCodeBlocks) || (P = (0, p.ZP)(P)), T && (P = (0, v.Z)(P)), P = (0, m.Z)(P), P = (0, _.Z)(P), P = (0, O.Z)(P), P = (0, S.Z)(P, C, A), P = (0, h.Z)(P, e => {
     let {
       newValue: t,
       newSelection: n

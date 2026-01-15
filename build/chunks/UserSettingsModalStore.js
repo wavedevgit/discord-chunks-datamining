@@ -35,8 +35,8 @@ let u = Chunk981631.QZA.CLOSED,
   f = {},
   p = {},
   _ = {},
-  m = null,
   h = null,
+  m = null,
   g = false,
   E = null,
   b = [],
@@ -50,7 +50,7 @@ function v(e) {
   var t, n, r, i;
   let a = o.default.getCurrentUser();
   if (null == a) return S();
-  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.QZA.OPEN, _ = {}, h = c({}, m = {
+  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.QZA.OPEN, _ = {}, m = c({}, h = {
     [s.oAB.ACCOUNT]: {
       userId: a.id,
       username: a.username,
@@ -65,7 +65,7 @@ function v(e) {
 }
 
 function S() {
-  u = s.QZA.CLOSED, m = null, h = null, d = null, f = {}, p = {}, E = null, b = [], y = null
+  u = s.QZA.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, b = [], y = null
 }
 
 function I(e) {
@@ -91,9 +91,9 @@ function A(e) {
   let {
     settings: t
   } = e;
-  null == h && (h = {});
-  let n = h[s.oAB.ACCOUNT];
-  h[s.oAB.ACCOUNT] = c({}, n, t)
+  null == m && (m = {});
+  let n = m[s.oAB.ACCOUNT];
+  m[s.oAB.ACCOUNT] = c({}, n, t)
 }
 
 function N() {
@@ -102,7 +102,7 @@ function N() {
 
 function P() {
   let e = o.default.getCurrentUser();
-  R(), null != e && (h = c({}, m = {
+  w(), null != e && (m = c({}, h = {
     [s.oAB.ACCOUNT]: {
       userId: e.id,
       username: e.username,
@@ -116,11 +116,11 @@ function P() {
   }))
 }
 
-function R() {
+function w() {
   u = s.QZA.OPEN, _ = {}
 }
 
-function w(e) {
+function R(e) {
   var t;
   if (u !== s.QZA.SUBMITTING) returnfalse;
   u = s.QZA.OPEN, d = s.oAB.ACCOUNT, _ = null != (t = e.errors) ? t : {}
@@ -151,7 +151,7 @@ class D extends(r = Chunk442837.ZP.Store) {
     return u === s.QZA.SUBMITTING
   }
   getSettings() {
-    return h
+    return m
   }
   getOpenWithoutBackstack() {
     return g
@@ -167,11 +167,11 @@ let x = new D(Chunk570140.Z, {
   USER_SETTINGS_MODAL_CLOSE: S,
   LOGOUT: S,
   USER_SETTINGS_MODAL_SUBMIT: N,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: w,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: R,
   USER_SETTINGS_MODAL_SET_SECTION: I,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: C,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: A,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: R,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: w,
   USER_SETTINGS_MODAL_RESET: P
 })

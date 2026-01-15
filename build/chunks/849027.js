@@ -27,7 +27,7 @@ async function v(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, v = g.Z.getGuild(t), S = h.Z.getUnsafeMutableRoles(t);
+  } = e, v = g.Z.getGuild(t), S = m.Z.getUnsafeMutableRoles(t);
   if (null == v && t !== y.ME && n !== O.oC.GAME_SHOP) returnfalse;
   if (null == n) returntrue;
   if ((0, O.AB)(n)) switch (n) {
@@ -62,6 +62,6 @@ async function v(e) {
     default:
       (0, E.vE)(n)
   }
-  let I = m.Z.getChannel(n);
-  return (null != I || (await _.Z.loadThread(n), null != (I = m.Z.getChannel(n)))) && ((0, b.YO)(I) || r.Z.isChannelGatedAndVisible(t, n))
+  let I = h.Z.getChannel(n);
+  return (null != I || (await _.Z.loadThread(n), null != (I = h.Z.getChannel(n)))) && ((0, b.YO)(I) || r.Z.isChannelGatedAndVisible(t, n))
 }

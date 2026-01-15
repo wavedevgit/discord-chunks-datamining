@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,7 +85,7 @@ class b extends Chunk473749.PureComponent {
       tooltipDelay: d,
       size: f = 16,
       badgeColor: _,
-      iconClassName: h,
+      iconClassName: m,
       flowerStarClassName: b
     } = this.props, y = E(e);
     return (0, r.jsx)(s.aML, {
@@ -94,7 +94,7 @@ class b extends Chunk473749.PureComponent {
       delay: d,
       text: y,
       children: s => {
-        if (5 !== e && 4 !== e) return (0, r.jsx)(l.Z, g(m({}, s), {
+        if (5 !== e && 4 !== e) return (0, r.jsx)(l.Z, g(h({}, s), {
           className: o()(n, i),
           flowerStarClassName: b,
           color: _,
@@ -102,7 +102,7 @@ class b extends Chunk473749.PureComponent {
           size: f,
           children: (0, r.jsx)(t, {
             size: "xxs",
-            className: o()(p.icon, h),
+            className: o()(p.icon, m),
             color: "currentColor"
           })
         }));
@@ -111,11 +111,11 @@ class b extends Chunk473749.PureComponent {
             width: f,
             height: f
           };
-          return (0, r.jsx)("div", g(m({}, s), {
+          return (0, r.jsx)("div", g(h({}, s), {
             className: o()(n, i),
             style: e,
             children: (0, r.jsx)(t, {
-              className: o()(p.icon, h),
+              className: o()(p.icon, m),
               color: "currentColor"
             })
           }))

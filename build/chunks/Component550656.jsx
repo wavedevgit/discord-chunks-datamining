@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk725027 = require("./725027.jsx"),
   Chunk464281 = require("./464281.js"),
   Chunk847310 = require("./847310.js");
-let h = 11,
+let m = 11,
   g = ["left", "center", "right"],
   E = ["top", "center", "bottom"];
 
@@ -32,28 +32,28 @@ function b(e) {
     content: v,
     position: S = "top",
     align: I = "center",
-    spacing: T = h,
+    spacing: T = m,
     caretConfig: C,
     layerContext: A,
     animationStyle: N,
     positionKey: P
   } = e, {
-    isRichTooltip: R
-  } = (0, p.nr)(), w = (0, u.E)("Tooltip"), D = i.useMemo(() => ("left" === S || "right" === S ? E : g).includes(I) ? I : "center", [S, I]);
+    isRichTooltip: w
+  } = (0, p.nr)(), R = (0, u.E)("Tooltip"), D = i.useMemo(() => ("left" === S || "right" === S ? E : g).includes(I) ? I : "center", [S, I]);
   if (!n) return null;
   let x = e => {
     var t, n, i, a;
     let {
       position: l,
       nudge: c
-    } = e, u = null != l ? l : S, p = null != (t = null == C ? true : C.align) ? t : null != c && 0 !== c ? "custom" : "center", h = null != (i = null != (n = null == C ? true : C.customOffset) ? n : c) ? i : 0, g = {
+    } = e, u = null != l ? l : S, p = null != (t = null == C ? true : C.align) ? t : null != c && 0 !== c ? "custom" : "center", m = null != (i = null != (n = null == C ? true : C.customOffset) ? n : c) ? i : 0, g = {
       position: null != (a = null == C ? true : C.position) ? a : (0, _.Av)(u),
       align: p,
-      customOffset: "custom" === p ? h : true
+      customOffset: "custom" === p ? m : true
     }, E = (0, r.jsxs)("div", {
       id: O,
-      className: o()(m.tooltip, {
-        [m.richTooltip]: R
+      className: o()(h.tooltip, {
+        [h.richTooltip]: w
       }),
       role: "tooltip",
       "data-position": u,
@@ -61,7 +61,7 @@ function b(e) {
       children: [(0, r.jsx)(f._, {
         caretConfig: g
       }), (0, r.jsx)("div", {
-        className: m.tooltipContent,
+        className: h.tooltipContent,
         children: "string" == typeof v ? (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           children: v
@@ -73,10 +73,10 @@ function b(e) {
       children: E
     }) : E
   };
-  if (w) {
+  if (R) {
     let e = (0, l.a_)(S, I);
     return (0, r.jsx)(l.pS, {
-      className: m.tooltipLayer,
+      className: h.tooltipLayer,
       open: n,
       spacing: T,
       placement: e,

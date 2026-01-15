@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,15 +72,15 @@ function w(e, t) {
 function D() {
   let e = (0, O.nq)(),
     t = (0, O.z8)(),
-    n = (0, h.isWindows)(),
+    n = (0, m.isWindows)(),
     {
       remindersEnabled: a,
       clipsLength: N,
-      clipsQuality: R
+      clipsQuality: w
     } = (0, s.cj)([E.Z], () => E.Z.getSettings()),
     D = (0, s.e7)([E.Z], () => E.Z.getHardwareClassification()),
-    x = (0, s.e7)([m.ZP], () => m.ZP.getKeybindForAction(I.kg4.SAVE_CLIP, true)),
-    L = (0, s.e7)([m.ZP], () => m.ZP.getKeybindForAction(I.kg4.SAVE_SCREENSHOT, true)),
+    x = (0, s.e7)([h.ZP], () => h.ZP.getKeybindForAction(I.kg4.SAVE_CLIP, true)),
+    L = (0, s.e7)([h.ZP], () => h.ZP.getKeybindForAction(I.kg4.SAVE_SCREENSHOT, true)),
     j = (0, y.Z)(_.Z),
     {
       showClipsHeaderEntrypoint: M
@@ -149,12 +149,12 @@ function D() {
       })
     }], [U]),
     B = i.useCallback(e => {
-      u.Z.setKeybind(w(P({}, x), {
+      u.Z.setKeybind(R(P({}, x), {
         shortcut: e
       }))
     }, [x]),
     V = i.useCallback(e => {
-      u.Z.setKeybind(w(P({}, L), {
+      u.Z.setKeybind(R(P({}, L), {
         shortcut: e
       }))
     }, [L]);
@@ -196,20 +196,20 @@ function D() {
     }), (0, r.jsx)(l.y6, {
       onChange: e => v.yi({
         resolution: e,
-        frameRate: R.frameRate
+        frameRate: w.frameRate
       }),
       label: C.intl.string(C.t.aFudZJ),
       description: C.intl.string(C.t.nIrkW5),
-      value: R.resolution,
+      value: w.resolution,
       options: Z
     }), (0, r.jsx)(l.y6, {
       onChange: e => v.yi({
-        resolution: R.resolution,
+        resolution: w.resolution,
         frameRate: e
       }),
       label: C.intl.string(C.t["2wScL1"]),
       description: C.intl.string(C.t["Rf9+fy"]),
-      value: R.frameRate,
+      value: w.frameRate,
       options: F
     }), (0, r.jsx)(c.gNt, {
       label: C.intl.string(C.t.pf54EU),

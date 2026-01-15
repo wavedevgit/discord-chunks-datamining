@@ -39,12 +39,12 @@ function C(e) {
   } = e, [T, P] = i.useState(s), w = (0, c.e7)([b.Z], () => b.Z.getSubscriptionListing(T)), Z = null == w, [R, D] = i.useState(Z), A = null == w ? true : w.subscription_plans[0], L = null != (t = null == w ? true : w.published) && t, k = null != (n = null == w ? true : w.archived) && n, G = !k && !L && true !== w, M = true === w, U = (0, p.mY)(), [B] = x._T(T), [F] = x.mR(T), [H] = x.PK(T), [W] = x.d9(T, 1024), z = "" !== B ? B : O.intl.string(O.t.QWhe9G), V = "" !== B && null != W && "" !== H && null != F && !U, K = x.rU(T), {
     loading: Y,
     error: q,
-    handleCreateOrUpdateFromEditState: J
+    handleCreateOrUpdateFromEditState: X
   } = x.Xo(), {
-    submitting: X,
+    submitting: J,
     error: Q,
     publishSubscriptionListing: $
-  } = (0, m.HQ)(), ee = Y || X;
+  } = (0, m.HQ)(), ee = Y || J;
   return (0, r.jsxs)("div", {
     className: y.container,
     children: [(0, r.jsxs)("div", {
@@ -99,7 +99,7 @@ function C(e) {
           text: O.intl.string(O.t["ETE/oC"])
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
-          onClick: () => J({
+          onClick: () => X({
             guildId: l,
             editStateId: T,
             groupListingId: I,

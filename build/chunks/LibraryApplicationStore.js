@@ -24,7 +24,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,13 +68,13 @@ let y = false,
   C = false;
 
 function A() {
-  l.K.set(E, g(m({}, b()), {
+  l.K.set(E, g(h({}, b()), {
     activeLaunchOptionIds: T
   }))
 }
 
 function N() {
-  l.K.set(E, g(m({}, b()), {
+  l.K.set(E, g(h({}, b()), {
     activeLibraryApplicationBranchIds: I
   }))
 }
@@ -86,11 +86,11 @@ function P(e) {
   }
 }
 
-function R() {
+function w() {
   y = false
 }
 
-function w(e) {
+function R(e) {
   let {
     libraryApplications: t
   } = e;
@@ -163,7 +163,7 @@ function Z(e, t) {
 }
 
 function F() {
-  return m({}, v, O)
+  return h({}, v, O)
 }
 class B extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -229,8 +229,8 @@ class B extends(r = Chunk442837.ZP.Store) {
 }
 _(B, "displayName", "LibraryApplicationStore");
 let V = new B(Chunk570140.Z, {
-  LOGOUT: R,
-  LIBRARY_FETCH_SUCCESS: w,
+  LOGOUT: w,
+  LIBRARY_FETCH_SUCCESS: R,
   SKU_PURCHASE_SUCCESS: D,
   LIBRARY_APPLICATION_FLAGS_UPDATE_START: x,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,

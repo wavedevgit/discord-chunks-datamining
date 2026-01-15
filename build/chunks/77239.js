@@ -12,11 +12,11 @@ var Chunk754793 = require("./754793.js"),
   d = [16, 16, 16, 16, 16, 16, 16, 16, 17, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 19, 20, 20, 20, 20, 21, 21, 21, 21, 16, 72, 78],
   f = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577, 0, 0],
   p = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
-module.exports = function(e, t, n, _, m, h, g, E) {
+module.exports = function(e, t, n, _, h, m, g, E) {
   var b, y, O, v, S, I, T, C, A, N = E.bits,
     P = 0,
-    R = 0,
     w = 0,
+    R = 0,
     D = 0,
     x = 0,
     L = 0,
@@ -31,29 +31,29 @@ module.exports = function(e, t, n, _, m, h, g, E) {
     V = null,
     H = 0;
   for (P = 0; P <= i; P++) F[P] = 0;
-  for (R = 0; R < _; R++) F[t[n + R]]++;
+  for (w = 0; w < _; w++) F[t[n + w]]++;
   for (x = N, D = i; D >= 1 && 0 === F[D]; D--);
-  if (x > D && (x = D), 0 === D) return m[h++] = 0x1400000, m[h++] = 0x1400000, E.bits = 1, 0;
-  for (w = 1; w < D && 0 === F[w]; w++);
-  for (x < w && (x = w), M = 1, P = 1; P <= i; P++)
+  if (x > D && (x = D), 0 === D) return h[m++] = 0x1400000, h[m++] = 0x1400000, E.bits = 1, 0;
+  for (R = 1; R < D && 0 === F[R]; R++);
+  for (x < R && (x = R), M = 1, P = 1; P <= i; P++)
     if (M <<= 1, (M -= F[P]) < 0) return false;
   if (M > 0 && (e === s || 1 !== D)) return false;
   for (P = 1, B[1] = 0; P < i; P++) B[P + 1] = B[P] + F[P];
-  for (R = 0; R < _; R++) 0 !== t[n + R] && (g[B[t[n + R]]++] = R);
-  if (e === s ? (G = V = g, I = 19) : e === l ? (G = u, Z -= 257, V = d, H -= 257, I = 256) : (G = f, V = p, I = false), U = 0, R = 0, P = w, S = h, L = x, j = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > o) return 1;
+  for (w = 0; w < _; w++) 0 !== t[n + w] && (g[B[t[n + w]]++] = w);
+  if (e === s ? (G = V = g, I = 19) : e === l ? (G = u, Z -= 257, V = d, H -= 257, I = 256) : (G = f, V = p, I = false), U = 0, w = 0, P = R, S = m, L = x, j = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > o) return 1;
   for (;;) {
-    T = P - j, g[R] < I ? (C = 0, A = g[R]) : g[R] > I ? (C = V[H + g[R]], A = G[Z + g[R]]) : (C = 96, A = 0), b = 1 << P - j, w = y = 1 << L;
-    do m[S + (U >> j) + (y -= b)] = T << 24 | C << 16 | A; while (0 !== y);
+    T = P - j, g[w] < I ? (C = 0, A = g[w]) : g[w] > I ? (C = V[H + g[w]], A = G[Z + g[w]]) : (C = 96, A = 0), b = 1 << P - j, R = y = 1 << L;
+    do h[S + (U >> j) + (y -= b)] = T << 24 | C << 16 | A; while (0 !== y);
     for (b = 1 << P - 1; U & b;) b >>= 1;
-    if (0 !== b ? (U &= b - 1, U += b) : U = 0, R++, 0 == --F[P]) {
+    if (0 !== b ? (U &= b - 1, U += b) : U = 0, w++, 0 == --F[P]) {
       if (P === D) break;
-      P = t[n + g[R]]
+      P = t[n + g[w]]
     }
     if (P > x && (U & v) !== O) {
-      for (0 === j && (j = x), S += w, M = 1 << (L = P - j); L + j < D && !((M -= F[L + j]) <= 0);) L++, M <<= 1;
+      for (0 === j && (j = x), S += R, M = 1 << (L = P - j); L + j < D && !((M -= F[L + j]) <= 0);) L++, M <<= 1;
       if (k += 1 << L, e === l && k > a || e === c && k > o) return 1;
-      m[O = U & v] = x << 24 | L << 16 | S - h
+      h[O = U & v] = x << 24 | L << 16 | S - m
     }
   }
-  return 0 !== U && (m[S + U] = P - j << 24 | 4194304), E.bits = x, 0
+  return 0 !== U && (h[S + U] = P - j << 24 | 4194304), E.bits = x, 0
 }

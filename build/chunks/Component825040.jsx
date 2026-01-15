@@ -60,7 +60,7 @@ function p(e) {
     className: f
   } = e, p = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
   let _ = i.useRef(null),
-    m = i.useRef({
+    h = i.useRef({
       width: 0,
       height: 0
     });
@@ -75,24 +75,24 @@ function p(e) {
       n && (0, s.rY)(t)
     }
   }, [n]);
-  let h = i.useCallback(() => {
+  let m = i.useCallback(() => {
     var e, t, n, r;
     let {
       width: i,
       height: a
-    } = m.current, o = null != (n = null == (e = _.current) ? true : e.videoWidth) ? n : 0, s = null != (r = null == (t = _.current) ? true : t.videoHeight) ? r : 0;
+    } = h.current, o = null != (n = null == (e = _.current) ? true : e.videoWidth) ? n : 0, s = null != (r = null == (t = _.current) ? true : t.videoHeight) ? r : 0;
     if (i !== o || a !== s) {
       let e = {
         width: o,
         height: s
       };
-      null == c || c(e), m.current = e
+      null == c || c(e), h.current = e
     }
   }, [c]);
   i.useLayoutEffect(() => {
     let e = _.current;
-    if (null != e) return e.addEventListener("resize", h), () => e.removeEventListener("resize", h)
-  }, [h]);
+    if (null != e) return e.addEventListener("resize", m), () => e.removeEventListener("resize", m)
+  }, [m]);
   let g = i.useCallback(() => {
       null == a || a()
     }, [a]),

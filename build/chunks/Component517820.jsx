@@ -178,7 +178,7 @@ function V(e) {
     userId: null == o ? true : o.id,
     guildId: s,
     size: 12
-  }), m = i.useRef(null);
+  }), h = i.useRef(null);
   return (0, r.jsx)(W, {
     compact: a,
     header: (0, r.jsxs)(i.Fragment, {
@@ -201,13 +201,13 @@ function V(e) {
             color: "text-default",
             children: x.intl.string(x.t.qlFrXW)
           }), (0, r.jsx)(S.Z, {
-            targetElementRef: m,
+            targetElementRef: h,
             user: o,
             guildId: s,
             channelId: n.channel_id,
             messageId: n.id,
             children: e => (0, r.jsxs)(p.P3F, U(M({
-              innerRef: m,
+              innerRef: h,
               className: L.alertsEnabledSubHeaderAvatarUsername
             }, e), {
               children: [(0, r.jsx)("div", U(M({}, _), {
@@ -254,7 +254,7 @@ function H(e) {
     resolvedReason: b
   } = (0, g.FL)(n), y = (0, d.e7)([I.Z], () => I.Z.getChannel(n.channel_id), [n.channel_id]), O = null != (t = null == y ? true : y.guild_id) ? t : null, {
     shouldShowIncidentActions: v
-  } = (0, m.mI)(O), S = (0, N.sR)(n.author.id, n.channel_id), T = e => {
+  } = (0, h.mI)(O), S = (0, N.sR)(n.author.id, n.channel_id), T = e => {
     S(e)
   }, C = i.useCallback(() => {
     let e = null == y ? true : y.guild_id;
@@ -298,7 +298,7 @@ function H(e) {
       variant: "text-md/normal",
       color: "text-muted",
       children: x.intl.format(x.t["4QIIZl"], {
-        dateTime: s.toLocaleString(x.intl.currentLocale, h.pQ)
+        dateTime: s.toLocaleString(x.intl.currentLocale, m.pQ)
       })
     }) : null,
     footerButtons: v ? (0, r.jsxs)("div", {
@@ -348,7 +348,7 @@ function Y(e) {
   }
 
   function _() {
-    null != o && y.Z.open(o, w.pNK.GUILD_AUTOMOD, true, w.KsC.AUTOMOD_MENTION_SPAM)
+    null != o && y.Z.open(o, R.pNK.GUILD_AUTOMOD, true, R.KsC.AUTOMOD_MENTION_SPAM)
   }
   return (0, r.jsx)(W, {
     compact: a,
@@ -451,7 +451,7 @@ function K(e) {
   return (0, r.jsx)("div", {
     onMouseEnter: l,
     onMouseLeave: u,
-    children: (0, r.jsx)(R.Z, {
+    children: (0, r.jsx)(w.Z, {
       className: o()(L.mainContainer, {
         [L.compact]: n
       }),

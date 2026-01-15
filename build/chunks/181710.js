@@ -33,7 +33,7 @@ let c = (0, Chunk473749.createContext)({}),
     } = (0, o.F)({
       isTextInput: true,
       autoFocus: e.autoFocus
-    }), _ = !!e["aria-invalid"] && "false" !== e["aria-invalid"], m = (0, r.aX)({
+    }), _ = !!e["aria-invalid"] && "false" !== e["aria-invalid"], h = (0, r.aX)({
       ...e,
       values: {
         isHovered: i,
@@ -46,7 +46,7 @@ let c = (0, Chunk473749.createContext)({}),
     });
     return l.createElement("input", {
       ...(0, s.d)(u(e), p, n),
-      ...m,
+      ...h,
       ref: t,
       "data-focused": d || true,
       "data-disabled": e.disabled || true,

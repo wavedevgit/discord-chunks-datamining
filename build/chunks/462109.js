@@ -20,10 +20,10 @@ let l = e => {
     onGridItemSelect: f
   } = e, p = (0, a.O)(), _ = r.useCallback(e => {
     f(e, p)
-  }, [f, p]), m = r.useCallback((e, t) => {
+  }, [f, p]), h = r.useCallback((e, t) => {
     d(e, t, o.u.GRID_NAVIGATOR_EVENT)
   }, [d]), {
-    gridDispatch: h,
+    gridDispatch: m,
     getItemProps: g,
     getRowProps: E,
     gridContainerProps: b,
@@ -35,7 +35,7 @@ let l = e => {
     itemGrid: n,
     itemList: l,
     onGridNavigatorItemSelect: _,
-    onGridNavigatorPositionChange: m
+    onGridNavigatorPositionChange: h
   });
   return r.useEffect(() => c.subscribe(e => e.inspectedExpressionPosition, e => {
     if (null == e) return;
@@ -44,12 +44,12 @@ let l = e => {
       rowIndex: n,
       source: r
     } = e;
-    r !== o.u.GRID_NAVIGATOR_EVENT && h({
+    r !== o.u.GRID_NAVIGATOR_EVENT && m({
       type: i.s.SET_FOCUSED_POSITION,
       x: t,
       y: n
     })
-  }), [h, c]), {
+  }), [m, c]), {
     getItemProps: g,
     getRowProps: E,
     gridContainerProps: b,

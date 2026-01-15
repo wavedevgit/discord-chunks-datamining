@@ -335,8 +335,8 @@ class _ extends Chunk495852.C {
     }])
   }
 }
-let m = new _;
-class h extends Chunk495852.C {
+let h = new _;
+class m extends Chunk495852.C {
   create(e) {
     let t = {
       header: "",
@@ -400,7 +400,7 @@ class h extends Chunk495852.C {
           a.body = e.string();
           break;
         case 13:
-          a.heroArtVideoSubtitles.push(m.internalBinaryRead(e, e.uint32(), n));
+          a.heroArtVideoSubtitles.push(h.internalBinaryRead(e, e.uint32(), n));
           break;
         case 14:
           a.storage = p.internalBinaryRead(e, e.uint32(), n, a.storage);
@@ -418,7 +418,7 @@ class h extends Chunk495852.C {
     "" !== e.header && t.tag(1, r.TD.LengthDelimited).string(e.header), "" !== e.subheader && t.tag(2, r.TD.LengthDelimited).string(e.subheader), "" !== e.videoLink && t.tag(3, r.TD.LengthDelimited).string(e.videoLink), "" !== e.helpArticleId && t.tag(4, r.TD.LengthDelimited).string(e.helpArticleId);
     for (let i = 0; i < e.featureCards.length; i++) c.internalBinaryWrite(e.featureCards[i], t.tag(5, r.TD.LengthDelimited).fork(), n).join();
     e.button && d.internalBinaryWrite(e.button, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "" !== e.dismissKey && t.tag(7, r.TD.LengthDelimited).string(e.dismissKey), "" !== e.heroArtVideoLinkLightTheme && t.tag(8, r.TD.LengthDelimited).string(e.heroArtVideoLinkLightTheme), "" !== e.heroArtImageLinkDarkTheme && t.tag(9, r.TD.LengthDelimited).string(e.heroArtImageLinkDarkTheme), "" !== e.heroArtImageLinkLightTheme && t.tag(10, r.TD.LengthDelimited).string(e.heroArtImageLinkLightTheme), "" !== e.modalTopPill && t.tag(11, r.TD.LengthDelimited).string(e.modalTopPill), "" !== e.body && t.tag(12, r.TD.LengthDelimited).string(e.body);
-    for (let i = 0; i < e.heroArtVideoSubtitles.length; i++) m.internalBinaryWrite(e.heroArtVideoSubtitles[i], t.tag(13, r.TD.LengthDelimited).fork(), n).join();
+    for (let i = 0; i < e.heroArtVideoSubtitles.length; i++) h.internalBinaryWrite(e.heroArtVideoSubtitles[i], t.tag(13, r.TD.LengthDelimited).fork(), n).join();
     e.storage && p.internalBinaryWrite(e.storage, t.tag(14, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
@@ -490,7 +490,7 @@ class h extends Chunk495852.C {
       name: "hero_art_video_subtitles",
       kind: "message",
       repeat: 1,
-      T: () => m
+      T: () => h
     }, {
       no: 14,
       name: "storage",
@@ -499,4 +499,4 @@ class h extends Chunk495852.C {
     }])
   }
 }
-let g = new h
+let g = new m

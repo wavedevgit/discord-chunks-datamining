@@ -4,9 +4,9 @@
 require.d(exports, {
   JG: () => _,
   Jt: () => d,
-  T3: () => h,
+  T3: () => m,
   VG: () => p,
-  o8: () => m
+  o8: () => h
 }), require("./388685.js"), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
   Chunk123314 = require("./123314.js"),
@@ -60,7 +60,7 @@ let f = (0, Chunk332929.U)(() => ({
 }));
 
 function p(e) {
-  let t = m(e),
+  let t = h(e),
     n = f(t => null == e ? null : t.riveAssetCache.get(e));
   return ((0, r.useEffect)(() => {
     if (null == e || null != t || f.getState().riveAssetCache.has(e)) return;
@@ -99,11 +99,11 @@ function _(e, t) {
   })
 }
 
-function m(e) {
+function h(e) {
   let t = f(e => e.riveOverrideCache);
   return null == e ? null : t[e]
 }
 
-function h(e) {
+function m(e) {
   return null != f(e => e.riveOverrideCache)[e]
 }

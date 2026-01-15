@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  s: () => h
+  s: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function h(e) {
+function m(e) {
   return d.Z.verifyResend().then(() => {
     (0, c.Z)({
       title: p.intl.string(p.t.LykQYk),
@@ -51,7 +51,7 @@ function h(e) {
     let {
       body: t
     } = e, n = p.intl.string(p.t.XcrQN5);
-    null != t && t.email && (n = t.email), (0, u.h7j)(e => (0, r.jsx)(s.Modal, m({
+    null != t && t.email && (n = t.email), (0, u.h7j)(e => (0, r.jsx)(s.Modal, h({
       actions: [{
         variant: "primary",
         text: p.intl.string(p.t.BddRzS),
@@ -70,7 +70,7 @@ function g(e) {
   } = e, a = (0, l.e7)([f.default], () => f.default.getCurrentUser());
   o()(null != a, "ResendEmailVerificationButton: currentUser cannot be undefined");
   let [s, c] = i.useState(false), d = i.useCallback(() => {
-    c(true), h(a).then(() => c(false))
+    c(true), m(a).then(() => c(false))
   }, [a]);
   return (0, r.jsx)(u.Button, {
     size: t,

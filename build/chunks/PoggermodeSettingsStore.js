@@ -2,7 +2,7 @@
 /** chunk id: 351780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -67,7 +67,7 @@ function p(e) {
 function _() {
   u = true
 }
-class m extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
     f = c({}, f, e)
   }
@@ -103,8 +103,8 @@ class m extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return f.comboSoundsEnabled
   }
 }
-l(m, "displayName", "PoggermodeSettingsStore"), l(m, "persistKey", "PoggermodeSettingsStore");
-let h = new m(Chunk570140.Z, {
+l(h, "displayName", "PoggermodeSettingsStore"), l(h, "persistKey", "PoggermodeSettingsStore");
+let m = new h(Chunk570140.Z, {
   POGGERMODE_SETTINGS_UPDATE: p,
   POGGERMODE_TEMPORARILY_DISABLED: _
 })

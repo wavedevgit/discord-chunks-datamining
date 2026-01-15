@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => E,
-  R: () => h
+  R: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,7 +54,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,14 +62,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var h = function(e) {
+var m = function(e) {
   return e.WANDERING_CUBES = "wanderingCubes", e.CHASING_DOTS = "chasingDots", e.PULSING_ELLIPSIS = "pulsingEllipsis", e.SPINNING_CIRCLE = "spinningCircle", e.SPINNING_CIRCLE_SIMPLE = "spinningCircleSimple", e.LOW_MOTION = "lowMotion", e
 }({});
 
@@ -90,18 +90,18 @@ function E(e) {
       className: u,
       itemClassName: f
     } = e,
-    m = _(e, ["type", "animated", "className", "itemClassName"]);
+    h = _(e, ["type", "animated", "className", "itemClassName"]);
   let {
-    i18n: h
+    i18n: m
   } = (0, l.ZF)(), {
     reducedMotion: E
-  } = i.useContext(s.S), b = E.enabled ? g(n) : n, y = null != (t = m["aria-label"]) ? t : h.SPINNER_LOADING_LABEL;
+  } = i.useContext(s.S), b = E.enabled ? g(n) : n, y = null != (t = h["aria-label"]) ? t : m.SPINNER_LOADING_LABEL;
   if ("spinningCircle" === b || "spinningCircleSimple" === b) return (0, r.jsx)("div", p(d({
     className: o()(c.spinner, c[b], u, {
       [c.stopAnimation]: !a
     }),
     role: "img"
-  }, m), {
+  }, h), {
     "aria-label": y,
     children: (0, r.jsx)("div", {
       className: c.spinningCircleInner,
@@ -136,7 +136,7 @@ function E(e) {
     }),
     role: "img",
     "aria-label": y
-  }, m), {
+  }, h), {
     children: (0, r.jsxs)("span", {
       className: o()(c.inner, c[b]),
       children: [(0, r.jsx)("span", {
@@ -149,4 +149,4 @@ function E(e) {
     })
   }))
 }
-E.Type = h
+E.Type = m

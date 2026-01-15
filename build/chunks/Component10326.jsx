@@ -47,12 +47,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {
+let m = {
     bronze: {
       type: "custom",
       start: Chunk692547.Z.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START,
@@ -122,7 +122,7 @@ let h = {
       if (null == A) return "";
       let e = u.vK[A];
       return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-    }, [A]), R = i.useMemo(() => {
+    }, [A]), w = i.useMemo(() => {
       if (!a || null == N) return;
       let e = g ? {
         progressCircleText: E,
@@ -138,10 +138,10 @@ let h = {
           alt: P
         }, e)
       }
-    }, [a, N, P, g, E, b, y]), w = {
+    }, [a, N, P, g, E, b, y]), R = {
       title: t,
       body: n,
-      graphic: R,
+      graphic: w,
       actions: i.useMemo(() => {
         if (f) return [{
           text: "Got it",
@@ -150,7 +150,7 @@ let h = {
       }, [f]),
       delay: O,
       size: v,
-      gradientColor: i.useMemo(() => "string" == typeof S && S in h ? h[S] : S, [S]),
+      gradientColor: i.useMemo(() => "string" == typeof S && S in m ? m[S] : S, [S]),
       estimatedTooltipHeight: I
     };
     return (0, r.jsxs)("div", {
@@ -167,17 +167,17 @@ let h = {
           width: "100%",
           marginTop: "200px"
         },
-        children: [(0, r.jsx)(l.B, m(p({
+        children: [(0, r.jsx)(l.B, h(p({
           targetElementRef: T
-        }, w), {
+        }, R), {
           children: (0, r.jsx)(s.Button, {
             buttonRef: T,
             variant: "primary",
             text: "Left"
           })
-        })), (0, r.jsx)(l.B, m(p({
+        })), (0, r.jsx)(l.B, h(p({
           targetElementRef: C
-        }, w), {
+        }, R), {
           children: (0, r.jsx)(s.Button, {
             buttonRef: C,
             variant: "primary",

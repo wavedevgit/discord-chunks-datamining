@@ -95,16 +95,16 @@ var Chunk126182 = require("./126182.js"),
       }
     })
   },
-  m = function(e, t, n, a, o, s) {
+  h = function(e, t, n, a, o, s) {
     var l = n.first() instanceof i,
       c = [],
       u = a.size,
       p = n.get(o),
-      m = a.first(),
-      h = a.last(),
-      g = h.getLength(),
-      E = h.getKey(),
-      b = l && (!p.getChildKeys().isEmpty() || !m.getChildKeys().isEmpty());
+      h = a.first(),
+      m = a.last(),
+      g = m.getLength(),
+      E = m.getKey(),
+      b = l && (!p.getChildKeys().isEmpty() || !h.getChildKeys().isEmpty());
     n.forEach(function(e, t) {
       if (t !== o) return void c.push(e);
       b ? c.push(e) : c.push(d(e, s, a)), a.slice(+!b, u - 1).forEach(function(e) {
@@ -112,7 +112,7 @@ var Chunk126182 = require("./126182.js"),
       }), c.push(f(e, s, a))
     });
     var y = r.createFromArray(c);
-    return l && (y = _(y, n, p, m)), e.merge({
+    return l && (y = _(y, n, p, h)), e.merge({
       blockMap: y,
       selectionBefore: t,
       selectionAfter: t.merge({
@@ -132,5 +132,5 @@ module.exports = function(e, t, n) {
     c = t.getStartKey(),
     d = t.getStartOffset(),
     f = a.get(c);
-  return (f instanceof i && (f.getChildKeys().isEmpty() || s(false)), 1 === o.size) ? u(e, t, a, o.first(), c, d, r) : m(e, t, a, o, c, d)
+  return (f instanceof i && (f.getChildKeys().isEmpty() || s(false)), 1 === o.size) ? u(e, t, a, o.first(), c, d, r) : h(e, t, a, o, c, d)
 }

@@ -4,7 +4,7 @@
 require.d(exports, {
   J6: () => G,
   LO: () => D,
-  TQ: () => w,
+  TQ: () => R,
   UB: () => H,
   ZU: () => x,
   Zn: () => L,
@@ -14,7 +14,7 @@ require.d(exports, {
   kK: () => M,
   lg: () => Y,
   om: () => B,
-  pL: () => R,
+  pL: () => w,
   uV: () => N,
   uX: () => V
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js");
@@ -52,11 +52,11 @@ function P() {
   return g.Z.getArticleURL(C.BhN.END_TO_END_ENCRYPTION)
 }
 
-function R() {
+function w() {
   return g.Z.getArticleURL(C.BhN.END_TO_END_ENCRYPTION)
 }
 
-function w(e, t, n, r, i) {
+function R(e, t, n, r, i) {
   n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, I.M1)({
     channelId: r,
     userId: e,
@@ -82,7 +82,7 @@ function x(e, t) {
 }
 
 function L(e) {
-  let t = m.default.getUser(e),
+  let t = h.default.getUser(e),
     n = y.ZP.getName(t);
   S.Z.openSecureFramesUpdateConfirmation({
     title: A.intl.formatToPlainString(A.t.K6NGBy, {
@@ -98,40 +98,40 @@ function L(e) {
 function j(e) {
   let t = s()(e),
     n = s()().diff(t, "s");
-  if (n > 12 * h.Z.Seconds.DAYS_30) {
-    let e = Math.round(n / (12 * h.Z.Seconds.DAYS_30));
+  if (n > 12 * m.Z.Seconds.DAYS_30) {
+    let e = Math.round(n / (12 * m.Z.Seconds.DAYS_30));
     return A.intl.formatToPlainString(A.t.F1wqkD, {
       count: e
     })
   }
-  if (n > h.Z.Seconds.DAYS_30) {
-    let e = Math.round(n / h.Z.Seconds.DAYS_30);
+  if (n > m.Z.Seconds.DAYS_30) {
+    let e = Math.round(n / m.Z.Seconds.DAYS_30);
     return A.intl.formatToPlainString(A.t["iT+b+2"], {
       count: e
     })
   }
-  if (n > 7 * h.Z.Seconds.DAY) {
-    let e = Math.round(n / (7 * h.Z.Seconds.DAY));
+  if (n > 7 * m.Z.Seconds.DAY) {
+    let e = Math.round(n / (7 * m.Z.Seconds.DAY));
     return A.intl.formatToPlainString(A.t.dLurKZ, {
       count: e
     })
   }
-  if (n > h.Z.Seconds.DAY) {
-    let e = Math.round(n / h.Z.Seconds.DAY);
+  if (n > m.Z.Seconds.DAY) {
+    let e = Math.round(n / m.Z.Seconds.DAY);
     return A.intl.formatToPlainString(A.t.LE8a2H, {
       count: e
     })
   }
-  if (n > h.Z.Seconds.HOUR) {
-    let e = Math.round(n / h.Z.Seconds.HOUR);
+  if (n > m.Z.Seconds.HOUR) {
+    let e = Math.round(n / m.Z.Seconds.HOUR);
     return A.intl.formatToPlainString(A.t.KULxVS, {
       count: e
     })
   } else {
-    if (!(n > h.Z.Seconds.MINUTE)) return A.intl.formatToPlainString(A.t["/w0Qpw"], {
+    if (!(n > m.Z.Seconds.MINUTE)) return A.intl.formatToPlainString(A.t["/w0Qpw"], {
       count: n
     });
-    let e = Math.round(n / h.Z.Seconds.MINUTE);
+    let e = Math.round(n / m.Z.Seconds.MINUTE);
     return A.intl.formatToPlainString(A.t.ws6rWq, {
       count: e
     })
@@ -258,7 +258,7 @@ function W(e) {
   } = e;
   if (!H(t, [p.Z, _.Z])) returntrue;
   {
-    let e = m.default.getUser(t),
+    let e = h.default.getUser(t),
       i = E.ZP.getName(n, r, e);
     return Y({
       userId: t,

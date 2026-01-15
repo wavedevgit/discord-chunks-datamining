@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  S: () => h,
+  S: () => m,
   j: () => g
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
@@ -22,12 +22,12 @@ function _() {
   return r
 }
 
-function m() {
+function h() {
   return d.isPlatformEmbedded && ((0, d.isMac)() || (0, d.isWindows)() && "arm64" !== f.ZP.architecture)
 }
-async function h() {
+async function m() {
   if (null == r) {
-    if (!m()) return void new o.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
+    if (!h()) return void new o.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
     await f.ZP.ensureModule("discord_cloudsync"), (r = new(f.ZP.getCloudSync())).on("state", e => a.Z.dispatch({
       type: "GAME_CLOUD_SYNC_UPDATE",
       state: e
@@ -46,28 +46,28 @@ function g(e, t) {
   if (null == o) throw Error("No dispatch state for ".concat(e, ":").concat(t));
   let d = null != (n = o.storage) ? n : {},
     f = (0, u.Tu)(e, t),
-    m = l.default.getToken();
-  if (null == m) throw Error("Cannot use cloud sync when not authenticated.");
-  let h = null != o.installPath ? (0, s.Z)(o.installPath) : null;
-  if (null == h) throw Error("No install path for ".concat(e, ":").concat(t));
+    h = l.default.getToken();
+  if (null == h) throw Error("Cannot use cloud sync when not authenticated.");
+  let m = null != o.installPath ? (0, s.Z)(o.installPath) : null;
+  if (null == m) throw Error("No install path for ".concat(e, ":").concat(t));
   let g = l.default.getId(),
     E = {
       forceHash: r,
-      manifestPath: p.SRg.STORAGE_MANIFEST(h, g),
+      manifestPath: p.SRg.STORAGE_MANIFEST(m, g),
       roots: null != d.roots ? d.roots : [{
         id: p.SRg.ROOT_ID,
         paths: Object.keys(p.SRg.ROOT_PLATFORMS).map(e => ({
           platform: e,
-          path: p.SRg.ROOT_STORAGE_PATH(h, g)
+          path: p.SRg.ROOT_STORAGE_PATH(m, g)
         })),
         patterns: p.SRg.ROOT_PATTERN
       }],
       storage: {
         baseURL: "".concat((0, i.K0)()).concat(p.ANM.APPLICATION_STORAGE(e, t)),
-        token: m
+        token: h
       },
       replacements: {
-        INSTALLDIR: p.SRg.INSTALL_DIR(h),
+        INSTALLDIR: p.SRg.INSTALL_DIR(m),
         USERID: g,
         BRANCHID: t
       }

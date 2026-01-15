@@ -20,11 +20,11 @@ function _() {
   let e = (0, a.e7)([f.Z], () => f.Z.getIsSubmitDisabled()),
     t = (0, a.e7)([f.Z], () => f.Z.getGuild()),
     n = (0, a.e7)([f.Z], () => f.Z.getErrors()),
-    [_, m] = i.useState(false),
-    h = i.useMemo(() => (null == n ? true : n.message) != null ? null == n ? true : n.message : (null == n ? true : n.guild_tag) !== true && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(null != n ? n : {}).length > 0 ? p.intl.string(p.t.s35OuK) : null, [n]),
+    [_, h] = i.useState(false),
+    m = i.useMemo(() => (null == n ? true : n.message) != null ? null == n ? true : n.message : (null == n ? true : n.guild_tag) !== true && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(null != n ? n : {}).length > 0 ? p.intl.string(p.t.s35OuK) : null, [n]),
     g = i.useCallback(async () => {
       var e, n, r;
-      m(true);
+      h(true);
       let i = f.Z.getAllPending(),
         a = (0, s.Jo)(i),
         o = (0, s.g9)(i),
@@ -45,7 +45,7 @@ function _() {
         let e = await (0, l.Z)(o, null == t ? true : t.id);
         p = p && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, d.pG)() : (0, u.v)()
       }
-      p && (0, d.b9)(), m(false)
+      p && (0, d.b9)(), h(false)
     }, [null == t ? true : t.id]),
     E = i.useCallback(() => {
       (0, d.W3)()
@@ -55,6 +55,6 @@ function _() {
     onSave: g,
     onReset: E,
     disabled: e,
-    errorMessage: null != h ? h : true
+    errorMessage: null != m ? m : true
   })
 }

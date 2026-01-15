@@ -20,9 +20,9 @@ function d(t) {
     guild: d,
     channel: g
   } = t, f = null != n, {
-    canManageGuildEvent: b
-  } = (0, u.XJ)(null != g ? g : d), [v, E] = (0, r.Wu)([o.ZP], () => [o.ZP.isActive(e), o.ZP.getGuildScheduledEvent(e)]), p = (0, a.Z)(n, null == E ? true : E.id), Z = null != E && b(E);
-  return f && (null == p ? true : p.is_canceled) && Z && (!v || f) ? (0, l.jsx)(i.sNh, {
+    canManageGuildEvent: v
+  } = (0, u.XJ)(null != g ? g : d), [b, E] = (0, i.Wu)([o.ZP], () => [o.ZP.isActive(e), o.ZP.getGuildScheduledEvent(e)]), p = (0, a.Z)(n, null == E ? true : E.id), Z = null != E && v(E);
+  return f && (null == p ? true : p.is_canceled) && Z && (!b || f) ? (0, l.jsx)(r.sNh, {
     id: s.intl.string(s.t.b8606G),
     label: s.intl.string(s.t.b8606G),
     action: () => {

@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk745020 = require("./745020.js"),
   Chunk51089 = require("./51089.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,14 +41,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -59,7 +59,7 @@ function D(e) {
     checkpointData: t
   } = e, {
     cardId: n,
-    numMessagesSent: R = 0,
+    numMessagesSent: w = 0,
     totalVoiceMinutes: D = 0,
     numEmojisSent: x = 0,
     topEmoji: L,
@@ -71,7 +71,7 @@ function D(e) {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
-  }).format(R), Z = new Intl.NumberFormat(I.intl.currentLocale, {
+  }).format(w), Z = new Intl.NumberFormat(I.intl.currentLocale, {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
@@ -92,9 +92,9 @@ function D(e) {
   }, []), J = () => {
     var e, t;
     let n = E.Z.getChannel(null == K || null == (e = K.message) ? true : e.channel_id);
-    y.default.track(S.rMx.CHECKPOINT_CARD_CLICKED, w({
+    y.default.track(S.rMx.CHECKPOINT_CARD_CLICKED, R({
       other_user_id: null == K || null == (t = K.message) ? true : t.author.id
-    }, (0, d.v_)(n), (0, d.hH)(null == n ? true : n.guild_id))), (0, m.Z)("message_component")
+    }, (0, d.v_)(n), (0, d.hH)(null == n ? true : n.guild_id))), (0, h.Z)("message_component")
   };
   return (0, r.jsxs)("div", {
     className: C.container,
@@ -161,7 +161,7 @@ function D(e) {
             }), (0, r.jsx)(a.xvT, {
               variant: "text-sm/medium",
               className: C.statText,
-              children: null == L.emojiId ? h.ZP.convertSurrogateToName(L.emojiName) : ":".concat(L.emojiName, ":")
+              children: null == L.emojiId ? m.ZP.convertSurrogateToName(L.emojiName) : ":".concat(L.emojiName, ":")
             })]
           })
         }), (0, r.jsx)("div", {

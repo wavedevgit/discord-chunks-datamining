@@ -17,7 +17,7 @@ var Chunk106351 = require("./106351.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   switch (e.type) {
     case r.d.PUBLIC_THREAD:
     case r.d.PRIVATE_THREAD:
@@ -32,7 +32,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return p.EC.has(e.id) ? "<id:".concat(e.id, ">") : "<#".concat(e.id, ">")
 }
 let g = {
@@ -67,8 +67,8 @@ let g = {
         onHover: d,
         onClick: p
       } = e,
-      m = l.charAt(0) === i.xQ.VOICE_CHANNEL;
-    return m ? (t = _.t["rMUL3+"], n = _.intl.string(_.t.CYnO4s), l = l.substring(1)) : c.forNonStringCommandOption ? (t = _.t.upNFT5, n = _.intl.string(_.t.OGiMXJ)) : (t = _.t.UhnmJD, n = _.intl.string(_.t.nIfr0Y)), (0, u.HI)({
+      h = l.charAt(0) === i.xQ.VOICE_CHANNEL;
+    return h ? (t = _.t["rMUL3+"], n = _.intl.string(_.t.CYnO4s), l = l.substring(1)) : c.forNonStringCommandOption ? (t = _.t.upNFT5, n = _.intl.string(_.t.OGiMXJ)) : (t = _.t.UhnmJD, n = _.intl.string(_.t.nIfr0Y)), (0, u.HI)({
       query: l,
       selectedIndex: o,
       autocompletes: r,
@@ -82,7 +82,7 @@ let g = {
         key: e.id,
         category: s.Z.getChannel(e.parent_id)
       }),
-      getQuery: e => m ? "".concat(f.zy).concat(i.xQ.VOICE_CHANNEL).concat(e) : "".concat(f.zy).concat(e),
+      getQuery: e => h ? "".concat(f.zy).concat(i.xQ.VOICE_CHANNEL).concat(e) : "".concat(f.zy).concat(e),
       key: "channels"
     })
   },
@@ -94,7 +94,7 @@ let g = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.insertText(m(i), h(i)), {
+    return r.insertText(h(i), m(i)), {
       type: d.z2.CHANNEL
     }
   }

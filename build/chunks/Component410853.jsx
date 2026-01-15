@@ -46,7 +46,7 @@ function T(e) {
         emojiId: n.id,
         emojiName: n.name,
         animated: !a && n.animated
-      }), (0, r.jsxs)(m.Z, {
+      }), (0, r.jsxs)(h.Z, {
         variant: "text-lg/bold",
         children: ["#", i + 1]
       })]
@@ -87,21 +87,21 @@ function C() {
             color: n,
             className: S.titleIcon,
             colorClass: S.iconColor
-          }), (0, r.jsx)(m.Z, {
+          }), (0, r.jsx)(h.Z, {
             variant: "eyebrow",
             className: S.eyebrow,
             children: g ? v.intl.string(O.default.vnG9Sx) : v.intl.format(O.default.JwFMdL, {
               numEmojis: l
             })
           })]
-        }), g ? (0, r.jsx)(m.Z, {
+        }), g ? (0, r.jsx)(h.Z, {
           variant: "heading-xxl/medium",
           className: I.emptySubtitle,
           children: v.intl.string(O.default.BHbwK1)
         }) : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(h.Z, {
+          children: [(0, r.jsx)(m.Z, {
             end: l
-          }), (0, r.jsx)(m.Z, {
+          }), (0, r.jsx)(h.Z, {
             variant: "heading-xxl/medium",
             className: I.subtitle,
             children: v.intl.string(O.default.ZuvPfg)

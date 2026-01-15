@@ -97,14 +97,14 @@ function A(e) {
       role: a = "button",
       variant: f = "primary",
       size: _ = "md",
-      text: m,
+      text: h,
       icon: E,
       iconPosition: y = "start",
       iconOpticalOffsetMargin: S = 0,
       fullWidth: T = false,
       focusProps: C,
       loading: A,
-      loadingStartedLabel: w,
+      loadingStartedLabel: R,
       loadingFinishedLabel: D,
       rounded: x = false,
       type: L = "button",
@@ -126,10 +126,10 @@ function A(e) {
   let q = (0, u.M)(),
     Q = null != (t = null == q ? true : q.size) ? t : _,
     X = null != (n = null == q ? true : q.fullWidth) ? n : T,
-    J = null != m,
+    J = null != h,
     $ = i.useRef(null),
     ee = null != K ? K : $,
-    et = (0, r.jsx)(R, {
+    et = (0, r.jsx)(w, {
       icon: E,
       iconOpticalOffsetMargin: S,
       iconPosition: y,
@@ -146,18 +146,18 @@ function A(e) {
     eo = (0, s.a)(ei),
     es = i.useRef(false);
   i.useEffect(() => {
-    true === A && (es.current = true, l.u.announce(null != w ? w : ea.BUTTON_LOADING_STARTED_LABEL)), false === A && true === es.current && (l.u.announce(null != D ? D : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
-  }, [A, w, D, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
+    true === A && (es.current = true, l.u.announce(null != R ? R : ea.BUTTON_LOADING_STARTED_LABEL)), false === A && true === es.current && (l.u.announce(null != D ? D : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
+  }, [A, R, D, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
   let el = (0, r.jsxs)("div", {
       className: o()(g.buttonChildren, {
         [g.loading]: A
       }),
-      children: [null != et && "start" === y && et, J && (0, r.jsx)(h.x, {
+      children: [null != et && "start" === y && et, J && (0, r.jsx)(m.x, {
         tag: "span",
         variant: I[Q],
         color: "none",
         lineClamp: 1,
-        children: m
+        children: h
       }), null != et && "end" === y && et]
     }),
     ec = V || A,
@@ -229,8 +229,8 @@ function N(e) {
         [g.fadeIn]: n,
         [g.fadeOut]: !n
       }),
-      children: (0, r.jsx)(m.$, {
-        type: m.R.PULSING_ELLIPSIS,
+      children: (0, r.jsx)(h.$, {
+        type: h.R.PULSING_ELLIPSIS,
         className: o()(g.spinner, g["spinner-".concat(a)]),
         itemClassName: g.spinnerItem
       })
@@ -278,7 +278,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     icon: t,
     iconOpticalOffsetMargin: n,

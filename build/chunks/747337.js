@@ -27,18 +27,18 @@ function s(e, t) {
   p.wnomask = (0, a.rx)(0, c + 7);
   var _ = n = (0, a.Vy)(7 - f + t.wkst, 7);
   _ >= 4 ? (_ = 0, o = p.yearlen + (0, a.Vy)(f - t.wkst, 7)) : o = c - _;
-  for (var m = Math.floor(Math.floor(o / 7) + (0, a.Vy)(o, 7) / 4), h = 0; h < t.byweekno.length; h++) {
-    var g = t.byweekno[h];
-    if (g < 0 && (g += m + 1), g > 0 && g <= m) {
+  for (var h = Math.floor(Math.floor(o / 7) + (0, a.Vy)(o, 7) / 4), m = 0; m < t.byweekno.length; m++) {
+    var g = t.byweekno[m];
+    if (g < 0 && (g += h + 1), g > 0 && g <= h) {
       var E = true;
       g > 1 ? (E = _ + (g - 1) * 7, _ !== n && (E -= 7 - n)) : E = _;
       for (var b = 0; b < 7 && (p.wnomask[E] = 1, E++, p.wdaymask[E] !== t.wkst); b++);
     }
   }
   if ((0, a.q9)(t.byweekno, 1)) {
-    var E = _ + 7 * m;
+    var E = _ + 7 * h;
     if (_ !== n && (E -= 7 - n), E < c)
-      for (var h = 0; h < 7 && (p.wnomask[E] = 1, E += 1, p.wdaymask[E] !== t.wkst); h++);
+      for (var m = 0; m < 7 && (p.wnomask[E] = 1, E += 1, p.wdaymask[E] !== t.wkst); m++);
   }
   if (_) {
     var y = true;

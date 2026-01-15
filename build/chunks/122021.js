@@ -20,10 +20,10 @@ var Chunk473749 = require("./473749.js"),
 let _ = {
     [Chunk981631.ABu.INSTAGRAM]: ["1036753656588017764"]
   },
-  m = new Map([
+  h = new Map([
     [Chunk981631.ABu.INSTAGRAM, new Date(2023, 1, 18).getTime()]
   ]),
-  h = 30 * Chunk70956.Z.Millis.DAY;
+  m = 30 * Chunk70956.Z.Millis.DAY;
 
 function g(e) {
   let {
@@ -50,7 +50,7 @@ function E() {
     }, [e]);
   return r.useMemo(() => a().sortBy(s.Z.filter(t), [e => {
     var t;
-    return !(m.has(e.type) && Date.now() < (null != (t = m.get(e.type)) ? t : 0) + h)
+    return !(h.has(e.type) && Date.now() < (null != (t = h.get(e.type)) ? t : 0) + m)
   }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [n, t])
 }
 

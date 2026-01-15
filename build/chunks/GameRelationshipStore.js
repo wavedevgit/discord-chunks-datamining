@@ -33,11 +33,11 @@ let d = (e, t) => "".concat(t, "-").concat(e),
   p = e => "user-id-".concat(e),
   _ = e => "relationship-type-".concat(e);
 
-function m(e) {
+function h(e) {
   let t = [];
   return t.push(f(e.applicationId)), t.push(p(e.id)), t.push(_(e.type)), t
 }
-let h = new Chunk759174.h(m, e => "".concat(e.since)),
+let m = new Chunk759174.h(h, e => "".concat(e.since)),
   g = 0,
   E = 0,
   b = 0;
@@ -46,7 +46,7 @@ function y() {
   let e = 0,
     t = 0,
     n = 0;
-  h.values().forEach(r => {
+  m.values().forEach(r => {
     let {
       type: i,
       id: a
@@ -61,11 +61,11 @@ function y() {
 }
 
 function O(e) {
-  h.set(d(e.id, e.applicationId), e)
+  m.set(d(e.id, e.applicationId), e)
 }
 
 function v(e, t) {
-  h.delete(d(e, t))
+  m.delete(d(e, t))
 }
 
 function S(e) {
@@ -74,13 +74,13 @@ function S(e) {
   } = e;
   if (null != t) {
     for (let e of t)
-      for (let t of h.values(f(e)))(t.type === l.OGo.PENDING_INCOMING || t.type === l.OGo.PENDING_OUTGOING) && v(t.id, e);
+      for (let t of m.values(f(e)))(t.type === l.OGo.PENDING_INCOMING || t.type === l.OGo.PENDING_OUTGOING) && v(t.id, e);
     y()
   }
 }
 
 function I(e) {
-  h.clear(), e.gameRelationships.forEach(e => {
+  m.clear(), e.gameRelationships.forEach(e => {
     O(u(e))
   }), y()
 }
@@ -106,10 +106,10 @@ class A extends(r = Chunk442837.ZP.Store) {
     return b
   }
   getGameFriendsForApplication(e) {
-    return h.values(f(e), true).filter(e => e.type === l.OGo.FRIEND)
+    return m.values(f(e), true).filter(e => e.type === l.OGo.FRIEND)
   }
   getGameRelationshipsForUser(e) {
-    return h.values(p(e), true)
+    return m.values(p(e), true)
   }
   getGameRelationshipsForUserByType(e, t) {
     return this.getGameRelationshipsForUser(e).filter(e => e.type === t)
@@ -118,16 +118,16 @@ class A extends(r = Chunk442837.ZP.Store) {
     return this.getGameRelationshipsForUserByType(e, l.OGo.FRIEND)
   }
   getGameRelationshipCount() {
-    return h.size()
+    return m.size()
   }
   getGameRelationships() {
-    return h
+    return m
   }
   getGameRelationshipsByType(e) {
-    return h.values(_(e), true)
+    return m.values(_(e), true)
   }
   getGameRelationshipsVersion() {
-    return h.version
+    return m.version
   }
 }
 c(A, "displayName", "GameRelationshipStore");

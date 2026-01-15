@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   PQ: () => p,
-  ZP: () => h,
+  ZP: () => m,
   e3: () => f.e3
 });
 var Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ let p = "data-client-themes",
     }, [e])
   };
 
-function m() {
+function h() {
   let e = (0, s.e7)([l.Z], () => l.Z.theme),
     {
       colors: t,
@@ -51,9 +51,9 @@ function m() {
   }, [d, a]), r.useMemo(() => 0 === t.length ? null : (0, f.gj)(t, i, n, e), [t, n, i, e])
 }
 
-function h() {
+function m() {
   let e = _(),
-    t = m();
+    t = h();
   return null != t ? {
     clientThemesCSS: t,
     clientThemesClassName: a()(f.e3, f.pX)

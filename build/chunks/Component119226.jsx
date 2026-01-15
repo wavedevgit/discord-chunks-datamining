@@ -2,7 +2,7 @@
 /** chunk id: 119226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -99,7 +99,7 @@ function N(e) {
       src: O,
       alt: null == i ? true : i.accessibilityLabel,
       className: y.profileEffectBackground
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(h.Z, {
       skuId: n
     })]
   })
@@ -120,7 +120,7 @@ function P(e) {
     })
   })
 }
-let R = e => {
+let w = e => {
   let {
     sku: t
   } = e, {
@@ -159,11 +159,11 @@ let R = e => {
   }) : l
 };
 
-function w(e) {
+function R(e) {
   let {
     sku: t
   } = e;
-  return t.productLine === E.POd.COLLECTIBLES ? (0, r.jsx)(R, {
+  return t.productLine === E.POd.COLLECTIBLES ? (0, r.jsx)(w, {
     sku: t
   }) : null
 }

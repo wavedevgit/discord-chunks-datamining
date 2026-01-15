@@ -50,8 +50,8 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 1e3;
-class h extends(r = Chunk473749.PureComponent) {
+let h = 1e3;
+class m extends(r = Chunk473749.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
@@ -71,7 +71,7 @@ class h extends(r = Chunk473749.PureComponent) {
   handleCopy(e) {
     let {
       onCopy: t,
-      delay: n = m
+      delay: n = h
     } = this.props;
     (0, c.JG)(e, () => this.setState({
       mode: l.kO8.Modes.SUCCESS
@@ -97,7 +97,7 @@ class h extends(r = Chunk473749.PureComponent) {
     }, this._timeout = new o.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
-d(h, "defaultProps", {
-  delay: m
+d(m, "defaultProps", {
+  delay: h
 });
-let g = h
+let g = m

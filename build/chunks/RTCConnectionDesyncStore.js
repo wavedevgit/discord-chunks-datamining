@@ -36,7 +36,7 @@ function v(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    i = (0, m.PH)(r, null != t ? t : h.ME, e.id);
+    i = (0, h.PH)(r, null != t ? t : m.ME, e.id);
   b.set(e.id, i);
   let a = {
     type: g.fO.USER,
@@ -91,7 +91,7 @@ function A(e) {
     state: t,
     context: n
   } = e;
-  if (n !== a.Yn.DEFAULT || t !== h.hes.DISCONNECTED) returnfalse;
+  if (n !== a.Yn.DEFAULT || t !== m.hes.DISCONNECTED) returnfalse;
   T()
 }
 
@@ -122,14 +122,14 @@ function P(e) {
   }, false)
 }
 
-function R(e) {
+function w(e) {
   let {
     userId: t,
     context: n
   } = e;
   return n === a.Yn.DEFAULT && S(t)
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(_.Z, p.default, d.Z, f.Z), this.syncWith([p.default], I)
   }
@@ -146,12 +146,12 @@ class w extends(r = Chunk442837.ZP.Store) {
     return y.values()
   }
 }
-E(w, "displayName", "RTCConnectionDesyncStore");
-let D = new w(Chunk570140.Z, {
+E(R, "displayName", "RTCConnectionDesyncStore");
+let D = new R(Chunk570140.Z, {
   CONNECTION_OPEN: C,
   VOICE_CHANNEL_SELECT: T,
   RTC_CONNECTION_STATE: A,
   VOICE_STATE_UPDATES: N,
   RTC_CONNECTION_CLIENT_CONNECT: P,
-  RTC_CONNECTION_CLIENT_DISCONNECT: R
+  RTC_CONNECTION_CLIENT_DISCONNECT: w
 })

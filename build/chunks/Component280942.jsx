@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -58,7 +58,7 @@ function g(e) {
   let {
     guildBoostSlot: t,
     onClose: p,
-    hasCancelableGuildBoostSlot: m,
+    hasCancelableGuildBoostSlot: h,
     premiumSubscription: g,
     onSelect: E,
     fractionalState: b
@@ -69,7 +69,7 @@ function g(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 760558));
-      return n => (0, r.jsx)(e, h(_({}, n), {
+      return n => (0, r.jsx)(e, m(_({}, n), {
         guildBoostSlots: [t],
         locationSection: c.jXE.SETTINGS_PREMIUM
       }))
@@ -81,7 +81,7 @@ function g(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 401786));
-      return n => (0, r.jsx)(e, h(_({}, n), {
+      return n => (0, r.jsx)(e, m(_({}, n), {
         guildBoostSlot: t
       }))
     })
@@ -92,7 +92,7 @@ function g(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 450468));
-      return n => (0, r.jsx)(e, h(_({}, n), {
+      return n => (0, r.jsx)(e, m(_({}, n), {
         guildBoostSlotId: t.id
       }))
     })
@@ -105,8 +105,8 @@ function g(e) {
     },
     cancel: {
       label: d.intl.string(d.t.twFU3R),
-      subtext: m ? null : d.intl.string(d.t.oQ9lOh),
-      disabled: !m
+      subtext: h ? null : d.intl.string(d.t.oQ9lOh),
+      disabled: !h
     },
     uncancel: {
       label: d.intl.string(d.t["2glQNp"]),

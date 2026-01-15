@@ -41,10 +41,10 @@ function l(e, t, n, r) {
   let _ = t.toLowerCase();
   for (let e of null != p ? p : [])
     if (i()(_, e.toLowerCase())) returntrue;
-  let m = false;
+  let h = false;
   if (null != f) {
     let e = null == (u = (0, a.qgQ)(f)) ? true : u.toLowerCase();
-    null != e && (m = i()(_, e))
+    null != e && (h = i()(_, e))
   }
-  return m
+  return h
 }

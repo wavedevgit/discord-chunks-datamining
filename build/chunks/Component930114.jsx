@@ -42,8 +42,8 @@ function _(e) {
     processedCode: t,
     channelContext: f,
     customGiftMessage: _,
-    giftInfo: m
-  } = e, h = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.PremiumTypes.TIER_0);
+    giftInfo: h
+  } = e, m = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.PremiumTypes.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -54,17 +54,17 @@ function _(e) {
         code: t,
         channelContext: f,
         customGiftMessage: _,
-        emojiName: null == m || null == (i = m.emoji) ? true : i.name,
-        soundId: null == m || null == (a = m.sound) ? true : a.id,
+        emojiName: null == h || null == (i = h.emoji) ? true : i.name,
+        soundId: null == h || null == (a = h.sound) ? true : a.id,
         onComplete: (e, t) => {
-          g = e, t && (h = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
+          g = e, t && (m = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
         }
       }, n))
     }
   }, {
     onCloseCallback: () => {
       var e;
-      h && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && s.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
+      m && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && s.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

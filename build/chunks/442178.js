@@ -2,7 +2,7 @@
 /** chunk id: 442178, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk727916 = require("./727916.js");
 let i = RegExp("([0-9]{4})\\-([0-9]{1,2})\\-([0-9]{1,2})(?:T([0-9]{1,2}):([0-9]{1,2})(?::([0-9]{1,2})(?:\\.(\\d{1,4}))?)?(Z|([+-]\\d{2}):?(\\d{2})?)?)?(?=\\W|$)", "i"),
@@ -16,7 +16,7 @@ let i = RegExp("([0-9]{4})\\-([0-9]{1,2})\\-([0-9]{1,2})(?:T([0-9]{1,2}):([0-9]{
   f = 8,
   p = 9,
   _ = 10;
-class m extends Chunk727916.Z {
+class h extends Chunk727916.Z {
   innerPattern() {
     return i
   }

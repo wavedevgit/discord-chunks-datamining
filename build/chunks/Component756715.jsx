@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,13 +77,13 @@ function g(e) {
     className: a,
     children: d,
     rel: p,
-    target: h,
+    target: m,
     useDefaultUnderlineStyles: g = true,
     title: E,
     style: b,
     focusProps: y,
     ref: O
-  } = e, v = m(e, ["href", "onClick", "className", "children", "rel", "target", "useDefaultUnderlineStyles", "title", "style", "focusProps", "ref"]);
+  } = e, v = h(e, ["href", "onClick", "className", "children", "rel", "target", "useDefaultUnderlineStyles", "title", "style", "focusProps", "ref"]);
   null != t && null == n && (n = c.X.getDefaultLinkInterceptor(t));
   let S = i.useContext(l.g$b),
     I = {
@@ -93,7 +93,7 @@ function g(e) {
       href: t,
       onClick: n,
       rel: null != p ? p : true,
-      target: null != h ? h : true,
+      target: null != m ? m : true,
       title: null != E ? E : true,
       style: null != b ? b : true
     };

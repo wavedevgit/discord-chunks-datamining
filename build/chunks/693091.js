@@ -99,11 +99,11 @@ class p {
 }
 let _ = Chunk473749.createContext(new p(true));
 
-function m(e, t) {
+function h(e, t) {
   return t && e > 4 ? 0 : t ? Math.min(1 - e / 4, 1) : 1
 }
 
-function h(e, t) {
+function m(e, t) {
   return t ? Math.min(1 - e / 4, 1) : 1
 }
 
@@ -156,8 +156,8 @@ function y(e, t, n) {
         let {
           current: O
         } = p, v = {
-          opacity: m(y, i),
-          scale: h(y, i),
+          opacity: h(y, i),
+          scale: m(y, i),
           transform: g(y, i, _),
           contentOpacity: E(y, i),
           height: i ? a : d

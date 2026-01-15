@@ -151,7 +151,7 @@ let ey = {
       case ep.pNK.BOOST_PERKS:
         return {
           section: ep.pNK.BOOST_PERKS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: ex.intl.string(ex.t.UKgg5N), ariaLabel: ex.intl.string(ex.t.UKgg5N), element: Q.I, notice: {
-            stores: [P.Z, X.Z],
+            stores: [P.Z, J.Z],
             element: $.C
           }
         };
@@ -218,7 +218,7 @@ let ey = {
         };
       case ep.pNK.MODERATION:
         return {
-          section: ep.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ex.intl.string(ex.t["suhY+Y"]), element: J.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(ep.GuildFeatures.COMMUNITY)
+          section: ep.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ex.intl.string(ex.t["suhY+Y"]), element: X.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(ep.GuildFeatures.COMMUNITY)
         };
       case ep.pNK.GUILD_AUTOMOD:
         return {

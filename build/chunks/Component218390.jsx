@@ -2,7 +2,7 @@
 /** chunk id: 218390, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => em,
+  C: () => eh,
   Z: () => eg
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -77,12 +77,12 @@ function ep(e) {
     activeDiscountInfo: i,
     theme: a
   } = e, o = t.hasActiveTrial, s = t.planIdFromItems === ee.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = ee.GP[t.planIdFromItems], p = U.ZP.formatPriceString(U.ZP.getDefaultPrice(d.id), d.interval), {
-    enabled: m
+    enabled: h
   } = F.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
-  }), h = () => {
+  }), m = () => {
     var e, t, n;
-    return m ? "" : o ? er.intl.format(er.t["2CGBri"], {
+    return h ? "" : o ? er.intl.format(er.t["2CGBri"], {
       remainingTime: u,
       price: p
     }) : s ? er.intl.format(er.t["+qqh6g"], {
@@ -105,9 +105,9 @@ function ep(e) {
       variant: "heading-md/normal",
       color: "always-white",
       className: ei.trialHeader,
-      children: h()
+      children: m()
     })]
-  }) : m ? (0, r.jsx)("div", {
+  }) : h ? (0, r.jsx)("div", {
     style: {
       marginBottom: "18px"
     }
@@ -129,10 +129,10 @@ function e_() {
     u = (0, Z.W)(),
     p = null !== i && null !== i.planIdFromItems;
   if (!p && !l.isFractionalPremiumActive && !s) return null;
-  let m = l.isFractionalPremiumActive,
-    h = null !== i && i.hasActiveTrial,
-    g = e || h,
-    E = () => (null == a ? true : a.isPremiumGroupPrimary()) ? Q.uZ.PREMIUM_GROUP_PRIMARY : (null == a ? true : a.isPremiumGroupMember()) ? Q.uZ.PREMIUM_GROUP_MEMBER : m ? Q.uZ.FRACTIONAL_PREMIUM : Q.uZ.DEFAULT,
+  let h = l.isFractionalPremiumActive,
+    m = null !== i && i.hasActiveTrial,
+    g = e || m,
+    E = () => (null == a ? true : a.isPremiumGroupPrimary()) ? Q.uZ.PREMIUM_GROUP_PRIMARY : (null == a ? true : a.isPremiumGroupMember()) ? Q.uZ.PREMIUM_GROUP_MEMBER : h ? Q.uZ.FRACTIONAL_PREMIUM : Q.uZ.DEFAULT,
     y = () => s ? (0, r.jsx)(_.Heading, {
       variant: "display-md",
       color: "always-white",
@@ -145,7 +145,7 @@ function e_() {
       style: {
         marginBottom: "18px"
       }
-    }) : m && !u ? (0, r.jsxs)(r.Fragment, {
+    }) : h && !u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(q.mn, {
         text: er.intl.string(er.t.uXF4c4),
         className: ei.fractionalPremiumTopRimPill,
@@ -177,7 +177,7 @@ function e_() {
         })
       })]
     }) : null,
-    v = () => m && !p ? (0, r.jsxs)(d.hE2, {
+    v = () => h && !p ? (0, r.jsxs)(d.hE2, {
       fullWidth: true,
       direction: "vertical",
       children: [(0, r.jsx)(z.Z, {
@@ -187,7 +187,7 @@ function e_() {
           M.default.track(en.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: ec,
             target: eu
-          }), (0, R.default)(), (0, N.uL)(en.Z5c.APPLICATION_STORE)
+          }), (0, w.default)(), (0, N.uL)(en.Z5c.APPLICATION_STORE)
         },
         variant: "overlay-secondary",
         fullWidth: true,
@@ -204,7 +204,7 @@ function e_() {
           M.default.track(en.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: ec,
             target: eu
-          }), (0, R.default)(), (0, N.uL)(en.Z5c.APPLICATION_STORE)
+          }), (0, w.default)(), (0, N.uL)(en.Z5c.APPLICATION_STORE)
         },
         text: er.intl.string(er.t.VR2iVB),
         size: "md"
@@ -214,7 +214,7 @@ function e_() {
           M.default.track(en.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: es,
             target: el
-          }), (0, w.openUserSettings)(P.n.SUBSCRIPTIONS_PANEL, {
+          }), (0, R.openUserSettings)(P.n.SUBSCRIPTIONS_PANEL, {
             section: en.oAB.SUBSCRIPTIONS
           })
         },
@@ -243,12 +243,12 @@ function e_() {
   })
 }
 
-function em(e) {
+function eh(e) {
   var t, n;
   let {
     className: i,
     config: a
-  } = e, s = (0, c.e7)([y.Z], () => y.Z.useReducedMotion), l = a.getImageUrl(s), u = null == (t = a.getBackgroundImageUrl) ? true : t.call(a), d = (0, V.Yr)(u), f = (0, V.Tl)(a.gradientConfig), p = (0, V.$q)(d, f), m = {
+  } = e, s = (0, c.e7)([y.Z], () => y.Z.useReducedMotion), l = a.getImageUrl(s), u = null == (t = a.getBackgroundImageUrl) ? true : t.call(a), d = (0, V.Yr)(u), f = (0, V.Tl)(a.gradientConfig), p = (0, V.$q)(d, f), h = {
     color: null != (n = a.textColor) ? n : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {
@@ -263,17 +263,17 @@ function em(e) {
       className: ei.giftInfoPromotion,
       children: [(0, r.jsx)(_.Heading, {
         className: ei.giftInfoTitlePromotion,
-        style: m,
+        style: h,
         variant: "heading-lg/extrabold",
         children: a.title()
       }), (0, r.jsx)(_.Text, {
         className: ei.giftText,
-        style: m,
+        style: h,
         variant: "text-xs/medium",
         children: a.body()
       }), null != a.additionalTerm && (0, r.jsx)(_.Text, {
         className: ei.giftAdditionalTerm,
-        style: m,
+        style: h,
         variant: "text-xxs/normal",
         children: a.additionalTerm()
       }), (0, r.jsx)(K.Z, {
@@ -290,7 +290,7 @@ function em(e) {
   })
 }
 
-function eh() {
+function em() {
   return (0, r.jsxs)("div", {
     className: ei.giftCard,
     children: [(0, r.jsx)("img", {
@@ -344,11 +344,11 @@ let eg = function() {
   (0, Y.B)();
   let P = (0, H.b)();
   i.useEffect(() => {
-    m.Z.wait(async () => {
-      y || t || await Promise.all([h.jg(), h.tZ(), (0, g.Y2)(null, null, en.JjL.DISCOVERY)]), f(false)
+    h.Z.wait(async () => {
+      y || t || await Promise.all([m.jg(), m.tZ(), (0, g.Y2)(null, null, en.JjL.DISCOVERY)]), f(false)
     })
   }, [y, t]);
-  let [R, w] = i.useState(false);
+  let [w, R] = i.useState(false);
   if (y) return (0, r.jsx)(E.Z, {});
   if (t) return (0, r.jsx)(C.c8, {});
   let j = s && null !== o && l,
@@ -364,11 +364,11 @@ let eg = function() {
     value: n,
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        children: [null != b && (0, r.jsx)(em, {
+        children: [null != b && (0, r.jsx)(eh, {
           config: b
         }), (0, r.jsx)(e_, {}), P && (0, r.jsx)($.Z, {
           isInSettings: true
-        }), null == b && (0, r.jsx)(eh, {}), (0, r.jsx)(J.Z, {
+        }), null == b && (0, r.jsx)(em, {}), (0, r.jsx)(J.Z, {
           hideCTAs: true,
           headingOverride: er.intl.string(er.t.dnVvQS),
           hidePill: !G,
@@ -378,9 +378,9 @@ let eg = function() {
       }), (0, r.jsx)(u.$, {
         innerRef: N,
         onChange: e => {
-          e && !R && (M.default.track(en.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !w && (M.default.track(en.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: n
-          }), w(true))
+          }), R(true))
         },
         children: (0, r.jsx)("div", {
           ref: N,

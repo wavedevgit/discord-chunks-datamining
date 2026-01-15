@@ -6,10 +6,10 @@ require.d(exports, {
   Io: () => x,
   N1: () => k,
   NY: () => L,
-  Ox: () => R,
+  Ox: () => w,
   Vq: () => D,
   Wf: () => j,
-  cB: () => w,
+  cB: () => R,
   dy: () => N,
   wP: () => P
 });
@@ -74,7 +74,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     text: t
   } = e;
@@ -83,7 +83,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     id: t,
     guildId: n,
@@ -128,7 +128,7 @@ function D(e) {
   let {
     id: t,
     guildId: n
-  } = e, a = (0, i.e7)([b.Z], () => null != n ? b.Z.getRole(n, t) : true), s = (0, i.e7)([c.Z], () => c.Z.roleStyle), l = (0, h._f)(n, a, null == a ? true : a.colorStrings);
+  } = e, a = (0, i.e7)([b.Z], () => null != n ? b.Z.getRole(n, t) : true), s = (0, i.e7)([c.Z], () => c.Z.roleStyle), l = (0, m._f)(n, a, null == a ? true : a.colorStrings);
   if (null == a) return (0, r.jsxs)("span", {
     children: ["@", C.intl.string(C.t["YV4F/n"])]
   });
@@ -171,7 +171,7 @@ function L(e) {
   } = e, a = (0, f.l)(t), o = (0, f.W)(t, n, i);
   return (0, r.jsxs)(_.Z, {
     iconType: t,
-    children: [a, null != o && (0, r.jsx)(m.Z, {}), o]
+    children: [a, null != o && (0, r.jsx)(h.Z, {}), o]
   })
 }
 

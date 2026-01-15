@@ -2,7 +2,7 @@
 /** chunk id: 280885, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,13 +17,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk960324 = require("./960324.js");
 
-function m(e) {
+function h(e) {
   let {
     userBio: t,
     className: n,
     animateOnHoverOrFocusOnly: a = false,
-    isHoveringOrFocusing: m = false,
-    lineClamp: h = 6,
+    isHoveringOrFocusing: h = false,
+    lineClamp: m = 6,
     setLineClamp: g = true,
     textColor: E,
     userId: b
@@ -38,11 +38,11 @@ function m(e) {
       })
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      lineClamp: g ? h : true,
+      lineClamp: g ? m : true,
       color: true !== E ? E : true,
       children: (0, r.jsx)(u.G.Provider, {
         value: {
-          disableAnimations: a && !m,
+          disableAnimations: a && !h,
           disableInteractions: false
         },
         children: O

@@ -2,7 +2,7 @@
 /** chunk id: 903250, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,17 +31,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk678393 = require("./678393.js"),
   Chunk77874 = require("./77874.js"),
   Chunk36426 = require("./36426.js");
-let R = (e, t) => {
+let w = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
       subscriptionTier: a,
-      isDarkMode: R,
-      isEligibleForBogoPromotion: w,
+      isDarkMode: w,
+      isEligibleForBogoPromotion: R,
       videoRef: D
     } = e, {
       analyticsLocations: x
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, h.Nx)(), M = (0, s.e7)([m.Z], () => m.Z.affinities), k = (0, E.Z)(), U = null != k, G = R ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, F = T.intl.string(T.t.YCZldK), B = (0, _.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, m.Nx)(), M = (0, s.e7)([h.Z], () => h.Z.affinities), k = (0, E.Z)(), U = null != k, G = w ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, F = T.intl.string(T.t.YCZldK), B = (0, _.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
       value: x,
       children: (0, r.jsxs)("div", {
@@ -82,8 +82,8 @@ let R = (e, t) => {
               }),
               buttonClassName: i,
               isApplicationHome: true,
-              isDarkMode: R,
-              isEligibleForBogoPromotion: w
+              isDarkMode: w,
+              isEligibleForBogoPromotion: R
             }), (0, r.jsx)(v._O, {
               variant: "text-sm/normal",
               withBottomMargin: false,
@@ -109,4 +109,4 @@ let R = (e, t) => {
       })
     })
   },
-  w = Chunk473749.forwardRef(R)
+  R = Chunk473749.forwardRef(w)

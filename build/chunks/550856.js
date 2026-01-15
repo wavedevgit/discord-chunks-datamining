@@ -24,14 +24,14 @@ function f(e, t, n) {
 }
 let p = "c6_BVC",
   _ = new Chunk710845.Z("KrispBVCDeviceManager"),
-  m = [],
   h = [],
+  m = [],
   g = {
     block_list: [],
     allow_list: []
   };
-for (let e of ((0, Chunk358085.isMac)() ? g = require("./598473.js") : (0, Chunk358085.isWindows)() && (g = require("./689437.js")), g.block_list)) "name" in module && h.push(module.name.toLowerCase());
-for (let e of g.allow_list) "name" in module && m.push(module.name.toLowerCase());
+for (let e of ((0, Chunk358085.isMac)() ? g = require("./598473.js") : (0, Chunk358085.isWindows)() && (g = require("./689437.js")), g.block_list)) "name" in module && m.push(module.name.toLowerCase());
+for (let e of g.allow_list) "name" in module && h.push(module.name.toLowerCase());
 
 function E() {
   var e;
@@ -51,11 +51,11 @@ function E() {
     return
   }
   let d = n.name.toLowerCase();
-  if (h.some(e => d.includes(e))) {
+  if (m.some(e => d.includes(e))) {
     s.Z.getKrispModelOverride() && (_.info("BVC not compatible with device, disabling BVC."), i.Z.setKrispModelOverride(""));
     return
   }
-  if (m.some(e => d.includes(e))) return (r && u.F.trackExposure({
+  if (h.some(e => d.includes(e))) return (r && u.F.trackExposure({
     location: "KrispBVCDeviceManager"
   }), o) ? void(s.Z.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), i.Z.setKrispModelOverride(p))) : void i.Z.setKrispModelOverride("");
   s.Z.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), i.Z.setKrispModelOverride(""))

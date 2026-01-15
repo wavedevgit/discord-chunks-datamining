@@ -36,13 +36,13 @@ function _() {
   return null != n && "" !== n && n !== f && (f = n, (0, o._2)(f), true)
 }
 
-function m(e) {
+function h(e) {
   f = e.locale, (0, o._2)(f)
 }
 d().then(e => {
   p = e
 });
-class h extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(l.Z), _(), (0, o._2)(f)
   }
@@ -53,11 +53,11 @@ class h extends(r = Chunk442837.ZP.Store) {
     return p
   }
 }
-u(h, "displayName", "LocaleStore");
-let g = new h(Chunk570140.Z, {
+u(m, "displayName", "LocaleStore");
+let g = new m(Chunk570140.Z, {
   OVERLAY_INITIALIZE: _,
   CACHE_LOADED: _,
   CONNECTION_OPEN: _,
   USER_SETTINGS_PROTO_UPDATE: _,
-  USER_SETTINGS_LOCALE_OVERRIDE: m
+  USER_SETTINGS_LOCALE_OVERRIDE: h
 })

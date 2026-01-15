@@ -42,9 +42,9 @@ function f(e) {
   (0, o.useEffect)(d, []);
   let {
     addGlobalListener: _,
-    removeAllGlobalListeners: m
+    removeAllGlobalListeners: h
   } = (0, r.x)(), {
-    hoverProps: h,
+    hoverProps: m,
     triggerHoverEnd: g
   } = (0, o.useMemo)(() => {
     let e = (e, o) => {
@@ -63,7 +63,7 @@ function f(e) {
       },
       r = (e, t) => {
         let r = p.target;
-        p.pointerType = "", p.target = null, "touch" !== t && p.isHovered && r && (p.isHovered = false, m(), l && l({
+        p.pointerType = "", p.target = null, "touch" !== t && p.isHovered && r && (p.isHovered = false, h(), l && l({
           type: "hoverend",
           target: r,
           pointerType: t
@@ -78,13 +78,13 @@ function f(e) {
       hoverProps: o,
       triggerHoverEnd: r
     }
-  }, [t, n, l, c, p, _, m]);
+  }, [t, n, l, c, p, _, h]);
   return (0, o.useEffect)(() => {
     c && g({
       currentTarget: p.target
     }, p.pointerType)
   }, [c]), {
-    hoverProps: h,
+    hoverProps: m,
     isHovered: u
   }
 }

@@ -63,10 +63,10 @@ function _(e) {
   let {
     channelId: t
   } = e;
-  m(t) && delete l[t]
+  h(t) && delete l[t]
 }
 
-function m(e) {
+function h(e) {
   if (null == l[e]) return;
   let {
     scrollTop: t,
@@ -76,7 +76,7 @@ function m(e) {
   return t === n - r
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     scrollTop: n,
@@ -108,13 +108,13 @@ class g extends(r = Chunk442837.ZP.Store) {
     return u
   }
   isAtBottom(e) {
-    return m(e)
+    return h(e)
   }
 }
 s(g, "displayName", "DimensionStore");
 let E = new g(Chunk570140.Z, {
   UPDATE_CHANNEL_DIMENSIONS: f,
-  UPDATE_CHANNEL_LIST_DIMENSIONS: h,
+  UPDATE_CHANNEL_LIST_DIMENSIONS: m,
   UPDATE_GUILD_LIST_DIMENSIONS: p,
   CALL_CREATE: _
 })

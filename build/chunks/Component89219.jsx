@@ -21,7 +21,7 @@ function d(e) {
     onClickContent: f,
     onView: p,
     guildId: _
-  } = e, m = i.useMemo(() => (0, r.jsx)(a.Text, {
+  } = e, h = i.useMemo(() => (0, r.jsx)(a.Text, {
     variant: "text-xs/medium",
     className: u.description,
     color: "none",
@@ -32,7 +32,7 @@ function d(e) {
     header: d,
     title: t.name,
     iconSrc: s.r9.getWhiteIconURL(),
-    info: m,
+    info: h,
     onClickContent: f,
     trackingConfig: {
       id: t.id,

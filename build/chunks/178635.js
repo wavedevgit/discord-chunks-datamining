@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   R: () => O,
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk433517 = require("./433517.js"),
@@ -18,7 +18,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk102824 = require("./102824.js"),
   Chunk531578 = require("./531578.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -62,20 +62,20 @@ let b = 200,
     cooldown: 864e5
   },
   O = {
-    [Chunk531578.nw.VOICE]: E(h({}, y), {
+    [Chunk531578.nw.VOICE]: E(m({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.VOICE_CALL_FEEDBACK,
       storageKey: "lastVoiceFeedback",
       feedbackType: Chunk531578.nw.VOICE,
       eligibilityChecks: [A]
     }),
-    [Chunk531578.nw.STREAM]: E(h({}, y), {
+    [Chunk531578.nw.STREAM]: E(m({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.REPORT_PROBLEM_POST_STREAM,
       storageKey: "lastStreamFeedback",
       feedbackType: Chunk531578.nw.STREAM
     }),
-    [Chunk531578.nw.VIDEO_BACKGROUND]: E(h({}, y), {
+    [Chunk531578.nw.VIDEO_BACKGROUND]: E(m({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.VIDEO_BACKGROUND_FEEDBACK,
       storageKey: "lastVideoBackgroundFeedback",
@@ -105,14 +105,14 @@ let b = 200,
       storageKey: "blockUser",
       feedbackType: Chunk531578.nw.BLOCK_USER
     },
-    [Chunk531578.nw.VOICE_FILTER]: E(h({}, y), {
+    [Chunk531578.nw.VOICE_FILTER]: E(m({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.VOICE_FILTER_FEEDBACK,
       storageKey: "lastVoiceFilterFeedback",
       feedbackType: Chunk531578.nw.VOICE_FILTER,
       eligibilityChecks: [A]
     }),
-    [Chunk531578.nw.SEARCH_RESULTS]: E(h({}, y), {
+    [Chunk531578.nw.SEARCH_RESULTS]: E(m({}, y), {
       group: Chunk531578.FB.SEARCH,
       hotspot: Chunk536442.v6.SEARCH_RESULTS_FEEDBACK,
       storageKey: "searchResultsFeedback",
@@ -149,8 +149,8 @@ function S(e) {
   let n = null == (t = u.A2.getSetting()[e.feedbackType]) ? true : t.optOutExpiryTime,
     r = null != n && !Number.isNaN(n) && Date.now() < n,
     i = !s.Z.hasHotspot(e.hotspot);
-  return i && !r && u.A2.updateSetting(t => E(h({}, t), {
-    [e.feedbackType]: E(h({}, t[e.feedbackType]), {
+  return i && !r && u.A2.updateSetting(t => E(m({}, t), {
+    [e.feedbackType]: E(m({}, t[e.feedbackType]), {
       optOutExpiryTime: _.uf
     })
   })), !r && !i
@@ -163,8 +163,8 @@ function I(e) {
 function T(e, t) {
   var n, a, o;
   let s, l = null == (n = u.A2.getSetting()[t.feedbackType]) ? true : n.lastImpressionTime;
-  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(s) || u.A2.updateSetting(e => E(h({}, e), {
-    [t.feedbackType]: E(h({}, e[t.feedbackType]), {
+  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(s) || u.A2.updateSetting(e => E(m({}, e), {
+    [t.feedbackType]: E(m({}, e[t.feedbackType]), {
       lastImpressionTime: s
     })
   }))), (null != (o = (0, r.max)([l, s])) ? o : 0) + e.cooldown < Date.now()
@@ -194,13 +194,13 @@ function N(e) {
 }
 
 function P(e) {
-  u.A2.updateSetting(t => E(h({}, t), {
-    [e]: E(h({}, t[e]), {
+  u.A2.updateSetting(t => E(m({}, t), {
+    [e]: E(m({}, t[e]), {
       lastImpressionTime: Date.now()
     })
   }))
 }
-class R extends Chunk147913.Z {
+class w extends Chunk147913.Z {
   possiblyShowFeedbackModal(e, t, n) {
     if (!v(e) || null != this.feedbackTypeToShow && _.b5[this.feedbackTypeToShow] < _.b5[e]) {
       null == n || n();
@@ -209,7 +209,7 @@ class R extends Chunk147913.Z {
     this.feedbackTypeToShow = e, this.showFeedbackModalDebounced(t, n)
   }
   constructor(...e) {
-    super(...e), m(this, "feedbackTypeToShow", null), m(this, "showFeedbackModalDebounced", (0, r.debounce)((e, t) => {
+    super(...e), h(this, "feedbackTypeToShow", null), h(this, "showFeedbackModalDebounced", (0, r.debounce)((e, t) => {
       null != this.feedbackTypeToShow ? (P(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e()) : null == t || t()
     }, b))
   }

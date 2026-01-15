@@ -2,9 +2,9 @@
 /** chunk id: 455357, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fl: () => h,
+  Fl: () => m,
   kC: () => g,
-  x8: () => m
+  x8: () => h
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,12 +34,12 @@ function _(e) {
   return (0, o.kK)(e, HTMLImageElement) ? e.getAttribute("src") : (0, o.kK)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? true : t.getAttribute("src")) ? n : "video" : ((0, o.kK)(e, HTMLDivElement), e.tagName)
 }
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     isPreview: n = false,
-    source: m,
-    questId: h,
+    source: h,
+    questId: m,
     listenForSourceError: g = false,
     retrySourceLoadOnError: E = false
   } = e, [b, y] = i.useState(false), [O, v] = i.useState(new Set), [S, I] = i.useState(false), T = i.useRef(false);
@@ -55,19 +55,19 @@ function m(e) {
         errorPrefix: i,
         errorMessage: a
       } = e;
-      if (n || null == m) return;
+      if (n || null == h) return;
       let u = (0, o.kK)(t, HTMLVideoElement) ? t.networkState : true;
       s.default.track(c.rMx.QUEST_ASSET_LOADING_FAILURE, {
-        source: m,
-        quest_id: h,
+        source: h,
+        quest_id: m,
         asset_id: _(t),
         video_network_state: u
       }), l.Z.captureException(Error("".concat(i, ": ").concat(null != a ? "".concat(a, ", ") : "").concat(_(t), ", ").concat(r)), {
         tags: {
-          source: m
+          source: h
         }
       }), y(true)
-    }, [n, m, h]),
+    }, [n, h, m]),
     A = i.useCallback(e => {
       v(t => {
         let n = new Set(t);
@@ -125,19 +125,19 @@ function m(e) {
   i.useEffect(() => {
     P || (T.current = true)
   }, [P]);
-  let R = i.useMemo(() => ({
+  let w = i.useMemo(() => ({
     registerAsset: N,
     unregisterAsset: A,
     hasError: b,
     isLoading: P && !T.current
   }), [N, A, b, P]);
   return (0, r.jsx)(d.Provider, {
-    value: R,
+    value: w,
     children: t
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     id: t,
     children: n

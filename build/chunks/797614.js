@@ -59,11 +59,11 @@ function _() {
   }
 }
 
-function m() {
+function h() {
   let e = o.Z;
   return null != e && r.e.ALL.has(e) ? e : null
 }
-let h = 12e4,
+let m = 12e4,
   g = 100;
 class E {
   _getMetricWithDefaults(e, t) {
@@ -80,7 +80,7 @@ class E {
     });
     let a = _();
     null != a && i.tags.push("platform:".concat(a));
-    let o = m();
+    let o = h();
     return null != o && i.tags.push("release_channel:".concat(o)), i
   }
   increment(e) {
@@ -103,8 +103,8 @@ class E {
         body: {
           metrics: e,
           client_info: {
-            built_at: "1768501307417",
-            build_number: "486171"
+            built_at: "1768502975992",
+            build_number: "486195"
           }
         },
         retries: 1,
@@ -118,7 +118,7 @@ class E {
   constructor() {
     c(this, "_metrics", true), c(this, "_intervalId", true), this._metrics = [], this._intervalId = setInterval(() => {
       this._flush()
-    }, h)
+    }, m)
   }
 }
 let b = new E

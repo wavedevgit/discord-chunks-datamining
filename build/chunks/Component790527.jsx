@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
 
 function P(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -41,7 +41,7 @@ function P(e, t) {
   return i
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -49,7 +49,7 @@ function R(e, t) {
   return i
 }
 
-function w(e) {
+function R(e) {
   switch (e) {
     case I.cd.ANIMATED_AVATAR_MODAL_UPSELL:
     case I.cd.ANIMATED_BANNER_MODAL_UPSELL:
@@ -66,7 +66,7 @@ function w(e) {
 
 function D(e) {
   var t, n, a, {
-      title: R,
+      title: w,
       type: D,
       guildBoostProps: x,
       analyticsSource: L,
@@ -105,11 +105,11 @@ function D(e) {
       smallText: ep = false,
       footerClassName: e_
     } = e,
-    em = P(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
-  let eh = null != x,
+    eh = P(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
+  let em = null != x,
     eg = (0, b.N)(),
     eE = (0, E.N)(),
-    eb = !ec && ((null == eg || null == (t = eg.subscription_trial) ? true : t.sku_id) === en || (0, O.Wp)(eE, en)) && !eh,
+    eb = !ec && ((null == eg || null == (t = eg.subscription_trial) ? true : t.sku_id) === en || (0, O.Wp)(eE, en)) && !em,
     {
       analyticsLocations: ey
     } = (0, f.ZP)(d.Z.PREMIUM_UPSELL_MODAL),
@@ -132,28 +132,28 @@ function D(e) {
       guildBoostProps: r,
       type: i
     } = ev.current;
-    eh ? m.default.track(T.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
+    em ? h.default.track(T.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
       type: "".concat(i, " - Tier ").concat(null == r ? true : r.boostedGuildTier),
       guild_id: null == r ? true : r.guild.id,
       channel_id: null == r ? true : r.channelId,
       location: e,
       location_stack: t
-    }) : m.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+    }) : h.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
       type: i,
       source: n,
       location: e,
       location_stack: t,
-      sku_id: (0, h.Wz)(en)
+      sku_id: (0, m.Wz)(en)
     })
-  }, [eh, en, er]);
+  }, [em, en, er]);
   let eS = (0, s.e7)([g.Z], () => g.Z.affinities),
-    eI = eS.length > 1 && w(D),
+    eI = eS.length > 1 && R(D),
     eT = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
     eT || u.MH()
   }, [eT]);
   let eC = () => {
-      if (eh) return (0, r.jsx)(_.Z, {
+      if (em) return (0, r.jsx)(_.Z, {
         analyticsLocation: j,
         guild: x.guild,
         onClose: W
@@ -162,7 +162,7 @@ function D(e) {
       if (eb)
         if (null != eg) {
           var t, n;
-          e = (0, h.Rt)({
+          e = (0, m.Rt)({
             intervalType: null == eg || null == (t = eg.subscription_trial) ? true : t.interval,
             intervalCount: null == eg || null == (n = eg.subscription_trial) ? true : n.interval_count
           })
@@ -187,14 +187,14 @@ function D(e) {
     },
     eA = et ? o()(A.artContainer, A.artContainerBoxShadow, F) : o()(A.artContainer, F),
     eN = null;
-  return null != em.artURL ? eN = (0, r.jsx)("img", {
+  return null != eh.artURL ? eN = (0, r.jsx)("img", {
     className: o()(B, A.art),
     alt: "",
-    src: em.artURL
-  }) : null != em.artElement && (eN = em.artElement), (0, r.jsxs)(c.Y0X, {
+    src: eh.artURL
+  }) : null != eh.artElement && (eN = eh.artElement), (0, r.jsxs)(c.Y0X, {
     "data-migration-pending": true,
     className: o()(A.root, !eb && G),
-    "aria-label": R,
+    "aria-label": w,
     transitionState: Y,
     parentComponent: "PremiumUpsellModal",
     children: [null != eN && (0, r.jsxs)("div", {
@@ -212,7 +212,7 @@ function D(e) {
         onClose: W,
         type: D,
         subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
-        headingText: R,
+        headingText: w,
         context: k,
         analyticsLocationObject: j,
         discountOffer: eE,
@@ -227,7 +227,7 @@ function D(e) {
               [A.enhancedHeader]: eo
             }, V),
             variant: "heading-xl/bold",
-            children: [R, ee ? (0, r.jsx)(p.Z, {
+            children: [w, ee ? (0, r.jsx)(p.Z, {
               className: A.betaTag
             }) : null]
           }), eI ? (0, r.jsx)(S.Z, {

@@ -143,10 +143,10 @@ module.exports = function(e) {
       var r = this.wrapperRef.current;
       if (r) {
         var i = p.getScrollParent(r),
-          a = m(i);
+          a = h(i);
         if (i === window) {
           var o = _(r);
-          (e = o.y + o.height - h().height) > 0 && window.scrollTo(a.x, a.y + e + y)
+          (e = o.y + o.height - m().height) > 0 && window.scrollTo(a.x, a.y + e + y)
         } else {
           b(r) || E(false);
           var s = r;
@@ -164,8 +164,8 @@ module.exports = function(e) {
       f = n.contentState,
       p = n.decorator,
       _ = n.editorKey,
-      m = n.editorState,
-      h = n.customStyleFn,
+      h = n.editorState,
+      m = n.customStyleFn,
       g = n.customStyleMap,
       E = n.direction,
       b = n.forceSelection,
@@ -176,33 +176,33 @@ module.exports = function(e) {
       var i = u.encode(r, 0, 0),
         c = f.getBlockForKey(r),
         p = T(c, o),
-        h = p.CustomComponent || t,
+        m = p.CustomComponent || t,
         g = I(c, a),
         E = g.Element,
         b = g.wrapperTemplate,
         y = C(c, _, i, l, p, null),
         O = s({}, e.props, {
-          tree: m.getBlockTree(r),
+          tree: h.getBlockTree(r),
           blockProps: p.customProps,
           offsetKey: i,
           block: c
         });
-      return n.push(d.createElement(E, y, d.createElement(h, O))), !b || v(c, f) || S(b, E, n), n
+      return n.push(d.createElement(E, y, d.createElement(m, O))), !b || v(c, f) || S(b, E, n), n
     }, []));
     var P = r.getKey(),
-      R = u.encode(P, 0, 0),
-      w = T(r, o),
-      D = w.CustomComponent,
+      w = u.encode(P, 0, 0),
+      R = T(r, o),
+      D = R.CustomComponent,
       x = null != D ? d.createElement(D, i({}, this.props, {
-        tree: m.getBlockTree(P),
-        blockProps: w.customProps,
-        offsetKey: R,
+        tree: h.getBlockTree(P),
+        blockProps: R.customProps,
+        offsetKey: w,
         block: r
       })) : d.createElement(c, {
         block: r,
         children: N,
         contentState: f,
-        customStyleFn: h,
+        customStyleFn: m,
         customStyleMap: g,
         decorator: p,
         direction: E,
@@ -213,7 +213,7 @@ module.exports = function(e) {
       });
     if (r.getParentKey()) return x;
     var L = I(r, a).Element,
-      j = C(r, _, R, l, w, this.wrapperRef);
+      j = C(r, _, w, l, R, this.wrapperRef);
     return d.createElement(L, j, x)
   }, t
 }(Chunk473749.Component)

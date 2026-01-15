@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 616022, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w;
+let r, i, a, o, s, l, c, u, d, f, p, _, h, m, g, E, b, y, O, v, S, I, T, C, A, N, P, w, R;
 require.d(exports, {
   Z: () => te
 }), require("./388685.js");
@@ -68,7 +68,7 @@ let Q = 6 * Chunk70956.Z.Millis.HOUR,
   ei = 864e6;
 
 function ea() {
-  r = false, i = false, a = new Map, o = false, s = false, l = new Map, c = new Map, u = new Map, d = new Map, f = new Map, p = 0, _ = 0, m = new Set, h = new Set, g = new Set, E = new Set, b = new Set, X = new Map, O = new Map, v = new Map, S = new Map, I = null, T = new Map, y = new Set, C = new Map, A = new Map, N = new Map, e2(), P = null, w = new Map, en = new Map, R = new Map
+  r = false, i = false, a = new Map, o = false, s = false, l = new Map, c = new Map, u = new Map, d = new Map, f = new Map, p = 0, _ = 0, h = new Set, m = new Set, g = new Set, E = new Set, b = new Set, X = new Map, O = new Map, v = new Map, S = new Map, I = null, T = new Map, y = new Set, C = new Map, A = new Map, N = new Map, e2(), P = null, R = new Map, en = new Map, w = new Map
 }
 
 function eo(e, t) {
@@ -81,9 +81,9 @@ function es(e, t) {
   let n = (u = new Map(u)).get(e);
   if (null != n) {
     let r = K({}, n, t);
-    if (eo(e, t), u.set(e, r), w.has(e)) {
-      let n = w.get(e);
-      null != n && (w = new Map(w)).set(e, K({}, n, t))
+    if (eo(e, t), u.set(e, r), R.has(e)) {
+      let n = R.get(e);
+      null != n && (R = new Map(R)).set(e, K({}, n, t))
     }
   }
 }
@@ -143,7 +143,7 @@ function e_() {
   r = true
 }
 
-function em(e) {
+function eh(e) {
   let {
     quests: t,
     excludedQuests: n,
@@ -155,11 +155,11 @@ function em(e) {
     location: Y.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (d = new Map, n)) d.set(e.id, e);
-  for (let e of null == w ? true : w.values()) u.has(e.id) || (u.set(e.id, e), c.set(e.id, e.config), a.set(e.id, (0, V.zi)(e)));
+  for (let e of null == R ? true : R.values()) u.has(e.id) || (u.set(e.id, e), c.set(e.id, e.config), a.set(e.id, (0, V.zi)(e)));
   N = a, e3(), P = null != i ? new Date(i) : null
 }
 
-function eh() {
+function em() {
   p = 0, r = false
 }
 
@@ -182,7 +182,7 @@ function eb(e) {
     questId: t,
     quest: n
   } = e;
-  (b = new Set(b)).delete(t), (w = new Map(w)).set(t, n), (u = new Map(u)).set(t, n), (c = new Map(c)).set(t, n.config), (en = new Map(en)).delete(t)
+  (b = new Set(b)).delete(t), (R = new Map(R)).set(t, n), (u = new Map(u)).set(t, n), (c = new Map(c)).set(t, n.config), (en = new Map(en)).delete(t)
 }
 
 function ey(e) {
@@ -239,15 +239,15 @@ function eC(e) {
 }
 
 function eA(e) {
-  let t = new Set(m);
-  t.delete(e), m = t
+  let t = new Set(h);
+  t.delete(e), h = t
 }
 
 function eN(e) {
   let {
     questId: t
-  } = e, n = new Set(m);
-  n.add(t), m = n
+  } = e, n = new Set(h);
+  n.add(t), h = n
 }
 
 function eP(e) {
@@ -259,14 +259,14 @@ function eP(e) {
   }), eA(t.questId)
 }
 
-function eR(e) {
+function ew(e) {
   let {
     questId: t
   } = e;
   eA(t)
 }
 
-function ew(e) {
+function eR(e) {
   let {
     questId: t
   } = e, n = new Set(g);
@@ -291,23 +291,23 @@ function ex(e) {
 function eL(e) {
   let {
     questId: t
-  } = e, n = new Set(h);
-  n.add(t), h = n
+  } = e, n = new Set(m);
+  n.add(t), m = n
 }
 
 function ej(e) {
   let {
     questId: t,
     entitlements: n
-  } = e, r = new Set(h);
-  r.delete(t), h = r, ed(t, n)
+  } = e, r = new Set(m);
+  r.delete(t), m = r, ed(t, n)
 }
 
 function eM(e) {
   let {
     questId: t
-  } = e, n = new Set(h);
-  n.delete(t), h = n
+  } = e, n = new Set(m);
+  n.delete(t), m = n
 }
 
 function ek(e) {
@@ -430,9 +430,9 @@ function ez(e) {
     location: "handleFetchQuestToDeliverSuccess"
   });
   if (p) {
-    var m;
+    var h;
     let e = {
-      questId: null != (m = null == t ? true : t.id) ? m : null,
+      questId: null != (h = null == t ? true : t.id) ? h : null,
       fetchedAt: f,
       ttlMillis: eq(s),
       adDecisionData: r,
@@ -442,7 +442,7 @@ function ez(e) {
       trafficMetadataRaw: u,
       trafficMetadataSealed: d
     };
-    (R = new Map(R)).set(n, e)
+    (w = new Map(w)).set(n, e)
   } else null == t ? C.delete(n) : C.set(n, {
     quest: t,
     adDecisionData: r,
@@ -476,12 +476,12 @@ function eX(e) {
 
 function eJ(e) {
   let {
-    quest: t,
+    quests: t,
     metadataRaw: n,
     content: r
   } = e;
-  s = false, (l = new Map(l)).set(r, false), null == t ? A.delete(r) : A.set(r, {
-    quest: t,
+  s = false, (l = new Map(l)).set(r, false), 0 === t.size ? A.delete(r) : A.set(r, {
+    quests: t,
     metadataRaw: n
   })
 }
@@ -580,16 +580,16 @@ class e7 extends(D = Chunk442837.ZP.Store) {
     return P
   }
   get questAdDecisionByPlacement() {
-    return R
+    return w
   }
   getFetchQuestPreviewError(e) {
     return en.get(e)
   }
   isEnrolling(e) {
-    return m.has(e)
+    return h.has(e)
   }
   isClaimingReward(e) {
-    return h.has(e)
+    return m.has(e)
   }
   isFetchingRewardCode(e) {
     return g.has(e)
@@ -634,7 +634,7 @@ class e7 extends(D = Chunk442837.ZP.Store) {
     return null != (t = N.get(e)) && t
   }
   getQuestLoadedViaPreview(e) {
-    return w.get(e)
+    return R.get(e)
   }
   isFetchingQuestHomeTakeover() {
     return ee
@@ -660,8 +660,8 @@ W(e7, "displayName", "QuestStore");
 let e9 = new e7(Chunk570140.Z, {
     LOGOUT: ep,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: e_,
-    QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: em,
-    QUESTS_FETCH_CURRENT_QUESTS_FAILURE: eh,
+    QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: eh,
+    QUESTS_FETCH_CURRENT_QUESTS_FAILURE: em,
     QUESTS_FETCH_CLAIMED_QUESTS_BEGIN: eO,
     QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: ev,
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: eS,
@@ -678,8 +678,8 @@ let e9 = new e7(Chunk570140.Z, {
     QUESTS_SEND_HEARTBEAT_FAILURE: eT,
     QUESTS_ENROLL_BEGIN: eN,
     QUESTS_ENROLL_SUCCESS: eP,
-    QUESTS_ENROLL_FAILURE: eR,
-    QUESTS_FETCH_REWARD_CODE_BEGIN: ew,
+    QUESTS_ENROLL_FAILURE: ew,
+    QUESTS_FETCH_REWARD_CODE_BEGIN: eR,
     QUESTS_FETCH_REWARD_CODE_SUCCESS: eD,
     QUESTS_FETCH_REWARD_CODE_FAILURE: ex,
     QUESTS_CLAIM_REWARD_BEGIN: eL,

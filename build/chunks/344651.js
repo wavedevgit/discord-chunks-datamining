@@ -207,15 +207,15 @@ function J(e, t, n) {
     avatar: d,
     avatar_decoration_data: p,
     flags: _,
-    premium_since: m,
-    pending: h,
+    premium_since: h,
+    pending: m,
     joined_at: g,
     communication_disabled_until: E,
     unusual_dm_activity_until: b,
     collectibles: y,
     display_name_styles: O
   } = n, v = I.ZP.getMember(e, t.id), S = (0, f.bN)(O);
-  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != p ? p : null) && v.premiumSince === m && v.isPending === h && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === _ && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (o = v.collectibles) ? o : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != S ? S : null) || X({
+  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != p ? p : null) && v.premiumSince === h && v.isPending === m && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === _ && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (o = v.collectibles) ? o : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != S ? S : null) || X({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -223,8 +223,8 @@ function J(e, t, n) {
     nick: c,
     avatar: d,
     avatarDecoration: p,
-    premiumSince: m,
-    isPending: h,
+    premiumSince: h,
+    isPending: m,
     joinedAt: g,
     communicationDisabledUntil: E,
     unusualDMActivityUntil: b,
@@ -289,7 +289,7 @@ function et(e) {
 z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id]), e => {
   E.Z.initialGuild.measure(() => {
     a.ZP.Emitter.batched(() => {
-      let t = w.Fx(e, x.Wb.identifyStartTime);
+      let t = R.Fx(e, x.Wb.identifyStartTime);
       null != C.default.getCurrentUser() && (X({
         type: "GUILD_CREATE",
         guild: t
@@ -320,7 +320,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
   E.Z.readySupplemental.measure(() => {
     a.ZP.Emitter.batched(() => {
       var t;
-      e = E.Z.hydrateReadySupplemental.measure(() => w.r$(e, x.Wb.identifyStartTime));
+      e = E.Z.hydrateReadySupplemental.measure(() => R.r$(e, x.Wb.identifyStartTime));
       let n = e => e.map(e => ({
           user: e.user,
           status: e.status,
@@ -376,7 +376,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
   }), 2e3)
 }), z(["READY"], e => {
   var t;
-  let n = w.Eb(),
+  let n = R.Eb(),
     r = e.guilds.filter(e => {
       var t, n;
       return !e.unavailable && "partial" === e.data_mode && ((null != (t = e.partial_updates.channels) ? t : []).length > 0 || (null != (n = e.partial_updates.deleted_channel_ids) ? n : []).length > 0 || true)
@@ -391,7 +391,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
   });
   E.Z.ready.measure(() => {
     a.ZP.Emitter.batched(() => {
-      let t = (e = E.Z.hydrateReady.measure(() => w.IM(e, x.Wb.identifyStartTime, n))).private_channels.map(e => (0, y.q_)(e)),
+      let t = (e = E.Z.hydrateReady.measure(() => R.IM(e, x.Wb.identifyStartTime, n))).private_channels.map(e => (0, y.q_)(e)),
         r = e.guilds.filter(e => true === e.unavailable && true !== e.geo_restricted).map(e => e.id),
         i = e.guilds.filter(e => true !== e.unavailable),
         a = e.guilds.filter(e => true === e.geo_restricted);
@@ -694,7 +694,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
     guildId: e.id
   });
   else {
-    let t = w.J2(e);
+    let t = R.J2(e);
     s.Z.createGuild(t), X({
       type: "VOICE_STATE_UPDATES",
       voiceStates: t.voice_states.map(e => {
@@ -1047,12 +1047,12 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
 }), K(["SAVED_MESSAGE_CREATE"], e => {
   X({
     type: "SAVED_MESSAGE_CREATE",
-    savedMessage: (0, h.jk)(e)
+    savedMessage: (0, m.jk)(e)
   })
 }), K(["SAVED_MESSAGE_DELETE"], e => {
   X({
     type: "SAVED_MESSAGE_DELETE",
-    savedMessageData: (0, h.$_)(e)
+    savedMessageData: (0, m.$_)(e)
   })
 }), K(["FRIEND_SUGGESTION_CREATE"], e => {
   X({
@@ -1091,7 +1091,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
       id: e.answer_id,
       name: ""
     },
-    reactionType: m.O.VOTE
+    reactionType: h.O.VOTE
   })
 }), K(["MESSAGE_POLL_VOTE_ADD_MANY"], e => {
   X({
@@ -1103,7 +1103,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
         id: e.answer_id,
         name: ""
       },
-      reactionType: m.O.VOTE
+      reactionType: h.O.VOTE
     }))
   })
 }), K(["MESSAGE_REACTION_REMOVE_ALL"], e => {
@@ -1172,7 +1172,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
     skuSubscriptionPlanId: e.sku_subscription_plan_id
   })
 }), K(["USER_PAYMENT_CLIENT_ADD"], e => {
-  (0, R.L)().then(t => {
+  (0, w.L)().then(t => {
     let n = e.purchase_token_hash;
     n === t && X({
       type: "USER_PAYMENT_CLIENT_ADD",

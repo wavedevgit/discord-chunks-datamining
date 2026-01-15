@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk486324 = require("./486324.js"),
   Chunk413953 = require("./413953.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function E(e) {
     className: n
   } = e, i = (0, p.TK)(t);
   return null != i ? (0, r.jsx)("div", {
-    className: a()(n, m.banner),
+    className: a()(n, h.banner),
     style: {
       background: i
     }
@@ -70,7 +70,7 @@ function b(e) {
     forceDefaultColor: null != n.brandColorPrimary
   }), l = null != (t = n.brandColorPrimary) ? t : s;
   return (0, r.jsx)("div", {
-    className: a()(i, m.banner),
+    className: a()(i, h.banner),
     style: {
       background: (0, p.dG)(l)
     }
@@ -83,13 +83,13 @@ function y(e) {
     onIconChange: i
   } = e;
   if (null == i) return (0, r.jsx)("div", {
-    className: m.avatarContainer,
+    className: h.avatarContainer,
     children: (0, r.jsx)(s.ZP, {
       mask: s.QS.CLAN_ICON,
       width: 70,
       height: 70,
       children: (0, r.jsx)("div", {
-        className: m.avatarWrapper,
+        className: h.avatarWrapper,
         children: (0, r.jsx)(c.Ft, {
           guildId: t.id,
           guildName: t.name,
@@ -119,7 +119,7 @@ function y(e) {
     }, {})
   }
   return (0, r.jsx)("div", {
-    className: m.avatarContainer,
+    className: h.avatarContainer,
     children: (0, r.jsx)(o.tEY, {
       within: true,
       children: (0, r.jsx)(s.ZP, {
@@ -127,17 +127,17 @@ function y(e) {
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: a()(m.avatarWrapper, m.clickable),
+          className: a()(h.avatarWrapper, h.clickable),
           children: [(0, r.jsx)(c.Ft, {
             guildId: t.id,
             guildName: t.name,
             guildIcon: t.icon,
             iconSize: 64
           }), (0, r.jsx)("div", {
-            className: m.overlay
+            className: h.overlay
           }), (0, r.jsx)(o.vdY, {
             size: "custom",
-            className: m.overlayIcon,
+            className: h.overlayIcon,
             width: 20,
             height: 20,
             color: "white"
@@ -165,7 +165,7 @@ function O(e) {
     profile: t,
     onComplete: l
   })), (0, r.jsxs)("div", {
-    className: a()(m.container, i),
+    className: a()(h.container, i),
     children: [(0, r.jsx)(E, {
       profile: t
     }), (0, r.jsx)(y, {
@@ -177,7 +177,7 @@ function O(e) {
     }), (0, r.jsx)(u.E, {
       profile: t
     }), null != p && (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: h.buttonContainer,
       children: p
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 704907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./825670.js"), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -54,7 +54,7 @@ let d = 10,
     let t = 1;
     return e <= 3 ? t = 100 : e <= 15 ? t = 70 : e <= 30 ? t = 50 : e <= 45 ? t = 30 : e <= 80 && (t = 10), t
   };
-class m {
+class h {
   overwriteHistory(e, t) {
     this.usageHistory = i().mapValues(null != e ? e : {}, e => u(l({}, e), {
       frecency: false
@@ -151,4 +151,4 @@ class m {
     s(this, "dirty", true), s(this, "_frequently", true), s(this, "numFrequentlyItems", true), s(this, "maxSamples", true), s(this, "computeBonus", true), s(this, "computeWeight", true), s(this, "computeFrecency", true), s(this, "calculateMaxTotalUse", true), s(this, "lookupKey", true), s(this, "usageHistory", true), s(this, "afterCompute", true), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.calculateMaxTotalUse = r, this.afterCompute = a, this.lookupKey = i, this.usageHistory = {}, this.frequently = [], this.maxSamples = l, this.numFrequentlyItems = o, this.dirty = false
   }
 }
-let h = m
+let m = h

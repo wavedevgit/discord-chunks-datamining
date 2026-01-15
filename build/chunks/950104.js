@@ -29,19 +29,19 @@ function c(e) {
     f = i()(null != (r = c.base) ? r : e),
     p = i()(e),
     _ = f.luminance(),
-    m = p,
-    h = u,
+    h = p,
+    m = u,
     g = u + d,
     E = i().contrast(f, p),
     b = o;
   for (; b-- > 0;) {
-    let e = E < h,
+    let e = E < m,
       t = E > g;
     if (!e && !t) break;
-    let n = m.luminance() > _;
-    m = t && n || e && !n ? m.darken() : m.brighten(), E = i().contrast(f, m)
+    let n = h.luminance() > _;
+    h = t && n || e && !n ? h.darken() : h.brighten(), E = i().contrast(f, h)
   }
-  return l(m)
+  return l(h)
 }
 
 function u(e, t) {

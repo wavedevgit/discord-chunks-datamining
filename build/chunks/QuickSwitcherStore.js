@@ -31,7 +31,7 @@ var i, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = "seenQSTutorial",
+let R = "seenQSTutorial",
   D = 5,
   x = 7,
   L = 3,
@@ -57,7 +57,7 @@ let w = "seenQSTutorial",
   W = null;
 
 function K() {
-  G = y.Z.getGuildCount() >= 3 || o().size(h.Z.getMutablePrivateChannels()) >= 20, H = []
+  G = y.Z.getGuildCount() >= 3 || o().size(m.Z.getMutablePrivateChannels()) >= 20, H = []
 }
 
 function z(e) {
@@ -89,7 +89,7 @@ function Q() {
     r = null != (t = S.Z.getChannelId()) ? t : true;
   switch (Z) {
     case u.h8.USER: {
-      let e = m.default.getId();
+      let e = h.default.getId();
       return C.ZP.getRecentlyTalked(r, 100).filter(t => {
         let {
           record: n
@@ -138,7 +138,7 @@ function Q() {
     for (let e of (i.push((0, u.o6)(P.intl.string(P.t["61Df13"]))), s)) a.add(e.record.id), i.push(e);
   if (null != n) {
     let e = E.ZP.getSelectableChannelIds(n).filter(e => {
-      let t = h.Z.getChannel(e);
+      let t = m.Z.getChannel(e);
       return !(null == t || e === r || Y.includes(e) || a.has(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => q(e)).filter(e => e);
     Object.values(p.Z.getActiveJoinedUnreadThreadsForGuild(n)).forEach(t => {
@@ -194,7 +194,7 @@ function J(e) {
   let {
     query: n,
     queryMode: i
-  } = e, a = n.trim(), o = null != (t = I.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(m.default.getId())]);
+  } = e, a = n.trim(), o = null != (t = I.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
   null != o && s.add("guild:".concat(o)), W = Date.now(), r = null != r ? r : new u.ZP(et, M, null != i ? j : D, {
     frecencyBoosters: true,
     blacklist: s,
@@ -262,12 +262,12 @@ function ei(e) {
 
 function ea() {
   if (U) returnfalse;
-  U = true, l.K.set(w, true)
+  U = true, l.K.set(R, true)
 }
 class eo extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(p.Z, m.default, h.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, S.Z, I.Z, _.Z, T.ZP), this.syncWith([_.Z], () => true), U = l.K.get(w) || false, Y = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(p.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, S.Z, I.Z, _.Z, T.ZP), this.syncWith([_.Z], () => true), U = l.K.get(R) || false, Y = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {
@@ -308,7 +308,7 @@ class eo extends(i = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-R(eo, "displayName", "QuickSwitcherStore"), R(eo, "persistKey", "QuickSwitcherStore");
+w(eo, "displayName", "QuickSwitcherStore"), w(eo, "persistKey", "QuickSwitcherStore");
 let es = new eo(Chunk570140.Z, {
     CONNECTION_OPEN: K,
     CONNECTION_OPEN_SUPPLEMENTAL: K,

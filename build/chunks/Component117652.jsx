@@ -64,7 +64,7 @@ let M = {
   renderStep: e => (0, r.jsx)(G, j({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => w.intl.string(w.t["W685+b"])
+    useBreadcrumbLabel: () => R.intl.string(R.t["W685+b"])
   }
 };
 
@@ -83,7 +83,7 @@ function k(e) {
       onClick: () => t(c),
       disabled: o,
       loading: s,
-      text: w.intl.string(w.t.XiOHRX)
+      text: R.intl.string(R.t.XiOHRX)
     }), i ? (0, r.jsx)(E.Z, {
       onClick: n
     }) : null]
@@ -113,20 +113,20 @@ let U = e => {
   } = (0, C.JL)(), H = (0, i.e7)([O.default], () => O.default.getCurrentUser()), {
     enabled: Y,
     giftRecommendationAlgorithm: W
-  } = m.G.useExperiment({
+  } = h.G.useExperiment({
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: false
-  }), K = (0, p.Z)(), z = Y && L === R.Wt.DM_CHANNEL, q = W === m.u.POPULAR ? w.intl.string(w.t.Kwgrrr) : w.intl.string(w.t.r1huYR), Q = async (e, t) => {
-    j(true), null != _ && E(), await (0, c.B1)(e.id, t) || E(w.intl.string(w.t["4kgVqQ"])), j(false)
+  }), K = (0, p.Z)(), z = Y && L === w.Wt.DM_CHANNEL, q = W === h.u.POPULAR ? R.intl.string(R.t.Kwgrrr) : R.intl.string(R.t.r1huYR), Q = async (e, t) => {
+    j(true), null != _ && E(), await (0, c.B1)(e.id, t) || E(R.intl.string(R.t["4kgVqQ"])), j(false)
   };
   (0, o.ZP)(() => {
-    null != M && null != A && (L !== R.Wt.DM_CHANNEL_WISHLIST && S.default.track(P.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != M && null != A && (L !== w.Wt.DM_CHANNEL_WISHLIST && S.default.track(P.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: M
     }), Q(A, M))
   });
   let X = e => {
-      L !== R.Wt.DM_CHANNEL_WISHLIST && S.default.track(P.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      L !== w.Wt.DM_CHANNEL_WISHLIST && S.default.track(P.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != A && Q(A, e), k(e)
     },
@@ -147,7 +147,7 @@ let U = e => {
         className: D.recommendedGiftPreview
       }, e)
     },
-    $ = () => (0, r.jsx)(h.Z, {
+    $ = () => (0, r.jsx)(m.Z, {
       onTextChange: e => null == l ? true : l(e),
       pendingText: s,
       currentText: s,
@@ -191,7 +191,7 @@ let U = e => {
         skusById: V,
         formatPrice: I.T4
       });
-      return L === R.Wt.USER_PROFILE_WISHLIST || L === R.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
+      return L === w.Wt.USER_PROFILE_WISHLIST || L === w.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: D.bodyColumnRight,
         children: [(0, r.jsx)(b.s, {
           giftRecipient: A
@@ -228,7 +228,7 @@ let U = e => {
     },
     onStepChange: t,
     onBackClick: n,
-    ctaDisabled: null != _ || null == A || A.id === (null == H ? true : H.id) || s.length > R.$n,
+    ctaDisabled: null != _ || null == A || A.id === (null == H ? true : H.id) || s.length > w.$n,
     loading: y
   }
 };
@@ -302,11 +302,11 @@ function Z(e) {
           children: [(0, r.jsx)(a.Text, {
             color: "text-strong",
             variant: "text-md/semibold",
-            children: w.intl.string(w.t["1+Co8G"])
+            children: R.intl.string(R.t["1+Co8G"])
           }), (0, r.jsx)(a.Heading, {
             color: "text-default",
             variant: "heading-sm/medium",
-            children: w.intl.string(w.t.nYn52B)
+            children: R.intl.string(R.t.nYn52B)
           })]
         })]
       }), (0, r.jsx)("div", {
@@ -336,7 +336,7 @@ function F(e) {
     }) : (0, y.uL)("".concat(P.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(n))
   }
   return (0, r.jsx)(a.Avr, {
-    text: w.intl.string(w.t.J82mpK),
+    text: R.intl.string(R.t.J82mpK),
     onClick: o,
     textVariant: "text-sm/medium"
   })

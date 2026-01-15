@@ -57,10 +57,10 @@ function p(e) {
 }
 let _ = 5;
 
-function m() {
+function h() {
   return new a.Z
 }
-let h = (0, Chunk663042.U)(() => ({
+let m = (0, Chunk663042.U)(() => ({
   isLoading: false,
   error: null,
   backoff: new a.Z
@@ -75,13 +75,13 @@ function g(e, t) {
     getError: c,
     retryConfig: {
       maxRetries: g = _,
-      backoff: E = m,
+      backoff: E = h,
       retryableErrors: b = p
     } = {}
   } = t, y = new Map;
 
   function O(e) {
-    if (null == e) return h;
+    if (null == e) return m;
     let t = y.get(e);
     return null == t && (t = (0, i.U)(() => ({
       isLoading: false,
@@ -127,21 +127,21 @@ function g(e, t) {
     let u = d(i),
       p = Array.isArray(e) ? e : [e],
       _ = n(...u),
-      m = O(_),
-      h = (0, s.e7)(p, () => null == l ? true : l(...u), [u]),
-      g = m(e => null == l && e.isLoading),
-      E = null != h ? h : g,
+      h = O(_),
+      m = (0, s.e7)(p, () => null == l ? true : l(...u), [u]),
+      g = h(e => null == l && e.isLoading),
+      E = null != m ? m : g,
       b = (0, s.e7)(p, () => null == c ? true : c(...u), [u]),
-      y = m(e => null == c ? e.error : null),
+      y = h(e => null == c ? e.error : null),
       S = null != b ? b : y,
       I = (0, s.e7)(p, () => a(...u), [u], f);
     return (0, r.useEffect)(() => {
       v({
         queryId: _,
         args: u,
-        useStoreState: m
+        useStoreState: h
       })
-    }, [_, u, m]), {
+    }, [_, u, h]), {
       data: I,
       error: S,
       isLoading: E,
@@ -149,10 +149,10 @@ function g(e, t) {
         v({
           queryId: _,
           args: u,
-          useStoreState: m,
+          useStoreState: h,
           refetch: true
         })
-      }, [_, u, m])
+      }, [_, u, h])
     }
   }
   return S.refetch = async function() {

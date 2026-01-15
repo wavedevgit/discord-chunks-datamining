@@ -68,7 +68,7 @@ function M(e) {
     idle: j,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, U = (0, _.bp)() === R.IlC.POPOUT, G = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), Z = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), F = false === (null == (t = null == Z ? true : Z.disabled) || t), B = (0, u.Z)([s])[0], V = (0, h.Z)(a), {
+  } = e, U = (0, _.bp)() === w.IlC.POPOUT, G = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), Z = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), F = false === (null == (t = null == Z ? true : Z.disabled) || t), B = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
     parentAnalyticsLocation: H
   } = (0, c.ZP)(), Y = e => {
     (0, f.v)(H, f.d.CAMERA, e), l.Z.setVideoEnabled(e)
@@ -77,7 +77,7 @@ function M(e) {
   }, K = () => {
     (0, f.v)(H, f.d.POPOUT, true), null != a && (0, P.Z)({
       onConfirm: async () => {
-        await (0, A.nJ)(s, a.id), m.openChannelCallPopout(a)
+        await (0, A.nJ)(s, a.id), h.openChannelCallPopout(a)
       }
     })
   };
@@ -127,7 +127,7 @@ function M(e) {
           className: x.rightPipIcon,
           popoutOpen: false,
           onOpenPopout: K,
-          onClosePopout: w.Vq
+          onClosePopout: R.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
           location: k.location,
@@ -149,8 +149,8 @@ function k(e) {
     onJumpToChannel: f,
     idle: p,
     users: _,
-    embeddedActivity: m
-  } = e, h = (0, u.Z)([o])[0];
+    embeddedActivity: h
+  } = e, m = (0, u.Z)([o])[0];
   return (0, r.jsxs)(s.P3F, {
     className: a()(L.videoControls, L.videoControlsTextActivity),
     onMouseMove: c,
@@ -161,7 +161,7 @@ function k(e) {
       className: L.topControls,
       children: (0, r.jsx)(b.r, {
         idle: p,
-        title: null != (n = null != (t = null == h ? true : h.name) ? t : null == i ? true : i.name) ? n : "",
+        title: null != (n = null != (t = null == m ? true : m.name) ? t : null == i ? true : i.name) ? n : "",
         onJumpToChannel: f,
         preventIdleComponent: E.Z
       })
@@ -175,7 +175,7 @@ function k(e) {
         className: x.__invalid_userSummaryContainer
       }), (0, r.jsx)(O.Z, {
         applicationId: o,
-        location: m.location,
+        location: h.location,
         iconClassName: x.leaveActivityIcon,
         isActive: true
       })]
@@ -207,8 +207,8 @@ function G(e) {
     channel: f,
     onJumpToChannel: p,
     onToggleHeight: _,
-    isExpanded: m,
-    hideExpandedButton: h,
+    isExpanded: h,
+    hideExpandedButton: m,
     embeddedActivity: g
   } = e, y = (0, u.Z)([d])[0];
   return (0, r.jsx)("div", {
@@ -232,8 +232,8 @@ function G(e) {
           preventIdleComponent: E.Z
         }), (0, r.jsxs)("div", {
           className: x.pipHeaderButtonsRight,
-          children: [h ? null : (0, r.jsx)(j, {
-            isExpanded: m,
+          children: [m ? null : (0, r.jsx)(j, {
+            isExpanded: h,
             onClick: _
           }), (0, r.jsx)(O.Z, {
             applicationId: d,

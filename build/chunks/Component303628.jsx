@@ -82,26 +82,26 @@ function P(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = [];
+let w = [];
 
-function w(e) {
+function R(e) {
   let {
     channelId: t,
     type: n,
     ignoreFile: a,
     smallAttachments: I = false
-  } = e, C = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), P = (0, _.Z)("attachments", l.hy.HORIZONTAL), w = (0, c.e7)([h.Z], () => h.Z.getUploads(t, n.drafts.type)), {
+  } = e, C = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), P = (0, _.Z)("attachments", l.hy.HORIZONTAL), R = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
     commandOptions: x,
     commandOptionStates: L
-  } = (0, c.cj)([m.Z], () => {
-    let e = m.Z.getActiveCommand(t);
+  } = (0, c.cj)([h.Z], () => {
+    let e = h.Z.getActiveCommand(t);
     if (null == e) return {
       isApplicationCommand: false,
-      commandOptions: R,
+      commandOptions: w,
       commandOptionStates: null
     };
-    let n = m.Z.getOptionStates(t);
+    let n = h.Z.getOptionStates(t);
     return {
       isApplicationCommand: true,
       commandOptions: e.options,
@@ -150,7 +150,7 @@ function w(e) {
       }), k(i)
     }
   }, [t, j.length, n]);
-  let F = w.filter(e => e.filename !== a);
+  let F = R.filter(e => e.filename !== a);
   return !D && 0 === F.length || D && 0 === j.length ? null : (0, r.jsx)(s.bG, {
     navigator: P,
     children: (0, r.jsx)(s.SJ, {
@@ -188,7 +188,7 @@ function D(e) {
     ignoreFile: a,
     smallAttachments: o = false
   } = e;
-  return i ? (0, r.jsx)(w, {
+  return i ? (0, r.jsx)(R, {
     channelId: t,
     type: n,
     ignoreFile: a,

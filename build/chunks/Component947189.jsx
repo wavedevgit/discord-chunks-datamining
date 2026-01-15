@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   }
   return e
 }
-let h = 500,
+let m = 500,
   g = 32;
 
 function E(e) {
@@ -48,7 +48,7 @@ function E(e) {
   } = e, _ = (0, i.useRef)(Date.now()), E = (0, i.useRef)(0), b = (0, i.useContext)(d.Q), y = (0, l.dQu)(b.primaryColor).hex(), O = (0, f.Z)(y), v = (0, u.a7)(O), [S, I] = (0, i.useState)(t), T = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   (0, i.useEffect)(() => {
     let e = o().throttle(() => {
-      let r = Math.min((Date.now() - _.current) / h, 1);
+      let r = Math.min((Date.now() - _.current) / m, 1);
       I(Math.round((n - t) * r + t)), r < 1 && (E.current = requestAnimationFrame(e))
     }, g);
     return E.current = requestAnimationFrame(e), () => {
@@ -70,5 +70,5 @@ function E(e) {
     fit: "layout",
     withReducedMotion: "play"
   };
-  return "left" === a ? (0, r.jsx)(l.P9c, m({}, C)) : (0, r.jsx)(l.ljV, m({}, C))
+  return "left" === a ? (0, r.jsx)(l.P9c, h({}, C)) : (0, r.jsx)(l.ljV, h({}, C))
 }

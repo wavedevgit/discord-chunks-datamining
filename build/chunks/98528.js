@@ -4,8 +4,8 @@
 require.d(exports, {
   Qs: () => E,
   VO: () => b,
-  Xs: () => h,
-  ep: () => m,
+  Xs: () => m,
+  ep: () => h,
   fe: () => g,
   t$: () => O,
   yi: () => y
@@ -22,7 +22,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 let p = (0, Chunk468194.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
   _ = 8,
-  m = e => {
+  h = e => {
     let {
       gridWrapperRef: t,
       containerWidth: n,
@@ -40,7 +40,7 @@ let p = (0, Chunk468194.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADD
       return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
     }, [u]), l
   },
-  h = e => {
+  m = e => {
     let {
       activeCategoryIndex: t,
       listRef: n,
@@ -162,8 +162,8 @@ let p = (0, Chunk468194.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADD
       let r = d(e, t);
       null != r && l(r, n)
     }, [d, l]), {
-      dispatch: m,
-      getItemProps: h,
+      dispatch: h,
+      getItemProps: m,
       getRowProps: g,
       getContainerProps: E
     } = (0, s.Z)({
@@ -189,8 +189,8 @@ let p = (0, Chunk468194.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADD
       };
       return window.addEventListener("mousemove", e), () => window.removeEventListener("mousemove", e)
     }, []), {
-      gridDispatch: m,
-      getItemProps: h,
+      gridDispatch: h,
+      getItemProps: m,
       getRowProps: g,
       gridContainerProps: b,
       handleGridContainerKeyDown: y,
@@ -266,7 +266,7 @@ function O(e) {
     getRowProps: f,
     gridContainerProps: p,
     handleGridContainerKeyDown: _,
-    isUsingKeyboardNavigation: m
+    isUsingKeyboardNavigation: h
   } = b({
     columnCounts: t,
     gridNavigatorId: o,
@@ -292,6 +292,6 @@ function O(e) {
     getRowProps: f,
     gridContainerProps: p,
     handleGridContainerKeyDown: _,
-    isUsingKeyboardNavigation: m
+    isUsingKeyboardNavigation: h
   }
 }

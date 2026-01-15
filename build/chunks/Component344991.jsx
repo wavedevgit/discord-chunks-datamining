@@ -65,7 +65,7 @@ function O(e) {
     iconSize: n
   } = e;
   return (0, r.jsx)("div", {
-    className: m.iconContainer,
+    className: h.iconContainer,
     style: {
       height: n,
       width: n
@@ -88,13 +88,13 @@ function S(e) {
     type: b,
     maxValues: v,
     disabled: S
-  } = t, I = (0, _.Wo)(t), [T, C] = i.useState(false), [A, N] = i.useState(false), [P, R] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(P.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
+  } = t, I = (0, _.Wo)(t), [T, C] = i.useState(false), [A, N] = i.useState(false), [P, w] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [R, D] = i.useState(new Set(P.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
     L(e);
     let t = new Map(null == g ? true : g.map(e => [e.value, e]));
-    R(t), D(new Set(t.keys())), M(e => e + 1)
+    w(t), D(new Set(t.keys())), M(e => e + 1)
   }, [g, x]);
   let k = (0, f.CJ)();
   l()(null != k, "SearchableSelectActionComponent must be rendered inside a ComponentStateContext");
@@ -111,7 +111,7 @@ function S(e) {
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));
-      R(e), D(new Set(e.keys()))
+      w(e), D(new Set(e.keys()))
     }
   }, [U]);
   let W = i.useCallback(() => {
@@ -121,12 +121,12 @@ function S(e) {
     }) && D(new Set(P.keys()))
   }, [G, b, P]);
   i.useEffect(() => {
-    !T && !A && (P.size === w.size && Array.from(P.keys()).every(e => w.has(e)) || W())
-  }, [T, A, w, P, W]);
+    !T && !A && (P.size === R.size && Array.from(P.keys()).every(e => R.has(e)) || W())
+  }, [T, A, R, P, W]);
   let K = e => {
-      T || N(true), R(new Map(e.map(e => [e.value, e])))
+      T || N(true), w(new Map(e.map(e => [e.value, e])))
     },
-    z = e => R(null != e ? new Map([
+    z = e => w(null != e ? new Map([
       [e.value, e]
     ]) : new Map),
     q = e => new Promise(t => {
@@ -145,8 +145,8 @@ function S(e) {
     J = {
       isProcessing: Y,
       isDisabled: S || Z === p.gH.DISABLED || F,
-      wrapperClassName: o()(m.select, {
-        [m.inModal]: V
+      wrapperClassName: o()(h.select, {
+        [h.inModal]: V
       }),
       options: q,
       placeholder: X ? I : true,
@@ -159,13 +159,13 @@ function S(e) {
     };
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: m.container,
+      className: h.container,
       children: H ? (0, r.jsx)(c.d, E({
         value: Array.from(P.values()),
         onChange: K,
         multi: true,
         inputClassNames: o()({
-          [m.hidden]: !X
+          [h.hidden]: !X
         }),
         closeOnSelect: false
       }, J), j) : (0, r.jsx)(c.d, E({
@@ -174,7 +174,7 @@ function S(e) {
         clearable: true
       }, J), j)
     }), null == B || V ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(B)), {
-      className: h.error
+      className: m.error
     }))]
   })
 }

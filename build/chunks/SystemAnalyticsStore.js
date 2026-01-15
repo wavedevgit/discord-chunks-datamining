@@ -52,15 +52,15 @@ function p(e, t) {
 let _ = {
   hashes: {}
 };
-async function m() {
+async function h() {
   if (!l.isPlatformEmbedded || !(0, l.isWindows)()) return [];
   await c.ZP.ensureModule("discord_media");
   let e = c.ZP.requireModule("discord_media");
   return await e.getSystemAnalyticsBlob() || []
 }
-async function h() {
+async function m() {
   try {
-    let t = (await m()).filter(e => _.hashes[e.name] !== e.hash);
+    let t = (await h()).filter(e => _.hashes[e.name] !== e.hash);
     for (let {
         name: n,
         hash: r,
@@ -80,7 +80,7 @@ async function h() {
 }
 
 function g() {
-  return h(), false
+  return m(), false
 }
 class E extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -93,7 +93,7 @@ class E extends(r = Chunk442837.ZP.PersistedStore) {
   }
   async info() {
     try {
-      let e = (await m()).find(e => "hardware_detected" === e.name);
+      let e = (await h()).find(e => "hardware_detected" === e.name);
       if (null == e) return null;
       return e.data
     } catch (e) {}

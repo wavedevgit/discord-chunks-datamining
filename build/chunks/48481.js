@@ -7,7 +7,7 @@ require.d(exports, {
   cv: () => b,
   d5: () => g,
   i7: () => I,
-  kI: () => h,
+  kI: () => m,
   re: () => O,
   tU: () => A,
   u0: () => S,
@@ -49,13 +49,13 @@ function p(e) {
 let _ = {
     readerFactory: e => new r.o(e, new TextDecoder("utf-8"))
   },
-  m = {
+  h = {
     [Chunk526761.yP.PRELOADED_USER_SETTINGS]: Chunk524437.o8,
     [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: Chunk377108.ji
   };
 
-function h(e, t) {
-  return null != t && e in m ? g(m[e], t) : null
+function m(e, t) {
+  return null != t && e in h ? g(h[e], t) : null
 }
 
 function g(e, t) {
@@ -73,7 +73,7 @@ function E(e) {
 }
 
 function b(e, t) {
-  return y(m[e], t)
+  return y(h[e], t)
 }
 
 function y(e, t) {

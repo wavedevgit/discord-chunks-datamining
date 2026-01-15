@@ -2,7 +2,7 @@
 /** chunk id: 992713, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./388685.js"), require("./642613.js");
 var Chunk108131 = require("./108131.js"),
   i = require.n(Chunk108131),
@@ -48,7 +48,7 @@ function O(e) {
   var t;
   let n = null == (t = _.Z.getGuild(e.guild_id)) ? true : t.name;
   b.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.ZP.Emitter.batched(() => {
-    null != e.channels && A(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && P(e.guild_id, new Set(e.emojis)), null != e.stickers && R(e.guild_id, new Set(e.stickers))
+    null != e.channels && A(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && P(e.guild_id, new Set(e.emojis)), null != e.stickers && w(e.guild_id, new Set(e.stickers))
   })
 }
 
@@ -77,7 +77,7 @@ function T(e) {
     o = C(p.Z.getSortedRoles(e).map(e => e.id)),
     s = C(u.ZP.getGuildEmoji(e).map(e => e.id)),
     l = C(null != (r = null == (n = d.Z.getStickersByGuildId(e)) ? true : n.map(e => e.id)) ? r : []);
-  h.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, a, o, s, l)
+  m.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, a, o, s, l)
 }
 
 function C(e) {
@@ -85,7 +85,7 @@ function C(e) {
 }
 
 function A(e, t) {
-  let n = m.default.keys(f.Z.getMutableBasicGuildChannelsForGuild(e));
+  let n = h.default.keys(f.Z.getMutableBasicGuildChannelsForGuild(e));
   b.fileOnly("syncChannels", {
     channelIdsInMemory: n,
     channelIdsFromServer: t
@@ -102,7 +102,7 @@ function A(e, t) {
 }
 
 function N(e, t) {
-  m.default.keys(p.Z.getUnsafeMutableRoles(e)).forEach(n => {
+  h.default.keys(p.Z.getUnsafeMutableRoles(e)).forEach(n => {
     t.has(n) || o.Z.dispatch({
       type: "GUILD_ROLE_DELETE",
       guildId: e,
@@ -121,7 +121,7 @@ function P(e, t) {
   })
 }
 
-function R(e, t) {
+function w(e, t) {
   var n;
   let r = null != (n = d.Z.getStickersByGuildId(e)) ? n : [],
     i = r.filter(e => t.has(e.id));
@@ -131,4 +131,4 @@ function R(e, t) {
     stickers: i
   })
 }
-let w = new y
+let R = new y

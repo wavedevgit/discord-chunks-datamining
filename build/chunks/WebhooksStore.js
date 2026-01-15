@@ -30,7 +30,7 @@ function _(e) {
   return null != d[e] || (d[e] = {}), d[e]
 }
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     channelId: n,
@@ -45,7 +45,7 @@ function m(e) {
   s.concat(i).forEach(e => l[e.id] = e), delete f[p(t, n)]
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     channelId: n
@@ -84,8 +84,8 @@ class b extends(i = Chunk442837.ZP.Store) {
 }
 u(b, "displayName", "WebhooksStore");
 let y = new b(Chunk570140.Z, {
-  WEBHOOKS_UPDATE: m,
-  WEBHOOKS_FETCHING: h,
+  WEBHOOKS_UPDATE: h,
+  WEBHOOKS_FETCHING: m,
   WEBHOOK_CREATE: g,
   WEBHOOK_UPDATE: g,
   WEBHOOK_DELETE: E

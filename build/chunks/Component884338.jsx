@@ -2,7 +2,7 @@
 /** chunk id: 884338, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => w,
+  ZP: () => R,
   ag: () => I,
   u8: () => b
 }), require("./539854.js"), require("./388685.js");
@@ -18,7 +18,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk426563 = require("./426563.js"),
   Chunk608908 = require("./608908.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -119,7 +119,7 @@ function P() {
       return y
   }
 }
-class R extends(r = Chunk473749.PureComponent) {
+class w extends(r = Chunk473749.PureComponent) {
   renderUsers() {
     let {
       users: e,
@@ -213,7 +213,7 @@ class R extends(r = Chunk473749.PureComponent) {
         popoutUserId: null
       }),
       clickTrap: true,
-      children: n => (0, i.jsxs)("div", E(h({
+      children: n => (0, i.jsxs)("div", E(m({
         className: s()(e, _.container, N(t)),
         ref: this._ref
       }, n), {
@@ -222,9 +222,9 @@ class R extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "state", {
+    super(...e), h(this, "state", {
       popoutUserId: null
-    }), m(this, "_ref", a.createRef()), m(this, "defaultRenderUser", (e, t, n) => {
+    }), h(this, "_ref", a.createRef()), h(this, "defaultRenderUser", (e, t, n) => {
       let r, {
         showUserPopout: a,
         guildId: o,
@@ -275,11 +275,11 @@ class R extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-m(R, "defaultProps", {
+h(w, "defaultProps", {
   max: 10,
   renderMoreUsers: C,
   renderIcon: false,
   showDefaultAvatarsForNullUsers: false,
   size: b.SIZE_24
 });
-let w = R
+let R = w

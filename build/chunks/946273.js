@@ -7,7 +7,7 @@ require.d(exports, {
   lD: () => y,
   mm: () => b,
   nX: () => E,
-  vV: () => h
+  vV: () => m
 }), require("./997841.js"), require("./388685.js");
 var Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
@@ -40,19 +40,19 @@ function _(e, t, n) {
   return (0, i.e7)([], () => p(e, t, n), [t, e, n])
 }
 
-function m(e) {
+function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 7,
     n = c.default.extractTimestamp(e.id);
   return Date.now() - n < 864e5 * t
 }
-let h = (e, t) => {
+let m = (e, t) => {
   let n = (0, i.e7)([a.ZP], () => {
       var n, i;
       return (0, r.yE)(null != (i = null == (n = a.ZP.getMember(e, t)) ? true : n.flags) ? i : 0, u.q.DID_REJOIN)
     }),
     s = (0, i.e7)([o.Z], () => {
       let t = o.Z.getGuild(e);
-      return null != t && m(t)
+      return null != t && h(t)
     }),
     c = (0, i.e7)([l.default], () => {
       var e;

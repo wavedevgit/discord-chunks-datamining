@@ -4,7 +4,7 @@
 require.d(exports, {
   IF: () => p,
   LU: () => c,
-  Rt: () => m,
+  Rt: () => h,
   hW: () => u,
   t3: () => _
 }), require("./539854.js"), require("./388685.js");
@@ -67,7 +67,7 @@ function p() {
 function _(e) {
   return Math.max(e.pageSize * d, f)
 }
-class m {
+class h {
   reset() {
     this._paginationState = p(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
   }

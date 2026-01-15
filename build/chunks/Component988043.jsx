@@ -45,17 +45,17 @@ function I(e) {
       applied_to_existing_guilds: t
     })
   }
-  let R = e => {
-      w(!e)
+  let w = e => {
+      R(!e)
     },
-    w = e => {
+    R = e => {
       let t = () => {
           d.gR.updateSetting(e), d.h2.updateSetting(e ? s.Z.getGuildIds() : []), P(e, true)
         },
         n = () => {
           d.gR.updateSetting(e), P(e, false)
         };
-      (0, h.V)({
+      (0, m.V)({
         header: v.intl.string(v.t["uUr+GR"]),
         body: v.intl.string(v.t.hjGJBp),
         confirmText: v.intl.string(v.t.gm1Vej),
@@ -68,14 +68,14 @@ function I(e) {
     D = C ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
   return (0, r.jsx)(_.U, {
     setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
-    children: n === y.T ? (0, r.jsx)(m.ZP, {
+    children: n === y.T ? (0, r.jsx)(h.ZP, {
       title: D,
       note: C ? v.intl.string(v.t.XXGmuB) : v.intl.string(v.t.wbYDfT),
       value: !T,
-      onChange: R,
+      onChange: w,
       disabled: A,
       tooltipText: A ? v.intl.string(S.default["6Af/cw"]) : true
-    }) : (0, r.jsx)(m.ZP, {
+    }) : (0, r.jsx)(h.ZP, {
       title: D,
       note: E ? v.intl.string(v.t.V0ka0Q) : C ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
       value: !I,

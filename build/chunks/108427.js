@@ -2,7 +2,7 @@
 /** chunk id: 108427, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => h,
+  e: () => m,
   t: () => g
 }), require("./35282.js"), require("./388685.js");
 var Chunk772848 = require("./772848.js"),
@@ -97,14 +97,14 @@ class _ {
     c(this, "loadId", (0, r.Z)()), c(this, "appUIViewed", false)
   }
 }
-let m = new _;
+let h = new _;
 
-function h(e) {
-  m.trackAppUIViewed(e)
+function m(e) {
+  h.trackAppUIViewed(e)
 }
 
 function g() {
-  m.trackTTI()
+  h.trackTTI()
 }
 
 function E() {

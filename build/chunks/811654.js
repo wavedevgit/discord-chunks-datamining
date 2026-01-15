@@ -2,8 +2,8 @@
 /** chunk id: 811654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  HI: () => m,
-  _H: () => h,
+  HI: () => h,
+  _H: () => m,
   af: () => g,
   tx: () => E
 }), require("./388685.js");
@@ -20,9 +20,9 @@ var Chunk524846 = require("./524846.js"),
   Chunk280501 = require("./280501.js");
 require("./892902.js");
 let _ = 15,
-  m = 1e3;
+  h = 1e3;
 
-function h(e, t, n) {
+function m(e, t, n) {
   let r = a.Z.getChannel(n);
   if (null == r) return [];
   let o = e === i.re.USER_SELECT || e === i.re.MENTIONABLE_SELECT,

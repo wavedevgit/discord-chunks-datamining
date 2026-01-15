@@ -31,10 +31,10 @@ function y() {
   let {
     hasFetchedSubscriptions: e,
     premiumSubscription: t
-  } = (0, s.cj)([h.Z], () => ({
-    hasFetchedSubscriptions: h.Z.hasFetchedSubscriptions(),
-    premiumSubscription: h.Z.getPremiumTypeSubscription()
-  })), n = (0, p.V)(), a = (0, s.e7)([m.Z], () => m.Z.hasFetchedPaymentSources), y = (0, s.e7)([_.Z], () => _.Z.isFetchingCurrentUserAppliedBoosts);
+  } = (0, s.cj)([m.Z], () => ({
+    hasFetchedSubscriptions: m.Z.hasFetchedSubscriptions(),
+    premiumSubscription: m.Z.getPremiumTypeSubscription()
+  })), n = (0, p.V)(), a = (0, s.e7)([h.Z], () => h.Z.hasFetchedPaymentSources), y = (0, s.e7)([_.Z], () => _.Z.isFetchingCurrentUserAppliedBoosts);
   return e && n && a && !y ? (0, r.jsxs)("div", {
     className: b.container,
     children: [(0, r.jsx)("div", {

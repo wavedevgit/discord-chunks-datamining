@@ -58,9 +58,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -68,7 +68,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -129,7 +129,7 @@ let y = (0, Chunk663042.U)(e => ({
           {
             [t]: i
           } = r,
-          a = m(r, [t].map(E)),
+          a = h(r, [t].map(E)),
           o = Object.keys(a).length > 0 || Object.keys(e.avatarDecorationAssets).length > 0;
         return _(f({}, e), {
           collectionAssets: a,
@@ -162,7 +162,7 @@ let y = (0, Chunk663042.U)(e => ({
           {
             [t]: i
           } = r,
-          a = m(r, [t].map(E)),
+          a = h(r, [t].map(E)),
           o = Object.keys(a).length > 0 || Object.keys(e.collectionAssets).length > 0;
         return _(f({}, e), {
           avatarDecorationAssets: a,
@@ -217,7 +217,7 @@ let y = (0, Chunk663042.U)(e => ({
           let {
             base64: t
           } = e;
-          return m(e, ["base64"])
+          return h(e, ["base64"])
         }), r) {
         var s, l, u, d, f, p;
         a.reducedMotionSrc = null != (d = null == (s = n[c.cq.REDUCED_MOTION]) ? true : s.src) ? d : "", a.staticFrameSrc = null != (f = null == (l = n[c.cq.STATIC]) ? true : l.src) ? f : "", a.thumbnailPreviewSrc = null != (p = null == (u = n[c.cq.THUMBNAIL]) ? true : u.src) ? p : ""

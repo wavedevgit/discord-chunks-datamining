@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk590149 = require("./590149.jsx"),
   Chunk314897 = require("./314897.js"),
   Chunk158570 = require("./158570.js");
-let f = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chunk657707.Ffc, Chunk657707.WXD, Chunk657707.EmW, Chunk657707.Jmo, Chunk657707.Vy8, Chunk657707.yxC, Chunk657707.RJm, Chunk657707.y3H, Chunk657707.vqy, Chunk657707.ED8, Chunk657707.ZRV, Chunk657707.GsA, Chunk657707.GuY, Chunk657707.aXf, Chunk657707.ewm],
+let f = [Chunk657707.UserIcon, Chunk657707.ShieldIcon, Chunk657707.GiftIcon, Chunk657707.AchievementsIcon, Chunk657707.PiggyBankIcon, Chunk657707.TreehouseIcon, Chunk657707.SpeedometerIcon, Chunk657707.CompassIcon, Chunk657707.SignPostIcon, Chunk657707.CarIcon, Chunk657707.TrainIcon, Chunk657707.TeacupIcon, Chunk657707.InventoryIcon, Chunk657707.FoodIcon, Chunk657707.BurgerIcon, Chunk657707.MagicDoorIcon, Chunk657707.PawPrintIcon, Chunk657707.RecordPlayerIcon, Chunk657707.SettingsIcon],
   x = ["text-default", "text-feedback-positive", "text-feedback-warning", "text-feedback-info", "text-feedback-critical"],
   b = () => {
     let [e, t] = r.useState(""), [n, i] = r.useState(""), [l, s] = r.useState(false);
@@ -146,7 +146,7 @@ let f = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
                   className: l()({
                     [h.userInfoDisabled]: g === e.id
                   }),
-                  children: [(0, a.jsx)(s.tBG, {
+                  children: [(0, a.jsx)(s.UserIcon, {
                     size: "custom",
                     width: 20,
                     height: 20,
@@ -166,7 +166,7 @@ let f = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
                 }), g === e.id ? (0, a.jsx)(c.Text, {
                   variant: "text-sm/normal",
                   color: "text-feedback-positive",
-                  children: (0, a.jsx)(s.owK, {
+                  children: (0, a.jsx)(s.CircleCheckIcon, {
                     size: "sm",
                     color: "currentColor"
                   })
@@ -179,7 +179,7 @@ let f = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
           }, e.id)), (0, a.jsx)("div", {
             className: h.buttonContainer,
             children: (0, a.jsx)(c.Button, {
-              icon: s.XHJ,
+              icon: s.TrashIcon,
               text: "",
               size: "sm",
               variant: "secondary",

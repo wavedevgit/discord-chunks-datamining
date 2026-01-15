@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Lh: () => u,
-  MR: () => h,
+  MR: () => m,
   g1: () => f,
   iD: () => d,
   ir: () => p,
   s4: () => _,
-  sm: () => m
+  sm: () => h
 }), require("./704826.js"), require("./35282.js"), require("./781311.js");
 var Chunk633302 = require("./633302.js"),
   Chunk695346 = require("./695346.js"),
@@ -52,7 +52,7 @@ function _(e) {
   return e.isThread() ? s.jXE.THREAD_TEXT_AREA : e.isForumPost() ? s.jXE.FORUM_CHANNEL_TEXT_AREA : e.isGuildVocal() ? s.jXE.TEXT_IN_VOICE : s.jXE.CHANNEL_TEXT_AREA
 }
 
-function m(e) {
+function h(e) {
   let {
     userId: t,
     optimistic: n
@@ -60,7 +60,7 @@ function m(e) {
   return !n || !!r
 }
 
-function h(e, t) {
+function m(e, t) {
   i.fz.updateSetting(e), o.default.track(s.rMx.NOTIFICATION_SETTINGS_UPDATED, {
     update_type: l.I.ACCOUNT,
     reaction_notifications: e,

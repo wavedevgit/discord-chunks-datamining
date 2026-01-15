@@ -68,7 +68,7 @@ async function v(e, t, n) {
     }), null != e) {
     let r = _.Z.getGuild(e);
     if ((null == r ? true : r.joinedAt) == null) try {
-      await m.Ub(e, {}, {
+      await h.Ub(e, {}, {
         channelId: t,
         messageId: n
       });
@@ -108,7 +108,7 @@ function S(e) {
         onClick: c,
         onContextMenu: f,
         className: "channelMention",
-        children: [null != t.inContent ? o(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, h.S)(t, o, s)]
+        children: [null != t.inContent ? o(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, m.S)(t, o, s)]
       }, s.key)
     }
   }

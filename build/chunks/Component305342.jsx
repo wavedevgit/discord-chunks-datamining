@@ -42,27 +42,27 @@ let x = 24,
       benefits: t,
       header: n,
       guildId: a
-    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, L), u = t.length > L, f = t.length - L, p = w.intl.formatToPlainString(w.t.XSdy72, {
+    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, L), u = t.length > L, f = t.length - L, p = R.intl.formatToPlainString(R.t.XSdy72, {
       numTruncated: f
-    }), _ = () => s(e => !e), h = (0, d.Dt)();
+    }), _ = () => s(e => !e), m = (0, d.Dt)();
     return 0 === t.length ? null : (0, r.jsxs)("div", {
       className: D.benefitsSection,
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-xs/bold",
         color: "text-default",
         className: D.sectionHeader,
-        id: h,
+        id: m,
         children: n
       }), (0, r.jsx)(c.LZC, {
         size: 12
       }), (0, r.jsx)("ul", {
         className: D.benefitsList,
-        "aria-labelledby": h,
+        "aria-labelledby": m,
         children: l.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(T.Z, {
             guildId: a,
             benefit: e
-          }, (0, m.ab)(e))
+          }, (0, h.ab)(e))
         }, t))
       }), u && (0, r.jsx)(U, {
         isViewAll: o,
@@ -90,7 +90,7 @@ let x = 24,
         variant: "text-xs/bold",
         color: "text-default",
         className: D.sectionHeader,
-        children: w.intl.format(w.t.NAnXEo, {
+        children: R.intl.format(R.t.NAnXEo, {
           count: o.length
         })
       }), (0, r.jsx)(c.LZC, {
@@ -127,7 +127,7 @@ let x = 24,
           variant: "text-xs/bold",
           color: "text-default",
           className: D.sectionHeader,
-          children: w.intl.string(w.t.FJZmYx)
+          children: R.intl.string(R.t.FJZmYx)
         }),
         children: [(0, r.jsx)(c.LZC, {
           size: 8
@@ -137,11 +137,11 @@ let x = 24,
           className: D.roleMessagePreview
         })]
       }), (0, r.jsx)(j, {
-        header: w.intl.string(w.t.LtfhAj),
+        header: R.intl.string(R.t.LtfhAj),
         benefits: l,
         guildId: n
       }), (0, r.jsx)(j, {
-        header: w.intl.string(w.t["8oxWpO"]),
+        header: R.intl.string(R.t["8oxWpO"]),
         benefits: u,
         guildId: n
       }), (0, r.jsx)(M, {
@@ -155,7 +155,7 @@ let x = 24,
       onToggle: t,
       isViewAll: n,
       showMoreText: i
-    } = e, a = n ? w.intl.string(w.t["r/xxPU"]) : i;
+    } = e, a = n ? R.intl.string(R.t["r/xxPU"]) : i;
     return (0, r.jsx)(c.Avr, {
       text: a,
       onClick: t,
@@ -169,7 +169,7 @@ let x = 24,
       guildId: n,
       groupListingId: a,
       analyticsLocation: d
-    } = e, _ = (0, h.jO)(t), {
+    } = e, _ = (0, m.jO)(t), {
       openModal: y,
       canOpenModal: O,
       cannotOpenReason: v,
@@ -177,22 +177,22 @@ let x = 24,
     } = (0, N.Z)(_, n, a, d), T = (0, s.e7)([p.Z], () => p.Z.isSyncing), {
       activeSubscription: x,
       activeSubscriptionListing: L
-    } = (0, E.Z)(a), j = (null == L ? true : L.id) === t, M = (null == x ? true : x.status) === R.O0b.CANCELED, [G, Z] = i.useState(false), [F, B] = i.useState(false), V = i.useCallback(e => {
+    } = (0, E.Z)(a), j = (null == L ? true : L.id) === t, M = (null == x ? true : x.status) === w.O0b.CANCELED, [G, Z] = i.useState(false), [F, B] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), B(t)
-    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, Q = () => Z(e => !e), X = (0, u.Z)(P.iP), [J, $] = i.useState(false), ee = J || !X, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = w.intl.string(w.t.KzmEA9);
+    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, Q = () => Z(e => !e), X = (0, u.Z)(P.iP), [J, $] = i.useState(false), ee = J || !X, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = R.intl.string(R.t.KzmEA9);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: D.container,
       "aria-label": H,
       children: [q && (0, r.jsxs)("div", {
         className: o()(D.tierTrialIndicator, D.tierTopIndicator),
-        children: [w.intl.format(w.t.L2ouip, {
-          trialPeriodDuration: (0, m.iG)({
+        children: [R.intl.format(R.t.L2ouip, {
+          trialPeriodDuration: (0, h.iG)({
             interval: W.interval,
             interval_count: W.interval_count
           })
         }), (0, r.jsx)(l.u, {
-          text: w.intl.formatToPlainString(w.t.FYyR4o, {
+          text: R.intl.formatToPlainString(R.t.FYyR4o, {
             activeTrialUserLimit: null != K ? K : 0
           }),
           children: (0, r.jsx)(c.d3s, {
@@ -221,7 +221,7 @@ let x = 24,
               disabled: true,
               fullWidth: true,
               variant: M ? "secondary" : "primary",
-              text: M ? w.intl.string(w.t.iKHmu0) : w.intl.string(w.t.XvAuMo)
+              text: M ? R.intl.string(R.t.iKHmu0) : R.intl.string(R.t.XvAuMo)
             }) : (0, r.jsxs)(r.Fragment, {
               children: [O ? null : (0, r.jsx)(c.Wn, {
                 className: D.helpMessage,
@@ -229,7 +229,7 @@ let x = 24,
                 children: v
               }), (0, r.jsx)(c.Button, {
                 fullWidth: true,
-                text: w.intl.string(w.t.fM5ZsX),
+                text: R.intl.string(R.t.fM5ZsX),
                 disabled: !O || T,
                 loading: S,
                 onClick: y,

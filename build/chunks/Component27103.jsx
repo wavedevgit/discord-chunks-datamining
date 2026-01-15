@@ -2,7 +2,7 @@
 /** chunk id: 27103, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,12 +18,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk138851 = require("./138851.js");
 
-function m(e) {
+function h(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, m = (0, l.ZP)(t), h = i(m), {
+  } = e, h = (0, l.ZP)(t), m = i(h), {
     avatarSrc: g,
     eventHandlers: {
       onMouseEnter: E,
@@ -72,8 +72,8 @@ function m(e) {
             [_.compact]: n
           }),
           children: p.intl.format(p.t.qntXNQ, {
-            username: m.nick,
-            usernameHook: h
+            username: h.nick,
+            usernameHook: m
           })
         })]
       })

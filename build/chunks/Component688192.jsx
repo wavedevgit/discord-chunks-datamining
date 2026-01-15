@@ -41,8 +41,8 @@ function O(e) {
     buttonIcon: A,
     isOwned: N = false,
     renderSourceIcon: P,
-    dragHandle: R,
-    giftingOrigin: w,
+    dragHandle: w,
+    giftingOrigin: R,
     source: D
   } = e, x = i.useRef(null), L = i.useRef(null), j = null != v ? v : L, {
     trackUserProfileWishlistAction: M
@@ -76,9 +76,9 @@ function O(e) {
       fullWidth: true
     })
   }), H = () => {
-    if (w === g.Wt.DM_CHANNEL_WISHLIST) {
+    if (R === g.Wt.DM_CHANNEL_WISHLIST) {
       let e = D === c.lr.WISHLIST ? "wishlist" : "shop";
-      d.default.track(h.rMx.GIFTING_ITEM_CLICKED, {
+      d.default.track(m.rMx.GIFTING_ITEM_CLICKED, {
         sku_id: t.skuId,
         item_source: e,
         wishlist_id: D === c.lr.WISHLIST ? n : null,
@@ -86,7 +86,7 @@ function O(e) {
       })
     } else null != n && M({
       wishlistId: n,
-      action: m.NW.WISHLIST_ITEM_CLICKED,
+      action: h.NW.WISHLIST_ITEM_CLICKED,
       skuId: t.skuId,
       productLines: new Set([t.skuProductLine])
     });
@@ -120,7 +120,7 @@ function O(e) {
           e.stopPropagation(), H()
         }
       })]
-    }), null != P && P(), R, a && null != n && (0, r.jsx)(_.Z, {
+    }), null != P && P(), w, a && null != n && (0, r.jsx)(_.Z, {
       iconSize: "sm",
       item: t,
       wishlistId: n,

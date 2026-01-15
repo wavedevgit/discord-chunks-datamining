@@ -68,25 +68,25 @@ function A(e) {
     refreshPosition: u
   } = e, E = t.guildId === S.X8, O = (0, o.e7)([g.Z], () => g.Z.getGuild(t.guildId)), v = !E && null != O, [A, N] = i.useState(), P = (0, b.V2)({
     location: "SoundmojiGuildInfo"
-  }), R = E || v || null != A || !P, [w, D] = i.useState(!R);
+  }), w = E || v || null != A || !P, [R, D] = i.useState(!w);
   i.useEffect(() => {
-    R || (D(true), (0, _.xU)(t.soundId, t.guildId).then(e => {
+    w || (D(true), (0, _.xU)(t.soundId, t.guildId).then(e => {
       N(e)
     }).finally(() => {
       D(false), u()
     }))
-  }, [u, R, t.guildId, t.soundId]);
+  }, [u, w, t.guildId, t.soundId]);
   let {
     buttonType: x,
     description: L
-  } = (0, y.Z)(t, n, v, A), j = x === y.y.JOIN_GUILD, M = !E && w, k = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != A ? d.JO.createFromDiscoverableGuild(A) : true, [O, v, A]);
+  } = (0, y.Z)(t, n, v, A), j = x === y.y.JOIN_GUILD, M = !E && R, k = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != A ? d.JO.createFromDiscoverableGuild(A) : true, [O, v, A]);
   return M ? (0, r.jsx)(p.SE, {}) : (0, r.jsxs)("div", {
     className: T.infoContainer,
     children: [(0, r.jsxs)(p.W_, {
       children: [(0, r.jsxs)("div", {
         className: T.infoExpandedSoundContainer,
-        children: [(0, r.jsx)(h.ZP, {
-          buttonOverlay: m.Pb.NONE,
+        children: [(0, r.jsx)(m.ZP, {
+          buttonOverlay: h.Pb.NONE,
           sound: t,
           channel: true,
           isSoundmoji: true,

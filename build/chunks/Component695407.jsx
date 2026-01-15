@@ -32,14 +32,14 @@ let l = Chunk473749.forwardRef(function(e, t) {
   let _ = e => {
       l(e), null == f || f(a.U.SEARCH)
     },
-    m = () => {
+    h = () => {
       l(""), null == f || f(a.U.SEARCH)
     };
   return (0, r.jsx)(o.E1j, {
     size: "sm",
     disabled: c,
     onChange: _,
-    onClear: m,
+    onClear: h,
     query: n,
     placeholder: u,
     autoFocus: false,

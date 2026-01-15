@@ -2,7 +2,7 @@
 /** chunk id: 210753, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => m,
+  $: () => h,
   M: () => _
 }), require("./539854.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -46,7 +46,7 @@ function _(e) {
   }, [e])
 }
 
-function m(e, t) {
+function h(e, t) {
   _(e);
   let n = r.useMemo(() => null != t ? {
     size: t.coverImageSize

@@ -19,8 +19,8 @@ function s(e, t) {
     onPressUp: f,
     onPressChange: p,
     preventFocusOnPress: _,
-    allowFocusWhenDisabled: m,
-    onClick: h,
+    allowFocusWhenDisabled: h,
+    onClick: m,
     href: g,
     target: E,
     rel: b,
@@ -55,14 +55,14 @@ function s(e, t) {
     onPressChange: p,
     onPress: c,
     onPressUp: f,
-    onClick: h,
+    onClick: m,
     isDisabled: l,
     preventFocusOnPress: _,
     ref: t
   }), {
     focusableProps: S
   } = (0, o.kc)(e, t);
-  m && (S.tabIndex = l ? false : S.tabIndex);
+  h && (S.tabIndex = l ? false : S.tabIndex);
   let I = (0, r.d)(S, O, (0, i.z)(e, {
     labelable: true
   }));

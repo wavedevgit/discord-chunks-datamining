@@ -4,7 +4,7 @@
 require.d(exports, {
   En: () => r,
   Hr: () => f,
-  N6: () => h,
+  N6: () => m,
   Su: () => l,
   UX: () => a,
   Vr: () => i,
@@ -12,7 +12,7 @@ require.d(exports, {
   c: () => s,
   cZ: () => c,
   gV: () => d,
-  kV: () => m,
+  kV: () => h,
   t0: () => o,
   td: () => u,
   vO: () => p
@@ -37,9 +37,9 @@ let c = "emoji-picker-tab-panel",
   f = "soundboard-picker-tab",
   p = "gif-picker-tab-panel",
   _ = "gif-picker-tab",
-  m = {
+  h = {
     reaction: 40,
     default: 44,
     jumbo: 96
   },
-  h = 9
+  m = 9

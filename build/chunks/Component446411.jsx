@@ -113,8 +113,8 @@ function et(e) {
     provider: f,
     allowFullScreen: p = true,
     responsive: _ = false,
-    renderImageComponent: m,
-    renderVideoComponent: h,
+    renderImageComponent: h,
+    renderVideoComponent: m,
     renderLinkComponent: g,
     playable: b = true,
     autoPlay: y = false,
@@ -125,7 +125,7 @@ function et(e) {
     onEnded: T,
     onControlsHide: A,
     onControlsShow: P,
-    onVolumeChange: R,
+    onVolumeChange: w,
     onMute: D,
     href: x,
     placeholder: j,
@@ -142,7 +142,7 @@ function et(e) {
     height: W
   } = u;
   null != d && (Y = d.width, W = d.height);
-  let K = (0, w.Tj)({
+  let K = (0, R.Tj)({
     width: Y,
     height: W,
     maxWidth: l,
@@ -152,7 +152,7 @@ function et(e) {
   let Q = (0, C.q)(u);
   if (null != d && null != d.proxyURL) return (0, i.jsx)("div", {
     className: s()(Z.embedVideo, r),
-    children: h({
+    children: m({
       poster: Q,
       src: d.proxyURL,
       placeholder: j,
@@ -164,7 +164,7 @@ function et(e) {
       onEnded: T,
       naturalWidth: d.width,
       naturalHeight: d.height,
-      onVolumeChange: R,
+      onVolumeChange: w,
       playable: b,
       autoMute: O,
       volume: v,
@@ -230,7 +230,7 @@ function et(e) {
       width: Y,
       height: W
     },
-    children: [m({
+    children: [h({
       src: Q,
       width: Y,
       height: W,
@@ -274,12 +274,12 @@ function en(e) {
     alt: f,
     disableAltTextDisplay: p = false,
     playable: _ = true,
-    hiddenSpoilers: m,
+    hiddenSpoilers: h,
     placeholder: g,
     placeholderVersion: E,
     sourceMetadata: b
   } = e;
-  return (0, i.jsx)(h.Z, {
+  return (0, i.jsx)(m.Z, {
     className: s()(Z.embedVideo, t),
     original: n,
     poster: (0, C.q)(l),
@@ -295,7 +295,7 @@ function en(e) {
     autoPlay: r,
     playable: _,
     renderImageComponent: u,
-    hiddenSpoilers: m,
+    hiddenSpoilers: h,
     disableAltTextDisplay: p,
     placeholder: g,
     placeholderVersion: E,
@@ -586,8 +586,8 @@ class er extends(r = Chunk473749.PureComponent) {
       className: d,
       autoPlayGif: f
     } = this.props, {
-      maxMediaWidth: m,
-      maxMediaHeight: h,
+      maxMediaWidth: h,
+      maxMediaHeight: m,
       sourceMetadata: E
     } = this.state;
     if (null == a) return null;
@@ -622,8 +622,8 @@ class er extends(r = Chunk473749.PureComponent) {
         limitResponsiveWidth: !o,
         width: a.width,
         height: a.height,
-        maxWidth: m,
-        maxHeight: h,
+        maxWidth: h,
+        maxHeight: m,
         original: a.url,
         shouldLink: r,
         disableAltTextDisplay: null == a.description || "" === a.description,
@@ -673,8 +673,8 @@ class er extends(r = Chunk473749.PureComponent) {
       obscureReason: p
     } = this.props, {
       maxMediaWidth: _,
-      maxMediaHeight: m,
-      sourceMetadata: h
+      maxMediaHeight: h,
+      sourceMetadata: m
     } = this.state;
     if (null == r || null == a) return null;
     if (e) return null == o ? null : (0, i.jsx)(M.G.Consumer, {
@@ -688,7 +688,7 @@ class er extends(r = Chunk473749.PureComponent) {
           thumbnail: a,
           video: o,
           maxWidth: _,
-          maxHeight: m,
+          maxHeight: h,
           responsive: true,
           autoPlay: !n && f && !s && t,
           renderImageComponent: c,
@@ -697,7 +697,7 @@ class er extends(r = Chunk473749.PureComponent) {
           disableAltTextDisplay: null != p,
           placeholder: o.placeholder,
           placeholderVersion: o.placeholderVersion,
-          sourceMetadata: h
+          sourceMetadata: m
         })
       }
     });
@@ -719,7 +719,7 @@ class er extends(r = Chunk473749.PureComponent) {
       video: o,
       provider: null == s ? true : s.name,
       maxWidth: _,
-      maxHeight: m,
+      maxHeight: h,
       responsive: true,
       renderImageComponent: c,
       renderVideoComponent: l,
@@ -729,7 +729,7 @@ class er extends(r = Chunk473749.PureComponent) {
       playable: t && !n,
       placeholder: null == o ? true : o.placeholder,
       placeholderVersion: null == o ? true : o.placeholderVersion,
-      sourceMetadata: h
+      sourceMetadata: m
     })
   }
   renderFooter() {
@@ -780,7 +780,7 @@ class er extends(r = Chunk473749.PureComponent) {
     let {
       width: s,
       height: c
-    } = (0, w.Tj)({
+    } = (0, R.Tj)({
       width: o.width,
       height: o.height,
       maxWidth: r,
@@ -884,7 +884,7 @@ class er extends(r = Chunk473749.PureComponent) {
     if (null == l) return;
     let {
       width: c
-    } = (0, w.Tj)({
+    } = (0, R.Tj)({
       width: l.width,
       height: l.height,
       maxWidth: o,
@@ -896,7 +896,7 @@ class er extends(r = Chunk473749.PureComponent) {
       var u, d, f, p;
       let {
         width: e
-      } = (0, w.Tj)({
+      } = (0, R.Tj)({
         width: null != (d = null != (u = null == r ? true : r.width) ? u : null == a ? true : a.width) ? d : 0,
         height: null != (p = null != (f = null == r ? true : r.height) ? f : null == a ? true : a.height) ? p : 0,
         maxWidth: o,
@@ -919,7 +919,7 @@ class er extends(r = Chunk473749.PureComponent) {
       hideMedia: e,
       embed: t
     } = this.props;
-    return !e && (0, R.dY)(t)
+    return !e && (0, w.dY)(t)
   }
   renderSuppressButton(e) {
     return (0, i.jsx)(l.P3F, {
@@ -973,7 +973,7 @@ class er extends(r = Chunk473749.PureComponent) {
           minHeight: r
         } = null != (t = this.getMinSize()) ? t : {}, {
           width: i
-        } = (0, w.Tj)({
+        } = (0, R.Tj)({
           width: e.width,
           height: e.height,
           maxWidth: l,
@@ -987,9 +987,9 @@ class er extends(r = Chunk473749.PureComponent) {
     let f = J / (c.Z.fontScale / 100),
       p = (null != s ? (0, D.TZ)(s) : 0) >= f,
       _ = (null != (n = null == s ? true : s.split("\n").length) ? n : 0) >= X,
-      m = p || _;
+      h = p || _;
     return {
-      maxWidth: true === d || m ? "max-content" : d,
+      maxWidth: true === d || h ? "max-content" : d,
       justifySelf: "auto"
     }
   }
@@ -1018,7 +1018,7 @@ class er extends(r = Chunk473749.PureComponent) {
     }) : (0, S.Z)(t) ? (0, i.jsx)(I.Z, {
       embed: t,
       className: r
-    }) : (null == (e = t.provider) ? true : e.name) === "Amazon Music" && t.type === k.hBH.RICH ? (0, i.jsx)(m.Z, {
+    }) : (null == (e = t.provider) ? true : e.name) === "Amazon Music" && t.type === k.hBH.RICH ? (0, i.jsx)(h.Z, {
       embed: t,
       className: r
     }) : (0, u.Z)(t) ? (0, i.jsx)(d.Z, {
@@ -1057,7 +1057,7 @@ class er extends(r = Chunk473749.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, R.vP)(this.props.embed))), B(this, "onReveal", () => {
+    }, (0, w.vP)(this.props.embed))), B(this, "onReveal", () => {
       this.setState({
         isVisible: true
       })
@@ -1100,7 +1100,7 @@ class er extends(r = Chunk473749.PureComponent) {
           fields: d,
           thumbnail: p,
           media: _,
-          footer: m
+          footer: h
         } = t.renderAll();
       return (0, i.jsx)("article", {
         className: s()(n, Z.embedFull, F.markup, {
@@ -1121,7 +1121,7 @@ class er extends(r = Chunk473749.PureComponent) {
               [Z.grid]: true,
               [Z.hasThumbnail]: null != p
             }),
-            children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, _, p, m]
+            children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, _, p, h]
           })
         })
       })

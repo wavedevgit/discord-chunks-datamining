@@ -14,7 +14,7 @@ var o, Chunk392711 = require("./392711.js"),
   Chunk884697 = require("./884697.js"),
   Chunk215023 = require("./215023.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,12 +22,12 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = new Map,
+let m = new Map,
   g = new Map,
   E = new Map,
   b = new Map,
   y = [],
-  O = h,
+  O = m,
   v = g,
   S = E,
   I = [],
@@ -36,29 +36,29 @@ let h = new Map,
   A = null,
   N = false,
   P = new Set,
-  R = new Map,
   w = new Map,
+  R = new Map,
   D = {},
   x = 0,
   L = e => {
     let {
       skuId: t
     } = e;
-    (P = new Set(P)).add(t), (R = new Map(R)).delete(t), (w = new Map(w)).delete(t)
+    (P = new Set(P)).add(t), (w = new Map(w)).delete(t), (R = new Map(R)).delete(t)
   },
   j = e => {
     let {
       skuId: t,
       error: n
     } = e;
-    (P = new Set(P)).delete(t), (R = new Map(R)).set(t, n), (w = new Map(w)).set(t, Date.now())
+    (P = new Set(P)).delete(t), (w = new Map(w)).set(t, n), (R = new Map(R)).set(t, Date.now())
   },
   M = e => {
     let {
       skuId: t,
       product: n
     } = e;
-    v.set(t, n), (P = new Set(P)).delete(t), (R = new Map(R)).delete(t), (w = new Map(w)).delete(t)
+    v.set(t, n), (P = new Set(P)).delete(t), (w = new Map(w)).delete(t), (R = new Map(R)).delete(t)
   },
   k = e => {
     N = true, r = true, a = true, D = e.options
@@ -67,11 +67,11 @@ let h = new Map,
     let {
       error: t
     } = e;
-    O = h, v = g, C = y, N = false, P = new Set, r = t, a = Date.now()
+    O = m, v = g, C = y, N = false, P = new Set, r = t, a = Date.now()
   },
   G = e => {
     let t = e.categories.categories;
-    if (0 === t.length) O = h, v = g;
+    if (0 === t.length) O = m, v = g;
     else if (!(0, s.isEqual)([...O.values()], t) && !e.noOp) {
       let e = new Map(t.map(e => [e.skuId, e])),
         n = new Date;
@@ -104,7 +104,7 @@ let h = new Map,
     }
   },
   B = () => {
-    O = h, v = g, C = y, i = true, N = false, P = new Set, r = true, a = true, D = {}, x = 0
+    O = m, v = g, C = y, i = true, N = false, P = new Set, r = true, a = true, D = {}, x = 0
   },
   V = () => {
     if (!u.Z.hasLoadedExperiments) return;
@@ -167,10 +167,10 @@ class Y extends(o = Chunk442837.ZP.Store) {
     return e.map(e => v.get(e)).filter(e => null != e)
   }
   getProductFetchError(e) {
-    return null != e ? R.get(e) : true
+    return null != e ? w.get(e) : true
   }
   getProductFetchErrorTimestamp(e) {
-    return null != e ? w.get(e) : true
+    return null != e ? R.get(e) : true
   }
   getProductByStoreListingId(e) {
     return null != e ? S.get(e) : true
@@ -183,7 +183,7 @@ class Y extends(o = Chunk442837.ZP.Store) {
     return this.getCategory(null == t ? true : t.categorySkuId)
   }
 }
-m(Y, "displayName", "CollectiblesCategoryStore");
+h(Y, "displayName", "CollectiblesCategoryStore");
 let W = new Y(Chunk570140.Z, {
   COLLECTIBLES_CATEGORIES_FETCH: k,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: G,

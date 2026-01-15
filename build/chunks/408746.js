@@ -12,8 +12,8 @@ var Chunk903425 = require("./903425.js"),
   f = "[object Map]",
   p = "[object Number]",
   _ = "[object Object]",
-  m = "[object RegExp]",
-  h = "[object Set]",
+  h = "[object RegExp]",
+  m = "[object Set]",
   g = "[object String]",
   E = "[object WeakMap]",
   b = "[object ArrayBuffer]",
@@ -27,6 +27,6 @@ var Chunk903425 = require("./903425.js"),
   A = "[object Uint16Array]",
   N = "[object Uint32Array]",
   P = {};
-P["[object Float32Array]"] = P[O] = P[v] = P[S] = P[I] = P[T] = P[C] = P[A] = P[N] = true, P[o] = P[s] = P[b] = P[l] = P[y] = P[c] = P[u] = P[d] = P[f] = P[p] = P[_] = P[m] = P[h] = P[g] = P[E] = false, module.exports = function(e) {
+P["[object Float32Array]"] = P[O] = P[v] = P[S] = P[I] = P[T] = P[C] = P[A] = P[N] = true, P[o] = P[s] = P[b] = P[l] = P[y] = P[c] = P[u] = P[d] = P[f] = P[p] = P[_] = P[h] = P[m] = P[g] = P[E] = false, module.exports = function(e) {
   return a(e) && i(e.length) && !!P[r(e)]
 }

@@ -67,14 +67,14 @@ let T = "message_requests",
   A = false,
   N = true,
   P = {},
-  R = {},
-  w = false,
+  w = {},
+  R = false,
   D = null;
 
 function x(e) {
   if (null == e) return null;
   if ((0, b.AB)(e)) {
-    let t = h.Z.getGuildId();
+    let t = m.Z.getGuildId();
     return null == t ? null : (0, b.Qk)(e, t)
   }
   return e
@@ -86,13 +86,13 @@ function L(e) {
 
 function j(e) {
   let t = false;
-  w && (w = false, t = true);
-  let n = x(m.Z.getChannelId());
+  R && (R = false, t = true);
+  let n = x(h.Z.getChannelId());
   return null != n && n in P && (delete P[n], t = true), t && e ? e : !e
 }
 
 function M() {
-  w && u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), A && (A = j(A)), C = j(C)
+  R && u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), A && (A = j(A)), C = j(C)
 }
 
 function k() {
@@ -110,9 +110,9 @@ function G(e) {
     baseChannelId: r,
     details: i
   } = e;
-  w = false;
+  R = false;
   let a = x(r);
-  return null != a && (R[n] = {
+  return null != a && (w[n] = {
     type: t,
     baseChannelId: a,
     guildId: n,
@@ -124,7 +124,7 @@ function Z(e) {
   let {
     guildId: t
   } = e;
-  return null != R[t] && (delete R[t], true)
+  return null != w[t] && (delete w[t], true)
 }
 
 function F(e) {
@@ -134,7 +134,7 @@ function F(e) {
     channelId: r,
     details: i
   } = e;
-  w = false;
+  R = false;
   let a = x(n);
   if (null == a) returnfalse;
   let o = {
@@ -153,7 +153,7 @@ function B(e) {
     parentMessageId: n,
     location: r
   } = e;
-  w = false;
+  R = false;
   let i = x(t);
   null != i && (P[i] = {
     type: c.tI.CREATE_THREAD,
@@ -218,8 +218,8 @@ function K(e) {
 
 function z() {
   let e = null != D && l.Z.hasSearchState(D);
-  if (e === w) returnfalse;
-  w = e
+  if (e === R) returnfalse;
+  R = e
 }
 
 function q() {
@@ -233,9 +233,9 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, a;
-      C = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, P = null != (i = e.sidebars) ? i : {}, R = null != (a = e.guildSidebars) ? a : {}
+      C = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, P = null != (i = e.sidebars) ? i : {}, w = null != (a = e.guildSidebars) ? a : {}
     }
-    this.syncWith([l.Z], z), this.syncWith([_.Z], W), this.waitFor(f.Z, s.Z, p.Z, _.Z, l.Z, m.Z, h.Z, g.default)
+    this.syncWith([l.Z], z), this.syncWith([_.Z], W), this.waitFor(f.Z, s.Z, p.Z, _.Z, l.Z, h.Z, m.Z, g.default)
   }
   getState() {
     return {
@@ -243,11 +243,11 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
       isSummariesOpen: A,
       isProfileOpen: N,
       sidebars: P,
-      guildSidebars: R
+      guildSidebars: w
     }
   }
   getSection(e, t) {
-    if (w) return E.ULH.SEARCH;
+    if (R) return E.ULH.SEARCH;
     let n = x(e);
     return null != n && null != P[n] ? E.ULH.SIDEBAR_CHAT : t && N ? E.ULH.PROFILE : A ? E.ULH.SUMMARIES : C ? E.ULH.MEMBERS : E.ULH.NONE
   }
@@ -256,18 +256,18 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t ? true : P[t]
   }
   getGuildSidebarState(e) {
-    return null == e ? true : R[e]
+    return null == e ? true : w[e]
   }
   getCurrentSidebarChannelId(e) {
     let t = x(e);
-    if (null == t || w) return null;
+    if (null == t || R) return null;
     let n = P[t];
     return null == n ? null : n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL || n.type === c.tI.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
     let n = x(e);
-    if (null == n || w) return null;
+    if (null == n || R) return null;
     let r = P[n];
     return null == r ? null : r.type === c.tI.VIEW_THREAD || r.type === c.tI.VIEW_CHANNEL || r.type === c.tI.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
   }

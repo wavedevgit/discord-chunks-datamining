@@ -43,12 +43,12 @@ function _(e, t, n, r, a) {
     let e = p(),
       r = l.J.getGlobalDictionaryForPackage("@react-stately/datepicker") || f,
       d = new(0, c.E)(e, r),
-      m = new(0, i.C)(e, g({}, a)),
-      h = m.resolvedOptions().timeZone;
+      h = new(0, i.C)(e, g({}, a)),
+      m = h.resolvedOptions().timeZone;
     s && null != t && _.push(d.format("rangeUnderflow", {
-      minValue: m.format(t.toDate(h))
+      minValue: h.format(t.toDate(m))
     })), o && null != n && _.push(d.format("rangeOverflow", {
-      maxValue: m.format(n.toDate(h))
+      maxValue: h.format(n.toDate(m))
     })), u && _.push(d.format("unavailableDate"))
   }
   return {
@@ -69,7 +69,7 @@ function _(e, t, n, r, a) {
     }
   }
 }
-let m = {
+let h = {
     year: "numeric",
     month: "numeric",
     day: "numeric",
@@ -77,7 +77,7 @@ let m = {
     minute: "2-digit",
     second: "2-digit"
   },
-  h = {
+  m = {
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
@@ -89,7 +89,7 @@ let m = {
 function g(e, t) {
   var n;
   e = {
-    ...t.shouldForceLeadingZeros ? h : m,
+    ...t.shouldForceLeadingZeros ? m : h,
     ...e
   };
   let r = t.granularity || "minute",

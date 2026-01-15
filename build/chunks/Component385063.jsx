@@ -21,7 +21,7 @@ function f(e) {
     usernameHook: n,
     compact: f,
     isForumPost: p
-  } = e, _ = (0, c.ZP)(t), m = n(_), h = (0, i.e7)([l.Z], () => {
+  } = e, _ = (0, c.ZP)(t), h = n(_), m = (0, i.e7)([l.Z], () => {
     var e, n;
     return null != (n = null == (e = l.Z.getChannel(t.channel_id)) ? true : e.isGroupDM()) && n
   });
@@ -32,9 +32,9 @@ function f(e) {
       color: "currentColor"
     }),
     timestamp: t.timestamp,
-    children: h ? d.intl.format("" === t.content ? d.t.AI1ZZr : d.t.geP3rU, {
+    children: m ? d.intl.format("" === t.content ? d.t.AI1ZZr : d.t.geP3rU, {
       username: _.nick,
-      usernameHook: m,
+      usernameHook: h,
       channelName: (0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-md/medium",
@@ -50,7 +50,7 @@ function f(e) {
       onEditGroup: () => (0, s.B)(t.channel_id, o.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
     }) : d.intl.format(p ? d.t.SOQ4hJ : d.t.oItgEw, {
       username: _.nick,
-      usernameHook: m,
+      usernameHook: h,
       channelName: t.content
     })
   })

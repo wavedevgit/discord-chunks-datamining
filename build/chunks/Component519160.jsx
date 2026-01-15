@@ -51,12 +51,12 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {
+let h = {
     tension: 7,
     friction: 5,
     overshootClamping: true
   },
-  h = 100,
+  m = 100,
   g = "center",
   E = "right";
 
@@ -75,7 +75,7 @@ class y extends(r = Chunk473749.Component) {
       items: i,
       width: a
     } = this.props, o = b(r, i.length), s = b(e.currentIndex, i.length);
-    (o !== s || i.length !== e.items.length) && this.updateAnimatedIndex(o, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || o !== s) && l.Z.spring(this.animatedAlignmentOffset, _(f({}, m), {
+    (o !== s || i.length !== e.items.length) && this.updateAnimatedIndex(o, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || o !== s) && l.Z.spring(this.animatedAlignmentOffset, _(f({}, h), {
       toValue: this.getAlignmentOffset(t)
     })).start()
   }
@@ -103,7 +103,7 @@ class y extends(r = Chunk473749.Component) {
       items: r,
       edgeItems: i
     } = this.props;
-    i > 0 && (0 === e && t === r.length - 1 ? n.setValue(false) : 0 === t && e === r.length - 1 && r.length > 2 && n.setValue(r.length)), l.Z.spring(n, _(f({}, m), {
+    i > 0 && (0 === e && t === r.length - 1 ? n.setValue(false) : 0 === t && e === r.length - 1 && r.length > 2 && n.setValue(r.length)), l.Z.spring(n, _(f({}, h), {
       toValue: e
     })).start()
   }
@@ -117,12 +117,12 @@ class y extends(r = Chunk473749.Component) {
     i ? this.animateToIndex(e, t) : l.Z.timing(r, {
       fromValue: 1,
       toValue: 0,
-      duration: h
+      duration: m
     }).start(() => {
       n.setValue(e), l.Z.timing(r, {
         fromValue: 0,
         toValue: 1,
-        duration: h
+        duration: m
       }).start()
     })
   }
@@ -163,9 +163,9 @@ class y extends(r = Chunk473749.Component) {
         width: p
       } = s,
       _ = this.getCarouselTranslate(),
-      m = this.getItemStyle(),
-      h = (e = c > 0 ? [...o.slice(-c), ...o, ...o.slice(0, c)] : o).map((e, t) => (0, i.jsx)("div", {
-        style: m,
+      h = this.getItemStyle(),
+      m = (e = c > 0 ? [...o.slice(-c), ...o, ...o.slice(0, c)] : o).map((e, t) => (0, i.jsx)("div", {
+        style: h,
         className: u.item,
         children: a(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
@@ -178,7 +178,7 @@ class y extends(r = Chunk473749.Component) {
           outputRange: [-_, -f - p - _ - d * (o.length - 1)]
         }), n)
       },
-      children: h
+      children: m
     })
   }
   render() {

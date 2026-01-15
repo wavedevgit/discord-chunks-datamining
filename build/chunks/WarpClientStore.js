@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 10,
-  h = {
+let h = 10,
+  m = {
     status: ""
   },
   g = [],
@@ -34,7 +34,7 @@ class b extends(r = Chunk442837.ZP.Store) {
     this.updateState(), this.addListener()
   }
   logEvent(e) {
-    "status" in e && "string" == typeof e.status && (h = e), g = [...g.slice(g.length < m ? 0 : 1, m), e], this.emitChange()
+    "status" in e && "string" == typeof e.status && (m = e), g = [...g.slice(g.length < h ? 0 : 1, h), e], this.emitChange()
   }
   async updateState() {
     try {
@@ -102,7 +102,7 @@ class b extends(r = Chunk442837.ZP.Store) {
     } catch (e) {}
   }
   get state() {
-    return h
+    return m
   }
   get log() {
     return g
@@ -113,10 +113,10 @@ class b extends(r = Chunk442837.ZP.Store) {
     }).enabled
   }
   get enabled() {
-    return "Connected" === h.status || this.connecting
+    return "Connected" === m.status || this.connecting
   }
   get connecting() {
-    return "Configuring" === h.status || "Connecting" === h.status || "ConnectCommandSent" === h.status || "Installing" === h.status || "Installed" === h.status
+    return "Configuring" === m.status || "Connecting" === m.status || "ConnectCommandSent" === m.status || "Installing" === m.status || "Installed" === m.status
   }
   async connect() {
     return this.clientEnabled && (this.logEvent({
@@ -130,7 +130,7 @@ class b extends(r = Chunk442837.ZP.Store) {
   async disconnect() {
     if (this.clientEnabled) {
       let e = this.runCommand("disconnect");
-      return h = {
+      return m = {
         status: "DisconnectCommandSent"
       }, await e
     }

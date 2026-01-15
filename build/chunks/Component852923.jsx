@@ -36,22 +36,22 @@ function E(e) {
     channelId: i
   } = e, o = null != (t = (0, p._d)(i)) ? t : 0, s = null != (n = (0, p.K3)(i)) ? n : 0;
   return o > 0 && s > 0 ? (0, r.jsx)("div", {
-    className: h.blocked,
+    className: m.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(h.blockedText, h.noIcon),
-      children: m.intl.string(m.t.xlJRfv)
+      className: a()(m.blockedText, m.noIcon),
+      children: h.intl.string(h.t.xlJRfv)
     })
   }) : o > 0 ? (0, r.jsx)("div", {
-    className: h.blocked,
+    className: m.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(h.blockedText, h.noIcon),
-      children: m.intl.string(m.t.WYad9Z)
+      className: a()(m.blockedText, m.noIcon),
+      children: h.intl.string(h.t.WYad9Z)
     })
   }) : s > 0 ? (0, r.jsx)("div", {
-    className: h.blocked,
+    className: m.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(h.blockedText, h.noIcon),
-      children: m.intl.string(m.t.eHq2OF)
+      className: a()(m.blockedText, m.noIcon),
+      children: h.intl.string(h.t.eHq2OF)
     })
   }) : null
 }
@@ -59,21 +59,21 @@ function E(e) {
 function b() {
   let e = (0, f.Z)();
   return null == e ? null : (0, r.jsxs)(o.qXd, {
-    className: h.container,
+    className: m.container,
     color: o.DM8.DEFAULT,
-    children: [m.intl.string(m.t.Ul1RJQ), (0, r.jsx)(E, {
+    children: [h.intl.string(h.t.Ul1RJQ), (0, r.jsx)(E, {
       channelId: e.id
     }), (0, r.jsxs)(o.ButtonGroup, {
       size: "sm",
-      className: h.buttonGroup,
+      className: m.buttonGroup,
       children: [(0, r.jsx)(o.Button, {
         variant: "overlay-primary",
-        text: m.intl.string(m.t.MpO0px),
+        text: h.intl.string(h.t.MpO0px),
         onClick: () => g(false)
       }), (0, r.jsx)(o.Button, {
         variant: "secondary",
         onClick: () => g(true),
-        text: m.intl.string(m.t["1YDv7a"])
+        text: h.intl.string(h.t["1YDv7a"])
       })]
     })]
   })

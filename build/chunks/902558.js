@@ -51,7 +51,7 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let t = e.userId === o.default.getId(),
     n = null != e.streamId,
     a = null;
@@ -64,13 +64,13 @@ function m(e) {
   }
   s.ZP.setCrashInformation(a, +!!n)
 }
-class h extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
       RTC_CONNECTION_STATE: _,
-      RTC_CONNECTION_VIDEO: m,
+      RTC_CONNECTION_VIDEO: h,
       MEDIA_SESSION_JOINED: p
     })
   }
 }
-let g = new h
+let g = new m

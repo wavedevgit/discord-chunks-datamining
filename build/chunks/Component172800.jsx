@@ -2,7 +2,7 @@
 /** chunk id: 172800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,7 +68,7 @@ function N(e, t) {
 
 function P(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -76,21 +76,21 @@ function P(e, t) {
   return i
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let w = e => {
+let R = e => {
   let {
     emojiDescriptors: t,
     emojiSize: a,
     onSelect: T,
     onSelectSoundmoji: A,
-    onInspect: R,
-    surrogateCodePoint: w,
+    onInspect: w,
+    surrogateCodePoint: R,
     getEmojiItemProps: D,
     getEmojiRowProps: x,
     isScrolling: L,
@@ -108,7 +108,7 @@ let w = e => {
     handleScrollUpOnSectionCollapse: W
   } = e, K = n(187119), z = n(39874), q = n(853871), Q = n(63149), X = n(263112), J = n(490567), $ = n(292795), ee = n(7940), et = (0, u.ZP)(), en = _.kJ.getState(), [er, ei] = i.useState(en.inspectedExpressionPosition), [ea, eo] = (0, c.Z)(null, 300), es = i.useRef(null);
   i.useEffect(() => _.kJ.subscribe(e => e.inspectedExpressionPosition, e => ei(e)), []), i.useEffect(() => {
-    h.DZ.loadIfNecessary()
+    m.DZ.loadIfNecessary()
   }, []);
   let el = a === O.Su.LARGE,
     ec = a === O.Su.MEDIUM,
@@ -126,19 +126,19 @@ let w = e => {
           } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
             visibleRowIndex: p,
             columnIndex: _
-          } = e, m = null != (n = D(_, M)) ? n : {}, {
-            ref: h,
+          } = e, h = null != (n = D(_, M)) ? n : {}, {
+            ref: m,
             tabIndex: g,
             onFocus: E
-          } = m, b = P(m, ["ref", "tabIndex", "onFocus"]), y = er.rowIndex === p && er.columnIndex === _, O = () => {
-            L.current || j.current || R(e)
+          } = h, b = P(h, ["ref", "tabIndex", "onFocus"]), y = er.rowIndex === p && er.columnIndex === _, O = () => {
+            L.current || j.current || w(e)
           };
           return (0, i.createElement)("li", N(C({}, b), {
             key: t
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
               "aria-label": d,
-              ref: h,
+              ref: m,
               className: o()(I.emojiItem, {
                 [I.emojiItemLarge]: el,
                 [I.emojiItemMedium]: ec,
@@ -194,11 +194,11 @@ let w = e => {
             isInspected: o,
             isScrolling: L,
             isUsingKeyboardNavigation: j,
-            surrogateCodePoint: w,
+            surrogateCodePoint: R,
             allowAnimatedEmoji: k,
             selectedItemClassName: F,
             onSelect: T,
-            onInspect: R,
+            onInspect: w,
             channelGuildId: G,
             getEmojiItemProps: D,
             isMediumSize: ec,
@@ -227,7 +227,7 @@ let w = e => {
   if (Z === O.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: I.emojiListRow,
     ref: es,
-    children: (0, r.jsx)(m.Z, {
+    children: (0, r.jsx)(h.Z, {
       channelId: B,
       onSelectSoundmoji: A
     })

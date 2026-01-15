@@ -60,7 +60,7 @@ function y(e, t) {
 let O = new WeakMap;
 
 function v(e) {
-  let t = (0, u.sK)(e, h.layer);
+  let t = (0, u.sK)(e, m.layer);
   return null == t && (t = (0, u.MD)(e, _.TA)), null != t ? t : null
 }
 
@@ -147,7 +147,7 @@ function P(e, t, n) {
   return n
 }
 
-function R(e) {
+function w(e) {
   let {
     targetRef: t,
     overrideTargetRect: n
@@ -155,9 +155,9 @@ function R(e) {
   return null != n ? n : (c()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
 }
 
-function w(e, t) {
-  let n = R(e),
-    r = R(t);
+function R(e, t) {
+  let n = w(e),
+    r = w(t);
   return n.top === r.top && n.left === r.left
 }
 class D extends(r = Chunk473749.Component) {
@@ -284,7 +284,7 @@ class D extends(r = Chunk473749.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = R(this.props), o = n.getBoundingClientRect(), s = A(a, o.left, o.top);
+    } = this.props, a = w(this.props), o = n.getBoundingClientRect(), s = A(a, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(s, t, n, {
@@ -328,7 +328,7 @@ class D extends(r = Chunk473749.Component) {
       autoInvert: t
     } = this.props, n = this.elementRef.current;
     c()(null != n, "Unexpected null element");
-    let r = (0, m.wL)(n),
+    let r = (0, h.wL)(n),
       {
         style: i,
         nudge: a
@@ -377,7 +377,7 @@ class D extends(r = Chunk473749.Component) {
     c()(null != i, "Missing elementRef"), null != n.current && O.set(i, n.current), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.addEventListener("resize", this.updatePosition), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (T(e) === T(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (T(e) === T(this.props) && R(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null == (n = (r = this.props).onPositionChange) || n.call(r, this.state.position)
     }
@@ -390,7 +390,7 @@ class D extends(r = Chunk473749.Component) {
   calculateMaxHeight() {
     let e = this.elementRef.current;
     if (null == e) return;
-    let t = (0, m.wL)(e),
+    let t = (0, h.wL)(e),
       n = this.state.style;
     return null != n.top ? Math.max(0, t.offsetHeight - n.top - I) : null != n.bottom ? Math.max(0, t.offsetHeight - n.bottom - I) : Math.max(0, t.offsetHeight - 2 * I)
   }
@@ -409,8 +409,8 @@ class D extends(r = Chunk473749.Component) {
     } = this.state, _ = this.calculateMaxHeight();
     return (0, i.jsx)("div", {
       className: s()({
-        [h.clickTrapContainer]: true,
-        [h.trapClicks]: o
+        [m.clickTrapContainer]: true,
+        [m.trapClicks]: o
       }),
       children: (0, i.jsx)(f.C1, {
         children: o => {
@@ -421,9 +421,9 @@ class D extends(r = Chunk473749.Component) {
             disableAdaptiveTheme: f,
             children: o => (0, i.jsx)("div", {
               id: e,
-              className: s()(t, o, h.layer, {
-                [h.emptyError]: false,
-                [h.disabledPointerEvents]: a
+              className: s()(t, o, m.layer, {
+                [m.emptyError]: false,
+                [m.disabledPointerEvents]: a
               }),
               style: y(E({
                 position: r ? "fixed" : "absolute"

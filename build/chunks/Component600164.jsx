@@ -67,12 +67,12 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = {
+let h = {
     VERTICAL: Chunk727829.vertical,
     HORIZONTAL: Chunk164222.horizontal,
     HORIZONTAL_REVERSE: Chunk164222.horizontalReverse
   },
-  h = {
+  m = {
     START: Chunk727829.justifyStart,
     END: Chunk727829.justifyEnd,
     CENTER: Chunk727829.justifyCenter,
@@ -95,8 +95,8 @@ let m = {
     var {
       children: t,
       className: n,
-      direction: i = m.HORIZONTAL,
-      justify: a = h.START,
+      direction: i = h.HORIZONTAL,
+      justify: a = m.START,
       align: l = g.STRETCH,
       wrap: c = E.NO_WRAP,
       shrink: d = 1,
@@ -124,21 +124,21 @@ b.Child = e => {
     basis: c = "auto",
     style: d,
     wrap: _ = false
-  } = e, m = p(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]);
-  let h = u({
+  } = e, h = p(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]);
+  let m = u({
     className: n = null != n ? n : s.flexChild,
     style: u({
       flexGrow: l,
       flexShrink: a,
       flexBasis: c
     }, d)
-  }, m);
+  }, h);
   if (!_ && "string" != typeof t && 1 === i.Children.count(t)) {
     let e = i.Children.only(t);
-    return h.style = u({}, h.style, e.props.style), h.className = o()(e.props.className, n), i.cloneElement(e, h)
+    return m.style = u({}, m.style, e.props.style), m.className = o()(e.props.className, n), i.cloneElement(e, m)
   }
-  return (0, r.jsx)("div", f(u({}, h), {
+  return (0, r.jsx)("div", f(u({}, m), {
     children: t
   }))
-}, b.Direction = m, b.Align = g, b.Justify = h, b.Wrap = E;
+}, b.Direction = h, b.Align = g, b.Justify = m, b.Wrap = E;
 let y = b

@@ -21,8 +21,8 @@ function p(e) {
     userId: n,
     width: p,
     avError: _,
-    selected: m = false,
-    noArt: h = false
+    selected: h = false,
+    noArt: m = false
   } = e, g = null == (t = (0, s.hp)(_)) ? true : t.errorCode;
 
   function E() {
@@ -34,8 +34,8 @@ function p(e) {
     artURL: f,
     header: d.intl.string(d.t["z+mxvo"]),
     size: (0, c.L)(p),
-    noArt: h,
-    selected: m,
+    noArt: m,
+    selected: h,
     description: d.intl.format(d.t.d486Wm, {
       helpUrl: l.Z.getArticleURL(u.BhN.VOICE_VIDEO_TROUBLESHOOTING)
     }),

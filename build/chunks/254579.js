@@ -12,12 +12,12 @@ require.d(exports, {
   HJ: () => C,
   MC: () => c,
   Mo: () => f,
-  Nj: () => h,
+  Nj: () => m,
   PB: () => S,
   Pz: () => v,
   Vl: () => O,
   b7: () => V,
-  ge: () => R,
+  ge: () => w,
   il: () => F,
   nY: () => p,
   pO: () => E,
@@ -71,15 +71,15 @@ function _(e) {
   return null == t ? true : t[0]
 }
 
-function m(e) {
+function h(e) {
   return null != e.taskConfigV2.tasks[i.X.PLAY_ON_DESKTOP]
 }
 
-function h(e) {
+function m(e) {
   let {
     quest: t
   } = e;
-  return m(t.config)
+  return h(t.config)
 }
 
 function g(e) {
@@ -94,7 +94,7 @@ function E(e) {
 }
 
 function b(e) {
-  return null != e && h({
+  return null != e && m({
     quest: e
   })
 }
@@ -124,11 +124,11 @@ function P(e) {
   return null != e.userStatus && (N(e.userStatus, i.X.PLAY_ON_XBOX) || N(e.userStatus, i.X.PLAY_ON_PLAYSTATION))
 }
 
-function R(e) {
+function w(e) {
   return new Set(Object.keys(e.config.taskConfigV2.tasks))
 }
 
-function w(e) {
+function R(e) {
   return (null == e ? true : e.type) === i.X.PLAY_ON_DESKTOP
 }
 let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
@@ -168,15 +168,15 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     if (null == d) throw Error("No task with type ".concat(s, " found for quest ").concat(o.id, "!"));
     let f = d.target,
       p = k(o, d),
-      _ = Object.values(c.tasks).find(w),
-      m = null == _ || null == (n = _.applications) ? true : n.map(e => e.id);
+      _ = Object.values(c.tasks).find(R),
+      h = null == _ || null == (n = _.applications) ? true : n.map(e => e.id);
     return {
       progressSeconds: p,
       targetSeconds: f,
       targetMinutes: Math.ceil(f / a.Z.Seconds.MINUTE),
       percentComplete: D(f, p),
       taskType: u,
-      applications: m
+      applications: h
     }
   },
   G = e => i.T.ALL.has(e) ? e : null,

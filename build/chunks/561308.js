@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   GE: () => C,
-  GL: () => m,
+  GL: () => h,
   Jd: () => P,
   Jg: () => O,
   Nq: () => S,
@@ -17,10 +17,10 @@ require.d(exports, {
   ig: () => x,
   kr: () => E,
   n2: () => y,
-  q_: () => w,
-  vU: () => R,
+  q_: () => R,
+  vU: () => w,
   yA: () => v,
-  yh: () => h,
+  yh: () => m,
   zo: () => D
 }), require("./35282.js");
 var Chunk164369 = require("./164369.js"),
@@ -82,7 +82,7 @@ let d = (e, t) => {
       count: e
     })
   },
-  m = function(e, t, n) {
+  h = function(e, t, n) {
     let {
       formatSet: r = _
     } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, i = a()(n), o = a()(c.default.extractTimestamp(e.id)), s = i.diff(o, "s"), u = Math.abs(s);
@@ -106,10 +106,10 @@ let d = (e, t) => {
     let d = Math.round(s / l.Z.Seconds.DAYS_30);
     return r.monthsAgo(d)
   },
-  h = function(e, t) {
+  m = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Date.now(),
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-    return E(e) ? p(e, n) : m(e, t, n, r)
+    return E(e) ? p(e, n) : h(e, t, n, r)
   };
 
 function g(e, t) {
@@ -195,13 +195,13 @@ function P(e) {
   return e.content_type === s.s.TOP_GAME
 }
 
-function R(e) {
+function w(e) {
   var t;
   return null == (t = g(e, o.N.STREAK_DAYS)) ? true : t.streak_count_days
 }
 
-function w(e) {
-  let t = R(e);
+function R(e) {
+  let t = w(e);
   if (null == t || t < 3) returnfalse;
   let n = c.default.extractTimestamp(e.id);
   return !(Date.now() - n > 48 * l.Z.Millis.HOUR)

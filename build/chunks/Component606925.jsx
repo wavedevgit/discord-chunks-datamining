@@ -61,14 +61,14 @@ function p(e) {
     icon: p
   } = e, _ = d(e, ["platform", "variant", "size", "onAction", "icon"]);
   if ((0, i.e7)([s.Z], () => s.Z.getAccounts().some(e => e.type === t.type))) return null;
-  let m = () => {
+  let h = () => {
     null == f || f(), (0, o.Z)({
       platformType: t.type,
       location: "Activity Action"
     })
   };
   return (0, r.jsx)(a.Button, u({
-    onClick: m,
+    onClick: h,
     variant: n,
     size: c,
     icon: p,

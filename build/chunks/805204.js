@@ -25,22 +25,22 @@ function l(e, t, n) {
       form: f,
       descriptionId: p,
       errorMessageId: _,
-      validationBehavior: m
+      validationBehavior: h
     } = i.k.get(t);
-  m = null != (l = e.validationBehavior) ? l : m;
+  h = null != (l = e.validationBehavior) ? l : h;
   let {
-    realtimeValidation: h
+    realtimeValidation: m
   } = (0, a.Q3)({
     ...e,
     value: u.isSelected,
     name: true,
     validationBehavior: "aria"
   }), g = (0, o.useRef)(a.PS), E = () => {
-    t.setInvalid(e.value, h.isInvalid ? h : g.current)
+    t.setInvalid(e.value, m.isInvalid ? m : g.current)
   };
   (0, o.useEffect)(E);
-  let b = t.realtimeValidation.isInvalid ? t.realtimeValidation : h,
-    y = "native" === m ? t.displayValidation : b,
+  let b = t.realtimeValidation.isInvalid ? t.realtimeValidation : m,
+    y = "native" === h ? t.displayValidation : b,
     O = (0, r.O)({
       ...e,
       isReadOnly: e.isReadOnly || t.isReadOnly,
@@ -48,7 +48,7 @@ function l(e, t, n) {
       name: e.name || d,
       form: e.form || f,
       isRequired: null != (c = e.isRequired) ? c : t.isRequired,
-      validationBehavior: m,
+      validationBehavior: h,
       [a.tL]: {
         realtimeValidation: b,
         displayValidation: y,

@@ -24,7 +24,7 @@ let f = new Map,
   p = new Map,
   _ = new Map;
 
-function m(e) {
+function h(e) {
   if (!p.has(e)) {
     var t;
     p.set(e, {
@@ -41,7 +41,7 @@ function m(e) {
   return p.get(e)
 }
 
-function h() {
+function m() {
   return f.clear(), p.clear(), true
 }
 
@@ -52,7 +52,7 @@ function g(e) {
     channelId: r,
     query: i,
     name: a
-  } = e, o = m(r);
+  } = e, o = h(r);
   if (o.optionNameToLastQuery.get(a) === i) returnfalse;
   o.optionNameToLastQuery.set(a, i);
   let s = null == (t = o.optionNameToAutocompleteQueries.get(a)) ? true : t.get(i);
@@ -74,10 +74,10 @@ function b(e) {
   } = e, l = f.get(a);
   if (null == l) returnfalse;
   f.delete(a);
-  let d = m(l.channelId);
+  let d = h(l.channelId);
   null == d.optionNameToAutocompleteQueries.get(l.name) && d.optionNameToAutocompleteQueries.set(l.name, new Map);
   let p = E && (null == (t = c.Z.getActiveOption(l.channelId)) ? true : t.type) === o.jw.INTEGER,
-    h = null != (r = null == i ? true : i.map(e => {
+    m = null != (r = null == i ? true : i.map(e => {
       let {
         value: t,
         name_localized: n,
@@ -94,8 +94,8 @@ function b(e) {
   return (0, s.yw)(u.rMx.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
     duration_ms: b,
     error: false,
-    num_options: h.length
-  }), _.delete(a), null == (n = d.optionNameToAutocompleteQueries.get(l.name)) || n.set(l.query, h), d.optionNameToLastQuery.get(l.name) === l.query && (d.lastErrored = false, d.optionNameToLastResults.set(l.name, h)), d.lastResponseNonce = a, true
+    num_options: m.length
+  }), _.delete(a), null == (n = d.optionNameToAutocompleteQueries.get(l.name)) || n.set(l.query, m), d.optionNameToLastQuery.get(l.name) === l.query && (d.lastErrored = false, d.optionNameToLastResults.set(l.name, m)), d.lastResponseNonce = a, true
 }
 
 function y(e) {
@@ -111,7 +111,7 @@ function y(e) {
   return (0, s.yw)(u.rMx.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
     duration_ms: i,
     error: true
-  }), _.delete(t), m(n.channelId).lastErrored = true, true
+  }), _.delete(t), h(n.channelId).lastErrored = true, true
 }
 
 function O(e) {
@@ -140,24 +140,24 @@ class I extends(r = Chunk442837.ZP.Store) {
     this.waitFor(c.Z)
   }
   getLastErrored(e) {
-    return m(e).lastErrored
+    return h(e).lastErrored
   }
   getAutocompleteChoices(e, t, n) {
     var r;
-    return null == (r = m(e).optionNameToAutocompleteQueries.get(t)) ? true : r.get(n)
+    return null == (r = h(e).optionNameToAutocompleteQueries.get(t)) ? true : r.get(n)
   }
   getAutocompleteLastChoices(e, t) {
-    return m(e).optionNameToLastResults.get(t)
+    return h(e).optionNameToLastResults.get(t)
   }
   getLastResponseNonce(e) {
-    return m(e).lastResponseNonce
+    return h(e).lastResponseNonce
   }
 }
 d(I, "displayName", "ApplicationCommandAutocompleteStore");
 let T = new I(Chunk570140.Z, {
-  CONNECTION_OPEN: h,
-  LOGOUT: h,
-  CHANNEL_SELECT: h,
+  CONNECTION_OPEN: m,
+  LOGOUT: m,
+  CHANNEL_SELECT: m,
   APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST: g,
   APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE: b,
   INTERACTION_FAILURE: y,

@@ -82,8 +82,8 @@ function P(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = 490,
-  w = 490,
+let w = 490,
+  R = 490,
   D = 245,
   x = 200,
   L = 120,
@@ -96,12 +96,12 @@ let R = 490,
       onVisibilityChange: B,
       editorScrollerRef: V,
       barsHeight: H
-    } = e, Y = (0, m.Dt)(), W = (0, l.e7)([E.Z], () => {
+    } = e, Y = (0, h.Dt)(), W = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(G.guild_id)) ? e : null
     }, [G.guild_id]), K = i.useRef(null), [z, q, Q] = (0, O.Z)(A(T({}, e), {
       guild: W
-    }), t, K), X = (null == (n = Z.autocomplete) ? true : n.forceChatLayer) ? g.ZP : h.ZP, J = (0, p.DJ)(z.selectedIndex);
+    }), t, K), X = (null == (n = Z.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, J = (0, p.DJ)(z.selectedIndex);
     (0, _.KR)(Y, z.isVisible, J);
     let $ = (0, y.Z)({
         editorHeight: F,
@@ -136,8 +136,8 @@ let R = 490,
         [S.autocompleteTop]: ee,
         [S.minimal]: (null == (I = z.query) ? true : I.type) === b.eq.MENTION_SUGGESTIONS
       },
-      ei = R;
-    null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+      ei = w;
+    null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? R : D);
     let ea = Math.max(F, null != (k = null == V || null == (C = V.current) ? true : C.clientHeight) ? k : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);

@@ -27,10 +27,10 @@ let l = e => {
     throttleDuration: f = a,
     orientation: p,
     usePointerEvents: _ = false,
-    getClampedValue: m = i.clamp
-  } = e, [h, g] = r.useState(false), E = r.useRef(0), b = r.useRef(false), y = r.useRef(null == t ? 0 : t);
+    getClampedValue: h = i.clamp
+  } = e, [m, g] = r.useState(false), E = r.useRef(0), b = r.useRef(false), y = r.useRef(null == t ? 0 : t);
   return r.useLayoutEffect(() => {
-    if (!h || null == n.current) return;
+    if (!m || null == n.current) return;
 
     function e(e) {
       let t = 1 === s(p) ? e.screenX : e.screenY,
@@ -40,7 +40,7 @@ let l = e => {
     }
 
     function t(e) {
-      return m(e, null != l ? l : 0, null != o ? o : e)
+      return h(e, null != l ? l : 0, null != o ? o : e)
     }
     let r = (0, i.throttle)(c, f),
       a = i => {
@@ -62,7 +62,7 @@ let l = e => {
     return I.addEventListener(v, O), I.addEventListener(S, a), () => {
       I.removeEventListener(v, O), I.removeEventListener(S, a), r.cancel()
     }
-  }, [h, c, l, o, p, n, f, d, _, m, u]), r.useCallback(e => {
+  }, [m, c, l, o, p, n, f, d, _, h, u]), r.useCallback(e => {
     let t = 1 === s(p);
     null != n.current && (y.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(true)
   }, [p, n])

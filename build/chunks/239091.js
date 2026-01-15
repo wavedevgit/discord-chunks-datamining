@@ -71,7 +71,7 @@ function f(e, t, n, r) {
       } = null != t ? t : {};
     p = n + i / 2, _ = r + a / 2
   }
-  let m = {
+  let h = {
     render: t,
     renderLazy: r,
     target: null != (d = e.target) ? d : e.currentTarget,
@@ -82,10 +82,10 @@ function f(e, t, n, r) {
   };
   if ((null == n ? true : n.enableSpellCheck) && (0, a.isDesktop)()) {
     let e = () => {
-        t(), u(m)
+        t(), u(h)
       },
       t = (0, o.RD)(e)
-  } else e.preventDefault(), u(m)
+  } else e.preventDefault(), u(h)
 }
 
 function p(e, t, n) {

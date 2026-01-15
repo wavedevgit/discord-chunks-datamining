@@ -19,10 +19,10 @@ function u(e, t) {
     f = (0, c.Z)(null == (n = u.poll) ? true : n.expiry),
     p = a.Yk.useSetting(),
     _ = (0, i.ZP)(),
-    m = null != t ? t : _;
+    h = null != t ? t : _;
   return r.useMemo(() => (0, l.ZP)(u, d, {
     animateEmoji: p,
-    theme: m,
+    theme: h,
     formattedExpirationLabel: f
-  }), [p, u, d, f, m])
+  }), [p, u, d, f, h])
 }

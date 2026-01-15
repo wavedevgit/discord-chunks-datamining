@@ -29,7 +29,7 @@ let v = e => {
     } = e;
     return null == t ? null : (0, r.jsx)("div", {
       className: O.previewContainer,
-      children: (0, r.jsx)(m.o, {
+      children: (0, r.jsx)(h.o, {
         userDiscountOffer: t
       })
     })
@@ -40,7 +40,7 @@ let v = e => {
       onClose: t,
       premiumType: n,
       setStep: a,
-      churnUserDiscountOffer: m,
+      churnUserDiscountOffer: h,
       isFetchingChurnDiscountOffer: O,
       planId: S
     } = (0, g.a)(), I = (0, l.e7)([d.default], () => {
@@ -65,27 +65,27 @@ let v = e => {
       P = A ? y.intl.formatToPlainString(b.default.stVlc6, {
         cooldownMonths: E.T9
       }) : y.intl.string(y.t.SOC4ML),
-      R = [];
-    return null != m ? R.push({
+      w = [];
+    return null != h ? w.push({
       text: y.intl.string(y.t.zrCzVB),
-      onClick: () => a(h.R.CONFIRM_DISCOUNT),
+      onClick: () => a(m.R.CONFIRM_DISCOUNT),
       variant: "secondary",
       icon: c.SrA
-    }) : R.push({
+    }) : w.push({
       text: y.intl.string(y.t.h9tkAK),
       onClick: () => t(),
       variant: "secondary"
-    }), R.push({
+    }), w.push({
       text: C ? y.intl.string(y.t.PfnxqD) : y.intl.string(y.t["3PatSz"]),
-      onClick: () => a(h.R.CONFIRM),
+      onClick: () => a(m.R.CONFIRM),
       variant: "primary"
     }), (0, r.jsx)(s.Modal, {
       transitionState: e,
       title: N,
       subtitle: P,
-      actions: R,
-      preview: null !== m && (0, r.jsx)(v, {
-        churnUserDiscountOffer: m
+      actions: w,
+      preview: null !== h && (0, r.jsx)(v, {
+        churnUserDiscountOffer: h
       }),
       onClose: async () => t(),
       children: (0, r.jsx)(_.g, {

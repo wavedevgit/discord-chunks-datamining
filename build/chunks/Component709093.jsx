@@ -34,7 +34,7 @@ function S(e) {
     filteredBreadcrumbs: a
   } = e;
   if (t) return (0, r.jsx)("div", {
-    className: h.oneStepCheckoutTextWrapper,
+    className: m.oneStepCheckoutTextWrapper,
     children: (0, r.jsx)(o.Heading, {
       variant: "heading-md/bold",
       children: n
@@ -42,7 +42,7 @@ function S(e) {
   });
   let s = a.length > 1;
   return (0, r.jsxs)("div", {
-    className: h.headerTextWrapper,
+    className: m.headerTextWrapper,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-lg/semibold",
       children: n
@@ -61,31 +61,31 @@ function I(e) {
     children: [(0, r.jsx)("img", {
       src: n,
       alt: "",
-      className: h.bigCloud
+      className: m.bigCloud
     }), (0, r.jsx)("img", {
       src: i,
       alt: "",
-      className: h.mediumCloud
+      className: m.mediumCloud
     }), (0, r.jsx)("img", {
       src: i,
       alt: "",
-      className: h.smallCloud
+      className: m.smallCloud
     })]
   })
 }
-let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.string(m.t["t9uG/o"]),
+let T = (e, t) => t ? (0, _.sO)() : e ? h.intl.string(h.t.lG6a5x) : h.intl.string(h.t["t9uG/o"]),
   C = function(e) {
     var t, n, i;
     let {
       hideCloseButton: u = false,
       hideCloseOnFullScreen: _,
-      onClose: m,
+      onClose: h,
       upgradeToPremiumType: g,
       isEligibleForTrial: E = false,
       showTrialBadge: b = false,
       showDiscountBadge: y = false,
       isPremiumGroupPurchase: C = false
-    } = e, A = g === p.PremiumTypes.TIER_2, N = (0, c.Fv)(E), P = (0, d.N)(), R = null == P || null == (t = P.discount) ? true : t.amount, w = A ? v : O, {
+    } = e, A = g === p.PremiumTypes.TIER_2, N = (0, c.Fv)(E), P = (0, d.N)(), w = null == P || null == (t = P.discount) ? true : t.amount, R = A ? v : O, {
       step: D,
       breadcrumbs: x,
       startedPaymentFlowWithPaymentSourcesRef: L,
@@ -114,33 +114,33 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
       F = A ? "nitro-pink" : "nitro-green",
       B = T(A, C);
     return j ? (0, r.jsx)("div", {
-      className: h.container,
+      className: m.container,
       children: (0, r.jsx)(o.$1m, {
         color: F,
-        className: h.headerContainer
+        className: m.headerContainer
       })
     }) : (0, r.jsxs)("div", {
-      className: h.container,
+      className: m.container,
       children: [(0, r.jsxs)(o.$1m, {
         color: F,
-        className: a()(h.headerContainer, {
-          [h.containerBottomPadding]: !G
+        className: a()(m.headerContainer, {
+          [m.containerBottomPadding]: !G
         }),
         children: [(0, r.jsx)(I, {
           isTier2: A
         }), !u && (0, r.jsx)(o.olH, {
           "data-migration-pending": true,
           hideOnFullscreen: _,
-          onClick: m,
-          className: h.closeButtonPosition
+          onClick: h,
+          className: m.closeButtonPosition
         }), (0, r.jsx)("img", {
-          src: w,
+          src: R,
           alt: "",
-          className: Z ? h.bigWumpus : h.wumpus
+          className: Z ? m.bigWumpus : m.wumpus
         }), (0, r.jsxs)("div", {
-          className: h.textContainer,
+          className: m.textContainer,
           children: [C && (0, r.jsx)("div", {
-            className: h.betaBadgeContainer,
+            className: m.betaBadgeContainer,
             children: (0, r.jsx)(o.Cts, {
               type: "beta",
               variant: "expressive"
@@ -148,21 +148,21 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
           }), (0, r.jsx)(o.Text, {
             variant: "display-md",
             color: "text-strong",
-            className: h.nitroText,
+            className: m.nitroText,
             children: B
           })]
         })]
       }), (b || y) && (0, r.jsx)(f.Z, {
-        discountAmount: R
+        discountAmount: w
       }), G && (0, r.jsx)(S, {
         isOneStepCheckout: N,
         headerText: U,
         step: D,
         filteredBreadcrumbs: M
       }), Z && (0, r.jsx)("div", {
-        className: h.bodyGradientContainer,
+        className: m.bodyGradientContainer,
         children: (0, r.jsx)("div", {
-          className: h.bodyGradient
+          className: m.bodyGradient
         })
       })]
     })

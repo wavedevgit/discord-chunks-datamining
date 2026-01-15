@@ -24,12 +24,12 @@ let _ = e => {
     onRetry: t,
     errorOrigin: n,
     errorMessage: p
-  } = e, _ = (0, s.ZP)(), m = (0, i.e7)([l.default], () => {
+  } = e, _ = (0, s.ZP)(), h = (0, i.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
-  }), h = 1 === n ? u.giftModalContainer : u.shopPageContainer, g = 1 === n ? c.intl.string(c.t["+2QBZX"]) : c.intl.string(c.t.LuhKs2);
+  }), m = 1 === n ? u.giftModalContainer : u.shopPageContainer, g = 1 === n ? c.intl.string(c.t["+2QBZX"]) : c.intl.string(c.t.LuhKs2);
   return (0, r.jsxs)("div", {
-    className: h,
+    className: m,
     children: [(0, r.jsx)("img", {
       className: u.__invalid_loadIssueImg,
       src: (0, a.wj)(_) ? d : f,
@@ -42,7 +42,7 @@ let _ = e => {
       className: u.description,
       variant: "text-md/normal",
       children: g
-    }), m && null != p && (0, r.jsx)(o.Text, {
+    }), h && null != p && (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       children: "staff-only debug: " + p
     }), (0, r.jsx)("div", {

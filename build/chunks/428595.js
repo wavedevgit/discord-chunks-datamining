@@ -289,14 +289,14 @@ let V = e => {
           type: "mention",
           id: e[1]
         };
-        let a = m.default.getUser(e[1]),
+        let a = h.default.getUser(e[1]),
           o = f.Z.getChannel(n.channelId);
         if (null != a && (i = a.id, r = a.toString(), null != o)) {
           var s;
           r = null != (s = g.ZP.getNickname(o.getGuildId(), n.channelId, a)) ? s : E.ZP.getName(a)
         }
         let l = e[1],
-          c = null != l && R.Xyh.test(l.trim()),
+          c = null != l && w.Xyh.test(l.trim()),
           u = c && n.unknownUserMentionPlaceholder ? "@".concat(D.intl.string(D.t.sKdZ6U)) : e[0];
         return {
           userId: i,
@@ -336,7 +336,7 @@ let V = e => {
           type: "commandMention",
           id: e[2]
         };
-        let [, ...r] = e[1].split(" "), i = "".concat(e[2]).concat([...r].map(e => "".concat(w.oQ).concat(e)).join(""));
+        let [, ...r] = e[1].split(" "), i = "".concat(e[2]).concat([...r].map(e => "".concat(R.oQ).concat(e)).join(""));
         return {
           channelId: n.channelId,
           commandId: e[2],
@@ -375,7 +375,7 @@ let V = e => {
             type: "text",
             content: "".concat(null != (a = null == l ? true : l.name) ? a : D.intl.string(D.t["11pdXZ"]))
           }],
-          icon: null != l && null != l.icon_hash ? h.ZP.getApplicationIconURL({
+          icon: null != l && null != l.icon_hash ? m.ZP.getApplicationIconURL({
             id: l.id,
             icon: l.icon_hash,
             size: 32
@@ -443,7 +443,7 @@ let V = e => {
     spoiler: {
       order: Chunk594199.ZP.order,
       requiredFirstCharacters: ["|"],
-      match: e => R.$92.exec(e),
+      match: e => w.$92.exec(e),
       parse: (e, t, n) => ({
         content: t(e[1], n),
         channelId: n.channelId
@@ -452,7 +452,7 @@ let V = e => {
     staticRouteLink: {
       order: Chunk594199.ZP.order,
       requiredFirstCharacters: ["<"],
-      match: e => R.PEY.exec(e),
+      match: e => w.PEY.exec(e),
       parse(e, t, n) {
         var r;
         let [, i, a] = e, o = (0, A.l)(i), s = (0, A.W)(i, a, null == (r = H(n)) ? true : r.id);

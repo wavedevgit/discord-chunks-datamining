@@ -9,7 +9,7 @@ require.d(exports, {
   rC: () => S,
   tA: () => y,
   wO: () => O,
-  zp: () => h
+  zp: () => m
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk979554 = require("./979554.js"),
@@ -24,16 +24,16 @@ var Chunk473749 = require("./473749.js"),
   Chunk619899 = require("./619899.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js");
-let h = Chunk473749.createContext({
+let m = Chunk473749.createContext({
   flattenProductVariants: false
 });
 
 function g() {
-  return r.useContext(h).flattenProductVariants
+  return r.useContext(m).flattenProductVariants
 }
 
 function E() {
-  return r.useContext(h).rentalDuration
+  return r.useContext(m).rentalDuration
 }
 var b = function(e) {
     return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e.THREE_DAY_RENTAL = "three_day_rental", e.SEVEN_DAY_RENTAL = "seven_day_rental", e.RENTAL = "rental", e
@@ -42,7 +42,7 @@ var b = function(e) {
     return e.FIAT = "fiat", e.ORBS = "orbs", e
   }({});
 let O = (e, t, n) => r => {
-    l.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    l.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == n ? true : n.sessionId,
       sku_id: e.skuId,
       page_type: t,
@@ -61,24 +61,24 @@ let O = (e, t, n) => r => {
       {
         analyticsLocations: _
       } = (0, s.ZP)(o.Z.COLLECTIBLES_SHOP_CARD),
-      m = (0, a.e7)([c.Z], () => c.Z.getCategoryForProduct(e.skuId)),
-      h = r.useRef(null);
+      h = (0, a.e7)([c.Z], () => c.Z.getCategoryForProduct(e.skuId)),
+      m = r.useRef(null);
     return r.useCallback(t => r => {
-      if (null == m) return;
+      if (null == h) return;
       let a = (0, f.oQ)({
         product: e
       });
-      h.current = r.currentTarget, null == n || n(), (0, d.T)({
+      m.current = r.currentTarget, null == n || n(), (0, d.T)({
         product: e,
-        category: m,
+        category: h,
         shouldCheckoutWithOrbs: a,
         analyticsLocations: _,
         analyticsSource: t,
-        returnRef: h,
+        returnRef: m,
         tab: p,
         rentalDuration: i
       })
-    }, [e, p, m, _, n, i])(t)
+    }, [e, p, h, _, n, i])(t)
   },
   S = e => {
     if (null == e) return null;

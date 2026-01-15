@@ -49,7 +49,7 @@ function S() {
 
 function I(e) {
   var t, n;
-  let r = null != (n = null != (t = m.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
+  let r = null != (n = null != (t = h.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
     i = e.isMessageRequestTimestamp;
   if (null != i) {
     let e = a()(i).valueOf(),
@@ -99,7 +99,7 @@ function P(e) {
   return v.delete(t.id)
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t,
     message: n
@@ -109,7 +109,7 @@ function R(e) {
   return null != r && v.set(t, T(r, n.id))
 }
 
-function w(e) {
+function R(e) {
   let t = e.guild.id;
   return v.delete(t)
 }
@@ -140,7 +140,7 @@ let x = (() => {
 })();
 class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, _.Z, u.Z, m.ZP, d.Z, h.ZP, g.default), this.syncWith([h.ZP, u.Z], C)
+    this.waitFor(p.Z, _.Z, u.Z, h.ZP, d.Z, m.ZP, g.default), this.syncWith([m.ZP, u.Z], C)
   }
   getPrivateChannelIds() {
     return x()
@@ -169,7 +169,7 @@ let j = new L(Chunk570140.Z, {
   CHANNEL_UPDATES: N,
   CHANNEL_CREATE: A,
   CHANNEL_DELETE: P,
-  MESSAGE_CREATE: R,
-  GUILD_CREATE: w,
+  MESSAGE_CREATE: w,
+  GUILD_CREATE: R,
   LOGOUT: S
 })

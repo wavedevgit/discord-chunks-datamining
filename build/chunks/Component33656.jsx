@@ -2,7 +2,7 @@
 /** chunk id: 33656, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,21 +31,21 @@ function _(e) {
   })
 }
 
-function m() {
+function h() {
   let e = (0, a.e7)([l.Z], () => l.Z.getSubsection()),
     t = i.useRef(null),
     {
       categories: n,
-      initialized: m
+      initialized: h
     } = (0, a.cj)([u.Z], () => u.Z.getEmailSettings());
   i.useEffect(() => {
-    if (null == m)(0, c.Y7)();
+    if (null == h)(0, c.Y7)();
     else if (e === d.vG.toUpperCase()) {
       var n;
       null == t || null == (n = t.current) || n.scrollIntoView(true)
     }
-  }, [m, t, e]);
-  let h = d.M0.reduce((e, t) => e || !!n[t], false);
+  }, [h, t, e]);
+  let m = d.M0.reduce((e, t) => e || !!n[t], false);
 
   function g(e, t) {
     (0, c.pR)(e, t)
@@ -57,7 +57,7 @@ function m() {
     [d.$Z.TIPS]: f.s6.NOTIFICATIONS_EMAILS_TIPS,
     [d.$Z.RECOMMENDATIONS_AND_EVENTS]: f.s6.NOTIFICATIONS_EMAILS_RECOMMENDATIONS_AND_EVENTS
   };
-  return m ? (0, r.jsxs)(s.F, {
+  return h ? (0, r.jsxs)(s.F, {
     setting: f.s6.NOTIFICATIONS_EMAILS,
     children: [(0, r.jsx)("div", {
       ref: t
@@ -81,7 +81,7 @@ function m() {
       }), (0, r.jsxs)(s.F, {
         setting: f.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
         children: [(0, r.jsx)(o.Avr, {
-          disabled: !h,
+          disabled: !m,
           text: p.intl.string(p.t.Ra9Pwk),
           onClick: c.oc
         }), (0, r.jsx)(o.Text, {

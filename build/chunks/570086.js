@@ -14,9 +14,9 @@ var Chunk98405 = require("./98405.js"),
   Chunk742850 = require("./742850.js"),
   Chunk507604 = require("./507604.js"),
   Chunk511696 = require("./511696.js"),
-  h = "DOMException",
+  m = "DOMException",
   g = Chunk154028("Error"),
-  E = Chunk154028(h),
+  E = Chunk154028(m),
   b = function() {
     c(this, y);
     var e = arguments.length,
@@ -24,12 +24,12 @@ var Chunk98405 = require("./98405.js"),
       n = d(e < 2 ? true : arguments[1], "Error"),
       r = new E(t, n),
       i = new g(t);
-    return i.name = h, s(r, "stack", o(1, p(i.stack, 1))), u(r, this, b), r
+    return i.name = m, s(r, "stack", o(1, p(i.stack, 1))), u(r, this, b), r
   },
   y = b.prototype = E.prototype,
-  O = "stack" in new g(h),
+  O = "stack" in new g(m),
   v = "stack" in new E(1, 2),
-  S = E && Chunk507604 && Object.getOwnPropertyDescriptor(Chunk127849, h),
+  S = E && Chunk507604 && Object.getOwnPropertyDescriptor(Chunk127849, m),
   I = !!S && !(S.writable && S.configurable),
   T = O && !I && !v;
 Chunk98405({
@@ -39,13 +39,13 @@ Chunk98405({
 }, {
   DOMException: T ? b : E
 });
-var C = Chunk154028(h),
+var C = Chunk154028(m),
   A = C.prototype;
 if (A.constructor !== C) {
   for (var N in Chunk511696 || s(A, "constructor", Chunk530575(1, C)), Chunk17204)
     if (Chunk77025(Chunk17204, N)) {
       var P = Chunk17204[N],
-        R = P.s;
-      Chunk77025(C, R) || s(C, R, Chunk530575(6, P.c))
+        w = P.s;
+      Chunk77025(C, w) || s(C, w, Chunk530575(6, P.c))
     }
 }

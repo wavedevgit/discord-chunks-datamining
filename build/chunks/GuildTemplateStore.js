@@ -54,21 +54,21 @@ function p(e) {
 }
 
 function _(e) {
-  m(e.guildTemplate)
+  h(e.guildTemplate)
 }
 
-function m(e) {
+function h(e) {
   return f(e.code, t => {
     let n = (0, o.Z)(e);
     for (let e in n) t[e] = n[e]
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     guildTemplates: t
   } = e;
-  t.forEach(e => m(e))
+  t.forEach(e => h(e))
 }
 
 function g(e) {
@@ -126,7 +126,7 @@ let I = new S(Chunk570140.Z, {
   GUILD_TEMPLATE_CREATE_SUCCESS: _,
   GUILD_TEMPLATE_SYNC_SUCCESS: _,
   GUILD_TEMPLATE_RESOLVE_SUCCESS: _,
-  GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS: h,
+  GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS: m,
   GUILD_TEMPLATE_RESOLVE_FAILURE: g,
   GUILD_TEMPLATE_DELETE_SUCCESS: g,
   GUILD_TEMPLATE_ACCEPT: E,

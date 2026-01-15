@@ -41,16 +41,16 @@ function _(e, t, n) {
   let o = null == (a = e.profile) || null == (i = a.data) || null == (r = i.dynamic) ? true : r.find(e => e.name === t);
   return null == o || o.type !== n ? null : o.value
 }
-let m = {
+let h = {
   [Chunk818531.J.MARVEL_RIVALS]: e => {
     var t, n, r, i, a, o, s, l, c, d, f, p;
     let _ = null == (r = e.profile) || null == (n = r.data) || null == (t = n.primary) ? true : t.season,
-      m = null == (o = e.profile) || null == (a = o.data) || null == (i = a.primary) ? true : i.rank_name,
-      h = (0, u.i)(null == (c = e.profile) || null == (l = c.data) || null == (s = l.primary) ? true : s.rank_image),
+      h = null == (o = e.profile) || null == (a = o.data) || null == (i = a.primary) ? true : i.rank_name,
+      m = (0, u.i)(null == (c = e.profile) || null == (l = c.data) || null == (s = l.primary) ? true : s.rank_image),
       g = (0, u.i)(null == (p = e.profile) || null == (f = p.data) || null == (d = f.primary) ? true : d.featured_played_character_image);
-    return null == _ || null == m || null == g ? null : {
-      previewText: "".concat(_, ": ").concat(m),
-      previewIcon: h,
+    return null == _ || null == h || null == g ? null : {
+      previewText: "".concat(_, ": ").concat(h),
+      previewIcon: m,
       previewImage: g
     }
   },
@@ -67,10 +67,10 @@ let m = {
   }
 };
 
-function h(e, t, n, r) {
+function m(e, t, n, r) {
   let i = t.getIconURL(16);
   if (null == i) return null;
-  let a = m[e.widgetTemplateId](n, r);
+  let a = h[e.widgetTemplateId](n, r);
   return null == a ? null : p({
     application: {
       id: t.id,
@@ -94,7 +94,7 @@ function g(e, t) {
       r = n.find(t => (null == t ? true : t.id) === e.applicationId),
       o = null == a ? true : a.find(t => t.application_id === e.applicationId);
     if (null == t || null == r || null == o) return null;
-    let s = h(t, r, o, u);
+    let s = m(t, r, o, u);
     return null == s ? null : [e.applicationId, s]
   }).filter(c.lm)), [n, i, a, u, t])
 }

@@ -2,11 +2,11 @@
 /** chunk id: 79390, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D$: () => R,
+  D$: () => w,
   N4: () => M,
   UI: () => P,
   Uu: () => T,
-  cS: () => w,
+  cS: () => R,
   cZ: () => k,
   e1: () => Z,
   eQ: () => N,
@@ -99,11 +99,11 @@ function P(e) {
   return (0, s.e7)([_.Z], () => null != e && e.id !== l.V && !!b.TPd.POLLS.has(e.type) && (!!e.isPrivate() || _.Z.can(b.Plq.SEND_MESSAGES, e) && _.Z.can(b.Plq.SEND_POLLS, e)))
 }
 
-function R(e, t) {
-  return 0 === e.length && null == t.find(e => w(e))
+function w(e, t) {
+  return 0 === e.length && null == t.find(e => R(e))
 }
 
-function w(e) {
+function R(e) {
   var t;
   let n = null == (t = e.text) ? true : t.trim();
   return null != n && n.length > 0
@@ -116,7 +116,7 @@ function D(e) {
 }
 
 function x(e) {
-  return new Date(Date.now() + e * h.Z.Millis.HOUR).toISOString()
+  return new Date(Date.now() + e * m.Z.Millis.HOUR).toISOString()
 }
 
 function L(e) {
@@ -176,7 +176,7 @@ function U(e, t) {
     o = f.Z.getReactions(a, e.id, r, E.$J, c.O.VOTE),
     s = d.Z.getChannel(a),
     l = null == s || s.isPrivate() ? null : s.getGuildId();
-  return i()(Array.from(null != (n = null == o ? true : o.values()) ? n : [])).reject(e => m.Z.isBlockedOrIgnored(e.id)).take(E.$J).map(e => g.ZP.getName(l, null == s ? true : s.id, e)).value()
+  return i()(Array.from(null != (n = null == o ? true : o.values()) ? n : [])).reject(e => h.Z.isBlockedOrIgnored(e.id)).take(E.$J).map(e => g.ZP.getName(l, null == s ? true : s.id, e)).value()
 }
 
 function G(e, t) {

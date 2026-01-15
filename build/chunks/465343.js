@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => g,
-  i: () => h
+  i: () => m
 }), require("./388685.js"), require("./35282.js");
 var Chunk933557 = require("./933557.js"),
   Chunk339085 = require("./339085.js"),
@@ -19,7 +19,7 @@ var Chunk933557 = require("./933557.js"),
   Chunk709054 = require("./709054.js"),
   Chunk752305 = require("./752305.js");
 
-function h(e, t, n, r) {
+function m(e, t, n, r) {
   let {
     allowUsers: i = true,
     allowRoles: a = true
@@ -36,8 +36,8 @@ function h(e, t, n, r) {
 }
 
 function g(e, t, n, r) {
-  let i = h(e, t, n, r);
-  return null == i ? null : (0, m.VI)(i)
+  let i = m(e, t, n, r);
+  return null == i ? null : (0, h.VI)(i)
 }
 
 function E(e, t, n, r, i) {

@@ -7,11 +7,11 @@ require.d(exports, {
   Zk: () => F,
   _3: () => k,
   _F: () => G,
-  _b: () => R,
+  _b: () => w,
   dA: () => j,
   jZ: () => M,
   mH: () => L,
-  uk: () => w
+  uk: () => R
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk772848 = require("./772848.js"),
@@ -76,12 +76,12 @@ function A(e, t) {
 let N = Object.keys(Chunk49436.jn),
   P = new Set([Chunk981631.rMx.QUEST_CONTENT_VIEWED, Chunk981631.rMx.QUEST_CONTENT_CLICKED]);
 
-function R(e) {
+function w(e) {
   var t;
-  return null != (t = N.find(t => h.jn[t] === e)) ? t : ""
+  return null != (t = N.find(t => m.jn[t] === e)) ? t : ""
 }
 
-function w(e) {
+function R(e) {
   var t, n, r;
   return (null == (t = e.userStatus) ? true : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? true : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? true : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
@@ -111,7 +111,7 @@ function x(e, t, n) {
 function L(e, t, n) {
   return {
     content_id: e,
-    content_name: R(e),
+    content_name: w(e),
     content_position: t,
     row_index: n
   }
@@ -125,7 +125,7 @@ function j(e) {
     trackGuildAndChannelMetadata: i,
     shouldExtendSession: a = false,
     sourceQuestContent: o
-  } = e, s = m.Z.quests.get(t);
+  } = e, s = h.Z.quests.get(t);
   if (null == s || (0, E.X)({
       location: v.dr.QUEST_PREVIEW_TOOL
     }) && d.Z.getLayers().includes(S.S9g.USER_SETTINGS)) return;
@@ -150,18 +150,18 @@ async function k(e) {
     impressionId: l,
     trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
-  } = e, f = m.Z.getQuest(t), _ = await (0, a.S)(R(n)), h = (0, b.jY)(n), g = (0, b.R_)(n), E = (0, b.NS)(n, t), y = (0, b.K8)(n, t);
+  } = e, f = h.Z.getQuest(t), _ = await (0, a.S)(w(n)), m = (0, b.jY)(n), g = (0, b.R_)(n), E = (0, b.NS)(n, t), y = (0, b.K8)(n, t);
   j({
     questId: t,
     event: S.rMx.QUEST_CONTENT_CLICKED,
     properties: A(T({}, L(n, o, s), (0, c.Z)()), {
       cta_name: r,
-      quest_status: null != f ? w(f) : null,
+      quest_status: null != f ? R(f) : null,
       impression_id: l,
       apple_advertising_id: null != _ && (0, p.isIOS)() ? _.advertisingId : null,
       android_advertising_id: null != _ && (0, p.isAndroid)() ? _.advertisingId : null,
       click_id: (0, i.Z)(),
-      metadata_raw: null != h ? h : null,
+      metadata_raw: null != m ? m : null,
       metadata_sealed: null != g ? g : null,
       traffic_metadata_raw: null != E ? E : null,
       traffic_metadata_sealed: null != y ? y : null
@@ -215,19 +215,19 @@ function Z() {
       questContentRowIndex: l,
       trackGuildAndChannelMetadata: u = false,
       sourceQuestContent: d
-    } = t, f = m.Z.getQuest(n), _ = (0, b.jY)(r), h = (0, b.R_)(r), g = (0, b.NS)(r, n), E = (0, b.K8)(r, n);
-    (0, a.S)(R(r)).then(t => {
+    } = t, f = h.Z.getQuest(n), _ = (0, b.jY)(r), m = (0, b.R_)(r), g = (0, b.NS)(r, n), E = (0, b.K8)(r, n);
+    (0, a.S)(w(r)).then(t => {
       e({
         questId: n,
         event: S.rMx.QUEST_CONTENT_CLICKED,
         properties: A(T({}, L(r, s, l), (0, c.Z)()), {
           cta_name: o,
-          quest_status: null != f ? w(f) : null,
+          quest_status: null != f ? R(f) : null,
           click_id: (0, i.Z)(),
           apple_advertising_id: null != t && (0, p.isIOS)() ? t.advertisingId : null,
           android_advertising_id: null != t && (0, p.isAndroid)() ? t.advertisingId : null,
           metadata_raw: null != _ ? _ : null,
-          metadata_sealed: null != h ? h : null,
+          metadata_sealed: null != m ? m : null,
           traffic_metadata_raw: null != g ? g : null,
           traffic_metadata_sealed: null != E ? E : null
         }),

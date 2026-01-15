@@ -69,15 +69,15 @@ function I(e) {
     currentDeviceId: I,
     responsiveBackgroundOptions: T,
     className: C
-  } = e, A = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, P] = i.useState(null), R = (0, _.Z)(), w = c.ZP.canUseCustomBackgrounds(A);
+  } = e, A = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, P] = i.useState(null), w = (0, _.Z)(), R = c.ZP.canUseCustomBackgrounds(A);
   i.useEffect(() => {
     (0, u.XV)()
   }, []);
-  let D = (0, a.cj)([d.Z], () => w ? d.Z.videoFilterAssets : {}),
-    x = i.useMemo(() => Object.values(D).filter(e => e.type === h.xV.BACKGROUND), [D]),
+  let D = (0, a.cj)([d.Z], () => R ? d.Z.videoFilterAssets : {}),
+    x = i.useMemo(() => Object.values(D).filter(e => e.type === m.xV.BACKGROUND), [D]),
     L = (0, s.O)(),
     j = {
-      isVideoBackgroundSupported: R,
+      isVideoBackgroundSupported: w,
       onSelectBackgroundOption: v,
       selectedBackgroundOption: y
     },
@@ -98,7 +98,7 @@ function I(e) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return new Promise(async r => {
         try {
-          let r = await (0, u.Ff)(e, h.xV.BACKGROUND);
+          let r = await (0, u.Ff)(e, m.xV.BACKGROUND);
           U(r), (0, f.g5)(r, t.type === E.m.MP4, n), P(null)
         } catch (e) {
           P(e.message)
@@ -128,13 +128,13 @@ function I(e) {
         }))
       })
     };
-  return R ? (0, r.jsx)("div", {
+  return w ? (0, r.jsx)("div", {
     className: C,
     children: (0, r.jsx)(o.gNt, {
       label: b.intl.string(b.t.lZTUPs),
       errorMessage: N,
-      children: (0, r.jsx)(m.Z, {
-        canUseCustomBackgrounds: w,
+      children: (0, r.jsx)(h.Z, {
+        canUseCustomBackgrounds: R,
         customBackgroundOptions: x,
         selectedOption: y,
         onSelectOption: U,

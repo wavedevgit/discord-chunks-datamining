@@ -76,7 +76,7 @@ function S(e) {
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), A = i.type === h.d4z.DM, N = (0, p.ao)({
+  }), A = i.type === m.d4z.DM, N = (0, p.ao)({
     location: "gift-button",
     isGift: true,
     giftRecipient: O
@@ -87,10 +87,10 @@ function S(e) {
       giftRecipient: O,
       analyticsLocations: b,
       analyticsObject: {
-        page: i.isPrivate() ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL,
-        section: h.jXE.CHANNEL_TEXT_AREA,
-        object: h.qAy.BUTTON_ICON,
-        objectType: h.AnalyticsObjectTypes.GIFT
+        page: i.isPrivate() ? m.ZY5.DM_CHANNEL : m.ZY5.GUILD_CHANNEL,
+        section: m.jXE.CHANNEL_TEXT_AREA,
+        object: m.qAy.BUTTON_ICON,
+        objectType: m.AnalyticsObjectTypes.GIFT
       }
     }) : C && A && null != O ? (0, s.ZDy)(async () => {
       let {
@@ -98,10 +98,10 @@ function S(e) {
       } = await n.e("59207").then(n.bind(n, 435626));
       return t => (0, r.jsx)(e, y({
         analyticsObject: {
-          page: h.ZY5.DM_CHANNEL,
-          section: h.jXE.CHANNEL_TEXT_AREA,
-          object: h.qAy.BUTTON_ICON,
-          objectType: h.AnalyticsObjectTypes.GIFT
+          page: m.ZY5.DM_CHANNEL,
+          section: m.jXE.CHANNEL_TEXT_AREA,
+          object: m.qAy.BUTTON_ICON,
+          objectType: m.AnalyticsObjectTypes.GIFT
         },
         analyticsLocations: b,
         giftRecipient: O
@@ -112,17 +112,17 @@ function S(e) {
       initialPlanId: null,
       analyticsLocations: b,
       analyticsObject: {
-        page: i.isPrivate() ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL,
-        section: h.jXE.CHANNEL_TEXT_AREA,
-        object: h.qAy.BUTTON_ICON,
-        objectType: h.AnalyticsObjectTypes.GIFT
+        page: i.isPrivate() ? m.ZY5.DM_CHANNEL : m.ZY5.GUILD_CHANNEL,
+        section: m.jXE.CHANNEL_TEXT_AREA,
+        object: m.qAy.BUTTON_ICON,
+        objectType: m.AnalyticsObjectTypes.GIFT
       }
     })
   };
   return (0, r.jsx)(o.u, {
     ariaHidden: N,
     text: g.intl.string(N ? g.t.TW4JV0 : g.t.sWtWDX),
-    children: (0, r.jsx)(m.Z, v(y({
+    children: (0, r.jsx)(h.Z, v(y({
       className: E.button,
       isActive: false,
       "aria-label": g.intl.string(N ? g.t.TW4JV0 : g.t.Z1RnTk),

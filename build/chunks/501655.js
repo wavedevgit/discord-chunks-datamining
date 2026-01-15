@@ -112,7 +112,7 @@ class P {
       O = f.Z.getVoiceStateForChannel(this.channelId, e);
     if (null == O) return b;
     let S = d.default.getUser(e);
-    if (null == S) return null != this.guildId && h.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), b;
+    if (null == S) return null != this.guildId && m.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), b;
     let I = null != t ? t[0] : null,
       T = null != this.guildId ? c.ZP.getMember(this.guildId, e) : null,
       C = null != (n = null == T ? true : T.nick) ? n : _.ZP.getName(this.guildId, this.channelId, S),
@@ -123,7 +123,7 @@ class P {
         comparator: (0, p.sQ)(O, C),
         voiceState: O,
         role: (0, E.H)(this.guildId, e),
-        speaker: m.ZP.isSpeaker(e, this.channelId),
+        speaker: h.ZP.isSpeaker(e, this.channelId),
         member: T,
         blocked: u.Z.isBlocked(S.id),
         ignored: u.Z.isIgnored(S.id),

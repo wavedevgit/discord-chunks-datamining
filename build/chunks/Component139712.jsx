@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -77,11 +77,11 @@ function E(e) {
     recurrenceId: n,
     guildId: f,
     onRsvp: _
-  } = e, g = h(e, ["event", "recurrenceId", "guildId", "onRsvp"]);
+  } = e, g = m(e, ["event", "recurrenceId", "guildId", "onRsvp"]);
   let [E, b] = i.useState(l.KX.SERIES), y = (0, l.X2)(t.id, null), O = (null == y ? true : y.response) === c.gv.INTERESTED ? c.gv.UNINTERESTED : c.gv.INTERESTED, v = O === c.gv.INTERESTED ? u.intl.string(u.t.WtORed) : u.intl.string(u.t["8MPCVr"]), S = () => {
     E === l.KX.SERIES ? s.Z.updateRsvp(t.id, null, f, O) : s.Z.updateRsvp(t.id, n, f, O), null == _ || _(), g.onClose()
   };
-  return (0, r.jsx)(o.VoidConfirmModal, m(p({}, g), {
+  return (0, r.jsx)(o.VoidConfirmModal, h(p({}, g), {
     header: v,
     confirmText: u.intl.string(u.t.TyCVIq),
     cancelText: u.intl.string(u.t["ETE/oC"]),
@@ -100,7 +100,7 @@ function E(e) {
 
 function b(e, t, n, i) {
   let a = (e, t) => {
-    (0, o.ZDy)(() => Promise.resolve(a => (0, r.jsx)(E, m(p({}, a), {
+    (0, o.ZDy)(() => Promise.resolve(a => (0, r.jsx)(E, h(p({}, a), {
       event: e,
       recurrenceId: t,
       guildId: n,

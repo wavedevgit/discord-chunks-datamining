@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk860302 = require("./860302.js"),
   Chunk378369 = require("./378369.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -79,7 +79,7 @@ let v = Chunk473749.memo(function(e) {
       useChatFontScaling: i,
       hideEmoji: a,
       emoji: s,
-      className: h,
+      className: m,
       count: g,
       me: E,
       me_burst: b,
@@ -94,18 +94,18 @@ let v = Chunk473749.memo(function(e) {
     } = e,
     N = C === f.O.BURST,
     P = (0, p.y4)(E, b, C),
-    R = (0, d.v)(N && null != O ? O : []),
-    w = i ? m : _,
+    w = (0, d.v)(N && null != O ? O : []),
+    R = i ? h : _,
     D = N ? y : g,
     x = (0, u.y)(D, p.aO),
     L = {};
-  if (N && null != R) {
+  if (N && null != w) {
     var j;
     let {
       accentColor: e,
       backgroundColor: r,
       opacity: i
-    } = R, a = null != (j = (0, l.wK)(null != r ? r : "", i)) ? j : "";
+    } = w, a = null != (j = (0, l.wK)(null != r ? r : "", i)) ? j : "";
     P && (L.borderColor = r), L.background = a, t = e, n = e
   }
   let M = {
@@ -114,21 +114,21 @@ let v = Chunk473749.memo(function(e) {
     borderColor: n
   };
   return (0, r.jsxs)("div", {
-    className: o()(w.reaction, w.reactionInner, h, {
-      [w.reactionMe]: P,
-      [w.reactionReadOnly]: v && !S && !T && !I
+    className: o()(R.reaction, R.reactionInner, m, {
+      [R.reactionMe]: P,
+      [R.reactionReadOnly]: v && !S && !T && !I
     }),
     style: L,
     children: [(0, r.jsx)(c.Z, {
       className: o()({
-        [w.hideEmoji]: a
+        [R.hideEmoji]: a
       }),
       emojiId: s.id,
       emojiName: s.name,
       size: A,
       animated: N && s.animated
     }), (0, r.jsx)("div", {
-      className: w.reactionCount,
+      className: R.reactionCount,
       style: M,
       children: D
     })]

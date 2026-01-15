@@ -83,7 +83,7 @@ function I(e) {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (m.default.extractTimestamp(n.id) + m.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
@@ -129,10 +129,10 @@ function A(e) {
     assets: s,
     currentUser: t,
     message: a
-  }), [s, t, a]), m = i.useCallback(async () => {
+  }), [s, t, a]), h = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, h.v)({
+    } = await (0, m.v)({
       type: l.Ie.FORM,
       content: "",
       channel: n
@@ -154,7 +154,7 @@ function A(e) {
       component: c.Z
     },
     text: _,
-    onClick: m,
+    onClick: h,
     variant: "secondary"
   })
 }

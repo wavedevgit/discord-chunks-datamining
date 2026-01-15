@@ -43,8 +43,8 @@ var r, i = "basil",
       startTime: t
     })
   },
-  m = null,
   h = null,
+  m = null,
   g = null,
   E = function(e) {
     return function(t) {
@@ -59,18 +59,18 @@ var r, i = "basil",
     }
   },
   y = function(e) {
-    return null !== m ? m : (m = new Promise(function(t, n) {
+    return null !== h ? h : (h = new Promise(function(t, n) {
       if ("undefined" == typeof window || "undefined" == typeof document) return void t(null);
       if (window.Stripe && e && console.warn(u), window.Stripe) return void t(window.Stripe);
       try {
         var r, i = f();
-        i && e ? console.warn(u) : i ? i && null !== g && null !== h && (i.removeEventListener("load", g), i.removeEventListener("error", h), null == (r = i.parentNode) || r.removeChild(i), i = p(e)) : i = p(e), g = b(t, n), h = E(n), i.addEventListener("load", g), i.addEventListener("error", h)
+        i && e ? console.warn(u) : i ? i && null !== g && null !== m && (i.removeEventListener("load", g), i.removeEventListener("error", m), null == (r = i.parentNode) || r.removeChild(i), i = p(e)) : i = p(e), g = b(t, n), m = E(n), i.addEventListener("load", g), i.addEventListener("error", m)
       } catch (e) {
         n(e);
         return
       }
     })).catch(function(e) {
-      return m = null, Promise.reject(e)
+      return h = null, Promise.reject(e)
     })
   },
   O = function(e, t, n) {

@@ -5,7 +5,7 @@ require.d(exports, {
   $q: () => f,
   F6: () => d,
   HI: () => _,
-  ZL: () => m,
+  ZL: () => h,
   eW: () => g,
   p9: () => p
 });
@@ -43,13 +43,13 @@ let f = () => (0, a.zu)(i.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
       a = new Date >= i;
     return n && r && a
   },
-  m = () => {
+  h = () => {
     (0, a.Q3)(i.z.REFERRAL_PROGRAM_POPOVER)
   },
-  h = () => (0, a.zu)(i.z.REFERRAL_PROGRAM_POPOVER),
+  m = () => (0, a.zu)(i.z.REFERRAL_PROGRAM_POPOVER),
   g = () => {
     let e = (0, c.b)(false),
-      t = h(),
+      t = m(),
       n = (0, r.e7)([l.Z], () => l.Z.getReferralsRemaining());
     return e && false === t && null !== n && n > 0
   }

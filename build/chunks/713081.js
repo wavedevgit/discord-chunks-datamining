@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   BN: () => _,
-  H6: () => m,
+  H6: () => h,
   Qh: () => f,
   Sn: () => p,
-  Th: () => h,
+  Th: () => m,
   jd: () => d
 }), require("./642613.js"), require("./539854.js");
 var Chunk544891 = require("./544891.js"),
@@ -100,14 +100,14 @@ function _(e) {
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   return r.tn.post({
     url: u.ANM.GUILD_POWERUP_TOGGLE(e, t),
     rejectWithError: true
   })
 }
 
-function h(e, t) {
+function m(e, t) {
   return r.tn.del({
     url: u.ANM.GUILD_POWERUP_TOGGLE(e, t),
     rejectWithError: true

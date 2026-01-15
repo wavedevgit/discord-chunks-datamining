@@ -24,13 +24,13 @@ let c = e => {
     discriminatorClass: f,
     botClass: p,
     botVerified: _ = false,
-    style: m,
-    useRemSizes: h = false,
+    style: h,
+    useRemSizes: m = false,
     usernameIcon: g
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(c, l.nameTag),
-    style: m,
+    style: h,
     children: [(0, r.jsxs)("span", {
       className: a()(l.username, d),
       style: null != s ? {
@@ -45,7 +45,7 @@ let c = e => {
       invertColor: i,
       className: a()(p, l.bot),
       verified: _,
-      useRemSizes: h
+      useRemSizes: m
     }) : null]
   })
 }

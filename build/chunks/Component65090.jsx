@@ -27,11 +27,11 @@ function _(e) {
   return "<@".concat(e.id, ">")
 }
 
-function m(e) {
+function h(e) {
   return e.text
 }
 
-function h(e) {
+function m(e) {
   return "".concat(d.ME).concat(e.name)
 }
 
@@ -73,8 +73,8 @@ let E = {
         },
         selectedIndex: p,
         channel: _,
-        query: m,
-        options: h,
+        query: h,
+        options: m,
         onHover: g,
         onClick: E
       } = e,
@@ -87,7 +87,7 @@ let E = {
         user: e.user,
         nick: e.nick,
         status: e.status,
-        hidePersonalInformation: h.hidePersonalInformation
+        hidePersonalInformation: m.hidePersonalInformation
       }, e.user.id)),
       y = s.map((e, t) => (0, r.jsx)(a.ZP.Generic, {
         onClick: E,
@@ -95,7 +95,7 @@ let E = {
         selected: p === t + o.length,
         index: o.length + t,
         text: e.text,
-        description: h.hideMentionDescription ? null : e.description,
+        description: m.hideMentionDescription ? null : e.description,
         "aria-label": e.text,
         badge: "@game" === e.text || "@time" === e.text ? "new" : true
       }, e.text)),
@@ -105,14 +105,14 @@ let E = {
         selected: p === t + o.length + s.length,
         index: o.length + s.length + t,
         role: e,
-        hideDescription: h.hideMentionDescription,
+        hideDescription: m.hideMentionDescription,
         guildId: _.guild_id
       }, e.id));
-    return h.mentions.user === u.h3.DENY ? (t = f.t.MLiD1e, n = f.intl.string(f.t["LPJmL/"])) : (t = f.t.rPNimn, n = f.intl.string(f.t["9Oq93m"])), (0, r.jsxs)(i.Fragment, {
+    return m.mentions.user === u.h3.DENY ? (t = f.t.MLiD1e, n = f.intl.string(f.t["LPJmL/"])) : (t = f.t.rPNimn, n = f.intl.string(f.t["9Oq93m"])), (0, r.jsxs)(i.Fragment, {
       children: [(0, c.gm)({
         titleWithQuery: t,
         titleWithoutQuery: n,
-        query: m,
+        query: h,
         getQuery: e => "".concat(d.ME).concat(e)
       }), b, o.length > 0 && s.length > 0 ? (0, r.jsx)(a.ZP.Divider, {}) : null, y, o.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(a.ZP.Divider, {}) : null, O]
     }, "mentions")
@@ -128,7 +128,7 @@ let E = {
       options: a,
       channel: o
     } = e, s = t[i], l = n[i - t.length], c = r[i - t.length - n.length], d = u.z2.MENTION;
-    return null != s ? a.insertText(p(s.user, o, a.hidePersonalInformation), _(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = "timestampMentionInput" === l.inlineAutocompleteType ? u.z2.TIMESTAMP : u.z2.GAME_MENTION) : a.insertText(m(l)) : null != c && a.insertText(h(c), g(c)), {
+    return null != s ? a.insertText(p(s.user, o, a.hidePersonalInformation), _(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = "timestampMentionInput" === l.inlineAutocompleteType ? u.z2.TIMESTAMP : u.z2.GAME_MENTION) : a.insertText(h(l)) : null != c && a.insertText(m(c), g(c)), {
       type: d
     }
   }

@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ function g(e) {
     useTitle: n,
     layout: a,
     useCollapsedSubtitle: p
-  } = t, [m, g] = i.useState(false), [E, b] = i.useState(true);
+  } = t, [h, g] = i.useState(false), [E, b] = i.useState(true);
   i.useEffect(() => l.Z.subscribe(e => {
     let {
       navTransition: t
@@ -70,16 +70,16 @@ function g(e) {
   }, e => {
     if (null == e) return;
     let n = (null == e ? true : e.targetAccordionKey) === t.key;
-    n && !m && (g(true), b(false)), n && m && (l.Z.setState({
-      navTransition: h(_({}, e), {
+    n && !h && (g(true), b(false)), n && h && (l.Z.setState({
+      navTransition: m(_({}, e), {
         targetAccordionKey: true
       })
     }), b(true))
   }, {
     equalityFn: s.X,
     fireImmediately: true
-  }), [m, t.key]);
-  let y = null == n ? true : n(m),
+  }), [h, t.key]);
+  let y = null == n ? true : n(h),
     O = null == p ? true : p(),
     v = i.useCallback(e => {
       e && l.Z.setState({
@@ -97,12 +97,12 @@ function g(e) {
       "--custom-base-setting-wrapper-vertical-padding": "".concat(d.G, "px")
     },
     className: o()({
-      [f.open]: m
+      [f.open]: h
     }),
     children: (0, r.jsx)(u.I, {
       title: y,
       collapsedSubtitle: O,
-      isExpanded: m,
+      isExpanded: h,
       onExpandedChange: g,
       onExpandedChangeComplete: v,
       animate: E,

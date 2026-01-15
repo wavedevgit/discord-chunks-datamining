@@ -2,9 +2,9 @@
 /** chunk id: 106824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PA: () => h,
+  PA: () => m,
   ZP: () => g,
-  un: () => m
+  un: () => h
 }), require("./388685.js");
 var Chunk836560 = require("./836560.js"),
   Chunk555573 = require("./555573.js"),
@@ -53,9 +53,9 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = ["gameMentionInput", "timestampMentionInput"];
+let h = ["gameMentionInput", "timestampMentionInput"];
 
-function h() {
+function m() {
   return {
     query: null,
     selectedIndex: null,
@@ -149,8 +149,8 @@ class g extends Chunk836560.EventEmitter {
     if (null == this.props.editorRef.current) return;
     let p = (0, u.FW)(this.props, this.state),
       _ = this.props.editorRef.current.getSlateEditor();
-    null != _ && (i = null != (r = o.bN.getSelectedParentOfType(_, m)) ? o.bN.getTextFromRange(_, o.bN.range(_, r[1])) : null);
-    let h = (0, u.fZ)({
+    null != _ && (i = null != (r = o.bN.getSelectedParentOfType(_, h)) ? o.bN.getTextFromRange(_, o.bN.range(_, r[1])) : null);
+    let m = (0, u.fZ)({
         channel: this.props.channel,
         guild: this.props.guild,
         options: p,
@@ -162,13 +162,13 @@ class g extends Chunk836560.EventEmitter {
         parentAutocompleteInputValue: i
       }),
       g = p.commands !== c.L8.DISABLED ? (0, u.py)(this.props.activeCommandOption, this.props.currentWord) : null;
-    if (null == h && null != g) h = g;
-    else if (null == h || null != g && h.type !== g.type) return void this.clearQuery();
+    if (null == m && null != g) m = g;
+    else if (null == m || null != g && m.type !== g.type) return void this.clearQuery();
     let {
       type: E,
       typeInfo: b,
       query: y
-    } = h, O = f || d && ((null == (e = this.state.query) ? true : e.queryText) !== y || (null == (t = this.state.query) ? true : t.typeInfo) !== b), v = l.fq.getSetting();
+    } = m, O = f || d && ((null == (e = this.state.query) ? true : e.queryText) !== y || (null == (t = this.state.query) ? true : t.typeInfo) !== b), v = l.fq.getSetting();
     p.allowStickers = p.allowStickers ? v : p.allowStickers;
     let S = l.eR.getSetting();
     p.allowSoundmoji = p.allowSoundmoji ? S : p.allowSoundmoji;
@@ -181,13 +181,13 @@ class g extends Chunk836560.EventEmitter {
       N = this.shouldShow(C, A, b),
       P = this.state.selectedIndex;
     !N || A ? P = null : null != P && P >= C && (P = C - 1);
-    let R = null != this.props.guild && s.N.getCurrentConfig({
+    let w = null != this.props.guild && s.N.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
     }, {
       autoTrackExposure: true
     }).enabled;
-    N && !this.state.isVisible && (0, a.a7)(E, this.props.channel, T, R), this.setState({
+    N && !this.state.isVisible && (0, a.a7)(E, this.props.channel, T, w), this.setState({
       query: {
         type: E,
         typeInfo: b,
@@ -237,6 +237,6 @@ class g extends Chunk836560.EventEmitter {
       }
   }
   constructor(e) {
-    super(), d(this, "props", true), d(this, "state", true), d(this, "nextUpdateQueryChanged", false), d(this, "nextUpdateContextChanged", false), d(this, "updateTimeout", true), this.props = e, this.state = h()
+    super(), d(this, "props", true), d(this, "state", true), d(this, "nextUpdateQueryChanged", false), d(this, "nextUpdateContextChanged", false), d(this, "updateTimeout", true), this.props = e, this.state = m()
   }
 }

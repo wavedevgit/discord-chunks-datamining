@@ -47,12 +47,12 @@ function Z(e) {
   let l, {
       application: d,
       channelId: S,
-      guildId: w,
+      guildId: R,
       message: x
     } = e,
     {
       analyticsLocations: Z
-    } = (0, g.ZP)(h.Z.ACTIVITY_INSTANCE_EMBED),
+    } = (0, g.ZP)(m.Z.ACTIVITY_INSTANCE_EMBED),
     B = (0, u.O)(),
     V = (0, s.e7)([C.Z], () => C.Z.getChannel(S), [S]),
     H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : S,
@@ -81,7 +81,7 @@ function Z(e) {
       let e = new I.ZP(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
     }, [d]),
-    ee = (0, m.s5)({
+    ee = (0, h.s5)({
       userId: Y,
       channelId: S,
       application: $
@@ -123,7 +123,7 @@ function Z(e) {
         channel_type: null == V ? true : V.type,
         cta: "View"
       })
-    }), el = R.ZP.getApplicationIconURL({
+    }), el = w.ZP.getApplicationIconURL({
       id: d.id,
       icon: d.icon,
       bot: d.bot
@@ -187,7 +187,7 @@ function Z(e) {
           })]
         }), ec > 0 && (0, r.jsx)(y.K, {
           activityUsers: Q,
-          guildId: w,
+          guildId: R,
           activityText: ed.text
         })]
       })
@@ -197,7 +197,7 @@ function Z(e) {
     trackingConfig: {
       id: d.id,
       linkType: k.U.ACTIVITY_INSTANCE,
-      guildId: w,
+      guildId: R,
       channelId: S,
       messageId: x.id,
       isDeadEnd: et
@@ -210,8 +210,8 @@ let F = Chunk473749.memo(e => {
   } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
   return i.useEffect(() => {
     let e = new l.Xp;
-    return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {
-      r((new Date().getTime() - t) / w.Z.Millis.SECOND)
+    return e.start(c ? 15 * R.Z.Millis.SECOND : R.Z.Millis.SECOND, () => {
+      r((new Date().getTime() - t) / R.Z.Millis.SECOND)
     }), () => e.stop()
   }, [c, t]), (0, S.m)(n)
 });

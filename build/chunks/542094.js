@@ -47,13 +47,13 @@ function T(e) {
     source: f
   } = e, {
     application: p,
-    activity: m
-  } = t, E = m.client_platform_config[(0, h.Z)((0, u.getOS)())], b = Date.now(), O = null != E.label_until && b < Date.parse(E.label_until) && null != E.label_from && b > Date.parse(E.label_from), v = (0, y.Z)({
+    activity: h
+  } = t, E = h.client_platform_config[(0, m.Z)((0, u.getOS)())], b = Date.now(), O = null != E.label_until && b < Date.parse(E.label_until) && null != E.label_from && b > Date.parse(E.label_from), v = (0, y.Z)({
     applicationId: p.id,
     size: l,
     names: s,
     format: "webp"
-  }), S = null != m.activity_preview_video_asset_id ? (0, g.Z)(p.id, m.activity_preview_video_asset_id) : null, T = (0, _.ZP)("channel" === n.type ? n.channel : true).find(e => {
+  }), S = null != h.activity_preview_video_asset_id ? (0, g.Z)(p.id, h.activity_preview_video_asset_id) : null, T = (0, _.ZP)("channel" === n.type ? n.channel : true).find(e => {
     let {
       embeddedActivity: t
     } = e;
@@ -61,7 +61,7 @@ function T(e) {
   }), P = A({
     context: n,
     applicationId: p.id
-  }), R = N({
+  }), w = N({
     application: t.application,
     context: n,
     locationObject: r,
@@ -70,15 +70,15 @@ function T(e) {
     launchingComponentId: c,
     commandOrigin: d,
     source: f
-  }), w = C(p, t.activity);
+  }), R = C(p, t.activity);
   return {
     imageBackground: v,
     videoUrl: S,
     joinableEmbeddedApp: T,
     activityAction: P,
-    onActivityItemSelected: R,
+    onActivityItemSelected: w,
     labelType: O ? E.label_type : a.ww.NONE,
-    staffReleasePhase: w
+    staffReleasePhase: R
   }
 }
 
@@ -86,7 +86,7 @@ function C(e, t) {
   var n;
   let i = null != (n = e.flags) ? n : 0;
   if (!((0, r.yE)(i, v.udG.EMBEDDED_RELEASED) || (0, r.yE)(i, v.udG.EMBEDDED_FIRST_PARTY))) return;
-  let a = t.client_platform_config[(0, h.Z)((0, u.getOS)())].release_phase;
+  let a = t.client_platform_config[(0, m.Z)((0, u.getOS)())].release_phase;
   return O.eB.includes(a) ? a.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : true
 }
 
@@ -104,7 +104,7 @@ function A(e) {
     return null != c && c.id === t.applicationId
   });
   if (null == c) return i;
-  let d = (0, m.p)(null == o ? true : o.location);
+  let d = (0, h.p)(null == o ? true : o.location);
   return null != a && d === a.id && (null == l ? true : l.id) === c.id ? i = 2 : null != u && (i = 1), i
 }
 
@@ -117,8 +117,8 @@ function N(e) {
     locationObject: s,
     embeddedActivitiesManager: u,
     onActivityItemSelectedProp: _,
-    launchingComponentId: m,
-    commandOrigin: h,
+    launchingComponentId: h,
+    commandOrigin: m,
     sectionName: g,
     source: b,
     fetchesApplication: y = true,
@@ -164,8 +164,8 @@ function N(e) {
           locationObject: s,
           channelId: e,
           analyticsLocations: C,
-          componentId: m,
-          commandOrigin: h,
+          componentId: h,
+          commandOrigin: m,
           sectionName: g,
           source: b,
           customId: O,
@@ -182,7 +182,7 @@ function N(e) {
           activityChannelId: "channel" === a.type ? a.channel.id : true,
           locationObject: s,
           analyticsLocations: C,
-          componentId: m,
+          componentId: h,
           sectionName: g,
           source: b,
           customId: O,

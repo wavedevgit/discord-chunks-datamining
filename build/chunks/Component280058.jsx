@@ -2,7 +2,7 @@
 /** chunk id: 280058, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => m
+  t: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,13 +18,13 @@ var Chunk168107 = require("./168107.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m() {
+function h() {
   var e;
   let t = null != (e = (0, f.M)()) ? e : true,
     n = (0, d.q1)(),
-    m = s.IU.useControlledSetting(t);
+    h = s.IU.useControlledSetting(t);
 
-  function h(e) {
+  function m(e) {
     if (!e && (0, o.S)()) return void i.Z.showAgeVerificationGetStartedModal({
       entryPoint: a.cU.MESSAGE_REQUESTS_SETTINGS
     });
@@ -33,8 +33,8 @@ function m() {
   return (0, r.jsx)(l.U, {
     children: (0, r.jsx)(c.ZP, {
       title: _.intl.string(_.t["3o2ojh"]),
-      value: !n && !m,
-      onChange: e => h(e),
+      value: !n && !h,
+      onChange: e => m(e),
       disabled: n,
       note: _.intl.format(_.t.IoztJ0, {
         helpdeskArticle: u.Z.getArticleURL(p.BhN.MESSAGE_REQUESTS)

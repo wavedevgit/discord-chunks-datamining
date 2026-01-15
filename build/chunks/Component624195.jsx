@@ -42,13 +42,13 @@ function f(e) {
   let {
     width: f,
     height: p
-  } = i, _ = f, m = p;
-  return (f > c || p > u) && (f > p ? (_ = c, m = c * p / f) : (_ = u * f / p, m = u)), (0, r.jsx)("iframe", {
+  } = i, _ = f, h = p;
+  return (f > c || p > u) && (f > p ? (_ = c, h = c * p / f) : (_ = u * f / p, h = u)), (0, r.jsx)("iframe", {
     className: a()(s.embedAmazonMusic, t),
     src: l,
     style: {
       width: _,
-      height: m
+      height: h
     },
     frameBorder: 0,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"

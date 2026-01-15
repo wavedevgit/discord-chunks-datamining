@@ -37,7 +37,7 @@ module.exports = function(e) {
       match: /[-+*/=%^~]|&&?|\|\|?|!=?|<(?:=>?|<|>)?|>[>=]?/,
       relevance: 0
     },
-    m = {
+    h = {
       match: t.concat(/\b/, t.either(...d), /\s*\(/),
       relevance: 0,
       keywords: {
@@ -45,12 +45,12 @@ module.exports = function(e) {
       }
     };
 
-  function h(e) {
+  function m(e) {
     return t.concat(/\b/, t.either(...e.map(e => e.replace(/\s+/, "\\s+"))), /\b/)
   }
   let g = {
     scope: "keyword",
-    match: h(u),
+    match: m(u),
     relevance: 0
   };
   return {
@@ -74,7 +74,7 @@ module.exports = function(e) {
     },
     contains: [{
       scope: "type",
-      match: h(o)
-    }, g, m, p, r, i, e.C_NUMBER_MODE, e.C_BLOCK_COMMENT_MODE, n, _]
+      match: m(o)
+    }, g, h, p, r, i, e.C_NUMBER_MODE, e.C_BLOCK_COMMENT_MODE, n, _]
   }
 }

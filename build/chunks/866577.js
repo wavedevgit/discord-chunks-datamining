@@ -2,7 +2,7 @@
 /** chunk id: 866577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => m
+  i: () => h
 });
 var Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
@@ -114,7 +114,7 @@ let p = 10,
     }
   };
 
-function m(e) {
+function h(e) {
   let {
     shouldShow: t,
     caretPosition: n,
@@ -123,8 +123,8 @@ function m(e) {
     reducedMotion: c
   } = r.useContext(i.Sfi), f = _(n, c.enabled), {
     config: p
-  } = f, m = d(f, ["config"]);
-  return (0, a.Yzy)(t, u(l({}, m), {
+  } = f, h = d(f, ["config"]);
+  return (0, a.Yzy)(t, u(l({}, h), {
     config: null != p ? p : (e, n) => t ? o.Z : o.R,
     onRest: () => {
       t || null == s || s()

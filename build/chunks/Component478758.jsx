@@ -48,13 +48,13 @@ let u = 99,
         member: e,
         guildId: s
       }, e.id)).value(),
-      m = d - p;
-    for (let e = 0; e < m && _.length < o; e++) _.push((0, r.jsx)(f, {
+      h = d - p;
+    for (let e = 0; e < h && _.length < o; e++) _.push((0, r.jsx)(f, {
       empty: true,
       guildId: s
     }, "empty-member-".concat(e)));
-    let h = Math.max(Math.min(d - _.length, u), 0);
-    if (1 === h) {
+    let m = Math.max(Math.min(d - _.length, u), 0);
+    if (1 === m) {
       let e = n[o];
       _.push((0, r.jsx)(f, {
         member: e,
@@ -65,9 +65,9 @@ let u = 99,
       className: c.wrapper,
       children: (0, r.jsxs)("div", {
         className: c.partyMembers,
-        children: [_, h > 1 ? (0, r.jsxs)("div", {
+        children: [_, m > 1 ? (0, r.jsxs)("div", {
           className: c.partyMemberOverflow,
-          children: ["+", h]
+          children: ["+", m]
         }) : null]
       })
     })

@@ -30,7 +30,7 @@ function O() {
   let [e, t] = i.useState(false), [n, r] = i.useState(false);
 
   function a(e, n) {
-    t(e), r((n & m.Dg.VOICE) === m.Dg.VOICE)
+    t(e), r((n & h.Dg.VOICE) === h.Dg.VOICE)
   }
   return i.useEffect(() => {
     let e = new c.V7;
@@ -80,7 +80,7 @@ function S(e) {
     autoThreshold: _.Z.getModeOptions().autoThreshold
   })), p = (0, s.e7)([_.Z], () => _.Z.getMode());
 
-  function m(e, t) {
+  function h(e, t) {
     f.Z.setMode(p, {
       threshold: e,
       autoThreshold: t
@@ -94,7 +94,7 @@ function S(e) {
     children: (0, r.jsx)(d.iRW, {
       initialValue: l + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => m(-((100 - e) * 1), c),
+      onValueChange: e => h(-((100 - e) * 1), c),
       barStyles: {
         background: u.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -129,7 +129,7 @@ function I() {
     automaticVADSupported: i
   } = (0, s.cj)([_.Z], () => ({
     inputMode: _.Z.getMode(),
-    automaticVADSupported: _.Z.supports(m.AN.AUTOMATIC_VAD)
+    automaticVADSupported: _.Z.supports(h.AN.AUTOMATIC_VAD)
   })), {
     volume: a,
     isSpeaking: o
@@ -142,10 +142,10 @@ function I() {
     })
   }
   return (0, r.jsxs)(d.C3N, {
-    label: h.intl.string(h.t["sqUm+k"]),
+    label: m.intl.string(m.t["sqUm+k"]),
     className: g.sensitivity,
     children: [i && (0, r.jsx)(d.rsf, {
-      label: h.intl.string(h.t.I1Zuq0),
+      label: m.intl.string(m.t.I1Zuq0),
       checked: t,
       onChange: t => c(e, t)
     }), t ? (0, r.jsxs)("section", {
@@ -155,14 +155,14 @@ function I() {
       }), (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
         className: b.marginBottom8,
-        children: h.intl.string(h.t.W3K5Im)
+        children: m.intl.string(m.t.W3K5Im)
       })]
     }) : (0, r.jsx)(S, {
       volume: a
     }), !l && (0, r.jsx)(d.Wn, {
       messageType: d.QYI.WARNING,
       className: b.marginBottom8,
-      children: h.intl.format(h.t["O13I+O"], {
+      children: m.intl.format(m.t["O13I+O"], {
         onEnableClick: () => f.Z.enable(true)
       })
     })]

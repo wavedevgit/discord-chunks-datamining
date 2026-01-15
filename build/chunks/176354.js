@@ -19,9 +19,9 @@ var Chunk738774 = require("./738774.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js");
-let m = 2097152,
-  h = new Set([Chunk185923.Z5.PREMIUM_LOCKED, Chunk185923.Z5.ROLE_SUBSCRIPTION_LOCKED]),
-  g = new Set([...h, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
+let h = 2097152,
+  m = new Set([Chunk185923.Z5.PREMIUM_LOCKED, Chunk185923.Z5.ROLE_SUBSCRIPTION_LOCKED]),
+  g = new Set([...m, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
   E = new Set([Chunk185923.Z5.DISALLOW_CUSTOM, Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ONLY_GUILD_EMOJIS_ALLOWED]);
 
 function b(e) {
@@ -43,14 +43,14 @@ function O(e) {
   if (!b(t)) return null;
   if (c === _.Hz.GUILD_PROFILE) return _.Z5.DISALLOW_CUSTOM;
   let d = null != n && (0, o.zi)(n.type),
-    m = null != n && (0, o.bw)(n.type),
-    h = y(t, i),
+    h = null != n && (0, o.bw)(n.type),
+    m = y(t, i),
     g = s.Z.can(p.Plq.USE_EXTERNAL_EMOJIS, n);
-  if (c === _.Hz.COMMUNITY_CONTENT) return h && null != t.guildId && t.available ? null : _.Z5.DISALLOW_EXTERNAL;
-  if (!(0, _.Gt)(c) && !y(t, i) && !u || (d || m) && !h && !g) return _.Z5.DISALLOW_EXTERNAL;
+  if (c === _.Hz.COMMUNITY_CONTENT) return m && null != t.guildId && t.available ? null : _.Z5.DISALLOW_EXTERNAL;
+  if (!(0, _.Gt)(c) && !y(t, i) && !u || (d || h) && !m && !g) return _.Z5.DISALLOW_EXTERNAL;
   if (null != t.id && !t.available) return _.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE;
   let E = l.default.getCurrentUser();
-  if (!f.ZP.canUseEmojisEverywhere(E) && !h) {
+  if (!f.ZP.canUseEmojisEverywhere(E) && !m) {
     if (c === _.Hz.STATUS) return _.Z5.PREMIUM_LOCKED;
     else if (!t.managed) return _.Z5.PREMIUM_LOCKED
   }
@@ -84,7 +84,7 @@ let v = {
         o.push(e);
         continue
       }
-      E.has(t) || o.push(e), g.has(t) && (null != e.id && a.add(e.id), h.has(t) && (l || t !== _.Z5.PREMIUM_LOCKED || (l = true), s++))
+      E.has(t) || o.push(e), g.has(t) && (null != e.id && a.add(e.id), m.has(t) && (l || t !== _.Z5.PREMIUM_LOCKED || (l = true), s++))
     }
     return {
       emojisDisabled: a,
@@ -99,7 +99,7 @@ let v = {
   },
   isEmojiPremiumLocked(e) {
     let t = O(e);
-    return h.has(t)
+    return m.has(t)
   },
   isEmojiCategoryNitroLocked(e) {
     let {
@@ -126,7 +126,7 @@ let v = {
     let t = O(e);
     return g.has(t)
   },
-  isFileTooBig: e => e.size > m,
+  isFileTooBig: e => e.size > h,
   isDataTooBig: e => (0, d.QB)(e) > _.h_
 };
 async function S(e) {

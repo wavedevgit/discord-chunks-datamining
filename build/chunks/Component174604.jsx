@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ function b(e) {
     guild: t,
     themeResponsive: n = true,
     onButtonClick: a
-  } = e, _ = (0, u.Z)(t.id), [h, b] = i.useState(false), [y, O] = (0, c.q_F)(() => ({
+  } = e, _ = (0, u.Z)(t.id), [m, b] = i.useState(false), [y, O] = (0, c.q_F)(() => ({
     scale: .8,
     config: {
       tension: 500,
@@ -120,8 +120,8 @@ function b(e) {
     className: o()(p.container, {
       [p.themeResponsiveContainer]: n
     }),
-    style: g(m({}, y), {
-      opacity: +!!h
+    style: g(h({}, y), {
+      opacity: +!!m
     }),
     children: [(0, r.jsx)(l.xvT, {
       tag: "span",

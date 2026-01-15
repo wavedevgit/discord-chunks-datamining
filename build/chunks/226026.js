@@ -21,7 +21,7 @@ function u(e) {
     sectionOverallPosition: f,
     promotionalLabel: p,
     numFriendsWhoPlay: _
-  } = e, m = (0, a.e7)([s.Z], () => s.Z.entrypoint()), h = r.useCallback(() => {
+  } = e, h = (0, a.e7)([s.Z], () => s.Z.entrypoint()), m = r.useCallback(() => {
     (0, o.h)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.APP_LAUNCHER_ITEM,
@@ -31,7 +31,7 @@ function u(e) {
         section_name: u,
         section_position: d,
         section_overall_position: f,
-        source: m,
+        source: h,
         promotional_label: p,
         num_friends_who_play: _
       }
@@ -39,7 +39,7 @@ function u(e) {
   }, [_]), g = .5;
   return {
     trackItemImpressionRef: (0, l.Z)({
-      onVisible: h,
+      onVisible: m,
       threshold: g,
       minTimeVisibleMs: c
     })

@@ -81,15 +81,15 @@ let f = {
       foreground: d,
       expanded: p
     } = e, _ = u(e, ["direction", "width", "height", "color", "className", "foreground", "expanded"]);
-    let m = t;
-    true === p ? m = f.DOWN : false === p && (m = f.RIGHT);
-    let h = {
+    let h = t;
+    true === p ? h = f.DOWN : false === p && (h = f.RIGHT);
+    let m = {
       [f.UP]: i.u04,
       [f.DOWN]: i.CJ0,
       [f.LEFT]: i.V7D,
       [f.RIGHT]: i.Fbu
-    } [m];
-    return (0, r.jsx)(h, c(s({}, _), {
+    } [h];
+    return (0, r.jsx)(m, c(s({}, _), {
       className: l,
       size: "custom",
       width: n,

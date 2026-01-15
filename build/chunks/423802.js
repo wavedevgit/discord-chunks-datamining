@@ -35,11 +35,11 @@ function l(e, t, n) {
     return e.sort(function(e, t) {
       return p(e, t, f)
     })
-  } : _)(e.reduce(m, [])).map(function(e) {
+  } : _)(e.reduce(h, [])).map(function(e) {
     return e.item
   });
 
-  function m(e, i, o) {
+  function h(e, i, o) {
     var s = c(i, a, t, n),
       l = s.rank,
       d = s.keyThreshold;
@@ -69,10 +69,10 @@ function c(e, t, n, r) {
       f = t.attributes,
       p = u(d, n, r),
       _ = s,
-      m = f.minRanking,
-      h = f.maxRanking,
+      h = f.minRanking,
+      m = f.maxRanking,
       g = f.threshold;
-    return p < m && p >= o.MATCHES ? p = m : p > h && (p = h), p > a && (a = p, l = i, c = g, _ = d), {
+    return p < h && p >= o.MATCHES ? p = h : p > m && (p = m), p > a && (a = p, l = i, c = g, _ = d), {
       rankedValue: _,
       rank: a,
       keyIndex: l,
@@ -136,19 +136,19 @@ function _(e, t) {
   return e = "" + e, t.keepDiacritics || (e = a()(e)), e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n;
   if ("object" == typeof t && (t = t.key), "function" == typeof t) n = t(e);
   else if (null == e) n = null;
   else if (Object.hasOwnProperty.call(e, t)) n = e[t];
   else {
-    if (t.includes(".")) return h(t, e);
+    if (t.includes(".")) return m(t, e);
     n = null
   }
   return null == n ? [] : Array.isArray(n) ? n : [String(n)]
 }
 
-function h(e, t) {
+function m(e, t) {
   for (var n = e.split("."), r = [t], i = 0, a = n.length; i < a; i++) {
     for (var o = n[i], s = [], l = 0, c = r.length; l < c; l++) {
       var u = r[l];
@@ -169,7 +169,7 @@ function h(e, t) {
 
 function g(e, t) {
   for (var n = [], r = 0, i = t.length; r < i; r++)
-    for (var a = t[r], o = b(a), s = m(e, a), l = 0, c = s.length; l < c; l++) n.push({
+    for (var a = t[r], o = b(a), s = h(e, a), l = 0, c = s.length; l < c; l++) n.push({
       itemValue: s[l],
       attributes: o
     });

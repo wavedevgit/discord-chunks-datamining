@@ -2,7 +2,7 @@
 /** chunk id: 582546, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,11 +19,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   var t;
   let {
     user: n,
-    entry: h,
+    entry: m,
     display: g,
     onAction: E,
     onClose: b
@@ -31,10 +31,10 @@ function h(e) {
     var e;
     return (null == (e = f.default.getCurrentUser()) ? true : e.id) === n.id
   }), O = (0, i.e7)([c.Z], () => c.Z.hasConnectedAccount());
-  if ("recent" !== g || !(0, l.AZ)(h)) return null;
+  if ("recent" !== g || !(0, l.AZ)(m)) return null;
   if (!O) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
-    label: m.intl.formatToPlainString(m.t.XWSHTb, {
+    label: h.intl.formatToPlainString(h.t.XWSHTb, {
       platform: _.ai
     }),
     action: () => {
@@ -46,10 +46,10 @@ function h(e) {
     }
   });
   if (y) return null;
-  let v = (0, o.dU)(h) ? null == (t = h.extra.entries[0]) ? true : t.media : h.extra.media;
+  let v = (0, o.dU)(m) ? null == (t = m.extra.entries[0]) ? true : t.media : m.extra.media;
   return null == v ? null : (0, r.jsx)(a.sNh, {
     id: "play-on-spotify",
-    label: m.intl.string(m.t.rRffNz),
+    label: h.intl.string(h.t.rRffNz),
     action: () => {
       null == E || E({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"

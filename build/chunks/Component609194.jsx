@@ -2,7 +2,7 @@
 /** chunk id: 609194, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ let p = {
     large: Chunk84329.large,
     none: null
   };
-class m extends(r = Chunk473749.PureComponent) {
+class h extends(r = Chunk473749.PureComponent) {
   render() {
     let {
       icon: e,
@@ -58,5 +58,5 @@ class m extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-u(m, "Colors", d), u(m, "Sizes", f);
-let h = m
+u(h, "Colors", d), u(h, "Sizes", f);
+let m = h

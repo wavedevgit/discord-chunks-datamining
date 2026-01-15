@@ -43,7 +43,7 @@ let C = {
     if (null == t ? true : t.hasSubscribers(T.CkL.POPOUT_CLOSE_AFTER_MODALS)) return t.dispatch(T.CkL.POPOUT_CLOSE_AFTER_MODALS), false;
     let n = O.Z.getGuildId(),
       i = y.Z.getChannelId(n),
-      a = m.Z.getChannel(i),
+      a = h.Z.getChannel(i),
       l = _.ZP.getSection(i, null == a ? true : a.isDM()) === T.ULH.SIDEBAR_CHAT ? _.ZP.getSidebarState(i) : null,
       c = (null == l ? true : l.type) === d.tI.VIEW_THREAD || (null == l ? true : l.type) === d.tI.VIEW_CHANNEL ? l.channelId : null;
     if (false === A(i) || false === A(c)) returnfalse;
@@ -58,7 +58,7 @@ function A(e) {
   if (null != e) {
     if (g.Z.isEditingAny(e)) return i.Z.endEditMessage(e), false;
     if (null != c.Z.getPendingReply(e)) return (0, l.A6)(e), false;
-    if (null != f.Z.getStickerPreview(e, h.d.ChannelMessage)) return (0, p.qB)(e, h.d.ChannelMessage), false
+    if (null != f.Z.getStickerPreview(e, m.d.ChannelMessage)) return (0, p.qB)(e, m.d.ChannelMessage), false
   }
 }
 

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E2: () => T,
-  Kp: () => R,
+  Kp: () => w,
   LI: () => E,
   MH: () => P,
   Qr: () => g,
@@ -14,7 +14,7 @@ require.d(exports, {
   k0: () => A,
   lx: () => b,
   m4: () => v,
-  t3: () => h,
+  t3: () => m,
   yH: () => C
 }), require("./388685.js"), require("./642613.js");
 var Chunk913527 = require("./913527.js"),
@@ -29,8 +29,8 @@ let d = 60,
   f = 3600,
   p = 86400,
   _ = 172800,
-  m = 604800,
-  h = () => ({
+  h = 604800,
+  m = () => ({
     today: u.intl.string(c.default.VjIAQQ),
     yesterday: u.intl.string(c.default["2a8xHY"]),
     days: c.default.Xt6oND
@@ -60,7 +60,7 @@ let d = 60,
       count: Math.floor(n / d)
     }) : n < p ? u.intl.formatToPlainString(r.hours, {
       count: Math.floor(n / f)
-    }) : n < _ ? r.yesterday : n < m ? u.intl.formatToPlainString(r.days, {
+    }) : n < _ ? r.yesterday : n < h ? u.intl.formatToPlainString(r.days, {
       count: Math.floor(n / p)
     }) : u.intl.formatToPlainString(r.date, {
       date: a
@@ -93,7 +93,7 @@ let d = 60,
       t = N();
     return (null == e ? true : e.nsfwAllowed) === false && t
   },
-  R = (e, t) => t > 0 && 0 === e ? u.intl.formatToPlainString(c.default["L/Cj7S"], {
+  w = (e, t) => t > 0 && 0 === e ? u.intl.formatToPlainString(c.default["L/Cj7S"], {
     callCount: t
   }) : e > 0 && 0 === t ? u.intl.formatToPlainString(c.default["6X1F0i"], {
     messageCount: e

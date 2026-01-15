@@ -2,7 +2,7 @@
 /** chunk id: 306052, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => h
+  g: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk913527 = require("./913527.js"),
@@ -17,13 +17,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk726985 = require("./726985.js"),
   Chunk474936 = require("./474936.js");
-let h = e => {
+let m = e => {
   let {
     isDevTools: t = false
   } = e, n = (0, o.e7)([p.default], () => p.default.getCurrentUser()), i = (0, o.e7)([d.Z], () => {
     let e = d.Z.getCreatedAtOverride();
     return null != e ? e.toISOString().substring(0, 10) : ""
-  }), h = (0, o.e7)([d.Z], () => d.Z.getPremiumTypeOverride()), g = e => {
+  }), m = (0, o.e7)([d.Z], () => d.Z.getPremiumTypeOverride()), g = e => {
     (0, u.u)(new Date(e))
   };
   return (0, r.jsxs)(l.Kqy, {
@@ -32,15 +32,15 @@ let h = e => {
       setting: _.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_PREMIUM_TYPE,
       children: [(0, r.jsx)(s.y6, {
         label: "Override Client-Side Premium Type",
-        options: m.b6,
-        value: h,
+        options: h.b6,
+        value: m,
         onChange: e => {
           (0, u.C)(e, n)
         },
         popoutLayerContext: t ? c.O$ : true
       }), (0, r.jsx)(l.Avr, {
         onClick: () => {
-          (0, u.C)(m.F_, n)
+          (0, u.C)(h.F_, n)
         },
         text: "Reset premium type override"
       })]

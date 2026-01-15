@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = new Set,
-  h = new Map,
+let h = new Set,
+  m = new Map,
   g = new Map,
   E = new Map,
   b = new Map,
@@ -43,7 +43,7 @@ function O(e) {
       u = new Set(null != (_ = null == o ? true : o.roles) ? _ : []);
     for (let t of c.Z.getSortedRoles(n.id))(0, f.Z)(t) && (r.add(t.id), (0, f.h)(t) && (i.add(t.id), u.has(t.id) && a.add(t.id))), u.has(t.id) && (0, s.Fs)(t, p.Plq.ADMINISTRATOR) && b.set(e, true)
   }
-  return h.set(e, r), E.set(e, a), g.set(e, i), true
+  return m.set(e, r), E.set(e, a), g.set(e, i), true
 }
 
 function v() {
@@ -54,7 +54,7 @@ function v() {
 }
 
 function S() {
-  h.clear(), E.clear(), g.clear(), b.clear(), y = null
+  m.clear(), E.clear(), g.clear(), b.clear(), y = null
 }
 
 function I(e) {
@@ -93,7 +93,7 @@ function C(e) {
   let {
     guildId: t
   } = e;
-  return !!h.has(t) && O(t)
+  return !!m.has(t) && O(t)
 }
 
 function A(e) {
@@ -101,7 +101,7 @@ function A(e) {
     guildId: t,
     user: n
   } = e, r = d.default.getCurrentUser();
-  return !!(n.id === (null == r ? true : r.id) && h.has(t)) && O(t)
+  return !!(n.id === (null == r ? true : r.id) && m.has(t)) && O(t)
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -111,19 +111,19 @@ class N extends(r = Chunk442837.ZP.Store) {
     return null == y ? v() : y
   }
   buildRoles(e) {
-    h.has(e) || O(e)
+    m.has(e) || O(e)
   }
   getSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null != (t = h.get(e)) ? t : m
+    return this.buildRoles(e), null != (t = m.get(e)) ? t : h
   }
   getPurchasableSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null != (t = g.get(e)) ? t : m
+    return this.buildRoles(e), null != (t = g.get(e)) ? t : h
   }
   getUserSubscriptionRoles(e) {
     var t;
-    return this.buildRoles(e), null != (t = E.get(e)) ? t : m
+    return this.buildRoles(e), null != (t = E.get(e)) ? t : h
   }
   getUserIsAdmin(e) {
     var t;

@@ -70,7 +70,7 @@ function I(e, t) {
       analyticsSource: t
     }))
   }, {
-    contextKey: e === h.IlC.POPOUT ? o.u1M : o.z1l
+    contextKey: e === m.IlC.POPOUT ? o.u1M : o.z1l
   })
 }
 
@@ -80,12 +80,12 @@ function T(e, t) {
     resolution: y,
     fps: v,
     soundshareEnabled: T
-  } = (0, a.cj)([u.Z], () => u.Z.getState()), C = (0, a.e7)([p.Z], () => p.Z.getGoLiveSource()), A = (0, a.e7)([m.default], () => m.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
+  } = (0, a.cj)([u.Z], () => u.Z.getState()), C = (0, a.e7)([p.Z], () => p.Z.getGoLiveSource()), A = (0, a.e7)([h.default], () => h.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
     location: P
-  } = (0, l.O)(), R = (0, a.e7)([_.Z, d.Z], () => d.Z.getChannel(_.Z.getVoiceChannelId())), w = i.useCallback((e, n, r, i) => {
+  } = (0, l.O)(), w = (0, a.e7)([_.Z, d.Z], () => d.Z.getChannel(_.Z.getVoiceChannelId())), R = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != C) {
         let e = {
@@ -105,7 +105,7 @@ function T(e, t) {
         }), s.Z.setGoLiveSource(e)
       }
     } else I(t, S(O({}, P), {
-      object: h.qAy.RADIO_ITEM,
+      object: m.qAy.RADIO_ITEM,
       objectType: i
     }))
   }, [t, P, T, C]);
@@ -115,26 +115,26 @@ function T(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, A, N, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, A, N, w);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === v,
-        action: () => w(i, y, t, h.AnalyticsObjectTypes.RESOLUTION)
+        action: () => R(i, y, t, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
     L = g.km.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, D, A, N, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, D, A, N, w);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
         checked: t === y,
-        action: () => w(i, t, D, h.AnalyticsObjectTypes.RESOLUTION)
+        action: () => R(i, t, D, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {

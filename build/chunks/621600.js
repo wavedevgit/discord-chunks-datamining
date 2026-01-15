@@ -4,14 +4,13 @@
 require.d(exports, {
   $R: () => b,
   GA: () => I,
-  I: () => C,
+  I: () => T,
   UE: () => E,
   Wq: () => y,
   ZB: () => g,
   jz: () => S,
-  rU: () => T,
   sK: () => v,
-  wK: () => A
+  wK: () => C
 }), require("./997841.js"), require("./388685.js");
 var Chunk95015 = require("./95015.js"),
   Chunk367907 = require("./367907.js"),
@@ -47,7 +46,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +57,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,13 +104,13 @@ function y(e, t, n, o, s) {
         guild_scheduled_events_muted: null != (s = l.mute_scheduled_events) ? s : e.guild_scheduled_events_muted
       }
     },
-    m = p(n),
+    h = p(n),
     g = p(I(e), t),
-    E = O(m, g, "RETURN_PREVIOUS_WHEN_CHANGED"),
+    E = O(h, g, "RETURN_PREVIOUS_WHEN_CHANGED"),
     y = null != (l = E("guild_flags")) ? l : 0,
     v = (null != (d = g.guild_flags) ? d : 0) ^ y,
     S = 0 === (0, r.M1)(v, f.vc.OPT_IN_CHANNELS_OFF, f.vc.OPT_IN_CHANNELS_ON);
-  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, g, a.Z.getStats(e)), {
+  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(_({}, g, a.Z.getStats(e)), {
     location: s,
     guild_id: e,
     update_type: u.I.GUILD,
@@ -142,19 +141,19 @@ function S(e) {
   var t, n, l, d;
   let {
     updateType: p = u.I.CHANNEL,
-    guildId: m,
+    guildId: h,
     channelId: g,
     applicationId: E,
     change: y,
     previous: S,
     label: I,
-    location: T
+    location: C
   } = e, A = function(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       i = null != (t = r.muted) ? t : null == e ? true : e.channel_is_muted,
       a = null != r.message_notifications ? b[r.message_notifications] : null == e ? true : e.channel_message_notification_settings,
-      o = null == m ? null : true === i || null != a;
+      o = null == h ? null : true === i || null != a;
     return {
       channel_is_muted: i,
       channel_is_overridden: o,
@@ -162,19 +161,19 @@ function S(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, N = A(S), P = A(C(m, g), y), R = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), w = o.Z.getChannel(g), D = null != (n = R("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ D, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
-  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, P, a.Z.getStats(m)), {
-    location: T,
-    guild_id: m,
+  }, N = A(S), P = A(T(h, g), y), w = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), R = o.Z.getChannel(g), D = null != (n = w("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ D, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
+  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(_({}, P, a.Z.getStats(h)), {
+    location: C,
+    guild_id: h,
     channel_id: g,
     update_type: p,
     label: I,
-    parent_id: null != w ? w.parent_id : null,
-    channel_flags_old: R("channel_flags"),
-    channel_is_muted_old: R("channel_is_muted"),
-    channel_muted_until_old: R("channel_muted_until"),
-    channel_is_overridden_old: R("channel_is_overridden"),
-    channel_message_notification_settings_old: R("channel_message_notification_settings"),
+    parent_id: null != R ? R.parent_id : null,
+    channel_flags_old: w("channel_flags"),
+    channel_is_muted_old: w("channel_is_muted"),
+    channel_muted_until_old: w("channel_muted_until"),
+    channel_is_overridden_old: w("channel_is_overridden"),
+    channel_message_notification_settings_old: w("channel_message_notification_settings"),
     is_opt_in_only_change: L,
     last_message_type: j,
     application_id: E
@@ -197,12 +196,7 @@ function I(e) {
   }
 }
 
-function T(e) {
-  let t = new Map;
-  return e.forEach(e => t.set(e, I(e))), t
-}
-
-function C(e, t) {
+function T(e, t) {
   let n = l.ZP.isChannelMuted(e, t),
     r = l.ZP.getChannelMuteConfig(e, t);
   return {
@@ -213,7 +207,7 @@ function C(e, t) {
   }
 }
 
-function A(e, t) {
+function C(e, t) {
   let n = new Map;
-  return t.forEach(t => n.set(t, C(e, t))), n
+  return t.forEach(t => n.set(t, T(e, t))), n
 }

@@ -17,7 +17,7 @@ var Chunk392711 = require("./392711.js"),
 let f = 4,
   p = 1,
   _ = 3,
-  m = [
+  h = [
     [{
       top: 15,
       left: 15,
@@ -73,7 +73,7 @@ let f = 4,
       height: 22
     }]
   ],
-  h = [
+  m = [
     [{
       top: 23,
       left: 23,
@@ -136,7 +136,7 @@ function g(e) {
     channel: n
   } = e, {
     themeType: g
-  } = (0, c.z)(), E = g === u.l.MODAL_V2 ? h : m, b = t.length > f, y = t.length - f + 1, O = y >= 10 ? _ : p;
+  } = (0, c.z)(), E = g === u.l.MODAL_V2 ? m : h, b = t.length > f, y = t.length - f + 1, O = y >= 10 ? _ : p;
   return (0, r.jsx)("div", {
     className: d.container,
     children: E[(0, i.clamp)(t.length - 1, 0, E.length - 1)].map((e, i) => {

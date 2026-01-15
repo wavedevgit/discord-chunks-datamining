@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   EU: () => y,
-  UD: () => w,
+  UD: () => R,
   Yw: () => v,
-  ZL: () => R,
+  ZL: () => w,
   ao: () => D,
   bd: () => S,
   kZ: () => I,
@@ -70,10 +70,10 @@ function C(e) {
   let t = {
     sku_id: e.skuId,
     sku_name: e.name,
-    sku_product_line: h.POd.COLLECTIBLES,
+    sku_product_line: m.POd.COLLECTIBLES,
     collectibles_item: e.items[0]
   };
-  return m.Z.fromServer(t)
+  return h.Z.fromServer(t)
 }
 
 function A(e) {
@@ -120,7 +120,7 @@ function P() {
   return e
 }
 
-function R(e) {
+function w(e) {
   let {
     giftRecipient: t,
     minNumItems: n,
@@ -157,7 +157,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     wishlist: t,
     popularCollectiblesProducts: n,

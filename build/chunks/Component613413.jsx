@@ -41,7 +41,7 @@ function b() {
   let {
     debugTrackedData: e,
     impressions: t
-  } = (0, m.Xo)(e => ({
+  } = (0, h.Xo)(e => ({
     debugTrackedData: e.debugTrackedData,
     impressions: e.impressions
   }), s.X), n = (0, l.e7)([f.default], () => f.default.isAnalyticsDebuggerEnabled), a = (0, l.e7)([d.Z], () => d.Z.isDeveloper), [E, b] = i.useState(false), y = null != e ? e : {}, {
@@ -49,45 +49,45 @@ function b() {
   } = y, v = g(y, ["name"]), S = null != O;
   return a && n ? (0, r.jsx)(u.ZP, {
     children: (0, r.jsxs)("div", {
-      className: o()(h.container, {
-        [h.containerMinimized]: E,
-        [h.notTracked]: !S
+      className: o()(m.container, {
+        [m.containerMinimized]: E,
+        [m.notTracked]: !S
       }),
       children: [(0, r.jsx)(c.P3F, {
-        className: h.minimizeButton,
+        className: m.minimizeButton,
         onClick: () => {
           b(!E)
         },
         children: E ? (0, r.jsx)(p.Z, {}) : (0, r.jsx)(_.Z, {})
       }), (0, r.jsxs)("div", {
-        className: o()(h.content, {
-          [h.contentMinimized]: E
+        className: o()(m.content, {
+          [m.contentMinimized]: E
         }),
         children: [(0, r.jsxs)(c.Text, {
-          className: o()(h.label, {
-            [h.notTracked]: !S
+          className: o()(m.label, {
+            [m.notTracked]: !S
           }),
           variant: "text-xxs/normal",
           children: [S ? (0, r.jsx)(c.owK, {
             size: "md",
             color: "currentColor",
-            className: h.iconTracked
+            className: m.iconTracked
           }) : (0, r.jsx)(c.k$p, {
             size: "md",
             color: "currentColor",
-            className: h.iconNotTracked
+            className: m.iconNotTracked
           }), null != O ? O : "(untracked)"]
         }), (0, r.jsx)("div", {
-          className: h.current,
+          className: m.current,
           children: JSON.stringify(v, true, 2)
         }), (0, r.jsx)(c.Text, {
-          className: o()(h.label, {
-            [h.notTracked]: !S
+          className: o()(m.label, {
+            [m.notTracked]: !S
           }),
           variant: "text-xxs/normal",
           children: "impressions stack"
         }), (0, r.jsx)("div", {
-          className: h.stack,
+          className: m.stack,
           children: JSON.stringify(t, true, 2)
         })]
       })]

@@ -43,9 +43,9 @@ let u = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       "aria-hidden": f = false,
       className: p,
       animateOnHover: _ = false,
-      questPreviewRewardAssetUrl: m = null
+      questPreviewRewardAssetUrl: h = null
     } = e, {
-      avatarDecorationSrc: h,
+      avatarDecorationSrc: m,
       avatarSrc: g,
       eventHandlers: E
     } = (0, a.Z)({
@@ -57,7 +57,7 @@ let u = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       animateOnHover: _
     });
     return (0, r.jsx)(u, c({
-      avatarDecoration: null != h ? h : m,
+      avatarDecoration: null != m ? m : h,
       src: g,
       size: d,
       status: l,

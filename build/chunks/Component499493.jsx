@@ -26,12 +26,12 @@ let j = e => {
     onReaction: r,
     onRequestOpen: j,
     disableActivityProfileLinks: b,
-    customCTA: y,
-    popoutClassname: I,
+    customCTA: I,
+    popoutClassname: y,
     popoutPosition: O = "right"
   } = e, w = i.useRef(null), P = (0, o.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), S = (0, o.e7)([u.default], () => u.default.getUser(t.author_id)), {
     nick: C,
-    avatar: E
+    avatar: N
   } = i.useMemo(() => {
     let e = null == S ? true : S.getAvatarURL(null == P ? true : P.guild_id, 48, false);
     return {
@@ -48,7 +48,7 @@ let j = e => {
         updatePosition: l
       } = e;
       return (0, a.jsx)("div", {
-        className: I,
+        className: y,
         children: (0, a.jsx)(f.J, {
           entry: t,
           closePopout: i,
@@ -99,7 +99,7 @@ let j = e => {
           children: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("img", {
               className: v.avatar,
-              src: E,
+              src: N,
               alt: x.intl.formatToPlainString(x.t.IzVXxY, {
                 userName: C
               })
@@ -119,7 +119,7 @@ let j = e => {
                   }, n))
                 })]
               })
-            }), null != y ? y : (0, a.jsx)("div", {
+            }), null != I ? I : (0, a.jsx)("div", {
               className: v.reactions,
               children: (0, a.jsx)(s.n$P, {
                 size: "sm"

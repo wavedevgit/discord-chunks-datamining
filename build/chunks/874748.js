@@ -2,7 +2,7 @@
 /** chunk id: 874748, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BC: () => h,
+  BC: () => m,
   LR: () => _,
   ku: () => p
 }), require("./953529.js"), require("./997841.js");
@@ -23,7 +23,7 @@ function p(e) {
     mediaPostEmbedData: c,
     guild: p,
     parentChannel: _,
-    postThread: h,
+    postThread: m,
     user: g,
     selectedGuildId: E,
     canAccess: b = false
@@ -40,7 +40,7 @@ function p(e) {
     size: f,
     canAnimate: false
   }));
-  let T = m(c.thumbnail) && !O,
+  let T = h(c.thumbnail) && !O,
     C = (null == (t = c.thumbnail) ? true : t.filename) != null && (null == (r = c.thumbnail) || null == (n = r.filename) ? true : n.startsWith(u._j));
   return {
     title: null != (i = c.title) ? i : "",
@@ -50,7 +50,7 @@ function p(e) {
     coverImageOverlayText: O ? d.intl.string(d.t.Yonlia) : true,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
-    postThread: h,
+    postThread: m,
     messageId: c.message_id,
     canAccess: b,
     guildId: c.guild_id,
@@ -76,7 +76,7 @@ function _(e) {
   if (null != n) return (0, i.Qj)(n)
 }
 
-function m(e) {
+function h(e) {
   if (null == e) returnfalse;
   let {
     height: t,
@@ -85,7 +85,7 @@ function m(e) {
   return null != t && null != n && t >= n
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = a.Z.getGuild(e);
   if (null == n || null == t) returnfalse;
   let r = n.features.has(c.GuildFeatures.CREATOR_MONETIZABLE) || n.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);

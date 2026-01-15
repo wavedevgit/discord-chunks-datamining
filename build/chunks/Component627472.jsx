@@ -2,7 +2,7 @@
 /** chunk id: 627472, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => m
+  z: () => h
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,14 +68,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = (0, l.G6)(e);
   return i.forwardRef(function(a, c) {
     var {
       children: d,
       className: _,
-      dir: m = "ltr",
-      orientation: h = "vertical",
+      dir: h = "ltr",
+      orientation: m = "vertical",
       paddingFix: g = true,
       fade: E = false,
       onScroll: b,
@@ -84,8 +84,8 @@ function m(e, t) {
     let v = i.useRef(null),
       S = (0, l.tT)({
         paddingFix: g,
-        orientation: h,
-        dir: m,
+        orientation: m,
+        dir: h,
         className: _,
         scrollerRef: v,
         specs: n
@@ -98,8 +98,8 @@ function m(e, t) {
         [e]: true,
         [t]: E
       }),
-      style: (0, l.uT)(y, h),
-      dir: m
+      style: (0, l.uT)(y, m),
+      dir: h
     }, O), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: v,

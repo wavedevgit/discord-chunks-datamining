@@ -13,7 +13,7 @@ let a = (0, Chunk509613.wf)(Chunk313789.n.LANGUAGE_AND_TIME_PANEL, {
     buildLayout: () => [u.L]
   }),
   o = (0, Chunk509613.m7)(Chunk313789.n.LANGUAGE_AND_TIME_SIDEBAR_ITEM, {
-    icon: Chunk657707.os0,
+    icon: Chunk657707.LanguageIcon,
     useTitle: () => r.intl.string(r.t.KyFVyi),
     buildLayout: () => [a]
   })

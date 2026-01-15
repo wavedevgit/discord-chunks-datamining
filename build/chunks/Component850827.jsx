@@ -47,22 +47,22 @@ let D = (0, Chunk730749.Z)(e => {
     buttonVariant: j,
     type: M,
     onAction: k
-  } = e, U = (0, l.e7)([m.default], () => {
-    let e = m.default.getCurrentUser();
+  } = e, U = (0, l.e7)([h.default], () => {
+    let e = h.default.getCurrentUser();
     return s()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), G = M === b.Y.STREAM_PREVIEW || null != o, Z = (0, g.Z)(t), F = Z || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, B = (null == t ? true : t.type) === R.IIU.HANG_STATUS, V = (0, l.e7)([h.Z, _.Z], () => {
+  }), G = M === b.Y.STREAM_PREVIEW || null != o, Z = (0, g.Z)(t), F = Z || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, B = (null == t ? true : t.type) === w.IIU.HANG_STATUS, V = (0, l.e7)([m.Z, _.Z], () => {
     var e;
-    return B ? _.Z.getChannel(null == (e = h.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
+    return B ? _.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), H = () => {
     if ((0, E.Z)(t)) return (0, r.jsx)(y.Z, {
-      platform: d.Z.get(R.ABu.XBOX),
+      platform: d.Z.get(w.ABu.XBOX),
       variant: j,
       onAction: k,
       icon: c.Mko
     });
-    if ((null == t ? true : t.platform) === R.M7m.PS4 || (null == t ? true : t.platform) === R.M7m.PS5) return (0, r.jsx)(y.Z, {
+    if ((null == t ? true : t.platform) === w.M7m.PS4 || (null == t ? true : t.platform) === w.M7m.PS5) return (0, r.jsx)(y.Z, {
       variant: j,
-      platform: d.Z.get(R.ABu.PLAYSTATION),
+      platform: d.Z.get(w.ABu.PLAYSTATION),
       onAction: k,
       icon: c.Tsp
     });
@@ -134,7 +134,7 @@ let D = (0, Chunk730749.Z)(e => {
     align: f.Z.Align.STRETCH,
     direction: F,
     wrap: Y ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
-    className: a()(u, w.buttonsWrapper, Y ? w.vertical : w.horizontal),
+    className: a()(u, R.buttonsWrapper, Y ? R.vertical : R.horizontal),
     children: H()
   })
 })

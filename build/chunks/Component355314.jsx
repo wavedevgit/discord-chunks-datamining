@@ -69,7 +69,7 @@ function S(e) {
   let v = (0, a.e7)([c.default], () => c.default.getCurrentUser()),
     S = (0, a.e7)([s.Z], () => s.Z.theme),
     I = (0, a.e7)([l.Z], () => l.Z.getGuildId()),
-    T = S === h.BRd.LIGHT ? "light" : "dark",
+    T = S === m.BRd.LIGHT ? "light" : "dark",
     C = (0, r.jsx)("img", {
       className: E.art,
       alt: "File Upload Nitro Perk",
@@ -84,7 +84,7 @@ function S(e) {
     N = (0, d.iL)({
       guildId: I,
       onClick: () => {
-        window.open(f.Z.getArticleURL(h.BhN.NITRO_FAQ), "_blank")
+        window.open(f.Z.getArticleURL(m.BhN.NITRO_FAQ), "_blank")
       }
     }),
     P = (0, r.jsx)("div", {
@@ -98,7 +98,7 @@ function S(e) {
     artElement: C,
     artContainerClassName: E.artContainer,
     enableArtBoxShadow: false,
-    type: m.cd.UPLOAD_ERROR_UPSELL,
+    type: h.cd.UPLOAD_ERROR_UPSELL,
     title: g.intl.string(g.t["9C+41g"]),
     body: P,
     context: g.intl.formatToPlainString(g.t.q5fTZp, {
@@ -106,10 +106,10 @@ function S(e) {
     }),
     glowUp: N,
     analyticsLocation: {
-      section: h.jXE.FILE_UPLOAD_POPOUT
+      section: m.jXE.FILE_UPLOAD_POPOUT
     },
     onClose: t,
-    subscriptionTier: m.Si.TIER_2,
+    subscriptionTier: h.Si.TIER_2,
     secondaryCTA: g.intl.string(g.t.ZnqyZ2),
     onSecondaryClick: n,
     showEnhancedUpsell: true

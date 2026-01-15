@@ -53,44 +53,44 @@ let p = null;
 p = require("./878611.jsx").Z;
 let _ = ["url", "autolink", "link", "mailto", "tel"];
 
-function m(e, t) {
+function h(e, t) {
   let n = {};
   return null != e.mention && null != p && (n = {
     mention: p
   }), (0, l.Z)([e, ...t, n])
 }
-let h = {
+let m = {
     enableBuildOverrides: false,
     enableEmojiClick: true
   },
-  g = m(Chunk428595.Z.RULES, [(0, Chunk691424.Z)({
+  g = h(Chunk428595.Z.RULES, [(0, Chunk691424.Z)({
     enableBuildOverrides: true
   })]),
-  E = i().omit(m(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(h)]), "paragraph", "newline"),
-  b = m(Chunk428595.Z.CHANNEL_TOPIC_RULES, [(0, Chunk691424.Z)(f(u({}, h), {
+  E = i().omit(h(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(m)]), "paragraph", "newline"),
+  b = h(Chunk428595.Z.CHANNEL_TOPIC_RULES, [(0, Chunk691424.Z)(f(u({}, m), {
     emojiTooltipPosition: "bottom"
   })), {
     codeBlock: {
       react: Chunk428595.Z.RULES.text.react
     }
   }]),
-  y = m(Chunk428595.Z.VOICE_CHANNEL_STATUS_RULES, [(0, Chunk691424.Z)(f(u({}, h), {
+  y = h(Chunk428595.Z.VOICE_CHANNEL_STATUS_RULES, [(0, Chunk691424.Z)(f(u({}, m), {
     enableEmojiClick: false
   }))]),
-  O = m(Chunk428595.Z.EMBED_TITLE_RULES, [(0, Chunk691424.Z)(h)]),
-  v = i().omit(m(Chunk428595.Z.EMBED_TITLE_RULES, [(0, Chunk691424.Z)(h)]), _),
-  S = m(Chunk428595.Z.INLINE_REPLY_RULES, [(0, Chunk691424.Z)(h)]),
-  I = m(Chunk428595.Z.GUILD_VERIFICATION_FORM_RULES, [(0, Chunk691424.Z)(h)]),
-  T = m(Chunk428595.Z.GUILD_EVENT_RULES, [(0, Chunk691424.Z)(h)]),
-  C = m(Chunk428595.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, Chunk691424.Z)(h)]),
-  A = i().omit(m(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(h)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ..._),
+  O = h(Chunk428595.Z.EMBED_TITLE_RULES, [(0, Chunk691424.Z)(m)]),
+  v = i().omit(h(Chunk428595.Z.EMBED_TITLE_RULES, [(0, Chunk691424.Z)(m)]), _),
+  S = h(Chunk428595.Z.INLINE_REPLY_RULES, [(0, Chunk691424.Z)(m)]),
+  I = h(Chunk428595.Z.GUILD_VERIFICATION_FORM_RULES, [(0, Chunk691424.Z)(m)]),
+  T = h(Chunk428595.Z.GUILD_EVENT_RULES, [(0, Chunk691424.Z)(m)]),
+  C = h(Chunk428595.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, Chunk691424.Z)(m)]),
+  A = i().omit(h(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(m)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ..._),
   N = {
     text: Chunk428595.Z.RULES.text
   },
   P = {
-    combineAndInjectMentionRule: m,
+    combineAndInjectMentionRule: h,
     createReactRules: Chunk691424.Z,
-    defaultReactRuleOptions: h,
+    defaultReactRuleOptions: m,
     defaultRules: g,
     guildEventRules: T,
     notifCenterV2MessagePreviewRules: A,

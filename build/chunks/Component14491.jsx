@@ -44,18 +44,18 @@ function p(e) {
     focusedClassName: _
   } = e;
   if (__OVERLAY__ || !l.wS || null == t) return null;
-  let m = s.default.getCurrentUser(),
-    h = (0, o.Ow)(t);
+  let h = s.default.getCurrentUser(),
+    m = (0, o.Ow)(t);
 
   function g() {
     var e;
     if (null == t) return;
     let n = (0, i.yE)(null != (e = t.flags) ? e : 0, u.udG.EMBEDDED) ? (0, c.H)({
       applicationId: t.id,
-      referrerId: null == m ? true : m.id
+      referrerId: null == h ? true : h.id
     }) : (0, c.J)(f({
       id: t.id
-    }, h));
+    }, m));
     null != n && (0, l.JG)(n, d)
   }
   let E = "copy-app-link-".concat(t.id);

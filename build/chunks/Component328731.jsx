@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk617987 = require("./617987.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function y(e) {
     entry: t,
     channel: n,
     className: a
-  } = e, h = i.useRef(null), E = i.useRef(null), {
+  } = e, m = i.useRef(null), E = i.useRef(null), {
     displayParticipants: y,
     participant1: O,
     participant2: v,
@@ -70,15 +70,15 @@ function y(e) {
     orderedParticipants: I
   } = (0, u.Z)(t), T = [O, v];
   return (0, r.jsxs)("div", {
-    className: o()(m.container, a),
+    className: o()(h.container, a),
     children: [y.length > 0 ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.Z, {
-        targetElementRef: h,
+        targetElementRef: m,
         participants: I,
         channel: n,
         children: e => (0, r.jsx)(l.P3F, b(g({
-          innerRef: h,
-          className: m.clickable
+          innerRef: m,
+          className: h.clickable
         }, e), {
           children: (0, r.jsx)(s.Z, {
             maxUsers: 3,
@@ -95,7 +95,7 @@ function y(e) {
     }) : null, (0, r.jsx)(l.Heading, {
       variant: "text-sm/semibold",
       color: "text-subtle",
-      className: o()(m.truncatedText, m.usersHeader),
+      className: o()(h.truncatedText, h.usersHeader),
       scaleFontToUserSetting: true,
       children: _.intl.format(_.t.rH95Gu, {
         user0: c.ZP.getName(n.guild_id, n.id, T[0]),

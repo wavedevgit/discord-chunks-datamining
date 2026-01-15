@@ -73,8 +73,8 @@ let p = e => {
       height: f,
       secondaryColor: p = "transparent",
       secondaryColorClass: _ = "",
-      color: m = i.Z.colors.INTERACTIVE_ICON_DEFAULT,
-      colorClass: h = ""
+      color: h = i.Z.colors.INTERACTIVE_ICON_DEFAULT,
+      colorClass: m = ""
     } = e,
     g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
   let E = (0, o.m)(s),
@@ -93,11 +93,11 @@ let p = e => {
       fill: "string" == typeof p ? p : p.css,
       className: _
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof m ? m : m.css,
+      fill: "string" == typeof h ? h : h.css,
       fillRule: "evenodd",
       d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22ZM9 8.09c0-.88 1-1.4 1.73-.9l5.8 3.91c.63.44.63 1.36 0 1.8l-5.8 3.9C10 17.3 9 16.8 9 15.92V8.1Z",
       clipRule: "evenodd",
-      className: h
+      className: m
     })]
   }))
 }

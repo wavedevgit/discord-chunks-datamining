@@ -46,7 +46,7 @@ function p(e) {
 function _(e) {
   return null != e.dueAt ? p(e.dueAt) : f - p(e.savedAt)
 }
-let m = new Chunk759174.h(e => {
+let h = new Chunk759174.h(e => {
     let {
       saveData: t
     } = e;
@@ -57,7 +57,7 @@ let m = new Chunk759174.h(e => {
     } = e;
     return _(t)
   }),
-  h = true,
+  m = true,
   g = 0,
   E = new Set,
   b = new Set,
@@ -79,7 +79,7 @@ function v(e) {
 function S(e) {
   var t;
   let n = v(e.saveData);
-  null == m.get(n) && (g = Date.now()), m.set(n, e);
+  null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
     a = null != (t = y.get(i)) ? t : new Set;
@@ -89,26 +89,26 @@ function S(e) {
 function I(e) {
   var t;
   let n = v(e),
-    r = m.get(n);
+    r = h.get(n);
   if (null == r) returnfalse;
-  m.delete(n);
+  h.delete(n);
   let i = e.messageId;
   null == (t = y.get(r.saveData.channelId)) || t.delete(i), b.delete(i), E.delete(i), g = Date.now()
 }
 
 function T() {
-  h = true
+  m = true
 }
 
 function C() {
-  h = true, m.clear(), y.clear(), b.clear()
+  m = true, h.clear(), y.clear(), b.clear()
 }
 
 function A(e) {
   let {
     savedMessages: t
   } = e;
-  for (let e of (h = false, m.clear(), y.clear(), b.clear(), t)) S(e)
+  for (let e of (m = false, h.clear(), y.clear(), b.clear(), t)) S(e)
 }
 
 function N(e) {
@@ -125,25 +125,25 @@ function P(e) {
   return I(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     messageId: t,
     channelId: n
   } = e, r = v({
     messageId: t,
     channelId: n
-  }), i = m.get(r);
+  }), i = h.get(r);
   if ((null == i ? true : i.message) == null) returnfalse;
   let a = d({}, i);
-  return a.message = null, m.set(r, a), true
+  return a.message = null, h.set(r, a), true
 }
 
-function w(e) {
+function R(e) {
   let {
     id: t,
     channelId: n
   } = e;
-  return R({
+  return w({
     messageId: t,
     channelId: n
   })
@@ -154,7 +154,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  for (let e of t) R({
+  for (let e of t) w({
     messageId: e,
     channelId: n
   })
@@ -169,32 +169,32 @@ function x(e) {
       messageId: t.id,
       channelId: t.channel_id
     }),
-    r = m.get(n);
+    r = h.get(n);
   if ((null == r ? true : r.message) == null) returnfalse;
   let i = d({}, r);
-  i.message = (0, s.wi)(r.message, t), m.set(n, i)
+  i.message = (0, s.wi)(r.message, t), h.set(n, i)
 }
 
 function L() {
-  if (0 === b.size || h) returnfalse;
-  h = true
+  if (0 === b.size || m) returnfalse;
+  m = true
 }
 
 function j(e) {
   let {
     channel: t
   } = e;
-  if (0 === b.size || h || !O(t.id)) returnfalse;
-  h = true
+  if (0 === b.size || m || !O(t.id)) returnfalse;
+  m = true
 }
 
 function M(e) {
   let {
     channels: t
   } = e;
-  if (0 === b.size || h) returnfalse;
+  if (0 === b.size || m) returnfalse;
   let n = false;
-  for (let e of t) O(e.id) && (h = true, n = true);
+  for (let e of t) O(e.id) && (m = true, n = true);
   return n
 }
 
@@ -202,8 +202,8 @@ function k(e) {
   let {
     channel: t
   } = e;
-  if (0 === b.size || h || !O(t.id)) returnfalse;
-  h = true
+  if (0 === b.size || m || !O(t.id)) returnfalse;
+  m = true
 }
 
 function U(e) {
@@ -211,8 +211,8 @@ function U(e) {
   let {
     user: n
   } = e;
-  if (0 === b.size || h || n.id !== (null == (t = l.default.getCurrentUser()) ? true : t.id)) returnfalse;
-  h = true
+  if (0 === b.size || m || n.id !== (null == (t = l.default.getCurrentUser()) ? true : t.id)) returnfalse;
+  m = true
 }
 
 function G(e) {
@@ -226,19 +226,19 @@ class Z extends(r = Chunk442837.ZP.Store) {
     this.waitFor(l.default)
   }
   getSavedMessages() {
-    return m.values(c._l.ALL)
+    return h.values(c._l.ALL)
   }
   getSavedMessage(e, t) {
-    return m.get(v({
+    return h.get(v({
       channelId: e,
       messageId: t
     }))
   }
   getMessageBookmarks() {
-    return m.values(c._l.BOOKMARK)
+    return h.values(c._l.BOOKMARK)
   }
   getMessageReminders() {
-    return m.values(c._l.REMINDER)
+    return h.values(c._l.REMINDER)
   }
   getOverdueMessageReminderCount() {
     return E.size
@@ -247,23 +247,23 @@ class Z extends(r = Chunk442837.ZP.Store) {
     return E.size > 0
   }
   getSavedMessageCount() {
-    return m.size()
+    return h.size()
   }
   getIsStale() {
-    return h
+    return m
   }
   getLastChanged() {
     return g
   }
   isMessageBookmarked(e, t) {
-    let n = m.get(v({
+    let n = h.get(v({
       channelId: e,
       messageId: t
     }));
     return null != n && null == n.saveData.dueAt
   }
   isMessageReminder(e, t) {
-    let n = m.get(v({
+    let n = h.get(v({
       channelId: e,
       messageId: t
     }));
@@ -277,7 +277,7 @@ let F = new Z(Chunk570140.Z, {
   SAVED_MESSAGES_UPDATE: A,
   SAVED_MESSAGE_CREATE: N,
   SAVED_MESSAGE_DELETE: P,
-  MESSAGE_DELETE: w,
+  MESSAGE_DELETE: R,
   MESSAGE_DELETE_BULK: D,
   MESSAGE_UPDATE: x,
   GUILD_CREATE: L,

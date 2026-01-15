@@ -37,9 +37,9 @@ function b() {
     N = _.rR.useSetting(),
     P = _.Gp.useSetting(),
     {
-      analyticsLocations: R
+      analyticsLocations: w
     } = (0, s.ZP)(o.Z.TEXT_AND_IMAGES),
-    w = i.useCallback(e => {
+    R = i.useCallback(e => {
       let t = 1 === e;
       t ? u.Z.cleanUpPrivateChannelSearchState() : u.Z.cleanUpSearchState({
         type: g.aib.DMS
@@ -65,24 +65,24 @@ function b() {
       onChange: e => _.cC.updateSetting(e),
       value: b
     });
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     title: E.intl.string(E.t["/VQax8"]),
     children: (0, r.jsxs)(a.Kqy, {
       direction: "vertical",
       gap: 24,
       children: [(0, r.jsx)(f.F, {
-        setting: h.s6.CHAT_INLINE_MEDIA,
+        setting: m.s6.CHAT_INLINE_MEDIA,
         children: (0, r.jsxs)(a.C3N, {
           label: E.intl.string(E.t.U68Dgp),
           children: [(0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_INLINE_MEDIA_LINKS,
+            setting: m.s6.CHAT_INLINE_MEDIA_LINKS,
             children: (0, r.jsx)(a.rsf, {
               checked: I,
               onChange: _.RS.updateSetting,
               label: E.intl.string(E.t.U47N1p)
             })
           }), (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_INLINE_MEDIA_UPLOADS,
+            setting: m.s6.CHAT_INLINE_MEDIA_UPLOADS,
             children: (0, r.jsx)(a.rsf, {
               checked: S,
               description: E.intl.formatToPlainString(E.t.qjjvqO, {
@@ -92,7 +92,7 @@ function b() {
               label: E.intl.string(E.t.VP11No)
             })
           }), (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
+            setting: m.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
             children: (0, r.jsx)(a.rsf, {
               checked: O,
               description: E.intl.string(E.t.T0rbtM),
@@ -102,11 +102,11 @@ function b() {
           })]
         })
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_EMBEDS,
+        setting: m.s6.CHAT_EMBEDS,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.C3N, {
           label: E.intl.string(E.t.PWZOn4),
           children: (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_EMBEDS_LINK_PREVIEWS,
+            setting: m.s6.CHAT_EMBEDS_LINK_PREVIEWS,
             children: (0, r.jsx)(a.rsf, {
               checked: T,
               onChange: _.NA.updateSetting,
@@ -115,18 +115,18 @@ function b() {
           })
         })]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_EMOJI,
+        setting: m.s6.CHAT_EMOJI,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsxs)(a.C3N, {
           label: E.intl.string(E.t.sMOuuS),
           children: [(0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_EMOJI_REACTIONS,
+            setting: m.s6.CHAT_EMOJI_REACTIONS,
             children: (0, r.jsx)(a.rsf, {
               checked: C,
               onChange: _.nc.updateSetting,
               label: E.intl.string(E.t.Iv24sm)
             })
           }), (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_EMOJI_EMOTICONS,
+            setting: m.s6.CHAT_EMOJI_EMOTICONS,
             children: (0, r.jsx)(a.rsf, {
               checked: v,
               description: c.Z.parse(E.intl.string(E.t["20dvuQ"])),
@@ -136,11 +136,11 @@ function b() {
           })]
         })]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_STICKERS,
+        setting: m.s6.CHAT_STICKERS,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.C3N, {
           label: E.intl.string(E.t["6NtAuJ"]),
           children: (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_STICKERS_AUTOCOMPLETE,
+            setting: m.s6.CHAT_STICKERS_AUTOCOMPLETE,
             children: (0, r.jsx)(a.rsf, {
               checked: e,
               description: E.intl.string(E.t["/eVrj8"]),
@@ -150,7 +150,7 @@ function b() {
                   location: {
                     section: g.jXE.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: R
+                  location_stack: w
                 }), _.fq.updateSetting(e)
               },
               label: E.intl.string(E.t["29xPVZ"])
@@ -158,11 +158,11 @@ function b() {
           })
         })]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_SOUNDMOJI,
+        setting: m.s6.CHAT_SOUNDMOJI,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.C3N, {
           label: E.intl.string(E.t.EHlAMc),
           children: (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_SOUNDMOJI_AUTOCOMPLETE,
+            setting: m.s6.CHAT_SOUNDMOJI_AUTOCOMPLETE,
             children: (0, r.jsx)(a.rsf, {
               checked: t,
               description: E.intl.string(E.t.hrSIhN),
@@ -179,11 +179,11 @@ function b() {
           })
         })]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_TEXT_BOX,
+        setting: m.s6.CHAT_TEXT_BOX,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsxs)(a.C3N, {
           label: E.intl.string(E.t.afR0pI),
           children: [(0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_TEXT_BOX_PREVIEW,
+            setting: m.s6.CHAT_TEXT_BOX_PREVIEW,
             children: (0, r.jsx)(a.rsf, {
               checked: n,
               onChange: e => {
@@ -197,7 +197,7 @@ function b() {
               label: E.intl.string(E.t.AqGrEI)
             })
           }), (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_MENTION_SUGGESTIONS,
+            setting: m.s6.CHAT_MENTION_SUGGESTIONS,
             children: (0, r.jsx)(a.rsf, {
               checked: A,
               description: E.intl.string(E.t.AaXigo),
@@ -209,11 +209,11 @@ function b() {
           })]
         })]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_THREADS,
+        setting: m.s6.CHAT_THREADS,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.C3N, {
           label: E.intl.string(E.t.B2panI),
           children: (0, r.jsx)(f.F, {
-            setting: h.s6.CHAT_THREADS_SPLIT_VIEW,
+            setting: m.s6.CHAT_THREADS_SPLIT_VIEW,
             children: (0, r.jsx)(a.rsf, {
               checked: y,
               onChange: _.vF.updateSetting,
@@ -222,9 +222,9 @@ function b() {
           })
         })]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.MESSAGE_SEARCH,
+        setting: m.s6.MESSAGE_SEARCH,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsx)(f.F, {
-          setting: h.s6.MESSAGE_SEARCH_ALL_DMS,
+          setting: m.s6.MESSAGE_SEARCH_ALL_DMS,
           children: (0, r.jsx)(a.FXm, {
             label: E.intl.string(E.t["NxjN+q"]),
             options: [{
@@ -234,15 +234,15 @@ function b() {
               name: E.intl.string(E.t.MwlEGN),
               value: 1
             }],
-            onChange: w,
+            onChange: R,
             value: +!!N
           })
         })]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_SPOILERS,
+        setting: m.s6.CHAT_SPOILERS,
         children: [(0, r.jsx)(a.izJ, {}), D()]
       }), (0, r.jsxs)(f.F, {
-        setting: h.s6.CHAT_CHANNEL_LIST_PREVIEWS,
+        setting: m.s6.CHAT_CHANNEL_LIST_PREVIEWS,
         children: [(0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.FXm, {
           label: E.intl.string(E.t.OAOUoQ),
           options: [{

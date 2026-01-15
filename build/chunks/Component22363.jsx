@@ -22,8 +22,8 @@ let _ = e => {
     accessory: n,
     pickerIntention: i,
     headerClassName: _,
-    emojiListRef: m,
-    onKeyDown: h,
+    emojiListRef: h,
+    onKeyDown: m,
     onFocus: g,
     autoFocus: E,
     searchBarRef: b,
@@ -33,9 +33,9 @@ let _ = e => {
     renderHeader: S
   } = e, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
-      emojiListRef: m,
+      emojiListRef: h,
       gridNavigatorId: d.Vr,
-      onKeyDown: h,
+      onKeyDown: m,
       ref: b,
       onFocus: g,
       autoFocus: E,

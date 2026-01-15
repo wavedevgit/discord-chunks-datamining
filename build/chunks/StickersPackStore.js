@@ -42,7 +42,7 @@ function _(e) {
   return t
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = [];
   return n.push({
     type: o.MO.STICKER_NAME,
@@ -52,7 +52,7 @@ function m(e, t) {
     value: t.name
   }), n
 }
-class h extends Chunk429091.d {
+class m extends Chunk429091.d {
   get isFetchingStickerPacks() {
     return u
   }
@@ -75,7 +75,7 @@ class h extends Chunk429091.d {
       for (let n in e)
         for (let [r, i] of Object.entries(e[n].root)) {
           let e = l.get(n);
-          t.set(r, m(i, e))
+          t.set(r, h(i, e))
         }
       return t
     })), s(this, "getStickerById", this.memoizedSecondaryIndex()), s(this, "getPremiumPacks", this.memoized(e => Array.from(c.values())))
@@ -85,8 +85,8 @@ class h extends Chunk429091.d {
 function g(e, t, n) {
   l.set(e.id, e), n && c.set(e.id, e), t.setPartition(e.id, _(e.stickers))
 }
-s(h, "displayName", "StickersPackStore");
-let E = new h({
+s(m, "displayName", "StickersPackStore");
+let E = new m({
   LOGOUT: (e, t) => {
     l.clear(), c.clear(), t.reset()
   },

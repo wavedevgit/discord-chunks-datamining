@@ -24,21 +24,21 @@ var Chunk54381 = require("./54381.js"),
 let y = () => {
     let e = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)("div", {
-      className: h.assetContainer,
+      className: m.assetContainer,
       children: e ? (0, r.jsx)("img", {
         src: E.Z,
-        className: h.orbAsset,
+        className: m.orbAsset,
         alt: "Orb"
       }) : (0, r.jsxs)(d.Z, {
         autoPlay: true,
         loop: true,
-        className: h.orbAsset,
+        className: m.orbAsset,
         children: [(0, r.jsx)("source", {
           src: b.Z,
           type: "video/webm"
         }), (0, r.jsx)("img", {
           src: E.Z,
-          className: h.orbAsset,
+          className: m.orbAsset,
           alt: "Orb"
         })]
       })
@@ -49,8 +49,8 @@ let y = () => {
       ctaText: t,
       ctaOnClick: n,
       analyticsPage: a,
-      linkPreText: s = m.intl.string(m.t["5qZv9E"]),
-      linkText: u = m.intl.string(m.t.XRdyjz)
+      linkPreText: s = h.intl.string(h.t["5qZv9E"]),
+      linkText: u = h.intl.string(h.t.XRdyjz)
     } = e, d = i.useCallback(() => {
       null != a && (0, p.Y)({
         pageType: a,
@@ -59,7 +59,7 @@ let y = () => {
       })
     }, [a]);
     return (0, r.jsxs)("div", {
-      className: o()(h.container, g.baseCardOutline),
+      className: o()(m.container, g.baseCardOutline),
       children: [(0, r.jsx)(y, {}), (0, r.jsx)(l.zxk, {
         text: t,
         variant: "primary",
@@ -67,16 +67,16 @@ let y = () => {
         onClick: n,
         fullWidth: true
       }), (0, r.jsxs)("div", {
-        className: h.linkContainer,
+        className: m.linkContainer,
         children: [true !== s && (0, r.jsxs)(c.Text, {
           variant: "text-xs/normal",
-          className: h.linkPreText,
+          className: m.linkPreText,
           children: [s, "\xa0"]
         }), (0, r.jsx)(c.eee, {
           target: "_blank",
           rel: "author",
           href: f.Z.getArticleURL(_.BhN.ORBS_FAQ),
-          className: h.learnMoreLink,
+          className: m.learnMoreLink,
           onClick: d,
           children: u
         })]

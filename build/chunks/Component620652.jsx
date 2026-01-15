@@ -2,7 +2,7 @@
 /** chunk id: 620652, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => m,
+  M: () => h,
   Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -17,10 +17,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk815605 = require("./815605.js"),
   Chunk981631 = require("./981631.js"),
   Chunk845881 = require("./845881.js"),
-  m = function(e) {
+  h = function(e) {
     return e[e.NORMAL = 20] = "NORMAL", e[e.LARGE = 32] = "LARGE", e
   }({});
-let h = async e => {
+let m = async e => {
   var t;
   let {
     effect: n
@@ -34,12 +34,12 @@ function g(e) {
     effect: n,
     onComplete: a,
     emojiSize: s = 20
-  } = e, d = i.useRef(null), p = s * f.Vz, m = (p + s) / 2, g = "translateY(".concat(m, "px)");
+  } = e, d = i.useRef(null), p = s * f.Vz, h = (p + s) / 2, g = "translateY(".concat(h, "px)");
   return i.useEffect(() => {
     let e;
     if (null != n) return !async function() {
       if (null != d.current) {
-        let t = await h({
+        let t = await m({
           effect: n
         });
         (e = l().loadAnimation({

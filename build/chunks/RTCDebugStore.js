@@ -38,8 +38,8 @@ function p(e) {
   return e
 }
 let _ = C(Chunk65154.Yn.DEFAULT, Chunk981631._s_.TRANSPORT, 0),
-  m = _,
-  h = {},
+  h = _,
+  m = {},
   g = new Map,
   E = {
     availableOutgoingBitrate: true,
@@ -114,7 +114,7 @@ function A(e) {
 
 function N() {
   Object.values(d.Yn).forEach(e => {
-    h[e] = {}
+    m[e] = {}
   })
 }
 
@@ -122,12 +122,12 @@ function P() {
   null != T && (T.destroy(), T = null)
 }
 
-function R(e) {
+function w(e) {
   var t;
-  m = null != (t = e.section) ? t : _
+  h = null != (t = e.section) ? t : _
 }
 
-function w() {
+function R() {
   P()
 }
 
@@ -143,7 +143,7 @@ function x(e) {
 }
 
 function L(e) {
-  m = e.section
+  h = e.section
 }
 
 function j(e) {
@@ -201,16 +201,16 @@ function k(e) {
     context: t,
     stats: n,
     index: r
-  } = e, i = h[t];
+  } = e, i = m[t];
   if (null != n) {
-    let [e, a, o] = m.split(":");
+    let [e, a, o] = h.split(":");
     if (e === t && parseInt(o) === r && null != c.default.getUser(a)) {
       let {
         rtp: {
           inbound: e
         }
       } = n;
-      Object.keys(e).includes(a) || (m = _)
+      Object.keys(e).includes(a) || (h = _)
     }
     i[r] = j(n, i[r])
   } else delete i[r]
@@ -262,7 +262,7 @@ class V extends(r = Chunk442837.ZP.Store) {
     this.waitFor(l.Z, c.default)
   }
   getSection() {
-    return m
+    return h
   }
   getInboundStats(e, t) {
     var n, r;
@@ -288,7 +288,7 @@ class V extends(r = Chunk442837.ZP.Store) {
   }
   getAllStats() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : d.Yn.DEFAULT;
-    return Object.values(h[e])
+    return Object.values(m[e])
   }
   getVideoStreams() {
     return S
@@ -303,8 +303,8 @@ class V extends(r = Chunk442837.ZP.Store) {
 }
 f(V, "displayName", "RTCDebugStore");
 let H = new V(Chunk570140.Z, {
-  RTC_DEBUG_MODAL_OPEN: R,
-  RTC_DEBUG_MODAL_CLOSE: w,
+  RTC_DEBUG_MODAL_OPEN: w,
+  RTC_DEBUG_MODAL_CLOSE: R,
   RTC_DEBUG_MODAL_SET_SECTION: L,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,

@@ -2,7 +2,7 @@
 /** chunk id: 623624, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => m
+  f: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -22,23 +22,23 @@ let p = "BoostedGuildPerksModalConnected",
       close: n,
       location: s,
       scrollToPowerupCards: p
-    } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), m = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), {
-      analyticsLocations: h
+    } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), h = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), {
+      analyticsLocations: m
     } = (0, o.ZP)(a.Z.BOOSTED_GUILD_PERKS_MODAL), g = (0, l.$)("BoostedGuildPerksModal");
-    if (null == _ || null == m) return null;
+    if (null == _ || null == h) return null;
     let E = g ? f.Z : d.Z;
     return (0, r.jsx)(o.Gt, {
-      value: h,
+      value: m,
       children: (0, r.jsx)(E, {
         analyticsLocation: s,
         onClose: n,
-        guild: m,
+        guild: h,
         scrollToPowerupCards: p
       })
     })
   };
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     location: n,

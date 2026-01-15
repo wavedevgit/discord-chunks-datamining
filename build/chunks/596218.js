@@ -53,16 +53,16 @@ function u(e, t) {
         }).filter(e => null !== e),
         p = (null != (r = null == d ? true : d.length) ? r : 0) - (null != (i = null == f ? true : f.length) ? i : 0),
         _ = Math.min(p > 1 ? Math.max((null != (a = null == u ? true : u.index) ? a : 0) - p + 1, 0) : null != (o = null == u ? true : u.index) ? o : 0, (null != (s = null == f ? true : f.length) ? s : 0) - 1),
-        m = null,
-        h = false;
+        h = null,
+        m = false;
       for (; _ >= 0;) {
         if (!t.isDisabled(f[_].key)) {
-          m = f[_];
+          h = f[_];
           break
         }
-        _ < f.length - 1 && !h ? _++ : (h = true, _ > (null != (l = null == u ? true : u.index) ? l : 0) && (_ = null != (c = null == u ? true : u.index) ? c : 0), _--)
+        _ < f.length - 1 && !m ? _++ : (m = true, _ > (null != (l = null == u ? true : u.index) ? l : 0) && (_ = null != (c = null == u ? true : u.index) ? c : 0), _--)
       }
-      t.setFocusedKey(m ? m.key : null)
+      t.setFocusedKey(h ? h.key : null)
     }
     n.current = e
   }, [e, t])

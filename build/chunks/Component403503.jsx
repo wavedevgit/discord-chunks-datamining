@@ -2,7 +2,7 @@
 /** chunk id: 403503, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,7 +36,7 @@ function _(e) {
   }
 }
 
-function m(e, t) {
+function h(e, t) {
   let [n, i] = p(e.unitValue);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -71,7 +71,7 @@ function m(e, t) {
     })]
   })
 }
-let h = e => {
+let m = e => {
   let {
     expiresAt: t,
     className: n
@@ -81,7 +81,7 @@ let h = e => {
     days: o,
     hours: p,
     minutes: _,
-    seconds: h
+    seconds: m
   } = i, g = [{
     unitValue: o,
     unitType: "days"
@@ -92,7 +92,7 @@ let h = e => {
     unitValue: _,
     unitType: "minutes"
   }, {
-    unitValue: h,
+    unitValue: m,
     unitType: "seconds"
   }];
   return (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ let h = e => {
       children: u.intl.string(u.t["/ARFVE"])
     }), (0, r.jsx)("div", {
       className: d.timeUnitsOuterContainer,
-      children: g.map((e, t) => m(e, t === g.length - 1))
+      children: g.map((e, t) => h(e, t === g.length - 1))
     })]
   })
 }

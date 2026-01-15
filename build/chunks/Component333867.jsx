@@ -85,13 +85,13 @@ function A(e) {
   let t, {
       skuId: u,
       analyticsLocations: _,
-      analyticsObject: h,
+      analyticsObject: m,
       isGift: E = false,
       giftMessage: y,
       giftingOrigin: S,
       giftRecipient: A,
-      onClose: R,
-      onComplete: w,
+      onClose: w,
+      onComplete: R,
       variantsReturnStyle: D
     } = e,
     x = false,
@@ -111,7 +111,7 @@ function A(e) {
       } = t, i = v(t, ["onClose"]);
       return (0, r.jsx)(e, O(b({}, i), {
         onClose: () => {
-          n(), null == R || R(false)
+          n(), null == w || w(false)
         }
       }))
     }
@@ -126,16 +126,16 @@ function A(e) {
   } = (0, c.VL)({
     location: "openCollectiblesPaymentModal"
   }), G = () => {
-    (0, m.x)({
+    (0, h.x)({
       checkoutSucceeded: x
     }), x || p.default.track(g.rMx.PAYMENT_FLOW_CANCELED, {
       load_id: L,
       payment_type: g.Zuq[g.GZQ.ONE_TIME],
-      location: h,
+      location: m,
       is_gift: E,
       sku_id: u,
       location_stack: _
-    }), (0, s.fw)(), (0, l.p)(), null == R || R(x), x && (0, d.qg)({
+    }), (0, s.fw)(), (0, l.p)(), null == w || w(x), x && (0, d.qg)({
       variantsReturnStyle: D
     })
   }, Z = () => {
@@ -150,11 +150,11 @@ function A(e) {
     giftMessage: y,
     giftingOrigin: S,
     giftRecipient: A,
-    onClose: R,
+    onClose: w,
     onCloseCallback: G,
     onCloseRequest: Z,
     onComplete: () => {
-      x = true, null == w || w()
+      x = true, null == R || R()
     }
   };
   if (U) return void N(F);
@@ -212,14 +212,14 @@ let N = e => {
       onClose: f,
       onCloseCallback: p,
       onCloseRequest: _,
-      onComplete: m
+      onComplete: h
     } = e;
     return (0, a.ZDy)(async () => e => {
       var {
         onClose: a,
         returnRef: s
       } = e, p = v(e, ["onClose", "returnRef"]);
-      return (0, r.jsx)(h.ZP, O(b({}, p), {
+      return (0, r.jsx)(m.ZP, O(b({}, p), {
         loadId: t,
         skuId: n,
         isGift: l,
@@ -230,7 +230,7 @@ let N = e => {
         onClose: e => {
           a(), null == f || f(e)
         },
-        onComplete: m,
+        onComplete: h,
         returnRef: s,
         onStepChange: o
       }))

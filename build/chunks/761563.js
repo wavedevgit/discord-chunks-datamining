@@ -72,11 +72,11 @@ module.exports = function(e) {
       className: "symbol",
       begin: "[:]{1,2}" + n
     },
-    m = {
+    h = {
       begin: "\\(",
       end: "\\)"
     },
-    h = {
+    m = {
       endsWithParent: true,
       relevance: 0
     },
@@ -85,10 +85,10 @@ module.exports = function(e) {
       className: "name",
       begin: n,
       relevance: 0,
-      starts: h
+      starts: m
     },
-    E = [u, m, s, l, c, d, _, p, o, f, a];
-  return m.contains = [{
+    E = [u, h, s, l, c, d, _, p, o, f, a];
+  return h.contains = [{
     beginKeywords: r,
     keywords: {
       $pattern: n,
@@ -102,10 +102,10 @@ module.exports = function(e) {
       excludeEnd: true,
       endsParent: true
     }].concat(E)
-  }, g, h], h.contains = E, p.contains = E, {
+  }, g, m], m.contains = E, p.contains = E, {
     name: "Clojure",
     aliases: ["clj", "edn"],
     illegal: /\S/,
-    contains: [u, m, s, l, c, d, _, p, o, f]
+    contains: [u, h, s, l, c, d, _, p, o, f]
   }
 }

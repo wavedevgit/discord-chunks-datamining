@@ -71,10 +71,10 @@ module.exports = function(e) {
         relevance: 0
       }
     },
-    m = _({
+    h = _({
       includeEqual: true
     }),
-    h = _({
+    m = _({
       includeEqual: false
     }),
     g = function(t, n) {
@@ -88,7 +88,7 @@ module.exports = function(e) {
         }),
         contains: [c, p, e.inherit(d, {
           scope: null
-        }), h]
+        }), m]
       }
     },
     E = g(/:/, "operator"),
@@ -170,7 +170,7 @@ module.exports = function(e) {
         match: /""/
       }, e.BACKSLASH_ESCAPE, A]
     },
-    R = {
+    w = {
       scope: "string",
       begin: /\$"""/,
       end: /"""/,
@@ -181,11 +181,11 @@ module.exports = function(e) {
       }, A],
       relevance: 2
     },
-    w = {
+    R = {
       scope: "string",
       match: i(/'/, o(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return A.contains = [P, N, T, I, w, n, c, d, E, O, v, S, p, m], {
+  return A.contains = [P, N, T, I, R, n, c, d, E, O, v, S, p, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -194,13 +194,13 @@ module.exports = function(e) {
       "computation-expression": "keyword"
     },
     contains: [n, {
-      variants: [R, P, N, C, T, I, w]
+      variants: [w, P, N, C, T, I, R]
     }, c, d, y, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
-      contains: [d, C, T, I, w, S]
-    }, b, E, O, v, S, p, m]
+      contains: [d, C, T, I, R, S]
+    }, b, E, O, v, S, p, h]
   }
 }

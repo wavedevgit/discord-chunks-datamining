@@ -24,14 +24,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 250,
-  m = new Chunk710845.Z("Spellchecker"),
-  h = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck;
+  h = new Chunk710845.Z("Spellchecker"),
+  m = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck;
 
 function g(e) {
   var t;
   e = null != (t = f.Z[e]) ? t : e;
   let n = (0, r.parse)(e.replace(/[_-]/g, "-"));
-  if (null == n || null == n.langtag.language || null == n.langtag.region) return void m.error("".concat(e, " is not a valid locale."));
+  if (null == n || null == n.langtag.language || null == n.langtag.region) return void h.error("".concat(e, " is not a valid locale."));
   let {
     language: i,
     region: a
@@ -46,12 +46,12 @@ class E {
     this._enabled = e
   }
   setLearnedWords(e) {
-    h.setLearnedWords(e)
+    m.setLearnedWords(e)
   }
   setLocale(e) {
     var t;
-    null == (t = h.setLocale(e)) || t.then(t => {
-      m.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
+    null == (t = m.setLocale(e)) || t.then(t => {
+      h.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
     })
   }
   setAppLocale(e) {
@@ -75,7 +75,7 @@ class E {
     return this.isMisspelled(e, t) ? this.corrections : []
   }
   replaceMisspelling(e) {
-    h.replaceMisspelling(e)
+    m.replaceMisspelling(e)
   }
   constructor(e) {
     p(this, "languageDetector", true), p(this, "regionPreference", true), p(this, "_enabled", true), p(this, "misspelledWord", ""), p(this, "corrections", []);
@@ -90,7 +90,7 @@ class E {
         let e = null != (a = r[n]) ? a : f.Z[t];
         null != e && this.setLocale(e)
       }
-    }), h.on("spellcheck-result", (e, t) => {
+    }), m.on("spellcheck-result", (e, t) => {
       this.misspelledWord = null != e ? e : "", this.corrections = null != t ? t : []
     })
   }
@@ -109,6 +109,6 @@ function O(e) {
 }
 async function v() {
   var e;
-  let t = new E((null != (e = await h.getAvailableDictionaries()) ? e : []).map(g).filter(u.lm));
+  let t = new E((null != (e = await m.getAvailableDictionaries()) ? e : []).map(g).filter(u.lm));
   return y(t), t
 }

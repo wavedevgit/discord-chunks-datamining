@@ -35,19 +35,19 @@ function O(e) {
     guildDisplayNameStyles: T,
     pendingDisplayNameStyles: C,
     pendingErrors: A
-  } = (0, _.mD)(t, n), [N, P] = (0, c.US)([a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = N === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, w = (0, i.useCallback)(() => {
-    P(g.L.TAKE_ACTION), f.default.track(h.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, u.I)({
+  } = (0, _.mD)(t, n), [N, P] = (0, c.US)([a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), w = N === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, R = (0, i.useCallback)(() => {
+    P(g.L.TAKE_ACTION), f.default.track(m.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, u.I)({
       analyticsLocations: S,
       guildId: n
     })
   }, [S, P, n]), D = (0, i.useCallback)(() => {
-    (0, s.NI)(null), f.default.track(h.rMx.DISPLAY_NAME_STYLES_REMOVED)
+    (0, s.NI)(null), f.default.track(m.rMx.DISPLAY_NAME_STYLES_REMOVED)
   }, []), x = (0, i.useCallback)(() => {
     (0, d.N_)(null)
   }, []), L = true !== C || (null != n ? null != T : null != I), j = true !== C ? C : T;
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     title: E.intl.string(b.default["86GtGH"]),
-    titleIcon: R ? (0, r.jsx)(o.IGR, {
+    titleIcon: w ? (0, r.jsx)(o.IGR, {
       text: E.intl.string(E.t.y2b7CA),
       className: y.newBadge
     }) : true,
@@ -60,7 +60,7 @@ function O(e) {
         variant: "primary",
         size: "sm",
         text: E.intl.string(b.default.vJqrIg),
-        onClick: w
+        onClick: R
       }), null == n && L && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",

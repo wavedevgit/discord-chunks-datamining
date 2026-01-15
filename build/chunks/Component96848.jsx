@@ -16,11 +16,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk907728 = require("./907728.js");
-let m = {
+let h = {
     section: Chunk981631.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "gift_effect_emoji_picker"
   },
-  h = Chunk185923.Hz.GIFT;
+  m = Chunk185923.Hz.GIFT;
 
 function g(e) {
   let {
@@ -58,11 +58,11 @@ function g(e) {
       } = e;
       return (0, r.jsx)(l.VqE, {
         children: (0, r.jsx)(c.Z, {
-          analyticsOverride: m,
+          analyticsOverride: h,
           closePopout: t,
           onSelectEmoji: y,
           wrapper: "div",
-          pickerIntention: h,
+          pickerIntention: m,
           renderHeader: b,
           headerClassName: _.emojiHeader,
           className: _.emojiList,

@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
         tabularNumbers: b = false,
         scaleFontToUserSetting: y = false
       } = e,
-      O = h(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
+      O = m(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
     let v = s,
       S = "",
       I = {};
@@ -106,7 +106,7 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
     let T = p({
       color: n
     }, I, O.style);
-    return (0, r.jsx)(v, m(p({
+    return (0, r.jsx)(v, h(p({
       ref: t,
       className: o()({
         [u.defaultColor]: true === g,

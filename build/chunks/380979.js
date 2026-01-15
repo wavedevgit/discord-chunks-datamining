@@ -2,11 +2,11 @@
 /** chunk id: 380979, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $U: () => m,
+  $U: () => h,
   HB: () => E,
   Km: () => g,
   vV: () => _,
-  yz: () => h
+  yz: () => m
 });
 var Chunk979554 = require("./979554.js"),
   Chunk357352 = require("./357352.js"),
@@ -43,12 +43,12 @@ let f = 40,
       canAnimate: true
     }) : null
   },
-  m = e => {
+  h = e => {
     if (0 === e.items.length) return null;
     let t = e.items[0];
     return (0, o.k)(t) ? (0, i.b)("collectibles/".concat(t.asset, "static.png")) : null
   },
-  h = e => {
+  m = e => {
     if (0 === e.items.length) return null;
     let t = e.items[0];
     return (0, s.H)(t) ? t.thumbnailPreviewSrc : null

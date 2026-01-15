@@ -99,7 +99,7 @@ function G(e) {
     } = await n.e("84509").then(n.bind(n, 933696));
     return n => (0, r.jsx)(t, L({
       source: M(L({}, e), {
-        page: R.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
+        page: w.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
   })
@@ -123,26 +123,26 @@ function Z(e) {
   } = B, W = k(B, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
     userId: j.id,
     image: H
-  }), z = (0, m.Ys)({
+  }), z = (0, h.Ys)({
     pendingValue: Y,
     userValue: null == j || null == (t = j.collectibles) ? true : t.nameplate,
     guildValue: null == U || null == (n = U.collectibles) ? true : n.nameplate,
     guildId: null == a ? true : a.id
   }), {
     pendingDisplayNameStyles: q
-  } = (0, m.mD)(j, null == a ? true : a.id);
+  } = (0, h.mD)(j, null == a ? true : a.id);
   return (i.useEffect(() => () => c.Z.wait(T.W3), []), i.useEffect(() => {
-    null != V && f.ZP.trackWithMetadata(R.rMx.SETTINGS_PANE_VIEWED, {
+    null != V && f.ZP.trackWithMetadata(w.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
-      destination_pane: R.jXE.SETTINGS_CUSTOMIZE_PROFILE,
+      destination_pane: w.jXE.SETTINGS_CUSTOMIZE_PROFILE,
       source: V
     })
   }, [V]), F) ? (0, r.jsx)(u.Z, {}) : Z ? (0, r.jsxs)(p.Gt, {
     value: x,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: w.intl.format(w.t["/PTB2E"], {
-        helpCenterLink: S.Z.getArticleURL(R.BhN.GUILD_PROFILES)
+      children: R.intl.format(R.t["/PTB2E"], {
+        helpCenterLink: S.Z.getArticleURL(w.BhN.GUILD_PROFILES)
       })
     }), null != a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P.Z, {
@@ -150,11 +150,11 @@ function Z(e) {
         onChange: e => {
           null != e && (0, T.HP)(e)
         }
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(m.Z, {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
           className: D.profilePreviewTitle,
-          children: w.intl.formatToPlainString(w.t.Tc0slG, {
+          children: R.intl.formatToPlainString(R.t.Tc0slG, {
             guildName: null == a ? true : a.name
           })
         }),

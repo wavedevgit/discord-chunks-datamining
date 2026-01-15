@@ -24,8 +24,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 1e4,
-  m = 1e4;
-class h extends Chunk147913.Z {
+  h = 1e4;
+class m extends Chunk147913.Z {
   handleClipsSignalCreated(e, t) {
     this.isSignalEnabled(e.type) && this.process(e, t)
   }
@@ -99,7 +99,7 @@ class h extends Chunk147913.Z {
         break;
       case u.Bs.PHRASE:
         var n;
-        if ((null == (n = this.scheduledClipSignal) ? true : n.type) === u.Bs.GAME_EVENT || performance.now() - this.lastClipTimestamp < m) return;
+        if ((null == (n = this.scheduledClipSignal) ? true : n.type) === u.Bs.GAME_EVENT || performance.now() - this.lastClipTimestamp < h) return;
         this.scheduleClip(e)
     }
   }
@@ -107,7 +107,7 @@ class h extends Chunk147913.Z {
     return {
       timeline: this.timeline.read(),
       scheduledClipSignal: this.scheduledClipSignal,
-      phraseCooldown: Math.max(0, m - (performance.now() - this.lastClipTimestamp))
+      phraseCooldown: Math.max(0, h - (performance.now() - this.lastClipTimestamp))
     }
   }
   clear() {
@@ -140,4 +140,4 @@ class h extends Chunk147913.Z {
     }), this.timeline = new c.m(l.Z.getSettings().clipsLength)
   }
 }
-let g = new h
+let g = new m

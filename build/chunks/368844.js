@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Ah: () => O,
-  CB: () => w,
+  CB: () => R,
   aU: () => A,
   cp: () => D,
   eL: () => P,
-  vg: () => R,
+  vg: () => w,
   zy: () => N
 }), require("./953529.js"), require("./997841.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk473749 = require("./473749.js"),
@@ -67,10 +67,10 @@ function v(e) {
     } = e;
     if (null == u || null == d) return null;
     let _ = (0, l.NU)(f),
-      m = null != e.flags && (0, i.yE)(e.flags, g.J0y.IS_THUMBNAIL),
+      h = null != e.flags && (0, i.yE)(e.flags, g.J0y.IS_THUMBNAIL),
       E = null != r ? r : a;
     if (_) {
-      let e = h.Z.toURLSafe(r);
+      let e = m.Z.toURLSafe(r);
       if (null == e) return null;
       e.searchParams.append("format", "webp"), E = e.toString()
     }
@@ -84,7 +84,7 @@ function v(e) {
       contentScanVersion: p,
       alt: o,
       isVideo: _,
-      isThumbnail: m,
+      isThumbnail: h,
       attachmentId: e.id,
       mediaIndex: t,
       srcIsAnimated: (0, i.yE)(null != (n = e.flags) ? n : 0, g.J0y.IS_ANIMATED)
@@ -192,18 +192,18 @@ function P(e, t) {
   return null != (i = null != (r = null != (n = a[0]) ? n : o[0]) ? r : s[0]) ? i : null
 }
 
-function R(e, t) {
+function w(e, t) {
   let n = S(e),
     r = I(e, t),
     i = T(e);
   return null == n[0] && null == i[0] && null != r[0]
 }
 
-function w(e, t) {
+function R(e, t) {
   var n;
   let r = d.Z.getChannel(t);
   if (null == r) returnfalse;
-  let i = f.Z.getMessage(r.id, m.default.castChannelIdAsMessageId(r.id));
+  let i = f.Z.getMessage(r.id, h.default.castChannelIdAsMessageId(r.id));
   return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = p.default.getCurrentUser()) ? true : n.id) && 0 === c.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
 }
 

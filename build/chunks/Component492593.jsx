@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk485386 = require("./485386.js"),
   Chunk549578 = require("./549578.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ let O = function(e) {
     className: t,
     compact: n = false,
     contentOnly: a = false,
-    zalgo: m = true,
+    zalgo: h = true,
     preview: g = false,
     disableInteraction: y = false,
     childrenRepliedMessage: O,
@@ -95,8 +95,8 @@ let O = function(e) {
         right: 4
       }
     },
-    hasThread: R,
-    isSystemMessage: w,
+    hasThread: w,
+    isSystemMessage: R,
     hasReply: D,
     author: x,
     onMouseEnter: L,
@@ -119,8 +119,8 @@ let O = function(e) {
         animate: G,
         setAnimate: Z
       },
-      children: (0, r.jsx)(c.tEY, E(h({}, P), {
-        children: (0, r.jsxs)("div", E(h({
+      children: (0, r.jsx)(c.tEY, E(m({}, P), {
+        children: (0, r.jsxs)("div", E(m({
           className: o()(t, {
             [_.gradient]: U,
             [_.withDisplayNameStyles]: V && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
@@ -129,9 +129,9 @@ let O = function(e) {
             [_.compact]: n,
             [_.preview]: g,
             [_.cozy]: !n,
-            [_.zalgo]: m,
-            [_.hasThread]: R,
-            [_.isSystemMessage]: w,
+            [_.zalgo]: h,
+            [_.hasThread]: w,
+            [_.isSystemMessage]: R,
             [_.hasReply]: D
           }),
           ref: N

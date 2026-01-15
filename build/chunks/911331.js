@@ -45,15 +45,15 @@ var s = function(e, t) {
       return e !== c
     };
   if (!r(e)) throw TypeError("Invalid target");
-  for (var f, p, _ = document.scrollingElement || document.documentElement, m = [], h = e; r(h) && d(h);) {
-    if ((h = null == (p = (f = h).parentElement) ? f.getRootNode().host || null : p) === _) {
-      m.push(h);
+  for (var f, p, _ = document.scrollingElement || document.documentElement, h = [], m = e; r(m) && d(m);) {
+    if ((m = null == (p = (f = m).parentElement) ? f.getRootNode().host || null : p) === _) {
+      h.push(m);
       break
     }
-    null != h && h === document.body && a(h) && !a(document.documentElement) || null != h && a(h, u) && m.push(h)
+    null != m && m === document.body && a(m) && !a(document.documentElement) || null != m && a(m, u) && h.push(m)
   }
-  for (var g = n.visualViewport ? n.visualViewport.width : innerWidth, E = n.visualViewport ? n.visualViewport.height : innerHeight, b = window.scrollX || pageXOffset, y = window.scrollY || pageYOffset, O = e.getBoundingClientRect(), v = O.height, S = O.width, I = O.top, T = O.right, C = O.bottom, A = O.left, N = "start" === s || "nearest" === s ? I : "end" === s ? C : I + v / 2, P = "center" === l ? A + S / 2 : "end" === l ? T : A, R = [], w = 0; w < m.length; w++) {
-    var D = m[w],
+  for (var g = n.visualViewport ? n.visualViewport.width : innerWidth, E = n.visualViewport ? n.visualViewport.height : innerHeight, b = window.scrollX || pageXOffset, y = window.scrollY || pageYOffset, O = e.getBoundingClientRect(), v = O.height, S = O.width, I = O.top, T = O.right, C = O.bottom, A = O.left, N = "start" === s || "nearest" === s ? I : "end" === s ? C : I + v / 2, P = "center" === l ? A + S / 2 : "end" === l ? T : A, w = [], R = 0; R < h.length; R++) {
+    var D = h[R],
       x = D.getBoundingClientRect(),
       L = x.height,
       j = x.width,
@@ -80,11 +80,11 @@ var s = function(e, t) {
         J = D.scrollTop;
       N += J - (Y = Math.max(0, Math.min(J + Y / Q, D.scrollHeight - L / Q + z))), P += X - (W = Math.max(0, Math.min(X + W / q, D.scrollWidth - j / q + K)))
     }
-    R.push({
+    w.push({
       el: D,
       top: Y,
       left: W
     })
   }
-  return R
+  return w
 }

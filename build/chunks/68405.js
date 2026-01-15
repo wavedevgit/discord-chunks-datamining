@@ -93,8 +93,8 @@ function A(e, t) {
 }
 let N = 250,
   P = /-/g,
-  R = "format",
-  w = "animated",
+  w = "format",
+  R = "animated",
   D = "webp",
   x = ".webp",
   L = ".avif",
@@ -123,7 +123,7 @@ function k(e, t) {
       limit: null,
       totalResults: e.length
     },
-    o = (0, h._2)(_.Z.getAnalyticsID(), t, T(S({}, a, i), {
+    o = (0, m._2)(_.Z.getAnalyticsID(), t, T(S({}, a, i), {
       results: e.length
     })),
     s = null == r ? {} : {
@@ -211,7 +211,7 @@ function V(e) {
     totalResults: s,
     query: l,
     gifId: d
-  } = e, f = (0, h._2)(_.Z.getAnalyticsID(), t, {
+  } = e, f = (0, m._2)(_.Z.getAnalyticsID(), t, {
     offset: r,
     limit: i,
     results: a,
@@ -332,7 +332,7 @@ function X(e) {
     r = n.endsWith(x),
     i = n.endsWith(L),
     a = n.endsWith(j);
-  return r || i || a ? ((i || a) && t.searchParams.set(R, D), t.searchParams.set(w, "true"), t.toString()) : e
+  return r || i || a ? ((i || a) && t.searchParams.set(w, D), t.searchParams.set(R, "true"), t.toString()) : e
 }
 
 function J(e) {
@@ -352,7 +352,7 @@ function J(e) {
       body: O.intl.string(O.t.YSDH9n)
     }), false;
     let u = i().size(t.gifs);
-    u > 2 && (t.hideTooltip = true), m.default.track(b.rMx.GIF_FAVORITED, {
+    u > 2 && (t.hideTooltip = true), h.default.track(b.rMx.GIF_FAVORITED, {
       total_num_favorited: u
     })
   }, y.fy.INFREQUENT_USER_ACTION)
@@ -360,7 +360,7 @@ function J(e) {
 
 function $(e) {
   p.DZ.updateAsync("favoriteGifs", t => {
-    e in t.gifs ? delete t.gifs[e] : delete t.gifs[K(e)], m.default.track(b.rMx.GIF_UNFAVORITED, {
+    e in t.gifs ? delete t.gifs[e] : delete t.gifs[K(e)], h.default.track(b.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)
     })
   }, y.fy.INFREQUENT_USER_ACTION)

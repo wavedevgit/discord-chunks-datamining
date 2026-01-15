@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk527685 = require("./527685.jsx"),
   Chunk261538 = require("./261538.jsx");
 let u = () => {
-  let [e, t] = i.useState(0), [n, u] = i.useState(4), [d, f] = i.useState(2), [p, _] = i.useState(l.NZ.LIGHT), [m, h] = i.useState(l.yB.BLUE), [g, E] = i.useState("darkslategray"), [b, y] = i.useState("blanchedalmond"), [O, v] = i.useState("pink"), S = i.useMemo(() => Object.entries(l.NZ).map(e => {
+  let [e, t] = i.useState(0), [n, u] = i.useState(4), [d, f] = i.useState(2), [p, _] = i.useState(l.NZ.LIGHT), [h, m] = i.useState(l.yB.BLUE), [g, E] = i.useState("darkslategray"), [b, y] = i.useState("blanchedalmond"), [O, v] = i.useState("pink"), S = i.useMemo(() => Object.entries(l.NZ).map(e => {
     let [t, n] = e;
     return {
       label: t,
@@ -31,7 +31,7 @@ let u = () => {
       minimum: e,
       maximum: n,
       weight: p,
-      variant: m,
+      variant: h,
       override: {
         default: {
           background: g,
@@ -70,9 +70,9 @@ let u = () => {
       children: (0, r.jsx)(o.B6, {
         placeholder: "Variant",
         select: e => {
-          h(e)
+          m(e)
         },
-        isSelected: e => m === e,
+        isSelected: e => h === e,
         serialize: e => e,
         options: I,
         label: "Variant"

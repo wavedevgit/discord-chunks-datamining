@@ -4,7 +4,7 @@
 require.d(exports, {
   $L: () => d,
   AB: () => r,
-  Dt: () => m,
+  Dt: () => h,
   ED: () => s,
   FB: () => a,
   IJ: () => c,
@@ -13,7 +13,7 @@ require.d(exports, {
   V5: () => l,
   Xf: () => y,
   eL: () => p,
-  gn: () => h,
+  gn: () => m,
   jI: () => f,
   l5: () => g,
   nI: () => u,
@@ -63,11 +63,11 @@ function _() {
   return (null == (e = navigator.userAgent) ? true : e.match(/Macintosh/i)) != null
 }
 
-function m() {
+function h() {
   return "android" === o
 }
 
-function h() {
+function m() {
   return "ios" === o
 }
 

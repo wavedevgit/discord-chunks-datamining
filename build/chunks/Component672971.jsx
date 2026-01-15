@@ -76,15 +76,15 @@ class b extends Chunk473749.Component {
       className: c,
       children: [b && (0, r.jsx)(u.Heading, {
         variant: "heading-md/semibold",
-        className: h.formTitle,
-        children: m.intl.string(m.t.Ogvn5o)
+        className: m.formTitle,
+        children: h.intl.string(h.t.Ogvn5o)
       }), null != e && (a || !i) ? (0, r.jsx)(u.Checkbox, {
         checked: T,
         onChange: e => this.setState({
           hasAcceptedEULA: e
         }),
         disabled: s,
-        label: m.intl.format(m.t.IodJKT, {
+        label: h.intl.format(h.t.IodJKT, {
           applicationName: t,
           onClick: t => {
             (0, u.ZDy)(async () => {
@@ -98,7 +98,7 @@ class b extends Chunk473749.Component {
           }
         })
       }) : null, null == d ? null : (0, r.jsx)("div", {
-        className: o()(h.finePrint, I),
+        className: o()(m.finePrint, I),
         children: d
       }), b ? (0, r.jsxs)("div", {
         className: c,
@@ -108,20 +108,20 @@ class b extends Chunk473749.Component {
             hasAcceptedWithdrawalWaiver: e
           }),
           disabled: s,
-          label: m.intl.string(m.t["DFCVN+"])
+          label: h.intl.string(h.t["DFCVN+"])
         }), (0, r.jsx)("div", {
-          className: h.finePrint,
-          children: m.intl.string(m.t.jhu6zm)
+          className: m.finePrint,
+          children: h.intl.string(h.t.jhu6zm)
         })]
       }) : null, g && (0, r.jsxs)("div", {
-        className: h.finePrint,
-        children: ["*", m.intl.format(m.t["5zmY3F"], {
+        className: m.finePrint,
+        children: ["*", h.intl.format(h.t["5zmY3F"], {
           documentationLink: f.Z.getArticleURL(_.BhN.LOCALIZED_PRICING)
         })]
       }), y && null != S && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
-        children: m.intl.format(m.t["Hvo/Z5"], {
+        children: h.intl.format(h.t["Hvo/Z5"], {
           buttonText: (0, p.W_)(null, S),
           interval: p.ZP.formatInterval(null == S ? true : S.interval),
           cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
@@ -130,7 +130,7 @@ class b extends Chunk473749.Component {
       }), O && null != S && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
-        children: m.intl.format(m.t.Oo2FeS, {
+        children: h.intl.format(h.t.Oo2FeS, {
           buttonText: (0, p.W_)(null, S),
           interval: p.ZP.formatInterval(null == S ? true : S.interval),
           cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
@@ -139,7 +139,7 @@ class b extends Chunk473749.Component {
       }), v && null != S && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
-        children: m.intl.format(m.t["Z2c+aV"], {
+        children: h.intl.format(h.t["Z2c+aV"], {
           buttonText: (0, p.W_)(null, S),
           interval: p.ZP.formatInterval(null == S ? true : S.interval),
           cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),

@@ -12,8 +12,8 @@ e = require.nmd(module),
       f = 26,
       p = 38,
       _ = 700,
-      m = 72,
-      h = 128,
+      h = 72,
+      m = 128,
       g = "-",
       E = /^xn--/,
       b = /[^\x20-\x7E]/,
@@ -54,11 +54,11 @@ e = require.nmd(module),
       }).join("")
     }
 
-    function R(e) {
+    function w(e) {
       return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : u
     }
 
-    function w(e, t) {
+    function R(e, t) {
       return e + 22 + 75 * (e < 26) - ((0 != t) << 5)
     }
 
@@ -72,11 +72,11 @@ e = require.nmd(module),
       var t, n, r, i, a, o, s, l, p, _, E = [],
         b = e.length,
         y = 0,
-        O = h,
-        v = m;
+        O = m,
+        v = h;
       for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && T("not-basic"), E.push(e.charCodeAt(r));
       for (i = n > 0 ? n + 1 : 0; i < b;) {
-        for (a = y, o = 1, s = u; i >= b && T("invalid-input"), ((l = R(e.charCodeAt(i++))) >= u || l > S((c - y) / o)) && T("overflow"), y += l * o, !(l < (p = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > S(c / (_ = u - p)) && T("overflow"), o *= _;
+        for (a = y, o = 1, s = u; i >= b && T("invalid-input"), ((l = w(e.charCodeAt(i++))) >= u || l > S((c - y) / o)) && T("overflow"), y += l * o, !(l < (p = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > S(c / (_ = u - p)) && T("overflow"), o *= _;
         v = D(y - a, t = E.length + 1, 0 == a), S(y / t) > c - O && T("overflow"), O += S(y / t), y %= t, E.splice(y++, 0, O)
       }
       return P(E)
@@ -84,13 +84,13 @@ e = require.nmd(module),
 
     function L(e) {
       var t, n, r, i, a, o, s, l, p, _, E, b, y, O, v, C = [];
-      for (o = 0, b = (e = N(e)).length, t = h, n = 0, a = m; o < b; ++o)(E = e[o]) < 128 && C.push(I(E));
+      for (o = 0, b = (e = N(e)).length, t = m, n = 0, a = h; o < b; ++o)(E = e[o]) < 128 && C.push(I(E));
       for (r = i = C.length, i && C.push(g); r < b;) {
         for (s = c, o = 0; o < b; ++o)(E = e[o]) >= t && E < s && (s = E);
         for (s - t > S((c - n) / (y = r + 1)) && T("overflow"), n += (s - t) * y, t = s, o = 0; o < b; ++o)
           if ((E = e[o]) < t && ++n > c && T("overflow"), E == t) {
-            for (l = n, p = u; !(l < (_ = p <= a ? d : p >= a + f ? f : p - a)); p += u) v = l - _, O = u - _, C.push(I(w(_ + v % O, 0))), l = S(v / O);
-            C.push(I(w(l, 0))), a = D(n, y, r == i), n = 0, ++r
+            for (l = n, p = u; !(l < (_ = p <= a ? d : p >= a + f ? f : p - a)); p += u) v = l - _, O = u - _, C.push(I(R(_ + v % O, 0))), l = S(v / O);
+            C.push(I(R(l, 0))), a = D(n, y, r == i), n = 0, ++r
           }++ n, ++t
       }
       return C.join("")

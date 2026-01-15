@@ -45,13 +45,13 @@ function E(e) {
   return (0, r.jsxs)("div", {
     id: (0, d.ut)(a),
     ref: E,
-    className: o()(n, h.markup, {
-      [m.messageContent]: true,
-      [m.isSending]: O && !v,
-      [m.markupBidi]: T,
-      [m.markupRtl]: !T && "rtl" === l()(a.content),
-      [m.isFailed]: y,
-      [m.isUnsupported]: a.isUnsupported
+    className: o()(n, m.markup, {
+      [h.messageContent]: true,
+      [h.isSending]: O && !v,
+      [h.markupBidi]: T,
+      [h.markupRtl]: !T && "rtl" === l()(a.content),
+      [h.isFailed]: y,
+      [h.isUnsupported]: a.isUnsupported
     }),
     children: [null != s ? s : g(a, c), (0, r.jsx)(f.Z, {
       message: a,

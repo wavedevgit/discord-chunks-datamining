@@ -103,8 +103,8 @@ class I extends Chunk287545.Z {
     let {
       location: t,
       applicationId: n
-    } = e, r = (0, h.Z)(t.id, n);
-    (0, m.RI)(r)
+    } = e, r = (0, m.Z)(t.id, n);
+    (0, h.RI)(r)
   }
   releaseWebView() {}
   constructor(...e) {

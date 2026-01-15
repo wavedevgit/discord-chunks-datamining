@@ -24,7 +24,7 @@ let p = {
 var _ = function(e) {
   return e.SIZE_60 = "size-60", e.SIZE_72 = "size-72", e.SIZE_100 = "size-100", e
 }({});
-let m = {
+let h = {
   "size-60": {
     imageSize: 60,
     smallImageSize: 24,
@@ -42,7 +42,7 @@ let m = {
   }
 };
 
-function h(e) {
+function m(e) {
   let {
     children: t,
     onClick: n
@@ -67,7 +67,7 @@ function g(e) {
     imageSize: O,
     smallImageSize: v,
     mask: S
-  } = m[b];
+  } = h[b];
   if (null == s) return (0, r.jsx)(c.f, {
     src: true,
     alt: d.intl.string(d.t["2B/phM"]),
@@ -84,7 +84,7 @@ function g(e) {
   });
   return (0, r.jsxs)("div", {
     className: a()(f.imagePosition, y),
-    children: [(0, r.jsx)(h, {
+    children: [(0, r.jsx)(m, {
       onClick: E,
       children: (0, r.jsx)(u._, {
         href: s.url,

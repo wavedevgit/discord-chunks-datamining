@@ -20,11 +20,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535606 = require("./535606.js");
 
-function h(e) {
+function m(e) {
   return {
     text: e,
     icon: (0, r.jsx)(c.bbz, {
-      className: m.icon,
+      className: h.icon,
       dotRadius: 3.5,
       themed: true
     })
@@ -38,7 +38,7 @@ function g(e) {
     icon: (0, r.jsx)(c.Mgn, {
       size: "xs",
       color: "currentColor",
-      className: o()(m.icon, m.errorIcon)
+      className: o()(h.icon, h.errorIcon)
     })
   }
 }
@@ -46,9 +46,9 @@ function g(e) {
 function E(e, t) {
   switch ((0, f.t$)(t, e)) {
     case f.rQ.SENDING:
-      return h(_.intl.string(_.t.RiLfBY));
+      return m(_.intl.string(_.t.RiLfBY));
     case f.rQ.CREATED:
-      return h(_.intl.formatToPlainString(_.t["7ePV4t"], {
+      return m(_.intl.formatToPlainString(_.t["7ePV4t"], {
         applicationName: t.author.username
       }));
     case f.rQ.TIMED_OUT:
@@ -66,7 +66,7 @@ function b(e) {
     color: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(m.wrapper, t),
+    className: o()(h.wrapper, t),
     children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: a,
@@ -100,13 +100,13 @@ function y(e) {
   }
   if (null == _) return null;
   let {
-    text: m,
-    icon: h,
+    text: h,
+    icon: m,
     color: y
   } = _;
   return (0, r.jsx)(b, {
-    icon: h,
-    text: m,
+    icon: m,
+    text: h,
     className: n,
     color: y
   })

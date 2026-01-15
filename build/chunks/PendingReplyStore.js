@@ -50,9 +50,9 @@ function f(e, t) {
 }
 let p = {},
   _ = {},
-  m = {};
+  h = {};
 
-function h(e) {
+function m(e) {
   let {
     channel: t,
     message: n,
@@ -65,7 +65,7 @@ function h(e) {
     message: n,
     shouldMention: r,
     showMentionToggle: i
-  }, m[t.id] = a
+  }, h[t.id] = a
 }
 
 function g(e) {
@@ -108,10 +108,10 @@ function y(e) {
     id: i,
     channelId: a
   } = e;
-  if ((null == (n = p[a]) || null == (t = n.message) ? true : t.id) === i) delete p[a], delete m[a];
+  if ((null == (n = p[a]) || null == (t = n.message) ? true : t.id) === i) delete p[a], delete h[a];
   else {
     if ((null == (r = _[a]) ? true : r.messageId) !== i) returnfalse;
-    delete _[a], delete m[a]
+    delete _[a], delete h[a]
   }
 }
 
@@ -151,7 +151,7 @@ function I() {
 }
 
 function T() {
-  p = {}, _ = {}, m = {}
+  p = {}, _ = {}, h = {}
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
@@ -171,12 +171,12 @@ class C extends(r = Chunk442837.ZP.PersistedStore) {
     return p[e]
   }
   getPendingReplyActionSource(e) {
-    return m[e]
+    return h[e]
   }
 }
 c(C, "displayName", "PendingReplyStore"), c(C, "persistKey", "PendingReplyStore"), c(C, "migrations", [e => null != e ? e : {}]);
 let A = new C(Chunk570140.Z, {
-  CREATE_PENDING_REPLY: h,
+  CREATE_PENDING_REPLY: m,
   CREATE_SHALLOW_PENDING_REPLY: g,
   SET_PENDING_REPLY_SHOULD_MENTION: E,
   DELETE_PENDING_REPLY: b,

@@ -2,7 +2,7 @@
 /** chunk id: 570928, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -66,7 +66,7 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends(r = Chunk473749.PureComponent) {
+class h extends(r = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -92,8 +92,8 @@ class m extends(r = Chunk473749.PureComponent) {
     }))
   }
 }
-c(m, "defaultProps", {
+c(h, "defaultProps", {
   tag: "div",
   forceHover: false
 });
-let h = m
+let m = h

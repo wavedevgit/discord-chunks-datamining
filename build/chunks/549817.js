@@ -62,13 +62,13 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function R(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (f.Z.isFullServerPreview(e)) return;
   let n = t ? O.Z.getOnboardingPromptsForOnboarding(e) : O.Z.getOnboardingPrompts(e),
@@ -119,7 +119,7 @@ function w(e) {
 
 function D(e, t, n) {
   var r, a;
-  let o = null != (a = null == (r = m.ZP.getSelfMember(e)) ? true : r.roles) ? a : [];
+  let o = null != (a = null == (r = h.ZP.getSelfMember(e)) ? true : r.roles) ? a : [];
   if (f.Z.isViewingRoles(e)) return void(0, d.og)(e, i().difference(i().union(o, t), n));
   (t.length > 0 || n.length > 0) && s.Z.dispatch({
     type: "GUILD_MEMBER_UPDATE_LOCAL",
@@ -143,7 +143,7 @@ let x = {
       removedOptionIds: o
     })
   },
-  updateOnboardingResponses: i().debounce(w, 1e3),
+  updateOnboardingResponses: i().debounce(R, 1e3),
   updateRolesLocal: D,
   completeOnboarding(e, t) {
     let n = t.length > 0 ? t[t.length - 1] : null,
@@ -159,7 +159,7 @@ let x = {
       x = O.Z.getConnections(e),
       L = (0, v.OZ)(x),
       j = (0, v.N4)(x);
-    if (g.default.track(I.rMx.GUILD_ONBOARDING_STEP_COMPLETED, R(N({}, (0, c.hH)(e)), {
+    if (g.default.track(I.rMx.GUILD_ONBOARDING_STEP_COMPLETED, w(N({}, (0, c.hH)(e)), {
         step: t.length - 1,
         options_selected: null == n ? 0 : r.filter(e => D.includes(e.id)).length,
         skipped: D.length > 0,
@@ -174,14 +174,14 @@ let x = {
         provider_connections_not_connected: L.notConnected,
         application_connections_connected: j.connected,
         application_connections_not_connected: j.notConnected
-      })), (0, l.Ju)(e, C.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), w(e, true), f.Z.isFullServerPreview(e)) {
+      })), (0, l.Ju)(e, C.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), R(e, true), f.Z.isFullServerPreview(e)) {
       (0, d.zS)(e, b, []), (0, d.aq)(e, {
         optInEnabled: true
       }), (0, d.og)(e, Array.from(i));
-      let t = h.default.getCurrentUser();
+      let t = m.default.getCurrentUser();
       if (null != t) {
         var M, k;
-        let n = null != (k = null == (M = m.ZP.getMember(e, t.id)) ? true : M.flags) ? k : 0;
+        let n = null != (k = null == (M = h.ZP.getMember(e, t.id)) ? true : M.flags) ? k : 0;
         (0, d.aq)(e, {
           memberOptions: {
             flags: (0, a.mB)(n, T.q.COMPLETED_ONBOARDING, true)
@@ -210,10 +210,10 @@ let x = {
     })
   },
   async resetOnboarding(e) {
-    let t = h.default.getCurrentUser();
+    let t = m.default.getCurrentUser();
     if (null != t) {
       var n, r;
-      let i = null != (r = null == (n = m.ZP.getMember(e, t.id)) ? true : n.flags) ? r : 0;
+      let i = null != (r = null == (n = h.ZP.getMember(e, t.id)) ? true : n.flags) ? r : 0;
       await (0, u.e)(e, {
         flags: (0, a.mB)(i, T.q.COMPLETED_ONBOARDING, false)
       })

@@ -32,7 +32,7 @@ let b = () => {
       a(true);
       try {
         _.mT(t.id), await u.Z.joinGuild(t.id, {
-          source: m.vtS.NOTICE_BAR
+          source: h.vtS.NOTICE_BAR
         })
       } catch (e) {
         a(false)
@@ -51,11 +51,11 @@ let b = () => {
         size: "xs",
         color: "currentColor",
         className: g.arrow
-      }), h.intl.string(h.t["13/7kX"])]
+      }), m.intl.string(m.t["13/7kX"])]
     }), (0, r.jsx)(c.Text, {
       className: g.header,
       variant: "text-sm/normal",
-      children: h.intl.string(h.t["N/y2WE"])
+      children: m.intl.string(m.t["N/y2WE"])
     }), (0, r.jsx)(l.zx, {
       className: g.button,
       look: l.zx.Looks.OUTLINED,
@@ -63,7 +63,7 @@ let b = () => {
       size: l.zx.Sizes.NONE,
       submitting: n,
       onClick: y,
-      children: h.intl.format(h.t.uHN7ny, {
+      children: m.intl.format(m.t.uHN7ny, {
         guild: t.name
       })
     })]

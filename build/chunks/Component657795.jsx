@@ -33,10 +33,10 @@ function T(e) {
     className: T,
     onClose: C
   } = e;
-  (0, m.fP)();
+  (0, h.fP)();
   let {
     analyticsLocations: A
-  } = (0, u.ZP)(c.Z.EMPTY_STATE), N = (0, s.Wu)([h.Z], () => b.Wt.map(e => h.Z.getStickerById(e)));
+  } = (0, u.ZP)(c.Z.EMPTY_STATE), N = (0, s.Wu)([m.Z], () => b.Wt.map(e => m.Z.getStickerById(e)));
   i.useEffect(() => {
     _.default.track(y.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.cd.EMPTY_STICKER_PICKER_UPSELL,
@@ -47,15 +47,15 @@ function T(e) {
     })
   }, [A]);
   let P = (0, f.N)(),
-    R = (0, d.N)(),
-    w = null != P || null != R,
+    w = (0, d.N)(),
+    R = null != P || null != w,
     D = (null == P || null == (t = P.subscription_trial) ? true : t.sku_id) === O.Si.TIER_0;
   return (0, r.jsxs)("div", {
     className: o()(S.emptyState, T, {
-      [S.unifyTrialUpsell]: w
+      [S.unifyTrialUpsell]: R
     }),
-    children: [w ? (0, r.jsx)(p.ZP, {
-      discountOffer: R,
+    children: [R ? (0, r.jsx)(p.ZP, {
+      discountOffer: w,
       trialOffer: P,
       onClose: C,
       type: O.cd.EMPTY_STICKER_PICKER_UPSELL,
@@ -79,9 +79,9 @@ function T(e) {
           size: I
         }, null == e ? true : e.id))
       })]
-    }), !w && (0, r.jsx)(E.Z, {
+    }), !R && (0, r.jsx)(E.Z, {
       analyticsSection: y.jXE.EXPRESSION_PICKER,
-      buttonText: w ? D ? v.intl.string(v.t.hz78hE) : v.intl.string(v.t["Gd/XHF"]) : true
+      buttonText: R ? D ? v.intl.string(v.t.hz78hE) : v.intl.string(v.t["Gd/XHF"]) : true
     })]
   })
 }

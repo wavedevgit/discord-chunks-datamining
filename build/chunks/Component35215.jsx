@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk578362 = require("./578362.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -100,15 +100,15 @@ let V = e => {
       onClose: n
     } = e, i = (0, a.e7)([E.Z], () => E.Z.getState().theme), o = (0, l.wj)(i) ? N.BRd.DARK : N.BRd.LIGHT;
     return (0, r.jsxs)("div", {
-      className: R.headerContainer,
+      className: w.headerContainer,
       children: [(0, r.jsxs)("div", {
-        className: R.headerContent,
+        className: w.headerContent,
         children: [(0, r.jsx)("img", {
-          className: R.gameTile,
+          className: w.gameTile,
           alt: t.config.messages.gameTitle,
           src: (0, I.fh)(t, I.eC.GAME_TILE, o).url
         }), (0, r.jsxs)("div", {
-          className: R.headerTextContainer,
+          className: w.headerTextContainer,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
@@ -120,7 +120,7 @@ let V = e => {
           })]
         })]
       }), (0, r.jsx)(c.P3F, {
-        className: R.closeButton,
+        className: w.closeButton,
         "aria-label": P.intl.string(P.t.cpT0Cq),
         onClick: n,
         children: (0, r.jsx)(c.Dio, {
@@ -137,7 +137,7 @@ let V = e => {
       sourceQuestContent: l,
       onGameProfileModalOpen: u,
       onGameProfileModalClose: p
-    } = e, _ = (0, v.O5)(), h = (0, a.e7)([f.Z], () => f.Z.getApplication(o.applicationId)), E = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), b = i.useRef(null), y = null != o.supplementalData, O = () => {
+    } = e, _ = (0, v.O5)(), m = (0, a.e7)([f.Z], () => f.Z.getApplication(o.applicationId)), E = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), b = i.useRef(null), y = null != o.supplementalData, O = () => {
       _({
         questId: t.id,
         questContent: S.jn.SPONSORED_QUEST_SHEET,
@@ -156,7 +156,7 @@ let V = e => {
         } = await n.e("89311").then(n.bind(n, 644941));
         return t => (0, r.jsx)(e, D({
           applicationId: o.applicationId,
-          source: m.m1.GameSheet,
+          source: h.m1.GameSheet,
           trackExternalAction: O
         }, t))
       }, {
@@ -176,24 +176,24 @@ let V = e => {
       null == b.current || E || (b.current.style.transform = "rotateX(0deg) rotateY(0deg)")
     }, [E]), A = () => null != o.supplementalData ? (0, r.jsx)(g.C, {
       game: o.supplementalData,
-      application: h,
-      className: R.coverArt,
+      application: m,
+      className: w.coverArt,
       size: g.Z.SMALL
     }) : null != o.fallbackCoverImageUrl ? (0, r.jsx)("img", {
       src: o.fallbackCoverImageUrl,
       alt: o.name,
-      className: R.coverArt
+      className: w.coverArt
     }) : null;
     return (0, r.jsx)(s.u, {
       text: o.name,
       children: (0, r.jsx)(c.P3F, {
-        className: R.gameClickable,
+        className: w.gameClickable,
         onClick: I,
         onMouseMove: T,
         onMouseLeave: C,
         children: (0, r.jsx)("div", {
           ref: b,
-          className: R.coverArtContainer,
+          className: w.coverArtContainer,
           children: A()
         })
       })
@@ -235,14 +235,14 @@ function W(e) {
     sourceQuestContent: l,
     impressionRef: d,
     onGameProfileModalOpen: f,
-    onGameProfileModalClose: m
+    onGameProfileModalClose: h
   } = e;
   (0, p.Z)(o), i.useEffect(() => {
     o.length > 1 && u.Z.getDetectableGamesSupplemental(o)
   }, [o]);
   let g = (0, a.e7)([_.Z], () => o.some(e => _.Z.isFetching(e))),
     E = (0, a.e7)([_.Z], () => o.some(e => _.Z.didFetchingFail(e))),
-    v = (0, a.Wu)([_.Z], () => o.map(e => _.Z.getGame(e)).filter(e => null != e).filter(e => (0, h.z6)(e.applicationId)).slice(0, j)),
+    v = (0, a.Wu)([_.Z], () => o.map(e => _.Z.getGame(e)).filter(e => null != e).filter(e => (0, m.z6)(e.applicationId)).slice(0, j)),
     S = (0, a.e7)([b.Z, _.Z], () => {
       let e = new Set(v.map(e => e.applicationId));
       return o.filter(t => !e.has(t)).filter(e => null == _.Z.getGame(e)).map(e => {
@@ -294,14 +294,14 @@ function W(e) {
     }, [P, E, t.id, s]), g && !P) {
     let e = Math.min(o.length, j);
     return (0, r.jsxs)("div", {
-      className: R.container,
+      className: w.container,
       children: [(0, r.jsx)(V, {
         quest: t,
         onClose: s
       }), (0, r.jsx)("div", {
-        className: R.gameGrid,
+        className: w.gameGrid,
         children: o.slice(0, e).map(e => (0, r.jsx)("div", {
-          className: R.placeholderArt
+          className: w.placeholderArt
         }, e))
       })]
     })
@@ -310,18 +310,18 @@ function W(e) {
     ref: e => {
       d.current = e
     },
-    className: R.container,
+    className: w.container,
     children: [(0, r.jsx)(V, {
       quest: t,
       onClose: s
     }), (0, r.jsxs)("div", {
-      className: R.gameGrid,
+      className: w.gameGrid,
       children: [I.map(e => (0, r.jsx)(H, {
         quest: t,
         game: e,
         sourceQuestContent: l,
         onGameProfileModalOpen: f,
-        onGameProfileModalClose: m
+        onGameProfileModalClose: h
       }, e.applicationId)), Array.from({
         length: T
       }, (e, t) => (0, r.jsx)(Y, {}, "placeholder-".concat(t)))]
@@ -339,8 +339,8 @@ function K(e) {
     quest: u,
     sourceQuestContent: d,
     impressionRef: f
-  } = e, [p, _] = i.useState(false), m = (0, v.O5)(), h = i.useRef(null), g = (null == t ? true : t.current) != null, E = g ? t : h, b = g ? "right" : "top", y = g ? "bottom" : true, O = () => {
-    null == s || s(), m({
+  } = e, [p, _] = i.useState(false), h = (0, v.O5)(), m = i.useRef(null), g = (null == t ? true : t.current) != null, E = g ? t : m, b = g ? "right" : "top", y = g ? "bottom" : true, O = () => {
+    null == s || s(), h({
       questId: u.id,
       questContent: d,
       questContentCTA: v.jZ.SPONSORED_QUEST_SHEET,
@@ -378,7 +378,7 @@ function K(e) {
     spacing: M,
     scrollBehavior: "close",
     ignoreModalClicks: true,
-    children: e => a(e, h)
+    children: e => a(e, m)
   })
 }
 let z = function(e) {

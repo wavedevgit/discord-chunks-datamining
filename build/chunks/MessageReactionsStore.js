@@ -36,7 +36,7 @@ function _() {
   f = {}
 }
 
-function m(e) {
+function h(e) {
   let {
     type: t,
     messageId: n,
@@ -50,7 +50,7 @@ function m(e) {
   } else o.users.delete(r)
 }
 
-function h(e) {
+function m(e) {
   let {
     messageId: t,
     users: n,
@@ -83,7 +83,7 @@ class g extends(r = Chunk442837.ZP.Store) {
 d(g, "displayName", "MessageReactionsStore");
 let E = new g(Chunk570140.Z, {
   CONNECTION_OPEN: _,
-  MESSAGE_REACTION_ADD: m,
-  MESSAGE_REACTION_REMOVE: m,
-  MESSAGE_REACTION_ADD_USERS: h
+  MESSAGE_REACTION_ADD: h,
+  MESSAGE_REACTION_REMOVE: h,
+  MESSAGE_REACTION_ADD_USERS: m
 })

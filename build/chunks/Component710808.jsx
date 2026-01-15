@@ -55,7 +55,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,11 +89,11 @@ function L(e) {
   var t;
   let n = C.intl.string(C.t.QZg0J7),
     i = null != e ? e : C.intl.string(C.t.VzHcSm),
-    a = null == (t = (0, h.hp)(h.u.DEBUG_LOG_UPLOAD_FAILED)) ? true : t.errorCode,
+    a = null == (t = (0, m.hp)(m.u.DEBUG_LOG_UPLOAD_FAILED)) ? true : t.errorCode,
     o = C.intl.formatToPlainString(C.t.ejOT95, {
       errorCode: a
     });
-  (0, c.h7j)(e => (0, r.jsx)(c.VoidConfirmModal, w(P({
+  (0, c.h7j)(e => (0, r.jsx)(c.VoidConfirmModal, R(P({
     header: n,
     confirmButtonColor: l.zx.Colors.BRAND,
     confirmText: C.intl.string(C.t.BddRzS)
@@ -138,7 +138,7 @@ async function M(e) {
       message: {
         message: "User Live Dump"
       }
-    }), await (0, m.E)(I.GU0.RTC), x()
+    }), await (0, h.E)(I.GU0.RTC), x()
   } catch (e) {
     L(e.displayMessage)
   } finally {

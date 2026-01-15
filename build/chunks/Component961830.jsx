@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -64,7 +64,7 @@ let g = {
   },
   E = {
     key: Chunk409813.h8.ADD_PAYMENT_STEPS,
-    renderStep: e => (0, r.jsx)(o.J, h(_({}, e), {
+    renderStep: e => (0, r.jsx)(o.J, m(_({}, e), {
       breadcrumbSteps: [a.h8.ADD_PAYMENT_STEPS, a.h8.REVIEW, a.h8.CONFIRM],
       onReturn: () => {
         0 === Object.keys(i.Z.paymentSources).length ? e.handleClose() : e.handleStepChange(a.h8.REVIEW, {

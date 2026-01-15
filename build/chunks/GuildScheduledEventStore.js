@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -113,7 +113,7 @@ function P(e) {
   null == I[r][i] && (I[r][i] = {}), I[r][i][e.user_id] = e, t && D(e), n && (O += 1)
 }
 
-function R(e) {
+function w(e) {
   var t, n, r, i;
   let a = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     o = N(e.guild_scheduled_event_exception_id),
@@ -122,7 +122,7 @@ function R(e) {
   (s || !l) && (null == (i = I[e.guild_scheduled_event_id]) || null == (r = i[o]) || delete r[e.user_id], x(e), a && (O += 1))
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = N(t);
   null == T[e] && (T[e] = {}), T[e][r] = n
 }
@@ -131,14 +131,14 @@ function D(e) {
   var t, n;
   let r = N(e.guild_scheduled_event_exception_id),
     i = (null != (n = null == (t = T[e.guild_scheduled_event_id]) ? true : t[r]) ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? 1 : false);
-  w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
+  R(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
 }
 
 function x(e) {
   var t, n;
   let r = N(e.guild_scheduled_event_exception_id),
     i = (null != (n = null == (t = T[e.guild_scheduled_event_id]) ? true : t[r]) ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? false : 1);
-  w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
+  R(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
 }
 
 function L(e) {
@@ -205,7 +205,7 @@ function B(e) {
   if (null == n) returnfalse;
   let r = n.guild_scheduled_event_exceptions.findIndex(e => e.event_exception_id === t.event_exception_id),
     i = [...n.guild_scheduled_event_exceptions];
-  return r < 0 ? i.push(t) : i[r] = t, C(h(_({}, n), {
+  return r < 0 ? i.push(t) : i[r] = t, C(m(_({}, n), {
     guild_scheduled_event_exceptions: i
   })), true
 }
@@ -216,7 +216,7 @@ function V(e) {
   } = e, n = y.get(t.event_id);
   if (null == n) returnfalse;
   let r = n.guild_scheduled_event_exceptions.filter(e => e.event_exception_id !== t.event_exception_id);
-  return C(h(_({}, n), {
+  return C(m(_({}, n), {
     guild_scheduled_event_exceptions: r
   })), true
 }
@@ -225,7 +225,7 @@ function H(e) {
   let {
     eventId: t
   } = e, n = y.get(t);
-  return null != n && (C(h(_({}, n), {
+  return null != n && (C(m(_({}, n), {
     guild_scheduled_event_exceptions: []
   })), true)
 }
@@ -253,7 +253,7 @@ function K(e) {
     guildEventExceptionId: o,
     response: s
   } = e, l = N(o), c = null == (n = I[i]) || null == (t = n[l]) ? true : t[r];
-  null != c && R(c, false);
+  null != c && w(c, false);
   let d = u.ZP.getMember(a, r);
   return P({
     user_id: r,
@@ -271,7 +271,7 @@ function z(e) {
     guildEventExceptionId: r,
     response: i
   } = e;
-  R({
+  w({
     user_id: t,
     guild_scheduled_event_id: n,
     guild_scheduled_event_exception_id: r,
@@ -284,8 +284,8 @@ function q(e) {
     eventId: t,
     counts: n
   } = e;
-  w(t, null, n.eventCount), d.default.forEachKey(n.recurrenceCounts, e => {
-    w(t, e, n.eventCount - n.recurrenceCounts[e])
+  R(t, null, n.eventCount), d.default.forEachKey(n.recurrenceCounts, e => {
+    R(t, e, n.eventCount - n.recurrenceCounts[e])
   })
 }
 

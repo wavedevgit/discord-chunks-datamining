@@ -2,7 +2,7 @@
 /** chunk id: 622724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => m,
+  T: () => h,
   Z: () => _
 });
 var Chunk54381 = require("./54381.js");
@@ -25,17 +25,17 @@ function _(e) {
     color: s,
     onAction: d,
     location: _ = o.Z.CONTEXT_MENU,
-    appContext: m
-  } = e, h = (0, c.oV)(_), g = (0, i.e7)([u.default], () => u.default.getId() === t.id);
-  return !h || g || t.isNonUserBot() ? null : (0, r.jsx)(a.sNh, {
+    appContext: h
+  } = e, m = (0, c.oV)(_), g = (0, i.e7)([u.default], () => u.default.getId() === t.id);
+  return !m || g || t.isNonUserBot() ? null : (0, r.jsx)(a.sNh, {
     id: "report-user",
     color: s,
     label: p.intl.string(p.t.A1MM3D),
-    action: () => (0, l.pX)(t, n === f.ME ? true : n, d, m)
+    action: () => (0, l.pX)(t, n === f.ME ? true : n, d, h)
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     guildId: n,

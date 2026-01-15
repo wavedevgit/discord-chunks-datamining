@@ -92,7 +92,7 @@ let T = 16,
     red: Chunk343978.tooltipRed
   });
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = "left" === e || "right" === e,
     i = r ? "top" : "left",
     a = r ? "top" : "left",
@@ -103,7 +103,7 @@ function R(e, t, n) {
     [i]: "calc(".concat(s, " + ").concat(l, "px)")
   }
 }
-let w = e => {
+let R = e => {
     let {
       targetElementRef: t,
       align: n = "center",
@@ -116,14 +116,14 @@ let w = e => {
       tooltipContentClassName: f,
       spacing: p = A,
       animationStyle: _,
-      disableTooltipPointerEvents: m = false,
-      allowOverflow: h = false,
+      disableTooltipPointerEvents: h = false,
+      allowOverflow: m = false,
       tooltipPointerClassName: b,
       positionKeyStemOverride: O,
       dataMeticulousIgnore: v
     } = e, S = "".concat(null != O ? O : "string" == typeof o ? o : "", ":").concat(r);
     return (0, i.jsx)(g.W5, {
-      disablePointerEvents: m,
+      disablePointerEvents: h,
       targetRef: t,
       position: r,
       autoInvert: true,
@@ -139,19 +139,19 @@ let w = e => {
         return (0, i.jsxs)(c.animated.div, {
           onClick: l,
           className: s()(E.tooltip, P[null != t ? t : r], P[a], {
-            [E.tooltipDisablePointerEvents]: m
+            [E.tooltipDisablePointerEvents]: h
           }, u),
           style: y({}, _, d),
           "data-mtctest-ignore": v,
           children: [(0, i.jsx)("div", {
             className: s()(E.tooltipPointer, E.tooltipPointerBg, b),
-            style: R(null != t ? t : r, n, p)
+            style: w(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipPointer, b),
-            style: R(null != t ? t : r, n, p)
+            style: w(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipContent, {
-              [E.tooltipContentAllowOverflow]: h
+              [E.tooltipContentAllowOverflow]: m
             }, f),
             children: o
           })]
@@ -180,14 +180,14 @@ let w = e => {
     let {
       reducedMotion: s
     } = a.useContext(f.Sfi);
-    return (0, m.Yzy)(t, {
+    return (0, h.Yzy)(t, {
       keys: e => e ? "tooltip" : "empty",
       config: _.F,
       from: s.enabled ? x : D,
       enter: L,
       leave: s.enabled ? x : D,
       onRest: n
-    }, "animate-always")((e, t) => t ? (0, i.jsx)(w, y({
+    }, "animate-always")((e, t) => t ? (0, i.jsx)(R, y({
       "data-migration-pending": true,
       animationStyle: e,
       targetElementRef: r
@@ -265,8 +265,8 @@ class M extends(r = Chunk473749.Component) {
       allowOverflow: f,
       clickableOnMobile: p,
       hideOnClick: _,
-      tooltipPointerClassName: m,
-      dataMeticulousIgnore: h
+      tooltipPointerClassName: h,
+      dataMeticulousIgnore: m
     } = this.props, g = (u.tq || u.Em) && true === p && _, E = false !== c && !g || true === c, b = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, y = null;
     return y = e instanceof Function ? b ? e() : null : e, (0, i.jsx)(j, {
       disableTooltipPointerEvents: E,
@@ -274,7 +274,7 @@ class M extends(r = Chunk473749.Component) {
       tooltipStyle: s,
       tooltipClassName: o,
       tooltipContentClassName: l,
-      tooltipPointerClassName: m,
+      tooltipPointerClassName: h,
       align: t,
       position: n,
       color: r,
@@ -284,7 +284,7 @@ class M extends(r = Chunk473749.Component) {
       onNonAccessibleClick: g ? this.handleClick : true,
       allowOverflow: f,
       positionKeyStemOverride: this.props.positionKeyStemOverride,
-      dataMeticulousIgnore: h,
+      dataMeticulousIgnore: m,
       children: y
     })
   }
@@ -322,7 +322,7 @@ class M extends(r = Chunk473749.Component) {
     }), b(this, "handleMouseLeave", () => {
       (u.tq || u.Em) && true === this.props.clickableOnMobile || this.hide()
     }), b(this, "handleFocus", () => {
-      h.Z.keyboardModeEnabled && this.show()
+      m.Z.keyboardModeEnabled && this.show()
     }), b(this, "handleBlur", () => {
       this.hide()
     }), b(this, "handleClick", () => {

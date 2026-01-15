@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk143525 = require("./143525.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function b() {
     saturation: e,
     useReducedMotion: t,
     roleStyle: n,
-    highContrastMode: m,
+    highContrastMode: h,
     switchIconsEnabled: g
   } = (0, i.cj)([s.Z], () => ({
     saturation: s.Z.saturation,
@@ -103,14 +103,14 @@ function b() {
     children: (0, r.jsx)(a.S89, {
       id: "high-contrast",
       label: p.intl.string(p.t.aZlePv),
-      checked: m,
-      action: () => (0, o.vW)(m ? s.X.DEFAULT : s.X.HIGH)
+      checked: h,
+      action: () => (0, o.vW)(h ? s.X.DEFAULT : s.X.HIGH)
     })
   }, "high-contrast"), (0, r.jsx)(a.kSQ, {
     children: (0, r.jsx)(a.II_, {
       id: "input",
       label: p.intl.string(p.t["5PWWCY"]),
-      control: (t, n) => (0, r.jsx)(a._wy, E(h({}, t), {
+      control: (t, n) => (0, r.jsx)(a._wy, E(m({}, t), {
         ref: n,
         value: 100 * e,
         onChange: e => (0, o.o2)(e / 100),

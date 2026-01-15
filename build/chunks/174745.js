@@ -78,15 +78,15 @@ module.exports = function(e) {
       c = n.getDecorator();
     return i !== a || o !== s || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, s = e.customStyleFn, d = e.editorState, m = e.editorKey, h = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = p(d.getDirectionMap()), S = E.getBlocksAsArray(), I = [], T = null, C = null, A = 0; A < S.length; A++) {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, s = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = p(d.getDirectionMap()), S = E.getBlocksAsArray(), I = [], T = null, C = null, A = 0; A < S.length; A++) {
       var N = S[A],
         P = N.getKey(),
-        R = N.getType(),
-        w = n(N),
+        w = N.getType(),
+        R = n(N),
         D = true,
         x = true,
         L = true;
-      w && (D = w.component, x = w.props, L = w.editable);
+      R && (D = R.component, x = R.props, L = R.editable);
       var j = g || v.get(P),
         M = c.encode(P, 0, 0),
         k = {
@@ -100,24 +100,24 @@ module.exports = function(e) {
           direction: j,
           forceSelection: y,
           offsetKey: M,
-          preventScroll: h,
+          preventScroll: m,
           selection: b,
           tree: d.getBlockTree(P)
         },
-        U = t.get(R) || t.get("unstyled"),
+        U = t.get(w) || t.get("unstyled"),
         G = U.wrapper,
         Z = U.element || t.get("unstyled").element,
         F = N.getDepth(),
         B = "";
       if (r && (B = r(N)), "li" === Z) {
         var V = C !== G || null === T || F > T;
-        B = f(B, _(R, F, V, j))
+        B = f(B, _(w, F, V, j))
       }
       var H = D || l,
         Y = {
           className: B,
           "data-block": true,
-          "data-editor": m,
+          "data-editor": h,
           "data-offset-key": M,
           key: P
         };

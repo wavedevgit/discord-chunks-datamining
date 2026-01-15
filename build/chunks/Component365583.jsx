@@ -65,10 +65,10 @@ function S(e) {
     onAction: s,
     onClose: l,
     appContext: c
-  } = e, u = (0, h.Z)();
-  if (!(0, i.e7)([m.default], () => {
+  } = e, u = (0, m.Z)();
+  if (!(0, i.e7)([h.default], () => {
       var e;
-      return (null == (e = m.default.getCurrentUser()) ? true : e.id) === t.id
+      return (null == (e = h.default.getCurrentUser()) ? true : e.id) === t.id
     })) return null;
   let d = v({
     activity: n,

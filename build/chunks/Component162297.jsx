@@ -27,13 +27,13 @@ function _(e) {
     customInstallUrl: a.customInstallUrl,
     installParams: a.installParams,
     integrationTypesConfig: a.integrationTypesConfig
-  })) ? (0, r.jsx)(m, {
+  })) ? (0, r.jsx)(h, {
     application: a,
     message: n
   }) : null
 }
 
-function m(e) {
+function h(e) {
   let {
     application: t,
     message: n

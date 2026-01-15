@@ -22,13 +22,13 @@ function p(e) {
     profileOwner: n,
     isHighlighted: p,
     cardSize: _ = c.U.MEDIUM
-  } = e, m = t.collectiblesItem;
-  switch (m.type) {
+  } = e, h = t.collectiblesItem;
+  switch (h.type) {
     case i.Z.PROFILE_EFFECT:
       return (0, r.jsx)("div", {
         className: u.profileEffectPreview,
         children: (0, r.jsx)(l.Z, {
-          skuId: m.skuId,
+          skuId: h.skuId,
           isHighlighted: p,
           removeSetHeight: true
         })
@@ -37,7 +37,7 @@ function p(e) {
       return (0, r.jsx)("div", {
         className: u.avatarDecorationPreview,
         children: (0, r.jsx)(o.R, {
-          item: m,
+          item: h,
           user: n,
           isHighlighted: p,
           avatarSize: a.EFr.SIZE_80
@@ -50,7 +50,7 @@ function p(e) {
           className: u.nameplateTopLeft,
           children: (0, r.jsx)(s.Z, {
             user: n,
-            nameplate: m,
+            nameplate: h,
             isHighlighted: p,
             showPlaceholderUser: true,
             showStatus: true,
@@ -62,7 +62,7 @@ function p(e) {
           "aria-hidden": true,
           children: (0, r.jsx)(s.Z, {
             user: n,
-            nameplate: m,
+            nameplate: h,
             isHighlighted: p,
             showPlaceholderUser: true,
             showStatus: true,

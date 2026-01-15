@@ -48,7 +48,7 @@ let D = 512,
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, s = i.useRef(false), l = i.useRef(0), [F, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = h.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(false), l = i.useRef(0), [F, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(N.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -85,7 +85,7 @@ let D = 512,
         let t = q[e];
         if (null != t) {
           let e = z.findIndex(e => e.id === t.id);
-          h.Xn.setActiveCategoryIndex(e)
+          m.Xn.setActiveCategoryIndex(e)
         }
       },
       scrollOffset: k,
@@ -158,7 +158,7 @@ let D = 512,
             padding: 0
           });
         return (0, r.jsx)(E.Z, {
-          className: R.categoryHeader,
+          className: w.categoryHeader,
           icon: a,
           children: t.name
         }, e)
@@ -172,15 +172,15 @@ let D = 512,
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
-          className: o()(R.categorySection, {
-            [R.categorySectionLast]: n
+          className: o()(w.categorySection, {
+            [w.categorySectionLast]: n
           }),
           children: [t, 0 === a.length && (0, r.jsx)(c.Z, {
             message: P.intl.format(P.t.WoQXT6, {
               applicationName: i.name
             }),
-            noResultsImageURL: w,
-            className: R.noSearchResults
+            noResultsImageURL: R,
+            className: w.noSearchResults
           })]
         }, e)
       }, [q, Q]),
@@ -195,7 +195,7 @@ let D = 512,
           index: e,
           command: o,
           channel: n,
-          className: R.itemWrapper,
+          className: w.itemWrapper,
           selected: F === e,
           showImage: a.section.id !== o.applicationId,
           section: l,
@@ -205,16 +205,16 @@ let D = 512,
           }
         }, s)
       }, [n, Q, el, z, F]),
-      ef = (0, m.Dt)();
+      ef = (0, h.Dt)();
     return (0, p.KR)(ef, true, (0, f.DJ)(F)), i.useEffect(() => () => {
       (0, p.sJ)()
     }, []), (0, r.jsxs)(f.ZP, {
       id: ef,
-      className: R.outerWrapper,
-      innerClassName: R.wrapper,
+      className: w.outerWrapper,
+      innerClassName: w.wrapper,
       onMouseDown: B,
       children: [(0, r.jsx)(I.Z, {
-        className: R.rail,
+        className: w.rail,
         channel: n,
         sections: z,
         filteredSectionId: $,
@@ -223,7 +223,7 @@ let D = 512,
         applicationCommandListRef: H
       }), (0, r.jsx)(_.Z, {
         role: "listbox",
-        className: R.list,
+        className: w.list,
         listPadding: G,
         onScroll: er,
         renderRow: ed,

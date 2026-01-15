@@ -28,7 +28,7 @@ function d(e) {
 }
 
 function f() {
-  m()
+  h()
 }
 
 function p(e) {
@@ -45,11 +45,11 @@ function _(e) {
   l = new o.HF(t)
 }
 
-function m() {
+function h() {
   l = null
 }
 
-function h(e) {
+function m(e) {
   c = e.giftCode, u = e.skuId
 }
 
@@ -81,11 +81,11 @@ let O = new y(Chunk570140.Z, {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
   PREMIUM_PAYMENT_UPDATE_FAIL: d,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: f,
-  PREMIUM_PAYMENT_UPDATE_SUCCESS: m,
-  PREMIUM_PAYMENT_ERROR_CLEAR: m,
+  PREMIUM_PAYMENT_UPDATE_SUCCESS: h,
+  PREMIUM_PAYMENT_ERROR_CLEAR: h,
   BRAINTREE_TOKENIZE_PAYPAL_FAIL: p,
   BRAINTREE_TOKENIZE_VENMO_FAIL: _,
-  SKU_PURCHASE_SUCCESS: h,
+  SKU_PURCHASE_SUCCESS: m,
   SKU_PURCHASE_FAIL: E,
   SKU_PURCHASE_AWAIT_CONFIRMATION: b,
   GIFT_CODE_CREATE: g

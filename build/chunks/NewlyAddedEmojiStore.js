@@ -52,10 +52,10 @@ let p = {
     lastSeenNewlyAddedEmojiIds: {}
   },
   _ = p,
-  m = {};
+  h = {};
 
-function h() {
-  _ = p, m = {}
+function m() {
+  _ = p, h = {}
 }
 
 function g(e) {
@@ -63,12 +63,12 @@ function g(e) {
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null != (t = m[n]) ? t : _.lastSeenNewlyAddedEmojiIds[n];
-  null == i || 0 > l.default.compare(i.id, r) ? m[n] = {
+  } = e, i = null != (t = h[n]) ? t : _.lastSeenNewlyAddedEmojiIds[n];
+  null == i || 0 > l.default.compare(i.id, r) ? h[n] = {
     id: r,
     lastSeen: Date.now(),
     acknowledged: true
-  } : m[n] = f(u({}, i), {
+  } : h[n] = f(u({}, i), {
     acknowledged: true
   })
 }
@@ -78,8 +78,8 @@ function E(e) {
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null != (t = m[n]) ? t : _.lastSeenNewlyAddedEmojiIds[n];
-  (null == i || 0 > l.default.compare(i.id, r)) && (m[n] = {
+  } = e, i = null != (t = h[n]) ? t : _.lastSeenNewlyAddedEmojiIds[n];
+  (null == i || 0 > l.default.compare(i.id, r)) && (h[n] = {
     id: r,
     lastSeen: Date.now(),
     acknowledged: false
@@ -87,7 +87,7 @@ function E(e) {
 }
 
 function b() {
-  for (let e in m) _.lastSeenNewlyAddedEmojiIds[e] = m[e]
+  for (let e in h) _.lastSeenNewlyAddedEmojiIds[e] = h[e]
 }
 
 function y() {
@@ -129,7 +129,7 @@ c(O, "displayName", "NewlyAddedEmojiStore"), c(O, "persistKey", "NewlyAddedEmoji
   }
 }]);
 let v = new O(Chunk570140.Z, {
-  LOGOUT: h,
+  LOGOUT: m,
   NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
   NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
   NEWLY_ADDED_EMOJI_SEEN_UPDATED: b,

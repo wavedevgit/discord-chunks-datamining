@@ -17,7 +17,7 @@ function u(e) {
     channel: t,
     maxWidth: n
   } = e, u = (0, r.jsx)(o.ZP.Icon, {
-    icon: i.Dio,
+    icon: i.XSmallIcon,
     tooltip: c.intl.string(c.t.cpT0Cq),
     onClick: () => l.Z.toggleParticipantsList(t.id, false)
   });
@@ -29,7 +29,7 @@ function u(e) {
       toolbar: u,
       "aria-label": c.intl.string(c.t["jNqDh/"]),
       children: [(0, r.jsx)(o.ZP.Icon, {
-        icon: i.BFJ,
+        icon: i.GroupIcon,
         disabled: true,
         "aria-label": c.intl.string(c.t["jNqDh/"])
       }), (0, r.jsx)(o.ZP.Title, {

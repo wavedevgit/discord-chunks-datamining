@@ -81,8 +81,8 @@ let C = new Chunk710845.Z("PopoutWindowStore"),
   A = {},
   N = {},
   P = {},
-  R = {},
   w = {},
+  R = {},
   D = new Set,
   x = "app-mount",
   L = () => $.emitChange(),
@@ -109,7 +109,7 @@ function U(e) {
     y: t.screenY,
     width: t.innerWidth,
     height: t.innerHeight,
-    alwaysOnTop: !!m.isPlatformEmbedded && N[e]
+    alwaysOnTop: !!h.isPlatformEmbedded && N[e]
   })
 }
 
@@ -117,8 +117,8 @@ function G(e) {
   C.info("Unmounting popout window", e);
   let t = P[e];
   a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", L), t.removeEventListener("blur", L), t.removeEventListener("resize", j);
-  let n = R[e];
-  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete P[e], delete N[e], delete w[e], delete R[e]
+  let n = w[e];
+  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete P[e], delete N[e], delete R[e], delete w[e]
 }
 
 function Z(e, t, r) {
@@ -137,12 +137,12 @@ function F(e, t) {
 
 function B(e) {
   let t = P[e],
-    n = w[e];
+    n = R[e];
   if (null == t) return void C.warn("Failed to open window", e);
   let r = t.document;
   (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", j), M ? k(e, t) : F(e, t);
   let i = (0, l.createRoot)(r.getElementById(x));
-  a()(null != i, "No render target for popout!"), R[e] = i, i.render(n(e))
+  a()(null != i, "No render target for popout!"), w[e] = i, i.render(n(e))
 }
 
 function V(e) {
@@ -151,11 +151,11 @@ function V(e) {
     features: n,
     render: r
   } = e;
-  if (m.isPlatformEmbedded && !h.ZP.supportsFeature(b.eRX.POPOUT_WINDOWS)) throw Error("Popout windows not supported on this native module version!");
+  if (h.isPlatformEmbedded && !m.ZP.supportsFeature(b.eRX.POPOUT_WINDOWS)) throw Error("Popout windows not supported on this native module version!");
   let i = true === n.outOfProcessOverlay,
     a = P[t],
     o = null != a && !a.closed;
-  if (o && !i) return m.isPlatformEmbedded ? h.ZP.focus(t) : null != a && a.focus(), false;
+  if (o && !i) return h.isPlatformEmbedded ? m.ZP.focus(t) : null != a && a.focus(), false;
   if (o && i) return C.info("Already has open window, skipping focus"), false;
   let {
     defaultWidth: s,
@@ -195,11 +195,11 @@ function V(e) {
         totalWindowCount: Object.keys(P).length,
         features: d,
         encodedFeatures: y,
-        isPlatformEmbedded: m.isPlatformEmbedded
+        isPlatformEmbedded: h.isPlatformEmbedded
       }
     }), e
   }
-  i ? C.verbose("Opening out of process overlay window", t) : null == v || v.focus(), P[t] = v, w[t] = r, m.isPlatformEmbedded && (h.ZP.setAlwaysOnTop(t, _), N[t] = _, h.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), D.add(t)
+  i ? C.verbose("Opening out of process overlay window", t) : null == v || v.focus(), P[t] = v, R[t] = r, h.isPlatformEmbedded && (m.ZP.setAlwaysOnTop(t, _), N[t] = _, m.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), D.add(t)
 }
 
 function H(e) {
@@ -254,7 +254,7 @@ function Q(e) {
     key: t,
     alwaysOnTop: n
   } = e;
-  m.isPlatformEmbedded && (h.ZP.setAlwaysOnTop(t, n), N[t] = n, h.ZP.isAlwaysOnTop(t).then(e => N[t] = e))
+  h.isPlatformEmbedded && (m.ZP.setAlwaysOnTop(t, n), N[t] = n, m.ZP.isAlwaysOnTop(t).then(e => N[t] = e))
 }
 
 function X(e) {
@@ -298,7 +298,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     return A
   }
   isWindowFullyInitialized(e) {
-    return null != P[e] && null != R[e] && null != w[e]
+    return null != P[e] && null != w[e] && null != R[e]
   }
   isWindowFullScreen(e) {
     var t, n;

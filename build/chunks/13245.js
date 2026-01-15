@@ -122,7 +122,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
     },
     setInstanceLocked(e) {
       if (!__OVERLAY__) return void v.error("Attempting to start an overlay session outside of the overlay context");
-      S.setInputLocked(e, (0, m.getPID)())
+      S.setInputLocked(e, (0, h.getPID)())
     },
     setEnabled(e, t) {
       i.Z.dispatch({
@@ -268,7 +268,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       })
     },
     setPinChat(e) {
-      let t = m.OVERLAY_LAYOUT_ID,
+      let t = h.OVERLAY_LAYOUT_ID,
         n = d.Z.getWidgetsForLayout(t),
         i = d.Z.getWidgetConfig(g.Odu.GUILDS),
         a = d.Z.getWidgetConfig(g.Odu.TEXT),
@@ -313,13 +313,13 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
           } = e;
           switch (t) {
             case g.Odu.TEXT:
-              E = (0, _.w_)(i, f), (0, h.E9)(n);
+              E = (0, _.w_)(i, f), (0, m.E9)(n);
               break;
             case g.Odu.GUILDS:
-              y = (0, _.vS)(r, i, f), v = (0, _.w_)(i, f), (0, h.E9)(n);
+              y = (0, _.vS)(r, i, f), v = (0, _.w_)(i, f), (0, m.E9)(n);
               break;
             case g.Odu.GUILDS_TEXT:
-              S = (0, _.vS)(r, i, f), I = (0, _.w_)(i, f), (0, h.E9)(n)
+              S = (0, _.vS)(r, i, f), I = (0, _.w_)(i, f), (0, m.E9)(n)
           }
         }), e) {
         let e = "auto" === I.width ? l.minSize.width : I.width;
@@ -333,7 +333,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
           y: 10
         }), s = d.Z.getWidgetDefaultSettings(g.Odu.TEXT);
         if (null == s) throw Error("OverlayActionCreators.setPinChat: No config for TEXT exists");
-        (0, h.A4)(O(b({}, s), {
+        (0, m.A4)(O(b({}, s), {
           type: g.Odu.TEXT,
           id: (0, r.Z)(),
           size: o,
@@ -342,7 +342,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
         }));
         let u = d.Z.getWidgetDefaultSettings(g.Odu.GUILDS);
         if (null == u) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS exists");
-        (0, h.A4)(O(b({}, u), {
+        (0, m.A4)(O(b({}, u), {
           type: g.Odu.GUILDS,
           id: (0, r.Z)(),
           size: i,
@@ -357,7 +357,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
           width: e
         }, f), a = d.Z.getWidgetDefaultSettings(g.Odu.GUILDS_TEXT);
         if (null == a) throw Error("OverlayActionCreators.setPinChat: No config for GUILDS_TEXT exists");
-        (0, h.A4)(O(b({}, a), {
+        (0, m.A4)(O(b({}, a), {
           type: g.Odu.GUILDS_TEXT,
           id: (0, r.Z)(),
           layoutId: t,
@@ -367,7 +367,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       }
     },
     resetDefaultLayout(e, t) {
-      null != d.Z.getLayout(e) && ((0, h.sz)(e), (0, h.jx)(d.Z.getDefaultLayout(e, t)))
+      null != d.Z.getLayout(e) && ((0, m.sz)(e), (0, m.jx)(d.Z.getDefaultLayout(e, t)))
     },
     setClickZones(e) {
       i.Z.dispatch({

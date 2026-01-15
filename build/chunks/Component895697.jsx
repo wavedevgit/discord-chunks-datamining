@@ -37,10 +37,10 @@ function A(e) {
     displayProfile: A,
     guild: N,
     isHoveringOrFocusing: P,
-    onOpenProfile: R,
-    channelId: w,
+    onOpenProfile: w,
+    channelId: R,
     onClose: D
-  } = e, x = c.ZP.getName(null == N ? true : N.id, w, t), L = (0, i.e7)([u.Z], () => {
+  } = e, x = c.ZP.getName(null == N ? true : N.id, R, t), L = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
   }), j = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), M = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
@@ -49,10 +49,10 @@ function A(e) {
     className: C.body,
     children: [(0, r.jsx)(p.Z, {
       userId: t.id
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(m.Z, {
       user: t,
       guildId: null == N ? true : N.id,
-      onOpenProfile: R,
+      onOpenProfile: w,
       nickname: x,
       pronouns: null == A ? true : A.pronouns,
       tags: (0, r.jsx)(f.Z, {
@@ -63,11 +63,11 @@ function A(e) {
       nicknameIcons: M ? null : (0, r.jsx)(b.Z, {
         userId: t.id,
         isVisible: P,
-        onOpenProfile: R
+        onOpenProfile: w
       })
     }), (0, r.jsx)(v.Z, {
       user: t,
-      onOpenProfile: e => null == R ? true : R({
+      onOpenProfile: e => null == w ? true : w({
         tabSection: e
       })
     }), (0, r.jsxs)("div", {
@@ -86,11 +86,11 @@ function A(e) {
       bio: null == A ? true : A.bio,
       hidePersonalInformation: M,
       onClose: D
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(h.Z, {
       user: t,
       currentUser: n,
       guildId: null == N ? true : N.id,
-      onOpenUserProfileModal: R,
+      onOpenUserProfileModal: w,
       onClose: D
     }), (null == L ? true : L.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(d.Z, {
       applicationId: L.id,

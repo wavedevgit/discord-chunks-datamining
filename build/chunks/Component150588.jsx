@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ let D = (0, Chunk853590.animated)(Chunk481060.CJ0),
       isQuestExpired: n,
       quest: a,
       location: N,
-      size: R,
+      size: w,
       expansionSpring: x,
       isAnimating: L,
       isExpanded: j,
@@ -89,7 +89,7 @@ let D = (0, Chunk853590.animated)(Chunk481060.CJ0),
     } = (0, d.ZP)(), [B, V] = i.useState(null), [H, Y] = i.useState(null), W = (0, p.Z)(e => {
       let t = e.target;
       V(t.offsetWidth), Y(t.scrollWidth)
-    }), K = (0, f.y)(W), z = (0, S.uq)(N), q = N === m.jn.QUESTS_EMBED, Q = (0, h.t5)(a, I.dr.QUESTS_CARD, N, G), X = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, _.O5)(), $ = (0, g.B6)(a.config.expiresAt), ee = (0, g.B6)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
+    }), K = (0, f.y)(W), z = (0, S.uq)(N), q = N === h.jn.QUESTS_EMBED, Q = (0, m.t5)(a, I.dr.QUESTS_CARD, N, G), X = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, _.O5)(), $ = (0, g.B6)(a.config.expiresAt), ee = (0, g.B6)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
       e.stopPropagation(), e.currentTarget.blur(), U(), J({
         questId: a.id,
         questContent: N,
@@ -110,7 +110,7 @@ let D = (0, Chunk853590.animated)(Chunk481060.CJ0),
       className: o()(A.outerContainer, {
         [A.outerContainerGiftInventory]: z,
         [A.outerContainerEmbed]: q,
-        [A.outerContainerXs]: "xs" === R
+        [A.outerContainerXs]: "xs" === w
       }),
       "aria-label": C.intl.string(C.t.dcl9MQ),
       style: {
@@ -203,7 +203,7 @@ let D = (0, Chunk853590.animated)(Chunk481060.CJ0),
                   shouldShow: er(),
                   children: (0, r.jsx)(u.Heading, {
                     ref: K,
-                    variant: "lg" === R ? "heading-xxl/bold" : "sm" === R ? "heading-xl/bold" : "heading-lg/bold",
+                    variant: "lg" === w ? "heading-xxl/bold" : "sm" === w ? "heading-xl/bold" : "heading-lg/bold",
                     className: A.heading,
                     color: "always-white",
                     children: C.intl.format(C.t.EAYZAr, {
@@ -246,7 +246,7 @@ let D = (0, Chunk853590.animated)(Chunk481060.CJ0),
                 visibility: L || j ? "inherit" : "hidden"
               },
               "aria-hidden": !L && !j,
-              children: (0, r.jsx)(u.P3F, w(P({}, e), {
+              children: (0, r.jsx)(u.P3F, R(P({}, e), {
                 className: A.iconWrapper,
                 "aria-label": C.intl.string(C.t.DEoVWZ),
                 children: (0, r.jsx)(u.xhG, {

@@ -2,7 +2,7 @@
 /** chunk id: 238649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,23 +31,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk466127 = require("./466127.js");
-let R = (e, t) => {
+let w = (e, t) => {
     let {
       className: n,
       subscriptionTier: i,
       isEligibleForBogoPromotion: a,
-      offerExpiresAt: R
+      offerExpiresAt: w
     } = e, {
-      analyticsLocations: w
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, v.$)(), x = (0, m.Z)(), L = null != x, j = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
+      analyticsLocations: R
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, v.$)(), x = (0, h.Z)(), L = null != x, j = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
       visibilityPercentageRef: M,
       visibilityPercentage: k
-    } = (0, I.E)(!j), U = (0, l.e7)([p.Z], () => p.Z.affinities), G = !L && U.length > 0, Z = (0, h.H)(s.I.MARKETING_PAGE_BANNER), F = null != Z && "marketingPageBanner" === Z.properties.properties.oneofKind, B = (0, _.Nx)() && !F;
+    } = (0, I.E)(!j), U = (0, l.e7)([p.Z], () => p.Z.affinities), G = !L && U.length > 0, Z = (0, m.H)(s.I.MARKETING_PAGE_BANNER), F = null != Z && "marketingPageBanner" === Z.properties.properties.oneofKind, B = (0, _.Nx)() && !F;
     return (0, r.jsx)(f.Gt, {
-      value: w,
+      value: R,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: o()(P.container, null != R && P.containerWithOfferCountdown, n),
+        className: o()(P.container, null != w && P.containerWithOfferCountdown, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
           ref: M,
@@ -55,8 +55,8 @@ let R = (e, t) => {
             className: P.contentContainer,
             children: [(0, r.jsx)(C.Z, {
               containerVisibilityPercentage: k
-            }), B && (null != R ? (0, r.jsx)(y.Z, {
-              expiresAt: R,
+            }), B && (null != w ? (0, r.jsx)(y.Z, {
+              expiresAt: w,
               className: P.heroOfferCountdown
             }) : (0, r.jsx)("div", {
               className: P.offerPillContainer,
@@ -118,4 +118,4 @@ let R = (e, t) => {
       })
     })
   },
-  w = Chunk473749.memo(Chunk473749.forwardRef(R))
+  R = Chunk473749.memo(Chunk473749.forwardRef(w))

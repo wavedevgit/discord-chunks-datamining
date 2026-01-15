@@ -2,14 +2,14 @@
 /** chunk id: 584825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GG: () => h,
+  GG: () => m,
   HQ: () => O,
   JH: () => I,
   QV: () => S,
   YB: () => v,
   _1: () => y,
   _k: () => _,
-  jO: () => m,
+  jO: () => h,
   oC: () => T,
   qi: () => g,
   r4: () => b,
@@ -63,8 +63,8 @@ let f = [],
       return i
     }, [e, t, n])
   },
-  m = e => (0, i.e7)([u.Z], () => null != e ? u.Z.getSubscriptionListing(e) : null),
-  h = e => {
+  h = e => (0, i.e7)([u.Z], () => null != e ? u.Z.getSubscriptionListing(e) : null),
+  m = e => {
     let t = (0, l.f)("useGroupListingsForGuild");
     return (0, i.e7)([u.Z], () => null != e && t ? u.Z.getSubscriptionGroupListingsForGuild(e) : f)
   },

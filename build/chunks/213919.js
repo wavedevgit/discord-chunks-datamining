@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  encryptAndStoreTokens: () => R,
+  encryptAndStoreTokens: () => w,
   getAnalyticsToken: () => O,
   getToken: () => v,
   hideToken: () => C,
@@ -31,11 +31,11 @@ null != d && (u = d.safeStorage);
 let f = false,
   p = {},
   _ = {},
-  m = false,
-  h = false;
+  h = false,
+  m = false;
 
 function g() {
-  if (m) {
+  if (h) {
     a.K.remove(o.B1), a.K.remove(o.XM);
     return
   }
@@ -60,7 +60,7 @@ function b(e) {
 }
 
 function y() {
-  if (h) return;
+  if (m) return;
   i = a.K.get(o.B1), _ = a.K.get(o.XM) || {};
   let {
     decryptedToken: e,
@@ -75,7 +75,7 @@ function y() {
   }).filter(e => {
     let [t, n] = e;
     return null != n
-  })), h = true
+  })), m = true
 }
 
 function O() {
@@ -97,15 +97,15 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  null != t && (p[t] = e), f ? R() : (i = r, _ = p, g())
+  null != t && (p[t] = e), f ? w() : (i = r, _ = p, g())
 }
 
 function C() {
-  m || (m = true, g())
+  h || (h = true, g())
 }
 
 function A() {
-  m && (m = false, g())
+  h && (h = false, g())
 }
 
 function N(e) {
@@ -117,7 +117,7 @@ function P() {
   return N(l)
 }
 
-function R() {
+function w() {
   (null == u ? true : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), _ = c(Object.entries(p).map(e => {
     let [t, n] = e;
     return [t, b(n)]

@@ -22,8 +22,8 @@ let _ = function(e) {
     interval: n = f.rV.MONTH,
     className: i,
     isGift: _ = false,
-    variant: m,
-    priceOptions: h,
+    variant: h,
+    priceOptions: m,
     isApplicationHome: g,
     enablePremiumBrandRefresh: E
   } = e, b = (0, o.e7)([u.Z], () => u.Z.isLoadedForSKUs([t])), y = (0, s.ap)((0, c.ZP)());
@@ -32,7 +32,7 @@ let _ = function(e) {
     className: p.priceSpinner
   });
   let O = u.Z.getForSkuAndInterval((0, d.Wz)(t), n),
-    v = null != O ? (0, d.gy)(O, h, false, _) : null;
+    v = null != O ? (0, d.gy)(O, m, false, _) : null;
   if (E) {
     let e = n === f.rV.YEAR,
       t = e ? "text-muted" : y ? "text-strong" : "always-white";
@@ -54,7 +54,7 @@ let _ = function(e) {
   }
   return (0, r.jsx)(l.Heading, {
     color: g ? "none" : "always-white",
-    variant: null != m ? m : "heading-md/medium",
+    variant: null != h ? h : "heading-md/medium",
     className: a()(p.pricePerInterval, i),
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {

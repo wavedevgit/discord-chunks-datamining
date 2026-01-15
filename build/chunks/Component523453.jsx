@@ -59,7 +59,7 @@ function b(e) {
   if (null == y || null == O && null == v || null == S || I) return null;
   let A = y.attachments.find(e => {
       var t;
-      return (0, a.yE)(null != (t = e.flags) ? t : 0, m.J0y.IS_CLIP)
+      return (0, a.yE)(null != (t = e.flags) ? t : 0, h.J0y.IS_CLIP)
     }),
     N = null;
   if ((null == A ? true : A.proxy_url) != null) {
@@ -82,10 +82,10 @@ function b(e) {
       }), (0, r.jsx)(s.zxk, {
         size: "sm",
         onClick: C,
-        text: h.intl.string(h.t["5qb8EX"]),
+        text: m.intl.string(m.t["5qb8EX"]),
         icon: l.n$P
       })]
     }),
-    children: h.intl.string(h.t.ThhsNG)
+    children: m.intl.string(m.t.ThhsNG)
   })
 }

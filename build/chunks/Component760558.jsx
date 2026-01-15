@@ -32,11 +32,11 @@ let S = e => {
     intent: S,
     transitionState: I,
     onClose: T
-  } = e, C = (0, m.vx)(p.Z.boostSlots);
+  } = e, C = (0, h.vx)(p.Z.boostSlots);
   o()(null != t || null != n, "Must either provide slots or an initial selected guild"), o()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
   let A = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
     [N, P] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
-    [R, w] = i.useState(A[0]),
+    [w, R] = i.useState(A[0]),
     [D, x] = i.useState(false),
     [L, j] = i.useState(n),
     [M, k] = i.useState(null != t ? t : C.slice(0, 1)),
@@ -50,7 +50,7 @@ let S = e => {
       var e;
       return (null == M || null == (e = M[0]) ? true : e.premiumGuildSubscription) != null
     }, [M]),
-    Z = () => (T("SUCCESS" === R), _.default.track(b.rMx.MODAL_DISMISSED, {
+    Z = () => (T("SUCCESS" === w), _.default.track(b.rMx.MODAL_DISMISSED, {
       type: b.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     }), Promise.resolve()),
@@ -67,7 +67,7 @@ let S = e => {
         }, {
           variant: "primary",
           text: O.intl.string(O.t["/uwYda"]),
-          onClick: () => w("CONFIRM")
+          onClick: () => R("CONFIRM")
         }],
         children: (0, r.jsxs)("div", {
           className: v.quantitySelectorBody,
@@ -93,7 +93,7 @@ let S = e => {
       GUILD_SELECT: () => (0, r.jsx)(g.default, {
         onClose: Z,
         onSelectGuild: e => {
-          j(e), w("CONFIRM")
+          j(e), R("CONFIRM")
         },
         transitionState: I,
         isTransfer: G,
@@ -101,10 +101,10 @@ let S = e => {
       }),
       CONFIRM() {
         if (null == L) return null;
-        let e = M.filter(e => (0, m.tl)(e)).length,
+        let e = M.filter(e => (0, h.tl)(e)).length,
           t = M.length,
           n = U.length,
-          i = "CONFIRM" === A[0] ? Z : () => w(A[A.indexOf(R) - 1]),
+          i = "CONFIRM" === A[0] ? Z : () => R(A[A.indexOf(w) - 1]),
           a = async () => {
             if (x(false), null != L && (null == M ? true : M.length) !== 0) {
               o()(!M.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
@@ -119,7 +119,7 @@ let S = e => {
                     id: t
                   } = e;
                   return t
-                }), S === y.P2.PERK), w("SUCCESS")
+                }), S === y.P2.PERK), R("SUCCESS")
               } catch (e) {
                 x(true)
               }
@@ -145,7 +145,7 @@ let S = e => {
             loading: N,
             disabled: N
           }],
-          children: G ? (0, r.jsx)(h.Z.TransferBody, {
+          children: G ? (0, r.jsx)(m.Z.TransferBody, {
             fromGuilds: U,
             toGuild: L,
             blurb: O.intl.formatToPlainString(O.t.SSA2lu, {
@@ -156,7 +156,7 @@ let S = e => {
             error: D ? P : null,
             slotCount: t,
             canceledCount: e
-          }) : (0, r.jsx)(h.Z.ApplyBody, {
+          }) : (0, r.jsx)(m.Z.ApplyBody, {
             guild: L,
             blurb: O.intl.string(O.t.yTlZV0),
             warning: O.intl.formatToPlainString(O.t.KPnDlu, {
@@ -194,6 +194,6 @@ let S = e => {
       location_section: a
     })
   }, [a]);
-  let B = F[R];
+  let B = F[w];
   return null == B ? null : B()
 }

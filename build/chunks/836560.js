@@ -62,7 +62,7 @@ function p(e, t, n) {
   var r = e._events;
   if (true === r) return [];
   var i = r[t];
-  return true === i ? [] : "function" == typeof i ? n ? [i.listener || i] : [i] : n ? g(i) : m(i, i.length)
+  return true === i ? [] : "function" == typeof i ? n ? [i.listener || i] : [i] : n ? g(i) : h(i, i.length)
 }
 
 function _(e) {
@@ -75,12 +75,12 @@ function _(e) {
   return 0
 }
 
-function m(e, t) {
+function h(e, t) {
   for (var n = Array(t), r = 0; r < t; ++r) n[r] = e[r];
   return n
 }
 
-function h(e, t) {
+function m(e, t) {
   for (; t + 1 < e.length; t++) e[t] = e[t + 1];
   e.pop()
 }
@@ -149,7 +149,7 @@ Object.defineProperty(o, "defaultMaxListeners", {
   if (true === l) returnfalse;
   if ("function" == typeof l) r(l, this, t);
   else
-    for (var c = l.length, u = m(l, c), n = 0; n < c; ++n) r(u[n], this, t);
+    for (var c = l.length, u = h(l, c), n = 0; n < c; ++n) r(u[n], this, t);
   returntrue
 }, o.prototype.addListener = function(e, t) {
   return u(this, e, t, false)
@@ -169,7 +169,7 @@ Object.defineProperty(o, "defaultMaxListeners", {
         o = n[a].listener, i = a;
         break
       } if (i < 0) return this;
-    0 === i ? n.shift() : h(n, i), 1 === n.length && (r[e] = n[0]), true !== r.removeListener && this.emit("removeListener", e, o || t)
+    0 === i ? n.shift() : m(n, i), 1 === n.length && (r[e] = n[0]), true !== r.removeListener && this.emit("removeListener", e, o || t)
   }
   return this
 }, o.prototype.off = o.prototype.removeListener, o.prototype.removeAllListeners = function(e) {

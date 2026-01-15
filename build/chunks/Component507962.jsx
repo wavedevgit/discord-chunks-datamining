@@ -21,19 +21,19 @@ function s(e) {
     } = e,
     p = (0, i.ZP)(s),
     _ = p.nick,
-    m = l(p),
-    h = (0, i.Sw)(c, f);
-  if (null != h && null != u) {
-    let e = u(h);
+    h = l(p),
+    m = (0, i.Sw)(c, f);
+  if (null != m && null != u) {
+    let e = u(m);
     t = o.intl.format(o.t.L2FyVq, {
       username: _,
-      usernameHook: m,
-      otherUsername: h.nick,
+      usernameHook: h,
+      otherUsername: m.nick,
       otherUsernameHook: e
     })
   } else t = o.intl.format(o.t["5v2xa8"], {
     username: _,
-    usernameHook: m
+    usernameHook: h
   });
   return (0, r.jsx)(a.Z, {
     icon: n(474019),

@@ -53,13 +53,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -97,9 +97,9 @@ function b(e) {
     children: t,
     className: n,
     minor: i = false
-  } = e, o = h(e, ["children", "className", "minor"]);
+  } = e, o = m(e, ["children", "className", "minor"]);
   return (0, r.jsx)(s.tEY, {
-    children: (0, r.jsx)("button", m(p({
+    children: (0, r.jsx)("button", h(p({
       className: a()(d.button, n, {
         [d.buttonMinor]: i
       })
@@ -132,8 +132,8 @@ function S(e) {
   var {
     children: t,
     noticeType: n
-  } = e, i = h(e, ["children", "noticeType"]);
-  return (0, r.jsx)(b, m(p({}, i), {
+  } = e, i = m(e, ["children", "noticeType"]);
+  return (0, r.jsx)(b, h(p({}, i), {
     onClick: e => {
       null != i.onClick && i.onClick(e), y(n)
     },
@@ -146,8 +146,8 @@ function I(e) {
     children: t,
     href: n,
     noticeType: i
-  } = e, a = h(e, ["children", "href", "noticeType"]);
-  return (0, r.jsx)(s.eee, m(p({}, a), {
+  } = e, a = m(e, ["children", "href", "noticeType"]);
+  return (0, r.jsx)(s.eee, h(p({}, a), {
     className: d.button,
     href: n,
     onClick: e => {

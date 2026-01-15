@@ -23,10 +23,10 @@ function d(e, t, n) {
 let f = "GameLibraryViewStore",
   p = 200,
   _ = Chunk981631.sHY.ASCENDING,
-  m = Chunk981631.iEv.LAST_PLAYED,
-  h = false,
+  h = Chunk981631.iEv.LAST_PLAYED,
+  m = false,
   g = o().debounce(() => {
-    h = false, O.emitChange()
+    m = false, O.emitChange()
   }, p);
 
 function E(e) {
@@ -34,7 +34,7 @@ function E(e) {
     key: t,
     isKeyboardEvent: n
   } = e;
-  n && (h = true, g()), r = t
+  n && (m = true, g()), r = t
 }
 
 function b(e) {
@@ -42,28 +42,28 @@ function b(e) {
     direction: t,
     key: n
   } = e;
-  _ = t, m = n, l.K.set(f, {
+  _ = t, h = n, l.K.set(f, {
     sortDirection: _,
-    sortKey: m
+    sortKey: h
   })
 }
 class y extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e;
     let t = null != (e = l.K.get(f)) ? e : {};
-    null != t.sortDirection && null != t.sortKey && (_ = t.sortDirection, m = t.sortKey)
+    null != t.sortDirection && null != t.sortKey && (_ = t.sortDirection, h = t.sortKey)
   }
   get sortDirection() {
     return _
   }
   get sortKey() {
-    return m
+    return h
   }
   get activeRowKey() {
     return r
   }
   get isNavigatingByKeyboard() {
-    return h
+    return m
   }
 }
 d(y, "displayName", "GameLibraryViewStore");

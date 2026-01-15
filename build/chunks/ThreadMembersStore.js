@@ -42,12 +42,12 @@ function _(e) {
   f = a().omitBy(f, t => t.parentId === e)
 }
 
-function m(e) {
+function h(e) {
   var t;
   null == (t = e.threads) || t.forEach(g)
 }
 
-function h(e) {
+function m(e) {
   if (!(e.id in f)) {
     var t, n;
     f[e.id] = {
@@ -62,12 +62,12 @@ function h(e) {
 
 function g(e) {
   if (!l.AW.has(e.type)) returnfalse;
-  let t = h(e);
+  let t = m(e);
   null != e.memberCount && (t.memberCount = e.memberCount), null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview)
 }
 
 function E(e) {
-  f = {}, e.guilds.forEach(m)
+  f = {}, e.guilds.forEach(h)
 }
 
 function b(e) {
@@ -81,7 +81,7 @@ function y(e) {
   let {
     guild: t
   } = e;
-  m(t)
+  h(t)
 }
 
 function O(e) {
@@ -159,12 +159,12 @@ function P(e) {
   returnfalse
 }
 
-function R(e) {
+function w(e) {
   let t = f[e.id];
   if (null == t) returnfalse;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
@@ -180,8 +180,8 @@ class w extends(r = Chunk442837.ZP.Store) {
     return f
   }
 }
-u(w, "displayName", "ThreadMembersStore");
-let D = new w(Chunk570140.Z, {
+u(R, "displayName", "ThreadMembersStore");
+let D = new R(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: b,
   GUILD_CREATE: y,
@@ -190,7 +190,7 @@ let D = new w(Chunk570140.Z, {
   THREAD_CREATE: v,
   THREAD_UPDATE: v,
   THREAD_LIST_SYNC: S,
-  THREAD_MEMBERS_UPDATE: R,
+  THREAD_MEMBERS_UPDATE: w,
   SEARCH_MESSAGES_SUCCESS: N,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
   LOAD_THREADS_SUCCESS: I,

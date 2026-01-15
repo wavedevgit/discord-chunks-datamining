@@ -26,13 +26,13 @@ function d(e, t, n, r) {
   for (let s = 0; s < Math.ceil(n.MPEntry.value.length / c); s++) {
     a[s] = {};
     let l = f(n.MPEntry.value, s * c, i.Z.getTypeSize("LONG"), r);
-    a[s].ImageFlags = p(l), a[s].ImageFormat = _(l), a[s].ImageType = m(l);
+    a[s].ImageFlags = p(l), a[s].ImageFormat = _(l), a[s].ImageType = h(l);
     let u = f(n.MPEntry.value, s * c + 4, i.Z.getTypeSize("LONG"), r);
     a[s].ImageSize = {
       value: u,
       description: "" + u
     };
-    let d = h(s, n.MPEntry, r, t);
+    let d = m(s, n.MPEntry, r, t);
     a[s].ImageOffset = {
       value: d,
       description: "" + d
@@ -81,7 +81,7 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let t = 0xffffff & e;
   return {
     value: t,
@@ -97,7 +97,7 @@ function m(e) {
   }
 }
 
-function h(e, t, n, r) {
+function m(e, t, n, r) {
   return g(e) ? 0 : f(t.value, e * c + 8, i.Z.getTypeSize("LONG"), n) + r
 }
 

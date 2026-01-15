@@ -57,7 +57,7 @@ function p(e) {
     usernameHook: n,
     onClickPins: c,
     compact: d
-  } = e, p = (0, o.ZP)(t), _ = p.nick, m = n(p), h = () => {
+  } = e, p = (0, o.ZP)(t), _ = p.nick, h = n(p), m = () => {
     if (null == t.messageReference) return;
     let {
       channel_id: e,
@@ -69,19 +69,19 @@ function p(e) {
       flash: true
     })
   }, g = () => null != t.messageReference ? null == c ? l.intl.format(l.t.lD5tup, {
-    usernameHook: m,
+    usernameHook: h,
     username: _,
-    messageOnClick: h
+    messageOnClick: m
   }) : l.intl.format(l.t.yIDvPL, {
-    usernameHook: m,
+    usernameHook: h,
     username: _,
     pinsActionOnClick: c,
-    messageOnClick: h
+    messageOnClick: m
   }) : null == c ? l.intl.format(l.t.vfkjqx, {
-    usernameHook: m,
+    usernameHook: h,
     username: _
   }) : l.intl.format(l.t.R7vZGZ, {
-    usernameHook: m,
+    usernameHook: h,
     username: _,
     pinsActionOnClick: c
   }), E = {

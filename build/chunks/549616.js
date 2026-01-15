@@ -2,7 +2,7 @@
 /** chunk id: 549616, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js");
 var Chunk979554 = require("./979554.js"),
   Chunk884697 = require("./884697.js"),
@@ -67,7 +67,7 @@ function p(e, t) {
   return i
 }
 let _ = e => e === r.Z.VARIANTS_GROUP || e === r.Z.EXTERNAL_SKU;
-class m extends Chunk803358.Z {
+class h extends Chunk803358.Z {
   static fromServer(e) {
     var {
       products: t,
@@ -78,7 +78,7 @@ class m extends Chunk803358.Z {
       hero_banner_animated_url: l,
       hero_rive_url: u,
       hero_logo_url: p,
-      catalog_banner_url: h,
+      catalog_banner_url: m,
       catalog_banner_animated_url: g,
       catalog_banner_rive_url: E,
       featured_block_url: b,
@@ -87,7 +87,7 @@ class m extends Chunk803358.Z {
       mobile_banner_url: v,
       mobile_bg_url: S
     } = e, I = f(e, ["products", "hero_ranking", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "catalog_banner_rive_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
-    return new m(d(c({}, super.fromServer(I)), {
+    return new h(d(c({}, super.fromServer(I)), {
       products: t.reduce((e, t) => {
         let n = o.Z.fromServer(t);
         return (_(n.type) || 0 !== n.items.length) && e.push(n), e
@@ -97,7 +97,7 @@ class m extends Chunk803358.Z {
       heroBannerAnimatedUrl: l,
       heroRiveUrl: u,
       heroLogoUrl: p,
-      catalogBannerUrl: h,
+      catalogBannerUrl: m,
       catalogBannerAnimatedUrl: g,
       catalogBannerRiveUrl: E,
       featuredBlockUrl: b,

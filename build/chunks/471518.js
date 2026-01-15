@@ -8,7 +8,7 @@ require.d(exports, {
   g5: () => x,
   gZ: () => C,
   i6: () => A,
-  yC: () => R
+  yC: () => w
 }), require("./388685.js");
 var Chunk261470 = require("./261470.js"),
   Chunk535655 = require("./535655.js"),
@@ -173,7 +173,7 @@ async function P(e) {
     }
   }
 }
-async function R(e) {
+async function w(e) {
   var t;
   let {
     query: n,
@@ -186,11 +186,11 @@ async function R(e) {
     categoryId: f,
     integrationType: p,
     minUserInstallCommandCount: _,
-    excludeAppsWithCustomInstallUrl: m,
+    excludeAppsWithCustomInstallUrl: h,
     excludeNonEmbeddedApps: g,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
     source: y = s.F.APP_DIRECTORY
-  } = null != i ? i : {}, O = Date.now(), v = h.Z.getFetchState({
+  } = null != i ? i : {}, O = Date.now(), v = m.Z.getFetchState({
     query: n,
     guildId: r,
     page: o,
@@ -199,7 +199,7 @@ async function R(e) {
     integrationType: p
   }), {
     lastFetchTimeMs: S
-  } = null != (t = h.Z.getSearchResults({
+  } = null != (t = m.Z.getSearchResults({
     query: n,
     guildId: r,
     page: o,
@@ -207,7 +207,7 @@ async function R(e) {
     categoryId: f,
     integrationType: p
   })) ? t : {};
-  if (v !== h.M.FETCHING && (null == S || !(S + I > O))) {
+  if (v !== m.M.FETCHING && (null == S || !(S + I > O))) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
       query: n,
@@ -217,7 +217,7 @@ async function R(e) {
       categoryId: f,
       integrationType: p,
       minUserInstallCommandCount: _,
-      excludeAppsWithCustomInstallUrl: m,
+      excludeAppsWithCustomInstallUrl: h,
       excludeNonEmbeddedApps: g,
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
       source: y
@@ -234,7 +234,7 @@ async function R(e) {
           locale: u.default.locale,
           integration_type: p,
           min_user_install_command_count: _,
-          exclude_apps_with_custom_install_url: m,
+          exclude_apps_with_custom_install_url: h,
           exclude_non_embedded_apps: g,
           exclude_embedded_apps_without_primary_entry_point_app_command: E,
           source: y
@@ -258,7 +258,7 @@ async function R(e) {
           loadId: e.body.load_id
         },
         minUserInstallCommandCount: _,
-        excludeAppsWithCustomInstallUrl: m,
+        excludeAppsWithCustomInstallUrl: h,
         excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
         source: y
@@ -273,7 +273,7 @@ async function R(e) {
         categoryId: f,
         integrationType: p,
         minUserInstallCommandCount: _,
-        excludeAppsWithCustomInstallUrl: m,
+        excludeAppsWithCustomInstallUrl: h,
         excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
         source: y
@@ -282,21 +282,21 @@ async function R(e) {
   }
 }
 
-function w() {
+function R() {
   return (0, f.isAndroid)() ? a.R.ANDROID : (0, f.isIOS)() ? a.R.IOS : a.R.WEB
 }
 async function D() {
   let {
     surface: e = o.Y.APPLICATION_DIRECTORY,
     activeState: t = i.E.ACTIVE
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = d.default.disableAppCollectionsCache, r = Date.now(), a = m.Z.getFetchState({
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = d.default.disableAppCollectionsCache, r = Date.now(), a = h.Z.getFetchState({
     surface: e,
     activeState: t
-  }), s = m.Z.getLastFetchTimeMs({
+  }), s = h.Z.getLastFetchTimeMs({
     surface: e,
     activeState: t
   });
-  if (a === m.M.FETCHING) return;
+  if (a === h.M.FETCHING) return;
   let f = !n && t === i.E.ACTIVE;
   if (!f || null == s || !(s + I > r)) {
     c.Z.dispatch({
@@ -310,7 +310,7 @@ async function D() {
         query: {
           surface: e,
           active_state: t,
-          platform: w(),
+          platform: R(),
           locale: u.default.locale,
           cache: f
         },

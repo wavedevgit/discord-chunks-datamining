@@ -13,8 +13,8 @@ var Chunk98405 = require("./98405.js"),
   Chunk380297 = require("./380297.js"),
   Chunk504290 = require("./504290.js"),
   _ = String,
-  m = Chunk154028("JSON", "stringify"),
-  h = Chunk46015(/./.exec),
+  h = Chunk154028("JSON", "stringify"),
+  m = Chunk46015(/./.exec),
   g = Chunk46015("".charAt),
   E = Chunk46015("".charCodeAt),
   b = Chunk46015("".replace),
@@ -24,26 +24,26 @@ var Chunk98405 = require("./98405.js"),
   S = /^[\uDC00-\uDFFF]$/,
   I = !Chunk504290 || Chunk621523(function() {
     var e = i("Symbol")("stringify detection");
-    return "[null]" !== m([e]) || "{}" !== m({
+    return "[null]" !== h([e]) || "{}" !== h({
       a: e
-    }) || "{}" !== m(Object(e))
+    }) || "{}" !== h(Object(e))
   }),
   T = Chunk621523(function() {
-    return '"\udf06\ud834"' !== m("\uDF06\uD834") || '"\udead"' !== m("\uDEAD")
+    return '"\udf06\ud834"' !== h("\uDF06\uD834") || '"\udead"' !== h("\uDEAD")
   }),
   C = function(e, t) {
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (true === e || u(e)))) return n[1] = function(e, t) {
       if (c(r) && (t = o(r, this, _(e), t)), !u(t)) return t
-    }, a(m, null, n)
+    }, a(h, null, n)
   },
   A = function(e, t, n) {
     var r = g(n, t - 1),
       i = g(n, t + 1);
-    return h(v, e) && !h(S, i) || h(S, e) && !h(v, r) ? "\\u" + y(E(e, 0), 16) : e
+    return m(v, e) && !m(S, i) || m(S, e) && !m(v, r) ? "\\u" + y(E(e, 0), 16) : e
   };
-m && Chunk98405({
+h && Chunk98405({
   target: "JSON",
   stat: true,
   arity: 3,
@@ -51,7 +51,7 @@ m && Chunk98405({
 }, {
   stringify: function(e, t, n) {
     var r = d(arguments),
-      i = a(I ? C : m, null, r);
+      i = a(I ? C : h, null, r);
     return T && "string" == typeof i ? b(i, O, A) : i
   }
 })

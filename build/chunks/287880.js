@@ -2,7 +2,7 @@
 /** chunk id: 287880, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ae: () => m,
+  Ae: () => h,
   Qe: () => y,
   SN: () => v,
   U0: () => O,
@@ -53,8 +53,8 @@ function d(e, t) {
 let f = null != (a = null == (r = window) ? true : r.crypto) ? a : null == (i = window) ? true : i.msCrypto,
   p = "Uint8Array" in window,
   _ = null != f && "getRandomValues" in f && p,
-  m = "PublicKeyCredential" in window && p,
-  h = 20;
+  h = "PublicKeyCredential" in window && p,
+  m = 20;
 
 function g(e) {
   return f.getRandomValues(new Uint8Array(e))
@@ -65,7 +65,7 @@ function E(e) {
 }
 
 function b() {
-  return E(g(h))
+  return E(g(m))
 }
 
 function y(e) {

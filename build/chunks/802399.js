@@ -45,7 +45,7 @@ module.exports = function(e) {
       end: /\}/,
       contains: p.contains
     },
-    m = {
+    h = {
       className: "number",
       relevance: 0,
       variants: [{
@@ -112,7 +112,7 @@ module.exports = function(e) {
         scope: "char.escape",
         match: /\\./
       }]
-    }, e.QUOTE_STRING_MODE, m, f, e.inherit(e.TITLE_MODE, {
+    }, e.QUOTE_STRING_MODE, h, f, e.inherit(e.TITLE_MODE, {
       begin: "^[_a-z][\\w']*"
     }), {
       begin: `(?!-)${l}--+|--+(?!-)${l}`

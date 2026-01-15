@@ -28,7 +28,7 @@
       a = null,
       l = false,
       c = false;
-    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = B(e.s), i = B(e.v), t = m(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = B(e.s), a = B(e.l), t = p(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = j(n), {
+    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = B(e.s), i = B(e.v), t = h(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = B(e.s), a = B(e.l), t = p(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = j(n), {
       ok: l,
       format: e.format || c,
       r: o(255, s(t.r, 0)),
@@ -119,7 +119,7 @@
     }
   }
 
-  function m(e, n, r) {
+  function h(e, n, r) {
     e = 6 * M(e, 360), n = M(n, 100), r = M(r, 100);
     var i = t.floor(e),
       a = e - i,
@@ -134,7 +134,7 @@
     }
   }
 
-  function h(e, t, n, r) {
+  function m(e, t, n, r) {
     var i = [F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16))];
     return r && i[0].charAt(0) == i[0].charAt(1) && i[1].charAt(0) == i[1].charAt(1) && i[2].charAt(0) == i[2].charAt(1) ? i[0].charAt(0) + i[1].charAt(0) + i[2].charAt(0) : i.join("")
   }
@@ -239,7 +239,7 @@
     })]
   }
 
-  function R(e, t, n) {
+  function w(e, t, n) {
     t = t || 6, n = n || 30;
     var r = c(e).toHsl(),
       i = 360 / n,
@@ -248,7 +248,7 @@
     return a
   }
 
-  function w(e, t) {
+  function R(e, t) {
     t = t || 6;
     for (var n = c(e).toHsv(), r = n.h, i = n.s, a = n.v, o = [], s = 1 / t; t--;) o.push(c({
       h: r,
@@ -320,7 +320,7 @@
       return 1 == this._a ? "hsl(" + t + ", " + n + "%, " + r + "%)" : "hsla(" + t + ", " + n + "%, " + r + "%, " + this._roundA + ")"
     },
     toHex: function(e) {
-      return h(this._r, this._g, this._b, e)
+      return m(this._r, this._g, this._b, e)
     },
     toHexString: function(e) {
       return "#" + this.toHex(e)
@@ -354,7 +354,7 @@
       return 1 == this._a ? "rgb(" + a(100 * M(this._r, 255)) + "%, " + a(100 * M(this._g, 255)) + "%, " + a(100 * M(this._b, 255)) + "%)" : "rgba(" + a(100 * M(this._r, 255)) + "%, " + a(100 * M(this._g, 255)) + "%, " + a(100 * M(this._b, 255)) + "%, " + this._roundA + ")"
     },
     toName: function() {
-      return 0 === this._a ? "transparent" : !(this._a < 1) && (x[h(this._r, this._g, this._b, true)] || false)
+      return 0 === this._a ? "transparent" : !(this._a < 1) && (x[m(this._r, this._g, this._b, true)] || false)
     },
     toFilter: function(e) {
       var t = "#" + E(this._r, this._g, this._b, this._a),
@@ -405,13 +405,13 @@
       return e.apply(null, [this].concat([].slice.call(t)))
     },
     analogous: function() {
-      return this._applyCombination(R, arguments)
+      return this._applyCombination(w, arguments)
     },
     complement: function() {
       return this._applyCombination(C, arguments)
     },
     monochromatic: function() {
-      return this._applyCombination(w, arguments)
+      return this._applyCombination(R, arguments)
     },
     splitcomplement: function() {
       return this._applyCombination(P, arguments)

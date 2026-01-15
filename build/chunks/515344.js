@@ -37,15 +37,15 @@ function b(e) {
     return null != (e = f.Z.getGuildId()) ? e : true
   }), p = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
-    return null != e && (e.isPrivate() || u.Z.can(h.Plq.SEND_MESSAGES, e))
-  }, []), m = (0, a.PZ)(e, l) && p, g = t || m;
+    return null != e && (e.isPrivate() || u.Z.can(m.Plq.SEND_MESSAGES, e))
+  }, []), h = (0, a.PZ)(e, l) && p, g = t || h;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
     integrationTypesConfig: o,
     canViewApp: g,
-    canOpenAppLauncher: m,
+    canOpenAppLauncher: h,
     isInstallable: s,
     selectedGuildId: l
   }
@@ -91,13 +91,13 @@ function O(e) {
   } = b(e), i = y(e);
   return r.useMemo(() => t && null != i ? {
     label: E.intl.string(E.t.hvVgAZ),
-    trackingArea: m.j_.VIEW,
+    trackingArea: h.j_.VIEW,
     onClick() {
       i()
     }
   } : n && null != i ? {
     label: E.intl.string(E.t.NgXl3C),
-    trackingArea: m.j_.ADD_APP,
+    trackingArea: h.j_.ADD_APP,
     onClick() {
       i()
     }

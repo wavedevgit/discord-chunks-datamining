@@ -82,7 +82,7 @@ let k = {
       numOtherParticipants: er
     } = (0, S.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, eo = ei === a.z.XBOX ? j.ABu.XBOX : ei === a.z.PLAYSTATION ? j.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
       data: el
-    } = (0, h.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
+    } = (0, m.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == V ? true : V.src) == null || null == b || null == H) return;
       let t = er > 0 ? (0, A.VY)({
         entry: y,
@@ -101,9 +101,9 @@ let k = {
       })
     }, [null == V ? true : V.src, b, ee, y, X, er, et, en, q, Q, H]);
     if (null == H) return null;
-    let ef = (0, r.jsx)(w.Gk, {
-        location: null == J ? w.Gt.POPOUT : w.Gt.STREAMING_POPOUT,
-        children: R.W.map((e, t) => (0, r.jsx)(e, {
+    let ef = (0, r.jsx)(R.Gk, {
+        location: null == J ? R.Gt.POPOUT : R.Gt.STREAMING_POPOUT,
+        children: w.W.map((e, t) => (0, r.jsx)(e, {
           entry: y
         }, t))
       }),
@@ -135,9 +135,9 @@ let k = {
       }),
       e_ = !eu && ec ? (0, r.jsx)(f.Z, {
         application: el,
-        analyticsLocation: m.Z.MEMBER_LIST_GAMING_CONTENT_POPOUT
+        analyticsLocation: h.Z.MEMBER_LIST_GAMING_CONTENT_POPOUT
       }, "cloud-play") : null,
-      em = [null == e_ && ((0, l.Z)(K, j.xjy.JOIN) || (0, c.Z)(K)) ? (0, r.jsx)(p.Z, {
+      eh = [null == e_ && ((0, l.Z)(K, j.xjy.JOIN) || (0, c.Z)(K)) ? (0, r.jsx)(p.Z, {
         activity: K,
         user: H,
         variant: "primary",
@@ -159,7 +159,7 @@ let k = {
           generateReactionImage: ed,
           reactionImageAltText: (0, A.IS)(y, H),
           entry: y,
-          buttons: em
+          buttons: eh
         })
       })]
     })

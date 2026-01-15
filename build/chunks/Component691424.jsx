@@ -290,12 +290,12 @@ let W = {
       let i = () => {
         H(e.guildId, e.id, e.itemId)
       };
-      return (0, C.k)(e.id) ? (0, r.jsxs)(m.Z, {
+      return (0, C.k)(e.id) ? (0, r.jsxs)(h.Z, {
         role: "link",
         onClick: i,
         className: "channelMention",
         iconType: e.id,
-        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(h.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
+        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(m.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
       }, n.key) : null
     }
   },
@@ -381,11 +381,11 @@ let W = {
 function K(e) {
   return F(G({}, W), {
     link: (0, x.Z)(e),
-    devLink: (0, w.Z)(e),
+    devLink: (0, R.Z)(e),
     emoji: B(e),
     customEmoji: V(e),
     channelMention: (0, P.Z)(e),
-    commandMention: (0, R.ZP)(e),
+    commandMention: (0, w.ZP)(e),
     attachmentLink: (0, N.Z)(e),
     gameMention: D.Z
   })

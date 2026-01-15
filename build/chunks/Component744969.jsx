@@ -71,7 +71,7 @@ function y(e) {
         onClose: t,
         transitionState: n
       } = e;
-      return (0, r.jsx)(h.SubscriptionDetailsModal, {
+      return (0, r.jsx)(m.SubscriptionDetailsModal, {
         appId: a.applicationId,
         subscriptionType: (0, c.KW)(a.flags) ? "user" : "guild",
         onClose: t,
@@ -87,7 +87,7 @@ function y(e) {
         onClose: t,
         transitionState: n
       } = e;
-      return (0, r.jsx)(m.ItemDetailsModal, {
+      return (0, r.jsx)(h.ItemDetailsModal, {
         appId: a.applicationId,
         skuId: a.id,
         onClose: t,

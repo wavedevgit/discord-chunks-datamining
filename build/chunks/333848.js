@@ -21,8 +21,8 @@ let p = {
       type: n,
       name: p,
       permissionOverwrites: _ = [],
-      bitrate: m,
-      userLimit: h,
+      bitrate: h,
+      userLimit: m,
       parentId: g,
       skuId: E,
       branchId: b
@@ -37,7 +37,7 @@ let p = {
       name: p,
       permission_overwrites: _
     };
-    if (null != m && m !== d.epw && (y.bitrate = m), null != h && h > 0 && (y.user_limit = h), null != g && (y.parent_id = g), n === d.d4z.GUILD_STORE) {
+    if (null != h && h !== d.epw && (y.bitrate = h), null != m && m > 0 && (y.user_limit = m), null != g && (y.parent_id = g), n === d.d4z.GUILD_STORE) {
       if (null == E) throw Error("Unexpected missing SKU");
       y.sku_id = E, y.branch_id = b
     }

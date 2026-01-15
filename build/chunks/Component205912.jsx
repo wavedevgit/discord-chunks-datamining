@@ -90,14 +90,14 @@ function I(e) {
   } = e, C = v(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]);
   let {
     i18n: A
-  } = (0, h.ZF)(), {
+  } = (0, m.ZF)(), {
     fieldProps: N
   } = (0, p.X)(C), {
     disabled: P,
-    errorMessage: R,
-    required: w = false
+    errorMessage: w,
+    required: R = false
   } = N, D = {
-    hasError: null != R && "" !== R
+    hasError: null != w && "" !== w
   }, {
     refs: x,
     floatingStyles: L,
@@ -130,7 +130,7 @@ function I(e) {
     null == n || n(e), M(false)
   };
   return (0, r.jsx)(p.g, O(b({}, N), {
-    children: e => (0, r.jsx)(m.U, O(b({
+    children: e => (0, r.jsx)(h.U, O(b({
       className: g.inputField,
       validation: D,
       ref: x.setReference
@@ -144,7 +144,7 @@ function I(e) {
         value: t,
         onChange: B,
         isDisabled: P,
-        isRequired: w,
+        isRequired: R,
         minValue: i,
         maxValue: E,
         placeholderValue: y,
@@ -164,7 +164,7 @@ function I(e) {
             className: g.calendarButton,
             onClick: () => M(!j),
             "aria-label": A.DATE_INPUT_OPEN_CALENDAR_LABEL,
-            children: (0, r.jsx)(_.Que, {
+            children: (0, r.jsx)(_.CalendarIcon, {
               size: "sm",
               color: "currentColor"
             })

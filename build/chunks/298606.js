@@ -29,15 +29,15 @@ function d(e, t, n) {
     }
   }
   var _ = a.childNodes[n - 1],
-    m = null,
-    h = null;
+    h = null,
+    m = null;
   if (i(_)) {
     var g = u(_);
-    m = l(i(g)), h = f(g)
-  } else m = l(d), h = f(_);
+    h = l(i(g)), m = f(g)
+  } else h = l(d), m = f(_);
   return {
-    key: m,
-    offset: h
+    key: h,
+    offset: m
   }
 }
 

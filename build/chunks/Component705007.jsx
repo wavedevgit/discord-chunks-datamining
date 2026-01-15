@@ -103,12 +103,12 @@ function G(e) {
     labelId: c,
     className: d,
     style: _
-  } = e, m = (0, E.p9)({
+  } = e, h = (0, E.p9)({
     roleId: i.id,
     size: 12,
     guildId: a
-  }), g = (0, u.e7)([h.Z], () => h.Z.roleStyle), b = (0, y._f)(a, i, i.colorStrings), v = (null == (t = i.tags) ? true : t.guild_connections) === null, S = (0, p.dQu)(U).hex(), I = null != (n = i.colorString) ? n : S, T = () => "dot" === g ? (0, r.jsx)(p.FhE, {
-    className: w.roleDot,
+  }), g = (0, u.e7)([m.Z], () => m.Z.roleStyle), b = (0, y._f)(a, i, i.colorStrings), v = (null == (t = i.tags) ? true : t.guild_connections) === null, S = (0, p.dQu)(U).hex(), I = null != (n = i.colorString) ? n : S, T = () => "dot" === g ? (0, r.jsx)(p.FhE, {
+    className: R.roleDot,
     color: I,
     background: false,
     colors: b,
@@ -119,10 +119,10 @@ function G(e) {
   });
   return (0, r.jsxs)("div", {
     ref: l,
-    className: o()(w.role, d),
+    className: o()(R.role, d),
     style: _,
     children: [T(), v && (0, r.jsx)(p.xPt, {
-      className: w.connectionRoleIcon,
+      className: R.connectionRoleIcon,
       size: "custom",
       width: 12,
       height: 12,
@@ -134,13 +134,13 @@ function G(e) {
       children: (0, r.jsx)(p.Text, {
         variant: "text-xs/normal",
         color: "text-default",
-        className: w.roleName,
+        className: R.roleName,
         id: c,
         children: i.name
       })
-    }), null != m ? (0, r.jsx)(O.Z, j(x({
-      className: w.roleIcon
-    }, m), {
+    }), null != h ? (0, r.jsx)(O.Z, j(x({
+      className: R.roleIcon
+    }, h), {
       enableTooltip: false
     })) : null, s]
   })
@@ -159,19 +159,19 @@ function Z(e) {
     } = c,
     d = M(c, ["tabIndex"]),
     _ = (0, g.Dt)(),
-    m = i.useCallback(e => {
+    h = i.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), null == a || a(t)
     }, [a, t]),
-    h = n ? (0, r.jsx)(f.u, {
-      text: R.intl.string(R.t["T+3Adg"]),
+    m = n ? (0, r.jsx)(f.u, {
+      text: w.intl.string(w.t["T+3Adg"]),
       spacing: 4,
       ariaHidden: true,
       children: (0, r.jsx)(p.P3F, {
-        "aria-label": R.intl.formatToPlainString(R.t.QrxwhY, {
+        "aria-label": w.intl.formatToPlainString(w.t.QrxwhY, {
           roleName: t.name
         }),
-        onClick: m,
-        className: w.removeButton,
+        onClick: h,
+        className: R.removeButton,
         tabIndex: u,
         children: (0, r.jsx)(p.Dio, {
           size: "xxs",
@@ -183,12 +183,12 @@ function Z(e) {
     children: (0, r.jsx)("div", j(x({}, d), {
       tabIndex: u,
       onContextMenu: o,
-      className: w.roleTag,
+      className: R.roleTag,
       "aria-labelledby": _,
       children: (0, r.jsx)(G, x({
         role: t,
-        className: n ? w.hasRemoveButton : true,
-        trailing: h,
+        className: n ? R.hasRemoveButton : true,
+        trailing: m,
         labelId: _
       }, s))
     }))
@@ -205,7 +205,7 @@ function F(e) {
     scrollToStart: P.Cyb,
     scrollToEnd: P.Cyb,
     wrap: true
-  }), u = R.intl.formatToPlainString(R.t.PCs0oo, {
+  }), u = w.intl.formatToPlainString(w.t.PCs0oo, {
     numRoles: t
   });
   return (0, r.jsx)(l.bG, {
@@ -218,7 +218,7 @@ function F(e) {
         return (0, r.jsx)("div", j(x({}, i), {
           ref: t,
           "aria-label": u,
-          className: w.listContentsInteractive,
+          className: R.listContentsInteractive,
           children: n
         }))
       }
@@ -234,7 +234,7 @@ function B(e) {
     showLabel: s = false,
     onAddRole: l,
     buttonRef: c
-  } = e, d = (0, u.e7)([C.default], () => C.default.getCurrentUser()), _ = null != d ? A.e9(a, d.id) : null, m = (0, u.e7)([I.ZP], () => I.ZP.getMember(a.id, n)), g = null != (t = null == m ? true : m.roles) ? t : [], E = (0, u.e7)([h.Z], () => h.Z.roleStyle), y = i.useRef(null), O = null != c ? c : y, v = i.useCallback(e => {
+  } = e, d = (0, u.e7)([C.default], () => C.default.getCurrentUser()), _ = null != d ? A.e9(a, d.id) : null, h = (0, u.e7)([I.ZP], () => I.ZP.getMember(a.id, n)), g = null != (t = null == h ? true : h.roles) ? t : [], E = (0, u.e7)([m.Z], () => m.Z.roleStyle), y = i.useRef(null), O = null != c ? c : y, v = i.useCallback(e => {
     var t;
     null == l || l();
     let r = I.ZP.getMember(a.id, n),
@@ -258,14 +258,14 @@ function B(e) {
       })
     },
     children: e => (0, r.jsx)(f.u, {
-      text: R.intl.string(R.t.e3Wlyw),
+      text: w.intl.string(w.t.e3Wlyw),
       shouldShow: !s,
       ariaHidden: true,
       children: (0, r.jsxs)(p.P3F, j(x({
         innerRef: O,
-        "aria-label": R.intl.string(R.t.e3Wlyw),
-        className: o()(w.addButton, {
-          [w.showLabel]: s
+        "aria-label": w.intl.string(w.t.e3Wlyw),
+        className: o()(R.addButton, {
+          [R.showLabel]: s
         })
       }, e), {
         children: [(0, r.jsx)(p.qJs, {
@@ -274,7 +274,7 @@ function B(e) {
         }), s && (0, r.jsx)(p.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: R.intl.string(R.t.e3Wlyw)
+          children: w.intl.string(w.t.e3Wlyw)
         })]
       }))
     })
@@ -309,7 +309,7 @@ function H(e, t, n) {
     null == n || n();
     let o = I.ZP.getMember(t, e),
       s = (null != (a = null == o ? true : o.roles) ? a : []).filter(e => e !== r.id);
-    (null == (i = r.tags) ? true : i.guild_connections) === null ? m.Z.unassignGuildRoleConnection(t, r.id) : b.Z.updateMemberRoles(t, e, s, [], [r.id])
+    (null == (i = r.tags) ? true : i.guild_connections) === null ? h.Z.unassignGuildRoleConnection(t, r.id) : b.Z.updateMemberRoles(t, e, s, [], [r.id])
   }, [n, t, e])
 }
 
@@ -321,7 +321,7 @@ function Y() {
       } = await n.e("5396").then(n.bind(n, 731646));
       return n => (0, r.jsx)(e, j(x({}, n), {
         id: t,
-        label: R.intl.string(R.t.sMsaLg)
+        label: w.intl.string(w.t.sMsaLg)
       }))
     })
   }, [])
@@ -348,29 +348,29 @@ function W(e) {
     roles: i,
     allowEditing: u,
     readOnly: c
-  }), m = d || f || p, h = H(t, n.id, s), g = Y(), E = () => (0, r.jsx)(B, {
+  }), h = d || f || p, m = H(t, n.id, s), g = Y(), E = () => (0, r.jsx)(B, {
     userId: t,
     guild: n,
     showLabel: 0 === i.length,
     onAddRole: l
   });
   return 0 === i.length ? d ? (0, r.jsx)("div", {
-    className: o()(w.roleListContainer, a),
+    className: o()(R.roleListContainer, a),
     children: E()
   }) : null : (0, r.jsx)("div", {
-    className: o()(w.roleListContainer, a),
-    children: m ? (0, r.jsxs)(F, {
+    className: o()(R.roleListContainer, a),
+    children: h ? (0, r.jsxs)(F, {
       roleCount: i.length,
       children: [i.map(e => (0, r.jsx)(Z, {
         role: e,
         guildId: n.id,
         canRemove: _(e.id),
-        onRemoveRole: f ? h : true,
+        onRemoveRole: f ? m : true,
         onContextMenu: p ? t => g(t, e.id) : true
       }, e.id)), d ? E() : null]
     }) : (0, r.jsx)("ul", {
-      className: w.listContentsStatic,
-      "aria-label": R.intl.string(R.t["LPJmL/"]),
+      className: R.listContentsStatic,
+      "aria-label": w.intl.string(w.t["LPJmL/"]),
       children: i.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(G, {
           role: e,
@@ -387,7 +387,7 @@ function K(e) {
     overflowCount: n,
     onClick: i,
     buttonRef: a
-  } = e, s = t ? R.intl.string(R.t.XnXtCt) : R.intl.string(R.t.DY6n4q), l = t ? R.intl.string(R.t.XnXtCt) : R.intl.formatToPlainString(R.t.zr0Y5R, {
+  } = e, s = t ? w.intl.string(w.t.XnXtCt) : w.intl.string(w.t.DY6n4q), l = t ? w.intl.string(w.t.XnXtCt) : w.intl.formatToPlainString(w.t.zr0Y5R, {
     numberOfItems: n
   });
   return (0, r.jsx)(f.u, {
@@ -397,8 +397,8 @@ function K(e) {
       innerRef: a,
       "aria-label": l,
       onClick: i,
-      className: o()(w.pillButton, {
-        [w.expandButton]: !t
+      className: o()(R.pillButton, {
+        [R.expandButton]: !t
       }),
       children: t ? (0, r.jsx)(p.V7D, {
         size: "xs",
@@ -436,8 +436,8 @@ function J(e) {
     readOnly: p = false
   } = e, {
     canAddRoles: _,
-    canRemoveAnyRoles: m,
-    hasDeveloperContextMenu: h,
+    canRemoveAnyRoles: h,
+    hasDeveloperContextMenu: m,
     isRoleRemovable: g
   } = V({
     userId: t,
@@ -445,7 +445,7 @@ function J(e) {
     roles: a,
     allowEditing: f,
     readOnly: p
-  }), E = _ || m || h, b = H(t, n.id, c), y = Y(), O = i.useRef({}), v = (e, t) => {
+  }), E = _ || h || m, b = H(t, n.id, c), y = Y(), O = i.useRef({}), v = (e, t) => {
     null != t ? O.current[e] = t : delete O.current[e]
   }, [S, I] = i.useState(a), [T, C] = i.useState(q), [A, N] = i.useState(false), P = i.useRef(null), D = i.useRef(null), x = i.useRef(0);
   i.useLayoutEffect(() => {
@@ -490,27 +490,27 @@ function J(e) {
       onAddRole: l
     });
   return 0 === a.length ? _ ? (0, r.jsx)("div", {
-    className: o()(w.roleListContainer, s),
+    className: o()(R.roleListContainer, s),
     children: k()
   }) : null : (0, r.jsx)("div", {
-    className: o()(w.roleListContainer, s),
+    className: o()(R.roleListContainer, s),
     children: E ? (0, r.jsxs)(F, {
       roleCount: a.length,
       children: [L.map((e, t) => (0, r.jsx)(Z, {
         role: e,
         guildId: n.id,
         canRemove: g(e.id),
-        onRemoveRole: m ? b : true,
+        onRemoveRole: h ? b : true,
         itemRef: t => v(e.id, t),
-        onContextMenu: h ? t => y(t, e.id) : true,
+        onContextMenu: m ? t => y(t, e.id) : true,
         style: {
           maxWidth: A || t !== S.length - 1 ? q : T
         }
       }, e.id)), M(), _ ? k() : null]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
-        className: w.listContentsStatic,
-        "aria-label": R.intl.string(R.t["LPJmL/"]),
+        className: R.listContentsStatic,
+        "aria-label": w.intl.string(w.t["LPJmL/"]),
         children: L.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(G, {
             itemRef: t => v(e.id, t),

@@ -54,14 +54,14 @@ function _(e) {
   d(t)
 }
 
-function m(e) {
+function h(e) {
   let {
     id: t
   } = e;
   return c.delete(t)
 }
 
-function h(e) {
+function m(e) {
   let {
     id: t,
     showBlocked: n
@@ -131,10 +131,10 @@ class O extends(r = Chunk442837.ZP.Store) {
 s(O, "displayName", "SearchQueryStore");
 let v = new O(Chunk570140.Z, {
   SEARCH_RESULTS_QUERY_UPDATE: E,
-  SEARCH_EDITOR_STATE_CLEAR: m,
+  SEARCH_EDITOR_STATE_CLEAR: h,
   SEARCH_ENSURE_SEARCH_STATE: _,
   SEARCH_EDITOR_STATE_CHANGE: p,
-  SEARCH_SET_SHOW_BLOCKED_RESULTS: h,
+  SEARCH_SET_SHOW_BLOCKED_RESULTS: m,
   SEARCH_SET_SHOW_NO_RESULTS_ALT: g,
   SEARCH_SEARCH_MODE_UPDATE: b,
   SEARCH_TOKENS_REFRESHED: y

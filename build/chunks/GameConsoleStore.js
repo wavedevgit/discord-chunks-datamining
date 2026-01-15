@@ -24,14 +24,14 @@ let c = null,
   p = {},
   _ = new Set;
 
-function m(e) {
+function h(e) {
   let {
     sessionId: t
   } = e;
   c = t, u = null
 }
 
-function h() {
+function m() {
   c = null, u = null
 }
 
@@ -122,8 +122,8 @@ class S extends(r = Chunk442837.ZP.DeviceSettingsStore) {
 }
 l(S, "displayName", "GameConsoleStore"), l(S, "persistKey", "GameConsoleStore");
 let I = new S(Chunk570140.Z, {
-  REMOTE_SESSION_CONNECT: m,
-  REMOTE_SESSION_DISCONNECT: h,
+  REMOTE_SESSION_CONNECT: h,
+  REMOTE_SESSION_DISCONNECT: m,
   WAIT_FOR_REMOTE_SESSION: g,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
   GAME_CONSOLE_FETCH_DEVICES_SUCCESS: b,

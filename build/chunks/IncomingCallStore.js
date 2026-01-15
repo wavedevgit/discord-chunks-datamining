@@ -37,7 +37,7 @@ let E = "IncomingCallStore",
   C = false;
 
 function A() {
-  let e = m.Z.windowSize();
+  let e = h.Z.windowSize();
   return null != r && r.x + b < e.width && r.y + y < e.height ? r : {
     x: e.width / 2 - b / 2,
     y: e.height / 2 - y / 2
@@ -76,7 +76,7 @@ function P(e) {
   return !!T.has(t) && !r && N(t)
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t
   } = e;
@@ -86,7 +86,7 @@ function R(e) {
   }).enabled && !!e.ringing.includes(f.default.getId())) && N(t)
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -112,7 +112,7 @@ function x(e) {
 }
 
 function L() {
-  C = _.Z.getStatus() === h.Skl.DND || c.QZ.getSetting()
+  C = _.Z.getStatus() === m.Skl.DND || c.QZ.getSetting()
 }
 
 function j() {
@@ -125,7 +125,7 @@ function j() {
 }
 class M extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(f.default, l.Z, p.Z, _.Z, u.Z, m.Z), this.syncWith([_.Z], L), this.syncWith([u.Z], L), this.syncWith([l.Z], j)
+    this.waitFor(f.default, l.Z, p.Z, _.Z, u.Z, h.Z), this.syncWith([_.Z], L), this.syncWith([u.Z], L), this.syncWith([l.Z], j)
   }
   getIncomingCalls() {
     return C ? S : Array.from(I.values())
@@ -144,10 +144,10 @@ g(M, "displayName", "IncomingCallStore");
 let k = new M(Chunk570140.Z, {
   CALL_CREATE: P,
   CALL_UPDATE: P,
-  CALL_DELETE: R,
+  CALL_DELETE: w,
   GUILD_RING_START: P,
-  GUILD_RING_STOP: R,
-  VOICE_CHANNEL_SELECT: w,
+  GUILD_RING_STOP: w,
+  VOICE_CHANNEL_SELECT: R,
   INCOMING_CALL_MOVE: D,
   CHANNEL_DELETE: x
 })

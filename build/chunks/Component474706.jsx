@@ -25,14 +25,14 @@ function f() {
     _ = (0, c.Tl)(null == p ? true : p.gradientConfig, {
       reverse: true
     }),
-    m = null == p || null == (e = p.getBannerImageUrl) ? true : e.call(p);
+    h = null == p || null == (e = p.getBannerImageUrl) ? true : e.call(p);
   return null == p || null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
     className: d.container,
     style: _,
-    children: [null != m && (0, r.jsx)("div", {
+    children: [null != h && (0, r.jsx)("div", {
       className: d.bannerImage,
       style: {
-        backgroundImage: "url(".concat(m, ")")
+        backgroundImage: "url(".concat(h, ")")
       }
     }), (0, r.jsxs)("div", {
       className: d.textSection,

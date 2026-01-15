@@ -4,7 +4,7 @@
 require.d(exports, {
   L6: () => B,
   Rc: () => Z,
-  WH: () => R,
+  WH: () => w,
   aP: () => k,
   dV: () => F,
   g: () => M,
@@ -12,7 +12,7 @@ require.d(exports, {
   n9: () => U,
   pR: () => L,
   rn: () => x,
-  tK: () => w,
+  tK: () => R,
   xc: () => G
 });
 var Chunk512722 = require("./512722.js"),
@@ -65,7 +65,7 @@ function N(e) {
 }
 let P = 2;
 
-function R(e, t, n) {
+function w(e, t, n) {
   s.Z.dispatch(N({
     type: "STREAM_START",
     streamType: null != e ? C.lo.GUILD : C.lo.CALL,
@@ -75,7 +75,7 @@ function R(e, t, n) {
   }, n))
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = (0, u.V9)(e);
   s.Z.dispatch({
     type: "STREAM_SET_PAUSED",
@@ -85,7 +85,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  let n = h.Z.getChannel(t);
+  let n = m.Z.getChannel(t);
   return i()(null != n, "Cannot join a null voice channel"), !b.Z.isInChannel(t) && (0, y.rY)(n, b.Z, g.Z)
 }
 
@@ -106,7 +106,7 @@ function x(e, t) {
       let {
         ownerId: t
       } = e;
-      return t !== m.default.getId()
+      return t !== h.default.getId()
     }).length >= P;
   s.Z.dispatch({
     type: "STREAM_WATCH",

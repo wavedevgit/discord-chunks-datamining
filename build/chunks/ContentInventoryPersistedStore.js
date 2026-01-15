@@ -38,15 +38,15 @@ let c = 2592e6,
   }),
   p = f(),
   _ = new Set,
-  m = new Set,
-  h = 0,
+  h = new Set,
+  m = 0,
   g = false,
   E = false,
   b = 1e3;
 
 function y() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  if (!e && Date.now() < h) return;
+  if (!e && Date.now() < m) return;
   let t = 0,
     n = Date.now() - c;
   for (let e = 0; e < p.itemImpressions.length; e++) {
@@ -61,7 +61,7 @@ function y() {
     o = Date.now() - r,
     s = null;
   for (let [e, t] of p.itemImpressions) t < o ? i.add(e) : null == s && (s = t + r), a.add(e);
-  _ = i, m = a, h = null != s ? s : 1 / 0, g = true
+  _ = i, h = a, m = null != s ? s : 1 / 0, g = true
 }
 
 function O(e) {
@@ -71,7 +71,7 @@ function O(e) {
   g || y();
   let n = Date.now(),
     r = false;
-  for (let e of t) m.has(e) || (p.itemImpressions.push([e, n]), r = true);
+  for (let e of t) h.has(e) || (p.itemImpressions.push([e, n]), r = true);
   return y(r), r
 }
 

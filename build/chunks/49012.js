@@ -44,8 +44,8 @@ function P(e, t) {
       trusted: I,
       onClick: N,
       onConfirm: P,
-      onCancel: R,
-      shouldConfirm: w,
+      onCancel: w,
+      shouldConfirm: R,
       messageId: D,
       channelId: x
     } = e,
@@ -117,13 +117,13 @@ function P(e, t) {
         }), null != P) return void P();
       (0, s.Z)(j)
     },
-    Y = null != R ? R : () => {};
+    Y = null != w ? w : () => {};
   if (null !== c.Z.isBlockedDomain(j)) {
     null == t || t.preventDefault(), l.Z.show(j);
     return
   }
   if (null != (0, g.v)(j)) {
-    null == t || t.preventDefault(), h.Z.show(j);
+    null == t || t.preventDefault(), m.Z.show(j);
     return
   }
   if ((0, f.I)(j)) {
@@ -133,14 +133,14 @@ function P(e, t) {
   let W = "function" == typeof I ? I() : I,
     K = (0, O.E)(j),
     z = "http:" !== K && "https:" !== K;
-  if (!z && (W || y.Z.isTrustedDomain(j)) || z && y.Z.isTrustedProtocol(j)) return void(null == t || null != w && w ? H() : k && p.Z.trackAnnouncementMessageLinkClicked({
+  if (!z && (W || y.Z.isTrustedDomain(j)) || z && y.Z.isTrustedProtocol(j)) return void(null == t || null != R && R ? H() : k && p.Z.trackAnnouncementMessageLinkClicked({
     messageId: U,
     channelId: x,
     guildId: M,
     sourceChannelId: G,
     sourceGuildId: Z
   }));
-  if (null != t && t.preventDefault(), z) m.Z.show({
+  if (null != t && t.preventDefault(), z) h.Z.show({
     url: j,
     trustUrl: o.u,
     onConfirm: H,
@@ -151,7 +151,7 @@ function P(e, t) {
   else {
     let e = (0, _.yw)(j),
       t = null != e ? e.displayTarget : j;
-    m.Z.show({
+    h.Z.show({
       url: t,
       trustUrl: o.o,
       onConfirm: H,

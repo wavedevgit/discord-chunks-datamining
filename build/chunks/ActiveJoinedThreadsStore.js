@@ -65,11 +65,11 @@ let S = {},
   A = {},
   N = {},
   P = null,
-  R = {};
+  w = {};
 
-function w() {
-  for (let e in S = {}, A = {}, I = {}, T = {}, C = {}, P = p.Z.getChannelId(), R) clearTimeout(R[e]);
-  R = {}, m.Z.forEachGuild(e => {
+function R() {
+  for (let e in S = {}, A = {}, I = {}, T = {}, C = {}, P = p.Z.getChannelId(), w) clearTimeout(w[e]);
+  w = {}, h.Z.forEachGuild(e => {
     x(e)
   }), L()
 }
@@ -79,13 +79,13 @@ function D(e) {
 }
 
 function x(e) {
-  let t = m.Z.getThreadsForGuild(e);
+  let t = h.Z.getThreadsForGuild(e);
   for (let e in t)
     for (let n in t[e]) {
       $(n);
       let e = u.Z.getChannel(n);
       if (null == e) continue;
-      let t = h.Z.joinTimestamp(n);
+      let t = m.Z.joinTimestamp(n);
       if (null != t) {
         let n = {
             channel: e,
@@ -131,8 +131,8 @@ function M(e, t) {
 function k(e, t, n) {
   if (null == t) returnfalse;
   let r = u.Z.getChannel(n),
-    i = h.Z.joinTimestamp(n);
-  if (null != r && m.Z.isActive(e, t, n)) {
+    i = m.Z.joinTimestamp(n);
+  if (null != r && h.Z.isActive(e, t, n)) {
     if (null != i) {
       let e = {
           channel: r,
@@ -161,7 +161,7 @@ function G(e) {
     channels: t
   } = e;
   for (let e of t)
-    if ((0, l.Y3)(e) !== Z(e.guild_id, e.parent_id)) return void w();
+    if ((0, l.Y3)(e) !== Z(e.guild_id, e.parent_id)) return void R();
   returnfalse
 }
 
@@ -191,7 +191,7 @@ function F(e) {
 
 function B(e) {
   let t = u.Z.getChannel(e.id);
-  return null != t && !!m.Z.isActive(e.guildId, t.parent_id, e.id) && k(t.guild_id, t.parent_id, t.id)
+  return null != t && !!h.Z.isActive(e.guildId, t.parent_id, e.id) && k(t.guild_id, t.parent_id, t.id)
 }
 
 function V(e) {
@@ -281,7 +281,7 @@ function q() {
 
 function Q(e) {
   let t = f.ZP.getMentionCount(e.id) > 0,
-    n = f.ZP.hasUnread(e.id) && !h.Z.isMuted(e.id),
+    n = f.ZP.hasUnread(e.id) && !m.Z.isMuted(e.id),
     r = e.hasFlag(E.zZ.PINNED),
     i = e.isActiveThread(),
     a = i && (0, g.Z)(e) > Date.now();
@@ -297,7 +297,7 @@ function X(e, t) {
 }
 
 function J(e) {
-  R[e.id] = setTimeout(() => {
+  w[e.id] = setTimeout(() => {
     let t = u.Z.getChannel(e.id);
     null != t && s.Z.dispatch({
       type: "THREAD_UPDATE",
@@ -307,7 +307,7 @@ function J(e) {
 }
 
 function $(e) {
-  e in R && (clearTimeout(R[e]), delete R[e])
+  e in w && (clearTimeout(w[e]), delete w[e])
 }
 
 function ee(e, t, n, r) {
@@ -341,7 +341,7 @@ let ei = {},
   el = {};
 class ec extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(m.Z, u.Z, d.Z, h.Z, f.ZP, p.Z), this.syncWith([p.Z], q)
+    this.waitFor(h.Z, u.Z, d.Z, m.Z, f.ZP, p.Z), this.syncWith([p.Z], q)
   }
   hasActiveJoinedUnreadThreads(e, t) {
     return e in I && t in I[e]
@@ -412,16 +412,16 @@ class ec extends(r = Chunk442837.ZP.Store) {
 }
 b(ec, "displayName", "ActiveJoinedThreadsStore");
 let eu = new ec(Chunk570140.Z, {
-  CONNECTION_OPEN: w,
-  OVERLAY_INITIALIZE: w,
+  CONNECTION_OPEN: R,
+  OVERLAY_INITIALIZE: R,
   THREAD_LIST_SYNC: K,
-  LOAD_THREADS_SUCCESS: w,
-  LOAD_ARCHIVED_THREADS_SUCCESS: w,
-  SEARCH_MESSAGES_SUCCESS: w,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: w,
+  LOAD_THREADS_SUCCESS: R,
+  LOAD_ARCHIVED_THREADS_SUCCESS: R,
+  SEARCH_MESSAGES_SUCCESS: R,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: R,
   GUILD_CREATE: W,
-  GUILD_DELETE: w,
-  CURRENT_USER_UPDATE: w,
+  GUILD_DELETE: R,
+  CURRENT_USER_UPDATE: R,
   THREAD_CREATE: U,
   THREAD_UPDATE: U,
   THREAD_DELETE: U,

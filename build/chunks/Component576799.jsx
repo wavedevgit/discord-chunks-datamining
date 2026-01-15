@@ -29,7 +29,7 @@ function p(e) {
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
   (0, o.$)(p, "ThreadMessageAccessoryMessage");
-  let m = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
+  let h = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: true
   }).content : null, [t]);
   return (0, r.jsxs)("div", {
@@ -44,7 +44,7 @@ function p(e) {
       compact: true
     }), (0, r.jsx)("div", {
       className: f.threadMessageAccessoryPreview,
-      children: _(t, m, l, d)
+      children: _(t, h, l, d)
     })]
   })
 }

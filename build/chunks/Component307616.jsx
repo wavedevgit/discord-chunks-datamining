@@ -125,7 +125,7 @@ class T extends Chunk473749.PureComponent {
 }
 
 function C() {
-  return (0, h.modalContextFromAppContext)((0, _.bp)())
+  return (0, m.modalContextFromAppContext)((0, _.bp)())
 }
 
 function A(e) {
@@ -146,7 +146,7 @@ let N = [];
 
 function P() {
   let e = C(),
-    t = (0, h.useModalsStore)(t => true !== t[e] ? t[e] : N),
+    t = (0, m.useModalsStore)(t => true !== t[e] ? t[e] : N),
     n = i.useMemo(() => A(t), [t]),
     a = i.useRef(true);
   i.useLayoutEffect(() => {
@@ -159,16 +159,16 @@ function P() {
       let e = a.current;
       null != e && null != e.onCloseRequest && false !== e.dismissable && e.onCloseRequest()
     };
-    return m.S.subscribe(E.CkL.MODAL_CLOSE, e), () => {
-      m.S.unsubscribe(E.CkL.MODAL_CLOSE, e)
+    return h.S.subscribe(E.CkL.MODAL_CLOSE, e), () => {
+      h.S.unsubscribe(E.CkL.MODAL_CLOSE, e)
     }
   }, [o]);
   let s = i.useCallback(() => {
       let e = a.current;
-      (null == e ? true : e.dismissable) !== false && m.S.dispatch(E.CkL.MODAL_CLOSE)
+      (null == e ? true : e.dismissable) !== false && h.S.dispatch(E.CkL.MODAL_CLOSE)
     }, []),
     p = i.useCallback(t => {
-      (0, h.closeModal)(t, e)
+      (0, m.closeModal)(t, e)
     }, [e]),
     _ = I.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
   return (0, r.jsxs)(u.W, {

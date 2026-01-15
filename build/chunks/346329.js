@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   installApplication: () => f,
-  performDefaultLibraryApplicationAction: () => m,
+  performDefaultLibraryApplicationAction: () => h,
   playApplication: () => i.a,
   repairApplication: () => _,
   updateApplication: () => p
@@ -36,7 +36,7 @@ function _(e, t, n) {
   if (null != i) return r.cG(i, t, n)
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = (0, s.i)(e, l.Z, c.Z),
     {
       analyticsParams: r

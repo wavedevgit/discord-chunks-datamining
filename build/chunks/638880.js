@@ -38,15 +38,15 @@ async function O(e) {
       customId: C,
       referrerId: A
     } = e,
-    N = (0, m.Z)(),
+    N = (0, h.Z)(),
     P = i.Z.getChannel(l),
-    R = null == P ? true : P.getGuildId(),
-    w = null == R || "" === R,
+    w = null == P ? true : P.getGuildId(),
+    R = null == w || "" === w,
     D = o.default.getCurrentUser();
   if (null == D) returnfalse;
-  if (null == P || w && !P.isPrivate() || null == l) return Promise.resolve(false);
+  if (null == P || R && !P.isPrivate() || null == l) return Promise.resolve(false);
   let x = u.ZP.getCurrentEmbeddedActivity();
-  if ((null == x ? true : x.applicationId) != null && (t = r.Z.getApplication(null == x ? true : x.applicationId)), a.Z.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, p.p)(x.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(R, x.location), Promise.resolve(true);
+  if ((null == x ? true : x.applicationId) != null && (t = r.Z.getApplication(null == x ? true : x.applicationId)), a.Z.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, p.p)(x.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(w, x.location), Promise.resolve(true);
   let L = await (0, _.Z)(n, l);
   if (!await (0, f.p)({
       applicationId: n,
@@ -57,7 +57,7 @@ async function O(e) {
       user: D
     })) returnfalse;
   if (null != P) {
-    let e = (0, h.Z)(P.id),
+    let e = (0, m.Z)(P.id),
       n = b.wP.includes(P.type);
     if (e) {
       if (!await (0, g.Z)({

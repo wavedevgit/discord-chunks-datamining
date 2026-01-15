@@ -22,8 +22,8 @@ function d(e) {
     onMouseMove: f,
     onMouseLeave: p,
     onFocus: _,
-    idle: m
-  } = e, h = (0, i.q)(n);
+    idle: h
+  } = e, m = (0, i.q)(n);
   return (0, r.jsxs)("div", {
     className: u.videoControls,
     onMouseMove: f,
@@ -32,8 +32,8 @@ function d(e) {
     children: [(0, r.jsx)("div", {
       className: u.topControls,
       children: (0, r.jsx)(s.r, {
-        idle: m,
-        title: null != (t = null == h ? true : h.name) ? t : "",
+        idle: h,
+        title: null != (t = null == m ? true : m.name) ? t : "",
         onJumpToChannel: _,
         preventIdleComponent: o.Z
       })

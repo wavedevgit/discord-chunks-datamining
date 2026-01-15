@@ -25,8 +25,8 @@ let f = {
         disabled: f,
         required: p,
         granularity: _,
-        hourCycle: m,
-        hideTimeZone: h,
+        hourCycle: h,
+        hideTimeZone: m,
         showMinMax: g
       } = e, [E, b] = i.useState((0, a.Lg)((0, a.iT)())), [y, O] = i.useState(""), v = i.useCallback(e => {
         b(e), O("")
@@ -55,8 +55,8 @@ let f = {
           disabled: f,
           required: p,
           granularity: _,
-          hourCycle: m,
-          hideTimeZone: h,
+          hourCycle: h,
+          hideTimeZone: m,
           minValue: g ? (0, o.sG)("2024-01-01") : true,
           maxValue: g ? (0, o.sG)("2024-12-31") : true,
           errorMessage: y,

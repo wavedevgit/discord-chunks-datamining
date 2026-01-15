@@ -2,7 +2,7 @@
 /** chunk id: 49800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -74,7 +74,7 @@ let _ = {
     BRAND: Chunk238011.cardBrand,
     CUSTOM: Chunk238011.card
   },
-  m = Chunk473749.forwardRef((e, t) => {
+  h = Chunk473749.forwardRef((e, t) => {
     let n;
     var {
       children: i,
@@ -82,13 +82,13 @@ let _ = {
       type: l = _.PRIMARY,
       className: u,
       outline: p = false
-    } = e, m = f(e, ["children", "editable", "type", "className", "outline"]);
+    } = e, h = f(e, ["children", "editable", "type", "className", "outline"]);
     return p ? n = s.outline : l === _.PRIMARY && a && (n = s.editable), (0, r.jsx)("div", d(c({
       ref: t,
       className: o()(u, l, n)
-    }, m), {
+    }, h), {
       children: i
     }))
   });
-m.displayName = "Card", m.Types = _;
-let h = m
+h.displayName = "Card", h.Types = _;
+let m = h

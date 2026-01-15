@@ -50,9 +50,9 @@ let d = new Map,
   f = new Set,
   p = null,
   _ = false,
-  m = false;
+  h = false;
 
-function h(e) {
+function m(e) {
   let {
     userId: t
   } = e;
@@ -110,7 +110,7 @@ function S() {
 }
 
 function I() {
-  S(), m = true
+  S(), h = true
 }
 
 function T() {
@@ -137,14 +137,14 @@ class C extends(r = Chunk442837.ZP.Store) {
     return _
   }
   get hasInitialized() {
-    return m
+    return h
   }
 }
 s(C, "displayName", "ContentInventoryOutboxStore");
 let A = new C(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   LOGOUT: T,
-  CONTENT_INVENTORY_FETCH_OUTBOX_START: h,
+  CONTENT_INVENTORY_FETCH_OUTBOX_START: m,
   CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: g,
   CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE: E,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: b,

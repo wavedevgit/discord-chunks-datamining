@@ -51,7 +51,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,8 +62,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -99,7 +99,7 @@ function z() {
   let n = y.Z.getVoiceChannelId();
   null == n || e.includes(n) || e.push(n);
   let r = f.default.getRemoteSessionId(),
-    i = I.Z.getVoiceStateForSession(h.default.getId(), r);
+    i = I.Z.getVoiceStateForSession(m.default.getId(), r);
   (null == i ? true : i.channelId) != null && e.push(null == i ? true : i.channelId), s().difference(L, e).forEach(ei);
   let a = s().difference(e, L);
   return L = e, a
@@ -156,11 +156,11 @@ function et(e) {
 }
 
 function en(e) {
-  let t = h.default.getId(),
+  let t = m.default.getId(),
     n = W(e);
   if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
   let r = C.dF.NONE,
-    i = n.toArray(T.sI.STREAM).find(e => e.type === C.fO.STREAM && m.Z.getActiveStreamForStreamKey(e.id));
+    i = n.toArray(T.sI.STREAM).find(e => e.type === C.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
   if (null != i) a()(i.type === C.fO.STREAM, "Impossible condition"), r = i.id;
   else if (1 === n.size()) r = t;
   else if (1 === n.size(T.sI.VIDEO)) {
@@ -174,7 +174,7 @@ function en(e) {
   let [s] = X(e);
   if (s !== C.dF.AUTO && s !== C.dF.NONE) {
     let e = n.getParticipant(s);
-    (null == e || e.type === C.fO.STREAM && null == m.Z.getActiveStreamForStreamKey(e.id)) && (s = C.dF.NONE)
+    (null == e || e.type === C.fO.STREAM && null == h.Z.getActiveStreamForStreamKey(e.id)) && (s = C.dF.NONE)
   }
   ee(e, [s, r])
 }
@@ -252,7 +252,7 @@ function ed(e) {
 }
 
 function ef() {
-  return q(e => e.updateParticipantSpeaking(h.default.getId()))
+  return q(e => e.updateParticipantSpeaking(m.default.getId()))
 }
 
 function ep(e) {
@@ -269,14 +269,14 @@ function e_(e) {
   return q(e => e.rebuild(), [t])
 }
 
-function em(e) {
+function eh(e) {
   let {
     channelId: t
   } = e;
   return ei(t)
 }
 
-function eh(e) {
+function em(e) {
   let {
     guild: t
   } = e, n = [];
@@ -307,7 +307,7 @@ function eb(e) {
   let {
     channelId: t,
     selfStreamHidden: n
-  } = e, r = h.default.getId();
+  } = e, r = m.default.getId();
   if (n) {
     let [e] = X(t);
     (0, p.DB)(e) && e.includes(r) && ee(t, null)
@@ -361,7 +361,7 @@ function eI(e) {
       let {
         ownerId: e
       } = (0, p.my)(n);
-      e === h.default.getId() && Q(e, [t])
+      e === m.default.getId() && Q(e, [t])
     } catch (e) {
       D.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
@@ -421,12 +421,12 @@ function eP(e) {
     layout: n,
     appContext: r
   } = e;
-  G[t] = w(P({}, G[t]), {
+  G[t] = R(P({}, G[t]), {
     [r]: n
   })
 }
 
-function eR(e) {
+function ew(e) {
   let {
     streamKey: t
   } = e, {
@@ -436,7 +436,7 @@ function eR(e) {
   return Q(r, [n])
 }
 
-function ew(e) {
+function eR(e) {
   let {
     streamKey: t
   } = e, {
@@ -523,7 +523,7 @@ function eZ(e) {
 }
 class eF extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(m.Z, h.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, S.Z, I.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(F, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, S.Z, I.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(F, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -645,7 +645,7 @@ let eB = new eF(Chunk570140.Z, {
   THREAD_DELETE: eN,
   CALL_CREATE: e_,
   CALL_UPDATE: e_,
-  CALL_DELETE: em,
+  CALL_DELETE: eh,
   CHANNEL_RTC_SELECT_PARTICIPANT: eI,
   CHANNEL_RTC_POPOUT_PARTICIPANT: eT,
   CHANNEL_RTC_RETURN_PARTICIPANT: eC,
@@ -661,9 +661,9 @@ let eB = new eF(Chunk570140.Z, {
   RTC_CONNECTION_PLATFORM: ex,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: eL,
   MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: ej,
-  STREAM_CLOSE: eR,
-  STREAM_DELETE: eR,
-  STREAM_WATCH: ew,
+  STREAM_CLOSE: ew,
+  STREAM_DELETE: ew,
+  STREAM_WATCH: eR,
   SPEAKING: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: ed,
@@ -672,5 +672,5 @@ let eB = new eF(Chunk570140.Z, {
   GUILD_RING_STOP: ek,
   USER_UPDATE: ep,
   GUILD_MEMBER_UPDATE: ep,
-  GUILD_DELETE: eh
+  GUILD_DELETE: em
 })

@@ -51,14 +51,14 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 910,
-  h = 1400,
+let h = 910,
+  m = 1400,
   g = e => {
     let {
       cards: t,
       className: n,
       cardType: a
-    } = e, d = () => window.innerWidth < m ? 1 : window.innerWidth < h ? 2 : 3, [p, g] = i.useState(0), [E, b] = i.useState(d()), y = t.length;
+    } = e, d = () => window.innerWidth < h ? 1 : window.innerWidth < m ? 2 : 3, [p, g] = i.useState(0), [E, b] = i.useState(d()), y = t.length;
     i.useEffect(() => {
       let e = () => {
         b(d())

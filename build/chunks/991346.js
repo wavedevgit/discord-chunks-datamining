@@ -128,7 +128,7 @@ function Y() {
     location: "settings"
   }), {
     showRedesign: t
-  } = w.b.useExperiment({
+  } = R.b.useExperiment({
     location: "settings"
   }), n = H({
     shouldMergeGameSettings: e,
@@ -147,8 +147,8 @@ function Y() {
 
 function W() {
   var e, t, n, o;
-  let v = (0, h.YO)().length,
-    w = (0, m.U)(),
+  let v = (0, m.YO)().length,
+    R = (0, h.U)(),
     M = (0, i.e7)([C.Z], () => C.Z.getSearchParams()),
     k = (0, _.gU)(),
     G = (0, j.bC)(),
@@ -184,7 +184,7 @@ function W() {
       hasIgnoredUsers: T.Z.getIgnoredIDs().length > 0
     })),
     en = (0, N.pY)("SettingRendererUtils"),
-    er = (0, R.s)("SettingRendererUtils"),
+    er = (0, w.s)("SettingRendererUtils"),
     ei = en || er,
     {
       inputMode: ea,
@@ -204,7 +204,7 @@ function W() {
     eu = (0, s.z)("useGenerateUserSettingsSections");
   return r.useMemo(() => (0, L.iE)({
     unseenGiftCount: v,
-    showPrepaidPaymentPastDueWarning: w,
+    showPrepaidPaymentPastDueWarning: R,
     searchParams: M,
     numOfPendingFamilyRequests: k,
     isOverlaySupported: G,
@@ -230,7 +230,7 @@ function W() {
     isChatMentionSuggestionsSettingEnabled: el,
     isRedesignedNotificationsEnabled: ec,
     isHDRAccessibilitySettingExperimentEnabled: eu
-  }), [Q, F, ee, et, z, $, q, M, J, K, Y, H, G, V, X, k, W, B, w, v, ei, ea, eo, es, el, ec, eu])
+  }), [Q, F, ee, et, z, $, q, M, J, K, Y, H, G, V, X, k, W, B, R, v, ei, ea, eo, es, el, ec, eu])
 }
 
 function K(e) {
@@ -324,7 +324,7 @@ function X() {
     }),
     {
       showRedesign: n
-    } = w.b.useExperiment({
+    } = R.b.useExperiment({
       location: "settings"
     }),
     i = r.useMemo(() => H({

@@ -23,8 +23,8 @@ function d(e, t, n) {
 let f = {},
   p = {},
   _ = new Set,
-  m = new Set,
-  h = {},
+  h = new Set,
+  m = {},
   g = {};
 
 function E(e) {
@@ -34,7 +34,7 @@ function E(e) {
   if (null != n) {
     var r;
     let t = new Set(Object.keys(n.paymentSourcePrices));
-    h[e.id] = t;
+    m[e.id] = t;
     let i = Array.from(null != (r = g[e.skuId]) ? r : new Set);
     g[e.skuId] = new Set([...i, ...Array.from(t)])
   }
@@ -72,7 +72,7 @@ function v(e) {
     skuId: t,
     subscriptionPlans: n
   } = e;
-  p[t] = new Set, g[t] = new Set, n.forEach(y), _.delete(t), m.delete(t)
+  p[t] = new Set, g[t] = new Set, n.forEach(y), _.delete(t), h.delete(t)
 }
 
 function S(e) {
@@ -86,7 +86,7 @@ function I(e) {
   let {
     skuId: t
   } = e;
-  _.delete(t), m.delete(t)
+  _.delete(t), h.delete(t)
 }
 
 function T(e) {
@@ -97,7 +97,7 @@ function T(e) {
 }
 
 function C() {
-  (0, s.Ti)(f), (0, s.Ti)(p), _.clear(), m.clear(), (0, s.Ti)(h), (0, s.Ti)(g), b()
+  (0, s.Ti)(f), (0, s.Ti)(p), _.clear(), h.clear(), (0, s.Ti)(m), (0, s.Ti)(g), b()
 }
 b();
 let A = [Chunk474936.rV.DAY, Chunk474936.rV.MONTH, Chunk474936.rV.YEAR];
@@ -136,7 +136,7 @@ class N extends(r = Chunk442837.ZP.Store) {
     return e.some(e => this.isFetchingForSKU(e))
   }
   isLoadedForSKU(e) {
-    return !!m.has(e) || !_.has(e) && null != p[e]
+    return !!h.has(e) || !_.has(e) && null != p[e]
   }
   isLoadedForSKUs(e) {
     return e.every(e => this.isLoadedForSKU(e))
@@ -148,14 +148,14 @@ class N extends(r = Chunk442837.ZP.Store) {
     return u.YQ.every(e => this.isLoadedForSKU(e))
   }
   ignoreSKUFetch(e) {
-    m.add(e)
+    h.add(e)
   }
   getPaymentSourcesForPlanId(e) {
-    return h.hasOwnProperty(e) ? h[e] : null
+    return m.hasOwnProperty(e) ? m[e] : null
   }
   getPaymentSourceIds() {
     let e = new Set;
-    return Object.values(h).forEach(t => t.forEach(t => e.add(t))), e
+    return Object.values(m).forEach(t => t.forEach(t => e.add(t))), e
   }
   hasPaymentSourceForSKUId(e, t) {
     return u.Si.NONE === t || null != g[t] && g[t].has(e)

@@ -4,7 +4,7 @@
 require.d(exports, {
   $c: () => p,
   Nx: () => _,
-  On: () => m,
+  On: () => h,
   tQ: () => d,
   x5: () => f
 });
@@ -44,7 +44,7 @@ let d = {
     comboKeysBindGlobal: true,
     action: () => ((0, a.Hm)("keybind"), false)
   },
-  m = {
+  h = {
     binds: (0, Chunk358085.isMac)() ? ["mod+]"] : ["alt+right"],
     comboKeysBindGlobal: true,
     action: () => ((0, a.TL)("keybind"), false)

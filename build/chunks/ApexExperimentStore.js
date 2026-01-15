@@ -51,9 +51,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -103,8 +103,8 @@ let O = [Chunk341691.Cm.User, Chunk341691.Cm.Installation],
   A = {},
   N = new Set,
   P = new Set,
-  R = "apexTrackedExposures",
-  w = 2,
+  w = "apexTrackedExposures",
+  R = 2,
   D = 6048e5,
   x = {},
   L = 3,
@@ -179,7 +179,7 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     let {
       [e]: t
     } = I;
-    I = m(I, [e].map(E))
+    I = h(I, [e].map(E))
   }
   createSessionOverride(e, t) {
     T = _(f({}, T), {
@@ -195,7 +195,7 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     let {
       [e]: t
     } = T;
-    T = m(T, [e].map(E))
+    T = h(T, [e].map(E))
   }
   setExperimentsMetadata(e) {
     A = f({}, A, Object.fromEntries(e.map(e => [e.name, e])))
@@ -216,7 +216,7 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     return T[e]
   }
   handleLogout(e) {
-    e || (this.clearUserServerAssignments(), this.clearSessionOverrides()), l.K.remove(R), this.clearAllTrackedExposures()
+    e || (this.clearUserServerAssignments(), this.clearSessionOverrides()), l.K.remove(w), this.clearAllTrackedExposures()
   }
   registerExperiment(e) {
     S[e.name] = e, null != C[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
@@ -285,8 +285,8 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t || Date.now() - t > D
   }
   loadTrackedExposures() {
-    let e = l.K.get(R);
-    if (null == e || e.version !== w) return {};
+    let e = l.K.get(w);
+    if (null == e || e.version !== R) return {};
     let t = e.exposures,
       n = Date.now(),
       r = false;
@@ -295,8 +295,8 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
   }
   saveTrackedExposures(e) {
     try {
-      l.K.set(R, {
-        version: w,
+      l.K.set(w, {
+        version: R,
         exposures: e
       })
     } catch (e) {

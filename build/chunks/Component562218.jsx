@@ -2,7 +2,7 @@
 /** chunk id: 562218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => h
+  G: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
-let h = () => {
+let m = () => {
     var e;
     let {
       transitionState: t,
@@ -25,7 +25,7 @@ let h = () => {
       premiumType: s,
       setStep: f,
       premiumSubscription: p,
-      paymentsBlocked: h,
+      paymentsBlocked: m,
       planId: E,
       handleCancellation: b
     } = (0, u.a)(), [y, O] = (0, i.useState)(false), [v, S] = (0, i.useState)(false), I = async () => {
@@ -47,36 +47,36 @@ let h = () => {
       return !d.dJ.has(t)
     })) != null, C = [];
     C.push({
-      text: m.intl.string(m.t.h9tkAK),
+      text: h.intl.string(h.t.h9tkAK),
       onClick: () => n(),
       variant: "secondary"
     }), T ? C.push({
-      text: m.intl.string(m.t.PDTjLN),
+      text: h.intl.string(h.t.PDTjLN),
       onClick: () => f(c.R.PREVIEW),
       disabled: y,
       variant: "critical-primary",
       loading: y
     }) : C.push({
-      text: m.intl.string(m.t["cY+Oob"]),
+      text: h.intl.string(h.t["cY+Oob"]),
       onClick: () => I(),
       disabled: y,
       variant: "critical-primary",
       loading: y
     });
     let A = (0, l.Ju)(E),
-      N = A ? m.intl.string(_.default.qbDPGM) : m.intl.formatToPlainString(m.t.LZunzZ, {
+      N = A ? h.intl.string(_.default.qbDPGM) : h.intl.formatToPlainString(h.t.LZunzZ, {
         planPremiumType: l.ZP.getTierDisplayNameByPlanId("".concat(E))
       });
     return (0, r.jsx)(a.Modal, {
       size: "md",
       transitionState: t,
       title: N,
-      subtitle: g(h, s, p, A),
+      subtitle: g(m, s, p, A),
       actions: C,
       onClose: async () => n(),
       children: v ? (0, r.jsx)(o.M14, {
         type: "critical",
-        children: m.intl.string(m.t["5mlOCW"])
+        children: h.intl.string(h.t["5mlOCW"])
       }) : null
     })
   },
@@ -85,32 +85,32 @@ let h = () => {
       case p.O0b.PAST_DUE:
       case p.O0b.PAUSED:
       case p.O0b.BILLING_RETRY:
-        return m.intl.string(m.t.FClXh9);
+        return h.intl.string(h.t.FClXh9);
       default:
-        if (r) return m.intl.formatToPlainString(_.default.MI8Rml, {
+        if (r) return h.intl.formatToPlainString(_.default.MI8Rml, {
           endDate: n.currentPeriodEnd,
           premiumGroupProductName: (0, f.sO)()
         });
         switch (t) {
           case d.PremiumTypes.TIER_0:
-            return e ? m.intl.format(m.t["l+A50F"], {
+            return e ? h.intl.format(h.t["l+A50F"], {
               date: n.currentPeriodEnd,
               helpdeskArticle: s.Z.getArticleURL(p.BhN.BLOCKED_PAYMENTS)
-            }) : m.intl.format(m.t.Y6Wfaw, {
+            }) : h.intl.format(h.t.Y6Wfaw, {
               date: n.currentPeriodEnd
             });
           case d.PremiumTypes.TIER_1:
-            return e ? m.intl.format(m.t.QN7eIt, {
+            return e ? h.intl.format(h.t.QN7eIt, {
               date: n.currentPeriodEnd,
               helpdeskArticle: s.Z.getArticleURL(p.BhN.BLOCKED_PAYMENTS)
-            }) : m.intl.format(m.t.X7i9D8, {
+            }) : h.intl.format(h.t.X7i9D8, {
               date: n.currentPeriodEnd
             });
           default:
-            return e ? m.intl.format(m.t.vuSNhj, {
+            return e ? h.intl.format(h.t.vuSNhj, {
               date: n.currentPeriodEnd,
               helpdeskArticle: s.Z.getArticleURL(p.BhN.BLOCKED_PAYMENTS)
-            }) : m.intl.format(m.t.fCdmNs, {
+            }) : h.intl.format(h.t.fCdmNs, {
               date: n.currentPeriodEnd
             })
         }

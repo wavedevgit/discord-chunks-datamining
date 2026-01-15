@@ -31,6 +31,6 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.CHAT_PANEL, {
   C = (0, Chunk509613.m7)(Chunk313789.n.CHAT_SIDEBAR_ITEM, {
     useTitle: () => N.intl.string(N.t["/VQax8"]),
     getLegacySearchKey: () => (0, u.Gl)("ChatPanel") ? true : I.s6.CHAT,
-    icon: Chunk657707.kBi,
+    icon: Chunk657707.ChatIcon,
     buildLayout: () => [(0, u.Gl)("ChatPanel") ? A : O]
   })

@@ -161,7 +161,7 @@ let $ = e => {
       skuId: u,
       selectedPlanId: f,
       setSelectedPlanId: p,
-      priceOptions: h,
+      priceOptions: m,
       planOptions: g,
       eligibleForMultiMonthPlans: y,
       subscriptionPeriodEnd: v,
@@ -169,13 +169,13 @@ let $ = e => {
     } = e, {
       activeSubscription: T,
       setSelectedPlanId: N,
-      selectedSkuId: w,
+      selectedSkuId: R,
       selectedPlan: D,
       priceOptions: x,
       userTrialOffer: L,
       isEligibleForTrial: j,
       discountOffer: M
-    } = (0, m.JL)(), {
+    } = (0, h.JL)(), {
       isGift: k,
       giftRecipient: U,
       selectedGiftStyle: G,
@@ -191,7 +191,7 @@ let $ = e => {
     o()(true !== q, "should not be undefined");
     let [X, J] = (0, s.Wu)([b.Z], () => [null != q ? b.Z.get(q.planId) : null, null != f ? b.Z.get(f) : null]), $ = null == L ? true : L.subscription_trial, ee = (0, A.Vi)(), et = null != J ? J : D, en = i.useCallback(e => {
       null != p ? p(e) : N(e)
-    }, [p, N]), er = null != h ? h : x;
+    }, [p, N]), er = null != m ? m : x;
     o()(null != er, "Price option has to be set");
     let ei = null == M || null == (t = M.discount) ? true : t.plan_ids,
       ea = null != M && g.some(e => null == ei ? true : ei.includes(e)) && null != M.discount,
@@ -221,13 +221,13 @@ let $ = e => {
       ed = (null == et ? true : et.id) != null ? (0, S.aS)(et.id, false, k, er) : true,
       {
         ipCountryCode: ef
-      } = (0, R.Z)(),
+      } = (0, w.Z)(),
       ep = "HR" === ef && null != ed && ed.currency === V.pK.EUR,
       e_ = (0, S.Ap)(er.paymentSourceId),
-      em = i.useMemo(() => (null == $ ? true : $.interval) === F.rV.DAY ? (null == $ ? true : $.interval_count) > 7 ? H.intl.string(H.t.Z1V2cs) : H.intl.string(H.t.MI1rHs) : H.intl.string(H.t["+S5lrV"]), [$]),
-      eh = !k && (ea || null != $ && j && null != v);
+      eh = i.useMemo(() => (null == $ ? true : $.interval) === F.rV.DAY ? (null == $ ? true : $.interval_count) > 7 ? H.intl.string(H.t.Z1V2cs) : H.intl.string(H.t.MI1rHs) : H.intl.string(H.t["+S5lrV"]), [$]),
+      em = !k && (ea || null != $ && j && null != v);
     return {
-      skuId: null != u ? u : w,
+      skuId: null != u ? u : R,
       setPlanId: en,
       selectedPlan: et,
       selectedPlanPrice: ed,
@@ -235,7 +235,7 @@ let $ = e => {
       premiumSubscription: q,
       thePriceOptions: er,
       hasSeenCollectiblesInSkuSelect: z,
-      shouldShowUpdatedPaymentModal: eh,
+      shouldShowUpdatedPaymentModal: em,
       shouldShowHRKEuroWarning: ep,
       canContinue: es,
       isPrepaid: e_,
@@ -249,7 +249,7 @@ let $ = e => {
       isEligibleForBOGOPromotion: ee,
       isEligibleForTrial: j,
       userTrialOffer: L,
-      trialPeriodCopy: em,
+      trialPeriodCopy: eh,
       discountOffer: M,
       isPlansEligibleForDiscount: ea,
       discountedPlanRegularPrice: eo,
@@ -308,8 +308,8 @@ let $ = e => {
       selectedPlanPrice: d,
       useCompactGiftComponents: f,
       handleClose: _,
-      showTotal: m,
-      switchPlanSelectComponent: h,
+      showTotal: h,
+      switchPlanSelectComponent: m,
       warningComponent: g
     } = e, E = () => {
       if ((0, O.MY)(t) === O.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != i) return (0, r.jsx)(j.Z, {
@@ -333,18 +333,18 @@ let $ = e => {
         children: [(0, r.jsx)(Z.s, {
           className: f ? Y.compactSendGiftToUser : true,
           giftRecipient: t
-        }), E(), b(h), g, !o && (0, r.jsx)(p.Z, {
+        }), E(), b(m), g, !o && (0, r.jsx)(p.Z, {
           onClose: _
         })]
       })]
     });
-    let y = l && m;
+    let y = l && h;
     return (0, r.jsxs)("div", {
       className: Y.stepBody,
       children: [(0, r.jsx)(Z.s, {
         className: f ? Y.compactSendGiftToUser : true,
         giftRecipient: t
-      }), b(h), y && null != u && null != d && (0, r.jsx)(et, {
+      }), b(m), y && null != u && null != d && (0, r.jsx)(et, {
         selectedPlan: u,
         selectedPlanPrice: d,
         intervalType: null,
@@ -368,7 +368,7 @@ let $ = e => {
       isGift: d,
       giftRecipient: f
     } = (0, _.wD)(), p = d && (0, O.pO)(f), {
-      enabled: m
+      enabled: h
     } = N.Z.getCurrentConfig({
       location: "PremiumSwitchPlanSelectOption"
     }, {
@@ -385,8 +385,8 @@ let $ = e => {
       isEligibleForTrial: o,
       userLocale: u,
       isCustomGift: p,
-      shouldUseCalculatedDiscount: m,
-      discountOffer: (0, w.N)(),
+      shouldUseCalculatedDiscount: h,
+      discountOffer: (0, R.N)(),
       isEligibleForBOGOPromotion: (0, A.Vi)()
     }
   },
@@ -420,8 +420,8 @@ function ea(e) {
     subscriptionPeriodEnd: f,
     showTotal: p = true,
     discountInvoiceItems: _,
-    useCompactGiftComponents: m,
-    handleClose: h
+    useCompactGiftComponents: h,
+    handleClose: m
   } = e, {
     skuId: g,
     setPlanId: E,
@@ -434,8 +434,8 @@ function ea(e) {
     giftRecipient: A,
     customGiftMessage: N,
     setCustomGiftMessage: P,
-    selectedGiftStyle: R,
-    discountOffer: w,
+    selectedGiftStyle: w,
+    discountOffer: R,
     isPlansEligibleForDiscount: D,
     discountedPlanRegularPrice: x,
     hasSeenCollectiblesInSkuSelect: j,
@@ -489,7 +489,7 @@ function ea(e) {
           variant: "text-sm/normal",
           className: Y.trialPlanSelectHeader,
           children: H.intl.format(H.t["nG7g/E"], {
-            numMonths: null != (a = null == w ? true : w.discount.user_usage_limit) ? a : "",
+            numMonths: null != (a = null == R ? true : R.discount.user_usage_limit) ? a : "",
             discountedPrice: (0, I.T4)(x.amount - Z, x.currency),
             regularPrice: (0, I.T4)(x.amount, x.currency)
           })
@@ -529,14 +529,14 @@ function ea(e) {
     giftRecipient: A,
     customGiftMessage: N,
     setCustomGiftMessage: P,
-    selectedGiftStyle: R,
+    selectedGiftStyle: w,
     hasSeenCollectiblesInSkuSelect: j,
     isPrepaid: W,
     canContinue: X,
     selectedPlan: b,
     selectedPlanPrice: q,
-    useCompactGiftComponents: m,
-    handleClose: h,
+    useCompactGiftComponents: h,
+    handleClose: m,
     showTotal: p,
     switchPlanSelectComponent: ea(),
     warningComponent: eo()
@@ -577,8 +577,8 @@ function eo(e) {
   } = e, {
     paymentSources: f,
     selectedPlan: p
-  } = (0, m.JL)(), {
-    isGift: h,
+  } = (0, h.JL)(), {
+    isGift: m,
     giftRecipient: g,
     claimableRewards: E
   } = (0, _.wD)(), b = (0, O.pO)(g);
@@ -587,7 +587,7 @@ function eo(e) {
       paymentSources: i,
       onStepChange: t,
       selectedPlanId: n,
-      isGift: h,
+      isGift: m,
       claimableRewards: E,
       shouldRenderUpdatedPaymentModal: l,
       isTrial: u,
@@ -597,7 +597,7 @@ function eo(e) {
       text: H.intl.string(H.t.XqMe3N),
       disabled: true
     }), o ? (0, r.jsx)(k.Z, {
-      className: h && b ? Y.equalDistantBackButton : true,
+      className: m && b ? Y.equalDistantBackButton : true,
       onClick: a
     }) : null]
   })
@@ -616,12 +616,12 @@ function es(e) {
   } = e, f = (0, s.e7)([y.Z], () => y.Z.getPremiumTypeSubscription()), {
     step: p,
     selectedPlan: _
-  } = (0, m.JL)(), {
+  } = (0, h.JL)(), {
     hasEntitlements: g
   } = (0, U.H)(n, i), E = null != f && null != f.paymentSourceId || Object.keys(o).length > 0 || g && !u;
   var b = l ? H.intl.string(H.t.PDTjLN) : H.intl.string(H.t.XqMe3N),
-    O = h.h8.ADD_PAYMENT_STEPS;
-  return E && (O = h.h8.REVIEW), (0, P.id)(_, i, a) && p !== h.h8.SELECT_FREE_SKU && (O = h.h8.SELECT_FREE_SKU), (0, r.jsx)(c.Button, {
+    O = m.h8.ADD_PAYMENT_STEPS;
+  return E && (O = m.h8.REVIEW), (0, P.id)(_, i, a) && p !== m.h8.SELECT_FREE_SKU && (O = m.h8.SELECT_FREE_SKU), (0, r.jsx)(c.Button, {
     variant: "primary",
     text: b,
     onClick: () => t(O),

@@ -4,7 +4,7 @@
 require.d(exports, {
   FW: () => f,
   fZ: () => _,
-  py: () => m
+  py: () => h
 }), require("./388685.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -26,8 +26,8 @@ function f(e, t) {
     canMentionEveryone: f,
     canMentionOtherGlobals: p = true,
     useNewSlashCommands: _,
-    canOnlyUseTextCommands: m,
-    canSendStickers: h,
+    canOnlyUseTextCommands: h,
+    canSendStickers: m,
     canSendSoundmoji: g,
     hideMentionDescription: E,
     hidePersonalInformation: b,
@@ -50,7 +50,7 @@ function f(e, t) {
       otherGlobals: false
     },
     commands: u.L8.DISABLED,
-    allowStickers: true === h,
+    allowStickers: true === m,
     allowSoundmoji: true === g,
     forNonStringCommandOption: null != i && i.type !== a.jw.STRING,
     hideMentionDescription: true === E,
@@ -87,7 +87,7 @@ function f(e, t) {
     let e = (0, o.$z)(i);
     e.canMentionChannels && (P.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (P.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (P.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (P.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), e.canMentionOtherGlobals && (P.mentions.otherGlobals = true), P.hideMentionDescription = true
   } else d && (P.mentions.channel = u.nS.ALLOW_SELECTABLE), c && (P.mentions.role = u.Fw.ALLOW_MENTIONABLE), l && (P.mentions.user = u.h3.ALLOW_CHANNEL), f && (P.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE), p && (P.mentions.otherGlobals = true);
-  return (null == (n = y.commands) ? true : n.enabled) && (_ ? P.commands = m ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : P.commands = u.L8.OLD_BUILT_INS), null != i && null != i.channelTypes && (P.allowedChannelTypes = i.channelTypes), P
+  return (null == (n = y.commands) ? true : n.enabled) && (_ ? P.commands = h ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : P.commands = u.L8.OLD_BUILT_INS), null != i && null != i.channelTypes && (P.allowedChannelTypes = i.channelTypes), P
 }
 
 function p(e) {
@@ -116,17 +116,17 @@ function _(e) {
     textValue: s,
     optionText: f,
     parentAutocompleteInputType: _,
-    parentAutocompleteInputValue: m
-  } = e, h = null;
+    parentAutocompleteInputValue: h
+  } = e, m = null;
   for (let e of c.R) {
     var g, E, b, y, O, v;
     let S = c.W[e];
     if (null != _) {
       if (S.autocompleteInputElementType === _) {
-        i()(null != m, "parentAutocompleteInputValue is null, but we're in an inline autocomplete object"), h = {
+        i()(null != h, "parentAutocompleteInputValue is null, but we're in an inline autocomplete object"), m = {
           type: e,
           typeInfo: S,
-          query: m
+          query: h
         };
         break
       }
@@ -143,7 +143,7 @@ function _(e) {
               isAtStart: false,
               options: r
             })) {
-            h = {
+            m = {
               type: e,
               typeInfo: S,
               query: s
@@ -184,7 +184,7 @@ function _(e) {
             isAtStart: true,
             options: r
           })) {
-          h = {
+          m = {
             type: e,
             typeInfo: S,
             query: s.substring(null != (E = null == (g = S.sentinel) ? true : g.length) ? E : 0)
@@ -200,7 +200,7 @@ function _(e) {
             isAtStart: o,
             options: r
           })) {
-          h = {
+          m = {
             type: e,
             typeInfo: S,
             query: s
@@ -216,7 +216,7 @@ function _(e) {
             isAtStart: o,
             options: r
           })) {
-          h = {
+          m = {
             type: e,
             typeInfo: S,
             query: a.substring(null != (y = null == (b = S.sentinel) ? true : b.length) ? y : 0)
@@ -231,7 +231,7 @@ function _(e) {
           isAtStart: o,
           options: r
         })) {
-        h = {
+        m = {
           type: e,
           typeInfo: S,
           query: a.substring(null != (v = null == (O = S.sentinel) ? true : O.length) ? v : 0)
@@ -240,10 +240,10 @@ function _(e) {
       }
     }
   }
-  return null == h ? null : (h.query = h.query.toLocaleLowerCase(), h)
+  return null == m ? null : (m.query = m.query.toLocaleLowerCase(), m)
 }
 
-function m(e, t) {
+function h(e, t) {
   let n;
   if (null == t || null == e) return null;
   if (null != e.choices || e.autocomplete) n = u.eq.CHOICES;

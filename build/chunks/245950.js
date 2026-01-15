@@ -16,12 +16,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = "M/D/YY",
-  m = "M/D/YY";
+  h = "M/D/YY";
 
-function h(e) {
+function m(e) {
   let {
     subscription: t
-  } = e, n = a()(t.currentPeriodEnd).format(_), r = null != t.price ? (0, l.T4)(t.price, t.currency) : "", i = a()(t.createdAt).format(m), o = t.status === f.O0b.CANCELED, s = t.status === f.O0b.PAST_DUE, c = t.hasActiveTrial;
+  } = e, n = a()(t.currentPeriodEnd).format(_), r = null != t.price ? (0, l.T4)(t.price, t.currency) : "", i = a()(t.createdAt).format(h), o = t.status === f.O0b.CANCELED, s = t.status === f.O0b.PAST_DUE, c = t.hasActiveTrial;
   return {
     memberSince: i,
     nextRenewalDate: n,
@@ -46,7 +46,7 @@ function g(e) {
   r.useEffect(() => {
     l && null != a && null == u.Z.getSubscriptionSettings(a.id) && _(a.id)
   }, [l, a, _]);
-  let m = null == n ? true : h({
+  let h = null == n ? true : m({
     subscription: e
   });
   return {
@@ -55,6 +55,6 @@ function g(e) {
     handleToggleExpanded: p,
     listing: n,
     groupListing: i,
-    subscriptionInfo: m
+    subscriptionInfo: h
   }
 }

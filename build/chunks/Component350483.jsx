@@ -60,13 +60,13 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  let n = [m.ME, ...d.ZP.getFlattenedGuildIds()],
+  let n = [h.ME, ...d.ZP.getFlattenedGuildIds()],
     r = n.indexOf(e);
   return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
 }
 
 function v(e, t) {
-  return e === m.ME ? f.Z.getPrivateChannelIds() : (0, s.Z)(e, {
+  return e === h.ME ? f.Z.getPrivateChannelIds() : (0, s.Z)(e, {
     withVoiceChannels: t,
     withCurrentVoiceChannel: true
   }).map(e => e.id)
@@ -75,7 +75,7 @@ function v(e, t) {
 function S(e, t) {
   return [{
     resourceId: e,
-    type: h.W.GUILD_EVENT
+    type: m.W.GUILD_EVENT
   }, ...v(e, t)]
 }
 
@@ -84,11 +84,11 @@ function I(e, t) {
   let s, {
       channelPredicate: d = () => true,
       guildPredicate: f = () => true,
-      guildFeaturePredicate: h = () => false,
+      guildFeaturePredicate: m = () => false,
       ensureChatIsVisible: g = () => false,
       withVoiceChannels: b = false
     } = t,
-    v = null != (i = l.Z.getState().guildId) ? i : m.ME,
+    v = null != (i = l.Z.getState().guildId) ? i : h.ME,
     I = l.Z.getState().channelId,
     T = O(v, e),
     C = e > 0 ? 0 : T.length - 1,
@@ -99,7 +99,7 @@ function I(e, t) {
       for (; null != s && "" !== s;) {
         if ("string" == typeof s) {
           if (d(v, s)) return (0, _.K)(v, s, false, g(v, s))
-        } else if ("object" == typeof s && h(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, _.K)(v, null == (a = c.ZP.getDefaultChannel(v)) ? true : a.id), (0, o.ZDy)(async () => {
+        } else if ("object" == typeof s && m(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, _.K)(v, null == (a = c.ZP.getDefaultChannel(v)) ? true : a.id), (0, o.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("4096"), n.e("56236"), n.e("11393")]).then(n.bind(n, 17671));
@@ -112,7 +112,7 @@ function I(e, t) {
     if (C += e, null == (v = T[C]) || "" === v) break;
     A = S(v, b), N = e < 0 ? A.length - 1 : 0
   }
-  p.S.dispatch(m.CkL.SHAKE_APP, {
+  p.S.dispatch(h.CkL.SHAKE_APP, {
     duration: 200,
     intensity: 2
   })

@@ -2,7 +2,7 @@
 /** chunk id: 924356, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,26 +18,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h() {
+function m() {
   var e;
   let t = (0, c.Xg)(),
     n = null == (e = (0, d.J)()) || e,
-    h = (0, l.xi)(),
+    m = (0, l.xi)(),
     g = (0, s.Jm)(),
-    E = i.useMemo(() => (!h || !!g) && !n, [h, n, g]),
+    E = i.useMemo(() => (!m || !!g) && !n, [m, n, g]),
     b = i.useCallback(e => {
-      if (h && e) return void a.Z.showAgeVerificationGetStartedModal({
+      if (m && e) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: o.cU.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
       });
       u.xM.updateSetting(e)
-    }, [h]);
+    }, [m]);
   return (0, r.jsx)(f.U, {
     setting: _.s6.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_APPS_V2,
     children: (0, r.jsx)(p.ZP, {
       value: t,
       onChange: b,
-      title: m.intl.string(m.t.XahVjj),
-      note: m.intl.string(m.t.R9fXyS),
+      title: h.intl.string(h.t.XahVjj),
+      note: h.intl.string(h.t.R9fXyS),
       disabled: E
     })
   })

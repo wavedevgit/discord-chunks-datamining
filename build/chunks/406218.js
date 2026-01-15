@@ -2,8 +2,8 @@
 /** chunk id: 406218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PC: () => h,
-  o_: () => m,
+  PC: () => m,
+  o_: () => h,
   sO: () => _,
   xo: () => p
 }), require("./388685.js"), require("./953529.js");
@@ -99,14 +99,14 @@ function _(e) {
   }).filter(o.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), true !== e.tag && (t.tag = e.tag), true !== e.badge && (t.badge = e.badge), true !== e.badgeColorPrimary && (t.badge_color_primary = e.badgeColorPrimary), true !== e.badgeColorSecondary && (t.badge_color_secondary = e.badgeColorSecondary), t
 }
 
-function m(e) {
+function h(e) {
   return e.reduce((e, t) => (e[t.game_application_id] = {
     level: t.activity_level,
     score: t.activity_score
   }, e), {})
 }
 
-function h(e) {
+function m(e) {
   var t, n, r, i, a, o;
   let {
     guild: l,

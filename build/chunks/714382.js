@@ -45,12 +45,12 @@ function l(e, t, n) {
     f === d && (f = d.slice())
   }
 
-  function m() {
+  function h() {
     if (p) throw Error(r(3));
     return u
   }
 
-  function h(e) {
+  function m(e) {
     if ("function" != typeof e) throw Error(r(4));
     if (p) throw Error(r(5));
     var t = true;
@@ -86,13 +86,13 @@ function l(e, t, n) {
   }
 
   function b() {
-    var e, t = h;
+    var e, t = m;
     return (e = {
       subscribe: function(e) {
         if ("object" != typeof e || null === e) throw Error(r(11));
 
         function n() {
-          e.next && e.next(m())
+          e.next && e.next(h())
         }
         return n(), {
           unsubscribe: t(n)
@@ -106,8 +106,8 @@ function l(e, t, n) {
     type: o.INIT
   }), (a = {
     dispatch: g,
-    subscribe: h,
-    getState: m,
+    subscribe: m,
+    getState: h,
     replaceReducer: E
   })[i] = b, a
 }

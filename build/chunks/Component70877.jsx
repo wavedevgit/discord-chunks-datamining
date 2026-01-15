@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk35149 = require("./35149.js"),
-  i = require.n(Chunk35149),
+  r = require.n(Chunk35149),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk593473 = require("./593473.js"),
@@ -27,21 +27,21 @@ let O = "YYYYMMDDTHHmmss",
   m = "YYYY-MM-DDTHH:mm:ss",
   j = /RRULE:.*/;
 
-function N(t, e, n, r) {
+function N(t, e, n, i) {
   var u, N, _;
-  let w, S = (0, a.e7)([v.ZP], () => v.ZP.isActive(t)),
-    D = (0, E.zI)(null != t ? t : "", r),
-    T = (0, a.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(t), [t]),
-    x = (0, a.e7)([f.Z], () => f.Z.getGuild(e), [e]);
-  if (S || null == D || null == T) return null;
-  w = T.entity_type === h.WX.EXTERNAL ? T.entity_metadata.location : null != n && null != x ? P.intl.formatToPlainString(P.t["2t8L04"], {
+  let S, w = (0, a.e7)([b.ZP], () => b.ZP.isActive(t)),
+    D = (0, E.zI)(null != t ? t : "", i),
+    x = (0, a.e7)([b.ZP], () => b.ZP.getGuildScheduledEvent(t), [t]),
+    T = (0, a.e7)([f.Z], () => f.Z.getGuild(e), [e]);
+  if (w || null == D || null == x) return null;
+  S = x.entity_type === h.WX.EXTERNAL ? x.entity_metadata.location : null != n && null != T ? P.intl.formatToPlainString(P.t["2t8L04"], {
     channelName: n.name,
-    guildName: x.name
+    guildName: T.name
   }) : P.intl.string(P.t.VSgOVg);
-  let I = o()(T.scheduled_start_time),
-    C = null != T.scheduled_end_time ? o()(T.scheduled_end_time) : I,
-    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (u = null == n ? true : n.id) ? u : y.lds, true) : "",
-    L = (0, p.KV)(T.recurrence_rule),
+  let I = o()(x.scheduled_start_time),
+    C = null != x.scheduled_end_time ? o()(x.scheduled_end_time) : I,
+    G = null != x.description && "" !== x.description ? g.ZP.unparse(x.description, null != (u = null == n ? true : n.id) ? u : y.lds, true) : "",
+    L = (0, p.KV)(x.recurrence_rule),
     U = null != L ? (0, Z.Ho)(L) : null,
     {
       startTime: A,
@@ -50,15 +50,15 @@ function N(t, e, n, r) {
     M = null != (N = o()(A)) ? N : I,
     k = null != (_ = o()(null != V ? V : A)) ? _ : I,
     R = () => {
-      let t = i()();
+      let t = r()();
       t.createEvent({
         start: I,
         end: C,
-        summary: T.name,
+        summary: x.name,
         description: G,
-        location: w,
+        location: S,
         repeating: U
-      }), b.isPlatformEmbedded ? d.Z.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
+      }), v.isPlatformEmbedded ? d.Z.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
     };
   return (0, l.jsxs)(s.sNh, {
     id: P.intl.string(P.t.k5pvjo),
@@ -71,11 +71,11 @@ function N(t, e, n, r) {
         var t;
         let e = null == U ? true : U.toString(),
           n = {
-            text: T.name,
+            text: x.name,
             dates: "".concat(I.format(O), "/").concat(C.format(O)),
             details: G,
             action: "TEMPLATE",
-            location: w,
+            location: S,
             recur: null != e ? null == (t = j.exec(e)) ? true : t[0] : true
           },
           l = "https://calendar.google.com/calendar/render?".concat((0, c.stringify)(n));
@@ -91,11 +91,11 @@ function N(t, e, n, r) {
       action: () => {
         let t = {
             v: 60,
-            title: T.name,
+            title: x.name,
             st: M.format(O),
             et: k.format(O),
             desc: G,
-            in_loc: w
+            in_loc: S
           },
           e = "https://calendar.yahoo.com/?".concat((0, c.stringify)(t));
         window.open(e, "_blank")
@@ -109,9 +109,9 @@ function N(t, e, n, r) {
             rru: "addevent",
             startdt: M.format(m),
             enddt: k.format(m),
-            subject: T.name,
+            subject: x.name,
             body: G,
-            location: w,
+            location: S,
             allday: false
           },
           e = "https://outlook.live.com/calendar/0/deeplink/compose?".concat((0, c.stringify)(t));

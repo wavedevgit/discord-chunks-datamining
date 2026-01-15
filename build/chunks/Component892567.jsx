@@ -26,7 +26,7 @@ let b = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     let {
       userName: n,
       displayNameStyles: i,
-      effectDisplayType: a = m.F.STATIC,
+      effectDisplayType: a = h.F.STATIC,
       inProfile: l = false,
       textClassName: y,
       loop: v = false,
@@ -41,26 +41,26 @@ let b = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       useReducedMotion: f.Z.useReducedMotion
     })), N = (0, _.Y)({
       location: "UserNameWithEffects"
-    }), P = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), R = null != (t = null == i ? true : i.effectId) ? t : s.m.SOLID, w = (0, d.qgQ)(n), D = (0, u.EJ)(w, R === s.m.TOON ? E.emoji : true), x = (0, p.Z)({
+    }), P = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), w = null != (t = null == i ? true : i.effectId) ? t : s.m.SOLID, R = (0, d.qgQ)(n), D = (0, u.EJ)(R, w === s.m.TOON ? E.emoji : true), x = (0, p.Z)({
       displayNameStyles: N ? i : null,
       backgroundColor: P
     });
     if (!N || null == i) return n;
-    let L = (0, h.K)(R, x, {
+    let L = (0, m.K)(w, x, {
         shouldWrap: S,
         fontOpacity: b.includes(i.fontId) ? I : 1
       }),
-      j = O(R);
+      j = O(w);
     return (0, r.jsxs)("div", {
       className: o()(E.container, C, y, {
-        [E.showEffect]: a !== m.F.PLAIN,
-        [E.animated]: a === m.F.ANIMATED && !A,
+        [E.showEffect]: a !== h.F.PLAIN,
+        [E.animated]: a === h.F.ANIMATED && !A,
         [E.loop]: v,
         [E.inProfile]: l
       }),
       style: L,
       children: [(0, r.jsx)("span", {
-        "data-username-with-effects": w,
+        "data-username-with-effects": R,
         className: o()(E.innerContainer, null == j ? true : j.effectClassName, {
           [E.underlineOnHover]: T
         }),
@@ -68,7 +68,7 @@ let b = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       }), (null == j ? true : j.glowClassName) != null && (0, r.jsx)("span", {
         className: o()(E.glowContainer, E.innerContainer, j.glowClassName),
         "aria-hidden": true,
-        children: w
+        children: R
       })]
     })
   });

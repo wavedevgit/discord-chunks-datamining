@@ -77,7 +77,7 @@ let A = e => {
     return t.type === s.Z.VARIANTS_GROUP && null != d && (null == (e = t.variants) ? true : e[d]) != null ? t.variants[d] : t
   }, [t, d]), p = f.skuId, {
     isPurchased: _
-  } = (0, b.L)(f), h = i.useMemo(() => {
+  } = (0, b.L)(f), m = i.useMemo(() => {
     let e = "6/4";
     switch (t.type) {
       case s.Z.NAMEPLATE:
@@ -99,12 +99,12 @@ let A = e => {
       }
     }
   }, [t]);
-  return _ ? null : (0, m.p)(f) ? (0, r.jsx)(N, {
+  return _ ? null : (0, h.p)(f) ? (0, r.jsx)(N, {
     skuId: p,
     className: o()(l && v.withHover, a),
     iconSize: n,
     isCardHovered: c,
-    nuxGraphic: h
+    nuxGraphic: m
   }) : (0, r.jsx)(N, {
     skuId: p,
     className: o()(v.disabledButton, a),
@@ -112,7 +112,7 @@ let A = e => {
     isCardHovered: c,
     disabled: true,
     tooltipOverrideText: O.intl.string(O.t["50TX9k"]),
-    nuxGraphic: h
+    nuxGraphic: m
   })
 };
 
@@ -121,13 +121,13 @@ function N(e) {
     skuId: t,
     className: a,
     iconSize: s = 20,
-    disabled: m,
+    disabled: h,
     isCardHovered: b,
     tooltipOverrideText: S,
     nuxGraphic: T,
     onClick: A
-  } = e, [N, P] = (0, p.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), R = N === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
-    analyticsLocations: w
+  } = e, [N, P] = (0, p.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), w = N === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
+    analyticsLocations: R
   } = (0, d.ZP)(), D = E.default.getCurrentUser(), x = null != D ? _.Z.getFirstWishlistId(D.id) : null, L = (0, g.ny)(x, t), j = i.useRef(null), [M, k] = i.useState(null);
   i.useEffect(() => {
     k(null)
@@ -140,14 +140,14 @@ function N(e) {
       if (e.stopPropagation(), null == A || A(), U && null != x) {
         k(false);
         try {
-          await h.Z.removeSkuFromWishlist(x, t, w), k(null)
+          await m.Z.removeSkuFromWishlist(x, t, R), k(null)
         } catch (e) {
           k(null), (0, u.showToast)((0, u.createToast)(O.intl.string(O.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(O.intl.string(O.t.F8FvUy))
         }
       } else {
         k(true);
         try {
-          await h.Z.addSkuToWishlist(t, w), k(null), R && null != T && ((0, u.ZDy)(async () => {
+          await m.Z.addSkuToWishlist(t, R), k(null), w && null != T && ((0, u.ZDy)(async () => {
             let {
               default: e
             } = await n.e("36340").then(n.bind(n, 874533));
@@ -159,9 +159,9 @@ function N(e) {
           k(null), (0, u.showToast)((0, u.createToast)(O.intl.string(O.t.F8FvUy), u.ToastType.FAILURE)), u.uvj.announce(O.intl.string(O.t.F8FvUy))
         }
       }
-    }, [U, x, t, w, R, T, P, A]),
+    }, [U, x, t, R, w, T, P, A]),
     V = U ? O.intl.string(O.t.yr9TTf) : O.intl.string(O.t["8DkMEQ"]);
-  return (b || U) && null != D ? m ? (0, r.jsx)(c.u, {
+  return (b || U) && null != D ? h ? (0, r.jsx)(c.u, {
     text: null != S ? S : V,
     "aria-label": null != S ? S : V,
     children: (0, r.jsx)(u.P3F, {
@@ -176,7 +176,7 @@ function N(e) {
         width: s
       })
     })
-  }) : R ? (0, r.jsx)(c.i_, {
+  }) : w ? (0, r.jsx)(c.i_, {
     title: O.intl.string(O.t["47Rhc3"]),
     body: O.intl.string(O.t.PXjA0b),
     "aria-label": V,

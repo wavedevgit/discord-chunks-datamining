@@ -44,7 +44,7 @@ function _(e) {
     textVariant: i,
     button: f,
     buttonAnalyticsObject: _,
-    className: h,
+    className: m,
     onSubscribeModalClose: g,
     position: E = "floating"
   } = e, b = l.V.useConfig({
@@ -62,8 +62,8 @@ function _(e) {
     className: a()(d.upsellContainer, b && d.upsellRedesignEnabled, {
       [d.upsellContainerFloating]: "floating" === E,
       [d.upsellContainerInline]: "inline" === E
-    }, h),
-    children: (0, r.jsxs)(m, {
+    }, m),
+    children: (0, r.jsxs)(h, {
       children: [(0, r.jsx)(s.Text, {
         variant: null != i ? i : "text-sm/medium",
         color: "text-strong",
@@ -81,7 +81,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     children: t
   } = e;

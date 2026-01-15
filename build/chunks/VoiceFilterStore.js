@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => U,
-  r: () => h
+  r: () => m
 }), require("./642613.js"), require("./388685.js"), require("./825670.js"), require("./467055.js");
 var r, Chunk315008 = require("./315008.js"),
   Chunk347715 = require("./347715.js"),
@@ -47,12 +47,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var h = function(e) {
+var m = function(e) {
   return e.ERROR_DOWNLOADING_DEPENDENCY = "ERROR_DOWNLOADING_DEPENDENCY", e.ERROR_ACTIVATING_VOICE_FILTER = "ERROR_ACTIVATING_VOICE_FILTER", e
 }({});
 let g = new Chunk710845.Z("VoiceFilterStore"),
@@ -121,7 +121,7 @@ function T(e) {
   let i = {},
     a = v(E.limitedTimeVoices);
   if (E.catalogUpdateTime = a.catalogUpdateTime, r)
-    for (let e of Object.keys(d.x)) i[e] = m(p({}, d.x[e]), {
+    for (let e of Object.keys(d.x)) i[e] = h(p({}, d.x[e]), {
       id: e,
       modelIds: true,
       available: true
@@ -131,7 +131,7 @@ function T(e) {
       models: n,
       available: o
     }
-    of t.voices) Object.hasOwn(d.x, e) && (i[e] = m(p({}, d.x[e]), {
+    of t.voices) Object.hasOwn(d.x, e) && (i[e] = h(p({}, d.x[e]), {
     id: e,
     modelIds: n,
     available: !!r || o,
@@ -218,31 +218,31 @@ function P(e) {
   let {
     modelId: t
   } = e;
-  E.modelState[t] = m(p({}, E.modelState[t]), {
+  E.modelState[t] = h(p({}, E.modelState[t]), {
     status: u.L.DOWNLOADING,
     downloadedBytes: 0
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     modelId: t,
     downloadedBytes: n,
     totalBytes: r
   } = e;
-  E.modelState[t] = m(p({}, E.modelState[t]), {
+  E.modelState[t] = h(p({}, E.modelState[t]), {
     downloadedBytes: n,
     totalBytes: r
   })
 }
 
-function w(e) {
+function R(e) {
   var t;
   let {
     modelId: n,
     error: r
   } = e;
-  (null == (t = E.modelState[n]) ? true : t.status) !== u.L.DOWNLOADED && (E.modelState[n] = m(p({}, E.modelState[n]), {
+  (null == (t = E.modelState[n]) ? true : t.status) !== u.L.DOWNLOADED && (E.modelState[n] = h(p({}, E.modelState[n]), {
     status: u.L.MISSING
   }), "USER_CANCELED_DOWNLOAD" in (null != r ? r : {}) || (E.error = "ERROR_DOWNLOADING_DEPENDENCY"))
 }
@@ -251,7 +251,7 @@ function D(e) {
   let {
     modelId: t
   } = e;
-  E.modelState[t] = m(p({}, E.modelState[t]), {
+  E.modelState[t] = h(p({}, E.modelState[t]), {
     status: u.L.DOWNLOADED,
     downloadedBytes: true
   })
@@ -282,8 +282,8 @@ function k() {
 f(A, "displayName", "VoiceFilterStore");
 let U = new A(Chunk570140.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: P,
-  VOICE_FILTER_DOWNLOAD_PROGRESS: R,
-  VOICE_FILTER_DOWNLOAD_FAILED: w,
+  VOICE_FILTER_DOWNLOAD_PROGRESS: w,
+  VOICE_FILTER_DOWNLOAD_FAILED: R,
   VOICE_FILTER_FILE_READY: D,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: T,
   VOICE_FILTER_CATALOG_FETCH_FAILED: C,

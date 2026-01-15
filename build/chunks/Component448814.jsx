@@ -91,8 +91,8 @@ function C(e) {
       selectedItems: I,
       onSelectionChange: C,
       activeDescendantIndex: P,
-      shouldFocusWrap: R = false,
-      renderListItem: w,
+      shouldFocusWrap: w = false,
+      renderListItem: R,
       renderEmptyState: D,
       maxVisibleItems: x = 5,
       loading: L = false,
@@ -115,7 +115,7 @@ function C(e) {
       async scrollToEnd() {},
       async scrollToStart() {},
       isEnabled: !d,
-      wrap: R,
+      wrap: w,
       preserveFocusPosition: false
     });
   i.useEffect(() => {
@@ -147,7 +147,7 @@ function C(e) {
     }, [u, Y, C, H, f]),
     Q = i.useCallback(e => (0, r.jsx)("div", {
       className: E.listBoxItemContent,
-      children: (0, r.jsx)(m.x, {
+      children: (0, r.jsx)(h.x, {
         variant: "text-md/medium",
         color: "currentColor",
         className: E.listBoxItemLabel,
@@ -189,13 +189,13 @@ function C(e) {
         onClick: () => {
           d || i.disabled || q(i)
         },
-        children: null != (t = null == w ? true : w(i)) ? t : Q(i)
+        children: null != (t = null == R ? true : R(i)) ? t : Q(i)
       }), i.index)
     }
   });
   else {
     var X;
-    t = null != (X = null == D ? true : D()) ? X : (0, r.jsx)(h.z, {})
+    t = null != (X = null == D ? true : D()) ? X : (0, r.jsx)(m.z, {})
   }
   return (0, r.jsx)(c.bG, {
     navigator: W,

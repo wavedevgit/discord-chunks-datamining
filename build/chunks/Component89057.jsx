@@ -26,15 +26,15 @@ var Chunk120356 = require("./120356.js"),
 function E(e) {
   let {
     className: t
-  } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? h : g;
+  } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? m : g;
   return (0, r.jsxs)("div", {
-    className: a()(m.container, t),
+    className: a()(h.container, t),
     children: [(0, r.jsx)(l.Heading, {
-      className: m.header,
+      className: h.header,
       variant: "heading-xl/semibold",
       children: _.intl.string(_.t.vwMEHS)
     }), (0, r.jsxs)(l.Text, {
-      className: m.description,
+      className: h.description,
       variant: "text-md/normal",
       color: "text-default",
       children: [(0, r.jsx)("p", {
@@ -46,7 +46,7 @@ function E(e) {
       })]
     }), (0, r.jsx)("img", {
       src: i,
-      className: m.splashImage,
+      className: h.splashImage,
       alt: "Blocked Payments"
     })]
   })
@@ -54,7 +54,7 @@ function E(e) {
 
 function b() {
   return (0, r.jsx)(E, {
-    className: m.settings
+    className: h.settings
   })
 }
 
@@ -64,7 +64,7 @@ function y(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.xBx, {
-      className: m.blockedPaymentsModalHeader,
+      className: h.blockedPaymentsModalHeader,
       justify: u.Z.Justify.END,
       "data-migration-pending": true,
       children: (0, r.jsx)(l.olH, {
@@ -72,10 +72,10 @@ function y(e) {
         "data-migration-pending": true
       })
     }), (0, r.jsx)(l.hzk, {
-      className: m.blockedPaymentsModalContent,
+      className: h.blockedPaymentsModalContent,
       "data-migration-pending": true,
       children: (0, r.jsx)(E, {
-        className: m.modal
+        className: h.modal
       })
     })]
   })
@@ -86,13 +86,13 @@ function O(e) {
     className: t
   } = e;
   return (0, f.Q)() ? (0, r.jsxs)(l.Zbd, {
-    className: a()(m.blockedPaymentsWarning, t),
+    className: a()(h.blockedPaymentsWarning, t),
     type: l.Zbd.Types.CUSTOM,
     children: [(0, r.jsx)(l.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
-      className: m.blockedPaymentsWarningIcon,
+      className: h.blockedPaymentsWarningIcon,
       color: o.Z.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",

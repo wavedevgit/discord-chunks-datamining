@@ -54,7 +54,7 @@ function _() {
   f = true
 }
 
-function m(e) {
+function h(e) {
   let {
     guildBoostSlots: t
   } = e;
@@ -63,7 +63,7 @@ function m(e) {
   }), f = false, d = true
 }
 
-function h(e) {
+function m(e) {
   let {
     guildBoostSlot: t
   } = e;
@@ -101,9 +101,9 @@ class b extends(r = Chunk442837.ZP.Store) {
 s(b, "displayName", "GuildBoostSlotStore");
 let y = new b(Chunk570140.Z, {
   GUILD_BOOST_SLOTS_FETCH: _,
-  GUILD_BOOST_SLOTS_FETCH_SUCCESS: m,
-  GUILD_BOOST_SLOT_UPDATE_SUCCESS: h,
-  GUILD_BOOST_SLOT_CREATE: h,
-  GUILD_BOOST_SLOT_UPDATE: h,
+  GUILD_BOOST_SLOTS_FETCH_SUCCESS: h,
+  GUILD_BOOST_SLOT_UPDATE_SUCCESS: m,
+  GUILD_BOOST_SLOT_CREATE: m,
+  GUILD_BOOST_SLOT_UPDATE: m,
   LOGOUT: g
 })

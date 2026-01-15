@@ -2,7 +2,7 @@
 /** chunk id: 153867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V1: () => m,
+  V1: () => h,
   ZI: () => E,
   ZP: () => b
 });
@@ -19,7 +19,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk981631 = require("./981631.js"),
   Chunk874893 = require("./874893.js");
 
-function m(e) {
+function h(e) {
   return f.hW.updateAsync("guildFolders", t => {
     t.folders = e.map(e => {
       let t = r.yX.create({
@@ -36,7 +36,7 @@ function m(e) {
   }, f.fy.FREQUENT_USER_ACTION)
 }
 
-function h(e) {
+function m(e) {
   switch (e) {
     case p.BRd.DARK:
       return r.Q2.DARK;
@@ -93,7 +93,7 @@ function E(e) {
         }
       }
     }), l.Z.shouldSync("appearance")) return f.hW.updateAsync("appearance", e => {
-    e.theme = h(r), e.clientThemeSettings = g({
+    e.theme = m(r), e.clientThemeSettings = g({
       backgroundGradientPresetId: t,
       customUserThemeSettings: n
     })
@@ -178,7 +178,7 @@ let b = {
         }
       }
     }), l.Z.shouldSync("appearance") && f.hW.updateAsync("appearance", t => {
-      t.theme = h(e)
+      t.theme = m(e)
     }, f.fy.INFREQUENT_USER_ACTION)
   }
 }

@@ -124,11 +124,11 @@ async function T(e) {
 }
 
 function C(e) {
-  if (m.Z.totalUnavailableGuilds > 0 || !p.Z.isConnected()) return e;
+  if (h.Z.totalUnavailableGuilds > 0 || !p.Z.isConnected()) return e;
   let t = e.map(e => {
     var t;
     return null != (t = u.ZP.getCustomEmojiById(e)) ? t : d.ZP.getByName(e)
-  }).filter(h.lm);
+  }).filter(m.lm);
   return [...(0, f.Z)(t).keys()]
 }
 

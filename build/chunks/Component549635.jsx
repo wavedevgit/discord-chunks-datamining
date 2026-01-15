@@ -116,15 +116,15 @@ function T(e) {
     {
       zoomed: P
     } = (0, _.Y)(),
-    R = A(P, g, b, n.contentType, n.originalContentType),
-    w = null != d && 0 !== d && null != p && 0 !== p;
-  if ("VIDEO" === S && w && null != b) {
+    w = A(P, g, b, n.contentType, n.originalContentType),
+    R = null != d && 0 !== d && null != p && 0 !== p;
+  if ("VIDEO" === S && R && null != b) {
     var D;
     let e = I(b);
     if (null == e) return null;
     let t = null != (D = n.renderLinkComponent) ? D : u.iT;
     return (0, r.jsx)(l.Z, y(E({}, N), {
-      src: R,
+      src: w,
       width: d,
       height: p,
       maxWidth: a,
@@ -143,29 +143,29 @@ function T(e) {
       disableArrowKeySeek: true
     }))
   }
-  return "IMAGE" === S && (t = w ? (0, r.jsx)(s.ZP, y(E({}, N), {
-    src: R,
+  return "IMAGE" === S && (t = R ? (0, r.jsx)(s.ZP, y(E({}, N), {
+    src: w,
     width: d,
     height: p,
     maxWidth: a,
     maxHeight: o,
     useFullWidth: true,
     shouldLink: false,
-    className: h.media,
+    className: m.media,
     animated: !i && n.animated,
     autoPlay: !i,
     alt: v,
     onContextMenu: c
   })) : (0, r.jsx)("img", {
-    src: R,
+    src: w,
     alt: v,
     onContextMenu: c,
-    className: h.dimensionlessImage,
+    className: m.dimensionlessImage,
     style: {
       maxWidth: a,
       maxHeight: o
     }
-  })), null != t ? (0, r.jsx)(m.Z, {
+  })), null != t ? (0, r.jsx)(h.Z, {
     children: t
   }) : null
 }

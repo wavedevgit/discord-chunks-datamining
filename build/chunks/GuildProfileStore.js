@@ -60,7 +60,7 @@ let p = new Map,
     error: null
   };
 
-function m(e) {
+function h(e) {
   let {
     guildId: t
   } = e, n = p.get(t);
@@ -71,7 +71,7 @@ function m(e) {
   }))
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     profile: n
@@ -244,8 +244,8 @@ class A extends(r = Chunk442837.ZP.Store) {
 }
 l(A, "displayName", "GuildProfileStore");
 let N = new A(Chunk570140.Z, {
-  GUILD_PROFILE_FETCH: m,
-  GUILD_PROFILE_FETCH_SUCCESS: h,
+  GUILD_PROFILE_FETCH: h,
+  GUILD_PROFILE_FETCH_SUCCESS: m,
   GUILD_PROFILE_FETCH_FAILURE: g,
   GUILD_PROFILE_UPDATE: E,
   GUILD_PROFILE_UPDATE_SUCCESS: b,

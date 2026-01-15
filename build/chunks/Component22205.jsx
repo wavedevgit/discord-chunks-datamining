@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk249993 = require("./249993.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,8 +40,8 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = o().throttle(() => {
-    h.Z.increment({
+let R = o().throttle(() => {
+    m.Z.increment({
       name: u.V.APP_CRASHED,
       tags: ["reason:".concat(l.v.UNHANDLED_JS_ERROR), "level:".concat(c.c.FATAL)]
     }, true)
@@ -58,23 +58,23 @@ function x(e) {
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
-  } = e, p = i.useMemo(() => new s.SpringValue(1), []), h = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), S = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, m.ZP)(() => (h.current = setTimeout(R, D), _.Z.track(A.rMx.NOTIFICATION_VIEWED, {
+  } = e, p = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), S = (0, d.e7)([E.default], () => E.default.getCurrentUser());
+  (0, h.ZP)(() => (m.current = setTimeout(w, D), _.Z.track(A.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
-    null != h.current && clearTimeout(h.current)
+    null != m.current && clearTimeout(m.current)
   }));
-  let R = i.useCallback(() => {
-      p.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
+  let w = i.useCallback(() => {
+      p.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [p, o, u]),
-    w = i.useCallback(e => {
+    R = i.useCallback(e => {
       O || (v(true), null == o || o(), _.Z.track(A.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
     }, [o, l, O]),
     x = i.useCallback(e => {
-      e.stopPropagation(), e.shiftKey ? (y(true), null != h.current && clearTimeout(h.current)) : y(false)
+      e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
     L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
@@ -117,7 +117,7 @@ function x(e) {
       className: P.notificationIcon
     }),
     onNotificationClick: x,
-    onConfirmClick: w,
+    onConfirmClick: R,
     onCancelClick: null != j ? L : true,
     onDismissClick: o,
     expand: true,
@@ -153,7 +153,7 @@ class L extends Chunk473749.PureComponent {
       error_stack: e.stack,
       sentry_issue_id: i,
       error_level: "fatal"
-    }), w(), this.pid = r
+    }), R(), this.pid = r
   }
   render() {
     let {
@@ -197,11 +197,11 @@ class L extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), R(this, "state", {
+    super(...e), w(this, "state", {
       error: null,
       showError: true,
       info: null
-    }), R(this, "pid", null)
+    }), w(this, "pid", null)
   }
 }
 let j = L

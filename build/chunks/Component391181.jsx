@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk446285 = require("./446285.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -72,12 +72,12 @@ function O(e) {
     onDeleteProduct: d,
     onCopyLink: f,
     onTestDownload: p,
-    onReportProduct: h,
+    onReportProduct: m,
     closePopout: g,
     onSelect: E
   } = e;
   return (0, r.jsx)("div", {
-    className: m.menuContainer,
+    className: h.menuContainer,
     children: (0, r.jsxs)(s.v2r, {
       navId: "guild-product-context",
       onClose: g,
@@ -115,7 +115,7 @@ function O(e) {
           id: "guild-product-report",
           label: _.intl.string(_.t["6yUzvG"]),
           color: "danger",
-          action: h
+          action: m
         })
       })]
     })
@@ -134,7 +134,7 @@ function v(e) {
     showReportProduct: d,
     onEditProduct: f,
     onUnpublishProduct: p,
-    onDeleteProduct: h,
+    onDeleteProduct: m,
     onCopyProductLink: E,
     onTestDownload: y,
     onReportProduct: v
@@ -160,7 +160,7 @@ function v(e) {
         showDeleteProduct: u,
         onEditProduct: f,
         onUnpublishProduct: p,
-        onDeleteProduct: h,
+        onDeleteProduct: m,
         onCopyLink: E,
         onTestDownload: y,
         onReportProduct: v
@@ -176,11 +176,11 @@ function v(e) {
           }),
           "aria-haspopup": "listbox",
           "aria-expanded": i,
-          className: m.productActionMenuButton,
+          className: h.productActionMenuButton,
           children: (0, r.jsx)(s.Huf, {
             size: "md",
             color: "currentColor",
-            className: m.productActionMenuIcon,
+            className: h.productActionMenuIcon,
             "aria-hidden": true
           })
         }))
@@ -195,7 +195,7 @@ function S(e) {
     guildId: n,
     onEditProduct: i,
     onUnpublishProduct: a,
-    onDeleteProduct: h,
+    onDeleteProduct: m,
     onCopyProductLink: E,
     onTestDownload: S,
     disabled: I = false
@@ -214,7 +214,7 @@ function S(e) {
       showReportProduct: false,
       onEditProduct: i,
       onUnpublishProduct: a,
-      onDeleteProduct: h,
+      onDeleteProduct: m,
       onCopyLink: E,
       onTestDownload: S,
       onReportProduct: () => {}
@@ -222,8 +222,8 @@ function S(e) {
   }
   return (0, r.jsxs)(s.kL8, {
     tag: "article",
-    className: o()(m.productCardClickable, m.productCard, {
-      [m.disabled]: I
+    className: o()(h.productCardClickable, h.productCard, {
+      [h.disabled]: I
     }),
     onClick: I ? true : i,
     onContextMenu: N,
@@ -233,27 +233,27 @@ function S(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: T,
-      className: m.productThumbnail
+      className: h.productThumbnail
     }), (0, r.jsxs)("div", {
-      className: m.productInfo,
+      className: h.productInfo,
       children: [(0, r.jsxs)("div", {
-        className: m.productInfoContent,
+        className: h.productInfoContent,
         children: [(0, r.jsx)(s.Heading, {
           variant: "text-md/semibold",
           color: "text-strong",
-          className: m.productName,
+          className: h.productName,
           children: t.name
         }), (0, r.jsx)(s.LZC, {
           size: 8
         }), (0, r.jsxs)("div", {
-          className: m.productDetails,
+          className: h.productDetails,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: C
           }), null != A ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-              className: m.dotSeparator
+              className: h.dotSeparator
             }), (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               color: "text-default",
@@ -274,7 +274,7 @@ function S(e) {
         showReportProduct: false,
         onEditProduct: i,
         onUnpublishProduct: a,
-        onDeleteProduct: h,
+        onDeleteProduct: m,
         onCopyProductLink: E,
         onTestDownload: S,
         onReportProduct: () => {}

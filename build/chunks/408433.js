@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   En: () => x,
-  HK: () => R,
+  HK: () => w,
   dY: () => A,
   eC: () => D,
   jz: () => P,
   kC: () => I,
   l3: () => N,
   o3: () => C,
-  vP: () => w
+  vP: () => R
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./953529.js"), require("./997841.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -24,8 +24,8 @@ var Chunk392711 = require("./392711.js"),
 let f = /sketchfab/i,
   p = /^https:\/\/sketchfab\.com/i,
   _ = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
-  m = 0x15b7e4a5bfb,
-  h = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
+  h = 0x15b7e4a5bfb,
+  m = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
   g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   E = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop"),
   b = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/game-shop\/([0-9]+)\/([0-9]+)/,
@@ -42,7 +42,7 @@ function O(e) {
 function v(e, t, n) {
   if (null != t && f.test(t.name) || p.test(n.url)) returnfalse;
   let r = null != n.proxy_url || /^https:/i.test(n.url);
-  return null != e && c.default.extractTimestamp(e) < m && (r = r && null != t && _.test(t.name)), r
+  return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && _.test(t.name)), r
 }
 
 function S(e) {
@@ -159,18 +159,18 @@ function A(e) {
 }
 
 function N(e) {
-  return e.type === u.hBH.ARTICLE && null != e.url && (g.test(e.url) || h.test(e.url))
+  return e.type === u.hBH.ARTICLE && null != e.url && (g.test(e.url) || m.test(e.url))
 }
 
 function P(e) {
   return e.type === u.hBH.ARTICLE && null != e.url && E.test(e.url)
 }
 
-function R(e) {
+function w(e) {
   return e.type === u.hBH.ARTICLE && null != e.url && (y.test(e.url) || b.test(e.url))
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   var r;
   return null != t && null != n ? {
     maxMediaWidth: t,

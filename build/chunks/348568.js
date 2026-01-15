@@ -152,20 +152,20 @@ module.exports = function(e, t) {
     u = t.getEndKey(),
     d = t.getEndOffset(),
     _ = a.get(s),
-    m = a.get(u),
-    h = _ instanceof r,
+    h = a.get(u),
+    m = _ instanceof r,
     g = [];
-  if (h) {
-    var E = m.getChildKeys(),
+  if (m) {
+    var E = h.getChildKeys(),
       b = l(u, a);
-    m.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(m, a), a))
+    h.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(h, a), a))
   }
-  n = _ === m ? p(_.getCharacterList(), c, d) : _.getCharacterList().slice(0, c).concat(m.getCharacterList().slice(d));
+  n = _ === h ? p(_.getCharacterList(), c, d) : _.getCharacterList().slice(0, c).concat(h.getCharacterList().slice(d));
   var y = _.merge({
-      text: _.getText().slice(0, c) + m.getText().slice(d),
+      text: _.getText().slice(0, c) + h.getText().slice(d),
       characterList: n
     }),
-    O = h && 0 === c && 0 === d && m.getParentKey() === s && null == m.getPrevSiblingKey() ? o([
+    O = m && 0 === c && 0 === d && h.getParentKey() === s && null == h.getPrevSiblingKey() ? o([
       [s, null]
     ]) : a.toSeq().skipUntil(function(e, t) {
       return t === s
@@ -181,7 +181,7 @@ module.exports = function(e, t) {
     v = a.merge(O).filter(function(e) {
       return !!e
     });
-  return h && _ !== m && (v = f(v, _, m, a)), e.merge({
+  return m && _ !== h && (v = f(v, _, h, a)), e.merge({
     blockMap: v,
     selectionBefore: t,
     selectionAfter: t.merge({

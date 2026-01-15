@@ -17,15 +17,15 @@ let l = (e, t, n, l, c) => () => {
     proxyURL: f,
     width: p,
     height: _
-  } = u, m = null != f && "" !== f ? f : d, h = (0, a.Fo)({
+  } = u, h = null != f && "" !== f ? f : d, m = (0, a.Fo)({
     providerName: c,
     thumbnail: l
   });
   return (0, r.jsx)(o.Z, {
     width: p,
     height: _,
-    src: m,
-    gifSrc: h,
+    src: h,
+    gifSrc: m,
     url: null != e && "" !== e ? e : null != f && "" !== f ? f : d,
     format: null != n ? i.EO.VIDEO : i.EO.IMAGE,
     className: s.gifFavoriteButton

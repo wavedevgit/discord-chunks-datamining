@@ -35,9 +35,9 @@ function d(e, t) {
     case "<=":
       return p(n, o);
     case ">=":
-      return m(n, o);
-    case ">":
       return h(n, o);
+    case ">":
+      return m(n, o);
     case "~":
     case "~>":
       return g(n, o);
@@ -59,12 +59,12 @@ function _(e, t) {
   return 0 === T(e, t)
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = T(e, t);
   return 1 === n || 0 === n
 }
 
-function h(e, t) {
+function m(e, t) {
   return 1 === T(e, t)
 }
 
@@ -74,7 +74,7 @@ function g(e, t) {
   r.length > 1 && r.pop();
   var i = r.length - 1,
     a = parseInt(r[i], 10);
-  return b(a) && (r[i] = a + 1 + ""), m(e, n) && f(e, r)
+  return b(a) && (r[i] = a + 1 + ""), h(e, n) && f(e, r)
 }
 
 function E(e) {

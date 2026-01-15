@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,15 +59,15 @@ function g(e) {
   var t;
   let {
     code: p
-  } = e, m = (0, i.e7)([l.Z], () => l.Z.getGuildTemplate(p));
-  if (null == m || m.state === c.Rj.RESOLVING) return (0, r.jsxs)(o.Z, {
+  } = e, h = (0, i.e7)([l.Z], () => l.Z.getGuildTemplate(p));
+  if (null == h || h.state === c.Rj.RESOLVING) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
       text: u.intl.string(u.t.Xj87Yf)
     }), (0, r.jsx)(o.Z.Body, {
       resolving: true
     })]
   });
-  if (m.state === c.Rj.EXPIRED) return (0, r.jsxs)(o.Z, {
+  if (h.state === c.Rj.EXPIRED) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
       text: u.intl.string(u.t.C7ZRNw)
     }), (0, r.jsxs)(o.Z.Body, {
@@ -84,8 +84,8 @@ function g(e) {
         let {
           default: e
         } = await Promise.all([n.e("10778"), n.e("93099")]).then(n.bind(n, 766775));
-        return t => (0, r.jsx)(e, h(_({}, t), {
-          guildTemplate: m
+        return t => (0, r.jsx)(e, m(_({}, t), {
+          guildTemplate: h
         }))
       })
     },
@@ -95,7 +95,7 @@ function g(e) {
       text: u.intl.string(u.t.W7NTWm)
     }) : (0, r.jsx)(a.Button, {
       onClick: g,
-      loading: m.state === c.Rj.ACCEPTING,
+      loading: h.state === c.Rj.ACCEPTING,
       variant: "active",
       text: u.intl.string(u.t["a3Gl+e"])
     });
@@ -108,9 +108,9 @@ function g(e) {
         children: [(0, r.jsx)(s.Z, {
           className: d.icon
         }), (0, r.jsx)(o.Z.Info, {
-          title: m.name,
+          title: h.name,
           children: u.intl.format(u.t.cGXXHL, {
-            usageCount: String(null != (t = m.usageCount) ? t : 0)
+            usageCount: String(null != (t = h.usageCount) ? t : 0)
           })
         })]
       }), E]

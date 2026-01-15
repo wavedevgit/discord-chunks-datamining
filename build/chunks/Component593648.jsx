@@ -355,7 +355,7 @@ class en extends Chunk473749.PureComponent {
             checked: i,
             onChange: this.handleToggleShowFlash
           })
-        }), (0, r.jsx)(ea, {}), (0, r.jsx)(ed, {}), (0, r.jsx)(ef, {}), (0, r.jsx)(ep, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(e_, {}), (0, r.jsx)(em, {}), (0, r.jsx)(eu, {}), (0, r.jsxs)(A.F, {
+        }), (0, r.jsx)(ea, {}), (0, r.jsx)(ed, {}), (0, r.jsx)(ef, {}), (0, r.jsx)(ep, {}), (0, r.jsx)(em, {}), (0, r.jsx)(e_, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(eu, {}), (0, r.jsxs)(A.F, {
           setting: B.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
           children: [(0, r.jsx)(u.y6, {
             label: W.intl.string(W.t.TTvjd9),
@@ -465,7 +465,7 @@ async function eo(e) {
 }
 async function es(e) {
   e(true), c.K.set("turnedOffNewNotifications", true), L.default.track(V.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
-    num_guilds_with_new_setting: R.Z.getGuildsArray().filter(e => D.ZP.resolveGuildUnreadSetting(e) === Y.i.ONLY_MENTIONS).length
+    num_guilds_with_new_setting: w.Z.getGuildsArray().filter(e => D.ZP.resolveGuildUnreadSetting(e) === Y.i.ONLY_MENTIONS).length
   }), await p.Z.setAccountFlag(H.c.USE_NEW_NOTIFICATIONS, false), e(false)
 }
 
@@ -477,14 +477,14 @@ function el(e) {
 }
 
 function ec() {
-  let e = (0, s.cj)([w.Z], () => ({
-    disableUnreadBadge: w.Z.getDisableUnreadBadge(),
-    taskbarFlash: w.Z.taskbarFlash,
-    disabledSounds: w.Z.getDisabledSounds(),
-    disableAllSounds: w.Z.getDisableAllSounds(),
-    desktopType: w.Z.getDesktopType(),
-    ttsType: w.Z.getTTSType(),
-    notifyMessagesInSelectedChannel: w.Z.getNotifyMessagesInSelectedChannel()
+  let e = (0, s.cj)([R.Z], () => ({
+    disableUnreadBadge: R.Z.getDisableUnreadBadge(),
+    taskbarFlash: R.Z.taskbarFlash,
+    disabledSounds: R.Z.getDisabledSounds(),
+    disableAllSounds: R.Z.getDisableAllSounds(),
+    desktopType: R.Z.getDesktopType(),
+    ttsType: R.Z.getTTSType(),
+    notifyMessagesInSelectedChannel: R.Z.getNotifyMessagesInSelectedChannel()
   }));
   return (0, r.jsx)(el, X(q({}, e), {
     afkTimeout: U.CM.useSetting()
@@ -581,12 +581,12 @@ function e_() {
       label: W.intl.string(K.default["3TO4/r"]),
       description: W.intl.string(K.default.diGDe0),
       checked: e,
-      onChange: h.c
+      onChange: m.c
     })
   })
 }
 
-function em() {
+function eh() {
   let e = U.a7.useSetting();
   return (0, r.jsx)(A.F, {
     setting: B.s6.NOTIFICATIONS_PROFILE_UPDATES,
@@ -599,7 +599,7 @@ function em() {
   })
 }
 
-function eh() {
+function em() {
   let e = U.tT.useSetting();
   return (0, r.jsx)(A.F, {
     setting: B.s6.NOTIFICATIONS_SERVER_TRENDING,

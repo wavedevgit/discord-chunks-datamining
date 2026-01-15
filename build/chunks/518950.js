@@ -21,12 +21,12 @@ function u(e) {
     animateOnHover: f = false,
     avatarDecorationOverride: p,
     avatarOverride: _
-  } = e, m = (0, i.e7)([l.default], () => l.default.getUser(t)), {
-    avatarSrc: h,
+  } = e, h = (0, i.e7)([l.default], () => l.default.getUser(t)), {
+    avatarSrc: m,
     isAvatarAnimating: g,
     eventHandlers: E
   } = (0, c.Z)({
-    user: m,
+    user: h,
     guildId: n,
     size: (0, a.dcp)(u),
     showPending: d,
@@ -37,7 +37,7 @@ function u(e) {
     avatarDecorationSrc: y,
     eventHandlers: O
   } = (0, s.Z)({
-    user: m,
+    user: h,
     guildId: n,
     avatarDecorationOverride: p,
     size: (0, o.y9)(u),
@@ -46,7 +46,7 @@ function u(e) {
   return {
     avatarPlaceholderSrc: b,
     avatarDecorationSrc: y,
-    avatarSrc: h,
+    avatarSrc: m,
     isAnimating: g,
     eventHandlers: {
       onMouseEnter: r.useCallback(() => {

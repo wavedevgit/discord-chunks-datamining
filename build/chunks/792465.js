@@ -60,7 +60,7 @@ module.exports = function(e) {
       scope: "string",
       variants: [u, c, d, f]
     },
-    m = {
+    h = {
       scope: "number",
       variants: [{
         begin: "\\b0[bB][01]+(?:_[01]+)*\\b"
@@ -73,7 +73,7 @@ module.exports = function(e) {
       }],
       relevance: 0
     },
-    h = ["false", "null", "true"],
+    m = ["false", "null", "true"],
     g = ["__CLASS__", "__DIR__", "__FILE__", "__FUNCTION__", "__COMPILER_HALT_OFFSET__", "__LINE__", "__METHOD__", "__NAMESPACE__", "__TRAIT__", "die", "echo", "exit", "include", "include_once", "print", "require", "require_once", "array", "abstract", "and", "as", "binary", "bool", "boolean", "break", "callable", "case", "catch", "class", "clone", "const", "continue", "declare", "default", "do", "double", "else", "elseif", "empty", "enddeclare", "endfor", "endforeach", "endif", "endswitch", "endwhile", "enum", "eval", "extends", "final", "finally", "float", "for", "foreach", "from", "global", "goto", "if", "implements", "instanceof", "insteadof", "int", "integer", "interface", "isset", "iterable", "list", "match|0", "mixed", "new", "never", "object", "or", "private", "protected", "public", "readonly", "real", "return", "string", "switch", "throw", "trait", "try", "unset", "use", "var", "void", "while", "xor", "yield"],
     E = ["Error|0", "AppendIterator", "ArgumentCountError", "ArithmeticError", "ArrayIterator", "ArrayObject", "AssertionError", "BadFunctionCallException", "BadMethodCallException", "CachingIterator", "CallbackFilterIterator", "CompileError", "Countable", "DirectoryIterator", "DivisionByZeroError", "DomainException", "EmptyIterator", "ErrorException", "Exception", "FilesystemIterator", "FilterIterator", "GlobIterator", "InfiniteIterator", "InvalidArgumentException", "IteratorIterator", "LengthException", "LimitIterator", "LogicException", "MultipleIterator", "NoRewindIterator", "OutOfBoundsException", "OutOfRangeException", "OuterIterator", "OverflowException", "ParentIterator", "ParseError", "RangeException", "RecursiveArrayIterator", "RecursiveCachingIterator", "RecursiveCallbackFilterIterator", "RecursiveDirectoryIterator", "RecursiveFilterIterator", "RecursiveIterator", "RecursiveIteratorIterator", "RecursiveRegexIterator", "RecursiveTreeIterator", "RegexIterator", "RuntimeException", "SeekableIterator", "SplDoublyLinkedList", "SplFileInfo", "SplFileObject", "SplFixedArray", "SplHeap", "SplMaxHeap", "SplMinHeap", "SplObjectStorage", "SplObserver", "SplPriorityQueue", "SplQueue", "SplStack", "SplSubject", "SplTempFileObject", "TypeError", "UnderflowException", "UnexpectedValueException", "UnhandledMatchError", "ArrayAccess", "BackedEnum", "Closure", "Fiber", "Generator", "Iterator", "IteratorAggregate", "Serializable", "Stringable", "Throwable", "Traversable", "UnitEnum", "WeakReference", "WeakMap", "Directory", "__PHP_Incomplete_Class", "parent", "php_user_filter", "self", "static", "stdClass"],
     b = {
@@ -83,7 +83,7 @@ module.exports = function(e) {
         return e.forEach(e => {
           t.push(e), e.toLowerCase() === e ? t.push(e.toUpperCase()) : t.push(e.toLowerCase())
         }), t
-      })(h),
+      })(m),
       built_in: E
     },
     y = e => e.map(e => e.replace(/\|\d+$/, "")),
@@ -136,7 +136,7 @@ module.exports = function(e) {
       begin: /\(/,
       end: /\)/,
       keywords: b,
-      contains: [I, o, S, e.C_BLOCK_COMMENT_MODE, _, m, O]
+      contains: [I, o, S, e.C_BLOCK_COMMENT_MODE, _, h, O]
     },
     C = {
       relevance: 0,
@@ -147,21 +147,21 @@ module.exports = function(e) {
       contains: [T]
     };
   T.contains.push(C);
-  let A = [I, S, e.C_BLOCK_COMMENT_MODE, _, m, O],
+  let A = [I, S, e.C_BLOCK_COMMENT_MODE, _, h, O],
     N = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, a)),
       beginScope: "meta",
       end: /]/,
       endScope: "meta",
       keywords: {
-        literal: h,
+        literal: m,
         keyword: ["new", "array"]
       },
       contains: [{
         begin: /\[/,
         end: /]/,
         keywords: {
-          literal: h,
+          literal: m,
           keyword: ["new", "array"]
         },
         contains: ["self", ...A]
@@ -222,7 +222,7 @@ module.exports = function(e) {
         excludeBegin: true,
         excludeEnd: true,
         keywords: b,
-        contains: ["self", N, o, S, e.C_BLOCK_COMMENT_MODE, _, m]
+        contains: ["self", N, o, S, e.C_BLOCK_COMMENT_MODE, _, h]
       }]
     }, {
       scope: "class",
@@ -255,6 +255,6 @@ module.exports = function(e) {
         match: /\b(as|const|function)\b/,
         scope: "keyword"
       }, e.UNDERSCORE_TITLE_MODE]
-    }, _, m]
+    }, _, h]
   }
 }

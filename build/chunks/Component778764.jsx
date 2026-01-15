@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   RegisterWebAuthnCredentialModal: () => P,
-  Z: () => w
+  Z: () => R
 }), require("./388685.js"), require("./49124.js"), require("./457542.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -73,19 +73,19 @@ function P(e) {
     onClose: o,
     ticket: l,
     challenge: c,
-    showAccountSettingsButton: m = false,
+    showAccountSettingsButton: h = false,
     initialSlide: y = O.x.INIT
-  } = e, T = (0, u.Dt)(), [C, A] = i.useState(S.intl.string(S.t["I/sJtJ"])), [N, P] = i.useState(false), [R, w] = i.useState(y), [D, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
+  } = e, T = (0, u.Dt)(), [C, A] = i.useState(S.intl.string(S.t["I/sJtJ"])), [N, P] = i.useState(false), [w, R] = i.useState(y), [D, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
     let e;
-    w(O.x.REGISTER);
-    let t = h.isPlatformEmbedded && E.ZP.supportsFeature(v.eRX.WEBAUTHN) ? E.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
+    R(O.x.REGISTER);
+    let t = m.isPlatformEmbedded && E.ZP.supportsFeature(v.eRX.WEBAUTHN) ? E.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      g.Z.captureException(e), j(S.intl.string(S.t.xSCvBf)), w(O.x.INIT);
+      g.Z.captureException(e), j(S.intl.string(S.t.xSCvBf)), R(O.x.INIT);
       return
     }
-    x(e), w(O.x.NAME)
+    x(e), R(O.x.NAME)
   };
   return (0, r.jsxs)(s.Y0X, {
     transitionState: t,
@@ -97,13 +97,13 @@ function P(e) {
       children: [(0, r.jsxs)(s.Heading, {
         id: T,
         variant: "heading-lg/semibold",
-        children: [R === O.x.INIT && S.intl.string(S.t.vrOCCk), R === O.x.REGISTER && S.intl.string(S.t.wePEBF), R === O.x.NAME && S.intl.string(S.t["cY/IOu"]), R === O.x.SUCCESS && d.Z.parse(S.intl.string(S.t.FXC7ZC))]
+        children: [w === O.x.INIT && S.intl.string(S.t.vrOCCk), w === O.x.REGISTER && S.intl.string(S.t.wePEBF), w === O.x.NAME && S.intl.string(S.t["cY/IOu"]), w === O.x.SUCCESS && d.Z.parse(S.intl.string(S.t.FXC7ZC))]
       }), (0, r.jsx)(s.olH, {
         onClick: o,
         className: I.modalCloseButton
       })]
     }), (0, r.jsxs)(s.MyZ, {
-      activeSlide: R,
+      activeSlide: w,
       width: 440,
       children: [(0, r.jsxs)(s.Mi4, {
         id: O.x.INIT,
@@ -162,9 +162,9 @@ function P(e) {
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
             e.preventDefault(), b.Sr(C, l, D).then(async () => {
-              m ? w(O.x.SUCCESS) : (await (0, p.Yn)(false), o())
+              h ? R(O.x.SUCCESS) : (await (0, p.Yn)(false), o())
             }).catch(() => {
-              j(S.intl.string(S.t.fEptJP)), w(O.x.INIT)
+              j(S.intl.string(S.t.fEptJP)), R(O.x.INIT)
             })
           },
           children: [(0, r.jsxs)(s.hzk, {
@@ -202,7 +202,7 @@ function P(e) {
                 variant: "secondary",
                 text: S.intl.string(S.t["13/7kX"]),
                 onClick: () => {
-                  w(O.x.INIT)
+                  R(O.x.INIT)
                 }
               })]
             })
@@ -248,7 +248,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     onSelect: t,
     credential: i
@@ -282,7 +282,7 @@ function R(e) {
   })
 }
 
-function w() {
+function R() {
   let {
     credentials: e,
     hasFetchedCredentials: t,
@@ -328,7 +328,7 @@ function w() {
         text: S.intl.string(S.t.vrOCCk),
         onClick: c,
         loading: a,
-        disabled: !m.Ae
+        disabled: !h.Ae
       })
     })]
   })
@@ -355,7 +355,7 @@ function x(e) {
         asset: s.Huf
       },
       onClick: t => {
-        (0, l.vq)(t, t => (0, r.jsx)(R, N(C({}, t), {
+        (0, l.vq)(t, t => (0, r.jsx)(w, N(C({}, t), {
           credential: e
         })))
       },

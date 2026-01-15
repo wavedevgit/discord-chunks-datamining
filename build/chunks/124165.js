@@ -45,10 +45,10 @@ function p(e) {
   if (null == p) return;
   let _ = (0, a.c)(n, t),
     {
-      startTime: m
+      startTime: h
     } = (0, o.Kq)(p, n),
-    h = (null == p ? true : p.scheduled_start_time) != null ? (0, s.lh)(_, m, new Date(null == p ? true : p.scheduled_start_time)) : null,
-    g = null != h && l.$I.has(h) ? null : null != n ? n : (0, s.DK)(p),
+    m = (null == p ? true : p.scheduled_start_time) != null ? (0, s.lh)(_, h, new Date(null == p ? true : p.scheduled_start_time)) : null,
+    g = null != m && l.$I.has(m) ? null : null != n ? n : (0, s.DK)(p),
     E = u(p.id),
     b = u(p.id, g);
   null == g ? (c(t, null, r, null != E ? l.gv.UNINTERESTED : l.gv.INTERESTED), null == f || f()) : null != b ? (c(t, g, r, null != E ? l.gv.INTERESTED : l.gv.UNINTERESTED), null == f || f()) : d(p, g)

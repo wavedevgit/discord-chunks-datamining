@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk715523 = require("./715523.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -103,7 +103,7 @@ function v(e) {
   if ("icon" in t) {
     let {
       tooltip: e
-    } = t, a = b(t, ["tooltip"]), o = "md" === n ? "sm" : "xs", l = (0, r.jsx)(s.HLj, E(h({}, a), {
+    } = t, a = b(t, ["tooltip"]), o = "md" === n ? "sm" : "xs", l = (0, r.jsx)(s.HLj, E(m({}, a), {
       size: o,
       variant: "input-accessory"
     }));
@@ -122,7 +122,7 @@ function v(e) {
     let {
       type: e
     } = t, n = b(t, ["type"]);
-    return (0, r.jsx)(s.QSK, E(h({}, n), {
+    return (0, r.jsx)(s.QSK, E(m({}, n), {
       layout: "inline"
     }))
   }
@@ -168,7 +168,7 @@ function I(e) {
     focusProps: c,
     name: u = "",
     type: p = "text",
-    placeholder: m = "",
+    placeholder: h = "",
     maxLength: g,
     value: y,
     defaultValue: I,
@@ -176,8 +176,8 @@ function I(e) {
     error: A,
     defaultDirty: N = false,
     leading: P,
-    trailing: R,
-    validateOn: w = "change",
+    trailing: w,
+    validateOn: R = "change",
     size: D = "md",
     fullWidth: x = false,
     clearable: L = false,
@@ -185,7 +185,7 @@ function I(e) {
   } = e, M = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
     fieldProps: k
   } = (0, s.XF_)(M), U = (0, f.m)({
-    validateOn: w,
+    validateOn: R,
     error: A,
     value: y,
     minLength: C,
@@ -215,8 +215,8 @@ function I(e) {
   ("boolean" == typeof L ? L && null != y && "" !== y && !K : L.show) ? z = (0, r.jsx)(S, {
     inputSize: D,
     onClick: Y
-  }): null != R && (z = (0, r.jsx)(v, {
-    accessory: R,
+  }): null != w && (z = (0, r.jsx)(v, {
+    accessory: w,
     inputSize: D
   }));
   let q = null;
@@ -228,7 +228,7 @@ function I(e) {
     value: y,
     maxLength: g
   }) : null;
-  return (0, r.jsx)(s.gNt, E(h({}, k), {
+  return (0, r.jsx)(s.gNt, E(m({}, k), {
     errorMessage: U.hasError && null != (t = U.errorMessage) ? t : true,
     trailingAuxiliaryContent: Q,
     children: (0, r.jsxs)(s.UPk, {
@@ -242,17 +242,17 @@ function I(e) {
         [_.hasTrailing]: null != z,
         [_.hasTags]: F
       }),
-      children: [q, (0, r.jsx)(s.tEY, E(h({
+      children: [q, (0, r.jsx)(s.tEY, E(m({
         ringTarget: W
       }, c), {
-        children: (0, r.jsx)(T, E(h({
+        children: (0, r.jsx)(T, E(m({
           name: u,
           className: _.input,
           disabled: n,
           readOnly: K,
           "aria-required": k.required,
           type: p,
-          placeholder: m,
+          placeholder: h,
           maxLength: g,
           minLength: C,
           value: y,
@@ -277,7 +277,7 @@ function T(e) {
   } = e, o = b(e, ["value", "defaultValue", "aria-labelledby"]);
   let l = O(t, n),
     c = i.useContext(s.zbb);
-  return (0, r.jsx)("input", E(h({}, o), {
+  return (0, r.jsx)("input", E(m({}, o), {
     value: t,
     defaultValue: n,
     id: null == c ? true : c.controlId,

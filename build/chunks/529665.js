@@ -22,8 +22,8 @@ function o(e, t, n) {
     var e;
     return null == (e = f.onRowAction) ? true : e.call(f, l.key)
   } : d, {
-    itemProps: m,
-    ...h
+    itemProps: h,
+    ...m
   } = (0, a.C)({
     selectionManager: t.selectionManager,
     key: l.key,
@@ -35,11 +35,11 @@ function o(e, t, n) {
   }), g = t.selectionManager.isSelected(l.key), E = {
     role: "row",
     "aria-selected": "none" !== t.selectionManager.selectionMode ? g : true,
-    "aria-disabled": h.isDisabled || true,
-    ...m
+    "aria-disabled": m.isDisabled || true,
+    ...h
   };
   return c && (E["aria-rowindex"] = l.index + 1), {
     rowProps: E,
-    ...h
+    ...m
   }
 }

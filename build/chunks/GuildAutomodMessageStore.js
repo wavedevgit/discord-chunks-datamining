@@ -2,7 +2,7 @@
 /** chunk id: 223606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = {},
-  h = 0,
+let h = {},
+  m = 0,
   g = {},
   E = {},
   b = (e, t) => {
@@ -35,15 +35,15 @@ let m = {},
         messageData: e,
         errorMessage: (0, d.uF)(e, t)
       };
-    m[n] = r, h++
+    h[n] = r, m++
   },
-  y = e => m[e],
+  y = e => h[e],
   O = e => {
-    null != m[e] && delete m[e], h++
+    null != h[e] && delete h[e], m++
   };
 
 function v(e) {
-  return 0 !== Object.keys(m).length && (m = {}, h++, true)
+  return 0 !== Object.keys(h).length && (h = {}, m++, true)
 }
 
 function S(e) {
@@ -120,13 +120,13 @@ function P(e) {
     }, a);
   return null != o && E[i] !== o && (E[i] = o, true)
 }
-class R extends(r = Chunk442837.ZP.PersistedStore) {
+class w extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(l.Z, c.Z), null != e && (m = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
+    this.waitFor(l.Z, c.Z), null != e && (h = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
   }
   getState() {
     return {
-      automodFailedMessages: m,
+      automodFailedMessages: h,
       mentionRaidDetectionByGuild: g,
       lastIncidentAlertMessage: E
     }
@@ -136,7 +136,7 @@ class R extends(r = Chunk442837.ZP.PersistedStore) {
     return null == e ? null : null != (t = y(e)) ? t : null
   }
   getMessagesVersion() {
-    return h
+    return m
   }
   getMentionRaidDetected(e) {
     var t;
@@ -147,8 +147,8 @@ class R extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = E[e]) ? t : null
   }
 }
-_(R, "displayName", "GuildAutomodMessageStore"), _(R, "persistKey", "GuildAutomodMessages");
-let w = new R(Chunk570140.Z, {
+_(w, "displayName", "GuildAutomodMessageStore"), _(w, "persistKey", "GuildAutomodMessages");
+let R = new w(Chunk570140.Z, {
   CONNECTION_OPEN: v,
   LOAD_MESSAGES_SUCCESS: P,
   LOCAL_MESSAGES_LOADED: P,

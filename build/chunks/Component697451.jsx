@@ -148,8 +148,8 @@ function V(e, t, n, i, a, o) {
     compact: d,
     channel: p,
     isInteractionUserBlocked: _,
-    isInteractionUserIgnored: m,
-    showAvatarPopout: h,
+    isInteractionUserIgnored: h,
+    showAvatarPopout: m,
     showTargetAvatarPopout: g,
     onClickAvatar: E,
     onUserContextMenu: b,
@@ -158,7 +158,7 @@ function V(e, t, n, i, a, o) {
     onPopoutRequestClose: v
   } = e;
   if (d && 1 === n) return null;
-  if (d && null == u.activityInstance || _ || m) return (0, r.jsx)("div", {
+  if (d && null == u.activityInstance || _ || h) return (0, r.jsx)("div", {
     className: L.replyBadge,
     children: (0, r.jsx)(F, {
       className: L.commandIcon
@@ -177,7 +177,7 @@ function V(e, t, n, i, a, o) {
       onContextMenu: 1 === n ? O : b,
       ref: o
     }),
-    C = 1 === n ? g : h;
+    C = 1 === n ? g : m;
   return null != a && null != C && null != o ? (0, r.jsx)(f.yRy, {
     targetElementRef: o,
     renderPopout: a,
@@ -296,7 +296,7 @@ function K(e) {
     {
       analyticsLocations: c,
       newestAnalyticsLocation: E
-    } = (0, g.ZP)(h.Z.EXECUTED_COMMAND),
+    } = (0, g.ZP)(m.Z.EXECUTED_COMMAND),
     T = (0, d.e7)([I.default], () => I.default.getCurrentUser()),
     C = i.useRef(null),
     P = i.useRef(null),
@@ -308,7 +308,7 @@ function K(e) {
       messageId: a.id,
       newAnalyticsLocations: n
     }))), [T, s, a.id]),
-    j = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(R.Z, U(M({}, e), {
+    j = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(w.Z, U(M({}, e), {
       channel: s,
       messageId: a.id,
       interactionData: a.interactionData
@@ -318,12 +318,12 @@ function K(e) {
     Z = (null == k ? true : k.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     F = (0, N.Sw)(null == (t = a.interaction) ? true : t.user, s),
     B = (0, N.Sw)(G, s),
-    K = i.useMemo(() => e.compact ? (0, w.Z)((0, A.vc)(u()(), "LT")) : null, [e.compact]),
+    K = i.useMemo(() => e.compact ? (0, R.Z)((0, A.vc)(u()(), "LT")) : null, [e.compact]),
     z = (0, _.NX)(s.id),
     q = a.interaction;
   if (null == q || null == F) return null;
   let Q = () => {
-      let t = V(e, q.user, 0, F, e => D(e, q.user, [h.Z.AVATAR]), C),
+      let t = V(e, q.user, 0, F, e => D(e, q.user, [m.Z.AVATAR]), C),
         n = H(e, q.user, 0, F, e => D(e, q.user));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
@@ -331,7 +331,7 @@ function K(e) {
     },
     X = () => {
       if (null == G) return null;
-      let t = V(e, G, 1, B, e => D(e, G, [h.Z.AVATAR]), C),
+      let t = V(e, G, 1, B, e => D(e, G, [m.Z.AVATAR]), C),
         n = H(e, G, 1, B, e => D(e, G));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
@@ -363,7 +363,7 @@ function K(e) {
           },
           openInPopout: false,
           analyticsLocation: E
-        }), (0, m.w1)({
+        }), (0, h.w1)({
           guildId: s.guild_id
         })
       },

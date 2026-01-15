@@ -25,12 +25,12 @@ function p(e) {
     node: n
   } = e, [u, p] = i.useState(false), {
     useTitle: _,
-    layout: m,
-    collapseAfter: h,
+    layout: h,
+    collapseAfter: m,
     useCollapsibleTitle: g,
     useCollapsedSubtitle: E,
     initialize: b
-  } = n, y = null != h ? m.slice(0, h) : m, O = null != h ? m.slice(h) : [], v = null == _ ? true : _(), S = null != (t = null == g ? true : g(u, O.length)) ? t : f(u, O.length), I = null == E ? true : E();
+  } = n, y = null != m ? h.slice(0, m) : h, O = null != m ? h.slice(m) : [], v = null == _ ? true : _(), S = null != (t = null == g ? true : g(u, O.length)) ? t : f(u, O.length), I = null == E ? true : E();
   return (0, l.D)(b), (0, r.jsxs)(a.Kqy, {
     gap: 8,
     children: [null != v && (0, r.jsx)(a.Heading, {

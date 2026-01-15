@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   }
   return e
 }
-let h = () => {
+let m = () => {
     (0, a.Z)(s.Z.getArticleURL(u.BhN.PREMIUM_GROUP_ABOUT))
   },
   g = () => ({
@@ -48,7 +48,7 @@ let h = () => {
       premiumGroupProductName: (0, c.sO)()
     }),
     description: (0, r.jsx)(o.Z, {
-      onClick: h,
+      onClick: m,
       children: f.intl.string(d.default.yYyGJH)
     }),
     descriptionCta: f.intl.string(f.t.jVcuVY),
@@ -59,7 +59,7 @@ let h = () => {
         let {
           default: e
         } = await n.e("33638").then(n.bind(n, 837244));
-        return t => (0, r.jsx)(e, m({}, t))
+        return t => (0, r.jsx)(e, h({}, t))
       })
     }
   })

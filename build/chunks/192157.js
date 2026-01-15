@@ -44,7 +44,7 @@ function A(e, t, n) {
 
 function N(e = false) {
   let t = P(false, e);
-  return t.parsers.unshift(new m.Z), t.parsers.unshift(new h.Z), t.parsers.unshift(new o.Z), t.parsers.unshift(new E.Z), t.parsers.unshift(new O.Z), t
+  return t.parsers.unshift(new h.Z), t.parsers.unshift(new m.Z), t.parsers.unshift(new o.Z), t.parsers.unshift(new E.Z), t.parsers.unshift(new O.Z), t
 }
 
 function P(e = true, t = false) {

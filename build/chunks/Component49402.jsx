@@ -2,7 +2,7 @@
 /** chunk id: 49402, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => h
+  I: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -69,12 +69,12 @@ function m(e, t) {
   return i
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   let a = (0, c.G6)(e);
   return i.forwardRef(function(u, f) {
     var {
-      children: m,
-      className: h,
+      children: h,
+      className: m,
       dir: g = "ltr",
       orientation: E = "vertical",
       overflow: b = "scroll",
@@ -89,24 +89,24 @@ function h(e, t, n) {
     let {
       scrollerRef: N,
       getScrollerState: P
-    } = (0, c.Ke)(), R = (0, c.t2)(N, E);
+    } = (0, c.Ke)(), w = (0, c.t2)(N, E);
     i.useImperativeHandle(f, () => d({
       getScrollerNode: () => N.current,
       getScrollerState: P
-    }, (0, c.Ue)(N, P, R, E)), [N, P, E, R]);
-    let w = C ? i.Fragment : s.Jc,
+    }, (0, c.Ue)(N, P, w, E)), [N, P, E, w]);
+    let R = C ? i.Fragment : s.Jc,
       D = (0, c.tT)({
         paddingFix: v,
         orientation: E,
         dir: g,
-        className: h,
+        className: m,
         scrollerRef: N,
         specs: a
       });
     return T ? (0, r.jsx)(l.K, p(d({
       gap: I,
       ref: N,
-      className: o()(h, {
+      className: o()(m, {
         [e]: true,
         [t]: y,
         [n]: O
@@ -114,13 +114,13 @@ function h(e, t, n) {
       style: (0, c.uT)(S, E, b),
       dir: g
     }, A), {
-      children: (0, r.jsxs)(w, {
+      children: (0, r.jsxs)(R, {
         containerRef: N,
-        children: [m, D]
+        children: [h, D]
       })
     })) : (0, r.jsx)("div", p(d({
       ref: N,
-      className: o()(h, {
+      className: o()(m, {
         [e]: true,
         [t]: y,
         [n]: O
@@ -128,9 +128,9 @@ function h(e, t, n) {
       style: (0, c.uT)(S, E, b),
       dir: g
     }, A), {
-      children: (0, r.jsxs)(w, {
+      children: (0, r.jsxs)(R, {
         containerRef: N,
-        children: [m, D]
+        children: [h, D]
       })
     }))
   })

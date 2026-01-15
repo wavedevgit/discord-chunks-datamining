@@ -23,7 +23,7 @@ var Chunk749210 = require("./749210.js"),
   Chunk96150 = require("./96150.js");
 
 function g(e, t) {
-  return !!d.Z.can(m.gl, e) && (!p.Zl(e.id) || t === e.id || (p.vu(e, () => y(e, true)), false))
+  return !!d.Z.can(h.gl, e) && (!p.Zl(e.id) || t === e.id || (p.vu(e, () => y(e, true)), false))
 }
 
 function E(e, t) {
@@ -35,7 +35,7 @@ function E(e, t) {
       lurker: true
     }), u.Z.addConditionalChangeListener(() => {
       let e = c.Z.getChannel(t);
-      return null == e || (b(e), h.Z.initialize(), i(e), false)
+      return null == e || (b(e), m.Z.initialize(), i(e), false)
     })
   })
 }

@@ -22,17 +22,17 @@ function p(e) {
     runBeforeLaunchAttempt: p,
     runAfterLaunchAttempt: _
   } = e, {
-    data: m
-  } = (0, o.IX)(t), h = (0, i.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), g = (0, i.e7)([l.Z], () => l.Z.getConnectedFrame()), E = (0, c.A)(m);
+    data: h
+  } = (0, o.IX)(t), m = (0, i.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), g = (0, i.e7)([l.Z], () => l.Z.getConnectedFrame()), E = (0, c.A)(h);
   return r.useCallback(async () => {
-    if (null == t || null == m) return;
-    let e = null != h && h.applicationId === t;
+    if (null == t || null == h) return;
+    let e = null != m && m.applicationId === t;
     if (null != g && g.applicationId === t) return void s.Z.updateFrameLayoutMode({
       applicationId: g.applicationId,
       layoutMode: f.U.FOCUSED
     });
     if (e) {
-      let e = h.location;
+      let e = m.location;
       (0, d.Z)("guild_id" in e ? e.guild_id : null, e);
       return
     }
@@ -43,13 +43,13 @@ function p(e) {
       });
       else {
         var r, i;
-        (null == m || null == (r = m.bot) ? true : r.id) != null && await (0, a.W)({
+        (null == h || null == (r = h.bot) ? true : r.id) != null && await (0, a.W)({
           appId: t,
-          botId: null == m || null == (i = m.bot) ? true : i.id,
+          botId: null == h || null == (i = h.bot) ? true : i.id,
           analyticsLocations: null != n ? n : []
         })
       }
     } catch (e) {}
     null == _ || _()
-  }, [n, m, t, E, h, g, _, p])
+  }, [n, h, t, E, m, g, _, p])
 }

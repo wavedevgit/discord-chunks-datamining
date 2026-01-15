@@ -22,8 +22,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 0,
-  m = 0,
-  h = {},
+  h = 0,
+  m = {},
   g = new Set,
   E = new Map,
   b = {},
@@ -42,7 +42,7 @@ function I(e, t) {
 
 function T(e) {
   var t;
-  let n = null != (t = h[d.ME]) ? t : {};
+  let n = null != (t = m[d.ME]) ? t : {};
   s().each(n, (t, n) => {
     t.channelId === e && P(d.ME, n, () => null)
   })
@@ -64,30 +64,30 @@ function N(e, t) {
 }
 
 function P(e, t, n) {
-  let r = I(h, null != e ? e : d.ME),
+  let r = I(m, null != e ? e : d.ME),
     i = r[t],
     a = n(i);
   return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete I(b, i.channelId)[t], delete I(y, i.channelId)[t]), null != i.sessionId && delete I(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (I(b, a.channelId)[t] = a, a.selfVideo && (I(y, a.channelId)[t] = a, A(null != e ? e : d.ME, t))), null != a.sessionId && (I(O, t)[a.sessionId] = a)), [true, a, i])
 }
 
-function R(e) {
+function w(e) {
   let {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
     let [n, r, a] = x(t.guildId, t);
-    return n ? (t.sessionId === i && null != r && null != a && a.channelId !== r.channelId && (_ += 1), m++, true) : e
+    return n ? (t.sessionId === i && null != r && null != a && a.channelId !== r.channelId && (_ += 1), h++, true) : e
   }, false)
 }
 
-function w(e) {
+function R(e) {
   let t = false;
   for (let n of e.voiceStates) {
     let [r] = x(e.guildId, n);
     t = t || r
   }
   for (let n of e.removedVoiceStateUsers) P(e.guildId, n, () => null), t = true;
-  return t && m++, t
+  return t && h++, t
 }
 
 function D(e) {
@@ -135,11 +135,11 @@ function j(e) {
     user: t,
     sessionId: n
   } = e, a = null != r && r !== t.id;
-  return a && (h = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, a
+  return a && (m = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, a
 }
 
 function M() {
-  h = {}, b = {}, O = {}, y = {}, E.clear()
+  m = {}, b = {}, O = {}, y = {}, E.clear()
 }
 
 function k(e) {
@@ -148,7 +148,7 @@ function k(e) {
     user: n,
     sessionId: a
   } = e;
-  for (let [e, n] of(h = {}, b = {}, O = {}, y = {}, Object.entries(t)))
+  for (let [e, n] of(m = {}, b = {}, O = {}, y = {}, Object.entries(t)))
     for (let [t, r] of Object.entries(n)) P(e, t, () => new u.Z(r));
   r = n.id, i = a
 }
@@ -157,9 +157,9 @@ function U(e) {
   let {
     guild: t
   } = e;
-  s().forEach(h[t.id], e => {
+  s().forEach(m[t.id], e => {
     P(t.id, e.userId, () => null)
-  }), delete h[t.id]
+  }), delete m[t.id]
 }
 
 function G(e) {
@@ -177,13 +177,13 @@ function Z(e) {
 }
 class F extends(a = Chunk442837.ZP.Store) {
   getAllVoiceStates() {
-    return h
-  }
-  getVoiceStateVersion() {
     return m
   }
+  getVoiceStateVersion() {
+    return h
+  }
   getVoiceStates(e) {
-    return I(h, null != e ? e : d.ME)
+    return I(m, null != e ? e : d.ME)
   }
   getVoiceStatesForChannel(e) {
     return I(b, e)
@@ -253,11 +253,11 @@ let B = new F(Chunk570140.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: M,
   OVERLAY_INITIALIZE: k,
   VOICE_CHANNEL_SELECT: L,
-  VOICE_STATE_UPDATES: R,
+  VOICE_STATE_UPDATES: w,
   GUILD_DELETE: U,
   GUILD_CREATE: U,
   CHANNEL_DELETE: G,
   CALL_DELETE: Z,
-  PASSIVE_UPDATE_V2: w,
+  PASSIVE_UPDATE_V2: R,
   RTC_CONNECTION_PLATFORM: D
 })

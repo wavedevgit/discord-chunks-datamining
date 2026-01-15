@@ -53,7 +53,7 @@ let f = new Map,
 function _(e) {
   return [s.BP, e.query, s.t0, e.categoryId, s.KL, e.languageCode].join("-")
 }
-class m {
+class h {
   handleSearchStart() {
     this.error = null, this.isFetching = true
   }
@@ -76,10 +76,10 @@ class m {
   }
 }
 
-function h(e) {
+function m(e) {
   var t;
   let n = _(e),
-    r = null != (t = f.get(n)) ? t : new m({
+    r = null != (t = f.get(n)) ? t : new h({
       query: e.query
     });
   return f.set(n, r), r
@@ -106,7 +106,7 @@ function b(e) {
     categoryId: n,
     languageCode: r
   });
-  i && f.delete(a), h({
+  i && f.delete(a), m({
     query: t,
     categoryId: n,
     languageCode: r
@@ -121,7 +121,7 @@ function y(e) {
     total: i,
     guilds: a
   } = e;
-  h({
+  m({
     query: t,
     categoryId: n,
     languageCode: r
@@ -140,7 +140,7 @@ function O(e) {
     languageCode: r,
     error: i
   } = e;
-  h({
+  m({
     query: t,
     categoryId: n,
     languageCode: r

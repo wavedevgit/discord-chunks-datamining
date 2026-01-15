@@ -2,7 +2,7 @@
 /** chunk id: 678558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -82,7 +82,7 @@ function P(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = e => {
+let w = e => {
   let {
     analyticsLocation: t,
     analyticsSourceLocation: n,
@@ -90,8 +90,8 @@ let R = e => {
     buttonText: I,
     targetBoostedGuildTier: C,
     onClose: P = () => {},
-    closeLayer: R = () => {},
-    pauseAnimation: w = false,
+    closeLayer: w = () => {},
+    pauseAnimation: R = false,
     applicationId: D,
     handleSubscribeModalClose: x,
     withHighlight: L = false,
@@ -100,13 +100,13 @@ let R = e => {
     useExpressiveButton: k = false
   } = e, U = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent", "useExpressiveButton"]), {
     analyticsLocations: G
-  } = (0, p.ZP)(), Z = (0, m.bp)() === y.IlC.POPOUT, [F, B] = i.useState(false), {
+  } = (0, p.ZP)(), Z = (0, h.bp)() === y.IlC.POPOUT, [F, B] = i.useState(false), {
     fractionalState: V
-  } = (0, _.Z)(), H = (0, s.e7)([h.Z], () => h.Z.hasFetched);
+  } = (0, _.Z)(), H = (0, s.e7)([m.Z], () => m.Z.hasFetched);
   i.useEffect(() => {
     H || (0, f.X8)()
   }, [H]);
-  let Y = (0, E.vx)(h.Z.boostSlots),
+  let Y = (0, E.vx)(m.Z.boostSlots),
     W = null != C ? Math.max((0, E.KK)(a, C), 1) : 1,
     K = (0, E.aq)({
       fractionalState: V
@@ -119,7 +119,7 @@ let R = e => {
         guild: a,
         numberOfBoostsToAdd: W,
         onClose: P,
-        closeLayer: R,
+        closeLayer: w,
         inPopout: Z,
         applicationId: D,
         handleSubscribeModalClose: x,
@@ -152,7 +152,7 @@ let R = e => {
     }, e), {
       disabled: true,
       size: u.zx.Sizes.SMALL,
-      pauseAnimation: w
+      pauseAnimation: R
     }), U), {
       children: Q
     }))
@@ -171,7 +171,7 @@ let R = e => {
     }),
     submitting: F,
     onClick: z,
-    pauseAnimation: w,
+    pauseAnimation: R,
     children: Q
   }))
 }

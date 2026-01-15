@@ -89,12 +89,12 @@ function v(e) {
         })
       })
     },
-    children: e => (0, r.jsx)(m.hU, O(b({}, e), {
+    children: e => (0, r.jsx)(h.hU, O(b({}, e), {
       ref: f,
       onClick: () => {
         o(!n)
       },
-      text: h.intl.string(h.t.uOe0Az),
+      text: m.intl.string(m.t.uOe0Az),
       children: (0, r.jsx)(s.vdY, {
         size: "md",
         color: "currentColor",
@@ -109,11 +109,11 @@ function S(e) {
     sound: t
   } = e, {
     previewSound: n
-  } = (0, f.Z)(t, null), i = 0 === (0, d.pI)() ? h.intl.string(h.t.OASXjt) : h.intl.formatToPlainString(h.t["/8fYO5"], {
+  } = (0, f.Z)(t, null), i = 0 === (0, d.pI)() ? m.intl.string(m.t.OASXjt) : m.intl.formatToPlainString(m.t["/8fYO5"], {
     emojiName: t.emojiName,
     soundName: t.name
   });
-  return (0, r.jsx)(m.hU, {
+  return (0, r.jsx)(h.hU, {
     onClick: n,
     text: i,
     children: (0, r.jsx)(s.gj8, {
@@ -137,7 +137,7 @@ function I(e) {
   });
 
   function p() {
-    return null == t ? h.intl.string(h.t.PoWNfe) : n ? h.intl.format(h.t.B6HU6O, {
+    return null == t ? m.intl.string(m.t.PoWNfe) : n ? m.intl.format(m.t.B6HU6O, {
       soundName: t.name,
       subtextHook: f
     }) : t.name
@@ -166,9 +166,9 @@ function I(e) {
       className: g.container,
       children: [(0, r.jsx)(v, {
         onSelect: i
-      }), a && !n && (0, r.jsx)(m.hU, {
+      }), a && !n && (0, r.jsx)(h.hU, {
         onClick: () => i(null),
-        text: h.intl.string(h.t.jmtcGA),
+        text: m.intl.string(m.t.jmtcGA),
         children: (0, r.jsx)(s.XHJ, {
           size: "md",
           color: o.Z.unsafe_rawColors.RED_400.css,

@@ -29,7 +29,7 @@ require.d(exports, {
   w: () => J,
   wF: () => U,
   xw: () => j
-}), require("./415506.js");
+}), require("./415506.js"), require("./388685.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -88,12 +88,12 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = 5;
+let R = 5;
 async function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   try {
@@ -110,7 +110,7 @@ async function D(e) {
       user_status: n.quest_user_status
     });
     else if (null != n.error_hints_v2 && n.error_hints_v2.length > 0) return {
-      errorHints: n.error_hints_v2.slice(0, w)
+      errorHints: n.error_hints_v2.slice(0, R)
     }
   } catch (r) {
     var n;
@@ -233,7 +233,7 @@ var U = function(e) {
   return e.SUCCESS = "success", e.CAPTCHA_FAILED = "captcha_failed", e.UNKNOWN_ERROR = "unknown_error", e.PREVIOUS_IN_FLIGHT_REQUEST = "previous_in_flight_request", e
 }({});
 async function G(e, t) {
-  if (null != t.questContentCTA && (0, m._3)({
+  if (null != t.questContentCTA && (0, h._3)({
       questId: e,
       questContent: t.questContent,
       questContentCTA: t.questContentCTA,
@@ -252,7 +252,7 @@ async function G(e, t) {
       r = (0, v.R_)(t.questContent),
       o = await i.tn.post({
         url: T.ANM.QUESTS_ENROLL(e),
-        body: R(N({
+        body: w(N({
           location: t.questContent
         }, (0, v.qe)(e, t.questContent)), {
           metadata_raw: null != n ? n : null,
@@ -288,7 +288,7 @@ async function Z(e, t, n) {
         o = (0, v.R_)(n),
         s = await i.tn.post({
           url: T.ANM.QUESTS_CLAIM_REWARD(e),
-          body: R(N({
+          body: w(N({
             platform: t,
             location: n
           }, (0, v.qe)(e, n)), {
@@ -493,7 +493,7 @@ function X(e) {
   })
 }
 async function J(e, t) {
-  var n, r, c, d, p, _, m, E;
+  var n, r, c, d, p, _, h, E;
   let y = Date.now();
   g.Z.recordQuestRequestAttempt("/quests/decision", t, e), a.Z.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
@@ -532,10 +532,10 @@ async function J(e, t) {
       }), g.Z.recordQuestRequestApiResponse("/quests/decision", {
         wasSuccessful: true,
         adRequestId: String(O.request_id),
-        currentQuestId: null != (m = null == I ? true : I.id) ? m : null,
+        currentQuestId: null != (h = null == I ? true : I.id) ? h : null,
         currentFetchedAt: y
       }), null == I) return;
-    e === b.Ok.DESKTOP_ACCOUNT_PANEL_AREA && h.Z.startTracking(I.id), f.default.track(T.rMx.QUEST_DECISION_RECEIVED, R(N({}, (0, u.Z)()), {
+    e === b.Ok.DESKTOP_ACCOUNT_PANEL_AREA && m.Z.startTracking(I.id), f.default.track(T.rMx.QUEST_DECISION_RECEIVED, w(N({}, (0, u.Z)()), {
       quest_id: I.id,
       caller_source: t,
       ad_request_id: String(O.request_id)
@@ -543,7 +543,7 @@ async function J(e, t) {
   } catch (n) {
     g.Z.recordQuestRequestApiResponse("/quests/decision", {
       wasSuccessful: false
-    }), f.default.track(T.rMx.QUEST_DECISION_ROUNDTRIP_ERROR, R(N({}, (0, u.Z)()), {
+    }), f.default.track(T.rMx.QUEST_DECISION_ROUNDTRIP_ERROR, w(N({}, (0, u.Z)()), {
       reason: null != (E = null == n ? true : n.message) ? E : null,
       api_error: new o.Z(n).getAnyErrorMessage(),
       caller_source: t
@@ -576,16 +576,18 @@ async function ee(e, t) {
         url: T.ANM.QUEST_EARNED_DECISION(r, t, null == n ? true : n.uuid),
         rejectWithError: false
       }),
-      s = o.body.quest,
-      c = null != s && (0, S.Qe)(s) ? (0, S.WP)(s) : null,
-      u = o.body.metadata_raw;
+      s = o.body.quests,
+      c = new Map;
+    if (null != s)
+      for (let [e, t] of Object.entries(s))(0, S.Qe)(t) && c.set(e, (0, S.WP)(t));
+    let u = o.body.metadata_raw;
     return a.Z.dispatch({
       type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS",
-      quest: c,
+      quests: c,
       metadataRaw: u,
       content: t
     }), {
-      quest: c,
+      quests: c,
       metadataRaw: u
     }
   } catch (e) {

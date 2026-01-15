@@ -1171,12 +1171,12 @@
         for (i = 0; i < r; i += 1) t[i].animation.setSpeed(e, n)
       }
 
-      function m(e, n) {
+      function h(e, n) {
         var i;
         for (i = 0; i < r; i += 1) t[i].animation.setDirection(e, n)
       }
 
-      function h(e) {
+      function m(e) {
         var n;
         for (n = 0; n < r; n += 1) t[n].animation.play(e)
       }
@@ -1251,16 +1251,16 @@
         for (i = 0; i < r; i += 1) t[i].animation.setVolume(e, n)
       }
 
-      function R(e) {
+      function w(e) {
         var n;
         for (n = 0; n < r; n += 1) t[n].animation.mute(e)
       }
 
-      function w(e) {
+      function R(e) {
         var n;
         for (n = 0; n < r; n += 1) t[n].animation.unmute(e)
       }
-      return e.registerAnimation = l, e.loadAnimation = p, e.setSpeed = _, e.setDirection = m, e.play = h, e.pause = b, e.stop = O, e.togglePause = v, e.searchAnimations = I, e.resize = T, e.goToAndStop = y, e.destroy = S, e.freeze = A, e.unfreeze = N, e.setVolume = P, e.mute = R, e.unmute = w, e.getRegisteredAnimations = c, e
+      return e.registerAnimation = l, e.loadAnimation = p, e.setSpeed = _, e.setDirection = h, e.play = m, e.pause = b, e.stop = O, e.togglePause = v, e.searchAnimations = I, e.resize = T, e.goToAndStop = y, e.destroy = S, e.freeze = A, e.unfreeze = N, e.setVolume = P, e.mute = w, e.unmute = R, e.getRegisteredAnimations = c, e
     }(),
     BezierFactory = function() {
       var e = {};
@@ -1301,13 +1301,13 @@
         return 3 * u(t, n) * e * e + 2 * d(t, n) * e + f(t)
       }
 
-      function m(e, t, n, r, i) {
+      function h(e, t, n, r, i) {
         var s, l, c = 0;
         do(s = p(l = t + (n - t) / 2, r, i) - e) > 0 ? n = l : t = l; while (Math.abs(s) > a && ++c < o);
         return l
       }
 
-      function h(e, t, n, i) {
+      function m(e, t, n, i) {
         for (var a = 0; a < r; ++a) {
           var o = _(t, n, i);
           if (0 === o) break;
@@ -1342,7 +1342,7 @@
           for (var t = this._p[0], n = this._p[2], r = this._mSampleValues, a = 0, o = 1, c = s - 1; o !== c && r[o] <= e; ++o) a += l;
           var u = a + (e - r[--o]) / (r[o + 1] - r[o]) * l,
             d = _(u, t, n);
-          return d >= i ? h(e, u, t, n) : 0 === d ? u : m(e, a, a + l, t, n)
+          return d >= i ? m(e, u, t, n) : 0 === d ? u : h(e, a, a + l, t, n)
         }
       }, e
     }(),
@@ -1446,14 +1446,14 @@
       return function(n, r, i, s) {
         var l = (n[0] + "_" + n[1] + "_" + r[0] + "_" + r[1] + "_" + i[0] + "_" + i[1] + "_" + s[0] + "_" + s[1]).replace(/\./g, "p");
         if (!e[l]) {
-          var c, u, d, f, p, _, m, h = getDefaultCurveSegments(),
+          var c, u, d, f, p, _, h, m = getDefaultCurveSegments(),
             g = 0,
             E = null;
-          2 === n.length && (n[0] !== r[0] || n[1] !== r[1]) && t(n[0], n[1], r[0], r[1], n[0] + i[0], n[1] + i[1]) && t(n[0], n[1], r[0], r[1], r[0] + s[0], r[1] + s[1]) && (h = 2);
-          var b = new a(h);
-          for (c = 0, d = i.length; c < h; c += 1) {
-            for (u = 0, m = createSizedArray(d), p = c / (h - 1), _ = 0; u < d; u += 1) f = bmPow(1 - p, 3) * n[u] + 3 * bmPow(1 - p, 2) * p * (n[u] + i[u]) + 3 * (1 - p) * bmPow(p, 2) * (r[u] + s[u]) + bmPow(p, 3) * r[u], m[u] = f, null !== E && (_ += bmPow(m[u] - E[u], 2));
-            g += _ = bmSqrt(_), b.points[c] = new o(_, m), E = m
+          2 === n.length && (n[0] !== r[0] || n[1] !== r[1]) && t(n[0], n[1], r[0], r[1], n[0] + i[0], n[1] + i[1]) && t(n[0], n[1], r[0], r[1], r[0] + s[0], r[1] + s[1]) && (m = 2);
+          var b = new a(m);
+          for (c = 0, d = i.length; c < m; c += 1) {
+            for (u = 0, h = createSizedArray(d), p = c / (m - 1), _ = 0; u < d; u += 1) f = bmPow(1 - p, 3) * n[u] + 3 * bmPow(1 - p, 2) * p * (n[u] + i[u]) + 3 * (1 - p) * bmPow(p, 2) * (r[u] + s[u]) + bmPow(p, 3) * r[u], h[u] = f, null !== E && (_ += bmPow(h[u] - E[u], 2));
+            g += _ = bmSqrt(_), b.points[c] = new o(_, h), E = h
           }
           b.segmentLength = g, e[l] = b
         }
@@ -1490,24 +1490,24 @@
           f = l(o = o > 1 ? 1 : o, s),
           p = t.length,
           _ = 1 - d,
-          m = 1 - f,
-          h = _ * _ * _,
+          h = 1 - f,
+          m = _ * _ * _,
           g = d * _ * _ * 3,
           E = d * d * _ * 3,
           b = d * d * d,
-          y = _ * _ * m,
-          O = d * _ * m + _ * d * m + _ * _ * f,
-          v = d * d * m + _ * d * f + d * _ * f,
+          y = _ * _ * h,
+          O = d * _ * h + _ * d * h + _ * _ * f,
+          v = d * d * h + _ * d * f + d * _ * f,
           S = d * d * f,
-          I = _ * m * m,
-          T = d * m * m + _ * f * m + _ * m * f,
-          C = d * f * m + _ * f * f + d * m * f,
+          I = _ * h * h,
+          T = d * h * h + _ * f * h + _ * h * f,
+          C = d * f * h + _ * f * f + d * h * f,
           A = d * f * f,
-          N = m * m * m,
-          P = f * m * m + m * f * m + m * m * f,
-          R = f * f * m + m * f * f + f * m * f,
-          w = f * f * f;
-        for (c = 0; c < p; c += 1) u[4 * c] = e.round((h * t[c] + g * r[c] + E * i[c] + b * n[c]) * 1e3) / 1e3, u[4 * c + 1] = e.round((y * t[c] + O * r[c] + v * i[c] + S * n[c]) * 1e3) / 1e3, u[4 * c + 2] = e.round((I * t[c] + T * r[c] + C * i[c] + A * n[c]) * 1e3) / 1e3, u[4 * c + 3] = e.round((N * t[c] + P * r[c] + R * i[c] + w * n[c]) * 1e3) / 1e3;
+          N = h * h * h,
+          P = f * h * h + h * f * h + h * h * f,
+          w = f * f * h + h * f * f + f * h * f,
+          R = f * f * f;
+        for (c = 0; c < p; c += 1) u[4 * c] = e.round((m * t[c] + g * r[c] + E * i[c] + b * n[c]) * 1e3) / 1e3, u[4 * c + 1] = e.round((y * t[c] + O * r[c] + v * i[c] + S * n[c]) * 1e3) / 1e3, u[4 * c + 2] = e.round((I * t[c] + T * r[c] + C * i[c] + A * n[c]) * 1e3) / 1e3, u[4 * c + 3] = e.round((N * t[c] + P * r[c] + w * i[c] + R * n[c]) * 1e3) / 1e3;
         return u
       },
       getPointInSegment: c,
@@ -1522,7 +1522,7 @@
 
   function interpolateValue(e, t) {
     var n, r, i, a, o, s = this.offsetTime;
-    "multidimensional" === this.propType && (h = createTypedArray("float32", this.pv.length));
+    "multidimensional" === this.propType && (m = createTypedArray("float32", this.pv.length));
     for (var l = t.lastIndex, c = l, u = this.keyframes.length - 1, d = true; d;) {
       if (g = this.keyframes[c], E = this.keyframes[c + 1], c === u - 1 && e >= E.t - s) {
         g.h && (g = E), l = 0;
@@ -1541,30 +1541,30 @@
       b.bezierData || (b.bezierData = bez.buildBezierData(g.s, E.s || g.e, g.to, g.ti));
       var _ = b.bezierData;
       if (e >= f || e < p) {
-        var m = e >= f ? _.points.length - 1 : 0;
-        for (y = 0, O = _.points[m].point.length; y < O; y += 1) h[y] = _.points[m].point[y]
+        var h = e >= f ? _.points.length - 1 : 0;
+        for (y = 0, O = _.points[h].point.length; y < O; y += 1) m[y] = _.points[h].point[y]
       } else {
         b.__fnct ? I = b.__fnct : b.__fnct = I = BezierFactory.getBezierEasing(g.o.x, g.o.y, g.i.x, g.i.y, g.n).get;
-        var h, g, E, b, y, O, v, S, I, T, C, A = I((e - p) / (f - p)),
+        var m, g, E, b, y, O, v, S, I, T, C, A = I((e - p) / (f - p)),
           N = _.segmentLength * A,
           P = t.lastFrame < e && t._lastKeyframeIndex === c ? t._lastAddedLength : 0;
         for (S = t.lastFrame < e && t._lastKeyframeIndex === c ? t._lastPoint : 0, d = true, v = _.points.length; d;) {
           if (P += _.points[S].partialLength, 0 === N || 0 === A || S === _.points.length - 1) {
-            for (y = 0, O = _.points[S].point.length; y < O; y += 1) h[y] = _.points[S].point[y];
+            for (y = 0, O = _.points[S].point.length; y < O; y += 1) m[y] = _.points[S].point[y];
             break
           }
           if (N >= P && N < P + _.points[S + 1].partialLength) {
-            for (y = 0, C = (N - P) / _.points[S + 1].partialLength, O = _.points[S].point.length; y < O; y += 1) h[y] = _.points[S].point[y] + (_.points[S + 1].point[y] - _.points[S].point[y]) * C;
+            for (y = 0, C = (N - P) / _.points[S + 1].partialLength, O = _.points[S].point.length; y < O; y += 1) m[y] = _.points[S].point[y] + (_.points[S + 1].point[y] - _.points[S].point[y]) * C;
             break
           }
           S < v - 1 ? S += 1 : d = false
         }
         t._lastPoint = S, t._lastAddedLength = P - _.points[S].partialLength, t._lastKeyframeIndex = c
       }
-    } else if (u = g.s.length, T = E.s || g.e, this.sh && 1 !== g.h) e >= f ? (h[0] = T[0], h[1] = T[1], h[2] = T[2]) : e <= p ? (h[0] = g.s[0], h[1] = g.s[1], h[2] = g.s[2]) : quaternionToEuler(h, slerp(createQuaternion(g.s), createQuaternion(T), (e - p) / (f - p)));
+    } else if (u = g.s.length, T = E.s || g.e, this.sh && 1 !== g.h) e >= f ? (m[0] = T[0], m[1] = T[1], m[2] = T[2]) : e <= p ? (m[0] = g.s[0], m[1] = g.s[1], m[2] = g.s[2]) : quaternionToEuler(m, slerp(createQuaternion(g.s), createQuaternion(T), (e - p) / (f - p)));
     else
-      for (c = 0; c < u; c += 1) 1 !== g.h && (e >= f ? A = 1 : e < p ? A = 0 : (g.o.x.constructor === Array ? (b.__fnct || (b.__fnct = []), b.__fnct[c] ? I = b.__fnct[c] : (n = true === g.o.x[c] ? g.o.x[0] : g.o.x[c], r = true === g.o.y[c] ? g.o.y[0] : g.o.y[c], i = true === g.i.x[c] ? g.i.x[0] : g.i.x[c], a = true === g.i.y[c] ? g.i.y[0] : g.i.y[c], I = BezierFactory.getBezierEasing(n, r, i, a).get, b.__fnct[c] = I)) : b.__fnct ? I = b.__fnct : (n = g.o.x, r = g.o.y, i = g.i.x, a = g.i.y, I = BezierFactory.getBezierEasing(n, r, i, a).get, g.keyframeMetadata = I), A = I((e - p) / (f - p)))), T = E.s || g.e, o = 1 === g.h ? g.s[c] : g.s[c] + (T[c] - g.s[c]) * A, "multidimensional" === this.propType ? h[c] = o : h = o;
-    return t.lastIndex = l, h
+      for (c = 0; c < u; c += 1) 1 !== g.h && (e >= f ? A = 1 : e < p ? A = 0 : (g.o.x.constructor === Array ? (b.__fnct || (b.__fnct = []), b.__fnct[c] ? I = b.__fnct[c] : (n = true === g.o.x[c] ? g.o.x[0] : g.o.x[c], r = true === g.o.y[c] ? g.o.y[0] : g.o.y[c], i = true === g.i.x[c] ? g.i.x[0] : g.i.x[c], a = true === g.i.y[c] ? g.i.y[0] : g.i.y[c], I = BezierFactory.getBezierEasing(n, r, i, a).get, b.__fnct[c] = I)) : b.__fnct ? I = b.__fnct : (n = g.o.x, r = g.o.y, i = g.i.x, a = g.i.y, I = BezierFactory.getBezierEasing(n, r, i, a).get, g.keyframeMetadata = I), A = I((e - p) / (f - p)))), T = E.s || g.e, o = 1 === g.h ? g.s[c] : g.s[c] + (T[c] - g.s[c]) * A, "multidimensional" === this.propType ? m[c] = o : m = o;
+    return t.lastIndex = l, m
   }
 
   function slerp(e, t, n) {
@@ -1575,9 +1575,9 @@
       f = e[3],
       p = t[0],
       _ = t[1],
-      m = t[2],
-      h = t[3];
-    return (i = c * p + u * _ + d * m + f * h) < 0 && (i = -i, p = -p, _ = -_, m = -m, h = -h), 1 - i > 1e-6 ? (a = Math.sin(r = Math.acos(i)), o = Math.sin((1 - n) * r) / a, s = Math.sin(n * r) / a) : (o = 1 - n, s = n), l[0] = o * c + s * p, l[1] = o * u + s * _, l[2] = o * d + s * m, l[3] = o * f + s * h, l
+      h = t[2],
+      m = t[3];
+    return (i = c * p + u * _ + d * h + f * m) < 0 && (i = -i, p = -p, _ = -_, h = -h, m = -m), 1 - i > 1e-6 ? (a = Math.sin(r = Math.acos(i)), o = Math.sin((1 - n) * r) / a, s = Math.sin(n * r) / a) : (o = 1 - n, s = n), l[0] = o * c + s * p, l[1] = o * u + s * _, l[2] = o * d + s * h, l[3] = o * f + s * m, l
   }
 
   function quaternionToEuler(e, t) {
@@ -1811,8 +1811,8 @@
         if (e < i[0].t - this.offsetTime) a = i[0].s[0], s = true, r = 0;
         else if (e >= i[i.length - 1].t - this.offsetTime) a = i[i.length - 1].s ? i[i.length - 1].s[0] : i[i.length - 2].e[0], s = true;
         else {
-          for (var a, o, s, l, c, u, d, f, p, _, m, h, g, E = r, b = i.length - 1, y = true; y && (_ = i[E], !((m = i[E + 1]).t - this.offsetTime > e));) E < b - 1 ? E += 1 : y = false;
-          h = this.keyframesMetadata[E] || {}, s = 1 === _.h, r = E, s || (e >= m.t - this.offsetTime ? f = 1 : e < _.t - this.offsetTime ? f = 0 : (h.__fnct ? g = h.__fnct : h.__fnct = g = BezierFactory.getBezierEasing(_.o.x, _.o.y, _.i.x, _.i.y).get, f = g((e - (_.t - this.offsetTime)) / (m.t - this.offsetTime - (_.t - this.offsetTime)))), o = m.s ? m.s[0] : _.e[0]), a = _.s[0]
+          for (var a, o, s, l, c, u, d, f, p, _, h, m, g, E = r, b = i.length - 1, y = true; y && (_ = i[E], !((h = i[E + 1]).t - this.offsetTime > e));) E < b - 1 ? E += 1 : y = false;
+          m = this.keyframesMetadata[E] || {}, s = 1 === _.h, r = E, s || (e >= h.t - this.offsetTime ? f = 1 : e < _.t - this.offsetTime ? f = 0 : (m.__fnct ? g = m.__fnct : m.__fnct = g = BezierFactory.getBezierEasing(_.o.x, _.o.y, _.i.x, _.i.y).get, f = g((e - (_.t - this.offsetTime)) / (h.t - this.offsetTime - (_.t - this.offsetTime)))), o = h.s ? h.s[0] : _.e[0]), a = _.s[0]
         }
         for (l = 0, u = t._length, d = a.i[0].length, n.lastIndex = r; l < u; l += 1)
           for (c = 0; c < d; c += 1) p = s ? a.i[l][c] : a.i[l][c] + (o.i[l][c] - a.i[l][c]) * f, t.i[l][c] = p, p = s ? a.o[l][c] : a.o[l][c] + (o.o[l][c] - a.o[l][c]) * f, t.o[l][c] = p, p = s ? a.v[l][c] : a.v[l][c] + (o.v[l][c] - a.v[l][c]) * f, t.v[l][c] = p
@@ -1921,11 +1921,11 @@
               var _ = 3 === this.data.d ? false : 1;
               for (e = 0, this.v._length = 0; e < i; e += 1) {
                 t = o ? s : l, n = o ? c : u, r = o ? d : f;
-                var m = t * Math.cos(p),
-                  h = t * Math.sin(p),
-                  g = 0 === m && 0 === h ? 0 : h / Math.sqrt(m * m + h * h),
-                  E = 0 === m && 0 === h ? 0 : -m / Math.sqrt(m * m + h * h);
-                m += +this.p.v[0], h += +this.p.v[1], this.v.setTripleAt(m, h, m - g * r * n * _, h - E * r * n * _, m + g * r * n * _, h + E * r * n * _, e, true), o = !o, p += a * _
+                var h = t * Math.cos(p),
+                  m = t * Math.sin(p),
+                  g = 0 === h && 0 === m ? 0 : m / Math.sqrt(h * h + m * m),
+                  E = 0 === h && 0 === m ? 0 : -h / Math.sqrt(h * h + m * m);
+                h += +this.p.v[0], m += +this.p.v[1], this.v.setTripleAt(h, m, h - g * r * n * _, m - E * r * n * _, h + g * r * n * _, m + E * r * n * _, e, true), o = !o, p += a * _
               }
             },
             convertPolygonToPath: function() {
@@ -1975,11 +1975,11 @@
       function _() {
         return c
       }
-      var m = {};
-      return m.getShapeProp = function(e, t, n) {
+      var h = {};
+      return h.getShapeProp = function(e, t, n) {
         var r;
         return 3 === n || 4 === n ? r = (3 === n ? t.pt : t.ks).k.length ? new c(e, t, n) : new s(e, t, n) : 5 === n ? r = new f(e, t) : 6 === n ? r = new u(e, t) : 7 === n && (r = new d(e, t)), r.k && e.addDynamicProperty(r), r
-      }, m.getConstructorFunction = p, m.getKeyframedConstructorFunction = _, m
+      }, h.getConstructorFunction = p, h.getKeyframedConstructorFunction = _, h
     }(),
     Matrix = function() {
       var e = Math.cos,
@@ -2037,37 +2037,37 @@
         return (n || 0 === n || (n = 1), 1 === e && 1 === t && 1 === n) ? this : this._t(e, 0, 0, 0, 0, t, 0, 0, 0, 0, n, 0, 0, 0, 0, 1)
       }
 
-      function p(e, t, n, r, i, a, o, s, l, c, u, d, f, p, _, m) {
-        return this.props[0] = e, this.props[1] = t, this.props[2] = n, this.props[3] = r, this.props[4] = i, this.props[5] = a, this.props[6] = o, this.props[7] = s, this.props[8] = l, this.props[9] = c, this.props[10] = u, this.props[11] = d, this.props[12] = f, this.props[13] = p, this.props[14] = _, this.props[15] = m, this
+      function p(e, t, n, r, i, a, o, s, l, c, u, d, f, p, _, h) {
+        return this.props[0] = e, this.props[1] = t, this.props[2] = n, this.props[3] = r, this.props[4] = i, this.props[5] = a, this.props[6] = o, this.props[7] = s, this.props[8] = l, this.props[9] = c, this.props[10] = u, this.props[11] = d, this.props[12] = f, this.props[13] = p, this.props[14] = _, this.props[15] = h, this
       }
 
       function _(e, t, n) {
         return (n = n || 0, 0 !== e || 0 !== t || 0 !== n) ? this._t(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, e, t, n, 1) : this
       }
 
-      function m(e, t, n, r, i, a, o, s, l, c, u, d, f, p, _, m) {
-        var h = this.props;
-        if (1 === e && 0 === t && 0 === n && 0 === r && 0 === i && 1 === a && 0 === o && 0 === s && 0 === l && 0 === c && 1 === u && 0 === d) return h[12] = h[12] * e + h[15] * f, h[13] = h[13] * a + h[15] * p, h[14] = h[14] * u + h[15] * _, h[15] *= m, this._identityCalculated = false, this;
-        var g = h[0],
-          E = h[1],
-          b = h[2],
-          y = h[3],
-          O = h[4],
-          v = h[5],
-          S = h[6],
-          I = h[7],
-          T = h[8],
-          C = h[9],
-          A = h[10],
-          N = h[11],
-          P = h[12],
-          R = h[13],
-          w = h[14],
-          D = h[15];
-        return h[0] = g * e + E * i + b * l + y * f, h[1] = g * t + E * a + b * c + y * p, h[2] = g * n + E * o + b * u + y * _, h[3] = g * r + E * s + b * d + y * m, h[4] = O * e + v * i + S * l + I * f, h[5] = O * t + v * a + S * c + I * p, h[6] = O * n + v * o + S * u + I * _, h[7] = O * r + v * s + S * d + I * m, h[8] = T * e + C * i + A * l + N * f, h[9] = T * t + C * a + A * c + N * p, h[10] = T * n + C * o + A * u + N * _, h[11] = T * r + C * s + A * d + N * m, h[12] = P * e + R * i + w * l + D * f, h[13] = P * t + R * a + w * c + D * p, h[14] = P * n + R * o + w * u + D * _, h[15] = P * r + R * s + w * d + D * m, this._identityCalculated = false, this
+      function h(e, t, n, r, i, a, o, s, l, c, u, d, f, p, _, h) {
+        var m = this.props;
+        if (1 === e && 0 === t && 0 === n && 0 === r && 0 === i && 1 === a && 0 === o && 0 === s && 0 === l && 0 === c && 1 === u && 0 === d) return m[12] = m[12] * e + m[15] * f, m[13] = m[13] * a + m[15] * p, m[14] = m[14] * u + m[15] * _, m[15] *= h, this._identityCalculated = false, this;
+        var g = m[0],
+          E = m[1],
+          b = m[2],
+          y = m[3],
+          O = m[4],
+          v = m[5],
+          S = m[6],
+          I = m[7],
+          T = m[8],
+          C = m[9],
+          A = m[10],
+          N = m[11],
+          P = m[12],
+          w = m[13],
+          R = m[14],
+          D = m[15];
+        return m[0] = g * e + E * i + b * l + y * f, m[1] = g * t + E * a + b * c + y * p, m[2] = g * n + E * o + b * u + y * _, m[3] = g * r + E * s + b * d + y * h, m[4] = O * e + v * i + S * l + I * f, m[5] = O * t + v * a + S * c + I * p, m[6] = O * n + v * o + S * u + I * _, m[7] = O * r + v * s + S * d + I * h, m[8] = T * e + C * i + A * l + N * f, m[9] = T * t + C * a + A * c + N * p, m[10] = T * n + C * o + A * u + N * _, m[11] = T * r + C * s + A * d + N * h, m[12] = P * e + w * i + R * l + D * f, m[13] = P * t + w * a + R * c + D * p, m[14] = P * n + w * o + R * u + D * _, m[15] = P * r + w * s + R * d + D * h, this._identityCalculated = false, this
       }
 
-      function h(e) {
+      function m(e) {
         var t = e.props;
         return this.transform(t[0], t[1], t[2], t[3], t[4], t[5], t[6], t[7], t[8], t[9], t[10], t[11], t[12], t[13], t[14], t[15])
       }
@@ -2158,13 +2158,13 @@
         return this.isIdentity() ? [e, t, n] : [e * this.props[0] + t * this.props[4] + n * this.props[8] + this.props[12], e * this.props[1] + t * this.props[5] + n * this.props[9] + this.props[13], e * this.props[2] + t * this.props[6] + n * this.props[10] + this.props[14]]
       }
 
-      function R(e, t) {
+      function w(e, t) {
         if (this.isIdentity()) return e + "," + t;
         var n = this.props;
         return Math.round((e * n[0] + t * n[4] + n[12]) * 100) / 100 + "," + Math.round((e * n[1] + t * n[5] + n[13]) * 100) / 100
       }
 
-      function w() {
+      function R() {
         for (var e = 0, t = this.props, n = "matrix3d(", i = 1e4; e < 16;) n += r(t[e] * i) / i, n += 15 === e ? ")" : ",", e += 1;
         return n
       }
@@ -2179,7 +2179,7 @@
         return "matrix(" + D(e[0]) + "," + D(e[1]) + "," + D(e[4]) + "," + D(e[5]) + "," + D(e[12]) + "," + D(e[13]) + ")"
       }
       return function() {
-        this.reset = i, this.rotate = a, this.rotateX = o, this.rotateY = s, this.rotateZ = l, this.skew = u, this.skewFromAxis = d, this.shear = c, this.scale = f, this.setTransform = p, this.translate = _, this.transform = m, this.multiply = h, this.applyToPoint = O, this.applyToX = v, this.applyToY = S, this.applyToZ = I, this.applyToPointArray = P, this.applyToTriplePoints = N, this.applyToPointStringified = R, this.toCSS = w, this.to2dCSS = x, this.clone = b, this.cloneFromProps = y, this.equals = E, this.inversePoints = A, this.inversePoint = C, this.getInverseMatrix = T, this._t = this.transform, this.isIdentity = g, this._identity = true, this._identityCalculated = false, this.props = createTypedArray("float32", 16), this.reset()
+        this.reset = i, this.rotate = a, this.rotateX = o, this.rotateY = s, this.rotateZ = l, this.skew = u, this.skewFromAxis = d, this.shear = c, this.scale = f, this.setTransform = p, this.translate = _, this.transform = h, this.multiply = m, this.applyToPoint = O, this.applyToX = v, this.applyToY = S, this.applyToZ = I, this.applyToPointArray = P, this.applyToTriplePoints = N, this.applyToPointStringified = w, this.toCSS = R, this.to2dCSS = x, this.clone = b, this.cloneFromProps = y, this.equals = E, this.inversePoints = A, this.inversePoint = C, this.getInverseMatrix = T, this._t = this.transform, this.isIdentity = g, this._identity = true, this._identityCalculated = false, this.props = createTypedArray("float32", 16), this.reset()
       }
     }();
 
@@ -2348,7 +2348,7 @@
     if (o === a)
       for (l = 0; l < r; l += 1) this.shapes[l].localShapeCollection.releaseShapes(), this.shapes[l].shape._mdf = true, this.shapes[l].shape.paths = this.shapes[l].localShapeCollection, this._mdf && (this.shapes[l].pathsData.length = 0);
     else if ((1 !== o || 0 !== a) && (0 !== o || 1 !== a)) {
-      var a, o, s, l, c, u, d, f, p, _, m, h, g = [];
+      var a, o, s, l, c, u, d, f, p, _, h, m, g = [];
       for (l = 0; l < r; l += 1)
         if ((_ = this.shapes[l]).shape._mdf || this._mdf || e || 2 === this.m) {
           if (u = (s = _.shape.paths)._length, p = 0, !_.shape._mdf && _.pathsData.length) p = _.totalShapeLength;
@@ -2363,10 +2363,10 @@
         y = 0;
       for (l = r - 1; l >= 0; l -= 1)
         if ((_ = this.shapes[l]).shape._mdf) {
-          for ((m = _.localShapeCollection).releaseShapes(), 2 === this.m && r > 1 ? (h = this.calculateShapeEdges(a, o, _.totalShapeLength, y, i), y += _.totalShapeLength) : h = [
+          for ((h = _.localShapeCollection).releaseShapes(), 2 === this.m && r > 1 ? (m = this.calculateShapeEdges(a, o, _.totalShapeLength, y, i), y += _.totalShapeLength) : m = [
               [E, b]
-            ], u = h.length, c = 0; c < u; c += 1) {
-            E = h[c][0], b = h[c][1], g.length = 0, b <= 1 ? g.push({
+            ], u = m.length, c = 0; c < u; c += 1) {
+            E = m[c][0], b = m[c][1], g.length = 0, b <= 1 ? g.push({
               s: _.totalShapeLength * E,
               e: _.totalShapeLength * b
             }) : E >= 1 ? g.push({
@@ -2384,12 +2384,12 @@
               if (g.length > 1)
                 if (_.shape.paths.shapes[_.shape.paths._length - 1].c) {
                   var v = O.pop();
-                  this.addPaths(O, m), O = this.addShapes(_, g[1], v)
-                } else this.addPaths(O, m), O = this.addShapes(_, g[1]);
-              this.addPaths(O, m)
+                  this.addPaths(O, h), O = this.addShapes(_, g[1], v)
+                } else this.addPaths(O, h), O = this.addShapes(_, g[1]);
+              this.addPaths(O, h)
             }
           }
-          _.shape.paths = m
+          _.shape.paths = h
         }
     } else if (this._mdf)
       for (l = 0; l < r; l += 1) this.shapes[l].pathsData.length = 0, this.shapes[l].shape._mdf = true
@@ -2405,26 +2405,26 @@
       f = e.shape.paths.shapes,
       p = e.shape.paths._length,
       _ = 0,
-      m = [],
-      h = true;
-    for (n ? (s = n._length, u = n._length) : (n = shapePool.newElement(), s = 0, u = 0), m.push(n), r = 0; r < p; r += 1) {
+      h = [],
+      m = true;
+    for (n ? (s = n._length, u = n._length) : (n = shapePool.newElement(), s = 0, u = 0), h.push(n), r = 0; r < p; r += 1) {
       for (i = 1, l = d[r].lengths, n.c = f[r].c, a = f[r].c ? l.length : l.length + 1; i < a; i += 1)
         if (_ + (o = l[i - 1]).addedLength < t.s) _ += o.addedLength, n.c = false;
         else if (_ > t.e) {
         n.c = false;
         break
-      } else t.s <= _ && t.e >= _ + o.addedLength ? (this.addSegment(f[r].v[i - 1], f[r].o[i - 1], f[r].i[i], f[r].v[i], n, s, h), h = false) : (c = bez.getNewSegment(f[r].v[i - 1], f[r].v[i], f[r].o[i - 1], f[r].i[i], (t.s - _) / o.addedLength, (t.e - _) / o.addedLength, l[i - 1]), this.addSegmentFromArray(c, n, s, h), h = false, n.c = false), _ += o.addedLength, s += 1;
+      } else t.s <= _ && t.e >= _ + o.addedLength ? (this.addSegment(f[r].v[i - 1], f[r].o[i - 1], f[r].i[i], f[r].v[i], n, s, m), m = false) : (c = bez.getNewSegment(f[r].v[i - 1], f[r].v[i], f[r].o[i - 1], f[r].i[i], (t.s - _) / o.addedLength, (t.e - _) / o.addedLength, l[i - 1]), this.addSegmentFromArray(c, n, s, m), m = false, n.c = false), _ += o.addedLength, s += 1;
       if (f[r].c && l.length) {
         if (o = l[i - 1], _ <= t.e) {
           var g = l[i - 1].addedLength;
-          t.s <= _ && t.e >= _ + g ? (this.addSegment(f[r].v[i - 1], f[r].o[i - 1], f[r].i[0], f[r].v[0], n, s, h), h = false) : (c = bez.getNewSegment(f[r].v[i - 1], f[r].v[0], f[r].o[i - 1], f[r].i[0], (t.s - _) / g, (t.e - _) / g, l[i - 1]), this.addSegmentFromArray(c, n, s, h), h = false, n.c = false)
+          t.s <= _ && t.e >= _ + g ? (this.addSegment(f[r].v[i - 1], f[r].o[i - 1], f[r].i[0], f[r].v[0], n, s, m), m = false) : (c = bez.getNewSegment(f[r].v[i - 1], f[r].v[0], f[r].o[i - 1], f[r].i[0], (t.s - _) / g, (t.e - _) / g, l[i - 1]), this.addSegmentFromArray(c, n, s, m), m = false, n.c = false)
         } else n.c = false;
         _ += o.addedLength, s += 1
       }
       if (n._length && (n.setXYAt(n.v[u][0], n.v[u][1], "i", u), n.setXYAt(n.v[n._length - 1][0], n.v[n._length - 1][1], "o", n._length - 1)), _ > t.e) break;
-      r < p - 1 && (n = shapePool.newElement(), h = true, m.push(n), s = 0)
+      r < p - 1 && (n = shapePool.newElement(), m = true, h.push(n), s = 0)
     }
-    return m
+    return h
   }, extendPrototype([ShapeModifier], PuckerAndBloatModifier), PuckerAndBloatModifier.prototype.initModifierProperties = function(e, t) {
     this.getValue = this.processKeys, this.amount = PropertyFactory.getProp(e, t.a, 0, null, this), this._isAnimated = !!this.amount.effectsSequence.length
   }, PuckerAndBloatModifier.prototype.processPath = function(e, t) {
@@ -2860,19 +2860,19 @@
       }
       this._currentCopies = u;
       var _ = this.o.v,
-        m = _ % 1,
-        h = _ > 0 ? Math.floor(_) : Math.ceil(_),
+        h = _ % 1,
+        m = _ > 0 ? Math.floor(_) : Math.ceil(_),
         g = this.pMatrix.props,
         E = this.rMatrix.props,
         b = this.sMatrix.props;
       this.pMatrix.reset(), this.rMatrix.reset(), this.sMatrix.reset(), this.tMatrix.reset(), this.matrix.reset();
       var y = 0;
       if (_ > 0) {
-        for (; y < h;) this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, 1, false), y += 1;
-        m && (this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, m, false), y += m)
+        for (; y < m;) this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, 1, false), y += 1;
+        h && (this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, h, false), y += h)
       } else if (_ < 0) {
-        for (; y > h;) this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, 1, true), y -= 1;
-        m && (this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, -m, true), y -= m)
+        for (; y > m;) this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, 1, true), y -= 1;
+        h && (this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, -h, true), y -= h)
       }
       for (i = 1 === this.data.m ? 0 : this._currentCopies - 1, a = 1 === this.data.m ? 1 : false, o = this._currentCopies; o;) {
         if (c = (r = (n = this.elemsData[i].it)[n.length - 1].transform.mProps.v.props).length, n[n.length - 1].transform.mProps._mdf = true, n[n.length - 1].transform.op._mdf = true, n[n.length - 1].transform.op.v = 1 === this._currentCopies ? this.so.v : this.so.v + (this.eo.v - this.so.v) * (i / (this._currentCopies - 1)), 0 !== y) {
@@ -2888,12 +2888,12 @@
   }, RepeaterModifier.prototype.addShape = function() {}, extendPrototype([ShapeModifier], RoundCornersModifier), RoundCornersModifier.prototype.initModifierProperties = function(e, t) {
     this.getValue = this.processKeys, this.rd = PropertyFactory.getProp(e, t.r, 0, null, this), this._isAnimated = !!this.rd.effectsSequence.length
   }, RoundCornersModifier.prototype.processPath = function(e, t) {
-    var n, r, i, a, o, s, l, c, u, d, f, p, _, m = shapePool.newElement();
-    m.c = e.c;
-    var h = e._length,
+    var n, r, i, a, o, s, l, c, u, d, f, p, _, h = shapePool.newElement();
+    h.c = e.c;
+    var m = e._length,
       g = 0;
-    for (n = 0; n < h; n += 1) r = e.v[n], a = e.o[n], i = e.i[n], r[0] === a[0] && r[1] === a[1] && r[0] === i[0] && r[1] === i[1] ? 0 !== n && n !== h - 1 || e.c ? (o = 0 === n ? e.v[h - 1] : e.v[n - 1], l = (s = Math.sqrt(Math.pow(r[0] - o[0], 2) + Math.pow(r[1] - o[1], 2))) ? Math.min(s / 2, t) / s : 0, c = p = r[0] + (o[0] - r[0]) * l, u = _ = r[1] - (r[1] - o[1]) * l, d = c - (c - r[0]) * roundCorner, f = u - (u - r[1]) * roundCorner, m.setTripleAt(c, u, d, f, p, _, g), g += 1, o = n === h - 1 ? e.v[0] : e.v[n + 1], l = (s = Math.sqrt(Math.pow(r[0] - o[0], 2) + Math.pow(r[1] - o[1], 2))) ? Math.min(s / 2, t) / s : 0, c = d = r[0] + (o[0] - r[0]) * l, u = f = r[1] + (o[1] - r[1]) * l, p = c - (c - r[0]) * roundCorner, _ = u - (u - r[1]) * roundCorner, m.setTripleAt(c, u, d, f, p, _, g)) : m.setTripleAt(r[0], r[1], a[0], a[1], i[0], i[1], g) : m.setTripleAt(e.v[n][0], e.v[n][1], e.o[n][0], e.o[n][1], e.i[n][0], e.i[n][1], g), g += 1;
-    return m
+    for (n = 0; n < m; n += 1) r = e.v[n], a = e.o[n], i = e.i[n], r[0] === a[0] && r[1] === a[1] && r[0] === i[0] && r[1] === i[1] ? 0 !== n && n !== m - 1 || e.c ? (o = 0 === n ? e.v[m - 1] : e.v[n - 1], l = (s = Math.sqrt(Math.pow(r[0] - o[0], 2) + Math.pow(r[1] - o[1], 2))) ? Math.min(s / 2, t) / s : 0, c = p = r[0] + (o[0] - r[0]) * l, u = _ = r[1] - (r[1] - o[1]) * l, d = c - (c - r[0]) * roundCorner, f = u - (u - r[1]) * roundCorner, h.setTripleAt(c, u, d, f, p, _, g), g += 1, o = n === m - 1 ? e.v[0] : e.v[n + 1], l = (s = Math.sqrt(Math.pow(r[0] - o[0], 2) + Math.pow(r[1] - o[1], 2))) ? Math.min(s / 2, t) / s : 0, c = d = r[0] + (o[0] - r[0]) * l, u = f = r[1] + (o[1] - r[1]) * l, p = c - (c - r[0]) * roundCorner, _ = u - (u - r[1]) * roundCorner, h.setTripleAt(c, u, d, f, p, _, g)) : h.setTripleAt(r[0], r[1], a[0], a[1], i[0], i[1], g) : h.setTripleAt(e.v[n][0], e.v[n][1], e.o[n][0], e.o[n][1], e.i[n][0], e.i[n][1], g), g += 1;
+    return h
   }, RoundCornersModifier.prototype.processShapes = function(e) {
     var t, n, r, i, a, o, s = this.shapes.length,
       l = this.rd.v;
@@ -3066,7 +3066,7 @@
       0 !== a && Date.now() - this.initTime < e ? setTimeout(this.checkLoadedFontsBinded, 20) : setTimeout(this.setIsLoadedBinded, 10)
     }
 
-    function m(e, t) {
+    function h(e, t) {
       var n, r = document.body && t ? "svg" : "canvas",
         i = getFontProperties(e);
       if ("svg" === r) {
@@ -3083,7 +3083,7 @@
       }
     }
 
-    function h(e, t) {
+    function m(e, t) {
       if (!e) {
         this.isLoaded = true;
         return
@@ -3094,7 +3094,7 @@
       }
       if (!document.body) {
         this.isLoaded = true, e.list.forEach(function(e) {
-          e.helper = m(e), e.cache = {}
+          e.helper = h(e), e.cache = {}
         }), this.fonts = e.list;
         return
       }
@@ -3123,7 +3123,7 @@
             }
           }
         } else n[a].loaded = true, i -= 1;
-        n[a].helper = m(n[a], t), n[a].cache = {}, this.fonts.push(n[a])
+        n[a].helper = h(n[a], t), n[a].cache = {}, this.fonts.push(n[a])
       }
       0 === i ? this.isLoaded = true : setTimeout(this.checkLoadedFonts.bind(this), 100)
     }
@@ -3223,7 +3223,7 @@
       return false !== d.indexOf(n)
     }, P.isZeroWidthJoiner = v, P.isFlagEmoji = T, P.isRegionalCode = I, P.isCombinedCharacter = C, P.isRegionalFlag = A, P.isVariationSelector = S, P.BLACK_FLAG_CODE_POINT = r, P.prototype = {
       addChars: g,
-      addFonts: h,
+      addFonts: m,
       getCharData: E,
       getFontByName: y,
       measureText: b,
@@ -3594,16 +3594,16 @@
         lastPath: ""
       }, r.appendChild(f);
       else {
-        if (o += 1, f.setAttribute("fill", "s" === a[d].mode ? "#000000" : "#ffffff"), f.setAttribute("clip-rule", "nonzero"), 0 !== a[d].x.k ? (c = "mask", u = "mask", g = PropertyFactory.getProp(this.element, a[d].x, 0, null, this.element), E = createElementID(), (m = createNS("filter")).setAttribute("id", E), (h = createNS("feMorphology")).setAttribute("operator", "erode"), h.setAttribute("in", "SourceGraphic"), h.setAttribute("radius", "0"), m.appendChild(h), r.appendChild(m), f.setAttribute("stroke", "s" === a[d].mode ? "#000000" : "#ffffff")) : (h = null, g = null), this.storedData[d] = {
+        if (o += 1, f.setAttribute("fill", "s" === a[d].mode ? "#000000" : "#ffffff"), f.setAttribute("clip-rule", "nonzero"), 0 !== a[d].x.k ? (c = "mask", u = "mask", g = PropertyFactory.getProp(this.element, a[d].x, 0, null, this.element), E = createElementID(), (h = createNS("filter")).setAttribute("id", E), (m = createNS("feMorphology")).setAttribute("operator", "erode"), m.setAttribute("in", "SourceGraphic"), m.setAttribute("radius", "0"), h.appendChild(m), r.appendChild(h), f.setAttribute("stroke", "s" === a[d].mode ? "#000000" : "#ffffff")) : (m = null, g = null), this.storedData[d] = {
             elem: f,
             x: g,
-            expan: h,
+            expan: m,
             lastPath: "",
             lastOperator: "",
             filterId: E,
             lastRadius: 0
           }, "i" === a[d].mode) {
-          var d, f, p, _, m, h, g, E, b = s.length,
+          var d, f, p, _, h, m, g, E, b = s.length,
             y = createNS("g");
           for (p = 0; p < b; p += 1) y.appendChild(s[p]);
           var O = createNS("mask");
@@ -4080,13 +4080,13 @@
       function r() {}
 
       function i(n, r, i) {
-        var a, o, s, l, c, u, d, f, p, _, m = r.styles.length,
-          h = r.lvl;
-        for (u = 0; u < m; u += 1) {
-          if (l = r.sh._mdf || i, r.styles[u].lvl < h) {
-            for (f = t.reset(), p = h - r.styles[u].lvl, _ = r.transformers.length - 1; !l && p > 0;) l = r.transformers[_].mProps._mdf || l, p -= 1, _ -= 1;
+        var a, o, s, l, c, u, d, f, p, _, h = r.styles.length,
+          m = r.lvl;
+        for (u = 0; u < h; u += 1) {
+          if (l = r.sh._mdf || i, r.styles[u].lvl < m) {
+            for (f = t.reset(), p = m - r.styles[u].lvl, _ = r.transformers.length - 1; !l && p > 0;) l = r.transformers[_].mProps._mdf || l, p -= 1, _ -= 1;
             if (l)
-              for (p = h - r.styles[u].lvl, _ = r.transformers.length - 1; p > 0;) f.multiply(r.transformers[_].mProps.v), p -= 1, _ -= 1
+              for (p = m - r.styles[u].lvl, _ = r.transformers.length - 1; p > 0;) f.multiply(r.transformers[_].mProps.v), p -= 1, _ -= 1
           } else f = e;
           if (o = (d = r.sh.paths)._length, l) {
             for (a = 0, s = ""; a < o; a += 1)(c = d.shapes[a]) && c._length && (s += buildShapeString(c, c._length, c.c, f));
@@ -4121,12 +4121,12 @@
         }
         if (t.g._cmdf || n) {
           r = t.cst;
-          var m = t.g.c;
-          for (i = 0, a = r.length; i < a; i += 1)(o = r[i]).setAttribute("offset", m[4 * i] + "%"), o.setAttribute("stop-color", "rgb(" + m[4 * i + 1] + "," + m[4 * i + 2] + "," + m[4 * i + 3] + ")")
+          var h = t.g.c;
+          for (i = 0, a = r.length; i < a; i += 1)(o = r[i]).setAttribute("offset", h[4 * i] + "%"), o.setAttribute("stop-color", "rgb(" + h[4 * i + 1] + "," + h[4 * i + 2] + "," + h[4 * i + 3] + ")")
         }
         if (c && (t.g._omdf || n)) {
-          var h = t.g.o;
-          for (i = 0, a = (r = t.g._collapsable ? t.cst : t.ost).length; i < a; i += 1) o = r[i], t.g._collapsable || o.setAttribute("offset", h[2 * i] + "%"), o.setAttribute("stop-opacity", h[2 * i + 1])
+          var m = t.g.o;
+          for (i = 0, a = (r = t.g._collapsable ? t.cst : t.ost).length; i < a; i += 1) o = r[i], t.g._collapsable || o.setAttribute("offset", m[2 * i] + "%"), o.setAttribute("stop-opacity", m[2 * i + 1])
         }
         if (1 === e.t)(t.e._mdf || n) && (l.setAttribute("x2", d[0]), l.setAttribute("y2", d[1]), c && !t.g._collapsable && (t.of.setAttribute("x2", d[0]), t.of.setAttribute("y2", d[1])));
         else if ((t.s._mdf || t.e._mdf || n) && (s = Math.sqrt(Math.pow(u[0] - d[0], 2) + Math.pow(u[1] - d[1], 2)), l.setAttribute("r", s), c && !t.g._collapsable && t.of.setAttribute("r", s)), t.e._mdf || t.h._mdf || t.a._mdf || n) {
@@ -4273,20 +4273,20 @@
   }, SVGShapeElement.prototype.searchShapes = function(e, t, n, r, i, a, o) {
     var s, l, c, u, d, f, p = [].concat(a),
       _ = e.length - 1,
-      m = [],
-      h = [];
+      h = [],
+      m = [];
     for (s = _; s >= 0; s -= 1) {
-      if ((f = this.searchProcessedElement(e[s])) ? t[s] = n[f - 1] : e[s]._render = o, "fl" === e[s].ty || "st" === e[s].ty || "gf" === e[s].ty || "gs" === e[s].ty || "no" === e[s].ty) f ? t[s].style.closed = false : t[s] = this.createStyleElement(e[s], i), e[s]._render && t[s].style.pElem.parentNode !== r && r.appendChild(t[s].style.pElem), m.push(t[s].style);
+      if ((f = this.searchProcessedElement(e[s])) ? t[s] = n[f - 1] : e[s]._render = o, "fl" === e[s].ty || "st" === e[s].ty || "gf" === e[s].ty || "gs" === e[s].ty || "no" === e[s].ty) f ? t[s].style.closed = false : t[s] = this.createStyleElement(e[s], i), e[s]._render && t[s].style.pElem.parentNode !== r && r.appendChild(t[s].style.pElem), h.push(t[s].style);
       else if ("gr" === e[s].ty) {
         if (f)
           for (l = 0, c = t[s].it.length; l < c; l += 1) t[s].prevViewData[l] = t[s].it[l];
         else t[s] = this.createGroupElement(e[s]);
         this.searchShapes(e[s].it, t[s].it, t[s].prevViewData, t[s].gr, i + 1, p, o), e[s]._render && t[s].gr.parentNode !== r && r.appendChild(t[s].gr)
-      } else "tr" === e[s].ty ? (f || (t[s] = this.createTransformElement(e[s], r)), u = t[s].transform, p.push(u)) : "sh" === e[s].ty || "rc" === e[s].ty || "el" === e[s].ty || "sr" === e[s].ty ? (f || (t[s] = this.createShapeElement(e[s], p, i)), this.setElementStyles(t[s])) : "tm" === e[s].ty || "rd" === e[s].ty || "ms" === e[s].ty || "pb" === e[s].ty || "zz" === e[s].ty || "op" === e[s].ty ? (f ? (d = t[s]).closed = false : ((d = ShapeModifiers.getModifier(e[s].ty)).init(this, e[s]), t[s] = d, this.shapeModifiers.push(d)), h.push(d)) : "rp" === e[s].ty && (f ? (d = t[s]).closed = true : (d = ShapeModifiers.getModifier(e[s].ty), t[s] = d, d.init(this, e, s, t), this.shapeModifiers.push(d), o = false), h.push(d));
+      } else "tr" === e[s].ty ? (f || (t[s] = this.createTransformElement(e[s], r)), u = t[s].transform, p.push(u)) : "sh" === e[s].ty || "rc" === e[s].ty || "el" === e[s].ty || "sr" === e[s].ty ? (f || (t[s] = this.createShapeElement(e[s], p, i)), this.setElementStyles(t[s])) : "tm" === e[s].ty || "rd" === e[s].ty || "ms" === e[s].ty || "pb" === e[s].ty || "zz" === e[s].ty || "op" === e[s].ty ? (f ? (d = t[s]).closed = false : ((d = ShapeModifiers.getModifier(e[s].ty)).init(this, e[s]), t[s] = d, this.shapeModifiers.push(d)), m.push(d)) : "rp" === e[s].ty && (f ? (d = t[s]).closed = true : (d = ShapeModifiers.getModifier(e[s].ty), t[s] = d, d.init(this, e, s, t), this.shapeModifiers.push(d), o = false), m.push(d));
       this.addProcessedElement(e[s], s + 1)
     }
-    for (s = 0, _ = m.length; s < _; s += 1) m[s].closed = true;
-    for (s = 0, _ = h.length; s < _; s += 1) h[s].closed = true
+    for (s = 0, _ = h.length; s < _; s += 1) h[s].closed = true;
+    for (s = 0, _ = m.length; s < _; s += 1) m[s].closed = true
   }, SVGShapeElement.prototype.renderInnerContent = function() {
     this.renderModifiers();
     var e, t = this.stylesList.length;
@@ -4347,18 +4347,18 @@
       p = 0,
       _ = getFontProperties(f);
     e.fWeight = _.weight, e.fStyle = _.style, e.finalSize = e.s, e.finalText = this.buildFinalText(e.t), g = e.finalText.length, e.finalLineHeight = e.lh;
-    var m = e.tr / 1e3 * e.finalSize;
+    var h = e.tr / 1e3 * e.finalSize;
     if (e.sz)
-      for (var h, g, E, b, y, O, v, S, I, T, C = true, A = e.sz[0], N = e.sz[1]; C;) {
-        T = this.buildFinalText(e.t), I = 0, u = 0, g = T.length, m = e.tr / 1e3 * e.finalSize;
+      for (var m, g, E, b, y, O, v, S, I, T, C = true, A = e.sz[0], N = e.sz[1]; C;) {
+        T = this.buildFinalText(e.t), I = 0, u = 0, g = T.length, h = e.tr / 1e3 * e.finalSize;
         var P = false;
-        for (h = 0; h < g; h += 1) S = T[h].charCodeAt(0), E = false, " " === T[h] ? P = h : (13 === S || 3 === S) && (u = 0, E = true, I += e.finalLineHeight || 1.2 * e.finalSize), t.chars ? (v = t.getCharData(T[h], f.fStyle, f.fFamily), p = E ? 0 : v.w * e.finalSize / 100) : p = t.measureText(T[h], e.f, e.finalSize), u + p > A && " " !== T[h] ? (false === P ? g += 1 : h = P, I += e.finalLineHeight || 1.2 * e.finalSize, T.splice(h, +(P === h), "\r"), P = false, u = 0) : (u += p, u += m);
+        for (m = 0; m < g; m += 1) S = T[m].charCodeAt(0), E = false, " " === T[m] ? P = m : (13 === S || 3 === S) && (u = 0, E = true, I += e.finalLineHeight || 1.2 * e.finalSize), t.chars ? (v = t.getCharData(T[m], f.fStyle, f.fFamily), p = E ? 0 : v.w * e.finalSize / 100) : p = t.measureText(T[m], e.f, e.finalSize), u + p > A && " " !== T[m] ? (false === P ? g += 1 : m = P, I += e.finalLineHeight || 1.2 * e.finalSize, T.splice(m, +(P === m), "\r"), P = false, u = 0) : (u += p, u += h);
         I += f.ascent * e.finalSize / 100, this.canResize && e.finalSize > this.minimumFontSize && N < I ? (e.finalSize -= 1, e.finalLineHeight = e.finalSize * e.lh / e.s) : (e.finalText = T, g = e.finalText.length, C = false)
       }
-    u = -m, p = 0;
-    var R = 0;
-    for (h = 0; h < g; h += 1)
-      if (E = false, 13 === (S = (x = e.finalText[h]).charCodeAt(0)) || 3 === S ? (R = 0, c.push(u), d = u > d ? u : d, u = false * m, b = "", E = true, l += 1) : b = x, t.chars ? (v = t.getCharData(x, f.fStyle, t.getFontByName(e.f).fFamily), p = E ? 0 : v.w * e.finalSize / 100) : p = t.measureText(b, e.f, e.finalSize), " " === x ? R += p + m : (u += p + m + R, R = 0), r.push({
+    u = -h, p = 0;
+    var w = 0;
+    for (m = 0; m < g; m += 1)
+      if (E = false, 13 === (S = (x = e.finalText[m]).charCodeAt(0)) || 3 === S ? (w = 0, c.push(u), d = u > d ? u : d, u = false * h, b = "", E = true, l += 1) : b = x, t.chars ? (v = t.getCharData(x, f.fStyle, t.getFontByName(e.f).fFamily), p = E ? 0 : v.w * e.finalSize / 100) : p = t.measureText(b, e.f, e.finalSize), " " === x ? w += p + h : (u += p + h + w, w = 0), r.push({
           l: p,
           an: p,
           add: o,
@@ -4368,13 +4368,13 @@
           line: l,
           animatorJustifyOffset: 0
         }), 2 == a) {
-        if (o += p, "" === b || " " === b || h === g - 1) {
-          for (("" === b || " " === b) && (o -= p); s <= h;) r[s].an = o, r[s].ind = i, r[s].extra = p, s += 1;
+        if (o += p, "" === b || " " === b || m === g - 1) {
+          for (("" === b || " " === b) && (o -= p); s <= m;) r[s].an = o, r[s].ind = i, r[s].extra = p, s += 1;
           i += 1, o = 0
         }
       } else if (3 == a) {
-      if (o += p, "" === b || h === g - 1) {
-        for ("" === b && (o -= p); s <= h;) r[s].an = o, r[s].ind = i, r[s].extra = p, s += 1;
+      if (o += p, "" === b || m === g - 1) {
+        for ("" === b && (o -= p); s <= m;) r[s].an = o, r[s].ind = i, r[s].extra = p, s += 1;
         o = 0, i += 1
       }
     } else r[i].ind = i, r[i].extra = 0, i += 1;
@@ -4390,15 +4390,15 @@
         e.justifyOffset = 0
     }
     e.lineWidths = c;
-    var w = n.a;
-    O = w.length;
+    var R = n.a;
+    O = R.length;
     var D = [];
     for (y = 0; y < O; y += 1) {
-      for ((L = w[y]).a.sc && (e.strokeColorAnim = true), L.a.sw && (e.strokeWidthAnim = true), (L.a.fc || L.a.fh || L.a.fs || L.a.fb) && (e.fillColorAnim = true), k = 0, M = L.s.b, h = 0; h < g; h += 1)(j = r[h]).anIndexes[y] = k, (1 == M && "" !== j.val || 2 == M && "" !== j.val && " " !== j.val || 3 == M && (j.n || " " == j.val || h == g - 1) || 4 == M && (j.n || h == g - 1)) && (1 === L.s.rn && D.push(k), k += 1);
+      for ((L = R[y]).a.sc && (e.strokeColorAnim = true), L.a.sw && (e.strokeWidthAnim = true), (L.a.fc || L.a.fh || L.a.fs || L.a.fb) && (e.fillColorAnim = true), k = 0, M = L.s.b, m = 0; m < g; m += 1)(j = r[m]).anIndexes[y] = k, (1 == M && "" !== j.val || 2 == M && "" !== j.val && " " !== j.val || 3 == M && (j.n || " " == j.val || m == g - 1) || 4 == M && (j.n || m == g - 1)) && (1 === L.s.rn && D.push(k), k += 1);
       n.a[y].s.totalChars = k;
       var x, L, j, M, k, U, G = false;
       if (1 === L.s.rn)
-        for (h = 0; h < g; h += 1) G != (j = r[h]).anIndexes[y] && (G = j.anIndexes[y], U = D.splice(Math.floor(Math.random() * D.length), 1)[0]), j.anIndexes[y] = U
+        for (m = 0; m < g; m += 1) G != (j = r[m]).anIndexes[y] && (G = j.anIndexes[y], U = D.splice(Math.floor(Math.random() * D.length), 1)[0]), j.anIndexes[y] = U
     }
     e.yOffset = e.finalLineHeight || 1.2 * e.finalSize, e.ls = e.ls || 0, e.ascent = f.ascent * e.finalSize / 100
   }, TextProperty.prototype.updateDocumentData = function(e, t) {
@@ -4454,16 +4454,16 @@
           else {
             var p = d - u,
               _ = -p / 2 + (r = t(e(0, r + .5 - u), d - u)),
-              m = p / 2;
-            c = Math.sqrt(1 - _ * _ / (m * m))
+              h = p / 2;
+            c = Math.sqrt(1 - _ * _ / (h * h))
           }
           c = l(c)
         } else 6 === f ? c = l(c = d === u ? 0 : (1 + Math.cos(Math.PI + 2 * Math.PI * (r = t(e(0, r + .5 - u), d - u)) / (d - u))) / 2) : (r >= n(u) && (c = r - u < 0 ? e(0, t(t(d, 1) - (u - r), 1)) : e(0, t(d - r, 1))), c = l(c));
         if (100 !== this.sm.v) {
-          var h = .01 * this.sm.v;
-          0 === h && (h = 1e-8);
-          var g = .5 - .5 * h;
-          c < g ? c = 0 : (c = (c - g) / h) > 1 && (c = 1)
+          var m = .01 * this.sm.v;
+          0 === m && (m = 1e-8);
+          var g = .5 - .5 * m;
+          c < g ? c = 0 : (c = (c - g) / m) > 1 && (c = 1)
         }
         return c * this.a.v
       },
@@ -4534,7 +4534,7 @@
   }, TextAnimatorProperty.prototype.getMeasures = function(e, t) {
     if (this.lettersChangedFlag = t, this._mdf || this._isFirstFrame || t || this._hasMaskedPath && this._pathData.m._mdf) {
       this._isFirstFrame = false;
-      var n, r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y = this._moreOptions.alignment.v,
+      var n, r, i, a, o, s, l, c, u, d, f, p, _, h, m, g, E, b, y = this._moreOptions.alignment.v,
         O = this._animatorsData,
         v = this._textData,
         S = this.mHelper,
@@ -4543,18 +4543,18 @@
         C = e.l;
       if (this._hasMaskedPath) {
         if (Y = this._pathData.m, !this._pathData.n || this._pathData._mdf) {
-          var A, N, P, R, w, D, x, L, j, M, k, U, G, Z, F, B, V, H, Y, W, K = Y.v;
-          for (this._pathData.r.v && (K = K.reverse()), w = {
+          var A, N, P, w, R, D, x, L, j, M, k, U, G, Z, F, B, V, H, Y, W, K = Y.v;
+          for (this._pathData.r.v && (K = K.reverse()), R = {
               tLength: 0,
               segments: []
-            }, R = K._length - 1, B = 0, P = 0; P < R; P += 1) W = bez.buildBezierData(K.v[P], K.v[P + 1], [K.o[P][0] - K.v[P][0], K.o[P][1] - K.v[P][1]], [K.i[P + 1][0] - K.v[P + 1][0], K.i[P + 1][1] - K.v[P + 1][1]]), w.tLength += W.segmentLength, w.segments.push(W), B += W.segmentLength;
-          P = R, Y.v.c && (W = bez.buildBezierData(K.v[P], K.v[0], [K.o[P][0] - K.v[P][0], K.o[P][1] - K.v[P][1]], [K.i[0][0] - K.v[0][0], K.i[0][1] - K.v[0][1]]), w.tLength += W.segmentLength, w.segments.push(W), B += W.segmentLength), this._pathData.pi = w
+            }, w = K._length - 1, B = 0, P = 0; P < w; P += 1) W = bez.buildBezierData(K.v[P], K.v[P + 1], [K.o[P][0] - K.v[P][0], K.o[P][1] - K.v[P][1]], [K.i[P + 1][0] - K.v[P + 1][0], K.i[P + 1][1] - K.v[P + 1][1]]), R.tLength += W.segmentLength, R.segments.push(W), B += W.segmentLength;
+          P = w, Y.v.c && (W = bez.buildBezierData(K.v[P], K.v[0], [K.o[P][0] - K.v[P][0], K.o[P][1] - K.v[P][1]], [K.i[0][0] - K.v[0][0], K.i[0][1] - K.v[0][1]]), R.tLength += W.segmentLength, R.segments.push(W), B += W.segmentLength), this._pathData.pi = R
         }
-        if (w = this._pathData.pi, D = this._pathData.f.v, k = 0, M = 1, L = 0, j = true, Z = w.segments, D < 0 && Y.v.c)
-          for (w.tLength < Math.abs(D) && (D = -Math.abs(D) % w.tLength), k = Z.length - 1, M = (G = Z[k].points).length - 1; D < 0;) D += G[M].partialLength, (M -= 1) < 0 && (k -= 1, M = (G = Z[k].points).length - 1);
+        if (R = this._pathData.pi, D = this._pathData.f.v, k = 0, M = 1, L = 0, j = true, Z = R.segments, D < 0 && Y.v.c)
+          for (R.tLength < Math.abs(D) && (D = -Math.abs(D) % R.tLength), k = Z.length - 1, M = (G = Z[k].points).length - 1; D < 0;) D += G[M].partialLength, (M -= 1) < 0 && (k -= 1, M = (G = Z[k].points).length - 1);
         U = (G = Z[k].points)[M - 1], F = (x = G[M]).partialLength
       }
-      R = C.length, A = 0, N = 0;
+      w = C.length, A = 0, N = 0;
       var z = 1.2 * e.finalSize * .714,
         q = true;
       a = O.length;
@@ -4571,7 +4571,7 @@
           ea = 2 === e.j ? false : false,
           eo = 0,
           es = true;
-        for (P = 0; P < R; P += 1)
+        for (P = 0; P < w; P += 1)
           if (C[P].n) {
             for (er && (er += ei); eo < P;) C[eo].animatorJustifyOffset = er, eo += 1;
             er = 0, es = true
@@ -4580,8 +4580,8 @@
             es = false
           } for (er && (er += ei); eo < P;) C[eo].animatorJustifyOffset = er, eo += 1
       }
-      for (P = 0; P < R; P += 1) {
-        if (S.reset(), d = 1, C[P].n) A = 0, N += e.yOffset, N += +!!q, D = X, q = false, this._hasMaskedPath && (k = J, M = $, U = (G = Z[k].points)[M - 1], F = (x = G[M]).partialLength, L = 0), et = "", E = "", h = "", b = "", en = this.defaultPropsArray;
+      for (P = 0; P < w; P += 1) {
+        if (S.reset(), d = 1, C[P].n) A = 0, N += e.yOffset, N += +!!q, D = X, q = false, this._hasMaskedPath && (k = J, M = $, U = (G = Z[k].points)[M - 1], F = (x = G[M]).partialLength, L = 0), et = "", E = "", m = "", b = "", en = this.defaultPropsArray;
         else {
           if (this._hasMaskedPath) {
             if (ee !== C[P].line) {
@@ -4597,7 +4597,7 @@
             Q !== C[P].ind && (C[Q] && (D += C[Q].extra), D += C[P].an / 2, Q = C[P].ind), D += y[0] * C[P].an * .005;
             var el = 0;
             for (i = 0; i < a; i += 1)(n = O[i].a).p.propType && ((s = (r = O[i].s).getMult(C[P].anIndexes[i], v.a[i].s.totalChars)).length ? el += n.p.v[0] * s[0] : el += n.p.v[0] * s), n.a.propType && ((s = (r = O[i].s).getMult(C[P].anIndexes[i], v.a[i].s.totalChars)).length ? el += n.a.v[0] * s[0] : el += n.a.v[0] * s);
-            for (j = true, this._pathData.a.v && (D = .5 * C[0].an + (B - this._pathData.f.v - .5 * C[0].an - .5 * C[C.length - 1].an) * Q / (R - 1) + this._pathData.f.v); j;) L + F >= D + el || !G ? (V = (D + el - L) / x.partialLength, c = U.point[0] + (x.point[0] - U.point[0]) * V, u = U.point[1] + (x.point[1] - U.point[1]) * V, S.translate(-y[0] * C[P].an * .005, -(.01 * (y[1] * z))), j = false) : G && (L += x.partialLength, (M += 1) >= G.length && (M = 0, Z[k += 1] ? G = Z[k].points : Y.v.c ? (M = 0, G = Z[k = 0].points) : (L -= x.partialLength, G = null)), G && (U = x, F = (x = G[M]).partialLength));
+            for (j = true, this._pathData.a.v && (D = .5 * C[0].an + (B - this._pathData.f.v - .5 * C[0].an - .5 * C[C.length - 1].an) * Q / (w - 1) + this._pathData.f.v); j;) L + F >= D + el || !G ? (V = (D + el - L) / x.partialLength, c = U.point[0] + (x.point[0] - U.point[0]) * V, u = U.point[1] + (x.point[1] - U.point[1]) * V, S.translate(-y[0] * C[P].an * .005, -(.01 * (y[1] * z))), j = false) : G && (L += x.partialLength, (M += 1) >= G.length && (M = 0, Z[k += 1] ? G = Z[k].points : Y.v.c ? (M = 0, G = Z[k = 0].points) : (L -= x.partialLength, G = null)), G && (U = x, F = (x = G[M]).partialLength));
             l = C[P].an / 2 - C[P].add, S.translate(-l, 0, 0)
           } else l = C[P].an / 2 - C[P].add, S.translate(-l, 0, 0), S.translate(-y[0] * C[P].an * .005, -y[1] * z * .01, 0);
           for (i = 0; i < a; i += 1)(n = O[i].a).t.propType && (s = (r = O[i].s).getMult(C[P].anIndexes[i], v.a[i].s.totalChars), (0 !== A || 0 !== e.j) && (this._hasMaskedPath ? s.length ? D += n.t.v * s[0] : D += n.t.v * s : s.length ? A += n.t.v * s[0] : A += n.t.v * s));
@@ -4605,15 +4605,15 @@
           for (i = 0; i < a; i += 1)(n = O[i].a).s.propType && ((s = (r = O[i].s).getMult(C[P].anIndexes[i], v.a[i].s.totalChars)).length ? S.scale(1 + (n.s.v[0] - 1) * s[0], 1 + (n.s.v[1] - 1) * s[1], 1) : S.scale(1 + (n.s.v[0] - 1) * s, 1 + (n.s.v[1] - 1) * s, 1));
           for (i = 0; i < a; i += 1) {
             if (n = O[i].a, s = (r = O[i].s).getMult(C[P].anIndexes[i], v.a[i].s.totalChars), n.sk.propType && (s.length ? S.skewFromAxis(-n.sk.v * s[0], n.sa.v * s[1]) : S.skewFromAxis(-n.sk.v * s, n.sa.v * s)), n.r.propType && (s.length ? S.rotateZ(-n.r.v * s[2]) : S.rotateZ(-n.r.v * s)), n.ry.propType && (s.length ? S.rotateY(n.ry.v * s[1]) : S.rotateY(n.ry.v * s)), n.rx.propType && (s.length ? S.rotateX(n.rx.v * s[0]) : S.rotateX(n.rx.v * s)), n.o.propType && (s.length ? d += (n.o.v * s[0] - d) * s[0] : d += (n.o.v * s - d) * s), e.strokeWidthAnim && n.sw.propType && (s.length ? p += n.sw.v * s[0] : p += n.sw.v * s), e.strokeColorAnim && n.sc.propType)
-              for (m = 0; m < 3; m += 1) s.length ? f[m] += (n.sc.v[m] - f[m]) * s[0] : f[m] += (n.sc.v[m] - f[m]) * s;
+              for (h = 0; h < 3; h += 1) s.length ? f[h] += (n.sc.v[h] - f[h]) * s[0] : f[h] += (n.sc.v[h] - f[h]) * s;
             if (e.fillColorAnim && e.fc) {
               if (n.fc.propType)
-                for (m = 0; m < 3; m += 1) s.length ? _[m] += (n.fc.v[m] - _[m]) * s[0] : _[m] += (n.fc.v[m] - _[m]) * s;
+                for (h = 0; h < 3; h += 1) s.length ? _[h] += (n.fc.v[h] - _[h]) * s[0] : _[h] += (n.fc.v[h] - _[h]) * s;
               n.fh.propType && (_ = s.length ? addHueToRGB(_, n.fh.v * s[0]) : addHueToRGB(_, n.fh.v * s)), n.fs.propType && (_ = s.length ? addSaturationToRGB(_, n.fs.v * s[0]) : addSaturationToRGB(_, n.fs.v * s)), n.fb.propType && (_ = s.length ? addBrightnessToRGB(_, n.fb.v * s[0]) : addBrightnessToRGB(_, n.fb.v * s))
             }
           }
           for (i = 0; i < a; i += 1)(n = O[i].a).p.propType && (s = (r = O[i].s).getMult(C[P].anIndexes[i], v.a[i].s.totalChars), this._hasMaskedPath ? s.length ? S.translate(0, n.p.v[1] * s[0], -n.p.v[2] * s[1]) : S.translate(0, n.p.v[1] * s, -n.p.v[2] * s) : s.length ? S.translate(n.p.v[0] * s[0], n.p.v[1] * s[1], -n.p.v[2] * s[2]) : S.translate(n.p.v[0] * s, n.p.v[1] * s, -n.p.v[2] * s));
-          if (e.strokeWidthAnim && (h = p < 0 ? 0 : p), e.strokeColorAnim && (g = "rgb(" + Math.round(255 * f[0]) + "," + Math.round(255 * f[1]) + "," + Math.round(255 * f[2]) + ")"), e.fillColorAnim && e.fc && (E = "rgb(" + Math.round(255 * _[0]) + "," + Math.round(255 * _[1]) + "," + Math.round(255 * _[2]) + ")"), this._hasMaskedPath) {
+          if (e.strokeWidthAnim && (m = p < 0 ? 0 : p), e.strokeColorAnim && (g = "rgb(" + Math.round(255 * f[0]) + "," + Math.round(255 * f[1]) + "," + Math.round(255 * f[2]) + ")"), e.fillColorAnim && e.fc && (E = "rgb(" + Math.round(255 * _[0]) + "," + Math.round(255 * _[1]) + "," + Math.round(255 * _[2]) + ")"), this._hasMaskedPath) {
             if (S.translate(0, -e.ls), S.translate(0, y[1] * z * .01 + N, 0), this._pathData.p.v) {
               var ec = 180 * Math.atan(H = (x.point[1] - U.point[1]) / (x.point[0] - U.point[0])) / Math.PI;
               x.point[0] < U.point[0] && (ec += 180), S.rotate(-ec * Math.PI / 180)
@@ -4631,7 +4631,7 @@
           }
           "html" === I ? et = S.toCSS() : "svg" === I ? et = S.to2dCSS() : en = [S.props[0], S.props[1], S.props[2], S.props[3], S.props[4], S.props[5], S.props[6], S.props[7], S.props[8], S.props[9], S.props[10], S.props[11], S.props[12], S.props[13], S.props[14], S.props[15]], b = d
         }
-        T <= P ? (o = new LetterProps(b, h, g, E, et, en), this.renderedLetters.push(o), T += 1, this.lettersChangedFlag = true) : (o = this.renderedLetters[P], this.lettersChangedFlag = o.update(b, h, g, E, et, en) || this.lettersChangedFlag)
+        T <= P ? (o = new LetterProps(b, m, g, E, et, en), this.renderedLetters.push(o), T += 1, this.lettersChangedFlag = true) : (o = this.renderedLetters[P], this.lettersChangedFlag = o.update(b, m, g, E, et, en) || this.lettersChangedFlag)
       }
     }
   }, TextAnimatorProperty.prototype.getValue = function() {
@@ -4768,7 +4768,7 @@
     this.layerElement.setAttribute("aria-label", e.t);
     var i = e.l || [],
       a = !!this.globalData.fontManager.chars;
-    h = i.length;
+    m = i.length;
     var o = this.mHelper,
       s = "",
       l = this.data.singleShape,
@@ -4778,33 +4778,33 @@
       f = .001 * e.tr * e.finalSize;
     if (!l || a || e.sz) {
       var p = this.textSpans.length;
-      for (m = 0; m < h; m += 1) {
-        if (this.textSpans[m] || (this.textSpans[m] = {
+      for (h = 0; h < m; h += 1) {
+        if (this.textSpans[h] || (this.textSpans[h] = {
             span: null,
             childSpan: null,
             glyph: null
-          }), !a || !l || 0 === m) {
-          if (g = p > m ? this.textSpans[m].span : createNS(a ? "g" : "text"), p <= m) {
-            if (g.setAttribute("stroke-linecap", "butt"), g.setAttribute("stroke-linejoin", "round"), g.setAttribute("stroke-miterlimit", "4"), this.textSpans[m].span = g, a) {
+          }), !a || !l || 0 === h) {
+          if (g = p > h ? this.textSpans[h].span : createNS(a ? "g" : "text"), p <= h) {
+            if (g.setAttribute("stroke-linecap", "butt"), g.setAttribute("stroke-linejoin", "round"), g.setAttribute("stroke-miterlimit", "4"), this.textSpans[h].span = g, a) {
               var _ = createNS("g");
-              g.appendChild(_), this.textSpans[m].childSpan = _
+              g.appendChild(_), this.textSpans[h].childSpan = _
             }
-            this.textSpans[m].span = g, this.layerElement.appendChild(g)
+            this.textSpans[h].span = g, this.layerElement.appendChild(g)
           }
           g.style.display = "inherit"
         }
-        if (o.reset(), l && (i[m].n && (c = -f, u += e.yOffset, u += +!!d, d = false), this.applyTextPropertiesToMatrix(e, o, i[m].line, c, u), c += i[m].l || 0, c += f), a) {
-          if (1 === (E = this.globalData.fontManager.getCharData(e.finalText[m], t.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily)).t) b = new SVGCompElement(E.data, this.globalData, this);
+        if (o.reset(), l && (i[h].n && (c = -f, u += e.yOffset, u += +!!d, d = false), this.applyTextPropertiesToMatrix(e, o, i[h].line, c, u), c += i[h].l || 0, c += f), a) {
+          if (1 === (E = this.globalData.fontManager.getCharData(e.finalText[h], t.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily)).t) b = new SVGCompElement(E.data, this.globalData, this);
           else {
-            var m, h, g, E, b, y = emptyShapeData;
+            var h, m, g, E, b, y = emptyShapeData;
             E.data && E.data.shapes && (y = this.buildShapeData(E.data, e.finalSize)), b = new SVGShapeElement(y, this.globalData, this)
           }
-          if (this.textSpans[m].glyph) {
-            var O = this.textSpans[m].glyph;
-            this.textSpans[m].childSpan.removeChild(O.layerElement), O.destroy()
+          if (this.textSpans[h].glyph) {
+            var O = this.textSpans[h].glyph;
+            this.textSpans[h].childSpan.removeChild(O.layerElement), O.destroy()
           }
-          this.textSpans[m].glyph = b, b._debug = true, b.prepareFrame(0), b.renderFrame(), this.textSpans[m].childSpan.appendChild(b.layerElement), 1 === E.t && this.textSpans[m].childSpan.setAttribute("transform", "scale(" + e.finalSize / 100 + "," + e.finalSize / 100 + ")")
-        } else l && g.setAttribute("transform", "translate(" + o.props[12] + "," + o.props[13] + ")"), g.textContent = i[m].val, g.setAttributeNS("http://www.w3.org/XML/1998/namespace", "xml:space", "preserve")
+          this.textSpans[h].glyph = b, b._debug = true, b.prepareFrame(0), b.renderFrame(), this.textSpans[h].childSpan.appendChild(b.layerElement), 1 === E.t && this.textSpans[h].childSpan.setAttribute("transform", "scale(" + e.finalSize / 100 + "," + e.finalSize / 100 + ")")
+        } else l && g.setAttribute("transform", "translate(" + o.props[12] + "," + o.props[13] + ")"), g.textContent = i[h].val, g.setAttributeNS("http://www.w3.org/XML/1998/namespace", "xml:space", "preserve")
       }
       l && g && g.setAttribute("d", s)
     } else {
@@ -4822,13 +4822,13 @@
       }
       v.setAttribute("text-anchor", S), v.setAttribute("letter-spacing", f);
       var I = this.buildTextContents(e.finalText);
-      for (m = 0, h = I.length, u = e.ps ? e.ps[1] + e.ascent : 0; m < h; m += 1)(g = this.textSpans[m].span || createNS("tspan")).textContent = I[m], g.setAttribute("x", 0), g.setAttribute("y", u), g.style.display = "inherit", v.appendChild(g), this.textSpans[m] || (this.textSpans[m] = {
+      for (h = 0, m = I.length, u = e.ps ? e.ps[1] + e.ascent : 0; h < m; h += 1)(g = this.textSpans[h].span || createNS("tspan")).textContent = I[h], g.setAttribute("x", 0), g.setAttribute("y", u), g.style.display = "inherit", v.appendChild(g), this.textSpans[h] || (this.textSpans[h] = {
         span: null,
         glyph: null
-      }), this.textSpans[m].span = g, u += e.finalLineHeight;
+      }), this.textSpans[h].span = g, u += e.finalLineHeight;
       this.layerElement.appendChild(v)
     }
-    for (; m < this.textSpans.length;) this.textSpans[m].span.style.display = "none", m += 1;
+    for (; h < this.textSpans.length;) this.textSpans[h].span.style.display = "none", h += 1;
     this._sizeChanged = true
   }, SVGTextLottieElement.prototype.sourceRectAtTime = function() {
     if (this.prepareFrame(this.comp.renderedFrame - this.data.st), this.renderInnerContent(), this._sizeChanged) {
@@ -5453,10 +5453,10 @@
           _ = Math.sin(u + t.a.v) * f + s[1];
         i = o.createRadialGradient(p, _, 0, s[0], s[1], c)
       }
-      var m = e.g.p,
-        h = t.g.c,
+      var h = e.g.p,
+        m = t.g.c,
         g = 1;
-      for (a = 0; a < m; a += 1) t.g._hasOpacity && t.g._collapsable && (g = t.g.o[2 * a + 1]), i.addColorStop(h[4 * a] / 100, "rgba(" + h[4 * a + 1] + "," + h[4 * a + 2] + "," + h[4 * a + 3] + "," + g + ")");
+      for (a = 0; a < h; a += 1) t.g._hasOpacity && t.g._collapsable && (g = t.g.o[2 * a + 1]), i.addColorStop(m[4 * a] / 100, "rgba(" + m[4 * a + 1] + "," + m[4 * a + 2] + "," + m[4 * a + 3] + "," + g + ")");
       r.grd = i
     }
     r.coOp = t.o.v * n.opacity
@@ -5473,8 +5473,8 @@
     f.fc ? (p = true, this.values.fill = this.buildColor(f.fc)) : this.values.fill = "rgba(0,0,0,0)", this.fill = p;
     var _ = false;
     f.sc && (_ = true, this.values.stroke = this.buildColor(f.sc), this.values.sWidth = f.sw);
-    var m = this.globalData.fontManager.getFontByName(f.f),
-      h = f.l,
+    var h = this.globalData.fontManager.getFontByName(f.f),
+      m = f.l,
       g = this.mHelper;
     this.stroke = _, this.values.fValue = f.finalSize + "px " + this.globalData.fontManager.getFontByName(f.f).fFamily, t = f.finalText.length;
     var E = this.data.singleShape,
@@ -5484,13 +5484,13 @@
       v = true,
       S = 0;
     for (e = 0; e < t; e += 1) {
-      r = (n = this.globalData.fontManager.getCharData(f.finalText[e], m.fStyle, this.globalData.fontManager.getFontByName(f.f).fFamily)) && n.data || {}, g.reset(), E && h[e].n && (y = -b, O += f.yOffset, O += +!!v, v = false), l = (o = r.shapes ? r.shapes[0].it : []).length, g.scale(f.finalSize / 100, f.finalSize / 100), E && this.applyTextPropertiesToMatrix(f, g, h[e].line, y, O), u = createSizedArray(l - 1);
+      r = (n = this.globalData.fontManager.getCharData(f.finalText[e], h.fStyle, this.globalData.fontManager.getFontByName(f.f).fFamily)) && n.data || {}, g.reset(), E && m[e].n && (y = -b, O += f.yOffset, O += +!!v, v = false), l = (o = r.shapes ? r.shapes[0].it : []).length, g.scale(f.finalSize / 100, f.finalSize / 100), E && this.applyTextPropertiesToMatrix(f, g, m[e].line, y, O), u = createSizedArray(l - 1);
       var I = 0;
       for (s = 0; s < l; s += 1)
         if ("sh" === o[s].ty) {
           for (i = 1, a = o[s].ks.k.i.length, c = o[s].ks.k, d = []; i < a; i += 1) 1 === i && d.push(g.applyToX(c.v[0][0], c.v[0][1], 0), g.applyToY(c.v[0][0], c.v[0][1], 0)), d.push(g.applyToX(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToY(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToX(c.i[i][0], c.i[i][1], 0), g.applyToY(c.i[i][0], c.i[i][1], 0), g.applyToX(c.v[i][0], c.v[i][1], 0), g.applyToY(c.v[i][0], c.v[i][1], 0));
           d.push(g.applyToX(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToY(c.o[i - 1][0], c.o[i - 1][1], 0), g.applyToX(c.i[0][0], c.i[0][1], 0), g.applyToY(c.i[0][0], c.i[0][1], 0), g.applyToX(c.v[0][0], c.v[0][1], 0), g.applyToY(c.v[0][0], c.v[0][1], 0)), u[I] = d, I += 1
-        } E && (y += h[e].l, y += b), this.textSpans[S] ? this.textSpans[S].elem = u : this.textSpans[S] = {
+        } E && (y += m[e].l, y += b), this.textSpans[S] ? this.textSpans[S].elem = u : this.textSpans[S] = {
         elem: u
       }, S += 1
     }
@@ -5826,10 +5826,10 @@
       l = 0;
     for (c = 0; c < u; c += 1) {
       if (this.globalData.fontManager.chars ? (this.textPaths[l] ? d = this.textPaths[l] : ((d = createNS("path")).setAttribute("stroke-linecap", lineCapEnum[1]), d.setAttribute("stroke-linejoin", lineJoinEnum[2]), d.setAttribute("stroke-miterlimit", "4")), this.isMasked || (this.textSpans[l] ? p = (f = this.textSpans[l]).children[0] : ((f = createTag("div")).style.lineHeight = 0, (p = createNS("svg")).appendChild(d), styleDiv(f)))) : this.isMasked ? d = this.textPaths[l] ? this.textPaths[l] : createNS("text") : this.textSpans[l] ? (f = this.textSpans[l], d = this.textPaths[l]) : (styleDiv(f = createTag("span")), styleDiv(d = createTag("span")), f.appendChild(d)), this.globalData.fontManager.chars) {
-        var c, u, d, f, p, _, m, h = this.globalData.fontManager.getCharData(e.finalText[c], r.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily);
-        if (m = h ? h.data : null, o.reset(), m && m.shapes && m.shapes.length && (_ = m.shapes[0].it, o.scale(e.finalSize / 100, e.finalSize / 100), s = this.createPathShape(o, _), d.setAttribute("d", s)), this.isMasked) this.innerElem.appendChild(d);
+        var c, u, d, f, p, _, h, m = this.globalData.fontManager.getCharData(e.finalText[c], r.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily);
+        if (h = m ? m.data : null, o.reset(), h && h.shapes && h.shapes.length && (_ = h.shapes[0].it, o.scale(e.finalSize / 100, e.finalSize / 100), s = this.createPathShape(o, _), d.setAttribute("d", s)), this.isMasked) this.innerElem.appendChild(d);
         else {
-          if (this.innerElem.appendChild(f), m && m.shapes) {
+          if (this.innerElem.appendChild(f), h && h.shapes) {
             document.body.appendChild(p);
             var g = p.getBBox();
             p.setAttribute("width", g.width + 2), p.setAttribute("height", g.height + 2), p.setAttribute("viewBox", g.x - 1 + " " + (g.y - 1) + " " + (g.width + 2) + " " + (g.height + 2));
@@ -6079,7 +6079,7 @@
 
     function f(n, r, o) {
       var d = [],
-        f = h(m((r = true === r ? {
+        f = m(h((r = true === r ? {
           entropy: true
         } : r || {}).entropy ? [n, E(e)] : null === n ? g() : n, 3), d),
         b = new p(d),
@@ -6092,7 +6092,7 @@
         return 0 | b.g(4)
       }, y.quick = function() {
         return b.g(4) / 0x100000000
-      }, y.double = y, h(E(b.S), e), (r.pass || o || function(e, n, r, i) {
+      }, y.double = y, m(E(b.S), e), (r.pass || o || function(e, n, r, i) {
         return (i && (i.S && _(i, b), e.state = function() {
           return _(b, {})
         }), r) ? (t[s] = e, n) : e
@@ -6117,17 +6117,17 @@
       return t.i = e.i, t.j = e.j, t.S = e.S.slice(), t
     }
 
-    function m(e, t) {
+    function h(e, t) {
       var n, r = [],
         i = _typeof$2(e);
       if (t && "object" == i)
         for (n in e) try {
-          r.push(m(e[n], t - 1))
+          r.push(h(e[n], t - 1))
         } catch (e) {}
       return r.length ? r : "string" == i ? e : e + "\0"
     }
 
-    function h(e, t) {
+    function m(e, t) {
       for (var n, r = e + "", i = 0; i < r.length;) t[d & i] = d & (n ^= 19 * t[d & i]) + r.charCodeAt(i++);
       return E(t)
     }
@@ -6147,7 +6147,7 @@
     function E(e) {
       return String.fromCharCode.apply(0, e)
     }
-    t["seed" + s] = f, h(t.random(), e)
+    t["seed" + s] = f, m(t.random(), e)
   }
 
   function initialize$2(e) {
@@ -6963,10 +6963,10 @@
     }(),
     ShapeExpressionInterface = function() {
       function e(e, t, l) {
-        var _, m = [],
-          h = e ? e.length : 0;
-        for (_ = 0; _ < h; _ += 1) "gr" === e[_].ty ? m.push(n(e[_], t[_], l)) : "fl" === e[_].ty ? m.push(r(e[_], t[_], l)) : "st" === e[_].ty ? m.push(o(e[_], t[_], l)) : "tm" === e[_].ty ? m.push(s(e[_], t[_], l)) : "tr" === e[_].ty || ("el" === e[_].ty ? m.push(c(e[_], t[_], l)) : "sr" === e[_].ty ? m.push(u(e[_], t[_], l)) : "sh" === e[_].ty ? m.push(ShapePathInterface(e[_], t[_], l)) : "rc" === e[_].ty ? m.push(d(e[_], t[_], l)) : "rd" === e[_].ty ? m.push(f(e[_], t[_], l)) : "rp" === e[_].ty ? m.push(p(e[_], t[_], l)) : "gf" === e[_].ty ? m.push(i(e[_], t[_], l)) : m.push(a(e[_], t[_], l)));
-        return m
+        var _, h = [],
+          m = e ? e.length : 0;
+        for (_ = 0; _ < m; _ += 1) "gr" === e[_].ty ? h.push(n(e[_], t[_], l)) : "fl" === e[_].ty ? h.push(r(e[_], t[_], l)) : "st" === e[_].ty ? h.push(o(e[_], t[_], l)) : "tm" === e[_].ty ? h.push(s(e[_], t[_], l)) : "tr" === e[_].ty || ("el" === e[_].ty ? h.push(c(e[_], t[_], l)) : "sr" === e[_].ty ? h.push(u(e[_], t[_], l)) : "sh" === e[_].ty ? h.push(ShapePathInterface(e[_], t[_], l)) : "rc" === e[_].ty ? h.push(d(e[_], t[_], l)) : "rd" === e[_].ty ? h.push(f(e[_], t[_], l)) : "rp" === e[_].ty ? h.push(p(e[_], t[_], l)) : "gf" === e[_].ty ? h.push(i(e[_], t[_], l)) : h.push(a(e[_], t[_], l)));
+        return h
       }
 
       function t(t, n, r) {
@@ -7405,13 +7405,13 @@
         }
         return (f - d) * _ + p
       } else if ("continue" === e) {
-        var m = this.getValueAtTime(u / this.comp.globalData.frameRate, 0),
-          h = this.getValueAtTime((u - .001) / this.comp.globalData.frameRate, 0);
+        var h = this.getValueAtTime(u / this.comp.globalData.frameRate, 0),
+          m = this.getValueAtTime((u - .001) / this.comp.globalData.frameRate, 0);
         if (this.pv.length) {
-          for (a = 0, o = (s = Array(m.length)).length; a < o; a += 1) s[a] = m[a] + (m[a] - h[a]) * ((l - u) / this.comp.globalData.frameRate) / 5e-4;
+          for (a = 0, o = (s = Array(h.length)).length; a < o; a += 1) s[a] = h[a] + (h[a] - m[a]) * ((l - u) / this.comp.globalData.frameRate) / 5e-4;
           return s
         }
-        return m + (l - u) / .001 * (m - h)
+        return h + (l - u) / .001 * (h - m)
       }
       return this.getValueAtTime(((l - i) % r + i) / this.comp.globalData.frameRate, 0)
     }
@@ -7436,13 +7436,13 @@
         }
         return p - (f - d) * _
       } else if ("continue" === e) {
-        var m = this.getValueAtTime(u / this.comp.globalData.frameRate, 0),
-          h = this.getValueAtTime((u + .001) / this.comp.globalData.frameRate, 0);
+        var h = this.getValueAtTime(u / this.comp.globalData.frameRate, 0),
+          m = this.getValueAtTime((u + .001) / this.comp.globalData.frameRate, 0);
         if (this.pv.length) {
-          for (a = 0, o = (s = Array(m.length)).length; a < o; a += 1) s[a] = m[a] + (m[a] - h[a]) * (u - l) / .001;
+          for (a = 0, o = (s = Array(h.length)).length; a < o; a += 1) s[a] = h[a] + (h[a] - m[a]) * (u - l) / .001;
           return s
         }
-        return m + (m - h) * (u - l) / .001
+        return h + (h - m) * (u - l) / .001
       }
       return this.getValueAtTime((r - ((u - l) % r + u)) / this.comp.globalData.frameRate, 0)
     }

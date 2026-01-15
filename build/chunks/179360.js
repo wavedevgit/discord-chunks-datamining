@@ -5,9 +5,9 @@ require.d(exports, {
   C0: () => u,
   W3: () => p,
   X8: () => f,
-  bG: () => h,
+  bG: () => m,
   dG: () => _,
-  pD: () => m,
+  pD: () => h,
   tH: () => d
 });
 var Chunk544891 = require("./544891.js"),
@@ -108,7 +108,7 @@ async function _(e, t) {
     boostId: t
   })
 }
-async function m(e) {
+async function h(e) {
   let t = await r.tn.post({
       url: c.ANM.USER_GUILD_BOOST_SLOT_CANCEL(e),
       oldFormErrors: true,
@@ -120,7 +120,7 @@ async function m(e) {
     guildBoostSlot: n
   }), n
 }
-async function h(e) {
+async function m(e) {
   let t = await r.tn.post({
       url: c.ANM.USER_GUILD_BOOST_SLOT_UNCANCEL(e),
       oldFormErrors: true,

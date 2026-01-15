@@ -21,17 +21,17 @@ var Chunk54381 = require("./54381.js"),
 let v = {
     mana: {
       name: "Mana",
-      icon: Chunk657707.hh5,
+      icon: Chunk657707.PotionIcon,
       defaultSubtitle: "Explore the Mana Design System"
     },
     revenue: {
       name: "Revenue",
-      icon: Chunk657707.uMN,
+      icon: Chunk657707.BillIcon,
       defaultSubtitle: "Explore Revenue Components"
     },
     void: {
       name: "Void",
-      icon: Chunk657707.hh5,
+      icon: Chunk657707.PotionIcon,
       defaultSubtitle: "Explore the Void Design System"
     }
   },
@@ -43,61 +43,61 @@ function S(l) {
       let l = f.default.getCurrentUser();
       return (null == l ? true : l.isStaff()) || (null == l ? true : l.isStaffPersonal())
     }),
-    C = u.useMemo(() => (function(l) {
+    C = o.useMemo(() => (function(l) {
       let e = l.match(p.u);
       return null == e || null == e[1] ? null : e[1].toLowerCase()
     })(l.url), [l.url]),
-    b = null != C ? (function() {
+    P = null != C ? (function() {
       if (null == y)
         for (let l of (y = new Map, h.componentPlaygroundConfigs))
           for (let e of l.collections) y.set(e.id.toLowerCase(), e);
       return y
     })().get(C) : null,
-    j = null != C ? v[C] : null,
-    P = u.useMemo(() => {
-      if (null == b) return;
+    b = null != C ? v[C] : null,
+    j = o.useMemo(() => {
+      if (null == P) return;
       let e = function(l) {
         var e;
         let n = l.match(p.u);
         return null == n ? null : null != (e = n[3]) ? e : null
       }(l.url);
       if (null != e)
-        for (let l of b.groups) {
+        for (let l of P.groups) {
           let n = l.stories.find(l => l.id === e);
           if (null != n) return n
         }
-    }, [l.url, b]),
-    k = null != (e = null == P ? true : P.name) ? e : null != b ? "".concat(b.name, " Playground") : "Playground",
-    M = null != P && null != P.docs ? (0, t.jsx)(a.Anchor, {
-      href: P.docs,
+    }, [l.url, P]),
+    k = null != (e = null == j ? true : j.name) ? e : null != P ? "".concat(P.name, " Playground") : "Playground",
+    w = null != j && null != j.docs ? (0, t.jsx)(a.Anchor, {
+      href: j.docs,
       children: "Documentation"
-    }) : null != j ? j.defaultSubtitle : "Explore Components",
-    N = u.useCallback(() => {
-      null != b && (null != P ? m.PlaygroundStore.setState({
-        selectedCollection: b.id,
-        selectedStory: P.id
+    }) : null != b ? b.defaultSubtitle : "Explore Components",
+    E = o.useCallback(() => {
+      null != P && (null != j ? m.PlaygroundStore.setState({
+        selectedCollection: P.id,
+        selectedStory: j.id
       }) : m.PlaygroundStore.setState({
-        selectedCollection: b.id,
+        selectedCollection: P.id,
         selectedStory: null
       }), (0, c.jN)(x.S9g.COMPONENT_PLAYGROUND))
-    }, [P, b]);
-  if (!S || null == b) return null;
-  let w = null != (n = null == j ? true : j.icon) ? n : o.hh5;
+    }, [j, P]);
+  if (!S || null == P) return null;
+  let M = null != (n = null == b ? true : b.icon) ? n : u.PotionIcon;
   return (0, t.jsx)("div", {
     className: g.root,
-    "data-has-story": null != P,
+    "data-has-story": null != j,
     children: (0, t.jsxs)(r.Kqy, {
-      direction: null == P ? "vertical" : "horizontal",
-      align: null == P ? "start" : "center",
+      direction: null == j ? "vertical" : "horizontal",
+      align: null == j ? "start" : "center",
       gap: 12,
-      justify: null == P ? "end" : "space-between",
+      justify: null == j ? "end" : "space-between",
       children: [(0, t.jsx)("div", {
         className: g.header,
         children: (0, t.jsxs)(r.Kqy, {
           direction: "horizontal",
           align: "start",
           gap: 8,
-          children: [(0, t.jsx)(w, {
+          children: [(0, t.jsx)(M, {
             size: "lg"
           }), (0, t.jsxs)(r.Kqy, {
             direction: "vertical",
@@ -107,15 +107,15 @@ function S(l) {
               children: k
             }), (0, t.jsx)(s.x, {
               variant: "text-sm/normal",
-              children: M
+              children: w
             })]
           })]
         })
       }), (0, t.jsx)(d.zxk, {
         size: "sm",
-        onClick: N,
+        onClick: E,
         text: "Open Playground",
-        fullWidth: null == P
+        fullWidth: null == j
       })]
     })
   })

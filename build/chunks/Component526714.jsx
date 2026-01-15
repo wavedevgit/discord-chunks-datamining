@@ -2,7 +2,7 @@
 /** chunk id: 526714, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => m
+  I: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,15 +52,15 @@ function _(e, t) {
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     color: t = "default",
     label: n,
     control: a,
     disabled: d,
     isFocused: p,
-    showDefaultFocus: m = false,
-    menuItemProps: h,
+    showDefaultFocus: h = false,
+    menuItemProps: m,
     onClose: g
   } = e, {
     onInteraction: E
@@ -87,11 +87,11 @@ function m(e) {
     onClick: O,
     className: o()(u.item, c._e[t], {
       [u.disabled]: d,
-      [u.focused]: m && p,
-      [u.hideInteraction]: !m
+      [u.focused]: h && p,
+      [u.hideInteraction]: !h
     }),
     "aria-disabled": d
-  }, h), {
+  }, m), {
     children: [null != n ? (0, r.jsx)("div", {
       className: u.labelContainer,
       children: (0, r.jsx)("div", {

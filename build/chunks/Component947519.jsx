@@ -22,12 +22,12 @@ let p = (0, Chunk608787.Un)({
 function _(e) {
   let {
     mobile: t
-  } = e, n = (0, o.e7)([l.Z], () => l.Z.isDeveloper), a = (0, o.e7)([d.Z], () => d.Z.displayTools), _ = (0, o.e7)([s.Z], () => s.Z.getWindowOpen(f.KJ3.DEVTOOLS_POPOUT)), m = i.useCallback(e => {
+  } = e, n = (0, o.e7)([l.Z], () => l.Z.isDeveloper), a = (0, o.e7)([d.Z], () => d.Z.displayTools), _ = (0, o.e7)([s.Z], () => s.Z.getWindowOpen(f.KJ3.DEVTOOLS_POPOUT)), h = i.useCallback(e => {
     ((0, c.isMac)() ? e.metaKey : e.ctrlKey) && e.altKey && "KeyO" === e.code && (0, u.SO)()
   }, []);
-  return (i.useLayoutEffect(() => (window.addEventListener("keydown", m), () => {
-    window.removeEventListener("keydown", m)
-  }), [m]), (t ? n : a) && !_) ? (0, r.jsx)(p, {
+  return (i.useLayoutEffect(() => (window.addEventListener("keydown", h), () => {
+    window.removeEventListener("keydown", h)
+  }), [h]), (t ? n : a) && !_) ? (0, r.jsx)(p, {
     mobile: t
   }) : null
 }

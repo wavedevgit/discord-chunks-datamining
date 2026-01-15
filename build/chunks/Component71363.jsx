@@ -35,8 +35,8 @@ let C = e => {
       enablePremiumBrandRefresh: N
     } = e,
     P = i.useRef(null),
-    R = i.useRef(null),
-    w = Object.entries((0, b.Z)()).reduce((e, t) => {
+    w = i.useRef(null),
+    R = Object.entries((0, b.Z)()).reduce((e, t) => {
       let [n, r] = t;
       returnfalse !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
@@ -49,7 +49,7 @@ let C = e => {
     {
       fractionalState: k
     } = (0, p.Z)(),
-    U = (0, m.W)();
+    U = (0, h.W)();
   M ? (t = S.intl.string(S.t["+vt7w9"]), n = S.intl.string(S.t.LgHbnL)) : (t = S.intl.string(S.t.LgHbnL), n = S.intl.string(S.t["+vt7w9"]));
   let G = () => {
     C(false), _.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
@@ -73,7 +73,7 @@ let C = e => {
         value: D,
         children: [N ? (0, r.jsx)(g.Z, {
           onBackClick: G
-        }) : (0, r.jsx)(h.Z, {
+        }) : (0, r.jsx)(m.Z, {
           className: I.heroHeading,
           onBackClick: G
         }), (0, r.jsxs)("div", {
@@ -88,7 +88,7 @@ let C = e => {
           }), (0, r.jsx)(E.Z, {
             className: I.cardCarousel,
             cards: (0, O.ZM)({
-              perksCards: w,
+              perksCards: R,
               variant: y.gM.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
@@ -104,7 +104,7 @@ let C = e => {
           }), (0, r.jsx)(E.Z, {
             className: I.cardCarousel,
             cards: (0, O.ZM)({
-              perksCards: w,
+              perksCards: R,
               variant: y.gM.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
@@ -120,7 +120,7 @@ let C = e => {
           }), (0, r.jsx)(E.Z, {
             className: I.cardCarousel,
             cards: (0, O.ZM)({
-              perksCards: w,
+              perksCards: R,
               variant: y.gM.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
@@ -132,14 +132,14 @@ let C = e => {
         }), (0, r.jsx)("div", {
           className: I.footerSpacing
         }), (0, r.jsx)(l.$, {
-          innerRef: R,
+          innerRef: w,
           onChange: e => {
             e && !x && (_.default.track(v.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: D
             }), L(true))
           },
           children: (0, r.jsx)("div", {
-            ref: R,
+            ref: w,
             className: I.bottomOfPageVisibilitySensor
           })
         }), (0, r.jsx)("img", {

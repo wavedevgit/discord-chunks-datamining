@@ -37,17 +37,17 @@ function N(e) {
     message: a,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, f = i.useRef(null), [_, h] = i.useState(true), [N, R] = i.useState(false), w = t.state === v.r2o.ACCEPTING, D = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, f = i.useRef(null), [_, m] = i.useState(true), [N, w] = i.useState(false), R = t.state === v.r2o.ACCEPTING, D = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > T)
-  }, [R]);
+    w((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > T)
+  }, [w]);
   let x = (0, p.PC)(t),
     L = i.useCallback(() => {
-      N && _ && h(false)
+      N && _ && m(false)
     }, [_, N]),
     j = i.useCallback(() => {
-      N && (_ || h(true))
+      N && (_ || m(true))
     }, [_, N]),
     M = i.useMemo(() => {
       var e;
@@ -73,7 +73,7 @@ function N(e) {
         profile: x
       }), (0, r.jsx)(g.Z, {
         profile: x
-      }), (0, r.jsx)(m.E, {
+      }), (0, r.jsx)(h.E, {
         profile: x,
         className: I.mainContent
       }), (0, r.jsx)(y.Z, {
@@ -107,7 +107,7 @@ function N(e) {
             profile: x,
             isMemberOfGuild: n,
             message: a,
-            submitting: w,
+            submitting: R,
             onTransitionToInviteChannel: c,
             onAcceptInstantInvite: d
           })
@@ -128,7 +128,7 @@ function P(e) {
     onAcceptInstantInvite: u
   } = e, {
     guildId: p,
-    ctaType: m
+    ctaType: h
   } = (0, _.ZP)(n, _.F3.INVITE, t.code), {
     analyticsLocations: g
   } = (0, f.ZP)(d.Z.INVITE_EMBED), E = i.useCallback(() => {
@@ -140,9 +140,9 @@ function P(e) {
       invite_message_id: o.id
     }, g)
   }, [t, o, g, a]);
-  return null == m ? null : (0, r.jsx)(h.o, {
+  return null == h ? null : (0, r.jsx)(m.o, {
     guildId: p,
-    ctaType: m,
+    ctaType: h,
     submitting: s,
     onGoToGuild: l,
     onAcceptInvite: u,

@@ -63,17 +63,17 @@ function v(e) {
     } = (0, f.H)({
       location: "PTTTools"
     });
-  return t = d.isPlatformEmbedded || n !== h.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.Wn, {
+  return t = d.isPlatformEmbedded || n !== m.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.Wn, {
     messageType: o.QYI.INFO,
     children: g.intl.format(g.t.HVvn5T, {
       onClick: () => (0, _.openUserSettings)(p.n.KEYBINDS_PANEL, {
-        section: h.oAB.KEYBINDS
+        section: m.oAB.KEYBINDS
       })
     })
   }) : (0, r.jsx)(o.Wn, {
     messageType: o.QYI.WARNING,
     children: g.intl.format(g.t.zvMPOc, {
-      onDownloadClick: () => (0, m.y)("Help Text PTT")
+      onDownloadClick: () => (0, h.y)("Help Text PTT")
     })
   }), (0, r.jsxs)(o.Kqy, {
     gap: 20,
@@ -95,7 +95,7 @@ function v(e) {
           delay: e
         }),
         onValueRender: O,
-        maxValue: h.qhL
+        maxValue: m.qhL
       })]
     }), b && (0, r.jsx)(o.rsf, {
       label: g.intl.string(g.t.EGn1eN),
@@ -109,7 +109,7 @@ function v(e) {
 }
 
 function S(e, t) {
-  e === h.pM4.PUSH_TO_TALK && y && (0, o.ZDy)(async () => {
+  e === m.pM4.PUSH_TO_TALK && y && (0, o.ZDy)(async () => {
     let {
       default: e
     } = await n.e("84112").then(n.bind(n, 273352));
@@ -117,7 +117,7 @@ function S(e, t) {
       title: g.intl.string(g.t.Kdt0Gb),
       confirmText: g.intl.string(g.t["1WjMbC"]),
       cancelText: g.intl.string(g.t.BddRzS),
-      onConfirm: () => (0, m.y)("PTT Limited Modal"),
+      onConfirm: () => (0, h.y)("PTT Limited Modal"),
       body: g.intl.string(g.t.NIozvt)
     }, t))
   }), s.Z.setMode(e, true, true, {
@@ -129,10 +129,10 @@ function I() {
   let {
     analyticsLocations: e
   } = (0, c.ZP)(), t = (0, a.e7)([u.Z], () => u.Z.getMode()), n = [{
-    value: h.pM4.VOICE_ACTIVITY,
+    value: m.pM4.VOICE_ACTIVITY,
     name: g.intl.string(g.t.cHCEOJ)
   }, {
-    value: h.pM4.PUSH_TO_TALK,
+    value: m.pM4.PUSH_TO_TALK,
     name: y ? g.intl.string(g.t["1AINrB"]) : g.intl.string(g.t.Q8gkVL)
   }], s = i.useCallback(t => {
     let {
@@ -149,7 +149,7 @@ function I() {
       }),
       options: n,
       value: t
-    }), t === h.pM4.PUSH_TO_TALK && (0, r.jsx)(v, {
+    }), t === m.pM4.PUSH_TO_TALK && (0, r.jsx)(v, {
       inputMode: t
     })]
   })

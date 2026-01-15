@@ -49,7 +49,7 @@ let f = {
       }
     }
   },
-  m = {
+  h = {
     buttonType: {
       googlePay: "pay",
       applePay: "book"
@@ -60,18 +60,18 @@ let f = {
     },
     buttonHeight: 40
   },
-  h = e => true !== e ? JSON.stringify(e, null, 2) : "undefined",
+  m = e => true !== e ? JSON.stringify(e, null, 2) : "undefined",
   g = "``";
 
 function E() {
-  let [e, t] = i.useState(h(_)), [n, c] = i.useState(_), [p, E] = i.useState(h(m)), [b, y] = i.useState(m), [O, v] = i.useState(null), [S, I] = i.useState((0, r.jsx)(u.DS, {
+  let [e, t] = i.useState(m(_)), [n, c] = i.useState(_), [p, E] = i.useState(m(h)), [b, y] = i.useState(h), [O, v] = i.useState(null), [S, I] = i.useState((0, r.jsx)(u.DS, {
     errorLabel: f.CONFIGURABLE,
     elementOptions: _,
     children: (0, r.jsx)(a.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
       },
-      options: m
+      options: h
     })
   })), T = () => {
     try {
@@ -159,7 +159,7 @@ function E() {
       variant: "text-md/normal",
       children: (0, r.jsx)(l.Z, {
         className: d.markdown,
-        children: "".concat(g, " ").concat(h(n), " ").concat(g)
+        children: "".concat(g, " ").concat(m(n), " ").concat(g)
       })
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
@@ -169,7 +169,7 @@ function E() {
       variant: "text-md/normal",
       children: (0, r.jsx)(l.Z, {
         className: d.markdown,
-        children: "".concat(g, " ").concat(h(b), " ").concat(g)
+        children: "".concat(g, " ").concat(m(b), " ").concat(g)
       })
     }), S]
   })
@@ -212,7 +212,7 @@ let b = {
                 variant: "text-md/normal",
                 children: (0, r.jsx)(l.Z, {
                   className: d.markdown,
-                  children: "".concat(g).concat(h(p[e]), " ").concat(g)
+                  children: "".concat(g).concat(m(p[e]), " ").concat(g)
                 })
               }), (0, r.jsx)(u.DS, {
                 errorLabel: t,

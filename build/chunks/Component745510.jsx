@@ -2,8 +2,8 @@
 /** chunk id: 745510, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => h,
-  h: () => m
+  d: () => m,
+  h: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -61,16 +61,16 @@ let p = 20,
     addClickListener: () => l.dG4,
     removeClickListener: Chunk981631.dG4
   },
-  m = Chunk473749.createContext(_);
+  h = Chunk473749.createContext(_);
 
-function h(e) {
+function m(e) {
   let {
     children: t,
     confettiCanvas: n,
     spriteCanvas: l,
     baseConfig: c,
     addClickListener: d,
-    removeClickListener: h
+    removeClickListener: m
   } = e, g = (0, a.uR)(n, l), E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), b = i.useMemo(() => E ? _ : {
     confettiCanvas: n,
     cannon: g,
@@ -103,9 +103,9 @@ function h(e) {
       }), n), r, i)
     },
     addClickListener: d,
-    removeClickListener: h
-  }, [d, c, g, n, E, h]);
-  return (0, r.jsx)(m.Provider, {
+    removeClickListener: m
+  }, [d, c, g, n, E, m]);
+  return (0, r.jsx)(h.Provider, {
     value: b,
     children: t
   })

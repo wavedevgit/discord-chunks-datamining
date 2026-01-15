@@ -90,22 +90,22 @@ function S(e) {
     isGift: A,
     initialPlanId: N = null,
     children: P
-  } = e, R = (0, i.e7)([f.default], () => f.default.getCurrentUser()), w = (0, i.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), {
+  } = e, w = (0, i.e7)([f.default], () => f.default.getCurrentUser()), R = (0, i.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), {
     analyticsLocations: D
-  } = (0, o.ZP)(), x = (0, _.N)(), L = !A && null != x && null != g && m.nG[x.trial_id].skus.includes(g);
+  } = (0, o.ZP)(), x = (0, _.N)(), L = !A && null != x && null != g && h.nG[x.trial_id].skus.includes(g);
   return P({
     onClick: e => {
       var i;
-      if (e.preventDefault(), null == R) return void(0, c.uL)(h.Z5c.LOGIN, {
+      if (e.preventDefault(), null == w) return void(0, c.uL)(m.Z5c.LOGIN, {
         source: "premium_subscribe_button"
       });
-      if (null == t || t(e), (null == w ? true : w.status) === h.O0b.ACCOUNT_HOLD) {
+      if (null == t || t(e), (null == R ? true : R.status) === m.O0b.ACCOUNT_HOLD) {
         (0, s.A3)(), (0, d.openUserSettings)(u.n.NITRO_PANEL, {
-          section: h.oAB.PREMIUM
+          section: m.oAB.PREMIUM
         }), null == v || v(false);
         return
       }
-      if (!R.isClaimed()) return void(0, a.ZDy)(async () => {
+      if (!w.isClaimed()) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("88470"), n.e("77927"), n.e("69417")]).then(n.bind(n, 918995));
@@ -118,7 +118,7 @@ function S(e) {
           }))
         }
       });
-      if (!R.verified) return void(0, a.ZDy)(async () => {
+      if (!w.verified) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -132,14 +132,14 @@ function S(e) {
         }
       });
       let o = L ? null == (i = x.subscription_trial) ? true : i.id : null,
-        f = h.AnalyticsObjectTypes.BUY;
-      null != o ? f = h.AnalyticsObjectTypes.TRIAL : A && (f = h.AnalyticsObjectTypes.GIFT), (0, l.Z)({
+        f = m.AnalyticsObjectTypes.BUY;
+      null != o ? f = m.AnalyticsObjectTypes.TRIAL : A && (f = m.AnalyticsObjectTypes.GIFT), (0, l.Z)({
         isGift: A,
         initialPlanId: N,
         subscriptionTier: g,
         analyticsLocations: D,
         analyticsObject: E({
-          object: h.qAy.BUTTON_CTA,
+          object: m.qAy.BUTTON_CTA,
           objectType: f
         }, S),
         trialId: o,

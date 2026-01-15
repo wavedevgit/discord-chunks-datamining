@@ -30,7 +30,7 @@ function f(e) {
 }
 let p = {
     highlight(e, t, n) {
-      if (!m(t, e)) return null;
+      if (!h(t, e)) return null;
       Date.now();
       let i = r.Z.highlight(t, {
         ignoreIllegals: n,
@@ -44,7 +44,7 @@ let p = {
   },
   _ = a().repeat("/", 15);
 
-function m(e, t) {
+function h(e, t) {
   if (e.indexOf(_) >= 0) returnfalse;
   let n = 0;
   for (let t of e.split("\n")) {

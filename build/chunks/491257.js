@@ -17,8 +17,8 @@ module.exports = function(e, n, r, i) {
   s > 0 && l > s && (l = s);
   for (var c = 0; c < l; ++c) {
     var u, d, f, p, _ = e[c].replace(o, "%20"),
-      m = _.indexOf(r);
-    m >= 0 ? (u = _.substr(0, m), d = _.substr(m + 1)) : (u = _, d = ""), f = decodeURIComponent(u), p = decodeURIComponent(d), t(a, f) ? Array.isArray(a[f]) ? a[f].push(p) : a[f] = [a[f], p] : a[f] = p
+      h = _.indexOf(r);
+    h >= 0 ? (u = _.substr(0, h), d = _.substr(h + 1)) : (u = _, d = ""), f = decodeURIComponent(u), p = decodeURIComponent(d), t(a, f) ? Array.isArray(a[f]) ? a[f].push(p) : a[f] = [a[f], p] : a[f] = p
   }
   return a
 }

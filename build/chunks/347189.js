@@ -14,7 +14,7 @@ module.exports = function(e, t) {
     f = !n && !u && !d && l(e),
     p = n || u || d || f,
     _ = p ? r(e.length, String) : [],
-    m = _.length;
-  for (var h in e)(t || c.call(e, h)) && !(p && ("length" == h || d && ("offset" == h || "parent" == h) || f && ("buffer" == h || "byteLength" == h || "byteOffset" == h) || s(h, m))) && _.push(h);
+    h = _.length;
+  for (var m in e)(t || c.call(e, m)) && !(p && ("length" == m || d && ("offset" == m || "parent" == m) || f && ("buffer" == m || "byteLength" == m || "byteOffset" == m) || s(m, h))) && _.push(m);
   return _
 }

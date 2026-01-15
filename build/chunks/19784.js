@@ -27,7 +27,7 @@ var Chunk239189 = require("./239189.js"),
         },
         p = function() {
           if (!t) try {
-            h(), e(p)
+            m(), e(p)
           } catch (e) {
             console.error(e)
           }
@@ -35,16 +35,16 @@ var Chunk239189 = require("./239189.js"),
         _ = function() {
           t && (t = false, 0 == a && (a = r.now(), e(p)))
         },
-        m = [];
+        h = [];
       this.setTimeout = function(e, t) {
         var n = r.now() + t,
           i = function() {
-            var e = m.findIndex(function(e) {
+            var e = h.findIndex(function(e) {
               return e.cancel == i
             });
-            e >= 0 && m.splice(e, 1)
+            e >= 0 && h.splice(e, 1)
           },
-          a = o(m, function(e) {
+          a = o(h, function(e) {
             return e.time > n
           }),
           s = {
@@ -52,15 +52,15 @@ var Chunk239189 = require("./239189.js"),
             handler: e,
             cancel: i
           };
-        return m.splice(a, 0, s), _(), s
+        return h.splice(a, 0, s), _(), s
       };
-      var h = this.advance = function() {
+      var m = this.advance = function() {
         var e = r.now();
-        if (c.size && (c.forEach(f), c.clear()), m.length && r.batchedUpdates(function() {
-            var t = o(m, function(t) {
+        if (c.size && (c.forEach(f), c.clear()), h.length && r.batchedUpdates(function() {
+            var t = o(h, function(t) {
               return t.time > e
             });
-            m.splice(0, t).forEach(function(e) {
+            h.splice(0, t).forEach(function(e) {
               return e.handler()
             })
           }), e > a) {

@@ -120,8 +120,8 @@ function H() {
       userValue: null == t || null == (e = t.collectibles) ? true : e.nameplate
     }),
     K = (0, s.e7)([N.Z], () => N.Z.showNotice()),
-    z = (0, C.Z)() && null != U ? h.ZP.parse(true, U).content : U,
-    q = w.ZP.canUsePremiumProfileCustomization(t),
+    z = (0, C.Z)() && null != U ? m.ZP.parse(true, U).content : U,
+    q = R.ZP.canUsePremiumProfileCustomization(t),
     {
       analyticsLocations: Q,
       newestAnalyticsLocation: X
@@ -134,7 +134,7 @@ function H() {
   }), et = !q, en = i.useRef(null);
   return n ? (0, r.jsx)(f.Z, {}) : (0, r.jsxs)(_.Gt, {
     value: Q,
-    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)(O.Z, {
       profilePreview: (0, r.jsx)(v.Z, F(G({
         user: t,
         canUsePremiumCustomization: q,
@@ -177,7 +177,7 @@ function H() {
         variant: "expressive",
         onClick: () => {
           var e;
-          R.default.track(j.rMx.TRY_IT_OUT_PRESET_CLICKED, {
+          w.default.track(j.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
           }), null == en || null == (e = en.current) || e.scrollIntoView({
             behavior: "smooth"

@@ -2,7 +2,7 @@
 /** chunk id: 23551, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,12 +18,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk341603 = require("./341603.js");
-let h = e => {
+let m = e => {
   let {
     disabled: t = false,
     type: n,
     className: i,
-    innerClassName: h,
+    innerClassName: m,
     onConnect: g
   } = e, E = (0, c.ZP)();
 
@@ -42,10 +42,10 @@ let h = e => {
   return (0, r.jsx)(o.u, {
     text: y.name,
     children: (0, r.jsx)("div", {
-      className: a()(m.wrapper, i),
+      className: a()(h.wrapper, i),
       children: (0, r.jsx)(l.tEY, {
         children: (0, r.jsx)("button", {
-          className: a()(m.inner, h),
+          className: a()(h.inner, m),
           type: "button",
           disabled: t,
           style: {

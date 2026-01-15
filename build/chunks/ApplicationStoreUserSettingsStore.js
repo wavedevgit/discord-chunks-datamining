@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -79,7 +79,7 @@ class _ extends(i = Chunk442837.ZP.PersistedStore) {
 s(_, "displayName", "ApplicationStoreUserSettingsStore"), s(_, "persistKey", "ApplicationStoreUserSettingsStore"), s(_, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
   hasAcceptedEulaIds: []
 }) : e]);
-let m = new _(Chunk570140.Z, {
+let h = new _(Chunk570140.Z, {
   APPLICATION_STORE_ACCEPT_STORE_TERMS: f,
   APPLICATION_STORE_ACCEPT_EULA: p
 })

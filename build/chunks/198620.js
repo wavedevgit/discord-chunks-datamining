@@ -20,13 +20,13 @@ function d(e) {
 let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
   p = new Set(["/external/"]),
   _ = +Chunk70956.Z.Millis.HOUR,
-  m = new Set([window.GLOBAL_ENV.CDN_HOST, null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.substring(2)].map(u).filter(Boolean)),
-  h = new Set((null != (a = null == (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? true : i.split(",")) ? a : []).map(e => e.substring(2)).map(u).filter(Boolean)),
+  h = new Set([window.GLOBAL_ENV.CDN_HOST, null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.substring(2)].map(u).filter(Boolean)),
+  m = new Set((null != (a = null == (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? true : i.split(",")) ? a : []).map(e => e.substring(2)).map(u).filter(Boolean)),
   g = false,
   E = false;
 
 function b(e) {
-  let t = m.has(e.hostname),
+  let t = h.has(e.hostname),
     n = g && d(e.hostname),
     r = Array.from(f).some(t => e.pathname.startsWith(t));
   return (t || n) && r
@@ -34,7 +34,7 @@ function b(e) {
 
 function y(e) {
   var t;
-  let n = h.has(e.hostname),
+  let n = m.has(e.hostname),
     r = E && d(null != (t = e.hostname) ? t : ""),
     i = Array.from(p).some(t => e.pathname.startsWith(t));
   return (n || r) && i

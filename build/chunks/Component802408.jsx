@@ -20,10 +20,10 @@ function d(e) {
     markAsDismissed: d,
     config: f,
     children: p
-  } = e, _ = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), m = (0, l.ZP)(), h = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(0);
+  } = e, _ = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), h = (0, l.ZP)(), m = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(0);
   i.useEffect(() => {
     let e = () => {
-        let e = h.current,
+        let e = m.current,
           t = g.current;
         if (null == e || null == t) return;
         let n = e.getBoundingClientRect(),
@@ -31,7 +31,7 @@ function d(e) {
         b(n.left + n.width / 2 - (r.left + r.width / 2))
       },
       t = new ResizeObserver(e),
-      n = h.current,
+      n = m.current,
       r = g.current;
     return null != n && t.observe(n), null != r && (t.observe(r), e()), () => t.disconnect()
   }, []);
@@ -46,16 +46,16 @@ function d(e) {
     };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      ref: h,
+      ref: m,
       children: p
     }), (0, r.jsx)(o.Mb, {
-      targetElementRef: h,
+      targetElementRef: m,
       shouldShow: true,
       position: "top",
       align: "center",
       title: f.title(),
       body: f.description(),
-      assetUrl: f.getImageUrl((0, s.wj)(m), _),
+      assetUrl: f.getImageUrl((0, s.wj)(h), _),
       action: y,
       caretConfig: {
         align: "custom",

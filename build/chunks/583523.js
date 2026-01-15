@@ -51,14 +51,14 @@ function _() {
   f(), p()
 }
 
-function m(e) {
+function h(e) {
   let {
     channels: t
   } = e;
   for (let e of t) l.Z.getVoiceChannelId() === e.id && _()
 }
 
-function h(e) {
+function m(e) {
   let {
     voiceStates: t
   } = e;
@@ -69,8 +69,8 @@ function h(e) {
 class g extends Chunk147913.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
-      CHANNEL_UPDATES: m,
-      VOICE_STATE_UPDATES: h
+      CHANNEL_UPDATES: h,
+      VOICE_STATE_UPDATES: m
     })
   }
 }

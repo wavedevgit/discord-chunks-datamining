@@ -36,7 +36,7 @@ function f(e) {
 let p = {},
   _ = {};
 
-function m() {
+function h() {
   var e;
   let t = null != (e = s.Z.getGuildsProto()) ? e : {},
     n = l.Z.getGuildsArray();
@@ -46,7 +46,7 @@ function m() {
   }, t[e.id])
 }
 
-function h(e) {
+function m(e) {
   return null != e && Object.keys(e).length > 0 ? {
     raidDetectedAt: e.raid_detected_at,
     dmSpamDetectedAt: e.dm_spam_detected_at,
@@ -58,7 +58,7 @@ function h(e) {
 function g(e) {
   for (let n of (p = {}, e.guilds)) {
     var t;
-    let e = h(null == (t = n.properties) ? true : t.incidents_data);
+    let e = m(null == (t = n.properties) ? true : t.incidents_data);
     null != e && ((0, u.i9)(e) || (0, u.ur)(e)) && (p[n.id] = e)
   }
 }
@@ -67,14 +67,14 @@ function E(e) {
   var t;
   let {
     guild: n
-  } = e, r = h(null == (t = n.properties) ? true : t.incidents_data);
+  } = e, r = m(null == (t = n.properties) ? true : t.incidents_data);
   null != r && ((0, u.i9)(r) || (0, u.ur)(r)) && (p[n.id] = r)
 }
 
 function b(e) {
   let {
     guild: t
-  } = e, n = h(t.incidents_data);
+  } = e, n = m(t.incidents_data);
   null != n && ((0, u.i9)(n) || (0, u.ur)(n)) ? p[t.id] = n : delete p[t.id]
 }
 
@@ -90,7 +90,7 @@ function O(e) {
 }
 class v extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, l.Z, c.Z, o.Z), this.syncWith([s.Z, l.Z, c.Z, o.Z], m)
+    this.waitFor(s.Z, l.Z, c.Z, o.Z), this.syncWith([s.Z, l.Z, c.Z, o.Z], h)
   }
   getGuildIncident(e) {
     return p[e]

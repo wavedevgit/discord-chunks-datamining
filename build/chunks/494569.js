@@ -24,8 +24,8 @@ function u(e) {
       maxValue: f,
       isDisabled: p,
       isReadOnly: _,
-      isRequired: m,
-      onIncrement: h,
+      isRequired: h,
+      onIncrement: m,
       onIncrementPage: g,
       onDecrement: E,
       onDecrementPage: b,
@@ -44,7 +44,7 @@ function u(e) {
           }
         case "ArrowUp":
         case "Up":
-          h && (e.preventDefault(), null == h || h());
+          m && (e.preventDefault(), null == m || m());
           break;
         case "PageDown":
           if (b) {
@@ -74,16 +74,16 @@ function u(e) {
     T.current && ((0, i.gb)("assertive"), (0, i.xQ)(N, "assertive"))
   }, [N]);
   let P = (0, o.i)(e => {
-      S(), null == h || h(), t.current = window.setTimeout(() => {
+      S(), null == m || m(), t.current = window.setTimeout(() => {
         (true === f || isNaN(f) || true === n || isNaN(n) || n < f) && P(60)
       }, e)
     }),
-    R = (0, o.i)(e => {
+    w = (0, o.i)(e => {
       S(), null == E || E(), t.current = window.setTimeout(() => {
-        (true === d || isNaN(d) || true === n || isNaN(n) || n > d) && R(60)
+        (true === d || isNaN(d) || true === n || isNaN(n) || n > d) && w(60)
       }, e)
     }),
-    w = e => {
+    R = e => {
       e.preventDefault()
     },
     {
@@ -99,14 +99,14 @@ function u(e) {
       "aria-valuemax": f,
       "aria-disabled": p || true,
       "aria-readonly": _ || true,
-      "aria-required": m || true,
+      "aria-required": h || true,
       onKeyDown: I,
       onFocus: C,
       onBlur: A
     },
     incrementButtonProps: {
       onPressStart: () => {
-        P(400), D(window, "contextmenu", w)
+        P(400), D(window, "contextmenu", R)
       },
       onPressEnd: () => {
         S(), x()
@@ -116,7 +116,7 @@ function u(e) {
     },
     decrementButtonProps: {
       onPressStart: () => {
-        R(400), D(window, "contextmenu", w)
+        w(400), D(window, "contextmenu", R)
       },
       onPressEnd: () => {
         S(), x()

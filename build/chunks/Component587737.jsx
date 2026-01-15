@@ -18,16 +18,16 @@ function s(e) {
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, f = (0, i.ZP)(t), p = (0, i.Sw)(l, s), _ = c(f), m = u(null != p ? p : true), h = o.intl.format(o.t.tusv2h, {
+  } = e, f = (0, i.ZP)(t), p = (0, i.Sw)(l, s), _ = c(f), h = u(null != p ? p : true), m = o.intl.format(o.t.tusv2h, {
     actorName: f.nick,
     actorHook: _,
     targetName: null == p ? true : p.nick,
-    targetHook: m
+    targetHook: h
   });
   return (0, r.jsx)(a.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
     compact: d,
-    children: h
+    children: m
   })
 }

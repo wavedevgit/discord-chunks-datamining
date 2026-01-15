@@ -30,8 +30,8 @@ function f() {
 }
 let p = f(),
   _ = null,
-  m = false,
-  h = null,
+  h = false,
+  m = null,
   g = false,
   E = null,
   b = {
@@ -47,11 +47,11 @@ let p = f(),
   v = new Map;
 
 function S() {
-  m = true
+  h = true
 }
 
 function I() {
-  _ = null, m = false
+  _ = null, h = false
 }
 
 function T(e) {
@@ -62,7 +62,7 @@ function T(e) {
     id: t.id,
     startDate: t.startDate.toISOString(),
     endDate: t.endDate.toISOString()
-  }, h = Date.now(), m = false
+  }, m = Date.now(), h = false
 }
 
 function C(e) {
@@ -115,13 +115,13 @@ function P() {
   return null != (e = null == t ? true : t.toISOString()) ? e : null
 }
 
-function R() {
+function w() {
   if (0 === Object.values(b[u.$k.THIRD_PARTY_OUTBOUND]).length) returnfalse;
   let e = P();
   null != e && (O = e)
 }
 
-function w() {
+function R() {
   if (0 === Object.values(b[u.$k.THIRD_PARTY_OUTBOUND]).length) returnfalse;
   let e = P();
   null != e && (O = e, p.lastSeenOutboundPromotionStartDate = e)
@@ -135,7 +135,7 @@ function D(e) {
 }
 
 function x() {
-  p = f(), g = false, E = null, m = false, h = null, b = {
+  p = f(), g = false, E = null, h = false, m = null, b = {
     [u.$k.BOGO]: {},
     [u.$k.MARKETING_MOMENT]: {},
     [u.$k.THIRD_PARTY_INBOUND]: {},
@@ -181,10 +181,10 @@ class j extends(r = Chunk442837.ZP.PersistedStore) {
     return _
   }
   get isFetchingActiveBogoPromotion() {
-    return m
+    return h
   }
   get lastFetchedActiveBogoPromotion() {
-    return h
+    return m
   }
   get promotionsByType() {
     return b
@@ -219,8 +219,8 @@ let M = new j(Chunk570140.Z, {
   ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: T,
   ACTIVE_BOGO_PROMOTION_FETCH: S,
   ACTIVE_BOGO_PROMOTION_FETCH_FAIL: I,
-  OUTBOUND_PROMOTION_NOTICE_DISMISS: R,
-  OUTBOUND_PROMOTIONS_SEEN: w,
+  OUTBOUND_PROMOTION_NOTICE_DISMISS: w,
+  OUTBOUND_PROMOTIONS_SEEN: R,
   LOGOUT: x,
   PREMIUM_MARKETING_PREVIEW: D
 })

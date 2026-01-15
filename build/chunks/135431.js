@@ -22,7 +22,7 @@ function c(e) {
     channelId: f,
     disableGuildSelect: p,
     source: _,
-    oauth2Callback: m
+    oauth2Callback: h
   } = e;
   if (null != n) {
     o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
@@ -48,7 +48,7 @@ function c(e) {
       guildId: d,
       channelId: f,
       disableGuildSelect: p,
-      callback: m
+      callback: h
     });
     return
   }
@@ -65,7 +65,7 @@ function c(e) {
     disableGuildSelect: p,
     scopes: c.scopes,
     permissions: null != c.permissions ? i.vB(c.permissions) : true,
-    callback: m
+    callback: h
   }))
 }
 

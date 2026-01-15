@@ -58,8 +58,8 @@ function f(e) {
     isUsingKeyboardNavigation: f,
     suppressPlaySound: p,
     getItemProps: _,
-    onSelectItem: m,
-    onItemMouseEnter: h,
+    onSelectItem: h,
+    onItemMouseEnter: m,
     buttonOverlay: g,
     isNitroLocked: E,
     shouldShowUpsell: b,
@@ -72,8 +72,8 @@ function f(e) {
         sound: t.item.sound,
         suppressPlaySound: p,
         focused: S,
-        onMouseEnter: () => h(u),
-        onSelectItem: e => m(t, e),
+        onMouseEnter: () => m(u),
+        onSelectItem: e => h(t, e),
         enableSecondaryActions: true,
         buttonOverlay: g,
         inNitroLockedSection: E,
@@ -85,7 +85,7 @@ function f(e) {
         key: v,
         guild: t.item.guild,
         focused: S,
-        onSelectItem: () => m(t)
+        onSelectItem: () => h(t)
       }))
   }
 }

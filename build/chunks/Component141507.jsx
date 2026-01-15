@@ -2,7 +2,7 @@
 /** chunk id: 141507, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => w
+  k: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,7 +34,7 @@ let N = 250;
 function P(e) {
   return null != e && "animated" in e
 }
-let R = e => {
+let w = e => {
     let {
       inspectedEmoji: t,
       guild: n
@@ -43,8 +43,8 @@ let R = e => {
       guildName: n.name
     }) : null
   },
-  w = Chunk473749.memo(function(e) {
-    let t, w, D, {
+  R = Chunk473749.memo(function(e) {
+    let t, R, D, {
         className: x,
         emojiGrid: L,
         guildId: j,
@@ -78,7 +78,7 @@ let R = e => {
     let Z = (0, a.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
       F = (0, a.e7)([E.Z], () => E.Z.isFocused()),
       B = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
-      V = h.Yk.useSetting(),
+      V = m.Yk.useSetting(),
       H = (0, O.C1)(j, P(t) ? t : null),
       Y = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
@@ -96,7 +96,7 @@ let R = e => {
           }))
         }
       }), null == t) return null;
-    let z = m.Z.theme;
+    let z = h.Z.theme;
     if (P(t)) {
       var q;
       let e = null != t.id ? b.ZP.getEmojiURL({
@@ -104,7 +104,7 @@ let R = e => {
         animated: V && t.animated,
         size: 28
       }) : t.url;
-      w = "" === e ? (0, r.jsx)(s.Text, {
+      R = "" === e ? (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: A.glyphEmoji,
         children: "surrogates" in t ? t.surrogates : null
@@ -118,7 +118,7 @@ let R = e => {
         i = n(39874),
         a = n(853871),
         s = n(63149);
-      w = Y.has(t.guildId) ? (0, r.jsx)("img", {
+      R = Y.has(t.guildId) ? (0, r.jsx)("img", {
         className: A.icon,
         src: (0, o.wj)(z) ? a : s,
         alt: ""
@@ -134,7 +134,7 @@ let R = e => {
       shouldAnimate: !B && F
     }) : null;
     D = "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? Y.has(t.guildId) ? C.intl.string(C.t["/K2RDH"]) : C.intl.string(C.t.NZI2Zk) : (0, y.nY)(t);
-    let X = R({
+    let X = w({
       inspectedEmoji: t,
       channel: k,
       guildId: j,
@@ -143,7 +143,7 @@ let R = e => {
     });
     return (0, r.jsx)(_.Z, {
       className: x,
-      graphicPrimary: w,
+      graphicPrimary: R,
       graphicSecondary: Q,
       titlePrimary: D,
       titleSecondary: X,

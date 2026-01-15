@@ -23,14 +23,14 @@ let f = null,
   p = null,
   _ = null;
 
-function m(e) {
+function h(e) {
   let {
     client: t
   } = e;
   f = t
 }
 
-function h(e) {
+function m(e) {
   let {
     paypalClient: t
   } = e;
@@ -98,8 +98,8 @@ class v extends(a = Chunk442837.ZP.Store) {
 }
 d(v, "displayName", "BraintreeStore");
 let S = new v(Chunk570140.Z, {
-    BRAINTREE_CREATE_CLIENT_SUCCESS: m,
-    BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: h,
+    BRAINTREE_CREATE_CLIENT_SUCCESS: h,
+    BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: m,
     BILLING_POPUP_BRIDGE_CALLBACK: E,
     BILLING_POPUP_BRIDGE_STATE_UPDATE: b,
     BRAINTREE_TEARDOWN_PAYPAL_CLIENT: y,

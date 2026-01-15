@@ -39,9 +39,9 @@ function p(e, t) {
   let {
     showInGameModal: u = true,
     showToastOnSuccess: p = true
-  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, [_, m] = i.useState(false), h = i.useCallback(function() {
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, [_, h] = i.useState(false), m = i.useCallback(function() {
     for (var t = arguments.length, i = Array(t), o = 0; o < t; o++) i[o] = arguments[o];
-    m(true);
+    h(true);
     let l = e(...i);
     return l === s.ro.RPC && u && (0, a.ZDy)(async () => {
       let {
@@ -51,10 +51,10 @@ function p(e, t) {
     }, {
       modalKey: f
     }), l
-  }, [e, m, u]), g = (0, o.Z)(t);
+  }, [e, h, u]), g = (0, o.Z)(t);
   return i.useEffect(() => {
     if (_ && false === g && true === t) {
-      if ((0, a.Mr3)(f), m(false), !p) return;
+      if ((0, a.Mr3)(f), h(false), !p) return;
       let e = () => {
         (0, a.showToast)({
           id: "account-linked-toast",
@@ -70,5 +70,5 @@ function p(e, t) {
         document.addEventListener("visibilitychange", t)
       }
     }
-  }, [_, t, g, p]), h
+  }, [_, t, g, p]), m
 }

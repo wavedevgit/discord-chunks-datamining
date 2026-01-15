@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk175996 = require("./175996.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -112,7 +112,7 @@ function U(e) {
   } = e, s = a - 1;
   return (0, r.jsxs)(l.xvT, {
     variant: t,
-    className: o()(n, R.activityCounter),
+    className: o()(n, w.activityCounter),
     color: i ? "status-positive" : "none",
     children: ["+", s]
   })
@@ -125,7 +125,7 @@ function G(e) {
   } = e;
   return (0, r.jsx)(l.xvT, {
     variant: t,
-    className: o()(R.dot, n),
+    className: o()(w.dot, n),
     children: A.l
   })
 }
@@ -141,12 +141,12 @@ function Z(e) {
     textSize: y = "xs",
     animateEmoji: O = true,
     hasQuest: P = false,
-    hideEmoji: w = false,
+    hideEmoji: R = false,
     hideTooltip: x = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
   let j = (null == a ? true : a.discoverable) !== false ? a : null,
-    M = (0, m.Cf)(j),
+    M = (0, h.Cf)(j),
     Z = (0, g.E)("ActivityStatus", l),
     F = i.useMemo(() => {
       var e, t;
@@ -161,7 +161,7 @@ function Z(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
     B = (0, c.e7)([E.default], () => E.default.getId() === (null == t ? true : t.id)),
-    V = (0, c.e7)([h.Z], () => Z ? B ? h.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === N.IIU.HANG_STATUS) : null : null),
+    V = (0, c.e7)([m.Z], () => Z ? B ? m.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === N.IIU.HANG_STATUS) : null : null),
     H = i.useMemo(() => {
       var e;
       return (0, s.uniqWith)(null != (e = null == n ? true : n.filter(e => {
@@ -249,26 +249,26 @@ function Z(e) {
       totalActivityCount: X
     }),
     ei = () => 0 === X ? null : J && !W ? x ? (0, r.jsxs)("div", {
-      className: o()(R.activityContainer, $ && R.iconOnly),
+      className: o()(w.activityContainer, $ && w.iconOnly),
       children: [et(), er()]
     }) : (0, r.jsx)(u.u, {
       delay: A.X,
       __unsupportedReactNodeAsText: en(),
       children: (0, r.jsxs)("div", {
-        className: o()(R.activityContainer, $ && R.iconOnly),
+        className: o()(w.activityContainer, $ && w.iconOnly),
         "aria-label": ee,
         children: [et(true), er()]
       })
     }) : et(),
-    ea = o()(R.container, {
-      [R.textXs]: "xs" === y,
-      [R.textSm]: "sm" === y
+    ea = o()(w.container, {
+      [w.textXs]: "xs" === y,
+      [w.textSm]: "sm" === y
     }),
     eo = () => null == F && null == V ? null : (0, r.jsx)(I.Z, {
       customStatusActivity: F,
       textSize: y,
       animateEmoji: O,
-      hideEmoji: w,
+      hideEmoji: R,
       hideTooltip: x,
       textClassName: p,
       iconClassName: _,

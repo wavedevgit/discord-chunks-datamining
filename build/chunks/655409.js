@@ -31,7 +31,7 @@ function o(e, t, n, o) {
           pageHasLeaderboard: p
         } = l.current, {
           positionInSection: _,
-          analyticsLocations: m
+          analyticsLocations: h
         } = c.current;
         i.default.track(a.rMx.SLAYER_STOREFRONT_CARD_HOVERED, {
           slayer_storefront_session_id: t,
@@ -44,7 +44,7 @@ function o(e, t, n, o) {
           position_in_section: _,
           is_user_guild_member: f,
           page_has_leaderboard: p,
-          location_stack: m
+          location_stack: h
         }), s.current = true
       }
     }, [e]),

@@ -70,14 +70,14 @@ let E = () => {
       children: [(0, r.jsxs)(l.P3F, {
         className: g.backButton,
         onClick: n,
-        "aria-label": h.intl.string(h.t.ybUZql),
+        "aria-label": m.intl.string(m.t.ybUZql),
         children: [(0, r.jsx)(l.j9r, {
           size: "sm",
           color: l.TVs.colors.INTERACTIVE_TEXT_DEFAULT
         }), (0, r.jsx)(l.Text, {
           variant: "eyebrow",
           color: "text-default",
-          children: h.intl.string(h.t["13/7kX"])
+          children: m.intl.string(m.t["13/7kX"])
         })]
       }), (0, r.jsxs)(l.Kqy, {
         direction: "horizontal",
@@ -89,11 +89,11 @@ let E = () => {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: h.intl.string(m.default.RZqaJn)
+            children: m.intl.string(h.default.RZqaJn)
           }), (0, r.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             color: "text-strong",
-            children: h.intl.string(e === _.dG.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
+            children: m.intl.string(e === _.dG.CONTENT_AND_SOCIAL ? m.t["+o1pDZ"] : m.t.OAuOHD)
           })]
         }), (0, r.jsx)(E, {})]
       })]

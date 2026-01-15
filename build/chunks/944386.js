@@ -41,18 +41,18 @@ let _ = e => {
     currentGuildId: n,
     popoutData: f,
     nonce: _,
-    demoMode: m
+    demoMode: h
   } = e, {
-    current: h
+    current: m
   } = r.useRef(p({
     guild_id: n,
     emoji_id: t
   }, (0, a.v_)(o.Z.getChannel(s.Z.getChannelId(n)))));
   return (0, i.ZP)(() => {
     var e;
-    (0, c.x)(u.qR.TrackOpenPopoutUsed), m || l.default.track(d.rMx.OPEN_POPOUT, p({
+    (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, p({
       type: null != (e = null == f ? true : f.analyticsType) ? e : "Standard Emoji Popout",
       nonce: _
-    }, h))
-  }), h
+    }, m))
+  }), m
 }

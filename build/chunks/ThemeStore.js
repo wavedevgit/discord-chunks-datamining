@@ -17,7 +17,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk874893 = require("./874893.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -93,7 +93,7 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
 
 function N() {
   return 0 === y && (O = b(g({}, O), {
-    [_.zd.DARK]: m.BRd.DARKER
+    [_.zd.DARK]: h.BRd.DARKER
   }), y = 1), C()
 }
 
@@ -101,11 +101,11 @@ function P() {
   return (0, a.ap)(T())
 }
 
-function R(e) {
-  return I = null, !e.isSwitchingAccount && S !== m.BRd.DARK && (S = m.BRd.DARK, (0, u.Z)(S), C())
+function w(e) {
+  return I = null, !e.isSwitchingAccount && S !== h.BRd.DARK && (S = h.BRd.DARK, (0, u.Z)(S), C())
 }
 
-function w(e) {
+function R(e) {
   let {
     systemTheme: t
   } = e;
@@ -127,7 +127,7 @@ function L() {
 function j() {
   return C()
 }
-h(A, "displayName", "ThemeStore"), h(A, "persistKey", "ThemeStore"), h(A, "migrations", [e => {
+m(A, "displayName", "ThemeStore"), m(A, "persistKey", "ThemeStore"), m(A, "migrations", [e => {
   let t = e.theme;
   return "amoled" === t && (t = "midnight"), b(g({}, e), {
     theme: t
@@ -136,13 +136,13 @@ h(A, "displayName", "ThemeStore"), h(A, "persistKey", "ThemeStore"), h(A, "migra
 let M = new A(Chunk570140.Z, {
   CACHE_LOADED: C,
   CONNECTION_OPEN: N,
-  LOGOUT: R,
+  LOGOUT: w,
   OVERLAY_INITIALIZE: C,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: C,
   UNSYNCED_USER_SETTINGS_UPDATE: C,
   USER_SETTINGS_PROTO_UPDATE: C,
   RESET_PREVIEW_CLIENT_THEME: C,
-  SYSTEM_THEME_CHANGE: w,
+  SYSTEM_THEME_CHANGE: R,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: P,
   UPDATE_THEME_PREFERENCES: D,
   SET_THEME_OVERRIDE: x,

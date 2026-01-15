@@ -17,7 +17,7 @@ var Chunk264344 = require("./264344.js"),
   Chunk65154 = require("./65154.js"),
   Chunk436620 = require("./436620.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   return e.split("-")[0]
 }
 class g extends Chunk912095.Z {
@@ -64,13 +64,13 @@ class g extends Chunk912095.Z {
   }
   setVideoEncoderParameters(e) {}
   constructor(e) {
-    super(e), m(this, "pc", true), m(this, "fpc", true), m(this, "codecs", []), m(this, "logger", true), this.logger = new a.Yd("Connection(".concat(e.context, ")"));
+    super(e), h(this, "pc", true), h(this, "fpc", true), h(this, "codecs", []), h(this, "logger", true), this.logger = new a.Yd("Connection(".concat(e.context, ")"));
     let t = new l.Z;
     t.on("answer", e => this.pc.setRemoteDescription(e).catch(e => this.logger.error("Failed to set remote description (answer): ".concat(e)))), t.on("offer", e => {
       this.pc.setRemoteDescription(e).then(() => this.pc.createAnswer()).then(e => this.fpc.setRemoteDescription(e)).catch(e => this.logger.error("Failed to set remote description (offer): ".concat(e)))
     }), t.direction = null != this.input.stream ? d.Ns.SENDRECV : d.Ns.SENDONLY, this.fpc = t;
     let n = new u.Z(this.voiceBitrate);
-    n.on("addtrack", (e, t) => this.createOutput(h(e), t)), n.on("removetrack", (e, t) => this.destroyOutput(h(e), t)), n.once("connected", () => {
+    n.on("addtrack", (e, t) => this.createOutput(m(e), t)), n.on("removetrack", (e, t) => this.destroyOutput(m(e), t)), n.once("connected", () => {
       this.input.reset(), this.setConnectionState(p.$j.CONNECTED), this.on(o.Sh.Stats, this.handleStats), this.input.on(c.G.VoiceActivity, this.handleVoiceActivity)
     }), n.on("connecting", () => this.setConnectionState(p.$j.DTLS_CONNECTING)), n.on("checking", () => this.setConnectionState(p.$j.ICE_CHECKING)), n.on("failed", () => this.setConnectionState(p.$j.NO_ROUTE)), n.on("disconnected", () => this.setConnectionState(p.$j.DISCONNECTED)), n.on("closed", () => this.setConnectionState(p.$j.DISCONNECTED)), n.on("offer", e => {
       let {

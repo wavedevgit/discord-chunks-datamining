@@ -26,8 +26,8 @@ let f = e => {
     } = e, {
       isStepLoading: p,
       orbPriceAmount: _,
-      orbBalanceToDisplay: m,
-      onClickCheckout: h,
+      orbBalanceToDisplay: h,
+      onClickCheckout: m,
       showCollectiblesDiscountWarning: g,
       errorMessage: E
     } = (0, c.sF)({
@@ -42,7 +42,7 @@ let f = e => {
       tooltipText: y,
       text: O
     } = (0, u.Do)({
-      orbBalance: m,
+      orbBalance: h,
       orbPriceAmount: _,
       rentalDuration: f
     });
@@ -52,13 +52,13 @@ let f = e => {
       reviewBodyContent: (0, r.jsx)(u.A3, {
         skuId: t,
         orbPriceAmount: _,
-        orbBalance: m,
+        orbBalance: h,
         renderWithoutContainer: true,
         rentalDuration: f
       }),
       reviewBodyLegalContent: null,
       primaryCTAButtonProps: {
-        onClick: h,
+        onClick: m,
         loading: o,
         text: O,
         disabled: b,
@@ -89,20 +89,20 @@ let f = e => {
       orbProductContext: d,
       isRedeeming: p,
       orbRedemptionError: _,
-      onRedeemVirtualCurrency: m
-    } = g(), h = f({
+      onRedeemVirtualCurrency: h
+    } = g(), m = f({
       skuId: i,
       analyticsLocations: a,
       analyticsSourceLocation: o,
       orbProductContext: d,
       isRedeeming: p,
       orbRedemptionError: _,
-      onRedeemVirtualCurrency: m,
+      onRedeemVirtualCurrency: h,
       rentalDuration: l
     });
     return n({
       paymentModalStepProps: r,
-      unifiedStepProps: h
+      unifiedStepProps: m
     })
   },
   _ = e => {
@@ -116,14 +116,14 @@ let f = e => {
       onClose: () => t(false)
     })
   },
-  m = (0, Chunk467368.Dz)(),
-  h = (0, Chunk473749.createContext)({
+  h = (0, Chunk467368.Dz)(),
+  m = (0, Chunk473749.createContext)({
     isRedeeming: false,
     orbRedemptionError: null,
     orbProductContext: null,
     onRedeemVirtualCurrency: () => {}
   }),
-  g = () => (0, i.useContext)(h),
+  g = () => (0, i.useContext)(m),
   E = {
     UnifiedCheckoutContextProvider: e => {
       let {
@@ -155,7 +155,7 @@ let f = e => {
         analyticsSourceLocation: a,
         orbProductContext: p
       });
-      return (0, r.jsx)(m.Provider, {
+      return (0, r.jsx)(h.Provider, {
         value: {
           sharedCheckoutContext: {
             loadId: n,
@@ -167,7 +167,7 @@ let f = e => {
           paymentModalProps: b,
           renderModalProps: o
         },
-        children: (0, r.jsx)(h.Provider, {
+        children: (0, r.jsx)(m.Provider, {
           value: {
             orbProductContext: p,
             isRedeeming: _,

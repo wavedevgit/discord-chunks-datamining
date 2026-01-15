@@ -49,7 +49,7 @@ function S(e = true) {
 
 function I(e = true, t = true) {
   return (0, r.l)({
-    parsers: [new c.Z(t), new m.Z, new u.Z, new _.Z, new h.Z, new g.Z, new p.Z],
+    parsers: [new c.Z(t), new h.Z, new u.Z, new _.Z, new m.Z, new g.Z, new p.Z],
     refiners: [new d.Z, new f.Z]
   }, e)
 }

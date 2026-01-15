@@ -26,8 +26,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 10,
-  m = 5;
-class h {
+  h = 5;
+class m {
   get(e) {
     return this._set.hasOwnProperty(e) || (this._set[e] = this._defaultValueFunc()), this._set[e]
   }
@@ -71,7 +71,7 @@ class g {
     0 === this.requested.get(e).size && this.requested.delete(e)
   }
   constructor() {
-    p(this, "requested", true), this.requested = new h(() => new Set)
+    p(this, "requested", true), this.requested = new m(() => new Set)
   }
 }
 let E = new g,
@@ -111,7 +111,7 @@ function I(e, t) {
   if (E.hasRequested(e.id, t)) return;
   let n = (0, u.U)(e.id),
     r = n.findIndex(e => e === t),
-    i = n.slice(r, r + m).filter(t => !E.hasRequested(e.id, t));
+    i = n.slice(r, r + h).filter(t => !E.hasRequested(e.id, t));
   v(e, i)
 }
 async function T() {

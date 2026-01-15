@@ -77,7 +77,7 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     top: t,
     left: n,
@@ -92,7 +92,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     top: t,
     left: n,
@@ -235,7 +235,7 @@ class E extends(r = Chunk473749.PureComponent) {
         flipHorizontal: s,
         onDragStart: u,
         onDrag: f,
-        onFlip: m,
+        onFlip: h,
         snapOrientation: g
       } = this.props, {
         dragging: E,
@@ -251,7 +251,7 @@ class E extends(r = Chunk473749.PureComponent) {
       let {
         clientWidth: S,
         clientHeight: I
-      } = r, T = h(d({
+      } = r, T = m(d({
         top: n - this._offsetY,
         left: t - this._offsetX
       }, i, a, S, I));
@@ -262,7 +262,7 @@ class E extends(r = Chunk473749.PureComponent) {
         top: T.top,
         left: T.left
       };
-      2 === s && O !== this.state.horizontalOrientation && (this._offsetX = S - this._offsetX, v = true), 2 === o && y !== this.state.verticalOrientation && (this._offsetY = I - this._offsetY, v = true), this.setDOMPositions(T), b || null == u || u(T, r), null == f || f(T, r), v && (null == m || m([y, O])), this.setState({
+      2 === s && O !== this.state.horizontalOrientation && (this._offsetX = S - this._offsetX, v = true), 2 === o && y !== this.state.verticalOrientation && (this._offsetY = I - this._offsetY, v = true), this.setDOMPositions(T), b || null == u || u(T, r), null == f || f(T, r), v && (null == h || h([y, O])), this.setState({
         dragging: E,
         verticalOrientation: y,
         horizontalOrientation: O,
@@ -303,13 +303,13 @@ class E extends(r = Chunk473749.PureComponent) {
       let {
         clientHeight: u,
         clientWidth: f
-      } = r, m = d(t, i, a, f, u);
-      if (m = h(m), s) {
-        let t = p(e = _(m));
+      } = r, h = d(t, i, a, f, u);
+      if (h = m(h), s) {
+        let t = p(e = _(h));
         l = t[0], c = t[1]
       } else e = {
-        top: m.top,
-        left: m.left,
+        top: h.top,
+        left: h.left,
         right: null,
         bottom: null
       };
@@ -323,7 +323,7 @@ class E extends(r = Chunk473749.PureComponent) {
       })
     });
     let [t, n] = p(e.initialPosition);
-    this.position = m(e.initialPosition), this.state = {
+    this.position = h(e.initialPosition), this.state = {
       dragging: false,
       verticalOrientation: t,
       horizontalOrientation: n,

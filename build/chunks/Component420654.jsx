@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ let E = 57.75,
       onClose: n,
       bio: a,
       hidePersonalInformation: _,
-      viewFullBioDisabled: h = false
+      viewFullBioDisabled: m = false
     } = e, {
       context: b
     } = (0, c.KZ)(), {
@@ -69,7 +69,7 @@ let E = 57.75,
     } = (0, l.ZP)(), [O, v] = i.useState(false), [S, I] = i.useState(false), T = i.useRef(null), C = e => {
       T.current = e, null != e && (v(!S && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && I(true))
     }, A = () => {
-      null == n || n(), (0, u.openUserProfileModal)(g(m({}, b), {
+      null == n || n(), (0, u.openUserProfileModal)(g(h({}, b), {
         userId: t.id,
         sourceAnalyticsLocations: y
       }))
@@ -94,7 +94,7 @@ let E = 57.75,
           variant: "secondary",
           text: f.intl.string(f.t.YDiPq8),
           onClick: A,
-          disabled: h
+          disabled: m
         })
       })]
     })

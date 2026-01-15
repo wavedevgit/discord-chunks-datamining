@@ -38,9 +38,9 @@ function C(e, t, n) {
 let A = {},
   N = {},
   P = {},
-  R = 0;
+  w = 0;
 
-function w(e) {
+function R(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = A[e];
   if (null != n) return n;
@@ -63,7 +63,7 @@ function D(e) {
   if (null == i) return b.Hn;
   let o = i.getGuildId(),
     s = null != o && (u.Z.isLurking(o) || (null == (t = O.ZP.getMember(o, r.id)) ? true : t.isPending));
-  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? w(o) : b.uB({
+  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? R(o) : b.uB({
     user: r,
     context: i,
     checkElevated: n
@@ -85,7 +85,7 @@ function L(e) {
 
 function j() {
   for (let e in A = {}, N = {}, P) P[e] += 1;
-  R += 1
+  w += 1
 }
 
 function M() {
@@ -122,7 +122,7 @@ function Z(e) {
       context: n
     });
   if (N[n.id] === i) returnfalse;
-  N[n.id] = i, R += 1, L(n.getGuildId())
+  N[n.id] = i, w += 1, L(n.getGuildId())
 }
 
 function F(e) {
@@ -142,7 +142,7 @@ function F(e) {
       });
     N[t.id] !== i && (N[t.id] = i, L(t.getGuildId()), n = true)
   }
-  return !!n && (R += 1, n)
+  return !!n && (w += 1, n)
 }
 
 function B() {
@@ -182,7 +182,7 @@ function K(e) {
   let {
     channel: t
   } = e;
-  return delete N[t.id], R += 1, L(t.guild_id), false
+  return delete N[t.id], w += 1, L(t.guild_id), false
 }
 
 function z(e) {
@@ -193,7 +193,7 @@ function z(e) {
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
-  }), R += 1, L(t)
+  }), w += 1, L(t)
 }
 
 function q(e) {
@@ -207,7 +207,7 @@ function q(e) {
       context: n
     });
   if (i === N[n.id]) returnfalse;
-  N[n.id] = i, R += 1
+  N[n.id] = i, w += 1
 }
 
 function Q(e) {
@@ -218,7 +218,7 @@ function Q(e) {
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
-  }), R += 1, L(t)
+  }), w += 1, L(t)
 }
 
 function X(e, t, n, r) {
@@ -229,7 +229,7 @@ function X(e, t, n, r) {
       return null == i ? b.Hn : b.Og(e, X(i, t, n, r), f.Z.hasJoined(e.id), O.ZP.isCurrentUserGuest(e.guild_id))
     }
     i = x(e.id)
-  } else(0, E.lM)(e) && (i = w(e.id));
+  } else(0, E.lM)(e) && (i = R(e.id));
   return true !== t || true !== n || true !== r ? b.uB({
     user: S.default.getCurrentUser(),
     context: e,
@@ -247,7 +247,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return _.Ec.has(e.type) ? D(e.id) : x(e.id)
   }
   getGuildPermissions(e) {
-    return w(e.id)
+    return R(e.id)
   }
   getGuildPermissionProps(e) {
     let t = S.default.getCurrentUser();
@@ -264,16 +264,16 @@ class J extends(r = Chunk442837.ZP.Store) {
       canViewGuildAnalytics: this.can(I.Plq.VIEW_GUILD_ANALYTICS, e),
       canAccessMembersPage: this.canAccessMemberSafetyPage(e),
       isGuildAdmin: this.can(I.Plq.ADMINISTRATOR, e),
-      isOwner: null != t && (0, m.eM)(e, t),
-      isOwnerWithRequiredMfaLevel: null != t && (0, m.yn)(e, t),
+      isOwner: null != t && (0, h.eM)(e, t),
+      isOwnerWithRequiredMfaLevel: null != t && (0, h.yn)(e, t),
       guild: e
     }
   }
   canAccessMemberSafetyPage(e) {
-    return o.Db(w(e.id), T.N)
+    return o.Db(R(e.id), T.N)
   }
   canAccessGuildSettings(e) {
-    return o.Db(w(e.id), b.ym)
+    return o.Db(R(e.id), b.ym)
   }
   canWithPartialContext(e, t) {
     return "channelId" in t && "string" == typeof t.channelId ? this.can(e, y.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.Z.getGuild(t.guildId))
@@ -292,8 +292,8 @@ class J extends(r = Chunk442837.ZP.Store) {
     return "basicPermissions" in e ? e.basicPermissions : g.Z.asBasicFlag(X(e))
   }
   canManageUser(e, t, n) {
-    let r = t instanceof h.Z ? t.id : t;
-    if ((0, m.eM)(n, r)) returnfalse;
+    let r = t instanceof m.Z ? t.id : t;
+    if ((0, h.eM)(n, r)) returnfalse;
     let i = S.default.getCurrentUser();
     if (!this.can(e, n)) returnfalse;
     let a = null != i ? b.e9(n, i.id) : true,
@@ -320,12 +320,12 @@ class J extends(r = Chunk442837.ZP.Store) {
     return null != (t = P[e]) ? t : 0
   }
   getChannelsVersion() {
-    return R
+    return w
   }
 }
 
 function $() {
-  N = {}, A = {}, P = {}, R = 0
+  N = {}, A = {}, P = {}, w = 0
 }
 C(J, "displayName", "PermissionStore");
 let ee = new J(Chunk570140.Z, {

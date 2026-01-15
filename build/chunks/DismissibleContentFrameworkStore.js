@@ -50,8 +50,8 @@ function p(e, t) {
   }), e
 }
 let _ = "daily_cap",
-  m = 3,
-  h = {
+  h = 3,
+  m = {
     numberOfDCsShownToday: 0,
     dailyCapPeriodStart: null,
     dismissibleContentSeenDuringSession: new Set,
@@ -63,7 +63,7 @@ let _ = "daily_cap",
   };
 
 function g() {
-  h = p(d({}, h), {
+  m = p(d({}, m), {
     dismissibleContentSeenDuringSession: new Set,
     renderedAtTimestamps: new Map,
     seenForGuildId: new Map
@@ -74,18 +74,18 @@ function E(e) {
   let {
     value: t
   } = e;
-  h.dailyCapOverridden = t
+  m.dailyCapOverridden = t
 }
 
 function b(e) {
   let {
     value: t
   } = e;
-  h.newUserMinAgeRequiredOverridden = t
+  m.newUserMinAgeRequiredOverridden = t
 }
 
 function y(e, t) {
-  let n = h.seenForGuildId.get(t);
+  let n = m.seenForGuildId.get(t);
   return null != n && n.has(e)
 }
 
@@ -94,23 +94,23 @@ function O(e) {
     dismissibleContent: t,
     guildId: n
   } = e, r = new Date;
-  if (h.renderedAtTimestamps.set(t, r.getTime()), s.O.has(t) || h.dailyCapOverridden) return;
+  if (m.renderedAtTimestamps.set(t, r.getTime()), s.O.has(t) || m.dailyCapOverridden) return;
   let i = (0, l.cn)(t) && null != n;
-  if (!(!i && h.dismissibleContentSeenDuringSession.has(t))) {
+  if (!(!i && m.dismissibleContentSeenDuringSession.has(t))) {
     if (!(i && y(t, n))) {
       if (i) {
         var a;
-        let e = null != (a = h.seenForGuildId.get(n)) ? a : new Set;
-        e.add(t), h.seenForGuildId.set(n, e)
-      } else h.dismissibleContentSeenDuringSession.add(t);
-      if (null == h.dailyCapPeriodStart) {
+        let e = null != (a = m.seenForGuildId.get(n)) ? a : new Set;
+        e.add(t), m.seenForGuildId.set(n, e)
+      } else m.dismissibleContentSeenDuringSession.add(t);
+      if (null == m.dailyCapPeriodStart) {
         let e = new Date;
-        e.setHours(0, 0, 0, 0), h.dailyCapPeriodStart = e.getTime()
+        e.setHours(0, 0, 0, 0), m.dailyCapPeriodStart = e.getTime()
       }
-      h.numberOfDCsShownToday += 1, h.numberOfDCsShownToday > m && o.default.track(c.rMx.DCF_CAP_EXCEEDED, {
+      m.numberOfDCsShownToday += 1, m.numberOfDCsShownToday > h && o.default.track(c.rMx.DCF_CAP_EXCEEDED, {
         cap_type: _,
         dismissible_content: t,
-        shown_dcs: h.numberOfDCsShownToday
+        shown_dcs: m.numberOfDCsShownToday
       })
     }
   }
@@ -120,50 +120,50 @@ function v(e) {
   let {
     dismissibleContent: t
   } = e;
-  h.lastDCDismissed = t, h.renderedAtTimestamps.delete(t)
+  m.lastDCDismissed = t, m.renderedAtTimestamps.delete(t)
 }
 
 function S(e) {
   let {
     dismissibleContent: t
   } = e;
-  h.lastDCDismissed = null != t ? t : null
+  m.lastDCDismissed = null != t ? t : null
 }
 
 function I() {
-  h.dailyCapPeriodStart = null, h.numberOfDCsShownToday = 0, h.dismissibleContentSeenDuringSession = new Set, h.seenForGuildId = new Map, h.lastDCDismissed = null
+  m.dailyCapPeriodStart = null, m.numberOfDCsShownToday = 0, m.dismissibleContentSeenDuringSession = new Set, m.seenForGuildId = new Map, m.lastDCDismissed = null
 }
 class T extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r;
-      h.numberOfDCsShownToday = null != (t = e.numberOfDCsShownToday) ? t : 0, h.dailyCapPeriodStart = e.dailyCapPeriodStart, h.dailyCapOverridden = null != (n = e.dailyCapOverridden) && n, h.newUserMinAgeRequiredOverridden = null != (r = e.newUserMinAgeRequiredOverridden) && r
+      m.numberOfDCsShownToday = null != (t = e.numberOfDCsShownToday) ? t : 0, m.dailyCapPeriodStart = e.dailyCapPeriodStart, m.dailyCapOverridden = null != (n = e.dailyCapOverridden) && n, m.newUserMinAgeRequiredOverridden = null != (r = e.newUserMinAgeRequiredOverridden) && r
     }
-    h.dismissibleContentSeenDuringSession = new Set, h.seenForGuildId = new Map, h.lastDCDismissed = null
+    m.dismissibleContentSeenDuringSession = new Set, m.seenForGuildId = new Map, m.lastDCDismissed = null
   }
   getState() {
-    return h
+    return m
   }
   get dailyCapOverridden() {
-    return h.dailyCapOverridden
+    return m.dailyCapOverridden
   }
   get newUserMinAgeRequiredOverridden() {
-    return h.newUserMinAgeRequiredOverridden
+    return m.newUserMinAgeRequiredOverridden
   }
   get lastDCDismissed() {
-    return h.lastDCDismissed
+    return m.lastDCDismissed
   }
   getRenderedAtTimestamp(e) {
-    return h.renderedAtTimestamps.get(e)
+    return m.renderedAtTimestamps.get(e)
   }
   hasUserHitDCCap(e, t) {
-    if (null != e && (s.O.has(e) || h.dailyCapOverridden)) returnfalse;
+    if (null != e && (s.O.has(e) || m.dailyCapOverridden)) returnfalse;
     if (null != e) {
       let n = null != t && (0, l.cn)(e);
-      if (n && null != t && y(e, t) || !n && h.dismissibleContentSeenDuringSession.has(e)) returnfalse
+      if (n && null != t && y(e, t) || !n && m.dismissibleContentSeenDuringSession.has(e)) returnfalse
     }
     let n = new Date;
-    return n.setHours(0, 0, 0, 0), null != h.dailyCapPeriodStart && h.dailyCapPeriodStart < n.getTime() && (h.numberOfDCsShownToday = 0, h.dailyCapPeriodStart = null), h.numberOfDCsShownToday >= m
+    return n.setHours(0, 0, 0, 0), null != m.dailyCapPeriodStart && m.dailyCapPeriodStart < n.getTime() && (m.numberOfDCsShownToday = 0, m.dailyCapPeriodStart = null), m.numberOfDCsShownToday >= h
   }
 }
 u(T, "displayName", "DismissibleContentFrameworkStore"), u(T, "persistKey", "DismissibleContentFrameworkStore"), u(T, "migrations", [e => d({}, e)]);

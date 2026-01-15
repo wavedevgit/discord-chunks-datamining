@@ -57,8 +57,8 @@ let d = e => {
     onClick: f,
     onMouseEnter: p,
     onDoubleClick: _,
-    onContextMenu: m,
-    onKeyDown: h,
+    onContextMenu: h,
+    onKeyDown: m,
     onFocus: g,
     onBlur: E,
     onMouseOver: b,
@@ -80,7 +80,7 @@ let d = e => {
     onMouseLeave: O,
     onDoubleClick: _,
     onMouseDown: y,
-    onContextMenu: m,
+    onContextMenu: h,
     children: [(0, r.jsx)(a.P, u(l({}, v), {
       innerRef: C,
       focusProps: l({
@@ -92,7 +92,7 @@ let d = e => {
       onClick: e => {
         e.stopPropagation(), null == f || f(e)
       },
-      onKeyDown: h,
+      onKeyDown: m,
       onFocus: g,
       onBlur: E,
       onMouseDown: y

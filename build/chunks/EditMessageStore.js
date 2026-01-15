@@ -50,9 +50,9 @@ function p(e, t) {
   }), e
 }
 let _ = {},
-  m = {};
+  h = {};
 
-function h(e) {
+function m(e) {
   let {
     channelId: t,
     messageId: n,
@@ -64,7 +64,7 @@ function h(e) {
     messageId: n,
     textValue: c,
     richValue: (0, o.JM)(a ? c : r)
-  }, m[t] = i
+  }, h[t] = i
 }
 
 function g(e) {
@@ -85,7 +85,7 @@ function E(e) {
     channelId: t
   } = e;
   if (null == t || null == _[t]) returnfalse;
-  delete _[t], delete m[t]
+  delete _[t], delete h[t]
 }
 
 function b(e) {
@@ -94,7 +94,7 @@ function b(e) {
     channelId: n,
     id: r
   } = e;
-  (null == (t = _[n]) ? true : t.messageId) === r && (delete _[n], delete m[n])
+  (null == (t = _[n]) ? true : t.messageId) === r && (delete _[n], delete h[n])
 }
 class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -124,12 +124,12 @@ class y extends(r = Chunk442837.ZP.Store) {
     return null != t && null != t.messageId ? c.Z.getMessage(e, t.messageId) : null
   }
   getEditActionSource(e) {
-    return m[e]
+    return h[e]
   }
 }
 u(y, "displayName", "EditMessageStore");
 let O = new y(Chunk570140.Z, {
-  MESSAGE_START_EDIT: h,
+  MESSAGE_START_EDIT: m,
   MESSAGE_UPDATE_EDIT: g,
   MESSAGE_END_EDIT: E,
   MESSAGE_DELETE: b

@@ -22,14 +22,14 @@ function _(e) {
     description: n,
     onChange: a,
     disabled: _ = false,
-    displayOnly: m,
-    label: h,
+    displayOnly: h,
+    label: m,
     labeledBy: g,
     leadingIcon: E,
     value: b,
     labelType: y = "primary",
     usageVariant: O = "single"
-  } = e, v = (0, i.useRef)(null), S = (0, i.useRef)(null), I = (0, i.useRef)(null), [T, C] = (0, i.useState)(true), A = (0, i.useRef)(false), N = null != h && "" !== h, P = null != n && "" !== n, R = null != E ? E : null;
+  } = e, v = (0, i.useRef)(null), S = (0, i.useRef)(null), I = (0, i.useRef)(null), [T, C] = (0, i.useState)(true), A = (0, i.useRef)(false), N = null != m && "" !== m, P = null != n && "" !== n, w = null != E ? E : null;
   (0, i.useEffect)(() => {
     if (!A.current) {
       A.current = true;
@@ -37,7 +37,7 @@ function _(e) {
     }
     C(t ? "animateIn" : "animateOut")
   }, [t]);
-  let w = e => {
+  let R = e => {
       null != a && a(e)
     },
     D = o()(p.checkboxOption, "string" == typeof T && p[T], "indicator" !== O && p.spacing),
@@ -60,7 +60,7 @@ function _(e) {
             r: "1.1",
             fill: "currentColor"
           })
-        }), (0, r.jsx)(u.kSu, {
+        }), (0, r.jsx)(u.CheckmarkSmallBoldIcon, {
           className: p.checkStroke,
           size: "sm",
           color: "currentColor"
@@ -69,7 +69,7 @@ function _(e) {
         gap: 4,
         children: [(0, r.jsxs)(s._, {
           className: p.label,
-          children: [null != R && (0, r.jsx)(R, {
+          children: [null != w && (0, r.jsx)(w, {
             className: p.leadingIcon,
             size: "sm",
             color: "currentColor",
@@ -78,7 +78,7 @@ function _(e) {
           }), (0, r.jsx)(f.x, {
             variant: "text-md/normal",
             color: "primary" === y ? "text-strong" : "text-subtle",
-            children: h
+            children: m
           })]
         }), P && (0, r.jsx)(f.x, {
           variant: "text-sm/normal",
@@ -87,7 +87,7 @@ function _(e) {
         })]
       })]
     });
-  return m ? (0, r.jsx)("div", {
+  return h ? (0, r.jsx)("div", {
     className: D,
     "data-selected": t || true,
     "data-disabled": _ || true,
@@ -100,9 +100,9 @@ function _(e) {
       inputRef: S,
       "aria-labelledby": g,
       isSelected: t,
-      onChange: w,
+      onChange: R,
       isDisabled: _,
-      isReadOnly: m,
+      isReadOnly: h,
       "data-mana-component": "checkbox",
       className: D,
       value: String(b),

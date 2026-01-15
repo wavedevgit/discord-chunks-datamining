@@ -19,16 +19,16 @@ let a = {
   p = 12;
 
 function _(e, t, n) {
-  return n && t[0].compressionMethod !== i.p4 ? m(e, t) : g(e, t)
+  return n && t[0].compressionMethod !== i.p4 ? h(e, t) : g(e, t)
 }
 
-function m(e, t) {
-  if (!h(t[0].compressionMethod)) return {};
+function h(e, t) {
+  if (!m(t[0].compressionMethod)) return {};
   let n = new DataView(e.buffer.slice(t[0].offset, t[0].offset + t[0].length));
   return (0, i.Lj)(n, t[0].compressionMethod, "utf-8", "dataview").then(O).catch(() => ({}))
 }
 
-function h(e) {
+function m(e) {
   return e === i.Nf
 }
 

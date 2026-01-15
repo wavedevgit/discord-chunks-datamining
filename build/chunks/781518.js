@@ -55,23 +55,23 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = 5e3,
+let m = 5e3,
   g = 5e3;
 
 function E(e, t, n, r) {
   let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 1;
-  return e(r = m(p({}, r), {
+  return e(r = h(p({}, r), {
     headers: {
       authorization: "Bearer ".concat(n)
     }
   })).then(e => 202 === e.status ? Promise.reject(e) : e).catch(n => {
     let o = true !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
-    return (401 === n.status || o) && a > 0 ? (202 === n.status ? (0, i.GR)(h) : Promise.resolve()).then(() => y(t)).then(n => {
+    return (401 === n.status || o) && a > 0 ? (202 === n.status ? (0, i.GR)(m) : Promise.resolve()).then(() => y(t)).then(n => {
       let {
         body: {
           access_token: i
@@ -122,7 +122,7 @@ function O(e, t, n) {
     query: {
       connection_id: n
     }
-  }).catch(a => r <= 0 ? Promise.reject(a) : (0, i.GR)(h).then(() => O(e, t, n, r - 1)))
+  }).catch(a => r <= 0 ? Promise.reject(a) : (0, i.GR)(m).then(() => O(e, t, n, r - 1)))
 }
 
 function v(e, t) {

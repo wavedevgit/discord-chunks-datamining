@@ -89,7 +89,7 @@ function C(e) {
       className: x.guildBadge
     }), n && !a && (0, r.jsx)("div", {
       className: x.lockIconOverlay,
-      children: (0, r.jsx)(l.mBM, {
+      children: (0, r.jsx)(l.LockIcon, {
         size: "md"
       })
     })]
@@ -171,7 +171,7 @@ function O(e) {
           variant: "text-sm/semibold",
           color: "text-subtle",
           children: p.intl.string(b.default["2tkPDy"])
-        }), (0, r.jsx)(l.CJ0, {
+        }), (0, r.jsx)(l.ChevronSmallDownIcon, {
           size: "sm"
         })]
       })]
@@ -196,7 +196,7 @@ function O(e) {
           variant: "text-sm/semibold",
           color: "text-subtle",
           children: p.intl.string(b.default.idxnf7)
-        }), (0, r.jsx)(l.u04, {
+        }), (0, r.jsx)(l.ChevronSmallUpIcon, {
           size: "sm"
         })]
       })]

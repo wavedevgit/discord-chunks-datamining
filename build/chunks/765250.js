@@ -6,13 +6,13 @@ require.d(exports, {
   E9: () => f,
   K4: () => g,
   Os: () => c,
-  jx: () => m,
+  jx: () => h,
   n6: () => d,
   nv: () => l,
   sz: () => p,
   te: () => s,
   xh: () => u,
-  zG: () => h
+  zG: () => m
 });
 var Chunk570140 = require("./570140.js"),
   Chunk444295 = require("./444295.js"),
@@ -95,17 +95,17 @@ function p(e) {
 }
 
 function _(e) {
-  m([e])
+  h([e])
 }
 
-function m(e) {
+function h(e) {
   r.Z.dispatch({
     type: "LAYOUT_CREATE_WIDGETS",
     widgetConfigs: e
   })
 }
 
-function h(e, t) {
+function m(e, t) {
   r.Z.dispatch({
     type: "LAYOUT_SET_WIDGET_META",
     widgetId: e,

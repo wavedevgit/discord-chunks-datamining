@@ -44,7 +44,7 @@ function N() {
     } = (0, l.e7)([p.Z], () => p.Z.getCheckpointData()),
     N = 0 === a,
     P = n > 0 || 0 === a,
-    R = () => {
+    w = () => {
       (0, u.Z)(d.Z.getArticleURL(O.BhN.QUESTS_LEARN_MORE))
     };
   return (0, r.jsxs)(g.Z, {
@@ -76,7 +76,7 @@ function N() {
         className: T.subtitle,
         children: 0 === a ? S.intl.format(v.default.UYTBoT, {
           learnMoreHook: (e, t) => (0, r.jsx)(s.P3F, {
-            onClick: R,
+            onClick: w,
             className: T.learnMore,
             children: (0, r.jsx)(E.Z, {
               variant: "heading-xxl/medium",
@@ -86,14 +86,14 @@ function N() {
           }, t)
         }) : S.intl.format(v.default["gd+Olh"], {
           numOrbs: n,
-          orbsHook: (e, t) => (0, r.jsxs)(m.Z, {
+          orbsHook: (e, t) => (0, r.jsxs)(h.Z, {
             children: [(0, r.jsx)(s.aQr, {
               className: T.orbsIcon,
               color: c.TVs.colors.BLACK
             }), e]
           }, t)
         })
-      }), (0, r.jsx)(h.o, {
+      }), (0, r.jsx)(m.o, {
         slide: y.yD.QUESTS
       })]
     })]

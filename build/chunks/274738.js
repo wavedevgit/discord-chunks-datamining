@@ -44,13 +44,13 @@ class d {
       f = (0, i.w)(u, 36524),
       p = Math.floor(f / 1461),
       _ = Math.floor((0, i.w)(f, 1461) / 365),
-      [m, h] = c(400 * l + 100 * d + 4 * p + _ + +(4 !== d && 4 !== _)),
-      g = t - o(m, h, 1, 1),
+      [h, m] = c(400 * l + 100 * d + 4 * p + _ + +(4 !== d && 4 !== _)),
+      g = t - o(h, m, 1, 1),
       E = 2;
-    t < o(m, h, 3, 1) ? E = 0 : s(h) && (E = 1);
+    t < o(h, m, 3, 1) ? E = 0 : s(m) && (E = 1);
     let b = Math.floor(((g + E) * 12 + 373) / 367),
-      y = t - o(m, h, b, 1) + 1;
-    return new(0, r.aw)(m, h, b, y)
+      y = t - o(h, m, b, 1) + 1;
+    return new(0, r.aw)(h, m, b, y)
   }
   toJulianDay(e) {
     return o(e.era, e.year, e.month, e.day)

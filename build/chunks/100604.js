@@ -26,7 +26,7 @@ function p(e, t, n) {
 }
 let _ = 16;
 
-function m(e, t) {
+function h(e, t) {
   return {
     originLabel: e.name,
     originIconUrl: u.ZP.getGuildIconURL({
@@ -43,7 +43,7 @@ function m(e, t) {
   }
 }
 
-function h(e, t) {
+function m(e, t) {
   return {
     originLabel: e,
     timestampLabel: t,
@@ -77,12 +77,12 @@ class g {
           snapshotIndex: y
         } : {
           snapshotIndex: y,
-          footerInfo: m(e, S)
+          footerInfo: h(e, S)
         }
       }
       return g.can(e.accessPermissions, e) ? {
         snapshotIndex: y,
-        footerInfo: h((0, r.F6)(e, p, _, true), S)
+        footerInfo: m((0, r.F6)(e, p, _, true), S)
       } : {
         snapshotIndex: y
       }
@@ -96,7 +96,7 @@ class g {
       snapshotIndex: y
     } : {
       snapshotIndex: y,
-      footerInfo: m(C, S)
+      footerInfo: h(C, S)
     }
   }
   constructor(e, t, n) {

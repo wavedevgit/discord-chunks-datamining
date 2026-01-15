@@ -24,7 +24,7 @@ let u = e => {
     setGiftRecipient: _
   } = (0, s.wD)();
   if (null == t) return null;
-  let m = e => {
+  let h = e => {
     n(e, t), _(e)
   };
   return (0, r.jsx)("div", {
@@ -38,7 +38,7 @@ let u = e => {
         size: a.EFr.SIZE_20
       }),
       value: p,
-      onChange: m,
+      onChange: h,
       options: f.map(e => ({
         value: e,
         label: "".concat(l.ZP.getUserTag(e))

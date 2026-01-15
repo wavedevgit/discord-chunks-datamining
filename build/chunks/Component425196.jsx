@@ -95,23 +95,23 @@ function B(e) {
     powerLevel: u = 0,
     powerLevelPercentile: f = 0,
     cardId: _ = 0
-  } = (0, c.e7)([v.Z], () => v.Z.getCheckpointData()), m = (0, c.e7)([E.default], () => E.default.getCurrentUser()), h = (0, i.useContext)(O.Q), g = (0, I.Z)((0, d.dQu)(h.primaryColor).hex()), b = (0, y.a7)(g), C = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), A = (0, i.useRef)(null), [N, R] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= w.ij.END_REWARD ? 1 : n === w.ij.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => o().throttle(() => {
-    null != A.current && R(A.current.clientWidth)
-  }, F), []), B = (0, i.useCallback)(() => n <= w.ij.END_REWARD ? "100%" : n === w.ij.END_CLAIM ? "50%" : "30%", [n]), V = (0, l.q_F)({
+  } = (0, c.e7)([v.Z], () => v.Z.getCheckpointData()), h = (0, c.e7)([E.default], () => E.default.getCurrentUser()), m = (0, i.useContext)(O.Q), g = (0, I.Z)((0, d.dQu)(m.primaryColor).hex()), b = (0, y.a7)(g), C = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), A = (0, i.useRef)(null), [N, w] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= R.ij.END_REWARD ? 1 : n === R.ij.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => o().throttle(() => {
+    null != A.current && w(A.current.clientWidth)
+  }, F), []), B = (0, i.useCallback)(() => n <= R.ij.END_REWARD ? "100%" : n === R.ij.END_CLAIM ? "50%" : "30%", [n]), V = (0, l.q_F)({
     onChange: k,
     to: {
       width: B()
     }
   }), H = (0, l.q_F)({
     to: {
-      width: n === w.ij.END_SUMMARY ? "140%" : "100%",
+      width: n === R.ij.END_SUMMARY ? "140%" : "100%",
       height: null != N ? N * Z : true,
-      left: n === w.ij.END_SUMMARY ? "40px" : "0px"
+      left: n === R.ij.END_SUMMARY ? "40px" : "0px"
     }
   }), Y = (0, l.q_F)({
     to: {
-      opacity: +(n !== w.ij.END_SUMMARY),
-      transform: n === w.ij.END_SUMMARY ? "translate3d(0, -200px, 0)" : "translate3d(0, 0px, 0)"
+      opacity: +(n !== R.ij.END_SUMMARY),
+      transform: n === R.ij.END_SUMMARY ? "translate3d(0, -200px, 0)" : "translate3d(0, 0px, 0)"
     }
   });
   return (0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
@@ -148,10 +148,10 @@ function B(e) {
       children: (0, r.jsx)(l.cAm, {
         fit: "contain",
         dataBinding: {
-          "id#": null != (t = null == m ? true : m.id.substring(0, 4)) ? t : "0000",
+          "id#": null != (t = null == h ? true : h.id.substring(0, 4)) ? t : "0000",
           LVL: "".concat(Math.round(u)),
           Outof: "".concat(_, "/10"),
-          PersonaName: w.IL[_],
+          PersonaName: R.IL[_],
           AnimationState: M,
           FillColor: {
             r: b.r,
@@ -166,7 +166,7 @@ function B(e) {
         },
         withReducedMotion: "play"
       }, "rive")
-    }), n <= w.ij.END_REWARD && (0, r.jsx)("div", {
+    }), n <= R.ij.END_REWARD && (0, r.jsx)("div", {
       className: j.content,
       children: (0, r.jsx)(T.Z, {
         onClick: a,
@@ -252,7 +252,7 @@ function H(e) {
   } = (0, S.Bi)(a), A = (0, c.e7)([g.Z], () => g.Z.getGuild(null == O ? true : O.id)), N = null != I && null != I.icon ? b.ZP.getApplicationIconURL({
     id: I.id,
     icon: I.icon
-  }) : null, w = (0, R.Sg)(), M = (0, i.useMemo)(() => [{
+  }) : null, R = (0, w.Sg)(), M = (0, i.useMemo)(() => [{
     icon: l.kBi,
     title: x.intl.string(D.default.wWKySP),
     content: (0, r.jsx)(P.Z, {
@@ -292,7 +292,7 @@ function H(e) {
           className: j.statIcon
         }), (0, r.jsx)(P.Z, {
           variant: "text-md/medium",
-          children: null == y.id ? m.ZP.convertSurrogateToName(y.name) : ":".concat(y.name, ":")
+          children: null == y.id ? h.ZP.convertSurrogateToName(y.name) : ":".concat(y.name, ":")
         })]
       }) : (0, r.jsx)(l.IMN, {
         color: t,
@@ -326,7 +326,7 @@ function H(e) {
     title: x.intl.string(D.default["8XPMJj"]),
     content: (0, r.jsxs)("div", {
       className: L.title,
-      children: [null != A ? (0, r.jsx)(h.Z, {
+      children: [null != A ? (0, r.jsx)(m.Z, {
         guild: A,
         className: j.statIcon
       }) : (0, r.jsx)(l.IMN, {
@@ -339,8 +339,8 @@ function H(e) {
       })]
     })
   }], [n, C, T, o, y, E, t, N, I, A]);
-  return (0, r.jsx)(R.Qr.Provider, {
-    value: w,
+  return (0, r.jsx)(w.Qr.Provider, {
+    value: R,
     children: (0, r.jsx)("div", {
       className: j.centerContent,
       children: (0, r.jsxs)("div", {
@@ -375,17 +375,17 @@ function Y(e) {
     step: t
   } = e, n = (0, i.useContext)(O.Q), a = (0, d.dQu)(n.primaryColor).hex(), o = (0, d.dQu)(n.backgroundOverlayColor).hex();
   return (0, r.jsx)("div", {
-    className: t === w.ij.END_CLAIM ? j.contentSectionClaim : j.contentSectionSummary,
+    className: t === R.ij.END_CLAIM ? j.contentSectionClaim : j.contentSectionSummary,
     style: {
       backgroundColor: o
     },
     children: (0, r.jsxs)(N.ZP, {
       activeSlide: t,
       children: [(0, r.jsx)(d.Mi4, {
-        id: w.ij.END_CLAIM,
+        id: R.ij.END_CLAIM,
         children: (0, r.jsx)(V, {})
       }), (0, r.jsx)(d.Mi4, {
-        id: w.ij.END_SUMMARY,
+        id: R.ij.END_SUMMARY,
         children: (0, r.jsx)(H, {
           primaryColor: a
         })
@@ -399,9 +399,9 @@ function W(e) {
     icon: t,
     title: n,
     content: a
-  } = e, o = (0, i.useContext)(O.Q), s = (0, d.dQu)(o.primaryColor).hex(), l = (0, R.gl)(), c = (0, R.gl)();
+  } = e, o = (0, i.useContext)(O.Q), s = (0, d.dQu)(o.primaryColor).hex(), l = (0, w.gl)(), c = (0, w.gl)();
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(R.QR, {
+    children: [(0, r.jsx)(w.QR, {
       spring: l,
       className: j.statTitle,
       children: (0, r.jsxs)("div", {
@@ -417,7 +417,7 @@ function W(e) {
           children: n
         })]
       })
-    }), (0, r.jsx)(R.QR, {
+    }), (0, r.jsx)(w.QR, {
       spring: c,
       children: a
     })]

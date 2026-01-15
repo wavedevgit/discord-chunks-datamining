@@ -72,7 +72,7 @@ function _(e, t) {
   this.fun = e, this.array = t
 }
 
-function m() {}
+function h() {}
 i.nextTick = function(e) {
   var t = Array(arguments.length - 1);
   if (arguments.length > 1)
@@ -80,7 +80,7 @@ i.nextTick = function(e) {
   c.push(new _(e, t)), 1 !== c.length || u || s(p)
 }, _.prototype.run = function() {
   this.fun.apply(null, this.array)
-}, i.title = "browser", i.browser = true, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = m, i.addListener = m, i.once = m, i.off = m, i.removeListener = m, i.removeAllListeners = m, i.emit = m, i.prependListener = m, i.prependOnceListener = m, i.listeners = function(e) {
+}, i.title = "browser", i.browser = true, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = h, i.addListener = h, i.once = h, i.off = h, i.removeListener = h, i.removeAllListeners = h, i.emit = h, i.prependListener = h, i.prependOnceListener = h, i.listeners = function(e) {
   return []
 }, i.binding = function(e) {
   throw Error("process.binding is not supported")

@@ -95,7 +95,7 @@ function j(e) {
     eo = e => ei(e, null == Q ? true : Q.avatar, A.I5);
   return (0, r.jsxs)("div", {
     className: L.sectionsContainer,
-    children: [(0, r.jsx)(R.Z, {
+    children: [(0, r.jsx)(w.Z, {
       errors: null != (i = null == Y ? true : Y.nick) ? i : null == q ? true : q.nick,
       username: C.ZP.getName(k),
       pendingNick: Z,
@@ -110,7 +110,7 @@ function j(e) {
       },
       pendingPronouns: V,
       currentPronouns: er
-    }, "pronouns"), (0, r.jsxs)(w.Z, {
+    }, "pronouns"), (0, r.jsxs)(R.Z, {
       user: k,
       showOverlay: !J,
       children: [(0, r.jsx)(_.Z, {
@@ -142,10 +142,10 @@ function j(e) {
         }),
         user: k,
         guild: z
-      }, "decoration"), !U && (0, r.jsx)(m.Z, {
+      }, "decoration"), !U && (0, r.jsx)(h.Z, {
         user: k,
         guildId: z.id
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(m.Z, {
         user: k,
         guild: z,
         titleIcon: (0, r.jsx)(s.u, {

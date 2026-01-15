@@ -17,7 +17,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk515270 = require("./515270.js"),
   Chunk847302 = require("./847302.js"),
   Chunk42530 = require("./42530.js");
-let h = (e, t, n) => ({
+let m = (e, t, n) => ({
   getSlateEditor: () => e,
   submit(e) {
     e.preventDefault(), n()
@@ -53,7 +53,7 @@ let h = (e, t, n) => ({
       }
       if (!f.LC.isText(i)) break;
       let t = i.text[o];
-      if (m.i$.test(t)) break;
+      if (h.i$.test(t)) break;
       s = t + s
     }
     let c = s,
@@ -61,7 +61,7 @@ let h = (e, t, n) => ({
       [d] = f.bN.node(e, t.anchor.path);
     for (; f.LC.isText(d) && !(u >= d.text.length);) {
       let e = d.text[u];
-      if (m.i$.test(e)) break;
+      if (h.i$.test(e)) break;
       c += e, u++
     }
     return {
@@ -187,5 +187,5 @@ function E(e, t, n, r) {
 }
 
 function b(e, t, n, i) {
-  r.useImperativeHandle(e, () => h(t, n, i), [t, n, i])
+  r.useImperativeHandle(e, () => m(t, n, i), [t, n, i])
 }

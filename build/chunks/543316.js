@@ -33,8 +33,8 @@ var Chunk126182 = require("./126182.js"),
   Chunk40375 = require("./40375.js"),
   Chunk65183 = require("./65183.js"),
   Chunk423331 = require("./423331.js"),
-  m = Chunk40375("draft_tree_data_support"),
-  h = m ? Chunk309987 : Chunk117242,
+  h = Chunk40375("draft_tree_data_support"),
+  m = h ? Chunk309987 : Chunk117242,
   g = Chunk65183.List,
   E = Chunk65183.Repeat;
 module.exports = {
@@ -59,12 +59,12 @@ module.exports = {
         key: d(),
         type: "unstyled"
       };
-    m && (O = r({}, O, {
+    h && (O = r({}, O, {
       nextSibling: v.key
     }), v = r({}, v, {
       prevSibling: O.key
     }));
-    var S = [new h(O), new h(v)],
+    var S = [new m(O), new m(v)],
       I = a.createFromArray(S),
       T = c.replaceWithFragment(b, _, I),
       C = T.merge({
@@ -87,9 +87,9 @@ module.exports = {
       else if (d.getEndOffset() === f.getLength()) i = _(l, t, f, "after");
       else {
         var p = c.splitBlock(l, d),
-          m = p.getSelectionAfter(),
-          h = p.getBlockForKey(m.getFocusKey());
-        i = _(p, t, h, "before")
+          h = p.getSelectionAfter(),
+          m = p.getBlockForKey(h.getFocusKey());
+        i = _(p, t, m, "before")
       }
     }
     var g = i.merge({

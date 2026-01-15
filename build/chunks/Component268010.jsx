@@ -51,18 +51,18 @@ let S = (e, t, n) => {
     }), {
       primaryColor: N,
       secondaryColor: P
-    } = (0, h.Z)(null == A ? true : A.src), R = (0, a.e7)([s.default], () => s.default.locale), w = (0, m.Z)(O.ABu.CRUNCHYROLL), D = (0, p.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
+    } = (0, m.Z)(null == A ? true : A.src), w = (0, a.e7)([s.default], () => s.default.locale), R = (0, h.Z)(O.ABu.CRUNCHYROLL), D = (0, p.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
       if (null != C && (null == A ? true : A.src) != null) return (0, _.B)({
         entry: n,
         mediaImageSrc: null == A ? true : A.src,
         avatarSrc: C.getAvatarURL(null == t ? true : t.guild_id, 128),
         description: S(n, t, C),
-        timestamp: (0, p.yh)(n, R),
+        timestamp: (0, p.yh)(n, w),
         episodeDescription: D,
         colors: [N, P],
         channelId: e
       })
-    }, [t, n, D, R, null == A ? true : A.src, N, P, C]), L = () => {
+    }, [t, n, D, w, null == A ? true : A.src, N, P, C]), L = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -78,7 +78,7 @@ let S = (e, t, n) => {
         title: n.extra.media_title,
         subtitle: n.extra.media_subtitle,
         headerIcons: (0, r.jsx)(y.Z, {
-          onClick: w,
+          onClick: R,
           Icon: o.omf,
           "aria-label": v.intl.string(v.t.jdJYXw)
         }),

@@ -29,10 +29,10 @@ let p = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(
     if (null == t || null == i) return null;
     let {
       id: _,
-      nameUnformatted: m,
-      tenureReqNumMonths: h,
+      nameUnformatted: h,
+      tenureReqNumMonths: m,
       hasWideArt: g
-    } = t, E = d.intl.string(m), b = (0, l.q)(_, h), y = {
+    } = t, E = d.intl.string(h), b = (0, l.q)(_, m), y = {
       "--custom-badge-glow-color": (0, s.rj)(t.glowColor, .5)
     };
     return (0, r.jsxs)("div", {

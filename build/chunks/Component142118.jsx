@@ -23,11 +23,11 @@ function u(e) {
     layout: f,
     initialize: p,
     useNotice: _
-  } = t, m = null == n ? true : n(), h = null == i ? true : i(), g = null == d ? true : d(), E = null == _ ? true : _(), b = null != n || null != u;
+  } = t, h = null == n ? true : n(), m = null == i ? true : i(), g = null == d ? true : d(), E = null == _ ? true : _(), b = null != n || null != u;
   return (0, s.D)(p), (0, r.jsxs)(r.Fragment, {
-    children: [null != m && (0, r.jsx)(l.Y, {
-      title: m,
-      titleTrailingIcon: h,
+    children: [null != h && (0, r.jsx)(l.Y, {
+      title: h,
+      titleTrailingIcon: m,
       subtitle: g
     }), (0, r.jsx)("div", {
       "data-settings-category-key": b ? t.key : true,

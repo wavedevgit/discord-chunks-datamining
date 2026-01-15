@@ -40,7 +40,7 @@ function T() {
 
 function C() {
   let e = f.CM.getSetting();
-  0 === e || null != r || Date.now() - b > Math.min(e * p.Z.Millis.SECOND, h.OSm) || T() ? O || l.Z.dispatch({
+  0 === e || null != r || Date.now() - b > Math.min(e * p.Z.Millis.SECOND, m.OSm) || T() ? O || l.Z.dispatch({
     type: "AFK",
     afk: true
   }) : O && l.Z.dispatch({
@@ -50,7 +50,7 @@ function C() {
 }
 
 function A() {
-  Date.now() - b > h.OSm || T() ? y || l.Z.dispatch({
+  Date.now() - b > m.OSm || T() ? y || l.Z.dispatch({
     type: "IDLE",
     idle: true,
     idleSince: b
@@ -81,20 +81,20 @@ function P() {
   }
 }
 
-function R(e) {
+function w(e) {
   d.Z.getConfig({
     location: "handlePowerEvent"
   }).power_events ? j({}) : (e && (r = Date.now()), N())
 }
 if (!__OVERLAY__) {
   Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (P(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
-    v = false, R(false)
+    v = false, w(false)
   }), Chunk579806.Z.remotePowerMonitor.on("suspend", () => {
-    v = true, R(true), c.default.disconnect()
+    v = true, w(true), c.default.disconnect()
   }), Chunk579806.Z.remotePowerMonitor.on("lock-screen", () => {
-    S = true, R(true)
+    S = true, w(true)
   }), Chunk579806.Z.remotePowerMonitor.on("unlock-screen", () => {
-    S = false, R(false)
+    S = false, w(false)
   })) : setInterval(N, 30 * Chunk70956.Z.Millis.SECOND);
   let e = o()(() => {
     d.Z.getConfig({
@@ -104,7 +104,7 @@ if (!__OVERLAY__) {
   window.addEventListener("mouseup", module), window.addEventListener("wheel", module), window.addEventListener("keypress", module)
 }
 
-function w(e) {
+function R(e) {
   y = e.idle
 }
 
@@ -117,14 +117,14 @@ function x(e) {
     userId: t,
     speakingFlags: n
   } = e;
-  return n !== g.Dg.NONE && t === m.default.getId() && j({}), false
+  return n !== g.Dg.NONE && t === h.default.getId() && j({}), false
 }
 
 function L(e) {
   let {
     state: t
   } = e;
-  return I = t === h.$7l.BACKGROUND, r = null, b = Date.now(), N(), false
+  return I = t === m.$7l.BACKGROUND, r = null, b = Date.now(), N(), false
 }
 
 function j(e) {
@@ -146,7 +146,7 @@ function M() {
 }
 class k extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(m.default)
+    this.waitFor(h.default)
   }
   isIdle() {
     return y
@@ -166,7 +166,7 @@ class k extends(i = Chunk442837.ZP.Store) {
 }
 E(k, "displayName", "IdleStore");
 let U = new k(Chunk570140.Z, {
-  IDLE: w,
+  IDLE: R,
   AFK: D,
   SPEAKING: x,
   APP_STATE_UPDATE: L,

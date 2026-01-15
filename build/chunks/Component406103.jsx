@@ -53,9 +53,9 @@ let o = {
         disabled: !u && true
       }].slice(0, Math.max(1, Math.min(5, n))), [n, s, l, c, u]), _ = i.useCallback(e => {
         f(e)
-      }, []), m = i.useCallback(() => {
+      }, []), h = i.useCallback(() => {
         f(p.map(e => e.value))
-      }, [p]), h = i.useCallback(() => {
+      }, [p]), m = i.useCallback(() => {
         f([])
       }, []), g = i.useCallback(() => {
         p.length > 0 && f([p[0].value])
@@ -79,7 +79,7 @@ let o = {
             variant: "secondary",
             size: "sm",
             text: "Select All",
-            onClick: m,
+            onClick: h,
             disabled: t || 0 === p.length
           }), (0, r.jsx)(a.zxk, {
             variant: "secondary",
@@ -91,7 +91,7 @@ let o = {
             variant: "primary",
             size: "sm",
             text: "Clear All",
-            onClick: h,
+            onClick: m,
             disabled: t
           })]
         })]

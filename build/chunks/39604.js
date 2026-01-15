@@ -209,7 +209,7 @@ function Y(e) {
     let t = (0, c.my)(e);
     r = t.guildId, i = t.channelId
   } else {
-    let e = m.default.getId(),
+    let e = h.default.getId(),
       t = _.Z.getActiveStreamForUser(e, null);
     n = null != t ? E.Z.getRTCConnection((0, c.V9)(t)) : null, r = null == t ? true : t.guildId, i = null == t ? true : t.channelId
   }
@@ -227,24 +227,24 @@ function Y(e) {
 
 function W(e, t) {
   var n, r, i, a, o, l, c, u, d, f, _;
-  let m = new Map;
+  let h = new Map;
   for (let e in t.framesEncodedByEncoder) {
     let r = t.framesEncodedByEncoder[e],
       i = (0, s.lG)(e),
-      a = null != (n = m.get(i)) ? n : 0;
-    m.set(i, a + r)
+      a = null != (n = h.get(i)) ? n : 0;
+    h.set(i, a + r)
   }
   return M(L({}, e), {
-    frames_encoded_nvidia_cuda: null != (r = m.get(s.Su.NVIDIA_CUDA)) ? r : 0,
-    frames_encoded_nvidia_direct3d: null != (i = m.get(s.Su.NVIDIA_DIRECT_3D)) ? i : 0,
-    frames_encoded_openh264: null != (a = m.get(s.Su.OPENH264)) ? a : 0,
-    frames_encoded_videotoolbox: null != (o = m.get(s.Su.VIDEOTOOLBOX)) ? o : 0,
-    frames_encoded_amd_direct3d: null != (l = m.get(s.Su.AMD_DIRECT_3D)) ? l : 0,
-    frames_encoded_amd_vaapi: null != (c = m.get(s.Su.AMD_VAAPI)) ? c : 0,
-    frames_encoded_intel: null != (u = m.get(s.Su.INTEL)) ? u : 0,
-    frames_encoded_intel_direct3d: null != (d = m.get(s.Su.INTEL_DIRECT_3D)) ? d : 0,
-    frames_encoded_uncategorized: null != (f = m.get(s.Su.UNCATEGORIZED)) ? f : 0,
-    frames_encoded_unknown: null != (_ = m.get(s.Su.UNKNOWN)) ? _ : 0,
+    frames_encoded_nvidia_cuda: null != (r = h.get(s.Su.NVIDIA_CUDA)) ? r : 0,
+    frames_encoded_nvidia_direct3d: null != (i = h.get(s.Su.NVIDIA_DIRECT_3D)) ? i : 0,
+    frames_encoded_openh264: null != (a = h.get(s.Su.OPENH264)) ? a : 0,
+    frames_encoded_videotoolbox: null != (o = h.get(s.Su.VIDEOTOOLBOX)) ? o : 0,
+    frames_encoded_amd_direct3d: null != (l = h.get(s.Su.AMD_DIRECT_3D)) ? l : 0,
+    frames_encoded_amd_vaapi: null != (c = h.get(s.Su.AMD_VAAPI)) ? c : 0,
+    frames_encoded_intel: null != (u = h.get(s.Su.INTEL)) ? u : 0,
+    frames_encoded_intel_direct3d: null != (d = h.get(s.Su.INTEL_DIRECT_3D)) ? d : 0,
+    frames_encoded_uncategorized: null != (f = h.get(s.Su.UNCATEGORIZED)) ? f : 0,
+    frames_encoded_unknown: null != (_ = h.get(s.Su.UNKNOWN)) ? _ : 0,
     frames_submitted: t.framesSubmitted,
     frames_submitted_during_clip: t.framesSubmittedDuringClip,
     frames_encoded: t.framesEncoded,
@@ -271,7 +271,7 @@ async function K(e) {
     s = (0, C.Z)(e, t, I.NJ.CLIP, n, r),
     l = "".concat((0, T.Z)(s.applicationName.substring(0, 20)), "_").concat(s.id, ".mp4"),
     u = o.Z.fileManager.join(i, l),
-    d = h.Z.getMediaEngine(),
+    d = m.Z.getMediaEngine(),
     f = JSON.stringify(s),
     p = null != e ? (0, c.my)(e).ownerId : true,
     _ = Y(e);
@@ -290,11 +290,11 @@ async function K(e) {
     n.clip_save_time_ms = t.clipSaveTimeMs, n.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (n.decode_fps_during_clip = t.viewerDecodeFps, n.encode_fps_during_clip = t.viewerEncodeFps, n.target_fps = null), y.default.track(D.rMx.CLIP_SAVED, n);
     let r = "";
     try {
-      r = await (0, R.R)(o.Z.clips.getClipProtocolURLFromPath(u), 0)
+      r = await (0, w.R)(o.Z.clips.getClipProtocolURLFromPath(u), 0)
     } catch (e) {
-      w.jF.warn("Failed to generate clip thumbnail:", e)
+      R.jF.warn("Failed to generate clip thumbnail:", e)
     }
-    return s.thumbnail = r, s.length = e, w.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(r.length, " bytes thumbnail.")), await d.updateClipMetadata(u, JSON.stringify(s)), M(L({}, s), {
+    return s.thumbnail = r, s.length = e, R.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(r.length, " bytes thumbnail.")), await d.updateClipMetadata(u, JSON.stringify(s)), M(L({}, s), {
       filepath: u
     })
   } catch (r) {
@@ -321,7 +321,7 @@ async function z(e) {
     });
   if (S.Z.getIsAtMaxSaveClipOperations()) return;
   let p = (0, A.LI)() && null != _.Z.getCurrentUserActiveStream(),
-    E = (0, A.CY)() && (null == (t = l.ZP.getVisibleGame()) ? true : t.windowHandle) != null && h.Z.hasClipsSource(),
+    E = (0, A.CY)() && (null == (t = l.ZP.getVisibleGame()) ? true : t.windowHandle) != null && m.Z.hasClipsSource(),
     y = null != e && null != _.Z.getActiveStreamForStreamKey(e) && f,
     O = (0, v.n7)() && (0, A.LI)() && null == _.Z.getCurrentUserActiveStream() && null != g.Z.getChannelId();
   if (!p && !E && !y && !O) return;
@@ -330,7 +330,7 @@ async function z(e) {
     C = null != e ? e : T,
     N = (() => {
       let e = null != C ? (0, c.my)(C).ownerId : true;
-      return e === m.default.getId() ? w.X9.STREAMER : null != e ? w.X9.VIEWER : E ? w.X9.DECOUPLED : w.X9.VOICE
+      return e === h.default.getId() ? R.X9.STREAMER : null != e ? R.X9.VIEWER : E ? R.X9.DECOUPLED : R.X9.VOICE
     })(),
     P = await (async () => {
       if (null == C) return;
@@ -341,7 +341,7 @@ async function z(e) {
       if (null != n) try {
         let e = (0, i.zS)(),
           t = await e.getNextVideoOutputFrame(n);
-        return (0, R.W)(t)
+        return (0, w.W)(t)
       } catch (e) {
         return
       }
@@ -366,10 +366,10 @@ async function z(e) {
             r = parseInt(t.id, 10);
           return n - r
         }).slice(0, n);
-        for (let t of (w.jF.info("Deleting ".concat(r.length, " temporary clips to stay within limit of ").concat(e)), r)) try {
+        for (let t of (R.jF.info("Deleting ".concat(r.length, " temporary clips to stay within limit of ").concat(e)), r)) try {
           await en(t.filepath)
         } catch (e) {
-          w.jF.error("Failed to delete temporary clip", e)
+          R.jF.error("Failed to delete temporary clip", e)
         }
       }
     }
@@ -379,11 +379,11 @@ async function z(e) {
       clip: e
     })
   } catch (e) {
-    w.jF.error("Clip Failed to Save", e), null == D || D.stop(), (0, d.GN)("clip_error", .5), a.Z.dispatch({
+    R.jF.error("Clip Failed to Save", e), null == D || D.stop(), (0, d.GN)("clip_error", .5), a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP_ERROR"
     })
   }
-  w.jF.info("".concat(S.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - x), "ms"))
+  R.jF.info("".concat(S.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - x), "ms"))
 }
 async function q(e, t) {
   let n, r;
@@ -391,16 +391,16 @@ async function q(e, t) {
   let i = _.Z.getCurrentUserActiveStream(),
     s = null != i ? (0, c.V9)(i) : true,
     u = null != e ? e : s,
-    f = h.Z.getMediaEngine(),
+    f = m.Z.getMediaEngine(),
     p = (0, C.Z)(u, t, I.NJ.SCREENSHOT),
     g = S.Z.getSettings().storageLocation,
     E = "jpeg",
     b = "".concat((0, T.Z)(p.applicationName.substring(0, 20)), "_").concat(p.id, ".").concat(E),
     y = o.Z.fileManager.join(g, b),
-    O = (null != u ? (0, c.my)(u).ownerId : true) === m.default.getId() ? w.X9.STREAMER : w.X9.VIEWER;
-  if (null != p.applicationId && null != (r = l.ZP.getRunningGames().find(e => e.id === p.applicationId)) && w.jF.log("Matched application ID to running game:", p.applicationId, r.name), null == r && null != p.applicationName && null != (r = l.ZP.getRunningGames().find(e => e.name === p.applicationName)) && w.jF.log("Matched application name to running game:", p.applicationName), null == r && null != (r = l.ZP.getVisibleGame()) && w.jF.log("Using visible game for screenshot:", r.name), (null == r ? true : r.windowHandle) != null) n = parseInt(r.windowHandle, 10), w.jF.log("Using window handle for full resolution screenshot:", n);
+    O = (null != u ? (0, c.my)(u).ownerId : true) === h.default.getId() ? R.X9.STREAMER : R.X9.VIEWER;
+  if (null != p.applicationId && null != (r = l.ZP.getRunningGames().find(e => e.id === p.applicationId)) && R.jF.log("Matched application ID to running game:", p.applicationId, r.name), null == r && null != p.applicationName && null != (r = l.ZP.getRunningGames().find(e => e.name === p.applicationName)) && R.jF.log("Matched application name to running game:", p.applicationName), null == r && null != (r = l.ZP.getVisibleGame()) && R.jF.log("Using visible game for screenshot:", r.name), (null == r ? true : r.windowHandle) != null) n = parseInt(r.windowHandle, 10), R.jF.log("Using window handle for full resolution screenshot:", n);
   else {
-    w.jF.error("Failed to save screenshot: No window handle available"), (0, d.GN)("clip_error", .5);
+    R.jF.error("Failed to save screenshot: No window handle available"), (0, d.GN)("clip_error", .5);
     return
   }
   a.Z.dispatch({
@@ -423,9 +423,9 @@ async function q(e, t) {
     e.thumbnail = "data:image/jpeg;base64,".concat(r), a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP",
       clip: e
-    }), w.jF.info("Screenshot save took ".concat(Math.round(performance.now() - A), "ms")), w.jF.log("Successfully saved screenshot to:", y)
+    }), R.jF.info("Screenshot save took ".concat(Math.round(performance.now() - A), "ms")), R.jF.log("Successfully saved screenshot to:", y)
   } catch (e) {
-    throw w.jF.error("Failed to save screenshot:", e), null == v || v.stop(), (0, d.GN)("clip_error", .5), a.Z.dispatch({
+    throw R.jF.error("Failed to save screenshot:", e), null == v || v.stop(), (0, d.GN)("clip_error", .5), a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP_ERROR"
     }), e
   }
@@ -442,7 +442,7 @@ async function X(e, t) {
   let n = S.Z.getClips().find(t => t.id === e);
   if (null == n) return;
   let r = L({}, n, t);
-  null != await (0, N.w)(r) && (await h.Z.getMediaEngine().updateClipMetadata(r.filepath, JSON.stringify(r)), y.default.track(D.rMx.CLIP_EDITED, {
+  null != await (0, N.w)(r) && (await m.Z.getMediaEngine().updateClipMetadata(r.filepath, JSON.stringify(r)), y.default.track(D.rMx.CLIP_EDITED, {
     clip_id: r.id
   }), a.Z.dispatch({
     type: "CLIPS_UPDATE_METADATA",
@@ -491,7 +491,7 @@ async function en(e) {
 }
 async function er(e) {
   var t;
-  let n = h.Z.getMediaEngine(),
+  let n = m.Z.getMediaEngine(),
     r = await n.exportClip(e.filepath, null != (t = e.editMetadata) ? t : {
       start: 0,
       end: e.length / 1e3,
@@ -528,7 +528,7 @@ function eo(e) {
 }
 
 function es(e) {
-  let t = h.Z.getMediaEngine().setClipsMLPipelineTypeEnabled;
+  let t = m.Z.getMediaEngine().setClipsMLPipelineTypeEnabled;
   null != t && (t("emotion_classifier", e.emotionClassifier), t("wake_word_detector", e.wakeWordDetector), t("yell_detector", e.yellDetector), t("whisper_transcription", e.whisperTranscription)), a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {

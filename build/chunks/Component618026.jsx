@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,7 +77,7 @@ function g(e) {
     lineItems: a,
     currency: o,
     defaultExpanded: l = false
-  } = e, [c, d] = i.useState(l), p = a.length > 0, h = i.useMemo(() => a.reduce((e, t) => e + t.amount, 0), [a]), g = i.useMemo(() => a.reduce((e, t) => t.amount < 0 ? e + Math.abs(t.amount) : e, 0), [a]);
+  } = e, [c, d] = i.useState(l), p = a.length > 0, m = i.useMemo(() => a.reduce((e, t) => e + t.amount, 0), [a]), g = i.useMemo(() => a.reduce((e, t) => t.amount < 0 ? e + Math.abs(t.amount) : e, 0), [a]);
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)("div", {
@@ -102,7 +102,7 @@ function g(e) {
           children: a.map(e => {
             var {
               id: t
-            } = e, n = m(e, ["id"]);
+            } = e, n = h(e, ["id"]);
             return (0, r.jsx)(b, _(f({}, n), {
               currency: o
             }), t)
@@ -110,7 +110,7 @@ function g(e) {
         })
       })]
     }), (0, r.jsx)(y, {
-      amount: h,
+      amount: m,
       currency: o
     })]
   })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EX: () => O,
-  Fj: () => h,
+  Fj: () => m,
   ZP: () => g
 });
 var Chunk54381 = require("./54381.js");
@@ -21,19 +21,19 @@ var Chunk524437 = require("./524437.js"),
   Chunk418924 = require("./418924.js"),
   Chunk827186 = require("./827186.js");
 
-function h() {
+function m() {
   let e = c.G6.useSetting();
   return (0, r.jsxs)("div", {
-    className: m.myServersContainer,
+    className: h.myServersContainer,
     children: [(0, r.jsxs)("div", {
-      className: m.myServersHeaderContainer,
+      className: h.myServersHeaderContainer,
       children: [(0, r.jsx)(a.Heading, {
-        className: m.myServersTitle,
+        className: h.myServersTitle,
         variant: "heading-md/medium",
         color: "text-strong",
         children: p.intl.string(p.t.TqdOvC)
       }), !e && (0, r.jsx)("div", {
-        className: m.myServersIgnoredWarning,
+        className: h.myServersIgnoredWarning,
         children: (0, r.jsx)(a.M14, {
           type: "warning",
           children: p.intl.string(_.default["xxI0/W"])
@@ -83,7 +83,7 @@ function E() {
       options: n,
       value: e,
       onChange: e => t(e)
-    }), (0, r.jsx)(h, {})]
+    }), (0, r.jsx)(m, {})]
   })
 }
 
@@ -136,7 +136,7 @@ function O() {
     setting: d.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, r.jsx)(a.Zbd, {
       type: a.Zbd.Types.PRIMARY,
-      className: m.privacyTermsCard,
+      className: h.privacyTermsCard,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: p.intl.format(p.t.xvCsx4, {

@@ -40,7 +40,7 @@ let O = e => {
   });
   let T = v,
     C = (0, E.$C)("marketing_page_banner"),
-    A = (0, h.K)({
+    A = (0, m.K)({
       buttonAction: C.treatment === E.IA.PLAN_SELECTION ? c.Wc.OPEN_PLAN_SELECTION_MODAL : null != (n = null == (t = T.button) ? true : t.buttonAction) ? n : c.Wc.OPEN_TIER_2_PAYMENT_MODAL,
       analyticsLocations: S,
       analyticsLocation: I.location
@@ -68,7 +68,7 @@ let O = e => {
         children: [N, "" !== T.helpArticleId && (0, r.jsxs)(r.Fragment, {
           children: ["\xa0", (0, r.jsx)(d.eee, {
             className: y.termsApplyAnchor,
-            href: m.Z.getArticleURL(T.helpArticleId),
+            href: h.Z.getArticleURL(T.helpArticleId),
             children: b.intl.string(b.t["sBp+u0"])
           })]
         })]
@@ -80,7 +80,7 @@ let O = e => {
         size: "md",
         onClick: A,
         text: T.button.copy,
-        icon: s.SrA
+        icon: s.NitroWheelIcon
       })
     })]
   })

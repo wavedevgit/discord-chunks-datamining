@@ -23,8 +23,8 @@ exports.read = function(e, t, n, r, i) {
     f = 5960464477539062e-23 * (23 === i),
     p = r ? 0 : a - 1,
     _ = r ? 1 : false,
-    m = +(t < 0 || 0 === t && 1 / t < 0);
+    h = +(t < 0 || 0 === t && 1 / t < 0);
   for (isNaN(t = Math.abs(t)) || t === 1 / 0 ? (s = +!!isNaN(t), o = u) : (o = Math.floor(Math.log(t) / Math.LN2), t * (l = Math.pow(2, -o)) < 1 && (o--, l *= 2), o + d >= 1 ? t += f / l : t += f * Math.pow(2, 1 - d), t * l >= 2 && (o++, l /= 2), o + d >= u ? (s = 0, o = u) : o + d >= 1 ? (s = (t * l - 1) * Math.pow(2, i), o += d) : (s = t * Math.pow(2, d - 1) * Math.pow(2, i), o = 0)); i >= 8; e[n + p] = 255 & s, p += _, s /= 256, i -= 8);
   for (o = o << i | s, c += i; c > 0; e[n + p] = 255 & o, p += _, o /= 256, c -= 8);
-  e[n + p - _] |= 128 * m
+  e[n + p - _] |= 128 * h
 }

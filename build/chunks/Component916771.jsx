@@ -33,15 +33,15 @@ function p(e) {
     stream: n,
     width: p,
     avError: _,
-    avErrorContext: m,
-    selected: h = false,
+    avErrorContext: h,
+    selected: m = false,
     noArt: g = false
-  } = e, E = f(m), b = null == (t = (0, o.hp)(null != _ ? _ : o.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
+  } = e, E = f(h), b = null == (t = (0, o.hp)(null != _ ? _ : o.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
   return (0, r.jsx)(c.Z, {
     header: E,
     size: (0, c.L)(p),
     noArt: g,
-    selected: h,
+    selected: m,
     description: d.intl.format(d.t.sXsgsP, {
       helpUrl: l.Z.getArticleURL(u.BhN.STREAM_FAILED)
     }),

@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk459710 = require("./459710.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ function I(e, t) {
     id: n,
     channelId: i,
     className: a,
-    children: h,
+    children: m,
     actions: E,
     handleEditModal: O,
     keyboardModeEnabled: v,
@@ -98,8 +98,8 @@ function I(e, t) {
   } = e, A = (0, s.JA)(n), {
     onFocus: N
   } = A, P = y(A, ["onFocus"]), {
-    handleFocus: R,
-    handleBlur: w
+    handleFocus: w,
+    handleBlur: R
   } = (0, f.b)(N), D = 0 === C, x = null != E, L = e => {
     if (v) {
       switch (e.which) {
@@ -124,26 +124,26 @@ function I(e, t) {
   };
   return (0, r.jsx)(l.tEY, {
     children: (0, r.jsx)("li", b(g({}, P), {
-      onFocus: R,
-      onBlur: w,
+      onFocus: w,
+      onBlur: R,
       onKeyDown: L,
-      className: o()(m.upload, a, {
-        [m.sizeClip]: 2 === C
+      className: o()(h.upload, a, {
+        [h.sizeClip]: 2 === C
       }),
       ref: t,
       children: (0, r.jsxs)("div", {
-        className: m.uploadContainer,
-        children: [h, x ? (0, r.jsx)("div", {
-          className: m.actionBarContainer,
+        className: h.uploadContainer,
+        children: [m, x ? (0, r.jsx)("div", {
+          className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
-            className: o()(m.actionBar, {
-              [m.smallActionBar]: D
+            className: o()(h.actionBar, {
+              [h.smallActionBar]: D
             }),
             onContextMenu: S,
             "aria-label": _.intl.string(_.t["8Lu3Du"]),
             children: (0, r.jsx)(u.ZP, {
               className: o()({
-                [m.miniPopover]: D
+                [h.miniPopover]: D
               }),
               children: E
             })

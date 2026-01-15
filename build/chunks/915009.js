@@ -74,7 +74,7 @@ function y() {
 
 function O() {
   let e = (0, i.e7)([c.default], () => c.default.getCurrentUser()),
-    t = (0, m.AZ)();
+    t = (0, h.AZ)();
   return (null == e ? true : e.nsfwAllowed) === false && t
 }
 
@@ -92,7 +92,7 @@ function S(e) {
     try {
       await d.ZP.updateTeenConsents(t, r, i)
     } catch (e) {
-      s.Z.showFailedToast(h.wQ.GENERIC_ERROR)
+      s.Z.showFailedToast(m.wQ.GENERIC_ERROR)
     }
   }, [t, e])
 }

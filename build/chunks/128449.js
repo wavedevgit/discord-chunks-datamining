@@ -9,8 +9,8 @@ require.d(exports, {
   Hk: () => d,
   KL: () => y,
   L3: () => S,
-  MU: () => h,
-  Qq: () => m,
+  MU: () => m,
+  Qq: () => h,
   dc: () => u,
   gU: () => f,
   o3: () => c,
@@ -67,10 +67,10 @@ let c = 0,
 var _ = function(e) {
     return e.FEATURED = "featured", e.GAMING = "gaming", e.MUSIC = "music", e.ENTERTAINMENT = "entertainment", e.TECH = "tech", e.EDUCATION = "education", e.HUBS = "hubs", e
   }({}),
-  m = function(e) {
+  h = function(e) {
     return e.UNKNOWN = "unknown", e.GUILDS_BAR = "guilds_bar", e.RTC_PANEL = "rtc_panel", e.PROFILE = "profile", e.GAME_LINK = "game_link", e.EMBED = "embed", e
   }({});
-let h = new Set(["hubs"]),
+let m = new Set(["hubs"]),
   g = [],
   E = "q",
   b = "c",

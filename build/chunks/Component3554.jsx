@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -74,30 +74,30 @@ function g(e) {
   var t, n, {
       onChange: d,
       options: p,
-      selectedValues: h,
+      selectedValues: m,
       disabled: g = false
     } = e,
-    E = m(e, ["onChange", "options", "selectedValues", "disabled"]);
+    E = h(e, ["onChange", "options", "selectedValues", "disabled"]);
   let b = i.useContext(c.KJ),
     y = null == b || null == (n = b.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs"),
     O = e => {
       null == d || d(e)
     },
     v = (e, t) => {
-      let n = t ? [...h, e] : h.filter(t => t !== e);
+      let n = t ? [...m, e] : m.filter(t => t !== e);
       null == d || d(n)
     };
   return (0, r.jsx)(l.g, _(f({}, E), {
     role: "group",
     children: y ? (0, r.jsx)(a.cO, {
       className: u.group,
-      value: h.map(String),
+      value: m.map(String),
       onChange: O,
       "data-mana-component": "checkbox-group",
       isDisabled: g,
       children: p.map(e => (0, r.jsx)(o.C, {
         disabled: g || e.disabled,
-        checked: h.includes(e.value),
+        checked: m.includes(e.value),
         label: e.label,
         value: e.value,
         description: e.description,
@@ -109,7 +109,7 @@ function g(e) {
         className: u.backwardsCompatibleCheckbox,
         children: (0, r.jsx)(s.h, {
           disabled: g || e.disabled,
-          checked: h.includes(e.value),
+          checked: m.includes(e.value),
           label: e.label,
           description: e.description,
           leadingIcon: e.leadingIcon,

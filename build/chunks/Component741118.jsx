@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -80,7 +80,7 @@ function b(e) {
       onStepChange: y,
       onComplete: O
     } = e,
-    v = h(e, ["steps", "currentStepKey", "numberedSteps", "onStepChange", "onComplete"]);
+    v = m(e, ["steps", "currentStepKey", "numberedSteps", "onStepChange", "onComplete"]);
   let {
     i18n: S
   } = (0, o.ZF)(), I = v.onClose, T = _.find(e => e.stepKey === g);
@@ -89,25 +89,25 @@ function b(e) {
     A = C === _.length - 1,
     N = 0 === C,
     P = null == (f = T.nextEnabled) || f,
-    R = i.useCallback(e => {
+    w = i.useCallback(e => {
       null == y || y(e, g)
     }, [y, g]),
-    w = i.useCallback(async () => {
+    R = i.useCallback(async () => {
       await (null == O ? true : O()), I()
     }, [O, I]),
     D = i.useCallback(async () => {
-      (null == T.onNext || await T.onNext()) && (A ? await w() : R(_[C + 1].stepKey))
-    }, [R, C, _, A, w, T]),
+      (null == T.onNext || await T.onNext()) && (A ? await R() : w(_[C + 1].stepKey))
+    }, [w, C, _, A, R, T]),
     x = i.useCallback(() => {
-      N || R(_[C - 1].stepKey)
-    }, [R, C, _, N]),
+      N || w(_[C - 1].stepKey)
+    }, [w, C, _, N]),
     L = i.useMemo(() => ({
       currentStepKey: g,
-      goToStep: R,
+      goToStep: w,
       goToNextStep: D,
       goToPreviousStep: x,
-      complete: w
-    }), [g, R, D, x, w]),
+      complete: R
+    }), [g, w, D, x, R]),
     j = {
       variant: "secondary",
       text: S.BACK
@@ -125,14 +125,14 @@ function b(e) {
       variant: "secondary",
       onClick: I
     },
-    U = T.hideBackButton || N ? true : (0, r.jsx)(a.A, m(p({}, j, T.backButtonProps), {
+    U = T.hideBackButton || N ? true : (0, r.jsx)(a.A, h(p({}, j, T.backButtonProps), {
       onClick: x
     })),
     G = T.modalProps,
     Z = "graphic" in G ? G : null;
   return (0, r.jsx)(E.Provider, {
     value: L,
-    children: (0, r.jsxs)(s.I, m(p({}, v), {
+    children: (0, r.jsxs)(s.I, h(p({}, v), {
       paddingSize: null != Z ? "lg" : "sm",
       children: [null != Z ? (0, r.jsx)(u.iM, p({}, Z)) : (0, r.jsx)(u.xB, {
         title: G.title,

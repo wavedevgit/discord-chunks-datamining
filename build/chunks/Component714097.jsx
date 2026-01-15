@@ -2,7 +2,7 @@
 /** chunk id: 714097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => m
+  o: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,20 +18,20 @@ var Chunk657707 = require("./657707.js"),
   Chunk346722 = require("./346722.js");
 let _ = (e, t) => e === t ? p.themePillItemSelected : true;
 
-function m() {
+function h() {
   let e = (0, a.e7)([s.Z], () => s.Z.theme),
     t = (0, o.wjy)(e) ? u.BR.DARK : u.BR.LIGHT,
     n = [{
       name: "",
       value: u.BR.DARK,
-      icon: i.Z6G,
+      icon: i.ThemeDarkIcon,
       className: _(t, u.BR.DARK),
       tooltip: f.intl.string(d.default["Dk+OWY"]),
       tooltipAriaLabel: f.intl.string(d.default["Dk+OWY"])
     }, {
       name: "",
       value: u.BR.LIGHT,
-      icon: i.chG,
+      icon: i.ThemeLightIcon,
       className: _(t, u.BR.LIGHT),
       tooltip: f.intl.string(d.default["5vlJkY"]),
       tooltipAriaLabel: f.intl.string(d.default["5vlJkY"])

@@ -76,8 +76,8 @@ function C() {
       description: y.intl.string(y.t.Afc7l6),
       checked: e,
       onChange: t
-    }), !e && (0, r.jsx)(m.Z, {
-      look: m.z.WARNING,
+    }), !e && (0, r.jsx)(h.Z, {
+      look: h.z.WARNING,
       children: y.intl.string(y.t.j7S6IX)
     })]
   })
@@ -91,7 +91,7 @@ function A() {
       _.bm.updateSetting(!e)
     }, []),
     s = i.useCallback(e => {
-      e ? (0, l.h7j)(e => (0, r.jsx)(h.Z, v({}, e))) : c.mc()
+      e ? (0, l.h7j)(e => (0, r.jsx)(m.Z, v({}, e))) : c.mc()
     }, []);
   return (0, r.jsx)(g.Z, {
     title: y.intl.string(y.t["8/udY0"]),

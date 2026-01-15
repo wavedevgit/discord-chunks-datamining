@@ -30,34 +30,34 @@ let o = 60,
       r = i()().diff(i()(e), "s"),
       f = null != t ? t() : true,
       _ = d(),
-      m = (e, t) => {
+      h = (e, t) => {
         let r = p(e, f, n ? _ : true);
         return null == r ? null : "string" == typeof r ? r : a.intl.formatToPlainString(r, {
           count: t
         })
       };
     if (r < o) {
-      let e = (null == f ? true : f.seconds) != null ? m("seconds", r) : m("minutes", 1);
+      let e = (null == f ? true : f.seconds) != null ? h("seconds", r) : h("minutes", 1);
       if (null != e) return e
     }
     if (r < s) {
-      let e = m("minutes", Math.floor(r / o));
+      let e = h("minutes", Math.floor(r / o));
       if (null != e) return e
     }
     if (r < l) {
-      let e = m("hours", Math.floor(r / s));
+      let e = h("hours", Math.floor(r / s));
       if (null != e) return e
     }
     if (r < c) {
-      let e = m("days", Math.floor(r / l));
+      let e = h("days", Math.floor(r / l));
       if (null != e) return e
     }
     if (r < u) {
-      let e = m("months", Math.floor(r / c));
+      let e = h("months", Math.floor(r / c));
       if (null != e) return e
     }
     if (r >= u && (null == f ? true : f.years) != null) {
-      let e = m("years", Math.floor(r / u));
+      let e = h("years", Math.floor(r / u));
       if (null != e) return e
     }
     return i()(e).format("LL")

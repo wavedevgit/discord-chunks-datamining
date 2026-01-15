@@ -20,7 +20,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk678916 = require("./678916.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function m(e) {
   return new Promise((t, n) => {
     let r = new Image;
     r.crossOrigin = "anonymous", r.onload = () => {
@@ -78,7 +78,7 @@ async function b(e, t, n) {
     })
   }
   if (null != r) try {
-    let n = i ? true : await h(r),
+    let n = i ? true : await m(r),
       o = i ? await g(r) : true;
     E(e, t, a.zZ.BACKGROUND_REPLACEMENT, n, o)
   } catch (e) {
@@ -111,5 +111,5 @@ function v() {
   let t = (0, l.P)(e);
   (0, p.Z)() && !u.Z.hasBeenApplied && null != t && y(t, {
     track: false
-  }).catch(m.dG4)
+  }).catch(h.dG4)
 }

@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   $d: () => D,
-  BQ: () => w,
+  BQ: () => R,
   Cb: () => B,
   Hu: () => V,
   L1: () => z,
   Ow: () => K,
   PZ: () => q,
   WA: () => k,
-  Wx: () => R,
+  Wx: () => w,
   XZ: () => Y,
   Y$: () => Z,
   Yn: () => H,
@@ -101,35 +101,35 @@ function P(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = {
+let w = {
   id: Chunk689079.bi.BUILT_IN
 };
 
-function w(e) {
+function R(e) {
   return e.id !== O.bi.BUILT_IN
 }
 
 function D(e) {
-  return w(e) ? e.name : S.intl.string(S.t.UB2gG2)
+  return R(e) ? e.name : S.intl.string(S.t.UB2gG2)
 }
 
 function x(e) {
-  return w(e) ? e.description : S.intl.string(S.t.X9fusn)
+  return R(e) ? e.description : S.intl.string(S.t.X9fusn)
 }
 
 function L(e) {
   var t;
-  return w(e) && (0, i.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
+  return R(e) && (0, i.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
 }
 
 function j(e) {
   var t;
-  return w(e) && (0, i.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
+  return R(e) && (0, i.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
 }
 
 function M(e) {
   var t;
-  return w(e) && (0, i.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
+  return R(e) && (0, i.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
 }
 
 function k(e) {
@@ -155,7 +155,7 @@ function U(e) {
 }
 
 function G(e) {
-  return w(e) && L(e) ? e instanceof m.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
+  return R(e) && L(e) ? e instanceof h.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
 function Z(e) {
@@ -206,8 +206,8 @@ function F(e) {
       fakeAppIconURL: n
     } = t,
     r = N(t, ["fakeAppIconURL"]);
-  return w(e) ? {
-    iconURL: h.ZP.getApplicationIconURL(A(T({}, r), {
+  return R(e) ? {
+    iconURL: m.ZP.getApplicationIconURL(A(T({}, r), {
       id: e.id,
       icon: e.icon
     })),
@@ -221,7 +221,7 @@ function F(e) {
 }
 
 function B(e) {
-  return !!w(e) && (e instanceof m.ZP ? e.isMonetized : e.is_monetized)
+  return !!R(e) && (e instanceof h.ZP ? e.isMonetized : e.is_monetized)
 }
 
 function V(e) {
@@ -258,7 +258,7 @@ function K(e) {
 }
 
 function z(e) {
-  return e instanceof m.ZP ? {
+  return e instanceof h.ZP ? {
     applicationId: e.id,
     customInstallUrl: e.customInstallUrl,
     installParams: e.installParams,

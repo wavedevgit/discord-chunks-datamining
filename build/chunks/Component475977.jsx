@@ -2,7 +2,7 @@
 /** chunk id: 475977, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,12 +17,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk200471 = require("./200471.js");
-let h = () => {
+let m = () => {
   var e;
   let {
     analyticsLocations: t
   } = (0, s.ZP)(o.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = i.useRef(null), {
-    asset: h,
+    asset: m,
     popoutAsset: g,
     title: E,
     body: b,
@@ -44,25 +44,25 @@ let h = () => {
   };
   return (0, r.jsxs)("div", {
     ref: n,
-    className: m.container,
+    className: h.container,
     style: {
-      backgroundImage: "url(".concat(h, ")")
+      backgroundImage: "url(".concat(m, ")")
     },
     children: [(0, r.jsx)("div", {
-      className: m.artContainer,
+      className: h.artContainer,
       "aria-hidden": true,
       role: "presentation",
       children: (0, r.jsx)("img", {
         src: g,
-        className: m.art,
+        className: h.art,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.mainColumn,
+      className: h.mainColumn,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/extrabold",
         color: O ? "text-overlay-dark" : "currentColor",
-        className: m.title,
+        className: h.title,
         children: E
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",

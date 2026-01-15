@@ -2,7 +2,7 @@
 /** chunk id: 393416, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => h,
+  U: () => m,
   Z: () => g
 });
 var Chunk54381 = require("./54381.js");
@@ -27,7 +27,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   }
   return e
 }
-let h = {
+let m = {
     width: 2180,
     height: 1536
   },
@@ -49,7 +49,7 @@ let h = {
       roomParticipants: n,
       participants: i,
       channel: _,
-      idle: h,
+      idle: m,
       showAmbientEffects: g = true,
       enableAnimations: E = true,
       skipNewUserEducation: b = false,
@@ -89,7 +89,7 @@ let h = {
         draggable: false
       }), s.Is.map(e => {
         var n;
-        return (0, r.jsx)(d.Z, m({
+        return (0, r.jsx)(d.Z, h({
           occupant: null == (n = t[e.id - 1]) ? true : n.claimedBy,
           onClick: y,
           skipNewUserEducation: b
@@ -99,7 +99,7 @@ let h = {
         participant: e,
         participants: i,
         channel: _,
-        idle: h,
+        idle: m,
         enableAnimations: E
       }, e.userId)), g && (0, r.jsxs)("div", {
         className: a()(p.environment, p.noInteract),

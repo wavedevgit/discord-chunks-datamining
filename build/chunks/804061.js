@@ -14,7 +14,7 @@ var Chunk98405 = require("./98405.js"),
   Chunk814559 = require("./814559.js"),
   Chunk751736 = require("./751736.js"),
   Chunk511696 = require("./511696.js"),
-  h = Chunk751736("replace"),
+  m = Chunk751736("replace"),
   g = TypeError,
   E = Chunk46015("".indexOf),
   b = Chunk46015("".replace),
@@ -30,8 +30,8 @@ Chunk98405({
       P = "";
     if (!l(e)) {
       if ((n = c(e)) && !~E(u(o(f(e))), "g")) throw new g("`.replaceAll` does not allow non-global regexes");
-      if (r = d(e, h)) return i(r, e, A, t);
-      if (m && n) return b(u(A), e, t)
+      if (r = d(e, m)) return i(r, e, A, t);
+      if (h && n) return b(u(A), e, t)
     }
     for (a = u(A), _ = u(e), (v = s(t)) || (t = u(t)), I = O(1, S = _.length), T = E(a, _); false !== T;) C = v ? u(t(_, T, a)) : p(_, a, T, [], true, t), P += y(a, N, T) + C, N = T + S, T = T + I > a.length ? false : E(a, _, T + I);
     return N < a.length && (P += y(a, N)), P

@@ -26,24 +26,24 @@ let d = new Map,
   f = [],
   p = [],
   _ = "NOT_FETCHED",
-  m = new Map;
+  h = new Map;
 
-function h() {
-  _ = "FETCHING", m.clear()
+function m() {
+  _ = "FETCHING", h.clear()
 }
 
 function g(e) {
-  m.set(e.applicationId, "FETCHING")
+  h.set(e.applicationId, "FETCHING")
 }
 
 function E(e) {
-  m.set(e.applicationId, "FETCHED"), e.tokens.forEach(e => {
+  h.set(e.applicationId, "FETCHED"), e.tokens.forEach(e => {
     f = f.filter(t => t.id !== e.id), d.set(e.application.id, e), f.push(e), null == e.application.parent_id && p.push(e)
   })
 }
 
 function b(e) {
-  _ = "FETCHED", m.clear(), d = new Map(e.tokens.map(e => [e.application.id, e])), p = (f = e.tokens).filter(e => {
+  _ = "FETCHED", h.clear(), d = new Map(e.tokens.map(e => [e.application.id, e])), p = (f = e.tokens).filter(e => {
     let {
       application: t
     } = e;
@@ -113,12 +113,12 @@ class v extends(r = Chunk442837.ZP.Store) {
   }
   getFetchStateForApplication(e) {
     var t;
-    return "FETCHED" === _ ? _ : null != (t = m.get(e)) ? t : _
+    return "FETCHED" === _ ? _ : null != (t = h.get(e)) ? t : _
   }
 }
 c(v, "displayName", "AuthorizedAppsStore");
 let S = new v(Chunk570140.Z, {
-  USER_AUTHORIZED_APPS_REQUEST: h,
+  USER_AUTHORIZED_APPS_REQUEST: m,
   USER_AUTHORIZED_APPS_REQUEST_BY_ID: g,
   USER_AUTHORIZED_APPS_UPDATE: b,
   USER_AUTHORIZED_APPS_UPDATE_BY_ID: E,

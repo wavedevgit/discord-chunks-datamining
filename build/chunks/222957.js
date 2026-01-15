@@ -57,7 +57,7 @@ var Chunk473749 = require("./473749.js"),
           requires: ["computeStyles"]
         }
       }, []),
-      m = r.useMemo(function() {
+      h = r.useMemo(function() {
         var e = {
           onFirstUpdate: u.onFirstUpdate,
           placement: u.placement,
@@ -69,23 +69,23 @@ var Chunk473749 = require("./473749.js"),
         };
         return s()(o.current, e) ? o.current || e : (o.current = e, e)
       }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, _]),
-      h = r.useRef();
+      m = r.useRef();
     return (0, l.LI)(function() {
-      h.current && h.current.setOptions(m)
-    }, [m]), (0, l.LI)(function() {
+      m.current && m.current.setOptions(h)
+    }, [h]), (0, l.LI)(function() {
       if (null != e && null != t) {
         var r = n.createPopper || a.fi,
-          i = r(e, t, m);
-        return h.current = i,
+          i = r(e, t, h);
+        return m.current = i,
           function() {
-            i.destroy(), h.current = null
+            i.destroy(), m.current = null
           }
       }
     }, [e, t, n.createPopper]), {
-      state: h.current ? h.current.state : null,
+      state: m.current ? m.current.state : null,
       styles: f.styles,
       attributes: f.attributes,
-      update: h.current ? h.current.update : null,
-      forceUpdate: h.current ? h.current.forceUpdate : null
+      update: m.current ? m.current.update : null,
+      forceUpdate: m.current ? m.current.forceUpdate : null
     }
   }

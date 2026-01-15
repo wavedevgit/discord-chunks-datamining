@@ -146,7 +146,7 @@ class A extends Chunk147913.Z {
       _worker: n
     } = this;
     if (null != n) {
-      for (let n of e = e.filter(_.lm))(null == n ? true : n.id) == null && m.Z.addBreadcrumb({
+      for (let n of e = e.filter(_.lm))(null == n ? true : n.id) == null && h.Z.addBreadcrumb({
         category: "debug",
         message: "User missing id",
         data: {
@@ -277,10 +277,10 @@ class A extends Chunk147913.Z {
         guildMembers: n
       } = e, r = new Map;
       for (let e of t) r.set(e.id, O(e));
-      for (let e of h.default.keys(n)) {
+      for (let e of m.default.keys(n)) {
         let t = n[e];
         if (null != t)
-          for (let n of h.default.keys(t)) {
+          for (let n of m.default.keys(t)) {
             let i = r.get(n),
               a = t[n];
             null != i && null != a && null != a.nick && (v(i, e, a.nick), r.set(n, i))

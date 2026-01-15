@@ -57,14 +57,14 @@ module.exports = function(e, t) {
   }
   var p = t.getAnchorOffset(),
     _ = l.getCharacterList(),
-    m = i(),
-    h = l instanceof r,
+    h = i(),
+    m = l instanceof r,
     g = l.merge({
       text: u.slice(0, p),
       characterList: _.slice(0, p)
     }),
     E = g.merge({
-      key: m,
+      key: h,
       text: u.slice(p),
       characterList: _.slice(p),
       data: c()
@@ -77,15 +77,15 @@ module.exports = function(e, t) {
     }).rest(),
     O = b.concat([
       [n, g],
-      [m, E]
+      [h, E]
     ], y).toOrderedMap();
-  return h && (l.getChildKeys().isEmpty() || o(false), O = d(O, g, E)), e.merge({
+  return m && (l.getChildKeys().isEmpty() || o(false), O = d(O, g, E)), e.merge({
     blockMap: O,
     selectionBefore: t,
     selectionAfter: t.merge({
-      anchorKey: m,
+      anchorKey: h,
       anchorOffset: 0,
-      focusKey: m,
+      focusKey: h,
       focusOffset: 0,
       isBackward: false
     })

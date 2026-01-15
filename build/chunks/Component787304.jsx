@@ -22,8 +22,8 @@ function _(e) {
     onChange: n,
     minValue: a,
     maxValue: _,
-    disabled: m = false,
-    readOnly: h = false,
+    disabled: h = false,
+    readOnly: m = false,
     className: g,
     "aria-label": E
   } = e, {
@@ -38,8 +38,8 @@ function _(e) {
     onChange: n,
     minValue: a,
     maxValue: _,
-    isDisabled: m,
-    isReadOnly: h,
+    isDisabled: h,
+    isReadOnly: m,
     "aria-label": E,
     "data-mana-component": "calendar",
     className: o()(p.calendar, g),
@@ -49,7 +49,7 @@ function _(e) {
         children: [(0, r.jsx)(c.h, {
           variant: "icon-only",
           size: "sm",
-          icon: u.V7D,
+          icon: u.ChevronSmallLeftIcon,
           "aria-label": b.CALENDAR_PREVIOUS_MONTH_LABEL,
           onClick: () => e.state.focusPreviousPage(),
           slot: "previous"
@@ -60,7 +60,7 @@ function _(e) {
         }), (0, r.jsx)(c.h, {
           variant: "icon-only",
           size: "sm",
-          icon: u.Fbu,
+          icon: u.ChevronSmallRightIcon,
           onClick: () => e.state.focusNextPage(),
           "aria-label": b.CALENDAR_NEXT_MONTH_LABEL,
           slot: "next"

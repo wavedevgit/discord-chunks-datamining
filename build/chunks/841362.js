@@ -55,11 +55,11 @@ let O = (0, Chunk473749.createContext)(null),
         state: p
       },
       defaultClassName: "react-aria-RadioGroup"
-    }), N = (0, m.z)(e, {
+    }), N = (0, h.z)(e, {
       global: true
     });
     return y.createElement("div", {
-      ...(0, h.d)(N, A, E),
+      ...(0, m.d)(N, A, E),
       ref: t,
       slot: e.slot || true,
       "data-orientation": e.orientation || "vertical",
@@ -116,7 +116,7 @@ let O = (0, Chunk473749.createContext)(null),
         ...e,
         isDisabled: A
       }),
-      R = (0, r.aX)({
+      w = (0, r.aX)({
         ...e,
         defaultClassName: "react-aria-Radio",
         values: {
@@ -131,11 +131,11 @@ let O = (0, Chunk473749.createContext)(null),
           isRequired: a.isRequired
         }
       }),
-      w = (0, m.z)(e, {
+      R = (0, h.z)(e, {
         global: true
       });
-    return delete w.id, delete w.onClick, y.createElement("label", {
-      ...(0, h.d)(w, l, N, R),
+    return delete R.id, delete R.onClick, y.createElement("label", {
+      ...(0, m.d)(R, l, N, w),
       ref: t,
       "data-selected": u || true,
       "data-pressed": O || true,
@@ -149,11 +149,11 @@ let O = (0, Chunk473749.createContext)(null),
     }, y.createElement(_.T, {
       elementType: "span"
     }, y.createElement("input", {
-      ...(0, h.d)(c, C),
+      ...(0, m.d)(c, C),
       ref: o
     })), y.createElement(s.p.Provider, {
       value: {
         isSelected: u
       }
-    }, R.children))
+    }, w.children))
   })

@@ -52,12 +52,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = new(require("./499303.js")).I,
+let m = new(require("./499303.js")).I,
   g = 3e5,
   E = 36e5,
   b = () => ({
@@ -72,7 +72,7 @@ let h = new(require("./499303.js")).I,
   }),
   y = (0, Chunk748521.F)(b),
   O = false,
-  v = e => m(p({}, e), {
+  v = e => h(p({}, e), {
     candidates: new Map(e.candidates),
     currentlyShown: new Set(e.currentlyShown),
     currentlyShownGroup: new Set(e.currentlyShownGroup)
@@ -99,11 +99,11 @@ let h = new(require("./499303.js")).I,
       return t !== (null == (n = e.prevFatigableCandidate) ? true : n.content)
     })), e.candidates.get(t[Math.floor(Math.random() * t.length)])
   },
-  R = e => null != e.prevFatigableCandidate && e.candidates.has(e.prevFatigableCandidate.content) && null == e.shownFatigableCandidate,
-  w = e => {
+  w = e => null != e.prevFatigableCandidate && e.candidates.has(e.prevFatigableCandidate.content) && null == e.shownFatigableCandidate,
+  R = e => {
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > g;
-    return R(e) && !t ? (h.unschedule(), A(e, N(e))) : (null != e.shownFatigableCandidate && !t || h.scheduled() || D(e) || h.schedule(() => {
+    return w(e) && !t ? (m.unschedule(), A(e, N(e))) : (null != e.shownFatigableCandidate && !t || m.scheduled() || D(e) || m.schedule(() => {
       (0, a.j)(() => {
         y.setState(e => {
           let t = v(e);
@@ -121,7 +121,7 @@ let h = new(require("./499303.js")).I,
     (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
-        return O ? r : t ? I(r, e) : w(T(r, e))
+        return O ? r : t ? I(r, e) : R(T(r, e))
       })
     })
   },
@@ -129,7 +129,7 @@ let h = new(require("./499303.js")).I,
     (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
-        return t ? w(S(C(r, e), e)) : S(C(r, e), e)
+        return t ? R(S(C(r, e), e)) : S(C(r, e), e)
       })
     })
   },
@@ -145,7 +145,7 @@ let h = new(require("./499303.js")).I,
         let e = b();
         return e.postConnectionOpen = true, e
       })
-    }), h.unschedule()
+    }), m.unschedule()
   },
   G = () => y.getState().postConnectionOpen;
 class Z extends(r = Chunk442837.ZP.Store) {

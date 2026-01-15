@@ -22,8 +22,8 @@ var Chunk473749 = require("./473749.js"),
 
 function h(e, t) {
   var n, h, j, Z;
-  let _ = (0, o.e7)([l.Z], () => l.Z.getGuild(e)),
-    C = (0, o.e7)([a.Z], () => a.Z.hasLayers()),
+  let C = (0, o.e7)([l.Z], () => l.Z.getGuild(e)),
+    _ = (0, o.e7)([a.Z], () => a.Z.hasLayers()),
     w = null != (j = (0, c.Z)(e)) && j,
     I = (0, u.q8)(e, t),
     E = (0, o.e7)([s.Z], () => s.Z.getStateForGuild(e)),
@@ -41,21 +41,21 @@ function h(e, t) {
       error: R
     } = (0, p.Z)(e, N);
   (0, m.Z)(R);
-  let L = !C && w && I && null != P && !O && T.type === v.A3.POWERUP_ACTIVATED && null != S && null != N && null != _,
+  let L = !_ && w && I && null != P && !O && T.type === v.A3.POWERUP_ACTIVATED && null != S && null != N && null != C,
     k = r.useCallback(e => {
       e.stopPropagation(), A()
     }, [A]),
     U = r.useMemo(() => {
       if (!L) return null;
       let e = (0, f.Z)(S),
-        t = _.premiumTier === g.Eu4.TIER_2 ? b.intl.string(x.default["0uo/LD"]) : true;
+        t = C.premiumTier === g.Eu4.TIER_2 ? b.intl.string(x.default["0uo/LD"]) : true;
       return {
         firstHeader: P.title,
         secondHeader: b.intl.formatToPlainString(x.default["8imxAq"], {
           dateString: e
         }),
         firstBody: b.intl.formatToPlainString(x.default["/bW9tW"], {
-          serverName: _.name
+          serverName: C.name
         }),
         secondBody: b.intl.formatToPlainString(x.default.D09fdi, {
           dateString: e,
@@ -65,7 +65,7 @@ function h(e, t) {
         primaryButtonText: t,
         onPrimaryClick: null != t ? k : true
       }
-    }, [L, P, S, _, k]);
+    }, [L, P, S, C, k]);
   return {
     shouldShow: L,
     modalConfig: U

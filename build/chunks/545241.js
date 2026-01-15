@@ -48,15 +48,15 @@ module.exports = function(e) {
       endsWithParent: true,
       relevance: 0
     },
-    m = {
+    h = {
       className: "name",
       relevance: 0,
       keywords: r,
       begin: n,
       starts: _
     },
-    h = [p, o, u, d, s, f, c, a, l, i];
-  return p.contains = [e.COMMENT("comment", ""), m, _], _.contains = h, c.contains = h, {
+    m = [p, o, u, d, s, f, c, a, l, i];
+  return p.contains = [e.COMMENT("comment", ""), h, _], _.contains = m, c.contains = m, {
     name: "Hy",
     aliases: ["hylang"],
     illegal: /\S/,

@@ -37,11 +37,11 @@ var d = function(e, t) {
   },
   _ = Chunk473749.forwardRef;
 
-function m(e) {
+function h(e) {
   return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
 }
 true === _ && (_ = p);
-var h = _(function(e, t) {
+var m = _(function(e, t) {
     var n = e.innerRef,
       r = e.navigate,
       i = e.onClick,
@@ -54,31 +54,31 @@ var h = _(function(e, t) {
           } catch (t) {
             throw e.preventDefault(), t
           }
-          e.defaultPrevented || 0 !== e.button || c && "_self" !== c || m(e) || (e.preventDefault(), r())
+          e.defaultPrevented || 0 !== e.button || c && "_self" !== c || h(e) || (e.preventDefault(), r())
         }
       });
     return p !== _ ? u.ref = t || n : u.ref = n, a.createElement("a", u)
   }),
   g = _(function(e, t) {
     var n = e.component,
-      i = true === n ? h : n,
+      i = true === n ? m : n,
       o = e.replace,
       u = e.to,
-      m = e.innerRef,
+      h = e.innerRef,
       g = (0, l.Z)(e, ["component", "replace", "to", "innerRef"]);
     return a.createElement(r.s6.Consumer, null, function(e) {
       e || (0, c.Z)(false);
       var n = e.history,
         r = f(d(u, e.location), e.location),
         l = r ? n.createHref(r) : "",
-        h = (0, s.Z)({}, g, {
+        m = (0, s.Z)({}, g, {
           href: l,
           navigate: function() {
             var t = d(u, e.location);
             (o ? n.replace : n.push)(t)
           }
         });
-      return p !== _ ? h.ref = t || m : h.innerRef = m, a.createElement(i, h)
+      return p !== _ ? m.ref = t || h : m.innerRef = h, a.createElement(i, m)
     })
   }),
   E = function(e) {
@@ -99,8 +99,8 @@ true === b && (b = E), b(function(e, t) {
     u = true === o ? "active" : o,
     p = e.activeStyle,
     _ = e.className,
-    m = e.exact,
-    h = e.isActive,
+    h = e.exact,
+    m = e.isActive,
     O = e.location,
     v = e.sensitive,
     S = e.strict,
@@ -116,16 +116,16 @@ true === b && (b = E), b(function(e, t) {
       N = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
       P = N ? (0, r.LX)(n.pathname, {
         path: N,
-        exact: m,
+        exact: h,
         sensitive: v,
         strict: S
       }) : null,
-      R = !!(h ? h(P, n) : P),
-      w = R ? y(_, u) : _,
-      D = R ? (0, s.Z)({}, I, {}, p) : I,
+      w = !!(m ? m(P, n) : P),
+      R = w ? y(_, u) : _,
+      D = w ? (0, s.Z)({}, I, {}, p) : I,
       x = (0, s.Z)({
-        "aria-current": R && i || null,
-        className: w,
+        "aria-current": w && i || null,
+        className: R,
         style: D,
         to: o
       }, A);

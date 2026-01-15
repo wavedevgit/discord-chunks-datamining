@@ -2,7 +2,7 @@
 /** chunk id: 398327, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -41,7 +41,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
   }
 }
 c(_, "displayName", "SpellcheckStore");
-let m = new _(Chunk570140.Z, {
+let h = new _(Chunk570140.Z, {
   SPELLCHECK_TOGGLE() {
     d = !d, (0, l.gL)(d), p()
   },

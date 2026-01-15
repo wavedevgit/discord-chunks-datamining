@@ -5,12 +5,12 @@ require.d(exports, {
   FB: () => b,
   GE: () => v,
   Pu: () => O,
-  Vt: () => h,
+  Vt: () => m,
   XX: () => p,
   Zs: () => y,
   c7: () => E,
   eS: () => _,
-  fr: () => m,
+  fr: () => h,
   ox: () => g,
   yF: () => S
 }), require("./35282.js");
@@ -34,7 +34,7 @@ function _(e) {
   return (0, o.CO)(e.filename) || (0, o.NU)(e.filename) ? "".concat(d._j).concat(null != (t = e.filename) ? t : ".png") : null != (n = e.filename) ? n : ""
 }
 
-function m(e) {
+function h(e) {
   var t, n, r, i;
   if (null == e.fields) return;
   let a = e.fields.reduce((e, t) => (e[t.rawName] = t.rawValue, e), {});
@@ -50,7 +50,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return e.type !== l.lK.MESSAGE || "" === e.content && 0 === e.attachments.length
 }
 let g = e => ({

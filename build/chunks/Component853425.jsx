@@ -28,20 +28,20 @@ let _ = Chunk473749.memo(function(e) {
     url: t
   } = e, n = (0, a.cj)([s.C], () => s.C.getCurrentBuildOverride()), o = (0, a.e7)([s.C], () => s.C.getBuildOverride(t)), {
     payload: _,
-    validatedURL: m
-  } = o, h = n.state === s.Z.Resolving || o.state === s.Z.Resolving, g = i.useCallback(() => {
+    validatedURL: h
+  } = o, m = n.state === s.Z.Resolving || o.state === s.Z.Resolving, g = i.useCallback(() => {
     if ((0, l.mG)(o.url) && null != o.override) {
       var e;
       return f(null == (e = o.override) ? true : e.targetBuildOverride)
     }
     return null == _ ? Promise.reject(Error("Invalid override payload")) : ((0, u.Z)(o.override, _), d(_))
   }, [_, o]);
-  return null != m ? (0, r.jsx)(c.Z, {
-    loading: h,
+  return null != h ? (0, r.jsx)(c.Z, {
+    loading: m,
     linkMeta: o.override,
     currentOverrides: n.overrides,
     applyBuildOverride: g,
     clearBuildOverride: p,
-    url: m
+    url: h
   }) : null
 })

@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk131333 = require("./131333.jsx"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function m(e) {
   if (null == e || null == u.Z.emojiAnimationTriggers) returnfalse;
   for (let t of u.Z.emojiAnimationTriggers) {
     let n = s.ZP.getByName(t);
@@ -47,10 +47,10 @@ function E(e) {
     untriggerAnimation: a
   } = i.useContext(g), o = (0, l.bp)(), s = i.useMemo(() => ({
     triggerAnimation: e => {
-      o !== m.IlC.OVERLAY && h(e) && n(e)
+      o !== h.IlC.OVERLAY && m(e) && n(e)
     },
     untriggerAnimation: e => {
-      o !== m.IlC.OVERLAY && h(e) && a(e)
+      o !== h.IlC.OVERLAY && m(e) && a(e)
     }
   }), [o, n, a]);
   return (0, r.jsx)(g.Provider, {
@@ -89,7 +89,7 @@ function y(e) {
     triggerAnimation: l
   } = i.useContext(g);
   return i.useEffect(() => {
-    if (!u.Z.triggerEmojiAnimationFromSentMessage || (null == s ? true : s.state) !== m.yb.SENT || (0, f.JL)(r)) return;
+    if (!u.Z.triggerEmojiAnimationFromSentMessage || (null == s ? true : s.state) !== h.yb.SENT || (0, f.JL)(r)) return;
     let {
       top: e,
       bottom: n
@@ -106,7 +106,7 @@ function O(e) {
     disable: s,
     emojiRef: c
   } = e, u = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), f = d.Z.useIsEligible(), p = (0, l.bp)();
-  return s || p === m.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !h(i) ? null : (0, r.jsx)(y, {
+  return s || p === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(y, {
     emojiRef: c,
     channelId: t,
     messageId: n,

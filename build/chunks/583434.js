@@ -16,14 +16,14 @@ let u = 36e5;
 function d(e, t) {
   let n = (0, a.e7)([o.Z], () => null != e ? o.Z.get(e) : null),
     d = null != n && n.productLine !== c.POd.COLLECTIBLES,
-    [f, p, _, m] = (0, a.Wu)([l.Z], () => [l.Z.isFetchingProduct(e), l.Z.getProduct(e), l.Z.getProductFetchError(e), l.Z.getProductFetchErrorTimestamp(e)]),
-    h = null != _ && null != m && Date.now() - m < u,
+    [f, p, _, h] = (0, a.Wu)([l.Z], () => [l.Z.isFetchingProduct(e), l.Z.getProduct(e), l.Z.getProductFetchError(e), l.Z.getProductFetchErrorTimestamp(e)]),
+    m = null != _ && null != h && Date.now() - h < u,
     g = true === t && (null == p ? true : p.type) === i.Z.BUNDLE && 0 === p.items.length;
   return (0, r.useEffect)(() => {
-    null == e || null != p && !g || d || f || h || (0, s.jr)(e, {
+    null == e || null != p && !g || d || f || m || (0, s.jr)(e, {
       includeBundles: t
     })
-  }, [e, p, d, f, h, t, g]), {
+  }, [e, p, d, f, m, t, g]), {
     product: p,
     isFetching: f
   }

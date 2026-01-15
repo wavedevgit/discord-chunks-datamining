@@ -22,8 +22,8 @@ function _(e) {
     handleClose: n
   } = e, {
     blockedPayments: _,
-    hasFetchedSkus: m,
-    paymentSources: h,
+    hasFetchedSkus: h,
+    paymentSources: m,
     hasFetchedPaymentSources: g,
     application: E,
     skusById: b,
@@ -33,12 +33,12 @@ function _(e) {
   } = (0, l.wD)(), [v, S] = i.useState(true), [I, T] = (0, a.Wu)([s.Z], () => [s.Z.isFetchingCategories, s.Z.error]);
   return (i.useEffect(() => {
     let e = null != E;
-    m && g && e && S(I)
-  }, [m, g, E, I]), i.useEffect(() => {
+    h && g && e && S(I)
+  }, [h, g, E, I]), i.useEffect(() => {
     if (v || _ || null == y) return;
     let e = b[y];
-    return O && ((null == e ? true : e.productLine) === p.POd.COLLECTIBLES || (null == e ? true : e.productLine) === p.POd.APPLICATION || (null == e ? true : e.productLine) === p.POd.SOCIAL_LAYER_GAME_ITEM) ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(h).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
-  }, [v, _, t, h, O, b, y]), v) ? (0, r.jsx)(f.Z, {}) : _ ? (0, r.jsx)(o.Vq, {
+    return O && ((null == e ? true : e.productLine) === p.POd.COLLECTIBLES || (null == e ? true : e.productLine) === p.POd.APPLICATION || (null == e ? true : e.productLine) === p.POd.SOCIAL_LAYER_GAME_ITEM) ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(m).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
+  }, [v, _, t, m, O, b, y]), v) ? (0, r.jsx)(f.Z, {}) : _ ? (0, r.jsx)(o.Vq, {
     onClose: n
   }) : null != T ? (0, r.jsx)(d.Z, {
     onClose: n

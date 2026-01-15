@@ -27,7 +27,7 @@ let E = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
   _ = (0, Chunk509613.m7)(Chunk313789.n.REGISTERED_GAMES_SIDEBAR_ITEM, {
     useTitle: () => c.intl.string(c.t.AVDyEj),
     getLegacySearchKey: () => (0, u.Gl)("RegisteredGamesPanel") ? true : S.s6.REGISTERED_GAMES,
-    icon: Chunk657707.iWm,
+    icon: Chunk657707.GameControllerIcon,
     usePredicate: Chunk168308.Jw,
     buildLayout: () => (0, u.Gl)("RegisteredGamesPanel") ? [d] : [E]
   })

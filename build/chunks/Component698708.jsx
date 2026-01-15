@@ -22,12 +22,12 @@ function p(e) {
     className: p
   } = e, {
     currencies: _,
-    paymentError: m,
-    purchaseError: h,
+    paymentError: h,
+    purchaseError: m,
     purchasePreviewError: g,
     setSelectedPlanNotification: E
   } = (0, c.JL)(), b = null;
-  null != g ? b = g : null != m && null == (0, u.ly)(m) ? b = m : null != h ? b = h : null != t && (b = t);
+  null != g ? b = g : null != h && null == (0, u.ly)(h) ? b = h : null != m ? b = m : null != t && (b = t);
   let y = _.length > 1,
     O = null != b ? b.message : "";
   if (null != b && b instanceof o.HF && (b.code === s.SM.CARD_DECLINED && y && (O += " ".concat(f.intl.string(f.t.iWvwQS))), b.code === s.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (O = f.intl.string(f.t.ypuSd8)), b.code === d.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (O = f.intl.string(f.t.mXMmWE)), b.code === s.SM.INVALID_CURRENCY_FOR_PAYMENT_SOURCE && (O = f.intl.string(f.t.mC1Fjz)), b.code === s.SM.INVALID_BILLING_ADDRESS)) {

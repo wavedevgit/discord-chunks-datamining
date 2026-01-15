@@ -29,12 +29,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk583139 = require("./583139.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let N = () => (0, r.jsxs)(m.Z, {
+let N = () => (0, r.jsxs)(h.Z, {
     title: A.intl.string(A.t.xVRG4P),
     webSetting: I.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, r.jsx)(g.n, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(E.Z, {})]
   }),
-  P = () => (0, r.jsxs)(m.Z, {
+  P = () => (0, r.jsxs)(h.Z, {
     title: A.intl.string(A.t["y62Z/d"]),
     webSetting: I.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: [(0, r.jsx)(a.F, {
@@ -42,20 +42,20 @@ let N = () => (0, r.jsxs)(m.Z, {
       children: (0, r.jsx)(_.Z, {})
     }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(y.Z, {}), (0, r.jsx)(b.Z, {})]
   }),
-  R = () => (0, r.jsxs)(m.Z, {
+  w = () => (0, r.jsxs)(h.Z, {
     title: A.intl.string(A.t["1Qn8iV"]),
     webSetting: I.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-    children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)(h.ZP, {})]
+    children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)(m.ZP, {})]
   }),
-  w = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(N, {}), (0, r.jsx)(P, {}), (0, r.jsx)(R, {})]
+  R = () => (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(N, {}), (0, r.jsx)(P, {}), (0, r.jsx)(w, {})]
   });
 
 function D() {
   let e = (0, i.e7)([o.Z], () => o.Z.getSubsection()),
     t = [{
       title: A.intl.string(A.t["/7xJCF"]),
-      component: w,
+      component: R,
       setting: I.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
       title: A.intl.string(A.t.YpCiMt),

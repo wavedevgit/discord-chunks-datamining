@@ -2,7 +2,7 @@
 /** chunk id: 189156, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => h,
+  n: () => m,
   q: () => g
 });
 var Chunk54381 = require("./54381.js");
@@ -70,13 +70,13 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   return (0, r.jsx)(a.Z, {
     application: e
   }, e.id)
 }
 
-function h(e) {
+function m(e) {
   var {
     userId: t,
     variant: n = "text-xs/normal",
@@ -84,7 +84,7 @@ function h(e) {
   } = e, s = p(e, ["userId", "variant", "color"]);
   let l = (0, o.e)({
     userId: t,
-    renderApplicationName: m
+    renderApplicationName: h
   });
   return (0, r.jsx)(i.Text, f(u({
     variant: n,
@@ -110,7 +110,7 @@ function g(e) {
         size: "xs",
         className: l.icon
       })]
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(m, {
       userId: t,
       variant: "text-md/normal"
     })]

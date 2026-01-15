@@ -39,10 +39,10 @@ let d = 30,
     getActiveErrors: () => {
       var e, t, n, o, c, _;
       if ((null != (c = null == (e = a.Z.getRTCConnection()) ? true : e.getDurationSeconds()) ? c : 0) < d || performance.now() - i.Z.getLastAudioInputDeviceChangeTimestamp() < f) return;
-      let m = null != (_ = null == (n = r.Z.getConnectionStats(null == (o = a.Z.getRTCConnection()) ? true : o.getMediaEngineConnectionId())) || null == (t = n.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : t.sampleRateMismatchPercent) ? _ : 0;
-      if (Math.abs(m) > p) return [u({
+      let h = null != (_ = null == (n = r.Z.getConnectionStats(null == (o = a.Z.getRTCConnection()) ? true : o.getMediaEngineConnectionId())) || null == (t = n.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : t.sampleRateMismatchPercent) ? _ : 0;
+      if (Math.abs(h) > p) return [u({
         type: s.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
-        audioCaptureSampleRateMismatchPercent: m
+        audioCaptureSampleRateMismatchPercent: h
       }, (0, l.Y9)())]
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)

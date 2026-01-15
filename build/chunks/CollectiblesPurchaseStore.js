@@ -21,10 +21,10 @@ let d = new Map,
   f = d,
   p = false,
   _ = false,
-  m = e => {
+  h = e => {
     p = true, i = true
   },
-  h = e => {
+  m = e => {
     let {
       error: t
     } = e;
@@ -77,9 +77,9 @@ class v extends(o = Chunk442837.ZP.Store) {
 }
 u(v, "displayName", "CollectiblesPurchaseStore");
 let S = new v(Chunk570140.Z, {
-  COLLECTIBLES_PURCHASES_FETCH: m,
+  COLLECTIBLES_PURCHASES_FETCH: h,
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: g,
-  COLLECTIBLES_PURCHASES_FETCH_FAILURE: h,
+  COLLECTIBLES_PURCHASES_FETCH_FAILURE: m,
   COLLECTIBLES_CLAIM: E,
   COLLECTIBLES_CLAIM_SUCCESS: b,
   COLLECTIBLES_CLAIM_FAILURE: y,

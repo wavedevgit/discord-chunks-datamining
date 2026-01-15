@@ -19,8 +19,8 @@ function d(e, t, n) {
     children: f,
     "aria-label": p,
     "aria-labelledby": _,
-    onPressStart: m,
-    onPressEnd: h,
+    onPressStart: h,
+    onPressEnd: m,
     onPressChange: g,
     onPress: E,
     onPressUp: b,
@@ -31,8 +31,8 @@ function d(e, t, n) {
     pressProps: I,
     isPressed: T
   } = (0, l.r)({
-    onPressStart: m,
-    onPressEnd: h,
+    onPressStart: h,
+    onPressEnd: m,
     onPressChange: g,
     onPress: E,
     onPressUp: b,
@@ -42,8 +42,8 @@ function d(e, t, n) {
     pressProps: C,
     isPressed: A
   } = (0, l.r)({
-    onPressStart: m,
-    onPressEnd: h,
+    onPressStart: h,
+    onPressEnd: m,
     onPressChange: g,
     onPressUp: b,
     onClick: y,
@@ -56,10 +56,10 @@ function d(e, t, n) {
     focusableProps: N
   } = (0, c.kc)((0, i.d)(e, {
     onFocus: () => t.setLastFocusedValue(d)
-  }), n), P = (0, i.d)(I, N), R = (0, a.z)(e, {
+  }), n), P = (0, i.d)(I, N), w = (0, a.z)(e, {
     labelable: true
-  }), w = false;
-  null != t.selectedValue ? t.selectedValue === d && (w = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (w = 0), O && (w = true);
+  }), R = false;
+  null != t.selectedValue ? t.selectedValue === d && (R = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (R = 0), O && (R = true);
   let {
     name: D,
     form: x,
@@ -74,12 +74,12 @@ function d(e, t, n) {
       onClick: e => e.preventDefault(),
       onMouseDown: e => e.preventDefault()
     }), [])),
-    inputProps: (0, i.d)(R, {
+    inputProps: (0, i.d)(w, {
       ...P,
       type: "radio",
       name: D,
       form: x,
-      tabIndex: w,
+      tabIndex: R,
       disabled: O,
       required: t.isRequired && "native" === M,
       checked: v,

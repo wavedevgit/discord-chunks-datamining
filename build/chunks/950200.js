@@ -100,7 +100,7 @@ module.exports = function() {
       if (1 == n.count()) return [n.copy()];
       var l, c, u, d, f, p = 0,
         _ = [],
-        m = [];
+        h = [];
       if (s == r)
         for (l = n.r1; l <= n.r2; l++) {
           for (d = 0, c = n.g1; c <= n.g2; c++)
@@ -118,18 +118,18 @@ module.exports = function() {
               p += d, _[l] = p
             }
       return _.forEach(function(e, t) {
-        m[t] = p - e
-      }), h(s == r ? "r" : s == i ? "g" : "b")
+        h[t] = p - e
+      }), m(s == r ? "r" : s == i ? "g" : "b")
     }
 
-    function h(e) {
+    function m(e) {
       var t, r, i, a, o, s = e + "1",
         c = e + "2",
         u = 0;
       for (l = n[s]; l <= n[c]; l++)
         if (_[l] > p / 2) {
           for (i = n.copy(), a = n.copy(), o = (t = l - n[s]) <= (r = n[c] - l) ? Math.min(n[c] - 1, ~~(l + r / 2)) : Math.max(n[s], ~~(l - 1 - t / 2)); !_[o];) o++;
-          for (u = m[o]; !u && _[o - 1];) u = m[--o];
+          for (u = h[o]; !u && _[o - 1];) u = h[--o];
           return i[c] = o, a[s] = i[c] + 1, [i, a]
         }
     }
@@ -237,12 +237,12 @@ module.exports = function() {
         }
       }
       p.push(f), _(p, i * n);
-      for (var m = new o(function(e, n) {
+      for (var h = new o(function(e, n) {
           return t.naturalOrder(e.count() * e.volume(), n.count() * n.volume())
-        }); p.size();) m.push(p.pop());
-      _(m, n - m.size());
-      for (var h = new l; m.size();) h.push(m.pop());
-      return h
+        }); p.size();) h.push(p.pop());
+      _(h, n - h.size());
+      for (var m = new l; h.size();) m.push(h.pop());
+      return m
     }
   }
 }().quantize

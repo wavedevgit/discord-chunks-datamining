@@ -34,7 +34,7 @@ let _ = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
   }),
   I = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {
     useTitle: () => d.intl.string(d.t.z2jK6X),
-    icon: Chunk657707.AlX,
+    icon: Chunk657707.ClipsIcon,
     getLegacySearchKey: () => (0, T.Ml)("ClipsPanel") ? true : E.s6.CLIPS,
     buildLayout: () => (0, T.Ml)("ClipsPanel") ? [g] : [_]
   })

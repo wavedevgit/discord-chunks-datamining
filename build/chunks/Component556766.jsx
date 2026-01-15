@@ -74,15 +74,15 @@ function C() {
 }
 
 function A() {
-  let e = (0, l.Wu)([g.Z, m.Z, u.ZP], () => g.Z.getIncomingCalls().filter(e => {
+  let e = (0, l.Wu)([g.Z, h.Z, u.ZP], () => g.Z.getIncomingCalls().filter(e => {
       let {
         channel: t
-      } = e, n = m.Z.getChannelId() === t.id, r = null == t.guild_id && n, i = u.ZP.getConnectedActivityChannelId() === t.id && m.Z.getVoiceChannelId() !== t.id && u.ZP.getActivityPanelMode() === E.Ez.PANEL;
+      } = e, n = h.Z.getChannelId() === t.id, r = null == t.guild_id && n, i = u.ZP.getConnectedActivityChannelId() === t.id && h.Z.getVoiceChannelId() !== t.id && u.ZP.getActivityPanelMode() === E.Ez.PANEL;
       return !r || i
     })),
     t = (0, l.e7)([g.Z], () => g.Z.hasIncomingCalls()),
     n = (0, l.e7)([_.Z], () => _.Z.isSoundDisabled("call_ringing")),
-    a = (0, l.e7)([h.Z], () => h.Z.disableSounds),
+    a = (0, l.e7)([m.Z], () => m.Z.disableSounds),
     o = (0, l.e7)([p.Z], () => p.Z.getSoundpack()),
     y = i.useRef(false),
     v = (0, s.Z)(() => {

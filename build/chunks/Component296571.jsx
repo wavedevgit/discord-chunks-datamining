@@ -22,17 +22,17 @@ function d(e) {
     usernameHook: f,
     onClickThread: p,
     onClickViewThreads: _,
-    onContextMenuThread: m
-  } = e, h = (0, s.ZP)(n), g = f(h), E = (0, i.e7)([o.Z], () => {
+    onContextMenuThread: h
+  } = e, m = (0, s.ZP)(n), g = f(m), E = (0, i.e7)([o.Z], () => {
     var e;
     return o.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
   }), b = c.intl.format(c.t.cZ9Uf2, {
-    actorName: h.nick,
+    actorName: m.nick,
     actorHook: g,
     threadName: null != (t = null == E ? true : E.name) ? t : n.content,
     threadOnClick: {
       onClick: p,
-      onContextMenu: m
+      onContextMenu: h
     },
     viewThreadsOnClick: _
   });

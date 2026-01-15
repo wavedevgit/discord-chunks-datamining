@@ -6,7 +6,7 @@ require.d(exports, {
   UP: () => y,
   XE: () => E,
   YU: () => v,
-  Zx: () => h,
+  Zx: () => m,
   _s: () => g,
   tg: () => O
 }), require("./388685.js");
@@ -43,12 +43,12 @@ function _(e) {
   return e
 }
 
-function m() {
+function h() {
   var e;
   return (0, c.Z)(null != (e = o.Z.getVoiceChannelId()) ? e : true)
 }
 
-function h(e, t) {
+function m(e, t) {
   var n;
   let i = null == (n = a.Z.getChannel(o.Z.getVoiceChannelId())) ? true : n.guild_id;
   if (null == e || null == i) return void b(false, t);
@@ -60,7 +60,7 @@ function h(e, t) {
   }), s.default.track(f.rMx.SET_HANG_STATUS, _({
     status_type: e,
     manual_update: !!t
-  }, m()))
+  }, h()))
 }
 
 function g(e, t, n) {
@@ -76,7 +76,7 @@ function g(e, t, n) {
     custom_status_emoji_id: t.id,
     custom_status_emoji_name: t.name,
     manual_update: !!n
-  }, m()))
+  }, h()))
 }
 
 function E(e, t) {
@@ -88,7 +88,7 @@ function E(e, t) {
   }), s.default.track(f.rMx.SET_HANG_STATUS, _({
     status_type: "game_activity",
     manual_update: !!t
-  }, m()))
+  }, h()))
 }
 
 function b(e, t) {
@@ -97,7 +97,7 @@ function b(e, t) {
     saveAsDefault: t
   }), s.default.track(f.rMx.CLEAR_HANG_STATUS, _({
     manual_update: !!e
-  }, m()))
+  }, h()))
 }
 
 function y() {

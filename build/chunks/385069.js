@@ -2,7 +2,7 @@
 /** chunk id: 385069, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => m
+  N: () => h
 });
 var Chunk822433 = require("./822433.js"),
   Chunk17042 = require("./17042.js"),
@@ -17,10 +17,10 @@ var Chunk822433 = require("./822433.js"),
   Chunk221721 = require("./221721.js"),
   Chunk587157 = require("./587157.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   let {
-    isVirtualized: m,
-    disallowTypeAhead: h,
+    isVirtualized: h,
+    disallowTypeAhead: m,
     keyboardDelegate: g,
     focusMode: E,
     scrollRef: b,
@@ -51,17 +51,17 @@ function m(e, t, n) {
       focusMode: E
     }), [g, t.collection, t.disabledKeys, N, n, A, C, E]),
     {
-      collectionProps: R
+      collectionProps: w
     } = (0, _.g)({
       ref: n,
       selectionManager: T,
       keyboardDelegate: P,
-      isVirtualized: m,
+      isVirtualized: h,
       scrollRef: b,
-      disallowTypeAhead: h,
+      disallowTypeAhead: m,
       escapeKeyBehavior: S
     }),
-    w = (0, s.Me)(e.id);
+    R = (0, s.Me)(e.id);
   i.B.set(t, {
     keyboardDelegate: P,
     actions: {
@@ -85,20 +85,20 @@ function m(e, t, n) {
       e.currentTarget.contains(e.target) && T.setFocused(true)
     }, [T]),
     j = (0, u.useMemo)(() => ({
-      onBlur: R.onBlur,
+      onBlur: w.onBlur,
       onFocus: L
-    }), [L, R.onBlur]),
+    }), [L, w.onBlur]),
     M = (0, p.p)(n, {
       isDisabled: 0 !== t.collection.size
     }),
     k = (0, c.d)(x, {
       role: "grid",
-      id: w,
+      id: R,
       "aria-multiselectable": "multiple" === T.selectionMode ? "true" : true
-    }, t.isKeyboardNavigationDisabled ? j : R, 0 === t.collection.size && {
+    }, t.isKeyboardNavigationDisabled ? j : w, 0 === t.collection.size && {
       tabIndex: M ? false : 0
     } || true, D);
-  return m && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.B)({
+  return h && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.B)({
     getRowText: y
   }, t), {
     gridProps: k

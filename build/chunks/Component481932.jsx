@@ -22,17 +22,17 @@ function f(e) {
   } = e, {
     newestAnalyticsLocation: f
   } = (0, a.ZP)(), p = (0, i.e7)([o.default], () => o.default.getId() === t.id), _ = (0, i.e7)([s.Z], () => s.Z.getRelationshipType(t.id)), {
-    gameFriends: m,
-    hasOutgoingPendingGameFriends: h,
+    gameFriends: h,
+    hasOutgoingPendingGameFriends: m,
     hasIncomingPendingGameFriends: g
   } = (0, c.H)({
     userId: t.id
-  }), E = m.length > 0 || h || g;
+  }), E = h.length > 0 || m || g;
   if (null == t || t.bot || p || _ === u.OGo.BLOCKED) return null;
   if (_ === u.OGo.NONE && E) return n === d.l.MODAL ? null : (0, r.jsx)(l.xv, {
     user: t,
-    gameFriends: m,
-    hasOutgoingPendingGameFriends: h,
+    gameFriends: h,
+    hasOutgoingPendingGameFriends: m,
     hasIncomingPendingGameFriends: g,
     analyticsLocation: f
   });

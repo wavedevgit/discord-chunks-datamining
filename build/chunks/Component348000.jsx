@@ -2,7 +2,7 @@
 /** chunk id: 348000, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => m
+  D: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,7 +67,7 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = {
+let h = {
   title: "Tooltip",
   stories: [{
     name: "Tooltip",
@@ -82,8 +82,8 @@ let m = {
         customOffset: c,
         delay: d,
         spacing: _,
-        ariaHidden: m
-      } = e, h = p(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "ariaHidden"]);
+        ariaHidden: h
+      } = e, m = p(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "ariaHidden"]);
       let g = i.useMemo(() => {
         if ("center" !== l && null != l) return "custom" === l ? {
           align: l,
@@ -99,8 +99,8 @@ let m = {
         delay: d,
         spacing: _,
         caretConfig: g,
-        ariaHidden: m
-      }, h), {
+        ariaHidden: h
+      }, m), {
         children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me"
@@ -208,20 +208,20 @@ let m = {
         assetSize: c,
         position: d,
         align: _,
-        caretAlign: m,
-        customOffset: h,
+        caretAlign: h,
+        customOffset: m,
         delay: g,
         spacing: E,
         forceOpen: b
       } = e, y = p(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "forceOpen"]);
       let O = i.useMemo(() => {
-          if ("center" !== m && null != m) return "custom" === m ? {
-            align: m,
-            customOffset: h
+          if ("center" !== h && null != h) return "custom" === h ? {
+            align: h,
+            customOffset: m
           } : {
-            align: m
+            align: h
           }
-        }, [m, h]),
+        }, [h, m]),
         v = i.useMemo(() => s ? {
           type: "image",
           src: l.Z,

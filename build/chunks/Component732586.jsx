@@ -41,8 +41,8 @@ function f(e) {
       label: f,
       placeholder: p,
       minLength: _,
-      maxLength: m,
-      required: h,
+      maxLength: h,
+      required: m,
       value: g
     } = e,
     [E, b] = i.useState(null != g ? g : ""),
@@ -62,8 +62,8 @@ function f(e) {
     value: E,
     placeholder: p,
     minLength: _,
-    maxLength: m,
-    required: h,
+    maxLength: h,
+    required: m,
     onChange: e => {
       b(e), O({
         type: n,
@@ -83,7 +83,7 @@ function f(e) {
   }
   return null != f ? (0, r.jsx)(a.xJW, {
     title: f,
-    required: h,
+    required: m,
     className: c.formItem,
     error: v,
     children: t

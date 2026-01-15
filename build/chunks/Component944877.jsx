@@ -72,7 +72,7 @@ function _(e) {
     isSelected: c,
     selectable: f = false
   } = e, _ = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]);
-  let m = p(t);
+  let h = p(t);
   return (0, r.jsx)("div", {
     className: a()(l.wrapper, n, {
       [l.selectable]: f,
@@ -83,7 +83,7 @@ function _(e) {
       height: o,
       padding: null != s ? s : 0
     },
-    children: null != m ? (0, r.jsx)(m, u({
+    children: null != h ? (0, r.jsx)(h, u({
       className: l.icon,
       color: "currentColor",
       size: "custom",

@@ -28,9 +28,9 @@ function g() {
       window.open(p.Z.getArticleURL(e), "_blank")
     };
   return (0, r.jsx)(u.f, {
-    label: h.t.EUo0yj,
+    label: m.t.EUo0yj,
     labelHook: t,
-    noticeType: m.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
+    noticeType: h.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
   })
 }
 
@@ -41,9 +41,9 @@ function E() {
     })
   };
   return (0, r.jsx)(u.f, {
-    label: h.t.OX4ybh,
+    label: m.t.OX4ybh,
     labelHook: e,
-    noticeType: m.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
+    noticeType: h.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
   })
 }
 
@@ -51,17 +51,17 @@ function b() {
   let e = (0, d.U)(),
     t = (0, l.v6)(),
     n = i.useCallback(() => {
-      window.open(p.Z.getArticleURL(t), "_blank"), (0, c.l)(m.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, m.up.LEARN_MORE)
+      window.open(p.Z.getArticleURL(t), "_blank"), (0, c.l)(h.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, h.up.LEARN_MORE)
     }, [t]),
     o = i.useCallback(() => {
-      (0, c.l)(m.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, m.up.VIEWED)
+      (0, c.l)(h.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, h.up.VIEWED)
     }, []);
   return i.useMemo(() => {
     if (e) return {
       type: f.v.INLINE_NOTICE,
       noticeType: "info",
       trackView: o,
-      useText: () => h.intl.format(h.t.EUo0yj, {
+      useText: () => m.intl.format(m.t.EUo0yj, {
         hook: (e, t) => (0, r.jsx)(a.eee, {
           onClick: n,
           children: e
@@ -76,17 +76,17 @@ function y() {
     t = i.useCallback(() => {
       o.Z.showAgeVerificationGetStartedModal({
         entryPoint: s.cU.CONTENT_AND_SOCIAL_NOTICE
-      }), (0, c.l)(m.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, m.up.LEARN_MORE)
+      }), (0, c.l)(h.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, h.up.LEARN_MORE)
     }, []),
     n = i.useCallback(() => {
-      (0, c.l)(m.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, m.up.VIEWED)
+      (0, c.l)(h.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, h.up.VIEWED)
     }, []);
   return i.useMemo(() => {
     if (e) return {
       type: f.v.INLINE_NOTICE,
       noticeType: "info",
       trackView: n,
-      useText: () => h.intl.format(h.t.OX4ybh, {
+      useText: () => m.intl.format(m.t.OX4ybh, {
         hook: (e, n) => (0, r.jsx)(a.eee, {
           onClick: t,
           children: e

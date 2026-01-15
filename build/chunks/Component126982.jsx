@@ -55,10 +55,10 @@ function v(e) {
     step: t,
     onClose: n,
     isOrbCheckout: a
-  } = e, l = (0, u.Z)(h.X), {
+  } = e, l = (0, u.Z)(m.X), {
     footerNode: d
-  } = (0, _.JL)(), f = (0, p.G6)() && !s.tq, b = null != d ? d.offsetWidth : true, y = i.useMemo(() => f && null != b && (t === m.h8.ADD_PAYMENT_STEPS || a) ? b : true, [f, b, t, a]);
-  if (t === m.h8.BENEFITS || t === m.h8.CONFIRM) return null;
+  } = (0, _.JL)(), f = (0, p.G6)() && !s.tq, b = null != d ? d.offsetWidth : true, y = i.useMemo(() => f && null != b && (t === h.h8.ADD_PAYMENT_STEPS || a) ? b : true, [f, b, t, a]);
+  if (t === h.h8.BENEFITS || t === h.h8.CONFIRM) return null;
   let v = null != y ? {
       width: y + 2
     } : true,

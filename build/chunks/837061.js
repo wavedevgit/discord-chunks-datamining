@@ -57,6 +57,6 @@ let O = (0, Chunk509613.ZH)(Chunk313789.n.ACCOUNT_STANDING_TAB, {
   R = (0, Chunk509613.m7)(Chunk313789.n.ACCOUNT_SIDEBAR_ITEM, {
     useTitle: () => A.intl.string(A.t["JAIM/m"]),
     getLegacySearchKey: () => (0, S.Gl)("AccountPanel") ? true : I.s6.ACCOUNT,
-    icon: Chunk657707.tBG,
+    icon: Chunk657707.UserIcon,
     buildLayout: () => (0, S.Gl)("AccountPanel") ? [f] : [L]
   })

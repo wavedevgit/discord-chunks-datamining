@@ -40,8 +40,8 @@ let I = "SELECTABLE",
   A = {},
   N = {},
   P = {},
-  R = null,
-  w = {},
+  w = null,
+  R = {},
   D = {
     comparator: false,
     channel: (0, Chunk131704.createChannelRecord)({
@@ -90,7 +90,7 @@ function F() {
   let e = {},
     t = d.Z.getFavoriteChannels();
   for (let n in t) {
-    let r = h.Z.getChannel(n);
+    let r = m.Z.getChannel(n);
     if (null == r) continue;
     let i = t[n],
       a = (0, f.r)(t, i, r);
@@ -105,7 +105,7 @@ function F() {
 function B(e) {
   if (e === v.I_8) return F();
   let t = {},
-    n = h.Z.getMutableGuildChannelsForGuild(e);
+    n = m.Z.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
     channel: n[e],
     comparator: n[e].position
@@ -119,19 +119,19 @@ function V(e) {
   } = e, n = B(t);
   return a().forEach(n, n => {
     let r = n.channel;
-    if (e.count += 1, p.zS.has(r.type) && !b.Z.can(v.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== R) return;
+    if (e.count += 1, p.zS.has(r.type) && !b.Z.can(v.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== w) return;
     let i = Z(r.type);
-    r.type === v.d4z.GUILD_DIRECTORY && (null == w[t] && (w[t] = []), w[t].push(n)), null != e[i] && e[i].push(n)
+    r.type === v.d4z.GUILD_DIRECTORY && (null == R[t] && (R[t] = []), R[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
 
 function H() {
-  A = {}, w = {}, N = {}, P = {}, null != C && Y(C)
+  A = {}, R = {}, N = {}, P = {}, null != C && Y(C)
 }
 
 function Y(e) {
   let t = M(e);
-  return A[e] = t, w[e] = [], V(t), G(t), W(t), en(e), t
+  return A[e] = t, R[e] = [], V(t), G(t), W(t), en(e), t
 }
 
 function W(e) {
@@ -164,7 +164,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete A[t], delete N[t], delete P[t], delete w[t], true
+  return delete A[t], delete N[t], delete P[t], delete R[t], true
 }
 
 function q(e) {
@@ -172,12 +172,12 @@ function q(e) {
     guildId: t,
     user: n
   } = e;
-  if (m.default.getId() !== n.id) returnfalse;
+  if (h.default.getId() !== n.id) returnfalse;
   A[t] = true, t === C && Y(t)
 }
 
 function Q(e) {
-  let t = h.Z.getBasicChannel(e.id);
+  let t = m.Z.getBasicChannel(e.id);
   null != t && null != t.guild_id && Y(t.guild_id)
 }
 
@@ -246,7 +246,7 @@ function en(e) {
 
 function er(e, t) {
   var n;
-  R = t;
+  w = t;
   let r = null != (n = null == e ? true : e.getGuildId()) ? n : null;
   if (null == r) returnfalse;
   A[r] = true, r === C && Y(r)
@@ -256,7 +256,7 @@ function ei(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != R ? er(h.Z.getChannel(R), null) : er(h.Z.getChannel(t), t)
+  return null == t && null != w ? er(m.Z.getChannel(w), null) : er(m.Z.getChannel(t), t)
 }
 
 function ea(e) {
@@ -268,7 +268,7 @@ function ea(e) {
       channelId: n,
       sessionId: r
     } = t;
-    return m.default.getSessionId() !== r ? e : er(h.Z.getChannel(n), n) || e
+    return h.default.getSessionId() !== r ? e : er(m.Z.getChannel(n), n) || e
   }, false)
 }
 
@@ -285,7 +285,7 @@ function es() {
 }
 class el extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(m.default, h.Z, d.Z, c.Z, g.ZP, E.Z, b.Z, O.default), this.syncWith([d.Z], es)
+    this.waitFor(h.default, m.Z, d.Z, c.Z, g.ZP, E.Z, b.Z, O.default), this.syncWith([d.Z], es)
   }
   getAllGuilds() {
     return A
@@ -333,7 +333,7 @@ class el extends(r = Chunk442837.ZP.Store) {
   }
   getDirectoryChannelIds(e) {
     var t, n;
-    return null != (n = null == (t = w[e]) ? true : t.map(e => {
+    return null != (n = null == (t = R[e]) ? true : t.map(e => {
       let {
         channel: t
       } = e;

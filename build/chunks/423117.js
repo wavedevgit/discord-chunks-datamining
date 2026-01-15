@@ -6,8 +6,8 @@ require.d(exports, {
   FP: () => g,
   I1: () => v,
   O0: () => T,
-  Qb: () => m,
-  W2: () => h,
+  Qb: () => h,
+  W2: () => m,
   Xj: () => C,
   _d: () => y,
   dA: () => I,
@@ -46,14 +46,14 @@ function p(e) {
   return e
 }
 let _ = 3;
-async function m(e) {
+async function h(e) {
   let t = await u.X2(e);
   i.Z.dispatch({
     type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS",
     settings: t
   })
 }
-async function h(e, t) {
+async function m(e, t) {
   let n = await u.ci(e, t);
   i.Z.dispatch({
     type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS",

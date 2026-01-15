@@ -2,7 +2,7 @@
 /** chunk id: 336079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CH: () => m,
+  CH: () => h,
   Gw: () => p,
   dv: () => _
 });
@@ -35,7 +35,7 @@ let f = (0, Chunk473749.createContext)({
       rentalDuration: f
     } = e, p = (0, o.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
       product: _
-    } = (0, s.T)(t), m = (0, i.useMemo)(() => {
+    } = (0, s.T)(t), h = (0, i.useMemo)(() => {
       if (null == _) return null;
       let e = (0, l.T4)({
           product: _,
@@ -49,26 +49,26 @@ let f = (0, Chunk473749.createContext)({
         product: _
       }
     }, [_, p, f]), {
-      redeemVirtualCurrency: h,
+      redeemVirtualCurrency: m,
       isSubmitting: g,
       error: E
     } = (0, d.f)({
       skuId: t,
       loadId: n
     }), b = (0, i.useCallback)(e => {
-      h(t, n, n => {
+      m(t, n, n => {
         a({
           entitlements: n,
           skuId: t
         }), e()
       }, null != f)
-    }, [t, n, h, a, f]);
+    }, [t, n, m, a, f]);
     return {
       skuId: t,
       loadId: n,
       analyticsLocations: null != r ? r : [],
       product: _,
-      orbProductContext: m,
+      orbProductContext: h,
       onRedeemVirtualCurrency: b,
       isRedeeming: g,
       orbRedemptionError: E,
@@ -111,4 +111,4 @@ let f = (0, Chunk473749.createContext)({
       children: l
     })
   },
-  m = () => (0, i.useContext)(f)
+  h = () => (0, i.useContext)(f)

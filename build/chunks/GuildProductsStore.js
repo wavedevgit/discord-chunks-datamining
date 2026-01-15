@@ -26,9 +26,9 @@ let d = {},
   f = {},
   p = {},
   _ = 10 * Chunk70956.Z.Millis.MINUTE,
-  m = 1e12;
+  h = 1e12;
 
-function h(e) {
+function m(e) {
   return "guild:".concat(e)
 }
 
@@ -38,10 +38,10 @@ function g(e) {
 
 function E(e) {
   let t = l.default.extractTimestamp(e.id);
-  return e.published ? -t : -t + m
+  return e.published ? -t : -t + h
 }
 let b = new Chunk759174.h(e => {
-    let t = [h(e.guild_id)];
+    let t = [m(e.guild_id)];
     return e.published && t.push(g(e.guild_id)), t
   }, e => E(e)),
   y = [];
@@ -54,7 +54,7 @@ function v(e) {
   let {
     guildId: t
   } = e;
-  d[t] = 1, [...b.values(h(t))].forEach(e => {
+  d[t] = 1, [...b.values(m(t))].forEach(e => {
     b.delete(e.id)
   })
 }
@@ -112,13 +112,13 @@ function P(e) {
   b.set(t.id, t)
 }
 
-function R(e) {
+function w(e) {
   let {
     productId: t
   } = e;
   b.delete(t)
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk442837.ZP.Store) {
   getGuildProductsForGuildFetchState(e) {
     var t;
     return null != (t = d[e]) ? t : 0
@@ -130,7 +130,7 @@ class w extends(r = Chunk442837.ZP.Store) {
     let {
       publishedOnly: n
     } = t;
-    return null == e ? y : b.values(n ? g(e) : h(e))
+    return null == e ? y : b.values(n ? g(e) : m(e))
   }
   getGuildProductFetchState(e) {
     var t;
@@ -141,15 +141,15 @@ class w extends(r = Chunk442837.ZP.Store) {
     return Date.now() - (null != (t = p[e]) ? t : 0) > _
   }
 }
-c(w, "displayName", "GuildProductsStore");
-let D = new w(Chunk570140.Z, {
+c(R, "displayName", "GuildProductsStore");
+let D = new R(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   GUILD_PRODUCTS_FETCH: v,
   GUILD_PRODUCTS_FETCH_SUCCESS: S,
   GUILD_PRODUCTS_FETCH_FAILURE: I,
   GUILD_PRODUCT_CREATE: N,
   GUILD_PRODUCT_UPDATE: P,
-  GUILD_PRODUCT_DELETE: R,
+  GUILD_PRODUCT_DELETE: w,
   GUILD_PRODUCT_FETCH: T,
   GUILD_PRODUCT_FETCH_SUCCESS: C,
   GUILD_PRODUCT_FETCH_FAILURE: A

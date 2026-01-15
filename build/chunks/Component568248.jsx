@@ -32,7 +32,7 @@ function E(e) {
   let T = e => {
     var n, i;
     return "IMAGE" !== E ? (0, r.jsx)(_.S, {
-      className: h.imgContainer,
+      className: m.imgContainer,
       media: t,
       placeholderWidth: g,
       placeholderHeight: g,
@@ -40,10 +40,10 @@ function E(e) {
       maxHeight: g,
       hiddenSpoilers: e
     }) : (0, r.jsx)(f.Yi, {
-      containerClassName: o()(h.imgContainer, {
-        [h.hiddenSpoiler]: e
+      containerClassName: o()(m.imgContainer, {
+        [m.hiddenSpoiler]: e
       }),
-      imageClassName: h.img,
+      imageClassName: m.img,
       src: t.proxyUrl,
       alt: a,
       original: t.url,
@@ -57,7 +57,7 @@ function E(e) {
       minWidth: g,
       minHeight: g,
       autoPlay: y && !e,
-      mediaLayoutType: m.hV.MOSAIC,
+      mediaLayoutType: h.hV.MOSAIC,
       reducedSizeAltTextButton: true,
       srcIsAnimated: b
     })

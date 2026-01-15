@@ -26,10 +26,10 @@ function p(e, t, n) {
 var _ = function(e) {
   return e[e.LOADED = 0] = "LOADED", e[e.NOT_LOADED = 1] = "NOT_LOADED", e[e.DELETED = 2] = "DELETED", e
 }({});
-let m = Object.freeze({
+let h = Object.freeze({
     state: 1
   }),
-  h = new Set;
+  m = new Set;
 class g {
   handleCacheDisposed(e, t) {
     this._cachedMessageIds.has(e) && (this._cachedMessageIds = new Set(this._cachedMessageIds), this._cachedMessageIds.delete(e))
@@ -115,7 +115,7 @@ function y(e) {
       null != e ? b.set(n.channel_id, r, {
         state: 0,
         message: e
-      }) : b.set(n.channel_id, r, m)
+      }) : b.set(n.channel_id, r, h)
     }
     t = true
   }
@@ -196,19 +196,19 @@ function P() {
   if (0 === b.retainWhere(e => null != u.Z.getChannel(e))) returnfalse
 }
 
-function R(e, t) {
+function w(e, t) {
   if (!b.has(e, t)) returnfalse;
   b.set(e, t, {
     state: 2
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     id: t,
     channelId: n
   } = e;
-  return R(n, t)
+  return w(n, t)
 }
 
 function D(e) {
@@ -216,7 +216,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  return O(t, e => R(n, e))
+  return O(t, e => w(n, e))
 }
 
 function x(e) {
@@ -257,15 +257,15 @@ class k extends(r = Chunk442837.ZP.Store) {
   }
   getMessageByReference(e) {
     let t;
-    return null != e && (t = b.get(e.channel_id, e.message_id)), null != t ? t : m
+    return null != e && (t = b.get(e.channel_id, e.message_id)), null != t ? t : h
   }
   getMessage(e, t) {
     var n;
-    return null != (n = b.get(e, t)) ? n : m
+    return null != (n = b.get(e, t)) ? n : h
   }
   getReplyIdsForChannel(e) {
     let t;
-    return null != e && (t = b.getCachedMessageIdsForChannel(e)), null != t ? t : h
+    return null != e && (t = b.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
 p(k, "displayName", "ReferencedMessageStore");
@@ -282,7 +282,7 @@ let U = new k(Chunk570140.Z, {
   LOAD_FORUM_POSTS: M,
   MESSAGE_CREATE: T,
   MESSAGE_UPDATE: A,
-  MESSAGE_DELETE: w,
+  MESSAGE_DELETE: R,
   MESSAGE_DELETE_BULK: D,
   CREATE_PENDING_REPLY: x,
   CHANNEL_DELETE: N,

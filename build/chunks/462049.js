@@ -17,8 +17,8 @@ let o = 0x66747970,
   f = 0x6970636f,
   p = 0x636f6c72,
   _ = 0x45786966,
-  m = 0x6d696d65,
-  h = 0x75726920;
+  h = 0x6d696d65,
+  m = 0x75726920;
 
 function g(e, t) {
   let n = 4,
@@ -26,16 +26,16 @@ function g(e, t) {
     i = 1,
     {
       length: _,
-      contentOffset: m
+      contentOffset: h
     } = E(e, t);
   if (_ < r) return;
-  let h = e.getUint32(t + n);
-  if (h === o) return w(e, m, _);
-  if (h === s) return D(e, t, m, _);
-  if (h === f) return x(e, t, m, _);
-  if (h === p) return L(e, m, _);
-  let g = e.getUint8(m);
-  return h === l ? M(e, t, m + i, _) : h === c ? (0, a.I)(e, g, m + i, _) : h === u ? U(e, t, g, m + i, _) : h === d ? Z(e, t, g, m + i, _) : {
+  let m = e.getUint32(t + n);
+  if (m === o) return R(e, h, _);
+  if (m === s) return D(e, t, h, _);
+  if (m === f) return x(e, t, h, _);
+  if (m === p) return L(e, h, _);
+  let g = e.getUint8(h);
+  return m === l ? M(e, t, h + i, _) : m === c ? (0, a.I)(e, g, h + i, _) : m === u ? U(e, t, g, h + i, _) : m === d ? Z(e, t, g, h + i, _) : {
     type: true,
     length: _
   }
@@ -76,7 +76,7 @@ function v(e) {
   if (r.Z.USE_EXIF || r.Z.USE_XMP || r.Z.USE_ICC) {
     let t = {},
       n = S(e);
-    return n ? (r.Z.USE_EXIF && (t.tiffHeaderOffset = I(e, n)), r.Z.USE_XMP && (t.xmpChunks = N(n)), r.Z.USE_ICC && (t.iccChunks = R(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
+    return n ? (r.Z.USE_EXIF && (t.tiffHeaderOffset = I(e, n)), r.Z.USE_XMP && (t.xmpChunks = N(n)), r.Z.USE_ICC && (t.iccChunks = w(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
       hasAppMarkers: false
     }
   }
@@ -133,17 +133,17 @@ function N(e) {
 }
 
 function P(e) {
-  return e.subBoxes.find(e => "iinf" === e.type).itemInfos.find(e => e.itemType === m && "application/rdf+xml" === e.contentType)
+  return e.subBoxes.find(e => "iinf" === e.type).itemInfos.find(e => e.itemType === h && "application/rdf+xml" === e.contentType)
 }
 
-function R(e) {
+function w(e) {
   try {
     let t = e.subBoxes.find(e => "iprp" === e.type).subBoxes.find(e => "ipco" === e.type).properties.find(e => "colr" === e.type).icc;
     if (t) return [t]
   } catch (e) {}
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = 4;
   return {
     type: "ftyp",
@@ -196,7 +196,7 @@ function M(e, t, n, r) {
 }
 
 function k(e, t, n) {
-  let r = [_, m],
+  let r = [_, h],
     i = [],
     a = t;
   for (; a < t + n;) {
@@ -234,5 +234,5 @@ function Z(e, t, n, r, a) {
     type: "infe",
     length: a
   };
-  return (0 === n || 1 === n) && (o.itemId = e.getUint16(r), r += 2, o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemName = (0, i.o7)(e, r), r += o.itemName.length + 1), n >= 2 && (2 === n ? (o.itemId = e.getUint16(r), r += 2) : 3 === n && (o.itemId = e.getUint32(r), r += 4), o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemType = e.getUint32(r), r += 4, o.itemName = (0, i.o7)(e, r), r += o.itemName.length + 1, o.itemType === m ? (o.contentType = (0, i.o7)(e, r), t + a > (r += o.contentType.length + 1) && (o.contentEncoding = (0, i.o7)(e, r), r += o.contentEncoding.length + 1)) : o.itemType === h && (o.itemUri = (0, i.o7)(e, r), r += o.itemUri.length + 1)), o
+  return (0 === n || 1 === n) && (o.itemId = e.getUint16(r), r += 2, o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemName = (0, i.o7)(e, r), r += o.itemName.length + 1), n >= 2 && (2 === n ? (o.itemId = e.getUint16(r), r += 2) : 3 === n && (o.itemId = e.getUint32(r), r += 4), o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemType = e.getUint32(r), r += 4, o.itemName = (0, i.o7)(e, r), r += o.itemName.length + 1, o.itemType === h ? (o.contentType = (0, i.o7)(e, r), t + a > (r += o.contentType.length + 1) && (o.contentEncoding = (0, i.o7)(e, r), r += o.contentEncoding.length + 1)) : o.itemType === m && (o.itemUri = (0, i.o7)(e, r), r += o.itemUri.length + 1)), o
 }

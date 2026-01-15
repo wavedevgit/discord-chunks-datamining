@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk920557 = require("./920557.jsx"),
   Chunk856597 = require("./856597.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -46,7 +46,7 @@ function E(e) {
   } = e;
   return (0, r.jsx)(c.Heading, {
     variant: "text-md/medium",
-    className: m.question,
+    className: h.question,
     scaleFontToUserSetting: true,
     children: t.text
   })
@@ -61,7 +61,7 @@ function b(e) {
     className: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(m.detailsText, s),
+    className: o()(h.detailsText, s),
     children: [a ? (0, r.jsx)(c.Avr, {
       text: t,
       onClick: i,
@@ -141,32 +141,32 @@ function v(e) {
     className: i
   } = e, a = (0, f.$B)(n.containerStyle), s = y(t, n);
   return null == s ? null : (0, r.jsx)("div", {
-    className: o()(m.container, a, i),
+    className: o()(h.container, a, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
-        className: m.header,
+        className: h.header,
         children: [(0, r.jsx)(E, {
           media: n.question
         }), null != n.promptLabel && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: m.prompt,
+          className: h.prompt,
           scaleFontToUserSetting: true,
           children: n.promptLabel
         })]
       }), s, (0, r.jsxs)("div", {
-        className: m.bottomBar,
+        className: h.bottomBar,
         children: [(0, r.jsx)(O, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.secondaryAction,
-          className: m.secondaryAction,
+          className: h.secondaryAction,
           isInteractive: n.isInteractive
         }), (0, r.jsx)(O, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.tertiaryAction,
-          className: m.tertiaryAction
+          className: h.tertiaryAction
         }), (0, r.jsx)(O, {
           channelId: t.getChannelId(),
           messageId: t.id,

@@ -100,7 +100,7 @@ function P(e, t, n, r) {
     f = () => {
       let e = Math.min(l, c - (Date.now() - u));
       e > 0 && (d = setTimeout(() => {
-        m().catch(e => {
+        h().catch(e => {
           let r = e instanceof Error ? e.message : String(e);
           n("Failed to poll order status!\nOrder ID: ".concat(t, "\nError: ").concat(r))
         })
@@ -112,7 +112,7 @@ function P(e, t, n, r) {
     _ = e => {
       n("Order signing timed out.\nOrder ID: ".concat(t, "\nStatus: ").concat(null != e ? e : "unknown", "\nPlease check the order status manually.")), p()
     },
-    m = async () => {
+    h = async () => {
       let e = Date.now() - u;
       if (e >= c) {
         try {
@@ -140,13 +140,13 @@ function P(e, t, n, r) {
         e < c ? f() : (n("Order signing timed out.\nOrder ID: ".concat(t, "\nError: ").concat(r)), p())
       }
     };
-  m().catch(e => {
+  h().catch(e => {
     let r = e instanceof Error ? e.message : String(e);
     n("Failed to start polling order status!\nOrder ID: ".concat(t, "\nError: ").concat(r))
   })
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   (async () => {
     var i, a, o, s;
     try {
@@ -156,7 +156,7 @@ function R(e, t, n, r) {
       if (null == s) throw Error("Order does not have payment redirect context");
       let l = s.stripe_3ds_context;
       if (null == l) throw Error("Order does not have 3DS context information");
-      let c = await (0, m.d2)();
+      let c = await (0, h.d2)();
       if (null == c) throw Error("Stripe not loaded");
       let u = l.client_secret;
       if (null == u || "" === u) throw Error("No client secret found in 3DS context");
@@ -178,32 +178,32 @@ function R(e, t, n, r) {
   })()
 }
 
-function w() {
-  let [e, t] = i.useState(false), [n, o] = i.useState(false), [f, m] = i.useState(null), [g, O] = i.useState(null), [S, A] = i.useState(T.defaultValue), [w, D] = i.useState(null), x = (0, a.e7)([_.Z], () => _.Z.paymentSources), L = (0, a.e7)([_.Z], () => _.Z.hasFetchedPaymentSources), j = (0, a.e7)([_.Z], () => _.Z.defaultPaymentSourceId);
+function R() {
+  let [e, t] = i.useState(false), [n, o] = i.useState(false), [f, h] = i.useState(null), [g, O] = i.useState(null), [S, A] = i.useState(T.defaultValue), [R, D] = i.useState(null), x = (0, a.e7)([_.Z], () => _.Z.paymentSources), L = (0, a.e7)([_.Z], () => _.Z.hasFetchedPaymentSources), j = (0, a.e7)([_.Z], () => _.Z.defaultPaymentSourceId);
   i.useEffect(() => {
     L || (0, u.tZ)()
   }, [L]), i.useEffect(() => {
-    null != j && null == w && D(j)
-  }, [j, w]);
+    null != j && null == R && D(j)
+  }, [j, R]);
   let M = i.useRef(null);
   i.useEffect(() => {
     if (null == g || "" === g) {
-      M.current = w;
+      M.current = R;
       return
     }
-    if (w !== M.current) {
-      if (null == w || "" === w) {
-        M.current = w;
+    if (R !== M.current) {
+      if (null == R || "" === R) {
+        M.current = R;
         return
       }
-      N(g, w).then(() => {
-        m("Order updated successfully!\nOrder ID: ".concat(g, "\nPayment source changed."))
+      N(g, R).then(() => {
+        h("Order updated successfully!\nOrder ID: ".concat(g, "\nPayment source changed."))
       }).catch(e => {
         let t = e instanceof Error ? e.message : String(e);
-        m("Failed to update order: ".concat(t))
-      }), M.current = w
+        h("Failed to update order: ".concat(t))
+      }), M.current = R
     }
-  }, [g, w]);
+  }, [g, R]);
   let k = i.useMemo(() => Object.values(x).map(e => {
       let t = (e => {
         let t = p.W[e];
@@ -221,7 +221,7 @@ function w() {
       }
     }), [x]),
     U = (0, s.nV)({
-      value: w,
+      value: R,
       onChange: D
     }),
     G = (0, s.nV)({
@@ -229,9 +229,9 @@ function w() {
       onChange: A
     }),
     Z = async () => {
-      if (null == w || "" === w) return void m("Please select a payment source first.");
-      if (null == S || "" === S || S === E.lds) return void m("Please select a SKU ID.");
-      t(true), m(null), O(null);
+      if (null == R || "" === R) return void h("Please select a payment source first.");
+      if (null == S || "" === S || S === E.lds) return void h("Please select a SKU ID.");
+      t(true), h(null), O(null);
       try {
         let e = "US",
           t = false,
@@ -244,37 +244,37 @@ function w() {
             sound_id: true,
             reward_sku_ids: true
           },
-          r = await (0, d.t_)(S, w, e, t, n);
-        O(r), m("Order created successfully! Order ID: ".concat(r))
+          r = await (0, d.t_)(S, R, e, t, n);
+        O(r), h("Order created successfully! Order ID: ".concat(r))
       } catch (t) {
         let e = t instanceof Error ? t.message : String(t);
-        m("Failed to create order: ".concat(e))
+        h("Failed to create order: ".concat(e))
       } finally {
         t(false)
       }
     }, F = async () => {
-      if (null == g || "" === g) return void m("No order ID available. Please create an order first.");
+      if (null == g || "" === g) return void h("No order ID available. Please create an order first.");
       o(true);
       try {
         let e = await C(g);
         if (null == e.errors) {
-          m("Order signed successfully! Order ID: ".concat(g)), O(null);
+          h("Order signed successfully! Order ID: ".concat(g)), O(null);
           return
         }
         let t = e.errors[0];
-        1e3 === t ? (m("Order signing in progress!\nOrder ID: ".concat(g, "\nThis order requires additional authentication (3DS).")), R(e, g, m, O)) : 1001 === t ? (m("Order signing in progress!\nOrder ID: ".concat(g, "\nThis order requires redirection to complete the payment.\nPolling order status...")), P(e, g, m, O)) : m("Order signing failed\nOrder ID: ".concat(g, "\nError: ").concat(t))
+        1e3 === t ? (h("Order signing in progress!\nOrder ID: ".concat(g, "\nThis order requires additional authentication (3DS).")), w(e, g, h, O)) : 1001 === t ? (h("Order signing in progress!\nOrder ID: ".concat(g, "\nThis order requires redirection to complete the payment.\nPolling order status...")), P(e, g, h, O)) : h("Order signing failed\nOrder ID: ".concat(g, "\nError: ").concat(t))
       } catch (t) {
         let e = t instanceof Error ? t.message : String(t);
-        m("Failed to sign order: ".concat(e))
+        h("Failed to sign order: ".concat(e))
       } finally {
         o(false)
       }
     };
-  return (0, r.jsxs)(h.$0, {
+  return (0, r.jsxs)(m.$0, {
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
       children: "Order SKU Test"
-    }), (0, r.jsxs)(h.E_, {
+    }), (0, r.jsxs)(m.E_, {
       label: "Test Order Creation, Signing & 3DS",
       direction: "vertical",
       children: [(0, r.jsx)(c.Text, {
@@ -322,7 +322,7 @@ function w() {
           size: "sm",
           text: e ? "Creating Order..." : "Create Order",
           onClick: Z,
-          disabled: e || null == w || "" === w || null == S || "" === S || S === E.lds
+          disabled: e || null == R || "" === R || null == S || "" === S || S === E.lds
         }), (0, r.jsx)(l.zxk, {
           variant: "secondary",
           size: "sm",
@@ -351,7 +351,7 @@ let D = {
       stepConfigs: [],
       skuIDs: [],
       activeSubscription: null,
-      children: (0, r.jsx)(w, {})
+      children: (0, r.jsx)(R, {})
     })
   },
   id: "order-sku-test",

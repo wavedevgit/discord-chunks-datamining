@@ -16,10 +16,10 @@ let d = {},
   f = [],
   p = false,
   _ = (0, Chunk280049.r)(window),
-  m = (0, Chunk358085.isMac)() || (0, Chunk358085.isMacWeb)() ? "cmd" : "ctrl",
-  h = (0, Chunk358085.isMac)() || (0, Chunk358085.isMacWeb)() ? "opt" : "alt",
+  h = (0, Chunk358085.isMac)() || (0, Chunk358085.isMacWeb)() ? "cmd" : "ctrl",
+  m = (0, Chunk358085.isMac)() || (0, Chunk358085.isMacWeb)() ? "opt" : "alt",
   g = (0, Chunk358085.isMac)() || (0, Chunk358085.isMacWeb)() ? "return" : "enter",
-  E = [...Chunk360038.u.binds, "mod+shift+[", "mod+shift+]", "mod+[", "mod+]", "alt+[", "alt+]", "ctrl+shift+tab", "ctrl+tab", "mod+n", "mod+t", "mod+shift+t", "mod+plus", "mod+minus", "mod+0"].map(e => e.replace("mod", m)),
+  E = [...Chunk360038.u.binds, "mod+shift+[", "mod+shift+]", "mod+[", "mod+]", "alt+[", "alt+]", "ctrl+shift+tab", "ctrl+tab", "mod+n", "mod+t", "mod+shift+t", "mod+plus", "mod+minus", "mod+0"].map(e => e.replace("mod", h)),
   b = () => [],
   y = [];
 
@@ -31,7 +31,7 @@ function O(e, t) {
 function v(e) {
   let t = [];
   for (let n of Object.values(e)) null != n && t.push(...n.binds);
-  return t.map(e => e.replace("mod", m))
+  return t.map(e => e.replace("mod", h))
 }
 
 function S(e, t) {
@@ -46,7 +46,7 @@ function I(e) {
     if (null == n) continue;
     let e = b();
     c.isPlatformEmbedded || (e = e.concat(E));
-    let r = n.binds.filter(t => (t = t.replace("mod", m), 0 > e.indexOf(t)));
+    let r = n.binds.filter(t => (t = t.replace("mod", h), 0 > e.indexOf(t)));
     if (0 === r.length) continue;
     let i = n.comboKeysBindGlobal ? _.bindGlobal : _.bind;
     if (null != n.action && i.call(_, r, S(t, n.action)), null != n.keyup && i.call(_, r, S(t, n.keyup), "keyup"), null != n.keydown) {
@@ -58,8 +58,8 @@ function I(e) {
 }(0, Chunk358085.isDesktop)() && new(i())(document.documentElement).bind("backspace", e => e.preventDefault());
 let T = {
   combokeys: _,
-  modKey: m,
-  altKey: h,
+  modKey: h,
+  altKey: m,
   returnKey: g,
   setGetKeybindList(e) {
     b = e

@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk317238 = require("./317238.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -80,13 +80,13 @@ function v(e) {
     onChange: t,
     onClose: n,
     color: a,
-    suggestedColors: h,
+    suggestedColors: m,
     disabled: E,
     label: O,
     colorPickerMiddle: v,
     colorPickerFooter: S,
     showEyeDropper: I
-  } = e, T = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), A = c.Z.colors.BACKGROUND_ACCENT.css, N = (0, f.DP)(a), P = (0, l.Rf)(a), R = P === C ? A : P, w = N ? c.Z.unsafe_rawColors.WHITE.css : c.Z.unsafe_rawColors.PRIMARY_530.css, D = (0, d.Z)(v), x = (0, d.Z)(S), [L, j] = i.useState((0, s.Z)());
+  } = e, T = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), A = c.Z.colors.BACKGROUND_ACCENT.css, N = (0, f.DP)(a), P = (0, l.Rf)(a), w = P === C ? A : P, R = N ? c.Z.unsafe_rawColors.WHITE.css : c.Z.unsafe_rawColors.PRIMARY_530.css, D = (0, d.Z)(v), x = (0, d.Z)(S), [L, j] = i.useState((0, s.Z)());
   return i.useEffect(() => {
     (D !== v || x !== S) && j((0, s.Z)())
   }, [S, v, x, D]), (0, r.jsx)(u.yRy, {
@@ -95,7 +95,7 @@ function v(e) {
     renderPopout: e => (0, r.jsx)(u.Z$W, b(g({}, e), {
       value: a,
       onChange: t,
-      suggestedColors: h,
+      suggestedColors: m,
       middle: v,
       footer: S,
       showEyeDropper: I
@@ -107,27 +107,27 @@ function v(e) {
       } = e, n = y(e, ["onClick"]);
       return (0, r.jsxs)("div", {
         ref: T,
-        className: o()(m.colorSwatch, {
-          [m.disabled]: E
+        className: o()(h.colorSwatch, {
+          [h.disabled]: E
         }),
         children: [(0, r.jsx)(u.P3F, b(g({}, n), {
           tabIndex: E ? false : 0,
           onClick: E ? p.dG4 : t,
           style: {
             backgroundColor: P,
-            borderColor: R
+            borderColor: w
           },
-          className: m.swatch,
+          className: h.swatch,
           "aria-label": _.intl.string(_.t.Qp04hK),
           focusProps: {
             ringTarget: T
           },
           children: (0, r.jsx)(u.vdY, {
             size: "custom",
-            className: m.editPencilIcon,
+            className: h.editPencilIcon,
             width: 14,
             height: 14,
-            color: w
+            color: R
           })
         })), O]
       })

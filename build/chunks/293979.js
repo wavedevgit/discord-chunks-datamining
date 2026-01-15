@@ -73,17 +73,17 @@ function j(e, t) {
     application: n,
     customId: i,
     components: a
-  } = e, s = (0, f.Z)(), [u, p] = r.useState(null), [_, m] = r.useState(null), [h, g] = r.useState({}), b = (0, o.e7)([N.Z], () => N.Z.getModalState(_), [_]), y = (0, d.Z)(() => new Set), O = r.useCallback(async () => {
-    if (p(null), m(null), D(y)) {
+  } = e, s = (0, f.Z)(), [u, p] = r.useState(null), [_, h] = r.useState(null), [m, g] = r.useState({}), b = (0, o.e7)([N.Z], () => N.Z.getModalState(_), [_]), y = (0, d.Z)(() => new Set), O = r.useCallback(async () => {
+    if (p(null), h(null), D(y)) {
       let t = I.default.fromTimestamp(Date.now());
-      m(t), await G(e, s, t)
+      h(t), await G(e, s, t)
     }
   }, [s, e, y]);
   r.useEffect(() => {
     b === N.i.SUCCEEDED && (l.Z.dispatch({
       type: "CLEAR_INTERACTION_MODAL_STATE",
       customId: i
-    }), c.Z.removeFiles(e.channelId, U(e.channelId, i).map(e => e.id), E.d.InteractionModal), t()), b === N.i.ERRORED && p(w.intl.string(w.t.uJgdEu))
+    }), c.Z.removeFiles(e.channelId, U(e.channelId, i).map(e => e.id), E.d.InteractionModal), t()), b === N.i.ERRORED && p(R.intl.string(R.t.uJgdEu))
   }, [_, b, t, i, e.channelId]);
   let {
     applicationIconURL: v,
@@ -96,7 +96,7 @@ function j(e, t) {
     submissionState: b,
     error: u,
     validators: y,
-    validationErrors: h,
+    validationErrors: m,
     setValidationErrors: g,
     onSubmit: O
   }
@@ -195,7 +195,7 @@ async function G(e, t, n) {
   a()(null != i, "expected channel");
   let o = U(r, e.customId),
     l = o.length > 0 ? (0, p.Z)(o) : true;
-  (0, m.kz)(n, {
+  (0, h.kz)(n, {
     data: {
       interactionType: u.B8.MODAL_SUBMIT,
       applicationId: e.application.id
@@ -208,7 +208,7 @@ async function G(e, t, n) {
     }),
     f = () => {
       null != t && t.aborted || s.tn.post({
-        url: R.ANM.INTERACTIONS,
+        url: w.ANM.INTERACTIONS,
         body: {
           type: u.B8.MODAL_SUBMIT,
           application_id: e.application.id,
@@ -220,13 +220,13 @@ async function G(e, t, n) {
             components: d,
             attachments: c.length > 0 ? c : true
           },
-          session_id: h.default.getSessionId(),
+          session_id: m.default.getSessionId(),
           nonce: n
         },
         signal: t,
         rejectWithError: false
       }).catch(e => {
-        429 === e.status ? setTimeout(f, e.body.retry_after * S.Z.Millis.SECOND) : (0, m.yr)(n)
+        429 === e.status ? setTimeout(f, e.body.retry_after * S.Z.Millis.SECOND) : (0, h.yr)(n)
       })
     };
   f()

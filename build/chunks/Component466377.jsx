@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   Cg: () => A,
-  Y0: () => R,
+  Y0: () => w,
   YA: () => M,
   fM: () => P,
   hz: () => x,
   mz: () => L,
   ol: () => j,
-  xB: () => w
+  xB: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -99,14 +99,14 @@ var P = function(e) {
   return e.DEFAULT = "default", e.SUBTLE = "subtle", e
 }({});
 
-function R(e) {
+function w(e) {
   var t, {
       transitionState: n,
       children: a,
       size: u = "small",
       role: f = "dialog",
       className: _,
-      fullscreenOnMobile: h = true,
+      fullscreenOnMobile: m = true,
       hideShadow: b = false,
       onAnimationEnd: O = E.dG,
       returnRef: S,
@@ -114,8 +114,8 @@ function R(e) {
       parentComponent: A
     } = e,
     P = T(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
-  let R = n === g.Dv.ENTERING || n === g.Dv.ENTERED;
-  i.useContext(m.Z)({
+  let w = n === g.Dv.ENTERING || n === g.Dv.ENTERED;
+  i.useContext(h.Z)({
     type: l.ImpressionTypes.PAGE,
     name: l.ImpressionNames.MODAL_ROOT_LEGACY,
     properties: {
@@ -123,10 +123,10 @@ function R(e) {
     }
   });
   let {
-    reducedMotion: w
+    reducedMotion: R
   } = i.useContext(d.Sfi), D = (0, d.q_F)({
-    opacity: +!!R,
-    transform: R || w.enabled || "subtle" === C ? "scale(1)" : "scale(0.7)",
+    opacity: +!!w,
+    transform: w || R.enabled || "subtle" === C ? "scale(1)" : "scale(0.7)",
     config: {
       duration: 200,
       easing: c.Z.Easing.out(c.Z.Easing.quad),
@@ -148,7 +148,7 @@ function R(e) {
     }, P), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(_, y.root, N[u], {
-          [y.fullscreenOnMobile]: h,
+          [y.fullscreenOnMobile]: m,
           [y.rootWithShadow]: !b
         }),
         ref: x,
@@ -162,19 +162,19 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   var t, n, a, s, l;
   let {
     headerId: c,
     headerIdIsManaged: u
   } = i.useContext(g.zM);
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     grow: 0,
     shrink: 0,
-    direction: null != (t = e.direction) ? t : h.Z.Direction.HORIZONTAL,
-    justify: null != (n = e.justify) ? n : h.Z.Justify.START,
-    align: null != (a = e.align) ? a : h.Z.Align.CENTER,
-    wrap: null != (s = e.wrap) ? s : h.Z.Wrap.NO_WRAP,
+    direction: null != (t = e.direction) ? t : m.Z.Direction.HORIZONTAL,
+    justify: null != (n = e.justify) ? n : m.Z.Justify.START,
+    align: null != (a = e.align) ? a : m.Z.Align.CENTER,
+    wrap: null != (s = e.wrap) ? s : m.Z.Wrap.NO_WRAP,
     className: o()(y.header, e.className, {
       [y.separator]: null == (l = e.separator) || l
     }),
@@ -214,13 +214,13 @@ function x(e) {
 
 function L(e) {
   var t, n, i, a, s;
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     grow: 0,
     shrink: 0,
-    direction: null != (t = e.direction) ? t : h.Z.Direction.HORIZONTAL_REVERSE,
-    justify: null != (n = e.justify) ? n : h.Z.Justify.START,
-    align: null != (i = e.align) ? i : h.Z.Align.STRETCH,
-    wrap: null != (a = e.wrap) ? a : h.Z.Wrap.NO_WRAP,
+    direction: null != (t = e.direction) ? t : m.Z.Direction.HORIZONTAL_REVERSE,
+    justify: null != (n = e.justify) ? n : m.Z.Justify.START,
+    align: null != (i = e.align) ? i : m.Z.Align.STRETCH,
+    wrap: null != (a = e.wrap) ? a : m.Z.Wrap.NO_WRAP,
     className: o()(y.footer, e.className, {
       [y.footerSeparator]: null == (s = e.separator) || s
     }),

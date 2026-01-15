@@ -69,10 +69,10 @@ function p(e, t) {
 var _ = function(e) {
     return e.ACTIVITY_FEED = "ACTIVITY_FEED", e.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", e.USER_ACTIVITY = "USER_ACTIVITY", e.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", e.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", e
   }(_ || {}),
-  m = function(e) {
+  h = function(e) {
     return e.START = "START", e.END = "END", e.TIME = "TIME", e
-  }(m || {});
-let h = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
+  }(h || {});
+let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
     time: t
   }, n)),
   g = {
@@ -113,10 +113,10 @@ let h = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
     },
     ACTIVITY_FEED_NEW: {
       START: {
-        [Chunk379649.J6.SECONDS]: h(() => s.t.Bf3PRU),
-        [Chunk379649.J6.MINUTES]: h(() => s.t["A9P+dT"]),
-        [Chunk379649.J6.HOURS]: h(() => s.t.KwVzfh),
-        [Chunk379649.J6.DAYS]: h(() => s.t.hbUpBN)
+        [Chunk379649.J6.SECONDS]: m(() => s.t.Bf3PRU),
+        [Chunk379649.J6.MINUTES]: m(() => s.t["A9P+dT"]),
+        [Chunk379649.J6.HOURS]: m(() => s.t.KwVzfh),
+        [Chunk379649.J6.DAYS]: m(() => s.t.hbUpBN)
       },
       END: {
         [Chunk379649.J6.SECONDS]: e => s.intl.formatToPlainString(s.t.C3MTOD, {
@@ -268,10 +268,10 @@ function b(e) {
       let p = this.getTimeUnit(l, n, u),
         _ = g[n][u];
       if (null == _) return null;
-      let m = _[p],
-        h = Math.floor((0, a.A3)(l, p));
+      let h = _[p],
+        m = Math.floor((0, a.A3)(l, p));
       return (0, r.jsx)(e, d(c({}, s), {
-        children: null == m ? true : m(h, i, o)
+        children: null == h ? true : h(m, i, o)
       }))
     }
     constructor(...e) {
@@ -283,5 +283,5 @@ function b(e) {
         })
       })
     }
-  }, l(n, "Locations", _), l(n, "Types", m), n
+  }, l(n, "Locations", _), l(n, "Types", h), n
 }

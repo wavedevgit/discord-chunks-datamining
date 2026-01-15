@@ -32,19 +32,19 @@ var P = function(e) {
       delete A[e], t()
     }
   },
-  R = function(e) {
+  w = function(e) {
     return function() {
       P(e)
     }
   },
-  w = function(e) {
+  R = function(e) {
     P(e.data)
   },
   D = function(e) {
     s.postMessage(T(e), r.protocol + "//" + r.host)
   };
 b && y || (b = function(e) {
-  h(arguments.length, 1);
+  m(arguments.length, 1);
   var t = u(e) ? e : S(e),
     n = _(arguments, 1);
   return A[++C] = function() {
@@ -53,15 +53,15 @@ b && y || (b = function(e) {
 }, y = function(e) {
   delete A[e]
 }, Chunk426625 ? i = function(e) {
-  O.nextTick(R(e))
+  O.nextTick(w(e))
 } : v && v.now ? i = function(e) {
-  v.now(R(e))
-} : I && !Chunk266782 ? (o = (a = new I).port2, a.port1.onmessage = w, i = Chunk48657(o.postMessage, o)) : Chunk127849.addEventListener && Chunk880181(Chunk127849.postMessage) && !Chunk127849.importScripts && r && "file:" !== r.protocol && !Chunk621523(D) ? (i = D, Chunk127849.addEventListener("message", w, false)) : i = N in Chunk809290("script") ? function(e) {
-  p.appendChild(m("script"))[N] = function() {
+  v.now(w(e))
+} : I && !Chunk266782 ? (o = (a = new I).port2, a.port1.onmessage = R, i = Chunk48657(o.postMessage, o)) : Chunk127849.addEventListener && Chunk880181(Chunk127849.postMessage) && !Chunk127849.importScripts && r && "file:" !== r.protocol && !Chunk621523(D) ? (i = D, Chunk127849.addEventListener("message", R, false)) : i = N in Chunk809290("script") ? function(e) {
+  p.appendChild(h("script"))[N] = function() {
     p.removeChild(this), P(e)
   }
 } : function(e) {
-  setTimeout(R(e), 0)
+  setTimeout(w(e), 0)
 }), module.exports = {
   set: b,
   clear: y

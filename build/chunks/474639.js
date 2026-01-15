@@ -87,7 +87,7 @@ class C extends Chunk147913.Z {
       applicationName: t,
       errMsg: n
     } = e;
-    m.default.track(S.rMx.CLIPS_INIT_FAILURE, {
+    h.default.track(S.rMx.CLIPS_INIT_FAILURE, {
       application_name: t,
       error_message: n
     })
@@ -156,7 +156,7 @@ class C extends Chunk147913.Z {
           }
         }
       })();
-      return m.default.track(S.rMx.CLIPS_HARDWARE_CLASSIFICATION, {
+      return h.default.track(S.rMx.CLIPS_HARDWARE_CLASSIFICATION, {
         classification: t,
         version: v.WM,
         gpu_models: e
@@ -166,12 +166,12 @@ class C extends Chunk147913.Z {
     }
   }
   classifyHardware(e) {
-    if ((0, h.isWindows)()) {
+    if ((0, m.isWindows)()) {
       let t = e.some(e => v.rI.test(e)),
         n = e.some(e => v.nU.test(e));
       return t ? b.xH.MEETS_AUTO_ENABLE : n ? b.xH.MEETS_MINIMUM : b.xH.BELOW_MINIMUM
     }
-    return (0, h.isMac)() ? "arm64" === o.Z.remoteApp.getAppArch() ? b.xH.MEETS_AUTO_ENABLE : b.xH.MEETS_MINIMUM : b.xH.UNKNOWN
+    return (0, m.isMac)() ? "arm64" === o.Z.remoteApp.getAppArch() ? b.xH.MEETS_AUTO_ENABLE : b.xH.MEETS_MINIMUM : b.xH.UNKNOWN
   }
   applyUserVoiceRecording(e) {
     if (!(0, y.Z)(d.Z)) return;

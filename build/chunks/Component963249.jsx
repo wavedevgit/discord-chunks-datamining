@@ -91,8 +91,8 @@ function A(e) {
     onSubscriptionConfirmation: A,
     analyticsLocations: N,
     analyticsObject: P,
-    analyticsLocation: R,
-    analyticsSourceLocation: w,
+    analyticsLocation: w,
+    analyticsSourceLocation: R,
     confirmationFooter: D,
     isGift: x = false,
     giftMessage: L,
@@ -108,7 +108,7 @@ function A(e) {
     returnRef: H,
     subscription: Y,
     skipConfirm: W
-  } = null != e ? e : {}, K = false, z = null != (t = (0, g.b)()) ? t : (0, o.Z)(), q = p.default.getCurrentUser(), Q = (0, h.M5)(q, y.PremiumTypes.TIER_2), X = a()("payment-modal"), J = (0, h.Wz)(k), $ = false;
+  } = null != e ? e : {}, K = false, z = null != (t = (0, g.b)()) ? t : (0, o.Z)(), q = p.default.getCurrentUser(), Q = (0, m.M5)(q, y.PremiumTypes.TIER_2), X = a()("payment-modal"), J = (0, m.Wz)(k), $ = false;
   return (0, s.ZDy)(async () => {
     let {
       default: e
@@ -130,7 +130,7 @@ function A(e) {
         followupSKUInfo: O,
         onClose: e => {
           if ($) return;
-          $ = true, m.S.dispatch(b.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED);
+          $ = true, h.S.dispatch(b.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED);
           let t = () => {
             n(), null == S || S(e), e && (null == A || A()), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -147,8 +147,8 @@ function A(e) {
         onSubscriptionConfirmation: A,
         analyticsLocations: N,
         analyticsObject: P,
-        analyticsLocation: R,
-        analyticsSourceLocation: w,
+        analyticsLocation: w,
+        analyticsSourceLocation: R,
         confirmationFooter: D,
         trialId: U,
         postSuccessGuild: G,
@@ -164,7 +164,7 @@ function A(e) {
     }
   }, {
     onCloseRequest: () => {
-      $ || ($ = true, m.S.dispatch(b.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.Z.isDisplayingWowMomentConfirmation && f.Z.isAnimated ? setTimeout(() => {
+      $ || ($ = true, h.S.dispatch(b.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), f.Z.isDisplayingWowMomentConfirmation && f.Z.isAnimated ? setTimeout(() => {
         (0, s.Mr3)(X)
       }, E.P) : (0, s.Mr3)(X))
     },
@@ -173,8 +173,8 @@ function A(e) {
       K || _.default.track(b.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: z,
         payment_type: b.Zuq[b.GZQ.SUBSCRIPTION],
-        location: null != R ? R : P,
-        source: w,
+        location: null != w ? w : P,
+        source: R,
         subscription_type: b.NYc.PREMIUM,
         is_gift: x,
         sku_id: J,

@@ -9,10 +9,10 @@ require.d(exports, {
   Xf: () => O,
   Y4: () => y,
   _w: () => E,
-  jc: () => h,
+  jc: () => m,
   mm: () => P,
   vc: () => b,
-  wY: () => m
+  wY: () => h
 }), require("./415506.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -37,11 +37,11 @@ function _(e) {
   return t || (i -= r.getTimezoneOffset() * d), Math.floor(i / f) * f
 }
 
-function m(e, t) {
+function h(e, t) {
   return Math.floor((_(e, false) - _(t, false)) / f)
 }
 
-function h(e, t) {
+function m(e, t) {
   return (e.getTime() - t.getTime()) / f
 }
 
@@ -65,7 +65,7 @@ function y(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] && arguments[1],
     r = i().localeData(),
     a = i()(),
-    o = m(I(e), a.toDate());
+    o = h(I(e), a.toDate());
   if (o < false) return b(e, "L LT");
   if (o < 0) t = "lastDay";
   else if (o < 1) {
@@ -78,7 +78,7 @@ function y(e) {
 function O(e) {
   let t = i().localeData(),
     n = i()(),
-    r = m(I(e), n.toDate());
+    r = h(I(e), n.toDate());
   return 0 === r ? b(e, "LT") : false === r ? b(e, t.calendar("lastDay", S(e), n)) : r > false ? b(e, "dddd") : b(e, "L")
 }
 
@@ -98,7 +98,7 @@ function I(e) {
 function T(e) {
   let t, n = i().localeData(),
     r = new Date,
-    a = m(e, r);
+    a = h(e, r);
   return "sameElse" == (t = a < false ? "sameElse" : a < 0 ? "lastDay" : a < 1 ? "sameDay" : a < 2 ? "nextDay" : "sameElse") ? b(e, "LLL") : b(e, n.calendar(t, i()(e), i()(r)))
 }
 Chunk706454.default.addChangeListener(() => {

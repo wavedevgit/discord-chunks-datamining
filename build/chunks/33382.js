@@ -14,21 +14,21 @@ function a(e, t) {
       continue
     }
     var _ = e[o],
-      m = n[2],
-      h = n[3],
+      h = n[2],
+      m = n[3],
       g = n[4],
       E = n[5],
       b = n[6],
       y = n[7];
     s && (r.push(s), s = "");
-    var O = null != m && null != _ && _ !== m,
+    var O = null != h && null != _ && _ !== h,
       v = "+" === b || "*" === b,
       S = "?" === b || "*" === b,
       I = n[2] || l,
       T = g || E;
     r.push({
-      name: h || a++,
-      prefix: m || "",
+      name: m || a++,
+      prefix: h || "",
       delimiter: I,
       optional: S,
       repeat: v,
@@ -121,12 +121,12 @@ function _(e, t) {
   return f(e, t)
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   for (var r = [], i = 0; i < e.length; i++) r.push(E(e[i], t, n).source);
   return f(RegExp("(?:" + r.join("|") + ")", p(n)), t)
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   return g(a(e, n), t, n)
 }
 
@@ -142,10 +142,10 @@ function g(e, t, n) {
     }
   }
   var _ = u(n.delimiter || "/"),
-    m = o.slice(-_.length) === _;
-  return i || (o = (m ? o.slice(0, -_.length) : o) + "(?:" + _ + "(?=$))?"), a ? o += "$" : o += i && m ? "" : "(?=" + _ + "|$)", f(RegExp("^" + o, p(n)), t)
+    h = o.slice(-_.length) === _;
+  return i || (o = (h ? o.slice(0, -_.length) : o) + "(?:" + _ + "(?=$))?"), a ? o += "$" : o += i && h ? "" : "(?=" + _ + "|$)", f(RegExp("^" + o, p(n)), t)
 }
 
 function E(e, t, n) {
-  return (r(t) || (n = t || n, t = []), n = n || {}, e instanceof RegExp) ? _(e, t) : r(e) ? m(e, t, n) : h(e, t, n)
+  return (r(t) || (n = t || n, t = []), n = n || {}, e instanceof RegExp) ? _(e, t) : r(e) ? h(e, t, n) : m(e, t, n)
 }

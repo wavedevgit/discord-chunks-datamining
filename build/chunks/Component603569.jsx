@@ -31,7 +31,7 @@ let I = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
   A = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(g.default.RZqaJn),
     getLegacySearchKey: () => (0, c.Gl)("FamilyCenterPanel") ? true : d.s6.PRIVACY_FAMILY_CENTER,
-    icon: Chunk657707.BFJ,
+    icon: Chunk657707.GroupIcon,
     trailing: {
       type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
       getDismissibleContentTypes: () => [s.z.FAMILY_CENTER_NEW_BADGE],

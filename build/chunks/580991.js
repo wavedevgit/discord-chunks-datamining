@@ -53,23 +53,23 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {
+let h = {
     allowAutoQuality: false,
     defaultAutoQuality: false,
     migrateAutoQuality: false
   },
-  h = "GoLiveAutoQualityMigrationVersion",
+  m = "GoLiveAutoQualityMigrationVersion",
   g = 1,
   E = (0, Chunk722733.ZP)({
     name: "2025-10-go-live-auto-quality",
     kind: "user",
-    defaultConfig: m,
+    defaultConfig: h,
     variations: {
-      1: _(f({}, m), {
+      1: _(f({}, h), {
         allowAutoQuality: true,
         migrateAutoQuality: true
       }),
-      2: _(f({}, m), {
+      2: _(f({}, h), {
         allowAutoQuality: true,
         defaultAutoQuality: true
       })
@@ -105,7 +105,7 @@ function O() {
   let t = E.getConfig({
       location: "maybeMigrateToAutoQuality"
     }).migrateAutoQuality,
-    n = Number(null != (e = i.K.get(h)) ? e : 0);
+    n = Number(null != (e = i.K.get(m)) ? e : 0);
   if (!t || n >= g) return;
   let r = c.Z.getState();
   if (r.preset !== u.tI.PRESET_CUSTOM) {
@@ -115,7 +115,7 @@ function O() {
       frameRate: r.fps,
       soundshareEnabled: r.soundshareEnabled,
       noTrack: true
-    }), i.K.set(h, g);
+    }), i.K.set(m, g);
     return
   }
 }

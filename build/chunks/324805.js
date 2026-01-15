@@ -7,7 +7,7 @@ require.d(exports, {
   Ew: () => U,
   HO: () => E,
   Jk: () => T,
-  Jp: () => w,
+  Jp: () => R,
   Lv: () => P,
   NH: () => b,
   Ot: () => f,
@@ -19,13 +19,13 @@ require.d(exports, {
   V_: () => v,
   XZ: () => p,
   a_: () => c.a,
-  cd: () => m,
+  cd: () => h,
   dr: () => d,
   fI: () => M,
   l$: () => N,
   oH: () => x,
   tD: () => g,
-  tt: () => R,
+  tt: () => w,
   v6: () => A,
   wF: () => I,
   yq: () => D
@@ -52,11 +52,11 @@ let f = Chunk70956.Z.Millis.MINUTE * Chunk758846.c.ConsecutiveHeartbeatPeriodMin
     friction: 30,
     clamp: true
   };
-var m = function(e) {
+var h = function(e) {
   return e.CONSOLE = "CONSOLE", e.DESKTOP = "DESKTOP", e
 }({});
-let h = (0, Chunk544891.K0)(),
-  g = false !== h.indexOf("localhost") || false !== h.indexOf("127.0.0.1") ? "".concat(h, "/_cdn_storage/") : "https://cdn.discordapp.com/",
+let m = (0, Chunk544891.K0)(),
+  g = false !== m.indexOf("localhost") || false !== m.indexOf("127.0.0.1") ? "".concat(m, "/_cdn_storage/") : "https://cdn.discordapp.com/",
   E = g + "quests/";
 var b = function(e) {
   return e.COLLAPSED = "collapsed", e.EXPANDED = "expanded", e.CLOSED = "closed", e.SOFT_DISMISSED = "soft-dismissed", e.RESET_TO_PREVIOUS = "reset-to-previous", e
@@ -73,8 +73,8 @@ let S = "1333839522189938740",
   A = new Set([Chunk49436.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk49436.Ok.MOBILE_HOME_DOCK_AREA]),
   N = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
   P = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
-  R = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
-  w = {
+  w = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
+  R = {
     is_targeted: false
   };
 var D = function(e) {

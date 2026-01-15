@@ -2,7 +2,7 @@
 /** chunk id: 623573, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => m
+  default: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -46,8 +46,8 @@ function _(e) {
     toastContent: f,
     initialStep: p = l.h8.PAYMENT_TYPE,
     overwriteSubscriptionPaymentSource: _ = false
-  } = e, m = (0, c.fL)(), h = (0, c.vP)({
-    paymentModalArgs: m,
+  } = e, h = (0, c.fL)(), m = (0, c.vP)({
+    paymentModalArgs: h,
     initialStep: p,
     prependSteps: [],
     appendSteps: [],
@@ -78,12 +78,12 @@ function _(e) {
     children: (0, r.jsx)("form", {
       className: d.form,
       onSubmit: g,
-      children: h
+      children: m
     })
   })
 }
 
-function m(e) {
+function h(e) {
   let t = null;
   return (0, r.jsx)(s.PaymentContextProvider, {
     activeSubscription: t,

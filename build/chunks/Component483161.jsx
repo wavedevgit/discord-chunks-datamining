@@ -55,7 +55,7 @@ let m = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
   D = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
     useTitle: () => P.intl.string(P.t["vi7f+q"]),
     getLegacySearchKey: () => (0, O.Gl)("ProfilePanel") ? true : L.s6.PROFILE_CUSTOMIZATION,
-    icon: Chunk657707.tBG,
+    icon: Chunk657707.UserIcon,
     stronglyDiscouragedCustomComponent: () => {
       var t;
       let e = (0, s.e7)([N.default], () => N.default.getCurrentUser()),
@@ -87,7 +87,7 @@ let m = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
               color: "currentColor",
               lineClamp: 1,
               children: P.intl.string(P.t.Ip9nBS)
-            }), (0, i.jsx)(l.vdY, {
+            }), (0, i.jsx)(l.PencilIcon, {
               size: "xxs",
               color: "currentColor"
             })]

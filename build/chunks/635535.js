@@ -70,17 +70,17 @@ function f(e) {
     f = e.medium,
     p = [],
     _ = [],
-    m = [];
+    h = [];
 
-  function h(e, t) {
+  function m(e, t) {
     var n = Array((e.match(/M/g) || []).length + 1),
       r = Array((e.match(/E/g) || []).length + 1);
     return n.length > 2 && (t = t.replace(/(M|L)+/, n.join("$1"))), r.length > 2 && (t = t.replace(/([Eec])+/, r.join("$1"))), t
   }
-  for (t in o) o.hasOwnProperty(t) && (r = d(n = h(t, o[t]))) && (p.push(r), c(r) ? m.push(n) : u(r) && _.push(n));
+  for (t in o) o.hasOwnProperty(t) && (r = d(n = m(t, o[t]))) && (p.push(r), c(r) ? h.push(n) : u(r) && _.push(n));
   for (i = 0; i < _.length; i += 1)
-    for (a = 0; a < m.length; a += 1)(r = d(n = f.replace("{0}", _[i]).replace("{1}", m[a]).replace(/^[,\s]+|[,\s]+$/gi, ""))) && p.push(r);
-  for (t in s) s.hasOwnProperty(t) && (r = d(n = h(t, s[t]))) && p.push(r);
-  for (t in l) l.hasOwnProperty(t) && (r = d(n = h(t, l[t]))) && p.push(r);
+    for (a = 0; a < h.length; a += 1)(r = d(n = f.replace("{0}", _[i]).replace("{1}", h[a]).replace(/^[,\s]+|[,\s]+$/gi, ""))) && p.push(r);
+  for (t in s) s.hasOwnProperty(t) && (r = d(n = m(t, s[t]))) && p.push(r);
+  for (t in l) l.hasOwnProperty(t) && (r = d(n = m(t, l[t]))) && p.push(r);
   return p
 }

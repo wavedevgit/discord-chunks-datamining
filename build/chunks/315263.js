@@ -53,7 +53,7 @@ async function Z(e, t) {
 }
 async function F(e) {
   var t, n;
-  let r = w.Z.getInvite(e.code);
+  let r = R.Z.getInvite(e.code);
   if (null == r) {
     let {
       invite: t
@@ -68,7 +68,7 @@ async function F(e) {
     l = false;
   if (o && null != r.roles && r.roles.length > 0) {
     let e = P.default.getId(),
-      t = R.ZP.getMember(a, e),
+      t = w.ZP.getMember(a, e),
       i = new Set(null != (n = null == t ? true : t.roles) ? n : []);
     l = r.roles.some(e => !i.has(e.id))
   }
@@ -85,8 +85,8 @@ function V(e) {
     skipExtensionCheck: a,
     analyticsLocations: s
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : B, P = (0, g.zO)(e);
-  if (null != P && (P.type === h.g.INVITE || P.type === h.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), F(P), true);
-  if (null != P && (P.type === h.g.APP_DIRECTORY_PROFILE || P.type === h.g.APP_DIRECTORY_STOREFRONT || P.type === h.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
+  if (null != P && (P.type === m.g.INVITE || P.type === m.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), F(P), true);
+  if (null != P && (P.type === m.g.APP_DIRECTORY_PROFILE || P.type === m.g.APP_DIRECTORY_STOREFRONT || P.type === m.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
     var i, a;
     null == t || t.preventDefault();
     let {
@@ -94,7 +94,7 @@ function V(e) {
     } = P, {
       applicationId: s,
       skuId: l
-    } = P.type === h.g.APP_DIRECTORY_PROFILE || P.type === h.g.APP_DIRECTORY_STOREFRONT ? {
+    } = P.type === m.g.APP_DIRECTORY_PROFILE || P.type === m.g.APP_DIRECTORY_STOREFRONT ? {
       applicationId: o,
       skuId: true
     } : null != (i = (0, p.Q)(o)) ? i : {
@@ -117,23 +117,23 @@ function V(e) {
       t({
         tab: r.APPS,
         applicationId: s,
-        section: (0, y.Z)(i, P.type === h.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
+        section: (0, y.Z)(i, P.type === m.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
         skuId: l
       })
     })), true
   };
-  if (null != P && P.type === h.g.ACTIVITY_BOOKMARK) return e => {
+  if (null != P && P.type === m.g.ACTIVITY_BOOKMARK) return e => {
     var t, n;
     null == e || e.preventDefault();
     let {
       code: r,
       url: i
-    } = P, a = _.Z.getApplication(r), f = new URL(i), p = null != (t = f.searchParams.get("referrer_id")) ? t : true, h = (0, d.Z)(), {
+    } = P, a = _.Z.getApplication(r), f = new URL(i), p = null != (t = f.searchParams.get("referrer_id")) ? t : true, m = (0, d.Z)(), {
       currentChannelId: g,
       instanceId: E,
       isCurrentlyInInstance: b,
       canLaunchInChannel: y
-    } = (0, m.v)(r);
+    } = (0, h.v)(r);
     if (y) return !b && null != g && ((0, u.ur)(r, f.searchParams.get("link_id"), f.searchParams.get("custom_id")).then(async e => {
       let {
         customId: t
@@ -142,7 +142,7 @@ function V(e) {
         channelId: g,
         applicationId: r,
         isStart: null == E,
-        embeddedActivitiesManager: h,
+        embeddedActivitiesManager: m,
         customId: t,
         referrerId: p,
         analyticsLocations: s
@@ -166,7 +166,7 @@ function V(e) {
       }).catch(() => {}), true)
     }
   };
-  if (null != P && P.type === h.g.GUILD_PRODUCT) return e => {
+  if (null != P && P.type === m.g.GUILD_PRODUCT) return e => {
     null == e || e.preventDefault();
     let [t, r] = P.code.split("-");
     return n.e("84239").then(n.bind(n, 838433)).then(e => {
@@ -176,7 +176,7 @@ function V(e) {
       n(t, r)
     }), true
   };
-  if (null != P && P.type === h.g.SOCIAL_LAYER_STOREFRONT) return e => {
+  if (null != P && P.type === m.g.SOCIAL_LAYER_STOREFRONT) return e => {
     null == e || e.preventDefault();
     let [t, r] = P.code.split("-");
     return Promise.resolve().then(n.bind(n, 705338)).then(e => {
@@ -189,7 +189,7 @@ function V(e) {
       })
     }), true
   };
-  if (null != P && P.type === h.g.QUESTS_EMBED && (0, S.c)({
+  if (null != P && P.type === m.g.QUESTS_EMBED && (0, S.c)({
       location: G.dr.EMBED_MOBILE
     })) return e => {
     var t, r, a;
@@ -213,12 +213,12 @@ function V(e) {
     }), true
   };
   let {
-    host: R,
-    hostname: w,
+    host: w,
+    hostname: R,
     pathname: L,
     search: Z,
     hash: V
-  } = null != (t = M.Z.toURLSafe(e)) ? t : {}, H = M.Z.isDiscordHostname(null != w ? w : null) || M.Z.isDiscordLocalhost(null != R ? R : null, null != w ? w : null);
+  } = null != (t = M.Z.toURLSafe(e)) ? t : {}, H = M.Z.isDiscordHostname(null != R ? R : null) || M.Z.isDiscordLocalhost(null != w ? w : null, null != R ? R : null);
   if (H && ((null == L ? true : L.startsWith("/application-directory")) || (null == L ? true : L.startsWith("/discovery/applications")))) {
     let e = L.split("/"),
       t = null == L ? true : L.startsWith("/discovery/applications"),
@@ -259,7 +259,7 @@ function V(e) {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(69580), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != P && P.type === h.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(U.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != P && P.type === m.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(U.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), true)
   }

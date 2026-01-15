@@ -48,13 +48,13 @@ let g = e => {
       description: n
     } = e, i = (0, d.cb)(t);
     return (0, r.jsx)("div", {
-      className: h.mediaContainer,
+      className: m.mediaContainer,
       children: i ? (0, r.jsx)(u.Z, {
-        className: o()(h.video, h.media),
+        className: o()(m.video, m.media),
         controls: true,
         src: t
       }) : (0, r.jsx)("img", {
-        className: o()(h.image, h.media),
+        className: o()(m.image, m.media),
         src: t,
         alt: n
       })
@@ -64,7 +64,7 @@ let g = e => {
 function y(e) {
   c.Z.pop(), (0, f.t)({
     id: "explicit-media-false-positive-modal",
-    text: m.intl.string(m.t.gFsTKu)
+    text: h.intl.string(h.t.gFsTKu)
   }), e()
 }
 
@@ -86,7 +86,7 @@ function O(e) {
       messageId: n,
       context: o
     }), f()
-  }, [t, n, o, f]), h = i.useCallback(() => {
+  }, [t, n, o, f]), m = i.useCallback(() => {
     null == u || u(), (0, p.aP)({
       action: p.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
@@ -104,16 +104,16 @@ function O(e) {
   }, [t, n, o]), (0, r.jsxs)(l.Modal, {
     transitionState: d,
     onClose: f,
-    title: m.intl.string(m.t.TPpVkI),
-    subtitle: m.intl.string(m.t["z4du/I"]),
+    title: h.intl.string(h.t.TPpVkI),
+    subtitle: h.intl.string(h.t["z4du/I"]),
     actions: [{
-      text: m.intl.string(m.t["ETE/oC"]),
+      text: h.intl.string(h.t["ETE/oC"]),
       onClick: _,
       variant: "secondary",
       disabled: a
     }, {
-      text: m.intl.string(m.t["cY+Oob"]),
-      onClick: h,
+      text: h.intl.string(h.t["cY+Oob"]),
+      onClick: m,
       loading: a,
       disabled: a
     }],

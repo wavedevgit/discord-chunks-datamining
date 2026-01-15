@@ -2,7 +2,7 @@
 /** chunk id: 23750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hx: () => m,
+  Hx: () => h,
   ZP: () => E,
   hv: () => g,
   pi: () => _
@@ -58,17 +58,17 @@ class _ extends Chunk81825.Z {
     return (0, i.yE)(this.flags, e)
   }
   constructor(e) {
-    var t, n, r, i, a, o, s, l, d, f, p, _, m;
-    super(), u(this, "type", true), u(this, "content", true), u(this, "attachments", true), u(this, "embeds", true), u(this, "timestamp", true), u(this, "editedTimestamp", true), u(this, "flags", true), u(this, "components", true), u(this, "codedLinks", true), u(this, "stickers", true), u(this, "stickerItems", true), u(this, "soundboardSounds", true), this.type = null != (t = e.type) ? t : c.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (a = e.timestamp) ? a : new Date, this.editedTimestamp = null != (o = e.editedTimestamp) ? o : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (_ = null != (p = e.sticker_items) ? p : e.stickerItems) ? _ : [], this.soundboardSounds = null != (m = e.soundboard_sounds) ? m : e.soundboardSounds
+    var t, n, r, i, a, o, s, l, d, f, p, _, h;
+    super(), u(this, "type", true), u(this, "content", true), u(this, "attachments", true), u(this, "embeds", true), u(this, "timestamp", true), u(this, "editedTimestamp", true), u(this, "flags", true), u(this, "components", true), u(this, "codedLinks", true), u(this, "stickers", true), u(this, "stickerItems", true), u(this, "soundboardSounds", true), this.type = null != (t = e.type) ? t : c.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (a = e.timestamp) ? a : new Date, this.editedTimestamp = null != (o = e.editedTimestamp) ? o : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (_ = null != (p = e.sticker_items) ? p : e.stickerItems) ? _ : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
   }
 }
-class m extends Chunk81825.Z {
+class h extends Chunk81825.Z {
   constructor(e) {
     var t;
     super(), u(this, "message", true), u(this, "moderatorReport", true), this.message = new _(e.message), this.moderatorReport = null != (t = e.moderator_report) ? t : null
   }
 }
-class h extends _ {
+class m extends _ {
   isEdited() {
     return null != this.editedTimestamp
   }
@@ -218,12 +218,12 @@ class h extends _ {
       {
         count: f,
         burst_count: _,
-        count_details: m
+        count_details: h
       } = null != (t = u[c]) ? t : {},
-      h = null != (n = null == m ? true : m.normal) ? n : 0,
-      g = null != (r = null == m ? true : m.burst) ? r : 0,
-      E = null != (i = null == m ? true : m.vote) ? i : 0;
-    return false !== c && f <= 0 && _ <= 0 && h <= 0 && g <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
+      m = null != (n = null == h ? true : h.normal) ? n : 0,
+      g = null != (r = null == h ? true : h.burst) ? r : 0,
+      E = null != (i = null == h ? true : h.vote) ? i : 0;
+    return false !== c && f <= 0 && _ <= 0 && m <= 0 && g <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
   }
   removeReactionsForEmoji(e) {
     return this.set("reactions", this.reactions.filter(t => !(0, l.ir)(t.emoji, e)))
@@ -265,4 +265,4 @@ class h extends _ {
 function g(e) {
   return (0, i.yE)(e.flags, c.iLy.IS_COMPONENTS_V2)
 }
-let E = h
+let E = m

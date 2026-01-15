@@ -52,11 +52,11 @@ class M extends Chunk473749.PureComponent {
   get copyButtonText() {
     switch (this.state.copyMode) {
       case f.uA3.SUCCESS:
-        return w.intl.string(w.t.XVvPjU);
+        return R.intl.string(R.t.XVvPjU);
       case f.uA3.ERROR:
-        return w.intl.string(w.t.i4GM3L);
+        return R.intl.string(R.t.i4GM3L);
       default:
-        return w.intl.string(w.t.OpuAlK)
+        return R.intl.string(R.t.OpuAlK)
     }
   }
   handleRevoke(e) {
@@ -69,8 +69,8 @@ class M extends Chunk473749.PureComponent {
     } = this.props, {
       copyMode: n
     } = this.state;
-    return (0, r.jsxs)(h.Z, {
-      direction: h.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(m.Z, {
+      direction: m.Z.Direction.VERTICAL,
       className: D.giftCodeRow,
       children: [(0, r.jsx)(f.kO8, {
         className: D.codeText,
@@ -78,20 +78,20 @@ class M extends Chunk473749.PureComponent {
         text: this.copyButtonText,
         mode: n,
         supportsCopy: A.wS,
-        hideMessage: e ? w.intl.string(w.t["0RLn47"]) : null,
+        hideMessage: e ? R.intl.string(R.t["0RLn47"]) : null,
         onCopy: this.handleCopy,
         buttonColor: d.Tt.BRAND,
         buttonLook: d.iL.FILLED
       }), (0, r.jsxs)("div", {
         className: D.subTextRow,
         children: [null != t.expiresAt ? (0, r.jsxs)(i.Fragment, {
-          children: [w.intl.format(w.t.ltVZcJ, {
+          children: [R.intl.format(R.t.ltVZcJ, {
             hours: t.expiresAt.diff(l()(), "h")
           }), " —\xa0"]
         }) : null, (0, r.jsx)(f.P3F, {
           tag: "a",
           onClick: () => this.handleRevoke(t.code),
-          children: w.intl.string(w.t.v6Yazx)
+          children: R.intl.string(R.t.v6Yazx)
         })]
       })]
     })
@@ -153,13 +153,13 @@ class k extends Chunk473749.PureComponent {
         size: g.A.XSMALL,
         skuId: e.id,
         className: D.applicationSubtitleIcon
-      }), w.intl.format(w.t["6plpZi"], {
+      }), R.intl.format(R.t["6plpZi"], {
         applicationName: n.name,
         copies: t.length
       })]
     }) : (0, r.jsx)("div", {
       className: D.subtitleHeader,
-      children: w.intl.format(w.t.zMcvcA, {
+      children: R.intl.format(R.t.zMcvcA, {
         copies: t.length
       })
     })
@@ -170,10 +170,10 @@ class k extends Chunk473749.PureComponent {
       subscriptionPlan: n,
       giftCodeBatchId: i
     } = this.props;
-    return e = i === R.m8 ? w.intl.string(w.t.odsU6W) : i === R.rX && null != n ? w.intl.formatToPlainString(n.interval === R.rV.MONTH ? w.t.uZjpiJ : w.t.bJW1EA, {
+    return e = i === w.m8 ? R.intl.string(R.t.odsU6W) : i === w.rX && null != n ? R.intl.formatToPlainString(n.interval === w.rV.MONTH ? R.t.uZjpiJ : R.t.bJW1EA, {
       skuName: t.name,
       intervalCount: n.intervalCount
-    }) : null == n ? t.name : w.intl.formatToPlainString(n.interval === R.rV.MONTH ? w.t.rCJvqo : w.t.Vd3Iu8, {
+    }) : null == n ? t.name : R.intl.formatToPlainString(n.interval === w.rV.MONTH ? R.t.rCJvqo : R.t.Vd3Iu8, {
       skuName: t.name,
       intervalCount: n.intervalCount
     }), (0, r.jsx)("div", {
@@ -182,17 +182,17 @@ class k extends Chunk473749.PureComponent {
     })
   }
   renderGenerateGiftCodeRow() {
-    return (0, r.jsxs)(h.Z, {
-      justify: h.Z.Justify.BETWEEN,
-      align: h.Z.Align.CENTER,
+    return (0, r.jsxs)(m.Z, {
+      justify: m.Z.Justify.BETWEEN,
+      align: m.Z.Align.CENTER,
       className: D.generateCodeRow,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/normal",
-        children: w.intl.string(w.t.lELyPj)
+        children: R.intl.string(R.t.lELyPj)
       }), (0, r.jsx)(f.Button, {
         variant: "primary",
         size: "sm",
-        text: w.intl.string(w.t.Q3Qguo),
+        text: R.intl.string(R.t.Q3Qguo),
         loading: this.state.isCreating,
         onClick: this.handleGenerateGiftCode
       })]
@@ -226,8 +226,8 @@ class k extends Chunk473749.PureComponent {
           splashArtURL: t.getSplashURL(L),
           children: (0, r.jsxs)("div", {
             className: D.cardHeader,
-            children: [(0, r.jsxs)(h.Z, {
-              align: h.Z.Align.CENTER,
+            children: [(0, r.jsxs)(m.Z, {
+              align: m.Z.Align.CENTER,
               children: [this.renderGiftIcon(), (0, r.jsxs)("div", {
                 className: D.headerText,
                 children: [this.renderTitle(), this.renderSubtitle()]
@@ -294,7 +294,7 @@ let U = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     hideCodes: S.Z.enabled,
     isFetching: v.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: v.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
-    application: m.Z.getApplication(i.applicationId),
+    application: h.Z.getApplication(i.applicationId),
     subscriptionPlan: null != n ? (0, P.oE)(n) : null,
     giftCodes: a
   }

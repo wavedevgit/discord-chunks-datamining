@@ -28,13 +28,13 @@ let g = e => {
       trackUserProfileAction: o
     } = (0, d.KZ)();
     return (0, r.jsxs)("div", {
-      className: a()(h.toast, m.toastPadding),
+      className: a()(m.toast, h.toastPadding),
       children: [(0, r.jsx)(l.dz2, {
         size: "sm",
-        className: m.toastIcon,
+        className: h.toastIcon,
         color: l.TVs.colors.STATUS_POSITIVE.css
       }), (0, r.jsxs)("div", {
-        className: m.successToast,
+        className: h.successToast,
         children: [(0, r.jsx)(l.Text, {
           color: "text-strong",
           variant: "text-sm/semibold",
@@ -55,10 +55,10 @@ let g = e => {
     })
   },
   E = () => (0, r.jsxs)("div", {
-    className: a()(h.toast, m.toastPadding),
+    className: a()(m.toast, h.toastPadding),
     children: [(0, r.jsx)(l.$jN, {
       type: l.RAz.SPINNING_CIRCLE_SIMPLE,
-      className: m.toastIcon
+      className: h.toastIcon
     }), (0, r.jsx)(l.Text, {
       color: "text-strong",
       variant: "text-sm/semibold",
@@ -73,7 +73,7 @@ let g = e => {
     } = e, {
       interactionTypeSent: c,
       showInteractionToast: d
-    } = (0, f.Xo)(), h = c === p.P.REPLY ? _.intl.string(_.t.BPaiaa) : _.intl.string(_.t.Ry2EtG), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), y = (0, l.Yzy)(d, {
+    } = (0, f.Xo)(), m = c === p.P.REPLY ? _.intl.string(_.t.BPaiaa) : _.intl.string(_.t.Ry2EtG), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), y = (0, l.Yzy)(d, {
       from: {
         transform: b ? "translateY(0)" : "translateY(16px)",
         opacity: 0
@@ -96,7 +96,7 @@ let g = e => {
     }, "animate-always");
     return (0, r.jsx)(r.Fragment, {
       children: y((e, s) => s && (0, r.jsx)(o.animated.div, {
-        className: a()(m.toastContainer, i),
+        className: a()(h.toastContainer, i),
         style: e,
         children: null != c ? (0, r.jsx)(l.FNi, {
           message: "",
@@ -105,7 +105,7 @@ let g = e => {
           options: {
             component: (0, r.jsx)(g, {
               userId: t,
-              message: h,
+              message: m,
               onClose: n
             })
           }

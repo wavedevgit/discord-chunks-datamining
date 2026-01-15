@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk72775 = require("./72775.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -216,8 +216,8 @@ class k extends Chunk473749.Component {
       onChange: f,
       onKeyDown: p,
       onResize: _,
-      onSubmit: m,
-      onSubmitFailure: h,
+      onSubmit: h,
+      onSubmitFailure: m,
       channel: g,
       type: b,
       useSlate: y,
@@ -225,7 +225,7 @@ class k extends Chunk473749.Component {
       useNewSlashCommands: I,
       canOnlyUseTextCommands: A,
       className: P,
-      id: w,
+      id: R,
       required: x,
       maxCharacterCount: j,
       allowNewLines: M,
@@ -240,11 +240,11 @@ class k extends Chunk473749.Component {
       popup: H
     } = this.state, Y = {
       channel: g,
-      className: o()(P, R.textArea, {
-        [R.textAreaSlate]: y,
-        [R.textAreaDisabled]: d || V
+      className: o()(P, w.textArea, {
+        [w.textAreaSlate]: y,
+        [w.textAreaDisabled]: d || V
       }),
-      id: w,
+      id: R,
       placeholder: this.getPlaceholder(),
       required: x,
       accessibilityLabel: F,
@@ -263,12 +263,12 @@ class k extends Chunk473749.Component {
       onChange: f,
       onResize: _,
       onKeyDown: p,
-      onSubmit: m,
+      onSubmit: h,
       textAreaPaddingClassName: o()({
-        [R.textAreaForPostCreation]: b === O.Ie.CREATE_FORUM_POST,
-        [R.textAreaCustomGift]: b === O.Ie.CUSTOM_GIFT,
-        [R.textAreaForUserProfile]: b === O.Ie.USER_PROFILE,
-        [R.textAreaForOverlayInlineReply]: b === O.Ie.OVERLAY_INLINE_REPLY
+        [w.textAreaForPostCreation]: b === O.Ie.CREATE_FORUM_POST,
+        [w.textAreaCustomGift]: b === O.Ie.CUSTOM_GIFT,
+        [w.textAreaForUserProfile]: b === O.Ie.USER_PROFILE,
+        [w.textAreaForOverlayInlineReply]: b === O.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: S,
       useNewSlashCommands: I,
@@ -291,7 +291,7 @@ class k extends Chunk473749.Component {
       value: d && !B ? (0, v.JM)("") : u,
       canUseCommands: null == (t = b.commands) ? true : t.enabled,
       canOnlyUseTextCommands: A,
-      onSubmitFailure: h
+      onSubmitFailure: m
     })) : (0, r.jsx)(T.Z, L(D({
       ref: this.ref
     }, Y), {
@@ -309,12 +309,12 @@ class k extends Chunk473749.Component {
   }
   constructor(e) {
     var t;
-    super(e), t = this, w(this, "ref", i.createRef()), w(this, "_focusBlurQueue", Promise.resolve()), w(this, "_unsubscribe", true), w(this, "_initTimeoutId", null), w(this, "_cachedEditorWindow", null), w(this, "handleSelectionChange", () => {
+    super(e), t = this, R(this, "ref", i.createRef()), R(this, "_focusBlurQueue", Promise.resolve()), R(this, "_unsubscribe", true), R(this, "_initTimeoutId", null), R(this, "_cachedEditorWindow", null), R(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null == (t = (n = document).getSelection) || null == (e = t.call(n)) ? true : e.toString())
       }
-    }), w(this, "focus", () => {
+    }), R(this, "focus", () => {
       var e;
       null == (e = this._focusBlurQueue) || e.then(() => {
         this.setState({
@@ -324,41 +324,41 @@ class k extends Chunk473749.Component {
           null != e && e.focus()
         })
       })
-    }), w(this, "saveCurrentText", function() {
+    }), R(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), w(this, "handleBeforeUnload", () => this.saveCurrentText()), w(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), w(this, "handleEnter", e => {
+    }), R(this, "handleBeforeUnload", () => this.saveCurrentText()), R(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), R(this, "handleEnter", e => {
       var t, n;
       return null == (t = (n = this.props).onEnter) ? true : t.call(n, e)
-    }), w(this, "handleTab", () => {
+    }), R(this, "handleTab", () => {
       var e, t;
       return null == (e = (t = this.props).onTab) ? true : e.call(t)
-    }), w(this, "handleMoveSelection", e => {
+    }), R(this, "handleMoveSelection", e => {
       var t, n;
       return null == (t = (n = this.props).onMoveSelection) ? true : t.call(n, e)
-    }), w(this, "maybeShowAutocomplete", () => {
+    }), R(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onMaybeShowAutocomplete) ? true : e.call(t)
-    }), w(this, "hideAutocomplete", () => {
+    }), R(this, "hideAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? true : e.call(t)
-    }), w(this, "handleSaveCurrentText", e => {
+    }), R(this, "handleSaveCurrentText", e => {
       u.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), w(this, "handleClearText", () => {
+    }), R(this, "handleClearText", () => {
       var e, t;
       null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, v.JM)(""))
-    }), w(this, "handleInsertText", e => {
+    }), R(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = false
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), w(this, "handleFocus", e => {
+    }), R(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -367,7 +367,7 @@ class k extends Chunk473749.Component {
       null == t || t(e), n || this.setState({
         focused: true
       })
-    }), w(this, "handleBlur", e => {
+    }), R(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -376,7 +376,7 @@ class k extends Chunk473749.Component {
       null == t || t(e), n && this.setState({
         focused: false
       })
-    }), w(this, "handlePaste", e => {
+    }), R(this, "handlePaste", e => {
       var t, n, r;
       let i = null == (n = e.target) || null == (t = n.ownerDocument) ? true : t.defaultView,
         {
@@ -387,21 +387,21 @@ class k extends Chunk473749.Component {
           maxCharacterCount: c,
           type: u
         } = this.props,
-        h = null != i ? (0, I.im)(i) : null,
+        m = null != i ? (0, I.im)(i) : null,
         E = (0, I.Mo)(),
-        b = null != (r = null != h ? h : E) ? r : a,
+        b = null != (r = null != m ? m : E) ? r : a,
         y = (0, I._K)(i, this._getEditorWindow()) ? a : b;
       if (null == l || !y.isPrivate() && !o || y.isPrivate() && y.isManaged()) returnfalse;
       let O = e => {
           var t, n;
-          let r = m.Z.getActiveCommand(y.id);
+          let r = h.Z.getActiveCommand(y.id);
           if (null == r) return l(e, y, u.drafts.type, {
             requireConfirm: true,
             origin: "clipboard"
           });
           let i = null != (t = u.drafts.commandType) ? t : u.drafts.type,
             a = null,
-            o = m.Z.getActiveOption(y.id);
+            o = h.Z.getActiveOption(y.id);
           null != (a = (null == o ? true : o.type) === p.jw.ATTACHMENT ? o : null == (n = r.options) ? true : n.find(e => {
             if (e.type === p.jw.ATTACHMENT) return null == g.Z.getUpload(y.id, e.name, i)
           })) && d.Z.setFile({

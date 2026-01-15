@@ -25,15 +25,15 @@ function d(e, t) {
     let p = i.Z.getShortAt(n, d),
       {
         tagName: _,
-        tagNameSize: m
+        tagNameSize: h
       } = f(n, d += l);
-    d += m;
-    let h = i.Z.getLongAt(n, d);
+    d += h;
+    let m = i.Z.getLongAt(n, d);
     if (d += c, e === s) {
-      let e = (0, r.Wp)(n.buffer, d, h),
+      let e = (0, r.Wp)(n.buffer, d, m),
         i = {
           id: p,
-          value: (0, r.oH)(e, 0, h)
+          value: (0, r.oH)(e, 0, m)
         };
       if (a.Z[p]) {
         try {
@@ -44,7 +44,7 @@ function d(e, t) {
         o[_ || a.Z[p].name] = i
       } else t && (o[`undefined-${p}`] = i)
     }
-    d += h + h % 2
+    d += m + m % 2
   }
   return o
 }

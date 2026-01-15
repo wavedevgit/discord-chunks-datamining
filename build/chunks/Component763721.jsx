@@ -2,7 +2,7 @@
 /** chunk id: 763721, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => h
+  z: () => m
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,7 +67,7 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = [{
+let h = [{
     id: "strength",
     label: "Strength",
     icon: Chunk481060.lOy
@@ -91,7 +91,7 @@ let m = [{
     id: "constitution",
     label: "Constitution"
   }],
-  h = {
+  m = {
     title: "Input Components",
     stories: [{
       name: "TextInput",
@@ -100,15 +100,15 @@ let m = [{
           leading: t,
           trailing: n
         } = e, a = p(e, ["leading", "trailing"]);
-        let [c, d] = i.useState(""), _ = (0, s.U)("UserSettingsDesignSystems"), [h, g] = i.useState(m), E = i.useCallback(e => {
-          g(h.filter(t => !e.has(t.id)))
-        }, [h]);
+        let [c, d] = i.useState(""), _ = (0, s.U)("UserSettingsDesignSystems"), [m, g] = i.useState(h), E = i.useCallback(e => {
+          g(m.filter(t => !e.has(t.id)))
+        }, [m]);
 
         function b(e) {
           if (_) switch (e) {
             case "tags":
               return {
-                type: "tags", label: "Tags", items: h, onRemove: E
+                type: "tags", label: "Tags", items: m, onRemove: E
               };
             case "icon":
               return {
@@ -142,7 +142,7 @@ let m = [{
             text: "Reset Tags",
             size: "sm",
             variant: "secondary",
-            onClick: () => g(m)
+            onClick: () => g(h)
           }) : null]
         })
       },
@@ -382,7 +382,7 @@ let m = [{
           disabled: d,
           placeholder: p,
           value: _ = "",
-          readOnly: h,
+          readOnly: m,
           helperText: g,
           successMessage: E,
           showCharacterCount: b
@@ -395,7 +395,7 @@ let m = [{
           error: c,
           disabled: d,
           placeholder: p,
-          readOnly: h,
+          readOnly: m,
           helperText: g,
           showCharacterCount: b,
           successMessage: E
@@ -428,7 +428,7 @@ let m = [{
               leading: {
                 type: "tags",
                 label: "Tags",
-                items: m.slice(0, 3)
+                items: h.slice(0, 3)
               }
             }))]
           }), (0, r.jsx)(a.izJ, {}), (0, r.jsxs)(a.C3N, {

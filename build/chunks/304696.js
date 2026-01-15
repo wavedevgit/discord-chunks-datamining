@@ -4,12 +4,12 @@
 require.d(exports, {
   AV: () => s,
   Fs: () => l,
-  M1: () => h,
+  M1: () => m,
   NL: () => u,
   Nt: () => d,
   T2: () => f,
   V_: () => c,
-  f2: () => m,
+  f2: () => h,
   zo: () => _
 }), require("./415506.js");
 var Chunk572004 = require("./572004.js"),
@@ -102,7 +102,7 @@ let p = e => "".concat(location.protocol, "//").concat(location.host, "/quests/"
 function _(e) {
   return e.ctaConfig.link
 }
-let m = (e, t) => {
+let h = (e, t) => {
   (0, i._3)({
     questId: e,
     questContent: t.content,
@@ -113,7 +113,7 @@ let m = (e, t) => {
   }), (0, r.JG)(p(e))
 };
 
-function h(e) {
+function m(e) {
   if (0 === e.rewardsConfig.rewards.length) throw Error("Quest ".concat(e.id, " has no rewards configured"));
   return e.rewardsConfig.rewards[0]
 }

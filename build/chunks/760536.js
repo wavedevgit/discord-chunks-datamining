@@ -49,17 +49,17 @@ var Chunk288660 = require("./288660.js"),
       p = d.split(t.delimiter, t.throwOnLimitExceeded ? f + 1 : f);
     if (t.throwOnLimitExceeded && p.length > f) throw RangeError("Parameter limit exceeded. Only " + f + " parameter" + (1 === f ? "" : "s") + " allowed.");
     var _ = false,
-      m = t.charset;
+      h = t.charset;
     if (t.charsetSentinel)
-      for (h = 0; h < p.length; ++h) 0 === p[h].indexOf("utf8=") && (p[h] === u ? m = "utf-8" : p[h] === c && (m = "iso-8859-1"), _ = h, h = p.length);
-    for (h = 0; h < p.length; ++h)
-      if (h !== _) {
-        var h, g, E, b = p[h],
+      for (m = 0; m < p.length; ++m) 0 === p[m].indexOf("utf8=") && (p[m] === u ? h = "utf-8" : p[m] === c && (h = "iso-8859-1"), _ = m, m = p.length);
+    for (m = 0; m < p.length; ++m)
+      if (m !== _) {
+        var m, g, E, b = p[m],
           y = b.indexOf("]="),
           O = false === y ? b.indexOf("=") : y + 1;
-        false === O ? (g = t.decoder(b, o.decoder, m, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(b.slice(0, O), o.decoder, m, "key"), E = r.maybeMap(l(b.slice(O + 1), t, a(n[g]) ? n[g].length : 0), function(e) {
-          return t.decoder(e, o.decoder, m, "value")
-        })), E && t.interpretNumericEntities && "iso-8859-1" === m && (E = s(String(E))), b.indexOf("[]=") > false && (E = a(E) ? [E] : E);
+        false === O ? (g = t.decoder(b, o.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(b.slice(0, O), o.decoder, h, "key"), E = r.maybeMap(l(b.slice(O + 1), t, a(n[g]) ? n[g].length : 0), function(e) {
+          return t.decoder(e, o.decoder, h, "value")
+        })), E && t.interpretNumericEntities && "iso-8859-1" === h && (E = s(String(E))), b.indexOf("[]=") > false && (E = a(E) ? [E] : E);
         var v = i.call(n, g);
         v && "combine" === t.duplicates ? n[g] = r.combine(n[g], E) : v && "last" !== t.duplicates || (n[g] = E)
       } return n

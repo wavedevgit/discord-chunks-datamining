@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Fs: () => s,
-  Y9: () => m,
+  Y9: () => h,
   uP: () => _
 });
 var Chunk644387 = require("./644387.js"),
@@ -37,8 +37,8 @@ var Chunk644387 = require("./644387.js"),
       r = !u && "border-box" === t.boxSizing,
       o = c.test(t.writingMode || ""),
       _ = !n && l.test(t.overflowY || ""),
-      m = !n && l.test(t.overflowX || ""),
-      h = n ? 0 : d(t.paddingTop),
+      h = !n && l.test(t.overflowX || ""),
+      m = n ? 0 : d(t.paddingTop),
       g = n ? 0 : d(t.paddingRight),
       E = n ? 0 : d(t.paddingBottom),
       b = n ? 0 : d(t.paddingLeft),
@@ -47,26 +47,26 @@ var Chunk644387 = require("./644387.js"),
       v = n ? 0 : d(t.borderBottomWidth),
       S = n ? 0 : d(t.borderLeftWidth),
       I = b + g,
-      T = h + E,
+      T = m + E,
       C = S + O,
       A = y + v,
-      N = m ? e.offsetHeight - A - e.clientHeight : 0,
+      N = h ? e.offsetHeight - A - e.clientHeight : 0,
       P = _ ? e.offsetWidth - C - e.clientWidth : 0,
-      R = r ? I + C : 0,
-      w = r ? T + A : 0,
-      D = n ? n.width : d(t.width) - R - P,
-      x = n ? n.height : d(t.height) - w - N,
+      w = r ? I + C : 0,
+      R = r ? T + A : 0,
+      D = n ? n.width : d(t.width) - w - P,
+      x = n ? n.height : d(t.height) - R - N,
       L = D + I + P + C,
       j = x + T + N + A,
       M = Object.freeze({
         devicePixelContentBoxSize: f(Math.round(D * devicePixelRatio), Math.round(x * devicePixelRatio), o),
         borderBoxSize: f(L, j, o),
         contentBoxSize: f(D, x, o),
-        contentRect: new i.N(b, h, D, x)
+        contentRect: new i.N(b, m, D, x)
       });
     return s.set(e, M), M
   },
-  m = function(e, t) {
+  h = function(e, t) {
     var n = _(e),
       i = n.borderBoxSize,
       a = n.contentBoxSize,

@@ -39,9 +39,9 @@ function I(e) {
     userIdsForRecommendation: I,
     cardSize: T = _.U.SMALL,
     contextContainerClassName: C
-  } = e, [A, N] = i.useState(l().uniq(v)), [P, R] = i.useState(l().uniq(I));
+  } = e, [A, N] = i.useState(l().uniq(v)), [P, w] = i.useState(l().uniq(I));
   i.useEffect(() => {
-    R(e => {
+    w(e => {
       let t = l().uniq(I);
       return (0, d.E)(e, t) ? e : t
     })
@@ -51,8 +51,8 @@ function I(e) {
       return (0, d.E)(e, t) ? e : t
     })
   }, [v]);
-  let w = (0, u.e7)([m.default], () => 1 === A.length ? m.default.getUser(A[0]) : true, [A]),
-    D = (0, u.Wu)([m.default], () => P.map(e => m.default.getUser(e)).filter(h.lm), [P]);
+  let R = (0, u.e7)([h.default], () => 1 === A.length ? h.default.getUser(A[0]) : true, [A]),
+    D = (0, u.Wu)([h.default], () => P.map(e => h.default.getUser(e)).filter(m.lm), [P]);
   return (0, r.jsxs)("div", {
     className: O.container,
     children: ["no_icon" === t ? null : (0, r.jsx)(p.u, {
@@ -85,7 +85,7 @@ function I(e) {
       showPrice: true,
       showIcons: false,
       giftingOrigin: E.Wt.SHOP_PAGE,
-      profileOwner: w,
+      profileOwner: R,
       additionalUserIds: A.length > 1 ? A : true
     })]
   })

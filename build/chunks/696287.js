@@ -24,9 +24,9 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 5 * Chunk70956.Z.Millis.MINUTE;
+let h = 5 * Chunk70956.Z.Millis.MINUTE;
 
-function h(e) {
+function m(e) {
   return e.distributor === p.GQo.ROBLOX ? (0, o.x3)(e) : null
 }
 
@@ -34,7 +34,7 @@ function g(e) {
   var t;
   let n = null != e.name ? e.name : "",
     r = "".concat(null != (t = e.id) ? t : e.exePath, ":").concat(n),
-    i = h(e);
+    i = m(e);
   return null != i && (r += ":".concat(i)), r
 }
 class E extends Chunk147913.Z {
@@ -46,16 +46,16 @@ class E extends Chunk147913.Z {
   }
   scheduleHeartbeatTracking() {
     if (this.processSessionChanges(), 0 === this.gameSessions.size) return void this.heartbeatInterval.stop();
-    this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(m, this.logRunningGameHeartbeats)
+    this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(h, this.logRunningGameHeartbeats)
   }
   logHeartbeat(e, t, n) {
     var r, i;
     let a = e.runningGame,
       u = performance.now(),
       _ = t ? 0 : Math.round(u - e.lastHeartbeatTime),
-      m = null != (i = a.id) ? i : null == (r = s.Z.getGameByName(a.name)) ? true : r.id;
+      h = null != (i = a.id) ? i : null == (r = s.Z.getGameByName(a.name)) ? true : r.id;
     c.default.track(p.rMx.RUNNING_GAME_HEARTBEAT, {
-      game_id: m,
+      game_id: h,
       game_name: a.name,
       game_distributor: a.distributor,
       game_distributor_game_id: a.sku,

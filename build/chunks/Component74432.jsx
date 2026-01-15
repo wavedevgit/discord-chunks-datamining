@@ -68,7 +68,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
     renderStep: () => (0, r.jsx)("div", {}),
     options: {
       renderHeader: false,
-      bodyClassName: "joined-payment-address-elements" === e ? h.fullLengthPaymentElementStepModalBody : h.paymentElementStepModalBody
+      bodyClassName: "joined-payment-address-elements" === e ? m.fullLengthPaymentElementStepModalBody : m.paymentElementStepModalBody
     }
   }),
   N = () => {
@@ -104,8 +104,8 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       stripeAddressElementProps: I
     } = (0, c.MM)({
       step: d.h8.PAYMENT_ELEMENT,
-      handleStepChange: m.dG4,
-      onBillingAddressChange: m.dG4,
+      handleStepChange: h.dG4,
+      onBillingAddressChange: h.dG4,
       paymentElementsEnabled: true,
       logger: v,
       shouldLogOnChangeEvents: true,
@@ -114,7 +114,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       elementsOptions: T,
       isLoading: C,
       setupError: P,
-      customPaymentMethodIdsToSourceTypes: R
+      customPaymentMethodIdsToSourceTypes: w
     } = (0, l.S)({
       onSetupError: e => {
         v.info("Stripe Payment Element options setup error: ", e)
@@ -137,12 +137,12 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
           children: "If you don't see the Payment Element components, that means you must be added to the correct experiment to see this story. Reach out to a Payments Engineer to get access."
         })
       }), (0, r.jsxs)("div", {
-        className: h.paymentElementStoryContainer,
+        className: m.paymentElementStoryContainer,
         children: [(0, r.jsx)(_.H, {
           stepConfigs: [A(E)],
           children: (0, r.jsx)("div", {
-            className: o()(h.paymentElementContainer, {
-              [h.fullLengthPaymentElementContainer]: "joined-payment-address-elements" === E
+            className: o()(m.paymentElementContainer, {
+              [m.fullLengthPaymentElementContainer]: "joined-payment-address-elements" === E
             }),
             children: (0, r.jsxs)(i.Elements, {
               stripe: y,
@@ -150,11 +150,11 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
               children: ["stripe-address-element" === E ? (0, r.jsx)("div", {
                 className: g.hidden,
                 children: (0, r.jsx)(c.Q5, O(b({}, S), {
-                  customPaymentMethodIdsToSourceTypes: R,
+                  customPaymentMethodIdsToSourceTypes: w,
                   step: d.h8.PAYMENT_ELEMENT
                 }))
               }) : (0, r.jsx)(c.Q5, O(b({}, S), {
-                customPaymentMethodIdsToSourceTypes: R,
+                customPaymentMethodIdsToSourceTypes: w,
                 step: d.h8.PAYMENT_ELEMENT
               })), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, r.jsx)(c.wk, O(b({}, I), {
                 billingAddressInfo: {
@@ -174,10 +174,10 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       })]
     })
   },
-  R = e => (0, r.jsx)(P, O(b({}, e), {
+  w = e => (0, r.jsx)(P, O(b({}, e), {
     storyType: "joined-payment-address-elements"
   })),
-  w = e => (0, r.jsx)(P, O(b({}, e), {
+  R = e => (0, r.jsx)(P, O(b({}, e), {
     storyType: "stripe-payment-element"
   })),
   D = e => (0, r.jsx)(P, O(b({}, e), {
@@ -217,7 +217,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
   L = {
     name: "Joined Payment + Address",
     id: "joined-payment-address-elements",
-    component: R,
+    component: w,
     controls: b({}, x)
   },
   j = {
@@ -225,7 +225,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
     stories: [{
       name: "Stripe Payment Element",
       id: "stripe-payment-element",
-      component: w,
+      component: R,
       controls: b({}, x)
     }, {
       name: "Stripe Address Element",

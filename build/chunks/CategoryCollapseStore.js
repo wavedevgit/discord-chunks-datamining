@@ -27,12 +27,12 @@ function _() {
   p += 1
 }
 
-function m(e) {
+function h(e) {
   if (null == f[e]) returnfalse;
   delete f[e]
 }
 
-function h(e) {
+function m(e) {
   let {
     id: t
   } = e;
@@ -44,7 +44,7 @@ function g(e) {
   let {
     id: t
   } = e;
-  return m(t)
+  return h(t)
 }
 
 function E(e) {
@@ -71,7 +71,7 @@ function y(e) {
       id: t
     }
   } = e;
-  return m(t)
+  return h(t)
 }
 
 function O(e) {
@@ -118,7 +118,7 @@ d(S, "displayName", "CategoryCollapseStore"), d(S, "persistKey", "collapsedCateg
 let I = new S(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   USER_GUILD_SETTINGS_FULL_UPDATE: b,
-  CATEGORY_COLLAPSE: h,
+  CATEGORY_COLLAPSE: m,
   CATEGORY_EXPAND: g,
   CATEGORY_COLLAPSE_ALL: O,
   CATEGORY_EXPAND_ALL: v,

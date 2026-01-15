@@ -2,7 +2,7 @@
 /** chunk id: 438139, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -71,7 +71,7 @@ function _(e) {
   return "".concat(e).length < p ? 1e3 * e : e
 }
 
-function m(e) {
+function h(e) {
   return class extends i.PureComponent {
     componentDidMount() {
       this._interval.start(1e3, () => this.setState(this.getUpdatedTime()))

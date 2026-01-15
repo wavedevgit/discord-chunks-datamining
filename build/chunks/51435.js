@@ -36,7 +36,7 @@ let d = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, 
   N = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
     useTitle: () => E.intl.string(E.t["3fe7U5"]),
     getLegacySearchKey: () => (0, a.Gl)("ConnectionsPanel") ? true : c.s6.CONNECTIONS,
-    icon: Chunk657707.xPt,
+    icon: Chunk657707.LinkIcon,
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: () => [l.z.NEW_CRUNCHYROLL_CONNECTION]

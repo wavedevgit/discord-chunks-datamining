@@ -17,7 +17,7 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk246946 = require("./246946.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function P(e) {
   return null == (t = v.exec(e)) ? true : t[1]
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   return s.tn.get({
     url: "".concat(O).concat(e),
     query: t,
@@ -54,7 +54,7 @@ function R(e, t, n) {
     rejectWithError: false
   })
 }
-async function w(e, t) {
+async function R(e, t) {
   var n;
   let r = N[e];
   if (null != r) return r;
@@ -62,7 +62,7 @@ async function w(e, t) {
     body: {
       data: i
     }
-  } = await R("/games", {
+  } = await w("/games", {
     id: e
   }, t), a = null == (n = i[0]) ? true : n.name;
   return N[e] = a, a
@@ -86,7 +86,7 @@ class D {
         body: {
           data: a
         }
-      } = await R("/streams", {
+      } = await w("/streams", {
         user_id: e.id,
         first: 1
       }, t), o = a[0];
@@ -96,12 +96,12 @@ class D {
         game_id: l,
         title: c
       } = o, f = {
-        large_image: null != s && null != (r = (0, d.f)(m.ABu.TWITCH, s)) ? r : true
-      }, p = await w(l, t), _ = u.Z.get(m.ABu.TWITCH), h = null != (i = P(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, S) : true, E = null != p && "" !== p ? p.slice(0, S) : true;
+        large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : true
+      }, p = await R(l, t), _ = u.Z.get(h.ABu.TWITCH), m = null != (i = P(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, S) : true, E = null != p && "" !== p ? p.slice(0, S) : true;
       return {
         url: null == (n = _.getPlatformUserUrl) ? true : n.call(_, {
           id: e.id,
-          name: h
+          name: m
         }),
         name: _.name,
         assets: f,
@@ -143,11 +143,11 @@ class D {
           thumbnails: o
         }
       } = r[0], l = {
-        large_image: null != (n = (0, d.f)(m.ABu.YOUTUBE, o.high.url)) ? n : true
+        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, o.high.url)) ? n : true
       }, c = null != a && "" !== a ? a.slice(0, S) : true;
       return C = {
         url: b(i),
-        name: u.Z.get(m.ABu.YOUTUBE).name,
+        name: u.Z.get(h.ABu.YOUTUBE).name,
         details: c,
         assets: l
       }
@@ -161,9 +161,9 @@ class D {
     let e = p.Z.getAccounts();
     if (null == e) return;
     null != this._nextCheck && clearTimeout(this._nextCheck);
-    let t = [m.ABu.TWITCH],
+    let t = [h.ABu.TWITCH],
       n = Date.now();
-    T <= n && (t.push(m.ABu.YOUTUBE), T = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === m.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    T <= n && (t.push(h.ABu.YOUTUBE), T = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? true : t.value;
@@ -179,7 +179,7 @@ class D {
     this._started && (this._nextCheck = setTimeout(() => this._check(), E))
   }
   constructor() {
-    h(this, "_nextCheck", true), h(this, "_started", true), this._started = false
+    m(this, "_nextCheck", true), m(this, "_started", true), this._started = false
   }
 }
 let x = new D;
@@ -201,7 +201,7 @@ class M extends(r = Chunk442837.ZP.Store) {
     return I
   }
 }
-h(M, "displayName", "ExternalStreamingStore");
+m(M, "displayName", "ExternalStreamingStore");
 let k = new M(Chunk570140.Z, {
   STREAMING_UPDATE: j,
   USER_CONNECTIONS_UPDATE: () => x._check()

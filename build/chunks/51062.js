@@ -60,27 +60,27 @@ function O(e, t) {
 }
 
 function v(e, t, n) {
-  var E, y, v, S, I, T, C, A, N, P, R;
+  var E, y, v, S, I, T, C, A, N, P, w;
   let {
-    channel: w,
+    channel: R,
     type: D
   } = e, [x, L] = r.useState(() => (0, _.PA)()), j = (0, i.Z)(), M = (0, a.e7)([u.ZP, p.default], () => {
     var e, t;
     let n = p.default.getCurrentUser();
-    return null != (t = null != w.guild_id && null != n ? null == (e = u.ZP.getMember(w.guild_id, n.id)) ? true : e.isPending : null) && t
+    return null != (t = null != R.guild_id && null != n ? null == (e = u.ZP.getMember(R.guild_id, n.id)) ? true : e.isPending : null) && t
   }), {
     canMentionEveryone: k,
     hidePersonalInformation: U
   } = (0, a.cj)([d.Z, f.Z], () => ({
-    canMentionEveryone: w.isPrivate() || M || D === l.Ie.RULES_INPUT || d.Z.can(h.Plq.MENTION_EVERYONE, w),
+    canMentionEveryone: R.isPrivate() || M || D === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, R),
     hidePersonalInformation: f.Z.hidePersonalInformation
-  }), [w, D, M]), {
+  }), [R, D, M]), {
     activeCommand: G,
     activeCommandOption: Z
   } = (0, a.cj)([s.Z], () => ({
-    activeCommand: s.Z.getActiveCommand(w.id),
-    activeCommandOption: s.Z.getActiveOption(w.id)
-  })), F = (0, m.Z)({
+    activeCommand: s.Z.getActiveCommand(R.id),
+    activeCommandOption: s.Z.getActiveOption(R.id)
+  })), F = (0, h.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
     state: x,
@@ -101,7 +101,7 @@ function v(e, t, n) {
       currentWordIsAtStart: (null == B ? true : B.isAtStart) === true,
       currentFullWord: null != (P = null == B ? true : B.fullWord) ? P : "",
       optionText: null != Z ? (0, o.KF)({
-        [Z.name]: null != (R = null == (S = e.editorRef.current) ? true : S.getCurrentCommandOptionValue()) ? R : []
+        [Z.name]: null != (w = null == (S = e.editorRef.current) ? true : S.getCurrentCommandOptionValue()) ? w : []
       }, Z.name) : ""
     }),
     [W] = r.useState(() => new _.ZP(Y));

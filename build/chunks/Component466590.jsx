@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk770966 = require("./770966.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function y(e, t) {
 }
 
 function O(e) {
-  var t, n, a, m, g, {
+  var t, n, a, h, g, {
       steps: y,
       caretConfig: O = {
         align: "center"
@@ -88,38 +88,38 @@ function O(e) {
       position: A
     } = e,
     N = b(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow", "position"]);
-  let [P, R] = i.useState(0);
+  let [P, w] = i.useState(0);
   i.useEffect(() => {
-    C && R(0)
+    C && w(0)
   }, [C]), i.useEffect(() => {
     null == S || S(P)
   }, [P, S]);
-  let w = y[P],
+  let R = y[P],
     D = P + 1 === y.length,
     x = i.useCallback(() => {
       var e;
-      null == w || null == (e = w.onCta) || e.call(w), D ? null == I || I() : R(e => e + 1)
-    }, [w, D, I]),
+      null == R || null == (e = R.onCta) || e.call(R), D ? null == I || I() : w(e => e + 1)
+    }, [R, D, I]),
     L = i.useCallback(() => {
       null == I || I()
     }, [I]),
     j = i.useCallback(() => {
       null == I || I()
     }, [I]);
-  if (!C || null == w) return null;
-  let M = h({
-      text: null != (a = null == (t = w.action) ? true : t.text) ? a : D ? p.intl.string(p.t.i4jeWR) : p.intl.string(p.t.PDTjLN),
-      variant: null != (m = null == (n = w.action) ? true : n.variant) ? m : "primary",
+  if (!C || null == R) return null;
+  let M = m({
+      text: null != (a = null == (t = R.action) ? true : t.text) ? a : D ? p.intl.string(p.t.i4jeWR) : p.intl.string(p.t.PDTjLN),
+      variant: null != (h = null == (n = R.action) ? true : n.variant) ? h : "primary",
       onClick: x
-    }, w.action),
-    k = h({
+    }, R.action),
+    k = m({
       targetElementRef: N.targetElementRef,
       hasVideo: N.hasVideo,
       scrollBehavior: N.scrollBehavior,
       position: A,
       shouldShow: C,
       onRequestClose: L,
-      gradientColor: w.gradientColor,
+      gradientColor: R.gradientColor,
       caretConfig: O
     }, "edge" === N.alignmentStrategy ? {
       alignmentStrategy: "edge",
@@ -127,24 +127,24 @@ function O(e) {
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(c.m, E(h({}, k), {
+  return (0, r.jsx)(c.m, E(m({}, k), {
     children: (0, r.jsxs)("div", {
       ref: T,
       children: [(0, r.jsx)(d.u, {
         onClick: j,
-        variant: null != w.gradientColor ? "color-mix" : true
-      }), null != w.graphic && (0, r.jsx)("div", {
+        variant: null != R.gradientColor ? "color-mix" : true
+      }), null != R.graphic && (0, r.jsx)("div", {
         className: o()(_.graphic, {
           [_["graphic--".concat(v)]]: null != v
         }),
-        children: (0, r.jsx)(s.zsu, E(h({}, w.graphic), {
-          aspectRatio: null != (g = w.graphic.aspectRatio) ? g : "sm" === v ? "2/1" : "16/9"
+        children: (0, r.jsx)(s.zsu, E(m({}, R.graphic), {
+          aspectRatio: null != (g = R.graphic.aspectRatio) ? g : "sm" === v ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.Y, {
-        title: w.title,
-        body: w.body,
-        badge: w.badge,
-        textLink: w.textLink
+        title: R.title,
+        body: R.body,
+        badge: R.badge,
+        textLink: R.textLink
       }), (0, r.jsx)("div", {
         className: _.actionBar,
         children: (0, r.jsxs)("div", {
@@ -156,7 +156,7 @@ function O(e) {
               count: P + 1,
               totalSteps: y.length
             })
-          }), (0, r.jsx)(l.zxk, h({
+          }), (0, r.jsx)(l.zxk, m({
             size: "sm"
           }, M))]
         })

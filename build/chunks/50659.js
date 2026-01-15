@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   U4: () => u,
-  hm: () => h,
-  py: () => m
+  hm: () => m,
+  py: () => h
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -102,7 +102,7 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   a.T.withSingleEntry(e, () => {
     s.bN.withoutNormalizing(e, () => {
       i()(null != e.selection, "Editor has no selection");
@@ -161,7 +161,7 @@ function m(e, t) {
   }), s.bN.focus(e)
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = e.selection;
   if (null == n) return;
   let r = true;

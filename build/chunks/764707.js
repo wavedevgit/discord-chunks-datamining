@@ -2,7 +2,7 @@
 /** chunk id: 764707, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk979590 = require("./979590.js"),
   i = require.n(Chunk979590),
@@ -68,7 +68,7 @@ let u = 50,
       text: f(t[0], t[1]).isLight() ? e.dark : e.light
     }
   },
-  m = (e, t) => {
+  h = (e, t) => {
     let {
       h: n,
       s: r,
@@ -80,7 +80,7 @@ let u = 50,
       l: a
     })
   },
-  h = e => t => {
+  m = e => t => {
     let n = (0, a.e7)([o.Z], () => o.Z.saturation);
     if (null == t) return {};
     let r = {
@@ -90,17 +90,17 @@ let u = 50,
     };
     return 1 === n ? c({}, r) : {
       backgroundColors: null != r.backgroundColors ? {
-        primary: m(r.backgroundColors.primary, n),
-        secondary: m(r.backgroundColors.secondary, n),
-        tertiary: null != r.backgroundColors.tertiary ? m(r.backgroundColors.tertiary, n) : true,
-        border: m(r.backgroundColors.border, n),
-        label: m(r.backgroundColors.label, n)
+        primary: h(r.backgroundColors.primary, n),
+        secondary: h(r.backgroundColors.secondary, n),
+        tertiary: null != r.backgroundColors.tertiary ? h(r.backgroundColors.tertiary, n) : true,
+        border: h(r.backgroundColors.border, n),
+        label: h(r.backgroundColors.label, n)
       } : true,
       buttonColors: null != r.buttonColors ? {
-        primary: m(r.buttonColors.primary, n),
-        secondary: m(r.buttonColors.secondary, n),
-        text: m(r.buttonColors.text, n)
+        primary: h(r.buttonColors.primary, n),
+        secondary: h(r.buttonColors.secondary, n),
+        text: h(r.buttonColors.text, n)
       } : true,
-      confettiColors: r.confettiColors.map(e => m(e, n))
+      confettiColors: r.confettiColors.map(e => h(e, n))
     }
   }

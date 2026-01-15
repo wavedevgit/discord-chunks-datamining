@@ -2,7 +2,7 @@
 /** chunk id: 362615, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => m
+  c: () => h
 }), require("./539854.js");
 var Chunk358221 = require("./358221.js"),
   Chunk569545 = require("./569545.js"),
@@ -36,17 +36,17 @@ function _(e) {
   }
   return e
 }
-let m = {
+let h = {
   getActiveErrors: () => (0, d.LN)() ? a.Z.getAllActiveStreams().reduce((e, t) => {
     var n;
     let a = null == (n = s.Z.getRTCConnection((0, i.V9)(t))) ? true : n.getMediaEngineConnectionId();
     if (null == a || t.ownerId === o.default.getId() || t.state === f.jm8.PAUSED) return e;
     let p = (0, d.hj)(a, t.ownerId);
     if (null == p) return e;
-    let m = r.Z.getParticipant(t.channelId, (0, i.V9)(t));
-    if (null == m) return e;
-    let h = (0, l.Wc)(m);
-    return null == h || (p.short.frameRate < (0, d.dj)(h.maxFrameRate) || p.long.frameRate < (0, d.dj)(h.maxFrameRate)) && e.push(_({
+    let h = r.Z.getParticipant(t.channelId, (0, i.V9)(t));
+    if (null == h) return e;
+    let m = (0, l.Wc)(h);
+    return null == m || (p.short.frameRate < (0, d.dj)(m.maxFrameRate) || p.long.frameRate < (0, d.dj)(m.maxFrameRate)) && e.push(_({
       type: c.u.STREAM_VIEW_LOW_FPS
     }, (0, u.rT)((0, i.V9)(t)))), e
   }, []) : null,

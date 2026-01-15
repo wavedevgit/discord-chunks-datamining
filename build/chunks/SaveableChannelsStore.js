@@ -24,15 +24,15 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 750,
-  h = 15,
+let h = 750,
+  m = 15,
   g = 500,
   E = 25,
   b = 25,
   y = 1,
   O = null,
-  v = new Chunk553245.b(m, g),
-  S = new Chunk143806.S(h),
+  v = new Chunk553245.b(h, g),
+  S = new Chunk143806.S(m),
   I = false;
 class T extends Chunk750041.Z {
   initialize() {
@@ -108,13 +108,13 @@ class T extends Chunk750041.Z {
     super({
       CACHE_LOADED_LAZY_NO_CACHE: j,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      CHANNEL_DELETE: R,
+      CHANNEL_DELETE: w,
       CHANNEL_UPDATES: P,
       CONNECTION_OPEN_SUPPLEMENTAL: A,
       GUILD_DELETE: x,
       LOGIN_SUCCESS: L,
       THREAD_DELETE: D,
-      THREAD_UPDATE: w
+      THREAD_UPDATE: R
     })
   }
 }
@@ -125,7 +125,7 @@ function C() {
 }
 
 function A() {
-  T.dropUnreachableChannels(), T.replaceLru((0, p.J)(v, m + g))
+  T.dropUnreachableChannels(), T.replaceLru((0, p.J)(v, h + g))
 }
 
 function N(e) {
@@ -139,11 +139,11 @@ function P(e) {
   for (let t of e.channels) N(t)
 }
 
-function R(e) {
+function w(e) {
   T.deleteChannel(e.channel.id)
 }
 
-function w(e) {
+function R(e) {
   N(e.channel)
 }
 

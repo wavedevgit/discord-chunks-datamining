@@ -39,14 +39,14 @@ function I(e) {
   } = e, [C, A] = r.useState(false), {
     requestId: N,
     entries: P,
-    impressionCappedEntryIds: R
-  } = (0, m.Z)(I), w = (0, i.e7)([f.Z], () => f.Z.hidden), D = (0, i.e7)([c.Z], () => c.Z.isFocused()), x = (0, i.e7)([s.Z], () => s.Z.getChannel(I)), L = (0, i.e7)([l.Z], () => l.Z.getGuild(T), [T]), j = (0, p.E)(L), M = null != j && j && (null == x ? true : x.isForumChannel()) === false, [k, U, G, Z] = r.useMemo(() => {
+    impressionCappedEntryIds: w
+  } = (0, h.Z)(I), R = (0, i.e7)([f.Z], () => f.Z.hidden), D = (0, i.e7)([c.Z], () => c.Z.isFocused()), x = (0, i.e7)([s.Z], () => s.Z.getChannel(I)), L = (0, i.e7)([l.Z], () => l.Z.getGuild(T), [T]), j = (0, p.E)(L), M = null != j && j && (null == x ? true : x.isForumChannel()) === false, [k, U, G, Z] = r.useMemo(() => {
     let e;
     if (null == P || 0 === P.length || null == N || !M) return [t, n, v];
     let r = O,
       i = C ? P.length : r,
       a = P.slice(0, i);
-    e = w ? [{
+    e = R ? [{
       type: o.so.HIDDEN_CONTENT_INVENTORY
     }] : a.map(e => ({
       type: o.so.CONTENT_INVENTORY,
@@ -73,17 +73,17 @@ function I(e) {
         onToggleExpand: s,
         expanded: C,
         expandedCount: P.length,
-        feedHeight: e.map(h.iZ).reduce((e, t) => e + t, 0)
+        feedHeight: e.map(m.iZ).reduce((e, t) => e + t, 0)
       };
     return [
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [I, P, C, t, T, N, n, v, w, M]), F = r.useRef(0), B = r.useRef(P), V = r.useRef(true), H = r.useRef({
-    impressionCappedEntryIds: R
+  }, [I, P, C, t, T, N, n, v, R, M]), F = r.useRef(0), B = r.useRef(P), V = r.useRef(true), H = r.useRef({
+    impressionCappedEntryIds: w
   }), Y = r.useCallback(e => {
     var t;
-    let n = Math.floor(e / h.YN),
+    let n = Math.floor(e / m.YN),
       r = Math.min(null != (t = null == Z ? true : Z.length) ? t : 0, n);
     F.current = Math.max(F.current, r)
   }, [Z]);
@@ -91,14 +91,14 @@ function I(e) {
     B.current = P
   }, [P]), r.useEffect(() => {
     H.current = {
-      impressionCappedEntryIds: R
+      impressionCappedEntryIds: w
     }
-  }, [R]), r.useEffect(() => (F.current = 0, V.current = Date.now(), () => {
+  }, [w]), r.useEffect(() => (F.current = 0, V.current = Date.now(), () => {
     var e, t;
     if (null == N || null == V.current || Date.now() - V.current < S) return;
     let n = null != (t = null == (e = B.current) ? true : e.map(e => e.id)) ? t : [],
       r = n.slice(0, F.current);
-    !w && D && M && ((0, _.e)(b.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+    !R && D && M && ((0, _.e)(b.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: N,
       first_shown_at: V.current,
       item_ids: r,
@@ -111,7 +111,7 @@ function I(e) {
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
-  }), [N, I, T, w, D, M]), {
+  }), [N, I, T, R, D, M]), {
     groups: k,
     rows: U,
     version: G,

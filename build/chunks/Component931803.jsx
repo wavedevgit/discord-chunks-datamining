@@ -62,10 +62,10 @@ let f = {
         strategy: f,
         portal: p,
         blockPointerEvents: _
-      } = e, [m, h] = i.useState(false);
+      } = e, [h, m] = i.useState(false);
       return (0, r.jsx)(a.pS, {
-        open: m,
-        onOpenChange: h,
+        open: h,
+        onOpenChange: m,
         placement: t,
         spacing: n,
         autoFlip: l,
@@ -88,7 +88,7 @@ let f = {
           return (0, r.jsx)(o.zxk, d(c({
             variant: "primary",
             text: "Target Element",
-            onClick: () => h(!m)
+            onClick: () => m(!h)
           }, n), {
             buttonRef: t
           }))

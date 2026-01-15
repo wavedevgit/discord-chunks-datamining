@@ -35,12 +35,12 @@ let v = {
 
 function S(e) {
   let t = e.currentTarget;
-  d.default.track(h.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
+  d.default.track(m.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
     href: t.href,
     location: {
-      page: h.ZY5.USER_SETTINGS,
-      section: h.jXE.SETTINGS_VOICE_AND_VIDEO
+      page: m.ZY5.USER_SETTINGS,
+      section: m.jXE.SETTINGS_VOICE_AND_VIDEO
     }
   })
 }
@@ -61,14 +61,14 @@ function I() {
   if (!l && !c) return null;
   let d = n ? "STANDARD" : "NONE",
     _ = t ? "KRISP" : d,
-    m = [];
-  return c && m.push({
+    h = [];
+  return c && h.push({
     name: g.intl.string(g.t.rdoNzt),
     value: "KRISP"
-  }), l && m.push({
+  }), l && h.push({
     name: g.intl.string(g.t.qXeYHw),
     value: "STANDARD"
-  }), m.push({
+  }), h.push({
     name: g.intl.string(g.t.wkYAlz),
     value: "NONE"
   }), (0, r.jsxs)(o.Kqy, {
@@ -76,7 +76,7 @@ function I() {
     children: [(0, r.jsx)(o.FXm, {
       label: g.intl.string(g.t.t8Qhib),
       description: g.intl.string(g.t.najZCV),
-      options: m,
+      options: h,
       onChange: e => {
         s.Z.setNoiseCancellation("KRISP" === e, v), s.Z.setNoiseSuppression("STANDARD" === e, v)
       },
@@ -91,7 +91,7 @@ function I() {
           height: 40,
           alt: ""
         }), (0, r.jsx)(o.eee, {
-          href: f.Z.getArticleURL(h.BhN.NOISE_SUPPRESSION),
+          href: f.Z.getArticleURL(m.BhN.NOISE_SUPPRESSION),
           onClick: S,
           children: g.intl.string(g.t.hvVgAZ)
         })]
@@ -125,27 +125,27 @@ function T() {
     hasEchoCancellation: c.Z.hasEchoCancellation(t),
     hasNoiseSuppression: c.Z.hasNoiseSuppression(t),
     hasAutomaticGainControl: c.Z.hasAutomaticGainControl(t)
-  }), [t]), O = E || b || y, v = e === h.pM4.VOICE_ACTIVITY && d;
+  }), [t]), O = E || b || y, v = e === m.pM4.VOICE_ACTIVITY && d;
   return (0, r.jsxs)(_.Z, {
     children: [O && (0, r.jsx)(o.M14, {
       type: "info",
       children: g.intl.string(g.t["/Whuzi"])
     }), (0, r.jsx)(l.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
+      setting: h.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
       children: (0, r.jsx)(o.rsf, {
         label: g.intl.string(g.t.iWTwu6),
         checked: n,
         onChange: e => s.Z.setEchoCancellation(e, {
-          page: h.ZY5.USER_SETTINGS,
-          section: h.jXE.SETTINGS_VOICE_AND_VIDEO
+          page: m.ZY5.USER_SETTINGS,
+          section: m.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
         disabled: E
       })
     }), (0, r.jsx)(l.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
+      setting: h.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
       children: (0, r.jsx)(I, {})
     }), (0, r.jsx)(l.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
+      setting: h.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
       children: (0, r.jsx)(o.rsf, {
         label: g.intl.string(g.t.BbESsg),
         description: g.intl.string(g.t.LoOB1F),
@@ -156,19 +156,19 @@ function T() {
         disabled: !v
       })
     }), (0, r.jsx)(l.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
+      setting: h.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
       children: (0, r.jsx)(o.rsf, {
         label: g.intl.string(g.t.cUMdH0),
         description: g.intl.string(g.t["6EjbvA"]),
         checked: a,
         onChange: e => s.Z.setAutomaticGainControl(e, {
-          page: h.ZY5.USER_SETTINGS,
-          section: h.jXE.SETTINGS_VOICE_AND_VIDEO
+          page: m.ZY5.USER_SETTINGS,
+          section: m.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
         disabled: y
       })
     }), (0, r.jsx)(l.F, {
-      setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING,
+      setting: h.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING,
       children: (0, r.jsx)(o.rsf, {
         label: g.intl.string(g.t.DFPXIG),
         description: g.intl.string(g.t["UyRX+C"]),

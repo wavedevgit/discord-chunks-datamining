@@ -28,9 +28,9 @@ function l(e, t, n, o, s, d) {
   let f = i.Z.getTypeSize("SHORT"),
     p = 12,
     _ = {},
-    m = c(e, o, s);
+    h = c(e, o, s);
   o += f;
-  for (let r = 0; r < m && !(o + p > e.byteLength); r++) {
+  for (let r = 0; r < h && !(o + p > e.byteLength); r++) {
     let r = u(e, t, n, o, s, d);
     true !== r && (_[r.name] = {
       id: r.id,
@@ -58,7 +58,7 @@ function u(e, t, n, r, o, s) {
     O = i.Z.getShortAt(e, r + g, o),
     v = i.Z.getLongAt(e, r + E, o);
   if (true === i.Z.typeSizes[O] || !s && true === a.ZP[t][y]) return;
-  d(O, v) ? l = f(e, c = r + b, O, v, o) : (c = i.Z.getLongAt(e, r + b, o), l = p(e, n, c, O, v) ? f(e, n + c, O, v, o, y === u) : "<faulty value>"), O === i.Z.tagTypes.ASCII && (l = m(l = _(l)));
+  d(O, v) ? l = f(e, c = r + b, O, v, o) : (c = i.Z.getLongAt(e, r + b, o), l = p(e, n, c, O, v) ? f(e, n + c, O, v, o, y === u) : "<faulty value>"), O === i.Z.tagTypes.ASCII && (l = h(l = _(l)));
   let S = `undefined-${y}`,
     I = l;
   if (true !== a.ZP[t][y])
@@ -67,9 +67,9 @@ function u(e, t, n, r, o, s) {
       try {
         I = a.ZP[t][y].description(l)
       } catch (e) {
-        I = h(l)
+        I = m(l)
       }
-    } else O === i.Z.tagTypes.RATIONAL || O === i.Z.tagTypes.SRATIONAL ? (S = a.ZP[t][y], I = "" + l[0] / l[1]) : (S = a.ZP[t][y], I = h(l));
+    } else O === i.Z.tagTypes.RATIONAL || O === i.Z.tagTypes.SRATIONAL ? (S = a.ZP[t][y], I = "" + l[0] / l[1]) : (S = a.ZP[t][y], I = m(l));
   return {
     id: y,
     name: S,
@@ -107,7 +107,7 @@ function _(e) {
   return t
 }
 
-function m(e) {
+function h(e) {
   try {
     return e.map(e => decodeURIComponent(escape(e)))
   } catch (t) {
@@ -115,6 +115,6 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return e instanceof Array ? e.join(", ") : e
 }

@@ -17,10 +17,10 @@ require.d(exports, {
   i0: () => c,
   iB: () => p,
   ip: () => d,
-  ix: () => h,
+  ix: () => m,
   ne: () => g,
   tx: () => I,
-  vH: () => m,
+  vH: () => h,
   zE: () => u
 }), require("./388685.js");
 var Chunk860911 = require("./860911.js"),
@@ -35,8 +35,8 @@ let s = 30 * Chunk70956.Z.Millis.SECOND,
   f = (e, t) => "https://discord.com/feature/family-center/my-family/".concat(e, "/").concat(t),
   p = 4,
   _ = 5 * Chunk70956.Z.Millis.MINUTE,
-  m = "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  h = (0, Chunk860911.Ft)(Object.freeze({
+  h = "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  m = (0, Chunk860911.Ft)(Object.freeze({
     FAMILY_CENTER_SETTINGS: "/family-center/settings",
     FAMILY_CENTER_MY_FAMILY: "/family-center/my-family"
   }), [":", "?", "@"]);

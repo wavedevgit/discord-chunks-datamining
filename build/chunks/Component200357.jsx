@@ -24,8 +24,8 @@ let _ = function(e) {
     submitting: n,
     errorMessage: a,
     onChange: _,
-    layerContext: m
-  } = e, h = i.useRef(null), {
+    layerContext: h
+  } = e, m = i.useRef(null), {
     countriesMap: g,
     countryCodeOptions: E
   } = (0, u.b)(), [b, y] = i.useState(() => {
@@ -43,7 +43,7 @@ let _ = function(e) {
     null == _ || _("".concat(r).concat(t))
   }, [g, _]), T = i.useCallback(e => {
     var t;
-    y(e), null == (t = h.current) || t.focus(), I(e, O)
+    y(e), null == (t = m.current) || t.focus(), I(e, O)
   }, [O, I]), C = i.useCallback(e => {
     v(e), I(b, e)
   }, [b, I]), A = g.get(b);
@@ -59,7 +59,7 @@ let _ = function(e) {
           options: E,
           popoutWidth: 280,
           isDisabled: n,
-          popoutLayerContext: m
+          popoutLayerContext: h
         })
       }), (0, r.jsx)(c.oil, {
         label: d.intl.string(d.t["64bX0M"]),
@@ -68,7 +68,7 @@ let _ = function(e) {
         type: "tel",
         onChange: C,
         autoFocus: true,
-        inputRef: h,
+        inputRef: m,
         disabled: n,
         value: O
       })]

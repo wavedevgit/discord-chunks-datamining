@@ -81,12 +81,12 @@ function S() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u.EFr.SIZE_24;
   switch (e) {
     case u.EFr.SIZE_16:
-      return h.size16;
+      return m.size16;
     case u.EFr.SIZE_20:
-      return h.size20;
+      return m.size20;
     case u.EFr.SIZE_24:
     default:
-      return h.size24
+      return m.size24
   }
 }
 
@@ -111,11 +111,11 @@ function T(e) {
     size: s = u.EFr.SIZE_24,
     shouldShowOverflowCount: d,
     disableUsernameTooltip: f
-  } = e, m = S(s), g = d ? n - 1 : Math.min(t.length, n), E = g - 1, b = l()(t).take(g).map((e, t) => {
+  } = e, h = S(s), g = d ? n - 1 : Math.min(t.length, n), E = g - 1, b = l()(t).take(g).map((e, t) => {
     let n = p.ZP.getNickname(i, a, e),
       l = null != n ? n : _.ZP.getName(e),
       g = t === E && !d,
-      b = o()(h.avatar, m, g && h.isLast),
+      b = o()(m.avatar, h, g && m.isLast),
       y = (0, r.jsx)(u.qEK, {
         src: e.getAvatarURL(i, 24),
         size: s,
@@ -139,7 +139,7 @@ function T(e) {
     }, e.id)
   }).value();
   return (0, r.jsx)("ul", {
-    className: h.avatars,
+    className: m.avatars,
     children: b
   })
 }
@@ -155,9 +155,9 @@ function C(e) {
   return (0, r.jsxs)(u.Text, {
     variant: c,
     color: i,
-    className: o()(h.overflow, l, s),
+    className: o()(m.overflow, l, s),
     children: [(0, r.jsx)(u.nn4, {
-      children: m.intl.formatToPlainString(m.t.RGr9tj, {
+      children: h.intl.formatToPlainString(h.t.RGr9tj, {
         count: t
       })
     }), (0, r.jsx)("span", {
@@ -205,7 +205,7 @@ function N(e) {
   } = e, s = O(e, ["className", "aria-label", "aria-labelledby", "aria-hidden"]);
   return (0, r.jsx)("div", {
     role: "group",
-    className: o()(t, h.avatars),
+    className: o()(t, m.avatars),
     "aria-label": n,
     "aria-labelledby": i,
     "aria-hidden": a,
@@ -230,16 +230,16 @@ function P(e) {
     onClickOverflow: A,
     onFocusOverflow: N,
     onUserClick: P,
-    onUserPopoutRequestClose: R,
-    "aria-label": w,
+    onUserPopoutRequestClose: w,
+    "aria-label": R,
     "aria-labelledby": D,
     "aria-hidden": x
   } = e, [L, j] = i.useState(false), M = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !x, Z = () => (0, r.jsx)(u.VqE, {
-    className: h.popoutWrapper,
-    "aria-label": w,
+    className: m.popoutWrapper,
+    "aria-label": R,
     "aria-labelledby": D,
     children: (0, r.jsx)(u.Ttm, {
-      className: h.scroller,
+      className: m.scroller,
       children: t.map(e => (0, r.jsx)(f.Z, {
         user: e,
         guildId: s,
@@ -248,7 +248,7 @@ function P(e) {
         disablePopout: "function" == typeof I ? I(e.id) : I,
         onClick: P,
         onPopoutRequestClose: () => {
-          j(false), null == R || R()
+          j(false), null == w || w()
         },
         onContextMenu: t => (0, d.jW)(t, async () => {
           let {
@@ -272,12 +272,12 @@ function P(e) {
     onRequestClose: () => j(false),
     children: e => (0, r.jsx)(u.P3F, y(E({}, e), {
       innerRef: M,
-      className: h.button,
+      className: m.button,
       onFocus: N,
       onClick: e => {
         null == A || A(e), j(true)
       },
-      "aria-label": m.intl.formatToPlainString(m.t.R8Z8Qr, {
+      "aria-label": h.intl.formatToPlainString(h.t.R8Z8Qr, {
         count: U
       }),
       children: (0, r.jsx)(C, {
@@ -291,9 +291,9 @@ function P(e) {
   }, "overflow") : null;
   return t.length <= 0 ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-label": w,
+    "aria-label": R,
     "aria-labelledby": D,
-    className: o()(c, h.avatars),
+    className: o()(c, m.avatars),
     "aria-hidden": x,
     children: [(0, r.jsx)(T, {
       users: t,

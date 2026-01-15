@@ -4,8 +4,8 @@
 require.d(exports, {
   JZ: () => g,
   Sw: () => E,
-  Uj: () => m,
-  ZH: () => h,
+  Uj: () => h,
+  ZH: () => m,
   ZP: () => _,
   ij: () => b
 });
@@ -22,18 +22,18 @@ var Chunk512722 = require("./512722.js"),
   Chunk51144 = require("./51144.js");
 
 function _(e, t) {
-  let n = m(e);
+  let n = h(e);
   return i()(null != n, "Result cannot be null because the message is not null"), null != t ? t : n
 }
 
-function m(e) {
+function h(e) {
   var t;
   let n = (0, a.e7)([s.Z], () => null == e ? null : s.Z.getChannel(e.channel_id)),
     r = null == e || null == (t = e.author) ? true : t.id,
     i = null == n ? true : n.guild_id,
     _ = (0, a.e7)([l.ZP], () => null == i || null == r ? null : l.ZP.getMember(i, r)),
-    m = (0, a.e7)([f.default], () => f.default.getUser(r), [r]),
-    h = p.ZP.useName((null == e ? true : e.author.bot) ? null == e ? true : e.author : m),
+    h = (0, a.e7)([f.default], () => f.default.getUser(r), [r]),
+    m = p.ZP.useName((null == e ? true : e.author.bot) ? null == e ? true : e.author : h),
     g = (0, a.e7)([u.Z], () => u.Z.getGuild(i), [i]),
     E = null == _ ? true : _.colorRoleId,
     b = (0, a.e7)([c.Z], () => null != i && null != E ? c.Z.getRole(i, E) : true, [i, E]),
@@ -47,14 +47,14 @@ function m(e) {
     channel: n,
     guild: g,
     memberColorRole: b,
-    userName: h,
+    userName: m,
     member: _,
     friendNickname: O,
     displayNameStyles: v
   })
 }
 
-function h(e) {
+function m(e) {
   let t = s.Z.getChannel(e.channel_id);
   return b(e.author, t)
 }
@@ -72,14 +72,14 @@ function E(e, t) {
     s = null == i ? true : i.colorRoleId,
     f = (0, a.e7)([c.Z], () => null != r && null != s ? c.Z.getRole(r, s) : true, [r, s]),
     _ = (0, a.e7)([d.Z], () => null != n && (null == t ? true : t.isPrivate()) ? d.Z.getNickname(n) : null),
-    m = p.ZP.useName(e);
+    h = p.ZP.useName(e);
   return y({
     user: e,
     channel: t,
     guild: o,
     memberColorRole: f,
     member: i,
-    userName: m,
+    userName: h,
     friendNickname: _,
     displayNameStyles: null == e ? true : e.displayNameStyles
   })

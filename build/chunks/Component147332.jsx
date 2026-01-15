@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,7 +63,7 @@ let g = e => (0, r.jsx)(E, _({}, e)),
     } = e, {
       layout: c,
       renderStepBody: p,
-      renderLeftColumn: m,
+      renderLeftColumn: h,
       renderRightColumn: g,
       primaryCTAButtonProps: E,
       onBackClick: b
@@ -71,8 +71,8 @@ let g = e => (0, r.jsx)(E, _({}, e)),
       hasPaymentSources: y
     } = (0, o.JL)(), O = y ? s.h8.REVIEW : s.h8.ADD_PAYMENT_STEPS, v = i.useCallback(() => t(O), [t, O]), S = i.useMemo(() => "custom-step-body" === c ? p() : "two-column" === c ? (0, r.jsxs)("div", {
       className: f.stepBody,
-      children: [m(), g()]
-    }) : null, [c, p, m, g]), I = i.useMemo(() => h(_({}, E), {
+      children: [h(), g()]
+    }) : null, [c, p, h, g]), I = i.useMemo(() => m(_({}, E), {
       onClick: v,
       text: d.intl.string(d.t.XiOHRX)
     }), [E, v]);

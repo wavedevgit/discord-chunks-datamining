@@ -2,7 +2,7 @@
 /** chunk id: 291541, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  y: () => h
+  y: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +61,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = {
+let m = {
   title: "Popover",
   stories: [{
     name: "Popover",
@@ -81,8 +81,8 @@ let h = {
         showTextLink: c,
         caretAlign: u,
         alignmentStrategy: f,
-        align: m,
-        size: h,
+        align: h,
+        size: m,
         position: g
       } = e, E = _(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "alignmentStrategy", "align", "size", "position"]);
       let [b, y] = i.useState(false), O = i.useRef(null);
@@ -95,15 +95,15 @@ let h = {
         },
         children: [(0, r.jsx)(o.J2, p(d({}, E), {
           position: g,
-          size: h,
-          align: m,
+          size: m,
+          align: h,
           alignmentStrategy: f,
           targetElementRef: O,
           shouldShow: b,
           onRequestClose: () => y(false),
           graphic: t ? {
             type: "image",
-            src: "sm" === h ? l.Z : s.Z
+            src: "sm" === m ? l.Z : s.Z
           } : true,
           caretConfig: {
             align: u
@@ -314,7 +314,7 @@ let h = {
       var {
         showExpressive: t
       } = e, n = _(e, ["showExpressive"]);
-      let [l, u] = i.useState(false), f = i.useRef(null), m = [{
+      let [l, u] = i.useState(false), f = i.useRef(null), h = [{
         title: "Welcome to the Feature!",
         body: "This is the first step of our multi-step introduction.",
         asset: (0, r.jsx)("img", {
@@ -360,7 +360,7 @@ let h = {
           targetElementRef: f,
           shouldShow: l,
           onRequestClose: () => u(false),
-          steps: m,
+          steps: h,
           caretConfig: {
             align: "center"
           },

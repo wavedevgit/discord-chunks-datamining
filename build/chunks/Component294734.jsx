@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk154706 = require("./154706.js");
 
-function R() {
+function w() {
   return (0, r.jsxs)("div", {
     className: P.headerContainer,
     children: [(0, r.jsx)(A.Z, {
@@ -48,7 +48,7 @@ function R() {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     message: t,
     snapshot: n,
@@ -56,12 +56,12 @@ function w(e) {
   } = e, f = i.useMemo(() => new I.r(t, n, u), [t, n, u]), p = (0, o.e7)([E.Z, S.default, v.Z, O.Z, y.Z, d.Z], () => f.getForwardInfo(E.Z, S.default, v.Z, O.Z, y.Z, d.Z).footerInfo, [f], s.Z), _ = (0, o.e7)([E.Z], () => {
     var e;
     return E.Z.getChannel(null == (e = t.messageReference) ? true : e.channel_id)
-  }), m = i.useCallback(() => {
+  }), h = i.useCallback(() => {
     (0, T.Z)(t)
   }, [t]);
   return null == p ? null : (0, r.jsxs)(c.P3F, {
     className: P.footerContainer,
-    onClick: m,
+    onClick: h,
     "aria-label": p.accessibilityLabel,
     children: [null != p.originIconUrl ? (0, r.jsx)("img", {
       className: P.originIcon,
@@ -84,7 +84,7 @@ function w(e) {
 function D(e) {
   let {
     channel: t
-  } = e, n = (0, h.KN)({
+  } = e, n = (0, m.KN)({
     location: "ForwardFooter"
   }), a = i.useMemo(() => (0, u.KS)(t), [t]);
   return n.enabled && null != a ? (0, r.jsx)(a, {
@@ -100,7 +100,7 @@ function x(e) {
     message: n,
     snapshot: a,
     index: s
-  } = e, l = i.useMemo(() => (0, C.Z)(n, a), [n, a]), c = g.RS.useSetting(), u = g.NA.useSetting(), d = c && u, h = (0, o.e7)([b.Z], () => b.Z.isDeveloper), y = (0, f.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
+  } = e, l = i.useMemo(() => (0, C.Z)(n, a), [n, a]), c = g.RS.useSetting(), u = g.NA.useSetting(), d = c && u, m = (0, o.e7)([b.Z], () => b.Z.isDeveloper), y = (0, f.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
     content: O,
     hasSpoilerEmbeds: v,
     hasBailedAst: S
@@ -111,7 +111,7 @@ function x(e) {
     allowList: y,
     allowHeading: y,
     allowLinks: true,
-    allowDevLinks: h,
+    allowDevLinks: m,
     previewLinkTarget: true
   }), I = (0, o.e7)([E.Z], () => E.Z.getChannel(n.channel_id)), T = g.jU.useSetting();
   return null == I ? null : (0, r.jsxs)("div", {
@@ -120,11 +120,11 @@ function x(e) {
       className: P.quote
     }), (0, r.jsxs)("div", {
       className: P.content,
-      children: [(0, r.jsx)(R, {}), (0, r.jsx)(p.ZP, {
+      children: [(0, r.jsx)(w, {}), (0, r.jsx)(p.ZP, {
         message: l,
         content: O,
         compact: T
-      }), (0, m.Z)({
+      }), (0, h.Z)({
         channelMessageProps: {
           message: l,
           channel: I,
@@ -135,7 +135,7 @@ function x(e) {
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(R, {
         message: n,
         snapshot: a,
         index: s

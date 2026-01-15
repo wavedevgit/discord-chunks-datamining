@@ -99,7 +99,7 @@ function V(e) {
     onClickContainer: $
   } = e, {
     analyticsLocations: ee
-  } = (0, u.ZP)([...Q, c.Z.USER_PROFILE_POPOUT]), et = (0, m.Aq)(), en = (0, b.ZB)({
+  } = (0, u.ZP)([...Q, c.Z.USER_PROFILE_POPOUT]), et = (0, h.Aq)(), en = (0, b.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: F,
@@ -132,7 +132,7 @@ function V(e) {
       location: "UserProfilePopout"
     }),
     e_ = i.useMemo(() => (0, _.Z)(), []),
-    em = e => {
+    eh = e => {
       null == K || K(), et.dispatch(j.CkL.POPOUT_CLOSE), (0, S.openUserProfileModal)(B(Z({
         sourceAnalyticsLocations: ee,
         hideRestrictedProfile: true,
@@ -141,11 +141,11 @@ function V(e) {
         appContext: X
       }))
     },
-    eh = () => q ? null : (0, r.jsx)(s.sNh, {
+    em = () => q ? null : (0, r.jsx)(s.sNh, {
       id: "view-profile",
       label: k.intl.string(k.t["+Xp3hq"]),
       action: () => {
-        em(), (0, y.pQ)(Z({
+        eh(), (0, y.pQ)(Z({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: ee
         }, en))
@@ -183,7 +183,7 @@ function V(e) {
               style: eu,
               className: U.backdrop
             }), (0, r.jsxs)(N.Z, {
-              children: [(0, r.jsx)(R.Z, {
+              children: [(0, r.jsx)(w.Z, {
                 shouldShowTooltip: null === ec.interactionType,
                 user: n,
                 guildId: F,
@@ -193,10 +193,10 @@ function V(e) {
               }), (0, r.jsx)(P.Z, {
                 themeType: M.l.POPOUT,
                 user: n
-              }), !ef && (0, r.jsx)(w.Cn, {
+              }), !ef && (0, r.jsx)(R.Cn, {
                 user: n,
                 guildId: F,
-                viewProfileItem: eh(),
+                viewProfileItem: em(),
                 appContext: X
               })]
             }), (0, r.jsxs)("div", {
@@ -216,7 +216,7 @@ function V(e) {
                 guildId: F,
                 channelId: V,
                 themeType: M.l.POPOUT,
-                onOpenProfile: q ? true : em
+                onOpenProfile: q ? true : eh
               }), (0, r.jsx)(D.Z, {
                 ref: ed,
                 user: n,
@@ -232,7 +232,7 @@ function V(e) {
               displayProfile: eo,
               guild: er,
               isHoveringOrFocusing: null == ec.interactionType && es,
-              onOpenProfile: q ? true : em,
+              onOpenProfile: q ? true : eh,
               channelId: V,
               onClose: K
             }), (0, r.jsx)(L.Z, {
@@ -242,7 +242,7 @@ function V(e) {
               onClose: K,
               appContext: X,
               disableAutoFocus: J
-            }), (null == eo ? true : eo.profileEffect) != null && (0, r.jsx)(h.Z, {
+            }), (null == eo ? true : eo.profileEffect) != null && (0, r.jsx)(m.Z, {
               skuId: null == eo || null == (t = eo.profileEffect) ? true : t.skuId,
               isHovering: el
             })]

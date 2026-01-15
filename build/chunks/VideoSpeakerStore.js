@@ -34,16 +34,16 @@ function E() {
     null != (e = u.Z.getSelectedParticipantId(r)) && u.Z.isParticipantPoppedOut(r, e) && (e = null);
     let t = f.Z.getLastActiveStream(),
       g = null != e ? u.Z.getParticipant(r, e) : null;
-    if ((null == g ? true : g.type) !== h.fO.ACTIVITY && ((null == g ? true : g.type) !== h.fO.USER || (null == (n = g.voiceState) ? true : n.selfVideo)) || (e = null), null != t && null == e) {
+    if ((null == g ? true : g.type) !== m.fO.ACTIVITY && ((null == g ? true : g.type) !== m.fO.USER || (null == (n = g.voiceState) ? true : n.selfVideo)) || (e = null), null != t && null == e) {
       let n = null == (a = u.Z.getParticipant(r, (0, d.V9)(t))) ? true : a.id;
       null == n || u.Z.isParticipantPoppedOut(r, n) || (e = n)
     }
     if (null == e) {
       let t = p.default.getId(),
-        n = s()(u.Z.getVideoParticipants(r)).filter(e => e.type === h.fO.USER && e.user.id !== t && !_.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
+        n = s()(u.Z.getVideoParticipants(r)).filter(e => e.type === m.fO.USER && e.user.id !== t && !_.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
         a = n.map(e => e.user.id),
         d = Date.now();
-      null == (e = null == (o = n.map(e => [e.user.id, m.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
+      null == (e = null == (o = n.map(e => [e.user.id, h.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
         let [t, n] = e;
         return 0 !== n
       }).maxBy(e => {
@@ -61,7 +61,7 @@ function y() {
 }
 class O extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(u.Z, p.default, m.Z, f.Z, _.Z), this.syncWith([u.Z, f.Z], y)
+    this.waitFor(u.Z, p.default, h.Z, f.Z, _.Z), this.syncWith([u.Z, f.Z], y)
   }
   getSpeaker(e) {
     return r !== e && (r = e, E(false)), null != i ? i : p.default.getId()

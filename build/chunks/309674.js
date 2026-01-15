@@ -50,8 +50,8 @@ function u(e, t) {
 function d(e) {
   var t = _();
   return function() {
-    var n, r = m(e);
-    return n = t ? Reflect.construct(r, arguments, m(this).constructor) : r.apply(this, arguments), f(this, n)
+    var n, r = h(e);
+    return n = t ? Reflect.construct(r, arguments, h(this).constructor) : r.apply(this, arguments), f(this, n)
   }
 }
 
@@ -74,13 +74,13 @@ function _() {
   }
 }
 
-function m(e) {
-  return (m = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
+function h(e) {
+  return (h = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
     return e.__proto__ || Object.getPrototypeOf(e)
   })(e)
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -96,7 +96,7 @@ var g = function(e) {
     var e;
     o(this, n);
     for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-    return h(p(e = t.call.apply(t, [this].concat(i))), "priority", 120), h(p(e), "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]), e
+    return m(p(e = t.call.apply(t, [this].concat(i))), "priority", 120), m(p(e), "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]), e
   }
   return l(n, [{
     key: "parse",

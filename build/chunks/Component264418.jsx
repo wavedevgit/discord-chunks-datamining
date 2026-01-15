@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,7 +79,7 @@ function y(e) {
       title: n,
       body: a,
       badge: _,
-      graphic: h,
+      graphic: m,
       size: b = "md",
       actions: y,
       textLink: O,
@@ -94,10 +94,10 @@ function y(e) {
   let P = i.useCallback((e, t) => {
       null == S || S(t)
     }, [S]),
-    R = i.useCallback(() => {
+    w = i.useCallback(() => {
       null == S || S("user:explicit")
     }, [S]),
-    w = m({
+    R = h({
       targetElementRef: N.targetElementRef,
       shouldShow: N.shouldShow,
       hasVideo: N.hasVideo,
@@ -112,19 +112,19 @@ function y(e) {
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(l.m, g(m({}, w), {
+  return (0, r.jsx)(l.m, g(h({}, R), {
     children: (0, r.jsxs)("div", {
       ref: I,
       "data-mana-component": "popover",
       children: [(0, r.jsx)(d.u, {
-        onClick: R,
+        onClick: w,
         variant: null != v ? "color-mix" : true
-      }), null != h && (0, r.jsx)("div", {
+      }), null != m && (0, r.jsx)("div", {
         className: o()(p.graphic, {
           [p["graphic--".concat(b)]]: null != b
         }),
-        children: (0, r.jsx)(s.zsu, g(m({}, h), {
-          aspectRatio: null != (t = h.aspectRatio) ? t : "sm" === b ? "2/1" : "16/9"
+        children: (0, r.jsx)(s.zsu, g(h({}, m), {
+          aspectRatio: null != (t = m.aspectRatio) ? t : "sm" === b ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.Y, {
         title: n,

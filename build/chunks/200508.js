@@ -19,8 +19,8 @@ let a = {
   f = 10,
   p = 18,
   _ = 33,
-  m = 79,
-  h = 18,
+  h = 79,
+  m = 18,
   g = 8,
   E = "ICC_PROFILE\0",
   b = 4 + E.length,
@@ -34,8 +34,8 @@ let a = {
   A = 65498,
   N = 65504,
   P = 65505,
-  R = 65506,
-  w = 65517,
+  w = 65506,
+  R = 65517,
   D = 65519,
   x = 65534,
   L = 65535,
@@ -50,7 +50,7 @@ function Z(e) {
 }
 
 function F(e) {
-  let t, n, r, a, o, s, _, m, E, O = l;
+  let t, n, r, a, o, s, _, h, E, O = l;
   for (; O + c + 5 <= e.byteLength;) {
     if (i.Z.USE_FILE && B(e, O)) t = e.getUint16(O + u), n = O + u;
     else if (i.Z.USE_FILE && V(e, O)) t = e.getUint16(O + u), r = O + u;
@@ -61,11 +61,11 @@ function F(e) {
     else if (i.Z.USE_IPTC && ee(e, O)) t = e.getUint16(O + u), s = O + p;
     else if (i.Z.USE_ICC && H(e, O)) {
       t = e.getUint16(O + u);
-      let n = O + h,
-        r = t - (h - u),
+      let n = O + m,
+        r = t - (m - u),
         i = e.getUint8(O + b),
         a = e.getUint8(O + y);
-      m || (m = []), m.push({
+      h || (h = []), h.push({
         offset: n,
         length: r,
         chunkNumber: i,
@@ -86,7 +86,7 @@ function F(e) {
     tiffHeaderOffset: o,
     iptcDataOffset: s,
     xmpChunks: _,
-    iccChunks: m,
+    iccChunks: h,
     mpfDataOffset: E
   }
 }
@@ -101,12 +101,12 @@ function V(e, t) {
 
 function H(e, t) {
   let n = E.length;
-  return e.getUint16(t) === R && (0, r.oH)(e, t + c, n) === E
+  return e.getUint16(t) === w && (0, r.oH)(e, t + c, n) === E
 }
 
 function Y(e, t) {
   let n = O.length;
-  return e.getUint16(t) === R && (0, r.oH)(e, t + c, n) === O
+  return e.getUint16(t) === w && (0, r.oH)(e, t + c, n) === O
 }
 
 function W(e, t) {
@@ -146,14 +146,14 @@ function J(e, t) {
 
 function $(e, t) {
   return {
-    dataOffset: e + m,
-    length: t - (m - u)
+    dataOffset: e + h,
+    length: t - (h - u)
   }
 }
 
 function ee(e, t) {
   let n = G.length;
-  return e.getUint16(t) === w && (0, r.oH)(e, t + c, n) === G && 0 === e.getUint8(t + c + n)
+  return e.getUint16(t) === R && (0, r.oH)(e, t + c, n) === G && 0 === e.getUint8(t + c + n)
 }
 
 function et(e, t) {

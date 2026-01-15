@@ -61,8 +61,8 @@ function d(e) {
     onAction: p
   } = e, _ = c(e, ["activity", "user", "source", "size", "variant", "fullWidth", "onAction"]);
   let {
-    label: m,
-    tooltip: h,
+    label: h,
+    tooltip: m,
     loading: g,
     disabled: E,
     onClick: b
@@ -70,12 +70,12 @@ function d(e) {
     null == p || p(), b()
   };
   return (0, r.jsx)(i.u, {
-    text: h,
+    text: m,
     children: (0, r.jsx)(a.Button, l({
       variant: d,
       size: u,
       icon: a.bb,
-      text: m,
+      text: h,
       fullWidth: f,
       onClick: y,
       disabled: E,

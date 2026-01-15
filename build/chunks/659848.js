@@ -32,8 +32,8 @@ function p(e, t) {
     _ = s.Z.useExperiment({
       location: "payment_modal"
     }).enabled,
-    m = (0, r.useRef)(null),
-    h = (0, r.useRef)(""),
+    h = (0, r.useRef)(null),
+    m = (0, r.useRef)(""),
     g = (0, r.useRef)(false),
     E = (0, r.useRef)(false),
     b = (0, r.useRef)(null);
@@ -44,17 +44,17 @@ function p(e, t) {
       let r = null != n ? n : await (0, a.co)(d),
         i = null == r ? true : r.billing_facet;
       if ((null == i ? true : i.payment_source_id) === t.paymentSourceId) {
-        m.current = d, h.current = e;
+        h.current = d, m.current = e;
         return
       }
       u(r) && (await (0, o.Cs)({
         orderId: d,
         updates: t
-      }), m.current = d, h.current = e)
-    }(m.current !== d || h.current !== e) && r()
+      }), h.current = d, m.current = e)
+    }(h.current !== d || m.current !== e) && r()
   }, [d, n, t.paymentSourceId, _]), (0, r.useEffect)(() => {
     let e = b.current;
-    b.current = d, null == d && null != e ? (E.current = true, m.current = null, h.current = "", g.current = false) : null != d && (E.current = false)
+    b.current = d, null == d && null != e ? (E.current = true, h.current = null, m.current = "", g.current = false) : null != d && (E.current = false)
   }, [d]), (0, r.useEffect)(() => {
     var n;
     if (null != d) {

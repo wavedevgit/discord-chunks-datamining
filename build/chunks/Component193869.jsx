@@ -2,9 +2,9 @@
 /** chunk id: 193869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $r: () => m,
+  $r: () => h,
   EP: () => _,
-  ZP: () => h
+  ZP: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,17 +18,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk596375 = require("./596375.js");
 let p = 500;
 class _ extends EventTarget {}
-let m = Chunk473749.createContext(new _);
+let h = Chunk473749.createContext(new _);
 
-function h(e) {
+function m(e) {
   var t;
   let {
     slide: n
-  } = e, _ = i.useRef(null), h = i.useRef(null), g = i.useRef(0), E = i.useRef(Date.now()), b = i.useContext(m), y = i.useContext(c.Q), O = (0, o.dQu)(y.gradient[0]).hex(), v = (0, o.dQu)(y.gradient[1]).hex(), S = null != (t = (0, s.Z)(y)) ? t : y, I = (0, o.dQu)(S.gradient[0]).hex(), T = (0, o.dQu)(S.gradient[1]).hex();
+  } = e, _ = i.useRef(null), m = i.useRef(null), g = i.useRef(0), E = i.useRef(Date.now()), b = i.useContext(h), y = i.useContext(c.Q), O = (0, o.dQu)(y.gradient[0]).hex(), v = (0, o.dQu)(y.gradient[1]).hex(), S = null != (t = (0, s.Z)(y)) ? t : y, I = (0, o.dQu)(S.gradient[0]).hex(), T = (0, o.dQu)(S.gradient[1]).hex();
   return i.useEffect(() => {
     let e = () => {
       let t = _.current,
-        n = h.current,
+        n = m.current,
         r = null == t ? true : t.getContext("2d");
       if (null != t && null != n && null != r) {
         if (n.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
@@ -65,7 +65,7 @@ function h(e) {
       loop: true,
       playsInline: true,
       className: d.hidden,
-      ref: h,
+      ref: m,
       "aria-hidden": true,
       children: (0, r.jsx)("source", {
         src: f.Z,

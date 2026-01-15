@@ -45,7 +45,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     id: t,
     query: n
@@ -55,7 +55,7 @@ function m(e) {
   }))
 }
 
-function h(e) {
+function m(e) {
   return Object.keys(e).forEach(t => {
     Array.isArray(e[t]) && (e[t] = e[t].filter(e => "string" == typeof e && e.trim())), Array.isArray(e[t]) && 0 !== e[t].length || delete e[t]
   }), e
@@ -67,7 +67,7 @@ function g() {
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
     let e = a.K.get(c);
-    (null == e ? true : e.history) != null && (f = h(e.history)), d = !!a.K.get(u)
+    (null == e ? true : e.history) != null && (f = m(e.history)), d = !!a.K.get(u)
   }
   isTokenized() {
     return d
@@ -79,7 +79,7 @@ class E extends(r = Chunk442837.ZP.Store) {
 l(E, "displayName", Chunk723642.zn);
 let b = new E(Chunk570140.Z, {
   SEARCH_HISTORY_WEB_CLEAR_ITEMS: _,
-  SEARCH_HISTORY_WEB_REMOVE_ITEM: m,
+  SEARCH_HISTORY_WEB_REMOVE_ITEM: h,
   SEARCH_HISTORY_WEB_ADD_ITEM: p,
   LOGOUT: g
 })

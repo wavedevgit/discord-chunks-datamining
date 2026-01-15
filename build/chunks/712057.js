@@ -34,13 +34,13 @@ let l = "#ffffff",
         ratio: 5,
         saturationFactor: s
       })) ? n : d,
-      m = (0, o.wh)({
+      h = (0, o.wh)({
         foreground: i()(u),
         background: i()(l),
         ratio: 7,
         saturationFactor: s
       }),
-      h = (0, o.wh)({
+      m = (0, o.wh)({
         foreground: i()(u),
         background: i()(c),
         ratio: 7,
@@ -48,7 +48,7 @@ let l = "#ffffff",
       });
     return {
       LIGHT: {
-        accentColor: null == m ? true : m.hex(),
+        accentColor: null == h ? true : h.hex(),
         backgroundColor: (0, o.xj)({
           colorRGB: p,
           saturationFactor: s
@@ -57,7 +57,7 @@ let l = "#ffffff",
         opacity: (null == f ? true : f.saturation) < .1 ? .35 : .1
       },
       DARK: {
-        accentColor: null == h ? true : h.hex(),
+        accentColor: null == m ? true : m.hex(),
         backgroundColor: (0, o.xj)({
           colorRGB: _,
           saturationFactor: s

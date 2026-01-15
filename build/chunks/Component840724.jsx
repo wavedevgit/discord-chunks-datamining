@@ -112,14 +112,14 @@ function X(e) {
     onClick: en,
     className: er,
     analyticsLocations: ei
-  } = e, ea = i.useRef(null), eo = (0, f.e7)([S.Z], () => S.Z.get($)), es = (0, f.e7)([v.Z], () => (0, d.wjy)(v.Z.theme)), el = (0, f.e7)([m.Z], () => m.Z.useReducedMotion), {
+  } = e, ea = i.useRef(null), eo = (0, f.e7)([S.Z], () => S.Z.get($)), es = (0, f.e7)([v.Z], () => (0, d.wjy)(v.Z.theme)), el = (0, f.e7)([h.Z], () => h.Z.useReducedMotion), {
     isHoveringOrFocusing: ec
   } = (0, y.Z)(ea), eu = (0, A.oR)(), {
     analyticsLocations: ed
   } = (0, g.ZP)(null != ei ? ei : []), ef = i.useRef({
     positionInSection: X,
     analyticsLocations: ed
-  }), [ep, e_] = i.useState(false), em = (0, R.Z)($, ep), eh = i.useCallback(e => {
+  }), [ep, e_] = i.useState(false), eh = (0, w.Z)($, ep), em = i.useCallback(e => {
     e_(e)
   }, []), eg = i.useMemo(() => l()(H.card, {
     [H.cardSmall]: 0 === ee,
@@ -186,14 +186,14 @@ function X(e) {
       let e = o()(eA).darken(1.5).alpha(.9).hex(),
         t = o()(eA).alpha(0).hex(),
         [n, r] = W[ee];
-      return (0 !== n || 0 !== r) && em ? "linear-gradient(to top, ".concat(e, " ").concat(K + n, "%, ").concat(t, " ").concat(K + r, "%)") : "none"
-    }, [eA, ee, em]),
-    eR = i.useCallback(() => {
-      (0, w.eagerNavigateToSocialLayerStorefront)({
+      return (0 !== n || 0 !== r) && eh ? "linear-gradient(to top, ".concat(e, " ").concat(K + n, "%, ").concat(t, " ").concat(K + r, "%)") : "none"
+    }, [eA, ee, eh]),
+    ew = i.useCallback(() => {
+      (0, R.eagerNavigateToSocialLayerStorefront)({
         guildId: et
       })
     }, [et]),
-    ew = i.useCallback(e => {
+    eR = i.useCallback(e => {
       if (eO(Z.rZ.CARD), null != en) return void en(e);
       null != et && (0, P.Z)({
         guildId: et,
@@ -206,19 +206,19 @@ function X(e) {
   let eD = (0, C.Do)(eo);
   return (0, r.jsx)(p.$, {
     innerRef: ea,
-    onChange: eh,
+    onChange: em,
     threshold: 0,
     children: (0, r.jsx)(d.tEY, {
       children: (0, r.jsxs)(_.kL8, {
-        onClick: ew,
-        onMouseDown: eR,
+        onClick: eR,
+        onMouseDown: ew,
         onMouseEnter: eE,
         onMouseLeave: eb,
         className: l()(eg, {
           [H.cardAnimation]: !el && 2 !== ee,
           [H.cardDark]: es,
           [es ? H.cardDarkHighlighted : H.cardHighlighted]: ec,
-          [H.cardNotLoaded]: !em
+          [H.cardNotLoaded]: !eh
         }, er),
         ref: ea,
         "aria-label": eo.name,
@@ -234,7 +234,7 @@ function X(e) {
           trackCardClick: eO,
           analyticsLocations: ed,
           analyticsContext: eu
-        }), null != eD ? em ? (0, r.jsx)(j.p, {
+        }), null != eD ? eh ? (0, r.jsx)(j.p, {
           containerClassName: H.cardImageContainer,
           foregroundImageClassName: H.cardImage,
           cardImage: eD,
@@ -261,7 +261,7 @@ function X(e) {
             className: H.details,
             children: [(0, r.jsx)("div", {
               className: H.titleContainer,
-              children: em ? (0, r.jsx)(_.Text, {
+              children: eh ? (0, r.jsx)(_.Text, {
                 color: "always-white",
                 variant: "text-md/medium",
                 lineClamp: 1,
@@ -269,7 +269,7 @@ function X(e) {
               }) : (0, r.jsx)(k.G, {})
             }), (0, r.jsx)("div", {
               className: H.descriptionContainer,
-              children: em ? (0, r.jsxs)(r.Fragment, {
+              children: eh ? (0, r.jsxs)(r.Fragment, {
                 children: [null != ev && (0, r.jsx)("img", {
                   src: ev.toString(),
                   alt: eS,
@@ -293,7 +293,7 @@ function X(e) {
                   e.stopPropagation(), eO(Z.rZ.BUY_BUTTON), (0, L.P)(eo, {
                     isGift: false
                   }, {
-                    analyticsLocations: [h.Z.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON]
+                    analyticsLocations: [m.Z.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON]
                   })
                 },
                 text: V.intl.format(V.t.Xp5WTn, {
@@ -305,7 +305,7 @@ function X(e) {
                   e.stopPropagation(), eO(Z.rZ.GIFT_BUTTON), (0, L.P)(eo, {
                     isGift: true
                   }, {
-                    analyticsLocations: [h.Z.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]
+                    analyticsLocations: [m.Z.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]
                   })
                 }
               })]

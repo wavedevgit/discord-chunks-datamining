@@ -38,7 +38,7 @@ class f extends Chunk442837.ZP.Store {
   carefullyOpenDatabase(e) {
     if (this.preventWritingCachesAgainThisSession) return u.verbose("Not opening database because caches have been manually cleared."), null;
     if (null != e && !this.databases.has(e)) {
-      let t = m(e);
+      let t = h(e);
       u.verbose("added database (".concat(e, " → ").concat(t, ")")), this.databases.set(e, t), this.emitChange()
     }
     return this.database(e)
@@ -74,7 +74,7 @@ class f extends Chunk442837.ZP.Store {
   async carefullySpeculativelyOpen(e) {
     if (this.preventWritingCachesAgainThisSession) return void u.verbose("Not opening database because caches have been manually cleared.");
     if (null != e) {
-      let t = await h(e);
+      let t = await m(e);
       null == t || this.databases.has(e) ? (u.verbose("discarding speculative database (".concat(e, " → ").concat(t, ")")), null == t || t.close()) : (u.verbose("added speculative database (".concat(e, " → ").concat(t, ")")), this.databases.set(e, t), this.emitChange())
     }
   }
@@ -101,7 +101,7 @@ function _(e) {
   return "@account.".concat(e)
 }
 
-function m(e) {
+function h(e) {
   if (d) {
     let t = 50,
       n = _(e);
@@ -111,7 +111,7 @@ function m(e) {
   }
   return null
 }
-async function h(e) {
+async function m(e) {
   if (d) {
     let t = _(e);
     u.verbose("speculatively opening ".concat(t));

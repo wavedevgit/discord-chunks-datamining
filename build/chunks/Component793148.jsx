@@ -2,7 +2,7 @@
 /** chunk id: 793148, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,8 +47,8 @@ class _ extends(r = Chunk473749.PureComponent) {
       currentWindow: o,
       muted: f,
       minValue: _,
-      maxValue: m,
-      value: h,
+      maxValue: h,
+      value: m,
       onVolumeShow: g,
       onVolumeHide: E
     } = this.props, {
@@ -56,7 +56,7 @@ class _ extends(r = Chunk473749.PureComponent) {
       focused: y,
       dragging: O
     } = this.state, v = l.gj8;
-    return f || h === _ ? v = l.OyP : h < m / 2 && (v = l.X2j), (0, i.jsxs)("div", {
+    return f || m === _ ? v = l.OyP : m < h / 2 && (v = l.X2j), (0, i.jsxs)("div", {
       className: s()(n, d.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
@@ -91,7 +91,7 @@ class _ extends(r = Chunk473749.PureComponent) {
         children: (0, i.jsx)(c.Z, {
           sliderClassName: a,
           type: c.Z.Types.VOLUME,
-          value: h / m,
+          value: m / h,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
@@ -176,4 +176,4 @@ f(_, "defaultProps", {
   maxValue: 100,
   handleSize: 16
 });
-let m = _
+let h = _

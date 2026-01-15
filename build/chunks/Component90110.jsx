@@ -2,7 +2,7 @@
 /** chunk id: 90110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -67,11 +67,11 @@ function P(e, t) {
   }), e
 }
 
-function R() {
+function w() {
   let e = (0, E.q)(O.Z.testModeApplicationId),
     {
       analyticsLocations: t
-    } = (0, g.ZP)(h.Z.SDK_DEBUG_TOOLS),
+    } = (0, g.ZP)(m.Z.SDK_DEBUG_TOOLS),
     {
       canStartAuthorization: n,
       hasAlreadyLinked: i,
@@ -87,7 +87,7 @@ function R() {
     } = (0, v.FG)(e, {
       debug: true
     }),
-    R = (0, c.e7)([y.Z], () => null != e && y.Z.isConnected(e.id)),
+    w = (0, c.e7)([y.Z], () => null != e && y.Z.isConnected(e.id)),
     x = (0, c.e7)([_.ZP], () => _.ZP.getSelfEmbeddedActivities()),
     L = "authorization_debug",
     j = [{
@@ -151,22 +151,22 @@ function R() {
           variant: "text-md/medium",
           color: "text-subtle",
           children: I.intl.string(S.default["no+FQS"])
-        }), (0, r.jsx)(w, {
-          overallStatus: C ? 0 : R ? 3 : 1,
+        }), (0, r.jsx)(R, {
+          overallStatus: C ? 0 : w ? 3 : 1,
           name: I.intl.string(S.default.AGLx00),
           steps: [{
-            status: R ? 2 : 4,
+            status: w ? 2 : 4,
             text: I.intl.string(S.default.kxF9br),
-            description: R ? null : I.intl.string(S.default.PFxxJa),
-            learnMoreLink: R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+            description: w ? null : I.intl.string(S.default.PFxxJa),
+            learnMoreLink: w ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }, {
-            status: C ? 2 : R ? 3 : 4,
+            status: C ? 2 : w ? 3 : 4,
             text: I.intl.string(S.default.S94dzs),
-            description: C || !R ? null : I.intl.string(S.default.aTULMB),
-            learnMoreLink: C || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+            description: C || !w ? null : I.intl.string(S.default.aTULMB),
+            learnMoreLink: C || !w ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
           isChosen: u === v.ro.RPC
-        }), (0, r.jsx)(w, {
+        }), (0, r.jsx)(R, {
           overallStatus: +!N,
           name: I.intl.string(S.default.K3ObrU),
           steps: [{
@@ -203,7 +203,7 @@ function R() {
           onClick: () => {
             f.Z.delete(A.id);
             let t = x.get(e.id);
-            null != t && m.Z.leaveActivity({
+            null != t && h.Z.leaveActivity({
               location: t.location,
               applicationId: e.id,
               showFeedback: false
@@ -223,7 +223,7 @@ function R() {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     overallStatus: t,
     name: n,

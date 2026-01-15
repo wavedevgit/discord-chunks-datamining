@@ -47,19 +47,19 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {};
+let h = {};
 
-function h(e) {
+function m(e) {
   var t;
   let n = s.Z.getChannel(null == e ? true : e.channel_id);
   if (null == n || !n.isForumPost()) returnfalse;
-  let r = m[n.id];
+  let r = h[n.id];
   return u.default.compare(null == e ? true : e.id, null == r || null == (t = r.message) ? true : t.id) > false
 }
 
 function g(e, t) {
   let n = null == t ? null : (0, o.e5)(t);
-  return m[e] = {
+  return h[e] = {
     loaded: true,
     message: n
   }, true
@@ -68,18 +68,18 @@ function g(e, t) {
 function E(e, t) {
   let n = y(e),
     r = O(e);
-  return null != n && null != r && (m[e] = _(f({}, n), {
+  return null != n && null != r && (h[e] = _(f({}, n), {
     message: (0, o.wi)(r, t)
   }), true)
 }
 
 function b(e, t) {
   let n = O(e);
-  return (null == n ? true : n.id) === t && (delete m[e], true)
+  return (null == n ? true : n.id) === t && (delete h[e], true)
 }
 
 function y(e) {
-  return m[e]
+  return h[e]
 }
 
 function O(e) {
@@ -88,7 +88,7 @@ function O(e) {
 }
 
 function v() {
-  m = {}
+  h = {}
 }
 
 function S(e) {
@@ -99,12 +99,12 @@ function S(e) {
 }
 
 function I(e) {
-  if (e.isPushNotification || !h(e.message)) returnfalse;
+  if (e.isPushNotification || !m(e.message)) returnfalse;
   e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? g(e.message.channel_id, null) : g(e.message.channel_id, e.message)
 }
 
 function T(e) {
-  if (!h(e.message) || e.message.channel_id === e.message.id) returnfalse;
+  if (!m(e.message) || e.message.channel_id === e.message.id) returnfalse;
   E(e.message.channel_id, e.message)
 }
 
@@ -126,10 +126,10 @@ class N extends(r = Chunk442837.ZP.Store) {
     this.waitFor(s.Z, l.default)
   }
   getMessageState(e) {
-    return e in m || (m[e] = {
+    return e in h || (h[e] = {
       loaded: false,
       message: null
-    }), m[e]
+    }), h[e]
   }
 }
 d(N, "displayName", "ForumPostRecentMessageStore"), new N(Chunk570140.Z, {

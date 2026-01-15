@@ -53,11 +53,11 @@ function u(e, t) {
         "setAnchorDate" in t && (e.preventDefault(), t.setAnchorDate(null))
     }
   }, _ = (0, r.FK)(n, u, t.timeZone, true), {
-    ariaLabel: m,
-    ariaLabelledBy: h
+    ariaLabel: h,
+    ariaLabelledBy: m
   } = r.Lh.get(t), g = (0, o.b)({
-    "aria-label": [m, _].filter(Boolean).join(", "),
-    "aria-labelledby": h
+    "aria-label": [h, _].filter(Boolean).join(", "),
+    "aria-labelledby": m
   }), E = (0, c.a)({
     weekday: e.weekdayStyle || "narrow",
     timeZone: t.timeZone

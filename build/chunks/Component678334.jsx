@@ -2,7 +2,7 @@
 /** chunk id: 678334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,14 +32,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk129432 = require("./129432.js");
 
-function R(e) {
+function w(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: a,
     onNext: s,
-    legalTermsNodeRef: R,
-    flashLegalTerms: w,
+    legalTermsNodeRef: w,
+    flashLegalTerms: R,
     invoiceError: D,
     planError: x,
     onPurchaseError: L,
@@ -79,8 +79,8 @@ function R(e) {
     soundEffect: ef,
     giftRecipient: ep,
     selectedGiftingPromotionReward: e_
-  } = (0, O.wD)(), em = (0, p.a5)(K), eh = (0, b.MY)(ep), eg = {};
-  eg.gift_style = ec, eg.reward_sku_ids = em && (null == e_ ? true : e_.skuId) != null ? [null == e_ ? true : e_.skuId] : [], eh === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != ep, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = ep.id, eg.custom_message = eu, eg.emoji_id = null == ed ? true : ed.id, eg.emoji_name = (null == ed ? true : ed.id) == null ? null == ed ? true : ed.surrogates : true, eg.sound_id = null == ef ? true : ef.soundId);
+  } = (0, O.wD)(), eh = (0, p.a5)(K), em = (0, b.MY)(ep), eg = {};
+  eg.gift_style = ec, eg.reward_sku_ids = eh && (null == e_ ? true : e_.skuId) != null ? [null == e_ ? true : e_.skuId] : [], em === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != ep, "Gift recipient must be set at purchase review step for these gift options."), eg.recipient_id = ep.id, eg.custom_message = eu, eg.emoji_id = null == ed ? true : ed.id, eg.emoji_name = (null == ed ? true : ed.id) == null ? null == ed ? true : ed.surrogates : true, eg.sound_id = null == ef ? true : ef.soundId);
   let eE = null == K ? true : K.id,
     eb = (0, I.sE)(k, z.paymentSourceId, eE),
     {
@@ -91,16 +91,16 @@ function R(e) {
     [eI, eT] = i.useState(false),
     {
       hasEntitlements: eC
-    } = (0, h.H)(eE, el),
+    } = (0, m.H)(eE, el),
     eA = (0, y.Ap)(z.paymentSourceId),
     eN = eC || eb,
     eP = (0, _.U)(),
-    eR = (0, c.e7)([T.Z], () => T.Z.currentOrderId),
-    ew = null,
+    ew = (0, c.e7)([T.Z], () => T.Z.currentOrderId),
+    eR = null,
     eD = null;
   if (X === N.GZQ.ONE_TIME) {
     var ex;
-    l()(null != ee, "SKU must be selected for one-time purchases"), ew = null != (ex = et[ee]) ? ex : null, l()(null != ew, "SKU must exist and be fetched.");
+    l()(null != ee, "SKU must be selected for one-time purchases"), eR = null != (ex = et[ee]) ? ex : null, l()(null != eR, "SKU must exist and be fetched.");
     let e = en[ee],
       t = null != J ? J : E.c;
     eD = null != e ? e[t] : null
@@ -128,14 +128,14 @@ function R(e) {
       premiumSubscription: t,
       onNext: s,
       metadata: B,
-      sku: ew,
+      sku: eR,
       skuPricePreview: eD,
       purchaseType: X,
       referralCode: er,
       loadId: ei.loadId,
       giftInfoOptions: eg,
       invoicePreview: ea,
-      orderId: eR
+      orderId: ew
     })
   }, ej = {
     baseAnalyticsData: j,
@@ -163,11 +163,11 @@ function R(e) {
     align: f.Z.Align.CENTER,
     className: o()(es, P.modalFooter),
     children: [(0, r.jsx)(g.Z, {
-      legalTermsNodeRef: R,
+      legalTermsNodeRef: w,
       invoiceError: D,
       planError: x,
       disablePurchase: H,
-      flashLegalTerms: w,
+      flashLegalTerms: R,
       isSubmitting: ev,
       premiumSubscription: t,
       isGift: el,
@@ -181,7 +181,7 @@ function R(e) {
       onPaymentSourceAdd: W
     }), (0, r.jsx)(A.Z, {}), eU ? (0, r.jsx)("div", {
       className: P.back,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(h.Z, {
         onClick: a
       })
     }) : null]

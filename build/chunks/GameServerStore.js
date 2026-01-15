@@ -74,7 +74,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     instances: n
@@ -87,7 +87,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     skuId: n,
@@ -215,8 +215,8 @@ s(T, "displayName", "GameServerStore");
 let C = new T(Chunk570140.Z, {
   LOGOUT: f,
   GAME_SERVER_FETCH_CATALOG_SUCCESS: _,
-  GAME_SERVER_FETCH_INSTANCES_SUCCESS: m,
-  GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS: h,
+  GAME_SERVER_FETCH_INSTANCES_SUCCESS: h,
+  GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS: m,
   GAME_SERVER_UPDATE_INSTANCE_SUCCESS: g,
   GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: b,
   GAME_SERVER_CREATE: y,

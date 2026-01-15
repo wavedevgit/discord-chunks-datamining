@@ -88,8 +88,8 @@ function I(e) {
     onContextMenu: d,
     className: f,
     wrapperClassName: p,
-    iconClassName: m,
-    iconColor: h = "currentColor",
+    iconClassName: h,
+    iconColor: m = "currentColor",
     iconComponent: E,
     themeable: b = false,
     disabled: y = false,
@@ -102,8 +102,8 @@ function I(e) {
     "aria-label": A,
     look: N,
     buttonText: P,
-    size: R,
-    color: w
+    size: w,
+    color: R
   } = e;
   return (0, r.jsx)(_.Z, {
     children: (0, r.jsx)(l.u, {
@@ -115,8 +115,8 @@ function I(e) {
       children: (0, r.jsxs)(c.zx, {
         "data-migration-pending": true,
         look: null != N ? N : c.zx.Looks.BLANK,
-        size: null != R ? R : c.zx.Sizes.NONE,
-        color: w,
+        size: null != w ? w : c.zx.Sizes.NONE,
+        color: R,
         onKeyDown: e => {
           null == i || i(e)
         },
@@ -144,12 +144,12 @@ function I(e) {
         "aria-label": A,
         children: [(0, r.jsx)(E, {
           size: s.Z.md,
-          className: o()(m, {
+          className: o()(h, {
             [g.controlIcon]: null == P,
             [g.themeable]: b,
             [g.active]: O
           }),
-          color: h
+          color: m
         }), P]
       })
     })
@@ -194,31 +194,31 @@ function A(e) {
       isTrayButton: N,
       applyStyles: P = false
     } = e,
-    R = v(e, ["ref", "color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "isTrayButton", "applyStyles"]);
-  let w = (0, m.Z)(a, l),
-    D = null != s ? s : w,
+    w = v(e, ["ref", "color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "isTrayButton", "applyStyles"]);
+  let R = (0, h.Z)(a, l),
+    D = null != s ? s : R,
     x = (0, d.Z)("(max-width: 456px)"),
     L = i.useRef(null),
     j = i.useContext(p.h9);
   i.useEffect(() => {
     null != L.current && (j ? L.current.pause() : L.current.play())
   }, [j]);
-  let M = null != (t = R.onContextMenu) ? t : y,
+  let M = null != (t = w.onContextMenu) ? t : y,
     k = null == y && !N,
     U = null != y && !N,
     G = N && null != y && !x,
-    Z = (0, r.jsx)(I, O(b({}, R), {
+    Z = (0, r.jsx)(I, O(b({}, w), {
       grow: false,
       onContextMenu: M,
       iconClassName: o()(E, g.centerIcon, k && g.fullRegionIcon),
-      className: o()(x || P ? c : null, l && g.active, g.centerButton, C[w], k && g.fullRegionButton, G && g.attachedButton)
+      className: o()(x || P ? c : null, l && g.active, g.centerButton, C[R], k && g.fullRegionButton, G && g.attachedButton)
     }));
   return x ? Z : (0, r.jsxs)("div", {
     ref: n,
-    className: o()(g.attachedCaretButtonContainer, S && g.popoutOpen, c, U && [g.fullRegionDropdownButton, T[w]]),
+    className: o()(g.attachedCaretButtonContainer, S && g.popoutOpen, c, U && [g.fullRegionDropdownButton, T[R]]),
     children: [Z, null != y ? (0, r.jsx)(_.Z, {
       children: (0, r.jsx)(u.P3F, {
-        "aria-label": h.intl.string(h.t.PdRCRg),
+        "aria-label": m.intl.string(m.t.PdRCRg),
         onClick: A ? true : y,
         className: o()(g.contextMenuNub, N && g.attachedCaret, C[D], S && [g.popoutOpen, g.active], A && g.disabled),
         children: (0, r.jsx)(f.Z, {

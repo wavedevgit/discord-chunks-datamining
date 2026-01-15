@@ -2,8 +2,8 @@
 /** chunk id: 309006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
-  a: () => m
+  Z: () => m,
+  a: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk325208 = require("./325208.js");
 let _ = 50;
 
-function m(e) {
+function h(e) {
   var t;
   let n = null == e || null == (t = e.parentElement) ? true : t.getBoundingClientRect();
   return null == n ? {
@@ -29,12 +29,12 @@ function m(e) {
     height: n.height
   }
 }
-let h = Chunk473749.forwardRef(function(e, t) {
+let m = Chunk473749.forwardRef(function(e, t) {
   let {
     sound: n,
-    containerDimensions: m
-  } = e, h = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < _, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, v = i.useCallback(() => {
-    if (!g && y && O && null != h) {
+    containerDimensions: h
+  } = e, m = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < _, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, v = i.useCallback(() => {
+    if (!g && y && O && null != m) {
       var e;
       let t = (0, c._r)({
           id: n.emojiId,
@@ -50,11 +50,11 @@ let h = Chunk473749.forwardRef(function(e, t) {
           animationType: i,
           shouldResize: r,
           url: t,
-          userId: h.id
+          userId: m.id
         };
       b(e => [...e, l])
     }
-  }, [g, y, O, h, n]);
+  }, [g, y, O, m, n]);
   i.useImperativeHandle(t, () => ({
     addAnimation: v
   }));
@@ -68,11 +68,11 @@ let h = Chunk473749.forwardRef(function(e, t) {
   return g || !O ? null : (0, r.jsx)("div", {
     className: p.effects,
     style: {
-      width: m.width,
-      height: m.height
+      width: h.width,
+      height: h.height
     },
     children: E.map(e => (0, r.jsx)(u.Z, {
-      containerDimensions: m,
+      containerDimensions: h,
       effect: e,
       onComplete: S
     }, e.id))

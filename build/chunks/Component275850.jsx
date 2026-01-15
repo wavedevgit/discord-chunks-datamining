@@ -137,8 +137,8 @@ function T(e, t, n) {
 
 function C(e, t) {
   let n = null;
-  return e && null != t && !t.canRedeemTrial() ? n = g.intl.string(g.t.SvheW9) : e && null != t && t.hasFlag(h.Cw.NEW) && (n = g.intl.format(g.t.d7ZLKA, {
-    helpDeskArticle: _.Z.getArticleURL(m.BhN.PAYMENT_AUTHORIZATION_CHARGE)
+  return e && null != t && !t.canRedeemTrial() ? n = g.intl.string(g.t.SvheW9) : e && null != t && t.hasFlag(m.Cw.NEW) && (n = g.intl.format(g.t.d7ZLKA, {
+    helpDeskArticle: _.Z.getArticleURL(h.BhN.PAYMENT_AUTHORIZATION_CHARGE)
   })), n
 }
 
@@ -150,20 +150,20 @@ function A(e) {
     prependOption: d,
     hidePersonalInformation: f,
     onChange: _,
-    onPaymentSourceAdd: m,
-    isTrial: h = false,
+    onPaymentSourceAdd: h,
+    isTrial: m = false,
     disabled: b = false,
     className: y,
     optionClassName: O,
     dropdownLoading: A,
     paymentGatewayRestrictions: N
-  } = e, P = 0 === a.length, R = e => {
-    if (e === v) null != m && m();
+  } = e, P = 0 === a.length, w = e => {
+    if (e === v) null != h && h();
     else {
       let t = a.find(t => t.id === e);
       null != _ && _(t)
     }
-  }, w = [...null != d ? [d] : [], ...a, S].map((e, t) => {
+  }, R = [...null != d ? [d] : [], ...a, S].map((e, t) => {
     if (e instanceof p.ZP) {
       let {
         label: t
@@ -179,7 +179,7 @@ function A(e) {
       value: e.value,
       label: e.label
     }
-  }), D = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), x = C(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
+  }), D = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), x = C(m, i.useMemo(() => a.find(e => e.id === n), [a, n]));
   if (null == n && null != N && N.length > 0) {
     let e = a.filter(e => N.includes(e.paymentGateway));
     n = 0 === e.length ? v : e[0].id
@@ -188,13 +188,13 @@ function A(e) {
     children: [P ? (0, r.jsx)(c.zxk, {
       variant: "primary",
       fullWidth: true,
-      onClick: m,
+      onClick: h,
       text: g.intl.string(g.t.eQ2bLp)
     }) : (0, r.jsx)(l.y6, {
-      options: w,
+      options: R,
       value: n,
       label: t,
-      onChange: R,
+      onChange: w,
       isDisabled: b,
       className: o()({
         [E.paymentSourceHasWarning]: null != x

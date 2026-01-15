@@ -59,10 +59,10 @@ function N(e) {
     subscriptionsSettings: N
   } = (0, y.H)(n), {
     listingsLoaded: P
-  } = (0, m.eD)(n), R = (0, m.ue)(n, {
+  } = (0, h.eD)(n), w = (0, h.ue)(n, {
     publishedOnly: true
-  }), w = i.useCallback(async () => {
-    b.default.track(S.rMx.GUILD_SHOP_EMBED_CLICKED, A({}, (0, f.hH)(n))), await (0, h.Z)(S.Z5c.SERVER_SHOP(n))
+  }), R = i.useCallback(async () => {
+    b.default.track(S.rMx.GUILD_SHOP_EMBED_CLICKED, A({}, (0, f.hH)(n))), await (0, m.Z)(S.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: s.ImpressionTypes.VIEW,
@@ -70,7 +70,7 @@ function N(e) {
   }, {
     disableTrack: null == a
   });
-  let D = R.length > 0 ? new Date(Math.min(...R.map(e => Date.parse(e.published_at)))) : true;
+  let D = w.length > 0 ? new Date(Math.min(...w.map(e => Date.parse(e.published_at)))) : true;
   return C || !P ? (0, r.jsx)("div", {
     className: o()(T.guildShopEmbed, T.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
@@ -122,7 +122,7 @@ function N(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             children: I.intl.format(I.t.tKZNlb, {
-              listingCount: R.length
+              listingCount: w.length
             })
           })
         }), null != D && (0, r.jsx)("li", {
@@ -137,7 +137,7 @@ function N(e) {
       }), (0, r.jsx)("div", {
         className: T.guildShopEmbedCta,
         children: (0, r.jsx)(u.zxk, {
-          onClick: w,
+          onClick: R,
           icon: v.P,
           text: I.intl.string(I.t.jXx1CC)
         })

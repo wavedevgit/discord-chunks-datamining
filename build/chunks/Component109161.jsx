@@ -44,8 +44,8 @@ function f(e) {
     background: u = true,
     hoverOverride: d
   } = e, [f, p] = i.useState(false), _ = null != (t = null == a ? true : a.primaryColor) ? t : n, {
-    hasGradient: m,
-    stops: h,
+    hasGradient: h,
+    stops: m,
     gradientId: g,
     animatedGradientId: E
   } = (0, l.De)(_, null == a ? true : a.secondaryColor, null == a ? true : a.tertiaryColor);
@@ -59,7 +59,7 @@ function f(e) {
     onMouseLeave: () => {
       p(false)
     },
-    children: [m && (0, r.jsxs)("defs", {
+    children: [h && (0, r.jsxs)("defs", {
       children: [(0, r.jsx)("linearGradient", {
         id: g,
         x1: "0%",
@@ -67,7 +67,7 @@ function f(e) {
         x2: "100%",
         y2: "0%",
         spreadMethod: "reflect",
-        children: h
+        children: m
       }), (0, r.jsxs)("linearGradient", {
         id: E,
         x1: "0%",
@@ -75,7 +75,7 @@ function f(e) {
         x2: "100%",
         y2: "0%",
         spreadMethod: "reflect",
-        children: [h, (0, r.jsx)("animate", {
+        children: [m, (0, r.jsx)("animate", {
           attributeName: "x1",
           from: "0%",
           to: "200%",
@@ -102,13 +102,13 @@ function f(e) {
       cx: "10",
       cy: "10",
       r: "6",
-      fill: m ? "url(#".concat(g, ")") : _
+      fill: h ? "url(#".concat(g, ")") : _
     }), (0, r.jsx)("circle", {
       className: c.dot,
       cx: "10",
       cy: "10",
       r: "5",
-      fill: m ? "url(#".concat(d || f ? E : g, ")") : _
+      fill: h ? "url(#".concat(d || f ? E : g, ")") : _
     })]
   })
 }

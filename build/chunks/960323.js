@@ -30,7 +30,7 @@ let N = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
   O = (0, Chunk509613.m7)(Chunk313789.n.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
     useTitle: () => I.intl.string(I.t.B1fFpf),
     usePredicate: () => s.Z.isSupported(),
-    icon: Chunk657707.S6n,
+    icon: Chunk657707.MicrophoneIcon,
     getLegacySearchKey: () => (0, r.Ml)("VoiceAndVideoPanel") ? true : g.s6.VOICE_AND_VIDEO,
     buildLayout: () => [(0, r.Ml)("VoiceAndVideoPanel") ? A : N]
   })

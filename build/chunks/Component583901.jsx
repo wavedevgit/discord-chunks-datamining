@@ -87,7 +87,7 @@ function S(e) {
     children: u,
     showBadge: p,
     showLockedBadge: _,
-    showSelectionCircle: h = false
+    showSelectionCircle: m = false
   } = e, E = (0, d.jm)({
     label: t,
     isSelected: s
@@ -102,9 +102,9 @@ function S(e) {
           [g.selected]: s
         }, n),
         style: i,
-        onClick: s ? m.dG4 : o,
+        onClick: s ? h.dG4 : o,
         children: u
-      })), (s || h) && (0, r.jsx)(v, {}), !s && p && (0, r.jsx)("div", {
+      })), (s || m) && (0, r.jsx)(v, {}), !s && p && (0, r.jsx)("div", {
         className: g.redCircle
       }), _ && (0, r.jsx)("div", {
         className: g.lockedBadgeContainer,
@@ -127,25 +127,25 @@ function I(e) {
     themePreferenceForSystemTheme: c
   }).with({
     theme: "system",
-    themePreferenceForSystemTheme: m.BRd.LIGHT
+    themePreferenceForSystemTheme: h.BRd.LIGHT
   }, () => g.lightIcon).with({
     theme: "system",
-    themePreferenceForSystemTheme: m.BRd.DARK
+    themePreferenceForSystemTheme: h.BRd.DARK
   }, () => g.darkIcon).with({
     theme: "system",
-    themePreferenceForSystemTheme: m.BRd.DARKER
+    themePreferenceForSystemTheme: h.BRd.DARKER
   }, () => g.darkerIcon).with({
     theme: "system",
-    themePreferenceForSystemTheme: m.BRd.MIDNIGHT
+    themePreferenceForSystemTheme: h.BRd.MIDNIGHT
   }, () => g.midnightIcon).with({
-    theme: m.BRd.LIGHT
+    theme: h.BRd.LIGHT
   }, () => g.lightIcon).with({
-    theme: m.BRd.DARK
+    theme: h.BRd.DARK
   }, () => g.darkIcon).with({
-    theme: m.BRd.DARKER
+    theme: h.BRd.DARKER
   }, () => g.darkerIcon).with({
-    theme: m.BRd.MIDNIGHT
-  }, () => g.midnightIcon).otherwise(() => g.darkIcon), d = (0, o.EQ)(t).with(m.BRd.LIGHT, () => h.intl.string(h.t.K2sFfo)).with(m.BRd.DARK, () => h.intl.string(h.t.SMPT1k)).with(m.BRd.DARKER, () => h.intl.string(h.t.b8Cei3)).with(m.BRd.MIDNIGHT, () => h.intl.string(h.t.Do4ZJx)).with("system", () => h.intl.string(h.t["7rOU6j"])).exhaustive();
+    theme: h.BRd.MIDNIGHT
+  }, () => g.midnightIcon).otherwise(() => g.darkIcon), d = (0, o.EQ)(t).with(h.BRd.LIGHT, () => m.intl.string(m.t.K2sFfo)).with(h.BRd.DARK, () => m.intl.string(m.t.SMPT1k)).with(h.BRd.DARKER, () => m.intl.string(m.t.b8Cei3)).with(h.BRd.MIDNIGHT, () => m.intl.string(m.t.Do4ZJx)).with("system", () => m.intl.string(m.t["7rOU6j"])).exhaustive();
   return (0, r.jsx)(S, {
     onSelect: i,
     isSelected: n,
@@ -176,7 +176,7 @@ function T(e) {
     colors: d,
     angle: f,
     theme: p
-  } = t, m = (0, _.VK)({
+  } = t, h = (0, _.VK)({
     colors: d,
     angle: f
   });
@@ -186,7 +186,7 @@ function T(e) {
     name: t.getName(),
     className: a()([i ? g.disabled : null, (0, u.wj)(p) ? g.darkOverlay : g.lightOverlay]),
     style: {
-      background: "var(--background-gradient), ".concat(m)
+      background: "var(--background-gradient), ".concat(h)
     },
     tabIndex: o,
     showBadge: l,

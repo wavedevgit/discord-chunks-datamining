@@ -138,7 +138,7 @@ function p(e) {
     let t = u.includes(e) ? u.filter(t => t !== e) : [...u, e],
       r = c({}, f);
     t.includes(e) || delete r[e], l(n, p(t, r))
-  }, m = (e, t) => {
+  }, h = (e, t) => {
     l(n, p(u, d(c({}, f), {
       [e]: t
     })))
@@ -163,7 +163,7 @@ function p(e) {
           onSelectionChange: _,
           inputType: "checkbox",
           textInputValue: f[t],
-          onTextInputChange: m
+          onTextInputChange: h
         }, t)
       })
     })

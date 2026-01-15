@@ -22,7 +22,7 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
   }),
   E = (0, Chunk509613.m7)(Chunk313789.n.STREAMER_MODE_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t.S5GfOW),
-    icon: Chunk657707.m3e,
+    icon: Chunk657707.ScreenStreamIcon,
     getLegacySearchKey: () => (0, u.Ml)("StreamerModePanel") ? true : o.s6.STREAMER_MODE,
     buildLayout: () => [(0, u.Ml)("StreamerModePanel") ? c : S]
   })

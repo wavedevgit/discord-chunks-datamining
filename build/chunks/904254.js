@@ -15,17 +15,17 @@ function o(e, t, n, o, s, l, c) {
     return p <= e.end && p >= e.start
   });
   1 != _.length && a(false);
-  var m = _[0];
+  var h = _[0];
   if ("IMMUTABLE" === f) return n.merge({
-    anchorOffset: m.start,
-    focusOffset: m.end,
-    isBackward: false
-  });
-  l || (c ? d = m.end : u = m.start);
-  var h = r.getRemovalRange(u, d, t.getText().slice(m.start, m.end), m.start, o);
-  return n.merge({
     anchorOffset: h.start,
     focusOffset: h.end,
+    isBackward: false
+  });
+  l || (c ? d = h.end : u = h.start);
+  var m = r.getRemovalRange(u, d, t.getText().slice(h.start, h.end), h.start, o);
+  return n.merge({
+    anchorOffset: m.start,
+    focusOffset: m.end,
     isBackward: false
   })
 }

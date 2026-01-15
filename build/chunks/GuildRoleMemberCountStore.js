@@ -66,7 +66,7 @@ function _(e) {
   r[n] = Math.max(r[n] - 1, 0)
 }
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     role: n
@@ -74,7 +74,7 @@ function m(e) {
   null == l[t] && (l[t] = {}), l[t][n.id] = 0
 }
 
-function h(e) {
+function m(e) {
   let {
     guild: t
   } = e;
@@ -97,6 +97,6 @@ let E = new g(Chunk570140.Z, {
   GUILD_ROLE_MEMBER_BULK_ADD: f,
   GUILD_ROLE_MEMBER_ADD: p,
   GUILD_ROLE_MEMBER_REMOVE: _,
-  GUILD_ROLE_CREATE: m,
-  GUILD_DELETE: h
+  GUILD_ROLE_CREATE: h,
+  GUILD_DELETE: m
 })

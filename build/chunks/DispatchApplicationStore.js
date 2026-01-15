@@ -65,8 +65,8 @@ let I = 200,
   A = {},
   N = "content",
   P = "file://",
-  R = false,
-  w = 0,
+  w = false,
+  R = 0,
   D = 0,
   x = 0,
   L = [],
@@ -75,7 +75,7 @@ let I = 200,
   k = false;
 
 function U() {
-  R = false
+  w = false
 }
 
 function G(e, t) {
@@ -95,7 +95,7 @@ function Z(e) {
     storage: d,
     install_path: p,
     installed_size: _,
-    repairing: h
+    repairing: m
   } = e, {
     should_patch: g
   } = e;
@@ -103,7 +103,7 @@ function Z(e) {
     case b.DJE.COMPLETE: {
       let e, E = {},
         y = null;
-      if (h) e = b.vxO.REPAIRING;
+      if (m) e = b.vxO.REPAIRING;
       else if (null == t) e = b.vxO.INSTALL_REQUIRED;
       else if (g && (t !== n || null != r && 0 !== a().difference(r, i).length)) e = b.vxO.UPDATE_REQUIRED;
       else if (e = b.vxO.UP_TO_DATE, null != p) {
@@ -119,7 +119,7 @@ function Z(e) {
                 } = n,
                 o = i,
                 s = l.Z.fileManager.join(e, r);
-              (0, m.isMac)() && !s.startsWith(P) && (s = "".concat(P).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = S(O({}, n), {
+              (0, h.isMac)() && !s.startsWith(P) && (s = "".concat(P).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = S(O({}, n), {
                 id: o,
                 fullExecutablePath: s,
                 fullWorkingDir: t
@@ -165,12 +165,12 @@ function Z(e) {
           network_progress: u,
           reader_progress: d,
           progress: f,
-          total: m,
+          total: h,
           paused: E
         } = e.state,
         y = l.type;
       return {
-        type: a = y === b.f07.UNINSTALLING ? b.vxO.UNINSTALLING : h ? b.vxO.REPAIRING : null == t ? b.vxO.INSTALLING : b.vxO.UPDATING,
+        type: a = y === b.f07.UNINSTALLING ? b.vxO.UNINSTALLING : m ? b.vxO.REPAIRING : null == t ? b.vxO.INSTALLING : b.vxO.UPDATING,
         stage: y,
         applicationId: o,
         branchId: s,
@@ -184,7 +184,7 @@ function Z(e) {
         networkProgress: u,
         readerProgress: d,
         progress: f,
-        total: m,
+        total: h,
         paused: E,
         shouldPatch: g
       }
@@ -246,7 +246,7 @@ function X(e) {
   let {
     state: t
   } = e;
-  R = true;
+  w = true;
   let n = {},
     r = t.applications,
     i = null != t.currentTask ? t.currentTask.branchId : null,
@@ -256,7 +256,7 @@ function X(e) {
       let o = (0, _.Tu)(e, t);
       if (n[o] = Z(r[e][t]), null != A[o]) {
         let e = Q(n, o, F);
-        e > 0 && K(w += e);
+        e > 0 && K(R += e);
         let r = Q(n, o, B);
         r > 0 && q(D += r);
         let s = Q(n, o, V);
@@ -318,7 +318,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return null != n && null != n.storage && !!n.storage.sync
   }
   isLaunchable(e, t) {
-    if (!(0, h.Q)()) returnfalse;
+    if (!(0, m.Q)()) returnfalse;
     let n = A[(0, _.Tu)(e, t)];
     return null != n && n.type === b.vxO.UP_TO_DATE && null != n.launchOptions && 0 !== n.launchOptions.length
   }
@@ -346,7 +346,7 @@ class J extends(r = Chunk442837.ZP.Store) {
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (R) return setImmediate(e), false
+      if (w) return setImmediate(e), false
     })
   }
 }

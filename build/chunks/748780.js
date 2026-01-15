@@ -53,7 +53,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -69,7 +69,7 @@ function m(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   let t = Object.keys(e)[0];
   return "".concat(t, "(").concat(e[t], ")")
 }
@@ -81,7 +81,7 @@ function E(e) {
 }
 
 function b(e) {
-  return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(h).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
+  return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(m).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
 }
 
 function y(e, t, n) {
@@ -112,8 +112,8 @@ function S(e, t) {
       reverse: c,
       invert: u,
       callback: f,
-      type: m = "spring",
-      shouldLoop: h,
+      type: h = "spring",
+      shouldLoop: m,
       durationMin: g,
       durationMax: E
     } = t,
@@ -121,7 +121,7 @@ function S(e, t) {
     y = e._value,
     O = v(t.duration, g, E),
     I = v(t.toValue, i, a),
-    T = r[m](e, p(d({}, b), {
+    T = r[h](e, p(d({}, b), {
       toValue: I,
       tension: o,
       friction: s,
@@ -130,7 +130,7 @@ function S(e, t) {
     C = T;
   if (c || u) {
     let i = v(t.duration, g, E);
-    n = r[m](e, p(d({}, b), {
+    n = r[h](e, p(d({}, b), {
       toValue: c ? y : -I,
       tension: o,
       friction: s,
@@ -138,7 +138,7 @@ function S(e, t) {
     })), C = r.sequence([T, n])
   }
   l ? C.start(() => {
-    (!h || h && h()) && (f ? f(S.bind(null, e, t)) : S(e, t))
+    (!m || m && m()) && (f ? f(S.bind(null, e, t)) : S(e, t))
   }) : C.start(f)
 }
 

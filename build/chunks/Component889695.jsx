@@ -51,14 +51,14 @@ function T(e) {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([m.default], () => m.default.getCurrentUser()), I = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), C = (0, o.e7)([p.Z], () => p.Z.getRolesSnapshot(t)), N = (0, o.e7)([p.Z], () => p.Z.getSortedRoles(t)), {
+  } = e, n = (0, o.e7)([h.default], () => h.default.getCurrentUser()), I = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), C = (0, o.e7)([p.Z], () => p.Z.getRolesSnapshot(t)), N = (0, o.e7)([p.Z], () => p.Z.getSortedRoles(t)), {
     impersonateType: P,
-    viewingRoles: R
+    viewingRoles: w
   } = (0, o.cj)([b.Z], () => ({
     impersonateType: b.Z.getImpersonateType(t),
     viewingRoles: b.Z.getViewingRoles(t)
-  })), w = P === y.z.SERVER_SHOP, D = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), x = null != I ? C[(0, u.lV)(I)] : null, [L, j] = i.useState(() => {
-    let e = null == R ? [] : g.default.keys(R);
+  })), R = P === y.z.SERVER_SHOP, D = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), x = null != I ? C[(0, u.lV)(I)] : null, [L, j] = i.useState(() => {
+    let e = null == w ? [] : g.default.keys(w);
     return null != x && e.push(x.id), e
   }), M = i.useRef(I);
   i.useEffect(() => {
@@ -77,8 +77,8 @@ function C(e) {
   let k = null != I && null != n && null != D ? N.find(e => D.roles.includes(e.id)) : true,
     U = i.useMemo(() => null != I && null != n ? N.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
-      return !w || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
-    }).filter(e => (null == k ? true : k.id) === e.id || h.r6(I, n.id, k, e)) : [], [I, n, w, k, N]),
+      return !R || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
+    }).filter(e => (null == k ? true : k.id) === e.id || m.r6(I, n.id, k, e)) : [], [I, n, R, k, N]),
     G = i.useMemo(() => {
       let e = Array.from(U).map(e => ({
         leading: A(e),
@@ -100,7 +100,7 @@ function C(e) {
   return (D.roles.forEach(e => {
     let t = C[e];
     null != t && (Z[t.id] = t)
-  }), a.e$(h.I0({
+  }), a.e$(m.I0({
     forceRoles: Z,
     context: I
   }), a.$e(O.Plq.MANAGE_GUILD, O.Plq.MANAGE_ROLES)) || (0, u.eM)(I, n)) ? (0, r.jsx)("div", {

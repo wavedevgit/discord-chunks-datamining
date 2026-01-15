@@ -25,11 +25,11 @@ function p(e) {
     backgroundImageClassName: u,
     foregroundImageClassName: p,
     shape: _
-  } = e, [m, h] = (0, c.Cf)(t.toString(), f), g = i.useMemo(() => {
-    let e = o()(m).brighten(1.5).saturate(.3).alpha(.8).hex(),
-      t = null != h ? h : o()(m).saturate(1.2).alpha(.9).hex();
+  } = e, [h, m] = (0, c.Cf)(t.toString(), f), g = i.useMemo(() => {
+    let e = o()(h).brighten(1.5).saturate(.3).alpha(.8).hex(),
+      t = null != m ? m : o()(h).saturate(1.2).alpha(.9).hex();
     return "linear-gradient(135deg, ".concat(e, ", ").concat(t, ")")
-  }, [m, h]);
+  }, [h, m]);
   return (0, r.jsxs)("div", {
     className: l()(d.cardContainer, {
       [d.square]: "square" === _

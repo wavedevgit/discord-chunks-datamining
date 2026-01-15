@@ -19,17 +19,17 @@ function d(e, t) {
 
 function f(e, t, n, f, p) {
   var _;
-  let m = i.Z.getChannel(o.Z.getVoiceChannelId()),
-    h = null == m ? true : m.getGuildId(),
+  let h = i.Z.getChannel(o.Z.getVoiceChannelId()),
+    m = null == h ? true : h.getGuildId(),
     g = a.Z.getMediaSessionId(),
     E = a.Z.getRTCConnectionId(),
     b = null == (_ = r.ZP.getCurrentGameForAnalytics()) ? true : _.name,
-    y = h !== n.guildId && n.guildId !== l.X8,
+    y = m !== n.guildId && n.guildId !== l.X8,
     O = d(n, y);
   s.default.track(c.rMx.PREMIUM_FEATURE_USAGE, {
     feature_name: u.QP.SOUNDBOARD_PLAY,
     feature_tier: y ? u.h1.PREMIUM_STANDARD : u.h1.FREE,
-    guild_id: h,
+    guild_id: m,
     home_guild_id: n.guildId,
     location_stack: e,
     rtc_connection_id: E,

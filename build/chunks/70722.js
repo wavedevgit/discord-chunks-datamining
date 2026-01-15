@@ -10,10 +10,10 @@ require.d(exports, {
   jR: () => s,
   kr: () => i,
   lb: () => d,
-  lo: () => m,
+  lo: () => h,
   sA: () => c,
   sN: () => u,
-  tB: () => h,
+  tB: () => m,
   yG: () => o,
   zj: () => f
 }), require("./388685.js");
@@ -31,8 +31,8 @@ let a = ">=22.0.0",
   f = 26100,
   p = ">=10.0.22000",
   _ = 22e3;
-var m = function(e) {
+var h = function(e) {
   return e.GUILD = "guild", e.CALL = "call", e
 }({});
-let h = Chunk214627.T.StreamNotificationsGuildMaxSize,
+let m = Chunk214627.T.StreamNotificationsGuildMaxSize,
   g = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"])

@@ -25,8 +25,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 10 * Chunk70956.Z.Millis.SECOND,
-  h = 10 * Chunk70956.Z.Millis.SECOND,
+let h = 10 * Chunk70956.Z.Millis.SECOND,
+  m = 10 * Chunk70956.Z.Millis.SECOND,
   g = 500;
 var E = function(e) {
   return e.RequestedSSRCsUpdate = "requested-ssrcs-update", e.RequestedStreamsUpdate = "requested-streams-update", e
@@ -129,7 +129,7 @@ class y extends Chunk47770.Z {
     return false !== this.currentSSRC
   }
   isDowngradeChangeAllowed(e) {
-    return !this.throttleDowngradeChanges || true === this.lastDowngradeChangeTime || (e ? Date.now() - this.lastDowngradeChangeTime >= h : Date.now() - this.lastDowngradeChangeTime >= m)
+    return !this.throttleDowngradeChanges || true === this.lastDowngradeChangeTime || (e ? Date.now() - this.lastDowngradeChangeTime >= m : Date.now() - this.lastDowngradeChangeTime >= h)
   }
   shouldSeamlessTransition(e) {
     if (!this.supportsSeamless || !this.isReceiving()) returnfalse;

@@ -22,11 +22,11 @@ function p(e) {
 function _(e, t) {
   let n = (0, d.q)(p(i.Z), "@react-aria/calendar"),
     _ = (0, o.z)(e),
-    m = (0, r.FK)(t.visibleRange.start, t.visibleRange.end, t.timeZone, false),
-    h = (0, r.FK)(t.visibleRange.start, t.visibleRange.end, t.timeZone, true);
+    h = (0, r.FK)(t.visibleRange.start, t.visibleRange.end, t.timeZone, false),
+    m = (0, r.FK)(t.visibleRange.start, t.visibleRange.end, t.timeZone, true);
   (0, s.r)(() => {
-    t.isFocused || (0, a.xQ)(h)
-  }, [h]);
+    t.isFocused || (0, a.xQ)(m)
+  }, [m]);
   let g = (0, r.So)(t);
   (0, s.r)(() => {
     g && (0, a.xQ)(g, "polite", 4e3)
@@ -44,7 +44,7 @@ function _(e, t) {
   I && v && (S(false), t.setFocused(true));
   let T = (0, c.b)({
     id: e.id,
-    "aria-label": [e["aria-label"], h].filter(Boolean).join(", "),
+    "aria-label": [e["aria-label"], m].filter(Boolean).join(", "),
     "aria-labelledby": e["aria-labelledby"]
   });
   return {
@@ -68,6 +68,6 @@ function _(e, t) {
     errorMessageProps: {
       id: E
     },
-    title: m
+    title: h
   }
 }

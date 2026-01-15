@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk551328 = require("./551328.js"),
   Chunk87181 = require("./87181.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -104,7 +104,7 @@ function b(e) {
     }), (0, r.jsx)("div", {
       className: _.imgContainer,
       children: (0, r.jsx)("img", {
-        src: m,
+        src: h,
         alt: "",
         className: _.missingQuestImage
       })

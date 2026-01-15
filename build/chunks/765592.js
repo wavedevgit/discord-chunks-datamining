@@ -2,7 +2,7 @@
 /** chunk id: 765592, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk610388 = require("./610388.js"),
   Chunk822632 = require("./822632.js");
@@ -16,10 +16,10 @@ let a = 0,
   f = 7,
   p = 8,
   _ = 24,
-  m = {
+  h = {
     2e3: {
       name: "PathInformation",
-      description: h
+      description: m
     },
     2999: {
       name: "ClippingPathName",
@@ -30,7 +30,7 @@ let a = 0,
     }
   };
 
-function h(e) {
+function m(e) {
   let t = 2,
     n = {},
     i = [];

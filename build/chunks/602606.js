@@ -16,8 +16,8 @@ var Chunk473749 = require("./473749.js"),
 
 function f(e) {
   let [t, n] = r.useState(false), [f, p] = r.useState(false), _ = s.default.cast(e), {
-    joinRequest: m,
-    guild: h
+    joinRequest: h,
+    guild: m
   } = (0, i.cj)([c.Z, u.Z, a.Z, o.Z], () => {
     var e;
     let t = c.Z.getRequest(_);
@@ -34,14 +34,14 @@ function f(e) {
     }
   });
   return r.useEffect(() => {
-    null != h || f || (p(true), l.Z.fetchRequestToJoinGuilds())
-  }, [h, f]), r.useEffect(() => {
-    null == m && (n(true), l.Z.fetchGuildJoinRequest(_).finally(() => {
+    null != m || f || (p(true), l.Z.fetchRequestToJoinGuilds())
+  }, [m, f]), r.useEffect(() => {
+    null == h && (n(true), l.Z.fetchGuildJoinRequest(_).finally(() => {
       n(false)
     }))
-  }, [m, _]), {
+  }, [h, _]), {
     loading: t,
-    joinRequest: m,
-    joinRequestGuild: h
+    joinRequest: h,
+    joinRequestGuild: m
   }
 }

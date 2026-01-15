@@ -44,12 +44,12 @@ function _(e) {
     gamesToDisplay: a,
     lastGameToDisplay: f,
     remainingGames: _
-  } = (0, l.Z)(t), m = i.useMemo(() => t.traits.map((e, t) => p({
+  } = (0, l.Z)(t), h = i.useMemo(() => t.traits.map((e, t) => p({
     key: "trait-".concat(t)
-  }, e)).filter(e => e.label.length > 0), [t]), h = t.description.length > 0;
-  return h || a.length > 0 || m.length > 0 ? (0, r.jsxs)("div", {
+  }, e)).filter(e => e.label.length > 0), [t]), m = t.description.length > 0;
+  return m || a.length > 0 || h.length > 0 ? (0, r.jsxs)("div", {
     className: o()(d.body, n),
-    children: [h ? (0, r.jsx)(s.Text, {
+    children: [m ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: t.description
@@ -59,7 +59,7 @@ function _(e) {
       remainingGames: _,
       activity: t.gameActivity
     }), (0, r.jsx)(u.F, {
-      items: m
+      items: h
     })]
   }) : (0, r.jsx)("div", {
     className: d.emptyBody

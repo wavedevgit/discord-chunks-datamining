@@ -16,7 +16,7 @@ function o(e) {
     minHeightOverride: s,
     maxHeightOverride: l,
     maxAnimationHeight: c
-  } = e, u = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), [d, f] = r.useState(null), p = r.useCallback(() => {}, []), _ = u ? p : f, m = r.useRef(null), h = r.useRef(null), g = r.useRef(t), E = r.useRef(o);
+  } = e, u = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), [d, f] = r.useState(null), p = r.useCallback(() => {}, []), _ = u ? p : f, h = r.useRef(null), m = r.useRef(null), g = r.useRef(t), E = r.useRef(o);
   E.current = o;
   let b = r.useRef(s);
   b.current = s;
@@ -26,16 +26,16 @@ function o(e) {
   O.current = c;
   let [v, S] = r.useState(false), I = r.useCallback(() => S(false), []);
   return r.useLayoutEffect(() => {
-    true !== t && (m.current = null, h.current = null, S(false))
+    true !== t && (h.current = null, m.current = null, S(false))
   }, [t]), r.useLayoutEffect(() => {
     var e, r, i;
     if (null == d) return;
     let {
       height: a
     } = d.getBoundingClientRect();
-    !n && (null == m.current || a < m.current) && (m.current = a), n && (null == h.current || a > h.current) && (h.current = a);
-    let o = null != (e = b.current) ? e : m.current,
-      s = null != (r = y.current) ? r : h.current,
+    !n && (null == h.current || a < h.current) && (h.current = a), n && (null == m.current || a > m.current) && (m.current = a);
+    let o = null != (e = b.current) ? e : h.current,
+      s = null != (r = y.current) ? r : m.current,
       l = g.current !== t;
     if (g.current = t, null == o || null == s || l) return;
     let c = Math.min(null != (i = O.current) ? i : s, s),

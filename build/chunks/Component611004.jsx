@@ -67,7 +67,7 @@ function A(e, t) {
 
 function N(e) {
   let t = (0, p.Tm)(e);
-  E.Z.clearSearchEditorState(e), f.Z.clearSearchMessages(t), _.Z.cleanUp(t), m.Z.cleanUp(t)
+  E.Z.clearSearchEditorState(e), f.Z.clearSearchMessages(t), _.Z.cleanUp(t), h.Z.cleanUp(t)
 }
 
 function P(e) {
@@ -80,7 +80,7 @@ function P(e) {
   f.Z.clearSearchMessages(a), E.Z.setShowNoResultsAlt(t), E.Z.setShowBlockedResults(t, false), E.Z.updateSearchResultsQuery(t, n, r, i), E.Z.addSearchHistoryItem(t, n)
 }
 
-function R(e) {
+function w(e) {
   var t;
   let {
     searchContext: n,
@@ -132,7 +132,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let t = (0, p.Tm)(e),
     n = b.Z.getEditorState(t);
   return null != n ? u.Sq(n) : null
@@ -149,10 +149,10 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  let n = w(e);
+  let n = R(e);
   if (null == n) return;
   let r = n.endsWith(" ") ? n + t : n + " " + t;
-  D(e, r), R({
+  D(e, r), w({
     searchContext: e,
     searchQueryString: r,
     offset: 0
@@ -171,15 +171,15 @@ function j(e, t, n) {
     o = t.type === S.aib.CHANNEL ? (0, p.EX)(a) : a;
   D(t, o = o.trim());
   let l = b.Z.getSearchMode(r);
-  E.Z.updateSearchMode(t, null != l ? l : v.o), h.Z.transferSession(e, t);
+  E.Z.updateSearchMode(t, null != l ? l : v.o), m.Z.transferSession(e, t);
   let c = (0, p.kG)(o),
     d = (0, p.$G)(c);
-  h.Z.refreshQueryId(t), (0, y.tI)({
+  m.Z.refreshQueryId(t), (0, y.tI)({
     searchContext: t,
     query: d,
     queryString: o,
     searchQuerySource: O.w7.SEARCH_XDM_SETTINGS
-  }), R({
+  }), w({
     searchContext: t,
     searchQueryString: o,
     offset: 0
@@ -199,10 +199,10 @@ function M() {
 }
 let k = {
   cleanUpSearchState: N,
-  fetchMessages: R,
+  fetchMessages: w,
   setSearchInputText: D,
   appendToSearchInputText: x,
-  getSearchInputText: w,
+  getSearchInputText: R,
   ensureSearchInputDecorators: function(e) {
     let t, n = (0, p.Tm)(e),
       r = b.Z.getEditorState(n),

@@ -18,7 +18,7 @@ function _(e, t, n) {
   return l.push(e, r.set("entityMap", n), "insert-fragment")
 }
 
-function m(e, t) {
+function h(e, t) {
   return e.length === t.size && t.valueSeq().every(function(t, n) {
     return t.getText() === e[n]
   })
@@ -27,11 +27,11 @@ module.exports = function(e, t) {
   t.preventDefault();
   var n = new a(t.clipboardData);
   if (!n.isRichText()) {
-    var h = n.getFiles(),
+    var m = n.getFiles(),
       g = n.getText();
-    if (h.length > 0) {
-      if (e.props.handlePastedFiles && f(e.props.handlePastedFiles(h))) return;
-      d(h, function(t) {
+    if (m.length > 0) {
+      if (e.props.handlePastedFiles && f(e.props.handlePastedFiles(m))) return;
+      d(m, function(t) {
         if (t = t || g) {
           var n = e._latestEditorState,
             a = p(t),
@@ -41,9 +41,9 @@ module.exports = function(e, t) {
             }),
             f = c.getCurrentBlockType(n),
             _ = s.processText(a, d, f),
-            m = r.createFromArray(_),
-            h = o.replaceWithFragment(n.getCurrentContent(), n.getSelection(), m);
-          e.update(l.push(n, h, "insert-fragment"))
+            h = r.createFromArray(_),
+            m = o.replaceWithFragment(n.getCurrentContent(), n.getSelection(), h);
+          e.update(l.push(n, m, "insert-fragment"))
         }
       });
       return
@@ -58,7 +58,7 @@ module.exports = function(e, t) {
       var v = e.getClipboard();
       if (n.isRichText() && v) {
         if (false !== y.indexOf(e.getEditorKey()) || 1 === E.length && 1 === v.size && v.first().getText() === b) return void e.update(_(e._latestEditorState, v))
-      } else if (v && n.types.includes("com.apple.webarchive") && !n.types.includes("text/html") && m(E, v)) return void e.update(_(e._latestEditorState, v));
+      } else if (v && n.types.includes("com.apple.webarchive") && !n.types.includes("text/html") && h(E, v)) return void e.update(_(e._latestEditorState, v));
       if (y) {
         var S = s.processHTML(y, e.props.blockRenderMap);
         if (S) {
@@ -80,8 +80,8 @@ module.exports = function(e, t) {
         }),
         N = c.getCurrentBlockType(O),
         P = s.processText(E, A, N),
-        R = r.createFromArray(P);
-      e.update(_(e._latestEditorState, R))
+        w = r.createFromArray(P);
+      e.update(_(e._latestEditorState, w))
     }
   }
 }

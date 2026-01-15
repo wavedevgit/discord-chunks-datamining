@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ function E(e) {
     label: n,
     checked: a,
     subtext: _,
-    disabled: h,
+    disabled: m,
     isFocused: E,
     menuItemProps: b,
     action: y,
@@ -78,17 +78,17 @@ function E(e) {
       type: c.U.CHECKBOX
     })
   }, [y, S]);
-  return (0, r.jsxs)(s.P3F, g(m({
+  return (0, r.jsxs)(s.P3F, g(h({
     innerRef: I,
     className: o()(p.item, p.checkboxContainer, p.labelContainer, f._e[t], O, {
-      [p.disabled]: h,
+      [p.disabled]: m,
       [p.focused]: E,
       [null != v ? v : ""]: E
     }),
-    onClick: h ? true : T
+    onClick: m ? true : T
   }, b), {
     "aria-checked": a,
-    "aria-disabled": h,
+    "aria-disabled": m,
     children: [(0, r.jsxs)("div", {
       className: p.label,
       children: [(0, r.jsx)(d.i, {
@@ -101,7 +101,7 @@ function E(e) {
       className: p.iconContainer,
       children: (0, r.jsx)(s.FZ5, {
         checked: a,
-        disabled: h,
+        disabled: m,
         size: 20
       })
     })]

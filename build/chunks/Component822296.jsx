@@ -2,7 +2,7 @@
 /** chunk id: 822296, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,16 +18,16 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134119 = require("./134119.js");
 
-function m(e) {
+function h(e) {
   var t;
   let {
     stream: n,
     width: i
-  } = e, m = (0, o.e7)([d.Z], () => d.Z.getChannel(n.channelId));
+  } = e, h = (0, o.e7)([d.Z], () => d.Z.getChannel(n.channelId));
   (0, c.ZP)(() => {
-    (null == m ? true : m.isGuildStageVoice()) && (0, l.aP)((0, u.V9)(n), false)
+    (null == h ? true : h.isGuildStageVoice()) && (0, l.aP)((0, u.V9)(n), false)
   });
-  let h = () => (0, l.aP)((0, u.V9)(n)),
+  let m = () => (0, l.aP)((0, u.V9)(n)),
     g = (t = i) < 550 ? "small" : t < 1e3 ? "medium" : "large";
   return (0, r.jsx)(s.f6W, {
     disableAdaptiveTheme: true,
@@ -52,7 +52,7 @@ function m(e) {
             variant: "secondary",
             size: "small" === g ? "sm" : "md",
             onClick: e => {
-              e.stopPropagation(), h()
+              e.stopPropagation(), m()
             },
             text: p.intl.string(p.t["4EGMWL"])
           })]

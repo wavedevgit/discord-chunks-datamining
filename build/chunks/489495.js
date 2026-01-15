@@ -6,7 +6,7 @@ require.d(exports, {
   Xv: () => u,
   cq: () => d,
   i0: () => p,
-  yR: () => h,
+  yR: () => m,
   z: () => f
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./781311.js"), require("./704826.js"), require("./35282.js"), require("./49124.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk605387 = require("./605387.js"),
@@ -68,11 +68,11 @@ let f = (e, t) => ({
     }, n.readAsDataURL(e)
   },
   _ = e => e.trim().replace(/\s+/g, "_").toLowerCase(),
-  m = e => null != e ? _(e.split("-")[0]) : "",
-  h = (e, t) => {
+  h = e => null != e ? _(e.split("-")[0]) : "",
+  m = (e, t) => {
     let n = _(e);
     return "PASTE THIS INTO THE DROP JSON:\n\n" + t.map(e => {
-      let t = m(e.name);
+      let t = h(e.name);
       return JSON.stringify(o({
         path: "effects/".concat(n, "/").concat(t, ".png"),
         loop: e.loop,
@@ -88,7 +88,7 @@ let f = (e, t) => ({
   g = e => {
     let t = "[";
     return e.forEach(e => {
-      let n = m(e.name);
+      let n = h(e.name);
       t += "\n              ProfileEffectKeyFrame(\n                  src='".concat(n, ".png',\n                  loop=").concat(e.loop ? "True" : "False", ",\n                  width=").concat(e.width, ",\n                  height=").concat(e.height, ",\n                  start=").concat(e.start, ",\n                  duration=").concat(e.duration, ",\n                  loop_delay=").concat(e.loopDelay, ",\n                  position=ProfileEffectPoint(x=0, y=0),\n                  z_index=").concat(e.zIndex, ",\n              ),\n          ")
     }), t += "\n]"
   },

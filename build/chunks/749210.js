@@ -34,7 +34,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -92,8 +92,8 @@ function M(e, t) {
 }
 let k = e => {
     A.Z.show({
-      title: R.intl.string(R.t.cTaRxF),
-      body: R.intl.formatToPlainString(R.t["VSd+Aj"], {
+      title: w.intl.string(w.t.cTaRxF),
+      body: w.intl.formatToPlainString(w.t["VSd+Aj"], {
         quantity: e
       })
     })
@@ -108,8 +108,8 @@ let k = e => {
   },
   G = () => {
     A.Z.show({
-      title: R.intl.string(R.t.ZZlox4),
-      body: R.intl.string(R.t.ZUEGFn)
+      title: w.intl.string(w.t.ZZlox4),
+      body: w.intl.string(w.t.ZUEGFn)
     })
   };
 
@@ -150,7 +150,7 @@ let B = {
           url: N.ANM.GUILD_JOIN(e),
           query: {
             lurker: S,
-            session_id: S ? h.default.getSessionId() : null,
+            session_id: S ? m.default.getSessionId() : null,
             recommendation_load_id: g,
             location: S && null != E ? E : null
           },
@@ -165,7 +165,7 @@ let B = {
           type: "USER_GUILD_JOIN_REQUEST_UPDATE",
           guildId: e,
           request: i.body.join_request
-        }), null == b.Z.getGuild(e) && i.body.show_verification_form) return (0, m.uL)(N.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
+        }), null == b.Z.getGuild(e) && i.body.show_verification_form) return (0, h.uL)(N.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
       if (null != i.body.welcome_screen && o.Z.dispatch({
           type: "WELCOME_SCREEN_UPDATE",
           guildId: i.body.id,
@@ -320,7 +320,7 @@ let B = {
   }),
   async createRole(e, t, n, r) {
     let l = {
-      name: null != t && "" !== t ? t : R.intl.string(R.t.QBMHvB),
+      name: null != t && "" !== t ? t : w.intl.string(w.t.QBMHvB),
       color: null != n ? n : 0,
       colors: null != r ? r : {
         primary_color: null != n ? n : 0,
@@ -501,19 +501,19 @@ let B = {
   },
   nsfwReturnToSafety(e) {
     let t = (0, c._I)(e);
-    if (null == e || t) return void(0, m.uL)(N.Z5c.FRIENDS, {
+    if (null == e || t) return void(0, h.uL)(N.Z5c.FRIENDS, {
       navigationReplace: false,
       openChannel: true
     });
     let n = E.ZP.getDefaultChannel(e);
-    null == n || (0, c.Y3)(n) ? (0, m.uL)(N.Z5c.FRIENDS, {
+    null == n || (0, c.Y3)(n) ? (0, h.uL)(N.Z5c.FRIENDS, {
       navigationReplace: false,
       openChannel: true
-    }) : (0, m.uL)(N.Z5c.CHANNEL(e, n.id))
+    }) : (0, h.uL)(N.Z5c.CHANNEL(e, n.id))
   },
   escapeToDefaultChannel(e) {
     let t = E.ZP.getDefaultChannel(e);
-    null != t ? (0, m.uL)(N.Z5c.CHANNEL(e, t.id)) : (0, m.uL)(N.Z5c.FRIENDS)
+    null != t ? (0, h.uL)(N.Z5c.CHANNEL(e, t.id)) : (0, h.uL)(N.Z5c.FRIENDS)
   },
   async fetchApplications(e, t) {
     let n = {

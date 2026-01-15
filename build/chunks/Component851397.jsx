@@ -2,7 +2,7 @@
 /** chunk id: 851397, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -83,15 +83,15 @@ function N(e, t) {
 }
 let P = 20;
 
-function R(e) {
+function w(e) {
   var {
     profileOwner: t,
     additionalUserIds: n,
     hideButtonIcon: S = false,
     showPrice: T = false,
     showIcons: N = false,
-    source: R = p.lr.WISHLIST,
-    analyticsLocations: w
+    source: w = p.lr.WISHLIST,
+    analyticsLocations: R
   } = e, D = A(e, ["profileOwner", "additionalUserIds", "hideButtonIcon", "showPrice", "showIcons", "source", "analyticsLocations"]);
   let {
     item: x,
@@ -99,7 +99,7 @@ function R(e) {
     giftingOrigin: j = b.Wt.USER_PROFILE_WISHLIST
   } = D, M = x.sku, k = M.applicationId, U = (0, c.q)(k), G = i.useRef(null), {
     analyticsLocations: Z
-  } = (0, l.ZP)(...null != w ? w : [], s.Z.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD), F = (0, a.e7)([f.Z], () => null != t && f.Z.hasSentGift(x.skuId, t.id), [x.skuId, t]), B = F || true === x.isOwned, V = x.skuName, {
+  } = (0, l.ZP)(...null != R ? R : [], s.Z.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD), F = (0, a.e7)([f.Z], () => null != t && f.Z.hasSentGift(x.skuId, t.id), [x.skuId, t]), B = F || true === x.isOwned, V = x.skuName, {
     buttonCTALabel: H,
     buttonIcon: Y,
     handleCardClick: W
@@ -109,11 +109,11 @@ function R(e) {
       buttonCTALabel: T ? (0, _.T4)(null != (l = null == (i = M.price) ? true : i.amount) ? l : 0, null != (c = null == (a = M.price) ? true : a.currency) ? c : y.pK.USD) : O.intl.string(O.t.FdGl5A),
       buttonIcon: true,
       handleCardClick: () => {
-        (null == U ? true : U.guildId) != null && (L ? ((0, u.closeUserProfileModal)(), (0, m.default)({
+        (null == U ? true : U.guildId) != null && (L ? ((0, u.closeUserProfileModal)(), (0, h.default)({
           guildId: U.guildId,
           skuId: M.id,
           slug: M.slug
-        })) : (0, h.g)({
+        })) : (0, m.g)({
           skuId: M.id,
           applicationId: U.id,
           guildId: U.guildId,
@@ -135,7 +135,7 @@ function R(e) {
         })
       }
     }
-  }, [L, B, T, M, S, U, F, t, n, j, Z]), K = i.useCallback(() => N ? R === p.lr.WISHLIST ? (0, r.jsx)("div", {
+  }, [L, B, T, M, S, U, F, t, n, j, Z]), K = i.useCallback(() => N ? w === p.lr.WISHLIST ? (0, r.jsx)("div", {
     className: v.itemIcon,
     children: (0, r.jsx)(o.h_8, {
       size: "custom",
@@ -144,7 +144,7 @@ function R(e) {
       color: "currentColor",
       colorClass: v.itemIconHeart
     })
-  }) : R === p.lr.POPULAR ? (0, r.jsx)("div", {
+  }) : w === p.lr.POPULAR ? (0, r.jsx)("div", {
     className: v.itemIcon,
     children: (0, r.jsx)(o.YqE, {
       size: "custom",
@@ -153,7 +153,7 @@ function R(e) {
       color: "currentColor",
       colorClass: v.itemIconShop
     })
-  }) : null : null, [N, R]), z = i.useCallback(() => (0, r.jsx)(E.A, {
+  }) : null : null, [N, w]), z = i.useCallback(() => (0, r.jsx)(E.A, {
     shape: "custom",
     containerClassName: v.card,
     backgroundImageClassName: v.cardBackgroundImage,
@@ -161,7 +161,7 @@ function R(e) {
     sku: M
   }), [M]);
   return (0, r.jsx)(d.Z, C(I({}, D), {
-    source: R,
+    source: w,
     cardRef: G,
     accessibleLabel: V,
     onCardClick: W,

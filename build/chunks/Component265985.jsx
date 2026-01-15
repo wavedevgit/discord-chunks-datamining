@@ -34,7 +34,7 @@ let v = 440,
       listing: n,
       step: i,
       guildId: o
-    } = e, s = (0, m.YB)(o), c = (0, u.Z)(b.Xy), f = () => {
+    } = e, s = (0, h.YB)(o), c = (0, u.Z)(b.Xy), f = () => {
       if (i !== d.h8.CONFIRM) return null;
       let e = null == n.image_asset ? true : (0, p._W)(n.application_id, n.image_asset, S);
       return (0, r.jsx)("div", {
@@ -78,7 +78,7 @@ let v = 440,
       onClose: t,
       listing: n,
       guildId: i
-    } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, h.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.rC).slice(0, null === u.length ? I : I - 1), p = (0, g.Z)(d).slice(0, null === u.length ? I : I - 1), m = () => {
+    } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, m.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.rC).slice(0, null === u.length ? I : I - 1), p = (0, g.Z)(d).slice(0, null === u.length ? I : I - 1), h = () => {
       var e;
       if (0 === u.length) return null;
       let t = u[0];
@@ -142,7 +142,7 @@ let v = 440,
             onClick: () => t(true)
           }, (0, _.ab)(e)))
         })]
-      }), m(), (0, r.jsx)("div", {
+      }), h(), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: O.confirmationButton,
         children: (0, r.jsx)(s.zxk, {

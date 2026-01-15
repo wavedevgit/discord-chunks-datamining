@@ -4,7 +4,7 @@
 require.d(exports, {
   AQ: () => g,
   aw: () => d,
-  oz: () => m,
+  oz: () => h,
   qp: () => p
 });
 var Chunk580608 = require("./580608.js"),
@@ -89,9 +89,9 @@ class p {
   }
 }
 var _ = new WeakMap;
-class m {
+class h {
   copy() {
-    return this.era ? new m(this.calendar, this.era, this.year, this.month, this.day, this.hour, this.minute, this.second, this.millisecond) : new m(this.calendar, this.year, this.month, this.day, this.hour, this.minute, this.second, this.millisecond)
+    return this.era ? new h(this.calendar, this.era, this.year, this.month, this.day, this.hour, this.minute, this.second, this.millisecond) : new h(this.calendar, this.year, this.month, this.day, this.hour, this.minute, this.second, this.millisecond)
   }
   add(e) {
     return (0, r.IH)(this, e)
@@ -132,7 +132,7 @@ class m {
     this.calendar = t, this.era = n, this.year = i, this.month = a, this.day = o, this.hour = e.shift() || 0, this.minute = e.shift() || 0, this.second = e.shift() || 0, this.millisecond = e.shift() || 0, (0, r.jH)(this)
   }
 }
-var h = new WeakMap;
+var m = new WeakMap;
 class g {
   copy() {
     return this.era ? new g(this.calendar, this.era, this.year, this.month, this.day, this.timeZone, this.offset, this.hour, this.minute, this.second, this.millisecond) : new g(this.calendar, this.year, this.month, this.day, this.timeZone, this.offset, this.hour, this.minute, this.second, this.millisecond)
@@ -162,7 +162,7 @@ class g {
     return this.toDate().getTime() - (0, s.fW)(e, this.timeZone).toDate().getTime()
   }
   constructor(...e) {
-    (0, l._)(this, h, {
+    (0, l._)(this, m, {
       writable: true,
       value: true
     });

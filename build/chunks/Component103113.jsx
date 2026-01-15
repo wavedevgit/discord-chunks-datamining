@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk155493 = require("./155493.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,14 +41,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function D(e) {
   var t;
   let {
     user: n,
-    guildId: R,
+    guildId: w,
     channelId: D,
     messageId: x,
     roleId: L,
@@ -69,12 +69,12 @@ function D(e) {
     newAnalyticsLocations: G = [],
     disableAutoFocus: Z = false,
     onClickContainer: F
-  } = e, B = (0, h.ZP)(n.id, R), V = (0, d.Aq)(), {
+  } = e, B = (0, m.ZP)(n.id, w), V = (0, d.Aq)(), {
     analyticsLocations: H
   } = (0, s.ZP)([...G, o.Z.USER_PROFILE_POPOUT]), Y = (0, _.ZB)({
     layout: "POPOUT",
     userId: n.id,
-    guildId: R,
+    guildId: w,
     channelId: D,
     messageId: x,
     roleId: L
@@ -83,7 +83,7 @@ function D(e) {
     null == M || M(null == W ? true : W.current)
   }, [W, M]);
   let z = () => {
-      null == k || k(), V.dispatch(C.CkL.POPOUT_CLOSE), (0, g.openUserProfileModal)(w({
+      null == k || k(), V.dispatch(C.CkL.POPOUT_CLOSE), (0, g.openUserProfileModal)(R({
         sourceAnalyticsLocations: H,
         hideRestrictedProfile: true
       }, Y))
@@ -93,7 +93,7 @@ function D(e) {
       id: "view-profile",
       label: N.intl.string(N.t["+Xp3hq"]),
       action: () => {
-        z(), (0, m.pQ)(w({
+        z(), (0, h.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: H
         }, Y))
@@ -101,7 +101,7 @@ function D(e) {
     }) : null,
     X = Z ? "div" : a.VqE,
     J = (0, c.Dt)(),
-    $ = p.ZP.useName(R, D, n);
+    $ = p.ZP.useName(w, D, n);
   return (0, r.jsx)(s.Gt, {
     value: H,
     children: (0, r.jsx)(_.Mt, {
@@ -135,12 +135,12 @@ function D(e) {
             children: [(0, r.jsx)(y.Z, {
               user: n,
               displayProfile: B,
-              guildId: R,
+              guildId: w,
               themeType: A.l.POPOUT
             }), (0, r.jsx)(E.Z, {
               user: n,
               displayProfile: B,
-              guildId: R,
+              guildId: w,
               channelId: D,
               themeType: A.l.POPOUT,
               onOpenProfile: q ? z : true
@@ -150,8 +150,8 @@ function D(e) {
             className: P.body,
             children: [(0, r.jsx)(S.Z, {
               user: n,
-              guildId: R,
-              nickname: p.ZP.getName(R, D, n),
+              guildId: w,
+              nickname: p.ZP.getName(w, D, n),
               onOpenProfile: q ? z : true,
               tags: (0, r.jsx)(b.Z, {
                 displayProfile: B,

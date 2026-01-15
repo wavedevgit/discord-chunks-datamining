@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => p,
-  jA: () => m,
-  sU: () => h
+  jA: () => h,
+  sU: () => m
 }), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
@@ -41,7 +41,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     applicationId: t
   } = e, n = l.ZP.getCurrentEmbeddedActivity();
@@ -53,7 +53,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     channelId: t
   } = e;

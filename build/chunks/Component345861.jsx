@@ -75,17 +75,17 @@ function _(e) {
     disabled: u = false,
     maxFileSizeBytes: p,
     filters: _
-  } = e, m = f(e, ["onChange", "onFileSizeError", "multiple", "disabled", "maxFileSizeBytes", "filters"]);
-  let h = i.useRef(null),
+  } = e, h = f(e, ["onChange", "onFileSizeError", "multiple", "disabled", "maxFileSizeBytes", "filters"]);
+  let m = i.useRef(null),
     g = () => {
       var e;
-      null == (e = h.current) || e.activateUploadDialogue()
+      null == (e = m.current) || e.activateUploadDialogue()
     };
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)("div", {
       className: s.imageInputContainer,
       children: (0, r.jsx)(o.ZP, {
-        ref: h,
+        ref: m,
         onChange: t,
         onFileSizeError: n,
         multiple: l,
@@ -95,7 +95,7 @@ function _(e) {
         tabIndex: false,
         "aria-hidden": true
       })
-    }), (0, r.jsx)(a.Button, d(c({}, m), {
+    }), (0, r.jsx)(a.Button, d(c({}, h), {
       disabled: u,
       onClick: g
     }))]

@@ -20,8 +20,8 @@ function f(e) {
     buffer: f,
     autoplay: p = true,
     className: _,
-    fit: m,
-    alignment: h,
+    fit: h,
+    alignment: m,
     style: g,
     eventTargetRef: E,
     artboard: b,
@@ -35,8 +35,8 @@ function f(e) {
     listenOnDocumentBody: A,
     eventCapture: N,
     assetLoader: P,
-    onLoad: R
-  } = e, w = i.useContext(l.S), D = (0, s.C)(), x = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : D, [L, j] = i.useState(true), M = i.useRef(null), {
+    onLoad: w
+  } = e, R = i.useContext(l.S), D = (0, s.C)(), x = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : D, [L, j] = i.useState(true), M = i.useRef(null), {
     rive: k,
     RiveComponent: U
   } = (0, o.useRive)({
@@ -47,14 +47,14 @@ function f(e) {
     artboard: b,
     useOffscreenRenderer: true,
     layout: new o.Layout({
-      fit: null != m ? u.M[m] : o.Fit.Cover,
-      alignment: null != h ? u.Y[h] : o.Alignment.Center
+      fit: null != h ? u.M[h] : o.Fit.Cover,
+      alignment: null != m ? u.Y[m] : o.Alignment.Center
     }),
     isTouchScrollEnabled: T,
     listenOnDocumentBody: A,
     eventCapture: N,
     assetLoader: P,
-    onLoad: R
+    onLoad: w
   });
   i.useImperativeHandle(O, () => ({
     play: () => null == k ? true : k.play(),
@@ -94,7 +94,7 @@ function f(e) {
     dynamicDataBinding: C,
     onDataBindingChange: I
   }), i.useEffect(() => {
-    if (null != k && "short-loop" === y && w.reducedMotion.enabled) {
+    if (null != k && "short-loop" === y && R.reducedMotion.enabled) {
       let e = () => {
           k.isPlaying && (M.current = setTimeout(() => {
             k.pause()
@@ -107,15 +107,15 @@ function f(e) {
         k.off(o.EventType.Play, e), k.off(o.EventType.Pause, t), k.off(o.EventType.Stop, t)
       }
     }
-  }, [k, y, w.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    if (null != k && "layout" === m) {
+  }, [k, y, R.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    if (null != k && "layout" === h) {
       k.resizeDrawingSurfaceToCanvas();
       let e = setTimeout(() => {
         null != k.canvas && k.resizeDrawingSurfaceToCanvas()
       }, 100);
       return () => clearTimeout(e)
     }
-  }, [k, m]), i.useEffect(() => {
+  }, [k, h]), i.useEffect(() => {
     null != k && null == L && (j(k.stateMachineNames), k.reset({
       stateMachines: k.stateMachineNames,
       autoplay: p,
@@ -127,12 +127,12 @@ function f(e) {
   i.useEffect(() => {
     if (null == k) return;
     let e = t => {
-      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && w.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && R.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(o.EventType.Advance, e)))
     };
     return k.on(o.EventType.Advance, e), p && k.play(), () => {
       k.off(o.EventType.Advance, e)
     }
-  }, [k, w.reducedMotion.enabled, y, p]);
+  }, [k, R.reducedMotion.enabled, y, p]);
   let Z = i.useRef(false);
   return i.useEffect(() => {
     if (null != k) return !x && Z.current && k.isPlaying && G.current > 0 ? k.pause() : x && !k.isPlaying && Z.current && k.play(), () => {

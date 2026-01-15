@@ -25,11 +25,11 @@ function a(e, t, n, a, o, s) {
   l.nwdaymask = (0, i.rx)(0, n);
   for (var u = 0; u < c.length; u++)
     for (var d = c[u], f = d[0], p = d[1] - 1, _ = 0; _ < s.bynweekday.length; _++) {
-      var m = true,
-        h = s.bynweekday[_],
-        g = h[0],
-        E = h[1];
-      E < 0 ? (m = p + (E + 1) * 7, m -= (0, i.Vy)(o[m] - g, 7)) : (m = f + (E - 1) * 7, m += (0, i.Vy)(7 - o[m] + g, 7)), f <= m && m <= p && (l.nwdaymask[m] = 1)
+      var h = true,
+        m = s.bynweekday[_],
+        g = m[0],
+        E = m[1];
+      E < 0 ? (h = p + (E + 1) * 7, h -= (0, i.Vy)(o[h] - g, 7)) : (h = f + (E - 1) * 7, h += (0, i.Vy)(7 - o[h] + g, 7)), f <= h && h <= p && (l.nwdaymask[h] = 1)
     }
   return l
 }

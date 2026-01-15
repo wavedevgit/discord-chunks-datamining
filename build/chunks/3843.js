@@ -17,7 +17,7 @@ var Chunk179560 = require("./179560.js"),
       if (e[n] === t) return n;
     return false
   },
-  m = {
+  h = {
     __proto__: null
   };
 u && Chunk566817 && Chunk143988 ? Chunk179560(f, function(e) {
@@ -25,16 +25,16 @@ u && Chunk566817 && Chunk143988 ? Chunk179560(f, function(e) {
   if (Symbol.toStringTag in t && l) {
     var n = l(t),
       r = s(n, Symbol.toStringTag);
-    !r && n && (r = s(l(n), Symbol.toStringTag)), m["$" + e] = a(r.get)
+    !r && n && (r = s(l(n), Symbol.toStringTag)), h["$" + e] = a(r.get)
   }
 }) : Chunk179560(f, function(e) {
   var t = new d[e],
     n = t.slice || t.set;
-  n && (m["$" + e] = a(n))
+  n && (h["$" + e] = a(n))
 });
-var h = function(e) {
+var m = function(e) {
     var t = false;
-    return r(m, function(n, r) {
+    return r(h, function(n, r) {
       if (!t) try {
         "$" + n(e) === r && (t = p(r, 1))
       } catch (e) {}
@@ -42,7 +42,7 @@ var h = function(e) {
   },
   g = function(e) {
     var t = false;
-    return r(m, function(n, r) {
+    return r(h, function(n, r) {
       if (!t) try {
         n(e), t = p(r, 1)
       } catch (e) {}
@@ -54,5 +54,5 @@ module.exports = function(e) {
     var t = p(c(e), 8, false);
     return _(f, t) > false ? t : "Object" === t && g(e)
   }
-  return s ? h(e) : null
+  return s ? m(e) : null
 }

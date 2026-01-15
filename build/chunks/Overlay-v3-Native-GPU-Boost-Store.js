@@ -2,7 +2,7 @@
 /** chunk id: 76623, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,15 +23,15 @@ function f(e, t, n) {
 }
 let p = new Chunk710845.Z("OverlayV3NativeGPUBoostManager"),
   _ = new Set,
-  m = false,
-  h = false;
+  h = false,
+  m = false;
 
 function g(e, t) {
   t ? _.add(e) : _.delete(e), O()
 }
 
 function E(e) {
-  h = e, O()
+  m = e, O()
 }
 
 function b() {
@@ -39,16 +39,16 @@ function b() {
 }
 
 function y() {
-  return !h && _.size > 0
+  return !m && _.size > 0
 }
 async function O() {
   var e, t, n;
   try {
     let n = y();
-    if (m === n || !d.iP) return;
+    if (h === n || !d.iP) return;
     let r = await (null === o.Z || true === o.Z || null == (t = o.Z.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
     if (null == r) return;
-    l.ZP.SetGPUBoostEnabledByPid(r, n) && (m = n), P.emitChange()
+    l.ZP.SetGPUBoostEnabledByPid(r, n) && (h = n), P.emitChange()
   } catch (e) {
     (null == (n = e.message) ? true : n.includes("IPC method called after context was released")) && b(), p.error("Error during GPU boost request flush:", e)
   }
@@ -89,10 +89,10 @@ class N extends(r = Chunk442837.ZP.Store) {
     return _
   }
   isGPUBoosted() {
-    return m
+    return h
   }
   getIsDisabledGPUBoost() {
-    return h
+    return m
   }
 }
 f(N, "displayName", "Overlay-v3-Native-GPU-Boost-Store");
@@ -104,4 +104,4 @@ let P = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: A,
     OVERLAY_SET_INPUT_LOCKED: T
   }),
-  R = P
+  w = P

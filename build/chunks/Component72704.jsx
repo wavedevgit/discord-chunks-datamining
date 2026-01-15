@@ -18,13 +18,13 @@ function o(e) {
     useOptions: l,
     fieldLayout: c,
     clearable: u
-  } = t, d = t.setValue, f = o(), p = null == s ? true : s(), _ = n(), m = l();
+  } = t, d = t.setValue, f = o(), p = null == s ? true : s(), _ = n(), h = l();
   return (0, r.jsx)(a.X, {
     children: (0, r.jsx)(i.PhF, {
       selectionMode: "single",
       label: f,
       description: p,
-      options: m,
+      options: h,
       value: _,
       clearable: u,
       onSelectionChange: e => {

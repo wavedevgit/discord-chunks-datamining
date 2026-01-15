@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,7 +105,7 @@ function O(e) {
   } = e, [a, p] = i.useState({
     route: u.j.HOME
   }), {
-    route: m
+    route: h
   } = a, E = () => {
     p({
       route: u.j.HOME
@@ -119,14 +119,14 @@ function O(e) {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? true : e.planId;
-      null != t && (v(e => h(_({}, e), {
+      null != t && (v(e => m(_({}, e), {
         [n.id]: c.G.LOADING
       })), (0, s.vY)(t).then(() => {
-        v(e => h(_({}, e), {
+        v(e => m(_({}, e), {
           [n.id]: c.G.DONE
         }))
       }).catch(() => {
-        v(e => h(_({}, e), {
+        v(e => m(_({}, e), {
           [n.id]: c.G.ERROR
         }))
       }))
@@ -135,7 +135,7 @@ function O(e) {
   let {
     loadState: S
   } = (0, l.qz)(), I = S !== l.jd.LOADED;
-  switch (m) {
+  switch (h) {
     case u.j.HOME:
       return (0, r.jsx)(r.Fragment, {
         children: t.map(e => {
@@ -154,10 +154,10 @@ function O(e) {
       let {
         route: T
       } = a, C = g(a, ["route"]);
-      return (0, r.jsx)(d.Z, h(_({}, C), {
+      return (0, r.jsx)(d.Z, m(_({}, C), {
         navigateToHome: E
       }));
     default:
-      (0, o.vE)(m)
+      (0, o.vE)(h)
   }
 }

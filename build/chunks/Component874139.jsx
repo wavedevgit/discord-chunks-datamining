@@ -62,21 +62,21 @@ function b(e) {
         r = n.item;
       r.isOwned || (a.push(n), (0, d.F)(r) && (0, s.K$)(r.sku) ? o = true : (0, u.Q)(r) && (f = true), n.source === c.lr.WISHLIST ? p = true : n.source === c.lr.POPULAR && (_ = true))
     }
-    let h = o && f,
+    let m = o && f,
       g = p && _;
     for (let r = 0; r < a.length; r++) {
       let {
         item: o,
         source: s
       } = a[r], c = r === E - 1 && t.length > E, f = g ? s : true;
-      (0, u.Q)(o) ? (i.add(o.skuProductLine), e.push((0, m.c)(o, {
+      (0, u.Q)(o) ? (i.add(o.skuProductLine), e.push((0, h.c)(o, {
         index: r,
         moreCount: c ? t.length - E + 1 : true,
         profileOwner: n,
         analyticsLocations: S,
         onViewWishlist: b,
         wishlistId: y,
-        showTypeTooltip: h,
+        showTypeTooltip: m,
         cardSize: O,
         itemSource: f
       }))) : (0, d.F)(o) && (i.add(o.skuProductLine), e.push((0, l.J)(o, {
@@ -86,7 +86,7 @@ function b(e) {
         analyticsLocations: S,
         onViewWishlist: b,
         wishlistId: y,
-        showTypeTooltip: h,
+        showTypeTooltip: m,
         cardSize: O,
         itemSource: f
       })))
@@ -102,13 +102,13 @@ function b(e) {
     productLines: N
   });
   if (0 === C.length) return null;
-  let R = C;
-  return null != A && ((0, u.Q)(A) ? R = (0, m.g)(A, {
+  let w = C;
+  return null != A && ((0, u.Q)(A) ? w = (0, h.g)(A, {
     profileOwner: n,
     analyticsLocations: S,
     wishlistId: y,
     onViewWishlist: b
-  }) : (0, d.F)(A) && (R = (0, l.B)(A, {
+  }) : (0, d.F)(A) && (w = (0, l.B)(A, {
     profileOwner: n,
     analyticsLocations: S,
     wishlistId: y,
@@ -120,11 +120,11 @@ function b(e) {
       className: g.header,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        children: null != v ? v : h.intl.string(h.t["7lZ31J"])
+        children: null != v ? v : m.intl.string(m.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
       className: g.cardsContainer,
-      children: R
+      children: w
     })]
   })
 }

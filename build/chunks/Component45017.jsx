@@ -2,7 +2,7 @@
 /** chunk id: 45017, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => h
+  u: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,7 +54,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -70,14 +70,14 @@ function m(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   let t;
   var {
     premiumType: n,
     size: i,
     className: u,
     tag: f = "span"
-  } = e, m = _(e, ["premiumType", "size", "className", "tag"]);
+  } = e, h = _(e, ["premiumType", "size", "className", "tag"]);
   switch (n) {
     case s.PremiumTypes.TIER_0:
       t = l.intl.string(l.t["t9uG/o"]);
@@ -92,7 +92,7 @@ function h(e) {
     tag: f,
     variant: "display-".concat(i),
     className: a()(u, c.text)
-  }, m), {
+  }, h), {
     children: t
   }))
 }

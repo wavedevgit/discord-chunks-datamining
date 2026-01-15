@@ -12,7 +12,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk833858 = require("./833858.js"),
   Chunk797156 = require("./797156.js"),
   Chunk505905 = require("./505905.js");
-let u = new Set([Chunk657707.GsA.name, Chunk657707.iWm.name, Chunk657707.FLu.name, Chunk657707.Xbz.name]),
+let u = new Set([Chunk657707.MagicDoorIcon.name, Chunk657707.GameControllerIcon.name, Chunk657707.EmbedIcon.name, Chunk657707.ObjectIcon.name]),
   d = Object.fromEntries(Object.entries(Chunk212605.Z).map(e => {
     let [t, n] = e;
     return [n, t]
@@ -25,9 +25,9 @@ let u = new Set([Chunk657707.GsA.name, Chunk657707.iWm.name, Chunk657707.FLu.nam
       size: f,
       animate: p = true,
       fallbackVariant: _ = "twemoji",
-      userId: m
-    } = e, h = (0, l.F)(m, null == a ? true : a.state), g = (0, s.tV)(m, a, _);
-    if ((h[0] === c.tN.CUSTOM || (null == g ? true : g.emoji) != null) && null != a) {
+      userId: h
+    } = e, m = (0, l.F)(h, null == a ? true : a.state), g = (0, s.tV)(h, a, _);
+    if ((m[0] === c.tN.CUSTOM || (null == g ? true : g.emoji) != null) && null != a) {
       let e = null != (t = null == g ? true : g.emoji) ? t : a.emoji;
       return null != e ? (0, r.jsx)(o.Z, {
         emoji: e,

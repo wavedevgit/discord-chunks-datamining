@@ -50,9 +50,9 @@ function d(e, t) {
 let f = null,
   p = null,
   _ = {},
-  m = {};
+  h = {};
 
-function h(e, t) {
+function m(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
@@ -62,7 +62,7 @@ function g(e, t) {
   if (null == r) return;
   let i = r[null != t ? t : o.kod];
   if (null != i) {
-    for (let t of Object.values(s.Yn))(n === t || null == n) && (delete i[t], delete m[h(null != n ? n : t, e)]);
+    for (let t of Object.values(s.Yn))(n === t || null == n) && (delete i[t], delete h[m(null != n ? n : t, e)]);
     _[e][null != t ? t : o.kod] = i
   }
 }
@@ -75,7 +75,7 @@ function E(e, t, n, r) {
     [r]: {
       streamId: n
     }
-  }), delete m[h(r, e)]
+  }), delete h[m(r, e)]
 }
 
 function b(e) {
@@ -118,7 +118,7 @@ function v(e) {
     } = t;
     if (null == a && r === f)
       if (i !== p) return e;
-      else _ = {}, m = {};
+      else _ = {}, h = {};
     else {
       if (null != a || (null == (n = _[r]) ? true : n[null != s ? s : o.kod]) == null) return e;
       g(r, s)
@@ -134,7 +134,7 @@ function S(e) {
     streamKey: r,
     mediaContext: i
   } = e;
-  m[h(i, n)] = {
+  h[m(i, n)] = {
     videoStreamId: t,
     userId: n,
     streamKey: r,
@@ -146,9 +146,9 @@ function I(e) {
   let {
     mediaContext: t,
     userId: n
-  } = e, r = h(t, n);
-  if (null == m[r]) returnfalse;
-  delete m[r]
+  } = e, r = m(t, n);
+  if (null == h[r]) returnfalse;
+  delete h[r]
 }
 class T extends(r = Chunk442837.ZP.Store) {
   getStreamId(e, t) {
@@ -162,10 +162,10 @@ class T extends(r = Chunk442837.ZP.Store) {
     return null == (r = _[e]) || null == (n = r[null != t ? t : o.kod]) ? true : n[i]
   }
   getTimedoutVideos() {
-    return m
+    return h
   }
   getTimedoutVideo(e, t) {
-    return m[h(e, t)]
+    return h[m(e, t)]
   }
 }
 l(T, "displayName", "VideoStreamStore");

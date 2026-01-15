@@ -50,7 +50,7 @@ function C() {
   return (0, r.jsxs)(b.Z, {
     title: S.intl.string(S.t.SRZyHg),
     webSetting: v.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
-    children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.Z, {}), e && (0, r.jsx)(s.Z, {}), (0, r.jsx)(p.Z, {})]
+    children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(_.Z, {}), e && (0, r.jsx)(s.Z, {}), (0, r.jsx)(p.Z, {})]
   })
 }
 

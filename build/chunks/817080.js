@@ -39,14 +39,14 @@ var t = t || function(e) {
           }
         }
       },
-      m = function(e) {
+      h = function(e) {
         return /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type) ? new Blob(["\xef\xbb\xbf", e], {
           type: e.type
         }) : e
       },
-      h = function(t, c, f) {
-        f || (t = m(t));
-        var h, g, E = this,
+      m = function(t, c, f) {
+        f || (t = h(t));
+        var m, g, E = this,
           b = t.type,
           y = false,
           O = function() {
@@ -60,7 +60,7 @@ var t = t || function(e) {
                 g.location.href = "data:attachment/file" + e.slice(e.search(/[,;]/)), E.readyState = E.DONE, O()
               }, r.readAsDataURL(t), E.readyState = E.INIT;
               return
-            }(y || !h) && (h = n().createObjectURL(t)), g ? g.location.href = h : true === e.open(h, "_blank") && o && (e.location.href = h), E.readyState = E.DONE, O(), p(h)
+            }(y || !m) && (m = n().createObjectURL(t)), g ? g.location.href = m : true === e.open(m, "_blank") && o && (e.location.href = m), E.readyState = E.DONE, O(), p(m)
           },
           S = function(e) {
             return function() {
@@ -72,8 +72,8 @@ var t = t || function(e) {
             exclusive: false
           };
         if (E.readyState = E.INIT, c || (c = "download"), i) {
-          h = n().createObjectURL(t), setTimeout(function() {
-            r.href = h, r.download = c, a(r), O(), p(h), E.readyState = E.DONE
+          m = n().createObjectURL(t), setTimeout(function() {
+            r.href = m, r.download = c, a(r), O(), p(m), E.readyState = E.DONE
           });
           return
         }
@@ -106,12 +106,12 @@ var t = t || function(e) {
           }), v)
         }), v)
       },
-      g = h.prototype,
+      g = m.prototype,
       E = function(e, t, n) {
-        return new h(e, t, n)
+        return new m(e, t, n)
       };
     return "undefined" != typeof navigator && navigator.msSaveOrOpenBlob ? function(e, t, n) {
-      return n || (e = m(e)), navigator.msSaveOrOpenBlob(e, t || "download")
+      return n || (e = h(e)), navigator.msSaveOrOpenBlob(e, t || "download")
     } : (g.abort = function() {
       var e = this;
       e.readyState = e.DONE, _(e, "abort")

@@ -2,7 +2,7 @@
 /** chunk id: 731031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => h
+  E: () => m
 });
 var Chunk358221 = require("./358221.js"),
   Chunk569545 = require("./569545.js"),
@@ -36,8 +36,8 @@ function _(e) {
   }
   return e
 }
-let m = 20 * Chunk70956.Z.Millis.SECOND,
-  h = {
+let h = 20 * Chunk70956.Z.Millis.SECOND,
+  m = {
     getActiveErrors: () => {
       let e = a.Z.getCurrentUserActiveStream();
       if (null == e || e.state === f.jm8.PAUSED || 0 === a.Z.getViewerIds(e).length) return null;
@@ -47,12 +47,12 @@ let m = 20 * Chunk70956.Z.Millis.SECOND,
       let s = n.getMediaEngineConnectionId();
       if (null == s) return null;
       let p = o.Z.getLastNonZeroRemoteVideoSinkWantsTime(t);
-      if (null != p && performance.now() - p < m || !n.hasActiveRemoteWants()) return null;
-      let h = r.Z.getParticipant(e.channelId, (0, i.V9)(e));
-      if (null == h) return null;
+      if (null != p && performance.now() - p < h || !n.hasActiveRemoteWants()) return null;
+      let m = r.Z.getParticipant(e.channelId, (0, i.V9)(e));
+      if (null == m) return null;
       let g = (0, d.hj)(s, e.ownerId);
       if (null == g) return null;
-      let E = (0, l.Wc)(h);
+      let E = (0, l.Wc)(m);
       return null == E ? null : g.short.frameRate < (0, d.dj)(E.maxFrameRate) || g.long.frameRate < (0, d.dj)(E.maxFrameRate) ? [_({
         type: c.u.STREAM_SEND_LOW_FPS
       }, (0, u.rT)((0, i.V9)(e)))] : null

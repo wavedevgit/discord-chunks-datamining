@@ -2,7 +2,7 @@
 /** chunk id: 553795, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -50,15 +50,15 @@ function p(e, t) {
   }), e
 }
 let _ = new Set([require("./981631.js").ABu.CONTACTS]),
-  m = true,
-  h = [],
+  h = true,
+  m = [],
   g = [],
   E = {},
   b = new Set,
   y = {},
   O = {},
   v = e => {
-    h = e.filter(e => !_.has(e.type) && s.Z.isSupported(e.type)), g = e.filter(e => _.has(e.type)), m = false
+    m = e.filter(e => !_.has(e.type) && s.Z.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = false
   };
 
 function S(e) {
@@ -89,7 +89,7 @@ function A(e) {
     id: n,
     revoked: r,
     accessToken: i
-  } = e, a = h.find(e => e.id === n && e.type === t);
+  } = e, a = m.find(e => e.id === n && e.type === t);
   if (null == a) returnfalse;
   null != r && (a.revoked = r), null != i && (a.accessToken = i)
 }
@@ -115,16 +115,16 @@ class P extends(r = Chunk442837.ZP.Store) {
     return O[e]
   }
   isFetching() {
-    return m
+    return h
   }
   getAccounts() {
-    return h
+    return m
   }
   getLocalAccounts() {
     return g
   }
   getAccount(e, t) {
-    return h.find(n => (null == e || n.id === e) && n.type === t)
+    return m.find(n => (null == e || n.id === e) && n.type === t)
   }
   getLocalAccount(e) {
     return g.find(t => t.type === e)
@@ -143,7 +143,7 @@ class P extends(r = Chunk442837.ZP.Store) {
   }
 }
 u(P, "displayName", "ConnectedAccountsStore");
-let R = new P(Chunk570140.Z, {
+let w = new P(Chunk570140.Z, {
   CONNECTION_OPEN: S,
   USER_CONNECTIONS_UPDATE: I,
   USER_CONNECTIONS_INTEGRATION_JOINING: T,

@@ -43,9 +43,6 @@ class l extends Chunk81825.Z {
       rewardSkuIds: null != (_ = null == (n = e.metadata) || null == (t = n.gift_promotion) ? true : t.reward_sku_ids) ? _ : []
     })
   }
-  get isThirdPartyOutbound() {
-    return this.promotionType === a.$k.THIRD_PARTY_OUTBOUND
-  }
   get isBogo() {
     return this.promotionType === a.$k.BOGO
   }
@@ -60,6 +57,7 @@ class l extends Chunk81825.Z {
       case a.$k.THIRD_PARTY_INBOUND:
         return this.inboundRestrictedCountries.includes(e);
       case a.$k.THIRD_PARTY_OUTBOUND:
+      case a.$k.THIRD_PARTY_OUTBOUND_RECURRING:
         return this.outboundRestrictedCountries.includes(e);
       default:
         returnfalse

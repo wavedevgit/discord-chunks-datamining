@@ -47,11 +47,11 @@ function _() {
   d.membersData.isFetching = false
 }
 
-function m() {
+function h() {
   d.membershipData.isFetching = true
 }
 
-function h(e) {
+function m(e) {
   let {
     membership: t
   } = e;
@@ -159,8 +159,8 @@ let A = new C(Chunk570140.Z, {
   PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS: p,
   PREMIUM_GROUP_MEMBERS_FETCH_FAILURE: _,
   PREMIUM_GROUP_MEMBERSHIP_REQUEST: b,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_START: m,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS: h,
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_START: h,
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS: m,
   PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND: g,
   PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE: E,
   PREMIUM_GROUP_INVITE_USERS_START: y,

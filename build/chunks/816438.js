@@ -31,13 +31,13 @@ function p(e) {
     n = t.defaultModifiers,
     p = true === n ? [] : n,
     _ = t.defaultOptions,
-    m = true === _ ? d : _;
+    h = true === _ ? d : _;
   return function(e, t, n) {
-    true === n && (n = m);
+    true === n && (n = h);
     var _ = {
         placement: "bottom",
         orderedModifiers: [],
-        options: Object.assign({}, d, m),
+        options: Object.assign({}, d, h),
         modifiersData: {},
         elements: {
           reference: e,
@@ -46,13 +46,13 @@ function p(e) {
         attributes: {},
         styles: {}
       },
-      h = [],
+      m = [],
       g = false,
       E = {
         state: _,
         setOptions: function(n) {
           var r = "function" == typeof n ? n(_.options) : n;
-          y(), _.options = Object.assign({}, m, _.options, r), _.scrollParents = {
+          y(), _.options = Object.assign({}, h, _.options, r), _.scrollParents = {
             reference: (0, u.kK)(e) ? (0, a.Z)(e) : e.contextElement ? (0, a.Z)(e.contextElement) : [],
             popper: (0, a.Z)(t)
           };
@@ -118,15 +118,15 @@ function p(e) {
               options: r
             }),
             o = function() {};
-          h.push(a || o)
+          m.push(a || o)
         }
       })
     }
 
     function y() {
-      h.forEach(function(e) {
+      m.forEach(function(e) {
         return e()
-      }), h = []
+      }), m = []
     }
     return E.setOptions(n).then(function(e) {
       !g && n.onFirstUpdate && n.onFirstUpdate(e)

@@ -37,9 +37,9 @@ function d(e) {
     y: f,
     setOffset: p,
     zoomed: _,
-    setZoomed: m
+    setZoomed: h
   } = (0, l.Y)(), {
-    ref: h,
+    ref: m,
     width: g,
     height: E
   } = (0, o.ZP)(), [b, y] = [null != g ? g : 0, null != E ? E : 0], O = i.useRef(false), [v, S] = i.useState({
@@ -69,7 +69,7 @@ function d(e) {
   }, C = e => {
     if (!_) {
       if (0 === e.button) {
-        (0, s.yg)(s.uG.ZOOM_IN_IMAGE_PRESSED), m(true);
+        (0, s.yg)(s.uG.ZOOM_IN_IMAGE_PRESSED), h(true);
         let t = e.clientX - window.innerWidth / 2,
           r = e.clientY - window.innerHeight / 2,
           i = u({
@@ -87,10 +87,10 @@ function d(e) {
         p(i.x, i.y)
       }
       return
-    }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && ((0, s.yg)(s.uG.ZOOM_OUT_IMAGE_PRESSED), m(false)), O.current = false
+    }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && ((0, s.yg)(s.uG.ZOOM_OUT_IMAGE_PRESSED), h(false)), O.current = false
   };
   return (0, r.jsx)(a.animated.div, {
-    ref: h,
+    ref: m,
     onMouseDown: T,
     onMouseUp: C,
     onMouseMove: e => O.current && I(e.movementX, e.movementY),

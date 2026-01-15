@@ -66,9 +66,9 @@ function N(e, t) {
   }), e
 }
 let P = [8, 8, 8, 8],
-  R = 40;
+  w = 40;
 
-function w(e) {
+function R(e) {
   let {
     icon: t,
     isSelected: n,
@@ -90,21 +90,21 @@ function w(e) {
 function D(e, t, n, i, a) {
   switch (e.categoryInfo.type) {
     case E.bg.FAVORITES:
-      return (0, r.jsx)(w, {
+      return (0, r.jsx)(R, {
         icon: u.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: i
       }, e.key);
     case E.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(w, {
+      return (0, r.jsx)(R, {
         icon: u.T39,
         onClick: t,
         isSelected: n,
         listItemProps: i
       }, e.key);
     case E.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(w, {
+      return (0, r.jsx)(R, {
         icon: u.IeX,
         onClick: t,
         isSelected: n,
@@ -121,7 +121,7 @@ function D(e, t, n, i, a) {
         })
       }), e.key);
     case E.bg.DEFAULTS:
-      return (0, r.jsx)(w, {
+      return (0, r.jsx)(R, {
         icon: u.gw7,
         onClick: t,
         isSelected: n,
@@ -175,14 +175,14 @@ function j(e) {
     guildId: s,
     inExpressionPicker: c,
     showPinnedDefaultsShortcut: d = false
-  } = e, _ = i.useRef(null), E = (0, l.e7)([m.default], () => m.default.getCurrentUser()), T = (0, g.I5)(E, v.PremiumTypes.TIER_2), C = i.useCallback(e => {
+  } = e, _ = i.useRef(null), E = (0, l.e7)([h.default], () => h.default.getCurrentUser()), T = (0, g.I5)(E, v.PremiumTypes.TIER_2), C = i.useCallback(e => {
     var r;
     let i = n.length - 1;
     e(i), null == (r = t.current) || r.scrollToSectionTop(i)
   }, [n.length, t]), A = i.useCallback((e, t, n, i) => {
     let o = a && (0, b.O)(e.categoryInfo, T, s),
       l = () => {
-        h.default.track(y.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+        m.default.track(y.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
           location: {
             page: y.ZY5.SOUNDBOARD_POPOUT
           },
@@ -210,7 +210,7 @@ function j(e) {
     listPadding: o,
     renderCategoryListItem: A,
     rowCount: n.length,
-    categoryHeight: R,
+    categoryHeight: w,
     children: e => d && (0, r.jsx)(u.P3F, {
       "aria-label": S.intl.string(S.t.Rtvk9X),
       className: I.defaultsShortcut,

@@ -27,11 +27,11 @@ let u = false,
     regenerateNonce: ""
   };
 
-function m() {
+function h() {
   p = true
 }
 
-function h(e) {
+function m(e) {
   let {
     token: t,
     codes: n
@@ -91,13 +91,13 @@ class S extends(r = Chunk442837.ZP.Store) {
 }
 c(S, "displayName", "MFAStore");
 let I = new S(Chunk570140.Z, {
-  MFA_ENABLE_SUCCESS: h,
+  MFA_ENABLE_SUCCESS: m,
   MFA_DISABLE_SUCCESS: g,
   MFA_SMS_TOGGLE: E,
   MFA_SMS_TOGGLE_COMPLETE: b,
   MFA_CLEAR_BACKUP_CODES: v,
   MFA_VIEW_BACKUP_CODES: O,
   MFA_SEND_VERIFICATION_KEY: y,
-  MFA_SEEN_BACKUP_CODE_PROMPT: m,
+  MFA_SEEN_BACKUP_CODE_PROMPT: h,
   CONNECTION_OPEN: () => {}
 })

@@ -58,22 +58,22 @@ function u(e) {
         null == (t = f.current) || t.delay()
       }
     }, [d, f]),
-    m = i.useCallback(() => {
+    h = i.useCallback(() => {
       if (u(false), 0 === d.current.size) {
         var e;
         null == (e = f.current) || e.delay()
       }
     }, [d, f, u]),
-    h = i.useCallback(() => {
+    m = i.useCallback(() => {
       var e;
       d.current.size > 0 || (null == (e = f.current) || e.cancel(), u(true))
     }, [f, u]),
     g = i.useMemo(() => ({
       onAllowIdle: _,
       onPreventIdle: p,
-      onActive: m,
-      onForceIdle: h
-    }), [_, p, m, h]);
+      onActive: h,
+      onForceIdle: m
+    }), [_, p, h, m]);
   return (0, r.jsx)(c.Provider, {
     value: o,
     children: (0, r.jsx)(l.Provider, {

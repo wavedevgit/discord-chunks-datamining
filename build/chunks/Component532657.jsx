@@ -2,7 +2,7 @@
 /** chunk id: 532657, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,15 +52,15 @@ function _(e, t) {
   }), e
 }
 
-function m(e) {
+function h(e) {
   var t;
   let {
     text: n,
     tooltipText: a,
     textVariant: d = "text-xs/medium",
     textClassName: p,
-    "aria-label": m,
-    icon: h,
+    "aria-label": h,
+    icon: m,
     canTruncate: g = true,
     hideTooltip: E = false,
     hideText: b = false
@@ -78,19 +78,19 @@ function m(e) {
   }, [I, a, b]), P = i.useCallback(() => {
     v(false)
   }, []);
-  return null == h && b ? null : T ? (0, r.jsx)(s.i, {
+  return null == m && b ? null : T ? (0, r.jsx)(s.i, {
     body: C,
-    asset: h,
+    asset: m,
     assetSize: 16,
     delay: c.X,
     shouldShow: O,
     asContainer: true,
     children: (0, r.jsxs)("div", {
       className: o()(u.container, u.textWithIconContainer, A),
-      "aria-label": m,
+      "aria-label": h,
       onMouseEnter: N,
       onMouseLeave: P,
-      children: [h, !b && (0, r.jsx)(l.Text, _(f({
+      children: [m, !b && (0, r.jsx)(l.Text, _(f({
         ref: y
       }, S), {
         children: n
@@ -98,7 +98,7 @@ function m(e) {
     })
   }) : (0, r.jsxs)("div", {
     className: o()(u.container, u.textWithIconContainer, A),
-    children: [h, !b && (0, r.jsx)(l.Text, _(f({}, S), {
+    children: [m, !b && (0, r.jsx)(l.Text, _(f({}, S), {
       children: n
     }))]
   })

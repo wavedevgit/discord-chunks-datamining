@@ -94,13 +94,13 @@ function P(e) {
   return y(t).removeMember(n.id)
 }
 
-function R(e) {
+function w(e) {
   let t = false,
     n = y(e.guildId);
   return "GUILD_ROLE_DELETE" === e.type && (t = n.removeRoleFromSearchState(e.roleId)), n.rebuildAllMembers() || t
 }
 
-function w(e) {
+function R(e) {
   let {
     guildId: t,
     userId: n
@@ -323,7 +323,7 @@ function Q(e) {
       memberSupplementals: []
     }),
     b = (0, _.Qu)(c, E);
-  (0, m.nf)(c, g);
+  (0, h.nf)(c, g);
   let O = f.updateSearchedMembersByMemberIds(g);
   u.length > 0 && (s = u[0], l = u[u.length - 1]);
   let [v] = f.updatePaginationState({
@@ -331,11 +331,11 @@ function Q(e) {
     elasticSearchCursor: {
       before: (0, p.si)({
         joinedAt: null == s || null == (t = s.member) ? true : t.joined_at,
-        userId: null != (a = null == s || null == (n = s.member) ? true : n.user.id) ? a : h.lds
+        userId: null != (a = null == s || null == (n = s.member) ? true : n.user.id) ? a : m.lds
       }),
       after: (0, p.si)({
         joinedAt: null == l || null == (r = l.member) ? true : r.joined_at,
-        userId: null != (o = null == l || null == (i = l.member) ? true : i.user.id) ? o : h.lds
+        userId: null != (o = null == l || null == (i = l.member) ? true : i.user.id) ? o : m.lds
       })
     }
   }, false);
@@ -411,11 +411,11 @@ let J = new X(Chunk570140.Z, {
   GUILD_MEMBER_UPDATE: T,
   GUILD_MEMBER_UPDATE_LOCAL: N,
   GUILD_MEMBER_REMOVE: P,
-  GUILD_ROLE_UPDATE: R,
-  GUILD_ROLE_DELETE: R,
+  GUILD_ROLE_UPDATE: w,
+  GUILD_ROLE_DELETE: w,
   GUILD_MEMBER_PROFILE_UPDATE: M,
-  GUILD_ROLE_MEMBER_REMOVE: w,
-  GUILD_ROLE_MEMBER_ADD: w,
+  GUILD_ROLE_MEMBER_REMOVE: R,
+  GUILD_ROLE_MEMBER_ADD: R,
   THREAD_MEMBER_LIST_UPDATE: D,
   THREAD_MEMBERS_UPDATE: x,
   LOAD_ARCHIVED_THREADS_SUCCESS: L,

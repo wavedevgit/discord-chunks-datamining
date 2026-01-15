@@ -18,7 +18,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk936349 = require("./936349.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,11 +37,11 @@ class g extends Chunk928801.Z {
     var e, t, n;
     let i = 0,
       f = u.tU.getSetting();
-    i = (0, r.mB)(i, m.BVn.ALLOW_VOICE_RECORDING, f);
+    i = (0, r.mB)(i, h.BVn.ALLOW_VOICE_RECORDING, f);
     let _ = (0, o.Z)(p.Z),
-      h = (0, s.LI)() && ((null == (e = d.Z.getCurrentUserActiveStream()) ? true : e.state) === m.jm8.ACTIVE || (null == (t = d.Z.getCurrentUserActiveStream()) ? true : t.state) === m.jm8.PAUSED),
+      m = (0, s.LI)() && ((null == (e = d.Z.getCurrentUserActiveStream()) ? true : e.state) === h.jm8.ACTIVE || (null == (t = d.Z.getCurrentUserActiveStream()) ? true : t.state) === h.jm8.PAUSED),
       g = (0, s.CY)() && (null == (n = l.ZP.getVisibleGame()) ? true : n.windowHandle) != null;
-    i = (0, r.mB)(i, m.BVn.CLIPS_ENABLED, h || g);
+    i = (0, r.mB)(i, h.BVn.CLIPS_ENABLED, m || g);
     let {
       enableViewerClipping: E
     } = c.Z.getCurrentConfig({
@@ -49,7 +49,7 @@ class g extends Chunk928801.Z {
     }, {
       autoTrackExposure: false
     }), b = E && _ && a.Z.getSettings().viewerClipsEnabled;
-    return (0, r.mB)(i, m.BVn.ALLOW_ANY_VIEWER_CLIPS, b)
+    return (0, r.mB)(i, h.BVn.ALLOW_ANY_VIEWER_CLIPS, b)
   }
   getInitialState() {
     return {
@@ -97,7 +97,7 @@ class g extends Chunk928801.Z {
       videoStreamParameters: c,
       flags: u = 0
     } = e;
-    o && (null == (t = f.Z.getChannel(r)) ? true : t.type) === m.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+    o && (null == (t = f.Z.getChannel(r)) ? true : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
       guildId: n,
       channelId: r,
       selfMute: i,
@@ -119,6 +119,6 @@ class g extends Chunk928801.Z {
     })
   }
   constructor(e) {
-    super(), h(this, "socket", true), this.socket = e
+    super(), m(this, "socket", true), this.socket = e
   }
 }

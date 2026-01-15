@@ -2,7 +2,7 @@
 /** chunk id: 541716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ie: () => w,
+  Ie: () => R,
   OW: () => c,
   gy: () => u
 });
@@ -243,7 +243,7 @@ let d = {
     },
     showCharacterCount: true
   },
-  m = {
+  h = {
     analyticsName: "forum",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -269,7 +269,7 @@ let d = {
     showSlowmodeIndicator: true,
     showTypingIndicator: true
   },
-  h = {
+  m = {
     analyticsName: "voice_channel_status",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -591,7 +591,7 @@ let d = {
     showCharacterCount: true,
     layout: 1
   },
-  R = {
+  w = {
     analyticsName: "forward_message_input",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -620,14 +620,14 @@ let d = {
     showCharacterCount: true,
     layout: 1
   },
-  w = {
+  R = {
     NORMAL: d,
     OVERLAY: f,
     OVERLAY_INLINE_REPLY: v,
     SIDEBAR: p,
     EDIT: _,
-    FORM: m,
-    VOICE_CHANNEL_STATUS: h,
+    FORM: h,
+    VOICE_CHANNEL_STATUS: m,
     THREAD_CREATION: g,
     USER_PROFILE: O,
     USER_PROFILE_REPLY: S,
@@ -640,7 +640,7 @@ let d = {
     FORUM_CHANNEL_GUIDELINES: A,
     CHANNEL_TOPIC: N,
     ATOMIC_REACTOR_REPLY_INPUT: P,
-    FORWARD_MESSAGE_INPUT: R,
+    FORWARD_MESSAGE_INPUT: w,
     SHARE_CUSTOM_CLIENT_THEME_INPUT: {
       analyticsName: "share_custom_client_theme_input",
       drafts: {

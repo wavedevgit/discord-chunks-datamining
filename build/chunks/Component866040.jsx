@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   let {
     participants: t,
     channel: i
@@ -70,7 +70,7 @@ function h(e) {
           let {
             default: t
           } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
-          return n => (0, r.jsx)(t, m(p({}, n), {
+          return n => (0, r.jsx)(t, h(p({}, n), {
             user: e
           }))
         })
@@ -102,7 +102,7 @@ function g(e) {
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: u,
       renderPopout: () => {
-        if (null != n) return (0, r.jsx)(h, {
+        if (null != n) return (0, r.jsx)(m, {
           participants: n,
           channel: o
         });

@@ -71,19 +71,19 @@ let T = e => {
       applicationId: r
     } = e, {
       analyticsLocations: l
-    } = (0, p.ZP)(f.Z.PAYMENT_FLOW_TEST_PAGE), c = i.useRef(null), d = i.useRef(null), [_, m] = i.useState(() => (0, a.Z)());
+    } = (0, p.ZP)(f.Z.PAYMENT_FLOW_TEST_PAGE), c = i.useRef(null), d = i.useRef(null), [_, h] = i.useState(() => (0, a.Z)());
     i.useEffect(() => {
-      (c.current !== t || d.current !== n) && (m((0, a.Z)()), c.current = t, d.current = n)
+      (c.current !== t || d.current !== n) && (h((0, a.Z)()), c.current = t, d.current = n)
     }, [t, n]);
-    let [h, g] = (0, s.Wu)([b.Z], () => [b.Z.isFetching(t), b.Z.get(t)]);
+    let [m, g] = (0, s.Wu)([b.Z], () => [b.Z.isFetching(t), b.Z.get(t)]);
     return i.useEffect(() => {
-      null != g || h || (0, u.$N)(r, t, o.v.VARIANTS_GROUP).catch(e => {})
-    }, [r, t, g, h]), {
+      null != g || m || (0, u.$N)(r, t, o.v.VARIANTS_GROUP).catch(e => {})
+    }, [r, t, g, m]), {
       loadId: _,
       analyticsLocations: l,
       handleClose: i.useCallback(e => {}, []),
       handleComplete: i.useCallback(() => {}, []),
-      isFetching: h,
+      isFetching: m,
       sku: g,
       skuId: t,
       isGift: n
@@ -142,7 +142,7 @@ let T = e => {
     }, S) : v({}, S);
     O && (T.disablePurchasesForStorybook = true);
     let C = "".concat(i, "-").concat(a, "-").concat(f);
-    return (0, r.jsx)(m.PaymentContextProvider, {
+    return (0, r.jsx)(h.PaymentContextProvider, {
       stepConfigs: d,
       applicationId: n,
       skuIDs: null != i ? [i] : [],
@@ -151,7 +151,7 @@ let T = e => {
       purchaseType: u,
       excludeSubscriptionPlansBySKU: p,
       children: (0, r.jsx)(y.$, I(v({}, T), {
-        children: (0, r.jsx)(h.c1, {
+        children: (0, r.jsx)(m.c1, {
           children: (0, r.jsx)(_.KB, {
             isGift: a,
             children: (0, r.jsx)(g.PaymentModal, {

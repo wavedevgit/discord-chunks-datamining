@@ -136,17 +136,17 @@ let A = e => {
       children: O.intl.string(O.t.RV3AXf)
     })
   }),
-  R = e => {
+  w = e => {
     let {
       timestamp: t
     } = e;
     return (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
       className: v.timestamp,
-      children: (0, m.XX)(t)
+      children: (0, h.XX)(t)
     })
   },
-  w = () => (0, r.jsx)(l.Text, {
+  R = () => (0, r.jsx)(l.Text, {
     variant: "text-xs/bold",
     className: v.newBadge,
     children: O.intl.string(O.t.QKMRC4)
@@ -157,7 +157,7 @@ let A = e => {
     } = e, {
       id: a,
       description: s
-    } = t, c = f.default.extractTimestamp(a), u = (0, h.e)(t), d = i.useMemo(() => {
+    } = t, c = f.default.extractTimestamp(a), u = (0, m.e)(t), d = i.useMemo(() => {
       var e, n, i;
       let a = {
         description: s,
@@ -167,7 +167,7 @@ let A = e => {
           children: e
         })
       };
-      return (0, m.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.wO.OWNER ? O.intl.format(O.t.Lb0HVv, C(I({}, a), {
+      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.wO.OWNER ? O.intl.format(O.t.Lb0HVv, C(I({}, a), {
         guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
       })) : O.intl.format(O.t.rmpEPD, {
         guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
@@ -192,7 +192,7 @@ let A = e => {
       }),
       children: (0, r.jsxs)("div", {
         className: v.descriptionContainer,
-        children: [u ? (0, r.jsx)(w, {}) : (0, r.jsx)(R, {
+        children: [u ? (0, r.jsx)(R, {}) : (0, r.jsx)(w, {
           timestamp: c
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-lg/normal",
@@ -205,18 +205,18 @@ let A = e => {
     let {
       status: t,
       classifications: n
-    } = e, [a, o] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), p = (0, s.e7)([_.Z], () => _.Z.getIsDsaEligible()), m = i.useMemo(() => n.slice(0, c), [n, c]);
+    } = e, [a, o] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), p = (0, s.e7)([_.Z], () => _.Z.getIsDsaEligible()), h = i.useMemo(() => n.slice(0, c), [n, c]);
     i.useEffect(() => {
       a && d.default.track(y.rMx.SAFETY_HUB_ACTION, {
         action: b.n0.ViewViolationsDropdown,
         account_standing: f.state,
-        classification_ids: m.map(e => Number(e.id)),
+        classification_ids: h.map(e => Number(e.id)),
         source: b.s.StandingTab,
         is_violative_content_shown: false,
         is_dsa_eligible: p
       })
-    }, [a, f.state, m, p]);
-    let h = n.length - m.length > 3 ? 3 : n.length - m.length;
+    }, [a, f.state, h, p]);
+    let m = n.length - h.length > 3 ? 3 : n.length - h.length;
     return (0, r.jsxs)("div", {
       className: v.dropdown,
       children: [(0, r.jsx)(A, {
@@ -231,9 +231,9 @@ let A = e => {
             height: "1px",
             width: "100%"
           }
-        }), m.length > 0 && m.map(e => (0, r.jsx)(D, {
+        }), h.length > 0 && h.map(e => (0, r.jsx)(D, {
           classification: e
-        }, e.id)), m.length < n.length && (0, r.jsxs)(r.Fragment, {
+        }, e.id)), h.length < n.length && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.njP.Separator, {
             style: {
               height: "1px",
@@ -241,12 +241,12 @@ let A = e => {
             }
           }), (0, r.jsx)("button", {
             className: v.paginationButton,
-            onClick: () => u(e => e + h),
+            onClick: () => u(e => e + m),
             children: O.intl.format(O.t["9Ml56H"], {
-              nextPageSize: h
+              nextPageSize: m
             })
           })]
-        }), 0 === m.length && "active" === t && (0, r.jsx)(N, {}), 0 === m.length && "expired" === t && (0, r.jsx)(P, {})]
+        }), 0 === h.length && "active" === t && (0, r.jsx)(N, {}), 0 === h.length && "expired" === t && (0, r.jsx)(P, {})]
       })]
     })
   },

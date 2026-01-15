@@ -39,14 +39,14 @@ let A = {
   N = Chunk890742.Z;
 
 function P(e, t = {}) {
-  return R(e) ? (t.async = true, w(e, t).then(e => Z(e, t))) : U(e) ? (t.async = true, G(e).then(e => Z(e, t))) : Z(e, t)
+  return w(e) ? (t.async = true, R(e, t).then(e => Z(e, t))) : U(e) ? (t.async = true, G(e).then(e => Z(e, t))) : Z(e, t)
 }
 
-function R(e) {
+function w(e) {
   return "string" == typeof e
 }
 
-function w(e, t) {
+function R(e, t) {
   return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? D(e, t) : x(e, t) : j(e) ? Promise.resolve((0, r.u0)(e)) : M(e, t)
 }
 
@@ -166,8 +166,8 @@ function V(e, {
     N = [],
     {
       fileType: P,
-      fileDataOffset: R,
-      jfifDataOffset: w,
+      fileDataOffset: w,
+      jfifDataOffset: R,
       tiffHeaderOffset: D,
       iptcDataOffset: x,
       xmpChunks: L,
@@ -179,14 +179,14 @@ function V(e, {
       vp8xChunkOffset: Z,
       gifHeaderOffset: F
     } = s.Z.parseAppMarkers(e, n);
-  if (a.Z.USE_JPEG && a.Z.USE_FILE && H(R)) {
+  if (a.Z.USE_JPEG && a.Z.USE_FILE && H(w)) {
     C = true;
-    let n = u.Z.read(e, R);
+    let n = u.Z.read(e, w);
     t ? A.file = n : A = (0, r.wB)({}, A, n)
   }
-  if (a.Z.USE_JPEG && a.Z.USE_JFIF && Y(w)) {
+  if (a.Z.USE_JPEG && a.Z.USE_JFIF && Y(R)) {
     C = true;
-    let n = d.Z.read(e, w);
+    let n = d.Z.read(e, R);
     t ? A.jfif = n : A = (0, r.wB)({}, A, n)
   }
   if (a.Z.USE_EXIF && W(D)) {
@@ -208,7 +208,7 @@ function V(e, {
       t ? A.photoshop = e : A = (0, r.wB)({}, A, e)
     }
     if (a.Z.USE_TIFF && a.Z.USE_ICC && n.ICC_Profile && !Q(j)) {
-      let e = m.Z.read(n.ICC_Profile.value, [{
+      let e = h.Z.read(n.ICC_Profile.value, [{
         offset: 0,
         length: n.ICC_Profile.value.length,
         chunkNumber: 1,
@@ -218,7 +218,7 @@ function V(e, {
     }
     if (a.Z.USE_MAKER_NOTES && n.MakerNote) {
       if (X(n)) {
-        let a = h.Z.read(e, D, n.MakerNote.__offset, s, i);
+        let a = m.Z.read(e, D, n.MakerNote.__offset, s, i);
         t ? A.makerNotes = a : A = (0, r.wB)({}, A, a)
       } else if (J(n)) {
         let a = g.Z.read(e, D, n.MakerNote.__offset, i);
@@ -239,7 +239,7 @@ function V(e, {
   }
   if ((a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_ICC && Q(j)) {
     C = true;
-    let t = m.Z.read(e, j, n);
+    let t = h.Z.read(e, j, n);
     t instanceof Promise ? N.push(t.then(eo)) : eo(t)
   }
   if (a.Z.USE_MPF && $(M)) {

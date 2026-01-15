@@ -77,7 +77,7 @@ function L(e) {
     reducedGap: K
   } = v.n.useConfig({
     location: "ChannelTextAreaButtons"
-  }), z = (0, h.Iu)(e => e.lastActiveView), q = (null == (t = A.gifs) ? true : t.button) != null && (null == (n = A.stickers) ? true : n.button) != null && null != z ? z : w.X1.EMOJI, Q = [], X = !M.isDM() || true === M.recipients || M.recipients.length > 1, J = (0, c.e7)([y.default], () => X ? null : y.default.getUser(M.recipients[0])), $ = (0, f.R)({
+  }), z = (0, m.Iu)(e => e.lastActiveView), q = (null == (t = A.gifs) ? true : t.button) != null && (null == (n = A.stickers) ? true : n.button) != null && null != z ? z : R.X1.EMOJI, Q = [], X = !M.isDM() || true === M.recipients || M.recipients.length > 1, J = (0, c.e7)([y.default], () => X ? null : y.default.getUser(M.recipients[0])), $ = (0, f.R)({
     channel: M,
     chatInputType: A
   }), ee = (null == (i = A.submit) ? true : i.button) != null && ((null == (a = A.submit) ? true : a.ignorePreference) || Z);
@@ -103,7 +103,7 @@ function L(e) {
       }, "sticker")
     }), Q.push({
       key: "upload",
-      node: (0, r.jsx)(R.z, {
+      node: (0, r.jsx)(w.z, {
         disabled: L,
         inputType: A,
         channel: M
@@ -114,7 +114,7 @@ function L(e) {
         className: D.spacer
       }, "spacer")
     })), (null == (g = A.emojis) ? true : g.button) != null && (null == B || null != V && V.type !== u.jw.ATTACHMENT)) {
-    let e = W ? q : w.X1.EMOJI;
+    let e = W ? q : R.X1.EMOJI;
     Q.push({
       key: "emoji",
       node: (0, r.jsx)(I.Z, {
@@ -127,7 +127,7 @@ function L(e) {
   }
   $ && Q.push({
     key: "appLauncher",
-    node: (0, r.jsx)(m.Z, {
+    node: (0, r.jsx)(h.Z, {
       channelId: M.id,
       type: A
     }, "appLauncher")

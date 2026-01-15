@@ -42,21 +42,21 @@ function E(e) {
   }, []), O = () => {
     let e;
     return E <= 3 && !b ? null : (e = b ? (0, r.jsx)(o.u04, {
-      className: m.toggleExpandIcon
+      className: h.toggleExpandIcon
     }) : g ? (0, r.jsx)(o.CJ0, {
-      className: m.toggleExpandIcon
+      className: h.toggleExpandIcon
     }) : (0, r.jsx)(o.Fbu, {
-      className: m.toggleExpandIcon
+      className: h.toggleExpandIcon
     }), (0, r.jsx)(o.tEY, {
       children: (0, r.jsx)("div", {
         tabIndex: 0,
-        className: m.toggleExpandIcon,
+        className: h.toggleExpandIcon,
         children: e
       })
     }))
   };
   return (0, r.jsxs)(l.Z, {
-    className: h.membersGroup,
+    className: m.membersGroup,
     children: [(0, r.jsx)(o.nn4, {
       children: _.intl.format(_.t.Uaqbke, {
         title: t,
@@ -69,9 +69,9 @@ function E(e) {
       onContextMenu: y,
       tag: "span",
       "aria-hidden": true,
-      className: m.headerContainer,
+      className: h.headerContainer,
       children: [(0, r.jsxs)("div", {
-        className: m.header,
+        className: h.header,
         children: [(0, r.jsxs)("span", {
           children: [t, " — ", E]
         }), (0, r.jsx)(d.Z, {})]

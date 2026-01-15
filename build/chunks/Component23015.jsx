@@ -2,7 +2,7 @@
 /** chunk id: 23015, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk927997 = require("./927997.js");
 
-function m(e) {
-  var t, n, m, h;
+function h(e) {
+  var t, n, h, m;
   let {
     application: g,
     message: E,
@@ -45,19 +45,19 @@ function m(e) {
       })
     }
     return e
-  }, [A, N]), R = null != y && null != y.details && null != y.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
+  }, [A, N]), w = null != y && null != y.details && null != y.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
     track: y.details,
     artist: y.state
-  }) : g.name, w = null != (m = null == y || null == (t = y.timestamps) ? true : t.start) ? m : null == y ? true : y.created_at, D = i.useMemo(() => {
+  }) : g.name, R = null != (h = null == y || null == (t = y.timestamps) ? true : t.start) ? h : null == y ? true : y.created_at, D = i.useMemo(() => {
     var e;
-    return null != w ? (0, r.jsxs)("div", {
+    return null != R ? (0, r.jsxs)("div", {
       className: _.timestampContainer,
       children: [(0, r.jsx)(a.RZG, {
         size: "xxs",
         color: "currentColor"
       }), (0, r.jsx)(l.x, {
         entry: {
-          start: w,
+          start: R,
           end: null == y || null == (e = y.timestamps) ? true : e.end
         },
         textColor: "currentColor",
@@ -65,7 +65,7 @@ function m(e) {
         textFontCode: false
       })]
     }) : null
-  }, [w, null == y || null == (n = y.timestamps) ? true : n.end]), x = i.useMemo(() => (0, r.jsxs)("div", {
+  }, [R, null == y || null == (n = y.timestamps) ? true : n.end]), x = i.useMemo(() => (0, r.jsxs)("div", {
     className: _.info,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
@@ -77,8 +77,8 @@ function m(e) {
   }), [D, O, v]);
   return (0, r.jsx)(o.W, {
     header: b,
-    title: R,
-    iconSrc: null != (h = (0, u.Z)(y, g.id)) ? h : true,
+    title: w,
+    iconSrc: null != (m = (0, u.Z)(y, g.id)) ? m : true,
     info: x,
     actions: P,
     onClickContent: I,

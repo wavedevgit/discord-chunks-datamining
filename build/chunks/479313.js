@@ -2,11 +2,11 @@
 /** chunk id: 479313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $l: () => R,
+  $l: () => w,
   G1: () => O,
   JR: () => T,
   U$: () => C,
-  ZP: () => w,
+  ZP: () => R,
   e7: () => S,
   wv: () => I,
   yK: () => v
@@ -24,7 +24,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk70956 = require("./70956.js"),
   Chunk765104 = require("./765104.js"),
   Chunk981631 = require("./981631.js");
-let h = 75,
+let m = 75,
   g = 50,
   E = 30 * Chunk70956.Z.Millis.SECOND,
   b = null;
@@ -40,7 +40,7 @@ async function y(e, t) {
   });
   try {
     let n = await s.tn.get({
-      url: m.Z5c.CHANNEL_SUMMARY(e, t),
+      url: h.Z5c.CHANNEL_SUMMARY(e, t),
       rejectWithError: false
     });
     r = null == n ? true : n.body
@@ -68,14 +68,14 @@ async function O(e) {
   });
   try {
     i = await s.tn.get({
-      url: m.Z5c.CHANNEL_SUMMARIES(e),
+      url: h.Z5c.CHANNEL_SUMMARIES(e),
       rejectWithError: false
     })
   } catch (e) {
     r = new c.Hx(e)
   }
   let u = (null == i || null == (t = i.body) ? true : t.summaries) instanceof Array ? i.body.summaries : null != (n = null == i ? true : i.body) ? n : [];
-  u = a().takeRight(u, h), l.Z.dispatch({
+  u = a().takeRight(u, m), l.Z.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES",
     channelId: e,
     summaries: u,
@@ -175,7 +175,7 @@ async function N(e) {
   });
   try {
     n = await s.tn.post({
-      url: m.Z5c.USER_SUMMARIES,
+      url: h.Z5c.USER_SUMMARIES,
       body: {
         channel_ids: e
       },
@@ -211,10 +211,10 @@ function P() {
     }
   }, [n, t])
 }
-async function R(e) {
+async function w(e) {
   try {
     await s.tn.del({
-      url: m.Z5c.CHANNEL_SUMMARY(e.channelId, e.id),
+      url: h.Z5c.CHANNEL_SUMMARY(e.channelId, e.id),
       rejectWithError: false
     }), l.Z.dispatch({
       type: "DELETE_SUMMARY",
@@ -224,7 +224,7 @@ async function R(e) {
     throw new c.Hx(e)
   }
 }
-let w = {
+let R = {
   setSummaryFeedback: C,
   updateVisibleMessages: T,
   setSelectedSummary: I,
@@ -237,5 +237,5 @@ let w = {
     } = e;
     return P(t), (0, o.Wu)([_.Z], () => _.Z.topSummaries(), [])
   },
-  deleteSummary: R
+  deleteSummary: w
 }

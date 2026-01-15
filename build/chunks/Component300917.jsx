@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B: () => g,
-  QuestRewardModalUnverified: () => h
+  QuestRewardModalUnverified: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,23 +39,23 @@ function m(e) {
   return e
 }
 
-function h(e) {
+function m(e) {
   let {
     transitionState: t,
     onClose: n
   } = e, _ = (0, o.e7)([c.default], () => {
     var e;
     return null == (e = c.default.getCurrentUser()) ? true : e.email
-  }), [m, h] = i.useState({
+  }), [h, m] = i.useState({
     status: "unknown"
   });
   i.useEffect(() => {
-    h({
+    m({
       status: "loading"
-    }), l.Z.verifyResend().then(() => h({
+    }), l.Z.verifyResend().then(() => m({
       status: "success"
     }), e => {
-      h({
+      m({
         status: "error"
       }), (0, u.ys)(e, {
         tags: {
@@ -64,25 +64,25 @@ function h(e) {
       })
     })
   }, []);
-  let g = "error" === m.status ? d.intl.string(d.t.vjying) : "success" === m.status ? d.intl.format(d.t.qP5xYc, {
+  let g = "error" === h.status ? d.intl.string(d.t.vjying) : "success" === h.status ? d.intl.format(d.t.qP5xYc, {
     emailAddress: _,
     emailAddressLink: "mailto:".concat(_)
   }) : true;
   return (0, r.jsxs)(a.ExpressiveModal, {
     transitionState: t,
     onClose: n,
-    graphic: "loading" === m.status ? true : {
+    graphic: "loading" === h.status ? true : {
       type: "image",
       src: p
     },
-    title: "loading" === m.status ? true : d.intl.string(d.t.c8eASM),
+    title: "loading" === h.status ? true : d.intl.string(d.t.c8eASM),
     subtitle: g,
-    actions: "loading" === m.status ? true : [{
+    actions: "loading" === h.status ? true : [{
       variant: "secondary",
       text: d.intl.string(d.t.cpT0Cq),
       onClick: n
     }],
-    children: ["loading" === m.status && (0, r.jsx)(s.$jN, {}), "success" === m.status && (0, r.jsxs)("div", {
+    children: ["loading" === h.status && (0, r.jsx)(s.$jN, {}), "success" === h.status && (0, r.jsxs)("div", {
       className: f.helper,
       children: [(0, r.jsx)(s.d3s, {
         size: "xs",
@@ -102,6 +102,6 @@ function g() {
     let {
       QuestRewardModalUnverified: e
     } = await Promise.resolve().then(n.bind(n, 300917));
-    return t => (0, r.jsx)(e, m({}, t))
+    return t => (0, r.jsx)(e, h({}, t))
   })
 }

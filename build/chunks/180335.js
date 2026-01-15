@@ -7,7 +7,7 @@ require.d(exports, {
   cN: () => f,
   gr: () => d,
   pB: () => p,
-  vu: () => m
+  vu: () => h
 }), require("./388685.js");
 var Chunk423875 = require("./423875.js"),
   Chunk394821 = require("./394821.js"),
@@ -46,7 +46,7 @@ function _(e, t) {
   return !!((0, i.Z)(t) && d(e)) && e.extra.media_title === t.details
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = e.filter(o.kr);
   return t.type === s.IIU.PLAYING ? n.filter(a.dX).find(e => f(e, t)) : t.type === s.IIU.LISTENING ? n.filter(a.dU).find(e => p(e, t)) : t.type === s.IIU.WATCHING ? e.filter(a.y0).find(e => _(e, t)) : true
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 25990, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O;
+let r, i, a, o, s, l, c, u, d, f, p, _, h, m, g, E, b, y, O;
 require.d(exports, {
   Z: () => ec
 });
@@ -21,11 +21,11 @@ function A(e, t, n) {
 let N = Chunk981631.QZA.CLOSED,
   P = {};
 
-function R() {
+function w() {
   N = C.QZA.OPEN, P = {}
 }
 
-function w() {
+function R() {
   N = C.QZA.CLOSED, P = {}
 }
 
@@ -43,7 +43,7 @@ function L(e) {
   let {
     section: t
   } = e;
-  return t === C.oAB.ACCOUNT && R()
+  return t === C.oAB.ACCOUNT && w()
 }
 
 function j(e) {
@@ -120,14 +120,14 @@ function Y(e) {
   let {
     displayNameStyles: t
   } = e;
-  m = t
+  h = t
 }
 
 function W(e) {
   let {
     themeColors: t
   } = e;
-  h = t
+  m = t
 }
 
 function K(e) {
@@ -172,7 +172,7 @@ function J(e) {
     avatarDecoration: r,
     displayNameStyles: i
   } = e;
-  y = t, h = n, E = r, O = i
+  y = t, m = n, E = r, O = i
 }
 
 function $() {
@@ -188,7 +188,7 @@ function et() {
 }
 
 function en() {
-  r = true, i = true, a = true, o = true, s = true, m = true
+  r = true, i = true, a = true, o = true, s = true, h = true
 }
 
 function er() {
@@ -196,7 +196,7 @@ function er() {
 }
 
 function ei() {
-  g = true, E = true, b = true, y = true, h = true, O = true
+  g = true, E = true, b = true, y = true, m = true, O = true
 }
 
 function ea() {
@@ -208,7 +208,7 @@ function eo() {
 }
 
 function es() {
-  et(), ei(), w()
+  et(), ei(), R()
 }
 class el extends(v = Chunk442837.ZP.Store) {
   getFormState() {
@@ -218,7 +218,7 @@ class el extends(v = Chunk442837.ZP.Store) {
     return P
   }
   showNotice() {
-    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== p || true !== _ || true !== m
+    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== p || true !== _ || true !== h
   }
   getIsSubmitDisabled() {
     return true !== c && c.length > C.tPV
@@ -254,7 +254,7 @@ class el extends(v = Chunk442837.ZP.Store) {
     return o
   }
   getPendingDisplayNameStyles() {
-    return m
+    return h
   }
   getAllPending() {
     return {
@@ -270,11 +270,11 @@ class el extends(v = Chunk442837.ZP.Store) {
       pendingNameplate: s,
       pendingLegacyUsernameDisabled: p,
       pendingPrimaryGuildId: _,
-      pendingDisplayNameStyles: m
+      pendingDisplayNameStyles: h
     }
   }
   getTryItOutThemeColors() {
-    return h
+    return m
   }
   getTryItOutAvatar() {
     return g
@@ -293,7 +293,7 @@ class el extends(v = Chunk442837.ZP.Store) {
   }
   getAllTryItOut() {
     return {
-      tryItOutThemeColors: h,
+      tryItOutThemeColors: m,
       tryItOutAvatar: g,
       tryItOutAvatarDecoration: E,
       tryItOutProfileEffect: b,
@@ -304,11 +304,11 @@ class el extends(v = Chunk442837.ZP.Store) {
 }
 A(el, "displayName", "UserSettingsAccountStore");
 let ec = new el(Chunk570140.Z, {
-  USER_SETTINGS_ACCOUNT_INIT: R,
-  USER_SETTINGS_MODAL_INIT: R,
-  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
+  USER_SETTINGS_ACCOUNT_INIT: w,
+  USER_SETTINGS_MODAL_INIT: w,
+  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: w,
   USER_SETTINGS_MODAL_SET_SECTION: L,
-  USER_SETTINGS_ACCOUNT_CLOSE: w,
+  USER_SETTINGS_ACCOUNT_CLOSE: R,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: es,
   USER_SETTINGS_ACCOUNT_SUBMIT: D,
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: x,

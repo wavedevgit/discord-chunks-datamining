@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  o: () => h
+  o: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     ctaType: n,
@@ -27,7 +27,7 @@ function h(e) {
     onGoToGuild: s,
     onAcceptInvite: u,
     onStartApplication: f,
-    onComplete: h
+    onComplete: m
   } = e, [g, E] = i.useState(false), b = (0, l.Z)(t), y = i.useCallback(() => {
     (0, c.uL)(_.Z5c.GUILD_MEMBER_VERIFICATION(t))
   }, [t]), O = i.useCallback(async () => {
@@ -41,31 +41,31 @@ function h(e) {
     switch (n) {
       case p.sE.IS_MEMBER:
         return {
-          text: m.intl.string(m.t.IRoQXr), onClick: s
+          text: h.intl.string(h.t.IRoQXr), onClick: s
         };
       case p.sE.ADOPT_TAG:
         return {
-          text: m.intl.string(m.t.cQDYRu), onClick: b
+          text: h.intl.string(h.t.cQDYRu), onClick: b
         };
       case p.sE.HAS_APPLICATION:
         return {
-          text: m.intl.string(m.t["4yfIDk"]), onClick: y
+          text: h.intl.string(h.t["4yfIDk"]), onClick: y
         };
       case p.sE.APPLY_TO_JOIN:
         return {
-          text: m.intl.string(m.t["7XdMW2"]), onClick: f
+          text: h.intl.string(h.t["7XdMW2"]), onClick: f
         };
       case p.sE.LURK_DISCOVERABLE:
         return {
-          text: m.intl.string(m.t.VJlc0S), onClick: O
+          text: h.intl.string(h.t.VJlc0S), onClick: O
         };
       case p.sE.JOIN_VIA_INVITE:
         return {
-          text: m.intl.string(m.t.VJlc0S), onClick: u
+          text: h.intl.string(h.t.VJlc0S), onClick: u
         };
       case p.sE.ACCEPT_ROLES:
         return {
-          text: m.intl.string(m.t.MMlhsr), onClick: u
+          text: h.intl.string(h.t.MMlhsr), onClick: u
         };
       default:
         return {
@@ -77,9 +77,9 @@ function h(e) {
     try {
       await (null == S ? true : S())
     } catch (e) {} finally {
-      null == h || h(), E(false)
+      null == m || m(), E(false)
     }
-  }, [S, h]);
+  }, [S, m]);
   return null == v ? null : (0, r.jsx)(a.Button, {
     variant: "active",
     size: "sm",
@@ -105,15 +105,15 @@ function g(e) {
         location: "guild_profile"
       }
     })
-  }, [l]), m = i.useCallback(() => {
+  }, [l]), h = i.useCallback(() => {
     t.visibility !== f.k.PUBLIC_WITH_RECRUITMENT && null != l ? _() : s.Z.openMemberVerificationModal(a, true, l)
   }, [_, a, t.visibility, l]);
-  return null == c ? null : (0, r.jsx)(h, {
+  return null == c ? null : (0, r.jsx)(m, {
     guildId: a,
     ctaType: c,
     onGoToGuild: d,
     onAcceptInvite: _,
-    onStartApplication: m,
+    onStartApplication: h,
     onComplete: n
   })
 }

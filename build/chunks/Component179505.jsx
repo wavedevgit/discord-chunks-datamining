@@ -51,7 +51,7 @@ function b(e, t) {
     analyticsLocations: o,
     onViewWishlist: c,
     isSingleCard: p = false,
-    wishlistId: h,
+    wishlistId: m,
     showTypeTooltip: E = false,
     cardSize: b,
     itemSource: y
@@ -69,7 +69,7 @@ function b(e, t) {
         items: e.bundleItems
       };
       return (0, r.jsx)("div", {
-        className: m.bundlePreview,
+        className: h.bundlePreview,
         children: (0, r.jsx)(l.d, {
           product: t,
           isHighlighted: false,
@@ -82,16 +82,16 @@ function b(e, t) {
       profileOwner: a,
       isHighlighted: false
     })
-  }, P = !O && e.collectiblesItem.type === i.Z.PROFILE_EFFECT, R = O || !P;
+  }, P = !O && e.collectiblesItem.type === i.Z.PROFILE_EFFECT, w = O || !P;
   return (0, r.jsx)(f.Z, {
     onCardClick: A,
     tooltipConfig: C,
-    shouldScalePreview: R,
+    shouldScalePreview: w,
     renderPreview: N,
     moreCount: n,
     isSingleCard: p,
     wishlistItem: e,
-    wishlistId: h,
+    wishlistId: m,
     cardSize: b,
     itemSource: y
   }, e.skuId)
@@ -114,12 +114,12 @@ function y(e, t) {
     index: 0
   }), d = l ? _.intl.string(_.t.Zr5tjn) : E(e);
   return (0, r.jsxs)("div", {
-    className: h.singleItemContainer,
+    className: m.singleItemContainer,
     children: [u, (0, r.jsxs)("div", {
-      className: h.singleItemInfo,
+      className: m.singleItemInfo,
       children: [(0, r.jsx)(o.P3F, {
         onClick: c,
-        className: h.singleItemName,
+        className: m.singleItemName,
         "aria-label": _.intl.string(_.t.pLPjsb),
         children: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",

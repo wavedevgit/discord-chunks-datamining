@@ -87,7 +87,7 @@ function h(e) {
           }), j()
         },
         text: T,
-        icon: i.SrA
+        icon: i.NitroWheelIcon
       })
     }
   }

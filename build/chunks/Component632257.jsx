@@ -25,9 +25,9 @@ let b = e => {
     let {
       isAuthenticated: t,
       user: n
-    } = e, i = (0, _.I5)(n, h.PremiumTypes.TIER_2), o = (0, d.ZP)();
+    } = e, i = (0, _.I5)(n, m.PremiumTypes.TIER_2), o = (0, d.ZP)();
     return (0, r.jsx)(c.Z, {
-      section: m.jXE.NAVIGATION,
+      section: h.jXE.NAVIGATION,
       children: (0, r.jsx)(l.f6W, {
         theme: o,
         children: e => (0, r.jsxs)(f.Z, {

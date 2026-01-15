@@ -34,7 +34,7 @@ function _(e) {
   p(e => e.set(t, n)), d.set(t, new Date)
 }
 
-function m(e) {
+function h(e) {
   let {
     feedId: t,
     state: n
@@ -42,7 +42,7 @@ function m(e) {
   u.set(t, n)
 }
 
-function h() {
+function m() {
   c = new Map
 }
 
@@ -100,9 +100,9 @@ class y extends(i = Chunk442837.ZP.Store) {
 }
 l(y, "displayName", "ContentInventoryStore");
 let O = new y(Chunk570140.Z, {
-  CONNECTION_OPEN: h,
+  CONNECTION_OPEN: m,
   CONTENT_INVENTORY_SET_FEED: _,
-  CONTENT_INVENTORY_SET_FEED_STATE: m,
+  CONTENT_INVENTORY_SET_FEED_STATE: h,
   CONTENT_INVENTORY_SET_FILTERS: E,
   CONTENT_INVENTORY_CLEAR_FEED: g,
   CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING: b

@@ -50,18 +50,18 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {},
-  h = (0, Chunk358085.isWindows)() ? "".concat(Chunk579806.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, Chunk358085.isMac)() ? "/Applications/DiscordGames" : "/tmp";
+let h = {},
+  m = (0, Chunk358085.isWindows)() ? "".concat(Chunk579806.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, Chunk358085.isMac)() ? "/Applications/DiscordGames" : "/tmp";
 
 function g(e, t) {
   var n;
-  m = _(f({}, m), {
-    [e]: f({}, null != (n = m[e]) ? n : {}, t)
+  h = _(f({}, h), {
+    [e]: f({}, null != (n = h[e]) ? n : {}, t)
   })
 }
 
 function E(e) {
-  m = f({}, m), delete m[e]
+  h = f({}, h), delete h[e]
 }
 
 function b(e, t) {
@@ -144,7 +144,7 @@ function A(e) {
 class N extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     let t = f({}, e);
-    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = h), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
+    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = m), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
   }
   getState() {
     return r
@@ -159,7 +159,7 @@ class N extends(i = Chunk442837.ZP.PersistedStore) {
     }))
   }
   get installationPathsMetadata() {
-    return m
+    return h
   }
   hasGamesInstalledInPath(e) {
     let {
@@ -178,7 +178,7 @@ class N extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === h ? u.intl.string(u.t.VdDrjm) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? n : "?"
+    return e === m ? u.intl.string(u.t.VdDrjm) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? n : "?"
   }
 }
 d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");

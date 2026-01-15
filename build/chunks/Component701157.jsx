@@ -19,24 +19,24 @@ let p = 3,
     let {
       canAddBoosts: t,
       canApplyBoosts: n
-    } = e, _ = (0, a.e7)([s.Z], () => s.Z.affinities), m = (0, a.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), h = i.useMemo(() => {
+    } = e, _ = (0, a.e7)([s.Z], () => s.Z.affinities), h = (0, a.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), m = i.useMemo(() => {
       let e = _.slice(0, p).map(e => e.guildId);
-      for (let t = 0; t < m.length && !(e.length >= 3); t++) {
-        let n = m[t];
+      for (let t = 0; t < h.length && !(e.length >= 3); t++) {
+        let n = h[t];
         e.includes(n) || e.push(n)
       }
       return e
-    }, [_, m]);
-    return 0 === h.length ? null : (0, r.jsxs)("div", {
+    }, [_, h]);
+    return 0 === m.length ? null : (0, r.jsxs)("div", {
       className: f.wrapper,
       children: [t && (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         className: f.header,
         children: d.intl.string(d.t.r90Wgo)
-      }), h.map(e => (0, r.jsx)(u.Z, {
+      }), m.map(e => (0, r.jsx)(u.Z, {
         className: f.recommendedServerCard,
         guildId: e,
         boostingVariant: true
-      }, e)), m.length > p && n && (0, r.jsx)(c.Z, {})]
+      }, e)), h.length > p && n && (0, r.jsx)(c.Z, {})]
     })
   }

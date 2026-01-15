@@ -30,29 +30,29 @@ function E(e, t, n) {
 }
 
 function b() {
-  return h.Z.getCurrentConfig({
+  return m.Z.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
     autoTrackExposure: true,
-    disable: !m.Z.hasSearch()
+    disable: !h.Z.hasSearch()
   }).searchEnabled
 }
 
 function y() {
-  return h.Z.getCurrentConfig({
+  return m.Z.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
     autoTrackExposure: true,
-    disable: !m.Z.hasSearch()
+    disable: !h.Z.hasSearch()
   }).clearEnabled
 }
 
 function O() {
-  return h.Z.getCurrentConfig({
+  return m.Z.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
     autoTrackExposure: true,
-    disable: !m.Z.hasUserActivity()
+    disable: !h.Z.hasUserActivity()
   }).activityEnabled
 }
 
@@ -77,14 +77,14 @@ function S(e, t) {
     p.push(e), p.push(t), u.push(e)
   }
   null != t && (p.push(t.name), u.push(t.name));
-  let m = s + (u.length > 0 ? " (".concat(u.join(", "), ")") : ""),
-    h = g.Z5c.CHANNEL(null != (n = null == t ? true : t.id) ? n : g.ME, e.id);
+  let h = s + (u.length > 0 ? " (".concat(u.join(", "), ")") : ""),
+    m = g.Z5c.CHANNEL(null != (n = null == t ? true : t.id) ? n : g.ME, e.id);
   return {
-    id: h,
-    relatedUniqueIdentifier: h,
+    id: m,
+    relatedUniqueIdentifier: m,
     type: "url",
-    title: m,
-    displayName: m,
+    title: h,
+    displayName: h,
     thumbnailURL: v((0, i.x)(e, 128, false)),
     rankingHint: e.type === g.d4z.DM ? 75 : 50,
     keywords: p,
@@ -147,7 +147,7 @@ function C(e) {
 function A(e) {
   if (!O()) return;
   let t = null != e ? o.Z.getChannel(e) : true;
-  if (null == t) return void m.Z.resignActivity();
+  if (null == t) return void h.Z.resignActivity();
   let n = s.Z.getGuild(t.guild_id),
     r = (0, a.F6)(t, d.default, c.Z, true),
     i = r + (null != n ? " (".concat(n.name, ")") : ""),
@@ -163,7 +163,7 @@ function A(e) {
       displayName: i,
       type: "com.discord.view-channel"
     };
-  m.Z.setActivity(f)
+  h.Z.setActivity(f)
 }
 
 function N() {
@@ -178,15 +178,15 @@ function N() {
   e.push({
     id: g.ME,
     items: t
-  }), m.Z.indexDomains(e)
+  }), h.Z.indexDomains(e)
 }
 
 function P(e) {
   let t = o.Z.getDMChannelFromUserId(e);
-  null != t && R([t])
+  null != t && w([t])
 }
 
-function R(e) {
+function w(e) {
   if (!b()) return;
   let t = [],
     n = [],
@@ -209,14 +209,14 @@ function R(e) {
         }), r[n] = a
       }
     } else n.push(a.id);
-  t.length > 0 && m.Z.indexDomains(t), n.length > 0 && m.Z.deleteSearchItems(n)
+  t.length > 0 && h.Z.indexDomains(t), n.length > 0 && h.Z.deleteSearchItems(n)
 }
-class w extends Chunk147913.Z {
+class R extends Chunk147913.Z {
   handleInit() {
-    A(u.Z.getCurrentlySelectedChannelId()), y() && m.Z.clearSearchIndex(), b() && N()
+    A(u.Z.getCurrentlySelectedChannelId()), y() && h.Z.clearSearchIndex(), b() && N()
   }
   handleLogout() {
-    y() && m.Z.clearSearchIndex()
+    y() && h.Z.clearSearchIndex()
   }
   handleChannelSelect(e) {
     let {
@@ -233,7 +233,7 @@ class w extends Chunk147913.Z {
     let r = s.Z.getGuild(n.guild_id);
     if (null == r && null != n.guild_id) return;
     let i = I(r);
-    m.Z.indexDomains([{
+    h.Z.indexDomains([{
       id: null != (t = null == r ? true : r.id) ? t : g.ME,
       items: [S(n, r)],
       defaultThumbnailURL: i
@@ -243,13 +243,13 @@ class w extends Chunk147913.Z {
     let {
       channel: t
     } = e;
-    b() && m.Z.deleteSearchItems([t.id])
+    b() && h.Z.deleteSearchItems([t.id])
   }
   handleChannelUpdates(e) {
     let {
       channels: t
     } = e;
-    R(t)
+    w(t)
   }
   handleGuildCreateOrUpdate(e) {
     let {
@@ -258,20 +258,20 @@ class w extends Chunk147913.Z {
     } = e;
     if (b()) {
       let e = s.Z.getGuild(t.id);
-      null != e ? m.Z.indexDomains([T(e, "GUILD_UPDATE" === n)]) : m.Z.deleteSearchDomains([t.id])
+      null != e ? h.Z.indexDomains([T(e, "GUILD_UPDATE" === n)]) : h.Z.deleteSearchDomains([t.id])
     }
   }
   handleGuildDelete(e) {
     let {
       guild: t
     } = e;
-    b() && m.Z.deleteSearchDomains([t.id])
+    b() && h.Z.deleteSearchDomains([t.id])
   }
   handleThreadUpdate(e) {
     let {
       channel: t
     } = e;
-    R([t])
+    w([t])
   }
   handleUserUpdate(e) {
     let {
@@ -306,4 +306,4 @@ class w extends Chunk147913.Z {
     })
   }
 }
-let D = new w
+let D = new R

@@ -104,13 +104,13 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       location: F
     } = (0, d.O)(), {
       analyticsLocations: z
-    } = (0, p.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, Q = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, S.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, m.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
+    } = (0, p.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, Q = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, S.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
     i.useImperativeHandle(t, () => ({
       onPickerOpen: eL
     }));
     let el = (0, C.Sd)(c),
       ec = 0 === el.filter(e => e.type !== N.Ih.EMPTY_GUILD_UPSELL).length,
-      eu = (0, h.ep)({
+      eu = (0, m.ep)({
         gridWrapperRef: Q,
         containerWidth: o,
         showingEmptyState: ec,
@@ -121,8 +121,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       ef = i.useMemo(() => new Set(ed), [ed]),
       ep = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
       e_ = i.useMemo(() => (0, L.S)(ea, ep, c), [ea, ep, c]),
-      em = (0, C.RJ)(),
-      eh = (0, C.LZ)(),
+      eh = (0, C.RJ)(),
+      em = (0, C.LZ)(),
       eg = (0, l.cj)([A.Z], () => A.Z.getAllGuildStickers()),
       {
         sendable: eE = [],
@@ -172,8 +172,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       }, [F, ep, c, eO]),
       {
         getItemProps: eP,
-        getRowProps: eR,
-        gridContainerProps: ew,
+        getRowProps: ew,
+        gridContainerProps: eR,
         handleGridContainerKeyDown: eD,
         isUsingKeyboardNavigation: ex
       } = (0, P.t)({
@@ -198,8 +198,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         r += e.length
       }), (0, T.ev)({
         containerWidth: o,
-        favoriteStickers: em,
-        frequentlyUsedStickers: eh,
+        favoriteStickers: eh,
+        frequentlyUsedStickers: em,
         guildStickers: t,
         stickersTotal: r
       })
@@ -227,7 +227,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           stickersListRef: ee,
           channel: c
         })
-      }), ec ? (0, r.jsx)(w.Z, {
+      }), ec ? (0, r.jsx)(R.Z, {
         className: U.emptyState,
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
@@ -235,13 +235,13 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           ref: Q,
           className: U.listWrapper,
           id: M.Vr
-        }, ew), {
+        }, eR), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
             collapsedStickersCategories: ef,
             filteredStickers: e_,
             getStickerItemProps: eP,
-            getStickerRowProps: eR,
+            getStickerRowProps: ew,
             gridWidth: eu,
             gutterWidth: eC,
             isUsingKeyboardNavigation: ex,
@@ -252,7 +252,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             stickersGrid: eT,
             channel: c
           }) : null
-        })), (0, r.jsx)(R.Z, {
+        })), (0, r.jsx)(w.Z, {
           stickersListRef: ee,
           channel: c
         })]

@@ -80,7 +80,7 @@ class I {
     return null != this.modulePromise || (this.modulePromise = this.loadOutOfProcessOverlayModule()), this.modulePromise
   }
   async loadOutOfProcessOverlayModule() {
-    if (!m.iP) return void E.error("Attempted to load overlay on an unsupported platform.");
+    if (!h.iP) return void E.error("Attempted to load overlay on an unsupported platform.");
     E.info("Loading Out of Process Overlay Module");
     try {
       await o.ZP.ensureModule("discord_desktop_overlay");
@@ -137,7 +137,7 @@ class I {
     E.verbose("Destroying OOP host window"), (0, d.bs)(this.lastAssociatedPID, "host_window_destroyed");
     try {
       var e, t;
-      null === r.Z || true === r.Z || null == (e = r.Z.window) || e.close(h.$J), null === r.Z || true === r.Z || null == (t = r.Z.window) || t.setBackgroundThrottling(true), c.Z.resetWindowState(false)
+      null === r.Z || true === r.Z || null == (e = r.Z.window) || e.close(m.$J), null === r.Z || true === r.Z || null == (t = r.Z.window) || t.setBackgroundThrottling(true), c.Z.resetWindowState(false)
     } catch (e) {
       E.error("Error closing overlay window:", e)
     }(0, d.Hi)(this.lastAssociatedPID), this.lastAssociatedPID = null
@@ -170,7 +170,7 @@ class I {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 100,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 3;
     return await this.getWithRetry(() => {
-      let e = a.Z.getWindow(h.$J);
+      let e = a.Z.getWindow(m.$J);
       if (null == e) throw Error("Overlay popout window not found");
       return Promise.resolve(e)
     }, e, t)
@@ -180,7 +180,7 @@ class I {
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 3;
     return await this.getWithRetry(async () => {
       var e;
-      let t = await (null === r.Z || true === r.Z || null == (e = r.Z.window) ? true : e.getNativeHandle(h.$J));
+      let t = await (null === r.Z || true === r.Z || null == (e = r.Z.window) ? true : e.getNativeHandle(m.$J));
       return null != t ? (0, f.rd)(t) : null
     }, e, t)
   }
@@ -214,7 +214,7 @@ class I {
   }
   setLimitedInteraction(e) {
     var t, n;
-    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), o.ZP.setFocusable(h.$J, !e)
+    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), o.ZP.setFocusable(m.$J, !e)
   }
   setCaptureZoneCallback(e) {
     var t, n;

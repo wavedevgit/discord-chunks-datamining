@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk72775 = require("./72775.js");
-let h = [Chunk541716.Ie.NORMAL, Chunk541716.Ie.SIDEBAR, Chunk541716.Ie.CREATE_FORUM_POST];
+let m = [Chunk541716.Ie.NORMAL, Chunk541716.Ie.SIDEBAR, Chunk541716.Ie.CREATE_FORUM_POST];
 
 function g(e) {
   let {
@@ -26,14 +26,14 @@ function g(e) {
     channel: n,
     inputType: d
   } = e, g = (0, u.v)(s.U);
-  return (0, i.e7)([l.Z], () => n.isPrivate() || l.Z.can(p.Plq.ATTACH_FILES, n) && l.Z.can(p.Plq.SEND_MESSAGES, n)) && h.includes(d) ? (0, r.jsx)(a.u, {
+  return (0, i.e7)([l.Z], () => n.isPrivate() || l.Z.can(p.Plq.ATTACH_FILES, n) && l.Z.can(p.Plq.SEND_MESSAGES, n)) && m.includes(d) ? (0, r.jsx)(a.u, {
     shouldShow: !t && null != g,
     keyboardShortcut: g,
     text: _.intl.string(_.t.nzoF5p),
     children: (0, r.jsx)(f.Z, {
       disabled: t,
       isActive: false,
-      className: m.button,
+      className: h.button,
       "aria-label": _.intl.string(_.t.nzoF5p),
       onClick: () => {
         c.S.dispatch(p.CkL.UPLOAD_FILE, {

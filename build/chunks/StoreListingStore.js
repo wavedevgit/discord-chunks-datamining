@@ -23,14 +23,14 @@ let d = {},
   f = {},
   p = {},
   _ = {},
-  m = new Set;
+  h = new Set;
 
-function h(e) {
+function m(e) {
   let t = e.id,
     n = e.sku.id,
     r = d[t],
     i = l.Z.createFromServer(e);
-  null != r && !r.isSlimDirectoryVersion() && i.isSlimDirectoryVersion() || (false === e.published ? (null == p[n] && (p[n] = new Set), p[n].add(t)) : _[n] = t, d[t] = i, m.delete(e.sku.id))
+  null != r && !r.isSlimDirectoryVersion() && i.isSlimDirectoryVersion() || (false === e.published ? (null == p[n] && (p[n] = new Set), p[n].add(t)) : _[n] = t, d[t] = i, h.delete(e.sku.id))
 }
 
 function g(e, t) {
@@ -41,7 +41,7 @@ function E(e) {
   let {
     storeListings: t
   } = e;
-  for (let e of t) h(e)
+  for (let e of t) m(e)
 }
 
 function b(e) {
@@ -52,7 +52,7 @@ function b(e) {
   if (null != n) {
     let e = l.Z.createFromServer(t);
     f[g(n, e.skuId)] = e, _[e.skuId] = e.id
-  } else h(t)
+  } else m(t)
 }
 
 function y(e) {
@@ -60,25 +60,25 @@ function y(e) {
     giftCode: t
   } = e;
   if (null == t.store_listing) returnfalse;
-  h(t.store_listing)
+  m(t.store_listing)
 }
 
 function O(e) {
   let {
     skuId: t
   } = e;
-  m.add(t)
+  h.add(t)
 }
 
 function v(e) {
   let {
     skuId: t
   } = e;
-  m.delete(t)
+  h.delete(t)
 }
 
 function S() {
-  d = {}, _ = {}, p = {}, f = {}, m = new Set
+  d = {}, _ = {}, p = {}, f = {}, h = new Set
 }
 
 function I() {
@@ -104,7 +104,7 @@ class T extends(i = Chunk442837.ZP.Store) {
     return f[g(e, t)]
   }
   isFetchingForSKU(e) {
-    return m.has(e)
+    return h.has(e)
   }
   getStoreListing(e) {
     let {

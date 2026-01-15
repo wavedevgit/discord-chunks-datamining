@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 3e3,
-  h = {
+let h = 3e3,
+  m = {
     [Chunk981631.AEg.NORMAL]: Chunk609541.normal,
     [Chunk981631.AEg.MINIMUM]: Chunk609541.minimum,
     [Chunk981631.AEg.NO_CHAT]: Chunk609541.noChat,
@@ -108,7 +108,7 @@ class E extends(r = Chunk473749.PureComponent) {
       idle: o
     } = this.state;
     return (0, i.jsx)(d.Z, {
-      className: s()(p.video, h[r], {
+      className: s()(p.video, m[r], {
         [p.idle]: o
       }),
       direction: d.Z.Direction.VERTICAL,
@@ -145,7 +145,7 @@ class E extends(r = Chunk473749.PureComponent) {
       animated: n
     } = this.props;
     return (0, i.jsx)("div", {
-      className: s()(p.videoHeight, h[e], t, {
+      className: s()(p.videoHeight, m[e], t, {
         [p.animated]: n
       }),
       children: this.renderContents()
@@ -156,7 +156,7 @@ class E extends(r = Chunk473749.PureComponent) {
       let {
         layout: e
       } = this.props;
-      (e === f.AEg.FULL_SCREEN || e === f.AEg.NO_CHAT) && (this._timeout.start(m, () => this.setState({
+      (e === f.AEg.FULL_SCREEN || e === f.AEg.NO_CHAT) && (this._timeout.start(h, () => this.setState({
         idle: true
       })), this.state.idle && this.setState({
         idle: false

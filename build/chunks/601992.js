@@ -33,15 +33,15 @@ let c = null,
   f = null,
   p = {},
   _ = {},
-  m = {},
-  h = {};
+  h = {},
+  m = {};
 
 function g() {
   let e = e => null != e && Date.now() - e < 6e4;
   for (let t in e(c) || (c = null), e(u) || (u = null), e(d) || (d = null), e(f) || (f = null), p) e(p[t]) || delete p[t];
   for (let t in _) e(_[t]) || delete _[t];
-  for (let t in h) e(h[t]) || delete h[t];
-  for (let t in m) e(m[t]) || delete m[t]
+  for (let t in m) e(m[t]) || delete m[t];
+  for (let t in h) e(h[t]) || delete h[t]
 }
 
 function E(e) {
@@ -51,7 +51,7 @@ function E(e) {
     roleMentioned: r,
     everyoneMentioned: i
   } = e, a = Date.now();
-  c = a, null != t && (p[t] = a), n && (u = a, null != t && (_[t] = a)), r && (d = a, null != t && (h[t] = a)), i && (f = a, null != t && (m[t] = a))
+  c = a, null != t && (p[t] = a), n && (u = a, null != t && (_[t] = a)), r && (d = a, null != t && (m[t] = a)), i && (f = a, null != t && (h[t] = a))
 }
 class b extends Chunk442837.ZP.Store {
   initialize() {
@@ -75,8 +75,8 @@ class b extends Chunk442837.ZP.Store {
       approx_seconds_since_last_everyone_mention: t(f),
       approx_seconds_since_last_guild_notification: null == e ? null : t(p[e]),
       approx_seconds_since_last_guild_mention: null == e ? null : t(_[e]),
-      approx_seconds_since_last_guild_role_mention: null == e ? null : t(h[e]),
-      approx_seconds_since_last_guild_everyone_mention: null == e ? null : t(m[e])
+      approx_seconds_since_last_guild_role_mention: null == e ? null : t(m[e]),
+      approx_seconds_since_last_guild_everyone_mention: null == e ? null : t(h[e])
     }
   }
 }

@@ -47,12 +47,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = "x-science-test",
+let m = "x-science-test",
   g = 1500,
   E = 1e4,
   b = 36e5,
@@ -66,8 +66,8 @@ let h = "x-science-test",
   A = 0,
   N = 0,
   P = 0,
-  R = 0,
-  w = null,
+  w = 0,
+  R = null,
   D = 0,
   x = Number.MAX_SAFE_INTEGER,
   L = 0,
@@ -78,7 +78,7 @@ let h = "x-science-test",
   G = null;
 
 function Z() {
-  A = 0, N = 0, P = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, w = Date.now(), R = C
+  A = 0, N = 0, P = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, R = Date.now(), w = C
 }
 
 function F(e) {
@@ -156,13 +156,13 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function ee(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b,
         n = Date.now(),
-        i = e.map(e => m(p({}, e), {
-          properties: m(p({}, e.properties), {
+        i = e.map(e => h(p({}, e), {
+          properties: h(p({}, e.properties), {
             client_send_timestamp: n
           })
         })),
         a = {};
-      return k || (G = (0, o.Z)(), a[h] = G, k = true), c.tn.post({
+      return k || (G = (0, o.Z)(), a[m] = G, k = true), c.tn.post({
         url: t,
         headers: a,
         body: {
@@ -172,9 +172,9 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         retries: 3,
         rejectWithError: false
       }).then(e => {
-        if (a[h]) {
+        if (a[m]) {
           var t, n;
-          U = null != (n = null == e || null == (t = e.headers) ? true : t[h]) ? n : null
+          U = null != (n = null == e || null == (t = e.headers) ? true : t[m]) ? n : null
         }
         return e
       })
@@ -187,9 +187,9 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           client_track_timestamp: Date.now(),
           rpc_success_count: N,
           rpc_failure_count: P,
-          first_seen_event_sequence_number: R,
+          first_seen_event_sequence_number: w,
           last_seen_event_sequence_number: C,
-          telemetry_period_start_timestamp: w,
+          telemetry_period_start_timestamp: R,
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: A,
           event_queue_batch_count: D,

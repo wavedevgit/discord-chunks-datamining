@@ -29,30 +29,30 @@ function p(e, t) {
 function _(e) {
   return e.onKeyDown = t => {
     var n, r, a, _;
-    let m = e.isMac;
+    let h = e.isMac;
     switch (t.which) {
       case d.yXg.B:
         if (!u.bN.isEditorEmpty(e) && p(t, {
-            ctrl: !m,
-            cmd: m
+            ctrl: !h,
+            cmd: h
           })) return (0, l.py)(e, "bold"), true;
         break;
       case d.yXg.I:
         if (!u.bN.isEditorEmpty(e) && p(t, {
-            ctrl: !m,
-            cmd: m
+            ctrl: !h,
+            cmd: h
           })) return (0, l.py)(e, "italics"), true;
         break;
       case d.yXg.U:
         if (!u.bN.isEditorEmpty(e) && p(t, {
-            ctrl: !m,
-            cmd: m
+            ctrl: !h,
+            cmd: h
           })) return (0, l.py)(e, "underline"), true;
         break;
       case d.yXg.S:
         if (!u.bN.isEditorEmpty(e) && p(t, {
-            ctrl: !m,
-            cmd: m,
+            ctrl: !h,
+            cmd: h,
             shift: true
           })) return (0, l.py)(e, "strikethrough"), true;
         break;
@@ -123,11 +123,11 @@ function _(e) {
             shift: null
           })) n = "character";
         else if (p(t, {
-            ctrl: !m,
-            alt: m,
+            ctrl: !h,
+            alt: h,
             shift: null
           })) n = "word";
-        else if (m && p(t, {
+        else if (h && p(t, {
             cmd: true,
             shift: null
           })) returnfalse;
@@ -142,7 +142,7 @@ function _(e) {
         }), true
       }
       case d.yXg.A:
-        if (m && p(t, {
+        if (h && p(t, {
             ctrl: true
           })) {
           let t = u.bN.getCurrentBlock(e);
@@ -156,7 +156,7 @@ function _(e) {
         }
         break;
       case d.yXg.E:
-        if (m && p(t, {
+        if (h && p(t, {
             ctrl: true
           })) {
           let t = u.bN.getCurrentBlock(e);
@@ -172,17 +172,17 @@ function _(e) {
       case d.yXg.BACKSPACE:
       case d.yXg.DELETE:
       case d.yXg.K:
-        let h = t.which === d.yXg.BACKSPACE;
-        if ((!m && t.which !== d.yXg.K && p(t, {
+        let m = t.which === d.yXg.BACKSPACE;
+        if ((!h && t.which !== d.yXg.K && p(t, {
             ctrl: true,
             shift: true
-          }) || m && t.which !== d.yXg.K && p(t, {
+          }) || h && t.which !== d.yXg.K && p(t, {
             cmd: true
-          }) || m && t.which === d.yXg.K && p(t, {
+          }) || h && t.which === d.yXg.K && p(t, {
             ctrl: true
           })) && null != e.selection) {
-          let [t, n] = u.M8.edges(e.selection), [r, i] = u.bN.node(e, [h ? t.path[0] : n.path[0]]);
-          if (o()(u.bN.isBlock(e, r), "Top-most node of selection is not a block"), h && !u.Jz.isAtStart(t, [r, i]) || !h && !u.Jz.isAtEnd(n, [r, i])) return h ? e.deleteBackward("line") : e.deleteForward("line"), true
+          let [t, n] = u.M8.edges(e.selection), [r, i] = u.bN.node(e, [m ? t.path[0] : n.path[0]]);
+          if (o()(u.bN.isBlock(e, r), "Top-most node of selection is not a block"), m && !u.Jz.isAtStart(t, [r, i]) || !m && !u.Jz.isAtEnd(n, [r, i])) return m ? e.deleteBackward("line") : e.deleteForward("line"), true
         }
     }
     returnfalse

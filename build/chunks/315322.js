@@ -5,7 +5,7 @@ require.d(exports, {
   $z: () => N,
   I1: () => E,
   IZ: () => b,
-  Ix: () => w,
+  Ix: () => R,
   PJ: () => T,
   Qb: () => g,
   Yc: () => v,
@@ -15,12 +15,12 @@ require.d(exports, {
   cy: () => y,
   hM: () => p,
   sL: () => _,
-  t6: () => h,
-  tA: () => R,
+  t6: () => m,
+  tA: () => w,
   tI: () => O,
   yn: () => D,
   z4: () => I,
-  zW: () => m
+  zW: () => h
 }), require("./781311.js"), require("./388685.js");
 var Chunk367907 = require("./367907.js"),
   Chunk710845 = require("./710845.js"),
@@ -56,8 +56,8 @@ function p(e) {
     page: f,
     totalResults: p,
     pageResults: _,
-    isIndexing: m,
-    pageNumMessages: h,
+    isIndexing: h,
+    pageNumMessages: m,
     pageNumLinks: g,
     pageNumEmbeds: E,
     pageNumAttachments: b,
@@ -76,8 +76,8 @@ function p(e) {
     page: f,
     total_results: p,
     page_results: _,
-    is_indexing: m,
-    page_num_messages: h,
+    is_indexing: h,
+    page_num_messages: m,
     page_num_links: g,
     page_num_embeds: E,
     page_num_attach: b,
@@ -97,8 +97,8 @@ function _(e) {
     totalResults: f,
     page: p,
     limit: _,
-    offset: m,
-    index: h,
+    offset: h,
+    index: m,
     searchQueryString: g,
     searchQuery: E
   } = e;
@@ -114,14 +114,14 @@ function _(e) {
     total_results: f,
     page: p,
     limit: _,
-    offset: m,
-    index_num: h,
+    offset: h,
+    index_num: m,
     search_query_length: u(g),
     search_query_content_length: d(E)
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     searchContext: t,
     searchRequestAnalyticsId: n,
@@ -136,7 +136,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     searchContext: t,
     searchRequestAnalyticsId: n,
@@ -212,9 +212,9 @@ function O(e) {
   } = e, o = Object.keys(n), p = o.reduce((e, t) => {
     let r = n[t];
     return e[t] = Array.isArray(r) ? r.length : 1, e
-  }, {}), _ = null != i ? (0, s.kG)(i) : [], m = 0, h = 0, g = 0, E = 0, b = 0, y = 0, O = 0, v = 0, S = 0;
+  }, {}), _ = null != i ? (0, s.kG)(i) : [], h = 0, m = 0, g = 0, E = 0, b = 0, y = 0, O = 0, v = 0, S = 0;
   _.forEach(e => {
-    e.type === c.dCx.ANSWER_IN ? m++ : e.type === c.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === c.dCx.ANSWER_USERNAME_MENTIONS ? g++ : e.type === c.dCx.ANSWER_HAS ? E++ : e.type === c.dCx.ANSWER_BEFORE ? b++ : e.type === c.dCx.ANSWER_ON ? y++ : e.type === c.dCx.ANSWER_AFTER ? O++ : e.type === c.dCx.ANSWER_PINNED ? v++ : e.type === c.dCx.ANSWER_AUTHOR_TYPE && S++
+    e.type === c.dCx.ANSWER_IN ? h++ : e.type === c.dCx.ANSWER_USERNAME_FROM ? m++ : e.type === c.dCx.ANSWER_USERNAME_MENTIONS ? g++ : e.type === c.dCx.ANSWER_HAS ? E++ : e.type === c.dCx.ANSWER_BEFORE ? b++ : e.type === c.dCx.ANSWER_ON ? y++ : e.type === c.dCx.ANSWER_AFTER ? O++ : e.type === c.dCx.ANSWER_PINNED ? v++ : e.type === c.dCx.ANSWER_AUTHOR_TYPE && S++
   });
   let I = l.Z.getQueryId(t);
   r.ZP.trackWithMetadata(c.rMx.MESSAGES_SEARCH_STARTED, {
@@ -225,8 +225,8 @@ function O(e) {
     search_query_length: u(i),
     search_query_content_length: d(n),
     sort_type: (0, s.Vj)(n),
-    filter_in_count: m,
-    filter_from_count: h,
+    filter_in_count: h,
+    filter_from_count: m,
     filter_mentions_count: g,
     filter_has_count: E,
     filter_before_count: b,
@@ -355,8 +355,8 @@ function P(e) {
     searchAutocompleteTotalResults: s,
     searchTokenType: p,
     searchAutocompleteGroup: _,
-    isSearchFilterPrefix: m,
-    isSearchFilterAnswer: h,
+    isSearchFilterPrefix: h,
+    isSearchFilterAnswer: m,
     isSearchFilterComplete: g,
     isInFilterForSelectedChannel: E,
     searchAutocompleteSelectAction: b
@@ -375,15 +375,15 @@ function P(e) {
     search_autocomplete_total_results: s,
     search_autocomplete_group: y,
     search_autocomplete_filter_type: O,
-    is_search_filter_prefix: m,
-    is_search_filter_answer: h,
+    is_search_filter_prefix: h,
+    is_search_filter_answer: m,
     is_search_filter_complete: g,
     is_in_filter_for_selected_channel: E,
     search_autocomplete_select_action: b
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     searchContext: t,
     searchAutocompleteSelectAction: n
@@ -396,7 +396,7 @@ function R(e) {
     search_autocomplete_select_action: n
   })
 }
-var w = function(e) {
+var R = function(e) {
   return e.SEARCH_HEADER = "search_header", e.USER_SETTINGS = "user_settings", e
 }({});
 

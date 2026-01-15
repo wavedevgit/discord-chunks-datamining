@@ -118,7 +118,7 @@ class v extends Chunk473749.PureComponent {
       application: e,
       cloudSyncState: t
     } = this.props;
-    if (t.type !== h.TzF.CONFLICT) throw Error("Cannot render conflict for non conflict type");
+    if (t.type !== m.TzF.CONFLICT) throw Error("Cannot render conflict for non conflict type");
     return (0, r.jsxs)(c.hzk, {
       className: b.marginBottom20,
       children: [(0, r.jsx)("div", {
@@ -144,7 +144,7 @@ class v extends Chunk473749.PureComponent {
     let {
       cloudSyncState: e,
       transitionState: t
-    } = this.props, n = e.type === h.TzF.CONFLICT ? g.intl.string(g.t.oNbO1f) : g.intl.string(g.t.as4Tgg);
+    } = this.props, n = e.type === m.TzF.CONFLICT ? g.intl.string(g.t.oNbO1f) : g.intl.string(g.t.as4Tgg);
     return (0, r.jsxs)(c.Y0X, {
       transitionState: t,
       className: E.modal,
@@ -160,7 +160,7 @@ class v extends Chunk473749.PureComponent {
           className: b.marginReset,
           children: n
         })]
-      }), e.type === h.TzF.CONFLICT ? this.renderConflict() : this.renderError()]
+      }), e.type === m.TzF.CONFLICT ? this.renderConflict() : this.renderError()]
     })
   }
   constructor(...e) {
@@ -183,12 +183,12 @@ class v extends Chunk473749.PureComponent {
       let {
         cloudSyncState: e
       } = this.props;
-      e.type === h.TzF.CONFLICT && this.handlePlay(true, e.remote.hash)
+      e.type === m.TzF.CONFLICT && this.handlePlay(true, e.remote.hash)
     }), y(this, "handleChooseUpload", () => {
       let {
         cloudSyncState: e
       } = this.props;
-      e.type === h.TzF.CONFLICT && this.handlePlay(true, e.next.hash)
+      e.type === m.TzF.CONFLICT && this.handlePlay(true, e.next.hash)
     })
   }
 }
@@ -223,10 +223,10 @@ async function I(e, t, n) {
       return
     }
   }
-  return m.default.track(h.rMx.APPLICATION_OPENED, O({
+  return h.default.track(m.rMx.APPLICATION_OPENED, O({
     application_id: i.id,
     application_name: i.name,
-    type: h.q5t.LAUNCH,
+    type: m.q5t.LAUNCH,
     distributor: null != t ? t.getDistributor() : null
   }, s)), d.Z.launch({
     applicationId: i.id,

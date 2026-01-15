@@ -56,9 +56,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -137,7 +137,7 @@ function v(e) {
     fullWidth: s = false,
     grow: d = true,
     disabled: p = false,
-    submitting: h = false,
+    submitting: m = false,
     type: v = "button",
     style: S,
     wrapperClassName: I,
@@ -146,8 +146,8 @@ function v(e) {
     onClick: A,
     onDoubleClick: N,
     onMouseDown: P,
-    onMouseUp: R,
-    onMouseEnter: w,
+    onMouseUp: w,
+    onMouseEnter: R,
     onMouseLeave: D,
     onKeyDown: x,
     children: L,
@@ -157,26 +157,26 @@ function v(e) {
     "aria-label": U,
     submittingStartedLabel: G,
     submittingFinishedLabel: Z
-  } = e, F = m(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
-  let B = p || h,
-    V = B && (null != w || null != D),
+  } = e, F = h(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+  let B = p || m,
+    V = B && (null != R || null != D),
     H = V ? null : I,
     Y = y(k, t),
     W = i.useRef(false);
   i.useEffect(() => {
-    true === h && (W.current = true, l.uvj.announce(null != G ? G : c.intl.string(c.t.pfChQr))), false === h && true === W.current && l.uvj.announce(null != Z ? Z : c.intl.string(c.t.SVParY))
-  }, [h, G, Z]);
+    true === m && (W.current = true, l.uvj.announce(null != G ? G : c.intl.string(c.t.pfChQr))), false === m && true === W.current && l.uvj.announce(null != Z ? Z : c.intl.string(c.t.SVParY))
+  }, [m, G, Z]);
   let K = (0, r.jsx)(l.tEY, _(f({}, k), {
     offset: Y,
     children: (0, r.jsxs)("button", _(f({}, B ? null : F), {
       "aria-label": U,
-      "aria-busy": !!h || true,
+      "aria-busy": !!m || true,
       ref: M,
       onClick: B ? e => e.preventDefault() : A,
       onDoubleClick: B ? e => e.preventDefault() : N,
-      onMouseUp: p ? true : R,
+      onMouseUp: p ? true : w,
       onMouseDown: p ? true : P,
-      onMouseEnter: w,
+      onMouseEnter: R,
       onMouseLeave: D,
       onKeyDown: p ? true : x,
       type: v,
@@ -189,10 +189,10 @@ function v(e) {
         size: a,
         fullWidth: s,
         grow: d,
-        submitting: h,
+        submitting: m,
         disabled: p
       }), H),
-      children: [h && !p ? (0, r.jsx)(l.$jN, {
+      children: [m && !p ? (0, r.jsx)(l.$jN, {
         type: l.$jN.Type.PULSING_ELLIPSIS,
         className: u.spinner,
         itemClassName: u.spinnerItem
@@ -208,7 +208,7 @@ function v(e) {
       [u.fullWidth]: s
     }),
     children: [K, (0, r.jsx)("span", {
-      onMouseEnter: w,
+      onMouseEnter: R,
       onMouseLeave: D,
       className: u.disabledButtonOverlay
     })]
@@ -224,15 +224,15 @@ v.Looks = g, v.Colors = E, v.Sizes = b, v.Link = function(e) {
     style: c,
     className: d,
     innerClassName: p,
-    to: h,
+    to: m,
     onClick: y,
     onMouseDown: O,
     onMouseUp: v,
     children: S,
     rel: I
-  } = e, T = m(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
+  } = e, T = h(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
   return (0, r.jsx)(s.rU, _(f({}, T), {
-    to: h,
+    to: m,
     onClick: y,
     onMouseUp: v,
     onMouseDown: O,

@@ -50,12 +50,12 @@ let f = {
   p = {},
   _ = u({}, f);
 
-function m(e) {
+function h(e) {
   let t = p[e];
   return null == t && (t = p[e] = u({}, f)), t
 }
 
-function h(e) {
+function m(e) {
   e.isSwitchingAccount || (p = {})
 }
 
@@ -94,7 +94,7 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     Object.assign(p, e), this.syncWith([s.default], () => {
       let e = s.default.getId();
-      _ = null != e ? m(e) : u({}, f)
+      _ = null != e ? h(e) : u({}, f)
     })
   }
   getState() {
@@ -132,7 +132,7 @@ c(y, "displayName", "StreamerModeStore"), c(y, "persistKey", "StreamerModeStore"
   }
 }]);
 let O = new y(Chunk570140.Z, {
-  LOGOUT: h,
+  LOGOUT: m,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: g,
   STREAMER_MODE_UPDATE: E,
   RUNNING_STREAMER_TOOLS_CHANGE: b

@@ -60,8 +60,8 @@ function C(e, t) {
 let A = Chunk981631.QZA.CLOSED,
   N = {},
   P = {},
-  R = false,
   w = false,
+  R = false,
   D = null,
   x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
@@ -92,20 +92,20 @@ function j(e) {
 }
 
 function M(e) {
-  r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (R = true, m.tn.get({
+  r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (w = true, h.tn.get({
     url: v.ANM.INSTANT_INVITES(o.id),
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {
-    R = false, h.Z.dispatch({
+    w = false, m.Z.dispatch({
       type: "CHANNEL_SETTINGS_LOADED_INVITES",
       invites: e.body
     })
-  }, () => R = false))
+  }, () => w = false))
 }
 
 function k() {
-  w = false, A = v.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
+  R = false, A = v.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
 }
 
 function U() {
@@ -145,8 +145,8 @@ function B(e) {
     locked: f,
     invitable: p,
     defaultAutoArchiveDuration: _,
-    template: m,
-    defaultReactionEmoji: h,
+    template: h,
+    defaultReactionEmoji: m,
     rtcRegion: g,
     videoQualityMode: E,
     availableTags: b,
@@ -163,7 +163,7 @@ function B(e) {
     locked: f
   }))), null != p && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     invitable: p
-  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != m && (o = o.set("template", m)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== h && (o = o.set("defaultReactionEmoji", h)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== S && (o = o.set("iconEmoji", S)), null != T && (o = o.set("themeColor", T)), F()
+  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== S && (o = o.set("iconEmoji", S)), null != T && (o = o.set("themeColor", T)), F()
 }
 
 function V(e) {
@@ -243,7 +243,7 @@ class J extends(c = Chunk442837.ZP.Store) {
     return o !== a
   }
   isOpen() {
-    return w
+    return R
   }
   getSection() {
     return r
@@ -251,7 +251,7 @@ class J extends(c = Chunk442837.ZP.Store) {
   getInvites() {
     return {
       invites: P,
-      loading: R
+      loading: w
     }
   }
   showNotice() {

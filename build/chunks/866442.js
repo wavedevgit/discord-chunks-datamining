@@ -9,7 +9,7 @@ require.d(exports, {
   _i: () => o,
   br: () => d,
   ho: () => c,
-  mj: () => h,
+  mj: () => m,
   wK: () => u
 }), require("./35282.js");
 var Chunk688619 = require("./688619.js"),
@@ -95,15 +95,15 @@ function _(e) {
   return [e >> 16 & 255, e >> 8 & 255, 255 & e]
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   var r = [e, t, n].map(e => (e /= 255) <= .03928 ? e / 12.92 : Math.pow((e + .055) / 1.055, 2.4));
   return .2126 * r[0] + .7152 * r[1] + .0722 * r[2]
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = _(e),
     r = _(t);
-  var i = m(n[0], n[1], n[2]),
-    a = m(r[0], r[1], r[2]);
+  var i = h(n[0], n[1], n[2]),
+    a = h(r[0], r[1], r[2]);
   return (Math.max(i, a) + .05) / (Math.min(i, a) + .05)
 }

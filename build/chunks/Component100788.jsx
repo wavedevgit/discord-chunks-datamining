@@ -36,8 +36,8 @@ function _(e) {
   }
   return e
 }
-let m = e => (0, r.jsx)(h, _({}, e)),
-  h = e => {
+let h = e => (0, r.jsx)(m, _({}, e)),
+  m = e => {
     let {
       unifiedStepProps: t
     } = e, {
@@ -45,13 +45,13 @@ let m = e => (0, r.jsx)(h, _({}, e)),
       reviewBodyContent: o,
       reviewBodyLegalContent: u,
       errorMessage: p,
-      warningMessage: m,
-      primaryCTAButtonProps: h
+      warningMessage: h,
+      primaryCTAButtonProps: m
     } = t, g = i.useMemo(() => _({
       variant: "active",
       type: "submit",
       "data-testid": "submitButton"
-    }, h), [h]);
+    }, m), [m]);
     return n ? (0, r.jsx)("div", {
       className: f.stepBody,
       children: (0, r.jsx)(a.$jN, {
@@ -64,8 +64,8 @@ let m = e => (0, r.jsx)(h, _({}, e)),
           gap: 8,
           children: [null != p ? (0, r.jsx)(d.vw, {
             message: p
-          }) : null, null != m ? (0, r.jsx)(c.Z, {
-            message: m
+          }) : null, null != h ? (0, r.jsx)(c.Z, {
+            message: h
           }) : null]
         }), (0, r.jsxs)("div", {
           className: f.stepBody,
@@ -81,6 +81,6 @@ let m = e => (0, r.jsx)(h, _({}, e)),
   },
   g = (0, Chunk514749.q)({
     step: Chunk409813.h8.REVIEW,
-    renderStep: m,
-    DirectStepComponent: h
+    renderStep: h,
+    DirectStepComponent: m
   })

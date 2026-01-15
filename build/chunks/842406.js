@@ -16,9 +16,9 @@ var l = "undefined" != typeof BigInt,
   f = s(String.prototype.valueOf),
   p = s(Boolean.prototype.valueOf);
 if (l) var _ = s(BigInt.prototype.valueOf);
-if (c) var m = s(Symbol.prototype.valueOf);
+if (c) var h = s(Symbol.prototype.valueOf);
 
-function h(e, t) {
+function m(e, t) {
   if ("object" != typeof e) returnfalse;
   try {
     return t(e), true
@@ -104,23 +104,23 @@ function A(e) {
 }
 
 function N(e) {
-  return h(e, d)
+  return m(e, d)
 }
 
 function P(e) {
-  return h(e, f)
-}
-
-function R(e) {
-  return h(e, p)
+  return m(e, f)
 }
 
 function w(e) {
-  return l && h(e, _)
+  return m(e, p)
+}
+
+function R(e) {
+  return l && m(e, _)
 }
 
 function D(e) {
-  return c && h(e, m)
+  return c && m(e, h)
 }
 exports.isSharedArrayBuffer = A, exports.isAsyncFunction = function(e) {
   return "[object AsyncFunction]" === u(e)
@@ -132,8 +132,8 @@ exports.isSharedArrayBuffer = A, exports.isAsyncFunction = function(e) {
   return "[object Generator]" === u(e)
 }, exports.isWebAssemblyCompiledModule = function(e) {
   return "[object WebAssembly.Module]" === u(e)
-}, exports.isNumberObject = N, exports.isStringObject = P, exports.isBooleanObject = R, exports.isBigIntObject = w, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
-  return N(e) || P(e) || R(e) || w(e) || D(e)
+}, exports.isNumberObject = N, exports.isStringObject = P, exports.isBooleanObject = w, exports.isBigIntObject = R, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
+  return N(e) || P(e) || w(e) || R(e) || D(e)
 }, exports.isAnyArrayBuffer = function(e) {
   return "undefined" != typeof Uint8Array && (v(e) || A(e))
 }, ["isProxy", "isExternal", "isModuleNamespaceObject"].forEach(function(e) {

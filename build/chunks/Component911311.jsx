@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ let E = 2.1,
   b = e => {
     var {
       handleLearnMore: t
-    } = e, n = h(e, ["handleLearnMore"]);
+    } = e, n = m(e, ["handleLearnMore"]);
     let _ = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
       g = (0, s.iL)({
         guildId: _,
@@ -68,7 +68,7 @@ let E = 2.1,
         }
       }),
       b = (0, o.rO)() ? f.Z : p.Z;
-    return (0, r.jsx)(c.Z, m({
+    return (0, r.jsx)(c.Z, h({
       gradientColor: "nitro-pink",
       title: d.intl.string(d.t["9C+41g"]),
       subtitle: g,

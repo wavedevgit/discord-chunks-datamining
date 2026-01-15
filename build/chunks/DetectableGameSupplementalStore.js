@@ -55,15 +55,15 @@ function _(e) {
       icon_hash: f,
       cover_image_url: p,
       first_release_date: _,
-      summary_localized: m,
-      publisher_names: h,
+      summary_localized: h,
+      publisher_names: m,
       developer_names: g
     } = e;
     r.delete(t), l.set(t, {
       applicationId: t,
       name: n,
       summary: i,
-      summaryLocalized: m,
+      summaryLocalized: h,
       websites: a,
       themes: o,
       genres: s,
@@ -73,7 +73,7 @@ function _(e) {
       iconHash: f,
       coverImageUrl: p,
       firstReleaseDate: _,
-      publishers: null != h ? h : [],
+      publishers: null != m ? m : [],
       developers: null != g ? g : []
     })
   }), r.forEach(e => {
@@ -81,7 +81,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     applicationIds: t
   } = e;
@@ -89,7 +89,7 @@ function m(e) {
     c.delete(e), u.add(e)
   })
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   canFetch(e) {
     return !c.has(e) && !u.has(e) && !l.has(e) && !d.has(e)
   }
@@ -131,10 +131,10 @@ class h extends(r = Chunk442837.ZP.Store) {
     return l.size
   }
 }
-s(h, "displayName", "DetectableGameSupplementalStore");
-let g = new h(Chunk570140.Z, {
+s(m, "displayName", "DetectableGameSupplementalStore");
+let g = new m(Chunk570140.Z, {
   LOGOUT: f,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH: p,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: _,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: m
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: h
 })

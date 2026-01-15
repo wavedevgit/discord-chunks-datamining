@@ -2,7 +2,7 @@
 /** chunk id: 495852, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => h
+  C: () => m
 });
 var Chunk36056 = require("./36056.js"),
   Chunk950697 = require("./950697.js"),
@@ -17,7 +17,7 @@ var Chunk36056 = require("./36056.js"),
   Chunk284267 = require("./284267.js"),
   Chunk973408 = require("./973408.js"),
   Chunk647943 = require("./647943.js");
-class h {
+class m {
   constructor(e, t, n) {
     this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.nb), this.options = null != n ? n : {}, this.refTypeCheck = new i.Z(this), this.refJsonReader = new a.C(this), this.refJsonWriter = new o.k(this), this.refBinReader = new s.I(this), this.refBinWriter = new l.R(this)
   }
@@ -42,7 +42,7 @@ class h {
     (0, u.l)(this, e, t)
   }
   fromBinary(e, t) {
-    let n = (0, m.Z)(t);
+    let n = (0, h.Z)(t);
     return this.internalBinaryRead(n.readerFactory(e), e.byteLength, n)
   }
   fromJson(e, t) {

@@ -38,7 +38,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk176505 = require("./176505.js"),
   Chunk215023 = require("./215023.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -107,7 +107,7 @@ function U(e, t) {
     queryMode: r,
     query: i,
     maxQueryLength: a
-  } = C.Z.getProps(), o = v.Z.getGuildId(), s = O.Z.getChannelId(o), l = n[(0, d.gJ)(d.a8.DOWN, false, n)], c = T.Z.isEmail(i), u = T.Z.isPhoneNumber(i), f = T.Z.isUserTagLike(i), p = null != s && (0, N.AB)(s), _ = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, m = {
+  } = C.Z.getProps(), o = v.Z.getGuildId(), s = O.Z.getChannelId(o), l = n[(0, d.gJ)(d.a8.DOWN, false, n)], c = T.Z.isEmail(i), u = T.Z.isPhoneNumber(i), f = T.Z.isUserTagLike(i), p = null != s && (0, N.AB)(s), _ = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
     current_channel_id: p ? true : s,
     current_channel_static_route: p ? s : true,
     current_guild_id: o,
@@ -129,7 +129,7 @@ function U(e, t) {
   };
   if (null != s) {
     let e = b.Z.getChannel(s);
-    m.current_channel_type = null != e ? e.type : null
+    h.current_channel_type = null != e ? e.type : null
   }
   if (null != t) {
     let {
@@ -137,22 +137,22 @@ function U(e, t) {
       score: r,
       record: i
     } = t;
-    switch (m.selected_type = _(t), m.selected_score = r, m.selected_index = n.indexOf(t), e) {
+    switch (h.selected_type = _(t), h.selected_score = r, h.selected_index = n.indexOf(t), e) {
       case d.h8.GUILD:
-        m.selected_guild_id = i.id;
+        h.selected_guild_id = i.id;
         break;
       case d.h8.TEXT_CHANNEL:
       case d.h8.VOICE_CHANNEL:
-        i instanceof E.Sf && (m.selected_guild_id = null != i.guild_id ? i.guild_id : null), m.selected_channel_id = i.id;
+        i instanceof E.Sf && (h.selected_guild_id = null != i.guild_id ? i.guild_id : null), h.selected_channel_id = i.id;
         break;
       case d.h8.GROUP_DM:
-        m.selected_channel_id = i.id;
+        h.selected_channel_id = i.id;
         break;
       case d.h8.USER:
-        m.selected_user_id = i.id
+        h.selected_user_id = i.id
     }
   }
-  S.default.track(e, m)
+  S.default.track(e, h)
 }
 
 function G() {
@@ -164,7 +164,7 @@ function G() {
 function Z() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
-  k(e), i.Z.dispatch(w({
+  k(e), i.Z.dispatch(R({
     type: "QUICKSWITCHER_SHOW"
   }, M(t)))
 }
@@ -179,7 +179,7 @@ function B() {
 }
 
 function V(e) {
-  i.Z.dispatch(w({
+  i.Z.dispatch(R({
     type: "QUICKSWITCHER_SEARCH"
   }, M(e)))
 }
@@ -202,12 +202,12 @@ function Y(e) {
   };
   switch (O) {
     case d.h8.GUILD:
-      (0, h.X)(v.id, {
+      (0, m.X)(v.id, {
         navigationReplace: true
       });
       break;
     case d.h8.TEXT_CHANNEL:
-      null != (t = b.Z.getChannel(v.id)) && (0, m.Kh)(t.id, {
+      null != (t = b.Z.getChannel(v.id)) && (0, h.Kh)(t.id, {
         state: {
           analyticsSource: S
         },
@@ -215,7 +215,7 @@ function Y(e) {
       });
       break;
     case d.h8.VOICE_CHANNEL:
-      null != (t = b.Z.getChannel(v.id)) && (E ? o.Z.updateChatOpen(v.id, true) : c.default.selectVoiceChannel(v.id), (0, m.Kh)(t.id, {
+      null != (t = b.Z.getChannel(v.id)) && (E ? o.Z.updateChatOpen(v.id, true) : c.default.selectVoiceChannel(v.id), (0, h.Kh)(t.id, {
         state: {
           analyticsSource: S
         },
@@ -229,7 +229,7 @@ function Y(e) {
       }), s.Z.channelListScrollTo(A.ME, b.Z.getDMFromUserId(v.id));
       break;
     case d.h8.GROUP_DM:
-      (0, m.Kh)(v.id, {
+      (0, h.Kh)(v.id, {
         navigationReplace: true
       }), s.Z.channelListScrollTo(A.ME, v.id);
       break;

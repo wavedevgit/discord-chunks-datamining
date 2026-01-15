@@ -56,8 +56,8 @@ var u = [],
   f = 1,
   p = null,
   _ = 3,
-  m = false,
   h = false,
+  m = false,
   g = false,
   E = false,
   b = "function" == typeof setTimeout ? setTimeout : null,
@@ -74,8 +74,8 @@ function v(e) {
 }
 
 function S(e) {
-  if (g = false, v(e), !h)
-    if (null !== r(u)) h = true, I || (I = true, o());
+  if (g = false, v(e), !m)
+    if (null !== r(u)) m = true, I || (I = true, o());
     else {
       var t = r(d);
       null !== t && D(S, t.startTime - e)
@@ -97,9 +97,9 @@ function P() {
     var n = true;
     try {
       e: {
-        h = false,
+        m = false,
         g && (g = false, y(T), T = false),
-        m = true;
+        h = true;
         var a = _;
         try {
           a: {
@@ -125,7 +125,7 @@ function P() {
           break e
         }
         finally {
-          p = null, _ = a, m = false
+          p = null, _ = a, h = false
         }
       }
     }
@@ -138,10 +138,10 @@ if ("function" == typeof O) o = function() {
   O(P)
 };
 else if ("undefined" != typeof MessageChannel) {
-  var R = new MessageChannel,
-    w = R.port2;
-  R.port1.onmessage = P, o = function() {
-    w.postMessage(null)
+  var w = new MessageChannel,
+    R = w.port2;
+  w.port1.onmessage = P, o = function() {
+    R.postMessage(null)
   }
 } else o = function() {
   b(P, 0)
@@ -220,7 +220,7 @@ exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, expor
     startTime: a,
     expirationTime: l,
     sortIndex: false
-  }, a > s ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (y(T), T = false) : g = true, D(S, a - s))) : (e.sortIndex = l, n(u, e), h || m || (h = true, I || (I = true, o()))), e
+  }, a > s ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (y(T), T = false) : g = true, D(S, a - s))) : (e.sortIndex = l, n(u, e), m || h || (m = true, I || (I = true, o()))), e
 }, exports.unstable_shouldYield = N, exports.unstable_wrapCallback = function(e) {
   var t = _;
   return function() {

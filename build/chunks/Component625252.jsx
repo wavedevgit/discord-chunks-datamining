@@ -51,9 +51,9 @@ function S(e) {
   } = e, n = (0, l.wj)((0, u.ZP)()), a = i.useMemo(() => ({
     backgroundImage: "url(".concat(v, ")")
   }), []), y = i.useCallback(() => {
-    (0, d.default)(), (0, m.navigateToQuestHome)({
+    (0, d.default)(), (0, h.navigateToQuestHome)({
       fromContent: _.jn.QUEST_HOME_MOVE_CALLOUT
-    }), f.default.track(h.rMx.QUEST_CONTENT_CLICKED, O({
+    }), f.default.track(m.rMx.QUEST_CONTENT_CLICKED, O({
       cta_name: p.jZ.VIEW_QUESTS,
       click_id: (0, s.Z)(),
       is_targeted: false

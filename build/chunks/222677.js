@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   $E: () => x,
-  T6: () => w,
+  T6: () => R,
   TW: () => I,
   U0: () => P,
   WO: () => L,
-  rU: () => R,
+  rU: () => w,
   wX: () => D
 });
 var Chunk544891 = require("./544891.js"),
@@ -79,7 +79,7 @@ function T(e, t, n) {
   if (429 === i) {
     if (n.isRetry) returntrue;
     let e = parseInt(r["retry-after"]);
-    return isNaN(e) || setTimeout(t, e * m.Z.Millis.SECOND), false
+    return isNaN(e) || setTimeout(t, e * h.Z.Millis.SECOND), false
   }
   if (403 === i) switch (a && a.code) {
     case E.evJ.TOO_MANY_REACTIONS:
@@ -160,7 +160,7 @@ async function P(e) {
     reactionType: c
   }), f
 }
-async function R(e, t, n) {
+async function w(e, t, n) {
   let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "Message",
     u = arguments.length > 4 ? arguments[4] : true,
     f = null != u && !!u.burst,
@@ -170,10 +170,10 @@ async function R(e, t, n) {
     body: b.intl.string(b.t.psMorl),
     confirmText: b.intl.string(b.t["NX+WJN"])
   });
-  let m = await j(n, f);
+  let h = await j(n, f);
   return C("MESSAGE_REACTION_ADD", e, t, n, {
     burst: f,
-    colors: m
+    colors: h
   }), await c.Z.unarchiveThreadIfNecessary(e), r.tn.put({
     url: A({
       channelId: e,
@@ -211,7 +211,7 @@ async function R(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    T(r, () => R(e, t, n, a, {
+    T(r, () => w(e, t, n, a, {
       burst: f,
       isRetry: true
     }), {
@@ -226,7 +226,7 @@ async function R(e, t, n) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     channelId: t,
     messageId: n,
@@ -334,7 +334,7 @@ async function L(e) {
 async function j(e, t) {
   let n = [];
   if (t) try {
-    n = await (0, h.B6)(e)
+    n = await (0, m.B6)(e)
   } catch (e) {}
   return n
 }

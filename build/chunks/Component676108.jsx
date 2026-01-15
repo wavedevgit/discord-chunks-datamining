@@ -2,7 +2,7 @@
 /** chunk id: 676108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,19 +47,19 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   var t;
   let {
     editorRef: n,
     options: f,
     channel: _
-  } = e, h = null == (t = n.current) ? true : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback(e => {
+  } = e, m = null == (t = n.current) ? true : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback(e => {
     let {
       emoji: t,
       willClose: r
@@ -89,7 +89,7 @@ function h(e) {
       pickerIntention: u.Hz.COMMUNITY_CONTENT
     })
   };
-  return null == h ? null : (0, r.jsxs)("div", {
+  return null == m ? null : (0, r.jsxs)("div", {
     id: "slate-toolbar",
     className: d.staticToolbar,
     children: [(0, r.jsx)("div", {
@@ -110,7 +110,7 @@ function h(e) {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(o.Z, m(p({}, e), {
+        return (0, r.jsx)(o.Z, h(p({}, e), {
           ref: g,
           active: n,
           className: d.emojiButton,

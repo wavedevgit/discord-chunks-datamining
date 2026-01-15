@@ -80,9 +80,9 @@ let v = y(E({}, Chunk24397.Z), {
     return null != a && a.cleanedQuery.length > 0
   },
   queryResults(e, t, n, o, l) {
-    if (!c.Xk.getSetting()) return m.K;
+    if (!c.Xk.getSetting()) return h.K;
     let u = O(n);
-    if (null == u) return m.K;
+    if (null == u) return h.K;
     let d = (0, s.hV)(e, u.cleanedQuery),
       {
         commands: f,
@@ -99,16 +99,16 @@ let v = y(E({}, Chunk24397.Z), {
         scoreMethod: a.p.COMMAND_OR_APPLICATION,
         allowFetch: l
       });
-    if (null == f) return m.K;
-    let h = f.filter(e => e.section.botId === u.user.id);
+    if (null == f) return h.K;
+    let m = f.filter(e => e.section.botId === u.user.id);
     if (d.hasSpaceTerminator) {
       let e = d.text.trim(),
         t = e + " ";
-      h = h.filter(n => n.untranslatedName === e || n.untranslatedName.startsWith(t))
+      m = m.filter(n => n.untranslatedName === e || n.untranslatedName.startsWith(t))
     }
-    return 0 === h.length ? m.K : {
+    return 0 === m.length ? h.K : {
       results: {
-        entries: h.slice(0, _.AQ).map(e => ({
+        entries: m.slice(0, _.AQ).map(e => ({
           command: e,
           section: null == p ? true : p.find(t => t.id === e.applicationId)
         }))
@@ -134,8 +134,8 @@ let v = y(E({}, Chunk24397.Z), {
       autocompletes: t,
       onHover: s,
       onClick: c,
-      titleWithQuery: h.t.HFRoZR,
-      titleWithoutQuery: h.intl.string(h.t["0hKkS+"]),
+      titleWithQuery: m.t.HFRoZR,
+      titleWithoutQuery: m.intl.string(m.t["0hKkS+"]),
       Component: o.commands === _.L8.OLD_BUILT_INS ? l.ZP.Command : l.ZP.NewCommand,
       getProps: e => {
         let {
@@ -168,7 +168,7 @@ let v = y(E({}, Chunk24397.Z), {
       options: i,
       channel: a,
       guild: s
-    } = e, l = m.Z.onSelect({
+    } = e, l = h.Z.onSelect({
       results: t,
       index: n,
       type: r,

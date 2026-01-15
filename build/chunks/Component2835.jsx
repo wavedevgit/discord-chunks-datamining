@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk612776 = require("./612776.js"),
   Chunk921872 = require("./921872.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -74,11 +74,11 @@ function y(e) {
     style: g({}, d),
     children: (0, r.jsx)(c.P3F, {
       onClick: o,
-      className: m.clickable,
+      className: h.clickable,
       onMouseEnter: () => u(true),
       onMouseLeave: () => u(false),
       children: (0, r.jsx)(f, {
-        colorClass: m.stepColor,
+        colorClass: h.stepColor,
         color: a,
         style: {
           opacity: t || l ? 1 : .5
@@ -106,7 +106,7 @@ function v(e) {
   return i.useEffect(() => {
     c > f && (0, u.f7)("".concat(c))
   }, [c, f]), (0, r.jsx)("div", {
-    className: o()(m.container, s),
+    className: o()(h.container, s),
     children: p.map((e, t) => {
       let {
         icon: i,
@@ -118,7 +118,7 @@ function v(e) {
         onClick: () => n(o),
         color: a
       }, "step-indicator-".concat(t)) : (0, r.jsx)("div", {
-        className: m.unknownIcon,
+        className: h.unknownIcon,
         style: {
           borderColor: a,
           opacity: .5

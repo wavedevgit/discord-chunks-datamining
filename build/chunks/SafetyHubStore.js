@@ -25,8 +25,8 @@ let d = {},
     state: Chunk531441.Sn.ALL_GOOD
   },
   _ = false,
-  m = false,
-  h = null,
+  h = false,
+  m = null,
   g = null,
   E = false,
   b = false,
@@ -40,8 +40,8 @@ let d = {},
   A = 0,
   N = null,
   P = false,
-  R = Chunk800530.oE.NONE,
-  w = null;
+  w = Chunk800530.oE.NONE,
+  R = null;
 
 function D(e) {
   _ = true
@@ -56,14 +56,14 @@ function x(e) {
     username: o,
     appealEligibility: s
   } = e;
-  d = a()(t, "id"), p = n, E = r, b = i, _ = false, m = true, h = null, T = o, y = s
+  d = a()(t, "id"), p = n, E = r, b = i, _ = false, h = true, m = null, T = o, y = s
 }
 
 function L(e) {
   let {
     error: t
   } = e;
-  _ = false, m = false, h = t
+  _ = false, h = false, m = t
 }
 
 function j(e) {
@@ -78,7 +78,7 @@ function M(e) {
     username: i,
     isAppealEligible: a
   } = e;
-  d[t.id] = t, f[t.id] = l.OY.SUCCESS, p = n, _ = false, h = null, E = r, b = a, m = true, T = i
+  d[t.id] = t, f[t.id] = l.OY.SUCCESS, p = n, _ = false, m = null, E = r, b = a, h = true, T = i
 }
 
 function k(e) {
@@ -86,7 +86,7 @@ function k(e) {
     error: t,
     classificationId: n
   } = e;
-  _ = false, h = t, f[n] = l.OY.FAILED, m = false
+  _ = false, m = t, f[n] = l.OY.FAILED, h = false
 }
 
 function U(e) {
@@ -161,33 +161,33 @@ function z(e) {
 
 function q(e) {
   let {} = e;
-  for (let e in R = c.oE.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
+  for (let e in w = c.oE.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
     status: l.hQ.REVIEW_PENDING
   })
 }
 
 function Q(e) {
   let {} = e;
-  R = c.oE.LOADING, w = null
+  w = c.oE.LOADING, R = null
 }
 
 function X(e) {
   let {} = e;
-  R = c.oE.LOADING, w = null, A += 1
+  w = c.oE.LOADING, R = null, A += 1
 }
 
 function J(e) {
   let {
     success: t
   } = e;
-  R = t ? c.oE.SUCCESS : A < c.o6 ? c.oE.LOADING : c.oE.FAILURE, w = null
+  w = t ? c.oE.SUCCESS : A < c.o6 ? c.oE.LOADING : c.oE.FAILURE, R = null
 }
 
 function $(e) {
   let {
     error: t
   } = e;
-  R = c.oE.ERROR, w = t
+  w = c.oE.ERROR, R = t
 }
 
 function ee() {
@@ -209,10 +209,10 @@ class et extends(r = Chunk442837.ZP.Store) {
     return p
   }
   getFetchError() {
-    return h
+    return m
   }
   isInitialized() {
-    return m
+    return h
   }
   getClassificationRequestState(e) {
     return f[e]
@@ -254,10 +254,10 @@ class et extends(r = Chunk442837.ZP.Store) {
     return P
   }
   getAgeCheckStatus() {
-    return R
+    return w
   }
   getAgeCheckError() {
-    return w
+    return R
   }
   getAgeCheckAttempts() {
     return A

@@ -27,8 +27,8 @@ function f(e, t, n) {
     disabledBehavior: t.selectionManager.disabledBehavior
   }), {
     labelProps: _,
-    fieldProps: m,
-    descriptionProps: h,
+    fieldProps: h,
+    descriptionProps: m,
     errorMessageProps: g
   } = (0, l.U)({
     ...e,
@@ -37,7 +37,7 @@ function f(e, t, n) {
     gridProps: E
   } = (0, r.c)({
     ...e,
-    ...m,
+    ...h,
     keyboardDelegate: p,
     shouldFocusWrap: true,
     linkBehavior: "override",
@@ -58,10 +58,10 @@ function f(e, t, n) {
       "aria-relevant": "additions",
       "aria-live": b ? "polite" : "off",
       ...O,
-      ...m
+      ...h
     }),
     labelProps: _,
-    descriptionProps: h,
+    descriptionProps: m,
     errorMessageProps: g
   }
 }

@@ -106,7 +106,7 @@ function _(e, t) {
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = u(e),
     r = d(e);
   if (null == r) return e;
@@ -120,7 +120,7 @@ function m(e, t) {
   })
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = u(e),
     r = d(e);
   if (null == r) return e;
@@ -169,9 +169,9 @@ function b(e) {
 function y(e, t) {
   switch (t.type) {
     case r.Us.NAVIGATE_UP:
-      return m(e, t);
-    case r.Us.NAVIGATE_DOWN:
       return h(e, t);
+    case r.Us.NAVIGATE_DOWN:
+      return m(e, t);
     case r.Us.NAVIGATE_IN:
       return g(e, t);
     case r.Us.NAVIGATE_OUT:

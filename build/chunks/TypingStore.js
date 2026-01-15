@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 });
 var i, Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -35,8 +35,8 @@ function _(e) {
   }
   return e
 }
-let m = 10 * Chunk70956.Z.Millis.SECOND,
-  h = 1.5 * Chunk70956.Z.Millis.SECOND,
+let h = 10 * Chunk70956.Z.Millis.SECOND,
+  m = 1.5 * Chunk70956.Z.Millis.SECOND,
   g = 5,
   E = {},
   b = Object.freeze({});
@@ -53,7 +53,7 @@ function O(e) {
   if (null == n || t === l.V) returnfalse;
   null != r && r.channelId !== t && (null != r.timeout && clearTimeout(r.timeout), r = null);
   let i = Date.now(),
-    a = .8 * m;
+    a = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + a > i)) returnfalse;
   let c = setTimeout(() => {
     null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, P(t) > g || o.tn.post({
@@ -78,7 +78,7 @@ function O(e) {
         })
       }
     }))
-  }, null == r || r.prevSend > i - 2 * a ? h : 0);
+  }, null == r || r.prevSend > i - 2 * a ? m : 0);
   return r = {
     channelId: t,
     timeout: c,
@@ -111,7 +111,7 @@ function I(e, t) {
       channelId: e,
       userId: t
     })
-  }, m)
+  }, h)
 }
 
 function T(e) {
@@ -154,7 +154,7 @@ function P(e) {
   let t = y(e);
   return t === b ? 0 : Object.keys(t).length
 }
-class R extends(i = Chunk442837.ZP.Store) {
+class w extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -165,8 +165,8 @@ class R extends(i = Chunk442837.ZP.Store) {
     return null != y(e)[t]
   }
 }
-p(R, "displayName", "TypingStore");
-let w = new R(Chunk570140.Z, {
+p(w, "displayName", "TypingStore");
+let R = new w(Chunk570140.Z, {
   TYPING_START: T,
   TYPING_STOP: C,
   TYPING_START_LOCAL: O,

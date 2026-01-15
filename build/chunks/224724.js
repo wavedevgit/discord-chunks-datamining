@@ -19,9 +19,9 @@ let c = null,
   },
   p = false,
   _ = false,
-  m = false;
+  h = false;
 
-function h(e) {
+function m(e) {
   let {
     widgets: t
   } = e;
@@ -52,7 +52,7 @@ function b() {
 }
 
 function y() {
-  _ = true, p = false, m = true
+  _ = true, p = false, h = true
 }
 
 function O(e) {
@@ -150,14 +150,14 @@ class T extends Chunk442837.ZP.Store {
     return _
   }
   get suggestedFetchAttempted() {
-    return m
+    return h
   }
   get suggestedGameIds() {
     return f
   }
 }
 let C = new T(Chunk570140.Z, {
-  WIDGET_PENDING_SET: h,
+  WIDGET_PENDING_SET: m,
   WIDGET_PENDING_SAVE_START: O,
   WIDGET_PENDING_SAVE_SUCCESS: v,
   WIDGET_PENDING_SAVE_FAILURE: S,

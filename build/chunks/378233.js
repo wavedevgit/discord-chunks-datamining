@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   B0: () => N,
-  Hc: () => w,
+  Hc: () => R,
   J8: () => D,
   Q6: () => A,
   V9: () => j,
-  WD: () => R,
+  WD: () => w,
   Zt: () => S,
   Zv: () => T,
   _V: () => C,
@@ -29,11 +29,11 @@ var Chunk134432 = require("./134432.js"),
   Chunk981631 = require("./981631.js");
 let {
   API_ENDPOINT: _,
-  MEDIA_PROXY_ENDPOINT: m,
-  PROJECT_ENV: h,
+  MEDIA_PROXY_ENDPOINT: h,
+  PROJECT_ENV: m,
   ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, b = Object.values(Chunk373228.og), y = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(m, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(_, "(").concat(y, ")"), "ig"), S = e => {
+} = window.GLOBAL_ENV, b = Object.values(Chunk373228.og), y = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(_, "(").concat(y, ")"), "ig"), S = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
@@ -87,21 +87,21 @@ let {
   } catch (e) {}
   let u = c ? "&force_sdr=true" : "",
     _ = o === d.og.WEBP ? "&quality=lossless" : "";
-  if ("development" !== h) {
+  if ("development" !== m) {
     if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(s);
     let n = e.format_type === d.u3.APNG && t && !(0, l.isAndroid)() ? "&passthrough=false" : "",
       a = Math.min(2, (0, r.x_)());
-    return "".concat(location.protocol).concat(m).concat(s, "?size=").concat((0, r.oO)(i * a)).concat(n).concat(_).concat(u)
+    return "".concat(location.protocol).concat(h).concat(s, "?size=").concat((0, r.oO)(i * a)).concat(n).concat(_).concat(u)
   }
-  let E = "".concat(location.protocol).concat(m).concat(s);
+  let E = "".concat(location.protocol).concat(h).concat(s);
   return c ? "".concat(E, "?force_sdr=true") : E
-}, N = e => null != e.match("development" !== h ? O : v), P = e => ({
+}, N = e => null != e.match("development" !== m ? O : v), P = e => ({
   type: d.Ih.PACK,
   id: e.id,
   name: e.name,
   stickers: e.stickers,
   previewSticker: S(e)
-}), R = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
+}), w = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, R = (e, t, n, r) => {
   if (o.Z.getUploadCount(n, r) > 0) returntrue;
   let i = c.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;

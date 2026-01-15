@@ -21,7 +21,7 @@ function p(e) {
     withVoiceChannels: t = false,
     withCurrentVoiceChannel: n = false
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = arguments.length > 2 ? arguments[2] : true;
-  return m(e === f._ || e === d.I_8 ? (0, o.t)() : a.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+  return h(e === f._ || e === d.I_8 ? (0, o.t)() : a.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
     currentVoiceChannelId: u.Z.getVoiceChannelId(),
     selectedChannelId: u.Z.getChannelId()
   }, {
@@ -41,7 +41,7 @@ function _(e, t, n) {
     currentVoiceChannelId: u.Z.getVoiceChannelId(),
     selectedChannelId: u.Z.getChannelId()
   }));
-  return (0, r.useMemo)(() => m(t, {
+  return (0, r.useMemo)(() => h(t, {
     currentVoiceChannelId: p,
     selectedChannelId: _
   }, {
@@ -50,7 +50,7 @@ function _(e, t, n) {
   }, s).map(e => e.id), [t, n, d, f])
 }
 
-function m(e, t) {
+function h(e, t) {
   let {
     currentVoiceChannelId: n,
     selectedChannelId: r

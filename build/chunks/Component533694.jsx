@@ -2,7 +2,7 @@
 /** chunk id: 533694, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,7 +18,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk962828 = require("./962828.js");
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     user: n,
@@ -55,19 +55,19 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   var t, i, a;
   let {
     channel: o,
     message: d,
     compact: _
-  } = e, h = (0, s.ZP)(d), g = (0, l.l)({
+  } = e, m = (0, s.ZP)(d), g = (0, l.l)({
     user: d.author,
     channelId: o.id,
     guildId: o.guild_id,
     messageId: d.id
-  })(h), E = p.intl.format(p.t.TQs67g, {
-    username: h.nick,
+  })(m), E = p.intl.format(p.t.TQs67g, {
+    username: m.nick,
     usernameHook: g,
     productName: null != (a = null == (i = d.purchaseNotification) || null == (t = i.guild_product_purchase) ? true : t.product_name) ? a : "",
     handleProductListingClick: () => {
@@ -81,8 +81,8 @@ function h(e) {
       timestamp: d.timestamp,
       compact: _,
       children: E
-    }), (0, r.jsx)(m, {
-      username: h.nick,
+    }), (0, r.jsx)(h, {
+      username: m.nick,
       guildId: o.guild_id,
       user: d.author
     })]

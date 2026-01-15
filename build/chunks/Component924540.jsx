@@ -31,16 +31,16 @@ function y(e) {
     badgeCopy: a,
     className: p,
     tooltipTextOverride: _,
-    tooltipPosition: m,
-    shouldShowOfferReminder: h
-  } = e, y = i.useMemo(() => Date.parse(n), [n]), O = (0, u.Z)(y, b), v = (0, d.zu)(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), S = h && !v;
+    tooltipPosition: h,
+    shouldShowOfferReminder: m
+  } = e, y = i.useMemo(() => Date.parse(n), [n]), O = (0, u.Z)(y, b), v = (0, d.zu)(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), S = m && !v;
   return Object.values(O).every(e => 0 === e) ? null : (0, r.jsx)(l.u, {
     text: null != _ ? _ : (0, f.QX)(O, {
       days: g.t.qVGNkU,
       hours: g.t.wyg9a9,
       minutes: g.t.IzmIlV
     }),
-    position: null != m ? m : "top",
+    position: null != h ? h : "top",
     children: (0, r.jsxs)("div", {
       className: o()(E.premiumTrialBadge, S ? E.premiumOfferUnackedBadge : E.premiumOfferWithTimerAcknowledgedBadge, p, {
         [E.premiumTrialBadgeSelected]: t
@@ -66,10 +66,10 @@ function O(e) {
     isTabSelected: n,
     trialOffer: i,
     shouldShowOfferReminder: a
-  } = e, o = null == (t = (0, m.N)()) ? true : t.subscription_trial, s = (0, p.a5)({
+  } = e, o = null == (t = (0, h.N)()) ? true : t.subscription_trial, s = (0, p.a5)({
     intervalType: null == o ? true : o.interval,
     intervalCount: null == o ? true : o.interval_count
-  }), l = (0, h.YF)(i), {
+  }), l = (0, m.YF)(i), {
     hasExperimentalTooltip: c
   } = (0, _.ZP)("PremiumOfferTabBadge");
   return (0, r.jsx)(S, {
@@ -90,7 +90,7 @@ function v(e) {
     shouldShowOfferReminder: a
   } = e, o = g.intl.formatToPlainString(g.t.iiLbvu, {
     percent: n.discount.amount
-  }), s = (0, h.h$)(n), {
+  }), s = (0, m.h$)(n), {
     hasExperimentalTooltip: l
   } = (0, _.ZP)("PremiumOfferTabBadge");
   return (0, r.jsx)(S, {

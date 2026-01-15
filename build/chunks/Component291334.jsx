@@ -48,31 +48,31 @@ function y(e) {
       type: _.cd.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
     })
   }, [n, y]), n) ? (0, r.jsxs)("div", {
-    className: h.upsellOverlayContainer,
+    className: m.upsellOverlayContainer,
     children: [(0, r.jsx)("div", {
       children: g
     }), (0, r.jsxs)("div", {
-      className: h.upsellOverlay,
+      className: m.upsellOverlay,
       children: [(0, r.jsx)("img", {
-        className: h.upsellImage,
-        alt: m.intl.string(m.t.LHFZQy),
+        className: m.upsellImage,
+        alt: h.intl.string(h.t.LHFZQy),
         src: b(E)
       }), (0, r.jsxs)("div", {
-        className: h.upsellTextContainer,
+        className: m.upsellTextContainer,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
-          children: m.intl.string(m.t.dMaDFX)
+          children: h.intl.string(h.t.dMaDFX)
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "always-white",
-          children: m.intl.string(m.t.F7sgFH)
+          children: h.intl.string(h.t.F7sgFH)
         })]
       }), (0, r.jsx)(u.Z, {
         size: a.zx.Sizes.LARGE,
         color: a.zx.Colors.GREEN,
         textOptions: {
-          textOverride: f.ZP.isPremium(t) ? m.intl.string(m.t.AfRWI8) : m.intl.string(m.t.nkdUym)
+          textOverride: f.ZP.isPremium(t) ? h.intl.string(h.t.AfRWI8) : h.intl.string(h.t.nkdUym)
         },
         subscriptionTier: _.Si.TIER_2
       })]

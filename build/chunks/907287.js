@@ -13,24 +13,24 @@ module.exports = function(e, t, n, o, s, l) {
     if (!(c ? p in t : a.call(t, p))) returnfalse
   }
   var _ = l.get(e),
-    m = l.get(t);
-  if (_ && m) return _ == t && m == e;
-  var h = true;
+    h = l.get(t);
+  if (_ && h) return _ == t && h == e;
+  var m = true;
   l.set(e, t), l.set(t, e);
   for (var g = c; ++f < d;) {
     var E = e[p = u[f]],
       b = t[p];
     if (o) var y = c ? o(b, E, p, t, e, l) : o(E, b, p, e, t, l);
     if (!(true === y ? E === b || s(E, b, n, o, l) : y)) {
-      h = false;
+      m = false;
       break
     }
     g || (g = "constructor" == p)
   }
-  if (h && !g) {
+  if (m && !g) {
     var O = e.constructor,
       v = t.constructor;
-    O != v && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof v && v instanceof v) && (h = false)
+    O != v && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof v && v instanceof v) && (m = false)
   }
-  return l.delete(e), l.delete(t), h
+  return l.delete(e), l.delete(t), m
 }

@@ -40,25 +40,25 @@ class T extends Chunk147913.Z {
     if ((I += 1) % v != 0) return;
     let o = c.Z.getCurrentUserActiveStream();
     if (null == o) return;
-    let m = f.Z.getRTCConnection((0, h.V9)(o)),
+    let h = f.Z.getRTCConnection((0, m.V9)(o)),
       b = d.Z.getGoLiveSource();
-    if (null == m || null == b || !m.hasActiveRemoteWants()) return;
+    if (null == h || null == b || !h.hasActiveRemoteWants()) return;
     let T = l.Z.getState();
     if (T.preset !== E.tI.PRESET_AUTO) return;
     if ((null == (e = c.Z.getStreamerActiveStreamMetadata()) ? true : e.id) != null) return void S.info("Skipping auto quality checker for game stream.");
-    let C = s.Z.getAccumulatedPerformanceStats(m.getMediaEngineConnectionId(), o.ownerId, "long"),
-      A = (null != (t = m.analyticsContext.getDuration()) ? t : 30) >= 30 * _.Z.Millis.SECOND ? 30 : 15;
+    let C = s.Z.getAccumulatedPerformanceStats(h.getMediaEngineConnectionId(), o.ownerId, "long"),
+      A = (null != (t = h.analyticsContext.getDuration()) ? t : 30) >= 30 * _.Z.Millis.SECOND ? 30 : 15;
     if (null == C || C.numDatapoints < A) return;
     let N = p.default.getCurrentUser(),
       P = u.Z.getGuild(o.guildId),
-      [R, w] = null != (n = (0, g.Z)(E.tI.PRESET_DOCUMENTS, N, null == P ? true : P.premiumTier)) ? n : [E.LY.RESOLUTION_SOURCE, E.ws.FPS_5],
+      [w, R] = null != (n = (0, g.Z)(E.tI.PRESET_DOCUMENTS, N, null == P ? true : P.premiumTier)) ? n : [E.LY.RESOLUTION_SOURCE, E.ws.FPS_5],
       [D, x] = null != (r = (0, g.Z)(E.tI.PRESET_VIDEO, N, null == P ? true : P.premiumTier)) ? r : [E.LY.RESOLUTION_720, E.ws.FPS_30],
       L = null;
-    if (C.entropy < y && (T.resolution !== R || T.fps !== w) ? (S.info("Low entropy average, switching to screenshare preset."), L = {
+    if (C.entropy < y && (T.resolution !== w || T.fps !== R) ? (S.info("Low entropy average, switching to screenshare preset."), L = {
         qualityOptions: {
           preset: E.tI.PRESET_AUTO,
-          resolution: R,
-          frameRate: w
+          resolution: w,
+          frameRate: R
         },
         context: i.Yn.STREAM
       }) : C.entropy > O && (T.resolution !== D || T.fps !== x) && (S.info("High entropy average, switching to video preset."), L = {
@@ -80,11 +80,11 @@ class T extends Chunk147913.Z {
           audioDeviceGuid: b.cameraSource.audioDeviceGuid
         }
       }
-      m.autoQualityChange(), a.Z.setGoLiveSource(L)
+      h.autoQualityChange(), a.Z.setGoLiveSource(L)
     }
   }
   handlePostConnectionOpen() {
-    (0, m.Ym)()
+    (0, h.Ym)()
   }
   constructor(...e) {
     super(...e), b(this, "actions", {

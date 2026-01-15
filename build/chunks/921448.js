@@ -23,7 +23,7 @@ function l(e) {
     removeAllGlobalListeners: f
   } = (0, a.x)(), p = (0, i.useCallback)(e => {
     e.currentTarget.contains(e.target) && u.current.isFocusWithin && !e.currentTarget.contains(e.relatedTarget) && (u.current.isFocusWithin = false, f(), n && n(e), c && c(false))
-  }, [n, c, u, f]), _ = (0, r.d0)(p), m = (0, i.useCallback)(e => {
+  }, [n, c, u, f]), _ = (0, r.d0)(p), h = (0, i.useCallback)(e => {
     if (!e.currentTarget.contains(e.target)) return;
     let t = (0, o.r3)(e.target),
       n = (0, s.vY)(t);
@@ -49,7 +49,7 @@ function l(e) {
     }
   } : {
     focusWithinProps: {
-      onFocus: m,
+      onFocus: h,
       onBlur: p
     }
   }

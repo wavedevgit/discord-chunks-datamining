@@ -65,14 +65,14 @@ function _(e) {
   r.data = n, r.status = "success", r.error = true
 }
 
-function m(e) {
+function h(e) {
   let {
     error: t
   } = e;
   a.Z.captureException(t)
 }
 
-function h(e) {
+function m(e) {
   let {
     wishlistId: t
   } = e, n = l(t);
@@ -157,8 +157,8 @@ let S = new v(Chunk570140.Z, {
   WISHLIST_ADD_SKU_SUCCESS: f,
   WISHLIST_ADD_SKU_FAILURE: p,
   WISHLIST_REMOVE_SKU_SUCCESS: _,
-  WISHLIST_REMOVE_SKU_FAILURE: m,
-  WISHLIST_UPDATE_VISIBILITY_SUCCESS: h,
+  WISHLIST_REMOVE_SKU_FAILURE: h,
+  WISHLIST_UPDATE_VISIBILITY_SUCCESS: m,
   WISHLIST_UPDATE_VISIBILITY_FAILURE: g,
   WISHLIST_REORDER_START: E,
   WISHLIST_REORDER_SUCCESS: b,

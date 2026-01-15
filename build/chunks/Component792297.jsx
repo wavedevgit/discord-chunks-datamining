@@ -17,12 +17,12 @@ var Chunk54381 = require("./54381.js"),
 let f = 24,
   p = 36,
   _ = 76,
-  m = 88,
-  h = 272;
+  h = 88,
+  m = 272;
 
 function g(e, t) {
   let n = window.innerWidth - (e ? _ : f) * 2,
-    r = window.innerHeight - 2 * m;
+    r = window.innerHeight - 2 * h;
   if (!(0, l._H)(t)) return {
     width: n,
     height: r
@@ -30,7 +30,7 @@ function g(e, t) {
   let {
     width: i,
     height: a
-  } = t, o = window.innerWidth - 2 * h, s = window.innerHeight - (e ? m : p) * 2, c = (0, l.Tj)({
+  } = t, o = window.innerWidth - 2 * m, s = window.innerHeight - (e ? h : p) * 2, c = (0, l.Tj)({
     width: i,
     height: a,
     maxWidth: n,

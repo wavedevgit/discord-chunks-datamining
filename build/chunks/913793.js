@@ -17,8 +17,8 @@ var Chunk23893 = require("./23893.js"),
   Chunk473749 = require("./473749.js");
 let p = (0, Chunk473749.createContext)(null),
   _ = (0, Chunk473749.createContext)(null),
-  m = (0, Chunk473749.createContext)(null),
   h = (0, Chunk473749.createContext)(null),
+  m = (0, Chunk473749.createContext)(null),
   g = (0, Chunk473749.forwardRef)(function(e, t) {
     [e, t] = (0, i.pE)(e, t, _);
     let n = (0, f.useContext)(p),
@@ -75,11 +75,11 @@ let p = (0, Chunk473749.createContext)(null),
             trigger: S
           }
         }],
-        [h, {
+        [m, {
           panelProps: I,
           panelRef: O
         }],
-        [m, y]
+        [h, y]
       ]
     }, f.createElement("div", {
       ...(0, u.d)(N, A, C),
@@ -95,7 +95,7 @@ let p = (0, Chunk473749.createContext)(null),
     } = e, {
       panelProps: a,
       panelRef: s
-    } = (0, f.useContext)(h), {
+    } = (0, f.useContext)(m), {
       isFocusVisible: l,
       focusProps: p
     } = (0, o.F)({
@@ -106,11 +106,11 @@ let p = (0, Chunk473749.createContext)(null),
       values: {
         isFocusVisibleWithin: l
       }
-    }), m = (0, c.z)(e, {
+    }), h = (0, c.z)(e, {
       global: true
     });
     return f.createElement("div", {
-      ...(0, u.d)(m, _, a, p),
+      ...(0, u.d)(h, _, a, p),
       ref: (0, d.l)(t, s),
       role: n,
       "data-focus-visible-within": l || true

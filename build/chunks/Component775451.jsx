@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   V9: () => g,
-  ek: () => h
+  ek: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461207 = require("./461207.js");
-let h = {
+let m = {
     START: Chunk461207.alignLeft,
     END: Chunk461207.alignRight
   },
@@ -29,7 +29,7 @@ let h = {
       ctaOnClick: a,
       analyticsPage: g,
       linkText: E = _.intl.string(_.t.XRdyjz),
-      cardAlignment: b = h.START,
+      cardAlignment: b = m.START,
       className: y
     } = e, {
       balance: O
@@ -40,9 +40,9 @@ let h = {
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
       }), S(e ? u.b.SELECTED : u.b.DEFAULT), T(e)
-    }, [I, g]), R = i.useCallback(() => {
+    }, [I, g]), w = i.useCallback(() => {
       I && P()
-    }, [I, P]), w = (0, s.Z)(null, R), D = i.useMemo(() => (0, r.jsx)(d.L, {
+    }, [I, P]), R = (0, s.Z)(null, w), D = i.useMemo(() => (0, r.jsx)(d.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
@@ -51,9 +51,9 @@ let h = {
       linkText: E
     }), [g, n, E, P, a]);
     return (0, r.jsxs)("div", {
-      className: o()(m.container, y, {
-        [m.hidden]: C,
-        [m.visible]: !C
+      className: o()(h.container, y, {
+        [h.hidden]: C,
+        [h.visible]: !C
       }),
       children: [(0, r.jsx)(f.y, {
         pillRef: N,
@@ -65,13 +65,13 @@ let h = {
         onClick: P,
         showNotificationBadge: t
       }), I && (0, r.jsx)("div", {
-        className: o()(m.cardContainer, b, {
-          [m.hidden]: C,
-          [m.visible]: !C
+        className: o()(h.cardContainer, b, {
+          [h.hidden]: C,
+          [h.visible]: !C
         }),
-        ref: w,
+        ref: R,
         children: D
       })]
     })
   };
-g.CardAlignment = h
+g.CardAlignment = m

@@ -2,7 +2,7 @@
 /** chunk id: 66511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -56,16 +56,16 @@ let _ = () => {
       type: l.N4
     })
   },
-  m = e => {
+  h = e => {
     a.default.track(c.rMx.OPEN_MODAL, {
       type: l.N4,
       guild_id: e
     })
   },
-  h = {
+  m = {
     openMemberVerificationModal(e, t, a) {
       if (__OVERLAY__) return;
-      m(e);
+      h(e);
       let c = async t => {
         await o.ZP.submitVerificationForm(e, t)
       };

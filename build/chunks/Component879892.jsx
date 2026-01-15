@@ -18,7 +18,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk852679 = require("./852679.jsx"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ let O = "apply-guild-boost-modal";
 async function v(e) {
   let {
     analyticsLocations: t,
-    analyticsLocation: m,
+    analyticsLocation: h,
     analyticsSourceLocation: g,
     numberOfBoostsToAdd: y,
     onClose: v,
@@ -89,10 +89,10 @@ async function v(e) {
     guild: A,
     handleSubscribeModalClose: N,
     disablePremiumUpsell: P,
-    inPopout: R,
-    applicationId: w,
+    inPopout: w,
+    applicationId: R,
     intent: D
-  } = e, x = R ? i.u1M : i.z1l, L = l.default.getCurrentUser();
+  } = e, x = w ? i.u1M : i.z1l, L = l.default.getCurrentUser();
   if (null == L) return;
   if (!L.verified) return void(0, i.ZDy)(async () => {
     let {
@@ -102,7 +102,7 @@ async function v(e) {
       var {
         onClose: n
       } = t, i = b(t, ["onClose"]);
-      return (0, r.jsx)(e, E(h({}, i), {
+      return (0, r.jsx)(e, E(m({}, i), {
         onClose: n
       }))
     }
@@ -119,7 +119,7 @@ async function v(e) {
     G = () => {
       null == v || v(), null == I || I(), d.default.track(_.rMx.MODAL_DISMISSED, {
         type: _.ZY5.PREMIUM_GUILD_USER_MODAL,
-        location_section: m.section
+        location_section: h.section
       })
     };
   if (k > 0 && (null == y || k >= y)) {
@@ -132,7 +132,7 @@ async function v(e) {
         var {
           onClose: i
         } = n, a = b(n, ["onClose"]);
-        return (0, r.jsx)(t, E(h({}, a), {
+        return (0, r.jsx)(t, E(m({}, a), {
           onClose: e => {
             i(), U(e)
           },
@@ -151,7 +151,7 @@ async function v(e) {
     })
   } else(0, p.Z)({
     analyticsLocations: t,
-    analyticsLocation: m,
+    analyticsLocation: h,
     analyticsSourceLocation: g,
     guildId: A.id,
     closeLayer: G,
@@ -160,8 +160,8 @@ async function v(e) {
     disablePremiumUpsell: P,
     onSubscriptionConfirmation: T,
     onSubscribeComplete: C,
-    inPopout: R,
-    applicationId: w,
+    inPopout: w,
+    applicationId: R,
     intent: D
   })
 }

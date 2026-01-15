@@ -49,7 +49,7 @@ let U = e => {
   },
   G = () => {
     var e, t;
-    (0, m.z)(_.X);
+    (0, h.z)(_.X);
     let n = i.useRef(null),
       a = i.useRef(null),
       A = i.useRef(null),
@@ -60,7 +60,7 @@ let U = e => {
       [Y, W] = i.useState(false),
       K = !F && !V,
       [z, q] = i.useState(false),
-      Q = (0, s.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
+      Q = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()),
       X = null != Q ? (0, E.Af)(Q) : null,
       J = null != X ? E.ZP.getSkuIdForPlan(X.planId) : null,
       $ = null !== J && J !== D.Si.TIER_2 ? D.Si.TIER_2 : null,
@@ -152,13 +152,13 @@ let U = e => {
         className: M.perkCardsContainerSpacingSettings
       }), (0, r.jsx)("div", {
         className: M.planComparisonTableContainer,
-        children: (0, r.jsx)(w.Z, {
+        children: (0, r.jsx)(R.Z, {
           className: M.planComparisonTable,
           hideCTAs: true
         })
       }), (0, r.jsx)("div", {
         className: M.footerSpacing
-      }), (0, r.jsx)(R.Z, {
+      }), (0, r.jsx)(w.Z, {
         isVisible: K && z,
         subscriptionTier: $,
         isApplicationHome: false,

@@ -2,8 +2,8 @@
 /** chunk id: 426563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w,
-  j: () => R
+  Z: () => R,
+  j: () => w
 });
 var Chunk526167 = require("./526167.js"),
   Chunk621554 = require("./621554.js"),
@@ -33,11 +33,11 @@ var Chunk526167 = require("./526167.js"),
   Chunk410693 = require("./410693.js"),
   Chunk235731 = require("./235731.js");
 
-function R() {
+function w() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return e ? P : i
 }
-let w = {
+let R = {
   DEFAULT_AVATARS: [Chunk328756, Chunk639525, Chunk131812, Chunk265174, Chunk926425, Chunk844049],
   DEFAULT_PROVISIONAL_AVATARS: [Chunk649272, Chunk241372, Chunk538387, Chunk213921, Chunk34721, Chunk410693],
   DEFAULT_GROUP_DM_AVATARS: [Chunk712386, Chunk602722, Chunk534109, Chunk859500, Chunk484542, Chunk881500, Chunk910826, Chunk307244],

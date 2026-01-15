@@ -37,9 +37,9 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -47,7 +47,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -205,7 +205,7 @@ let T = function(e) {
     status: l,
     style: d,
     className: p
-  } = e, h = m(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
+  } = e, m = h(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
   let {
     size: b
   } = c.ny6[a], {
@@ -223,8 +223,8 @@ let T = function(e) {
       width: b,
       height: b
     }, d),
-    "aria-label": h["aria-label"],
-    "aria-hidden": h["aria-hidden"],
+    "aria-label": m["aria-label"],
+    "aria-hidden": m["aria-hidden"],
     className: o()(f.container, p),
     children: [(0, r.jsxs)(u.ZP, {
       mask: A,

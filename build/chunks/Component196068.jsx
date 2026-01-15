@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
 let v = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, c.a0)(), v = (0, a.e7)([p.default], () => m.ZP.isPremiumExactly(p.default.getCurrentUser(), b.PremiumTypes.TIER_2)), {
+  } = e, n = (0, c.a0)(), v = (0, a.e7)([p.default], () => h.ZP.isPremiumExactly(p.default.getCurrentUser(), b.PremiumTypes.TIER_2)), {
     enabled: S
   } = l.g.useExperiment({
     location: "OutboundPromotionNotice"
@@ -58,7 +58,7 @@ let v = e => {
       children: y.intl.string(y.t.jVcuVY)
     })]
   });
-  return (0, r.jsx)(h.O1, {
+  return (0, r.jsx)(m.O1, {
     contentType: t,
     newSnowflakeId: n,
     timeRecurringConfig: {

@@ -30,13 +30,13 @@ function b() {
   return (0, r.jsxs)(a.Gt, {
     value: t,
     children: [(0, r.jsxs)(s.Z, {
-      webSetting: h.s6.VOICE_AND_VIDEO_VIDEO,
+      webSetting: m.s6.VOICE_AND_VIDEO_VIDEO,
       children: [(0, r.jsxs)(l.Z, {
         children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(d.Z, {})]
-      }), (0, r.jsx)(m.Z, {})]
+      }), (0, r.jsx)(h.Z, {})]
     }), (0, r.jsx)(s.Z, {
       title: E.intl.string(E.t.KDdjou),
-      webSetting: h.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
+      webSetting: m.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
       children: (0, r.jsxs)(l.Z, {
         children: [(0, r.jsx)(_.Z, {}), e && (0, r.jsx)(p.Z, {}), (0, r.jsx)(f.Z, {})]
       })

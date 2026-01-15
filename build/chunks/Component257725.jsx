@@ -23,9 +23,9 @@ let f = {
         disabled: t,
         readOnly: n,
         showMinMax: f
-      } = e, [p, _] = i.useState((0, a.Lg)((0, a.iT)())), m = i.useCallback(e => {
+      } = e, [p, _] = i.useState((0, a.Lg)((0, a.iT)())), h = i.useCallback(e => {
         _(e)
-      }, []), h = i.useCallback(() => {
+      }, []), m = i.useCallback(() => {
         _(null)
       }, []), g = i.useCallback(() => {
         _((0, a.Lg)((0, a.iT)()))
@@ -37,7 +37,7 @@ let f = {
         gap: "md",
         children: [(0, r.jsx)(l.f, {
           value: p,
-          onChange: m,
+          onChange: h,
           disabled: t,
           readOnly: n,
           minValue: f ? (0, o.sG)("2024-01-01") : true,
@@ -53,7 +53,7 @@ let f = {
             variant: "secondary",
             size: "sm",
             text: "Clear",
-            onClick: h,
+            onClick: m,
             disabled: t || n
           }), (0, r.jsx)(u.zxk, {
             variant: "secondary",

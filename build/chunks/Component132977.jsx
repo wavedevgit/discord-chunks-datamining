@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ class v extends(r = Chunk473749.PureComponent) {
         shinePaused: r
       } = e,
       a = g(e, ["className", "shineSize", "shinePaused"]);
-    return (0, i.jsx)(l.Z.div, h(_({}, a), {
+    return (0, i.jsx)(l.Z.div, m(_({}, a), {
       className: s()(f.shineContainer, t, {
         [f.shinePaused]: r
       }),
@@ -119,13 +119,13 @@ let S = e => {
     pauseAnimation: l,
     shineSize: u = "default",
     shinePaused: p,
-    buttonShineClassName: m,
+    buttonShineClassName: h,
     onlyShineOnHover: E
   } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
   let y = a.useRef(null),
     O = (0, d.X)(y),
     S = !r && !o && true !== l && (!E || O);
-  return (0, i.jsxs)(c.zx, h(_({
+  return (0, i.jsxs)(c.zx, m(_({
     "data-migration-pending": true,
     buttonRef: y
   }, b), {
@@ -135,7 +135,7 @@ let S = e => {
     children: [t, S ? (0, i.jsx)(v, {
       "data-migration-pending": true,
       shinePaused: p,
-      className: s()(f.buttonShine, E ? f.onlyShineOnHover : true, m),
+      className: s()(f.buttonShine, E ? f.onlyShineOnHover : true, h),
       shineSize: u
     }) : null]
   }))

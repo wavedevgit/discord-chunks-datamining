@@ -23,8 +23,8 @@ function _(e) {
     errors: n,
     onBannerChange: i,
     guildId: _,
-    className: m,
-    disabled: h = false,
+    className: h,
+    disabled: m = false,
     showPremiumIcon: g = true,
     isTryItOut: E = false,
     forcedDivider: b,
@@ -33,11 +33,11 @@ function _(e) {
     newestAnalyticsLocation: O
   } = (0, l.ZP)(), v = y ? s.gtL : o.zx;
   return (0, r.jsx)(u.Z, {
-    className: m,
+    className: h,
     title: f.intl.string(f.t.Vgdusv),
     showPremiumIcon: g,
     errors: n,
-    disabled: h,
+    disabled: m,
     forcedDivider: b,
     children: (0, r.jsxs)("div", {
       className: p.buttonsContainer,

@@ -22,7 +22,7 @@ let p = {
       if (null == i && null == p) throw Error("Unable to find original channel for message");
       if (null == r) throw Error("Unable to find destination channel for message");
       let _ = l.ZP.parse(r, ""),
-        m = {
+        h = {
           guild_id: p,
           channel_id: e.channel_id,
           message_id: e.id,
@@ -33,7 +33,7 @@ let p = {
           } : true
         };
       await o.Z.sendMessage(r.id, _, false, {
-        messageReference: m,
+        messageReference: h,
         location: f.dy.FORWARDING,
         eagerDispatch: false
       }), (null == n ? true : n.withMessage) == null || (0, d.pU)(r, u.Z) || await o.Z.sendMessage(r.id, l.ZP.parse(r, n.withMessage), false, {

@@ -38,18 +38,18 @@ function d(e) {
   let f = d.split("/"),
     p = null != f[1] ? f[1].toLowerCase() : null,
     _ = null != f[3] ? f[3].toLowerCase() : null,
-    m = f[4];
+    h = f[4];
   if (!["track", "playlist", "album", "artist", "user", "show", "episode"].includes(null != p ? p : "") || "user" === p && "playlist" !== _) return null;
-  "user" === p && "playlist" === _ && null != m && (d = "/playlist/".concat(m));
-  let h = 352;
-  return "track" === p ? h = 80 : ("episode" === p || "show" === p) && (h = 232), (0, r.jsx)("iframe", {
+  "user" === p && "playlist" === _ && null != h && (d = "/playlist/".concat(h));
+  let m = 352;
+  return "track" === p ? m = 80 : ("episode" === p || "show" === p) && (m = 232), (0, r.jsx)("iframe", {
     className: a()(c.embedSpotify, t),
     src: l.C7.EMBED(d),
     style: {
       maxWidth: 400,
       minWidth: 300,
       width: "100%",
-      height: h
+      height: m
     },
     frameBorder: 0,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts",

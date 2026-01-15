@@ -53,8 +53,8 @@ let I = 27,
   A = "LAST_CLIENT_HEARTBEAT_SESSION",
   N = "user",
   P = new Chunk710845.Z("SessionHeartbeatScheduler"),
-  R = null,
   w = null,
+  R = null,
   D = 0,
   x = 0,
   L = {
@@ -65,14 +65,14 @@ let I = 27,
   k = Chunk314897.default.getToken();
 
 function U() {
-  if (null != R) return;
+  if (null != w) return;
   let e = 0 === x ? 0 : T - (performance.now() - x);
-  h.Z.addBreadcrumb({
+  m.Z.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(e / 1e3, " seconds. Scheduling Heartbeat")
-  }), R = {
+  }), w = {
     type: "timeout",
     id: setTimeout(() => {
-      B(), R = {
+      B(), w = {
         type: "interval",
         id: setInterval(() => {
           B()
@@ -83,22 +83,22 @@ function U() {
 }
 
 function G() {
-  if (null == R) returnfalse;
-  switch (R.type) {
+  if (null == w) returnfalse;
+  switch (w.type) {
     case "timeout":
-      clearTimeout(R.id);
+      clearTimeout(w.id);
       break;
     case "interval":
-      clearInterval(R.id);
+      clearInterval(w.id);
       break;
     default:
-      R.type
+      w.type
   }
-  return R = null, true
+  return w = null, true
 }
 
 function Z() {
-  G() && (h.Z.addBreadcrumb({
+  G() && (m.Z.addBreadcrumb({
     category: N,
     message: "Stopping Analytics Heartbeat"
   }), (0, l.Z)())
@@ -119,8 +119,8 @@ async function B() {
   let e = Date.now(),
     t = await eo(),
     n = Date.now();
-  if (null == t) return void h.Z.captureException(Error("Null session when tracking session heartbeat. Waited ".concat(n - e, "ms")));
-  h.Z.addBreadcrumb({
+  if (null == t) return void m.Z.captureException(Error("Null session when tracking session heartbeat. Waited ".concat(n - e, "ms")));
+  m.Z.addBreadcrumb({
     category: N,
     message: "Tracking Heartbeat",
     data: {
@@ -162,7 +162,7 @@ function K() {
 }
 
 function z() {
-  null == w && (w = {
+  null == R && (R = {
     id: setInterval(() => {
       V()
     }, T),
@@ -175,7 +175,7 @@ function q(e) {
   if (!(t - D < C)) try {
     o.K.set(A, e), D = t
   } catch (e) {
-    h.Z.captureException(e)
+    m.Z.captureException(e)
   }
 }
 
@@ -231,7 +231,7 @@ function ei() {
 }
 
 function ea() {
-  h.Z.addBreadcrumb({
+  m.Z.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
   }), p.Z.addChangeListener(et), d.default.addChangeListener(ee), s.Z.subscribe("WINDOW_FOCUS", en), s.Z.subscribe("APP_STATE_UPDATE", er), s.Z.subscribe("CONNECTION_OPEN", $), K(), z(), a.ZP.initialized.then(ei)
 }
@@ -243,7 +243,7 @@ async function eo() {
   try {
     n = "uninitialized" === L.state ? Q(await o.K.getAfterRefresh(A)) : L.session
   } catch (e) {
-    h.Z.captureException(e)
+    m.Z.captureException(e)
   }
   return (() => {
     let e = Date.now();

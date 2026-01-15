@@ -38,13 +38,13 @@ function O(e) {
     hideBreadcrumbs: A = false,
     isLoading: N = false,
     purchaseError: P,
-    purchaseErrorBlockRef: R,
-    planError: w,
+    purchaseErrorBlockRef: w,
+    planError: R,
     onScroll: D,
     scrollerClassName: x,
     hasCurrencies: L = false
   } = e, j = null;
-  null != v && null == (0, _.ly)(v) ? j = v : null != P ? j = P : null != w && (j = w);
+  null != v && null == (0, _.ly)(v) ? j = v : null != P ? j = P : null != R && (j = R);
   let M = null != j ? j.message : "";
   null != j && j instanceof d.HF && (j.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.intl.string(E.t.iWvwQS))), j.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd8)), j.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWE)));
   let {
@@ -54,9 +54,9 @@ function O(e) {
   let U = i.useRef(new l.V7);
   i.useEffect(() => {
     let e = U.current;
-    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * h.Z.Millis.SECOND, () => {
+    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
-      (0, m.q2)(e)
+      (0, h.q2)(e)
     }), () => {
       e.stop()
     }
@@ -86,7 +86,7 @@ function O(e) {
         className: b.bodyWrapper,
         children: [null == j ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
-          ref: R,
+          ref: w,
           children: (0, r.jsx)(c.M14, {
             type: "critical",
             children: M

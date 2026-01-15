@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   BL: () => c,
-  Ct: () => h,
+  Ct: () => m,
   F2: () => a,
   I: () => i,
   Pj: () => f,
   YP: () => _,
-  bw: () => m,
+  bw: () => h,
   d7: () => s,
   k5: () => p,
   mv: () => l,
@@ -30,10 +30,10 @@ var r = "top",
   f = "viewport",
   p = "popper",
   _ = "reference",
-  m = l.reduce(function(e, t) {
+  h = l.reduce(function(e, t) {
     return e.concat([t + "-" + c, t + "-" + u])
   }, []),
-  h = [].concat(l, [s]).reduce(function(e, t) {
+  m = [].concat(l, [s]).reduce(function(e, t) {
     return e.concat([t, t + "-" + c, t + "-" + u])
   }, []),
   g = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"]

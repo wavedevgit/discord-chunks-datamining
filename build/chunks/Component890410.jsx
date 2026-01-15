@@ -53,9 +53,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,7 +63,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -78,10 +78,10 @@ function g(e) {
     content: i,
     className: d,
     compact: p,
-    popoutProps: h,
+    popoutProps: m,
     hideTimestamp: g = false,
     withFooter: E = false
-  } = e, b = m(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
+  } = e, b = h(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
   let y = (0, o.ZP)(t);
   return (0, r.jsx)("div", {
     className: a()({
@@ -111,7 +111,7 @@ function g(e) {
         className: a()(u.header, {
           [u.compact]: p
         })
-      }, null != h ? h : {})),
+      }, null != m ? m : {})),
       compact: p,
       author: y
     }))

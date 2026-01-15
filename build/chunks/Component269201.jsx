@@ -21,8 +21,8 @@ function s(e) {
     saturation: f = 1,
     density: p = "compact",
     disableAdaptiveTheme: _ = false,
-    reduceAdaptiveTheme: m = false
-  } = e, h = i.useMemo(() => (0, a.TT)({
+    reduceAdaptiveTheme: h = false
+  } = e, m = i.useMemo(() => (0, a.TT)({
     theme: n,
     primaryColor: s,
     secondaryColor: l,
@@ -32,10 +32,10 @@ function s(e) {
     saturation: f,
     density: p,
     disableAdaptiveTheme: _,
-    reduceAdaptiveTheme: m
-  }), [n, s, l, c, u, d, f, p, _, m]);
+    reduceAdaptiveTheme: h
+  }), [n, s, l, c, u, d, f, p, _, h]);
   return (0, r.jsx)(a.Ni.Provider, {
-    value: h,
+    value: m,
     children: t
   })
 }

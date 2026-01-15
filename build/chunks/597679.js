@@ -25,6 +25,6 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
   E = (0, Chunk509613.m7)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t["+CbP2v"]),
     getLegacySearchKey: () => (0, u.Gl)("PremiumGuildSubscriptionsPanel") ? true : o.s6.GUILD_BOOSTING,
-    icon: Chunk657707.Ucv,
+    icon: Chunk657707.BoostGemIcon,
     buildLayout: () => (0, u.Gl)("PremiumGuildSubscriptionsPanel") ? [c] : [S]
   })

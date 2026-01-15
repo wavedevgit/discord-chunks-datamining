@@ -13,9 +13,9 @@ require.d(exports, {
   dangerouslyConstructGuildRecordFromUntypedObject: () => T,
   e: () => v,
   lM: () => p,
-  rk: () => h,
+  rk: () => m,
   sp: () => g,
-  wD: () => m,
+  wD: () => h,
   yS: () => I,
   z$: () => N
 }), require("./953529.js");
@@ -70,7 +70,7 @@ function p(e) {
 }
 
 function _(e, t, n) {
-  var r, i, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, w, x, L;
+  var r, i, l, c, u, d, f, p, _, h, m, g, E, b, y, O, v, S, I, T, C, A, N, P, R, x, L;
   return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -87,8 +87,8 @@ function _(e, t, n) {
     application_id: null != (f = e.application_id) ? f : null,
     afkChannelId: null != (p = e.afk_channel_id) ? p : null,
     afkTimeout: null != (_ = e.afk_timeout) ? _ : s.Cx.afkTimeout,
-    systemChannelId: null != (m = e.system_channel_id) ? m : null,
-    verificationLevel: null != (h = e.verification_level) ? h : s.Cx.verificationLevel,
+    systemChannelId: null != (h = e.system_channel_id) ? h : null,
+    verificationLevel: null != (m = e.verification_level) ? m : s.Cx.verificationLevel,
     explicitContentFilter: null != (g = e.explicit_content_filter) ? g : s.Cx.explicitContentFilter,
     defaultMessageNotifications: e.default_message_notifications,
     mfaLevel: null != (E = e.mfa_level) ? E : s.Cx.mfaLevel,
@@ -105,15 +105,15 @@ function _(e, t, n) {
     maxMembers: null != (A = e.max_members) ? A : s.Cx.maxMembers,
     nsfwLevel: null != (N = e.nsfw_level) ? N : s.Cx.nsfwLevel,
     ownerConfiguredContentLevel: null != (P = e.owner_configured_content_level) ? P : null,
-    hubType: null != (w = e.hub_type) ? w : null,
+    hubType: null != (R = e.hub_type) ? R : null,
     latestOnboardingQuestionId: null != (x = e.latest_onboarding_question_id) ? x : null,
     profile: null != (L = e.profile) ? L : null,
-    premiumFeatures: null != e.premium_features ? R(e.premium_features) : null,
+    premiumFeatures: null != e.premium_features ? w(e.premium_features) : null,
     moderatorReporting: null != e.moderator_reporting ? D(e.moderator_reporting) : null
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   var n, r;
   let a = null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? true : t.joinedAt) ? n : null,
     s = null != (r = e.premium_subscription_count) ? r : 0;
@@ -126,7 +126,7 @@ function m(e, t) {
   }, t)
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   return f(u({}, e), {
     joinedAt: null != e.joinedAt ? e.joinedAt.toISOString() : null,
     features: Array.from(e.features),
@@ -299,7 +299,7 @@ function C(e) {
     vanity_url_code: null != (t = e.vanityURLCode) ? t : null,
     premium_tier: e.premiumTier,
     premium_progress_bar_enabled: e.premiumProgressBarEnabled,
-    premium_features: null != e.premiumFeatures ? w(e.premiumFeatures) : null,
+    premium_features: null != e.premiumFeatures ? R(e.premiumFeatures) : null,
     system_channel_flags: e.systemChannelFlags,
     discovery_splash: e.discoverySplash,
     rules_channel_id: e.rulesChannelId,
@@ -335,7 +335,7 @@ function P(e) {
   return (0, o.bk)(s.VI, e)
 }
 
-function R(e) {
+function w(e) {
   return {
     features: e.features,
     additionalEmojiSlots: e.additional_emoji_slots,
@@ -344,7 +344,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function R(e) {
   return {
     features: e.features,
     additional_emoji_slots: e.additionalEmojiSlots,

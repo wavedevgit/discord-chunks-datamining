@@ -2,7 +2,7 @@
 /** chunk id: 775086, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Modal: () => h
+  Modal: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,7 +54,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -70,14 +70,14 @@ function m(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   var {
     size: t,
     title: n,
     subtitle: u,
     input: f,
-    preview: m,
-    actions: h,
+    preview: h,
+    actions: m,
     actionBarInput: g,
     actionBarInputLayout: E = "default",
     listProps: b,
@@ -98,11 +98,11 @@ function h(e) {
       listProps: b,
       children: O
     }), (0, r.jsx)(s.m, {
-      children: m
+      children: h
     }), (0, r.jsx)(a.G, {
       leading: g,
       leadingLayout: E,
-      actions: h,
+      actions: m,
       actionsFullWidth: null == g
     })]
   }))

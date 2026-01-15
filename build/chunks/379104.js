@@ -66,10 +66,10 @@ i.prototype.get_child = function(e) {
         var _ = r.get_child(!d);
         if (null !== _)
           if (o(_.get_child(!d)) || o(_.get_child(d))) {
-            var m = a.right === r;
-            o(_.get_child(d)) ? a.set_child(m, l(r, d)) : o(_.get_child(!d)) && a.set_child(m, s(r, d));
-            var h = a.get_child(m);
-            h.red = true, n.red = true, h.left.red = false, h.right.red = false
+            var h = a.right === r;
+            o(_.get_child(d)) ? a.set_child(h, l(r, d)) : o(_.get_child(!d)) && a.set_child(h, s(r, d));
+            var m = a.get_child(h);
+            m.red = true, n.red = true, m.left.red = false, m.right.red = false
           } else r.red = false, _.red = true, n.red = true
       }
     }

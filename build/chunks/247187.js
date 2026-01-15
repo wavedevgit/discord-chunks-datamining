@@ -101,12 +101,12 @@ function d(e, t) {
     u = true;
   try {
     for (var d, f = a[Symbol.iterator](); !(l = (d = f.next()).done); l = true) {
-      var m = d.value,
-        h = m.endsWith("?") && m.length > 1;
-      h && (m = m.slice(0, false));
-      var g = _(m),
+      var h = d.value,
+        m = h.endsWith("?") && h.length > 1;
+      m && (h = h.slice(0, false));
+      var g = _(h),
         E = i[g];
-      1 !== o && E || (n ? r.key = g : r.which = p(m)), E && (r[E] = !h || null)
+      1 !== o && E || (n ? r.key = g : r.which = p(h)), E && (r[E] = !m || null)
     }
   } catch (e) {
     c = true, u = e

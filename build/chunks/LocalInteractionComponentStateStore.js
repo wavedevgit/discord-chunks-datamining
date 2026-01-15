@@ -33,7 +33,7 @@ function _(e) {
   null != t && f.delete(t), d.delete(e), c.delete(e), u++
 }
 
-function m(e) {
+function h(e) {
   let {
     componentId: t,
     messageId: n
@@ -42,7 +42,7 @@ function m(e) {
   r.delete(t), 0 === r.size && c.delete(n), u++
 }
 
-function h() {
+function m() {
   c.clear(), d.clear(), f.clear(), u++
 }
 
@@ -101,7 +101,7 @@ function v(e) {
   if (null == t) returnfalse;
   let n = f.get(t);
   if (null == n) returnfalse;
-  m(n)
+  h(n)
 }
 
 function S(e) {
@@ -125,7 +125,7 @@ class I extends(r = Chunk442837.ZP.Store) {
 }
 s(I, "displayName", "LocalInteractionComponentStateStore");
 let T = new I(Chunk570140.Z, {
-  LOGOUT: h,
+  LOGOUT: m,
   QUEUE_INTERACTION_COMPONENT_STATE: g,
   SET_INTERACTION_COMPONENT_STATE: E,
   MESSAGE_DELETE: y,

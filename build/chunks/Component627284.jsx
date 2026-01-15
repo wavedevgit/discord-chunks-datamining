@@ -68,27 +68,27 @@ function O(e) {
     a && l.Z.clearPTTAdminWarning()
   }), (0, r.jsx)(o.u_l, E({
     size: "md",
-    title: h.intl.string(h.t.eotlXE),
-    subtitle: h.intl.formatToPlainString(h.t.Lw6KXV, {
+    title: m.intl.string(m.t.eotlXE),
+    subtitle: m.intl.formatToPlainString(m.t.Lw6KXV, {
       game: null == t ? true : t.name
     }),
     actions: [{
-      text: h.intl.string(h.t.psXQHP),
+      text: m.intl.string(m.t.psXQHP),
       onClick: () => {
-        n.onClose(), window.open(_.Z.getArticleURL(m.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank")
+        n.onClose(), window.open(_.Z.getArticleURL(h.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank")
       }
     }],
     actionBarInput: (0, r.jsx)(s.Checkbox, {
       checked: a,
       onChange: e => u(e),
-      label: h.intl.string(h.t["5E9SB9"]),
+      label: m.intl.string(m.t["5E9SB9"]),
       labelType: "secondary"
     })
   }, n))
 }
 
 function v() {
-  let [e, t] = (0, a.Wu)([u.ZP], () => [u.ZP.canShowAdminWarning, u.ZP.getVisibleGame()], []), n = (0, a.e7)([p.Z], () => p.Z.isConnected(), []), o = (0, a.e7)([f.Z], () => f.Z.getMode() === m.pM4.PUSH_TO_TALK, []), l = null != t && t.elevated && n && o && e, c = i.useRef(null);
+  let [e, t] = (0, a.Wu)([u.ZP], () => [u.ZP.canShowAdminWarning, u.ZP.getVisibleGame()], []), n = (0, a.e7)([p.Z], () => p.Z.isConnected(), []), o = (0, a.e7)([f.Z], () => f.Z.getMode() === h.pM4.PUSH_TO_TALK, []), l = null != t && t.elevated && n && o && e, c = i.useRef(null);
   return i.useEffect(() => {
     if (!(0, d.s2)(u.ZP)) return l ? c.current = (0, s.h7j)(e => (0, r.jsx)(O, E({
       currentGame: t

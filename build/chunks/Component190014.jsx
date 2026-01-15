@@ -26,20 +26,20 @@ function E(e) {
     guildId: n
   } = e, c = l.iH.useSetting().includes(n), p = i.useCallback(e => {
     let r = (0, s.rr)();
-    e ? r.delete(n) : r.add(n), l.iH.updateSetting([...r]), a.default.track(h.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? r.delete(n) : r.add(n), l.iH.updateSetting([...r]), a.default.track(m.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.Y.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
       ingress: t,
       guild_id: n
     })
   }, [t, n]);
-  return n === m.T ? null : (0, r.jsx)(u.U, {
+  return n === h.T ? null : (0, r.jsx)(u.U, {
     setting: _.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_JOINING_V2,
     children: (0, r.jsx)(d.ZP, {
       title: g.intl.string(g.t["T+nevN"]),
       value: !c,
       onChange: p,
       note: g.intl.format(g.t.jXKQCu, {
-        helpdeskArticle: o.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS)
+        helpdeskArticle: o.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })
   })

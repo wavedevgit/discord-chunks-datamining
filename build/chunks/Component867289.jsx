@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk335094 = require("./335094.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function E(e, t) {
 
 function b(e) {
   let t, n, {
-      currentUser: m,
+      currentUser: h,
       togglingSMS: g
     } = e,
     [b, y] = i.useState(false),
@@ -67,7 +67,7 @@ function b(e) {
     }, [b]),
     v = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-      (0, a.h7j)(t => (0, r.jsx)(c.default, h({
+      (0, a.h7j)(t => (0, r.jsx)(c.default, m({
         reason: s.L.USER_SETTINGS_UPDATE
       }, t, e)), {
         modalKey: f.M
@@ -77,22 +77,22 @@ function b(e) {
       v()
     }, [v]),
     I = i.useCallback(() => {
-      null == m.phone ? v({
+      null == h.phone ? v({
         onAddedPhone: o.Z.enableSMS
       }) : o.Z.enableSMS()
-    }, [m, v]),
+    }, [h, v]),
     T = i.useCallback(() => {
-      (0, a.h7j)(e => (0, r.jsx)(l.default, E(h({}, e), {
+      (0, a.h7j)(e => (0, r.jsx)(l.default, E(m({}, e), {
         handleSubmit: o.Z.disableSMS,
         title: p.intl.string(p.t.KLWnit),
         children: p.intl.string(p.t["W0/Duf"])
       })))
     }, []),
     C = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
-    A = null != m.phone,
-    N = m.hasFlag(d.xW$.MFA_SMS);
+    A = null != h.phone,
+    N = h.hasFlag(d.xW$.MFA_SMS);
   if (A || N) {
-    let e = b ? m.phone : C(m.phone);
+    let e = b ? h.phone : C(h.phone);
     n = (0, r.jsxs)(a.Text, {
       variant: "text-sm/normal",
       children: [p.intl.format(p.t.PXVoEO, {
@@ -112,7 +112,7 @@ function b(e) {
     onClick: T
   });
   else {
-    let e = (0, u.c)(m);
+    let e = (0, u.c)(h);
     t = (0, r.jsxs)(a.ButtonGroup, {
       size: "sm",
       children: [(0, r.jsx)(a.Button, {

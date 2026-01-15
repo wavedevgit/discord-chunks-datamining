@@ -28,12 +28,12 @@ module.exports = function(e, t, n, d) {
       }, n[f](""), !t
     });
   if (!p || !_ || n) {
-    var m = /./ [f],
-      h = t(f, "" [e], function(e, t, n, i, o) {
+    var h = /./ [f],
+      m = t(f, "" [e], function(e, t, n, i, o) {
         var s = t.exec;
         return s === a || s === u.exec ? p && !o ? {
           done: true,
-          value: r(m, t, n, i)
+          value: r(h, t, n, i)
         } : {
           done: true,
           value: r(e, n, t, i)
@@ -41,7 +41,7 @@ module.exports = function(e, t, n, d) {
           done: false
         }
       });
-    i(String.prototype, e, h[0]), i(u, f, h[1])
+    i(String.prototype, e, m[0]), i(u, f, m[1])
   }
   d && l(u[f], "sham", true)
 }

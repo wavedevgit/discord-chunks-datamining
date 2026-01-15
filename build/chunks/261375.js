@@ -18,7 +18,7 @@ var Chunk149765 = require("./149765.js"),
   Chunk287328 = require("./287328.js"),
   Chunk458772 = require("./458772.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -135,7 +135,7 @@ class E {
   }
   unsync(e, t) {
     var n;
-    null == (n = this.synced) || n.delete(e), _.Z.basicChannelsTransaction(t).delete(e), _.Z.syncedBasicChannelsTransaction(t).put(e, false), m.Z.invalidate(e)
+    null == (n = this.synced) || n.delete(e), _.Z.basicChannelsTransaction(t).delete(e), _.Z.syncedBasicChannelsTransaction(t).put(e, false), h.Z.invalidate(e)
   }
   sync(e) {
     g.verbose("Starting to write all basic channels");
@@ -153,7 +153,7 @@ class E {
     return !(null == d.Z.getGuild(e) || (null == (n = this.synced) ? true : n.has(e))) && (null == (r = this.synced) || r.add(e), _.Z.basicChannelsTransaction(t).put(e, y(e)), _.Z.syncedBasicChannelsTransaction(t).put(e, true), true)
   }
   constructor() {
-    h(this, "synced", null), h(this, "actions", {
+    m(this, "synced", null), m(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
       CHANNEL_CREATE: (e, t) => this.handleChannelCreate(e, t),
       CHANNEL_DELETE: (e, t) => this.handleChannelDelete(e, t),

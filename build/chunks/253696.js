@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  b: () => h
+  b: () => m
 });
 var Chunk473749 = require("./473749.js"),
   Chunk367907 = require("./367907.js"),
@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function h(e) {
+function m(e) {
   let t = r.useRef(e);
   r.useEffect(() => {
     t.current.intention === f.Hz.REACTION && g(t.current)
@@ -52,7 +52,7 @@ function g(e) {
     intention: n,
     containerWidth: r,
     rowSize: _,
-    isBurstReaction: h,
+    isBurstReaction: m,
     analyticsObject: g
   } = e, E = o.Z.getChannel(s.Z.getChannelId()), b = null == E ? true : E.getGuildId(), y = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? a.ZP.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, S = y.slice(0, v), I = null != b ? a.ZP.getGuildEmoji(b) : [], T = Object.values(null != (t = a.ZP.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
     topEmojis: C,
@@ -68,7 +68,7 @@ function g(e) {
     newlyAddedEmojis: A,
     rowSize: _
   });
-  i.ZP.trackWithMetadata(n === f.Hz.REACTION ? d.rMx.REACTION_PICKER_OPENED : d.rMx.EXPRESSION_PICKER_OPENED, m({
+  i.ZP.trackWithMetadata(n === f.Hz.REACTION ? d.rMx.REACTION_PICKER_OPENED : d.rMx.EXPRESSION_PICKER_OPENED, h({
     width: r,
     tab: p.X1.EMOJI,
     badged: false,
@@ -87,7 +87,7 @@ function g(e) {
     num_expressions_newly_added: P.length,
     num_animated_expressions_newly_added: P.filter(e => e.animated).length
   }, n === f.Hz.REACTION && {
-    is_burst: h
+    is_burst: m
   }, null != g && {
     location_object: g
   }))

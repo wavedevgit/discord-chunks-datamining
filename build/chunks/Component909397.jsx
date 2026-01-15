@@ -35,17 +35,17 @@ function E(e) {
   let {
     slide: t,
     className: n
-  } = e, a = i.useContext(f.Q), _ = (0, p.Z)((0, c.dQu)(a.primaryColor).hex()), m = (0, d.a7)(_), E = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, a = i.useContext(f.Q), _ = (0, p.Z)((0, c.dQu)(a.primaryColor).hex()), h = (0, d.a7)(_), E = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsx)("div", {
-    className: o()(h.container, n),
+    className: o()(m.container, n),
     children: (0, r.jsx)(s.xKG, {
       artboard: g[t],
       dataBinding: {
         iconColor: {
-          r: m.r,
-          g: m.g,
-          b: m.b,
-          a: 255 * m.a
+          r: h.r,
+          g: h.g,
+          b: h.b,
+          a: 255 * h.a
         },
         reducedMotion: E
       },

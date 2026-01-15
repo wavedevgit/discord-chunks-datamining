@@ -19,8 +19,8 @@ let t = 0x7fffffff,
     "invalid-input": "Invalid input"
   },
   _ = 35,
-  m = Math.floor,
-  h = String.fromCharCode;
+  h = Math.floor,
+  m = String.fromCharCode;
 
 function g(e) {
   throw RangeError(p[e])
@@ -60,8 +60,8 @@ let O = function(e) {
   },
   S = function(e, t, r) {
     let s = 0;
-    for (e = r ? m(e / o) : e >> 1, e += m(e / t); e > _ * i >> 1; s += n) e = m(e / _);
-    return m(s + (_ + 1) * e / (e + a))
+    for (e = r ? h(e / o) : e >> 1, e += h(e / t); e > _ * i >> 1; s += n) e = h(e / _);
+    return h(s + (_ + 1) * e / (e + a))
   },
   I = function(e) {
     let a = [],
@@ -77,14 +77,14 @@ let O = function(e) {
       for (let a = 1, l = n;; l += n) {
         s >= o && g("invalid-input");
         let c = O(e.charCodeAt(s++));
-        (c >= n || c > m((t - u) / a)) && g("overflow"), u += c * a;
+        (c >= n || c > h((t - u) / a)) && g("overflow"), u += c * a;
         let d = l <= f ? r : l >= f + i ? i : l - f;
         if (c < d) break;
         let p = n - d;
-        a > m(t / p) && g("overflow"), a *= p
+        a > h(t / p) && g("overflow"), a *= p
       }
       let c = a.length + 1;
-      f = S(u - l, c, 0 == l), m(u / c) > t - d && g("overflow"), d += m(u / c), u %= c, a.splice(u++, 0, d)
+      f = S(u - l, c, 0 == l), h(u / c) > t - d && g("overflow"), d += h(u / c), u %= c, a.splice(u++, 0, d)
     }
     return String.fromCodePoint(...a)
   },
@@ -94,14 +94,14 @@ let O = function(e) {
       u = l,
       d = 0,
       f = s;
-    for (let t of e) t < 128 && a.push(h(t));
+    for (let t of e) t < 128 && a.push(m(t));
     let p = a.length,
       _ = p;
     for (p && a.push(c); _ < o;) {
       let o = t;
       for (let t of e) t >= u && t < o && (o = t);
       let s = _ + 1;
-      for (let l of (o - u > m((t - d) / s) && g("overflow"), d += (o - u) * s, u = o, e))
+      for (let l of (o - u > h((t - d) / s) && g("overflow"), d += (o - u) * s, u = o, e))
         if (l < u && ++d > t && g("overflow"), l == u) {
           let e = d;
           for (let t = n;; t += n) {
@@ -109,9 +109,9 @@ let O = function(e) {
             if (e < o) break;
             let s = e - o,
               l = n - o;
-            a.push(h(v(o + s % l, 0))), e = m(s / l)
+            a.push(m(v(o + s % l, 0))), e = h(s / l)
           }
-          a.push(h(v(e, 0))), f = S(d, s, _ == p), d = 0, ++_
+          a.push(m(v(e, 0))), f = S(d, s, _ == p), d = 0, ++_
         }++ d, ++u
     }
     return a.join("")

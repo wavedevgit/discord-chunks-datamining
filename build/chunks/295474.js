@@ -46,11 +46,11 @@ function E(e) {
     if (u.has(_.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
       if (null == e) {
         var p;
-        t.nick = [h.intl.formatToPlainString(h.t.WBUh3O, {
+        t.nick = [m.intl.formatToPlainString(m.t.WBUh3O, {
           guildName: null != (p = i.name) ? p : ""
         })]
-      } else t.nick = [h.intl.string(h.t.EPZCrM)];
-    return u.has(_.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [h.intl.string(h.t.dZh1vz)]), t
+      } else t.nick = [m.intl.string(m.t.EPZCrM)];
+    return u.has(_.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [m.intl.string(m.t.dZh1vz)]), t
   }, [e])
 }
 
@@ -63,8 +63,8 @@ function b(e) {
   return [r.useCallback(() => {
     if (null == d) return;
     let e = p.oAB.PROFILE_CUSTOMIZATION,
-      t = m.NB.GUILD;
-    f ? (0, a.Fq)(d) : t = m.NB.USER_PROFILE;
+      t = h.NB.GUILD;
+    f ? (0, a.Fq)(d) : t = h.NB.USER_PROFILE;
     {
       let {
         openUserSettings: r

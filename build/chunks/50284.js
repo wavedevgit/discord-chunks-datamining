@@ -20,20 +20,20 @@ async function _(e, t) {
   if (null == n) return;
   let i = l.Z.getMessages(e),
     _ = i.toArray().filter(e => 0 > d.default.compare(e.id, t)).sort((e, t) => d.default.compare(e.id, t.id)).reverse()[0],
-    m = null == _ ? d.default.atPreviousMillisecond(t) : _.id,
-    h = 0;
+    h = null == _ ? d.default.atPreviousMillisecond(t) : _.id,
+    m = 0;
   i.forAll(e => {
-    d.default.compare(e.id, m) > 0 && (0, c.Ex)(e, n) && h++
+    d.default.compare(e.id, h) > 0 && (0, c.Ex)(e, n) && m++
   });
   let g = s.Z.getChannel(e);
   null != g && g.isThread() && (g.isArchivedThread() && await o.Z.unarchiveThread(g, false), a.Z.hasJoined(e) || await o.Z.joinThread(g, "Mark Unread")), p.log("Marking unread", {
     channelId: e,
     messageId: t
   }), r.tn.post({
-    url: f.ANM.MESSAGE_ACK(e, m),
+    url: f.ANM.MESSAGE_ACK(e, h),
     body: {
       manual: true,
-      mention_count: h
+      mention_count: m
     },
     oldFormErrors: true,
     rejectWithError: true

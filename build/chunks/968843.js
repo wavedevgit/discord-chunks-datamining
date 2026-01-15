@@ -5,7 +5,7 @@ require.d(exports, {
   $I: () => e$,
   B4: () => eV,
   B6: () => ey,
-  Fy: () => eR,
+  Fy: () => ew,
   GI: () => eL,
   Gd: () => eY,
   I: () => eG,
@@ -23,10 +23,10 @@ require.d(exports, {
   _Q: () => eU,
   _s: () => ej,
   aV: () => eq,
-  bA: () => em,
+  bA: () => eh,
   e5: () => ep,
-  eN: () => eh,
-  fN: () => ew,
+  eN: () => em,
+  fN: () => eR,
   iO: () => eP,
   kJ: () => eD,
   m4: () => e1,
@@ -108,7 +108,7 @@ function q() {
     l = (0, D.c)({
       location: V.dr.USE_QUESTS
     }),
-    u = R.DL.useConfig({
+    u = w.DL.useConfig({
       location: V.dr.USE_QUESTS
     });
   return r.useEffect(() => {
@@ -116,7 +116,7 @@ function q() {
       if (n(true), (0, T.xw)(), u.enabled && "focused" !== f.Z.getState()) return;
       let {
         enableNewRequestBehavior: t
-      } = w.Z.getConfig({
+      } = R.Z.getConfig({
         location: "QuestHookUseQuests"
       });
       if (!t)(0, T.w)(P.Ok.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(e.callerSource))
@@ -138,12 +138,12 @@ function Q(e, t, n) {
   let f = !(0, M.zi)(e),
     p = (null == (a = e.userStatus) ? true : a.claimedAt) != null,
     _ = (null == (o = t.userStatus) ? true : o.claimedAt) != null,
-    m = (null == (s = e.userStatus) ? true : s.enrolledAt) != null,
-    h = (null == (l = t.userStatus) ? true : l.enrolledAt) != null,
+    h = (null == (s = e.userStatus) ? true : s.enrolledAt) != null,
+    m = (null == (l = t.userStatus) ? true : l.enrolledAt) != null,
     {
       enabled: g,
       minutes: E
-    } = (0, R.eC)(V.dr.QUEST_HOME_DESKTOP),
+    } = (0, w.eC)(V.dr.QUEST_HOME_DESKTOP),
     y = b.Z.Millis.MINUTE * E,
     O = e3(e, y),
     v = e3(t, y);
@@ -151,9 +151,9 @@ function Q(e, t, n) {
     let {
       takeover: r
     } = n, i = null != r && (0, F.P9)(r, e.id), a = null != r && (0, F.P9)(r, t.id);
-    return i !== a && (i || a) ? i ? K : z : g && O !== v && (O || v) ? O ? z : K : p !== _ ? p ? z : K : m !== h ? m ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 1)
+    return i !== a && (i || a) ? i ? K : z : g && O !== v && (O || v) ? O ? z : K : p !== _ ? p ? z : K : h !== m ? h ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 1)
   }
-  return p !== _ ? p ? K : z : m !== h ? m ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 0)
+  return p !== _ ? p ? K : z : h !== m ? h ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 0)
 }
 
 function X(e, t, n) {
@@ -305,7 +305,7 @@ var ep = function(e) {
     return e.TAB = "tab", e.QUEST_ID = "quest_id", e.SORT = "sort", e.FILTER = "filter", e
   }({});
 
-function em(e) {
+function eh(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : el,
     {
       quests: n,
@@ -333,7 +333,7 @@ function em(e) {
   }
 }
 
-function eh() {
+function em() {
   let e = r.useRef(false),
     t = (0, c.Wu)([N.Z], () => Array.from(N.Z.claimedQuests.values())),
     n = (0, c.e7)([N.Z], () => N.Z.isFetchingClaimedQuests);
@@ -355,9 +355,9 @@ function eE(e) {
 
 function eb(e, t, n) {
   var r;
-  let i = (0, c.e7)([m.Z], () => {
+  let i = (0, c.e7)([h.Z], () => {
       var e;
-      return null != (e = m.Z.getChannel(null == t ? true : t.channelId)) ? e : null
+      return null != (e = h.Z.getChannel(null == t ? true : t.channelId)) ? e : null
     }),
     a = (0, c.e7)([N.Z], () => null != N.Z.questEnrollmentBlockedUntil, []),
     o = (0, c.e7)([g.default], () => {
@@ -475,7 +475,7 @@ function eP() {
   }, [e, n, t])
 }
 
-function eR(e) {
+function ew(e) {
   let t = r.useMemo(() => {
     let t = new Set;
     for (let n of e) {
@@ -487,9 +487,9 @@ function eR(e) {
   return (0, p.Z)(t)
 }
 
-function ew(e) {
+function eR(e) {
   let t = (0, c.e7)([N.Z], () => N.Z.quests),
-    n = eR(Array.from(t.values())),
+    n = ew(Array.from(t.values())),
     i = r.useMemo(() => {
       let n = (0, F.NI)(t, V.tt);
       return (0, k.Jg)(n, e)
@@ -511,9 +511,9 @@ function ex() {
   let {
     fetching: e,
     accounts: t
-  } = (0, c.cj)([h.Z], () => ({
-    fetching: h.Z.isFetching(),
-    accounts: h.Z.getAccounts()
+  } = (0, c.cj)([m.Z], () => ({
+    fetching: m.Z.isFetching(),
+    accounts: m.Z.getAccounts()
   })), {
     xboxAccounts: n,
     playstationAccounts: i,
@@ -542,7 +542,7 @@ let eL = e => {
       preview: n,
       beforeRequest: i,
       afterRequest: a
-    } = e, [o, l] = r.useState([]), [u, d] = r.useState(false), f = (0, c.e7)([h.Z], () => h.Z.getAccounts());
+    } = e, [o, l] = r.useState([]), [u, d] = r.useState(false), f = (0, c.e7)([m.Z], () => m.Z.getAccounts());
     return r.useEffect(() => {
       l(e => e.filter(e => e.type !== s.K.EXPIRED_CREDENTIAL))
     }, [f]), {
@@ -686,9 +686,9 @@ function eB(e) {
     f = 0 === i.percentComplete,
     p = l && !c && !s && u && (d || f && a === P.LI.DESKTOP),
     _ = (0, S.isWeb)() && p && !(0, U.Gd)(e),
-    m = (0, S.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && p,
-    h = [];
-  return m && h.push(W.intl.string(W.t.MFGxFM)), _ && h.push(W.intl.string(W.t.BV6xDm)), h
+    h = (0, S.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && p,
+    m = [];
+  return h && m.push(W.intl.string(W.t.MFGxFM)), _ && m.push(W.intl.string(W.t.BV6xDm)), m
 }
 
 function eV(e) {
@@ -762,8 +762,8 @@ function eW(e) {
     }),
     p = s ? l : d,
     _ = s ? u : f,
-    m = i ? p : _;
-  return a ? m : W.intl.formatToPlainString(W.t.tTlItm, {
+    h = i ? p : _;
+  return a ? h : W.intl.formatToPlainString(W.t.tTlItm, {
     duration: n,
     decorationName: t
   })
@@ -853,7 +853,7 @@ let e1 = e => {
 function e2() {
   let {
     enabled: e
-  } = R.n0.useConfig({
+  } = w.n0.useConfig({
     location: V.dr.QUEST_HOME_DESKTOP
   }), [t, n] = r.useState(e), [i, a] = r.useState(e), [o, s] = r.useState(false), [l, u] = r.useState(false), {
     isFetching: d,

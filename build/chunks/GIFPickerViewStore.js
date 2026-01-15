@@ -50,8 +50,8 @@ function f(e, t) {
 }
 let p = "mp4",
   _ = "tinymp4",
-  m = "nanomp4",
-  h = "webm",
+  h = "nanomp4",
+  m = "webm",
   g = "tinywebm",
   E = "nanowebm",
   b = "fixed_height.mp4",
@@ -60,13 +60,13 @@ let p = "mp4",
   v = "fixed_width_small.mp4",
   S = "downsized_small.mp4",
   I = "original.mp4",
-  T = h,
+  T = m,
   C = M(T) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
   A = null,
   N = "",
   P = "",
-  R = [],
   w = [],
+  R = [],
   D = [],
   x = [];
 
@@ -75,7 +75,7 @@ function L(e) {
 }
 
 function j(e) {
-  "" === (N = e.query) && (P = "", R = [], D = [])
+  "" === (N = e.query) && (P = "", w = [], D = [])
 }
 
 function M(e) {
@@ -88,8 +88,8 @@ function M(e) {
     case I:
     case p:
     case _:
-    case m:
     case h:
+    case m:
     case g:
     case E:
       returntrue;
@@ -112,7 +112,7 @@ function U(e) {
 
 function G(e) {
   if (null != e.query && N === P) returnfalse;
-  null != e.query && (P = e.query), R = e.items.map(e => {
+  null != e.query && (P = e.query), w = e.items.map(e => {
     let {
       width: t,
       height: n,
@@ -138,12 +138,12 @@ function Z(e) {
     query: t
   } = e;
   if (null == t) returnfalse;
-  P = t, R = []
+  P = t, w = []
 }
 
 function F(e) {
   let t = e.trendingCategories;
-  w = [...null != e.trendingGIFPreview ? [{
+  R = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.intl.string(l.t.H6zNFz),
     src: k(e.trendingGIFPreview.src),
@@ -179,10 +179,10 @@ class H extends(r = Chunk442837.ZP.Store) {
     return P
   }
   getResultItems() {
-    return R
+    return w
   }
   getTrendingCategories() {
-    return w
+    return R
   }
   getSelectedFormat() {
     return T

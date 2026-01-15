@@ -31,7 +31,7 @@ var r, Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js");
 
-function R(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = {},
+let R = {},
   D = null,
   x = [],
   L = new Chunk810457.Z,
@@ -59,13 +59,13 @@ function H() {
     n = e => !(!N.TPd.GUILD_TEXTUAL.has(e.type) || (0, l.zd)(e.id)) && ((0, _.Q5)(e.type) ? (0, p.J)(e) === P.iN.ALL_MESSAGES && !f.Z.isMuted(e.id) : O.ZP.allowAllMessages(e)),
     r = [];
   for (let t of e) {
-    let e = h.Z.getBasicChannel(t);
+    let e = m.Z.getBasicChannel(t);
     null != e && n(e) && r.push(e)
   }
   for (let e in t)
     for (let i in t[e])
       for (let a in t[e][i]) {
-        let e = h.Z.getBasicChannel(a);
+        let e = m.Z.getBasicChannel(a);
         null != e && n(e) && r.push(e)
       }
   return r.map(e => e.id).sort((e, t) => {
@@ -80,7 +80,7 @@ function H() {
 function Y(e) {
   var t;
   if (!E.Z.isReady(e)) return;
-  let n = h.Z.getBasicChannel(e),
+  let n = m.Z.getBasicChannel(e),
     r = E.Z.getMessages(e);
   if (r.hasPresent() && 0 !== r.length) return L.addChannelMessages({
     channel: n,
@@ -95,7 +95,7 @@ function W() {
     return
   }
   for (let e of D.toSorted((e, t) => S.default.compare(b.ZP.lastMessageId(t), b.ZP.lastMessageId(e)))) {
-    let t = w[e];
+    let t = R[e];
     if (t.loadState === A.a7.UNLOADED && null != t.mostRecentMessageId) {
       G = t.mostRecentMessageId;
       return
@@ -110,32 +110,32 @@ function K() {
     staleChannelIds: t
   } = H();
   D = e, x = t, a()(null != D, "notifyingChannelIds should not be null");
-  let n = D.filter(e => null == w[e]),
-    r = Object.keys(w).filter(e => !(null == D ? true : D.includes(e)));
+  let n = D.filter(e => null == R[e]),
+    r = Object.keys(R).filter(e => !(null == D ? true : D.includes(e)));
   if (0 !== D.length && 0 === n.length && 0 === r.length) returnfalse;
-  for (let e of r) delete w[e];
+  for (let e of r) delete R[e];
   for (let e of n)
-    if (w[e] = {
+    if (R[e] = {
         loadState: A.a7.UNLOADED,
         mostRecentMessageId: b.ZP.lastMessageId(e)
       }, E.Z.isReady(e)) {
       let t = Y(e);
       if (null != t) {
         var i, o;
-        w[e].loadState = A.a7.LOADED, w[e].mostRecentMessageId = null != (o = null == (i = t.last()) ? true : i.id) ? o : w[e].mostRecentMessageId
+        R[e].loadState = A.a7.LOADED, R[e].mostRecentMessageId = null != (o = null == (i = t.last()) ? true : i.id) ? o : R[e].mostRecentMessageId
       }
     } L.updateChannelIds(D), W()
 }
 
 function z() {
-  w = {}, D = null, x = [], L = new C.Z, j = false, M = false, k = false, G = S.default.fromTimestamp(Date.now()), Z = true, U = false, B = null, F = null
+  R = {}, D = null, x = [], L = new C.Z, j = false, M = false, k = false, G = S.default.fromTimestamp(Date.now()), Z = true, U = false, B = null, F = null
 }
 
 function q() {
   var e, t, n;
   for (let n of (K(), null != D ? D : [])) {
     let r = Y(n);
-    null != r && (w[n].loadState = A.a7.LOADED, w[n].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : e.id) ? t : null, W())
+    null != r && (R[n].loadState = A.a7.LOADED, R[n].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : e.id) ? t : null, W())
   }
   let r = null != (n = u.ZP.getSettingsFilteredMentions()) ? n : [];
   L.addMessages(r.map(e => {
@@ -143,7 +143,7 @@ function q() {
     return {
       id: e.id,
       channelId: e.channel_id,
-      guildId: null == (t = h.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
+      guildId: null == (t = m.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
       kind: A.fL.MENTION,
       message: e
     }
@@ -159,7 +159,7 @@ function X() {
 }
 
 function J(e) {
-  if (e instanceof m.ZP) return e;
+  if (e instanceof h.ZP) return e;
   let t = E.Z.getMessage(e.channel_id, e.id);
   return null != t ? t : (0, c.e5)(e)
 }
@@ -183,7 +183,7 @@ function $(e) {
   L.addMessage({
     id: a.id,
     channelId: a.channel_id,
-    guildId: null == (r = h.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
+    guildId: null == (r = m.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
     kind: c ? A.fL.MENTION : A.fL.ALL_MESSAGES_CHANNEL,
     message: s
   })
@@ -197,7 +197,7 @@ function ee(e) {
   let n = Y(t);
   if (null == n) returnfalse;
   let r = n.length >= A.AQ || n.hasFetched && !n.hasMoreBefore;
-  w[t].loadState !== A.a7.LOADED && (w[t].loadState = r ? A.a7.LOADED : A.a7.LOADED_UNREAD), W()
+  R[t].loadState !== A.a7.LOADED && (R[t].loadState = r ? A.a7.LOADED : A.a7.LOADED_UNREAD), W()
 }
 
 function et(e) {
@@ -212,7 +212,7 @@ function et(e) {
     return {
       id: e.id,
       channelId: e.channel_id,
-      guildId: null == (t = h.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
+      guildId: null == (t = m.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
       kind: A.fL.MENTION,
       message: e
     }
@@ -320,13 +320,13 @@ function e_(e) {
   } = e, a = null == (t = v.default.getCurrentUser()) ? true : t.id;
   if (null == a) returnfalse;
   if (null == r ? true : r.some(e => e.userId === a)) {
-    let e = h.Z.getBasicChannel(n);
+    let e = m.Z.getBasicChannel(n);
     return !(null == e || f.Z.isMuted(n)) && (0, p.J)(e) !== P.iN.NO_MESSAGES && void Q()
   }
   return null != i && !!i.includes(a) && void Q()
 }
 
-function em(e) {
+function eh(e) {
   let {
     channel: t
   } = e;
@@ -334,7 +334,7 @@ function em(e) {
   Q()
 }
 
-function eh(e) {
+function em(e) {
   let {
     guild: t
   } = e;
@@ -350,7 +350,7 @@ function eg(e) {
 }
 class eE extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(d.Z, h.Z, g.ZP, f.Z, E.Z, b.ZP, u.ZP, y.ZP, O.ZP, v.default)
+    this.waitFor(d.Z, m.Z, g.ZP, f.Z, E.Z, b.ZP, u.ZP, y.ZP, O.ZP, v.default)
   }
   canLoadMore(e) {
     let {
@@ -367,7 +367,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     return D
   }
   getChannelInfoMap() {
-    return w
+    return R
   }
   get oldestDisplayedMessageId() {
     return G
@@ -399,7 +399,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-R(eE, "displayName", "NotificationsInboxStore");
+w(eE, "displayName", "NotificationsInboxStore");
 let eb = new eE(Chunk570140.Z, {
   LOAD_RECENT_MENTIONS_SUCCESS: et,
   LOAD_MESSAGES_SUCCESS: ee,
@@ -415,9 +415,9 @@ let eb = new eE(Chunk570140.Z, {
   USER_GUILD_SETTINGS_GUILD_UPDATE: Q,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: Q,
   CHANNEL_CREATE: ef,
-  GUILD_DELETE: eh,
-  THREAD_DELETE: em,
-  CHANNEL_DELETE: em,
+  GUILD_DELETE: em,
+  THREAD_DELETE: eh,
+  CHANNEL_DELETE: eh,
   THREAD_MEMBER_UPDATE: ep,
   THREAD_MEMBERS_UPDATE: e_,
   NOTIFICATIONS_INBOX_OPEN: eu,

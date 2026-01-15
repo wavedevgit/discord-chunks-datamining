@@ -21,13 +21,13 @@ function c(e) {
     handleSubmit: f,
     onError: p,
     skipErrorMsgAbortCode: _,
-    onPasswordChange: m
-  } = e, [h, g] = i.useState(""), [E, b] = i.useState(null), [y, O] = i.useState(false), v = e => null != _ && (null == e ? true : e.code) === _, S = e => {
-    e.preventDefault(), O(true), f(h).then(e => d(null != e ? e : true), e => {
+    onPasswordChange: h
+  } = e, [m, g] = i.useState(""), [E, b] = i.useState(null), [y, O] = i.useState(false), v = e => null != _ && (null == e ? true : e.code) === _, S = e => {
+    e.preventDefault(), O(true), f(m).then(e => d(null != e ? e : true), e => {
       null != e.body && (null == p || p(e.body), !v(e.body) && (e.body.password ? (b(e.body.password), O(false)) : e.body.message && (b(e.body.message), O(false))))
     }).finally(() => O(false))
   }, I = e => {
-    null == m || m(e), g(e)
+    null == h || h(e), g(e)
   }, T = i.useCallback(async () => {
     await d()
   }, [d]), C = i.Children.count(c) > 0 ? (0, r.jsx)(o.Zbd, {
@@ -50,7 +50,7 @@ function c(e) {
       }, {
         text: null != n ? n : s.intl.string(s.t["cY+Oob"]),
         type: "submit",
-        disabled: y || 0 === h.length
+        disabled: y || 0 === m.length
       }],
       onClose: T,
       transitionState: u,
@@ -61,7 +61,7 @@ function c(e) {
           label: s.intl.string(s.t["CIGa+7"]),
           autoComplete: "current-password",
           autoFocus: true,
-          value: h,
+          value: m,
           onChange: I,
           required: true
         }), null != E && "" !== E ? (0, r.jsxs)(o.Text, {

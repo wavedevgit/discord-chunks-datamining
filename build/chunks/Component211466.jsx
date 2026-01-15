@@ -2,7 +2,7 @@
 /** chunk id: 211466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => m
+  n: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,7 +18,7 @@ var Chunk925513 = require("./925513.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk693976 = require("./693976.js");
 
-function m() {
+function h() {
   let e = (0, i.v6)(),
     t = [{
       title: p.intl.string(p.t.GYpoAq),

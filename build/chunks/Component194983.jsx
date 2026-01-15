@@ -2,7 +2,7 @@
 /** chunk id: 194983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,19 +67,19 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = 500;
+let h = 500;
 
-function h(e) {
+function m(e) {
   let {
     children: t,
     "aria-label": n,
     className: a,
     position: c,
     delay: d
-  } = e, _ = p(e, ["children", "aria-label", "className", "position", "delay"]), h = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
+  } = e, _ = p(e, ["children", "aria-label", "className", "position", "delay"]), m = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
   return (0, r.jsx)(s.aML, f(u({}, _), {
     position: null != c ? c : "top",
-    delay: null != d ? d : m,
+    delay: null != d ? d : h,
     text: t,
     "aria-label": g,
     children: n => {
@@ -89,12 +89,12 @@ function h(e) {
       } = n;
       return (0, r.jsx)("div", {
         className: o()(a, l.overflow),
-        ref: h,
+        ref: m,
         "aria-hidden": e["aria-hidden"],
         onMouseEnter: () => {
           let {
             current: e
-          } = h;
+          } = m;
           null != e && e.offsetWidth < e.scrollWidth && (null == i || i())
         },
         onMouseLeave: s,

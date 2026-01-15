@@ -24,12 +24,12 @@ let f = [],
   p = {},
   _ = null;
 
-function m(e) {
+function h(e) {
   let t = new Set([...null != e ? e : []]);
-  return [...f].reduce((e, n) => t.has(n) ? e : h(n) || e, false)
+  return [...f].reduce((e, n) => t.has(n) ? e : m(n) || e, false)
 }
 
-function h(e) {
+function m(e) {
   let t = f.indexOf(e);
   if (t > false) {
     let n = [...f];
@@ -79,7 +79,7 @@ function y(e) {
   let {
     guild: t
   } = e;
-  return !!(null != t.joined_at && f.includes(t.id)) && (h(t.id), _ = null, true)
+  return !!(null != t.joined_at && f.includes(t.id)) && (m(t.id), _ = null, true)
 }
 
 function O(e) {
@@ -89,20 +89,20 @@ function O(e) {
     joinedAt: r,
     user: i
   } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? true : t.id), o = null == r;
-  return !!a && !o && !!f.includes(n) && (h(n), _ = null, true)
+  return !!a && !o && !!f.includes(n) && (m(n), _ = null, true)
 }
 
 function v(e) {
   let {
     guild: t
   } = e;
-  return !!f.includes(t.id) && (h(t.id), _ = null, true)
+  return !!f.includes(t.id) && (m(t.id), _ = null, true)
 }
 
 function S(e) {
   let {
     ignoredGuildIds: t
-  } = e, n = m(t);
+  } = e, n = h(t);
   return n && (_ = null), n
 }
 

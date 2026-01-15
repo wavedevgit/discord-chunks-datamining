@@ -19,8 +19,8 @@ function d(e, t, n) {
     keyboardDelegate: f,
     layoutDelegate: p,
     onAction: _,
-    disallowTypeAhead: m,
-    linkBehavior: h = "action",
+    disallowTypeAhead: h,
+    linkBehavior: m = "action",
     keyboardNavigationBehavior: g = "arrow",
     escapeKeyBehavior: E = "clearSelection",
     shouldSelectOnPressUp: b
@@ -38,15 +38,15 @@ function d(e, t, n) {
     isVirtualized: d,
     selectOnFocus: "replace" === t.selectionManager.selectionBehavior,
     shouldFocusWrap: e.shouldFocusWrap,
-    linkBehavior: h,
-    disallowTypeAhead: m,
+    linkBehavior: m,
+    disallowTypeAhead: h,
     autoFocus: e.autoFocus,
     escapeKeyBehavior: E
   }), O = (0, i.Me)(e.id);
   r.Co.set(t, {
     id: O,
     onAction: _,
-    linkBehavior: h,
+    linkBehavior: m,
     keyboardNavigationBehavior: g,
     shouldSelectOnPressUp: b
   });

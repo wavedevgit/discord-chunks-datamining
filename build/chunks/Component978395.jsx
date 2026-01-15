@@ -62,7 +62,7 @@ function L(e) {
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: x.body,
-    children: [(0, r.jsx)(h.Z, {
+    children: [(0, r.jsx)(m.Z, {
       userId: t.id
     }), (0, r.jsx)(S.Z, {
       user: t,
@@ -77,7 +77,7 @@ function L(e) {
       pronouns: null == L ? true : L.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: L,
-        themeType: w.l.POPOUT,
+        themeType: R.l.POPOUT,
         onClose: G
       }),
       nicknameIcons: H ? null : (0, r.jsx)(I.Z, {
@@ -85,7 +85,7 @@ function L(e) {
         isVisible: M,
         onOpenProfile: k
       })
-    }), F === R.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+    }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == j ? true : j.id,
@@ -128,7 +128,7 @@ function L(e) {
       user: t,
       widgets: null == L ? true : L.widgets,
       onOpenUserProfileModal: k
-    }), W && (0, r.jsx)(m.Z, {
+    }), W && (0, r.jsx)(h.Z, {
       isPremiumUser: Q,
       onInteraction: G
     }), (0, r.jsx)(y.Z, {

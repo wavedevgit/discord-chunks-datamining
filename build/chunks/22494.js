@@ -2,7 +2,7 @@
 /** chunk id: 22494, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk81825 = require("./81825.js"),
   Chunk973616 = require("./973616.js"),
@@ -67,7 +67,7 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends Chunk81825.Z {
+class h extends Chunk81825.Z {
   static fromServer(e) {
     var t, n, {
         user_id: r,
@@ -84,7 +84,7 @@ class m extends Chunk81825.Z {
           return a.Z.fromServer(e)
       }
     });
-    return new m(f(u({}, d), {
+    return new h(f(u({}, d), {
       userId: r,
       items: _,
       applications: null != (n = null == (t = d.applications) ? true : t.map(e => i.ZP.createFromServer(e))) ? n : true

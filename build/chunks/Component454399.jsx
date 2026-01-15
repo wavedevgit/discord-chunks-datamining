@@ -75,8 +75,8 @@ function O(e) {
     layerContext: A,
     targetElementRef: N,
     anchorRef: P,
-    positionKey: R,
-    ariaHidden: w = false
+    positionKey: w,
+    ariaHidden: R = false
   } = e, D = b(e, ["children", "title", "body", "asset", "assetSize", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
   let [x, L] = i.useState(null);
   i.useLayoutEffect(() => {
@@ -90,27 +90,27 @@ function O(e) {
       isVisible: k,
       targetElementRef: U,
       trigger: G
-    } = (0, m.Q)(E({
+    } = (0, h.Q)(E({
       children: t,
       targetElementRef: j,
       asContainer: O,
       containerTag: v,
-      ariaHidden: w
+      ariaHidden: R
     }, D)),
     Z = null != n && ("string" != typeof n || "" !== n),
     F = null != g && !i.isValidElement(g),
     B = i.useMemo(() => (0, r.jsxs)("div", {
-      className: o()(h.richTooltipContent, {
-        [h.noAsset]: null == g
+      className: o()(m.richTooltipContent, {
+        [m.noAsset]: null == g
       }),
       children: [null != g && (0, r.jsx)("div", {
-        className: h.assetContainer,
+        className: m.assetContainer,
         style: {
           width: y
         },
         children: F ? (0, r.jsx)(l.zsu, E({}, g)) : g
       }), (0, r.jsxs)("div", {
-        className: h.textContent,
+        className: m.textContent,
         children: [Z && (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           children: n
@@ -121,7 +121,7 @@ function O(e) {
         })]
       })]
     }), [g, y, n, a, Z, F]),
-    V = null != R ? R : "".concat((0, p.Sw)(null != n ? n : ""), "|").concat((0, p.Sw)(a)),
+    V = null != w ? w : "".concat((0, p.Sw)(null != n ? n : ""), "|").concat((0, p.Sw)(a)),
     H = (0, _.Q)({
       shouldShow: k
     });
@@ -147,7 +147,7 @@ function O(e) {
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [G, w || null == B ? null : (0, r.jsx)(s.n, {
+    children: [G, R || null == B ? null : (0, r.jsx)(s.n, {
       id: M,
       children: B
     }), Y]

@@ -33,8 +33,8 @@ let p = e => {
     animateXAxisWiggle: f = false,
     isMotionReduced: p = false,
     animationSpeedScale: _ = 1,
-    children: m
-  } = e, h = (0, o.q_F)(null != u ? {
+    children: h
+  } = e, m = (0, o.q_F)(null != u ? {
     from: {
       y: 0
     },
@@ -73,7 +73,7 @@ let p = e => {
     onRest: () => v(e => false * e)
   } : {
     blur: 0
-  }), I = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), T = 5, [C, A] = (0, i.useState)(0), [N, P] = (0, i.useState)(1), R = (0, o.q_F)({
+  }), I = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), T = 5, [C, A] = (0, i.useState)(0), [N, P] = (0, i.useState)(1), w = (0, o.q_F)({
     xOffset: C,
     config: {
       tension: 10,
@@ -83,9 +83,9 @@ let p = e => {
   });
   return ((0, s.Z)(() => {
     A(N * (.5 * Math.random() * T + T / 2)), P(e => false * e)
-  }, I), p) ? m : (0, r.jsx)(a.animated.div, {
+  }, I), p) ? h : (0, r.jsx)(a.animated.div, {
     style: {
-      transform: null == (t = h.y) ? true : t.to(e => {
+      transform: null == (t = m.y) ? true : t.to(e => {
         if (null == u) return "translateY(0px)";
         let t = g(e * Math.PI * 2) * u.range,
           n = 0;
@@ -95,11 +95,11 @@ let p = e => {
         }
         return "translateY(".concat(t + n, "px)")
       }),
-      translateX: f ? R.xOffset.to(e => "".concat(e, "px")) : 0,
+      translateX: f ? w.xOffset.to(e => "".concat(e, "px")) : 0,
       scale: y.scale,
       filter: null == (n = S.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
       opacity: null != d && d.changeOpacity ? d.containerVisibilityPercentage : 1
     },
-    children: m
+    children: h
   })
 }

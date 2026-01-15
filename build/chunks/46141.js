@@ -6,13 +6,13 @@ require.d(exports, {
   D0: () => E,
   JC: () => C,
   Om: () => T,
-  Sf: () => m,
+  Sf: () => h,
   U4: () => A,
   Vg: () => g,
   Xc: () => I,
   ZP: () => f,
   dm: () => p,
-  fv: () => h,
+  fv: () => m,
   jc: () => b,
   kX: () => v,
   o_: () => O,
@@ -105,11 +105,11 @@ class f extends Chunk81825.Z {
         }));
       case s.HeQ.SEPA_DEBIT:
       case s.HeQ.SOFORT:
-        return new m(d(c({}, r), {
+        return new h(d(c({}, r), {
           email: e.email
         }));
       case s.HeQ.GIROPAY:
-        return new h(c({}, r));
+        return new m(c({}, r));
       case s.HeQ.PRZELEWY24:
         return new g(d(c({}, r), {
           email: e.email,
@@ -154,9 +154,9 @@ class f extends Chunk81825.Z {
         return new _(e);
       case s.HeQ.SOFORT:
       case s.HeQ.SEPA_DEBIT:
-        return new m(e);
-      case s.HeQ.GIROPAY:
         return new h(e);
+      case s.HeQ.GIROPAY:
+        return new m(e);
       case s.HeQ.PRZELEWY24:
         return new g(e);
       case s.HeQ.PAYSAFE_CARD:
@@ -218,13 +218,13 @@ class _ extends f {
     this.email = e.email || ""
   }
 }
-class m extends f {
+class h extends f {
   constructor(e) {
     if (super(e), l(this, "email", true), e.type !== s.HeQ.SOFORT && e.type !== s.HeQ.SEPA_DEBIT) throw Error("Cannot instantiate SofortSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.SOFORT, " or ") + s.HeQ.SEPA_DEBIT);
     this.email = e.email || ""
   }
 }
-class h extends f {
+class m extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.GIROPAY) throw Error("Cannot instantiate GiropaySourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.GIROPAY))
   }

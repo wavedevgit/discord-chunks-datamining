@@ -33,7 +33,7 @@ function p(e) {
     p = a.vB(null != d.permissions && "" !== d.permissions ? d.permissions : "0")
   } catch (e) {}
   let _ = d.channel_id,
-    m = f(null != (i = null != (n = d.guild_id) ? n : null == (t = o.Z.getChannel(_)) ? true : t.guild_id) ? i : s.Z.getGuildId());
+    h = f(null != (i = null != (n = d.guild_id) ? n : null == (t = o.Z.getChannel(_)) ? true : t.guild_id) ? i : s.Z.getGuildId());
   return {
     clientId: null != (c = d.client_id) ? c : "",
     scopes: (null != (u = d.scope) ? u : "").replace(/\+/g, " ").split(" ").filter(e => e.length > 0),
@@ -44,7 +44,7 @@ function p(e) {
     state: d.state,
     permissions: p,
     channelId: _,
-    guildId: m,
+    guildId: h,
     prompt: d.prompt,
     disableGuildSelect: "true" === d.disable_guild_select,
     integrationType: null == d.integration_type ? true : Number(d.integration_type),

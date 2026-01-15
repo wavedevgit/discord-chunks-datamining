@@ -66,7 +66,7 @@ let c = function(e, t) {
     }
     let [d, f] = a.M8.isRange(n) ? a.M8.edges(n) : a.bN.edges(e, n);
     if (null != i || null != o) {
-      var p, _, m;
+      var p, _, h;
       if (s) {
         let t = null != (p = a.bN.before(e, d, {
           distance: i,
@@ -81,10 +81,10 @@ let c = function(e, t) {
           })) ? _ : a.bN.start(e, []))
         }
         d = t
-      } else f = null != (m = a.bN.after(e, f, {
+      } else f = null != (h = a.bN.after(e, f, {
         distance: i,
         unit: o
-      })) ? m : a.bN.end(e, [])
+      })) ? h : a.bN.end(e, [])
     }
     if (null != c) {
       let [e, t] = a.M8.edges(c);

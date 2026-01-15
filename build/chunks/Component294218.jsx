@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ function L(e) {
     message: i,
     compact: a = false,
     className: N,
-    onContextMenu: R,
+    onContextMenu: w,
     onClick: x,
     hideSimpleEmbedContent: L = true,
     channel: j,
@@ -112,7 +112,7 @@ function L(e) {
     allowHeading: V || H,
     allowLinks: true,
     previewLinkTarget: true
-  }), z = i.type === C.uaV.REPLY ? i.messageReference : true, q = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(z)), Q = (0, s.JA)(i.id), X = (0, m.ZP)(i), J = (0, l.e7)([f.Z], () => i.hasFlag(C.iLy.HAS_THREAD) && f.Z.getChannel(p.default.castMessageIdAsChannelId(i.id))), $ = (0, c.p9)({
+  }), z = i.type === C.uaV.REPLY ? i.messageReference : true, q = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(z)), Q = (0, s.JA)(i.id), X = (0, h.ZP)(i), J = (0, l.e7)([f.Z], () => i.hasFlag(C.iLy.HAS_THREAD) && f.Z.getChannel(p.default.castMessageIdAsChannelId(i.id))), $ = (0, c.p9)({
     guildId: j.guild_id,
     roleId: X.iconRoleId
   }), ee = (0, b.Z)({
@@ -120,7 +120,7 @@ function L(e) {
     channel: j,
     enabled: Z
   }), et = (0, g.iG)(i), en = (0, g.Gx)(i);
-  return (0, r.jsx)(h.Z, P({
+  return (0, r.jsx)(m.Z, P({
     compact: a,
     className: o()(N, {
       [A.ephemeral]: (0, _.Pv)(i),
@@ -129,17 +129,17 @@ function L(e) {
     disableInteraction: B,
     childrenRepliedMessage: (0, T.Z)(i, j, z, q, a),
     childrenExecutedCommand: (0, I.Z)(i, j, a),
-    childrenHeader: (0, v.Z)(w(P({}, e), {
+    childrenHeader: (0, v.Z)(R(P({}, e), {
       guildId: j.guild_id,
       author: X,
       roleIcon: $
     })),
     childrenAccessories: e.hideAccessories ? true : (0, y.Q)(e, W, K),
     childrenMessageContent: (0, O.Z)(e, Y),
-    childrenSystemMessage: (0, S.Z)(w(P({}, e), {
+    childrenSystemMessage: (0, S.Z)(R(P({}, e), {
       disableInteraction: B
     })),
-    onContextMenu: R,
+    onContextMenu: w,
     onClick: x,
     hasThread: G && null != J && i.hasFlag(C.iLy.HAS_THREAD),
     hasReply: i.type === C.uaV.REPLY,

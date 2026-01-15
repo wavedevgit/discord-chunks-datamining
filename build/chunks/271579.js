@@ -76,9 +76,9 @@ function _(e, t) {
   let f = encodeURIComponent(l.toString()),
     p = encodeURIComponent("discord://app/open#".concat(l.toString())),
     _ = encodeURIComponent((0, o.Z)()),
-    m = d() ? "true" : "false",
-    h = null != r ? encodeURIComponent(r) : null,
+    h = d() ? "true" : "false",
+    m = null != r ? encodeURIComponent(r) : null,
     g = null != i ? encodeURIComponent(i) : null,
-    E = "".concat(c, "/").concat(u, "/?deep_link_value=").concat(f, "&pid=").concat(n, "&af_force_deeplink=").concat(m, "&af_og_description=").concat(_, "&af_dp=").concat(p);
-  return null != h && (E += "&af_android_url=".concat(h)), null != g && (E += "&af_ios_url=".concat(g)), E
+    E = "".concat(c, "/").concat(u, "/?deep_link_value=").concat(f, "&pid=").concat(n, "&af_force_deeplink=").concat(h, "&af_og_description=").concat(_, "&af_dp=").concat(p);
+  return null != m && (E += "&af_android_url=".concat(m)), null != g && (E += "&af_ios_url=".concat(g)), E
 }

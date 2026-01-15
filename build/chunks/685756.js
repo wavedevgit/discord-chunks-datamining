@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -97,14 +97,14 @@ function P(e) {
   }))
 }
 
-function R(e) {
+function w(e) {
   return "audio" === e ? f.Tr.AUDIO : "test" === e ? f.Tr.TEST : "screen" === e ? f.Tr.SCREEN : f.Tr.VIDEO
 }
 
-function w(e) {
+function R(e) {
   var t;
   return null != (t = null == e ? true : e.map(e => ({
-    type: R(e.type),
+    type: w(e.type),
     rid: e.rid,
     ssrc: e.ssrc,
     rtxSsrc: e.rtx_ssrc,
@@ -168,7 +168,7 @@ class x extends Chunk47770.Z {
           this.handleHeartbeatAck(r);
           break;
         case 12:
-          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, w(r.streams));
+          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, R(r.streams));
           break;
         case 11:
           this.emit("client-connect", r.user_ids);
@@ -282,7 +282,7 @@ class x extends Chunk47770.Z {
   handleReady(e) {
     this.backoff.succeed();
     let t = (0, s.zO)() - this.connectionStartTime;
-    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, w(e.streams), e.experiments)
+    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, R(e.streams), e.experiments)
   }
   handleResumed(e) {
     this.backoff.succeed()
@@ -404,14 +404,14 @@ class x extends Chunk47770.Z {
   }
   selectProtocol(e, t, n, r) {
     let i, a = {};
-    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, a = h(_({}, n), {
+    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, a = m(_({}, n), {
       codecs: N(n.codecs),
       rtc_connection_id: t
     })) : "address" in n && null != n.address && "" !== n.address && n.port && null != n.mode && "" !== n.mode && (i = {
       address: n.address,
       port: n.port,
       mode: n.mode
-    }, a = h(_({}, n), {
+    }, a = m(_({}, n), {
       codecs: N(n.codecs),
       rtc_connection_id: t,
       experiments: r

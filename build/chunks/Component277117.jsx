@@ -90,7 +90,7 @@ function T(e) {
     }), t.isProvisional && (0, r.jsx)(E.Z.Overlay, {
       children: (0, r.jsx)(x.Z, {
         heading: Z.intl.string(Z.t.Iyka0U),
-        headingIcon: (0, r.jsx)(i.Mgn, {
+        headingIcon: (0, r.jsx)(i.CircleErrorIcon, {
           size: "xxs",
           color: a.Z.colors.TEXT_STRONG
         }),

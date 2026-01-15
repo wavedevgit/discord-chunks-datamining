@@ -14,14 +14,14 @@
     f = 35,
     p = 125,
     _ = 0,
-    m = 0,
     h = 0,
+    m = 0,
     g = {
       get didTimeout() {
         returnfalse
       },
       timeRemaining: function() {
-        var e = d - (Date.now() - m);
+        var e = d - (Date.now() - h);
         return e < 0 ? 0 : e
       }
     },
@@ -57,13 +57,13 @@
   }
 
   function I() {
-    u || (t = p - (Date.now() - m), e = Date.now(), u = true, f && t < f && (t = f), t > 9 ? r = setTimeout(S, t) : (t = 0, S()))
+    u || (t = p - (Date.now() - h), e = Date.now(), u = true, f && t < f && (t = f), t > 9 ? r = setTimeout(S, t) : (t = 0, S()))
   }
 
   function T() {
     var n, i, a, o = d > 9 ? 9 : 1;
-    if (m = Date.now(), u = false, r = null, c > 2 || m - t - 50 < e)
-      for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), h++, n && n(g);
+    if (h = Date.now(), u = false, r = null, c > 2 || h - t - 50 < e)
+      for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), m++, n && n(g);
     l.length ? I() : c = 0
   }
 
@@ -72,7 +72,7 @@
   }
 
   function A(e) {
-    var t = e - 1 - h;
+    var t = e - 1 - m;
     l[t] && (l[t] = null)
   }
   if (a.requestIdleCallback && a.cancelIdleCallback) try {

@@ -13,7 +13,7 @@ var r, i, a, o, Chunk442837 = require("./442837.js"),
   Chunk55589 = require("./55589.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,25 +21,25 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = (null != (a = null == (i = window) || null == (r = i.location) ? true : r.pathname) ? a : "").startsWith(Chunk981631.Z5c.ACTIVITIES) ? Chunk981631.Z5c.ACTIVITIES : null;
+let m = (null != (a = null == (i = window) || null == (r = i.location) ? true : r.pathname) ? a : "").startsWith(Chunk981631.Z5c.ACTIVITIES) ? Chunk981631.Z5c.ACTIVITIES : null;
 
 function g() {
   let e = p.Z.getPrivateChannelIds(),
     t = f.Z.getChannelId(_.ME);
-  (null != t || null != e[0]) && (h = _.Z5c.CHANNEL(_.ME, null != t ? t : e[0]))
+  (null != t || null != e[0]) && (m = _.Z5c.CHANNEL(_.ME, null != t ? t : e[0]))
 }
 
 function E(e) {
   let {
     link: t
   } = e;
-  if (h === t) returnfalse;
-  h = t
+  if (m === t) returnfalse;
+  m = t
 }
 
 function b() {
-  if (null == h || !h.startsWith(_.Z5c.APPLICATION_STORE)) returnfalse;
-  h = _.Z5c.APPLICATION_STORE
+  if (null == m || !m.startsWith(_.Z5c.APPLICATION_STORE)) returnfalse;
+  m = _.Z5c.APPLICATION_STORE
 }
 
 function y(e) {
@@ -59,7 +59,7 @@ function O(e) {
   } = e;
   if (null == t && null != n) {
     let e = _.Z5c.CHANNEL(_.ME, n);
-    if (e !== h) return h = e, true
+    if (e !== m) return m = e, true
   }
   returnfalse
 }
@@ -68,17 +68,17 @@ function v(e) {
   let {
     channel: t
   } = e;
-  null == t.guild_id && null != t.id && null != h && h === _.Z5c.CHANNEL(_.ME, t.id) && (h = null)
+  null == t.guild_id && null != t.id && null != m && m === _.Z5c.CHANNEL(_.ME, t.id) && (m = null)
 }
 class S extends(o = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(u.Z, p.Z, f.Z, d.Z, c.Z)
   }
   getHomeLink() {
-    return null != h ? h : u.Z.fallbackRoute
+    return null != m ? m : u.Z.fallbackRoute
   }
 }
-m(S, "displayName", "AppViewStore");
+h(S, "displayName", "AppViewStore");
 let I = new S(Chunk570140.Z, {
   OVERLAY_INITIALIZE: g,
   APP_VIEW_SET_HOME_LINK: E,

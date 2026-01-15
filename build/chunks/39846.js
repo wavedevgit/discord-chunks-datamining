@@ -17,7 +17,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk981631 = require("./981631.js"),
   Chunk761274 = require("./761274.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = null;
+let m = null;
 
 function g() {
   i.Z.requestPermission(_.Eu.AUDIO).then(e => {
@@ -46,7 +46,7 @@ class y extends Chunk147913.Z {
     let {
       channelId: t
     } = e;
-    null == t && (h = null)
+    null == t && (m = null)
   }
   handleVoiceStateUpdates(e) {
     let {
@@ -57,17 +57,17 @@ class y extends Chunk147913.Z {
         userId: t,
         channelId: n
       } = e;
-      if (null != n && l.default.getId() === t && null != d.Z.getRTCConnectionId() && h !== n) {
+      if (null != n && l.default.getId() === t && null != d.Z.getRTCConnectionId() && m !== n) {
         if (E(t, n)) {
-          h = n, g();
+          m = n, g();
           return
         }
-        b(new s.Z(e)) && (h = n, g())
+        b(new s.Z(e)) && (m = n, g())
       }
     })
   }
   constructor(...e) {
-    super(...e), m(this, "actions", {
+    super(...e), h(this, "actions", {
       VOICE_STATE_UPDATES: this.handleVoiceStateUpdates,
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
     })

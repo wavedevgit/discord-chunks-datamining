@@ -74,17 +74,17 @@ function f(e) {
     className: l
   } = n, d = u(n, ["children", "className"]), f = i.useRef(0), [p, _] = i.useState(false);
 
-  function m() {
+  function h() {
     clearTimeout(f.current), _(true)
   }
 
-  function h() {
+  function m() {
     clearTimeout(f.current), f.current = setTimeout(() => _(false), t)
   }
   return (0, r.jsx)("div", {
     className: l,
-    onMouseEnter: 0 !== t ? m : () => {},
-    onMouseLeave: 0 !== t ? h : () => {},
+    onMouseEnter: 0 !== t ? h : () => {},
+    onMouseLeave: 0 !== t ? m : () => {},
     children: (0, r.jsx)(a.aM, c(s({
       "data-migration-pending": true,
       forceOpen: p,

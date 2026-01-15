@@ -21,8 +21,8 @@ function a(e) {
     locationObject: f,
     analyticsLocations: p,
     referrerId: _,
-    inviterUserId: m,
-    remoteJoinPlatform: h
+    inviterUserId: h,
+    remoteJoinPlatform: m
   } = e;
   r.default.track(i.rMx.APPLICATION_OPENED, {
     type: t,
@@ -37,7 +37,7 @@ function a(e) {
     location: f,
     location_stack: p,
     referrer_id: _,
-    invite_inviter_id: m,
-    remote_join_platform: h
+    invite_inviter_id: h,
+    remote_join_platform: m
   })
 }

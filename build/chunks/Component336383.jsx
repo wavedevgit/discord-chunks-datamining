@@ -97,15 +97,15 @@ let S = Chunk473749.forwardRef(function(e, t) {
     "aria-labelledby": S,
     children: (0, r.jsx)(d.Z.Overlay, y(E({
       ref: t,
-      className: o()(h.card, i)
+      className: o()(m.card, i)
     }, I), {
       children: n
     }))
   }) : (0, r.jsx)("article", {
     "aria-labelledby": S,
     children: (0, r.jsx)(s.kL8, {
-      className: h.clickableContainer,
-      "aria-label": m.intl.string(m.t.pD1L1u),
+      className: m.clickableContainer,
+      "aria-label": h.intl.string(h.t.pD1L1u),
       focusProps: {
         ringTarget: t
       },
@@ -120,7 +120,7 @@ let S = Chunk473749.forwardRef(function(e, t) {
       },
       children: (0, r.jsx)(d.Z.Overlay, y(E({
         ref: t,
-        className: o()(h.card, i)
+        className: o()(m.card, i)
       }, I), {
         children: n
       }))

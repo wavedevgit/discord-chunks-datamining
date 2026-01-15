@@ -21,8 +21,8 @@ let _ = function(e) {
       stripeType: n,
       flipped: o,
       updateCompleted: _,
-      onFocus: m,
-      onBlur: h
+      onFocus: h,
+      onBlur: m
     } = e,
     [g, E] = i.useState(u.Qy.UNKNOWN),
     [b, y] = i.useState(false),
@@ -54,12 +54,12 @@ let _ = function(e) {
     P = i.useCallback(e => {
       O || e.empty || v(true), null != _ && _(e.complete), null != e.error && y(false)
     }, [O, _]),
-    R = i.useCallback(() => {
-      y(true), null == m || m()
-    }, [m]),
     w = i.useCallback(() => {
-      y(false), null == h || h()
+      y(true), null == h || h()
     }, [h]),
+    R = i.useCallback(() => {
+      y(false), null == m || m()
+    }, [m]),
     D = i.useCallback(() => {
       if (null != A) switch (n) {
         case "cardNumber": {
@@ -67,7 +67,7 @@ let _ = function(e) {
           if (null == e) return;
           e.on("change", e => {
             g !== e.brand && E(e.brand), e.empty && O ? I(d.intl.string(d.t.eOIfuy)) : null != e.error ? I(d.intl.string(d.t.x4pWtJ)) : I(null), P(e)
-          }), e.on("focus", R), e.on("blur", w);
+          }), e.on("focus", w), e.on("blur", R);
           break
         }
         case "cardExpiry": {
@@ -75,7 +75,7 @@ let _ = function(e) {
           if (null == e) return;
           e.on("change", e => {
             null != e.error || e.empty && O ? I(d.intl.string(d.t["9/zZdl"])) : I(null), P(e)
-          }), e.on("focus", R), e.on("blur", w);
+          }), e.on("focus", w), e.on("blur", R);
           break
         }
         case "cardCvc": {
@@ -83,10 +83,10 @@ let _ = function(e) {
           if (null == e) return;
           e.on("change", e => {
             null != e.error || e.empty && O ? I(d.intl.string(d.t.ro4isZ)) : I(null), P(e)
-          }), e.on("focus", R), e.on("blur", w)
+          }), e.on("focus", w), e.on("blur", R)
         }
       }
-    }, [w, P, R, g, A, O, n]);
+    }, [R, P, w, g, A, O, n]);
   i.useEffect(() => (D(), () => {
     N()
   }), [D, N]);

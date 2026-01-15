@@ -13,18 +13,18 @@ var Chunk288537 = require("./288537.js"),
   f = 1,
   p = 2,
   _ = false,
-  m = 0,
-  h = 8;
+  h = 0,
+  m = 8;
 
 function g(e) {
   if (!(this instanceof g)) return new g(e);
   this.options = i.assign({
     level: _,
-    method: h,
+    method: m,
     chunkSize: 16384,
     windowBits: 15,
     memLevel: 8,
-    strategy: m,
+    strategy: h,
     to: ""
   }, e || {});
   var t, n = this.options;

@@ -2,9 +2,9 @@
 /** chunk id: 103879, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FN: () => m,
+  FN: () => h,
   NA: () => f,
-  _w: () => h,
+  _w: () => m,
   uR: () => _,
   yq: () => d
 });
@@ -155,7 +155,7 @@ async function _(e, t, n) {
     }), e
   })
 }
-async function m(e) {
+async function h(e) {
   i.Z.dispatch({
     type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START"
   });
@@ -189,7 +189,7 @@ async function m(e) {
     })
   })
 }
-async function h() {
+async function m() {
   i.Z.dispatch({
     type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START"
   });
@@ -209,7 +209,7 @@ async function h() {
     } = e, {
       success: r
     } = n;
-    !r && t < c.o6 && setTimeout(() => h(), c.Cp), i.Z.dispatch({
+    !r && t < c.o6 && setTimeout(() => m(), c.Cp), i.Z.dispatch({
       type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS",
       success: r
     })

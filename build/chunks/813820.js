@@ -2,9 +2,9 @@
 /** chunk id: 813820, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W$: () => h,
+  W$: () => m,
   bF: () => g,
-  d3: () => m
+  d3: () => h
 }), require("./980754.js"), require("./388685.js"), require("./415506.js"), require("./997841.js"), require("./539854.js");
 var Chunk230367 = require("./230367.js"),
   Chunk320215 = require("./320215.js"),
@@ -30,10 +30,10 @@ var Chunk230367 = require("./230367.js"),
   _ = function(e) {
     return e[e.ANNOTATION_UNSPECIFIED = 0] = "ANNOTATION_UNSPECIFIED", e[e.SPAMMER = 1] = "SPAMMER", e[e.SELF_DELETED = 2] = "SELF_DELETED", e[e.SELF_DISABLED = 3] = "SELF_DISABLED", e[e.UNDERAGE_DELETED = 4] = "UNDERAGE_DELETED", e[e.SAFETY_POLICY_VIOLATION = 5] = "SAFETY_POLICY_VIOLATION", e[e.INACTIVITY_DELETED = 6] = "INACTIVITY_DELETED", e[e.GENERIC_DELETED = 7] = "GENERIC_DELETED", e
   }({}),
-  m = function(e) {
+  h = function(e) {
     return e[e.NONE_UNSPECIFIED = 0] = "NONE_UNSPECIFIED", e[e.SUBSCRIPTION = 1] = "SUBSCRIPTION", e[e.FRACTIONAL_NITRO = 2] = "FRACTIONAL_NITRO", e[e.REVERSE_TRIAL = 3] = "REVERSE_TRIAL", e[e.SUBSCRIPTION_GROUP = 4] = "SUBSCRIPTION_GROUP", e
   }({}),
-  h = function(e) {
+  m = function(e) {
     return e[e.NONE_UNSPECIFIED = 0] = "NONE_UNSPECIFIED", e[e.BOOST_ONLY = 1] = "BOOST_ONLY", e[e.TIER_0 = 2] = "TIER_0", e[e.TIER_1 = 3] = "TIER_1", e[e.TIER_2 = 4] = "TIER_2", e
   }({}),
   g = function(e) {
@@ -584,7 +584,7 @@ class N extends Chunk495852.C {
   }
 }
 let P = new N;
-class R extends Chunk495852.C {
+class w extends Chunk495852.C {
   create(e) {
     let t = {
       applicationId: "0"
@@ -634,7 +634,7 @@ class R extends Chunk495852.C {
     }])
   }
 }
-let w = new R;
+let R = new w;
 class D extends Chunk495852.C {
   create(e) {
     let t = {
@@ -669,7 +669,7 @@ class D extends Chunk495852.C {
           a.primaryGuild = P.internalBinaryRead(e, e.uint32(), n, a.primaryGuild);
           break;
         case 6:
-          a.crossPlatformRestriction = w.internalBinaryRead(e, e.uint32(), n, a.crossPlatformRestriction);
+          a.crossPlatformRestriction = R.internalBinaryRead(e, e.uint32(), n, a.crossPlatformRestriction);
           break;
         case 7:
           a.collectibles = A.internalBinaryRead(e, e.uint32(), n, a.collectibles);
@@ -753,7 +753,7 @@ class D extends Chunk495852.C {
     for (let i of Object.keys(e.linkedUsers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), L.internalBinaryWrite(e.linkedUsers[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFeatureLimits)) t.tag(2, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), U.internalBinaryWrite(e.safetyFeatureLimits[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFlags)) t.tag(3, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), Z.internalBinaryWrite(e.safetyFlags[i], t, n), t.join().join();
-    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && P.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && w.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && A.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
+    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && P.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && R.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && A.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -799,7 +799,7 @@ class D extends Chunk495852.C {
       no: 6,
       name: "cross_platform_restriction",
       kind: "message",
-      T: () => w
+      T: () => R
     }, {
       no: 7,
       name: "collectibles",
@@ -1468,12 +1468,12 @@ class en extends Chunk495852.C {
       no: 1,
       name: "premium_source",
       kind: "enum",
-      T: () => ["discord_protos.users.v1.PremiumSource", m, "PREMIUM_SOURCE_"]
+      T: () => ["discord_protos.users.v1.PremiumSource", h, "PREMIUM_SOURCE_"]
     }, {
       no: 2,
       name: "premium_subscription_type",
       kind: "enum",
-      T: () => ["discord_protos.users.v1.PremiumSubscriptionType", h, "PREMIUM_SUBSCRIPTION_TYPE_"]
+      T: () => ["discord_protos.users.v1.PremiumSubscriptionType", m, "PREMIUM_SUBSCRIPTION_TYPE_"]
     }, {
       no: 3,
       name: "premium_subscription_group_role",

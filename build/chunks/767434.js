@@ -23,7 +23,7 @@ function f(e, t, n, d) {
     _ = (0, l.V2)({
       location: "useSoundmojiGuildInfoData"
     }),
-    m = e.guildId !== (null == t ? true : t.guild_id);
+    h = e.guildId !== (null == t ? true : t.guild_id);
   return {
     buttonType: r.useMemo(() => f || !_ ? 2 : _ && !p ? 1 : n || null == d ? 2 : 0, [f, p, _, n, d]),
     description: r.useMemo(() => {
@@ -32,7 +32,7 @@ function f(e, t, n, d) {
         hasSoundmojiPermissions: p,
         isInGuild: n,
         isGuildDiscoverable: e,
-        isSoundFromDifferentGuild: m,
+        isSoundFromDifferentGuild: h,
         canSendSoundmojis: _,
         isDefaultSound: f
       }).with({
@@ -68,6 +68,6 @@ function f(e, t, n, d) {
         isInGuild: false,
         isGuildDiscoverable: true
       }, () => u.intl.string(u.t.qRkWhZ)).exhaustive()
-    }, [f, d, p, n, m, _])
+    }, [f, d, p, n, h, _])
   }
 }

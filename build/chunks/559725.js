@@ -56,7 +56,7 @@ async function p() {
 
 function _(e) {
   if (null != c.Z.cashAppPayComponent) {
-    h(), m();
+    m(), h();
     return
   }
   let t = e.create("cashapp", {
@@ -94,13 +94,13 @@ function _(e) {
   })
 }
 
-function m() {
+function h() {
   var e;
   if (null == c.Z.cashAppPayComponent) throw Error("Adyen CashAppPay component must be created before mounting.");
   null == (e = c.Z.cashAppPayComponent) || e.mount("#".concat(s.F))
 }
 
-function h() {
+function m() {
   var e;
   null == (e = c.Z.cashAppPayComponent) || e.unmount()
 }

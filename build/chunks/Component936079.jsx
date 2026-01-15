@@ -45,7 +45,7 @@ class I extends Chunk473749.PureComponent {
   getPlatform() {
     var e;
     let t = null == (e = o().os) ? true : e.family;
-    return null != t && /^win/i.test(t) ? h.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? h.PlatformTypes.OSX : h.PlatformTypes.LINUX
+    return null != t && /^win/i.test(t) ? m.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
   }
   componentDidMount() {
     v()
@@ -81,7 +81,7 @@ class I extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), O(this, "handleDownload", () => {
-      window.open(this.getPlatform() === h.PlatformTypes.WINDOWS ? m.Z.getArticleURL(b.BhN.CORRUPT_INSTALLATION) : b.EYA.DOWNLOAD)
+      window.open(this.getPlatform() === m.PlatformTypes.WINDOWS ? h.Z.getArticleURL(b.BhN.CORRUPT_INSTALLATION) : b.EYA.DOWNLOAD)
     })
   }
 }

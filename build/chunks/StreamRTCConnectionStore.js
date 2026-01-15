@@ -38,8 +38,8 @@ let T = {},
   A = {},
   N = {},
   P = {},
-  R = {},
-  w = Chunk981631.hVg.THEATRE,
+  w = {},
+  R = Chunk981631.hVg.THEATRE,
   D = {};
 
 function x(e, t, n, i) {
@@ -48,7 +48,7 @@ function x(e, t, n, i) {
     streamKey: e,
     serverId: t,
     channelId: n,
-    initialLayout: w,
+    initialLayout: R,
     analyticsContext: i,
     parentMediaSessionId: O.Z.getMediaSessionId()
   })
@@ -56,7 +56,7 @@ function x(e, t, n, i) {
 
 function L() {
   l().forEach(D, (e, t) => {
-    e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete R[t]
+    e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete w[t]
   })
 }
 
@@ -80,34 +80,34 @@ function k(e) {
     sourcePid: u,
     nativePickerStyleUsed: d,
     goLiveModalDurationMs: p,
-    analyticsLocations: m
-  } = e, h = (0, _.V9)({
+    analyticsLocations: h
+  } = e, m = (0, _.V9)({
     streamType: r,
     guildId: i,
     channelId: a,
     ownerId: E.default.getId()
   });
-  if (T[h] = {
+  if (T[m] = {
       appContext: o,
-      analyticsLocations: m
+      analyticsLocations: h
     }, l().forEach(D, e => {
       let {
         analyticsContext: t,
         isOwner: n
       } = e;
       t.setActionContext(o), t.setNativePickerStyleUsed(d), n && t.trackStart()
-    }), null == s && (s = u), N[h] = c, A[h] = s, null != s) {
+    }), null == s && (s = u), N[m] = c, A[m] = s, null != s) {
     let e = f.ZP.getGameForPID(s);
-    null != e && (C[h] = {
+    null != e && (C[m] = {
       name: e.name,
       id: e.id,
       exe: e.exeName,
       distributor: e.distributor,
       sku: e.sku,
       gameMetadata: e.gameMetadata
-    }), null == (t = D[h]) || t.analyticsContext.updateStreamApplication(C[h])
-  } else null == (n = D[h]) || n.analyticsContext.updateStreamApplication(null);
-  null != p ? P[h] = p : delete P[h]
+    }), null == (t = D[m]) || t.analyticsContext.updateStreamApplication(C[m])
+  } else null == (n = D[m]) || n.analyticsContext.updateStreamApplication(null);
+  null != p ? P[m] = p : delete P[m]
 }
 
 function U(e) {
@@ -137,7 +137,7 @@ function G(e) {
   } = e, o = D[t], s = (0, _.my)(t);
   if (null == o && null != n) {
     var l, c;
-    null == A[t] && (C[t] = null), null == C[t] && null == N[t] && (C[t] = (0, m.L2)(s, y.Z));
+    null == A[t] && (C[t] = null), null == C[t] && null == N[t] && (C[t] = (0, h.L2)(s, y.Z));
     let e = new p.A({
       streamRegion: i,
       streamApplication: C[t],
@@ -149,7 +149,7 @@ function G(e) {
     });
     o = x(t, n, r, e), D[t] = o
   }
-  delete R[t], d.Z.dispatch({
+  delete w[t], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: o.getMediaEngineConnectionId()
   })
@@ -195,7 +195,7 @@ function H(e) {
   let {
     layout: t
   } = e;
-  w = t, Object.values(D).forEach(e => e.layoutChange(t))
+  R = t, Object.values(D).forEach(e => e.layoutChange(t))
 }
 
 function Y() {
@@ -219,7 +219,7 @@ function W(e) {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  R[o] = performance.now()
+  w[o] = performance.now()
 }
 
 function K(e) {
@@ -276,7 +276,7 @@ class X extends(i = Chunk442837.ZP.Store) {
   }
   getQuality(e) {
     var t, n;
-    return (0, h.Z)(b.Z) && null != e && null != (n = null == (t = D[e]) ? true : t.quality) ? n : v.IE4.UNKNOWN
+    return (0, m.Z)(b.Z) && null != e && null != (n = null == (t = D[e]) ? true : t.quality) ? n : v.IE4.UNKNOWN
   }
   getMediaSessionId(e) {
     if (null == e) return null;
@@ -312,7 +312,7 @@ class X extends(i = Chunk442837.ZP.Store) {
     return N[e]
   }
   getLastNonZeroRemoteVideoSinkWantsTime(e) {
-    return R[e]
+    return w[e]
   }
   getUserIds(e) {
     let t = D[e];

@@ -25,11 +25,11 @@ let d = e => {
     i.useEffect(() => {
       _(f)
     }, [f]);
-    let m = i.useMemo(() => {
+    let h = i.useMemo(() => {
         let e = p.component;
         return (0, r.jsx)(e, {})
       }, [p]),
-      h = e => {
+      m = e => {
         var n;
         _(null != (n = t.find(t => t.setting === e)) ? n : t[0]), null == c || c(e)
       };
@@ -42,7 +42,7 @@ let d = e => {
           [u.vertical]: "vertical" === d
         }, a),
         selectedItem: p.setting,
-        onItemSelect: h,
+        onItemSelect: m,
         orientation: d,
         type: "vertical" === d ? "side" : "top",
         look: "brand",
@@ -61,7 +61,7 @@ let d = e => {
         className: o()(u.tabBarPanel, n, {
           [u.vertical]: "vertical" === d
         }),
-        children: m
+        children: h
       })]
     })
   },
@@ -78,13 +78,13 @@ let d = e => {
     } = e, {
       viewableTabs: p,
       filteredTab: _
-    } = (0, c.a)(n, a), m = null != s ? n[s] : null, h = null != (t = null != m ? m : _) ? t : p[0], g = e => {
+    } = (0, c.a)(n, a), h = null != s ? n[s] : null, m = null != (t = null != h ? h : _) ? t : p[0], g = e => {
       l.Z.setSection(i, e), null == u || u(e)
     };
     return (0, r.jsx)(d, {
       tabs: p,
       orientation: f,
-      defaultTab: h,
+      defaultTab: m,
       onTabChange: g,
       panelClassName: o
     })

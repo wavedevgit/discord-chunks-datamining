@@ -13,8 +13,8 @@ function d(e) {
 var f = 0,
   p = 1,
   _ = 2,
-  m = 3,
-  h = 258,
+  h = 3,
+  m = 258,
   g = 29,
   E = 256,
   b = 286,
@@ -28,8 +28,8 @@ var f = 0,
   A = 16,
   N = 17,
   P = 18,
-  R = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
-  w = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
+  w = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
+  R = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
   D = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
   x = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
   L = 512,
@@ -39,7 +39,7 @@ var M = Array(2 * y);
 d(M);
 var k = Array(L);
 d(k);
-var U = Array(h - m + 1);
+var U = Array(m - h + 1);
 d(U);
 var G = Array(g);
 d(G);
@@ -87,14 +87,14 @@ function q(e, t) {
     f = t.stat_desc.extra_bits,
     p = t.stat_desc.extra_base,
     _ = t.stat_desc.max_length,
-    m = 0;
+    h = 0;
   for (a = 0; a <= S; a++) e.bl_count[a] = 0;
-  for (l[2 * e.heap[e.heap_max] + 1] = 0, n = e.heap_max + 1; n < v; n++)(a = l[2 * l[2 * (r = e.heap[n]) + 1] + 1] + 1) > _ && (a = _, m++), l[2 * r + 1] = a, !(r > c) && (e.bl_count[a]++, o = 0, r >= p && (o = f[r - p]), s = l[2 * r], e.opt_len += s * (a + o), d && (e.static_len += s * (u[2 * r + 1] + o)));
-  if (0 !== m) {
+  for (l[2 * e.heap[e.heap_max] + 1] = 0, n = e.heap_max + 1; n < v; n++)(a = l[2 * l[2 * (r = e.heap[n]) + 1] + 1] + 1) > _ && (a = _, h++), l[2 * r + 1] = a, !(r > c) && (e.bl_count[a]++, o = 0, r >= p && (o = f[r - p]), s = l[2 * r], e.opt_len += s * (a + o), d && (e.static_len += s * (u[2 * r + 1] + o)));
+  if (0 !== h) {
     do {
       for (a = _ - 1; 0 === e.bl_count[a];) a--;
-      e.bl_count[a]--, e.bl_count[a + 1] += 2, e.bl_count[_]--, m -= 2
-    } while (m > 0);
+      e.bl_count[a]--, e.bl_count[a + 1] += 2, e.bl_count[_]--, h -= 2
+    } while (h > 0);
     for (a = _; 0 !== a; a--)
       for (r = e.bl_count[a]; 0 !== r;) !((i = e.heap[--n]) > c) && (l[2 * i + 1] !== a && (e.opt_len += (a - l[2 * i + 1]) * l[2 * i], l[2 * i + 1] = a), r--)
   }
@@ -113,18 +113,18 @@ function Q(e, t, n) {
 function X() {
   var e, t, n, o, s, l = Array(S + 1);
   for (o = 0, n = 0; o < g - 1; o++)
-    for (e = 0, G[o] = n; e < 1 << R[o]; e++) U[n++] = o;
+    for (e = 0, G[o] = n; e < 1 << w[o]; e++) U[n++] = o;
   for (U[n - 1] = o, s = 0, o = 0; o < 16; o++)
-    for (e = 0, Z[o] = s; e < 1 << w[o]; e++) k[s++] = o;
+    for (e = 0, Z[o] = s; e < 1 << R[o]; e++) k[s++] = o;
   for (s >>= 7; o < y; o++)
-    for (e = 0, Z[o] = s << 7; e < 1 << w[o] - 7; e++) k[256 + s++] = o;
+    for (e = 0, Z[o] = s << 7; e < 1 << R[o] - 7; e++) k[256 + s++] = o;
   for (t = 0; t <= S; t++) l[t] = 0;
   for (e = 0; e <= 143;) j[2 * e + 1] = 8, e++, l[8]++;
   for (; e <= 255;) j[2 * e + 1] = 9, e++, l[9]++;
   for (; e <= 279;) j[2 * e + 1] = 7, e++, l[7]++;
   for (; e <= 287;) j[2 * e + 1] = 8, e++, l[8]++;
   for (Q(j, b + 1, l), e = 0; e < y; e++) M[2 * e + 1] = 5, M[2 * e] = K(e, 5);
-  r = new F(j, R, E + 1, b, S), i = new F(M, w, 0, y, S), a = new F([], D, 0, O, T)
+  r = new F(j, w, E + 1, b, S), i = new F(M, R, 0, y, S), a = new F([], D, 0, O, T)
 }
 
 function J(e) {
@@ -157,7 +157,7 @@ function en(e, t, n) {
 function er(e, t, n) {
   var r, i, a, o, s = 0;
   if (0 !== e.last_lit)
-    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = R[a]) && Y(e, i -= G[a], o), W(e, a = V(--r), n), 0 !== (o = w[a]) && Y(e, r -= Z[a], o)); while (s < e.last_lit);
+    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = w[a]) && Y(e, i -= G[a], o), W(e, a = V(--r), n), 0 !== (o = R[a]) && Y(e, r -= Z[a], o)); while (s < e.last_lit);
   W(e, C, t)
 }
 

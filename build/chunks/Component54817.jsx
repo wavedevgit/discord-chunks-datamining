@@ -2,7 +2,7 @@
 /** chunk id: 54817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,12 +19,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk138851 = require("./138851.js");
 
-function h(e) {
+function m(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, h = (0, l.ZP)(t), g = i(h), {
+  } = e, m = (0, l.ZP)(t), g = i(m), {
     avatarSrc: E,
     eventHandlers: {
       onMouseEnter: b,
@@ -41,49 +41,49 @@ function h(e) {
     onMouseEnter: b,
     onMouseLeave: y,
     children: (0, r.jsx)(d.Z, {
-      className: a()(m.mainContainer, {
-        [m.compact]: n
+      className: a()(h.mainContainer, {
+        [h.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
         src: E
       }),
-      iconContainerClassName: m.iconContainer,
+      iconContainerClassName: h.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: a()(m.content, {
-          [m.compact]: n
+        className: a()(h.content, {
+          [h.compact]: n
         }),
         children: [(0, r.jsx)(c.nD, {
           message: t,
-          messageClassname: m.spanCorrection,
-          className: a()(m.usernameContainer, m.spanCorrection, {
-            [m.compact]: n
+          messageClassname: h.spanCorrection,
+          className: a()(h.usernameContainer, h.spanCorrection, {
+            [h.compact]: n
           }),
           username: (0, r.jsxs)("div", {
-            className: m.spanCorrection,
+            className: h.spanCorrection,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: m.username,
+              className: h.username,
               children: _.intl.string(_.t.hG1StD)
             }), (0, r.jsx)(s.Z, {
               type: p.Hb.SYSTEM_DM,
-              className: m.systemTag
+              className: h.systemTag
             })]
           }),
           compact: n,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: a()(m.__invalid_messageContent, {
-            [m.compact]: n
+          className: a()(h.__invalid_messageContent, {
+            [h.compact]: n
           }),
           children: t.type === f.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? _.intl.format(_.t["+m8eD7"], {
-            username: h.nick,
+            username: m.nick,
             usernameHook: g,
             time: O
           }) : _.intl.format(_.t["BHeke+"], {
-            username: h.nick,
+            username: m.nick,
             usernameHook: g
           })
         })]

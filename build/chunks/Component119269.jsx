@@ -2,7 +2,7 @@
 /** chunk id: 119269, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qo: () => m,
+  Qo: () => h,
   ZP: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -17,10 +17,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk885302 = require("./885302.jsx"),
   Chunk914677 = require("./914677.jsx"),
   Chunk543130 = require("./543130.js"),
-  m = function(e) {
+  h = function(e) {
     return e[e.NITRO_GEM = 0] = "NITRO_GEM", e[e.NITRO_LOGO = 1] = "NITRO_LOGO", e[e.AVATAR_DECO = 2] = "AVATAR_DECO", e
   }({});
-let h = e => {
+let m = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
@@ -45,7 +45,7 @@ let h = e => {
       innerCircleClassName: a,
       progressCircleStrokeSize: l,
       backgroundCircleSize: u,
-      percentage: m,
+      percentage: h,
       initialPercentage: g,
       progressCircleVariation: E = 0,
       avatarDecoAssetId: b,
@@ -68,7 +68,7 @@ let h = e => {
             ellipseOpacity: O
           });
         case 2:
-          if (null != b) return (0, r.jsx)(h, {
+          if (null != b) return (0, r.jsx)(m, {
             avatarDecoAssetId: b,
             avatarDecoAssetDescription: y
           });
@@ -86,7 +86,7 @@ let h = e => {
         }),
         progressCircleStroke: I,
         progressCircleStrokeSize: l,
-        percentage: null != i ? i : m,
+        percentage: null != i ? i : h,
         initialPercentage: null != i ? i : g,
         progressCircleVariation: E,
         children: A()

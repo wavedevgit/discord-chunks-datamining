@@ -30,8 +30,8 @@ let _ = {
   1: {}
 };
 
-function m(e, t, n) {
-  if (h(e, t), (0, s.t)(e, t) || n <= 0) return;
+function h(e, t, n) {
+  if (m(e, t), (0, s.t)(e, t) || n <= 0) return;
   let r = n + Date.now();
   _[t][e.id] = {
     rateLimitPerUser: e.rateLimitPerUser,
@@ -48,14 +48,14 @@ function m(e, t, n) {
   }, true)
 }
 
-function h(e, t) {
+function m(e, t) {
   null != _[t][e.id] && (_[t][e.id].timer.stop(), delete _[t][e.id])
 }
 
 function g(e, t) {
   let n = c.Z.getChannel(e);
   if (null == n) returnfalse;
-  m(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * l.Z.Millis.SECOND + f)
+  h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * l.Z.Millis.SECOND + f)
 }
 
 function E(e) {
@@ -69,7 +69,7 @@ function b(e) {
   let {
     channelId: t
   } = e, n = c.Z.getChannel(t);
-  return null != n && m(n, 0, 0)
+  return null != n && h(n, 0, 0)
 }
 
 function y(e) {
@@ -87,7 +87,7 @@ function O(e) {
     cooldownMs: r
   } = e, i = c.Z.getChannel(t);
   if (null == i) returnfalse;
-  m(i, n, 0 === r ? 0 : r + f)
+  h(i, n, 0 === r ? 0 : r + f)
 }
 
 function v(e) {
@@ -99,7 +99,7 @@ function v(e) {
       var n;
       let t = _[e][r.id],
         i = r.rateLimitPerUser;
-      null != t && t.rateLimitPerUser !== i && m(r, e, Math.min(null != (n = null == t ? true : t.cooldownMs) ? n : 0, i * l.Z.Millis.SECOND))
+      null != t && t.rateLimitPerUser !== i && h(r, e, Math.min(null != (n = null == t ? true : t.cooldownMs) ? n : 0, i * l.Z.Millis.SECOND))
     }
   })
 }

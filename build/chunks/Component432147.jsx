@@ -65,14 +65,14 @@ function S(e) {
   } = e;
 
   function u(e) {
-    e.stopPropagation(), (0, h.ok)(t, e.shiftKey)
+    e.stopPropagation(), (0, m.ok)(t, e.shiftKey)
   }
 
   function d(e) {
     e.stopPropagation();
     let n = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
       r = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-    (e.which === g.yXg.SPACE || e.which === g.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, h.ok)(t, r))
+    (e.which === g.yXg.SPACE || e.which === g.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, m.ok)(t, r))
   }
 
   function _(e) {
@@ -85,9 +85,9 @@ function S(e) {
       }, n))
     })
   }
-  let m = (0, o.e7)([p.Z], () => p.Z.getCount(t.id)),
+  let h = (0, o.e7)([p.Z], () => p.Z.getCount(t.id)),
     y = I(t),
-    v = null != m && m > 0;
+    v = null != h && h > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: a()(b.spine, {
@@ -113,7 +113,7 @@ function S(e) {
           }), (0, r.jsx)("span", {
             className: b.cta,
             "aria-hidden": !v,
-            children: (0, f.WE)(m, t.id)
+            children: (0, f.WE)(h, t.id)
           })]
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
@@ -141,7 +141,7 @@ function I(e) {
       children: (0, _.Ye)(a)
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(h.Z, {
       message: n,
       channel: e
     }), (0, r.jsx)("span", {

@@ -63,7 +63,7 @@ function _(e) {
   f[t] = 1
 }
 
-function m(e) {
+function h(e) {
   let {
     threadId: t,
     mediaPostEmbed: n
@@ -73,7 +73,7 @@ function m(e) {
   }), f[t] = 2
 }
 
-function h(e) {
+function m(e) {
   let {
     threadId: t
   } = e;
@@ -99,7 +99,7 @@ o(E, "displayName", "MediaPostEmbedStore");
 let b = new E(Chunk570140.Z, {
   CONNECTION_OPEN: p,
   MEDIA_POST_EMBED_FETCH: _,
-  MEDIA_POST_EMBED_FETCH_SUCCESS: m,
-  MEDIA_POST_EMBED_FETCH_FAILURE: h,
+  MEDIA_POST_EMBED_FETCH_SUCCESS: h,
+  MEDIA_POST_EMBED_FETCH_FAILURE: m,
   LOGOUT: g
 })

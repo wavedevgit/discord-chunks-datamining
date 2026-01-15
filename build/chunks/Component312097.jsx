@@ -55,8 +55,8 @@ let p = "Media Viewer Modal";
 
 function _(e, t) {
   var c, f, _, {
-      location: m,
-      contextKey: h
+      location: h,
+      contextKey: m
     } = e,
     g = d(e, ["location", "contextKey"]);
   let E = null == (f = g.items[null != (_ = g.startingIndex) ? _ : 0]) || null == (c = f.sourceMetadata) ? true : c.message,
@@ -66,11 +66,11 @@ function _(e, t) {
     channelId: null == b ? true : b.id,
     channelType: null == b ? true : b.type,
     numMediaItems: g.items.length,
-    source: m,
+    source: h,
     hasMediaOptions: !g.shouldHideMediaOptions
   }), o.default.track(l.rMx.OPEN_MODAL, {
     type: l.jXE.MEDIA_VIEWER,
-    source: m,
+    source: h,
     guild_id: null == b ? true : b.guild_id,
     channel_id: null == b ? true : b.id,
     channel_type: null == b ? true : b.type
@@ -81,7 +81,7 @@ function _(e, t) {
     return t => (0, r.jsx)(e, u({}, t, g))
   }, {
     modalKey: p,
-    contextKey: h,
+    contextKey: m,
     onCloseCallback: s.VO,
     backdropStyle: i.fCB.LIGHTBOX,
     stackingBehavior: t

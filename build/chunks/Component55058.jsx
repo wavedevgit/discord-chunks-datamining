@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk992164 = require("./992164.js"),
   Chunk947866 = require("./947866.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let b = function(e) {
   let {
     isVisible: t,
     premiumSubscription: i,
-    churnDiscountOffer: m,
+    churnDiscountOffer: h,
     discountedPrice: g
   } = e, {
     analyticsLocations: b
@@ -76,7 +76,7 @@ let b = function(e) {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: e
       } = await n.e("26526").then(n.bind(n, 48813));
-      return t => (0, r.jsx)(e, E(h({}, t), {
+      return t => (0, r.jsx)(e, E(m({}, t), {
         premiumSubscription: i,
         analyticsLocations: b,
         initialStep: d.R.CONFIRM_DISCOUNT
@@ -100,15 +100,15 @@ let b = function(e) {
           variant: "heading-md/semibold",
           color: "text-strong",
           children: f.intl.format(f.t["3yZP0G"], {
-            percent: m.discount.amount
+            percent: h.discount.amount
           })
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: f.intl.format(f.t["3Q4wCy"], {
-            numMonths: m.discount.user_usage_limit,
+            numMonths: h.discount.user_usage_limit,
             discountedPrice: g,
-            billingPeriod: (0, u.JP)(m.discount.user_usage_limit_interval)
+            billingPeriod: (0, u.JP)(h.discount.user_usage_limit_interval)
           })
         })]
       }), (0, r.jsx)(s.Button, {

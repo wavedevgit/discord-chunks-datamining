@@ -39,7 +39,7 @@ var Chunk624238 = require("./624238.js"),
   Chunk570911 = require("./570911.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ function O(e, t) {
   let {
     isCurrentUser: n
   } = t, i = e.games.length > 0;
-  if (n && i) return 1 === r.kp[e.type] ? m.intl.string(m.t.wiXdEa) : m.intl.format(m.t["zR1+0/"], {
+  if (n && i) return 1 === r.kp[e.type] ? h.intl.string(h.t.wiXdEa) : h.intl.format(h.t["zR1+0/"], {
     numGames: r.kp[e.type]
   })
 }
@@ -129,18 +129,18 @@ function P() {
   return null != (e = null == n ? true : n.widgets) ? e : []
 }
 
-function R() {
+function w() {
   var e;
   return d.Z.hasPendingChanges() ? null != (e = d.Z.getPendingWidgets()) ? e : [] : P()
 }
 
-function w(e) {
+function R(e) {
   var t;
-  return null != (t = R().filter(l.Wc).find(t => t.type === e)) ? t : null
+  return null != (t = w().filter(l.Wc).find(t => t.type === e)) ? t : null
 }
 
 function D(e) {
-  let t = R(),
+  let t = w(),
     n = t.findIndex(t => t.getUniqueKey() === e.getUniqueKey());
   if (false === n) return [e, ...t];
   {
@@ -150,19 +150,19 @@ function D(e) {
 }
 
 function x(e) {
-  let t = R();
+  let t = w();
   null == t.find(t => t.getUniqueKey() === e.getUniqueKey()) && u.Z.setPendingWidgets([e, ...t])
 }
 
 function L(e) {
-  let t = R().filter(t => t.getUniqueKey() !== e.getUniqueKey());
+  let t = w().filter(t => t.getUniqueKey() !== e.getUniqueKey());
   u.Z.setPendingWidgets(t)
 }
 
 function j(e, t, n) {
   let r = Object.values(i._).length;
   if (n.length > r) return;
-  let a = w(e);
+  let a = R(e);
   if (null == a) return;
   let o = a.games.find(e => e.applicationId === t);
   if (null == o) return;
@@ -177,7 +177,7 @@ function j(e, t, n) {
 }
 
 function M(e, t, n) {
-  let r = w(e);
+  let r = R(e);
   if (null == r) return;
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || null == i.tags || 0 === i.tags.length) return;
@@ -186,7 +186,7 @@ function M(e, t, n) {
 }
 
 function k(e, t, n) {
-  let r = w(e);
+  let r = R(e);
   if (null == r) return;
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || n === i.comment) return;
@@ -207,7 +207,7 @@ function U(e) {
       game: c,
       ignoreMaxGames: d = false
     } = e,
-    f = w(s),
+    f = R(s),
     p = T(s);
   if (null != f) {
     let e = null != (n = null == (t = f.games) ? true : t.length) ? n : 0;
@@ -219,17 +219,17 @@ function U(e) {
     tags: c.tags
   };
   o = null != f ? [_, ...null != (i = f.games) ? i : []] : [_];
-  let m = D(new l.zy(b(g({}, null != f ? f : {
+  let h = D(new l.zy(b(g({}, null != f ? f : {
     type: s
   }), {
     games: o
   })));
-  u.Z.setPendingWidgets(m), a.Z.getDetectableGamesSupplemental([c.applicationId])
+  u.Z.setPendingWidgets(h), a.Z.getDetectableGamesSupplemental([c.applicationId])
 }
 
 function G(e, t) {
   if (e === t) return;
-  let n = R();
+  let n = w();
   if (e < 0 || e >= n.length || t < 0 || t >= n.length) return;
   let r = [...n],
     [i] = r.splice(e, 1);
@@ -237,7 +237,7 @@ function G(e, t) {
 }
 
 function Z(e, t, n) {
-  let r = w(e);
+  let r = R(e);
   if (null == r || null == r.games || t === n) return;
   let i = [...r.games];
   if (t < 0 || t >= i.length || n < 0 || n >= i.length) return;
@@ -250,7 +250,7 @@ function Z(e, t, n) {
 }
 
 function F(e, t) {
-  let n = w(e);
+  let n = R(e);
   if (null == n) return;
   let r = (null != n.games ? n.games : []).filter(e => e.applicationId !== t),
     i = D(new l.zy(b(g({}, n), {

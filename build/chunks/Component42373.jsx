@@ -52,18 +52,18 @@ let E = 1140,
       onClick: A,
       badgeText: N,
       badgeVariant: P = "gradient",
-      size: R,
-      backgroundVideoUrl: w,
+      size: w,
+      backgroundVideoUrl: R,
       previewImageStyle: D = _.P6.CONTAINED
-    } = e, x = (0, p.rO)(), L = i.useRef(null), j = i.useRef(0), M = (0, u.Z)("(min-width: ".concat(E, "px)")), k = D === _.P6.OVERLAY && (R !== _.y$.LARGE || !M), U = R === _.y$.LARGE && M && D === _.P6.OVERLAY, G = null != w && M && R === _.y$.LARGE, Z = i.useMemo(() => (0, s.debounce)(() => {
-      f.default.track(m.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
+    } = e, x = (0, p.rO)(), L = i.useRef(null), j = i.useRef(0), M = (0, u.Z)("(min-width: ".concat(E, "px)")), k = D === _.P6.OVERLAY && (w !== _.y$.LARGE || !M), U = w === _.y$.LARGE && M && D === _.P6.OVERLAY, G = null != R && M && w === _.y$.LARGE, Z = i.useMemo(() => (0, s.debounce)(() => {
+      f.default.track(h.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
         box_type: (0, s.snakeCase)(t)
       })
     }, 800), [t]), F = () => {
       null == L.current || C || (L.current.currentTime = j.current, L.current.play())
     }, B = () => {
       null == L.current || C || (j.current = L.current.currentTime, L.current.pause())
-    }, V = R === _.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold", H = () => null == N ? null : "gradient" === P ? (0, r.jsx)("div", {
+    }, V = w === _.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold", H = () => null == N ? null : "gradient" === P ? (0, r.jsx)("div", {
       className: g.badgeContainer,
       children: (0, r.jsx)("div", {
         className: g.badge,
@@ -82,7 +82,7 @@ let E = 1140,
         variant: P
       })
     }), Y = () => (0, r.jsxs)("div", {
-      className: o()(g.textBox, g["".concat(R)], U && g.overlayTextBox),
+      className: o()(g.textBox, g["".concat(w)], U && g.overlayTextBox),
       children: [(0, r.jsxs)("div", {
         children: [H(), (0, r.jsx)(c.Heading, {
           variant: V,
@@ -101,7 +101,7 @@ let E = 1140,
         debouncedOnClickAnalytics: Z
       })]
     }), W = () => (0, r.jsx)("div", {
-      className: o()(g.boxArtContainer, g["".concat(R)]),
+      className: o()(g.boxArtContainer, g["".concat(w)]),
       children: (0, r.jsx)(d.Z, {
         playsInline: true,
         preload: S ? "auto" : "none",
@@ -114,7 +114,7 @@ let E = 1140,
         ref: L,
         children: (0, r.jsx)("source", {
           src: v,
-          type: x ? h.m.MP4 : h.m.WEBM
+          type: x ? m.m.MP4 : m.m.WEBM
         })
       }, v)
     }), K = I % 2 != 0, z = () => K ? (0, r.jsxs)(r.Fragment, {
@@ -123,7 +123,7 @@ let E = 1140,
       children: [(0, r.jsx)(W, {}), (0, r.jsx)(Y, {})]
     });
     return (0, r.jsxs)(c.$1m, {
-      className: o()(g.backgroundColor, g.boxContainer, g["".concat(R)], g.gradientBackground, k && g.overlayImageMode, U && g.overlayMode),
+      className: o()(g.backgroundColor, g.boxContainer, g["".concat(w)], g.gradientBackground, k && g.overlayImageMode, U && g.overlayMode),
       onMouseEnter: F,
       onFocus: F,
       onBlur: B,
@@ -138,7 +138,7 @@ let E = 1140,
           loop: true,
           preload: S ? "auto" : "none",
           className: g.backgroundVideo,
-          src: w
+          src: R
         })
       }), (0, r.jsx)(z, {})]
     })

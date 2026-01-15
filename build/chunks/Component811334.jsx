@@ -2,10 +2,10 @@
 /** chunk id: 811334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B1: () => h,
+  B1: () => m,
   P7: () => y,
   UN: () => E,
-  Z9: () => m,
+  Z9: () => h,
   aO: () => _,
   az: () => b,
   i$: () => g
@@ -43,7 +43,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     children: t
   } = e;
@@ -58,7 +58,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     label: t,
     value: n,
@@ -98,13 +98,13 @@ function g(e) {
     currency: f,
     className: p,
     intervalCount: _,
-    inTrialPeriod: m
+    inTrialPeriod: h
   } = e, g = e => null != i ? i.find(t => t.type === e) : null, E = g(l.eW.SUBSCRIPTION_PLAN), b = g(l.eW.ENTITLEMENT), y = null != E ? Math.floor(E.amount / a * 100) : null, O = (0, c.T4)(a, f);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h, {
+    children: [(0, r.jsx)(m, {
       label: t,
       value: (0, r.jsxs)(r.Fragment, {
-        children: [m ? u.intl.formatToPlainString(u.t.hXcaLT, {
+        children: [h ? u.intl.formatToPlainString(u.t.hXcaLT, {
           price: (0, c.T4)(0, f)
         }) : n, null != y ? (0, r.jsxs)("div", {
           className: d.rowPercentDiscount,
@@ -112,7 +112,7 @@ function g(e) {
         }) : null]
       }),
       className: p
-    }), m && (0, r.jsx)(s.Text, {
+    }), h && (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       className: d.trialEndPrice,
       children: u.intl.format(u.t.v9QeON, {

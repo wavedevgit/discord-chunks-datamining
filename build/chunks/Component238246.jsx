@@ -111,8 +111,8 @@ class Q extends(r = Chunk473749.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.removeEventListener("contextmenu", U.contextMenuCallbackNative) : t.removeEventListener("contextmenu", U.contextMenuCallbackWeb), (0, d.j)(() => m.s9z.setState(e => z(W({}, e), {
-      [m.u1M]: []
+    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.removeEventListener("contextmenu", U.contextMenuCallbackNative) : t.removeEventListener("contextmenu", U.contextMenuCallbackWeb), (0, d.j)(() => h.s9z.setState(e => z(W({}, e), {
+      [h.u1M]: []
     }))), e.removeEventListener("beforeunload", this.beforeUnload)
   }
   updateTitle() {
@@ -141,7 +141,7 @@ class Q extends(r = Chunk473749.Component) {
     let {
       guestWindow: t
     } = this.props, n = t.document;
-    for (let t of (this._combokeys = (0, R.r)(n.documentElement), [E.iN, E.oV, g.f, ...null != (e = this.props.keybinds) ? e : []]))
+    for (let t of (this._combokeys = (0, w.r)(n.documentElement), [E.iN, E.oV, g.f, ...null != (e = this.props.keybinds) ? e : []]))
       if (t.comboKeysBindGlobal)
         for (let e of t.binds) this._combokeys.bindGlobal(e, (e, n) => ("function" == typeof t.action && t.action(e, n), false))
   }
@@ -171,7 +171,7 @@ class Q extends(r = Chunk473749.Component) {
         windowKey: n,
         themeOverride: d,
         children: (0, i.jsx)(y.Z, {
-          children: (0, i.jsxs)(m.JcV, {
+          children: (0, i.jsxs)(h.JcV, {
             containerRef: this.rootRef,
             children: [(0, i.jsx)(X, {
               guestWindow: o,
@@ -181,7 +181,7 @@ class Q extends(r = Chunk473749.Component) {
                   appContext: null != E ? E : B.IlC.POPOUT,
                   renderWindow: o,
                   children: (0, i.jsx)(T.m, {
-                    children: (0, i.jsxs)(w.yP, {
+                    children: (0, i.jsxs)(R.yP, {
                       children: [(0, i.jsxs)("div", {
                         className: H.popout,
                         children: [b && (0, i.jsx)(p.f6W, {
@@ -194,7 +194,7 @@ class Q extends(r = Chunk473749.Component) {
                           className: s()(H.content, c),
                           children: t
                         })]
-                      }), !g && (0, i.jsx)(m.nKe, {}), (0, i.jsx)(h.Z, {}), (0, i.jsx)(f.uZ, {}), (0, i.jsx)(w.Un, {})]
+                      }), !g && (0, i.jsx)(h.nKe, {}), (0, i.jsx)(m.Z, {}), (0, i.jsx)(f.uZ, {}), (0, i.jsx)(R.Un, {})]
                     })
                   })
                 })]
@@ -272,7 +272,7 @@ let X = Chunk473749.forwardRef(function(e, t) {
       clientThemesClassName: u,
       clientThemesCSS: d
     } = (0, I.ZP)(), f = (0, L.Ll)(), p = null != (n = e.themeOverride) ? n : f;
-    return null == r ? null : (0, i.jsx)(m.Sle, {
+    return null == r ? null : (0, i.jsx)(h.Sle, {
       children: (0, i.jsx)(S.Gt, {
         value: l,
         children: (0, i.jsx)(Q, z(W({

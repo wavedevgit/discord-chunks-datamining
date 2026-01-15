@@ -48,7 +48,7 @@ let g = function(e) {
       children: (0, f.TV)(y, Number(b.discount.amount))
     }), (0, r.jsx)(d.OJ, {
       onClick: S,
-      text: m.intl.string(m.t.zLXssK)
+      text: h.intl.string(h.t.zLXssK)
     })]
   }) : (0, r.jsxs)(i.qXd, {
     color: i.DM8.PREMIUM_TIER_2,
@@ -58,10 +58,10 @@ let g = function(e) {
     }), (0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
-      className: h.premiumIcon
+      className: m.premiumIcon
     }), (0, f.TV)(y, Number(b.discount.amount)), (0, r.jsx)(i.EyT, {
       onClick: S,
-      children: m.intl.string(m.t.zLXssK)
+      children: h.intl.string(h.t.zLXssK)
     })]
   })
 }

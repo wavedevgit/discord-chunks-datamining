@@ -5,12 +5,12 @@ require.d(exports, {
   $p: () => _,
   Do: () => v,
   FE: () => O,
-  K$: () => m,
+  K$: () => h,
   Uc: () => E,
   X0: () => y,
   _Z: () => p,
   a7: () => S,
-  ac: () => h,
+  ac: () => m,
   l8: () => T,
   vg: () => C,
   wK: () => g,
@@ -33,18 +33,18 @@ function _(e) {
   return null != e && d.Nx.has(e.id)
 }
 
-function m(e) {
+function h(e) {
   return null != e && e.productLine === f.POd.SOCIAL_LAYER_GAME_ITEM
 }
 
-function h() {
+function m() {
   let e = s.Z.getGuild(d.Kz);
   return null != e && e.features.has(f.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? e.id : d.ON
 }
 
 function g(e) {
   var t, n;
-  return e.id === h() || null != (n = null == (t = e.features) ? true : t.has(f.GuildFeatures.SOCIAL_LAYER_STOREFRONT)) && n
+  return e.id === m() || null != (n = null == (t = e.features) ? true : t.has(f.GuildFeatures.SOCIAL_LAYER_STOREFRONT)) && n
 }
 
 function E(e) {

@@ -4,7 +4,7 @@
 require.d(exports, {
   AG: () => P,
   Z$: () => D,
-  jH: () => R,
+  jH: () => w,
   zH: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -96,13 +96,13 @@ function N(e) {
     disabled: l = false,
     style: f = {},
     onClick: _,
-    isGradient: h = false,
+    isGradient: m = false,
     "aria-label": E,
     gradientStart: y,
     gradientEnd: v,
     gradientDegrees: S = 180
   } = e, I = (0, s.JA)("color-".concat(t)), T = {};
-  if (h && null != y && null != v) {
+  if (m && null != y && null != v) {
     let e = (0, c.Rf)(y),
       t = (0, c.Rf)(v);
     T = {
@@ -111,7 +111,7 @@ function N(e) {
   } else T = {
     backgroundColor: null != t ? (0, c.Rf)(t) : f.backgroundColor
   };
-  let C = h ? y : t,
+  let C = m ? y : t,
     A = false;
 
   function N() {
@@ -124,7 +124,7 @@ function N(e) {
       color: A ? d.Z.colors.WHITE.css : d.Z.colors.BLACK.css
     })
   }
-  return i && !a ? A = true : (i || a) && (A = (0, c.Bd)(null != C ? C : m.p6O) > .2), (0, r.jsx)(u.tEY, {
+  return i && !a ? A = true : (i || a) && (A = (0, c.Bd)(null != C ? C : h.p6O) > .2), (0, r.jsx)(u.tEY, {
     offset: false,
     children: (0, r.jsxs)("button", O(b({
       type: "button",
@@ -132,16 +132,16 @@ function N(e) {
         [g.disabled]: l,
         [g.default]: n,
         [g.custom]: i,
-        [g.noColor]: null == t && !h,
-        [g.gradientPreset]: h
+        [g.noColor]: null == t && !m,
+        [g.gradientPreset]: m
       }),
       disabled: l,
-      onClick: () => null == _ ? true : _(h ? {
+      onClick: () => null == _ ? true : _(m ? {
         start: y,
         end: v
       } : t),
       style: b({}, f, T),
-      "aria-label": null != E ? E : h ? "Gradient ".concat(y, "-").concat(v) : T.backgroundColor
+      "aria-label": null != E ? E : m ? "Gradient ".concat(y, "-").concat(v) : T.backgroundColor
     }, I), {
       children: [i ? (0, r.jsx)(p.vdY, {
         size: "custom",
@@ -171,7 +171,7 @@ class P extends Chunk473749.PureComponent {
     })
   }
 }
-class R extends Chunk473749.PureComponent {
+class w extends Chunk473749.PureComponent {
   render() {
     let {
       customColor: e,
@@ -190,7 +190,7 @@ class R extends Chunk473749.PureComponent {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     value: t,
     eagerUpdate: n = false,
@@ -198,20 +198,20 @@ function w(e) {
     onClose: s,
     suggestedColors: l,
     middle: d,
-    footer: m,
+    footer: h,
     showEyeDropper: E,
     wrapperComponentType: y,
     className: v
-  } = e, S = (0, _.Z)(), C = A(t), N = null != C ? C : 0, P = (0, c.Rf)(N), R = (0, c.O)(N), [w, D] = i.useState({
+  } = e, S = (0, _.Z)(), C = A(t), N = null != C ? C : 0, P = (0, c.Rf)(N), w = (0, c.O)(N), [R, D] = i.useState({
     current: N,
     pending: {
       hex: P,
-      hsl: R
+      hsl: w
     },
     input: P
   });
   i.useEffect(() => {
-    if (null == C || C === w.current) return;
+    if (null == C || C === R.current) return;
     let e = (0, c.Rf)(C),
       t = (0, c.O)(C);
     D({
@@ -222,7 +222,7 @@ function w(e) {
       },
       input: e
     })
-  }, [C, w]), i.useEffect(() => s, [s]);
+  }, [C, R]), i.useEffect(() => s, [s]);
   let x = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) return void D(e => O(b({}, e), {
@@ -264,17 +264,17 @@ function w(e) {
             } = e;
             return M(t)
           },
-          color: w.pending.hsl
+          color: R.pending.hsl
         })
       }), d, (0, r.jsx)(p.oil, {
-        value: w.input.slice(1),
+        value: R.input.slice(1),
         onChange: x,
         maxLength: T - 1,
         leading: "#",
         trailing: E && null != S ? {
           icon: p.ilE,
           onClick: L,
-          "aria-label": h.intl.string(h.t["0dU9Ny"])
+          "aria-label": m.intl.string(m.t["0dU9Ny"])
         } : true
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
         className: g.suggestedColors,
@@ -286,15 +286,15 @@ function w(e) {
           className: g.suggestedColor,
           onClick: () => x(e)
         }, "".concat(e, "-").concat(t)))
-      }), m]
+      }), h]
     }), U = null != y ? y : f.V;
   return (0, r.jsx)(U, {
-    "aria-label": h.intl.string(h.t.WTqQ5e),
+    "aria-label": m.intl.string(m.t.WTqQ5e),
     className: o()(g.customColorPicker, v),
     children: k
   })
 }
-let D = Chunk473749.memo(w);
+let D = Chunk473749.memo(R);
 
 function x(e) {
   let {
@@ -308,14 +308,14 @@ function x(e) {
     onChange: f,
     renderDefaultButton: p,
     renderCustomButton: _,
-    colorContainerClassName: m,
-    isGradient: h,
+    colorContainerClassName: h,
+    isGradient: m,
     renderGradientCustomButton: E,
     gradientDegrees: y,
     allowBlackCustomColor: S
   } = e, I = e => (0, r.jsx)("div", {
     className: g.colorPickerRow,
-    children: h ? e.map(e => (0, r.jsx)(N, {
+    children: m ? e.map(e => (0, r.jsx)(N, {
       gradientStart: e.start,
       gradientEnd: e.end,
       color: 0,
@@ -347,13 +347,13 @@ function x(e) {
         } = e, l = v(e, ["ref"]);
         return (0, r.jsxs)("div", O(b({
           className: o()(g.container, t, {
-            [g.gradient]: h
+            [g.gradient]: m
           }),
           ref: s
         }, l), {
-          children: [!h && (0, r.jsxs)(r.Fragment, {
+          children: [!m && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-              className: o()(g.defaultContainer, m),
+              className: o()(g.defaultContainer, h),
               children: p({
                 value: c,
                 color: n,
@@ -362,7 +362,7 @@ function x(e) {
                 allowBlackCustomColor: S
               })
             }), (0, r.jsx)("div", {
-              className: o()(g.customContainer, m),
+              className: o()(g.customContainer, h),
               children: _({
                 value: c,
                 customColor: i,
@@ -370,7 +370,7 @@ function x(e) {
                 presets: a
               })
             })]
-          }), h && null != E && (0, r.jsx)("div", {
+          }), m && null != E && (0, r.jsx)("div", {
             children: E({
               value: c,
               startColor: n,

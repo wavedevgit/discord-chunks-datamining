@@ -6,7 +6,7 @@ require.d(exports, {
   DK: () => H,
   G3: () => _,
   Ho: () => F,
-  Ib: () => m,
+  Ib: () => h,
   P8: () => N,
   PJ: () => B,
   Rp: () => Y,
@@ -34,8 +34,8 @@ var Chunk392711 = require("./392711.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = 365,
-  m = 366,
-  h = "ddd MMM Do \xb7 LT",
+  h = 366,
+  m = "ddd MMM Do \xb7 LT",
   g = "ddd MMM Do, YYYY \xb7 LT",
   E = "LT",
   b = 4,
@@ -94,10 +94,10 @@ let P = () => {
       t = e.hour();
     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
   },
-  R = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? h : g),
-  w = (e, t) => {
+  w = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
+  R = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
-    return n > 1 || n < 0 ? R(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
+    return n > 1 || n < 0 ? w(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
 function D(e, t, n) {
@@ -106,8 +106,8 @@ function D(e, t, n) {
     i = null != t && "" !== t ? a()(t) : true,
     o = null != t && r.isSame(i, "day");
   return {
-    startDateTimeString: w(r, n),
-    endDateTimeString: null != i ? o ? i.format(E) : R(i, n) : true,
+    startDateTimeString: R(r, n),
+    endDateTimeString: null != i ? o ? i.format(E) : w(i, n) : true,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= a()().add(1, "hour"),
     withinStartWindow: r <= a()().add(15, "minute"),

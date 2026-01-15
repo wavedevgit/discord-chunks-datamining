@@ -21,7 +21,7 @@ var Chunk860911 = require("./860911.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -84,15 +84,15 @@ var v = function(e) {
 function S(e, t) {
   switch (e) {
     case 2:
-      return m.intl.formatToPlainString(m.t.k1ew5N, {
+      return h.intl.formatToPlainString(h.t.k1ew5N, {
         rate: t
       });
     case 3:
-      return m.intl.formatToPlainString(m.t["Hs3Y+I"], {
+      return h.intl.formatToPlainString(h.t["Hs3Y+I"], {
         rate: t
       });
     case 4:
-      return m.intl.string(m.t.DLAKbi)
+      return h.intl.string(h.t.DLAKbi)
   }
 }
 
@@ -114,9 +114,9 @@ function I(e) {
     onClick: c,
     loading: d,
     icon: s,
-    text: null != u ? m.intl.formatToPlainString(m.t.i4T8vz, {
+    text: null != u ? h.intl.formatToPlainString(h.t.i4T8vz, {
       rate: u
-    }) : m.intl.string(m.t.uuzaAK)
+    }) : h.intl.string(h.t.uuzaAK)
   }) : (0, r.jsx)(A, {
     text: S(l, null != u ? u : "")
   })
@@ -137,7 +137,7 @@ function T(e) {
       skuId: a.id,
       analyticsLocations: u
     })
-  }, h = (0, p.M)(a.id), g = a.type === _.epS.DURABLE && h, {
+  }, m = (0, p.M)(a.id), g = a.type === _.epS.DURABLE && m, {
     price: E
   } = a;
   if (null == E) return null;
@@ -145,12 +145,12 @@ function T(e) {
     (null != n ? n : d)(e), null == i || i()
   };
   return g ? (0, r.jsx)(A, {
-    text: m.intl.string(m.t["6cfuDj"])
+    text: h.intl.string(h.t["6cfuDj"])
   }) : (0, r.jsx)(C, {
     appId: t,
     skuId: a.id,
     onClick: b,
-    text: m.intl.format(m.t.Xp5WTn, {
+    text: h.intl.format(h.t.Xp5WTn, {
       price: (0, f.T4)(E.amount, E.currency)
     }),
     icon: l

@@ -51,8 +51,8 @@ function C(e) {
 let A = "recentMentionFilterSettings",
   N = [],
   P = {},
-  R = {},
-  w = false,
+  w = {},
+  R = false,
   D = true,
   x = Chunk433517.K.get(A, {
     guildFilter: Chunk981631.NgX.ALL_SERVERS,
@@ -85,13 +85,13 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  w = true, null == t && x.guildFilter === I.NgX.THIS_SERVER && Q({
+  R = true, null == t && x.guildFilter === I.NgX.THIS_SERVER && Q({
     guildFilter: I.NgX.ALL_SERVERS
   })
 }
 
 function Z(e) {
-  if (e instanceof m.ZP) return e;
+  if (e instanceof h.ZP) return e;
   let t = E.Z.getMessage(e.channel_id, e.id);
   return null != t ? t : (0, d.e5)(e)
 }
@@ -127,13 +127,13 @@ function B(e) {
   } = e, i = a().map(n, Z);
   U({
     addedMessages: i
-  }), r ? N = N.concat(i) : (N = i, R = {}), a().forEach(i, e => {
-    R[e.id] = true
-  }), w = false, D = t, j = (0, l.zO)(), L = true
+  }), r ? N = N.concat(i) : (N = i, w = {}), a().forEach(i, e => {
+    w[e.id] = true
+  }), R = false, D = t, j = (0, l.zO)(), L = true
 }
 
 function V() {
-  w = false
+  R = false
 }
 
 function H(e) {
@@ -142,7 +142,7 @@ function H(e) {
   null == t && (t = e.channel_id);
   let n = g.Z.getChannel(t);
   if (null == n || n.type === I.d4z.DM || x.guildFilter === I.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
-  let r = h.default.getId();
+  let r = m.default.getId();
   if (y.Z.isBlockedOrIgnoredForMessage(e) || (0, _.Z)(e, r)) return null;
   e = Z(e);
   let i = !x.everyoneFilter,
@@ -173,14 +173,14 @@ function Y(e) {
     })) returnfalse;
   let i = H(n, t);
   if (null == i) returnfalse;
-  (N = N.slice()).unshift(i), R[i.id] = true, U({
+  (N = N.slice()).unshift(i), w[i.id] = true, U({
     addedMessages: [i]
   })
 }
 
 function W(e) {
   let t = e.message.id;
-  if (null == t || null == R[t]) returnfalse;
+  if (null == t || null == w[t]) returnfalse;
   let n = a().findIndex(N, e => {
       let {
         id: n
@@ -192,8 +192,8 @@ function W(e) {
 }
 
 function K(e) {
-  if (null == R[e]) returnfalse;
-  delete R[e], U({
+  if (null == w[e]) returnfalse;
+  delete w[e], U({
     deletedMessages: a().filter(N, t => {
       let {
         id: n
@@ -227,11 +227,11 @@ function Q(e) {
   x = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), x), s.K.set(A, x);
   let n = (e, n) => t[e] !== x[e] && x[e] === n,
     r = n("guildFilter", I.NgX.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
-  R = {};
+  w = {};
   let i = [];
   r && N.forEach(e => {
     let t = H(e);
-    null != t && (i.push(t), R[t.id] = true)
+    null != t && (i.push(t), w[t.id] = true)
   }), k(N = i), 0 === N.length && (L = false)
 }
 
@@ -241,7 +241,7 @@ function X() {
 }
 
 function J() {
-  N = [], R = {}, L = false, M = false, P = {}
+  N = [], w = {}, L = false, M = false, P = {}
 }
 
 function $(e) {
@@ -250,7 +250,7 @@ function $(e) {
   } = e, n = [];
   N = a().filter(N, e => {
     let r = g.Z.getChannel(e.channel_id);
-    return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), false)
+    return null != r && r.getGuildId() !== t.id || (delete w[e.id], n.push(e), false)
   }), U({
     deletedMessages: n
   })
@@ -266,7 +266,7 @@ function et(e) {
   let {
     channel: t
   } = e, n = [];
-  N = a().filter(N, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), false)), U({
+  N = a().filter(N, e => e.channel_id !== t.id || (delete w[e.id], n.push(e), false)), U({
     deletedMessages: n
   })
 }
@@ -282,7 +282,7 @@ function er(e) {
   U({
     deletedMessages: N.slice(t)
   });
-  for (let e = t; e < N.length; ++e) delete R[N[e].id];
+  for (let e = t; e < N.length; ++e) delete w[N[e].id];
   N.length > (N = N.slice(0, t)).length && (D = true)
 }
 
@@ -291,7 +291,7 @@ function ei(e) {
 }
 class ea extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(h.default, g.Z, E.Z, b.ZP, y.Z, O.Z, v.ZP, S.default)
+    this.waitFor(m.default, g.Z, E.Z, b.ZP, y.Z, O.Z, v.ZP, S.default)
   }
   get hasLoadedEver() {
     return L
@@ -306,10 +306,10 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return L || N.length > 0 ? N.filter(F) : null
   }
   hasMention(e) {
-    return R[e]
+    return w[e]
   }
   get loading() {
-    return w
+    return R
   }
   get hasMore() {
     return D

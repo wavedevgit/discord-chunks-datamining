@@ -26,9 +26,9 @@ function f(e, t, n) {
     isVirtualized: p
   } = e, {
     rowProps: _,
-    ...m
+    ...h
   } = (0, a.K)(e, t, n), {
-    direction: h
+    direction: m
   } = (0, c.j)();
   p && !((0, l.OV)() && "expandedKeys" in t) ? _["aria-rowindex"] = f.index + 1 + t.collection.headerRows.length : delete _["aria-rowindex"];
   let g = {};
@@ -39,7 +39,7 @@ function f(e, t, n) {
       let n = (null == (E = e.props) ? true : E.UNSTABLE_childItems) || (null == (y = e.props) || null == (b = y.children) ? true : b.length) > t.userColumnCount;
       g = {
         onKeyDown: r => {
-          r.key === u[h] && t.selectionManager.focusedKey === e.key && n && "all" !== t.expandedKeys && !t.expandedKeys.has(e.key) ? (t.toggleKey(e.key), r.stopPropagation()) : r.key === d[h] && t.selectionManager.focusedKey === e.key && n && ("all" === t.expandedKeys || t.expandedKeys.has(e.key)) && (t.toggleKey(e.key), r.stopPropagation())
+          r.key === u[m] && t.selectionManager.focusedKey === e.key && n && "all" !== t.expandedKeys && !t.expandedKeys.has(e.key) ? (t.toggleKey(e.key), r.stopPropagation()) : r.key === d[m] && t.selectionManager.focusedKey === e.key && n && ("all" === t.expandedKeys || t.expandedKeys.has(e.key)) && (t.toggleKey(e.key), r.stopPropagation())
         },
         "aria-expanded": n ? "all" === t.expandedKeys || t.expandedKeys.has(f.key) : true,
         "aria-level": e.level,
@@ -49,12 +49,12 @@ function f(e, t, n) {
     }
   }
   let N = (0, o.fU)(f.props),
-    P = m.hasAction ? N : {};
+    P = h.hasAction ? N : {};
   return {
     rowProps: {
       ...(0, s.d)(_, g, P),
       "aria-labelledby": (0, r.u)(t, f.key)
     },
-    ...m
+    ...h
   }
 }

@@ -53,10 +53,10 @@ function _(e, t) {
   }), e
 }
 
-function m() {
+function h() {
   return new Promise(e => setTimeout(e, 1e3))
 }
-let h = .25,
+let m = .25,
   g = 4,
   E = 1,
   b = 2.8,
@@ -113,12 +113,12 @@ let S = Chunk473749.memo(function(e) {
         })) : t !== b ? (t = b, await e({
           dotCycle: t,
           immediate: true
-        })) : await m()
+        })) : await h()
       }
     }), "animate-always", [u]), y = (2 * t * 3 + t / 4 * 2) / 2;
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
-        let i = h * e,
+        let i = m * e,
           l = t + t * o * e;
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [y, l]) : l,
@@ -140,20 +140,20 @@ let S = Chunk473749.memo(function(e) {
       hide: a = false,
       themed: d = false,
       className: p,
-      ref: m
+      ref: h
     } = e, {
-      focused: h
+      focused: m
     } = (0, c.vP)();
     return (0, l.Yzy)(a, _(f({}, y), {
       key: e => e ? "true" : "false"
-    }), h ? "animate-always" : "animate-never")((e, a, l) => {
+    }), m ? "animate-always" : "animate-never")((e, a, l) => {
       let {
         dotPosition: c
       } = e, {
         key: f
       } = l;
       return a ? null : (0, r.jsx)("svg", {
-        ref: m,
+        ref: h,
         x: n,
         y: i,
         width: 2 * t * 3 + t / 2 * 2,

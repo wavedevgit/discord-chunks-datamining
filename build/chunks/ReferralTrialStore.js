@@ -23,8 +23,8 @@ let d = 5,
   f = null,
   p = new Set,
   _ = new Map,
-  m = false,
-  h = new Set,
+  h = false,
+  m = new Set,
   g = new Set,
   E = new Map,
   b = 0,
@@ -37,16 +37,16 @@ let d = 5,
   C = null;
 
 function A() {
-  f = null, p = new Set, m = false, h = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = false, S = 0, I = false, T = false, C = null, _ = new Map
+  f = null, p = new Set, h = false, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = false, S = 0, I = false, T = false, C = null, _ = new Map
 }
 let N = () => true;
 
 function P(e) {
   let {} = e;
-  C = null, m = true
+  C = null, h = true
 }
 
-function R(e) {
+function w(e) {
   let {
     referrals_remaining: t,
     sent_user_ids: n,
@@ -54,12 +54,12 @@ function R(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  I = true, T = a, m = false, f = t, p = new Set(n), C = r, _ = i
+  I = true, T = a, h = false, f = t, p = new Set(n), C = r, _ = i
 }
 
-function w(e) {
+function R(e) {
   let {} = e;
-  I = false, T = false, C = null, m = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
+  I = false, T = false, C = null, h = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
 
 function D(e) {
@@ -77,21 +77,21 @@ function x(e) {
 }
 
 function L(e) {
-  h.add(e)
+  m.add(e)
 }
 
 function j(e) {
   let {
     userTrialOffer: t
   } = e;
-  null != t && (h.delete(t.id), g.add(t.id), E.set(t.id, t))
+  null != t && (m.delete(t.id), g.add(t.id), E.set(t.id, t))
 }
 
 function M(e) {
   let {
     userTrialOfferId: t
   } = e;
-  h.delete(t), g.add(t)
+  m.delete(t), g.add(t)
 }
 
 function k(e) {
@@ -112,13 +112,13 @@ function G(e) {
   let {
     userTrialOfferId: t
   } = e;
-  m || (0, l.C$)(), h.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  h || (0, l.C$)(), m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function Z(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
-  g.has(t) || h.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  g.has(t) || m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function F() {
@@ -141,7 +141,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     this.waitFor(s.default), this.syncWith([s.default], N)
   }
   checkAndFetchReferralsRemaining() {
-    null == f && !m && b < d && (null == y || y < Date.now()) && (0, l.C$)()
+    null == f && !h && b < d && (null == y || y < Date.now()) && (0, l.C$)()
   }
   getReferralsRemaining() {
     return this.checkAndFetchReferralsRemaining(), f
@@ -150,13 +150,13 @@ class H extends(r = Chunk442837.ZP.Store) {
     return this.checkAndFetchReferralsRemaining(), Array.from(p.values())
   }
   isFetchingReferralsRemaining() {
-    return m
+    return h
   }
   getRelevantUserTrialOffer(e) {
     return E.get(e)
   }
   isResolving(e) {
-    return h.has(e)
+    return m.has(e)
   }
   getEligibleUsers() {
     return O
@@ -187,8 +187,8 @@ u(H, "displayName", "ReferralTrialStore");
 let Y = new H(Chunk570140.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: G,
   BILLING_REFERRALS_REMAINING_FETCH_START: P,
-  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: w,
+  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: w,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: R,
   BILLING_CREATE_REFERRAL_SUCCESS: D,
   CREATE_REFERRALS_SUCCESS: x,
   BILLING_REFERRAL_RESOLVE_SUCCESS: j,

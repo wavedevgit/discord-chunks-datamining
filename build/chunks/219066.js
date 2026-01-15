@@ -32,21 +32,21 @@ function f(e) {
       includeFrecency: true
     },
     allowFetch: true
-  }), m = r.useMemo(() => p.reduce((e, t) => {
+  }), h = r.useMemo(() => p.reduce((e, t) => {
     let {
       section: n,
       data: r
     } = t;
     return r.length > 0 && e.add(n.id), e
-  }, new Set), [p]), h = r.useMemo(() => {
+  }, new Set), [p]), m = r.useMemo(() => {
     var e, t;
     return Object.values(null != (t = null == (e = f.result) ? true : e.sections) ? t : {}).map(e => {
       let {
         descriptor: t
       } = e;
       return t
-    }).filter(e => !(e.id in s.Tm) && m.has(e.id))
-  }, [null == (t = f.result) ? true : t.sections, m]), g = (0, u.h)(h);
+    }).filter(e => !(e.id in s.Tm) && h.has(e.id))
+  }, [null == (t = f.result) ? true : t.sections, h]), g = (0, u.h)(m);
   return {
     appsInThisServer: r.useMemo(() => a().compact(g.map(e => {
       let {

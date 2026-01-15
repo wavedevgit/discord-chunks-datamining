@@ -51,7 +51,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = e => {
+let h = e => {
     let {
       appRecord: t,
       closePopout: n,
@@ -80,7 +80,7 @@ let m = e => {
       }), u, d]
     })
   },
-  h = e => {
+  m = e => {
     let {
       appRecord: t,
       botUser: n,
@@ -88,7 +88,7 @@ let m = e => {
       selectedGuildId: a,
       selectedChannelId: o
     } = e;
-    return (0, r.jsx)(m, {
+    return (0, r.jsx)(h, {
       appRecord: t,
       closePopout: i,
       selectedGuildId: a,
@@ -112,12 +112,12 @@ let m = e => {
         let {
           closePopout: i
         } = e;
-        return null == t.bot ? (0, r.jsx)(m, {
+        return null == t.bot ? (0, r.jsx)(h, {
           appRecord: t,
           closePopout: i,
           selectedGuildId: n,
           selectedChannelId: o
-        }) : (0, r.jsx)(h, {
+        }) : (0, r.jsx)(m, {
           appRecord: t,
           botUser: t.bot,
           closePopout: i,

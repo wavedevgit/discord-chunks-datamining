@@ -30,7 +30,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,7 +68,7 @@ function O() {
 }
 
 function v(e) {
-  y.setState(t => m({}, t, e), true), o.K.set(E, y.getState())
+  y.setState(t => h({}, t, e), true), o.K.set(E, y.getState())
 }
 let S = () => {
     v({
@@ -109,7 +109,7 @@ class N extends Chunk147913.Z {
     }), _(this, "dispatchSetKeybind", e => {
       if (null == e) return;
       let t = u.ZP.getOverlayKeybind();
-      return s.Z.setKeybind(g(m({}, t), {
+      return s.Z.setKeybind(g(h({}, t), {
         shortcut: (0, d.Kd)(e)
       }))
     }), _(this, "restoreKeybind", async () => {

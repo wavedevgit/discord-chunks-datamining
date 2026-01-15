@@ -21,8 +21,8 @@ function d(e) {
     onLongPress: f,
     threshold: p = u,
     accessibilityDescription: _
-  } = e, m = (0, c.useRef)(true), {
-    addGlobalListener: h,
+  } = e, h = (0, c.useRef)(true), {
+    addGlobalListener: m,
     removeGlobalListener: g
   } = (0, i.x)(), {
     pressProps: E
@@ -32,20 +32,20 @@ function d(e) {
       if (e.continuePropagation(), ("mouse" === e.pointerType || "touch" === e.pointerType) && (n && n({
           ...e,
           type: "longpressstart"
-        }), m.current = setTimeout(() => {
+        }), h.current = setTimeout(() => {
           e.target.dispatchEvent(new PointerEvent("pointercancel", {
             bubbles: true
           })), (0, a.r3)(e.target).activeElement !== e.target && (0, o.A)(e.target), f && f({
             ...e,
             type: "longpress"
-          }), m.current = true
+          }), h.current = true
         }, p), "touch" === e.pointerType)) {
         let t = e => {
           e.preventDefault()
         };
-        h(e.target, "contextmenu", t, {
+        m(e.target, "contextmenu", t, {
           once: true
-        }), h(window, "pointerup", () => {
+        }), m(window, "pointerup", () => {
           setTimeout(() => {
             g(e.target, "contextmenu", t)
           }, 30)
@@ -55,7 +55,7 @@ function d(e) {
       }
     },
     onPressEnd(e) {
-      m.current && clearTimeout(m.current), d && ("mouse" === e.pointerType || "touch" === e.pointerType) && d({
+      h.current && clearTimeout(h.current), d && ("mouse" === e.pointerType || "touch" === e.pointerType) && d({
         ...e,
         type: "longpressend"
       })

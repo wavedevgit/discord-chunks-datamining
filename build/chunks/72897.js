@@ -20,7 +20,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,14 +29,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -111,9 +111,9 @@ function S(e) {
     getRawDevices: t
   } = b(e), n = (0, a.e7)([l.Z], () => t(l.Z));
   return (0, r.useMemo)(() => {
-    let t = h({}, n),
+    let t = m({}, n),
       r = t[p.w5];
-    return null != r && (t[p.w5] = E(h({}, r), {
+    return null != r && (t[p.w5] = E(m({}, r), {
       name: O(e, r)
     })), t
   }, [e, n])
@@ -137,7 +137,7 @@ function T(e, t) {
   }), l = S(e), {
     getAllDeviceIdsSortedByFrecency: u
   } = b(e), _ = (0, o.Z)((0, a.Wu)([d.Z], () => u(d.Z))), {
-    id: m
+    id: h
   } = I(e);
   return (0, r.useMemo)(() => {
     let t = e => e.map(e => l[e]).filter(c.lm),
@@ -145,9 +145,9 @@ function T(e, t) {
       r = s && e !== p.h7.VIDEO_INPUT ? [p.w5] : [],
       a = (0, i.intersection)(_, n),
       o = (0, i.difference)(n, _),
-      u = (0, i.difference)(o, r, [m]);
-    return (null == a ? true : a.length) === 0 || u.length <= 1 ? [(0, i.union)(r, [m], a, o), []].map(t) : [(0, i.union)(r, [m], a), u].map(t)
-  }, [l, e, _, m, s])
+      u = (0, i.difference)(o, r, [h]);
+    return (null == a ? true : a.length) === 0 || u.length <= 1 ? [(0, i.union)(r, [h], a, o), []].map(t) : [(0, i.union)(r, [h], a), u].map(t)
+  }, [l, e, _, h, s])
 }
 
 function C(e) {

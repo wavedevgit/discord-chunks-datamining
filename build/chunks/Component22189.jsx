@@ -85,15 +85,15 @@ let ey = () => {
     useKibibytes: true
   }), eb = (0, a.e7)([I.Z], () => I.Z.getPremiumTypeSubscription()), ey = null != eb ? A.ZP.getPremiumPlanItem(eb) : null, eO = (null != ey ? A.ZP.getSkuIdForPlan(ey.planId) : null) === j.Si.TIER_2, ev = S.default.getCurrentUser(), eS = (0, A.I5)(ev, j.PremiumTypes.TIER_2), eI = (0, A.I5)(ev, j.PremiumTypes.TIER_0), eT = (0, d.Z)(v.Z), {
     isFractionalPremiumActive: eC
-  } = (0, u.Z)(), eA = null != eb && eb.hasPremiumAtLeast(j.PremiumTypes.TIER_2), eN = (0, p.Nj)(o.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eP = (0, m.Z)({
+  } = (0, u.Z)(), eA = null != eb && eb.hasPremiumAtLeast(j.PremiumTypes.TIER_2), eN = (0, p.Nj)(o.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eP = (0, h.Z)({
     scrollPosition: G.Y_.TRY_IT_OUT,
     analyticsLocations: e
-  }), eR = () => {
+  }), ew = () => {
     (0, O.openUserSettings)(E.n.APPEARANCE_PANEL, {
       section: M.oAB.APPEARANCE,
       analyticsLocations: e
     })
-  }, ew = () => {
+  }, eR = () => {
     (0, O.openUserSettings)(E.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
       section: M.oAB.GUILD_BOOSTING,
       analyticsLocations: e
@@ -106,7 +106,7 @@ let ey = () => {
       analyticsLocations: e
     })
   }, ex = () => {
-    (0, h.uL)(M.Z5c.COLLECTIBLES_SHOP)
+    (0, m.uL)(M.Z5c.COLLECTIBLES_SHOP)
   }, eL = () => {
     (0, y.Z)(Z.Z.CLIPS, {
       analyticsLocations: e
@@ -144,7 +144,7 @@ let ey = () => {
       subtitle: F.intl.string(F.t.CjRASJ),
       description: F.intl.string(F.t.jBTTws),
       descriptionCta: F.intl.string(F.t.jVcuVY),
-      onCtaClick: eR,
+      onCtaClick: ew,
       perkImage: z
     },
     clips: eS ? {
@@ -237,7 +237,7 @@ let ey = () => {
       subtitle: F.intl.string(F.t["4pEwXL"]),
       description: eC ? "" : F.intl.string(F.t.jsyNHm),
       descriptionCta: F.intl.string(F.t.jVcuVY),
-      onCtaClick: eC ? true : ew,
+      onCtaClick: eC ? true : eR,
       perkImage: Q,
       hideOnNarrowScreen: !eC,
       imageOverlayText: eC ? F.intl.string(F.t["/VzCKE"]).toLocaleUpperCase() : true
@@ -247,7 +247,7 @@ let ey = () => {
       title: F.intl.string(F.t["NyDu/6"]),
       subtitle: F.intl.string(F.t["4pEwXL"]),
       descriptionCta: F.intl.string(F.t.jVcuVY),
-      perkImage: eh.Z,
+      perkImage: em.Z,
       imageOverlayText: F.intl.string(F.t["/VzCKE"]).toLocaleUpperCase()
     },
     specialMemberPricing: {
@@ -404,7 +404,7 @@ let ey = () => {
       onCtaClick: () => {
         (0, f.XO)(f.wh.CUSTOM_THEME)
       },
-      perkImage: em.Z
+      perkImage: eh.Z
     },
     profileWidgets: {
       name: "profileWidgets",
@@ -435,7 +435,7 @@ let ey = () => {
       pillText: F.intl.string(F.t.oW0eUd).toLocaleUpperCase(),
       description: F.intl.format(F.t.zh1X7u, {}),
       descriptionCta: F.intl.string(F.t.w7s5Qr),
-      customContent: (0, r.jsx)(R.C, {
+      customContent: (0, r.jsx)(w.C, {
         percentage: eB
       })
     },
@@ -445,7 +445,7 @@ let ey = () => {
     name: "tenureBadge",
     title: F.intl.string(F.t.rnsqpa),
     pillText: F.intl.string(F.t["jyYgZ+"]).toLocaleUpperCase(),
-    perkComponent: (0, r.jsx)(w.Z, {}),
+    perkComponent: (0, r.jsx)(R.Z, {}),
     cardVariant: x.zW.NITRO_GRADIENT_HOVER_BORDER,
     onClick: () => (0, D.k)({
       analyticsLocations: e

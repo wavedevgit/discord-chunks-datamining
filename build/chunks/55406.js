@@ -52,8 +52,8 @@ function p(e, t) {
   }), e
 }
 let _ = a().defaultRules.lheading,
-  m = a().defaultRules.heading,
-  h = a().defaultRules.link,
+  h = a().defaultRules.heading,
+  m = a().defaultRules.link,
   g = a().defaultRules.image,
   E = a().defaultRules.list,
   b = a().defaultRules.blockQuote,
@@ -77,7 +77,7 @@ let S = e => {
   },
   I = e => p(d({}, r.baseRules), {
     image: d({}, g, "function" == typeof r.customRules.image ? r.customRules.image(e) : r.customRules.image),
-    link: d({}, h, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
+    link: d({}, m, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
     list: d({}, E, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
     interpolation: {
       order: l.ZP.order,
@@ -99,7 +99,7 @@ let S = e => {
         transformUpperCase: true
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
-    heading: d({}, m, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
+    heading: d({}, h, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
     blockQuote: d({}, b, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
     paragraph: d({}, y, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
   }),

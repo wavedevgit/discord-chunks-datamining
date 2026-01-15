@@ -6,9 +6,9 @@ require.d(exports, {
   YF: () => u,
   _$: () => d,
   dI: () => g,
-  g6: () => m,
+  g6: () => h,
   km: () => f,
-  nC: () => h,
+  nC: () => m,
   v3: () => _
 });
 var Chunk663042 = require("./663042.js"),
@@ -84,7 +84,7 @@ function _() {
   })
 }
 
-function m(e) {
+function h(e) {
   c.setState(t => ({
     channelDismissTimestamps: l(o({}, t.channelDismissTimestamps), {
       [e]: Date.now()
@@ -92,7 +92,7 @@ function m(e) {
   }))
 }
 
-function h(e) {
+function m(e) {
   c.setState(t => ({
     userDismissTimestamps: l(o({}, t.userDismissTimestamps), {
       [e]: Date.now()

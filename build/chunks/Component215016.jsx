@@ -59,12 +59,12 @@ let C = [Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, Chunk692547.Z
     height: Math.floor(100 * Math.random()) + 120
   }));
 
-function R(e) {
+function w(e) {
   var t;
   return null != (t = e.id) ? t : e.src
 }
 
-function w(e, t) {
+function R(e, t) {
   let n = P[t];
   return null == n ? 0 : n.height
 }
@@ -282,7 +282,7 @@ class G extends Chunk473749.PureComponent {
       query: n,
       resultType: i
     } = this.props;
-    return 0 === e.length && t === n && i !== O.wI2.TRENDING_GIFS ? i === O.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, r.jsx)(m.Z, {
+    return 0 === e.length && t === n && i !== O.wI2.TRENDING_GIFS ? i === O.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, r.jsx)(h.Z, {
       message: v.intl.string(v.t["5dX4UM"]),
       className: S.noResults
     }) : (0, r.jsx)(_.Z, {
@@ -316,7 +316,7 @@ class G extends Chunk473749.PureComponent {
       let t, {
           data: n
         } = this.props,
-        r = n.findIndex(t => R(t) === e);
+        r = n.findIndex(t => w(t) === e);
       false !== r && (t = n[r]), null != t && this.selectItem(t, r)
     }), I(this, "handleClickItem", (e, t) => {
       this.selectItem(e, t)
@@ -340,7 +340,7 @@ class G extends Chunk473749.PureComponent {
         selectedGIF: o
       } = this.props, s = this.props.data[t];
       if (null == s) return null;
-      let l = null != o && R(o) === R(s);
+      let l = null != o && w(o) === w(s);
       return (0, r.jsx)(U, {
         item: s,
         index: t,
@@ -351,7 +351,7 @@ class G extends Chunk473749.PureComponent {
         renderExtras: () => (0, r.jsx)(E.Z, T({
           className: S.favButton
         }, s)),
-        focused: R(s) === a,
+        focused: w(s) === a,
         imagePool: this.props.imagePool,
         videoPool: this.props.videoPool,
         selected: l
@@ -405,7 +405,7 @@ class G extends Chunk473749.PureComponent {
         columns: e,
         itemGutter: 12,
         getItemKey: x,
-        getItemHeight: w,
+        getItemHeight: R,
         renderItem: D,
         chunkSize: 128
       }, s) : (0, r.jsx)(f.GMG, {
@@ -440,7 +440,7 @@ class G extends Chunk473749.PureComponent {
 function Z() {
   let {
     renderWindow: e
-  } = i.useContext(h.ZP), t = e.document, [n] = i.useState(() => new c.w(() => t.createElement("img"), e => {
+  } = i.useContext(m.ZP), t = e.document, [n] = i.useState(() => new c.w(() => t.createElement("img"), e => {
     e.onload = null, e.src = ""
   })), [r] = i.useState(() => new c.w(() => {
     let e = t.createElement("video");

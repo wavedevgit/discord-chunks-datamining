@@ -24,8 +24,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = new Chunk846519.V7,
-  m = new Chunk846519.V7,
-  h = new Chunk846519.V7;
+  h = new Chunk846519.V7,
+  m = new Chunk846519.V7;
 class g extends Chunk147913.Z {
   constructor(...e) {
     super(...e), p(this, "previousStatus", null), p(this, "actions", {
@@ -39,13 +39,13 @@ class g extends Chunk147913.Z {
       this.manageExpiringCustomStatus(), this.manageExpiringStatus(), this.lazilyMigrateStatusCreatedAt(), this.manageExpiringFocusMode()
     }), p(this, "manageExpiringCustomStatus", () => {
       let e = c.Ok.getSetting();
-      if (null == e) h.stop();
+      if (null == e) m.stop();
       else if (null != e.expiresAtMs && "0" !== e.expiresAtMs) {
         let t = new Date(Number(e.expiresAtMs)).getTime() - new Date().getTime();
-        t > 0 ? h.start(t, () => {
+        t > 0 ? m.start(t, () => {
           c.Ok.updateSetting(true)
-        }, true) : (c.Ok.updateSetting(true), h.stop())
-      } else null != h && h.stop()
+        }, true) : (c.Ok.updateSetting(true), m.stop())
+      } else null != m && m.stop()
     }), p(this, "manageExpiringStatus", () => {
       let e = c.Cr.getSetting();
       if (null != e && "0" !== e && d.Z.getStatus() !== f.Skl.ONLINE) {
@@ -78,10 +78,10 @@ class g extends Chunk147913.Z {
       let e = c.fv.getSetting();
       if (null != e && "0" !== e) {
         let t = new Date(Number(e)).getTime() - new Date().getTime();
-        t > 0 ? m.start(t, () => {
+        t > 0 ? h.start(t, () => {
           (0, l.oW)(false)
-        }, true) : ((0, l.oW)(false), m.stop())
-      } else null != m && m.stop()
+        }, true) : ((0, l.oW)(false), h.stop())
+      } else null != h && h.stop()
     }), p(this, "manageDoNotDisturbReminderPopover", () => {
       if (null == this.previousStatus) {
         this.previousStatus = d.Z.getStatus();

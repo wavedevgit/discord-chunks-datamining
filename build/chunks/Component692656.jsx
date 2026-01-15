@@ -78,7 +78,7 @@ function ea(e) {
     setSearchQuery: o,
     setScroller: s,
     isScrollCloseToBottom: l
-  } = e, c = (0, _.e7)([g.Z], () => g.Z.getIsEnabled(), []), u = n === x._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), p = n === x._b.TEXT, [h, b] = e_(true), [y, O] = e_(u), [v, S] = e_(d), [I, T] = e_(f), C = h && y && v && I, A = (d || u) && !C, N = f && c;
+  } = e, c = (0, _.e7)([g.Z], () => g.Z.getIsEnabled(), []), u = n === x._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), p = n === x._b.TEXT, [m, b] = e_(true), [y, O] = e_(u), [v, S] = e_(d), [I, T] = e_(f), C = m && y && v && I, A = (d || u) && !C, N = f && c;
   i.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? true : e.guild_id : true;
@@ -96,7 +96,7 @@ function ea(e) {
       searchQuery: a,
       setSearchQuery: o,
       placeholder: p ? q.intl.string(q.t.ziyFv2) : q.intl.string(q.t["pw+r5b"])
-    }), (0, r.jsx)(m.Ttm, {
+    }), (0, r.jsx)(h.Ttm, {
       ref: s,
       className: Q.scrollableContent,
       fade: true,
@@ -132,7 +132,7 @@ function ea(e) {
 function eo() {
   return (0, r.jsxs)("div", {
     className: Q.developerShelfControlsContainer,
-    children: [(0, r.jsx)(m.Text, {
+    children: [(0, r.jsx)(h.Text, {
       className: Q.developerShelfControlsLabel,
       variant: "text-sm/normal",
       children: q.intl.string(q.t.tZ3FNs)
@@ -177,7 +177,7 @@ function es(e) {
     }
   }, [l, f]), (0, r.jsx)("div", {
     className: Q.searchBarContainer,
-    children: (0, r.jsx)(m.E1j, {
+    children: (0, r.jsx)(h.E1j, {
       ref: s,
       placeholder: a,
       query: t,
@@ -402,7 +402,7 @@ function ef(e) {
     fetchState: o,
     recommendationsSections: s,
     isInstallOnDemand: l
-  } = eh({
+  } = em({
     context: t,
     entrypoint: n
   }), c = eg({
@@ -441,7 +441,7 @@ function ep(e) {
       position: u,
       context: _
     } = e,
-    m = a.title;
+    h = a.title;
   switch (a.type) {
     case f.o.BANNER_CARDS:
       t = G.U4.LARGE_BANNER;
@@ -452,7 +452,7 @@ function ep(e) {
     default:
       t = G.U4.ROW
   }
-  let h = i.useMemo(() => {
+  let m = i.useMemo(() => {
       let e = a.application_directory_collection_items.map(e => {
         if (e.type === d.C.APPLICATION) return {
           collectionItemId: e.id,
@@ -461,7 +461,7 @@ function ep(e) {
           application: e.application,
           installOnDemand: s(e.application)
         }
-      }).filter(w.lm);
+      }).filter(R.lm);
       return (0, p.yE)(a.flags, l.b.APPENDS_REMAINING_ACTIVITIES) && e.push(...o.map(e => {
         let {
           application: t
@@ -489,9 +489,9 @@ function ep(e) {
     items: E,
     handleViewMore: b
   } = eE({
-    title: m,
+    title: h,
     look: t,
-    items: h,
+    items: m,
     limit: n,
     sectionName: g,
     sectionOverallPosition: u
@@ -499,7 +499,7 @@ function ep(e) {
     trackSectionImpressionRef: y
   } = (0, F.Z)({
     sectionName: g,
-    numItems: h.length,
+    numItems: m.length,
     numVisibleItems: E.length
   }), O = a.type !== f.o.SMALL_BANNER_CARDS;
   return (0, r.jsxs)("div", {
@@ -552,8 +552,8 @@ function e_(e) {
   }, [])]
 }
 
-function em() {
-  let e = (0, _.e7)([R.default], () => R.default.onlyShowPreviewAppCollections),
+function eh() {
+  let e = (0, _.e7)([w.default], () => w.default.onlyShowPreviewAppCollections),
     t = C.Z.getCurrentConfig({
       location: "App Launcher Home (Web)"
     }, {
@@ -562,11 +562,11 @@ function em() {
   return e ? s.E.PREVIEW : t ? s.E.NON_STAFF_PREVIEW : s.E.ACTIVE
 }
 
-function eh(e) {
+function em(e) {
   let {
     context: t,
     entrypoint: n
-  } = e, r = em();
+  } = e, r = eh();
   i.useEffect(() => {
     (0, A.XK)({
       surface: ei,
@@ -578,7 +578,7 @@ function eh(e) {
   } = S.wi({
     context: t,
     filters: {
-      commandTypes: [h.yU.CHAT]
+      commandTypes: [m.yU.CHAT]
     },
     options: {
       placeholderCount: 0,

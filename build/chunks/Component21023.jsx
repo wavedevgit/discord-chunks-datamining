@@ -28,7 +28,7 @@ let _ = e => {
       children: [t, " ", n]
     })
   },
-  m = e => {
+  h = e => {
     let {
       text: t,
       variant: n
@@ -39,7 +39,7 @@ let _ = e => {
       children: t
     })
   },
-  h = e => {
+  m = e => {
     let {
       includes: t
     } = e;
@@ -69,10 +69,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["09yRK3"])
           }),
-          column1: (0, r.jsx)(m, {
+          column1: (0, r.jsx)(h, {
             text: o.ZP.formatPriceString(e, c.rV.MONTH)
           }),
-          column2: (0, r.jsx)(m, {
+          column2: (0, r.jsx)(h, {
             text: n ? g : o.ZP.formatPriceString(t, c.rV.MONTH)
           }),
           withBottomBorder: true
@@ -81,10 +81,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.vaDeDV)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: true
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -92,10 +92,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.DmfiwT)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: true
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -103,10 +103,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.OuItFi)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: true
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -114,10 +114,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["9kRJS8"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: true
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -125,10 +125,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["ufhQC+"])
           }),
-          column1: (0, r.jsx)(m, {
+          column1: (0, r.jsx)(h, {
             text: (0, o.v9)(c.PremiumTypes.TIER_0)
           }),
-          column2: (0, r.jsx)(m, {
+          column2: (0, r.jsx)(h, {
             text: (0, o.v9)(c.PremiumTypes.TIER_2)
           })
         },
@@ -136,10 +136,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.VwxlMw)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(m, {
+          column2: (0, r.jsx)(h, {
             text: d.intl.string(d.t.XdN6KU)
           })
         },
@@ -150,10 +150,10 @@ let _ = e => {
               percentageOff: (0, s.T3)(a.default.locale, c.Rr / 100)
             })
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -161,10 +161,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.tFbcuM)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -172,10 +172,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(f.default["86GtGH"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -183,10 +183,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["aR/zTk"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -194,10 +194,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.IzrZHz)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -205,10 +205,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["HwNg/Z"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -216,10 +216,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["y+HHL9"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: true
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -227,10 +227,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.qQxxVc)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: true
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -238,10 +238,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.xi0NBE)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           }),
           withBottomBorder: true
@@ -250,10 +250,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t.MfsUHm)
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -261,10 +261,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["A+0H1f"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -272,10 +272,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["il8+nC"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           })
         },
@@ -285,10 +285,10 @@ let _ = e => {
               maxChars: u.en1
             })
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           }),
           withBottomBorder: true
@@ -327,10 +327,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["93xPy3"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           }),
           withBottomBorder: true
@@ -339,10 +339,10 @@ let _ = e => {
           label: (0, r.jsx)(_, {
             text: d.intl.string(d.t["5BJqNF"])
           }),
-          column1: (0, r.jsx)(h, {
+          column1: (0, r.jsx)(m, {
             includes: false
           }),
-          column2: (0, r.jsx)(h, {
+          column2: (0, r.jsx)(m, {
             includes: true
           }),
           withBottomBorder: false

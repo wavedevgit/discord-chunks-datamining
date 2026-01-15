@@ -21,7 +21,7 @@ function c(e) {
     className: u.container,
     children: [(0, r.jsxs)("div", {
       className: u.headerContainer,
-      children: [(0, r.jsx)(i.Ucv, {
+      children: [(0, r.jsx)(i.BoostGemIcon, {
         size: "sm",
         color: n !== s.br.AVAILABLE ? l.Z.colors.TEXT_MUTED : l.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, r.jsx)(o.X6q, {

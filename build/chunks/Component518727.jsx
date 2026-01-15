@@ -44,23 +44,23 @@ let b = 1e3,
     }, [b]);
     let {
       mediaUrls: P,
-      isSuccess: R
-    } = (0, _.Z)(!y && a && A), w = (0, i.useRef)(null), [D, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
+      isSuccess: w
+    } = (0, _.Z)(!y && a && A), R = (0, i.useRef)(null), [D, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        a && n && !U && "none" === M && (y || !R ? (k("static"), y || (G(true), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.Z.dispatch({
+        a && n && !U && "none" === M && (y || !w ? (k("static"), y || (G(true), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
-        }), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
+        }), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [y, a, n, R, U, M]), (0, i.useEffect)(() => {
+      }, [y, a, n, w, U, M]), (0, i.useEffect)(() => {
         function e() {
           x(true), C()
         }
-        return p.S.subscribe(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
-          p.S.unsubscribe(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
+        return p.S.subscribe(h.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
+          p.S.unsubscribe(h.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
         }
       }, [C]), (0, i.useEffect)(() => () => {
         c.Z.dispatch({
@@ -70,15 +70,15 @@ let b = 1e3,
         })
       }, []), "animated" === M) return (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: h.videoContainer,
+        className: m.videoContainer,
         children: [(0, r.jsx)("div", {
-          className: h.entryAnimationContainer,
+          className: m.entryAnimationContainer,
           children: (0, r.jsx)(d.Z, {
             playsInline: true,
             muted: true,
             autoPlay: true,
             onEnded: T,
-            className: o()(h.video, "entry" === O ? h.visible : h.hidden),
+            className: o()(m.video, "entry" === O ? m.visible : m.hidden),
             children: (0, r.jsx)("source", {
               src: P.modalGlowEntry
             })
@@ -88,7 +88,7 @@ let b = 1e3,
           playsInline: true,
           muted: true,
           loop: true,
-          className: o()(h.video, "idle" === O ? h.visible : h.hidden),
+          className: o()(m.video, "idle" === O ? m.visible : m.hidden),
           children: (0, r.jsx)("source", {
             src: P.modalGlowIdle
           })
@@ -96,16 +96,16 @@ let b = 1e3,
           ref: I,
           playsInline: true,
           muted: true,
-          className: o()(h.video, "exit" === O ? h.visible : h.hidden),
+          className: o()(m.video, "exit" === O ? m.visible : m.hidden),
           children: (0, r.jsx)("source", {
             src: P.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {
-        className: h.wowAnimation,
+        className: m.wowAnimation,
         children: (0, r.jsx)(l.zec, {
           fit: "layout",
-          ref: w,
+          ref: R,
           dataBinding: {
             ExitTrigger: D,
             EntryTrigger: L
@@ -113,7 +113,7 @@ let b = 1e3,
           listenOnDocumentBody: true
         })
       }), (0, r.jsx)("div", {
-        className: "exit" === O ? h.exitAnimationContainer : h.entryAnimationContainer,
+        className: "exit" === O ? m.exitAnimationContainer : m.entryAnimationContainer,
         children: t
       })]
     });
@@ -123,11 +123,11 @@ let b = 1e3,
         children: [(0, r.jsx)("img", {
           src: g.Z,
           alt: "",
-          className: h.staticGlow
+          className: m.staticGlow
         }), (0, r.jsx)("img", {
           src: E.Z,
           alt: "",
-          className: h.staticWumpusWithTrinkets
+          className: m.staticWumpusWithTrinkets
         })]
       }), t]
     }) : t

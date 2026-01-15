@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CR: () => _,
-  MA: () => h,
-  pV: () => m,
+  MA: () => m,
+  pV: () => h,
   vb: () => g
 });
 var Chunk544891 = require("./544891.js"),
@@ -51,7 +51,7 @@ function _(e, t) {
   })) : Promise.resolve(s)
 }
 
-function m(e, t) {
+function h(e, t) {
   return u.Z.getIsUpdating(e) ? Promise.resolve(null) : (i.Z.dispatch({
     type: "GUILD_PROFILE_UPDATE",
     guildId: e,
@@ -76,7 +76,7 @@ function m(e, t) {
     }), null
   }))
 }
-async function h(e) {
+async function m(e) {
   let t = await r.tn.get({
     url: d.ANM.GUILD_TOP_GAMES(e),
     rejectWithError: false

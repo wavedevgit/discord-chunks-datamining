@@ -58,12 +58,12 @@ function M(e) {
   i.useEffect(() => {
     !H && M && d.MH()
   }, [H, M]), i.useEffect(() => {
-    m.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, U), null == Z || Z()
+    h.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, U), null == Z || Z()
   }, [Z, U]);
   let Y = V.length > 1 && M,
     W = () => 2 === t ? P.hasTabParentContainer : 1 === t ? P.hasParentContainer : P.noParentContainer,
     K = () => {
-      m.default.track(C.rMx.PREMIUM_PROMOTION_OPENED, {
+      h.default.track(C.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: k,
         location_object: C.qAy.NAVIGATION_LINK
       }), null == F || F(), (0, p.Z)(), G(), (0, f.xf)(), (0, _.uL)(C.Z5c.APPLICATION_STORE)
@@ -79,7 +79,7 @@ function M(e) {
     X = (0, S.Z)(T.Si.TIER_2);
   if (Q) {
     let e;
-    e = B ? (0, h.rO)() ? w.Z : D.Z : (0, h.rO)() ? x.Z : L.Z;
+    e = B ? (0, m.rO)() ? R.Z : D.Z : (0, m.rO)() ? x.Z : L.Z;
     let t = B ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.ZMr, {
@@ -97,7 +97,7 @@ function M(e) {
           }), (0, r.jsxs)("div", {
             className: N.contentContainer,
             children: [(0, r.jsx)("div", {
-              className: R.headerGraphic,
+              className: w.headerGraphic,
               children: (0, r.jsx)(u.zsu, {
                 type: "video",
                 src: e,

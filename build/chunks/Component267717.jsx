@@ -39,9 +39,9 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -49,7 +49,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -82,7 +82,7 @@ function E(e) {
   var {
     user: t,
     onClose: n
-  } = e, i = m(e, ["user", "onClose"]);
+  } = e, i = h(e, ["user", "onClose"]);
   return (0, r.jsx)(l.Z, _({
     modalClassName: f.modal,
     modalContentClassName: f.modalContent,

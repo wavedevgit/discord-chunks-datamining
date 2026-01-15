@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js"), require("./388685.js");
 var Chunk31775 = require("./31775.js"),
   a = require.n(Chunk31775),
@@ -42,7 +42,7 @@ function _(e, t) {
   if (null != r) return r;
   f.set(n, true)
 }
-let m = {
+let h = {
   getGuildNameSuggestion: function(e) {
     let t = l.default.getCurrentUser(),
       n = u.oY(t);

@@ -25,40 +25,40 @@ function g(e) {
     handleCanJoin: n
   } = e;
   switch (t) {
-    case m.Fw.CAN_JOIN:
+    case h.Fw.CAN_JOIN:
       null == n || n();
       break;
-    case m.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
+    case h.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
       (0, a.w)();
       break;
-    case m.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
+    case h.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
       r.Z.show({
-        title: h.intl.string(h.t.PtobXW),
-        body: h.intl.string(h.t.UXoQTp),
+        title: m.intl.string(m.t.PtobXW),
+        body: m.intl.string(m.t.UXoQTp),
         hideActionSheet: false
       });
       break;
-    case m.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
+    case h.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
       r.Z.show({
-        title: h.intl.string(h.t.PtobXW),
-        body: h.intl.string(h.t.uGDCcw),
+        title: m.intl.string(m.t.PtobXW),
+        body: m.intl.string(m.t.uGDCcw),
         hideActionSheet: false
       });
       break;
-    case m.Fw.ACTIVITY_AGE_GATED:
+    case h.Fw.ACTIVITY_AGE_GATED:
       r.Z.show({
-        title: h.intl.string(h.t.PtobXW),
-        body: h.intl.string(h.t["4WuFRE"]),
+        title: m.intl.string(m.t.PtobXW),
+        body: m.intl.string(m.t["4WuFRE"]),
         hideActionSheet: false
       });
       break;
-    case m.Fw.NO_CHANNEL_CONNECT_PERMISSION:
-    case m.Fw.CHANNEL_FULL:
-    case m.Fw.NO_CHANNEL:
-    case m.Fw.NO_USER:
+    case h.Fw.NO_CHANNEL_CONNECT_PERMISSION:
+    case h.Fw.CHANNEL_FULL:
+    case h.Fw.NO_CHANNEL:
+    case h.Fw.NO_USER:
       r.Z.show({
-        title: h.intl.string(h.t.PtobXW),
-        body: h.intl.string(h.t.FUCQco),
+        title: m.intl.string(m.t.PtobXW),
+        body: m.intl.string(m.t.FUCQco),
         hideActionSheet: false
       })
   }
@@ -69,7 +69,7 @@ async function E(e) {
     applicationId: n,
     launchId: r,
     inputApplication: a,
-    analyticsLocations: h,
+    analyticsLocations: m,
     launchingComponentId: E,
     sectionName: b,
     inviterUserId: y
@@ -85,14 +85,14 @@ async function E(e) {
       applicationId: O.applicationId,
       activityChannelId: t,
       locationObject: {},
-      analyticsLocations: h,
+      analyticsLocations: m,
       componentId: E,
       sectionName: b,
       inviterUserId: y
     })
   }
   g({
-    embeddedActivityJoinability: (0, m.ZP)({
+    embeddedActivityJoinability: (0, h.ZP)({
       userId: null == S ? true : S.id,
       application: v,
       channelId: t,

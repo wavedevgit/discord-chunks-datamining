@@ -2,7 +2,7 @@
 /** chunk id: 542632, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => R
 }), require("./361932.js"), require("./187205.js"), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,13 +44,13 @@ function P() {
   else if ("uk" === e) return f;
   else if ("zh-CN" === e) return p;
   else if ("zh-TW" === e) return _;
-  else if (e.startsWith("sv-")) return m;
-  else if (e.startsWith("pt-")) return h;
+  else if (e.startsWith("sv-")) return h;
+  else if (e.startsWith("pt-")) return m;
   else if (e.startsWith("es-")) return g;
   else return null
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r, i, a;
   if (null == n) return {};
   let o = e.clone();
@@ -62,7 +62,7 @@ function R(e, t, n) {
     unadjustedDescription: a
   }
 }
-let w = {
+let R = {
   autocompleteInputElementType: "timestampMentionInput",
   matches: (e, t, n, r, i) => n.length > 1,
   queryResults(e, t, n) {
@@ -114,8 +114,8 @@ let w = {
       let {
         adjustedTimestamp: p,
         adjustedDescription: _,
-        unadjustedDescription: m
-      } = R(i, l, e);
+        unadjustedDescription: h
+      } = w(i, l, e);
       null != p && (c.push({
         mention: {
           timestamp: p,
@@ -142,7 +142,7 @@ let w = {
           timestamp: d,
           format: f
         },
-        description: m
+        description: h
       }), c.push({
         mention: {
           timestamp: d,

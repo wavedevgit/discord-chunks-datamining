@@ -51,8 +51,8 @@ let C = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
   A = {},
   N = {},
   P = 3 * Chunk70956.Z.Millis.MINUTE,
-  R = 5 * Chunk70956.Z.Millis.SECOND,
-  w = 12 * Chunk70956.Z.Millis.SECOND,
+  w = 5 * Chunk70956.Z.Millis.SECOND,
+  R = 12 * Chunk70956.Z.Millis.SECOND,
   D = null;
 
 function x(e) {
@@ -66,7 +66,7 @@ function L(e) {
 }
 
 function j(e, t) {
-  if (h.Z.getVoiceChannelId() !== e) returnfalse;
+  if (m.Z.getVoiceChannelId() !== e) returnfalse;
   let n = p.Z.getChannel(e);
   if (null == n || !n.isDM() && !n.isGuildStageVoice() || null != d.Z.getActiveStreamForUser(t, n.getGuildId())) returnfalse;
   let r = d.Z.getStreamForUser(t, n.getGuildId());
@@ -78,15 +78,15 @@ function j(e, t) {
 }
 
 function M(e, t) {
-  let n = null != t ? t : m.Z.getPreferredRegion();
-  null != n && n !== m.Z.getRegion(g.Z.getHostname(e)) && (0, o.dV)(e, n)
+  let n = null != t ? t : h.Z.getPreferredRegion();
+  null != n && n !== h.Z.getRegion(g.Z.getHostname(e)) && (0, o.dV)(e, n)
 }
 
 function k(e, t) {
   var n;
   if (g.Z.getAllActiveStreamKeys().includes(e)) return;
   let r = null != (n = N[e]) ? n : new i.V7;
-  N[e] = r, r.start(t ? w : R, () => {
+  N[e] = r, r.start(t ? R : w, () => {
     a.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e

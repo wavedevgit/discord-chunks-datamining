@@ -2,7 +2,7 @@
 /** chunk id: 268353, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,7 +54,7 @@ function _(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     enabled: t
   } = e, n = p(e, ["enabled"]);
@@ -65,7 +65,7 @@ function m(e) {
     iconComponent: o
   }, n))
 }
-let h = Chunk442837.ZP.connectStores([Chunk451478.Z, Chunk928518.Z], e => {
+let m = Chunk442837.ZP.connectStores([Chunk451478.Z, Chunk928518.Z], e => {
   let {
     node: t,
     guestWindow: n
@@ -73,4 +73,4 @@ let h = Chunk442837.ZP.connectStores([Chunk451478.Z, Chunk928518.Z], e => {
   return {
     enabled: (0, l.rB)(t, null == n ? true : n.document)
   }
-})(m)
+})(h)

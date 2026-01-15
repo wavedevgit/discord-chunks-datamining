@@ -46,7 +46,7 @@ function b(e) {
   } = e, n = (0, u.q3)(t), c = (0, u.XV)(t), {
     experiments: b,
     overridesInfo: y
-  } = (0, m.sI)(), {
+  } = (0, h.sI)(), {
     experiments: O,
     overridesInfo: v
   } = (0, p.Qb)(), S = i.useMemo(() => null == n ? null : null != b[n] ? b[n] : O[n], [b, O, n]), I = i.useMemo(() => {
@@ -59,16 +59,16 @@ function b(e) {
   });
   if (null == n || null == S) return null;
   let P = (0, u.ak)(S).find(e => e.value === c),
-    R = null != P ? h.su.EXPERIMENT_TREATMENT : h.su.EXPERIMENT,
-    w = null != I && null != P && I.variantId === P.value,
+    w = null != P ? m.su.EXPERIMENT_TREATMENT : m.su.EXPERIMENT,
+    R = null != I && null != P && I.variantId === P.value,
     D = () => {
-      null != P && (w ? (0, d.rX)(S.system, n, null) : (0, d.rX)(S.system, n, P.value))
+      null != P && (R ? (0, d.rX)(S.system, n, null) : (0, d.rX)(S.system, n, P.value))
     },
     x = (0, r.jsx)(E, {
       url: t
     }),
     L = null;
-  return (R === h.su.EXPERIMENT_TREATMENT && null != P ? L = (0, r.jsx)(o.Text, {
+  return (w === m.su.EXPERIMENT_TREATMENT && null != P ? L = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: P.label
@@ -102,8 +102,8 @@ function b(e) {
       })
     }), null != P ? (0, r.jsx)(o.Button, {
       fullWidth: true,
-      variant: w ? "critical-primary" : "primary",
-      text: w ? "Clear Treatment ".concat(P.value) : "Apply Treatment ".concat(P.value),
+      variant: R ? "critical-primary" : "primary",
+      text: R ? "Clear Treatment ".concat(P.value) : "Apply Treatment ".concat(P.value),
       onClick: D
     }) : (0, r.jsx)("div", {
       className: g.experimentOverride,

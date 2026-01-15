@@ -5,7 +5,7 @@ require.d(exports, {
   $V: () => A,
   Bz: () => P,
   ZP: () => x,
-  hc: () => R
+  hc: () => w
 }), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -87,8 +87,8 @@ var A = function(e) {
 }({});
 let N = e => 0 === e.type || 3 === e.type,
   P = e => 1 === e.type,
-  R = e => N(e) ? e.message.nonce : P(e) ? e.message.messageId : e.message.data.id,
-  w = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
+  w = e => N(e) ? e.message.nonce : P(e) ? e.message.messageId : e.message.data.id,
+  R = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
 class D extends Chunk651655.Z {
   isFull() {
     return this.queue.length >= this.maxSize
@@ -125,7 +125,7 @@ class D extends Chunk651655.Z {
     return this.queue.push(...n), this.logger.log("Cancel pending send requests", t.length), t
   }
   startQueueMetricTimers(e) {
-    let t = w.map(e => setTimeout(() => {
+    let t = R.map(e => setTimeout(() => {
       (0, s.yw)(b.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
@@ -171,20 +171,20 @@ class D extends Chunk651655.Z {
       });
       return
     }
-    let m = this.createResponseHandler(e.nonce, t),
-      h = new AbortController;
+    let h = this.createResponseHandler(e.nonce, t),
+      m = new AbortController;
     this.startQueueMetricTimers(e.nonce), a.tn.post(I(v({
       url: b.ANM.MESSAGES(r),
       body: _,
       context: l,
       oldFormErrors: true
     }, y.hs), {
-      signal: h.signal,
+      signal: m.signal,
       rejectWithError: true,
       onRequestCreated: () => {
-        null != e.nonce && this.requests.set(e.nonce, h)
+        null != e.nonce && this.requests.set(e.nonce, m)
       }
-    }), m)
+    }), h)
   }
   handleSendAnnouncement(e, t) {
     var n;
@@ -209,20 +209,20 @@ class D extends Chunk651655.Z {
       });
       return
     }
-    let m = this.createResponseHandler(e.nonce, t),
-      h = new AbortController;
+    let h = this.createResponseHandler(e.nonce, t),
+      m = new AbortController;
     this.startQueueMetricTimers(e.nonce), a.tn.post(I(v({
       url: b.ANM.MESSAGES_ANNOUNCEMENT(r),
       body: _,
       context: l,
       oldFormErrors: true
     }, y.hs), {
-      signal: h.signal,
+      signal: m.signal,
       rejectWithError: true,
       onRequestCreated: () => {
-        null != e.nonce && this.requests.set(e.nonce, h)
+        null != e.nonce && this.requests.set(e.nonce, m)
       }
-    }), m)
+    }), h)
   }
   handleCommand(e, t) {
     let {
@@ -235,7 +235,7 @@ class D extends Chunk651655.Z {
       maxSizeCallback: d,
       analytics_location: p,
       sectionName: _,
-      source: h
+      source: m
     } = e, y = {
       type: o.B8.APPLICATION_COMMAND,
       application_id: n,
@@ -246,7 +246,7 @@ class D extends Chunk651655.Z {
       nonce: c,
       analytics_location: p,
       section_name: _,
-      source: h
+      source: m
     };
     null != u && (y.data.attachments = u.map((e, t) => (i()(e.status === E.mw.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t))));
     let O = new AbortController;
@@ -259,7 +259,7 @@ class D extends Chunk651655.Z {
         this.requests.set(c, O), e.on("progress", e => {
           let {
             total: t
-          } = e, n = (0, m.dg)(r);
+          } = e, n = (0, h.dg)(r);
           null != t && t > n && (this.cancelRequest(c), null == d || d(n))
         })
       }

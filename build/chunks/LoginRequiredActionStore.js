@@ -52,13 +52,13 @@ function _(e) {
   t || null == c || u(c, null)
 }
 
-function m(e) {
+function h(e) {
   let {
     userId: t
   } = e;
   u(t, null)
 }
-class h extends(r = Chunk442837.ZP.PersistedStore) {
+class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (s = e)
   }
@@ -77,12 +77,12 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     return s
   }
 }
-o(h, "displayName", "LoginRequiredActionStore"), o(h, "persistKey", "LoginRequiredActionStore");
-let g = new h(Chunk570140.Z, {
+o(m, "displayName", "LoginRequiredActionStore"), o(m, "persistKey", "LoginRequiredActionStore");
+let g = new m(Chunk570140.Z, {
   LOGIN_ATTEMPTED: d,
   CONNECTION_OPEN: f,
   CURRENT_USER_UPDATE: f,
   LOGOUT: _,
   PASSWORD_UPDATED: p,
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: m
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: h
 })

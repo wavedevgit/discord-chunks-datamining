@@ -33,8 +33,8 @@ var Chunk117242 = require("./117242.js"),
   Chunk799995 = require("./799995.js"),
   p = Chunk65183.List,
   _ = Chunk65183.Repeat,
-  m = Chunk40375("draft_tree_data_support"),
-  h = m ? Chunk309987 : Chunk117242;
+  h = Chunk40375("draft_tree_data_support"),
+  m = h ? Chunk309987 : Chunk117242;
 module.exports = {
   processHTML: function(e, t) {
     return s(e, c, t)
@@ -49,7 +49,7 @@ module.exports = {
           text: i,
           characterList: p(_(t, i.length))
         };
-      if (m && 0 !== a) {
+      if (h && 0 !== a) {
         var c = a - 1;
         s = r({}, s, {
           prevSibling: (e[c] = e[c].merge({
@@ -57,7 +57,7 @@ module.exports = {
           })).getKey()
         })
       }
-      return e.push(new h(s)), e
+      return e.push(new m(s)), e
     }, [])
   }
 }

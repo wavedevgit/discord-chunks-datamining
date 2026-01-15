@@ -4,21 +4,21 @@
 require.d(exports, {
   DG: () => g,
   FO: () => T,
-  G1: () => R,
+  G1: () => w,
   I6: () => S,
   J7: () => N,
   JM: () => I,
-  Jw: () => h,
+  Jw: () => m,
   WL: () => y,
   XY: () => C,
-  ak: () => m,
+  ak: () => h,
   d$: () => b,
   eE: () => A,
   ic: () => E,
   pX: () => v,
   sq: () => _,
   tV: () => D,
-  uu: () => w,
+  uu: () => R,
   wk: () => P,
   zd: () => O
 });
@@ -66,7 +66,7 @@ function _(e, t) {
   })
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   x(l.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
@@ -78,7 +78,7 @@ function m(e, t, n) {
   })
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   x(l.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
@@ -268,7 +268,7 @@ function P(e, t) {
   })
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   var i;
   (0, u.m)({
     name: l.b.WIDGET,
@@ -281,7 +281,7 @@ function R(e, t, n, r) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     application: t,
     entrypoint: n,

@@ -34,7 +34,7 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
   C = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
     useTitle: () => N.intl.string(N.t["iHH+ky"]),
     getLegacySearchKey: () => (0, a.Gl)("AppearanceSidebarItem") ? true : I.s6.APPEARANCE,
-    icon: Chunk657707.V3v,
+    icon: Chunk657707.PaintPaletteIcon,
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163.$Z,

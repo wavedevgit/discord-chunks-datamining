@@ -79,7 +79,7 @@ function G(e) {
     devShelfFetchState: Q,
     setPurchasePreviewError: X,
     hasPaymentSources: J
-  } = (0, R.JL)(), {
+  } = (0, w.JL)(), {
     isGift: $,
     giftRecipient: ee
   } = (0, P.wD)(), et = $ && (0, N.pO)(ee), {
@@ -99,12 +99,12 @@ function G(e) {
     ec = null != B ? B : T.c,
     eu = null != el ? el[ec] : null;
   o()(null != eo, "SKU must exist and be fetched."), o()(null != G, "Application must exist.");
-  let ed = (0, c.e7)([h.Z, C.Z], () => C.Z.inTestModeForApplication(G.id) || h.Z.inDevModeForApplication(G.id), [G.id]),
+  let ed = (0, c.e7)([m.Z, C.Z], () => C.Z.inTestModeForApplication(G.id) || m.Z.inDevModeForApplication(G.id), [G.id]),
     ef = (0, c.e7)([v.Z], () => v.Z.enabled),
     ep = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
-    e_ = Z === w.A.PURCHASING || Z === w.A.COMPLETED,
-    em = (0, D.m)(F, B),
-    eh = null != em ? em.type : null;
+    e_ = Z === R.A.PURCHASING || Z === R.A.COMPLETED,
+    eh = (0, D.m)(F, B),
+    em = null != eh ? eh.type : null;
   i.useEffect(() => {
     ea && B === ei && ei !== T.c && null == eu && (0, d.x2)(eo.applicationId, eo.id, ei, {
       isGift: $
@@ -114,7 +114,7 @@ function G(e) {
       X(e)
     })
   }, [ei, ea, B, eo.applicationId, eo.id, eu, X, $]);
-  let eg = null != es && es.length > 0 && (B === T.c || null === eh) && J ? y.w.SELECT_PAYMENT_METHOD : true,
+  let eg = null != es && es.length > 0 && (B === T.c || null === em) && J ? y.w.SELECT_PAYMENT_METHOD : true,
     eE = eo.productLine === j.POd.SOCIAL_LAYER_GAME_ITEM,
     eb = et && !eE;
   return (0, r.jsxs)("div", {
@@ -127,7 +127,7 @@ function G(e) {
       color: p.Z.Colors.WARNING,
       className: k.errorBlock,
       children: M.intl.string(M.t.OvMyMd)
-    }, "TEST_MODE") : null, (0, l.yE)(G.flags, j.udG.EMBEDDED) && Q === h.O.ERROR ? (0, r.jsx)(p.Z, {
+    }, "TEST_MODE") : null, (0, l.yE)(G.flags, j.udG.EMBEDDED) && Q === m.O.ERROR ? (0, r.jsx)(p.Z, {
       icon: (0, u.GSL)(A.Z),
       iconSize: p.Z.Sizes.SMALL,
       color: p.Z.Colors.ERROR,
@@ -165,7 +165,7 @@ function G(e) {
     }), (0, r.jsxs)(b.Z, {
       isActive: t,
       ref: n,
-      children: [(0, r.jsx)(m.Z, {
+      children: [(0, r.jsx)(h.Z, {
         onChange: V,
         forceShow: true,
         showWithdrawalWaiver: ep,
@@ -175,7 +175,7 @@ function G(e) {
         purchaseType: z,
         isGift: $,
         finePrint: (0, r.jsx)(f.Z, {
-          paymentSourceType: eh,
+          paymentSourceType: em,
           isEmbeddedIAP: K,
           purchaseType: z,
           productLine: eo.productLine,

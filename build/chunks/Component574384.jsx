@@ -21,20 +21,20 @@ function f(e) {
     selectedChannelId: f,
     onChannelChange: p,
     error: _
-  } = e, [m, h] = i.useState(null), g = i.useRef(false);
+  } = e, [h, m] = i.useState(null), g = i.useRef(false);
   if (i.useEffect(() => {
       async function e(e) {
         let t = await (0, l.UR)(e);
-        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), h({
+        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), m({
           guildId: e,
           channels: t
         }), g.current = true)
       }
-      h(null), null == n ? p(null) : e(n)
+      m(null), null == n ? p(null) : e(n)
     }, [p, n]), i.useEffect(() => {
-      g.current && (null == m ? null != f && p(null) : m.channels.some(e => e.id === f) || p(null))
-    }, [m, p, f, n]), null == n) return null;
-  let E = null == m || m.guildId !== n ? [] : (null != (t = null == m ? true : m.channels) ? t : []).map(e => ({
+      g.current && (null == h ? null != f && p(null) : h.channels.some(e => e.id === f) || p(null))
+    }, [h, p, f, n]), null == n) return null;
+  let E = null == h || h.guildId !== n ? [] : (null != (t = null == h ? true : h.channels) ? t : []).map(e => ({
     value: e.id,
     label: e.name
   }));

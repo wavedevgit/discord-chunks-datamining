@@ -59,22 +59,22 @@ function p(e) {
     containerTag: d = "span",
     ariaHidden: p = false
   } = e, _ = u(e, ["children", "targetElementRef", "asContainer", "containerTag", "ariaHidden"]);
-  let m = (0, s.c)(n),
-    h = r.useId(),
+  let h = (0, s.c)(n),
+    m = r.useId(),
     {
       isVisible: g,
       triggerProps: E
     } = (0, o.B)(c({
-      targetElementRef: m.targetElementRef
+      targetElementRef: h.targetElementRef
     }, _)),
-    b = p ? true : h,
-    y = (0, i.X)(r.isValidElement(t) ? t : f, E, b, m.triggerRef),
-    O = (0, a.j)(l, t, E, m.triggerRef, h, p, d),
+    b = p ? true : m,
+    y = (0, i.X)(r.isValidElement(t) ? t : f, E, b, h.triggerRef),
+    O = (0, a.j)(l, t, E, h.triggerRef, m, p, d),
     v = null != O ? O : y;
   return {
-    tooltipId: h,
+    tooltipId: m,
     isVisible: g,
-    targetElementRef: m.targetElementRef,
+    targetElementRef: h.targetElementRef,
     trigger: v,
     describedById: b
   }

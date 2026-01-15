@@ -2,7 +2,7 @@
 /** chunk id: 87051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js"), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk544891 = require("./544891.js"),
@@ -16,7 +16,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk468788 = require("./468788.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
-let m = {
+let h = {
   open(e) {
     o.Z.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_OPEN",
@@ -54,18 +54,6 @@ let m = {
         label: n,
         location: r
       })
-    })
-  },
-  updateGuildNotificationSettingsBulk(e, t, n) {
-    let r = u.default.keys(e),
-      i = (0, c.rU)(r);
-    s.Z.saveUserGuildSettingsBulk(e), u.default.entries(e).forEach(e => {
-      let [r, a] = e, s = i.get(r);
-      o.Z.dispatch({
-        type: "USER_GUILD_SETTINGS_GUILD_UPDATE",
-        guildId: r,
-        settings: a
-      }), (0, c.Wq)(r, a, s, t, n)
     })
   },
   updateChannelOverrideSettings(e, t, n, r, i) {

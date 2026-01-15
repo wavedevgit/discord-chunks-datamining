@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -57,10 +57,10 @@ function b(e, t) {
   }), e
 }
 let y = () => {
-    let [e, t] = i.useState(_.PremiumTypes.TIER_0), [n, h] = i.useState(l.R.WHAT_YOU_LOSE), [E, y] = i.useState(null), [v, S] = i.useState(_.Xh.PREMIUM_MONTH_TIER_0), [I, T] = i.useState([]), [C, A] = i.useState(() => {
+    let [e, t] = i.useState(_.PremiumTypes.TIER_0), [n, m] = i.useState(l.R.WHAT_YOU_LOSE), [E, y] = i.useState(null), [v, S] = i.useState(_.Xh.PREMIUM_MONTH_TIER_0), [I, T] = i.useState([]), [C, A] = i.useState(() => {
       let e = new Date;
       return e.setMonth(e.getMonth() + 1), e
-    }), [N, P] = i.useState(null), [R, w] = i.useState(false), [D, x] = i.useState(false), [L, j] = i.useState(false);
+    }), [N, P] = i.useState(null), [w, R] = i.useState(false), [D, x] = i.useState(false), [L, j] = i.useState(false);
     (0, i.useEffect)(() => {
       (0, s.Y2)()
     }, []), (0, i.useEffect)(() => {
@@ -125,7 +125,7 @@ let y = () => {
           discounts: []
         }],
         total: 200,
-        currency: m.pK.USD,
+        currency: h.pK.USD,
         tax: 0,
         taxInclusive: true,
         subscriptionPeriodStart: new Date,
@@ -146,16 +146,16 @@ let y = () => {
           intervalType: _.rV.MONTH,
           intervalCount: 1
         },
-        errorOnCancel: R,
+        errorOnCancel: w,
         errorOnRedeem: D,
         setActiveStep: e => {
-          h(e), t.onClose()
+          m(e), t.onClose()
         },
         activeStep: n,
         premiumSubscription: {
           id: "",
           planId: v,
-          type: m.NY.PREMIUM,
+          type: h.NY.PREMIUM,
           items: [],
           createdAt: new Date,
           canceledAt: null,
@@ -170,12 +170,12 @@ let y = () => {
           trialEndsAt: null,
           renewalMutations: null,
           streakStartedAt: null,
-          currency: m.pK.USD,
+          currency: h.pK.USD,
           pauseEndsAt: null,
           pauseReason: p.Id.UNKNOWN
         }
       })))
-    }, [e, E, v, N, R, D, n, C]);
+    }, [e, E, v, N, w, D, n, C]);
     return (0, i.useEffect)(() => {
       L && M()
     }, [n, L, M]), (0, r.jsxs)(c.pg, {
@@ -219,7 +219,7 @@ let y = () => {
         }), (0, r.jsx)(a.B6, {
           placeholder: "Premium Type",
           select: e => {
-            h(e)
+            m(e)
           },
           isSelected: e => n === e,
           serialize: e => "".concat(e),
@@ -259,9 +259,9 @@ let y = () => {
         })
       }), (0, r.jsx)(c.BZ, {
         children: (0, r.jsx)(o.Checkbox, {
-          checked: R,
+          checked: w,
           onChange: () => {
-            w(!R)
+            R(!w)
           },
           label: "Error on Cancel"
         })

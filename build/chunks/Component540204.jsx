@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk913498 = require("./913498.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -66,17 +66,17 @@ function O() {
     selectedGuildId: e,
     setSelectedGuildId: t
   } = (0, f.xu)(), n = (0, a.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()), _ = (0, a.e7)([c.Z], () => c.Z.getGuilds()), {
-    hideGuildOptions: h,
+    hideGuildOptions: m,
     hideGlobalOption: E
   } = (0, p.b)(), O = n[0];
   i.useEffect(() => {
-    E && h || (e === f.Th && e !== O && E && t(O), e !== f.Th && h && t(f.Th))
-  }, [e, t, E, h, O]);
+    E && m || (e === f.Th && e !== O && E && t(O), e !== f.Th && m && t(f.Th))
+  }, [e, t, E, m, O]);
   let v = e => {
       t(e)
     },
     S = i.useMemo(() => {
-      let e = h ? [] : n.map(e => {
+      let e = m ? [] : n.map(e => {
         let t = _[e];
         return null == t ? null : {
           label: t.name,
@@ -86,26 +86,26 @@ function O() {
       return E || e.unshift(b(g({}, y), {
         label: y.label()
       })), e
-    }, [h, n, E, _]),
+    }, [m, n, E, _]),
     I = i.useCallback(e => {
       let t = (null == e ? true : e.label) === y.label() && (null == e ? true : e.value) === y.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
-        className: m.clydeIconContainer,
+        className: h.clydeIconContainer,
         children: (0, r.jsx)(s.gw7, {
           size: "sm",
           color: "white",
           "aria-hidden": true,
-          className: m.guildSelectOptionIcon
+          className: h.guildSelectOptionIcon
         })
       }) : (0, r.jsx)(l.Z, {
-        className: m.guildSelectOptionIcon,
+        className: h.guildSelectOptionIcon,
         guild: _[e.value],
         size: l.Z.Sizes.SMALLER,
         active: true
       })
     }, [_]);
   return (0, r.jsx)(o.d, {
-    wrapperClassName: m.searchableSelect,
+    wrapperClassName: h.searchableSelect,
     onChange: v,
     value: e,
     options: S,

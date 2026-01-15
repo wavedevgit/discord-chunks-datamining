@@ -47,14 +47,14 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = [{
+let m = [{
     key: Chunk409813.h8.ADD_PAYMENT_STEPS,
-    renderStep: e => (0, r.jsx)(c.J, m(p({}, e), {
+    renderStep: e => (0, r.jsx)(c.J, h(p({}, e), {
       breadcrumbSteps: [l.h8.ADD_PAYMENT_STEPS],
       onReturn: () => {}
     })),
@@ -63,7 +63,7 @@ let h = [{
     }
   }, {
     key: Chunk409813.h8.REVIEW,
-    renderStep: e => (0, r.jsx)(u.Gy, m(p({}, e), {
+    renderStep: e => (0, r.jsx)(u.Gy, h(p({}, e), {
       originStep: l.h8.ADD_PAYMENT_STEPS,
       text: "Review Step Placeholder"
     })),
@@ -79,7 +79,7 @@ let h = [{
         analyticsLocations: n
       } = (0, s.ZP)(o.Z.PAYMENT_FLOW_TEST_PAGE), l = i.useMemo(() => (0, a.Z)(), []), c = i.useCallback(() => {}, []);
       return (0, r.jsx)(u.Vy, {
-        stepConfigs: h,
+        stepConfigs: m,
         analyticsLocations: n,
         applicationId: d.XAJ,
         initialPlanId: true,

@@ -54,7 +54,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -208,14 +208,14 @@ function V(e) {
     hasMore: a,
     loading: s,
     loadMore: f,
-    renderHeader: m,
-    renderEmptyState: h,
+    renderHeader: h,
+    renderEmptyState: m,
     renderItem: g,
     getProTip: E,
     scrollerClassName: S,
     className: I,
     listName: N
-  } = e, R = i.useRef(null), x = (0, p.Z)(N, R), G = (0, u.e7)([b.ZP], () => b.ZP.hasNotice()), Z = (0, u.e7)([y.Z], () => y.Z.windowSize());
+  } = e, w = i.useRef(null), x = (0, p.Z)(N, w), G = (0, u.e7)([b.ZP], () => b.ZP.hasNotice()), Z = (0, u.e7)([y.Z], () => y.Z.windowSize());
   i.useEffect(() => {
     O.default.track(T.rMx.OPEN_POPOUT, {
       type: t
@@ -223,14 +223,14 @@ function V(e) {
   }, [t]), i.useEffect(() => {
     function e() {
       var e;
-      null == (e = R.current) || e.scrollPageUp({
+      null == (e = w.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = R.current) || e.scrollPageDown({
+      null == (e = w.current) || e.scrollPageDown({
         animate: true
       })
     }
@@ -240,7 +240,7 @@ function V(e) {
   }, []);
   let F = i.useCallback(() => {
       var e;
-      let t = null == (e = R.current) ? true : e.getScrollerState();
+      let t = null == (e = w.current) ? true : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < k && a && !s && (null == f || f())
     }, [a, f, s]),
     B = [],
@@ -249,7 +249,7 @@ function V(e) {
     className: o()(A.emptyPlaceholder, A.loadingPlaceholder),
     children: (0, r.jsx)(d.$jN, {})
   }, "spinner")] : 0 === n.length ? B.push((0, r.jsx)(i.Fragment, {
-    children: h()
+    children: m()
   }, "empty-state")) : (V = false, B = [], l().each(n, e => {
     B.push(...g(e))
   }));
@@ -268,7 +268,7 @@ function V(e) {
     })
   }) : (0, r.jsx)("div", {
     className: A.scrollingFooterWrap,
-    children: h()
+    children: m()
   }));
   let Y = null == E ? true : E(),
     W = V && null != Y ? (0, r.jsx)("div", {
@@ -294,11 +294,11 @@ function V(e) {
     onDoubleClick: U,
     "aria-label": e["aria-label"],
     children: (0, r.jsxs)(d.y5t, {
-      component: m(),
+      component: h(),
       children: [(0, r.jsxs)(d.Den, {
         className: o()(A.messagesPopout, S),
         onScroll: z ? F : true,
-        ref: R,
+        ref: w,
         children: [(0, r.jsx)(c.bG, {
           navigator: x,
           children: (0, r.jsx)(c.SJ, {
@@ -306,7 +306,7 @@ function V(e) {
               var {
                 ref: t
               } = e, n = D(e, ["ref"]);
-              return (0, r.jsx)("div", w(P({
+              return (0, r.jsx)("div", R(P({
                 ref: t
               }, n), {
                 children: B
@@ -339,20 +339,20 @@ function H(e) {
     onCloseMessage: C,
     listName: N,
     closeAriaLabel: P
-  } = e, R = (0, u.e7)([g.Z], () => {
+  } = e, w = (0, u.e7)([g.Z], () => {
     let e = null != a ? g.Z.getMessages(a.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
 
-  function w(e, n) {
+  function R(e, n) {
     let r = () => {
       let {
         id: r,
         channel_id: i
-      } = e, a = h.Z.getChannel(i);
-      null != a && (f.Z.trackJump(i, r, t), (0, m.uL)(T.Z5c.CHANNEL(a.getGuildId(), i, r))), null == d || d(n)
+      } = e, a = m.Z.getChannel(i);
+      null != a && (f.Z.trackJump(i, r, t), (0, h.uL)(T.Z5c.CHANNEL(a.getGuildId(), i, r))), null == d || d(n)
     };
-    (0, S.Z)(e, r) && !R && r()
+    (0, S.Z)(e, r) && !w && r()
   }
 
   function D(e) {
@@ -361,7 +361,7 @@ function H(e) {
       channel: n
     } = e;
     if (null == t) return [];
-    if (null != b) return b(t, e => w(t, e));
+    if (null != b) return b(t, e => R(t, e));
     let i = [];
     return null == n ? [] : (i.push((0, r.jsxs)("div", {
       className: A.messageGroupWrapper,
@@ -372,9 +372,9 @@ function H(e) {
       }), (0, r.jsx)(B, {
         channel: a,
         message: t,
-        jumping: R,
+        jumping: w,
         canCloseAllMessages: p,
-        jumpTo: w,
+        jumpTo: R,
         onCloseMessage: C,
         closeAriaLabel: P
       })]

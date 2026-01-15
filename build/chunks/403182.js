@@ -9,7 +9,7 @@ require.d(exports, {
   f3: () => b,
   iL: () => A,
   nA: () => S,
-  qF: () => h,
+  qF: () => m,
   uV: () => y,
   vY: () => T
 }), require("./35282.js"), require("./388685.js");
@@ -25,9 +25,9 @@ var Chunk112456 = require("./112456.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = 524288e3,
-  m = 524288e3;
+  h = 524288e3;
 
-function h(e, t) {
+function m(e, t) {
   return e instanceof File ? e : g(e.data.buffer, e.filename, null != t ? t : "text/plain")
 }
 
@@ -120,7 +120,7 @@ function T(e) {
 
 function C() {
   let e = l.default.getCurrentUser();
-  return null != e && e.isStaff() ? m : _
+  return null != e && e.isStaff() ? h : _
 }
 
 function A(e) {

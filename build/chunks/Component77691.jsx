@@ -21,7 +21,7 @@ function p(e) {
     children: n,
     isLeaving: o,
     onRest: p
-  } = e, [_, m] = i.useState(false), h = i.useContext(l.Q), g = (0, s.dQu)(h.primaryColor).hex(), E = (0, s.q_F)({
+  } = e, [_, h] = i.useState(false), m = i.useContext(l.Q), g = (0, s.dQu)(m.primaryColor).hex(), E = (0, s.q_F)({
     from: o ? {
       height: "100%",
       blurHeight: "110%"
@@ -57,7 +57,7 @@ function p(e) {
   return i.useEffect(() => {
     if (t) return;
     let e = setTimeout(() => {
-      m(true)
+      h(true)
     }, f);
     return () => clearTimeout(e)
   }, [t]), (0, r.jsx)(a.animated.div, {

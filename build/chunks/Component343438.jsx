@@ -74,11 +74,11 @@ let p = e => {
       color: p = o.Z.colors.INTERACTIVE_TEXT_DEFAULT,
       colorClass: _ = ""
     } = e,
-    m = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let h = (0, a.m2R)(s),
-    g = null != (t = null == h ? true : h.width) ? t : c,
-    E = null != (n = null == h ? true : h.height) ? n : f;
-  return (0, r.jsx)("svg", u(l({}, (0, i.Z)(m)), {
+    h = d(e, ["size", "width", "height", "color", "colorClass"]);
+  let m = (0, a.m2R)(s),
+    g = null != (t = null == m ? true : m.width) ? t : c,
+    E = null != (n = null == m ? true : m.height) ? n : f;
+  return (0, r.jsx)("svg", u(l({}, (0, i.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
     height: E,

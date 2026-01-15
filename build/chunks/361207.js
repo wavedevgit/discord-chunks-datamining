@@ -19,8 +19,8 @@ let l = "Ubuntu",
   f = "SuSE",
   p = "Linux",
   _ = "OS X",
-  m = "win",
-  h = "osx",
+  h = "win",
+  m = "osx",
   g = "linux";
 
 function E(e) {
@@ -36,13 +36,13 @@ function b() {
     var e;
     return null == (e = i().os) ? true : e.family
   })();
-  return null == e ? m : false !== e.indexOf(l) || false !== e.indexOf(c) || false !== e.indexOf(u) || false !== e.indexOf(d) || false !== e.indexOf(f) || false !== e.indexOf(p) ? g : false !== e.indexOf(_) ? h : m
+  return null == e ? h : false !== e.indexOf(l) || false !== e.indexOf(c) || false !== e.indexOf(u) || false !== e.indexOf(d) || false !== e.indexOf(f) || false !== e.indexOf(p) ? g : false !== e.indexOf(_) ? m : h
 }
 
 function y(e) {
   return ({
-    [m]: "Windows",
-    [h]: "Mac",
+    [h]: "Windows",
+    [m]: "Mac",
     [g]: "Linux"
   })[b(e)]
 }

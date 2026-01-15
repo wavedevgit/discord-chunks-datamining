@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B: () => _,
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,13 +59,13 @@ function _(e) {
     estimatedTooltipHeight: c,
     delay: d = 300,
     onShow: _,
-    title: m,
-    body: h,
+    title: h,
+    body: m,
     graphic: g,
     size: E = "md",
     actions: b,
     gradientColor: y
-  } = e, O = i.useContext(a.S), [v, S] = i.useState("closed"), I = i.useRef(null), T = i.useRef(false), C = "opening-mouse" === v || "open-mouse" === v, A = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, P = (O.keyboardModeEnabled || A) && null != b, R = P, [w, D] = i.useState(0), x = (0, l.$)(n, c, v), L = i.useCallback(() => {
+  } = e, O = i.useContext(a.S), [v, S] = i.useState("closed"), I = i.useRef(null), T = i.useRef(false), C = "opening-mouse" === v || "open-mouse" === v, A = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, P = (O.keyboardModeEnabled || A) && null != b, w = P, [R, D] = i.useState(0), x = (0, l.$)(n, c, v), L = i.useCallback(() => {
     null != I.current && (clearTimeout(I.current), I.current = null)
   }, []), j = i.useCallback(e => {
     e && (T.current = true), L(), S("closing")
@@ -127,19 +127,19 @@ function _(e) {
       shouldShow: N,
       position: x,
       align: "center",
-      title: m,
-      body: h,
+      title: h,
+      body: m,
       graphic: g,
       size: E,
       actions: Z,
       gradientColor: y,
-      showCloseButton: R,
+      showCloseButton: w,
       shouldTrapFocus: P,
       returnRef: P ? n : true,
       isCaretHoverable: true,
       caretConfig: {
         align: "custom",
-        customOffset: w
+        customOffset: R
       },
       onNudgeChange: F,
       onRequestClose: e => {
@@ -148,4 +148,4 @@ function _(e) {
     })]
   })
 }
-let m = _
+let h = _

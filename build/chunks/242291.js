@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C0: () => P,
-  GN: () => R,
+  GN: () => w,
   M2: () => x,
   Nq: () => N,
   SZ: () => M,
@@ -49,7 +49,7 @@ function A(e, t) {
 
 function N(e, t, n) {
   let r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
-  return (h.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? true : n.guild_id) || t.guildId === S.X8) && A(t, n) && (!r || t.available)
+  return (m.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? true : n.guild_id) || t.guildId === S.X8) && A(t, n) && (!r || t.available)
 }
 
 function P(e) {
@@ -62,11 +62,11 @@ function P(e) {
   return !t && !n
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   (0, E.XE)(t, e, y.YQ.SOUNDBOARD), (0, d.kq)(t, e, __OVERLAY__, n, r)
 }
 
-function w(e, t) {
+function R(e, t) {
   (0, E.XE)(t, e, y.YQ.JOINED_VOICE_CHANNEL), (0, d.vy)(t, e, __OVERLAY__)
 }
 
@@ -78,13 +78,13 @@ async function x(e) {
   let t = _.default.getCurrentUser(),
     n = (0, o.Z)(),
     r = (0, v.k9)(e);
-  if (null == n || f.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, O.D)()) return;
+  if (null == n || f.Lr.has(n.type) || null == r || !m.ZP.canUseCustomCallSounds(t) || !(0, O.D)()) return;
   await (0, E.w)();
   let i = r.guildId === S.hY ? S.X8 : r.guildId,
     a = b.Z.getSound(i, r.soundId);
   if (null != a) {
     if (!A(a, n) || !N(t, a, n, true) || !P(n)) return null;
-    w(a, n.id)
+    R(a, n.id)
   }
 }
 
@@ -94,7 +94,7 @@ function L(e) {
   } = e, n = (0, r.e7)([_.default], () => _.default.getCurrentUser()), a = [];
   if (!t && !D()) {
     let e = (0, g.Fc)(n);
-    (h.ZP.canUseCustomCallSounds(n) || e) && a.push(i.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL)
+    (m.ZP.canUseCustomCallSounds(n) || e) && a.push(i.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL)
   }
   return a
 }
@@ -136,7 +136,7 @@ function k(e) {
     soundSource: i,
     location: a
   } = e;
-  m.default.track(I.rMx.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
+  h.default.track(I.rMx.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
     location_stack: a,
     guild_id: "" === t ? 0 : Number(t),
     change_type: n,
@@ -149,7 +149,7 @@ function U(e) {
   let {
     location: t
   } = e;
-  m.default.track(I.rMx.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
+  h.default.track(I.rMx.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
     location_stack: t
   })
 }

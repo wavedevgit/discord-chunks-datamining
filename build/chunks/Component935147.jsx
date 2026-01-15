@@ -105,15 +105,15 @@ function Z(e) {
     newestAnalyticsLocation: J,
     sourceAnalyticsLocations: $
   } = (0, c.ZP)(l.Z.USER_SETTINGS_TRY_OUT_PREMIUM), ee = e => {
-    e && ((0, s.I5)(W), (0, b.z5)(Y), (0, b.ho)(K), v.default.track(w.rMx.TRY_IT_OUT_PRESET_SELECTED, {
+    e && ((0, s.I5)(W), (0, b.z5)(Y), (0, b.ho)(K), v.default.track(R.rMx.TRY_IT_OUT_PRESET_SELECTED, {
       preset: z
     }))
   };
   i.useEffect(() => {
-    U && v.default.track(w.rMx.PREMIUM_UPSELL_VIEWED, {
+    U && v.default.track(R.rMx.PREMIUM_UPSELL_VIEWED, {
       type: D.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
-        page: w.ZY5.USER_SETTINGS
+        page: R.ZY5.USER_SETTINGS
       },
       location_stack: $
     })
@@ -145,7 +145,7 @@ function Z(e) {
           children: [(0, r.jsx)(p.Z, {
             preset: z,
             onShuffle: q
-          }), (0, r.jsx)(R.Z, {
+          }), (0, r.jsx)(w.Z, {
             user: M
           })]
         }),
@@ -192,7 +192,7 @@ function Z(e) {
             children: L.intl.string(L.t["smo74/"])
           })]
         })
-      }), !et && (0, r.jsx)(m.p, {
+      }), !et && (0, r.jsx)(h.p, {
         onSubscribeModalClose: ee,
         className: j.floatingUpsell,
         showUpsell: true,
@@ -209,7 +209,7 @@ function Z(e) {
       }), et && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
           className: j.premiumTier2Divider
-        }), (0, r.jsx)(h.ZP, {
+        }), (0, r.jsx)(m.ZP, {
           type: D.cd.CUSTOM_PROFILE_TRY_OUT_UPSELL,
           subscriptionTier: D.Si.TIER_2
         })]

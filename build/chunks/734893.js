@@ -5,7 +5,7 @@ require.d(exports, {
   HH: () => O,
   NewMemberActionTypes: () => g,
   O9: () => f,
-  Vu: () => m,
+  Vu: () => h,
   W4: () => l,
   Wz: () => c,
   Z3: () => u,
@@ -22,7 +22,7 @@ require.d(exports, {
   tB: () => y,
   uo: () => T,
   vD: () => b,
-  x3: () => h
+  x3: () => m
 }), require("./953529.js"), require("./388685.js");
 var Chunk592125 = require("./592125.js"),
   Chunk823379 = require("./823379.js"),
@@ -36,8 +36,8 @@ let s = 7,
   f = 5,
   p = 1,
   _ = 30,
-  m = 200,
-  h = 7;
+  h = 200,
+  m = 7;
 var g = function(e) {
   return e[e.VIEW = 0] = "VIEW", e[e.CHAT = 1] = "CHAT", e
 }({});

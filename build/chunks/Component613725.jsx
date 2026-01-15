@@ -2,7 +2,7 @@
 /** chunk id: 613725, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,7 +18,7 @@ var Chunk55160 = require("./55160.js"),
   Chunk768581 = require("./768581.js"),
   Chunk970167 = require("./970167.js");
 
-function m() {
+function h() {
   let {
     guildId: e,
     channelId: t
@@ -31,7 +31,7 @@ function m() {
       guildId: t,
       channelId: n
     }
-  }, i.X), n = (0, a.e7)([d.Z], () => d.Z.getGuild(e)), m = (0, a.e7)([u.Z], () => null == n ? u.Z.getChannel(t) : null), h = (0, a.e7)([f.default], () => f.default.getCurrentUser()), g = null != m ? (0, s.x)(m) : null, E = null != h ? h.getAvatarURL(e, 80) : p.pK["0"], b = (0, r.jsx)(o.qEK, {
+  }, i.X), n = (0, a.e7)([d.Z], () => d.Z.getGuild(e)), h = (0, a.e7)([u.Z], () => null == n ? u.Z.getChannel(t) : null), m = (0, a.e7)([f.default], () => f.default.getCurrentUser()), g = null != h ? (0, s.x)(h) : null, E = null != m ? m.getAvatarURL(e, 80) : p.pK["0"], b = (0, r.jsx)(o.qEK, {
     src: E,
     "aria-hidden": true,
     size: o.EFr.SIZE_80,

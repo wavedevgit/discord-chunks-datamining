@@ -79,8 +79,8 @@ function f(e) {
     titleWithoutQuery: f,
     Component: p,
     getProps: _,
-    getQuery: m,
-    key: h,
+    getQuery: h,
+    key: m,
     indexOffset: g = 0,
     headerClassName: E,
     headerTrailingContent: b,
@@ -104,9 +104,9 @@ function f(e) {
       titleWithQuery: c,
       titleWithoutQuery: f,
       query: t,
-      getQuery: m,
+      getQuery: h,
       headerClassName: E,
       headerTrailingContent: b
     }) : null, O, y]
-  }, h)
+  }, m)
 }

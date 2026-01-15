@@ -63,10 +63,10 @@ function _(e) {
     query: d,
     searchResultsPosition: f,
     source: _,
-    commandOrigin: m
-  } = e, h = p(n);
-  if ((null == r ? true : r.id) === (null == (t = h.activeCommand) ? true : t.id)) returnfalse;
-  h.activeCommand = r, h.activeCommandSection = i, h.activeOptionName = null, h.preferredCommandId = null, h.initialValues = null != a ? a : {}, h.commandOrigin = null != m ? m : null, h.source = _;
+    commandOrigin: h
+  } = e, m = p(n);
+  if ((null == r ? true : r.id) === (null == (t = m.activeCommand) ? true : t.id)) returnfalse;
+  m.activeCommand = r, m.activeCommandSection = i, m.activeOptionName = null, m.preferredCommandId = null, m.initialValues = null != a ? a : {}, m.commandOrigin = null != h ? h : null, m.source = _;
   let g = {};
   return (null == r ? true : r.options) != null && r.options.forEach(e => {
     g[e.name] = {
@@ -75,7 +75,7 @@ function _(e) {
       lastValidationResult: null,
       optionValue: null
     }
-  }), h.optionStates = g, null != r && (0, l.qJ)({
+  }), m.optionStates = g, null != r && (0, l.qJ)({
     command: r,
     location: o,
     triggerSection: s,
@@ -87,7 +87,7 @@ function _(e) {
   }), true
 }
 
-function m(e) {
+function h(e) {
   var t, n;
   let {
     channelId: r,
@@ -96,7 +96,7 @@ function m(e) {
   return i !== a.preferredCommandId && (null !== a.preferredCommandId || i !== (null != (n = null == (t = a.activeCommand) ? true : t.id) ? n : null)) && (a.activeCommand = null, a.activeOptionName = null, a.preferredCommandId = i, a.optionStates = {}, true)
 }
 
-function h(e) {
+function m(e) {
   let {
     channelId: t,
     changedOptionStates: n
@@ -142,11 +142,11 @@ function g(e) {
     command: r,
     section: i,
     location: a
-  }), l = m({
+  }), l = h({
     type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND",
     channelId: t,
     commandId: n
-  }), c = h({
+  }), c = m({
     type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
     channelId: t,
     changedOptionStates: o
@@ -208,7 +208,7 @@ let b = new E(Chunk570140.Z, {
   CHANNEL_SELECT: f,
   LOGOUT: f,
   APPLICATION_COMMAND_SET_ACTIVE_COMMAND: _,
-  APPLICATION_COMMAND_SET_PREFERRED_COMMAND: m,
-  APPLICATION_COMMAND_UPDATE_OPTIONS: h,
+  APPLICATION_COMMAND_SET_PREFERRED_COMMAND: h,
+  APPLICATION_COMMAND_UPDATE_OPTIONS: m,
   APPLICATION_COMMAND_UPDATE_CHANNEL_STATE: g
 })

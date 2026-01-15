@@ -11,7 +11,7 @@ require.r(exports), require.d(exports, {
   casual: () => g,
   createCasualConfiguration: () => O,
   createConfiguration: () => v,
-  hant: () => h,
+  hant: () => m,
   parse: () => b,
   parseDate: () => y,
   strict: () => E
@@ -29,7 +29,7 @@ var Chunk766403 = require("./766403.js"),
   Chunk908092 = require("./908092.js"),
   Chunk628475 = require("./628475.js"),
   Chunk29451 = require("./29451.js");
-let h = new Chunk201129.k(O()),
+let m = new Chunk201129.k(O()),
   g = new Chunk201129.k(O()),
   E = new Chunk201129.k(v());
 
@@ -49,7 +49,7 @@ function O() {
 function v() {
   let e = (0, i.l)({
     parsers: [new c.Z, new d.Z, new p.Z, new f.Z, new u.Z],
-    refiners: [new _.Z, new m.Z]
+    refiners: [new _.Z, new h.Z]
   });
   return e.refiners = e.refiners.filter(e => !(e instanceof r.Z)), e
 }

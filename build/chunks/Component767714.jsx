@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk568247 = require("./568247.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -79,7 +79,7 @@ let v = function(e) {
     subscriptionTier: t,
     onClick: n,
     size: a,
-    className: h,
+    className: m,
     textOptions: E,
     iconClassName: O,
     postSuccessGuild: v,
@@ -90,8 +90,8 @@ let v = function(e) {
     applicationId: A,
     shinyButtonClassName: N,
     showGradient: P = false,
-    confirmationFooter: R,
-    color: w,
+    confirmationFooter: w,
+    color: R,
     iconColor: D = "currentColor"
   } = e, x = y(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]);
   let L = (0, s.e7)([d.Z], () => d.Z.isFocused()),
@@ -107,29 +107,29 @@ let v = function(e) {
       onSubscribeModalClose: S,
       premiumModalAnalyticsLocation: I,
       applicationId: A,
-      confirmationFooter: R
+      confirmationFooter: w
     },
-    k = null != w ? w : t === _.Si.TIER_1 ? c.zx.Colors.PRIMARY : c.zx.Colors.GREEN,
+    k = null != R ? R : t === _.Si.TIER_1 ? c.zx.Colors.PRIMARY : c.zx.Colors.GREEN,
     U = (0, r.jsxs)(u.gtL, b(g({
       "data-migration-pending": true,
       disabled: j.disabled,
-      innerClassName: m.premiumSubscribeButton,
+      innerClassName: h.premiumSubscribeButton,
       color: k,
       size: a,
       className: N,
       wrapperClassName: o()({
-        [m.tier2Gradient]: P && t === _.Si.TIER_2,
-        [m.tier1Gradient]: P && t === _.Si.TIER_1
-      }, h),
-      buttonShineClassName: "buttonShineClassName" in x ? x.buttonShineClassName : k === c.Tt.BRAND_INVERTED ? m.brandShine : true,
+        [h.tier2Gradient]: P && t === _.Si.TIER_2,
+        [h.tier1Gradient]: P && t === _.Si.TIER_1
+      }, m),
+      buttonShineClassName: "buttonShineClassName" in x ? x.buttonShineClassName : k === c.Tt.BRAND_INVERTED ? h.brandShine : true,
       pauseAnimation: !L || C
     }, x), {
       children: [T && (0, r.jsx)(u.SrA, {
         size: "md",
         color: D,
-        className: o()(m.premiumIcon, O)
+        className: o()(h.premiumIcon, O)
       }), (0, r.jsx)("span", {
-        className: o()(m.buttonText, null == E ? true : E.textClassName),
+        className: o()(h.buttonText, null == E ? true : E.textClassName),
         children: j.buttonText
       })]
     }));

@@ -12,7 +12,7 @@ require.d(exports, {
   NB: () => p,
   Sr: () => f,
   XZ: () => o,
-  Y_: () => m,
+  Y_: () => h,
   cP: () => a,
   d5: () => d,
   f4: () => O,
@@ -43,10 +43,10 @@ var p = function(e) {
   _ = function(e) {
     return e.CUSTOM_APP_ICONS = "custom_app_icon", e
   }({}),
-  m = function(e) {
+  h = function(e) {
     return e.TRY_IT_OUT = "try_it_out", e.GUILD_TAG = "guild_tag", e
   }({}),
-  h = function(e) {
+  m = function(e) {
     return e.DISABLE_ACCOUNT = "disable_account", e
   }({}),
   g = function(e) {
@@ -56,8 +56,8 @@ var p = function(e) {
     return e.DM_SAFETY_ALERTS_V2 = "dm_safety_alerts_v2", e.MESSAGE_REQUESTS_V2 = "message_requests_v2", e.EXPLICIT_MEDIA_REDACTION_V2 = "explicit_media_redaction_v2", e.RESTRICTED_ACCOUNTS = "restricted_accounts", e
   }({});
 let b = {
-  AccountScrollPositions: h,
-  ProfileCustomizationScrollPositions: m,
+  AccountScrollPositions: m,
+  ProfileCustomizationScrollPositions: h,
   AccessibilityScrollPositions: g,
   AppearanceScrollPositions: _,
   ContentAndSocialScrollPositions: E

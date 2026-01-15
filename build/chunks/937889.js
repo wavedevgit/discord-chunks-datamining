@@ -6,7 +6,7 @@ require.d(exports, {
   d6: () => v,
   k$: () => I,
   p6: () => g,
-  rs: () => h
+  rs: () => m
 }), require("./388685.js"), require("./781311.js"), require("./704826.js"), require("./35282.js");
 var Chunk25209 = require("./25209.js");
 require("./865427.js");
@@ -57,9 +57,9 @@ function f(e, t) {
 }
 let p = 30,
   _ = new Set([Chunk981631.hBH.IMAGE, Chunk981631.hBH.GIFV]),
-  m = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
+  h = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
 
-function h(e, t) {
+function m(e, t) {
   var n;
   let r = g({
       channelId: e.channel_id,
@@ -114,14 +114,14 @@ function E(e, t, n) {
     formatInline: o = false,
     postProcessor: s,
     contentMessage: l
-  } = n, c = false, u = false, d = (null != l ? l : t).content, f = e(d, true, h(t, n), (e, n) => (Array.isArray(e) || (e = [e]), e.length >= r.dc - 10 && (u = true, e = [{
+  } = n, c = false, u = false, d = (null != l ? l : t).content, f = e(d, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), e.length >= r.dc - 10 && (u = true, e = [{
     type: "text",
     content: d,
     originalMatch: {
       index: 0,
       0: d
     }
-  }]), a && (e = R(e, (null != l ? l : t).embeds)), o || (e = T(e, n)), e = b(e), t.embeds.length > 0 && (c = A(e, n)), o && (e = w(e)), null != s && (e = s(e, n)), e));
+  }]), a && (e = w(e, (null != l ? l : t).embeds)), o || (e = T(e, n)), e = b(e), t.embeds.length > 0 && (c = A(e, n)), o && (e = R(e)), null != s && (e = s(e, n)), e));
   return {
     hasSpoilerEmbeds: c,
     content: f,
@@ -230,15 +230,15 @@ function P(e) {
   return N(e, e => "spoiler" === e.type ? N(e, e => "link" === e.type || "attachmentLink" === e.type || null) : null)
 }
 
-function R(e, t) {
+function w(e, t) {
   if (1 !== e.length || 1 !== t.length) return e;
   let n = e[0],
     r = t[0];
   return ("link" === n.type || "attachmentLink" === n.type) && _.has(r.type) && (0, o.dY)(r) ? [] : e
 }
 
-function w(e) {
+function R(e) {
   return e.forEach(e => {
-    m.has(e.type) && null != e.content && (Array.isArray(e.content) ? w(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : s.Z.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
+    h.has(e.type) && null != e.content && (Array.isArray(e.content) ? R(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : s.Z.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
   }), e
 }

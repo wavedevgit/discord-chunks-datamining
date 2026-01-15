@@ -47,7 +47,7 @@ function S(e) {
 }
 
 function I(e) {
-  let t = (0, h.CJ)(),
+  let t = (0, m.CJ)(),
     n = null == t ? true : t.channelId,
     v = d.Z.getChannel(n),
     I = p.Z.getGuild(null == v ? true : v.getGuildId()),
@@ -56,7 +56,7 @@ function I(e) {
     A = (e, t) => {
       let n = t === b.tE.PILL_ICON_SIZE;
       if ((null == e ? true : e.type) === g.tM.USER) {
-        let i = m.default.getUser(e.value);
+        let i = h.default.getUser(e.value);
         if (null == i) return;
         return (0, r.jsx)(a.qEK, {
           size: n ? a.EFr.SIZE_16 : a.EFr.SIZE_24,
@@ -81,7 +81,7 @@ function I(e) {
     N = e => {
       let t = null;
       if (e.type === g.tM.USER) {
-        let n = m.default.getUser(e.value);
+        let n = h.default.getUser(e.value);
         null != n && (t = (0, r.jsx)(o.Z, {
           className: O.tag,
           usernameClass: O.username,

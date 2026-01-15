@@ -52,7 +52,7 @@ let g = e => {
           })
         })]
       }), (0, r.jsx)("img", {
-        src: h.Z,
+        src: m.Z,
         className: _.bannerImage,
         alt: "gift nitro banner"
       })]
@@ -80,7 +80,7 @@ let g = e => {
           premiumModalAnalyticsLocation: i
         })]
       }), (0, r.jsx)("img", {
-        src: m,
+        src: h,
         className: p.bannerImage,
         alt: "gift nitro banner"
       })]

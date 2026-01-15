@@ -5,7 +5,7 @@ require.d(exports, {
   Az: () => E,
   IZ: () => b,
   PP: () => g,
-  Ub: () => h,
+  Ub: () => m,
   c6: () => I,
   m9: () => v,
   mT: () => T,
@@ -56,12 +56,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function h(e, t) {
+async function m(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     {
       channelId: a,
@@ -70,14 +70,14 @@ async function h(e, t) {
       loadId: f,
       shouldNavigate: _ = true
     } = n,
-    h = (0, o.s1)(),
+    m = (0, o.s1)(),
     g = c.Z.getGuild(e),
     E = {
       state: {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? _ && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), m(p({}, E), {
+  null != g && null != g.joinedAt ? _ && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), h(p({}, E), {
     navigationReplace: true,
     openChannel: true
   }))) : (await r.Z.joinGuild(e, {
@@ -85,11 +85,11 @@ async function h(e, t) {
     source: u,
     loadId: f,
     lurkLocation: null == t ? true : t.page
-  }), _ && await r.Z.transitionToGuildSync(e, m(p({}, E), {
+  }), _ && await r.Z.transitionToGuildSync(e, h(p({}, E), {
     welcomeModalChannelId: a,
     navigationReplace: null != a,
     openChannel: null != a,
-    search: h.location.search
+    search: m.location.search
   }), a, n.messageId)), null == l || l()
 }
 

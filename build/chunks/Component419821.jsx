@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk68842 = require("./68842.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ function b(e, t) {
 function y(e) {
   let {
     user: t
-  } = e, a = (0, s.e7)([c.default], () => c.default.getCurrentUser()), h = i.useCallback(() => {
+  } = e, a = (0, s.e7)([c.default], () => c.default.getCurrentUser()), m = i.useCallback(() => {
     o()(true !== a, "User must be logged in to accept a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
@@ -72,19 +72,19 @@ function y(e) {
     })
   }, [a, t]);
   return (0, r.jsxs)("div", {
-    className: m.container,
+    className: h.container,
     children: [(0, r.jsx)("div", {
-      className: m.details,
+      className: h.details,
       children: (0, r.jsx)(d.Z, {
         otherUser: t,
         status: f.ne.ACTIVE
       })
     }), (0, r.jsx)("div", {
-      className: m.actions,
+      className: h.actions,
       children: (0, r.jsx)(u.Z, {
         icon: l.Dio,
         tooltip: _.intl.string(p.default.l20ZZp),
-        onClick: h
+        onClick: m
       })
     })]
   })

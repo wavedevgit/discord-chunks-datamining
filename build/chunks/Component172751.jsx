@@ -51,7 +51,7 @@ let b = Chunk473749.memo(function(e) {
     return null == t ? null : (0, r.jsx)("img", {
       src: t,
       alt: "",
-      className: o()(h.badge, n),
+      className: o()(m.badge, n),
       width: i,
       height: i
     })
@@ -72,26 +72,26 @@ let b = Chunk473749.memo(function(e) {
       inline: O = true
     } = e;
     return (0, r.jsx)(l.P3F, {
-      "aria-label": _.intl.formatToPlainString(m.default["fw2p/x"], {
+      "aria-label": _.intl.formatToPlainString(h.default["fw2p/x"], {
         tag: n
       }),
       tag: "span",
       tabIndex: null == u ? false : true,
       onClick: u,
       onMouseEnter: d,
-      className: o()(h.chipletContainerInner, O && h.chipletContainerInline, null != u && h.clickable, a),
+      className: o()(m.chipletContainerInner, O && m.chipletContainerInline, null != u && m.clickable, a),
       children: (0, r.jsxs)(l.Text, {
         variant: g,
         lineClamp: 1,
         color: E,
         tag: "span",
-        className: o()(h.text, s),
+        className: o()(m.text, s),
         children: [null != i && "string" == typeof i ? (0, r.jsx)(b, {
           src: (0, f.Ic)(t, i, y),
           size: y,
           className: c
         }) : i, (0, r.jsx)("span", {
-          className: h.tagText,
+          className: m.tagText,
           children: n
         })]
       })
@@ -104,7 +104,7 @@ let b = Chunk473749.memo(function(e) {
       userId: a,
       contextGuildId: p,
       className: _,
-      containerClassName: m,
+      containerClassName: h,
       textVariant: g,
       textColor: b,
       badgeSize: O,
@@ -113,15 +113,15 @@ let b = Chunk473749.memo(function(e) {
       onShowProfile: I,
       onClose: T
     } = e, C = i.useRef(null), A = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), N = (0, s.e7)([u.Z], () => u.Z.theme), P = null != (t = null == A ? true : A.primaryGuild) ? t : n, {
-      tag: R,
-      badge: w,
+      tag: w,
+      badge: R,
       guildId: D
     } = (0, f.Pb)(P);
     return (0, f.yF)(a, p) && null != D ? v ? (0, r.jsx)(y, {
       guildId: D,
-      guildTag: R,
-      guildBadge: w,
-      className: o()(h.noTooltip, _),
+      guildTag: w,
+      guildBadge: R,
+      className: o()(m.noTooltip, _),
       textVariant: g,
       textColor: b,
       badgeSize: O,
@@ -134,12 +134,12 @@ let b = Chunk473749.memo(function(e) {
         onClose: T,
         targetElementRef: C,
         children: e => (0, r.jsx)("span", {
-          className: m,
+          className: h,
           ref: C,
           children: (0, r.jsx)(y, E({
             guildId: D,
-            guildTag: R,
-            guildBadge: w,
+            guildTag: w,
+            guildBadge: R,
             className: _,
             textVariant: g,
             textColor: b,

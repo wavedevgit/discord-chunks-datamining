@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   De: () => _,
-  EJ: () => m,
+  EJ: () => h,
   Ic: () => p,
   JU: () => f
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js");
@@ -25,13 +25,13 @@ function f(e) {
     roleStyle: s,
     includeConvenienceGlow: l,
     animateGradient: d
-  } = e, f = "username" === s, p = "dot" === s, _ = f && l, m = null != (t = null == i ? true : i.primaryColor) ? t : c.Pbq, h = {
-    "--custom-gradient-color-1": m,
-    "--custom-gradient-color-2": null != (n = null == i ? true : i.secondaryColor) ? n : m,
-    "--custom-gradient-color-3": null != (r = null == i ? true : i.tertiaryColor) ? r : m
+  } = e, f = "username" === s, p = "dot" === s, _ = f && l, h = null != (t = null == i ? true : i.primaryColor) ? t : c.Pbq, m = {
+    "--custom-gradient-color-1": h,
+    "--custom-gradient-color-2": null != (n = null == i ? true : i.secondaryColor) ? n : h,
+    "--custom-gradient-color-3": null != (r = null == i ? true : i.tertiaryColor) ? r : h
   }, g = (null == i ? true : i.tertiaryColor) != null ? u.threeColorGradient : u.twoColorGradient;
   return {
-    gradientStyle: h,
+    gradientStyle: m,
     gradientClassname: o()(g, {
       [u.usernameGradient]: f,
       [u.convenienceGlowGradient]: _,
@@ -84,7 +84,7 @@ function _(e, t, n) {
   }, [e, t, n])
 }
 
-function m(e, t) {
+function h(e, t) {
   return i.useMemo(() => {
     let n;
     if (null == e) return e;

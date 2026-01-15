@@ -28,7 +28,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ function I(e, t) {
       f = null;
     return new Promise(s => {
       let l = (e, n) => {
-          c.default.track(p.rMx.HOOK_RESULT, m({
+          c.default.track(p.rMx.HOOK_RESULT, h({
             game_name: u,
             game_id: null == d ? null : d.id,
             success: n,
@@ -109,12 +109,12 @@ function I(e, t) {
           }, t)), null != f && (clearTimeout(f), f = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
         },
         _ = o.ZP.getOverlayOptionsForPID(e),
-        h = g(m({}, a.r, _), {
+        m = g(h({}, a.r, _), {
           elevate: o.ZP.shouldElevateProcessForPID(e)
         });
-      null == h.allowHook || h.allowHook ? (f = setTimeout(() => {
+      null == m.allowHook || m.allowHook ? (f = setTimeout(() => {
         n.cancelAttachToProcess(e), l("Timed out waiting for hook response", false)
-      }, 12e4), n.attachToProcess(e, h, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
+      }, 12e4), n.attachToProcess(e, m, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
     })
   })
 }

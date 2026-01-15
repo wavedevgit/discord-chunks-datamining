@@ -30,7 +30,7 @@ var Chunk547750 = require("./547750.js"),
 class C {
   createCasualConfiguration(e = false) {
     let t = this.createConfiguration(false, e);
-    return t.parsers.push(new m.Z), t.parsers.push(new h.Z), t.parsers.push(new o.Z), t.parsers.push(new E.Z), t.parsers.push(new y.Z), t.refiners.push(new T.Z), t
+    return t.parsers.push(new h.Z), t.parsers.push(new m.Z), t.parsers.push(new o.Z), t.parsers.push(new E.Z), t.parsers.push(new y.Z), t.refiners.push(new T.Z), t
   }
   createConfiguration(e = true, t = false) {
     let n = (0, _.l)({

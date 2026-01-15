@@ -79,7 +79,7 @@ async function v(e, t, n) {
       n === r.v.VARIANTS_GROUP && (o.query = {
         variants_return_style: n
       });
-      let s = await (0, m.Kb)(o);
+      let s = await (0, h.Kb)(o);
       a.Z.dispatch({
         type: "SKU_FETCH_SUCCESS",
         sku: i ? s.body : s.body.sku
@@ -98,7 +98,7 @@ async function v(e, t, n) {
 async function S(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   if (!(d.Z.inTestModeForApplication(e) || c.Z.inDevModeForApplication(e)) && t) throw Error("this should only be used in test mode");
-  let n = (await (0, m.Kb)({
+  let n = (await (0, h.Kb)({
     url: g.ANM.APPLICATION_SKUS(e),
     rejectWithError: false
   })).body;
@@ -117,7 +117,7 @@ async function I(e, t, n, r) {
     skuId: t
   });
   try {
-    i = await (0, m.Kb)({
+    i = await (0, h.Kb)({
       url: g.ANM.STORE_SKU_PURCHASE(t),
       query: l,
       oldFormErrors: true,
@@ -193,7 +193,7 @@ async function A(e, t, n) {
     paymentSource: r,
     expectedAmount: l,
     expectedCurrency: u,
-    analyticsLoadId: m,
+    analyticsLoadId: h,
     isGift: E,
     giftInfoOptions: y,
     subscriptionPlanId: v,
@@ -219,8 +219,8 @@ async function A(e, t, n) {
     };
     if (A) e.test_mode = true;
     else {
-      if (null != r && (e.payment_source_id = r.id, e.payment_source_token = await (0, h.Zv)(r), g.QL.has(r.type))) {
-        let t = await (0, h.EH)(r.type);
+      if (null != r && (e.payment_source_id = r.id, e.payment_source_token = await (0, m.Zv)(r), g.QL.has(r.type))) {
+        let t = await (0, m.EH)(r.type);
         e.return_url = (0, i.K0)() + g.ANM.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(r.type, null != t ? t : "", "success")
       }
       null != I && (e.country_code = I)
@@ -230,7 +230,7 @@ async function A(e, t, n) {
       url: g.ANM.STORE_SKU_PURCHASE(t),
       body: e,
       context: {
-        load_id: m
+        load_id: h
       },
       oldFormErrors: true,
       rejectWithError: false
@@ -258,8 +258,8 @@ async function A(e, t, n) {
         skuId: t,
         error: n
       }), n.code !== s.SM.CONFIRMATION_REQUIRED) throw n;
-    if (!i.body.payment_id) throw (0, h.SQ)("payment id cannot be null on redirected confirmations.");
-    return (0, h.sk)(i.body, r)
+    if (!i.body.payment_id) throw (0, m.SQ)("payment id cannot be null on redirected confirmations.");
+    return (0, m.sk)(i.body, r)
   }
 }
 async function N() {

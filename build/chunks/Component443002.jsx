@@ -35,8 +35,8 @@ let P = function(e) {
     analyticsLocation: t,
     guild: n,
     onClose: P,
-    scrollToPowerupCards: R
-  } = e, [w, D] = i.useState(true), x = i.useRef(false), L = (0, c.Z)(() => Date.now()), {
+    scrollToPowerupCards: w
+  } = e, [R, D] = i.useState(true), x = i.useRef(false), L = (0, c.Z)(() => Date.now()), {
     analyticsLocations: j
   } = (0, u.ZP)(), M = i.useRef(null), k = i.useRef(null), U = i.useRef(null), G = i.useCallback(() => {
     null != U.current && null != k.current && k.current.scrollTo({
@@ -85,13 +85,13 @@ let P = function(e) {
   return i.useEffect(() => {
     V && !H && (0, d.ce)(n.id)
   }, [n.id, V, H]), i.useEffect(() => {
-    if (R && Y) {
+    if (w && Y) {
       let e = setTimeout(() => {
         G()
       }, 100);
       return () => clearTimeout(e)
     }
-  }, [R, G, Y]), (0, r.jsxs)(r.Fragment, {
+  }, [w, G, Y]), (0, r.jsxs)(r.Fragment, {
     children: [null != P && (0, r.jsx)("div", {
       className: N.closeIconWrapper,
       children: (0, r.jsx)(l.Z, {
@@ -107,7 +107,7 @@ let P = function(e) {
         className: N.header,
         children: [(0, r.jsxs)("div", {
           className: N.headerContentWrapper,
-          children: [(0, r.jsx)(m.Z, {
+          children: [(0, r.jsx)(h.Z, {
             guild: e.guild,
             themeResponsive: false,
             onButtonClick: Z
@@ -128,7 +128,7 @@ let P = function(e) {
         }), (0, r.jsx)(T.O, {})]
       }), (0, r.jsx)("div", {
         className: N.middleBodyContentWrapper,
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(m.Z, {
           ref: U,
           guild: e.guild,
           onClose: F
@@ -154,7 +154,7 @@ let P = function(e) {
       })]
     }), (0, r.jsx)(O.Z, {
       guild: n,
-      isVisible: !w,
+      isVisible: !R,
       closeLayer: F
     })]
   })

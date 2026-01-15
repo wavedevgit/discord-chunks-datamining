@@ -24,8 +24,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = Chunk70956.Z.Millis.DAY,
-  h = 30 * Chunk70956.Z.Millis.MINUTE,
+let h = Chunk70956.Z.Millis.DAY,
+  m = 30 * Chunk70956.Z.Millis.MINUTE,
   g = 5 * Chunk70956.Z.Millis.SECOND,
   E = 5 * Chunk70956.Z.Millis.MINUTE,
   b = 12 * Chunk70956.Z.Millis.HOUR;
@@ -51,8 +51,8 @@ class y extends Chunk147913.Z {
         location: p.dr.QUESTS_MANAGER
       });
       window.clearTimeout(this.initialFetchTimerId), window.clearTimeout(this.recurringFetchTimerId), this.recurringFetchTimerId = window.setInterval(() => {
-        Date.now() - this.lastFetchAttemptedAt > m && this._fetch("post_connect_recurring")
-      }, h);
+        Date.now() - this.lastFetchAttemptedAt > h && this._fetch("post_connect_recurring")
+      }, m);
       let t = Math.floor(Math.random() * g);
       this.initialFetchTimerId = window.setTimeout(() => {
         !(Date.now() - t < s.Z.lastFetchedCurrentQuests) && (e || 0 === s.Z.lastFetchedCurrentQuests) && this._fetch("post_connect_initial")

@@ -28,14 +28,14 @@ function u(e) {
 
 function d(e, t, n, r) {
   var i = n.value;
-  p(e, i) && (m(e, n), l(e, "allowStale") || (i = true)), i && t.call(r, i.value, i.key, e)
+  p(e, i) && (h(e, n), l(e, "allowStale") || (i = true)), i && t.call(r, i.value, i.key, e)
 }
 
 function f(e, t, n) {
   var r = l(e, "cache").get(t);
   if (r) {
     var i = r.value;
-    p(e, i) ? (m(e, r), l(e, "allowStale") || (i = true)) : n && l(e, "lruList").unshiftNode(r), i && (i = i.value)
+    p(e, i) ? (h(e, r), l(e, "allowStale") || (i = true)) : n && l(e, "lruList").unshiftNode(r), i && (i = i.value)
   }
   return i
 }
@@ -51,18 +51,18 @@ function _(e) {
   if (l(e, "length") > l(e, "max"))
     for (var t = l(e, "lruList").tail; l(e, "length") > l(e, "max") && null !== t;) {
       var n = t.prev;
-      m(e, t), t = n
+      h(e, t), t = n
     }
 }
 
-function m(e, t) {
+function h(e, t) {
   if (t) {
     var n = t.value;
     l(e, "dispose") && l(e, "dispose").call(this, n.key, n.value), l(e, "length", l(e, "length") - n.length), l(e, "cache").delete(n.key), l(e, "lruList").removeNode(t)
   }
 }
 
-function h(e, t, n, r, i) {
+function m(e, t, n, r, i) {
   this.key = e, this.value = t, this.length = n, this.now = r, this.maxAge = i || 0
 }
 r = "function" == typeof Symbol ? function(e) {
@@ -172,11 +172,11 @@ r = "function" == typeof Symbol ? function(e) {
   var r = (n = n || l(this, "maxAge")) ? Date.now() : 0,
     i = l(this, "lengthCalculator").call(this, t, e);
   if (l(this, "cache").has(e)) {
-    if (i > l(this, "max")) return m(this, l(this, "cache").get(e)), false;
+    if (i > l(this, "max")) return h(this, l(this, "cache").get(e)), false;
     var a = l(this, "cache").get(e).value;
     return l(this, "dispose") && l(this, "dispose").call(this, e, a.value), a.now = r, a.maxAge = n, a.value = t, l(this, "length", l(this, "length") + (i - a.length)), a.length = i, this.get(e), _(this), true
   }
-  var o = new h(e, t, i, r, n);
+  var o = new m(e, t, i, r, n);
   return o.length > l(this, "max") ? (l(this, "dispose") && l(this, "dispose").call(this, e, t), false) : (l(this, "length", l(this, "length") + o.length), l(this, "lruList").unshift(o), l(this, "cache").set(e, l(this, "lruList").head), _(this), true)
 }, u.prototype.has = function(e) {
   return !(!l(this, "cache").has(e) || p(this, l(this, "cache").get(e).value))
@@ -186,9 +186,9 @@ r = "function" == typeof Symbol ? function(e) {
   return f(this, e, false)
 }, u.prototype.pop = function() {
   var e = l(this, "lruList").tail;
-  return e ? (m(this, e), e.value) : null
+  return e ? (h(this, e), e.value) : null
 }, u.prototype.del = function(e) {
-  m(this, l(this, "cache").get(e))
+  h(this, l(this, "cache").get(e))
 }, u.prototype.load = function(e) {
   this.reset();
   for (var t = Date.now(), n = e.length - 1; n >= 0; n--) {

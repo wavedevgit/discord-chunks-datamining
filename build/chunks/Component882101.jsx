@@ -42,12 +42,12 @@ let _ = e => {
   let {
     listingId: t,
     isListingPublished: n
-  } = e, _ = (0, c.Z)(), [m] = l._T(t), [h] = l.d9(t, _), [g] = l.H9(t);
+  } = e, _ = (0, c.Z)(), [h] = l._T(t), [m] = l.d9(t, _), [g] = l.H9(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f, {
-      listingName: m
+      listingName: h
     }), (0, r.jsx)(p, {
-      image: h
+      image: m
     }), !n && (0, r.jsx)("div", {
       className: d.draftBadgeContainer,
       children: (0, r.jsx)(a.v, {})

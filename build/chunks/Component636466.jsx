@@ -63,13 +63,13 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -123,14 +123,14 @@ function L(e) {
     showPopover: t,
     onViewWishlist: n,
     onCardClick: l
-  } = e, c = w(e, ["showPopover", "onViewWishlist", "onCardClick"]);
+  } = e, c = R(e, ["showPopover", "onViewWishlist", "onCardClick"]);
   let u = i.useRef(null),
     d = (0, s.useHasAnyModalOpen)(),
-    f = (0, a.e7)([h.Z], () => h.Z.hasLayers()),
-    m = (0, g.NN)({
+    f = (0, a.e7)([m.Z], () => m.Z.hasLayers()),
+    h = (0, g.NN)({
       location: "wishlist-card"
     }),
-    [E, b] = (0, p.US)(m ? [o.z.GAME_SHOP_WISHLIST_POPOVER] : [], O.R.SIDEBAR, true),
+    [E, b] = (0, p.US)(h ? [o.z.GAME_SHOP_WISHLIST_POPOVER] : [], O.R.SIDEBAR, true),
     y = i.useCallback(() => {
       b(O.L.USER_DISMISS), l()
     }, [l, b]),
@@ -141,7 +141,7 @@ function L(e) {
       b(O.L.USER_DISMISS), n()
     }, [n, b]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, R(N({}, c), {
+    children: [(0, r.jsx)(_.Z, w(N({}, c), {
       onCardClick: y,
       ref: u
     })), t && E === o.z.GAME_SHOP_WISHLIST_POPOVER && !d && !f && (0, r.jsx)(x, {
@@ -163,9 +163,9 @@ function j(e, t) {
     cardSize: c,
     analyticsLocations: d,
     itemSource: p
-  } = t, _ = null != i && i > 0, h = p === m.lr.POPULAR ? S.intl.string(S.t.Ig6VDH) : S.intl.string(S.t.ilhtIa), g = {
+  } = t, _ = null != i && i > 0, m = p === h.lr.POPULAR ? S.intl.string(S.t.Ig6VDH) : S.intl.string(S.t.ilhtIa), g = {
     title: _ ? S.intl.string(S.t.TxBQzD) : S.intl.string(S.t["4yiU7x"]),
-    body: _ ? true : h,
+    body: _ ? true : m,
     renderIcon: _ ? true : f.Qe,
     shouldShow: true
   }, O = () => {

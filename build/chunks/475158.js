@@ -22,8 +22,8 @@ function u(e) {
     f = e.modifiers,
     p = true === f ? c : f,
     _ = e.referenceElement,
-    m = e.onFirstUpdate,
-    h = e.innerRef,
+    h = e.onFirstUpdate,
+    m = e.innerRef,
     g = e.children,
     E = r.useContext(i.C8),
     b = r.useState(null),
@@ -33,13 +33,13 @@ function u(e) {
     S = v[0],
     I = v[1];
   r.useEffect(function() {
-    (0, a.k$)(h, y)
-  }, [h, y]);
+    (0, a.k$)(m, y)
+  }, [m, y]);
   var T = r.useMemo(function() {
       return {
         placement: n,
         strategy: d,
-        onFirstUpdate: m,
+        onFirstUpdate: h,
         modifiers: [].concat(p, [{
           name: "arrow",
           enabled: null != S,
@@ -48,13 +48,13 @@ function u(e) {
           }
         }])
       }
-    }, [n, d, m, p, S]),
+    }, [n, d, h, p, S]),
     C = (0, o.D)(_ || E, y, T),
     A = C.state,
     N = C.styles,
     P = C.forceUpdate,
-    R = C.update,
-    w = r.useMemo(function() {
+    w = C.update,
+    R = r.useMemo(function() {
       return {
         ref: O,
         style: N.popper,
@@ -66,8 +66,8 @@ function u(e) {
           ref: I
         },
         forceUpdate: P || s,
-        update: R || l
+        update: w || l
       }
-    }, [O, I, n, A, N, R, P]);
-  return (0, a.$p)(g)(w)
+    }, [O, I, n, A, N, w, P]);
+  return (0, a.$p)(g)(R)
 }

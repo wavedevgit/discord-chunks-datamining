@@ -24,12 +24,12 @@ function f() {
     p = null == f ? true : f.planSelection;
   if (null == p || null == n || 0 === n.length) return null;
   let _ = (0, c.Yr)(null == (e = p.getBannerImageUrl) ? true : e.call(p)),
-    m = (0, c.Tl)(p.gradientConfig, {
+    h = (0, c.Tl)(p.gradientConfig, {
       defaultAngle: 180
     });
   return (0, r.jsxs)("div", {
     className: d.promotionalGiftMessage,
-    style: null != _ ? _ : m,
+    style: null != _ ? _ : h,
     children: [(0, r.jsxs)("div", {
       className: d.promotionalTextSection,
       children: [(0, r.jsx)(a.Text, {

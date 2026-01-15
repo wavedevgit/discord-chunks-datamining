@@ -22,7 +22,7 @@ function _() {
     t = (0, a.LN)(),
     n = f.t.sJYh5t,
     _ = f.t.cf9mvV,
-    m = (0, i.P)();
+    h = (0, i.P)();
   return (0, r.jsx)(l.U, {
     setting: u.s6.PRIVACY_DATA_QUESTS_V2,
     children: (0, r.jsx)(c.ZP, {
@@ -32,7 +32,7 @@ function _() {
       }),
       value: !e,
       onChange: e => s.bh.updateSetting(!e),
-      disabled: m || t,
+      disabled: h || t,
       tooltipText: t ? f.intl.string(p.default["6Af/cw"]) : true
     })
   })

@@ -2,7 +2,7 @@
 /** chunk id: 17181, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EI: () => h,
+  EI: () => m,
   default: () => g,
   hz: () => b
 });
@@ -19,12 +19,12 @@ var Chunk512722 = require("./512722.js"),
   Chunk176505 = require("./176505.js");
 let _ = {};
 
-function m(e) {
+function h(e) {
   var t;
   null == (t = _[e]) || t.call(_), _[e] = null
 }
 
-function h(e) {
+function m(e) {
   _[e] = null
 }
 async function g(e) {
@@ -48,7 +48,7 @@ async function g(e) {
 function E(e) {
   return new Promise(t => {
     _[e] = t, (0, d.x)(e).then(() => {
-      m(e), l.Z.finishOnboarding(e)
+      h(e), l.Z.finishOnboarding(e)
     }), (0, s.uL)(f.Z5c.CHANNEL(e, p.oC.GUILD_ONBOARDING))
   })
 }

@@ -19,12 +19,12 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
 var _ = function(e) {
   return e.BLACK = "BLACK", e.GRAY = "GRAY", e
 }({});
-let m = {
+let h = {
   BLACK: Chunk644887.black,
   GRAY: Chunk644887.gray
 };
 
-function h(e) {
+function m(e) {
   return Math.round(e / p) * p
 }
 
@@ -40,8 +40,8 @@ function g(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => null != E ? h(E) : 0, [E]), y = i.useMemo(() => {
-    let e = Math.abs(h(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
+  } = (0, c.ZP)(), b = i.useMemo(() => null != E ? m(E) : 0, [E]), y = i.useMemo(() => {
+    let e = Math.abs(m(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
     return {
       transform: "translateX(".concat(e, "px)")
     }
@@ -60,7 +60,7 @@ function g(e) {
         style: y
       }), 0 !== b && (0, r.jsx)(u.Z, {
         width: b,
-        className: o()(f.notches, m[t], p)
+        className: o()(f.notches, h[t], p)
       })]
     }), _]
   })

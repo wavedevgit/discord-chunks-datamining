@@ -51,11 +51,11 @@ function _() {
   u = {}
 }
 
-function m() {
+function h() {
   u = {}
 }
 
-function h(e) {
+function m(e) {
   let {
     settings: t
   } = e;
@@ -100,8 +100,8 @@ l(b, "displayName", "UserSettingsOverridesStore"), l(b, "persistKey", "UserSetti
 }]);
 let y = new b(Chunk570140.Z, {
   USER_SETTINGS_PROTO_UPDATE: E,
-  USER_SETTINGS_OVERRIDE_APPLY: h,
+  USER_SETTINGS_OVERRIDE_APPLY: m,
   USER_SETTINGS_OVERRIDE_CLEAR: g,
   LOGOUT: _,
-  LOGIN_SUCCESS: m
+  LOGIN_SUCCESS: h
 })

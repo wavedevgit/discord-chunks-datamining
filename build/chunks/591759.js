@@ -16,14 +16,14 @@ let d = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   f = /^.*\.discordapp\.net$/,
   p = /^.*\.media\.discordapp\.net$/,
   _ = new Set(["media.tenor.com", "media.tenor.co", "c.tenor.com", "static.klipy.com", "media.giphy.com", "i.giphy.com"]),
-  m = "(?:(?:[a-z]+:)?//)",
-  h = "(?:\\S+(?::\\S*)?@)?",
+  h = "(?:(?:[a-z]+:)?//)",
+  m = "(?:\\S+(?::\\S*)?@)?",
   g = i().v4().source,
   E = "(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+",
   b = "(?:(?:[a-z\\u00a1-\\uffff]{2,}))",
   y = "(?::\\d{2,5})?",
   O = '(?:[/?#][^\\s"]*)?',
-  v = RegExp("(?:".concat(m, "|www\\.)").concat(h, "(?:localhost|").concat(g, "|").concat(E).concat(b, ")").concat(y).concat(O), "ig"),
+  v = RegExp("(?:".concat(h, "|www\\.)").concat(m, "(?:localhost|").concat(g, "|").concat(E).concat(b, ")").concat(y).concat(O), "ig"),
   S = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]);
 
 function I(e, t) {
@@ -55,14 +55,14 @@ function P(e, t, n) {
   return null != r && (!!(0, l.ii)() && ("localhost" === r.hostname || "127.0.0.1" === r.hostname) && "4000" === r.port || p.test(r.hostname))
 }
 
-function R(e) {
+function w(e) {
   if (null == e) returnfalse;
   let t = c.Z.toURLSafe(e);
   return null != t && _.has(t.hostname)
 }
 
-function w(e, t, n) {
-  return !!(N(e) || P(e, t, n) || R(e))
+function R(e, t, n) {
+  return !!(N(e) || P(e, t, n) || w(e))
 }
 
 function D(e) {
@@ -97,8 +97,8 @@ let L = {
   },
   isDiscordDirectAssetUrl: N,
   isDiscordProxiedAssetUrl: P,
-  isAllowedGifProviderUrl: R,
-  isDiscordAssetUrl: w,
+  isAllowedGifProviderUrl: w,
+  isDiscordAssetUrl: R,
   isDiscordUrlOrUri: e => D(e) || x(e),
   isAppRoute: e => {
     let t = e.toLowerCase();

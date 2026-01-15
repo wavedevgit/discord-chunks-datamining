@@ -17,7 +17,7 @@ var r, Chunk512722 = require("./512722.js"),
   Chunk48481 = require("./48481.js"),
   Chunk526761 = require("./526761.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -65,7 +65,7 @@ function v(e) {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
-  } = (0, _.xt)(E.proto, p.Z[m.yP.PRELOADED_USER_SETTINGS]);
+  } = (0, _.xt)(E.proto, p.Z[h.yP.PRELOADED_USER_SETTINGS]);
   r && C(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
   }), T()
@@ -77,7 +77,7 @@ function S() {
 
 function I() {
   T(), Object.values(y).forEach(e => {
-    e.proto = e.ProtoClass.create(), e.editInfo = (0, m.JC)()
+    e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
   })
 }
 
@@ -91,7 +91,7 @@ function T() {
 }
 
 function C(e) {
-  null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, m.JC)()
+  null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, h.JC)()
 }
 
 function A(e) {
@@ -128,14 +128,14 @@ function P(e) {
   return r.editInfo = g({}, r.editInfo, n), false
 }
 
-function R(e) {
+function w(e) {
   let {
     userSettings: t
   } = e;
-  w(t)
+  R(t)
 }
 
-function w(e) {
+function R(e) {
   null != e && s().forEach(y, (t, n) => {
     var r, i;
     let o = e[Number(n)];
@@ -152,7 +152,7 @@ function w(e) {
 }
 class D extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    w(e)
+    R(e)
   }
   getState() {
     return this.computeState()
@@ -214,9 +214,9 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = null == (e = this.settings.guilds) ? true : e.guilds) ? t : null
   }
 }
-h(D, "displayName", "UserSettingsProtoStore"), h(D, "persistKey", "UserSettingsProtoStore-Cache");
+m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
 let x = new D(Chunk570140.Z, {
-  CACHE_LOADED: R,
+  CACHE_LOADED: w,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,
   USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: P,

@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -151,7 +151,7 @@ function I(e) {
       icon: c,
       tooltipText: u
     }, o);
-  return 0 === d.length ? (0, r.jsx)(s.ef, h(_({}, p), {
+  return 0 === d.length ? (0, r.jsx)(s.ef, m(_({}, p), {
     disabled: true
   })) : (0, r.jsx)(l.Z, {
     targetElementRef: f,
@@ -179,7 +179,7 @@ function T(e) {
       icon: c,
       tooltipText: u
     }, o);
-  return 0 === d.length ? (0, r.jsx)(s.oY, h(_({}, p), {
+  return 0 === d.length ? (0, r.jsx)(s.oY, m(_({}, p), {
     disabled: true
   })) : (0, r.jsx)(l.Z, {
     targetElementRef: f,
@@ -201,7 +201,7 @@ function C(e) {
   let {
     tooltipText: f,
     onMouseEnter: p,
-    ariaLabel: m,
+    ariaLabel: h,
     icon: E
   } = (0, c.N)({
     gameFriends: n,
@@ -213,10 +213,10 @@ function C(e) {
   }), y = i.useRef(null), O = _({
     icon: E,
     __unsupportedReactNodeAsText: f,
-    "aria-label": m,
+    "aria-label": h,
     onMouseEnter: p
   }, d);
-  return 0 === b.length ? (0, r.jsx)(s.ef, h(_({}, O), {
+  return 0 === b.length ? (0, r.jsx)(s.ef, m(_({}, O), {
     disabled: true
   })) : (0, r.jsx)(l.Z, {
     targetElementRef: y,
@@ -226,7 +226,7 @@ function C(e) {
         var t;
         null == p || p(), null == (t = e.onMouseEnter) || t.call(e)
       };
-      return (0, r.jsx)(s.ef, h(_({
+      return (0, r.jsx)(s.ef, m(_({
         buttonRef: y
       }, e, O), {
         onMouseEnter: t
@@ -246,7 +246,7 @@ function A(e) {
   let {
     tooltipText: f,
     onMouseEnter: p,
-    ariaLabel: m,
+    ariaLabel: h,
     icon: E
   } = (0, c.N)({
     gameFriends: n,
@@ -258,10 +258,10 @@ function A(e) {
   }), y = i.useRef(null), O = _({
     icon: E,
     __unsupportedReactNodeAsText: f,
-    "aria-label": m,
+    "aria-label": h,
     onMouseEnter: p
   }, d);
-  return 0 === b.length ? (0, r.jsx)(s.oY, h(_({
+  return 0 === b.length ? (0, r.jsx)(s.oY, m(_({
     tooltipPosition: "left",
     tooltipAlign: "top"
   }, O), {
@@ -274,7 +274,7 @@ function A(e) {
         var t;
         null == p || p(), null == (t = e.onMouseEnter) || t.call(e)
       };
-      return (0, r.jsx)(s.oY, h(_({
+      return (0, r.jsx)(s.oY, m(_({
         buttonRef: y,
         tooltipPosition: "left",
         tooltipAlign: "top"

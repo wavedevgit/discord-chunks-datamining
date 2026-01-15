@@ -36,6 +36,6 @@ let c = (0, Chunk509613.k4)(Chunk313789.n.AUTHORIZED_APPS_CATEGORY, {
   _ = (0, Chunk509613.m7)(Chunk313789.n.AUTHORIZED_APPS_SIDEBAR_ITEM, {
     useTitle: () => S.intl.string(S.t["f6kk+r"]),
     getLegacySearchKey: () => (0, r.Gl)("AuthorizedAppsPanel") ? true : T.s6.AUTHORIZED_APPS,
-    icon: Chunk657707.jje,
+    icon: Chunk657707.AppsIcon,
     buildLayout: () => (0, r.Gl)("AuthorizedAppsPanel") ? [d] : [E]
   })

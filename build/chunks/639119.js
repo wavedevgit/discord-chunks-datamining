@@ -15,10 +15,10 @@ function l(e) {
   let f = (0, o.w)(s.i_),
     p = (0, o.w)(s.Cn),
     _ = (0, o.w)(i.Z.getAnyOfUserTrialOfferId([s.wh, s.AU, s.TL, s.ET])),
-    m = (0, o.w)(s.C2),
-    h = (0, o.w)(s.Rt),
+    h = (0, o.w)(s.C2),
+    m = (0, o.w)(s.Rt),
     g = (0, o.w)(s.a7),
     E = (0, o.w)(s.jz),
     b = (0, r.e7)([a.Z], () => true === e ? null : a.Z.getRelevantUserTrialOffer(e));
-  return null != (d = null != (u = null != (c = null != (l = null != (n = null != (t = null != g ? g : b) ? t : E) ? n : f) ? l : p) ? c : _) ? u : m) ? d : h
+  return null != (d = null != (u = null != (c = null != (l = null != (n = null != (t = null != g ? g : b) ? t : E) ? n : f) ? l : p) ? c : _) ? u : h) ? d : m
 }

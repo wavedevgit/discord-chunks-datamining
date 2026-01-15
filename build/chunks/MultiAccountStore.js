@@ -4,7 +4,7 @@
 let r, i;
 require.d(exports, {
   Z: () => P,
-  q: () => h
+  q: () => m
 }), require("./539854.js");
 var a, Chunk213919 = require("./213919.js"),
   Chunk442837 = require("./442837.js"),
@@ -46,12 +46,12 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var h = function(e) {
+var m = function(e) {
   return e[e.INVALID = 0] = "INVALID", e[e.VALIDATING = 1] = "VALIDATING", e[e.VALID = 2] = "VALID", e
 }({});
 let g = [],
@@ -145,7 +145,7 @@ function C(e) {
     userId: t,
     pushSyncToken: n
   } = e;
-  g = g.map(e => e.id === t ? m(p({}, e), {
+  g = g.map(e => e.id === t ? h(p({}, e), {
     pushSyncToken: n
   }) : e)
 }
@@ -154,7 +154,7 @@ function A(e) {
   let {
     invalidPushSyncTokens: t
   } = e;
-  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? m(p({}, e), {
+  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? h(p({}, e), {
     pushSyncToken: null
   }) : e)
 }

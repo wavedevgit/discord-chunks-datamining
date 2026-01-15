@@ -2,7 +2,7 @@
 /** chunk id: 631885, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AZ: () => m,
+  AZ: () => h,
   M8: () => b,
   Rd: () => y,
   VM: () => g,
@@ -10,7 +10,7 @@ require.d(exports, {
   gU: () => E,
   j_: () => O,
   ov: () => f,
-  rW: () => h,
+  rW: () => m,
   zu: () => _
 }), require("./642613.js");
 var Chunk473749 = require("./473749.js"),
@@ -38,9 +38,9 @@ function p() {
 function _() {
   return f(u.ne.ACTIVE)
 }
-let m = () => p().length > 0;
+let h = () => p().length > 0;
 
-function h() {
+function m() {
   let e = (0, i.e7)([o.Z], () => o.Z.getLinkCode()),
     t = (0, i.e7)([a.default], () => a.default.getCurrentUser());
   return null == e || null == t ? null : (0, u._w)(t.id, e)

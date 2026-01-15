@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   W: () => f,
-  Z: () => h
+  Z: () => m
 }), require("./361932.js"), require("./187205.js"), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -54,7 +54,7 @@ function _(e) {
   }, [d, n])
 }
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     numItems: n,
@@ -86,7 +86,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     numWishlistItems: n = f,
@@ -96,9 +96,9 @@ function h(e) {
     includeWishlists: l = false
   } = e, c = (0, u.cZ)({
     location: i
-  }), d = null != s && s.length > 0, [p, h] = r.useState(s);
+  }), d = null != s && s.length > 0, [p, m] = r.useState(s);
   r.useEffect(() => {
-    h(e => null == e ? s : (0, a.E)(e, s) ? e : s)
+    m(e => null == e ? s : (0, a.E)(e, s) ? e : s)
   }, [s]);
   let {
     state: g,
@@ -113,7 +113,7 @@ function h(e) {
   }), y = d && "error" !== g, {
     state: O,
     recommendations: v
-  } = m({
+  } = h({
     guildId: t,
     numItems: n,
     isEligible: !y && c

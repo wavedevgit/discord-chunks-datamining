@@ -20,15 +20,15 @@ let l = (0, Chunk473749.createContext)({}),
       isReadOnly: f,
       onHoverStart: p,
       onHoverChange: _,
-      onHoverEnd: m,
-      ...h
+      onHoverEnd: h,
+      ...m
     } = e, {
       hoverProps: g,
       isHovered: E
     } = (0, i.X)({
       onHoverStart: p,
       onHoverChange: _,
-      onHoverEnd: m,
+      onHoverEnd: h,
       isDisabled: u
     }), {
       isFocused: b,
@@ -50,7 +50,7 @@ let l = (0, Chunk473749.createContext)({}),
       defaultClassName: "react-aria-Group"
     });
     return s.createElement("div", {
-      ...(0, o.d)(h, O, g),
+      ...(0, o.d)(m, O, g),
       ...v,
       ref: t,
       role: null != (n = e.role) ? n : "group",

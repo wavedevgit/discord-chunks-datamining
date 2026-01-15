@@ -46,7 +46,7 @@ let S = e => {
       accessibilityLabel: s,
       thumbnailPreviewSrc: l,
       title: c
-    } = null != (t = null == o ? true : o.config) ? t : {}, u = i.useMemo(() => (0, m.JE)(l), [l]);
+    } = null != (t = null == o ? true : o.config) ? t : {}, u = i.useMemo(() => (0, h.JE)(l), [l]);
     return null == o ? a : (0, r.jsxs)("div", {
       className: b.profileEffectContainer,
       children: [(0, r.jsx)("img", {
@@ -70,7 +70,7 @@ let S = e => {
       onMouseEnter: s,
       onMouseLeave: l,
       children: (0, r.jsx)(d.Z, {
-        nameplate: (0, h.E)(t),
+        nameplate: (0, m.E)(t),
         hovered: a,
         placement: u.i.MINI_PREVIEW
       })

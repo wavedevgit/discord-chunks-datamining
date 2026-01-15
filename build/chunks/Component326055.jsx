@@ -60,7 +60,7 @@ function v(e) {
     P = p.Rx[k.skuId],
     w = null != P ? p.Cp[P] : null,
     N = (0, o.e7)([i.Z], () => i.Z.getStateForGuild(v)),
-    E = null != w ? null == N ? true : N.allPowerups[w] : null;
+    I = null != w ? null == N ? true : N.allPowerups[w] : null;
   return (0, r.jsxs)(l.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -104,11 +104,11 @@ function v(e) {
             className: h.description,
             variant: "text-sm/normal",
             children: k.description
-          }), null != E && (0, r.jsx)(l.Text, {
+          }), null != I && (0, r.jsx)(l.Text, {
             className: h.description,
             variant: "text-sm/normal",
             children: j.intl.formatToPlainString(x.default.NAFGkH, {
-              level: E.title
+              level: I.title
             })
           }), (0, r.jsx)(f.q, {
             powerup: k

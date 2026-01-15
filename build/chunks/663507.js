@@ -81,10 +81,10 @@ class c {
     }, this.currentRow = 0, this.lastColumnIndex = 0;
     let p = this.getPaddingTop(),
       _ = this.getPaddingBottom(),
-      m = this.getPaddingLeft(),
-      h = this.getPaddingRight(),
+      h = this.getPaddingLeft(),
+      m = this.getPaddingRight(),
       g = null != (e = this.marginLeft) ? e : 0;
-    this.columnHeights = Array(n).fill(p), this.columnWidth = (u - h - m - l * (n - 1) - (d ? l : 0)) / n, this.itemGrid = [];
+    this.columnHeights = Array(n).fill(p), this.columnWidth = (u - m - h - l * (n - 1) - (d ? l : 0)) / n, this.itemGrid = [];
     let E = 0;
     for (; E < this.sections.length;) {
       this.gridData.boundaries[E] = this.currentRow, this.currentRow = 0, this.lastColumnIndex = 0;
@@ -106,7 +106,7 @@ class c {
         let a = o(E, u, this.columnWidth),
           c = {
             position: "absolute",
-            [f]: this.columnWidth * i + l * (i + 1) - l + m,
+            [f]: this.columnWidth * i + l * (i + 1) - l + h,
             width: this.columnWidth,
             top: n - p,
             height: a
@@ -120,14 +120,14 @@ class c {
       }
       d > 0 && (this.coordsMap[a(E)] = {
         position: "sticky",
-        [f]: m,
+        [f]: h,
         width: this.columnWidth * n + l * n,
         top: 0,
         height: d
       }), this.coordsMap[i(E)] = {
         position: "absolute",
         [f]: g,
-        width: this.columnWidth * n + l * (n - 1) + m + h,
+        width: this.columnWidth * n + l * (n - 1) + h + m,
         top: p,
         height: this.getMaxColumnHeight(this.columnHeights) - p
       }, E++

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   kq: () => g,
-  vy: () => h
+  vy: () => m
 });
 var Chunk392711 = require("./392711.js"),
   Chunk544891 = require("./544891.js"),
@@ -18,7 +18,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js");
 
-function m(e) {
+function h(e) {
   let t = new AbortController,
     n = (0, r.throttle)(n => {
       c.Z.getVoiceChannelId() !== e && t.abort()
@@ -29,18 +29,18 @@ function m(e) {
   }
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   var r;
   let {
     abortController: o,
     onRequestProgress: c
-  } = m(e), _ = null != (r = u.Z.getState().animationType) ? r : f.q.BASIC, h = {
+  } = h(e), _ = null != (r = u.Z.getState().animationType) ? r : f.q.BASIC, m = {
     animation_type: _,
     animation_id: (0, d.Iu)(_, d.v)
   };
   i.tn.post({
     url: p.ANM.CUSTOM_CALL_SOUNDS(e),
-    body: h,
+    body: m,
     signal: o.signal,
     onRequestProgress: c,
     rejectWithError: true
@@ -55,15 +55,15 @@ function g(e, t, n, r, a) {
     {
       abortController: d,
       onRequestProgress: f
-    } = m(e),
-    h = {
+    } = h(e),
+    m = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
       emoji_name: null != (c = t.emojiName) ? c : null == u ? true : u.name
     };
-  t.guildId !== _.X8 && (h.source_guild_id = t.guildId), i.tn.post({
+  t.guildId !== _.X8 && (m.source_guild_id = t.guildId), i.tn.post({
     url: p.ANM.SEND_SOUNDBOARD_SOUND(e),
-    body: h,
+    body: m,
     signal: d.signal,
     onRequestProgress: f,
     rejectWithError: true

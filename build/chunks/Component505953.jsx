@@ -72,7 +72,7 @@ function A(e) {
     guildId: S,
     unread: T,
     onClick: A
-  } = e, [N, P] = i.useState(false), R = (0, u.Ye)(m.default.extractTimestamp(t.startId)), w = (0, a.e7)([h.Z], () => h.Z.summaryFeedback(t)), D = (e, n) => {
+  } = e, [N, P] = i.useState(false), w = (0, u.Ye)(h.default.extractTimestamp(t.startId)), R = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
       channel: f,
@@ -106,7 +106,7 @@ function A(e) {
           className: v.timestamp,
           color: "interactive-text-default",
           variant: "text-xs/normal",
-          children: R
+          children: w
         }), (0, r.jsx)(l.Z, {
           height: 4,
           width: 4,
@@ -138,7 +138,7 @@ function A(e) {
           })]
         })]
       })
-    }), N && !w && (0, r.jsxs)("div", {
+    }), N && !R && (0, r.jsxs)("div", {
       className: v.feedbackContainer,
       children: [(0, r.jsx)(o.P3F, {
         onClick: e => D(e, O.aZ.GOOD),
@@ -188,7 +188,7 @@ function N(e) {
         channel: o,
         members: a,
         guildId: o.guild_id,
-        unread: null != c && m.default.compare(e.endId, c) > 0,
+        unread: null != c && h.default.compare(e.endId, c) > 0,
         onClick: () => u(t)
       }, t)
     })

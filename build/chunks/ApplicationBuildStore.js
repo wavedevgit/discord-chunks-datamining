@@ -38,11 +38,11 @@ let v = new Set,
   A = {},
   N = 10 * Chunk70956.Z.Millis.MINUTE,
   P = 6 * Chunk70956.Z.Millis.HOUR,
-  R = 10 * Chunk70956.Z.Millis.MINUTE,
-  w = new Chunk846519.V7;
+  w = 10 * Chunk70956.Z.Millis.MINUTE,
+  R = new Chunk846519.V7;
 
 function D(e) {
-  w.start(e + Math.random() * N, c.o)
+  R.start(e + Math.random() * N, c.o)
 }
 
 function x() {
@@ -51,7 +51,7 @@ function x() {
 
 function L() {
   if (!(0, y.Q)() || p.bm.getSetting()) returnfalse;
-  let e = m.Z.entitledBranchIds,
+  let e = h.Z.entitledBranchIds,
     t = [];
   for (let n of e) A.hasOwnProperty(n) || (A[n] = null, t.push(n));
   if (0 === t.length) returnfalse;
@@ -73,7 +73,7 @@ function M(e, t) {
   if (null != S[t] && g.Z.shouldBeInstalled(e, t)) {
     let n = S[t],
       r = n.manifestIds,
-      i = h.Z.getState(e, t);
+      i = m.Z.getState(e, t);
     null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
       let i = f.Z.getApplication(e);
       null != i ? (C.delete((0, b.Tu)(e, t)), (0, d.li)(i, t, n.id, r, true)) : C.add((0, b.Tu)(e, t))
@@ -145,8 +145,8 @@ function V(e) {
   let {
     branches: t
   } = e, n = {};
-  for (let e in m.Z.libraryApplications) {
-    let t = m.Z.libraryApplications[e];
+  for (let e in h.Z.libraryApplications) {
+    let t = h.Z.libraryApplications[e];
     n[t.branchId] = t
   }
   for (let e of t) {
@@ -164,11 +164,11 @@ function V(e) {
 }
 
 function H() {
-  D(R)
+  D(w)
 }
 
 function Y() {
-  w.stop()
+  R.stop()
 }
 
 function W(e) {
@@ -178,14 +178,14 @@ function W(e) {
   if (!(0, y.Q)()) returnfalse;
   let n = new Set;
   for (let e of t) n.add(e.application_id);
-  for (let e in m.Z.libraryApplications) {
-    let t = m.Z.libraryApplications[e];
+  for (let e in h.Z.libraryApplications) {
+    let t = h.Z.libraryApplications[e];
     n.has(t.id) && (0, b.Je)(t) && l.Z.wait(() => u.l(t.id, t.branchId))
   }
 }
 class K extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([m.Z], L), this.waitFor(f.Z, h.Z, g.Z, m.Z, _.Z)
+    this.syncWith([h.Z], L), this.waitFor(f.Z, m.Z, g.Z, h.Z, _.Z)
   }
   getTargetBuildId(e, t) {
     return null == S[t] ? null : S[t].id

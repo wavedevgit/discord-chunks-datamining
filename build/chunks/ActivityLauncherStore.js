@@ -35,9 +35,9 @@ function d(e) {
 let f = {},
   p = {},
   _ = 12e4,
-  m = 15e3;
+  h = 15e3;
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t,
     activityType: n
@@ -70,7 +70,7 @@ function E(e, t, n) {
   s[t] = {
     state: e,
     remotePartyId: o
-  }, f[a] = s, __OVERLAY__ || e !== c.OcF.FAILED ? e === c.OcF.LOADING && null != o && g(a, t, m) : g(a, t, _)
+  }, f[a] = s, __OVERLAY__ || e !== c.OcF.FAILED ? e === c.OcF.LOADING && null != o && g(a, t, h) : g(a, t, _)
 }
 
 function b(e) {
@@ -131,5 +131,5 @@ let S = new v(Chunk570140.Z, {
   ACTIVITY_JOIN_FAILED: e => E(c.OcF.FAILED, c.mFx.JOIN, e),
   ACTIVITY_JOIN: y,
   EMBEDDED_ACTIVITY_CLOSE: y,
-  ACTIVITY_LAUNCH_FAIL: h
+  ACTIVITY_LAUNCH_FAIL: m
 })

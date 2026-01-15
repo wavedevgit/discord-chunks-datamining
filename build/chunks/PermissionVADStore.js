@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = true,
-  h = true,
+let h = true,
+  m = true,
   g = true;
 
 function E(e) {
@@ -47,11 +47,11 @@ function b() {
   }
   let r = e || !n,
     i = e || n;
-  if (m === e && h === i) returnfalse;
-  g = r, m = r, h = i, a.Z.dispatch({
+  if (h === e && m === i) returnfalse;
+  g = r, h = r, m = i, a.Z.dispatch({
     type: "SET_VAD_PERMISSION",
-    hasPermission: m,
-    hasLatchPermission: h
+    hasPermission: h,
+    hasLatchPermission: m
   })
 }
 
@@ -72,7 +72,7 @@ function O() {
 }
 
 function v() {
-  g = m
+  g = h
 }
 class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -82,10 +82,10 @@ class S extends(r = Chunk442837.ZP.Store) {
     return !g
   }
   canUseVoiceActivity() {
-    return m
+    return h
   }
   canUseLatching() {
-    return h
+    return m
   }
 }
 _(S, "displayName", "PermissionVADStore");

@@ -60,10 +60,10 @@ let f = {},
       claimedBy: null
     }) : t), f[e.roomId] = n
   },
-  m = e => {
+  h = e => {
     console.log("HAVEN_UPDATE", e), f[e.room.roomId] = e.room
   },
-  h = e => {
+  m = e => {
     r = e.assets
   };
 class g extends(i = Chunk442837.ZP.Store) {
@@ -91,6 +91,6 @@ l(g, "displayName", "HavenStore");
 let E = new g(Chunk570140.Z, {
   HAVEN_CONNECT: p,
   HAVEN_DISCONNECT: _,
-  HAVEN_UPDATE: m,
-  HAVEN_GOT_ASSETS: h
+  HAVEN_UPDATE: h,
+  HAVEN_GOT_ASSETS: m
 })

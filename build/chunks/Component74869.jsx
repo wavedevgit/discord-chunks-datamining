@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk878209 = require("./878209.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -120,10 +120,10 @@ function O() {
         system: n.system
       }
     })
-  }, [e, t, n, a]), [c, f] = i.useState(""), [p, h] = i.useState([]);
+  }, [e, t, n, a]), [c, f] = i.useState(""), [p, m] = i.useState([]);
   i.useEffect(() => {
-    if (0 === c.trim().length) return void h(l);
-    h(l.filter(e => o()(c, e.experiment.title.toLowerCase())))
+    if (0 === c.trim().length) return void m(l);
+    m(l.filter(e => o()(c, e.experiment.title.toLowerCase())))
   }, [l, c]);
   let E = i.useMemo(() => l.filter(e => {
       let {
@@ -145,7 +145,7 @@ function O() {
         query: c,
         onChange: f,
         ref: t,
-        placeholder: m.intl.string(m.t["5h0QOP"])
+        placeholder: h.intl.string(h.t["5h0QOP"])
       }))
     }, "experiments-search");
   return v.length > 0 ? [(0, r.jsx)(s.kSQ, {

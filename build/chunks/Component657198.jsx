@@ -78,9 +78,9 @@ function v(e, t, n) {
       let f = {};
       if (l > 0) {
         let e;
-        e = c > 0 ? h.intl.formatToPlainString(h.t.BP8N0K, {
+        e = c > 0 ? m.intl.formatToPlainString(m.t.BP8N0K, {
           count: l
-        }) : h.intl.formatToPlainString(h.t.lziVC9, {
+        }) : m.intl.formatToPlainString(m.t.lziVC9, {
           count: l
         }), f["data-trailing-placeholder"] = e
       }
@@ -122,13 +122,13 @@ let S = e => {
     }, [n, a.optionName]),
     C = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
     A = a.children[a.children.length - 1],
-    N = null != A && m.LC.isText(A) && A.text.endsWith("\n"),
+    N = null != A && h.LC.isText(A) && A.text.endsWith("\n"),
     P = o()(g.inlineElement, g.optionPill, {
       [g.selectedPill]: v && y,
       [g.erroredPill]: (!v || !y) && T
     }),
-    R = i.useCallback(() => {
-      m.bN.isVoid(S, a) || _.Q.selectCommandOption(S, a.optionName, true)
+    w = i.useCallback(() => {
+      h.bN.isVoid(S, a) || _.Q.selectCommandOption(S, a.optionName, true)
     }, [S, a]);
   return t = I === c.jw.ATTACHMENT ? (null == C ? true : C.filename) != null ? (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.attachmentFilename),
@@ -137,7 +137,7 @@ let S = e => {
   }) : (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.readonlyPillValue),
     contentEditable: false,
-    children: [h.intl.string(h.t.GRdFni), E]
+    children: [m.intl.string(m.t.GRdFni), E]
   }) : (0, r.jsxs)("span", {
     className: g.optionPillValue,
     children: [E, N ? (0, r.jsx)("span", {
@@ -149,7 +149,7 @@ let S = e => {
     children: [(0, r.jsxs)("span", {
       className: g.optionPillKey,
       contentEditable: false,
-      onClick: R,
+      onClick: w,
       children: [a.optionDisplayName, "​"]
     }), t, (0, r.jsx)("span", {
       contentEditable: false,

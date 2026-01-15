@@ -6,12 +6,12 @@ require.d(exports, {
   Ni: () => X,
   Pr: () => et,
   Qe: () => ed,
-  WK: () => eh,
+  WK: () => em,
   ZP: () => ey,
   _m: () => eg,
   co: () => eb,
   fx: () => K,
-  mh: () => em
+  mh: () => eh
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./781311.js"), require("./804061.js"), require("./704826.js"), require("./539854.js"), require("./290780.js"), require("./642613.js");
 var Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722),
@@ -61,7 +61,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,8 +72,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -131,7 +131,7 @@ function W(e) {
 function K(e) {
   let t, n = e.getMatch(1),
     r = e => null != e ? null == e ? true : e.id : null;
-  return null != (t = C.Xyh.test(n) ? n : r(n === C.ME ? h.default.getCurrentUser() : null != e.getMatch(4) ? h.default.findByTag(e.getMatch(4)) : h.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), true)
+  return null != (t = C.Xyh.test(n) ? n : r(n === C.ME ? m.default.getCurrentUser() : null != e.getMatch(4) ? m.default.findByTag(e.getMatch(4)) : m.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), true)
 }
 
 function z(e, t) {
@@ -160,10 +160,10 @@ function q(e, t, n) {
 
 function Q(e, t) {
   let n = Object.values(d.Z.getMutablePrivateChannels()).filter(e => {
-    if (e.isGroupDM() && t === (0, u.F6)(e, h.default, p.Z)) returntrue;
+    if (e.isGroupDM() && t === (0, u.F6)(e, m.default, p.Z)) returntrue;
     if (e.isDM()) {
       let n = e.getRecipientId(),
-        r = h.default.getUser(n);
+        r = m.default.getUser(n);
       return null != r && t === b.ZP.getUserTag(r)
     }
     returnfalse
@@ -173,7 +173,7 @@ function Q(e, t) {
 
 function X(e, t) {
   let n = e.getMatch(1);
-  return C.Xyh.test(n) ? (e.setData("channelIds", [n]), true) : (n.startsWith('"') && n.endsWith('"') && (n = n.substring(1, n.length - 1).replaceAll(/\\(.)/g, (e, t) => t)), (0, v.b7)(t)) ? q(e, n, t.guildId) : t.type === C.aib.DMS && !m.Z.hidePersonalInformation && Q(e, n)
+  return C.Xyh.test(n) ? (e.setData("channelIds", [n]), true) : (n.startsWith('"') && n.endsWith('"') && (n = n.substring(1, n.length - 1).replaceAll(/\\(.)/g, (e, t) => t)), (0, v.b7)(t)) ? q(e, n, t.guildId) : t.type === C.aib.DMS && !h.Z.hidePersonalInformation && Q(e, n)
 }
 
 function J(e) {
@@ -209,7 +209,7 @@ function et() {
 }
 
 function en(e, t, n) {
-  return er(e, t, ee()).map(e => w(P({}, e), {
+  return er(e, t, ee()).map(e => R(P({}, e), {
     group: n,
     key: "".concat(n, "-").concat(e.text)
   }))
@@ -239,9 +239,9 @@ function ei(e) {
     if (null != t)
       if (t.isDM()) {
         let e = t.getRecipientId();
-        r(h.default.getUser(e))
+        r(m.default.getUser(e))
       } else t.isGroupDM() && t.recipients.forEach(e => {
-        r(h.default.getUser(e))
+        r(m.default.getUser(e))
       })
   }), i
 }
@@ -277,33 +277,33 @@ function ea(e) {
             record: t
           } = e;
           return i(t)
-        }), O.Z.getRecentMessageAuthorIds(n.guildId).forEach(e => i(h.default.getUser(e))), e.slice(0, r)
+        }), O.Z.getRecentMessageAuthorIds(n.guildId).forEach(e => i(m.default.getUser(e))), e.slice(0, r)
       }
-      o = g.ZP.queryGuildUsers(w(P({}, a), {
+      o = g.ZP.queryGuildUsers(R(P({}, a), {
         guildId: n.guildId
       }));
       break;
     case C.aib.CHANNEL:
-      o = g.ZP.queryChannelUsers(w(P({}, a), {
+      o = g.ZP.queryChannelUsers(R(P({}, a), {
         channelId: n.channelId
       }));
       break;
     case C.aib.DMS:
       let s = ei(null != i ? i : []);
       if (null != s && s.length > 0) {
-        let e = h.default.getCurrentUser();
-        null != e && s.push(e), o = g.ZP.queryUsers(w(P({}, a), {
+        let e = m.default.getCurrentUser();
+        null != e && s.push(e), o = g.ZP.queryUsers(R(P({}, a), {
           users: s,
           boosters: (0, g.Cq)(c.h8.USER)
         }))
-      } else o = g.ZP.queryAllUsers(w(P({}, a), {
+      } else o = g.ZP.queryAllUsers(R(P({}, a), {
         boosters: (0, g.Cq)(c.h8.USER)
       }));
       break;
     default:
       return []
   }
-  let l = h.default.getCurrentUser(),
+  let l = m.default.getCurrentUser(),
     u = t.toLowerCase().replace(/^@/, ""),
     d = null != l && t.length > 0 && (A.intl.string(A.t.Qf3ptv).startsWith(u) || C.ME.substr(1).startsWith(u)),
     f = o.filter(e => {
@@ -327,7 +327,7 @@ function ea(e) {
 }
 
 function eo() {
-  return !m.Z.hidePersonalInformation
+  return !h.Z.hidePersonalInformation
 }
 
 function es(e, t, n) {
@@ -367,7 +367,7 @@ function es(e, t, n) {
         let e = a[n];
         a.splice(n, 1), a.unshift(e)
       } else if (t.isGroupDM()) {
-        let e = (0, u.F6)(t, h.default, p.Z);
+        let e = (0, u.F6)(t, m.default, p.Z);
         a.unshift({
           text: e,
           channel: t,
@@ -375,7 +375,7 @@ function es(e, t, n) {
         })
       } else if (t.isDM()) {
         let e = t.getRecipientId(),
-          n = h.default.getUser(e);
+          n = m.default.getUser(e);
         if (null != n) {
           let e = b.ZP.getUserTag(n);
           a.unshift({
@@ -439,7 +439,7 @@ function ec(e) {
     searchContext: n,
     maxResults: r
   } = e;
-  return ((t = t.trim()).startsWith('"') && t.endsWith('"') ? t = t.substring(1, t.length - 1).replaceAll(/\\(.)/g, (e, t) => t) : t.startsWith('"') && (t = t.substring(1).replaceAll(/\\(.)/g, (e, t) => t)), "#" === t[0] && (t = t.substring(1)), (0, v.b7)(n)) ? el(t, n.guildId, r) : n.type !== C.aib.DMS || m.Z.hidePersonalInformation ? [] : es(t, r, true)
+  return ((t = t.trim()).startsWith('"') && t.endsWith('"') ? t = t.substring(1, t.length - 1).replaceAll(/\\(.)/g, (e, t) => t) : t.startsWith('"') && (t = t.substring(1).replaceAll(/\\(.)/g, (e, t) => t)), "#" === t[0] && (t = t.substring(1)), (0, v.b7)(n)) ? el(t, n.guildId, r) : n.type !== C.aib.DMS || h.Z.hidePersonalInformation ? [] : es(t, r, true)
 }
 let eu = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
 var ed = function(e) {
@@ -661,13 +661,13 @@ function ep(e) {
 }
 let e_ = {};
 
-function em() {
+function eh() {
   return ep({
     type: C.aib.DMS
   })
 }
 
-function eh() {
+function em() {
   Object.assign(e_, ep())
 }
 

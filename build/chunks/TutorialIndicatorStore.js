@@ -50,8 +50,8 @@ function p(e, t) {
   }), e
 }
 let _ = {},
-  m = {},
-  h = true,
+  h = {},
+  m = true,
   g = {},
   E = false;
 
@@ -60,7 +60,7 @@ function b() {
 }
 
 function y() {
-  if (g = {}, !h)
+  if (g = {}, !m)
     for (let [e, t] of Object.entries(b())) {
       let n = false !== _[e];
       if (g[e] = n, n && null != t.prerequisites)
@@ -71,28 +71,28 @@ function y() {
 function O(e) {
   _ = p(d({}, _), {
     [e.tutorialId]: false
-  }), m = d({}, m), delete m[e.tutorialId], y()
+  }), h = d({}, h), delete h[e.tutorialId], y()
 }
 
 function v(e) {
-  m = p(d({}, m), {
+  h = p(d({}, h), {
     [e.tutorialId]: e.renderData
   })
 }
 
 function S(e) {
-  m = d({}, m), delete m[e.tutorialId]
+  h = d({}, h), delete h[e.tutorialId]
 }
 
 function I() {
-  h = true
+  m = true
 }
 
 function T(e) {
   let {
     tutorial: t
   } = e;
-  E = true, h = true, _ = {}, null != t && (h = t.indicators_suppressed, t.indicators_confirmed.forEach(e => _[e] = false)), y()
+  E = true, m = true, _ = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => _[e] = false)), y()
 }
 
 function C() {
@@ -107,13 +107,13 @@ class N extends(r = Chunk442837.ZP.Store) {
     y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(s.Z)
   }
   shouldShow(e) {
-    return !(!E || h || c.a || A(e)) && (g[e] || false)
+    return !(!E || m || c.a || A(e)) && (g[e] || false)
   }
   shouldShowAnyIndicators() {
-    return !h
+    return !m
   }
   getIndicators() {
-    return m
+    return h
   }
   getData() {
     return b()

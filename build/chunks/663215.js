@@ -25,7 +25,7 @@ var Chunk473749 = require("./473749.js"),
 
 function y(e, t) {
   return null != t && (e = t(e)), e.map((e, t) => ({
-    type: m.vB.SOUND,
+    type: h.vB.SOUND,
     sound: e,
     index: t
   }))
@@ -74,7 +74,7 @@ function v(e) {
     let n = y(null != (s = i.get(e.id)) ? s : [], o);
     n.length > 0 && t.push({
       categoryInfo: {
-        type: m.bg.GUILD,
+        type: h.bg.GUILD,
         guild: e,
         isNitroLocked: !a
       },
@@ -93,11 +93,11 @@ function S(e, t, n) {
     sortSoundsFn: s
   } = n, l = null != (r = a.get(t.id)) ? r : [], c = y(l, s), d = l.length < (0, u.nL)(t) && i, f = 0 === c.length;
   (d || f) && !o && c.push({
-    type: m.vB.ADD_SOUND,
+    type: h.vB.ADD_SOUND,
     guild: t
   }), o && f || e.push({
     categoryInfo: {
-      type: m.bg.GUILD,
+      type: h.bg.GUILD,
       guild: t,
       isNitroLocked: false
     },
@@ -110,9 +110,9 @@ function I(e, t) {
   var n;
   let r = null != (n = t.get(E.X8)) ? n : E.Hy;
   e.push({
-    key: m.bg.DEFAULTS,
+    key: h.bg.DEFAULTS,
     categoryInfo: {
-      type: m.bg.DEFAULTS
+      type: h.bg.DEFAULTS
     },
     items: y(r, g.l)
   })
@@ -122,9 +122,9 @@ function T(e) {
   let {
     filterOutEmptyCurrentGuild: t = false,
     moveDefaultsToBottom: n = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, o = arguments.length > 2 && true !== arguments[2] && arguments[2], u = (0, i.e7)([c.default], () => c.default.getCurrentUser()), y = d.ZP.isPremium(u, b.PremiumTypes.TIER_2), [T, C, N] = (0, i.Wu)([_.Z], () => [_.Z.getSounds(), _.Z.getFavorites(), _.Z.isFetching()]), P = (0, g.t)(), R = (0, h.h)(e, false), w = (0, i.Wu)([s.Z], () => {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, o = arguments.length > 2 && true !== arguments[2] && arguments[2], u = (0, i.e7)([c.default], () => c.default.getCurrentUser()), y = d.ZP.isPremium(u, b.PremiumTypes.TIER_2), [T, C, N] = (0, i.Wu)([_.Z], () => [_.Z.getSounds(), _.Z.getFavorites(), _.Z.isFetching()]), P = (0, g.t)(), w = (0, m.h)(e, false), R = (0, i.Wu)([s.Z], () => {
     let e = [];
-    return R.forEach(t => {
+    return w.forEach(t => {
       let n = s.Z.getGuild(t);
       null != n && e.push(n)
     }), e
@@ -159,23 +159,23 @@ function T(e) {
     }
     return O({
       sections: i,
-      guildIds: R,
+      guildIds: w,
       allSounds: T,
       potentialSoundIdsForSection: Array.from(C),
-      sectionType: m.bg.FAVORITES,
+      sectionType: h.bg.FAVORITES,
       sortSoundsFn: g.l
     }), j && O({
       sections: i,
-      guildIds: R,
+      guildIds: w,
       allSounds: T,
       potentialSoundIdsForSection: U,
-      sectionType: m.bg.RECENTLY_HEARD
+      sectionType: h.bg.RECENTLY_HEARD
     }), M && O({
       sections: i,
-      guildIds: R,
+      guildIds: w,
       allSounds: T,
       potentialSoundIdsForSection: k.map(e => e.soundId),
-      sectionType: m.bg.FREQUENTLY_USED
+      sectionType: h.bg.FREQUENTLY_USED
     }), true !== x && S(i, x, {
       currentGuildHasAddPermissions: L,
       allSounds: T,
@@ -183,13 +183,13 @@ function T(e) {
       sortSoundsFn: P
     }), n || D || I(i, T), v({
       sections: i,
-      guilds: w,
+      guilds: R,
       currentGuildId: null == x ? true : x.id,
       allSounds: T,
       hasNitro: y,
       sortSoundsFn: P
     }), (n || D) && I(i, T), i.forEach(t => {
-      t.categoryInfo.type === m.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
+      t.categoryInfo.type === h.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
       availableSounds: Array.from(T.values()).flat(),
@@ -200,14 +200,14 @@ function T(e) {
         lockedCustomSoundCount: r
       }
     }
-  }, [R, T, C, U, k, M, j, x, L, t, n, D, w, o, N, y, P])
+  }, [w, T, C, U, k, M, j, x, L, t, n, D, R, o, N, y, P])
 }
 
 function C(e, t, n) {
   return r.useMemo(() => n.length > 0 ? [{
-    key: m.bg.SEARCH,
+    key: h.bg.SEARCH,
     categoryInfo: {
-      type: m.bg.SEARCH
+      type: h.bg.SEARCH
     },
     items: y(t)
   }] : e, [e, n.length, t])

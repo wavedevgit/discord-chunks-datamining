@@ -12,8 +12,8 @@ var Chunk46015 = require("./46015.js"),
 module.exports = function(e, t, n, r, d, f) {
   var p = n + e.length,
     _ = r.length,
-    m = u;
-  return true !== d && (d = i(d), m = c), s(f, m, function(i, s) {
+    h = u;
+  return true !== d && (d = i(d), h = c), s(f, h, function(i, s) {
     var c;
     switch (o(s, 0)) {
       case "$":

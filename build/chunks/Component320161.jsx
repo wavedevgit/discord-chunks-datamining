@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -83,16 +83,16 @@ function S(e) {
     children: u,
     onCopy: f,
     "aria-label": p,
-    delay: m = O,
+    delay: h = O,
     dataMeticulousIgnore: E
-  } = e, [S, I] = i.useState(0), [T, C] = i.useState(false), [A, N] = i.useState(false), [P] = i.useState(() => new o.V7), [R] = i.useState(() => new o.V7);
+  } = e, [S, I] = i.useState(0), [T, C] = i.useState(false), [A, N] = i.useState(false), [P] = i.useState(() => new o.V7), [w] = i.useState(() => new o.V7);
   if (i.useEffect(() => () => {
-      P.stop(), R.stop()
-    }, [P, R]), !c.wS) return (0, r.jsx)(r.Fragment, {
+      P.stop(), w.stop()
+    }, [P, w]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: u({})
   });
-  let w = S >= v.length - 1,
-    D = w ? s.r6K.RED : s.r6K.GREEN,
+  let R = S >= v.length - 1,
+    D = R ? s.r6K.RED : s.r6K.GREEN,
     x = T ? D : s.r6K.PRIMARY,
     L = () => {
       var e;
@@ -100,7 +100,7 @@ function S(e) {
       let n = (0, a.clamp)(S - 1, 0, v.length - 1),
         i = null != (e = v[n]) ? e : v[0];
       return (0, r.jsx)(s.UkV, {
-        isShaking: w,
+        isShaking: R,
         children: i()
       })
     },
@@ -108,11 +108,11 @@ function S(e) {
       !A && T && t.phase === d.UkZ.LEAVE && C(false)
     },
     M = () => {
-      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(S + 1), N(true), C(true), P.start(b, () => N(false)), R.start(y, () => I(0))
+      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(S + 1), N(true), C(true), P.start(b, () => N(false)), w.start(y, () => I(0))
     };
   return (0, r.jsx)(s.aML, {
     text: L(),
-    delay: m,
+    delay: h,
     "aria-label": p,
     dataMeticulousIgnore: E,
     color: x,
@@ -123,7 +123,7 @@ function S(e) {
         onClick: t,
         onMouseEnter: n
       } = e;
-      return u(h(_({}, g(e, ["onClick", "onMouseEnter"])), {
+      return u(m(_({}, g(e, ["onClick", "onMouseEnter"])), {
         onClick: () => {
           null == t || t(), M()
         },

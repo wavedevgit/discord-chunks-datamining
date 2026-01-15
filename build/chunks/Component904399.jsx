@@ -22,7 +22,7 @@ function l(e) {
     searchQuery: f = "",
     emptySearchContent: p,
     className: _
-  } = e, m = (0, i.O)(e => {
+  } = e, h = (0, i.O)(e => {
     e && !c && (null == u || u())
   });
   return f.length > 0 && 0 === t.length && null != p ? (0, r.jsxs)("div", {
@@ -46,7 +46,7 @@ function l(e) {
         l(e, t)
       }
     }, e.id)), c && (0, r.jsx)(a.$jN, {}), (0, r.jsx)("div", {
-      ref: m
+      ref: h
     })]
   })
 }

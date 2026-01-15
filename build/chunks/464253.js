@@ -17,7 +17,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h {
+class m {
   _onGameDetectionUpdate(e) {
     this.applications = e.map(e => {
       var t, n;
@@ -140,7 +140,7 @@ class h {
     }
   }
   constructor() {
-    m(this, "director", true), m(this, "applications", true), m(this, "streamKey", true), m(this, "mode", true), this.mode = null, this.applications = [], this.director = new s.a(e => this._onDirectorAction(e)), r.Z.subscribe("STREAM_START", e => {
+    h(this, "director", true), h(this, "applications", true), h(this, "streamKey", true), h(this, "mode", true), this.mode = null, this.applications = [], this.director = new s.a(e => this._onDirectorAction(e)), r.Z.subscribe("STREAM_START", e => {
       let {
         streamType: t,
         guildId: n,
@@ -190,6 +190,6 @@ class h {
 let g = {
   instance: null,
   init() {
-    null == this.instance && (this.instance = new h)
+    null == this.instance && (this.instance = new m)
   }
 }

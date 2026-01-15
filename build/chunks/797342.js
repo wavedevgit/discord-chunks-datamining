@@ -28,18 +28,18 @@ function s(e) {
   };
   let p = (null == (t = d.assets) ? true : t.large_image) != null || (null == (n = d.assets) ? true : n.small_image) != null,
     _ = (null == (s = d.assets) ? true : s.large_text) != null || (null == (l = d.assets) ? true : l.small_text) != null,
-    m = null != (c = d.name) ? c : "game_name" in e.extra ? e.extra.game_name : true,
-    h = d.details,
+    h = null != (c = d.name) ? c : "game_name" in e.extra ? e.extra.game_name : true,
+    m = d.details,
     g = d.state,
     E = d.party;
   return {
-    isRich: p || _ || null != h || null != g || null != E,
+    isRich: p || _ || null != m || null != g || null != E,
     user: u,
     activity: d,
     state: g,
-    details: h,
+    details: m,
     party: E,
-    appName: m,
+    appName: h,
     embeddedActivity: f
   }
 }

@@ -22,18 +22,18 @@ function v(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [r, v] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, j] = i.useState(true), [b, y] = i.useState(false), I = i.useRef(null), {
+  } = e, [r, v] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, j] = i.useState(true), [b, I] = i.useState(false), y = i.useRef(null), {
     width: O,
     height: w
   } = (0, u.Z)();
   return (i.useEffect(() => {
-    let e = I.current;
-    null != e && y(e.scrollHeight - e.clientHeight > 1 || !h)
-  }, [I, O, w, h]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    let e = y.current;
+    null != e && I(e.scrollHeight - e.clientHeight > 1 || !h)
+  }, [y, O, w, h]), null == t.summary) ? null : (0, a.jsxs)("div", {
     className: l()(p.column, p.gapMd),
     children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
       className: l()(p.row, p.gapSm),
-      children: [(0, a.jsx)(o.SxY, {
+      children: [(0, a.jsx)(o.PencilSparkleIcon, {
         color: c.Z.colors.TEXT_DEFAULT,
         size: "xs"
       }), (0, a.jsx)(s.xvT, {
@@ -46,7 +46,7 @@ function v(e) {
         })
       })]
     }), (0, a.jsx)(s.xvT, {
-      ref: I,
+      ref: y,
       lineClamp: h ? 8 : true,
       variant: "text-sm/normal",
       children: r ? t.summaryLocalized : t.summary

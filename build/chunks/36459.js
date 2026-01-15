@@ -30,7 +30,7 @@ function _(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   var t, n;
   let r = (0, d.X)(e.triggerMetadata);
   return null != r && delete r.keywordLists, {
@@ -49,7 +49,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return {
     type: e.type,
     metadata: (0, d.C)(e.metadata)
@@ -65,7 +65,7 @@ function g(e) {
     eventType: e.event_type,
     triggerType: e.trigger_type,
     triggerMetadata: (0, d.C)(e.trigger_metadata),
-    actions: e.actions.filter(l.lm).map(h),
+    actions: e.actions.filter(l.lm).map(m),
     enabled: e.enabled,
     creatorId: e.creator_id,
     position: e.position,
@@ -75,7 +75,7 @@ function g(e) {
   return null != i.triggerMetadata && delete i.triggerMetadata.keywordLists, i
 }
 async function E(e) {
-  let t = m(e),
+  let t = h(e),
     n = await r.tn.post({
       url: p.ANM.GUILD_AUTOMOD_VALIDATE_RULE(e.guildId),
       body: t,
@@ -84,7 +84,7 @@ async function E(e) {
   return (0, d.C)(n.body)
 }
 async function b(e) {
-  let t = m(e);
+  let t = h(e);
   return delete t.id, g((await r.tn.post({
     url: p.ANM.GUILD_AUTOMOD_RULES(e.guildId),
     body: t,
@@ -92,7 +92,7 @@ async function b(e) {
   })).body)
 }
 async function y(e) {
-  let t = m(e);
+  let t = h(e);
   return g((await r.tn.patch({
     url: p.ANM.GUILD_AUTOMOD_RULE(e.guildId, e.id),
     body: t,

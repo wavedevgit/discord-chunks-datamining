@@ -21,17 +21,17 @@ var Chunk54381 = require("./54381.js"),
 let g = () => {
   let [e, t] = (0, l.US)([a.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === a.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, g = (0, i.e7)([u.default], () => u.default.getId());
   return (0, r.jsx)(d.Z, {
-    title: m.intl.string(m.t.Jzj9q4),
-    description: m.intl.string(m.t.lfF1Sp),
+    title: h.intl.string(h.t.Jzj9q4),
+    description: h.intl.string(h.t.lfF1Sp),
     titleIcon: n ? (0, r.jsx)(o.IGR, {
-      className: h.newBadge,
-      text: m.intl.string(m.t.y2b7CA)
+      className: m.newBadge,
+      text: h.intl.string(h.t.y2b7CA)
     }) : null,
     borderType: f.Y.LIMITED,
     showBorder: n,
     hasBackground: n,
     children: (0, r.jsx)(o.Button, {
-      text: m.intl.string(m.t.Geikwq),
+      text: h.intl.string(h.t.Geikwq),
       onClick: () => {
         n && t(p.L.TAKE_ACTION), (0, c.openUserProfileModal)({
           userId: g,

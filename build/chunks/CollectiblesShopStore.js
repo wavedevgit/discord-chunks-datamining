@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -47,7 +47,7 @@ class _ extends(i = Chunk442837.ZP.Store) {
   }
 }
 s(_, "displayName", "CollectiblesShopStore");
-let m = new _(Chunk570140.Z, {
+let h = new _(Chunk570140.Z, {
   COLLECTIBLES_SHOP_OPEN: d,
   COLLECTIBLES_SHOP_CLOSE: f,
   COLLECTIBLES_PRODUCT_DETAILS_OPEN: p,

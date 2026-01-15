@@ -52,22 +52,22 @@ function g(e) {
       rawText: n
     }), null != y && o.Z.startTyping(y)
   }
-  return S ? (t = m.intl.string(m.t["F/OLvL"]), g = m.intl.string(m.t.C89OLE)) : (g = m.intl.string(m.t.YVub5y), b ? t = m.intl.string(m.t["57nBty"]) : null != v && I ? (t = m.intl.formatToPlainString(m.t["9Akp1s"], {
+  return S ? (t = h.intl.string(h.t["F/OLvL"]), g = h.intl.string(h.t.C89OLE)) : (g = h.intl.string(h.t.YVub5y), b ? t = h.intl.string(h.t["57nBty"]) : null != v && I ? (t = h.intl.formatToPlainString(h.t["9Akp1s"], {
     username: v
   }), n = (0, r.jsx)(i.zxk, {
     onClick: T,
-    text: m.intl.string(m.t.P8tvKG)
-  })) : t = m.intl.string(m.t["SMJr+a"])), (0, r.jsxs)(s.Z, {
+    text: h.intl.string(h.t.P8tvKG)
+  })) : t = h.intl.string(h.t["SMJr+a"])), (0, r.jsxs)(s.Z, {
     children: [(0, r.jsx)(s.Z.Header, {
       text: g
     }), (0, r.jsxs)(s.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: h.headerLine,
+        className: m.headerLine,
         children: [(0, r.jsx)(s.Z.Icon, {
           expired: true
         }), (0, r.jsx)(s.Z.Info, {
           expired: true,
-          title: m.intl.string(m.t["Jhx/ud"]),
+          title: h.intl.string(h.t["Jhx/ud"]),
           children: t
         })]
       }), n]

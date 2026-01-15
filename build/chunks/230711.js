@@ -101,8 +101,8 @@ let f = {
       newPassword: p,
       discriminator: _
     } = e, {
-      close: m
-    } = t, h = {
+      close: h
+    } = t, m = {
       username: n,
       email: s,
       email_token: u,
@@ -111,12 +111,12 @@ let f = {
       new_password: p,
       discriminator: null != _ && "" !== _ ? _ : true
     }, g = i.K.get(l.JkL), E = (0, c.xJ)();
-    null != E && null != g && (h.push_provider = E, h.push_token = g);
+    null != E && null != g && (m.push_provider = E, m.push_token = g);
     let b = i.K.get(l.scU);
-    return null != c.mv && null != b && (h.push_voip_provider = c.mv, h.push_voip_token = b), r.tn.patch({
+    return null != c.mv && null != b && (m.push_voip_provider = c.mv, m.push_voip_token = b), r.tn.patch({
       url: l.ANM.ME,
       oldFormErrors: true,
-      body: h,
+      body: m,
       rejectWithError: false
     }).then(e => {
       let t = e.body,
@@ -137,7 +137,7 @@ let f = {
       }), null != d && null != p && a.Z.dispatch({
         type: "PASSWORD_UPDATED",
         userId: t.id
-      }), m ? this.close() : this.submitComplete(), e
+      }), h ? this.close() : this.submitComplete(), e
     }, e => (a.Z.dispatch({
       type: "USER_SETTINGS_MODAL_SUBMIT_FAILURE",
       errors: e.body

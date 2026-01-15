@@ -51,13 +51,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -89,7 +89,7 @@ async function E(e) {
       var {
         planId: t
       } = e;
-      return m(p({}, h(e, ["planId"])), {
+      return h(p({}, m(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -131,7 +131,7 @@ async function b(e) {
       var {
         planId: t
       } = e;
-      return m(p({}, h(e, ["planId"])), {
+      return h(p({}, m(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -234,7 +234,7 @@ function I(e) {
     let {
       subscriptionId: t
     } = e;
-    e = h(e, ["subscriptionId"])
+    e = m(e, ["subscriptionId"])
   }
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {

@@ -21,9 +21,9 @@ var p = "$1~";
 f("TILDE"), c[u.TILDE] = "^" + c[u.LONETILDE] + c[u.XRANGEPLAIN] + "$", f("TILDELOOSE"), c[u.TILDELOOSE] = "^" + c[u.LONETILDE] + c[u.XRANGEPLAINLOOSE] + "$", f("LONECARET"), c[u.LONECARET] = "(?:\\^)", f("CARETTRIM"), c[u.CARETTRIM] = "(\\s*)" + c[u.LONECARET] + "\\s+", l[u.CARETTRIM] = RegExp(c[u.CARETTRIM], "g");
 var _ = "$1^";
 f("CARET"), c[u.CARET] = "^" + c[u.LONECARET] + c[u.XRANGEPLAIN] + "$", f("CARETLOOSE"), c[u.CARETLOOSE] = "^" + c[u.LONECARET] + c[u.XRANGEPLAINLOOSE] + "$", f("COMPARATORLOOSE"), c[u.COMPARATORLOOSE] = "^" + c[u.GTLT] + "\\s*(" + c[u.LOOSEPLAIN] + ")$|^$", f("COMPARATOR"), c[u.COMPARATOR] = "^" + c[u.GTLT] + "\\s*(" + c[u.FULLPLAIN] + ")$|^$", f("COMPARATORTRIM"), c[u.COMPARATORTRIM] = "(\\s*)" + c[u.GTLT] + "\\s*(" + c[u.LOOSEPLAIN] + "|" + c[u.XRANGEPLAIN] + ")", l[u.COMPARATORTRIM] = RegExp(c[u.COMPARATORTRIM], "g");
-var m = "$1$2$3";
+var h = "$1$2$3";
 f("HYPHENRANGE"), c[u.HYPHENRANGE] = "^\\s*(" + c[u.XRANGEPLAIN] + ")\\s+-\\s+(" + c[u.XRANGEPLAIN] + ")\\s*$", f("HYPHENRANGELOOSE"), c[u.HYPHENRANGELOOSE] = "^\\s*(" + c[u.XRANGEPLAINLOOSE] + ")\\s+-\\s+(" + c[u.XRANGEPLAINLOOSE] + ")\\s*$", f("STAR"), c[u.STAR] = "(<|>)?=?\\s*\\*";
-for (var h = 0; h < d; h++) r(h, c[h]), l[h] || (l[h] = new RegExp(c[h]));
+for (var m = 0; m < d; m++) r(m, c[m]), l[m] || (l[m] = new RegExp(c[m]));
 
 function g(e, t) {
   if (t && "object" == typeof t || (t = {
@@ -193,11 +193,11 @@ function P(e, t, n) {
   return new y(e, n).compare(new y(t, n))
 }
 
-function R(e, t) {
+function w(e, t) {
   return P(e, t, true)
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   var r = new y(e, n),
     i = new y(t, n);
   return r.compare(i) || r.compareBuild(i)
@@ -278,7 +278,7 @@ function B(e, t) {
   if (!(this instanceof B)) return new B(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === V ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-exports.rcompareIdentifiers = T, exports.major = C, exports.minor = A, exports.patch = N, exports.compare = P, exports.compareLoose = R, exports.compareBuild = w, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = M, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = Z, exports.cmp = F, exports.Comparator = B;
+exports.rcompareIdentifiers = T, exports.major = C, exports.minor = A, exports.patch = N, exports.compare = P, exports.compareLoose = w, exports.compareBuild = R, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = M, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = Z, exports.cmp = F, exports.Comparator = B;
 var V = {};
 
 function H(e, t) {
@@ -547,7 +547,7 @@ B.prototype.parse = function(e) {
   var t = this.options.loose;
   e = e.trim();
   var n = t ? l[u.HYPHENRANGELOOSE] : l[u.HYPHENRANGE];
-  r("hyphen replace", e = e.replace(n, en)), r("comparator trim", e = e.replace(l[u.COMPARATORTRIM], m), l[u.COMPARATORTRIM]), e = (e = (e = e.replace(l[u.TILDETRIM], p)).replace(l[u.CARETTRIM], _)).split(/\s+/).join(" ");
+  r("hyphen replace", e = e.replace(n, en)), r("comparator trim", e = e.replace(l[u.COMPARATORTRIM], h), l[u.COMPARATORTRIM]), e = (e = (e = e.replace(l[u.TILDETRIM], p)).replace(l[u.CARETTRIM], _)).split(/\s+/).join(" ");
   var i = t ? l[u.COMPARATORLOOSE] : l[u.COMPARATOR],
     a = e.split(" ").map(function(e) {
       return K(e, this.options)

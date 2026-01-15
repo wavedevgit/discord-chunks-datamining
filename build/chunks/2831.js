@@ -9,7 +9,7 @@ var Chunk444675 = require("./444675.js");
       o = false,
       s = e.document,
       l = Object.getPrototypeOf && Object.getPrototypeOf(e);
-    l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? p() : _() ? m() : e.MessageChannel ? h() : s && "onreadystatechange" in s.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
+    l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? p() : _() ? h() : e.MessageChannel ? m() : s && "onreadystatechange" in s.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
   }
 
   function c(e) {
@@ -80,7 +80,7 @@ var Chunk444675 = require("./444675.js");
     }
   }
 
-  function m() {
+  function h() {
     var t = "setImmediate$" + Math.random() + "$",
       r = function(n) {
         n.source === e && "string" == typeof n.data && 0 === n.data.indexOf(t) && f(+n.data.slice(t.length))
@@ -90,7 +90,7 @@ var Chunk444675 = require("./444675.js");
     }
   }
 
-  function h() {
+  function m() {
     var e = new MessageChannel;
     e.port1.onmessage = function(e) {
       f(e.data)

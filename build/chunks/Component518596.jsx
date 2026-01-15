@@ -51,13 +51,13 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ async function b(e) {
   var {
     subsection: l,
     stackingBehavior: c = "replaceAll"
-  } = t, u = h(t, ["subsection", "stackingBehavior"]);
+  } = t, u = m(t, ["subsection", "stackingBehavior"]);
   a.Z.dispatch(p({
     type: "USER_SETTINGS_MODAL_OPEN",
     subsection: null != l ? l : null
@@ -93,7 +93,7 @@ async function b(e) {
     let {
       default: t
     } = await Promise.all([n.e("77069"), n.e("91968")]).then(n.bind(n, 245286));
-    return n => (0, r.jsx)(t, m(p({}, n), {
+    return n => (0, r.jsx)(t, h(p({}, n), {
       target: e
     }))
   }, {

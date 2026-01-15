@@ -81,7 +81,7 @@ function I(e) {
     item: t,
     containerRef: n
   } = e;
-  return (0, f.Tbt)(n), i.useEffect(() => (p.Z.disable(), t.key !== h.CV && p.Z.enableTemp(R(t.key)), () => {
+  return (0, f.Tbt)(n), i.useEffect(() => (p.Z.disable(), t.key !== m.CV && p.Z.enableTemp(w(t.key)), () => {
     p.Z.disableTemp()
   }), [t.key]), (0, r.jsx)(t.LayerComponent, {
     children: (0, r.jsxs)("div", {
@@ -163,7 +163,7 @@ function N(e) {
       fullScreenLayers: [...t.fullScreenLayers, {
         key: s,
         transitionState: 1,
-        LayerComponent: null != r ? r : m.ZP,
+        LayerComponent: null != r ? r : h.ZP,
         render: e,
         options: {
           disableAnimation: i,
@@ -182,7 +182,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   return {
     POP_LAYER: {
       binds: ["esc"],

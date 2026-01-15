@@ -52,9 +52,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -77,7 +77,7 @@ function g(e) {
     channelId: a,
     nick: d,
     className: p,
-    textClassName: h,
+    textClassName: m,
     disablePopout: g,
     ignoreModalClicks: E,
     onClick: b,
@@ -98,7 +98,7 @@ function g(e) {
     children: e => {
       var {
         onClick: i
-      } = e, a = m(e, ["onClick"]);
+      } = e, a = h(e, ["onClick"]);
       return (0, r.jsxs)(s.P3F, _(f({}, a), {
         innerRef: S,
         className: o()(u.userListItem, p, {
@@ -114,7 +114,7 @@ function g(e) {
           "aria-label": t.username,
           size: s.EFr.SIZE_24
         }), (0, r.jsx)(s.Text, {
-          className: o()(u.userListItemTag, h),
+          className: o()(u.userListItemTag, m),
           variant: "text-sm/normal",
           children: (0, r.jsx)(l.Z, {
             user: t,

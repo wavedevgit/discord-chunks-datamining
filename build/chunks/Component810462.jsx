@@ -19,8 +19,8 @@ let d = Chunk473749.forwardRef(function(e, t) {
     onKeyDown: f,
     gridNavigatorId: p,
     expressionsListRef: _,
-    defaultSearchPlaceholder: m,
-    emptySearchPlaceholder: h
+    defaultSearchPlaceholder: h,
+    emptySearchPlaceholder: m
   } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], a.X), y = n.useStore(e => e.searchPlaceholder), O = n.useStore(e => e.inspectedExpressionPosition, a.X), v = i.useCallback(e => {
     var t;
     n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = _.current) || t.scrollTo(0)
@@ -38,7 +38,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
       null == (e = g.current) || e.focus()
     }
   }, [b]);
-  let I = () => null != y ? y : d || null == h ? m : h;
+  let I = () => null != y ? y : d || null == m ? h : m;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsx)(s.E1j, {

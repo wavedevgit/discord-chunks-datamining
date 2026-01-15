@@ -69,8 +69,8 @@
           f = n(716),
           p = n(7450),
           _ = n(3774),
-          m = n(7552),
-          h = n(5874),
+          h = n(7552),
+          m = n(5874),
           g = n(9292),
           E = n(6071),
           b = Function,
@@ -100,8 +100,8 @@
           A = n(3766),
           N = n(6822),
           P = n(3036),
-          R = n(78),
-          w = {},
+          w = n(78),
+          R = {},
           D = "undefined" != typeof Uint8Array && C ? C(Uint8Array) : r,
           x = {
             __proto__: null,
@@ -110,10 +110,10 @@
             "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
             "%ArrayIteratorPrototype%": T && C ? C([][Symbol.iterator]()) : r,
             "%AsyncFromSyncIteratorPrototype%": r,
-            "%AsyncFunction%": w,
-            "%AsyncGenerator%": w,
-            "%AsyncGeneratorFunction%": w,
-            "%AsyncIteratorPrototype%": w,
+            "%AsyncFunction%": R,
+            "%AsyncGenerator%": R,
+            "%AsyncGeneratorFunction%": R,
+            "%AsyncIteratorPrototype%": R,
             "%Atomics%": "undefined" == typeof Atomics ? r : Atomics,
             "%BigInt%": "undefined" == typeof BigInt ? r : BigInt,
             "%BigInt64Array%": "undefined" == typeof BigInt64Array ? r : BigInt64Array,
@@ -132,7 +132,7 @@
             "%Float64Array%": "undefined" == typeof Float64Array ? r : Float64Array,
             "%FinalizationRegistry%": "undefined" == typeof FinalizationRegistry ? r : FinalizationRegistry,
             "%Function%": b,
-            "%GeneratorFunction%": w,
+            "%GeneratorFunction%": R,
             "%Int8Array%": "undefined" == typeof Int8Array ? r : Int8Array,
             "%Int16Array%": "undefined" == typeof Int16Array ? r : Int16Array,
             "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
@@ -172,15 +172,15 @@
             "%WeakMap%": "undefined" == typeof WeakMap ? r : WeakMap,
             "%WeakRef%": "undefined" == typeof WeakRef ? r : WeakRef,
             "%WeakSet%": "undefined" == typeof WeakSet ? r : WeakSet,
-            "%Function.prototype.call%": R,
+            "%Function.prototype.call%": w,
             "%Function.prototype.apply%": P,
             "%Object.defineProperty%": v,
             "%Object.getPrototypeOf%": A,
             "%Math.abs%": f,
             "%Math.floor%": p,
             "%Math.max%": _,
-            "%Math.min%": m,
-            "%Math.pow%": h,
+            "%Math.min%": h,
+            "%Math.pow%": m,
             "%Math.round%": g,
             "%Math.sign%": E,
             "%Reflect.getPrototypeOf%": N
@@ -261,18 +261,18 @@
           },
           k = n(5049),
           U = n(5215),
-          G = k.call(R, Array.prototype.concat),
+          G = k.call(w, Array.prototype.concat),
           Z = k.call(P, Array.prototype.splice),
-          F = k.call(R, String.prototype.replace),
-          B = k.call(R, String.prototype.slice),
-          V = k.call(R, RegExp.prototype.exec),
+          F = k.call(w, String.prototype.replace),
+          B = k.call(w, String.prototype.slice),
+          V = k.call(w, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
           W = function(e, t) {
             var n, r = e;
             if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
               var i = x[r];
-              if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+              if (i === R && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
                 alias: n,
                 name: r,
@@ -305,8 +305,8 @@
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
-              m = B(p, false);
-            if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
+              h = B(p, false);
+            if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
             if ("constructor" !== p && f || (s = true), U(x, a = "%" + (r += "." + p) + "%")) o = x[a];
             else if (null != o) {
               if (!(p in o)) {
@@ -314,8 +314,8 @@
                 return
               }
               if (O && d + 1 >= n.length) {
-                var h = O(o, p);
-                o = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : o[p]
+                var m = O(o, p);
+                o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
               } else f = U(o, p), o = o[p];
               f && !s && (x[a] = o)
             }
@@ -503,11 +503,11 @@
           f = "A-Z\\xc0-\\xd6\\xd8-\\xde",
           p = "\\xac\\xb1\\xd7\\xf7\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf\\u2000-\\u206f \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
           _ = "[" + p + "]",
-          m = "[\\u0300-\\u036f\\ufe20-\\ufe23\\u20d0-\\u20f0]",
-          h = "\\d+",
+          h = "[\\u0300-\\u036f\\ufe20-\\ufe23\\u20d0-\\u20f0]",
+          m = "\\d+",
           g = "[" + u + "]",
           E = "[" + d + "]",
-          b = "[^" + c + p + h + u + d + f + "]",
+          b = "[^" + c + p + m + u + d + f + "]",
           y = "(?:\ud83c[\udde6-\uddff]){2}",
           O = "[\ud800-\udbff][\udc00-\udfff]",
           v = "[" + f + "]",
@@ -515,13 +515,13 @@
           I = "(?:" + v + "|" + b + ")",
           T = "(?:['’](?:d|ll|m|re|s|t|ve))?",
           C = "(?:['’](?:D|LL|M|RE|S|T|VE))?",
-          A = "(?:" + m + "|\ud83c[\udffb-\udfff])?",
+          A = "(?:" + h + "|\ud83c[\udffb-\udfff])?",
           N = "[\\ufe0e\\ufe0f]?",
           P = N + A + "(?:\\u200d(?:" + ["[^" + c + "]", y, O].join("|") + ")" + N + A + ")*",
-          R = "(?:" + [g, y, O].join("|") + ")" + P,
-          w = RegExp("['’]", "g"),
-          D = RegExp(m, "g"),
-          x = RegExp([v + "?" + E + "+" + T + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + C + "(?=" + [_, v + S, "$"].join("|") + ")", v + "?" + S + "+" + T, v + "+" + C, h, R].join("|"), "g"),
+          w = "(?:" + [g, y, O].join("|") + ")" + P,
+          R = RegExp("['’]", "g"),
+          D = RegExp(h, "g"),
+          x = RegExp([v + "?" + E + "+" + T + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + C + "(?=" + [_, v + S, "$"].join("|") + ")", v + "?" + S + "+" + T, v + "+" + C, m, w].join("|"), "g"),
           L = /[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
           j = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
           M = "object" == typeof self && self && self.Object === Object && self,
@@ -753,7 +753,7 @@
             }(e)
           }((function(e) {
             return (e = V(e)) && e.replace(l, U).replace(D, "")
-          })(e).replace(w, "")), r, "")
+          })(e).replace(R, "")), r, "")
         }
       },
       716: e => {
@@ -806,8 +806,8 @@
           f = "function" == typeof WeakSet && WeakSet.prototype ? WeakSet.prototype.has : null,
           p = "function" == typeof WeakRef && WeakRef.prototype ? WeakRef.prototype.deref : null,
           _ = Boolean.prototype.valueOf,
-          m = Object.prototype.toString,
-          h = Function.prototype.toString,
+          h = Object.prototype.toString,
+          m = Function.prototype.toString,
           g = String.prototype.match,
           E = String.prototype.slice,
           b = String.prototype.replace,
@@ -821,8 +821,8 @@
           A = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
           N = Object.getOwnPropertySymbols,
           P = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
-          R = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
-          w = "function" == typeof Symbol && Symbol.toStringTag && (Symbol.toStringTag, 1) ? Symbol.toStringTag : null,
+          w = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
+          R = "function" == typeof Symbol && Symbol.toStringTag && (Symbol.toStringTag, 1) ? Symbol.toStringTag : null,
           D = Object.prototype.propertyIsEnumerable,
           x = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
             return e.__proto__
@@ -865,7 +865,7 @@
         }
 
         function B(e) {
-          return !w || !("object" == typeof e && (w in e || true !== e[w]))
+          return !R || !("object" == typeof e && (R in e || true !== e[R]))
         }
 
         function V(e) {
@@ -877,7 +877,7 @@
         }
 
         function Y(e) {
-          if (R) return e && "object" == typeof e && e instanceof Symbol;
+          if (w) return e && "object" == typeof e && e instanceof Symbol;
           if ("symbol" == typeof e) returntrue;
           if (!e || "object" != typeof e || !P) returnfalse;
           try {
@@ -889,8 +889,8 @@
           var l = r || {};
           if (K(l, "quoteStyle") && !K(U, l.quoteStyle)) throw TypeError('option "quoteStyle" must be "single" or "double"');
           if (K(l, "maxStringLength") && ("number" == typeof l.maxStringLength ? l.maxStringLength < 0 && l.maxStringLength !== 1 / 0 : null !== l.maxStringLength)) throw TypeError('option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`');
-          var m = !K(l, "customInspect") || l.customInspect;
-          if ("boolean" != typeof m && "symbol" !== m) throw TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
+          var h = !K(l, "customInspect") || l.customInspect;
+          if ("boolean" != typeof h && "symbol" !== h) throw TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
           if (K(l, "indent") && null !== l.indent && "	" !== l.indent && !(parseInt(l.indent, 10) === l.indent && l.indent > 0)) throw TypeError('option "indent" must be "\\t", an integer > 0, or `null`');
           if (K(l, "numericSeparator") && "boolean" != typeof l.numericSeparator) throw TypeError('option "numericSeparator", if provided, must be `true` or `false`');
           var y = l.numericSeparator;
@@ -936,15 +936,15 @@
           if ("function" == typeof t && !H(t)) {
             var X = function(e) {
                 if (e.name) return e.name;
-                var t = g.call(h.call(e), /^function\s*([\w$]+)/);
+                var t = g.call(m.call(e), /^function\s*([\w$]+)/);
                 return t ? t[1] : null
               }(t),
               er = en(t, W);
             return "[Function" + (X ? ": " + X : " (anonymous)") + "]" + (er.length > 0 ? " { " + I.call(er, ", ") + " }" : "")
           }
           if (Y(t)) {
-            var ei = R ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : P.call(t);
-            return "object" != typeof t || R ? ei : J(ei)
+            var ei = w ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : P.call(t);
+            return "object" != typeof t || w ? ei : J(ei)
           }
           if ((M = t) && "object" == typeof M && ("undefined" != typeof HTMLElement && M instanceof HTMLElement || "string" == typeof M.nodeName && "function" == typeof M.getAttribute)) {
             for (var ea = "<" + O.call(String(t.nodeName)), eo = t.attributes || [], es = 0; es < eo.length; es++) ea += " " + eo[es].name + "=" + Z(F(eo[es].value), "double", l);
@@ -965,11 +965,11 @@
             var ec = en(t, W);
             return "cause" in Error.prototype || !("cause" in t) || D.call(t, "cause") ? 0 === ec.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + I.call(ec, ", ") + " }" : "{ [" + String(t) + "] " + I.call(S.call("[cause]: " + W(t.cause), ec), ", ") + " }"
           }
-          if ("object" == typeof t && m) {
+          if ("object" == typeof t && h) {
             if (k && "function" == typeof t[k] && j) return j(t, {
               depth: N - i
             });
-            if ("symbol" !== m && "function" == typeof t.inspect) return t.inspect()
+            if ("symbol" !== h && "function" == typeof t.inspect) return t.inspect()
           }
           if (function(e) {
               if (!a || !e || "object" != typeof e) returnfalse;
@@ -1064,9 +1064,9 @@
             var ef = en(t, W),
               ep = x ? x(t) === Object.prototype : t instanceof Object || t.constructor === Object,
               e_ = t instanceof Object ? "" : "null prototype",
-              em = !ep && w && Object(t) === t && w in t ? E.call(z(t), 8, false) : e_ ? "Object" : "",
-              eh = (ep || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (em || e_ ? "[" + I.call(S.call([], em || [], e_ || []), ": ") + "] " : "");
-            return 0 === ef.length ? eh + "{}" : G ? eh + "{" + et(ef, G) + "}" : eh + "{ " + I.call(ef, ", ") + " }"
+              eh = !ep && R && Object(t) === t && R in t ? E.call(z(t), 8, false) : e_ ? "Object" : "",
+              em = (ep || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (eh || e_ ? "[" + I.call(S.call([], eh || [], e_ || []), ": ") + "] " : "");
+            return 0 === ef.length ? em + "{}" : G ? em + "{" + et(ef, G) + "}" : em + "{ " + I.call(ef, ", ") + " }"
           }
           return String(t)
         };
@@ -1079,7 +1079,7 @@
         }
 
         function z(e) {
-          return m.call(e)
+          return h.call(e)
         }
 
         function q(e, t) {
@@ -1137,11 +1137,11 @@
             for (var i = 0; i < e.length; i++) r[i] = K(e, i) ? t(e[i], e) : ""
           }
           var a, o = "function" == typeof N ? N(e) : [];
-          if (R) {
+          if (w) {
             a = {};
             for (var s = 0; s < o.length; s++) a["$" + o[s]] = o[s]
           }
-          for (var l in e) K(e, l) && (n && String(Number(l)) === l && l < e.length || R && a["$" + l] instanceof Symbol || (v.call(/[^\w$]/, l) ? r.push(t(l, e) + ": " + t(e[l], e)) : r.push(l + ": " + t(e[l], e))));
+          for (var l in e) K(e, l) && (n && String(Number(l)) === l && l < e.length || w && a["$" + l] instanceof Symbol || (v.call(/[^\w$]/, l) ? r.push(t(l, e) + ": " + t(e[l], e)) : r.push(l + ": " + t(e[l], e))));
           if ("function" == typeof N)
             for (var c = 0; c < o.length; c++) D.call(e, o[c]) && r.push("[" + t(o[c]) + "]: " + t(e[o[c]], e));
           return r
@@ -1215,44 +1215,44 @@
             strictNullHandling: false
           },
           _ = {},
-          m = function e(t, n, a, o, s, c, d, f, m, h, g, E, b, y, O, v, S, I) {
+          h = function e(t, n, a, o, s, c, d, f, h, m, g, E, b, y, O, v, S, I) {
             for (var T, C = t, A = I, N = 0, P = false; true !== (A = A.get(_)) && !P;) {
-              var R = A.get(t);
-              if (N += 1, true !== R) {
-                if (R === N) throw RangeError("Cyclic object value");
+              var w = A.get(t);
+              if (N += 1, true !== w) {
+                if (w === N) throw RangeError("Cyclic object value");
                 P = true
               }
               true === A.get(_) && (N = 0)
             }
-            if ("function" == typeof h ? C = h(n, C) : C instanceof Date ? C = b(C) : "comma" === a && l(C) && (C = i.maybeMap(C, function(e) {
+            if ("function" == typeof m ? C = m(n, C) : C instanceof Date ? C = b(C) : "comma" === a && l(C) && (C = i.maybeMap(C, function(e) {
                 return e instanceof Date ? b(e) : e
               })), null === C) {
-              if (c) return m && !v ? m(n, p.encoder, S, "key", y) : n;
+              if (c) return h && !v ? h(n, p.encoder, S, "key", y) : n;
               C = ""
             }
-            if ("string" == typeof(T = C) || "number" == typeof T || "boolean" == typeof T || "symbol" == typeof T || "bigint" == typeof T || i.isBuffer(C)) return m ? [O(v ? n : m(n, p.encoder, S, "key", y)) + "=" + O(m(C, p.encoder, S, "value", y))] : [O(n) + "=" + O(String(C))];
-            var w, D = [];
+            if ("string" == typeof(T = C) || "number" == typeof T || "boolean" == typeof T || "symbol" == typeof T || "bigint" == typeof T || i.isBuffer(C)) return h ? [O(v ? n : h(n, p.encoder, S, "key", y)) + "=" + O(h(C, p.encoder, S, "value", y))] : [O(n) + "=" + O(String(C))];
+            var R, D = [];
             if (true === C) return D;
-            if ("comma" === a && l(C)) v && m && (C = i.maybeMap(C, m)), w = [{
+            if ("comma" === a && l(C)) v && h && (C = i.maybeMap(C, h)), R = [{
               value: C.length > 0 ? C.join(",") || null : true
             }];
-            else if (l(h)) w = h;
+            else if (l(m)) R = m;
             else {
               var x = Object.keys(C);
-              w = g ? x.sort(g) : x
+              R = g ? x.sort(g) : x
             }
             var L = f ? String(n).replace(/\./g, "%2E") : String(n),
               j = o && l(C) && 1 === C.length ? L + "[]" : L;
             if (s && l(C) && 0 === C.length) return j + "[]";
-            for (var M = 0; M < w.length; ++M) {
-              var k = w[M],
+            for (var M = 0; M < R.length; ++M) {
+              var k = R[M],
                 U = "object" == typeof k && k && true !== k.value ? k.value : C[k];
               if (!d || null !== U) {
                 var G = E && f ? String(k).replace(/\./g, "%2E") : String(k),
                   Z = l(C) ? "function" == typeof a ? a(j, G) : j : j + (E ? "." + G : "[" + G + "]");
                 I.set(t, N);
                 var F = r();
-                F.set(_, I), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && v && l(C) ? null : m, h, g, E, b, y, O, v, S, F))
+                F.set(_, I), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && v && l(C) ? null : h, m, g, E, b, y, O, v, S, F))
               }
             }
             return D
@@ -1303,10 +1303,10 @@
           var f = s[c.arrayFormat],
             _ = "comma" === f && c.commaRoundTrip;
           n || (n = Object.keys(i)), c.sort && n.sort(c.sort);
-          for (var h = r(), g = 0; g < n.length; ++g) {
+          for (var m = r(), g = 0; g < n.length; ++g) {
             var E = n[g],
               b = i[E];
-            c.skipNulls && null === b || u(d, m(b, E, f, _, c.allowEmptyArrays, c.strictNullHandling, c.skipNulls, c.encodeDotInKeys, c.encode ? c.encoder : null, c.filter, c.sort, c.allowDots, c.serializeDate, c.format, c.formatter, c.encodeValuesOnly, c.charset, h))
+            c.skipNulls && null === b || u(d, h(b, E, f, _, c.allowEmptyArrays, c.strictNullHandling, c.skipNulls, c.encodeDotInKeys, c.encode ? c.encoder : null, c.filter, c.sort, c.allowDots, c.serializeDate, c.format, c.formatter, c.encodeValuesOnly, c.charset, m))
           }
           var y = d.join(c.delimiter),
             O = true === c.addQueryPrefix ? "?" : "";
@@ -1566,8 +1566,8 @@
           f = n(716),
           p = n(7450),
           _ = n(3774),
-          m = n(7552),
-          h = n(5874),
+          h = n(7552),
+          m = n(5874),
           g = n(9292),
           E = n(6071),
           b = Function,
@@ -1597,8 +1597,8 @@
           A = n(3766),
           N = n(6822),
           P = n(3036),
-          R = n(78),
-          w = {},
+          w = n(78),
+          R = {},
           D = "undefined" != typeof Uint8Array && C ? C(Uint8Array) : r,
           x = {
             __proto__: null,
@@ -1607,10 +1607,10 @@
             "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
             "%ArrayIteratorPrototype%": T && C ? C([][Symbol.iterator]()) : r,
             "%AsyncFromSyncIteratorPrototype%": r,
-            "%AsyncFunction%": w,
-            "%AsyncGenerator%": w,
-            "%AsyncGeneratorFunction%": w,
-            "%AsyncIteratorPrototype%": w,
+            "%AsyncFunction%": R,
+            "%AsyncGenerator%": R,
+            "%AsyncGeneratorFunction%": R,
+            "%AsyncIteratorPrototype%": R,
             "%Atomics%": "undefined" == typeof Atomics ? r : Atomics,
             "%BigInt%": "undefined" == typeof BigInt ? r : BigInt,
             "%BigInt64Array%": "undefined" == typeof BigInt64Array ? r : BigInt64Array,
@@ -1629,7 +1629,7 @@
             "%Float64Array%": "undefined" == typeof Float64Array ? r : Float64Array,
             "%FinalizationRegistry%": "undefined" == typeof FinalizationRegistry ? r : FinalizationRegistry,
             "%Function%": b,
-            "%GeneratorFunction%": w,
+            "%GeneratorFunction%": R,
             "%Int8Array%": "undefined" == typeof Int8Array ? r : Int8Array,
             "%Int16Array%": "undefined" == typeof Int16Array ? r : Int16Array,
             "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
@@ -1669,15 +1669,15 @@
             "%WeakMap%": "undefined" == typeof WeakMap ? r : WeakMap,
             "%WeakRef%": "undefined" == typeof WeakRef ? r : WeakRef,
             "%WeakSet%": "undefined" == typeof WeakSet ? r : WeakSet,
-            "%Function.prototype.call%": R,
+            "%Function.prototype.call%": w,
             "%Function.prototype.apply%": P,
             "%Object.defineProperty%": v,
             "%Object.getPrototypeOf%": A,
             "%Math.abs%": f,
             "%Math.floor%": p,
             "%Math.max%": _,
-            "%Math.min%": m,
-            "%Math.pow%": h,
+            "%Math.min%": h,
+            "%Math.pow%": m,
             "%Math.round%": g,
             "%Math.sign%": E,
             "%Reflect.getPrototypeOf%": N
@@ -1758,18 +1758,18 @@
           },
           k = n(5049),
           U = n(5215),
-          G = k.call(R, Array.prototype.concat),
+          G = k.call(w, Array.prototype.concat),
           Z = k.call(P, Array.prototype.splice),
-          F = k.call(R, String.prototype.replace),
-          B = k.call(R, String.prototype.slice),
-          V = k.call(R, RegExp.prototype.exec),
+          F = k.call(w, String.prototype.replace),
+          B = k.call(w, String.prototype.slice),
+          V = k.call(w, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
           W = function(e, t) {
             var n, r = e;
             if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
               var i = x[r];
-              if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+              if (i === R && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
                 alias: n,
                 name: r,
@@ -1802,8 +1802,8 @@
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
-              m = B(p, false);
-            if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
+              h = B(p, false);
+            if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
             if ("constructor" !== p && f || (s = true), U(x, a = "%" + (r += "." + p) + "%")) o = x[a];
             else if (null != o) {
               if (!(p in o)) {
@@ -1811,8 +1811,8 @@
                 return
               }
               if (O && d + 1 >= n.length) {
-                var h = O(o, p);
-                o = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : o[p]
+                var m = O(o, p);
+                o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
               } else f = U(o, p), o = o[p];
               f && !s && (x[a] = o)
             }
@@ -1923,8 +1923,8 @@
           f = n(716),
           p = n(7450),
           _ = n(3774),
-          m = n(7552),
-          h = n(5874),
+          h = n(7552),
+          m = n(5874),
           g = n(9292),
           E = n(6071),
           b = Function,
@@ -1954,8 +1954,8 @@
           A = n(3766),
           N = n(6822),
           P = n(3036),
-          R = n(78),
-          w = {},
+          w = n(78),
+          R = {},
           D = "undefined" != typeof Uint8Array && C ? C(Uint8Array) : r,
           x = {
             __proto__: null,
@@ -1964,10 +1964,10 @@
             "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
             "%ArrayIteratorPrototype%": T && C ? C([][Symbol.iterator]()) : r,
             "%AsyncFromSyncIteratorPrototype%": r,
-            "%AsyncFunction%": w,
-            "%AsyncGenerator%": w,
-            "%AsyncGeneratorFunction%": w,
-            "%AsyncIteratorPrototype%": w,
+            "%AsyncFunction%": R,
+            "%AsyncGenerator%": R,
+            "%AsyncGeneratorFunction%": R,
+            "%AsyncIteratorPrototype%": R,
             "%Atomics%": "undefined" == typeof Atomics ? r : Atomics,
             "%BigInt%": "undefined" == typeof BigInt ? r : BigInt,
             "%BigInt64Array%": "undefined" == typeof BigInt64Array ? r : BigInt64Array,
@@ -1986,7 +1986,7 @@
             "%Float64Array%": "undefined" == typeof Float64Array ? r : Float64Array,
             "%FinalizationRegistry%": "undefined" == typeof FinalizationRegistry ? r : FinalizationRegistry,
             "%Function%": b,
-            "%GeneratorFunction%": w,
+            "%GeneratorFunction%": R,
             "%Int8Array%": "undefined" == typeof Int8Array ? r : Int8Array,
             "%Int16Array%": "undefined" == typeof Int16Array ? r : Int16Array,
             "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
@@ -2026,15 +2026,15 @@
             "%WeakMap%": "undefined" == typeof WeakMap ? r : WeakMap,
             "%WeakRef%": "undefined" == typeof WeakRef ? r : WeakRef,
             "%WeakSet%": "undefined" == typeof WeakSet ? r : WeakSet,
-            "%Function.prototype.call%": R,
+            "%Function.prototype.call%": w,
             "%Function.prototype.apply%": P,
             "%Object.defineProperty%": v,
             "%Object.getPrototypeOf%": A,
             "%Math.abs%": f,
             "%Math.floor%": p,
             "%Math.max%": _,
-            "%Math.min%": m,
-            "%Math.pow%": h,
+            "%Math.min%": h,
+            "%Math.pow%": m,
             "%Math.round%": g,
             "%Math.sign%": E,
             "%Reflect.getPrototypeOf%": N
@@ -2115,18 +2115,18 @@
           },
           k = n(5049),
           U = n(5215),
-          G = k.call(R, Array.prototype.concat),
+          G = k.call(w, Array.prototype.concat),
           Z = k.call(P, Array.prototype.splice),
-          F = k.call(R, String.prototype.replace),
-          B = k.call(R, String.prototype.slice),
-          V = k.call(R, RegExp.prototype.exec),
+          F = k.call(w, String.prototype.replace),
+          B = k.call(w, String.prototype.slice),
+          V = k.call(w, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
           W = function(e, t) {
             var n, r = e;
             if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
               var i = x[r];
-              if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+              if (i === R && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
               return {
                 alias: n,
                 name: r,
@@ -2159,8 +2159,8 @@
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
-              m = B(p, false);
-            if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
+              h = B(p, false);
+            if (('"' === _ || "'" === _ || "`" === _ || '"' === h || "'" === h || "`" === h) && _ !== h) throw new c("property names with quotes must have matching quotes");
             if ("constructor" !== p && f || (s = true), U(x, a = "%" + (r += "." + p) + "%")) o = x[a];
             else if (null != o) {
               if (!(p in o)) {
@@ -2168,8 +2168,8 @@
                 return
               }
               if (O && d + 1 >= n.length) {
-                var h = O(o, p);
-                o = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : o[p]
+                var m = O(o, p);
+                o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[p]
               } else f = U(o, p), o = o[p];
               f && !s && (x[a] = o)
             }
@@ -2354,7 +2354,7 @@
         }
         return o
       },
-      m = function() {
+      h = function() {
         function e(e) {
           this.id = e
         }
@@ -2374,7 +2374,7 @@
         }, e
       }();
 
-    function h(e, t, n) {
+    function m(e, t, n) {
       true === n && (n = []);
       var r, i, a, o, s = document.createElementNS("http://www.w3.org/2000/svg", e);
       try {
@@ -2396,8 +2396,8 @@
         }
       }
       try {
-        for (var m = p(n), h = m.next(); !h.done; h = m.next()) {
-          var g = h.value;
+        for (var h = p(n), m = h.next(); !m.done; m = h.next()) {
+          var g = m.value;
           false !== g && s.appendChild(g)
         }
       } catch (e) {
@@ -2406,7 +2406,7 @@
         }
       } finally {
         try {
-          h && !h.done && (o = m.return) && o.call(m)
+          m && !m.done && (o = h.return) && o.call(h)
         } finally {
           if (a) throw a.error
         }
@@ -2436,8 +2436,8 @@
         }
       }
       try {
-        for (var m = p(n), h = m.next(); !h.done; h = m.next()) {
-          var g = h.value;
+        for (var h = p(n), m = h.next(); !m.done; m = h.next()) {
+          var g = m.value;
           false !== g && ("string" == typeof g ? s.appendChild(document.createTextNode(g)) : s.appendChild(g))
         }
       } catch (e) {
@@ -2446,7 +2446,7 @@
         }
       } finally {
         try {
-          h && !h.done && (o = m.return) && o.call(m)
+          m && !m.done && (o = h.return) && o.call(h)
         } finally {
           if (a) throw a.error
         }
@@ -2469,8 +2469,8 @@
         d = r.frameAncestors,
         p = r.frameHeight,
         _ = r.frameWidth,
-        m = r.host,
-        h = r.iframeTitle,
+        h = r.host,
+        m = r.iframeTitle,
         g = r.inquiryId,
         O = r.language,
         v = r.messageTargetOrigin,
@@ -2481,10 +2481,10 @@
         A = r.sessionToken,
         N = r.styleVariant,
         P = r.templateId,
-        R = r.templateVersionId,
-        w = r.themeSetId,
+        w = r.templateVersionId,
+        R = r.themeSetId,
         D = r.widgetPadding,
-        x = !(!P && !R),
+        x = !(!P && !w),
         L = null == P ? true : P.startsWith("itmpl_");
       if (!x && !g) throw Error("Either templateId/templateVersionId or inquiryId must be specified to start a flow");
       if (x && g) throw Error("Only one of templateId/templateVersionId or inquiryId should be specified to start a flow");
@@ -2492,7 +2492,7 @@
         if (S) throw Error("Cannot pass both accountId and referenceId");
         if (a) throw Error("Cannot pass both accountId and accountTypeId")
       }
-      var j = l(m),
+      var j = l(h),
         M = o()({
           "client-version": "5.3.1",
           "container-id": t,
@@ -2500,7 +2500,7 @@
           "routing-country": I,
           "template-id": (L ? null : P) || null,
           "inquiry-template-id": (L ? P : null) || null,
-          "inquiry-template-version-id": R || null,
+          "inquiry-template-version-id": w || null,
           environment: s,
           "environment-id": c,
           "iframe-origin": window.location.origin,
@@ -2514,13 +2514,13 @@
           "account-type-id": a,
           fields: f(null != u ? u : {}),
           "style-variant": N || null,
-          "theme-set-id": w,
+          "theme-set-id": R,
           "widget-padding": D
         }, {
           addQueryPrefix: true,
           skipNulls: true
         });
-      return e.style.maxHeight = E(p), e.style.maxWidth = E(_), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != h ? h : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", b.concat(C).join(" ")), e.frameBorder = "0", e.src = j + "/widget" + M, e.onload = function() {}, e
+      return e.style.maxHeight = E(p), e.style.maxWidth = E(_), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != m ? m : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", b.concat(C).join(" ")), e.frameBorder = "0", e.src = j + "/widget" + M, e.onload = function() {}, e
     }
     var v = function(e) {
       if ("localhost" === e || /^\d+\.\d+\.\d+\.\d+$/.test(e)) return e;
@@ -2539,9 +2539,9 @@
         d = n.templateVersionId,
         f = n.host,
         p = function(n) {
-          var p, _, m = l(null != f ? f : "production");
+          var p, _, h = l(null != f ? f : "production");
           if ("" !== n.origin) try {
-            if (v(new URL(n.origin).host) !== v(new URL(m).host)) return
+            if (v(new URL(n.origin).host) !== v(new URL(h).host)) return
           } catch (e) {
             return
           }
@@ -2581,7 +2581,7 @@
       Client: function() {
         function e(e) {
           var t, n, r, i, a, o, s, l, c, u, d, f = this;
-          this._isLoading = true, this._isOpen = false, this.personaCSS = new m("persona-widget-styles"), this.globalCSS = new m("persona-global-styles"), this.preferredDimensions = null, this.onLoad = function() {
+          this._isLoading = true, this._isOpen = false, this.personaCSS = new h("persona-widget-styles"), this.globalCSS = new h("persona-global-styles"), this.preferredDimensions = null, this.onLoad = function() {
             var e, t;
             f._isLoading = false, f.render(), null == (t = (e = f.options).onLoad) || t.call(e)
           }, this.onReady = function(e) {
@@ -2617,12 +2617,12 @@
             return Math.floor(35 * Math.random()).toString(35)
           }).join(""), this.containerElement.setAttribute("id", this.containerId), this.loadingElement = g("div", {
             class: "persona-widget__centered-frame"
-          }, [h("svg", {
+          }, [m("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "114",
             height: "114",
             class: "persona-widget__loading-spinner"
-          }, [h("path", {
+          }, [m("path", {
             fill: "none",
             stroke: "#0F2B72",
             strokeLinecap: "round",

@@ -50,8 +50,8 @@ let d = [],
   f = new Map,
   p = new Map,
   _ = new Map,
-  m = new Map,
   h = new Map,
+  m = new Map,
   g = {
     botUserIdToAppUsage: {}
   },
@@ -59,16 +59,16 @@ let d = [],
 
 function b(e) {
   let t = f.get(e.id);
-  m.set(e.id, Date.now());
+  h.set(e.id, Date.now());
   let n = e;
   for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), f.set(e.id, n), _.set(e.name.toLowerCase(), n), e.aliases)) _.set(r.toLowerCase(), n);
   if (null != e.linkedGames)
     for (let t of e.linkedGames) null != t.application && b(t.application instanceof o.ZP ? t.application : o.ZP.createFromServer(t.application));
-  h.delete(e.id)
+  m.delete(e.id)
 }
 
 function y() {
-  f.clear(), p.clear(), _.clear(), m.clear(), h.clear()
+  f.clear(), p.clear(), _.clear(), h.clear(), m.clear()
 }
 
 function O(e) {
@@ -108,8 +108,8 @@ function I(e) {
 function T(e) {
   let {
     applicationId: t
-  } = e, n = h.get(t);
-  return h.set(t, true), true !== n
+  } = e, n = m.get(t);
+  return m.set(t, true), true !== n
 }
 
 function C(e) {
@@ -152,20 +152,20 @@ function P(e) {
     }
 }
 
-function R(e) {
+function w(e) {
   let {
     applicationId: t
-  } = e, n = h.get(t);
-  return h.set(t, false), false !== n
+  } = e, n = m.get(t);
+  return m.set(t, false), false !== n
 }
 
-function w(e) {
+function R(e) {
   let {
     applicationIds: t
   } = e, n = false;
   for (let e of t) {
-    let t = h.get(e);
-    h.set(e, true), n = true !== t
+    let t = m.get(e);
+    m.set(e, true), n = true !== t
   }
   return n
 }
@@ -211,8 +211,8 @@ function M(e) {
     applicationIds: t
   } = e, n = false;
   for (let e of t) {
-    let t = h.get(e);
-    h.set(e, false), n = false !== t
+    let t = m.get(e);
+    m.set(e, false), n = false !== t
   }
   return n
 }
@@ -358,16 +358,16 @@ class q extends(r = Chunk442837.ZP.PersistedStore) {
     return _.has(t) ? _.get(t) : true
   }
   getApplicationLastUpdated(e) {
-    return m.get(e)
+    return h.get(e)
   }
   isFetchingApplication(e) {
-    returntrue === h.get(e)
+    returntrue === m.get(e)
   }
   didFetchingApplicationFail(e) {
-    returnfalse === h.get(e)
+    returnfalse === m.get(e)
   }
   getFetchingOrFailedFetchingIds() {
-    return Array.from(h.keys())
+    return Array.from(m.keys())
   }
   getAppIdForBotUserId(e) {
     var t;
@@ -380,8 +380,8 @@ let Q = new q(Chunk570140.Z, {
   OVERLAY_INITIALIZE: I,
   APPLICATION_FETCH: T,
   APPLICATION_FETCH_SUCCESS: A,
-  APPLICATION_FETCH_FAIL: R,
-  APPLICATIONS_FETCH: w,
+  APPLICATION_FETCH_FAIL: w,
+  APPLICATIONS_FETCH: R,
   APPLICATIONS_FETCH_SUCCESS: x,
   APPLICATIONS_FETCH_FAIL: M,
   APPLICATION_UPDATE: C,

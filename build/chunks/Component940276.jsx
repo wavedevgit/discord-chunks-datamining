@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk964385 = require("./964385.js");
 
-function h(e) {
+function m(e) {
   let {
     guild: t,
     isActivityRestricted: n,
@@ -67,9 +67,9 @@ let g = function() {
     }), n("")
   }, S = (0, i.useId)();
   return (0, r.jsxs)("div", {
-    className: m.wrapper,
+    className: h.wrapper,
     children: [(0, r.jsxs)("div", {
-      className: m.headerContainer,
+      className: h.headerContainer,
       children: [(0, r.jsx)(s.E1j, {
         query: t,
         onChange: n,
@@ -93,9 +93,9 @@ let g = function() {
           "aria-expanded": true
         }
       }), e.length > 0 && (0, r.jsxs)("div", {
-        className: m.controlsContainer,
+        className: h.controlsContainer,
         children: [(0, r.jsx)(o.B6, {
-          className: m.select,
+          className: h.select,
           variant: "text-only",
           options: [{
             label: _.intl.string(_.t.STMPJ2),
@@ -133,17 +133,17 @@ let g = function() {
         count: e.length
       })
     }), (0, r.jsxs)("ul", {
-      className: m.guildsList,
+      className: h.guildsList,
       id: S,
       "aria-label": _.intl.string(_.t["7hB4kg"]),
       children: [0 === e.length && (0, r.jsx)("div", {
-        className: m.noResultsContainer,
+        className: h.noResultsContainer,
         children: (0, r.jsx)(s.Text, {
-          className: m.noResultsText,
+          className: h.noResultsText,
           variant: "text-lg/medium",
           children: _.intl.string(_.t["Xe+fJM"])
         })
-      }), e.map(e => (0, r.jsx)(h, {
+      }), e.map(e => (0, r.jsx)(m, {
         guild: e,
         isActivityRestricted: b(e.id),
         onToggleActivityRestrictedGuild: E

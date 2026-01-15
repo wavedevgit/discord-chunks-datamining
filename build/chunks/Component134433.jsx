@@ -2,7 +2,7 @@
 /** chunk id: 134433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,16 +17,16 @@ var Chunk120356 = require("./120356.js"),
   Chunk319796 = require("./319796.js");
 let p = Chunk692547.Z.unsafe_rawColors.PRIMARY_300,
   _ = Chunk692547.Z.unsafe_rawColors.WHITE,
-  m = Chunk692547.Z.unsafe_rawColors.PRIMARY_630;
+  h = Chunk692547.Z.unsafe_rawColors.PRIMARY_630;
 
-function h(e) {
+function m(e) {
   let {
     color: t,
     size: n,
     forcedIconColor: i,
     className: l,
-    iconClassName: h
-  } = e, [g, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.saturation]), b = (0, c.dQu)(p).hex(), y = null != t ? t : b, O = (0, o.ho)((0, o._i)(y), false, g ? E : null), v = (0, c.dQu)(_).hex(), S = (0, c.dQu)(m).hex(), I = null != i ? i : (0, d.B)({
+    iconClassName: m
+  } = e, [g, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.saturation]), b = (0, c.dQu)(p).hex(), y = null != t ? t : b, O = (0, o.ho)((0, o._i)(y), false, g ? E : null), v = (0, c.dQu)(_).hex(), S = (0, c.dQu)(h).hex(), I = null != i ? i : (0, d.B)({
     backgroundColor: y,
     colors: [v, S]
   }), T = n / 8;
@@ -42,7 +42,7 @@ function h(e) {
     children: (0, r.jsx)(c.xPt, {
       size: "custom",
       color: I,
-      className: a()(f.linkIcon, h),
+      className: a()(f.linkIcon, m),
       width: n - 2 * T,
       height: n - 2 * T,
       style: {

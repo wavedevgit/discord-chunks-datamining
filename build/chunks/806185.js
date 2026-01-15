@@ -48,10 +48,12 @@ class l {
   static fromServer(e) {
     return new l(s(a({}, e), {
       dismissibleContent: e.dismissible_content,
-      refTargetBackground: e.ref_target_background
+      refTargetBackground: e.ref_target_background,
+      badgeIcon: e.badge_icon,
+      badgeText: e.badge_text
     }))
   }
   constructor(e) {
-    i(this, "title", true), i(this, "body", true), i(this, "avatar", true), i(this, "decorations", true), i(this, "dismissibleContent", true), i(this, "version", true), i(this, "refTargetBackground", true), this.type = r.Z.COACHTIP, this.title = e.title, this.body = e.body, this.avatar = e.avatar, this.decorations = e.decorations, this.dismissibleContent = e.dismissibleContent, this.version = e.version, this.refTargetBackground = e.refTargetBackground
+    i(this, "title", true), i(this, "body", true), i(this, "avatar", true), i(this, "decorations", true), i(this, "dismissibleContent", true), i(this, "version", true), i(this, "refTargetBackground", true), i(this, "badgeIcon", true), i(this, "badgeText", true), this.type = r.Z.COACHTIP, this.title = e.title, this.body = e.body, this.avatar = e.avatar, this.decorations = e.decorations, this.dismissibleContent = e.dismissibleContent, this.version = e.version, this.refTargetBackground = e.refTargetBackground, this.badgeIcon = e.badgeIcon, this.badgeText = e.badgeText
   }
 }

@@ -92,16 +92,16 @@ let o = e => t => {
       },
       _ = i.setState;
     i.setState = (e, t) => (_(e, t), p());
-    let m = e((...e) => (n(...e), p()), r, i);
-    i.getInitialState = () => m;
-    let h = () => {
+    let h = e((...e) => (n(...e), p()), r, i);
+    i.getInitialState = () => h;
+    let m = () => {
       var e, t;
       if (!f) return;
       c = false, u.forEach(e => {
         var t;
-        return e(null != (t = r()) ? t : m)
+        return e(null != (t = r()) ? t : h)
       });
-      let i = (null == (t = l.onRehydrateStorage) ? true : t.call(l, null != (e = r()) ? e : m)) || true;
+      let i = (null == (t = l.onRehydrateStorage) ? true : t.call(l, null != (e = r()) ? e : h)) || true;
       return o(f.getItem.bind(f))(l.name).then(e => {
         if (e)
           if ("number" != typeof e.version || e.version === l.version) return [false, e.state];
@@ -115,7 +115,7 @@ let o = e => t => {
       }).then(e => {
         var t;
         let [i, a] = e;
-        if (n(s = l.merge(a, null != (t = r()) ? t : m), true), i) return p()
+        if (n(s = l.merge(a, null != (t = r()) ? t : h), true), i) return p()
       }).then(() => {
         null == i || i(s, true), s = r(), c = true, d.forEach(e => e(s))
       }).catch(e => {
@@ -133,7 +133,7 @@ let o = e => t => {
         null == f || f.removeItem(l.name)
       },
       getOptions: () => l,
-      rehydrate: () => h(),
+      rehydrate: () => m(),
       hasHydrated: () => c,
       onHydrate: e => (u.add(e), () => {
         u.delete(e)
@@ -141,5 +141,5 @@ let o = e => t => {
       onFinishHydration: e => (d.add(e), () => {
         d.delete(e)
       })
-    }, l.skipHydration || h(), s || m
+    }, l.skipHydration || m(), s || h
   }

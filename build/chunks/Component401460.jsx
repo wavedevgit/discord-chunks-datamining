@@ -19,10 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk787630 = require("./787630.js");
-let E = () => [h.intl.string(h.t["EgWTY+"]), h.intl.string(h.t.umBn5f), h.intl.string(h.t.dG1wD1), h.intl.string(h.t.SesI4S), h.intl.string(h.t.RnMLvl)],
+let E = () => [m.intl.string(m.t["EgWTY+"]), m.intl.string(m.t.umBn5f), m.intl.string(m.t.dG1wD1), m.intl.string(m.t.SesI4S), m.intl.string(m.t.RnMLvl)],
   b = () => {
     var e;
-    return null != (e = l().sample(E())) ? e : h.intl.string(h.t["EgWTY+"])
+    return null != (e = l().sample(E())) ? e : m.intl.string(m.t["EgWTY+"])
   };
 
 function y(e) {
@@ -33,7 +33,7 @@ function y(e) {
     isSelected: s = false,
     tabIndex: l,
     children: p,
-    locked: h = false
+    locked: m = false
   } = e, [E, y] = i.useState((0, _.aW)(t).name), O = t === f.Ru.PIRATE;
   return (0, r.jsx)(c.u, {
     text: E,
@@ -48,9 +48,9 @@ function y(e) {
         className: o()(g.appIconSelection, {
           [g.selected]: s
         }, n),
-        onClick: s ? m.dG4 : () => null == a ? true : a(t),
+        onClick: s ? h.dG4 : () => null == a ? true : a(t),
         children: p
-      }), s && (0, r.jsx)(d.oK, {}), h && (0, r.jsx)("div", {
+      }), s && (0, r.jsx)(d.oK, {}), m && (0, r.jsx)("div", {
         className: g.lockedBadgeContainer,
         children: (0, r.jsx)(u.mBM, {
           className: g.lockedBadge,

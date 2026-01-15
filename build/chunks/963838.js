@@ -75,7 +75,7 @@ function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : D.v;
   if (null != e.id) {
     var n;
-    return R.ZP.getEmojiURL({
+    return w.ZP.getEmojiURL({
       id: e.id,
       animated: null != (n = e.animated) && n,
       size: t
@@ -83,7 +83,7 @@ function Z(e) {
   }
   let r = A.ZP.convertSurrogateToName(e.name, false),
     i = A.ZP.getByName(r);
-  return null != i ? w.ZP.getURL(i.surrogates) : ""
+  return null != i ? R.ZP.getURL(i.surrogates) : ""
 }
 
 function F(e, t) {

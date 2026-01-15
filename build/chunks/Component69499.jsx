@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ class y extends Chunk473749.PureComponent {
         onSKUSelect: o
       } = e,
       s = g(e, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, r.jsx)(l.Z, h(_({
+    return (0, r.jsx)(l.Z, m(_({
       onClick: this.handleClick,
       onDropdownClick: t.length > 0 ? this.handleContextMenu : null,
       onContextMenu: t.length > 0 ? this.handleContextMenu : true

@@ -34,13 +34,13 @@ function T(e, t, n) {
   if (!(0, p.WF)(e.id)) return void(0, d.V)();
   f.UI.dispatch(S.CkL.POPOUT_CLOSE);
   let r = !o().isEmpty(y.Z.getVoiceStatesForChannel(e.id));
-  if (t || !h.vF.getSetting() || __OVERLAY__ || r) {
+  if (t || !m.vF.getSetting() || __OVERLAY__ || r) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: e.parent_id
-    }), null != n ? (0, m.ad)(e, {
+    }), null != n ? (0, h.ad)(e, {
       source: n
-    }) : (0, m.Kh)(e.id);
+    }) : (0, h.Kh)(e.id);
     return
   }
   i()(null != e.parent_id, "all threads must have parents");
@@ -49,13 +49,13 @@ function T(e, t, n) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: e.parent_id
-    }), null != n ? (0, m.ad)(e, {
+    }), null != n ? (0, h.ad)(e, {
       source: n
-    }) : (0, m.Kh)(e.id);
+    }) : (0, h.Kh)(e.id);
     return
   }
   let l = b.Z.getChannelId();
-  e.parent_id === l || (0, I.ME)(l) || (0, m.Kh)(e.parent_id), (0, _.uL)(S.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, I.ME)(l) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
+  e.parent_id === l || (0, I.ME)(l) || (0, h.Kh)(e.parent_id), (0, _.uL)(S.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, I.ME)(l) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
     source: v.on.FORUM
   } : true), setTimeout(() => {
     O.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
@@ -69,7 +69,7 @@ function C(e, t, n) {
       location: n,
       channel_id: e.id,
       guild_id: e.guild_id
-    }), f.UI.dispatch(S.CkL.POPOUT_CLOSE), b.Z.getChannelId() !== e.id && (0, m.Kh)(e.id), "" === E.Z.getDraft(e.id, E.d.FirstThreadMessage)) {
+    }), f.UI.dispatch(S.CkL.POPOUT_CLOSE), b.Z.getChannelId() !== e.id && (0, h.Kh)(e.id), "" === E.Z.getDraft(e.id, E.d.FirstThreadMessage)) {
     let t = E.Z.getDraft(e.id, E.d.ChannelMessage);
     l.Z.saveDraft(e.id, "", E.d.ChannelMessage), l.Z.saveDraft(e.id, t, E.d.FirstThreadMessage)
   }

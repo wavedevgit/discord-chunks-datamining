@@ -26,16 +26,16 @@ Chunk65183.List, module.exports = function(e) {
       f = e.forceSelection,
       p = e.hasSelection,
       _ = e.selection,
-      m = e.tree,
-      h = t.getKey(),
+      h = e.tree,
+      m = t.getKey(),
       g = t.getText(),
-      E = m.size - 1,
-      b = this.props.children || m.map(function(e, c) {
-        var m = e.get("decoratorKey"),
+      E = h.size - 1,
+      b = this.props.children || h.map(function(e, c) {
+        var h = e.get("decoratorKey"),
           b = e.get("leaves"),
           y = b.size - 1,
           O = b.map(function(e, n) {
-            var i = o.encode(h, c, n),
+            var i = o.encode(m, c, n),
               u = e.get("start"),
               d = e.get("end");
             return l.createElement(a, {
@@ -49,15 +49,15 @@ Chunk65183.List, module.exports = function(e) {
               styleSet: t.getInlineStyleAt(u),
               customStyleMap: s,
               customStyleFn: r,
-              isLast: m === E && n === y
+              isLast: h === E && n === y
             })
           }).toArray();
-        return m && u ? l.createElement(i, {
+        return h && u ? l.createElement(i, {
           block: t,
           children: O,
           contentState: n,
           decorator: u,
-          decoratorKey: m,
+          decoratorKey: h,
           direction: d,
           leafSet: e,
           text: g,
@@ -65,7 +65,7 @@ Chunk65183.List, module.exports = function(e) {
         }) : O
       }).toArray();
     return l.createElement("div", {
-      "data-offset-key": o.encode(h, 0, 0),
+      "data-offset-key": o.encode(m, 0, 0),
       className: c({
         "public/DraftStyleDefault/block": true,
         "public/DraftStyleDefault/ltr": "LTR" === d,

@@ -85,15 +85,15 @@ let C = Chunk473749.forwardRef((e, t) => {
     imageClassName: s,
     readyState: c = _.zo9.READY,
     src: f,
-    placeholder: m,
+    placeholder: h,
     placeholderVersion: E,
     alt: b,
     width: y,
     height: v,
     maxWidth: T = y,
     maxHeight: C = v,
-    minWidth: R = 0,
-    minHeight: w = 0,
+    minWidth: w = 0,
+    minHeight: R = 0,
     mediaLayoutType: D,
     limitResponsiveWidth: x = true,
     accessory: L,
@@ -109,7 +109,7 @@ let C = Chunk473749.forwardRef((e, t) => {
       } = e;
       return (0, r.jsx)("img", {
         className: null != a ? a : true,
-        alt: null != i ? i : h.intl.string(h.t.X4IxWL),
+        alt: null != i ? i : m.intl.string(m.t.X4IxWL),
         src: t,
         style: P(n, o)
       })
@@ -129,8 +129,8 @@ let C = Chunk473749.forwardRef((e, t) => {
       height: v,
       maxWidth: T,
       maxHeight: C,
-      minWidth: R,
-      minHeight: w
+      minWidth: w,
+      minHeight: R
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
   "" !== f && c !== _.zo9.ERROR ? n = k({
@@ -146,7 +146,7 @@ let C = Chunk473749.forwardRef((e, t) => {
   })), n = (0, r.jsx)(p.N, {
     readyState: c,
     aspectRatio: z,
-    placeholder: m,
+    placeholder: h,
     placeholderVersion: E,
     placeholderStyle: P(K, D),
     children: n
@@ -177,7 +177,7 @@ let C = Chunk473749.forwardRef((e, t) => {
         className: g.clickableWrapper,
         tabIndex: null != Z ? Z : 0,
         onClick: G,
-        "aria-label": null != b ? b : h.intl.string(h.t.X4IxWL),
+        "aria-label": null != b ? b : m.intl.string(m.t.X4IxWL),
         "aria-describedby": u.r5,
         innerRef: W,
         focusProps: {
@@ -200,23 +200,23 @@ function A(e) {
   } = e, a = (0, c.ZP)();
   return (0, r.jsx)("div", {
     className: g.imageErrorWrapper,
-    style: R(t, n),
+    style: w(t, n),
     children: (0, r.jsx)("img", {
       src: (0, s.ap)(a) ? b : E,
       className: g.imageError,
-      alt: null != i ? i : h.intl.string(h.t.X4IxWL)
+      alt: null != i ? i : m.intl.string(m.t.X4IxWL)
     })
   })
 }
 
 function N(e, t, n, r) {
-  return r === m.hV.MOSAIC ? {
+  return r === h.hV.MOSAIC ? {
     display: "block",
     maxHeight: "inherit",
     margin: "auto",
-    width: !n && e.width <= m.mT ? e.width : "100%",
+    width: !n && e.width <= h.mT ? e.width : "100%",
     height: "100%"
-  } : r === m.hV.RESPONSIVE ? {
+  } : r === h.hV.RESPONSIVE ? {
     maxWidth: t ? e.width : true,
     width: "100%",
     aspectRatio: "".concat(e.width, " / ").concat(e.height)
@@ -225,25 +225,25 @@ function N(e, t, n, r) {
 
 function P(e, t) {
   switch (t) {
-    case m.hV.MOSAIC:
+    case h.hV.MOSAIC:
       return {
         display: "block", objectFit: "cover", minWidth: "100%", minHeight: "100%", maxWidth: 1 === (0, f.Z)() ? "calc(100% + 1px)" : "100%"
       };
-    case m.hV.RESPONSIVE:
-      return w(e);
+    case h.hV.RESPONSIVE:
+      return R(e);
     default:
       return e
   }
 }
 
-function R(e, t) {
+function w(e, t) {
   switch (t) {
-    case m.hV.MOSAIC:
+    case h.hV.MOSAIC:
       return {
         width: "100%", height: "100%", aspectRatio: "".concat(e.width, " / ").concat(e.height), display: "flex", maxHeight: "inherit"
       };
-    case m.hV.RESPONSIVE:
-      return S(O({}, w(e)), {
+    case h.hV.RESPONSIVE:
+      return S(O({}, R(e)), {
         display: "flex"
       });
     default:
@@ -251,7 +251,7 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function R(e) {
   let {
     width: t,
     height: n

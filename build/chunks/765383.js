@@ -28,7 +28,7 @@ var _ = function(e) {
   return e.ANNOUNCEMENT = "announcement", e.APP_EMBED = "app_embed", e
 }({});
 
-function m(e) {
+function h(e) {
   if ("announcement" === e.type) return {
     event: s.rMx.ANNOUNCEMENT_MESSAGE_VIEWED,
     properties: {
@@ -51,7 +51,7 @@ function m(e) {
   };
   throw Error("Invalid message type for message view tracking")
 }
-class h extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   handleMessageBecameVisible(e) {
     let {
       type: t,
@@ -85,7 +85,7 @@ class h extends Chunk147913.Z {
   }
   drainBuffer() {
     for (let e of this.batchBuffer) {
-      let t = m(e);
+      let t = h(e);
       o.default.track(t.event, t.properties)
     }
     this.batchBuffer = [], null != this.batchTimerId && (clearTimeout(this.batchTimerId), this.batchTimerId = null)
@@ -102,4 +102,4 @@ class h extends Chunk147913.Z {
     })
   }
 }
-let g = new h
+let g = new m

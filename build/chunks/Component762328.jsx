@@ -40,7 +40,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -65,7 +65,7 @@ function y(e) {
   let n, {
       ownerDocument: l = document,
       open: p,
-      onOpenChange: m,
+      onOpenChange: h,
       id: y,
       className: O,
       reference: v,
@@ -76,8 +76,8 @@ function y(e) {
       crossAccessFlip: A = true,
       autoShift: N = true,
       strategy: P = "fixed",
-      portal: R = true,
-      blockPointerEvents: w = false,
+      portal: w = true,
+      blockPointerEvents: R = false,
       children: D,
       renderLayer: x,
       viewportPadding: L = g,
@@ -126,7 +126,7 @@ function y(e) {
   } = (0, o.YF)({
     placement: I,
     open: p,
-    onOpenChange: m,
+    onOpenChange: h,
     strategy: P,
     middleware: G,
     whileElementsMounted: s.Me,
@@ -144,18 +144,18 @@ function y(e) {
   }), {
     getReferenceProps: z,
     getFloatingProps: q
-  } = (0, o.NI)([W, K]), Q = (null == (t = V.hide) ? true : t.referenceHidden) ? "hidden" : "visible", X = R ? d.UU : i.Fragment;
+  } = (0, o.NI)([W, K]), Q = (null == (t = V.hide) ? true : t.referenceHidden) ? "hidden" : "visible", X = w ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [D({
       ref: Z.setReference,
       props: z()
     }), p && (0, r.jsxs)(X, {
       ownerDocument: l,
-      children: [w ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", h(_({
+      children: [R ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", m(_({
         id: y,
         className: c()(O, f.layer),
         [b]: true,
-        style: h(_({}, F), {
+        style: m(_({}, F), {
           visibility: Q
         }),
         ref: Z.setFloating

@@ -2,8 +2,8 @@
 /** chunk id: 156518, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => m,
-  Z: () => h
+  Y: () => h,
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     analyticsLocation: n
@@ -33,15 +33,15 @@ function m(e) {
     onFriendRequestSent: () => o({
       action: "SEND_FRIEND_REQUEST"
     })
-  }), m = (0, l.Z)({
+  }), h = (0, l.Z)({
     user: t
-  }), h = (0, c.Z)({
+  }), m = (0, c.Z)({
     user: t
   });
-  return i.useMemo(() => [r ? null : _, m, h].filter(d.lm), [m, _, r, h])
+  return i.useMemo(() => [r ? null : _, h, m].filter(d.lm), [h, _, r, m])
 }
 
-function h(e) {
+function m(e) {
   let {
     menuItems: t,
     children: n,

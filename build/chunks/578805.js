@@ -18,8 +18,8 @@ if (require("./738146.js")() || require("./247131.js")()) {
     Chunk887937 = require("./887937.js"),
     p = Chunk887937("Array.prototype.push"),
     _ = Chunk887937("String.prototype.charCodeAt"),
-    m = Chunk887937("String.prototype.slice"),
-    h = function(e, t) {
+    h = Chunk887937("String.prototype.slice"),
+    m = function(e, t) {
       if (t + 1 >= e.length) return t + 1;
       var n = _(e, t);
       if (n < 55296 || n > 56319) return t + 1;
@@ -44,8 +44,8 @@ if (require("./738146.js")() || require("./247131.js")()) {
         var n = 0;
         return {
           next: function() {
-            var t = h(e, n),
-              r = m(e, n, t);
+            var t = m(e, n),
+              r = h(e, n, t);
             return n = t, {
               done: t > e.length,
               value: r

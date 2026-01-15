@@ -42,8 +42,8 @@ let d = e => {
       children: f,
       className: p,
       listPadding: _,
-      rowCount: m,
-      getScrollOffsetForIndex: h,
+      rowCount: h,
+      getScrollOffsetForIndex: m,
       categoryHeight: g,
       onScroll: E,
       renderCategoryListItem: b,
@@ -53,7 +53,7 @@ let d = e => {
     d({
       activeIndex: v,
       categoryListRef: t,
-      getScrollOffsetForIndex: h
+      getScrollOffsetForIndex: m
     });
     let S = i.useCallback(e => {
         let {
@@ -74,7 +74,7 @@ let d = e => {
         onScroll: E,
         ref: t,
         renderRow: I,
-        rowCount: m,
+        rowCount: h,
         rowHeight: T,
         hideScrollbar: true,
         rowCountBySection: y,

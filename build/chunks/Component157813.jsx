@@ -61,10 +61,10 @@ function _(e) {
     hideTooltip: _ = false
   } = e;
 
-  function m() {
+  function h() {
     l.Z.toggleParticipants(t, !a)
   }
-  let h = i.useCallback(e => {
+  let m = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -79,8 +79,8 @@ function _(e) {
   return (0, r.jsx)(c.Z, {
     label: a ? u.intl.string(u.t.QJMRUB) : u.intl.string(u.t.vZiwmG),
     className: o()(d.participantsButton, n),
-    onClick: m,
-    iconComponent: h,
+    onClick: h,
+    iconComponent: m,
     shouldShowTooltip: !_
   })
 }

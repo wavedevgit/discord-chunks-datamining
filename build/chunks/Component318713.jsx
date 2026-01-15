@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -64,8 +64,8 @@ let E = Chunk473749.memo(function(e) {
       compact: a = false,
       timestamp: p,
       timestampFormat: _,
-      isVisibleOnlyOnHover: m = false,
-      cozyAlt: h = false,
+      isVisibleOnlyOnHover: h = false,
+      cozyAlt: m = false,
       isInline: E = true,
       id: y,
       isEdited: O = false,
@@ -77,9 +77,9 @@ let E = Chunk473749.memo(function(e) {
     return (0, r.jsx)("span", {
       className: o()(n, A, {
         [f.timestamp]: true,
-        [f.timestampVisibleOnHover]: m,
+        [f.timestampVisibleOnHover]: h,
         [f.timestampInline]: E,
-        [f.alt]: h
+        [f.alt]: m
       }),
       children: null == v ? (0, r.jsx)(s.u, {
         asContainer: true,
@@ -116,7 +116,7 @@ let E = Chunk473749.memo(function(e) {
       timestamp: o,
       id: s
     } = e;
-    return (0, r.jsx)("time", h(_({}, t), {
+    return (0, r.jsx)("time", m(_({}, t), {
       id: s,
       dateTime: o.toISOString(),
       children: null != i ? i : (0, r.jsxs)(r.Fragment, {

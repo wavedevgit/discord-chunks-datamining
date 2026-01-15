@@ -42,16 +42,16 @@ function w(e) {
     analyticsLocations: o
   } = (0, d.ZP)(), u = (0, s.e7)([h.ZP], () => h.ZP.getMember(i, r.id), [r, i]), f = (0, b.X7)(null == u ? true : u.guildId, null == u ? true : u.userId, null != (t = null == u ? true : u.colorStrings) ? t : null);
   return (0, l.jsxs)("div", {
-    className: E.row,
+    className: k.row,
     children: [(0, l.jsx)(c.qEK, {
       size: c.EFr.SIZE_20,
       src: r.getAvatarURL(i, 20),
       "aria-label": null != (n = null == u ? true : u.nick) ? n : m.ZP.getName(r),
-      className: E.icon
+      className: k.icon
     }), (0, l.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      children: k.intl.format(k.t["66DLFs"], {
+      children: S.intl.format(S.t["66DLFs"], {
         usernameHook: function() {
           var e, t;
           return (0, l.jsx)(c.P3F, {
@@ -62,7 +62,7 @@ function w(e) {
               roleId: null == u ? true : u.colorRoleId,
               sourceAnalyticsLocations: o
             }),
-            className: E.creator,
+            className: k.creator,
             tag: "span",
             role: "link",
             children: (0, l.jsx)(c.PUh, {
@@ -77,7 +77,7 @@ function w(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   let {
     guild: t,
     onClick: n,
@@ -89,25 +89,25 @@ function O(e) {
       guild: t,
       size: u.Z.Sizes.MINI,
       active: true,
-      className: a()(E.guildIcon, E.icon)
+      className: a()(k.guildIcon, k.icon)
     }), (0, l.jsx)(f.Z, {
       guild: t,
       tooltipPosition: "top",
       tooltipColor: c.aML.Colors.PRIMARY,
       size: 16,
-      className: E.guildBadge
+      className: k.guildBadge
     }), (0, l.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      className: E.linkText,
+      className: k.linkText,
       children: t.name
     })]
   });
   return (0, l.jsx)("div", {
-    className: E.row,
+    className: k.row,
     children: null != n ? (0, l.jsx)(c.P3F, {
       onClick: s,
-      className: E.clickable,
+      className: k.clickable,
       role: "link",
       children: o
     }) : o
@@ -120,20 +120,20 @@ function T(e) {
     onClick: n
   } = e;
   return (0, l.jsxs)("div", {
-    className: E.row,
+    className: k.row,
     children: [(0, l.jsx)(c.BFJ, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: E.icon
+      className: k.icon
     }), (0, l.jsx)(c.P3F, {
       onClick: n,
-      className: E.interestedCount,
+      className: k.interestedCount,
       children: (0, l.jsx)(c.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: k.intl.format(k.t["+DLsD8"], {
+        children: S.intl.format(S.t["+DLsD8"], {
           count: t
         })
       })
@@ -154,22 +154,22 @@ function R(e) {
     setRecurrenceId: x
   } = e, h = (0, s.e7)([g.Z], () => null != g.Z.getGuild(n.id), [n.id]), {
     startTime: m,
-    endTime: k
-  } = (0, p.ZP)(t, b), R = (0, N.Z)(t.guild_id, t.id, b), L = r.useCallback(e => {
+    endTime: S
+  } = (0, _.ZP)(t, b), R = (0, N.Z)(t.guild_id, t.id, b), L = r.useCallback(e => {
     e.stopPropagation(), null != t && (0, o.Bk)(t)
-  }, [t]), B = (0, _.Z)(b, t.id), D = (0, j.Z)(t);
+  }, [t]), B = (0, p.Z)(b, t.id), D = (0, v.Z)(t);
   r.useEffect(() => {
-    v.Z.getGuildEventUserCounts(n.id, t.id, null != b ? [b] : []), v.Z.getGuildEventsForCurrentUser(n.id)
+    j.Z.getGuildEventUserCounts(n.id, t.id, null != b ? [b] : []), j.Z.getGuildEventsForCurrentUser(n.id)
   }, [n.id, t.id, b]);
   let F = (0, I.KV)(t.recurrence_rule),
     M = (null == t ? true : t.scheduled_start_time) != null ? (0, Z.lh)(B, m, new Date(null == t ? true : t.scheduled_start_time)) : null;
   return (0, l.jsxs)("div", {
     ref: f,
     children: [(0, l.jsxs)("div", {
-      className: E.header,
-      children: [(0, l.jsx)(y.z, {
+      className: k.header,
+      children: [(0, l.jsx)(O.z, {
         startTime: m.toISOString(),
-        endTime: null == k ? true : k.toISOString(),
+        endTime: null == S ? true : S.toISOString(),
         status: null != M ? M : t.status,
         eventType: t.entity_type,
         guildEventId: t.id,
@@ -178,16 +178,16 @@ function R(e) {
         id: a,
         variant: "heading-lg/semibold",
         color: "text-strong",
-        className: E.title,
+        className: k.title,
         children: t.name
       })]
     }), (0, l.jsxs)("div", {
-      className: E.body,
-      children: [(0, l.jsx)(O, {
+      className: k.body,
+      children: [(0, l.jsx)(E, {
         guild: n,
         onClick: h ? L : true,
         onClose: d
-      }), (0, l.jsx)(P.Z, {
+      }), (0, l.jsx)(C.Z, {
         guildScheduledEvent: t,
         channel: i,
         onClose: d
@@ -199,16 +199,16 @@ function R(e) {
         guildId: n.id,
         channelId: null == i ? true : i.id
       }, D.id), null != t.description && (0, l.jsx)("div", {
-        className: E.description,
-        children: (0, l.jsx)(C.Z, {
+        className: k.description,
+        children: (0, l.jsx)(y.Z, {
           description: t.description,
           truncate: false,
           guildId: n.id
         })
       })]
     }), null != F && (0, l.jsx)("hr", {
-      className: E.divider
-    }), null != F && (0, l.jsx)(S.Z, {
+      className: k.divider
+    }), null != F && (0, l.jsx)(P.Z, {
       guildId: n.id,
       recurrenceRule: F,
       guildEventId: t.id,

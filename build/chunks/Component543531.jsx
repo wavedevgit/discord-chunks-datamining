@@ -45,9 +45,9 @@ function p(e) {
       foregroundColor: d = s.Z.unsafe_rawColors.BRAND_500.css,
       backgroundColor: p = "var(--interactive-background-active)",
       foregroundGradientColor: _,
-      animate: m = true
+      animate: h = true
     } = e,
-    h = null != a ? a : 0;
+    m = null != a ? a : 0;
   return t = null != _ ? {
     background: "linear-gradient(to right, ".concat(_[0], ", ").concat(_[1], ")")
   } : {
@@ -57,22 +57,22 @@ function p(e) {
     style: {
       backgroundColor: p
     },
-    children: h !== f && "number" == typeof h ? (0, r.jsx)("div", {
+    children: m !== f && "number" == typeof m ? (0, r.jsx)("div", {
       className: o()(l.progressBar, l[c], {
-        [l.animating]: m
+        [l.animating]: h
       }),
       style: u({
-        transform: "translate3d(".concat(Math.min(Math.max(0, h), 100) - 100, "%, 0, 0)")
+        transform: "translate3d(".concat(Math.min(Math.max(0, m), 100) - 100, "%, 0, 0)")
       }, t)
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)("div", {
         className: o()(l.indeterminateBar1, l[c], {
-          [l.animating]: m
+          [l.animating]: h
         }),
         style: t
       }), (0, r.jsx)("div", {
         className: o()(l.indeterminateBar2, l[c], {
-          [l.animating]: m
+          [l.animating]: h
         }),
         style: t
       })]

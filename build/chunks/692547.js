@@ -62,7 +62,7 @@ let {
         if (1 === f) return P.unsafe_rawColors[d].resolve(t);
         {
           let e = N[d];
-          return 0 !== e.alpha() && 1 !== f && (e = e.alpha(f)), R(e, t.saturation)
+          return 0 !== e.alpha() && 1 !== f && (e = e.alpha(f)), w(e, t.saturation)
         }
       }
     }
@@ -74,7 +74,7 @@ let {
       css: x(n),
       resolve(e) {
         var t;
-        return R(r, null != (t = null == e ? true : e.saturation) ? t : 1)
+        return w(r, null != (t = null == e ? true : e.saturation) ? t : 1)
       }
     }
   }),
@@ -100,34 +100,34 @@ let {
   }))
 };
 
-function R(e, t) {
+function w(e, t) {
   return {
     spring() {
       let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-      return w(e, t, n).hex("rgba")
+      return R(e, t, n).hex("rgba")
     },
     hsl() {
       let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-      return w(e, t, n).css("hsl")
+      return R(e, t, n).css("hsl")
     },
     hex() {
       let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-      return w(e, t, n).hex()
+      return R(e, t, n).hex()
     },
     int() {
       let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
-        r = w(e, t, n),
+        r = R(e, t, n),
         i = r.num();
       return 1 !== r.alpha() ? i << 8 | Math.round(255 * r.alpha()) : i
     },
     rgba() {
       let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-      return w(e, t, n).rgba()
+      return R(e, t, n).rgba()
     }
   }
 }
 
-function w(e, t, n) {
+function R(e, t, n) {
   var r;
   let i = o()(null != (r = n.opacity) ? r : 1, 0, 1),
     a = e;

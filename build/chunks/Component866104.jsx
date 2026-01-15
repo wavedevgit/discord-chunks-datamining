@@ -51,11 +51,11 @@ function C(e) {
 }
 
 function A(e) {
-  return (0, s.cj)([m.ZP, h.default], () => {
+  return (0, s.cj)([h.ZP, m.default], () => {
     var t, n;
-    let r = h.default.getCurrentUser();
+    let r = m.default.getCurrentUser();
     o()(null != r, "user cannot be null");
-    let i = m.ZP.getMember(e, r.id);
+    let i = h.ZP.getMember(e, r.id);
     return {
       nickname: null != (t = null == i ? true : i.nick) ? t : E.ZP.getName(r),
       nickcolor: null != (n = null == i ? true : i.colorString) ? n : true
@@ -100,13 +100,13 @@ function P(e) {
     nickcolor: p
   } = A(s), {
     isTruncated: _,
-    ExpandableTextContainer: m
-  } = (0, y.s)(), h = () => (0, S.Z)({
+    ExpandableTextContainer: h
+  } = (0, y.s)(), m = () => (0, S.Z)({
     guildId: s
   }), g = (null != (n = null == o || null == (t = o.description) ? true : t.trim().length) ? n : 0) > 0, [E, b] = i.useState(1), P = (0, c.Z)("(max-width: 1439px)"), {
-    selectedTab: R,
-    isPhantomPreview: w
-  } = (0, O.m)(), D = R === v.y.GUILD_PRODUCTS_PREVIEW ? I.intl.string(I.t["LvXy/H"]) : I.intl.string(I.t.XyqKh8), x = e => {
+    selectedTab: w,
+    isPhantomPreview: R
+  } = (0, O.m)(), D = w === v.y.GUILD_PRODUCTS_PREVIEW ? I.intl.string(I.t["LvXy/H"]) : I.intl.string(I.t.XyqKh8), x = e => {
     null != e && e.clientHeight > 30 && b(2)
   };
 
@@ -119,7 +119,7 @@ function P(e) {
     }, t)
   }
   let j = g ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m, {
+    children: [(0, r.jsx)(h, {
       lineClamp: P || 2 === E ? 2 : 3,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
@@ -130,13 +130,13 @@ function P(e) {
       children: [(0, r.jsx)(l.LZC, {
         size: 4
       }), (0, r.jsx)(C, {
-        onClick: h
+        onClick: m
       })]
     })]
   }) : (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: w ? D : I.intl.string(I.t["NY/FIW"])
+    children: R ? D : I.intl.string(I.t["NY/FIW"])
   });
   return (0, r.jsxs)("div", {
     className: T.container,
@@ -146,7 +146,7 @@ function P(e) {
         children: (0, r.jsx)(f.Z, {
           guild: a,
           size: f.Z.Sizes.LARGER,
-          iconSrc: null == a.icon || w ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
+          iconSrc: null == a.icon || R ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
         })
       }), (0, r.jsx)(l.LZC, {
         size: 16,
@@ -158,7 +158,7 @@ function P(e) {
             variant: "heading-xl/semibold",
             color: "text-strong",
             lineClamp: 2,
-            children: w ? I.intl.string(I.t.rtgp7q) : I.intl.formatToPlainString(I.t.NZeik9, {
+            children: R ? I.intl.string(I.t.rtgp7q) : I.intl.formatToPlainString(I.t.NZeik9, {
               guildName: a.name
             })
           })
@@ -177,7 +177,7 @@ function P(e) {
       })]
     }), (0, r.jsx)(N, {
       coverImageAsset: null == o ? true : o.cover_image_asset,
-      isPreview: w
+      isPreview: R
     })]
   })
 }

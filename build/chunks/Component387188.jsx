@@ -99,13 +99,13 @@ function S(e) {
     compact: n,
     usernameHook: a
   } = e, o = t.content, [l, u] = i.useState(false), _ = (0, d.ZP)(t), O = a(_), v = (0, g.xE)(o), S = i.useCallback(() => {
-    null != v && h.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    null != v && m.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: ":".concat(v.name, ":"),
       rawText: o,
       addSpace: true
     })
   }, [v, o]), I = i.useMemo(() => null == v ? null : {
-    src: m.ZP.getEmojiURL({
+    src: h.ZP.getEmojiURL({
       id: v.id,
       animated: v.animated,
       size: 48
@@ -115,7 +115,7 @@ function S(e) {
     animated: v.animated
   }, [v]);
   return (0, r.jsx)(p.Z, {
-    iconNode: (0, r.jsx)(s.EO4, {
+    iconNode: (0, r.jsx)(s.ReactionIcon, {
       size: "refresh_sm",
       color: "currentColor"
     }),

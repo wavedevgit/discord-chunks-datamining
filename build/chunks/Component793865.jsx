@@ -33,7 +33,7 @@ function g(e) {
     let e = d.default.getCurrentUser();
     return a()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
   }), O = (0, u.M)({
-    deviceType: m.h7.VIDEO_INPUT,
+    deviceType: h.h7.VIDEO_INPUT,
     analyticsLocations: b,
     showAllDevices: true,
     asSubmenu: i
@@ -44,7 +44,7 @@ function g(e) {
       onClose: t,
       navId: "video-device-context",
       variant: "fixed",
-      "aria-label": h.intl.string(h.t.F122Gz),
+      "aria-label": m.intl.string(m.t.F122Gz),
       onSelect: n,
       onInteraction: E,
       children: [O, (0, r.jsxs)(s.kSQ, {

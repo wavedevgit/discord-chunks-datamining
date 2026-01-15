@@ -25,8 +25,8 @@ let d = {
         orientation: f,
         radioPosition: p,
         withTransparentBackground: _,
-        label: m,
-        description: h,
+        label: h,
+        description: m,
         withDescriptions: g,
         withIcons: E
       } = e, [b, y] = i.useState("option1"), O = [a.d, o.A, s.x, l.e, c.U], v = Array.from({
@@ -51,8 +51,8 @@ let d = {
         orientation: f,
         radioPosition: p,
         withTransparentBackground: _,
-        label: m,
-        description: h
+        label: h,
+        description: m
       })
     },
     controls: {

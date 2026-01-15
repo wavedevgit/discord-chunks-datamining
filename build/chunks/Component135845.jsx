@@ -35,14 +35,14 @@ function S(e) {
       onAcceptInstantInvite: A
     } = e,
     N = null == I ? true : I.id,
-    P = (0, l.e7)([m.Z], () => m.Z.getGuildId()),
-    R = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getActiveStreamForUser(a.target_user.id, N) : null, [a, N]),
-    w = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getStreamForUser(a.target_user.id, N) : null, [a, N]),
+    P = (0, l.e7)([h.Z], () => h.Z.getGuildId()),
+    w = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getActiveStreamForUser(a.target_user.id, N) : null, [a, N]),
+    R = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getStreamForUser(a.target_user.id, N) : null, [a, N]),
     {
       analyticsLocations: D
     } = (0, d.ZP)(u.Z.INVITE_EMBED),
-    x = null != a && a.target_type === y.Iq.STREAM && null != a.target_user && null != R,
-    L = null != a && null != w && null != a.channel && null != a.guild && w.channelId === a.channel.id && w.guildId === a.guild.id;
+    x = null != a && a.target_type === y.Iq.STREAM && null != a.target_user && null != w,
+    L = null != a && null != R && null != a.channel && null != a.guild && R.channelId === a.channel.id && R.guildId === a.guild.id;
   o()(null != a, "Invite cannot be null");
   let {
     target_type: j,
@@ -63,7 +63,7 @@ function S(e) {
     Z = null != I;
   if (null == I) {
     if (null == a.guild) return (0, r.jsx)(E.Z, {});
-    I = (0, h.Qs)(a.guild)
+    I = (0, m.Qs)(a.guild)
   }
   let F = null != a.channel ? (0, p.jD)(a.channel) : null,
     B = g.ZP.getName(M),

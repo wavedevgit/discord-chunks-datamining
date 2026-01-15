@@ -16,7 +16,7 @@ var a, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +32,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function N(e, t) {
       userId: n,
       streamId: r,
       rtcServerId: i,
-      context: m.Yn.DEFAULT,
+      context: h.Yn.DEFAULT,
       mediaEngineConnectionId: a.getMediaEngineConnectionId()
     }))
   }), a.on(l.z.Ping, (e, t) => {
@@ -166,11 +166,11 @@ function P() {
   }), r.destroy(), r = null, v = null, C = false
 }
 
-function R(e) {
+function w(e) {
   return i = e.sessionId, b = null, O = null, P(), false
 }
 
-function w() {
+function R() {
   i = null, b = null, O = null, P()
 }
 
@@ -256,7 +256,7 @@ function H(e) {
     context: t,
     wants: n
   } = e;
-  if (t !== m.Yn.DEFAULT || !Object.entries(n).some(e => {
+  if (t !== h.Yn.DEFAULT || !Object.entries(n).some(e => {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
@@ -387,10 +387,10 @@ class z extends(a = Chunk442837.ZP.Store) {
     return C
   }
 }
-h(z, "displayName", "RTCConnectionStore");
+m(z, "displayName", "RTCConnectionStore");
 let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
-  CONNECTION_OPEN: R,
-  CONNECTION_CLOSED: w,
+  CONNECTION_OPEN: w,
+  CONNECTION_CLOSED: R,
   RTC_CONNECTION_STATE: F,
   RTC_CONNECTION_PING: V,
   RTC_CONNECTION_LOSS_RATE: V,

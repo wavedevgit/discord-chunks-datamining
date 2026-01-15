@@ -32,7 +32,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,7 +57,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -117,8 +117,8 @@ function y(e, t, n) {
   let f = l.ZP.getUserState(),
     p = l.ZP.getContextState(e),
     _ = l.ZP.getApplicationState(n),
-    m = null != (d = null != (u = null == (i = f.result) || null == (r = i.sections) ? true : r[n]) ? u : null == (o = p.result) || null == (a = o.sections) ? true : a[n]) ? d : null == (c = _.result) || null == (s = c.sections) ? true : s[n];
-  return null == m ? true : m.descriptor
+    h = null != (d = null != (u = null == (i = f.result) || null == (r = i.sections) ? true : r[n]) ? u : null == (o = p.result) || null == (a = o.sections) ? true : a[n]) ? d : null == (c = _.result) || null == (s = c.sections) ? true : s[n];
+  return null == h ? true : h.descriptor
 }
 
 function O(e, t, n) {
@@ -149,10 +149,10 @@ function S(e) {
     allowFetch: c
   } = e, u = "channel" === t.type ? t.channel.guild_id : null, d = (0, i.e7)([a.Z], () => a.Z.getGuild(u), [u]), {
     descriptors: _,
-    commands: h,
+    commands: m,
     sectionedCommands: E,
     loading: b
-  } = (0, l.JK)(t, d, n, g(m({}, o), {
+  } = (0, l.JK)(t, d, n, g(h({}, o), {
     allowFetch: c
   })), [y, O] = r.useState(null), v = r.useMemo(() => {
     var e;
@@ -161,7 +161,7 @@ function S(e) {
   return r.useMemo(() => {
     let e = {
       loading: b,
-      commands: h,
+      commands: m,
       activeSections: _,
       commandsByActiveSection: E,
       filteredSectionId: y,
@@ -190,10 +190,10 @@ function S(e) {
           data: v
         }]
       }
-      e.commands = [...h, ...v]
+      e.commands = [...m, ...v]
     }
     return e
-  }, [b, h, _, E, y, v])
+  }, [b, m, _, E, y, v])
 }
 
 function I(e, t, n) {

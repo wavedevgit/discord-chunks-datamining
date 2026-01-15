@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ir: () => _,
-  RT: () => m,
+  RT: () => h,
   ZP: () => v
 });
 var r, Chunk31775 = require("./31775.js"),
@@ -70,14 +70,14 @@ function p(e, t) {
 var _ = function(e) {
   return e.VOICE_MESSAGE = "voice_message", e
 }({});
-let m = (e, t) => "".concat(e, "-").concat(t),
-  h = 25,
+let h = (e, t) => "".concat(e, "-").concat(t),
+  m = 25,
   g = {
     rates: {
       voice_message: 1
     },
     positions: new(a())({
-      max: h
+      max: m
     })
   },
   E = c({}, g);

@@ -74,8 +74,8 @@ let _ = Chunk473749.forwardRef(function(e, t) {
     children: u,
     showPageCount: p = true
   } = e, _ = f(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
-  let m = n <= 0,
-    h = n >= i - 1,
+  let h = n <= 0,
+    m = n >= i - 1,
     g = p ? o.intl.format(o.t.MtpIwg, {
       currentPage: n + 1,
       numPages: i
@@ -92,7 +92,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
         children: [(0, r.jsx)(a.hU, {
           variant: "icon-only",
           icon: a.V7D,
-          disabled: m,
+          disabled: h,
           onClick: () => l(n - 1),
           "aria-label": o.intl.string(o.t.vgfxaA)
         }), (0, r.jsx)(a.Text, {
@@ -101,7 +101,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
         }), (0, r.jsx)(a.hU, {
           variant: "icon-only",
           icon: a.Fbu,
-          disabled: h,
+          disabled: m,
           onClick: () => l(n + 1),
           "aria-label": o.intl.string(o.t.XiOHRX)
         })]

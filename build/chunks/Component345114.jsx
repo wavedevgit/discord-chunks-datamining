@@ -34,7 +34,7 @@ function b(e) {
   })(t), {
     analyticsLocations: u
   } = (0, s.ZP)(o.Z.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), p = r.roleSubscriptionData, _ = i.useCallback(() => {
-    (0, d.uL)(m.Z5c.CHANNEL(a, h.oC.ROLE_SUBSCRIPTIONS), {
+    (0, d.uL)(h.Z5c.CHANNEL(a, m.oC.ROLE_SUBSCRIPTIONS), {
       sourceLocationStack: u
     }), (null == p ? true : p.role_subscription_listing_id) != null && (0, f.y8)(a, n.id, r.id, p.role_subscription_listing_id)
   }, [a, n, r, p, u]);

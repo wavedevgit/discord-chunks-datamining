@@ -17,7 +17,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk524484 = require("./524484.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -124,7 +124,7 @@ function N(e) {
   var t, n, r, i, a, s;
   let l = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     c = I.get(A(e)),
-    u = E(h({}, c, e), {
+    u = E(m({}, c, e), {
       value: null != (n = null != (t = e.value) ? t : null == c ? true : c.value) ? n : 0,
       multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? true : c.multiplier) ? i : 1, O),
       decayInterval: null != (a = null == c ? true : c.decayInterval) ? a : new o.Xp
@@ -135,11 +135,11 @@ function N(e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
         var t;
-        null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (N(E(h({}, e), {
+        null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (N(E(m({}, e), {
           value: 0,
           multiplier: 1
         })), j.emitChange())
-      } else N(E(h({}, e), {
+      } else N(E(m({}, e), {
         value: e.value - 1
       })), j.emitChange()
     }
@@ -150,7 +150,7 @@ function P(e) {
   C.set(e.messageId, e)
 }
 
-function R(e) {
+function w(e) {
   var {
     type: t
   } = e, n = b(e, ["type"]);
@@ -158,7 +158,7 @@ function R(e) {
   N(n)
 }
 
-function w(e) {
+function R(e) {
   let {
     comboMessage: t
   } = e;
@@ -231,10 +231,10 @@ class L extends(r = Chunk442837.ZP.Store) {
     return null != i ? (0, f.KH)(i, r) * n : 0
   }
 }
-m(L, "displayName", "PoggermodeStore");
+h(L, "displayName", "PoggermodeStore");
 let j = new L(Chunk570140.Z, {
-    POGGERMODE_UPDATE_COMBO: R,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
+    POGGERMODE_UPDATE_COMBO: w,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: R,
     MESSAGE_CREATE: x
   }),
   M = j

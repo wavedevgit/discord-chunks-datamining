@@ -14,22 +14,22 @@ module.exports = function(e, t, n, o, s, l) {
   }
   var _ = l.get(e);
   if (_ && l.get(t)) return _ == t;
-  var m = true;
+  var h = true;
   l.set(e, t), l.set(t, e);
-  for (var h = c; ++f < d;) {
+  for (var m = c; ++f < d;) {
     var g = e[p = u[f]],
       E = t[p];
     if (o) var b = c ? o(E, g, p, t, e, l) : o(g, E, p, e, t, l);
     if (!(true === b ? g === E || s(g, E, n, o, l) : b)) {
-      m = false;
+      h = false;
       break
     }
-    h || (h = "constructor" == p)
+    m || (m = "constructor" == p)
   }
-  if (m && !h) {
+  if (h && !m) {
     var y = e.constructor,
       O = t.constructor;
-    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (m = false)
+    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (h = false)
   }
-  return l.delete(e), l.delete(t), m
+  return l.delete(e), l.delete(t), h
 }

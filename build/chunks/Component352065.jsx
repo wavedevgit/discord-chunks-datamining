@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ function E(e) {
     transitionState: n,
     animationVariant: a = "default",
     returnRef: _,
-    "aria-label": h,
+    "aria-label": m,
     onClose: E,
     trackingProps: b,
     children: y
@@ -75,11 +75,11 @@ function E(e) {
   } = (0, u.TCT)(), T = (0, c.hvB)(n, a);
   return (0, r.jsx)(c.tCf.Provider, {
     value: v,
-    children: (0, r.jsx)(u.VqE, g(m({
+    children: (0, r.jsx)(u.VqE, g(h({
       id: O,
       role: "dialog",
-      "aria-label": h,
-      "aria-labelledby": null != h ? true : v.headingId,
+      "aria-label": m,
+      "aria-labelledby": null != m ? true : v.headingId,
       returnRef: _
     }, b), {
       impressionType: null != (t = null == b ? true : b.impressionType) ? t : l.ImpressionTypes.MODAL,

@@ -54,11 +54,11 @@ function f(e) {
 }
 let p = {},
   _ = {},
-  m = {},
-  h = {};
+  h = {},
+  m = {};
 
 function g() {
-  m = {}
+  h = {}
 }
 
 function E(e) {
@@ -67,8 +67,8 @@ function E(e) {
     applicationId: n,
     userIds: r
   } = e, i = f(r);
-  m = d(c({}, m), {
-    [n]: d(c({}, null != (t = m[n]) ? t : {}), {
+  h = d(c({}, h), {
+    [n]: d(c({}, null != (t = h[n]) ? t : {}), {
       [i]: {
         state: "loading"
       }
@@ -85,8 +85,8 @@ function b(e) {
     application: a,
     numItemsRequested: o
   } = e, s = f(i);
-  m = d(c({}, m), {
-    [a.id]: d(c({}, null != (t = m[a.id]) ? t : {}), {
+  h = d(c({}, h), {
+    [a.id]: d(c({}, null != (t = h[a.id]) ? t : {}), {
       [s]: {
         state: "success",
         data: {
@@ -105,9 +105,9 @@ function y(e) {
     applicationId: n,
     userIds: r
   } = e, i = f(r);
-  if (null != m[n] && null != m[n][i] && "success" === m[n][i].state) returnfalse;
-  m = d(c({}, m), {
-    [n]: d(c({}, null != (t = m[n]) ? t : {}), {
+  if (null != h[n] && null != h[n][i] && "success" === h[n][i].state) returnfalse;
+  h = d(c({}, h), {
+    [n]: d(c({}, null != (t = h[n]) ? t : {}), {
       [i]: {
         state: "error"
       }
@@ -187,12 +187,12 @@ function C(e) {
     guildId: t,
     announcement: n
   } = e;
-  h[t] = n, h = c({}, h)
+  m[t] = n, m = c({}, m)
 }
 
 function A() {
   if (r === s.default.locale) returnfalse;
-  r = s.default.locale, p = {}, _ = {}, m = {}
+  r = s.default.locale, p = {}, _ = {}, h = {}
 }
 class N extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -206,10 +206,10 @@ class N extends(i = Chunk442837.ZP.Store) {
   }
   recommendationsByApplicationsAndUsers(e, t) {
     var n;
-    if (null != t && 0 !== t.length) return null == (n = m[e]) ? true : n[f(t)]
+    if (null != t && 0 !== t.length) return null == (n = h[e]) ? true : n[f(t)]
   }
   getAnnouncement(e) {
-    return h[e]
+    return m[e]
   }
 }
 l(N, "displayName", "SocialLayerStorefrontStore");

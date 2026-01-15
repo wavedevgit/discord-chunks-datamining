@@ -7,8 +7,8 @@ var Chunk661233 = require("./661233.js"),
   s = Math.max,
   l = Math.min;
 module.exports = function(e, t, n) {
-  var c, u, d, f, p, _, m = 0,
-    h = false,
+  var c, u, d, f, p, _, h = 0,
+    m = false,
     g = false,
     E = true;
   if ("function" != typeof e) throw TypeError(o);
@@ -16,23 +16,23 @@ module.exports = function(e, t, n) {
   function b(t) {
     var n = c,
       r = u;
-    return c = u = true, m = t, f = e.apply(r, n)
+    return c = u = true, h = t, f = e.apply(r, n)
   }
 
   function y(e) {
-    return m = e, p = setTimeout(S, t), h ? b(e) : f
+    return h = e, p = setTimeout(S, t), m ? b(e) : f
   }
 
   function O(e) {
     var n = e - _,
-      r = e - m,
+      r = e - h,
       i = t - n;
     return g ? l(i, d - r) : i
   }
 
   function v(e) {
     var n = e - _,
-      r = e - m;
+      r = e - h;
     return true === _ || n >= t || n < 0 || g && r >= d
   }
 
@@ -59,7 +59,7 @@ module.exports = function(e, t, n) {
     }
     return true === p && (p = setTimeout(S, t)), f
   }
-  return t = a(t) || 0, r(n) && (h = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), C.cancel = function() {
-    true !== p && clearTimeout(p), m = 0, c = _ = u = p = true
+  return t = a(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), C.cancel = function() {
+    true !== p && clearTimeout(p), h = 0, c = _ = u = p = true
   }, C.flush = T, C
 }

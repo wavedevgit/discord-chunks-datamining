@@ -78,16 +78,16 @@ async function f(e) {
   let f = await n.getImageData(0, 0, t.width, t.height),
     p = d(l),
     _ = d(f),
-    m = p === _,
-    h = performance.now() - o;
-  return (s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(c.width, " ") + "height=".concat(c.height, " ") + "pixelHash=".concat(p, " ") + "mezzanineFileLength={".concat(a.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(m, " ") + "elapsed_ms=".concat(Math.round(h))), m) ? {
+    h = p === _,
+    m = performance.now() - o;
+  return (s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(c.width, " ") + "height=".concat(c.height, " ") + "pixelHash=".concat(p, " ") + "mezzanineFileLength={".concat(a.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(m))), h) ? {
     success: true,
     webpBlob: a,
-    pixelHashTimeMs: h
+    pixelHashTimeMs: m
   } : {
     success: false,
     reason: "pixel_hash_mismatch",
-    pixelHashTimeMs: h
+    pixelHashTimeMs: m
   }
 }
 async function p(e) {

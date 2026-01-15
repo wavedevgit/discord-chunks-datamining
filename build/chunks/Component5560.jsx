@@ -120,7 +120,7 @@ class I extends Chunk473749.PureComponent {
       autoInvert: t,
       focused: n,
       origin: i
-    } = this.props, a = (0, h.S)(e);
+    } = this.props, a = (0, m.S)(e);
     if (null == a) return null;
     let {
       media: s,
@@ -128,7 +128,7 @@ class I extends Chunk473749.PureComponent {
       isLongText: c,
       highPriority: u,
       spacing: f,
-      arrowAlignment: p = m.cy.TOP,
+      arrowAlignment: p = h.cy.TOP,
       popoutPosition: _
     } = a, {
       offsetX: g,
@@ -159,7 +159,7 @@ class I extends Chunk473749.PureComponent {
         [b.highPriority]: u
       }
     }, T = this.getTutorialPopoutText();
-    return (0, r.jsx)(m.ZP, S(O({
+    return (0, r.jsx)(h.ZP, S(O({
       innerRef: this.contentRef,
       position: _,
       renderMedia: s,

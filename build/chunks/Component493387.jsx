@@ -102,7 +102,7 @@ function j(e) {
       trackingArea: _.j_.CLOUD_PLAY,
       onClick: H
     }
-  }, [H]), W = (0, m.G)(g), K = i.useMemo(() => null != B ? B : null != W && U ? W : true, [U, B, W]), z = u.Z.useConfig({
+  }, [H]), W = (0, h.G)(g), K = i.useMemo(() => null != B ? B : null != W && U ? W : true, [U, B, W]), z = u.Z.useConfig({
     location: "RichPresenceGameActivityInviteEmbed"
   }), {
     canStartAuthorization: q,
@@ -110,7 +110,7 @@ function j(e) {
     startAuthorization: X
   } = (0, f.FG)(g), J = (0, d.C)(X, Q), $ = !(0, T.Z)(k, S, g.id), ee = (0, I.dQ)(Z, null == (t = S.activity) ? true : t.type, $), et = i.useRef(null), en = (0, a.e7)([O.Z], () => O.Z.getMessages(E.id)), er = () => {
     let e = [];
-    return (0, C.c)(S.id, en) && q && !Q && z.enabled && e.push(o.z.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(h.ZP, {
+    return (0, C.c)(S.id, en) && q && !Q && z.enabled && e.push(o.z.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(m.ZP, {
       contentTypes: e,
       children: e => {
         let {
@@ -135,7 +135,7 @@ function j(e) {
           },
           shouldShow: true,
           gradientColor: "purple",
-          onRequestClose: () => n(w.L.USER_DISMISS)
+          onRequestClose: () => n(R.L.USER_DISMISS)
         })
       }
     })
@@ -160,7 +160,7 @@ function j(e) {
     startAuthorization: J,
     accountLinkButtonRef: et,
     renderAccountLinkUpsell: er
-  }) : (0, r.jsx)(R.Z, {
+  }) : (0, r.jsx)(w.Z, {
     message: S,
     application: g,
     applicationName: Z,

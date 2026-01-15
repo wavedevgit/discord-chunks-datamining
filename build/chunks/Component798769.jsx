@@ -2,7 +2,7 @@
 /** chunk id: 798769, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,12 +18,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk81137 = require("./81137.js");
 
-function m(e) {
+function h(e) {
   let {
     currentStep: t,
     className: n,
-    purchaseState: m,
-    premiumType: h,
+    purchaseState: h,
+    premiumType: m,
     onClose: g,
     hideCloseButton: E,
     showTrialBadge: b,
@@ -37,7 +37,7 @@ function m(e) {
   } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
-        return h === f.PremiumTypes.TIER_0 ? p.intl.string(p.t.rk4Uu8) : p.intl.string(p.t["7YWj6+"]);
+        return m === f.PremiumTypes.TIER_0 ? p.intl.string(p.t.rk4Uu8) : p.intl.string(p.t["7YWj6+"]);
       case s.h8.ADD_PAYMENT_STEPS:
         return p.intl.string(p.t.vHqbJE);
       case s.h8.REVIEW:
@@ -62,7 +62,7 @@ function m(e) {
   }) : I || T ? (0, r.jsx)(c.Z, {
     hideCloseOnFullScreen: true,
     hideCloseButton: E,
-    upgradeToPremiumType: h,
+    upgradeToPremiumType: m,
     onClose: g,
     isEligibleForTrial: S,
     showTrialBadge: b,
@@ -74,21 +74,21 @@ function m(e) {
       hideCloseOnFullScreen: true,
       hideCloseButton: E,
       shouldShowPrice: true,
-      upgradeToPremiumType: h,
-      renderAnimation: () => h === f.PremiumTypes.TIER_0 ? (0, r.jsx)(d.zC, {
+      upgradeToPremiumType: m,
+      renderAnimation: () => m === f.PremiumTypes.TIER_0 ? (0, r.jsx)(d.zC, {
         className: _.headerAnimation,
         currentStep: t,
-        purchaseState: m,
+        purchaseState: h,
         pause: A
-      }) : h === f.PremiumTypes.TIER_1 ? (0, r.jsx)(d.tK, {
+      }) : m === f.PremiumTypes.TIER_1 ? (0, r.jsx)(d.tK, {
         className: _.headerAnimation,
         currentStep: t,
-        purchaseState: m,
+        purchaseState: h,
         pause: A
       }) : (0, r.jsx)(d.Bk, {
         className: _.headerAnimation,
         currentStep: t,
-        purchaseState: m,
+        purchaseState: h,
         pause: A
       }),
       plan: null,

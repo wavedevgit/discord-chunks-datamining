@@ -4,8 +4,8 @@
 require.d(exports, {
   ZM: () => _,
   gx: () => d,
-  mN: () => h,
-  re: () => m
+  mN: () => m,
+  re: () => h
 }), require("./539854.js"), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -83,7 +83,7 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
     }
     return r && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
   },
-  m = e => {
+  h = e => {
     let t = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()),
       n = null != t ? s.ZP.getPremiumPlanItem(t) : null,
       i = (null != n ? s.ZP.getSkuIdForPlan(n.planId) : null) === c.Si.TIER_2;
@@ -98,7 +98,7 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       subtitle: u.intl.string(u.t["5TFEXv"])
     }
   },
-  h = () => {
+  m = () => {
     let e = (0, r.e7)([a.default], () => a.default.getCurrentUser());
     return (0, s.I5)(e)
   }

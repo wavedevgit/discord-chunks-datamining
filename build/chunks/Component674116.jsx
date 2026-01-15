@@ -44,7 +44,7 @@ function C() {
           children: (0, r.jsx)(O.Z, {})
         }), (0, r.jsxs)(a.F, {
           setting: v.s6.VOICE_AND_VIDEO_MIC_TEST,
-          children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
             children: I.intl.format(I.t["V+B3FH"], {
               guideURL: T
@@ -73,7 +73,7 @@ function C() {
       title: I.intl.string(I.t["8/udY0"]),
       webSetting: v.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
       children: (0, r.jsxs)(c.Z, {
-        children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(h.Z, {})]
+        children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(m.Z, {})]
       })
     })]
   })

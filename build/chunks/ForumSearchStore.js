@@ -75,7 +75,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     channelId: t
   } = e;
@@ -86,7 +86,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     channelId: t,
     threadIds: n
@@ -169,8 +169,8 @@ let S = new v(Chunk570140.Z, {
   THREAD_DELETE: b,
   CHANNEL_DELETE: y,
   FORUM_SEARCH_QUERY_UPDATED: _,
-  FORUM_SEARCH_START: m,
-  FORUM_SEARCH_SUCCESS: h,
+  FORUM_SEARCH_START: h,
+  FORUM_SEARCH_SUCCESS: m,
   FORUM_SEARCH_FAILURE: g,
   FORUM_SEARCH_CLEAR: E
 })

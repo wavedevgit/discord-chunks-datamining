@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -80,20 +80,20 @@ function b(e) {
     onSelectItem: i
   } = e, p = g(e, ["guild", "focused", "onSelectItem"]);
   let {
-    canCreateExpressions: m
+    canCreateExpressions: h
   } = (0, l.XJ)(t);
   return (0, r.jsx)(o.u, {
     text: u.intl.string(u.t["fHo+z1"]),
-    shouldShow: !m,
+    shouldShow: !h,
     children: (0, r.jsx)("li", {
       className: d.soundButtonWrapper,
-      children: (0, r.jsxs)(s.kL8, h(_({}, p), {
+      children: (0, r.jsxs)(s.kL8, m(_({}, p), {
         "aria-label": u.intl.formatToPlainString(u.t.c1qVYh, {
           guildName: t.name
         }),
         className: a()(f.soundAddButton, {
           [f.focused]: n,
-          [f.disabled]: !m
+          [f.disabled]: !h
         }),
         onClick: () => null != i ? i() : (0, c.Z)(t.id),
         children: [(0, r.jsx)(s.qJs, {
@@ -101,7 +101,7 @@ function b(e) {
           color: "currentColor"
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
-          color: m ? "currentColor" : "text-muted",
+          color: h ? "currentColor" : "text-muted",
           children: u.intl.string(u.t["8Fu/S7"])
         })]
       }))

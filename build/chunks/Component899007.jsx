@@ -2,7 +2,7 @@
 /** chunk id: 899007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,16 +67,16 @@ function N(e, t) {
 }
 let P = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function R(e) {
+function w(e) {
   let {
     user: t,
     displayProfile: n,
     guildId: a,
-    channelId: m,
+    channelId: h,
     themeType: T,
     animateOnHover: A,
-    onOpenProfile: R,
-    className: w,
+    onOpenProfile: w,
+    className: R,
     previewStatus: D
   } = e, {
     theme: x
@@ -84,7 +84,7 @@ function R(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: j
-  } = (0, h.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, m), [t, m]), {
+  } = (0, m.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: U
   } = (0, g.Z)(t.id), [G] = U, {
     status: Z,
@@ -92,7 +92,7 @@ function R(e) {
   } = (0, s.cj)([p.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : p.Z.getStatus(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), B = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, w), {
+  })), B = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, R), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K
@@ -106,14 +106,14 @@ function R(e) {
     avatarDecoration: Y,
     size: V,
     "aria-label": t.username,
-    imageClassName: null != R ? I.overlay : true,
+    imageClassName: null != w ? I.overlay : true,
     status: k ? O.Skl.UNKNOWN : B,
     statusBackdropColor: M && !k ? (0, l.QFD)(x) : true,
     isMobile: F,
     statusTooltip: true,
     statusTooltipDelay: y.vB
   });
-  return null == R ? (0, r.jsx)("div", N(C({}, K), {
+  return null == w ? (0, r.jsx)("div", N(C({}, K), {
     className: H,
     children: z
   })) : (0, r.jsx)(l.P3F, N(C({}, K), {
@@ -125,7 +125,7 @@ function R(e) {
       j({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), null == R || R()
+      }), null == w || w()
     },
     children: z
   }))

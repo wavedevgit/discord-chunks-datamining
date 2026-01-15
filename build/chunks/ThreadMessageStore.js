@@ -83,7 +83,7 @@ function A(e, t) {
 
 function N(e) {
   var t, n;
-  null == (t = e.threads) || t.forEach(w), null == (n = e.threadMessages) || n.forEach(R)
+  null == (t = e.threads) || t.forEach(R), null == (n = e.threadMessages) || n.forEach(w)
 }
 
 function P(e) {
@@ -100,15 +100,15 @@ function P(e) {
   return v[e.id]
 }
 
-function R(e) {
-  if (e.type === h.uaV.THREAD_STARTER_MESSAGE) return;
+function w(e) {
+  if (e.type === m.uaV.THREAD_STARTER_MESSAGE) return;
   let t = f.Z.getChannel(e.channel_id);
   null != t && C(t, t => {
     t.mostRecentRawMessage = e, t.mostRecentMessage = null
   })
 }
 
-function w(e) {
+function R(e) {
   C(e, t => {
     var n;
     null != e.messageCount && (t.count = e.messageCount);
@@ -120,7 +120,7 @@ function w(e) {
 function D(e) {
   if (null != e && !(e.id in v)) {
     let t = f.Z.getChannel(e.id);
-    if (null != t) return w(t), true
+    if (null != t) return R(t), true
   }
   returnfalse
 }
@@ -159,7 +159,7 @@ function k(e) {
   let {
     channel: t
   } = e;
-  w(t)
+  R(t)
 }
 
 function U(e) {
@@ -167,9 +167,9 @@ function U(e) {
     threads: t,
     mostRecentMessages: n
   } = e;
-  t.forEach(w), null == n || n.forEach(e => {
+  t.forEach(R), null == n || n.forEach(e => {
     let t = f.Z.getChannel(e.channel_id);
-    null != t && e.type !== h.uaV.THREAD_STARTER_MESSAGE && C(t, t => {
+    null != t && e.type !== m.uaV.THREAD_STARTER_MESSAGE && C(t, t => {
       t.mostRecentRawMessage = e, t.mostRecentMessage = null
     })
   })
@@ -224,12 +224,12 @@ function V(e) {
   let a = f.Z.getChannel(t.channel_id);
   if (null == a || !c.Ec.has(a.type) || !H(a, t)) returnfalse;
   C(a, e => {
-    e.count = Math.min(e.count + 1, m.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
+    e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
 
 function H(e, t) {
-  return !(t.type === h.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === _.default.castChannelIdAsMessageId(e.id))
+  return !(t.type === m.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === _.default.castChannelIdAsMessageId(e.id))
 }
 
 function Y(e) {
@@ -287,7 +287,7 @@ function z(e) {
     else {
       var n;
       let r = null != (n = e.messages[0]) ? n : null;
-      t.count = e.messages.length >= m.M3 ? m.M3 : t.count, (null == r ? true : r.type) !== h.uaV.THREAD_STARTER_MESSAGE && (t.mostRecentRawMessage = r, t.mostRecentMessage = null)
+      t.count = e.messages.length >= h.M3 ? h.M3 : t.count, (null == r ? true : r.type) !== m.uaV.THREAD_STARTER_MESSAGE && (t.mostRecentRawMessage = r, t.mostRecentMessage = null)
     }
   })
 }

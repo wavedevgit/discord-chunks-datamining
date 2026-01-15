@@ -19,18 +19,18 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   let {
     onAddedPhone: n,
     onClose: _,
-    transitionState: m,
-    reason: h,
+    transitionState: h,
+    reason: m,
     layerContext: g
   } = e, E = (0, a.e7)([u.default], () => u.default.getCurrentUser()), b = (0, a.e7)([c.Z], () => c.Z.getAction()), [y, O] = i.useState(null), [v, S] = i.useState(null), [I, T] = i.useState(null), [C, A] = i.useState(false), N = i.useCallback(async e => {
     A(true);
     try {
-      d.Z.isPhoneReverification(E, b) ? await s.Z.beginReverifyPhone(e, h) : await s.Z.beginAddPhone(e, h), T(null), O(e)
+      d.Z.isPhoneReverification(E, b) ? await s.Z.beginReverifyPhone(e, m) : await s.Z.beginAddPhone(e, m), T(null), O(e)
     } catch (e) {
       T(new o.Z(e))
     }
     A(false)
-  }, [E, h, b]), P = i.useCallback(async e => {
+  }, [E, m, b]), P = i.useCallback(async e => {
     if (null != y && null != E) {
       A(true);
       try {
@@ -43,17 +43,17 @@ let _ = Chunk473749.forwardRef(function(e, t) {
       }
       A(false)
     }
-  }, [E, y]), R = i.useCallback(async e => {
-    null != v && (d.Z.isPhoneReverification(E, b) ? await s.Z.reverifyPhone(v, e, h) : await s.Z.addPhone(v, e, h), null == n || n(), _())
-  }, [n, _, v, h, E, b]);
+  }, [E, y]), w = i.useCallback(async e => {
+    null != v && (d.Z.isPhoneReverification(E, b) ? await s.Z.reverifyPhone(v, e, m) : await s.Z.addPhone(v, e, m), null == n || n(), _())
+  }, [n, _, v, m, E, b]);
   return null != v ? (0, r.jsx)(f.default, {
     onClose: _,
-    transitionState: m,
+    transitionState: h,
     title: p.intl.string(p.t.ZtCDc2),
-    handleSubmit: R
+    handleSubmit: w
   }) : (0, r.jsx)(l.default, {
     onClose: _,
-    transitionState: m,
+    transitionState: h,
     error: null == I ? true : I.getAnyErrorMessage(),
     working: C,
     validPhone: null != y,

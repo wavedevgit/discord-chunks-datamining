@@ -2,7 +2,7 @@
 /** chunk id: 225466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,13 +17,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk554445 = require("./554445.js");
 let _ = 1e3;
 
-function m() {
+function h() {
   let e = (0, i.useContext)(c.Q),
     t = (0, s.dQu)(e.primaryColor).hex(),
     n = (0, i.useRef)(null),
     {
-      volume: m,
-      isMuted: h
+      volume: h,
+      isMuted: m
     } = (0, o.cj)([u.Z], () => ({
       volume: u.Z.volume,
       isMuted: u.Z.isMuted
@@ -31,7 +31,7 @@ function m() {
     [g, E] = (0, i.useState)(false),
     [b, y] = (0, i.useState)(false),
     O = (0, i.useRef)(false),
-    v = h ? 0 : 100 * m,
+    v = m ? 0 : 100 * h,
     S = g || b,
     I = e => {
       (0, l.jA)(e / 100), y(true), clearTimeout(O.current), O.current = setTimeout(() => {
@@ -39,9 +39,9 @@ function m() {
       }, _)
     };
   (0, i.useEffect)(() => {
-    null != n.current && (n.current.volume = m)
-  }, [m]);
-  let T = h ? s.OyP : v > 90 ? s.gj8 : s.X2j;
+    null != n.current && (n.current.volume = h)
+  }, [h]);
+  let T = m ? s.OyP : v > 90 ? s.gj8 : s.X2j;
   return (0, r.jsxs)("div", {
     onMouseEnter: () => E(true),
     onMouseLeave: () => E(false),
@@ -77,7 +77,7 @@ function m() {
       ref: n,
       autoPlay: true,
       loop: true,
-      muted: h,
+      muted: m,
       children: (0, r.jsx)("source", {
         src: a.Z
       })

@@ -40,11 +40,11 @@ let E = () => {
     }
   };
   if (null === O || null === v) return (0, r.jsx)("div", {
-    className: m.spinnerContainer,
+    className: h.spinnerContainer,
     children: (0, r.jsx)(o.$jN, {})
   });
   let P = n === f.PremiumTypes.TIER_2,
-    R = [{
+    w = [{
       text: _.intl.string(_.t.zl7LZp),
       onClick: () => t(),
       variant: "secondary",
@@ -60,23 +60,23 @@ let E = () => {
   return (0, r.jsxs)(a.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: P ? g.Z : h
+      src: P ? g.Z : m
     },
     gradientColor: P ? "nitro-pink" : "nitro-green",
     transitionState: e,
     title: E.status === p.O0b.CANCELED ? _.intl.string(_.t["2Otzti"]) : "".concat(_.intl.format(_.t.q9Vxu4, {
       percent: O.discount.amount
     })),
-    actions: R,
+    actions: w,
     onClose: async () => t(),
     children: [(0, r.jsx)("div", {
-      className: m.offerDetailContainer,
+      className: h.offerDetailContainer,
       children: (0, r.jsx)(c.o, {
         userDiscountOffer: O,
         offerState: c.w.CONFIRMING
       })
     }), (0, r.jsx)("div", {
-      className: m.legalContainer,
+      className: h.legalContainer,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-subtle",

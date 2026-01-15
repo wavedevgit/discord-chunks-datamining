@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   TK: () => _,
-  dG: () => m,
+  dG: () => h,
   nv: () => p,
   qw: () => g
 }), require("./35282.js");
@@ -40,12 +40,12 @@ function _(e) {
   return null
 }
 
-function m(e) {
+function h(e) {
   let t = (0, i.DT)(e, 1.75);
   return "radial-gradient(105.43% 127.05% at 50.1% 127.05%, ".concat(t, " 20.65%, ").concat(e, " 85.16%)")
 }
 
-function h(e) {
+function m(e) {
   return null == e.icon ? null : c.ff.test(e.icon) ? e.icon : c.ZP.getGuildIconURL({
     id: e.id,
     icon: e.icon,
@@ -58,7 +58,7 @@ function g(e) {
     profile: t,
     defaultColor: n,
     forceDefaultColor: i
-  } = e, a = i ? null : h(t), s = r.useRef(n), c = (0, o.Z)(s), u = (0, l.ZP)(a, c);
+  } = e, a = i ? null : m(t), s = r.useRef(n), c = (0, o.Z)(s), u = (0, l.ZP)(a, c);
   return (r.useEffect(() => {
     s.current = u
   }, [u]), null == t.icon) ? n : u

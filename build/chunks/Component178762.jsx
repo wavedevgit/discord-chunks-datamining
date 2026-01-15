@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk797342 = require("./797342.js"),
   Chunk206583 = require("./206583.js");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,7 +53,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -125,7 +125,7 @@ let Z = e => {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(h.Z, L(D({}, n), {
+        return (0, r.jsx)(m.Z, L(D({}, n), {
           entry: t
         }));
       default:
@@ -157,7 +157,7 @@ let Z = e => {
       },
       closePopout: t,
       onVoiceChannelPreview: e => {
-        n.trackRankingItemInteraction(R.xP.VOICE_CHANNEL_PREVIEWED, {
+        n.trackRankingItemInteraction(w.xP.VOICE_CHANNEL_PREVIEWED, {
           destinationChannelId: e.id,
           destinationGuildId: e.guild_id
         })
@@ -204,7 +204,7 @@ let Z = e => {
         ref: l
       } = e,
       p = j(e, ["index", "ref"]);
-    let h = i.useRef(null),
+    let m = i.useRef(null),
       [g, E] = i.useState("default"),
       [b, y] = i.useState(false),
       O = (0, s.JA)("".concat(a)),
@@ -222,12 +222,12 @@ let Z = e => {
       }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, S]),
       C = i.useRef(false),
       [A, N] = i.useState(false),
-      [w, x] = i.useState(false),
+      [R, x] = i.useState(false),
       M = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
       A && M && x(true)
     }, [A, M]), i.useLayoutEffect(() => {
-      null != h.current && y(true)
+      null != m.current && y(true)
     }, []);
     let k = i.useCallback(e => {
         v && (0, d.jW)(e, async () => {
@@ -245,10 +245,10 @@ let Z = e => {
       }, []),
       V = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, m.L)(e, D({}, T, t))
+        (0, h.L)(e, D({}, T, t))
       }, [T]),
       Y = i.useMemo(() => o().throttle(e => {
-        (0, m.L)(R.xP.CARD_POPOUT_OPEN, e)
+        (0, h.L)(w.xP.CARD_POPOUT_OPEN, e)
       }, U, {
         leading: true,
         trailing: false
@@ -260,7 +260,7 @@ let Z = e => {
       };
     return (0, r.jsxs)(r.Fragment, {
       children: [b && (0, r.jsx)(F, L(D({}, p), {
-        targetElementRef: h
+        targetElementRef: m
       })), (0, r.jsx)("div", {
         ref: l,
         onMouseEnter: () => {
@@ -270,7 +270,7 @@ let Z = e => {
         },
         onMouseLeave: W,
         children: (0, r.jsx)(u.yRy, {
-          targetElementRef: h,
+          targetElementRef: m,
           renderPopout: e => {
             let {
               closePopout: t
@@ -289,7 +289,7 @@ let Z = e => {
           positionKey: g,
           onRequestOpen: () => Y(T),
           onRequestClose: () => {
-            w && W()
+            R && W()
           },
           spacing: 8,
           children: (e, t) => {
@@ -297,7 +297,7 @@ let Z = e => {
               isShown: n
             } = t;
             return (0, r.jsx)(u.P3F, L(D({}, e, O), {
-              innerRef: h,
+              innerRef: m,
               focusProps: {
                 offset: {
                   top: 4,

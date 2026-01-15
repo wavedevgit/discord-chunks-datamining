@@ -18,7 +18,7 @@ var Chunk147829 = require("./147829.js"),
   Chunk469775 = require("./469775.js"),
   Chunk484710 = require("./484710.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -85,13 +85,13 @@ let v = {
       entryPoint: l,
       shouldShowExpressiveModal: c = false,
       verificationVendorName: f,
-      verificationRequestId: m,
+      verificationRequestId: h,
       webviewUrl: g
     } = e, E = b(e, ["onClose", "entryPoint", "shouldShowExpressiveModal", "verificationVendorName", "verificationRequestId", "webviewUrl"]);
     if (f === p.Rh.PERSONA) {
-      if (!(0, d.e)("AgeVerificationActionCreators") || null == m) return;
+      if (!(0, d.e)("AgeVerificationActionCreators") || null == h) return;
       new i.Client({
-        inquiryId: m,
+        inquiryId: h,
         onComplete: () => {
           E.onComplete(), null != t && t()
         },
@@ -115,14 +115,14 @@ let v = {
       let {
         default: e
       } = await n.e("67749").then(n.bind(n, 91175));
-      return t => (0, r.jsx)(e, h({
+      return t => (0, r.jsx)(e, m({
         webviewUrl: g
       }, E, t))
     }, y) : (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("12014").then(n.bind(n, 879367));
-      return t => (0, r.jsx)(e, h({
+      return t => (0, r.jsx)(e, m({
         webviewUrl: g
       }, E, t))
     }, y)
@@ -136,7 +136,7 @@ let v = {
       let {
         default: e
       } = await n.e("22447").then(n.bind(n, 686768));
-      return t => (0, r.jsx)(e, E(h({}, t), {
+      return t => (0, r.jsx)(e, E(m({}, t), {
         entryPoint: i
       }))
     }, {
@@ -149,7 +149,7 @@ let v = {
       let {
         default: e
       } = await n.e("50614").then(n.bind(n, 17597));
-      return t => (0, r.jsx)(e, E(h({}, t), {
+      return t => (0, r.jsx)(e, E(m({}, t), {
         entryPoint: i
       }))
     }, {
@@ -161,7 +161,7 @@ let v = {
       let {
         default: e
       } = await n.e("80144").then(n.bind(n, 634997));
-      return t => (0, r.jsx)(e, E(h({}, t), {
+      return t => (0, r.jsx)(e, E(m({}, t), {
         entryPoint: i
       }))
     }, {

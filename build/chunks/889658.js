@@ -41,12 +41,12 @@ class i {
     return this.range
   }
   parseRange(e) {
-    let t = ((this.options.includePrerelease && m) | (this.options.loose && h)) + ":" + e,
+    let t = ((this.options.includePrerelease && h) | (this.options.loose && m)) + ":" + e,
       n = a.get(t);
     if (n) return n;
     let r = this.options.loose,
       i = r ? u[d.HYPHENRANGELOOSE] : u[d.HYPHENRANGE];
-    l("hyphen replace", e = e.replace(i, R(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], p)), l("caret trim", e = e.replace(u[d.CARETTRIM], _));
+    l("hyphen replace", e = e.replace(i, w(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], p)), l("caret trim", e = e.replace(u[d.CARETTRIM], _));
     let o = e.split(" ").map(e => y(e, this.options)).join(" ").split(/\s+/).map(e => P(e, this.options));
     r && (o = o.filter(e => (l("loose invalid filter", e, this.options), !!e.match(u[d.COMPARATORLOOSE])))), l("range list", o);
     let c = new Map;
@@ -70,7 +70,7 @@ class i {
       returnfalse
     }
     for (let t = 0; t < this.set.length; t++)
-      if (w(this.set[t], e, this.options)) returntrue;
+      if (R(this.set[t], e, this.options)) returntrue;
     returnfalse
   }
 }
@@ -88,8 +88,8 @@ let a = new(require("./147567.js")),
     caretTrimReplace: _
   } = require("./646664.js"),
   {
-    FLAG_INCLUDE_PRERELEASE: m,
-    FLAG_LOOSE: h
+    FLAG_INCLUDE_PRERELEASE: h,
+    FLAG_LOOSE: m
   } = require("./942177.js"),
   g = e => "<0.0.0-0" === e.value,
   E = e => "" === e.value,
@@ -135,8 +135,8 @@ let a = new(require("./147567.js")),
   },
   N = (e, t) => (l("replaceStars", e, t), e.trim().replace(u[d.STAR], "")),
   P = (e, t) => (l("replaceGTE0", e, t), e.trim().replace(u[t.includePrerelease ? d.GTE0PRE : d.GTE0], "")),
-  R = e => (t, n, r, i, a, o, s, l, c, u, d, f) => (n = O(r) ? "" : O(i) ? `>=${r}.0.0${e?"-0":""}` : O(a) ? `>=${r}.${i}.0${e?"-0":""}` : o ? `>=${n}` : `>=${n}${e?"-0":""}`, l = O(c) ? "" : O(u) ? `<${+c+1}.0.0-0` : O(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
-  w = (e, t, n) => {
+  w = e => (t, n, r, i, a, o, s, l, c, u, d, f) => (n = O(r) ? "" : O(i) ? `>=${r}.0.0${e?"-0":""}` : O(a) ? `>=${r}.${i}.0${e?"-0":""}` : o ? `>=${n}` : `>=${n}${e?"-0":""}`, l = O(c) ? "" : O(u) ? `<${+c+1}.0.0-0` : O(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
+  R = (e, t, n) => {
     for (let n = 0; n < e.length; n++)
       if (!e[n].test(t)) returnfalse;
     if (t.prerelease.length && !n.includePrerelease) {

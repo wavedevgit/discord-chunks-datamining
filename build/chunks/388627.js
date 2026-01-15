@@ -4,8 +4,8 @@
 require.d(exports, {
   E6: () => _,
   HP: () => p,
-  II: () => h,
-  pL: () => m
+  II: () => m,
+  pL: () => h
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk902704 = require("./902704.js"),
@@ -42,7 +42,7 @@ function _(e, t) {
   returntrue
 }
 
-function m() {
+function h() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c.ZP,
     r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.Z,
@@ -51,12 +51,12 @@ function m() {
     f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : d.Z,
     p = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, o.e)(),
     _ = i.getCurrentEmbeddedActivity(),
-    m = null == _ ? true : _.applicationId,
-    h = null == m ? true : s.getApplication(m);
-  if (null != _ && null != h && p) return {
+    h = null == _ ? true : _.applicationId,
+    m = null == h ? true : s.getApplication(h);
+  if (null != _ && null != m && p) return {
     id: _.applicationId,
     altId: true,
-    name: h.name
+    name: m.name
   };
   let g = f.getTargetPID(),
     E = n.getGameForPID(g),
@@ -68,7 +68,7 @@ function m() {
   }
 }
 
-function h() {
+function m() {
   let e = (0, s.P)();
-  return (0, r.e7)([c.ZP, u.Z, a.ZP, l.Z, d.Z], () => m(c.ZP, u.Z, a.ZP, l.Z, d.Z, e), [e], i.Z)
+  return (0, r.e7)([c.ZP, u.Z, a.ZP, l.Z, d.Z], () => h(c.ZP, u.Z, a.ZP, l.Z, d.Z, e), [e], i.Z)
 }

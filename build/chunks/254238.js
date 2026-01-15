@@ -51,7 +51,7 @@ function b(e) {
 
 function y(e, t) {
   var n, r;
-  d.default.track(h.rMx.REMOTE_COMMAND_SENT, {
+  d.default.track(m.rMx.REMOTE_COMMAND_SENT, {
     command_type: e,
     remote_platform: null == (r = u.Z.getSessionById(t)) || null == (n = r.clientInfo) ? true : n.os
   })
@@ -63,7 +63,7 @@ async function O() {
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == e ? true : e.type) === h.ABu.PLAYSTATION || (null == e ? true : e.type) === h.ABu.PLAYSTATION_STAGING) && (null == e ? true : e.commandId) != null && (null == e ? true : e.deviceId) != null && n.push(w(e.type, e.deviceId, e.commandId)), null != t && n.push(A(t));
+  ((null == e ? true : e.type) === m.ABu.PLAYSTATION || (null == e ? true : e.type) === m.ABu.PLAYSTATION_STAGING) && (null == e ? true : e.commandId) != null && (null == e ? true : e.deviceId) != null && n.push(R(e.type, e.deviceId, e.commandId)), null != t && n.push(A(t));
   try {
     await Promise.all(n)
   } catch (e) {
@@ -124,7 +124,7 @@ async function C() {
   try {
     let t = null != c.Z.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
     e = (await a.tn.post({
-      url: h.ANM.CONNECT_REQUEST_CREATE,
+      url: m.ANM.CONNECT_REQUEST_CREATE,
       body: {
         analytics_properties: {
           handoff_type: t
@@ -140,7 +140,7 @@ async function C() {
 
 function A(e) {
   return a.tn.del({
-    url: h.ANM.CONNECT_REQUEST(e),
+    url: m.ANM.CONNECT_REQUEST(e),
     rejectWithError: false
   })
 }
@@ -152,7 +152,7 @@ async function N(e) {
   });
   try {
     t = await a.tn.get({
-      url: h.ANM.CONSOLES_DEVICES(e),
+      url: m.ANM.CONSOLES_DEVICES(e),
       rejectWithError: false
     })
   } catch (t) {
@@ -177,7 +177,7 @@ function P(e, t) {
     deviceId: t
   })
 }
-async function R(e, t, n, i) {
+async function w(e, t, n, i) {
   let s;
   o.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_START",
@@ -185,7 +185,7 @@ async function R(e, t, n, i) {
   });
   try {
     s = await a.tn.post({
-      url: h.ANM.CONSOLES_DEVICES_COMMANDS(e, t),
+      url: m.ANM.CONSOLES_DEVICES_COMMANDS(e, t),
       body: {
         command: r.n.CONNECT_VOICE,
         channel_id: n.id,
@@ -211,7 +211,7 @@ async function R(e, t, n, i) {
     commandId: l
   }), l
 }
-async function w(e, t, n) {
+async function R(e, t, n) {
   o.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_START",
     platform: e,
@@ -220,7 +220,7 @@ async function w(e, t, n) {
   });
   try {
     await a.tn.del({
-      url: h.ANM.CONSOLES_DEVICES_COMMAND(e, t, n),
+      url: m.ANM.CONSOLES_DEVICES_COMMAND(e, t, n),
       rejectWithError: false
     })
   } catch (r) {
@@ -242,5 +242,5 @@ async function w(e, t, n) {
 async function D(e, t, n) {
   await p.Z.maybeShowPTTAlert(e), await O();
   let r = await C();
-  await R(e, t, n, r), (0, m.Z)(n.id, e)
+  await w(e, t, n, r), (0, h.Z)(n.id, e)
 }

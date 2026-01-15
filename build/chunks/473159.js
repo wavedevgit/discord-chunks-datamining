@@ -39,15 +39,15 @@ function l(e) {
     (0, s.gK)(n)
   }
 
-  function m() {
+  function h() {
     setTimeout(() => {
       (0, s.HQ)(n)
     }, 0)
   }
 
-  function h() {
+  function m() {
     (0, r.CO)(e)
   }
-  for (let n of ((0, i.YP)(c, e.document.body), e.addEventListener("focus", u), e.addEventListener("blur", d), e.addEventListener("unload", p), e.addEventListener("visibilitychange", h), s.wu)) t.addEventListener(n, _, true), t.addEventListener(n, m, false);
+  for (let n of ((0, i.YP)(c, e.document.body), e.addEventListener("focus", u), e.addEventListener("blur", d), e.addEventListener("unload", p), e.addEventListener("visibilitychange", m), s.wu)) t.addEventListener(n, _, true), t.addEventListener(n, h, false);
   (0, a.uF)(t, f), (0, r.S1)(e)
 }

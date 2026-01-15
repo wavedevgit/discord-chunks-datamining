@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -149,7 +149,7 @@ function N(e) {
     region: r,
     ringing: i
   } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
-  g[t] = h(_({}, g[t]), {
+  g[t] = m(_({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
@@ -162,7 +162,7 @@ function P(e) {
     channelId: t,
     unavailable: n
   } = e, r = g[t];
-  true === n && null != r ? g[t] = h(_({}, r), {
+  true === n && null != r ? g[t] = m(_({}, r), {
     unavailable: n
   }) : g[t] = {
     channelId: t,
@@ -174,13 +174,13 @@ function P(e) {
   }, null != E[t] && delete E[t]
 }
 
-function R(e) {
+function w(e) {
   let {
     channelId: t
   } = e;
   null == t && (E = {})
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, u.Z, d.Z)
   }
@@ -209,8 +209,8 @@ class w extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-p(w, "displayName", "CallStore");
-let D = new w(Chunk570140.Z, {
+p(R, "displayName", "CallStore");
+let D = new R(Chunk570140.Z, {
   CONNECTION_OPEN: y,
   CONNECTION_CLOSED: v,
   OVERLAY_INITIALIZE: O,
@@ -221,5 +221,5 @@ let D = new w(Chunk570140.Z, {
   CALL_UPDATE: N,
   CALL_DELETE: P,
   CALL_ENQUEUE_RING: A,
-  VOICE_CHANNEL_SELECT: R
+  VOICE_CHANNEL_SELECT: w
 })

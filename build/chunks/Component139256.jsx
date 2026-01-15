@@ -88,7 +88,7 @@ function P(e, t) {
   return i
 }
 
-function R(e) {
+function w(e) {
   let {
     className: t,
     children: n
@@ -100,7 +100,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     className: t,
     children: n
@@ -199,16 +199,16 @@ function j(e) {
   })).with({
     answersInteraction: b.Y7.CHECKBOXES
   }, () => ({
-    ContainerComponent: w,
+    ContainerComponent: R,
     answerElementType: 2
   })).with({
     canTapAnswers: true,
     answersInteraction: b.Y7.LIST
   }, () => ({
-    ContainerComponent: R,
+    ContainerComponent: w,
     answerElementType: 3
   })).otherwise(() => ({
-    ContainerComponent: R,
+    ContainerComponent: w,
     answerElementType: 0
   }));
   return (0, r.jsx)(d, {
@@ -275,7 +275,7 @@ function k(e) {
   let {
     attachment: n,
     className: i
-  } = e, a = (0, h.n)(), o = p.QK.useSetting(), s = 212;
+  } = e, a = (0, m.n)(), o = p.QK.useSetting(), s = 212;
   return (0, r.jsx)(f.ZP, {
     className: i,
     imageClassName: S.attachmentImage,
@@ -386,7 +386,7 @@ function B(e) {
     background: S.radioBackground,
     "aria-hidden": true
   };
-  return t ? (0, r.jsx)(m.Z, A(T({}, a), {
+  return t ? (0, r.jsx)(h.Z, A(T({}, a), {
     foreground: S.radioForeground,
     className: i
   })) : (0, r.jsx)(_.Z, A(T({}, a), {

@@ -53,7 +53,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -138,9 +138,9 @@ function L() {
     align: "center",
     animation: f.y.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(m.hU, w(P({
+    children: t => (0, r.jsx)(h.hU, R(P({
       size: "sm",
-      icon: a.ewm,
+      icon: a.SettingsIcon,
       "aria-label": "Settings",
       variant: "icon-only"
     }, t), {
@@ -153,13 +153,13 @@ function j(e) {
   var t;
   let {
     configs: n
-  } = e, c = D.useField("selectedCollection"), u = D.useField("selectedStory"), f = D.useField("controlsLayout"), h = i.useMemo(() => n.flatMap(e => e.collections), [n]), {
+  } = e, c = D.useField("selectedCollection"), u = D.useField("selectedStory"), f = D.useField("controlsLayout"), m = i.useMemo(() => n.flatMap(e => e.collections), [n]), {
     collection: E,
     group: b,
     story: y
   } = i.useMemo(() => {
     var e;
-    let t = null != c ? h.find(e => e.id === c) : h[0];
+    let t = null != c ? m.find(e => e.id === c) : m[0];
     if (null == t) return {
       collection: null,
       group: null,
@@ -172,7 +172,7 @@ function j(e) {
       group: n,
       story: r
     }
-  }, [c, u, h]), T = e => {
+  }, [c, u, m]), T = e => {
     D.setState({
       selectedCollection: e,
       selectedStory: null
@@ -181,7 +181,7 @@ function j(e) {
     D.setState({
       selectedStory: e
     })
-  }, N = null != (t = null == E ? true : E.name) ? t : "Design System", P = null == y ? true : y.name, R = () => {
+  }, N = null != (t = null == E ? true : E.name) ? t : "Design System", P = null == y ? true : y.name, w = () => {
     if (null == E) return;
     let e = null != y ? "dev://playground/".concat(E.id, "/").concat(y.id) : "dev://playground/".concat(E.id);
     (0, O.JG)(e, () => (0, p.CF)({
@@ -194,7 +194,7 @@ function j(e) {
     className: A.root,
     children: [(0, r.jsx)("div", {
       className: A.group,
-      children: h.map(e => {
+      children: m.map(e => {
         var t;
         return (0, r.jsx)(l.a, {
           children: (0, r.jsx)(_.u, {
@@ -202,7 +202,7 @@ function j(e) {
             text: "".concat(e.name, " Design System"),
             children: (0, r.jsx)(d.L, {
               name: e.name,
-              selected: (null != c ? c : null == (t = h[0]) ? true : t.id) === e.id,
+              selected: (null != c ? c : null == (t = m[0]) ? true : t.id) === e.id,
               onClick: () => T(e.id)
             })
           })
@@ -229,12 +229,12 @@ function j(e) {
               children: "Docs"
             })
           })]
-        }) : null, null != E ? (0, r.jsx)(m.hU, {
+        }) : null, null != E ? (0, r.jsx)(h.hU, {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",
-          icon: a.TIy,
-          onClick: R
+          icon: a.CopyIcon,
+          onClick: w
         }) : null, (0, r.jsx)("div", {
           className: A.headerRight,
           children: (0, r.jsx)(L, {})

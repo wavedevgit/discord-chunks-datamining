@@ -15,8 +15,8 @@ var Chunk960048 = require("./960048.js"),
   Chunk303850 = require("./303850.js"),
   Chunk105713 = require("./105713.js"),
   Chunk981631 = require("./981631.js");
-let m = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"],
-  h = new Chunk303850.R;
+let h = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"],
+  m = new Chunk303850.R;
 
 function g(e) {
   let t = new URLSearchParams;
@@ -59,12 +59,12 @@ function b(e) {
         e.set("Accept-Language", n)
       }
       e.set("X-Discord-Locale", s.locale);
-      let m = (0, p.Z)();
-      null != m && e.set("X-Discord-Timezone", m);
+      let h = (0, p.Z)();
+      null != h && e.set("X-Discord-Timezone", h);
       let y = o.getDebugOptionsHeaderValue();
       if (null != y && "" !== y && e.set("X-Debug-Options", y), o.isTracingRequests) {
         let t = l.getCurrentUser(),
-          n = h.generate(null != (_ = null == t ? true : t.id) ? _ : "0");
+          n = m.generate(null != (_ = null == t ? true : t.id) ? _ : "0");
         e.set("x-client-trace-id", n);
         try {
           let t = new URL(e.url).pathname;
@@ -84,7 +84,7 @@ function b(e) {
     }), e.on("error", (t, n) => {
       if (a.Hj("Network", "Failed ".concat(e.method, " to ").concat(e.url, " with status ").concat(null == t ? true : t.status, " and body: ").concat(null == n ? true : n.text)), null != t && "parse" in t && t.parse) {
         let n = "[FILTERED]";
-        if (m.includes(e.url)) {
+        if (h.includes(e.url)) {
           var r, i;
           n = null == (i = e.xhr) || null == (r = i.responseText) ? true : r.slice(0, 1e3)
         }

@@ -72,7 +72,7 @@ require.r(module.exports = {
   shopMarketingTooltipText: "_4ed1af9a212b8f4f-shopMarketingTooltipText",
   avatarContainer: "_4ed1af9a212b8f4f-avatarContainer",
   avatar: "_4ed1af9a212b8f4f-avatar",
-  newBadge: "_4ed1af9a212b8f4f-newBadge _4ed1af9a212b8f4f-eyebrow",
+  newBadge: "_4ed1af9a212b8f4f-newBadge",
   marketingButtonBackgroundNew: "_4ed1af9a212b8f4f-marketingButtonBackgroundNew",
   marketingButtonBackgroundImage: "_4ed1af9a212b8f4f-marketingButtonBackgroundImage",
   marketingButtonBackgroundImageFaded: "_4ed1af9a212b8f4f-marketingButtonBackgroundImageFaded"

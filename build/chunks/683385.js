@@ -15,38 +15,38 @@ var Chunk48657 = require("./48657.js"),
   _ = function(e, t) {
     this.stopped = e, this.result = t
   },
-  m = _.prototype;
+  h = _.prototype;
 module.exports = function(e, t, n) {
-  var h, g, E, b, y, O, v, S = n && n.that,
+  var m, g, E, b, y, O, v, S = n && n.that,
     I = !!(n && n.AS_ENTRIES),
     T = !!(n && n.IS_RECORD),
     C = !!(n && n.IS_ITERATOR),
     A = !!(n && n.INTERRUPTED),
     N = r(t, S),
     P = function(e) {
-      return h && f(h, "normal", e), new _(true, e)
+      return m && f(m, "normal", e), new _(true, e)
     },
-    R = function(e) {
+    w = function(e) {
       return I ? (a(e), A ? N(e[0], e[1], P) : N(e[0], e[1])) : A ? N(e, P) : N(e)
     };
-  if (T) h = e.iterator;
-  else if (C) h = e;
+  if (T) m = e.iterator;
+  else if (C) m = e;
   else {
     if (!(g = d(e))) throw new p(o(e) + " is not iterable");
     if (s(g)) {
       for (E = 0, b = l(e); b > E; E++)
-        if ((y = R(e[E])) && c(m, y)) return y;
+        if ((y = w(e[E])) && c(h, y)) return y;
       return new _(false)
     }
-    h = u(e, g)
+    m = u(e, g)
   }
-  for (O = T ? e.next : h.next; !(v = i(O, h)).done;) {
+  for (O = T ? e.next : m.next; !(v = i(O, m)).done;) {
     try {
-      y = R(v.value)
+      y = w(v.value)
     } catch (e) {
-      f(h, "throw", e)
+      f(m, "throw", e)
     }
-    if ("object" == typeof y && y && c(m, y)) return y
+    if ("object" == typeof y && y && c(h, y)) return y
   }
   return new _(false)
 }

@@ -55,18 +55,18 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = __OVERLAY__ ? Chunk295907.iC : (0, Chunk358085.isLinux)() ? Chunk295907.Hs : (0, Chunk358085.isMac)() ? Chunk295907.RE : (0, Chunk358085.isWindows)() ? Chunk295907.iC : {},
+let m = __OVERLAY__ ? Chunk295907.iC : (0, Chunk358085.isLinux)() ? Chunk295907.Hs : (0, Chunk358085.isMac)() ? Chunk295907.RE : (0, Chunk358085.isWindows)() ? Chunk295907.iC : {},
   g = o().invert(Chunk295907.Hs);
 g["223"] = "`", Object.freeze(g);
 let E = Object.freeze(o().invert(Chunk295907.RE)),
   b = o().invert(Chunk295907.iC);
 b["223"] = "`", Object.freeze(b);
-let y = o().invert(null != h ? h : {});
+let y = o().invert(null != m ? m : {});
 
 function O(e) {
   return "+" === e ? "plus" : e
@@ -74,7 +74,7 @@ function O(e) {
 
 function v(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I();
-  return t === d.Cg.BROWSER ? i()(e) : h[e]
+  return t === d.Cg.BROWSER ? i()(e) : m[e]
 }
 
 function S(e, t, n) {
@@ -158,7 +158,7 @@ function P(e) {
       t = i()(N(e));
       break;
     case a:
-      t = h[e];
+      t = m[e];
       break;
     case r === d.Mo.MOUSE_BUTTON:
       t = parseInt(e.replace("MOUSE", ""), 10);
@@ -171,7 +171,7 @@ function P(e) {
   }
   return null != t ? t : null
 }(0, Chunk358085.isMac)() || (y["223"] = "`"), Object.freeze(y);
-let R = [
+let w = [
     ["META", "⌘"],
     ["CMD", "⌘"],
     ["RIGHT META", "RIGHT ⌘"],
@@ -197,13 +197,13 @@ let R = [
     ["TAB", "⇥"],
     ["SPACE", "␣"]
   ],
-  w = e => {
-    for (let [t, n] of R)
+  R = e => {
+    for (let [t, n] of w)
       if (t === e.toUpperCase()) return n;
     return e
   },
   D = e => {
-    for (let [t, n] of R)
+    for (let [t, n] of w)
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },
@@ -230,7 +230,7 @@ function M(e) {
   return null == e ? [] : e.reduce((e, n) => {
     let r = C(n),
       i = p({}, t);
-    if (null == r) return e.push(m(p({}, i), {
+    if (null == r) return e.push(h(p({}, i), {
       combo: n
     })), e;
     if (x.test(r) && L(r)) return t[j(r)] = true, e.map(e => (e[j(r)] = true, e));
@@ -260,7 +260,7 @@ function U(e) {
       }
       return t === d.Mo.MOUSE_BUTTON ? "mouse".concat(n) : t === d.Mo.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
-  return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(w) : r).join(" + ").toUpperCase() : r.join("+")
+  return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(R) : r).join(" + ").toUpperCase() : r.join("+")
 }
 
 function G(e, t) {

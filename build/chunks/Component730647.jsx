@@ -35,14 +35,14 @@ function f(e) {
     includeSoftDeleted: f,
     countryCode: p,
     dontFetchWhileTrue: _
-  } = e, m = (0, a.e7)([o.Z], () => o.Z.isConnected()), h = (0, a.e7)([l.Z], () => null != t ? l.Z.getSubscriptionGroupListingsForGuildFetchState(t) : l.M.FETCHED), g = i.useRef(d), E = i.useCallback(() => {
-    if (null == t || !m || true === _) return;
+  } = e, h = (0, a.e7)([o.Z], () => o.Z.isConnected()), m = (0, a.e7)([l.Z], () => null != t ? l.Z.getSubscriptionGroupListingsForGuildFetchState(t) : l.M.FETCHED), g = i.useRef(d), E = i.useCallback(() => {
+    if (null == t || !h || true === _) return;
     let e = l.Z.getSubscriptionGroupListingsForGuildFetchState(t);
     (g.current || e === l.M.NOT_FETCHED) && (g.current = false, s.FP(t, {
       includeSoftDeleted: f,
       countryCode: p
     }))
-  }, [m, t, f, p, _]), b = u(h, g);
+  }, [h, t, f, p, _]), b = u(m, g);
   return (0, r.jsx)(c.Provider, {
     value: {
       listingsLoaded: b,

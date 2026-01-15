@@ -51,17 +51,17 @@ function O(e) {
     C = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
     t = C.recipients.reduce((e, t) => {
-      let n = m.default.getUser(t);
+      let n = h.default.getUser(t);
       return null != n && e.push(n), e
     }, []);
-    let e = m.default.getCurrentUser();
+    let e = h.default.getCurrentUser();
     N && null != e && t.push(e)
   }
-  let R = C.name;
-  (null == R || "" === R) && (R = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRF));
-  let w = b.intl.string(b.t.XpeFYr),
+  let w = C.name;
+  (null == w || "" === w) && (w = t.length > 0 ? t.filter(m.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRF));
+  let R = b.intl.string(b.t.XpeFYr),
     D = "active";
-  N && (w = b.intl.string(b.t.cEnaWx), D = "secondary");
+  N && (R = b.intl.string(b.t.cEnaWx), D = "secondary");
   let x = b.intl.string(b.t["3p3/BK"]);
   return I && (x = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
     children: [(0, r.jsx)(f.Z.Header, {
@@ -73,7 +73,7 @@ function O(e) {
           channel: C,
           onClick: N ? P : true
         }), (0, r.jsx)(f.Z.Info, {
-          title: R,
+          title: w,
           onClick: N ? P : true,
           children: (0, r.jsx)(f.Z.Data, {
             members: t.length
@@ -84,7 +84,7 @@ function O(e) {
         loading: T,
         disabled: N,
         variant: D,
-        text: w,
+        text: R,
         fullWidth: true
       })]
     })]

@@ -11,15 +11,15 @@ module.exports = function(e, t, n, l, c, u) {
     p = t.length;
   if (f != p && !(d && p > f)) returnfalse;
   var _ = u.get(e),
-    m = u.get(t);
-  if (_ && m) return _ == t && m == e;
-  var h = false,
+    h = u.get(t);
+  if (_ && h) return _ == t && h == e;
+  var m = false,
     g = true,
     E = n & s ? new r : true;
-  for (u.set(e, t), u.set(t, e); ++h < f;) {
-    var b = e[h],
-      y = t[h];
-    if (l) var O = d ? l(y, b, h, t, e, u) : l(b, y, h, e, t, u);
+  for (u.set(e, t), u.set(t, e); ++m < f;) {
+    var b = e[m],
+      y = t[m];
+    if (l) var O = d ? l(y, b, m, t, e, u) : l(b, y, m, e, t, u);
     if (true !== O) {
       if (O) continue;
       g = false;

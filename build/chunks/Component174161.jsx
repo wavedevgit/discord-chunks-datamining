@@ -59,7 +59,7 @@ function b(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, o = (0, a.e7)([u.default], () => u.default.locale), c = (0, m.M)(_.default.extractTimestamp(t.id), o), d = i.useMemo(() => {
+  } = e, o = (0, a.e7)([u.default], () => u.default.locale), c = (0, h.M)(_.default.extractTimestamp(t.id), o), d = i.useMemo(() => {
     let e = (0, p.$5)(t);
     return (0, r.jsx)(l.Z, {
       guild: e,
@@ -83,7 +83,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: h.intl.format(h.t["LC+S+m"], {
+          children: m.intl.format(m.t["LC+S+m"], {
             membersOnline: t.onlineCount
           })
         })]
@@ -94,7 +94,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: h.intl.format(h.t.zRl6XR, {
+          children: m.intl.format(m.t.zRl6XR, {
             count: t.memberCount
           })
         })]
@@ -104,7 +104,7 @@ function b(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: h.intl.format(h.t.zb2Q56, {
+        children: m.intl.format(m.t.zb2Q56, {
           createdAtDate: c
         })
       })

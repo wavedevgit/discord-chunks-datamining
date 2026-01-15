@@ -18,47 +18,47 @@ function u(e) {
     [d, f] = (0, l.z)(e.value, e.defaultValue || null, e.onChange),
     [p] = (0, c.useState)(d),
     _ = d || e.placeholderValue || null,
-    [m, h] = (0, r.iZ)(_, e.granularity),
-    g = null != d ? d.toDate(null != h ? h : "UTC") : null,
-    E = "hour" === m || "minute" === m || "second" === m,
+    [h, m] = (0, r.iZ)(_, e.granularity),
+    g = null != d ? d.toDate(null != m ? m : "UTC") : null,
+    E = "hour" === h || "minute" === h || "second" === h,
     b = null == (t = e.shouldCloseOnSelect) || t,
     [y, O] = (0, c.useState)(null),
     [v, S] = (0, c.useState)(null);
-  if (d && (y = d, "hour" in d && (v = d)), _ && !(m in _)) throw Error("Invalid granularity " + m + " for value " + _.toString());
+  if (d && (y = d, "hour" in d && (v = d)), _ && !(h in _)) throw Error("Invalid granularity " + h + " for value " + _.toString());
   let I = (null == d ? true : d.calendar.identifier) === "gregory" && "BC" === d.era,
     T = (0, c.useMemo)(() => ({
-      granularity: m,
-      timeZone: h,
+      granularity: h,
+      timeZone: m,
       hideTimeZone: e.hideTimeZone,
       hourCycle: e.hourCycle,
       shouldForceLeadingZeros: e.shouldForceLeadingZeros,
       showEra: I
-    }), [m, e.hourCycle, e.shouldForceLeadingZeros, h, e.hideTimeZone, I]),
+    }), [h, e.hourCycle, e.shouldForceLeadingZeros, m, e.hideTimeZone, I]),
     {
       minValue: C,
       maxValue: A,
       isDateUnavailable: N
     } = e,
     P = (0, c.useMemo)(() => (0, r.p2)(d, C, A, N, T), [d, C, A, N, T]),
-    R = (0, o.Q3)({
+    w = (0, o.Q3)({
       ...e,
       value: d,
       builtinValidation: P
     }),
-    w = R.displayValidation.isInvalid,
-    D = e.validationState || (w ? "invalid" : null),
+    R = w.displayValidation.isInvalid,
+    D = e.validationState || (R ? "invalid" : null),
     x = (e, t) => {
-      f("timeZone" in t ? t.set((0, i.WG)(e)) : (0, i.IO)(e, t)), O(null), S(null), R.commitValidation()
+      f("timeZone" in t ? t.set((0, i.WG)(e)) : (0, i.IO)(e, t)), O(null), S(null), w.commitValidation()
     },
     L = t => {
       let n = "function" == typeof b ? b() : b;
-      E ? v || n ? x(t, v || (0, r.zu)(e.defaultValue || e.placeholderValue)) : O(t) : (f(t), R.commitValidation()), n && u.setOpen(false)
+      E ? v || n ? x(t, v || (0, r.zu)(e.defaultValue || e.placeholderValue)) : O(t) : (f(t), w.commitValidation()), n && u.setOpen(false)
     },
     j = e => {
       y && e ? x(y, e) : S(e)
     };
   return {
-    ...R,
+    ...w,
     value: d,
     defaultValue: null != (n = e.defaultValue) ? n : p,
     setValue: f,
@@ -66,14 +66,14 @@ function u(e) {
     timeValue: v,
     setDateValue: L,
     setTimeValue: j,
-    granularity: m,
+    granularity: h,
     hasTime: E,
     ...u,
     setOpen(t) {
       !t && !d && y && E && x(y, v || (0, r.zu)(e.defaultValue || e.placeholderValue)), u.setOpen(t)
     },
     validationState: D,
-    isInvalid: w,
+    isInvalid: R,
     formatValue(e, t) {
       if (!g) return "";
       let n = (0, r.oE)(t, T);

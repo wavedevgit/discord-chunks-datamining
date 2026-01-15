@@ -2,7 +2,7 @@
 /** chunk id: 12498, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk106351 = require("./106351.js"),
   Chunk442837 = require("./442837.js"),
@@ -39,7 +39,7 @@ function _(e) {
     }
     of(u[e.guildId] = {}, e.channels)) u[e.guildId][t] = n
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(s.Z)
   }
@@ -48,8 +48,8 @@ class m extends(r = Chunk442837.ZP.Store) {
     if (null != e && null != e.guild_id && e.type === i.d.GUILD_VOICE) return c.has(e.guild_id) || (c.add(e.guild_id), s.Z.getSocket().requestChannelStatuses(e.guild_id)), null == (t = u[e.guild_id]) ? true : t[e.id]
   }
 }
-l(m, "displayName", "ChannelStatusStore");
-let h = new m(Chunk570140.Z, {
+l(h, "displayName", "ChannelStatusStore");
+let m = new h(Chunk570140.Z, {
   GUILD_CREATE: f,
   GUILD_DELETE: f,
   CONNECTION_RESUMED: d,

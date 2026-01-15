@@ -80,7 +80,7 @@ function I(e, t) {
 
 function T(e, t) {
   return i.useCallback(n => {
-    let r = h.Z.getChannel(t);
+    let r = m.Z.getChannel(t);
     null != r && null != e && (0, g.Pv)(n, e, r)
   }, [e, t])
 }
@@ -89,43 +89,43 @@ function C(e) {
   let {
     user: t,
     channelId: n,
-    guildId: h,
+    guildId: m,
     messageId: g,
     stopPropagation: b = false,
     ariaLabel: O,
     enableDisplayNameStyles: I = false
   } = e, C = i.useRef(null), {
     analyticsLocations: A
-  } = (0, c.ZP)(l.Z.USERNAME), N = (0, _.ZP)(h, null == t ? true : t.id), P = (0, u.Z)({
+  } = (0, c.ZP)(l.Z.USERNAME), N = (0, _.ZP)(m, null == t ? true : t.id), P = (0, u.Z)({
     userId: null == t ? true : t.id,
-    guildId: h
-  }), R = (0, p.j)({
+    guildId: m
+  }), w = (0, p.j)({
     displayNameStyles: P
-  }), w = T(t, n), D = i.useContext(o.d);
+  }), R = T(t, n), D = i.useContext(o.d);
   return (0, E.Z)({
     subscribeToGroupId: g,
     authorId: null == t ? true : t.id,
-    shouldSubscribe: I && null != P && null == h
+    shouldSubscribe: I && null != P && null == m
   }), i.useCallback(e => (i, o) => {
     let l = null == e ? true : e.colorStrings,
       u = N && null != l && null != l.primaryColor && null != l.secondaryColor,
       p = (t, n) => {
         var o, c, p;
-        if (!I || null == P || null != h) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
+        if (!I || null == P || null != m) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
           ref: C,
-          onContextMenu: w,
+          onContextMenu: R,
           name: null != (c = (0, s.qgQ)(i)) ? c : "",
           colorString: null != (p = null == e ? true : e.colorString) ? p : null,
           roleName: null == e ? true : e.colorRoleName,
           colorStrings: u ? l : null,
           "aria-label": O,
-          className: R
+          className: w
         }));
         {
           let e = (null == D ? true : D.animate) || (null == n ? true : n.isShown) ? d.F.ANIMATED : d.F.PLAIN;
           return (0, r.jsx)(a.Anchor, v(y({}, null != t ? t : {}), {
             ref: C,
-            onContextMenu: w,
+            onContextMenu: R,
             "aria-label": O,
             children: (0, r.jsx)(f.Z, {
               userName: null != (o = (0, s.qgQ)(i)) ? o : "",
@@ -142,10 +142,10 @@ function C(e) {
       };
     return (0, r.jsx)(c.Gt, {
       value: A,
-      children: null != t ? (0, r.jsx)(m.Z, {
+      children: null != t ? (0, r.jsx)(h.Z, {
         targetElementRef: C,
         user: t,
-        guildId: h,
+        guildId: m,
         channelId: n,
         messageId: g,
         roleId: null == e ? true : e.colorRoleId,
@@ -160,5 +160,5 @@ function C(e) {
         }
       }) : p(true, true)
     }, o)
-  }, [A, t, n, h, g, w, b, O, N, R, null == D ? true : D.animate, P, I])
+  }, [A, t, n, m, g, R, b, O, N, w, null == D ? true : D.animate, P, I])
 }

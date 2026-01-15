@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   JL: () => _,
-  P9: () => m,
-  gR: () => h,
+  P9: () => h,
+  gR: () => m,
   p9: () => g,
   wq: () => E
 }), require("./539854.js"), require("./388685.js");
@@ -30,7 +30,7 @@ function _(e, t, n) {
   return (!e.isGuildStageVoice() || !(s <= 0)) && (!i || !!(0, a.Z)(e, n)) && !!n.can(f.Plq.STREAM, e) && null != o && o.afkChannelId !== e.id
 }
 
-function m(e) {
+function h(e) {
   switch (e) {
     case 0:
       return p.intl.string(p.t["1i3tSY"]);
@@ -45,7 +45,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   switch (e) {
     case 0:
       return "".concat(p.intl.string(p.t["7Xq/nV"]), ": ").concat(p.intl.string(p.t["1i3tSY"]));
@@ -69,8 +69,8 @@ function g(e, t, n, r, o) {
     p = null != o.getAwaitingRemoteSessionInfo() || null != o.getRemoteSessionId(),
     _ = (0, i.dl)() && (0, i.zd)(e.id);
   p ? l = 0 : _ ? l = 3 : f || c ? u && !c && (l = 1) : l = 2;
-  let m = f && !u;
-  return [!__OVERLAY__ && !p && !_ && (c || m), l]
+  let h = f && !u;
+  return [!__OVERLAY__ && !p && !_ && (c || h), l]
 }
 
 function E(e) {

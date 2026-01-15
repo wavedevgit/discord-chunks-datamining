@@ -68,9 +68,9 @@ function O(e, t, n) {
     T = null != (b = S.sourceLocation) ? b : i.Z.MEMBER_SAFETY_PAGE,
     C = d.Z.getCurrentlySelectedChannelId(),
     A = null != C ? c.Z.getChannel(C) : null;
-  if (n !== h.oC.MEMBER_SAFETY && (null == A || A.getGuildId() !== e)) {
+  if (n !== m.oC.MEMBER_SAFETY && (null == A || A.getGuildId() !== e)) {
     let t = u.ZP.getDefaultChannel(e);
-    null == t || (0, r.Y3)(t) || (0, o.uL)(m.Z5c.CHANNEL(e, t.id))
+    null == t || (0, r.Y3)(t) || (0, o.uL)(h.Z5c.CHANNEL(e, t.id))
   }
   let N = n;
   return (0, a.H0)(N, t) && (v = N), (0, f.q)(e, t, I, T), s.Z.openGuildSidebar({

@@ -42,11 +42,11 @@ function _(e) {
     context: t,
     openInPopout: f,
     analyticsLocation: _ = "open-activity-shelf",
-    initialState: m
+    initialState: h
   } = e;
   f && (0, a.Z)(d.KJ3.CHANNEL_CALL_POPOUT);
-  let h = f ? i.u1M : i.z1l;
-  (0, l.y)(c.ti.DISMISSED), (0, l._)(c._b.VOICE, true, m, "channel" === t.type ? t.channel.id : true);
+  let m = f ? i.u1M : i.z1l;
+  (0, l.y)(c.ti.DISMISSED), (0, l._)(c._b.VOICE, true, h, "channel" === t.type ? t.channel.id : true);
   let g = "contextless" !== t.type && (o.ZP.hasUnread(t.channel.id) || o.ZP.getMentionCount(t.channel.id) > 0);
   return s.default.track(d.rMx.VOICE_PANEL_TAB_OPENED, {
     tab: "activities",
@@ -62,6 +62,6 @@ function _(e) {
     }, n))
   }, {
     modalKey: u.e9,
-    contextKey: h
+    contextKey: m
   })
 }

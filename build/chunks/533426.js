@@ -4,13 +4,13 @@
 require.d(exports, {
   KC: () => a,
   Lg: () => p,
-  Mb: () => w,
+  Mb: () => R,
   N9: () => s,
   Nm: () => b,
   PA: () => S,
-  Rn: () => R,
+  Rn: () => w,
   Vf: () => y,
-  Xi: () => m,
+  Xi: () => h,
   em: () => O,
   iT: () => E,
   ji: () => d,
@@ -74,11 +74,11 @@ function _(e, t) {
   return e.calendar.toJulianDay(e) - t.calendar.toJulianDay(t)
 }
 
-function m(e, t) {
-  return h(e) - h(t)
+function h(e, t) {
+  return m(e) - m(t)
 }
 
-function h(e) {
+function m(e) {
   return 36e5 * e.hour + 6e4 * e.minute + 1e3 * e.second + e.millisecond
 }
 let g = null;
@@ -172,12 +172,12 @@ function P(e) {
   return t.firstDay
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   let r = e.calendar.getDaysInMonth(e);
   return Math.ceil((d(b(e), t, n) + r) / 7)
 }
 
-function w(e, t) {
+function R(e, t) {
   return e && t ? 0 >= e.compare(t) ? e : t : e || t
 }
 

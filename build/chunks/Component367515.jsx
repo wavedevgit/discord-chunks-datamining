@@ -105,16 +105,16 @@ function v(e) {
       className: g.actions,
       children: a ? (0, r.jsx)(f.Z, {
         icon: l.Dio,
-        tooltip: h.intl.string(m.default.e5iHmZ),
+        tooltip: m.intl.string(h.default.e5iHmZ),
         onClick: I
       }) : (0, r.jsxs)(r.Fragment, {
         children: [E ? null : (0, r.jsx)(f.Z, {
           icon: l.dz2,
-          tooltip: h.intl.string(m.default.krWQZK),
+          tooltip: m.intl.string(h.default.krWQZK),
           onClick: v
         }), (0, r.jsx)(f.Z, {
           icon: l.Dio,
-          tooltip: h.intl.string(m.default.bBDeNI),
+          tooltip: m.intl.string(h.default.bBDeNI),
           onClick: S
         })]
       })

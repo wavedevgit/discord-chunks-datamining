@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Jr: () => g,
-  O6: () => h,
+  O6: () => m,
   _i: () => f,
   v6: () => E,
-  zR: () => m
+  zR: () => h
 });
 var Chunk473749 = require("./473749.js"),
   Chunk524437 = require("./524437.js"),
@@ -49,7 +49,7 @@ let f = e => {
     return (0, a.c_)("resolveExplicitContentSettingWithDefaults") || c ? p({
       isDm: n,
       isFriend: r
-    }) : (null == s ? true : s.nsfwAllowed) === false ? m({
+    }) : (null == s ? true : s.nsfwAllowed) === false ? h({
       isDm: n,
       isFriend: r
     }) : _({
@@ -71,14 +71,14 @@ let f = e => {
     } = e;
     return t && n ? i.Q4.SHOW : t ? i.Q4.BLOCK : i.Q4.SHOW
   },
-  m = e => {
+  h = e => {
     let {
       isDm: t = false,
       isFriend: n = false
     } = e;
     return t && n ? i.Q4.BLUR : t ? i.Q4.BLOCK : i.Q4.BLUR
   },
-  h = e => {
+  m = e => {
     let t = null != e ? e : s.j7.getSetting();
     return {
       goreContentGuilds: f({
@@ -96,7 +96,7 @@ let f = e => {
     }
   },
   g = e => {
-    let t = h();
+    let t = m();
     s.j7.updateSetting(d({}, t, e))
   },
   E = () => r.useMemo(() => c.BhN.EXPLICIT_MEDIA_REDACTION, [])

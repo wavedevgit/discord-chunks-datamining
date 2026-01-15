@@ -86,7 +86,7 @@ function N(e, t) {
 
 function P(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -94,14 +94,14 @@ function P(e, t) {
   return i
 }
 
-function R(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let w = {
+let R = {
   [Chunk876215.s.TOP_ARTIST]: [W],
   [Chunk876215.s.PLAYED_GAME]: [U, G, k, z, F, H, K, V, B],
   [Chunk876215.s.TOP_GAME]: [Y],
@@ -166,7 +166,7 @@ function k(e) {
   } = (0, E.Z)(t), {
     location: i
   } = L();
-  return null == n || (0, m.Hi)(i, [1, 2, 3, 4]) ? null : (0, r.jsx)(M, {
+  return null == n || (0, h.Hi)(i, [1, 2, 3, 4]) ? null : (0, r.jsx)(M, {
     Icon: p.gj8,
     text: n.name
   })
@@ -180,7 +180,7 @@ function U(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = L(), s = (0, b.Jg)(t) && (0, m.Hi)(o, [0, 4, 7, 9]), l = s ? p.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i, {
+  } = L(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4, 7, 9]), l = s ? p.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i, {
     streamPreviewUrl: u
   } = (0, E.Z)(t), d = null != u ? p.hGI : (0, g.Mq)(t) ? p.jje : p.iWm;
   return (0, r.jsxs)(j, {
@@ -228,7 +228,7 @@ function Z(e) {
     defaultTextColor: i,
     defaultIconColor: a,
     location: o
-  } = L(), s = (0, b.Jg)(t) && (0, m.Hi)(o, [0, 4]), l = s ? p.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
+  } = L(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4]), l = s ? p.TVs.colors.TEXT_FEEDBACK_POSITIVE : a, c = s ? "text-feedback-positive" : i;
   return (0, r.jsxs)("div", {
     className: I.badgeContainer,
     children: [(0, r.jsx)(p.RZG, {
@@ -248,7 +248,7 @@ function F(e) {
     entry: t
   } = e, {
     location: n
-  } = L(), i = (0, m.Hi)(n, [0, 3]) ? p.TVs.colors.STATUS_POSITIVE : true;
+  } = L(), i = (0, h.Hi)(n, [0, 3]) ? p.TVs.colors.STATUS_POSITIVE : true;
   return (0, b.Ol)(t) ? (0, r.jsx)(M, {
     Icon: p._IE,
     text: S.intl.string(S.t.keY6mW),
@@ -338,7 +338,7 @@ function W(e) {
     location: i
   } = L(), a = null == (t = (0, b.PJ)(n, u.N.AGGREGATE_COUNT)) ? true : t.count;
   if (null == a) return null;
-  let o = (0, m.Hi)(i, [1, 2, 5]) ? S.intl.formatToPlainString(S.t.HtifnG, {
+  let o = (0, h.Hi)(i, [1, 2, 5]) ? S.intl.formatToPlainString(S.t.HtifnG, {
     count: a
   }) : S.intl.formatToPlainString(S.t["jq/Bmu"], {
     count: a
@@ -370,7 +370,7 @@ function z(e) {
     location: n
   } = L();
   if (3 === n) return null;
-  let i = h.default.extractTimestamp(t.extra.application_id);
+  let i = m.default.extractTimestamp(t.extra.application_id);
   return l()().diff(l()(i), "days") > v.G ? null : (0, r.jsx)(M, {
     Icon: p.rIT,
     text: S.intl.string(S.t.vYuyWf)
@@ -416,7 +416,7 @@ function X(e) {
     children: i,
     className: a
   } = e;
-  return t = (0, m.Hi)(n, [1, 5, 6]) ? {
+  return t = (0, h.Hi)(n, [1, 5, 6]) ? {
     defaultTextColor: "content-inventory-overlay-text-secondary",
     defaultIconColor: p.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY
   } : 2 === n ? {
@@ -435,7 +435,7 @@ function X(e) {
     children: (0, r.jsx)("div", {
       className: o()(I.badgesContainer, {
         [I.badgesContainerCard]: 0 === n,
-        [I.badgesContainerPopout]: (0, m.Hi)(n, [1, 2]),
+        [I.badgesContainerPopout]: (0, h.Hi)(n, [1, 2]),
         [I.badgesContainerGameProfile]: 3 === n
       }, a),
       children: i
@@ -446,23 +446,23 @@ function X(e) {
 function J(e) {
   switch (e.content_type) {
     case c.s.TOP_ARTIST:
-      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return R[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.PLAYED_GAME:
-      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return R[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.TOP_GAME:
-      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return R[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.WATCHED_MEDIA:
-      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return R[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.LAUNCHED_ACTIVITY:
-      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return R[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     default:

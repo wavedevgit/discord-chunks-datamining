@@ -57,17 +57,17 @@ let T = true,
   P = e => {
     r = true
   },
-  R = e => {
+  w = e => {
     let {
       channelId: t,
       guildId: n
     } = e, r = E.default.getCurrentUser();
     if (null == t || null == n || (0, c.zu)(s.z.CLIENT_THEMES_COACHMARK) || !(0, y.Fc)(r)) return;
     let i = g.Z.getChannel(t);
-    null != i && (0, h.zi)(i.type) && (C = true)
+    null != i && (0, m.zi)(i.type) && (C = true)
   };
 
-function w() {
+function R() {
   T && (r = true), C = false
 }
 let D = () => {
@@ -100,7 +100,7 @@ let D = () => {
   };
 class j extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? v.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, p.ZP, m.Z, E.default), this.syncWith([E.default], D), this.syncWith([u.Z], x)
+    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? v.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, p.ZP, h.Z, E.default), this.syncWith([E.default], D), this.syncWith([u.Z], x)
   }
   getState() {
     return T ? {} : {
@@ -136,9 +136,9 @@ let M = new j(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: A,
   UPDATE_MOBILE_PENDING_THEME_INDEX: N,
   RESET_PREVIEW_CLIENT_THEME: P,
-  CLIENT_THEMES_EDITOR_CLOSE: w,
-  CHANNEL_SELECT: R,
-  LOGOUT: w,
+  CLIENT_THEMES_EDITOR_CLOSE: R,
+  CHANNEL_SELECT: w,
+  LOGOUT: R,
   CACHE_LOADED: L,
   CONNECTION_OPEN: L,
   OVERLAY_INITIALIZE: L,

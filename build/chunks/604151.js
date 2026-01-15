@@ -68,7 +68,7 @@ let O = function(e, t) {
         } = await n.e("86465").then(n.bind(n, 997308));
         return t => e(t)
       });
-      if (!(0, o.Z)(S, m.Z)) return
+      if (!(0, o.Z)(S, h.Z)) return
     }
     b && (0, u.eH)(), (0, d.Z)(C, e, O, b)
   }
@@ -79,7 +79,7 @@ let O = function(e, t) {
       type: "VOICE_CHANNEL_SELECT",
       guildId: t,
       channelId: e,
-      currentVoiceChannelId: h.Z.getVoiceChannelId(),
+      currentVoiceChannelId: m.Z.getVoiceChannelId(),
       video: b,
       stream: O,
       lockVoiceStateForResume: v,

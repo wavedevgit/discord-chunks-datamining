@@ -54,7 +54,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -139,16 +139,16 @@ function k(e) {
     serverMute: s,
     deaf: f,
     serverDeaf: p,
-    collapsed: m,
-    video: h,
+    collapsed: h,
+    video: m,
     isStreaming: g,
     disabled: E,
     isWatching: b,
     iconClassName: v,
     embeddedApplication: N,
     otherClientSessionType: P,
-    voicePlatform: R,
-    application: w,
+    voicePlatform: w,
+    application: R,
     guildId: D,
     channelId: x,
     user: L,
@@ -160,7 +160,7 @@ function k(e) {
     handleHoverIcons: V,
     onAddHangStatusClicked: H
   } = e;
-  if (m || E) return null;
+  if (h || E) return null;
   let Y = [],
     W = Z({
       iconClassName: v,
@@ -170,7 +170,7 @@ function k(e) {
       deaf: f,
       serverDeaf: p
     });
-  h && (a ? Y.push((0, r.jsx)(c.u, {
+  m && (a ? Y.push((0, r.jsx)(c.u, {
     text: C.intl.string(C.t["PXMZ/+"]),
     children: (0, r.jsx)(u.Amn, {
       size: "md",
@@ -198,9 +198,9 @@ function k(e) {
       color: "currentColor",
       className: o()(A.icon, v)
     })
-  }, "activity")), P === T.YE.XBOX || R === I.wR.XBOX ? Y.push((0, r.jsx)(O.Z, {
+  }, "activity")), P === T.YE.XBOX || w === I.wR.XBOX ? Y.push((0, r.jsx)(O.Z, {
     className: o()(A.icon, v)
-  }, "xbox")) : (P === T.YE.PLAYSTATION || R === I.wR.PLAYSTATION) && Y.push((0, r.jsx)(y.Z, {
+  }, "xbox")) : (P === T.YE.PLAYSTATION || w === I.wR.PLAYSTATION) && Y.push((0, r.jsx)(y.Z, {
     className: o()(A.icon, v)
   }, "playstation")), b && Y.push((0, r.jsx)(c.u, {
     text: C.intl.string(C.t["JH1SJ+"]),
@@ -212,7 +212,7 @@ function k(e) {
   }, "watch")), g && Y.push((0, r.jsx)(_.ZP, {
     size: _.ZP.Sizes.SMALL
   }, "stream"));
-  let K = null != w && !(0, l.yE)(w.flags, S.udG.EMBEDDED),
+  let K = null != R && !(0, l.yE)(R.flags, S.udG.EMBEDDED),
     z = null == k && K;
   return 0 !== Y.length || 0 !== W.length || U || z ? (0, r.jsxs)("div", {
     className: o()(A.icons, t),
@@ -226,7 +226,7 @@ function k(e) {
       onMouseEnter: () => null == B ? true : B(true),
       onMouseLeave: () => null == B ? true : B(false),
       children: z ? (0, r.jsx)(G, {
-        application: w,
+        application: R,
         iconClassName: v,
         guildId: D,
         channelId: x,
@@ -260,7 +260,7 @@ let U = function(e) {
     onMouseLeave: I,
     onMouseDown: T,
     priority: N,
-    speaking: R = false,
+    speaking: w = false,
     voiceDb: x = false / 0,
     latched: L,
     collapsed: j,
@@ -275,13 +275,13 @@ let U = function(e) {
     "aria-label": Y,
     ringing: W,
     user: K
-  } = _, z = (0, m.Z)({
+  } = _, z = (0, h.Z)({
     userId: K.id,
     guildId: G
-  }), q = (0, h.j)({
+  }), q = (0, m.j)({
     displayNameStyles: z
   }), Q = (0, p._)({
-    isSpeaking: R,
+    isSpeaking: w,
     isLatched: L,
     voiceDb: x
   }), X = e => {
@@ -301,7 +301,7 @@ let U = function(e) {
       text: C.intl.string(C.t.BVK71i),
       children: (0, r.jsx)("div", {
         className: o()(A.iconPriortySpeaker, {
-          [A.iconPriortySpeakerSpeaking]: !M && !U && R
+          [A.iconPriortySpeakerSpeaking]: !M && !U && w
         })
       })
     }) : null
@@ -322,7 +322,7 @@ let U = function(e) {
   function ei() {
     let e = (0, r.jsxs)("div", {
         className: o()(i, A.username, q, {
-          [A.usernameSpeaking]: !M && !U && R
+          [A.usernameSpeaking]: !M && !U && w
         }),
         children: [null != Z ? Z : v.ZP.getName(K), F ? (0, r.jsxs)("span", {
           className: A.guestSuffix,
@@ -340,7 +340,7 @@ let U = function(e) {
           source: d ? S.jXE.OVERLAY : S.Sbl.VOICE_PANEL
         }
       };
-    return !j || d ? (0, r.jsx)(E.Z, w(P({}, t), {
+    return !j || d ? (0, r.jsx)(E.Z, R(P({}, t), {
       children: e
     })) : null
   }
@@ -398,7 +398,7 @@ function G(e) {
       user_id: u
     })
   }, [t.id, l, a, u, d]);
-  let m = () => {
+  let h = () => {
     f.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
       channel_id: l,
       guild_id: a,
@@ -418,7 +418,7 @@ function G(e) {
       className: o()(A.icon, A.gameIcon, n),
       game: t,
       size: g.A.XSMALL,
-      onMouseEnter: m
+      onMouseEnter: h
     })
   })
 }

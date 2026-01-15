@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,14 +60,14 @@ function g(e, t, p) {
     let {
       default: e
     } = await Promise.all([n.e("46746"), n.e("84064")]).then(n.bind(n, 60594));
-    return t => (0, r.jsx)(e, h(_({}, t), {
+    return t => (0, r.jsx)(e, m(_({}, t), {
       analyticsLocations: p
     }))
   });
   else {
-    var m;
+    var h;
     let n = s.Z.getChannel(t),
-      r = (0, o.Z)(f.tI.PRESET_CUSTOM, f.LY.RESOLUTION_1080, f.ws.FPS_30, u.default.getCurrentUser(), null == (m = l.Z.getGuild(e)) ? true : m.premiumTier, n) ? {
+      r = (0, o.Z)(f.tI.PRESET_CUSTOM, f.LY.RESOLUTION_1080, f.ws.FPS_30, u.default.getCurrentUser(), null == (h = l.Z.getGuild(e)) ? true : h.premiumTier, n) ? {
         width: 1920,
         height: 1080
       } : {

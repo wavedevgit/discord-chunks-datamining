@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,12 +78,12 @@ function b(e) {
     variant: t = "active",
     size: n = "sm",
     hangStatusChannel: p,
-    onAction: m,
+    onAction: h,
     userId: E
   } = e, b = g(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]);
   let y = (0, i.e7)([c.Z], () => c.Z.getChannelId() === p.id),
     O = () => {
-      null == m || m(), o.default.selectVoiceChannel(p.id), (0, l.Kh)(p.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, h(_({
+      null == h || h(), o.default.selectVoiceChannel(p.id), (0, l.Kh)(p.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, m(_({
         source: "UserProfilePopout"
       }, (0, s.Z)(p.id)), {
         other_user_id: E,

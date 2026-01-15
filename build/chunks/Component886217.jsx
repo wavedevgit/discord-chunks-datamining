@@ -52,23 +52,23 @@ let T = (e, t, n, r) => {
       parent_title: I,
       provider: A,
       image_url: N
-    } = n.extra.media, P = n.extra.artist.name, R = (0, s.e7)([c.default], () => c.default.getUser(n.author_id)), {
-      primaryColor: w,
+    } = n.extra.media, P = n.extra.artist.name, w = (0, s.e7)([c.default], () => c.default.getUser(n.author_id)), {
+      primaryColor: R,
       secondaryColor: D
-    } = (0, h.Z)(N), x = (0, p.Nq)(n), L = i.useCallback(() => {
-      if (null == t || null == R || !(0, d.Hi)(x, g.y9)) return;
-      let e = T(n, t, R, x);
+    } = (0, m.Z)(N), x = (0, p.Nq)(n), L = i.useCallback(() => {
+      if (null == t || null == w || !(0, d.Hi)(x, g.y9)) return;
+      let e = T(n, t, w, x);
       return (0, _.CR)({
-        user: R,
+        user: w,
         channel: t,
         mediaImageSrc: N,
         artist: P,
         description: e,
-        colors: [w, D],
+        colors: [R, D],
         badges: (0, _.UU)(n)
       })
-    }, [N, P, t, n, w, x, D, R]), j = (0, m.Z)(O.ABu.SPOTIFY);
-    if (null == R || !(0, d.Hi)(x, g.y9)) return null;
+    }, [N, P, t, n, R, x, D, w]), j = (0, h.Z)(O.ABu.SPOTIFY);
+    if (null == w || !(0, d.Hi)(x, g.y9)) return null;
     let M = () => {
         let e = v.Hw.ALBUM,
           t = l.Z.isProtocolRegistered() ? v.C7.PLAYER_OPEN(e, n.extra.media.external_parent_id) : v.C7.WEB_OPEN(e, n.extra.media.external_parent_id);
@@ -104,10 +104,10 @@ let T = (e, t, n, r) => {
         children: (0, r.jsx)(b.WT, {
           onReaction: a,
           onVoiceChannelPreview: f,
-          user: R,
+          user: w,
           channel: t,
           generateReactionImage: L,
-          reactionImageAltText: C(n, R),
+          reactionImageAltText: C(n, w),
           entry: n
         })
       })]

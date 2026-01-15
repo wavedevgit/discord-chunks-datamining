@@ -2,7 +2,7 @@
 /** chunk id: 737013, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -53,16 +53,16 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   let d = (0, a.vRw)(),
     {
       videoEnabled: p,
-      hasVideoDevice: m
+      hasVideoDevice: h
     } = (0, i.cj)([l.Z], () => ({
       videoEnabled: l.Z.isVideoEnabled(),
       hasVideoDevice: l.Z.isVideoAvailable()
     })),
-    h = (0, i.e7)([s.default], () => s.default.getId() === e),
+    m = (0, i.e7)([s.default], () => s.default.getId() === e),
     g = (0, o.Z)();
 
   function E() {
@@ -78,7 +78,7 @@ function m(e, t) {
       contextKey: null != t ? (0, a.VnL)(t) : d
     })
   }
-  return (!p || g) && h && m ? (0, r.jsx)(a.sNh, {
+  return (!p || g) && m && h ? (0, r.jsx)(a.sNh, {
     id: "change-video-background",
     label: (0, r.jsx)("div", {
       className: u.item,

@@ -108,15 +108,15 @@ function T(e) {
       executeStateUpdate: T,
       visualState: C,
       isDisabled: A
-    } = (0, m.Ee)(e),
+    } = (0, h.Ee)(e),
     N = (0, f.s)(O),
     P = null != O && i === d.ZJ.PREMIUM,
-    R = P && (null == N ? true : N.disabled),
-    w = P ? null == N ? true : N.label : n,
+    w = P && (null == N ? true : N.disabled),
+    R = P ? null == N ? true : N.label : n,
     D = null != g,
-    x = null != w && w.length > 0,
+    x = null != R && R.length > 0,
     L = i === d.ZJ.LINK && null != b && b.length > 0,
-    j = C === h.gH.LOADING || P && null == N;
+    j = C === m.gH.LOADING || P && null == N;
   return t = L ? () => {
     (0, _.q)({
       href: null != b ? b : "",
@@ -126,7 +126,7 @@ function T(e) {
     "data-migration-pending": true,
     color: S(i),
     size: s.zx.Sizes.SMALL,
-    disabled: p || C === h.gH.DISABLED || A || R,
+    disabled: p || C === m.gH.DISABLED || A || w,
     onClick: t,
     onContextMenu: e => {
       L && (0, c.vq)(e, e => (0, r.jsx)(I, v(y({}, e), {
@@ -156,7 +156,7 @@ function T(e) {
         animated: g.animated
       }) : null, x ? (0, r.jsx)("div", {
         className: E.label,
-        children: w
+        children: R
       }) : null, L ? (0, r.jsx)(l.rgF, {
         size: "xs",
         color: "currentColor",

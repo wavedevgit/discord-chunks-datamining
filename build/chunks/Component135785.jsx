@@ -2,7 +2,7 @@
 /** chunk id: 135785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,10 +18,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk561229 = require("./561229.js");
-let h = e => {
+let m = e => {
   let t, n, {
       premiumSubscription: i,
-      className: h,
+      className: m,
       textColor: g
     } = e,
     E = (0, d.Nx)();
@@ -33,8 +33,8 @@ let h = e => {
     }),
     O = (null != b ? u.ZP.getSkuIdForPlan(b.planId) : null) === f.Si.TIER_1;
   return n = null != g ? g : E ? "always-white" : "text-default", (0, r.jsxs)(o.Zbd, {
-    className: a()(m.container, h, {
-      [m.centerText]: E
+    className: a()(h.container, m, {
+      [h.centerText]: E
     }),
     type: o.Zbd.Types.CUSTOM,
     children: [(0, r.jsx)(o.Mgn, {
@@ -42,8 +42,8 @@ let h = e => {
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a()(m.icon, {
-        [m.lightThemeColorOnly]: E
+      className: a()(h.icon, {
+        [h.lightThemeColorOnly]: E
       })
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",

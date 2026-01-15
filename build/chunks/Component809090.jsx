@@ -25,7 +25,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,7 +81,7 @@ function y(e) {
     },
     isSelected: a,
     width: _,
-    height: h,
+    height: m,
     className: b,
     selectable: y = false,
     isSquircle: O,
@@ -92,9 +92,9 @@ function y(e) {
   } = e, C = E(e, ["section", "channel", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
   let [A, N] = i.useState(false), P = i.useCallback(() => {
     N(true), null == v || v()
-  }, [v]), R = i.useCallback(() => {
+  }, [v]), w = i.useCallback(() => {
     N(false), null == S || S()
-  }, [S]), w = i.useCallback(() => {
+  }, [S]), R = i.useCallback(() => {
     N(true), null == I || I()
   }, [I]), D = i.useCallback(() => {
     N(false), null == T || T()
@@ -112,26 +112,26 @@ function y(e) {
       size: _
     })
   }, [t, _, x]);
-  return (0, r.jsx)("div", g(m({}, C), {
+  return (0, r.jsx)("div", g(h({}, C), {
     className: o()(f.wrapper, b, {
       [f.selectable]: y,
       [f.selected]: y && a
     }),
     onFocus: P,
-    onBlur: R,
-    onMouseOver: w,
+    onBlur: w,
+    onMouseOver: R,
     onMouseLeave: D,
     children: (0, r.jsx)(l.ZP, {
       className: f.mask,
       mask: O || y && (a || A) ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
       width: _,
-      height: h,
+      height: m,
       children: (0, r.jsx)("img", {
         alt: "",
         className: f.icon,
         style: {
           width: _,
-          height: h
+          height: m
         },
         src: L
       })

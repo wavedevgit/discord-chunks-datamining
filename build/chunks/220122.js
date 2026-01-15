@@ -17,11 +17,11 @@ var Chunk481060 = require("./481060.js"),
 require("./600349.js");
 var Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
-let m = "CLIPS_IN_CALL_WARNING";
-class h extends Chunk474639.Z {
+let h = "CLIPS_IN_CALL_WARNING";
+class m extends Chunk474639.Z {
   showClipsToast() {
     (0, r.showToast)({
-      id: m,
+      id: h,
       message: _.intl.string(_.t["d+41qJ"]),
       type: r.ToastType.CLIP,
       options: {
@@ -69,4 +69,4 @@ class h extends Chunk474639.Z {
     })
   }
 }
-let g = new h
+let g = new m

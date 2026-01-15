@@ -36,7 +36,7 @@ function N(e) {
     guild: n,
     onClose: N,
     scrollToPowerupCards: P
-  } = e, [R, w] = i.useState(true), D = i.useRef(false), x = (0, c.Z)(() => Date.now()), {
+  } = e, [w, R] = i.useState(true), D = i.useRef(false), x = (0, c.Z)(() => Date.now()), {
     analyticsLocations: L
   } = (0, u.ZP)(), j = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useCallback(() => {
     null != k.current && null != M.current && M.current.scrollTo({
@@ -107,7 +107,7 @@ function N(e) {
         className: A.header,
         children: (0, r.jsxs)("div", {
           className: A.headerContentWrapper,
-          children: [(0, r.jsx)(m.Z, {
+          children: [(0, r.jsx)(h.Z, {
             guild: e.guild,
             themeResponsive: false,
             onButtonClick: G
@@ -119,7 +119,7 @@ function N(e) {
           }), (0, r.jsx)(E.Z, {
             guild: n,
             closeLayer: Z,
-            onCtaVisibilityChange: w
+            onCtaVisibilityChange: R
           }), (0, r.jsx)(y.Z, {
             guild: n
           }), (0, r.jsx)(O.Z, {
@@ -128,7 +128,7 @@ function N(e) {
         })
       }), (0, r.jsx)("div", {
         className: A.middleBodyContentWrapper,
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(m.Z, {
           ref: k,
           guild: e.guild,
           onClose: Z
@@ -152,7 +152,7 @@ function N(e) {
       })]
     }), (0, r.jsx)(b.Z, {
       guild: n,
-      isVisible: !R,
+      isVisible: !w,
       closeLayer: Z
     })]
   })

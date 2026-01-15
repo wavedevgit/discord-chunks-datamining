@@ -7,7 +7,7 @@ require.d(exports, {
   TK: () => C,
   VX: () => x,
   f: () => I,
-  mc: () => R,
+  mc: () => w,
   pg: () => N
 });
 var Chunk23893 = require("./23893.js"),
@@ -38,12 +38,12 @@ let y = (0, Chunk473749.createContext)(null),
     } = (0, s.j)(), d = (0, g.F)({
       ...e,
       locale: n,
-      createCalendar: e.createCalendar || m.Y
+      createCalendar: e.createCalendar || h.Y
     }), {
       calendarProps: f,
       prevButtonProps: p,
       nextButtonProps: _,
-      errorMessageProps: h,
+      errorMessageProps: m,
       title: O
     } = (0, l.G)(e, d), S = (0, i.aX)({
       ...e,
@@ -79,7 +79,7 @@ let y = (0, Chunk473749.createContext)(null),
         [y, e],
         [o.j, {
           slots: {
-            errorMessage: h
+            errorMessage: m
           }
         }]
       ]
@@ -103,12 +103,12 @@ let y = (0, Chunk473749.createContext)(null),
     let p = null != (n = null == s ? true : s.firstDayOfWeek) ? n : null == l ? true : l.firstDayOfWeek,
       {
         gridProps: _,
-        headerProps: m,
+        headerProps: h,
         weekDays: g,
         weeksInMonth: I
       } = (0, d.Q)({
         startDate: f,
-        endDate: (0, h.Vf)(f),
+        endDate: (0, m.Vf)(f),
         weekdayStyle: e.weekdayStyle,
         firstDayOfWeek: p
       }, u),
@@ -117,7 +117,7 @@ let y = (0, Chunk473749.createContext)(null),
       });
     return b.createElement(T.Provider, {
       value: {
-        headerProps: m,
+        headerProps: h,
         weekDays: g,
         startDate: f,
         weeksInMonth: I
@@ -128,7 +128,7 @@ let y = (0, Chunk473749.createContext)(null),
       style: e.style,
       cellPadding: 0,
       className: null != (r = e.className) ? r : "react-aria-CalendarGrid"
-    }, "function" != typeof e.children ? e.children : b.createElement(b.Fragment, null, b.createElement(N, null, e => b.createElement(R, null, e)), b.createElement(D, null, e.children))))
+    }, "function" != typeof e.children ? e.children : b.createElement(b.Fragment, null, b.createElement(N, null, e => b.createElement(w, null, e)), b.createElement(D, null, e.children))))
   });
 
 function A(e, t) {
@@ -168,9 +168,9 @@ function P(e, t) {
     className: i || "react-aria-CalendarHeaderCell"
   }, n)
 }
-let R = (0, Chunk473749.forwardRef)(P);
+let w = (0, Chunk473749.forwardRef)(P);
 
-function w(e, t) {
+function R(e, t) {
   let {
     children: n,
     style: r,
@@ -194,7 +194,7 @@ function w(e, t) {
     key: t
   })))))
 }
-let D = (0, Chunk473749.forwardRef)(w),
+let D = (0, Chunk473749.forwardRef)(R),
   x = (0, Chunk473749.forwardRef)(function({
     date: e,
     ...t
@@ -208,9 +208,9 @@ let D = (0, Chunk473749.forwardRef)(w),
       } = null != (r = (0, b.useContext)(T)) ? r : {
         startDate: s.visibleRange.start
       },
-      u = !(0, h.xj)(l, e),
-      d = (0, h.zk)(e, s.timeZone),
-      m = (0, b.useRef)(null),
+      u = !(0, m.xj)(l, e),
+      d = (0, m.zk)(e, s.timeZone),
+      h = (0, b.useRef)(null),
       {
         cellProps: g,
         buttonProps: y,
@@ -218,7 +218,7 @@ let D = (0, Chunk473749.forwardRef)(w),
       } = (0, f.J)({
         date: e,
         isOutsideMonth: u
-      }, s, m),
+      }, s, h),
       {
         hoverProps: I,
         isHovered: C
@@ -232,9 +232,9 @@ let D = (0, Chunk473749.forwardRef)(w),
       } = (0, _.F)();
     N && (N = O.isFocused);
     let P = false,
-      R = false;
-    "highlightedRange" in s && s.highlightedRange && (P = (0, h.KC)(e, s.highlightedRange.start), R = (0, h.KC)(e, s.highlightedRange.end));
-    let w = (0, i.aX)({
+      w = false;
+    "highlightedRange" in s && s.highlightedRange && (P = (0, m.KC)(e, s.highlightedRange.start), w = (0, m.KC)(e, s.highlightedRange.end));
+    let R = (0, i.aX)({
         ...t,
         defaultChildren: O.formattedDate,
         defaultClassName: "react-aria-CalendarCell",
@@ -244,7 +244,7 @@ let D = (0, Chunk473749.forwardRef)(w),
           isOutsideMonth: u,
           isFocusVisible: N,
           isSelectionStart: P,
-          isSelectionEnd: R,
+          isSelectionEnd: w,
           isToday: d,
           ...O
         }
@@ -260,7 +260,7 @@ let D = (0, Chunk473749.forwardRef)(w),
         "data-outside-month": u || true,
         "data-selected": O.isSelected || true,
         "data-selection-start": P || true,
-        "data-selection-end": R || true,
+        "data-selection-end": w || true,
         "data-invalid": O.isInvalid || true,
         "data-today": d || true
       },
@@ -271,7 +271,7 @@ let D = (0, Chunk473749.forwardRef)(w),
       ...g,
       ref: n
     }, b.createElement("div", {
-      ...(0, c.d)(x, y, A, I, D, w),
-      ref: m
+      ...(0, c.d)(x, y, A, I, D, R),
+      ref: h
     }))
   })

@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk826298 = require("./826298.js"),
   Chunk536349 = require("./536349.js");
 let _ = [16, 8, 8, 8],
-  m = 32,
-  h = 4,
+  h = 32,
+  m = 4,
   g = 8;
 
 function E(e) {
@@ -31,17 +31,17 @@ function E(e) {
     applicationCommandListRef: O
   } = e, v = i.useRef(null), S = i.useCallback((e, t) => {
     var n;
-    let r = 2 * h;
-    return (null == (n = a[t + 1]) ? true : n.type) === d.Qi.BUILT_IN && (r += g), m + r
+    let r = 2 * m;
+    return (null == (n = a[t + 1]) ? true : n.type) === d.Qi.BUILT_IN && (r += g), h + r
   }, [a]), I = i.useCallback((e, t) => {
     var n;
-    return t ? (null == (n = a[e + 1]) ? true : n.type) === d.Qi.BUILT_IN ? 0 : 2 * h : 0 === e ? 0 : 2 * h
+    return t ? (null == (n = a[e + 1]) ? true : n.type) === d.Qi.BUILT_IN ? 0 : 2 * m : 0 === e ? 0 : 2 * m
   }, [a]), T = i.useCallback((e, t) => {
     let i = a[t];
     if (null == i) return;
     let o = (0, f.ky)(i),
-      c = i.type === d.Qi.BUILT_IN ? h : 0,
-      u = m - 2 * c,
+      c = i.type === d.Qi.BUILT_IN ? m : 0,
+      u = h - 2 * c,
       _ = (0, r.jsx)(o, {
         channel: n,
         section: i,

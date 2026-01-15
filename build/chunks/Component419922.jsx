@@ -52,7 +52,7 @@ function P(e) {
     stickerName: t
   })
 }
-let R = e => {
+let w = e => {
     let {
       children: t,
       hasError: n,
@@ -88,7 +88,7 @@ let R = e => {
       })]
     })
   },
-  w = e => {
+  R = e => {
     let {
       shouldAnimate: t,
       size: a,
@@ -99,8 +99,8 @@ let R = e => {
       className: d,
       maskAsset: f,
       positionRef: p,
-      withLoadingIndicator: m,
-      onError: h
+      withLoadingIndicator: h,
+      onError: m
     } = e, g = i.useRef(null), E = i.useRef(null), [v, S] = i.useState(true), [I, T] = i.useState(false), C = i.useRef(false);
     C.current = t && u;
     let A = null == s ? (0, b.Q6)(o) : s;
@@ -122,14 +122,14 @@ let R = e => {
             t || S(false)
           },
           onError: () => {
-            t || (S(false), T(true), null == h || h())
+            t || (S(false), T(true), null == m || m())
           }
         }), C.current && E.current.setState(true))
       })(), () => {
         var e;
         null == (e = E.current) || e.drop(), E.current = null, t = true
       }
-    }, [A, a, o.id, c, h]), i.useEffect(() => {
+    }, [A, a, o.id, c, m]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null == (e = E.current) || e.setState(t && u, n)
@@ -138,12 +138,12 @@ let R = e => {
       className: d,
       "aria-label": I ? y.intl.string(y.t.yEvsK9) : P(o),
       ref: p,
-      children: (0, r.jsx)(R, {
+      children: (0, r.jsx)(w, {
         hasError: I,
         isLoading: v,
         maskAsset: f,
         size: a,
-        withLoadingIndicator: m,
+        withLoadingIndicator: h,
         children: N((0, r.jsx)("canvas", {
           className: O.lottieCanvas,
           ref: g
@@ -162,12 +162,12 @@ let R = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: p
-    } = e, [_, m] = i.useState(false), [h, g] = i.useState(true), [E, y] = i.useState(false), I = i.useRef(null), T = i.useRef(null), C = null != p ? p : (0, b.Q6)(n, {
+    } = e, [_, h] = i.useState(false), [m, g] = i.useState(true), [E, y] = i.useState(false), I = i.useRef(null), T = i.useRef(null), C = null != p ? p : (0, b.Q6)(n, {
       isPreview: !t || !_ || !a,
       size: s
     }), A = i.useCallback(() => {
       g(false)
-    }, []), w = i.useCallback(() => {
+    }, []), R = i.useCallback(() => {
       y(true)
     }, []);
     return (i.useEffect(() => {
@@ -175,7 +175,7 @@ let R = e => {
         let {
           isVisible: e
         } = I.current;
-        m(e)
+        h(e)
       }
     }, []), i.useLayoutEffect(() => {
       var e;
@@ -183,14 +183,14 @@ let R = e => {
     }, []), null == C) ? null : (0, r.jsx)(d.$, {
       innerRef: u,
       ref: I,
-      onChange: m,
+      onChange: h,
       threshold: S,
       children: (0, r.jsx)("div", {
         className: o()(l, O.__invalid_pngImageWrapper),
         ref: u,
-        children: (0, r.jsx)(R, {
+        children: (0, r.jsx)(w, {
           hasError: E,
-          isLoading: h,
+          isLoading: m,
           maskAsset: c,
           size: s,
           withLoadingIndicator: f,
@@ -199,7 +199,7 @@ let R = e => {
             alt: P(n),
             src: C,
             draggable: false,
-            onError: w,
+            onError: R,
             onLoad: A,
             onContextMenu: v,
             ref: T
@@ -217,11 +217,11 @@ let R = e => {
       positionRef: s,
       size: l,
       sticker: d
-    } = e, _ = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), h = i.useRef(null), g = {
+    } = e, _ = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), m = i.useRef(null), g = {
       transform: "scale(".concat(_ ? 1 : 1 / n, ")"),
       opacity: 0
     }, E = (0, f.Yzy)(o, {
-      ref: h,
+      ref: m,
       from: g,
       enter: {
         transform: "scale(1)",
@@ -235,7 +235,7 @@ let R = e => {
       opacity: +!!o,
       config: A
     }, "animate-always");
-    return (0, c.useChain)(o ? [h, b] : [b, h], o ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(m.W5, {
+    return (0, c.useChain)(o ? [m, b] : [b, m], o ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
       className: O.positionedLayer,
       fixed: true,
       align: "center",
@@ -282,10 +282,10 @@ let R = e => {
       withLoadingIndicator: f,
       assetData: p,
       fileUri: _,
-      onError: m
-    } = e, b = (0, h.n)(), y = (0, g.t$)(t) && !n, O = i.useRef(null);
+      onError: h
+    } = e, b = (0, m.n)(), y = (0, g.t$)(t) && !n, O = i.useRef(null);
     if (null == u) return null;
-    let v = u.format_type === E.u3.LOTTIE ? w : D;
+    let v = u.format_type === E.u3.LOTTIE ? R : D;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(v, {
         shouldAnimate: y,
@@ -298,7 +298,7 @@ let R = e => {
         withLoadingIndicator: f,
         assetData: p,
         fileUri: _,
-        onError: m
+        onError: h
       }), a && (0, r.jsx)(x, {
         disableAnimation: n,
         enlargeScaleFactor: s,

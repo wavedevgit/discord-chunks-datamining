@@ -2,7 +2,7 @@
 /** chunk id: 871118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk919910 = require("./919910.js");
 
-function m(e) {
+function h(e) {
   let {
     isLoading: t,
     noText: n,
@@ -42,13 +42,13 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     stream: t,
     className: n,
     noText: a = false,
     noImage: o = false
-  } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), h = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
+  } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), m = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
     previewUrl: g,
     isLoading: E
   } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), b = i.useRef(E ? null : g);
@@ -56,12 +56,12 @@ function h(e) {
     E || (b.current = g)
   }, [g, E]);
   let y = null == g || E ? b.current : g;
-  return null == y ? (0, r.jsx)(m, {
+  return null == y ? (0, r.jsx)(h, {
     className: n,
     isLoading: E,
     noText: a,
     noImage: o,
-    previewText: h ? true : p.intl.string(p.t.pgUTZC)
+    previewText: m ? true : p.intl.string(p.t.pgUTZC)
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)("img", {

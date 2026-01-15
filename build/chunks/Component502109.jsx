@@ -127,7 +127,7 @@ class T extends Chunk473749.Component {
     f.default.track(e, i)
   }
   onValidPaymentRequest() {
-    this.trackAnalyticsEvent(h.rMx.PAYMENT_REQUEST_LOADED), true !== this.props.onValidPaymentRequest && this.props.onValidPaymentRequest()
+    this.trackAnalyticsEvent(m.rMx.PAYMENT_REQUEST_LOADED), true !== this.props.onValidPaymentRequest && this.props.onValidPaymentRequest()
   }
   renderButton(e) {
     var {
@@ -146,7 +146,7 @@ class T extends Chunk473749.Component {
           type: t
         })
       }
-    }, i), h.HeQ.PAYMENT_REQUEST)
+    }, i), m.HeQ.PAYMENT_REQUEST)
   }
   renderConnectorView() {
     return (0, r.jsxs)("div", {
@@ -182,7 +182,7 @@ class T extends Chunk473749.Component {
       submitting: true,
       paymentRequest: null,
       canMakePaymentResult: null
-    }), b(this, "state", y({}, this.initialState)), b(this, "disableWallets", []), b(this, "isUserStaff", (0, m.vP)()), b(this, "initPaymentRequest", async e => {
+    }), b(this, "state", y({}, this.initialState)), b(this, "disableWallets", []), b(this, "isUserStaff", (0, h.vP)()), b(this, "initPaymentRequest", async e => {
       if (null == e) return;
       this.setState({
         submitting: true,
@@ -210,7 +210,7 @@ class T extends Chunk473749.Component {
           paymentMethod: r,
           payerName: i
         } = e;
-        n(r, i), this.trackAnalyticsEvent(h.rMx.PAYMENT_REQUEST_COMPLETED), t("success")
+        n(r, i), this.trackAnalyticsEvent(m.rMx.PAYMENT_REQUEST_COMPLETED), t("success")
       }), t.on("cancel", () => {
         n(null)
       });
@@ -223,7 +223,7 @@ class T extends Chunk473749.Component {
         this.initPaymentRequestCallback(r)
       }), r
     }), b(this, "attemptPaymentRequest", () => {
-      if ((0, p.isDesktop)()) return void this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
+      if ((0, p.isDesktop)()) return void this.props.onChooseType(m.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
       let {
         available: e
       } = this.validatePaymentRequest();
@@ -231,7 +231,7 @@ class T extends Chunk473749.Component {
       let {
         paymentRequest: t
       } = this.state;
-      e && null != t && (t.show(), this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet))
+      e && null != t && (t.show(), this.props.onChooseType(m.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet))
     })
   }
 }

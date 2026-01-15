@@ -2,7 +2,7 @@
 /** chunk id: 936621, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => m
+  F: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,7 +67,7 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends Chunk473749.Component {
+class h extends Chunk473749.Component {
   getDefaultAnimProps(e, t) {
     return {
       duration: null != e ? e : 300,

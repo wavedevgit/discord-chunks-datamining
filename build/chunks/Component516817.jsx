@@ -22,12 +22,12 @@ function p(e) {
     selected: a,
     content: s,
     placement: c
-  } = e, p = (0, u.p)(s, t, n, a, c), m = (0, l.C)(n, a), h = i.useRef(null == t);
+  } = e, p = (0, u.p)(s, t, n, a, c), h = (0, l.C)(n, a), m = i.useRef(null == t);
   return (i.useEffect(() => {
-    h.current || null != t || (h.current = true)
+    m.current || null != t || (m.current = true)
   }, [t]), null == t) ? null : (0, r.jsx)("div", {
     className: o()(f.container, {
-      [f.fadeIn]: h.current,
+      [f.fadeIn]: m.current,
       [f.fitInAccount]: c === d.i.ACCOUNT
     }),
     style: {
@@ -47,8 +47,8 @@ function p(e) {
       style: {
         maskImage: p.maskImage
       },
-      animate: m,
-      loop: true === m && true === n
+      animate: h,
+      loop: true === h && true === n
     })
   })
 }
@@ -64,11 +64,11 @@ function _(e) {
     staticAsset: s,
     animatedAsset: l
   } = (0, c._)(t), u = !(null == l ? true : l.endsWith(".webm"));
-  return null == s || null == l ? null : u ? (0, r.jsx)(h, {
+  return null == s || null == l ? null : u ? (0, r.jsx)(m, {
     asset: a ? l : s,
     className: n,
     style: i
-  }) : (0, r.jsx)(m, {
+  }) : (0, r.jsx)(h, {
     animatedAsset: l,
     staticAsset: s,
     animate: a,
@@ -78,7 +78,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     staticAsset: t,
     animatedAsset: n,
@@ -105,7 +105,7 @@ function m(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     asset: t,
     className: n,

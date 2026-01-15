@@ -2,7 +2,7 @@
 /** chunk id: 165630, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -52,7 +52,7 @@ function _() {
   d()
 }
 d();
-class m extends(r = Chunk442837.ZP.PersistedStore) {
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (u = e), this.waitFor(s.Z)
   }
@@ -69,8 +69,8 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
     return 0 !== u.lastFetched
   }
 }
-l(m, "displayName", "GuildAffinitiesStore"), l(m, "persistKey", "GuildAffinitiesStore");
-let h = new m(Chunk570140.Z, {
+l(h, "displayName", "GuildAffinitiesStore"), l(h, "persistKey", "GuildAffinitiesStore");
+let m = new h(Chunk570140.Z, {
   CONNECTION_OPEN: p,
   LOAD_GUILD_AFFINITIES_SUCCESS: f,
   LOGOUT: _

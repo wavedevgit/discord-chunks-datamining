@@ -33,17 +33,17 @@ function p(e, t, n, r = "react-aria-ListBoxSection") {
       heading: u,
       "aria-label": null != (i = e["aria-label"]) ? i : true
     }),
-    m = $64fa3d84918910a7$export$4d86445c2cf5e3({
+    h = $64fa3d84918910a7$export$4d86445c2cf5e3({
       defaultClassName: r,
       className: e.className,
       style: e.style,
       values: {}
     }),
-    h = $e8Bmu$filterDOMProps(e, {
+    m = $e8Bmu$filterDOMProps(e, {
       global: true
     });
-  return delete h.id, $e8Bmu$react.createElement("section", {
-    ...$e8Bmu$mergeProps(h, m, _),
+  return delete m.id, $e8Bmu$react.createElement("section", {
+    ...$e8Bmu$mergeProps(m, h, _),
     ref: t
   }, $e8Bmu$react.createElement($72a5793c14baf454$export$e0e4026c12a8bdbb.Provider, {
     value: {
@@ -67,14 +67,14 @@ function _(e, t) {
     isHidden: a,
     isDropTarget: o
   } = n.useDropIndicator(e, r, t);
-  return a ? null : $e8Bmu$react.createElement(m, {
+  return a ? null : $e8Bmu$react.createElement(h, {
     ...e,
     dropIndicatorProps: i,
     isDropTarget: o,
     ref: t
   })
 }
-let m = null;
+let h = null;
 (0, Chunk406581.G5)(Chunk557635.Rb, function(e, t, n) {
   let a = (0, u.useContext)(f),
     {
@@ -83,14 +83,14 @@ let m = null;
       scrollOffset: p,
       ..._
     } = e,
-    m = (0, u.useRef)(null),
-    h = (0, u.useMemo)(() => ({
+    h = (0, u.useRef)(null),
+    m = (0, u.useMemo)(() => ({
       onLoadMore: d,
       collection: null == a ? true : a.collection,
-      sentinelRef: m,
+      sentinelRef: h,
       scrollOffset: p
     }), [d, p, null == a ? true : a.collection]);
-  (0, s.B)(h, m);
+  (0, s.B)(m, h);
   let g = (0, r.aX)({
       ..._,
       id: true,
@@ -110,7 +110,7 @@ let m = null;
     inert: (0, l.P)(true)
   }, u.createElement("div", {
     "data-testid": "loadMoreSentinel",
-    ref: m,
+    ref: h,
     style: {
       position: "absolute",
       height: 1,

@@ -111,7 +111,7 @@ function N(e) {
   let A = {},
     {
       analyticsLocations: N
-    } = (0, h.ZP)();
+    } = (0, m.ZP)();
   i.Children.forEach(S.children, (e, t) => {
     A[e.props.id] = {
       children: e.props.children,
@@ -121,12 +121,12 @@ function N(e) {
     }
   });
   let P = S.activeSlide,
-    R = (0, _.Z)(S.activeSlide),
-    w = null != (t = S.directionOverride) ? t : T(null != R ? A[R] : null, A[P]),
+    w = (0, _.Z)(S.activeSlide),
+    R = null != (t = S.directionOverride) ? t : T(null != w ? A[w] : null, A[P]),
     {
       reducedMotion: D
     } = i.useContext(d.Sfi),
-    x = i.useContext(m.Z),
+    x = i.useContext(h.Z),
     L = A[P].impressionName,
     j = O(b({}, A[P].impressionProperties), {
       location_stack: N
@@ -149,7 +149,7 @@ function N(e) {
     width: null != (n = S.width) ? n : k,
     height: U,
     config: G
-  }, null == R ? "animate-never" : "respect-motion-settings"), F = (0, f.Yzy)(P, {
+  }, null == w ? "animate-never" : "respect-motion-settings"), F = (0, f.Yzy)(P, {
     value: 0,
     from: {
       value: 1
@@ -167,7 +167,7 @@ function N(e) {
       } = t;
       n === P && null != S.onSlideReady && S.onSlideReady(n)
     }
-  }, null == R ? "animate-never" : "respect-motion-settings"), B = (0, c.Z)(w), {
+  }, null == w ? "animate-never" : "respect-motion-settings"), B = (0, c.Z)(R), {
     width: V,
     centered: H = true
   } = S, Y = u.tq && !S.shouldUseMediaQueriesForSizing ? "100%" : Z.width.to(e => "string" == typeof e ? e : Math.round(e)), W = u.tq && !S.shouldUseMediaQueriesForSizing ? "100%" : Z.height.to(e => Math.round(e)), K = u.tq ? {} : H ? {

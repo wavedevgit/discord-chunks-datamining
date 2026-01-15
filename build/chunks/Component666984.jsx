@@ -2,7 +2,7 @@
 /** chunk id: 666984, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,8 +19,8 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk251806 = require("./251806.js");
 
-function h(e) {
-  var t, n, h, g, E;
+function m(e) {
+  var t, n, m, g, E;
   let {
     user: b,
     activity: y,
@@ -59,12 +59,12 @@ function h(e) {
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: m.primaryButton,
+      className: h.primaryButton,
       children: (0, r.jsx)(i.u, {
         text: S.tooltip,
         children: (0, r.jsx)(d.i6, {
           icon: () => (0, r.jsx)(c.Z, {}),
-          text: null != (h = S.label) ? h : _.intl.string(_.t.rRffNz),
+          text: null != (m = S.label) ? m : _.intl.string(_.t.rRffNz),
           onClick: T,
           disabled: S.disabled,
           loading: S.loading,

@@ -2,7 +2,7 @@
 /** chunk id: 915014, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,21 +18,21 @@ var Chunk36563 = require("./36563.jsx"),
   Chunk407518 = require("./407518.js");
 let _ = 3;
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     onOpenProfile: n
   } = e, {
-    mutualFriends: m,
-    mutualGuilds: h
-  } = (0, l.Z)(t), g = null != m && m.length > 0, E = null != h && h.length > 0, b = g && E ? "text-xs/normal" : "text-sm/normal";
+    mutualFriends: h,
+    mutualGuilds: m
+  } = (0, l.Z)(t), g = null != h && h.length > 0, E = null != m && m.length > 0, b = g && E ? "text-xs/normal" : "text-sm/normal";
   if (!g && !E) return null;
   let y = () => g ? (0, r.jsxs)(o.P3F, {
       className: p.section,
       onClick: () => null == n ? true : n(d.oh.MUTUAL_FRIENDS),
       children: [(0, r.jsx)(i.Z, {
         maxUsers: _,
-        users: m.map(e => {
+        users: h.map(e => {
           let {
             user: t
           } = e;
@@ -46,7 +46,7 @@ function m(e) {
         className: p.text,
         variant: b,
         color: "interactive-text-default",
-        children: (0, c.Z)(m.length)
+        children: (0, c.Z)(h.length)
       })]
     }) : null,
     O = () => g && E ? (0, r.jsx)("div", {
@@ -58,7 +58,7 @@ function m(e) {
       onClick: () => null == n ? true : n(d.oh.MUTUAL_GUILDS),
       children: [!g && (0, r.jsx)(a.Z, {
         maxGuilds: _,
-        guilds: h.map(e => {
+        guilds: m.map(e => {
           let {
             guild: t
           } = e;
@@ -71,7 +71,7 @@ function m(e) {
         className: p.text,
         variant: b,
         color: "interactive-text-default",
-        children: (0, u.Z)(h.length)
+        children: (0, u.Z)(m.length)
       })]
     }) : null;
   return (0, r.jsxs)("div", {

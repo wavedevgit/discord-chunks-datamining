@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   F: () => _,
-  Z: () => m
+  Z: () => h
 }), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -35,7 +35,7 @@ function _(e) {
   }
   return e = e.includes(d) ? e.split("/").slice(false).join("/") : e.split("/").slice(false).join("/")
 }
-async function m() {
+async function h() {
   if (null != r) return r;
   try {
     await c.ZP.ensureModule("discord_game_utils"), r = await c.ZP.requireModule("discord_game_utils")

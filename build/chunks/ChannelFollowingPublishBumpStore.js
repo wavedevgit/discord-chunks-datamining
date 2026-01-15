@@ -23,8 +23,8 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = "ChannelFollowingBumpChannels",
-  h = new Set,
+let h = "ChannelFollowingBumpChannels",
+  m = new Set,
   g = new Set;
 
 function E(e) {
@@ -34,7 +34,7 @@ function E(e) {
     message: r,
     optimistic: a
   } = e;
-  if (a || h.has(n)) returnfalse;
+  if (a || m.has(n)) returnfalse;
   let o = c.Z.getChannel(n),
     s = d.default.getCurrentUser();
   if (!(null != o && o.type === p.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != s && (null == (t = r.author) ? true : t.id) === s.id ? u.Z.can(p.Plq.SEND_MESSAGES, o) : u.Z.can(p.Plq.MANAGE_MESSAGES, o)) && !i.yE(Number(r.flags), p.iLy.CROSSPOSTED))) returnfalse;
@@ -59,7 +59,7 @@ function O(e) {
   let {
     channelId: t
   } = e;
-  h.add(t), o.K.set(m, h), g.clear()
+  m.add(t), o.K.set(h, m), g.clear()
 }
 
 function v(e) {
@@ -67,7 +67,7 @@ function v(e) {
 }
 class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(l.default, c.Z, u.Z, d.default), h = new Set(o.K.get(m))
+    this.waitFor(l.default, c.Z, u.Z, d.default), m = new Set(o.K.get(h))
   }
   shouldShowBump(e) {
     return g.has(e)

@@ -31,29 +31,29 @@ function O(e) {
     className: t,
     creator: n,
     guildId: i,
-    isNew: h,
+    isNew: m,
     guildEvent: g,
     eventPreview: O,
     recurrenceId: v
   } = e, S = (0, p.Z)(i, g.id, v), I = null != g ? g : O, T = (0, o.e7)([c.ZP], () => c.ZP.getNick(i, null == n ? true : n.id), [i, n]);
-  v = null == I || null != v ? v : (0, m.DK)(I);
+  v = null == I || null != v ? v : (0, h.DK)(I);
   let {
     startTime: C
-  } = (0, f.ZP)(null != g ? g : O, v), A = (0, d.Z)(v, g.id), N = (null == I ? true : I.scheduled_start_time) != null ? (0, m.lh)(A, C, new Date(I.scheduled_start_time)) : null;
+  } = (0, f.ZP)(null != g ? g : O, v), A = (0, d.Z)(v, g.id), N = (null == I ? true : I.scheduled_start_time) != null ? (0, h.lh)(A, C, new Date(I.scheduled_start_time)) : null;
   if (null == I) return null;
   let {
     entity_type: P,
-    status: R,
-    recurrence_rule: w
+    status: w,
+    recurrence_rule: R
   } = I;
   return (0, r.jsxs)("div", {
     className: a()(y.statusContainer, t),
     children: [(0, r.jsx)(E.z, {
       startTime: C.toISOString(),
-      status: null != N ? N : R,
+      status: null != N ? N : w,
       eventType: P,
-      isNew: h,
-      recurrenceRule: (0, _.KV)(w),
+      isNew: m,
+      recurrenceRule: (0, _.KV)(R),
       guildEventId: g.id,
       recurrenceId: v
     }), (0, r.jsx)("div", {
@@ -111,7 +111,7 @@ function v(e) {
         selectable: true,
         className: y.eventName,
         children: i
-      }), null != o && (0, r.jsx)(h.Z, {
+      }), null != o && (0, r.jsx)(m.Z, {
         description: o,
         className: a()(n, y.description),
         truncate: s,

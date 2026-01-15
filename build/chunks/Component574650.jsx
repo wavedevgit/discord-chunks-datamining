@@ -50,10 +50,10 @@ let I = () => {
   var e, t;
   let i = (0, s.e7)([d.Z], () => d.Z.getGuildId(), []),
     v = (0, s.e7)([u.Z], () => u.Z.getGuild(i), [i]),
-    I = (0, s.e7)([h.Z], () => null != i ? h.Z.getRequest(i) : null, [i]),
+    I = (0, s.e7)([m.Z], () => null != i ? m.Z.getRequest(i) : null, [i]),
     T = (0, o.TH)(),
     C = (null == (e = (0, o.LX)(T.pathname, g.Z5c.CHANNEL(null == v ? true : v.id, E.oC.GUILD_ONBOARDING))) ? true : e.isExact) === true;
-  if (null == v || !(0, m.Dc)(v) || C) return null;
+  if (null == v || !(0, h.Dc)(v) || C) return null;
   let A = () => {
       (0, p.hk)(v.id)
     },
@@ -76,27 +76,27 @@ let I = () => {
         }, t))
       })
     },
-    R = null != (t = null == I ? true : I.applicationStatus) ? t : _.wB.STARTED,
-    w = null,
+    w = null != (t = null == I ? true : I.applicationStatus) ? t : _.wB.STARTED,
+    R = null,
     D = null,
     x = null,
     L = [y.notice, O.notice];
-  switch (R) {
+  switch (w) {
     case _.wB.SUBMITTED:
-      w = b.intl.string(b.t["5iLvSx"]), D = b.intl.string(b.t.mqtdmQ), x = N;
+      R = b.intl.string(b.t["5iLvSx"]), D = b.intl.string(b.t.mqtdmQ), x = N;
       break;
     case _.wB.REJECTED:
-      w = b.intl.string(b.t.lk30cY), D = b.intl.string(b.t["8RrsHr"]), x = P, L.push(y.error);
+      R = b.intl.string(b.t.lk30cY), D = b.intl.string(b.t["8RrsHr"]), x = P, L.push(y.error);
       break;
     default:
-      w = b.intl.string(b.t.G5YKXP), D = b.intl.string(b.t["r8/DT+"]), x = A
+      R = b.intl.string(b.t.G5YKXP), D = b.intl.string(b.t["r8/DT+"]), x = A
   }
   return (0, r.jsxs)("div", {
     className: a()(...L),
     children: [(0, r.jsx)(c.Text, {
       className: y.header,
       variant: "text-sm/normal",
-      children: w
+      children: R
     }), (0, r.jsx)(c.Button, {
       variant: "overlay-primary",
       size: "sm",

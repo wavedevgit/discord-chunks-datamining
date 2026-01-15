@@ -53,6 +53,8 @@ let g = () => {
           type: p.k2.COACHTIP
         }, i), u = u = {
           imageSrc: null != (r = e.coachtipAvatar) ? r : "",
+          badgeIcon: null == t ? true : t.badgeIcon,
+          badgeText: null == t ? true : t.badgeText,
           entryPointBackgroundAssets: {
             srcDark: e.buttonBGRestingDark,
             srcLight: e.buttonBGRestingLight,
@@ -78,6 +80,8 @@ let g = () => {
           body: () => t.body,
           assetDark: t.assetDark,
           assetLight: t.assetLight,
+          badgeIcon: t.badgeIcon,
+          badgeText: t.badgeText,
           entrypointBackgroundStyle: null == e ? true : e.style,
           entryPointBackgroundAssets: {
             srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,

@@ -77,31 +77,31 @@ function I(e) {
     stream: N
   } = (0, d.Z)(t.id), {
     voiceChannel: P,
-    voiceActivity: R
+    voiceActivity: w
   } = (0, f.Z)({
     userId: t.id,
     guildId: y
-  }), w = t.id === n.id, D = (0, a.e7)([c.Z, l.Z], () => {
-    let e = w ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
+  }), R = t.id === n.id, D = (0, a.e7)([c.Z, l.Z], () => {
+    let e = R ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
     return e === E.Sk.OFFLINE || e === E.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: x
   } = (0, o.U)({
     location: "UserProfileStackedActivity"
-  }), L = x && null == N && null == R && null != P, j = i.useCallback(e => {
+  }), L = x && null == N && null == w && null != P, j = i.useCallback(e => {
     let i = [],
       a = S(O({}, e), {
         user: t,
         currentUser: n,
         onClose: I
       });
-    return null != N && i.push((0, r.jsx)(m.Z, O({
+    return null != N && i.push((0, r.jsx)(h.Z, O({
       stream: N
     }, a), "stream")), A.forEach((e, t) => {
       i.push((0, r.jsx)(_.Z, O({
         activity: e
       }, a), "live-".concat(t)))
-    }), L && i.push((0, r.jsx)(h.Z, O({
+    }), L && i.push((0, r.jsx)(m.Z, O({
       voiceChannel: P
     }, a), "voice")), i
   }, [n, L, A, I, N, t, P]);

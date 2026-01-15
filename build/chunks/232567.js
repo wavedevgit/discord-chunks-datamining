@@ -4,10 +4,10 @@
 require.d(exports, {
   $k: () => b,
   In: () => y,
-  Lr: () => h,
+  Lr: () => m,
   PR: () => E,
   Sr: () => O,
-  k: () => m,
+  k: () => h,
   mB: () => g
 }), require("./997841.js");
 var Chunk512722 = require("./512722.js"),
@@ -23,7 +23,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js");
 let _ = new Chunk710845.Z("UserProfileModalActionCreators");
 
-function m() {
+function h() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       withAnalyticsToken: t = false
@@ -42,7 +42,7 @@ function m() {
   }), new u.Z(e.body)))
 }
 
-function h() {
+function m() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return f.Z.patch({
@@ -101,7 +101,7 @@ async function y(e) {
     connectionsRoleId: c,
     joinRequestId: u,
     abortSignal: d
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, f = arguments.length > 2 ? arguments[2] : true, m = Date.now();
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, f = arguments.length > 2 ? arguments[2] : true, h = Date.now();
   s.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
@@ -129,7 +129,7 @@ async function y(e) {
     }), s.Z.dispatch({
       type: "USER_PROFILE_FETCH_SUCCESS",
       userProfile: l.body,
-      fetchStartedAt: m
+      fetchStartedAt: h
     }), null != a && null != l.body.guild_member && s.Z.dispatch({
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildId: a,
@@ -139,7 +139,7 @@ async function y(e) {
     throw null != t && (null == t ? true : t.body) != null && _.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), s.Z.dispatch({
       type: "USER_PROFILE_FETCH_FAILURE",
       apiError: new l.Hx(t),
-      fetchStartedAt: m,
+      fetchStartedAt: h,
       userId: e,
       guildId: a
     }), t

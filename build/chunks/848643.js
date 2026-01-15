@@ -67,7 +67,7 @@ module.exports = function(e) {
           var i = f.getScrollParent(r),
             a = g(i);
           if (i === window) {
-            var o = h(r);
+            var o = m(r);
             (e = o.y + o.height - E().height) > 0 && window.scrollTo(a.x, a.y + e + v)
           } else y(r) || b(false), (e = r.offsetHeight + r.offsetTop - (i.offsetTop + i.offsetHeight + a.y)) > 0 && d.setTop(i, d.getTop(i) + e + v)
         }
@@ -83,8 +83,8 @@ module.exports = function(e) {
     return this.props.tree.map(function(s, d) {
       var f = s.get("leaves");
       if (0 === f.size) return null;
-      var m = f.size - 1,
-        h = f.map(function(i, s) {
+      var h = f.size - 1,
+        m = f.map(function(i, s) {
           var f = c.encode(n, d, s),
             p = i.get("start"),
             _ = i.get("end");
@@ -99,14 +99,14 @@ module.exports = function(e) {
             styleSet: t.getInlineStyleAt(p),
             customStyleMap: e.props.customStyleMap,
             customStyleFn: e.props.customStyleFn,
-            isLast: d === a && s === m
+            isLast: d === a && s === h
           })
         }).toArray(),
         g = s.get("decoratorKey");
-      if (null == g || !e.props.decorator) return h;
+      if (null == g || !e.props.decorator) return m;
       var E = O(e.props.decorator),
         b = E.getComponentForKey(g);
-      if (!b) return h;
+      if (!b) return m;
       var y = E.getPropsForKey(g),
         v = c.encode(n, d, 0),
         S = f.first().get("start"),
@@ -126,14 +126,14 @@ module.exports = function(e) {
         };
       return u.createElement(b, i({}, y, N, {
         key: v
-      }), h)
+      }), m)
     }).toArray()
   }, n.render = function() {
     var e = this,
       t = this.props,
       n = t.direction,
       r = t.offsetKey,
-      i = m({
+      i = h({
         "public/DraftStyleDefault/block": true,
         "public/DraftStyleDefault/ltr": "LTR" === n,
         "public/DraftStyleDefault/rtl": "RTL" === n

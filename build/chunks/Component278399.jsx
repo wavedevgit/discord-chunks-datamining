@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ho: () => p,
-  ZP: () => h,
+  ZP: () => m,
   y9: () => _
 });
 var Chunk54381 = require("./54381.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk925002 = require("./925002.js");
 let p = [Chunk297781.An],
   _ = [Chunk317261._.WEEK],
-  m = e => {
+  h = e => {
     let {
       entry: t,
       channel: n,
@@ -27,8 +27,8 @@ let p = [Chunk297781.An],
       largeImage: a
     } = (0, s.rv)({
       entry: t
-    }), m = (0, c.Nq)(t);
-    return null != m && (0, o.Hi)(m, _) ? (0, r.jsxs)(d.Zb, {
+    }), h = (0, c.Nq)(t);
+    return null != h && (0, o.Hi)(h, _) ? (0, r.jsxs)(d.Zb, {
       selected: i,
       children: [(0, r.jsxs)(d.e$, {
         children: [(0, r.jsx)(d.F9, {
@@ -50,4 +50,4 @@ let p = [Chunk297781.An],
       })]
     }) : null
   },
-  h = Chunk473749.memo(m)
+  m = Chunk473749.memo(h)

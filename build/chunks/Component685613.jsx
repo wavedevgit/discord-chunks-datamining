@@ -2,9 +2,9 @@
 /** chunk id: 685613, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  US: () => h,
+  US: () => m,
   ZP: () => E,
-  fF: () => m
+  fF: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,10 +19,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk455357 = require("./455357.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk479470 = require("./479470.js"),
-  m = function(e) {
+  h = function(e) {
     return e[e.SMALL = 24] = "SMALL", e[e.MEDIUM = 32] = "MEDIUM", e
   }({}),
-  h = function(e) {
+  m = function(e) {
     return e[e.SMALL = 2] = "SMALL", e[e.MEDIUM = 8] = "MEDIUM", e
   }({});
 
@@ -39,14 +39,14 @@ let E = function(e) {
     className: t,
     logotypeClassName: n,
     gameTileSize: i = 24,
-    quest: m,
-    separatorSpacing: h = 2,
+    quest: h,
+    separatorSpacing: m = 2,
     theme: E = p.BRd.DARK,
     withCosponsor: b = true,
     withGameTile: y = true,
     logotypeStyle: O,
     onLoadComplete: v
-  } = e, S = (0, l.wj)(E) ? p.BRd.DARK : p.BRd.LIGHT, I = (0, u.Gd)(m.id, S), T = b && null != m.config.cosponsorMetadata && null != I;
+  } = e, S = (0, l.wj)(E) ? p.BRd.DARK : p.BRd.LIGHT, I = (0, u.Gd)(h.id, S), T = b && null != h.config.cosponsorMetadata && null != I;
   return (0, r.jsxs)("div", {
     className: a()(_.partnerBranding, t),
     children: [y && (0, r.jsx)(f.Fl, {
@@ -55,7 +55,7 @@ let E = function(e) {
         ref: e,
         className: _.partnerBrandingGameTile,
         alt: "",
-        src: (0, d.fh)(m, d.eC.GAME_TILE, S).url,
+        src: (0, d.fh)(h, d.eC.GAME_TILE, S).url,
         style: {
           borderRadius: g(i),
           width: i,
@@ -71,15 +71,15 @@ let E = function(e) {
           [_.partnerBrandingLogotypeWithCosponsor]: T
         }),
         style: O,
-        alt: m.config.messages.gameTitle,
-        src: (0, d.fh)(m, d.eC.LOGO_TYPE, S).url,
+        alt: h.config.messages.gameTitle,
+        src: (0, d.fh)(h, d.eC.LOGO_TYPE, S).url,
         onLoad: v
       })
     }), T && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: _.cosponsorBrandSeparatorWrapper,
         style: {
-          margin: "0 ".concat(h, "px")
+          margin: "0 ".concat(m, "px")
         },
         children: (0, r.jsx)(c.P$X, {
           className: _.cosponsorBrandSeparator,
@@ -93,7 +93,7 @@ let E = function(e) {
             ref: e,
             className: a()(_.partnerBrandingLogotype, _.partnerBrandingLogotypeWithCosponsor, n),
             style: O,
-            alt: null != (i = null == (t = m.config.cosponsorMetadata) ? true : t.name) ? i : "",
+            alt: null != (i = null == (t = h.config.cosponsorMetadata) ? true : t.name) ? i : "",
             src: I.url,
             onLoad: v
           })

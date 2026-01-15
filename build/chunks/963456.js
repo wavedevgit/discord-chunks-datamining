@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   a: () => _,
-  j: () => h
+  j: () => m
 }), require("./539854.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ let c = 5e3,
 async function _(e, t) {
   let n, s = performance.now(),
     _ = 0,
-    h = [];
+    m = [];
   switch (e.type) {
     case "channel":
       n = l.ANM.APPLICATION_COMMAND_INDEX_CHANNEL(e.channelId);
@@ -33,7 +33,7 @@ async function _(e, t) {
     case "application":
       n = l.ANM.APPLICATION_COMMAND_INDEX_APPLICATION(e.applicationId)
   }
-  let g = async t => _ >= u ? (h.push(p), b({
+  let g = async t => _ >= u ? (m.push(p), b({
     error: true
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -44,7 +44,7 @@ async function _(e, t) {
     signal: t.signal,
     onRequestCreated: () => _++,
     rejectWithError: false
-  }).then(t => 202 === t.status ? (h.push(202), g(c)) : (b({
+  }).then(t => 202 === t.status ? (m.push(202), g(c)) : (b({
     error: false
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS",
@@ -53,12 +53,12 @@ async function _(e, t) {
   })), n => {
     var r;
     if (t.signal.aborted) {
-      h.push(f), b({
+      m.push(f), b({
         error: true
       });
       return
     }
-    return 429 === n.status ? (h.push(429), g(n.body.retry_after * o.Z.Millis.SECOND)) : (h.push(null != (r = n.status) ? r : d), b({
+    return 429 === n.status ? (m.push(429), g(n.body.retry_after * o.Z.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), b({
       error: true
     }), i.Z.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -78,14 +78,14 @@ async function _(e, t) {
       command_type: null,
       url: n,
       target_type: e.type,
-      target_id: m(e),
-      failure_statuses: h
+      target_id: h(e),
+      failure_statuses: m
     })
   };
   await E()
 }
 
-function m(e) {
+function h(e) {
   switch (e.type) {
     case "channel":
       return e.channelId;
@@ -100,7 +100,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_REQUEST",
     target: e

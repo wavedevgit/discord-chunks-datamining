@@ -56,9 +56,9 @@ function _(e, t) {
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function m(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -94,7 +94,7 @@ function E(e) {
     onClick: n,
     variant: i = "secondary",
     size: a = "sm"
-  } = e, o = m(e, ["action", "onClick", "variant", "size"]);
+  } = e, o = h(e, ["action", "onClick", "variant", "size"]);
   let s = g({
     action: t,
     onClick: n
@@ -118,7 +118,7 @@ function b(e) {
     tooltipPosition: d,
     tooltipAlign: p,
     buttonRef: _
-  } = e, h = m(e, ["action", "onClick", "variant", "size", "aria-label", "tooltipText", "__unsupportedReactNodeAsText", "tooltipPosition", "tooltipAlign", "buttonRef"]);
+  } = e, m = h(e, ["action", "onClick", "variant", "size", "aria-label", "tooltipText", "__unsupportedReactNodeAsText", "tooltipPosition", "tooltipAlign", "buttonRef"]);
   let E = g({
     action: t,
     onClick: n
@@ -135,7 +135,7 @@ function b(e) {
       variant: i,
       size: a,
       "aria-label": null != s ? s : c
-    }, h))
+    }, m))
   })
 }
 
@@ -148,15 +148,15 @@ function y(e) {
     tooltipAlign: c,
     "aria-label": d,
     action: p,
-    onClick: h,
+    onClick: m,
     buttonRef: E,
     disabled: b = false,
     onMouseEnter: y,
     onMouseLeave: O
-  } = e, v = m(e, ["icon", "tooltipText", "__unsupportedReactNodeAsText", "tooltipPosition", "tooltipAlign", "aria-label", "action", "onClick", "buttonRef", "disabled", "onMouseEnter", "onMouseLeave"]);
+  } = e, v = h(e, ["icon", "tooltipText", "__unsupportedReactNodeAsText", "tooltipPosition", "tooltipAlign", "aria-label", "action", "onClick", "buttonRef", "disabled", "onMouseEnter", "onMouseLeave"]);
   let S = g({
     action: p,
-    onClick: h
+    onClick: m
   });
   return (0, r.jsx)(o.u, {
     asContainer: true,

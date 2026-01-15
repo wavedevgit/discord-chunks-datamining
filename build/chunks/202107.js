@@ -57,32 +57,32 @@ let f = 1e4,
         r = (0, a.O5)(n),
         i = (0, a.V6)(n),
         o = e[n];
-      (0, s.J)(o) || m(r, i)
+      (0, s.J)(o) || h(r, i)
     })
   },
-  m = (e, t) => {
+  h = (e, t) => {
     var n, i, l, u, f, p;
     let _ = a.ZP.getMember(e, t),
-      m = o.default.getUser(t);
-    if (null == _ || null == m || (0, s.b)(_)) return;
-    let h = d(c({}, _), {
+      h = o.default.getUser(t);
+    if (null == _ || null == h || (0, s.b)(_)) return;
+    let m = d(c({}, _), {
       guildId: e,
-      nick: null != (n = _.nick) ? n : m.username,
+      nick: null != (n = _.nick) ? n : h.username,
       avatar: null != (i = _.avatar) ? i : true,
       avatarDecoration: null != _.avatarDecoration ? c({}, _.avatarDecoration) : true,
       premiumSince: null != (l = _.premiumSince) ? l : true,
       isPending: null != (u = _.isPending) && u,
-      user: d(c({}, m), {
-        email: null != (f = m.email) ? f : true,
-        phone: null != (p = m.phone) ? p : true
+      user: d(c({}, h), {
+        email: null != (f = h.email) ? f : true,
+        phone: null != (p = h.phone) ? p : true
       }),
       communicationDisabledUntil: null
     });
     r.Z.dispatch(c({
       type: "GUILD_MEMBER_UPDATE"
-    }, h))
+    }, m))
   };
-class h extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   _initialize() {
     p = setInterval(() => _(), f)
   }
@@ -90,7 +90,7 @@ class h extends Chunk147913.Z {
     clearInterval(p)
   }
   constructor(...e) {
-    super(...e), l(this, "clearGuildMemberTimeout", m)
+    super(...e), l(this, "clearGuildMemberTimeout", h)
   }
 }
-let g = new h
+let g = new m

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Y: () => s,
-  Z: () => m
+  Z: () => h
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -47,7 +47,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(_, "displayName", "BrowserCheckoutStateStore");
-let m = new _(Chunk570140.Z, {
+let h = new _(Chunk570140.Z, {
   USER_PAYMENT_BROWSER_CHECKOUT_STARTED: f,
   USER_PAYMENT_BROWSER_CHECKOUT_DONE: p
 })

@@ -14,23 +14,23 @@ var Chunk442837 = require("./442837.js"),
 
 function s(t, e, n) {
   let s = null != n;
-  if (null == (0, r.e7)([u.Z], () => u.Z.getGuild(e), [e])) return null;
+  if (null == (0, i.e7)([u.Z], () => u.Z.getGuild(e), [e])) return null;
 
   function d() {
     let l = arguments.length > 0 && true !== arguments[0] && arguments[0],
-      r = "".concat(location.protocol, "//").concat(location.host).concat(c.Z5c.GUILD_EVENT_DETAILS(e, t, l ? null : n));
-    (0, o.JG)(r, () => (0, i.showToast)((0, i.createToast)(a.intl.string(a.t["L/PwZf"]), i.ToastType.SUCCESS)))
+      i = "".concat(location.protocol, "//").concat(location.host).concat(c.Z5c.GUILD_EVENT_DETAILS(e, t, l ? null : n));
+    (0, o.JG)(i, () => (0, r.showToast)((0, r.createToast)(a.intl.string(a.t["L/PwZf"]), r.ToastType.SUCCESS)))
   }
-  return (0, l.jsx)(i.sNh, {
+  return (0, l.jsx)(r.sNh, {
     id: a.intl.string(a.t["9o+VKx"]),
     label: a.intl.string(a.t["9o+VKx"]),
     action: s ? true : () => d(true),
     children: s && (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(i.sNh, {
+      children: [(0, l.jsx)(r.sNh, {
         id: a.intl.string(a.t.QLtDqP),
         label: a.intl.string(a.t.QLtDqP),
         action: () => d(false)
-      }), (0, l.jsx)(i.sNh, {
+      }), (0, l.jsx)(r.sNh, {
         id: a.intl.string(a.t.AYnhB7),
         label: a.intl.string(a.t.AYnhB7),
         action: () => d(true)

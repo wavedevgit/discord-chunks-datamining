@@ -20,21 +20,21 @@ function _(e) {
   let {
     entries: t,
     channelId: n
-  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getChannel(n)), m = null == _ ? true : _.guild_id, h = r.useRef(new Set), g = r.useMemo(() => {
+  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getChannel(n)), h = null == _ ? true : _.guild_id, m = r.useRef(new Set), g = r.useMemo(() => {
     let e = new Set(null == t ? true : t.map(e => e.author_id));
-    return (0, o.E)([...h.current], [...e]) || (h.current = e), h.current
+    return (0, o.E)([...m.current], [...e]) || (m.current = e), m.current
   }, [t]);
   r.useEffect(() => {
-    null != m && Array.from(g).forEach(e => {
-      l.Z.requestMember(m, e)
+    null != h && Array.from(g).forEach(e => {
+      l.Z.requestMember(h, e)
     })
-  }, [g, m]);
+  }, [g, h]);
   let E = (0, a.Wu)([c.ZP], () => {
-      if (null == m) return f;
+      if (null == h) return f;
       let e = [];
-      for (let t of g) c.ZP.isMember(m, t) && e.push(t);
+      for (let t of g) c.ZP.isMember(h, t) && e.push(t);
       return e
-    }, [g, m]),
+    }, [g, h]),
     b = r.useMemo(() => {
       if (null == _ || 0 === E.length) return p;
       let e = new Set;

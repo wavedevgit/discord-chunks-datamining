@@ -50,7 +50,7 @@ function _(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     ctaType: t,
     classificationId: n,
@@ -72,7 +72,7 @@ function m(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     iconType: t
   } = e, n = {
@@ -114,7 +114,7 @@ function E(e) {
       className: d.noticeContent,
       children: [(0, r.jsxs)("div", {
         className: d.headerRow,
-        children: [(0, r.jsx)(h, {
+        children: [(0, r.jsx)(m, {
           iconType: i.icon
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
@@ -138,7 +138,7 @@ function E(e) {
       })]
     }), (0, r.jsx)(g, {
       theme: i.theme,
-      children: null == (t = i.ctas) ? true : t.map(e => (0, r.jsx)(m, {
+      children: null == (t = i.ctas) ? true : t.map(e => (0, r.jsx)(h, {
         ctaType: e,
         classificationId: i.classification_id,
         learnMoreLink: i.learn_more_link

@@ -67,9 +67,9 @@ function p(e, t) {
   });
   let {
     openInPopoutEnabled: p
-  } = e, _ = d(e, ["openInPopoutEnabled"]), m = a.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != p && p;
-  m && (0, o.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
-  let h = m ? i.u1M : i.z1l;
+  } = e, _ = d(e, ["openInPopoutEnabled"]), h = a.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != p && p;
+  h && (0, o.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
+  let m = h ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -77,6 +77,6 @@ function p(e, t) {
     return t => (0, r.jsx)(e, u({}, _, t))
   }, {
     onCloseCallback: f,
-    contextKey: h
+    contextKey: m
   })
 }

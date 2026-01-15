@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   BU: () => v,
-  CM: () => m,
-  Eo: () => h,
+  CM: () => h,
+  Eo: () => m,
   Kr: () => b,
   LY: () => P,
   XA: () => g,
   aB: () => p,
-  hm: () => R,
+  hm: () => w,
   jE: () => d,
   w6: () => f
 }), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./642613.js");
@@ -64,10 +64,10 @@ var p = function(e) {
   return e.PROFILE_EFFECT = "profile_effect", e.AVATAR_DECORATION = "avatar_decoration", e
 }({});
 let _ = ".DS_Store";
-var m = function(e) {
+var h = function(e) {
   return e.COLLECTION = "collection", e.AVATAR_DECORATIONS = "avatar_decorations", e.PROFILE_EFFECTS = "profile_effects", e
 }({});
-let h = e => {
+let m = e => {
     (0, i.showToast)((0, i.createToast)(e, i.ToastType.FAILURE))
   },
   g = e => {
@@ -76,7 +76,7 @@ let h = e => {
   E = (e, t) => {
     let n = new FileReader;
     n.onload = n => {
-      if (null == n.target || "string" != typeof n.target.result) return void h("Error uploading file. Try again!");
+      if (null == n.target || "string" != typeof n.target.result) return void m("Error uploading file. Try again!");
       t(e, n.target.result)
     }, n.readAsDataURL(e)
   },
@@ -158,7 +158,7 @@ let h = e => {
       T("", await new Promise(t => e.file(t)), null, t)
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
-  }, R = () => {
+  }, w = () => {
     let [e, t] = r.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],

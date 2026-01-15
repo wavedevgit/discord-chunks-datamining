@@ -25,8 +25,8 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
     renderRow: f,
     renderSection: p,
     renderSectionHeader: _,
-    renderSectionFooter: m,
-    renderListHeader: h,
+    renderSectionFooter: h,
+    renderListHeader: m,
     rowCount: g,
     rowCountBySection: E,
     rowHeight: b,
@@ -40,7 +40,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
     fade: A = false,
     initialScrollTop: N = 0,
     role: P = "list"
-  } = e, [R, w] = i.useState(false), [D, x] = i.useState(false), L = i.useRef(null), j = i.useRef(0), M = i.useRef(false);
+  } = e, [w, R] = i.useState(false), [D, x] = i.useState(false), L = i.useRef(null), j = i.useRef(0), M = i.useRef(false);
   (0, l.Ng)(() => {
     var e;
     let t = null == (e = L.current) ? true : e.getScrollerNode();
@@ -119,7 +119,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       offsetHeight: r,
       scrollTop: i
     } = t;
-    x(r), w(i), null == a || a({
+    x(r), R(i), null == a || a({
       width: n,
       height: r
     })
@@ -142,7 +142,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       let {
         scrollTop: e
       } = t;
-      j.current = e, null == n || n(e), w(e)
+      j.current = e, null == n || n(e), R(e)
     }))
   }, [n]);
   i.useImperativeHandle(t, () => ({
@@ -227,17 +227,17 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
     visibleItems: q,
     listOffset: Q
   } = i.useMemo(() => {
-    if (false === D || false === R) return {
+    if (false === D || false === w) return {
       visibleItems: null,
       listOffset: 0
     };
-    let e = R,
-      t = R + D,
+    let e = w,
+      t = w + D,
       n = 0,
       r = d[0],
       i = [],
       a = k();
-    null != h && e < a ? i.push(h()) : r += a;
+    null != m && e < a ? i.push(m()) : r += a;
     for (let a = 0; a < W.length; a++) {
       let {
         firstRowIndex: o,
@@ -249,7 +249,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       if (0 === c) continue;
       let u = G(a),
         d = Z(a),
-        h = F(a);
+        m = F(a);
       if (l <= e) r = l;
       else if (l > e && s < t) {
         n = o;
@@ -258,7 +258,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
           E = 0,
           b = s,
           y = b + u >= e && b <= t;
-        for (null != _ && (I || y) && l.push(_(a)), y || I || (r += u); g + u + d < c - h;) {
+        for (null != _ && (I || y) && l.push(_(a)), y || I || (r += u); g + u + d < c - m;) {
           let i = U(a, E, n),
             o = s + g + u,
             c = o + i;
@@ -272,14 +272,14 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
         }
         let O = s + u + g,
           v = O + d >= e && O <= t;
-        null != m && v && l.push(m(a)), null != p ? i.push(p(a, l)) : i = [...i, ...l]
+        null != h && v && l.push(h(a)), null != p ? i.push(p(a, l)) : i = [...i, ...l]
       } else break
     }
     return {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, Z, G, F, d, f, p, m, _, R, W, I, h, k, D]), X = i.useMemo(() => {
+  }, [U, Z, G, F, d, f, p, h, _, w, W, I, m, k, D]), X = i.useMemo(() => {
     var e, t, n;
     return {
       top: Q,

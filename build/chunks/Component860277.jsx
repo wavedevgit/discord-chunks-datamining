@@ -45,25 +45,25 @@ function M(e) {
   return (0, r.jsxs)("div", {
     className: D.content,
     children: [(0, r.jsxs)("div", {
-      className: w.title,
+      className: R.title,
       children: [(0, r.jsx)(c.iFz, {
         size: "refresh_sm",
         color: t,
-        colorClass: w.iconColor,
-        className: w.titleIcon
+        colorClass: R.iconColor,
+        className: R.titleIcon
       }), (0, r.jsx)(A.Z, {
         variant: "eyebrow",
-        className: w.eyebrow,
-        children: R.intl.string(P.default.ZQakPR)
+        className: R.eyebrow,
+        children: w.intl.string(P.default.ZQakPR)
       })]
     }), (0, r.jsx)(A.Z, {
       variant: "display-lg",
       className: D.display,
-      children: R.intl.string(P.default.OzY5Ns)
+      children: w.intl.string(P.default.OzY5Ns)
     }), (0, r.jsx)(A.Z, {
       variant: "heading-xxl/medium",
       className: D.subtitle,
-      children: R.intl.string(P.default.sEPtGY)
+      children: w.intl.string(P.default.sEPtGY)
     }), (0, r.jsx)(I.o, {
       slide: N.yD.FRIENDS
     })]
@@ -75,7 +75,7 @@ function k() {
     className: D.content,
     children: (0, r.jsx)(A.Z, {
       variant: "heading-xxl/medium",
-      children: R.intl.string(P.default.d5HUsD)
+      children: w.intl.string(P.default.d5HUsD)
     })
   })
 }
@@ -92,41 +92,41 @@ function U(e) {
   return (0, r.jsxs)("div", {
     className: D.content,
     children: [(0, r.jsxs)("div", {
-      className: w.title,
+      className: R.title,
       children: [(0, r.jsx)(c.iFz, {
         size: "refresh_sm",
         color: n,
-        colorClass: w.iconColor,
-        className: w.titleIcon
+        colorClass: R.iconColor,
+        className: R.titleIcon
       }), (0, r.jsx)(A.Z, {
         variant: "eyebrow",
-        className: w.eyebrow,
-        children: R.intl.string(P.default.ZQakPR)
+        className: R.eyebrow,
+        children: w.intl.string(P.default.ZQakPR)
       })]
     }), (0, r.jsx)(A.Z, {
       variant: "display-lg",
       className: o()(D.display, D.subtitle),
-      children: R.intl.string(P.default["+uwOHt"])
+      children: w.intl.string(P.default["+uwOHt"])
     }), (0, r.jsxs)("div", {
       className: D.stats,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(A.Z, {
           variant: "eyebrow",
-          children: R.intl.string(P.default.wWKySP)
+          children: w.intl.string(P.default.wWKySP)
         }), (0, r.jsx)(A.Z, {
           variant: "heading-xxl/normal",
-          className: w.numeric,
+          className: R.numeric,
           children: null == i ? true : i.numMessagesSent
         })]
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(A.Z, {
           variant: "eyebrow",
-          children: a === d.J6.HOURS ? R.intl.format(P.default.Xu0QsX, {
+          children: a === d.J6.HOURS ? w.intl.format(P.default.Xu0QsX, {
             numHours: s
-          }) : R.intl.string(P.default.RmVTph)
+          }) : w.intl.string(P.default.RmVTph)
         }), (0, r.jsx)(A.Z, {
           variant: "heading-xxl/normal",
-          className: w.numeric,
+          className: R.numeric,
           children: s
         })]
       })]
@@ -143,7 +143,7 @@ function G(e) {
   } = e, {
     users: d = [],
     sidekick: _
-  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), m = (0, i.useContext)(y.Q), b = (0, f.dQu)(m.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([h.default], () => h.default.getCurrentUser()), A = (0, i.useRef)(0), P = (0, i.useRef)(true), R = (0, i.useRef)(null), w = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, F = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
+  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), h = (0, i.useContext)(y.Q), b = (0, f.dQu)(h.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([m.default], () => m.default.getCurrentUser()), A = (0, i.useRef)(0), P = (0, i.useRef)(true), w = (0, i.useRef)(null), R = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, F = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
   (0, i.useEffect)(() => (o === N.ij.FRIENDS_LEAVE && (P.current ? l() : F ? (s(), P.current = true) : A.current = setTimeout(() => {
     s(), P.current = true
   }, x)), () => clearTimeout(A.current)), [s, l, F, o]);
@@ -168,15 +168,15 @@ function G(e) {
   let H = (0, i.useCallback)(() => {
       let e = setInterval(() => {
         var t, n;
-        let r = null == (t = R.current) ? true : t.getProperties();
-        null != R.current && (null == r ? true : r.twoFriends.value) === Z && (null == r ? true : r.reducedMotion.value) === F && (null == (n = R.current) || n.play(), clearInterval(e))
+        let r = null == (t = w.current) ? true : t.getProperties();
+        null != w.current && (null == r ? true : r.twoFriends.value) === Z && (null == r ? true : r.reducedMotion.value) === F && (null == (n = w.current) || n.play(), clearInterval(e))
       }, L);
       return () => clearInterval(e)
     }, [F, Z]),
     Y = (0, i.useMemo)(() => o < N.ij.FRIENDS_INTRO ? N.ij.FRIENDS_INTRO : o >= N.ij.FRIENDS_BEST ? N.ij.FRIENDS_BEST : o, [o]);
   return (0, r.jsxs)(T.Z, {
     children: [(0, r.jsx)(c.jxI, {
-      ref: R,
+      ref: w,
       className: D.rive,
       fit: "contain",
       autoplay: false,
@@ -188,10 +188,10 @@ function G(e) {
         "Avatar03/img": V(S),
         "Avatar04/img": V(null == _ ? true : _.user),
         "Avatar05/img": V(I),
-        "Avatar01/Username": w,
+        "Avatar01/Username": R,
         "Avatar02/Username": j,
         "Avatar03/Username": G,
-        "Avatar04/Username": w,
+        "Avatar04/Username": R,
         twoFriends: Z,
         reducedMotion: F
       },
@@ -228,18 +228,18 @@ function Z() {
     n = (0, i.useContext)(y.Q),
     a = (0, f.dQu)(n.primaryColor).hex(),
     d = (0, i.useRef)(null),
-    [p, h] = (0, i.useState)((0, s.sample)(t)),
+    [p, m] = (0, i.useState)((0, s.sample)(t)),
     {
       sidekick: g
     } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()),
     E = null == g ? true : g.user,
     v = (0, _.Z)(null != (e = null == E ? true : E.id) ? e : "0"),
-    I = (0, u.e7)([m.Z], () => m.Z.isBlocked(null == E ? true : E.id)),
+    I = (0, u.e7)([h.Z], () => h.Z.isBlocked(null == E ? true : E.id)),
     T = v && !I,
     [C, A] = (0, i.useState)(false),
     x = C || null == p || p.length < 1 || p.length > j,
     L = (0, S.T)(l.Z),
-    M = C ? R.intl.string(R.t.fjcCk5) : "";
+    M = C ? w.intl.string(w.t.fjcCk5) : "";
   (0, i.useEffect)(() => {
     null != d.current && (d.current.style.height = "".concat(Math.min(d.current.scrollHeight, 140), "px"))
   }, [p]);
@@ -248,13 +248,13 @@ function Z() {
       L();
       let e = (0, s.sample)(t);
       for (; null == e || e === p;) e = (0, s.sample)(t);
-      h(e)
+      m(e)
     }, [t, p, C, L]),
     U = (0, i.useCallback)(e => {
-      h(e.target.value)
+      m(e.target.value)
     }, []),
     G = (0, i.useCallback)(() => {
-      x || (null == E ? true : E.id) == null || (L(), (0, b.gq)(p, null == E ? true : E.id), h(true), A(true))
+      x || (null == E ? true : E.id) == null || (L(), (0, b.gq)(p, null == E ? true : E.id), m(true), A(true))
     }, [x, L, p, null == E ? true : E.id]);
   return T ? (0, r.jsxs)("div", {
     className: D.inputWrapper,
@@ -264,7 +264,7 @@ function Z() {
       style: {
         backgroundColor: a
       },
-      children: R.intl.string(P.default["//ZYM/"])
+      children: w.intl.string(P.default["//ZYM/"])
     }), (0, r.jsx)("textarea", {
       ref: d,
       onChange: U,
@@ -281,22 +281,22 @@ function Z() {
       children: [(0, r.jsx)(c.P3F, {
         onClick: k,
         "aria-disabled": C,
-        className: o()(w.clickable, {
+        className: o()(R.clickable, {
           [D.disabled]: C
         }),
         children: (0, r.jsx)(c.kBK, {
           color: a,
-          colorClass: w.iconColor
+          colorClass: R.iconColor
         })
       }), (0, r.jsx)(c.P3F, {
         onClick: G,
         "aria-disabled": C || x,
-        className: o()(w.clickable, {
+        className: o()(R.clickable, {
           [D.disabled]: C || x
         }),
         children: (0, r.jsx)(c.Uuj, {
           color: a,
-          colorClass: w.iconColor
+          colorClass: R.iconColor
         })
       })]
     })]

@@ -31,13 +31,13 @@ function v(e) {
     onClose: a
   } = e, {
     themeType: v
-  } = (0, h.z)(), {
+  } = (0, m.z)(), {
     analyticsLocations: S
   } = (0, c.ZP)(), I = (0, _.W)(t), T = (0, u.ZP)(t, true), C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), A = i.useMemo(() => null == C || "" === C ? null : p.Z.parseVoiceChannelStatus(C, true, {
     channelId: t.id
   }), [C, t.id]);
   i.useEffect(() => {
-    null != A && m.default.track(E.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+    null != A && h.default.track(E.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       channel_id: t.id,
       guild_id: t.guild_id,
       location_stack: S

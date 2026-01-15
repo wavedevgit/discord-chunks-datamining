@@ -2,7 +2,7 @@
 /** chunk id: 7366, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,7 +54,7 @@ function p(e, t) {
 
 function _(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,21 +62,21 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = e => {
+let m = e => {
   var {
     gradientColor: t,
     title: n,
     subtitle: u,
     onClose: f,
-    onSecondaryClick: m,
-    videoSrc: h,
+    onSecondaryClick: h,
+    videoSrc: m,
     loopAt: g
   } = e, E = _(e, ["gradientColor", "title", "subtitle", "onClose", "onSecondaryClick", "videoSrc", "loopAt"]);
   let {
@@ -100,7 +100,7 @@ let h = e => {
         gradientColor: t,
         graphic: {
           type: "video",
-          src: h,
+          src: m,
           loop: true,
           loopAt: g
         },
@@ -109,7 +109,7 @@ let h = e => {
         actions: [{
           variant: "secondary",
           text: c.intl.string(c.t.ZnqyZ2),
-          onClick: m
+          onClick: h
         }, p(d({}, b), {
           onClick: a
         })]

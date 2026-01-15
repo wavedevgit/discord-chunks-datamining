@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 
-function w(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -92,11 +92,11 @@ function M(e, t) {
 
 function k(e) {
   var t;
-  let n = (0, a.e7)([h.Z], () => h.Z.questDeliveryOverride, []),
+  let n = (0, a.e7)([m.Z], () => m.Z.questDeliveryOverride, []),
     u = (0, O.GN)(e.questContent),
-    w = [g.jn.QUEST_BAR_V2, g.jn.QUEST_BAR].includes(e.questContent),
+    R = [g.jn.QUEST_BAR_V2, g.jn.QUEST_BAR].includes(e.questContent),
     D = (0, _.O5)(),
-    x = (0, m.aM)(),
+    x = (0, h.aM)(),
     L = (0, y.V_)(e.quest),
     j = true === e.showShareLink && (0, I.VB)(e.quest.config),
     {
@@ -160,7 +160,7 @@ function k(e) {
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.CONTEXT_MENU_HIDE_CONTENT,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, O.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), w && (0, C.maybeShowSurveyForQuest)(e.quest))
+      }), (0, O.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), R && (0, C.maybeShowSurveyForQuest)(e.quest))
     },
     z = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
     q = () => (0, p.CS)(e.quest.id, true).catch(z),
@@ -183,7 +183,7 @@ function k(e) {
     variant: "fixed",
     onSelect: W,
     navId: "quests-entry",
-    "aria-label": R.intl.string(R.t.ogxXGq),
+    "aria-label": w.intl.string(w.t.ogxXGq),
     onClose: null != (t = null == e ? true : e.onClose) ? t : P.dG,
     children: [(0, r.jsxs)(o.kSQ, {
       children: [(0, r.jsx)(o.sNh, {
@@ -193,43 +193,43 @@ function k(e) {
         icon: o.zFc
       }), j && (0, r.jsx)(o.sNh, {
         id: "share-link",
-        label: R.intl.string(R.t.RDE0Sc),
+        label: w.intl.string(w.t.RDE0Sc),
         action: V,
         icon: o.TIy
       }), J && $]
     }, "major-actions"), (0, r.jsxs)(o.kSQ, {
       children: [!e.hideLearnMore && (0, r.jsx)(o.sNh, {
         id: "learn-more",
-        label: R.intl.string(R.t["Ws2Bl+"]),
+        label: w.intl.string(w.t["Ws2Bl+"]),
         action: Y,
         icon: o.qDn
       }), et && (0, r.jsx)(o.sNh, {
         id: "display-disclosure",
-        label: R.intl.string(R.t.GcsZKJ),
+        label: w.intl.string(w.t.GcsZKJ),
         action: H
       }), u && (0, r.jsx)(o.sNh, {
         id: "hide-entrypoint",
-        label: R.intl.string(R.t.NN79E9),
+        label: w.intl.string(w.t.NN79E9),
         action: K,
-        subtext: R.intl.string(R.t.RK9gxo)
+        subtext: w.intl.string(w.t.RK9gxo)
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(o.kSQ, {
-      label: R.intl.string(R.t["Ape+mm"]),
+      label: w.intl.string(w.t["Ape+mm"]),
       children: [(0, r.jsx)(o.sNh, {
         id: "dismiss",
-        label: R.intl.string(R.t.JF6W66),
+        label: w.intl.string(w.t.JF6W66),
         action: U
       }), (0, r.jsx)(o.sNh, {
         id: "enrollment",
-        label: R.intl.string(R.t.taqkwK),
+        label: w.intl.string(w.t.taqkwK),
         action: X
       }), (0, r.jsx)(o.sNh, {
         id: "progress",
-        label: R.intl.string(R.t.cKSLr4),
+        label: w.intl.string(w.t.cKSLr4),
         action: F
       }), (0, r.jsx)(o.sNh, {
         id: "complete",
-        label: R.intl.string(R.t.jQEfRT),
+        label: w.intl.string(w.t.jQEfRT),
         action: M
       }), (0, S.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
         id: "console",
@@ -249,7 +249,7 @@ function k(e) {
         })]
       }), (0, r.jsx)(o.sNh, {
         id: "copy-quest-id",
-        label: R.intl.string(R.t.oisrFi),
+        label: w.intl.string(w.t.oisrFi),
         action: () => {
           (0, d.JG)(e.quest.id)
         }
@@ -257,7 +257,7 @@ function k(e) {
         location: A.dr.QUEST_PREVIEW_TOOL_2
       }) && (0, r.jsx)(o.sNh, {
         id: "preview",
-        label: R.intl.string(R.t.tx5Ax5),
+        label: w.intl.string(w.t.tx5Ax5),
         action: ee
       })]
     }, "preview-controls")]
@@ -274,17 +274,17 @@ function U(e) {
     questContent: c,
     questContentPosition: d,
     sourceQuestContent: f
-  } = e, p = j(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), m = (0, _.O5)(), h = i.useRef(null), g = i.useCallback(() => {
-    m({
+  } = e, p = j(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), h = (0, _.O5)(), m = i.useRef(null), g = i.useCallback(() => {
+    h({
       questId: l.id,
       questContent: c,
       questContentCTA: _.jZ.OPEN_CONTEXT_MENU,
       questContentPosition: d,
       sourceQuestContent: f
     }), null != n && n()
-  }, [n, l.id, c, d, m, f]);
+  }, [n, l.id, c, d, h, f]);
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: h,
+    targetElementRef: m,
     onRequestOpen: g,
     onRequestClose: a,
     renderPopout: e => {
@@ -309,7 +309,7 @@ function U(e) {
     },
     animation: o.yRy.Animation.NONE,
     children: e => (0, r.jsx)("div", {
-      ref: h,
+      ref: m,
       children: t(e)
     })
   })

@@ -6,8 +6,8 @@ require.d(exports, {
   LY: () => o,
   ND: () => f,
   aW: () => s,
-  af: () => h,
-  km: () => m,
+  af: () => m,
+  km: () => h,
   no: () => d,
   o6: () => _,
   tI: () => c,
@@ -169,9 +169,9 @@ p(720), p(1080), p(1440), p(0, () => a.intl.string(a.t.XjXqzh)), p(720), p(1080)
 let _ = e => 0 === e ? a.intl.string(a.t.XjXqzh) : a.intl.formatToPlainString(a.t.TEOC0I, {
     resolution: e
   }),
-  m = [p(480, () => _(480)), p(720, () => _(720)), p(1080, () => _(1080)), p(1440, () => _(1440)), p(0, () => _(0))];
+  h = [p(480, () => _(480)), p(720, () => _(720)), p(1080, () => _(1080)), p(1440, () => _(1440)), p(0, () => _(0))];
 p(15), p(30), p(60);
-let h = [p(15, () => a.intl.formatToPlainString(a.t["bW+JCW"], {
+let m = [p(15, () => a.intl.formatToPlainString(a.t["bW+JCW"], {
   value: 15
 })), p(30, () => a.intl.formatToPlainString(a.t["bW+JCW"], {
   value: 30

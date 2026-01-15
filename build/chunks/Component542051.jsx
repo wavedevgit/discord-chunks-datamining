@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -124,12 +124,12 @@ class y extends(r = Chunk473749.PureComponent) {
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: p,
-      showDMQueryText: m
+      showDMQueryText: h
     } = this.props;
     if (e || u) return null;
     let E = false === r;
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(l.P3F, h(_({
+      children: [(0, i.jsxs)(l.P3F, m(_({
         className: s()(f.queryContainer, {
           [f.focused]: E
         })
@@ -139,7 +139,7 @@ class y extends(r = Chunk473749.PureComponent) {
         children: [(0, i.jsx)(g, {
           query: t,
           searchFavorites: p,
-          showDMQueryText: m
+          showDMQueryText: h
         }), (0, i.jsx)("div", {
           className: f.queryShortcut,
           "aria-hidden": true,
@@ -149,7 +149,7 @@ class y extends(r = Chunk473749.PureComponent) {
             className: f.keyCombo
           })
         })]
-      })), p && (0, i.jsxs)(l.P3F, h(_({
+      })), p && (0, i.jsxs)(l.P3F, m(_({
         className: s()(f.queryContainer, {
           [f.focused]: E
         })
@@ -223,7 +223,7 @@ class y extends(r = Chunk473749.PureComponent) {
           channelContainerClassName: f.channelContainer,
           textContainerClassName: f.searchResultNameContainer
         });
-      return (0, i.jsx)(l.P3F, h(_({}, b(e, false, o)), {
+      return (0, i.jsx)(l.P3F, m(_({}, b(e, false, o)), {
         className: f.inChannelOptionContainer,
         onClick: a,
         children: (0, i.jsx)(l.Text, {

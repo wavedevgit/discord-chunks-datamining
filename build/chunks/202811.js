@@ -39,16 +39,16 @@ function c(e, t, n = Infinity, r = Infinity, o = (0, i.i)()) {
     return c("", e, f - 1, r, o)
   } catch (e) {}
   let _ = Array.isArray(t) ? [] : {},
-    m = 0,
-    h = (0, a.Sh)(t);
-  for (let e in h) {
-    if (!Object.prototype.hasOwnProperty.call(h, e)) continue;
-    if (m >= r) {
+    h = 0,
+    m = (0, a.Sh)(t);
+  for (let e in m) {
+    if (!Object.prototype.hasOwnProperty.call(m, e)) continue;
+    if (h >= r) {
       _[e] = "[MaxProperties ~]";
       break
     }
-    let t = h[e];
-    _[e] = c(e, t, f - 1, r, o), m++
+    let t = m[e];
+    _[e] = c(e, t, f - 1, r, o), h++
   }
   return l(t), _
 }

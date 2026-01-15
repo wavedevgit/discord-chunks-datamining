@@ -196,8 +196,8 @@ let B = new Chunk710845.Z("RunningGameStore"),
   ef = null,
   ep = {},
   e_ = {},
-  em = new Set,
   eh = new Set,
+  em = new Set,
   eg = null,
   eE = null,
   eb = new Map,
@@ -300,9 +300,9 @@ K.forEach(e => {
     eb.set(t.name.toLowerCase(), e)
   })
 });
-let eR = new Set(["1314395942253756416"]);
+let ew = new Set(["1314395942253756416"]);
 
-function ew(e) {
+function eR(e) {
   let t = null;
   if ("id" in e) {
     var n;
@@ -312,7 +312,7 @@ function ew(e) {
     if (null == n) returnfalse;
     t = n.id
   }
-  return null != t && (0, O.YB)("getRawOverlayGameStatus") && eR.has(t)
+  return null != t && (0, O.YB)("getRawOverlayGameStatus") && ew.has(t)
 }
 
 function eD(e) {
@@ -345,7 +345,7 @@ function eD(e) {
     }
   }
   let o = (0, x.supportsOutOfProcess)() && !t,
-    s = ew(null != a ? a : i),
+    s = eR(null != a ? a : i),
     l = b.v.legacyEnabled,
     c = o && !s,
     u = es.enableOverlay[eP(i)],
@@ -451,7 +451,7 @@ function eG() {
 }
 
 function eZ() {
-  if (!__OVERLAY__ && w.isPlatformEmbedded) {
+  if (!__OVERLAY__ && R.isPlatformEmbedded) {
     let e = [...J, ...o().values(es.gameOverrides)];
     D.ZP.setGameCandidateOverrides(e)
   }
@@ -559,7 +559,7 @@ function e0(e) {
 }
 
 function e1() {
-  eg = null, eE = null, em.clear()
+  eg = null, eE = null, eh.clear()
 }
 
 function e3(e) {
@@ -570,9 +570,9 @@ function e3(e) {
       cleanedExePath: null != (t = (0, _.F)(e.exePath)) ? t : e.exePath
     }
   }).filter(e => {
-    if (em.has(e.pid) || eh.has(e.cleanedExePath)) returnfalse;
+    if (eh.has(e.pid) || em.has(e.cleanedExePath)) returnfalse;
     let t = z.some(t => e.cleanedExePath.includes(t));
-    return t && em.add(e.pid), t
+    return t && eh.add(e.pid), t
   }).map(e => e.cleanedExePath);
   t.length > 0 && A.default.track(M.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
     keywords: z,
@@ -626,7 +626,7 @@ function e8(e) {
 
 function e6(e) {
   var t;
-  if (__OVERLAY__ || !w.isPlatformEmbedded) return;
+  if (__OVERLAY__ || !R.isPlatformEmbedded) return;
   let n = D.ZP.getDiscordUtils().notifyGameLaunched;
   if (null == n) return;
   let r = I.Z.getDetectableGame(e.applicationId);
@@ -634,7 +634,7 @@ function e6(e) {
 }
 
 function e7() {
-  h.Z.hasLoadedExperiments && W.length > 0 && (eB(W), W = [])
+  m.Z.hasLoadedExperiments && W.length > 0 && (eB(W), W = [])
 }
 
 function e9(e) {
@@ -653,7 +653,7 @@ function e9(e) {
     a = (0, x.supportsOutOfProcess)();
   for (let e of n) {
     var o, s, l, c;
-    let t = ew(e),
+    let t = eR(e),
       n = a && !t || f.r.enabledOOP,
       r = null != (o = e.overlay) ? o : f.r.enabled;
     ec[e.id] = {
@@ -765,7 +765,7 @@ class te extends(i = Chunk442837.ZP.Store) {
         (0, S.le)(e) || (es.gameOverrides[t] = e)
       }), es.enableOverlay = null != (n = a.enableOverlay) ? n : {}, es.enableOverlayV3 = null != (r = a.enableOverlayV3) ? r : {}, es.enableDetection = null != (i = a.enableDetection) ? i : {}, eZ(), Array.isArray(a.gamesSeen))
       for (let e of a.gamesSeen) "number" == typeof e.id && (e.nativeProcessObserverId = e.id, delete e.id, s = true);
-    this.waitFor(C.Z, h.Z, I.Z, T.Z, j.Z), W = a.gamesSeen.filter(e => !(0, S.le)(e)), this.syncWith([h.Z], e7), this.syncWith([T.Z, I.Z, C.Z], o().throttle(eG, 1e3)), s && eM()
+    this.waitFor(C.Z, m.Z, I.Z, T.Z, j.Z), W = a.gamesSeen.filter(e => !(0, S.le)(e)), this.syncWith([m.Z], e7), this.syncWith([T.Z, I.Z, C.Z], o().throttle(eG, 1e3)), s && eM()
   }
   getVisibleGame() {
     return null == en || ej(en) ? en : null
@@ -791,7 +791,7 @@ class te extends(i = Chunk442837.ZP.Store) {
     return e
   }
   getRunningVerifiedApplicationIds() {
-    return this.getRunningGames().map(e => I.Z.getGameByName(e.name)).filter(R.lm).map(e => e.id)
+    return this.getRunningGames().map(e => I.Z.getGameByName(e.name)).filter(w.lm).map(e => e.id)
   }
   getGameForPID(e) {
     var t;
@@ -874,7 +874,7 @@ class te extends(i = Chunk442837.ZP.Store) {
   }
   addExecutableTrackedByAnalytics(e) {
     var t;
-    eh.add(null != (t = (0, _.F)(e)) ? t : e)
+    em.add(null != (t = (0, _.F)(e)) ? t : e)
   }
   getSystemServiceStatus(e) {
     var t;

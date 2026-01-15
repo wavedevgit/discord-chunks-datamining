@@ -29,14 +29,14 @@ function d(e) {
   }), _ = (0, c.MM)({
     userIds: d,
     guildIdsWithGameStores: u.$Y
-  }), m = r.useMemo(() => {
+  }), h = r.useMemo(() => {
     if ((null == t ? true : t.widgets) == null) returnfalse;
     let e = new Set(null == t ? true : t.widgets.map(e => e instanceof a.zy ? e.games.map(e => e.applicationId) : e instanceof i.q ? e.applicationId : true).filter(s.lm).flat());
     for (let t of u.RI)
       if (e.has(t)) returntrue;
     returnfalse
   }, [null == t ? true : t.widgets]);
-  return (null == t ? true : t.application) == null && o && (f || p || _ || m)
+  return (null == t ? true : t.application) == null && o && (f || p || _ || h)
 }
 
 function f(e) {

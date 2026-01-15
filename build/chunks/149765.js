@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $e: () => I,
-  Bw: () => m,
+  Bw: () => h,
   Db: () => C,
   IH: () => A,
   Od: () => N,
@@ -12,7 +12,7 @@ require.d(exports, {
   fS: () => S,
   hX: () => b,
   r0: () => P,
-  ug: () => R,
+  ug: () => w,
   vB: () => g
 }), require("./368063.js");
 var Chunk654861 = require("./654861.js"),
@@ -131,16 +131,16 @@ let _ = c();
 _ && null == BigInt.prototype.toJSON && (BigInt.prototype.toJSON = function() {
   return this.toString()
 });
-let m = _ ? function(e) {
+let h = _ ? function(e) {
     return "bigint" == typeof e
   } : function(e) {
     return e instanceof p
   },
-  h = {},
+  m = {},
   g = _ ? function(e) {
     return BigInt(e)
   } : function(e) {
-    return e instanceof p ? e : ("number" == typeof e && (e = e.toString()), null != h[e] || (h[e] = p.fromString(e)), h[e])
+    return e instanceof p ? e : ("number" == typeof e && (e = e.toString()), null != m[e] || (m[e] = p.fromString(e)), m[e])
   },
   E = g(0),
   b = _ ? function() {
@@ -210,7 +210,7 @@ let P = _ ? function(e) {
   } : function(e) {
     return p.fromBit(e)
   },
-  R = _ ? function(e, t) {
+  w = _ ? function(e, t) {
     return Number(BigInt.asUintN(e, t))
   } : function(e, t) {
     return p.asUintN(e, t)

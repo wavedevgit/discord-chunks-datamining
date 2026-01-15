@@ -28,8 +28,8 @@ var r, Chunk98405 = require("./98405.js"),
   A = Chunk294684.getState,
   N = Chunk127849.URL,
   P = Chunk127849.TypeError,
-  R = Chunk127849.parseInt,
-  w = Math.floor,
+  w = Chunk127849.parseInt,
+  R = Math.floor,
   D = Math.pow,
   x = Chunk46015("".charAt),
   L = Chunk46015(/./.exec),
@@ -67,7 +67,7 @@ var r, Chunk98405 = require("./98405.js"),
       if (a = 10, i.length > 1 && "0" === x(i, 0) && (a = L(J, i) ? 16 : 8, i = B(i, 8 === a ? 1 : 2)), "" === i) o = 0;
       else {
         if (!L(10 === a ? ee : 8 === a ? $ : et, i)) return e;
-        o = R(i, a)
+        o = w(i, a)
       }
       U(n, o)
     }
@@ -97,7 +97,7 @@ var r, Chunk98405 = require("./98405.js"),
         d++, u = ++c;
         continue
       }
-      for (t = n = 0; n < 4 && L(et, f());) t = 16 * t + R(f(), 16), d++, n++;
+      for (t = n = 0; n < 4 && L(et, f());) t = 16 * t + w(f(), 16), d++, n++;
       if ("." === f()) {
         if (0 === n || (d -= n, c > 6)) return;
         for (r = 0; f();) {
@@ -106,7 +106,7 @@ var r, Chunk98405 = require("./98405.js"),
             else d++;
           if (!L(X, f())) return;
           for (; L(X, f());) {
-            if (a = R(f(), 10), null === i) i = a;
+            if (a = w(f(), 10), null === i) i = a;
             else {
               if (0 === i) return;
               i = 10 * i + a
@@ -136,7 +136,7 @@ var r, Chunk98405 = require("./98405.js"),
   eu = function(e) {
     var t, n, r, i;
     if ("number" == typeof e) {
-      for (n = 0, t = []; n < 4; n++) H(t, e % 256), e = w(e / 256);
+      for (n = 0, t = []; n < 4; n++) H(t, e % 256), e = R(e / 256);
       return j(t, ".")
     }
     if ("object" == typeof e) {
@@ -171,11 +171,11 @@ var r, Chunk98405 = require("./98405.js"),
     "^": 1,
     "|": 1
   }),
-  em = function(e, t) {
+  eh = function(e, t) {
     var n = g(e, 0);
     return n > 32 && n < 127 && !p(t, e) ? e : encodeURIComponent(e)
   },
-  eh = {
+  em = {
     ftp: 21,
     file: null,
     http: 80,
@@ -206,8 +206,8 @@ var r, Chunk98405 = require("./98405.js"),
   eA = {},
   eN = {},
   eP = {},
-  eR = {},
   ew = {},
+  eR = {},
   eD = {},
   ex = {},
   eL = {},
@@ -238,7 +238,7 @@ eB.prototype = {
       f = false,
       _ = false,
       g = false;
-    for (e = b(e), t || (l.scheme = "", l.username = "", l.password = "", l.host = null, l.port = null, l.path = [], l.query = null, l.fragment = null, l.cannotBeABaseURL = false, e = G(e, ei, ""), e = G(e, ea, "$1")), i = m(e = G(e, eo, "")); u <= i.length;) {
+    for (e = b(e), t || (l.scheme = "", l.username = "", l.password = "", l.host = null, l.port = null, l.path = [], l.query = null, l.fragment = null, l.cannotBeABaseURL = false, e = G(e, ei, ""), e = G(e, ea, "$1")), i = h(e = G(e, eo, "")); u <= i.length;) {
       switch (a = i[u], c) {
         case eO:
           if (a && L(q, a)) d += V(a), c = ev;
@@ -251,9 +251,9 @@ eB.prototype = {
         case ev:
           if (a && (L(Q, a) || "+" === a || "-" === a || "." === a)) d += V(a);
           else if (":" === a) {
-            if (t && (l.isSpecial() !== p(eh, d) || "file" === d && (l.includesCredentials() || null !== l.port) || "file" === l.scheme && !l.host)) return;
+            if (t && (l.isSpecial() !== p(em, d) || "file" === d && (l.includesCredentials() || null !== l.port) || "file" === l.scheme && !l.host)) return;
             if (l.scheme = d, t) {
-              l.isSpecial() && eh[l.scheme] === l.port && (l.port = null);
+              l.isSpecial() && em[l.scheme] === l.port && (l.port = null);
               return
             }
             d = "", "file" === l.scheme ? c = eL : l.isSpecial() && n && n.scheme === l.scheme ? c = eI : l.isSpecial() ? c = eN : "/" === i[u + 1] ? (c = eT, u++) : (l.cannotBeABaseURL = true, U(l.path, ""), c = eG)
@@ -266,7 +266,7 @@ eB.prototype = {
         case eS:
           if (!n || n.cannotBeABaseURL && "#" !== a) return W;
           if (n.cannotBeABaseURL && "#" === a) {
-            l.scheme = n.scheme, l.path = h(n.path), l.query = n.query, l.fragment = "", l.cannotBeABaseURL = true, c = eF;
+            l.scheme = n.scheme, l.path = m(n.path), l.query = n.query, l.fragment = "", l.cannotBeABaseURL = true, c = eF;
             break
           }
           c = "file" === n.scheme ? eL : eC;
@@ -280,24 +280,24 @@ eB.prototype = {
           break;
         case eT:
           if ("/" === a) {
-            c = eR;
+            c = ew;
             break
           }
           c = eU;
           continue;
         case eC:
-          if (l.scheme = n.scheme, a === r) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = h(n.path), l.query = n.query;
+          if (l.scheme = n.scheme, a === r) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = n.query;
           else if ("/" === a || "\\" === a && l.isSpecial()) c = eA;
-          else if ("?" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = h(n.path), l.query = "", c = eZ;
-          else if ("#" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = h(n.path), l.query = n.query, l.fragment = "", c = eF;
+          else if ("?" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = "", c = eZ;
+          else if ("#" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eF;
           else {
-            l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = h(n.path), l.path.length--, c = eU;
+            l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.path.length--, c = eU;
             continue
           }
           break;
         case eA:
           if (l.isSpecial() && ("/" === a || "\\" === a)) c = eP;
-          else if ("/" === a) c = eR;
+          else if ("/" === a) c = ew;
           else {
             l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, c = eU;
             continue
@@ -309,29 +309,29 @@ eB.prototype = {
           break;
         case eP:
           if ("/" !== a && "\\" !== a) {
-            c = eR;
+            c = ew;
             continue
           }
           break;
-        case eR:
+        case ew:
           if ("@" === a) {
-            f && (d = "%40" + d), f = true, o = m(d);
+            f && (d = "%40" + d), f = true, o = h(d);
             for (var E = 0; E < o.length; E++) {
               var y = o[E];
               if (":" === y && !g) {
                 g = true;
                 continue
               }
-              var O = em(y, e_);
+              var O = eh(y, e_);
               g ? l.password += O : l.username += O
             }
             d = ""
           } else if (a === r || "/" === a || "?" === a || "#" === a || "\\" === a && l.isSpecial()) {
             if (f && "" === d) return Y;
-            u -= m(d).length + 1, d = "", c = ew
+            u -= h(d).length + 1, d = "", c = eR
           } else d += a;
           break;
-        case ew:
+        case eR:
         case eD:
           if (t && "file" === l.scheme) {
             c = eM;
@@ -356,9 +356,9 @@ eB.prototype = {
           else {
             if (!(a === r || "/" === a || "?" === a || "#" === a || "\\" === a && l.isSpecial()) && !t) return z;
             if ("" !== d) {
-              var v = R(d, 10);
+              var v = w(d, 10);
               if (v > 65535) return z;
-              l.port = l.isSpecial() && v === eh[l.scheme] ? null : v, d = ""
+              l.port = l.isSpecial() && v === em[l.scheme] ? null : v, d = ""
             }
             if (t) return;
             c = ek;
@@ -369,16 +369,16 @@ eB.prototype = {
           if (l.scheme = "file", "/" === a || "\\" === a) c = ej;
           else if (n && "file" === n.scheme) switch (a) {
             case r:
-              l.host = n.host, l.path = h(n.path), l.query = n.query;
+              l.host = n.host, l.path = m(n.path), l.query = n.query;
               break;
             case "?":
-              l.host = n.host, l.path = h(n.path), l.query = "", c = eZ;
+              l.host = n.host, l.path = m(n.path), l.query = "", c = eZ;
               break;
             case "#":
-              l.host = n.host, l.path = h(n.path), l.query = n.query, l.fragment = "", c = eF;
+              l.host = n.host, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eF;
               break;
             default:
-              eE(j(h(i, u), "")) || (l.host = n.host, l.path = h(n.path), l.shortenPath()), c = eU;
+              eE(j(m(i, u), "")) || (l.host = n.host, l.path = m(n.path), l.shortenPath()), c = eU;
               continue
           } else {
             c = eU;
@@ -390,7 +390,7 @@ eB.prototype = {
             c = eM;
             break
           }
-          n && "file" === n.scheme && !eE(j(h(i, u), "")) && (eg(n.path[0], true) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
+          n && "file" === n.scheme && !eE(j(m(i, u), "")) && (eg(n.path[0], true) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
           continue;
         case eM:
           if (a === r || "/" === a || "\\" === a || "?" === a || "#" === a) {
@@ -421,16 +421,16 @@ eB.prototype = {
             if (ey(d) ? (l.shortenPath(), "/" === a || "\\" === a && l.isSpecial() || U(l.path, "")) : eb(d) ? "/" === a || "\\" === a && l.isSpecial() || U(l.path, "") : ("file" === l.scheme && !l.path.length && eg(d) && (l.host && (l.host = ""), d = x(d, 0) + ":"), U(l.path, d)), d = "", "file" === l.scheme && (a === r || "?" === a || "#" === a))
               for (; l.path.length > 1 && "" === l.path[0];) Z(l.path);
             "?" === a ? (l.query = "", c = eZ) : "#" === a && (l.fragment = "", c = eF)
-          } else d += em(a, ep);
+          } else d += eh(a, ep);
           break;
         case eG:
-          "?" === a ? (l.query = "", c = eZ) : "#" === a ? (l.fragment = "", c = eF) : a !== r && (l.path[0] += em(a, ed));
+          "?" === a ? (l.query = "", c = eZ) : "#" === a ? (l.fragment = "", c = eF) : a !== r && (l.path[0] += eh(a, ed));
           break;
         case eZ:
-          t || "#" !== a ? a !== r && ("'" === a && l.isSpecial() ? l.query += "%27" : "#" === a ? l.query += "%23" : l.query += em(a, ed)) : (l.fragment = "", c = eF);
+          t || "#" !== a ? a !== r && ("'" === a && l.isSpecial() ? l.query += "%27" : "#" === a ? l.query += "%23" : l.query += eh(a, ed)) : (l.fragment = "", c = eF);
           break;
         case eF:
-          a !== r && (l.fragment += em(a, ef))
+          a !== r && (l.fragment += eh(a, ef))
       }
       u++
     }
@@ -445,7 +445,7 @@ eB.prototype = {
       this.host = t
     } else {
       if (L(er, e)) return K;
-      for (r = 0, t = "", n = m(e); r < n.length; r++) t += em(n[r], ed);
+      for (r = 0, t = "", n = h(e); r < n.length; r++) t += eh(n[r], ed);
       this.host = t
     }
   },
@@ -456,7 +456,7 @@ eB.prototype = {
     return "" !== this.username || "" !== this.password
   },
   isSpecial: function() {
-    return p(eh, this.scheme)
+    return p(em, this.scheme)
   },
   shortenPath: function() {
     var e = this.path,
@@ -501,20 +501,20 @@ eB.prototype = {
     return this.username
   },
   setUsername: function(e) {
-    var t = m(b(e));
+    var t = h(b(e));
     if (!this.cannotHaveUsernamePasswordPort()) {
       this.username = "";
-      for (var n = 0; n < t.length; n++) this.username += em(t[n], e_)
+      for (var n = 0; n < t.length; n++) this.username += eh(t[n], e_)
     }
   },
   getPassword: function() {
     return this.password
   },
   setPassword: function(e) {
-    var t = m(b(e));
+    var t = h(b(e));
     if (!this.cannotHaveUsernamePasswordPort()) {
       this.password = "";
-      for (var n = 0; n < t.length; n++) this.password += em(t[n], e_)
+      for (var n = 0; n < t.length; n++) this.password += eh(t[n], e_)
     }
   },
   getHost: function() {
@@ -523,7 +523,7 @@ eB.prototype = {
     return null === e ? "" : null === t ? eu(e) : eu(e) + ":" + t
   },
   setHost: function(e) {
-    this.cannotBeABaseURL || this.parse(e, ew)
+    this.cannotBeABaseURL || this.parse(e, eR)
   },
   getHostname: function() {
     var e = this.host;

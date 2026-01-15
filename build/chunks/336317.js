@@ -41,7 +41,7 @@ let r = function() {
   }
 
   function c(e) {
-    return e.replace(a, m)
+    return e.replace(a, h)
   }
 
   function u(e, t) {
@@ -58,13 +58,13 @@ let r = function() {
   }
 
   function p(e, t) {
-    for (var r, i, a, o, s, c, u, p, _, m, h, g, E, b = d(e, []), y = b.length; y--;) {
+    for (var r, i, a, o, s, c, u, p, _, h, m, g, E, b = d(e, []), y = b.length; y--;) {
       for (a = false, o = document.createDocumentFragment(), c = (s = b[y]).nodeValue, p = 0; u = n.exec(c);) {
-        if ((_ = u.index) !== p && o.appendChild(l(c.slice(p, _), true)), g = f(h = u[0]), p = _ + h.length, E = t.callback(g, t), g && E) {
-          for (i in (m = new Image).onerror = t.onerror, m.setAttribute("draggable", "false"), r = t.attributes(h, g)) r.hasOwnProperty(i) && 0 !== i.indexOf("on") && !m.hasAttribute(i) && m.setAttribute(i, r[i]);
-          m.className = t.className, m.alt = h, m.src = E, a = true, o.appendChild(m)
+        if ((_ = u.index) !== p && o.appendChild(l(c.slice(p, _), true)), g = f(m = u[0]), p = _ + m.length, E = t.callback(g, t), g && E) {
+          for (i in (h = new Image).onerror = t.onerror, h.setAttribute("draggable", "false"), r = t.attributes(m, g)) r.hasOwnProperty(i) && 0 !== i.indexOf("on") && !h.hasAttribute(i) && h.setAttribute(i, r[i]);
+          h.className = t.className, h.alt = m, h.src = E, a = true, o.appendChild(h)
         }
-        m || o.appendChild(l(h, false)), m = null
+        h || o.appendChild(l(m, false)), h = null
       }
       a && (p < c.length && o.appendChild(l(c.slice(p), true)), s.parentNode.replaceChild(o, s))
     }
@@ -84,11 +84,11 @@ let r = function() {
     })
   }
 
-  function m(e) {
+  function h(e) {
     return t[e]
   }
 
-  function h() {
+  function m() {
     return null
   }
 
@@ -106,7 +106,7 @@ let r = function() {
       callback: n
     }), ("string" == typeof t ? _ : p)(t, {
       callback: n.callback || u,
-      attributes: "function" == typeof n.attributes ? n.attributes : h,
+      attributes: "function" == typeof n.attributes ? n.attributes : m,
       base: "string" == typeof n.base ? n.base : e.base,
       ext: n.ext || e.ext,
       size: n.folder || g(n.size || e.size),

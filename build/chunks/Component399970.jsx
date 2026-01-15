@@ -53,17 +53,17 @@ function b(e) {
     u.mc(), v(""), C(null)
   }
 
-  function R(e) {
+  function w(e) {
     v(e)
   }
 
-  function w(e) {
+  function R(e) {
     C(e)
   }
 
   function D() {
     return null == b ? null : (0, r.jsx)("div", {
-      className: h.marginBottom20,
+      className: m.marginBottom20,
       children: (0, r.jsx)(l.M14, {
         type: "critical",
         children: b
@@ -73,7 +73,7 @@ function b(e) {
 
   function x() {
     return "localhost" !== T ? null : (0, r.jsx)("div", {
-      className: m.inputWrapper,
+      className: h.inputWrapper,
       children: (0, r.jsx)(l.oil, {
         required: true,
         label: _.intl.string(_.t.fF4zxq),
@@ -104,18 +104,18 @@ function b(e) {
       direction: f.Z.Direction.VERTICAL,
       align: f.Z.Align.START,
       children: [(0, r.jsx)("div", {
-        className: m.inputWrapper,
+        className: h.inputWrapper,
         children: (0, r.jsx)(l.oil, {
           label: _.intl.string(_.t.P6TzgI),
           required: true,
           value: O,
           maxLength: 19,
           error: A ? null : _.intl.string(_.t.gPNgKO),
-          onChange: R,
+          onChange: w,
           disabled: y
         })
       }), (0, r.jsx)("div", {
-        className: m.inputWrapper,
+        className: h.inputWrapper,
         children: (0, r.jsx)(s.y6, {
           label: _.intl.string(_.t["/GTqXG"]),
           isDisabled: !A || "" === O,
@@ -129,7 +129,7 @@ function b(e) {
             label: _.intl.string(_.t.uaksyW),
             key: "proxy"
           }],
-          onChange: w,
+          onChange: R,
           placeholder: "URL Origin Type"
         })
       }), x()]
