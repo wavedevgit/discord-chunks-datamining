@@ -328,6 +328,25 @@ let {
         }
       }
     },
+    BACKGROUND_MOD_NORMAL: {
+      category: "background",
+      [r.DARK]: {
+        raw: "PRIMARY_500",
+        opacity: .16
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_400",
+        opacity: .16
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_11",
+        opacity: .2
+      },
+      [r.DARKER]: {
+        raw: "PLUM_11",
+        opacity: .16
+      }
+    },
     BACKGROUND_MOD_STRONG: {
       category: "background",
       [r.DARK]: {

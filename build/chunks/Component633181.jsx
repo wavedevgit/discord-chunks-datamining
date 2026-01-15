@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk399606 = require("./399606.js"),
   Chunk616022 = require("./616022.js"),
   Chunk759479 = require("./759479.js"),
-  Chunk602667 = require("./602667.jsx");
+  Chunk602667 = require("./602667.js");
 let c = e => {
   let {
     applicationId: t,
