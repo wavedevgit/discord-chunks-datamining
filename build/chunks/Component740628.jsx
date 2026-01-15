@@ -47,13 +47,11 @@ function b(e) {
     user: t
   }) : n === x.oh.BOT_INFO ? (0, l.jsx)(d.Z, {
     user: t,
-    currentUser: i,
     displayProfile: o,
     guildId: r,
     onClose: c
   }) : (0, l.jsx)(f.Z, {
     user: t,
-    currentUser: i,
     displayProfile: o,
     onClose: c
   })

@@ -23,35 +23,33 @@ var Chunk442837 = require("./442837.js"),
 function v(e) {
   let {
     user: n,
-    currentUser: t,
-    displayProfile: v,
-    guildId: b,
-    onClose: g
-  } = e, I = (0, i.e7)([c.Z], () => {
+    displayProfile: t,
+    guildId: v,
+    onClose: b
+  } = e, g = (0, i.e7)([c.Z], () => {
     var e;
     return null == (e = c.Z.getUserProfile(n.id)) ? true : e.application
-  }), y = (0, i.e7)([r.Z, a.Z], () => r.Z.getChannel(a.Z.getChannelId()));
+  }), I = (0, i.e7)([r.Z, a.Z], () => r.Z.getChannel(a.Z.getChannelId()));
   return (0, l.jsxs)(o.zJl, {
     fade: true,
     className: j.scroller,
-    children: [(null == v ? true : v.bio) != null && (null == v ? true : v.bio) !== "" && (0, l.jsx)(d.Z, {
-      userBio: v.bio,
+    children: [(null == t ? true : t.bio) != null && (null == t ? true : t.bio) !== "" && (0, l.jsx)(d.Z, {
+      userBio: t.bio,
       setLineClamp: false
-    }), (null == I ? true : I.popularApplicationCommandIds) != null && null != y && (0, l.jsx)(s.Z, {
-      applicationId: I.id,
-      commandIds: I.popularApplicationCommandIds,
-      channel: y,
-      guildId: b,
-      onClick: g
-    }), (null == v ? true : v.guildId) != null && (0, l.jsx)(m.Z, {
-      user: n,
-      currentUser: t,
-      guildId: v.guildId
+    }), (null == g ? true : g.popularApplicationCommandIds) != null && null != I && (0, l.jsx)(s.Z, {
+      applicationId: g.id,
+      commandIds: g.popularApplicationCommandIds,
+      channel: I,
+      guildId: v,
+      onClick: b
+    }), (null == t ? true : t.guildId) != null && (0, l.jsx)(m.Z, {
+      userId: n.id,
+      guildId: t.guildId
     }), (0, l.jsx)(f.Z, {
       heading: h.intl.string(h.t["A//N4k"]),
       children: (0, l.jsx)(u.Z, {
         userId: n.id,
-        guildId: b,
+        guildId: v,
         tooltipDelay: x.vB
       })
     }), (0, l.jsx)(p.Z, {

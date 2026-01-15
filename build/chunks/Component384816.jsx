@@ -29,24 +29,22 @@ var Chunk442837 = require("./442837.js"),
 function O(e) {
   let {
     user: n,
-    currentUser: t,
-    displayProfile: O,
-    onClose: N
+    displayProfile: t,
+    onClose: O
   } = e, {
-    trackUserProfileAction: T
-  } = (0, u.KZ)(), A = (0, i.e7)([s.Z], () => s.Z.getGuildId()), P = (0, r.Y)({
+    trackUserProfileAction: N
+  } = (0, u.KZ)(), T = (0, i.e7)([s.Z], () => s.Z.getGuildId()), A = (0, r.Y)({
     userId: n.id
-  }), E = (0, i.e7)([d.Z], () => d.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), _ = (0, m.Z)(n.id), S = (0, f.Z)(n.id);
+  }), P = (0, i.e7)([d.Z], () => d.Z.hidePersonalInformation), E = (0, i.e7)([c.default], () => c.default.locale), _ = (0, m.Z)(n.id), C = (0, f.Z)(n.id);
   return (0, l.jsxs)(o.zJl, {
     fade: true,
     className: Z.scroller,
-    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && !E && (0, l.jsx)(p.Z, {
-      userBio: O.bio,
+    children: [(null == t ? true : t.bio) != null && (null == t ? true : t.bio) !== "" && !P && (0, l.jsx)(p.Z, {
+      userBio: t.bio,
       setLineClamp: false
-    }), (null == O ? true : O.guildId) != null && (0, l.jsx)(b.Z, {
-      user: n,
-      currentUser: t,
-      guildId: O.guildId
+    }), (null == t ? true : t.guildId) != null && (0, l.jsx)(b.Z, {
+      userId: n.id,
+      guildId: t.guildId
     }), n.isProvisional && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t.Iyka0U),
       headingIcon: (0, l.jsx)(o.Mgn, {
@@ -57,16 +55,16 @@ function O(e) {
       children: (0, l.jsx)(a.n, {
         userId: n.id
       })
-    }), P.length > 0 && (0, l.jsx)(v.Z, {
+    }), A.length > 0 && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t["Uv/eTx"]),
       children: (0, l.jsx)(h.Z, {
-        applicationIds: P
+        applicationIds: A
       })
     }), (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t.a6XYD9),
       children: (0, l.jsx)(j.Z, {
         userId: n.id,
-        guildId: null == O ? true : O.guildId,
+        guildId: null == t ? true : t.guildId,
         tooltipDelay: I.vB
       })
     }), _.length > 0 && (0, l.jsx)(v.Z, {
@@ -76,20 +74,20 @@ function O(e) {
         connectedAccounts: _,
         className: Z.connections,
         userId: n.id,
-        locale: C
+        locale: E
       })
-    }), S.length > 0 && (0, l.jsx)(v.Z, {
+    }), C.length > 0 && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t.PHjkRE),
-      children: S.map(e => (0, l.jsx)(x.tH, {
+      children: C.map(e => (0, l.jsx)(x.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
-        locale: C,
+        locale: E,
         onApplicationClicked: () => {
-          T({
+          N({
             action: "PRESS_APP_CONNECTION"
-          }), N()
+          }), O()
         },
-        selectedGuildId: null != A ? A : true
+        selectedGuildId: null != T ? T : true
       }, e.application.id))
     }), (0, l.jsx)(g.Z, {
       userId: n.id

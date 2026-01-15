@@ -27,8 +27,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
   let h = () => {
     let e = (0, r.jsx)("img", {
       ref: t,
-      alt: "",
-      "aria-label": c.intl.formatToPlainString(c.t["9+YWrE"], {
+      alt: c.intl.formatToPlainString(c.t["9+YWrE"], {
         name: d
       }),
       className: o()(u.roleIcon, n, {
@@ -40,8 +39,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
     });
     return (null != a && (e = (0, r.jsx)("img", {
       ref: t,
-      alt: "",
-      "aria-label": a.allNamesString,
+      alt: a.allNamesString,
       className: o()(u.roleIcon, n, {
         [u.clickable]: null != m
       }),

@@ -53,13 +53,13 @@ function Z(e) {
     openedAt: A,
     onHide: P,
     sourceAnalyticsLocations: E = []
-  } = e, C = t === v.ME ? true : t, _ = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
+  } = e, _ = t === v.ME ? true : t, C = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
     analyticsLocations: S
-  } = (0, a.ZP)([...E, _ ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
+  } = (0, a.ZP)([...E, C ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
-    guildId: C,
+    guildId: _,
     channelId: Z,
     messageId: O,
     roleId: N
@@ -68,9 +68,9 @@ function Z(e) {
     description: g.intl.string(g.t.kcuWva)
   }, {
     icon: o.owK,
-    description: g.intl.string(_ ? g.t.QxrDY1 : g.t.W6fjkS)
-  }], L = (0, m.ZP)(n.id, C), R = d.ZP.getName(null == L ? true : L.guildId, Z, n), M = g.intl.formatToPlainString(g.t.KRe1Fk, {
-    name: R
+    description: g.intl.string(C ? g.t.QxrDY1 : g.t.W6fjkS)
+  }], L = (0, m.ZP)(n.id, _), B = d.ZP.getName(null == L ? true : L.guildId, Z, n), M = g.intl.formatToPlainString(g.t.KRe1Fk, {
+    name: B
   });
   return (0, l.jsx)(a.Gt, {
     value: S,
@@ -96,7 +96,7 @@ function Z(e) {
             className: I.content,
             children: [(0, l.jsx)(p.Z, {
               user: n,
-              guildId: C
+              guildId: _
             }), (0, l.jsxs)("div", {
               className: I.textContainer,
               children: [(0, l.jsx)(o.Heading, {
@@ -106,8 +106,8 @@ function Z(e) {
               }), (0, l.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: g.intl.format(_ ? g.t.T7QiLn : g.t.MnEowy, {
-                  username: R
+                children: g.intl.format(C ? g.t.T7QiLn : g.t.MnEowy, {
+                  username: B
                 })
               })]
             }), (0, l.jsx)("div", {
@@ -128,10 +128,10 @@ function Z(e) {
               align: "center",
               children: [(0, l.jsx)(j.Z, {
                 size: "md",
-                isBlocked: _,
+                isBlocked: C,
                 onClick: () => {
                   P(), (0, f.pQ)(y({
-                    action: _ ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                    action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, w))
                 }

@@ -41,18 +41,18 @@ function Z(e) {
     stream: P
   } = (0, u.Z)(n.id), {
     voiceChannel: E,
-    voiceActivity: C
+    voiceActivity: _
   } = (0, f.Z)({
     userId: n.id,
     guildId: Z
-  }), _ = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), S = n.id === t.id, w = (0, i.e7)([s.Z, c.Z], () => {
+  }), C = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), S = n.id === t.id, w = (0, i.e7)([s.Z, c.Z], () => {
     let e = S ? s.Z.getStatus() : c.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), D = T.length > 0 || null != P, L = N && null == P && null == C && null != E, R = !w && (D || L), M = A.length > 0;
-  return R || M || !_ ? (0, l.jsxs)(o.zJl, {
+  }), D = T.length > 0 || null != P, L = N && null == P && null == _ && null != E, B = !w && (D || L), M = A.length > 0;
+  return B || M || !C ? (0, l.jsxs)(o.zJl, {
     className: I.scroller,
     fade: true,
-    children: [R ? (0, l.jsx)(m.Z, {
+    children: [B ? (0, l.jsx)(m.Z, {
       "aria-label": g.intl.string(g.t.J6STd9),
       children: (0, l.jsxs)("ul", {
         className: I.activityList,

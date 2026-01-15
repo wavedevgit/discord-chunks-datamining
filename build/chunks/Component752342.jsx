@@ -42,13 +42,13 @@ function w(e) {
     guildId: w,
     channelId: D,
     messageId: L,
-    roleId: R,
+    roleId: B,
     sessionId: M,
-    initialTabSection: B,
+    initialTabSection: R,
     initialScrollTarget: U,
     transitionState: k,
-    openedAt: G,
-    onClose: F,
+    openedAt: F,
+    onClose: G,
     sourceAnalyticsLocations: V = [],
     showGuildProfile: W
   } = e, z = w === E.ME ? true : w, H = (0, u.ZP)(n.id, W ? z : true), K = s.ZP.getName(z, D, n), Y = (0, c.Dt)(), {
@@ -60,19 +60,19 @@ function w(e) {
     guildId: z,
     channelId: D,
     messageId: L,
-    roleId: R
+    roleId: B
   }), X = (0, A.Z)(n), Q = (0, f.Z)({
     user: n,
     guildId: z,
     channelId: D,
     displayProfile: H,
-    onClose: F
+    onClose: G
   });
   return (0, l.jsx)(a.Gt, {
     value: J,
     children: (0, l.jsx)(d.Mt, {
       value: q,
-      openedAt: G,
+      openedAt: F,
       fetchStartedAt: null == H ? true : H.fetchStartedAt,
       fetchEndedAt: null == H ? true : H.fetchEndedAt,
       isLoaded: null == H ? true : H.isLoaded,
@@ -89,7 +89,7 @@ function w(e) {
             component: (0, l.jsx)(i.nn4, {
               children: (0, l.jsx)(i.H, {
                 id: Y,
-                children: _.intl.format(_.t.KRe1Fk, {
+                children: C.intl.format(C.t.KRe1Fk, {
                   name: K
                 })
               })
@@ -97,7 +97,7 @@ function w(e) {
             children: (0, l.jsxs)(v.Z, {
               user: n,
               displayProfile: H,
-              themeType: C.l.MODAL,
+              themeType: _.l.MODAL,
               children: [(0, l.jsx)(Z.Z, {
                 children: (0, l.jsx)(I.Z, {
                   user: n,
@@ -108,7 +108,7 @@ function w(e) {
                 children: [(0, l.jsx)(h.Z, {
                   user: n,
                   displayProfile: H,
-                  themeType: C.l.MODAL
+                  themeType: _.l.MODAL
                 }), (0, l.jsxs)("div", {
                   className: S.headerInner,
                   children: [(0, l.jsx)(p.Z, {
@@ -116,12 +116,12 @@ function w(e) {
                     displayProfile: H,
                     guildId: z,
                     channelId: D,
-                    themeType: C.l.MODAL
+                    themeType: _.l.MODAL
                   }), (0, l.jsx)(N.Z, {
                     user: n,
-                    themeType: C.l.MODAL,
+                    themeType: _.l.MODAL,
                     hasEntered: k === i.Dvm.ENTERED,
-                    onCloseProfile: F,
+                    onCloseProfile: G,
                     disableToolbar: true
                   }), (0, l.jsxs)("div", {
                     className: S.headerButtons,
@@ -161,8 +161,8 @@ function w(e) {
                   nicknameVariant: "heading-xl/bold",
                   tags: (0, l.jsx)(x.Z, {
                     displayProfile: H,
-                    themeType: C.l.MODAL,
-                    onClose: F
+                    themeType: _.l.MODAL,
+                    onClose: G
                   })
                 }), (0, l.jsx)(T.Z, {
                   user: n,
@@ -170,8 +170,8 @@ function w(e) {
                   displayProfile: H,
                   guildId: z,
                   items: X,
-                  initialSection: null != B ? B : P.oh.BOT_INFO,
-                  onClose: F
+                  initialSection: null != R ? R : P.oh.BOT_INFO,
+                  onClose: G
                 })]
               })]
             })

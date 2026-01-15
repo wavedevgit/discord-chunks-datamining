@@ -29,8 +29,8 @@ function j(e) {
     location: "useUserProfileModalV2TabBarItems"
   }), y = (0, s.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), Z = (0, f.Z)(n.id), O = (0, a.Z)(n.id), N = [], T = n.id === (null == t ? true : t.id), A = r.Z.getFirstWishlistId(n.id), P = null != A, E = P ? r.Z.getWishlistSettings(n.id, A) : null, C = (P ? i.Z.getWishlistItems(A) : []).length > 0, _ = Z.length > 0;
-  (T && I || _ && y) && N.push({
+  }), Z = (0, f.Z)(n.id), O = (0, a.Z)(n.id), N = [], T = n.id === (null == t ? true : t.id), A = r.Z.getFirstWishlistId(n.id), P = null != A, E = P ? r.Z.getWishlistSettings(n.id, A) : null, _ = (P ? i.Z.getWishlistItems(A) : []).length > 0, C = Z.length > 0;
+  (T && I || C && y) && N.push({
     text: h.intl.string(h.t.laViwx),
     section: x.oh.WIDGETS
   }), N.push({
@@ -40,7 +40,7 @@ function j(e) {
   let S = false === n.nsfwAllowed,
     w = o.Z.isFriend(n.id),
     D = (null == E ? true : E.visibility) === l.f.PUBLIC;
-  return (T || !T && C && D && O && (!S || S && w)) && N.push({
+  return (T || !T && _ && D && O && (!S || S && w)) && N.push({
     text: h.intl.string(h.t["7lZ31J"]),
     section: x.oh.WISHLIST
   }), n.id !== (null == t ? true : t.id) && g && (N.push({

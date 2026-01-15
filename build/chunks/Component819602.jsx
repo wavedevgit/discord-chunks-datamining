@@ -2,7 +2,7 @@
 /** chunk id: 819602, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   E3: () => P,
-  ZP: () => C,
+  ZP: () => _,
   tH: () => E
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js");
@@ -41,42 +41,42 @@ function P(e) {
     userId: N,
     className: P,
     showMetadata: E,
-    showInvisibleIcon: C
+    showInvisibleIcon: _
   } = e;
   null == E && (E = true);
-  let _ = null != (t = v.metadata) ? t : {},
-    S = E ? (0, p.FI)(_[O.PC.CREATED_AT], y) : null,
+  let C = null != (t = v.metadata) ? t : {},
+    S = E ? (0, p.FI)(C[O.PC.CREATED_AT], y) : null,
     w = (0, s.dQu)(r.Z.unsafe_rawColors.TWITTER).hex(),
     D = T.intl.string(T.t["6H6h1r"]);
   if (E) switch (v.type) {
     case Z.ABu.REDDIT:
-      i = (0, x.oP)(_);
+      i = (0, x.oP)(C);
       break;
     case Z.ABu.STEAM:
-      i = (0, x.Dq)(_);
+      i = (0, x.Dq)(C);
       break;
     case Z.ABu.BLUESKY:
     case Z.ABu.MASTODON:
     case Z.ABu.TWITTER:
-      i = (0, x.rJ)(_), "1" === _[O.PC.TWITTER_VERIFIED] && (d = w, D = T.intl.string(T.t.Jebrww));
+      i = (0, x.rJ)(C), "1" === C[O.PC.TWITTER_VERIFIED] && (d = w, D = T.intl.string(T.t.Jebrww));
       break;
     case Z.ABu.PAYPAL:
-      i = (0, x.li)(_);
+      i = (0, x.li)(C);
       break;
     case Z.ABu.EBAY:
-      i = (0, x.ul)(_);
+      i = (0, x.ul)(C);
       break;
     case Z.ABu.TIKTOK:
-      i = (0, x.hf)(_)
+      i = (0, x.hf)(C)
   }
   let L = u.Z.get((0, m.rR)(v.type)),
-    R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, v);
-  null != C && C ? j = (0, l.jsx)(s.kZF, {
+    B = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, v);
+  null != _ && _ ? j = (0, l.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(A.__invalid_connectedAccountOpenIconContainer, A.connectedAccountHideIcon)
-  }) : null != R && (j = (0, l.jsx)(s.eee, {
-    href: R,
+  }) : null != B && (j = (0, l.jsx)(s.eee, {
+    href: B,
     "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)) : "".concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)),
     onClick: e => {
       var n;
@@ -84,7 +84,7 @@ function P(e) {
         platform_type: n,
         other_user_id: N
       }), (0, I.q)({
-        href: R,
+        href: B,
         trusted: (null == L ? true : L.type) !== Z.ABu.DOMAIN
       }, e)
     },
@@ -94,11 +94,11 @@ function P(e) {
     })
   }));
   let M = (0, s.dQu)(r.Z.colors.INTERACTIVE_MUTED).hex(),
-    B = (0, s.dQu)(r.Z.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
+    R = (0, s.dQu)(r.Z.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
     U = v.verified ? (0, l.jsx)(h.Z, {
       className: A.connectedAccountVerifiedIcon,
       color: null != d ? d : M,
-      forcedIconColor: B,
+      forcedIconColor: R,
       size: 16,
       tooltipText: D
     }) : null;
@@ -219,7 +219,7 @@ function E(e) {
   })
 }
 
-function C(e) {
+function _(e) {
   let {
     connectedAccounts: n,
     locale: t,

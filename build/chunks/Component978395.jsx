@@ -141,8 +141,7 @@ function L(e) {
       user: t,
       onOpenProfile: k
     }), null != j && (0, r.jsx)(A.Z, {
-      user: t,
-      currentUser: n,
+      userId: t.id,
       guild: j
     })]
   })

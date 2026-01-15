@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 886794, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,20 +32,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk199912 = require("./199912.js"),
   Chunk9113 = require("./9113.js");
 
-function _(e) {
+function C(e) {
   var n;
   let {
     user: t,
-    guildId: _,
+    guildId: C,
     channelId: S,
     messageId: w,
     roleId: D,
     sessionId: L,
-    transitionState: R,
+    transitionState: B,
     openedAt: M,
-    onClose: B,
+    onClose: R,
     sourceAnalyticsLocations: U = []
-  } = e, k = _ === N.ME ? true : _, G = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), V = (0, c.Dt)(), {
+  } = e, k = C === N.ME ? true : C, F = (0, m.ZP)(t.id, k), G = u.ZP.getName(k, S, t), V = (0, c.Dt)(), {
     analyticsLocations: W
   } = (0, a.ZP)([...U, r.Z.USER_PROFILE_MODAL]), z = (0, f.ZB)({
     layout: "MODAL",
@@ -61,12 +61,12 @@ function _(e) {
     children: (0, l.jsx)(f.Mt, {
       value: z,
       openedAt: M,
-      fetchStartedAt: null == G ? true : G.fetchStartedAt,
-      fetchEndedAt: null == G ? true : G.fetchEndedAt,
-      isLoaded: null == G ? true : G.isLoaded,
+      fetchStartedAt: null == F ? true : F.fetchStartedAt,
+      fetchEndedAt: null == F ? true : F.fetchEndedAt,
+      isLoaded: null == F ? true : F.isLoaded,
       children: (0, l.jsxs)(o.Y0X, {
         "data-migration-pending": true,
-        transitionState: R,
+        transitionState: B,
         className: P.root,
         hideShadow: true,
         "aria-labelledby": V,
@@ -76,15 +76,15 @@ function _(e) {
             children: (0, l.jsx)(o.H, {
               id: V,
               children: A.intl.format(A.t.KRe1Fk, {
-                name: F
+                name: G
               })
             })
           }),
           children: (0, l.jsxs)(g.Z, {
             user: t,
-            displayProfile: G,
+            displayProfile: F,
             themeType: T.l.MODAL,
-            ref: (null == G ? true : G.profileEffect) != null ? H : true,
+            ref: (null == F ? true : F.profileEffect) != null ? H : true,
             children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(y.Z, {
                 user: t
@@ -92,13 +92,13 @@ function _(e) {
             }), (0, l.jsxs)("div", {
               children: [(0, l.jsx)(h.Z, {
                 user: t,
-                displayProfile: G,
+                displayProfile: F,
                 themeType: T.l.MODAL
               }), (0, l.jsx)("div", {
                 className: P.headerInner,
                 children: (0, l.jsx)(p.Z, {
                   user: t,
-                  displayProfile: G,
+                  displayProfile: F,
                   guildId: k,
                   channelId: S,
                   themeType: T.l.MODAL
@@ -110,23 +110,23 @@ function _(e) {
                 className: P.username,
                 user: t,
                 guildId: k,
-                nickname: F,
-                pronouns: null == G ? true : G.pronouns,
+                nickname: G,
+                pronouns: null == F ? true : F.pronouns,
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(x.Z, {
-                  displayProfile: G,
+                  displayProfile: F,
                   themeType: T.l.MODAL,
-                  onClose: B
+                  onClose: R
                 })
               }), (0, l.jsxs)("div", {
-                className: C.container,
+                className: _.container,
                 children: [(0, l.jsx)(o.njP, {
-                  className: C.tabBar,
+                  className: _.tabBar,
                   type: "top",
                   selectedItem: O.oh.BOT_INFO,
                   onItemSelect: N.dG4,
                   children: (0, l.jsx)(o.njP.Item, {
-                    className: C.tabBarItem,
+                    className: _.tabBarItem,
                     id: O.oh.BOT_INFO,
                     "aria-label": A.intl.string(A.t.jGoPJT),
                     children: (0, l.jsx)(o.Text, {
@@ -139,7 +139,7 @@ function _(e) {
                   className: E.scroller,
                   children: [(0, l.jsx)(j.Z, {
                     userId: t.id,
-                    userBio: null == G ? true : G.bio,
+                    userBio: null == F ? true : F.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(b.Z, {
                     heading: A.intl.string(A.t["A//N4k"]),
@@ -153,8 +153,8 @@ function _(e) {
               })]
             })]
           })
-        }), (null == G ? true : G.profileEffect) != null && (0, l.jsx)(d.Z, {
-          skuId: null == G || null == (n = G.profileEffect) ? true : n.skuId,
+        }), (null == F ? true : F.profileEffect) != null && (0, l.jsx)(d.Z, {
+          skuId: null == F || null == (n = F.profileEffect) ? true : n.skuId,
           isHovering: K
         })]
       })

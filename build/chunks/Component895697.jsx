@@ -101,8 +101,7 @@ function A(e) {
     }), null != N && (0, r.jsx)(_.Z, {
       heading: I.intl.string(I.t["LPJmL/"]),
       children: (0, r.jsx)(O.Z, {
-        user: t,
-        currentUser: n,
+        userId: t.id,
         guild: N
       })
     })]
