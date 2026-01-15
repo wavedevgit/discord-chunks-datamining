@@ -31,7 +31,7 @@ function C(e) {
   } = o.useContext(v.VideoQuestModalContext), [y, j] = o.useState(false), P = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), D = o.useRef(null == (t = O.userStatus) ? true : t.completedAt), [T, R] = o.useState(false), N = (0, d.w8)(O.config), {
     completedRatio: I,
     completedRatioDisplay: A
-  } = (0, u.I)(O), w = (null == (n = O.userStatus) ? true : n.completedAt) != null, k = (null == (C = O.userStatus) ? true : C.claimedAt) != null, L = E.intl.formatToPlainString(w && !k ? E.t.NRp4K4 : E.t["12IWP2"], {
+  } = (0, u.I)(O), w = (null == (n = O.userStatus) ? true : n.completedAt) != null, L = (null == (C = O.userStatus) ? true : C.claimedAt) != null, k = E.intl.formatToPlainString(w && !L ? E.t.NRp4K4 : E.t["12IWP2"], {
     rewardName: N
   });
   o.useEffect(() => {
@@ -55,7 +55,7 @@ function C(e) {
       shouldAnimate: T && !P
     }), (0, r.jsx)(i.u, {
       position: b,
-      text: L,
+      text: k,
       onTooltipShow: () => {
         j(true)
       },

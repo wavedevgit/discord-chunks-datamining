@@ -88,11 +88,12 @@ function m() {
 }
 require("./25251.js");
 let h = () => m(true),
-  g = e => {
-    let {
-      purchases: t
-    } = m(true);
-    return null != e ? t.get(e) : true
+  g = function(e) {
+    let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+      {
+        purchases: n
+      } = m(t);
+    return null != e ? n.get(e) : true
   };
 
 function E(e, t) {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => W
-}), require("./953529.js"), require("./388685.js");
+}), require("./953529.js"), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -230,7 +230,7 @@ let B = 3,
       O.Z.shouldFetchCatalogForGuild(n.id) && (0, y.Sn)(n.id), O.Z.shouldFetchPowerupsForGuild(n.id) && (0, y.BN)(n.id)
     }, [n.id]);
     let o = (0, I.Z)(n.id),
-      s = (null != o ? o : []).slice(0, B);
+      s = Array.from(null != o ? o : []).reverse().slice(0, B);
     return 0 === s.length ? null : (0, r.jsxs)("div", {
       ref: t,
       className: L.container,
@@ -239,7 +239,7 @@ let B = 3,
         children: x.intl.string(D.default.wjI18Q)
       }), (0, r.jsx)(c.xvT, {
         variant: "text-lg/medium",
-        children: x.intl.format(D.default.S562fn, {
+        children: x.intl.format(D.default.OdCzjA, {
           helpDeskArticle: b.Z.getArticleURL(R.BhN.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsx)("div", {

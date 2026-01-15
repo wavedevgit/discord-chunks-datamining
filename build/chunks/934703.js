@@ -170,7 +170,7 @@ function v(e) {
       questContentCTA: t,
       sourceQuestContent: g
     })
-  }, [C, g, O]), k = r.useCallback(e => {
+  }, [C, g, O]), L = r.useCallback(e => {
     if (null != t.current) {
       var r, o;
       b({
@@ -195,7 +195,7 @@ function v(e) {
         sourceQuestContent: g
       })
     }
-  }, [b, C, E, S, v, n, t, g]), L = r.useCallback((e, r) => {
+  }, [b, C, E, S, v, n, t, g]), k = r.useCallback((e, r) => {
     var o, i;
     if (null == t.current) return;
     let s = null == (o = t.current) ? true : o.error,
@@ -241,11 +241,11 @@ function v(e) {
       default:
         n = d.CY.HLS_OTHER_ERROR
     }
-    L(n, {
+    k(n, {
       errorDetails: t.details,
       fatal: t.fatal
     })
-  }, [h, L]);
+  }, [h, k]);
   r.useEffect(() => {
     if (null == n.current) return;
     let e = n.current;
@@ -287,9 +287,9 @@ function v(e) {
     trackQuestContentClick: w,
     trackQuestVideoBufferingStarted: I,
     trackQuestVideoBufferingEnded: A,
-    trackWatchTimeAnalytics: k,
+    trackWatchTimeAnalytics: L,
     trackQuestVideoFullscreenChanged: V,
-    trackQuestVideoError: L,
+    trackQuestVideoError: k,
     trackQuestVideoVolumeChanged: Z
   }
 }

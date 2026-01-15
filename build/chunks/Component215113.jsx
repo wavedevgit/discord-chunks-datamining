@@ -3,7 +3,7 @@
 require.r(exports), require.d(exports, {
   VideoQuestConfigContext: () => A,
   VideoQuestModalContext: () => I,
-  default: () => k
+  default: () => L
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -86,7 +86,7 @@ function w(e) {
     impressionRef: S,
     parentModalOpenStartClockTime: j,
     sourceQuestContent: A
-  } = e, w = (0, h.il)(u), k = (0, g.tP)(u), L = (0, p.aM)(), [M, V] = o.useState(w.progressSeconds), [Z, F] = o.useState(142), B = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
+  } = e, w = (0, h.il)(u), L = (0, g.tP)(u), k = (0, p.aM)(), [M, V] = o.useState(w.progressSeconds), [Z, F] = o.useState(142), B = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != B, "VideoQuestModal: videoTask must not be null");
   let U = (0, C.ZS)(B),
     q = "portrait" === U,
@@ -98,7 +98,7 @@ function w(e) {
       quest: u,
       onClose: a,
       sourceQuestContent: A,
-      impressionId: L
+      impressionId: k
     }),
     G = o.useMemo(() => ({
       quest: u,
@@ -154,7 +154,7 @@ function w(e) {
               className: T.contentFooterPortrait,
               children: [(0, r.jsxs)("div", {
                 className: T.portraitContentRow,
-                children: [k ? null : (0, r.jsx)(x.Z, {
+                children: [L ? null : (0, r.jsx)(x.Z, {
                   tooltipPosition: "top"
                 }), (0, r.jsx)(_.Z, {})]
               }), (0, r.jsxs)("div", {
@@ -173,7 +173,7 @@ function w(e) {
               className: T.contentFooter,
               children: [(0, r.jsxs)("div", {
                 className: T.contentFooterAdInfo,
-                children: [k ? null : (0, r.jsx)(x.Z, {
+                children: [L ? null : (0, r.jsx)(x.Z, {
                   tooltipPosition: "top"
                 }), (0, r.jsx)(_.Z, {})]
               }), (0, r.jsxs)("div", {
@@ -190,7 +190,7 @@ function w(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   var {
     questId: t,
     overrideQuest: n,

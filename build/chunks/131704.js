@@ -384,6 +384,9 @@ class eb extends eh {
   isOwner(e) {
     return this.ownerId === e
   }
+  isObfuscated() {
+    return this.hasFlag(g.zZ.OBFUSCATED)
+  }
   getGuildId() {
     return this.guild_id
   }

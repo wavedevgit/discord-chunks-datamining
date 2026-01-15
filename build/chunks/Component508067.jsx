@@ -53,10 +53,10 @@ function v(e) {
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [w]);
-  let k = e => {
+  let L = e => {
       j(e.clientX)
     },
-    L = o.useCallback(e => {
+    k = o.useCallback(e => {
       let {
         key: t
       } = e;
@@ -79,15 +79,15 @@ function v(e) {
         v && null != S && S(f(e.clientX, e.currentTarget.getBoundingClientRect(), h))
       },
       onMouseEnter: e => {
-        v && (null != w.current && I(w.current.getBoundingClientRect()), R(true), k(e))
+        v && (null != w.current && I(w.current.getBoundingClientRect()), R(true), L(e))
       },
       onMouseLeave: e => {
         v && (R(false), j(null))
       },
       onMouseMove: e => {
-        v && T && k(e)
+        v && T && L(e)
       },
-      onKeyDown: L,
+      onKeyDown: k,
       tabIndex: v ? true : false,
       focusProps: {
         offset: {

@@ -80,7 +80,8 @@ function _(e) {
         return (0, r.jsx)(v.Z, {
           variant: l.length > 0 ? v.B.WISHLIST : v.B.POPULAR,
           wishlistItem: t,
-          userIds: l,
+          userIdsForRecommendation: l,
+          userIdsForGifting: A,
           guildId: P.guild_id,
           channelId: P.id,
           contextContainerClassName: E.contextContainer

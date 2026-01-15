@@ -207,19 +207,19 @@ function N(e) {
     onClose: T,
     sourceQuestContent: R,
     quest: N
-  } = o.useContext(h.VideoQuestModalContext), I = (0, f.ZP)(e => e.fullScreenEnabled), A = (0, f.ZP)(e => e.setFullScreenEnabled), w = (0, d.aM)(), k = (0, S.e)({
+  } = o.useContext(h.VideoQuestModalContext), I = (0, f.ZP)(e => e.fullScreenEnabled), A = (0, f.ZP)(e => e.setFullScreenEnabled), w = (0, d.aM)(), L = (0, S.e)({
     quest: N,
     onClose: T,
     sourceQuestContent: R,
     impressionId: w
-  }), L = o.useCallback(e => {
+  }), k = o.useCallback(e => {
     if (I) {
       var t;
       let e = (0, c.fn)(null == (t = n.current) ? true : t.parentNode, n.current);
       null != e && (e.removeEventListener(c.NO, l), (0, c.Pr)(e), A(false), s(false))
     }
-    g(e, u.jZ.LEARN_MORE), k(e, u.jZ.OPEN_GAME_LINK)
-  }, [I, n, l, A, s, k, g]), {
+    g(e, u.jZ.LEARN_MORE), L(e, u.jZ.OPEN_GAME_LINK)
+  }, [I, n, l, A, s, L, g]), {
     title: M,
     subtitle: V
   } = {
@@ -248,7 +248,7 @@ function N(e) {
         title: M,
         subtitle: V,
         ctaBtnLabel: N.config.ctaConfig.buttonLabel,
-        onCTAClick: () => L(m.jn.VIDEO_MODAL),
+        onCTAClick: () => k(m.jn.VIDEO_MODAL),
         orientation: C
       })]
     })]
@@ -263,7 +263,7 @@ function N(e) {
       subtitle: V,
       icon: a.d4D,
       className: _.endScreenPanelRight,
-      onClick: () => L(m.jn.VIDEO_MODAL)
+      onClick: () => k(m.jn.VIDEO_MODAL)
     })]
   })
 }

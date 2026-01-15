@@ -163,8 +163,8 @@ function T(e) {
     size: I,
     handlePlaybackBtnClick: A,
     handleTranscriptBtnClick: w,
-    handleCaptionBtnClick: k,
-    handleFullScreenBtnClick: L,
+    handleCaptionBtnClick: L,
+    handleFullScreenBtnClick: k,
     handleSeekBackBtnClick: M,
     handleSeekForwardBtnClick: V,
     handleControlBarPendingInteraction: Z,
@@ -203,15 +203,15 @@ function T(e) {
         V();
         break;
       case C.Y1.CAPTION:
-        k();
+        L();
         break;
       case C.Y1.FULLSCREEN:
-        L();
+        k();
         break;
       case C.Y1.MUTE:
         ea()
     }
-  }, [k, L, A, M, V, ea, W]);
+  }, [L, k, A, M, V, ea, W]);
   o.useEffect(() => {
     null != eo.current && eo.current.focus()
   }, []), o.useEffect(() => (er({
@@ -338,7 +338,7 @@ function T(e) {
         animationTime: S,
         visible: _,
         active: Q,
-        onClick: k,
+        onClick: L,
         ariaLabel: b.intl.string(b.t.bDSZO1),
         tooltipLabel: b.intl.string(b.t.bDSZO1),
         shortcut: C.Y1.CAPTION,
@@ -347,7 +347,7 @@ function T(e) {
         iconComponent: G ? m.wvt : m.NpZ,
         animationTime: S,
         visible: _,
-        onClick: L,
+        onClick: k,
         ariaLabel: b.intl.string(b.t.vKZT5t),
         tooltipLabel: b.intl.string(b.t.vKZT5t),
         shortcut: C.Y1.FULLSCREEN,

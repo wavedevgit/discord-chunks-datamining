@@ -32,17 +32,17 @@ function x(e) {
   } = i.useContext(d.Sfi), N = (0, c.e7)([h.ZP], () => {
     var e, t, l, i;
     return (null == (e = n.emoji) ? true : e.id) != null && null != (i = null == (t = h.ZP.getCustomEmojiById(null == (l = n.emoji) ? true : l.id)) ? true : t.animated) && i
-  }), P = (0, f.Z)(t, 1e3), k = null == P || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => P[e])), E = y && !r && n.isUnseen, I = (0, d.q_F)({
+  }), P = (0, f.Z)(t, 1e3), E = null == P || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => P[e])), k = y && !r && n.isUnseen, I = (0, d.q_F)({
     transform: r || _.enabled ? "scale(1)" : "scale(0.7)",
     opacity: +!!r,
     config: {
       duration: 150
     }
-  }, "animate-always"), D = (0, d.dQu)(s.Z.colors.BORDER_SUBTLE), M = (0, d.dQu)(s.Z.unsafe_rawColors.BRAND_500), A = (0, d.q_F)({
+  }, "animate-always"), A = (0, d.dQu)(s.Z.colors.BORDER_SUBTLE), D = (0, d.dQu)(s.Z.unsafe_rawColors.BRAND_500), M = (0, d.q_F)({
     from: {
-      color: M.spring()
+      color: D.spring()
     },
-    color: D.spring({
+    color: A.spring({
       opacity: b ? .5 : .25
     }),
     config: {
@@ -77,8 +77,8 @@ function x(e) {
       [j.selected]: r,
       [j.pressed]: T
     }),
-    z = E ? {
-      borderColor: A.color
+    z = k ? {
+      borderColor: M.color
     } : {};
   return (0, l.jsx)(a.animated.div, {
     style: z,
@@ -115,17 +115,17 @@ function x(e) {
           height: 10,
           color: s.Z.unsafe_rawColors.WHITE.css
         })
-      }), R((e, t) => k > 0 && t && (0, l.jsx)(a.animated.div, {
+      }), R((e, t) => E > 0 && t && (0, l.jsx)(a.animated.div, {
         className: j.memberCount,
         style: e,
         children: (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "always-white",
           children: g.intl.format(g.t.EgKsZA, {
-            memberCount: k
+            memberCount: E
           })
         })
-      })), E && (0, l.jsx)(d.IGR, {
+      })), k && (0, l.jsx)(d.IGR, {
         color: s.Z.unsafe_rawColors.BRAND_260.css,
         text: g.intl.string(g.t.y2b7CA),
         className: j.newBadge

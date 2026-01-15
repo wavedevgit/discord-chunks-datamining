@@ -56,11 +56,12 @@ function y(e) {
     let e = w && 1 === a.length;
     return N.map(t => {
       var n, i;
-      let a = null != (i = null == (n = P[t.skuId]) ? true : n.filter(e => e.reason === f.g.WISHLIST && R.has(e.userId)).map(e => e.userId).filter(d.lm)) ? i : [];
+      let o = null != (i = null == (n = P[t.skuId]) ? true : n.filter(e => e.reason === f.g.WISHLIST && R.has(e.userId)).map(e => e.userId).filter(d.lm)) ? i : [];
       return (0, r.jsx)(m.Z, {
-        variant: e ? m.B.NO_ICON : a.length > 0 ? m.B.WISHLIST : m.B.POPULAR,
+        variant: e ? m.B.NO_ICON : o.length > 0 ? m.B.WISHLIST : m.B.POPULAR,
+        userIdsForRecommendation: o,
+        userIdsForGifting: a,
         wishlistItem: t,
-        userIds: a,
         guildId: v,
         channelId: S,
         cardSize: y,

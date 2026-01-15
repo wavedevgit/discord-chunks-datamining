@@ -39,18 +39,21 @@ function s(e) {
 function l(e) {
   let {
     isTargetedDisclosure: t,
-    gamePublisher: n,
-    gameTitle: r,
-    cosponsorName: i
+    isVideoQuest: n,
+    gamePublisher: r,
+    gameTitle: i,
+    cosponsorName: a
   } = e;
-  return t ? null == i ? o.intl.formatToPlainString(o.t.Piihy1, {
-    gamePublisher: n
+  return t ? null == a ? o.intl.formatToPlainString(o.t.Piihy1, {
+    gamePublisher: r
   }) : o.intl.formatToPlainString(o.t.DV47Gy, {
-    gamePublisher: n,
-    cosponsorName: i
+    gamePublisher: r,
+    cosponsorName: a
+  }) : n && "en-US" === o.intl.currentLocale ? o.intl.formatToPlainString(o.t.zDHY3s, {
+    gamePublisher: r
   }) : o.intl.formatToPlainString(o.t.euizJY, {
-    gamePublisher: n,
-    gameTitle: r
+    gamePublisher: r,
+    gameTitle: i
   })
 }
 

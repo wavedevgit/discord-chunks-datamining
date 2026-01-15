@@ -104,7 +104,7 @@ function et(e) {
       return t[e]
     }
     return ""
-  }, [n]), m = (0, A.Ew)(n.iconHash) ? null == r ? true : r.getIconURL(160, N.$k ? "webp" : "png") : N.ZP.getGameAssetURL({
+  }, [n]), m = (0, T.Ew)(n.iconHash) ? null == r ? true : r.getIconURL(160, N.$k ? "webp" : "png") : N.ZP.getGameAssetURL({
     id: n.applicationId,
     hash: n.iconHash,
     size: 160,
@@ -312,12 +312,12 @@ function er(e) {
     trackExternalAction: u
   } = e, {
     clientThemesClassName: f
-  } = (0, I.ZP)(), v = (0, m.e7)([E.default], () => E.default.locale), h = i.useMemo(() => (0, T.fP)(), []), j = (0, m.Wu)([M.Z], () => {
+  } = (0, I.ZP)(), v = (0, m.e7)([E.default], () => E.default.locale), h = i.useMemo(() => (0, A.fP)(), []), j = (0, m.Wu)([M.Z], () => {
     var e;
     return (null != (e = M.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
-  }), [b, S] = i.useState(null), C = (0, L.N)(n), [N, k] = i.useState(null), G = (0, y.q)(n), A = (0, m.e7)([P.Z], () => P.Z.getGame(n)), Z = null != (t = null == A ? true : A.name) ? t : null == G ? true : G.name, R = (e, t) => {
+  }), [b, S] = i.useState(null), C = (0, L.N)(n), [N, k] = i.useState(null), G = (0, y.q)(n), T = (0, m.e7)([P.Z], () => P.Z.getGame(n)), Z = null != (t = null == T ? true : T.name) ? t : null == G ? true : G.name, R = (e, t) => {
     var a;
-    (0, T.UE)({
+    (0, A.UE)({
       gameName: null != Z ? Z : "",
       applicationId: n,
       action: e,
@@ -327,19 +327,19 @@ function er(e) {
     })
   };
   return ((0, x.ZP)(() => {
-    (0, T.IS)({
+    (0, A.IS)({
       source: r,
       viewId: h,
       applicationId: n,
       gameName: null != Z ? Z : "",
       authorId: o,
-      profileType: T.j7.FullProfile
+      profileType: A.j7.FullProfile
     }), (0, O.Jn)()
   }), (0, y.Z)(j), i.useEffect(() => {
-    v.startsWith("en") || (null == A ? true : A.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([n], {
+    v.startsWith("en") || (null == T ? true : T.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([n], {
       forceFetch: true
     })
-  }, [n, null == A ? true : A.summaryLocalized, v]), i.useEffect(() => {
+  }, [n, null == T ? true : T.summaryLocalized, v]), i.useEffect(() => {
     (async () => {
       if (0 === j.length) {
         S(null);
@@ -361,7 +361,7 @@ function er(e) {
           time_played: n
         })
       });
-    (0, T.wz)({
+    (0, A.wz)({
       viewId: h,
       applicationId: n,
       gameName: null != Z ? Z : "",
@@ -370,46 +370,47 @@ function er(e) {
       similarGames: j.filter(D.z6).slice(0, 5),
       officialGuildId: null == N || null == (e = N.guild) ? true : e.id
     })
-  }), null == A || null == G) ? null : (0, a.jsxs)(g.Y0X, {
-    "data-migration-pending": true,
+  }), null == T || null == G) ? null : (0, a.jsx)(g.IX, {
     transitionState: s,
-    size: g.CgR.DYNAMIC,
-    className: l()(f, q.gameProfileModal),
-    parentComponent: "GameProfileModal",
-    children: [(0, a.jsxs)(g.Ttm, {
-      orientation: "auto",
-      children: [(0, a.jsx)(et, {
-        detectedGame: A,
-        application: G,
-        entries: C,
-        trackAction: R
-      }), (0, a.jsx)(g.y5t, {
-        children: (0, a.jsxs)("div", {
-          className: l()(q.content, q.mainContent),
-          children: [(0, a.jsx)(en, {
-            detectedGame: A,
-            application: G,
-            entries: C,
-            officialGuildInvite: N,
-            similarGames: j,
-            similarGamesError: b,
-            onClose: c,
-            viewId: h,
-            trackAction: R
-          }), (0, a.jsx)(ei, {
-            detectedGame: A,
-            onSetOfficialGuildInvite: k,
-            officialGuildInvite: N,
-            trackAction: R,
-            onClose: c,
-            appContext: d,
-            applicationId: n,
-            source: r,
-            trackExternalAction: u
-          })]
-        })
-      })]
-    }), (0, a.jsx)(eo, {})]
+    onClose: c,
+    size: "xl",
+    children: (0, a.jsxs)("div", {
+      className: l()(f, q.gameProfileModal),
+      children: [(0, a.jsxs)(g.Ttm, {
+        orientation: "auto",
+        children: [(0, a.jsx)(et, {
+          detectedGame: T,
+          application: G,
+          entries: C,
+          trackAction: R
+        }), (0, a.jsx)(g.y5t, {
+          children: (0, a.jsxs)("div", {
+            className: l()(q.content, q.mainContent),
+            children: [(0, a.jsx)(en, {
+              detectedGame: T,
+              application: G,
+              entries: C,
+              officialGuildInvite: N,
+              similarGames: j,
+              similarGamesError: b,
+              onClose: c,
+              viewId: h,
+              trackAction: R
+            }), (0, a.jsx)(ei, {
+              detectedGame: T,
+              onSetOfficialGuildInvite: k,
+              officialGuildInvite: N,
+              trackAction: R,
+              onClose: c,
+              appContext: d,
+              applicationId: n,
+              source: r,
+              trackExternalAction: u
+            })]
+          })
+        })]
+      }), (0, a.jsx)(eo, {})]
+    })
   })
 }
 
