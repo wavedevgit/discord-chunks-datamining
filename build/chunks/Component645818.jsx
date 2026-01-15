@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 645818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ let g = (0, Chunk481060.GSL)(Chunk863969.Z),
     [Chunk981631.TzF.CONFLICT]: g,
     [Chunk981631.TzF.ERROR]: g
   });
-class _ extends Chunk473749.PureComponent {
+class E extends Chunk473749.PureComponent {
   componentDidMount() {
     this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
   }
@@ -109,11 +109,11 @@ class _ extends Chunk473749.PureComponent {
       }(this, "_doneTimer", new a.V7)
   }
 }
-let E = Chunk442837.ZP.connectStores([Chunk293245.Z], e => {
+let _ = Chunk442837.ZP.connectStores([Chunk293245.Z], e => {
   let {
     libraryApplication: t
   } = e;
   return {
     cloudSyncState: c.Z.getState(t.id, t.branchId)
   }
-})(_)
+})(E)

@@ -25,7 +25,7 @@ function h(e) {
     isFocused: m
   } = e, {
     analyticsLocations: b
-  } = (0, a.ZP)(), _ = e => {
+  } = (0, a.ZP)(), E = e => {
     null == e || e.stopPropagation(), l.Z.addRelationship({
       userId: t.id,
       context: {
@@ -34,7 +34,7 @@ function h(e) {
       type: true,
       fromFriendSuggestion: true
     })
-  }, E = e => {
+  }, _ = e => {
     null == e || e.stopPropagation(), o.Z.ignore(t.id)
   }, O = h === p.Skl.OFFLINE ? p.Skl.UNKNOWN : h;
   return (0, r.jsx)(u.Z, {
@@ -50,13 +50,13 @@ function h(e) {
           icon: i.dz2,
           actionType: c.Z.ActionTypes.ACCEPT,
           tooltip: f.intl.string(f.t.Zcibdf),
-          onClick: _,
+          onClick: E,
           shouldHighlight: e
         }), (0, r.jsx)(c.Z, {
           icon: i.Dio,
           actionType: c.Z.ActionTypes.DENY,
           tooltip: f.intl.string(f.t.xuio0C),
-          onClick: E,
+          onClick: _,
           shouldHighlight: e
         })]
       });

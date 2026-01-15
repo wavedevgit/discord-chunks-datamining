@@ -306,7 +306,7 @@ class ef extends Chunk473749.PureComponent {
         children: es.intl.format(es.t.tluX4B, {
           name: n.name
         })
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(K.Z, {
+      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(K.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
@@ -421,10 +421,10 @@ class ef extends Chunk473749.PureComponent {
       className: ec.listingWrapper,
       children: [(0, r.jsx)(N.yY, {
         location: e.name
-      }), this.renderJsonLD(), (0, r.jsx)(_.Z, {
+      }), this.renderJsonLD(), (0, r.jsx)(E.Z, {
         section: ea.jXE.NAVIGATION,
         children: this.renderHeader(e, t)
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(E.Z, {
         section: ea.jXE.BODY,
         children: this.renderListing()
       })]
@@ -569,7 +569,7 @@ class ef extends Chunk473749.PureComponent {
         pageSize: n,
         isFocused: i
       } = this.props;
-      return (0, r.jsx)(_.Z, {
+      return (0, r.jsx)(E.Z, {
         section: ea.jXE.HERO,
         children: (0, r.jsx)(J.Z, {
           pageSize: n,

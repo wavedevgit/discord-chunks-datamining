@@ -48,7 +48,7 @@ function N(e) {
     popoutProps: s,
     ref: h,
     focusSectionProps: b
-  } = e, [O, v] = i.useState(false), N = (0, _.D)(), j = o || N, x = o || j, {
+  } = e, [O, v] = i.useState(false), N = (0, E.D)(), j = o || N, x = o || j, {
     backForwardButtons: P,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -61,7 +61,7 @@ function N(e) {
   }), {
     badge: L,
     badgeType: R
-  } = (0, E.h6)({
+  } = (0, _.h6)({
     isSelected: j
   }), D = (0, m.isDesktop)() && P, M = (0, g.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {
@@ -141,7 +141,7 @@ function j() {
     notificationCenterVariant: n
   } = (0, b.pN)({
     location: "NotificationsInboxButton"
-  }), l = (0, s.e7)([h.Z], () => h.Z.getChannelId()), a = i.useMemo(() => v.Z5c.CHANNEL(v.STv, null != l ? l : true), [l]), c = (0, E.mv)();
+  }), l = (0, s.e7)([h.Z], () => h.Z.getChannelId()), a = i.useMemo(() => v.Z5c.CHANNEL(v.STv, null != l ? l : true), [l]), c = (0, _.mv)();
   return n === b.jP.SIDEBAR ? (0, r.jsx)(N, {
     onClick: () => {
       c(), (0, o.uL)(a)

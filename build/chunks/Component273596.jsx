@@ -98,7 +98,7 @@ function x(e) {
             }),
             children: [!R && (0, r.jsxs)("div", {
               className: C.headingFilters,
-              children: [(0, r.jsx)(E.Z, {
+              children: [(0, r.jsx)(_.Z, {
                 loadId: t
               }), (0, r.jsx)(v.Z, {
                 loadId: t
@@ -231,7 +231,7 @@ function x(e) {
             children: (0, r.jsx)(v.Z, {
               loadId: t
             })
-          }), (0, r.jsx)(_.Z, {
+          }), (0, r.jsx)(E.Z, {
             loadId: t
           })]
         })

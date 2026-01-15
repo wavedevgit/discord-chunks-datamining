@@ -94,7 +94,7 @@ let N = Chunk473749.memo(function(e) {
     }),
     disableInteraction: k,
     childrenExecutedCommand: (0, O.Z)(N, Z, false),
-    childrenHeader: (0, _.Z)({
+    childrenHeader: (0, E.Z)({
       message: N,
       channel: Z,
       author: z,
@@ -108,7 +108,7 @@ let N = Chunk473749.memo(function(e) {
     }),
     childrenAccessories: e.hideAccessories ? true : (0, m.Q)(e, B, V),
     childrenMessageContent: (0, b.Z)(e, H),
-    childrenSystemMessage: (0, E.Z)((i = T({}, e), l = l = {
+    childrenSystemMessage: (0, _.Z)((i = T({}, e), l = l = {
       disableInteraction: k
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);

@@ -28,7 +28,7 @@ let O = {
     },
     handler() {
       let e = f.Z.isVideoEnabled();
-      null != (0, b.Z)() && (e ? a.Z.setVideoEnabled(false) : (0, d.Z)(() => a.Z.setVideoEnabled(true), E.IlC.APP))
+      null != (0, b.Z)() && (e ? a.Z.setVideoEnabled(false) : (0, d.Z)(() => a.Z.setVideoEnabled(true), _.IlC.APP))
     }
   },
   [Chunk981631.Etm.TOGGLE_SCREENSHARE]: {

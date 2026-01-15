@@ -51,7 +51,7 @@ function Z(e) {
   }, [i]), {
     avatarSrc: f,
     eventHandlers: g
-  } = (0, E.Z)({
+  } = (0, _.Z)({
     userId: i.id,
     size: u.EFr.SIZE_32,
     animateOnHover: true
@@ -91,7 +91,7 @@ function Z(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, _ = 0 === l, v = _ ? u.YqE : a ? u.XcD : true, y = _ ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
+  }, E = 0 === l, v = E ? u.YqE : a ? u.XcD : true, y = E ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
   return (0, r.jsx)(u.P3F, {
     className: A.frequentFriendAvatarButton,
     onClick: b,
@@ -108,7 +108,7 @@ function Z(e) {
       isMobile: c && !d,
       size: u.EFr.SIZE_32,
       CutoutIcon: v,
-      avatarTooltipAsset: _ ? "\uD83D\uDD25" : a ? "❄️" : true,
+      avatarTooltipAsset: E ? "\uD83D\uDD25" : a ? "❄️" : true,
       avatarTooltipText: y,
       statusTooltip: true,
       statusTooltipDelay: 50,
@@ -121,7 +121,7 @@ function w() {
   let {
     enabled: e
   } = (0, j.Q)("frequent_friends_row"), t = function() {
-    let e = (0, s.Wu)([_.Z], () => [..._.Z.getUserAffinities()].sort((e, t) => _.Z.compare(e.otherUserId, t.otherUserId))),
+    let e = (0, s.Wu)([E.Z], () => [...E.Z.getUserAffinities()].sort((e, t) => E.Z.compare(e.otherUserId, t.otherUserId))),
       t = (0, s.Wu)([S.default, y.Z], () => {
         let t = e.map(e => e.otherUserId),
           n = [];
@@ -149,7 +149,7 @@ function w() {
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), m = i.useRef(null), E = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), I = i.useCallback(() => {
+  }), m = i.useRef(null), _ = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), I = i.useCallback(() => {
     var e;
     let t = null == (e = m.current) ? true : e.getScrollerNode();
     null != t && h({
@@ -176,7 +176,7 @@ function w() {
   let {
     frequentFriends: L,
     showCompetitiveSpot: R
-  } = t, D = (E === o.S.AU || E === o.S.GB) && !O, M = null != E && o.M.EU_COUNTRIES.has(E) && !l, k = !D && !M && null != E && R, U = p.scrollWidth > p.clientWidth, G = p.scrollLeft > 0, H = p.scrollLeft < p.scrollWidth - p.clientWidth - 2;
+  } = t, D = (_ === o.S.AU || _ === o.S.GB) && !O, M = null != _ && o.M.EU_COUNTRIES.has(_) && !l, k = !D && !M && null != _ && R, U = p.scrollWidth > p.clientWidth, G = p.scrollLeft > 0, H = p.scrollLeft < p.scrollWidth - p.clientWidth - 2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: A.frequentFriendsRow,

@@ -495,6 +495,7 @@ function H(e) {
           animate: true !== e$.current && !eO,
           interactionEnabled: eJ && eV,
           backgroundColor: tw ? true : "rgba(0, 0, 0, 0.0)",
+          playerState: em,
           preloadedBuffers: tw ? eD : true,
           duration: null != (H = null == (u = ez.current) ? true : u.duration) ? H : 1,
           isFullyVisible: tw && eV,

@@ -111,7 +111,7 @@ function el() {
     m = i.useCallback(() => {
       d(n.map(e => e.channel.id))
     }, [n, d]),
-    _ = i.useCallback(e => {
+    E = i.useCallback(e => {
       var t, i;
       let {
         row: o
@@ -127,7 +127,7 @@ function el() {
         hasSingleMessageRequest: l
       }, u)
     }, [l, n, g]),
-    E = i.useCallback(() => (0, r.jsxs)(O.Z, {
+    _ = i.useCallback(() => (0, r.jsxs)(O.Z, {
       className: et.sectionTitle,
       children: [t > 0 ? ee.intl.formatToPlainString(ee.t.rA4iWY, {
         count: t
@@ -184,8 +184,8 @@ function el() {
           paddingBottom: 24,
           sectionHeight: Q.oi,
           rowHeight: Q.WN,
-          renderSection: E,
-          renderRow: _,
+          renderSection: _,
+          renderRow: E,
           sections: [n.length],
           chunkSize: 30,
           fade: true
@@ -202,11 +202,11 @@ function ea(e) {
   } = e, i = (0, c.e7)([L.ZP], () => L.ZP.getSidebarState(L.uZ)), l = (0, c.e7)([R.Z], () => R.Z.getChannel(null == i ? true : i.channelId));
   if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - J.R7I;
-  return (0, r.jsx)(_.Z, {
-    sidebarType: _.y.MessageRequestSidebar,
+  return (0, r.jsx)(E.Z, {
+    sidebarType: E.y.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
-    children: (0, r.jsx)(E.Z, {
+    children: (0, r.jsx)(_.Z, {
       channel: l,
       baseChannelId: L.uZ
     })
@@ -290,12 +290,12 @@ let ec = (0, Chunk112724.Z)(function(e) {
     }),
     h = null == g ? true : g.channelId,
     b = null != g,
-    _ = (0, U.T)(h),
-    E = (0, k.J)(h),
+    E = (0, U.T)(h),
+    _ = (0, k.J)(h),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != h && !_ && E && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(L.uZ))
-  }, [h, E, b, _]);
+    null != h && !E && _ && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(L.uZ))
+  }, [h, _, b, E]);
   let [I, y] = i.useState(Q.pS.REQUESTS), A = e => {
     y(e)
   };

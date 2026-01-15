@@ -36,11 +36,11 @@ function b(e, t) {
   null != e.setHandshakeComplete ? e.setHandshakeComplete(t) : e._didHandshake = t
 }
 
-function _(e) {
+function E(e) {
   return null != e.getHandshakeComplete ? e.getHandshakeComplete() : e._didHandshake
 }
 
-function E(e) {
+function _(e) {
   return new Promise((t, n) => {
     "string" == typeof e && (e = g.net.createConnection(e));
     let r = new v(e, "json");
@@ -130,7 +130,7 @@ class v extends Chunk76238.Z {
         this.handleHandshake(e, n), e.emit("handshake", n);
         break;
       case m.FRAME:
-        if (!_(e)) throw Error("did not handshake");
+        if (!E(e)) throw Error("did not handshake");
         e.emit("request", n);
         break;
       case m.CLOSE:
@@ -141,7 +141,7 @@ class v extends Chunk76238.Z {
     }
   }
   handleHandshake(e, t) {
-    if (_(e)) throw Error("already did handshake");
+    if (E(e)) throw Error("already did handshake");
     this.clientId = t.client_id, this.checkRpcVersion(+t.v), b(e, true)
   }
   constructor(e, t) {
@@ -194,7 +194,7 @@ class I extends Chunk836560.EventEmitter {
   constructor() {
     super();
     let e = g.net.createServer(e => this.handleConnection(e));
-    e.on("error", e => h.error("Error: ".concat(e.message))), g.getAvailableSocket(E).then(t => {
+    e.on("error", e => h.error("Error: ".concat(e.message))), g.getAvailableSocket(_).then(t => {
       e.listen(t, () => {
         ("function" == typeof e.listening ? e.listening() : e.listening) && h.info("Starting on ".concat(e.address()))
       })

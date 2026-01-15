@@ -56,7 +56,7 @@ var Chunk54381 = require("./54381.js"),
 let X = e => {
     let {
       selected: t
-    } = e, n = (0, o.e7)([_.default], () => _.default.getCurrentUser()), r = (0, o.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, P.N)(), a = (0, C.Vi)(), s = (0, z.V)(), c = (0, I.Qo)(n, r), u = (0, o.e7)([y.Z], () => y.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, o.e7)([E.default], () => E.default.getCurrentUser()), r = (0, o.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, P.N)(), a = (0, C.Vi)(), s = (0, z.V)(), c = (0, I.Qo)(n, r), u = (0, o.e7)([y.Z], () => y.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   $ = e => {
@@ -82,8 +82,8 @@ let X = e => {
         }
         return i
       }(e, ["selected", "nitroTabButtonRef", "route", "locationState"]);
-    let eo = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
-      es = (0, o.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()),
+    let eo = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
+      es = (0, o.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
       {
         variant: ec,
         hasNitroTabBadgeOfferReminder: eu
@@ -95,8 +95,8 @@ let X = e => {
       eh = (0, P.N)(),
       em = (0, x.$)(),
       eb = (0, S.W)(),
-      e_ = (0, C.Vi)(),
-      eE = (0, k.HI)({
+      eE = (0, C.Vi)(),
+      e_ = (0, k.HI)({
         trialOffer: eg
       }),
       eO = (0, w.QL)(),
@@ -129,7 +129,7 @@ let X = e => {
       }),
       ek = [],
       eU = [];
-    (0, g.Kl)() && ((ej || eT && !eD) && ek.push(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), ey && ek.push(s.z.RECURRING_3P_PROMOTION_POPOVER), e_ && ek.push(s.z.BOGO_2025_NITRO_TAB_BADGE), eR && ek.push(s.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), eb && ek.push(s.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eM && ek.push(s.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
+    (0, g.Kl)() && ((ej || eT && !eD) && ek.push(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), ey && ek.push(s.z.RECURRING_3P_PROMOTION_POPOVER), eE && ek.push(s.z.BOGO_2025_NITRO_TAB_BADGE), eR && ek.push(s.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), eb && ek.push(s.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eM && ek.push(s.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
     let [eG, eH] = (0, m.US)(ek, true, true);
     ex && eU.push(s.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eO && eU.push(s.z.PREMIUM_GROUP_POPOVER);
     let [eB, eV] = (0, m.US)(eU, true, true), eF = (0, Z.H)(a.I.PREMIUM_TAB), [ez, eY] = (0, m.TE)(null != eF && "premiumTab" === eF.properties.properties.oneofKind ? s.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (et = null == eF ? true : eF.promotionId) ? et : "", true, true);
@@ -156,8 +156,8 @@ let X = e => {
       acknowledgedBadgeCopy: eF.properties.properties.premiumTab.acknowledgedBadgeLabel,
       isDismissed: ez !== s.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE
     }), y = 9;
-    else if (e_) n = (0, r.jsx)(R.Z, {}), y = 0;
-    else if (eE) {
+    else if (eE) n = (0, r.jsx)(R.Z, {}), y = 0;
+    else if (e_) {
       let e = (0, k.$q)();
       n = (0, r.jsx)(H._y, {
         isTabSelected: en,

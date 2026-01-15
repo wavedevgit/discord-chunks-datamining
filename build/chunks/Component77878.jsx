@@ -19,8 +19,8 @@ let s = "1",
   h = "2",
   m = "3",
   b = "4",
-  _ = "5",
-  E = {
+  E = "5",
+  _ = {
     [Chunk981631.aIt.ESRB]: {
       [s]: Chunk136569.esrbEveryone,
       [c]: Chunk136569.esrbEveryoneTenPlus,
@@ -34,7 +34,7 @@ let s = "1",
       [h]: Chunk136569.pegiSeven,
       [m]: Chunk136569.pegiTwelve,
       [b]: Chunk136569.pegiSixteen,
-      [_]: Chunk136569.pegiEighteen
+      [E]: Chunk136569.pegiEighteen
     }
   },
   O = e => {
@@ -42,7 +42,7 @@ let s = "1",
       agency: t,
       rating: n,
       className: i
-    } = e, a = E[t][n];
+    } = e, a = _[t][n];
     return null == a ? null : (0, r.jsx)("div", {
       className: l()(o.contentRating, a, i)
     })

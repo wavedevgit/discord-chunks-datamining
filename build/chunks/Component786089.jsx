@@ -53,7 +53,7 @@ let j = (0, Chunk473749.memo)(function(e) {
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
     et = (0, i.useMemo)(() => (0, v.fh)(A, v.eC.REWARD), [A]),
     en = Z ? V + 8 : 0,
-    er = (0, _.mH)(E.jn.TROPHY_CASE_CARD),
+    er = (0, E.mH)(_.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
       row_index: el

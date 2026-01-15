@@ -171,9 +171,9 @@ function F(e, t, n) {
   if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: S.ZP.getName(e, t, c),
-    mute: E.Z.isLocalMute(c.id),
-    volume: E.Z.getLocalVolume(c.id),
-    pan: E.Z.getLocalPan(c.id),
+    mute: _.Z.isLocalMute(c.id),
+    volume: _.Z.getLocalVolume(c.id),
+    pan: _.Z.getLocalPan(c.id),
     voice_state: {
       mute: r,
       deaf: i,
@@ -219,7 +219,7 @@ function W(e) {
 }
 
 function K(e, t, n) {
-  let r = _.Z.getGuild(e.getGuildId());
+  let r = E.Z.getGuild(e.getGuildId());
   return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > false
 }
 
@@ -294,7 +294,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  let t = E.Z.getSettings(),
+  let t = _.Z.getSettings(),
     n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
       id: e.id,
       name: e.name
@@ -302,12 +302,12 @@ function et(e) {
     r = e(t);
   return {
     input: {
-      available_devices: n(E.Z.getInputDevices()),
+      available_devices: n(_.Z.getInputDevices()),
       device_id: t.inputDeviceId,
       volume: t.inputVolume
     },
     output: {
-      available_devices: n(E.Z.getOutputDevices()),
+      available_devices: n(_.Z.getOutputDevices()),
       device_id: t.outputDeviceId,
       volume: t.outputVolume
     },
@@ -329,7 +329,7 @@ function et(e) {
 }
 
 function en(e, t) {
-  let n = E.Z.getSettings(e),
+  let n = _.Z.getSettings(e),
     r = t(n);
   return {
     input_mode: {

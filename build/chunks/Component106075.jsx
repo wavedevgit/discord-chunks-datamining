@@ -122,11 +122,11 @@ function C() {
         state: L ? v.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: k
       })]
-    }), L ? (0, r.jsx)(E.Z, {
+    }), L ? (0, r.jsx)(_.Z, {
       loadId: e.current,
       onGuildCardClick: z,
       onGuildCardSeen: F
-    }) : (0, r.jsx)(_.Z, {
+    }) : (0, r.jsx)(E.Z, {
       selectedTab: T,
       onScroll: t,
       onGuildCardClick: z,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 703016, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Y
+  Z: () => W
 }), require("./704826.js"), require("./35282.js"), require("./290780.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -38,7 +38,7 @@ let A = [],
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
-  let l = _.Z.getGuild(n),
+  let l = E.Z.getGuild(n),
     a = e.replace(R, P.intl.string(P.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
@@ -117,15 +117,15 @@ function V(e) {
     message: s,
     optimistic: c
   } = e;
-  if (c || E.Z.isSelfDeaf()) returnfalse;
+  if (c || _.Z.isSelfDeaf()) returnfalse;
   let u = h.Z.getChannel(o);
   if (null == u) returnfalse;
   let d = I.Z.getChannelId(),
     b = g.ZP.getCurrentSidebarChannelId(d),
-    _ = o === d || o === b,
-    C = p.OW.getSetting() && s.tts && _,
+    E = o === d || o === b,
+    C = p.OW.getSetting() && s.tts && E,
     T = O.Z.getTTSType(),
-    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === x.PrB.ALL_CHANNELS || T === x.PrB.SELECTED_CHANNEL && _);
+    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === x.PrB.ALL_CHANNELS || T === x.PrB.SELECTED_CHANNEL && E);
   if ((C || N) && !v.Z.isBlockedOrIgnoredForMessage(s)) {
     if (A.indexOf(s.id) >= 0) returnfalse;
     A.unshift(s.id) > 10 && A.pop();
@@ -148,10 +148,17 @@ function F(e) {
 }
 
 function z() {
-  E.Z.isSelfDeaf() && o.M9()
+  _.Z.isSelfDeaf() && o.M9()
 }
-let Y = {
+
+function Y(e) {
+  let {
+    channelId: t
+  } = e, n = N.Z.currentMessage;
+  null != n && n.channelId !== t && (0, T.NB)()
+}
+let W = {
   init() {
-    l.Z.subscribe("SPEAK_TEXT", G), l.Z.subscribe("SPEAK_MESSAGE", B), l.Z.subscribe("STOP_SPEAKING", H), l.Z.subscribe("MESSAGE_CREATE", V), l.Z.subscribe("MESSAGE_DELETE", F), l.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), l.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, a.Ql)(M)
+    l.Z.subscribe("SPEAK_TEXT", G), l.Z.subscribe("SPEAK_MESSAGE", B), l.Z.subscribe("STOP_SPEAKING", H), l.Z.subscribe("MESSAGE_CREATE", V), l.Z.subscribe("MESSAGE_DELETE", F), l.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), l.Z.subscribe("CHANNEL_SELECT", Y), l.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, a.Ql)(M)
   }
 }

@@ -38,19 +38,19 @@ function j(e) {
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
     selectedChannelId: j,
     selectedVoiceChannelId: x
-  } = (0, o.cj)([_.Z], () => ({
-    selectedChannelId: _.Z.getChannelId(),
-    selectedVoiceChannelId: _.Z.getVoiceChannelId()
+  } = (0, o.cj)([E.Z], () => ({
+    selectedChannelId: E.Z.getChannelId(),
+    selectedVoiceChannelId: E.Z.getVoiceChannelId()
   })), P = (0, o.e7)([g.Z], () => null != x && j === x && g.Z.getChatOpen(x), [j, x]), A = (0, o.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
-    E.Z.updateFrameLayoutMode({
+    _.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
       layoutMode: I.U.PIP
     })
   }, [t.applicationId]), k = i.useCallback(() => {
-    E.Z.stopFrame({
+    _.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -66,7 +66,7 @@ function j(e) {
     return e.observe(L.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
+      null == w.current || w.current.contains(e.target) || l || _.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
         layoutMode: I.U.PIP
       })

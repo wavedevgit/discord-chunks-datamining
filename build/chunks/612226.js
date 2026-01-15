@@ -312,6 +312,10 @@ function Y() {
       binds: ["f"],
       group: "MESSAGE"
     }, {
+      description: G.intl.string(G.t.yGLjXF),
+      binds: ["s"],
+      group: "MESSAGE"
+    }, {
       description: G.intl.string(G.t.JrGD7E),
       binds: ["mod+c"],
       group: "MESSAGE"

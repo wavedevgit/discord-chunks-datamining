@@ -31,16 +31,16 @@ function O() {
     children: (0, r.jsx)(c.Z, {
       section: b.jXE.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
-        className: l()(E.container, "refresh-active-now"),
+        className: l()(_.container, "refresh-active-now"),
         "aria-labelledby": n,
         children: (0, r.jsx)(s.Ttm, {
-          className: E.scroller,
+          className: _.scroller,
           children: (0, r.jsxs)("div", {
             children: [(0, r.jsx)(s.Heading, {
               variant: "heading-lg/semibold",
-              className: E.header,
+              className: _.header,
               id: n,
-              children: _.intl.string(_.t.F4Zggw)
+              children: E.intl.string(E.t.F4Zggw)
             }), (0, r.jsx)(f.ZP, {
               contentTypes: t,
               children: e => {
@@ -49,7 +49,7 @@ function O() {
                   markAsDismissed: n
                 } = e;
                 if (t === o.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.Z, {
-                  className: E.__invalid_consentCard,
+                  className: _.__invalid_consentCard,
                   markAsDismissed: n
                 })
               }

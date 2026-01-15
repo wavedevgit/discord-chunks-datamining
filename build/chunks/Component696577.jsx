@@ -128,7 +128,7 @@ function S(e) {
     isGameRelationship: l,
     applicationId: a
   } = e, o = g.ZP.useUserTag(t);
-  return (0, r.jsx)(_.Z, {
+  return (0, r.jsx)(E.Z, {
     user: t,
     hovered: n,
     status: i,
@@ -152,7 +152,7 @@ function T(e) {
     isGameRelationship: c
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), d = l === E.Skl.OFFLINE ? E.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
+  } = (0, s.ZP)(), d = l === _.Skl.OFFLINE ? _.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
     sourceAnalyticsLocations: u
   }), [u, t.id]);
@@ -170,7 +170,7 @@ function T(e) {
         applicationId: o
       }), (0, r.jsx)("div", {
         className: v.actions,
-        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(I, {
+        children: n === _.OGo.PENDING_INCOMING ? (0, r.jsx)(I, {
           user: t,
           applicationId: o,
           isGameRelationship: c,

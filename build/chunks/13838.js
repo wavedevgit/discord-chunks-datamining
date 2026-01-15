@@ -118,7 +118,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(E.Z.getVoiceStatesForChannel(l.id));
+          o = Object.values(_.Z.getVoiceStatesForChannel(l.id));
         return n && i().differenceBy(o, n, e => {
           let {
             userId: t
@@ -151,7 +151,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(E.Z.getVoiceStatesForChannel(l.id));
+          o = Object.values(_.Z.getVoiceStatesForChannel(l.id));
         return i().differenceBy(n, o, e => {
           let {
             userId: t
@@ -184,7 +184,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(E.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
+          o = Object.values(_.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
         return i().differenceWith(o, n, i().isEqual).forEach(e => r(e)), o
       }
     }
@@ -336,7 +336,7 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        currentUser: _.default.getCurrentUser()
+        currentUser: E.default.getCurrentUser()
       };
       return null == r.currentUser || null != t && (0, o.Z)(r, t) || n((0, T.Z)(r.currentUser)), r
     }

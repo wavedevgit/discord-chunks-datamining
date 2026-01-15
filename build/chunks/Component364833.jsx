@@ -85,7 +85,7 @@ function P(e) {
   let {
     nodeRef: c,
     quest: m
-  } = e, _ = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [P, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
+  } = e, E = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [P, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
     launchInGameActivity: L
   } = (0, h.zB)(m), R = i.useCallback(e => {
     e.stopPropagation()
@@ -96,7 +96,7 @@ function P(e) {
       sourceQuestContent: f.jn.ACTIVITY_PANEL
     }), (0, b.Rt)(m) && L()
   }, [m, L]), M = i.useCallback(() => {
-    null != m && (_({
+    null != m && (E({
       questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.TRACK_PROGRESS,
@@ -105,8 +105,8 @@ function P(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: m.id
     }))
-  }, [m, _]), k = i.useCallback(() => {
-    _({
+  }, [m, E]), k = i.useCallback(() => {
+    E({
       questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.LEARN_MORE,
@@ -115,7 +115,7 @@ function P(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: m.id
     })
-  }, [m.id, _]), U = (0, O.hf)({
+  }, [m.id, E]), U = (0, O.hf)({
     quest: m,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
@@ -145,7 +145,7 @@ function P(e) {
       className: N.utils,
       children: [G ? (0, r.jsx)(x, {
         quest: m
-      }) : (0, r.jsx)(v.Z, {}), (0, r.jsx)(E.i, {
+      }) : (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.i, {
         quest: m,
         questContent: f.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (l = m.userStatus) ? true : l.enrolledAt) == null,
@@ -225,7 +225,7 @@ function P(e) {
   })
 }
 let A = function(e) {
-  return (0, r.jsx)(_.A, {
+  return (0, r.jsx)(E.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL,

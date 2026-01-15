@@ -19,7 +19,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
-let E = (0, Chunk358085.isMac)() ? null : "DEFAULT";
+let _ = (0, Chunk358085.isMac)() ? null : "DEFAULT";
 class O extends Chunk473749.PureComponent {
   componentDidMount() {
     b.ZP.setSystemTrayIcon(this.getIcon())
@@ -28,7 +28,7 @@ class O extends Chunk473749.PureComponent {
     b.ZP.setSystemTrayIcon(this.getIcon())
   }
   componentWillUnmount() {
-    b.ZP.setSystemTrayIcon(E)
+    b.ZP.setSystemTrayIcon(_)
   }
   render() {
     return null
@@ -49,7 +49,7 @@ class O extends Chunk473749.PureComponent {
           speaking: n,
           connected: r,
           unread: i
-        } = this.props, l = E;
+        } = this.props, l = _;
         return (0, m.isMac)() && !r ? l : (0, m.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
       })
   }
@@ -59,7 +59,7 @@ Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", 
   location: "System Tray"
 })), Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => l.Z.toggleSelfDeaf()), Chunk998502.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
   (0, c.openUserSettings)(s.n.VOICE_AND_VIDEO_PANEL, {
-    section: _.oAB.VOICE
+    section: E.oAB.VOICE
   })
 }), v = Chunk442837.ZP.connectStores([Chunk19780.Z, Chunk131951.Z, Chunk606304.Z, Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
   let e = u.default.getTotalMentionCount(),

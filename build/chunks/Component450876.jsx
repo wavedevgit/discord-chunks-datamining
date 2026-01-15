@@ -28,7 +28,7 @@ function y(e) {
   var t, n;
   let {
     analyticsLocations: i
-  } = (0, p.ZP)(d.Z.ACTIVITY_PANEL), l = (0, E.Z)(e => {
+  } = (0, p.ZP)(d.Z.ACTIVITY_PANEL), l = (0, _.Z)(e => {
     let {
       guildId: t
     } = e;
@@ -86,7 +86,7 @@ let C = Chunk473749.memo(function() {
     "aria-label": v.intl.string(v.t.StREWK),
     children: (0, r.jsxs)(o.JcV, {
       containerRef: e,
-      children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(c.Z, {
+      children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(c.Z, {
         section: O.jXE.ACTIVITY_PANEL,
         children: (0, r.jsx)(y, {
           className: I.activityPanel

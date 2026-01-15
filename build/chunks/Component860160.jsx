@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 860160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,11 +19,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk697392 = require("./697392.js");
 
-function _(e) {
+function E(e) {
   var t;
   let {
     item: n
-  } = e, _ = i.useMemo(() => {
+  } = e, E = i.useMemo(() => {
     switch (n.data.kind) {
       case "message":
       case "guildEvent":
@@ -35,7 +35,7 @@ function _(e) {
       default:
         return "unknown"
     }
-  }, [n]), E = i.useMemo(() => {
+  }, [n]), _ = i.useMemo(() => {
     switch (n.data.kind) {
       case "message":
         return n.data.message.channel_id;
@@ -65,13 +65,13 @@ function _(e) {
       default:
         return n.timestamp
     }
-  }, [n]), y = (0, a.e7)([d.Z], () => d.Z.getChannel(E), [E]), C = null != (t = null == y ? true : y.guild_id) ? t : O, S = (0, a.e7)([p.Z], () => null != C ? p.Z.getGuild(C) : null, [C]), T = (0, a.e7)([f.default], () => null != v ? f.default.getUser(v) : null, [v]);
-  return "unknown" === _ ? null : (0, r.jsx)("div", {
+  }, [n]), y = (0, a.e7)([d.Z], () => d.Z.getChannel(_), [_]), C = null != (t = null == y ? true : y.guild_id) ? t : O, S = (0, a.e7)([p.Z], () => null != C ? p.Z.getGuild(C) : null, [C]), T = (0, a.e7)([f.default], () => null != v ? f.default.getUser(v) : null, [v]);
+  return "unknown" === E ? null : (0, r.jsx)("div", {
     className: b.container,
     children: (0, r.jsxs)("div", {
       className: b.header,
       children: [(() => {
-        if ("guild" === _ && null != S) return (0, r.jsx)(s.Z, {
+        if ("guild" === E && null != S) return (0, r.jsx)(s.Z, {
           guild: S,
           size: "Medium",
           active: false,
@@ -81,7 +81,7 @@ function _(e) {
           tooltipPosition: "top",
           animate: false
         });
-        if ("user" === _ && null != T) {
+        if ("user" === E && null != T) {
           let e = T.getAvatarURL(true, 50);
           return (0, r.jsx)("img", {
             src: e,
@@ -96,10 +96,10 @@ function _(e) {
           className: b.titleRow,
           children: (0, r.jsxs)("div", {
             className: b.titleLeft,
-            children: ["guild" === _ && null != S ? (0, r.jsx)("div", {
+            children: ["guild" === E && null != S ? (0, r.jsx)("div", {
               className: b.title,
               children: S.name
-            }) : "user" === _ && null != T ? (0, r.jsx)("div", {
+            }) : "user" === E && null != T ? (0, r.jsx)("div", {
               className: b.title,
               children: T.username
             }) : null, (0, r.jsx)("div", {
@@ -133,7 +133,7 @@ function _(e) {
                 return ""
             }
           })();
-          if ("user" === _) return (0, r.jsx)("div", {
+          if ("user" === E) return (0, r.jsx)("div", {
             className: b.subtitle,
             children: (0, r.jsx)("span", {
               className: b.subtitleText,

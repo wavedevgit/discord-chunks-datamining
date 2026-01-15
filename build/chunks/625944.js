@@ -26,13 +26,5 @@ let T = (0, Chunk509613.qs)(Chunk313789.n.DATA_USAGE_QUESTS_3P_SETTING, {
       e = (0, i.LN)();
     return t || e
   },
-  useDisabledMessage: function() {
-    if (u.bh.useSetting()) {
-      let t = o.intl.string(o.t.sJYh5t);
-      return o.intl.format(o.t.W2Vg7a, {
-        settingTitle: t
-      })
-    }
-  },
   useSearchTerms: () => [o.intl.string(o.t.CyLYKZ)]
 })

@@ -48,7 +48,7 @@ function I() {
     if (!e) return;
     let t = m.ZP.bounceDock("critical"),
       n = (0, b.EM)({
-        messages: [E.intl.string(E.t["fk1/bX"])],
+        messages: [_.intl.string(_.t["fk1/bX"])],
         count: 50
       });
     return () => {

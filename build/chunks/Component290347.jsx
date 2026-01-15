@@ -183,7 +183,7 @@ function Z(e) {
       })
     }
   }, [G, Z.type]), i.useEffect(() => {
-    (0, E.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
+    (0, _.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return v.default.track(y.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
@@ -191,7 +191,7 @@ function Z(e) {
       v.default.track(y.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), (0, E.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
+      }), (0, _.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
         dismissAction: C.L.DISMISS
       })
     }
@@ -212,7 +212,7 @@ function Z(e) {
       }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === Z.type ? (0, r.jsx)(_.Z, {
+        children: ["video" === Z.type ? (0, r.jsx)(E.Z, {
           className: a()(T.video, w),
           autoPlay: !W,
           loop: true,

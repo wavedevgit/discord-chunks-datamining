@@ -67,27 +67,27 @@ function A(e) {
     let e = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
     c.Z.show({
       title: j.intl.formatToPlainString(j.t.fPLvZd, {
-        name: E.ZP.getName(t)
+        name: _.ZP.getName(t)
       }),
       body: j.intl.formatToPlainString(j.t.l5FFq6, {
-        name: E.ZP.getName(t)
+        name: _.ZP.getName(t)
       }),
       confirmText: e,
       confirmVariant: "critical-primary",
       cancelText: j.intl.string(j.t["ETE/oC"]),
       onConfirm: g
     })
-  }, [g, l, t]), m = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), _ = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
+  }, [g, l, t]), m = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), E = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": j.intl.string(j.t.liqwPJ),
     onClose: d.Zy,
     onSelect: a,
-    children: [!_ && m ? (0, r.jsx)(s.sNh, {
+    children: [!E && m ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
       label: j.intl.string(j.t.oCqlGG),
       action: f
-    }) : null, !_ && (0, r.jsx)(s.sNh, {
+    }) : null, !E && (0, r.jsx)(s.sNh, {
       id: "start-voice-call",
       label: j.intl.string(j.t.focH1t),
       action: p
@@ -153,7 +153,7 @@ class Z extends Chunk473749.PureComponent {
             applicationStream: i,
             status: l,
             user: e,
-            userIgnored: _.Z.isIgnored(e.id)
+            userIgnored: E.Z.isIgnored(e.id)
           }),
           hovered: t,
           showAccountIdentifier: !o && !e.isProvisional

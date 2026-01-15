@@ -22,18 +22,18 @@ let b = e => {
   var t, n;
   let {
     guild: b
-  } = e, _ = (0, l.GG)(b.id)[0];
+  } = e, E = (0, l.GG)(b.id)[0];
   (0, s.Z)({
     guildId: b.id,
-    groupListingId: null == _ ? true : _.id,
+    groupListingId: null == E ? true : E.id,
     location: g.Sbl.ROLE_SUBSCRIPTIONS_TAB,
-    relevantSubscriptionListingIds: null == _ ? true : _.subscription_listings_ids
+    relevantSubscriptionListingIds: null == E ? true : E.subscription_listings_ids
   });
   let {
-    activeSubscription: E
-  } = (0, o.Z)(null == _ ? true : _.id), O = (0, l.YB)(b.id), v = null == O ? true : O.description, {
+    activeSubscription: _
+  } = (0, o.Z)(null == E ? true : E.id), O = (0, l.YB)(b.id), v = null == O ? true : O.description, {
     editStateIds: I
-  } = a.B7(null != (t = null == _ ? true : _.id) ? t : null, b.id);
+  } = a.B7(null != (t = null == E ? true : E.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.Z, {
       title: h.intl.format(h.t["rm+ojA"], {
@@ -42,12 +42,12 @@ let b = e => {
       description: null != v ? v : null,
       coverImageAsset: null != (n = null == O ? true : O.cover_image_asset) ? n : null,
       guild: b,
-      children: [null != _ ? (0, r.jsx)(c.Z, {
+      children: [null != E ? (0, r.jsx)(c.Z, {
         className: m.pendingPlanChangeNotice,
-        groupListingId: _.id,
-        subscription: E
+        groupListingId: E.id,
+        subscription: _
       }) : null, (0, r.jsx)(u.Z, {
-        subscription: E
+        subscription: _
       })]
     }), (0, r.jsx)(i.y5t, {
       children: (0, r.jsx)(d.Z, {
@@ -56,7 +56,7 @@ let b = e => {
           var t;
           return (0, r.jsx)(p.Z, {
             guildId: b.id,
-            groupListingId: null != (t = null == _ ? true : _.id) ? t : "",
+            groupListingId: null != (t = null == E ? true : E.id) ? t : "",
             listingId: e,
             analyticsLocation: g.Sbl.ROLE_SUBSCRIPTIONS_TAB
           }, e)

@@ -31,9 +31,9 @@ function v() {
   if (null == r) returnfalse;
   let v = r.getGuildId();
   if (!(0, m.JL)(r, u.Z, p.Z, false)) returnfalse;
-  if (d.Z.getUseSystemScreensharePicker())(0, h.isMac)() && i().satisfies(null === a.Z || true === a.Z ? true : a.Z.os.release, O.jR) ? (0, _.T)() : (0, _.T)("window");
+  if (d.Z.getUseSystemScreensharePicker())(0, h.isMac)() && i().satisfies(null === a.Z || true === a.Z ? true : a.Z.os.release, O.jR) ? (0, E.T)() : (0, E.T)("window");
   else {
-    let n = (0, E.Z)(o.ZP, g.Z);
+    let n = (0, _.Z)(o.ZP, g.Z);
     if (null == n || n.isLauncher && !e) returnfalse;
     (0, l.WH)(v, r.id, {
       pid: n.pid,

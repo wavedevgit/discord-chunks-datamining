@@ -515,7 +515,7 @@ let W = () => (0, r.jsx)(H, {
     cellClassName: Chunk654069.actionsCell,
     render(e, t) {
       let n, i;
-      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(_.Z, {
+      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(E.Z, {
         libraryApplication: e.libraryApplication,
         size: "sm",
         source: R.Sbl.APPLICATION_LIBRARY_UPDATES

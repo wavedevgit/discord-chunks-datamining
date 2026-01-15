@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 724383, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk766219 = require("./766219.js"),
   Chunk49898 = require("./49898.js"),
   Chunk10531 = require("./10531.js");
-let _ = function() {
+let E = function() {
   let e = (0, a.e7)([s.Z], () => s.Z.hasLoadedExperiments),
     t = g.Z.useField("selectedTab"),
     n = function(e) {
@@ -35,14 +35,14 @@ let _ = function() {
           (0, p.vE)(e)
       }
     }(t),
-    _ = (0, l.TH)();
+    E = (0, l.TH)();
   return i.useEffect(() => {
-    let e = _.pathname,
+    let e = E.pathname,
       t = (0, h.I)(e);
     t !== g.Z.getField("selectedTab") && g.Z.setState({
       selectedTab: t
     })
-  }, [_.pathname]), i.useEffect(() => {
+  }, [E.pathname]), i.useEffect(() => {
     e && (0, f.RI)({
       selectedTab: t
     })

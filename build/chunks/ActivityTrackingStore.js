@@ -36,10 +36,10 @@ function x(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > y + C && (r = 0);
-  let i = (0, h.OT)(e.applicationId, _.Z),
+  let i = (0, h.OT)(e.applicationId, E.Z),
     l = O.Z.getVoiceChannelId(),
     a = m.default.getSessionId(),
-    c = E.Z.getMediaSessionId();
+    c = _.Z.getMediaSessionId();
   u.Z.updateActivity({
     applicationId: e.applicationId,
     distributor: e.isDiscordApplication ? v.GQo.DISCORD : e.distributor,
@@ -83,7 +83,7 @@ function A() {
 }
 class Z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(m.default, b.Z, _.Z, E.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], P)
+    this.waitFor(m.default, b.Z, E.Z, _.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], P)
   }
   getActivities() {
     return S

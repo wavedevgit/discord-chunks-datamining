@@ -88,7 +88,7 @@ class Z extends Chunk317770.Z {
         f.Z.flowStart(j.MK.ORGANIC_MARKETING, j.EW.NUF_STARTED)
     }
     let o = false,
-      A = _.Z.getGuildId();
+      A = E.Z.getGuildId();
     if (a === C.M5.INVITE_UNCLAIMED) {
       let e = b.Z.getGuild(A);
       null != e && (0, d.Dc)(e) && (o = true, (0, g.RM)(e.id))
@@ -150,14 +150,14 @@ class Z extends Chunk317770.Z {
       open: e => c.j(v.isPlatformEmbedded, e),
       predicate: () => {
         var e;
-        return !o && null != E.default.getCurrentUser() && !(null == (e = E.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a && !(0, p.g)()
+        return !o && null != _.default.getCurrentUser() && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a && !(0, p.g)()
       }
     }, {
       key: "Verification Gate with Claim Account",
       open: e => (0, u.hk)(A, null != e ? e : true),
       predicate: () => {
         var e;
-        return o && !(null == (e = E.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a
+        return o && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a
       }
     }, {
       key: "Guild Welcome Modal",

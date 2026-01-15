@@ -22,7 +22,7 @@ let b = {
   [Chunk981631.TaA.MACOS]: Chunk358085.PlatformTypes.OSX,
   [Chunk981631.TaA.LINUX]: Chunk358085.PlatformTypes.LINUX
 };
-class _ extends Chunk473749.PureComponent {
+class E extends Chunk473749.PureComponent {
   render() {
     let {
       active: e,
@@ -45,7 +45,7 @@ class _ extends Chunk473749.PureComponent {
     })
   }
 }
-class E extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       systemRequirements: n
@@ -67,7 +67,7 @@ class E extends Chunk473749.PureComponent {
       className: m.tabs,
       children: [(0, r.jsx)("div", {
         className: m.separator
-      }), i.map(t => (0, r.jsx)(_, {
+      }), i.map(t => (0, r.jsx)(E, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
         pageSize: e,
@@ -175,4 +175,4 @@ class E extends Chunk473749.PureComponent {
     }
   }
 }
-let O = E
+let O = _

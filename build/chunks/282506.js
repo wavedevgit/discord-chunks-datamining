@@ -39,7 +39,7 @@ function y() {
         t = b.Z.getChannelId();
       if (!g.Z.supports(v.AN.VIDEO) || u.Z.getWindowOpen(O.KJ3.CHANNEL_CALL_POPOUT)) returntrue;
       let n = null != e && d.Z.getAllActiveStreams().some(t => !s.Z.isParticipantPoppedOut(e, (0, c.V9)(t)));
-      if (!(null != e && Object.values(E.Z.getVideoVoiceStatesForChannel(e)).some(t => {
+      if (!(null != e && Object.values(_.Z.getVideoVoiceStatesForChannel(e)).some(t => {
           let {
             userId: n
           } = t;
@@ -56,10 +56,10 @@ function y() {
 }
 class C extends Chunk317770.Z {
   _initialize() {
-    b.Z.addChangeListener(y), _.Z.addChangeListener(y), m.Z.addChangeListener(y), E.Z.addChangeListener(y), f.Z.addChangeListener(y), d.Z.addChangeListener(y), u.Z.addChangeListener(y), g.Z.addChangeListener(y), o.ZP.addChangeListener(y), s.Z.addChangeListener(y)
+    b.Z.addChangeListener(y), E.Z.addChangeListener(y), m.Z.addChangeListener(y), _.Z.addChangeListener(y), f.Z.addChangeListener(y), d.Z.addChangeListener(y), u.Z.addChangeListener(y), g.Z.addChangeListener(y), o.ZP.addChangeListener(y), s.Z.addChangeListener(y)
   }
   _terminate() {
-    b.Z.removeChangeListener(y), _.Z.removeChangeListener(y), m.Z.removeChangeListener(y), E.Z.removeChangeListener(y), f.Z.removeChangeListener(y), d.Z.removeChangeListener(y), u.Z.removeChangeListener(y), g.Z.removeChangeListener(y), o.ZP.removeChangeListener(y), s.Z.removeChangeListener(y)
+    b.Z.removeChangeListener(y), E.Z.removeChangeListener(y), m.Z.removeChangeListener(y), _.Z.removeChangeListener(y), f.Z.removeChangeListener(y), d.Z.removeChangeListener(y), u.Z.removeChangeListener(y), g.Z.removeChangeListener(y), o.ZP.removeChangeListener(y), s.Z.removeChangeListener(y)
   }
 }
 let S = new C

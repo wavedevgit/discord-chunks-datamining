@@ -307,7 +307,7 @@ let eW = Chunk473749.memo(function() {
   if (i.useEffect(() => {
       if ((0, eS.isWindows)() && P) {
         let e = null == G ? true : G.guid;
-        null != e && (eO(e), eI.ZP.ensureModule("discord_voice").then(() => {
+        null != e && "" !== e && (eO(e), eI.ZP.ensureModule("discord_voice").then(() => {
           try {
             var t, n, r, i;
             let a = (0, d.zS)();

@@ -154,7 +154,7 @@ class D extends(r = Chunk473749.PureComponent) {
     }, L)), s.Z.spring(n, C({
       toValue: 1.1
     }, L))]).start(() => {
-      e(), E.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
+      e(), _.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
     })
   }
   animateUnder() {
@@ -265,10 +265,10 @@ y(D, "defaultProps", {
 }), y(D, "contextType", Chunk481060.Sfi);
 class M extends Chunk473749.PureComponent {
   componentDidMount() {
-    E.S.subscribe(O.CkL.LAYER_POP_ESCAPE_KEY, p.xf)
+    _.S.subscribe(O.CkL.LAYER_POP_ESCAPE_KEY, p.xf)
   }
   componentWillUnmount() {
-    E.S.unsubscribe(O.CkL.LAYER_POP_ESCAPE_KEY, p.xf)
+    _.S.unsubscribe(O.CkL.LAYER_POP_ESCAPE_KEY, p.xf)
   }
   renderLayers() {
     let {
@@ -313,7 +313,7 @@ class M extends Chunk473749.PureComponent {
 
 function k(e) {
   let t = (0, b.Ll)(),
-    n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
+    n = (0, c.e7)([E.Z], () => E.Z.getLayers()),
     r = (0, m.QP)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
   return (0, i.jsx)(M, S(C({}, e), {
     sidebarTheme: t,

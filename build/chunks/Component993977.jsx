@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk375951 = require("./375951.js");
 
-function E(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -51,33 +51,33 @@ function v(e) {
   let i = t.map(e => {
     let t = e.libraryApplication.getDistributor();
     return (0, r.jsxs)("div", {
-      className: _.hiddenLibraryApplication,
+      className: E.hiddenLibraryApplication,
       children: [(0, r.jsxs)(c.Z, {
         direction: c.Z.Direction.VERTICAL,
-        className: _.hiddenLibraryApplicationContent,
+        className: E.hiddenLibraryApplicationContent,
         children: [(0, r.jsx)("div", {
-          className: _.applicationName,
+          className: E.applicationName,
           children: e.libraryApplication.getBranchedName(e.application)
         }), null != t ? (0, r.jsx)("div", {
-          className: _.applicationSubText,
+          className: E.applicationSubText,
           children: m.EOG[t]
         }) : null]
       }), (0, r.jsx)(o.P3F, {
-        className: _.restoreButton,
+        className: E.restoreButton,
         onClick: () => n(e.libraryApplication),
         children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",
-          className: _.restoreIcon
+          className: E.restoreIcon
         })
       })]
     }, e.key)
   });
   return (0, r.jsxs)("div", {
-    className: _.hiddenLibraryApplications,
+    className: E.hiddenLibraryApplications,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-md/semibold",
-      className: _.hiddenLibraryApplicationsTitle,
+      className: E.hiddenLibraryApplicationsTitle,
       children: b.intl.string(b.t["5PJtrH"])
     }), i]
   })
@@ -101,7 +101,7 @@ class I extends Chunk473749.PureComponent {
       installShortcutStartMenu: n
     } = this.props;
     return (0, r.jsxs)("div", {
-      className: _.body,
+      className: E.body,
       children: [(0, f.Q)() ? (0, r.jsxs)(o.Kqy, {
         gap: 16,
         children: [(0, r.jsx)(o.rsf, {
@@ -126,13 +126,13 @@ class I extends Chunk473749.PureComponent {
       children: [(0, r.jsx)(g.Z, {
         currentRoute: m.Z5c.APPLICATION_LIBRARY_SETTINGS
       }), (0, r.jsx)(o.w0Z, {
-        className: _.scroller,
+        className: E.scroller,
         children: this.renderBody()
       })]
     })
   }
   constructor(...e) {
-    super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
+    super(...e), _(this, "handleRestoreHiddenLibraryApplication", e => {
       let t = l.x9(e.getFlags(), m.eHb.HIDDEN);
       s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, l.yE(t, m.eHb.HIDDEN))
     })

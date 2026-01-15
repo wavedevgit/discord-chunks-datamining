@@ -24,10 +24,10 @@ function g(e) {
     (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
   }, []), b = i.useCallback(() => {
     o.Z.closeChannelSidebar(s.uZ)
-  }, []), _ = i.useCallback(() => {
+  }, []), E = i.useCallback(() => {
     o.Z.closeChannelSidebar(s.uZ), h && (0, a.Kh)(g.id)
   }, [g.id, h]), {
-    acceptMessageRequest: E,
+    acceptMessageRequest: _,
     rejectMessageRequest: O,
     isAcceptLoading: v,
     isRejectLoading: I,
@@ -36,7 +36,7 @@ function g(e) {
     isOptimisticRejected: S
   } = (0, u.m)({
     user: n,
-    onAcceptSuccess: _,
+    onAcceptSuccess: E,
     onRejectSuccess: b,
     onError: m
   }), T = v || I || y || C || S;
@@ -69,7 +69,7 @@ function g(e) {
           size: "sm",
           text: p.intl.string(p.t.Kz8Pwr),
           onClick: e => {
-            e.stopPropagation(), E(g.id)
+            e.stopPropagation(), _(g.id)
           },
           disabled: T,
           loading: v || y || C
