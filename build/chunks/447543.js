@@ -119,7 +119,8 @@ function ef(e) {
     case ei.Iq.ROLE_SUBSCRIPTIONS_PURCHASE:
       c.targetType = e.target_type
   }
-  return (null == B.Z.getGuild(null == (t = e.guild) ? true : t.id) || e.new_member) && null != e.channel && (0, k.zi)(e.channel.type) && (c.welcomeModalChannelId = e.channel.id), null != e.guild_scheduled_event && (c.guildScheduledEvent = e.guild_scheduled_event), c.isGuestInvite = (0, s.yE)(null != (a = e.flags) ? a : 0, o.$.IS_GUEST_INVITE), c.isApplicationBypassInvite = (0, s.yE)(null != (l = e.flags) ? l : 0, o.$.IS_APPLICATION_BYPASS), c.inviterUserId = null == (n = e.inviter) ? true : n.id, c
+  let u = null == B.Z.getGuild(null == (t = e.guild) ? true : t.id) || e.new_member;
+  return u && null != e.channel && (0, k.zi)(e.channel.type) && (c.welcomeModalChannelId = e.channel.id), null != e.guild_scheduled_event && (c.guildScheduledEvent = e.guild_scheduled_event), c.isGuestInvite = (0, s.yE)(null != (a = e.flags) ? a : 0, o.$.IS_GUEST_INVITE), c.isApplicationBypassInvite = (0, s.yE)(null != (l = e.flags) ? l : 0, o.$.IS_APPLICATION_BYPASS), c.inviterUserId = null == (n = e.inviter) ? true : n.id, u || (c.forceTransition = true), c
 }
 
 function ep(e, t) {
@@ -491,7 +492,7 @@ let eS = {
           guild_scheduled_event: i
         }),
         u = null != (r = null == c ? true : c.guild_id) ? r : null == c || null == (t = c.guild) ? true : t.id;
-      if (!o && null != u && c.new_member) {
+      if (!o && null != u && c.new_member && !c.show_verification_form) {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 17181));
@@ -541,7 +542,7 @@ let eS = {
     } = e;
     if (null != l && (null == (r = l.features) ? true : r.includes(ee.GuildFeatures.HUB))) return void R.Z.onOpenHubInvite(e);
     let c = (0, s.yE)(null != (i = e.flags) ? i : 0, o.$.IS_APPLICATION_BYPASS);
-    if (null != l && !c && (0, P.u)(l)) return void(0, P._)(l.id);
+    if (null != l && !c && e.new_member && (0, P.u)(l)) return void(0, P._)(l.id);
     if (null == a) return;
     let u = ef(e);
     null != t && (u.transitionTo = t), null != n && (u.muteOnJoinVoiceChannel = n), eh({

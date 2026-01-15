@@ -22,8 +22,8 @@ function p(e) {
   let {
     guild_id: h,
     channel_id: m
-  } = e, g = e.entity_type === b.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(m), v = a.getGuild(h), x = p.getStageInstanceByChannel(m);
-  return !!(0, i.b)(s.Z, v, g, x) && null != g && function(e) {
+  } = e, v = e.entity_type === b.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(m), g = a.getGuild(h), x = p.getStageInstanceByChannel(m);
+  return !!(0, i.b)(s.Z, g, v, x) && null != v && function(e) {
     let [n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z], {
       entityType: t,
       channelId: a

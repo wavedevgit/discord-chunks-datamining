@@ -38,7 +38,7 @@ function w(e) {
     guildId: w
   } = e, S = (0, d.Dt)(), I = (0, c.e7)([m.Z], () => m.Z.getGuild(w)), T = (0, f.Z)(null == I ? true : I.id), _ = (0, b.ZP)(w), D = i.useRef(h.ZP.ackMessageId(w, k.W.GUILD_EVENT)), G = (0, N.Z)();
   return i.useEffect(() => {
-    _.forEach(e => x.Z.getGuildEventUserCounts(w, e.id, [])), x.Z.getGuildEventsForCurrentUser(w)
+    _.forEach(e => v.Z.getGuildEventUserCounts(w, e.id, [])), v.Z.getGuildEventsForCurrentUser(w)
   }, [_, w]), (0, u.ZP)(() => {
     p.default.track(O.rMx.OPEN_MODAL, {
       type: Z.zw,
@@ -46,7 +46,7 @@ function w(e) {
       guild_events_count: _.length
     })
   }), i.useEffect(() => {
-    a()(_).map(e => e.creator_id).filter(j.lm).uniq().forEach(e => {
+    a()(_).map(e => e.creator_id).filter(x.lm).uniq().forEach(e => {
       g.Z.requestMember(w, e)
     })
   }, [w, _]), i.useEffect(() => {
@@ -134,7 +134,7 @@ function w(e) {
       children: _.length > 0 ? _.map(e => (0, r.jsx)(C.Z, {
         guildEvent: e,
         onActionTaken: l,
-        isNew: null != D.current && v.default.compare(e.id, D.current) > 0
+        isNew: null != D.current && j.default.compare(e.id, D.current) > 0
       }, e.id)) : (0, r.jsx)(y.Z, {
         guildId: w,
         onClose: l

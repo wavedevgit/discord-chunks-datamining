@@ -24,8 +24,8 @@ function u(e) {
     onJoinClick: p,
     onRsvpClick: h,
     onStartClick: m,
-    onInviteClick: g,
-    onEndClick: v,
+    onInviteClick: v,
+    onEndClick: g,
     onJoinGuildClick: x,
     isJoined: _ = false,
     channel: C
@@ -55,7 +55,7 @@ function u(e) {
       "aria-label": d.intl.string(d.t.WqhZss)
     }
   }({
-    onInviteClick: g,
+    onInviteClick: v,
     canInvite: u,
     isChannelPublic: b,
     channel: C
@@ -98,10 +98,10 @@ function u(e) {
     size: "sm",
     onClick: m,
     text: d.intl.string(d.t.I0v0Qv)
-  }), n && null != v && I.push({
+  }), n && null != g && I.push({
     variant: "secondary",
     size: "sm",
-    onClick: v,
+    onClick: g,
     text: d.intl.string(d.t.qaYzPA)
   }), I
 }

@@ -31,19 +31,19 @@ function p(e) {
   } = e, {
     guild_id: E,
     privacy_level: y
-  } = p, _ = (0, r.e7)([h.Z], () => h.Z.getChannel(p.channel_id), [p]), w = (0, r.e7)([v.Z], () => v.Z.getGuild(E), [E]), {
+  } = p, _ = (0, r.e7)([h.Z], () => h.Z.getChannel(p.channel_id), [p]), w = (0, r.e7)([x.Z], () => x.Z.getGuild(E), [E]), {
     canManageGuildEvent: T
-  } = (0, o.XJ)(null != _ ? _ : w), Z = T(p), S = (0, r.e7)([c.Z], () => c.Z.isLurking(E), [E]), I = p.entity_type === f.WX.STAGE_INSTANCE, [b, A] = l.useState(I), [P, {
+  } = (0, o.XJ)(null != _ ? _ : w), Z = T(p), S = (0, r.e7)([c.Z], () => c.Z.isLurking(E), [E]), I = p.entity_type === j.WX.STAGE_INSTANCE, [A, b] = l.useState(I), [P, {
     loading: G,
     error: L
-  }] = (0, x.Z)();
+  }] = (0, v.Z)();
   if (!Z) return null;
-  let O = y === f.j8.PUBLIC ? j.intl.string(j.t.HhlaLP) : j.intl.string(j.t.GI3xXd),
+  let O = y === j.j8.PUBLIC ? f.intl.string(f.t.HhlaLP) : f.intl.string(f.t.GI3xXd),
     R = () => {
       null == N || N(), k(), (0, u.Ku)(false)
     },
     M = async () => {
-      await P(p, b, {
+      await P(p, A, {
         onSuccess: R
       })
     };
@@ -51,9 +51,9 @@ function p(e) {
     transitionState: t,
     onClose: k,
     title: p.name,
-    subtitle: j.intl.format(j.t.UMajol, {
+    subtitle: f.intl.format(f.t.UMajol, {
       privacyLevel: O,
-      privacyLevelHook: (e, n) => y !== f.j8.PUBLIC ? null : (0, i.jsxs)("div", {
+      privacyLevelHook: (e, n) => y !== j.j8.PUBLIC ? null : (0, i.jsxs)("div", {
         className: C.privacyLevel,
         children: [(0, i.jsx)(s.enf, {
           size: "xs",
@@ -66,19 +66,19 @@ function p(e) {
       }, n)
     }),
     actionBarInput: I ? (0, i.jsxs)(a.P3F, {
-      onClick: () => A(!b),
+      onClick: () => b(!A),
       className: C.notificationToggle,
       children: [(0, i.jsx)(a.FZ5, {
-        checked: b
+        checked: A
       }), (0, i.jsx)(s.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: j.intl.string(j.t["Pe+Pwp"])
+        children: f.intl.string(f.t["Pe+Pwp"])
       })]
     }) : true,
     actions: [{
       variant: "active",
-      text: j.intl.string(j.t.cK1GGY),
+      text: f.intl.string(f.t.cK1GGY),
       onClick: M,
       loading: G
     }],
@@ -95,7 +95,7 @@ function p(e) {
       rsvped: true,
       guildEvent: p,
       hideAgeVerificationNotice: true
-    }), f.Qk.has(p.entity_type) && (0, i.jsx)(d.Z, {
+    }), j.Qk.has(p.entity_type) && (0, i.jsx)(d.Z, {
       className: C.ageVerificationNotice
     }), null != L && null != L.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
       color: "text-feedback-critical",

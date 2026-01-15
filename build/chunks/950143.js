@@ -26,7 +26,7 @@ function u(e) {
     guild: a
   } = e.invite, c = null != (n = e.invite.flags) ? n : 0;
   if (null != a && (null == a || null == (t = a.features) ? true : t.includes(l.GuildFeatures.HUB))) return void o.Z.onOpenHubInvite(e.invite);
-  !((0, i.yE)(c, r.$.IS_GUEST_INVITE) || (0, i.yE)(c, r.$.IS_APPLICATION_BYPASS)) && null != a && (0, s.u)(a) && (0, s._)(a.id)
+  e.invite.new_member && !((0, i.yE)(c, r.$.IS_GUEST_INVITE) || (0, i.yE)(c, r.$.IS_APPLICATION_BYPASS)) && null != a && (0, s.u)(a) && (0, s._)(a.id)
 }
 class d extends Chunk147913.Z {
   constructor(...e) {

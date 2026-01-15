@@ -25,15 +25,15 @@ function b(e) {
   } = e, {
     recurrenceStartTimes: h,
     canViewMoreRecurrences: m,
-    updateRecurrenceStartTimes: g
-  } = (0, c.Z)(i, n, t), v = f ? "div" : l.Ttm;
+    updateRecurrenceStartTimes: v
+  } = (0, c.Z)(i, n, t), g = f ? "div" : l.Ttm;
   return (0, a.jsxs)("div", {
     className: u.recurrences,
     children: [(0, a.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
       children: d.intl.string(d.t["D/jjoa"])
-    }), (0, a.jsxs)(v, {
+    }), (0, a.jsxs)(g, {
       className: r()(u.scroller, {
         [u.showScroller]: !f
       }),
@@ -50,7 +50,7 @@ function b(e) {
         className: u.buttonContainer,
         children: (0, a.jsx)(l.Avr, {
           onClick: e => {
-            e.stopPropagation(), g()
+            e.stopPropagation(), v()
           },
           text: d.intl.string(d.t["8O7Hpy"]),
           size: "sm"

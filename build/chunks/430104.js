@@ -2,6 +2,7 @@
 /** chunk id: 430104, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  $s: () => _,
   NE: () => d,
   sP: () => u,
   to: () => p,
@@ -41,4 +42,14 @@ function p(e) {
     }, [t]),
     u = (0, i.gD)();
   return (0, a.n)("useShouldAgeVerifyToSpeakForCurrentUser") && !u && n
+}
+
+function _(e) {
+  let t = null != e ? e : l.Z.getChannelId(),
+    n = (0, r.e7)([s.Z, o.Z], () => {
+      let e = null != t ? o.Z.getChannel(t) : null;
+      return null != e && s.Z.can(c.Pl.REQUEST_TO_SPEAK, e)
+    }, [t]),
+    u = (0, i.l6)();
+  return (0, a.n)("useShouldShowAgeVerificationPopover") && !u && n
 }

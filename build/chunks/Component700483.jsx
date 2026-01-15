@@ -71,29 +71,28 @@ function ed(e) {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, f.ZP)(), l = (0, er.Z)(t.id), [s, p] = (0, ea.Z)(t), h = (0, en._)(t), g = (0, ei.to)(), m = i.useRef(null), [b, v] = (0, c.R)("age-verification-stage-popover-dismissed", false), O = i.useContext(R.h9);
+  } = (0, f.ZP)(), l = (0, er.Z)(t.id), [s, p] = (0, ea.Z)(t), h = (0, en._)(t), g = (0, ei.to)(), m = (0, ei.$s)(), b = i.useRef(null), [v, O] = (0, c.R)("age-verification-stage-popover-dismissed", false), j = i.useContext(R.h9);
   if (l) return null;
-  let j = g && !b;
+  let x = m && !v;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(M.d, {
-      ref: m,
+      ref: b,
       isTrayButton: true,
       isActive: s,
-      label: function(e, t, n) {
-        let r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
-        return !r && n ? null : n ? es.intl.string(es.t.NzITVo) : e ? es.intl.string(es.t.GCimTk) : t ? es.intl.string(es.t.hLbG5N) : es.intl.string(es.t.e4WMvx)
-      }(s, h, g, b),
+      label: function(e, t, n, r) {
+        let i = !(arguments.length > 4) || true === arguments[4] || arguments[4];
+        return !i && r ? null : n ? es.intl.string(es.t.NzITVo) : e ? es.intl.string(es.t.GCimTk) : t ? es.intl.string(es.t.hLbG5N) : es.intl.string(es.t.e4WMvx)
+      }(s, h, g, m, v),
       iconComponent: g ? o.XuQ : o.V9,
-      iconColor: g ? "var(--icon-feedback-critical)" : true,
       onClick: () => {
-        (0, y.v)(n, y.d.REQUEST_TO_SPEAK, !s), v(true), g ? u.Z.showAgeVerificationGetStartedModal({
+        (0, y.v)(n, y.d.REQUEST_TO_SPEAK, !s), O(true), g ? u.Z.showAgeVerificationGetStartedModal({
           entryPoint: d.cU.STAGE_CHANNEL_RAISE_HAND
         }) : p()
       },
       color: s ? "green" : true,
       disabled: !h && !s
-    }), j && (0, r.jsx)(a.J2, {
-      targetElementRef: m,
+    }), x && (0, r.jsx)(a.J2, {
+      targetElementRef: b,
       graphic: {
         type: "image",
         src: eu.Z
@@ -101,16 +100,16 @@ function ed(e) {
       gradientColor: "blue",
       title: es.intl.string(es.t.zvubnM),
       body: es.intl.string(es.t["/wx+J2"]),
-      shouldShow: !O,
+      shouldShow: !j,
       actions: [{
         text: es.intl.string(es.t.KXVgjt),
         onClick: () => {
           u.Z.showAgeVerificationGetStartedModal({
             entryPoint: d.cU.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT
-          }), v(true)
+          }), O(true)
         }
       }],
-      onRequestClose: () => v(true)
+      onRequestClose: () => O(true)
     })]
   })
 }

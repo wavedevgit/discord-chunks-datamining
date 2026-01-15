@@ -46,7 +46,7 @@ function Z(e) {
     recurrence_rule: A
   } = O, L = (0, f.DK)(O), U = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(S, L), [S, L]), z = (0, i.e7)([l.Z], () => l.Z.isLurking(I), [I]), J = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(T), [T]), B = (0, i.e7)([s.Z], () => s.Z.getGuild(I), [I]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(T), [T]), W = (0, i.e7)([g.default], () => g.default.getUser(_), [_]), {
     speakers: H
-  } = (0, j.Z)({
+  } = (0, x.Z)({
     id: T,
     data: {
       guild: null,
@@ -93,7 +93,7 @@ function Z(e) {
     name: D,
     entityType: M,
     description: null != G ? G : true,
-    location: null != (n = (0, x.cS)(O)) ? n : true,
+    location: null != (n = (0, v.cS)(O)) ? n : true,
     imageSource: null != R ? (0, b.Z)(O) : true,
     imageLocation: C.Q.THUMBNAIL,
     isActive: V,
@@ -111,7 +111,7 @@ function Z(e) {
     truncate: k,
     isNew: w,
     guildEvent: O,
-    recurrenceRule: (0, v.KV)(A),
+    recurrenceRule: (0, j.KV)(A),
     recurrenceId: L
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(Z)) : (function(e, n) {
     var t = Object.keys(e);

@@ -2,7 +2,7 @@
 /** chunk id: 460838, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Q: () => Z,
-  Z: () => A
+  Z: () => b
 }), require("./953529.js");
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function S(e) {
     onClick: t
   } = e, {
     canManageAllEvents: i
-  } = (0, v.XJ)(n), r = (0, c.e7)([m.Z], () => !n.isGuildVocal() || m.Z.can(_.Plq.CONNECT, n), [n]), x = a.useMemo(() => (0, d.Z)(n), [n]), g = a.useMemo(() => {
+  } = (0, x.XJ)(n), r = (0, c.e7)([m.Z], () => !n.isGuildVocal() || m.Z.can(_.Plq.CONNECT, n), [n]), v = a.useMemo(() => (0, d.Z)(n), [n]), g = a.useMemo(() => {
     let e = (0, h.KS)(n);
     return null != e ? a.createElement(e, {
       color: "currentColor",
@@ -57,7 +57,7 @@ function S(e) {
       onClick: t,
       children: [(0, l.jsx)(o.u, {
         text: w.intl.string(w.t["48WXaW"]),
-        shouldShow: i && x && r && null != t,
+        shouldShow: i && v && r && null != t,
         children: g
       }), (0, l.jsx)(u.Text, {
         variant: "text-sm/normal",
@@ -97,7 +97,7 @@ function I(e) {
   })
 }
 
-function b(e) {
+function A(e) {
   let {
     channel: n,
     entityType: t,
@@ -109,23 +109,23 @@ function b(e) {
     onContextMenu: o,
     onJoinClick: d,
     onRsvpClick: h,
-    onStartClick: v,
-    onInviteClick: x,
+    onStartClick: x,
+    onInviteClick: v,
     onEndClick: m,
     onJoinGuildClick: g
-  } = e, j = (0, f.Q)(n, t), p = (0, C.Zs)({
+  } = e, f = (0, j.Q)(n, t), p = (0, C.Zs)({
     entityType: t,
     isJoined: i,
     isActive: a,
     isUserLurking: r,
     rsvped: s,
     canInvite: c,
-    isChannelPublic: j,
+    isChannelPublic: f,
     channel: n,
     onJoinClick: d,
     onRsvpClick: h,
-    onStartClick: v,
-    onInviteClick: x,
+    onStartClick: x,
+    onInviteClick: v,
     onEndClick: m,
     onJoinGuildClick: g
   });
@@ -155,7 +155,7 @@ function b(e) {
   })
 }
 
-function A(e) {
+function b(e) {
   let {
     className: n,
     guild: t,
@@ -166,16 +166,16 @@ function A(e) {
     description: o,
     imageLocation: d = 0,
     imageSource: h,
-    isActive: v,
+    isActive: x,
     isUserLurking: m,
     isJoined: g = false,
-    isMember: f = false,
+    isMember: j = false,
     speakers: C,
     speakerCount: _,
     rsvped: w,
     canInvite: Z,
     location: S,
-    truncate: A,
+    truncate: b,
     onContextMenu: P,
     onJoinClick: G,
     onJoinGuildClick: L,
@@ -192,8 +192,8 @@ function A(e) {
     hideAgeVerificationNotice: D
   } = e, H = c === y.WX.EXTERNAL, q = H ? e => e.stopPropagation() : true, F = [];
   if (null != z && null != event) {
-    let e = (0, j.Ho)(z);
-    F = (0, j.PJ)(4, e, new Date(U.scheduled_start_time))
+    let e = (0, f.Ho)(z);
+    F = (0, f.PJ)(4, e, new Date(U.scheduled_start_time))
   }
   let K = F.length > 0;
   return (0, l.jsxs)(u.kL8, {
@@ -215,20 +215,20 @@ function A(e) {
         name: r,
         description: o,
         imageSource: 1 === d ? h : null,
-        truncate: A,
+        truncate: b,
         guildId: null == t ? true : t.id,
         isNew: J,
         guildEvent: U,
         eventPreview: V,
         recurrenceId: B
-      }), v && null != t && null != C && _ > 0 && (0, l.jsx)(E.Z, {
+      }), x && null != t && null != C && _ > 0 && (0, l.jsx)(E.Z, {
         guild: t,
         speakers: C,
         speakerCount: _,
         className: T.spacing
       }), (0, l.jsx)("hr", {
         className: T.divider
-      }), !D && y.Qk.has(U.entity_type) && (0, l.jsx)(x.Z, {
+      }), !D && y.Qk.has(U.entity_type) && (0, l.jsx)(v.Z, {
         className: T.ageVerificationNoticeSpacing,
         noBackground: true,
         divider: true
@@ -242,13 +242,13 @@ function A(e) {
           isExternal: H
         }), (0, l.jsx)("div", {
           className: T.eventActions,
-          children: (0, l.jsx)(b, {
+          children: (0, l.jsx)(A, {
             channel: i,
             entityType: c,
-            isActive: v,
+            isActive: x,
             isJoined: g,
             isUserLurking: m,
-            isMember: f,
+            isMember: j,
             rsvped: w,
             canInvite: Z,
             onContextMenu: P,

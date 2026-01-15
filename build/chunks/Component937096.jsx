@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v() {
+function x() {
   return (0, c.Jm)() ? h.intl.format(h.t.iWGjcg, {
     hook: e => (0, i.jsx)(l.eee, {
       onClick: e => {
@@ -37,7 +37,7 @@ function v() {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     className: n
   } = e, t = (0, c.Jm)();
@@ -45,7 +45,7 @@ function x(e) {
     className: n,
     children: (0, i.jsx)(l.M14, {
       type: t ? "info" : "warning",
-      children: (0, i.jsx)(v, {})
+      children: (0, i.jsx)(x, {})
     })
   })
 }
@@ -62,14 +62,14 @@ function m(e) {
       align: "center",
       children: [t ? (0, i.jsx)(l.d3s, {
         size: "refresh_sm",
-        color: "var(--icon-feedback-info)"
+        color: "var(--text-default)"
       }) : (0, i.jsx)(l.aNP, {
         size: "refresh_sm",
-        color: "var(--icon-feedback-warning)"
+        color: "var(--text-default)"
       }), (0, i.jsx)(l.Text, {
         color: "text-default",
         variant: "text-sm/medium",
-        children: (0, i.jsx)(v, {})
+        children: (0, i.jsx)(x, {})
       })]
     })
   })
@@ -84,7 +84,7 @@ function g(e) {
   return (0, u.to)() ? (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: n,
-      children: t ? (0, i.jsx)(m, {}) : (0, i.jsx)(x, {})
+      children: t ? (0, i.jsx)(m, {}) : (0, i.jsx)(v, {})
     }), a && (0, i.jsx)(l.izJ, {
       gap: 16
     })]
