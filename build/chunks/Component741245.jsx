@@ -335,6 +335,7 @@ class I extends(r = Chunk473749.PureComponent) {
         className: h.animationContainer,
         style: this.getContainerStyle(),
         children: [(0, i.jsx)(d.ZX5, {
+          "data-migration-pending": true,
           className: h.shine,
           style: this.getShineStyle()
         }), this.renderSvgCopy()]

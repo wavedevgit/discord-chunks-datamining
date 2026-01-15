@@ -683,6 +683,9 @@ class D extends Chunk495852.C {
         case 10:
           a.displayNameStyles = T.internalBinaryRead(e, e.uint32(), n, a.displayNameStyles);
           break;
+        case 11:
+          a.storeCountry = ea.internalBinaryRead(e, e.uint32(), n, a.storeCountry);
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -753,7 +756,7 @@ class D extends Chunk495852.C {
     for (let i of Object.keys(e.linkedUsers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), L.internalBinaryWrite(e.linkedUsers[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFeatureLimits)) t.tag(2, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), U.internalBinaryWrite(e.safetyFeatureLimits[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFlags)) t.tag(3, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), Z.internalBinaryWrite(e.safetyFlags[i], t, n), t.join().join();
-    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && P.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && R.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && A.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
+    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && P.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && R.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && A.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.storeCountry && ea.internalBinaryWrite(e.storeCountry, t.tag(11, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -820,6 +823,11 @@ class D extends Chunk495852.C {
       name: "display_name_styles",
       kind: "message",
       T: () => T
+    }, {
+      no: 11,
+      name: "store_country",
+      kind: "message",
+      T: () => ea
     }])
   }
 }
@@ -1482,4 +1490,55 @@ class en extends Chunk495852.C {
     }])
   }
 }
-let er = new en
+let er = new en;
+class ei extends Chunk495852.C {
+  create(e) {
+    let t = {
+      country: ""
+    };
+    return globalThis.Object.defineProperty(t, a.C, {
+      enumerable: false,
+      value: this
+    }), true !== e && (0, i.l)(this, t, e), t
+  }
+  internalBinaryRead(e, t, n, i) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
+      let [t, i] = e.tag();
+      switch (t) {
+        case 1:
+          a.country = e.string();
+          break;
+        case 2:
+          a.setAt = l.E.internalBinaryRead(e, e.uint32(), n, a.setAt);
+          break;
+        default:
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let s = e.skip(i);
+          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+      }
+    }
+    return a
+  }
+  internalBinaryWrite(e, t, n) {
+    "" !== e.country && t.tag(1, r.TD.LengthDelimited).string(e.country), e.setAt && l.E.internalBinaryWrite(e.setAt, t.tag(2, r.TD.LengthDelimited).fork(), n).join();
+    let i = n.writeUnknownFields;
+    returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
+  }
+  constructor() {
+    super("discord_protos.users.v1.StoreCountry", [{
+      no: 1,
+      name: "country",
+      kind: "scalar",
+      T: 9
+    }, {
+      no: 2,
+      name: "set_at",
+      kind: "message",
+      T: () => l.E
+    }])
+  }
+}
+let ea = new ei

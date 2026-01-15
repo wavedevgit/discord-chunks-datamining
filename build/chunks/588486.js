@@ -31,7 +31,7 @@ var Chunk230367 = require("./230367.js"),
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CONTROL = 1] = "CONTROL", e[e.TREATMENT = 2] = "TREATMENT", e[e.OVERRIDE = 3] = "OVERRIDE", e
   }({}),
   m = function(e) {
-    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e
+    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e[e.PRESERVED = 4] = "PRESERVED", e
   }({}),
   g = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.MEASUREMENT = 2] = "MEASUREMENT", e[e.ROLLING_OUT = 4] = "ROLLING_OUT", e[e.ARCHIVED = 6] = "ARCHIVED", e[e.AA_MODE = 7] = "AA_MODE", e
