@@ -2,7 +2,7 @@
 /** chunk id: 289823, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -139,64 +139,79 @@ let S = {
   [Chunk481060.EFr.SIZE_16]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_16,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_16,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_16
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_16,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_16
   },
   [Chunk481060.EFr.SIZE_20]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_20,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_20,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_20
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_20,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_20
   },
   [Chunk481060.EFr.SIZE_24]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_24,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_24,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_24
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_24,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_24
   },
   [Chunk481060.EFr.SIZE_32]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_32,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_32,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_32
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_32,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_32
   },
   [Chunk481060.EFr.SIZE_40]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_32,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_32,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_32
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_32,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_32
   },
   [Chunk481060.EFr.SIZE_48]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_40,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_40,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_40
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_40,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_40
   },
   [Chunk481060.EFr.SIZE_56]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_56,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_56,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_56
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_56,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_56
   },
   [Chunk481060.EFr.SIZE_72]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_72,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_72,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_72
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_72,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_72
   },
   [Chunk481060.EFr.SIZE_80]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_80,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_80,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_80
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_80,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_80
   },
   [Chunk481060.EFr.SIZE_96]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_96,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_96,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_96
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_96,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_96
   },
   [Chunk481060.EFr.SIZE_120]: {
     default: Chunk686546.QS.DIAGONAL_FACEPILE_120,
     typing: Chunk686546.QS.DIAGONAL_FACEPILE_TYPING_120,
-    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_120
+    status: Chunk686546.QS.DIAGONAL_FACEPILE_STATUS_120,
+    back: Chunk686546.QS.DIAGONAL_FACEPILE_BACK_120
   }
 };
 
-function I(e, t, n) {
+function I(e) {
+  return S[e].back
+}
+
+function T(e, t, n) {
   return t ? S[n].typing : e ? S[n].status : S[n].default
 }
-let T = function(e) {
+let C = function(e) {
   var {
     backSrc: t,
     frontSrc: n,
@@ -211,13 +226,13 @@ let T = function(e) {
   } = c.ny6[a], {
     statusCoords: y,
     frontAvatarOffsetPx: S,
-    frontAvatarSizePx: T,
-    backAvatarSizePx: C
+    frontAvatarSizePx: C,
+    backAvatarSizePx: A
   } = i.useMemo(() => {
     var e;
     let t = "".concat(b, "-").concat(s);
     return null != (e = g[t]) ? e : E(a, s, t)
-  }, [b, s, a]), A = I(null != l, s, a);
+  }, [b, s, a]), N = T(null != l, s, a), P = I(a);
   return (0, r.jsxs)("div", {
     style: _({
       width: b,
@@ -227,14 +242,19 @@ let T = function(e) {
     "aria-hidden": m["aria-hidden"],
     className: o()(f.container, p),
     children: [(0, r.jsxs)(u.ZP, {
-      mask: A,
+      mask: N,
       height: b,
       width: b,
-      children: [(0, r.jsx)("img", {
-        src: t,
-        alt: "",
-        width: C,
-        height: C
+      children: [(0, r.jsx)(u.ZP, {
+        mask: P,
+        height: b,
+        width: b,
+        children: (0, r.jsx)("img", {
+          src: t,
+          alt: "",
+          width: A,
+          height: A
+        })
       }), (0, r.jsx)("div", {
         style: {
           position: "absolute",
@@ -243,7 +263,7 @@ let T = function(e) {
         },
         children: (0, r.jsx)(v, {
           src: n,
-          size: T,
+          size: C,
           isTyping: s,
           status: l
         })
