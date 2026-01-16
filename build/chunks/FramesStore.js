@@ -2,7 +2,7 @@
 /** chunk id: 591472, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -51,16 +51,17 @@ function f(e, t) {
 let p = null,
   _ = new Map,
   h = new Map,
-  m = new Map;
+  m = new Map,
+  g = new Map;
 
-function g(e) {
+function E(e) {
   let {
     applicationId: t
   } = e;
   _.set(t, true)
 }
 
-function E(e) {
+function b(e) {
   let {
     applicationId: t,
     proxyTicket: n
@@ -76,21 +77,21 @@ function E(e) {
   }
 }
 
-function b(e) {
+function y(e) {
   let {
     applicationId: t
   } = e;
   _.delete(t)
 }
 
-function y(e) {
+function O(e) {
   let {
     applicationId: t
   } = e;
   (null == p ? true : p.applicationId) === t && (p = null)
 }
 
-function O(e) {
+function v(e) {
   let {
     applicationId: t,
     layoutMode: n
@@ -100,7 +101,7 @@ function O(e) {
   }))
 }
 
-function v(e) {
+function S(e) {
   let {
     activityPanelMode: t
   } = e;
@@ -109,15 +110,33 @@ function v(e) {
   }))
 }
 
-function S(e) {
+function I(e) {
   let {
     applicationId: t,
     lockState: n,
     pictureInPictureLockState: r
   } = e;
-  null == n ? h.delete(t) : h.set(t, n), null === r ? m.delete(t) : true !== r && m.set(t, r)
+  null == n ? m.delete(t) : m.set(t, n), null === r ? g.delete(t) : true !== r && g.set(t, r)
 }
-class I extends(r = Chunk442837.ZP.Store) {
+
+function T(e) {
+  let {
+    applicationId: t,
+    refreshing: n
+  } = e;
+  n ? h.set(t, true) : h.delete(t)
+}
+
+function C(e) {
+  let {
+    applicationId: t,
+    proxyTicket: n
+  } = e;
+  (null == p ? true : p.applicationId) === t && (p = f(u({}, p), {
+    proxyTicket: n
+  }))
+}
+class A extends(r = Chunk442837.ZP.Store) {
   getConnectedFrame() {
     return p
   }
@@ -135,21 +154,26 @@ class I extends(r = Chunk442837.ZP.Store) {
     var t;
     return null != e ? null != (t = _.get(e)) && t : _.size > 0
   }
+  isProxyTicketRefreshing(e) {
+    return h.has(e)
+  }
   getOrientationLockStateForApp(e) {
-    return h.get(e)
+    return m.get(e)
   }
   getPipOrientationLockStateForApp(e) {
     var t;
-    return null != (t = m.get(e)) ? t : this.getOrientationLockStateForApp(e)
+    return null != (t = g.get(e)) ? t : this.getOrientationLockStateForApp(e)
   }
 }
-c(I, "displayName", "FramesStore");
-let T = new I(Chunk570140.Z, {
-  FRAME_LAUNCH_START: g,
-  FRAME_LAUNCH: E,
-  FRAME_LAUNCH_FAIL: b,
-  FRAME_STOP: y,
-  FRAME_UPDATE_LAYOUT_MODE: O,
-  FRAME_SET_PANEL_MODE: v,
-  FRAME_SET_ORIENTATION_LOCK_STATE: S
+c(A, "displayName", "FramesStore");
+let N = new A(Chunk570140.Z, {
+  FRAME_LAUNCH_START: E,
+  FRAME_LAUNCH: b,
+  FRAME_LAUNCH_FAIL: y,
+  FRAME_STOP: O,
+  FRAME_UPDATE_LAYOUT_MODE: v,
+  FRAME_SET_PANEL_MODE: S,
+  FRAME_SET_ORIENTATION_LOCK_STATE: I,
+  FRAME_SET_PROXY_TICKET_REFRESHING: T,
+  FRAME_UPDATE_PROXY_TICKET: C
 })

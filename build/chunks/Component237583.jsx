@@ -77,13 +77,17 @@ class _ extends(r = Chunk473749.PureComponent) {
         guildId: f
       } = this.props, p = e instanceof c.Z ? e : null != e ? e.user : null;
       return null == p ? (0, i.jsx)("div", {
-        className: s()(u.emptyUser, t)
+        className: s()(u.emptyUser, t),
+        style: {
+          width: (0, l.dcp)(o),
+          height: (0, l.dcp)(o)
+        }
       }, n) : (0, i.jsx)(l.qEK, {
         tabIndex: 0,
         src: p.getAvatarURL(f, (0, l.dcp)(o)),
         size: o,
         "aria-label": p.username,
-        className: s()(t, d.cursorPointer, u.avatarSize),
+        className: s()(t, d.cursorPointer),
         onClick: e => null != a ? a(e, p, this._ref) : null
       }, p.id)
     })

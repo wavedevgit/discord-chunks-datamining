@@ -19,20 +19,20 @@ function d(e) {
     var t, a, o = function(e, n) {
       if (null == e) return {};
       var t, a, o = {},
-        r = Object.keys(e);
-      for (a = 0; a < r.length; a++) t = r[a], n.indexOf(t) >= 0 || (o[t] = e[t]);
+        i = Object.keys(e);
+      for (a = 0; a < i.length; a++) t = i[a], n.indexOf(t) >= 0 || (o[t] = e[t]);
       return o
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (a = 0; a < r.length; a++) t = r[a], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+      var i = Object.getOwnPropertySymbols(e);
+      for (a = 0; a < i.length; a++) t = i[a], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
     }
     return o
   }(e, ["onClick"]);
   let {
     parentAnalyticsLocation: d
-  } = (0, r.ZP)();
-  return (0, a.jsx)(i.Z, function(e) {
+  } = (0, i.ZP)();
+  return (0, a.jsx)(c.Z, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         a = Object.keys(t);
@@ -54,7 +54,7 @@ function d(e) {
     iconComponent: o.xhG,
     tooltipPosition: "bottom",
     onClick: e => {
-      (0, c.v)(d, c.d.MORE), n(e)
+      (0, r.v)(d, r.d.MORE), n(e)
     }
   }, t))
 }

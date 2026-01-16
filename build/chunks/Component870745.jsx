@@ -11,19 +11,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, n, t) {
-  let d = (0, o.e7)([i.Z], () => i.Z.getChannel(n)),
+  let d = (0, o.e7)([c.Z], () => c.Z.getChannel(n)),
     u = null == d ? true : d.getGuildId();
-  return (0, a.jsx)(r.sNh, {
+  return (0, a.jsx)(i.sNh, {
     id: "report-app",
     color: "danger",
     label: l.intl.string(l.t.NgA5vp),
-    action: () => (0, c.uu)({
+    action: () => (0, r.uu)({
       application: e,
       entrypoint: "activity_ui_popout",
       contextualGuildId: null != u ? u : true,
       contextualChannelId: null == d ? true : d.id,
       appContext: t
     }),
-    icon: r.U65
+    icon: i.U65
   })
 }

@@ -17,13 +17,13 @@ function b(e) {
   var n, t;
   let {
     windowKey: b
-  } = e, f = (0, d.Z)(), p = (0, o.e7)([c.Z], () => c.Z.getConnectedFrame()), {
+  } = e, f = (0, d.Z)(), p = (0, o.e7)([r.Z], () => r.Z.getConnectedFrame()), {
     data: m
-  } = (0, r.IX)(null == p ? true : p.applicationId), h = null != (t = null != (n = null == f ? true : f.name) ? n : null == m ? true : m.name) ? t : s.intl.string(s.t.IC5Ann);
+  } = (0, i.IX)(null == p ? true : p.applicationId), h = null != (t = null != (n = null == f ? true : f.name) ? n : null == m ? true : m.name) ? t : s.intl.string(s.t.IC5Ann);
   return (0, a.jsx)(l.Z, {
     withTitleBar: true,
     windowKey: b,
     title: h,
-    children: null != f ? (0, a.jsx)(u.Z, {}) : (0, a.jsx)(i.Z, {})
+    children: null != f ? (0, a.jsx)(u.Z, {}) : (0, a.jsx)(c.Z, {})
   })
 }

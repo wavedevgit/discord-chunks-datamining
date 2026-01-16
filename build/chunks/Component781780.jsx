@@ -15,12 +15,12 @@ function l(e) {
     queryParams: t,
     url: l
   } = e;
-  return (0, a.jsx)(r.J, {
+  return (0, a.jsx)(i.J, {
     allowPopups: (0, o.h)(n),
-    referrerPolicy: c.um.has(n.id) ? "no-referrer" : "origin",
+    referrerPolicy: r.um.has(n.id) ? "no-referrer" : "origin",
     url: l,
     queryParams: t,
-    className: i.iframe,
+    className: c.iframe,
     shouldRefocus: false
   })
 }

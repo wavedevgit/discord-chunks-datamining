@@ -3,6 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   launchFrame: () => u,
+  refreshProxyTicket: () => _,
   stopFrame: () => d,
   updateFrameLayoutMode: () => f,
   updateFramePanelMode: () => p
@@ -76,4 +77,33 @@ function p(e) {
     type: "FRAME_SET_PANEL_MODE",
     activityPanelMode: e
   })
+}
+async function _(e) {
+  let {
+    applicationId: t
+  } = e;
+  r.Z.dispatch({
+    type: "FRAME_SET_PROXY_TICKET_REFRESHING",
+    applicationId: t,
+    refreshing: true
+  });
+  try {
+    let e = await (0, i.a_)(t);
+    r.Z.dispatch({
+      type: "FRAME_UPDATE_PROXY_TICKET",
+      applicationId: t,
+      proxyTicket: e
+    })
+  } catch (r) {
+    let e = (0, s.Z)(),
+      n = await (0, o.k)(r, t);
+    return e.showLaunchErrorModal(n.message), false
+  } finally {
+    r.Z.dispatch({
+      type: "FRAME_SET_PROXY_TICKET_REFRESHING",
+      applicationId: t,
+      refreshing: false
+    })
+  }
+  returntrue
 }

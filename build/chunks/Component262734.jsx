@@ -155,7 +155,9 @@ function w(e) {
           onOpenPopout: () => {
             (0, m.yw)(j.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, g.Z)({
               onConfirm: async () => {
-                (null == n ? true : n.id) != null && await (0, p.nJ)(n.id, null), (0, p.Gj)()
+                (null == n ? true : n.id) != null && await C.Z.refreshProxyTicket({
+                  applicationId: n.id
+                }), (0, p.Gj)()
               }
             })
           },

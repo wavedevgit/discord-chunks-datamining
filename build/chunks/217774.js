@@ -38,7 +38,7 @@ function p(e) {
     }
     null == p || p();
     try {
-      if (E) s.Z.launchFrame({
+      if (E) await s.Z.launchFrame({
         applicationId: t
       });
       else {
