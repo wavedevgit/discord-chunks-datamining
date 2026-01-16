@@ -320,7 +320,7 @@ function k(e) {
     adContentIds: t,
     questContent: n
   } = e;
-  return "".concat(t.sort().join("_"), "_").concat(n)
+  return "".concat([...t].sort().join("_"), "_").concat(n)
 }
 
 function U(e, t) {

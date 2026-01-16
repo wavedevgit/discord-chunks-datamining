@@ -36,13 +36,13 @@ function E(e) {
     maxSeekableTime: b,
     onClick: O,
     onScrubBack: _,
-    onScrubForward: x
-  } = e, [y, j] = o.useState(null), [P, D] = o.useState(null), [T, R] = o.useState(null), [N, I] = o.useState(false), A = o.useRef(null), w = e => {
+    onScrubForward: y
+  } = e, [x, j] = o.useState(null), [P, D] = o.useState(null), [T, R] = o.useState(null), [N, I] = o.useState(false), A = o.useRef(null), w = e => {
     A.current = e, j(e)
   };
   o.useEffect(() => {
-    null != y && (null == b ? R(null) : R(v(b, S, y)))
-  }, [y, b, S]);
+    null != x && (null == b ? R(null) : R(v(b, S, x)))
+  }, [x, b, S]);
   let L = (0, c.Z)(e => {
       w(e.contentRect)
     }),
@@ -62,13 +62,13 @@ function E(e) {
       let {
         key: t
       } = e;
-      t === m.mR.ArrowLeft && null != _ ? (e.preventDefault(), e.stopPropagation(), _()) : t === m.mR.ArrowRight && null != x && (e.preventDefault(), e.stopPropagation(), x())
-    }, [_, x]),
-    Z = null != P && null != y ? p(P, y, S) : 0,
+      t === m.mR.ArrowLeft && null != _ ? (e.preventDefault(), e.stopPropagation(), _()) : t === m.mR.ArrowRight && null != y && (e.preventDefault(), e.stopPropagation(), y())
+    }, [_, y]),
+    Z = null != P && null != x ? p(P, x, S) : 0,
     F = (0, d.yv)(Z),
-    B = null != y ? y.right - v(n / 100 * S, S, y) : null,
-    U = null != P && null != y ? y.right - P : null,
-    q = null != T && null != y ? y.right - T : null;
+    B = null != x ? x.right - v(n / 100 * S, S, x) : null,
+    U = null != P && null != x ? x.right - P : null,
+    q = null != T && null != x ? x.right - T : null;
   return (0, r.jsxs)("div", {
     className: f.cont,
     ref: k,

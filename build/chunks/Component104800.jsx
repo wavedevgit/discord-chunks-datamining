@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk209668 = require("./209668.js");
 
-function x(e) {
+function y(e) {
   let {
     quest: t,
     sourceQuestContent: n
@@ -45,7 +45,7 @@ function x(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     title: t,
     subtitle: n,
@@ -253,12 +253,12 @@ function N(e) {
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(x, {
+    children: [(0, r.jsx)(y, {
       quest: N,
       sourceQuestContent: R
     }), (0, r.jsx)("div", {
       className: _.videoContOverlay
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(x, {
       title: M,
       subtitle: V,
       icon: a.d4D,

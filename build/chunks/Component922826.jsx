@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk209668 = require("./209668.js");
 let _ = "-:--",
-  x = {
+  y = {
     [Chunk325916.rq.PLAYING]: {
       icon: Chunk481060.fpf,
       label: Chunk388032.intl.string(Chunk388032.t.ZcgDJX)
@@ -38,7 +38,7 @@ let _ = "-:--",
       label: Chunk388032.intl.string(Chunk388032.t.hsvh0i)
     }
   },
-  y = {
+  x = {
     [Chunk325916._H.MD]: Chunk325916.Cq.MD,
     [Chunk325916._H.LG]: Chunk325916.Cq.LG
   },
@@ -226,7 +226,7 @@ function T(e) {
     {
       icon: em,
       label: ef
-    } = x[d];
+    } = y[d];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: O.videoControlsGroup,
@@ -239,7 +239,7 @@ function T(e) {
         shortcut: C.Y1.PLAYBACK,
         onClick: A,
         ref: eo,
-        buttonSize: y[I]
+        buttonSize: x[I]
       }), "portrait" !== el && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(D, {
           iconComponent: g.F,
@@ -249,7 +249,7 @@ function T(e) {
           ariaLabel: b.intl.string(b.t.r9s3Uv),
           tooltipLabel: b.intl.string(b.t.r9s3Uv),
           shortcut: C.Y1.SEEK_BACK,
-          buttonSize: y[I]
+          buttonSize: x[I]
         }), (0, r.jsx)(D, {
           iconComponent: h.j,
           animationTime: S,
@@ -260,7 +260,7 @@ function T(e) {
           tooltipLabel: j ? b.intl.string(b.t.zWDcNP) : b.intl.string(b.t.xXh3yw),
           tooltipDelayMs: 1500 * !!j,
           shortcut: C.Y1.SEEK_FORWARD,
-          buttonSize: y[I]
+          buttonSize: x[I]
         })]
       })]
     }), (0, r.jsxs)(a.animated.div, {
@@ -285,7 +285,7 @@ function T(e) {
           ariaLabel: b.intl.string(b.t["eIl+AK"]),
           tooltipLabel: b.intl.string(b.t["eIl+AK"]),
           shortcut: C.Y1.MUTE,
-          buttonSize: y[I]
+          buttonSize: x[I]
         }), (0, r.jsx)(a.animated.div, {
           className: O.volumeSlider,
           style: {
@@ -332,7 +332,7 @@ function T(e) {
         disabled: d === C.rq.ENDED,
         ariaLabel: b.intl.string(b.t.KCzjTi),
         tooltipLabel: b.intl.string(b.t.KCzjTi),
-        buttonSize: y[I]
+        buttonSize: x[I]
       }), !T && (0, r.jsx)(D, {
         iconComponent: E.c,
         animationTime: S,
@@ -342,7 +342,7 @@ function T(e) {
         ariaLabel: b.intl.string(b.t.bDSZO1),
         tooltipLabel: b.intl.string(b.t.bDSZO1),
         shortcut: C.Y1.CAPTION,
-        buttonSize: y[I]
+        buttonSize: x[I]
       }), (0, r.jsx)(D, {
         iconComponent: G ? m.wvt : m.NpZ,
         animationTime: S,
@@ -351,7 +351,7 @@ function T(e) {
         ariaLabel: b.intl.string(b.t.vKZT5t),
         tooltipLabel: b.intl.string(b.t.vKZT5t),
         shortcut: C.Y1.FULLSCREEN,
-        buttonSize: y[I]
+        buttonSize: x[I]
       })]
     })]
   })

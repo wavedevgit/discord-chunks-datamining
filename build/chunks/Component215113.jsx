@@ -142,7 +142,7 @@ function w(e) {
           className: T.modalBody,
           children: (0, r.jsxs)("div", {
             className: T.modalContent,
-            children: [(0, r.jsx)(y.Z, {
+            children: [(0, r.jsx)(x.Z, {
               videoTask: B,
               parentTransitionState: l,
               onOptimisticProgressUpdate: V,
@@ -154,7 +154,7 @@ function w(e) {
               className: T.contentFooterPortrait,
               children: [(0, r.jsxs)("div", {
                 className: T.portraitContentRow,
-                children: [L ? null : (0, r.jsx)(x.Z, {
+                children: [L ? null : (0, r.jsx)(y.Z, {
                   tooltipPosition: "top"
                 }), (0, r.jsx)(_.Z, {})]
               }), (0, r.jsxs)("div", {
@@ -173,7 +173,7 @@ function w(e) {
               className: T.contentFooter,
               children: [(0, r.jsxs)("div", {
                 className: T.contentFooterAdInfo,
-                children: [L ? null : (0, r.jsx)(x.Z, {
+                children: [L ? null : (0, r.jsx)(y.Z, {
                   tooltipPosition: "top"
                 }), (0, r.jsx)(_.Z, {})]
               }), (0, r.jsxs)("div", {

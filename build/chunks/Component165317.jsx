@@ -27,8 +27,8 @@ function C(e) {
   } = e, {
     quest: O,
     sourceQuestContent: _,
-    onClose: x
-  } = o.useContext(v.VideoQuestModalContext), [y, j] = o.useState(false), P = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), D = o.useRef(null == (t = O.userStatus) ? true : t.completedAt), [T, R] = o.useState(false), N = (0, d.w8)(O.config), {
+    onClose: y
+  } = o.useContext(v.VideoQuestModalContext), [x, j] = o.useState(false), P = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), D = o.useRef(null == (t = O.userStatus) ? true : t.completedAt), [T, R] = o.useState(false), N = (0, d.w8)(O.config), {
     completedRatio: I,
     completedRatioDisplay: A
   } = (0, u.I)(O), w = (null == (n = O.userStatus) ? true : n.completedAt) != null, L = (null == (C = O.userStatus) ? true : C.claimedAt) != null, k = E.intl.formatToPlainString(w && !L ? E.t.NRp4K4 : E.t["12IWP2"], {
@@ -42,7 +42,7 @@ function C(e) {
     quest: O,
     questContent: c.jn.QUEST_HOME_DESKTOP,
     sourceQuestContent: _,
-    onCloseModal: x,
+    onCloseModal: y,
     shouldShowShopIfAlreadyClaimed: false
   });
   return (0, r.jsxs)("div", {
@@ -74,7 +74,7 @@ function C(e) {
           quest: O,
           size: 48,
           percentComplete: I,
-          percentCompleteText: y ? A : true,
+          percentCompleteText: x ? A : true,
           percentCompleteTextVariant: "text-sm/medium",
           children: (0, r.jsx)(f.Z, {
             className: g.questProgressRewardTile,

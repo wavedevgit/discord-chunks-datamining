@@ -33,7 +33,7 @@ function C() {
     onClose: l,
     sourceQuestContent: t,
     impressionId: C
-  }), x = e.config.ctaConfig.subtitle, y = true !== x && !(0, u.Ew)(x);
+  }), y = e.config.ctaConfig.subtitle, x = true !== y && !(0, u.Ew)(y);
   return (0, r.jsx)(a.u, {
     text: g.intl.string(g.t.EuHF34),
     children: (0, r.jsx)(s.P3F, {
@@ -79,7 +79,7 @@ function C() {
             color: O ? "text-strong" : "text-subtle",
             lineClamp: 1,
             children: e.config.messages.gamePublisher
-          }), y ? (0, r.jsxs)(r.Fragment, {
+          }), x ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               "aria-hidden": "true",
               className: i()(h.dotSpacer, {
@@ -92,7 +92,7 @@ function C() {
               variant: "heading-sm/medium",
               lineClamp: n ? true : 1,
               color: O ? "text-strong" : "text-subtle",
-              children: x
+              children: y
             })]
           }) : null]
         })]

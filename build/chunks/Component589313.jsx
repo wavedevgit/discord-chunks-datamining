@@ -1,13 +1,15 @@
 /** Chunk was on 75909 **/
 /** chunk id: 589313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
   Chunk115179 = require("./115179.js"),
@@ -15,41 +17,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function p() {
+function E() {
   var e, t, n;
   let {
-    quest: p,
-    sourceQuestContent: v,
-    onClose: E
-  } = o.useContext(m.VideoQuestModalContext), g = (0, c.tP)(p), h = null != (0, u.LM)(p.config), C = (0, d.D)({
-    quest: p,
-    questContent: s.jn.QUEST_HOME_DESKTOP,
-    sourceQuestContent: v,
-    onCloseModal: E,
+    quest: E,
+    sourceQuestContent: g,
+    onClose: h
+  } = o.useContext(p.VideoQuestModalContext), C = (0, d.tP)(E), S = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), b = null != (0, m.LM)(E.config), O = (0, f.D)({
+    quest: E,
+    questContent: u.jn.QUEST_HOME_DESKTOP,
+    sourceQuestContent: g,
+    onCloseModal: h,
     shouldShowShopIfAlreadyClaimed: true
-  }), S = (null == (e = p.userStatus) ? true : e.claimedAt) != null ? h ? f.intl.string(f.t.WYchde) : f.intl.string(f.t.vTgCWx) : f.intl.string(f.t.cfY4PE), b = (null == (t = p.userStatus) ? true : t.completedAt) == null ? g ? f.intl.string(f.t.NJ6Bnm) : f.intl.string(f.t.USNO1K) : true;
-  return (0, r.jsx)(i.u, {
-    text: b,
+  }), _ = (null == (e = E.userStatus) ? true : e.claimedAt) != null ? b ? v.intl.string(v.t.WYchde) : v.intl.string(v.t.vTgCWx) : v.intl.string(v.t.cfY4PE), y = (null == (t = E.userStatus) ? true : t.completedAt) == null ? C ? v.intl.string(v.t.NJ6Bnm) : v.intl.string(v.t.USNO1K) : true;
+  return (0, r.jsx)(a.u, {
+    text: y,
     children: (0, r.jsx)("div", {
-      children: (0, r.jsx)(a.Button, {
+      children: (0, r.jsx)(s.Button, {
         variant: "secondary",
         fullWidth: true,
-        icon: (e => {
-          var t, n;
-          if ((null == (t = e.userStatus) ? true : t.claimedAt) == null) return {
+        icon: ((e, t) => {
+          var n, r;
+          if ((null == (n = e.userStatus) ? true : n.claimedAt) == null) return {
             type: "rive",
-            asset: a.ax1,
+            asset: s.ax1,
             riveProps: {
+              withReducedMotion: "play",
               dataBinding: {
-                locked: (null == (n = e.userStatus) ? true : n.completedAt) === null,
-                fill: l.Z.colors.ICON_STRONG
+                locked: (null == (r = e.userStatus) ? true : r.completedAt) === null,
+                fill: i.Z.colors.ICON_STRONG,
+                reducedMotion: t
               }
             }
           }
-        })(p),
-        onClick: C,
-        text: S,
-        disabled: (null == (n = p.userStatus) ? true : n.completedAt) == null
+        })(E, S),
+        onClick: O,
+        text: _,
+        disabled: (null == (n = E.userStatus) ? true : n.completedAt) == null
       })
     })
   })
