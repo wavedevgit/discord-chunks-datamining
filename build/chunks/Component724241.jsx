@@ -2,11 +2,12 @@
 /** chunk id: 724241, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk731722 = require("./731722.js"),
   Chunk648052 = require("./648052.jsx"),
   Chunk530 = require("./530.jsx"),
   Chunk420654 = require("./420654.jsx"),
@@ -17,55 +18,57 @@ var Chunk442837 = require("./442837.js"),
   Chunk671955 = require("./671955.js"),
   Chunk155493 = require("./155493.js");
 
-function _(e) {
+function h(e) {
   let {
     user: t,
     displayProfile: n,
-    guild: _,
-    pendingAvatar: h,
-    pendingNickname: m,
-    pendingGlobalName: g,
-    pendingBio: E,
-    pendingPronouns: b,
-    pendingLegacyUsernameDisabled: y,
-    pendingBadges: O,
-    pendingDisplayNameStyles: v,
-    isTryItOut: S,
-    hideBioSection: I,
-    shouldOpenBadgeTooltip: T
-  } = e, C = (0, i.e7)([c.ZP], () => null == _ ? null : c.ZP.getMember(_.id, t.id)), A = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), P = null != b ? b : null == n ? true : n.pronouns, w = (0, d.Ly)({
-    pendingNickname: m,
-    pendingGlobalName: g,
+    guild: h,
+    pendingAvatar: m,
+    pendingNickname: g,
+    pendingGlobalName: E,
+    pendingBio: b,
+    pendingPronouns: y,
+    pendingLegacyUsernameDisabled: O,
+    pendingBadges: v,
+    pendingDisplayNameStyles: S,
+    pendingPrimaryGuildId: I,
+    isTryItOut: T,
+    hideBioSection: C,
+    shouldOpenBadgeTooltip: A
+  } = e, N = (0, i.e7)([u.ZP], () => null == h ? null : u.ZP.getMember(h.id, t.id)), P = (0, i.e7)([d.Z], () => d.Z.hidePersonalInformation), w = null == n ? true : n.getPreviewBio(b), R = null != y ? y : null == n ? true : n.pronouns, D = (0, f.Ly)({
+    pendingNickname: g,
+    pendingGlobalName: E,
     user: t,
-    guildMember: C
-  }), R = () => {
-    if (null != C && null !== h && (null != C.avatar || null != h)) return (0, r.jsx)(l.Z, {
+    guildMember: N
+  }), x = (0, a.oZ)(I), L = () => {
+    if (null != N && null !== m && (null != N.avatar || null != m)) return (0, r.jsx)(c.Z, {
       user: t,
-      nickname: w
+      nickname: D
     })
   };
   return (0, r.jsxs)("div", {
-    className: p.body,
+    className: _.body,
     inert: true,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(s.Z, {
       user: t,
-      guildId: null == _ ? true : _.id,
-      usernameIcon: R(),
-      nickname: w,
-      pendingDisplayNameStyles: v,
-      pronouns: P,
-      isTryItOut: S,
-      tags: (0, r.jsx)(a.Z, {
+      guildId: null == h ? true : h.id,
+      usernameIcon: L(),
+      nickname: D,
+      pendingDisplayNameStyles: S,
+      pronouns: R,
+      primaryGuild: x,
+      isTryItOut: T,
+      tags: (0, r.jsx)(o.Z, {
         displayProfile: n,
-        themeType: f.l.POPOUT,
-        pendingLegacyUsernameDisabled: y,
-        pendingBadges: O,
-        shouldOpenBadgeTooltip: T
+        themeType: p.l.POPOUT,
+        pendingLegacyUsernameDisabled: O,
+        pendingBadges: v,
+        shouldOpenBadgeTooltip: A
       })
-    }), !I && null != N && "" !== N && (0, r.jsx)(s.Z, {
+    }), !C && null != w && "" !== w && (0, r.jsx)(l.Z, {
       user: t,
-      bio: N,
-      hidePersonalInformation: A,
+      bio: w,
+      hidePersonalInformation: P,
       viewFullBioDisabled: true
     })]
   })

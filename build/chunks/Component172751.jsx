@@ -98,53 +98,52 @@ let b = Chunk473749.memo(function(e) {
     })
   }),
   O = Chunk473749.memo(function(e) {
-    var t;
     let {
-      primaryGuild: n,
-      userId: a,
-      contextGuildId: p,
-      className: _,
-      containerClassName: h,
-      textVariant: g,
-      textColor: b,
-      badgeSize: O,
-      disableGuildProfile: v = false,
-      inline: S = true,
-      onShowProfile: I,
-      onClose: T
-    } = e, C = i.useRef(null), A = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), N = (0, s.e7)([u.Z], () => u.Z.theme), P = null != (t = null == A ? true : A.primaryGuild) ? t : n, {
-      tag: w,
-      badge: R,
-      guildId: D
-    } = (0, f.Pb)(P);
-    return (0, f.yF)(a, p) && null != D ? v ? (0, r.jsx)(y, {
-      guildId: D,
-      guildTag: w,
-      guildBadge: R,
-      className: o()(m.noTooltip, _),
-      textVariant: g,
-      textColor: b,
-      badgeSize: O,
-      inline: S
+      primaryGuild: t,
+      userId: n,
+      contextGuildId: a,
+      className: p,
+      containerClassName: _,
+      textVariant: h,
+      textColor: g,
+      badgeSize: b,
+      disableGuildProfile: O = false,
+      inline: v = true,
+      onShowProfile: S,
+      onClose: I
+    } = e, T = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getUser(n), [n]), A = (0, s.e7)([u.Z], () => u.Z.theme), N = true !== t ? t : null == C ? true : C.primaryGuild, {
+      tag: P,
+      badge: w,
+      guildId: R
+    } = (0, f.Pb)(N);
+    return (0, f.yF)(n, a, N) && null != R ? O ? (0, r.jsx)(y, {
+      guildId: R,
+      guildTag: P,
+      guildBadge: w,
+      className: o()(m.noTooltip, p),
+      textVariant: h,
+      textColor: g,
+      badgeSize: b,
+      inline: v
     }) : (0, r.jsx)(l.ze6, {
-      theme: N,
+      theme: A,
       children: (0, r.jsx)(c.Z, {
-        guildId: D,
-        onRequestOpen: I,
-        onClose: T,
-        targetElementRef: C,
+        guildId: R,
+        onRequestOpen: S,
+        onClose: I,
+        targetElementRef: T,
         children: e => (0, r.jsx)("span", {
-          className: h,
-          ref: C,
+          className: _,
+          ref: T,
           children: (0, r.jsx)(y, E({
-            guildId: D,
-            guildTag: w,
-            guildBadge: R,
-            className: _,
-            textVariant: g,
-            textColor: b,
-            badgeSize: O,
-            inline: S
+            guildId: R,
+            guildTag: P,
+            guildBadge: w,
+            className: p,
+            textVariant: h,
+            textColor: g,
+            badgeSize: b,
+            inline: v
           }, e))
         })
       })

@@ -46,89 +46,90 @@ function I(e) {
     pendingProfileEffect: M,
     pendingLegacyUsernameDisabled: k,
     pendingDisplayNameStyles: U,
-    avatarClassName: G,
-    containerClassName: Z,
-    isTryItOut: F = false,
-    disabledInputs: B = false,
-    hideCustomStatus: V = false,
-    hideBioSection: H = false,
-    hideMessageInput: Y = true,
-    pendingBadges: W,
-    shouldOpenBadgeTooltip: K,
-    hideExampleButton: z = false,
-    interactive: q = true
-  } = e, Q = (0, c.ZP)(i.id, null == I ? true : I.id), X = (0, o.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), J = (0, h.Ys)({
+    pendingPrimaryGuildId: G,
+    avatarClassName: Z,
+    containerClassName: F,
+    isTryItOut: B = false,
+    disabledInputs: V = false,
+    hideCustomStatus: H = false,
+    hideBioSection: Y = false,
+    hideMessageInput: W = true,
+    pendingBadges: K,
+    shouldOpenBadgeTooltip: z,
+    hideExampleButton: q = false,
+    interactive: Q = true
+  } = e, X = (0, c.ZP)(i.id, null == I ? true : I.id), J = (0, o.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), $ = (0, h.Ys)({
     pendingValue: D,
     userValue: null == i ? true : i.avatarDecoration,
-    guildValue: null == X ? true : X.avatarDecoration,
+    guildValue: null == J ? true : J.avatarDecoration,
     guildId: null == I ? true : I.id
   }), {
-    avatarSrc: $,
-    avatarDecorationSrc: ee
+    avatarSrc: ee,
+    avatarDecorationSrc: et
   } = (0, d.Z)({
     userId: null == i ? true : i.id,
     guildId: null == I ? true : I.id,
-    avatarDecorationOverride: J,
+    avatarDecorationOverride: $,
     avatarOverride: R,
     size: s.EFr.SIZE_80,
     showPending: true
-  }), et = (0, h.Ys)({
+  }), en = (0, h.Ys)({
     pendingValue: M,
-    userValue: null == Q || null == (t = Q._userProfile) ? true : t.profileEffect,
-    guildValue: null == Q || null == (n = Q._guildMemberProfile) ? true : n.profileEffect,
+    userValue: null == X || null == (t = X._userProfile) ? true : t.profileEffect,
+    guildValue: null == X || null == (n = X._guildMemberProfile) ? true : n.profileEffect,
     guildId: null == I ? true : I.id
   }), {
-    theme: en,
-    primaryColor: er
+    theme: er,
+    primaryColor: ei
   } = (0, u.Z)({
     user: i,
-    displayProfile: Q,
+    displayProfile: X,
     pendingThemeColors: j,
     isPreview: T
-  }), ei = (0, r.jsxs)(f.Z, {
+  }), ea = (0, r.jsxs)(f.Z, {
     user: i,
-    displayProfile: Q,
+    displayProfile: X,
     themeType: O.l.POPOUT,
     pendingThemeColors: j,
-    className: a()(S.container, Z),
+    className: a()(S.container, F),
     forceShowPremium: T,
     children: [(0, r.jsxs)("div", {
       className: S.header,
       children: [(0, r.jsx)(g.Z, {
         user: i,
-        displayProfile: Q,
+        displayProfile: X,
         guildId: null == I ? true : I.id,
         canUsePremiumCustomization: T,
         pendingBanner: A,
         pendingAccentColor: N,
-        isTryItOut: F,
-        disabledInputs: B,
+        isTryItOut: B,
+        disabledInputs: V,
         onUpsellClick: () => null == C ? true : C({
           object: y.qAy.EDIT_PROFILE_BANNER
         })
       }), (0, r.jsx)(m.Z, {
         user: i,
         guild: I,
-        displayProfile: Q,
+        displayProfile: X,
         canUsePremiumCustomization: T,
-        previewAvatar: $,
-        previewAvatarDecorationSrc: ee,
-        previewTheme: en,
-        previewPrimaryColor: er,
-        className: G,
-        disabledInputs: B,
-        isTryItOut: F,
+        previewAvatar: ee,
+        previewAvatarDecorationSrc: et,
+        previewTheme: er,
+        previewPrimaryColor: ei,
+        className: Z,
+        disabledInputs: V,
+        isTryItOut: B,
         onUpsellClick: () => null == C ? true : C({
           object: y.qAy.AVATAR
         })
-      }), !V && (0, r.jsx)(p.Z, {
+      }), !H && (0, r.jsx)(p.Z, {
         user: i,
         themeType: O.l.POPOUT,
-        disableToolbar: B
+        disableToolbar: V
       })]
     }), (0, r.jsx)(E.Z, {
       user: i,
-      displayProfile: Q,
+      displayProfile: X,
       guild: I,
       pendingAvatar: R,
       pendingNickname: x,
@@ -137,23 +138,24 @@ function I(e) {
       pendingPronouns: w,
       pendingLegacyUsernameDisabled: k,
       pendingDisplayNameStyles: U,
-      isTryItOut: F,
-      hideBioSection: H,
-      pendingBadges: W,
-      shouldOpenBadgeTooltip: K
+      pendingPrimaryGuildId: G,
+      isTryItOut: B,
+      hideBioSection: Y,
+      pendingBadges: K,
+      shouldOpenBadgeTooltip: z
     }), (0, r.jsx)(b.Z, {
       user: i,
-      hideMessageInput: Y,
-      hideExampleButton: z
-    }), null != et && (0, r.jsx)(l.Z, {
-      skuId: et.skuId
+      hideMessageInput: W,
+      hideExampleButton: q
+    }), null != en && (0, r.jsx)(l.Z, {
+      skuId: en.skuId
     })]
   });
-  return q ? ei : (0, r.jsx)("div", {
+  return Q ? ea : (0, r.jsx)("div", {
     role: "img",
     "aria-label": v.intl.string(v.t.ayozFl),
     children: (0, r.jsx)(s.Rny, {
-      children: ei
+      children: ea
     })
   })
 }
