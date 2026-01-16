@@ -10,24 +10,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk968352 = require("./968352.js");
 
 function l(e) {
-  var n, t, l;
   let {
-    channelId: d,
-    guildId: u,
-    embeddedActivity: s,
-    application: b
-  } = e, f = {
-    instance_id: null != (l = null != (t = s.compositeInstanceId) ? t : s.launchId) ? l : "",
-    location_id: null == (n = s.location) ? true : n.id,
-    launch_id: s.launchId,
-    referrer_id: s.referrerId,
-    custom_id: s.customId
-  };
-  return null != u && "" !== u && (f.guild_id = u), null != d && "" !== d && (f.channel_id = d), (0, a.jsx)(c.J, {
-    allowPopups: (0, o.h)(b),
-    referrerPolicy: r.um.has(s.applicationId) ? "no-referrer" : "origin",
-    url: s.url,
-    queryParams: f,
+    application: n,
+    queryParams: t,
+    url: l
+  } = e;
+  return (0, a.jsx)(r.J, {
+    allowPopups: (0, o.h)(n),
+    referrerPolicy: c.um.has(n.id) ? "no-referrer" : "origin",
+    url: l,
+    queryParams: t,
     className: i.iframe,
     shouldRefocus: false
   })

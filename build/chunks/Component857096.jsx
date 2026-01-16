@@ -2,7 +2,7 @@
 /** chunk id: 857096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,6 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk835473 = require("./835473.js"),
+  Chunk928518 = require("./928518.js"),
   Chunk607187 = require("./607187.jsx"),
   Chunk937995 = require("./937995.jsx"),
   Chunk366050 = require("./366050.js"),
@@ -22,99 +23,100 @@ var Chunk120356 = require("./120356.js"),
   Chunk591472 = require("./591472.js"),
   Chunk754376 = require("./754376.jsx"),
   Chunk408491 = require("./408491.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk326464 = require("./326464.js"),
   Chunk290953 = require("./290953.js"),
   Chunk533348 = require("./533348.js");
 
-function I(e) {
+function C(e) {
   let {
     isLoading: t
-  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), I = i === b.U.PIP && !d, T = I && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
-  if (null == n || null == u) return null;
-  let C = {
+  } = e, n = (0, o.e7)([E.Z], () => E.Z.getConnectedFrame()), i = (0, o.e7)([E.Z], () => E.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([p.Z], () => p.Z.getWindowOpen(O.KJ3.ACTIVITY_POPOUT)), C = (0, o.e7)([m.Z], () => m.Z.isFrameHidden()), A = i === y.U.PIP && !C && !d, N = A && null != m.Z.pipVideoWindow && null != m.Z.pipFrameWindow;
+  if (null == n || null == u || d) return null;
+  let P = {
     instance_id: "example-cl-instance",
-    platform: y.S4.DESKTOP
+    platform: v.S4.DESKTOP
   };
 
-  function A(e) {
+  function w(e) {
     let {
       onActive: t,
       onForceIdle: i,
       idle: a
     } = e;
-    return I && null != n ? (0, r.jsxs)(r.Fragment, {
+    return A && null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         onMouseMove: t,
         onMouseDown: t,
         onMouseLeave: i,
-        className: O.clickShield
-      }), (0, r.jsx)(E.F, {
+        className: S.clickShield
+      }), (0, r.jsx)(b.F, {
         idle: a,
         onMouseMove: t,
         onMouseDown: t,
         onMouseLeave: i,
         onFocus: () => {
-          m.Z.updateFrameLayoutMode({
+          g.Z.updateFrameLayoutMode({
             applicationId: n.applicationId,
-            layoutMode: b.U.FOCUSED
+            layoutMode: y.U.FOCUSED
           })
         },
         applicationId: n.applicationId
       })]
     }) : null
   }
-  return null != n.proxyTicket && (C.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(_.ZP, {
+  return null != n.proxyTicket && (P.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(h.ZP, {
     timeout: 2e3,
     children: e => {
       let {
         idle: i,
         onActive: o,
-        onForceIdle: f
+        onForceIdle: d
       } = e;
-      return (0, r.jsxs)(p.Z, {
-        className: a()(O.root, {
-          [O.pipMode]: I,
-          [S.elevationHigh]: I,
-          [v.idle]: i,
-          [O.pipModeShort]: I,
-          [O.hidden]: d,
-          [O.multiPIPMode]: T
+      return (0, r.jsxs)(_.Z, {
+        className: a()(S.root, {
+          [S.pipMode]: A,
+          [T.elevationHigh]: A,
+          [I.idle]: i,
+          [S.pipModeShort]: A,
+          [S.hidden]: C,
+          [S.multiPIPMode]: N
         }),
-        noBorder: !I,
+        noBorder: !A,
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
-          children: A({
+          children: w({
             onActive: o,
-            onForceIdle: f,
+            onForceIdle: d,
             idle: i
           })
         }), t ? (0, r.jsx)(s.$jN, {
-          className: a()(O.iframe, {
-            [O.pipModeShort]: I
+          className: a()(S.iframe, {
+            [S.pipModeShort]: A
           })
         }) : (0, r.jsx)(c.J, {
           allowPopups: (0, l.h)(u),
           referrerPolicy: "origin",
           url: n.url,
-          queryParams: C,
-          className: a()(O.iframe, {
-            [O.pipModeShort]: I,
-            [O.pipNonInteractive]: I
+          queryParams: P,
+          className: a()(S.iframe, {
+            [S.pipModeShort]: A,
+            [S.pipNonInteractive]: A
           }),
-          shouldRefocus: !I
+          shouldRefocus: !A
         })]
       })
     }
   })
 }
-let T = () => {
+let A = () => {
   let {
     analyticsLocations: e
-  } = (0, d.ZP)(u.Z.FRAME_PIP), t = (0, o.e7)([g.Z], () => g.Z.isFrameActive());
+  } = (0, d.ZP)(u.Z.FRAME_PIP), t = (0, o.e7)([E.Z], () => E.Z.isFrameActive());
   return (0, r.jsx)(d.Gt, {
     value: e,
-    children: (0, r.jsx)(I, {
+    children: (0, r.jsx)(C, {
       isLoading: !t
     })
   })

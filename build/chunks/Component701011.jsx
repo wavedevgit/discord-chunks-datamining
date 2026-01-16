@@ -1,7 +1,8 @@
 /** Chunk was on 27278 **/
 /** chunk id: 701011, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  S: () => v,
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,12 +20,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk350325 = require("./350325.js");
 
-function g() {
+function v(e) {
+  let {
+    activity: n,
+    renderHeader: t,
+    renderActivityIFrameWithLoadedData: s
+  } = e, f = o.useRef(null), p = (0, i.Z)(n);
+  o.useEffect(() => {
+    null != n ? clearTimeout(f.current) : null != p && null == n && (f.current = window.setTimeout(() => {
+      (0, u.close)(h.KJ3.ACTIVITY_POPOUT)
+    }, 5e3))
+  }, [p, n]);
+  let m = (0, r.e7)([l.Z], () => {
+      let e = null == n ? true : n.applicationId;
+      return null == e ? true : l.Z.getApplication(e)
+    }),
+    v = (0, b.P)();
+  return (0, a.jsx)("div", {
+    className: _.container,
+    children: null == n || null == m ? (0, a.jsx)(c.$jN, {
+      className: _.iframe
+    }) : (0, a.jsx)("div", {
+      className: _.loadedContentContainer,
+      children: (0, a.jsxs)("div", {
+        className: _.iframeAndHeaderContainer,
+        children: [(0, a.jsx)("div", {
+          className: _.headerContainer,
+          children: t({
+            application: m
+          })
+        }), (0, a.jsx)("div", {
+          className: _.iframeContainer,
+          children: s({
+            application: m
+          })
+        }), v ? (0, a.jsx)(d.Z, {
+          isEmbeddedActivity: true
+        }) : null]
+      })
+    })
+  })
+}
+
+function C() {
   let {
     embeddedActivity: e,
     channelId: n,
     guildId: t
-  } = (0, c.cj)([s.ZP], () => {
+  } = (0, r.cj)([s.ZP], () => {
     let e = s.ZP.getCurrentEmbeddedActivity(),
       n = (0, f.p)(null == e ? true : e.location),
       t = (0, f.j)(null == e ? true : e.location);
@@ -33,43 +76,32 @@ function g() {
       channelId: n,
       guildId: t
     }
-  }), g = o.useRef(null), v = (0, i.Z)(e);
-  o.useEffect(() => {
-    null != e ? clearTimeout(g.current) : null != v && null == e && (g.current = window.setTimeout(() => {
-      (0, u.close)(_.KJ3.ACTIVITY_POPOUT)
-    }, 5e3))
-  }, [e, v]);
-  let C = (0, c.e7)([l.Z], () => {
-      let n = null == e ? true : e.applicationId;
-      return null == n ? true : l.Z.getApplication(n)
-    }),
-    x = (0, b.P)();
-  return (0, a.jsx)("div", {
-    className: h.container,
-    children: null == e || null == C ? (0, a.jsx)(r.$jN, {
-      className: h.iframe
-    }) : (0, a.jsx)("div", {
-      className: h.loadedContentContainer,
-      children: (0, a.jsxs)("div", {
-        className: h.iframeAndHeaderContainer,
-        children: [(0, a.jsx)("div", {
-          className: h.headerContainer,
-          children: (0, a.jsx)(m.Z, {
-            applicationId: C.id,
-            channelId: n
-          })
-        }), (0, a.jsx)("div", {
-          className: h.iframeContainer,
-          children: (0, a.jsx)(p.Z, {
-            channelId: n,
-            guildId: t,
-            embeddedActivity: e,
-            application: C
-          })
-        }), x ? (0, a.jsx)(d.Z, {
-          isEmbeddedActivity: true
-        }) : null]
-      })
+  }), c = o.useCallback(e => {
+    let {
+      application: t
+    } = e;
+    return (0, a.jsx)(m.Z, {
+      applicationId: t.id,
+      channelId: n
     })
+  }, [n]), i = o.useCallback(o => {
+    let {
+      application: r
+    } = o, c = {};
+    if (null != e) {
+      var i, l, d;
+      c.instance_id = null != (d = null != (l = e.compositeInstanceId) ? l : e.launchId) ? d : "", c.location_id = null == (i = e.location) ? true : i.id, c.launch_id = e.launchId, c.referrer_id = e.referrerId, c.custom_id = e.customId, null != t && "" !== t && (c.guild_id = t), null != n && "" !== n && (c.channel_id = n)
+    }
+    let u = null == e ? true : e.url;
+    return (0, a.jsx)(p.Z, {
+      application: r,
+      queryParams: c,
+      url: u
+    })
+  }, [n, t, e]);
+  return (0, a.jsx)(v, {
+    activity: e,
+    renderHeader: c,
+    renderActivityIFrameWithLoadedData: i
   })
 }

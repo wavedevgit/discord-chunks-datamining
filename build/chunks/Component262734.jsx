@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 262734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,12 +12,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk350810 = require("./350810.js"),
+  Chunk566620 = require("./566620.js"),
   Chunk988980 = require("./988980.js"),
+  Chunk617552 = require("./617552.jsx"),
+  Chunk225639 = require("./225639.js"),
+  Chunk367907 = require("./367907.js"),
   Chunk835473 = require("./835473.js"),
   Chunk358221 = require("./358221.js"),
   Chunk740492 = require("./740492.js"),
   Chunk871499 = require("./871499.jsx"),
   Chunk786915 = require("./786915.jsx"),
+  Chunk800965 = require("./800965.jsx"),
   Chunk944486 = require("./944486.js"),
   Chunk48131 = require("./48131.js"),
   Chunk214143 = require("./214143.jsx"),
@@ -27,124 +32,135 @@ var Chunk54381 = require("./54381.js"),
   Chunk918559 = require("./918559.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk2266 = require("./2266.js");
-let N = {
+let Z = {
   [Chunk918559.MI.NO_CHAT]: Chunk2266.noChat,
   [Chunk918559.MI.RESIZABLE]: Chunk2266.resizable
 };
 
-function j(e) {
+function w(e) {
   let {
     frame: t
-  } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
-    selectedChannelId: j,
-    selectedVoiceChannelId: x
-  } = (0, o.cj)([_.Z], () => ({
-    selectedChannelId: _.Z.getChannelId(),
-    selectedVoiceChannelId: _.Z.getVoiceChannelId()
-  })), P = (0, o.e7)([g.Z], () => null != x && j === x && g.Z.getChatOpen(x), [j, x]), A = (0, o.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  } = e, n = (0, b.q)(t.applicationId), l = (0, d.Z)(), {
+    selectedChannelId: w,
+    selectedVoiceChannelId: L
+  } = (0, o.cj)([y.Z], () => ({
+    selectedChannelId: y.Z.getChannelId(),
+    selectedVoiceChannelId: y.Z.getVoiceChannelId()
+  })), R = (0, o.e7)([_.Z], () => null != L && w === L && _.Z.getChatOpen(L), [w, L]), D = (0, o.e7)([E.ZP], () => E.ZP.callChatSidebarWidth), M = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), k = i.useRef(null), U = i.useRef(null), [G, H] = i.useState({
     width: 0,
     height: 0
-  }), M = i.useCallback(() => {
-    E.Z.updateFrameLayoutMode({
+  }), B = i.useCallback(() => {
+    C.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
-      layoutMode: I.U.PIP
+      layoutMode: N.U.PIP
     })
-  }, [t.applicationId]), k = i.useCallback(() => {
-    E.Z.stopFrame({
+  }, [t.applicationId]), V = i.useCallback(() => {
+    C.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
   i.useLayoutEffect(() => {
-    if (null == L.current) return;
+    if (null == U.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      D({
-        width: null != (n = null == (e = L.current) ? true : e.clientWidth) ? n : 0,
-        height: null != (r = null == (t = L.current) ? true : t.clientHeight) ? r : 0
+      H({
+        width: null != (n = null == (e = U.current) ? true : e.clientWidth) ? n : 0,
+        height: null != (r = null == (t = U.current) ? true : t.clientHeight) ? r : 0
       })
     });
-    return e.observe(L.current), () => e.disconnect()
+    return e.observe(U.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
+      null == k.current || k.current.contains(e.target) || l || C.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
-        layoutMode: I.U.PIP
+        layoutMode: N.U.PIP
       })
     };
     return document.addEventListener("mousedown", e), () => {
       document.removeEventListener("mousedown", e)
     }
   }, [t.applicationId, l]);
-  let U = R.width / Math.max(R.height, 1) < C.I0,
-    G = 0,
-    H = 0,
-    B = (0, p.Z)(null == n ? true : n.id);
-  if (!B) {
-    let e = R.width,
-      t = R.height;
-    U ? ((t = R.width / C.I0) > R.height && (e = (t = R.height) * C.I0), H = (R.height - t) / 2) : ((e = Math.min(R.height * C.I0, R.width)) > R.width && (t = (e = R.width) / C.I0), G = (R.width - e) / 2)
+  let F = G.width / Math.max(G.height, 1) < x.I0,
+    z = 0,
+    Y = 0,
+    W = (0, f.Z)(null == n ? true : n.id);
+  if (!W) {
+    let e = G.width,
+      t = G.height;
+    F ? ((t = G.width / x.I0) > G.height && (e = (t = G.height) * x.I0), Y = (G.height - t) / 2) : ((e = Math.min(G.height * x.I0, G.width)) > G.width && (t = (e = G.width) / x.I0), z = (G.width - e) / 2)
   }
-  let V = C.MI.NO_CHAT;
+  let K = x.MI.NO_CHAT,
+    q = (0, h.y)();
   if (null == n) return null;
-  let F = (null != A ? A : y.$Y6) + Z,
-    z = (0, v.ro)(t);
+  let Q = (null != D ? D : j.$Y6) + M,
+    J = (0, T.ro)(t);
   return (0, r.jsx)(u.f6W, {
-    theme: y.BRd.DARK,
+    theme: j.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(T.wrapper, N[V], e),
-      ref: w,
+      className: a()(A.wrapper, Z[K], e),
+      ref: k,
       style: {
-        right: P && !Number.isNaN(F) ? F : 0
+        right: R && !Number.isNaN(Q) ? Q : 0
       },
       children: [(0, r.jsx)("div", {
-        className: T.activityPanelContainer,
+        className: A.activityPanelContainer,
         children: (0, r.jsx)("div", {
-          className: a()(T.activityContainer, {
-            [T.activityContainerNoMargin]: B
+          className: a()(A.activityContainer, {
+            [A.activityContainerNoMargin]: W
           }),
           style: {
-            paddingLeft: G,
-            paddingRight: G,
-            paddingTop: H,
-            paddingBottom: H
+            paddingLeft: z,
+            paddingRight: z,
+            paddingTop: Y,
+            paddingBottom: Y
           },
-          ref: L,
-          children: (0, r.jsx)(O.Z, {
-            className: T.iframe,
-            embedId: z
+          ref: U,
+          children: (0, r.jsx)(S.Z, {
+            className: A.iframe,
+            embedId: J
           })
         })
       }), (0, r.jsxs)("div", {
-        className: T.footer,
-        children: [(0, r.jsx)(b.Z, {
-          appContext: y.IlC.APP,
+        className: A.footer,
+        children: [(0, r.jsx)(v.Z, {
+          appContext: j.IlC.APP,
           applicationId: n.id,
           shouldPrioritizeGroupPlusIcon: true,
           isRichPresenceInvite: true,
-          iconClassName: T.inviteButtonIcon,
+          iconClassName: A.inviteButtonIcon,
           size: c.zx.Sizes.MEDIUM,
           look: c.zx.Looks.FILLED,
-          buttonText: S.intl.string(S.t["6F9ivu"]),
+          buttonText: P.intl.string(P.t["6F9ivu"]),
           color: c.zx.Colors.TRANSPARENT
         }), (0, r.jsxs)("div", {
-          className: T.footerButtons,
+          className: A.footerButtons,
           children: [(0, r.jsx)("div", {
-            className: T.buttonSection,
-            children: (0, r.jsx)(m.d, {
+            className: A.buttonSection,
+            children: (0, r.jsx)(O.d, {
               isTrayButton: true,
-              label: S.intl.string(S.t.brPQ5U),
-              onClick: M,
+              label: P.intl.string(P.t.brPQ5U),
+              onClick: B,
               iconComponent: u.dOc,
               themeable: true
             })
-          }), (0, r.jsx)(m.d, {
+          }), (0, r.jsx)(O.d, {
             isTrayButton: false,
-            label: S.intl.string(S.t["R/FK4A"]),
-            onClick: k,
+            label: P.intl.string(P.t["R/FK4A"]),
+            onClick: V,
             iconComponent: u.PBZ,
             color: "disconnect"
           })]
-        })]
+        }), q ? (0, r.jsx)(I.Z, {
+          popoutOpen: false,
+          onOpenPopout: () => {
+            (0, m.yw)(j.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, g.Z)({
+              onConfirm: async () => {
+                (null == n ? true : n.id) != null && await (0, p.nJ)(n.id, null), (0, p.Gj)()
+              }
+            })
+          },
+          onClosePopout: () => {}
+        }) : null]
       })]
     })
   })

@@ -15,7 +15,7 @@ function l(e) {
     onSelect: t,
     application: l,
     channelId: d
-  } = e, u = (0, c.Z)(l, d, r.IlC.POPOUT);
+  } = e, u = (0, r.Z)(l, d, c.IlC.POPOUT);
   return (0, a.jsx)(o.v2r, {
     navId: "activity-popout-overflow-popout",
     onClose: n,

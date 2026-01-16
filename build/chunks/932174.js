@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function i() {
-  let e = (0, o.e7)([c.Z], () => c.Z.getWindow(r.KJ3.ACTIVITY_POPOUT)),
+  let e = (0, o.e7)([r.Z], () => r.Z.getWindow(c.KJ3.ACTIVITY_POPOUT)),
     n = a.useMemo(() => null == e ? true : e.window.document, [e]),
     t = a.useMemo(() => null == n ? true : n.getElementById("app-mount"), [n]);
   return {

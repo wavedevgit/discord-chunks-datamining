@@ -2,7 +2,7 @@
 /** chunk id: 978395, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,7 +14,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk5192 = require("./5192.js"),
   Chunk74538 = require("./74538.js"),
   Chunk896010 = require("./896010.js"),
-  Chunk612600 = require("./612600.js"),
   Chunk648052 = require("./648052.jsx"),
   Chunk537006 = require("./537006.jsx"),
   Chunk407699 = require("./407699.jsx"),
@@ -36,80 +35,78 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk155493 = require("./155493.js");
 
-function L(e) {
+function x(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: L,
-    guild: j,
-    isHoveringOrFocusing: M,
-    onOpenProfile: k,
-    channelId: U,
-    onClose: G
-  } = e, Z = u.ZP.useName(null == j ? true : j.id, U, t), {
-    relationshipType: F,
-    originApplicationId: B
+    displayProfile: x,
+    guild: L,
+    isHoveringOrFocusing: j,
+    onOpenProfile: M,
+    channelId: k,
+    onClose: U
+  } = e, G = u.ZP.useName(null == L ? true : L.id, k, t), {
+    relationshipType: Z,
+    originApplicationId: F
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), V = (0, o.vh)(t.id), H = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), {
-    enabled: Y
+  })), B = (0, o.vh)(t.id), V = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), {
+    enabled: H
   } = (0, f.E)({
     location: "UserProfilePopoutBody"
-  }), W = t.id === n.id, K = (0, p.Z)({
-    location: "UserProfilePopoutBody"
-  }), z = (null == L ? true : L.widgets) != null && L.widgets.length > 0, q = K && z, Q = (0, d.I5)(n);
+  }), Y = t.id === n.id, W = (null == x ? true : x.widgets) != null && x.widgets.length > 0, K = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
-    className: x.body,
-    children: [(0, r.jsx)(m.Z, {
+    className: D.body,
+    children: [(0, r.jsx)(h.Z, {
       userId: t.id
-    }), (0, r.jsx)(S.Z, {
+    }), (0, r.jsx)(v.Z, {
       user: t,
-      guildId: null == j ? true : j.id,
-      onOpenProfile: k,
-      onClose: G,
-      usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(C.Z, {
+      guildId: null == L ? true : L.id,
+      onOpenProfile: M,
+      onClose: U,
+      usernameIcon: t.hasAvatarForGuild(null == L ? true : L.id) && (0, r.jsx)(T.Z, {
         user: t,
-        nickname: Z
+        nickname: G
       }),
-      nickname: Z,
-      pronouns: null == L ? true : L.pronouns,
-      tags: (0, r.jsx)(_.Z, {
-        displayProfile: L,
-        themeType: R.l.POPOUT,
-        onClose: G
+      nickname: G,
+      pronouns: null == x ? true : x.pronouns,
+      tags: (0, r.jsx)(p.Z, {
+        displayProfile: x,
+        themeType: w.l.POPOUT,
+        onClose: U
       }),
-      nicknameIcons: H ? null : (0, r.jsx)(I.Z, {
+      nicknameIcons: V ? null : (0, r.jsx)(S.Z, {
         userId: t.id,
-        isVisible: M,
-        onOpenProfile: k
+        isVisible: j,
+        onOpenProfile: M
       })
-    }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+    }), Z === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
+      children: (0, r.jsx)(m.Z, {
         user: t,
-        guildId: null == j ? true : j.id,
-        channelId: U,
-        applicationId: B
+        guildId: null == L ? true : L.id,
+        channelId: k,
+        applicationId: F
       })
-    }), V.map(e => (0, r.jsx)(v.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+    }), B.map(e => (0, r.jsx)(O.Z.Overlay, {
+      children: (0, r.jsx)(m.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
-        channelId: U
+        channelId: k
       })
-    }, e.applicationId)), (0, r.jsx)(E.Z, {
+    }, e.applicationId)), (0, r.jsx)(g.Z, {
       user: t
-    }), !W && (0, r.jsx)(N.Z, {
+    }), !Y && (0, r.jsx)(A.Z, {
       user: t,
-      onOpenProfile: e => null == k ? true : k({
+      onOpenProfile: e => null == M ? true : M({
         tabSection: e
       })
-    }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
-      className: x.card,
-      children: (0, r.jsx)(b.Z, {
-        heading: D.intl.string(D.t.Iyka0U),
+    }), t.isProvisional ? (0, r.jsx)(O.Z.Overlay, {
+      className: D.card,
+      children: (0, r.jsx)(E.Z, {
+        heading: R.intl.string(R.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.TEXT_STRONG
@@ -119,30 +116,30 @@ function L(e) {
           userId: t.id
         })
       })
-    }) : (0, r.jsx)(T.Z, {
+    }) : (0, r.jsx)(I.Z, {
       user: t,
-      bio: null == L ? true : L.bio,
-      hidePersonalInformation: H,
-      onClose: G
-    }), q && (0, r.jsx)(O.Z, {
+      bio: null == x ? true : x.bio,
+      hidePersonalInformation: V,
+      onClose: U
+    }), W && (0, r.jsx)(y.Z, {
       user: t,
-      widgets: null == L ? true : L.widgets,
-      onOpenUserProfileModal: k
-    }), W && (0, r.jsx)(h.Z, {
-      isPremiumUser: Q,
-      onInteraction: G
-    }), (0, r.jsx)(y.Z, {
+      widgets: null == x ? true : x.widgets,
+      onOpenUserProfileModal: M
+    }), Y && (0, r.jsx)(_.Z, {
+      isPremiumUser: K,
+      onInteraction: U
+    }), (0, r.jsx)(b.Z, {
       user: t,
       currentUser: n,
-      guildId: null == j ? true : j.id,
-      onOpenUserProfileModal: k,
-      onClose: G
-    }), Y && !W && (0, r.jsx)(P.Z, {
+      guildId: null == L ? true : L.id,
+      onOpenUserProfileModal: M,
+      onClose: U
+    }), H && !Y && (0, r.jsx)(N.Z, {
       user: t,
-      onOpenProfile: k
-    }), null != j && (0, r.jsx)(A.Z, {
+      onOpenProfile: M
+    }), null != L && (0, r.jsx)(C.Z, {
       userId: t.id,
-      guild: j
+      guild: L
     })]
   })
 }

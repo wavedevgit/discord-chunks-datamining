@@ -449,9 +449,13 @@ class eZ extends Chunk473749.PureComponent {
       })), (0, J.Qm)(t.type) && (0, E.tg)(ev.Ez.PANEL))
     }), eS(this, "handleFrameLinkClick", () => {
       let {
-        frame: e
+        frame: e,
+        isActivityPopoutOpen: t
       } = this.props;
-      s()(null != e, "Frame cannot be null during navigation click"), L.Z.updateFrameLayoutMode({
+      if (s()(null != e, "Frame cannot be null during navigation click"), t) return void g.Z.dispatch({
+        type: "ACTIVITY_POPOUT_WINDOW_OPEN"
+      });
+      L.Z.updateFrameLayoutMode({
         applicationId: e.applicationId,
         layoutMode: ej.U.FOCUSED
       })
