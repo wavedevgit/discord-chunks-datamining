@@ -127,6 +127,7 @@ function U(e) {
           children: (0, i.jsx)(f.Den, {
             className: P.bottomDivider,
             ref: l,
+            overflow: "auto",
             children: m.map((e, t) => (0, i.jsx)(I.Z, {
               className: s()(P.paymentRow, P.bottomDivider),
               payment: e,
