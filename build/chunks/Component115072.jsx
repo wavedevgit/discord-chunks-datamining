@@ -69,7 +69,7 @@ function L(e) {
         return "Linux"
     }
     return ""
-  }((0, P.getOS)())), [ea, el] = r.useState(""), [eo, es] = r.useState(""), [eu, ec] = r.useState(""), [ed, em] = r.useState(""), [ep, ef] = r.useState(false), [ev, eh] = r.useState(false), [eg, ex] = r.useState(false), [eb, ey] = r.useState(null);
+  }((0, P.getOS)())), [ea, el] = r.useState(""), [eo, es] = r.useState(""), [eu, ec] = r.useState(""), [ed, em] = r.useState(""), [ef, ep] = r.useState(false), [ev, eh] = r.useState(false), [eg, ex] = r.useState(false), [eb, ey] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     s.tn.get({
@@ -79,8 +79,8 @@ function L(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "a8e45eb55cc145d27830211d067765076e87e923" !== e.body.hash) {
-        let e = new Date("1768576762323"),
+      if (null != e.body && "276f3eedea662d2bc87ee4d30dbd48cd9ea4c47f" !== e.body.hash) {
+        let e = new Date("1768578346491"),
           t = new Date,
           n = (0, w.TD)(t, e);
         n.hours > 6 && ey(n.hours)
@@ -112,9 +112,9 @@ function L(e) {
     });
   async function e_() {
     var e, t;
-    if (ex(false), "" === H || "" === B || null == q) return void ef(true);
+    if (ex(false), "" === H || "" === B || null == q) return void ep(true);
     let r = null == X || null == (e = X.features) ? true : e.find(e => (0, _.pD)(e) === J);
-    eh(true), ef(false);
+    eh(true), ep(false);
     let a = (0, C.D)(Y.map(e => {
         let {
           item: t
@@ -186,10 +186,10 @@ function L(e) {
           true !== n && K(e => e.some(e => {
             var t;
             return e.filename === n.name && (null == (t = e.item.file) ? true : t.size) === n.size
-          }) ? e : [...e, new f.ZP({
+          }) ? e : [...e, new p.ZP({
             id: (0, a.Z)(),
             file: n,
-            platform: f.ow.WEB,
+            platform: p.ow.WEB,
             origin: "clipboard"
           })])
         }
@@ -268,7 +268,7 @@ function L(e) {
         },
         children: [(0, i.jsx)(m.oil, {
           label: E.intl.string(E.t.OZRgjw),
-          error: ep && "" === H ? E.intl.string(E.t.EkokLy) : null,
+          error: ef && "" === H ? E.intl.string(E.t.EkokLy) : null,
           placeholder: "Something is broken on this screen.",
           type: "text",
           value: H,
@@ -277,14 +277,14 @@ function L(e) {
           autoFocus: true
         }), (0, i.jsx)(m.Kx8, {
           label: E.intl.string(E.t["1SplH2"]),
-          error: ep && "" === B ? E.intl.string(E.t.EkokLy) : null,
+          error: ef && "" === B ? E.intl.string(E.t.EkokLy) : null,
           placeholder: "What did you expect to see?",
           value: B,
           onChange: V,
           description: ej ? "You can add additional information/media on the ticket after submitting" : true
         }), (0, i.jsx)(c.y6, {
           label: E.intl.string(E.t.xMXLda),
-          errorMessage: ep && true === q ? E.intl.string(E.t.EkokLy) : null,
+          errorMessage: ef && true === q ? E.intl.string(E.t.EkokLy) : null,
           renderOptionLabel: e => (function(e) {
             let t = e.priority;
             return (0, i.jsxs)("div", {
@@ -388,14 +388,14 @@ function L(e) {
           fullWidth: true
         }), (0, i.jsx)("div", {
           className: k.fileInput,
-          children: (0, i.jsx)(p.Z, {
+          children: (0, i.jsx)(f.Z, {
             ref: R,
             onChange: e => {
               var t, n;
-              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && K([...Y, ...Array.from(e.currentTarget.files).map(e => new f.ZP({
+              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && K([...Y, ...Array.from(e.currentTarget.files).map(e => new p.ZP({
                 id: (0, a.Z)(),
                 file: e,
-                platform: f.ow.WEB,
+                platform: p.ow.WEB,
                 origin: "file_picker"
               }))])
             },
