@@ -36,8 +36,8 @@ function T(e) {
     contentPosition: k,
     rowIndex: R,
     isVisibleInViewport: A,
-    onReceiveErrorHints: D,
-    sourceQuestContent: Z
+    onReceiveErrorHints: Z,
+    sourceQuestContent: D
   } = e, L = r.useRef(null), M = (0, x.w8)(P.config), U = (0, x.B3)(P.config), B = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: F,
     scrollHeight: G
@@ -76,17 +76,17 @@ function T(e) {
     })(Object(N)).forEach(function(e) {
       Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(N, e))
     }), T)
-  }), W = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = (null == (i = P.userStatus) ? true : i.claimedAt) != null, q = (0, x.xN)(P.config), Y = (0, x.LM)(P.config), {
-    completedRatio: Q,
+  }), W = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = (null == (i = P.userStatus) ? true : i.claimedAt) != null, q = (0, x.xN)(P.config), Q = (0, x.LM)(P.config), {
+    completedRatio: Y,
     completedRatioDisplay: X
-  } = (0, h.I)(P), J = (0, p.Bd)(P, Z, L), $ = r.useMemo(() => K && q ? _.intl.format(_.t["8Op4c4"], {
+  } = (0, h.I)(P), J = (0, p.Bd)(P, D, L), $ = r.useMemo(() => K && q ? _.intl.format(_.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
       children: [(0, a.jsx)(m.Z, {
         shouldUseThemeColor: true,
         className: S.orbsBalanceIcon,
         customSize: 14
-      }), Y]
+      }), Q]
     }, P.id)
   }) : K ? (0, a.jsx)(O, {
     questId: P.id,
@@ -98,14 +98,14 @@ function T(e) {
         shouldUseThemeColor: true,
         className: S.orbsBalanceIcon,
         customSize: 14
-      }), Y]
+      }), Q]
     }, P.id)
   }) : _.intl.format(_.t["0IUT4Y"], {
     rewardWithArticleHook: () => (0, a.jsx)(O, {
       questId: P.id,
       children: U
     }, P.id)
-  }), [M, K, U, P.id, Y, q]), ee = r.useMemo(() => {
+  }), [M, K, U, P.id, Q, q]), ee = r.useMemo(() => {
     if (null != J) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -140,7 +140,7 @@ function T(e) {
             }), (0, a.jsx)(b.Z, {
               quest: P,
               size: 76,
-              percentComplete: Q,
+              percentComplete: Y,
               percentCompleteText: I && !(0, f.zi)(P) ? X : true,
               children: (0, a.jsx)("div", {
                 className: S.circularRewardTileWrapper,
@@ -151,7 +151,7 @@ function T(e) {
                   autoplay: I,
                   onLoadComplete: z,
                   lazyLoad: true,
-                  sourceQuestContent: Z
+                  sourceQuestContent: D
                 })
               })
             })]
@@ -162,7 +162,7 @@ function T(e) {
             className: S.questRewardTileAsset,
             onLoadComplete: z,
             lazyLoad: true,
-            sourceQuestContent: Z
+            sourceQuestContent: D
           })]
         })
       }), (0, a.jsxs)("div", {
@@ -194,8 +194,8 @@ function T(e) {
       questContent: w,
       contentPosition: k,
       rowIndex: R,
-      onReceiveErrorHints: D,
-      sourceQuestContent: Z
+      onReceiveErrorHints: Z,
+      sourceQuestContent: D
     })]
   })
 }

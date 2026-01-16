@@ -35,8 +35,8 @@ function g() {
     k = null != w && null != (v = N.find(e => e.skuId === w)) ? v : null,
     R = null != I && null != (j = P.find(e => e.skuId === I)) ? j : null,
     A = (0, r.e7)([o.Z], () => o.Z.getProduct(null == k ? true : k.skuId)),
-    D = (0, r.e7)([o.Z], () => o.Z.getProduct(null == R ? true : R.skuId)),
-    Z = (0, r.e7)([s.Z], () => s.Z.fontSize),
+    Z = (0, r.e7)([o.Z], () => o.Z.getProduct(null == R ? true : R.skuId)),
+    D = (0, r.e7)([s.Z], () => s.Z.fontSize),
     L = (0, r.e7)([s.Z], () => s.Z.messageGroupSpacing),
     M = p.YC.useSetting();
   return (0, f.ub)(), (0, a.jsxs)("div", {
@@ -79,10 +79,10 @@ function g() {
         children: ["Avatar Decoration: ", null != (y = null == A ? true : A.name) ? y : "None"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["Nameplate: ", null != (C = null == D ? true : D.name) ? C : "None"]
+        children: ["Nameplate: ", null != (C = null == Z ? true : Z.name) ? C : "None"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["Font Size: ", Z, "px"]
+        children: ["Font Size: ", D, "px"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
         children: ["Message Spacing: ", L]

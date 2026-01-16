@@ -2,6 +2,7 @@
 /** chunk id: 937797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Cx: () => d,
   DL: () => i,
   VG: () => u,
   b2: () => l,
@@ -104,6 +105,18 @@ let c = (0, Chunk427164.le)({
   }),
   u = (0, Chunk427164.le)({
     name: "2025-11-video-end-card-v2",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      1: {
+        enabled: true
+      }
+    }
+  }),
+  d = (0, Chunk427164.le)({
+    name: "2025-12-quest-cta-refactor-rollout",
     kind: "user",
     defaultConfig: {
       enabled: false

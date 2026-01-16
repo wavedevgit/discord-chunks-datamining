@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => Z
 }), require("./388685.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -266,7 +266,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
     throttleMs: 100
   };
 
-function D() {
+function Z() {
   let e = r.useRef(null),
     [t, n] = r.useState(""),
     i = (0, c.e7)([v.Z], () => v.Z.loggedEventsVersion),

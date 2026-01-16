@@ -82,7 +82,7 @@ let R = e => {
       showGradient: true
     })
   },
-  D = e => {
+  Z = e => {
     let {
       handlePreviewButtonClick: t,
       text: n
@@ -96,7 +96,7 @@ let R = e => {
       fullWidth: true
     })
   },
-  Z = e => {
+  D = e => {
     let {
       handleUseNow: t,
       isApplying: n,
@@ -298,8 +298,8 @@ let R = e => {
     }), {
       analyticsLocations: H
     } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), W = (0, _.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, u), [K, q] = (0, i.Wu)([b.Z], () => [b.Z.isClaiming === t.skuId, null != b.Z.isClaiming && b.Z.isClaiming !== t.skuId]), {
-      handleUseNow: Y,
-      isApplying: Q
+      handleUseNow: Q,
+      isApplying: Y
     } = (0, j.W)({
       product: t
     });
@@ -312,13 +312,13 @@ let R = e => {
       isClaimPremiumProductDisabled: q,
       text: c
     });
-    if (!w || P) return (0, a.jsx)(D, {
+    if (!w || P) return (0, a.jsx)(Z, {
       handlePreviewButtonClick: W,
       text: c
     });
-    if (g) return (0, a.jsx)(Z, {
-      handleUseNow: Y,
-      isApplying: Q,
+    if (g) return (0, a.jsx)(D, {
+      handleUseNow: Q,
+      isApplying: Y,
       text: c
     });
     if (E) return (0, a.jsx)(M, {
@@ -346,7 +346,7 @@ let R = e => {
         handlePreviewButtonClick: W,
         text: c
       });
-      else return (0, a.jsx)(D, {
+      else return (0, a.jsx)(Z, {
         handlePreviewButtonClick: W,
         text: c
       });

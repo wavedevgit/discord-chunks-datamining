@@ -359,7 +359,7 @@ class to extends Chunk473749.PureComponent {
       hoverText: l,
       forceHover: e,
       children: (0, a.jsx)(E.Z, {
-        text: eY.ZP.humanizeStatus(i)
+        text: eQ.ZP.humanizeStatus(i)
       })
     }) : l
   }
@@ -430,7 +430,7 @@ class to extends Chunk473749.PureComponent {
             dismissTooltips: this.dismissTooltips
           }))]
         })
-      }), (0, a.jsx)(Y.Z, {})]
+      }), (0, a.jsx)(Q.Z, {})]
     })
   }
   constructor(...e) {
@@ -545,7 +545,7 @@ class to extends Chunk473749.PureComponent {
         copiedStreak: n
       } = this.state;
       if (null == e) return;
-      (0, eG.JG)(eY.ZP.getUserTag(e, {
+      (0, eG.JG)(eQ.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
       })), eB.default.track(e8.rMx.TEXT_COPIED, {
@@ -696,7 +696,7 @@ function td(e) {
   } = (0, e$.P)({
     location: "Account.useDeviceChangedTooltip",
     autoTrackExposure: false
-  }), n = (0, d.e7)([eR.Z], () => null != eR.Z.getChannelId()), a = (0, Q.Fh)(e), i = r.useRef(new m.V7), [l, s] = r.useState(false);
+  }), n = (0, d.e7)([eR.Z], () => null != eR.Z.getChannelId()), a = (0, Y.Fh)(e), i = r.useRef(new m.V7), [l, s] = r.useState(false);
   r.useEffect(() => {
     n && a && ((0, e$._)({
       location: "Account.useDeviceChangedTooltip (exposure tracking)",
@@ -727,8 +727,8 @@ function tu() {
       activities: i,
       streaming: l,
       status: s
-    } = (0, d.cj)([eD.Z], () => {
-      let e = eD.Z.getActivities();
+    } = (0, d.cj)([eZ.Z], () => {
+      let e = eZ.Z.getActivities();
       return {
         activities: e,
         streaming: null != e.find(e => {
@@ -737,16 +737,16 @@ function tu() {
           } = e;
           return t === e8.IIU.STREAMING
         }),
-        status: eD.Z.getStatus()
+        status: eZ.Z.getStatus()
       }
     }),
     c = (0, d.e7)([eO.Z], () => eO.Z.getAnyStreamForUser(n)),
     m = (0, v.Z)({
       userId: n
     }),
-    p = (0, d.e7)([eZ.Z], () => eZ.Z.isCurrentUserPTTLatched()),
-    h = (0, d.e7)([eZ.Z], () => eZ.Z.getVoiceVolume(n)),
-    f = eY.ZP.useUserTag(t, {
+    p = (0, d.e7)([eD.Z], () => eD.Z.isCurrentUserPTTLatched()),
+    h = (0, d.e7)([eD.Z], () => eD.Z.getVoiceVolume(n)),
+    f = eQ.ZP.useUserTag(t, {
       decoration: "never"
     }),
     b = (0, d.e7)([eL.Z], () => eL.Z.hidePersonalInformation),
@@ -768,10 +768,10 @@ function tu() {
       return (0, R.fD)() ? null == (e = k.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     }),
     I = (0, d.e7)([eU.Z], () => eU.Z.getPremiumTypeSubscription()),
-    D = (0, d.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
-    Z = (0, d.e7)([A.Z], () => A.Z.isFullscreenInContext()),
+    Z = (0, d.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
+    D = (0, d.e7)([A.Z], () => A.Z.isFullscreenInContext()),
     L = (0, d.e7)([eI.Z], () => eI.Z.hasLayers()),
-    M = (0, x.s9z)(x.JQI) || L || eq.s.isDisallowPopupsSet() || Z,
+    M = (0, x.s9z)(x.JQI) || L || eq.s.isDisallowPopupsSet() || D,
     U = (0, en.b)(),
     B = (0, d.e7)([q.default], () => null != q.default.getAwaitingRemoteSessionInfo()),
     F = (0, d.e7)([eA.Z], () => eA.Z.getGuildId()),
@@ -779,14 +779,14 @@ function tu() {
     V = (0, P.R)(t, null != F ? F : true),
     z = (0, w.Z)(r ? V : G),
     H = eK.ZP.useName(null != F ? F : true, null, t),
-    W = null != (e = eY.ZP.useName(t)) ? e : "",
+    W = null != (e = eQ.ZP.useName(t)) ? e : "",
     {
       voiceActivityStatusEnabled: K
     } = (0, C.U)({
       location: "Account"
     }),
-    Y = (0, er.c)(t, "Account"),
-    Q = ei.H.useConfig({
+    Q = (0, er.c)(t, "Account"),
+    Y = ei.H.useConfig({
       location: "Account"
     }).enabled,
     {
@@ -819,7 +819,7 @@ function tu() {
       avatar: [],
       settings: []
     };
-  !M && (ed.avatar.push(u.z.DISPLAY_NAME_STYLES_COACHMARK), Y && ed.avatar.push(u.z.TENURE_BADGE_CHURN_REMINDER), el && ed.avatar.push(u.z.WIDGETS_RTC_UPSELL_COACHMARK), Q && ed.settings.push(u.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
+  !M && (ed.avatar.push(u.z.DISPLAY_NAME_STYLES_COACHMARK), Q && ed.avatar.push(u.z.TENURE_BADGE_CHURN_REMINDER), el && ed.avatar.push(u.z.WIDGETS_RTC_UPSELL_COACHMARK), Y && ed.settings.push(u.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
   let {
     shouldShowTooltip: eu,
     dismissTooltip: em
@@ -847,7 +847,7 @@ function tu() {
       serverMute: j,
       speaking: m,
       voiceDb: h,
-      speakingWhileMuted: D,
+      speakingWhileMuted: Z,
       latched: p && null != g,
       status: s,
       streaming: l,
@@ -891,10 +891,10 @@ function tm(e) {
     j = !v && (f || b),
     {
       name: y
-    } = (0, Q.p6)(e6.h7.AUDIO_INPUT),
+    } = (0, Y.p6)(e6.h7.AUDIO_INPUT),
     {
       name: C
-    } = (0, Q.p6)(e6.h7.AUDIO_OUTPUT);
+    } = (0, Y.p6)(e6.h7.AUDIO_OUTPUT);
   !v && f ? (t = e2.intl.format(e2.t["18wnuD"], {
     inputDeviceName: y
   }), n = e2.intl.formatToPlainString(e2.t["18wnuD"], {
@@ -968,14 +968,14 @@ function tp(e) {
     lastInitAttemptMayHaveCrashed: I
   } = (0, ev.o)(), k = null != P, R = (0, d.e7)([eR.Z], () => eR.Z.isConnected()), {
     Component: A,
-    events: D,
+    events: Z,
     play: U
   } = T, B = n || i ? x.v0G : A, F = j ? {
     tooltipType: "green_void_do_not_use",
     tooltipText: e2.intl.string(e2.t["29gnR4"]),
     tooltipForceOpen: true
   } : {
-    tooltipText: (0, Z.Z)(t, n, i, s)
+    tooltipText: (0, D.Z)(t, n, i, s)
   }, {
     analyticsLocations: V
   } = (0, N.ZP)(O.Z.AUDIO_INPUT_BUTTON), H = (0, eb.Hu)({
@@ -989,16 +989,16 @@ function tp(e) {
   let K = r.useCallback(e => {
       b(e, V)
     }, [b, V]),
-    [q, Y] = r.useState(false),
+    [q, Q] = r.useState(false),
     X = r.useCallback(e => {
       var t;
       if ((0, c.kK)(null == e ? true : e.target, Node) && (null == (t = S.current) ? true : t.contains(e.target))) return f.F;
-      Y(false)
+      Q(false)
     }, []);
   (0, eV.yp)({
     event: e8.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
-      Y(true)
+      Q(true)
     }
   });
   let [J, $] = r.useState(false);
@@ -1019,7 +1019,7 @@ function tp(e) {
     }),
     {
       name: er
-    } = (0, Q.p6)(e6.h7.AUDIO_INPUT),
+    } = (0, Y.p6)(e6.h7.AUDIO_INPUT),
     {
       showRefreshedAudioContextMenu: ei
     } = (0, eJ.e)({
@@ -1092,10 +1092,10 @@ function tp(e) {
             onClick: h,
             onContextMenu: n,
             onMouseEnter: () => {
-              m(), D.onMouseEnter()
+              m(), Z.onMouseEnter()
             },
             onMouseLeave: () => {
-              p(), D.onMouseLeave()
+              p(), Z.onMouseLeave()
             },
             plated: null != g,
             redGlow: _,
@@ -1144,10 +1144,10 @@ function tp(e) {
       children: [(0, a.jsx)(e0.Z, tt({
         plated: null != g,
         onMouseEnter: () => {
-          m(), D.onMouseEnter()
+          m(), Z.onMouseEnter()
         },
         onMouseLeave: () => {
-          p(), D.onMouseLeave()
+          p(), Z.onMouseLeave()
         },
         icon: (0, a.jsx)(B, {
           size: "custom",
@@ -1218,13 +1218,13 @@ function tp(e) {
                 } = e, o = null;
                 t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? o = (0, a.jsx)(e_.U, {
                   markAsDismissed: i,
-                  onCTA: () => Y(true)
+                  onCTA: () => Q(true)
                 }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? o = (0, a.jsx)(eC.n, {
                   markAsDismissed: i,
-                  onCTA: () => Y(true)
+                  onCTA: () => Q(true)
                 }) : t === u.z.VOICE_FILTER_FIRST_USE_COACHMARK && (o = (0, a.jsx)(ey.v, {
                   markAsDismissed: i,
-                  onCTA: () => Y(true)
+                  onCTA: () => Q(true)
                 }));
                 let c = () => (0, a.jsx)(e0.Z, tt({
                   ref: E,
@@ -1244,7 +1244,7 @@ function tp(e) {
                   "aria-label": e2.intl.string(e2.t.Hapb4J),
                   disabled: s,
                   onClick: e => {
-                    i(e7.L.INDIRECT_ACTION), n(e), null != w && !q && I ? (0, eE.$)(() => Y(true)) : Y(!q)
+                    i(e7.L.INDIRECT_ACTION), n(e), null != w && !q && I ? (0, eE.$)(() => Q(true)) : Q(!q)
                   }
                 }, r));
                 return null != o ? (0, a.jsx)(x.yRy, {
@@ -1286,11 +1286,11 @@ function th(e) {
     }
   } = (0, p.l)(h ? "undeafen" : "deafen"), j = n ? x.Vm4 : f, {
     name: y
-  } = (0, Q.p6)(e6.h7.AUDIO_OUTPUT), {
+  } = (0, Y.p6)(e6.h7.AUDIO_OUTPUT), {
     showRefreshedAudioContextMenu: C
   } = (0, eJ.e)({
     location: "HeadphonesButton"
-  }), _ = (0, D.Z)(t, n, i), {
+  }), _ = (0, Z.Z)(t, n, i), {
     analyticsLocations: S
   } = (0, N.ZP)(O.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
   r.useEffect(() => () => b(), [h, b]);

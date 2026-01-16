@@ -180,7 +180,7 @@ function P(e) {
   let {
     subscription: w,
     onUpdated: I
-  } = e, [k, R] = r.useState(false), [A, D] = r.useState(false), [Z, L] = r.useState(false), [M, U] = r.useState(false), [B, F] = r.useState(null), [G, V] = r.useState(""), z = e => (null == e && (e = w.status), e in E) ? E[e] : "Unknown status ".concat(e), H = e => {
+  } = e, [k, R] = r.useState(false), [A, Z] = r.useState(false), [D, L] = r.useState(false), [M, U] = r.useState(false), [B, F] = r.useState(null), [G, V] = r.useState(""), z = e => (null == e && (e = w.status), e in E) ? E[e] : "Unknown status ".concat(e), H = e => {
     let t = new Date(e);
     return f.default.fromTimestamp(t.getTime())
   }, W = async e => {
@@ -228,7 +228,7 @@ function P(e) {
       var n;
       F((null == (n = e.body) ? true : n.message) || e.message || "Failed to add user to group")
     }
-  }, Y = async () => {
+  }, Q = async () => {
     try {
       await d.tn.del({
         url: "/debug/subscriptions/".concat(w.id, "/members/").concat(G),
@@ -238,7 +238,7 @@ function P(e) {
       var e;
       F((null == (e = t.body) ? true : e.message) || t.message || "Failed to remove user from group")
     }
-  }, Q = (null == (t = y.GP[w.planIdFromItems]) ? true : t.premiumType) === y.PremiumTypes.TIER_0, X = null == (n = w.metadata) ? true : n.ended_at, J = null != X ? new Date(X).toISOString().substring(0, 10) : "", $ = [{
+  }, Y = (null == (t = y.GP[w.planIdFromItems]) ? true : t.premiumType) === y.PremiumTypes.TIER_0, X = null == (n = w.metadata) ? true : n.ended_at, J = null != X ? new Date(X).toISOString().substring(0, 10) : "", $ = [{
     id: "id",
     label: "ID: ".concat(w.id),
     isDisabled: false
@@ -264,7 +264,7 @@ function P(e) {
     label: "Pause Reason: ".concat(w.pauseReason in T ? T[w.pauseReason] : "Unknown pause reason ".concat(w.pauseReason)),
     isDisabled: false
   }), (0, a.jsx)("div", {
-    className: l()(C.card, Q ? C.gradientWrapperTier0 : C.gradientWrapperTier2),
+    className: l()(C.card, Y ? C.gradientWrapperTier0 : C.gradientWrapperTier2),
     children: (0, a.jsxs)(m.C3N, {
       label: "Type: ".concat((() => {
         let e = w.planIdFromItems;
@@ -281,7 +281,7 @@ function P(e) {
         className: _.collapsablePane,
         children: [(0, a.jsxs)(m.P3F, {
           onClick: () => {
-            L(!Z)
+            L(!D)
           },
           className: _.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
@@ -290,9 +290,9 @@ function P(e) {
               children: "Trial Info"
             })
           }), (0, a.jsx)(p.Z, {
-            direction: Z ? p.Z.Directions.UP : p.Z.Directions.DOWN
+            direction: D ? p.Z.Directions.UP : p.Z.Directions.DOWN
           })]
-        }), Z && (0, a.jsxs)("ul", {
+        }), D && (0, a.jsxs)("ul", {
           className: _.collapsiblePaneList,
           children: [(0, a.jsxs)("li", {
             children: [(0, a.jsx)(m.Text, {
@@ -381,7 +381,7 @@ function P(e) {
         className: _.collapsablePane,
         children: [(0, a.jsxs)(m.P3F, {
           onClick: () => {
-            D(!A)
+            Z(!A)
           },
           className: _.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
@@ -465,7 +465,7 @@ function P(e) {
                 variant: "secondary",
                 size: "sm",
                 text: "Remove",
-                onClick: () => Y(),
+                onClick: () => Q(),
                 disabled: "" === G
               })]
             })]

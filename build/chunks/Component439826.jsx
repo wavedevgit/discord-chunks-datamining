@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 439826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => Z
 }), require("./784620.js"), require("./973216.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -113,13 +113,13 @@ function A(e) {
   })
 }
 
-function D(e) {
+function Z(e) {
   var t, n, i, s, m;
   let {
     quest: C,
     isHovering: P,
-    errorHints: D,
-    warningHints: Z,
+    errorHints: Z,
+    warningHints: D,
     isVisibleInViewport: L,
     onCtxMenuClose: M,
     onCtxMenuOpen: U,
@@ -128,8 +128,8 @@ function D(e) {
   } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), z = ((0, d.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, H = (0, g.tP)(C), W = (null == (t = C.userStatus) ? true : t.claimedAt) != null, K = (0, g.B6)(C.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), q = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Y = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
-    onAssetLoadComplete: Q
+  }), q = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Q = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
+    onAssetLoadComplete: Y
   } = r.useContext(O.k), X = z ? "text-muted" : "always-white", J = r.useCallback(() => {
     G && (0, T.openVideoQuestModal)({
       quest: C,
@@ -177,7 +177,7 @@ function D(e) {
               children: I.intl.string(I.t.SKNnqq)
             })]
           }), G && (0, a.jsx)(c.u, {
-            text: Y ? I.intl.string(I.t.YsCuyF) : q ? I.intl.string(I.t["74KqrR"]) : (0, v.zi)(C) ? I.intl.string(I.t.I6JG46) : I.intl.string(I.t.umdNin),
+            text: Q ? I.intl.string(I.t.YsCuyF) : q ? I.intl.string(I.t["74KqrR"]) : (0, v.zi)(C) ? I.intl.string(I.t.I6JG46) : I.intl.string(I.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, a.jsx)(u.P3F, {
@@ -249,7 +249,7 @@ function D(e) {
             quest: C,
             separatorSpacing: E.US.MEDIUM,
             withGameTile: false,
-            onLoadComplete: Q
+            onLoadComplete: Y
           })
         }), (0, a.jsxs)("div", {
           className: k.bottomRow,
@@ -285,8 +285,8 @@ function D(e) {
         })]
       }), (0, a.jsx)(A, {
         quest: C,
-        errorHints: D,
-        warningHints: Z,
+        errorHints: Z,
+        warningHints: D,
         isDarkTheme: z,
         sourceQuestContent: F
       })]

@@ -78,13 +78,13 @@ function ec() {
       name: "Triggers",
       group: el.v0.EXPERIMENTS,
       tags: ["experiments", "exposure", "buckets"],
-      render: () => (0, a.jsx)(Q.Z, {})
+      render: () => (0, a.jsx)(Y.Z, {})
     }, {
       id: "stores",
       name: "Stores",
       group: el.v0.EVENTS,
       tags: ["flux", "state"],
-      render: () => (0, a.jsx)(Y.Z, {})
+      render: () => (0, a.jsx)(Q.Z, {})
     }, {
       id: "dispatcher",
       name: "Dispatcher",
@@ -208,7 +208,7 @@ function ec() {
       name: "Messaging",
       group: el.v0.USERS,
       tags: ["dm", "nux", "system dm"],
-      render: () => (0, a.jsx)(D.Z, {})
+      render: () => (0, a.jsx)(Z.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
@@ -226,7 +226,7 @@ function ec() {
       name: "Modals",
       group: el.v0.UI,
       tags: ["dialogs", "popups"],
-      render: () => (0, a.jsx)(Z.Z, {})
+      render: () => (0, a.jsx)(D.Z, {})
     }), e.push({
       id: "layers",
       name: "Layers",

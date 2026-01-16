@@ -47,7 +47,7 @@ function U(e) {
     questId: n
   } = e;
   return (0, y.qI)({
-    mode: t ? Z.NH.EXPANDED : Z.NH.COLLAPSED,
+    mode: t ? D.NH.EXPANDED : D.NH.COLLAPSED,
     questContent: b.jn.QUEST_BAR_V2,
     questId: n,
     sourceQuestContent: b.jn.QUEST_BAR_V2
@@ -66,17 +66,17 @@ function F(e) {
     quest: i
   } = e, u = (0, j.T)({
     quest: i,
-    location: Z.dr.QUESTS_BAR
+    location: D.dr.QUESTS_BAR
   }), g = (0, v.Z)({
-    location: Z.dr.QUESTS_BAR
+    location: D.dr.QUESTS_BAR
   }), F = (0, c.e7)([x.Z], () => null != x.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: G,
     reason: V
   } = (0, E.qN)({
     quest: i,
-    location: Z.dr.QUESTS_BAR
-  }), z = (0, c.e7)([p.Z], () => p.Z.hasLayers()), H = r.useRef(null), W = r.useMemo(() => (0, C.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, q = (0, d.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
-    hasError: Q,
+    location: D.dr.QUESTS_BAR
+  }), z = (0, c.e7)([p.Z], () => p.Z.hasLayers()), H = r.useRef(null), W = r.useMemo(() => (0, C.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, q = (0, d.Z)(K), Q = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+    hasError: Y,
     isLoading: X
   } = (0, _.kC)(), J = r.useContext(R.T) || g && G && !X && !F, {
     isExpanded: $,
@@ -87,17 +87,17 @@ function F(e) {
     expansionSpring: er,
     visibilitySpring: ei,
     springConfig: el
-  } = (0, D.a)({
+  } = (0, Z.a)({
     isQuestAccepted: K,
-    isQuestCompleted: Y,
+    isQuestCompleted: Q,
     isQuestBarVisible: J
   }), es = r.useRef(false), eo = r.useRef(false), [ec, ed] = r.useState(false), [eu, em] = r.useState(false), ep = r.useRef(null), eh = r.useRef(null), ef = r.useRef(null), ex = (0, y.Rf)(i), eb = r.useCallback(() => {
     ed(true)
   }, []), eg = r.useCallback(() => {
-    ed(false), eo.current || Y || ee(false)
-  }, [Y, ee]), ev = r.useCallback(() => {
-    ed(false), Y || ee(false), eo.current = false
-  }, [Y, ee]), ej = r.useCallback(() => {
+    ed(false), eo.current || Q || ee(false)
+  }, [Q, ee]), ev = r.useCallback(() => {
+    ed(false), Q || ee(false), eo.current = false
+  }, [Q, ee]), ej = r.useCallback(() => {
     em(true)
   }, []), ey = r.useCallback(() => {
     em(false), ee(false)
@@ -145,11 +145,11 @@ function F(e) {
     }, [eu, eT]), r.useLayoutEffect(() => {
       K && !q && eo.current && et()
     }, [et, K, q]), r.useLayoutEffect(() => {
-      Y || !K || q || eo.current || ee(false)
-    }, [K, Y, q, ee]), r.useEffect(() => {
+      Q || !K || q || eo.current || ee(false)
+    }, [K, Q, q, ee]), r.useEffect(() => {
       W && (0, T.loadVideoQuestModal)()
     }, [W]), r.useEffect(() => {
-      if (Q) {
+      if (Y) {
         var e;
         (0, h.dA)({
           questId: i.id,
@@ -166,7 +166,7 @@ function F(e) {
           tags: ["quest_id:".concat(i.id), "reason:asset_loading_error"]
         })
       }
-    }, [Q, i.id]), r.useEffect(() => {
+    }, [Y, i.id]), r.useEffect(() => {
       if (!g) {
         var e;
         (0, h.dA)({
@@ -197,9 +197,9 @@ function F(e) {
         })
       }
     }, [J, ea, X, i.id, V]), r.useEffect(() => {
-      (!G || F) && f.Z.clearTracking(), J && ea && !X && !Q && g && f.Z.stopTracking(i.id)
-    }, [G, F, J, ea, X, Q, g, i.id]), !g || !J && ea && !X || Q) return Q ? u.log("Not rendered due to asset error") : g || u.log("Not rendered due to ineligibility"), null;
-  let eO = 70 + 78 * !!Y;
+      (!G || F) && f.Z.clearTracking(), J && ea && !X && !Y && g && f.Z.stopTracking(i.id)
+    }, [G, F, J, ea, X, Y, g, i.id]), !g || !J && ea && !X || Y) return Y ? u.log("Not rendered due to asset error") : g || u.log("Not rendered due to ineligibility"), null;
+  let eO = 70 + 78 * !!Q;
   return (0, a.jsx)(S.A, {
     questOrQuests: i,
     questContent: b.jn.QUEST_BAR_V2,
@@ -255,7 +255,7 @@ function F(e) {
                   ref: eh,
                   className: M.content,
                   overlayRef: ef
-                }, Y ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(w.Z, {
+                }, Q ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(w.Z, {
                   className: M.content,
                   overlayRef: ef,
                   ref: ep,
@@ -280,10 +280,10 @@ let G = 12633 == require.j ? function() {
       enabled: t,
       variant: n
     } = g.nj.getConfig({
-      location: Z.dr.QUESTS_BAR
+      location: D.dr.QUESTS_BAR
     });
   return null == e ? null : (0, a.jsx)(_.x8, {
-    source: Z.dr.QUESTS_BAR,
+    source: D.dr.QUESTS_BAR,
     questId: e.id,
     listenForSourceError: t,
     retrySourceLoadOnError: n === g.b2.LISTEN_AND_RETRY_LOADING,

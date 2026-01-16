@@ -109,11 +109,11 @@ function ei(e) {
   })), []);
   let eg = (0, s.e7)([M.Z], () => M.Z.getStatus(t.id)),
     ev = L.Cr.useSetting(),
-    ej = (0, Q.F)(ev),
+    ej = (0, Y.F)(ev),
     ey = (0, s.e7)([U.Z], () => U.Z.hidePersonalInformation),
     eC = (0, g.p)(),
     e_ = L.Sb.useSetting(),
-    eS = (0, Q.I)(eg),
+    eS = (0, Y.I)(eg),
     eE = (0, H.g)(n),
     eT = (0, j.Z)({
       analyticsLocations: em
@@ -132,14 +132,14 @@ function ei(e) {
       eA(false)
     }, 500)
   }, []);
-  let eD = e => {
+  let eZ = e => {
       null == n || n(), (0, S.openUserProfileModal)(er({
         customStatusPrompt: ek,
         sourceAnalyticsLocations: em
       }, ep, e))
     },
-    eZ = (null == eu ? true : eu.widgets) != null && eu.widgets.length > 0,
-    eL = eZ ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    eD = (null == eu ? true : eu.widgets) != null && eu.widgets.length > 0,
+    eL = eD ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
     [eM, eU] = (0, b.US)(eL),
     eB = eM === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eF = r.useCallback(() => {
@@ -169,9 +169,9 @@ function ei(e) {
         "aria-label": t.username,
         className: en.popoutContainer,
         "data-layer": "base",
-        children: [(0, a.jsx)(Y.Z, {
+        children: [(0, a.jsx)(Q.Z, {
           displayProfile: eu,
-          handleOpenUserProfileModal: eD,
+          handleOpenUserProfileModal: eZ,
           height: ef
         }), (0, a.jsxs)(k.Z, {
           className: en.themeContainer,
@@ -188,8 +188,8 @@ function ei(e) {
               user: t,
               displayProfile: eu,
               themeType: ee.l.POPOUT,
-              onOpenProfile: ed ? true : eD
-            }), (0, a.jsx)(D.Z, {
+              onOpenProfile: ed ? true : eZ
+            }), (0, a.jsx)(Z.Z, {
               ref: eP,
               user: t,
               themeType: ee.l.POPOUT,
@@ -207,7 +207,7 @@ function ei(e) {
               user: t,
               className: en.username,
               nickname: F.ZP.getName(eo, null, t),
-              onOpenProfile: ed ? true : eD,
+              onOpenProfile: ed ? true : eZ,
               pronouns: null == eu ? true : eu.pronouns,
               tags: (0, a.jsx)(T.Z, {
                 displayProfile: eu,
@@ -220,22 +220,22 @@ function ei(e) {
                 user: t,
                 isVisible: ex
               })
-            }), (0, a.jsx)(Z.Z, {
+            }), (0, a.jsx)(D.Z, {
               user: t,
               bio: null == eu ? true : eu.bio,
               hidePersonalInformation: ey,
               onClose: n
-            }), eZ && (0, a.jsx)(I.Z, {
+            }), eD && (0, a.jsx)(I.Z, {
               user: t,
               widgets: null == eu ? true : eu.widgets,
-              onOpenUserProfileModal: eD
+              onOpenUserProfileModal: eZ
             }), (0, a.jsx)(N.Z, {
               isPremiumUser: eO,
               onInteraction: n
             }), (0, a.jsx)(w.Z, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: eD,
+              onOpenUserProfileModal: eZ,
               onClose: n
             }), (0, a.jsxs)("div", {
               className: en.menus,

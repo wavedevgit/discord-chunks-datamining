@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eZ
+  Z: () => eD
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -88,7 +88,7 @@ function et(e, t) {
 }
 let en = {
     [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => et(ee({
-      type: Y.Odu.CLICK_ZONE_DEBUG,
+      type: Q.Odu.CLICK_ZONE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -99,11 +99,11 @@ let en = {
         width: 100,
         height: 100
       }
-    }, A.Z.getWidgetDefaultSettings(Y.Odu.CLICK_ZONE_DEBUG)), {
+    }, A.Z.getWidgetDefaultSettings(Q.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => et(ee({
-      type: Y.Odu.PERFORMANCE_DEBUG,
+      type: Q.Odu.PERFORMANCE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -115,7 +115,7 @@ let en = {
         width: "auto",
         height: "auto"
       }
-    }, A.Z.getWidgetDefaultSettings(Y.Odu.PERFORMANCE_DEBUG)), {
+    }, A.Z.getWidgetDefaultSettings(Q.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -146,7 +146,7 @@ function er(e) {
 let ei = Chunk473749.memo(function(e) {
     let {
       trackedGame: t
-    } = e, n = (0, d.e7)([y.ZP], () => y.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([D.Z], () => D.Z.getGameForPID(t.pid)), i = (0, d.e7)([y.ZP], () => null == n ? null : y.ZP.getGameOverlayStatus(n));
+    } = e, n = (0, d.e7)([y.ZP], () => y.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([Z.Z], () => Z.Z.getGameForPID(t.pid)), i = (0, d.e7)([y.ZP], () => null == n ? null : y.ZP.getGameOverlayStatus(n));
     return (0, a.jsxs)("div", {
       className: J.panelGroup,
       children: [(0, a.jsx)(h.Text, {
@@ -309,13 +309,13 @@ let ei = Chunk473749.memo(function(e) {
   });
 
 function es(e) {
-  let t, n = (t = Object.values((0, d.Wu)([A.Z], () => A.Z.getWidgetsForLayout(Q.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([A.Z], () => A.Z.getWidgetsForLayout(Y.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, x.E9)(n.id);
     else {
       let t = en[e];
       if (null == t) return;
-      let n = t(Q.$S);
+      let n = t(Y.$S);
       (0, x.A4)(n)
     }
   }]
@@ -551,7 +551,7 @@ let eu = Chunk473749.memo(function(e) {
     tooltip: "Enables legacy overlay logging, which will forward all legacy logging to the main apps console."
   }],
   ef = Chunk473749.memo(function() {
-    let [e, t] = es(Y.Odu.CLICK_ZONE_DEBUG), [n, i] = es(Y.Odu.PERFORMANCE_DEBUG), l = (0, d.e7)([P.Z], () => P.Z.getRenderDebugModes()), [s, o] = r.useState({});
+    let [e, t] = es(Q.Odu.CLICK_ZONE_DEBUG), [n, i] = es(Q.Odu.PERFORMANCE_DEBUG), l = (0, d.e7)([P.Z], () => P.Z.getRenderDebugModes()), [s, o] = r.useState({});
     return r.useEffect(() => {
       let e = setInterval(() => {
         o({})
@@ -987,12 +987,12 @@ function eN() {
   }), [C, p, u, o, _]), [O, N] = r.useState(T), [w, I] = r.useState(null), R = r.useMemo(() => C.find(e => e.key === w), [C, w]), A = r.useCallback(e => {
     N(e)
   }, []), {
-    renderSelectedTab: D
+    renderSelectedTab: Z
   } = (0, q.ZP)({
     tabs: eT
   }, []);
   (0, k.BO)(S, T, A, eO, [C]);
-  let Z = r.useCallback(e => {
+  let D = r.useCallback(e => {
       s(e), b.Z.setModuleLogging(e)
     }, []),
     [L, U] = r.useState(false),
@@ -1034,7 +1034,7 @@ function eN() {
           children: (0, a.jsx)(h.Checkbox, {
             label: "Poll Native",
             checked: i,
-            onChange: e => Z(e)
+            onChange: e => D(e)
           })
         }), (0, a.jsx)("div", {
           title: "Only show breadcrumbs for active games",
@@ -1104,7 +1104,7 @@ function eN() {
       className: l()(J.panelGroup, J.subPanel),
       minHeight: 100,
       initialHeight: null != t ? t / 3 : 300,
-      children: D({
+      children: Z({
         breadcrumb: R,
         onClose: () => I(null)
       })
@@ -1176,7 +1176,7 @@ let ek = e => {
   eR = e => null == e ? "Disabled" : e ? "True" : "False",
   eA = Chunk473749.memo(function() {
     let e = (0, E.xj)(),
-      t = (0, d.e7)([Z.ZP], () => Z.ZP.getOverlayKeybind());
+      t = (0, d.e7)([D.ZP], () => D.ZP.getOverlayKeybind());
     return (0, a.jsxs)("div", {
       className: J.panelGroup,
       children: [(0, a.jsx)(h.Heading, {
@@ -1249,7 +1249,7 @@ let ek = e => {
     })
   });
 
-function eD() {
+function eZ() {
   return (0, a.jsx)(h.w0Z, {
     children: (0, a.jsx)("div", {
       className: l()($.panel, J.subPanel),
@@ -1258,7 +1258,7 @@ function eD() {
   })
 }
 
-function eZ() {
+function eD() {
   let [e, t] = r.useState("state");
   return r.useEffect(() => (f.Z.dispatch({
     type: "OVERLAY_SET_DETAILED_LOGGING",
@@ -1297,6 +1297,6 @@ function eZ() {
           children: "Experiments"
         })
       })]
-    }), "state" === e && (0, a.jsx)(eI, {}), "logging" === e && (0, a.jsx)(eN, {}), "experiments" === e && (0, a.jsx)(eD, {})]
+    }), "state" === e && (0, a.jsx)(eI, {}), "logging" === e && (0, a.jsx)(eN, {}), "experiments" === e && (0, a.jsx)(eZ, {})]
   })
 }

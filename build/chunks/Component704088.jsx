@@ -140,8 +140,8 @@ let _ = e => {
       perkAvailableToUser: k
     })), {
       installationStatus: A,
-      setInstallationStatus: D,
-      connectionStatus: Z,
+      setInstallationStatus: Z,
+      connectionStatus: D,
       setConnectionStatus: L,
       setConnect: M,
       setDisconnect: U,
@@ -159,30 +159,30 @@ let _ = e => {
     r.useEffect(() => {
       M(q)
     }, [q, M]);
-    let Y = r.useCallback(async () => p._n.INSTALLING, []);
+    let Q = r.useCallback(async () => p._n.INSTALLING, []);
     r.useEffect(() => {
       K(k)
     }, [k, K]), r.useEffect(() => {
-      H(Y)
-    }, [H, Y]);
-    let Q = r.useCallback(async () => (clearTimeout(e), L(p.Ij.DISCONNECTED), true), [e, L]),
+      H(Q)
+    }, [H, Q]);
+    let Y = r.useCallback(async () => (clearTimeout(e), L(p.Ij.DISCONNECTED), true), [e, L]),
       X = r.useCallback(() => new Promise((e, t) => {
-        D(p._n.INSTALLING), s(setTimeout(() => {
+        Z(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
         }, T))
-      }), [S, T, D, s]);
+      }), [S, T, Z, s]);
     r.useEffect(() => {
-      V && A !== p._n.UNKNOWN && D(p._n.UNKNOWN)
-    }, [V, D, A]), r.useEffect(() => {
-      U(Q)
-    }, [Q, U]), r.useEffect(() => {
+      V && A !== p._n.UNKNOWN && Z(p._n.UNKNOWN)
+    }, [V, Z, A]), r.useEffect(() => {
+      U(Y)
+    }, [Y, U]), r.useEffect(() => {
       B(X)
     }, [X, B]), r.useEffect(() => {
       A !== p._n.INSTALLING && clearTimeout(n)
     }, [n, A]), r.useEffect(() => {
-      if (A !== p._n.INSTALLED && Z !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
-    }, [A, Z, L]);
+      if (A !== p._n.INSTALLED && D !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
+    }, [A, D, L]);
     let {
       enabled: J
     } = h.H.useConfig({
@@ -246,7 +246,7 @@ let _ = e => {
               variant: "text-md/semibold",
               children: "Installation Status"
             }), (0, a.jsx)(o.B6, {
-              select: e => D(e),
+              select: e => Z(e),
               isSelected: e => e === A,
               serialize: e => "".concat(e),
               disabled: V,
@@ -286,7 +286,7 @@ let _ = e => {
               children: "Connection Status"
             }), (0, a.jsx)(o.B6, {
               select: e => L(e),
-              isSelected: e => e === Z,
+              isSelected: e => e === D,
               serialize: e => "".concat(e),
               options: [{
                 label: "Initializing",

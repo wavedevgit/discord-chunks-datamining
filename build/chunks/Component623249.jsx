@@ -36,16 +36,16 @@ function T(e) {
     transitionState: y,
     onClose: T,
     sourceQuestContent: N
-  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), D = (0, C.g2)({
+  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
     useReducedMotion: A,
     className: E.colorTransition
-  }), Z = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
+  }), D = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: F
   } = (0, b.GI)({
     questId: n.id,
     beforeRequest: () => {
-      D.startAnimation(), k({
+      Z.startAnimation(), k({
         questId: n.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: h.jZ.DEFIBRILLATOR,
@@ -53,7 +53,7 @@ function T(e) {
       })
     },
     afterRequest: e => {
-      D.stopAnimation(), w(e)
+      Z.stopAnimation(), w(e)
     }
   });
   return (0, a.jsx)(s.Modal, {
@@ -89,7 +89,7 @@ function T(e) {
             [E.disabled]: F
           }),
           onClick: B,
-          children: [D.render(), (0, a.jsx)(u.Text, {
+          children: [Z.render(), (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: E.colorTransition,
@@ -108,7 +108,7 @@ function T(e) {
             size: "sm"
           }),
           text: S.intl.string(S.t.XF4wuA),
-          errors: L ? true : Z.map(e => e.message),
+          errors: L ? true : D.map(e => e.message),
           gameTile: L ? (0, a.jsx)(c.u, {
             "aria-label": n.config.messages.gameTitle,
             __unsupportedReactNodeAsText: (0, a.jsxs)("div", {

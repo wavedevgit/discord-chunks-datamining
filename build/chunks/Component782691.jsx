@@ -63,7 +63,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), D = r.useRef([]), [Z, L] = r.useState(t.name), M = Z.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       id: _,
       skuId: _,
       title: _,
@@ -93,7 +93,7 @@ let C = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, D.current.push(e), A(e => y(j({}, e), {
+          n.src = e, Z.current.push(e), A(e => y(j({}, e), {
             [t]: n
           }))
         }
@@ -113,16 +113,16 @@ let C = {
       } = V.current;
       e.readonly || t({
         skuId: e.skuId,
-        name: Z,
+        name: D,
         config: {
           effects: I,
           stillFrames: R
         }
       })
-    }, [I, R, Z]), r.useEffect(() => () => {
-      D.current.forEach(e => {
+    }, [I, R, D]), r.useEffect(() => () => {
+      Z.current.forEach(e => {
         URL.revokeObjectURL(e)
-      }), D.current = []
+      }), Z.current = []
     }, []), null == i) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
       className: b.root,
       children: [(0, a.jsxs)("div", {
@@ -180,7 +180,7 @@ let C = {
               children: "Profile Effect Name"
             }), (0, a.jsx)("input", {
               type: "text",
-              value: Z,
+              value: D,
               className: b.input,
               onChange: e => {
                 L(e.target.value)
@@ -286,7 +286,7 @@ let C = {
                 })
               }), (0, a.jsx)(d.Z, {
                 fileContents: () => JSON.stringify(y(j({}, t), {
-                  name: Z,
+                  name: D,
                   readonly: false,
                   config: y(j({}, t.config), {
                     effects: I,

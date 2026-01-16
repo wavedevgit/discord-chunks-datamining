@@ -164,7 +164,7 @@ let I = e => {
       }, e))
     })
   },
-  D = e => {
+  Z = e => {
     var t, {
         quest: n,
         ctaLabel: s,
@@ -208,7 +208,7 @@ let I = e => {
       size: h.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
   },
-  Z = e => {
+  D = e => {
     var t;
     let {
       sourceQuestContent: n,
@@ -223,7 +223,7 @@ let I = e => {
       onGameSheetClose: p,
       taskDetails: h
     } = r.useContext(S.A), f = (null == (t = d.userStatus) ? true : t.completedAt) != null, x = (0, g.q8)(d), b = o !== m.LI.SELECT && !l && !s, j = null;
-    return f ? j = (0, a.jsx)(D, {
+    return f ? j = (0, a.jsx)(Z, {
       quest: d,
       sourceQuestContent: n
     }) : x ? j = (0, a.jsx)(w, {
@@ -262,7 +262,7 @@ function L(e) {
       onClick: e.onBack,
       icon: s.V7D,
       variant: "secondary"
-    }), (0, a.jsx)(Z, P(N({}, e), {
+    }), (0, a.jsx)(D, P(N({}, e), {
       popoutTargetElementRef: t
     }))]
   })

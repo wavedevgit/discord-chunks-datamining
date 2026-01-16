@@ -35,10 +35,10 @@ let j = ["#51BC9D"],
     } = r.useContext(h.xo), {
       completionSpring: E,
       startCompletionAnimation: T
-    } = (0, x.GX)(), O = (null == (t = C.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), P = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), w = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [D, Z] = r.useState(null), L = r.useRef(new s.qA({
+    } = (0, x.GX)(), O = (null == (t = C.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), P = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), w = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [Z, D] = r.useState(null), L = r.useRef(new s.qA({
       gravity: 0,
       wind: 0
-    })), M = (0, s.uR)(R, D), U = r.useCallback(() => {
+    })), M = (0, s.uR)(R, Z), U = r.useCallback(() => {
       if (P) return;
       let e = i.current,
         t = w.current;
@@ -154,7 +154,7 @@ let j = ["#51BC9D"],
           className: g.confetti,
           environment: L.current
         }), (0, a.jsx)(s.Ji, {
-          ref: Z,
+          ref: D,
           sprites: [v],
           colors: j,
           spriteWidth: b.Ko,
