@@ -40,7 +40,7 @@ let m = {
         errorCode: h.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let b = (0, a.U)(s),
-        E = {
+        _ = {
           activity_application_id: s,
           activity_channel_type: null == p ? true : p.type,
           activity_guild_id: g,
@@ -63,7 +63,7 @@ let m = {
           })
         }
         return e
-      }({}, E, l))
+      }({}, _, l))
     }
   },
   [Chunk981631.Etm.GET_APPLICATION_TICKET]: {

@@ -126,7 +126,7 @@ let eh = e => {
       children: (0, r.jsx)(v.Qj, ep({
         selected: t,
         route: el.Z5c.ICYMI,
-        icon: E.qOE,
+        icon: _.qOE,
         text: (0, r.jsxs)(r.Fragment, {
           children: [ec.intl.string(ec.t["jnXV/V"]), (0, r.jsx)("span", {
             className: ed.preAlphaText,
@@ -152,19 +152,19 @@ let eh = e => {
       [h, m] = (0, x.bf)(o && f ? p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
         cooldownDurationMs: U.n3
       }),
-      _ = h === p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
+      E = h === p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
     i.useEffect(() => {
-      _ && (0, T.h)({
+      E && (0, T.h)({
         name: s.ImpressionNames.GIFT_INTENT_BADGE,
         type: s.ImpressionTypes.VIEW,
         properties: {
           gift_intent_type: es.hX.FRIEND_ANNIVERSARY
         }
       })
-    }, [_]);
+    }, [E]);
     let I = () => {
         let e;
-        _ ? (er.default.track(el.rMx.GIFT_INTENT_BADGE_CLICKED, {
+        E ? (er.default.track(el.rMx.GIFT_INTENT_BADGE_CLICKED, {
           gift_intent_type: es.hX.FRIEND_ANNIVERSARY
         }), e = el.pJs.ALL, O.Z.setSection(el.pJs.ALL), m(eo.L.TAKE_ACTION)) : e = en.ZP.getState().section, (0, S.Z)({
           tab_opened: e
@@ -179,21 +179,21 @@ let eh = e => {
       },
       A = () => (0, r.jsx)(v.Qj, ef(ep({
         onClick: I,
-        interactiveClassName: _ ? ed.friendsBadge : true,
+        interactiveClassName: E ? ed.friendsBadge : true,
         selected: t,
         route: el.Z5c.FRIENDS,
-        icon: E.iFz,
+        icon: _.iFz,
         text: ec.intl.string(ec.t.TdEu5X),
         onMouseEnter: P,
         onMouseLeave: j
       }, n, l), {
-        children: a > 0 ? (0, r.jsx)(E.mAB, {
+        children: a > 0 ? (0, r.jsx)(_.mAB, {
           count: a
         }) : null
       }));
     return (0, r.jsx)("div", {
       className: ed.friendsButtonContainer,
-      children: _ ? (0, r.jsxs)(r.Fragment, {
+      children: E ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.i_, {
           title: ec.intl.string(ec.t.Thb5MO),
           body: ec.intl.string(ec.t.kGvgwS),
@@ -235,7 +235,7 @@ let eh = e => {
     return (0, r.jsx)(v.Qj, ef(ep({
       selected: t,
       route: el.Z5c.APPLICATION_LIBRARY,
-      icon: E.vqy,
+      icon: _.vqy,
       text: ec.intl.string(ec.t.cw57ar)
     }, i, l), {
       children: (0, r.jsx)(y.Z, {
@@ -245,28 +245,28 @@ let eh = e => {
       })
     }))
   },
-  eE = () => {
+  e_ = () => {
     let e = (0, w.q)();
-    return e > 0 ? (0, r.jsx)(E.mAB, {
+    return e > 0 ? (0, r.jsx)(_.mAB, {
       count: e
     }) : null
   },
-  e_ = e => {
+  eE = e => {
     let {
       selected: t
     } = e, n = (0, c.JA)("messageRequests"), {
       channelId: i
     } = (0, Z._)();
     if (!(0, L.a)()) return null;
-    let l = null == i ? true : () => _.Z.preload(el.ME, i);
+    let l = null == i ? true : () => E.Z.preload(el.ME, i);
     return (0, r.jsx)(v.Qj, ef(ep({
       selected: t,
       route: el.Z5c.MESSAGE_REQUESTS,
-      icon: E._XJ,
+      icon: _._XJ,
       text: ec.intl.string(ec.t.e7GWjQ),
       onClick: l
     }, n), {
-      children: (0, r.jsx)(eE, {})
+      children: (0, r.jsx)(e_, {})
     }))
   },
   eO = e => {
@@ -276,7 +276,7 @@ let eh = e => {
     return (0, r.jsx)(v.Qj, ef(ep({
       selected: t,
       route: el.Z5c.FAMILY_CENTER,
-      icon: E.BFJ,
+      icon: _.BFJ,
       text: n,
       onMouseEnter: () => {
         o(true)
@@ -307,11 +307,11 @@ let eh = e => {
           })
         },
         "aria-label": ec.intl.string(ec.t.cpT0Cq),
-        icon: E.Dio
+        icon: _.Dio
       })
     }) : i > 0 ? (0, r.jsx)("div", {
       className: a()(ed.familyCenterButtonContainer, ed.withPadding),
-      children: (0, r.jsx)(E.mAB, {
+      children: (0, r.jsx)(_.mAB, {
         count: i
       })
     }) : (0, r.jsx)("div", {
@@ -322,7 +322,7 @@ let eh = e => {
           let {
             visibleContent: t
           } = e;
-          return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(E.IGR, {
+          return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(_.IGR, {
             text: ec.intl.string(ec.t.y2b7CA),
             color: f.Z.colors.BACKGROUND_BRAND.css
           }) : null
@@ -356,7 +356,7 @@ let eC = Chunk473749.memo(function(e) {
     shouldShowFamilyCenterRow: f,
     selectedChannelId: g,
     path: h
-  } = e, b = i.useRef(null), _ = i.useRef(null), O = i.useRef(null), v = i.useRef(null), y = (0, A.b5)("PrivateChannels"), C = null;
+  } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), y = (0, A.b5)("PrivateChannels"), C = null;
   return c ? C = (0, r.jsx)(V.F, {
     targetElementRef: v
   }) : d && (C = (0, r.jsx)(G.d, {
@@ -374,7 +374,7 @@ let eC = Chunk473749.memo(function(e) {
         className: a()(ed.searchBar, {
           [ed.themedHeaderMobile]: u.tq
         }),
-        children: (0, r.jsx)(E.Button, {
+        children: (0, r.jsx)(_.Button, {
           fullWidth: true,
           variant: "secondary",
           size: "sm",
@@ -397,7 +397,7 @@ let eC = Chunk473749.memo(function(e) {
       }, "icymi") : null, n && t ? (0, r.jsx)(eb, {
         selected: null == h ? null != l && l.startsWith(el.Z5c.APPLICATION_LIBRARY) : h.startsWith(el.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === el.Z5c.APPLICATION_LIBRARY
-      }, "library") : null, p ? (0, r.jsx)(e_, {
+      }, "library") : null, p ? (0, r.jsx)(eE, {
         selected: null == h ? null != l && l.startsWith(el.Z5c.MESSAGE_REQUESTS) : h === el.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(F.g, {
@@ -414,7 +414,7 @@ let eC = Chunk473749.memo(function(e) {
         }), C]
       }, "nitro-tab-group") : null, (0, r.jsx)(N.i, {
         selected: h === el.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(el.Z5c.COLLECTIBLES_SHOP)),
-        listItemRef: _,
+        listItemRef: E,
         locationState: {
           analyticsSource: {
             page: ey(l),
@@ -470,7 +470,7 @@ function eT() {
     g = (0, H._h)(),
     h = [];
   (0, j.Kl)() && (f && h.push(p.z.REFERRAL_PROGRAM_POPOVER), g && h.push(p.z.RECURRING_3P_PROMOTION_POPOVER));
-  let [m, b] = (0, x.US)(h, true, true), E = (0, L.a)(), _ = function() {
+  let [m, b] = (0, x.US)(h, true, true), _ = (0, L.a)(), E = function() {
     let e = J.Ex.useSetting(),
       t = (0, R.Z)();
     returntrue === e && true === t
@@ -485,8 +485,8 @@ function eT() {
     shouldShowNitroTab: u,
     showReferralProgramPopover: m === p.z.REFERRAL_PROGRAM_POPOVER,
     showRecurring3PPopover: m === p.z.RECURRING_3P_PROMOTION_POPOVER,
-    shouldShowMessageRequestsRow: E,
-    shouldShowFamilyCenterRow: _,
+    shouldShowMessageRequestsRow: _,
+    shouldShowFamilyCenterRow: E,
     selectedChannelId: s,
     path: c
   })

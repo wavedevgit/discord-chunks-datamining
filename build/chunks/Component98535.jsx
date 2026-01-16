@@ -30,9 +30,9 @@ function E(e) {
     updateAnalyticsState: c,
     refreshCategories: u
   } = e, b = v();
-  S(b);
+  x(b);
   let E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
-    [x, O] = l.useState(true),
+    [S, O] = l.useState(true),
     [_, y] = l.useState(true),
     j = l.useMemo(() => n.filter(e => !h.y8.some(t => {
       let {
@@ -67,7 +67,7 @@ function E(e) {
   }) : (0, r.jsx)(f.Z, {
     tab: t,
     sortedCategories: j,
-    initialCategoryId: x,
+    initialCategoryId: S,
     showFilterInitially: _,
     onUnmount: () => {
       O(true), y(true)
@@ -75,7 +75,7 @@ function E(e) {
   })
 }
 let v = () => (0, a.e7)([c.Z, u.Z], () => null != c.Z.error ? "shop load fetch categories error: ".concat(c.Z.error.message) : null != u.Z.claimError ? "shop load claim error: ".concat(u.Z.claimError.message) : null != u.Z.fetchError ? "shop load fetch purchase error: ".concat(u.Z.fetchError.message) : true),
-  S = e => {
+  x = e => {
     let t = (0, a.e7)([i.default], () => i.default.getCurrentUser()),
       {
         noCache: n,

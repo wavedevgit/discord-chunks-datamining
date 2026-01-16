@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 320007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,11 +19,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function _(e) {
   let {
     canShowReminder: t = false,
-    className: E
-  } = e, _ = (0, f.Z)(u.Z), {
+    className: _
+  } = e, E = (0, f.Z)(u.Z), {
     showClipsHeaderEntrypoint: O
   } = d.NV.useExperiment({
     location: "ClipsButton"
@@ -71,7 +71,7 @@ function E(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (C ? x() : P(), () => P()), [C, x, P]), O && _) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (C ? x() : P(), () => P()), [C, x, P]), O && E) ? (0, r.jsxs)(r.Fragment, {
     children: [null != T && t && y && S && !(0, a.$sL)() && !j && (0, r.jsx)(h.Z, {
       clipIconRef: T,
       lastClipsSession: I,
@@ -79,7 +79,7 @@ function E(e) {
     }), (0, r.jsx)("div", {
       ref: N,
       children: (0, r.jsx)(o.JO, {
-        className: E,
+        className: _,
         icon: a.AlX,
         showBadge: v,
         tooltip: b.intl.string(b.t.MXaLEM),

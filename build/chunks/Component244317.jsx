@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
 function m(e) {
   let {
     applicationId: t
-  } = e.match.params, [m, b] = i.useState(false), E = i.useRef(false), [_, O] = i.useState(null), v = !u.isPlatformEmbedded && !a.tq && !m, I = i.useMemo(() => (0, l.Z)(), []);
+  } = e.match.params, [m, b] = i.useState(false), _ = i.useRef(false), [E, O] = i.useState(null), v = !u.isPlatformEmbedded && !a.tq && !m, I = i.useMemo(() => (0, l.Z)(), []);
   return (i.useEffect(() => {
-    v && true !== E.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+    v && true !== _.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
         default: n
       } = e;
@@ -49,8 +49,8 @@ function m(e) {
           rpc_success: false
         })
       }).then(() => n.disconnect())
-    }), E.current = true)
-  }, [t, v, I]), v && false !== _) ? true === _ ? (0, r.jsxs)("div", {
+    }), _.current = true)
+  }, [t, v, I]), v && false !== E) ? true === E ? (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",

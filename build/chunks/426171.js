@@ -2,9 +2,9 @@
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Kp: () => S,
+  Kp: () => x,
   u9: () => v,
-  xV: () => x
+  xV: () => S
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk828700 = require("./828700.js"),
@@ -31,7 +31,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  S = () => {
+  x = () => {
     let e = (0, b.R)(),
       t = r.useRef(null),
       n = (0, l.TH)(),
@@ -91,7 +91,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
       }
     }, [h, s, e, v, E])
   },
-  x = e => {
+  S = e => {
     let t = r.useRef({}),
       n = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
       l = (0, a.e7)([c.Z], () => c.Z.isFetchingCategories),

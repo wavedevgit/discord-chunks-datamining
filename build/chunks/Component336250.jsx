@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
 function h(e) {
   let {
     applicationId: t
-  } = e, [h, m] = i.useState(null), [b, E] = i.useState(false), _ = i.useRef(false), O = !u.isPlatformEmbedded && !a.tq, v = i.useMemo(() => (0, l.Z)(), []);
+  } = e, [h, m] = i.useState(null), [b, _] = i.useState(false), E = i.useRef(false), O = !u.isPlatformEmbedded && !a.tq, v = i.useMemo(() => (0, l.Z)(), []);
   if (i.useEffect(() => {
-      O && true !== _.current ? (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+      O && true !== E.current ? (Promise.resolve().then(n.bind(n, 536285)).then(e => {
         let {
           default: n
         } = e;
@@ -34,11 +34,11 @@ function h(e) {
           }
         }).then(e => {
           let t = null != e && e;
-          m(t), t || E(true)
+          m(t), t || _(true)
         }).catch(() => {
-          m(false), E(true)
+          m(false), _(true)
         }).then(() => n.disconnect())
-      }), _.current = true) : O || E(true)
+      }), E.current = true) : O || _(true)
     }, [t, O, v]), b) return (0, r.jsx)(c.Z, {});
   if (O && false !== h)
     if (true === h) return (0, r.jsxs)("div", {
@@ -52,7 +52,7 @@ function h(e) {
       }), (0, r.jsx)(o.zxk, {
         variant: "primary",
         text: f.intl.string(f.t.fIv16B),
-        onClick: () => E(true)
+        onClick: () => _(true)
       })]
     });
     else return (0, r.jsxs)("div", {

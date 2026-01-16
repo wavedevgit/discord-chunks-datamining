@@ -25,7 +25,7 @@ let h = function() {
   let h = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.LIGHT),
     m = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.DARKER),
     b = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.MIDNIGHT),
-    E = i.useMemo(() => [{
+    _ = i.useMemo(() => [{
       theme: p.BRd.LIGHT,
       label: f.t.K2sFfo,
       color: h.hex()
@@ -38,7 +38,7 @@ let h = function() {
       label: f.t.Do4ZJx,
       color: b.hex()
     }], [h, m, b]),
-    _ = i.useCallback(t => {
+    E = i.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,
         analyticsLocations: e,
@@ -48,16 +48,16 @@ let h = function() {
       })
     }, [e]),
     O = i.useCallback(() => {
-      null != n.current && _(n.current)
-    }, [_]);
+      null != n.current && E(n.current)
+    }, [E]);
   return (0, r.jsx)("div", {
     className: g.themeSection,
     children: (0, r.jsxs)("div", {
       className: g.themeSelector,
-      children: [E.map(e => (0, r.jsxs)("button", {
+      children: [_.map(e => (0, r.jsxs)("button", {
         type: "button",
         className: g.themeOption,
-        onClick: () => _(e.theme),
+        onClick: () => E(e.theme),
         "aria-label": f.intl.string(e.label),
         children: [(0, r.jsx)("div", {
           className: "".concat(g.themeCircle, " ").concat(t === e.theme ? g.themeCircleSelected : ""),

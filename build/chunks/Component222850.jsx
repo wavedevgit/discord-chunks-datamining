@@ -45,7 +45,7 @@ let y = Math.ceil(Math.sqrt(115200)),
         dismissContent: r
       }
     }(), P = i.useCallback(() => {
-      E.Z.getState().setUtmCurrentContext({
+      _.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
@@ -94,7 +94,7 @@ let y = Math.ceil(Math.sqrt(115200)),
       }), Z({
         glowSpring: 1,
         delay: 700
-      }), m.default.track(_.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
       U(e.contentRect.width)
     }, []), H = (0, f.y)(G, [], {
@@ -136,7 +136,7 @@ let y = Math.ceil(Math.sqrt(115200)),
           icon: d.qDn,
           listItemRef: T,
           onClick: P,
-          route: _.Z5c.QUEST_HOME_V2,
+          route: E.Z5c.QUEST_HOME_V2,
           selected: l,
           text: v.intl.string(v.t.JALI2K)
         }, S), n = n = {

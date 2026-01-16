@@ -102,7 +102,7 @@ let k = function(e) {
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
     rows: o,
     section: R
-  } = (0, l.cj)([E.ZP], () => E.ZP.getState()), k = (0, l.e7)([_.Z], () => _.Z.isFocused()), {
+  } = (0, l.cj)([_.ZP], () => _.ZP.getState()), k = (0, l.e7)([E.Z], () => E.Z.isFocused()), {
     relationshipCount: U,
     hasBlockedOrIgnored: G
   } = (0, l.cj)([b.Z], () => ({

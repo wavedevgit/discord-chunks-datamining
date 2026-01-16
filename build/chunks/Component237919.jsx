@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk132841 = require("./132841.js");
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,8 +62,8 @@ class O extends Chunk473749.Component {
     } = this.state;
     return (0, r.jsx)("div", {
       className: a()({
-        [E.libraryFilter]: true,
-        [E.focused]: t
+        [_.libraryFilter]: true,
+        [_.focused]: t
       }),
       children: (0, r.jsx)(c.E1j, {
         ref: this.searchBarRef,
@@ -83,9 +83,9 @@ class O extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "searchBarRef", i.createRef()), _(this, "state", {
+    super(...e), E(this, "searchBarRef", i.createRef()), E(this, "state", {
       focused: false
-    }), _(this, "handleKeyDown", e => {
+    }), E(this, "handleKeyDown", e => {
       var t, n, r;
       let {
         activeRowKey: i,

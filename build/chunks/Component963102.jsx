@@ -44,11 +44,11 @@ function B(e) {
     location: "collectibles_shop_header_bar"
   }), {
     searchQuery: R
-  } = (0, x.S)(), P = l.useRef(null), [w, Z] = l.useState(false);
+  } = (0, S.S)(), P = l.useRef(null), [w, Z] = l.useState(false);
   (0, d.s)(P, l.useCallback(e => {
     Z(e.contentRect.width < k.J)
   }, []));
-  let D = (0, S.Pc)("CollectiblesShopHeaderBar"),
+  let D = (0, x.Pc)("CollectiblesShopHeaderBar"),
     M = D ? [c.z.ORB_RENTAL_NEW_BADGE] : [],
     [H, F] = (0, g.US)(M),
     W = D && H === c.z.ORB_RENTAL_NEW_BADGE;

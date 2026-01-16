@@ -87,16 +87,16 @@ class d extends(r = Chunk473749.PureComponent) {
       m.addColorStop(1, this.fillColor), f.fillStyle = m;
       let b = i.length >= o ? o : i.length;
       f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
-      let E = Math.floor(r.width / (b - 3)),
-        _ = .5 * E;
-      f.translate(E - E * p, 0), f.beginPath();
-      let O = -E;
+      let _ = Math.floor(r.width / (b - 3)),
+        E = .5 * _;
+      f.translate(_ - _ * p, 0), f.beginPath();
+      let O = -_;
       i.forEach((e, r) => {
         t = {
           x: O,
           y: h * e / g
-        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + _, n.y, t.x - _, t.y, t.x, t.y), n = t, O += E
-      }), f.stroke(), f.lineTo(O - E, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
+        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + E, n.y, t.x - E, t.y, t.x, t.y), n = t, O += _
+      }), f.stroke(), f.lineTo(O - _, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
     })
   }
 }

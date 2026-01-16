@@ -29,10 +29,10 @@ function C(e) {
   } = e, E = (0, i.e7)([o.Z], () => o.Z.hasConsented(m.pjP.PERSONALIZATION)), v = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[s.m.RECOMMENDED]) ? e : []
-  }, [t]), S = r.useMemo(() => {
+  }, [t]), x = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[s.m.POPULAR]) ? e : []
-  }, [t]), x = v.length > 0 && E, [O, _] = r.useState(x ? s.m.RECOMMENDED : s.m.POPULAR), y = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), j = r.useMemo(() => (0, d.wO)(y), [y]), k = (0, i.e7)([u.Z], () => u.Z.getUserDiscounts()), T = (0, g.Z)(), I = (0, f.a)(), [L, A] = r.useState([]), B = r.useCallback(() => {
+  }, [t]), S = v.length > 0 && E, [O, _] = r.useState(S ? s.m.RECOMMENDED : s.m.POPULAR), y = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), j = r.useMemo(() => (0, d.wO)(y), [y]), k = (0, i.e7)([u.Z], () => u.Z.getUserDiscounts()), T = (0, g.Z)(), I = (0, f.a)(), [L, A] = r.useState([]), B = r.useCallback(() => {
     _(s.m.RANDOM), A(a().shuffle(j))
   }, [j]);
   r.useEffect(() => {
@@ -46,11 +46,11 @@ function C(e) {
       let t = T(v);
       e = l ? (0, d.Qf)(t, k) : t
     } else if (O === s.m.POPULAR) {
-      let t = T(S);
+      let t = T(x);
       e = l ? (0, d.Qf)(t, k) : t
     } else O === s.m.RANDOM && (e = L);
     return C ? (0, p.cf)(I(e)) : I(e)
-  }, [O, C, I, n, j, T, v, l, k, S, L]);
+  }, [O, C, I, n, j, T, v, l, k, x, L]);
   return {
     sortType: O,
     setSortType: _,
@@ -66,12 +66,12 @@ function C(e) {
         value: s.m.PRICE_LOW_TO_HIGH,
         label: h.intl.string(h.t.m8RVU2)
       }];
-      return x && e.unshift({
+      return S && e.unshift({
         value: s.m.RECOMMENDED,
         label: h.intl.string(h.t.zPWgFG)
       }), e
-    }, [x]),
-    showRecommendationOption: x,
+    }, [S]),
+    showRecommendationOption: S,
     shuffleProducts: B
   }
 }

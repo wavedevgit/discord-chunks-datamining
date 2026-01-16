@@ -21,52 +21,52 @@ function h(e) {
   var t, n, h, m;
   let {
     componentId: b,
-    promotionId: E,
-    content: _,
+    promotionId: _,
+    content: E,
     renderModalProps: O,
     analyticsLocations: v,
     analyticsLocation: I,
     isLightTheme: y
   } = e, C = "AnnouncementModalVariant1_".concat(b), {
     onClose: S
-  } = O, T = null != (m = null == (t = _.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = _.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
-    buttonAction: null == (h = _.button) ? true : h.buttonAction,
+  } = O, T = null != (m = null == (t = E.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
+    buttonAction: null == (h = E.button) ? true : h.buttonAction,
     analyticsLocations: v,
     analyticsLocation: I,
     onClose: S
-  }), x = "" !== _.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  }), x = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
     children: ["\xa0", (0, r.jsx)(o.eee, {
       className: g.termsApplyAnchor,
-      href: c.Z.getArticleURL(_.helpArticleId),
+      href: c.Z.getArticleURL(E.helpArticleId),
       children: f.intl.string(f.t["sBp+u0"])
     })]
   }) : true, P = {
     type: "video",
-    src: y ? _.heroArtVideoLinkLightTheme : _.videoLink
+    src: y ? E.heroArtVideoLinkLightTheme : E.videoLink
   };
-  null != _.heroArtVideoSubtitles && (P.subtitles = _.heroArtVideoSubtitles.map(e => ({
+  null != E.heroArtVideoSubtitles && (P.subtitles = E.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (P = {
+  }))), ("" !== E.heroArtImageLinkDarkTheme || "" !== E.heroArtImageLinkLightTheme) && (P = {
     type: "image",
-    src: y ? _.heroArtImageLinkLightTheme : _.heroArtImageLinkDarkTheme
+    src: y ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
   });
-  let A = "" !== _.modalTopPill ? () => (0, r.jsx)(u.mn, {
-    text: _.modalTopPill,
+  let A = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
+    text: E.modalTopPill,
     className: g.modalTopPill
   }) : true;
   return {
     componentId: b,
-    promotionId: E,
+    promotionId: _,
     renderModalProps: O,
-    header: _.header,
+    header: E.header,
     modalTopExtra: A,
-    subHeader: _.subheader,
+    subHeader: E.subheader,
     subHeaderExtra: x,
-    body: _.body,
+    body: E.body,
     heroArt: P,
-    featureCards: _.featureCards.map(e => ({
+    featureCards: E.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
       imageSrc: y ? e.imageLinkLightTheme : e.imageLink,

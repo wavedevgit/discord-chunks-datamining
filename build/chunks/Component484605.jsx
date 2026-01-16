@@ -22,9 +22,9 @@ let h = e => {
     discountOffer: h,
     premiumSubscription: m,
     dismissCoachmark: b,
-    children: E
+    children: _
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: E
   } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, m), v = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
@@ -75,7 +75,7 @@ let h = e => {
               return e
             }({}, t), i = i = {
               premiumSubscription: m,
-              analyticsLocations: _,
+              analyticsLocations: E,
               initialStep: u.R.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
@@ -98,7 +98,7 @@ let h = e => {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      children: E
+      children: _
     }), v]
   })
 }

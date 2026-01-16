@@ -82,8 +82,8 @@ function Z() {
 }
 
 function w() {
-  return P([_.Z, y.Z, C.Z, u.default], () => {
-    let e = _.Z.getChannel(C.Z.getVoiceChannelId()),
+  return P([E.Z, y.Z, C.Z, u.default], () => {
+    let e = E.Z.getChannel(C.Z.getVoiceChannelId()),
       t = null == e ? true : e.type,
       n = null == e ? true : e.getGuildId(),
       r = y.Z.getWasEverRtcConnected(),
@@ -168,15 +168,15 @@ function U() {
 }
 
 function G() {
-  return P([C.Z, b.Z, E.default, T.Z, _.Z], () => {
+  return P([C.Z, b.Z, _.default, T.Z, E.Z], () => {
     let e, t, n = C.Z.getVoiceChannelId(),
-      r = E.default.getId(),
+      r = _.default.getId(),
       i = [],
       l = null,
       a = 0,
       o = b.Z.getAllActiveStreams();
     if (null != n) {
-      let r = _.Z.getChannel(n);
+      let r = E.Z.getChannel(n);
       null != r && (e = r.type, t = N.ZP.countVoiceStatesForChannel(r.id) - !!T.Z.isInChannel(r.id), i = b.Z.getAllApplicationStreamsForChannel(r.id).map(e => e.ownerId))
     }
     let s = null;
@@ -201,7 +201,7 @@ function G() {
       currentUserId: s
     } = t;
     if (e.voiceChannelId !== r || null == r || function(e) {
-        let t = _.Z.getChannel(e);
+        let t = E.Z.getChannel(e);
         if (null == t) returnfalse;
         let n = t.getGuildId();
         if (null == n) returnfalse;
@@ -222,12 +222,12 @@ function G() {
 }
 
 function H() {
-  return P([C.Z, o.ZP, c.Z, E.default], () => {
+  return P([C.Z, o.ZP, c.Z, _.default], () => {
     let e = C.Z.getVoiceChannelId(),
       t = C.Z.getChannelId(),
       n = o.ZP.getConnectedActivityLocation(),
       r = (0, s.p)(n),
-      i = E.default.getId(),
+      i = _.default.getId(),
       l = (0, j.lm)(t) ? o.ZP.getEmbeddedActivitiesForChannel(t) : o.i6,
       a = (0, j.lm)(e) ? o.ZP.getEmbeddedActivitiesForChannel(e) : o.i6,
       u = (0, j.lm)(r) ? o.ZP.getEmbeddedActivitiesForChannel(r) : o.i6,

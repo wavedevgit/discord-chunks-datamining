@@ -41,7 +41,7 @@ function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, E.y)(t.id), d = (0, _.k5)(t.id), j = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), d = (0, E.k5)(t.id), j = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: k
   } = (0, o.cj)([m.Z], () => ({
@@ -78,7 +78,7 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
       isStudyRoomNotice: m
-    } = e, E = null != n && null != i && !f, _ = null != t ? (0, v.DK)(t) : null;
+    } = e, _ = null != n && null != i && !f, E = null != t ? (0, v.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -97,7 +97,7 @@ function D(e) {
       }
     }
     if (null == t || d) {
-      if (E) {
+      if (_) {
         let e = L.intl.string(L.t.ZYO5OK);
         return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFc"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
           noticeType: 0,
@@ -133,7 +133,7 @@ function D(e) {
           })
         }
       }
-    } else if (t.entity_type === w.WX.STAGE_INSTANCE && E) {
+    } else if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
       let e = L.intl.string(L.t.ZYO5OK);
       return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFc"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
         noticeType: 0,
@@ -173,7 +173,7 @@ function D(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = g.ZP.getUserCount(t.id, _);
+      let n = g.ZP.getUserCount(t.id, E);
       return {
         noticeType: 1,
         title: t.name,
@@ -209,7 +209,7 @@ function D(e) {
       }
     } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = g.ZP.getUserCount(t.id, _);
+        n = g.ZP.getUserCount(t.id, E);
       return {
         noticeType: 2,
         title: t.name,

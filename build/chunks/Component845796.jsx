@@ -25,7 +25,7 @@ let E = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, f.S)(), a = (0, d.sp)(), E = (0, g.B)("CollectiblesSortSelect"), v = n(), S = l.useMemo(() => b.aP.filter(e => e.sortType !== o.E.RELEVANCE || v), [v]), x = l.useCallback(e => {
+  } = (0, f.S)(), a = (0, d.sp)(), E = (0, g.B)("CollectiblesSortSelect"), v = n(), x = l.useMemo(() => b.aP.filter(e => e.sortType !== o.E.RELEVANCE || v), [v]), S = l.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -68,7 +68,7 @@ let E = () => {
       sortDirection: i.F.DESC
     }
   })[e], []), _ = l.useCallback(e => {
-    let n = x(O(e));
+    let n = S(O(e));
     u.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == a ? true : a.sessionId,
       page_section: null == a ? true : a.pageSection,
@@ -78,13 +78,13 @@ let E = () => {
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
     }), t(O(e))
-  }, [a, x, O, t]), y = x(e);
+  }, [a, S, O, t]), y = S(e);
   return (0, r.jsx)("div", {
     className: s()(h.container, {
       [C.customCursors]: E
     }),
     children: (0, r.jsx)(c.B6, {
-      options: S.map(x),
+      options: x.map(S),
       select: _,
       isSelected: e => e === y.value,
       serialize: e => e,

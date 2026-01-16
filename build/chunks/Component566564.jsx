@@ -117,7 +117,7 @@ let R = e => {
         isLoading: H,
         handleTransition: c,
         tab: E
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(S.Z, {
         isLoading: H,
         handleTransition: c,
         categories: []
@@ -142,7 +142,7 @@ let R = e => {
             }, n);
             break;
           case i.z.FEATURED:
-            l = (0, r.jsx)(x.Z, {
+            l = (0, r.jsx)(S.Z, {
               isLoading: H,
               handleTransition: c,
               featuredBlockRecord: e
@@ -183,7 +183,7 @@ let R = e => {
             }, n);
             break;
           case i.z.COUNTDOWN_TIMER:
-            l = (0, r.jsx)(S.J, {
+            l = (0, r.jsx)(x.J, {
               countdownTimerBlock: e,
               isVisible: w
             }, n), a = true;

@@ -27,7 +27,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function E(e) {
   }
   return e
 }
-let _ = {
+let E = {
   [Chunk981631.AzA.NOW_PLAYING]: {
     single: (e, t) => h.intl.format(h.t.NEckza, {
       user1: e.username,
@@ -88,7 +88,7 @@ let _ = {
 };
 class O extends Chunk473749.PureComponent {
   renderDescription(e, t) {
-    let n = _[e];
+    let n = E[e];
     return 1 === t.length ? n.single(t[0].user, e => this.renderActivityDiscordTag(e)) : 2 === t.length ? n.double(t[0].user, t[1].user, e => this.renderActivityDiscordTag(e)) : n.other(t.length)
   }
   renderActivityDiscordTag(e) {
@@ -99,7 +99,7 @@ class O extends Chunk473749.PureComponent {
       clickTrap: true,
       children: t => {
         var n, i;
-        return (0, r.jsx)("span", (n = E({
+        return (0, r.jsx)("span", (n = _({
           ref: this.activityDiscordTagRef,
           className: m.username
         }, t), i = i = {
@@ -168,7 +168,7 @@ class O extends Chunk473749.PureComponent {
           "aria-label": (0, f.W5)(e, {
             decoration: "never"
           }),
-          children: (0, r.jsx)(s.qEK, E({
+          children: (0, r.jsx)(s.qEK, _({
             ref: this.playerAvatarRef,
             className: a()(m.playerAvatar, {
               [m.avatarMasked]: !i

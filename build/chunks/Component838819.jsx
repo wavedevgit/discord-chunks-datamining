@@ -73,7 +73,7 @@ let D = e => {
       {
         categories: W,
         refreshCategories: U
-      } = (0, x.ZP)({
+      } = (0, S.ZP)({
         logPerf: true
       }, {
         sessionId: n,
@@ -95,7 +95,7 @@ let D = e => {
         transitionState: X,
         transitionToTab: $
       } = (0, y.B)(F);
-    (0, S.q3)(n, J, K, X, Y), (0, S.EB)(J, a);
+    (0, x.q3)(n, J, K, X, Y), (0, x.EB)(J, a);
     let {
       dismissShopButtonDC: ee
     } = (0, A.Z)();
@@ -112,7 +112,7 @@ let D = e => {
     }, []);
     let {
       analyticsLocations: er
-    } = (0, S.MV)(J);
+    } = (0, x.MV)(J);
     return (0, r.jsx)(g.Gt, {
       value: er,
       children: (0, r.jsx)(C.k0, {

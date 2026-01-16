@@ -28,14 +28,14 @@ function h(e) {
   } = e, {
     searchQuery: C,
     onSetSearchQuery: E
-  } = (0, f.S)(), [v, S] = l.useState(""), x = (0, d.sp)(), O = (0, i.e7)([c.default], () => c.default.locale), _ = l.useRef(null), [y, j] = l.useState(false);
+  } = (0, f.S)(), [v, x] = l.useState(""), S = (0, d.sp)(), O = (0, i.e7)([c.default], () => c.default.locale), _ = l.useRef(null), [y, j] = l.useState(false);
   l.useEffect(() => {
     let e = setTimeout(() => {
       E(v)
     }, 250);
     return () => clearTimeout(e)
   }, [v, E]), l.useEffect(() => {
-    S(C)
+    x(C)
   }, [C]), l.useEffect(() => {
     j(a && h)
   }, [a, h]);
@@ -44,15 +44,15 @@ function h(e) {
     }, [v, E]),
     T = l.useCallback(e => {
       u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == x ? true : x.sessionId,
-        page_section: null == x ? true : x.pageSection,
-        page_category: null == x ? true : x.pageCategory,
-        page_index: null == x ? true : x.pageIndex,
-        page_size: null == x ? true : x.pageSize,
+        collectibles_shop_session_id: null == S ? true : S.sessionId,
+        page_section: null == S ? true : S.pageSection,
+        page_category: null == S ? true : S.pageCategory,
+        page_index: null == S ? true : S.pageIndex,
+        page_size: null == S ? true : S.pageSize,
         cta_name: e,
         page_type: n
       })
-    }, [n, x]),
+    }, [n, S]),
     I = l.useCallback(() => {
       n !== g.AW.CATALOG && t(g.AW.CATALOG), T(g.Dh.SEARCH_ICON), j(true), setTimeout(() => {
         var e;
@@ -63,7 +63,7 @@ function h(e) {
       n !== g.AW.CATALOG && t(g.AW.CATALOG), T(g.Dh.SEARCH_BAR)
     }, [n, t, T]),
     A = l.useCallback(() => {
-      S(""), E(""), T(g.Dh.SEARCH_BAR_CLEAR), a && j(false)
+      x(""), E(""), T(g.Dh.SEARCH_BAR_CLEAR), a && j(false)
     }, [E, T, a]),
     B = l.useCallback(() => {
       a && "" === v && j(false)
@@ -82,7 +82,7 @@ function h(e) {
       ref: _,
       onKeyDown: k,
       query: v,
-      onChange: S,
+      onChange: x,
       onClear: A,
       onBlur: B,
       placeholder: "en-US" === O ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])

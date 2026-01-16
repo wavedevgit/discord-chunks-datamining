@@ -42,7 +42,7 @@ let m = function(e) {
       questId: n,
       setQuestId: r
     }
-  }(t), b = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuest(n) : true, [n]), E = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuestLoadedViaPreview(n) : null, [n]);
+  }(t), b = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuest(n) : true, [n]), _ = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuestLoadedViaPreview(n) : null, [n]);
   i.useEffect(() => {
     null != n && (0, s.MG)(n).then(() => {
       (0, s.T0)(n)
@@ -58,7 +58,7 @@ let m = function(e) {
       o.Z.unsubscribe("QUEST_PREVIEW_UPDATE", e)
     }
   }, [n]);
-  let [_, O] = i.useState([]);
+  let [E, O] = i.useState([]);
   return (0, r.jsx)(p.Z, {
     controls: (0, r.jsx)(d.Z, {
       questId: n,
@@ -68,13 +68,13 @@ let m = function(e) {
         null != n && (0, s.MG)(n)
       }
     }),
-    selectedSections: _,
+    selectedSections: E,
     onSectionSelect: e => {
       "all" === e ? O([]) : O([e])
     },
-    children: (null == E ? true : E.id) != null ? (0, r.jsx)(f.UN, {
-      questId: null == E ? true : E.id,
-      selectedSections: _
+    children: (null == _ ? true : _.id) != null ? (0, r.jsx)(f.UN, {
+      questId: null == _ ? true : _.id,
+      selectedSections: E
     }) : null
   })
 }

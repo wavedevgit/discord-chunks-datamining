@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk588468 = require("./588468.jsx"),
-  Chunk77498 = require("./77498.js"),
+  Chunk404577 = require("./404577.js"),
   Chunk483360 = require("./483360.js"),
   Chunk877565 = require("./877565.jsx"),
   Chunk590921 = require("./590921.js"),
@@ -23,7 +23,7 @@ function p(e) {
 }
 let _ = {
   autocompleteInputElementType: "gameMentionInput",
-  stores: [Chunk77498.Z],
+  stores: [Chunk404577.Z],
   matches: (e, t, n, r, i) => true,
   queryResults: (e, t, n) => ({
     results: {

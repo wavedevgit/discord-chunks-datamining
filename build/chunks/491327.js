@@ -87,7 +87,7 @@ let I = {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.GUILDS_MEMBERS_READ, Chunk243814.x.GUILDS_CHANNELS_READ]
     },
     handler(e) {
-      let t = (0, _.Z)();
+      let t = (0, E.Z)();
       if (null == t) throw new m.Z({
         errorCode: v.lTL.INVALID_CHANNEL
       }, "Invalid channel");
@@ -98,7 +98,7 @@ let I = {
   },
   [Chunk981631.Etm.SELECT_VOICE_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, E.Z)(e).required().keys({
+    validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60),
       force: e.boolean(),
@@ -116,8 +116,8 @@ let I = {
         }
       } = e;
       if (!r) return o.default.selectVoiceChannel(null), null;
-      let E = f.Z.getVoiceChannelId();
-      if (null != E && E !== r && false === l) throw new m.Z({
+      let _ = f.Z.getVoiceChannelId();
+      if (null != _ && _ !== r && false === l) throw new m.Z({
         errorCode: v.lTL.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
@@ -159,7 +159,7 @@ let I = {
   },
   [Chunk981631.Etm.SELECT_TEXT_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, E.Z)(e).required().keys({
+    validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60)
     }),

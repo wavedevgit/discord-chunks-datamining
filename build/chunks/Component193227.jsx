@@ -24,12 +24,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk213875 = require("./213875.js");
 
-function x(e) {
+function S(e) {
   let {
     category: t
   } = e, n = (0, s.e7)([o.default], () => o.default.getCurrentUser()), l = (0, d.l)(t.products), a = (0, u.a)()(l), i = (0, E.St)(a), f = (0, c.sp)();
   return null == n || 0 === i.length ? null : (0, r.jsx)("div", {
-    className: S.cardsContainer,
+    className: x.cardsContainer,
     children: i.map((e, t) => (0, r.jsx)(c.k0, {
       newValue: {
         tilePosition: t
@@ -50,11 +50,11 @@ function O(e) {
     s(e)
   }, .15);
   return (0, r.jsxs)("div", {
-    className: S.categoryWrapper,
+    className: x.categoryWrapper,
     ref: i,
     children: [(0, r.jsx)(g.Z, {
       category: t
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(S, {
       category: t
     })]
   })
@@ -71,27 +71,27 @@ function _(e) {
   } = e, d = (0, c.sp)(), g = (0, h.R)(), p = null != (t = null == d ? true : d.sessionId) ? t : "", {
     noCache: m,
     includeUnpublished: E
-  } = (0, C.Z)(), x = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, C.Z)(), S = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
   }), [n]), _ = l.useRef(true);
   l.useEffect(() => {
-    if (null == u || 0 === x.length) {
+    if (null == u || 0 === S.length) {
       _.current = true;
       return
     }
     if (u === _.current) return;
-    let e = x.findIndex(e => e.skuId === u);
+    let e = S.findIndex(e => e.skuId === u);
     if (false === e) return;
     let t = Math.floor(e / v.kN) + 1;
     t !== s && o(t), _.current = u
-  }, [u, x, o, s]);
+  }, [u, S, o, s]);
   let y = l.useMemo(() => {
     let e = (s - 1) * v.kN;
-    return x.slice(e, e + v.kN)
-  }, [x, s]);
+    return S.slice(e, e + v.kN)
+  }, [S, s]);
   return (l.useEffect(() => {
     (0, f.n)({
       sessionId: p,
@@ -109,7 +109,7 @@ function _(e) {
       cacheDisabled: m
     })
   }, [p, E, m, g, y.length]), g) ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)("div", {
-    className: S.categories,
+    className: x.categories,
     children: [y.map((e, t) => (0, r.jsx)("div", {
       ref: t => a(e.skuId, t),
       children: (0, r.jsx)(c.k0, {
@@ -121,10 +121,10 @@ function _(e) {
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {
-      className: S.paginationContainer,
+      className: x.paginationContainer,
       children: (0, r.jsx)(i.DsT, {
         currentPage: s,
-        totalCount: x.length,
+        totalCount: S.length,
         pageSize: v.kN,
         onPageChange: o,
         disablePaginationGap: true

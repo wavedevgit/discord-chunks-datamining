@@ -45,12 +45,12 @@ function O(e) {
       case 1:
         return l;
       case 2:
-        return _.intl.format(_.t.t1DyC1, {
+        return E.intl.format(E.t.t1DyC1, {
           user1: l,
           user2: a
         });
       default:
-        return _.intl.format(_.t["5CSEcJ"], {
+        return E.intl.format(E.t["5CSEcJ"], {
           user1: l,
           user2: a,
           extras: n.length - 2
@@ -88,9 +88,9 @@ function O(e) {
       let t = h.dc(v);
       if (null != t) return t;
       switch (v.type) {
-        case E.IIU.PLAYING:
+        case _.IIU.PLAYING:
           if ((0, s.Z)(v)) return {
-            subtitle: _.intl.string(_.t.tO8wOx),
+            subtitle: E.intl.string(E.t.tO8wOx),
             icon: (0, r.jsx)(m.Z.Header.Icon, {
               src: m.Z.Header.Icon.Src.XBOX
             })
@@ -104,13 +104,13 @@ function O(e) {
               src: null != e.getIconURL(b.Z) ? e.getIconURL(b.Z) : n(211827)
             }) : null
           };
-        case E.IIU.STREAMING:
+        case _.IIU.STREAMING:
           return {
-            subtitle: _.intl.string(_.t.HyGHj7), icon: null != e && null != e.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
+            subtitle: E.intl.string(E.t.HyGHj7), icon: null != e && null != e.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
               src: e.getIconURL(b.Z)
             }) : null
           };
-        case E.IIU.LISTENING:
+        case _.IIU.LISTENING:
           let i;
           return i = (0, o.Z)(v) ? (0, r.jsx)(m.Z.Header.Icon, {
             src: m.Z.Header.Icon.Src.SPOTIFY
@@ -119,14 +119,14 @@ function O(e) {
           }) : (0, r.jsx)(m.Z.Header.Icon, {
             src: n(211827)
           }), {
-            subtitle: _.intl.formatToPlainString(_.t.NF5xop, {
+            subtitle: E.intl.formatToPlainString(E.t.NF5xop, {
               name: v.name
             }),
             icon: i
           };
-        case E.IIU.WATCHING:
+        case _.IIU.WATCHING:
           return {
-            subtitle: _.intl.formatToPlainString(_.t.pW3Ip3, {
+            subtitle: E.intl.formatToPlainString(E.t.pW3Ip3, {
               name: v.name
             }), icon: null != e && null != e.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
               src: e.getIconURL(b.Z)
@@ -134,13 +134,13 @@ function O(e) {
           };
         default:
           return {
-            subtitle: _.intl.string(_.t.grGyaf), icon: null
+            subtitle: E.intl.string(E.t.grGyaf), icon: null
           }
       }
     }
     if (0 === d.length) {
       if (u.length > 0) return {
-        subtitle: _.intl.string(_.t.grGyaf),
+        subtitle: E.intl.string(E.t.grGyaf),
         icon: null
       };
       let e = d[0];
@@ -152,8 +152,8 @@ function O(e) {
           let e = h.dc(t);
           if (null != e) return e
         }
-        if (null != t && t.type === E.IIU.LISTENING) return {
-          subtitle: _.intl.string(_.t.rmnkz4),
+        if (null != t && t.type === _.IIU.LISTENING) return {
+          subtitle: E.intl.string(E.t.rmnkz4),
           icon: (0, r.jsx)(m.Z.Header.Icon, {
             src: m.Z.Header.Icon.Src.SPOTIFY
           })
@@ -182,7 +182,7 @@ function O(e) {
       }
     }
     return {
-      subtitle: _.intl.string(_.t.sau5tt),
+      subtitle: E.intl.string(E.t.sau5tt),
       icon: (0, r.jsx)(m.Z.Header.Icon, {
         src: m.Z.Header.Icon.Src.MULTIPLE
       })

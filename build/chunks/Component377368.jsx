@@ -57,10 +57,10 @@ class C extends Chunk131468.Z {
         let i = {
           soundKey: "".concat(r, "-").concat(e),
           soundURL: (0, b.Z)(e),
-          soundVolume: (0, E.Z)(n),
+          soundVolume: (0, _.Z)(n),
           reportSoundStartedPlaying: () => (0, g.xR)(e, r)
         };
-        u.Z.supports(v.AN.SAMPLE_PLAYBACK) ? await (0, _.$)(i) : await (0, _.h)(i, t.playingSoundsWeb)
+        u.Z.supports(v.AN.SAMPLE_PLAYBACK) ? await (0, E.$)(i) : await (0, E.h)(i, t.playingSoundsWeb)
       } catch (e) {
         y.warn("Error playing soundboard sound: ".concat(e.message))
       } finally {

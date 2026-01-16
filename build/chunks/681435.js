@@ -91,11 +91,11 @@ let g = () => {
       }
       return null
     })(m, t) : null,
-    E = r.useCallback(() => {
+    _ = r.useCallback(() => {
       null != b && h(f.L.AUTO)
     }, [b, h]);
   return {
     shopButtonDisplayOptions: b,
-    dismissShopButtonDC: E
+    dismissShopButtonDC: _
   }
 }

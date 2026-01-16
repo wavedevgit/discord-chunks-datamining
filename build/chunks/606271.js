@@ -49,7 +49,7 @@ class x {
         type: "RPC_APP_CONNECTED",
         socketId: e.id,
         application: e.application
-      }), E.default.track(C.rMx.AUTHORIZED_APP_CONNECTED, {
+      }), _.default.track(C.rMx.AUTHORIZED_APP_CONNECTED, {
         app_id: e.application.id,
         transport: e.transport
       })
@@ -87,7 +87,7 @@ class x {
           }, i = "".concat(t).concat(e.id);
           break;
         default:
-          return (0, _.vE)(e)
+          return (0, E.vE)(e)
       }
       null != n && this.rpcServer.dispatchToSubscriptions(t, {
         channel_id: n

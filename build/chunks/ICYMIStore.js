@@ -144,7 +144,7 @@ function eb() {
   } else en.splice(5, 0, r)
 }
 
-function eE() {
+function e_() {
   let e = new Set;
   if (H.forEach(t => {
       e.add(t.id)
@@ -160,7 +160,7 @@ function eE() {
   })
 }
 
-function e_(e) {
+function eE(e) {
   if (H.length > 0 && (k = H, H = [], B = []), q++, null != e) en = e.newUnread, er = e.newRead;
   else {
     let [e, t] = eO(k);
@@ -177,7 +177,7 @@ function e_(e) {
           if (!(0, d.Z2)(r)) {
             if (null != r.channel_id) {
               let e = g.Z.getChannel(r.channel_id);
-              if (!E.Z.can(A.Plq.VIEW_CHANNEL, e)) continue
+              if (!_.Z.can(A.Plq.VIEW_CHANNEL, e)) continue
             }
             if ((0, d.BQ)(r, 2 * I.Z.Seconds.DAY) || (0, d.xt)(r)) {
               var n;
@@ -318,7 +318,7 @@ function eN(e) {
 }
 class ej extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(f.default, g.Z, o.Z, u.Z, h.Z, d.ZP, m.Z, N.Z, x.Z, b.Z, E.Z, _.ZP, O.Z, v.ZP), null != e) {
+    if (this.waitFor(f.default, g.Z, o.Z, u.Z, h.Z, d.ZP, m.Z, N.Z, x.Z, b.Z, _.Z, E.ZP, O.Z, v.ZP), null != e) {
       var t, n, r, i, l, a, s;
       (k = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         F[e.id] = e
@@ -444,7 +444,7 @@ let ex = new ej(Chunk570140.Z, {
       messageItem: t,
       customStatusItem: n
     } = e;
-    if (null != n) return ee = n, null != U && (H = H.length > 0 ? H : [...k], eE(), e_()), true;
+    if (null != n) return ee = n, null != U && (H = H.length > 0 ? H : [...k], e_(), eE()), true;
     if (null != t) {
       let e = {
         id: t.message.id,
@@ -462,7 +462,7 @@ let ex = new ej(Chunk570140.Z, {
         }), null == U && null == V) {
         let [t, n] = eO(k = [e, ...k]);
         en = t, er = n
-      } else H = [e, ...H], e_();
+      } else H = [e, ...H], eE();
       returntrue
     }
     returnfalse
@@ -488,13 +488,13 @@ let ex = new ej(Chunk570140.Z, {
         }
         return e
       })
-    }(t), eE(), V = {
+    }(t), e_(), V = {
       load_id: n,
       load_time_millis: Date.now() - r,
       feed_item_ids: H.map(e => e.id)
     };
     let [a, o] = eO(H);
-    if (B = ev(a), !X || 0 === q || i) q = 0, !eu && eg(a, H) ? (J = true, Q = true) : J = false, e_({
+    if (B = ev(a), !X || 0 === q || i) q = 0, !eu && eg(a, H) ? (J = true, Q = true) : J = false, eE({
       newUnread: a,
       newRead: o
     });
@@ -612,7 +612,7 @@ let ex = new ej(Chunk570140.Z, {
   },
   RELOAD_ICYMI: function() {
     if (0 === H.length) returnfalse;
-    e_(), J = false
+    eE(), J = false
   },
   ICYMI_TAB_OPENED: function() {
     X = true, G = Date.now(), Q && (Q = false, J = false), et < 5 && et++

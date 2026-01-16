@@ -22,8 +22,8 @@ function h(e) {
     notificationItem: n
   } = e, [h, m] = r.useState(false), {
     unreadItems: b,
-    readItems: E,
-    allUnreadItemsHydrated: _
+    readItems: _,
+    allUnreadItemsHydrated: E
   } = (0, p.Z)(), O = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), v = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && O > 0));
   r.useEffect(() => {
     null != c.Z.getLoadId() && o.m.trackFeedShown({
@@ -185,14 +185,14 @@ function h(e) {
         }
       }) : (b.forEach(t => {
         (0, d.eO)(t) || e.push(t)
-      }), _ && e.push({
+      }), E && e.push({
         id: "end",
         timestamp: 0,
         unread: false,
         data: {
           kind: "end"
         }
-      }), E.length > 0 && E.forEach(t => {
+      }), _.length > 0 && _.forEach(t => {
         (0, d.eO)(t) || e.push(t)
       }), y && e.push({
         id: "bottomLoading",
@@ -205,7 +205,7 @@ function h(e) {
         data: e,
         stickyHeaderIndices: []
       }
-    }, [v, n, b, _, E, y]);
+    }, [v, n, b, E, _, y]);
   return {
     data: R,
     loading: v,

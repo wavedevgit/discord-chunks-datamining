@@ -38,7 +38,7 @@ let A = [],
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
-  let l = E.Z.getGuild(n),
+  let l = _.Z.getGuild(n),
     a = e.replace(R, P.intl.string(P.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
@@ -117,15 +117,15 @@ function V(e) {
     message: s,
     optimistic: c
   } = e;
-  if (c || _.Z.isSelfDeaf()) returnfalse;
+  if (c || E.Z.isSelfDeaf()) returnfalse;
   let u = h.Z.getChannel(o);
   if (null == u) returnfalse;
   let d = I.Z.getChannelId(),
     b = g.ZP.getCurrentSidebarChannelId(d),
-    E = o === d || o === b,
-    C = p.OW.getSetting() && s.tts && E,
+    _ = o === d || o === b,
+    C = p.OW.getSetting() && s.tts && _,
     T = O.Z.getTTSType(),
-    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === x.PrB.ALL_CHANNELS || T === x.PrB.SELECTED_CHANNEL && E);
+    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === x.PrB.ALL_CHANNELS || T === x.PrB.SELECTED_CHANNEL && _);
   if ((C || N) && !v.Z.isBlockedOrIgnoredForMessage(s)) {
     if (A.indexOf(s.id) >= 0) returnfalse;
     A.unshift(s.id) > 10 && A.pop();
@@ -148,7 +148,7 @@ function F(e) {
 }
 
 function z() {
-  _.Z.isSelfDeaf() && o.M9()
+  E.Z.isSelfDeaf() && o.M9()
 }
 
 function Y(e) {

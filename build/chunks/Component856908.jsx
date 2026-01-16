@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function S(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function S(e, t) {
   }), e
 }
 
-function x(e) {
+function S(e) {
   let {
     tab: t,
     label: n,
@@ -91,7 +91,7 @@ function O(e) {
     isHovered: m,
     setIsHovered: h,
     onMouseEnter: C,
-    onMouseLeave: x,
+    onMouseLeave: S,
     cancelTimers: O
   } = (0, g.Z)(100, 100), _ = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), O(), h(true), p.current = d.Z.keyboardModeEnabled)
@@ -101,7 +101,7 @@ function O(e) {
   return (0, r.jsx)("div", {
     className: E.tabWithMenuContainer,
     onMouseEnter: y,
-    onMouseLeave: x,
+    onMouseLeave: S,
     children: (0, r.jsx)(o.yRy, {
       targetElementRef: c,
       shouldShow: m,
@@ -120,7 +120,7 @@ function O(e) {
         } = e;
         return (0, r.jsx)("div", {
           onMouseEnter: C,
-          onMouseLeave: x,
+          onMouseLeave: S,
           children: (0, r.jsx)(b.Z, {
             handleTransition: i,
             onClose: t
@@ -131,7 +131,7 @@ function O(e) {
         let {
           isShown: u
         } = l, d = u ? o.u04 : o.CJ0;
-        return (0, r.jsx)(f.Z.Title, S(v({}, e), {
+        return (0, r.jsx)(f.Z.Title, x(v({}, e), {
           ref: c,
           onClick: () => i(t),
           onKeyDown: _,
@@ -161,12 +161,12 @@ function _(e) {
     showOrbRentalNewBadge: c
   } = e, b = l.useRef(null), m = l.useRef(false), {
     isHovered: C,
-    setIsHovered: x,
+    setIsHovered: S,
     onMouseEnter: O,
     onMouseLeave: _,
     cancelTimers: y
   } = (0, g.Z)(100, 100), j = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), y(), x(true), m.current = d.Z.keyboardModeEnabled)
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), y(), S(true), m.current = d.Z.keyboardModeEnabled)
   }, k = l.useCallback(() => {
     m.current = d.Z.keyboardModeEnabled, O()
   }, [O]);
@@ -180,11 +180,11 @@ function _(e) {
       position: "bottom",
       align: "left",
       onRequestOpen: () => {
-        y(), x(true), m.current = d.Z.keyboardModeEnabled
+        y(), S(true), m.current = d.Z.keyboardModeEnabled
       },
       onRequestClose: () => {
         var e;
-        m.current && !d.Z.keyboardModeEnabled && (0, u.Qj)(), x(false), null == (e = b.current) || e.focus()
+        m.current && !d.Z.keyboardModeEnabled && (0, u.Qj)(), S(false), null == (e = b.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -206,7 +206,7 @@ function _(e) {
         let {
           isShown: n
         } = t, l = n ? o.u04 : o.CJ0;
-        return (0, r.jsx)(f.Z.Title, S(v({}, e), {
+        return (0, r.jsx)(f.Z.Title, x(v({}, e), {
           ref: b,
           onKeyDown: j,
           wrapperClassName: E.tabWrapper,
@@ -247,16 +247,16 @@ function j(e) {
     itemGapPx: 24,
     maxLines: 1,
     containerWidth: d
-  }), C = l.useMemo(() => a.slice(0, b + 1), [b, a]), v = l.useMemo(() => a.slice(b + 1), [b, a]), S = l.useRef(null), O = l.useCallback(e => {
+  }), C = l.useMemo(() => a.slice(0, b + 1), [b, a]), v = l.useMemo(() => a.slice(b + 1), [b, a]), x = l.useRef(null), O = l.useCallback(e => {
     let t = e.contentRect.width;
     null != t && g.current !== t && (f(t), g.current = t)
   }, []);
-  (0, c.s)(S, O);
+  (0, c.s)(x, O);
   let j = 0 !== d,
     k = v.some(e => y(e.tab, e, n));
   return (0, r.jsxs)("div", {
     className: s()(E.container, t),
-    ref: S,
+    ref: x,
     children: [(0, r.jsxs)("div", {
       className: E.measurements,
       children: [a.map((e, t) => {
@@ -264,7 +264,7 @@ function j(e) {
         return (0, r.jsx)(i.AJ, {
           index: t,
           onItemLayout: p,
-          children: (0, r.jsx)(x, {
+          children: (0, r.jsx)(S, {
             tab: e.tab,
             label: e.label,
             selected: y(e.tab, e, n),
@@ -287,7 +287,7 @@ function j(e) {
       className: E.tabs,
       children: [C.map(e => {
         var t;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(S, {
           tab: e.tab,
           label: e.label,
           selected: y(e.tab, e, n),

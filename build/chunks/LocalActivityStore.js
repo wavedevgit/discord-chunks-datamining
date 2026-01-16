@@ -26,8 +26,8 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk581883 = require("./581883.js"),
   Chunk199902 = require("./199902.js"),
   Chunk592125 = require("./592125.js"),
+  Chunk404577 = require("./404577.js"),
   Chunk272053 = require("./272053.js"),
-  Chunk77498 = require("./77498.js"),
   Chunk944486 = require("./944486.js"),
   Chunk797258 = require("./797258.js"),
   Chunk981631 = require("./981631.js");
@@ -80,7 +80,7 @@ function k() {
   null != r && ("0" === r.expiresAtMs || new Date(Number(r.expiresAtMs)).getTime() - new Date().getTime() > 0) && n.push((0, _.I)(r));
   let i = E.Z.getActivities();
   n.push(...i);
-  let o = C.Z.getStream();
+  let o = A.Z.getStream();
   null != o && n.push(D({
     type: w.IIU.STREAMING
   }, o));
@@ -95,7 +95,7 @@ function k() {
     f = null != I.Z.getCurrentUserActiveStream(),
     p = u || d && !f;
   if (null != c && null != c.name && !p) {
-    let t = A.Z.getGameByName(c.name);
+    let t = C.Z.getGameByName(c.name);
     n.push(D({
       type: w.IIU.PLAYING,
       name: c.name,
@@ -177,7 +177,7 @@ function V() {
 }
 class H extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, I.Z, T.Z, d.ZP, C.Z, E.Z, A.Z, g.Z, h.ZP, N.Z, P.Z, O.Z, S.Z), this.syncWith([E.Z, g.Z], () => k())
+    this.waitFor(p.Z, I.Z, T.Z, d.ZP, A.Z, E.Z, C.Z, g.Z, h.ZP, N.Z, P.Z, O.Z, S.Z), this.syncWith([E.Z, g.Z], () => k())
   }
   getActivities() {
     return j

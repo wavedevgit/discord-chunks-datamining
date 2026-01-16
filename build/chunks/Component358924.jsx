@@ -218,7 +218,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
     })
   };
 var eb = ((r = eb || {}).XBOX = "XBOX", r.SPOTIFY = "SPOTIFY", r.MULTIPLE = "MULTIPLE", r);
-let eE = e => {
+let e_ = e => {
   let t, {
     src: n,
     onClick: r,
@@ -261,8 +261,8 @@ let eE = e => {
     children: t
   }) : t
 };
-eE.Src = eb;
-let e_ = e => {
+e_.Src = eb;
+let eE = e => {
   let {
     priorityUser: t,
     title: n,
@@ -306,7 +306,7 @@ let e_ = e => {
     }) : l]
   })
 };
-e_.Icon = eE;
+eE.Icon = e_;
 let eO = e => {
   var t, n, {
       children: r,
@@ -363,7 +363,7 @@ let eO = e => {
     }), t))
   })
 };
-eO.Header = e_, eO.Body = e => {
+eO.Header = eE, eO.Body = e => {
   let {
     children: t
   } = e;
@@ -479,24 +479,24 @@ eO.Header = e_, eO.Body = e => {
     state: m,
     application_id: b
   } = c, {
-    hasButton: E
+    hasButton: _
   } = eg({
     activity: c,
     user: d
-  }), _ = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), y = (0, S.Z)({
+  }), E = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), y = (0, S.Z)({
     application: f,
     analyticsLocations: p
   });
   return null != c.assets || (0, O.Z)(c) || null != y ? (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: o()(ea.activitySection, {
-        [ea.activitySectionWithButtons]: E
+        [ea.activitySectionWithButtons]: _
       }),
       children: [null != g && 0 !== Object.keys(g).length ? (0, i.jsxs)("div", {
         className: ea.activitySectionAssets,
         children: [(0, i.jsx)("img", {
           alt: null != (l = g.large_text) ? l : "",
-          src: null != (a = u(b, g.large_image, [160, 160])) ? a : _,
+          src: null != (a = u(b, g.large_image, [160, 160])) ? a : E,
           className: o()(ea.largeImage, {
             [ea.largeImageMask]: null != g.small_image
           })
@@ -509,7 +509,7 @@ eO.Header = e_, eO.Body = e => {
         className: ea.activitySectionAssets,
         children: (0, i.jsx)("img", {
           alt: "",
-          src: _,
+          src: E,
           className: ea.largeImage
         })
       }), (0, i.jsxs)("div", {
@@ -608,7 +608,7 @@ eO.Header = e_, eO.Body = e => {
       className: ea.twitchSectionPreviewWrapper,
       aspectRatio: 16 / 9,
       children: (0, i.jsxs)(f.P3F, {
-        href: (0, _.Z)(r),
+        href: (0, E.Z)(r),
         tag: "a",
         target: "_blank",
         children: [(0, i.jsx)("img", {
@@ -708,7 +708,7 @@ eO.Header = e_, eO.Body = e => {
   let b = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    _ = (0, ee.xF)(h.id, o, 300);
+    E = (0, ee.xF)(h.id, o, 300);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.embeddedActivityTopRow,
@@ -734,8 +734,8 @@ eO.Header = e_, eO.Body = e => {
       }) : null]
     }), (0, i.jsxs)("div", {
       className: ea.embeddedActivityPlayerContainer,
-      children: [null != _ ? (0, i.jsx)("img", {
-        src: _,
+      children: [null != E ? (0, i.jsx)("img", {
+        src: E,
         alt: h.name,
         className: ea.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
@@ -751,7 +751,7 @@ eO.Header = e_, eO.Body = e => {
             size: "sm",
             text: el.intl.string(el.t.VJlc0S),
             onClick: e => {
-              e.stopPropagation(), (0, E.Z)({
+              e.stopPropagation(), (0, _.Z)({
                 applicationId: u,
                 activityChannelId: n.id,
                 locationObject: p.location,

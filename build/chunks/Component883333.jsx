@@ -139,32 +139,32 @@ let R = e => {
     size: d,
     isFocused: f,
     isQuestExpired: g,
-    isExpanded: E,
-    isAnimating: b,
-    contentPosition: v,
-    sourceQuestContent: I
-  } = e, R = (0, m._Q)(n), D = (0, m.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
+    isExpanded: b,
+    isAnimating: v,
+    contentPosition: I,
+    sourceQuestContent: R
+  } = e, D = (0, m._Q)(n), x = (0, m.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), x = R >= m.OH.ACCEPTED, L = R >= m.OH.COMPLETED, j = E || b, M = (0, h.t5)(n, S.dr.QUESTS_CARD, i, I), k = (0, p.O5)(), U = (0, m.Rf)(n), G = (0, h.DD)({
+  }), L = D >= m.OH.ACCEPTED, j = D >= m.OH.COMPLETED, M = b || v, k = (0, h.t5)(n, S.dr.QUESTS_CARD, i, R), U = (0, p.O5)(), G = (0, m.Rf)(n), Z = (0, h.DD)({
     quest: n,
-    taskDetails: U,
+    taskDetails: G,
     location: S.dr.QUESTS_CARD,
     questContent: o.j.QUESTS_EMBED,
-    sourceQuestContent: I
-  }), Z = (0, s.e7)([_.Z], () => null != _.Z.questEnrollmentBlockedUntil, []), F = () => {
+    sourceQuestContent: R
+  }), F = (0, s.e7)([_.Z], () => null != _.Z.questEnrollmentBlockedUntil, []), B = () => {
     (0, O.navigateToQuestHome)({
       fromContent: i,
       questId: n.id
-    }), k({
+    }), U({
       questId: n.id,
       questContent: i,
-      questContentPosition: v,
+      questContentPosition: I,
       questContentCTA: p.jZ.LEARN_MORE,
-      sourceQuestContent: I
+      sourceQuestContent: R
     })
-  }, B = (0, s.e7)([u.default], () => u.default.locale), V = g && !L;
+  }, V = (0, s.e7)([u.default], () => u.default.locale), H = g && !j, Y = (0, E.q8)(n);
   return (0, r.jsx)("div", {
     className: C.root,
     children: (0, r.jsxs)("div", {
@@ -173,12 +173,12 @@ let R = e => {
         [C.outerContainerXs]: "xs" === d
       }),
       style: {
-        visibility: j ? "inherit" : "hidden"
+        visibility: M ? "inherit" : "hidden"
       },
-      "aria-hidden": !j,
+      "aria-hidden": !M,
       children: [(0, r.jsx)(l.u, {
-        text: V ? T.intl.string(T.t["04MTGf"]) : null,
-        shouldShow: V,
+        text: H ? T.intl.string(T.t["04MTGf"]) : null,
+        shouldShow: H,
         children: (0, r.jsxs)("div", {
           className: C.rewardTileWrapper,
           children: [g && (0, r.jsx)("div", {
@@ -196,30 +196,30 @@ let R = e => {
             learnMoreStyle: "text",
             quest: n,
             questContent: i,
-            questContentPosition: v,
-            sourceQuestContent: I
+            questContentPosition: I,
+            sourceQuestContent: R
           })]
         })
       }), (0, r.jsxs)("div", {
         className: C.taskDetails,
-        children: [(0, r.jsx)(c.Text, {
-          variant: A(i, d, x),
+        children: [!Y && (0, r.jsx)(c.Text, {
+          variant: A(i, d, L),
           className: C.taskInstructions,
           children: g ? T.intl.formatToPlainString(T.t["ge+AJp"], {
             questName: n.config.messages.questName
-          }) : M
+          }) : k
         }), (0, r.jsx)(c.Text, {
           variant: "lg" === d ? "text-sm/medium" : "text-xs/medium",
           color: "text-muted",
           children: P({
             quest: n,
-            locale: B,
+            locale: V,
             isQuestExpired: g,
-            collectibleQuestRewardDescription: G,
-            formattedCompletionDate: D
+            collectibleQuestRewardDescription: Z,
+            formattedCompletionDate: x
           })
         })]
-      }), Z ? (0, r.jsxs)(c.ButtonGroup, {
+      }), F ? (0, r.jsxs)(c.ButtonGroup, {
         direction: "horizontal",
         align: "center",
         fullWidth: "lg" !== d,
@@ -229,7 +229,7 @@ let R = e => {
           text: T.intl.string(T.t.V293qn)
         }), (0, r.jsx)(c.Button, {
           variant: "primary",
-          onClick: () => (0, O.openQuestMinorEnrollmentBlockModal)(n, i, I),
+          onClick: () => (0, O.openQuestMinorEnrollmentBlockModal)(n, i, R),
           text: T.intl.string(T.t.vY9GgG)
         })]
       }) : (0, r.jsxs)(c.ButtonGroup, {
@@ -239,13 +239,13 @@ let R = e => {
         fullWidth: "lg" !== d,
         children: [(0, r.jsx)(N, {
           containerSize: d,
-          onClick: F,
+          onClick: B,
           text: T.intl.string(T.t.LLLLPD)
-        }), !V && (0, r.jsx)(w, {
+        }), !H && (0, r.jsx)(w, {
           quest: n,
-          progressState: R,
+          progressState: D,
           questContent: i,
-          sourceQuestContent: I
+          sourceQuestContent: R
         })]
       })]
     })

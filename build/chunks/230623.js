@@ -22,7 +22,7 @@ function b(e) {
   return "haven:".concat(e)
 }
 
-function E() {
+function _() {
   let e = r;
   if (null == e) returnfalse;
   let t = b(e);
@@ -32,7 +32,7 @@ function E() {
   i.Z.wait(() => l.xv(t)), r = null
 }
 
-function _() {
+function E() {
   return c.Z.hasLayers()
 }
 
@@ -43,7 +43,7 @@ function O() {
       let e = d.Z.getChannelId(),
         t = p.Z.getChannelId();
       return !!(null == e || !h.Z.isUserConnected(e) || e === t || o.Z.getWindowOpen(m.KJ3.CHANNEL_CALL_POPOUT))
-    }()) return E();
+    }()) return _();
   if (null != t && h.Z.isUserConnected(t.id)) {
     if (r !== t.id) {
       let e = b(t.id);
@@ -55,16 +55,16 @@ function O() {
       return i.Z.wait(() => {
         l.bA(e, m.NYg.HAVEN, {
           channel: t
-        }), _() && l.Cp(e)
+        }), E() && l.Cp(e)
       }), r = t.id, true
     }
     returnfalse
   }
-  return E()
+  return _()
 }
 
 function v() {
-  if (_()) {
+  if (E()) {
     let e = r;
     if (null == e) return;
     let t = b(e);

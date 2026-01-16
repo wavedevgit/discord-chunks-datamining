@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk222194 = require("./222194.js");
 
-function S(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function S(e) {
   }
   return e
 }
-let x = e => {
+let S = e => {
     var t, n;
     let {
       cardContainerRef: o,
@@ -63,7 +63,7 @@ let x = e => {
     return (0, r.jsx)("div", {
       className: v.row,
       ref: o,
-      children: (0, r.jsx)(y, (t = S({}, e), n = n = {
+      children: (0, r.jsx)(y, (t = x({}, e), n = n = {
         totalCards: c
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -79,11 +79,11 @@ let x = e => {
   },
   O = e => (0, r.jsx)("div", {
     className: v.feed,
-    children: (0, r.jsx)(y, S({}, e))
+    children: (0, r.jsx)(y, x({}, e))
   }),
   _ = e => (0, r.jsx)(o.Z, {
     gap: "xl",
-    children: (0, r.jsx)(y, S({}, e))
+    children: (0, r.jsx)(y, x({}, e))
   }),
   y = e => {
     let {
@@ -141,7 +141,7 @@ let x = e => {
     }), [s, t.rankedSkuIds, i.length]), c = s || o;
     switch (n) {
       case "row":
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(S, {
           heroBlockRecord: t,
           isLoading: c,
           products: i,

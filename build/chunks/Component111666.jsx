@@ -62,7 +62,7 @@ function S(e) {
   } = e, n = (0, a.e7)([h.Z], () => h.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
-    } = (0, _.Z)(), r = i.useRef({}), l = i.useRef(null);
+    } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
     return i.useEffect(() => {
       if (!n) {
         t(null), null != l.current && (window.clearTimeout(l.current), l.current = null);
@@ -72,10 +72,10 @@ function S(e) {
           null == r.current[e] && (r.current[e] = {}), null == n ? delete r.current[e][t] : r.current[e][t] = n, 0 === Object.keys(r.current[e]).length && delete r.current[e]
         },
         i = (n, i, a) => {
-          var o, s, c, u, d, p, g, b, E;
+          var o, s, c, u, d, p, g, b, _;
           if (!h.Z.isFriend(n)) returnfalse;
-          let _ = m.default.getUser(n);
-          if (null == _) returnfalse;
+          let E = m.default.getUser(n);
+          if (null == E) returnfalse;
           let v = false,
             I = null;
           if (null != i) {
@@ -86,7 +86,7 @@ function S(e) {
               }(i)) {
               let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (g = i.name) ? g : "");
               (null == (c = r.current[n]) ? true : c.presence) !== l && (v = true, e(n, "presence", l), I = {
-                user: _,
+                user: E,
                 activity: i
               })
             } else(null == (s = r.current[n]) ? true : s.presence) != null && (v = true, e(n, "presence", null))
@@ -96,12 +96,12 @@ function S(e) {
             if (null != t) {
               let i = "voice-".concat(t.id);
               (null == (b = r.current[n]) ? true : b.voice) !== i && (v = true, e(n, "voice", i), I = {
-                user: _,
+                user: E,
                 voiceChannel: t
               })
             }
           } else(null == (o = r.current[n]) ? true : o.voice) != null && (v = true, e(n, "voice", null));
-          return v && null != I && (E = I, null != l.current && (window.clearTimeout(l.current), l.current = null), t(E), l.current = window.setTimeout(() => {
+          return v && null != I && (_ = I, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
             t(null), l.current = null
           }, 1e4)), v
         },
@@ -172,7 +172,7 @@ function S(e) {
           }))
         }
       }))
-    }), (0, r.jsx)(E.Or, {
+    }), (0, r.jsx)(_.Or, {
       popoutPosition: "bottom",
       popoutAlign: "left",
       children: (e, i, l, a) => (0, r.jsx)(d.JO, C(y({}, l), {

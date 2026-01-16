@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 928207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,7 +19,7 @@ var Chunk828700 = require("./828700.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk845761 = require("./845761.js");
-let E = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
+let _ = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
   user: f.default.getCurrentUser()
 }))((0, Chunk666743.Z)((0, Chunk730749.Z)(e => {
   let {

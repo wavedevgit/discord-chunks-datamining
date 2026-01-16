@@ -51,7 +51,7 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: f,
       currentActivities: g,
       voiceChannels: h
-    } = t, m = p.length, b = f.length, E = g.length, _ = h.length > 0, v = i.useCallback(() => {
+    } = t, m = p.length, b = f.length, _ = g.length, E = h.length > 0, v = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, O.isGameApplicationType)(null == (n = e.game) ? true : n.type)
@@ -59,11 +59,11 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
       O.default.track(j.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: m,
         num_streams: b,
-        num_activities: E,
-        in_voice_channel: _,
+        num_activities: _,
+        in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, E, _, g]), I = i.useMemo(() => s()(v, Z), [v]);
+    }, [m, b, _, E, g]), I = i.useMemo(() => s()(v, Z), [v]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -130,12 +130,12 @@ function R() {
     needsRefresh: n,
     fetching: l,
     currentUser: a
-  } = (0, c.cj)([_.Z, b.Z, E.default], () => ({
-    nowPlayingCards: _.Z.nowPlayingCards,
-    loaded: _.Z.loaded,
+  } = (0, c.cj)([E.Z, b.Z, _.default], () => ({
+    nowPlayingCards: E.Z.nowPlayingCards,
+    loaded: E.Z.loaded,
     needsRefresh: b.Z.shouldFetch(),
     fetching: b.Z.isFetching(),
-    currentUser: E.default.getCurrentUser()
+    currentUser: _.default.getCurrentUser()
   })), o = (0, c.e7)([p.Z], () => p.Z.quests), s = (0, f.Fy)(Array.from(o.values()));
   i.useEffect(() => (d.Z.wait(() => I.L()), () => d.Z.wait(() => I.v())), [null == a ? true : a.id]), i.useEffect(() => {
     n && !l && L()

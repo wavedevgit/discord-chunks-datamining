@@ -95,7 +95,7 @@ let y = e => {
     handlePageChange: L,
     currentPage: A
   } = (0, h.h)(b), B = l.useCallback(e => {
-    c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == I ? true : I.sessionId,
       page_section: null == I ? true : I.pageSection,
       page_category: null == I ? true : I.pageCategory,
@@ -109,7 +109,7 @@ let y = e => {
     if (!t || !n) return;
     let e = e => {
       let t = e.target;
-      null === k.current || null === N.current || k.current.contains(t) || N.current.contains(t) || (c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      null === k.current || null === N.current || k.current.contains(t) || N.current.contains(t) || (c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == I ? true : I.sessionId,
         page_section: null == I ? true : I.pageSection,
         page_category: null == I ? true : I.pageCategory,
@@ -137,14 +137,14 @@ let y = e => {
             className: O.sortBy,
             children: [(0, r.jsx)(i.Text, {
               variant: "text-md/semibold",
-              children: x.intl.string(x.t.uaX705)
+              children: S.intl.string(S.t.uaX705)
             }), (0, r.jsx)(p.Z, {})]
           }), (0, r.jsx)("div", {
             ref: N,
             children: (0, r.jsx)(i.Button, {
               onClick: () => {
                 let e = !n;
-                c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == I ? true : I.sessionId,
                   page_section: null == I ? true : I.pageSection,
                   page_category: null == I ? true : I.pageCategory,
@@ -155,7 +155,7 @@ let y = e => {
                 }), a(e)
               },
               variant: "secondary",
-              text: x.intl.string(n ? x.t.fYtm6f : x.t["TeTYE+"]),
+              text: S.intl.string(n ? S.t.fYtm6f : S.t["TeTYE+"]),
               icon: i.gXV,
               iconPosition: "end"
             })

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 121711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => e_
+  Z: () => eE
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./704826.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -151,7 +151,7 @@ function eb(e) {
   })
 }
 
-function eE(e) {
+function e_(e) {
   let {
     renderBanner: t,
     children: n,
@@ -174,7 +174,7 @@ function eE(e) {
     enabled: m
   } = B.n0.useConfig({
     location: en.dr.QUEST_HOME_DESKTOP
-  }), b = i.useRef(null), E = i.useCallback(() => {
+  }), b = i.useRef(null), _ = i.useCallback(() => {
     var e;
     null == (e = b.current) || e.resetSortingFiltering()
   }, []);
@@ -189,7 +189,7 @@ function eE(e) {
           if (g) return (0, r.jsx)(ee.o, {});
           if (null != f) return (0, r.jsx)(ee.Z, {
             config: f,
-            onQuestCtaClick: E
+            onQuestCtaClick: _
           })
         }
         return t()
@@ -208,13 +208,13 @@ function eE(e) {
     })]
   })
 }
-let e_ = function(e) {
+let eE = function(e) {
   let {
     topLevelRoute: t
   } = e, n = (0, o.TH)(), l = (0, o.k6)(), g = i.useMemo(() => {
     var e;
     return (null == (e = (0, o.LX)(n.pathname, er.Z5c.QUEST_HOME)) ? true : e.isExact) === true
-  }, [n.pathname]), v = (0, u.e7)([E.Z], () => E.Z.getState("quests")), {
+  }, [n.pathname]), v = (0, u.e7)([_.Z], () => _.Z.getState("quests")), {
     selectedTab: T,
     onSelectTab: P,
     tabs: L
@@ -267,7 +267,7 @@ let e_ = function(e) {
         pageType: er.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: er.jXE.ORBS_BALANCE_MENU,
         ctaObject: er.qAy.CTA_TO_ORBS_SHOP
-      }), (0, _.mK)({
+      }), (0, E.mK)({
         tab: ei.AW.ORBS,
         analyticsLocations: [],
         analyticsSource: h.Z.ORBS_BALANCE_MENU
@@ -356,7 +356,7 @@ let e_ = function(e) {
         className: a()(eo.container, {
           [eo.withoutTopBorder]: !t
         }),
-        children: g ? (0, r.jsx)(eE, {
+        children: g ? (0, r.jsx)(e_, {
           renderBanner: () => (0, r.jsx)(S.Z, {
             title: ea.intl.string(ea.t.z8YP2A),
             titleColor: "always-white",
@@ -393,7 +393,7 @@ let e_ = function(e) {
               variant: "primary"
             })]
           })
-        }) : Q ? (0, r.jsx)(eE, {
+        }) : Q ? (0, r.jsx)(e_, {
           renderBanner: () => T !== F.e5.PREVIEW_TOOL && (0, r.jsxs)(S.Z, {
             title: ee,
             description: es,
@@ -401,7 +401,7 @@ let e_ = function(e) {
               children: [(0, r.jsx)(p.Button, {
                 variant: "overlay-primary",
                 text: ea.intl.string(ea.t["1Wm127"]),
-                onClick: () => (0, _.mK)({
+                onClick: () => (0, E.mK)({
                   tab: ei.AW.ORBS,
                   analyticsLocations: [],
                   analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
@@ -431,7 +431,7 @@ let e_ = function(e) {
               ctaOnClick: eu
             })
           })
-        }) : (0, r.jsx)(eE, {
+        }) : (0, r.jsx)(e_, {
           renderBanner: () => (0, r.jsxs)(S.Z, {
             title: ee,
             description: es,

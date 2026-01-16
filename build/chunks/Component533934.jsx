@@ -173,9 +173,9 @@ let eR = (0, Chunk608787.Un)({
     var t, n;
     let {
       match: i
-    } = e, l = (0, C.l)(), a = (0, p.e7)([eE.Z, eI.Z], () => {
+    } = e, l = (0, C.l)(), a = (0, p.e7)([e_.Z, eI.Z], () => {
       let e = eI.Z.getChannelId();
-      return eE.Z.getChannel(e)
+      return e_.Z.getChannel(e)
     }), {
       guildId: o,
       channelId: c,
@@ -186,8 +186,8 @@ let eR = (0, Chunk608787.Un)({
     let g = (0, p.e7)([ev.Z], () => ev.Z.getGuild(o)),
       h = (0, p.e7)([eO.ZP], () => null == o ? null : eO.ZP.getSelfMember(o)),
       b = (0, eo.BU)(o, "ChannelRenderer"),
-      E = (null == g || null == (t = g.features) ? true : t.has(ej.GuildFeatures.GAME_SERVERS)) === true,
-      _ = (0, p.e7)([q.Z], () => {
+      _ = (null == g || null == (t = g.features) ? true : t.has(ej.GuildFeatures.GAME_SERVERS)) === true,
+      E = (0, p.e7)([q.Z], () => {
         if (null == o) return;
         let e = q.Z.getData(o);
         if ((null == e ? true : e.type) === Q.z.SERVER_SHOP) switch (e.initialTab) {
@@ -219,7 +219,7 @@ let eR = (0, Chunk608787.Un)({
         return (0, r.jsx)(eM, {
           guildId: o,
           productId: u,
-          initialTab: _
+          initialTab: E
         });
       case ex.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
@@ -253,7 +253,7 @@ let eR = (0, Chunk608787.Un)({
           powerupListingId: null != (n = l.get("powerupId")) ? n : l.get("powerupSkuId")
         });
       case ex.oC.GAME_SERVERS:
-        if (!b || !E) return (0, r.jsx)(s.l_, {
+        if (!b || !_) return (0, r.jsx)(s.l_, {
           to: ej.Z5c.CHANNEL(o)
         });
         return (0, r.jsx)(ez, {
@@ -286,7 +286,7 @@ let eR = (0, Chunk608787.Un)({
     } = (0, en.pN)({
       location: "Sidebar"
     }), i = (0, p.e7)([eI.Z], () => null != t ? t : eI.Z.getChannelId(e));
-    return window.location.pathname.startsWith(ej.Z5c.CHANNEL(ej.STv)) ? ("sidebar" !== n && (0, em.dL)(e_.Z.defaultRoute), (0, r.jsx)(ei.Z, {
+    return window.location.pathname.startsWith(ej.Z5c.CHANNEL(ej.STv)) ? ("sidebar" !== n && (0, em.dL)(eE.Z.defaultRoute), (0, r.jsx)(ei.Z, {
       includePanelSpacing: true
     })) : window.location.pathname.startsWith(ej.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(ej.Z5c.GUILD_DISCOVERY) || (0, ec.$V)() ? (0, r.jsx)(U.Z, {}) : null != e ? (0, r.jsx)(z.Z, {
       selectedChannelId: i,
@@ -324,8 +324,8 @@ let eR = (0, Chunk608787.Un)({
     } = e;
     return (0, em.uL)(ej.Z5c.ME), (0, W.Z)(t.params.inviteCode), null
   },
-  e0 = () => (0, r.jsx)(E.Z, {}),
-  e1 = () => (0, r.jsx)(_.Z, {}),
+  e0 = () => (0, r.jsx)(_.Z, {}),
+  e1 = () => (0, r.jsx)(E.Z, {}),
   e4 = () => function(e) {
     let {
       tab: t
@@ -481,14 +481,14 @@ function tt(e) {
       Number.isNaN(t) && (t = b.qO), te(t)
     }
   }, [m]);
-  let E = i.useRef(null),
-    _ = i.useCallback((e, t) => {
+  let _ = i.useRef(null),
+    E = i.useCallback((e, t) => {
       var n;
       te(e);
       let r = t < b.li / 3;
       t <= b.li ? document.body.classList.add(ew.draggingMin) : document.body.classList.remove(ew.draggingMin), t >= b.zx ? document.body.classList.add(ew.draggingMax) : document.body.classList.remove(ew.draggingMax);
       let i = t - e;
-      null == (n = E.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), h && (Z.useAppSidebarState.setState({
+      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), h && (Z.useAppSidebarState.setState({
         isOpen: !r
       }), r && te(b.p8))
     }, [h]),
@@ -497,15 +497,15 @@ function tt(e) {
     }, []),
     C = i.useCallback(e => {
       var t;
-      document.body.classList.remove(ew.dragging), document.body.classList.remove(ew.draggingMin), document.body.classList.remove(ew.draggingMax), document.body.classList.remove(ew.collapsing), null == (t = E.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(b.nT, e), eC.default.track(ej.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(ew.dragging), document.body.classList.remove(ew.draggingMin), document.body.classList.remove(ew.draggingMax), document.body.classList.remove(ew.collapsing), null == (t = _.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(b.nT, e), eC.default.track(ej.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
     S = (0, y.Z)({
       minDimension: b.li,
       maxDimension: b.zx,
-      resizableDomNodeRef: E,
-      onElementResize: _,
+      resizableDomNodeRef: _,
+      onElementResize: E,
       onElementResizeStart: O,
       onElementResizeEnd: C,
       orientation: y.y.HORIZONTAL_RIGHT,
@@ -529,7 +529,7 @@ function tt(e) {
     children: e => {
       var t, i;
       return (0, r.jsxs)("div", {
-        ref: E,
+        ref: _,
         "data-collapsed": m,
         className: a()(ew.sidebar, e, {
           [ew.fullWidth]: d.tq,
@@ -591,16 +591,16 @@ function tn() {
     h = i.useCallback(() => $.Z.openSidebar(), []),
     m = (0, R.T)("AppView"),
     b = (0, Z.useAppSidebarState)(e => !e.isOpen),
-    E = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
-    _ = (0, p.e7)([D.Z], () => D.Z.isFrameActive());
+    _ = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
+    E = (0, p.e7)([D.Z], () => D.Z.isFrameActive());
   return (0, r.jsx)("div", {
     className: ew.container,
     children: (0, r.jsx)(G.Z.Provider, {
       value: (null == f ? true : f.params.guildId) === ej.ME || null == f ? true : f.params.guildId,
       children: (0, r.jsxs)("div", {
         className: ew.base,
-        "data-fullscreen": E,
-        children: [!E && (0, r.jsx)(eR, {}), d.tq ? null : (0, r.jsx)(et.Z, {}), (0, r.jsxs)("div", {
+        "data-fullscreen": _,
+        children: [!_ && (0, r.jsx)(eR, {}), d.tq ? null : (0, r.jsx)(et.Z, {}), (0, r.jsxs)("div", {
           className: ew.content,
           children: [(0, r.jsx)(P.Z, {}), (0, r.jsx)(tt, {
             isSidebarOpen: o,
@@ -735,7 +735,7 @@ function tn() {
                   render: e6,
                   disableTrack: true
                 })]
-              }), _ && (0, r.jsx)(M.Z, {})]
+              }), E && (0, r.jsx)(M.Z, {})]
             })
           })]
         })]

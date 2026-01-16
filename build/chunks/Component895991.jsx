@@ -32,7 +32,7 @@ function v(e, t, n) {
 }
 class I extends Chunk473749.PureComponent {
   componentDidMount() {
-    c.Y(E.Z5c.APPLICATION_LIBRARY), (0, f.T)(_.jE.LIBRARY), s.Z.wait(() => (0, u.o)()), (0, d.N)(), null != this._scrollToOnMount && null != this._scrollerRef.current && this.scrollToRow(this._scrollToOnMount, this._scrollToPadding)
+    c.Y(_.Z5c.APPLICATION_LIBRARY), (0, f.T)(E.jE.LIBRARY), s.Z.wait(() => (0, u.o)()), (0, d.N)(), null != this._scrollToOnMount && null != this._scrollerRef.current && this.scrollToRow(this._scrollToOnMount, this._scrollToPadding)
   }
   renderToolbar() {
     return (0, r.jsx)(g.Z, {})
@@ -42,7 +42,7 @@ class I extends Chunk473749.PureComponent {
       includeUpdatesInScroller: e
     } = this.state, t = (0, r.jsx)("div", {
       children: (0, r.jsx)(p.Z, {
-        section: E.jXE.LIBRARY_INSTALL_MODULE,
+        section: _.jXE.LIBRARY_INSTALL_MODULE,
         children: (0, r.jsx)(b.Z, {
           onHeightTallerThanHalfViewportChange: this.handleHeightTallerThanHalfViewportChange
         })
@@ -50,13 +50,13 @@ class I extends Chunk473749.PureComponent {
     });
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(h.Z, {
-        currentRoute: E.Z5c.APPLICATION_LIBRARY,
+        currentRoute: _.Z5c.APPLICATION_LIBRARY,
         renderToolbar: this.renderToolbar
       }), e ? null : t, (0, r.jsxs)(o.yWw, {
         className: a()(O.container, O.scroller),
         ref: this._scrollerRef,
         children: [e ? t : null, (0, r.jsx)(p.Z, {
-          section: E.jXE.LIBRARY_APPLICATION_LIST,
+          section: _.jXE.LIBRARY_APPLICATION_LIST,
           children: (0, r.jsx)(m.Z, {
             stickyHeader: !e,
             scrollToRow: this.scrollToRow

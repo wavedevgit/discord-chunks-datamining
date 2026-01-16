@@ -91,7 +91,7 @@ async function x(e, t, n) {
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let U = [];
-  if ("string" == typeof x ? U = x.split(" ").filter(e => e.length > 0) : Array.isArray(x) && (U = x), null == _.default.getCurrentUser()) throw new I.Z({
+  if ("string" == typeof x ? U = x.split(" ").filter(e => e.length > 0) : Array.isArray(x) && (U = x), null == E.default.getCurrentUser()) throw new I.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
   if (null != R) l = Number(R);
@@ -101,7 +101,7 @@ async function x(e, t, n) {
         return null != e && (0, o.yE)(e.flags, C.udG.EMBEDDED) && (null == (t = e.integrationTypesConfig) ? true : t[i.Y.USER_INSTALL]) != null
       },
       t = f.Z.getApplication(d);
-    l = e(t) || e(t = E.ZP.createFromServer(await (0, b.UM)(d, M))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
+    l = e(t) || e(t = _.ZP.createFromServer(await (0, b.UM)(d, M))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
   }
   try {
     [s, {
@@ -201,7 +201,7 @@ function P(e, t) {
     if (e.application.id !== r.id) throw new I.Z({
       errorCode: C.lTL.INVALID_CLIENTID
     }, "Application does not match the connection's");
-    let o = _.default.getCurrentUser();
+    let o = E.default.getCurrentUser();
     if (null == o || !i || o.id !== i.id) throw new I.Z({
       errorCode: C.lTL.INVALID_TOKEN
     }, "Token does not match current user");

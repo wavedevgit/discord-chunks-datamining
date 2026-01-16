@@ -41,8 +41,8 @@ let m = {
     }, .1, null != d), C = (0, o.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerDisplayConfig: E,
       logoDisplayConfig: v,
-      heroLogo: S,
-      heroBannerStatic: x,
+      heroLogo: x,
+      heroBannerStatic: S,
       heroBannerAnimated: O
     } = (0, f.hr)(l), _ = null != (t = null == E ? true : E.responsive) && t, y = null == E ? true : E.backgroundStyle;
     return null != C && (n || l !== m) ? (0, r.jsxs)("div", {
@@ -55,8 +55,8 @@ let m = {
         style: null != y ? {
           background: y
         } : true,
-        children: null != x && (0, r.jsx)(g.Z, {
-          bannerStatic: x,
+        children: null != S && (0, r.jsx)(g.Z, {
+          bannerStatic: S,
           bannerAnimated: O,
           isResponsive: _
         })
@@ -72,9 +72,9 @@ let m = {
             className: p.heroHeaderBadgeLogoSummaryContainer,
             children: (0, r.jsxs)("div", {
               className: p.heroLogoNameContainer,
-              children: [null != S && (0, r.jsx)("img", {
+              children: [null != x && (0, r.jsx)("img", {
                 className: p.heroHeaderLogo,
-                src: S,
+                src: x,
                 alt: l.name,
                 style: null == v ? true : v.toDesktopStyles()
               }), null != l.title && (0, r.jsx)(c.Heading, {

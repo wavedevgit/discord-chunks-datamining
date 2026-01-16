@@ -35,8 +35,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk456631 = require("./456631.js"),
   Chunk274459 = require("./274459.jsx"),
   Chunk314897 = require("./314897.js"),
+  Chunk404577 = require("./404577.js"),
   Chunk857192 = require("./857192.js"),
-  Chunk77498 = require("./77498.js"),
   Chunk131951 = require("./131951.js"),
   Chunk158776 = require("./158776.js"),
   Chunk979651 = require("./979651.js"),
@@ -88,7 +88,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
       pulseSpeakingIndicator: ey = false,
       forceIdle: ev = false,
       controlsBottom: eO
-    } = e, ej = i.useContext(N.h9) || ev, [ex, eC] = i.useState(false), eE = Z.Sb.useSetting(), eS = (0, o.e7)([R.default], () => R.default.isStreamInfoOverlayEnabled), [e_, eI] = i.useState(false), eP = (0, o.e7)([w.default], () => w.default.getId()), eZ = v.type === $.fO.ACTIVITY ? null : v.user, eN = null != (l = null == eZ ? true : eZ.id) ? l : null, [eT] = (0, h.Z)(v.type === $.fO.ACTIVITY ? [v.applicationId] : []), eA = (0, o.e7)([M.Z], () => null != eN && M.Z.isLocalVideoDisabled(eN, (0, g.Z)(v.type)), [eN, v.type]), ew = (0, o.e7)([M.Z], () => null != eN ? M.Z.getVideoToggleState(eN, (0, g.Z)(v.type)) : J.ZUi.NONE, [eN, v.type]), eR = ew === J.ZUi.AUTO_PROBING, {
+    } = e, ej = i.useContext(N.h9) || ev, [ex, eC] = i.useState(false), eE = Z.Sb.useSetting(), eS = (0, o.e7)([D.default], () => D.default.isStreamInfoOverlayEnabled), [e_, eI] = i.useState(false), eP = (0, o.e7)([w.default], () => w.default.getId()), eZ = v.type === $.fO.ACTIVITY ? null : v.user, eN = null != (l = null == eZ ? true : eZ.id) ? l : null, [eT] = (0, h.Z)(v.type === $.fO.ACTIVITY ? [v.applicationId] : []), eA = (0, o.e7)([M.Z], () => null != eN && M.Z.isLocalVideoDisabled(eN, (0, g.Z)(v.type)), [eN, v.type]), ew = (0, o.e7)([M.Z], () => null != eN ? M.Z.getVideoToggleState(eN, (0, g.Z)(v.type)) : J.ZUi.NONE, [eN, v.type]), eR = ew === J.ZUi.AUTO_PROBING, {
       speaking: eD,
       latched: eM,
       ringing: ek,
@@ -131,7 +131,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
       location: "voice_users"
     }, {
       autoTrackExposure: false
-    }), ez = (0, o.e7)([k.Z], () => eV && null != eN ? k.Z.findActivity(eN, e => null != e.application_id && e.type === J.IIU.PLAYING) : null, [eV, eN]), eW = (0, o.e7)([D.Z], () => (null == ez ? true : ez.application_id) != null ? D.Z.getDetectableGame(ez.application_id) : null), eK = (0, o.e7)([f.Z], () => null != eW && (null == ez ? true : ez.application_id) != null ? f.Z.getApplication(null == ez ? true : ez.application_id) : true), eY = (0, I.wV)({
+    }), ez = (0, o.e7)([k.Z], () => eV && null != eN ? k.Z.findActivity(eN, e => null != e.application_id && e.type === J.IIU.PLAYING) : null, [eV, eN]), eW = (0, o.e7)([R.Z], () => (null == ez ? true : ez.application_id) != null ? R.Z.getDetectableGame(ez.application_id) : null), eK = (0, o.e7)([f.Z], () => null != eW && (null == ez ? true : ez.application_id) != null ? f.Z.getApplication(null == ez ? true : ez.application_id) : true), eY = (0, I.wV)({
       userId: eN,
       channelId: el.id
     }), eq = (0, I.zU)({

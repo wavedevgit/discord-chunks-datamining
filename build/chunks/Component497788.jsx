@@ -26,7 +26,7 @@ let v = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: v
-  } = e, S = (0, i.sp)(), x = l.useMemo(() => o.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), O = (0, a.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
+  } = e, x = (0, i.sp)(), S = l.useMemo(() => o.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), O = (0, a.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
     products: _
   } = ((e, t, n) => {
     let r = (0, d.Z)(),
@@ -41,7 +41,7 @@ let v = e => {
     return (null == (t = o.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
   }), [t, n.rankedSkuIds, _.length]), j = t || y, {
     readyToClaim: k
-  } = (0, C.q)(x, n.rewardSkuId), T = null == O && null != n.rewardSkuId && null != x;
+  } = (0, C.q)(S, n.rewardSkuId), T = null == O && null != n.rewardSkuId && null != S;
   return (0, r.jsx)(s.Z, {
     gap: "xl",
     children: j ? (0, r.jsx)(r.Fragment, {
@@ -54,7 +54,7 @@ let v = e => {
           categoryPosition: 0
         },
         children: (0, r.jsx)(m.Z, {
-          category: x,
+          category: S,
           rewardSkuId: n.rewardSkuId
         })
       }, n.rewardSkuId), _.map((e, t) => {
@@ -68,7 +68,7 @@ let v = e => {
           children: (0, r.jsx)(g.Z, {
             skuId: null == e ? true : e.skuId,
             prioritizedCurrency: v === E.AW.ORBS ? b.tA.ORBS : true,
-            onClickAnalytics: (0, b.wO)(e, v, S)
+            onClickAnalytics: (0, b.wO)(e, v, x)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

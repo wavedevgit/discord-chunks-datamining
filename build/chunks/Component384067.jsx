@@ -59,7 +59,7 @@ let y = e => {
         var e;
         let t = null != (e = y.dismissibleContentVersion) ? e : 0;
         (0, u.wH)(i.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
-          dismissAction: S.L.USER_DISMISS
+          dismissAction: x.L.USER_DISMISS
         })
       }
     }, [y.isDismissible, y.dismissibleContentVersion]),
@@ -166,7 +166,7 @@ let y = e => {
       })]
     });
   return (0, r.jsx)(c.f6W, {
-    theme: D ? true : x.BR.DARK,
+    theme: D ? true : S.BR.DARK,
     children: e => (0, r.jsx)(o.$, {
       innerRef: T,
       onChange: P,

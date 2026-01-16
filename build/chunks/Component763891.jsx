@@ -46,18 +46,18 @@ function N(e) {
     includeUnpublished: D
   } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), H = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), z = (0, i.ap)(U), [V, G, K] = l.useMemo(() => {
     switch (R) {
-      case S.AW.AVATAR_DECORATIONS:
+      case x.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYNE), z ? T.Z : k.Z, a.Z.AVATAR_DECORATION];
-      case S.AW.PROFILE_EFFECTS:
+      case x.AW.PROFILE_EFFECTS:
         return [O.intl.string(O.t["1cNjtx"]), z ? B.Z : A.Z, a.Z.PROFILE_EFFECT];
-      case S.AW.NAMEPLATES:
+      case x.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fqz), z ? L.Z : I.Z, a.Z.NAMEPLATE];
-      case S.AW.BUNDLES:
+      case x.AW.BUNDLES:
         return [O.intl.string(O.t.FYFpps), z ? j.Z : y.Z, a.Z.BUNDLE]
     }
   }, [R, z]), Y = (0, b.a)(), q = l.useMemo(() => Y(H.filter(e => {
     var t;
-    return (e.type === K || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === K)) === true) && !S.y8.some(t => {
+    return (e.type === K || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === K)) === true) && !x.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
@@ -110,7 +110,7 @@ function N(e) {
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            d.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == P ? true : P.sessionId,
               page_section: null == P ? true : P.pageSection,
               page_category: null == P ? true : P.pageCategory,

@@ -46,36 +46,36 @@ let j = Chunk473749.memo(function(e) {
     innerRef: j,
     children: (0, r.jsx)("div", {
       ref: j,
-      className: s()(S.productCardContainer, x.defaultCursor, {
-        [S.hovered]: k
+      className: s()(x.productCardContainer, S.defaultCursor, {
+        [x.hovered]: k
       }),
       "aria-label": v.intl.formatToPlainString(v.t.Ez6aHE, {
         category: t.name
       }),
       children: (0, r.jsxs)("div", {
-        className: S.productCardContentContainer,
+        className: x.productCardContentContainer,
         children: [(0, r.jsx)("img", {
           alt: "Reward Bow",
           src: y.Z,
-          className: x.rewardImage
+          className: S.rewardImage
         }), (0, r.jsx)("div", {
-          className: S.headerContainer,
+          className: x.headerContainer,
           children: (0, r.jsx)(d.IGR, {
             text: v.intl.string(v.t.rykAJ9),
             disableColor: true,
-            className: x.unlockRewardBadge
+            className: S.unlockRewardBadge
           })
         }), (0, r.jsxs)("div", {
-          className: S.footerContainer,
+          className: x.footerContainer,
           children: [(0, r.jsxs)("div", {
-            className: x.footerInfoContainer,
+            className: S.footerInfoContainer,
             children: [(0, r.jsxs)("div", {
-              className: x.footerInfo,
+              className: S.footerInfo,
               children: [(0, r.jsx)(d.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
                 lineClamp: 1,
-                className: S.productName,
+                className: x.productName,
                 children: v.intl.string(v.t["0mDmg/"])
               }), (0, r.jsx)(u.u, {
                 text: T ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
@@ -88,24 +88,24 @@ let j = Chunk473749.memo(function(e) {
                 },
                 position: "top",
                 children: (0, r.jsx)("span", {
-                  className: x.questionIconContainer,
+                  className: S.questionIconContainer,
                   children: (0, r.jsx)(i.idN, {
                     size: "xs"
                   })
                 })
               })]
             }), (0, r.jsx)("div", {
-              className: S.footerInfoShrinkOnHover,
+              className: x.footerInfoShrinkOnHover,
               "aria-hidden": true,
               children: (0, r.jsxs)("div", {
-                className: x.progressContainer,
+                className: S.progressContainer,
                 children: [(0, r.jsx)(g.ZP, {
                   variant: g.yB.BLUE,
                   progress: L.length,
                   maximum: I.length
                 }), (0, r.jsxs)("div", {
-                  className: s()(x.progressTextContainer, {
-                    [x.readyToClaimText]: T
+                  className: s()(S.progressTextContainer, {
+                    [S.readyToClaimText]: T
                   }),
                   children: [T ? (0, r.jsx)(i.kmB, {
                     size: "xs",
@@ -122,10 +122,10 @@ let j = Chunk473749.memo(function(e) {
               })
             })]
           }), (0, r.jsx)("div", {
-            className: S.footerButtonContainer,
+            className: x.footerButtonContainer,
             children: (0, r.jsx)(i.hE2, {
               wrap: false,
-              className: S.footerButtonGroup,
+              className: x.footerButtonGroup,
               fullWidth: true,
               children: (0, r.jsx)(i.zxk, {
                 variant: "primary",

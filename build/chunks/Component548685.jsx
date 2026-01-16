@@ -130,14 +130,14 @@ let B = e => {
     }), (0, r.jsx)("div", {
       className: A.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(x.Z, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(S.Z, {}, t + 1))
       }) : K.slice(0, N).map((e, t) => {
         let n, l = E.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Q)
           if (J === O.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: A.shuffleOutro,
-            children: (0, r.jsx)(x.Z, {
+            children: (0, r.jsx)(S.Z, {
               skipPulseAnimation: true
             })
           }, "".concat(e.skuId, "-").concat(t));
@@ -152,8 +152,8 @@ let B = e => {
             className: n,
             children: (0, r.jsx)(v.Z, {
               skuId: e.skuId,
-              prioritizedCurrency: P === k.AW.ORBS ? S.tA.ORBS : true,
-              onClickAnalytics: (0, S.wO)(e, P, $)
+              prioritizedCurrency: P === k.AW.ORBS ? x.tA.ORBS : true,
+              onClickAnalytics: (0, x.wO)(e, P, $)
             })
           })
         }, e.skuId)

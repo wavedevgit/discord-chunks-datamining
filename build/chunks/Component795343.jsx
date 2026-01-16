@@ -83,7 +83,7 @@ function y(e) {
     if (null != H.current) return e.observe(H.current), () => e.disconnect()
   }, [F]);
   let Y = l.useCallback(e => {
-    u.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    u.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == j ? true : j.sessionId,
       page_section: null == j ? true : j.pageSection,
       page_category: null == j ? true : j.pageCategory,
@@ -99,7 +99,7 @@ function y(e) {
       className: s()({
         [O.productsEmpty]: K
       }),
-      children: [K && (0, r.jsx)(S.Z, {}), (0, r.jsxs)("div", {
+      children: [K && (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
         className: s()(O.products, {
           [O.loadIn]: z
         }),

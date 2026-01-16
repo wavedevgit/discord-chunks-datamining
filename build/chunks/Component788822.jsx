@@ -25,17 +25,17 @@ let p = e => {
     handleTransition: v
   } = e;
   null != C && (m = null == (t = c.Z.getCategoryByStoreListingId(null == C ? true : C.categoryStoreListingId)) ? true : t.skuId);
-  let S = null != (n = null != m ? m : null == h ? true : h.skuId) ? n : "",
+  let x = null != (n = null != m ? m : null == h ? true : h.skuId) ? n : "",
     {
-      handleCardVisibilityChange: x
-    } = (0, u.E)(S, "home", "marketing featured block"),
+      handleCardVisibilityChange: S
+    } = (0, u.E)(x, "home", "marketing featured block"),
     O = (0, d.YG)(h, C),
     _ = l.useRef(null),
     y = null == C ? true : C.bodyText,
     j = (0, o.sp)();
   return (0, r.jsx)(a.$, {
     innerRef: _,
-    onChange: x,
+    onChange: S,
     threshold: 0,
     children: (0, r.jsxs)(s.P3F, {
       className: b.featuredBlock,
@@ -63,12 +63,12 @@ let p = e => {
       onClick: () => {
         v({
           sourceButton: "shop marketing tile",
-          categorySkuId: S,
+          categorySkuId: x,
           isInternalShopDeeplink: true,
           isOrbsExclusive: null == h ? true : h.isOrbsExclusive
         }), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
-          sku_id: S,
+          sku_id: x,
           page_type: "home",
           page_section: null == j ? true : j.pageSection,
           page_category: null == j ? true : j.pageCategory,
@@ -100,12 +100,12 @@ let p = e => {
           onClick: e => {
             v({
               sourceButton: "shop marketing take me there button",
-              categorySkuId: S,
+              categorySkuId: x,
               isInternalShopDeeplink: true,
               isOrbsExclusive: null == h ? true : h.isOrbsExclusive
             }), e.stopPropagation(), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
-              sku_id: S,
+              sku_id: x,
               page_type: "home",
               page_section: null == j ? true : j.pageSection,
               page_category: null == j ? true : j.pageCategory,

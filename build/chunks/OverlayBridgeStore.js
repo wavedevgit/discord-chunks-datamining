@@ -34,7 +34,7 @@ var i, Chunk807864 = require("./807864.js"),
   Chunk509140 = require("./509140.js"),
   Chunk48481 = require("./48481.js"),
   Chunk314897 = require("./314897.js"),
-  Chunk77498 = require("./77498.js"),
+  Chunk404577 = require("./404577.js"),
   Chunk355863 = require("./355863.js"),
   Chunk626135 = require("./626135.js"),
   Chunk866119 = require("./866119.js"),
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "4c11905536612db7f9cc64221af7bd071ad57254"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "892f23f4a2e539b5cabccf4d3430db5816fced89"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {

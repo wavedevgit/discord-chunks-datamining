@@ -20,8 +20,8 @@ let g = function(e) {
   } = e, n = (0, l.e7)([a.Z], () => a.Z.notificationItem(), []), {
     showDot: g
   } = (0, c.Z)(), h = i.useRef(null), [m, b] = i.useState(false), {
-    data: E,
-    loading: _,
+    data: _,
+    loading: E,
     isRefreshing: O,
     handleOnRefresh: v,
     viewabilityConfigCallbackPairs: I
@@ -37,19 +37,19 @@ let g = function(e) {
     T = i.useMemo(() => I[0].onViewableItemsChanged, [I]),
     {
       registerItemRef: N
-    } = (0, p.m)(E, T, t),
-    j = i.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
+    } = (0, p.m)(_, T, t),
+    j = i.useMemo(() => _.some(e => "end" === e.data.kind), [_]),
     x = i.useCallback(() => {
       if (j) return;
       let e = t.current;
       if (null == e) return;
       let n = e.scrollHeight;
-      !(n - e.scrollTop - e.clientHeight < 300) || m || _ || S || (b(true), (0, o.es)().finally(() => {
+      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (b(true), (0, o.es)().finally(() => {
         setTimeout(() => {
           b(false)
         }, 300)
       }))
-    }, [_, m, S, j, t]);
+    }, [E, m, S, j, t]);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("scroll", x), () => {
@@ -98,7 +98,7 @@ let g = function(e) {
         item: e
       })
     }, e.id), [N]);
-  return _ && 0 === E.length ? (0, r.jsx)("div", {
+  return E && 0 === _.length ? (0, r.jsx)("div", {
     style: {
       padding: "32px",
       textAlign: "center"
@@ -133,7 +133,7 @@ let g = function(e) {
     }), (0, r.jsxs)("div", {
       ref: h,
       className: f.scrollContainer,
-      children: [E.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
+      children: [_.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

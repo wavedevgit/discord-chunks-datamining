@@ -12,7 +12,7 @@ var r, i, l, Chunk442837 = require("./442837.js"),
   Chunk70956 = require("./70956.js"),
   Chunk780570 = require("./780570.js"),
   Chunk314897 = require("./314897.js"),
-  Chunk77498 = require("./77498.js"),
+  Chunk404577 = require("./404577.js"),
   Chunk283595 = require("./283595.js"),
   Chunk19780 = require("./19780.js"),
   Chunk944486 = require("./944486.js"),
@@ -36,10 +36,10 @@ function x(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > y + C && (r = 0);
-  let i = (0, h.OT)(e.applicationId, E.Z),
+  let i = (0, h.OT)(e.applicationId, _.Z),
     l = O.Z.getVoiceChannelId(),
     a = m.default.getSessionId(),
-    c = _.Z.getMediaSessionId();
+    c = E.Z.getMediaSessionId();
   u.Z.updateActivity({
     applicationId: e.applicationId,
     distributor: e.isDiscordApplication ? v.GQo.DISCORD : e.distributor,
@@ -83,7 +83,7 @@ function A() {
 }
 class Z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(m.default, b.Z, E.Z, _.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], P)
+    this.waitFor(m.default, b.Z, _.Z, E.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], P)
   }
   getActivities() {
     return S
