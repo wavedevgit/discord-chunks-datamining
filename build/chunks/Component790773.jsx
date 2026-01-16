@@ -108,7 +108,7 @@ function S(e) {
   return "success" !== b.state ? (0, i.jsx)("div", {
     className: T.loadingContainer,
     children: (0, i.jsx)(g.T, {})
-  }) : (0, i.jsx)("ul", {
+  }) : 0 === A.length ? null : (0, i.jsx)("ul", {
     className: s()(T.grid, d),
     children: A.map(e => h ? (0, i.jsx)(P, {
       application: u,
