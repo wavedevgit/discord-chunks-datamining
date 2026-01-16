@@ -48,13 +48,13 @@ function x(e) {
     analyticsLocations: U
   } = (0, p.ZP)(d.Z.PREMIUM_GIFT_INTENT_FRIEND_ROW), {
     Component: G
-  } = (0, c.V)(), H = (0, s.e7)([C.ZP], () => C.ZP.getFriendAnniversaryYears(M.id)), B = (0, E.ao)({
+  } = (0, c.V)(), H = (0, s.e7)([C.ZP], () => C.ZP.getFriendAnniversaryYears(M.id)), B = (0, _.ao)({
     location: "gift-intent-friend-row",
     isGift: true,
     giftRecipient: M
   });
   i.useEffect(() => {
-    let e = _.Z.getUserAffinity(M.id);
+    let e = E.Z.getUserAffinity(M.id);
     (0, f.h)({
       name: o.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
       type: o.ImpressionTypes.VIEW,
@@ -66,12 +66,12 @@ function x(e) {
   }, [M, k]);
   let V = e => {
     e.stopPropagation();
-    let t = _.Z.getUserAffinity(M.id);
-    v.default.track(S.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+    let t = E.Z.getUserAffinity(M.id);
+    I.default.track(S.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
       gift_intent_type: k,
       affinity: null == t ? true : t.dmProbability,
       location_stack: U
-    }), B ? (0, I.Z)({
+    }), B ? (0, v.Z)({
       giftRecipient: M,
       analyticsLocations: U,
       analyticsLocation: S.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
@@ -142,7 +142,7 @@ function x(e) {
           icon: G,
           "aria-label": N.intl.string(N.t.I61IsE),
           onClick: () => {
-            v.default.track(S.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            I.default.track(S.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: k,
               cta_type: "send_message",
               location_stack: U

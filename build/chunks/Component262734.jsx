@@ -46,7 +46,7 @@ function w(e) {
   } = (0, o.cj)([y.Z], () => ({
     selectedChannelId: y.Z.getChannelId(),
     selectedVoiceChannelId: y.Z.getVoiceChannelId()
-  })), R = (0, o.e7)([_.Z], () => null != L && w === L && _.Z.getChatOpen(L), [w, L]), D = (0, o.e7)([E.ZP], () => E.ZP.callChatSidebarWidth), M = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), k = i.useRef(null), U = i.useRef(null), [G, H] = i.useState({
+  })), R = (0, o.e7)([E.Z], () => null != L && w === L && E.Z.getChatOpen(L), [w, L]), D = (0, o.e7)([_.ZP], () => _.ZP.callChatSidebarWidth), M = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), k = i.useRef(null), U = i.useRef(null), [G, H] = i.useState({
     width: 0,
     height: 0
   }), B = i.useCallback(() => {
@@ -122,7 +122,7 @@ function w(e) {
         })
       }), (0, r.jsxs)("div", {
         className: A.footer,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(I.Z, {
           appContext: j.IlC.APP,
           applicationId: n.id,
           shouldPrioritizeGroupPlusIcon: true,
@@ -150,7 +150,7 @@ function w(e) {
             iconComponent: u.PBZ,
             color: "disconnect"
           })]
-        }), q ? (0, r.jsx)(I.Z, {
+        }), q ? (0, r.jsx)(v.Z, {
           popoutOpen: false,
           onOpenPopout: () => {
             (0, m.yw)(j.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, g.Z)({

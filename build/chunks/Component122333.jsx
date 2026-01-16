@@ -88,12 +88,12 @@ class Z extends Chunk317770.Z {
         f.Z.flowStart(j.MK.ORGANIC_MARKETING, j.EW.NUF_STARTED)
     }
     let o = false,
-      A = _.Z.getGuildId();
+      A = E.Z.getGuildId();
     if (a === C.M5.INVITE_UNCLAIMED) {
       let e = b.Z.getGuild(A);
       null != e && (0, d.Dc)(e) && (o = true, (0, g.RM)(e.id))
     }
-    let Z = () => 0 === m.Z.totalGuilds && !v.isPlatformEmbedded,
+    let Z = () => 0 === m.Z.totalGuilds && !I.isPlatformEmbedded,
       w = s.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -147,17 +147,17 @@ class Z extends Chunk317770.Z {
       predicate: () => w && !Z() && !N.a
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(v.isPlatformEmbedded, e),
+      open: e => c.j(I.isPlatformEmbedded, e),
       predicate: () => {
         var e;
-        return !o && null != E.default.getCurrentUser() && !(null == (e = E.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a && !(0, p.g)()
+        return !o && null != _.default.getCurrentUser() && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a && !(0, p.g)()
       }
     }, {
       key: "Verification Gate with Claim Account",
       open: e => (0, u.hk)(A, null != e ? e : true),
       predicate: () => {
         var e;
-        return o && !(null == (e = E.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a
+        return o && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a
       }
     }, {
       key: "Guild Welcome Modal",
@@ -173,7 +173,7 @@ class Z extends Chunk317770.Z {
       }),
       predicate: () => null != A && null != h.Z.get(A) && h.Z.get(A) !== h.a
     }], t = () => {
-      I.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
+      v.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
     }, [...e].reverse().forEach(e => {
       let n = t;
       t = () => {

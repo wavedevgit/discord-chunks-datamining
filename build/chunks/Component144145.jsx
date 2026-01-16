@@ -84,20 +84,20 @@ function x(e) {
   }(e), P = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(v.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, E.Z, g.Z, O.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    } = e, n = i.useContext(I.AnalyticsContext);
+    return (0, l.Wu)([f.ZP, _.Z, g.Z, O.Z, E.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
-      } = e, i = E.Z.getActiveLibraryApplication(r.id);
+      } = e, i = _.Z.getActiveLibraryApplication(r.id);
       return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
-        canPlay: (0, I.t)({
-          LibraryApplicationStore: E.Z,
+        canPlay: (0, v.t)({
+          LibraryApplicationStore: _.Z,
           LaunchableGameStore: g.Z,
           DispatchApplicationStore: O.Z,
-          ConnectedAppsStore: _.Z,
+          ConnectedAppsStore: E.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),

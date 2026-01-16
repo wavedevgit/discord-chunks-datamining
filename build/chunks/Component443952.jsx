@@ -93,7 +93,7 @@ let G = {
         args: {
           user_id: t
         }
-      } = e, n = I.Z.getDMFromUserId(t);
+      } = e, n = v.Z.getDMFromUserId(t);
       null != n && (0, d.ack)(n, {
         section: M.jXE.CLOSE_ACTIVITY_JOIN_REQUEST_RPC_COMMAND,
         object: M.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
@@ -263,7 +263,7 @@ let G = {
           else {
             var r;
             let e = S.Z.getLastFocusedWindowId();
-            n = null == e ? null : null == (r = (0, E.g0)(e)) ? true : r.renderWindow
+            n = null == e ? null : null == (r = (0, _.g0)(e)) ? true : r.renderWindow
           }
           if (null == n) throw new P.Z({
             errorCode: M.lTL.UNKNOWN_ERROR
@@ -367,7 +367,7 @@ let G = {
           url: a.url,
           height: a.height,
           width: a.width
-        }]), n = new v.ZP({
+        }]), n = new I.ZP({
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
           applicationId: f,
           content: u,
@@ -379,7 +379,7 @@ let G = {
         let t = false,
           r = (0, R.jU)(p),
           l = o.z1l;
-        (O.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = o.u1M), (0, _.M)({
+        (O.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = o.u1M), (0, E.M)({
           applicationId: f,
           channel: g,
           command: {

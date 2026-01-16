@@ -23,24 +23,24 @@ var Chunk442837 = require("./442837.js"),
   Chunk81471 = require("./81471.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk68599 = require("./68599.js");
-let I = e => {
+let v = e => {
     let {
       userId: t
-    } = e, n = (0, _.O)(t);
+    } = e, n = (0, E.O)(t);
     return null == n || 0 === n.length ? (0, r.jsx)(a.Text, {
-      className: v.mutualGuilds,
+      className: I.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t.jpY0X5)
     }) : (0, r.jsxs)("div", {
-      className: v.mutualGuildsContainer,
+      className: I.mutualGuildsContainer,
       children: [(0, r.jsx)(l.Z, {
         guilds: n,
         maxGuilds: 3,
         size: u.Vj.Sizes.SMOL,
         hideOverflowCount: true
       }), (0, r.jsx)(a.Text, {
-        className: v.mutualGuilds,
+        className: I.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
         children: O.intl.format(O.t.eE3oep, {
@@ -57,7 +57,7 @@ function C(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, i.e7)([g.Z], () => null == l ? null : g.Z.getNickname(l.id)), C = !m && u, S = (0, b.c)(n), {
+  } = e, m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, i.e7)([g.Z], () => null == l ? null : g.Z.getNickname(l.id)), C = !m && u, S = (0, b.c)(n), {
     avatarDecorationSrc: T
   } = (0, p.Z)({
     user: l,
@@ -66,34 +66,34 @@ function C(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y, {
-      className: v.avatar,
+      className: I.avatar,
       src: (0, f.x)(n, 40, C),
       avatarDecoration: T,
       size: a.EFr.SIZE_40,
       "aria-label": null != (t = null == l ? true : l.username) ? t : O.intl.string(O.t["30mdIx"])
     }), (0, r.jsxs)("div", {
-      className: v.userPreview,
+      className: I.userPreview,
       children: [(0, r.jsxs)("div", {
-        className: v.userContainerWithPreview,
+        className: I.userContainerWithPreview,
         children: [(0, r.jsx)(o.Z, {
-          nick: _,
+          nick: E,
           user: l,
           showAccountIdentifier: true,
-          className: v.tagContainer,
-          usernameClass: v.username,
-          discriminatorClass: null != h.ZP.getGlobalName(l) ? v.globalName : v.discriminator
+          className: I.tagContainer,
+          usernameClass: I.username,
+          discriminatorClass: null != h.ZP.getGlobalName(l) ? I.globalName : I.discriminator
         }), (0, r.jsx)(a.Text, {
-          className: v.timestampWithPreview,
+          className: I.timestampWithPreview,
           color: "text-muted",
           variant: "text-xs/normal",
           children: S
         })]
       }), (0, r.jsx)(c.Z, {
-        hoverText: (0, r.jsx)(E.Z, {
+        hoverText: (0, r.jsx)(_.Z, {
           channel: n
         }),
         forceHover: u,
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(v, {
           userId: l.id
         })
       })]

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 491327, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => v
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -22,7 +22,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk561205 = require("./561205.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let I = {
+let v = {
   [Chunk981631.Etm.GET_CHANNEL]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.GUILDS, Chunk243814.x.GUILDS_CHANNELS_READ]
@@ -35,12 +35,12 @@ let I = {
         socket: n
       } = e, r = u.Z.getChannel(t);
       if (null == r) throw new m.Z({
-        errorCode: v.lTL.INVALID_CHANNEL
+        errorCode: I.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       if (r.isPrivate()) {
         let e = n.authorization.scopes;
         if (!e.includes(l.x.RPC) && !e.includes(l.x.DM_CHANNELS_READ)) throw new m.Z({
-          errorCode: v.lTL.INVALID_PERMISSIONS
+          errorCode: I.lTL.INVALID_PERMISSIONS
         }, "Invalid scope")
       }
       return (0, b.T5)(r, (0, b.zM)(r, n.application.id, n.authorization.scopes))
@@ -57,7 +57,7 @@ let I = {
       if (t) {
         let e = d.Z.getGuild(t);
         if (null == e) throw new m.Z({
-          errorCode: v.lTL.INVALID_GUILD
+          errorCode: I.lTL.INVALID_GUILD
         }, "Invalid guild id: ".concat(t));
         n = n.filter(t => {
           let {
@@ -67,7 +67,7 @@ let I = {
         })
       }
       return {
-        channels: n.filter(e => p.Z.can(v.Plq.VIEW_CHANNEL, e)).map(e => {
+        channels: n.filter(e => p.Z.can(I.Plq.VIEW_CHANNEL, e)).map(e => {
           let {
             id: t,
             name: n,
@@ -87,9 +87,9 @@ let I = {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.GUILDS_MEMBERS_READ, Chunk243814.x.GUILDS_CHANNELS_READ]
     },
     handler(e) {
-      let t = (0, E.Z)();
+      let t = (0, _.Z)();
       if (null == t) throw new m.Z({
-        errorCode: v.lTL.INVALID_CHANNEL
+        errorCode: I.lTL.INVALID_CHANNEL
       }, "Invalid channel");
       return {
         permissions: p.Z.computePermissions(t)
@@ -98,7 +98,7 @@ let I = {
   },
   [Chunk981631.Etm.SELECT_VOICE_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, _.Z)(e).required().keys({
+    validation: e => (0, E.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60),
       force: e.boolean(),
@@ -116,33 +116,33 @@ let I = {
         }
       } = e;
       if (!r) return o.default.selectVoiceChannel(null), null;
-      let _ = f.Z.getVoiceChannelId();
-      if (null != _ && _ !== r && false === l) throw new m.Z({
-        errorCode: v.lTL.SELECT_VOICE_FORCE_REQUIRED
+      let E = f.Z.getVoiceChannelId();
+      if (null != E && E !== r && false === l) throw new m.Z({
+        errorCode: I.lTL.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
         throw new m.Z({
-          errorCode: v.lTL.SELECT_CHANNEL_TIMED_OUT
+          errorCode: I.lTL.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select voice channel timed out.")
       }).then(e => {
         if (null == e) throw new m.Z({
-          errorCode: v.lTL.INVALID_CHANNEL
+          errorCode: I.lTL.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
         if (!(0, c.vd)(e.type)) throw new m.Z({
-          errorCode: v.lTL.INVALID_CHANNEL
+          errorCode: I.lTL.INVALID_CHANNEL
         }, "Channel is not a voice channel");
         return Promise.all([Promise.resolve(e), (0, b.T5)(e, (0, b.zM)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id) {
           if ((0, h.rY)(t, g.Z, d.Z)) throw new m.Z({
-            errorCode: v.lTL.INVALID_CHANNEL
+            errorCode: I.lTL.INVALID_CHANNEL
           }, "Channel is full");
-          if (!p.Z.can(v.Plq.CONNECT, t)) throw new m.Z({
-            errorCode: v.lTL.INVALID_PERMISSIONS
+          if (!p.Z.can(I.Plq.CONNECT, t)) throw new m.Z({
+            errorCode: I.lTL.INVALID_PERMISSIONS
           }, "Connect permission required to join channel")
         }
-        return o.default.selectVoiceChannel(t.id), a && (0, s.dL)(v.Z5c.CHANNEL(t.guild_id, t.id)), n
+        return o.default.selectVoiceChannel(t.id), a && (0, s.dL)(I.Z5c.CHANNEL(t.guild_id, t.id)), n
       })
     }
   },
@@ -159,7 +159,7 @@ let I = {
   },
   [Chunk981631.Etm.SELECT_TEXT_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, _.Z)(e).required().keys({
+    validation: e => (0, E.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60)
     }),
@@ -174,23 +174,23 @@ let I = {
       } = e;
       return r ? t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
         throw new m.Z({
-          errorCode: v.lTL.SELECT_CHANNEL_TIMED_OUT
+          errorCode: I.lTL.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select text channel timed out.")
       }).then(e => {
         if (null == e) throw new m.Z({
-          errorCode: v.lTL.INVALID_CHANNEL
+          errorCode: I.lTL.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
         if (!(0, c.Qm)(e.type)) throw new m.Z({
-          errorCode: v.lTL.INVALID_CHANNEL
+          errorCode: I.lTL.INVALID_CHANNEL
         }, "Channel is not a text channel");
         return Promise.all([Promise.resolve(e), (0, b.T5)(e, (0, b.zM)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
-        if (n.guild_id && !p.Z.can(v.Plq.VIEW_CHANNEL, t)) throw new m.Z({
-          errorCode: v.lTL.INVALID_CHANNEL
+        if (n.guild_id && !p.Z.can(I.Plq.VIEW_CHANNEL, t)) throw new m.Z({
+          errorCode: I.lTL.INVALID_CHANNEL
         }, "No permission to see channel");
-        return n.guild_id ? (0, s.dL)(v.Z5c.CHANNEL(n.guild_id, t.id)) : o.default.selectPrivateChannel(t.id), n
-      }) : ((0, s.uL)(v.Z5c.ME), null)
+        return n.guild_id ? (0, s.dL)(I.Z5c.CHANNEL(n.guild_id, t.id)) : o.default.selectPrivateChannel(t.id), n
+      }) : ((0, s.uL)(I.Z5c.ME), null)
     }
   },
   [Chunk981631.Etm.CREATE_CHANNEL_INVITE]: {
@@ -217,7 +217,7 @@ let I = {
       }(e.args, ["channel_id"]);
       return a.ZP.createInvite(t, n, "RPC").catch(() => {
         throw new m.Z({
-          errorCode: v.lTL.INVALID_PERMISSIONS
+          errorCode: I.lTL.INVALID_PERMISSIONS
         }, "Unable to generate an invite for ".concat(t, ". Does this user have permissions?"))
       })
     }

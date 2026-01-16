@@ -22,7 +22,7 @@ function b(e) {
   return "haven:".concat(e)
 }
 
-function _() {
+function E() {
   let e = r;
   if (null == e) returnfalse;
   let t = b(e);
@@ -32,7 +32,7 @@ function _() {
   i.Z.wait(() => l.xv(t)), r = null
 }
 
-function E() {
+function _() {
   return c.Z.hasLayers()
 }
 
@@ -43,7 +43,7 @@ function O() {
       let e = d.Z.getChannelId(),
         t = p.Z.getChannelId();
       return !!(null == e || !h.Z.isUserConnected(e) || e === t || o.Z.getWindowOpen(m.KJ3.CHANNEL_CALL_POPOUT))
-    }()) return _();
+    }()) return E();
   if (null != t && h.Z.isUserConnected(t.id)) {
     if (r !== t.id) {
       let e = b(t.id);
@@ -55,16 +55,16 @@ function O() {
       return i.Z.wait(() => {
         l.bA(e, m.NYg.HAVEN, {
           channel: t
-        }), E() && l.Cp(e)
+        }), _() && l.Cp(e)
       }), r = t.id, true
     }
     returnfalse
   }
-  return _()
+  return E()
 }
 
-function v() {
-  if (E()) {
+function I() {
+  if (_()) {
     let e = r;
     if (null == e) return;
     let t = b(e);
@@ -76,12 +76,12 @@ function v() {
   let t = b(e);
   u.Z.isOpen(t) && i.Z.wait(() => l.$Z(t))
 }
-class I extends Chunk317770.Z {
+class v extends Chunk317770.Z {
   _initialize() {
-    p.Z.addChangeListener(O), f.Z.addChangeListener(O), d.Z.addChangeListener(O), g.Z.addChangeListener(O), c.Z.addChangeListener(v), h.Z.addChangeListener(O), o.Z.addChangeListener(O)
+    p.Z.addChangeListener(O), f.Z.addChangeListener(O), d.Z.addChangeListener(O), g.Z.addChangeListener(O), c.Z.addChangeListener(I), h.Z.addChangeListener(O), o.Z.addChangeListener(O)
   }
   _terminate() {
-    p.Z.removeChangeListener(O), f.Z.removeChangeListener(O), d.Z.removeChangeListener(O), g.Z.removeChangeListener(O), c.Z.removeChangeListener(v), h.Z.removeChangeListener(O), o.Z.removeChangeListener(O)
+    p.Z.removeChangeListener(O), f.Z.removeChangeListener(O), d.Z.removeChangeListener(O), g.Z.removeChangeListener(O), c.Z.removeChangeListener(I), h.Z.removeChangeListener(O), o.Z.removeChangeListener(O)
   }
 }
-let y = new I
+let y = new v

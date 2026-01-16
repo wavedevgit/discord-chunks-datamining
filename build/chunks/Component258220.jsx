@@ -22,7 +22,7 @@ function g(e) {
     applicationId: n,
     transitionState: g,
     onClose: h
-  } = e, [m, b] = i.useState(false), [_] = (0, s.Z)([n]), E = null != (t = null == _ ? true : _.name) ? t : "This Activity";
+  } = e, [m, b] = i.useState(false), [E] = (0, s.Z)([n]), _ = null != (t = null == E ? true : E.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
       type: f
@@ -36,7 +36,7 @@ function g(e) {
       type: f,
       dismiss_type: e
     }), await h()
-  }, v = async () => {
+  }, I = async () => {
     c.default.track(d.rMx.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
       application_id: n
     }), u.ZP.setEnableHardwareAcceleration(true), await O()
@@ -60,12 +60,12 @@ function g(e) {
     }, {
       variant: "primary",
       text: p.intl.string(p.t["/wlDqi"]),
-      onClick: v
+      onClick: I
     }],
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: p.intl.format(p.t.B9eiaK, {
-        applicationName: E
+        applicationName: _
       })
     })
   })

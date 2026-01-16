@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 895991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk186901 = require("./186901.js"),
   Chunk575959 = require("./575959.js");
 
-function v(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,9 +30,9 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class I extends Chunk473749.PureComponent {
+class v extends Chunk473749.PureComponent {
   componentDidMount() {
-    c.Y(_.Z5c.APPLICATION_LIBRARY), (0, f.T)(E.jE.LIBRARY), s.Z.wait(() => (0, u.o)()), (0, d.N)(), null != this._scrollToOnMount && null != this._scrollerRef.current && this.scrollToRow(this._scrollToOnMount, this._scrollToPadding)
+    c.Y(E.Z5c.APPLICATION_LIBRARY), (0, f.T)(_.jE.LIBRARY), s.Z.wait(() => (0, u.o)()), (0, d.N)(), null != this._scrollToOnMount && null != this._scrollerRef.current && this.scrollToRow(this._scrollToOnMount, this._scrollToPadding)
   }
   renderToolbar() {
     return (0, r.jsx)(g.Z, {})
@@ -42,7 +42,7 @@ class I extends Chunk473749.PureComponent {
       includeUpdatesInScroller: e
     } = this.state, t = (0, r.jsx)("div", {
       children: (0, r.jsx)(p.Z, {
-        section: _.jXE.LIBRARY_INSTALL_MODULE,
+        section: E.jXE.LIBRARY_INSTALL_MODULE,
         children: (0, r.jsx)(b.Z, {
           onHeightTallerThanHalfViewportChange: this.handleHeightTallerThanHalfViewportChange
         })
@@ -50,13 +50,13 @@ class I extends Chunk473749.PureComponent {
     });
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(h.Z, {
-        currentRoute: _.Z5c.APPLICATION_LIBRARY,
+        currentRoute: E.Z5c.APPLICATION_LIBRARY,
         renderToolbar: this.renderToolbar
       }), e ? null : t, (0, r.jsxs)(o.yWw, {
         className: a()(O.container, O.scroller),
         ref: this._scrollerRef,
         children: [e ? t : null, (0, r.jsx)(p.Z, {
-          section: _.jXE.LIBRARY_APPLICATION_LIST,
+          section: E.jXE.LIBRARY_APPLICATION_LIST,
           children: (0, r.jsx)(m.Z, {
             stickyHeader: !e,
             scrollToRow: this.scrollToRow
@@ -66,13 +66,13 @@ class I extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "_scrollerRef", i.createRef()), v(this, "_scrollToOnMount", true), v(this, "_scrollToPadding", 0), v(this, "state", {
+    super(...e), I(this, "_scrollerRef", i.createRef()), I(this, "_scrollToOnMount", true), I(this, "_scrollToPadding", 0), I(this, "state", {
       includeUpdatesInScroller: false
-    }), v(this, "handleHeightTallerThanHalfViewportChange", e => {
+    }), I(this, "handleHeightTallerThanHalfViewportChange", e => {
       this.setState({
         includeUpdatesInScroller: e
       })
-    }), v(this, "scrollToRow", (e, t) => {
+    }), I(this, "scrollToRow", (e, t) => {
       let n = this._scrollerRef.current;
       null != n ? (e.focus(), n.scrollIntoViewRect({
         start: t,

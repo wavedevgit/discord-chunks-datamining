@@ -34,14 +34,14 @@ function g(e) {
   }, [t]), b = i.useMemo(() => (0, p.Cf)().map(e => ({
     id: e.code,
     label: e.name
-  })), []), _ = i.useMemo(() => {
+  })), []), E = i.useMemo(() => {
     var e;
     let t = (0, p.Cf)().find(e => e.code === h);
     return null != (e = null == t ? true : t.name) ? e : f.intl.string(f.t.LQLMGP)
   }, [h]);
   return (0, r.jsx)(a.ZP, {
     items: b,
-    title: _,
+    title: E,
     onSelect: m,
     selected: h,
     "aria-label": f.intl.string(f.t.Ng5cTK)

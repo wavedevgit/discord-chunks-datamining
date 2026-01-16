@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 46832, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk836560 = require("./836560.js"),
   Chunk317381 = require("./317381.js"),
@@ -26,10 +26,10 @@ function g(e, t, n) {
 let h = 10 * Chunk70956.Z.Millis.SECOND,
   m = new Map,
   b = new Set,
-  _ = (e, t, n) => {
+  E = (e, t, n) => {
     n([u.Z.CLOSE, t], e)
   };
-class E extends Chunk836560.EventEmitter {
+class _ extends Chunk836560.EventEmitter {
   routeEvent(e, t, n, r) {
     if (!Array.isArray(n)) return void console.warn("[PostMessageTransport] Protocol error: event data should be an Array!");
     let [i, l] = n;
@@ -104,7 +104,7 @@ class E extends Chunk836560.EventEmitter {
         null != r ? this.disconnectSocket(r, {
           code: e.code,
           message: e.message
-        }, true) : _(t, {
+        }, true) : E(t, {
           code: e.code,
           message: e.message
         }, n)
@@ -156,7 +156,7 @@ class E extends Chunk836560.EventEmitter {
           frameId: o,
           version: Number(t.v),
           logger: this.logger,
-          postClose: _,
+          postClose: E,
           encoding: null != (s = t.encoding) ? s : "json"
         })
       } catch (e) {

@@ -71,7 +71,7 @@ function j(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_QUICKSWITCHER:
-            return (0, r.jsx)(I.Z, {
+            return (0, r.jsx)(v.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -106,7 +106,7 @@ let x = e => {
         guild: t
       });
     case y.R.MAX_MEMBER_COUNT:
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(I.Z, {
         guild: t
       });
     case y.R.GUILD_LIVE_CHANNEL:
@@ -114,7 +114,7 @@ let x = e => {
         guild: t
       });
     case y.R.GUILD_MFA_WARNING:
-      return (0, r.jsx)(E.Z, {
+      return (0, r.jsx)(_.Z, {
         guild: t
       });
     case y.R.COMMANDS_MIGRATION:
@@ -130,7 +130,7 @@ let x = e => {
         guild: t
       })
   }
-  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
+  return E.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

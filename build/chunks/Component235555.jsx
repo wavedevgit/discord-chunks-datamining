@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk658244 = require("./658244.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class E extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   hasParty(e) {
     return e.length > 1
   }
@@ -50,7 +50,7 @@ class E extends Chunk473749.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), _(this, "handleUserContextMenu", (e, t) => {
+    super(...e), E(this, "handleUserContextMenu", (e, t) => {
       (0, s.jW)(e, async () => {
         let {
           default: e
@@ -73,7 +73,7 @@ class E extends Chunk473749.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              _(e, t, n[t])
+              E(e, t, n[t])
             })
           }
           return e
@@ -81,7 +81,7 @@ class E extends Chunk473749.PureComponent {
           user: t
         }))
       })
-    }), _(this, "renderOverflowPopout", () => {
+    }), E(this, "renderOverflowPopout", () => {
       let {
         party: e
       } = this.props;
@@ -108,4 +108,4 @@ let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk6
     host: e,
     party: l
   }
-})(E)
+})(_)

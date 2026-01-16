@@ -19,7 +19,7 @@ function p(e, t, n) {
   (0, u.a)("useMaybeFetchCollectiblesShopHome");
   let g = i.v.VARIANTS_GROUP,
     h = (0, l.e7)([s.Z], () => s.Z.skipNumCategories),
-    [m, b, _, E, O, v, I, y] = (0, l.Wu)([c.Z], () => {
+    [m, b, E, _, O, I, v, y] = (0, l.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getHasKnownStaleData(e), c.Z.getShopHomeConfigOverride()]
     }),
@@ -58,15 +58,15 @@ function p(e, t, n) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
     }, [t, y, h, g]),
-    S = (0, r.useMemo)(() => !(0, o.oc)(E, C), [E, C]),
-    T = (0, d.J)(m, null != v && v, p),
+    S = (0, r.useMemo)(() => !(0, o.oc)(_, C), [_, C]),
+    T = (0, d.J)(m, null != I && I, p),
     N = (0, r.useMemo)(() => !T && Date.now() - b < 6e5, [b, T]);
   return (0, r.useEffect)(() => {
-    if (!f || v) return;
-    let t = Date.now() - _ < 6e5;
-    (null == O || !t) && (S || !N || I) && (0, o.Ov)(e, C, n)
-  }, [f, v, O, _, N, I, S, C, e, n]), {
-    isFetchingShopHome: v,
+    if (!f || I) return;
+    let t = Date.now() - E < 6e5;
+    (null == O || !t) && (S || !N || v) && (0, o.Ov)(e, C, n)
+  }, [f, I, O, E, N, v, S, C, e, n]), {
+    isFetchingShopHome: I,
     fetchShopHomeError: O,
     shopBlocks: m,
     refreshShopHome: (0, r.useCallback)(() => {

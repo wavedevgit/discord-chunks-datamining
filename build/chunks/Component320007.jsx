@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 320007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,19 +19,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function E(e) {
   let {
     canShowReminder: t = false,
-    className: _
-  } = e, E = (0, f.Z)(u.Z), {
+    className: E
+  } = e, _ = (0, f.Z)(u.Z), {
     showClipsHeaderEntrypoint: O
   } = d.NV.useExperiment({
     location: "ClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    hasNewClips: v,
-    lastClipsSession: I,
+    hasNewClips: I,
+    lastClipsSession: v,
     remindersEnabled: y,
     hasAnyClipAnimations: C
   } = (0, l.cj)([p.Z], () => ({
@@ -39,7 +39,7 @@ function _(e) {
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), S = null != I && I.newClipIds.length > 0, T = (0, g.n)(e => e.clipsButtonRef), N = (0, g.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
+  })), S = null != v && v.newClipIds.length > 0, T = (0, g.n)(e => e.clipsButtonRef), N = (0, g.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: x,
     allowIdle: P
   } = (0, s.Y)("animation");
@@ -71,17 +71,17 @@ function _(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (C ? x() : P(), () => P()), [C, x, P]), O && E) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (C ? x() : P(), () => P()), [C, x, P]), O && _) ? (0, r.jsxs)(r.Fragment, {
     children: [null != T && t && y && S && !(0, a.$sL)() && !j && (0, r.jsx)(h.Z, {
       clipIconRef: T,
-      lastClipsSession: I,
+      lastClipsSession: v,
       onOpenClipsGallery: A
     }), (0, r.jsx)("div", {
       ref: N,
       children: (0, r.jsx)(o.JO, {
-        className: _,
+        className: E,
         icon: a.AlX,
-        showBadge: v,
+        showBadge: I,
         tooltip: b.intl.string(b.t.MXaLEM),
         onClick: A
       })

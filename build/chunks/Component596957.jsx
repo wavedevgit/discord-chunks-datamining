@@ -88,7 +88,7 @@ function M(e) {
   } = e, l = i.useMemo(() => n ? D : t !== j.pJs.PENDING ? R : true, [n, t]);
   return (0, r.jsx)("div", {
     className: A.emptyStateContainer,
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(I.Z, {
       type: t,
       onClick: l
     }, t)
@@ -102,7 +102,7 @@ let k = function(e) {
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
     rows: o,
     section: R
-  } = (0, l.cj)([_.ZP], () => _.ZP.getState()), k = (0, l.e7)([E.Z], () => E.Z.isFocused()), {
+  } = (0, l.cj)([E.ZP], () => E.ZP.getState()), k = (0, l.e7)([_.Z], () => _.Z.isFocused()), {
     relationshipCount: U,
     hasBlockedOrIgnored: G
   } = (0, l.cj)([b.Z], () => ({
@@ -132,7 +132,7 @@ let k = function(e) {
     }(e, ["key"]);
     switch (R) {
       case j.pJs.PENDING:
-        return (0, r.jsx)(I.Z, w(Z({}, i), {
+        return (0, r.jsx)(v.Z, w(Z({}, i), {
           isFocused: k
         }), n);
       case j.pJs.SUGGESTIONS:
@@ -304,8 +304,8 @@ let k = function(e) {
         }) : null
       }), es && (0, r.jsx)("div", {
         className: A.emptyStateContainer,
-        children: (0, r.jsx)(v.Z, {
-          type: v.j.SECTION_NO_RESULTS
+        children: (0, r.jsx)(I.Z, {
+          type: I.j.SECTION_NO_RESULTS
         }, R)
       })]
     })

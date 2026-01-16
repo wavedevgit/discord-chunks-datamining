@@ -38,7 +38,7 @@ let A = [],
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
-  let l = _.Z.getGuild(n),
+  let l = E.Z.getGuild(n),
     a = e.replace(R, P.intl.string(P.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
@@ -48,7 +48,7 @@ function D(e, t, n, r) {
       return null != n && null != n.name ? n.name : P.intl.string(P.t.dRcLA2)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = h.Z.getChannel(t);
-      return null == n ? e : (0, s.F6)(n, C.default, v.Z)
+      return null == n ? e : (0, s.F6)(n, C.default, I.Z)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(P.intl.string(P.t.sMOuuS), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
@@ -117,16 +117,16 @@ function V(e) {
     message: s,
     optimistic: c
   } = e;
-  if (c || E.Z.isSelfDeaf()) returnfalse;
+  if (c || _.Z.isSelfDeaf()) returnfalse;
   let u = h.Z.getChannel(o);
   if (null == u) returnfalse;
-  let d = I.Z.getChannelId(),
+  let d = v.Z.getChannelId(),
     b = g.ZP.getCurrentSidebarChannelId(d),
-    _ = o === d || o === b,
-    C = p.OW.getSetting() && s.tts && _,
+    E = o === d || o === b,
+    C = p.OW.getSetting() && s.tts && E,
     T = O.Z.getTTSType(),
-    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === x.PrB.ALL_CHANNELS || T === x.PrB.SELECTED_CHANNEL && _);
-  if ((C || N) && !v.Z.isBlockedOrIgnoredForMessage(s)) {
+    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === x.PrB.ALL_CHANNELS || T === x.PrB.SELECTED_CHANNEL && E);
+  if ((C || N) && !I.Z.isBlockedOrIgnoredForMessage(s)) {
     if (A.indexOf(s.id) >= 0) returnfalse;
     A.unshift(s.id) > 10 && A.pop();
     let e = u.getGuildId();
@@ -148,7 +148,7 @@ function F(e) {
 }
 
 function z() {
-  E.Z.isSelfDeaf() && o.M9()
+  _.Z.isSelfDeaf() && o.M9()
 }
 
 function Y(e) {

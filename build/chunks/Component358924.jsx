@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 358924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ev
+  Z: () => eI
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -218,7 +218,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
     })
   };
 var eb = ((r = eb || {}).XBOX = "XBOX", r.SPOTIFY = "SPOTIFY", r.MULTIPLE = "MULTIPLE", r);
-let e_ = e => {
+let eE = e => {
   let t, {
     src: n,
     onClick: r,
@@ -261,8 +261,8 @@ let e_ = e => {
     children: t
   }) : t
 };
-e_.Src = eb;
-let eE = e => {
+eE.Src = eb;
+let e_ = e => {
   let {
     priorityUser: t,
     title: n,
@@ -306,7 +306,7 @@ let eE = e => {
     }) : l]
   })
 };
-eE.Icon = e_;
+e_.Icon = eE;
 let eO = e => {
   var t, n, {
       children: r,
@@ -363,7 +363,7 @@ let eO = e => {
     }), t))
   })
 };
-eO.Header = eE, eO.Body = e => {
+eO.Header = e_, eO.Body = e => {
   let {
     children: t
   } = e;
@@ -479,24 +479,24 @@ eO.Header = eE, eO.Body = e => {
     state: m,
     application_id: b
   } = c, {
-    hasButton: _
+    hasButton: E
   } = eg({
     activity: c,
     user: d
-  }), E = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), y = (0, S.Z)({
+  }), _ = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), y = (0, S.Z)({
     application: f,
     analyticsLocations: p
   });
   return null != c.assets || (0, O.Z)(c) || null != y ? (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: o()(ea.activitySection, {
-        [ea.activitySectionWithButtons]: _
+        [ea.activitySectionWithButtons]: E
       }),
       children: [null != g && 0 !== Object.keys(g).length ? (0, i.jsxs)("div", {
         className: ea.activitySectionAssets,
         children: [(0, i.jsx)("img", {
           alt: null != (l = g.large_text) ? l : "",
-          src: null != (a = u(b, g.large_image, [160, 160])) ? a : E,
+          src: null != (a = u(b, g.large_image, [160, 160])) ? a : _,
           className: o()(ea.largeImage, {
             [ea.largeImageMask]: null != g.small_image
           })
@@ -509,7 +509,7 @@ eO.Header = eE, eO.Body = e => {
         className: ea.activitySectionAssets,
         children: (0, i.jsx)("img", {
           alt: "",
-          src: E,
+          src: _,
           className: ea.largeImage
         })
       }), (0, i.jsxs)("div", {
@@ -518,7 +518,7 @@ eO.Header = eE, eO.Body = e => {
           let {
             timestamps: e
           } = c;
-          return null == e || !(0, v.Z)(c) || (0, I.Z)(c) ? null : ec((0, O.Z)(c) ? (0, i.jsx)(eu, {
+          return null == e || !(0, I.Z)(c) || (0, v.Z)(c) ? null : ec((0, O.Z)(c) ? (0, i.jsx)(eu, {
             timestamps: e
           }) : (0, i.jsx)(B.ZP, {
             start: e.start,
@@ -608,7 +608,7 @@ eO.Header = eE, eO.Body = e => {
       className: ea.twitchSectionPreviewWrapper,
       aspectRatio: 16 / 9,
       children: (0, i.jsxs)(f.P3F, {
-        href: (0, E.Z)(r),
+        href: (0, _.Z)(r),
         tag: "a",
         target: "_blank",
         children: [(0, i.jsx)("img", {
@@ -708,7 +708,7 @@ eO.Header = eE, eO.Body = e => {
   let b = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    E = (0, ee.xF)(h.id, o, 300);
+    _ = (0, ee.xF)(h.id, o, 300);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.embeddedActivityTopRow,
@@ -734,8 +734,8 @@ eO.Header = eE, eO.Body = e => {
       }) : null]
     }), (0, i.jsxs)("div", {
       className: ea.embeddedActivityPlayerContainer,
-      children: [null != E ? (0, i.jsx)("img", {
-        src: E,
+      children: [null != _ ? (0, i.jsx)("img", {
+        src: _,
         alt: h.name,
         className: ea.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
@@ -751,7 +751,7 @@ eO.Header = eE, eO.Body = e => {
             size: "sm",
             text: el.intl.string(el.t.VJlc0S),
             onClick: e => {
-              e.stopPropagation(), (0, _.Z)({
+              e.stopPropagation(), (0, E.Z)({
                 applicationId: u,
                 activityChannelId: n.id,
                 locationObject: p.location,
@@ -764,4 +764,4 @@ eO.Header = eE, eO.Body = e => {
     })]
   })
 };
-let ev = eO
+let eI = eO

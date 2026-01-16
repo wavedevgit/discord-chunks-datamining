@@ -22,18 +22,18 @@ let f = function(e) {
     sectionFilter: h,
     footer: m,
     renderSectionFooter: b
-  } = e, _ = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
+  } = e, E = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
     id: "people",
-    isEnabled: _,
+    isEnabled: E,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), v = h !== d.pJs.ONLINE && h !== d.pJs.ALL, I = E || g || v, y = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : I ? (0, r.jsxs)("div", {
+  }), I = h !== d.pJs.ONLINE && h !== d.pJs.ALL, v = _ || g || I, y = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : v ? (0, r.jsxs)("div", {
     children: [f(t), e.map(e => n(e, t)), null == b ? true : b(t)]
   }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: false,
     component: "div",
     children: [f(t), e.map(e => n(e, t)), null == b ? true : b(t)]
-  }, t)), [n, f, b, t, I]);
+  }, t)), [n, f, b, t, v]);
   return (0, r.jsx)(a.bG, {
     navigator: O,
     children: (0, r.jsx)(a.SJ, {

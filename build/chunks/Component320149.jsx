@@ -28,7 +28,7 @@ function y(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, y = (0, _.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), x = i.useCallback(() => {
+  } = e, y = (0, E.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), x = i.useCallback(() => {
     m.Z.closeChannelSidebar(b.uZ), T && C && (0, h.Kh)(t.id), N && S && (0, h.Kh)(t.id)
   }, [t.id, N, S, T, C]), P = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
@@ -54,12 +54,12 @@ function y(e) {
         inSidebar: true
       })
     }), N && (0, r.jsxs)("div", {
-      className: I.hamBanner,
+      className: v.hamBanner,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: O.intl.string(O.t.XVOKgj)
       }), (0, r.jsx)("div", {
-        className: I.hamBannerButton,
+        className: v.hamBannerButton,
         children: (0, r.jsx)(a.Button, {
           size: "sm",
           onClick: () => A(t, j),
@@ -67,8 +67,8 @@ function y(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: v.chat,
-      children: (0, r.jsx)(E.Z, {
+      className: I.chat,
+      children: (0, r.jsx)(_.Z, {
         channel: t,
         guild: null,
         chatInputType: o.Ie.SIDEBAR

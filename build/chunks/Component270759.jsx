@@ -50,14 +50,14 @@ let P = function(e) {
       l.replace(S.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(S.Z5c.FRIENDS), (0, E.e)("friends")
+    d.Y(S.Z5c.FRIENDS), (0, _.e)("friends")
   }, []);
   let b = (0, s.e7)([O.Z], () => O.Z.theme),
-    P = (0, I.If)(),
+    P = (0, v.If)(),
     {
       section: A,
       rows: Z
-    } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
+    } = (0, s.cj)([I.ZP], () => I.ZP.getState()),
     w = (0, s.e7)([h.Z], () => h.Z.getSuggestionCount()),
     L = i.useMemo(() => Z.getRelationshipCounts(), [Z]);
   i.useEffect(() => {
@@ -118,7 +118,7 @@ let P = function(e) {
     U = null,
     G = (0, r.jsx)("div", {
       className: j.nowPlayingColumn,
-      children: (0, r.jsx)(_.Z, {})
+      children: (0, r.jsx)(E.Z, {})
     });
   return U = A === S.pJs.ADD_FRIEND ? (0, r.jsx)(y.Z, {}) : (0, r.jsx)(C.Z, {
     titleId: M

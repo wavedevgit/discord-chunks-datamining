@@ -23,27 +23,27 @@ function b() {
   if (!(0, i.l)()) return;
   let n = p.Z.isVideoEnabled(),
     b = Object.values(p.Z.getVideoDevices())[0],
-    _ = false === (null == (t = null == b ? true : b.disabled) || t),
-    E = p.Z.supportsInApp(m.AN.VIDEO) && p.Z.supportsInApp(m.AN.DESKTOP_CAPTURE),
+    E = false === (null == (t = null == b ? true : b.disabled) || t),
+    _ = p.Z.supportsInApp(m.AN.VIDEO) && p.Z.supportsInApp(m.AN.DESKTOP_CAPTURE),
     O = d.Z.getChannel(f.Z.getChannelId()),
-    v = null == (e = g.default.getCurrentUser()) ? true : e.id;
-  if (null == O || null == v) return;
+    I = null == (e = g.default.getCurrentUser()) ? true : e.id;
+  if (null == O || null == I) return;
   let {
-    reachedLimit: I
+    reachedLimit: v
   } = (0, s.t)(O);
-  if (!I) {
+  if (!v) {
     if (O.isGuildStageVoice()) {
       let e = l.Z.getMutableParticipants(O.id, a.pV.SPEAKER),
         t = null == e ? true : e.find(e => {
           let {
             user: t
           } = e;
-          return t.id === v
+          return t.id === I
         });
-      if (!(0, o.tu)(O.guild_id) || !E || null == t || t.voiceState.suppress) return
+      if (!(0, o.tu)(O.guild_id) || !_ || null == t || t.voiceState.suppress) return
     }
-    return n ? r.Z.setVideoEnabled(false) : !n && _ ? (0, u.Z)(() => {
+    return n ? r.Z.setVideoEnabled(false) : !n && E ? (0, u.Z)(() => {
       r.Z.setVideoEnabled(true)
-    }, h.IlC.APP, true) : _ || (0, c.Z)(), false
+    }, h.IlC.APP, true) : E || (0, c.Z)(), false
   }
 }

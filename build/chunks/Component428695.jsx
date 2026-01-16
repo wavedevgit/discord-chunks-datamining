@@ -24,11 +24,11 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       image: o,
       type: m,
       imageStyles: b,
-      imageMarginX: _,
-      imageMarginTop: E,
+      imageMarginX: E,
+      imageMarginTop: _,
       trackingSource: O,
-      undismissable: v,
-      onDismissed: I,
+      undismissable: I,
+      onDismissed: v,
       onClick: y,
       cta: C,
       ctaColor: S,
@@ -77,14 +77,14 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       color: "text-muted",
       children: l
     }));
-    let A = null != _ ? "".concat(_, "px") : "16px";
+    let A = null != E ? "".concat(E, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(g.container, N),
-      children: [true === v ? null : (0, r.jsx)(c.P3F, {
+      children: [true === I ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: m
-          }), null == I || I()
+          }), null == v || v()
         },
         className: g.close,
         "aria-label": f.intl.string(f.t.WAI6xu),
@@ -96,7 +96,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       }), null != o && (0, r.jsx)("div", {
         className: g.imageContainer,
         style: {
-          marginTop: "".concat(E, "px"),
+          marginTop: "".concat(_, "px"),
           marginLeft: A,
           marginRight: A
         },

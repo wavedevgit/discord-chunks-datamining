@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), x = (0, p.Z)(t), P = (0, E.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), x = (0, p.Z)(t), P = (0, _.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, E.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || A || L;
@@ -46,8 +46,8 @@ function j(e) {
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? I.J.NOT_GUILD_MEMBER : I.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(I.z, {
+    let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(v.z, {
       errorType: e
     })
   }
@@ -70,7 +70,7 @@ function j(e) {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(v.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(I.Z, {
             guild: n
           })
         })
@@ -83,7 +83,7 @@ function x(e) {
   let {
     guildId: t
   } = e;
-  return (0, r.jsx)(_.l, {
+  return (0, r.jsx)(E.l, {
     guildId: t,
     refetchOnMount: true,
     children: (0, r.jsx)(j, {

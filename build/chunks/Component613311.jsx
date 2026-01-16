@@ -306,7 +306,7 @@ class ef extends Chunk473749.PureComponent {
         children: es.intl.format(es.t.tluX4B, {
           name: n.name
         })
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(K.Z, {
+      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(K.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
@@ -421,10 +421,10 @@ class ef extends Chunk473749.PureComponent {
       className: ec.listingWrapper,
       children: [(0, r.jsx)(N.yY, {
         location: e.name
-      }), this.renderJsonLD(), (0, r.jsx)(_.Z, {
+      }), this.renderJsonLD(), (0, r.jsx)(E.Z, {
         section: ea.jXE.NAVIGATION,
         children: this.renderHeader(e, t)
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(E.Z, {
         section: ea.jXE.BODY,
         children: this.renderListing()
       })]
@@ -569,7 +569,7 @@ class ef extends Chunk473749.PureComponent {
         pageSize: n,
         isFocused: i
       } = this.props;
-      return (0, r.jsx)(_.Z, {
+      return (0, r.jsx)(E.Z, {
         section: ea.jXE.HERO,
         children: (0, r.jsx)(J.Z, {
           pageSize: n,
@@ -609,7 +609,7 @@ let eg = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     if (null == l) throw Error("Needs applicationId or skuId");
     null != (r = y.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? k.Z.get(t) : null
   }(null == n ? true : n.flags) != null && (0, o.yE)(n.flags, ea.l4R.STICKER) && (n = null);
-  let u = null != l && (G.Z.inTestModeForApplication(l) || I.Z.inDevModeForApplication(l));
+  let u = null != l && (G.Z.inTestModeForApplication(l) || v.Z.inDevModeForApplication(l));
   return {
     skuId: t,
     application: null != l ? y.Z.getApplication(l) : null,

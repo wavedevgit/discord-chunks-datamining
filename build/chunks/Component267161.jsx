@@ -71,7 +71,7 @@ let V = Chunk473749.memo(function() {
   }), {
     titlebarFastTravel: n,
     quickSwitcherInsteadOfTitle: l
-  } = (0, _.t)({
+  } = (0, E.t)({
     location: "AppTitleBar"
   }), {
     backForwardButtons: o,
@@ -120,7 +120,7 @@ let V = Chunk473749.memo(function() {
         return (0, r.jsx)(k.TF, {
           className: t,
           leading: (0, r.jsxs)(r.Fragment, {
-            children: [o && (0, r.jsx)(E.Z, {
+            children: [o && (0, r.jsx)(_.Z, {
               firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === q ? e : true
             }), z && (0, r.jsx)(j.Z, {
               focusSectionProps: "NOTIFICATIONS_INBOX" === q ? e : true
@@ -132,7 +132,7 @@ let V = Chunk473749.memo(function() {
             focusSectionProps: "TITLEBAR_FAST_TRAVEL" === q ? e : true
           }),
           trailing: (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(v.Z, {
+            children: [(0, r.jsx)(I.Z, {
               className: Q
             }), H && (0, r.jsx)(h.Z, {
               className: Q
@@ -171,7 +171,7 @@ let V = Chunk473749.memo(function() {
               children: [(0, r.jsx)(C.H, {
                 focusSectionProps: "HELP" === q ? e : true,
                 className: Q
-              }), V ? (0, r.jsx)(I.M, {
+              }), V ? (0, r.jsx)(v.M, {
                 className: Q
               }) : null]
             }) : (0, r.jsx)(y.Z, {

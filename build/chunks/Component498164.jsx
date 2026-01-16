@@ -88,7 +88,7 @@ let M = {
       if (null == S.default.getCurrentUser()) return;
       let {
         guildTemplate: i
-      } = await _.Z.resolveGuildTemplate(t);
+      } = await E.Z.resolveGuildTemplate(t);
       if (null == i) throw new P.Z({
         errorCode: w.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
@@ -201,7 +201,7 @@ let M = {
         case Z.jE.QUEST_HOME:
           if (null != r) {
             let e = new URLSearchParams;
-            null != r.sort && e.set(I.tR.SORT, r.sort), null != r.filter && e.set(I.tR.FILTER, r.filter), null != r.tab && e.set(I.tR.TAB, r.tab), (0, y.dL)({
+            null != r.sort && e.set(v.tR.SORT, r.sort), null != r.filter && e.set(v.tR.FILTER, r.filter), null != r.tab && e.set(v.tR.TAB, r.tab), (0, y.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               hash: r.questId,
               search: "?".concat(e.toString())
@@ -209,11 +209,11 @@ let M = {
           } else(0, y.dL)(w.Z5c.QUEST_HOME_V2);
           break;
         case Z.jE.QUEST_PREVIEW_TOOL:
-          if ((0, v.T)({
+          if ((0, I.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != r) {
             let e = new URLSearchParams;
-            e.set(I.tR.TAB, I.e5.PREVIEW_TOOL), null != r.questId && e.set(I.tR.QUEST_ID, r.questId), (0, y.dL)({
+            e.set(v.tR.TAB, v.e5.PREVIEW_TOOL), null != r.questId && e.set(v.tR.QUEST_ID, r.questId), (0, y.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), D(r.fingerprint, (0, Z.O)(t))
@@ -228,8 +228,8 @@ let M = {
         case Z.jE.OAUTH2:
           let l = new URL(w.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           l.search = r.search;
-          let a = (0, E.getOAuth2AuthorizeProps)(l.toString());
-          if (null != a) return (0, E.openOAuth2ModalWithCreateGuildModal)(a), true;
+          let a = (0, _.getOAuth2AuthorizeProps)(l.toString());
+          if (null != a) return (0, _.openOAuth2ModalWithCreateGuildModal)(a), true;
           returnfalse;
         case Z.jE.ONE_TIME_LOGIN:
           if (null != r) return (0, O.Y)({

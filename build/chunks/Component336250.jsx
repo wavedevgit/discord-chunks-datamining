@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
 function h(e) {
   let {
     applicationId: t
-  } = e, [h, m] = i.useState(null), [b, _] = i.useState(false), E = i.useRef(false), O = !u.isPlatformEmbedded && !a.tq, v = i.useMemo(() => (0, l.Z)(), []);
+  } = e, [h, m] = i.useState(null), [b, E] = i.useState(false), _ = i.useRef(false), O = !u.isPlatformEmbedded && !a.tq, I = i.useMemo(() => (0, l.Z)(), []);
   if (i.useEffect(() => {
-      O && true !== E.current ? (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+      O && true !== _.current ? (Promise.resolve().then(n.bind(n, 536285)).then(e => {
         let {
           default: n
         } = e;
@@ -30,16 +30,16 @@ function h(e) {
           params: {
             applicationId: t,
             url: location.href,
-            attemptId: v
+            attemptId: I
           }
         }).then(e => {
           let t = null != e && e;
-          m(t), t || _(true)
+          m(t), t || E(true)
         }).catch(() => {
-          m(false), _(true)
+          m(false), E(true)
         }).then(() => n.disconnect())
-      }), E.current = true) : O || _(true)
-    }, [t, O, v]), b) return (0, r.jsx)(c.Z, {});
+      }), _.current = true) : O || E(true)
+    }, [t, O, I]), b) return (0, r.jsx)(c.Z, {});
   if (O && false !== h)
     if (true === h) return (0, r.jsxs)("div", {
       className: g.container,
@@ -52,7 +52,7 @@ function h(e) {
       }), (0, r.jsx)(o.zxk, {
         variant: "primary",
         text: f.intl.string(f.t.fIv16B),
-        onClick: () => _(true)
+        onClick: () => E(true)
       })]
     });
     else return (0, r.jsxs)("div", {

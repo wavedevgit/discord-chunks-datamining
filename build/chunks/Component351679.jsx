@@ -82,7 +82,7 @@ let N = Chunk473749.memo(function(e) {
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
-  }), F = (0, o.JA)(N.id), z = (0, p.ZP)(N), Y = (0, s.e7)([v.Z], () => N.hasFlag(y.iLy.HAS_THREAD) && v.Z.getChannel(I.default.castMessageIdAsChannelId(N.id))), W = (0, c.p9)({
+  }), F = (0, o.JA)(N.id), z = (0, p.ZP)(N), Y = (0, s.e7)([I.Z], () => N.hasFlag(y.iLy.HAS_THREAD) && I.Z.getChannel(v.default.castMessageIdAsChannelId(N.id))), W = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: z.iconRoleId
   }), K = (0, g.iG)(N), q = (0, g.Gx)(N);
@@ -94,7 +94,7 @@ let N = Chunk473749.memo(function(e) {
     }),
     disableInteraction: k,
     childrenExecutedCommand: (0, O.Z)(N, Z, false),
-    childrenHeader: (0, _.Z)({
+    childrenHeader: (0, E.Z)({
       message: N,
       channel: Z,
       author: z,
@@ -108,7 +108,7 @@ let N = Chunk473749.memo(function(e) {
     }),
     childrenAccessories: e.hideAccessories ? true : (0, m.Q)(e, B, V),
     childrenMessageContent: (0, b.Z)(e, H),
-    childrenSystemMessage: (0, E.Z)((i = T({}, e), l = l = {
+    childrenSystemMessage: (0, _.Z)((i = T({}, e), l = l = {
       disableInteraction: k
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);

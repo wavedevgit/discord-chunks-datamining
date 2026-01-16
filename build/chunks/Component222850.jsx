@@ -45,7 +45,7 @@ let y = Math.ceil(Math.sqrt(115200)),
         dismissContent: r
       }
     }(), P = i.useCallback(() => {
-      _.Z.getState().setUtmCurrentContext({
+      E.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
@@ -94,7 +94,7 @@ let y = Math.ceil(Math.sqrt(115200)),
       }), Z({
         glowSpring: 1,
         delay: 700
-      }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), m.default.track(_.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
       U(e.contentRect.width)
     }, []), H = (0, f.y)(G, [], {
@@ -102,7 +102,7 @@ let y = Math.ceil(Math.sqrt(115200)),
     });
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: I.wrapper,
+        className: v.wrapper,
         onMouseEnter: R,
         onMouseLeave: D,
         onFocus: R,
@@ -131,23 +131,23 @@ let y = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [I.withGradientAndBadge]: j
+            [v.withGradientAndBadge]: j
           }),
           icon: d.qDn,
           listItemRef: T,
           onClick: P,
-          route: E.Z5c.QUEST_HOME_V2,
+          route: _.Z5c.QUEST_HOME_V2,
           selected: l,
-          text: v.intl.string(v.t.JALI2K)
+          text: I.intl.string(I.t.JALI2K)
         }, S), n = n = {
           children: j && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.animated.div, {
-              className: I.shine,
+              className: v.shine,
               style: {
                 transform: w.to(e => "translateX(calc(".concat(e * k, "px + ").concat(e * y, "px)) translateY(-50%) rotate(45deg)"))
               }
             }), (0, r.jsx)(o.animated.div, {
-              className: I.glow,
+              className: v.glow,
               style: {
                 opacity: A.to({
                   range: [0, 1],
@@ -155,8 +155,8 @@ let y = Math.ceil(Math.sqrt(115200)),
                 })
               }
             }), (0, r.jsx)(d.IGR, {
-              className: I.badge,
-              text: v.intl.string(v.t.y2b7CA),
+              className: v.badge,
+              text: I.intl.string(I.t.y2b7CA),
               color: d.TVs.colors.BACKGROUND_BRAND.css
             })]
           })

@@ -37,10 +37,10 @@ let O = {
         onClose: t
       })
     }, {
-      layerKey: _.CV,
+      layerKey: E.CV,
       Layer: o.ZP
     }) : (0, a.q4)(() => (0, r.jsx)(d.Z, {}), {
-      layerKey: _.CV,
+      layerKey: E.CV,
       Layer: o.ZP
     }) : t === m.c2C.AGREEMENTS ? (0, i.h7j)(e => (0, r.jsx)(h.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -60,8 +60,8 @@ let O = {
       }
       return e
     }({}, e)), {
-      modalKey: _.f1,
-      onCloseRequest: E.Vq,
+      modalKey: E.f1,
+      onCloseRequest: _.Vq,
       dismissable: false
     }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, a.q4)(e => {
       let {
@@ -71,17 +71,17 @@ let O = {
         onClose: t
       })
     }, {
-      layerKey: _.CV,
+      layerKey: E.CV,
       Layer: o.ZP
-    }) : null == t && ((0, a.ob)(_.CV), (0, i.nfh)(_.f1) && (0, i.Mr3)(_.f1)))
+    }) : null == t && ((0, a.ob)(E.CV), (0, i.nfh)(E.f1) && (0, i.Mr3)(E.f1)))
   },
   handleAuthenticationStoreChanged() {
-    null == p.default.getId() && ((0, a.ob)(_.CV), (0, i.Mr3)(_.f1), (0, i.Mr3)(_.HR), (0, i.Mr3)(_.F0), (0, i.Mr3)(b.M))
+    null == p.default.getId() && ((0, a.ob)(E.CV), (0, i.Mr3)(E.f1), (0, i.Mr3)(E.HR), (0, i.Mr3)(E.F0), (0, i.Mr3)(b.M))
   },
   handleCurrentUserUpdate(e) {
     let {
       user: t
     } = e;
-    t.verified && (0, i.Mr3)(_.F0)
+    t.verified && (0, i.Mr3)(E.F0)
   }
 }

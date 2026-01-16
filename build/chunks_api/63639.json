@@ -1,1 +1,0 @@
-{"id":"63639","type":"experiment","data":{"kind":"user","id":"2025-02_test_user_auth_filter_install","label":"Test User Auth Filter Install","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Variation with treatment enabled","config":{"enabled":true}}]},"fromModule":{"id":"1272"}}

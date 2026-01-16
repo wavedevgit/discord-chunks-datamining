@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk184607 = require("./184607.js");
 
-function I(e) {
+function v(e) {
   var t;
   let {
     user: n,
@@ -45,7 +45,7 @@ function I(e) {
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [u && (0, r.jsx)("div", {
-      className: v.staffIndicator,
+      className: I.staffIndicator,
       children: (0, r.jsx)(o.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
         text: O.intl.string(O.t.oMx98L)
@@ -99,7 +99,7 @@ function C(e) {
     isProvisional: s
   } = e, p = i.useMemo(() => t ? O.intl.string(O.t["Uv/eTx"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
-    className: v.applicationSublabel,
+    className: I.applicationSublabel,
     children: [!s && (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
@@ -128,7 +128,7 @@ function S(e) {
     isGameRelationship: l,
     applicationId: a
   } = e, o = g.ZP.useUserTag(t);
-  return (0, r.jsx)(_.Z, {
+  return (0, r.jsx)(E.Z, {
     user: t,
     hovered: n,
     status: i,
@@ -152,7 +152,7 @@ function T(e) {
     isGameRelationship: c
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), d = l === E.Skl.OFFLINE ? E.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
+  } = (0, s.ZP)(), d = l === _.Skl.OFFLINE ? _.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
     sourceAnalyticsLocations: u
   }), [u, t.id]);
@@ -161,7 +161,7 @@ function T(e) {
     user: t,
     onClick: f,
     children: e => (0, r.jsxs)("div", {
-      className: v.listItemContents,
+      className: I.listItemContents,
       children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
@@ -169,8 +169,8 @@ function T(e) {
         isGameRelationship: c,
         applicationId: o
       }), (0, r.jsx)("div", {
-        className: v.actions,
-        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(I, {
+        className: I.actions,
+        children: n === _.OGo.PENDING_INCOMING ? (0, r.jsx)(v, {
           user: t,
           applicationId: o,
           isGameRelationship: c,

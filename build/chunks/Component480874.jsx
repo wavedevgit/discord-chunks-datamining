@@ -30,14 +30,14 @@ var Chunk54381 = require("./54381.js"),
 
 function N() {
   let e = i.useRef(null),
-    t = (0, E.Z)(),
+    t = (0, _.Z)(),
     n = (0, O.w)(),
     l = (0, m.V)(),
     N = (0, u.N)(),
     j = (0, p.Z)("message-requests-spam-list"),
     {
       channelId: x
-    } = (0, _._)(),
+    } = (0, E._)(),
     P = i.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(S.intl.string(S.t["EDYbS+"]), c.ToastType.FAILURE))
     }, []),
@@ -61,7 +61,7 @@ function N() {
       let {
         row: o
       } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? true : n.id, u = s.channel.id;
-      return (0, r.jsx)(I.Z, {
+      return (0, r.jsx)(v.Z, {
         index: o,
         className: a()({
           [T.selected]: null != x && x === u,
@@ -91,7 +91,7 @@ function N() {
         })]
       }) : null]
     }, "message-requests-spam-title"), [n, Z, N]);
-  return 0 === t.length ? (0, r.jsx)(v.Z, {
+  return 0 === t.length ? (0, r.jsx)(I.Z, {
     section: y.pS.SPAM
   }) : (0, r.jsx)(o.bG, {
     navigator: j,

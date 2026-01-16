@@ -30,13 +30,13 @@ function f(e) {
   i.useLayoutEffect(() => {
     b()
   });
-  let _ = i.useMemo(() => new ResizeObserver(() => {
+  let E = i.useMemo(() => new ResizeObserver(() => {
     b()
   }), [b]);
   return i.useLayoutEffect(() => {
     let e = m.current;
-    if (null != e) return _.observe(e), () => _.unobserve(e)
-  }, [_]), i.useLayoutEffect(() => {
+    if (null != e) return E.observe(e), () => E.unobserve(e)
+  }, [E]), i.useLayoutEffect(() => {
     let e = () => b(),
       t = () => b();
     return h.addEventListener("scroll", e, true), h.addEventListener("resize", t), () => {

@@ -22,7 +22,7 @@ let g = function(e) {
     footer: h,
     sectionFilter: m,
     renderSectionFooter: b
-  } = e, _ = e => {
+  } = e, E = e => {
     let {
       section: r,
       row: i
@@ -30,7 +30,7 @@ let g = function(e) {
     if (null == l || null == i) return null;
     let a = l[i];
     return null == a ? null : n(a, r)
-  }, E = i.useCallback((e, n) => {
+  }, _ = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
     return m === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY && 0 === e ? u.fJ : u.NV
@@ -39,7 +39,7 @@ let g = function(e) {
       section: t
     } = e;
     return g(t)
-  }, [g]), v = i.useCallback(e => null == b ? null : b(e.section), [b]), I = i.useCallback(e => null == b ? 0 : null != b(e) ? u.lC : 0, [b]), y = (0, o.e7)([c.Z], () => c.Z.keyboardModeEnabled), C = i.useRef(null), S = i.useCallback(() => new Promise(e => {
+  }, [g]), I = i.useCallback(e => null == b ? null : b(e.section), [b]), v = i.useCallback(e => null == b ? 0 : null != b(e) ? u.lC : 0, [b]), y = (0, o.e7)([c.Z], () => c.Z.keyboardModeEnabled), C = i.useRef(null), S = i.useCallback(() => new Promise(e => {
     let t = C.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -110,12 +110,12 @@ let g = function(e) {
               var n;
               C.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: _,
-            rowHeight: E,
+            renderRow: E,
+            rowHeight: _,
             renderSection: O,
             sectionHeight: u.aS,
-            renderFooter: v,
-            footerHeight: I,
+            renderFooter: I,
+            footerHeight: v,
             sections: x,
             className: f.peopleList
           }, n)), h]

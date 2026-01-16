@@ -20,11 +20,11 @@ let g = function(e) {
   } = e, n = (0, l.e7)([a.Z], () => a.Z.notificationItem(), []), {
     showDot: g
   } = (0, c.Z)(), h = i.useRef(null), [m, b] = i.useState(false), {
-    data: _,
-    loading: E,
+    data: E,
+    loading: _,
     isRefreshing: O,
-    handleOnRefresh: v,
-    viewabilityConfigCallbackPairs: I
+    handleOnRefresh: I,
+    viewabilityConfigCallbackPairs: v
   } = (0, u.a)({
     showDot: g,
     notificationItem: n
@@ -34,22 +34,22 @@ let g = function(e) {
   }, [y]);
   let C = (0, l.e7)([a.Z], () => a.Z.hasNewContent(), []),
     S = (0, l.e7)([a.Z], () => a.Z.isHydrating(), []),
-    T = i.useMemo(() => I[0].onViewableItemsChanged, [I]),
+    T = i.useMemo(() => v[0].onViewableItemsChanged, [v]),
     {
       registerItemRef: N
-    } = (0, p.m)(_, T, t),
-    j = i.useMemo(() => _.some(e => "end" === e.data.kind), [_]),
+    } = (0, p.m)(E, T, t),
+    j = i.useMemo(() => E.some(e => "end" === e.data.kind), [E]),
     x = i.useCallback(() => {
       if (j) return;
       let e = t.current;
       if (null == e) return;
       let n = e.scrollHeight;
-      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (b(true), (0, o.es)().finally(() => {
+      !(n - e.scrollTop - e.clientHeight < 300) || m || _ || S || (b(true), (0, o.es)().finally(() => {
         setTimeout(() => {
           b(false)
         }, 300)
       }))
-    }, [E, m, S, j, t]);
+    }, [_, m, S, j, t]);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("scroll", x), () => {
@@ -64,8 +64,8 @@ let g = function(e) {
       })
     }, [t]),
     A = i.useCallback(() => {
-      v(), P()
-    }, [v, P]),
+      I(), P()
+    }, [I, P]),
     Z = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
       style: {
         padding: "32px",
@@ -98,7 +98,7 @@ let g = function(e) {
         item: e
       })
     }, e.id), [N]);
-  return E && 0 === _.length ? (0, r.jsx)("div", {
+  return _ && 0 === E.length ? (0, r.jsx)("div", {
     style: {
       padding: "32px",
       textAlign: "center"
@@ -133,7 +133,7 @@ let g = function(e) {
     }), (0, r.jsxs)("div", {
       ref: h,
       className: f.scrollContainer,
-      children: [_.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
+      children: [E.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

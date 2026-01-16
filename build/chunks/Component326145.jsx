@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 326145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,14 +22,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk337917 = require("./337917.js"),
   Chunk321347 = require("./321347.js");
 
-function v(e) {
+function I(e) {
   let {
     guildId: t,
     channelId: n
   } = e, {
     ref: l,
-    width: v,
-    height: I
+    width: I,
+    height: v
   } = (0, c.ZP)(), y = i.useCallback(() => {
     null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
@@ -40,15 +40,15 @@ function v(e) {
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
   return (0, r.jsxs)("div", {
-    className: a()(E.outerWrapping, O.main, {
+    className: a()(_.outerWrapping, O.main, {
       [O.fullBorderWithGradient]: null == S
     }),
     ref: l,
     children: [null != S ? (0, r.jsx)(u.Z, {
       className: O.artwork,
       src: S,
-      width: v,
-      height: I,
+      width: I,
+      height: v,
       imageClassName: O.cover
     }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: O.gradient,
@@ -58,22 +58,22 @@ function v(e) {
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient
     }), (0, r.jsxs)("div", {
-      className: a()(E.explainerContainer, E.transparentBackground),
+      className: a()(_.explainerContainer, _.transparentBackground),
       children: [(0, r.jsxs)("div", {
-        className: E.header,
+        className: _.header,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: _.intl.string(_.t.CCmhpF)
+          children: E.intl.string(E.t.CCmhpF)
         }), (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: _.intl.string(_.t.gRAHcZ)
+          children: E.intl.string(E.t.gRAHcZ)
         })]
       }), (0, r.jsx)(s.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: _.intl.string(_.t.VVFjAC),
+        text: E.intl.string(E.t.VVFjAC),
         onClick: y
       })]
     })]

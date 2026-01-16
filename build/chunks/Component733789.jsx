@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 733789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   }
   return e
 }
-let E = {
+let _ = {
   [Chunk981631.AzA.NOW_PLAYING]: {
     single: (e, t) => h.intl.format(h.t.NEckza, {
       user1: e.username,
@@ -88,7 +88,7 @@ let E = {
 };
 class O extends Chunk473749.PureComponent {
   renderDescription(e, t) {
-    let n = E[e];
+    let n = _[e];
     return 1 === t.length ? n.single(t[0].user, e => this.renderActivityDiscordTag(e)) : 2 === t.length ? n.double(t[0].user, t[1].user, e => this.renderActivityDiscordTag(e)) : n.other(t.length)
   }
   renderActivityDiscordTag(e) {
@@ -99,7 +99,7 @@ class O extends Chunk473749.PureComponent {
       clickTrap: true,
       children: t => {
         var n, i;
-        return (0, r.jsx)("span", (n = _({
+        return (0, r.jsx)("span", (n = E({
           ref: this.activityDiscordTagRef,
           className: m.username
         }, t), i = i = {
@@ -168,7 +168,7 @@ class O extends Chunk473749.PureComponent {
           "aria-label": (0, f.W5)(e, {
             decoration: "never"
           }),
-          children: (0, r.jsx)(s.qEK, _({
+          children: (0, r.jsx)(s.qEK, E({
             ref: this.playerAvatarRef,
             className: a()(m.playerAvatar, {
               [m.avatarMasked]: !i
@@ -185,4 +185,4 @@ class O extends Chunk473749.PureComponent {
     }, n))
   }
 }
-let v = O
+let I = O

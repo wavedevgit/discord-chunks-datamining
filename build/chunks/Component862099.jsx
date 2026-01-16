@@ -107,7 +107,7 @@ function B(e) {
   let {
     guildEvent: t,
     channel: n
-  } = e, r = (0, s.Wu)([I.ZP], () => I.ZP.getVoiceStatesForChannel(n).map(e => {
+  } = e, r = (0, s.Wu)([v.ZP], () => v.ZP.getVoiceStatesForChannel(n).map(e => {
     let {
       user: t
     } = e;
@@ -165,7 +165,7 @@ function F(e) {
     startDateTimeString: h,
     upcomingEvent: m,
     diffMinutes: b
-  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
+  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), E = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
     minutes: b
   }) : U.intl.string(U.t.WINqKV) : U.intl.formatToPlainString(U.t.DC6h3G, {
     date: h
@@ -216,7 +216,7 @@ function F(e) {
         color: "text-default",
         variant: "text-xs/normal",
         className: G.startTime,
-        children: _
+        children: E
       })]
     }), (0, i.jsxs)("div", {
       className: o()(G.textBlock, G.singleLine),
@@ -351,7 +351,7 @@ function Q(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(k.Plq.CONNECT, t)), f = (0, O.Z)(t.id), g = U.intl.string(U.t.VJlc0S);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([I.Z], () => I.Z.can(k.Plq.CONNECT, t)), f = (0, O.Z)(t.id), g = U.intl.string(U.t.VJlc0S);
   switch (r) {
     case 1:
       g = U.intl.string(U.t.VJlc0S);
@@ -377,7 +377,7 @@ function Q(e) {
         color: "none",
         variant: "text-xs/normal",
         className: G.userNames,
-        children: (0, _.ER)(a, d, null == t ? true : t.id, n.length)
+        children: (0, E.ER)(a, d, null == t ? true : t.id, n.length)
       })]
     }) : null, p && null == f && (0, i.jsx)(W, {
       channel: t,
@@ -390,7 +390,7 @@ let J = Chunk473749.memo(function(e) {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, p.o)(true), r = (0, A.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([E.Z], () => E.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
+  } = (0, p.o)(true), r = (0, A.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([_.Z], () => _.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
   } = (0, s.cj)([j.Z], () => ({

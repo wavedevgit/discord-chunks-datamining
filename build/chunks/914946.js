@@ -113,7 +113,7 @@ function B(e, t) {
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = I.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
+    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
       l = Object.values(y.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
@@ -167,13 +167,13 @@ function F(e, t, n) {
     selfDeaf: a,
     suppress: o,
     userId: s
-  } = n, c = I.default.getUser(s);
+  } = n, c = v.default.getUser(s);
   if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: S.ZP.getName(e, t, c),
-    mute: E.Z.isLocalMute(c.id),
-    volume: E.Z.getLocalVolume(c.id),
-    pan: E.Z.getLocalPan(c.id),
+    mute: _.Z.isLocalMute(c.id),
+    volume: _.Z.getLocalVolume(c.id),
+    pan: _.Z.getLocalPan(c.id),
     voice_state: {
       mute: r,
       deaf: i,
@@ -190,7 +190,7 @@ function z(e, t) {
     type: e,
     user: (0, x.Z)(t),
     presence: {
-      status: v.Z.getStatus(t.id, null),
+      status: I.Z.getStatus(t.id, null),
       activity: null
     }
   }
@@ -200,7 +200,7 @@ function Y(e, t) {
   var n;
   return null == t ? e : w(Z({}, e), {
     presence: w(Z({}, e.presence), {
-      activity: null != (n = v.Z.getApplicationActivity(e.user.id, t)) ? n : null
+      activity: null != (n = I.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
 }
@@ -219,7 +219,7 @@ function W(e) {
 }
 
 function K(e, t, n) {
-  let r = _.Z.getGuild(e.getGuildId());
+  let r = E.Z.getGuild(e.getGuildId());
   return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > false
 }
 
@@ -294,7 +294,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  let t = E.Z.getSettings(),
+  let t = _.Z.getSettings(),
     n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
       id: e.id,
       name: e.name
@@ -302,12 +302,12 @@ function et(e) {
     r = e(t);
   return {
     input: {
-      available_devices: n(E.Z.getInputDevices()),
+      available_devices: n(_.Z.getInputDevices()),
       device_id: t.inputDeviceId,
       volume: t.inputVolume
     },
     output: {
-      available_devices: n(E.Z.getOutputDevices()),
+      available_devices: n(_.Z.getOutputDevices()),
       device_id: t.outputDeviceId,
       volume: t.outputVolume
     },
@@ -329,7 +329,7 @@ function et(e) {
 }
 
 function en(e, t) {
-  let n = E.Z.getSettings(e),
+  let n = _.Z.getSettings(e),
     r = t(n);
   return {
     input_mode: {

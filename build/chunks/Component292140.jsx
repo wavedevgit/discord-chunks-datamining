@@ -22,7 +22,7 @@ function h(e) {
     party: t,
     close: n,
     onSelect: h
-  } = e, m = (0, c.Z)(t), b = (0, p.Z)(t), _ = (0, d.Z)(t), E = (0, u.Z)(t), O = (0, o.Z)(t), v = (0, s.Z)(t);
+  } = e, m = (0, c.Z)(t), b = (0, p.Z)(t), E = (0, d.Z)(t), _ = (0, u.Z)(t), O = (0, o.Z)(t), I = (0, s.Z)(t);
   return (0, l.ZP)(() => {
     let e = t.currentActivities.filter(e => {
       var t, n;
@@ -38,11 +38,11 @@ function h(e) {
     "aria-label": g.intl.string(g.t.ogxXGq),
     onSelect: h,
     children: [m, (0, r.jsxs)(i.kSQ, {
-      children: [b, _]
+      children: [b, E]
     }), (0, r.jsx)(i.kSQ, {
-      children: E
+      children: _
     }), (0, r.jsx)(i.kSQ, {
       children: O
-    }), v]
+    }), I]
   })
 }

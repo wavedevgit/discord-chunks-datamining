@@ -61,7 +61,7 @@ let T = e => {
     ref: n,
     width: s,
     height: c
-  } = (0, o.ZP)(), [p, f] = i.useState(I.hO.INITIAL), T = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [p, f] = i.useState(v.hO.INITIAL), T = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: j,
     guildPreviewDisabled: x
   } = (0, l.cj)([b.Z], () => ({
@@ -69,12 +69,12 @@ let T = e => {
     guildPreviewDisabled: b.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != N && (0, u.uL)(v.Z5c.CHANNEL(t))
+    null != N && (0, u.uL)(I.Z5c.CHANNEL(t))
   }, [N, t]), i.useEffect(() => {
     j || g.Z.fetchRequestToJoinGuilds()
   }, [j]);
   let P = i.useCallback(() => {
-      f(Math.max(p, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, u.uL)(v.Z5c.ME)
+      f(Math.max(p, v.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, u.uL)(I.Z5c.ME)
     }, [t, p]),
     A = (e, t) => () => {
       (0, a.Z)({
@@ -113,7 +113,7 @@ let T = e => {
               guild: x
             });
           case m.wB.REJECTED:
-            return (0, r.jsx)(E.Z, {
+            return (0, r.jsx)(_.Z, {
               reapplyText: y.intl.string(y.t.I1LYVk),
               onReapply: Z,
               confirmText: y.intl.string(y.t.g9tK0o),
@@ -122,7 +122,7 @@ let T = e => {
               guild: x
             });
           default:
-            return (0, r.jsx)(_.s, {
+            return (0, r.jsx)(E.s, {
               onDiscardApplication: L,
               onContinueApplication: () => (0, h.hk)(t),
               guild: x

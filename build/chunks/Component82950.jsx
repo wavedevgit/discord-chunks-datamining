@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 82950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function m(e) {
   return e
 }
 let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
-  _ = e => {
+  E = e => {
     let {
       guild: t,
       title: n,
@@ -45,11 +45,11 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       type: d,
       imageMarginX: p,
       imageMarginTop: m,
-      trackingSource: _,
-      undismissable: E,
+      trackingSource: E,
+      undismissable: _,
       onDismissed: O,
-      onClick: v,
-      cta: I,
+      onClick: I,
+      cta: v,
       ctaColor: y
     } = e;
     i.useEffect(() => {
@@ -59,25 +59,25 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, d]);
     let C = null;
-    "function" == typeof I ? C = I() : null != I && (C = (0, r.jsx)(o.zx, {
+    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(o.zx, {
       "data-migration-pending": true,
       className: h.btn,
       size: o.zx.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
-          source: _,
+          source: E,
           guild_id: t.id,
           notice_type: d
-        }), null == v || v()
+        }), null == I || I()
       },
       fullWidth: true,
       color: y,
-      children: I
+      children: v
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: h.channelNotice,
-      children: [true === E ? null : (0, r.jsx)(s.P3F, {
+      children: [true === _ ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
@@ -115,9 +115,9 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })]
     })
   },
-  E = function(e) {
+  _ = function(e) {
     let {
       showRedesignedChannelNotice: t
     } = (0, d.o)(true);
-    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(_, m({}, e))
+    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(E, m({}, e))
   }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 81471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,54 +22,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk326730 = require("./326730.js"),
   Chunk960324 = require("./960324.js");
-let I = Chunk473749.memo(function(e) {
+let v = Chunk473749.memo(function(e) {
   let {
     channel: t
   } = e, {
     loaded: n,
     error: l,
-    message: I
+    message: v
   } = (0, m.a)(t), {
     isBlocked: y,
     isIgnored: C
   } = (0, o.cj)([h.Z], () => ({
-    isBlocked: null != I && h.Z.isBlockedForMessage(I),
-    isIgnored: null != I && h.Z.isIgnoredForMessage(I)
-  }), [I]), S = (0, o.e7)([g.Z], () => g.Z.can(b.Plq.MANAGE_MESSAGES, t)), T = f.cC.useSetting(), {
+    isBlocked: null != v && h.Z.isBlockedForMessage(v),
+    isIgnored: null != v && h.Z.isIgnoredForMessage(v)
+  }), [v]), S = (0, o.e7)([g.Z], () => g.Z.can(b.Plq.MANAGE_MESSAGES, t)), T = f.cC.useSetting(), {
     content: N
-  } = i.useMemo(() => (null == I ? true : I.content) != null && "" !== I.content ? (0, u.ZP)(I, {
+  } = i.useMemo(() => (null == v ? true : v.content) != null && "" !== v.content ? (0, u.ZP)(v, {
     formatInline: true,
     noStyleAndInteraction: true
   }) : {
     content: null
-  }, [I]), j = null;
+  }, [v]), j = null;
   if (l) j = (0, r.jsx)(s.Text, {
     className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: E.intl.string(E.t.BZHld2)
+    children: _.intl.string(_.t.BZHld2)
   });
   else if (n)
-    if (null != I && y) j = (0, r.jsx)(s.Text, {
+    if (null != v && y) j = (0, r.jsx)(s.Text, {
       className: O.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: E.intl.string(E.t["WPe+xL"])
+      children: _.intl.string(_.t["WPe+xL"])
     });
-    else if (null != I && C) j = (0, r.jsx)(s.Text, {
+    else if (null != v && C) j = (0, r.jsx)(s.Text, {
     className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: E.intl.string(E.t.uxrh1O)
+    children: _.intl.string(_.t.uxrh1O)
   });
-  else if (null != I) {
+  else if (null != v) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, d.f)(I, N, y, C, a()(O.messageContent, v.inlineFormat), {
+    } = (0, d.f)(v, N, y, C, a()(O.messageContent, I.inlineFormat), {
       leadingIconClass: O.messageContentIcon,
       trailingIconClass: O.messageContentIcon,
-      iconSize: _.WW
+      iconSize: E.WW
     });
     j = null != t ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
@@ -87,7 +87,7 @@ let I = Chunk473749.memo(function(e) {
     className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: E.intl.string(E.t["0KfDxM"])
+    children: _.intl.string(_.t["0KfDxM"])
   });
   else j = null;
   return (0, r.jsx)(p.aQ.Provider, {
