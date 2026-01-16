@@ -21,30 +21,27 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
     let {
       cards: t,
       perksCards: n,
-      showProfileWidgets: r,
-      recurring3PPromotionExperiment: i,
-      showPremiumGroup: a
-    } = e, o = null != n.tenureBadge ? [n.tenureBadge] : [], s = f - o.length, l = e => {
+      recurring3PPromotionExperiment: r,
+      showPremiumGroup: i
+    } = e, a = null != n.tenureBadge ? [n.tenureBadge] : [], o = f - a.length, s = e => {
       let {
         card: n
       } = e;
-      t.length < s && t.push(n)
+      t.length < o && t.push(n)
     };
-    return a && l({
+    return i && s({
       card: n.premiumGroup
-    }), i && l({
+    }), r && s({
       card: n.recurring3PPromotions
-    }), r && l({
-      card: n.profileWidgets
-    }), l({
+    }), s({
       card: n.displayNameStyles
-    }), l({
+    }), s({
       card: n.customThemes
-    }), l({
+    }), s({
       card: n.permadecos
-    }), l({
+    }), s({
       card: n.newAppStylesUpdateJune2024
-    }), t.push(...o), t
+    }), t.push(...a), t
   },
   _ = e => {
     let {
@@ -54,34 +51,32 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       isPremiumSubscriber: i,
       fractionalState: a,
       isInReverseTrial: o,
-      showProfileWidgets: s,
-      recurring3PPromotionExperiment: u,
-      showPremiumGroup: d,
-      isPremiumGroupMember: f
-    } = e, _ = [];
+      recurring3PPromotionExperiment: s,
+      showPremiumGroup: u,
+      isPremiumGroupMember: d
+    } = e, f = [];
     switch (n) {
       case l.gM.PERKS_DISCOVERABILITY:
-        _ = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY || f ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+        f = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY || d ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case l.gM.WHATS_NEW:
-        _ = p({
-          cards: _,
+        f = p({
+          cards: f,
           perksCards: t,
-          showProfileWidgets: s,
-          recurring3PPromotionExperiment: u,
-          showPremiumGroup: d
+          recurring3PPromotionExperiment: s,
+          showPremiumGroup: u
         });
         break;
       case l.gM.CARD_CAROUSEL_FIRST_ROW:
-        _ = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
+        f = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
         break;
       case l.gM.CARD_CAROUSEL_SECOND_ROW:
-        _ = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.a$.FP_ONLY ? o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+        f = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.a$.FP_ONLY ? o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
         break;
       case l.gM.CARD_CAROUSEL_THIRD_ROW:
-        _ = a === c.a$.FP_ONLY ? o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+        f = a === c.a$.FP_ONLY ? o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
     }
-    return r && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
+    return r && (f = f.filter(e => !e.hideOnNarrowScreen)), f
   },
   h = e => {
     let t = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()),

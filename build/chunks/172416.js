@@ -2,88 +2,49 @@
 /** chunk id: 172416, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Un: () => d,
-  bg: () => u,
-  hL: () => p
+  U: () => o,
+  h: () => s
 });
-var Chunk442837 = require("./442837.js"),
-  Chunk427164 = require("./427164.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk74538 = require("./74538.js"),
+var Chunk427164 = require("./427164.js"),
   Chunk438379 = require("./438379.js");
-let l = (0, Chunk427164.le)({
-    name: "2025-07-user-profile-game-widgets",
-    kind: "user",
-    defaultConfig: {
+let a = (0, Chunk427164.le)({
+  name: "2025-07-user-profile-game-widgets",
+  kind: "user",
+  defaultConfig: {
+    enabled: false
+  },
+  variations: {
+    0: {
       enabled: false
     },
-    variations: {
-      0: {
-        enabled: false
-      },
-      1: {
-        enabled: true
-      }
+    1: {
+      enabled: true
     }
-  }),
-  c = (0, Chunk427164.le)({
-    name: "2025-10-user-profile-game-widgets-early-access",
-    kind: "user",
-    defaultConfig: {
-      enabled: false
-    },
-    variations: {
-      0: {
-        enabled: false
-      },
-      1: {
-        enabled: true
-      }
-    }
-  });
+  }
+});
 
-function u(e) {
-  let {
-    location: t
-  } = e, n = c.useConfig({
-    location: t
-  }).enabled, i = (0, r.e7)([a.default], () => a.default.getCurrentUser()), s = (0, o.I5)(i);
-  return n && s
-}
-
-function d(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = true
-  } = e, r = (0, s.J)({
+  } = e, r = (0, i.J)({
     location: t,
     autoTrackExposure: n
-  }), i = u({
-    location: t,
-    autoTrackExposure: n
-  }), a = l.useConfig({
+  }), o = a.useConfig({
     location: t
   }).enabled;
-  return !r && a || i
+  return !r && o
 }
 
-function f(e) {
-  let t = a.default.getCurrentUser(),
-    n = (0, o.I5)(t);
-  return c.getConfig({
-    location: e
-  }).enabled && n
-}
-
-function p(e) {
+function s(e) {
   let {
     isInHoldout: t
-  } = s.m.getCurrentConfig({
+  } = i.m.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
-  }), n = f(e), r = l.getConfig({
+  }), n = a.getConfig({
     location: e
   }).enabled;
-  return !t && r || n
+  return !t && n
 }

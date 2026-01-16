@@ -110,7 +110,7 @@ let eG = () => [a.z.CLIENT_THEMES_SETTINGS_BADGE, a.z.DEKSTOP_CUSTOM_APP_ICON_BA
   },
   eF = () => {
     let e = [];
-    return (0, k.hL)("SettingsRendererConfig") && e.push(a.z.WIDGETS_USER_SETTINGS_NEW_BADGE), e.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE), e
+    return (0, k.h)("SettingsRendererConfig") && e.push(a.z.WIDGETS_USER_SETTINGS_NEW_BADGE), e.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE), e
   },
   eB = () => {
     let e = eF(),
