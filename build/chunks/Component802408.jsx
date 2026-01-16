@@ -2,67 +2,66 @@
 /** chunk id: 802408, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
-}), require("./388685.js"), require("./953529.js");
+  Z: () => c
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk442837 = require("./442837.js"),
   Chunk907862 = require("./907862.js"),
-  Chunk780384 = require("./780384.js"),
-  Chunk410030 = require("./410030.js"),
-  Chunk607070 = require("./607070.js"),
-  Chunk921944 = require("./921944.js");
+  Chunk688766 = require("./688766.js"),
+  Chunk921944 = require("./921944.js"),
+  Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function c(e) {
+  var t, n;
   let {
-    onComplete: t,
-    onCheckItOutClick: n,
+    onComplete: c,
+    onCheckItOutClick: u,
     markAsDismissed: d,
-    config: f,
+    coachmarkConfig: f,
     children: p
-  } = e, _ = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), h = (0, l.ZP)(), m = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(0);
+  } = e, _ = (0, o.Y)(null == f ? true : f.asset), h = i.useRef(null), m = i.useRef(null), [g, E] = i.useState(0);
   i.useEffect(() => {
     let e = () => {
-        let e = m.current,
-          t = g.current;
+        let e = h.current,
+          t = m.current;
         if (null == e || null == t) return;
         let n = e.getBoundingClientRect(),
           r = t.getBoundingClientRect();
-        b(n.left + n.width / 2 - (r.left + r.width / 2))
+        E(n.left + n.width / 2 - (r.left + r.width / 2))
       },
       t = new ResizeObserver(e),
-      n = m.current,
-      r = g.current;
+      n = h.current,
+      r = m.current;
     return null != n && t.observe(n), null != r && (t.observe(r), e()), () => t.disconnect()
   }, []);
-  let y = {
-      text: f.cta(),
+  let b = {
+      text: l.intl.string(l.t.RzWDqY),
       onClick: () => {
-        n(), t(), d(u.L.TAKE_ACTION)
+        u(), c(), d(s.L.TAKE_ACTION)
       }
     },
-    O = () => {
-      t(), d(u.L.USER_DISMISS)
+    y = () => {
+      c(), d(s.L.USER_DISMISS)
     };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      ref: m,
+      ref: h,
       children: p
-    }), (0, r.jsx)(o.Mb, {
-      targetElementRef: m,
+    }), (0, r.jsx)(a.Mb, {
+      targetElementRef: h,
       shouldShow: true,
       position: "top",
       align: "center",
-      title: f.title(),
-      body: f.description(),
-      assetUrl: f.getImageUrl((0, s.wj)(h), _),
-      action: y,
+      title: null != (t = null == f ? true : f.header) ? t : "",
+      body: null != (n = null == f ? true : f.body) ? n : "",
+      assetUrl: null != _ ? _ : "",
+      action: b,
       caretConfig: {
         align: "custom",
-        customOffset: E
+        customOffset: g
       },
-      onRequestClose: O,
-      popoverRef: g
+      onRequestClose: y,
+      popoverRef: m
     })]
   })
 }
