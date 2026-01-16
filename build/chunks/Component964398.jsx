@@ -100,21 +100,21 @@ let b = Chunk473749.memo(function(e) {
     itemHeight: m,
     showDeadZoneIndicator: h,
     activeItem: E,
-    onItemSelect: v,
-    onItemAction: _,
+    onItemSelect: _,
+    onItemAction: v,
     interactive: y = true,
     onClose: O,
-    children: C
-  } = e, S = l.useRef(null), I = l.useRef([]), N = l.useRef(false), T = l.useRef(null), [x, P] = l.useState(0), [Z, j] = l.useState({
+    children: S
+  } = e, C = l.useRef(null), I = l.useRef([]), N = l.useRef(false), T = l.useRef(null), [x, P] = l.useState(0), [Z, j] = l.useState({
     x: 0,
     y: 0
-  }), w = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => a().chunk(C, p), [C]), R = l.useCallback((e, t) => {
+  }), w = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => a().chunk(S, p), [S]), R = l.useCallback((e, t) => {
     null == I.current[x] ? I.current[x] = [] : I.current[x][t] = e
   }, [x]), D = l.useCallback((e, t) => {
-    T.current = t, v(p * e + t)
-  }, [v]), M = l.useCallback(() => {
-    T.current = null, v(null)
-  }, [v]), k = l.useCallback(e => {
+    T.current = t, _(p * e + t)
+  }, [_]), M = l.useCallback(() => {
+    T.current = null, _(null)
+  }, [_]), k = l.useCallback(e => {
     M(), N.current = e
   }, [M]), L = l.useCallback((e, t, n) => {
     if (N.current) return void j({
@@ -141,10 +141,10 @@ let b = Chunk473749.memo(function(e) {
       y: (i ? Math.max(r.y, -a.y) : Math.min(r.y, a.y)) / 2
     })
   }, []), U = l.useCallback(e => {
-    null != T.current && (e.preventDefault(), e.stopPropagation(), null == _ || _(p * x + T.current))
-  }, [_, x]), F = l.useMemo(() => (0, i.throttle)(e => {
-    if (null == S.current) return;
-    let r = S.current.getBoundingClientRect(),
+    null != T.current && (e.preventDefault(), e.stopPropagation(), null == v || v(p * x + T.current))
+  }, [v, x]), F = l.useMemo(() => (0, i.throttle)(e => {
+    if (null == C.current) return;
+    let r = C.current.getBoundingClientRect(),
       l = {
         x: r.left + r.width / 2,
         y: r.top + r.height / 2
@@ -171,7 +171,7 @@ let b = Chunk473749.memo(function(e) {
     t >= 0 && t < A.length && (null != T.current && (A[t].length > T.current ? D(t, T.current) : M()), P(t))
   }, [y, x, A, D, M]), W = l.useMemo(() => A[x].map((e, l) => {
     let i = f[l];
-    if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(f.length));
+    if (null == i) throw Error("Too many items supplied ".concat(S.length, " expected max of ").concat(f.length));
     let a = g(i.x, t, b),
       o = g(i.y, n, m);
     return (0, r.jsx)("div", {
@@ -185,14 +185,14 @@ let b = Chunk473749.memo(function(e) {
       },
       children: e
     }, l)
-  }), [A, x, t, b, n, m, C.length, R]);
+  }), [A, x, t, b, n, m, S.length, R]);
   return (0, r.jsx)(o.P3F, {
     className: u.chatWheelMouseInput,
     onMouseMove: F,
     onWheel: V,
     onClick: U,
     children: (0, r.jsxs)("div", {
-      ref: S,
+      ref: C,
       className: u.chatWheel,
       style: {
         width: t,

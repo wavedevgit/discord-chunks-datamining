@@ -55,7 +55,7 @@ function x(e) {
     case f.Ru.UNREAD:
       return (0, r.jsx)(s.mAB, {
         count: t.count,
-        color: s.TVs.colors.BACKGROUND_ACCENT.css
+        color: s.TVs.colors.BACKGROUND_MOD_STRONG.css
       });
     default:
       return null

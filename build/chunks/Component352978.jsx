@@ -26,29 +26,29 @@ let g = Chunk473749.memo(function(e) {
     paused: m = false,
     streamPreviewURL: h,
     videoSpinnerContext: E,
-    userId: v,
-    streamKey: _
+    userId: _,
+    streamKey: v
   } = e, [y, O] = i.useState(true);
   (0, u.Z)({
     location: "VideoStream",
     videoSpinnerContext: E,
-    userId: v,
+    userId: _,
     streamId: t,
     loading: y,
     paused: m
   });
   let {
-    onReady: C
+    onReady: S
   } = (0, s.Z)({
     streamId: t,
-    userId: v,
+    userId: _,
     loading: y,
     videoSpinnerContext: E,
-    streamKey: _,
+    streamKey: v,
     paused: m
-  }), S = i.useCallback(() => {
-    O(false), C()
-  }, [C]);
+  }), C = i.useCallback(() => {
+    O(false), S()
+  }, [S]);
   return (0, l.jsxs)("div", {
     className: o()(f.wrapper, r),
     children: [null != t && (0, l.jsx)(a, {
@@ -57,7 +57,7 @@ let g = Chunk473749.memo(function(e) {
       }, p),
       streamId: t,
       onResize: n,
-      onReady: S,
+      onReady: C,
       paused: m
     }), m ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {

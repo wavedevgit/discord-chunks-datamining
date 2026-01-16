@@ -42,7 +42,7 @@ let m = e => {
       size: "xxs",
       color: "currentColor"
     }),
-    color: l.Z.colors.BACKGROUND_ACCENT.css,
+    color: l.Z.colors.BACKGROUND_MOD_STRONG.css,
     className: u.iconBadge
   })
 }

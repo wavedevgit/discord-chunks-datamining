@@ -15,7 +15,7 @@ function c(e) {
     [s] = (0, l.useState)(() => new i.TimelineDataSeries),
     u = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW).hsl(),
     d = (0, o.dQu)(a.Z.colors.TEXT_DEFAULT).hsl(),
-    f = (0, o.dQu)(a.Z.colors.BACKGROUND_ACCENT).hsl(),
+    f = (0, o.dQu)(a.Z.colors.BACKGROUND_MOD_MUTED).hsl(),
     p = (0, o.dQu)(a.Z.unsafe_rawColors.BRAND_500).hsl();
   (0, l.useEffect)(() => {
     var e;

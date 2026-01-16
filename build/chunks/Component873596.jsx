@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk544525 = require("./544525.js");
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function v(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function y(e) {
     pings: u.Z.getPings(),
     outboundLossRate: u.Z.getOutboundLossRate(t)
   }));
-  return (0, r.jsx)(g.Z, _(v({}, a), {
+  return (0, r.jsx)(g.Z, v(_({}, a), {
     closePopout: l,
     connectionTypeText: n
   }))
@@ -83,13 +83,13 @@ function O(e) {
     outboundLossRate: c.Z.getOutboundLossRate(),
     pings: c.Z.getPings()
   }));
-  return (0, r.jsx)(g.Z, _(v({}, l), {
+  return (0, r.jsx)(g.Z, v(_({}, l), {
     closePopout: t,
     connectionTypeText: n
   }))
 }
 
-function C(e) {
+function S(e) {
   let {
     channelId: t,
     isOverlay: n,
@@ -108,14 +108,14 @@ function C(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   let t = (0, i.e7)([s.Z], () => s.Z.hasVideo(e.channelId)),
     [n, c] = l.useState(m.tu.RTC_DEBUG_PANEL),
     u = (0, o.Dt)(),
     p = l.useMemo(() => {
       switch (n) {
         case m.tu.RTC_DEBUG_PANEL:
-          return (0, r.jsx)(C, v({}, e));
+          return (0, r.jsx)(S, _({}, e));
         case m.tu.RTC_SECURE_FRAMES:
           return (0, r.jsx)(b.Z, {
             channelId: e.channelId
@@ -164,11 +164,11 @@ function S(e) {
 function I(e) {
   return (0, p.J)({
     channelId: e.channelId
-  }) ? (0, r.jsx)(S, v({}, e)) : (0, r.jsx)("div", {
+  }) ? (0, r.jsx)(C, _({}, e)) : (0, r.jsx)("div", {
     className: E.debugPanelStandalone,
     children: (0, r.jsx)("section", {
       className: E.debugPanelSection,
-      children: (0, r.jsx)(C, v({}, e))
+      children: (0, r.jsx)(S, _({}, e))
     })
   })
 }

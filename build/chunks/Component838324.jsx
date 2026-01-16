@@ -30,7 +30,7 @@ function m(e) {
     size: "sm",
     className: f.icon,
     color: l.Z.colors.WHITE.css,
-    secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
+    secondaryColor: l.Z.colors.BACKGROUND_MOD_MUTED.css
   }), I = [Math.min(u.X, O) / u.X * 100], S = y ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css];
   return (0, r.jsxs)("div", {
     className: f.container,
@@ -68,7 +68,7 @@ function m(e) {
         children: [(0, r.jsx)(a.d3s, {
           size: "sm",
           color: l.Z.colors.WHITE.css,
-          secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css,
+          secondaryColor: l.Z.colors.BACKGROUND_MOD_MUTED.css,
           className: f.icon
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
@@ -80,7 +80,7 @@ function m(e) {
         children: [(0, r.jsx)(a.d3s, {
           size: "sm",
           color: l.Z.colors.WHITE.css,
-          secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css,
+          secondaryColor: l.Z.colors.BACKGROUND_MOD_MUTED.css,
           className: f.icon
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",

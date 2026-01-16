@@ -102,7 +102,7 @@ function I(e) {
   }, [I, v, P]), {
     product: w,
     purchase: Z
-  } = (0, d.Z)(null == _ ? true : _.skuId), A = i.useRef(null), k = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
+  } = (0, d.Z)(null == _ ? true : _.skuId), k = i.useRef(null), A = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
     S(e)
   }, [S]), D = i.useCallback(e => {
     b(), (0, a.mK)({
@@ -131,7 +131,7 @@ function I(e) {
         user: t,
         guild: n,
         pendingProfileEffect: I,
-        selectedProfileEffectRef: A,
+        selectedProfileEffectRef: k,
         onSelect: T,
         onOpenShop: D
       }), (0, r.jsx)(j.Z, {
@@ -150,7 +150,7 @@ function I(e) {
       onOpenShop: D,
       product: w,
       purchase: Z,
-      canUsePremiumCollectibles: k,
+      canUsePremiumCollectibles: A,
       selectedProfileEffect: I,
       disableApplyButton: N
     })]

@@ -38,7 +38,7 @@ function h(e) {
         color: "currentColor"
       }), (0, r.jsx)(a.mAB, {
         count: n,
-        color: i.Z.colors.BACKGROUND_ACCENT.css
+        color: i.Z.colors.BACKGROUND_MOD_STRONG.css
       })]
     })
   })

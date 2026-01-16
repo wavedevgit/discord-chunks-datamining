@@ -47,7 +47,7 @@ function k(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (t.hasFlag(R.xW$.SPAMMER) || n.isManaged()) returnfalse;
   let l = n.getGuildId();
-  return !(null != l && u.Z.isLurking(l) || !r.ignoreSameUser && t.id === e.id || S.Z.isBlockedOrIgnored(t.id) || !r.ignoreStatus && T.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || !r.ignoreNoMessagesSetting && x.ZP.allowNoMessages(n))
+  return !(null != l && u.Z.isLurking(l) || !r.ignoreSameUser && t.id === e.id || C.Z.isBlockedOrIgnored(t.id) || !r.ignoreStatus && T.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || !r.ignoreNoMessagesSetting && x.ZP.allowNoMessages(n))
 }
 
 function L(e, t) {
@@ -65,14 +65,14 @@ function L(e, t) {
     }) || d.Z.isMessageRequest(t)) returnfalse;
   if (!a) {
     let e = I.Z.getChannelId(N.Z.getGuildId());
-    if (e === c.id || _.ZP.getCurrentSidebarChannelId(e) === c.id) returnfalse
+    if (e === c.id || v.ZP.getCurrentSidebarChannelId(e) === c.id) returnfalse
   }
-  if (S.Z.isBlockedOrIgnoredForMessage(e) || true !== e.activity_instance && null != e.interaction && e.interaction.user.id === s.id) returnfalse;
+  if (C.Z.isBlockedOrIgnoredForMessage(e) || true !== e.activity_instance && null != e.interaction && e.interaction.user.id === s.id) returnfalse;
   if (null != e.application_id) {
     let n = i.ZP.getCurrentEmbeddedActivity();
     if ((null == n ? true : n.applicationId) === e.application_id && n.location.channel_id === t) returnfalse
   }
-  if (v.Ec.has(c.type)) {
+  if (_.Ec.has(c.type)) {
     if (m.Z.isMuted(c.id)) returnfalse;
     let t = (0, h.J)(c);
     return t !== D.iN.NO_MESSAGES && (t === D.iN.ALL_MESSAGES || (0, g.Hl)({
@@ -82,7 +82,7 @@ function L(e, t) {
       suppressRoles: false
     }))
   } {
-    let t = !v.tx.has(c.type) || C.Z.getChannelId() === c.id;
+    let t = !_.tx.has(c.type) || S.Z.getChannelId() === c.id;
     if (x.ZP.allowAllMessages(c) && t) returntrue;
     let n = x.ZP.isSuppressEveryoneEnabled(c.getGuildId()),
       r = x.ZP.isSuppressRolesEnabled(c.getGuildId());
@@ -102,7 +102,7 @@ function U(e, t) {
   e.type === R.uaV.THREAD_STARTER_MESSAGE && (r = y.Z.getChannel(null == r ? true : r.parent_id));
   let l = P.default.getCurrentUser(),
     i = P.default.getUser(null == (n = e.author) ? true : n.id);
-  return !(null == r || null == l || null == i || r.isManaged() || i.hasFlag(R.xW$.SPAMMER) || S.Z.isBlockedOrIgnoredForMessage(e) || i.id === l.id || T.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || x.ZP.allowNoMessages(r))
+  return !(null == r || null == l || null == i || r.isManaged() || i.hasFlag(R.xW$.SPAMMER) || C.Z.isBlockedOrIgnoredForMessage(e) || i.id === l.id || T.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || x.ZP.allowNoMessages(r))
 }
 
 function F(e, t) {
@@ -115,7 +115,7 @@ function F(e, t) {
     ignoreNoMessagesSetting: true
   }) || x.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id)) && (!!n || I.Z.getChannelId(N.Z.getGuildId()) !== t.id) && x.ZP.getNewForumThreadsCreated(t)
 }
-let V = (e, t, n) => "".concat((0, a.KM)(e, true), " (").concat((0, a.KM)((0, o.F6)(t, P.default, S.Z, true), true)).concat(null != n ? ", ".concat((0, a.KM)((0, o.F6)(n, P.default, S.Z), true)) : "", ")");
+let V = (e, t, n) => "".concat((0, a.KM)(e, true), " (").concat((0, a.KM)((0, o.F6)(t, P.default, C.Z, true), true)).concat(null != n ? ", ".concat((0, a.KM)((0, o.F6)(n, P.default, C.Z), true)) : "", ")");
 
 function W(e, t, n, r) {
   switch (e.type) {
@@ -144,7 +144,7 @@ function B(e, t, n) {
       t.type === R.uaV.THREAD_STARTER_MESSAGE && null != d ? u = V(u, d, y.Z.getChannel(d.parent_id)) : (0, b.Z)(t) ? null != O.Z.getGuild(e.getGuildId()) && (u = V(u, e, d)) : u = V(u, e, d);
       break;
     case R.d4z.GROUP_DM:
-      e.isManaged() && n.bot && u === (0, o.F6)(e, P.default, S.Z) || (u = V(u, e))
+      e.isManaged() && n.bot && u === (0, o.F6)(e, P.default, C.Z) || (u = V(u, e))
   }
   let g = t.content;
   if ((0, b.Z)(t) && null == (g = j.Z.stringify(t, e))) throw new c.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
@@ -175,8 +175,8 @@ function B(e, t, n) {
     question: t.poll.question.text
   });
   else if (t.type === R.uaV.POLL_RESULT) {
-    var E, v, _;
-    let e = null == (_ = t.embeds) || null == (v = _[0]) || null == (E = v.fields) ? true : E.find(e => ("name" in e ? e.name : e.rawName) === "poll_question_text"),
+    var E, _, v;
+    let e = null == (v = t.embeds) || null == (_ = v[0]) || null == (E = _.fields) ? true : E.find(e => ("name" in e ? e.name : e.rawName) === "poll_question_text"),
       n = null != e ? "value" in e ? e.value : e.rawValue : "";
     i = M.intl.formatToPlainString(M.t["9WrecI"], {
       question: n

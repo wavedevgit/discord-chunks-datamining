@@ -65,7 +65,7 @@ let y = {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
-          icon: b, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: b, color: r.Z.colors.BACKGROUND_MOD_STRONG
         };
       case i.DY.FRIEND_REQUEST_ACCEPTED:
       case i.DY.GAME_FRIEND_REQUEST_ACCEPTED:
@@ -75,21 +75,21 @@ let y = {
       case i.DY.FRIEND_REQUEST_PENDING:
       case i.DY.FRIEND_SUGGESTION_CREATED:
         return {
-          icon: u, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: u, color: r.Z.colors.BACKGROUND_MOD_STRONG
         };
       case i.DY.DM_FRIEND_NUDGE:
         return {
-          icon: g, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: g, color: r.Z.colors.BACKGROUND_MOD_STRONG
         };
       case i.O7.INCOMING_FRIEND_REQUESTS:
       case i.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: u, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: u, color: r.Z.colors.BACKGROUND_MOD_STRONG
         };
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS:
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: p, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: p, color: r.Z.colors.BACKGROUND_MOD_STRONG
         };
       default:
         return null

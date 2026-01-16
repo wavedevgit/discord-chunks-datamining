@@ -1,7 +1,7 @@
 /** Chunk was on 58121 **/
 /** chunk id: 213557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => D
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -65,11 +65,11 @@ function B(e, t) {
   }), e
 }
 
-function A(e) {
+function D(e) {
   let {
     channelId: t,
-    baseChannelId: A,
-    channelViewSource: D = "Split View",
+    baseChannelId: D,
+    channelViewSource: A = "Split View",
     isResourceChannelView: R
   } = e, k = (0, l.e7)([y.Z], () => y.Z.getChannel(t)), L = (0, l.e7)([_.Z], () => _.Z.getGuild(null == k ? true : k.getGuildId())), H = (0, w.ZP)(k), M = (0, l.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, h.Z)(t), G = (0, l.e7)([f.Z], () => {
     var e;
@@ -77,18 +77,18 @@ function A(e) {
   }), W = (0, d.$5)(k), F = r.useRef(false);
   if (r.useEffect(() => {
       null == k || F.current || (F.current = true, (0, s.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, s.$H)(k.id)), {
-        channel_view: D
+        channel_view: A
       })), (0, u.a)(P.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: k.id
       }))
-    }, [k, D]), null == k || null == L) return null;
+    }, [k, A]), null == k || null == L) return null;
   let q = [];
   return (M || q.push((0, a.jsx)(g.Z, {
     channel: k
   }, "notifications")), q.push((0, a.jsx)(m.ZP.Icon, {
     icon: i.Dio,
     tooltip: S.intl.string(S.t.cpT0Cq),
-    onClick: () => v.Z.closeChannelSidebar(A)
+    onClick: () => v.Z.closeChannelSidebar(D)
   }, "close")), W) ? (0, a.jsx)(O.Z, {
     guild: L,
     channelId: k.id

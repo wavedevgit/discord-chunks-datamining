@@ -122,7 +122,7 @@ function eu(e) {
 }
 class ed extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, j.Z, w.Z, v.Z, A.Z, R.Z, D.Z, k.Z, L.Z, U.Z, T.Z, F.Z, V.default, W.Z)
+    this.waitFor(g.Z, j.Z, w.Z, _.Z, A.Z, R.Z, D.Z, k.Z, L.Z, U.Z, T.Z, F.Z, V.default, W.Z)
   }
 }
 J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {} : {
@@ -176,24 +176,24 @@ J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {
     let h = !R.Z.isSoundDisabled(ee);
     if (m && (h && K.Z.playNotificationSound("message3", .4), !el) || !b) returnfalse;
     let E = n(808506).default,
-      v = n(624864).Z;
-    if (null != E.getFocusedPID() && !v.isNotificationDisabled(Q.n0.TextChat) && !F.Z.disableNotifications) returnfalse;
+      _ = n(624864).Z;
+    if (null != E.getFocusedPID() && !_.isNotificationDisabled(Q.n0.TextChat) && !F.Z.disableNotifications) returnfalse;
     let {
-      icon: S,
+      icon: C,
       title: N,
       body: T,
       emoji: x
-    } = (0, O.Xi)(u, a, f), P = !(0, C._)("NotificationStore.handleMessage", null == p ? true : p.id);
+    } = (0, O.Xi)(u, a, f), P = !(0, S._)("NotificationStore.handleMessage", null == p ? true : p.id);
     if (o.Z.dispatch({
         type: "RPC_NOTIFICATION_CREATE",
         channelId: u.id,
         message: a,
-        icon: S,
+        icon: C,
         title: N,
         body: T
       }), (0, y.R)(a, u.guild_id), R.Z.getDesktopType() === Y.qrD.NEVER) return h && K.Z.playNotificationSound(ee, et), false;
-    let Z = null != (l = A.Z.getMessage(i, a.id)) ? l : (0, _.e5)(a);
-    K.Z.showNotification(S, N, T, {
+    let Z = null != (l = A.Z.getMessage(i, a.id)) ? l : (0, v.e5)(a);
+    K.Z.showNotification(C, N, T, {
       notif_type: "MESSAGE_CREATE",
       notif_user_id: null == (r = a.author) ? true : r.id,
       message_id: a.id,
@@ -464,7 +464,7 @@ J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {
     }, {
       overrideStreamerMode: true,
       onClick: () => {
-        (0, S.uL)(Y.Z5c.SETTINGS(e ? "windows" : "linux"))
+        (0, C.uL)(Y.Z5c.SETTINGS(e ? "windows" : "linux"))
       },
       onShown: () => {
         a.K.set(er, true)

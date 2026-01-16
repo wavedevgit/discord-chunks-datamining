@@ -1,7 +1,7 @@
 /** Chunk was on 79589 **/
 /** chunk id: 240781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,7 +34,7 @@ let P = [{
     avatarSize: Chunk481060.EFr.SIZE_32,
     showStatus: true
   }],
-  y = e => {
+  O = e => {
     let {
       purchase: t
     } = e, n = (0, o.e7)([f.default], () => f.default.locale), i = (0, d.qS)(t), l = null != t.expiresAt ? (0, x.TD)(Date.now(), t.expiresAt) : null, a = (0, m.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
@@ -76,16 +76,16 @@ let P = [{
       })]
     })
   },
-  O = e => {
+  y = e => {
     let {
       user: t,
       guildId: n,
       avatarDecoration: l,
       className: f
     } = e, x = (0, o.e7)([v.Z], () => v.Z.getStatus(t.id)), {
-      product: O,
+      product: y,
       purchase: S
-    } = (0, u.Z)(null == l ? true : l.skuId), C = g.ZP.canUseCollectibles(t), w = null != S ? (0, d.qS)(S) : (0, d.G1)(O), I = !C && (0, d.qS)(S), E = (0, p.M)(!w || C), A = (0, m.ag)(S), T = (0, m.kd)(O), _ = i.useMemo(() => I ? b.intl.string(b.t["7vkeu5"]) : w && C && !E ? b.intl.string(b.t.hmyYK8) : w && !C && E ? b.intl.string(b.t.q0PlFn) : !w || C || E ? b.intl.string(b.t.fEGjVQ) : b.intl.string(b.t["0xs2sA"]), [I, w, C, E]);
+    } = (0, u.Z)(null == l ? true : l.skuId), C = g.ZP.canUseCollectibles(t), w = null != S ? (0, d.qS)(S) : (0, d.G1)(y), I = !C && (0, d.qS)(S), E = (0, p.M)(!w || C), A = (0, m.ag)(S), T = (0, m.kd)(y), _ = i.useMemo(() => I ? b.intl.string(b.t["7vkeu5"]) : w && C && !E ? b.intl.string(b.t.hmyYK8) : w && !C && E ? b.intl.string(b.t.q0PlFn) : !w || C || E ? b.intl.string(b.t.fEGjVQ) : b.intl.string(b.t["0xs2sA"]), [I, w, C, E]);
     return null != l && (null == S || I) ? (0, r.jsxs)("div", {
       className: a()(j.modalPreview, j.shopPreviewContainer, f),
       children: [(0, r.jsx)("div", {
@@ -136,7 +136,7 @@ let P = [{
             }, "".concat(i).concat(a))
           })
         })]
-      }), null != S && (0, r.jsx)(y, {
+      }), null != S && (0, r.jsx)(O, {
         purchase: S
       })]
     })

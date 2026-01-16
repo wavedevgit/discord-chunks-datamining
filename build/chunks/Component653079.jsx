@@ -27,20 +27,20 @@ let C = e => {
       purchase: t,
       product: n,
       user: i
-    } = e, u = (0, o.e7)([x.default], () => x.default.locale), m = (0, p.ag)(t), g = (0, p.kd)(n), f = v.ZP.canUseCollectibles(i), b = (0, d.qS)(t), C = (0, d.G1)(n), P = !f && b, [E, w] = r.useState(null);
+    } = e, u = (0, o.e7)([x.default], () => x.default.locale), m = (0, p.ag)(t), g = (0, p.kd)(n), f = v.ZP.canUseCollectibles(i), b = (0, d.qS)(t), C = (0, d.G1)(n), P = !f && b, [E, O] = r.useState(null);
     r.useEffect(() => {
-      w((null == t ? true : t.expiresAt) != null ? (0, h.TD)(Date.now(), t.expiresAt) : null)
+      O((null == t ? true : t.expiresAt) != null ? (0, h.TD)(Date.now(), t.expiresAt) : null)
     }, [null == t ? true : t.expiresAt]);
-    let O = null == t || P;
+    let w = null == t || P;
     return (0, l.jsxs)("div", {
       className: a()(y.previewDescriptionContainer, {
-        [y.previewDescriptionUpsell]: O
+        [y.previewDescriptionUpsell]: w
       }),
       children: [(0, l.jsx)(c.Text, {
         color: "text-strong",
         variant: "text-sm/semibold",
         children: (0, s.isEmpty)(m) ? g : m
-      }), O ? (0, l.jsx)(c.Text, {
+      }), w ? (0, l.jsx)(c.Text, {
         color: "text-default",
         variant: "text-sm/normal",
         children: P ? j.intl.string(j.t.nD78oa) : C && f ? j.intl.string(j.t.hmyYK8) : C ? j.intl.string(j.t.JY1i0u) : j.intl.string(j.t.fEGjVQ)

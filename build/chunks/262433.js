@@ -43,20 +43,20 @@ function h(e) {
     emojiHose: a,
     context: h,
     canvasWidth: E,
-    canvasHeight: v,
-    fallbackColor: _,
+    canvasHeight: _,
+    fallbackColor: v,
     outlineColorDark: y,
     outlineColorLight: O,
-    streamerId: C,
-    deadDrawables: S
+    streamerId: S,
+    deadDrawables: C
   } = e;
   h.save();
   let I = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
     N = (0, d.np)(a.x, E),
-    T = (0, d.np)(a.y, v),
+    T = (0, d.np)(a.y, _),
     {
       outlineColor: x
-    } = (0, d.bg)(a.userId, y, O, _);
+    } = (0, d.bg)(a.userId, y, O, v);
   m(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
         b.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))
@@ -93,5 +93,5 @@ function h(e) {
         l = n.x - r / 2 * window.devicePixelRatio,
         i = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
-    })(h, I, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, c.ZZ)(C, a), a.state !== u.f.STOP || Object.keys(null != (r = b.getState().particles[a.id]) ? r : {}).length > 0 || S.push(a), h.restore()
+    })(h, I, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, c.ZZ)(S, a), a.state !== u.f.STOP || Object.keys(null != (r = b.getState().particles[a.id]) ? r : {}).length > 0 || C.push(a), h.restore()
 }

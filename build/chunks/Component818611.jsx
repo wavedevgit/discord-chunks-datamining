@@ -1,7 +1,7 @@
 /** Chunk was on 79589 **/
 /** chunk id: 818611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -80,7 +80,7 @@ let j = () => 80,
       children: t
     }))
   },
-  y = e => {
+  O = e => {
     var {
       user: t,
       avatarDecoration: n,
@@ -117,7 +117,7 @@ let j = () => 80,
       })]
     }))
   },
-  O = e => {
+  y = e => {
     let {
       user: t,
       guild: n,
@@ -144,8 +144,8 @@ let j = () => 80,
       renderItem: (e, u, h, b) => {
         let {
           section: j,
-          items: O
-        } = d[e], S = O[u];
+          items: y
+        } = d[e], S = y[u];
         if (S === p.Tm) return (0, r.jsxs)(P, {
           style: g({}, h),
           isSelected: null === i,
@@ -177,7 +177,7 @@ let j = () => 80,
         }, b);
         if ((0, o.M)(S)) {
           let e = (null == i ? true : i.skuId) === S.skuId;
-          return (0, r.jsx)(y, {
+          return (0, r.jsx)(O, {
             style: g({}, h),
             user: t,
             avatarDecoration: S,

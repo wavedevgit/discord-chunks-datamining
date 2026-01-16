@@ -28,8 +28,8 @@ function O(e) {
     guildId: t,
     channel: n,
     width: O,
-    height: C,
-    keepOpen: S,
+    height: S,
+    keepOpen: C,
     interactive: I = true,
     analyticsSource: N,
     onClose: T
@@ -37,7 +37,7 @@ function O(e) {
     let [t, n] = (0, a.Wu)([g.Z], () => [g.Z.getSounds(), g.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
-        l = [...e, _.X8],
+        l = [...e, v.X8],
         i = (e, l) => {
           var i, a;
           for (let o of null != (a = null == (i = t.get(e)) ? true : i.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? a : []) {
@@ -58,8 +58,8 @@ function O(e) {
     0 === x.length && 0 === P.length && T()
   }, [x.length, P, T]), l.useEffect(() => () => {
     let e = Z.current;
-    S || null == e || D(e)
-  }, [S, D]), (0, s.Z)({
+    C || null == e || D(e)
+  }, [C, D]), (0, s.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
@@ -83,7 +83,7 @@ function O(e) {
       let t = x[e];
       null != t && D(t)
     }, [x, D]),
-    U = l.useMemo(() => x.map(e => (0, r.jsx)(v.ZP, {
+    U = l.useMemo(() => x.map(e => (0, r.jsx)(_.ZP, {
       interactive: I,
       className: y.soundButton,
       sound: e,
@@ -94,10 +94,10 @@ function O(e) {
     value: R,
     children: (0, r.jsx)(E.Z, {
       wheelWidth: O,
-      wheelHeight: C,
+      wheelHeight: S,
       itemWidth: 96,
       itemHeight: 52,
-      showDeadZoneIndicator: !S,
+      showDeadZoneIndicator: !C,
       activeItem: j,
       onItemSelect: k,
       onItemAction: L,

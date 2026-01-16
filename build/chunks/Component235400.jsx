@@ -61,7 +61,7 @@ function E(e) {
   }), {
     product: R,
     purchase: L
-  } = (0, u.Z)(null == Z ? true : Z.skuId), U = null != L ? (0, d.qS)(L) : (0, d.G1)(R), M = P.ZP.canUseCollectibles(n), B = i.useRef(null), F = (0, p.Z)(b), z = true === _ ? (null == Z ? true : Z.skuId) === (null == T ? true : T.skuId) : (null == Z ? true : Z.skuId) === (null == _ ? true : _.skuId), G = i.useCallback(e => {
+  } = (0, u.Z)(null == Z ? true : Z.skuId), M = null != L ? (0, d.qS)(L) : (0, d.G1)(R), U = P.ZP.canUseCollectibles(n), B = i.useRef(null), F = (0, p.Z)(b), z = true === _ ? (null == Z ? true : Z.skuId) === (null == T ? true : T.skuId) : (null == Z ? true : Z.skuId) === (null == _ ? true : _.skuId), G = i.useCallback(e => {
     j(), (0, c.mK)({
       analyticsLocations: b,
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
@@ -85,7 +85,7 @@ function E(e) {
       "data-migration-pending": true,
       className: I.modalContent,
       scrollbarType: "none",
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(y.Z, {
         user: n,
         guild: E,
         pendingAvatarDecoration: Z,
@@ -94,7 +94,7 @@ function E(e) {
           N(e), null != e && F(e)
         },
         onOpenShop: G
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(O.Z, {
         className: I.modalPreview,
         user: n,
         guildId: null == E ? true : E.id,
@@ -103,24 +103,24 @@ function E(e) {
     }), (0, r.jsxs)(a.mzw, {
       "data-migration-pending": true,
       className: I.modalFooter,
-      children: [null != L && (M || !U) || null === Z ? (0, r.jsx)(a.Button, {
+      children: [null != L && (U || !M) || null === Z ? (0, r.jsx)(a.Button, {
         variant: "primary",
         text: w.intl.string(w.t.Jh8fJz),
         onClick: () => {
           D(Z), j()
         },
         disabled: z
-      }) : null == L && (M || !U) ? (0, r.jsx)(a.Button, {
+      }) : null == L && (U || !M) ? (0, r.jsx)(a.Button, {
         variant: "primary",
         onClick: () => G(null == R ? true : R.skuId),
         text: w.intl.string(w.t.fYfGgK)
       }) : (0, r.jsx)(v.Z, {
         subscriptionTier: C.Si.TIER_2,
-        showGradient: !M,
+        showGradient: !U,
         textOptions: {
-          textOverride: P.ZP.isPremium(n) ? w.intl.string(w.t.KXLX7l) : M ? w.intl.string(w.t.mr4K7D) : w.intl.string(w.t.pj0XBN)
+          textOverride: P.ZP.isPremium(n) ? w.intl.string(w.t.KXLX7l) : U ? w.intl.string(w.t.mr4K7D) : w.intl.string(w.t.pj0XBN)
         }
-      }), !M && U ? (0, r.jsx)(f.Z, {
+      }), !U && M ? (0, r.jsx)(f.Z, {
         itemType: null != (t = null == L ? true : L.type) ? t : null == R ? true : R.type,
         onClose: j
       }) : (0, r.jsx)(a.Button, {
@@ -147,7 +147,7 @@ function A(e) {
     purchases: g,
     isFetchingCategories: h,
     isFetchingPurchases: P
-  } = (0, m.ZP)(), y = h || P && 0 === g.size;
+  } = (0, m.ZP)(), O = h || P && 0 === g.size;
   return i.useEffect(() => {
     j.default.track(S.rMx.OPEN_MODAL, {
       type: S.jXE.AVATAR_DECORATION_CUSTOMIZATION,
@@ -158,10 +158,10 @@ function A(e) {
     children: (0, r.jsx)(a.Y0X, {
       transitionState: t,
       className: I.modal,
-      size: y ? a.CgR.DYNAMIC : a.CgR.MEDIUM,
+      size: O ? a.CgR.DYNAMIC : a.CgR.MEDIUM,
       parentComponent: "AvatarDecorationModal",
       "data-migration-pending": true,
-      children: y ? (0, r.jsx)(a.$jN, {
+      children: O ? (0, r.jsx)(a.$jN, {
         className: I.spinner,
         type: a.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(E, {

@@ -27,12 +27,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk997305 = require("./997305.js");
 
-function O(e) {
+function w(e) {
   var t, n, o, p, v;
   let {
     currentUser: f,
     categories: C,
-    purchases: O,
+    purchases: w,
     analyticsLocations: _,
     onClose: Z,
     guildId: A,
@@ -41,21 +41,21 @@ function O(e) {
     pendingNameplate: k
   } = (0, g.Zx)(f, A), [T, U] = (0, r.useState)(() => {
     var e;
-    return null != N ? N : true !== k ? k : null == S ? null : null != (e = (0, d.Y)(O, C).find(e => {
+    return null != N ? N : true !== k ? k : null == S ? null : null != (e = (0, d.Y)(w, C).find(e => {
       let {
         skuId: t
       } = e;
       return t === S.skuId
     })) ? e : null
-  }), B = (0, g.Ys)({
+  }), D = (0, g.Ys)({
     pendingValue: T,
     userValue: null == f || null == (o = f.collectibles) ? true : o.nameplate,
     guildValue: null == I || null == (p = I.collectibles) ? true : p.nameplate,
     guildId: A
   }), {
-    product: D,
+    product: B,
     purchase: L
-  } = (0, u.Z)(null == T ? true : T.skuId), R = null != L ? (0, d.qS)(L) : (0, d.G1)(D), M = b.ZP.canUseCollectibles(f), F = true === k ? (null == T ? true : T.skuId) === (null == S ? true : S.skuId) : (null == T ? true : T.skuId) === (null == k ? true : k.skuId), G = (0, r.useCallback)(e => {
+  } = (0, u.Z)(null == T ? true : T.skuId), R = null != L ? (0, d.qS)(L) : (0, d.G1)(B), M = b.ZP.canUseCollectibles(f), F = true === k ? (null == T ? true : T.skuId) === (null == S ? true : S.skuId) : (null == T ? true : T.skuId) === (null == k ? true : k.skuId), G = (0, r.useCallback)(e => {
     Z(), (0, c.mK)({
       analyticsLocations: _,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -66,18 +66,18 @@ function O(e) {
     children: [(0, l.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: w.header,
+      className: O.header,
       children: [(0, l.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         children: E.intl.string(E.t.BwdeM1)
       }), (0, l.jsx)(a.olH, {
         "data-migration-pending": true,
-        className: w.closeButton,
+        className: O.closeButton,
         onClick: Z
       })]
     }), (0, l.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: w.content,
+      className: O.content,
       scrollbarType: "none",
       children: [(0, l.jsx)(y.Z, {
         currentUser: f,
@@ -88,11 +88,11 @@ function O(e) {
       }), (0, l.jsx)(j.Z, {
         user: f,
         guildId: A,
-        nameplate: B
+        nameplate: D
       })]
     }), (0, l.jsxs)(a.mzw, {
       "data-migration-pending": true,
-      className: w.modalFooter,
+      className: O.modalFooter,
       children: [null != L && (!R || M) || null === T ? (0, l.jsx)(a.Button, {
         variant: "primary",
         text: E.intl.string(E.t.Jh8fJz),
@@ -102,7 +102,7 @@ function O(e) {
         disabled: F
       }) : null == L && (M || !R) ? (0, l.jsx)(a.Button, {
         variant: "primary",
-        onClick: () => G(null == D ? true : D.skuId),
+        onClick: () => G(null == B ? true : B.skuId),
         text: E.intl.string(E.t.fYfGgK)
       }) : (0, l.jsx)(x.Z, {
         subscriptionTier: P.Si.TIER_2,
@@ -111,7 +111,7 @@ function O(e) {
           textOverride: b.ZP.isPremium(f) ? E.intl.string(E.t.KXLX7l) : M ? E.intl.string(E.t.mr4K7D) : E.intl.string(E.t.pj0XBN)
         }
       }), !M && R ? (0, l.jsx)(m.Z, {
-        itemType: null != (v = null == L ? true : L.type) ? v : null == D ? true : D.type,
+        itemType: null != (v = null == L ? true : L.type) ? v : null == B ? true : B.type,
         onClose: Z
       }) : (0, l.jsx)(a.Button, {
         variant: "secondary",
@@ -150,9 +150,9 @@ function _(e) {
       parentComponent: "NameplateModal",
       "data-migration-pending": true,
       children: y ? (0, l.jsx)(a.$jN, {
-        className: w.spinner,
+        className: O.spinner,
         type: a.$jN.Type.SPINNING_CIRCLE
-      }) : (0, l.jsx)(O, {
+      }) : (0, l.jsx)(w, {
         currentUser: m,
         categories: g,
         purchases: h,

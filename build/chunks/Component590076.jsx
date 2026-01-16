@@ -27,8 +27,8 @@ function g(e) {
     handleClick: m,
     handleMouseDown: h,
     handleMouseEnter: E,
-    handleMouseMove: v,
-    handleMouseUp: _
+    handleMouseMove: _,
+    handleMouseUp: v
   } = (0, d.Z)({
     user: b,
     channelId: n,
@@ -43,8 +43,8 @@ function g(e) {
       onClick: m,
       onMouseDown: h,
       onMouseEnter: E,
-      onMouseMove: v,
-      onMouseUp: _,
+      onMouseMove: _,
+      onMouseUp: v,
       className: p.sharedCanvas
     })
   })

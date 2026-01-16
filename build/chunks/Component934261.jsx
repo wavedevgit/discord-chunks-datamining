@@ -51,16 +51,16 @@ let S = e => {
       pendingProfileEffectRecord: t,
       product: n,
       purchase: u
-    } = e, d = (0, l.e7)([v.default], () => v.default.getCurrentUser()), p = (0, l.e7)([s.Z], () => s.Z.getProduct(null == t ? true : t.skuId)), m = (0, l.e7)([h.default], () => h.default.locale), g = O.ZP.canUseCollectibles(d), b = (0, c.qS)(u), x = (0, c.G1)(n), j = !g && b, y = (null == u ? true : u.expiresAt) != null ? (0, P.TD)(Date.now(), u.expiresAt) : null, I = (0, a.ag)(u), S = (0, a.kd)(p), w = (0, f.M)(!x || g), Z = _(j, x, g, w), A = null == u || j;
+    } = e, d = (0, l.e7)([v.default], () => v.default.getCurrentUser()), p = (0, l.e7)([s.Z], () => s.Z.getProduct(null == t ? true : t.skuId)), m = (0, l.e7)([h.default], () => h.default.locale), g = O.ZP.canUseCollectibles(d), b = (0, c.qS)(u), x = (0, c.G1)(n), j = !g && b, y = (null == u ? true : u.expiresAt) != null ? (0, P.TD)(Date.now(), u.expiresAt) : null, I = (0, a.ag)(u), S = (0, a.kd)(p), w = (0, f.M)(!x || g), Z = _(j, x, g, w), k = null == u || j;
     return null != t ? (0, r.jsx)("div", {
-      className: A ? C.effectDescriptionBorderWithGradient : C.effectDescriptionNoGradient,
+      className: k ? C.effectDescriptionBorderWithGradient : C.effectDescriptionNoGradient,
       children: (0, r.jsxs)("div", {
         className: C.effectDescriptionContainer,
         children: [(0, r.jsx)(o.Text, {
           color: "text-strong",
           variant: "text-sm/semibold",
           children: (0, i.isEmpty)(I) ? S : I
-        }), A ? (0, r.jsx)(o.Text, {
+        }), k ? (0, r.jsx)(o.Text, {
           color: "text-default",
           variant: "text-sm/normal",
           children: Z
@@ -117,12 +117,12 @@ let S = e => {
       pendingAvatar: _,
       pendingAvatarDecoration: w,
       pendingThemeColors: Z,
-      pendingAccentColor: A
+      pendingAccentColor: k
     } = (0, l.cj)([u.Z, y.Z], () => I({
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != a ? u.Z.getAllPending() : y.Z.getAllPending())), k = O.ZP.isPremium(i), N = O.ZP.canUsePremiumProfileCustomization(i), T = (0, b.ZP)(i.id), D = !!(null == T ? true : T.getPreviewBio(P)), U = {
+    }, null != a ? u.Z.getAllPending() : y.Z.getAllPending())), A = O.ZP.isPremium(i), N = O.ZP.canUsePremiumProfileCustomization(i), T = (0, b.ZP)(i.id), D = !!(null == T ? true : T.getPreviewBio(P)), U = {
       user: i,
       guild: a,
       pendingGlobalName: f,
@@ -137,7 +137,7 @@ let S = e => {
       }),
       pendingAvatarDecoration: w,
       pendingThemeColors: Z,
-      pendingAccentColor: A,
+      pendingAccentColor: k,
       pendingProfileEffect: null != o ? o : null,
       hideFakeActivity: D,
       canUsePremiumCustomization: N,
@@ -162,7 +162,7 @@ let S = e => {
         pendingProfileEffectRecord: o,
         product: s,
         purchase: c,
-        userIsPremium: k
+        userIsPremium: A
       })]
     })
   }

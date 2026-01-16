@@ -46,14 +46,14 @@ let h = {
     [Chunk981631.IE4.BAD]: Chunk156730.rtcConnectionQualityBad,
     [Chunk981631.IE4.UNKNOWN]: null
   },
-  v = {
+  _ = {
     [Chunk981631.IE4.FINE]: Chunk481060.B_b,
     [Chunk981631.IE4.AVERAGE]: Chunk481060.hLg,
     [Chunk981631.IE4.BAD]: Chunk481060.mbS,
     [Chunk981631.IE4.UNKNOWN]: Chunk481060._3e
   };
 
-function _(e) {
+function v(e) {
   var {
     quality: t,
     largePing: n
@@ -72,7 +72,7 @@ function _(e) {
     }
     return l
   }(e, ["quality", "largePing"]);
-  let i = v[t];
+  let i = _[t];
   return (0, r.jsx)(i, m({
     className: a()(b.ping, {
       [b.largePing]: n
@@ -85,11 +85,11 @@ function y(e) {
     quality: t,
     lastPing: n,
     state: i,
-    className: v,
+    className: _,
     children: y,
     channelId: O,
-    childrenAsSubtitle: C,
-    connectionStatusTextVariant: S,
+    childrenAsSubtitle: S,
+    connectionStatusTextVariant: C,
     hasVideo: I
   } = e, N = l.useRef(null), T = i === g.hes.RTC_CONNECTED, x = l.useCallback(e => {
     var t, n;
@@ -112,7 +112,7 @@ function y(e) {
   return (0, r.jsxs)("div", {
     className: b.rtcConnectionStatusWrapper,
     children: [(0, r.jsx)("div", {
-      className: a()(b.rtcConnectionStatus, E[t], v),
+      className: a()(b.rtcConnectionStatus, E[t], _),
       ref: N,
       children: (0, r.jsx)(c.yRy, {
         targetElementRef: N,
@@ -130,9 +130,9 @@ function y(e) {
                 onClick: e => {
                   (0, u.v)(s.Z.RTC_PANEL, u.d.CONNECTION_STATUS), l(e)
                 },
-                children: (0, r.jsx)(_, {
+                children: (0, r.jsx)(v, {
                   quality: t,
-                  largePing: C
+                  largePing: S
                 })
               })
             }), (0, r.jsxs)("div", {
@@ -143,16 +143,16 @@ function y(e) {
                 },
                 children: (0, r.jsx)(p.Z, {
                   text: Z,
-                  textVariant: S,
+                  textVariant: C,
                   hasVideo: I,
                   className: h[P],
                   hasConnectedChannel: null != O
                 })
-              }), C ? y : null]
+              }), S ? y : null]
             })]
           })
         }
       })
-    }), C ? null : y]
+    }), S ? null : y]
   })
 }

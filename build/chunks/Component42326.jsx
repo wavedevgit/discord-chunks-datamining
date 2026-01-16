@@ -24,7 +24,7 @@ function m(e) {
     avError: i
   } = e, m = l.useRef(null), h = "", {
     text: E,
-    node: v
+    node: _
   } = function(e) {
     var t;
     if (null == e) return {
@@ -48,16 +48,16 @@ function m(e) {
     }
   }(i);
   h = null != E ? "".concat(t, " ").concat(E) : t;
-  let [_] = l.useState(new o.V7), [y, O] = l.useState(false), [C, S] = l.useState(false), I = l.useCallback(() => {
-    _.start(250, () => {
+  let [v] = l.useState(new o.V7), [y, O] = l.useState(false), [S, C] = l.useState(false), I = l.useCallback(() => {
+    v.start(250, () => {
       O(false)
     }, false)
-  }, [_, O]), N = l.useCallback(() => {
-    _.stop(), O(true)
-  }, [_, O]), T = l.useCallback(() => {
-    S(true)
+  }, [v, O]), N = l.useCallback(() => {
+    v.stop(), O(true)
+  }, [v, O]), T = l.useCallback(() => {
+    C(true)
   }, []), x = l.useCallback(() => {
-    S(false)
+    C(false)
   }, []);
   return (0, r.jsx)(c.yRy, {
     renderPopout: () => (0, r.jsx)(f.Z, {
@@ -65,16 +65,16 @@ function m(e) {
         className: b.popout,
         onMouseEnter: N,
         onMouseLeave: I,
-        children: [t, null != v && (0, r.jsx)(c.Text, {
+        children: [t, null != _ && (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           className: b.errorCodeMessage,
-          children: v
+          children: _
         })]
       })
     }),
     targetElementRef: m,
-    shouldShow: C || y,
+    shouldShow: S || y,
     position: "bottom",
     children: e => {
       var t, l;

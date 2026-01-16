@@ -17,9 +17,9 @@ var r, l, Chunk442837 = require("./442837.js"),
 let m = new Map,
   h = new Map,
   E = false,
-  v = null;
+  _ = null;
 
-function _() {
+function v() {
   return d.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
@@ -56,15 +56,15 @@ function O(e) {
         a = i !== m.get(e);
       return m.set(e, i), a
     }(t),
-    r = _(),
+    r = v(),
     l = y();
   return n || r || l
 }
 
-function C() {
+function S() {
   m.clear(), h.clear(), E = false
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(s.default, u.Z, d.Z, p.Z, g.Z)
   }
@@ -77,20 +77,20 @@ class S extends(r = Chunk442837.ZP.Store) {
   isUserVerified(e) {
     return m.get(e)
   }
-}(l = "displayName") in S ? Object.defineProperty(S, l, {
+}(l = "displayName") in C ? Object.defineProperty(C, l, {
   value: "SecureFramesVerifiedStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : S[l] = "SecureFramesVerifiedStore";
-let I = new S(Chunk570140.Z, {
-  CONNECTION_OPEN: C,
+}) : C[l] = "SecureFramesVerifiedStore";
+let I = new C(Chunk570140.Z, {
+  CONNECTION_OPEN: S,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
-    if (t === v) returnfalse;
-    v = t, C()
+    if (t === _) returnfalse;
+    _ = t, S()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -104,7 +104,7 @@ let I = new S(Chunk570140.Z, {
         if (null == t) returnfalse;
         return h.delete(t), y();
       case a.Yn.DEFAULT:
-        C()
+        S()
     }
   },
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
@@ -112,7 +112,7 @@ let I = new S(Chunk570140.Z, {
       userIds: t
     } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!O({
       userId: t
-    }) || e, false), l = _(), i = y();
+    }) || e, false), l = v(), i = y();
     return r || l || i
   },
   SECURE_FRAMES_TRANSIENT_KEY_CREATE: O,

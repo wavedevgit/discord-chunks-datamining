@@ -175,7 +175,7 @@ function en(e) {
   let {
     prompt: n,
     guild: l
-  } = e, [d, u] = r.useState(null), [b, p] = r.useState(new Set), f = null == n || null == (t = n.options) ? true : t.filter(e => b.has(e.id)), h = (0, R.L6)(f), m = (0, R.dX)(f), g = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(l.id, n.id)), {
+  } = e, [d, u] = r.useState(null), [b, p] = r.useState(new Set), f = null == n || null == (t = n.options) ? true : t.filter(e => b.has(e.id)), h = (0, R.L6)(f), m = (0, R.dX)(f), g = (0, o.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(l.id, n.id)), {
     helpText: x,
     helpTextAdditional: C
   } = (0, L.p)({
@@ -242,7 +242,7 @@ function en(e) {
 function ea(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([D.Z], () => D.Z.getConnections(t.id));
+  } = e, n = (0, o.e7)([A.Z], () => A.Z.getConnections(t.id));
   return 0 === n.length ? null : (0, a.jsxs)("div", {
     className: Q.prompt,
     children: [(0, a.jsx)(s.Heading, {
@@ -269,7 +269,7 @@ function er(e) {
   let {
     prompt: n,
     guild: l
-  } = e, [d, u] = r.useState(null), [b, p] = r.useState(new Set), f = null == n || null == (t = n.options) ? true : t.filter(e => b.has(e.id)), h = (0, R.L6)(f), m = (0, R.dX)(f), g = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(l.id, n.id)), {
+  } = e, [d, u] = r.useState(null), [b, p] = r.useState(new Set), f = null == n || null == (t = n.options) ? true : t.filter(e => b.has(e.id)), h = (0, R.L6)(f), m = (0, R.dX)(f), g = (0, o.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(l.id, n.id)), {
     helpText: x,
     helpTextAdditional: C
   } = (0, L.p)({
@@ -340,10 +340,10 @@ function el(e) {
     onboardingPrompts: Z
   } = (0, H.Z)(t);
   r.useEffect(() => {
-    (null == p ? true : p.id) != null && !x.Z.isFullServerPreview(p.id) && (D.Z.shouldFetchPrompts(p.id) || C) && (0, A.eM)(p.id)
+    (null == p ? true : p.id) != null && !x.Z.isFullServerPreview(p.id) && (A.Z.shouldFetchPrompts(p.id) || C) && (0, D.eM)(p.id)
   }, [null == p ? true : p.id, C, j]), r.useEffect(() => {
     if ((null == p ? true : p.id) != null && !x.Z.isFullServerPreview(p.id)) return () => {
-      (0, u.Ju)(p.id, V.W.GUILD_ONBOARDING_QUESTION, D.Z.ackIdForGuild(p.id)), B.Z.updateOnboardingResponses(p.id)
+      (0, u.Ju)(p.id, V.W.GUILD_ONBOARDING_QUESTION, A.Z.ackIdForGuild(p.id)), B.Z.updateOnboardingResponses(p.id)
     }
   }, [null == p ? true : p.id]);
   let E = r.useCallback(e => {

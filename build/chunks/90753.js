@@ -20,11 +20,11 @@ let m = 1e3 / 60;
 
 function h(e, t, n, h) {
   let E = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
-    v = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK).hex(),
-    _ = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE).hex(),
+    _ = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK).hex(),
+    v = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE).hex(),
     y = r.useRef({}),
     O = r.useRef(new l.Xp),
-    C = r.useCallback(t => {
+    S = r.useCallback(t => {
       let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
       function(e) {
@@ -107,11 +107,11 @@ function h(e, t, n, h) {
         fallbackColor: E,
         linesDrawnAt: y,
         streamerId: t,
-        outlineColorDark: v,
-        outlineColorLight: _,
+        outlineColorDark: _,
+        outlineColorLight: v,
         channelId: h
       })
-    }, [e, h, E, v, _]);
+    }, [e, h, E, _, v]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
@@ -120,20 +120,20 @@ function h(e, t, n, h) {
         width: r,
         height: l
       } = t.getBoundingClientRect();
-      t.width = r * window.devicePixelRatio, t.height = l * window.devicePixelRatio, C(n)
+      t.width = r * window.devicePixelRatio, t.height = l * window.devicePixelRatio, S(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
-  }, [e, C, n]);
-  let S = r.useCallback(() => {
+  }, [e, S, n]);
+  let C = r.useCallback(() => {
     let t = u.Z.getDrawables(n),
       r = p.U.getState().particles,
       l = t.length > 0 || Object.keys(r).length > 0;
-    l && null == O.current._ref && (null == O.current._ref ? (C(n), O.current.start(m, () => C(n))) : l || null == O.current._ref || (O.current.stop(), (0, f.UN)(e)))
-  }, [e, C, n]);
+    l && null == O.current._ref && (null == O.current._ref ? (S(n), O.current.start(m, () => S(n))) : l || null == O.current._ref || (O.current.stop(), (0, f.UN)(e)))
+  }, [e, S, n]);
   r.useEffect(() => {
     let e = O.current;
-    return u.Z.addChangeListener(S), S(), (0, o.vM)(t.getAvatarURL(null, b.Ks)), () => {
-      u.Z.removeChangeListener(S), e.stop()
+    return u.Z.addChangeListener(C), C(), (0, o.vM)(t.getAvatarURL(null, b.Ks)), () => {
+      u.Z.removeChangeListener(C), e.stop()
     }
   })
 }

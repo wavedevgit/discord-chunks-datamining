@@ -19,7 +19,7 @@ function o(e) {
     "aria-hidden": true,
     children: (0, r.jsx)(l.mAB, {
       count: t,
-      color: n ? i.Z.colors.BACKGROUND_ACCENT.css : i.Z.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
+      color: n ? i.Z.colors.BACKGROUND_MOD_STRONG.css : i.Z.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
     })
   })
 }

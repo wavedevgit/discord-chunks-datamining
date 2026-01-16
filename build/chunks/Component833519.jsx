@@ -90,9 +90,9 @@ function K(e) {
     streamId: ee
   } = t, et = (0, o.e7)([P.Z], () => P.Z.getChannel(J.channelId)), en = (0, o.e7)([T.Z], () => T.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
     defaultWatchMultipleStreams: er
-  } = (0, v.P)({
+  } = (0, _.P)({
     location: "StreamTile"
-  }), el = (0, o.e7)([T.Z], () => T.Z.getAllActiveStreams().length > 0), ei = (0, o.e7)([j.Z], () => j.Z.isFocused()), ea = (null == en ? true : en.ownerId) === Q, eo = ea && !ei && m === g.P.NO_POPOUT, ec = null != en ? (0, _.Z)(en, $, $.id === Q, eo) : null, es = O < 195;
+  }), el = (0, o.e7)([T.Z], () => T.Z.getAllActiveStreams().length > 0), ei = (0, o.e7)([j.Z], () => j.Z.isFocused()), ea = (null == en ? true : en.ownerId) === Q, eo = ea && !ei && m === g.P.NO_POPOUT, ec = null != en ? (0, v.Z)(en, $, $.id === Q, eo) : null, es = O < 195;
   (0, f.ZP)(() => {
     !el && (null == et ? true : et.isGuildStageVoice()) && !ea && ((0, d.rn)(J), u.Z.updateStageStreamSize(J.channelId, false))
   });
@@ -102,7 +102,7 @@ function K(e) {
   }, [q, en, n]);
   let {
     allowGoLiveZoomPan: ed
-  } = (0, C.H)({
+  } = (0, S.H)({
     location: "StreamTile"
   });
   if (X) return (0, r.jsx)(k.Z, {
@@ -174,7 +174,7 @@ function K(e) {
       streamerId: $.id,
       hasScreenMessage: null != ec,
       stream: J
-    }) : null, (0, r.jsx)(S.Z, {
+    }) : null, (0, r.jsx)(C.Z, {
       enableZoom: ed && L,
       onResize: i,
       wrapperClassName: a()(m !== g.P.CALL_TILE ? G.videoWrapper : true, U),

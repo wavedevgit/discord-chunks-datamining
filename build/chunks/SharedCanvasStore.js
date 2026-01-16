@@ -39,7 +39,7 @@ let g = {},
   h = true,
   E = null;
 
-function v(e) {
+function _(e) {
   if (null == b[e]) {
     let t = o.default.getUser(e);
     if (null == t) return;
@@ -48,7 +48,7 @@ function v(e) {
     r.src = n, b[e] = r
   }
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class v extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(o.default)
   }
@@ -68,8 +68,8 @@ class _ extends(r = Chunk442837.ZP.Store) {
     return E
   }
 }
-f(_, "displayName", "SharedCanvasStore");
-let y = new _(Chunk570140.Z, {
+f(v, "displayName", "SharedCanvasStore");
+let y = new v(Chunk570140.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
@@ -92,7 +92,7 @@ let y = new _(Chunk570140.Z, {
         points: n
       }) : (0, u.P7)(e) && e.points.push(...n)
     }
-    v(r)
+    _(r)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
     var t, n, r, l, i;
@@ -126,7 +126,7 @@ let y = new _(Chunk570140.Z, {
         animated: false
       }, d.qh)
     }
-    v(f)
+    _(f)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {
