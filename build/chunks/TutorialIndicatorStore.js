@@ -107,7 +107,7 @@ class N extends(r = Chunk442837.ZP.Store) {
     y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(s.Z)
   }
   shouldShow(e) {
-    return !(!E || m || c.a || A(e)) && (g[e] || false)
+    return !(!E || m || c.aA || A(e)) && (g[e] || false)
   }
   shouldShowAnyIndicators() {
     return !m

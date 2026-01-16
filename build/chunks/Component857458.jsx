@@ -14,7 +14,7 @@ var Chunk828700 = require("./828700.js"),
 
 function c() {
   let e = location.pathname + location.search;
-  return s.a ? i.Z5c.REGISTER : (0, o.Ui)(e, false)
+  return s.aA ? i.Z5c.REGISTER : (0, o.Ui)(e, false)
 }
 let l = function() {
   return (0, a.jsx)(r.l_, {

@@ -26,7 +26,9 @@ function u(e) {
     shouldAnimate: m
   } = (0, c.Z)(f), {
     pendingAvatar: g
-  } = (0, l.Z)({}), E = d && null != t ? (0, o.SD)({
+  } = (0, l.Z)({
+    guildId: null === n ? true : n
+  }), E = d && null != t ? (0, o.SD)({
     userId: t.id,
     image: g,
     canAnimate: m,

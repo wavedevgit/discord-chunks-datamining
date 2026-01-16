@@ -140,24 +140,24 @@ class Z extends Chunk317770.Z {
           modalKey: r
         })
       },
-      predicate: () => Z() && !N.a
+      predicate: () => Z() && !N.aA
     }, {
       key: "New User Age Gate",
       open: c.i,
-      predicate: () => w && !Z() && !N.a
+      predicate: () => w && !Z() && !N.aA
     }, {
       key: "Claim Account Modal",
       open: e => c.j(I.isPlatformEmbedded, e),
       predicate: () => {
         var e;
-        return !o && null != _.default.getCurrentUser() && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a && !(0, p.g)()
+        return !o && null != _.default.getCurrentUser() && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.aA && !(0, p.g)()
       }
     }, {
       key: "Verification Gate with Claim Account",
       open: e => (0, u.hk)(A, null != e ? e : true),
       predicate: () => {
         var e;
-        return o && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a
+        return o && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.aA
       }
     }, {
       key: "Guild Welcome Modal",

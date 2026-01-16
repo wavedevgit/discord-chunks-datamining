@@ -215,7 +215,7 @@ class ea extends Chunk473749.Component {
         path: N.Z5c.APPS,
         component: M
       }), (0, r.jsx)(o.AW, {
-        path: ei([N.Z5c.LOGIN, N.Z5c.REGISTER, N.Z5c.INVITE(":inviteCode"), N.Z5c.INVITE_LOGIN(":inviteCode"), N.Z5c.GIFT_CODE(":giftCode"), N.Z5c.GIFT_CODE_LOGIN(":giftCode"), N.Z5c.RESET], P.a),
+        path: ei([N.Z5c.LOGIN, N.Z5c.REGISTER, N.Z5c.INVITE(":inviteCode"), N.Z5c.INVITE_LOGIN(":inviteCode"), N.Z5c.GIFT_CODE(":giftCode"), N.Z5c.GIFT_CODE_LOGIN(":giftCode"), N.Z5c.RESET], P.aA),
         component: Y
       }), (0, r.jsx)(_.Z, {
         path: N.Z5c.INVITE_PROXY(y.Hw.channelId()),
@@ -235,7 +235,7 @@ class ea extends Chunk473749.Component {
         path: N.Z5c.INDEX,
         render: () => (0, r.jsx)(p.Z, {})
       }), (0, r.jsx)(o.AW, {
-        path: ei([N.Z5c.LOGIN_ONE_TIME, N.Z5c.LOGIN, N.Z5c.LOGIN_HANDOFF, N.Z5c.REGISTER, N.Z5c.BILLING_PREFIX, N.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), N.Z5c.INVITE(":inviteCode"), N.Z5c.INVITE_LOGIN(":inviteCode"), N.Z5c.GIFT_CODE(":giftCode"), N.Z5c.GIFT_CODE_LOGIN(":giftCode"), N.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), N.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), N.Z5c.DISABLE_EMAIL_NOTIFICATIONS, N.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, N.Z5c.RESET, N.Z5c.REPORT, N.Z5c.REPORT_SECOND_LOOK, N.Z5c.ACCOUNT_REVERT(":token")], P.a),
+        path: ei([N.Z5c.LOGIN_ONE_TIME, N.Z5c.LOGIN, N.Z5c.LOGIN_HANDOFF, N.Z5c.REGISTER, N.Z5c.BILLING_PREFIX, N.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), N.Z5c.INVITE(":inviteCode"), N.Z5c.INVITE_LOGIN(":inviteCode"), N.Z5c.GIFT_CODE(":giftCode"), N.Z5c.GIFT_CODE_LOGIN(":giftCode"), N.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), N.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), N.Z5c.DISABLE_EMAIL_NOTIFICATIONS, N.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, N.Z5c.RESET, N.Z5c.REPORT, N.Z5c.REPORT_SECOND_LOOK, N.Z5c.ACCOUNT_REVERT(":token")], P.aA),
         component: Y
       }), t ? null : (0, r.jsx)(o.AW, {
         path: N.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),

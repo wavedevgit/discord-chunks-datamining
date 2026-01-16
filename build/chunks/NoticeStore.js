@@ -668,7 +668,7 @@ function e$() {
     a = es.Z.getGuildId(),
     o = eo.Z.getVoiceChannelId(),
     s = null != o ? ep.Z.getVoiceStateForChannel(o) : null;
-  for (let n of eT.a ? eX : eQ)
+  for (let n of eT.aA ? eX : eQ)
     if (null != eJ[n] && eJ[n].predicate({
         selectedGuildId: a,
         voiceChannelId: o,

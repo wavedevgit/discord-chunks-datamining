@@ -156,11 +156,11 @@ class eA extends Chunk473749.PureComponent {
       load_time: M.Z.getTimeSinceNavigationStart()
     }, {
       flush: true
-    })), (t || ei.a) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), g.Z.initialize(), (0, T.t)()
+    })), (t || ei.aA) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), g.Z.initialize(), (0, T.t)()
   }
   componentDidUpdate(e) {
     var t, n;
-    e.hasLoadedExperiments || !this.props.hasLoadedExperiments || ei.a || this.resolveInvite(), (null == (t = e.invite) ? true : t.state) !== (null == (n = this.props.invite) ? true : n.state) && this.maybeFetchApplicationSplash()
+    e.hasLoadedExperiments || !this.props.hasLoadedExperiments || ei.aA || this.resolveInvite(), (null == (t = e.invite) ? true : t.state) !== (null == (n = this.props.invite) ? true : n.state) && this.maybeFetchApplicationSplash()
   }
   componentWillUnmount() {
     g.Z.terminate()
@@ -236,7 +236,7 @@ class eA extends Chunk473749.PureComponent {
       }), (0, r.jsx)(p.Z, {
         impressionName: a.ImpressionNames.USER_REGISTRATION,
         path: er.Z5c.REGISTER,
-        render: e => ei.a ? (0, r.jsx)(ed, eo(el({}, e), {
+        render: e => ei.aA ? (0, r.jsx)(ed, eo(el({}, e), {
           redirectTo: t,
           inviteKey: n
         })) : (0, r.jsx)(em, eo(el({}, e), {
@@ -367,7 +367,7 @@ let eZ = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
   let {
     match: i,
     location: s
-  } = e, a = null == i || null == (t = i.params) ? true : t.inviteCode, l = ei.a ? ei.Y : true, o = null != a ? (0, y.mb)(a, s.search) : l, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
+  } = e, a = null == i || null == (t = i.params) ? true : t.inviteCode, l = ei.aA ? ei.YJ : true, o = null != a ? (0, y.mb)(a, s.search) : l, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
     inviteKey: o,
     isAuthenticated: Z.default.isAuthenticated(),

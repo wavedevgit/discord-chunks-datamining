@@ -128,7 +128,7 @@ class z extends Chunk473749.PureComponent {
   }
   getMode() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props;
-    return w.a ? W : e.login ? H : W
+    return w.aA ? W : e.login ? H : W
   }
   track(e, t, n) {
     let {
@@ -271,7 +271,7 @@ class z extends Chunk473749.PureComponent {
       case k.r2o.APP_NOT_OPENED:
         return this.renderContinue();
       case k.r2o.RESOLVING:
-        return w.a ? this.renderSpinner(U.intl.string(U.t.MKDeyL)) : this.renderSpinner(U.intl.string(U.t["Z+hCVU"]));
+        return w.aA ? this.renderSpinner(U.intl.string(U.t.MKDeyL)) : this.renderSpinner(U.intl.string(U.t["Z+hCVU"]));
       case k.r2o.APP_OPENING:
         return this.renderSpinner(U.intl.string(U.t["Z+hCVU"]));
       case k.r2o.RESOLVED:

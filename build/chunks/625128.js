@@ -31,7 +31,7 @@ function o(e) {
 let s = {
   openNativeAppModal(e, t) {
     let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-    i.a || (r.Z.dispatch({
+    i.aA || (r.Z.dispatch({
       type: "NATIVE_APP_MODAL_OPENING",
       code: e
     }), Promise.resolve().then(n.bind(n, 536285)).then(n => {
