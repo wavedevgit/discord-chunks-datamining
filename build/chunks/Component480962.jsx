@@ -97,8 +97,7 @@ function S(e) {
   i.useLayoutEffect(() => {
     P(true)
   }, []), i.useLayoutEffect(() => {
-    var e;
-    h && ((0, u.F)(T), null == (e = A.current) || e.focus())
+    h && (0, u.F)(T)
   }, [h]);
   let w = (0, r.jsx)("div", {
       className: _.submenuPaddingContainer,
@@ -116,7 +115,7 @@ function S(e) {
     D = (0, f.c)("MenuSubmenuItem"),
     [x, L] = i.useState(false);
   if (R) return (0, r.jsx)(s.pS, {
-    open: x,
+    open: x || h,
     viewportPadding: p.sb,
     maxHeight: p.Ts,
     onOpenChange: L,
