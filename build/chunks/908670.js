@@ -4,8 +4,8 @@
 require.d(exports, {
   f: () => i
 });
-var Chunk853590 = require("./853590.js");
+var Chunk81239 = require("./81239.js");
 let i = new(require("./603161.js")).Z;
-Chunk853590.Globals.assign({
+Chunk81239.Globals.assign({
   frameLoop: i
 })

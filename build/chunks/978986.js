@@ -13,7 +13,7 @@ require.d(exports, {
   y: () => h,
   yr: () => I
 }), require("./781311.js");
-var Chunk663042 = require("./663042.js"),
+var Chunk121168 = require("./121168.js"),
   Chunk524437 = require("./524437.js"),
   Chunk695346 = require("./695346.js"),
   Chunk594174 = require("./594174.js");
@@ -58,7 +58,7 @@ function d(e) {
   let t = l.no.getSetting();
   return t !== i.GI.ACTIVITY_STATUS_ON && (t !== i.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || null == e || !(e > 200))
 }
-let a = (0, Chunk663042.U)(e => ({
+let a = (0, Chunk121168.U)(e => ({
     nickname: s.nickname,
     dmsAllowed: s.dmsAllowed,
     showActivity: true,

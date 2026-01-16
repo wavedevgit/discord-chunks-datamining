@@ -12,9 +12,21 @@ let r = (0, require("./427164.js").le)({
   },
   variations: {
     1: {
-      enableNewRequestBehavior: true
+      enableNewRequestBehavior: false
     },
     2: {
+      enableNewRequestBehavior: true
+    },
+    3: {
+      enableNewRequestBehavior: false
+    },
+    4: {
+      enableNewRequestBehavior: true
+    },
+    5: {
+      enableNewRequestBehavior: true
+    },
+    6: {
       enableNewRequestBehavior: true
     }
   }

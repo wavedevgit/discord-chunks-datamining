@@ -10,7 +10,7 @@ require.d(exports, {
   f0: () => x,
   gE: () => L
 }), require("./388685.js"), require("./290780.js");
-var r, Chunk748521 = require("./748521.js"),
+var r, Chunk524550 = require("./524550.js"),
   Chunk731965 = require("./731965.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -70,7 +70,7 @@ let m = new(require("./499303.js")).I,
     lastWinnerTime: 0,
     postConnectionOpen: false
   }),
-  y = (0, Chunk748521.F)(b),
+  y = (0, Chunk524550.F)(b),
   O = false,
   v = e => h(p({}, e), {
     candidates: new Map(e.candidates),

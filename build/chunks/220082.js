@@ -11,7 +11,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk979590 = require("./979590.js"),
   a = require.n(Chunk979590),
-  Chunk663042 = require("./663042.js"),
+  Chunk121168 = require("./121168.js"),
   Chunk731965 = require("./731965.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
@@ -56,7 +56,7 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = (0, Chunk663042.U)(() => ({
+let m = (0, Chunk121168.U)(() => ({
   palette: {},
   fetching: {}
 }));

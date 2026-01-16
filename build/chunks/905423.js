@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => c
 });
 var Chunk828700 = require("./828700.js"),
-  Chunk748521 = require("./748521.js"),
+  Chunk524550 = require("./524550.js"),
   Chunk731965 = require("./731965.js"),
   Chunk893607 = require("./893607.js"),
   Chunk981631 = require("./981631.js");
@@ -37,7 +37,7 @@ function l(e) {
     channelId: null
   }
 }
-let c = (0, Chunk748521.F)(e => ({
+let c = (0, Chunk524550.F)(e => ({
   path: null,
   basePath: "/",
   guildId: null,

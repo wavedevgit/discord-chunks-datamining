@@ -9,8 +9,8 @@ require.d(exports, {
   yY: () => S
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
-  Chunk55160 = require("./55160.js"),
-  Chunk748521 = require("./748521.js"),
+  Chunk782425 = require("./782425.js"),
+  Chunk524550 = require("./524550.js"),
   Chunk731965 = require("./731965.js");
 
 function s(e, t, n) {
@@ -60,7 +60,7 @@ let d = {
     onlyWhenBlurred: false,
     interval: 1e3
   },
-  _ = (0, Chunk748521.F)(() => ({
+  _ = (0, Chunk524550.F)(() => ({
     titles: [d],
     notificationCount: true,
     flashQueue: []
