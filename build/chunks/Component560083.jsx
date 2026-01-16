@@ -29,14 +29,14 @@ function I(e) {
   let {
     sku: t,
     guildId: a
-  } = e, c = (0, s.q)(t.applicationId), l = r.useMemo(() => (0, h.wQ)(a, t), [a, t]);
+  } = e, c = (0, l.q)(t.applicationId), s = r.useMemo(() => (0, h.wQ)(a, t), [a, t]);
   return (0, n.jsxs)("div", {
     className: P.forwardPreview,
     children: [(0, n.jsxs)("div", {
       className: P.linkContainer,
       children: [(0, n.jsx)(i.Z, {
         title: t.name,
-        href: l,
+        href: s,
         children: (0, n.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-link",
@@ -57,7 +57,7 @@ function I(e) {
           })
         })]
       })]
-    }), (0, n.jsx)(_.A, {
+    }), (0, n.jsx)(y.A, {
       containerClassName: P.cardImage,
       foregroundImageClassName: P.cardImage,
       backgroundImageClassName: P.cardImage,
@@ -70,8 +70,8 @@ function I(e) {
 function x(e) {
   var t, a, {
       sku: i,
-      guildId: s,
-      source: _,
+      guildId: l,
+      source: y,
       onClose: P,
       analyticsLocations: x,
       analyticsContext: j
@@ -93,7 +93,7 @@ function x(e) {
     }(e, ["sku", "guildId", "source", "onClose", "analyticsLocations", "analyticsContext"]);
   let {
     analyticsLocations: k
-  } = (0, l.ZP)(null != x ? x : []), S = r.useCallback(async (e, t, a) => {
+  } = (0, s.ZP)(null != x ? x : []), S = r.useCallback(async (e, t, a) => {
     let {
       withMessage: n,
       closeAfterSend: r
@@ -103,10 +103,10 @@ function x(e) {
       let t = (await Promise.all(e.map(b.qx))).filter(w.lm);
       if (0 === t.length) return void a(false);
       r && P();
-      let l = (0, h.l8)(s, i);
+      let s = (0, h.l8)(l, i);
       for (let e of t) {
         let t = f.Z.getChannel(e);
-        null != t && await c.Z.sendMessage(t.id, u.ZP.parse(t, l + (null != n ? n : "")), false, {
+        null != t && await c.Z.sendMessage(t.id, u.ZP.parse(t, s + (null != n ? n : "")), false, {
           location: g.dy.SOCIAL_LAYER_STOREFRONT
         })
       }(0, o.showToast)((0, o.createToast)(v.intl.string(v.t.kwmYkt), o.ToastType.SUCCESS))
@@ -115,20 +115,20 @@ function x(e) {
     } finally {
       a(false)
     }
-  }, [P, s, i]), T = r.useMemo(() => [{
+  }, [P, l, i]), T = r.useMemo(() => [{
     variant: "secondary",
     text: true,
     onClick: () => {
       p.default.track(O.rMx.SLAYER_STOREFRONT_FORWARD_MODAL_ELEMENT_CLICKED, {
         slayer_storefront_session_id: null == j ? true : j.sessionId,
-        guild_id: s,
+        guild_id: l,
         sku_id: i.id,
-        cta_type: y.eR.COPY_LINK_BUTTON,
+        cta_type: _.eR.COPY_LINK_BUTTON,
         location_stack: k
-      }), (0, m.JG)((0, h.wQ)(s, i), () => (0, o.showToast)((0, o.createToast)(v.intl.string(v.t["L/PwZf"]), o.ToastType.SUCCESS)))
+      }), (0, m.JG)((0, h.wQ)(l, i), () => (0, o.showToast)((0, o.createToast)(v.intl.string(v.t["L/PwZf"]), o.ToastType.SUCCESS)))
     },
     icon: o.xPt
-  }], [s, i, null == j ? true : j.sessionId, k]);
+  }], [l, i, null == j ? true : j.sessionId, k]);
   return (0, n.jsx)(d.ForwardModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var a = null != arguments[t] ? arguments[t] : {},
@@ -148,10 +148,10 @@ function x(e) {
     return e
   }({}, C), a = a = {
     onClose: P,
-    source: _,
+    source: y,
     customPreview: (0, n.jsx)(I, {
       sku: i,
-      guildId: s
+      guildId: l
     }),
     customSubtitle: v.intl.string(v.t.yiaXeN),
     customSendHandler: S,

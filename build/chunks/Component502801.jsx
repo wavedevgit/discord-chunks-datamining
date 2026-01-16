@@ -1,7 +1,7 @@
 /** Chunk was on 26213 **/
 /** chunk id: 502801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => L
 }), require("./539854.js"), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,43 +33,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk655428 = require("./655428.js");
 
-function R(e) {
+function E(e) {
   var t;
   let {
     clips: n
-  } = e, r = n[0], i = r.thumbnail, l = null;
-  return "" !== i && (l = (0, a.jsx)("div", {
-    className: c()(L.attachmentPreview, L.attachmentPreviewVideo),
-    children: (0, a.jsx)(b.ZP, {
-      className: L.thumbnail,
+  } = e, r = n[0], i = r.thumbnail, o = null;
+  return "" !== i && (o = (0, a.jsx)("div", {
+    className: c()(R.attachmentPreview, R.attachmentPreviewVideo),
+    children: (0, a.jsx)(p.ZP, {
+      className: R.thumbnail,
       src: i,
       width: 56,
       height: 56
     })
-  }), n.length > 1 && (l = (0, a.jsxs)("div", {
-    className: L.attachmentPreviewOverflow,
+  }), n.length > 1 && (o = (0, a.jsxs)("div", {
+    className: R.attachmentPreviewOverflow,
     children: [(0, a.jsx)(d.ZP, {
       mask: d.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
       width: 56,
       height: 56,
-      children: l
-    }), (0, a.jsxs)(o.Text, {
-      className: L.overflowCount,
+      children: o
+    }), (0, a.jsxs)(l.Text, {
+      className: R.overflowCount,
       variant: "text-xs/semibold",
       color: "text-default",
       children: ["+", n.length - 1]
     })]
   }))), (0, a.jsxs)("div", {
-    className: L.forwardPreview,
+    className: R.forwardPreview,
     children: [(0, a.jsx)("div", {
-      className: L.contentWrapper,
+      className: R.contentWrapper,
       children: (0, a.jsxs)("div", {
-        className: L.attachmentRow,
-        children: [(0, a.jsx)(o.g8d, {
+        className: R.attachmentRow,
+        children: [(0, a.jsx)(l.g8d, {
           size: "custom",
           width: 20,
-          color: o.TVs.colors.TEXT_MUTED
-        }), (0, a.jsx)(o.Text, {
+          color: l.TVs.colors.TEXT_MUTED
+        }), (0, a.jsx)(l.Text, {
           variant: "text-md/medium",
           color: "text-muted",
           children: 1 === n.length ? null != (t = r.name) ? t : k.intl.string(k.t.Cyxddp) : k.intl.formatToPlainString(k.t.SJ6pPX, {
@@ -77,17 +77,17 @@ function R(e) {
           })
         })]
       })
-    }), l]
+    }), o]
   })
 }
 
-function E(e) {
+function L(e) {
   var t, n, {
       clips: i,
       analyticsLocations: c,
       onClose: d
     } = e,
-    b = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -102,7 +102,7 @@ function E(e) {
       }
       return r
     }(e, ["clips", "analyticsLocations", "onClose"]);
-  let L = r.useCallback(async (e, t, n) => {
+  let R = r.useCallback(async (e, t, n) => {
       let {
         withMessage: a,
         transitionToDestination: r,
@@ -113,9 +113,9 @@ function E(e) {
         let t = [],
           m = [];
         for (let e of i) {
-          var b;
+          var p;
           let n = await (0, x.rO)(e),
-            a = null != (b = e.name) ? b : (0, T.yl)(v.default.extractTimestamp(e.id)),
+            a = null != (p = e.name) ? p : (0, T.yl)(v.default.extractTimestamp(e.id)),
             r = (0, j.Z)(a);
           if (e.type === P.NJ.CLIP || e.type === P.NJ.VOICE_CLIP) {
             let a = "".concat("" !== r ? r : "clip", ".mp4");
@@ -131,12 +131,12 @@ function E(e) {
             })), m.push({})
           }
         }
-        let L = (await Promise.all(e.map(h.qx))).filter(_.lm).filter(e => (0, I.W)(e));
-        if (0 === L.length) {
-          (0, o.showToast)((0, o.createToast)(k.intl.string(k.t.iufib1), o.ToastType.FAILURE)), n(false);
+        let R = (await Promise.all(e.map(h.qx))).filter(_.lm).filter(e => (0, I.W)(e));
+        if (0 === R.length) {
+          (0, l.showToast)((0, l.createToast)(k.intl.string(k.t.iufib1), l.ToastType.FAILURE)), n(false);
           return
         }
-        for (let e of (u && d(), L)) {
+        for (let e of (u && d(), R)) {
           let n = w.Z.getChannel(e);
           if (null != n) {
             for (let e of ((0, O.d)(t, n, y.d.ChannelMessage, {
@@ -151,21 +151,21 @@ function E(e) {
               application_id: e.applicationId,
               clip_id: e.id
             });
-            null != a && "" !== a.trim() && await s.Z.sendMessage(n.id, p.ZP.parse(n, a), false, {
+            null != a && "" !== a.trim() && await s.Z.sendMessage(n.id, f.ZP.parse(n, a), false, {
               location: S.dy.FORWARDING
             })
           }
         }
-        r && 1 === L.length && ((0, f.Kh)(L[0], {
+        r && 1 === R.length && ((0, b.Kh)(R[0], {
           openTextInVoiceIfVoiceChannel: true
-        }), l.closeAllModals())
+        }), o.closeAllModals())
       } catch (e) {
-        (0, o.showToast)((0, o.createToast)(k.intl.string(k.t.iufib1), o.ToastType.FAILURE))
+        (0, l.showToast)((0, l.createToast)(k.intl.string(k.t.iufib1), l.ToastType.FAILURE))
       } finally {
         n(false)
       }
     }, [i, c, d]),
-    E = r.useCallback(e => {
+    L = r.useCallback(e => {
       if (e instanceof m.Sf && !(0, I.W)(e.id)) return {
         label: k.intl.string(k.t.iufib1)
       }
@@ -187,15 +187,15 @@ function E(e) {
       })
     }
     return e
-  }({}, b), n = n = {
+  }({}, p), n = n = {
     onClose: d,
     customTitle: k.intl.string(k.t.I8lglT),
     customSubtitle: k.intl.string(k.t.Ey7mOU),
-    customPreview: (0, a.jsx)(R, {
+    customPreview: (0, a.jsx)(E, {
       clips: i
     }),
-    customSendHandler: L,
-    customValidateDestination: E
+    customSendHandler: R,
+    customValidateDestination: L
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

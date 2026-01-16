@@ -23,9 +23,9 @@ function v(e) {
     maxAgeOptions: v,
     maxAge: I,
     maxUses: m,
-    temporary: S,
+    temporary: x,
     onToggleTemporary: f,
-    onSelectMaxAge: x,
+    onSelectMaxAge: S,
     onSelectMaxUses: y,
     isGuestInviteCreationToggleEnabled: E,
     inviteFlags: _,
@@ -60,7 +60,7 @@ function v(e) {
       label: g.intl.string(g.t["60qw2x"]),
       options: v,
       value: null != (t = null == M ? true : M.value) ? t : v[0].value,
-      onChange: x
+      onChange: S
     }), (0, l.jsx)(a.d, {
       label: g.intl.string(g.t.jDqWHW),
       options: p,
@@ -75,7 +75,7 @@ function v(e) {
       selectionMode: "multiple",
       closeOnSelect: false
     }), !n && (0, l.jsx)(u.rsf, {
-      checked: S,
+      checked: x,
       onChange: e => f(e),
       description: g.intl.string(g.t.UN5IRX),
       label: g.intl.string(g.t["wE+9dr"])

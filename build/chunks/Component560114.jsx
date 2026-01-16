@@ -120,7 +120,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       maxAge: v,
       maxUses: I,
       temporary: m,
-      flags: S
+      flags: x
     } = h;
     if (i) {
       let n = null == e ? true : e.id;
@@ -135,7 +135,7 @@ class ec extends(l = Chunk473749.PureComponent) {
         target_type: a,
         target_application_id: null == u ? true : u.id,
         temporary: m,
-        flags: S
+        flags: x
       }, l).catch(e => p({
         networkError: e
       }))
@@ -193,12 +193,12 @@ class ec extends(l = Chunk473749.PureComponent) {
     } = this.props;
     return (0, C.Z)(e) ? (0, i.jsxs)("div", {
       className: el.warningContainer,
-      children: [(0, i.jsx)(S.Mgn, {
+      children: [(0, i.jsx)(x.Mgn, {
         size: "custom",
         className: el.warningIcon,
         color: I.Z.unsafe_rawColors.YELLOW_300.css,
         width: 12
-      }), (0, i.jsx)(S.Text, {
+      }), (0, i.jsx)(x.Text, {
         variant: "text-xs/normal",
         color: "text-default",
         children: en.intl.string(en.t.x1SQZb)
@@ -247,7 +247,7 @@ class ec extends(l = Chunk473749.PureComponent) {
     return {
       bodyContent: true,
       controls: (0, i.jsxs)(i.Fragment, {
-        children: [t && (0, i.jsx)(S.E1j, {
+        children: [t && (0, i.jsx)(x.E1j, {
           size: "md",
           query: l,
           onChange: this.handleQueryChange,
@@ -269,7 +269,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       sectionHeight: 0,
       renderRow: () => (0, i.jsx)("div", {
         className: el.inviteRowEmptyState,
-        children: (0, i.jsx)(S.OZU, {
+        children: (0, i.jsx)(x.OZU, {
           children: en.intl.string(en.t.ojoWgX)
         })
       }),
@@ -279,7 +279,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       sectionHeight: 0,
       renderRow: () => (0, i.jsx)("div", {
         className: el.inviteRowEmptyState,
-        children: (0, i.jsx)(S.OZU, {
+        children: (0, i.jsx)(x.OZU, {
           children: en.intl.string(en.t.hzPwGG)
         })
       }),
@@ -313,7 +313,7 @@ class ec extends(l = Chunk473749.PureComponent) {
     let o = (0, P.eM)(t, a) ? en.intl.string(en.t.HFbByJ) : en.intl.string(en.t.ueBhA9);
     return null != l ? o = en.intl.string(en.t.CXpS1I) : null != s && (o = en.intl.string(en.t.ueCrHB)), {
       bodyContent: (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(S.Text, {
+        children: [(0, i.jsx)(x.Text, {
           className: el.subText,
           variant: "text-sm/normal",
           children: o
@@ -341,7 +341,7 @@ class ec extends(l = Chunk473749.PureComponent) {
     } = o, d = null, c = (0, K.Z)(null != (e = this.getInviteKey()) ? e : "");
     if (n) {
       let e = en.intl.string(en.t.MLkj7N);
-      null != s ? e = en.intl.string(en.t["1b9neu"]) : null != r ? e = en.intl.string(en.t.iI1gMg) : null != l ? e = en.intl.string(en.t.KaWCyD) : (null == a ? true : a.isGuildStageVoice()) && (e = en.intl.string(en.t["2frWa3"])), d = (0, i.jsx)(S.gNt, {
+      null != s ? e = en.intl.string(en.t["1b9neu"]) : null != r ? e = en.intl.string(en.t.iI1gMg) : null != l ? e = en.intl.string(en.t.KaWCyD) : (null == a ? true : a.isGuildStageVoice()) && (e = en.intl.string(en.t["2frWa3"])), d = (0, i.jsx)(x.gNt, {
         label: e,
         children: (0, i.jsx)(Q.I, ea(er({}, this.props), {
           setInviteFlags: this.handleSetInviteFlags,
@@ -350,16 +350,16 @@ class ec extends(l = Chunk473749.PureComponent) {
       })
     } else t || (d = (0, i.jsxs)("div", {
       className: el.footerWithCheckbox,
-      children: [(0, i.jsx)(S.Checkbox, {
+      children: [(0, i.jsx)(x.Checkbox, {
         checked: u === eo.value,
         onChange: this.handleToggleMaxAge,
         label: en.intl.string(en.t["QKJru/"])
       }), (0, i.jsx)(m.u, {
         text: en.intl.string(en.t.Yx4IiC),
-        children: (0, i.jsx)(S.P3F, {
+        children: (0, i.jsx)(x.P3F, {
           onClick: this.openSettings,
           className: ei.cursorPointer,
-          children: (0, i.jsx)(S.ewm, {
+          children: (0, i.jsx)(x.ewm, {
             size: "sm",
             color: I.Z.unsafe_rawColors.PRIMARY_400.css
           })
@@ -475,7 +475,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       };
       "" === e && "" !== n.query ? (i.sectionVisibility = er({}, n.defaultSectionVisibility), i.defaultSectionVisibility = {}) : "" !== e && "" === n.query && (i.defaultSectionVisibility = er({}, n.sectionVisibility), i.sectionVisibility = {}), null == (t = this._scroller) || t.scrollTo({
         to: 0
-      }), (0, x.C)(e), l(i)
+      }), (0, S.C)(e), l(i)
     }), es(this, "handleClearSearch", () => {
       this.handleQueryChange("")
     }), es(this, "handleToggleMaxAge", () => {
@@ -574,7 +574,7 @@ function eg(e) {
     isOpen: l,
     onToggleVisibility: s
   } = e;
-  return (0, i.jsxs)(S.P3F, {
+  return (0, i.jsxs)(x.P3F, {
     style: {
       "--custom-invite-section-header-height": 24,
       "--custom-invite-section-header-gap": 12 * (0 !== t),
@@ -582,11 +582,11 @@ function eg(e) {
     },
     className: el.inviteSectionHeader,
     onClick: () => s(t),
-    children: [(0, i.jsx)(S.Text, {
+    children: [(0, i.jsx)(x.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       children: n
-    }), (0, i.jsx)(S.CJ0, {
+    }), (0, i.jsx)(x.CJ0, {
       size: "md",
       color: "currentColor",
       className: el.inviteSectionToggleIcon
@@ -609,7 +609,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
     transitionState: p,
     onClose: I,
     page: m,
-    analyticsLocation: S
+    analyticsLocation: x
   } = e, {
     analyticsLocations: T
   } = (0, _.ZP)(E.Z.INSTANT_INVITE_MODAL), A = (0, v.e7)([G.Z, w.Z, R.ZP], () => {
@@ -659,7 +659,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
     eg = null == r ? true : r.id,
     eh = (0, v.e7)([M.Z], () => M.Z.getStageInstanceByChannel(eg), [eg]);
   s.useEffect(() => {
-    (0, x.x)({
+    (0, S.x)({
       omitUserIds: ea,
       guild: a,
       channel: r,
@@ -667,7 +667,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
       inviteTargetType: P
     }).catch(ee.VqG)
   }, [ea, r, a, c, P]);
-  let [ep] = (0, b.Z)(null != c ? [c] : []), ev = null != F ? F.code : true, eI = null == F ? true : F.maxAge, em = null == F ? true : F.maxUses, eS = null == F ? true : F.temporary, ef = a.vanityURLCode, ex = null != ef && ef.length > 0, ey = !en && !(null == A ? true : A.isGuildVocal()) && ex, eE = null != (n = null == F ? true : F.flags) ? n : 0;
+  let [ep] = (0, b.Z)(null != c ? [c] : []), ev = null != F ? F.code : true, eI = null == F ? true : F.maxAge, em = null == F ? true : F.maxUses, ex = null == F ? true : F.temporary, ef = a.vanityURLCode, eS = null != ef && ef.length > 0, ey = !en && !(null == A ? true : A.isGuildVocal()) && eS, eE = null != (n = null == F ? true : F.flags) ? n : 0;
   en || (null == eh ? true : eh.invite_code) == null || (ev = eh.invite_code);
   let e_ = s.useMemo(() => ei ? (0, B.Qq)(q, Z) : null, [ei, q, Z]),
     [eb, eC] = s.useState({
@@ -676,7 +676,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
       maxAge: null != (l = null != eI ? eI : k) ? l : H.zv,
       savedMaxAge: eI === eo.value ? null != k ? k : eu.value : eo.value,
       maxUses: null != em && 0 !== em ? em : ed.value,
-      temporary: null != eS && eS,
+      temporary: null != ex && ex,
       networkError: true,
       showVanityURL: ey,
       currentPage: null != m ? m : X.RV.MAIN,
@@ -786,7 +786,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
       code: ev,
       source: o,
       analyticsLocations: T,
-      analyticsLocation: S,
+      analyticsLocation: x,
       transitionState: p,
       onClose: I,
       canShowVanityURL: ey,

@@ -19,7 +19,7 @@ let p = () => {
     message: e,
     channel: t,
     updateMessageText: n
-  } = (0, d.C$)(), p = (0, o.e7)([u.Z], () => u.Z.getDraft(e.channel_id, u.d.ChannelMessage)), [g, h] = a.useState(() => (0, s.eK)(p)), {
+  } = (0, d.C$)(), p = (0, o.e7)([u.Z], () => u.Z.getDraft(e.channel_id, u.d.ChannelMessage)), [g, h] = a.useState(() => (0, i.eK)(p)), {
     textValue: m,
     richValue: y
   } = g;
@@ -42,7 +42,7 @@ let p = () => {
     shouldClear: true,
     shouldRefocus: false
   });
-  return (0, r.jsx)(i.ZP, {
+  return (0, r.jsx)(s.ZP, {
     innerClassName: f.messageInput,
     onChange: O,
     placeholder: b.intl.string(b.t.ZroO3G),

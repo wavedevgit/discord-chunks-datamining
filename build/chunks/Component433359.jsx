@@ -42,7 +42,7 @@ let O = e => {
   }), [E, k, M, I]), T = a.useMemo(() => (0, d.createChannelRecord)({
     id: "1",
     type: l.d.DM
-  }), []), R = a.useMemo(() => (0, s.e5)(function(e) {
+  }), []), R = a.useMemo(() => (0, i.e5)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -59,7 +59,7 @@ let O = e => {
       })
     }
     return e
-  }({}, (0, i.ZP)({
+  }({}, (0, s.ZP)({
     channelId: T.id,
     content: ""
   }))), [T]);

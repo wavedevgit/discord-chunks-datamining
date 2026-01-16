@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 462376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => x,
+  d: () => S,
   k: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk444942 = require("./444942.js");
 
-function S(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,8 +28,8 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = 44;
-class x extends Chunk473749.Component {
+let f = 48;
+class S extends Chunk473749.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }
@@ -63,19 +63,29 @@ class x extends Chunk473749.Component {
     })
   }
   render() {
-    let {
-      user: e,
-      channel: t
-    } = this.props, {
-      sending: n,
-      invited: i
-    } = this.state, r = (0, l.jsx)(s.Button, {
+    let e, t, {
+        user: n,
+        channel: i
+      } = this.props,
+      {
+        sending: r,
+        invited: a
+      } = this.state;
+    if (null != n) {
+      let l = v.ZP.getName(n),
+        i = c.Z.getNickname(n.id),
+        s = v.ZP.getUserTag(n, {
+          decoration: "never"
+        });
+      e = null != i ? i : l, t = s
+    }
+    let u = (0, l.jsx)(s.Button, {
       variant: "secondary",
-      text: i ? I.intl.string(I.t.dVT149) : I.intl.string(I.t.jYnGPG),
+      text: a ? I.intl.string(I.t.dVT149) : I.intl.string(I.t.jYnGPG),
       size: "sm",
-      loading: n,
+      loading: r,
       onClick: this.handleClickInvite,
-      disabled: i
+      disabled: a
     });
     return (0, l.jsxs)("div", {
       className: m.inviteRow,
@@ -84,26 +94,36 @@ class x extends Chunk473749.Component {
       children: [(0, l.jsxs)("div", {
         className: m.inviteRowInfo,
         children: [this.renderUserOrChannel(), (0, l.jsxs)("div", {
-          className: m.inviteRowName,
-          children: [v.ZP.getName(e), null != t ? (0, o.F6)(t, g.default, c.Z, true) : null]
+          className: m.inviteRowLabels,
+          children: [(0, l.jsxs)(s.Text, {
+            tag: "strong",
+            variant: "text-md/semibold",
+            lineClamp: 1,
+            children: [e, null != i ? (0, o.F6)(i, g.default, c.Z, true) : null]
+          }), null != t && (0, l.jsx)(s.Text, {
+            variant: "text-xs/normal",
+            color: "text-muted",
+            lineClamp: 1,
+            children: t
+          })]
         })]
-      }), r]
+      }), u]
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), x(this, "state", {
       sending: false,
       invited: false,
       hovered: false
-    }), S(this, "handleMouseEnter", () => {
+    }), x(this, "handleMouseEnter", () => {
       this.setState({
         hovered: true
       })
-    }), S(this, "handleMouseLeave", () => {
+    }), x(this, "handleMouseLeave", () => {
       this.setState({
         hovered: false
       })
-    }), S(this, "getInviteAnalyticsMetadata", () => {
+    }), x(this, "getInviteAnalyticsMetadata", () => {
       let {
         row: e,
         source: t
@@ -112,7 +132,7 @@ class x extends Chunk473749.Component {
         suggestionData: d.Z.getSelectedInviteMetadata(e),
         source: t
       }
-    }), S(this, "handleClickInvite", () => {
+    }), x(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,

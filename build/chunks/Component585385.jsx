@@ -22,10 +22,10 @@ let a = e => {
     transitionState: v,
     isRoleAssignmentEnabled: I,
     assignableRoles: m,
-    onToggleRole: S
+    onToggleRole: x
   } = e, {
     maxAgeOptions: f,
-    maxAge: x,
+    maxAge: S,
     maxUses: y,
     temporary: E,
     flags: _,
@@ -49,7 +49,7 @@ let a = e => {
     children: (0, l.jsx)(s.Z, {
       shouldHideTemporaryInviteToggle: a,
       maxAgeOptions: f,
-      maxAge: x,
+      maxAge: S,
       maxUses: y,
       temporary: E,
       onToggleTemporary: u,
@@ -61,7 +61,7 @@ let a = e => {
       isRoleAssignmentEnabled: I,
       assignableRoles: m,
       selectedRoleIds: b,
-      onToggleRole: S
+      onToggleRole: x
     })
   })
 }
