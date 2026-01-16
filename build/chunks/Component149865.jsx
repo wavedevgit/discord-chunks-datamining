@@ -41,7 +41,7 @@ function u(e) {
       }) : null]
     }) : null, (0, r.jsx)(a.Kqy, {
       direction: "vertical",
-      gap: 8,
+      gap: 16,
       children: f.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
