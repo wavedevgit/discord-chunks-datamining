@@ -24,7 +24,7 @@ function m(e) {
     avError: i
   } = e, m = l.useRef(null), h = "", {
     text: E,
-    node: _
+    node: v
   } = function(e) {
     var t;
     if (null == e) return {
@@ -48,13 +48,13 @@ function m(e) {
     }
   }(i);
   h = null != E ? "".concat(t, " ").concat(E) : t;
-  let [v] = l.useState(new o.V7), [y, O] = l.useState(false), [S, C] = l.useState(false), I = l.useCallback(() => {
-    v.start(250, () => {
+  let [_] = l.useState(new o.V7), [y, O] = l.useState(false), [S, C] = l.useState(false), I = l.useCallback(() => {
+    _.start(250, () => {
       O(false)
     }, false)
-  }, [v, O]), N = l.useCallback(() => {
-    v.stop(), O(true)
-  }, [v, O]), T = l.useCallback(() => {
+  }, [_, O]), N = l.useCallback(() => {
+    _.stop(), O(true)
+  }, [_, O]), T = l.useCallback(() => {
     C(true)
   }, []), x = l.useCallback(() => {
     C(false)
@@ -65,11 +65,11 @@ function m(e) {
         className: b.popout,
         onMouseEnter: N,
         onMouseLeave: I,
-        children: [t, null != _ && (0, r.jsx)(c.Text, {
+        children: [t, null != v && (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           className: b.errorCodeMessage,
-          children: _
+          children: v
         })]
       })
     }),

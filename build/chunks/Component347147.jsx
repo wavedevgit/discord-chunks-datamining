@@ -120,7 +120,7 @@ let Z = Chunk473749.memo(function(e) {
     config: N(I({}, c.config.stiff), {
       clamp: true
     })
-  }, "animate-always"), e_ = $ > n, ev = l.useCallback(e => {
+  }, "animate-always"), ev = $ > n, e_ = l.useCallback(e => {
     e.width > 0 && e.height > 0 && ea(e.width / e.height), null == y || y(e)
   }, [y]), ey = l.useCallback(e => {
     if (null == eb.current) return T;
@@ -152,12 +152,12 @@ let Z = Chunk473749.memo(function(e) {
       eu(false)
     })
   }, [eO, i, n, E, $]), eC = l.useCallback(e => {
-    if (!e_) return;
+    if (!ev) return;
     e.preventDefault(), e.stopPropagation();
     let t = ey(e);
     L(true), W(t), F(t), G(Date.now()), Q(t), Y(H)
-  }, [ey, e_, H]), eI = l.useCallback(e => {
-    if ((t || e_) && R(), !k || !e_ || null == q || null == K) return;
+  }, [ey, ev, H]), eI = l.useCallback(e => {
+    if ((t || ev) && R(), !k || !ev || null == q || null == K) return;
     e.preventDefault(), e.stopPropagation();
     let n = ey(e),
       r = n.x - q.x,
@@ -166,10 +166,10 @@ let Z = Chunk473749.memo(function(e) {
       x: K.x + r,
       y: K.y + l
     })), F(n)
-  }, [eO, q, K, t, ey, k, e_, R]), eN = l.useCallback(e => {
+  }, [eO, q, K, t, ey, k, ev, R]), eN = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), L(false), Q(null), Y(null)
   }, []), eT = l.useCallback(e => {
-    if (e_ && null != V && null != U) {
+    if (ev && null != V && null != U) {
       let {
         x: t,
         y: n
@@ -179,7 +179,7 @@ let Z = Chunk473749.memo(function(e) {
       } = U;
       (Math.sqrt((r - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - B >= 500) && (e.preventDefault(), e.stopPropagation())
     }
-  }, [e_, V, B, U]), ex = l.useCallback(() => {
+  }, [ev, V, B, U]), ex = l.useCallback(() => {
     L(false), Q(null), Y(null)
   }, []), eP = l.useCallback(e => {
     t && (en(true), eS($ - e.deltaY / 100, ey(e), "wheel"), R(), ed.current.start(100, () => {
@@ -231,7 +231,7 @@ let Z = Chunk473749.memo(function(e) {
       width: t,
       height: n
     } = e;
-    if (!e_ || null == t || null == n) return;
+    if (!ev || null == t || null == n) return;
     let r = eh.current;
     if (null == r) {
       eh.current = {
@@ -260,11 +260,11 @@ let Z = Chunk473749.memo(function(e) {
     }, ep.current.start(100, () => {
       ec(false)
     }))
-  }, [eO, e_, $]), [e_, $]), (0, p.zq)(() => {
+  }, [eO, ev, $]), [ev, $]), (0, p.zq)(() => {
     ed.current.stop(), ef.current.stop(), ep.current.stop(), eg.current.stop()
   }), l.useEffect(() => {
-    null != h && (0, _.$)(h, true, t && e_ ? $ : 1)
-  }, [t, e_, h, $]);
+    null != h && (0, v.$)(h, true, t && ev ? $ : 1)
+  }, [t, ev, h, $]);
   let eV = l.useMemo(() => {
       let e = eO(H);
       return {
@@ -299,7 +299,7 @@ let Z = Chunk473749.memo(function(e) {
   return (0, r.jsxs)("div", {
     ref: eb,
     className: a()(C.wrapper, Z, {
-      [C.zoomEnabled]: t && e_,
+      [C.zoomEnabled]: t && ev,
       [C.zoomDragging]: k
     }),
     onMouseDown: eC,
@@ -312,8 +312,8 @@ let Z = Chunk473749.memo(function(e) {
       children: null != h && (0, r.jsx)("div", {
         className: a()(C.videoContainer, C.zoomed),
         style: eV,
-        children: (0, r.jsx)(v.Z, N(I({}, b), {
-          onResize: ev,
+        children: (0, r.jsx)(_.Z, N(I({}, b), {
+          onResize: e_,
           wrapperClassName: true
         }))
       })
@@ -326,12 +326,12 @@ let Z = Chunk473749.memo(function(e) {
       },
       children: (0, r.jsxs)("div", {
         className: a()(C.zoomControls, {
-          [C.zoomControlsWithChildren]: es || e_
+          [C.zoomControlsWithChildren]: es || ev
         }),
         onMouseEnter: eA,
         onMouseLeave: eR,
         onClick: eD,
-        children: [(es || e_) && (0, r.jsx)(d.P3F, {
+        children: [(es || ev) && (0, r.jsx)(d.P3F, {
           onClick: eF,
           onMouseEnter: eA,
           onMouseLeave: eR,
@@ -356,7 +356,7 @@ let Z = Chunk473749.memo(function(e) {
           })
         }), (0, r.jsxs)("div", {
           className: C.zoomControlsRow,
-          children: [(es || e_) && (0, r.jsxs)(r.Fragment, {
+          children: [(es || ev) && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.u, {
               text: O.intl.string(O.t.M6Cmwy),
               position: "top",

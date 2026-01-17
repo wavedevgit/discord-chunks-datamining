@@ -26,7 +26,7 @@ function h(e) {
   } = e, {
     emoji: h,
     sentAt: E
-  } = n, _ = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [v, y] = l.useState(true), O = !_, S = (0, o.Yzy)(v, {
+  } = n, v = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [_, y] = l.useState(true), O = !v, S = (0, o.Yzy)(_, {
     from: {
       rotate: false
     },

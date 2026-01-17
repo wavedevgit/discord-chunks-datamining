@@ -122,7 +122,7 @@ function eu(e) {
 }
 class ed extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, j.Z, w.Z, _.Z, A.Z, R.Z, D.Z, k.Z, L.Z, U.Z, T.Z, F.Z, V.default, W.Z)
+    this.waitFor(g.Z, j.Z, w.Z, v.Z, A.Z, R.Z, D.Z, k.Z, L.Z, U.Z, T.Z, F.Z, V.default, W.Z)
   }
 }
 J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {} : {
@@ -176,8 +176,8 @@ J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {
     let h = !R.Z.isSoundDisabled(ee);
     if (m && (h && K.Z.playNotificationSound("message3", .4), !el) || !b) returnfalse;
     let E = n(808506).default,
-      _ = n(624864).Z;
-    if (null != E.getFocusedPID() && !_.isNotificationDisabled(Q.n0.TextChat) && !F.Z.disableNotifications) returnfalse;
+      v = n(624864).Z;
+    if (null != E.getFocusedPID() && !v.isNotificationDisabled(Q.n0.TextChat) && !F.Z.disableNotifications) returnfalse;
     let {
       icon: C,
       title: N,
@@ -192,7 +192,7 @@ J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {
         title: N,
         body: T
       }), (0, y.R)(a, u.guild_id), R.Z.getDesktopType() === Y.qrD.NEVER) return h && K.Z.playNotificationSound(ee, et), false;
-    let Z = null != (l = A.Z.getMessage(i, a.id)) ? l : (0, v.e5)(a);
+    let Z = null != (l = A.Z.getMessage(i, a.id)) ? l : (0, _.e5)(a);
     K.Z.showNotification(C, N, T, {
       notif_type: "MESSAGE_CREATE",
       notif_user_id: null == (r = a.author) ? true : r.id,

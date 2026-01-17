@@ -39,10 +39,10 @@ function a(e) {
       return n.stroke(), r
     },
     {
-      fillColor: _,
-      outlineColor: v
+      fillColor: v,
+      outlineColor: _
     } = (0, r.bg)(t.userId, s, u, c),
-    y = E(v, 6 + i.q2),
+    y = E(_, 6 + i.q2),
     O = null != y && m(y);
-  O && (0, l.I)(n, y.x, y.y, v, i.q2), E(_, 6), O && (0, l.T)(n, y.x, y.y, t.userId)
+  O && (0, l.I)(n, y.x, y.y, _, i.q2), E(v, 6), O && (0, l.T)(n, y.x, y.y, t.userId)
 }

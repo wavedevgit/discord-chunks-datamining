@@ -1,44 +1,45 @@
 /** Chunk was on 75909 **/
 /** chunk id: 70417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk713447 = require("./713447.js"),
   Chunk754700 = require("./754700.js"),
+  Chunk670081 = require("./670081.js"),
   Chunk475595 = require("./475595.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk981631 = require("./981631.js");
-let c = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS.UNKNOWN]);
+let u = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS.UNKNOWN]);
 
-function u(e, t, n) {
-  var s;
+function d(e, t, n) {
+  var c;
   let {
-    quest: u
-  } = r.useContext(a.VideoQuestModalContext), {
-    questConfig: d
-  } = r.useContext(a.VideoQuestConfigContext), m = r.useRef(false), f = r.useRef(null), p = null == (s = d.taskConfigV2.tasks[l.X.WATCH_VIDEO]) ? true : s.assets, v = r.useMemo(() => null != p ? o.ZP.isSupported() && null != p.videoHls ? i.eC.VIDEO_PLAYER_VIDEO_HLS : c.has(t) || null == p.videoLowRes ? i.eC.VIDEO_PLAYER_VIDEO : i.eC.VIDEO_PLAYER_VIDEO_LOW_RES : null, [p, t]), E = r.useMemo(() => null != v ? (0, i.fh)(u, v, true, false) : null, [u, v]), g = () => {
-    null != f.current && 8e5 !== f.current.config.minAutoBitrate && (f.current.config.minAutoBitrate = 8e5)
-  }, h = r.useCallback(() => {
-    null != f.current && (f.current.config.minAutoBitrate = 8e5)
+    quest: d
+  } = r.useContext(s.VideoQuestModalContext), {
+    questConfig: m
+  } = r.useContext(s.VideoQuestConfigContext), f = r.useRef(false), p = r.useRef(null), v = null == (c = m.taskConfigV2.tasks[l.X.WATCH_VIDEO]) ? true : c.assets, g = r.useMemo(() => m.features.includes(i.S.FULL_EPISODE_VIDEO_QUEST), [m.features]), E = r.useMemo(() => null != v ? o.ZP.isSupported() && null != v.videoHls ? a.eC.VIDEO_PLAYER_VIDEO_HLS : g ? null : u.has(t) || null == v.videoLowRes ? a.eC.VIDEO_PLAYER_VIDEO : a.eC.VIDEO_PLAYER_VIDEO_LOW_RES : null, [v, t, g]), h = r.useMemo(() => null != E ? (0, a.fh)(d, E, true, false) : null, [d, E]), C = () => {
+    null != p.current && 8e5 !== p.current.config.minAutoBitrate && (p.current.config.minAutoBitrate = 8e5)
+  }, b = r.useCallback(() => {
+    null != p.current && (p.current.config.minAutoBitrate = 8e5)
   }, []);
   return r.useEffect(() => {
-    if (v !== i.eC.VIDEO_PLAYER_VIDEO_HLS || null == E || null == e.current || m.current) return;
-    f.current = new o.ZP({
+    if (E !== a.eC.VIDEO_PLAYER_VIDEO_HLS || null == h || null == e.current || f.current) return;
+    p.current = new o.ZP({
       backBufferLength: 20,
       maxBufferLength: 30,
       startPosition: n,
       startFragPrefetch: true,
       startLevel: false
-    }), f.current.on(o.ZP.Events.FRAG_LOADING, g), f.current.loadSource(E.url), f.current.attachMedia(e.current), m.current = true;
-    let t = f.current;
+    }), p.current.on(o.ZP.Events.FRAG_LOADING, C), p.current.loadSource(h.url), p.current.attachMedia(e.current), f.current = true;
+    let t = p.current;
     return () => {
-      null != t && t.off(o.ZP.Events.FRAG_LOADING, g)
+      null != t && t.off(o.ZP.Events.FRAG_LOADING, C)
     }
-  }, [E, v, e, n]), {
-    videoAssetType: v,
-    videoAsset: E,
-    hlsRef: f,
-    onFirstChunkLoaded: h
+  }, [h, E, e, n]), {
+    videoAssetType: E,
+    videoAsset: h,
+    hlsRef: p,
+    onFirstChunkLoaded: b
   }
 }

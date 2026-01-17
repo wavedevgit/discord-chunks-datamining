@@ -43,10 +43,13 @@ class p extends Chunk147913.Z {
       let {
         voiceStates: t
       } = e;
-      u.d.getState().isEnabled && t.forEach(e => {
+      if (!u.d.getState().isEnabled) return;
+      let n = c.Z.getVoiceChannelId();
+      null != n && t.forEach(e => {
+        if (e.channelId !== n) return;
         let t = l.Z.getStreamForUser(e.userId, e.guildId),
-          n = l.Z.getActiveStreamForUser(e.userId, e.guildId);
-        null != t && null == n ? (0, a.rn)(t) : null == t && null != n && ((0, a.g)((0, s.V9)(n), false, true), this.findAndWatchStream())
+          r = l.Z.getActiveStreamForUser(e.userId, e.guildId);
+        null != t && null == r ? (0, a.rn)(t) : null == t && null != r && ((0, a.g)((0, s.V9)(r), false, true), this.findAndWatchStream())
       })
     }, f))
   }

@@ -65,14 +65,14 @@ function L(e, t) {
     }) || d.Z.isMessageRequest(t)) returnfalse;
   if (!a) {
     let e = I.Z.getChannelId(N.Z.getGuildId());
-    if (e === c.id || v.ZP.getCurrentSidebarChannelId(e) === c.id) returnfalse
+    if (e === c.id || _.ZP.getCurrentSidebarChannelId(e) === c.id) returnfalse
   }
   if (C.Z.isBlockedOrIgnoredForMessage(e) || true !== e.activity_instance && null != e.interaction && e.interaction.user.id === s.id) returnfalse;
   if (null != e.application_id) {
     let n = i.ZP.getCurrentEmbeddedActivity();
     if ((null == n ? true : n.applicationId) === e.application_id && n.location.channel_id === t) returnfalse
   }
-  if (_.Ec.has(c.type)) {
+  if (v.Ec.has(c.type)) {
     if (m.Z.isMuted(c.id)) returnfalse;
     let t = (0, h.J)(c);
     return t !== D.iN.NO_MESSAGES && (t === D.iN.ALL_MESSAGES || (0, g.Hl)({
@@ -82,7 +82,7 @@ function L(e, t) {
       suppressRoles: false
     }))
   } {
-    let t = !_.tx.has(c.type) || S.Z.getChannelId() === c.id;
+    let t = !v.tx.has(c.type) || S.Z.getChannelId() === c.id;
     if (x.ZP.allowAllMessages(c) && t) returntrue;
     let n = x.ZP.isSuppressEveryoneEnabled(c.getGuildId()),
       r = x.ZP.isSuppressRolesEnabled(c.getGuildId());
@@ -175,8 +175,8 @@ function B(e, t, n) {
     question: t.poll.question.text
   });
   else if (t.type === R.uaV.POLL_RESULT) {
-    var E, _, v;
-    let e = null == (v = t.embeds) || null == (_ = v[0]) || null == (E = _.fields) ? true : E.find(e => ("name" in e ? e.name : e.rawName) === "poll_question_text"),
+    var E, v, _;
+    let e = null == (_ = t.embeds) || null == (v = _[0]) || null == (E = v.fields) ? true : E.find(e => ("name" in e ? e.name : e.rawName) === "poll_question_text"),
       n = null != e ? "value" in e ? e.value : e.rawValue : "";
     i = M.intl.formatToPlainString(M.t["9WrecI"], {
       question: n

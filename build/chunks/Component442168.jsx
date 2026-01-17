@@ -42,13 +42,13 @@ let h = {
     precision: 1e-4,
     duration: 300
   },
-  _ = {
+  v = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
     bounce: 0
   },
-  v = {
+  _ = {
     duration: 1e3
   };
 
@@ -123,7 +123,7 @@ function y(e) {
           left: T.current.left + 12
         }
       })())),
-      config: y.enabled ? v : _,
+      config: y.enabled ? _ : v,
       onRest: (e, t) => {
         null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(C, t.item.timestamp)
       }

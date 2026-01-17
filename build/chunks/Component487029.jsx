@@ -37,7 +37,7 @@ function O(e) {
     let [t, n] = (0, a.Wu)([g.Z], () => [g.Z.getSounds(), g.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
-        l = [...e, v.X8],
+        l = [...e, _.X8],
         i = (e, l) => {
           var i, a;
           for (let o of null != (a = null == (i = t.get(e)) ? true : i.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? a : []) {
@@ -83,7 +83,7 @@ function O(e) {
       let t = x[e];
       null != t && D(t)
     }, [x, D]),
-    U = l.useMemo(() => x.map(e => (0, r.jsx)(_.ZP, {
+    U = l.useMemo(() => x.map(e => (0, r.jsx)(v.ZP, {
       interactive: I,
       className: y.soundButton,
       sound: e,

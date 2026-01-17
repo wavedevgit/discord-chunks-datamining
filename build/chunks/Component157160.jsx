@@ -32,8 +32,8 @@ let a = e => {
       return o
     }(e, ["size", "width", "height", "color", "colorClass"]);
   let v = (0, l.m)(c),
-    E = null != (a = null == v ? true : v.width) ? a : u,
-    g = null != (s = null == v ? true : v.height) ? s : d;
+    g = null != (a = null == v ? true : v.width) ? a : u,
+    E = null != (s = null == v ? true : v.height) ? s : d;
   return (0, r.jsx)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -53,8 +53,8 @@ let a = e => {
     return e
   }({}, (0, i.Z)(p)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
-    width: E,
-    height: g,
+    width: g,
+    height: E,
     fill: "none",
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {

@@ -64,7 +64,7 @@ function I(e) {
         variant: "text-sm/normal",
         color: "text-muted",
         children: O.intl.format(y.default.LiR4eN, {
-          helpCenterUrl: u.Z.getEnglishArticleURL(C.BhN.GAME_SERVER_HOSTING)
+          helpCenterUrl: u.Z.getArticleURL(C.BhN.GAME_SERVER_HOSTING)
         })
       })]
     }), (0, a.jsxs)("div", {

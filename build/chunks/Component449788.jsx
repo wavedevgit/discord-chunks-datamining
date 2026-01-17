@@ -21,15 +21,15 @@ function p(e) {
   } = e, {
     quest: n,
     sourceQuestContent: p
-  } = o.useContext(m.VideoQuestModalContext), v = (0, s.aM)(), E = (0, d.VB)(n.config), g = o.useCallback(() => {
-    E && ((0, u.f2)(n.id, {
+  } = o.useContext(m.VideoQuestModalContext), v = (0, s.aM)(), g = (0, d.VB)(n.config), E = o.useCallback(() => {
+    g && ((0, u.f2)(n.id, {
       content: c.jn.VIDEO_MODAL,
       ctaContent: a.jZ.COPY_QUEST_URL,
       impressionId: v,
       sourceQuestContent: p
     }), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["+5kSoW"]), i.ToastType.SUCCESS)))
-  }, [v, E, n.id, p]);
-  return E ? (0, r.jsx)("div", {
+  }, [v, g, n.id, p]);
+  return g ? (0, r.jsx)("div", {
     style: {
       marginLeft: t ? "auto" : true
     },
@@ -39,7 +39,7 @@ function p(e) {
         variant: "overlay-secondary",
         icon: i.xPt,
         "aria-label": f.intl.string(f.t.RDE0Sc),
-        onClick: g
+        onClick: E
       })
     })
   }) : null

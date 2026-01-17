@@ -17,9 +17,9 @@ var r, l, Chunk442837 = require("./442837.js"),
 let m = new Map,
   h = new Map,
   E = false,
-  _ = null;
+  v = null;
 
-function v() {
+function _() {
   return d.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
@@ -56,7 +56,7 @@ function O(e) {
         a = i !== m.get(e);
       return m.set(e, i), a
     }(t),
-    r = v(),
+    r = _(),
     l = y();
   return n || r || l
 }
@@ -89,8 +89,8 @@ let I = new C(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    if (t === _) returnfalse;
-    _ = t, S()
+    if (t === v) returnfalse;
+    v = t, S()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -112,7 +112,7 @@ let I = new C(Chunk570140.Z, {
       userIds: t
     } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!O({
       userId: t
-    }) || e, false), l = v(), i = y();
+    }) || e, false), l = _(), i = y();
     return r || l || i
   },
   SECURE_FRAMES_TRANSIENT_KEY_CREATE: O,

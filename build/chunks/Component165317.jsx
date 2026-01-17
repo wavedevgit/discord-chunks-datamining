@@ -21,41 +21,41 @@ var Chunk54381 = require("./54381.js"),
 let h = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
 
 function C(e) {
-  var t, n, C, S;
+  var t, n, C, b;
   let {
-    tooltipPosition: b
+    tooltipPosition: S
   } = e, {
     quest: O,
     sourceQuestContent: _,
-    onClose: y
-  } = o.useContext(v.VideoQuestModalContext), [x, j] = o.useState(false), P = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), D = o.useRef(null == (t = O.userStatus) ? true : t.completedAt), [T, R] = o.useState(false), N = (0, d.w8)(O.config), {
-    completedRatio: I,
-    completedRatioDisplay: A
-  } = (0, u.I)(O), w = (null == (n = O.userStatus) ? true : n.completedAt) != null, L = (null == (C = O.userStatus) ? true : C.claimedAt) != null, k = E.intl.formatToPlainString(w && !L ? E.t.NRp4K4 : E.t["12IWP2"], {
+    onClose: x
+  } = o.useContext(v.VideoQuestModalContext), [y, j] = o.useState(false), P = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), D = o.useRef(null == (t = O.userStatus) ? true : t.completedAt), [T, I] = o.useState(false), N = (0, d.w8)(O.config), {
+    completedRatio: w,
+    completedRatioDisplay: k
+  } = (0, u.I)(O), A = (null == (n = O.userStatus) ? true : n.completedAt) != null, M = (null == (C = O.userStatus) ? true : C.claimedAt) != null, R = g.intl.formatToPlainString(A && !M ? g.t.NRp4K4 : g.t["12IWP2"], {
     rewardName: N
   });
   o.useEffect(() => {
     var e, t;
-    null == D.current && (null == (e = O.userStatus) ? true : e.completedAt) != null && R(true), D.current = null == (t = O.userStatus) ? true : t.completedAt
-  }, [null == (S = O.userStatus) ? true : S.completedAt]);
-  let M = (0, p.D)({
+    null == D.current && (null == (e = O.userStatus) ? true : e.completedAt) != null && I(true), D.current = null == (t = O.userStatus) ? true : t.completedAt
+  }, [null == (b = O.userStatus) ? true : b.completedAt]);
+  let L = (0, p.D)({
     quest: O,
     questContent: c.jn.QUEST_HOME_DESKTOP,
     sourceQuestContent: _,
-    onCloseModal: y,
+    onCloseModal: x,
     shouldShowShopIfAlreadyClaimed: false
   });
   return (0, r.jsxs)("div", {
-    className: g.progressWrapper,
-    children: [w && (0, r.jsx)(a.Fmz, {
+    className: E.progressWrapper,
+    children: [A && (0, r.jsx)(a.Fmz, {
       importData: h,
-      className: g.confetti,
+      className: E.confetti,
       loop: false,
       autoplay: false,
       shouldAnimate: T && !P
     }), (0, r.jsx)(i.u, {
-      position: b,
-      text: k,
+      position: S,
+      text: R,
       onTooltipShow: () => {
         j(true)
       },
@@ -63,21 +63,21 @@ function C(e) {
         j(false)
       },
       children: (0, r.jsx)(a.P3F, {
-        className: g.progressCont,
-        style: w ? {
+        className: E.progressCont,
+        style: A ? {
           cursor: "pointer"
         } : true,
         onClick: e => {
-          w && M(e)
+          A && L(e)
         },
         children: (0, r.jsx)(m.Z, {
           quest: O,
           size: 48,
-          percentComplete: I,
-          percentCompleteText: x ? A : true,
+          percentComplete: w,
+          percentCompleteText: y ? k : true,
           percentCompleteTextVariant: "text-sm/medium",
           children: (0, r.jsx)(f.Z, {
-            className: g.questProgressRewardTile,
+            className: E.questProgressRewardTile,
             quest: O,
             questContent: c.jn.VIDEO_MODAL,
             autoplay: false,

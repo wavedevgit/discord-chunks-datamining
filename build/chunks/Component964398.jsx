@@ -100,8 +100,8 @@ let b = Chunk473749.memo(function(e) {
     itemHeight: m,
     showDeadZoneIndicator: h,
     activeItem: E,
-    onItemSelect: _,
-    onItemAction: v,
+    onItemSelect: v,
+    onItemAction: _,
     interactive: y = true,
     onClose: O,
     children: S
@@ -111,10 +111,10 @@ let b = Chunk473749.memo(function(e) {
   }), w = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => a().chunk(S, p), [S]), R = l.useCallback((e, t) => {
     null == I.current[x] ? I.current[x] = [] : I.current[x][t] = e
   }, [x]), D = l.useCallback((e, t) => {
-    T.current = t, _(p * e + t)
-  }, [_]), M = l.useCallback(() => {
-    T.current = null, _(null)
-  }, [_]), k = l.useCallback(e => {
+    T.current = t, v(p * e + t)
+  }, [v]), M = l.useCallback(() => {
+    T.current = null, v(null)
+  }, [v]), k = l.useCallback(e => {
     M(), N.current = e
   }, [M]), L = l.useCallback((e, t, n) => {
     if (N.current) return void j({
@@ -141,8 +141,8 @@ let b = Chunk473749.memo(function(e) {
       y: (i ? Math.max(r.y, -a.y) : Math.min(r.y, a.y)) / 2
     })
   }, []), U = l.useCallback(e => {
-    null != T.current && (e.preventDefault(), e.stopPropagation(), null == v || v(p * x + T.current))
-  }, [v, x]), F = l.useMemo(() => (0, i.throttle)(e => {
+    null != T.current && (e.preventDefault(), e.stopPropagation(), null == _ || _(p * x + T.current))
+  }, [_, x]), F = l.useMemo(() => (0, i.throttle)(e => {
     if (null == C.current) return;
     let r = C.current.getBoundingClientRect(),
       l = {

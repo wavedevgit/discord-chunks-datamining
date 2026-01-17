@@ -30,10 +30,10 @@ function h(e) {
     } = e,
     h = (0, i.e7)([c.Z], () => c.Z.getWindow(b.KJ3.CHANNEL_CALL_POPOUT)),
     E = (0, p.Z)(),
-    _ = (0, i.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == E || (0, f.Z)((0, d.p)(E.location)) || _ !== g.Ez.PANEL) {
-    var v;
-    t = null != (v = null == h ? true : h.window) ? v : window
+    v = (0, i.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
+  if (null == E || (0, f.Z)((0, d.p)(E.location)) || v !== g.Ez.PANEL) {
+    var _;
+    t = null != (_ = null == h ? true : h.window) ? _ : window
   } else t = window;
   let y = l.useRef(null),
     O = l.useMemo(() => {

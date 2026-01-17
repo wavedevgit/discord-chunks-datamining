@@ -46,14 +46,14 @@ let h = {
     [Chunk981631.IE4.BAD]: Chunk156730.rtcConnectionQualityBad,
     [Chunk981631.IE4.UNKNOWN]: null
   },
-  _ = {
+  v = {
     [Chunk981631.IE4.FINE]: Chunk481060.B_b,
     [Chunk981631.IE4.AVERAGE]: Chunk481060.hLg,
     [Chunk981631.IE4.BAD]: Chunk481060.mbS,
     [Chunk981631.IE4.UNKNOWN]: Chunk481060._3e
   };
 
-function v(e) {
+function _(e) {
   var {
     quality: t,
     largePing: n
@@ -72,7 +72,7 @@ function v(e) {
     }
     return l
   }(e, ["quality", "largePing"]);
-  let i = _[t];
+  let i = v[t];
   return (0, r.jsx)(i, m({
     className: a()(b.ping, {
       [b.largePing]: n
@@ -85,7 +85,7 @@ function y(e) {
     quality: t,
     lastPing: n,
     state: i,
-    className: _,
+    className: v,
     children: y,
     channelId: O,
     childrenAsSubtitle: S,
@@ -112,7 +112,7 @@ function y(e) {
   return (0, r.jsxs)("div", {
     className: b.rtcConnectionStatusWrapper,
     children: [(0, r.jsx)("div", {
-      className: a()(b.rtcConnectionStatus, E[t], _),
+      className: a()(b.rtcConnectionStatus, E[t], v),
       ref: N,
       children: (0, r.jsx)(c.yRy, {
         targetElementRef: N,
@@ -130,7 +130,7 @@ function y(e) {
                 onClick: e => {
                   (0, u.v)(s.Z.RTC_PANEL, u.d.CONNECTION_STATUS), l(e)
                 },
-                children: (0, r.jsx)(v, {
+                children: (0, r.jsx)(_, {
                   quality: t,
                   largePing: S
                 })

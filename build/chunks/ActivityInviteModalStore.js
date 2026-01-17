@@ -26,8 +26,8 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
-  v = null,
+let v = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
+  _ = null,
   y = null,
   O = [],
   S = [];
@@ -62,19 +62,19 @@ function C(e) {
 }
 
 function I() {
-  v = null, null != r && (r.destroy(), r = null), null != y && y()
+  _ = null, null != r && (r.destroy(), r = null), null != y && y()
 }
 
 function N() {
-  let e = null != v && null != v.application_id ? f.Z.getApplicationActivity(v.application_id) : null;
-  if (null != v && (null == e || null == e.party || null == e.party.id)) return I()
+  let e = null != _ && null != _.application_id ? f.Z.getApplicationActivity(_.application_id) : null;
+  if (null != _ && (null == e || null == e.party || null == e.party.id)) return I()
 }
 class T extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(u.Z, d.Z, f.Z, p.Z, m.Z, b.default)
   }
   getActivity() {
-    return v
+    return _
   }
   getQuery() {
     var e;
@@ -87,7 +87,7 @@ class T extends(l = Chunk442837.ZP.Store) {
 E(T, "displayName", "ActivityInviteModalStore");
 let x = new T(Chunk570140.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      v = e.activity, y = e.resolve, O = [], null == r && (r = new c.ZP((e, t) => {
+      _ = e.activity, y = e.resolve, O = [], null == r && (r = new c.ZP((e, t) => {
         S = ("" === t.trim() ? function() {
           let e = [];
           return m.Z.getPrivateChannelIds().forEach(t => {
@@ -147,7 +147,7 @@ let x = new T(Chunk570140.Z, {
               return null
           }
         }).filter(e => null != e), x.emitChange()
-      }, _, 100)), r.search("")
+      }, v, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
       let {
@@ -156,18 +156,18 @@ let x = new T(Chunk570140.Z, {
       null != r && r.search(t)
     },
     ACTIVITY_INVITE_MODAL_SEND: function(e) {
-      if (null == v) return;
+      if (null == _) return;
       let t = e.channelId,
         n = e.userId;
       null != t ? o.Z.sendActivityInvite({
         channelId: t,
         type: h.mFx.JOIN,
-        activity: v,
+        activity: _,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => C(t)) : null != n && o.Z.sendActivityInviteUser({
         userId: n,
         type: h.mFx.JOIN,
-        activity: v,
+        activity: _,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => C(n))
     },
@@ -176,7 +176,7 @@ let x = new T(Chunk570140.Z, {
       let {
         locked: t
       } = e;
-      return !!t && null != v && (I(), true)
+      return !!t && null != _ && (I(), true)
     },
     LOCAL_ACTIVITY_UPDATE: N,
     RPC_APP_DISCONNECTED: N

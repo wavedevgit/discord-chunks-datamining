@@ -316,7 +316,7 @@ function G() {
         termsOfServiceUrl: () => (0, g.q)({
           href: Y
         }),
-        helpCenterUrl: f.Z.getEnglishArticleURL(y.BhN.GAME_SERVER_HOSTING)
+        helpCenterUrl: f.Z.getArticleURL(y.BhN.GAME_SERVER_HOSTING)
       })
     }), null != B && (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",

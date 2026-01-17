@@ -62,7 +62,7 @@ module.exports = {
   play: "_4577670752bdbe9c-play",
   playPauseAnimation: "_4577670752bdbe9c-playPauseAnimation",
   transcriptBodySpinner: "_4577670752bdbe9c-transcriptBodySpinner",
-  pauseText: "_4577670752bdbe9c-pauseText",
+  videoStatusMessage: "_4577670752bdbe9c-videoStatusMessage",
   closeModalBtnWrapper: "_4577670752bdbe9c-closeModalBtnWrapper",
   floatingShareButtonContainer: "_4577670752bdbe9c-floatingShareButtonContainer",
   dotSpacer: "_4577670752bdbe9c-dotSpacer",

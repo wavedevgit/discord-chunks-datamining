@@ -23,11 +23,11 @@ let p = [],
   },
   h = [],
   E = 10 * Chunk70956.Z.Millis.SECOND,
-  _ = (0, Chunk392711.debounce)(() => {
+  v = (0, Chunk392711.debounce)(() => {
     let e = (0, d.cX)(b);
     c.uv.announce(e, "polite"), b = []
   }, 500);
-class v extends(l = Chunk442837.ZP.Store) {
+class _ extends(l = Chunk442837.ZP.Store) {
   get recentlyUsedEmojis() {
     return p
   }
@@ -40,13 +40,13 @@ class v extends(l = Chunk442837.ZP.Store) {
   getEffectForUserId(e) {
     return g[e]
   }
-}(i = "displayName") in v ? Object.defineProperty(v, i, {
+}(i = "displayName") in _ ? Object.defineProperty(_, i, {
   value: "VoiceChannelEffectsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : v[i] = "VoiceChannelEffectsStore";
-let y = new v(Chunk570140.Z, {
+}) : _[i] = "VoiceChannelEffectsStore";
+let y = new _(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t
@@ -72,7 +72,7 @@ let y = new v(Chunk570140.Z, {
     }, b = [...b, {
       emojiName: t.name,
       userId: n
-    }], _())
+    }], v())
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;

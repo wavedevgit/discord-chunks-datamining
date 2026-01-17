@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 589313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,21 +17,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function E() {
+function g() {
   var e, t, n;
   let {
-    quest: E,
-    sourceQuestContent: g,
+    quest: g,
+    sourceQuestContent: E,
     onClose: h
-  } = o.useContext(p.VideoQuestModalContext), C = (0, d.tP)(E), S = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), b = null != (0, m.LM)(E.config), O = (0, f.D)({
-    quest: E,
+  } = o.useContext(p.VideoQuestModalContext), C = (0, d.tP)(g), b = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), S = null != (0, m.LM)(g.config), O = (0, f.D)({
+    quest: g,
     questContent: u.jn.QUEST_HOME_DESKTOP,
-    sourceQuestContent: g,
+    sourceQuestContent: E,
     onCloseModal: h,
     shouldShowShopIfAlreadyClaimed: true
-  }), _ = (null == (e = E.userStatus) ? true : e.claimedAt) != null ? b ? v.intl.string(v.t.WYchde) : v.intl.string(v.t.vTgCWx) : v.intl.string(v.t.cfY4PE), y = (null == (t = E.userStatus) ? true : t.completedAt) == null ? C ? v.intl.string(v.t.NJ6Bnm) : v.intl.string(v.t.USNO1K) : true;
+  }), _ = (null == (e = g.userStatus) ? true : e.claimedAt) != null ? S ? v.intl.string(v.t.WYchde) : v.intl.string(v.t.vTgCWx) : v.intl.string(v.t.cfY4PE), x = (null == (t = g.userStatus) ? true : t.completedAt) == null ? C ? v.intl.string(v.t.NJ6Bnm) : v.intl.string(v.t.USNO1K) : true;
   return (0, r.jsx)(a.u, {
-    text: y,
+    text: x,
     children: (0, r.jsx)("div", {
       children: (0, r.jsx)(s.Button, {
         variant: "secondary",
@@ -50,10 +50,10 @@ function E() {
               }
             }
           }
-        })(E, S),
+        })(g, b),
         onClick: O,
         text: _,
-        disabled: (null == (n = E.userStatus) ? true : n.completedAt) == null
+        disabled: (null == (n = g.userStatus) ? true : n.completedAt) == null
       })
     })
   })

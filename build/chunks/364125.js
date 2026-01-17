@@ -20,7 +20,7 @@ function d(e) {
     stream: f,
     focused: p,
     canvas: g
-  } = e, b = r.useRef(false), m = (0, l.e7)([i.Z], () => i.Z.getDrawMode()), h = (0, c.Z)((0, s.Z)(t.id, n, d), f), E = (0, c.Z)((0, u.Z)(t.id, n, d), f), _ = r.useCallback((e, t, n) => {
+  } = e, b = r.useRef(false), m = (0, l.e7)([i.Z], () => i.Z.getDrawMode()), h = (0, c.Z)((0, s.Z)(t.id, n, d), f), E = (0, c.Z)((0, u.Z)(t.id, n, d), f), v = r.useCallback((e, t, n) => {
     if (null == g) return;
     let {
       x: r,
@@ -32,25 +32,25 @@ function d(e) {
       case a.W.EMOJI_HOSE:
         return E[e](t, r, l)
     }
-  }, [g, h, E]), v = r.useCallback(e => {
-    p && null != m && (e.stopPropagation(), b.current = true, _("handleMouseDown", m, e))
-  }, [_, m, p]), y = r.useCallback(e => {
-    p && null != m && (e.stopPropagation(), b.current && _("handleMouseMove", m, e))
-  }, [_, m, p]), O = r.useCallback(e => {
-    p && null != m && (e.stopPropagation(), b.current = false, _("handleMouseUp", m, e))
-  }, [_, m, p]), S = r.useCallback(e => {
-    b.current && null != m && _("handleMouseEnter", m, e)
-  }, [_, m]);
+  }, [g, h, E]), _ = r.useCallback(e => {
+    p && null != m && (e.stopPropagation(), b.current = true, v("handleMouseDown", m, e))
+  }, [v, m, p]), y = r.useCallback(e => {
+    p && null != m && (e.stopPropagation(), b.current && v("handleMouseMove", m, e))
+  }, [v, m, p]), O = r.useCallback(e => {
+    p && null != m && (e.stopPropagation(), b.current = false, v("handleMouseUp", m, e))
+  }, [v, m, p]), S = r.useCallback(e => {
+    b.current && null != m && v("handleMouseEnter", m, e)
+  }, [v, m]);
   return r.useEffect(() => {
     let e = e => {
-      null != m && (b.current = false, _("handleMouseUp", m, e))
+      null != m && (b.current = false, v("handleMouseUp", m, e))
     };
     return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
-  }, [_, m]), {
+  }, [v, m]), {
     handleClick: r.useCallback(e => {
       p && null != m && e.stopPropagation()
     }, [m, p]),
-    handleMouseDown: v,
+    handleMouseDown: _,
     handleMouseEnter: S,
     handleMouseMove: y,
     handleMouseUp: O
