@@ -1395,7 +1395,7 @@ let {
     CONTROL_SECONDARY_BACKGROUND_DEFAULT: {
       category: "generic",
       [r.DARK]: {
-        raw: "PRIMARY_500",
+        raw: "PRIMARY_460",
         opacity: 1
       },
       [r.LIGHT]: {
@@ -1403,11 +1403,11 @@ let {
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "PLUM_13",
+        raw: "PLUM_17",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "PLUM_13",
+        raw: "PLUM_15",
         opacity: 1
       }
     },
@@ -4453,19 +4453,19 @@ let {
     SPINE_DEFAULT: {
       category: "generic",
       [r.DARK]: {
-        raw: "PRIMARY_500",
+        raw: "PRIMARY_530",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "PRIMARY_300",
+        raw: "PRIMARY_430",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "PLUM_13",
+        raw: "PLUM_17",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "PLUM_13",
+        raw: "PLUM_15",
         opacity: 1
       }
     },

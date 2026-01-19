@@ -69,7 +69,7 @@ function L(e) {
         return "Linux"
     }
     return ""
-  }((0, P.getOS)())), [el, ea] = r.useState(""), [eo, es] = r.useState(""), [eu, ec] = r.useState(""), [ed, em] = r.useState(""), [ef, ep] = r.useState(false), [ev, eh] = r.useState(false), [eg, ex] = r.useState(false), [eb, ey] = r.useState(null);
+  }((0, P.getOS)())), [ea, el] = r.useState(""), [eo, es] = r.useState(""), [eu, ec] = r.useState(""), [ed, em] = r.useState(""), [ef, ep] = r.useState(false), [ev, eh] = r.useState(false), [eg, ex] = r.useState(false), [eb, ey] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     s.tn.get({
@@ -79,8 +79,8 @@ function L(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "8889b475b57436d0f850b63294e138c16d1b4453" !== e.body.hash) {
-        let e = new Date("1768834490966"),
+      if (null != e.body && "352fc7bde9e3d98d7aba571095115934c822eb73" !== e.body.hash) {
+        let e = new Date("1768835911492"),
           t = new Date,
           n = (0, w.TD)(t, e);
         n.hours > 6 && ey(n.hours)
@@ -115,13 +115,13 @@ function L(e) {
     if (ex(false), "" === H || "" === B || null == q) return void ep(true);
     let r = null == X || null == (e = X.features) ? true : e.find(e => (0, _.pD)(e) === J);
     eh(true), ep(false);
-    let l = (0, C.D)(Y.map(e => {
+    let a = (0, C.D)(Y.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      a = await (0, _.ZD)({
+      l = await (0, _.ZD)({
         name: H,
         description: B,
         priority: q,
@@ -133,21 +133,21 @@ function L(e) {
         overridePlatformInformation: $,
         device: et,
         operatingSystem: ei,
-        operatingSystemVersion: el,
+        operatingSystemVersion: ea,
         clientVersion: eo,
         clientBuildNumber: eu,
         locale: ed
       } : {
         overridePlatformInformation: $
-      }, l).catch(() => ex(true));
-    eh(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), M(), (0, m.ZDy)(async () => {
+      }, a).catch(() => ex(true));
+    eh(false), null != l && l.ok ? (ej && window.open(l.body.permalink_url, "_blank"), M(), (0, m.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = D({}, t), r = r = {
-          asanaTask: a.body
+          asanaTask: l.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -187,7 +187,7 @@ function L(e) {
             var t;
             return e.filename === n.name && (null == (t = e.item.file) ? true : t.size) === n.size
           }) ? e : [...e, new p.ZP({
-            id: (0, l.Z)(),
+            id: (0, a.Z)(),
             file: n,
             platform: p.ow.WEB,
             origin: "clipboard"
@@ -195,7 +195,7 @@ function L(e) {
         }
       }
       let r = document.activeElement;
-      if (!((0, a.kK)(r, HTMLInputElement) || (0, a.kK)(r, HTMLTextAreaElement))) {
+      if (!((0, l.kK)(r, HTMLInputElement) || (0, l.kK)(r, HTMLTextAreaElement))) {
         let t = null == (n = e.clipboardData) ? true : n.getData("text");
         null != t && (e.preventDefault(), e.stopPropagation(), V(B.concat(t)))
       }
@@ -360,8 +360,8 @@ function L(e) {
           }), (0, i.jsx)(m.oil, {
             label: E.intl.string(E.t.rEtxdg),
             placeholder: "Operating System Version",
-            value: el,
-            onChange: e => ea(e)
+            value: ea,
+            onChange: e => el(e)
           }), (0, i.jsx)(m.oil, {
             label: E.intl.string(E.t["wy1M/t"]),
             placeholder: "Client Version",
@@ -393,7 +393,7 @@ function L(e) {
             onChange: e => {
               var t, n;
               (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && K([...Y, ...Array.from(e.currentTarget.files).map(e => new p.ZP({
-                id: (0, l.Z)(),
+                id: (0, a.Z)(),
                 file: e,
                 platform: p.ow.WEB,
                 origin: "file_picker"
