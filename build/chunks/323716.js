@@ -14,21 +14,35 @@ var Chunk960048 = require("./960048.js"),
   Chunk591759 = require("./591759.js"),
   Chunk303850 = require("./303850.js"),
   Chunk105713 = require("./105713.js"),
+  Chunk505858 = require("./505858.js"),
   Chunk981631 = require("./981631.js");
-let h = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"],
-  m = new Chunk303850.R;
+let m = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"],
+  g = new Chunk303850.R;
 
-function g(e) {
+function E(e) {
   let t = new URLSearchParams;
   t.append("query", '@http.x_client_trace_id:"'.concat(e, '"')), t.append("showAllSpans", "true");
   let n = d.Z.toURLSafe("traces?".concat(t.toString()), "https://datadog.discord.tools/apm/");
   return null == n ? null : n.toString()
 }
-let E = /\/api(\/v\d+)?\/science/;
+let b = /\/api(\/v\d+)?\/science/;
 
-function b(e) {
+function y(e) {
   let t = 10;
   return e.reduce((e, n) => (10 === t ? e.push(n) : e.push("".concat(n, ";q=0.").concat(t)), t = Math.max(t - 1, 1), e), []).join(",")
+}
+
+function O(e) {
+  try {
+    let t = new URL(e).pathname;
+    return b.test(t)
+  } catch (t) {
+    return b.test(e)
+  }
+}
+
+function v(e, t) {
+  returnfalse
 }(0, Chunk544891.lg)({
   prepareRequest(e) {
     let {
@@ -45,7 +59,7 @@ function b(e) {
       isPlatformEmbedded: d
     } = n(358085);
     if ("/" === e.url[0]) {
-      var f, _;
+      var f, h;
       e.url = (0, r.K0)() + e.url, "Authorization" in e.header || "authorization" in e.header || e.set("Authorization", t.getToken()), (0, i.c)();
       let n = c.getSuperPropertiesBase64();
       null != n && e.set("X-Super-Properties", n);
@@ -55,21 +69,21 @@ function b(e) {
       if (null != u && "" !== u && e.set("X-Installation-ID", u), d) {
         let t = [];
         null != navigator && (t = (f = [...navigator.languages], f));
-        let n = b(t);
+        let n = y(t);
         e.set("Accept-Language", n)
       }
       e.set("X-Discord-Locale", s.locale);
-      let h = (0, p.Z)();
-      null != h && e.set("X-Discord-Timezone", h);
-      let y = o.getDebugOptionsHeaderValue();
-      if (null != y && "" !== y && e.set("X-Debug-Options", y), o.isTracingRequests) {
+      let _ = (0, p.Z)();
+      null != _ && e.set("X-Discord-Timezone", _);
+      let m = o.getDebugOptionsHeaderValue();
+      if (null != m && "" !== m && e.set("X-Debug-Options", m), o.isTracingRequests) {
         let t = l.getCurrentUser(),
-          n = m.generate(null != (_ = null == t ? true : t.id) ? _ : "0");
+          n = g.generate(null != (h = null == t ? true : t.id) ? h : "0");
         e.set("x-client-trace-id", n);
         try {
           let t = new URL(e.url).pathname;
-          if (!E.test(t)) {
-            let r = g(n);
+          if (!O(t)) {
+            let r = E(n);
             null !== r && console.debug("%c[tracing]%c %s %s\n%s", "font-weight: bold", "", e.method, t, r)
           }
         } catch (e) {
@@ -77,14 +91,16 @@ function b(e) {
         }
       }
     }
-    a.Hj("Network", "Sending ".concat(e.method, " to ").concat(e.url)), e.on("response", t => {
+    let b = e.url,
+      S = e.method;
+    v(b, S) && (0, _._)(b, S), a.Hj("Network", "Sending ".concat(e.method, " to ").concat(e.url)), e.on("response", t => {
       let n = null != t && t.status >= 400 ? t.text : null,
         r = null == n ? "" : "and body: ".concat(n);
       a.Hj("Network", "Completed ".concat(e.method, " to ").concat(e.url, " with status: ").concat(null == t ? true : t.status, " ").concat(r))
     }), e.on("error", (t, n) => {
       if (a.Hj("Network", "Failed ".concat(e.method, " to ").concat(e.url, " with status ").concat(null == t ? true : t.status, " and body: ").concat(null == n ? true : n.text)), null != t && "parse" in t && t.parse) {
         let n = "[FILTERED]";
-        if (h.includes(e.url)) {
+        if (m.includes(e.url)) {
           var r, i;
           n = null == (i = e.xhr) || null == (r = i.responseText) ? true : r.slice(0, 1e3)
         }
@@ -119,7 +135,7 @@ function b(e) {
         "X-Captcha-Key": n
       };
       null != r && (a["X-Captcha-Rqtoken"] = r), null != i && (a["X-Captcha-Session-Id"] = i), t(a)
-    }).catch(r), true) : 401 === e.statusCode && (null == (a = e.body) ? true : a.code) === _.evJ.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("52030"), n.e("36002")]).then(n.bind(n, 24031)).then(n => {
+    }).catch(r), true) : 401 === e.statusCode && (null == (a = e.body) ? true : a.code) === h.evJ.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("52030"), n.e("36002")]).then(n.bind(n, 24031)).then(n => {
       let {
         openMFAModal: i
       } = n;
