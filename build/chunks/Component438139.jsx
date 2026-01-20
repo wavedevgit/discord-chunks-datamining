@@ -118,17 +118,11 @@ function h(e) {
         f = false === a ? "".concat(s, ":").concat(c) : "".concat(a, ":").concat(s, ":").concat(c);
       return null != n.end ? (0, r.jsx)(e, u(l({}, i), {
         message: o.intl.formatToPlainString(o.t["I/J7vI"], {
-          duration: f,
-          hours: a,
-          minutes: s,
-          seconds: c
+          duration: f
         })
       })) : null != n.start ? (0, r.jsx)(e, u(l({}, i), {
         message: o.intl.formatToPlainString(o.t.M9Fexd, {
-          duration: f,
-          hours: a,
-          minutes: s,
-          seconds: c
+          duration: f
         })
       })) : null
     }
