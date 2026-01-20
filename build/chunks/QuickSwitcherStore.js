@@ -154,11 +154,7 @@ function Q() {
     let t = q(Y[e]);
     null != t && (t.type !== u.h8.TEXT_CHANNEL && t.type !== u.h8.VOICE_CHANNEL || O.Z.can(N.Plq.VIEW_CHANNEL, t.record)) && (c.push(t), a.add(t.record.id))
   }
-  if (c.length > 0) {
-    let e = [(0, u.o6)(P.intl.string(P.t["80lOZ1"])), ...c];
-    i.push(...e)
-  }
-  return i
+  return c.length > 0 && (i = [(0, u.o6)(P.intl.string(P.t["80lOZ1"])), ...c, ...i]), i
 }
 
 function X(e, t) {
