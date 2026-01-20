@@ -141,7 +141,7 @@ class m extends Chunk473749.PureComponent {
         } = this.props;
         e.preventDefault(), e.stopPropagation(), n(t.id)
       }
-      if (e.key === c.vn.HOME && !e.shiftKey) {
+      if (e.key === c.vn.HOME && !(e.shiftKey || e.ctrlKey)) {
         e.preventDefault();
         let {
           selection: t,
@@ -151,7 +151,7 @@ class m extends Chunk473749.PureComponent {
         if (null == t || null == n || null == r) return;
         g(t, n, 0)
       }
-      if (e.key === c.vn.END && !e.shiftKey) {
+      if (e.key === c.vn.END && !(e.shiftKey || e.ctrlKey)) {
         e.preventDefault();
         let {
           selection: t,
