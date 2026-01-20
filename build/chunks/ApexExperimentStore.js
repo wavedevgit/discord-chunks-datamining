@@ -243,9 +243,9 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     let i = v[e][t];
     return null == i ? [true, true] : [i.evaluationId, i.assignments[M(n)]]
   }
-  trackExperimentExposure(e, t, n, r, i, a) {
-    let o = M("".concat(t, "|").concat(i, "|").concat(a, "|").concat(n));
-    this.shouldTrackExposure(o) && "user" === r && (this.track(u.j_.EXPERIMENT_USER_EVALUATION_EXPOSED, {
+  trackExperimentExposure(e, t, n, r, i, a, o) {
+    let s = M("".concat(t, "|").concat(i, "|").concat(a, "|").concat(n));
+    this.shouldTrackExposure(s) && ("user" === r ? this.track(u.j_.EXPERIMENT_USER_EVALUATION_EXPOSED, {
       evaluation_id: e,
       experiment: t,
       exposure_location: n,
@@ -253,32 +253,78 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
       tracked_variation_id: a
     }, {
       flush: true
-    }), x[o] = Date.now(), this.saveTrackedExposures(x))
+    }) : "installation" === r && this.track(u.j_.EXPERIMENT_INSTALLATION_EVALUATION_EXPOSED, {
+      evaluation_id: e,
+      installation_id: o,
+      experiment: t,
+      exposure_location: n,
+      unit_type: r,
+      tracked_variation_id: a
+    }, {
+      flush: true
+    }), x[s] = Date.now(), this.saveTrackedExposures(x))
   }
   trackCommonTriggerPointExposures(e) {
-    for (let t of this.evaluationIds("user")) {
-      let n = M("".concat(t, "|").concat(e));
-      this.shouldTrackExposure(n) && (this.track(u.j_.EXPERIMENT_USER_EVALUATION_EXPOSED, {
-        evaluation_id: t,
-        exposure_location: e,
-        unit_type: "user"
-      }, {
-        flush: true
-      }), x[n] = Date.now(), this.saveTrackedExposures(x))
-    }
+    for (let t of ["user", "installation"])
+      for (let {
+          evaluationId: n,
+          unitId: r
+        }
+        of this.evaluationsWithUnitIds(t)) {
+        let i = M("".concat(n, "|").concat(e));
+        this.shouldTrackExposure(i) && ("user" === t ? this.track(u.j_.EXPERIMENT_USER_EVALUATION_EXPOSED, {
+          evaluation_id: n,
+          exposure_location: e,
+          unit_type: t
+        }, {
+          flush: true
+        }) : this.track(u.j_.EXPERIMENT_INSTALLATION_EVALUATION_EXPOSED, {
+          evaluation_id: n,
+          exposure_location: e,
+          unit_type: t,
+          installation_id: r
+        }, {
+          flush: true
+        }), x[i] = Date.now(), this.saveTrackedExposures(x))
+      }
   }
   trackExposureSuppression(e, t) {
     let n = S[e];
-    null != n && "user" === n.kind && this.track(u.j_.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, {
-      experiment: e,
-      unit_type: "user",
-      suppression_source: t
-    }, {
-      flush: true
-    })
+    if (null != n) {
+      if ("user" === n.kind) this.track(u.j_.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, {
+        experiment: e,
+        unit_type: n.kind,
+        suppression_source: t
+      }, {
+        flush: true
+      });
+      else if ("installation" === n.kind) {
+        let r = Object.keys(v.installation)[0];
+        null != r && this.track(u.j_.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, {
+          experiment: e,
+          unit_type: n.kind,
+          suppression_source: t,
+          installation_id: r
+        }, {
+          flush: true
+        })
+      }
+    }
   }
   evaluationIds(e) {
     return Object.values(v[e]).map(e => e.evaluationId).filter(e => null != e)
+  }
+  evaluationsWithUnitIds(e) {
+    return Object.entries(v[e]).filter(e => {
+      let [t, n] = e;
+      return null != n.evaluationId
+    }).map(e => {
+      let [t, n] = e;
+      return {
+        evaluationId: n.evaluationId,
+        unitId: t
+      }
+    })
   }
   shouldTrackExposure(e) {
     let t = x[e];

@@ -27,7 +27,7 @@ function a(e, t, n) {
         m = null == f ? true : f.isOverride,
         g = null == f ? true : f.exposureTrackingEnabled;
       if ((0, r.useEffect)(() => {
-          null != d && null != _ && null != h && false === m && true === g && t.trackExperimentExposure(d, o, e.location, s, h, _)
+          null != d && null != _ && null != h && false === m && true === g && t.trackExperimentExposure(d, o, e.location, s, h, _, u)
         }, [u, d, _, h, e.location, m, g]), null == p) return c;
       {
         let e = l[p];
@@ -43,7 +43,7 @@ function a(e, t, n) {
         p = null == u ? true : u.revision,
         _ = null == u ? true : u.isOverride,
         h = null == u ? true : u.exposureTrackingEnabled;
-      if (null != a && null != f && null != p && false === _ && true === h && t.trackExperimentExposure(a, o, e.location, s, p, f), null == d) return c;
+      if (null != a && null != f && null != p && false === _ && true === h && t.trackExperimentExposure(a, o, e.location, s, p, f, i), null == d) return c;
       {
         let e = l[d];
         return null != e ? e : c
