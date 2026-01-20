@@ -240,7 +240,7 @@ let Z = function(e) {
         hasBackground: true,
         children: (0, r.jsxs)("div", {
           className: o()({
-            [L.marginContainer]: !F && t
+            [L.marginContainer]: !F
           }),
           children: [f, M.map(e => {
             let {
@@ -300,7 +300,7 @@ let Z = function(e) {
   }
   return m && b ? (0, r.jsxs)(r.Fragment, {
     children: [V(), (0, r.jsx)("div", {
-      className: t ? L.marginContainer : true,
+      className: L.marginContainer,
       children: (0, r.jsxs)(u.y5t, {
         component: (0, r.jsx)(u.Heading, {
           variant: "heading-md/semibold",

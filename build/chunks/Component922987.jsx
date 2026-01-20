@@ -263,7 +263,7 @@ let w = e => {
       onClose: i.onClose
     });
     return (0, r.jsx)(m.PaymentModal, {
-      applicationId: (0, b.Nb)(t),
+      applicationId: (0, b.N)(t),
       transitionState: i.transitionState,
       analyticsDataOverride: s,
       onClose: l,
@@ -284,7 +284,7 @@ let w = e => {
       rentalDuration: s
     } = e, l = N(e, ["skuId", "loadId", "onCheckoutSuccess", "analyticsSourceLocation", "analyticsLocations", "rentalDuration"]);
     return (0, r.jsx)(f.PaymentContextProvider, {
-      applicationId: (0, b.Nb)(t),
+      applicationId: (0, b.N)(t),
       activeSubscription: null,
       loadId: n,
       stepConfigs: L,

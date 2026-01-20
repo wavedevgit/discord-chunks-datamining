@@ -28,7 +28,7 @@ function h(e) {
     v && null != I && (null == (e = O.current) ? true : e.id) !== I.id && (O.current = I)
   }, [I, v]);
   let T = (0, r.useCallback)(async (e, t) => {
-      let n = null != t ? t : (0, d.Nb)(e);
+      let n = null != t ? t : (0, d.N)(e);
       try {
         var r;
         return null != (r = (await a.tn.get({
@@ -70,7 +70,7 @@ function h(e) {
           if (i.status === s.iF.DRAFT) throw Error("Order could not be signed.");
           throw Error("Unexpected order status: ".concat(i.status))
         }
-        let a = (0, d.Nb)(e),
+        let a = (0, d.N)(e),
           c = await T(e, a);
         if (0 === c.length) {
           await new Promise(e => setTimeout(e, 500));

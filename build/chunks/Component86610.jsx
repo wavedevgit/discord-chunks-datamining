@@ -178,7 +178,7 @@ class T {
     }), u
   }
   getApplicationId(e) {
-    return this.checkoutFlow === u.G.ORB_CHECKOUT ? (0, c.Nb)(e) : this.checkoutFlow === u.G.COLLECTIBLES_CHECKOUT ? g.XAJ : true
+    return this.checkoutFlow === u.G.ORB_CHECKOUT ? (0, c.N)(e) : this.checkoutFlow === u.G.COLLECTIBLES_CHECKOUT ? g.XAJ : true
   }
   openCheckoutModal(e) {
     let {

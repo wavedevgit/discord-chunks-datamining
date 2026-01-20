@@ -75,7 +75,7 @@ let m = () => {
     } = t;
     e === c.rMx.PAYMENT_FLOW_CANCELED && s.default.track(c.rMx.PAYMENT_FLOW_CANCELED, p({
       load_id: n,
-      application_id: (0, l.Nb)(r),
+      application_id: (0, l.N)(r),
       location: i,
       location_stack: i,
       payment_gateway: d.ht.VIRTUAL_CURRENCY,
@@ -102,7 +102,7 @@ let m = () => {
       var e, r;
       return p(h(p({
         load_id: E,
-        application_id: (0, l.Nb)(t),
+        application_id: (0, l.N)(t),
         location: i,
         location_stack: i,
         sku_id: t,

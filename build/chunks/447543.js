@@ -469,7 +469,7 @@ let eS = {
       callback: a,
       skipOnboarding: o
     } = e, s = (0, R.fU)(r), l = s.baseCode, c = U.default.getSessionId(), u = ep(i, s), f = W.default.getCurrentUser();
-    return null != (t = null == f ? true : f.hasFlag(ee.xW$.QUARANTINED)) && t ? ((0, x.default)(), new Promise((e, t) => t(Error()))) : (0, y.hO)(i.location_guild_id) ? ((0, b.mN)(et.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()))) : (_.Z.dispatch({
+    return null != (t = null == f ? true : f.hasFlag(ee.xW$.QUARANTINED)) && t ? ((0, x.default)(), new Promise((e, t) => t(Error()))) : (_.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l
     }), d.tn.post({

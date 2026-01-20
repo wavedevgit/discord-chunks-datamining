@@ -125,23 +125,22 @@ function F(e, t) {
 }
 let B = {
   joinGuild: async function(e) {
-    var t, r, i, s, u, d;
-    let f = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
+    var t, r, i, s, c, u;
+    let d = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
-        source: _,
-        loadId: g,
-        lurkLocation: E
-      } = f,
-      S = null != (t = f.lurker) && t,
-      I = v.default.getCurrentUser();
-    if (null != (r = null == I ? true : I.hasFlag(N.xW$.QUARANTINED)) && r) return (0, p.default)(), new Promise((e, t) => t(Error()));
-    if ((0, c.hO)(e)) return (0, l.mN)(P.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()));
+        source: f,
+        loadId: _,
+        lurkLocation: g
+      } = d,
+      E = null != (t = d.lurker) && t,
+      S = v.default.getCurrentUser();
+    if (null != (r = null == S ? true : S.hasFlag(N.xW$.QUARANTINED)) && r) return (0, p.default)(), new Promise((e, t) => t(Error()));
     o.Z.wait(() => o.Z.dispatch({
       type: "GUILD_JOIN",
       guildId: e,
-      lurker: S,
-      source: _,
-      loadId: g
+      lurker: E,
+      source: f,
+      loadId: _
     }));
     try {
       let t = O.Z.getGuildId(),
@@ -149,13 +148,13 @@ let B = {
         i = await a.tn.put({
           url: N.ANM.GUILD_JOIN(e),
           query: {
-            lurker: S,
-            session_id: S ? m.default.getSessionId() : null,
-            recommendation_load_id: g,
-            location: S && null != E ? E : null
+            lurker: E,
+            session_id: E ? m.default.getSessionId() : null,
+            recommendation_load_id: _,
+            location: E && null != g ? g : null
           },
           context: {
-            source: _
+            source: f
           },
           oldFormErrors: true,
           body: {},
@@ -174,7 +173,7 @@ let B = {
           type: "ONLINE_GUILD_MEMBER_COUNT_UPDATE",
           guildId: i.body.id,
           count: i.body.approximate_presence_count
-        }), !S) {
+        }), !E) {
         let {
           default: t
         } = await Promise.resolve().then(n.bind(n, 17181));
@@ -189,7 +188,7 @@ let B = {
         let e = v.default.getCurrentUser();
         T.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
       }
-      throw (null == (u = t.body) ? true : u.code) === N.evJ.GUILD_AT_CAPACITY && G(), S && (null == (d = t.body) ? true : d.code) === N.evJ.UNKNOWN_GUILD && U(e), t
+      throw (null == (c = t.body) ? true : c.code) === N.evJ.GUILD_AT_CAPACITY && G(), E && (null == (u = t.body) ? true : u.code) === N.evJ.UNKNOWN_GUILD && U(e), t
     }
   },
   waitForGuild: Z,
@@ -500,16 +499,15 @@ let B = {
     })
   },
   nsfwReturnToSafety(e) {
-    let t = (0, c._I)(e);
-    if (null == e || t) return void(0, h.uL)(N.Z5c.FRIENDS, {
+    if (null == e) return void(0, h.uL)(N.Z5c.FRIENDS, {
       navigationReplace: false,
       openChannel: true
     });
-    let n = E.ZP.getDefaultChannel(e);
-    null == n || (0, c.Y3)(n) ? (0, h.uL)(N.Z5c.FRIENDS, {
+    let t = E.ZP.getDefaultChannel(e);
+    null == t || (0, c.Y3)(t) ? (0, h.uL)(N.Z5c.FRIENDS, {
       navigationReplace: false,
       openChannel: true
-    }) : (0, h.uL)(N.Z5c.CHANNEL(e, n.id))
+    }) : (0, h.uL)(N.Z5c.CHANNEL(e, t.id))
   },
   escapeToDefaultChannel(e) {
     let t = E.ZP.getDefaultChannel(e);
