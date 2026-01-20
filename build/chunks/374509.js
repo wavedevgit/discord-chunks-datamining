@@ -10,7 +10,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk921356 = require("./921356.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_SECURITY_KEYS_SETTING, {
-  useSearchTerms: () => [a.intl.string(a.t.vrOCCk)],
+  useSearchTerms: () => [a.intl.string(a.t.vrOCCk), a.intl.string(a.t.y7SXYX)],
   usePredicate: function() {
     let t = (0, u.Y)(),
       e = (0, r.O)();

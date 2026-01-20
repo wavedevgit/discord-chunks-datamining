@@ -255,7 +255,7 @@ let eG = () => [a.z.CLIENT_THEMES_SETTINGS_BADGE, a.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eP.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION
       },
       [eP.s6.ACCOUNT_SECURITY_KEYS]: {
-        searchableTitles: [ex.intl.string(ex.t.vrOCCk)],
+        searchableTitles: [ex.intl.string(ex.t.vrOCCk), ex.intl.string(ex.t.y7SXYX)],
         section: eR.oAB.ACCOUNT,
         parent: eP.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION
       },
