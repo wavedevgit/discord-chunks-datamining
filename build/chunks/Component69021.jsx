@@ -21,17 +21,17 @@ var Chunk442837 = require("./442837.js"),
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = i
     })
   }
   return e
@@ -41,8 +41,8 @@ function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -65,9 +65,9 @@ function f() {
     isIdleStatusIndicatorEnabled: N,
     isAxeEnabled: I,
     preventPopoutClose: _,
-    onlyShowPreviewAppCollections: w,
-    disableAppCollectionsCache: x
-  } = (0, i.cj)([c.default, u.default, s.Z], () => {
+    onlyShowPreviewAppCollections: T,
+    disableAppCollectionsCache: w
+  } = (0, l.cj)([c.default, u.default, s.Z], () => {
     var e;
     return {
       layoutDebuggingEnabled: c.default.layoutDebuggingEnabled,
@@ -87,15 +87,15 @@ function f() {
       disableAppCollectionsCache: c.default.disableAppCollectionsCache
     }
   }), {
-    horizontalSpacing: D,
-    verticalSpacing: T,
-    maxHorizontalSpacing: C,
+    horizontalSpacing: x,
+    verticalSpacing: C,
+    maxHorizontalSpacing: D,
     maxVerticalSpacing: m
   } = (0, o.i)(), {
     setHorizontalSpacing: L,
-    setVerticalSpacing: R
-  } = o.i.getState(), Z = d.zY.useSetting(), k = [];
-  return t && n && (k.push((0, l.jsx)(a.sNh, {
+    setVerticalSpacing: Z
+  } = o.i.getState(), R = d.zY.useSetting(), k = [];
+  return t && n && (k.push((0, i.jsx)(a.sNh, {
     id: "overrides",
     label: "Overrides",
     action: () => {
@@ -104,7 +104,7 @@ function f() {
         subsection: p.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB
       })
     }
-  }, "overrides")), k.push((0, l.jsx)(a.sNh, {
+  }, "overrides")), k.push((0, i.jsx)(a.sNh, {
     id: "manual-triggers",
     label: "Manual Triggers",
     action: () => {
@@ -113,7 +113,7 @@ function f() {
         subsection: p.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB
       })
     }
-  }, "manual-triggers")), k.push((0, l.jsxs)(a.sNh, {
+  }, "manual-triggers")), k.push((0, i.jsxs)(a.sNh, {
     id: "developer-flags",
     label: "Developer Flags",
     action: () => {
@@ -122,7 +122,7 @@ function f() {
         subsection: p.s6.DEVELOPER_OPTIONS_FLAGS_TAB
       })
     },
-    children: [(0, l.jsx)(a.S89, {
+    children: [(0, i.jsx)(a.S89, {
       id: "tracing-requests",
       label: "Tracing Requests",
       checked: h,
@@ -131,7 +131,7 @@ function f() {
           trace: !h
         })
       }
-    }, "tracing-requests"), (0, l.jsx)(a.S89, {
+    }, "tracing-requests"), (0, i.jsx)(a.S89, {
       id: "forced-canary",
       label: "Forced Canary",
       checked: j,
@@ -140,14 +140,14 @@ function f() {
           canary: !j
         })
       }
-    }, "forced-canary"), (0, l.jsx)(a.S89, {
+    }, "forced-canary"), (0, i.jsx)(a.S89, {
       id: "always-deliver",
       label: "Ads auto-targeting",
-      checked: Z,
+      checked: R,
       action: () => {
-        d.zY.updateSetting(!Z)
+        d.zY.updateSetting(!R)
       }
-    }, "always-deliver"), (0, l.jsx)(a.S89, {
+    }, "always-deliver"), (0, i.jsx)(a.S89, {
       id: "source-maps",
       label: "Source Maps",
       checked: A,
@@ -156,7 +156,7 @@ function f() {
           sourceMapsEnabled: !A
         })
       }
-    }, "source-maps"), (0, l.jsx)(a.S89, {
+    }, "source-maps"), (0, i.jsx)(a.S89, {
       id: "idle-status",
       label: "Idle Status Indicator",
       checked: N,
@@ -165,7 +165,7 @@ function f() {
           idleStatusIndicatorEnabled: !N
         })
       }
-    }, "idle-status"), (0, l.jsx)(a.S89, {
+    }, "idle-status"), (0, i.jsx)(a.S89, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
       checked: I,
@@ -174,7 +174,7 @@ function f() {
           axeEnabled: !I
         })
       }
-    }, "accessibility-auditing"), (0, l.jsx)(a.S89, {
+    }, "accessibility-auditing"), (0, i.jsx)(a.S89, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
       checked: _,
@@ -183,26 +183,26 @@ function f() {
           preventPopoutClose: !_
         })
       }
-    }, "prevent-popout-close"), (0, l.jsx)(a.S89, {
+    }, "prevent-popout-close"), (0, i.jsx)(a.S89, {
       id: "preview-collections",
       label: "Preview Unpublished Collections",
+      checked: T,
+      action: () => {
+        (0, r.y)({
+          onlyShowPreviewAppCollections: !T
+        })
+      }
+    }, "preview-collections"), (0, i.jsx)(a.S89, {
+      id: "disable-collections-cache",
+      label: "Disable Collections Cache",
       checked: w,
       action: () => {
         (0, r.y)({
-          onlyShowPreviewAppCollections: !w
-        })
-      }
-    }, "preview-collections"), (0, l.jsx)(a.S89, {
-      id: "disable-collections-cache",
-      label: "Disable Collections Cache",
-      checked: x,
-      action: () => {
-        (0, r.y)({
-          disableAppCollectionsCache: !x
+          disableAppCollectionsCache: !w
         })
       }
     }, "disable-collections-cache")]
-  }, "developer-flags")), k.push((0, l.jsxs)(a.sNh, {
+  }, "developer-flags")), k.push((0, i.jsxs)(a.sNh, {
     id: "logging",
     label: "Logging",
     action: () => {
@@ -211,7 +211,7 @@ function f() {
         subsection: p.s6.DEVELOPER_OPTIONS_LOGGING_TAB
       })
     },
-    children: [(0, l.jsx)(a.S89, {
+    children: [(0, i.jsx)(a.S89, {
       id: "gateway-events",
       label: "Gateway Events",
       checked: f,
@@ -220,7 +220,7 @@ function f() {
           logGatewayEvents: !f
         })
       }
-    }, "gateway-events"), (0, l.jsx)(a.S89, {
+    }, "gateway-events"), (0, i.jsx)(a.S89, {
       id: "overlay-events",
       label: "Overlay RPC Events",
       checked: S,
@@ -229,7 +229,7 @@ function f() {
           logOverlayEvents: !S
         })
       }
-    }, "overlay-events"), (0, l.jsx)(a.S89, {
+    }, "overlay-events"), (0, i.jsx)(a.S89, {
       id: "analytics-events",
       label: "Analytics Events",
       checked: v,
@@ -238,7 +238,7 @@ function f() {
           logAnalyticsEvents: !v
         })
       }
-    }, "analytics-events"), (0, l.jsx)(a.S89, {
+    }, "analytics-events"), (0, i.jsx)(a.S89, {
       id: "analytics-debugger",
       label: "Analytics Debugger",
       checked: P,
@@ -248,7 +248,7 @@ function f() {
         })
       }
     }, "analytics-debugger")]
-  }, "logging")), k.push((0, l.jsx)(a.sNh, {
+  }, "logging")), k.push((0, i.jsx)(a.sNh, {
     id: "design-tools",
     label: "Design Tools",
     action: () => {
@@ -257,7 +257,7 @@ function f() {
         subsection: p.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB
       })
     },
-    children: (0, l.jsx)(a.S89, {
+    children: (0, i.jsx)(a.S89, {
       id: "layout-debugging",
       label: "Enable Layout Debugging",
       checked: e,
@@ -267,27 +267,27 @@ function f() {
         })
       }
     }, "layout-debugging")
-  }, "design-tools")), e && (k.push((0, l.jsx)(a.II_, {
+  }, "design-tools")), e && (k.push((0, i.jsx)(a.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
-    control: (e, t) => (0, l.jsx)(a._wy, y(E({}, e), {
+    control: (e, t) => (0, i.jsx)(a._wy, y(E({}, e), {
       ref: t,
-      value: D,
+      value: x,
       minValue: 0,
-      maxValue: C,
+      maxValue: D,
       onChange: e => L(e),
       renderValue: e => "".concat(Math.round(e), "px"),
       "aria-label": "Horizontal Spacing"
     }))
-  }, "horizontal-spacing")), k.push((0, l.jsx)(a.II_, {
+  }, "horizontal-spacing")), k.push((0, i.jsx)(a.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
-    control: (e, t) => (0, l.jsx)(a._wy, y(E({}, e), {
+    control: (e, t) => (0, i.jsx)(a._wy, y(E({}, e), {
       ref: t,
-      value: T,
+      value: C,
       minValue: 0,
       maxValue: m,
-      onChange: e => R(e),
+      onChange: e => Z(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))

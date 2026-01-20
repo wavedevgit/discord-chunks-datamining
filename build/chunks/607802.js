@@ -4,29 +4,28 @@
 require.d(exports, {
   $G: () => L,
   AH: () => A,
-  BU: () => F,
+  BU: () => Z,
   BX: () => I,
-  EX: () => ee,
-  Fr: () => z,
-  Fz: () => K,
+  EX: () => $,
+  Fr: () => K,
+  Fz: () => W,
   Jl: () => G,
   Ko: () => w,
-  Pe: () => q,
-  R6: () => Q,
+  Pe: () => z,
+  R6: () => q,
   Tm: () => S,
   UP: () => j,
   Vj: () => P,
-  WU: () => W,
-  X$: () => $,
-  X3: () => X,
+  WU: () => Y,
+  X$: () => J,
+  X3: () => Q,
   b7: () => C,
-  cl: () => B,
+  cl: () => F,
   g9: () => k,
-  i3: () => Z,
   jW: () => x,
-  kG: () => Y,
+  kG: () => H,
   nI: () => M,
-  nl: () => J,
+  nl: () => X,
   qc: () => U,
   s5: () => T,
   zH: () => N
@@ -331,75 +330,48 @@ function G(e) {
   }
 }
 
-function Z(e, t) {
-  let n = [];
-  return i()(e).forEach(e => {
-    if (null == e || 0 === e.results.length) return;
-    let r = e.group;
-    n = n.concat(e.results.map(n => {
-      let i = n.text;
-      if (null != n.channel && (i = G(i)), t.type === b.Sap.FILTER_ALL) {
-        var a;
-        r = null != (a = n.group) ? a : r;
-        let e = E.ZP[r];
-        (null == e ? true : e.key) != null && (null == e ? true : e.key) !== "" && (i = "".concat(e.key, " ").concat(i))
-      }
-      return {
-        result: n,
-        group: e.group,
-        resultText: i
-      }
-    }))
-  }), n.filter(e => {
-    let {
-      resultText: t
-    } = e;
-    return t
-  })
-}
-
-function F(e) {
+function Z(e) {
   return e.reduce((e, t) => null == t ? e : t.results.length + e, 0)
 }
 
-function B(e) {
+function F(e) {
   return null == e ? "" : e.map(e => e.getFullMatch()).join("")
 }
-let V = new Chunk349033.ZP,
-  H = new Chunk349033.ZP;
+let B = new Chunk349033.ZP,
+  V = new Chunk349033.ZP;
 
-function Y(e) {
-  return V.tokenize(e)
+function H(e) {
+  return B.tokenize(e)
 }
 
-function W() {
-  V.clearCache(), H.clearCache()
+function Y() {
+  B.clearCache(), V.clearCache()
 }
 
-function K(e) {
+function W(e) {
   return null != e ? R[e] : null
 }
 
-function z(e, t) {
+function K(e, t) {
   let n = b.TNx.test(e.type);
   return (null != t || !n) && (null == t || !n || !!b.KA4.test(t.type))
 }
 
-function q() {
-  (0, E.WK)(), V.reset(), i()(E.ZP).forOwn((e, t) => V.addRule(v({
+function z() {
+  (0, E.WK)(), B.reset(), i()(E.ZP).forOwn((e, t) => B.addRule(v({
     type: t
-  }, e))), H.reset();
+  }, e))), V.reset();
   let e = (0, E.mh)();
-  i()(e).forOwn((e, t) => H.addRule(v({
+  i()(e).forOwn((e, t) => V.addRule(v({
     type: t
   }, e))), m.Z.markSearchTokensRefreshed()
 }
 
-function Q(e) {
+function q(e) {
   return !!C(e) || e.type === b.aib.DMS && !f.Z.hidePersonalInformation
 }
 
-function X(e) {
+function Q(e) {
   let t = e.name,
     n = false;
   if (e.isGroupDM()) t = (0, o.F6)(e, p.default, u.Z);
@@ -417,7 +389,7 @@ function X(e) {
   return (t = G(t), n) ? "#".concat(t) : t
 }
 
-function J(e) {
+function X(e) {
   var t;
   if (e.isGroupDM()) return (0, o.F6)(e, p.default, u.Z);
   if (e.isDM()) {
@@ -429,13 +401,13 @@ function J(e) {
   return null != (t = null == n ? true : n.name) ? t : e.name
 }
 
-function $() {
+function J() {
   var e, t;
   return null != (t = null == (e = p.default.getCurrentUser()) ? true : e.isStaff()) && t
 }
 
-function ee(e) {
-  let t = H.tokenize(e),
+function $(e) {
+  let t = V.tokenize(e),
     n = [];
   t.forEach(e => {
     e.type !== b.dCx.FILTER_IN && e.type !== b.dCx.ANSWER_IN && n.push(e)

@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 761374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => Z
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,11 +27,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk230558 = require("./230558.js");
 
-function C(e) {
+function Z(e) {
   var t, n;
   let {
-    id: C,
-    widget: Z,
+    id: Z,
+    widget: C,
     size: N,
     locked: w,
     padding: T,
@@ -44,9 +44,9 @@ function C(e) {
     showEmpty: L = true
   } = e, M = A ? S.C5.HORIZONTAL : S.C5.VERTICAL, V = M === S.C5.VERTICAL, z = (0, l.e7)([m.Z], () => {
     var e;
-    let t = m.Z.getWidget(C);
+    let t = m.Z.getWidget(Z);
     return !!(0, S.ZL)(t) && !w && (null == (e = t.meta.showAllStreams) || e)
-  }, [C, w]), U = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, l.e7)([f.Z], () => f.Z.getChannel(U)), {
+  }, [Z, w]), U = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, l.e7)([f.Z], () => f.Z.getChannel(U)), {
     streamParticipants: G,
     activeStreams: F,
     participantsVersion: H
@@ -94,8 +94,8 @@ function C(e) {
     isVertical: V,
     widgetSize: N
   }), ee = {
-    id: C,
-    widget: Z,
+    id: Z,
+    widget: C,
     layout: M,
     participants: G.length,
     padding: T,
@@ -114,17 +114,17 @@ function C(e) {
     locked: w
   };
   (0, b.Dl)({
-    id: C,
+    id: Z,
     streamParticipants: G,
     layout: M,
     widgetLayoutSpecs: ee
   });
   let et = null == W || 0 === F.size && w || 0 === Y && !w;
   return (r.useEffect(() => {
-    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, !et)
+    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, !et)
   }, [et]), (0, s.ZP)(() => () => {
-    a.Z.setGpuBoostRequested(O.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (et || !D) && w) ? null : et && !w ? L ? w ? null : (0, i.jsx)(y.E, {
+    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
+  }), (et || !D) && w) ? null : et && !w ? L ? w ? null : (0, i.jsx)(O.E, {
     emptyText: j.intl.string(j.t["T6+rXy"]),
     icon: o.hGI,
     absolute: true
@@ -135,7 +135,7 @@ function C(e) {
     },
     ref: q,
     children: (0, i.jsx)(E.Z, {
-      widgetId: C,
+      widgetId: Z,
       tileWidth: Q,
       tileHeight: K,
       locked: w,

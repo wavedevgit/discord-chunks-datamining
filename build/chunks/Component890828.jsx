@@ -37,7 +37,7 @@ let P = e => [e.userId, ... function(e) {
     if (null == t) return [];
     let n = t.username,
       i = (0, m.e3)(t);
-    return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(Z.lm)))
+    return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(C.lm)))
   }(e)],
   A = {
     searchType: Chunk886118.S.FUZZY,
@@ -48,7 +48,7 @@ let P = e => [e.userId, ... function(e) {
         channel: i,
         voiceStates: r
       } = e;
-      return [i.name, i.id, i.guild_id, null != (n = null == (t = S.Z.getGuild(i.guild_id)) ? true : t.name) ? n : "", ...r.flatMap(e => P(e))].filter(Z.lm)
+      return [i.name, i.id, i.guild_id, null != (n = null == (t = S.Z.getGuild(i.guild_id)) ? true : t.name) ? n : "", ...r.flatMap(e => P(e))].filter(C.lm)
     },
     throttleMs: 100
   },
@@ -62,9 +62,9 @@ let P = e => [e.userId, ... function(e) {
     let {
       channel: t,
       query: n
-    } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], N.Q), [o, c] = r.useState([]);
-    (0, y.BO)(n, Object.values(l), c, D);
-    let d = (0, a.Wu)([C.Z, I.default, E.Z, j.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
+    } = e, [l] = (0, a.e7)([Z.Z], () => [Z.Z.getVoiceStatesForChannel(t.id), Z.Z.getVoiceStateVersion()], [t.id], N.Q), [o, c] = r.useState([]);
+    (0, O.BO)(n, Object.values(l), c, D);
+    let d = (0, a.Wu)([Z.Z, I.default, E.Z, j.Z], () => Object.values(Z.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(C.lm).sort((e, t) => {
         var i, r, l, a;
         if (o.length > 0 && "" !== n.trim()) {
           if (o.some(t => t.userId === e.id)) return false;
@@ -129,7 +129,7 @@ let P = e => [e.userId, ... function(e) {
       onMouseOver: h,
       onMouseLeave: p,
       query: f
-    } = e, m = (0, a.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), O = (0, a.e7)([S.Z], () => S.Z.getGuild(g), [g]), y = (0, d.KS)(m, O), E = (null == l ? true : l.id) === n, b = E ? "text-feedback-positive" : r ? "interactive-text-active" : "text-muted", x = E ? u.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? u.TVs.colors.INTERACTIVE_TEXT_ACTIVE : u.TVs.colors.ICON_MUTED;
+    } = e, m = (0, a.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([S.Z], () => S.Z.getGuild(g), [g]), O = (0, d.KS)(m, y), E = (null == l ? true : l.id) === n, b = E ? "text-feedback-positive" : r ? "interactive-text-active" : "text-muted", x = E ? u.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? u.TVs.colors.INTERACTIVE_TEXT_ACTIVE : u.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(u.kL8, {
       className: o()(_.channelItemContainer, r && _.channelItemHighlighted),
       "aria-label": m.name,
@@ -145,7 +145,7 @@ let P = e => [e.userId, ... function(e) {
         className: _.channelItemNameContainer,
         children: [(0, i.jsxs)("div", {
           className: _.channelItemName,
-          children: [null != y ? (0, i.jsx)(y, {
+          children: [null != O ? (0, i.jsx)(O, {
             color: x,
             size: "xs",
             className: _.channelIcon
@@ -158,7 +158,7 @@ let P = e => [e.userId, ... function(e) {
         }), (0, i.jsx)(u.Text, {
           variant: E ? "text-xs/semibold" : "text-xs/medium",
           color: b,
-          children: null != (t = null == O ? true : O.name) ? t : m.name
+          children: null != (t = null == y ? true : y.name) ? t : m.name
         })]
       }), (0, i.jsx)("div", {
         className: _.channelItemAvatars,
@@ -241,12 +241,12 @@ function z(e) {
           let n = I.default.getUser(t);
           return null != n && e.push(n), e
         }, []), []);
-        return (0, a.Wu)([C.Z, v.Z, x.Z], () => Array.from(e.map(e => C.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
+        return (0, a.Wu)([Z.Z, v.Z, x.Z], () => Array.from(e.map(e => Z.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
           let n = null == t ? true : t.channelId;
           if (null == n) return e;
           let i = v.Z.getChannel(n);
           return null != i && x.Z.can(w.Plq.CONNECT, i) && e.add(n), e
-        }, new Set)).filter(Z.lm), [e])
+        }, new Set)).filter(C.lm), [e])
       }(),
       t = (0, a.Wu)([g.Z, v.Z, x.Z], () => {
         let t = g.Z.getChannelHistory(),
@@ -295,16 +295,16 @@ function W(e) {
     currentVoiceChannel: l,
     onClose: o,
     onSelect: s
-  } = e, c = (0, a.Wu)([S.Z, b.ZP, C.Z, j.Z, x.Z], () => S.Z.getGuildsArray().reduce((e, t) => [...e, ...b.ZP.getChannels(t.id)[b.Zb].filter(e => x.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
+  } = e, c = (0, a.Wu)([S.Z, b.ZP, Z.Z, j.Z, x.Z], () => S.Z.getGuildsArray().reduce((e, t) => [...e, ...b.ZP.getChannels(t.id)[b.Zb].filter(e => x.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;
     return t
   })], []).map(e => ({
     channel: e,
-    voiceStates: Object.values(C.Z.getVoiceStatesForChannel(e.id)).filter(e => j.Z.isFriend(e.userId))
+    voiceStates: Object.values(Z.Z.getVoiceStatesForChannel(e.id)).filter(e => j.Z.isFriend(e.userId))
   })), []), [d, h] = r.useState(""), [p, f] = r.useState([]);
-  (0, y.BO)(d, c, f, A);
+  (0, O.BO)(d, c, f, A);
   let m = r.useCallback(e => {
       "Escape" === e.key && o()
     }, [o]),
@@ -314,7 +314,7 @@ function W(e) {
   r.useEffect(() => (document.addEventListener("keydown", m, true), () => {
     document.removeEventListener("keydown", m, true)
   }), [o, m]);
-  let O = "" !== d.trim(),
+  let y = "" !== d.trim(),
     E = p.length > 20,
     v = {
       count: E ? 20 : p.length
@@ -363,7 +363,7 @@ function W(e) {
           "aria-label": T.intl.string(T.t.UyA6ST)
         }
       })
-    }), O ? (0, i.jsx)(V, {
+    }), y ? (0, i.jsx)(V, {
       sectionHeader: E ? T.intl.format(T.t.qdXiQ1, v) : T.intl.format(T.t["Aq+8wB"], v),
       channelIds: p.map(e => {
         let {
@@ -371,7 +371,7 @@ function W(e) {
         } = e;
         return t.id
       }).slice(0, 20),
-      hasQuery: O,
+      hasQuery: y,
       query: d,
       currentVoiceChannel: l,
       onSelect: e => g(e, "search channel")

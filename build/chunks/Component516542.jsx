@@ -32,8 +32,8 @@ function E(e) {
   } = (0, u.Z)({
     channel: E
   }), [j, I] = r.useState(() => (0, d.H2)()), {
-    textValue: C,
-    richValue: Z
+    textValue: Z,
+    richValue: C
   } = j, [N, w] = r.useState(false), T = r.useCallback(() => w(true), []), _ = r.useCallback(() => w(false), []);
   (0, s.ZP)(() => {
     (0, a.ack)(E.id, {
@@ -51,22 +51,22 @@ function E(e) {
     A = r.useCallback(e => {
       "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    D = r.useCallback(() => (C.length > b || (l.Z.sendMessage(E.id, p.ZP.parse(E, C), false, {
-      location: O.dy.OVERLAY
-    }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
+    D = r.useCallback(() => (Z.length > b || (l.Z.sendMessage(E.id, p.ZP.parse(E, Z), false, {
+      location: y.dy.OVERLAY
+    }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(Z)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
-    })), [C, b, E, t, v]);
+    })), [Z, b, E, t, v]);
   return (0, i.jsx)("div", {
-    className: y.container,
+    className: O.container,
     children: (0, i.jsx)(h.ZP, {
-      innerClassName: y.textArea,
+      innerClassName: O.textArea,
       onChange: P,
       placeholder: S,
       accessibilityLabel: x,
       channel: E,
-      textValue: C,
-      richValue: Z,
+      textValue: Z,
+      richValue: C,
       type: c.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
       onBlur: _,

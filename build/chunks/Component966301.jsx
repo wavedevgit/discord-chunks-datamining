@@ -181,7 +181,9 @@ function S(e) {
     }), (0, r.jsx)(E, {
       guildId: t.id,
       prompts: o
-    }), n && (0, r.jsx)(j.Z, {}), (0, r.jsx)("div", {
+    }), n && (0, r.jsx)(j.Z, {
+      guildId: t.id
+    }), (0, r.jsx)("div", {
       className: N.prompts,
       children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(v.Z, {
         postjoinOnly: d,

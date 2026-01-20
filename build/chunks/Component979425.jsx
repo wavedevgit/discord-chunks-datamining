@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 979425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk871118 = require("./871118.jsx"),
@@ -17,16 +17,16 @@ function d(e) {
   let {
     stream: t,
     isSmall: n,
-    selected: l,
+    selected: i,
     isSelfStream: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
-      className: i()(u.absoluteFill, u.streamPreviewOpacity),
+      className: l()(u.absoluteFill, u.streamPreviewOpacity),
       stream: t,
       noText: true
-    }), !l && (0, r.jsxs)("div", {
-      className: i()(u.content, u.streamUnavailable, {
+    }), !i && (0, r.jsxs)("div", {
+      className: l()(u.content, u.streamUnavailable, {
         [u.small]: n
       }),
       children: [(0, r.jsx)(o.Text, {

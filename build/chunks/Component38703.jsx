@@ -2,7 +2,7 @@
 /** chunk id: 38703, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,13 +12,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk63063 = require("./63063.js"),
   Chunk190007 = require("./190007.js"),
   Chunk926958 = require("./926958.js"),
+  Chunk641938 = require("./641938.js"),
   Chunk964821 = require("./964821.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk163022 = require("./163022.js");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,96 +38,101 @@ function p(e) {
   return e
 }
 
-function h() {
-  let e = (0, l.e7)([d.Z], () => d.Z.getEditedConnections()),
-    t = (0, l.e7)([d.Z], () => d.Z.isSubmitting()),
-    h = i.useCallback(() => {
-      (0, a.ZDy)(async () => {
-        let {
-          default: e
-        } = await n.e("11798").then(n.bind(n, 8656));
-        return t => (0, r.jsx)(e, p({}, t))
-      })
-    }, []),
-    x = i.useMemo(() => e.map(e => {
-      var t, n;
-      return t = p({}, e), n = n = {
-        id: (0, f.a4)(e)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t
-    }), [e]),
-    j = i.useCallback(e => {
-      let t = e.map(e => {
-        var {
-          id: t
-        } = e;
-        return function(e, t) {
+function x(e) {
+  let {
+    guildId: t
+  } = e, x = (0, l.e7)([d.Z], () => d.Z.getEditedConnections()), j = (0, l.e7)([d.Z], () => d.Z.isSubmitting()), v = i.useCallback(() => {
+    (0, a.ZDy)(async () => {
+      let {
+        default: e
+      } = await n.e("11798").then(n.bind(n, 8656));
+      return t => (0, r.jsx)(e, h({}, t))
+    })
+  }, []), O = i.useMemo(() => x.map(e => {
+    var t, n;
+    return t = h({}, e), n = n = {
+      id: (0, m.a4)(e)
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t
+  }), [x]), y = i.useCallback(e => {
+    let t = e.map(e => {
+      var {
+        id: t
+      } = e;
+      return function(e, t) {
+        if (null == e) return {};
+        var n, r, i = function(e, t) {
           if (null == e) return {};
-          var n, r, i = function(e, t) {
-            if (null == e) return {};
-            var n, r, i = {},
-              l = Object.keys(e);
-            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-            return i
-          }(e, t);
-          if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-          }
+          var n, r, i = {},
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
-        }(e, ["id"])
-      });
-      (0, c.l_)(t)
-    }, []),
-    {
-      handleDragStart: v,
-      handleDragReset: O,
-      handleDragComplete: y,
-      draggingId: C
-    } = (0, s.Z)(x, j),
-    N = e.length < f.yx;
+        }(e, t);
+        if (Object.getOwnPropertySymbols) {
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        }
+        return i
+      }(e, ["id"])
+    });
+    (0, c.l_)(t)
+  }, []), {
+    handleDragStart: C,
+    handleDragReset: N,
+    handleDragComplete: E,
+    draggingId: I
+  } = (0, s.Z)(O, y), {
+    enabled: S
+  } = u.Z.useExperiment({
+    guildId: t,
+    location: "guild_settings"
+  }, {
+    autoTrackExposure: true
+  });
+  if (!S) return null;
+  let _ = x.length < m.yx;
   return (0, r.jsxs)("div", {
-    className: b.connectionsSection,
+    className: p.connectionsSection,
     children: [(0, r.jsxs)("div", {
-      className: b.connectionsSectionHeader,
+      className: p.connectionsSectionHeader,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/bold",
-        children: m.intl.string(m.t.Cl8F8H)
+        children: b.intl.string(b.t.Cl8F8H)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
-        children: m.intl.format(m.t.vqgyJR, {
-          linkedRolesUrl: o.Z.getArticleURL(g.BhN.CONNECTION_DETAILS_ADMIN)
+        children: b.intl.format(b.t.vqgyJR, {
+          linkedRolesUrl: o.Z.getArticleURL(f.BhN.CONNECTION_DETAILS_ADMIN)
         })
-      }), !N && (0, r.jsx)(a.Text, {
+      }), !_ && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: m.intl.format(m.t.Nc7guW, {
-          max: f.yx
+        children: b.intl.format(b.t.Nc7guW, {
+          max: m.yx
         })
       })]
-    }), e.length > 0 && (0, r.jsx)("div", {
-      className: b.connectionsList,
-      children: x.map((e, t) => (0, r.jsx)(u.Z, {
+    }), x.length > 0 && (0, r.jsx)("div", {
+      className: p.connectionsList,
+      children: O.map((e, t) => (0, r.jsx)(g.Z, {
         connection: e,
         index: t,
-        onDragStart: v,
-        onDragReset: O,
-        onDragComplete: y,
-        draggingId: C
+        onDragStart: C,
+        onDragReset: N,
+        onDragComplete: E,
+        draggingId: I
       }, e.id))
     }), (0, r.jsxs)("button", {
-      className: b.addConnectionButton,
-      onClick: h,
-      disabled: !N || t,
+      className: p.addConnectionButton,
+      onClick: v,
+      disabled: !_ || j,
       type: "button",
       children: [(0, r.jsx)(a.oFk, {
         size: "custom",
@@ -136,7 +142,7 @@ function h() {
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "text-brand",
-        children: m.intl.string(m.t["03EqaC"])
+        children: b.intl.string(b.t["03EqaC"])
       })]
     })]
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 586646, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,25 +17,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk321835 = require("./321835.js");
 
-function m(e) {
+function b(e) {
   let {
     channelId: t
-  } = e, n = (0, i.e7)([o.Z], () => {
+  } = e, n = (0, l.e7)([o.Z], () => {
     var e;
     return null == (e = o.Z.getSecureFramesState()) ? true : e.epochAuthenticator
-  }), m = (0, u.W)({
+  }), b = (0, u.W)({
     fingerprintBase64: n,
     chunkSize: p.y6,
     desiredLength: p.YP
-  }), h = l.useCallback(() => {
+  }), h = i.useCallback(() => {
     (0, c.PM)({
       channelId: t
     })
   }, [t]);
   return (0, r.jsxs)("div", {
-    className: b.container,
+    className: m.container,
     children: [(0, r.jsxs)("div", {
-      className: b.tag,
+      className: m.tag,
       children: [(0, r.jsx)(a.mBM, {
         size: "xxs",
         color: a.TVs.colors.TEXT_FEEDBACK_POSITIVE
@@ -49,19 +49,19 @@ function m(e) {
       color: "text-subtle",
       children: g.intl.string(g.t.B9JNsl)
     }), (0, r.jsxs)("div", {
-      className: b.header,
+      className: m.header,
       children: [(0, r.jsx)(a.Heading, {
         variant: "text-sm/bold",
         color: "text-strong",
         children: g.intl.string(g.t.cTQI5t)
-      }), null != m && (0, r.jsx)(f.H, {
-        chunks: m,
+      }), null != b && (0, r.jsx)(f.H, {
+        chunks: b,
         color: a.TVs.colors.INTERACTIVE_TEXT_DEFAULT.css,
         onCopy: h
       })]
     }), (0, r.jsx)(d.b, {
-      className: b.code,
-      chunks: m,
+      className: m.code,
+      chunks: b,
       columns: p.WK
     }), (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 651183, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,19 +14,19 @@ function c(e) {
   let {
     participant: t,
     className: n
-  } = e, c = (0, i.Z)(t);
+  } = e, c = (0, l.Z)(t);
   if (null == c) return null;
   let s = function(e) {
     switch (e) {
-      case l.u.STREAM_SEND_LOW_FPS:
-      case l.u.STREAM_SEND_HIGH_PACKET_LOSS:
+      case i.u.STREAM_SEND_LOW_FPS:
+      case i.u.STREAM_SEND_HIGH_PACKET_LOSS:
         return o.intl.string(o.t["1f1LHp"]);
-      case l.u.STREAM_BAD_NETWORK_QUALITY:
+      case i.u.STREAM_BAD_NETWORK_QUALITY:
         return o.intl.string(o.t.Ic588B);
-      case l.u.STREAM_SOUNDSHARE_FAILED:
+      case i.u.STREAM_SOUNDSHARE_FAILED:
         return o.intl.string(o.t["9lcych"]);
-      case l.u.STREAM_VIEW_HIGH_PACKET_LOSS:
-      case l.u.STREAM_VIEW_LOW_FPS:
+      case i.u.STREAM_VIEW_HIGH_PACKET_LOSS:
+      case i.u.STREAM_VIEW_LOW_FPS:
         return o.intl.string(o.t.BcOifw);
       default:
         return

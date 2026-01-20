@@ -150,21 +150,21 @@ let _ = e => {
       setIsSupportedPrivateBrowsingPerkPlatform: G,
       isWeb: V,
       isSupportedPrivateBrowsingPerkPlatform: z,
-      setGetWarpInstallationStatus: H,
-      perkAvailableToUser: W,
-      setPerkAvailableToUser: K
-    } = (0, i.o)(R), q = r.useCallback(async () => (L(p.Ij.INITIALIZING), t(setTimeout(() => {
+      setGetWarpInstallationStatus: W,
+      perkAvailableToUser: H,
+      setPerkAvailableToUser: q
+    } = (0, i.o)(R), K = r.useCallback(async () => (L(p.Ij.INITIALIZING), t(setTimeout(() => {
       L(p.Ij.CONNECTED)
     }, 1e3)), true), [L, t]);
     r.useEffect(() => {
-      M(q)
-    }, [q, M]);
+      M(K)
+    }, [K, M]);
     let Q = r.useCallback(async () => p._n.INSTALLING, []);
     r.useEffect(() => {
-      K(k)
-    }, [k, K]), r.useEffect(() => {
-      H(Q)
-    }, [H, Q]);
+      q(k)
+    }, [k, q]), r.useEffect(() => {
+      W(Q)
+    }, [W, Q]);
     let Y = r.useCallback(async () => (clearTimeout(e), L(p.Ij.DISCONNECTED), true), [e, L]),
       X = r.useCallback(() => new Promise((e, t) => {
         Z(p._n.INSTALLING), s(setTimeout(() => {
@@ -210,9 +210,9 @@ let _ = e => {
               },
               children: (0, a.jsx)(c.rsf, {
                 onChange: () => {
-                  W ? (0, m.C)(null, I) : (0, m.C)(y.F_, I)
+                  H ? (0, m.C)(null, I) : (0, m.C)(y.F_, I)
                 },
-                checked: W
+                checked: H
               })
             })]
           }), (0, a.jsxs)(b.BZ, {

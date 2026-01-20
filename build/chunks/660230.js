@@ -1,9 +1,9 @@
 /** Chunk was on 93886 **/
-/** chunk id: 660230, original params: e,t,a (module,exports,require) **/
+/** chunk id: 660230, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  K: () => c
+  K: () => n
 });
-let c = (0, require("./722733.js").ZP)({
+let n = (0, require("./722733.js").ZP)({
   name: "2025-09-transition-account-panel",
   kind: "user",
   defaultConfig: {

@@ -157,16 +157,16 @@ function A(e) {
 
 function D(e, t, n) {
   var r, l;
-  if (j.Z.isNotificationDisabled(Z.n0.StreamWatchNudge)) return null;
+  if (j.Z.isNotificationDisabled(C.n0.StreamWatchNudge)) return null;
   let o = E.default.getUser(e);
   if (null == o) return null;
   let {
     designVariant: c
-  } = (0, S.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, I = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, T = null != f ? O.Z.getDetectableGame(f) : null, _ = null != f ? p.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == _ ? true : _.name) ? r : null == T ? true : T.name) ? l : null == w ? true : w.name, R = (0, v.oY)(null == I ? true : I.guild_id, null == I ? true : I.id, o), {
+  } = (0, S.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, I = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, T = null != f ? y.Z.getDetectableGame(f) : null, _ = null != f ? p.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == _ ? true : _.name) ? r : null == T ? true : T.name) ? l : null == w ? true : w.name, R = (0, v.oY)(null == I ? true : I.guild_id, null == I ? true : I.id, o), {
     trackView: k,
     trackClick: L
-  } = (0, C.Rg)(Z.n0.StreamWatchNudge, {
-    notif_type: Z.n0.StreamWatchNudge,
+  } = (0, Z.Rg)(C.n0.StreamWatchNudge, {
+    notif_type: C.n0.StreamWatchNudge,
     notif_user_id: o.id,
     activity_type: null == n ? true : n.type,
     activity_name: null != D ? D : null == n ? true : n.name
@@ -203,7 +203,7 @@ function D(e, t, n) {
     maxBodyLines: 1,
     onNotificationClick: (n, i) => {
       L("overlay-watch-stream");
-      let [r] = y.Z.getWidgetsByType(N.Odu.GO_LIVE), l = h.Z.getStreamParticipants(t).find(t => t.user.id === e);
+      let [r] = O.Z.getWidgetsByType(N.Odu.GO_LIVE), l = h.Z.getStreamParticipants(t).find(t => t.user.id === e);
       null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, u.rn)(l.stream, {
         forceMultiple: true,
         noFocus: true

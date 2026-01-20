@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 936847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -14,16 +14,16 @@ function s(e) {
   let {
     callTileRef: t,
     isFiring: n
-  } = e, r = (0, o.Z)(), i = (0, a.Z)(t);
-  return l.useEffect(() => {
-    n && null != i && null != t && r.fire(i.x + t.clientWidth / 2, i.y + t.clientHeight / 2, {
+  } = e, r = (0, o.Z)(), l = (0, a.Z)(t);
+  return i.useEffect(() => {
+    n && null != l && null != t && r.fire(l.x + t.clientWidth / 2, l.y + t.clientHeight / 2, {
       countMultiplier: 4
     })
-  }, [t, r, n, i]), null
+  }, [t, r, n, l]), null
 }
 
 function u(e) {
-  return (0, r.jsx)(i.Z, {
+  return (0, r.jsx)(l.Z, {
     confettiLocation: c.Hn.CALL_TILE,
     children: (0, r.jsx)(s, function(e) {
       for (var t = 1; t < arguments.length; t++) {

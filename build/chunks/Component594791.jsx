@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function c() {
   let e = r.dN.useSetting(),
     t = r.R$.useSetting();
-  return e ? null : (0, l.jsx)(i.S89, {
+  return e ? null : (0, i.jsx)(l.S89, {
     id: "preview-markdown-toggle",
     label: s.intl.string(s.t.sHJ9wZ),
     action: () => {

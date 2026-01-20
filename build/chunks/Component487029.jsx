@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 487029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -28,81 +28,81 @@ function O(e) {
     guildId: t,
     channel: n,
     width: O,
-    height: S,
-    keepOpen: C,
-    interactive: I = true,
-    analyticsSource: N,
-    onClose: T
-  } = e, x = function(e) {
+    height: C,
+    keepOpen: S,
+    interactive: x = true,
+    analyticsSource: I,
+    onClose: N
+  } = e, T = function(e) {
     let [t, n] = (0, a.Wu)([g.Z], () => [g.Z.getSounds(), g.Z.getFavorites()]);
-    return l.useMemo(() => {
+    return i.useMemo(() => {
       let r = [],
-        l = [...e, _.X8],
-        i = (e, l) => {
-          var i, a;
-          for (let o of null != (a = null == (i = t.get(e)) ? true : i.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? a : []) {
+        i = [...e, y.X8],
+        l = (e, i) => {
+          var l, a;
+          for (let o of null != (a = null == (l = t.get(e)) ? true : l.sort((e, t) => f.default.compare(e.soundId, t.soundId))) ? a : []) {
             let e = n.has(o.soundId);
-            (e && l || !e && !l) && o.available && r.push(o)
+            (e && i || !e && !i) && o.available && r.push(o)
           }
         };
-      return l.forEach(e => i(e, true)), l.forEach(e => i(e, false)), r
+      return i.forEach(e => l(e, true)), i.forEach(e => l(e, false)), r
     }, [t, n, e])
-  }((0, h.h)(n, true)), P = (0, m.j)(), Z = l.useRef(null), [j, w] = l.useState(true), A = (0, a.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+  }((0, h.h)(n, true)), j = (0, b.j)(), P = i.useRef(null), [w, Z] = i.useState(true), A = (0, a.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: R
-  } = (0, c.ZP)(o.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
-    (0, b.GN)(e, n.id, R), T()
-  }, [R, n.id, T]);
-  l.useEffect(() => {
+  } = (0, c.ZP)(o.Z.SOUNDBOARD_WHEEL), D = i.useCallback(e => {
+    (0, m.GN)(e, n.id, R), N()
+  }, [R, n.id, N]);
+  i.useEffect(() => {
     p.w(), u.DZ.loadIfNecessary()
-  }, []), l.useEffect(() => {
-    0 === x.length && 0 === P.length && T()
-  }, [x.length, P, T]), l.useEffect(() => () => {
-    let e = Z.current;
-    C || null == e || D(e)
-  }, [C, D]), (0, s.Z)({
-    type: i.ImpressionTypes.POPOUT,
-    name: i.ImpressionNames.SOUNDBOARD_POPOUT,
+  }, []), i.useEffect(() => {
+    0 === T.length && 0 === j.length && N()
+  }, [T.length, j, N]), i.useEffect(() => () => {
+    let e = P.current;
+    S || null == e || D(e)
+  }, [S, D]), (0, s.Z)({
+    type: l.ImpressionTypes.POPOUT,
+    name: l.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
-      source: N,
+      source: I,
       guild_id: t,
       media_session_id: A
     }
   }, {
-    disableTrack: !I
+    disableTrack: !x
   });
-  let M = l.useCallback(e => {
-      Z.current = e, w(null == e ? true : e.soundId)
+  let M = i.useCallback(e => {
+      P.current = e, Z(null == e ? true : e.soundId)
     }, []),
-    k = l.useCallback(e => {
+    k = i.useCallback(e => {
       if (null == e) return void M(null);
-      let t = x[e];
+      let t = T[e];
       null != t && M(t)
-    }, [M, x]),
-    L = l.useCallback(e => {
+    }, [M, T]),
+    L = i.useCallback(e => {
       if (null == e) return;
-      let t = x[e];
+      let t = T[e];
       null != t && D(t)
-    }, [x, D]),
-    U = l.useMemo(() => x.map(e => (0, r.jsx)(v.ZP, {
-      interactive: I,
-      className: y.soundButton,
+    }, [T, D]),
+    U = i.useMemo(() => T.map(e => (0, r.jsx)(E.ZP, {
+      interactive: x,
+      className: _.soundButton,
       sound: e,
-      focused: j === e.soundId,
+      focused: w === e.soundId,
       channel: n
-    }, e.soundId)), [j, n, I, x]);
-  return 0 === x.length ? null : (0, r.jsx)(c.Gt, {
+    }, e.soundId)), [w, n, x, T]);
+  return 0 === T.length ? null : (0, r.jsx)(c.Gt, {
     value: R,
-    children: (0, r.jsx)(E.Z, {
+    children: (0, r.jsx)(v.Z, {
       wheelWidth: O,
-      wheelHeight: S,
+      wheelHeight: C,
       itemWidth: 96,
       itemHeight: 52,
-      showDeadZoneIndicator: !C,
-      activeItem: j,
+      showDeadZoneIndicator: !S,
+      activeItem: w,
       onItemSelect: k,
       onItemAction: L,
-      onClose: T,
-      interactive: I,
+      onClose: N,
+      interactive: x,
       children: U
     })
   })

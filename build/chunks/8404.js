@@ -1,7 +1,7 @@
-/** Chunk was on 13478 **/
-/** chunk id: 8404, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 6164 **/
+/** chunk id: 8404, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  b: () => u
+  b: () => s
 });
 var Chunk473749 = require("./473749.js"),
   Chunk652844 = require("./652844.jsx"),
@@ -11,47 +11,47 @@ var Chunk473749 = require("./473749.js"),
   Chunk378441 = require("./378441.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
-  let t = (0, a.bp)(),
+function s(e) {
+  let t = (0, l.bp)(),
     {
-      activeVoice: n
-    } = (0, s.o)(),
-    u = null != n,
-    d = e ? "unmute" : "mute",
-    p = (0, o.P)(d),
-    m = (0, i.O)(d),
-    f = u ? p : m,
-    b = t === c.IlC.POPOUT ? u ? e ? l.TYr : l.x8H : e ? l.nRN : l.S6n : f.Component;
-  return r.useMemo(() => {
+      activeVoice: r
+    } = (0, c.o)(),
+    s = null != r,
+    b = e ? "unmute" : "mute",
+    p = (0, u.P)(b),
+    O = (0, o.O)(b),
+    f = s ? p : O,
+    d = t === a.IlC.POPOUT ? s ? e ? i.TYr : i.x8H : e ? i.nRN : i.S6n : f.Component;
+  return n.useMemo(() => {
     var e, t;
     return e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e
     }({}, f), t = t = {
-      Component: b
+      Component: d
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-      var n = Object.keys(e);
+      var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var n = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, n)
       }
-      return n
-    })(Object(t)).forEach(function(n) {
-      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+      return r
+    })(Object(t)).forEach(function(r) {
+      Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
     }), e
-  }, [f, b])
+  }, [f, d])
 }

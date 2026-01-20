@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -15,8 +15,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk516846 = require("./516846.js");
 let p = 6 * Chunk70956.Z.Millis.SECOND,
   g = 2 * Chunk70956.Z.Millis.SECOND,
-  b = 2 * Chunk70956.Z.Millis.SECOND,
-  m = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
+  m = 2 * Chunk70956.Z.Millis.SECOND,
+  b = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
 function h(e) {
   let {
@@ -25,8 +25,8 @@ function h(e) {
     onComplete: u
   } = e, {
     emoji: h,
-    sentAt: E
-  } = n, v = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [_, y] = l.useState(true), O = !v, S = (0, o.Yzy)(_, {
+    sentAt: v
+  } = n, E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [y, _] = i.useState(true), O = !E, C = (0, o.Yzy)(y, {
     from: {
       rotate: false
     },
@@ -36,7 +36,7 @@ function h(e) {
     leave: {
       rotate: false
     },
-    config: i.config.default,
+    config: l.config.default,
     onRest: (e, t) => {
       let {
         phase: n
@@ -44,22 +44,22 @@ function h(e) {
       "leave" === n && u()
     }
   });
-  return (l.useEffect(() => {
+  return (i.useEffect(() => {
     let e;
-    return Date.now() - E >= b ? (0, d.H)(t) : e = setTimeout(() => {
-      y(false), O && (0, d.H)(t)
+    return Date.now() - v >= m ? (0, d.H)(t) : e = setTimeout(() => {
+      _(false), O && (0, d.H)(t)
     }, O ? g : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [E, t, O]), O) ? null : S((e, t) => {
+  }, [v, t, O]), O) ? null : C((e, t) => {
     var n;
     let {
-      rotate: l
+      rotate: i
     } = e;
-    return t && (0, r.jsx)(i.animated.div, {
+    return t && (0, r.jsx)(l.animated.div, {
       className: f.voiceChannelEffectEmojiContainer,
       style: {
-        transform: l.to(m)
+        transform: i.to(b)
       },
       children: (0, r.jsx)(c.Z, {
         className: f.voiceChannelEffectEmoji,

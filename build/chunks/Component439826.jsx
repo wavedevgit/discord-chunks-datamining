@@ -125,10 +125,10 @@ function Z(e) {
     onCtxMenuOpen: U,
     onCtxMenuSelect: B,
     sourceQuestContent: F
-  } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), z = ((0, d.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, H = (0, g.tP)(C), W = (null == (t = C.userStatus) ? true : t.claimedAt) != null, K = (0, g.B6)(C.config.expiresAt, {
+  } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), z = ((0, d.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, W = (0, g.tP)(C), H = (null == (t = C.userStatus) ? true : t.claimedAt) != null, q = (0, g.B6)(C.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), q = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Q = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
+  }), K = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Q = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
     onAssetLoadComplete: Y
   } = r.useContext(O.k), X = z ? "text-muted" : "always-white", J = r.useCallback(() => {
     G && (0, T.openVideoQuestModal)({
@@ -177,7 +177,7 @@ function Z(e) {
               children: I.intl.string(I.t.SKNnqq)
             })]
           }), G && (0, a.jsx)(c.u, {
-            text: Q ? I.intl.string(I.t.YsCuyF) : q ? I.intl.string(I.t["74KqrR"]) : (0, v.zi)(C) ? I.intl.string(I.t.I6JG46) : I.intl.string(I.t.umdNin),
+            text: Q ? I.intl.string(I.t.YsCuyF) : K ? I.intl.string(I.t["74KqrR"]) : (0, v.zi)(C) ? I.intl.string(I.t.I6JG46) : I.intl.string(I.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, a.jsx)(u.P3F, {
@@ -275,11 +275,11 @@ function Z(e) {
               color: "always-white",
               children: null != (m = null == (s = C.config.cosponsorMetadata) ? true : s.name) ? m : C.config.messages.gamePublisher
             })]
-          }), H || W ? null : (0, a.jsx)(u.Text, {
+          }), W || H ? null : (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: X,
             children: I.intl.format(I.t["7D8r4F"], {
-              expiryDate: K
+              expiryDate: q
             })
           })]
         })]

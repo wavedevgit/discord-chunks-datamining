@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 955978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk562811 = require("./562811.js");
 
-function y(e, t, n) {
-  var y;
+function O(e, t, n) {
+  var O;
   if (p.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
   let E = d.default.getUser(e);
   if (null == E) return null;
@@ -28,23 +28,23 @@ function y(e, t, n) {
     b = u.Z.getChannel(v),
     S = o.Z.getApplication(t),
     x = a.ZP.getRunningGames().find(e => e.id === t),
-    j = null != (y = null == x ? true : x.name) ? y : null == S ? true : S.name,
+    j = null != (O = null == x ? true : x.name) ? O : null == S ? true : S.name,
     I = (0, h.oY)(null == b ? true : b.guild_id, null == b ? true : b.id, E),
-    C = (0, i.jsxs)("div", {
-      className: O.nowPlayingNotification,
+    Z = (0, i.jsxs)("div", {
+      className: y.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
-        className: O.nowPlayingNotificationIcon,
+        className: y.nowPlayingNotificationIcon,
         children: (0, i.jsx)(l.Z, {
           user: E,
           "aria-hidden": true,
           size: r.EFr.SIZE_24
         })
       }), (0, i.jsx)("div", {
-        className: O.body,
+        className: y.body,
         children: (0, i.jsx)(r.Text, {
           variant: "text-sm/medium",
           color: "interactive-text-default",
-          className: O.bodyText,
+          className: y.bodyText,
           children: g.intl.format(g.t["q7/rgv"], {
             username: null != I ? I : E.username,
             gameName: j,
@@ -52,14 +52,14 @@ function y(e, t, n) {
               game: S,
               pid: null == x ? true : x.pid,
               size: s.A.XSMALL,
-              className: O.gameIcon
+              className: y.gameIcon
             }) : null
           })
         })
       })]
     }),
     {
-      trackView: Z,
+      trackView: C,
       trackClick: N
     } = (0, f.Rg)(m.n0.NowPlayingNotification, {
       notif_type: m.n0.NowPlayingNotification,
@@ -68,14 +68,14 @@ function y(e, t, n) {
       activity_name: null != j ? j : n.name
     });
   return {
-    body: C,
-    className: O.nowPlayingNotificationContainer,
-    wrapperClassName: O.nowPlayingNotificationWrapper,
-    animationWrapperClassName: O.nowPlayingNotificationAnimationWrapper,
+    body: Z,
+    className: y.nowPlayingNotificationContainer,
+    wrapperClassName: y.nowPlayingNotificationWrapper,
+    animationWrapperClassName: y.nowPlayingNotificationAnimationWrapper,
     maxBodyLines: 1,
     disableClickableRegions: true,
     onNotificationShow: () => {
-      Z()
+      C()
     },
     onDismissClick: () => {
       N("dismiss")

@@ -39,7 +39,7 @@ function g(e) {
   return e.widget.id
 }
 
-function O(e, t, n, r) {
+function y(e, t, n, r) {
   var l, a;
   return n === o.pJH.YEETED ? null : (0, i.jsx)(d.Z, (l = m({}, t), a = a = {
     transitionState: n,
@@ -55,13 +55,13 @@ function O(e, t, n, r) {
     Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
   }), l), e)
 }
-let y = [],
+let O = [],
   E = Chunk473749.memo(function(e) {
     let {
       className: t
     } = e, n = (0, p.Z)(), d = (0, l.e7)([s.Z], () => s.Z.windowSize((0, u.ZY)(n))), E = (0, l.e7)([a.Z], () => {
       let e = a.Z.getLayout(f.$S);
-      if (null == e) return y;
+      if (null == e) return O;
       let t = [];
       for (let n of e.widgets) {
         let e = a.Z.getWidget(n);
@@ -79,7 +79,7 @@ let y = [],
     }), [t, d]);
     return (0, i.jsx)(o.W3x, {
       items: E,
-      renderItem: O,
+      renderItem: y,
       getItemKey: g,
       wrapChildren: v
     })

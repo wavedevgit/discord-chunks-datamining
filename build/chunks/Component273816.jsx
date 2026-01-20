@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 273816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,26 +19,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk501787 = require("./501787.js"),
   Chunk596385 = require("./596385.js");
 
-function y(e) {
+function O(e) {
   let {
     locked: t,
     pinned: n,
     anchorLeft: l
-  } = e, y = (0, a.e7)([h.Z], () => h.Z.getSocket()), E = (0, a.e7)([m.Z], () => m.Z.isGPUBoosted());
+  } = e, O = (0, a.e7)([h.Z], () => h.Z.getSocket()), E = (0, a.e7)([m.Z], () => m.Z.isGPUBoosted());
   (0, d.nU)();
   let v = (0, a.e7)([p.Z], () => p.Z.getWindow(g.$J)),
-    [b, S] = (0, d.m8)(y),
+    [b, S] = (0, d.m8)(O),
     {
       currentFPS: x,
       averageFrameTime: j,
       timeSinceLastDrop: I,
-      onResetFrameData: C,
-      droppedFramesRef: Z,
+      onResetFrameData: Z,
+      droppedFramesRef: C,
       renderedFrameCount: N,
       bufferFramecountRef: w,
       frameCheckerEffect: T
     } = (0, d.d6)(true, b, true),
-    [_, P, A] = (0, d.ZF)(y),
+    [_, P, A] = (0, d.ZF)(O),
     [D, R] = (0, d.Y5)(_, T, v),
     k = performance.now() - S.current < d.MC,
     L = P(j, w.current);
@@ -46,19 +46,19 @@ function y(e) {
     R()
   }));
   let M = r.useCallback(() => {
-      C(), A(), D()
-    }, [C, A, D]),
+      Z(), A(), D()
+    }, [Z, A, D]),
     [V, z] = r.useState(true),
     [U, W] = r.useState(true),
     [G, F] = r.useState(true),
     [H, Y] = r.useState(true),
     [B, Q] = r.useState(true);
   return t && !n ? null : (0, i.jsxs)("div", {
-    className: o()(O.panelGroup, !l && O.rightAligned),
+    className: o()(y.panelGroup, !l && y.rightAligned),
     children: [(V || !t) && (0, i.jsxs)("div", {
-      className: O.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: O.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(u.rsf, {
           checked: V,
           onChange: e => z(e)
@@ -66,7 +66,7 @@ function y(e) {
       }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: O.measurementText,
+        className: y.measurementText,
         children: ["FPS:", " ", (0, i.jsx)(u.Text, {
           tag: "span",
           variant: "code",
@@ -75,9 +75,9 @@ function y(e) {
         })]
       })]
     }), (U || !t) && (0, i.jsxs)("div", {
-      className: O.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: O.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(u.rsf, {
           checked: U,
           onChange: e => W(e)
@@ -85,7 +85,7 @@ function y(e) {
       }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: O.measurementText,
+        className: y.measurementText,
         children: ["Frame Times:", " ", (0, i.jsxs)(u.Text, {
           tag: "span",
           variant: "code",
@@ -94,9 +94,9 @@ function y(e) {
         })]
       })]
     }), (G || !t) && (0, i.jsxs)("div", {
-      className: O.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: O.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(u.rsf, {
           checked: G,
           onChange: e => F(e)
@@ -104,24 +104,24 @@ function y(e) {
       }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: O.measurementText,
+        className: y.measurementText,
         children: ["Dropped Frames:", " ", (0, i.jsx)(u.Text, {
           tag: "span",
           variant: "code",
           color: I < 2 ? "text-feedback-critical" : I < 5 ? "text-feedback-warning" : "text-strong",
-          children: Z.current
+          children: C.current
         }), (0, i.jsxs)(u.Text, {
           tag: "span",
           variant: "code",
           color: "text-subtle",
-          className: O.secondaryInfoText,
-          children: ["(", (Z.current / N.current * 100).toFixed(3), "%)"]
+          className: y.secondaryInfoText,
+          children: ["(", (C.current / N.current * 100).toFixed(3), "%)"]
         })]
       })]
     }), (H || !t) && (0, i.jsxs)("div", {
-      className: O.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: O.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(u.rsf, {
           checked: H,
           onChange: e => Y(e)
@@ -129,7 +129,7 @@ function y(e) {
       }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: O.measurementText,
+        className: y.measurementText,
         children: ["Rendered Frames:", " ", (0, i.jsx)(u.Text, {
           tag: "span",
           variant: "code",
@@ -138,9 +138,9 @@ function y(e) {
         })]
       })]
     }), (B || !t) && (0, i.jsxs)("div", {
-      className: O.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: O.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(u.rsf, {
           checked: B,
           onChange: e => Q(e)
@@ -152,7 +152,7 @@ function y(e) {
           children: (0, i.jsxs)(u.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
-            className: O.measurementText,
+            className: y.measurementText,
             children: ["Idle Frame Delta:", " ", (0, i.jsxs)(u.Text, {
               tag: "span",
               variant: "code",
@@ -179,7 +179,7 @@ function y(e) {
       color: "text-feedback-positive",
       children: "(Using GPU Priority - Realtime)"
     }), !t && (0, i.jsx)("div", {
-      className: O.bottomPanelButton,
+      className: y.bottomPanelButton,
       children: (0, i.jsx)(f.Z, {
         children: (0, i.jsx)(u.Button, {
           variant: "primary",

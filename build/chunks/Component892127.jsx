@@ -61,9 +61,9 @@ let j = Chunk473749.memo(function(e) {
     renderTitle: l,
     renderButtons: j,
     resizeValidation: I,
-    className: C,
-    dragContainerClassName: Z
-  } = e, N = (0, a.e7)([c.Z], () => c.Z.getWidgetConfig(t.type), [t.type]), w = (0, O.xZ)(t.id, O.bc), T = (0, y.Z)(), _ = (0, E.Z)(), P = (0, a.e7)([d.Z], () => d.Z.windowSize((0, p.ZY)(_))), A = r.useCallback((e, t, n, i, r) => {
+    className: Z,
+    dragContainerClassName: C
+  } = e, N = (0, a.e7)([c.Z], () => c.Z.getWidgetConfig(t.type), [t.type]), w = (0, y.xZ)(t.id, y.bc), T = (0, O.Z)(), _ = (0, E.Z)(), P = (0, a.e7)([d.Z], () => d.Z.windowSize((0, p.ZY)(_))), A = r.useCallback((e, t, n, i, r) => {
     let l = d.Z.windowSize((0, p.ZY)((0, E.i)())),
       o = (0, h.jL)(n, l),
       a = (0, h.Ox)(i, l);
@@ -106,8 +106,8 @@ let j = Chunk473749.memo(function(e) {
   }), [P]), Q = r.useCallback(e => n(x(S({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
-    className: C
-  })), [t, n, C]), K = r.useCallback(e => null != l || null != j ? (0, i.jsxs)("div", {
+    className: Z
+  })), [t, n, Z]), K = r.useCallback(e => null != l || null != j ? (0, i.jsxs)("div", {
     className: o()(b.extrasContainer, w && b.fullFlex),
     children: [null == l ? true : l(t), null == j ? true : j(t, e)]
   }) : null, [t, l, w, j]), X = (0, a.e7)([g.Z], () => g.Z.hasRenderDebugMode(f.GO.WidgetAreas)), J = r.useMemo(() => {
@@ -120,7 +120,7 @@ let j = Chunk473749.memo(function(e) {
       [b.debug]: X,
       [b.debugUnpinned]: X && !k,
       [b.debugPinned]: X && k
-    }, Z),
+    }, C),
     id: R,
     size: U,
     anchor: W,

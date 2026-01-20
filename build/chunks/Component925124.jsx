@@ -505,7 +505,7 @@ function R() {
     null != u && (await T(u, "discount"), A(true))
   }, z = async () => {
     await P(), A(true)
-  }, H = async () => {
+  }, W = async () => {
     let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
     await w(e), F()
   };
@@ -634,7 +634,7 @@ function R() {
           }), (0, a.jsx)(d.Button, {
             variant: "primary",
             text: "Create",
-            onClick: H
+            onClick: W
           })]
         })]
       }), L.length > 0 && (0, a.jsxs)("div", {

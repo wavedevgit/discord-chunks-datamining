@@ -19,8 +19,8 @@ var Chunk13245 = require("./13245.js"),
 
 function g(e, t, n, g) {
   if (s.Z.isNotificationDisabled(d.n0.RequestToStream)) return null;
-  let O = t.username,
-    y = f.intl.format(m.default.jTbTAF, {
+  let y = t.username,
+    O = f.intl.format(m.default.jTbTAF, {
       username: "",
       game: n.name
     }),
@@ -36,8 +36,8 @@ function g(e, t, n, g) {
     });
   return {
     icon: E,
-    title: O,
-    body: y,
+    title: y,
+    body: O,
     confirmText: f.intl.string(m.default.UGbmBp),
     cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {

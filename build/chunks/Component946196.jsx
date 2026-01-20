@@ -1,7 +1,7 @@
-/** Chunk was on 13478 **/
+/** Chunk was on 11010 **/
 /** chunk id: 946196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => p
+  l: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,16 +13,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk47343 = require("./47343.js");
 
-function p() {
-  let e = (0, l.e7)([s.Z], () => s.Z.getError());
-  return e ? (0, r.jsx)(m, {
+function f() {
+  let e = (0, a.e7)([c.Z], () => c.Z.getError());
+  return e ? (0, r.jsx)(p, {
     error: e
   }) : null
 }
-let m = e => {
+let p = e => {
   let {
     error: t
-  } = e, [n, l] = (0, i.useState)(false), p = (0, a.Yzy)(!n, {
+  } = e, [n, a] = (0, i.useState)(false), f = (0, o.Yzy)(!n, {
     from: {
       opacity: 0,
       translateY: 20
@@ -35,28 +35,28 @@ let m = e => {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings"), m = (() => {
+  }, "respect-motion-settings"), p = (() => {
     switch (t) {
-      case s.r.ERROR_DOWNLOADING_DEPENDENCY:
+      case c.r.ERROR_DOWNLOADING_DEPENDENCY:
         return u.intl.string(u.t.D9neaH);
-      case s.r.ERROR_ACTIVATING_VOICE_FILTER:
+      case c.r.ERROR_ACTIVATING_VOICE_FILTER:
         return u.intl.string(u.t.mNMZZg);
       default:
         return u.intl.string(u.t.F8FvUy)
     }
   })();
-  return p(e => n ? null : (0, r.jsx)(o.animated.div, {
+  return f(e => n ? null : (0, r.jsx)(l.animated.div, {
     style: e,
     className: d.floaterWrapper,
     children: (0, r.jsxs)("div", {
       className: d.visibleFloater,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
-        children: m
-      }), (0, r.jsx)(a.RyX, {
-        noticeType: c.kVF.VOICE_FILTERS_ERROR,
-        onClick: () => l(true)
+        children: p
+      }), (0, r.jsx)(o.RyX, {
+        noticeType: s.kVF.VOICE_FILTERS_ERROR,
+        onClick: () => a(true)
       })]
     })
   }))

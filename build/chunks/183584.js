@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 183584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   IN: () => c,
@@ -27,8 +27,8 @@ let o = {
 };
 
 function c(e, t) {
-  let n = l.Z.isOverlayV3EnabledForPID(t),
-    a = i.default.disableClickableRegions;
+  let n = i.Z.isOverlayV3EnabledForPID(t),
+    a = l.default.disableClickableRegions;
   n || a || r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: false,
@@ -47,9 +47,9 @@ function s(e) {
     pid: e,
     enabled: false
   });
-  let t = l.Z.isOverlayV3EnabledForPID(e),
-    n = i.default.disableClickableRegions;
-  i.default.isLocked(e) || t || n || r.Z.dispatch({
+  let t = i.Z.isOverlayV3EnabledForPID(e),
+    n = l.default.disableClickableRegions;
+  l.default.isLocked(e) || t || n || r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: true,
     pid: e

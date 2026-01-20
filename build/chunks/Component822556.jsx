@@ -1,5 +1,5 @@
-/** Chunk was on 13478 **/
-/** chunk id: 822556, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 6164 **/
+/** chunk id: 822556, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -17,18 +17,18 @@ var Chunk481060 = require("./481060.js"),
 function p(e) {
   let {
     analyticsLocations: t
-  } = (0, o.ZP)();
-  return (0, r.jsx)(i.sNh, {
+  } = (0, u.ZP)();
+  return (0, n.jsx)(o.sNh, {
     id: "voice-settings",
-    label: d.intl.string(d.t.NiTd0e),
+    label: b.intl.string(b.t.NiTd0e),
     action: () => {
-      (0, s.openUserSettings)(a.n.VOICE_AND_VIDEO_PANEL, {
-        section: c.oAB.VOICE,
-        subsection: u.CO,
+      (0, c.openUserSettings)(l.n.VOICE_AND_VIDEO_PANEL, {
+        section: a.oAB.VOICE,
+        subsection: s.CO,
         analyticsLocations: t,
         appContext: e
-      }), (0, l.i)(e, e === c.IlC.POPOUT)
+      }), (0, i.i)(e, e === a.IlC.POPOUT)
     },
-    icon: i.ewm
+    icon: o.ewm
   })
 }

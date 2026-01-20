@@ -1,1 +1,0 @@
-{"id":"422202","type":"experiment","data":{"kind":"user","id":"2025-08_device_changed_notification","label":"Device-changed notification experiment","defaultConfig":{"shouldShowDeviceChangedNotifications":false},"treatments":[{"id":1,"label":"Show device-changed notifications","config":{"shouldShowDeviceChangedNotifications":true}}]},"fromModule":{"id":"93886"}}

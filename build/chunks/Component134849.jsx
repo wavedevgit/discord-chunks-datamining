@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782621 = require("./782621.js");
-let y = [];
+let O = [];
 
 function E(e) {
   return e.notification.id
@@ -43,7 +43,7 @@ function v(e, t, n, r) {
 
 function b(e) {
   return (0, i.jsx)("div", {
-    className: O.container,
+    className: y.container,
     children: e
   })
 }
@@ -52,8 +52,8 @@ let S = Chunk473749.memo(function(e) {
     locked: t,
     pinned: n,
     showEmpty: d = true
-  } = e, O = (0, l.e7)([p.Z, s.Z], () => {
-    if (s.Z.isNotificationDisabled(f.n0.TextChat)) return y;
+  } = e, y = (0, l.e7)([p.Z, s.Z], () => {
+    if (s.Z.isNotificationDisabled(f.n0.TextChat)) return O;
     let e = [],
       i = 0;
     for (let r of p.Z.getNotifications()) {
@@ -67,10 +67,10 @@ let S = Chunk473749.memo(function(e) {
     }
     return e
   }, [t, n], u.E6), S = r.useState(() => new h.AS(t))[0];
-  return (r.useLayoutEffect(() => S.updateState(O, t)), r.useLayoutEffect(() => (S.initialize((0, c.i)()), () => S.cleanUp()), [S]), 0 !== O.length || t) ? (0, i.jsx)(h.S4.Provider, {
+  return (r.useLayoutEffect(() => S.updateState(y, t)), r.useLayoutEffect(() => (S.initialize((0, c.i)()), () => S.cleanUp()), [S]), 0 !== y.length || t) ? (0, i.jsx)(h.S4.Provider, {
     value: S,
     children: (0, i.jsx)(o.W3x, {
-      items: O,
+      items: y,
       renderItem: v,
       getItemKey: E,
       wrapChildren: b

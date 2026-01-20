@@ -44,7 +44,7 @@ function T(e) {
   } = (0, d.kE)(), V = 104 !== G, {
     onAssetLoadComplete: z
   } = r.useContext(v.k), {
-    expansionSpring: H
+    expansionSpring: W
   } = (0, c.q_F)({
     expansionSpring: +!!I,
     config: (T = function(e) {
@@ -76,10 +76,10 @@ function T(e) {
     })(Object(N)).forEach(function(e) {
       Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(N, e))
     }), T)
-  }), W = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = (null == (i = P.userStatus) ? true : i.claimedAt) != null, q = (0, x.xN)(P.config), Q = (0, x.LM)(P.config), {
+  }), H = (null == (n = P.userStatus) ? true : n.completedAt) != null, q = (null == (i = P.userStatus) ? true : i.claimedAt) != null, K = (0, x.xN)(P.config), Q = (0, x.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: X
-  } = (0, h.I)(P), J = (0, p.Bd)(P, D, L), $ = r.useMemo(() => K && q ? _.intl.format(_.t["8Op4c4"], {
+  } = (0, h.I)(P), J = (0, p.Bd)(P, D, L), $ = r.useMemo(() => q && K ? _.intl.format(_.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
       children: [(0, a.jsx)(m.Z, {
@@ -88,10 +88,10 @@ function T(e) {
         customSize: 14
       }), Q]
     }, P.id)
-  }) : K ? (0, a.jsx)(O, {
+  }) : q ? (0, a.jsx)(O, {
     questId: P.id,
     children: M
-  }) : q ? _.intl.format(_.t.ro1sze, {
+  }) : K ? _.intl.format(_.t.ro1sze, {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
       children: [(0, a.jsx)(m.Z, {
@@ -105,7 +105,7 @@ function T(e) {
       questId: P.id,
       children: U
     }, P.id)
-  }), [M, K, U, P.id, Q, q]), ee = r.useMemo(() => {
+  }), [M, q, U, P.id, Q, K]), ee = r.useMemo(() => {
     if (null != J) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -118,7 +118,7 @@ function T(e) {
     ref: L,
     children: [(0, a.jsxs)(s.animated.div, {
       style: {
-        maxHeight: H.to([0, 1], [104, (null != G ? G : 0) + 12])
+        maxHeight: W.to([0, 1], [104, (null != G ? G : 0) + 12])
       },
       className: S.rewardDescriptionContainer,
       children: [(0, a.jsx)(j.E, {
@@ -127,11 +127,11 @@ function T(e) {
         height: 80,
         children: (0, a.jsxs)("div", {
           className: S.assetWrapper,
-          children: [!K && W && (0, a.jsx)("div", {
+          children: [!q && H && (0, a.jsx)("div", {
             className: S.completionAnimation
           }), B ? (0, a.jsxs)("div", {
             className: S.progressWrapper,
-            children: [W && (0, a.jsx)(c.Fmz, {
+            children: [H && (0, a.jsx)(c.Fmz, {
               importData: E,
               className: S.confetti,
               loop: false,
@@ -185,7 +185,7 @@ function T(e) {
         }), ee]
       }), V && (0, a.jsx)(s.animated.div, {
         style: {
-          opacity: H.to([0, 1], [1, 0])
+          opacity: W.to([0, 1], [1, 0])
         },
         className: S.textOverflowBlur
       })]

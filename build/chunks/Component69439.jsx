@@ -95,13 +95,13 @@ function w(e) {
     day: "numeric"
   }), {
     isClaiming: z,
-    isEnrolling: H,
-    isQuestEnrollmentBlocked: W
+    isEnrolling: W,
+    isQuestEnrollmentBlocked: H
   } = (0, i.cj)([p.Z], () => ({
     isClaiming: p.Z.isClaimingReward(k.id) || p.Z.isFetchingRewardCode(k.id),
     isEnrolling: p.Z.isEnrolling(k.id),
     isQuestEnrollmentBlocked: null != p.Z.questEnrollmentBlockedUntil
-  })), K = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, q = (null == (n = k.userStatus) ? true : n.completedAt) != null, Q = q && (null == (w = k.userStatus) ? true : w.claimedAt) == null, Y = (0, g.iQ)(k), X = !(0, g.zi)(k), J = (0, b._Q)(k), $ = (0, v.PB)(k), ee = (0, v.HJ)(k), et = (0, v.Vl)(k), en = (0, b.Rf)(k), [ea, er, ei] = (0, b.me)(k, en), el = X && J === b.OH.ACCEPTED, es = el && ea === h.LI.SELECT, eo = el && !es && er.length > 1, ec = f.Cx.useConfig({
+  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, K = (null == (n = k.userStatus) ? true : n.completedAt) != null, Q = K && (null == (w = k.userStatus) ? true : w.claimedAt) == null, Y = (0, g.iQ)(k), X = !(0, g.zi)(k), J = (0, b._Q)(k), $ = (0, v.PB)(k), ee = (0, v.HJ)(k), et = (0, v.Vl)(k), en = (0, b.Rf)(k), [ea, er, ei] = (0, b.me)(k, en), el = X && J === b.OH.ACCEPTED, es = el && ea === h.LI.SELECT, eo = el && !es && er.length > 1, ec = f.Cx.useConfig({
     location: S.dr.QUEST_HOME_DESKTOP
   }).enabled, ed = r.useCallback(e => {
     ei(e), e === S.cd.DESKTOP && A([])
@@ -151,7 +151,7 @@ function w(e) {
       text: eu,
       fullWidth: true
     })
-  }) : q ? eg = $ ? (0, a.jsxs)(s.hE2, {
+  }) : K ? eg = $ ? (0, a.jsxs)(s.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.zxk, {
@@ -204,7 +204,7 @@ function w(e) {
       text: eu,
       fullWidth: true
     })
-  }) : ee ? eg = ec && !K ? (0, a.jsx)("div", {
+  }) : ee ? eg = ec && !q ? (0, a.jsx)("div", {
     className: T.button,
     children: (0, a.jsx)(C.Z, {
       quest: k,
@@ -216,12 +216,12 @@ function w(e) {
     className: T.button,
     children: (0, a.jsx)(s.zxk, {
       variant: "primary",
-      loading: H,
+      loading: W,
       onClick: null != em ? em : true,
       text: eu,
       fullWidth: true
     })
-  }) : X && K && !ef ? eg = es ? (0, a.jsx)(l.B6, {
+  }) : X && q && !ef ? eg = es ? (0, a.jsx)(l.B6, {
     className: T.platformSelectorPrimary,
     isSelected: () => false,
     options: O,
@@ -283,7 +283,7 @@ function w(e) {
       text: E.intl.string(E.t["9KoPyB"]),
       fullWidth: true
     })
-  }) : X && !K && (eg = W ? (0, a.jsxs)(s.hE2, {
+  }) : X && !q && (eg = H ? (0, a.jsxs)(s.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.zxk, {
@@ -303,7 +303,7 @@ function w(e) {
       analyticsCtxSourceQuestContent: L,
       analyticsCtxQuestContentPosition: Z
     }) : (0, a.jsx)(s.zxk, {
-      loading: H,
+      loading: W,
       variant: "primary",
       onClick: null != em ? em : true,
       text: eu,

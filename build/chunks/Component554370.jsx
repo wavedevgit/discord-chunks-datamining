@@ -174,7 +174,7 @@ function er(e) {
   } = e, n = (0, F.Z)(), l = (0, a.e7)([M.Z], () => M.Z.getTargetPID()), {
     locked: c,
     focused: m,
-    incompatibleApp: C,
+    incompatibleApp: Z,
     hasZeroSizeDimension: w,
     keybind: P
   } = (0, a.cj)([M.Z, x.default, j.Z, S.ZP, V.Z], () => {
@@ -185,7 +185,7 @@ function er(e) {
       focused: M.Z.isFocused(l),
       incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
-      keybind: null != t ? (0, Z.BB)(t.shortcut, true) : "???"
+      keybind: null != t ? (0, C.BB)(t.shortcut, true) : "???"
     }
   }, [n, l]), {
     analyticsLocations: R
@@ -215,9 +215,9 @@ function er(e) {
   return (0, h.ZP)(() => {
     let e = (0, W.pL)(),
       t = b.Z.getVoiceChannelId(),
-      n = y.Z.getChannel(t),
+      n = O.Z.getChannel(t),
       i = null != n ? E.Z.getGuild(n.guild_id) : null,
-      r = null != O.Z.getCurrentUserActiveStream(),
+      r = null != y.Z.getCurrentUserActiveStream(),
       l = null != t,
       o = (0, g.Z)(v.Z) && !r && null != e,
       a = l && null != i && null != t,
@@ -254,7 +254,7 @@ function er(e) {
     n.removeEventListener("contextmenu", J, false)
   }, [c, n]), (0, i.jsx)(f.Gt, {
     value: R,
-    children: w || C ? null : (0, i.jsxs)("div", {
+    children: w || Z ? null : (0, i.jsxs)("div", {
       id: "overlay-container",
       className: Q.overlay,
       children: [!t && X, (0, i.jsx)($, {

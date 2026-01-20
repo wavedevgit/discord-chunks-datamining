@@ -1,14 +1,14 @@
-/** Chunk was on 96888 **/
+/** Chunk was on 97116 **/
 /** chunk id: 13137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  d = require.n(Chunk392711),
+  u = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk110924 = require("./110924.js"),
@@ -20,172 +20,172 @@ var Chunk54381 = require("./54381.js"),
   Chunk531578 = require("./531578.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk877075 = require("./877075.js");
-let _ = e => d().shuffle(e.map(e => {
-  var t, n, a;
+let N = e => u().shuffle(e.map(e => {
+  var t, n, l;
   return n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        a = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        l = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), a.forEach(function(t) {
-        var a;
-        a = n[t], t in e ? Object.defineProperty(e, t, {
-          value: a,
+      }))), l.forEach(function(t) {
+        var l;
+        l = n[t], t in e ? Object.defineProperty(e, t, {
+          value: l,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = a
+        }) : e[t] = l
       })
     }
     return e
-  }({}, e), a = a = {
-    problemOptions: d().shuffle(e.problemOptions).concat(null != (t = e.freeformConfig) ? t : [])
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+  }({}, e), l = l = {
+    problemOptions: u().shuffle(e.problemOptions).concat(null != (t = e.freeformConfig) ? t : [])
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, a)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(l)).forEach(function(e) {
+    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
   }), n
 }));
 
-function h(e) {
+function S(e) {
   var t;
   let n, i, {
-      onMount: o,
-      onSubmit: h,
-      onClose: S,
+      onMount: s,
+      onSubmit: S,
+      onClose: m,
       ratingHeader: j,
-      ratingBody: y,
-      ratingOptions: N,
+      ratingBody: _,
+      ratingOptions: D,
       ratingEmojiKind: C,
-      initialRating: D = null,
-      categoriesHeader: x,
-      optionsTree: L,
-      hideDontShowAgainCheckbox: I,
-      impression: P,
-      transitionState: T
+      initialRating: y = null,
+      categoriesHeader: L,
+      optionsTree: I,
+      hideDontShowAgainCheckbox: T,
+      impression: x,
+      transitionState: P
     } = e,
-    F = (0, c.Z)(L),
-    [R, M] = l.useState(_(L));
-  l.useEffect(() => {
-    d().isEqual(F, L) || M(_(L))
-  }, [L, F]);
-  let A = (0, f.Dt)(),
-    [k, w] = l.useState(false),
-    [U, Z] = l.useState(D),
-    [$, H] = l.useState(1 === R.length ? R[0] : null),
-    [B, G] = l.useState(null),
-    [J, K] = l.useState("");
-  (0, u.ZP)(() => null == o ? true : o()), (0, u.zq)(() => {
+    R = (0, b.Z)(I),
+    [M, $] = a.useState(N(I));
+  a.useEffect(() => {
+    u().isEqual(R, I) || $(N(I))
+  }, [I, R]);
+  let A = (0, O.Dt)(),
+    [U, k] = a.useState(false),
+    [F, w] = a.useState(y),
+    [H, Z] = a.useState(1 === M.length ? M[0] : null),
+    [G, B] = a.useState(null),
+    [J, z] = a.useState("");
+  (0, o.ZP)(() => null == s ? true : s()), (0, o.zq)(() => {
     var e;
-    h({
-      rating: U,
-      category: null != (e = null == $ ? true : $.value) ? e : null,
-      problem: B,
-      dontShowAgain: k,
+    S({
+      rating: F,
+      category: null != (e = null == H ? true : H.value) ? e : null,
+      problem: G,
+      dontShowAgain: U,
       feedback: J
     })
   });
-  let V = true,
-    z = false;
-  return null == U ? (n = (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)("div", {
-      className: r()(g.problemInfo, g.ratingSelectorContainer),
-      children: (0, a.jsx)(m.Z, {
-        ratingOptions: N,
+  let Y = true,
+    K = false;
+  return null == F ? (n = (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)("div", {
+      className: r()(p.problemInfo, p.ratingSelectorContainer),
+      children: (0, l.jsx)(E.Z, {
+        ratingOptions: D,
         emojiKind: C,
-        selectedRating: U,
+        selectedRating: F,
         onChangeRating: function(e) {
-          Z(e), e === E.aZ.GOOD && S()
+          w(e), e === h.aZ.GOOD && m()
         }
       })
-    }), !I && (0, a.jsx)(s.mzw, {
-      className: g.footer,
-      direction: b.Z.Direction.HORIZONTAL,
-      children: (0, a.jsx)(s.Checkbox, {
-        checked: k,
-        onChange: () => w(!k),
-        label: p.intl.string(p.t["5E9SB9"]),
+    }), !T && (0, l.jsx)(d.mzw, {
+      className: p.footer,
+      direction: c.Z.Direction.HORIZONTAL,
+      children: (0, l.jsx)(d.Checkbox, {
+        checked: U,
+        onChange: () => k(!U),
+        label: g.intl.string(g.t["5E9SB9"]),
         labelType: "secondary"
       })
     })]
-  }), V = false) : U !== E.aZ.GOOD && null == $ ? (n = (0, a.jsx)(s.hzk, {
-    children: (0, a.jsx)(s.gNt, {
-      label: x,
-      children: (0, a.jsx)(O.Z, {
-        options: R,
-        onClick: H,
+  }), Y = false) : F !== h.aZ.GOOD && null == H ? (n = (0, l.jsx)(d.hzk, {
+    children: (0, l.jsx)(d.gNt, {
+      label: L,
+      children: (0, l.jsx)(f.Z, {
+        options: M,
+        onClick: Z,
         hideCaret: () => true
       })
     })
-  }), i = () => Z(null)) : null != $ && null == B ? (n = (0, a.jsx)(s.hzk, {
-    children: (0, a.jsx)(s.gNt, {
-      label: $.problemsHeader,
-      children: (0, a.jsx)(O.Z, {
-        options: $.problemOptions,
+  }), i = () => w(null)) : null != H && null == G ? (n = (0, l.jsx)(d.hzk, {
+    children: (0, l.jsx)(d.gNt, {
+      label: H.problemsHeader,
+      children: (0, l.jsx)(f.Z, {
+        options: H.problemOptions,
         onClick: function(e) {
           var t;
-          G(e), null != $ && null != e && (null == (t = $.freeformConfig) ? true : t.value) !== e.value && S()
+          B(e), null != H && null != e && (null == (t = H.freeformConfig) ? true : t.value) !== e.value && m()
         },
         hideCaret: e => {
           var t;
           let {
             value: n
           } = e;
-          return (null == (t = $.freeformConfig) ? true : t.value) !== n
+          return (null == (t = H.freeformConfig) ? true : t.value) !== n
         }
       })
     })
-  }), i = () => 1 === R.length ? Z(null) : H(null)) : null != $ && null != B && (null == (t = $.freeformConfig) ? true : t.value) === B.value && (n = (0, a.jsx)(s.hzk, {
-    children: (0, a.jsx)(s.Kx8, {
-      label: p.intl.string(p.t.h95hcn),
-      helperText: $.freeformConfig.hideHelpdeskLink ? true : p.intl.format(p.t.ybi2tD, {
+  }), i = () => 1 === M.length ? w(null) : Z(null)) : null != H && null != G && (null == (t = H.freeformConfig) ? true : t.value) === G.value && (n = (0, l.jsx)(d.hzk, {
+    children: (0, l.jsx)(d.Kx8, {
+      label: g.intl.string(g.t.h95hcn),
+      helperText: H.freeformConfig.hideHelpdeskLink ? true : g.intl.format(g.t.ybi2tD, {
         helpdeskURL: v.Z.getSubmitRequestURL()
       }),
       value: J,
-      maxLength: E.iF,
-      onChange: K
+      maxLength: h.iF,
+      onChange: z
     })
   }), i = () => {
-    K(""), G(null)
-  }, z = true), (0, a.jsxs)(s.Y0X, {
-    impression: P,
-    transitionState: T,
-    className: g.modalRoot,
+    z(""), B(null)
+  }, K = true), (0, l.jsxs)(d.Y0X, {
+    impression: x,
+    transitionState: P,
+    className: p.modalRoot,
     "aria-labelledby": A,
     parentComponent: "FeedbackModalV2",
-    children: [(0, a.jsxs)(s.xBx, {
+    children: [(0, l.jsxs)(d.xBx, {
       separator: false,
-      className: g.headerContainer,
-      children: [(0, a.jsx)(s.Heading, {
+      className: p.headerContainer,
+      children: [(0, l.jsx)(d.Heading, {
         id: A,
         variant: "heading-xl/extrabold",
         color: "none",
         children: j
-      }), (0, a.jsx)(s.Text, {
+      }), (0, l.jsx)(d.Text, {
         variant: "text-md/normal",
         color: "none",
-        className: g.ratingBody,
-        children: y
+        className: p.ratingBody,
+        children: _
       })]
-    }), n, V && (0, a.jsxs)(s.mzw, {
-      className: g.footer,
-      direction: b.Z.Direction.HORIZONTAL,
-      children: [(0, a.jsx)(s.Button, {
+    }), n, Y && (0, l.jsxs)(d.mzw, {
+      className: p.footer,
+      direction: c.Z.Direction.HORIZONTAL,
+      children: [(0, l.jsx)(d.Button, {
         variant: "secondary",
         size: "sm",
-        text: p.intl.string(p.t["13/7kX"]),
+        text: g.intl.string(g.t["13/7kX"]),
         onClick: i
-      }), z && (0, a.jsx)(s.Button, {
+      }), K && (0, l.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
-        text: p.intl.string(p.t.geKm7t),
-        onClick: S
+        text: g.intl.string(g.t.geKm7t),
+        onClick: m
       })]
     })]
   })

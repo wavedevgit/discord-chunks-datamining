@@ -50,17 +50,17 @@ let O = Chunk473749.memo(function(e) {
       productNameClassName: G,
       badgeClassName: V,
       cardClassName: z,
-      prioritizedCurrency: H,
-      onClickAnalytics: W
+      prioritizedCurrency: W,
+      onClickAnalytics: H
     } = e, {
-      previewingVariantIndex: K,
-      handleEntering: q,
+      previewingVariantIndex: q,
+      handleEntering: K,
       handleLeaving: Q
     } = (0, _.f)(t), Y = (0, j.jB)(), X = (0, m.Nd)(), J = null == X ? true : X.tab, $ = (0, S.zQ)(t), ee = r.useRef(null), {
       isHoveringOrFocusing: et
     } = (0, u.Z)(ee), {
       handleCardVisibilityChange: en
-    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, Y), er = t.type === s.Z.VARIANTS_GROUP && !O, ei = !P || !w, el = !(N && i) || er, es = el || ei, eo = ei || er;
+    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, H, Y), er = t.type === s.Z.VARIANTS_GROUP && !O, ei = !P || !w, el = !(N && i) || er, es = el || ei, eo = ei || er;
     return (0, a.jsx)(o.$, {
       innerRef: ee,
       onChange: en,
@@ -85,7 +85,7 @@ let O = Chunk473749.memo(function(e) {
             children: (0, a.jsx)(x.Z, {
               skuId: t.skuId,
               isCardHovered: et,
-              overrideVariantIndex: K
+              overrideVariantIndex: q
             })
           }), (0, a.jsxs)("div", {
             className: T.headerContainer,
@@ -93,7 +93,7 @@ let O = Chunk473749.memo(function(e) {
               skuId: t.skuId,
               badgeOverride: I,
               className: V,
-              prioritizedCurrency: H,
+              prioritizedCurrency: W,
               skipLimitedTimeCheck: k
             }), !n && (0, a.jsx)(C.Z, {
               skuId: t.skuId,
@@ -116,13 +116,13 @@ let O = Chunk473749.memo(function(e) {
                     "aria-hidden": true,
                     children: (0, a.jsx)(b.Z, {
                       skuId: t.skuId,
-                      prioritizedCurrency: H
+                      prioritizedCurrency: W
                     })
                   })]
                 }), er && (0, a.jsx)(y.Z, {
                   skuId: t.skuId,
                   isCollapsed: !et,
-                  onVariantEnter: q,
+                  onVariantEnter: K,
                   onVariantExit: Q
                 })]
               }), ei && (0, a.jsx)("div", {
@@ -136,15 +136,15 @@ let O = Chunk473749.memo(function(e) {
                     cardRef: ee,
                     onClick: A,
                     text: B,
-                    prioritizedCurrency: H,
-                    onClickAnalytics: W
+                    prioritizedCurrency: W,
+                    onClickAnalytics: H
                   }), !w && (0, a.jsx)(v.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: Z,
                     icon: F,
-                    prioritizedCurrency: H,
-                    onClickAnalytics: W
+                    prioritizedCurrency: W,
+                    onClickAnalytics: H
                   })]
                 })
               })]

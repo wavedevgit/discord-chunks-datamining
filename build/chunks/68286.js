@@ -1,10 +1,10 @@
 /** Chunk was on 50751 **/
 /** chunk id: 68286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Bz: () => Z,
+  Bz: () => C,
   Dl: () => N,
-  bt: () => O,
-  wD: () => C
+  bt: () => y,
+  wD: () => Z
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -53,8 +53,8 @@ function g(e, t) {
   }
   return r
 }
-let O = 256,
-  y = (e, t) => 2 * e + 2 * t,
+let y = 256,
+  O = (e, t) => 2 * e + 2 * t,
   E = e => {
     let {
       width: t,
@@ -68,14 +68,14 @@ let O = 256,
   };
 
 function v(e, t, n, i) {
-  let r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : O,
+  let r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : y,
     l = {
       width: r,
       height: (0, h.MH)(r)
     },
     o = Math.max(1, e),
     a = (0, h.bj)(e, t),
-    s = y(n, t);
+    s = O(n, t);
   return i ? {
     width: l.width + s,
     height: l.height * o + a + s
@@ -86,7 +86,7 @@ function v(e, t, n, i) {
 }
 
 function b(e, t, n, i) {
-  let r = y(e, t);
+  let r = O(e, t);
   return i ? n.width - r : (0, h.eJ)(n.height - r)
 }
 
@@ -105,7 +105,7 @@ function j(e) {
     widgetMinMaxSizes: o
   } = e, a = t === p.C5.VERTICAL, s = b(i, r, l, a), u = v(n, r, i, a, s);
   return (0, h.Se)(u, {
-    containerOffset: y(i, r),
+    containerOffset: O(i, r),
     gapSize: r,
     tileCount: n,
     isVertical: a
@@ -125,7 +125,7 @@ function I(e) {
     containerSpecs: a,
     defaultSize: s
   } = e, u = g(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs", "defaultSize"]);
-  let c = e => C(m({
+  let c = e => Z(m({
       operation: d.B.RESIZE_NORTH,
       computedSize: e,
       originSize: e,
@@ -142,7 +142,7 @@ function I(e) {
     };
   null != s && (h.defaultSize = m({}, c(s))), (0, l.nv)(m({}, h))
 }
-let C = e => {
+let Z = e => {
   let {
     operation: t,
     computedSize: n,
@@ -150,7 +150,7 @@ let C = e => {
     borderWidth: r,
     padding: l,
     containerSpecs: o
-  } = e, a = y(r, l), s = Math.max(1, i.width), u = Math.max(1, i.height), c = {
+  } = e, a = O(r, l), s = Math.max(1, i.width), u = Math.max(1, i.height), c = {
     width: s,
     height: u
   }, p = S(c), f = function(e, t, n) {
@@ -165,7 +165,7 @@ let C = e => {
     gapSize: l,
     tileCount: f,
     isVertical: p
-  }), g = (0, h.bj)(f, l), O = (() => {
+  }), g = (0, h.bj)(f, l), y = (() => {
     switch (t) {
       case d.B.RESIZE_NORTH:
       case d.B.RESIZE_SOUTH:
@@ -186,7 +186,7 @@ let C = e => {
         }
     }
   })();
-  return (0, h.Se)(O, {
+  return (0, h.Se)(y, {
     containerOffset: a,
     gapSize: l,
     tileCount: f,
@@ -197,7 +197,7 @@ let C = e => {
   })
 };
 
-function Z(e) {
+function C(e) {
   let {
     tileCount: t,
     padding: n,
@@ -208,8 +208,8 @@ function Z(e) {
     width: s,
     height: d
   } = {
-    width: "number" == typeof a.width ? a.width : O,
-    height: "number" == typeof a.height ? a.height : (0, h.MH)(O)
+    width: "number" == typeof a.width ? a.width : y,
+    height: "number" == typeof a.height ? a.height : (0, h.MH)(y)
   }, {
     width: p = s,
     height: m = d,
@@ -244,12 +244,12 @@ function Z(e) {
     windowWidth: j.width,
     windowHeight: j.height,
     isVertical: l
-  }), C = y(i, n), Z = b(i, n, {
-    width: p + C,
-    height: m + C
-  }, l), N = (0, h.MH)(Z);
+  }), Z = O(i, n), C = b(i, n, {
+    width: p + Z,
+    height: m + Z
+  }, l), N = (0, h.MH)(C);
   return {
-    tileWidth: Z,
+    tileWidth: C,
     tileHeight: N,
     widgetWidth: s,
     widgetHeight: d,
@@ -368,7 +368,7 @@ function N(e) {
         widgetMinMaxSizes: a
       } = e, s = b(r, l, o, t === p.C5.VERTICAL), u = v(i, l, r, n === p.C5.VERTICAL, s);
       return (0, h.Se)(u, {
-        containerOffset: y(r, l),
+        containerOffset: O(r, l),
         gapSize: l,
         tileCount: i,
         isVertical: n === p.C5.VERTICAL

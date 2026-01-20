@@ -1,7 +1,7 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 964398, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -92,32 +92,32 @@ function g(e, t, n) {
   let r = e * t;
   return e > .5 ? r - n : e < .5 ? r : r - n / 2
 }
-let b = Chunk473749.memo(function(e) {
+let m = Chunk473749.memo(function(e) {
   let {
     wheelWidth: t,
     wheelHeight: n,
-    itemWidth: b,
-    itemHeight: m,
+    itemWidth: m,
+    itemHeight: b,
     showDeadZoneIndicator: h,
-    activeItem: E,
-    onItemSelect: v,
-    onItemAction: _,
-    interactive: y = true,
+    activeItem: v,
+    onItemSelect: E,
+    onItemAction: y,
+    interactive: _ = true,
     onClose: O,
-    children: S
-  } = e, C = l.useRef(null), I = l.useRef([]), N = l.useRef(false), T = l.useRef(null), [x, P] = l.useState(0), [Z, j] = l.useState({
+    children: C
+  } = e, S = i.useRef(null), x = i.useRef([]), I = i.useRef(false), N = i.useRef(null), [T, j] = i.useState(0), [P, w] = i.useState({
     x: 0,
     y: 0
-  }), w = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => a().chunk(S, p), [S]), R = l.useCallback((e, t) => {
-    null == I.current[x] ? I.current[x] = [] : I.current[x][t] = e
-  }, [x]), D = l.useCallback((e, t) => {
-    T.current = t, v(p * e + t)
-  }, [v]), M = l.useCallback(() => {
-    T.current = null, v(null)
-  }, [v]), k = l.useCallback(e => {
-    M(), N.current = e
-  }, [M]), L = l.useCallback((e, t, n) => {
-    if (N.current) return void j({
+  }), Z = Math.abs(P.x) + Math.abs(P.y) > 0, A = i.useMemo(() => a().chunk(C, p), [C]), R = i.useCallback((e, t) => {
+    null == x.current[T] ? x.current[T] = [] : x.current[T][t] = e
+  }, [T]), D = i.useCallback((e, t) => {
+    N.current = t, E(p * e + t)
+  }, [E]), M = i.useCallback(() => {
+    N.current = null, E(null)
+  }, [E]), k = i.useCallback(e => {
+    M(), I.current = e
+  }, [M]), L = i.useCallback((e, t, n) => {
+    if (I.current) return void w({
       x: 0,
       y: 0
     });
@@ -125,74 +125,74 @@ let b = Chunk473749.memo(function(e) {
         x: e.x - t.x,
         y: e.y - t.y
       },
-      l = r.x < 0,
-      i = r.y < 0,
+      i = r.x < 0,
+      l = r.y < 0,
       a = ((e, t) => {
         let n = Math.abs(t.x),
           r = 180 / Math.PI * Math.atan2(Math.abs(t.y), n),
-          l = e / 2 - 28.8;
+          i = e / 2 - 28.8;
         return {
-          x: Math.max(l * Math.cos(2 * Math.PI * r / 360), 0),
-          y: Math.max(l * Math.sin(2 * Math.PI * r / 360), 0)
+          x: Math.max(i * Math.cos(2 * Math.PI * r / 360), 0),
+          y: Math.max(i * Math.sin(2 * Math.PI * r / 360), 0)
         }
       })(n, r);
-    j({
-      x: (l ? Math.max(r.x, -a.x) : Math.min(r.x, a.x)) / 2,
-      y: (i ? Math.max(r.y, -a.y) : Math.min(r.y, a.y)) / 2
+    w({
+      x: (i ? Math.max(r.x, -a.x) : Math.min(r.x, a.x)) / 2,
+      y: (l ? Math.max(r.y, -a.y) : Math.min(r.y, a.y)) / 2
     })
-  }, []), U = l.useCallback(e => {
-    null != T.current && (e.preventDefault(), e.stopPropagation(), null == _ || _(p * x + T.current))
-  }, [_, x]), F = l.useMemo(() => (0, i.throttle)(e => {
-    if (null == C.current) return;
-    let r = C.current.getBoundingClientRect(),
-      l = {
+  }, []), U = i.useCallback(e => {
+    null != N.current && (e.preventDefault(), e.stopPropagation(), null == y || y(p * T + N.current))
+  }, [y, T]), F = i.useMemo(() => (0, l.throttle)(e => {
+    if (null == S.current) return;
+    let r = S.current.getBoundingClientRect(),
+      i = {
         x: r.left + r.width / 2,
         y: r.top + r.height / 2
       },
-      i = {
+      l = {
         x: e.clientX,
         y: e.clientY
       };
-    if (L(i, l, Math.max(t, n)), N.current) {
-      null != E && M();
+    if (L(l, i, Math.max(t, n)), I.current) {
+      null != v && M();
       return
     }
-    let a = (0, c.ld)(l, i, Math.max(t, n));
-    for (let e = 0; e < I.current[x].length; e++) {
-      let t = I.current[x][e];
+    let a = (0, c.ld)(i, l, Math.max(t, n));
+    for (let e = 0; e < x.current[T].length; e++) {
+      let t = x.current[T][e];
       if (null == t) continue;
       let n = t.getBoundingClientRect();
-      if ((0, c.Vr)(l, a, n)) return void D(x, e)
+      if ((0, c.Vr)(i, a, n)) return void D(T, e)
     }
     M()
-  }, 16), [E, L, M, D, x, n, t]), V = l.useCallback(e => {
-    if (!y) return;
-    let t = x + (e.deltaY > 0 ? 1 : false);
-    t >= 0 && t < A.length && (null != T.current && (A[t].length > T.current ? D(t, T.current) : M()), P(t))
-  }, [y, x, A, D, M]), W = l.useMemo(() => A[x].map((e, l) => {
-    let i = f[l];
-    if (null == i) throw Error("Too many items supplied ".concat(S.length, " expected max of ").concat(f.length));
-    let a = g(i.x, t, b),
-      o = g(i.y, n, m);
+  }, 16), [v, L, M, D, T, n, t]), V = i.useCallback(e => {
+    if (!_) return;
+    let t = T + (e.deltaY > 0 ? 1 : false);
+    t >= 0 && t < A.length && (null != N.current && (A[t].length > N.current ? D(t, N.current) : M()), j(t))
+  }, [_, T, A, D, M]), W = i.useMemo(() => A[T].map((e, i) => {
+    let l = f[i];
+    if (null == l) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(f.length));
+    let a = g(l.x, t, m),
+      o = g(l.y, n, b);
     return (0, r.jsx)("div", {
-      ref: e => R(e, l),
+      ref: e => R(e, i),
       className: u.chatWheelItem,
       style: {
         left: a,
         top: o,
-        width: b,
-        height: m
+        width: m,
+        height: b
       },
       children: e
-    }, l)
-  }), [A, x, t, b, n, m, S.length, R]);
+    }, i)
+  }), [A, T, t, m, n, b, C.length, R]);
   return (0, r.jsx)(o.P3F, {
     className: u.chatWheelMouseInput,
     onMouseMove: F,
     onWheel: V,
     onClick: U,
     children: (0, r.jsxs)("div", {
-      ref: C,
+      ref: S,
       className: u.chatWheel,
       style: {
         width: t,
@@ -246,10 +246,10 @@ let b = Chunk473749.memo(function(e) {
             cx: 144,
             cy: 144,
             r: 28.8
-          }), w && (0, r.jsx)("circle", {
+          }), Z && (0, r.jsx)("circle", {
             className: u.chatWheelCenter,
-            cx: 144 + Z.x,
-            cy: 144 + Z.y,
+            cx: 144 + P.x,
+            cy: 144 + P.y,
             r: 28.8
           })]
         }), h && (0, r.jsx)("circle", {
@@ -269,7 +269,7 @@ let b = Chunk473749.memo(function(e) {
           children: (0, r.jsx)(d, {
             className: u.chatWheelDeadZoneIcon
           })
-        }), y && A.length > 1 ? (0, r.jsx)("div", {
+        }), _ && A.length > 1 ? (0, r.jsx)("div", {
           className: u.paginationHint,
           children: s.intl.string(s.t["Xy+S02"])
         }) : null]

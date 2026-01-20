@@ -162,18 +162,18 @@ let k = Chunk473749.memo(function(e) {
         isPreviewingInGame: false
       }, g)
     }, [a, u, g]);
-    let O = r.useMemo(() => ({
+    let y = r.useMemo(() => ({
         opacity: u.opacity
       }), [u.opacity]),
-      y = r.useMemo(() => o()({
+      O = r.useMemo(() => o()({
         [A.videoList]: true,
         [A.vertical]: !m,
         [A.hidden]: !g && a
       }), [m, g, a]);
     return 0 !== n.length || a ? null == c ? null : (0, i.jsx)("div", {
       ref: f,
-      className: y,
-      style: O,
+      className: O,
+      style: y,
       children: (0, i.jsx)(L, {
         context: t,
         participants: n,
@@ -186,7 +186,7 @@ let k = Chunk473749.memo(function(e) {
       })
     }) : p ? (0, i.jsx)("div", {
       ref: f,
-      children: (0, i.jsx)(C.E, {
+      children: (0, i.jsx)(Z.E, {
         emptyText: P.intl.string(P.t.aTiM42),
         icon: s.Odl,
         absolute: true
@@ -215,12 +215,12 @@ let k = Chunk473749.memo(function(e) {
         maxWidth: .75 * l.maxX,
         maxHeight: .75 * l.maxY
       };
-    return (0, Z.hJ)(s, u)
+    return (0, C.hJ)(s, u)
   };
 
 function z(e) {
   var t, n, l, o;
-  let s = (0, a.e7)([v.Z, y.Z], () => y.Z.getChannel(v.Z.getVoiceChannelId())),
+  let s = (0, a.e7)([v.Z, O.Z], () => O.Z.getChannel(v.Z.getVoiceChannelId())),
     u = 2 * e.padding + 2 * e.borderWidth,
     p = null == s ? true : s.id,
     [f, g] = (0, a.e7)([h.Z], () => null == p ? [
@@ -233,9 +233,9 @@ function z(e) {
       ref: j
     } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
-      participantTileWidth: C,
-      visibleParticipants: Z
-    } = (0, O.ZB)(E ? b : x, f, {
+      participantTileWidth: Z,
+      visibleParticipants: C
+    } = (0, y.ZB)(E ? b : x, f, {
       tileWidth: w.vZ,
       tileMinWidth: w.mo,
       tileMargin: w.F$,
@@ -320,10 +320,10 @@ function z(e) {
     widgetLayoutSpecs: T
   }), (0, i.jsx)(M, R(D({}, e), {
     channel: s,
-    participants: Z,
+    participants: C,
     participantsVersion: g,
-    width: E ? C : null != b ? b : e.width,
-    height: E ? null != x ? x : e.height : C,
+    width: E ? Z : null != b ? b : e.width,
+    height: E ? null != x ? x : e.height : Z,
     containerRef: j
   }))
 }

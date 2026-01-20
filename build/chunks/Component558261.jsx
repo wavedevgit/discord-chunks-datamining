@@ -296,8 +296,8 @@ let R = e => {
       hasDiscountOffer: k,
       isRental: null != x
     }), {
-      analyticsLocations: H
-    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), W = (0, _.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, u), [K, q] = (0, i.Wu)([b.Z], () => [b.Z.isClaiming === t.skuId, null != b.Z.isClaiming && b.Z.isClaiming !== t.skuId]), {
+      analyticsLocations: W
+    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), H = (0, _.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, u), [q, K] = (0, i.Wu)([b.Z], () => [b.Z.isClaiming === t.skuId, null != b.Z.isClaiming && b.Z.isClaiming !== t.skuId]), {
       handleUseNow: Q,
       isApplying: Y
     } = (0, j.W)({
@@ -309,11 +309,11 @@ let R = e => {
       text: c
     });
     if (E && !p && !N) return (0, a.jsx)(A, {
-      isClaimPremiumProductDisabled: q,
+      isClaimPremiumProductDisabled: K,
       text: c
     });
     if (!w || P) return (0, a.jsx)(Z, {
-      handlePreviewButtonClick: W,
+      handlePreviewButtonClick: H,
       text: c
     });
     if (g) return (0, a.jsx)(D, {
@@ -323,38 +323,38 @@ let R = e => {
     });
     if (E) return (0, a.jsx)(M, {
       product: t,
-      isClaimPremiumProductDisabled: q,
-      isClaiming: K,
-      analyticsLocations: H,
+      isClaimPremiumProductDisabled: K,
+      isClaiming: q,
+      analyticsLocations: W,
       text: c,
       onClickAnalytics: u
     });
     if (G && V) return null != x ? (0, a.jsx)(U, {
       product: t,
-      analyticsLocations: H,
+      analyticsLocations: W,
       onClickAnalytics: u
     }) : (0, a.jsx)(B, {
       product: t,
       checkoutEligiblePrices: z,
-      analyticsLocations: H,
+      analyticsLocations: W,
       selectedVariantIndex: r,
       text: c,
       onClickAnalytics: u
     });
     if (G && !V)
       if (z.length > 1) return (0, a.jsx)(F, {
-        handlePreviewButtonClick: W,
+        handlePreviewButtonClick: H,
         text: c
       });
       else return (0, a.jsx)(Z, {
-        handlePreviewButtonClick: W,
+        handlePreviewButtonClick: H,
         text: c
       });
     return (0, a.jsx)(R, {
       product: t,
       cardRef: n,
       isPremiumUser: p,
-      analyticsLocations: H,
+      analyticsLocations: W,
       selectedVariantIndex: r,
       hasDiscountOffer: k,
       discountOfferAmount: I,

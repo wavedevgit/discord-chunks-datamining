@@ -21,8 +21,8 @@ function c(e, t, n, c, d) {
     title: m,
     body: g
   } = (0, l.Xi)(e, t, n), {
-    trackView: O,
-    trackClick: y
+    trackView: y,
+    trackClick: O
   } = (0, a.Rg)(s.n0.ActivityInvite, {
     notif_type: s.n0.ActivityInvite,
     notif_user_id: n.id,
@@ -39,7 +39,7 @@ function c(e, t, n, c, d) {
     title: m,
     body: g,
     onNotificationShow: () => {
-      O()
+      y()
     },
     confirmText: u.intl.string(u.t.VJlc0S),
     onConfirmClick: (l, o) => {
@@ -50,10 +50,10 @@ function c(e, t, n, c, d) {
         applicationId: null != (a = c.altId) ? a : c.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(o), y("join")
+      }), r.Z.updateNotificationStatus(o), O("join")
     },
     onDismissClick: () => {
-      y("dismiss")
+      O("dismiss")
     }
   }
 }

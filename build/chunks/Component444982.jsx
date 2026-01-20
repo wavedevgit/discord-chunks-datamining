@@ -112,7 +112,7 @@ let x = {
         locked: l,
         pinned: n.pinned,
         widget: E.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : y.At,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -266,7 +266,7 @@ let x = {
         showEmpty: n,
         widget: r
       } = e;
-      return (0, i.jsx)(O.Z, {
+      return (0, i.jsx)(y.Z, {
         pinned: r.pinned,
         locked: t,
         showEmpty: n

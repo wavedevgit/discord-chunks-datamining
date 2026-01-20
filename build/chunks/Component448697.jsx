@@ -1,7 +1,7 @@
-/** Chunk was on 13478 **/
+/** Chunk was on 11010 **/
 /** chunk id: 448697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => f
+  R: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk462443 = require("./462443.js");
 
-function f() {
+function g() {
   let {
     hasActiveDownloads: e,
     progress: t
   } = function() {
-    let e = (0, a.cj)([c.Z], () => c.Z.getOngoingDownloads()),
+    let e = (0, o.cj)([s.Z], () => s.Z.getOngoingDownloads()),
       t = i.useRef({});
     i.useEffect(() => {
       0 === Object.entries(e).length && (t.current = {}), Object.assign(t.current, e)
@@ -32,22 +32,22 @@ function f() {
         } = e;
         return (null != t ? t : 0) > 0
       }),
-      l = (0, o.sumBy)(n, e => {
+      a = (0, l.sumBy)(n, e => {
         var t;
         return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
       }),
-      s = (0, o.sumBy)(n, e => {
+      c = (0, l.sumBy)(n, e => {
         var t;
         return null != (t = null == e ? true : e.totalBytes) ? t : 0
       });
     return {
       hasActiveDownloads: r,
-      progress: 0 === s ? 0 : Math.floor(l / s * 100)
+      progress: 0 === c ? 0 : Math.floor(a / c * 100)
     }
   }(), {
     activeVoice: n
   } = (0, u.o)();
-  return (0, s.Yzy)(e ? null != n ? "voice-on" : "voice-off" : null, {
+  return (0, c.Yzy)(e ? null != n ? "voice-on" : "voice-off" : null, {
     from: {
       opacity: 0,
       translateY: 20
@@ -60,28 +60,28 @@ function f() {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(l.animated.div, {
+  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(a.animated.div, {
     style: e,
-    className: m.floaterWrapper,
+    className: p.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: m.visibleFloater,
+      className: p.visibleFloater,
       children: [(0, r.jsxs)("div", {
-        className: m.progressText,
-        children: [(0, r.jsx)(s.Text, {
+        className: p.progressText,
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-strong",
-          children: p.intl.format(p.t["r+uZYZ"], {
+          children: f.intl.format(f.t["r+uZYZ"], {
             progress: t
           })
-        }), (0, r.jsx)(s.Avr, {
-          text: p.intl.string(p.t["ETE/oC"]),
+        }), (0, r.jsx)(c.Avr, {
+          text: f.intl.string(f.t["ETE/oC"]),
           onClick: d.ge,
           variant: "always-white",
           textVariant: "text-sm/normal"
         })]
-      }), (0, r.jsx)(s.Exd, {
+      }), (0, r.jsx)(c.Exd, {
         percent: t,
-        size: s.Exd.Sizes.XSMALL
+        size: c.Exd.Sizes.XSMALL
       })]
     })
   }) : null)

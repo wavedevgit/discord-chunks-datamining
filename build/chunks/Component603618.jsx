@@ -92,7 +92,7 @@ function X(e) {
     } = e,
     u = (0, d.e7)([L.default], () => L.default.getUser(n.author_id)),
     [c, m] = r.useState("unsent"),
-    [y, E] = r.useState(false);
+    [O, E] = r.useState(false);
   r.useEffect(() => {
     if ("sent" === c) {
       let e = setTimeout(() => E(true), 2e3);
@@ -114,7 +114,7 @@ function X(e) {
             var t;
             let e = await g.Z.getOrEnsurePrivateChannel(u.id),
               i = null != (t = A.Z.getChannel(e)) ? t : null;
-            o()(null != i, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(i.guild_id, i.id)), (0, C.i)(F.IlC.OVERLAY, true), true === n.extra.fake_inventory_item ? await (0, j.k)({
+            o()(null != i, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(i.guild_id, i.id)), (0, Z.i)(F.IlC.OVERLAY, true), true === n.extra.fake_inventory_item ? await (0, j.k)({
               channel: i,
               content: Y.intl.formatToPlainString(Y.t.UVBA9g, {
                 gameName: n.extra.game_name
@@ -131,7 +131,7 @@ function X(e) {
               location: H.dy.OVERLAY
             })
           }
-          O.Z.track(F.rMx.OVERLAY_GAME_INVITE_SENT, {
+          y.Z.track(F.rMx.OVERLAY_GAME_INVITE_SENT, {
             target_user_id: u.id,
             target_content_entry_id: n.id,
             target_index: a
@@ -149,20 +149,20 @@ function X(e) {
       if (null == u) return;
       let t = await g.Z.getOrEnsurePrivateChannel(u.id),
         n = null != (e = A.Z.getChannel(t)) ? e : null;
-      o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, C.i)(F.IlC.OVERLAY, true), (0, W.Ws)(F.Odu.ACTIVITY, {
+      o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, Z.i)(F.IlC.OVERLAY, true), (0, W.Ws)(F.Odu.ACTIVITY, {
         type: W.Qu.REDIRECT,
         value: W.bk.CHAT,
         userId: u.id
       })
     }, I = b ? Y.intl.string(Y.t["3fRySx"]) : Y.intl.string(Y.t.XHxDIV);
-  return t = "sent" === c ? y ? p.kBi : p.kSu : b ? p.ejJ : p.Uuj, (0, i.jsx)(h.u, {
+  return t = "sent" === c ? O ? p.kBi : p.kSu : b ? p.ejJ : p.Uuj, (0, i.jsx)(h.u, {
     text: I,
     "aria-label": I,
     children: (0, i.jsx)(p.hU, {
       icon: t,
       "aria-label": I,
       loading: "sending" === c,
-      onClick: y ? x : S,
+      onClick: O ? x : S,
       variant: "subtle" === s ? "icon-only" : "secondary",
       size: "sm"
     })
@@ -195,13 +195,13 @@ function J(e) {
         m("unsent")
       }
     }
-  }, O = Y.intl.string(Y.t.OKsSCR);
+  }, y = Y.intl.string(Y.t.OKsSCR);
   return (0, i.jsx)(h.u, {
-    text: O,
-    "aria-label": O,
+    text: y,
+    "aria-label": y,
     children: (0, i.jsx)(p.hU, {
       icon: "sent" === c ? p.kSu : p.V9,
-      "aria-label": O,
+      "aria-label": y,
       loading: "sending" === c,
       onClick: g,
       variant: "subtle" === o ? "icon-only" : "secondary",
@@ -228,7 +228,7 @@ function q(e) {
   }, [o]);
   return null == o ? null : (0, i.jsxs)("div", {
     className: B.row,
-    children: [(0, i.jsx)(y.Z, {
+    children: [(0, i.jsx)(O.Z, {
       className: B.avatar,
       user: o,
       isMobile: s,
@@ -368,7 +368,7 @@ function et(e) {
         }(T.Z.getUserAffinity(t), i, n)
       })
     }, [t, i]);
-  return (0, E.ZP)(() => (Z.L(), () => Z.v())), {
+  return (0, E.ZP)(() => (C.L(), () => C.v())), {
     entries: r.useMemo(() => {
       let e = l.filter(e => !c.some(t => t.activityUser.id === e.author_id)),
         t = [...c.map(e => (function(e) {
@@ -440,7 +440,7 @@ function er(e) {
   let {
     locked: t
   } = e, n = (0, G.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, I.Z)(r), a = (0, d.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, d.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
-  (0, E.ZP)(() => (Z.L(), () => Z.v()));
+  (0, E.ZP)(() => (C.L(), () => C.v()));
   let c = et({
     gamingId: s,
     userAffinityThresholdV2: .00145,

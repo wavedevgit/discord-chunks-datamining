@@ -1,14 +1,13 @@
-/** Chunk was on 96888 **/
+/** Chunk was on 66788 **/
 /** chunk id: 988645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk957115 = require("./957115.js"),
-  Chunk328171 = require("./328171.js"),
   Chunk13137 = require("./13137.jsx"),
   Chunk445102 = require("./445102.js"),
   Chunk626135 = require("./626135.js"),
@@ -17,87 +16,83 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk40207 = require("./40207.js");
 
-function v(e) {
+function m(e) {
   let {
     onClose: t,
-    transitionState: v,
-    analyticsData: m
-  } = e, {
-    surveyEmojiKind: E
-  } = (0, o.R)({
-    location: "VoiceCallFeedback"
-  }), p = f.intl.string(f.t.Ss6tlb), g = f.intl.string(f.t.tLi4cR), _ = {
-    impressionName: l.ImpressionNames.VOICE_FEEDBACK_MODAL,
+    transitionState: m,
+    analyticsData: p
+  } = e, f = b.intl.string(b.t.Ss6tlb), g = b.intl.string(b.t.tLi4cR), v = {
+    impressionName: o.ImpressionNames.VOICE_FEEDBACK_MODAL,
     impressionProperties: {
-      rtc_connection_id: m.rtc_connection_id,
-      media_session_id: m.media_session_id
+      rtc_connection_id: p.rtc_connection_id,
+      media_session_id: p.media_session_id
     }
-  }, h = {
-    value: b.tX.CONNECTION,
-    label: f.intl.string(O.default.FVhMw6),
-    problemsHeader: f.intl.string(f.t.FJmoxF),
+  }, O = {
+    value: u.tX.CONNECTION,
+    label: b.intl.string(_.default.FVhMw6),
+    problemsHeader: b.intl.string(b.t.FJmoxF),
     problemOptions: (0, r.Z1)(),
     freeformConfig: {
-      value: b.T_.FREEFORM,
-      label: f.intl.string(f.t.emlT91)
+      value: u.T_.FREEFORM,
+      label: b.intl.string(b.t.emlT91)
     }
-  }, S = {
-    value: b.tX.AUDIO,
-    label: f.intl.string(O.default.PL2l6A),
-    problemsHeader: f.intl.string(f.t.FJmoxF),
+  }, y = {
+    value: u.tX.AUDIO,
+    label: b.intl.string(_.default.PL2l6A),
+    problemsHeader: b.intl.string(b.t.FJmoxF),
     problemOptions: (0, r.w9)({
       isMobile: false
     }),
     freeformConfig: {
-      value: b.b9.FREEFORM,
-      label: f.intl.string(f.t.emlT91)
+      value: u.b9.FREEFORM,
+      label: b.intl.string(b.t.emlT91)
     }
-  }, j = {
-    value: b.tX.VIDEO,
-    label: f.intl.string(O.default["0WFzPh"]),
-    problemsHeader: f.intl.string(f.t.FJmoxF),
+  }, F = {
+    value: u.tX.VIDEO,
+    label: b.intl.string(_.default["0WFzPh"]),
+    problemsHeader: b.intl.string(b.t.FJmoxF),
     problemOptions: (0, r.NX)(),
     freeformConfig: {
-      value: b.ct.FREEFORM,
-      label: f.intl.string(f.t.emlT91)
+      value: u.ct.FREEFORM,
+      label: b.intl.string(b.t.emlT91)
     }
-  }, y = {
-    value: b.tX.PEOPLE,
-    label: f.intl.string(O.default.Moa3W9),
-    problemsHeader: f.intl.string(f.t.FJmoxF),
+  }, h = {
+    value: u.tX.PEOPLE,
+    label: b.intl.string(_.default.Moa3W9),
+    problemsHeader: b.intl.string(b.t.FJmoxF),
     problemOptions: (0, r.hP)(),
     freeformConfig: {
-      value: b.s_.FREEFORM,
-      label: f.intl.string(f.t.emlT91)
+      value: u.s_.FREEFORM,
+      label: b.intl.string(b.t.emlT91)
     }
   };
-  return (0, a.jsx)(d.Z, {
+  return (0, a.jsx)(l.Z, {
     onMount: () => {
-      u.default.track(c.rMx.OPEN_MODAL, {
+      d.default.track(s.rMx.OPEN_MODAL, {
         type: "voice",
         source: "Feedback Modal"
       })
     },
     onSubmit: function(e) {
-      var t, l;
+      var t, o;
       let {
-        dontShowAgain: o,
+        dontShowAgain: l,
         rating: d,
-        feedback: u,
-        category: O,
-        problem: v
+        feedback: _,
+        category: m,
+        problem: f
       } = e;
-      o && (0, r.Uv)({
-        feedbackType: b.nw.VOICE,
+      l && (0, r.Uv)({
+        feedbackType: u.nw.VOICE,
         location: "VoiceCallFeedbackModal"
-      }), null != d && ((0, s.Z)(c.rMx.CALL_REPORT_PROBLEM, {
+      }), null != d && ((0, c.Z)(s.rMx.CALL_REPORT_PROBLEM, {
         rating: d,
-        category: O,
-        reasonDescription: null != (t = null == v ? true : v.value) ? t : null,
-        variant: null != (l = null == v ? true : v.variant) ? l : null,
-        feedback: u,
-        analyticsData: m
-      }), null != v && (0, i.ZDy)(async () => {
+        category: m,
+        reasonDescription: null != (t = null == f ? true : f.value) ? t : null,
+        variant: null != (o = null == f ? true : f.variant) ? o : null,
+        feedback: _,
+        analyticsData: p
+      }), null != f && (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
@@ -119,17 +114,17 @@ function v(e) {
           }
           return e
         }({
-          body: f.intl.string(f.t["d9+vQ8"])
+          body: b.intl.string(b.t["d9+vQ8"])
         }, t))
       }))
     },
     onClose: t,
-    ratingHeader: p,
-    ratingEmojiKind: E,
+    ratingHeader: f,
+    ratingEmojiKind: "face",
     ratingBody: g,
-    categoriesHeader: f.intl.string(O.default.tq8598),
-    optionsTree: [h, S, j, y],
-    impression: _,
-    transitionState: v
+    categoriesHeader: b.intl.string(_.default.tq8598),
+    optionsTree: [O, y, F, h],
+    impression: v,
+    transitionState: m
   })
 }

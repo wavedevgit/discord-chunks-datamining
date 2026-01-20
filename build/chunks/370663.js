@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 370663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -9,18 +9,18 @@ var Chunk473749 = require("./473749.js"),
 let a = () => {};
 
 function o(e, t, n) {
-  let o = r.useRef((0, l.Z)()),
+  let o = r.useRef((0, i.Z)()),
     c = r.useRef(Date.now()),
-    s = r.useCallback((r, l) => {
+    s = r.useCallback((r, i) => {
       let a = {
         x: r,
-        y: l,
+        y: i,
         deltaTime: Date.now() - c.current
       };
-      (0, i.oW)(t, o.current, e, n, a), (0, i.cV)(o.current, e, n, [a])
+      (0, l.oW)(t, o.current, e, n, a), (0, l.cV)(o.current, e, n, [a])
     }, [t, n, e]),
     u = r.useCallback((e, t, n) => {
-      o.current = (0, l.Z)(), c.current = Date.now(), s(t, n)
+      o.current = (0, i.Z)(), c.current = Date.now(), s(t, n)
     }, [s]),
     d = r.useCallback((e, t, n) => s(t, n), [s]),
     f = r.useCallback((e, t, n) => u(e, t, n), [u]);

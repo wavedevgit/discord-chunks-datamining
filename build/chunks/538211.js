@@ -1,41 +1,41 @@
-/** Chunk was on 74783 **/
-/** chunk id: 538211, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 18912 **/
+/** chunk id: 538211, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => i
 });
 var Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e) {
+function i(t) {
   let {
-    isEndStream: t
-  } = e;
+    isEndStream: n
+  } = t;
   return [{
-    value: r.kr.BLACK_SCREEN,
-    label: t ? a.intl.string(a.t["0X5Zbq"]) : a.intl.string(a.t.fxiRNr)
+    value: l.kr.BLACK_SCREEN,
+    label: n ? r.intl.string(r.t["0X5Zbq"]) : r.intl.string(r.t.fxiRNr)
   }, {
-    value: r.kr.BLURRY,
-    label: t ? a.intl.string(a.t.VVPQyy) : a.intl.string(a.t.E8jTMN)
+    value: l.kr.BLURRY,
+    label: n ? r.intl.string(r.t.VVPQyy) : r.intl.string(r.t.E8jTMN)
   }, {
-    value: r.kr.LAGGING,
-    label: t ? a.intl.string(a.t.ObEHd4) : a.intl.string(a.t.VoSJEQ)
+    value: l.kr.LAGGING,
+    label: n ? r.intl.string(r.t.ObEHd4) : r.intl.string(r.t.VoSJEQ)
   }, {
-    value: r.kr.OUT_OF_SYNC,
-    label: t ? a.intl.string(a.t.mYmwD3) : a.intl.string(a.t["+NluQm"])
+    value: l.kr.OUT_OF_SYNC,
+    label: n ? r.intl.string(r.t.mYmwD3) : r.intl.string(r.t["+NluQm"])
   }, {
-    value: r.kr.AUDIO_MISSING,
-    label: t ? a.intl.string(a.t["Xwv41+"]) : a.intl.string(a.t.G2egzT)
+    value: l.kr.AUDIO_MISSING,
+    label: n ? r.intl.string(r.t["Xwv41+"]) : r.intl.string(r.t.G2egzT)
   }, {
-    value: r.kr.AUDIO_POOR,
-    label: t ? a.intl.string(a.t["fHey+d"]) : a.intl.string(a.t.aHOfIo)
+    value: l.kr.AUDIO_POOR,
+    label: n ? r.intl.string(r.t["fHey+d"]) : r.intl.string(r.t.aHOfIo)
   }, {
-    value: r.kr.STREAM_STOPPED,
-    label: a.intl.string(a.t.uEoqQp)
+    value: l.kr.STREAM_STOPPED,
+    label: r.intl.string(r.t.uEoqQp)
   }, {
-    value: r.kr.VIBES_OFF,
-    label: a.intl.string(a.t["++JLL0"])
+    value: l.kr.VIBES_OFF,
+    label: r.intl.string(r.t["++JLL0"])
   }, {
-    value: r.kr.OTHER,
-    label: a.intl.string(a.t.emlT91)
+    value: l.kr.OTHER,
+    label: r.intl.string(r.t.emlT91)
   }]
 }

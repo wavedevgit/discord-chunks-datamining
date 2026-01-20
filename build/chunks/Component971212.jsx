@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk247902 = require("./247902.js"),
   Chunk532428 = require("./532428.js"),
   Chunk329790 = require("./329790.jsx"),
-  Chunk397430 = require("./397430.jsx"),
+  Chunk41054 = require("./41054.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -225,7 +225,7 @@ function L(e) {
       type: "avatar",
       src: r.getAvatarURL(null, (0, u.dcp)(u.EFr.SIZE_20))
     })
-  } else t = n.isGroupDM() ? (0, r.jsx)(I.MC, {
+  } else t = n.isGroupDM() ? (0, r.jsx)(I.Z, {
     channel: n,
     avatarSize: u.EFr.SIZE_20,
     iconSize: "refresh_sm"
@@ -345,56 +345,55 @@ function M(e) {
 
 function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
-    n = arguments.length > 2 ? arguments[2] : true,
-    [r, a] = i.useState(t),
+    [n, r] = i.useState(t),
     {
-      filterAutocompleteResults: o,
-      handleFocusFilter: s
+      filterAutocompleteResults: a,
+      handleFocusFilter: o
     } = R({
       searchContext: e,
       filter: T.dCx.FILTER_HAS,
       queryString: ""
     }),
-    l = i.useMemo(() => {
-      if (0 === o.length && 0 === r.length) return [];
+    s = i.useMemo(() => {
+      if (0 === a.length && 0 === n.length) return [];
       let e = [],
         t = new Set;
-      return r.length > 0 && r.forEach(r => {
-        t.add(r), e.push({
+      return n.length > 0 && n.forEach(n => {
+        t.add(n), e.push({
+          value: n,
+          label: n,
+          key: n,
+          id: n,
+          leading: M(n)
+        })
+      }), a.length > 0 && a.forEach(n => {
+        let {
+          text: r
+        } = n;
+        t.has(r) || (e.push({
           value: r,
           label: r,
           key: r,
           id: r,
-          leading: n ? M(r) : true
-        })
-      }), o.length > 0 && o.forEach(r => {
-        let {
-          text: i
-        } = r;
-        t.has(i) || (e.push({
-          value: i,
-          label: i,
-          key: i,
-          id: i,
-          leading: n ? M(i) : true
-        }), t.add(i))
+          leading: M(r)
+        }), t.add(r))
       }), e
-    }, [o, r, n]),
-    c = i.useCallback(() => {
-      a([])
+    }, [a, n]),
+    l = i.useCallback(() => {
+      r([])
     }, []),
-    u = i.useCallback(e => {
-      if (0 === r.length) return null;
+    c = i.useCallback(e => {
+      if (0 === n.length) return null;
       let t = v.ZP[e];
-      return r.map(e => "".concat(t.key, " ").concat(e)).join(" ")
-    }, [r]);
+      return n.map(e => "".concat(t.key, " ").concat(e)).join(" ")
+    }, [n]);
   return {
-    options: l,
-    query: r,
-    setQuery: a,
-    handleClearFilter: c,
-    getApplyQueryString: u,
-    handleFocusFilter: s
+    options: s,
+    query: n,
+    setQuery: r,
+    handleClearFilter: l,
+    getApplyQueryString: c,
+    handleFocusFilter: o
   }
 }
 let U = () => i.useMemo(() => {
@@ -507,56 +506,55 @@ function Z(e) {
 
 function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
-    n = arguments.length > 2 ? arguments[2] : true,
-    [r, a] = i.useState(t),
+    [n, r] = i.useState(t),
     {
-      filterAutocompleteResults: o,
-      handleFocusFilter: s
+      filterAutocompleteResults: a,
+      handleFocusFilter: o
     } = R({
       searchContext: e,
       filter: T.dCx.FILTER_AUTHOR_TYPE,
       queryString: ""
     }),
-    l = i.useMemo(() => {
-      if (0 === o.length && 0 === r.length) return [];
+    s = i.useMemo(() => {
+      if (0 === a.length && 0 === n.length) return [];
       let e = [],
         t = new Set;
-      return r.length > 0 && r.forEach(r => {
-        t.add(r), e.push({
+      return n.length > 0 && n.forEach(n => {
+        t.add(n), e.push({
+          value: n,
+          label: n,
+          key: n,
+          id: n,
+          leading: Z(n)
+        })
+      }), a.length > 0 && a.forEach(n => {
+        let {
+          text: r
+        } = n;
+        t.has(r) || (e.push({
           value: r,
           label: r,
           key: r,
           id: r,
-          leading: n ? Z(r) : true
-        })
-      }), o.length > 0 && o.forEach(r => {
-        let {
-          text: i
-        } = r;
-        t.has(i) || (e.push({
-          value: i,
-          label: i,
-          key: i,
-          id: i,
-          leading: n ? Z(i) : true
-        }), t.add(i))
+          leading: Z(r)
+        }), t.add(r))
       }), e
-    }, [o, r, n]),
-    c = i.useCallback(() => {
-      a([])
+    }, [a, n]),
+    l = i.useCallback(() => {
+      r([])
     }, []),
-    u = i.useCallback(e => {
-      if (0 === r.length) return null;
+    c = i.useCallback(e => {
+      if (0 === n.length) return null;
       let t = v.ZP[e];
-      return r.map(e => "".concat(t.key, " ").concat(e)).join(" ")
-    }, [r]);
+      return n.map(e => "".concat(t.key, " ").concat(e)).join(" ")
+    }, [n]);
   return {
-    options: l,
-    query: r,
-    setQuery: a,
-    handleClearFilter: c,
-    getApplyQueryString: u,
-    handleFocusFilter: s
+    options: s,
+    query: n,
+    setQuery: r,
+    handleClearFilter: l,
+    getApplyQueryString: c,
+    handleFocusFilter: o
   }
 }
 

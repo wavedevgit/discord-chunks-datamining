@@ -888,9 +888,9 @@ let eS = ["__webpack_require__", "fn"],
             tooltip: "Close",
             onClick: c
           })]
-        }), (0, a.jsxs)(H.E, {
+        }), (0, a.jsxs)(W.E, {
           className: J.commonProperties,
-          children: [(0, a.jsx)(H.Z9, {
+          children: [(0, a.jsx)(W.Z9, {
             name: "Timestamp",
             copyValue: v.toISOString(),
             children: (0, a.jsx)("time", {
@@ -898,31 +898,31 @@ let eS = ["__webpack_require__", "fn"],
               title: (0, U.vc)(v, "LLLL"),
               children: (0, U.vc)(v, "L h:mm:ss.SSS")
             })
-          }), (0, a.jsx)(H.Z9, {
+          }), (0, a.jsx)(W.Z9, {
             name: "Log Type",
             copyValue: m,
             children: (0, a.jsx)("code", {
               children: m
             })
-          }), (0, a.jsx)(H.Z9, {
+          }), (0, a.jsx)(W.Z9, {
             name: "PID",
             copyValue: null != (t = null == g ? true : g.toString()) ? t : "null",
             children: (0, a.jsx)("code", {
               children: null != (n = null == g ? true : g.toString()) ? n : "null"
             })
-          }), (0, a.jsx)(H.Z9, {
+          }), (0, a.jsx)(W.Z9, {
             name: "Native ID",
             copyValue: null != (r = null == p ? true : p.toString()) ? r : "null",
             children: (0, a.jsx)("code", {
               children: null != (i = null == p ? true : p.toString()) ? i : "null"
             })
-          }), (0, a.jsx)(H.Z9, {
+          }), (0, a.jsx)(W.Z9, {
             name: "Data",
             copyValue: e_(x),
             children: (0, a.jsx)("code", {
               children: e_(x)
             })
-          }), null != f && (0, a.jsx)(H.Z9, {
+          }), null != f && (0, a.jsx)(W.Z9, {
             name: "Stack Trace",
             copyValue: f,
             children: (0, a.jsx)("code", {
@@ -988,7 +988,7 @@ function eN() {
     N(e)
   }, []), {
     renderSelectedTab: Z
-  } = (0, q.ZP)({
+  } = (0, K.ZP)({
     tabs: eT
   }, []);
   (0, k.BO)(S, T, A, eO, [C]);
@@ -1094,13 +1094,13 @@ function eN() {
       })]
     }), (0, a.jsx)("div", {
       className: l()(J.panelGroup, J.tableContainer),
-      children: (0, a.jsx)(K.Z, {
+      children: (0, a.jsx)(q.Z, {
         columns: ey,
         data: O,
         selectedRowKey: null != w ? w : true,
         onClickRow: e => I(e.key)
       })
-    }), null != R && (0, a.jsx)(W.Z, {
+    }), null != R && (0, a.jsx)(H.Z, {
       className: l()(J.panelGroup, J.subPanel),
       minHeight: 100,
       initialHeight: null != t ? t / 3 : 300,

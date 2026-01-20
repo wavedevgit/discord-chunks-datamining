@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 512384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -17,9 +17,9 @@ function c(e) {
     children: c,
     className: s
   } = e, u = (0, o.Z)(n);
-  return (0, l.e7)([a.Z], () => a.Z.isEnabled({
+  return (0, i.e7)([a.Z], () => a.Z.isEnabled({
     shakeLocation: n
-  })) ? (0, r.jsx)(i.UkV, {
+  })) ? (0, r.jsx)(l.UkV, {
     isShaking: t,
     intensity: u,
     className: s,

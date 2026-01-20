@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => W
 }), require("./388685.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -172,7 +172,7 @@ function V() {
     V(D(Z({}, e), {
       preview: true
     }))
-  }, []), [H, W] = r.useState(w.a.UNENROLLED), [K, q] = r.useState(false), [Q, Y] = r.useState(false), [X, J] = r.useState(null), $ = (A = F.config, (0, s.EQ)(A).with({
+  }, []), [W, H] = r.useState(w.a.UNENROLLED), [q, K] = r.useState(false), [Q, Y] = r.useState(false), [X, J] = r.useState(null), $ = (A = F.config, (0, s.EQ)(A).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -293,7 +293,7 @@ function V() {
       className: R.fields,
       children: (0, a.jsx)(O.Z, {
         onSelect: function(e) {
-          J(e), null != e && (W(function(e) {
+          J(e), null != e && (H(function(e) {
             if (null == e.userStatus) return w.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return w.a.CLAIMED;
             if (null != e.userStatus.completedAt) return w.a.COMPLETED_100;
@@ -509,7 +509,7 @@ function V() {
         children: (0, a.jsx)(P.Z, {})
       }), (0, a.jsx)(w.Z, {
         onChange: function(e) {
-          switch (W(e), e) {
+          switch (H(e), e) {
             case w.a.UNENROLLED:
               z(D(Z({}, F), {
                 userStatus: null
@@ -566,7 +566,7 @@ function V() {
               }))
           }
         },
-        value: H
+        value: W
       })]
     }), (0, a.jsx)(m.Heading, {
       variant: "heading-lg/bold",
@@ -637,7 +637,7 @@ function V() {
               children: (0, a.jsx)(v.Z, {
                 channelId: "123",
                 previewQuest: F,
-                isParticipatingOverride: K
+                isParticipatingOverride: q
               })
             })
           })
@@ -646,9 +646,9 @@ function V() {
         className: R.toggleSwitch,
         children: (0, a.jsx)(m.rsf, {
           label: "Is Participating:",
-          checked: K,
+          checked: q,
           onChange: function(e) {
-            q(e)
+            K(e)
           }
         })
       }), (0, a.jsxs)(S.Z, {
@@ -745,4 +745,4 @@ class z extends Chunk473749.Component {
     })
   }
 }
-let H = z
+let W = z

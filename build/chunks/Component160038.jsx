@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 160038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -21,9 +21,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk297686 = require("./297686.js");
-let y = () => {
+let _ = () => {
     f.Z.getMediaEngine().once(o.aB.ConnectionStats, e => {
-      let t = JSON.stringify(Object.values(E.Yn).map(t => {
+      let t = JSON.stringify(Object.values(v.Yn).map(t => {
         let n = e.filter(e => {
           let {
             connection: n
@@ -39,63 +39,63 @@ let y = () => {
         }
         return n
       }).filter(e => e.length > 0), null, 2);
-      (0, g.JG)(t, () => (0, c.showToast)((0, c.createToast)(v.intl.string(v.t.t5VZ88), c.ToastType.SUCCESS)))
+      (0, g.JG)(t, () => (0, c.showToast)((0, c.createToast)(E.intl.string(E.t.t5VZ88), c.ToastType.SUCCESS)))
     })
   },
   O = function(e) {
-    (0, l.useEffect)(() => {
+    (0, i.useEffect)(() => {
       p.default.track(h.rMx.OPEN_POPOUT, {
         type: "RTC Connection"
       })
     }, []);
-    let t = (0, l.useCallback)(() => {
+    let t = (0, i.useCallback)(() => {
         let {
           closePopout: t
         } = e;
         null != t && t(), s.bA()
       }, [e]),
-      n = (0, l.useCallback)(() => {
+      n = (0, i.useCallback)(() => {
         let {
           hostname: t,
           averagePing: n,
-          lastPing: i,
+          lastPing: l,
           outboundLossRate: o
         } = e, c = d.Sb.getSetting();
-        return (0, r.jsxs)(l.Fragment, {
+        return (0, r.jsxs)(i.Fragment, {
           children: [c && (0, r.jsxs)("div", {
             children: [(0, r.jsx)("div", {
-              className: _.graphContainer,
+              className: y.graphContainer,
               children: (0, r.jsx)(u.Z, {
                 dataPoints: e.pings,
                 width: 258,
                 height: 80
               })
             }), (0, r.jsx)("div", {
-              className: _.popoutText,
+              className: y.popoutText,
               children: (0, r.jsx)("strong", {
-                children: m.Z.getShortHostname(t)
+                children: b.Z.getShortHostname(t)
               })
             })]
           }), (0, r.jsx)("div", {
-            className: _.popoutText,
-            children: v.intl.format(v.t["X58/lN"], {
+            className: y.popoutText,
+            children: E.intl.format(E.t["X58/lN"], {
               averagePing: n.toFixed(0)
             })
-          }), null != i ? (0, r.jsx)("div", {
-            className: _.popoutText,
-            children: v.intl.format(v.t["6iv2TF"], {
-              lastPing: i.toFixed(0)
+          }), null != l ? (0, r.jsx)("div", {
+            className: y.popoutText,
+            children: E.intl.format(E.t["6iv2TF"], {
+              lastPing: l.toFixed(0)
             })
           }) : null, null != o ? (0, r.jsx)("div", {
-            className: _.popoutText,
-            children: v.intl.format(v.t["VIBJM+"], {
+            className: y.popoutText,
+            children: E.intl.format(E.t["VIBJM+"], {
               outboundLossRate: o.toFixed(1)
             })
           }) : null, (0, r.jsxs)("div", {
-            className: a()(_.popoutText, _.popoutTextDetails),
-            children: [null == o ? v.intl.formatToPlainString(v.t.vggaMt, {
+            className: a()(y.popoutText, y.popoutTextDetails),
+            children: [null == o ? E.intl.formatToPlainString(E.t.vggaMt, {
               badPing: 250
-            }) : null, null != o ? v.intl.formatToPlainString(v.t["3pFz1P"], {
+            }) : null, null != o ? E.intl.formatToPlainString(E.t["3pFz1P"], {
               badPing: 250,
               badLossRate: 10
             }) : null]
@@ -103,68 +103,68 @@ let y = () => {
         })
       }, [e]),
       {
-        connectionState: i,
+        connectionState: l,
         connectionTypeText: o
       } = e,
       g = d.Sb.getSetting(),
       O = {
-        [h.hes.AWAITING_ENDPOINT]: v.intl.format(v.t.Eu2vUR, {
+        [h.hes.AWAITING_ENDPOINT]: E.intl.format(E.t.Eu2vUR, {
           url: h.yXt.STATUS
         }),
-        [h.hes.CONNECTING]: v.intl.string(v.t["y+E8aD"]),
-        [h.hes.AUTHENTICATING]: v.intl.string(v.t["5lGIZH"]),
-        [h.hes.DISCONNECTED]: v.intl.string(v.t.fOX25I),
-        [h.hes.RTC_CONNECTING]: v.intl.string(v.t.b5Ubd5),
-        [h.hes.ICE_CHECKING]: v.intl.format(v.t.SyoYUb, {
-          url: b.Z.getArticleURL(h.BhN.VOICE_CONNECTION_ERRORS)
+        [h.hes.CONNECTING]: E.intl.string(E.t["y+E8aD"]),
+        [h.hes.AUTHENTICATING]: E.intl.string(E.t["5lGIZH"]),
+        [h.hes.DISCONNECTED]: E.intl.string(E.t.fOX25I),
+        [h.hes.RTC_CONNECTING]: E.intl.string(E.t.b5Ubd5),
+        [h.hes.ICE_CHECKING]: E.intl.format(E.t.SyoYUb, {
+          url: m.Z.getArticleURL(h.BhN.VOICE_CONNECTION_ERRORS)
         }),
-        [h.hes.DTLS_CONNECTING]: v.intl.format(v.t.SyoYUb, {
-          url: b.Z.getArticleURL(h.BhN.VOICE_CONNECTION_ERRORS)
+        [h.hes.DTLS_CONNECTING]: E.intl.format(E.t.SyoYUb, {
+          url: m.Z.getArticleURL(h.BhN.VOICE_CONNECTION_ERRORS)
         }),
         [h.hes.RTC_CONNECTED]: n,
-        [h.hes.NO_ROUTE]: v.intl.format(v.t["2tgQnk"], {
-          url: b.Z.getArticleURL(h.BhN.VOICE_CONNECTION_ERRORS)
+        [h.hes.NO_ROUTE]: E.intl.format(E.t["2tgQnk"], {
+          url: m.Z.getArticleURL(h.BhN.VOICE_CONNECTION_ERRORS)
         }),
-        [h.hes.RTC_DISCONNECTED]: v.intl.string(v.t.fOX25I)
-      } [i];
+        [h.hes.RTC_DISCONNECTED]: E.intl.string(E.t.fOX25I)
+      } [l];
     return (0, r.jsxs)(r.Fragment, {
       children: ["function" == typeof O ? O() : (0, r.jsx)("p", {
-        className: a()(_.popoutText, _.popoutTextDetails),
+        className: a()(y.popoutText, y.popoutTextDetails),
         children: O
       }), (0, r.jsx)("hr", {
-        className: _.separator
+        className: y.separator
       }), (0, r.jsxs)("div", {
-        className: _.popoutBottom,
+        className: y.popoutBottom,
         children: [(0, r.jsxs)("span", {
-          className: a()(_.secured, _.textWithIcon),
+          className: a()(y.secured, y.textWithIcon),
           children: [(0, r.jsx)(c.mBM, {
             size: "xxs",
             color: c.TVs.colors.TEXT_FEEDBACK_POSITIVE.css,
-            className: _.__invalid_icon
+            className: y.__invalid_icon
           }), o]
-        }), g && f.Z.supports(E.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
+        }), g && f.Z.supports(v.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(c.eee, {
-            className: a()(_.debugButton, _.textWithIcon),
+            className: a()(y.debugButton, y.textWithIcon),
             onClick: t,
-            children: [v.intl.string(v.t.KBoWg9), (0, r.jsx)(c.rgF, {
+            children: [E.intl.string(E.t.KBoWg9), (0, r.jsx)(c.rgF, {
               size: "xxs",
               color: "currentColor",
-              className: _.__invalid_icon
+              className: y.__invalid_icon
             })]
           }), (0, r.jsxs)(c.eee, {
-            className: a()(_.copyStatsButton, _.textWithIcon),
-            onClick: y,
+            className: a()(y.copyStatsButton, y.textWithIcon),
+            onClick: _,
             title: "Copy to clipboard",
-            children: [v.intl.string(v.t["XEb+Sj"]), (0, r.jsx)(c.TIy, {
+            children: [E.intl.string(E.t["XEb+Sj"]), (0, r.jsx)(c.TIy, {
               size: "xxs",
               color: "currentColor",
-              className: _.__invalid_icon
+              className: y.__invalid_icon
             })]
           })]
         }), !g && !__OVERLAY__ && (0, r.jsx)(c.eee, {
-          className: _.debugButton,
-          href: b.Z.getArticleURL(h.BhN.VOICE_VIDEO_TROUBLESHOOTING),
-          children: v.intl.string(v.t.hvVgAZ)
+          className: y.debugButton,
+          href: m.Z.getArticleURL(h.BhN.VOICE_VIDEO_TROUBLESHOOTING),
+          children: E.intl.string(E.t.hvVgAZ)
         })]
       })]
     })

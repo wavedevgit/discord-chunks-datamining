@@ -1,1 +1,1 @@
-{"id":"352527","type":"store","data":{"name":"SoundboardOverlayStore","functions":[{"name":"keepOpen","args":[]},{"name":"enabled","args":[]}],"events":["SOUNDBOARD_SET_OVERLAY_ENABLED"]},"fromModule":{"id":"13478"}}
+{"id":"352527","type":"store","data":{"name":"SoundboardOverlayStore","functions":[{"name":"keepOpen","args":[]},{"name":"enabled","args":[]}],"events":["SOUNDBOARD_SET_OVERLAY_ENABLED"]},"fromModule":{"id":"6164"}}

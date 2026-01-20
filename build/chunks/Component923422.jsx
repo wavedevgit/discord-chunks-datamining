@@ -1,7 +1,7 @@
 /** Chunk was on 2535 **/
 /** chunk id: 923422, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => T
 }), require("./388685.js"), require("./290780.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,71 +28,71 @@ var Chunk54381 = require("./54381.js"),
   Chunk69021 = require("./69021.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let w = (0, Chunk108843.Z)(function(e) {
+let T = (0, Chunk108843.Z)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: s
-  } = e, [c, w] = i.useState(false), x = (0, v.Z)(), D = (0, h.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), m = (0, A.Z)(), L = (0, j.Z)(), R = (0, S.Z)(), Z = (0, N.Z)(), k = (0, P.Z)(), {
+  } = e, [c, T] = l.useState(false), w = (0, v.Z)(), x = (0, h.Z)(), C = (0, f.Z)(), D = (0, y.Z)(), m = (0, A.Z)(), L = (0, j.Z)(), Z = (0, S.Z)(), R = (0, N.Z)(), k = (0, P.Z)(), {
     analyticsLocations: V
-  } = (0, u.ZP)(), B = i.useMemo(() => (0, g.j)(), []);
-  async function M() {
+  } = (0, u.ZP)(), M = l.useMemo(() => (0, g.j)(), []);
+  async function B() {
     try {
-      w(true), await (0, d.bF)(), window.location.reload(true)
+      T(true), await (0, d.bF)(), window.location.reload(true)
     } catch (e) {
-      w(false)
+      T(false)
     }
   }
   let U = (0, p.gj)("UserSettingsCogContextMenu"),
     G = (0, E.getWebUserSettingsByUserSettingsSections)(),
     F = (0, O.VO)(),
-    z = i.useMemo(() => {
+    Y = l.useMemo(() => {
       let e = [];
       if (F.forEach(t => {
           let {
             section: n,
-            predicate: l
+            predicate: i
           } = t;
-          n !== o.ID.HEADER && n !== o.ID.CUSTOM && n !== o.ID.DIVIDER && "logout" !== n && (null == l || l()) && null != G.get(n) && (n === I.oAB.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
+          n !== o.ID.HEADER && n !== o.ID.CUSTOM && n !== o.ID.DIVIDER && "logout" !== n && (null == i || i()) && null != G.get(n) && (n === I.oAB.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
         }), U) {
         let t = e.findIndex(e => e.section === I.oAB.NOTIFICATIONS),
           n = e.findIndex(e => e.section === I.oAB.CONNECTIONS);
         if (false !== t && false !== n && t > n) {
-          let [l] = e.splice(t, 1);
-          e.splice(n + 1, 0, l)
+          let [i] = e.splice(t, 1);
+          e.splice(n + 1, 0, i)
         }
       }
       return e
     }, [F, G, U]);
-  return (0, l.jsx)(u.Gt, {
+  return (0, i.jsx)(u.Gt, {
     value: V,
-    children: (0, l.jsxs)(a.v2r, {
+    children: (0, i.jsxs)(a.v2r, {
       navId: "user-settings-cog",
       onClose: r.Zy,
       "aria-label": _.intl.string(_.t.opYYHn),
       onSelect: n,
       onInteraction: s,
-      children: [z.map(e => {
+      children: [Y.map(e => {
         var t, n;
         let {
-          section: i,
+          section: l,
           label: r,
           onClick: o
-        } = e, s = i.replace(/\W/gi, "_");
-        return (0, l.jsx)(a.sNh, (t = function(e) {
+        } = e, s = l.replace(/\W/gi, "_");
+        return (0, i.jsx)(a.sNh, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              l = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), l.forEach(function(t) {
-              var l;
-              l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = l
+              }) : e[t] = i
             })
           }
           return e
@@ -103,51 +103,51 @@ let w = (0, Chunk108843.Z)(function(e) {
           action: () => {
             var e;
             return null != o ? o() : function(e, t, n) {
-              let l = Object.values(I.oAB).filter(e => e === t)[0];
-              null != l && (0, E.openUserSettings)(e, {
-                section: l,
+              let i = Object.values(I.oAB).filter(e => e === t)[0];
+              null != i && (0, E.openUserSettings)(e, {
+                section: i,
                 analyticsLocations: n
               })
-            }(null != (e = G.get(i)) ? e : b.n.ACCOUNT_PANEL, i, V)
+            }(null != (e = G.get(l)) ? e : b.n.ACCOUNT_PANEL, l, V)
           }
         }), n = n = {
           children: (e => {
             switch (e) {
               case I.oAB.GAMES:
-                return x;
+                return w;
               case I.oAB.STREAMER_MODE:
-                return D;
+                return x;
               case I.oAB.APPEARANCE:
-                return T;
-              case I.oAB.ACCESSIBILITY:
                 return C;
+              case I.oAB.ACCESSIBILITY:
+                return D;
               case I.oAB.VOICE:
                 return m;
               case I.oAB.TEXT:
                 return L;
               case I.oAB.EXPERIMENTS:
-                return R;
-              case I.oAB.DEVELOPER_OPTIONS:
                 return Z;
+              case I.oAB.DEVELOPER_OPTIONS:
+                return R;
               default:
                 return null
             }
-          })(i)
+          })(l)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
           }
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t), s)
-      }), e.user.isStaff() && k, e.user.isStaff() && B.length > 0 ? (0, l.jsx)(a.sNh, {
+      }), e.user.isStaff() && k, e.user.isStaff() && M.length > 0 ? (0, i.jsx)(a.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
-        children: (0, l.jsx)(a.kSQ, {
-          children: B.map(e => (0, l.jsx)(a.k5B, {
+        children: (0, i.jsx)(a.kSQ, {
+          children: M.map(e => (0, i.jsx)(a.k5B, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -157,12 +157,12 @@ let w = (0, Chunk108843.Z)(function(e) {
             }
           }, "input-".concat(e.payload)))
         })
-      }) : null, null != t ? (0, l.jsx)(a.kSQ, {
-        children: (0, l.jsx)(a.sNh, {
+      }) : null, null != t ? (0, i.jsx)(a.kSQ, {
+        children: (0, i.jsx)(a.sNh, {
           id: "clear-build-override",
           disabled: c,
           label: _.intl.string(_.t["/Nz9rY"]),
-          action: M,
+          action: B,
           color: "danger"
         })
       }) : null]

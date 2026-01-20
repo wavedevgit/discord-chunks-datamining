@@ -1,4 +1,4 @@
-/** Chunk was on 96888 **/
+/** Chunk was on 66788 **/
 /** chunk id: 445102, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => r
@@ -10,12 +10,12 @@ async function r(e, t) {
   let {
     rating: n,
     category: r,
-    reasonCode: o,
-    reasonDescription: d,
-    variant: s,
-    feedback: u,
-    analyticsData: c
-  } = t, b = l.Z.getSettings(), f = l.Z.getInputDeviceId(), O = l.Z.getInputDevices()[f], v = l.Z.getOutputDeviceId(), m = l.Z.getOutputDevices()[v], E = l.Z.getVideoDeviceId(), p = l.Z.getVideoDevices()[E], g = l.Z.getNoiseCancellation(), _ = l.Z.getMediaEngine().getAudioSubsystem(), h = l.Z.getMediaEngine().getAudioLayer(), S = await a.Z.getKrispModel();
+    reasonCode: l,
+    reasonDescription: c,
+    variant: d,
+    feedback: s,
+    analyticsData: u
+  } = t, b = o.Z.getSettings(), _ = o.Z.getInputDeviceId(), m = o.Z.getInputDevices()[_], p = o.Z.getOutputDeviceId(), f = o.Z.getOutputDevices()[p], g = o.Z.getVideoDeviceId(), v = o.Z.getVideoDevices()[g], O = o.Z.getNoiseCancellation(), y = o.Z.getMediaEngine().getAudioSubsystem(), F = o.Z.getMediaEngine().getAudioLayer(), h = await a.Z.getKrispModel();
   i.default.track(e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -36,10 +36,10 @@ async function r(e, t) {
   }({
     rating: null != n ? n : "no response",
     category: r,
-    reason_code: o,
-    reason_description: d,
-    reason_variant: s,
-    feedback: u,
+    reason_code: l,
+    reason_description: c,
+    reason_variant: d,
+    feedback: s,
     audio_input_mode: b.mode,
     automatic_audio_input_sensitivity_enabled: b.modeOptions.autoThreshold,
     audio_input_sensitivity: b.modeOptions.threshold,
@@ -48,13 +48,13 @@ async function r(e, t) {
     noise_suppression_enabled: b.noiseSuppression,
     automatic_gain_control_enabled: b.automaticGainControl,
     voice_output_volume: b.outputVolume,
-    noise_cancellation_enabled: g,
-    input_device_name: null == O ? true : O.name,
-    output_device_name: null == m ? true : m.name,
-    video_device_name: null == p ? true : p.name,
-    audio_subsystem: _,
-    audio_layer: h,
+    noise_cancellation_enabled: O,
+    input_device_name: null == m ? true : m.name,
+    output_device_name: null == f ? true : f.name,
+    video_device_name: null == v ? true : v.name,
+    audio_subsystem: y,
+    audio_layer: F,
     automatic_audio_subsystem: b.automaticAudioSubsystem,
-    krisp_nc_model: S
-  }, c))
+    krisp_nc_model: h
+  }, u))
 }

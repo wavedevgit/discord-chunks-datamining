@@ -2,10 +2,10 @@
 /** chunk id: 72897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fh: () => C,
-  Ls: () => T,
-  p6: () => I,
-  rX: () => v
+  Fh: () => T,
+  Ls: () => I,
+  p6: () => S,
+  rX: () => O
 }), require("./704826.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -16,11 +16,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk823379 = require("./823379.js"),
   Chunk358085 = require("./358085.js"),
   Chunk145016 = require("./145016.js"),
-  Chunk568001 = require("./568001.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +28,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,109 +52,98 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function E(e) {
   return ({
-    [p.h7.AUDIO_INPUT]: {
+    [f.h7.AUDIO_INPUT]: {
       getRawDevices: e => e.getInputDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(p.h7.AUDIO_INPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(f.h7.AUDIO_INPUT),
       getCurrentDeviceId: e => e.getInputDeviceId(),
       getSelectedDeviceId: e => e.getSettings().inputDeviceId,
-      getNoDevicesMessage: () => _.intl.string(_.t["/QIjDA"])
+      getNoDevicesMessage: () => p.intl.string(p.t["/QIjDA"])
     },
-    [p.h7.AUDIO_OUTPUT]: {
+    [f.h7.AUDIO_OUTPUT]: {
       getRawDevices: e => e.getOutputDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(p.h7.AUDIO_OUTPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(f.h7.AUDIO_OUTPUT),
       getCurrentDeviceId: e => e.getOutputDeviceId(),
       getSelectedDeviceId: e => e.getSettings().outputDeviceId,
-      getNoDevicesMessage: () => _.intl.string(_.t.xlUg0v)
+      getNoDevicesMessage: () => p.intl.string(p.t.xlUg0v)
     },
-    [p.h7.VIDEO_INPUT]: {
+    [f.h7.VIDEO_INPUT]: {
       getRawDevices: e => e.getVideoDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(p.h7.VIDEO_INPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(f.h7.VIDEO_INPUT),
       getCurrentDeviceId: e => e.getVideoDeviceId(),
       getSelectedDeviceId: e => e.getSettings().videoDeviceId,
-      getNoDevicesMessage: () => _.intl.string(_.t.WKWARY)
+      getNoDevicesMessage: () => p.intl.string(p.t.WKWARY)
     }
   })[e]
 }
 
-function y() {
-  let {
-    showDeviceSelectionImprovements: e
-  } = (0, f.M)({
-    location: "getDefaultDevicePrefix"
-  });
-  return e ? (0, u.isWindows)() ? _.intl.string(_.t.n4dQ2c) : (0, u.isMac)() ? _.intl.string(_.t.aYrsiB) : _.intl.string(_.t.Q3YKwS) : _.intl.string(_.t.bBvAEH)
+function b() {
+  return (0, u.isWindows)() ? p.intl.string(p.t.n4dQ2c) : (0, u.isMac)() ? p.intl.string(p.t.aYrsiB) : p.intl.string(p.t.Q3YKwS)
 }
 
-function O(e, t) {
+function y(e, t) {
   let {
     getNoDevicesMessage: n
-  } = b(e);
-  return t.disabled ? n() : t.name.replace(p.fU, y())
+  } = E(e);
+  return t.disabled ? n() : t.name.replace(f.fU, b())
+}
+
+function O(e) {
+  var t;
+  return null == (t = new RegExp("^(?<prefix>".concat(b(), ") \\((?<subName>.+)\\)$")).exec(e)) ? true : t.groups
 }
 
 function v(e) {
-  var t;
-  return null == (t = new RegExp("^(?<prefix>".concat(y(), ") \\((?<subName>.+)\\)$")).exec(e)) ? true : t.groups
-}
-
-function S(e) {
   let {
     getRawDevices: t
-  } = b(e), n = (0, a.e7)([l.Z], () => t(l.Z));
+  } = E(e), n = (0, a.e7)([l.Z], () => t(l.Z));
   return (0, r.useMemo)(() => {
-    let t = m({}, n),
-      r = t[p.w5];
-    return null != r && (t[p.w5] = E(m({}, r), {
-      name: O(e, r)
+    let t = h({}, n),
+      r = t[f.w5];
+    return null != r && (t[f.w5] = g(h({}, r), {
+      name: y(e, r)
     })), t
   }, [e, n])
 }
 
-function I(e) {
-  let t = S(e),
+function S(e) {
+  let t = v(e),
     {
       getCurrentDeviceId: n
-    } = b(e);
+    } = E(e);
   return t[(0, a.e7)([l.Z], () => n(l.Z))]
 }
 
-function T(e, t) {
-  let {
-    location: n
-  } = t, {
-    showDeviceSelectionImprovements: s
-  } = (0, f.V)({
-    location: n
-  }), l = S(e), {
-    getAllDeviceIdsSortedByFrecency: u
-  } = b(e), _ = (0, o.Z)((0, a.Wu)([d.Z], () => u(d.Z))), {
-    id: h
-  } = I(e);
+function I(e, t) {
+  let {} = t, n = v(e), {
+    getAllDeviceIdsSortedByFrecency: s
+  } = E(e), l = (0, o.Z)((0, a.Wu)([d.Z], () => s(d.Z))), {
+    id: u
+  } = S(e);
   return (0, r.useMemo)(() => {
-    let t = e => e.map(e => l[e]).filter(c.lm),
-      n = Object.keys(l),
-      r = s && e !== p.h7.VIDEO_INPUT ? [p.w5] : [],
-      a = (0, i.intersection)(_, n),
-      o = (0, i.difference)(n, _),
-      u = (0, i.difference)(o, r, [h]);
-    return (null == a ? true : a.length) === 0 || u.length <= 1 ? [(0, i.union)(r, [h], a, o), []].map(t) : [(0, i.union)(r, [h], a), u].map(t)
-  }, [l, e, _, h, s])
+    let t = e => e.map(e => n[e]).filter(c.lm),
+      r = Object.keys(n),
+      a = e !== f.h7.VIDEO_INPUT ? [f.w5] : [],
+      o = (0, i.intersection)(l, r),
+      s = (0, i.difference)(r, l),
+      d = (0, i.difference)(s, a, [u]);
+    return (null == o ? true : o.length) === 0 || d.length <= 1 ? [(0, i.union)(a, [u], o, s), []].map(t) : [(0, i.union)(a, [u], o), d].map(t)
+  }, [n, e, l, u])
 }
 
-function C(e) {
+function T(e) {
   var t, n;
   let {
     getCurrentDeviceId: r,
     getSelectedDeviceId: i
-  } = b(e), {
+  } = E(e), {
     resolvedId: o,
     selectedId: c
   } = (0, a.cj)([l.Z], () => ({

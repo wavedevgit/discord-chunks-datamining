@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 179295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,7 +17,7 @@ function u(e, t) {
     handleMouseMove: u,
     handleMouseUp: d,
     handleMouseEnter: f
-  } = e, p = r.useRef(null), g = (0, l.e7)([a.Z], () => a.Z.getRTCConnection((0, i.V9)(t))), b = r.useCallback((e, t, r) => {
+  } = e, p = r.useRef(null), g = (0, i.e7)([a.Z], () => a.Z.getRTCConnection((0, l.V9)(t))), m = r.useCallback((e, t, r) => {
     p.current = Date.now(), n(e, t, r)
   }, [n]);
   return {
@@ -34,7 +34,7 @@ function u(e, t) {
         })), p.current = null
       }
     }, [d, g]),
-    handleMouseDown: b,
+    handleMouseDown: m,
     handleMouseMove: u,
     handleMouseEnter: f
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => M,
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk451478 = require("./451478.js"),
   Chunk5192 = require("./5192.js"),
   Chunk44136 = require("./44136.js"),
-  x = (require("./351483.jsx"), require("./249212.jsx")),
+  T = (require("./351483.jsx"), require("./249212.jsx")),
   Chunk853476 = require("./853476.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
@@ -43,8 +43,8 @@ function M(e) {
     channelId: t,
     participant: n
   } = e;
-  return (0, y.Eu)(t, n.id) ? (0, r.jsx)(c.u, {
-    text: w.intl.string(w.t.HFwRpk),
+  return (0, _.Eu)(t, n.id) ? (0, r.jsx)(c.u, {
+    text: Z.intl.string(Z.t.HFwRpk),
     position: "bottom",
     children: (0, r.jsx)("div", {
       className: A.interactive,
@@ -52,7 +52,7 @@ function M(e) {
         color: s.TVs.colors.STATUS_WARNING_BACKGROUND
       })
     })
-  }) : (0, r.jsx)(P.Z, {
+  }) : (0, r.jsx)(j.Z, {
     userId: n.user.id
   })
 }
@@ -61,56 +61,56 @@ function k(e) {
   let {
     participant: t,
     channel: n,
-    inCall: i,
+    inCall: l,
     width: c,
     selected: s,
-    popoutType: y,
-    fit: P,
+    popoutType: _,
+    fit: j,
     onVideoResize: M,
     blocked: k,
     ignored: L,
     noVideoRender: U = false,
     pulseSpeakingIndicator: F = false,
     paused: V = false
-  } = e, W = C.Z.getVideoComponent(), B = (0, o.e7)([O.default], () => O.default.getId()), {
+  } = e, W = S.Z.getVideoComponent(), B = (0, o.e7)([O.default], () => O.default.getId()), {
     user: G,
     streamId: H,
     speaking: z
-  } = t, K = G.id === B, Y = (0, T.ZP)(t), q = (0, o.e7)([I.Z], () => I.Z.isFocused()), Q = (0, o.e7)([v.Z], () => v.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([C.Z], () => null != G.id && C.Z.isLocalVideoDisabled(G.id, (0, p.Z)(t.type)), [G.id, t.type]), J = (0, o.e7)([S.ZP], () => S.ZP.isGuestOrLurker(n.guild_id, G.id)), $ = N.ZP.getName(n.getGuildId(), n.id, G) + (J ? " ".concat(w.intl.string(w.t["pFO/Ph"])) : ""), ee = z && (Q || q), et = c < 124 ? D : R, {
+  } = t, Y = G.id === B, K = (0, N.ZP)(t), q = (0, o.e7)([x.Z], () => x.Z.isFocused()), Q = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([S.Z], () => null != G.id && S.Z.isLocalVideoDisabled(G.id, (0, p.Z)(t.type)), [G.id, t.type]), J = (0, o.e7)([C.ZP], () => C.ZP.isGuestOrLurker(n.guild_id, G.id)), $ = I.ZP.getName(n.getGuildId(), n.id, G) + (J ? " ".concat(Z.intl.string(Z.t["pFO/Ph"])) : ""), ee = z && (Q || q), et = c < 124 ? D : R, {
     avatarSrc: en,
     avatarDecorationSrc: er
-  } = (0, _.Z)({
+  } = (0, y.Z)({
     userId: G.id,
     guildId: n.guild_id,
     size: et,
     animateOnHover: !ee
-  }), el = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), ei = (0, m.Z)(j.Yn.DEFAULT, t.user.id), ea = (0, b.Z)(t.user.id), eo = {
+  }), ei = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), el = (0, b.Z)(w.Yn.DEFAULT, t.user.id), ea = (0, m.Z)(t.user.id), eo = {
     channel: n,
-    selectedParticipant: el,
+    selectedParticipant: ei,
     user: G
-  }, ec = l.useRef(eo);
-  return (l.useEffect(() => {
+  }, ec = i.useRef(eo);
+  return (i.useEffect(() => {
     ec.current = eo
-  }), l.useEffect(() => {
+  }), i.useEffect(() => {
     let {
       channel: e,
       selectedParticipant: t,
       user: n
     } = ec.current;
-    e.isGuildStageVoice() && !Y && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [Y]), i && !X && !U && Y && !s && null != W && C.Z.supports(j.AN.VIDEO)) ? null != ei && null == ea ? (0, r.jsx)(x.Z, {
-    avError: ei,
+    e.isGuildStageVoice() && !K && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
+  }, [K]), l && !X && !U && K && !s && null != W && S.Z.supports(w.AN.VIDEO)) ? null != el && null == ea ? (0, r.jsx)(T.Z, {
+    avError: el,
     userId: t.id,
     width: c,
     selected: s
-  }) : (0, r.jsx)(E.Z, {
+  }) : (0, r.jsx)(v.Z, {
     onResize: M,
-    wrapperClassName: y !== g.P.CALL_TILE ? A.videoWrapper : true,
+    wrapperClassName: _ !== g.P.CALL_TILE ? A.videoWrapper : true,
     className: A.content,
-    mirror: K,
+    mirror: Y,
     streamId: H,
     videoComponent: W,
-    fit: P,
+    fit: j,
     videoSpinnerContext: G.id === B ? d.m.SELF_VIDEO : d.m.REMOTE_VIDEO,
     paused: V,
     userId: G.id

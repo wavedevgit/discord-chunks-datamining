@@ -1,12 +1,12 @@
-/** Chunk was on 96888 **/
+/** Chunk was on 97116 **/
 /** chunk id: 40207, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => r,
-  messagesLoader: () => l
+  messagesLoader: () => a
 });
 let {
-  createLoader: a
-} = require("./354012.js"), l = a({
+  createLoader: l
+} = require("./354012.js"), a = l({
   bg: () => n.e("25298").then(n.t.bind(n, 192063, 19)),
   cs: () => n.e("3781").then(n.t.bind(n, 583215, 19)),
   da: () => n.e("94747").then(n.t.bind(n, 745544, 19)),
@@ -40,4 +40,4 @@ let {
   "en-US": () => n.e("14728").then(n.bind(n, 462483))
 }, "en-US"), {
   makeMessagesProxy: i
-} = require("./354012.js"), r = i(l)
+} = require("./354012.js"), r = i(a)

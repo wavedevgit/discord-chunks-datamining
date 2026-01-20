@@ -24,7 +24,7 @@ function v(e, t) {
   } = (0, i.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlocked(e.author.id),
     isIgnored: d.Z.isIgnored(e.author.id)
-  }), [e.author.id]), y = (0, a.ZP)(t.id, e.id), x = (0, i.e7)([c.default], () => c.default.getId()), b = (0, u.ZP)(e).nick, j = e.author.id === x ? g.intl.string(g.t.LuZzxn) : b, h = (0, i.e7)([m.default], () => e.mentions.length > 0 ? m.default.getUser(e.mentions[0]) : true), S = (0, u.Sw)(h, t).nick;
+  }), [e.author.id]), x = (0, a.ZP)(t.id, e.id), y = (0, i.e7)([c.default], () => c.default.getId()), b = (0, u.ZP)(e).nick, j = e.author.id === y ? g.intl.string(g.t.LuZzxn) : b, h = (0, i.e7)([m.default], () => e.mentions.length > 0 ? m.default.getUser(e.mentions[0]) : true), S = (0, u.Sw)(h, t).nick;
   return function(e, t) {
     let {
       isBlocked: n,
@@ -265,12 +265,12 @@ function v(e, t) {
   }(e, {
     message: e,
     channel: t,
-    currentUserId: x,
+    currentUserId: y,
     authorNick: j,
     otherUser: h,
     otherUserNick: S,
     isBlocked: n,
     isIgnored: v,
-    isCallActive: y
+    isCallActive: x
   })
 }

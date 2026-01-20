@@ -49,8 +49,8 @@ function d(e, t, n) {
   if (!f && !m) return e;
   let g = u(a, r),
     {
-      verticalRatio: O,
-      horizontalRatio: y
+      verticalRatio: y,
+      horizontalRatio: O
     } = c({
       width: e.width,
       height: e.height,
@@ -63,7 +63,7 @@ function d(e, t, n) {
     v = e.height - i,
     b = d - i,
     S = h - i;
-  return s ? (S -= g, v -= g) : (b -= g, E -= g), f && m && (e.width > e.height ? v = l(E = b, O) : E = o(v = S, y), f = E > b, m = v > S), f && (v = l(E = b, O)), m && (E = o(v = S, y)), s ? v += u(a, r) : E += u(a, r), {
+  return s ? (S -= g, v -= g) : (b -= g, E -= g), f && m && (e.width > e.height ? v = l(E = b, y) : E = o(v = S, O), f = E > b, m = v > S), f && (v = l(E = b, y)), m && (E = o(v = S, O)), s ? v += u(a, r) : E += u(a, r), {
     width: E + i,
     height: v + i
   }

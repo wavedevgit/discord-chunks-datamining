@@ -1,4 +1,4 @@
-/** Chunk was on 69813 **/
+/** Chunk was on 11010 **/
 /** chunk id: 400321, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -22,27 +22,27 @@ function a(e) {
   null == d.current[t.id] && (d.current[t.id] = Date.now()), n.lineCap = "round", n.lineJoin = "round";
   let p = t.points.map(e => (0, r.RR)(e, a, o)),
     g = d.current[t.id],
-    b = e => g + e.deltaTime + 1500 >= Date.now(),
-    m = e => g + e.deltaTime <= Date.now() && b(e),
-    h = p.find(m);
+    m = e => g + e.deltaTime + 1500 >= Date.now(),
+    b = e => g + e.deltaTime <= Date.now() && m(e),
+    h = p.find(b);
   if (null == h) {
-    b(t.points[t.points.length - 1]) || f.push(t);
+    m(t.points[t.points.length - 1]) || f.push(t);
     return
   }
-  let E = (e, t) => {
+  let v = (e, t) => {
       let r = null;
       n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(h.x, h.y);
       for (let e = 1; e < p.length; e++) {
         let t = p[e];
-        m(t) && (n.lineTo(t.x, t.y), r = t)
+        b(t) && (n.lineTo(t.x, t.y), r = t)
       }
       return n.stroke(), r
     },
     {
-      fillColor: v,
-      outlineColor: _
+      fillColor: E,
+      outlineColor: y
     } = (0, r.bg)(t.userId, s, u, c),
-    y = E(_, 6 + i.q2),
-    O = null != y && m(y);
-  O && (0, l.I)(n, y.x, y.y, _, i.q2), E(v, 6), O && (0, l.T)(n, y.x, y.y, t.userId)
+    _ = v(y, 6 + l.q2),
+    O = null != _ && b(_);
+  O && (0, i.I)(n, _.x, _.y, y, l.q2), v(E, 6), O && (0, i.T)(n, _.x, _.y, t.userId)
 }

@@ -31,7 +31,7 @@ function b(e) {
     onBeforeShowModal: o,
     onOneClickGoLive: a,
     appContext: c
-  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), y = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), E = (0, l.e7)([O.default], () => O.default.getCurrentUser()), v = (0, l.e7)([f.Z], () => (0, u.Z)(f.Z)), b = (0, l.e7)([p.Z, m.Z], () => null != y && (0, s.JL)(y, p.Z, m.Z));
+  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), O = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), E = (0, l.e7)([y.default], () => y.default.getCurrentUser()), v = (0, l.e7)([f.Z], () => (0, u.Z)(f.Z)), b = (0, l.e7)([p.Z, m.Z], () => null != O && (0, s.JL)(O, p.Z, m.Z));
   return r.useCallback(async () => {
     await x({
       pid: t,
@@ -55,13 +55,13 @@ async function S(e) {
     onBeforeShowModal: r,
     onOneClickGoLive: l,
     appContext: o
-  } = e, a = g.Z.getVoiceChannelId(), c = h.Z.getChannel(a), d = O.default.getCurrentUser(), y = null != c && (0, s.JL)(c, p.Z, m.Z), E = (0, u.Z)(f.Z);
+  } = e, a = g.Z.getVoiceChannelId(), c = h.Z.getChannel(a), d = y.default.getCurrentUser(), O = null != c && (0, s.JL)(c, p.Z, m.Z), E = (0, u.Z)(f.Z);
   await x({
     pid: t,
     voiceChannelId: a,
     user: d,
     canGoLive: E,
-    canStream: y,
+    canStream: O,
     analyticsLocation: n,
     allowOneClickGoLive: i,
     onBeforeShowModal: r,
@@ -101,7 +101,7 @@ async function x(e) {
       }
     }
     if (null == l) return void(0, o.showToast)((0, o.createToast)(v.intl.string(v.t.OKnWyb), o.ToastType.FAILURE, {
-      appContext: y.IlC.OVERLAY
+      appContext: O.IlC.OVERLAY
     }));
     null == p || p(), (0, o.ZDy)(async () => {
       let {

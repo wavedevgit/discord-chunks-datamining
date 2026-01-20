@@ -30,11 +30,11 @@ function S(e, t, n, S) {
   let {
     icon: j,
     title: I,
-    body: C
+    body: Z
   } = (0, a.Xi)(e, t, n), {
-    trackView: Z,
+    trackView: C,
     trackClick: N
-  } = (0, y.Rg)(E.n0.TextChat, {
+  } = (0, O.Rg)(E.n0.TextChat, {
     notif_type: E.n0.TextChat,
     notif_user_id: null == (x = t.author) ? true : x.id,
     message_id: t.id,
@@ -50,8 +50,8 @@ function S(e, t, n, S) {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
-    }).content : C,
-    hint: (e, t) => e && !t ? null : (0, O.QR)((0, y.Pb)(), b.t.ykjOAJ, b.intl.string(b.t.jZkzVJ)),
+    }).content : Z,
+    hint: (e, t) => e && !t ? null : (0, y.QR)((0, O.Pb)(), b.t.ykjOAJ, b.intl.string(b.t.jZkzVJ)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(g.Z, {
       id: r,
@@ -60,7 +60,7 @@ function S(e, t, n, S) {
       onSend: () => N("send")
     }) : null,
     onNotificationShow: () => {
-      S && (0, u.GN)(c.Ay, c.yk), Z()
+      S && (0, u.GN)(c.Ay, c.yk), C()
     },
     onNotificationClick: () => {
       let n = f.Z.getTargetPID();

@@ -13,12 +13,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js");
 
 function d() {
-  if (!(0, i.e7)([c.default], () => {
+  if (!(0, l.e7)([c.default], () => {
       var e, t;
       return (null == (e = c.default.getCurrentUser()) ? true : e.isStaff()) === true || (null == (t = c.default.getCurrentUser()) ? true : t.isStaffPersonal()) === true
     })) return null;
   let e = o.componentPlaygroundConfigs.flatMap(e => e.collections);
-  return (0, l.jsx)(a.sNh, {
+  return (0, i.jsx)(a.sNh, {
     id: "playgrounds",
     label: "Playgrounds",
     action: () => {
@@ -27,8 +27,8 @@ function d() {
         selectedStory: null
       }), (0, r.jN)(u.S9g.COMPONENT_PLAYGROUND)
     },
-    children: (0, l.jsx)(a.kSQ, {
-      children: e.map(e => (0, l.jsx)(a.sNh, {
+    children: (0, i.jsx)(a.kSQ, {
+      children: e.map(e => (0, i.jsx)(a.sNh, {
         id: "".concat(e.id, "-playground"),
         label: e.name,
         action: () => {

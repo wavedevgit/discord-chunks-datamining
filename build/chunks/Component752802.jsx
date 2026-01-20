@@ -47,7 +47,7 @@ function k(e) {
     children: (0, i.jsx)(c.P3F, {
       className: R.controlAction,
       onClick: e => {
-        (0, f.g)((0, y.V9)(t.stream), false), e.stopPropagation(), (0, T.Ws)(A.Odu.GO_LIVE, {
+        (0, f.g)((0, O.V9)(t.stream), false), e.stopPropagation(), (0, T.Ws)(A.Odu.GO_LIVE, {
           type: T.Qu.SCREEN_SHARE,
           value: T.bk.DISABLED,
           userId: t.user.id
@@ -64,10 +64,10 @@ function k(e) {
 function L(e) {
   let {
     participant: t
-  } = e, n = t.user.id, l = (0, a.e7)([Z.Z], () => {
+  } = e, n = t.user.id, l = (0, a.e7)([C.Z], () => {
     let e = (0, m.Z)(t.type);
-    return Z.Z.isLocalMute(t.user.id, e)
-  }, [t]), o = (0, a.e7)([C.default], () => C.default.getId()), {
+    return C.Z.isLocalMute(t.user.id, e)
+  }, [t]), o = (0, a.e7)([Z.default], () => Z.default.getId()), {
     hasVideo: h
   } = (0, j.Z)(t, o), p = l && h, f = r.useCallback(() => {
     d.Z.toggleLocalMute(n, s.Yn.STREAM)
@@ -243,8 +243,8 @@ let z = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
     } = e, s = (0, a.e7)([I.Z], () => I.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, b.bp)(), d = null != s && z.has(s.state), h = null != s, f = (0, P.yA)(t.stream), m = (0, P.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: R.tile,
-      children: [h && !r && (0, i.jsx)(O.ZP, {
-        size: O.ZP.Sizes.SMALL,
+      children: [h && !r && (0, i.jsx)(y.ZP, {
+        size: y.ZP.Sizes.SMALL,
         className: R.liveIndicator
       }), h ? (0, i.jsx)("div", {
         className: R.streamTile,

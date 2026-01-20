@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, h.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, O = (0, l.e7)([u.default], () => u.default.getCurrentUser()), y = null != g ? g : m, [E, v] = r.useState(new Set), [b, S] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+  } = e, n = (0, h.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.e7)([u.default], () => u.default.getCurrentUser()), O = null != g ? g : m, [E, v] = r.useState(new Set), [b, S] = r.useState(new Set), x = r.useCallback((e, t, n) => {
     v(n => {
       if (t) {
         if (n.has(e)) return n;
@@ -39,16 +39,16 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), j = (0, c.ee)(() => E, [E]), I = (0, c.ee)(() => b, [b]), C = (0, o.h)(c.zi, 3e3, []);
+  }, []), j = (0, c.ee)(() => E, [E]), I = (0, c.ee)(() => b, [b]), Z = (0, o.h)(c.zi, 3e3, []);
   r.useEffect(() => {
-    0 === j.size || t || C(p.Odu.FRIENDS, {
+    0 === j.size || t || Z(p.Odu.FRIENDS, {
       locked: t,
       shownUserIds: Array.from(j),
       liveUserIds: Array.from(I),
       contentInventoryIds: []
     })
-  }, [j, I, t, C]);
-  let Z = (0, l.e7)([s.Z], () => null == y ? null : s.Z.getApplicationActivity(y), [y]),
+  }, [j, I, t, Z]);
+  let C = (0, l.e7)([s.Z], () => null == O ? null : s.Z.getApplicationActivity(O), [O]),
     N = (0, r.useCallback)((e, t) => {
       let n = function(e) {
         switch (e) {
@@ -135,10 +135,10 @@ function m(e) {
     }, []),
     w = (0, r.useCallback)(() => {}, []),
     T = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
-      activity: Z,
-      currentUser: O,
+      activity: C,
+      currentUser: y,
       showInviteButton: false
-    }), [Z, O]);
+    }), [C, y]);
   return t ? null : (0, i.jsx)(a.r1, {
     containerClassName: f.container,
     listClassName: f.list,

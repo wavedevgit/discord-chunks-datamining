@@ -96,7 +96,7 @@ function ec() {
       id: "shop",
       name: "Shop",
       group: el.v0.BILLING,
-      render: () => (0, a.jsx)(K.C, {})
+      render: () => (0, a.jsx)(q.C, {})
     }), e.push({
       id: "payment_flow_modals",
       name: "Payment Flow Modals",
@@ -113,7 +113,7 @@ function ec() {
       name: "Quick Actions",
       group: el.v0.DEVELOPMENT,
       tags: ["captcha", "safety", "checkpoint", "vibe", "vibing", "override", "premium type"],
-      render: () => (0, a.jsx)(H.Z, {})
+      render: () => (0, a.jsx)(W.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
       name: "E2EE",
@@ -151,7 +151,7 @@ function ec() {
       id: "slayer_sdk",
       name: "Slayer SDK",
       group: el.v0.GAMES,
-      render: () => (0, a.jsx)(q.Z, {})
+      render: () => (0, a.jsx)(K.Z, {})
     }), e.push({
       id: "quick_switcher",
       name: "Quick Switcher",
@@ -167,7 +167,7 @@ function ec() {
       name: "Rive",
       group: el.v0.UI,
       tags: ["animation"],
-      render: () => (0, a.jsx)(W.Z, {})
+      render: () => (0, a.jsx)(H.Z, {})
     }), e.push({
       id: "lottie",
       name: "Lottie",
