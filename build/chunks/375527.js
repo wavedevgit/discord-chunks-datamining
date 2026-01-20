@@ -2,7 +2,8 @@
 /** chunk id: 375527, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f3: () => o
+  er: () => o,
+  f3: () => s
 });
 var Chunk722733 = require("./722733.js");
 let i = {
@@ -30,6 +31,19 @@ let i = {
   });
 
 function o(e) {
+  var t;
+  let n = null != (t = a.useConfig({
+      location: e
+    }).treatment) ? t : "control",
+    r = "control" !== n;
+  return {
+    treatment: n,
+    isInTreatment: r,
+    orbsRewardAmount: i[n]
+  }
+}
+
+function s(e) {
   var t;
   let n = null != (t = a.getConfig({
       location: e

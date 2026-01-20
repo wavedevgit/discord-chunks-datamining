@@ -2,8 +2,8 @@
 /** chunk id: 132547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
-}), require("./388685.js");
+  Z: () => U
+}), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -16,6 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk433811 = require("./433811.js"),
   Chunk214852 = require("./214852.js"),
+  Chunk588956 = require("./588956.js"),
+  Chunk468208 = require("./468208.js"),
+  Chunk165299 = require("./165299.js"),
   Chunk621853 = require("./621853.js"),
   Chunk484459 = require("./484459.js"),
   Chunk78839 = require("./78839.js"),
@@ -27,6 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk560223 = require("./560223.jsx"),
   Chunk347475 = require("./347475.jsx"),
   Chunk342414 = require("./342414.jsx"),
+  Chunk874577 = require("./874577.jsx"),
   Chunk391110 = require("./391110.js"),
   Chunk71363 = require("./71363.jsx"),
   Chunk781800 = require("./781800.jsx"),
@@ -35,115 +39,125 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk548768 = require("./548768.js"),
   Chunk865215 = require("./865215.js");
-let L = e => {
+let U = e => {
   let {
     userId: t
   } = e;
   i.useEffect(() => {
     u.Z.wait(async () => {
-      null != t && await (0, m.Z)(t)
+      let e = [(0, h.Z)()];
+      null != t && e.push((0, b.Z)(t)), await Promise.all(e)
     })
   }, [t]), i.useEffect(() => {
-    M(true)
+    B(true)
   }, []), (0, _.z)(p.X);
   let n = i.useRef(null),
     a = i.useRef(null),
-    L = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
-    [j, M] = i.useState(false),
-    k = (0, y.$)(),
-    U = i.useRef(null),
-    [G, Z] = i.useState(false),
-    [F, B] = i.useState(false),
-    V = null != k && null != L && L.status === w.O0b.CANCELED,
-    H = (0, O.W7)(P.Xh.PREMIUM_MONTH_TIER_2, k, L),
-    Y = !F && V,
+    U = (0, s.e7)([y.Z], () => y.Z.getPremiumTypeSubscription()),
     {
-      analyticsLocations: W
-    } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
+      isReady: G,
+      programReward: Z
+    } = (0, s.cj)([m.Z], () => ({
+      isReady: m.Z.isReady(),
+      programReward: m.Z.getRewardForProgram(g.f.NITRO)
+    })),
+    [F, B] = i.useState(false),
+    V = (0, S.$)(),
+    H = i.useRef(null),
+    [Y, W] = i.useState(false),
     [K, z] = i.useState(false),
-    q = (0, s.e7)([h.Z], () => null != t ? h.Z.getUserProfile(t) : null),
-    Q = (0, b.Z)({
+    q = null != V && null != U && U.status === L.O0b.CANCELED,
+    Q = (0, I.W7)(x.Xh.PREMIUM_MONTH_TIER_2, V, U),
+    X = !K && q,
+    {
+      analyticsLocations: J
+    } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
+    [$, ee] = i.useState(false),
+    et = (0, s.e7)([E.Z], () => null != t ? E.Z.getUserProfile(t) : null),
+    en = (0, v.Z)({
       location: "SubscriberNitroHome"
     });
-  return null == q ? (0, r.jsx)("div", {
-    className: o()(D.container, D.loading),
-    children: (0, r.jsx)(c.$jN, {})
-  }) : (0, r.jsxs)(r.Fragment, {
+  return null != et && (G || null != Z) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.yWw, {
-      className: D.mainPageScroller,
+      className: M.mainPageScroller,
       ref: n,
       children: [(0, r.jsx)(c.$1m, {
         color: "nitro-pink",
-        className: o()(D.container, D.responsiveContainer, {
-          [D.hiddenGradient]: !Q
+        className: o()(M.container, M.responsiveContainer, {
+          [M.hiddenGradient]: !en
         }),
         children: (0, r.jsxs)(f.Gt, {
-          value: W,
+          value: J,
           children: [(0, r.jsx)(l.$, {
-            innerRef: U,
-            onChange: e => B(e),
+            innerRef: H,
+            onChange: e => z(e),
             threshold: .1,
             active: true,
-            children: (0, r.jsx)(T.Z, {
-              buttonVisibilityRef: U,
-              className: D.heroHeading,
-              enablePremiumBrandRefresh: Q,
-              userDiscountOffer: k,
-              discountedPrice: H
+            children: (0, r.jsx)(N.Z, {
+              buttonVisibilityRef: H,
+              className: M.heroHeading,
+              enablePremiumBrandRefresh: en,
+              userDiscountOffer: V,
+              discountedPrice: Q
             })
-          }), (0, r.jsx)(S.Z, {
-            variant: C.gM.WHATS_NEW,
-            className: D.whatsNew,
+          }), (0, r.jsx)(C.Z, {
+            variant: w.gM.WHATS_NEW,
+            className: M.whatsNew,
             noBackground: true,
             leftAlignHeaders: true
-          }), (0, r.jsx)(S.Z, {
-            className: D.perksDiscoverability,
-            variant: C.gM.PERKS_DISCOVERABILITY,
+          }), (0, r.jsx)(C.Z, {
+            className: M.perksDiscoverability,
+            variant: w.gM.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
-            showAllPerksButton: (0, r.jsx)(N.Z, {
-              setIsAllPerksVisible: Z,
-              previousComponent: C.MQ.HOME
+            showAllPerksButton: (0, r.jsx)(D.Z, {
+              setIsAllPerksVisible: W,
+              previousComponent: w.MQ.HOME
             })
-          }), (0, r.jsx)(I.Z, {
-            className: D.giftNitro,
+          }), null != Z && m.Z.isInProperTreatments() && (0, r.jsx)(P.Z, {
+            location: d.Z.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
+          }), (0, r.jsx)(A.Z, {
+            className: M.giftNitro,
             location: d.Z.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {
-              page: w.ZY5.NITRO_HOME,
-              section: w.jXE.GIFT_BANNER
+              page: L.ZY5.NITRO_HOME,
+              section: L.jXE.GIFT_BANNER
             }
           }), (0, r.jsx)("div", {
-            className: D.footerSpacing
+            className: M.footerSpacing
           }), (0, r.jsx)(l.$, {
             innerRef: a,
             onChange: e => {
-              e && !K && (E.default.track(w.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                location_stack: W
-              }), z(true))
+              e && !$ && (O.default.track(L.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                location_stack: J
+              }), ee(true))
             },
             children: (0, r.jsx)("div", {
               ref: a,
-              className: D.bottomOfPageVisibilitySensor
+              className: M.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {
-            src: x,
-            className: D.bottomIllustration,
+            src: k,
+            className: M.bottomIllustration,
             width: 112,
             height: 85,
-            alt: R.intl.string(R.t.X4IxWL)
+            alt: j.intl.string(j.t.X4IxWL)
           })]
         })
-      }), V && null != H && (0, r.jsx)(v.Z, {
-        isVisible: Y && j,
-        premiumSubscription: L,
-        churnDiscountOffer: k,
-        discountedPrice: H
+      }), q && null != Q && (0, r.jsx)(T.Z, {
+        isVisible: X && F,
+        premiumSubscription: U,
+        churnDiscountOffer: V,
+        discountedPrice: Q
       })]
-    }), (0, r.jsx)(A.Z, {
-      isAllPerksVisible: G,
-      setIsAllPerksVisible: Z,
-      previousComponent: C.MQ.HOME,
-      enablePremiumBrandRefresh: Q
+    }), (0, r.jsx)(R.Z, {
+      isAllPerksVisible: Y,
+      setIsAllPerksVisible: W,
+      previousComponent: w.MQ.HOME,
+      enablePremiumBrandRefresh: en
     })]
+  }) : (0, r.jsx)("div", {
+    className: o()(M.container, M.loading),
+    children: (0, r.jsx)(c.$jN, {})
   })
 }
