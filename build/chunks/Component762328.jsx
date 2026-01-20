@@ -100,6 +100,7 @@ function y(e) {
         strategy: "referenceHidden"
       })), null != j && e.push((0, a.dp)({
         padding: L,
+        boundary: l.body,
         apply(e) {
           let {
             availableHeight: t,
