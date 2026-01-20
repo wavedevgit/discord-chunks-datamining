@@ -69,7 +69,7 @@ function L(e) {
         return "Linux"
     }
     return ""
-  }((0, P.getOS)())), [ea, el] = r.useState(""), [eo, es] = r.useState(""), [eu, ec] = r.useState(""), [ed, em] = r.useState(""), [ep, ef] = r.useState(false), [ev, eh] = r.useState(false), [eg, ex] = r.useState(false), [eb, ey] = r.useState(null);
+  }((0, P.getOS)())), [el, ea] = r.useState(""), [eo, es] = r.useState(""), [eu, ec] = r.useState(""), [ed, em] = r.useState(""), [ef, ep] = r.useState(false), [ev, eh] = r.useState(false), [eg, ex] = r.useState(false), [eb, ey] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     s.tn.get({
@@ -79,8 +79,8 @@ function L(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "1250ab315651e672d7cd49d81d7e737974e1e6aa" !== e.body.hash) {
-        let e = new Date("1768930825675"),
+      if (null != e.body && "c4b2b059cdd3ed322617797d0fbf889c81e26f04" !== e.body.hash) {
+        let e = new Date("1768931502383"),
           t = new Date,
           n = (0, w.TD)(t, e);
         n.hours > 6 && ey(n.hours)
@@ -112,16 +112,16 @@ function L(e) {
     });
   async function e_() {
     var e, t;
-    if (ex(false), "" === H || "" === B || null == q) return void ef(true);
+    if (ex(false), "" === H || "" === B || null == q) return void ep(true);
     let r = null == X || null == (e = X.features) ? true : e.find(e => (0, _.pD)(e) === J);
-    eh(true), ef(false);
-    let a = (0, C.D)(Y.map(e => {
+    eh(true), ep(false);
+    let l = (0, C.D)(Y.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      l = await (0, _.ZD)({
+      a = await (0, _.ZD)({
         name: H,
         description: B,
         priority: q,
@@ -133,21 +133,21 @@ function L(e) {
         overridePlatformInformation: $,
         device: et,
         operatingSystem: ei,
-        operatingSystemVersion: ea,
+        operatingSystemVersion: el,
         clientVersion: eo,
         clientBuildNumber: eu,
         locale: ed
       } : {
         overridePlatformInformation: $
-      }, a).catch(() => ex(true));
-    eh(false), null != l && l.ok ? (ej && window.open(l.body.permalink_url, "_blank"), M(), (0, m.ZDy)(async () => {
+      }, l).catch(() => ex(true));
+    eh(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), M(), (0, m.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = D({}, t), r = r = {
-          asanaTask: l.body
+          asanaTask: a.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -186,16 +186,16 @@ function L(e) {
           true !== n && K(e => e.some(e => {
             var t;
             return e.filename === n.name && (null == (t = e.item.file) ? true : t.size) === n.size
-          }) ? e : [...e, new f.ZP({
-            id: (0, a.Z)(),
+          }) ? e : [...e, new p.ZP({
+            id: (0, l.Z)(),
             file: n,
-            platform: f.ow.WEB,
+            platform: p.ow.WEB,
             origin: "clipboard"
           })])
         }
       }
       let r = document.activeElement;
-      if (!((0, l.kK)(r, HTMLInputElement) || (0, l.kK)(r, HTMLTextAreaElement))) {
+      if (!((0, a.kK)(r, HTMLInputElement) || (0, a.kK)(r, HTMLTextAreaElement))) {
         let t = null == (n = e.clipboardData) ? true : n.getData("text");
         null != t && (e.preventDefault(), e.stopPropagation(), V(B.concat(t)))
       }
@@ -268,7 +268,7 @@ function L(e) {
         },
         children: [(0, i.jsx)(m.oil, {
           label: E.intl.string(E.t.OZRgjw),
-          error: ep && "" === H ? E.intl.string(E.t.EkokLy) : null,
+          error: ef && "" === H ? E.intl.string(E.t.EkokLy) : null,
           placeholder: "Something is broken on this screen.",
           type: "text",
           value: H,
@@ -277,14 +277,14 @@ function L(e) {
           autoFocus: true
         }), (0, i.jsx)(m.Kx8, {
           label: E.intl.string(E.t["1SplH2"]),
-          error: ep && "" === B ? E.intl.string(E.t.EkokLy) : null,
+          error: ef && "" === B ? E.intl.string(E.t.EkokLy) : null,
           placeholder: "What did you expect to see?",
           value: B,
           onChange: V,
           description: ej ? "You can add additional information/media on the ticket after submitting" : true
         }), (0, i.jsx)(c.y6, {
           label: E.intl.string(E.t.xMXLda),
-          errorMessage: ep && true === q ? E.intl.string(E.t.EkokLy) : null,
+          errorMessage: ef && true === q ? E.intl.string(E.t.EkokLy) : null,
           renderOptionLabel: e => (function(e) {
             let t = e.priority;
             return (0, i.jsxs)("div", {
@@ -360,8 +360,8 @@ function L(e) {
           }), (0, i.jsx)(m.oil, {
             label: E.intl.string(E.t.rEtxdg),
             placeholder: "Operating System Version",
-            value: ea,
-            onChange: e => el(e)
+            value: el,
+            onChange: e => ea(e)
           }), (0, i.jsx)(m.oil, {
             label: E.intl.string(E.t["wy1M/t"]),
             placeholder: "Client Version",
@@ -388,14 +388,14 @@ function L(e) {
           fullWidth: true
         }), (0, i.jsx)("div", {
           className: k.fileInput,
-          children: (0, i.jsx)(p.Z, {
+          children: (0, i.jsx)(f.Z, {
             ref: R,
             onChange: e => {
               var t, n;
-              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && K([...Y, ...Array.from(e.currentTarget.files).map(e => new f.ZP({
-                id: (0, a.Z)(),
+              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && K([...Y, ...Array.from(e.currentTarget.files).map(e => new p.ZP({
+                id: (0, l.Z)(),
                 file: e,
-                platform: f.ow.WEB,
+                platform: p.ow.WEB,
                 origin: "file_picker"
               }))])
             },

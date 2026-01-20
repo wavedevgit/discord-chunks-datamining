@@ -3,7 +3,7 @@
 require.d(exports, {
   Tj: () => m,
   WG: () => c,
-  ZD: () => p,
+  ZD: () => f,
   pD: () => d
 }), require("./953529.js"), require("./539854.js");
 var Chunk990547 = require("./990547.js"),
@@ -49,7 +49,7 @@ function m() {
     value: 3
   }]
 }
-async function p(e, t, n) {
+async function f(e, t, n) {
   var r, u;
   let c = [{
     name: "name",
@@ -62,7 +62,7 @@ async function p(e, t, n) {
     value: "".concat(t.overridePlatformInformation)
   }, {
     name: "theme",
-    value: l.Z.theme
+    value: a.Z.theme
   }];
   "" !== e.description && c.push({
     name: "description",
@@ -107,7 +107,7 @@ async function p(e, t, n) {
   }), c.push({
     name: "locale",
     value: t.locale
-  })), (0, a.E)(s.GU0.WEB_APP);
+  })), (0, l.E)(s.GU0.WEB_APP);
   try {
     return await o.Z.post({
       url: s.ANM.BUG_REPORTS,
