@@ -1,7 +1,7 @@
 /** Chunk was on 24753 **/
 /** chunk id: 581355, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +9,6 @@ var Chunk54381 = require("./54381.js"),
   a = require.n(Chunk913527),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk933557 = require("./933557.js"),
@@ -33,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk452594 = require("./452594.js"),
   Chunk787068 = require("./787068.js");
 
-function I(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -52,7 +51,7 @@ function I(e) {
   return e
 }
 
-function E(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,15 +64,15 @@ function E(e, t) {
   }), e
 }
 
-function T(e) {
+function E(e) {
   let {
     channel: t,
     onClose: n,
     transitionState: i
-  } = e, a = (0, c.e7)([b.Z], () => b.Z.getGuild(t.guild_id));
+  } = e, a = (0, s.e7)([x.Z], () => x.Z.getGuild(t.guild_id));
   return (r.useEffect(() => {
     null == a && n()
-  }, [a, n]), null == a) ? null : (0, l.jsx)(R, {
+  }, [a, n]), null == a) ? null : (0, l.jsx)(F, {
     transitionState: i,
     guild: a,
     channel: t,
@@ -81,62 +80,64 @@ function T(e) {
   })
 }
 
-function F(e) {
+function T(e) {
   let {
     stageChannelsInGuild: t,
     channel: n,
     onSelectChannel: r
   } = e;
   return null == r ? null : (0, l.jsx)("div", {
-    className: k.channelSelectionFormItem,
-    children: (0, l.jsx)(o.d, {
+    className: Z.channelSelectionFormItem,
+    children: (0, l.jsx)(o.VcW, {
+      selectionMode: "single",
       required: true,
-      label: Z.intl.string(Z.t.S7GjDz),
+      label: w.intl.string(w.t.S7GjDz),
       value: n.id,
       options: t.map(e => ({
+        id: e.id,
         value: e.id,
-        label: (0, f.F6)(e, h.default, j.Z, true)
+        label: (0, d.F6)(e, j.default, b.Z, true),
+        leading: (0, l.jsx)(o.ewx, {
+          size: "custom",
+          color: "currentColor",
+          height: 24
+        })
       })),
-      onChange: e => {
+      onSelectionChange: e => {
         let n = t.find(t => t.id === e);
         null != n && r(n)
-      },
-      renderOptionPrefix: () => (0, l.jsx)(u.ewx, {
-        size: "custom",
-        color: "currentColor",
-        height: 24
-      })
+      }
     })
   })
 }
 
-function R(e) {
+function F(e) {
   var t, n;
   let {
     channel: i,
-    guild: c,
-    onClose: o,
+    guild: s,
+    onClose: x,
     onSelectChannel: b,
     transitionState: j,
-    isEvent: h = false
+    isEvent: E = false
   } = e, {
-    loading: T,
+    loading: F,
     error: R,
     onSave: A
-  } = (0, N.Z)(i, o), G = r.useMemo(() => O.Z.getStageInstanceByChannel(i.id), [i.id]), [z, M] = r.useState(null != (t = null == G ? true : G.topic) ? t : ""), [B, q] = r.useState(""), [L] = r.useState(h), [U, J] = r.useState({
-    startDate: (0, x.ib)()
-  }), [V, K] = r.useState(false), W = (0, v.J)(i), Y = (0, v.U)(i), H = null == G && W && !L, [Q, X] = r.useState(H && Y), $ = w.j8.GUILD_ONLY, [ee] = r.useState(null != (n = null == G ? true : G.privacy_level) ? n : $), [et, en] = r.useState(null), el = (0, y._d)(i.id), er = (0, y.K3)(i.id), [ei, ea] = r.useState(false), es = (0, f.ZP)(i), ec = (0, m.q)(c), eo = null != b, eu = ec.length > 1;
-  (0, d.ZP)(() => {
-    p.default.track(C.rMx.START_STAGE_OPENED, {
+  } = (0, S.Z)(i, x), G = r.useMemo(() => v.Z.getStageInstanceByChannel(i.id), [i.id]), [M, z] = r.useState(null != (t = null == G ? true : G.topic) ? t : ""), [B, q] = r.useState(""), [L] = r.useState(E), [U, J] = r.useState({
+    startDate: (0, m.ib)()
+  }), [V, W] = r.useState(false), K = (0, p.J)(i), Y = (0, p.U)(i), H = null == G && K && !L, [Q, X] = r.useState(H && Y), $ = C.j8.GUILD_ONLY, [ee] = r.useState(null != (n = null == G ? true : G.privacy_level) ? n : $), [et, en] = r.useState(null), el = (0, O._d)(i.id), er = (0, O.K3)(i.id), [ei, ea] = r.useState(false), ec = (0, d.ZP)(i), es = (0, f.q)(s), eo = null != b, eu = es.length > 1;
+  (0, u.ZP)(() => {
+    h.default.track(_.rMx.START_STAGE_OPENED, {
       stage_instance_id: null == G ? true : G.id,
       can_start_public_stage: false,
       guild_id: i.guild_id
     })
   });
   let ed = e => {
-      if (e.preventDefault(), ee === w.j8.PUBLIC && z.length < 20 && !ei) return void ea(true);
+      if (e.preventDefault(), ee === C.j8.PUBLIC && M.length < 20 && !ei) return void ea(true);
       L || null == A || A({
-        topic: z,
+        topic: M,
         privacyLevel: ee,
         sendStartNotification: Q
       })
@@ -147,109 +148,109 @@ function R(e) {
     null == (e = ef.current) || e.focus()
   }, []);
   let em = V && null != U.startDate && U.startDate >= a()(),
-    ex = (0, l.jsxs)(l.Fragment, {
+    eg = (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("div", {
-        className: k.blockedUsersContainer,
-        children: null == G && (el > 0 || er > 0) && (0, l.jsx)(P.mv, {
+        className: Z.blockedUsersContainer,
+        children: null == G && (el > 0 || er > 0) && (0, l.jsx)(y.mv, {
           channelId: i.id
         })
       }), (0, l.jsxs)("form", {
         onSubmit: ed,
-        className: k.form,
-        children: [(0, l.jsx)(u.oil, {
+        className: Z.form,
+        children: [(0, l.jsx)(o.oil, {
           required: true,
           error: null != R ? R.getAnyErrorMessage() : true,
-          label: h ? Z.intl.string(Z.t["0HbEQ6"]) : Z.intl.string(Z.t["5FPBOB"]),
-          onChange: e => M(e),
-          helperText: ei ? Z.intl.string(Z.t.AqTyaR) : true,
-          placeholder: Z.intl.string(Z.t.ZwWruY),
-          maxLength: _.xA,
-          value: z,
+          label: E ? w.intl.string(w.t["0HbEQ6"]) : w.intl.string(w.t["5FPBOB"]),
+          onChange: e => z(e),
+          helperText: ei ? w.intl.string(w.t.AqTyaR) : true,
+          placeholder: w.intl.string(w.t.ZwWruY),
+          maxLength: N.xA,
+          value: M,
           autoComplete: "off",
           inputRef: ef
-        }), eo && eu ? (0, l.jsx)(F, {
-          stageChannelsInGuild: ec,
+        }), eo && eu ? (0, l.jsx)(T, {
+          stageChannelsInGuild: es,
           channel: i,
           onSelectChannel: b
         }) : null, L && (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)(g.Z, {
-            className: k.formItem,
+            className: Z.formItem,
             onScheduleChange: J,
             onRecurrenceChange: e => {
               let t = U.startDate;
-              null != t && en((0, x.mF)(e, t))
+              null != t && en((0, m.mF)(e, t))
             },
             schedule: U,
             recurrenceRule: et,
             timeSelected: V,
-            onTimeChange: K
-          }), null != U.startDate && U.startDate < a()() ? (0, l.jsx)(u.Text, {
+            onTimeChange: W
+          }), null != U.startDate && U.startDate < a()() ? (0, l.jsx)(o.Text, {
             color: "text-feedback-critical",
             variant: "text-xs/normal",
-            className: k.warning,
-            children: Z.intl.string(Z.t.AXR5Ss)
+            className: Z.warning,
+            children: w.intl.string(w.t.AXR5Ss)
           }) : null]
-        }), h && (0, l.jsx)("div", {
-          className: k.formItem,
-          children: (0, l.jsx)(u.Kx8, {
-            label: Z.intl.string(Z.t["+gRCC7"]),
-            placeholder: Z.intl.string(Z.t["kWO/E8"]),
+        }), E && (0, l.jsx)("div", {
+          className: Z.formItem,
+          children: (0, l.jsx)(o.Kx8, {
+            label: w.intl.string(w.t["+gRCC7"]),
+            placeholder: w.intl.string(w.t["kWO/E8"]),
             value: B,
             onChange: e => q(e),
-            maxLength: w.wm
+            maxLength: C.wm
           })
-        }), eo && !eu ? (0, l.jsx)(u.Text, {
+        }), eo && !eu ? (0, l.jsx)(o.Text, {
           color: "text-default",
           variant: "text-xs/normal",
-          className: k.channelSelection,
-          children: Z.intl.format(Z.t["S+9O7g"], {
-            stageName: es,
+          className: Z.channelSelection,
+          children: w.intl.format(w.t["S+9O7g"], {
+            stageName: ec,
             stageHook: (e, t) => (0, l.jsx)("span", {
-              className: k.channelName,
+              className: Z.channelName,
               children: i.name
             }, t)
           })
-        }) : null, (0, l.jsx)(S.Z, {
-          className: k.ageVerificationNotice
+        }) : null, (0, l.jsx)(P.Z, {
+          className: Z.ageVerificationNotice
         })]
       })]
     }),
-    eg = {
-      onClose: o,
-      title: null == G ? Z.intl.string(Z.t.DDF0cJ) : Z.intl.string(Z.t.YPdQOp),
-      subtitle: null == G ? Z.intl.string(Z.t.bqQIwa) : Z.intl.string(Z.t["I+9bLx"]),
+    ex = {
+      onClose: x,
+      title: null == G ? w.intl.string(w.t.DDF0cJ) : w.intl.string(w.t.YPdQOp),
+      subtitle: null == G ? w.intl.string(w.t.bqQIwa) : w.intl.string(w.t["I+9bLx"]),
       transitionState: j,
       actions: [{
         variant: "secondary",
-        text: Z.intl.string(Z.t["ETE/oC"]),
-        onClick: () => o()
+        text: w.intl.string(w.t["ETE/oC"]),
+        onClick: () => x()
       }, {
         variant: "primary",
-        text: L ? Z.intl.string(Z.t["60lJ0C"]) : null == G ? Z.intl.string(Z.t.s8mM8A) : Z.intl.string(Z.t.K344S7),
+        text: L ? w.intl.string(w.t["60lJ0C"]) : null == G ? w.intl.string(w.t.s8mM8A) : w.intl.string(w.t.K344S7),
         onClick: ed,
-        disabled: "" === z || null == ee || h && !em,
-        loading: T
+        disabled: "" === M || null == ee || E && !em,
+        loading: F
       }],
-      actionBarInput: H ? (0, l.jsxs)(u.P3F, {
+      actionBarInput: H ? (0, l.jsxs)(o.P3F, {
         onClick: () => X(!Q),
-        className: k.notificationToggle,
-        children: [(0, l.jsx)(u.FZ5, {
+        className: Z.notificationToggle,
+        children: [(0, l.jsx)(o.FZ5, {
           checked: Q
-        }), (0, l.jsx)(u.Text, {
+        }), (0, l.jsx)(o.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          children: Z.intl.string(Z.t["Pe+Pwp"])
+          children: w.intl.string(w.t["Pe+Pwp"])
         })]
       }) : true
     };
-  return null == G ? (0, l.jsx)(s.ExpressiveModal, E(I({
+  return null == G ? (0, l.jsx)(c.ExpressiveModal, I(D({
     graphic: {
       type: "image",
-      src: D.Z
+      src: k.Z
     }
-  }, eg), {
-    children: ex
-  })) : (0, l.jsx)(s.Modal, E(I({}, eg), {
-    children: ex
+  }, ex), {
+    children: eg
+  })) : (0, l.jsx)(c.Modal, I(D({}, ex), {
+    children: eg
   }))
 }

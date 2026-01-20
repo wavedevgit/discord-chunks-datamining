@@ -295,7 +295,7 @@ function Q(e) {
       (0, f.ZDy)(async () => e => (0, i.jsx)(_.default, V(z({}, e), {
         channel: u,
         guild: l,
-        source: W.t4x.SETTINGS_INVITE
+        source: B.t4x.SETTINGS_INVITE
       })))
     },
     [E, k] = r.useState(62),
@@ -415,7 +415,7 @@ function Q(e) {
           className: G.headerDivider
         })]
       });
-      if (2 === t) return (0, i.jsx)(B.Y, {
+      if (2 === t) return (0, i.jsx)(W.Y, {
         hasInvites: y.length > 0,
         setHeight: k,
         onShowDisableInvites: A,

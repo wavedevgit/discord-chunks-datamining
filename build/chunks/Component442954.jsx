@@ -57,8 +57,8 @@ let y = {
       default: e
     } = await n.e("20670").then(n.bind(n, 993018));
     return t => (0, a.jsx)(e, j(v({}, t), {
-      headerText: x.intl.string(x.t.ZLRYGU),
-      confirmButtonText: x.intl.string(x.t.PDTjLN),
+      headerText: b.intl.string(b.t.ZLRYGU),
+      confirmButtonText: b.intl.string(b.t.PDTjLN),
       confirmButtonVariant: "primary"
     }))
   },
@@ -67,11 +67,11 @@ let y = {
       default: e
     } = await n.e("56499").then(n.bind(n, 433570));
     return t => (0, a.jsx)(e, j(v({}, t), {
-      headerText: x.intl.string(x.t.H3Q7U8),
+      headerText: b.intl.string(b.t.H3Q7U8),
       onFormSubmit: () => {},
       onResend: () => {},
       onSuccess: () => {},
-      confirmButtonText: x.intl.string(x.t["13ofGu"]),
+      confirmButtonText: b.intl.string(b.t["13ofGu"]),
       impression: {
         impressionName: i.ImpressionNames.URF_CONFIRM_EMAIL_CODE
       }
@@ -443,7 +443,7 @@ let y = {
     } = await Promise.resolve().then(n.bind(n, 590433)), c = await Promise.resolve().then(n.t.bind(n, 473749, 19)), d = "TestUser";
 
     function u(n) {
-      let [u, m] = c.useState(s.DURATION_60_SEC), [p, h] = c.useState(""), [f, x] = c.useState(false), [b, g] = c.useState(false), v = [{
+      let [u, m] = c.useState(s.DURATION_60_SEC), [p, h] = c.useState(""), [f, b] = c.useState(false), [x, g] = c.useState(false), v = [{
         value: s.DURATION_60_SEC,
         label: o(s.DURATION_60_SEC)
       }, {
@@ -462,13 +462,13 @@ let y = {
         value: s.DURATION_1_WEEK,
         label: o(s.DURATION_1_WEEK)
       }], j = c.useCallback(async () => {
-        x(true), console.log("GuildDisableCommunicationModal: Timing out user", {
+        b(true), console.log("GuildDisableCommunicationModal: Timing out user", {
           user: d,
           duration: o(u),
           reason: null != p ? p : "No reason provided",
-          resolveFlag: b
-        }), await new Promise(e => setTimeout(e, 1e3)), x(false), n.onClose()
-      }, [u, p, b, n]);
+          resolveFlag: x
+        }), await new Promise(e => setTimeout(e, 1e3)), b(false), n.onClose()
+      }, [u, p, x, n]);
       return (0, a.jsxs)("div", {
         style: {
           padding: "20px",
@@ -521,7 +521,7 @@ let y = {
         }), (0, a.jsx)("div", {
           className: "mb-4",
           children: (0, a.jsx)(i, {
-            checked: b,
+            checked: x,
             onChange: g,
             label: "Resolve associated mod report"
           })
@@ -1164,9 +1164,9 @@ function C() {
   return (0, a.jsx)(s.zJl, {
     className: g.panel,
     children: (0, a.jsxs)("div", {
-      className: b.panelInner,
+      className: x.panelInner,
       children: [(0, a.jsx)("section", {
-        className: b.section,
+        className: x.section,
         children: (0, a.jsxs)(s.Kqy, {
           direction: "horizontal",
           gap: 8,
@@ -1176,8 +1176,8 @@ function C() {
             placeholder: "Select a modal",
             options: e,
             value: t,
-            selectionMode: "single",
-            onSelectionChange: e => n(e)
+            onSelectionChange: n,
+            selectionMode: "single"
           }), (0, a.jsx)(s.Button, {
             variant: "primary",
             text: "Open",
@@ -1186,12 +1186,12 @@ function C() {
           })]
         })
       }), (0, a.jsxs)("section", {
-        className: b.section,
+        className: x.section,
         children: [(0, a.jsx)(s.Heading, {
           variant: "heading-md/semibold",
           children: "Wow moment"
         }), (0, a.jsx)("div", {
-          className: b.inputRow,
+          className: x.inputRow,
           children: (0, a.jsx)(s.Button, {
             variant: "primary",
             text: "Open",

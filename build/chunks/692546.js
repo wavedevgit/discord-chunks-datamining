@@ -43,7 +43,7 @@ function O(e, t) {
   if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", y), b = false);
   else {
     let n = v.get(e);
-    if (null != n && (0, a.Z)(n.zone, t.zone)) return;
+    if (null != n && (0, l.Z)(n.zone, t.zone)) return;
     0 === v.size && window.addEventListener("mousemove", y), v.set(e, t)
   }
   if (p.isPlatformEmbedded)
@@ -106,7 +106,7 @@ class x extends(i = Chunk473749.PureComponent) {
   constructor(...e) {
     super(...e), g(this, "zone", o().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
       let e = this.props.contentDomRef.current;
-      if ((0, l.kK)(e)) {
+      if ((0, a.kK)(e)) {
         let {
           left: t,
           top: n,

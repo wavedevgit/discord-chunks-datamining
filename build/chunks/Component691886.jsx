@@ -170,6 +170,7 @@ function E(e) {
       let [t] = e;
       return N(t)
     },
-    "aria-labelledby": O
+    "aria-labelledby": O,
+    "data-migration-pending": true
   })
 }

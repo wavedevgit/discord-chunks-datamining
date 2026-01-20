@@ -74,7 +74,7 @@ class D extends Chunk473749.PureComponent {
     let {
       guild: t
     } = this.props, n = (0, f.F6)(e, x.default, E.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : _.ME;
-    return (0, i.jsx)(l.rU, {
+    return (0, i.jsx)(a.rU, {
       to: _.Z5c.CHANNEL(s),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
@@ -92,8 +92,8 @@ class D extends Chunk473749.PureComponent {
       pinned: n,
       lobbyId: r,
       channel: s,
-      quality: l,
-      lastPing: a,
+      quality: a,
+      lastPing: l,
       hasVideo: d,
       connectionState: u,
       deaf: h,
@@ -116,8 +116,8 @@ class D extends Chunk473749.PureComponent {
               innerRef: this.rtcConnectionStatusRef,
               children: (0, i.jsx)(y.Z, {
                 channelId: s.id,
-                quality: l,
-                lastPing: a,
+                quality: a,
+                lastPing: l,
                 hasVideo: d,
                 state: u,
                 children: this.renderChannelLink(s)
@@ -195,16 +195,16 @@ function k(e) {
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let o = (0, a.e7)([v.Z], () => v.Z.getGuild(null == r ? true : r.getGuildId())),
-    l = (0, a.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
-    [c, d] = (0, a.Wu)([O.Z], () => [O.Z.isSelfMute(t) || O.Z.isSelfMutedTemporarily(t), O.Z.isSelfDeaf(t)]),
-    [u, h, f] = (0, a.Wu)([Z.Z], () => [Z.Z.getConnectionState(n), Z.Z.getLastPing(n), Z.Z.getQuality(n)]);
+  let o = (0, l.e7)([v.Z], () => v.Z.getGuild(null == r ? true : r.getGuildId())),
+    a = (0, l.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
+    [c, d] = (0, l.Wu)([O.Z], () => [O.Z.isSelfMute(t) || O.Z.isSelfMutedTemporarily(t), O.Z.isSelfDeaf(t)]),
+    [u, h, f] = (0, l.Wu)([Z.Z], () => [Z.Z.getConnectionState(n), Z.Z.getLastPing(n), Z.Z.getQuality(n)]);
   return (0, i.jsx)(D, T(N({}, s), {
     context: t,
     lobbyId: n,
     channel: r,
     guild: o,
-    hasVideo: l,
+    hasVideo: a,
     mute: c,
     deaf: d,
     connectionState: u,

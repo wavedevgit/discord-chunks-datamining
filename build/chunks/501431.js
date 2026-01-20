@@ -61,7 +61,7 @@ let g = {
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   },
-  m = {
+  h = {
     itemTypeFilters: new Set,
     colorFilters: new Set,
     themeFilters: new Set,
@@ -74,7 +74,7 @@ let g = {
     userHasSelectedSort: false,
     currentTab: null
   },
-  h = e => {
+  m = e => {
     let {
       colorFilters: t,
       themeFilters: n,
@@ -83,7 +83,7 @@ let g = {
     } = e;
     return t.size > 0 || n.size > 0 || "" !== r.trim() ? p : l.size > 0 ? b : g
   },
-  C = (0, Chunk121168.U)((0, Chunk110859.XR)((e, t) => d(u({}, m), {
+  C = (0, Chunk121168.U)((0, Chunk110859.XR)((e, t) => d(u({}, h), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === g.sortType && t().sort.sortDirection === g.sortDirection,
     hasFilters: () => {
       let {
@@ -110,7 +110,7 @@ let g = {
             itemTypeFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = h(r)), r
+        return e.userHasSelectedSort || (r.sort = m(r)), r
       })
     },
     onToggleColor: t => {
@@ -120,7 +120,7 @@ let g = {
             colorFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = h(r)), r
+        return e.userHasSelectedSort || (r.sort = m(r)), r
       })
     },
     onToggleTheme: t => {
@@ -130,7 +130,7 @@ let g = {
             themeFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = h(r)), r
+        return e.userHasSelectedSort || (r.sort = m(r)), r
       })
     },
     onToggleOrbEligible: () => {
@@ -139,7 +139,7 @@ let g = {
           orbEligible: !e.orbEligible,
           queryPageOffset: 0
         });
-        return e.userHasSelectedSort || (t.sort = h(t)), t
+        return e.userHasSelectedSort || (t.sort = m(t)), t
       })
     },
     onSetSort: t => {
@@ -158,7 +158,7 @@ let g = {
           searchQuery: t,
           queryPageOffset: 0
         });
-        return "" !== t.trim() ? (n.sort = p, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = h(n)), n
+        return "" !== t.trim() ? (n.sort = p, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = m(n)), n
       })
     },
     setQueryPageSize: t => {
@@ -181,7 +181,7 @@ let g = {
             itemTypeFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = h(r)), r
+        return e.userHasSelectedSort || (r.sort = m(r)), r
       })
     },
     clearFilters: () => {
@@ -197,7 +197,7 @@ let g = {
         queryPageSize: n,
         queryPageOffset: r
       } = t();
-      e(d(u({}, m), {
+      e(d(u({}, h), {
         queryPageSize: n,
         queryPageOffset: r
       }))
@@ -273,7 +273,7 @@ let g = {
           if (!e && t) {
             let e = C.getState();
             e.userHasSelectedSort || C.setState({
-              sort: h(e)
+              sort: m(e)
             })
           }
         });

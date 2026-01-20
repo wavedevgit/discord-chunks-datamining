@@ -2,13 +2,12 @@
 /** chunk id: 975331, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
-  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk584825 = require("./584825.js"),
@@ -20,45 +19,69 @@ var Chunk54381 = require("./54381.js"),
   Chunk783454 = require("./783454.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function x() {
+function h() {
   var e;
   let {
     editStateId: t
-  } = (0, g.N)(), [n, l] = f.TT(t), [x, j] = f.F2(t), v = (0, d.oC)(t), {
-    options: O
-  } = (0, b.Z)(null != (e = null == v ? true : v.active_trial) ? e : null), y = (0, m.Z)(), C = null != n, N = i.useCallback(e => {
-    let t = O.find(e => e.isDefault);
+  } = (0, u.N)(), [n, l] = g.TT(t), [h, x] = g.F2(t), j = (0, c.oC)(t), {
+    options: v
+  } = (0, m.Z)(null != (e = null == j ? true : j.active_trial) ? e : null), O = (0, f.Z)(), y = null != n, C = i.useCallback(e => {
+    let t = v.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [l, O]), E = (0, u.mY)(), I = (0, c.Dt)(), S = (0, c.Dt)();
-  return (0, r.jsxs)(p.Z, {
-    title: h.intl.string(h.t["6anton"]),
-    description: h.intl.string(h.t.urVijS),
-    children: [(0, r.jsx)(o.rsf, {
-      label: h.intl.string(h.t["+hTmdb"]),
-      checked: C,
-      onChange: e => N(e),
-      disabled: E
-    }), (0, r.jsx)(s.y6, {
-      label: h.intl.string(h.t.m1KuWd),
-      description: h.intl.string(h.t.NB9NLF),
+  }, [l, v]), N = (0, d.mY)(), E = (0, o.Dt)(), I = (0, o.Dt)();
+  return (0, r.jsxs)(b.Z, {
+    title: p.intl.string(p.t["6anton"]),
+    description: p.intl.string(p.t.urVijS),
+    children: [(0, r.jsx)(s.rsf, {
+      label: p.intl.string(p.t["+hTmdb"]),
+      checked: y,
+      onChange: e => C(e),
+      disabled: N
+    }), (0, r.jsx)(s.PhF, {
+      selectionMode: "single",
+      label: p.intl.string(p.t.m1KuWd),
+      description: p.intl.string(p.t.NB9NLF),
+      "aria-labelledby": E,
+      options: v,
+      formatOption: e => {
+        let {
+          value: t,
+          label: n
+        } = e;
+        return {
+          id: t.interval.toString(),
+          value: t,
+          label: n
+        }
+      },
+      placeholder: p.intl.string(p.t.WZG1BU),
+      value: n,
+      onSelectionChange: l,
+      maxOptionsVisible: 5,
+      disabled: !y || N
+    }), (0, r.jsx)(s.LZC, {
+      size: 24
+    }), (0, r.jsx)(s.PhF, {
+      selectionMode: "single",
+      label: p.intl.string(p.t["/JD9oe"]),
+      description: p.intl.string(p.t.Cg5eBm),
       "aria-labelledby": I,
       options: O,
-      placeholder: h.intl.string(h.t.WZG1BU),
-      value: n,
-      onChange: l,
-      maxVisibleItems: 5,
-      isDisabled: !C || E
-    }), (0, r.jsx)(o.LZC, {
-      size: 24
-    }), (0, r.jsx)(s.y6, {
-      label: h.intl.string(h.t["/JD9oe"]),
-      description: h.intl.string(h.t.Cg5eBm),
-      "aria-labelledby": S,
-      options: y,
-      value: x,
-      onChange: j,
-      maxVisibleItems: 5,
-      isDisabled: !C || E
+      formatOption: e => {
+        let {
+          value: t,
+          label: n
+        } = e;
+        return {
+          id: t.toString(),
+          value: t,
+          label: n
+        }
+      },
+      value: h,
+      onSelectionChange: x,
+      maxOptionsVisible: 5,
+      disabled: !y || N
     })]
   })
 }

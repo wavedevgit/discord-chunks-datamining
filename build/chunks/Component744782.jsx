@@ -89,7 +89,7 @@ function O(e) {
         onCopy: e => {
           if (D) return;
           (0, m.JG)(e);
-          let t = (0, h.xC)(N.entity_type);
+          let t = (0, v.xC)(N.entity_type);
           x.default.track(f.rMx.COPY_INSTANT_INVITE, {
             server: N.guild_id,
             channel: I,
@@ -103,7 +103,7 @@ function O(e) {
         variant: "text-xs/normal",
         color: "text-default",
         className: j.inviteDetail,
-        children: (0, v.Vg)(_, A)
+        children: (0, h.Vg)(_, A)
       })]
     })]
   })

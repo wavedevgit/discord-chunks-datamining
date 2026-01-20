@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk467721 = require("./467721.js");
 
-function S(t, e, s) {
+function b(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
     value: s,
     enumerable: true,
@@ -69,7 +69,7 @@ class N extends Chunk473749.Component {
       hasError: e,
       hasAcceptedNeccessaryTerms: s
     } = this.state;
-    return (0, l.jsx)(i.Button, {
+    return (0, l.jsx)(a.Button, {
       variant: "active",
       text: _.intl.string(_.t.nL0WvC),
       disabled: e || null == t || !s,
@@ -83,80 +83,80 @@ class N extends Chunk473749.Component {
       transitionState: s
     } = this.props, {
       selectedInstallationPath: n,
-      isInstalling: a
+      isInstalling: i
     } = this.state, r = null != t && t.getSplashURL(440);
-    return (0, l.jsxs)(i.Y0X, {
+    return (0, l.jsxs)(a.Y0X, {
       transitionState: s,
-      size: i.CgR.SMALL,
+      size: a.CgR.SMALL,
       "aria-label": _.intl.string(_.t.PphjtJ),
       parentComponent: "ApplicationInstallationModal",
       children: [null != r ? (0, l.jsx)("div", {
-        className: b.splash,
+        className: S.splash,
         style: {
           backgroundImage: "url(".concat(r, ")")
         }
-      }) : null, (0, l.jsxs)(i.xBx, {
+      }) : null, (0, l.jsxs)(a.xBx, {
         justify: I.Z.Justify.BETWEEN,
         children: [(0, l.jsx)(I.Z.Child, {
           grow: 1,
-          children: (0, l.jsx)(i.Heading, {
+          children: (0, l.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             children: _.intl.string(_.t.PphjtJ)
           })
         }), (0, l.jsx)(I.Z.Child, {
           grow: 0,
-          children: (0, l.jsx)(i.olH, {
+          children: (0, l.jsx)(a.olH, {
             onClick: this.close
           })
         })]
-      }), (0, l.jsxs)(i.hzk, {
+      }), (0, l.jsxs)(a.hzk, {
         children: [(0, l.jsxs)(I.Z, {
           align: I.Z.Align.CENTER,
           children: [(0, l.jsx)(f.Z, {
             game: t,
             size: f.A.MEDIUM,
-            className: b.gameIcon
+            className: S.gameIcon
           }), (0, l.jsx)("div", {
-            className: b.gameName,
+            className: S.gameName,
             children: null != t && t.name
           }), null != e ? (0, l.jsx)("div", {
-            className: b.installSize,
+            className: S.installSize,
             children: (0, T.BU)(e, {
               useKibibytes: true
             })
           }) : null]
         }), (0, l.jsx)("div", {
-          className: b.divider
+          className: S.divider
         }), (0, l.jsx)(C.Z, {
           autoFocus: true,
-          className: b.selector,
+          className: S.selector,
           value: n,
           requiredDiskKB: e,
           onChange: this.handleChangePath
         }), (0, l.jsx)(c.Z, {
           eulaId: t.eulaId,
           applicationName: t.name,
-          disabled: a,
+          disabled: i,
           onChange: this.handlePurchaseTermsChange,
-          className: b.terms
+          className: S.terms
         })]
-      }), (0, l.jsx)(i.mzw, {
+      }), (0, l.jsx)(a.mzw, {
         children: this.renderButton()
       })]
     })
   }
   constructor(...t) {
-    super(...t), S(this, "state", {
+    super(...t), b(this, "state", {
       selectedInstallationPath: this.props.defaultInstallationPath,
       hasError: false,
       isInstalling: false,
       hasAcceptedNeccessaryTerms: false
-    }), S(this, "isUnmounted", false), S(this, "handleChangePath", (t, e) => {
+    }), b(this, "isUnmounted", false), b(this, "handleChangePath", (t, e) => {
       this.setState({
         selectedInstallationPath: t,
         hasError: e
       })
-    }), S(this, "install", (t, e) => {
+    }), b(this, "install", (t, e) => {
       let {
         application: s,
         branchId: l,
@@ -171,7 +171,7 @@ class N extends Chunk473749.Component {
         installationPath: this.state.selectedInstallationPath,
         analyticsLocation: n
       }), (0, m.uL)(Z.Z5c.APPLICATION_LIBRARY), this.close()
-    }), S(this, "handleInstall", () => {
+    }), b(this, "handleInstall", () => {
       let {
         application: t,
         buildId: e,
@@ -180,11 +180,11 @@ class N extends Chunk473749.Component {
       } = this.props;
       if (null != e && null != s) l || (0, d.B)(), null != t && null != t.eulaId && (0, d.D)(t.eulaId), this.install(e, s);
       else throw Error("Unexpected missing build info for non-premium product")
-    }), S(this, "handlePurchaseTermsChange", t => {
+    }), b(this, "handlePurchaseTermsChange", t => {
       this.setState({
         hasAcceptedNeccessaryTerms: t
       })
-    }), S(this, "close", () => {
+    }), b(this, "close", () => {
       this.props.onClose()
     })
   }

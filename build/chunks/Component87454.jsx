@@ -18,9 +18,9 @@ let d = Chunk473749.memo(function(e) {
   } = e, u = i.z[n], {
     isDismissed: m,
     handleToggleDismissState: p
-  } = (0, c.Z)(u), [h, f] = r.useState(false), x = r.useCallback(() => {
+  } = (0, c.Z)(u), [h, f] = r.useState(false), b = r.useCallback(() => {
     null == d || d(n), p()
-  }, [d, p, n]), b = r.useCallback(e => {
+  }, [d, p, n]), x = r.useCallback(e => {
     e.preventDefault(), f(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
@@ -32,7 +32,7 @@ let d = Chunk473749.memo(function(e) {
         size: "sm",
         variant: "icon-only",
         icon: h ? l.C2q : l.zTD,
-        onClick: b,
+        onClick: x,
         "aria-label": h ? "Copied" : "Copy"
       }), (0, a.jsx)(l.rsf, {
         label: "".concat(n.toLowerCase(), " (").concat(i.z[n], ")"),
@@ -54,7 +54,7 @@ let d = Chunk473749.memo(function(e) {
           return (true !== o && "0" !== o && r.push("last_dismissed_object_id: ".concat(o)), 0 === r.length) ? null : r.join(", ")
         }(u) : null,
         checked: m,
-        onChange: x
+        onChange: b
       })]
     }), (0, a.jsx)(l.izJ, {})]
   })

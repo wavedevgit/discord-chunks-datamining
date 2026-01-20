@@ -123,15 +123,19 @@ var Chunk314794 = require("./314794.js"),
 let c = true,
   u = true,
   d = [{
+    id: "non-nitro",
     value: null,
     label: "Non-Nitro"
   }, {
+    id: "tier-0",
     value: 3,
     label: "Basic"
   }, {
+    id: "tier-1",
     value: 1,
     label: "Classic"
   }, {
+    id: "tier-2",
     value: 2,
     label: "Standard"
   }],

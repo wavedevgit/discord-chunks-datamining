@@ -48,10 +48,10 @@ function B(e) {
     questId: n
   } = e;
   return (0, y.qI)({
-    mode: t ? L.NH.EXPANDED : L.NH.COLLAPSED,
-    questContent: b.jn.QUEST_BAR_V2,
+    mode: t ? M.NH.EXPANDED : M.NH.COLLAPSED,
+    questContent: x.jn.QUEST_BAR_V2,
     questId: n,
-    sourceQuestContent: b.jn.QUEST_BAR_V2
+    sourceQuestContent: x.jn.QUEST_BAR_V2
   }), null
 }
 
@@ -67,16 +67,16 @@ function G(e) {
     quest: i
   } = e, u = (0, j.T)({
     quest: i,
-    location: L.dr.QUESTS_BAR
+    location: M.dr.QUESTS_BAR
   }), g = (0, v.Z)({
-    location: L.dr.QUESTS_BAR
-  }), G = (0, c.e7)([x.Z], () => null != x.Z.questEnrollmentBlockedUntil), {
+    location: M.dr.QUESTS_BAR
+  }), G = (0, c.e7)([b.Z], () => null != b.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: V,
-    reason: z
+    reason: W
   } = (0, E.qN)({
     quest: i,
-    location: L.dr.QUESTS_BAR
-  }), W = (0, c.e7)([p.Z], () => p.Z.hasLayers()), H = r.useRef(null), q = r.useMemo(() => (0, C.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, d.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+    location: M.dr.QUESTS_BAR
+  }), z = (0, c.e7)([p.Z], () => p.Z.hasLayers()), H = r.useRef(null), q = r.useMemo(() => (0, C.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, d.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: X,
     isLoading: J
   } = (0, _.kC)(), $ = r.useContext(R.T) || g && V && !J && !G, {
@@ -101,7 +101,7 @@ function G(e) {
     handleFocusWithoutDelay: ep,
     handleBlur: eh,
     handleMouseEnter: ef,
-    handleMouseLeave: ex
+    handleMouseLeave: eb
   } = (0, D.t)({
     quest: i,
     isExpanded: ee,
@@ -111,7 +111,7 @@ function G(e) {
     isQuestAccepted: K,
     prevIsQuestAccepted: Q,
     impressionRef: H
-  }), eb = r.useRef(null), eg = r.useRef(null), ev = r.useRef(null), ej = (0, y.Rf)(i);
+  }), ex = r.useRef(null), eg = r.useRef(null), ev = r.useRef(null), ej = (0, y.Rf)(i);
   if (r.useEffect(() => {
       q && (0, T.loadVideoQuestModal)()
     }, [q]), r.useEffect(() => {
@@ -119,14 +119,14 @@ function G(e) {
         var e;
         (0, h.dA)({
           questId: i.id,
-          event: M.rMx.QUEST_CONTENT_RENDERING_FAILURE,
+          event: L.rMx.QUEST_CONTENT_RENDERING_FAILURE,
           properties: {
-            content_id: b.jn.QUEST_BAR,
-            content_name: (0, h._b)(b.jn.QUEST_BAR),
+            content_id: x.jn.QUEST_BAR,
+            content_name: (0, h._b)(x.jn.QUEST_BAR),
             reason: "asset_loading_error",
             impression_id: null == (e = H.current) ? true : e.getId()
           },
-          sourceQuestContent: b.jn.QUEST_BAR_V2
+          sourceQuestContent: x.jn.QUEST_BAR_V2
         }), m.Z.increment({
           name: o.V.QUEST_CONTENT_RENDERING_FAILURE,
           tags: ["quest_id:".concat(i.id), "reason:asset_loading_error"]
@@ -137,14 +137,14 @@ function G(e) {
         var e;
         (0, h.dA)({
           questId: i.id,
-          event: M.rMx.QUEST_CONTENT_RENDERING_FAILURE,
+          event: L.rMx.QUEST_CONTENT_RENDERING_FAILURE,
           properties: {
-            content_id: b.jn.QUEST_BAR,
-            content_name: (0, h._b)(b.jn.QUEST_BAR),
+            content_id: x.jn.QUEST_BAR,
+            content_name: (0, h._b)(x.jn.QUEST_BAR),
             reason: "not_eligible_for_quest",
             impression_id: null == (e = H.current) ? true : e.getId()
           },
-          sourceQuestContent: b.jn.QUEST_BAR_V2
+          sourceQuestContent: x.jn.QUEST_BAR_V2
         })
       }
     }, [g, i.id]), r.useEffect(() => {
@@ -152,25 +152,25 @@ function G(e) {
         var e;
         (0, h.dA)({
           questId: i.id,
-          event: M.rMx.QUEST_CONTENT_RENDERING_FAILURE,
+          event: L.rMx.QUEST_CONTENT_RENDERING_FAILURE,
           properties: {
-            content_id: b.jn.QUEST_BAR,
-            content_name: (0, h._b)(b.jn.QUEST_BAR),
-            reason: z,
+            content_id: x.jn.QUEST_BAR,
+            content_name: (0, h._b)(x.jn.QUEST_BAR),
+            reason: W,
             impression_id: null == (e = H.current) ? true : e.getId()
           },
-          sourceQuestContent: b.jn.QUEST_BAR_V2
+          sourceQuestContent: x.jn.QUEST_BAR_V2
         })
       }
-    }, [$, er, J, i.id, z]), r.useEffect(() => {
+    }, [$, er, J, i.id, W]), r.useEffect(() => {
       (!V || G) && f.Z.clearTracking(), $ && er && !J && !X && g && f.Z.stopTracking(i.id)
     }, [V, G, $, er, J, X, g, i.id]), !g || !$ && er && !J || X) return X ? u.log("Not rendered due to asset error") : g || u.log("Not rendered due to ineligibility"), null;
   let ey = 70 + 78 * !!Y;
   return (0, a.jsx)(S.A, {
     questOrQuests: i,
-    questContent: b.jn.QUEST_BAR_V2,
-    overrideVisibility: !W && $,
-    sourceQuestContent: b.jn.QUEST_BAR_V2,
+    questContent: x.jn.QUEST_BAR_V2,
+    overrideVisibility: !z && $,
+    sourceQuestContent: x.jn.QUEST_BAR_V2,
     children: (e, t) => (H.current = t.current, (0, a.jsxs)("div", {
       className: U.mask,
       children: [$ && (0, a.jsxs)(a.Fragment, {
@@ -180,7 +180,7 @@ function G(e) {
         }), (0, a.jsx)(F, {})]
       }), (0, a.jsx)(s.animated.div, {
         "aria-hidden": !$,
-        onMouseLeave: ex,
+        onMouseLeave: eb,
         onMouseEnter: ef,
         onFocus: ep,
         onBlur: eh,
@@ -203,7 +203,7 @@ function G(e) {
             springConfig: es,
             isExpanded: ee,
             children: (0, a.jsx)(N.iQ, {
-              expandedContentRef: eb,
+              expandedContentRef: ex,
               collapsedContentRef: eg,
               expansionSpring: ei,
               children: (0, a.jsxs)(k.g, {
@@ -224,7 +224,7 @@ function G(e) {
                 }, Y ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(w.Z, {
                   className: U.content,
                   overlayRef: ev,
-                  ref: eb,
+                  ref: ex,
                   children: (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(A.Z, {}), !K && (0, a.jsx)(O.Z, {})]
                   })
@@ -246,10 +246,10 @@ let V = 12633 == require.j ? function() {
       enabled: t,
       variant: n
     } = g.nj.getConfig({
-      location: L.dr.QUESTS_BAR
+      location: M.dr.QUESTS_BAR
     });
   return null == e ? null : (0, a.jsx)(_.x8, {
-    source: L.dr.QUESTS_BAR,
+    source: M.dr.QUESTS_BAR,
     questId: e.id,
     listenForSourceError: t,
     retrySourceLoadOnError: n === g.b2.LISTEN_AND_RETRY_LOADING,

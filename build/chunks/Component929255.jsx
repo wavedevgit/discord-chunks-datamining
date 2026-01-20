@@ -43,7 +43,7 @@ function _(e) {
       setCategoryRef: g,
       handleScrollToCategory: p
     } = (0, b.xV)(u.current),
-    [h, C] = l.useState(s),
+    [m, C] = l.useState(s),
     [E, v] = l.useState(false);
   return l.useEffect(() => {
     null != a && p(a)
@@ -64,7 +64,7 @@ function _(e) {
         onScroll: f,
         children: (0, r.jsx)(y, {
           isSmallScreen: E,
-          filterBarOpen: h,
+          filterBarOpen: m,
           setFilterBarOpen: C,
           tab: t,
           scrollerRef: u,
@@ -72,11 +72,11 @@ function _(e) {
           setCategoryRef: g,
           initialCategoryId: a
         })
-      }), h && !E && (0, r.jsx)("div", {
+      }), m && !E && (0, r.jsx)("div", {
         className: O.divider
-      }), h && !E && (0, r.jsx)(i.Ttm, {
+      }), m && !E && (0, r.jsx)(i.Ttm, {
         className: O.filterBar,
-        children: (0, r.jsx)(m.Z, {})
+        children: (0, r.jsx)(h.Z, {})
       })]
     })
   })
@@ -94,7 +94,7 @@ let y = e => {
   } = e, k = l.useRef(null), T = (0, d.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: L,
     currentPage: A
-  } = (0, h.h)(b), B = l.useCallback(e => {
+  } = (0, m.h)(b), B = l.useCallback(e => {
     c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == I ? true : I.sessionId,
       page_section: null == I ? true : I.pageSection,
@@ -165,7 +165,7 @@ let y = e => {
           ref: k,
           children: (0, r.jsx)(i.Den, {
             className: O.filterOverlayContent,
-            children: (0, r.jsx)(m.Z, {})
+            children: (0, r.jsx)(h.Z, {})
           })
         })]
       }), T ? (0, v.RE)(o) ? (0, r.jsx)(E.Z, {

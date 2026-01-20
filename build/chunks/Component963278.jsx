@@ -26,15 +26,15 @@ let C = e => {
     tab: a
   } = e, C = (0, i.e7)([c.default], () => c.default.getCurrentUser()), E = (0, i.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), v = (0, u.sp)(), x = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, f.l)(x).slice(0, 4);
   return null == C ? null : (0, r.jsxs)("div", {
-    className: s()(h.shelfBlockContainer, h.centeredSection),
+    className: s()(m.shelfBlockContainer, m.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: h.blockHeader,
+      className: m.blockHeader,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
       }), (0, r.jsx)(o.Button, {
         variant: "secondary",
-        text: m.intl.formatToPlainString(m.t.bc9RBE, {
+        text: h.intl.formatToPlainString(h.t.bc9RBE, {
           category_name: t.name
         }),
         onClick: () => {
@@ -47,7 +47,7 @@ let C = e => {
         }
       })]
     }), (0, r.jsx)("div", {
-      className: h.feed,
+      className: m.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: S.map((e, n) => {
           if (null == d.Z.getCategoryForProduct(e.skuId) || null == e) return null;

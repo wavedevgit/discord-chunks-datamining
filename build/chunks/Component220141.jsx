@@ -35,15 +35,15 @@ function p(e) {
       return r
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
-    trackUserProfileEditAction: x
-  } = (0, l.KZ)(), b = r.useMemo(() => c.rR.filter(s.Sr).map(e => new s.zy({
+    trackUserProfileEditAction: b
+  } = (0, l.KZ)(), x = r.useMemo(() => c.rR.filter(s.Sr).map(e => new s.zy({
     type: e,
     games: []
   })), []), g = r.useCallback(() => {
-    h(d.L.TAKE_ACTION), x({
+    h(d.L.TAKE_ACTION), b({
       action: "PRESS_ADD_WIDGET"
     }), p()
-  }, [p, h, x]);
+  }, [p, h, b]);
   return (0, a.jsx)(i.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -69,11 +69,11 @@ function p(e) {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,
-      children: b.map(e => (0, a.jsx)(o.Z, {
+      children: x.map(e => (0, a.jsx)(o.Z, {
         widget: e,
         size: "medium",
         onAddWidget: g,
-        trackUserProfileEditAction: x
+        trackUserProfileEditAction: b
       }, e.getUniqueKey()))
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

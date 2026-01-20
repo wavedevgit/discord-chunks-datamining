@@ -67,13 +67,13 @@ class x extends Chunk473749.Component {
         return n
       })(Object(h)).forEach(function(e) {
         Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
-      }), u)), (0, a.a)(O.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      }), u)), (0, l.a)(O.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
-      let e = (0, l.K)(d.Z.getChannel(n), true);
-      (0, c.Q)(O.rMx.CHANNEL_OPENED, E({}, e, (0, o.$H)(n))), (0, a.a)(O.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      let e = (0, a.K)(d.Z.getChannel(n), true);
+      (0, c.Q)(O.rMx.CHANNEL_OPENED, E({}, e, (0, o.$H)(n))), (0, l.a)(O.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -87,15 +87,15 @@ let S = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.
   let i = m.Z.getGuildId(),
     s = g.Z.getChannelId(i),
     o = f.Z.getGuild(i),
-    l = b.default.getCurrentUser(),
-    a = null != (t = u.ZP.getChannels(null == o ? true : o.id)[u.sH]) ? t : [],
-    c = a.length > 0 ? a.filter(e => {
+    a = b.default.getCurrentUser(),
+    l = null != (t = u.ZP.getChannels(null == o ? true : o.id)[u.sH]) ? t : [],
+    c = l.length > 0 ? l.filter(e => {
       let {
         channel: t
       } = e;
       return p.Z.can(r.$e(O.Plq.SEND_MESSAGES, O.Plq.VIEW_CHANNEL), t)
     }).length : 0,
-    d = null != l && null != i && null != (n = null == (e = h.ZP.getMember(i, l.id)) ? true : e.isPending) && n;
+    d = null != a && null != i && null != (n = null == (e = h.ZP.getMember(i, a.id)) ? true : e.isPending) && n;
   return {
     selectedGuild: i,
     selectedChannel: s,

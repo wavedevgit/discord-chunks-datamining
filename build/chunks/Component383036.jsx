@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,22 +44,22 @@ let f = e => {
       }({}, e), t)
     })
   },
-  x = () => {
+  b = () => {
     let e = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
       t = (0, i.e7)([c.Z], () => c.Z.categories),
       n = (0, i.e7)([d.Z], () => d.Z.purchases),
       m = (0, i.e7)([c.Z], () => c.Z.lastSuccessfulFetch),
-      x = t.size > 0 && n.size > 0 && null != m,
+      b = t.size > 0 && n.size > 0 && null != m,
       {
-        isFetching: b,
+        isFetching: x,
         categories: g
       } = (0, u.ZP)({
         logPerf: false,
         stalePurchasesOK: true,
-        noOp: x
+        noOp: b
       }),
-      v = x ? t : g,
-      j = x || !b && v.size > 0,
+      v = b ? t : g,
+      j = b || !x && v.size > 0,
       [y, C] = r.useState(""),
       [_, S] = r.useState(null),
       [E, T] = r.useState(null);
@@ -71,7 +71,7 @@ let f = e => {
       let e = c.Z.getProduct(y),
         t = c.Z.getCategoryForProduct(y);
       null != e && null != t ? (S(e), T(t)) : (S(null), T(null))
-    }, [y, j]), b) ? (0, a.jsx)(l.Text, {
+    }, [y, j]), x) ? (0, a.jsx)(l.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
     }) : null == e ? (0, a.jsx)(l.Text, {

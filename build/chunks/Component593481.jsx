@@ -9,7 +9,7 @@ require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk294033 = require("./294033.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -72,11 +72,11 @@ class v extends(i = Chunk473749.PureComponent) {
     null != t && null == e.onNotificationShow && t()
   }
   renderCloseButton() {
-    return "function" == typeof this.props.title ? null : (0, r.jsx)(a.P3F, {
+    return "function" == typeof this.props.title ? null : (0, r.jsx)(l.P3F, {
       onClick: this.handleDismiss,
       className: u.dismissButton,
       "aria-label": d.intl.string(d.t.LnEgqX),
-      children: (0, r.jsx)(a.Dio, {
+      children: (0, r.jsx)(l.Dio, {
         size: "xs",
         color: "currentColor",
         className: u.dismissIcon
@@ -117,25 +117,25 @@ class v extends(i = Chunk473749.PureComponent) {
         hint: o
       },
       state: {
-        expanded: l
+        expanded: a
       }
     } = this;
-    if (!l) return null != o ? this.renderHint() : null;
+    if (!a) return null != o ? this.renderHint() : null;
     if (null != this.props.renderFooter) {
-      let e = this.props.renderFooter(l);
+      let e = this.props.renderFooter(a);
       return null != e ? (0, r.jsxs)(s.Fragment, {
         children: [(0, r.jsx)(m, {}), e]
       }, "footer-custom-content") : null
     }
     return null != n || null != i ? (0, r.jsxs)(s.Fragment, {
-      children: [(0, r.jsx)(m, {}), (0, r.jsxs)(a.ButtonGroup, {
+      children: [(0, r.jsx)(m, {}), (0, r.jsxs)(l.ButtonGroup, {
         fullWidth: true,
-        children: [null != n ? (0, r.jsx)(a.Button, {
+        children: [null != n ? (0, r.jsx)(l.Button, {
           variant: "active",
           size: "sm",
           text: null != t ? t : d.intl.string(d.t.BddRzS),
           onClick: this.handleConfirmClick
-        }) : null, null != i ? (0, r.jsx)(a.Button, {
+        }) : null, null != i ? (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
           text: null != e ? e : d.intl.string(d.t["ETE/oC"]),
@@ -148,9 +148,9 @@ class v extends(i = Chunk473749.PureComponent) {
     let {
       icon: e
     } = this.props;
-    return null == e ? null : "string" == typeof e ? (0, r.jsx)(a.qEK, {
+    return null == e ? null : "string" == typeof e ? (0, r.jsx)(l.qEK, {
       src: e,
-      size: a.EFr.SIZE_40,
+      size: l.EFr.SIZE_40,
       className: u.avatar,
       "aria-hidden": true
     }) : (0, r.jsx)("div", {
@@ -172,7 +172,7 @@ class v extends(i = Chunk473749.PureComponent) {
           className: u.title,
           children: "function" == typeof t ? t(this.handleDismiss) : t
         }), null != e ? (0, r.jsx)("div", {
-          className: l()(u.body, h.marginTop4),
+          className: a()(u.body, h.marginTop4),
           style: {
             WebkitLineClamp: n,
             lineClamp: n
@@ -191,12 +191,12 @@ class v extends(i = Chunk473749.PureComponent) {
       state: {
         expanded: n
       }
-    } = this, i = null != e ? a.P3F : "div";
+    } = this, i = null != e ? l.P3F : "div";
     return (0, r.jsxs)(i, {
       onMouseOver: n ? true : this.handleMouseEnter,
       onFocus: n ? true : this.handleMouseEnter,
       onClick: null != e ? e : true,
-      className: l()(u.container, {
+      className: a()(u.container, {
         [u.themePrimary]: true,
         [u.clickable]: null != e && !t
       }),

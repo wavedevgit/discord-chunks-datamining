@@ -94,10 +94,10 @@ let S = e => {
       totalCards: s
     } = e, i = (0, c.sp)(), o = (0, d.Pc)("HeroBlockCards") && t.categorySkuId === E.Hi, f = (0, d.IT)("HeroBlockCards");
     if (n) return (0, r.jsx)(r.Fragment, {
-      children: [...Array(null != s ? s : 4)].map((e, t) => (0, r.jsx)(h.Z, {}, t))
+      children: [...Array(null != s ? s : 4)].map((e, t) => (0, r.jsx)(m.Z, {}, t))
     });
     let g = null != s ? l.slice(0, s) : l;
-    return (0, r.jsx)(m.zp.Provider, {
+    return (0, r.jsx)(h.zp.Provider, {
       value: {
         rentalDuration: o ? f : true,
         flattenProductVariants: o
@@ -112,8 +112,8 @@ let S = e => {
           },
           children: (0, r.jsx)(p.Z, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: a === E.AW.ORBS ? m.tA.ORBS : true,
-            onClickAnalytics: (0, m.wO)(e, a, i)
+            prioritizedCurrency: a === E.AW.ORBS ? h.tA.ORBS : true,
+            onClickAnalytics: (0, h.wO)(e, a, i)
           }, e.skuId)
         }, e.skuId)
       })

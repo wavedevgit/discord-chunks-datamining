@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 440857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,18 +53,18 @@ function v(e, t) {
   }), e
 }
 
-function y(e) {
+function O(e) {
   let {
     guildId: t
-  } = e, y = (0, f.xC)(t), {
-    selectedUserIds: O,
+  } = e, O = (0, f.xC)(t), {
+    selectedUserIds: y,
     clearSelection: H
-  } = (0, p.Z)(t), w = O.size > 0, S = async (e, t, n, r) => {
+  } = (0, p.Z)(t), w = y.size > 0, S = async (e, t, n, r) => {
     try {
-      let l = await u.Z.banMultipleUsers(e, t, n, r);
-      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
+      let l = await d.Z.banMultipleUsers(e, t, n, r);
+      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, u.hH)(e)), {
         action_type: b.jQ.BAN,
-        target_user_ids: [...O],
+        target_user_ids: [...y],
         mod_user_id: C.default.getId(),
         successful_user_ids: l.body.banned_users,
         location
@@ -86,7 +86,7 @@ function y(e) {
       variant: "heading-md/bold",
       color: "text-default",
       children: g.intl.format(g.t.TstoSZ, {
-        count: O.size
+        count: y.size
       })
     }), (0, r.jsx)(c.Avr, {
       text: g.intl.string(g.t.yW6ZdE),
@@ -105,15 +105,15 @@ function y(e) {
       children: g.intl.string(g.t["2a50fF"])
     })]
   });
-  return y ? (0, r.jsx)(o.W, {
+  return O ? (0, r.jsx)(o.W, {
     component: "div",
     className: j.saveNoticeContainer,
     children: w && (0, r.jsx)(c.oXn, {
       children: (0, r.jsx)(a.Z, {
         onSave: () => {
-          m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, v(x({}, (0, d.hH)(t)), {
+          m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, v(x({}, (0, u.hH)(t)), {
             action_type: b.jQ.BAN,
-            target_user_ids: [...O],
+            target_user_ids: [...y],
             mod_user_id: C.default.getId(),
             location
           })), (0, c.ZDy)(async () => {
@@ -122,8 +122,8 @@ function y(e) {
             } = await n.e("18910").then(n.bind(n, 497880));
             return n => (0, r.jsx)(e, v(x({}, n), {
               guildId: t,
-              canBulkBan: y,
-              userIds: O,
+              canBulkBan: O,
+              userIds: y,
               onBanMultiple: S
             }))
           })

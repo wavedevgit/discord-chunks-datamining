@@ -37,8 +37,8 @@ function p(e) {
     isExpanded: p
   } = r.useContext(u), h = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), {
     ref: f,
-    height: x = null
-  } = (0, o.ZP)(), b = null != (t = (0, c.Z)(x)) ? t : null, [{
+    height: b = null
+  } = (0, o.ZP)(), x = null != (t = (0, c.Z)(b)) ? t : null, [{
     height: g
   }, v] = (0, s.q_F)(() => ({
     from: {
@@ -47,13 +47,13 @@ function p(e) {
     config: m
   }));
   return r.useLayoutEffect(() => {
-    null !== x && v({
-      height: x,
-      immediate: !p || h || null === b
+    null !== b && v({
+      height: b,
+      immediate: !p || h || null === x
     })
-  }, [x, v, p, h, b]), (0, a.jsx)(i.animated.div, {
+  }, [b, v, p, h, x]), (0, a.jsx)(i.animated.div, {
     style: {
-      height: null === b ? "auto" : g,
+      height: null === x ? "auto" : g,
       overflow: "hidden"
     },
     children: (0, a.jsx)("div", {

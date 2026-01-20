@@ -17,22 +17,28 @@ var Chunk95015 = require("./95015.js"),
 
 function g() {
   return [{
-    label: u.intl.string(u.t["8ot6gv"]),
+    id: "15-minutes",
+    label: c.intl.string(c.t["8ot6gv"]),
     value: d.Oe.MINUTES_15
   }, {
-    label: u.intl.string(u.t.UMWBZr),
+    id: "1-hour",
+    label: c.intl.string(c.t.UMWBZr),
     value: d.Oe.HOURS_1
   }, {
-    label: u.intl.string(u.t.QmYWtu),
+    id: "3-hours",
+    label: c.intl.string(c.t.QmYWtu),
     value: d.Oe.HOURS_3
   }, {
-    label: u.intl.string(u.t.EpAXPC),
+    id: "8-hours",
+    label: c.intl.string(c.t.EpAXPC),
     value: d.Oe.HOURS_8
   }, {
-    label: u.intl.string(u.t["755t4q"]),
+    id: "24-hours",
+    label: c.intl.string(c.t["755t4q"]),
     value: d.Oe.HOURS_24
   }, {
-    label: u.intl.string(u.t.r3LawO),
+    id: "forever",
+    label: c.intl.string(c.t.r3LawO),
     value: d.Oe.ALWAYS
   }]
 }
@@ -47,7 +53,7 @@ function f(t) {
   return r.default.keys(t).filter(n => {
     var l, s;
     let r = t[n].message_notifications !== o.bL.NULL,
-      d = i.yE(null != (l = t[n].flags) ? l : 0, c.ic.UNREADS_ALL_MESSAGES) || i.yE(null != (s = t[n].flags) ? s : 0, c.ic.UNREADS_ONLY_MENTIONS);
+      d = i.yE(null != (l = t[n].flags) ? l : 0, u.ic.UNREADS_ALL_MESSAGES) || i.yE(null != (s = t[n].flags) ? s : 0, u.ic.UNREADS_ONLY_MENTIONS);
     return !e.ignoreUnreadSetting && d || !e.ignoreNotificationSetting && r || !e.ignoreMute && (0, a.m$)(t[n])
   })
 }

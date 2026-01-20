@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk921738 = require("./921738.js"),
   c = require.n(Chunk921738),
   Chunk954955 = require("./954955.js"),
@@ -130,7 +130,7 @@ let ev = e => {
       locked: s
     } = e, o = s ? g.P3F : "div";
     return (0, r.jsx)(o, {
-      className: l()(eh.overlayBackground, {
+      className: a()(eh.overlayBackground, {
         [eh.overlayActive]: !s,
         [eh.overlayLocked]: s,
         [eh.previewMode]: !s && i
@@ -207,8 +207,8 @@ class eE extends Chunk473749.Component {
       locked: i,
       canGoLive: s,
       isStreaming: o,
-      voiceGuild: l,
-      voiceChannelId: a,
+      voiceGuild: a,
+      voiceChannelId: l,
       game: c,
       showKeybindNotification: d,
       dismissKeybindNotification: u
@@ -222,21 +222,21 @@ class eE extends Chunk473749.Component {
       location: "Overlay"
     });
     let h = s && !o && null != c,
-      f = t && null != l && null != a,
-      p = el.Z.isNotificationDisabled(ea.n0.WelcomeNudge),
-      m = el.Z.isNotificationDisabled(ea.n0.GoLiveNudge);
+      f = t && null != a && null != l,
+      p = ea.Z.isNotificationDisabled(el.n0.WelcomeNudge),
+      m = ea.Z.isNotificationDisabled(el.n0.GoLiveNudge);
     if (p || (e = {
-        type: ea.nc.WELCOME
+        type: el.nc.WELCOME
       }), d && !p ? e = {
-        type: ea.nc.KEYBIND_INDICATORS,
+        type: el.nc.KEYBIND_INDICATORS,
         markAsDismissed: u
       } : h && f && !m ? e = {
-        type: ea.nc.GO_LIVE_VOICE,
+        type: el.nc.GO_LIVE_VOICE,
         game: c,
-        voiceChannelId: a,
-        voiceGuild: l
+        voiceChannelId: l,
+        voiceGuild: a
       } : h && !m && (e = {
-        type: ea.nc.GO_LIVE_NON_VOICE,
+        type: el.nc.GO_LIVE_NON_VOICE,
         game: c
       }), setTimeout(async () => {
         await (0, K.s5)(), null != e ? b.Z.overlayMounted(e) : b.Z.overlayMounted()
@@ -286,7 +286,7 @@ class eE extends Chunk473749.Component {
       incompatibleApp: n,
       initialized: s,
       isPreviewingInGame: o,
-      activeRegions: a,
+      activeRegions: l,
       windowSize: c,
       voiceGuild: d,
       voiceChannelId: u
@@ -302,13 +302,13 @@ class eE extends Chunk473749.Component {
       children: [(0, r.jsx)(er.Z, {}), o && (0, r.jsx)("header", {
         className: eh.previewingInGameHeader,
         children: eu.intl.string(eu.t.iOq96m)
-      }), i, (!e || a.has(ed.O0n.TEXT_WIDGET)) && (0, r.jsx)(ev, {
+      }), i, (!e || l.has(ed.O0n.TEXT_WIDGET)) && (0, r.jsx)(ev, {
         locked: e,
         keybind: t,
         onClick: e ? this.handleDeactivate : this.handleLock,
         isPreviewingInGame: o
       }), (0, J.validResolution)(c) ? (0, r.jsx)(ei.Z, {
-        className: l()({
+        className: a()({
           [eh.layoutLocked]: e,
           [eh.layoutUnlocked]: !e
         })
@@ -362,7 +362,7 @@ function ex() {
     incompatibleApp: G.default.incompatibleApp,
     activeRegions: G.default.getActiveRegions(),
     isPreviewingInGame: G.default.isPreviewingInGame()
-  })), l = (0, p.e7)([B.Z], () => B.Z.windowSize()), a = (0, p.e7)([V.ZP], () => V.ZP.getOverlayKeybind()), c = (0, p.e7)([A.Z], () => A.Z.getVoiceChannelId()), d = (0, p.e7)([T.Z], () => T.Z.getChannel(c)), u = (0, p.e7)([D.Z], () => null != d ? D.Z.getGuild(d.guild_id) : null), h = (0, p.e7)([j.ZP, M.Z], () => (0, C.Z)(j.ZP, M.Z)), f = (0, p.e7)([R.Z], () => (0, _.Z)(R.Z)), g = (0, p.e7)([w.Z], () => null != w.Z.getCurrentUserActiveStream()), {
+  })), a = (0, p.e7)([B.Z], () => B.Z.windowSize()), l = (0, p.e7)([V.ZP], () => V.ZP.getOverlayKeybind()), c = (0, p.e7)([A.Z], () => A.Z.getVoiceChannelId()), d = (0, p.e7)([T.Z], () => T.Z.getChannel(c)), u = (0, p.e7)([D.Z], () => null != d ? D.Z.getGuild(d.guild_id) : null), h = (0, p.e7)([j.ZP, M.Z], () => (0, C.Z)(j.ZP, M.Z)), f = (0, p.e7)([R.Z], () => (0, _.Z)(R.Z)), g = (0, p.e7)([w.Z], () => null != w.Z.getCurrentUserActiveStream()), {
     analyticsLocations: m
   } = (0, S.ZP)(x.Z.OVERLAY), {
     showKeybindIndicators: b,
@@ -378,9 +378,9 @@ function ex() {
       incompatibleApp: n,
       activeRegions: i,
       isPreviewingInGame: o,
-      windowSize: l,
-      keybind: null != a ? (0, X.BB)(a.shortcut, true) : "???",
-      keybindKeyCodes: null != a ? a.shortcut : [],
+      windowSize: a,
+      keybind: null != l ? (0, X.BB)(l.shortcut, true) : "???",
+      keybindKeyCodes: null != l ? l.shortcut : [],
       connectedToVoice: null != c,
       voiceChannelId: null != d ? d.id : null,
       voiceGuild: u,

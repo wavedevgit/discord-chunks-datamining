@@ -71,6 +71,7 @@ function b(e) {
         subtitle: s
       })
     },
-    placeholder: f.intl.string(f.t["Z+oF8h"])
+    placeholder: f.intl.string(f.t["Z+oF8h"]),
+    "data-migration-pending": true
   })
 }

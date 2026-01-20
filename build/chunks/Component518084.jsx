@@ -8,7 +8,7 @@ require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk877921 = require("./877921.js"),
   c = require.n(Chunk877921),
   Chunk28664 = require("./28664.jsx"),
@@ -57,7 +57,7 @@ let g = Chunk981631.t_t.DEFAULT,
         } = e;
         return (0, r.jsx)(y.Consumer, {
           children: e => {
-            var o, a;
+            var o, l;
             return (0, r.jsx)("div", (o = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -70,19 +70,19 @@ let g = Chunk981631.t_t.DEFAULT,
               }
               return e
             }({
-              className: l()(f.bar, f[c()(s)], n),
+              className: a()(f.bar, f[c()(s)], n),
               style: e
-            }, i), a = a = {
+            }, i), l = l = {
               children: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var i = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, i)
               }
               return n
-            })(Object(a)).forEach(function(e) {
-              Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+            })(Object(l)).forEach(function(e) {
+              Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
             }), o))
           }
         })
@@ -99,7 +99,7 @@ class O extends(i = Chunk473749.PureComponent) {
     return (0, r.jsx)(y.Consumer, {
       children: i => (0, r.jsx)(b.Consumer, {
         children: s => {
-          let o = l()(f.body, f[c()(s.type)], n);
+          let o = a()(f.body, f[c()(s.type)], n);
           return e ? (0, r.jsx)("div", {
             className: o,
             style: i,
@@ -124,16 +124,16 @@ let E = e => {
       height: i,
       children: s,
       className: o,
-      opacity: a = m,
+      opacity: l = m,
       onClick: d
     } = e;
     return (0, r.jsx)(b.Provider, {
       value: {
         type: t,
-        opacity: a
+        opacity: l
       },
       children: (0, r.jsx)("div", {
-        className: l()(f.widget, f[c()(t)], o),
+        className: a()(f.widget, f[c()(t)], o),
         style: {
           width: n,
           height: i
@@ -151,7 +151,7 @@ let E = e => {
     } = e;
     return (0, r.jsx)(y.Consumer, {
       children: e => (0, r.jsx)("div", {
-        className: l()(f.content, {
+        className: a()(f.content, {
           [f.staticSize]: !i
         }, n),
         style: e,
@@ -170,15 +170,15 @@ E.Background = e => {
     children: e => {
       let {
         opacity: o
-      } = e, l = {
+      } = e, a = {
         backgroundColor: "rgba(54, 57, 63, ".concat("" + (null != n ? n : o), ")")
       };
       if ("string" == typeof t.type) return s.cloneElement(t, {
-        style: l
+        style: a
       });
       {
         if (i.includes(t.type)) return (0, r.jsx)(y.Provider, {
-          value: l,
+          value: a,
           children: t
         });
         let e = t.type.displayName;
@@ -193,21 +193,21 @@ E.Background = e => {
     label: i,
     onClick: s,
     tooltipPosition: o = "top",
-    isTutorial: a = false,
+    isTutorial: l = false,
     isActive: c,
     size: h = 20
   } = e;
   return (0, r.jsx)(d.u, {
-    __unsupportedReactNodeAsText: a ? (0, r.jsx)("div", {
+    __unsupportedReactNodeAsText: l ? (0, r.jsx)("div", {
       className: f.tutorialTip,
       children: i
     }) : i,
     "aria-label": i,
     position: o,
-    forceOpen: a,
+    forceOpen: l,
     children: (0, r.jsx)(u.P3F, {
       onClick: s,
-      className: l()(f.icon, {
+      className: a()(f.icon, {
         [f.toggledIconOn]: c
       }),
       innerRef: t,

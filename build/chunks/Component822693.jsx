@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk984933 = require("./984933.js"),
   Chunk496675 = require("./496675.js"),
@@ -28,10 +28,9 @@ function j(e) {
     guildId: l,
     widgetEnabled: b,
     widgetChannelId: j,
-    className: v,
-    enableLocalUpdate: O
-  } = e, y = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), C = i.useMemo(() => {
-    let e = [...y[c.sH], ...y[c.Zb]].filter(e => {
+    enableLocalUpdate: v
+  } = e, O = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), y = i.useMemo(() => {
+    let e = [...O[c.sH], ...O[c.Zb]].filter(e => {
       let {
         channel: t
       } = e;
@@ -46,23 +45,26 @@ function j(e) {
         channel: t
       } = e;
       return {
+        id: t.id,
         value: t.id,
         label: (0, o.F6)(t, g.default, u.Z, true)
       }
     });
     return e.unshift({
+      id: "no-instant-invite",
       value: h,
       label: p.intl.string(p.t.u197b7)
     }), e
-  }, [y, l, j]), N = i.useCallback(e => {
-    O ? (0, m.c)(l, b, e !== h ? e : null) : f.Z.updateEmbed(l, b, e !== h ? e : null)
-  }, [l, b, O]);
-  return (0, r.jsx)(s.y6, {
+  }, [O, l, j]), C = i.useCallback(e => {
+    v ? (0, m.c)(l, b, e !== h ? e : null) : f.Z.updateEmbed(l, b, e !== h ? e : null)
+  }, [l, b, v]);
+  return (0, r.jsx)(s.PhF, {
     label: t,
     description: n,
-    options: C,
-    value: j,
-    onChange: N,
-    className: v
+    options: y,
+    value: null != j ? j : true,
+    onSelectionChange: C,
+    selectionMode: "single",
+    fullWidth: true
   })
 }

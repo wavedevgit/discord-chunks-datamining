@@ -44,7 +44,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk267263 = require("./267263.js");
 
-function V(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -85,37 +85,37 @@ function F(e) {
     getRemoveTooltipHint: s
   } = e;
   return (0, i.jsx)(d.aVo, {
-    className: G.roleMemberList,
+    className: V.roleMemberList,
     sections: [n.length, l.length],
     renderRow: function(e) {
       let c, g, j, {
           section: v,
           row: y
         } = e,
-        O = false;
+        S = false;
       switch (v) {
         case D.m$.ROLES:
-          var Z;
-          j = (g = n[y]).rowType === D.aC.ROLE && (null == (Z = g.tags) ? true : Z.guild_connections) === null ? (0, i.jsx)(b.Z, {
-            className: G.shield,
+          var O;
+          j = (g = n[y]).rowType === D.aC.ROLE && (null == (O = g.tags) ? true : O.guild_connections) === null ? (0, i.jsx)(b.Z, {
+            className: V.shield,
             color: g.colorString,
             size: 20
           }) : (0, i.jsx)(d.lZ8, {
             size: "custom",
-            className: G.shield,
+            className: V.shield,
             color: g.colorString,
             height: 20
           }), c = (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-              className: G.rowHeight,
+              className: V.rowHeight,
               children: j
             }), (0, i.jsx)(d.Text, {
               variant: "text-sm/normal",
-              className: G.rowLabel,
+              className: V.rowLabel,
               color: g.disabled ? "text-muted" : "text-default",
               children: g.name
             })]
-          }), O = g.disabled;
+          }), S = g.disabled;
           break;
         case D.m$.MEMBERS:
           g = l[y], c = (0, i.jsxs)(i.Fragment, {
@@ -124,45 +124,45 @@ function F(e) {
               size: d.EFr.SIZE_24,
               "aria-hidden": true
             }), (0, i.jsx)(d.Text, {
-              className: G.rowLabel,
+              className: V.rowLabel,
               variant: "text-sm/normal",
               children: g.name
             }), g.bot && (0, i.jsx)(p.Z, {
               verified: g.verifiedBot,
-              className: G.rowBotTag
+              className: V.rowBotTag
             }), null != g.nickname && (0, i.jsx)(d.Text, {
               color: "text-muted",
-              className: G.rowLabelSubText,
+              className: V.rowLabelSubText,
               variant: "text-sm/normal",
               children: g.username
             })]
-          }), O = g.disabled;
+          }), S = g.disabled;
           break;
         default:
           g = null
       }
       if (null == g) return null;
-      let S = !O && null == r && null != g.id;
+      let Z = !S && null == r && null != g.id;
       return (0, i.jsxs)(x.Z, {
         justify: x.Z.Justify.BETWEEN,
         align: x.Z.Align.CENTER,
-        className: G.memberRow,
+        className: V.memberRow,
         children: [(0, i.jsx)(x.Z, {
           justify: x.Z.Justify.START,
           align: x.Z.Align.CENTER,
-          className: G.__invalid_memberRowBody,
+          className: V.__invalid_memberRowBody,
           children: c
         }), (0, i.jsx)(d.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
-          children: L.zB(g.rowType)
+          children: M.zB(g.rowType)
         }), g.rowType !== D.aC.EMPTY_STATE && (0, i.jsx)(o.u, {
           asContainer: true,
           text: null != r ? r : s(g.rowType, g.disabled),
           children: (0, i.jsx)(d.P3F, {
             onClick: () => {
               var e, n, i;
-              return S && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
+              return Z && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
                 title: U.intl.string(U.t.GuPYQB),
                 body: U.intl.format(U.t.xERCnZ, {
                   name: n
@@ -176,13 +176,13 @@ function F(e) {
                 })(e, i)
               }))
             },
-            "aria-disabled": !S,
+            "aria-disabled": !Z,
             "aria-label": U.intl.string(U.t.N86XcP),
             children: (0, i.jsx)(d.k$p, {
               size: "md",
               color: "currentColor",
-              className: a()(G.removeIcon, {
-                [G.disabledRemoveIcon]: O || r
+              className: a()(V.removeIcon, {
+                [V.disabledRemoveIcon]: S || r
               })
             })
           })
@@ -214,26 +214,26 @@ function W(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, c = (0, s.e7)([E.Z], () => E.Z.getSortedRoles(t.id)), u = L.RZ(t, c, l, O.yP, r), h = (0, s.e7)([N.ZP], () => L.cR(N.ZP.getMemberIds(t.id), l, t, O.yP, r)), g = (0, C.nG)(l.id);
+  } = e, c = (0, s.e7)([E.Z], () => E.Z.getSortedRoles(t.id)), u = M.RZ(t, c, l, S.yP, r), h = (0, s.e7)([N.ZP], () => M.cR(N.ZP.getMemberIds(t.id), l, t, S.yP, r)), g = (0, C.nG)(l.id);
   return (0, i.jsxs)("div", {
-    className: a()(G.settingCard, G.active),
+    className: a()(V.settingCard, V.active),
     children: [(0, i.jsx)(A.Z, {
       label: U.intl.string(U.t.StpcFU),
       description: U.intl.string(U.t.f7VbhF),
       icon: (0, i.jsx)(d.ewx, {
         size: "custom",
         color: "currentColor",
-        className: G.cardIcon,
+        className: V.cardIcon,
         height: 20,
         width: 20
       }),
       id: "StageModeratorSettingCard"
     }), (0, i.jsxs)("div", {
-      className: G.cardFolder,
+      className: V.cardFolder,
       children: [(0, i.jsxs)(x.Z, {
         justify: x.Z.Justify.BETWEEN,
         align: x.Z.Align.CENTER,
-        className: G.folderHeader,
+        className: V.folderHeader,
         children: [(0, i.jsx)(d.Text, {
           variant: "text-md/semibold",
           children: U.intl.string(U.t["7BWDRb"])
@@ -249,7 +249,7 @@ function W(e) {
                 let {
                   default: e
                 } = await n.e("46786").then(n.bind(n, 388131));
-                return t => (0, i.jsx)(e, H(V({}, t), {
+                return t => (0, i.jsx)(e, H(G({}, t), {
                   channelId: l.id
                 }))
               })
@@ -262,7 +262,7 @@ function W(e) {
         roles: u,
         members: h,
         disabledReason: g ? null : U.intl.string(U.t.arRuES),
-        getRemoveTooltipHint: Z.kk
+        getRemoveTooltipHint: O.kk
       })]
     })]
   })
@@ -283,7 +283,7 @@ function z(e) {
       let {
         VoidConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 288022));
-      return n => (0, i.jsx)(e, H(V({}, n), {
+      return n => (0, i.jsx)(e, H(G({}, n), {
         confirmButtonColor: c.Tt.BRAND,
         header: U.intl.string(U.t.ZzdgUm),
         confirmText: U.intl.string(U.t.BddRzS),
@@ -297,7 +297,7 @@ function z(e) {
         })
       }))
     });
-    L.$e(l, e, r), r || null == a || h || L.Yh(l, e)
+    M.$e(l, e, r), r || null == a || h || M.Yh(l, e)
   }
   let p = {
     title: U.intl.string(U.t.aUI70g),
@@ -305,15 +305,15 @@ function z(e) {
     formLabel: U.intl.string(U.t.P6eCbP)
   };
   return l.isCategory() ? (p.title = U.intl.string(U.t.lEPAZ5), p.subtitle = U.intl.string(U.t.RQUk61), p.formLabel = U.intl.string(U.t["8VIxJu"])) : l.type === k.d4z.GUILD_VOICE && (p.subtitle = U.intl.string(U.t.cLjvKg)), (0, i.jsxs)("div", {
-    className: a()(G.settingCard, {
-      [G.active]: r
+    className: a()(V.settingCard, {
+      [V.active]: r
     }),
     children: [(0, i.jsx)(A.Z, {
       description: p.subtitle,
       icon: (0, i.jsx)(d.mBM, {
         size: "custom",
         color: "currentColor",
-        className: G.cardIcon,
+        className: V.cardIcon,
         height: 20,
         width: 20
       }),
@@ -322,15 +322,15 @@ function z(e) {
       onChange: f,
       value: r
     }), (0, i.jsxs)("div", {
-      className: G.cardFolder,
+      className: V.cardFolder,
       children: [m && (0, i.jsx)("div", {
-        className: G.adminWarning,
+        className: V.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
           children: U.intl.string(U.t["5f3HIC"])
         })
       }), !g && !m && !r && (0, i.jsx)("div", {
-        className: G.adminWarning,
+        className: V.adminWarning,
         children: (0, i.jsx)(d.Wn, {
           messageType: d.QYI.WARNING,
           children: U.intl.string(U.t.ZAk4Q9)
@@ -339,10 +339,10 @@ function z(e) {
         children: [(0, i.jsxs)(x.Z, {
           justify: x.Z.Justify.BETWEEN,
           align: x.Z.Align.CENTER,
-          className: G.folderHeader,
+          className: V.folderHeader,
           children: [(0, i.jsx)(d.Heading, {
             variant: "heading-sm/semibold",
-            className: G.folderTitle,
+            className: V.folderTitle,
             children: p.formLabel
           }), (0, i.jsx)(d.Button, {
             variant: "primary",
@@ -353,7 +353,7 @@ function z(e) {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 185413));
-                return t => (0, i.jsx)(e, H(V({}, t), {
+                return t => (0, i.jsx)(e, H(G({}, t), {
                   channelId: l.id,
                   inSettings: true
                 }))
@@ -364,7 +364,7 @@ function z(e) {
           channel: l,
           roles: o,
           members: u,
-          getRemoveTooltipHint: L.yv
+          getRemoveTooltipHint: M.yv
         })]
       })]
     })]
@@ -377,17 +377,17 @@ function Y(e) {
   } = e;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(d.izJ, {
-      className: G.divider
+      className: V.divider
     }), (0, i.jsx)(d.Heading, {
       variant: "heading-sm/semibold",
-      className: a()(G.folderTitle, G.sectionTitle),
+      className: a()(V.folderTitle, V.sectionTitle),
       children: t
     })]
   })
 }
 let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
-  let e, t = S.Z.channel,
-    n = S.Z.category,
+  let e, t = Z.Z.channel,
+    n = Z.Z.category,
     i = [],
     l = [],
     r = {},
@@ -397,10 +397,10 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     let n = N.ZP.getMemberIds(null == e ? true : e.id);
     if (null != e) {
       let s = E.Z.getSortedRoles(e.id);
-      r = S.Z.editedPermissionIds.reduce((e, t) => {
-        let n = S.Z.getPermissionOverwrite(t);
+      r = Z.Z.editedPermissionIds.reduce((e, t) => {
+        let n = Z.Z.getPermissionOverwrite(t);
         return null != n && (e[t] = n), e
-      }, {}), i = L.kA(e, s, t, t.accessPermissions, r), l = L.cR(n, t, e, t.accessPermissions, r), a = L.Yk(t, r)
+      }, {}), i = M.kA(e, s, t, t.accessPermissions, r), l = M.cR(n, t, e, t.accessPermissions, r), a = M.Yk(t, r)
     }
   }
   return {
@@ -411,7 +411,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     filteredRoles: i,
     guild: e,
     isPrivateGuildChannel: a,
-    locked: S.Z.locked,
+    locked: Z.Z.locked,
     permissionUpdates: r
   }
 })(function(e) {
@@ -456,13 +456,13 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 901492));
-          return t => (0, i.jsx)(e, H(V({}, t), {
+          return t => (0, i.jsx)(e, H(G({}, t), {
             channel: a,
             category: r,
             onConfirm: async () => {
               let {
                 guild_id: e
-              } = r, t = V({}, r.permissionOverwrites);
+              } = r, t = G({}, r.permissionOverwrites);
               null != e && null == t[e] && (t[e] = R.we(e)), await (0, j.u)(a, t[e].deny, t[e].allow) && (0, g.wk)(a.id, {
                 permissionOverwrites: Object.values(t)
               })
@@ -480,6 +480,6 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
       isPrivateGuildChannel: u,
       roles: o,
       members: s
-    }), false, (0, i.jsx)(M.Z, {})]
+    }), false, (0, i.jsx)(L.Z, {})]
   })
 })

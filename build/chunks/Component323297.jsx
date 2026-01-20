@@ -55,16 +55,16 @@ function j(e) {
   let {
     step: n,
     setFooterNode: t
-  } = (0, f.JL)(), l = (0, d.V)("GameServerSetupModal"), {
+  } = (0, g.JL)(), l = (0, d.V)("GameServerSetupModal"), {
     title: s,
     subtitle: j
   } = function(e) {
     switch (e) {
-      case g.EK.SELECT_GAME:
+      case f.EK.SELECT_GAME:
         return {
           title: b.intl.string(m.default["3vWDMz"]), subtitle: b.intl.string(m.default.Az5bjs)
         };
-      case g.EK.SERVER_SETTINGS:
+      case f.EK.SERVER_SETTINGS:
         return {
           title: b.intl.string(m.default.RLGW9z)
         }
@@ -84,22 +84,22 @@ function j(e) {
     }), (0, r.jsx)(a.zJl, {
       className: x.modalContent,
       style: {
-        width: g.AK
+        width: f.AK
       },
       children: (0, r.jsx)("div", {
         style: {
-          padding: g.TG
+          padding: f.TG
         },
         children: (0, r.jsxs)(a.MyZ, {
-          width: g.SY,
+          width: f.SY,
           activeSlide: n,
           children: [(0, r.jsx)(a.Mi4, {
-            id: g.EK.SELECT_GAME,
+            id: f.EK.SELECT_GAME,
             children: (0, r.jsx)(c.Z, {})
-          }, g.EK.SELECT_GAME), (0, r.jsx)(a.Mi4, {
-            id: g.EK.SERVER_SETTINGS,
+          }, f.EK.SELECT_GAME), (0, r.jsx)(a.Mi4, {
+            id: f.EK.SERVER_SETTINGS,
             children: (0, r.jsx)(u.Z, {})
-          }, g.EK.SERVER_SETTINGS)]
+          }, f.EK.SERVER_SETTINGS)]
         })
       })
     }), (0, r.jsx)("div", {
@@ -114,7 +114,7 @@ function h(e) {
   } = (0, l.ZP)();
   return (0, s.lY)(e.guildId, n, e.analyticsLocation), (0, r.jsx)(l.Gt, {
     value: n,
-    children: (0, r.jsx)(f.BT, v(p({}, e), {
+    children: (0, r.jsx)(g.BT, v(p({}, e), {
       children: (0, r.jsx)(j, p({}, e))
     }))
   })

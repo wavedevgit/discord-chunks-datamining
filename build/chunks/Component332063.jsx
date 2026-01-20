@@ -6,7 +6,7 @@ require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk274616 = require("./274616.js"),
   Chunk560587 = require("./560587.js"),
   Chunk388032 = require("./388032.jsx");
@@ -41,22 +41,23 @@ class h extends(i = Chunk473749.Component) {
       selectedBranchId: t,
       applicationId: n,
       includeMaster: i,
-      hide: l,
-      className: s,
-      label: o
+      hide: r,
+      label: s
     } = this.props;
-    if (0 === e.length || l) return null;
-    let u = i ? e : e.filter(e => e.id !== n);
-    return (0, r.jsx)(a.y6, {
-      label: o,
-      options: u.map(e => ({
+    if (0 === e.length || r) return null;
+    let o = i ? e : e.filter(e => e.id !== n);
+    return (0, l.jsx)(a.PhF, {
+      label: s,
+      options: o.map(e => ({
+        id: e.id,
         label: e.getName(n),
         value: e.id
       })),
       placeholder: c.intl.string(c.t.Sw7pHF),
       value: t,
-      onChange: this.handleChange,
-      className: s
+      onSelectionChange: this.handleChange,
+      selectionMode: "single",
+      fullWidth: true
     })
   }
   constructor(...e) {

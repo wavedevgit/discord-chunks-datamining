@@ -180,7 +180,8 @@ function S(e) {
             options: w,
             placeholder: x.intl.string(x.t.Wq1LfI),
             renderOptionLabel: R,
-            renderOptionValue: U
+            renderOptionValue: U,
+            "data-migration-pending": true
           })
         }), P.length > 0 && (0, l.jsx)("div", {
           className: O.errors,

@@ -26,19 +26,19 @@ function o(e) {
   if (null == t) return null;
   let {
     emoji: f
-  } = t, x = null != t.state && "" !== t.state ? t.state : c;
+  } = t, b = null != t.state && "" !== t.state ? t.state : c;
   return (0, a.jsxs)("div", {
     className: i()(s.__invalid_container, n),
     children: [p || null == f ? null : (0, a.jsx)(l.Z, {
       emoji: f,
       className: i()(s.emoji, r, null != d ? {
-        [d]: null == x || "" === x
+        [d]: null == b || "" === b
       } : null),
       animate: u,
       hideTooltip: m
-    }), null != x && x.length > 0 ? (0, a.jsx)("span", {
+    }), null != b && b.length > 0 ? (0, a.jsx)("span", {
       className: o,
-      children: x
+      children: b
     }) : null, h]
   })
 }

@@ -13,9 +13,9 @@ function c(e) {
   var t, n;
   let {
     channelId: c,
-    localCreationAnswerId: s,
-    image: u
-  } = e, d = null == u ? true : u.emoji, f = (null == u || null == (t = u.mediaAttachmentState) ? true : t.status) === o._.PREPARING, m = (0, a.e7)([i.Z], () => i.Z.getUpload(c, s, l.d.Poll)), [b, p] = r.useState(), [g, j] = r.useState("");
+    localCreationAnswerId: u,
+    image: s
+  } = e, d = null == s ? true : s.emoji, f = (null == s || null == (t = s.mediaAttachmentState) ? true : t.status) === o._.PREPARING, m = (0, l.e7)([i.Z], () => i.Z.getUpload(c, u, a.d.Poll)), [b, p] = r.useState(), [g, j] = r.useState("");
   return r.useEffect(() => {
     var e;
     if ((null == m || null == (e = m.item) ? true : e.file) == null) return;

@@ -1,7 +1,7 @@
 /** Chunk was on 8102 **/
 /** chunk id: 526079, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
@@ -11,22 +11,23 @@ var Chunk473749 = require("./473749.js"),
   Chunk771845 = require("./771845.js"),
   Chunk594174 = require("./594174.js");
 
-function d(e) {
+function u(e) {
   let {
     isGuildIncluded: t,
     selectedGuildId: i
-  } = e, l = (0, a.e7)([s.ZP], () => s.ZP.getFlattenedGuildIds()), d = (0, a.e7)([o.Z], () => o.Z.getGuilds()), c = (0, a.e7)([u.default], () => u.default.getCurrentUser());
+  } = e, l = (0, a.e7)([s.ZP], () => s.ZP.getFlattenedGuildIds()), u = (0, a.e7)([o.Z], () => o.Z.getGuilds()), c = (0, a.e7)([d.default], () => d.default.getCurrentUser());
   return {
     options: n.useMemo(() => null == c ? [] : (null == t ? l : l.filter(e => {
-      let i = d[e];
+      let i = u[e];
       return r()(null != i, "guild should not be null"), t(i, c)
     })).map(e => {
-      let t = d[e];
+      let t = u[e];
       return r()(null != t, "guild should not be null"), {
+        id: e,
         label: t.name,
         value: t.id
       }
-    }), [l, d, c, t]),
-    selectedGuild: null == i ? true : d[i]
+    }), [l, u, c, t]),
+    selectedGuild: null == i ? true : u[i]
   }
 }

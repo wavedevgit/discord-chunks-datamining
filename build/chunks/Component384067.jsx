@@ -31,7 +31,7 @@ let y = e => {
   let {
     wideBannerBlock: y,
     tab: j
-  } = e, k = m.Z.getCategoryByStoreListingId(y.categoryStoreListingId), T = l.useRef(null), I = l.useRef(null), [L, A] = l.useState(), [B, N] = l.useState(false);
+  } = e, k = h.Z.getCategoryByStoreListingId(y.categoryStoreListingId), T = l.useRef(null), I = l.useRef(null), [L, A] = l.useState(), [B, N] = l.useState(false);
   l.useEffect(() => {
     let e = I.current;
     if (null == e) return;
@@ -45,7 +45,7 @@ let y = e => {
   let R = null != (t = null == k ? true : k.skuId) ? t : "",
     {
       handleCardVisibilityChange: P
-    } = (0, h.E)(R, "home", "marketing wide banner"),
+    } = (0, m.E)(R, "home", "marketing wide banner"),
     w = (0, p.sp)(),
     {
       bannerURL: Z

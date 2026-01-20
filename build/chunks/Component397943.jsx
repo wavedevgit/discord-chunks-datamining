@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk668339 = require("./668339.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk563040 = require("./563040.js");
 
 function s(e, t, n) {
@@ -73,30 +73,26 @@ function p(e) {
     hideValue: s,
     disabled: c = false
   } = e, f = d(e, ["value", "onChange", "hideValue", "disabled"]);
-  let p = i.useRef(null),
-    _ = i.useMemo(() => new o.tR, []),
-    [h, m] = i.useState("");
+  let p = i.useMemo(() => new o.tR, []),
+    [_, h] = i.useState("");
+
+  function m(e) {
+    null != t && n((0, o.rK)(t, p.selectValue(e)))
+  }
 
   function g(e) {
-    null != t && n((0, o.rK)(t, _.selectValue(e)))
-  }
-
-  function E(e) {
     if ("Enter" === e.key) {
-      let e = (0, o.tj)(t, h);
-      if (null != e) {
-        var n;
-        g(e), null == (n = p.current) || n.close()
-      }
+      let e = (0, o.tj)(t, _);
+      null != e && m(e)
     }
   }
-  return (0, r.jsx)(a.d, u(l({}, f), {
-    ref: p,
-    options: _.getOptions(h),
-    value: s ? true : _.lookupByValue(t),
-    onChange: g,
-    isDisabled: c,
-    onSearchChange: m,
-    onKeyDown: E
+  return (0, r.jsx)(a.VcW, u(l({}, f), {
+    selectionMode: "single",
+    options: p.getOptions(_),
+    value: s ? true : p.lookupByValue(t),
+    onSelectionChange: m,
+    disabled: c,
+    onQueryChange: e => h(e.target.value),
+    onKeyDown: g
   }))
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk199849 = require("./199849.jsx"),
+var Chunk481060 = require("./481060.js"),
   Chunk991862 = require("./991862.js");
 
 function o(e) {
@@ -27,24 +27,23 @@ let s = function(e) {
     currencies: n,
     onChange: o,
     selectedCurrency: s,
-    className: l,
-    disabled: c = false
+    disabled: l = false
   } = e;
   if (n.length < 2) return null;
-  let u = n.map((e, t) => ({
-      key: t,
+  let c = n.map((e, t) => ({
+      id: t.toString(),
       value: e,
       label: "".concat(e.toUpperCase(), " - ").concat((0, a.T)(e))
     })),
-    d = e => {
+    u = e => {
       null != e && o(e)
     };
-  return (0, r.jsx)(i.y6, {
+  return (0, r.jsx)(i.PhF, {
+    selectionMode: "single",
     label: t,
     value: s,
-    options: u,
-    onChange: d,
-    className: l,
-    isDisabled: c
+    options: c,
+    onSelectionChange: u,
+    disabled: l
   })
 }

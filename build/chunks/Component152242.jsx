@@ -146,7 +146,6 @@ let Y = e => {
   }) : (0, r.jsx)(u.Z, {
     selectedSkuId: v,
     validateSelectedGift: F,
-    searchableSelectWrapperClassName: U.recipientPickerSelectWrapper,
     recipients: P
   }), Y = e => {
     null != h && h(null == e ? true : e)

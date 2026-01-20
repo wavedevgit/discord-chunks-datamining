@@ -65,8 +65,8 @@ let u = Chunk473749.createContext({
       recalculateAnimationPositions: p,
       registerComponent: h,
       unregisterComponent: f,
-      expansionSpring: x,
-      mountPoints: b
+      expansionSpring: b,
+      mountPoints: x
     } = r.useContext(u), g = r.useRef(null), v = r.useRef(null), j = r.useRef(true);
     r.useEffect(() => {
       p()
@@ -83,13 +83,13 @@ let u = Chunk473749.createContext({
       j.current !== t && (p(), j.current = t)
     }, [p]);
     (0, s.PM)(g, y);
-    let C = null == (n = b.get(c)) ? true : n.current,
+    let C = null == (n = x.get(c)) ? true : n.current,
       _ = null;
-    return null == C ? _ = null : m && null != x ? _ = (0, a.jsxs)(a.Fragment, {
+    return null == C ? _ = null : m && null != b ? _ = (0, a.jsxs)(a.Fragment, {
       children: ["collapsed" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
         style: {
           position: "absolute",
-          opacity: x.to({
+          opacity: b.to({
             range: [0, 1],
             output: [1, 0]
           })
@@ -98,7 +98,7 @@ let u = Chunk473749.createContext({
       }), C), "expanded" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
         style: {
           position: "absolute",
-          opacity: x.to({
+          opacity: b.to({
             range: [0, 1],
             output: [0, 1]
           })
@@ -119,7 +119,7 @@ let u = Chunk473749.createContext({
       expandedContentRef: n,
       collapsedContentRef: i,
       expansionSpring: l
-    } = e, [s, m] = r.useState({}), [p, h] = r.useState([]), [f, x] = r.useState(() => new Map), b = r.useCallback((e, t, n) => {
+    } = e, [s, m] = r.useState({}), [p, h] = r.useState([]), [f, b] = r.useState(() => new Map), x = r.useCallback((e, t, n) => {
       m(a => {
         var r;
         let i = null != (r = a[t]) ? r : {
@@ -131,7 +131,7 @@ let u = Chunk473749.createContext({
             [n]: e
           })
         })
-      }), x(e => {
+      }), b(e => {
         let n = new Map(e);
         return n.set(t, r.createRef()), n
       })
@@ -146,7 +146,7 @@ let u = Chunk473749.createContext({
         return i[t] = null, n = null == i.expanded && null == i.collapsed, d(c({}, a), {
           [e]: i
         })
-      }), n && x(t => {
+      }), n && b(t => {
         let n = new Map(t);
         return n.delete(e), n
       })
@@ -165,14 +165,14 @@ let u = Chunk473749.createContext({
           p = d.top - u.top,
           h = l.left - c.left + o.jK,
           f = d.left - u.left,
-          x = -l.right + c.right + o.jK,
-          b = -d.right + u.right;
+          b = -l.right + c.right + o.jK,
+          x = -d.right + u.right;
         e.push({
           id: t,
           collapsedLeft: f,
           expandedLeft: h,
-          collapsedRight: b,
-          expandedRight: x,
+          collapsedRight: x,
+          expandedRight: b,
           collapsedTop: p,
           expandedTop: m,
           width: l.width
@@ -182,7 +182,7 @@ let u = Chunk473749.createContext({
     }, [s, n, i, h]);
     return (0, a.jsx)(u.Provider, {
       value: {
-        registerComponent: b,
+        registerComponent: x,
         unregisterComponent: g,
         animatedComponents: s,
         expandedContentRef: n,

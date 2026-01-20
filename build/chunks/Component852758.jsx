@@ -49,9 +49,9 @@ function T() {
   let {
     action: e,
     theme: t
-  } = (0, l.cj)([g.Z, b.Z], () => ({
+  } = (0, l.cj)([g.Z, x.Z], () => ({
     action: g.Z.getAction(),
-    theme: b.Z.theme
+    theme: x.Z.theme
   })), T = v.Z.getVerificationTypes(e), [O, N] = r.useState(0), P = (0, m.Z)(T);
   (0, h.Z)({
     type: i.ImpressionTypes.MODAL,
@@ -124,7 +124,7 @@ function T() {
         } = await Promise.resolve().then(n.bind(n, 607018));
         return t => (0, a.jsx)(e, E({
           layerContext: f.mK,
-          reason: x.L.USER_ACTION_REQUIRED
+          reason: b.L.USER_ACTION_REQUIRED
         }, t))
       }, {
         modalKey: _.M,

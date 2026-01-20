@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 895182, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ function f(e, t) {
   }), e
 }
 
-function x() {
+function b() {
   let e = (0, l.e7)([m.Z], () => m.Z.getGuildId()),
     t = (0, l.e7)([u.Z], () => {
       var t;
@@ -57,34 +57,34 @@ function x() {
       var t;
       return null == (t = d.Z.getStateForGuild(e)) ? true : t.instances
     }),
-    x = r.useMemo(() => Object.values(null != n ? n : {})[0], [n]),
-    b = r.useCallback(t => {
-      null != x && null != e && o.Z.dispatch({
+    b = r.useMemo(() => Object.values(null != n ? n : {})[0], [n]),
+    x = r.useCallback(t => {
+      null != b && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: f(h({}, x), {
+        instance: f(h({}, b), {
           status: t
         })
       })
-    }, [x, e]),
+    }, [b, e]),
     g = r.useMemo(() => Object.values(i.V).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {
-        b(e)
+        x(e)
       }
-    }, e)), [b]),
+    }, e)), [x]),
     v = r.useCallback(() => {
-      null != x && null != e && o.Z.dispatch({
+      null != b && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: f(h({}, x), {
+        instance: f(h({}, b), {
           serverIP: true,
           port: true,
           gameServerPanelUrl: true
         })
       })
-    }, [x, e]);
+    }, [b, e]);
   return null == e ? null : (0, a.jsxs)(s.zJl, {
     className: p.container,
     children: [(0, a.jsx)("div", {
@@ -97,7 +97,7 @@ function x() {
       className: p.section,
       children: [(0, a.jsx)(s.Text, {
         variant: "eyebrow",
-        children: "Set server state for first server: ".concat(null == x ? true : x.name)
+        children: "Set server state for first server: ".concat(null == b ? true : b.name)
       }), (0, a.jsx)("div", {
         className: p.buttonContainer,
         children: g

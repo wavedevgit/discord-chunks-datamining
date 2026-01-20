@@ -247,7 +247,8 @@ let H = () => {
       serialize: e => e,
       select: a,
       isSelected: e => e === t,
-      options: o
+      options: o,
+      "data-migration-pending": true
     })
   },
   Y = () => {

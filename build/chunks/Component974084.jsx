@@ -45,7 +45,7 @@ function g(e) {
     showOrbRentalNewBadge: b
   } = e, {
     itemTypeFilters: p
-  } = (0, i.S)(), m = l.useMemo(() => {
+  } = (0, i.S)(), h = l.useMemo(() => {
     if (n === o.AW.CATALOG && p.size > 0) {
       let e = f[Array.from(p)[0]];
       if (null != e) return e
@@ -76,7 +76,7 @@ function g(e) {
               let {
                 tab: t,
                 labelKey: n
-              } = e, l = t === m;
+              } = e, l = t === h;
               return (0, r.jsx)(s.sNh, {
                 id: t,
                 label: c.intl.string(n),

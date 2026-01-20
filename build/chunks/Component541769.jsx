@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 541769, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,14 +18,14 @@ var Chunk704215 = require("./704215.js"),
   Chunk921944 = require("./921944.js"),
   Chunk324805 = require("./324805.js");
 
-function x(e) {
-  var t, n, x;
+function b(e) {
+  var t, n, b;
   let {
-    isQuestBarEmpty: b,
+    isQuestBarEmpty: x,
     hasLoadedQuestBar: g
   } = (0, m.Ws)({
     location: f.dr.CONFLICT_CHECKS
-  }), v = null != e.targetElementRef.current && b && g, [j, y] = (0, o.X)(e.guildId, {
+  }), v = null != e.targetElementRef.current && x && g, [j, y] = (0, o.X)(e.guildId, {
     shouldShow: v
   }), [C, _] = (0, o.Z)(e.currentUser, {
     shouldShow: v
@@ -51,7 +51,7 @@ function x(e) {
       groupName: h.R.ACCOUNT_NAME_ZONE,
       targetElementRef: e.targetElementRef
     }), (0, a.jsx)(l.ZP, {
-      contentTypes: v && null != (x = e.additionalDCs) ? x : [],
+      contentTypes: v && null != (b = e.additionalDCs) ? b : [],
       groupName: h.R.ACCOUNT_NAME_ZONE,
       children: t => {
         let {

@@ -2,14 +2,13 @@
 /** chunk id: 491758, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
   Chunk825209 = require("./825209.jsx"),
@@ -30,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk263753 = require("./263753.js");
 
-function N(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,20 +38,20 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function w(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,174 +62,195 @@ function w(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D() {
-  let e = (0, O.nq)(),
-    t = (0, O.z8)(),
-    n = (0, m.isWindows)(),
+function R() {
+  let e = (0, y.nq)(),
+    t = (0, y.z8)(),
+    n = (0, h.isWindows)(),
     {
       remindersEnabled: a,
-      clipsLength: N,
-      clipsQuality: w
-    } = (0, s.cj)([E.Z], () => E.Z.getSettings()),
-    D = (0, s.e7)([E.Z], () => E.Z.getHardwareClassification()),
-    x = (0, s.e7)([h.ZP], () => h.ZP.getKeybindForAction(I.kg4.SAVE_CLIP, true)),
-    L = (0, s.e7)([h.ZP], () => h.ZP.getKeybindForAction(I.kg4.SAVE_SCREENSHOT, true)),
-    j = (0, y.Z)(_.Z),
+      clipsLength: A,
+      clipsQuality: P
+    } = (0, s.cj)([g.Z], () => g.Z.getSettings()),
+    R = (0, s.e7)([g.Z], () => g.Z.getHardwareClassification()),
+    D = (0, s.e7)([_.ZP], () => _.ZP.getKeybindForAction(S.kg4.SAVE_CLIP, true)),
+    x = (0, s.e7)([_.ZP], () => _.ZP.getKeybindForAction(S.kg4.SAVE_SCREENSHOT, true)),
+    L = (0, b.Z)(p.Z),
     {
-      showClipsHeaderEntrypoint: M
-    } = g.NV.useExperiment({
+      showClipsHeaderEntrypoint: j
+    } = m.NV.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     }),
-    k = (0, g.PP)();
-  o()(null != x, "Save clip keybind unset"), o()(null != L, "Save screenshot keybind unset");
-  let U = (0, s.e7)([f.default], () => f.default.locale),
-    G = i.useMemo(() => [{
-      value: S.OT.SECONDS_30,
-      label: C.intl.formatToPlainString(C.t["bTFv/3"], {
+    M = (0, m.PP)();
+  o()(null != D, "Save clip keybind unset"), o()(null != x, "Save screenshot keybind unset");
+  let k = (0, s.e7)([d.default], () => d.default.locale),
+    U = i.useMemo(() => [{
+      id: "30sec",
+      value: v.OT.SECONDS_30,
+      label: T.intl.formatToPlainString(T.t["bTFv/3"], {
         count: 30
       })
     }, {
-      value: S.OT.MINUTES_1,
-      label: C.intl.formatToPlainString(C.t.ICo9Nk, {
+      id: "1min",
+      value: v.OT.MINUTES_1,
+      label: T.intl.formatToPlainString(T.t.ICo9Nk, {
         count: 1
       })
     }, {
-      value: S.OT.MINUTES_2,
-      label: C.intl.formatToPlainString(C.t.ICo9Nk, {
+      id: "2min",
+      value: v.OT.MINUTES_2,
+      label: T.intl.formatToPlainString(T.t.ICo9Nk, {
         count: 2
       })
-    }], [U]),
+    }], [k]),
+    G = i.useMemo(() => [{
+      id: "480p",
+      value: I.LY.RESOLUTION_480,
+      label: T.intl.formatToPlainString(T.t.TEOC0I, {
+        resolution: I.LY.RESOLUTION_480
+      })
+    }, {
+      id: "720p",
+      value: I.LY.RESOLUTION_720,
+      label: T.intl.formatToPlainString(T.t.TEOC0I, {
+        resolution: I.LY.RESOLUTION_720
+      })
+    }, {
+      id: "1080p",
+      value: I.LY.RESOLUTION_1080,
+      label: T.intl.formatToPlainString(T.t.TEOC0I, {
+        resolution: I.LY.RESOLUTION_1080
+      })
+    }, {
+      id: "1440p",
+      value: I.LY.RESOLUTION_1440,
+      label: T.intl.formatToPlainString(T.t.TEOC0I, {
+        resolution: I.LY.RESOLUTION_1440
+      })
+    }, {
+      id: "source",
+      value: I.LY.RESOLUTION_SOURCE,
+      label: T.intl.string(T.t.XjXqzh)
+    }], [k]),
     Z = i.useMemo(() => [{
-      value: T.LY.RESOLUTION_480,
-      label: C.intl.formatToPlainString(C.t.TEOC0I, {
-        resolution: T.LY.RESOLUTION_480
+      id: "15fps",
+      value: I.ws.FPS_15,
+      label: T.intl.formatToPlainString(T.t.Qb44XH, {
+        fps: I.ws.FPS_15
       })
     }, {
-      value: T.LY.RESOLUTION_720,
-      label: C.intl.formatToPlainString(C.t.TEOC0I, {
-        resolution: T.LY.RESOLUTION_720
+      id: "30fps",
+      value: I.ws.FPS_30,
+      label: T.intl.formatToPlainString(T.t.Qb44XH, {
+        fps: I.ws.FPS_30
       })
     }, {
-      value: T.LY.RESOLUTION_1080,
-      label: C.intl.formatToPlainString(C.t.TEOC0I, {
-        resolution: T.LY.RESOLUTION_1080
+      id: "60fps",
+      value: I.ws.FPS_60,
+      label: T.intl.formatToPlainString(T.t.Qb44XH, {
+        fps: I.ws.FPS_60
       })
-    }, {
-      value: T.LY.RESOLUTION_1440,
-      label: C.intl.formatToPlainString(C.t.TEOC0I, {
-        resolution: T.LY.RESOLUTION_1440
-      })
-    }, {
-      value: T.LY.RESOLUTION_SOURCE,
-      label: C.intl.string(C.t.XjXqzh)
-    }], [U]),
-    F = i.useMemo(() => [{
-      value: T.ws.FPS_15,
-      label: C.intl.formatToPlainString(C.t.Qb44XH, {
-        fps: T.ws.FPS_15
-      })
-    }, {
-      value: T.ws.FPS_30,
-      label: C.intl.formatToPlainString(C.t.Qb44XH, {
-        fps: T.ws.FPS_30
-      })
-    }, {
-      value: T.ws.FPS_60,
-      label: C.intl.formatToPlainString(C.t.Qb44XH, {
-        fps: T.ws.FPS_60
-      })
-    }], [U]),
+    }], [k]),
+    F = i.useCallback(e => {
+      c.Z.setKeybind(w(N({}, D), {
+        shortcut: e
+      }))
+    }, [D]),
     B = i.useCallback(e => {
-      u.Z.setKeybind(R(P({}, x), {
+      c.Z.setKeybind(w(N({}, x), {
         shortcut: e
       }))
-    }, [x]),
-    V = i.useCallback(e => {
-      u.Z.setKeybind(R(P({}, L), {
-        shortcut: e
-      }))
-    }, [L]);
-  return (0, r.jsxs)(c.C3N, {
-    children: [(0, r.jsx)(p.Z, {
-      children: C.intl.string(C.t["Z+MfqT"])
-    }), D === b.xH.BELOW_MINIMUM ? (0, r.jsx)(p.Z, {
-      look: p.z.WARNING,
-      children: C.intl.string(C.t.SIxrIF)
-    }) : null, (0, r.jsx)(c.rsf, {
-      label: C.intl.string(C.t.h8rgrK),
-      description: C.intl.string(C.t["4Qw3NO"]),
+    }, [x]);
+  return (0, r.jsxs)(l.C3N, {
+    children: [(0, r.jsx)(f.Z, {
+      children: T.intl.string(T.t["Z+MfqT"])
+    }), R === E.xH.BELOW_MINIMUM ? (0, r.jsx)(f.Z, {
+      look: f.z.WARNING,
+      children: T.intl.string(T.t.SIxrIF)
+    }) : null, (0, r.jsx)(l.rsf, {
+      label: T.intl.string(T.t.h8rgrK),
+      description: T.intl.string(T.t["4Qw3NO"]),
       checked: t,
-      onChange: e => v.em({
+      onChange: e => O.em({
         clipsEnabled: e,
         trackAnalytics: true
       })
-    }), n && j && (0, r.jsx)(r.Fragment, {
-      children: (0, r.jsx)(c.rsf, {
-        label: C.intl.string(C.t.yXvykv),
-        description: C.intl.string(C.t.YP3ujk),
+    }), n && L && (0, r.jsx)(r.Fragment, {
+      children: (0, r.jsx)(l.rsf, {
+        label: T.intl.string(T.t.yXvykv),
+        description: T.intl.string(T.t.YP3ujk),
         checked: e,
-        onChange: e => v._Q({
+        onChange: e => O._Q({
           enabled: e,
           trackAnalytics: true
         })
       })
-    }), M && (0, r.jsx)(c.rsf, {
-      label: C.intl.string(C.t["3zwNf6"]),
-      description: C.intl.string(C.t.m4Cjj9),
+    }), j && (0, r.jsx)(l.rsf, {
+      label: T.intl.string(T.t["3zwNf6"]),
+      description: T.intl.string(T.t.m4Cjj9),
       checked: a,
-      onChange: e => v.N0(e)
-    }), (0, r.jsx)(l.y6, {
-      onChange: v.eU,
-      label: C.intl.string(C.t.OgfUio),
-      description: C.intl.string(C.t.H7j4tY),
-      value: N,
-      options: G
-    }), (0, r.jsx)(l.y6, {
-      onChange: e => v.yi({
-        resolution: e,
-        frameRate: w.frameRate
-      }),
-      label: C.intl.string(C.t.aFudZJ),
-      description: C.intl.string(C.t.nIrkW5),
-      value: w.resolution,
-      options: Z
-    }), (0, r.jsx)(l.y6, {
-      onChange: e => v.yi({
-        resolution: w.resolution,
-        frameRate: e
-      }),
-      label: C.intl.string(C.t["2wScL1"]),
-      description: C.intl.string(C.t["Rf9+fy"]),
-      value: w.frameRate,
-      options: F
-    }), (0, r.jsx)(c.gNt, {
-      label: C.intl.string(C.t.pf54EU),
-      description: C.intl.string(C.t["QyB/jK"]),
+      onChange: e => O.N0(e)
+    }), (0, r.jsx)(l.PhF, {
+      onSelectionChange: O.eU,
+      label: T.intl.string(T.t.OgfUio),
+      description: T.intl.string(T.t.H7j4tY),
+      value: A,
+      options: U,
+      selectionMode: "single",
+      fullWidth: true
+    }), (0, r.jsx)(l.PhF, {
+      onSelectionChange: e => {
+        O.yi({
+          resolution: e,
+          frameRate: P.frameRate
+        })
+      },
+      label: T.intl.string(T.t.aFudZJ),
+      description: T.intl.string(T.t.nIrkW5),
+      value: P.resolution,
+      options: G,
+      selectionMode: "single",
+      fullWidth: true
+    }), (0, r.jsx)(l.PhF, {
+      onSelectionChange: e => {
+        O.yi({
+          resolution: P.resolution,
+          frameRate: e
+        })
+      },
+      label: T.intl.string(T.t["2wScL1"]),
+      description: T.intl.string(T.t["Rf9+fy"]),
+      value: P.frameRate,
+      options: Z,
+      selectionMode: "single",
+      fullWidth: true
+    }), (0, r.jsx)(l.gNt, {
+      label: T.intl.string(T.t.pf54EU),
+      description: T.intl.string(T.t["QyB/jK"]),
       layout: "horizontal",
       children: (0, r.jsx)("div", {
-        className: A.keyRecorder,
-        children: (0, r.jsx)(d.Z, {
-          defaultValue: x.shortcut,
-          onChange: B
+        className: C.keyRecorder,
+        children: (0, r.jsx)(u.Z, {
+          defaultValue: D.shortcut,
+          onChange: F
         })
       })
-    }), k && (0, r.jsx)(c.gNt, {
-      label: C.intl.string(C.t["0U/hj7"]),
-      description: C.intl.string(C.t["5zxkdo"]),
+    }), M && (0, r.jsx)(l.gNt, {
+      label: T.intl.string(T.t["0U/hj7"]),
+      description: T.intl.string(T.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, r.jsx)("div", {
-        className: A.keyRecorder,
-        children: (0, r.jsx)(d.Z, {
-          defaultValue: L.shortcut,
-          onChange: V
+        className: C.keyRecorder,
+        children: (0, r.jsx)(u.Z, {
+          defaultValue: x.shortcut,
+          onChange: B
         })
       })
     })]

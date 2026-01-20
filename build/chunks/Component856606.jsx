@@ -106,12 +106,12 @@ let $ = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
 function ee(e) {
   let {
     overwrite: t
-  } = e, n = (0, u.e7)([I.Z], () => I.Z.channel), l = (0, u.e7)([A.Z], () => null != n ? A.Z.getGuild(n.getGuildId()) : null), r = (0, u.e7)([M.Z], () => null != l && null != t && t.type === y.BN.ROLE ? M.Z.getRole(l.id, t.id) : true), a = N.N.useExperiment({
+  } = e, n = (0, u.e7)([I.Z], () => I.Z.channel), l = (0, u.e7)([A.Z], () => null != n ? A.Z.getGuild(n.getGuildId()) : null), r = (0, u.e7)([L.Z], () => null != l && null != t && t.type === y.BN.ROLE ? L.Z.getRole(l.id, t.id) : true), a = N.N.useExperiment({
     guildId: null == n ? true : n.guild_id,
     location: "ChannelSettingsPermissions"
   }).enabled, {
     enabled: s
-  } = Z.Z.useExperiment({
+  } = O.Z.useExperiment({
     location: "ChannelSettingsPermissionsContent",
     guildId: null == n ? true : n.guild_id
   });
@@ -152,7 +152,7 @@ function ee(e) {
       } else if (t.type === y.BN.ROLE) {
         let i = A.Z.getGuild(n.getGuildId());
         if (null != i) {
-          let n = M.Z.getRole(i.id, t.id);
+          let n = L.Z.getRole(i.id, t.id);
           null != n && (e = n.name)
         }
       }
@@ -161,13 +161,13 @@ function ee(e) {
   }, m = e => {
     let t = _.Z.can(Y.Plq.ADMINISTRATOR, l) || _.Z.can(Y.Plq.MANAGE_ROLES, n, true, true, true);
     return n.isGuildStageVoice() && w.xS.has(e) ? q.intl.string(q.t.bTS5lf) : !((!c.fS(e, Y.Plq.MANAGE_ROLES) || t) && (null == e || _.Z.can(e, l) || t)) && q.intl.string(q.t.nOtPMM)
-  }, j = t.id === o, v = n.isForumLikeChannel() && c.e$(t.deny, Y.Plq.SEND_MESSAGES), C = c.e$(t.deny, Y.Plq.SEND_MESSAGES), O = c.e$(t.deny, Y.Plq.READ_MESSAGE_HISTORY), T = V.Z.generateChannelPermissionSpec(o, n, j, {
+  }, j = t.id === o, v = n.isForumLikeChannel() && c.e$(t.deny, Y.Plq.SEND_MESSAGES), C = c.e$(t.deny, Y.Plq.SEND_MESSAGES), S = c.e$(t.deny, Y.Plq.READ_MESSAGE_HISTORY), T = G.Z.generateChannelPermissionSpec(o, n, j, {
     createPostsDisabled: v,
     sendMessagesDisabled: C,
-    readMessageHistoryDisabled: O,
+    readMessageHistoryDisabled: S,
     inGameMentionsExperiment: a
   });
-  return (0, i.jsxs)(S.ZP.Content, {
+  return (0, i.jsxs)(Z.ZP.Content, {
     className: J.layoutStyle,
     children: [T.map((e, n) => (0, i.jsx)(E.Z, {
       spec: e,
@@ -203,7 +203,7 @@ function et(e) {
     guildId: t,
     channelId: n,
     user: l
-  } = e, r = l.getAvatarURL(t, 32), s = G.ZP.getNickname(t, n, l), o = F.ZP.useUserTag(l), c = null, d = null;
+  } = e, r = l.getAvatarURL(t, 32), s = V.ZP.getNickname(t, n, l), o = F.ZP.useUserTag(l), c = null, d = null;
   return c = null != s ? s : l.hasAvatarForGuild(t) ? l.username : o, (null != s || l.hasAvatarForGuild(t)) && (d = (0, i.jsxs)("div", {
     className: J.userRowSubText,
     children: [l.hasAvatarForGuild(t) ? (0, i.jsx)(f.qEK, {
@@ -245,7 +245,7 @@ function ei(e) {
     permissionOverwrites: r,
     onClose: s,
     onSelect: c
-  } = e, h = (0, u.e7)([M.Z], () => M.Z.getSortedRoles(t.id)), m = (0, u.Wu)([L.ZP], () => L.ZP.getMemberIds(t.id)), p = l.useMemo(() => [...h.filter(e => null == r[e.id]), ...o()(m).map(D.default.getUser).filter(k.lm).filter(e => null == r[e.id]).sortBy(e => e.username.toLowerCase()).value()], [m, r, h]);
+  } = e, h = (0, u.e7)([L.Z], () => L.Z.getSortedRoles(t.id)), m = (0, u.Wu)([M.ZP], () => M.ZP.getMemberIds(t.id)), p = l.useMemo(() => [...h.filter(e => null == r[e.id]), ...o()(m).map(D.default.getUser).filter(k.lm).filter(e => null == r[e.id]).sortBy(e => e.username.toLowerCase()).value()], [m, r, h]);
   return (0, i.jsx)(d.VqE, {
     className: J.createOverwritePopout,
     children: (0, i.jsxs)(g.uz, {
@@ -317,9 +317,9 @@ function el() {
     {
       guild: c,
       sortedGuildRoles: d
-    } = (0, u.cj)([A.Z, M.Z], () => {
+    } = (0, u.cj)([A.Z, L.Z], () => {
       let e = null != s ? A.Z.getGuild(s) : true,
-        t = null != e ? M.Z.getSortedRoles(e.id) : true;
+        t = null != e ? L.Z.getSortedRoles(e.id) : true;
       return {
         guild: e,
         sortedGuildRoles: t
@@ -327,7 +327,7 @@ function el() {
     }, [s]),
     h = (0, z.Z)(s, r),
     g = (0, C.ZP)(),
-    Z = (0, u.e7)([O.Z], () => O.Z.roleStyle),
+    O = (0, u.e7)([S.Z], () => S.Z.roleStyle),
     N = l.useCallback((e, l) => {
       if (null == t) return null;
       (0, j.jW)(e, async () => {
@@ -383,7 +383,7 @@ function el() {
       return (null == (t = r[e.id]) ? true : t.type) === y.BN.ROLE
     }).map(e => (0, i.jsx)(v.Z, {
       theme: g,
-      roleStyle: Z,
+      roleStyle: O,
       id: e.id,
       role: e,
       guild: c,
@@ -402,7 +402,7 @@ function el() {
         id: e.id,
         guild: c,
         theme: g,
-        roleStyle: Z,
+        roleStyle: O,
         "aria-label": F.ZP.getUserTag(e, {
           decoration: "never"
         }),
@@ -424,7 +424,7 @@ function el() {
         })
       }, "".concat(a, "-").concat(e.id))
     }).value();
-  return (0, i.jsx)(S.ZP.Sidebar, {
+  return (0, i.jsx)(Z.ZP.Sidebar, {
     className: J.layoutStyle,
     scrollable: true,
     children: (0, i.jsxs)(f.njP, {
@@ -482,7 +482,7 @@ function er() {
   } = (0, u.cj)([I.Z], () => I.Z);
   if (null == (0, u.e7)([A.Z], () => null != e ? A.Z.getGuild(e.getGuildId()) : null) || null == e || null == t || null == n) return null;
   let l = t[n];
-  return (0, i.jsxs)(S.ZP, {
+  return (0, i.jsxs)(Z.ZP, {
     className: J.container,
     children: [(0, i.jsx)(el, {}), (0, i.jsx)(ee, {
       overwrite: l

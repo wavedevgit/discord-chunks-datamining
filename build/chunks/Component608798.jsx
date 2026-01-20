@@ -75,7 +75,7 @@ let v = function(e) {
     "aria-label": E.intl.string(E.t.ljnBlo),
     children: (0, r.jsxs)(f.uz, {
       selectionMode: "single",
-      value: null,
+      value: true,
       onSelectionChange: e => {
         null != e && (c(e), y())
       },

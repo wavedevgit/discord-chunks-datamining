@@ -149,8 +149,8 @@ function L(e) {
       if ("multiple" === d && t.length < 1) m([]);
       else if ("multiple" === d) m(t.map(e => e.value));
       else {
-        var n, r;
-        m(null != (r = null == (n = t[0]) ? true : n.value) ? r : null)
+        var n;
+        m(null == (n = t[0]) ? true : n.value)
       }
       _ && o && (null == l || l(false)), P(false)
     }, [V, d, m, _, o, l, v]),
@@ -190,7 +190,7 @@ function j(e) {
     fieldProps: a,
     props: o
   } = (0, c.X)(n), s = (0, m.dQu)(_.Z.modules.select.MAX_WIDTH), l = i.useMemo(() => ({
-    horizontalControlColumnWidth: "minmax(".concat(s, ", auto)")
+    horizontalControlColumnWidth: "minmax(".concat(s, "px, auto)")
   }), [s]);
   return (0, r.jsx)(c.g, w(N({}, a), {
     "data-mana-component": "combobox",
@@ -246,8 +246,8 @@ function M(e) {
     K || null == $ || $(!J)
   }, [K, J, $]), eu = i.useCallback(() => {
     var e;
-    "multiple" === U ? X([]) : X(null), ei(""), null == (e = x.current) || e.focus()
-  }, [X, U, ei]), ed = i.useCallback(e => {
+    true === B && ("multiple" === U ? X([]) : X(null), ei(""), null == (e = x.current) || e.focus())
+  }, [X, U, B, ei]), ed = i.useCallback(e => {
     var t, n, r;
     eo(true), null == m || m(e), null == (t = x.current) || t.setSelectionRange(null != (n = null == er ? true : er.length) ? n : 0, null != (r = null == er ? true : er.length) ? r : 0)
   }, [m, eo, er]), ef = i.useCallback(() => {
@@ -281,7 +281,7 @@ function M(e) {
     eg = i.useCallback(e => {
       let t = en.length,
         n = 1;
-      switch (e.key) {
+      switch (null == A || A(e), e.key) {
         case "ArrowDown":
         case "PageDown":
           if (n = "PageDown" === e.key ? 10 : 1, 0 === t || (e.preventDefault(), null == $ || $(true), e.altKey || !J)) return;
@@ -324,7 +324,6 @@ function M(e) {
           if (e.preventDefault(), 0 === t) return;
           k(t - 1)
       }
-      null == A || A(e)
     }, [U, V, B, q, W, J, A, eu, Q, et, er, $, en, M, k]),
     eE = i.useCallback(e => {
       eo(true), ei(e.target.value), null == $ || $(true), null == _ || _(e), k(null)

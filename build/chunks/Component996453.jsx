@@ -29,7 +29,7 @@ function C(e) {
     isSlideReady: h,
     hasFooter: L = true,
     isCommunity: v = false
-  } = e, [y, Z] = a.useState(u.Z.getGuildNameSuggestion()), [O, I] = a.useState(null), [S, T] = a.useState(false), [N, _] = a.useState(null), E = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [H, M] = a.useState(E), G = (0, c.Dt)(), w = a.useRef(null);
+  } = e, [y, Z] = a.useState(u.Z.getGuildNameSuggestion()), [O, S] = a.useState(null), [I, T] = a.useState(false), [N, _] = a.useState(null), E = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [H, M] = a.useState(E), G = (0, c.Dt)(), w = a.useRef(null);
   a.useEffect(() => {
     var e;
     h && (null == (e = w.current) || e.focus())
@@ -49,13 +49,13 @@ function C(e) {
         T(false)
       }
     }, [n, p, y, O, v, H, b]),
-    U = (0, i.jsxs)(i.Fragment, {
+    P = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.Button, {
         variant: "primary",
         text: null != p ? x.intl.string(x.t.PDTjLN) : x.intl.string(x.t.CumH4u),
         onClick: k,
         disabled: 0 === y.length,
-        loading: S
+        loading: I
       }), (0, i.jsx)(l.Avr, {
         size: "sm",
         variant: "secondary",
@@ -91,7 +91,7 @@ function C(e) {
           className: g.uploadIcon,
           children: (0, i.jsx)(s.Z, {
             icon: O,
-            onChange: I
+            onChange: S
           })
         }), (0, i.jsx)("form", {
           onSubmit: k,
@@ -127,10 +127,10 @@ function C(e) {
       }), L && (0, i.jsx)(l.mzw, {
         "data-migration-pending": true,
         className: g.footer,
-        children: U
+        children: P
       })]
     }),
-    footer: U
+    footer: P
   }
 }
 

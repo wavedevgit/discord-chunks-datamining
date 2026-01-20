@@ -9,8 +9,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s() {
-  return l.useEffect(() => {
-    i.isPlatformEmbedded || (0, r.EM)({
+  return i.useEffect(() => {
+    r.isPlatformEmbedded || (0, l.EM)({
       messages: [a.intl.string(a.t.KIX3cl), a.intl.string(a.t["UbO+8i"]), a.intl.string(a.t.MbySu9)],
       interval: 600,
       count: 20,

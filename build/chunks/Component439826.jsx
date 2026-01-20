@@ -65,8 +65,8 @@ function A(e) {
     ref: d,
     height: p = 0
   } = (0, m.ZP)([i]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, f = (0, g.z)(n), {
-    type: x,
-    hints: b
+    type: b,
+    hints: x
   } = r.useMemo(() => h || f ? {
     type: 2,
     hints: []
@@ -79,11 +79,11 @@ function A(e) {
   } : {
     type: 2,
     hints: []
-  }, [i, h, f, l]), v = 2 !== x, j = (0, u.q_F)({
+  }, [i, h, f, l]), v = 2 !== b, j = (0, u.q_F)({
     opacity: +!!v,
     height: v ? p : 0,
     config: P.Y
-  }), y = 0 === x ? u.Mgn : u.d3s, _ = u.TVs.unsafe_rawColors.RED_345.css, S = 0 === x ? _ : o ? u.TVs.colors.TEXT_DEFAULT : u.TVs.colors.WHITE;
+  }), y = 0 === b ? u.Mgn : u.d3s, _ = u.TVs.unsafe_rawColors.RED_345.css, S = 0 === b ? _ : o ? u.TVs.colors.TEXT_DEFAULT : u.TVs.colors.WHITE;
   return (0, a.jsx)(s.animated.div, {
     style: j,
     children: (0, a.jsxs)("div", {
@@ -97,9 +97,9 @@ function A(e) {
         }), (0, a.jsx)(u.Text, {
           variant: "text-xs/medium",
           color: o ? "text-muted" : "always-white",
-          children: b.at(0)
+          children: x.at(0)
         })]
-      }), 0 === x && (0, a.jsx)(u.Avr, {
+      }), 0 === b && (0, a.jsx)(u.Avr, {
         text: I.intl.string(I.t["yKJi+/"]),
         onClick: () => (0, C.y)({
           quest: n,
@@ -120,24 +120,24 @@ function Z(e) {
     isHovering: P,
     errorHints: Z,
     warningHints: D,
-    isVisibleInViewport: L,
-    onCtxMenuClose: M,
+    isVisibleInViewport: M,
+    onCtxMenuClose: L,
     onCtxMenuOpen: U,
     onCtxMenuSelect: B,
     sourceQuestContent: F
-  } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), z = ((0, d.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, W = (0, g.tP)(C), H = (null == (t = C.userStatus) ? true : t.claimedAt) != null, q = (0, g.B6)(C.config.expiresAt, {
+  } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), W = ((0, d.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, z = (0, g.tP)(C), H = (null == (t = C.userStatus) ? true : t.claimedAt) != null, q = (0, g.B6)(C.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), K = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Q = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
     onAssetLoadComplete: Y
-  } = r.useContext(O.k), X = z ? "text-muted" : "always-white", J = r.useCallback(() => {
+  } = r.useContext(O.k), X = W ? "text-muted" : "always-white", J = r.useCallback(() => {
     G && (0, T.openVideoQuestModal)({
       quest: C,
-      questContent: b.jn.QUEST_HOME_DESKTOP,
+      questContent: x.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: F,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })
-  }, [G, C, F]), $ = (0, o.e7)([x.Z], () => x.Z.getQuestHomeTakeoverConfig()), ee = r.useMemo(() => null != $ && (0, y.P9)($, C.id), [$, C.id]);
+  }, [G, C, F]), $ = (0, o.e7)([b.Z], () => b.Z.getQuestHomeTakeoverConfig()), ee = r.useMemo(() => null != $ && (0, y.P9)($, C.id), [$, C.id]);
   return (0, a.jsxs)("div", {
     className: k.container,
     children: [(0, a.jsx)("div", {
@@ -145,7 +145,7 @@ function Z(e) {
       children: (0, a.jsx)(_.Z, {
         quest: C,
         isInteracting: P,
-        hideAssets: !L,
+        hideAssets: !M,
         imageSize: {
           width: 1320,
           height: 370
@@ -191,9 +191,9 @@ function Z(e) {
             })
           }), (0, a.jsx)(S.i, {
             onOpen: U,
-            onClose: M,
+            onClose: L,
             onSelect: B,
-            questContent: b.jn.QUEST_HOME_DESKTOP,
+            questContent: x.jn.QUEST_HOME_DESKTOP,
             quest: C,
             hideLearnMore: true,
             shouldShowDisclosure: true,
@@ -239,7 +239,7 @@ function Z(e) {
             }
           })]
         }), (0, a.jsx)(N.E, {
-          showPlaceholder: !L,
+          showPlaceholder: !M,
           width: 100,
           height: 30,
           className: k.partnerBranding,
@@ -275,7 +275,7 @@ function Z(e) {
               color: "always-white",
               children: null != (m = null == (s = C.config.cosponsorMetadata) ? true : s.name) ? m : C.config.messages.gamePublisher
             })]
-          }), W || H ? null : (0, a.jsx)(u.Text, {
+          }), z || H ? null : (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: X,
             children: I.intl.format(I.t["7D8r4F"], {
@@ -287,7 +287,7 @@ function Z(e) {
         quest: C,
         errorHints: Z,
         warningHints: D,
-        isDarkTheme: z,
+        isDarkTheme: W,
         sourceQuestContent: F
       })]
     })]

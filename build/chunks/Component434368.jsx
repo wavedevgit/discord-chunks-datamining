@@ -53,20 +53,20 @@ function g(e) {
   let {
     guildId: t,
     onClose: n
-  } = e, i = (0, a.e7)([d.Z], () => d.Z.getSearchStateByGuildId(t), [t], o()), g = (0, u.dW)(t), j = l.useCallback(() => {
-    i.requireUnusualDmActivity || g(u.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(p({}, i), {
+  } = e, i = (0, a.e7)([u.Z], () => u.Z.getSearchStateByGuildId(t), [t], o()), g = (0, d.dW)(t), j = l.useCallback(() => {
+    i.requireUnusualDmActivity || g(d.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(p({}, i), {
       requireUnusualDmActivity: !i.requireUnusualDmActivity
     }))
   }, [t, i, g]), x = l.useCallback(() => {
-    i.requireCommunicationDisabled || g(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(p({}, i), {
+    i.requireCommunicationDisabled || g(d.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(p({}, i), {
       requireCommunicationDisabled: !i.requireCommunicationDisabled
     }))
   }, [t, i, g]), v = l.useCallback(() => {
-    i.requireUnusualAccountActivity || g(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(p({}, i), {
+    i.requireUnusualAccountActivity || g(d.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(p({}, i), {
       requireUnusualAccountActivity: !i.requireUnusualAccountActivity
     }))
-  }, [t, i, g]), y = l.useCallback(() => {
-    i.requireUsernameQuarantined || g(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(p({}, i), {
+  }, [t, i, g]), O = l.useCallback(() => {
+    i.requireUsernameQuarantined || g(d.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(p({}, i), {
       requireUsernameQuarantined: !i.requireUsernameQuarantined
     }))
   }, [t, i, g]);
@@ -129,7 +129,7 @@ function g(e) {
               className: f.quarantinedLabelIcon
             }), b.intl.string(b.t.Jloklk)]
           }),
-          action: y,
+          action: O,
           checked: i.requireUsernameQuarantined
         })]
       })]

@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 713388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./642613.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ function h(e) {
     setting: n,
     depth: i,
     highlightMode: l
-  } = e, s = null == (t = r.useContext(x)) ? true : t.get(n), o = null;
+  } = e, s = null == (t = r.useContext(b)) ? true : t.get(n), o = null;
   return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(h, {
     setting: e,
     depth: i + 1,
@@ -65,8 +65,8 @@ function f(e) {
     }
   }(t, r), l = "migrated" === i ? "migrated" : true, o = null;
   if ((0, s.Lk)(t)) {
-    var d, u, x;
-    let e = null == (x = t.parent) || null == (u = x.parent) || null == (d = u.getLegacySearchKey) ? true : d.call(u);
+    var d, u, b;
+    let e = null == (b = t.parent) || null == (u = b.parent) || null == (d = u.getLegacySearchKey) ? true : d.call(u);
     0 === t.layout.length && null != e ? o = (0, a.jsx)(h, {
       setting: e,
       depth: n + 1,
@@ -84,9 +84,9 @@ function f(e) {
     children: o
   })
 }
-let x = Chunk473749.createContext(null);
+let b = Chunk473749.createContext(null);
 
-function b() {
+function x() {
   let [e, t] = r.useState(false), {
     legacySettingDirectory: n
   } = (0, d.q)(), {
@@ -103,7 +103,7 @@ function b() {
       checked: e,
       onChange: e => t(e),
       label: "Show Legacy Settings Tree"
-    }), (0, a.jsx)(x.Provider, {
+    }), (0, a.jsx)(b.Provider, {
       value: n,
       children: (0, a.jsxs)("div", {
         className: u.tree,

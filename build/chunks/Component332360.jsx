@@ -50,7 +50,8 @@ let E = () => {
         serialize: e => e,
         select: a,
         isSelected: e => e === (null == t ? true : t.id),
-        options: u
+        options: u,
+        "data-migration-pending": true
       }) : (0, r.jsx)(p.I, {
         userId: e[0],
         avatarSize: l.EFr.SIZE_24,

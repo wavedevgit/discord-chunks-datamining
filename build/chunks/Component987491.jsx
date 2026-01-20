@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 987491, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => L
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,13 +40,13 @@ function A(e) {
   } = e;
   switch (r) {
     case h.wB.REJECTED:
-      t = P.t["7YSJ6f"], n = P.t.i05OUR;
+      t = _.t["7YSJ6f"], n = _.t.i05OUR;
       break;
     case h.wB.APPROVED:
-      t = P.t.bv82GS, n = P.t.D4OUHT;
+      t = _.t.bv82GS, n = _.t.D4OUHT;
       break;
     default:
-      t = P.t["/wqiSv"], n = P.t.o47YZs
+      t = _.t["/wqiSv"], n = _.t.o47YZs
   }
   return (0, l.jsxs)("div", {
     className: I.emptyContainer,
@@ -56,11 +56,11 @@ function A(e) {
       className: I.checkmark
     }), (0, l.jsx)(u.Heading, {
       variant: "heading-md/medium",
-      children: P.intl.string(t)
+      children: _.intl.string(t)
     }), (0, l.jsx)(u.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
-      children: P.intl.string(n)
+      children: _.intl.string(n)
     })]
   })
 }
@@ -78,7 +78,7 @@ function Z(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-text-default",
-          children: P.intl.string(P.t.Es7n9c)
+          children: _.intl.string(_.t.Es7n9c)
         })
       }), (0, l.jsx)("th", {
         className: i()(I.headerCell, w.mediumCol),
@@ -88,7 +88,7 @@ function Z(e) {
           children: [(0, l.jsx)(u.Text, {
             variant: "eyebrow",
             color: "interactive-text-default",
-            children: P.intl.string(P.t.EZ5QWL)
+            children: _.intl.string(_.t.EZ5QWL)
           }), t === h.Nw.TIMESTAMP_ASC ? (0, l.jsx)(S.Z, {
             className: I.sortIcon,
             direction: S.Z.Directions.UP
@@ -102,7 +102,7 @@ function Z(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-text-default",
-          children: P.intl.string(P.t["5Q9xGr"])
+          children: _.intl.string(_.t["5Q9xGr"])
         })
       })]
     })
@@ -156,7 +156,7 @@ let M = Chunk473749.memo(function(e) {
           children: (0, l.jsx)(u.P3F, {
             onClick: o,
             tag: "span",
-            children: _.ZP.getUserTag(n)
+            children: P.ZP.getUserTag(n)
           })
         })
       })]
@@ -193,7 +193,7 @@ let M = Chunk473749.memo(function(e) {
       }), (0, l.jsx)("td", {
         className: I.moreOptionsCol,
         children: v && (0, l.jsx)(d.u, {
-          text: P.intl.string(P.t.x8Nn4M),
+          text: _.intl.string(_.t.x8Nn4M),
           children: (0, l.jsx)(u.P3F, {
             onClick: e => {
               (0, m.jW)(e, async () => {
@@ -293,7 +293,7 @@ let M = Chunk473749.memo(function(e) {
     })
   };
 
-function G(e) {
+function L(e) {
   let {
     guildId: t,
     currentTab: n

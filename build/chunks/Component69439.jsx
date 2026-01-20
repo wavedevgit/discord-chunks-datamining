@@ -85,23 +85,23 @@ function w(e) {
     onReceiveErrorHints: A,
     contentPosition: Z,
     rowIndex: D,
-    sourceQuestContent: L
-  } = e, M = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, y.g2)({
-    useReducedMotion: M
-  }), B = (0, m.O5)(), F = (0, b._s)({
+    sourceQuestContent: M
+  } = e, L = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, y.g2)({
+    useReducedMotion: L
+  }), B = (0, m.O5)(), F = (0, x._s)({
     quest: k
-  }), G = (0, b.z)(k), V = (0, b.B6)(k.config.expiresAt, {
+  }), G = (0, x.z)(k), V = (0, x.B6)(k.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
-    isClaiming: z,
-    isEnrolling: W,
+    isClaiming: W,
+    isEnrolling: z,
     isQuestEnrollmentBlocked: H
   } = (0, i.cj)([p.Z], () => ({
     isClaiming: p.Z.isClaimingReward(k.id) || p.Z.isFetchingRewardCode(k.id),
     isEnrolling: p.Z.isEnrolling(k.id),
     isQuestEnrollmentBlocked: null != p.Z.questEnrollmentBlockedUntil
-  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, K = (null == (n = k.userStatus) ? true : n.completedAt) != null, Q = K && (null == (w = k.userStatus) ? true : w.claimedAt) == null, Y = (0, g.iQ)(k), X = !(0, g.zi)(k), J = (0, b._Q)(k), $ = (0, v.PB)(k), ee = (0, v.HJ)(k), et = (0, v.Vl)(k), en = (0, b.Rf)(k), [ea, er, ei] = (0, b.me)(k, en), el = X && J === b.OH.ACCEPTED, es = el && ea === h.LI.SELECT, eo = el && !es && er.length > 1, ec = f.Cx.useConfig({
+  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, K = (null == (n = k.userStatus) ? true : n.completedAt) != null, Q = K && (null == (w = k.userStatus) ? true : w.claimedAt) == null, Y = (0, g.iQ)(k), X = !(0, g.zi)(k), J = (0, x._Q)(k), $ = (0, v.PB)(k), ee = (0, v.HJ)(k), et = (0, v.Vl)(k), en = (0, x.Rf)(k), [ea, er, ei] = (0, x.me)(k, en), el = X && J === x.OH.ACCEPTED, es = el && ea === h.LI.SELECT, eo = el && !es && er.length > 1, ec = f.Cx.useConfig({
     location: S.dr.QUEST_HOME_DESKTOP
   }).enabled, ed = r.useCallback(e => {
     ei(e), e === S.cd.DESKTOP && A([])
@@ -117,11 +117,11 @@ function w(e) {
     inGiftInventory: true,
     isVideoQuest: $,
     inGameQuest: et,
-    sourceQuestContent: L
+    sourceQuestContent: M
   }), {
     startingConsoleQuest: ep,
     startConsoleQuest: eh
-  } = (0, b.GI)({
+  } = (0, x.GI)({
     questId: k.id,
     beforeRequest: () => {
       U.startAnimation(), B({
@@ -130,15 +130,15 @@ function w(e) {
         questContentCTA: m.jZ.DEFIBRILLATOR,
         questContentPosition: Z,
         questContentRowIndex: D,
-        sourceQuestContent: L
+        sourceQuestContent: M
       })
     },
     afterRequest: e => {
       U.stopAnimation(), A(e)
     }
   }), ef = (null == (I = k.userStatus) ? true : I.claimedAt) != null, {
-    launchInGameActivity: ex
-  } = (0, b.zB)(k), eb = (0, x.CR)({
+    launchInGameActivity: eb
+  } = (0, x.zB)(k), ex = (0, b.CR)({
     quest: k,
     shortText: true
   }), eg = null;
@@ -146,7 +146,7 @@ function w(e) {
     className: T.button,
     children: (0, a.jsx)(s.zxk, {
       variant: "primary",
-      loading: z,
+      loading: W,
       onClick: null != em ? em : true,
       text: eu,
       fullWidth: true
@@ -162,7 +162,7 @@ function w(e) {
         (0, _.openVideoQuestModal)({
           quest: k,
           questContent: R,
-          sourceQuestContent: L,
+          sourceQuestContent: M,
           sourceQuestContentCTA: m.jZ.WATCH_VIDEO,
           skipEnrollmentCheck: true
         })
@@ -178,9 +178,9 @@ function w(e) {
     children: [(0, a.jsx)(s.zxk, {
       variant: "secondary",
       icon: k.config.features.includes(S.S7.CLOUD_GAMING_ACTIVITY) ? c.v3n : c.iWm,
-      text: eb,
+      text: ex,
       onClick: () => {
-        ex()
+        eb()
       }
     }), (0, a.jsx)(s.zxk, {
       variant: "primary",
@@ -199,7 +199,7 @@ function w(e) {
     className: T.button,
     children: (0, a.jsx)(s.zxk, {
       variant: "primary",
-      loading: z,
+      loading: W,
       onClick: null != em ? em : true,
       text: eu,
       fullWidth: true
@@ -209,14 +209,14 @@ function w(e) {
     children: (0, a.jsx)(C.Z, {
       quest: k,
       analyticsCtxQuestContent: R,
-      analyticsCtxSourceQuestContent: L,
+      analyticsCtxSourceQuestContent: M,
       analyticsCtxQuestContentPosition: Z
     })
   }) : (0, a.jsx)("div", {
     className: T.button,
     children: (0, a.jsx)(s.zxk, {
       variant: "primary",
-      loading: W,
+      loading: z,
       onClick: null != em ? em : true,
       text: eu,
       fullWidth: true
@@ -239,7 +239,8 @@ function w(e) {
           return (0, u.vE)(e)
       }
     },
-    size: "sm"
+    size: "sm",
+    "data-migration-pending": true
   }) : (0, v.$J)(k) && !G && ea !== h.LI.DESKTOP ? F ? (0, a.jsx)("div", {
     className: T.button,
     children: (0, a.jsx)(s.zxk, {
@@ -292,7 +293,7 @@ function w(e) {
       text: E.intl.string(E.t.V293qn)
     }), (0, a.jsx)(s.zxk, {
       variant: "primary",
-      onClick: () => (0, _.openQuestMinorEnrollmentBlockModal)(k, R, L),
+      onClick: () => (0, _.openQuestMinorEnrollmentBlockModal)(k, R, M),
       text: E.intl.string(E.t.vY9GgG)
     })]
   }) : (0, a.jsx)("div", {
@@ -300,10 +301,10 @@ function w(e) {
     children: ec ? (0, a.jsx)(C.Z, {
       quest: k,
       analyticsCtxQuestContent: R,
-      analyticsCtxSourceQuestContent: L,
+      analyticsCtxSourceQuestContent: M,
       analyticsCtxQuestContentPosition: Z
     }) : (0, a.jsx)(s.zxk, {
-      loading: W,
+      loading: z,
       variant: "primary",
       onClick: null != em ? em : true,
       text: eu,
@@ -352,7 +353,8 @@ function w(e) {
               return E.intl.string(E.t["8lAfuB"])
           }
         },
-        size: "sm"
+        size: "sm",
+        "data-migration-pending": true
       })
     })]
   })

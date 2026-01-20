@@ -27,11 +27,11 @@ function f(e) {
     notifType: m
   } = function(e, t) {
     if (t.type === d.nc.NEWS) {
-      var n, i, r, s, o, l, a, c;
+      var n, i, r, s, o, a, l, c;
       return {
         icon: null != (o = null == (n = t.news) ? true : n.icon) ? o : e.icon,
-        title: null != (l = null == (i = t.news) ? true : i.title) ? l : e.title,
-        body: null != (a = null == (r = t.news) ? true : r.body) ? a : e.body,
+        title: null != (a = null == (i = t.news) ? true : i.title) ? a : e.title,
+        body: null != (l = null == (r = t.news) ? true : r.body) ? l : e.body,
         hint: null != (c = null == (s = t.news) ? true : s.hint) ? c : e.hint,
         notifType: null != t.news ? d.n0.NewsNudge : e.notifType
       }
@@ -65,7 +65,7 @@ function f(e) {
       b()
     },
     onNotificationClick: (e, n) => {
-      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, l.getPID)()) ? r.Z.setInputLocked(false, (0, l.getPID)()) : a.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
       y("dismiss")

@@ -1,11 +1,10 @@
 /** Chunk was on 18912 **/
 /** chunk id: 340140, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk538211 = require("./538211.js"),
@@ -21,40 +20,41 @@ function d(t, n, e) {
     writable: true
   }) : t[n] = e, t
 }
-class g extends Chunk473749.PureComponent {
+class b extends Chunk473749.PureComponent {
   render() {
     let {
       isStreamer: t,
       transitionState: n,
       onClose: e
     } = this.props, {
-      problem: r
+      problem: l
     } = this.state;
-    return (0, l.jsxs)(a.u_l, {
-      title: b.intl.string(b.t.qnJ9W3),
-      subtitle: b.intl.string(b.t["7vw0h+"]),
+    return (0, i.jsxs)(r.u_l, {
+      title: c.intl.string(c.t.qnJ9W3),
+      subtitle: c.intl.string(c.t["7vw0h+"]),
       actions: [{
-        text: b.intl.string(b.t["ETE/oC"]),
+        text: c.intl.string(c.t["ETE/oC"]),
         variant: "secondary",
         onClick: e
       }, {
-        text: b.intl.string(b.t.E48BIc),
+        text: c.intl.string(c.t.E48BIc),
         variant: "primary",
         onClick: this.handleSubmit,
-        disabled: null == r
+        disabled: null == l
       }],
       onClose: e,
       transitionState: n,
-      children: [(0, l.jsx)(c.Z, {}), (0, l.jsx)(i.y6, {
-        label: b.intl.string(b.t["6Y1t5P"]),
-        placeholder: b.intl.string(b.t.U0kGk6),
-        options: (0, o.Z)({
+      children: [(0, i.jsx)(u.Z, {}), (0, i.jsx)(a.PhF, {
+        selectionMode: "single",
+        label: c.intl.string(c.t["6Y1t5P"]),
+        placeholder: c.intl.string(c.t.U0kGk6),
+        options: (0, s.Z)({
           isStreamer: t,
           isEndStream: false
         }),
-        onChange: this.handleChanged,
-        value: r,
-        maxVisibleItems: 4
+        onSelectionChange: this.handleChanged,
+        value: l,
+        maxOptionsVisible: 4
       })]
     })
   }
@@ -69,38 +69,38 @@ class g extends Chunk473749.PureComponent {
       let {
         stream: t,
         streamApplication: n,
-        analyticsData: r,
-        onClose: i
+        analyticsData: l,
+        onClose: r
       } = this.props, {
-        problem: a
+        problem: s
       } = this.state;
-      (0, u.Z)({
-        problem: a,
+      (0, o.Z)({
+        problem: s,
         stream: t,
         feedback: "",
         streamApplication: n,
-        analyticsData: r,
+        analyticsData: l,
         location: "Stream"
-      }), i(), (0, s.ZDy)(async () => {
+      }), r(), (0, a.ZDy)(async () => {
         let {
           default: t
         } = await e.e("14466").then(e.bind(e, 729328));
-        return n => (0, l.jsx)(t, function(t) {
+        return n => (0, i.jsx)(t, function(t) {
           for (var n = 1; n < arguments.length; n++) {
             var e = null != arguments[n] ? arguments[n] : {},
-              l = Object.keys(e);
-            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(e).filter(function(t) {
+              i = Object.keys(e);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(e).filter(function(t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
-            }))), l.forEach(function(n) {
+            }))), i.forEach(function(n) {
               d(t, n, e[n])
             })
           }
           return t
         }({
-          body: b.intl.string(b.t.mMTVnv)
+          body: c.intl.string(c.t.mMTVnv)
         }, n))
       })
     })
   }
 }
-let f = g
+let g = b

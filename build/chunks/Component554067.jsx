@@ -2,7 +2,7 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,12 +19,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk973638 = require("./973638.js");
 
-function h(e) {
+function m(e) {
   let {
     handleTransition: t,
     selectedTab: n,
     isNarrow: a,
-    hasText: h
+    hasText: m
   } = e, {
     searchQuery: C,
     onSetSearchQuery: E
@@ -37,8 +37,8 @@ function h(e) {
   }, [v, E]), l.useEffect(() => {
     x(C)
   }, [C]), l.useEffect(() => {
-    j(a && h)
-  }, [a, h]);
+    j(a && m)
+  }, [a, m]);
   let k = l.useCallback(e => {
       "Enter" === e.key && E(v)
     }, [v, E]),
@@ -70,7 +70,7 @@ function h(e) {
     }, [a, v]),
     N = a && !y,
     R = (0, r.jsx)(o.P3F, {
-      className: m.searchIcon,
+      className: h.searchIcon,
       onClick: I,
       children: (0, r.jsx)(o._Ve, {
         size: "sm",
@@ -95,12 +95,12 @@ function h(e) {
     style: w,
     children: R
   });
-  let Z = s()(m.searchBar, {
-    [m.searchFloating]: y
+  let Z = s()(h.searchBar, {
+    [h.searchFloating]: y
   });
   return y ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: m.searchIconContainerHidden,
+      className: h.searchIconContainerHidden,
       style: w,
       children: R
     }), (0, r.jsx)(o.P3F, {

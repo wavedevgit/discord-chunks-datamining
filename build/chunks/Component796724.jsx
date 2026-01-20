@@ -237,7 +237,8 @@ function G() {
                 disabled: null != (n = e[0].disabled) && n,
                 className: P.value
               })
-            }
+            },
+            "data-migration-pending": true
           })]
         }), (0, r.jsxs)("div", {
           className: P.sectionContainer,
@@ -275,7 +276,8 @@ function G() {
             renderOptionLabel: e => (0, r.jsx)(_, {
               plan: e.value,
               selected: e.value.id === R
-            })
+            }),
+            "data-migration-pending": true
           })]
         })]
       }), (0, r.jsx)("div", {
@@ -313,10 +315,10 @@ function G() {
       color: "text-muted",
       children: null != z && T.intl.format(K ? I.default.num0a6 : I.default.p5KZDr, {
         provider: X,
-        termsOfServiceUrl: () => (0, g.q)({
+        termsOfServiceUrl: () => (0, f.q)({
           href: Y
         }),
-        helpCenterUrl: f.Z.getArticleURL(y.BhN.GAME_SERVER_HOSTING)
+        helpCenterUrl: g.Z.getArticleURL(y.BhN.GAME_SERVER_HOSTING)
       })
     }), null != B && (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",

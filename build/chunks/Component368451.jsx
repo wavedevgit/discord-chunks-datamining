@@ -185,7 +185,7 @@ function I(e) {
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.container,
-      children: (0, r.jsx)(c.B6, E({
+      children: (0, r.jsx)(c.B6, y(E({
         isProcessing: x,
         isDisabled: g || N === _.gH.DISABLED || P,
         className: o()(m.select, {
@@ -207,7 +207,9 @@ function I(e) {
         renderOptionValue: e => D ? (0, r.jsx)(S, {
           options: e
         }) : (0, r.jsx)(v, E({}, e[0]))
-      }, V))
+      }, V), {
+        "data-migration-pending": true
+      }))
     }), null == w || R ? null : (0, r.jsx)(f.st, y(E({}, (0, f.c4)(w)), {
       className: m.error
     }))]

@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk668339 = require("./668339.jsx"),
+var Chunk481060 = require("./481060.js"),
   Chunk968437 = require("./968437.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk349036 = require("./349036.js");
@@ -19,14 +19,14 @@ let o = e => {
   } = e, d = (0, r.nt)();
   return (0, i.jsx)("div", {
     className: s.formSection,
-    children: (0, i.jsx)(l.d, {
+    children: (0, i.jsx)(l.VcW, {
+      selectionMode: "single",
       label: a.intl.string(a.t.FGjMZS),
       helperText: c,
-      isDisabled: o,
+      disabled: o,
       options: d,
       value: t,
-      onChange: n,
-      optionClassName: s.dropdownOption
+      onSelectionChange: n
     })
   })
 }

@@ -106,7 +106,7 @@ let x = e => {
         })
       }
       T(null == l || null == (e = l.multiSelect) ? true : e.state), E(null == l ? true : l.textInput), N(i), M(r), null == v || v("..")
-    }, H = l.useMemo(() => {
+    }, W = l.useMemo(() => {
       let e = [],
         t = [];
       for (let i in O) {
@@ -135,7 +135,7 @@ let x = e => {
       width: 440,
       activeSlide: S,
       centered: false,
-      children: H.map(e => (0, r.jsx)(a.Mi4, {
+      children: W.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
           className: f.slideContainer,

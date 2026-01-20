@@ -24,7 +24,7 @@ function h(e, t, n, h) {
     {
       trackView: m,
       trackClick: b
-    } = (0, a.R)(d.n0.ActivityInvite, {
+    } = (0, l.R)(d.n0.ActivityInvite, {
       notif_type: d.n0.ActivityInvite,
       notif_user_id: t.id,
       activity_type: c.mFx.JOIN_REQUEST,
@@ -34,7 +34,7 @@ function h(e, t, n, h) {
     icon: g,
     title: f,
     body: p,
-    hint: e => (0, o.QR)(e, (0, a.P)(), u.t.Odi54y),
+    hint: e => (0, o.QR)(e, (0, l.P)(), u.t.Odi54y),
     confirmText: u.intl.string(u.t["fgP/wX"]),
     cancelText: u.intl.string(u.t["tpXzJ+"]),
     onNotificationShow: () => {
@@ -45,7 +45,7 @@ function h(e, t, n, h) {
         channelId: e.id,
         type: c.mFx.JOIN,
         activity: h,
-        location: l.default.isInstanceLocked() ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
+        location: a.default.isInstanceLocked() ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
       }), b("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {

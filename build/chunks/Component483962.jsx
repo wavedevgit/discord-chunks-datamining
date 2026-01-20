@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk808006 = require("./808006.js");
-let g = () => (0, a.$Z)("DM_SEARCH"),
+let g = () => (0, l.$Z)("DM_SEARCH"),
   m = Chunk473749.memo(function() {
     let e = (0, s.e7)([d.default], () => d.default.isLocked((0, u.getPID)()) ? "true" : "false"),
       t = (0, c.Z)(e => {
@@ -43,7 +43,7 @@ let g = () => (0, a.$Z)("DM_SEARCH"),
       }), (0, i.jsx)("section", {
         className: p.panels,
         "aria-label": f.intl.string(f.t.StREWK),
-        children: (0, i.jsx)(l.Z, {
+        children: (0, i.jsx)(a.Z, {
           guildId: null
         })
       })]

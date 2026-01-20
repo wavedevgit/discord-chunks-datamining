@@ -65,22 +65,22 @@ function N(e) {
     })
   })), [H, K, Y]), Q = (0, p.l)(q);
   return (l.useEffect(() => {
-    (0, m.n)({
+    (0, h.n)({
       sessionId: w,
-      checkpoint: m.a.SHOP_MOUNTED,
+      checkpoint: h.a.SHOP_MOUNTED,
       tab: R,
       unpublishedCategoriesShown: D,
       cacheDisabled: Z
     })
   }, []), l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, h.n)({
       sessionId: w,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: R,
       unpublishedCategoriesShown: D,
       cacheDisabled: Z
     })
-  }, [w, D, Z, n, R]), n || null == M) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [w, D, Z, n, R]), n || null == M) ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")

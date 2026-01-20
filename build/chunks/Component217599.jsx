@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 217599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => L
+  r: () => M
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -92,7 +92,7 @@ let I = e => {
     return (0, a.jsx)(i.zxk, {
       size: "sm",
       fullWidth: true,
-      onClick: () => (0, x.nc)(t, {
+      onClick: () => (0, b.nc)(t, {
         content: m.jn.QUEST_BAR_V2,
         ctaContent: d.jZ.OPEN_GAME_LINK,
         impressionId: r,
@@ -109,7 +109,7 @@ let I = e => {
     } = e, l = null == (t = (0, u.WD)()) ? true : t.getId();
     return (0, a.jsx)(i.zxk, {
       fullWidth: true,
-      onClick: () => (0, x.gI)({
+      onClick: () => (0, b.gI)({
         quest: n
       }, {
         content: m.jn.QUEST_BAR_V2,
@@ -192,9 +192,9 @@ let I = e => {
         questContent: u,
         sourceQuestContent: p
       }),
-      x = r.useCallback(e => {
+      b = r.useCallback(e => {
         var t;
-        null == d || d(e), (0, b.xN)(n.config) && (null == (t = n.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
+        null == d || d(e), (0, x.xN)(n.config) && (null == (t = n.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
           tab: E.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: o.Z.QUEST_HOME_PAGE
@@ -202,7 +202,7 @@ let I = e => {
       }, [d, n.config, null == (t = n.userStatus) ? true : t.claimedAt, f]);
     return (0, a.jsx)(i.zxk, P(N({
       fullWidth: true,
-      onClick: x,
+      onClick: b,
       text: null != s ? s : T.intl.string(T.t.cfY4PE)
     }, h), {
       size: h.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
@@ -222,11 +222,11 @@ let I = e => {
       onGameSheetOpen: u,
       onGameSheetClose: p,
       taskDetails: h
-    } = r.useContext(S.A), f = (null == (t = d.userStatus) ? true : t.completedAt) != null, x = (0, g.q8)(d), b = o !== m.LI.SELECT && !l && !s, j = null;
+    } = r.useContext(S.A), f = (null == (t = d.userStatus) ? true : t.completedAt) != null, b = (0, g.q8)(d), x = o !== m.LI.SELECT && !l && !s, j = null;
     return f ? j = (0, a.jsx)(Z, {
       quest: d,
       sourceQuestContent: n
-    }) : x ? j = (0, a.jsx)(w, {
+    }) : b ? j = (0, a.jsx)(w, {
       quest: d,
       sourceQuestContent: n,
       taskDetails: h
@@ -235,14 +235,14 @@ let I = e => {
     }) : o === m.LI.CONSOLE && i ? j = (0, a.jsx)(k, {
       quest: d,
       sourceQuestContent: n
-    }) : b && (0, v.Pb)(d) ? j = (0, a.jsx)(A, {
+    }) : x && (0, v.Pb)(d) ? j = (0, a.jsx)(A, {
       quest: d,
       sourceQuestContent: n,
       taskDetails: h,
       popoutTargetElementRef: c,
       onGameSheetOpened: u,
       onGameSheetClosed: p
-    }) : b && (j = (0, a.jsx)(I, {
+    }) : x && (j = (0, a.jsx)(I, {
       quest: d,
       sourceQuestContent: n
     })), null == j ? null : (0, a.jsx)("div", {
@@ -251,7 +251,7 @@ let I = e => {
     })
   };
 
-function L(e) {
+function M(e) {
   let t = r.useRef(null);
   return (0, a.jsxs)("div", {
     className: O.ctaButtons,

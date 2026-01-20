@@ -64,7 +64,7 @@ let Z = Chunk473749.memo(function(e) {
     refToScroller: D,
     errors: R,
     hasChanges: L
-  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(S.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(S.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != Z ? Z : M, G = t === S.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), z = r.useCallback(() => L() ? (h.S.dispatch(S.CkL.SHAKE_APP, {
+  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), W = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(S.Plq.MANAGE_WEBHOOKS, e)), "id")), B = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(S.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != Z ? Z : M, G = t === S.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), z = r.useCallback(() => L() ? (h.S.dispatch(S.CkL.SHAKE_APP, {
     duration: 300,
     intensity: F
   }), K(Math.min(F + d.d7, d.w6)), h.S.dispatch(S.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, F]), V = r.useCallback(e => !!z() && (c.Z.setSection(e), true), [z]), {
@@ -91,7 +91,7 @@ let Z = Chunk473749.memo(function(e) {
             }, (null == (l = i.application.bot) ? true : l.id) !== true && (t[i.application.bot.id] = i.application.id)
           }
         } else i.type in n || (n[i.type] = []), n[i.type].push(i);
-    for (let t of _)(t.channel_id in B || t.channel_id in W) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === S.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
+    for (let t of _)(t.channel_id in W || t.channel_id in B) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === S.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
     return {
       applicationIntegrations: e,
       applicationBotIds: t,
@@ -99,7 +99,7 @@ let Z = Chunk473749.memo(function(e) {
       customWebhooks: i,
       followedChannelWebhooks: r
     }
-  }, [w, B, W, _]);
+  }, [w, W, B, _]);
   r.useEffect(() => {
     if (!A) switch (t) {
       case S.b4C.TWITCH:
@@ -162,7 +162,7 @@ let Z = Chunk473749.memo(function(e) {
         guild: l,
         applicationIntegration: et,
         editedWebhook: k,
-        selectableWebhookChannels: B,
+        selectableWebhookChannels: W,
         errors: R,
         canNavigate: z
       }));
@@ -171,7 +171,7 @@ let Z = Chunk473749.memo(function(e) {
       $ = (0, i.jsx)(O.Z, {
         followedChannelWebhooks: X,
         editedWebhook: k,
-        selectableWebhookChannels: B,
+        selectableWebhookChannels: W,
         canNavigate: z,
         errors: R
       });
@@ -199,7 +199,7 @@ let Z = Chunk473749.memo(function(e) {
             })
           }
           return e
-        }({}, B, W),
+        }({}, W, B),
         canNavigate: z,
         refToScroller: D,
         errors: R

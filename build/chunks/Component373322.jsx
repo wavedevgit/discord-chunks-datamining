@@ -35,14 +35,14 @@ let j = ["#51BC9D"],
     } = r.useContext(h.xo), {
       completionSpring: E,
       startCompletionAnimation: T
-    } = (0, x.GX)(), O = (null == (t = C.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), P = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), w = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [Z, D] = r.useState(null), L = r.useRef(new s.qA({
+    } = (0, b.GX)(), O = (null == (t = C.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), P = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), w = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [Z, D] = r.useState(null), M = r.useRef(new s.qA({
       gravity: 0,
       wind: 0
-    })), M = (0, s.uR)(R, Z), U = r.useCallback(() => {
+    })), L = (0, s.uR)(R, Z), U = r.useCallback(() => {
       if (P) return;
       let e = i.current,
         t = w.current;
-      if (null != t && null != e && M.isReady) {
+      if (null != t && null != e && L.isReady) {
         var n, a, r, l, s, o;
         let {
           x: i,
@@ -51,7 +51,7 @@ let j = ["#51BC9D"],
           x: d,
           y: u
         } = t.getBoundingClientRect();
-        M.createMultipleConfetti((n = i - d, a = c - u, r = e.clientHeight, l = e.clientWidth, s = function(e) {
+        L.createMultipleConfetti((n = i - d, a = c - u, r = e.clientHeight, l = e.clientWidth, s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               a = Object.keys(n);
@@ -68,7 +68,7 @@ let j = ["#51BC9D"],
             })
           }
           return e
-        }({}, b.We), o = o = {
+        }({}, x.We), o = o = {
           position: {
             type: "static-random",
             minValue: {
@@ -116,7 +116,7 @@ let j = ["#51BC9D"],
           Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
         }), s), 100)
       }
-    }, [i, w, M, P]), B = (0, u.Z)(_);
+    }, [i, w, L, P]), B = (0, u.Z)(_);
     return (r.useEffect(() => {
       O && _ && !B && (T(), U())
     }, [_, O, T, U, B]), r.useEffect(() => {
@@ -124,8 +124,8 @@ let j = ["#51BC9D"],
         T(), U()
       }, 200)
     }, [O, k, I, T, U]), r.useEffect(() => {
-      M.isReady && (!N.current && O && (T(), U()), N.current = O)
-    }, [O, N, U, T, M]), r.useEffect(() => {
+      L.isReady && (!N.current && O && (T(), U()), N.current = O)
+    }, [O, N, U, T, L]), r.useEffect(() => {
       y && O && (T(), U())
     }, [y, O, T, U]), P) ? null : (0, a.jsxs)("div", {
       className: g.wrapper,
@@ -152,13 +152,13 @@ let j = ["#51BC9D"],
         children: [(0, a.jsx)(s.O_, {
           ref: A,
           className: g.confetti,
-          environment: L.current
+          environment: M.current
         }), (0, a.jsx)(s.Ji, {
           ref: D,
           sprites: [v],
           colors: j,
-          spriteWidth: b.Ko,
-          spriteHeight: b.Ko
+          spriteWidth: x.Ko,
+          spriteHeight: x.Ko
         }), null != n.current && (0, o.createPortal)((0, a.jsx)(c.animated.div, {
           className: l()(g.borders, g.bordersBottom),
           style: {

@@ -1,1 +1,0 @@
-{"id":"377089","type":"experiment","data":{"kind":"user","id":"2025-07_mana_desktop_text_inputs","label":"Mana Desktop Text Inputs","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"New text input styles","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

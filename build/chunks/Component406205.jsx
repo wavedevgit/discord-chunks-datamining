@@ -35,21 +35,21 @@ function C(e) {
   }), r = (0, a.e7)([h.ZP], () => h.ZP.getMessageNotifications(t)), [E, C] = (0, s.useState)(false), L = E ? j.s8.CUSTOM : (0, j.gs)(l, r);
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      className: S.segmentedControlsContainer,
+      className: N.segmentedControlsContainer,
       children: (0, i.jsx)(c.sY7, {
         value: L,
         options: [{
           value: j.s8.ALL_MESSAGES,
-          name: N.intl.string(N.t.hZrr6k)
+          name: S.intl.string(S.t.hZrr6k)
         }, {
           value: j.s8.MENTIONS,
-          name: N.intl.string(N.t.y59NJm)
+          name: S.intl.string(S.t.y59NJm)
         }, {
           value: j.s8.NOTHING,
-          name: N.intl.string(N.t["pGn/bJ"])
+          name: S.intl.string(S.t["pGn/bJ"])
         }, {
           value: j.s8.CUSTOM,
-          name: N.intl.string(N.t["32yow9"])
+          name: S.intl.string(S.t["32yow9"])
         }],
         onChange: e => {
           let {
@@ -57,48 +57,48 @@ function C(e) {
           } = e;
           return n === j.s8.CUSTOM ? void C(true) : (C(false), void(0, x.V)(t, n))
         },
-        className: S.segmentedControl,
+        className: N.segmentedControl,
         look: "pill"
       })
     }), (0, i.jsx)("div", {
-      className: S.presetSeparator
+      className: N.presetSeparator
     }), (0, i.jsxs)("div", {
-      className: S.customPresetsContainer,
+      className: N.customPresetsContainer,
       children: [(0, i.jsxs)("div", {
-        className: S.grid,
+        className: N.grid,
         children: [(0, i.jsx)(O, {
           unreadSetting: l
         }), (0, i.jsx)(Z, {
           notificationSetting: r
         })]
       }), (0, i.jsxs)("div", {
-        className: S.grid,
+        className: N.grid,
         children: [(0, i.jsxs)("div", {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: N.intl.string(N.t.Tqd1Af)
+            children: S.intl.string(S.t.Tqd1Af)
           }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: N.intl.string(N.t.RpQgm5)
+            children: S.intl.string(S.t.RpQgm5)
           })]
         }), (0, i.jsxs)("div", {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: N.intl.string(N.t["1m22ZB"])
+            children: S.intl.string(S.t["1m22ZB"])
           }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: N.intl.string(N.t["4bP2ZZ"])
+            children: S.intl.string(S.t["4bP2ZZ"])
           })]
         })]
       }), (0, i.jsxs)("div", {
-        className: S.grid,
+        className: N.grid,
         children: [(0, i.jsx)(o.y6, {
           value: l,
-          className: S.input,
+          className: N.input,
           onChange: e => {
             C(false), u.Z.updateGuildNotificationSettings(t, {
               flags: (0, m.Q4)(n, e === v.i.ALL_MESSAGES ? b.vc.UNREADS_ALL_MESSAGES : b.vc.UNREADS_ONLY_MENTIONS)
@@ -117,18 +117,19 @@ function C(e) {
                   children: e.label
                 })
               }), t && (0, i.jsx)(d.u, {
-                text: N.intl.string(N.t.eP8yWU),
+                text: S.intl.string(S.t.eP8yWU),
                 children: (0, i.jsx)(c.t6m, {
                   size: "custom",
                   width: 20,
                   height: 20,
-                  className: S.muted
+                  className: N.muted
                 })
               })]
             })
-          }
+          },
+          "data-migration-pending": true
         }), (0, i.jsx)(o.y6, {
-          className: S.input,
+          className: N.input,
           value: r,
           onChange: e => {
             C(false);
@@ -147,16 +148,17 @@ function C(e) {
                 variant: "text-md/normal",
                 children: e.label
               }), t && (0, i.jsx)(d.u, {
-                text: N.intl.string(N.t.idXSbI),
+                text: S.intl.string(S.t.idXSbI),
                 children: (0, i.jsx)(c.d3s, {
                   size: "custom",
                   width: 20,
                   height: 20,
-                  className: S.muted
+                  className: N.muted
                 })
               })]
             })
-          }
+          },
+          "data-migration-pending": true
         })]
       })]
     })]
@@ -170,34 +172,34 @@ function O(e) {
     badged: true,
     unread: true,
     muted: false,
-    name: N.intl.string(N.t.EjLobP)
+    name: S.intl.string(S.t.EjLobP)
   }, {
     badged: false,
     unread: true,
     muted: true,
-    name: N.intl.string(N.t.Wgpwpp)
+    name: S.intl.string(S.t.Wgpwpp)
   }, {
     badged: false,
     unread: false,
     muted: true,
-    name: N.intl.string(N.t.g9VImh)
+    name: S.intl.string(S.t.g9VImh)
   }];
   return t === v.i.ALL_MESSAGES && (n[1].muted = false), (0, i.jsx)("div", {
-    className: S.channeList,
+    className: N.channeList,
     children: n.map(e => (0, i.jsxs)("div", {
-      className: S.channelListChannel,
+      className: N.channelListChannel,
       children: [(0, i.jsxs)("div", {
-        className: S.channelListChannelName,
+        className: N.channelListChannelName,
         children: [(0, i.jsx)("div", {
-          className: r()(S.unread, {
-            [S.hidden]: !e.unread,
-            [S.unreadMuted]: e.muted
+          className: r()(N.unread, {
+            [N.hidden]: !e.unread,
+            [N.unreadMuted]: e.muted
           })
         }), (0, i.jsx)(c.VL1, {
           size: "xxs",
           color: "currentColor",
-          className: r()(S.channelListChannelIcon, {
-            [S.muted]: e.muted
+          className: r()(N.channelListChannelIcon, {
+            [N.muted]: e.muted
           })
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/normal",
@@ -205,8 +207,8 @@ function O(e) {
           children: e.name
         })]
       }), (0, i.jsx)("div", {
-        className: r()(S.badge, {
-          [S.hidden]: !e.badged
+        className: r()(N.badge, {
+          [N.hidden]: !e.badged
         }),
         children: (0, i.jsx)(c.mAB, {
           count: 1
@@ -218,23 +220,23 @@ function O(e) {
 
 function Z(e) {
   return (0, i.jsxs)("div", {
-    className: S.mockMessage,
+    className: N.mockMessage,
     children: [e.notificationSetting === f.bL.NO_MESSAGES && (0, i.jsx)("div", {
-      className: S.mockMessageDisabled
+      className: N.mockMessageDisabled
     }), (0, i.jsx)("div", {
       children: (0, i.jsx)("img", {
-        className: S.mockMessageAvatar,
+        className: N.mockMessageAvatar,
         src: E,
         alt: ""
       })
     }), (0, i.jsxs)("div", {
       children: [(0, i.jsx)(c.Text, {
         variant: "text-xs/medium",
-        children: N.intl.string(N.t.qSq0tD)
+        children: S.intl.string(S.t.qSq0tD)
       }), e.notificationSetting === f.bL.ALL_MESSAGES && (0, i.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: N.intl.string(N.t.WYyzI5)
+        children: S.intl.string(S.t.WYyzI5)
       }), e.notificationSetting !== f.bL.ALL_MESSAGES && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(c.Text, {
           variant: "text-xs/normal",
@@ -245,7 +247,7 @@ function Z(e) {
           variant: "text-xs/normal",
           color: "text-muted",
           tag: "span",
-          children: N.intl.string(N.t.WYyzI5)
+          children: S.intl.string(S.t.WYyzI5)
         })]
       })]
     })]

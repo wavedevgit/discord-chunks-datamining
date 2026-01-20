@@ -16,7 +16,7 @@ var a, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk922895 = require("./922895.js");
 
-function x(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
+let x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
 class g extends(a = Chunk473749.PureComponent) {
   renderFields() {
     let {
@@ -78,7 +78,7 @@ class g extends(a = Chunk473749.PureComponent) {
             }), (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
               children: h.intl.format(h.t["0rqMV5"], {
-                helpCenterURL: b
+                helpCenterURL: x
               })
             })]
           })]
@@ -124,7 +124,7 @@ class g extends(a = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "handleClick", e => {
+    super(...e), b(this, "handleClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -132,7 +132,7 @@ class g extends(a = Chunk473749.PureComponent) {
     })
   }
 }
-x(g, "defaultProps", {
+b(g, "defaultProps", {
   types: [Chunk981631.PUi.CAPTCHA],
   onCaptchaVerify: Chunk981631.dG4,
   onLogout: Chunk981631.dG4

@@ -26,15 +26,15 @@ function v(e) {
     title: t,
     can: n
   } = e, r = n ? o.dz2 : o.Dio, l = (0, a.jsx)("div", {
-    className: i()(b.iconOuter, n ? b.iconCheck : b.iconCross),
+    className: i()(x.iconOuter, n ? x.iconCheck : x.iconCross),
     children: (0, a.jsx)(r, {
-      className: b.icon
+      className: x.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: b.scope,
+    className: x.scope,
     children: [l, (0, a.jsx)("div", {
-      className: b.scopeInner,
+      className: x.scopeInner,
       children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
@@ -51,7 +51,7 @@ function j() {
     j = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
     y = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
     C = (0, c.ZP)(n, true),
-    _ = null != n ? (0, x.IG)(n, false) : null,
+    _ = null != n ? (0, b.IG)(n, false) : null,
     S = null != r ? f.Z.getGuildPermissionSpecMap(r) : null,
     E = Object.values(null != _ ? _ : {}).map(e => {
       let {
@@ -74,17 +74,17 @@ function j() {
       }, t)
     });
   return (0, a.jsx)("div", {
-    className: i()(g.panel, b.panel),
+    className: i()(g.panel, x.panel),
     children: (0, a.jsxs)("div", {
-      className: b.panelInner,
+      className: x.panelInner,
       children: [(0, a.jsxs)("section", {
-        className: b.section,
+        className: x.section,
         children: [(0, a.jsx)(o.Heading, {
           variant: "heading-md/semibold",
           children: null != C ? "Permissions in ".concat(C) : "No channel selected"
         }), E]
       }), (0, a.jsxs)("section", {
-        className: b.section,
+        className: x.section,
         children: [(0, a.jsx)(o.Heading, {
           variant: "heading-md/semibold",
           children: null != r ? "Permissions in ".concat(r.name) : "No guild selected"

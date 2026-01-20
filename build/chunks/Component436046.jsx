@@ -24,9 +24,9 @@ function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [i, N] = o.useState(null), [x, T] = o.useState(null), [A, C] = o.useState(false), g = (0, r.e7)([p.default], () => p.default.getCurrentUser()), j = o.useRef(null);
+  } = e, [i, N] = o.useState(null), [x, T] = o.useState(null), [A, g] = o.useState(false), C = (0, r.e7)([p.default], () => p.default.getCurrentUser()), j = o.useRef(null);
   async function O(e) {
-    e.preventDefault(), s()(null != i, "Cannot submit null birthday."), C(true);
+    e.preventDefault(), s()(null != i, "Cannot submit null birthday."), g(true);
     try {
       await u.Av(i, _.L0.NEW_USER_FLOW), t()
     } catch (e) {
@@ -36,11 +36,11 @@ function N(e) {
         (null == e || null == (a = e.body) ? true : a.username) != null ? T(h.intl.string(h.t["TGg/2k"])) : T(null == e ? true : e.body.message)
       }
     }
-    C(false)
+    g(false)
   }
   o.useEffect(() => {
-    null != g && null != g.nsfwAllowed && t()
-  }, [g, t]);
+    null != C && null != C.nsfwAllowed && t()
+  }, [C, t]);
   let y = o.useCallback(e => {
       N(e)
     }, [N]),
@@ -48,7 +48,7 @@ function N(e) {
       var e;
       null == (e = j.current) || e.focus()
     }, [j]);
-  return null == g ? null : (0, a.jsxs)("form", {
+  return null == C ? null : (0, a.jsxs)("form", {
     className: E.content,
     onSubmit: O,
     children: [(0, a.jsx)(d.gw7, {

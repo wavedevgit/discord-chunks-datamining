@@ -14,15 +14,19 @@ var Chunk70956 = require("./70956.js"),
 
 function l() {
   return [{
+    id: "1hour",
     label: s.intl.string(s.t.cs8A1c),
     value: a.Z.Minutes.HOUR
   }, {
+    id: "24hours",
     label: s.intl.string(s.t.zFKbrF),
     value: a.Z.Minutes.DAY
   }, {
+    id: "3days",
     label: s.intl.string(s.t.TmPIZX),
     value: 3 * a.Z.Minutes.DAY
   }, {
+    id: "1week",
     label: s.intl.string(s.t["/7i2el"]),
     value: a.Z.Minutes.WEEK
   }]

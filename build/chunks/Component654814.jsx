@@ -2,7 +2,7 @@
 /** chunk id: 654814, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PM: () => V,
-  WG: () => P,
+  WG: () => I,
   ZP: () => k
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
@@ -85,15 +85,15 @@ function L(e) {
   return 1 === e.type
 }
 
-function I(e) {
+function P(e) {
   return 0 === e.type
 }
 
-function P(e) {
+function I(e) {
   let t = "".concat(!e.name.includes(g.CR) ? "@" : "").concat(e.name);
   return {
     tag: {
-      type: d.F.ROLE,
+      type: u.F.ROLE,
       label: t
     },
     row: {
@@ -106,10 +106,10 @@ function P(e) {
 }
 
 function V(e) {
-  let t = (0, C.F6)(e, y.default, v.Z);
+  let t = (0, C.F6)(e, O.default, v.Z);
   return {
     tag: {
-      type: d.F.CHANNEL,
+      type: u.F.CHANNEL,
       label: t
     },
     row: {
@@ -129,24 +129,24 @@ let M = Chunk473749.memo(function(e) {
   } = e, {
     id: a,
     name: s
-  } = n.record, d = (0, f.p9)({
+  } = n.record, u = (0, f.p9)({
     guildId: l,
     roleId: a,
     size: 16
-  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(g.CR) ? "" : "@", b = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? true : C.colorString) ? t : b, v = (0, p._f)(l, C, null == C ? true : C.colorStrings);
+  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(g.CR) ? "" : "@", b = (0, d.dQu)(d.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? true : C.colorString) ? t : b, v = (0, p._f)(l, C, null == C ? true : C.colorStrings);
   return (0, r.jsxs)("div", {
     className: o()(H.rowLabel, H.roleTagContainer, i),
-    children: [(0, r.jsx)(u.FhE, {
+    children: [(0, r.jsx)(d.FhE, {
       className: H.__invalid_roleDot,
       color: j,
       colors: v,
       background: false,
       tooltip: false
-    }), null != d ? (0, r.jsx)(h.Z, S(w({
+    }), null != u ? (0, r.jsx)(h.Z, S(w({
       className: H.roleTagIcon
-    }, d), {
+    }, u), {
       enableTooltip: false
-    })) : m, (0, r.jsx)(u.Text, {
+    })) : m, (0, r.jsx)(d.Text, {
       variant: R,
       className: H.roleTagLabel,
       children: s
@@ -168,7 +168,7 @@ function E(e) {
       size: "xs",
       color: "currentColor",
       className: H.channelIcon
-    }), (0, r.jsx)(u.Text, {
+    }), (0, r.jsx)(d.Text, {
       variant: t.isCategory() ? "eyebrow" : R,
       children: n.display
     })]
@@ -180,7 +180,7 @@ function T(e, t, n) {
     row: e,
     guildId: t,
     className: n
-  }, e.record.id) : I(e) ? (0, r.jsx)(E, {
+  }, e.record.id) : P(e) ? (0, r.jsx)(E, {
     row: e,
     channel: e.record,
     className: n
@@ -205,27 +205,27 @@ function k(e) {
       let t = j.Z.getChannel(e);
       null != t && (r[e] = V(t))
     }), t.forEach(e => {
-      e in n && (r[e] = P(n[e]))
+      e in n && (r[e] = I(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, D] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), F = l.useRef(null), {
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [O, D] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), F = l.useRef(null), {
     sections: B,
     sectionCounts: q
   } = l.useMemo(() => {
-    let e = "" !== y ? i.filter(e => s()(y, e.display.toLocaleLowerCase())) : i,
-      t = "" !== y ? n.filter(e => s()(y, e.display.toLocaleLowerCase())) : n,
+    let e = "" !== O ? i.filter(e => s()(O, e.display.toLocaleLowerCase())) : i,
+      t = "" !== O ? n.filter(e => s()(O, e.display.toLocaleLowerCase())) : n,
       r = [],
       l = [];
     return r[0] = e, l[0] = e.length, r[1] = t, l[1] = t.length, {
       sections: r,
       sectionCounts: l
     }
-  }, [y, i, n]), G = l.useCallback(e => {
+  }, [O, i, n]), G = l.useCallback(e => {
     let t = Object.values(e),
       n = t.filter(e => {
         let {
           row: t
         } = e;
-        return I(t)
+        return P(t)
       }).map(e => e.row.record.id),
       r = t.filter(e => {
         let {
@@ -250,7 +250,7 @@ function k(e) {
     },
     Q = l.useCallback(e => {
       let t = w({}, g);
-      I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), G(t), D(""), z(), setTimeout(() => {
+      P(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = I(e.record)), G(t), D(""), z(), setTimeout(() => {
         var e;
         let t = null == (e = F.current) ? true : e.containerRef.current,
           n = null == t ? true : t.firstChild;
@@ -265,7 +265,7 @@ function k(e) {
         section: n,
         row: l
       } = e, i = B[n][l];
-      return (0, r.jsx)(u.P3F, {
+      return (0, r.jsx)(d.P3F, {
         className: o()(H.selectableSearchRow, H.rowHeight),
         onClick: e => {
           e.stopPropagation(), Q(i)
@@ -286,11 +286,11 @@ function k(e) {
     className: o()(H.searchContainer, p),
     children: [(0, r.jsxs)("div", {
       className: H.searchBox,
-      children: [(0, r.jsx)(d.Z, {
+      children: [(0, r.jsx)(u.Z, {
         tags: K,
         maxHeight: 98,
-        size: d.Z.Sizes.MEDIUM,
-        query: y,
+        size: u.Z.Sizes.MEDIUM,
+        query: O,
         ref: F,
         onRemoveTag: e => {
           let t = v[e],
@@ -316,7 +316,7 @@ function k(e) {
         onQueryChange: e => {
           D(e.trim().toLocaleLowerCase())
         },
-        placeholder: null != b ? b : O.intl.string(O.t.uqHLzW),
+        placeholder: null != b ? b : y.intl.string(y.t.uqHLzW),
         sections: [v.length],
         inputProps: {
           "aria-labelledby": N,
@@ -330,7 +330,7 @@ function k(e) {
         onFocus: e => Y(true, 1, e),
         onBlur: e => Y(false, 1, e),
         tabIndex: false,
-        children: (0, r.jsx)(u._2F, {
+        children: (0, r.jsx)(d._2F, {
           className: H.resultsListContainer,
           innerClassName: H.resultsList,
           sections: q,
@@ -340,15 +340,15 @@ function k(e) {
             let {
               section: t
             } = e;
-            return 0 === t ? (0, r.jsx)(u.Heading, {
+            return 0 === t ? (0, r.jsx)(d.Heading, {
               variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
-              children: O.intl.string(O.t.OGiMXJ)
-            }, O.intl.string(O.t.OGiMXJ)) : 1 === t ? (0, r.jsx)(u.Heading, {
+              children: y.intl.string(y.t.OGiMXJ)
+            }, y.intl.string(y.t.OGiMXJ)) : 1 === t ? (0, r.jsx)(d.Heading, {
               variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
-              children: O.intl.string(O.t["LPJmL/"])
-            }, O.intl.string(O.t["LPJmL/"])) : null
+              children: y.intl.string(y.t["LPJmL/"])
+            }, y.intl.string(y.t["LPJmL/"])) : null
           },
           renderFooter: e => {
             let {
@@ -356,7 +356,7 @@ function k(e) {
             } = e;
             return 0 === t ? 0 === q[1] && q[0] > 0 ? null : (0, r.jsx)("div", {
               className: H.sectionFooter,
-              children: (0, r.jsx)(u.izJ, {})
+              children: (0, r.jsx)(d.izJ, {})
             }) : null
           },
           sectionHeight: 24,
@@ -367,7 +367,7 @@ function k(e) {
           innerAriaOrientation: "vertical"
         })
       })]
-    }), null != f && (0, r.jsx)(u.Text, {
+    }), null != f && (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: H.helperText,

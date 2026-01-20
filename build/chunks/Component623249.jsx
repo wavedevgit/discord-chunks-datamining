@@ -36,18 +36,18 @@ function T(e) {
     transitionState: y,
     onClose: T,
     sourceQuestContent: N
-  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
+  } = e, [P, w] = (0, r.useState)(i), I = (0, x.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
     useReducedMotion: A,
     className: E.colorTransition
-  }), D = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
+  }), D = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), M = (0, j.Bz)(n), L = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(L) ? _.BR.DARK : _.BR.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: F
-  } = (0, b.GI)({
+  } = (0, x.GI)({
     questId: n.id,
     beforeRequest: () => {
       Z.startAnimation(), k({
         questId: n.id,
-        questContent: x.jn.CONNECTIONS_MODAL,
+        questContent: b.jn.CONNECTIONS_MODAL,
         questContentCTA: h.jZ.DEFIBRILLATOR,
         sourceQuestContent: N
       })
@@ -66,7 +66,7 @@ function T(e) {
       onClick: () => void(T(), (0, v.V$)({
         quest: n
       }, {
-        content: x.jn.CONNECTIONS_MODAL,
+        content: b.jn.CONNECTIONS_MODAL,
         ctaContent: h.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: R,
         sourceQuestContent: N
@@ -108,8 +108,8 @@ function T(e) {
             size: "sm"
           }),
           text: S.intl.string(S.t.XF4wuA),
-          errors: L ? true : D.map(e => e.message),
-          gameTile: L ? (0, a.jsx)(c.u, {
+          errors: M ? true : D.map(e => e.message),
+          gameTile: M ? (0, a.jsx)(c.u, {
             "aria-label": n.config.messages.gameTitle,
             __unsupportedReactNodeAsText: (0, a.jsxs)("div", {
               className: E.tooltip,
@@ -192,7 +192,7 @@ function N(e) {
       return (0, a.jsx)(y.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
-        questContent: x.jn.CONNECTIONS_MODAL,
+        questContent: b.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
         children: () => (0, a.jsx)(t, function(e) {
           for (var t = 1; t < arguments.length; t++) {

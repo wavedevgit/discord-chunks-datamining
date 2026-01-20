@@ -84,6 +84,7 @@ function m(e) {
     value: n,
     closeOnSelect: false,
     renderOptionSuffix: x,
-    renderOptionPrefix: j
+    renderOptionPrefix: j,
+    "data-migration-pending": true
   })
 }

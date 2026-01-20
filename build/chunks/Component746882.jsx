@@ -59,16 +59,16 @@ function C(t) {
   } = (0, T.a1)(n), Y = (0, T.$5)(o), B = T.Lj.has(n), q = null != C ? s()().diff(C, "years") : null;
 
   function K() {
-    if (n === v.L0.NSFW_SERVER_INVITE_EMBED) return (0, g.qV)(n), Promise.resolve();
+    if (n === v.L0.NSFW_SERVER_INVITE_EMBED) return (0, b.qV)(n), Promise.resolve();
     let t = null == o ? true : o.getGuildId();
-    return E.Z.nsfwReturnToSafety(t), (0, g.qV)(n), Promise.resolve()
+    return E.Z.nsfwReturnToSafety(t), (0, b.qV)(n), Promise.resolve()
   }
   async function H() {
     i()(null != C, "Cannot submit null birthday.");
     try {
-      return j(null), I(true), await (0, b.Av)(C, n)
+      return j(null), I(true), await (0, h.Av)(C, n)
     } catch (e) {
-      if (null != e.body && null != e.body.date_of_birth)(0, g.C8)(n, e.body.date_of_birth);
+      if (null != e.body && null != e.body.date_of_birth)(0, b.C8)(n, e.body.date_of_birth);
       else {
         var t;
         (null == e || null == (t = e.body) ? true : t.username) != null ? j(R.intl.string(R.t["TGg/2k"])) : j(null == e ? true : e.body.message), I(false)
@@ -86,9 +86,9 @@ function C(t) {
     null == await H() && D(0)
   }
   r.useEffect(() => {
-    (null == a ? true : a.nsfwAllowed) !== true || V || (0, g.qq)(n)
+    (null == a ? true : a.nsfwAllowed) !== true || V || (0, b.qq)(n)
   }), r.useEffect(() => {
-    h.default.track(O.rMx.AGE_GATE_ACTION, {
+    m.default.track(O.rMx.AGE_GATE_ACTION, {
       source: n,
       action: v.Al.AGE_GATE_OPEN
     })
@@ -101,8 +101,8 @@ function C(t) {
       null == (t = L.current) || t.focus()
     }, [L]),
     tt = r.useCallback(() => {
-      f.Z.showAgeVerificationGetStartedModal({
-        entryPoint: p.cU.NSFW_AGE_GATE
+      p.Z.showAgeVerificationGetStartedModal({
+        entryPoint: f.cU.NSFW_AGE_GATE
       })
     }, []),
     te = {
@@ -134,7 +134,7 @@ function C(t) {
   }, te)) : (null == a ? true : a.nsfwAllowed) === false && (Y || B) && !U ? (0, l.jsx)(u.ExpressiveModal, x({
     title: R.intl.string(B ? R.t["H0SG/g"] : R.t.NEabBa),
     subtitle: R.intl.format(B ? R.t["6++3cX"] : R.t["2kHZes"], {
-      helpURL: m.Z.getArticleURL(O.BhN.AGE_GATE)
+      helpURL: g.Z.getArticleURL(O.BhN.AGE_GATE)
     }),
     actions: [{
       text: R.intl.string(R.t["/g10LC"]),
@@ -167,11 +167,11 @@ function C(t) {
             return R.intl.string(R.t.mhUrKS);
           case v.L0.DEEP_LINK_PROMPT:
             return R.intl.format(R.t.iyhg2s, {
-              helpURL: m.Z.getArticleURL(O.BhN.AGE_GATE)
+              helpURL: g.Z.getArticleURL(O.BhN.AGE_GATE)
             });
           default:
             return R.intl.format(R.t.n3QjDE, {
-              helpURL: m.Z.getArticleURL(O.BhN.AGE_GATE)
+              helpURL: g.Z.getArticleURL(O.BhN.AGE_GATE)
             })
         }
       })();
@@ -219,7 +219,7 @@ function C(t) {
       age: null != q ? q : ""
     }),
     subtitle: R.intl.formatToPlainString(R.t.n3QjDE, {
-      helpURL: m.Z.getArticleURL(O.BhN.AGE_GATE)
+      helpURL: g.Z.getArticleURL(O.BhN.AGE_GATE)
     }),
     actions: [{
       text: R.intl.string(R.t.cfYCrb),

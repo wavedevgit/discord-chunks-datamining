@@ -33,7 +33,7 @@ function S(e) {
     trackUserProfileEditAction: T
   } = (0, p.KZ)(), O = (0, i.e7)([v.default], () => v.default.getId()), N = function() {
     let e = (0, i.e7)([v.default], () => v.default.getId()),
-      t = (0, x.Z)(e),
+      t = (0, b.Z)(e),
       n = r.useMemo(() => t.filter(e => e instanceof h.q), [t]),
       a = function() {
         let e = (0, d.vl)({
@@ -91,7 +91,7 @@ function S(e) {
       } = e, s = N.find(e => e.dismissibleContent === r);
       if (null == s) return null;
       let o = "linked" === s.type,
-        c = () => (0, b.openUserProfileModal)({
+        c = () => (0, x.openUserProfileModal)({
           userId: O,
           tabSection: C.oh.WIDGETS
         }).then(() => {

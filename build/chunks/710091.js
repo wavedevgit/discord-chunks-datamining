@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk144507 = require("./144507.js"),
   Chunk388032 = require("./388032.jsx");
 let c = {
-  title: () => d.intl.string(d.t["KzCF/6"]),
-  description: () => d.intl.string(d.t.xMW8FH),
+  title: () => u.intl.string(u.t["KzCF/6"]),
+  description: () => u.intl.string(u.t.xMW8FH),
   canCreateGuild: false,
-  useIsGuildSupported: () => (0, n.e7)([a.Z], () => (e, t) => (0, o.eM)(e, t) && (0, u.X$)({
+  useIsGuildSupported: () => (0, n.e7)([a.Z], () => (e, t) => (0, o.eM)(e, t) && (0, d.X$)({
     guild: e,
     isOwner: true,
     canManageGuildRoleSubscriptions: true,

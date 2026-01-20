@@ -37,10 +37,10 @@ function g() {
     A = (0, r.e7)([o.Z], () => o.Z.getProduct(null == k ? true : k.skuId)),
     Z = (0, r.e7)([o.Z], () => o.Z.getProduct(null == R ? true : R.skuId)),
     D = (0, r.e7)([s.Z], () => s.Z.fontSize),
-    L = (0, r.e7)([s.Z], () => s.Z.messageGroupSpacing),
-    M = p.YC.useSetting();
+    M = (0, r.e7)([s.Z], () => s.Z.messageGroupSpacing),
+    L = p.YC.useSetting();
   return (0, f.ub)(), (0, a.jsxs)("div", {
-    className: b.container,
+    className: x.container,
     children: [(0, a.jsxs)("div", {
       children: [(0, a.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
@@ -73,7 +73,7 @@ function g() {
         children: ["Theme: ", E]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != T ? null == (g = x.qt[T]) ? true : g.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != T ? null == (g = b.qt[T]) ? true : g.getName() : "None"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (y = null == A ? true : A.name) ? y : "None"]
@@ -85,10 +85,10 @@ function g() {
         children: ["Font Size: ", D, "px"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["Message Spacing: ", L]
+        children: ["Message Spacing: ", M]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["UI Density: ", M, " (", function(e) {
+        children: ["UI Density: ", L, " (", function(e) {
           switch (e) {
             case i.Pi.COMPACT:
               return "Compact";
@@ -101,7 +101,7 @@ function g() {
             default:
               return "Unknown"
           }
-        }(M), ")"]
+        }(L), ")"]
       })]
     })]
   })

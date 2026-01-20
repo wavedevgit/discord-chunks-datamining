@@ -43,7 +43,7 @@ let f = e => {
     bannerAnimatedUrl: b
   } = (0, i._M)(t), p = null != t.textColor ? {
     color: t.textColor
-  } : true, m = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, h = null != t.body && "" !== t.body, m = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
     ref: f,
     className: u.immersiveBannerBlock,
@@ -66,10 +66,10 @@ let f = e => {
           color: "text-strong",
           style: d({}, p),
           children: t.title
-        }), m || h ? (0, r.jsxs)(a.Text, {
+        }), h || m ? (0, r.jsxs)(a.Text, {
           variant: "text-md/medium",
           style: d({}, p),
-          children: [m && t.body, m && h && " ", h && (0, r.jsx)(a.eee, {
+          children: [h && t.body, h && m && " ", m && (0, r.jsx)(a.eee, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
             style: d({}, p),

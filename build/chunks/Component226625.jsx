@@ -27,14 +27,14 @@ function f(e) {
   } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [s, f] = r.useState({
     x: 0,
     y: 0
-  }), x = r.useMemo(() => o().throttle(e => {
+  }), b = r.useMemo(() => o().throttle(e => {
     if (!i) f({
       x: (window.innerWidth - e.pageX * n) / 90,
       y: (window.innerHeight - e.pageY * n) / 90
     })
   }, 20), [n, i]);
-  r.useEffect(() => (window.addEventListener("mousemove", x), () => window.removeEventListener("mousemove", x)), [x]);
-  let [b, g] = (0, u.q_F)(() => ({
+  r.useEffect(() => (window.addEventListener("mousemove", b), () => window.removeEventListener("mousemove", b)), [b]);
+  let [x, g] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
     config: h
@@ -46,7 +46,7 @@ function f(e) {
     })
   }, [s.x, s.y, g]), (0, a.jsx)(c.animated.div, {
     style: {
-      transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
+      transform: (0, c.to)([x.x, x.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
     className: l()(p.background, t)
   })

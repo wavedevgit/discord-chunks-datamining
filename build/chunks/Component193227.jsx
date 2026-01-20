@@ -37,7 +37,7 @@ function S(e) {
       children: (0, r.jsx)(p.Z, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
-        onClickAnalytics: (0, m.wO)(e, v.AW.CATALOG, f)
+        onClickAnalytics: (0, h.wO)(e, v.AW.CATALOG, f)
       }, e.skuId)
     }, e.skuId))
   })
@@ -68,8 +68,8 @@ function _(e) {
     currentPage: s,
     handlePageChange: o,
     initialCategoryId: u
-  } = e, d = (0, c.sp)(), g = (0, h.R)(), p = null != (t = null == d ? true : d.sessionId) ? t : "", {
-    noCache: m,
+  } = e, d = (0, c.sp)(), g = (0, m.R)(), p = null != (t = null == d ? true : d.sessionId) ? t : "", {
+    noCache: h,
     includeUnpublished: E
   } = (0, C.Z)(), S = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
@@ -98,7 +98,7 @@ function _(e) {
       checkpoint: f.a.SHOP_MOUNTED,
       tab: v.AW.CATALOG,
       unpublishedCategoriesShown: E,
-      cacheDisabled: m
+      cacheDisabled: h
     })
   }, []), l.useEffect(() => {
     g || 0 === y.length || (0, f.n)({
@@ -106,9 +106,9 @@ function _(e) {
       checkpoint: f.a.SHOP_RENDERED,
       tab: v.AW.CATALOG,
       unpublishedCategoriesShown: E,
-      cacheDisabled: m
+      cacheDisabled: h
     })
-  }, [p, E, m, g, y.length]), g) ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)("div", {
+  }, [p, E, h, g, y.length]), g) ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)("div", {
     className: x.categories,
     children: [y.map((e, t) => (0, r.jsx)("div", {
       ref: t => a(e.skuId, t),

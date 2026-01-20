@@ -34,7 +34,7 @@ let v = e => {
       s = (0, u.a)()(a),
       i = (0, f.l)(s);
     return {
-      products: (0, h.St)(i)
+      products: (0, m.St)(i)
     }
   })(t, n, O), y = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(_.length > 0) && n.rankedSkuIds.every(e => {
     var t;
@@ -53,7 +53,7 @@ let v = e => {
           pageSection: "top 4",
           categoryPosition: 0
         },
-        children: (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(h.Z, {
           category: S,
           rewardSkuId: n.rewardSkuId
         })

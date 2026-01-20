@@ -47,7 +47,7 @@ function T() {
       var t;
       return null == (t = v.Z.getGuild(e)) ? true : t.name
     }),
-    n = (0, l.Wu)([b.Z], () => [...y.d9, ...y.QT].filter(t => null != e && (0, p.OY)(t, e))),
+    n = (0, l.Wu)([x.Z], () => [...y.d9, ...y.QT].filter(t => null != e && (0, p.OY)(t, e))),
     r = (0, l.Wu)([g.Z], () => {
       var t;
       return null != e && null != (t = g.Z.getAppliedGuildBoostsForGuild(e)) ? t : []
@@ -125,7 +125,7 @@ function T() {
           label: (0, y.eq)(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, x.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, b.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })
@@ -137,7 +137,7 @@ function T() {
           label: (0, y.eq)(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, x.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, b.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })

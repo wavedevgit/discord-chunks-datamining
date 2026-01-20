@@ -41,11 +41,11 @@ function O(e) {
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != E, B = r.useRef(null), W = r.useRef(null), H = null == Z || null == _ ? null : P ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != E, W = r.useRef(null), B = r.useRef(null), H = null == Z || null == _ ? null : P ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
-    ref: W,
+    ref: B,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: Z
@@ -58,7 +58,7 @@ function O(e) {
     }) : null]
   }) : (0, i.jsx)(d.Button, {
     size: "sm",
-    buttonRef: B,
+    buttonRef: W,
     disabled: w,
     onClick: _,
     text: Z
@@ -96,8 +96,8 @@ function O(e) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
   }, [k, null == E ? true : E.application.id, U]);
-  let G = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.J2, {
-      targetElementRef: P ? W : B,
+  let G = U && (null != B.current || null != W.current) ? (0, i.jsx)(c.J2, {
+      targetElementRef: P ? B : W,
       title: j.intl.string(j.t.ufFDiC),
       body: j.intl.string(j.t.TyMJwC),
       onRequestClose: () => {

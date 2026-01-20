@@ -42,7 +42,7 @@ var Chunk54381 = require("./54381.js"),
 function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : true;
-  h.ZP.trackWithMetadata(M.rMx.SETTINGS_PANE_VIEWED, {
+  h.ZP.trackWithMetadata(L.rMx.SETTINGS_PANE_VIEWED, {
     settings_type: "channel",
     origin_pane: t,
     destination_pane: e,
@@ -68,7 +68,7 @@ class k extends Chunk473749.PureComponent {
       canManageWebhooks: s,
       canUnlinkChannel: o
     } = this.props;
-    (a || r || s || o) && (i !== M.QZA.CLOSED || i === t) && (r || l !== M.CoT.PERMISSIONS) && (s || o || l !== M.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
+    (a || r || s || o) && (i !== L.QZA.CLOSED || i === t) && (r || l !== L.CoT.PERMISSIONS) && (s || o || l !== L.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
   }
   render() {
     let {
@@ -86,7 +86,7 @@ class k extends Chunk473749.PureComponent {
     return null == l ? null : (0, i.jsx)(d.ZP, {
       theme: e,
       sidebarTheme: t,
-      section: null != n ? n : M.CoT.OVERVIEW,
+      section: null != n ? n : L.CoT.OVERVIEW,
       onSetSection: o.zc,
       onClose: c.xf,
       sections: function(e) {
@@ -100,7 +100,7 @@ class k extends Chunk473749.PureComponent {
           canUnlinkChannel: h
         } = e, p = (0, m.KS)(t), {
           GUILD_CATEGORY: b
-        } = M.d4z, x = v.Ec.has(t.type), j = t.type === b ? A.intl.string(A.t.ifbXnL) : x ? t.isForumPost() ? A.intl.string(A.t.nEOg1N) : A.intl.string(A.t.H7vTe2) : A.intl.string(A.t["8D8Rsb"]);
+        } = L.d4z, x = v.Ec.has(t.type), j = t.type === b ? A.intl.string(A.t.ifbXnL) : x ? t.isForumPost() ? A.intl.string(A.t.nEOg1N) : A.intl.string(A.t.H7vTe2) : A.intl.string(A.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
@@ -118,32 +118,32 @@ class k extends Chunk473749.PureComponent {
             }) : null]
           }) : A.intl.string(A.t.XPDhcc)
         }, {
-          section: M.CoT.OVERVIEW,
+          section: L.CoT.OVERVIEW,
           label: A.intl.string(A.t["/dp6yY"]),
           ariaLabel: A.intl.string(A.t["/dp6yY"]),
           element: R.Z,
           notice: {
             element: R.G,
-            stores: [O.Z]
+            stores: [S.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
         }, {
-          section: M.CoT.PERMISSIONS,
+          section: L.CoT.PERMISSIONS,
           label: A.intl.string(A.t.xrmhRX),
           element: f.Z,
           notice: {
-            element: L.n,
+            element: M.n,
             stores: [C.Z]
           },
           predicate: () => l && !x
         }, {
-          section: M.CoT.INSTANT_INVITES,
+          section: L.CoT.INSTANT_INVITES,
           label: A.intl.string(A.t["9F90ic"]),
           element: I.Z,
           type: u.bT.CUSTOM,
           predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
         }, {
-          section: M.CoT.INTEGRATIONS,
+          section: L.CoT.INTEGRATIONS,
           label: A.intl.string(A.t.s69NLF),
           ariaLabel: A.intl.string(A.t.s69NLF),
           element: P.Z,
@@ -155,10 +155,10 @@ class k extends Chunk473749.PureComponent {
         }, {
           section: u.ID.DIVIDER
         }, {
-          section: M.CoT.DELETE,
+          section: L.CoT.DELETE,
           onClick() {
             (0, T.w)(t, function() {
-              w.S.subscribeOnce(M.CkL.LAYER_POP_COMPLETE, () => {
+              w.S.subscribeOnce(L.CkL.LAYER_POP_COMPLETE, () => {
                 (0, o.zz)(t.id)
               }), (0, c.xf)()
             })
@@ -189,17 +189,17 @@ function B() {
   let {
     channel: e,
     analyticsLocation: t
-  } = (0, r.cj)([O.Z], () => O.Z.getProps()), n = (0, r.e7)([O.Z], () => O.Z.getFormState()), l = (0, r.e7)([O.Z], () => O.Z.getSection()), a = (0, r.e7)([j.Z], () => j.Z.theme), s = (0, b.Ll)(), o = (0, x.C7)(e), c = (0, x.Xb)(e), {
+  } = (0, r.cj)([S.Z], () => S.Z.getProps()), n = (0, r.e7)([S.Z], () => S.Z.getFormState()), l = (0, r.e7)([S.Z], () => S.Z.getSection()), a = (0, r.e7)([j.Z], () => j.Z.theme), s = (0, b.Ll)(), o = (0, x.C7)(e), c = (0, x.Xb)(e), {
     canManageChannels: d,
     canManageRoles: u,
     canManageWebhooks: h,
     canUnlinkChannel: g
-  } = (0, r.cj)([S.Z], () => ({
-    canManageChannels: S.Z.can(M.Plq.MANAGE_CHANNELS, e),
-    canManageRoles: null != e && S.Z.can(M.Plq.MANAGE_ROLES, e),
-    canManageWebhooks: null != e && S.Z.can(M.Plq.MANAGE_WEBHOOKS, e),
-    canUnlinkChannel: (0, p.C)(e, S.Z)
-  })), m = (0, r.e7)([Z.Z], () => Z.Z.getChannel(null == e ? true : e.parent_id));
+  } = (0, r.cj)([Z.Z], () => ({
+    canManageChannels: Z.Z.can(L.Plq.MANAGE_CHANNELS, e),
+    canManageRoles: null != e && Z.Z.can(L.Plq.MANAGE_ROLES, e),
+    canManageWebhooks: null != e && Z.Z.can(L.Plq.MANAGE_WEBHOOKS, e),
+    canUnlinkChannel: (0, p.C)(e, Z.Z)
+  })), m = (0, r.e7)([O.Z], () => O.Z.getChannel(null == e ? true : e.parent_id));
   return (0, i.jsx)(k, {
     channel: e,
     category: m,

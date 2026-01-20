@@ -105,7 +105,8 @@ let y = (0, Chunk313201.hQ)(),
         serialize: R,
         clear: D,
         clearable: null != S,
-        maxVisibleItems: 8
+        maxVisibleItems: 8,
+        "data-migration-pending": true
       })]
     })
   })

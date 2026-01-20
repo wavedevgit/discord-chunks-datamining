@@ -54,18 +54,18 @@ function j(e, t) {
 
 function y() {
   var e, t;
-  let [n, i] = (0, r.useState)(false), [s, d] = (0, r.useState)(false), [h, x] = (0, r.useState)(null), y = (0, u.ZP)(e => e.toolsCache), {
+  let [n, i] = (0, r.useState)(false), [s, d] = (0, r.useState)(false), [h, b] = (0, r.useState)(null), y = (0, u.ZP)(e => e.toolsCache), {
     setToolsCache: T,
     removeToolsCache: O
   } = (0, u.L3)(), {
     setImgCache: N
   } = (0, u.W_)(), P = (0, r.useCallback)(e => {
     let t = y[e];
-    null != t && x({
+    null != t && b({
       src: t.url,
       palette: t.palette,
       preview: true
-    }), x(t => null == t ? {
+    }), b(t => null == t ? {
       src: e,
       palette: m.jD,
       preview: true
@@ -74,7 +74,7 @@ function y() {
       preview: true
     }))
   }, [y]), w = (0, r.useCallback)(e => {
-    x(t => null == t ? null : j(v({}, t), {
+    b(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
@@ -122,7 +122,7 @@ function y() {
         }), (0, a.jsx)(o.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: b.pA,
+          icons: x.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
@@ -332,17 +332,17 @@ function O(e) {
         className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, a.jsx)(x.Z, {
+      }), (0, a.jsx)(b.Z, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
         className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(x.Z, {
+        children: [(0, a.jsx)(b.Z, {
           selected: true,
           nameplate: t
-        }), (0, a.jsx)(x.Z, {
+        }), (0, a.jsx)(b.Z, {
           selected: true
         })]
       })]

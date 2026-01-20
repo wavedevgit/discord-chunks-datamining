@@ -164,7 +164,7 @@ let et = e => {
     }
   }, [ec]);
   let ew = l.useCallback(e => {
-      e === Q.evJ.INVALID_FORM_BODY ? ey(K.intl.string(K.t.VjAAuP)) : ef ? ey(K.intl.string(q.default.psKFdJ)) : ey(K.intl.string(K.t.h6D8Vy))
+      e === Q.evJ.INVALID_FORM_BODY ? ey(K.intl.string(K.t.VjAAuP)) : ef ? ey(K.intl.string(J.default.psKFdJ)) : ey(K.intl.string(K.t.h6D8Vy))
     }, [ef]),
     eM = l.useCallback(() => {
       let t = ["", e.successNodeId];
@@ -201,34 +201,34 @@ let et = e => {
     eU = (0, c.U)(),
     eL = (0, o.zu)(),
     eG = eU && eL.length > 0 && null != $(t, "share_with_parents"),
-    eH = n.name === u.BM.MEDIA_TAKEDOWN;
+    eW = n.name === u.BM.MEDIA_TAKEDOWN;
   return (0, r.jsxs)("div", {
-    className: J.container,
+    className: q.container,
     onKeyDown: eR,
     children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       direction: s.Z.Direction.VERTICAL,
-      className: J.header,
+      className: q.header,
       children: [(0, r.jsx)(G.Z, {
         element: $(t, "success")
       }), (0, r.jsx)(P.Z, {
         node: t,
         isModeratorReport: ef,
-        isTidaReport: eH
+        isTidaReport: eW
       }), (0, r.jsx)(k.Z, {
         node: t
       })]
     }), (0, r.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: J.body,
-      children: [null != ed && (0, r.jsx)(V.Z, {
+      className: q.body,
+      children: [null != ed && (0, r.jsx)(H.Z, {
         element: ed
-      }), null != ep && (0, r.jsx)(H.Z, {
+      }), null != ep && (0, r.jsx)(W.Z, {
         element: ep
       }), null != $(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(w.Z, {
         message: n.record
-      }), null != $(t, "user_preview") && "user" === n.name ? (0, r.jsx)(W.Z, {
+      }), null != $(t, "user_preview") && "user" === n.name ? (0, r.jsx)(V.Z, {
         user: n.record
       }) : null, null != $(t, "widget_preview") && "widget" === n.name ? (0, r.jsx)(F.Z, {
         widget: n.widget,
@@ -311,7 +311,7 @@ let et = e => {
         onChange: ek,
         state: eC
       }), (null != t.children && t.children.length > 0 || null != eu && eu.length > 0) && (0, r.jsxs)("div", {
-        className: J.listContainer,
+        className: q.listContainer,
         children: [(0, r.jsx)(x.Z, {
           node: t,
           onSelectChild: eE,
@@ -335,7 +335,7 @@ let et = e => {
       canNavigateBack: en.length > 0
     }), (0, r.jsx)(a.olH, {
       "data-migration-pending": true,
-      className: J.closeButton,
+      className: q.closeButton,
       onClick: el
     })]
   })

@@ -54,25 +54,30 @@ function N(e) {
     r = Math.ceil(n.getDate() / 7),
     i = e.format("dddd"),
     a = [{
+      id: "none",
       value: d.z.NONE,
       label: p.intl.string(p.t["0bK0B1"])
     }, {
+      id: "weekly",
       value: d.z.WEEKLY,
       label: p.intl.formatToPlainString(p.t["B8/yfp"], {
         weekday: i
       })
     }, {
+      id: "biweekly",
       value: d.z.BIWEEKLY,
       label: p.intl.formatToPlainString(p.t["z+aIuX"], {
         weekday: i
       })
     }, {
+      id: "monthly",
       value: d.z.MONTHLY,
       label: p.intl.formatToPlainString(p.t.mjOEBk, {
         nth: r,
         weekday: i
       })
     }, {
+      id: "yearly",
       value: d.z.YEARLY,
       label: p.intl.formatToPlainString(p.t["5DFcVl"], {
         date: n.toLocaleString(p.intl.currentLocale, {
@@ -82,9 +87,11 @@ function N(e) {
       })
     }];
   return A.has(n.getDay()) ? (null == (t = s.default.getCurrentUser()) ? true : t.isStaff()) && a.push({
+    id: "weekendOnly",
     value: d.z.WEEKEND_ONLY,
     label: p.intl.string(p.t.hRpynV)
   }) : a.push({
+    id: "weekdayOnly",
     value: d.z.WEEKDAY_ONLY,
     label: p.intl.string(p.t["jYR/MY"])
   }), a

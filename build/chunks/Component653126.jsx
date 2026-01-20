@@ -42,15 +42,15 @@ let O = Chunk473749.memo(function(e) {
       onClickPrimaryCTA: A,
       onClickSecondaryCTA: Z,
       onMouseEnter: D,
-      onMouseLeave: L,
-      onFocus: M,
+      onMouseLeave: M,
+      onFocus: L,
       onBlur: U,
       primaryCTAText: B,
       secondaryCTAIcon: F,
       productNameClassName: G,
       badgeClassName: V,
-      cardClassName: z,
-      prioritizedCurrency: W,
+      cardClassName: W,
+      prioritizedCurrency: z,
       onClickAnalytics: H
     } = e, {
       previewingVariantIndex: q,
@@ -69,20 +69,20 @@ let O = Chunk473749.memo(function(e) {
         ref: ee,
         onClick: null != R ? R : ea,
         "aria-label": $,
-        className: l()(z, T.productCardContainer, {
+        className: l()(W, T.productCardContainer, {
           [T.hovered]: et
         }),
-        onFocus: () => null == M ? true : M(t.skuId),
+        onFocus: () => null == L ? true : L(t.skuId),
         onBlur: () => null == U ? true : U(t.skuId),
         onMouseEnter: () => null == D ? true : D(t.skuId),
-        onMouseLeave: () => null == L ? true : L(t.skuId),
+        onMouseLeave: () => null == M ? true : M(t.skuId),
         children: (0, a.jsxs)("div", {
           className: T.productCardContentContainer,
           children: [(0, a.jsx)("div", {
             className: l()(T.productPreviewContainer, {
               [T.hasBottomContent]: !i || el || eo
             }),
-            children: (0, a.jsx)(x.Z, {
+            children: (0, a.jsx)(b.Z, {
               skuId: t.skuId,
               isCardHovered: et,
               overrideVariantIndex: q
@@ -93,7 +93,7 @@ let O = Chunk473749.memo(function(e) {
               skuId: t.skuId,
               badgeOverride: I,
               className: V,
-              prioritizedCurrency: W,
+              prioritizedCurrency: z,
               skipLimitedTimeCheck: k
             }), !n && (0, a.jsx)(C.Z, {
               skuId: t.skuId,
@@ -114,9 +114,9 @@ let O = Chunk473749.memo(function(e) {
                   }), !N && (0, a.jsx)("div", {
                     className: T.footerInfoShrinkOnHover,
                     "aria-hidden": true,
-                    children: (0, a.jsx)(b.Z, {
+                    children: (0, a.jsx)(x.Z, {
                       skuId: t.skuId,
-                      prioritizedCurrency: W
+                      prioritizedCurrency: z
                     })
                   })]
                 }), er && (0, a.jsx)(y.Z, {
@@ -136,14 +136,14 @@ let O = Chunk473749.memo(function(e) {
                     cardRef: ee,
                     onClick: A,
                     text: B,
-                    prioritizedCurrency: W,
+                    prioritizedCurrency: z,
                     onClickAnalytics: H
                   }), !w && (0, a.jsx)(v.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: Z,
                     icon: F,
-                    prioritizedCurrency: W,
+                    prioritizedCurrency: z,
                     onClickAnalytics: H
                   })]
                 })

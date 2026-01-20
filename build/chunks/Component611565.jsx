@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -40,7 +40,7 @@ let f = [{
       })
     }
   }],
-  x = [{
+  b = [{
     key: "channelName",
     cellClassName: i()(Chunk616182.cell, Chunk616182.channelName),
     render(e) {
@@ -78,7 +78,7 @@ let f = [{
     }
   }];
 
-function b() {
+function x() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
@@ -86,7 +86,7 @@ function b() {
     isLoading: n,
     hasLoadedEver: r,
     hasPreloaded: i,
-    hasMoreToLoad: b,
+    hasMoreToLoad: x,
     isLoadingComplete: g
   } = (0, l.cj)([u.Z], () => ({
     isLoading: u.Z.isLoading,
@@ -169,7 +169,7 @@ function b() {
         }), (0, a.jsxs)("div", {
           children: ["Has Loaded Ever: ", r ? "✅" : "❌"]
         }), (0, a.jsxs)("div", {
-          children: ["Has More To Load: ", b ? "✅" : "❌"]
+          children: ["Has More To Load: ", x ? "✅" : "❌"]
         }), (0, a.jsxs)("div", {
           children: ["Is Loading Complete: ", g ? "✅" : "❌"]
         }), (0, a.jsxs)("div", {
@@ -182,7 +182,7 @@ function b() {
         }), (0, a.jsxs)("div", {
           children: ["Total Channels: ", Object.keys(j).length]
         }), (0, a.jsx)(c.Z, {
-          columns: x,
+          columns: b,
           data: Object.entries(j).map(e => {
             var t, n;
             let [a, r] = e;

@@ -2,72 +2,53 @@
 /** chunk id: 574384, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => u
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk793030 = require("./793030.js"),
-  Chunk993365 = require("./993365.js"),
-  Chunk668339 = require("./668339.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk489863 = require("./489863.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk829478 = require("./829478.js");
-let d = 5;
+let c = 5;
 
-function f(e) {
+function u(e) {
   var t;
   let {
     selectedGuildId: n,
-    selectedChannelId: f,
-    onChannelChange: p,
-    error: _
-  } = e, [h, m] = i.useState(null), g = i.useRef(false);
+    selectedChannelId: u,
+    onChannelChange: d,
+    error: f
+  } = e, [p, _] = i.useState(null), h = i.useRef(false);
   if (i.useEffect(() => {
       async function e(e) {
-        let t = await (0, l.UR)(e);
-        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), m({
+        let t = await (0, o.UR)(e);
+        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), _({
           guildId: e,
           channels: t
-        }), g.current = true)
+        }), h.current = true)
       }
-      m(null), null == n ? p(null) : e(n)
-    }, [p, n]), i.useEffect(() => {
-      g.current && (null == h ? null != f && p(null) : h.channels.some(e => e.id === f) || p(null))
-    }, [h, p, f, n]), null == n) return null;
-  let E = null == h || h.guildId !== n ? [] : (null != (t = null == h ? true : h.channels) ? t : []).map(e => ({
+      _(null), null == n ? d(null) : e(n)
+    }, [d, n]), i.useEffect(() => {
+      h.current && (null == p ? null != u && d(null) : p.channels.some(e => e.id === u) || d(null))
+    }, [p, d, u, n]), null == n) return null;
+  let m = null == p || p.guildId !== n ? [] : (null != (t = null == p ? true : p.channels) ? t : []).map(e => ({
+    id: e.id,
     value: e.id,
     label: e.name
   }));
-  return (0, r.jsxs)("div", {
-    className: u.selectorGroup,
-    children: [(0, r.jsx)(a.X6q, {
-      variant: "heading-deprecated-12/semibold",
-      className: u.sectionLabel,
-      children: c.intl.string(c.t["8qKd+J"])
-    }), null != _ && "" !== _ ? (0, r.jsx)(o.x, {
-      variant: "text-xs/normal",
-      color: "text-feedback-critical",
-      children: _
-    }) : null, (0, r.jsx)(s.d, {
-      wrapperClassName: u.select,
-      maxVisibleItems: d,
-      onChange: p,
-      placeholder: c.intl.string(c.t["Re/64R"]),
-      options: E,
-      value: f,
-      renderOptionLabel: e => (0, r.jsx)(o.x, {
-        variant: "text-md/normal",
-        children: e.label
-      }),
-      renderOptionValue: e => (0, r.jsx)(o.x, {
-        variant: "text-md/normal",
-        children: e[0].label
-      })
-    }), (0, r.jsx)(o.x, {
-      variant: "text-xs/normal",
-      color: "text-default",
-      className: u.label,
-      children: c.intl.string(c.t.kQXMfN)
-    })]
+  return (0, r.jsx)("div", {
+    className: l.selector,
+    children: (0, r.jsx)(a.VcW, {
+      label: s.intl.string(s.t["8qKd+J"]),
+      helperText: s.intl.string(s.t.kQXMfN),
+      selectionMode: "single",
+      maxOptionsVisible: c,
+      errorMessage: f,
+      onSelectionChange: d,
+      placeholder: s.intl.string(s.t["Re/64R"]),
+      options: m,
+      value: null != u ? u : true
+    })
   })
 }

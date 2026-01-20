@@ -97,8 +97,8 @@ function ei(e) {
     ref: eh,
     height: ef
   } = (0, d.ZP)(), {
-    isHoveringOrFocusing: ex,
-    isHovering: eb
+    isHoveringOrFocusing: eb,
+    isHovering: ex
   } = (0, h.Z)(eh);
   r.useEffect(() => {
     null == ei || ei(eh.current)
@@ -107,14 +107,14 @@ function ei(e) {
   }), () => V.Z.setState({
     isOpen: false
   })), []);
-  let eg = (0, s.e7)([M.Z], () => M.Z.getStatus(t.id)),
-    ev = L.Cr.useSetting(),
+  let eg = (0, s.e7)([L.Z], () => L.Z.getStatus(t.id)),
+    ev = M.Cr.useSetting(),
     ej = (0, Y.F)(ev),
     ey = (0, s.e7)([U.Z], () => U.Z.hidePersonalInformation),
     eC = (0, g.p)(),
-    e_ = L.Sb.useSetting(),
+    e_ = M.Sb.useSetting(),
     eS = (0, Y.I)(eg),
-    eE = (0, W.g)(n),
+    eE = (0, z.g)(n),
     eT = (0, j.Z)({
       analyticsLocations: em
     }),
@@ -125,7 +125,7 @@ function ei(e) {
     eP = r.useRef(null),
     ew = r.useRef(null),
     eI = r.useRef((0, V.Z)(e => e.shouldRenderTenureLevelUp)),
-    ek = r.useMemo(() => (0, x.Z)(), []),
+    ek = r.useMemo(() => (0, b.Z)(), []),
     [eR, eA] = r.useState(true);
   r.useEffect(() => {
     setTimeout(() => {
@@ -139,9 +139,9 @@ function ei(e) {
       }, ep, e))
     },
     eD = (null == eu ? true : eu.widgets) != null && eu.widgets.length > 0,
-    eL = eD ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [eM, eU] = (0, b.US)(eL),
-    eB = eM === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
+    eM = eD ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    [eL, eU] = (0, x.US)(eM),
+    eB = eL === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eF = r.useCallback(() => {
       eU($.L.USER_DISMISS), n()
     }, [eU, n]),
@@ -149,8 +149,8 @@ function ei(e) {
       ec && null != eo || (eT(), eF())
     }, [eT, eF, ec, eo]),
     eV = ec && null != eo,
-    ez = (0, z.K)(eo, em, eB, n, eF),
-    eW = (0, p.q5)({
+    eW = (0, W.K)(eo, em, eB, n, eF),
+    ez = (0, p.q5)({
       location: "UserProfileAccountPopout"
     }),
     eH = (0, p.hX)({
@@ -218,7 +218,7 @@ function ei(e) {
               }),
               nicknameIcons: (0, a.jsx)(A.Z, {
                 user: t,
-                isVisible: ex
+                isVisible: eb
               })
             }), (0, a.jsx)(D.Z, {
               user: t,
@@ -255,7 +255,7 @@ function ei(e) {
                         navId: "edit-profile-submenu",
                         "aria-label": et.intl.string(et.t.szTA8E),
                         onClose: t,
-                        children: ez
+                        children: eW
                       })
                     } : true,
                     trailing: eB ? (0, a.jsx)(c.IGR, {
@@ -368,9 +368,9 @@ function ei(e) {
             })]
           }), (null == eu ? true : eu.profileEffect) != null && !eI.current && (0, a.jsx)(y.Z, {
             skuId: eu.profileEffect.skuId,
-            isHovering: eb
+            isHovering: ex
           })]
-        }), !eV && eW && eH ? (0, a.jsx)(H.Z, {
+        }), !eV && ez && eH ? (0, a.jsx)(H.Z, {
           targetElementRef: ew,
           onClose: n
         }) : null, (0, a.jsx)(v.Z, {})]

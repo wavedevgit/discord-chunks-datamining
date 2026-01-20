@@ -21,15 +21,15 @@ let m = Chunk473749.forwardRef((e, t) => {
     glowBlur: p = .4,
     percentCompleteText: h,
     percentCompleteTextVariant: f = "text-lg/medium",
-    children: x
-  } = e, b = (0, c.EK)(n, r > 0), g = i / 2, v = i / 2 - m / 2, j = 2 * Math.PI * v, y = j - r * j, C = {
+    children: b
+  } = e, x = (0, c.EK)(n, r > 0), g = i / 2, v = i / 2 - m / 2, j = 2 * Math.PI * v, y = j - r * j, C = {
     strokeDasharray: "".concat(j, " ").concat(j),
     strokeDashoffset: y
   }, _ = {
     strokeDasharray: "".concat(j, " ").concat(j),
     strokeDashoffset: -r * j
   }, S = {
-    boxShadow: "0 0 20px 0px ".concat(b.glow)
+    boxShadow: "0 0 20px 0px ".concat(x.glow)
   }, {
     progressTextAnimation: E
   } = (0, o.q_F)({
@@ -42,7 +42,7 @@ let m = Chunk473749.forwardRef((e, t) => {
     children: [(0, a.jsxs)("div", {
       className: u.inner,
       style: S,
-      children: [x, (0, a.jsxs)(s.animated.div, {
+      children: [b, (0, a.jsxs)(s.animated.div, {
         style: {
           opacity: E
         },
@@ -85,10 +85,10 @@ let m = Chunk473749.forwardRef((e, t) => {
           y2: "0%",
           children: [(0, a.jsx)("stop", {
             offset: "0%",
-            stopColor: b.backgroundTop
+            stopColor: x.backgroundTop
           }), (0, a.jsx)("stop", {
             offset: "100%",
-            stopColor: b.backgroundBottom
+            stopColor: x.backgroundBottom
           })]
         })]
       }), (0, a.jsx)("circle", {
@@ -107,7 +107,7 @@ let m = Chunk473749.forwardRef((e, t) => {
         r: v,
         cx: g,
         cy: g,
-        stroke: b.foreground,
+        stroke: x.foreground,
         style: C
       })]
     })]

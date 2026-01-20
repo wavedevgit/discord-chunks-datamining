@@ -2,7 +2,7 @@
 /** chunk id: 320596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ie: () => j,
-  mv: () => g
+  mv: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk930180 = require("./930180.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk182731 = require("./182731.js");
-let g = e => {
+let x = e => {
     let {
       channelId: t
     } = e;
@@ -30,8 +30,8 @@ let g = e => {
       channelId: t
     } = e, n = (0, f._d)(t), r = (0, f.K3)(t);
     if (0 === n && 0 === r) return null;
-    let c = e => {
-      (0, s.vq)(e, e => {
+    let s = e => {
+      (0, c.vq)(e, e => {
         var n, r;
         return (0, l.jsx)(h, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ let g = e => {
       })
     };
     return n > 0 && r > 0 ? (0, l.jsxs)("div", {
-      className: x.blockedNotice,
+      className: g.blockedNotice,
       children: [(0, l.jsx)(a.t6m, {
         size: "lg",
         color: i.Z.unsafe_rawColors.RED_400.css
@@ -77,12 +77,12 @@ let g = e => {
         color: "text-default",
         children: m.intl.string(m.t["P/KFXz"])
       }), (0, l.jsx)(a.P3F, {
-        className: x.blockedButton,
-        onClick: c,
+        className: g.blockedButton,
+        onClick: s,
         children: m.intl.string(m.t.rUEjBe)
       })]
     }) : r > 0 ? (0, l.jsxs)("div", {
-      className: x.blockedNotice,
+      className: g.blockedNotice,
       children: [(0, l.jsx)(a.kZF, {
         size: "lg"
       }), (0, l.jsx)(a.Text, {
@@ -92,12 +92,12 @@ let g = e => {
           number: r
         })
       }), (0, l.jsx)(a.P3F, {
-        className: x.blockedButton,
-        onClick: c,
+        className: g.blockedButton,
+        onClick: s,
         children: m.intl.string(m.t.rUEjBe)
       })]
     }) : (0, l.jsxs)("div", {
-      className: x.blockedNotice,
+      className: g.blockedNotice,
       children: [(0, l.jsx)(a.t6m, {
         size: "lg",
         color: i.Z.unsafe_rawColors.RED_400.css
@@ -108,8 +108,8 @@ let g = e => {
           number: n
         })
       }), (0, l.jsx)(a.P3F, {
-        className: x.blockedButton,
-        onClick: c,
+        className: g.blockedButton,
+        onClick: s,
         children: m.intl.string(m.t.rUEjBe)
       })]
     })
@@ -119,11 +119,11 @@ let g = e => {
       user: t,
       showStatus: n,
       speaker: i,
-      channelId: s
-    } = e, f = (0, r.e7)([d.ZP], () => d.ZP.isModerator(t.id, s)), g = (0, r.e7)([o.Z], () => o.Z.isBlocked(t.id)), b = null;
+      channelId: c
+    } = e, f = (0, r.e7)([d.ZP], () => d.ZP.isModerator(t.id, c)), x = (0, r.e7)([o.Z], () => o.Z.isBlocked(t.id)), b = null;
     return n && (b = i ? m.intl.string(m.t.LqMmG2) : f ? m.intl.string(m.t.GMZqSi) : m.intl.string(m.t.suRApw)), (0, l.jsxs)("div", {
-      className: x.user,
-      children: [(0, l.jsx)(c.Z, {
+      className: g.user,
+      children: [(0, l.jsx)(s.Z, {
         src: t.getAvatarURL(null, 32),
         size: a.EFr.SIZE_32,
         muted: false,
@@ -133,12 +133,12 @@ let g = e => {
         renderIcon: i ? () => (0, l.jsx)(a.S6n, {
           size: "md",
           color: "currentColor",
-          className: x.icon
+          className: g.icon
         }) : null
       }, t.id), (0, l.jsxs)("div", {
-        className: x.userInfo,
+        className: g.userInfo,
         children: [(0, l.jsxs)("div", {
-          className: x.username,
+          className: g.username,
           children: [(0, l.jsx)(a.Text, {
             variant: n ? "text-md/normal" : "text-sm/normal",
             children: u.ZP.getName(t)
@@ -148,11 +148,11 @@ let g = e => {
             children: "#".concat(t.discriminator)
           })]
         }), (0, l.jsxs)("div", {
-          className: x.username,
+          className: g.username,
           children: [(0, l.jsx)(a.Text, {
             variant: "text-xs/normal",
-            color: g ? "text-feedback-critical" : "text-default",
-            children: g ? m.intl.string(m.t["4bDptI"]) : m.intl.string(m.t.tFY5Zb)
+            color: x ? "text-feedback-critical" : "text-default",
+            children: x ? m.intl.string(m.t["4bDptI"]) : m.intl.string(m.t.tFY5Zb)
           }), (0, l.jsxs)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
@@ -167,7 +167,7 @@ let g = e => {
       channelId: t
     } = e, n = (0, f.z)(t), r = (0, f.bA)(t);
     return (0, l.jsx)(a.Ttm, {
-      className: x.container,
+      className: g.container,
       children: [...n, ...r].map(e => {
         let {
           user: n

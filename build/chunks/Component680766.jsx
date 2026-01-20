@@ -148,7 +148,7 @@ let g = [{
           selectionMode: t,
           withLeadingAndTrailing: n
         } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]);
-        let [o, s] = i.useState(null), [l, u] = i.useState([]), d = y(n, a.asyncOptions);
+        let [o, s] = i.useState(true), [l, u] = i.useState([]), d = y(n, a.asyncOptions);
         return "single" === t ? (0, r.jsx)(c.P, _(f({}, a), {
           selectionMode: t,
           options: d,
@@ -284,7 +284,7 @@ let g = [{
           withLeadingAndTrailing: n,
           asyncOptions: a
         } = e, o = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
-        let [s, c] = i.useState(null), [u, d] = i.useState([]), p = y(n, a);
+        let [s, c] = i.useState(true), [u, d] = i.useState([]), p = y(n, a);
         return "single" === t ? (0, r.jsx)(l.V, _(f({}, o), {
           selectionMode: t,
           onSelectionChange: c,

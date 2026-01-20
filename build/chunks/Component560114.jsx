@@ -127,7 +127,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       if (null == n) return;
       p({
         networkError: true
-      }), f.ZP.createInvite(n, {
+      }), S.ZP.createInvite(n, {
         validate: null != t ? t : null,
         max_age: v,
         max_uses: I,
@@ -171,7 +171,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       inviteChannel: e,
       modalState: t
     } = this.props;
-    (0, h.yE)(t.flags, g.$.IS_GUEST_INVITE) && null != e && f.ZP.clearInviteFromStore(e.id)
+    (0, h.yE)(t.flags, g.$.IS_GUEST_INVITE) && null != e && S.ZP.clearInviteFromStore(e.id)
   }
   getInviteKey() {
     let {
@@ -307,7 +307,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       application: s
     } = this.props;
     if (n) return this.renderFriendsBody();
-    let r = (0, K.Z)(null != (e = this.getInviteKey()) ? e : ""),
+    let r = (0, z.Z)(null != (e = this.getInviteKey()) ? e : ""),
       a = D.default.getCurrentUser();
     u()(null != a, "InstantInviteModal: user cannot be undefined");
     let o = (0, P.eM)(t, a) ? en.intl.string(en.t.HFbByJ) : en.intl.string(en.t.ueBhA9);
@@ -338,7 +338,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       modalState: o
     } = this.props, {
       maxAge: u
-    } = o, d = null, c = (0, K.Z)(null != (e = this.getInviteKey()) ? e : "");
+    } = o, d = null, c = (0, z.Z)(null != (e = this.getInviteKey()) ? e : "");
     if (n) {
       let e = en.intl.string(en.t.MLkj7N);
       null != s ? e = en.intl.string(en.t["1b9neu"]) : null != r ? e = en.intl.string(en.t.iI1gMg) : null != l ? e = en.intl.string(en.t.KaWCyD) : (null == a ? true : a.isGuildStageVoice()) && (e = en.intl.string(en.t["2frWa3"])), d = (0, i.jsx)(x.gNt, {
@@ -475,7 +475,7 @@ class ec extends(l = Chunk473749.PureComponent) {
       };
       "" === e && "" !== n.query ? (i.sectionVisibility = er({}, n.defaultSectionVisibility), i.defaultSectionVisibility = {}) : "" !== e && "" === n.query && (i.defaultSectionVisibility = er({}, n.sectionVisibility), i.sectionVisibility = {}), null == (t = this._scroller) || t.scrollTo({
         to: 0
-      }), (0, S.C)(e), l(i)
+      }), (0, f.C)(e), l(i)
     }), es(this, "handleClearSearch", () => {
       this.handleQueryChange("")
     }), es(this, "handleToggleMaxAge", () => {
@@ -636,7 +636,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
         targetApplicationId: c
       })
     }, [A, P, d, c]),
-    [q, K, J, Q] = (0, v.Wu)([V.Z, L.ZP], () => [V.Z.getInviteSuggestionRows(), V.Z.getTotalSuggestionsCount() >= 1, V.Z.getInitialCounts(), null != r && null != A ? L.ZP.getVoiceStatesForChannel(A) : null], [A, r]),
+    [q, z, J, Q] = (0, v.Wu)([V.Z, L.ZP], () => [V.Z.getInviteSuggestionRows(), V.Z.getTotalSuggestionsCount() >= 1, V.Z.getInitialCounts(), null != r && null != A ? L.ZP.getVoiceStatesForChannel(A) : null], [A, r]),
     $ = s.useMemo(() => {
       let e = null != A ? A.id : null;
       return null != Z ? j.ZP.getProps(Z, e) : true
@@ -659,7 +659,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
     eg = null == r ? true : r.id,
     eh = (0, v.e7)([M.Z], () => M.Z.getStageInstanceByChannel(eg), [eg]);
   s.useEffect(() => {
-    (0, S.x)({
+    (0, f.x)({
       omitUserIds: ea,
       guild: a,
       channel: r,
@@ -667,7 +667,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
       inviteTargetType: P
     }).catch(ee.VqG)
   }, [ea, r, a, c, P]);
-  let [ep] = (0, b.Z)(null != c ? [c] : []), ev = null != F ? F.code : true, eI = null == F ? true : F.maxAge, em = null == F ? true : F.maxUses, ex = null == F ? true : F.temporary, ef = a.vanityURLCode, eS = null != ef && ef.length > 0, ey = !en && !(null == A ? true : A.isGuildVocal()) && eS, eE = null != (n = null == F ? true : F.flags) ? n : 0;
+  let [ep] = (0, b.Z)(null != c ? [c] : []), ev = null != F ? F.code : true, eI = null == F ? true : F.maxAge, em = null == F ? true : F.maxUses, ex = null == F ? true : F.temporary, eS = a.vanityURLCode, ef = null != eS && eS.length > 0, ey = !en && !(null == A ? true : A.isGuildVocal()) && ef, eE = null != (n = null == F ? true : F.flags) ? n : 0;
   en || (null == eh ? true : eh.invite_code) == null || (ev = eh.invite_code);
   let e_ = s.useMemo(() => ei ? (0, B.Qq)(q, Z) : null, [ei, q, Z]),
     [eb, eC] = s.useState({
@@ -714,7 +714,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
     } = eb,
     {
       enabled: eV
-    } = (0, z.J)(null == a ? true : a.id, "InstantInviteModal"),
+    } = (0, W.J)(null == a ? true : a.id, "InstantInviteModal"),
     eU = (0, Y.Z)(a),
     ek = eV && eU.length > 0,
     eG = s.useCallback(e => {
@@ -738,7 +738,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
       }) : en && null != e && (eT({
         networkError: true,
         showVanityURL: false
-      }), f.ZP.createInvite(e, {
+      }), S.ZP.createInvite(e, {
         max_age: eP,
         max_uses: eZ,
         target_type: P,
@@ -762,9 +762,9 @@ let eh = Chunk473749.forwardRef(function(e, t) {
     !ey && (eH || eq) && eL()
   }, [eL, eH, eq, ey]);
   let {
-    canCreateApplicationBypassInvites: ez,
-    isManualApprovalGuild: eK
-  } = (0, W.R)(a);
+    canCreateApplicationBypassInvites: eW,
+    isManualApprovalGuild: ez
+  } = (0, K.R)(a);
   return (0, i.jsx)(_.Gt, {
     value: T,
     children: (0, i.jsx)(ec, {
@@ -775,13 +775,13 @@ let eh = Chunk473749.forwardRef(function(e, t) {
       guild: a,
       guildScheduledEvent: u,
       streamUserId: d,
-      vanityURLCode: ef,
+      vanityURLCode: eS,
       targetType: P,
       targetUserId: d,
       application: ep,
       rows: q,
       sections: e_,
-      showFriends: K,
+      showFriends: z,
       initialCounts: J,
       code: ev,
       source: o,
@@ -791,13 +791,13 @@ let eh = Chunk473749.forwardRef(function(e, t) {
       onClose: I,
       canShowVanityURL: ey,
       isGuestInviteCreationToggleEnabled: eM && eN,
-      shouldHideTemporaryInviteToggle: eM && eN || eK,
+      shouldHideTemporaryInviteToggle: eM && eN || ez,
       modalState: eb,
       setModalState: eT,
       changePage: eA,
       onGenerateNewLink: eL,
       handleDone: eD,
-      isApplicationBypassToggleEnabled: ez && !el,
+      isApplicationBypassToggleEnabled: eW && !el,
       isRoleAssignmentEnabled: ek,
       assignableRoles: eU,
       onToggleRole: eG

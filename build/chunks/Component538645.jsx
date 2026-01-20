@@ -28,17 +28,17 @@ let g = "Make sure you're only uploading text files!",
       deleteConfig: s
     } = (0, f.n6)();
     return (0, a.jsxs)(c.P3F, {
-      className: b.previewCard,
+      className: x.previewCard,
       onClick: () => {
         l(i)
       },
       children: [(0, a.jsx)("div", {
-        className: b.previewCardImage,
+        className: x.previewCardImage,
         style: {
           backgroundImage: "url(".concat(null == (r = i.config) || null == (n = r.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
-        className: b.previewCardFooter,
+        className: x.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
           children: i.name
@@ -78,12 +78,12 @@ function j() {
     (0, p.Kr)(e.currentTarget.files, T, p.Eo)
   }, [T]);
   return (0, a.jsxs)("div", {
-    className: b.root,
+    className: x.root,
     children: [null == i && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)("div", {
-        className: b.col,
+        className: x.col,
         children: [(0, a.jsxs)("div", {
-          className: l()(b.section, b.row),
+          className: l()(x.section, x.row),
           children: [(0, a.jsx)(c.Heading, {
             variant: "heading-xl/bold",
             children: "Custom Profile Effects"
@@ -100,7 +100,7 @@ function j() {
             }
           })]
         }), (0, a.jsx)("div", {
-          className: b.customEffectsGrid,
+          className: x.customEffectsGrid,
           children: Object.values(e).map(e => (0, a.jsx)(v, {
             effect: e,
             onClick: e => {
@@ -109,9 +109,9 @@ function j() {
           }, e.skuId))
         })]
       }), (0, a.jsxs)("div", {
-        className: l()(b.row, b.end, b.section),
+        className: l()(x.row, x.end, x.section),
         children: [(0, a.jsxs)("div", {
-          className: b.uploadButton,
+          className: x.uploadButton,
           children: [(0, a.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "always-white",
@@ -135,7 +135,7 @@ function j() {
           }
         })]
       }), (0, a.jsx)("hr", {}), (0, a.jsxs)("div", {
-        className: b.section,
+        className: x.section,
         children: [(0, a.jsx)(c.Heading, {
           variant: "heading-xl/bold",
           children: "All Effects"
@@ -145,9 +145,9 @@ function j() {
             S(e)
           }
         }), (0, a.jsx)("div", {
-          className: b.pfxGrid,
+          className: x.pfxGrid,
           children: E.map(e => (0, a.jsx)(c.P3F, {
-            className: b.pfxListItem,
+            className: x.pfxListItem,
             style: {
               backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")
             },
@@ -162,7 +162,7 @@ function j() {
               })
             },
             children: (0, a.jsx)("div", {
-              className: b.pfxListItemFooter,
+              className: x.pfxListItemFooter,
               children: (0, a.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "always-white",
@@ -172,7 +172,7 @@ function j() {
           }, e.skuId))
         })]
       })]
-    }), null != i && (0, a.jsx)(x.Z, {
+    }), null != i && (0, a.jsx)(b.Z, {
       effect: i
     })]
   })

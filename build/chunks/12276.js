@@ -6,10 +6,10 @@ var t = "\ud800-\udfff",
   r = "[^" + t + "]",
   s = "(?:\ud83c[\udde6-\uddff]){2}",
   o = "[\ud800-\udbff][\udc00-\udfff]",
-  l = "(?:" + n + "|" + i + ")?",
-  a = "[\\ufe0e\\ufe0f]?",
-  c = "(?:\\u200d(?:" + [r, s, o].join("|") + ")" + a + l + ")*",
-  d = RegExp(i + "(?=" + i + ")|" + ("(?:" + [r + n + "?", n, s, o, "[" + t + "]"].join("|")) + ")" + (a + l + c), "g");
+  a = "(?:" + n + "|" + i + ")?",
+  l = "[\\ufe0e\\ufe0f]?",
+  c = "(?:\\u200d(?:" + [r, s, o].join("|") + ")" + l + a + ")*",
+  d = RegExp(i + "(?=" + i + ")|" + ("(?:" + [r + n + "?", n, s, o, "[" + t + "]"].join("|")) + ")" + (l + a + c), "g");
 module.exports = function(e) {
   return e.match(d) || []
 }

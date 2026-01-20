@@ -2,8 +2,8 @@
 /** chunk id: 621060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j,
-  Zj: () => b,
-  v0: () => x
+  Zj: () => x,
+  v0: () => b
 }), require("./388685.js");
 var a, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,8 +17,8 @@ var a, Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk252899 = require("./252899.jsx"),
   Chunk663618 = require("./663618.js"),
-  x = ((a = {}).NONE = "", a.DCF = "DCF", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
-let b = ["Experiments", "DCF", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
+  b = ((a = {}).NONE = "", a.DCF = "DCF", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
+let x = ["Experiments", "DCF", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
   g = Chunk473749.forwardRef(function(e, t) {
     let {
       id: n,
@@ -42,8 +42,8 @@ function v(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
-  } = e, l = i.useRef(new Map), [s, x] = i.useState(() => new Set), {
-    ref: b,
+  } = e, l = i.useRef(new Map), [s, b] = i.useState(() => new Set), {
+    ref: x,
     width: v
   } = (0, d.ZP)(), j = i.useRef(null), y = (0, h.F)(t, a);
   i.useEffect(() => {
@@ -52,8 +52,8 @@ function v(e) {
     let s = new Set,
       o = null != v ? v : 0;
     for (let c of (o -= null != (a = null == (e = l.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (i = null == (r = l.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? i : 0) < 0 && s.add(c.id);
-    x(s)
-  }, [t, v, b, n]);
+    b(s)
+  }, [t, v, x, n]);
   let C = i.useCallback(e => {
     let {
       closePopout: t
@@ -71,7 +71,7 @@ function v(e) {
     className: f.tabBarContainer,
     children: [(0, r.jsxs)("div", {
       className: f.tabBar,
-      ref: b,
+      ref: x,
       children: [t.map(e => {
         let {
           id: t,

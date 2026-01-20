@@ -207,7 +207,8 @@ function A(e) {
           type: u.RAz.SPINNING_CIRCLE
         }) : T(null == t.value ? true : D.get(t.value), t, f)
       },
-      renderOptionLabel: e => T(null == e.value ? true : D.get(e.value), e, f)
+      renderOptionLabel: e => T(null == e.value ? true : D.get(e.value), e, f),
+      "data-migration-pending": true
     }), null != x ? (0, r.jsxs)("div", {
       className: E.paymentSourceWarning,
       children: [(0, r.jsx)(u.Mgn, {

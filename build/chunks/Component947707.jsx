@@ -82,7 +82,8 @@ function p(e) {
       renderOptionLabel: e => (0, r.jsx)(s.Z, {
         option: e
       }),
-      isDisabled: u
+      isDisabled: u,
+      "data-migration-pending": true
     })]
   })
 }

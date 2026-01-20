@@ -1,41 +1,50 @@
 /** Chunk was on 18912 **/
 /** chunk id: 538211, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 });
 var Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx");
 
-function i(t) {
+function r(t) {
   let {
     isEndStream: n
   } = t;
   return [{
-    value: l.kr.BLACK_SCREEN,
-    label: n ? r.intl.string(r.t["0X5Zbq"]) : r.intl.string(r.t.fxiRNr)
+    id: "black-screen",
+    value: i.kr.BLACK_SCREEN,
+    label: n ? l.intl.string(l.t["0X5Zbq"]) : l.intl.string(l.t.fxiRNr)
   }, {
-    value: l.kr.BLURRY,
-    label: n ? r.intl.string(r.t.VVPQyy) : r.intl.string(r.t.E8jTMN)
+    id: "blurry",
+    value: i.kr.BLURRY,
+    label: n ? l.intl.string(l.t.VVPQyy) : l.intl.string(l.t.E8jTMN)
   }, {
-    value: l.kr.LAGGING,
-    label: n ? r.intl.string(r.t.ObEHd4) : r.intl.string(r.t.VoSJEQ)
+    id: "lagging",
+    value: i.kr.LAGGING,
+    label: n ? l.intl.string(l.t.ObEHd4) : l.intl.string(l.t.VoSJEQ)
   }, {
-    value: l.kr.OUT_OF_SYNC,
-    label: n ? r.intl.string(r.t.mYmwD3) : r.intl.string(r.t["+NluQm"])
+    id: "out-of-sync",
+    value: i.kr.OUT_OF_SYNC,
+    label: n ? l.intl.string(l.t.mYmwD3) : l.intl.string(l.t["+NluQm"])
   }, {
-    value: l.kr.AUDIO_MISSING,
-    label: n ? r.intl.string(r.t["Xwv41+"]) : r.intl.string(r.t.G2egzT)
+    id: "audio-missing",
+    value: i.kr.AUDIO_MISSING,
+    label: n ? l.intl.string(l.t["Xwv41+"]) : l.intl.string(l.t.G2egzT)
   }, {
-    value: l.kr.AUDIO_POOR,
-    label: n ? r.intl.string(r.t["fHey+d"]) : r.intl.string(r.t.aHOfIo)
+    id: "audio-poor",
+    value: i.kr.AUDIO_POOR,
+    label: n ? l.intl.string(l.t["fHey+d"]) : l.intl.string(l.t.aHOfIo)
   }, {
-    value: l.kr.STREAM_STOPPED,
-    label: r.intl.string(r.t.uEoqQp)
+    id: "stream-stopped",
+    value: i.kr.STREAM_STOPPED,
+    label: l.intl.string(l.t.uEoqQp)
   }, {
-    value: l.kr.VIBES_OFF,
-    label: r.intl.string(r.t["++JLL0"])
+    id: "vibes-off",
+    value: i.kr.VIBES_OFF,
+    label: l.intl.string(l.t["++JLL0"])
   }, {
-    value: l.kr.OTHER,
-    label: r.intl.string(r.t.emlT91)
+    id: "other",
+    value: i.kr.OTHER,
+    label: l.intl.string(l.t.emlT91)
   }]
 }

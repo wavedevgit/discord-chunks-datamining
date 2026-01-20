@@ -44,7 +44,7 @@ function u() {
 }
 
 function m() {
-  let [e, t] = r.useState(null), [n, i] = r.useState(null), [s, o] = r.useState(null), [c, u] = r.useState([]), m = r.useRef(null), [f, x] = r.useState(400), [b, g] = r.useState(400), v = r.useCallback(() => {
+  let [e, t] = r.useState(null), [n, i] = r.useState(null), [s, o] = r.useState(null), [c, u] = r.useState([]), m = r.useRef(null), [f, b] = r.useState(400), [x, g] = r.useState(400), v = r.useCallback(() => {
     setTimeout(() => {
       var e, t, n, a;
       o(null != (n = null == (e = m.current) ? true : e.getProperties()) ? n : {}), u(null != (a = null == (t = m.current) ? true : t.getArtboards()) ? a : []), i({})
@@ -96,7 +96,7 @@ function m() {
     }), null != e && (0, a.jsx)("div", {
       style: {
         width: f,
-        height: b
+        height: x
       },
       children: (0, a.jsx)(d.BmE, {
         src: e,
@@ -114,11 +114,11 @@ function m() {
           type: "number",
           label: "width",
           value: f.toString(),
-          onChange: e => x(parseInt(e))
+          onChange: e => b(parseInt(e))
         }), (0, a.jsx)(d.oil, {
           type: "number",
           label: "height",
-          value: b.toString(),
+          value: x.toString(),
           onChange: e => g(parseInt(e))
         })]
       }), (0, a.jsxs)(l.Kqy, {

@@ -23,11 +23,13 @@ function o() {
       })),
       t = Array.from(e.entries()).map(e => {
         let [t, {
-          name: n
+          name: n,
+          alpha2: r
         }] = e;
         return {
           value: t,
-          label: n
+          label: n,
+          alpha2: r
         }
       });
     return {

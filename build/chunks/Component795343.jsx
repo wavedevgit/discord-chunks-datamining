@@ -55,9 +55,9 @@ function y(e) {
   let D = (0, g.a)(),
     M = l.useMemo(() => D(P), [D, P]);
   l.useEffect(() => {
-    n || (0, m.n)({
+    n || (0, h.n)({
       sessionId: k,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: y,
       unpublishedCategoriesShown: I,
       cacheDisabled: T
@@ -108,7 +108,7 @@ function y(e) {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(m.Z, {
             skuId: e.skuId,
             onClickAnalytics: (0, C.wO)(e, y, j)
           }, e.skuId)

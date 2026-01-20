@@ -21,8 +21,8 @@ function u(e) {
     location: t
   }), m = (0, a.e7)([l.default], () => l.default.getCurrentUser()), p = (0, a.e7)([i.Z], () => null != m ? i.Z.getFirstWishlistId(m.id) : null), h = (0, r.Z)("wishlist_user_profile_account_popout_upsell"), f = (0, c.fR)({
     gameIds: d.RI
-  }), x = (0, c.Bz)({
+  }), b = (0, c.Bz)({
     gameIds: d.RI
   });
-  return u && n && null == p && (x || f) || h
+  return u && n && null == p && (b || f) || h
 }

@@ -57,9 +57,11 @@ class y {
     }
   }
   _createNewOption(e) {
-    let t = E(h, e);
+    let t = E(h, e),
+      n = this._createLabel(t);
     return {
-      label: this._createLabel(t),
+      id: t.toISOString(),
+      label: n,
       value: t
     }
   }
@@ -67,6 +69,7 @@ class y {
     let t = E(h, e),
       n = this._createLabel(t);
     return this._index[t.unix()] = t, this.options.push({
+      id: t.toISOString(),
       label: n,
       value: t
     }), this.options.sort(b), e

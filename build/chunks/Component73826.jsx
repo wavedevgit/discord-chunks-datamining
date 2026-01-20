@@ -29,7 +29,7 @@ let g = e => {
   } = r.useContext(p.xo), y = i ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
-      className: b.rewardTileContainer,
+      className: x.rewardTileContainer,
       style: {
         transform: (0, s.to)([j.to({
           range: [0, 1],
@@ -57,8 +57,8 @@ let g = e => {
         }
       })
     }), (0, a.jsxs)(s.animated.div, {
-      className: l()(b.rewardHighlightLogoCTA, {
-        [b.rewardHighlightLogoCTALabel]: i
+      className: l()(x.rewardHighlightLogoCTA, {
+        [x.rewardHighlightLogoCTALabel]: i
       }),
       style: {
         transform: (0, s.to)([j.to({
@@ -71,12 +71,12 @@ let g = e => {
       },
       children: [(0, a.jsx)("div", {
         className: l()({
-          [b.partnerBranding]: !i
+          [x.partnerBranding]: !i
         }),
         children: n
       }), (0, a.jsx)(s.animated.div, {
-        className: l()(b.rewardHighlightCTA, {
-          [b.rewardHighlightCTALabel]: i
+        className: l()(x.rewardHighlightCTA, {
+          [x.rewardHighlightCTALabel]: i
         }),
         style: {
           opacity: j.to({
@@ -88,7 +88,7 @@ let g = e => {
           color: "always-white",
           lineClamp: 1,
           variant: "text-xs/medium",
-          children: x.intl.string(x.t["3mgEQf"])
+          children: b.intl.string(b.t["3mgEQf"])
         })
       })]
     })]

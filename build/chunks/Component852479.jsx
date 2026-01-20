@@ -21,10 +21,10 @@ function p(e) {
   let {
     guild: t,
     onSubmit: i
-  } = e, p = (0, a.e7)([d.Z], () => d.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, a.e7)([d.Z], () => {
-    let e = d.Z.getNewMemberTimestamp(t.id);
+  } = e, p = (0, a.e7)([u.Z], () => u.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, a.e7)([u.Z], () => {
+    let e = u.Z.getNewMemberTimestamp(t.id);
     return o()(e).format("h:mm A")
-  }, [t.id]), g = (0, a.e7)([d.Z], () => d.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), j = l.useCallback(() => {
+  }, [t.id]), g = (0, a.e7)([u.Z], () => u.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), j = l.useCallback(() => {
     (0, C.YO)(t.id), null == i || i()
   }, [t.id, i]), x = l.useCallback(() => {
     g ? j() : (0, s.ZDy)(async () => {
@@ -64,7 +64,7 @@ function p(e) {
         }), n))
       }
     })
-  }, [j, g]), v = new Intl.NumberFormat(m.intl.currentLocale).format(p), y = (0, u.nX)(t.id), O = (0, u.xC)(t.id), H = l.useMemo(() => 1 + +!!y + +!!O, [y, O]);
+  }, [j, g]), v = new Intl.NumberFormat(m.intl.currentLocale).format(p), O = (0, d.nX)(t.id), y = (0, d.xC)(t.id), H = l.useMemo(() => 1 + +!!O + +!!y, [O, y]);
   return 0 === p ? null : (0, r.jsxs)("tr", {
     className: f.newMembersNotice,
     onClick: x,

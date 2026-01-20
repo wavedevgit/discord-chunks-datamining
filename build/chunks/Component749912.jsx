@@ -153,7 +153,8 @@ let u = [{
             }(e, n)
           }))
         },
-        serialize: String
+        serialize: String,
+        "data-migration-pending": true
       }), (0, a.jsx)(l.oil, {
         label: "Task Duration",
         value: String(n / s.Z.Seconds.MINUTE),

@@ -48,13 +48,13 @@ class j extends Chunk473749.Component {
       isBlocked: s
     } = this.props;
     if (!(0, p.hv)(t.type)) return null;
-    let o = a.Csw,
-      l = false;
-    return n ? r ? (e = x.intl.string(x.t["4ry6yi"]), o = a.gkL) : e = x.intl.string(x.t["0D/6Rz"]) : s ? (e = x.intl.string(x.t.PHzjvX), l = true) : e = x.intl.string(x.t.focH1t), (0, i.jsx)(h.Z.Icon, {
+    let o = l.Csw,
+      a = false;
+    return n ? r ? (e = x.intl.string(x.t["4ry6yi"]), o = l.gkL) : e = x.intl.string(x.t["0D/6Rz"]) : s ? (e = x.intl.string(x.t.PHzjvX), a = true) : e = x.intl.string(x.t.focH1t), (0, i.jsx)(h.Z.Icon, {
       icon: o,
       tooltip: e,
       onClick: this.handleClickCall,
-      disabled: l
+      disabled: a
     })
   }
   render() {
@@ -64,7 +64,7 @@ class j extends Chunk473749.Component {
       locked: n,
       channel: r,
       channelName: s,
-      guild: l,
+      guild: a,
       onMouseDown: c,
       onContextMenu: d,
       isPreviewingInGame: u,
@@ -75,7 +75,7 @@ class j extends Chunk473749.Component {
     return g && !n ? (0, i.jsxs)(E.ZP.Bar, {
       className: S.opacityHeader,
       children: [(0, i.jsx)(O.Z, {}), (0, i.jsx)(h.Z.Icon, {
-        icon: a.Dio,
+        icon: l.Dio,
         onClick: this.handleCloseOpacitySettings,
         tooltip: x.intl.string(x.t.cpT0Cq)
       })]
@@ -90,7 +90,7 @@ class j extends Chunk473749.Component {
           channelId: r.id,
           toolbar: this.renderWidgetButtons(),
           transparent: true,
-          children: [u || n || p ? null : (0, i.jsx)(a.Vni, {
+          children: [u || n || p ? null : (0, i.jsx)(l.Vni, {
             size: "custom",
             color: "currentColor",
             className: o()(S.dragIcon, t),
@@ -99,7 +99,7 @@ class j extends Chunk473749.Component {
           }), (0, f.ud)({
             channel: r,
             channelName: s
-          }), n ? null : (0, f.v0)(r, l)]
+          }), n ? null : (0, f.v0)(r, a)]
         })
       })
     })
@@ -145,11 +145,11 @@ class j extends Chunk473749.Component {
       } = this.props, s = n ? x.intl.string(x.t.cSu80j) : x.intl.string(x.t.cM8Vnm);
       return e ? null : (0, i.jsxs)(r.Fragment, {
         children: [this.renderCallButton(), n ? (0, i.jsx)(h.Z.Icon, {
-          icon: a._S3,
+          icon: l._S3,
           tooltip: x.intl.string(x.t.OVovCb),
           onClick: this.handleOpenOpacitySettings
         }) : null, (0, i.jsx)(h.Z.Icon, {
-          icon: n ? a.QVc : a.k5M,
+          icon: n ? l.QVc : l.k5M,
           tooltip: s,
           selected: n,
           onClick: t
@@ -177,14 +177,14 @@ function _(e) {
     }
     return r
   }(e, ["channel"]);
-  let r = (0, l.e7)([v.Z, m.Z], () => {
+  let r = (0, a.e7)([v.Z, m.Z], () => {
       let e = v.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
-    s = (0, l.e7)([b.Z], () => b.Z.getGuild(t.guild_id)),
-    o = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
-    a = (0, u.ZP)(t),
-    c = (0, l.e7)([y.Z], () => !!t.isDM() && null != t.getRecipientId() && y.Z.isBlocked(t.getRecipientId()));
+    s = (0, a.e7)([b.Z], () => b.Z.getGuild(t.guild_id)),
+    o = (0, a.e7)([g.Z], () => g.Z.isCallActive(t.id)),
+    l = (0, u.ZP)(t),
+    c = (0, a.e7)([y.Z], () => !!t.isDM() && null != t.getRecipientId() && y.Z.isBlocked(t.getRecipientId()));
   return (0, i.jsx)(j, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -198,7 +198,7 @@ function _(e) {
     return e
   }({
     channel: t,
-    channelName: a,
+    channelName: l,
     guild: s,
     channelHasActiveCall: o,
     userIsInChannelCall: null != r && r.id === t.id,

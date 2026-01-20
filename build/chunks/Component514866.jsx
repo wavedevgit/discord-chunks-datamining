@@ -25,15 +25,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk478411 = require("./478411.js");
 
 function C() {
-  let e = b.default.getCurrentUser(),
+  let e = x.default.getCurrentUser(),
     t = null == e ? true : e.isStaff(),
     r = h.Rt.useSetting();
   return (0, a.jsxs)(s.Ttm, {
     children: [(0, a.jsx)("div", {
       className: i()(j.buttonsContainer, y.marginBottom20),
-      children: (0, a.jsx)(f.g, {
-        isDevTools: true
-      })
+      children: (0, a.jsx)(f.g, {})
     }), (0, a.jsx)("div", {
       className: i()(j.buttonsContainer, y.marginBottom8),
       children: (0, a.jsx)(s.Button, {
@@ -51,7 +49,7 @@ function C() {
         size: "sm",
         text: "Launch Safety Tools Modal",
         onClick: () => (() => {
-          let e = x.Z.getChannelId(),
+          let e = b.Z.getChannelId(),
             t = null != e ? e : "21154681615024128";
           (0, s.ZDy)(async () => {
             let {

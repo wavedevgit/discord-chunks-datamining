@@ -1,140 +1,143 @@
 /** Chunk was on 22979 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk178635 = require("./178635.js"),
   Chunk115470 = require("./115470.js"),
-  Chunk246992 = require("./246992.js"),
   Chunk531578 = require("./531578.js"),
   Chunk746234 = require("./746234.js");
-let h = [{
+let m = [{
+  id: "seconds",
   label: "second(s)",
   value: 1e3
 }, {
+  id: "minutes",
   label: "minute(s)",
   value: 6e4
 }, {
+  id: "hours",
   label: "hour(s)",
   value: 36e5
 }, {
+  id: "days",
   label: "day(s)",
   value: 864e5
 }];
 
-function f() {
-  let [e, t] = r.useState(null), [n, f] = r.useState(0), [x, b] = r.useState(1e3), [g, v] = r.useState(0), j = (0, i.e7)([d.Z], () => {
+function p() {
+  let [e, t] = r.useState(null), [n, p] = r.useState(0), [h, f] = r.useState(1e3), [b, x] = r.useState(0), g = (0, i.e7)([c.Z], () => {
     var t;
-    return null === e ? null : null != (t = d.Z.getFeedbackConfig(m.nw[e])) ? t : c.R[m.nw[e]]
-  }), y = Object.entries(m.nw), C = y.slice(y.length / 2).map(e => {
+    return null === e ? null : null != (t = c.Z.getFeedbackConfig(d.nw[e])) ? t : o.R[d.nw[e]]
+  }), v = Object.entries(d.nw), j = v.slice(v.length / 2).map(e => {
     let [t] = e;
     return {
+      id: t,
       label: t,
       value: t
     }
-  }), _ = r.useMemo(() => null != e && g >= 0 && g <= 100 && n >= 0, [e, g, n]);
+  }), y = r.useMemo(() => null != e && b >= 0 && b <= 100 && n >= 0, [e, b, n]);
   return (0, a.jsx)("div", {
-    className: p.container,
-    children: (0, a.jsxs)(s.Kqy, {
+    className: u.container,
+    children: (0, a.jsxs)(l.Kqy, {
       gap: 32,
-      children: [(0, a.jsx)(l.y6, {
+      children: [(0, a.jsx)(l.PhF, {
         label: "Feedback Survey",
-        options: C,
+        options: j,
         value: e,
-        onChange: e => {
-          t(e)
-        },
-        popoutLayerContext: u.O$,
-        placeholder: "Select Feedback Survey"
-      }), (0, a.jsxs)(s.C3N, {
+        onSelectionChange: t,
+        placeholder: "Select Feedback Survey",
+        selectionMode: "single",
+        fullWidth: true
+      }), (0, a.jsxs)(l.C3N, {
         label: "Override Survey Cooldown",
-        children: [null != j && (0, a.jsxs)(a.Fragment, {
-          children: [(0, a.jsx)(s.Text, {
+        children: [null != g && (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(l.Text, {
             variant: "text-sm/semibold",
             children: "Current cooldown"
-          }), (0, a.jsx)(s.Text, {
+          }), (0, a.jsx)(l.Text, {
             variant: "text-sm/normal",
-            children: "".concat(j.cooldown / 1e3, " second(s) or")
-          }), (0, a.jsx)(s.Text, {
+            children: "".concat(g.cooldown / 1e3, " second(s) or")
+          }), (0, a.jsx)(l.Text, {
             variant: "text-sm/normal",
-            children: "".concat(j.cooldown / 6e4, " minute(s) or")
-          }), (0, a.jsx)(s.Text, {
+            children: "".concat(g.cooldown / 6e4, " minute(s) or")
+          }), (0, a.jsx)(l.Text, {
             variant: "text-sm/normal",
-            children: "".concat(j.cooldown / 36e5, " hour(s) or")
-          }), (0, a.jsx)(s.Text, {
+            children: "".concat(g.cooldown / 36e5, " hour(s) or")
+          }), (0, a.jsx)(l.Text, {
             variant: "text-sm/normal",
-            children: "".concat(j.cooldown / 864e5, " day(s)")
+            children: "".concat(g.cooldown / 864e5, " day(s)")
           })]
-        }), (0, a.jsxs)(s.Kqy, {
+        }), (0, a.jsxs)(l.Kqy, {
           direction: "horizontal",
           align: "end",
-          children: [(0, a.jsx)(s.oil, {
+          children: [(0, a.jsx)(l.oil, {
             label: "Override cooldown",
             min: 0,
             value: n.toString(),
             type: "number",
             placeholder: "Duration length",
-            onChange: e => f(parseFloat(e))
-          }), (0, a.jsx)(l.y6, {
-            options: h,
-            value: x,
-            onChange: e => {
-              b(e)
-            },
-            popoutLayerContext: u.O$
+            onChange: e => p(parseFloat(e))
+          }), (0, a.jsx)(l.PhF, {
+            label: "Override cooldown duration type",
+            hideLabel: true,
+            options: m,
+            value: h,
+            onSelectionChange: f,
+            selectionMode: "single",
+            fullWidth: true
           })]
         })]
-      }), (0, a.jsx)(s.izJ, {}), (0, a.jsx)(s.C3N, {
+      }), (0, a.jsx)(l.izJ, {}), (0, a.jsx)(l.C3N, {
         label: "Override Survey Chance",
-        children: (0, a.jsx)(s.oil, {
+        children: (0, a.jsx)(l.oil, {
           label: "Override chance",
-          description: null != j ? "Current chance: ".concat(100 * j.chance, "%") : true,
+          description: null != g ? "Current chance: ".concat(100 * g.chance, "%") : true,
           helperText: "As a percentage",
           min: 0,
           max: 100,
-          value: g.toString(),
+          value: b.toString(),
           type: "number",
-          onChange: e => v(parseFloat(e))
+          onChange: e => x(parseFloat(e))
         })
-      }), (0, a.jsxs)(s.ButtonGroup, {
-        children: [(0, a.jsx)(s.Button, {
+      }), (0, a.jsxs)(l.ButtonGroup, {
+        children: [(0, a.jsx)(l.Button, {
           variant: "critical-primary",
           text: "Clear Override",
-          onClick: () => void(null != j && o.Z.dispatch({
+          onClick: () => void(null != g && s.Z.dispatch({
             type: "FEEDBACK_OVERRIDE_CLEAR",
-            feedbackType: j.feedbackType
+            feedbackType: g.feedbackType
           })),
-          disabled: !_
-        }), (0, a.jsx)(s.Button, {
+          disabled: !y
+        }), (0, a.jsx)(l.Button, {
           variant: "primary",
           text: "Update",
-          onClick: () => void(null != j && o.Z.dispatch({
+          onClick: () => void(null != g && s.Z.dispatch({
             type: "FEEDBACK_OVERRIDE_SET",
-            feedbackType: j.feedbackType,
-            cooldown: n * x,
-            chance: g / 100
+            feedbackType: g.feedbackType,
+            cooldown: n * h,
+            chance: b / 100
           })),
-          disabled: !_
+          disabled: !y
         })]
-      }), null == e && (0, a.jsx)(s.Text, {
+      }), null == e && (0, a.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: need to select a survey"
-      }), !(n >= 0) && (0, a.jsx)(s.Text, {
+      }), !(n >= 0) && (0, a.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: cooldown needs to be a number greater than 0"
-      }), !(g >= 0 && g <= 100) && (0, a.jsx)(s.Text, {
+      }), !(b >= 0 && b <= 100) && (0, a.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: chance needs to be a number between 0 and 100"
-      }), (0, a.jsx)(s.Text, {
+      }), (0, a.jsx)(l.Text, {
         variant: "text-sm/normal",
         children: "Clear override resets a feedback survey to its default values"
       })]

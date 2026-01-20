@@ -1,7 +1,7 @@
 /** Chunk was on 8102 **/
 /** chunk id: 172337, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk353926 = require("./353926.js"),
@@ -9,7 +9,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk923726 = require("./923726.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let u = {
+let d = {
   title: () => s.intl.string(s.t.aTFQKh),
   description: () => s.intl.string(s.t.oTbFQg),
   canCreateGuild: false,

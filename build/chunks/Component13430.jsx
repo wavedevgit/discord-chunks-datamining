@@ -160,7 +160,8 @@ let b = Chunk473749.forwardRef(function(e, t) {
               maxVisibleItems: 6,
               autoFocus: x === e,
               onOpen: () => null == T ? true : T("".concat(N, "_").concat(t)),
-              onClose: () => null == O ? true : O("".concat(N, "_").concat(t))
+              onClose: () => null == O ? true : O("".concat(N, "_").concat(t)),
+              "data-migration-pending": true
             })
           })
         });
@@ -183,7 +184,8 @@ let b = Chunk473749.forwardRef(function(e, t) {
               maxVisibleItems: 6,
               autoFocus: x === e,
               onOpen: () => null == T ? true : T("".concat(N, "_").concat(t)),
-              onClose: () => null == O ? true : O("".concat(N, "_").concat(t))
+              onClose: () => null == O ? true : O("".concat(N, "_").concat(t)),
+              "data-migration-pending": true
             })
           })
         });
@@ -206,7 +208,8 @@ let b = Chunk473749.forwardRef(function(e, t) {
               maxVisibleItems: 6,
               autoFocus: x === e,
               onOpen: () => null == T ? true : T("".concat(N, "_").concat(t)),
-              onClose: () => null == O ? true : O("".concat(N, "_").concat(t))
+              onClose: () => null == O ? true : O("".concat(N, "_").concat(t)),
+              "data-migration-pending": true
             })
           })
         })

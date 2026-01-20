@@ -78,6 +78,7 @@ function E(e) {
     options: b,
     renderOptionPrefix: y,
     renderOptionSuffix: o,
-    placeholder: h.intl.string(h.t["kMgj+e"])
+    placeholder: h.intl.string(h.t["kMgj+e"]),
+    "data-migration-pending": true
   })
 }

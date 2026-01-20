@@ -128,7 +128,8 @@ let w = Chunk473749.memo(function(e) {
       clearQueryOnSelect: false,
       onKeyDown: C,
       renderOptionPrefix: j,
-      renderOptionLabel: _
+      renderOptionLabel: _,
+      "data-migration-pending": true
     })
   });
 

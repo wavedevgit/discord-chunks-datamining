@@ -25,14 +25,14 @@ let y = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, d = (0, i.e7)([s.default], () => s.default.getCurrentUser()), x = (0, f.jB)(), y = c.ZP.canUseCollectibles(d), {
+    } = e, d = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = (0, f.jB)(), y = c.ZP.canUseCollectibles(d), {
       isDisabled: C
     } = (0, m.G)(t.skuId), {
       isPurchased: _,
       isPartiallyOwnedBundle: S,
       isRented: E,
       rentalExpiresAt: T
-    } = (0, p.L)(t), O = (0, u.G1)(t), N = (0, u.rN)(t), P = r.useMemo(() => (0, u.BH)(t, y), [t, y]), w = (0, b.Iw)(t), {
+    } = (0, p.L)(t), O = (0, u.G1)(t), N = (0, u.rN)(t), P = r.useMemo(() => (0, u.BH)(t, y), [t, y]), w = (0, x.Iw)(t), {
       checkoutEligiblePrices: I,
       hasSufficientOrbs: k,
       shouldCheckoutWithOrbs: R
@@ -41,7 +41,7 @@ let y = e => {
       isPremiumUser: y,
       prioritizedCurrency: n,
       hasDiscountOffer: null != w,
-      isRental: null != x
+      isRental: null != b
     }), A = O && !y;
     if (C) return (0, a.jsx)(l.Text, {
       variant: "text-md/medium",
@@ -97,7 +97,7 @@ let y = e => {
       prioritizedCurrency: n
     } = e, r = (0, f.bK)(t), i = (0, d.o)(r);
     if (null == r) return null;
-    let l = (0, x.W)(r, i);
+    let l = (0, b.W)(r, i);
     return (0, a.jsx)(y, {
       product: l,
       prioritizedCurrency: n

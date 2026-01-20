@@ -95,7 +95,7 @@ let x = {
 };
 class S extends Chunk473749.PureComponent {
   componentDidUpdate(e) {
-    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (l.Z.track(O.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
+    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (a.Z.track(O.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
       lastLayoutUpdate: null
     }))
   }
@@ -109,7 +109,7 @@ class S extends Chunk473749.PureComponent {
         dragging: s
       }
     } = this, o = x[e.type];
-    return null == o ? null : l => o({
+    return null == o ? null : a => o({
       id: e.id,
       locked: i,
       pinned: e.pinned,
@@ -117,7 +117,7 @@ class S extends Chunk473749.PureComponent {
       isPreviewingInGame: r,
       anchor: t,
       size: n,
-      dragStart: l
+      dragStart: a
     })
   }
   render() {
@@ -131,8 +131,8 @@ class S extends Chunk473749.PureComponent {
     } = this.props;
     if (null == e || null == t) return null;
     let {
-      id: l,
-      pinned: a,
+      id: a,
+      pinned: l,
       zIndex: d,
       size: u,
       anchor: h,
@@ -144,7 +144,7 @@ class S extends Chunk473749.PureComponent {
     } = t, E = (0, b.eM)({
       locked: r,
       isPreviewingInGame: s,
-      pinned: a
+      pinned: l
     }), x = {
       minX: 0,
       minY: 0,
@@ -152,7 +152,7 @@ class S extends Chunk473749.PureComponent {
       maxY: n.height
     }, S = this.renderWidget(e, m, g);
     return null == S ? null : (0, i.jsx)(c.Z, {
-      id: l,
+      id: a,
       size: g,
       anchor: m,
       container: x,
@@ -182,23 +182,23 @@ class S extends Chunk473749.PureComponent {
           layoutSize: s
         },
         state: {
-          lastLayoutUpdate: l
+          lastLayoutUpdate: a
         }
       } = this;
       if (!(0, p.validResolution)(s)) return;
-      let a = (0, f.jL)(n, s),
+      let l = (0, f.jL)(n, s),
         u = (0, f.Ox)(i, s);
       (0, o.Os)(t), (0, o.nv)({
         widgetId: t,
-        anchor: a,
+        anchor: l,
         size: u
       });
       let h = e === c.B.MOVE,
         g = (0, f.PY)(n, s.width, s.height, r.width, r.height);
       this.setState({
         lastLayoutUpdate: {
-          was_resized: null != l && l.was_resized || !h,
-          was_dragged: null != l && l.was_dragged || h,
+          was_resized: null != a && a.was_resized || !h,
+          was_dragged: null != a && a.was_dragged || h,
           widget_type: d.Z.getWidgetType(t),
           window_width: s.width,
           window_height: s.height,
@@ -217,14 +217,14 @@ class S extends Chunk473749.PureComponent {
       let {
         widget: e
       } = this.props;
-      null != e && (e.pinned && l.Z.setPreviewInGameMode(true), this.setState({
+      null != e && (e.pinned && a.Z.setPreviewInGameMode(true), this.setState({
         dragging: true
       }))
     }), E(this, "handleDragEnd", () => {
       let {
         widget: e
       } = this.props;
-      null != e && (e.pinned && l.Z.setPreviewInGameMode(false), this.setState({
+      null != e && (e.pinned && a.Z.setPreviewInGameMode(false), this.setState({
         dragging: false
       }))
     })

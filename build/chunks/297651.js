@@ -19,8 +19,8 @@ function m(e, t) {
     p = (0, r.e7)([o.Z], () => o.Z.getProduct(e)),
     h = (0, d.x)(),
     f = l.ZP.canUseCollectibles(h),
-    x = a.useRef(null),
-    b = a.useCallback(() => {
+    b = a.useRef(null),
+    x = a.useCallback(() => {
       let a = null != p ? (0, c.Vw)(p, f, false) : null,
         r = null != p ? (0, c.eu)(p, f, false) : true;
       i.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
@@ -38,12 +38,12 @@ function m(e, t) {
       })
     }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, f, t, p, e, n]),
     g = a.useCallback(e => {
-      e ? null === x.current && (x.current = setTimeout(() => {
-        b(), x.current = null
-      }, 1e3)) : null !== x.current && (clearTimeout(x.current), x.current = null)
-    }, [b]);
+      e ? null === b.current && (b.current = setTimeout(() => {
+        x(), b.current = null
+      }, 1e3)) : null !== b.current && (clearTimeout(b.current), b.current = null)
+    }, [x]);
   return a.useEffect(() => () => {
-    null !== x.current && (clearTimeout(x.current), x.current = null)
+    null !== b.current && (clearTimeout(b.current), b.current = null)
   }, []), {
     handleCardVisibilityChange: g
   }

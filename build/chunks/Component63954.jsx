@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => W
+  Z: () => z
 }), require("./388685.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,9 +69,9 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = ["png", "gif", "webp"],
-  M = [...L, "jpg", "jpeg"],
-  U = Array.from(new Set([...M, "gif", "mp4", "webm"]));
+let M = ["png", "gif", "webp"],
+  L = [...M, "jpg", "jpeg"],
+  U = Array.from(new Set([...L, "gif", "mp4", "webm"]));
 
 function B() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
@@ -168,18 +168,18 @@ let F = "1193992107035983872",
 
 function V() {
   var e, t, i, d, u, A;
-  let [F, V] = r.useState(G), z = r.useCallback(e => {
+  let [F, V] = r.useState(G), W = r.useCallback(e => {
     V(D(Z({}, e), {
       preview: true
     }))
-  }, []), [W, H] = r.useState(w.a.UNENROLLED), [q, K] = r.useState(false), [Q, Y] = r.useState(false), [X, J] = r.useState(null), $ = (A = F.config, (0, s.EQ)(A).with({
+  }, []), [z, H] = r.useState(w.a.UNENROLLED), [q, K] = r.useState(false), [Q, Y] = r.useState(false), [X, J] = r.useState(null), $ = (A = F.config, (0, s.EQ)(A).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function ee(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, a;
-      z(D(Z({}, F), {
+      W(D(Z({}, F), {
         config: (n = F.config, a = {
           [e]: t
         }, (0, s.EQ)(n).with({
@@ -215,7 +215,7 @@ function V() {
       default:
         return
     }
-    z(D(Z({}, F), {
+    W(D(Z({}, F), {
       config: D(Z({}, F.config), {
         taskConfigV2: D(Z({}, F.config.taskConfigV2), {
           tasks: D(Z({}, n), {
@@ -231,7 +231,7 @@ function V() {
   function en(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, a;
-      z(D(Z({}, F), {
+      W(D(Z({}, F), {
         config: (n = F.config, a = {
           [e]: t
         }, (0, s.EQ)(n).with({
@@ -246,7 +246,7 @@ function V() {
   function ea(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var a, r;
-      z(D(Z({}, F), {
+      W(D(Z({}, F), {
         config: (a = F.config, r = {
           [e]: t
         }, (0, s.EQ)(a).with({
@@ -263,7 +263,7 @@ function V() {
   }
 
   function er(e, t) {
-    z(D(Z({}, F), {
+    W(D(Z({}, F), {
       config: D(Z({}, F.config), {
         colors: D(Z({}, F.config.colors), {
           [e]: t
@@ -301,7 +301,7 @@ function V() {
               n = t.progressSeconds,
               a = t.targetSeconds;
             return n / a >= 1 ? w.a.COMPLETED_100 : n / a >= .75 ? w.a.COMPLETED_75 : n / a >= .5 ? w.a.COMPLETED_50 : n / a >= .25 ? w.a.COMPLETED_25 : w.a.ENROLLED
-          }(e)), z(e))
+          }(e)), W(e))
         },
         quest: X
       })
@@ -315,7 +315,7 @@ function V() {
         taskDuration: el,
         taskConfigV2: F.config.taskConfigV2,
         onSelect: function(e) {
-          z(D(Z({}, F), {
+          W(D(Z({}, F), {
             config: D(Z({}, F.config), {
               taskConfigV2: e
             })
@@ -353,7 +353,7 @@ function V() {
           let r = D(Z({}, a.messages), {
             [e]: t
           });
-          z(D(Z({}, F), {
+          W(D(Z({}, F), {
             config: D(Z({}, F.config), {
               taskConfigV2: D(Z({}, F.config.taskConfigV2), {
                 tasks: D(Z({}, n), {
@@ -401,13 +401,13 @@ function V() {
         title: "Game Tile",
         assetKey: "gameTile",
         onFileChange: ee,
-        filters: [...M, "svg"],
+        filters: [...L, "svg"],
         initialValue: F.config.assets.gameTile
       }), (0, a.jsx)(E.Z, {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: ee,
-        filters: [...L, "svg"],
+        filters: [...M, "svg"],
         initialValue: F.config.assets.logotype
       }), es && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(E.Z, {
@@ -426,7 +426,7 @@ function V() {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
           onFileChange: et,
-          filters: M,
+          filters: L,
           initialValue: null == eo ? true : eo.assets.video.thumbnail
         })]
       })]
@@ -453,7 +453,7 @@ function V() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var a;
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 config: (a = F.config, (0, s.EQ)(a).with({
                   configVersion: 2
                 }, e => D(Z({}, e), {
@@ -511,19 +511,19 @@ function V() {
         onChange: function(e) {
           switch (H(e), e) {
             case w.a.UNENROLLED:
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 userStatus: null
               }));
               break;
             case w.a.ENROLLED:
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case w.a.COMPLETED_25:
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * el
@@ -531,7 +531,7 @@ function V() {
               }));
               break;
             case w.a.COMPLETED_50:
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * el
@@ -539,7 +539,7 @@ function V() {
               }));
               break;
             case w.a.COMPLETED_75:
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * el
@@ -547,7 +547,7 @@ function V() {
               }));
               break;
             case w.a.COMPLETED_100:
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 userStatus: B({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -556,7 +556,7 @@ function V() {
               }));
               break;
             case w.a.CLAIMED:
-              z(D(Z({}, F), {
+              W(D(Z({}, F), {
                 userStatus: B({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -566,7 +566,7 @@ function V() {
               }))
           }
         },
-        value: W
+        value: z
       })]
     }), (0, a.jsx)(m.Heading, {
       variant: "heading-lg/bold",
@@ -587,12 +587,12 @@ function V() {
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, a.jsx)("div", {
             className: R.questBarPreview,
-            children: (0, a.jsx)(x.x8, {
+            children: (0, a.jsx)(b.x8, {
               isPreview: true,
               source: "preview",
               questId: "0",
               children: (0, a.jsx)(g.Z, {
-                children: (0, a.jsx)(b.P, {
+                children: (0, a.jsx)(x.P, {
                   quest: F
                 })
               })
@@ -604,7 +604,7 @@ function V() {
         children: [(0, a.jsx)(m.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Home Card"
-        }), (0, a.jsx)(x.x8, {
+        }), (0, a.jsx)(b.x8, {
           isPreview: true,
           source: "preview",
           questId: "0",
@@ -628,7 +628,7 @@ function V() {
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, a.jsx)("div", {
           className: R.questBarPreviewWrapper,
-          children: (0, a.jsx)(x.x8, {
+          children: (0, a.jsx)(b.x8, {
             isPreview: true,
             source: "preview",
             questId: "0",
@@ -702,7 +702,7 @@ function V() {
     })]
   })
 }
-class z extends Chunk473749.Component {
+class W extends Chunk473749.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -745,4 +745,4 @@ class z extends Chunk473749.Component {
     })
   }
 }
-let W = z
+let z = W

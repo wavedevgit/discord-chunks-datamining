@@ -14,13 +14,13 @@ function o(e) {
     isQuestAccepted: t,
     isQuestCompleted: n,
     isQuestBarVisible: o
-  } = e, c = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), [d, u] = a.useState(false), [m, p] = a.useState(true), [h, f] = a.useState(true), x = a.useRef(o), b = a.useCallback(e => {
+  } = e, c = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), [d, u] = a.useState(false), [m, p] = a.useState(true), [h, f] = a.useState(true), b = a.useRef(o), x = a.useCallback(e => {
     n || (p(false), u(e))
   }, [n]), g = a.useCallback(() => {
-    b(true)
-  }, [b]), v = a.useCallback(() => {
-    b(false)
-  }, [b]), j = t ? s.XZ : s.R4, [{
+    x(true)
+  }, [x]), v = a.useCallback(() => {
+    x(false)
+  }, [x]), j = t ? s.XZ : s.R4, [{
     expansionSpring: y
   }, C] = (0, i.q_F)(() => ({
     from: {
@@ -62,10 +62,10 @@ function o(e) {
     }
   });
   return a.useLayoutEffect(() => {
-    o !== x.current && f(false), x.current = o
+    o !== b.current && f(false), b.current = o
   }, [o]), {
     isExpanded: d,
-    setIsExpanded: b,
+    setIsExpanded: x,
     expandQuestBar: g,
     collapseQuestBar: v,
     isExpansionAnimationComplete: m,

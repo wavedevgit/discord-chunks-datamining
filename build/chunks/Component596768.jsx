@@ -85,8 +85,8 @@ let T = [{
             name: "Timestamp (local)",
             children: (0, a.jsx)("time", {
               dateTime: s.toISOString(),
-              title: (0, x.vc)(u, "LLLL"),
-              children: (0, x.Y4)(u)
+              title: (0, b.vc)(u, "LLLL"),
+              children: (0, b.Y4)(u)
             })
           }), "guild" === n.type && (0, a.jsx)(v.Z9, {
             name: "Guild ID",
@@ -135,12 +135,12 @@ let T = [{
   }];
 
 function N() {
-  let [e, t] = r.useState(""), n = r.useRef(null), i = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => i.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = r.useState(true), f = s.find(e => e.key === c), {
-    TabBar: x,
+  let [e, t] = r.useState(""), n = r.useRef(null), i = (0, u.Wu)([x.Z], () => x.Z.loggedTriggers), s = r.useMemo(() => i.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = r.useState(true), f = s.find(e => e.key === c), {
+    TabBar: b,
     renderSelectedTab: v
   } = (0, C.ZP)({
     tabs: O
-  }, []), N = (0, u.e7)([b.Z], () => b.Z.trackTriggers), P = r.useCallback(e => {
+  }, []), N = (0, u.e7)([x.Z], () => x.Z.trackTriggers), P = r.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -182,7 +182,7 @@ function N() {
       className: S.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
-      children: [(0, a.jsx)(x, {}), v({
+      children: [(0, a.jsx)(b, {}), v({
         loggedTrigger: f
       })]
     })]

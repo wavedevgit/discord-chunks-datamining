@@ -20,11 +20,11 @@ function b(e) {
     recurrenceId: n,
     transitionState: b,
     onClose: p
-  } = e, f = (0, d.Z)(n, t.id), x = (0, c.iA)(n, t), h = (0, c.x6)(x, f), [j, v] = r.useState(h), [m, {
+  } = e, f = (0, s.Z)(n, t.id), h = (0, c.iA)(n, t), x = (0, c.x6)(h, f), [j, v] = r.useState(x), [m, {
     loading: D,
     error: O
   }] = (0, u.Z)(() => {
-    let e = (0, s.Z)(t, n, j, f);
+    let e = (0, d.Z)(t, n, j, f);
     return null == O && p(), e
   });
   return (0, l.jsxs)(i.Modal, {
@@ -39,7 +39,7 @@ function b(e) {
       text: g.intl.string(g.t.e5VEcE),
       onClick: m,
       loading: D,
-      disabled: (0, c.Y4)(j, h)
+      disabled: (0, c.Y4)(j, x)
     }],
     onClose: p,
     children: [(0, l.jsx)(o.Z, {

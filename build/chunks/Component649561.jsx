@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
   Chunk286379 = require("./286379.js"),
@@ -146,7 +146,7 @@ class k extends Chunk473749.PureComponent {
     })
   }
 }
-let R = a().throttle(() => {
+let R = l().throttle(() => {
   m.Z.increment({
     name: u.V.APP_CRASHED,
     tags: ["reason:".concat(c.v.UNHANDLED_JS_ERROR), "level:".concat(d.c.FATAL)]

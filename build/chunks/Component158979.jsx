@@ -89,8 +89,8 @@ function b(e) {
           y("unlock");
           let d = (0, c.getPID)();
           s.Z.updateNotificationStatus(t);
-          let u = l.default.isOverlayOOPEnabledForPid(d);
-          if (u ? s.Z.setInputLocked(false, d) : s.Z.setInstanceLocked(false), null == a.default.getCurrentUser()) return;
+          let u = a.default.isOverlayOOPEnabledForPid(d);
+          if (u ? s.Z.setInputLocked(false, d) : s.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
           let h = u ? {
             contextKey: r.u1M
           } : true;
@@ -114,7 +114,7 @@ function b(e) {
       let {
         game: t
       } = e, {
-        trackView: a,
+        trackView: l,
         trackClick: f
       } = (0, d.R)(u.n0.GoLiveNonVoiceNudge, {
         notif_type: u.n0.GoLiveNonVoiceNudge
@@ -128,14 +128,14 @@ function b(e) {
         hint: () => (0, i.jsx)(m, {}),
         renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          a()
+          l()
         },
         onNotificationClick: (e, t) => {
           f("unlock");
-          let a = (0, c.getPID)();
+          let l = (0, c.getPID)();
           s.Z.updateNotificationStatus(t);
-          let d = l.default.isOverlayOOPEnabledForPid(a);
-          d ? s.Z.setInputLocked(false, a) : s.Z.setInstanceLocked(false);
+          let d = a.default.isOverlayOOPEnabledForPid(l);
+          d ? s.Z.setInputLocked(false, l) : s.Z.setInstanceLocked(false);
           let u = d ? {
             contextKey: r.u1M
           } : true;
@@ -144,7 +144,7 @@ function b(e) {
               default: e
             } = await Promise.all([n.e("46746"), n.e("95200")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(p({}, t), {
-              sourcePID: a,
+              sourcePID: l,
               selectSource: false,
               analyticsLocations: [o.Z.OVERLAY_NUDGE]
             }))

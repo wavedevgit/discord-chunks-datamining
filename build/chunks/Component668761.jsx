@@ -22,9 +22,9 @@ function h() {
     trackClick: t
   } = (0, s.R)(d.n0.ClipsReminderNotification, {
     notif_type: d.n0.ClipsReminderNotification
-  }), n = o.ZP.getKeybindForAction(c.kg4.SAVE_CLIP), h = (0, a.LI)();
+  }), n = o.ZP.getKeybindForAction(c.kg4.SAVE_CLIP), h = (0, l.LI)();
   if (null == n || !h) return null;
-  let f = l.BB(n.shortcut, true);
+  let f = a.BB(n.shortcut, true);
   return {
     title: u.intl.format(u.t.S5uhCN, {
       keybind: f,

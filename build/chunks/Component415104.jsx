@@ -33,7 +33,7 @@ function v(e) {
   } = e, [_, S] = r.useState(false), [E, T] = r.useState([]), O = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
     S(true), P({
       questId: i.id,
-      event: b.rMx.QUEST_HOVER,
+      event: x.rMx.QUEST_HOVER,
       properties: {
         content_id: u,
         content_name: (0, s._b)(u),
@@ -44,7 +44,7 @@ function v(e) {
   }, [P, i.id, u, N, C, v]), I = r.useCallback(() => {
     S(false), P({
       questId: i.id,
-      event: b.rMx.QUEST_HOVER_OFF,
+      event: x.rMx.QUEST_HOVER_OFF,
       properties: {
         content_id: u,
         content_name: (0, s._b)(u),
@@ -85,7 +85,7 @@ function v(e) {
       warningHints: O,
       isVisibleInViewport: A,
       sourceQuestContent: C
-    }), (0, a.jsx)(x.Z, {
+    }), (0, a.jsx)(b.Z, {
       quest: i,
       questContent: u,
       isHovering: _,

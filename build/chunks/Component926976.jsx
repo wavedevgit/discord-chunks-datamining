@@ -81,7 +81,7 @@ function w(e) {
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
       className: T.copyPropertyButton,
-      onClick: () => (0, b.JG)(JSON.stringify(i), () => s(true)),
+      onClick: () => (0, x.JG)(JSON.stringify(i), () => s(true)),
       children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -107,7 +107,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = x.default.getUser(i), h = o()(r);
+      } = e, d = b.default.getUser(i), h = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
@@ -120,7 +120,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
               className: T.copyEventButton,
-              onClick: () => (0, b.JG)(t),
+              onClick: () => (0, x.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, b.JG)(JSON.stringify(function(e) {
+              (0, x.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -276,13 +276,13 @@ function Z() {
       p(e)
     }, []);
   (0, f.BO)(t, v.Z.loggedEvents, h, A, [i]);
-  let x = m.filter(e => {
+  let b = m.filter(e => {
       for (let t of s)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [b, g] = r.useState(true),
-    y = x.find(e => e.key === b),
+    [x, g] = r.useState(true),
+    y = b.find(e => e.key === x),
     {
       TabBar: P,
       renderSelectedTab: w
@@ -333,8 +333,8 @@ function Z() {
       })
     }), (0, a.jsx)(_.Z, {
       columns: N,
-      data: x,
-      selectedRowKey: b,
+      data: b,
+      selectedRowKey: x,
       onClickRow: e => g(e.key)
     }), null != y && (0, a.jsxs)(C.Z, {
       className: T.subPanel,
@@ -343,7 +343,7 @@ function Z() {
       children: [(0, a.jsx)(P, {}), w({
         loggedEvent: y,
         onClose: () => g(true),
-        filteredEvents: x
+        filteredEvents: b
       })]
     })]
   })

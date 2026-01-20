@@ -38,13 +38,13 @@ function T(e) {
     isVisibleInViewport: A,
     onReceiveErrorHints: Z,
     sourceQuestContent: D
-  } = e, L = r.useRef(null), M = (0, x.w8)(P.config), U = (0, x.B3)(P.config), B = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
+  } = e, M = r.useRef(null), L = (0, b.w8)(P.config), U = (0, b.B3)(P.config), B = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: F,
     scrollHeight: G
   } = (0, d.kE)(), V = 104 !== G, {
-    onAssetLoadComplete: z
+    onAssetLoadComplete: W
   } = r.useContext(v.k), {
-    expansionSpring: W
+    expansionSpring: z
   } = (0, c.q_F)({
     expansionSpring: +!!I,
     config: (T = function(e) {
@@ -76,10 +76,10 @@ function T(e) {
     })(Object(N)).forEach(function(e) {
       Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(N, e))
     }), T)
-  }), H = (null == (n = P.userStatus) ? true : n.completedAt) != null, q = (null == (i = P.userStatus) ? true : i.claimedAt) != null, K = (0, x.xN)(P.config), Q = (0, x.LM)(P.config), {
+  }), H = (null == (n = P.userStatus) ? true : n.completedAt) != null, q = (null == (i = P.userStatus) ? true : i.claimedAt) != null, K = (0, b.xN)(P.config), Q = (0, b.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: X
-  } = (0, h.I)(P), J = (0, p.Bd)(P, D, L), $ = r.useMemo(() => q && K ? _.intl.format(_.t["8Op4c4"], {
+  } = (0, h.I)(P), J = (0, p.Bd)(P, D, M), $ = r.useMemo(() => q && K ? _.intl.format(_.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
       children: [(0, a.jsx)(m.Z, {
@@ -90,7 +90,7 @@ function T(e) {
     }, P.id)
   }) : q ? (0, a.jsx)(O, {
     questId: P.id,
-    children: M
+    children: L
   }) : K ? _.intl.format(_.t.ro1sze, {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
@@ -105,7 +105,7 @@ function T(e) {
       questId: P.id,
       children: U
     }, P.id)
-  }), [M, q, U, P.id, Q, K]), ee = r.useMemo(() => {
+  }), [L, q, U, P.id, Q, K]), ee = r.useMemo(() => {
     if (null != J) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -115,10 +115,10 @@ function T(e) {
   }, [J]), et = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, a.jsxs)("div", {
     className: S.container,
-    ref: L,
+    ref: M,
     children: [(0, a.jsxs)(s.animated.div, {
       style: {
-        maxHeight: W.to([0, 1], [104, (null != G ? G : 0) + 12])
+        maxHeight: z.to([0, 1], [104, (null != G ? G : 0) + 12])
       },
       className: S.rewardDescriptionContainer,
       children: [(0, a.jsx)(j.E, {
@@ -137,7 +137,7 @@ function T(e) {
               loop: false,
               autoplay: false,
               shouldAnimate: !et
-            }), (0, a.jsx)(b.Z, {
+            }), (0, a.jsx)(x.Z, {
               quest: P,
               size: 76,
               percentComplete: Y,
@@ -149,7 +149,7 @@ function T(e) {
                   questContent: w,
                   className: S.circularQuestRewardTileAsset,
                   autoplay: I,
-                  onLoadComplete: z,
+                  onLoadComplete: W,
                   lazyLoad: true,
                   sourceQuestContent: D
                 })
@@ -160,7 +160,7 @@ function T(e) {
             autoplay: I,
             questContent: w,
             className: S.questRewardTileAsset,
-            onLoadComplete: z,
+            onLoadComplete: W,
             lazyLoad: true,
             sourceQuestContent: D
           })]
@@ -185,7 +185,7 @@ function T(e) {
         }), ee]
       }), V && (0, a.jsx)(s.animated.div, {
         style: {
-          opacity: W.to([0, 1], [1, 0])
+          opacity: z.to([0, 1], [1, 0])
         },
         className: S.textOverflowBlur
       })]

@@ -17,10 +17,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk399794 = require("./399794.js");
 
 function f() {
-  let [e, t] = (0, r.Wu)([s.Z], () => [s.Z.enabled, s.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), f = (0, r.e7)([a.Z], () => a.Z.getChannel(n), [n]), p = null == f ? true : f.getGuildId();
+  let [e, t] = (0, r.Wu)([s.Z], () => [s.Z.enabled, s.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), f = (0, r.e7)([l.Z], () => l.Z.getChannel(n), [n]), p = null == f ? true : f.getGuildId();
   return e && null != f ? (0, i.jsx)("div", {
     className: h.widget,
-    children: (0, i.jsx)(l.Z, {
+    children: (0, i.jsx)(a.Z, {
       width: u.FW.width,
       height: u.FW.height,
       guildId: p,

@@ -2,7 +2,7 @@
 /** chunk id: 670863, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => P
+  j: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,8 +48,25 @@ function I(e) {
 }
 
 function T(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function C(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function A(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -57,16 +74,16 @@ function T(e, t) {
   return i
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = "SHOW_MORE";
+let P = "SHOW_MORE";
 
-function N(e) {
+function w(e) {
   return ({
     [y.h7.AUDIO_INPUT]: {
       setDevice: d.Z.setInputDevice,
@@ -98,7 +115,7 @@ function N(e) {
   })[e]
 }
 
-function P(e) {
+function R(e) {
   var {
     deviceType: t,
     location: a,
@@ -106,41 +123,41 @@ function P(e) {
     selectedDeviceId: _,
     onSelectDevice: y,
     hideDeviceTypeIcon: S = false,
-    label: C
-  } = e, P = T(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
+    label: T
+  } = e, N = A(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
   let {
-    setDevice: w,
-    Icon: R,
-    getCanSetDevice: D,
-    getWarningMessage: x,
-    getLocation: L
-  } = N(t), {
-    analyticsLocations: j
-  } = (0, f.ZP)(), M = (0, s.e7)([p.Z], () => p.Z.theme), [k, U] = i.useState(d), G = L(a), [Z, F] = (0, E.Ls)(t, {
-    location: G
+    setDevice: R,
+    Icon: D,
+    getCanSetDevice: x,
+    getWarningMessage: L,
+    getLocation: j
+  } = w(t), {
+    analyticsLocations: M
+  } = (0, f.ZP)(), k = (0, s.e7)([p.Z], () => p.Z.theme), [U, G] = i.useState(d), Z = j(a), [F, B] = (0, E.Ls)(t, {
+    location: Z
   }), {
-    id: B
-  } = (0, E.p6)(t), V = null != _ ? _ : B, H = (0, s.e7)([m.Z], () => D(m.Z)), Y = (0, r.jsx)(u.Wn, {
+    id: V
+  } = (0, E.p6)(t), H = null != _ ? _ : V, Y = (0, s.e7)([m.Z], () => x(m.Z)), W = (0, r.jsx)(u.Wn, {
     messageType: u.QYI.WARNING,
-    children: x()
-  }), W = i.useCallback(e => {
-    if (e === A) U(true), g.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
+    children: L()
+  }), K = i.useCallback(e => {
+    if (e === P) G(true), g.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,
-      location: G,
-      location_stack: j,
-      shown_device_count: Z.length,
-      hidden_device_count: F.length
+      location: Z,
+      location_stack: M,
+      shown_device_count: F.length,
+      hidden_device_count: B.length
     });
     else {
       var n;
-      (null == (n = null == y ? true : y(e)) || n) && w(e, {
-        location: G,
-        analyticsLocations: j
+      (null == (n = null == y ? true : y(e)) || n) && R(e, {
+        location: Z,
+        analyticsLocations: M
       })
     }
-  }, [t, G, Z.length, F.length, j, y, w]);
+  }, [t, Z, F.length, B.length, M, y, R]);
 
-  function K(e) {
+  function z(e) {
     let t, i, {
         label: a,
         value: s
@@ -151,7 +168,7 @@ function P(e) {
     null != f && (d = f.prefix, t = f.subName);
     let p = h.Z.getCertifiedDeviceName(s, d);
     if (h.Z.isCertified(s)) {
-      let e = (0, c.ap)(M) ? n(561259) : n(887695);
+      let e = (0, c.ap)(k) ? n(561259) : n(887695);
       i = (0, r.jsx)("img", {
         src: e,
         alt: O.intl.string(O.t.smSKsj)
@@ -164,7 +181,7 @@ function P(e) {
       }),
       children: [!S && (0, r.jsx)("div", {
         className: v.deviceIcon,
-        children: (0, r.jsx)(R, {
+        children: (0, r.jsx)(D, {
           size: "custom",
           width: 20,
           height: 20,
@@ -189,7 +206,7 @@ function P(e) {
     })
   }
 
-  function z() {
+  function q() {
     let e = e => {
         let {
           id: t,
@@ -200,13 +217,13 @@ function P(e) {
           label: n
         }
       },
-      t = Z.map(e);
-    if (k || 0 === F.length) {
-      let n = F.map(e);
+      t = F.map(e);
+    if (U || 0 === B.length) {
+      let n = B.map(e);
       return t.concat(n)
     } {
       let e = {
-        value: A,
+        value: P,
         label: O.intl.string(O.t.E99UMh),
         preventCloseOnSelect: true
       };
@@ -214,19 +231,21 @@ function P(e) {
     }
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.y6, I({
-      label: C,
-      value: V,
-      onChange: W,
-      options: z(),
-      isDisabled: !H,
+    children: [(0, r.jsx)(l.y6, C(I({
+      label: T,
+      value: H,
+      onChange: K,
+      options: q(),
+      isDisabled: !Y,
       popoutPosition: "bottom",
-      renderOptionLabel: e => K(e, true),
+      renderOptionLabel: e => z(e, true),
       renderOptionValue: e => {
         let [t] = e;
-        return K(t)
+        return z(t)
       },
       optionClassName: v.singleSelectOption
-    }, P)), !H && Y]
+    }, N), {
+      "data-migration-pending": true
+    })), !Y && W]
   })
 }

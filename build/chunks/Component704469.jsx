@@ -58,7 +58,7 @@ let C = e => {
           removeSetHeight: true
         });
       case l.Z.AVATAR_DECORATION:
-        return (0, a.jsx)(x.R, {
+        return (0, a.jsx)(b.R, {
           item: s,
           user: r,
           isHighlighted: n,
@@ -71,7 +71,7 @@ let C = e => {
           isHighlighted: n
         });
       case l.Z.BUNDLE:
-        return (0, a.jsx)(b.d, {
+        return (0, a.jsx)(x.d, {
           product: t,
           user: r,
           isHighlighted: n

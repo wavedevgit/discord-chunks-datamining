@@ -33,7 +33,7 @@ function E(e) {
     onResize: n,
     onResizeEnd: r
   } = e, i = (0, d.Z)({
-    minDimension: b.h,
+    minDimension: x.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -70,9 +70,9 @@ function O(e) {
     selectedTabId: o
   } = (0, j.ZP)({
     tabs: r,
-    initialSelectedTabId: null != (t = b.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = x.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
-      (0, x.Qh)({
+      (0, b.Qh)({
         lastOpenTabId: e
       })
     }
@@ -94,7 +94,7 @@ function O(e) {
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: C.intl.string(C.t.cpT0Cq),
-          onClick: x.SO
+          onClick: b.SO
         })]
       }),
       children: [(0, a.jsx)(m.ZP.Icon, {
@@ -111,9 +111,9 @@ function O(e) {
 
 function N() {
   let e = r.useRef(null),
-    t = (0, o.e7)([b.Z], () => b.Z.sidebarWidth),
+    t = (0, o.e7)([x.Z], () => x.Z.sidebarWidth),
     [n, i] = r.useState(null),
-    l = r.useCallback(e => (0, x.Qh)({
+    l = r.useCallback(e => (0, b.Qh)({
       sidebarWidth: e
     }), []);
   return (r.useEffect(() => {
@@ -122,7 +122,7 @@ function N() {
     ref: e,
     className: _.container,
     style: {
-      minWidth: b.h,
+      minWidth: x.h,
       width: n
     },
     "data-app-right-panel": true,
@@ -138,7 +138,7 @@ function N() {
 }
 
 function P() {
-  return (0, o.e7)([b.Z], () => b.Z.displayTools) ? (0, a.jsx)("div", {
+  return (0, o.e7)([x.Z], () => x.Z.displayTools) ? (0, a.jsx)("div", {
     className: l()(_.container, _.mobileContainerExpanded),
     children: (0, a.jsx)("div", {
       className: _.sidebarContent,
@@ -147,7 +147,7 @@ function P() {
   }) : (0, a.jsx)("div", {
     className: _.container,
     children: (0, a.jsx)(c.P3F, {
-      onClick: x.SO,
+      onClick: b.SO,
       children: (0, a.jsxs)(m.ZP, {
         className: l()(S.headerBar, _.mobileHeaderCollapsed),
         toolbar: (0, a.jsx)(f.Z, {

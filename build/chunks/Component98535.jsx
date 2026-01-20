@@ -34,7 +34,7 @@ function E(e) {
   let E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
     [S, O] = l.useState(true),
     [_, y] = l.useState(true),
-    j = l.useMemo(() => n.filter(e => !h.y8.some(t => {
+    j = l.useMemo(() => n.filter(e => !m.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
@@ -50,13 +50,13 @@ function E(e) {
       } = e;
       c(t, n);
       let s = r && !E,
-        o = a ? h.AW.ORBS : h.AW.CATALOG;
+        o = a ? m.AW.ORBS : m.AW.CATALOG;
       O(n), y(!l), i(o, s)
     }, [E, i, c]),
     {
       searchError: T
     } = (0, d.a)();
-  return null != T ? (0, r.jsx)(m.Z, {}) : null != b ? (0, r.jsx)(g.Z, {
+  return null != T ? (0, r.jsx)(h.Z, {}) : null != b ? (0, r.jsx)(g.Z, {
     onRetry: u,
     errorMessage: b,
     errorOrigin: g.i.SHOP_PAGE

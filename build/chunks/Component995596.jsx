@@ -161,8 +161,8 @@ function S(e) {
     }]),
     {
       lastVisibleIndex: O,
-      onItemLayout: _,
-      overflowItemsRef: P
+      onItemLayout: P,
+      overflowItemsRef: _
     } = (0, o.zP)({
       items: N,
       itemGapPx: 16,
@@ -190,14 +190,14 @@ function S(e) {
         className: v.measurements,
         children: [N.map((e, t) => (0, l.jsx)(o.AJ, {
           index: t,
-          onItemLayout: _,
+          onItemLayout: P,
           children: (0, l.jsx)(d.njP.Item, {
             id: e.id,
             "aria-label": e.label,
             children: e.label
           })
         }, e.id)), (0, l.jsx)("div", {
-          ref: P,
+          ref: _,
           children: (0, l.jsx)(T, {
             tabs: A,
             onTabSelect: i,

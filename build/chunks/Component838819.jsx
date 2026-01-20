@@ -59,8 +59,8 @@ let D = e => {
     } = e;
     (0, p.z)(b.f), (0, _.f)();
     let n = (0, f.Z)((0, i.Z)()),
-      a = (0, o.e7)([h.default], () => h.default.getCurrentUser());
-    (0, m.p2)();
+      a = (0, o.e7)([m.default], () => m.default.getCurrentUser());
+    (0, h.p2)();
     let c = (0, B.B)("CollectiblesShop"),
       {
         onClose: P
@@ -91,11 +91,11 @@ let D = e => {
         q(e), G(t)
       }, []),
       {
-        selectedTab: J,
-        transitionState: X,
+        selectedTab: X,
+        transitionState: J,
         transitionToTab: $
       } = (0, y.B)(F);
-    (0, x.q3)(n, J, K, X, Y), (0, x.EB)(J, a);
+    (0, x.q3)(n, X, K, J, Y), (0, x.EB)(X, a);
     let {
       dismissShopButtonDC: ee
     } = (0, A.Z)();
@@ -112,7 +112,7 @@ let D = e => {
     }, []);
     let {
       analyticsLocations: er
-    } = (0, x.MV)(J);
+    } = (0, x.MV)(X);
     return (0, r.jsx)(g.Gt, {
       value: er,
       children: (0, r.jsx)(C.k0, {
@@ -122,7 +122,7 @@ let D = e => {
           pageSize: N.kN
         },
         children: (0, r.jsx)(v.ni, {
-          tab: J,
+          tab: X,
           children: (0, r.jsx)(D, {
             onClose: P,
             shouldAddEventListener: false,
@@ -134,18 +134,18 @@ let D = e => {
               tabIndex: false,
               children: [(0, r.jsx)(I.I, {
                 handleTransition: $,
-                selectedTab: J
+                selectedTab: X
               }), (0, r.jsx)("div", {
                 className: s()(w.shopViewWrapper, {
-                  [w.visible]: X === N.f7.VISIBLE,
-                  [w.in]: X === N.f7.IN,
-                  [w.out]: X === N.f7.OUT
+                  [w.visible]: J === N.f7.VISIBLE,
+                  [w.in]: J === N.f7.IN,
+                  [w.out]: J === N.f7.OUT
                 }),
                 children: (0, r.jsx)(k.Z, {
-                  tab: J,
+                  tab: X,
                   refreshCategories: U,
                   transitionToTab: $,
-                  transitionState: X,
+                  transitionState: J,
                   sortedCategories: z,
                   updateAnalyticsState: Q
                 })

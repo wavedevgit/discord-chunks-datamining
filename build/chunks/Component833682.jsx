@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk509613 = require("./509613.js"),
   Chunk131951 = require("./131951.js"),
@@ -54,12 +54,15 @@ let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
       A = l.useMemo(() => {
         let t = [];
         return c && t.push({
+          id: "krisp",
           label: g.intl.string(g.t.rdoNzt),
           value: d.Q4.KRISP
         }), o && t.push({
+          id: "standard",
           label: g.intl.string(g.t.qXeYHw),
           value: d.Q4.STANDARD
         }), t.push({
+          id: "disabled",
           label: g.intl.string(g.t.wkYAlz),
           value: d.Q4.NONE
         }), t
@@ -70,13 +73,15 @@ let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
     return (0, i.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 0,
-      children: [(0, i.jsx)(r.y6, {
+      children: [(0, i.jsx)(r.PhF, {
         label: g.intl.string(g.t.t8Qhib),
         description: O,
         layout: "horizontal",
         value: I,
-        onChange: t,
-        options: A
+        onSelectionChange: t,
+        options: A,
+        selectionMode: "single",
+        fullWidth: true
       }), c && (0, i.jsx)(N, {})]
     })
   }

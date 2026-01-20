@@ -39,7 +39,7 @@ function v(e) {
     (0, u.openUserSettings)(e ? c.n.NOTIFICATIONS_PANEL : c.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
       section: f.oAB.NOTIFICATIONS,
       analyticsLocations: _
-    }), S(x.L.TAKE_ACTION)
+    }), S(b.L.TAKE_ACTION)
   };
   return v && !j ? (0, a.jsx)(o.ZP, {
     children: (0, a.jsxs)("div", {
@@ -64,11 +64,11 @@ function v(e) {
             variant: "heading-md/bold",
             color: null != C ? true : "always-white",
             style: C,
-            children: b.intl.string(b.t["6CxPoB"])
+            children: x.intl.string(x.t["6CxPoB"])
           }), (0, a.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: b.intl.format(b.t.IVzJ8G, {
+            children: x.intl.format(x.t.IVzJ8G, {
               settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
                 tag: "span",
                 className: g.link,
@@ -80,7 +80,7 @@ function v(e) {
           })]
         }), (0, a.jsx)(r.P3F, {
           className: g.closeClickable,
-          onClick: () => S(x.L.USER_DISMISS),
+          onClick: () => S(b.L.USER_DISMISS),
           children: (0, a.jsx)(r.Dio, {
             color: "currentColor",
             size: "xs"

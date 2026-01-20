@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 682475, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => ec
+  F: () => eo
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,7 +54,6 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk596768 = require("./596768.jsx"),
   Chunk581302 = require("./581302.jsx"),
   Chunk56706 = require("./56706.jsx"),
-  Chunk820400 = require("./820400.jsx"),
   Chunk200178 = require("./200178.jsx"),
   Chunk39989 = require("./39989.jsx"),
   Chunk260950 = require("./260950.jsx"),
@@ -65,314 +64,308 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk167488 = require("./167488.jsx"),
   Chunk324805 = require("./324805.js");
 
-function ec() {
+function eo() {
   return r.useMemo(() => {
     let e = [{
       id: "analytics",
       name: "Analytics",
-      group: el.v0.EXPERIMENTS,
+      group: ei.v0.EXPERIMENTS,
       tags: ["events", "impressions", "tracking"],
       render: () => (0, a.jsx)(f.Z, {})
     }, {
       id: "triggers",
       name: "Triggers",
-      group: el.v0.EXPERIMENTS,
+      group: ei.v0.EXPERIMENTS,
       tags: ["experiments", "exposure", "buckets"],
       render: () => (0, a.jsx)(Y.Z, {})
     }, {
       id: "stores",
       name: "Stores",
-      group: el.v0.EVENTS,
+      group: ei.v0.EVENTS,
       tags: ["flux", "state"],
       render: () => (0, a.jsx)(Q.Z, {})
     }, {
       id: "dispatcher",
       name: "Dispatcher",
-      group: el.v0.EVENTS,
+      group: ei.v0.EVENTS,
       tags: ["flux", "actions"],
       render: () => (0, a.jsx)(j.Z, {})
     }];
     return u.Z.isDeveloper && (e.push({
       id: "shop",
       name: "Shop",
-      group: el.v0.BILLING,
+      group: ei.v0.BILLING,
       render: () => (0, a.jsx)(q.C, {})
     }), e.push({
       id: "payment_flow_modals",
       name: "Payment Flow Modals",
-      group: el.v0.BILLING,
+      group: ei.v0.BILLING,
       tags: ["gifts", "nitro", "boost", "sku", "collectibles"],
       render: () => (0, a.jsx)(U.Z, {})
     }), e.push({
       id: "shop_collectibles",
       name: "Shop Collectibles",
-      group: el.v0.BILLING,
+      group: ei.v0.BILLING,
       render: () => (0, a.jsx)(l.Z, {})
     }), e.push({
       id: "quick_actions",
       name: "Quick Actions",
-      group: el.v0.DEVELOPMENT,
+      group: ei.v0.DEVELOPMENT,
       tags: ["captcha", "safety", "checkpoint", "vibe", "vibing", "override", "premium type"],
-      render: () => (0, a.jsx)(W.Z, {})
+      render: () => (0, a.jsx)(z.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
       name: "E2EE",
-      group: el.v0.DEVELOPMENT,
+      group: ei.v0.DEVELOPMENT,
       tags: ["secure frames", "encryption"],
       render: () => (0, a.jsx)(y.Z, {})
     }), e.push({
       id: "performance",
       name: "Performance",
-      group: el.v0.DEVELOPMENT,
+      group: ei.v0.DEVELOPMENT,
       tags: ["fps", "frames", "gateway", "telemetry"],
       render: () => (0, a.jsx)(F.ZP, {})
     }), e.push({
       id: "age_verification",
       name: "Age Verification",
-      group: el.v0.DEVELOPMENT,
+      group: ei.v0.DEVELOPMENT,
       render: () => (0, a.jsx)(h.Z, {})
     }), e.push({
       id: "feedback",
       name: "Feedback",
-      group: el.v0.USERS,
+      group: ei.v0.USERS,
       tags: ["surveys"],
       render: () => (0, a.jsx)(C.Z, {})
     }), e.push({
       id: "overlay",
       name: "Overlay v3",
-      group: el.v0.GAMES,
-      render: () => (0, a.jsx)(M.Z, {})
+      group: ei.v0.GAMES,
+      render: () => (0, a.jsx)(L.Z, {})
     }), e.push({
       id: "generated_test_user",
       name: "Generated Test Users",
-      group: el.v0.DEVELOPMENT,
+      group: ei.v0.DEVELOPMENT,
       render: () => (0, a.jsx)(T.Z, {})
     }), e.push({
       id: "slayer_sdk",
       name: "Slayer SDK",
-      group: el.v0.GAMES,
+      group: ei.v0.GAMES,
       render: () => (0, a.jsx)(K.Z, {})
     }), e.push({
       id: "quick_switcher",
       name: "Quick Switcher",
-      group: el.v0.USERS,
-      render: () => (0, a.jsx)(er.Z, {})
+      group: ei.v0.USERS,
+      render: () => (0, a.jsx)(ea.Z, {})
     }), e.push({
       id: "clips",
       name: "Clips",
-      group: el.v0.AUDIO_VIDEO,
+      group: ei.v0.AUDIO_VIDEO,
       render: () => (0, a.jsx)(i.Z, {})
     })), e.push({
       id: "rive",
       name: "Rive",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       tags: ["animation"],
       render: () => (0, a.jsx)(H.Z, {})
     }), e.push({
       id: "lottie",
       name: "Lottie",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       tags: ["animation"],
       render: () => (0, a.jsx)(A.Z, {})
     }), e.push({
       id: "intl",
       name: "Intl",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       tags: ["i18n", "localization", "messages"],
       render: () => (0, a.jsx)(w.Z, {})
     }), e.push({
       id: "colors",
       name: "Colors",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       tags: ["tokens", "themes", "palette"],
-      render: () => (0, a.jsx)(x.Z, {})
+      render: () => (0, a.jsx)(b.Z, {})
     }), e.push({
       id: "design_toggles",
       name: "Design Toggles",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       render: () => (0, a.jsx)(v.Z, {})
     }), e.push({
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
-      group: el.v0.UI,
-      render: () => (0, a.jsx)(z.Z, {})
+      group: ei.v0.UI,
+      render: () => (0, a.jsx)(W.Z, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",
-      group: el.v0.DEVELOPMENT,
+      group: ei.v0.DEVELOPMENT,
       render: () => (0, a.jsx)(E.Z, {
         devSettingsCategory: m.zU.OVERLAYS
       })
     }), e.push({
       id: "messaging",
       name: "Messaging",
-      group: el.v0.USERS,
+      group: ei.v0.USERS,
       tags: ["dm", "nux", "system dm"],
       render: () => (0, a.jsx)(Z.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
-      group: el.v0.EXPERIMENTS,
+      group: ei.v0.EXPERIMENTS,
       render: () => (0, a.jsx)(E.Z, {
         devSettingsCategory: m.zU.REPORTING
       })
     }), e.push({
       id: "permissions",
       name: "Permissions",
-      group: el.v0.USERS,
+      group: ei.v0.USERS,
       render: () => (0, a.jsx)(V.Z, {})
     }), e.push({
       id: "modals",
       name: "Modals",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       tags: ["dialogs", "popups"],
       render: () => (0, a.jsx)(D.Z, {})
     }), e.push({
       id: "layers",
       name: "Layers",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       tags: ["verification", "safety flow"],
       render: () => (0, a.jsx)(R.Z, {})
     }), e.push({
       id: "affinity",
       name: "Affinity",
-      group: el.v0.USERS,
+      group: ei.v0.USERS,
       tags: ["friends"],
       render: () => (0, a.jsx)(p.Z, {})
-    }), e.push({
-      id: "widgets",
-      name: "Widgets",
-      group: el.v0.USERS,
-      tags: ["games", "profile"],
-      render: () => (0, a.jsx)($.Z, {})
     }), u.Z.isDeveloper && (e.push({
       id: "content_inventory",
       name: "Content Inventory",
-      group: el.v0.USERS,
+      group: ei.v0.USERS,
       render: () => (0, a.jsx)(s.Z, {})
     }), e.push({
       id: "notifications_inbox",
       name: "Notifications Inbox",
-      group: el.v0.USERS,
+      group: ei.v0.USERS,
       render: () => (0, a.jsx)(o.Z, {})
     })), e.push({
       id: "dcf_overrides",
       name: "DCF Overrides",
-      group: el.v0.DCF,
+      group: ei.v0.DCF,
       render: () => (0, a.jsx)(g.Z, {})
     }), e.push({
       id: "dcf_events",
       name: "DCF Events",
-      group: el.v0.DCF,
-      render: () => (0, a.jsx)(b.Z, {})
+      group: ei.v0.DCF,
+      render: () => (0, a.jsx)(x.Z, {})
     }), e.push({
       id: "hotspots",
       name: "Hotspots",
-      group: el.v0.EXPERIMENTS,
+      group: ei.v0.EXPERIMENTS,
       tags: ["coachmarks", "nux", "onboarding"],
       render: () => (0, a.jsx)(P.Z, {})
     }), e.push({
       id: "perks",
       name: "Perks",
-      group: el.v0.PREMIUM,
+      group: ei.v0.PREMIUM,
       tags: ["nitro", "tenure", "badges", "level up"],
       render: () => (0, a.jsx)(G.Z, {})
     }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
       id: "offers",
       name: "Offers",
-      group: el.v0.PREMIUM,
+      group: ei.v0.PREMIUM,
       tags: ["discounts", "trials", "reverse trials", "churn"],
-      render: () => (0, a.jsx)(L.Z, {})
+      render: () => (0, a.jsx)(M.Z, {})
     }), e.push({
       id: "payments",
       name: "Payments",
-      group: el.v0.BILLING,
+      group: ei.v0.BILLING,
       tags: ["stripe", "cards", "test cards"],
       render: () => (0, a.jsx)(B.Z, {})
     }), e.push({
       id: "subscriptions",
       name: "Subscriptions",
-      group: el.v0.PREMIUM,
+      group: ei.v0.PREMIUM,
       tags: ["nitro", "reverse trial"],
-      render: () => (0, a.jsx)(en.Z, {})
+      render: () => (0, a.jsx)(et.Z, {})
     }), e.push({
       id: "fractional_nitro",
       name: "Fractional Nitro",
-      group: el.v0.PREMIUM,
+      group: ei.v0.PREMIUM,
       tags: ["entitlements", "quests"],
       render: () => (0, a.jsx)(_.Z, {})
     }), e.push({
       id: "nitro_storybook",
       name: "Nitro Storybook",
-      group: el.v0.PREMIUM,
-      render: () => (0, a.jsx)(et.C, {})
+      group: ei.v0.PREMIUM,
+      render: () => (0, a.jsx)(ee.C, {})
     })), e.push({
       id: "gifting_intent",
       name: "Gifting Intent",
-      group: el.v0.PREMIUM,
+      group: ei.v0.PREMIUM,
       tags: ["friends", "anniversary"],
       render: () => (0, a.jsx)(O.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",
-      group: el.v0.AUDIO_VIDEO,
+      group: ei.v0.AUDIO_VIDEO,
       tags: ["soundboard", "effects"],
       render: () => (0, a.jsx)(J.Z, {})
     }), e.push({
       id: "krisp_tester",
       name: "Krisp Tester",
-      group: el.v0.AUDIO_VIDEO,
+      group: ei.v0.AUDIO_VIDEO,
       tags: ["noise cancellation", "audio", "vad"],
       render: () => (0, a.jsx)(I.Z, {})
     }), e.push({
       id: "skill_trees",
       name: "Skill Trees",
-      group: el.v0.BOOSTING,
+      group: ei.v0.BOOSTING,
       tags: ["boosting", "powerups", "server tag"],
       render: () => (0, a.jsx)(N.Z, {})
     }), e.push({
       id: "game_server",
       name: "Game Server",
-      group: el.v0.BOOSTING,
+      group: ei.v0.BOOSTING,
       render: () => (0, a.jsx)(S.Z, {})
     }), e.push({
       id: "language",
       name: "Language",
-      group: el.v0.UI,
+      group: ei.v0.UI,
       tags: ["locale"],
       render: () => (0, a.jsx)(k.Z, {})
     }), e.push({
       id: "word_frequency",
       name: "Word Frequency",
-      group: el.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(ee.Z, {})
+      group: ei.v0.DEVELOPMENT,
+      render: () => (0, a.jsx)($.Z, {})
     }), e.push({
       id: "user_settings",
       name: "User Settings",
-      group: el.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(es.Z, {})
+      group: ei.v0.DEVELOPMENT,
+      render: () => (0, a.jsx)(el.Z, {})
     }), e.push({
       id: "quest_minor_reward_capping_config",
       name: "Minor Reward Capping",
-      group: el.v0.QUESTS,
+      group: ei.v0.QUESTS,
       render: () => (0, a.jsx)(d.Z, {})
     }), e.push({
       id: "virtual_currency_config",
       name: "Virtual Currency Config",
-      group: el.v0.QUESTS,
+      group: ei.v0.QUESTS,
       render: () => (0, a.jsx)(X.Z, {})
     }), e.push({
       id: "Revenue Storybook",
       name: "Revenue Storybook",
-      group: el.v0.BILLING,
-      render: () => (0, a.jsx)(ei.Z, {})
+      group: ei.v0.BILLING,
+      render: () => (0, a.jsx)(er.Z, {})
     }), (0, c.X)({
-      location: eo.dr.QUEST_PREVIEW_TOOL
+      location: es.dr.QUEST_PREVIEW_TOOL
     }) && e.push({
       id: "quest_preview",
       name: "Quest Preview",
-      group: el.v0.QUESTS,
-      render: () => (0, a.jsx)(ea.Z, {})
+      group: ei.v0.QUESTS,
+      render: () => (0, a.jsx)(en.Z, {})
     }), e
   }, [])
 }

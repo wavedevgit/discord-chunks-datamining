@@ -1,12 +1,11 @@
 /** Chunk was on 6850 **/
 /** chunk id: 428936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk823596 = require("./823596.js"),
@@ -16,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk399158 = require("./399158.js");
 
-function f(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,76 +47,75 @@ function p(e, t) {
   }), e
 }
 
-function h(e) {
+function p(e) {
   let {
     guildId: t,
     onPageChange: n
-  } = e, [h, g] = l.useTransition(), j = (0, i.e7)([d.Z], () => d.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), x = (0, i.cj)([d.Z], () => d.Z.getPaginationStateByGuildId(t), [t]), v = (0, u.$j)(t), y = l.useMemo(() => c.LU.map(e => ({
+  } = e, [p, h] = l.useTransition(), g = (0, i.e7)([d.Z], () => d.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, i.cj)([d.Z], () => d.Z.getPaginationStateByGuildId(t), [t]), x = (0, c.$j)(t), v = l.useMemo(() => s.LU.map(e => ({
+    id: e.toString(),
     value: e,
     label: Number(e).toLocaleString()
-  })), []), O = new Intl.NumberFormat(m.intl.currentLocale).format(j), H = m.intl.formatToPlainString(m.t["RNDnQ/"], {
-    count: v ? "..." : O
-  }), w = j > x.pageSize || v, S = j > c.LU["0"];
+  })), []), O = new Intl.NumberFormat(C.intl.currentLocale).format(g), y = C.intl.formatToPlainString(C.t["RNDnQ/"], {
+    count: x ? "..." : O
+  }), H = g > j.pageSize || x, w = g > s.LU["0"];
   return (0, r.jsxs)("div", {
-    className: b.paginationContainer,
+    className: m.paginationContainer,
     children: [(0, r.jsx)("div", {
-      className: b.pageSizeSelection,
-      children: S ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.Text, {
+      className: m.pageSizeSelection,
+      children: w ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: m.intl.string(m.t.jNwLu2)
-        }), (0, r.jsx)(o.B6, {
-          "aria-label": H,
-          className: b.pageSizeInput,
-          options: y,
-          isSelected: e => e === x.pageSize,
-          select: e => {
-            g(() => {
-              (0, C._o)(t, p(f({}, x), {
+          children: C.intl.string(C.t.jNwLu2)
+        }), (0, r.jsx)(a.PhF, {
+          selectionMode: "single",
+          label: y,
+          hideLabel: true,
+          options: v,
+          value: j.pageSize,
+          onSelectionChange: e => {
+            h(() => {
+              (0, u._o)(t, f(b({}, j), {
                 pageSize: e
               }))
             })
-          },
-          serialize: e => "".concat(e),
-          popoutPosition: "top",
-          popoutWidth: 72
-        }), (0, r.jsx)(a.u, {
-          text: m.intl.string(m.t.ZTNur7),
-          shouldShow: v,
-          children: (0, r.jsx)(s.Text, {
+          }
+        }), (0, r.jsx)(o.u, {
+          text: C.intl.string(C.t.ZTNur7),
+          shouldShow: x,
+          children: (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            className: b.pageLabel,
-            children: H
+            className: m.pageLabel,
+            children: y
           })
         })]
-      }) : (0, r.jsx)(s.Text, {
+      }) : (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: m.intl.format(m.t.GZpwME, {
-          count: j
+        children: C.intl.format(C.t.GZpwME, {
+          count: g
         })
       })
     }), (0, r.jsx)("div", {
-      className: b.pagination,
-      children: w && (0, r.jsx)(s.DsT, {
-        className: b.paginationInput,
-        totalCount: j,
-        pageSize: x.pageSize,
+      className: m.pagination,
+      children: H && (0, r.jsx)(a.DsT, {
+        className: m.paginationInput,
+        totalCount: g,
+        pageSize: j.pageSize,
         disablePaginationGap: true,
         hideMaxPage: true,
-        currentPage: x.currentPage,
+        currentPage: j.currentPage,
         onPageChange: e => {
           null == n || n(e), requestIdleCallback(() => {
-            g(() => {
-              (0, C._o)(t, p(f({}, x), {
+            h(() => {
+              (0, u._o)(t, f(b({}, j), {
                 currentPage: e
               }))
             })
           })
         },
-        maxVisiblePages: c.hW
+        maxVisiblePages: s.hW
       })
     })]
   })

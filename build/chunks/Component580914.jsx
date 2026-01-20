@@ -51,7 +51,7 @@ let L = {
       onVisibilityChange: R
     } = e, P = (0, i.O)(e => {
       null == R || R(e)
-    }, .1, null != R), w = l.useRef(null), Z = (0, O.B)("HeroBlock"), D = (0, u.e7)([p.default], () => p.default.getCurrentUser()), M = (0, h.sp)(), H = l.useMemo(() => {
+    }, .1, null != R), w = l.useRef(null), Z = (0, O.B)("HeroBlock"), D = (0, u.e7)([p.default], () => p.default.getCurrentUser()), M = (0, m.sp)(), H = l.useMemo(() => {
       var e;
       return null != B ? B : null == A ? L : {
         rankedSkuIds: null != (e = A.heroRanking) ? e : [],
@@ -74,12 +74,12 @@ let L = {
       heroBannerStatic: V,
       heroBannerAnimated: G,
       heroBannerRive: K
-    } = (0, v.hr)(H), Y = null != (t = null == W ? true : W.responsive) && t, q = null == W ? true : W.backgroundStyle, Q = null != K, J = N === j.AW.ORBS, X = null != A && A.isOrbsExclusive, $ = J ? T.intl.string(T.t["1CdL8d"]) : T.intl.string(T.t.xYKa1T);
-    J && F && ($ = T.intl.string(T.t.dVz4hi));
+    } = (0, v.hr)(H), Y = null != (t = null == W ? true : W.responsive) && t, q = null == W ? true : W.backgroundStyle, Q = null != K, X = N === j.AW.ORBS, J = null != A && A.isOrbsExclusive, $ = X ? T.intl.string(T.t["1CdL8d"]) : T.intl.string(T.t.xYKa1T);
+    X && F && ($ = T.intl.string(T.t.dVz4hi));
     let {
       analyticsLocations: ee
     } = (0, f.ZP)(), et = () => {
-      J ? ((0, b.Y)({
+      X ? ((0, b.Y)({
         pageType: k.ZY5.SHOP_ORBS_TAB,
         sectionType: k.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: k.qAy.CTA_TO_QUEST_HOME
@@ -89,10 +89,10 @@ let L = {
         fromContent: o.j.ORBS_SHOP_HERO_CTA
       })) : (a({
         sourceButton: "shop latest category hero",
-        categorySkuId: X ? H.categorySkuId : true,
+        categorySkuId: J ? H.categorySkuId : true,
         isInternalShopDeeplink: true,
-        isOrbsExclusive: X
-      }), m.default.track(k.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        isOrbsExclusive: J
+      }), h.default.track(k.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == M ? true : M.sessionId,
         sku_id: H.categorySkuId,
         page_type: N,
@@ -158,7 +158,7 @@ let L = {
                 children: H.title
               }), null != H.summary && "" !== H.summary && (0, r.jsx)(d.Text, {
                 variant: "text-md/normal",
-                className: J ? I.orbsSubHeaderText : I.subHeaderText,
+                className: X ? I.orbsSubHeaderText : I.subHeaderText,
                 style: null != H.bannerTextColor ? {
                   color: H.bannerTextColor
                 } : true,

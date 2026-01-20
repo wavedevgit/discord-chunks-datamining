@@ -67,7 +67,7 @@ function y(e) {
         guildId: t.guild_id
       }))
     })
-  }, [t, r]), O = l.useCallback(e => {
+  }, [t, r]), S = l.useCallback(e => {
     r && (0, c.ZDy)(async () => {
       let {
         default: l
@@ -79,8 +79,8 @@ function y(e) {
       }))
     })
   }, [r, t]), {
-    handleDragStart: Z,
-    handleDragReset: S,
+    handleDragStart: O,
+    handleDragReset: Z,
     handleDragComplete: N
   } = (0, h.Z)(t.availableTags, e => {
     (0, d.pW)({
@@ -93,10 +93,10 @@ function y(e) {
       tag: e,
       availableTags: t.availableTags,
       canManageChannels: r,
-      onTagClick: O,
+      onTagClick: S,
       onDragComplete: N,
-      onDragReset: S,
-      onDragStart: Z
+      onDragReset: Z,
+      onDragStart: O
     }, e.id)) : null, m ? (0, i.jsx)(c.P3F, {
       onClick: y,
       className: a()(x.addTags, {

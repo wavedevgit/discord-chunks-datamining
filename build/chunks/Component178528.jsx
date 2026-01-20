@@ -156,7 +156,7 @@ class M extends Chunk473749.PureComponent {
         guild: o
       } = s,
       {
-        controller: a,
+        controller: l,
         renderBanner: c,
         bannerVisible: d,
         communityInfoVisible: g
@@ -165,7 +165,7 @@ class M extends Chunk473749.PureComponent {
     return (0, i.jsxs)(N.Z, {
       header: null != o ? (0, i.jsx)(h.ZP, {
         guild: o,
-        controller: a,
+        controller: l,
         renderBanner: c,
         bannerVisible: d,
         className: R.guildHeader,
@@ -173,13 +173,13 @@ class M extends Chunk473749.PureComponent {
         onMouseDown: r,
         disableBannerAnimation: false,
         communityInfoVisible: g,
-        children: (0, i.jsx)(l.yRy, {
+        children: (0, i.jsx)(a.yRy, {
           targetElementRef: this.settingsIconRef,
           position: "right",
           renderPopout: this.renderSettings,
           children: e => (0, i.jsx)(P.ZP.Icon, L({
             ref: this.settingsIconRef,
-            icon: l.ewm,
+            icon: a.ewm,
             label: k.intl.string(k.t["3D5yo/"])
           }, e))
         })
@@ -233,7 +233,7 @@ function z(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, o.e7)([x.Z], () => x.Z.getGuild(n)), s = (0, o.e7)([O.ZP], () => O.ZP.getChannels(n)), l = (0, o.e7)([v.Z], () => v.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([x.Z], () => x.Z.getGuild(n)), s = (0, o.e7)([O.ZP], () => O.ZP.getChannels(n)), a = (0, o.e7)([v.Z], () => v.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
   } = (0, o.cj)([C.ZP], () => ({
@@ -246,12 +246,12 @@ function z(e) {
       channelId: t
     } = e;
     return t
-  }), w = (0, o.e7)([_.Z], () => _.Z.getVoiceChannelId()), N = (0, o.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([E.default], () => E.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.GuildFeatures.COMMUNITY)) && t, z = (0, o.e7)([j.Z], () => j.Z.getChannelId()), V = (0, o.e7)([Z.Z], () => Z.Z.desyncedVoiceStatesCount);
+  }), w = (0, o.e7)([_.Z], () => _.Z.getVoiceChannelId()), N = (0, o.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([E.default], () => E.default.getGuildChangeSentinel(n)), R = (0, l.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.GuildFeatures.COMMUNITY)) && t, z = (0, o.e7)([j.Z], () => j.Z.getChannelId()), V = (0, o.e7)([Z.Z], () => Z.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(M, {
     guildId: n,
     guild: r,
     channels: s,
-    categories: l,
+    categories: a,
     mutedChannels: d,
     scrollToChannel: p,
     selectedChannelId: P,

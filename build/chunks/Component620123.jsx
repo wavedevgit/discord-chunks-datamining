@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk16084 = require("./16084.js"),
   Chunk55563 = require("./55563.js"),
   Chunk388032 = require("./388032.jsx");
@@ -32,20 +32,20 @@ class c extends Chunk473749.Component {
     let {
       skus: e,
       selectedSkuId: t,
-      className: n,
-      label: r
+      label: n
     } = this.props, l = null != e && 0 === e.length;
-    return (0, i.jsx)(s.y6, {
-      label: r,
+    return (0, i.jsx)(s.PhF, {
+      selectionMode: "single",
+      label: n,
       options: null != e ? e.map(e => ({
+        id: e.id,
         label: e.name,
         value: e.id
       })) : [],
       placeholder: l ? u.intl.string(u.t.hKcgP5) : u.intl.string(u.t.QV60Uq),
       value: t,
-      onChange: this.handleChange,
-      className: n,
-      isDisabled: l
+      onSelectionChange: this.handleChange,
+      disabled: l
     })
   }
   constructor(...e) {

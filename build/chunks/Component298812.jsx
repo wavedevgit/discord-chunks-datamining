@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
 let A = Chunk473749.forwardRef(function(e, t) {
   let {
     guildId: n
-  } = e, [l, r] = s.useState(null), d = (0, a.Wu)([x.Z, f.ZP], () => (0, S.OD)(f.ZP.getChannelOverrides(n), {
+  } = e, [l, r] = s.useState(null), d = (0, a.Wu)([x.Z, f.ZP], () => (0, N.OD)(f.ZP.getChannelOverrides(n), {
     ignoreMute: true,
     ignoreUnreadSetting: false,
     ignoreNotificationSetting: false
@@ -58,7 +58,7 @@ let A = Chunk473749.forwardRef(function(e, t) {
           muted: false,
           message_notifications: f.ZP.resolvedMessageNotifications(t),
           flags: (0, C.pq)(f.ZP.getChannelIdFlags(t.guild_id, t.id), f.ZP.resolveUnreadSetting(t))
-        }, N.ZB.OverrideCreated), r(e))
+        }, S.ZB.OverrideCreated), r(e))
       }
     }), h.length > 0 && (0, i.jsxs)("div", {
       className: y.table,
@@ -103,7 +103,7 @@ function P(e) {
     channel: t,
     categories: n,
     autoFocus: l
-  } = e, c = (0, a.e7)([x.Z], () => x.Z.getChannel(null == t ? true : t.parent_id)), p = (0, E.ZA)(t), f = s.useRef(null), b = s.useRef(null), [N, S] = s.useState(false);
+  } = e, c = (0, a.e7)([x.Z], () => x.Z.getChannel(null == t ? true : t.parent_id)), p = (0, E.ZA)(t), f = s.useRef(null), b = s.useRef(null), [S, N] = s.useState(false);
   if (s.useEffect(() => {
       if (l) {
         var e;
@@ -119,7 +119,7 @@ function P(e) {
   }) : null != c && (C = _.intl.formatToPlainString(_.t.L1zJgb, {
     categoryName: (0, h.F6)(c, v.default, j.Z)
   }));
-  let A = N ? O.s8.CUSTOM : p.preset;
+  let A = S ? O.s8.CUSTOM : p.preset;
   return (0, i.jsx)("div", {
     ref: f,
     children: (0, i.jsxs)("div", {
@@ -150,7 +150,7 @@ function P(e) {
             checked: A === O.s8.ALL_MESSAGES,
             label: "",
             onChange: () => {
-              (0, E._m)(t.guild_id, t.id, O.s8.ALL_MESSAGES), S(false)
+              (0, E._m)(t.guild_id, t.id, O.s8.ALL_MESSAGES), N(false)
             }
           })
         })
@@ -161,7 +161,7 @@ function P(e) {
             checked: A === O.s8.MENTIONS,
             label: "",
             onChange: () => {
-              (0, E._m)(t.guild_id, t.id, O.s8.MENTIONS), S(false)
+              (0, E._m)(t.guild_id, t.id, O.s8.MENTIONS), N(false)
             }
           })
         })
@@ -172,7 +172,7 @@ function P(e) {
             checked: A === O.s8.NOTHING,
             label: "",
             onChange: () => {
-              (0, E._m)(t.guild_id, t.id, O.s8.NOTHING), S(false)
+              (0, E._m)(t.guild_id, t.id, O.s8.NOTHING), N(false)
             }
           })
         })
@@ -188,7 +188,7 @@ function P(e) {
               checked: A === O.s8.CUSTOM,
               label: "",
               onChange: () => {
-                S(true);
+                N(true);
                 let e = b.current;
                 null != e && (0, d.vq)({
                   stopPropagation: () => {},
@@ -200,7 +200,7 @@ function P(e) {
                   "aria-label": _.intl.string(_.t.kMdneQ),
                   onClose: () => {},
                   onSelect: () => {},
-                  children: (0, g.T5)(t, () => S(false))
+                  children: (0, g.T5)(t, () => N(false))
                 }))
               }
             })

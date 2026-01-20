@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
 let o = new Map;
 
 function a(e) {
-  let [t, n] = r.useState(o.has(e) ? Array.from(o.get(e)) : []), [a, s] = r.useState(false), c = r.useMemo(() => t.map(e => e.code), [t]), u = r.useMemo(() => t.reduce((e, t) => (e[t.code] = t, e), {}), [t]), d = r.useCallback(async () => {
+  let [t, n] = r.useState(o.has(e) ? Array.from(o.get(e)) : []), [a, s] = r.useState(false), c = r.useMemo(() => t.map(e => e.code), [t]), d = r.useMemo(() => t.reduce((e, t) => (e[t.code] = t, e), {}), [t]), u = r.useCallback(async () => {
     s(true);
     let t = (await l.tn.get({
       url: i.ANM.GUILD_INSTANT_INVITES(e),
@@ -18,11 +18,11 @@ function a(e) {
     n(t), o.set(e, new Set(t)), s(false)
   }, [e]);
   return r.useEffect(() => {
-    d()
-  }, [e, d]), {
+    u()
+  }, [e, u]), {
     invitesRaw: t,
     inviteCodes: c,
-    invitesByCode: u,
+    invitesByCode: d,
     loading: a
   }
 }

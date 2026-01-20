@@ -38,10 +38,12 @@ function a() {
       t = n(1474)
     }
     return "en-US" === i ? {
+      id: i,
       value: i,
       label: r.intl.string(r.t.WKEPHR),
       image: t
     } : {
+      id: i,
       value: i,
       label: l,
       image: t

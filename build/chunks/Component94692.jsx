@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk325432 = require("./325432.js"),
   Chunk391690 = require("./391690.js"),
   Chunk424218 = require("./424218.js"),
@@ -54,14 +54,17 @@ class f extends Chunk473749.PureComponent {
         label: s
       } = t;
       return {
+        id: e,
         value: e,
         label: this.renderLabel(e, s)
       }
     });
     return null != e && s.push({
+      id: e,
       value: e,
       label: this.renderLabel(e)
     }), s.push({
+      id: I,
       value: I,
       label: u.intl.string(u.t["cL/rrq"])
     }), s
@@ -112,12 +115,14 @@ class f extends Chunk473749.PureComponent {
     } = this.props;
     return (0, l.jsxs)("div", {
       className: e,
-      children: [(0, l.jsx)(i.y6, {
+      children: [(0, l.jsx)(a.PhF, {
         label: u.intl.string(u.t.WTJuNr),
         autoFocus: s,
         options: this.getOptions(),
         value: t,
-        onChange: this.handleChange
+        onSelectionChange: this.handleChange,
+        selectionMode: "single",
+        fullWidth: true
       }), this.renderError()]
     })
   }

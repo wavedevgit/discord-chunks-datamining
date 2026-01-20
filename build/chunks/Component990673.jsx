@@ -21,13 +21,13 @@ function d(e) {
     locked: d,
     className: u
   } = e;
-  return (0, i.jsxs)(a.ZP, {
+  return (0, i.jsxs)(l.ZP, {
     className: s()(c.wrapper, u),
     children: [(0, i.jsx)(o.Z, {
       contained: true,
       dragStart: t,
       locked: d
-    }), (0, i.jsx)(l.Z, {
+    }), (0, i.jsx)(a.Z, {
       dragStart: t,
       locked: d,
       pinned: r,

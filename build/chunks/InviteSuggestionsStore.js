@@ -27,13 +27,13 @@ let E = new Set,
 
 function T(e) {
   let t = new Set,
-    n = (null == r ? true : r.type) === S.d4z.GUILD_VOICE,
+    n = (null == r ? true : r.type) === f.d4z.GUILD_VOICE,
     l = null;
   null == s || o === y.Iq.EMBEDDED_APPLICATION || n || (l = s.id);
   let i = (0, I.rh)(E, l);
-  for (let e of (null == i || f.Z.isBlockedOrIgnored(i.id) || t.add(i.id), p.Z.getUserAffinities())) t.add(e.otherUserId);
+  for (let e of (null == i || S.Z.isBlockedOrIgnored(i.id) || t.add(i.id), p.Z.getUserAffinities())) t.add(e.otherUserId);
   let a = new Set;
-  return o === y.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => m.Z.getChannel(e)).filter(v.lm).filter(e => e.type === S.d4z.GUILD_TEXT).filter(e => x.Z.can(S.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => a.add(e.id)), (0, I.an)({
+  return o === y.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => m.Z.getChannel(e)).filter(v.lm).filter(e => e.type === f.d4z.GUILD_TEXT).filter(e => x.Z.can(f.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => a.add(e.id)), (0, I.an)({
     query: e,
     omitUserIds: E,
     suggestedUserIds: t,
@@ -53,7 +53,7 @@ function A(e) {
 }
 class N extends(u = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(m.Z, x.Z, h.Z, f.Z, p.Z)
+    this.waitFor(m.Z, x.Z, h.Z, S.Z, p.Z)
   }
   getInviteSuggestionRows() {
     return _
@@ -90,7 +90,7 @@ let M = new N(Chunk570140.Z, {
       applicationId: d,
       inviteTargetType: c
     } = e;
-    s = null != u ? n : null, r = u, a = d, o = c, E = new Set([...t, ...f.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
+    s = null != u ? n : null, r = u, a = d, o = c, E = new Set([...t, ...S.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
       channel: r,
       applicationId: a,
       inviteTargetType: c

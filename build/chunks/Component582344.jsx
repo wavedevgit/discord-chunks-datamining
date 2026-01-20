@@ -25,10 +25,10 @@ function f() {
     dailyCapReached: c.Z.hasUserHitDCCap(),
     dailyCapOverridden: c.Z.dailyCapOverridden,
     newUserMinAgeRequiredOverridden: c.Z.newUserMinAgeRequiredOverridden
-  })), [f, x] = r.useState(""), [b, g] = r.useState(20), v = r.useMemo(() => Object.keys(l.z).filter(e => e.toLowerCase().includes(f.toLowerCase())).reverse(), [f]), j = r.useCallback(e => {
+  })), [f, b] = r.useState(""), [x, g] = r.useState(20), v = r.useMemo(() => Object.keys(l.z).filter(e => e.toLowerCase().includes(f.toLowerCase())).reverse(), [f]), j = r.useCallback(e => {
     let t = e.currentTarget;
-    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && b < v.length && g(e => e + 100)
-  }, [b, v.length]);
+    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && x < v.length && g(e => e + 100)
+  }, [x, v.length]);
   return (0, a.jsx)(s.h21, {
     onScroll: j,
     children: (0, a.jsxs)("div", {
@@ -71,10 +71,10 @@ function f() {
         label: "All Dismissible Contents",
         children: [(0, a.jsx)(s.E1j, {
           query: f,
-          onChange: x,
-          onClear: () => x("")
+          onChange: b,
+          onClear: () => b("")
         }), (0, a.jsx)(d.Z, {
-          items: v.slice(0, b)
+          items: v.slice(0, x)
         })]
       })]
     })

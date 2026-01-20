@@ -75,9 +75,9 @@ let R = e => {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
     }), n), [w, Z] = l.useState(false), D = (0, g.sp)(), M = null != (t = null == D ? true : D.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, h.n)({
+      (0, m.n)({
         sessionId: M,
-        checkpoint: h.a.SHOP_MOUNTED,
+        checkpoint: m.a.SHOP_MOUNTED,
         tab: E,
         unpublishedCategoriesShown: A,
         cacheDisabled: T
@@ -88,7 +88,7 @@ let R = e => {
       fetchShopHomeError: F,
       shopBlocks: W,
       refreshShopHome: U
-    } = (0, m.E)(E, {
+    } = (0, h.E)(E, {
       noCache: T,
       includeUnpublished: A,
       includeBundles: true,
@@ -100,9 +100,9 @@ let R = e => {
       U()
     }, [U]);
     return (l.useEffect(() => {
-      null != F || H || 0 === W.length || (0, h.n)({
+      null != F || H || 0 === W.length || (0, m.n)({
         sessionId: M,
-        checkpoint: h.a.SHOP_RENDERED,
+        checkpoint: m.a.SHOP_RENDERED,
         tab: E,
         unpublishedCategoriesShown: A,
         cacheDisabled: T
@@ -224,20 +224,20 @@ let R = e => {
       transitionState: a
     } = e, s = l.useRef(null), {
       handleScroll: i
-    } = (0, u.z)(s, n), o = (0, E.R)(), d = (0, g.sp)(), [b, p] = l.useState(L.IV), [m, h] = l.useState(false);
+    } = (0, u.z)(s, n), o = (0, E.R)(), d = (0, g.sp)(), [b, p] = l.useState(L.IV), [h, m] = l.useState(false);
     return l.useEffect(() => {
       if (null != s.current) {
         let e = () => {
             if (null == s.current) return;
             let e = s.current.getDistanceFromBottom();
-            b >= 36 ? h(e < 20) : e <= 200 && p(e => e + L.IV)
+            b >= 36 ? m(e < 20) : e <= 200 && p(e => e + L.IV)
           },
           t = s.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [s, b, p, h]), (0, r.jsx)(c.Den, {
+    }, [s, b, p, m]), (0, r.jsx)(c.Den, {
       className: N.shopScroll,
       ref: s,
       onScroll: i,
@@ -273,13 +273,13 @@ let R = e => {
             })]
           })]
         }), (0, r.jsx)(T.Z, {
-          peaking: m,
+          peaking: h,
           transitioning: a === L.f7.OUT
         }), (0, r.jsx)(T.Z, {
           style: {
             left: 1850
           },
-          peaking: m,
+          peaking: h,
           transitioning: a === L.f7.OUT
         })]
       })

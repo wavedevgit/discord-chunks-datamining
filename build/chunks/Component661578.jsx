@@ -45,7 +45,7 @@ function T(e) {
     errorHints: C,
     startingConsoleQuest: T,
     startConsoleQuest: O
-  } = (0, x.GI)({
+  } = (0, b.GI)({
     questId: t.id,
     beforeRequest: () => {
       g({
@@ -72,13 +72,13 @@ function T(e) {
         children: C.map((e, n) => {
           if (e.type === s.K.EXPIRED_CREDENTIAL && i) {
             let r = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
-              i = (0, b.C9)(e),
-              l = (0, b._j)(e);
+              i = (0, x.C9)(e),
+              l = (0, x._j)(e);
             return (0, a.jsx)(E, {
               children: _.intl.format(i, {
                 account_name: null == r ? true : r.name,
                 onClick: () => {
-                  (0, b.fY)({
+                  (0, x.fY)({
                     quest: t,
                     platformType: l
                   }, {
@@ -139,7 +139,7 @@ let O = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), l = (0, x.z6)(), s = r.useMemo(() => (0, b.B3)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), l = (0, b.z6)(), s = r.useMemo(() => (0, x.B3)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
     steps: c,
     hasConnectedAccounts: u,
     isProgressingQuestForLaunchedGame: m,

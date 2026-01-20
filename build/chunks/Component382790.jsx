@@ -7,7 +7,7 @@ require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk552062 = require("./552062.jsx"),
   Chunk416568 = require("./416568.jsx"),
@@ -54,7 +54,7 @@ class E extends(i = Chunk473749.PureComponent) {
       children: (0, r.jsx)(g.Z, {})
     }), o = n ? "div" : h.ZP;
     return (0, r.jsxs)(o, {
-      className: l()(y.base, {
+      className: a()(y.base, {
         [y.widget]: !n
       }, i),
       children: [(0, r.jsx)(d.Z, {

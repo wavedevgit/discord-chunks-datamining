@@ -22,8 +22,8 @@ function p(e) {
     children: p,
     height: h,
     className: f,
-    contentClassName: x
-  } = e, b = (0, c.Dt)(), g = r.useRef(null), v = (0, o.q_F)({
+    contentClassName: b
+  } = e, x = (0, c.Dt)(), g = r.useRef(null), v = (0, o.q_F)({
     from: {
       transform: "translate3d(-110%, 0, 0)",
       height: h
@@ -45,7 +45,7 @@ function p(e) {
     className: l()(m.container, f),
     style: v,
     children: (0, a.jsxs)("aside", {
-      "aria-labelledby": b,
+      "aria-labelledby": x,
       className: m.content,
       children: [(0, a.jsxs)("div", {
         className: m.headerRow,
@@ -60,7 +60,7 @@ function p(e) {
             color: "currentColor"
           })
         }), (0, a.jsx)(o.Heading, {
-          id: b,
+          id: x,
           variant: "heading-lg/semibold",
           children: n
         })]
@@ -72,7 +72,7 @@ function p(e) {
         className: m.scroller,
         fade: true,
         children: (0, a.jsx)("div", {
-          className: l()(m.scrollerContent, x),
+          className: l()(m.scrollerContent, b),
           children: p
         })
       })]

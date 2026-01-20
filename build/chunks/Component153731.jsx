@@ -49,7 +49,7 @@ function I(e, t, n, a, i) {
         context: e
       })
     }), null != d && o.push({
-      section: (0, v.J$)(e, R._s_.TRANSPORT, n),
+      section: (0, v.J$)(e, S._s_.TRANSPORT, n),
       label: F.intl.string(F.t.wU9IN2),
       element: Z.Z,
       elementProps: {
@@ -57,7 +57,7 @@ function I(e, t, n, a, i) {
         index: n
       }
     }), null == h || l().isEmpty(h) || o.push({
-      section: (0, v.J$)(e, R._s_.OUTBOUND, n),
+      section: (0, v.J$)(e, S._s_.OUTBOUND, n),
       label: F.intl.string(F.t["3u0gII"]),
       element: x.Z,
       elementProps: {
@@ -65,7 +65,7 @@ function I(e, t, n, a, i) {
         index: n
       }
     }), null != f && o.push({
-      section: (0, v.J$)(e, R._s_.CAMERA, n),
+      section: (0, v.J$)(e, S._s_.CAMERA, n),
       label: F.intl.string(F.t["2AGBWH"]),
       element: D.Z,
       elementProps: {
@@ -134,8 +134,8 @@ function k() {
     defaultStats: n,
     streamStats: i
   } = (0, o.e7)([v.ZP], () => ({
-    defaultStats: v.ZP.getAllStats(S.Yn.DEFAULT),
-    streamStats: v.ZP.getAllStats(S.Yn.STREAM)
+    defaultStats: v.ZP.getAllStats(R.Yn.DEFAULT),
+    streamStats: v.ZP.getAllStats(R.Yn.STREAM)
   }), [], o.pF), l = (0, o.e7)([g.Z, f.Z], () => f.Z.getChannel(g.Z.getChannelId())), m = null == (e = n.concat(i).find(e => null != e.screenshare)) ? true : e.screenshare, y = null == (t = i.find(e => null != e.clips)) ? true : t.clips, E = (0, o.e7)([h.Z], () => h.Z.theme), b = (0, p.Ll)(), D = (0, o.e7)([v.ZP], () => v.ZP.getSection()), j = function(e) {
     let {
       defaultStats: t,
@@ -145,18 +145,18 @@ function k() {
       clips: l,
       channel: o,
       connectionState: c
-    } = e, d = t.flatMap((e, t) => I(S.Yn.DEFAULT, e, t, a, null == o ? true : o.getGuildId())), m = n.flatMap((e, t) => I(S.Yn.STREAM, e, t, a, null == o ? true : o.getGuildId())), p = [], h = [], f = {
+    } = e, d = t.flatMap((e, t) => I(R.Yn.DEFAULT, e, t, a, null == o ? true : o.getGuildId())), m = n.flatMap((e, t) => I(R.Yn.STREAM, e, t, a, null == o ? true : o.getGuildId())), p = [], h = [], f = {
       section: u.ID.DIVIDER
     };
     return null != i && (p.push(f), p.push({
-      section: R._s_.SCREENSHARE,
+      section: S._s_.SCREENSHARE,
       label: F.intl.string(F.t["gWbr/U"]),
       element: C.Z,
       elementProps: {
         screenshare: i
       }
     })), null != l && (h.push(f), h.push({
-      section: R._s_.CLIPS,
+      section: S._s_.CLIPS,
       label: F.intl.string(F.t.MKrFKE),
       element: P.Z,
       elementProps: {
@@ -176,7 +176,7 @@ function k() {
       element: () => (0, r.jsx)(s.Heading, {
         className: N.channelName,
         variant: "heading-md/normal",
-        children: c === R.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
+        children: c === S.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
       })
     }, ...d, ...m, ...p, ...h]
   }({

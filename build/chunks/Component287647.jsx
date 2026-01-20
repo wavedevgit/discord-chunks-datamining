@@ -56,15 +56,15 @@ function v(e) {
       graphic: {
         type: "video",
         ref: j,
-        src: b.Z,
+        src: x.Z,
         aspectRatio: "21/9",
         loop: true
       },
       size: "lg",
-      title: x.intl.string(f.default["1AE464"]),
-      body: [x.intl.string(f.default.cNc1g9), x.intl.string(x.t["4JNXHG"])],
+      title: b.intl.string(f.default["1AE464"]),
+      body: [b.intl.string(f.default.cNc1g9), b.intl.string(b.t["4JNXHG"])],
       actions: [{
-        text: x.intl.string(x.t.uw9zI7),
+        text: b.intl.string(b.t.uw9zI7),
         variant: "primary",
         onClick: C
       }]

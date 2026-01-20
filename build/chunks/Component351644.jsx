@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 351644, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => W
+  Z: () => B
 }), require("./539854.js"), require("./781311.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,7 +44,7 @@ function U(e, t) {
   return t.includes(e)
 }
 
-function B(e) {
+function W(e) {
   let {
     query: t,
     setQuery: n
@@ -63,10 +63,10 @@ function B(e) {
   })
 }
 
-function W(e) {
+function B(e) {
   var t, n, l, o;
   let {
-    guild: W,
+    guild: B,
     channel: H,
     applicationIntegrations: G,
     builtInIntegrations: F,
@@ -89,9 +89,9 @@ function W(e) {
     canManageWebhooks: el,
     canManageGuild: ea
   } = (0, c.cj)([C.Z], () => ({
-    canManageWebhooks: null != W && C.Z.can(_.Plq.MANAGE_WEBHOOKS, W) || null != H && C.Z.can(_.Plq.MANAGE_WEBHOOKS, H),
-    canManageGuild: null != W && null == H && C.Z.can(_.Plq.MANAGE_GUILD, W)
-  }), [W, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, O.F)(null == W ? true : W.id), {
+    canManageWebhooks: null != B && C.Z.can(_.Plq.MANAGE_WEBHOOKS, B) || null != H && C.Z.can(_.Plq.MANAGE_WEBHOOKS, H),
+    canManageGuild: null != B && null == H && C.Z.can(_.Plq.MANAGE_GUILD, B)
+  }), [B, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, O.F)(null == B ? true : B.id), {
     availableTwitchIntegrations: ed,
     availableYoutubeIntegrations: eu,
     guildTwitchIntegrations: em,
@@ -112,14 +112,14 @@ function W(e) {
       showTwitchCard: false,
       showYoutubeCard: false
     };
-    let e = null == W ? true : W.features.has(_.GuildFeatures.COMMUNITY),
+    let e = null == B ? true : B.features.has(_.GuildFeatures.COMMUNITY),
       t = er.filter(e => e.type === _.ABu.TWITCH).length > 0,
       n = er.filter(e => e.type === _.ABu.YOUTUBE).length > 0;
     return {
       showTwitchCard: ed > 0 || !t && e,
       showYoutubeCard: eu > 0 || !n && e
     }
-  }, [ei, ea, W, er, ed, eu]), ef = Object.values(G).length, eh = r.useMemo(() => {
+  }, [ei, ea, B, er, ed, eu]), ef = Object.values(G).length, eh = r.useMemo(() => {
     let e = ef > 100 ? U : s();
     return Object.values(G).filter(t => {
       var n;
@@ -129,8 +129,8 @@ function W(e) {
       return !!("" === (n = (n = et).trim().toLowerCase()) || i.id === n || e(n, i.name.toLowerCase()) || null != i.bot && e(n, i.bot.username.toLowerCase()))
     })
   }, [G, ef, et]), ex = (0, c.e7)([P.Z], () => {
-    if (null != W) return eh.find(e => P.Z.canShowOverviewTooltip(W.id, e.integration.id))
-  }, [eh, W]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), ev = (0, u.s9z)(u.JQI), [eO, ey] = r.useState(false), eC = r.useRef(0), eN = () => {
+    if (null != B) return eh.find(e => P.Z.canShowOverviewTooltip(B.id, e.integration.id))
+  }, [eh, B]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), ev = (0, u.s9z)(u.JQI), [eO, ey] = r.useState(false), eC = r.useRef(0), eN = () => {
     ey(true), clearTimeout(eC.current), eC.current = setTimeout(() => {
       ey(false)
     }, 200)
@@ -167,12 +167,12 @@ function W(e) {
         onButtonClick: () => {
           X(n.id), N.default.track(_.rMx.APP_MANAGE_CTA_CLICKED, {
             application_id: n.id,
-            guild_id: null == W ? true : W.id,
-            is_admin: null != W ? C.Z.can(_.Plq.ADMINISTRATOR, W) : true
+            guild_id: null == B ? true : B.id,
+            is_admin: null != B ? C.Z.can(_.Plq.ADMINISTRATOR, B) : true
           })
         },
         details: l,
-        guildId: null == W ? true : W.id,
+        guildId: null == B ? true : B.id,
         isScrolling: eO,
         canShowMigrationTooltip: t
       }, "integration-".concat(r.id))
@@ -233,7 +233,7 @@ function W(e) {
         })
       });
     return t > 0 ? l : a
-  }(ee, ef, null == W ? true : W.id), eI = null);
+  }(ee, ef, null == B ? true : B.id), eI = null);
   let eT = I.Z.getArticleURL(_.BhN.INTEGRATIONS),
     eE = null != H ? A.t.YV0vh6 : A.t.FnZEJs,
     eZ = [];
@@ -338,7 +338,7 @@ function W(e) {
       })
     }), (0, i.jsx)(u.izJ, {
       className: D.divider
-    }), V || ei || null == W ? (0, i.jsx)(u.$jN, {
+    }), V || ei || null == B ? (0, i.jsx)(u.$jN, {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {
@@ -367,7 +367,7 @@ function W(e) {
           variant: "heading-md/semibold",
           className: D.sectionHeader,
           children: A.intl.string(A.t.pUBKht)
-        }), ef > 4 ? (0, i.jsx)(B, {
+        }), ef > 4 ? (0, i.jsx)(W, {
           query: et,
           setQuery: en
         }) : null, eS]

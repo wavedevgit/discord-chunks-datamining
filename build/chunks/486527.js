@@ -19,29 +19,37 @@ var r, i, l, a, Chunk149765 = require("./149765.js"),
 
 function g(e) {
   return "883060064561299456" === e ? [{
+    id: "club",
     value: 1,
     label: u.intl.string(u.t["Z+MPN/"])
   }, {
+    id: "class",
     value: 2,
     label: u.intl.string(u.t.dV9uBr)
   }, {
+    id: "study",
     value: 3,
     label: u.intl.string(u.t.xoHQcn)
   }, {
+    id: "misc",
     value: 5,
     label: u.intl.string(u.t.Ao41ri)
   }] : [{
+    id: "club",
     value: 1,
     label: u.intl.string(u.t.oNHFUL),
     idealSize: 100
   }, {
+    id: "class",
     value: 2,
     label: u.intl.string(u.t.V1i8nS)
   }, {
+    id: "study",
     value: 3,
     label: u.intl.string(u.t.Z2ygQt),
     idealSize: 50
   }, {
+    id: "misc",
     value: 5,
     label: u.intl.string(u.t["0Bg9La"])
   }]

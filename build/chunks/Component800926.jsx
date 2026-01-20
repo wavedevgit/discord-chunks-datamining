@@ -39,24 +39,24 @@ let g = Chunk473749.forwardRef(function(e, t) {
     }), (0, a.jsx)(s.animated.div, {
       ref: t,
       "aria-hidden": _ && S,
-      className: l()(g, b.contentCollapsed, {
-        [b.contentCollapsedExpanded]: _,
-        [b.contentCollapsedAccepted]: N
+      className: l()(g, x.contentCollapsed, {
+        [x.contentCollapsedExpanded]: _,
+        [x.contentCollapsedAccepted]: N
       }),
       style: {
         opacity: j.to({
           range: [0, 1],
           output: [1, 0]
         }),
-        backgroundImage: E ? "linear-gradient(90deg, ".concat(x.cd, ", ").concat(x.v$, ")") : true
+        backgroundImage: E ? "linear-gradient(90deg, ".concat(b.cd, ", ").concat(b.v$, ")") : true
       },
       onMouseEnter: () => I(true),
       onMouseLeave: () => I(false),
       children: (0, a.jsxs)("div", {
-        className: b.contentCollapsedWrapper,
+        className: x.contentCollapsedWrapper,
         children: [E && (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(f.Z, {}), (0, a.jsx)("div", {
-            className: b.divider
+            className: x.divider
           })]
         }), N ? (0, a.jsx)(h.Z, {
           contentLocation: "collapsed",

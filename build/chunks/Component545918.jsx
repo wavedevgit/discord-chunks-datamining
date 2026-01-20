@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 545918, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => U
+  default: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -51,8 +51,8 @@ function B(e) {
     location: t.name,
     subsection: i
   }), (0, l.jsxs)(v.Z, {
-    className: G.header,
-    innerClassname: G.__invalid_innerHeader,
+    className: L.header,
+    innerClassname: L.__invalid_innerHeader,
     channelId: D.oC.MEMBER_SAFETY,
     guildId: t.id,
     hideSearch: true,
@@ -69,7 +69,7 @@ function B(e) {
   })
 }
 
-function U(e) {
+function F(e) {
   var t;
   let {
     guildId: n
@@ -89,10 +89,10 @@ function U(e) {
   r.useEffect(() => {
     (null == v ? true : v.features.has(M.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || j(N.e.ALL_MEMBERS)
   }, [v]);
-  let U = (0, O.n2)(n),
-    F = (0, m.m)(n),
+  let F = (0, O.n2)(n),
+    U = (0, m.m)(n),
     q = r.useRef(null);
-  (0, _.n)(n);
+  (0, P.n)(n);
   let {
     fetchNextPage: z
   } = (0, f.m)({
@@ -107,18 +107,18 @@ function U(e) {
     u !== e && (j(e), x.Z.setSelectedGuildJoinRequest(n, null), "ALL_MEMBERS" !== e && await z(D, e))
   }, [u, n, z, D]);
   r.useEffect(() => {
-    if (!U && null != v) {
+    if (!F && null != v) {
       var e;
       let t = null == (e = S.ZP.getDefaultChannel(v.id)) ? true : e.id;
       (0, C.XU)(v.id, t)
     }
-  }, [v, U]);
+  }, [v, F]);
   let K = (0, s.e7)([T.ZP], () => null != T.ZP.getGuildSidebarState(n), [n]);
-  return null != v && U ? (0, l.jsxs)(d.Gt, {
+  return null != v && F ? (0, l.jsxs)(d.Gt, {
     value: R,
     children: [(0, l.jsxs)("div", {
-      className: i()(L.chat, G.page, {
-        [L.threadSidebarOpen]: K
+      className: i()(G.chat, L.page, {
+        [G.threadSidebarOpen]: K
       }),
       children: [(0, l.jsx)(B, {
         guild: v,
@@ -129,7 +129,7 @@ function U(e) {
         ref: q,
         orientation: "vertical",
         children: (0, l.jsx)("div", {
-          className: i()(L.content, G.container),
+          className: i()(G.content, L.container),
           children: u === N.e.ALL_MEMBERS ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(y.Z, {
               guild: v
@@ -144,9 +144,9 @@ function U(e) {
       }), (0, l.jsx)(A.Z, {
         guildId: v.id
       })]
-    }), F && (u === N.e.ALL_MEMBERS ? (0, l.jsx)(w.Z, {
+    }), U && (u === N.e.ALL_MEMBERS ? (0, l.jsx)(w.Z, {
       guildId: v.id
-    }) : (0, l.jsx)(P.Z, {
+    }) : (0, l.jsx)(_.Z, {
       guildId: v.id
     }))]
   }) : null

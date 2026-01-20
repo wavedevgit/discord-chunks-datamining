@@ -251,18 +251,18 @@ function D() {
     })).toReversed(), [i]),
     [c, d] = r.useState(s),
     [m, f] = r.useState(s),
-    [x, g] = r.useState(false),
+    [b, g] = r.useState(false),
     [v, j] = r.useState(),
     y = r.useCallback(e => {
       f(e)
     }, []);
-  (0, b.BO)(t, x ? c : s, y, Z);
+  (0, x.BO)(t, b ? c : s, y, Z);
   let C = r.useCallback(e => {
       d(s), g(e)
     }, [s]),
     _ = t.trim().length > 0,
-    E = r.useMemo(() => _ ? m : x ? c : s, [s, m, _, x, c]),
-    T = x ? "Enable Event Tracking" : "Pause Event Tracking";
+    E = r.useMemo(() => _ ? m : b ? c : s, [s, m, _, b, c]),
+    T = b ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, a.jsxs)("div", {
     ref: e,
     className: l()(N.panel, O.panel),
@@ -272,10 +272,10 @@ function D() {
         text: T,
         children: (0, a.jsx)(p.hU, {
           size: "sm",
-          variant: x ? "primary" : "active",
-          icon: x ? p.o1U : p.fpf,
+          variant: b ? "primary" : "active",
+          icon: b ? p.o1U : p.fpf,
           "aria-label": T,
-          onClick: () => C(!x)
+          onClick: () => C(!b)
         })
       }), (0, a.jsx)(p.E1j, {
         size: "sm",

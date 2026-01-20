@@ -7,8 +7,8 @@ var Chunk448730 = require("./448730.js"),
 module.exports = function(e) {
   return function(t) {
     var n = r(t = o(t)) ? s(t) : true,
-      l = n ? n[0] : t.charAt(0),
-      a = n ? i(n, 1).join("") : t.slice(1);
-    return l[e]() + a
+      a = n ? n[0] : t.charAt(0),
+      l = n ? i(n, 1).join("") : t.slice(1);
+    return a[e]() + l
   }
 }

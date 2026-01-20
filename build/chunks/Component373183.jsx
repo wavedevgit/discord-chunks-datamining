@@ -33,13 +33,13 @@ let j = Chunk473749.memo(function(e) {
     rewardSkuId: n
   } = e, {
     handleCardVisibilityChange: a
-  } = (0, h.E)(n), j = l.useRef(null), {
+  } = (0, m.E)(n), j = l.useRef(null), {
     isHoveringOrFocusing: k
   } = (0, f.Z)(j), {
     readyToClaim: T,
     collectibleProductSkuIds: I,
     collectedSkuIds: L
-  } = (0, E.q)(t, n), A = (0, o.e7)([m.Z], () => m.Z.isClaiming === n);
+  } = (0, E.q)(t, n), A = (0, o.e7)([h.Z], () => h.Z.isClaiming === n);
   return (0, r.jsx)(c.$, {
     onChange: a,
     threshold: 0,

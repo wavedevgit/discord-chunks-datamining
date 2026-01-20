@@ -51,13 +51,13 @@ function y(e, t, n, y) {
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      y && (0, a.GN)(c.Ay, c.yk), S()
+      y && (0, l.GN)(c.Ay, c.yk), S()
     },
     onNotificationClick: () => {
       if (o.default.isOverlayOOPEnabledForPid((0, f.getPID)())) {
         let n = (0, f.getPID)();
-        d.default.isInstanceLocked() ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
-      } else(0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), Z("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+        d.default.isInstanceLocked() ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, a.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
+      } else(0, a.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), Z("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
       Z("dismiss")

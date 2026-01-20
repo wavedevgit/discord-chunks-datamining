@@ -4,9 +4,8 @@
 require.d(exports, {
   V: () => h
 });
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk793030 = require("./793030.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk496600 = require("./496600.jsx"),
   Chunk713072 = require("./713072.jsx"),
   Chunk345729 = require("./345729.js"),
@@ -101,19 +100,20 @@ function h(e) {
     isOpen: I,
     setIsOpen: T,
     closeOnSelect: null != v ? v : "single" === S,
-    children: [(0, r.jsx)(a.Ct, u({
+    children: [(0, r.jsx)(a.Ct, f(u({
       hideTags: t,
       required: m,
       disabled: h,
       wrapTags: n,
-      onBlur: y,
-      onQueryChange: g,
-      onFocus: b,
-      onKeyDown: E,
       showChevronButton: true,
       ref: C.setReference,
       placeholder: O
-    }, _, P())), I && (0, r.jsx)("div", f(u({
+    }, _, P()), {
+      onKeyDown: E,
+      onBlur: y,
+      onQueryChange: g,
+      onFocus: b
+    })), I && (0, r.jsx)("div", f(u({
       ref: C.setFloating,
       className: l.selectDropdown,
       style: u({}, A, w)

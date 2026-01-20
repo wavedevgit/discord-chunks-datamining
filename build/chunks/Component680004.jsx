@@ -1,18 +1,17 @@
 /** Chunk was on 22979 **/
 /** chunk id: 680004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk435064 = require("./435064.js"),
   Chunk894694 = require("./894694.js"),
   Chunk39604 = require("./39604.js");
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -31,7 +30,7 @@ function u(e) {
   return e
 }
 
-function m(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,11 +43,11 @@ function m(e, t) {
   }), e
 }
 
-function p() {
+function m() {
   let {
     mlPipelinesEnabled: e
-  } = (0, i.cj)([o.Z], () => ({
-    mlPipelinesEnabled: o.Z.getSettings().mlPipelinesEnabled
+  } = (0, i.cj)([s.Z], () => ({
+    mlPipelinesEnabled: s.Z.getSettings().mlPipelinesEnabled
   })), [t, n] = r.useState(() => (true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
     emotion: false,
     yell: false,
@@ -59,172 +58,189 @@ function p() {
     emotion: window.__CLIPS_DEBUG__.emotion,
     yell: window.__CLIPS_DEBUG__.yell,
     whisper: window.__CLIPS_DEBUG__.whisper
-  })), [p, h] = r.useState(c.x0.KILL), [f, x] = r.useState(1), [b, g] = r.useState(""), [v, j] = r.useState(""), y = r.useCallback(e => {
+  })), [m, p] = r.useState(o.x0.KILL), [h, f] = r.useState(1), [b, x] = r.useState(""), [g, v] = r.useState(""), j = r.useCallback(e => {
     let a = !t[e];
     true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
       emotion: false,
       yell: false,
       wakeWord: false,
       whisper: false
-    }), window.__CLIPS_DEBUG__[e] = a, n(t => m(u({}, t), {
+    }), window.__CLIPS_DEBUG__[e] = a, n(t => u(d({}, t), {
       [e]: a
     }))
   }, [t]);
-  return (0, a.jsx)(s.Ttm, {
-    children: (0, a.jsxs)(s.l09, {
-      children: [(0, a.jsx)(s.C3N, {
+  return (0, a.jsx)(l.Ttm, {
+    children: (0, a.jsxs)(l.l09, {
+      children: [(0, a.jsx)(l.C3N, {
         label: "Send Test Signals",
-        children: (0, a.jsxs)(s.NIo, {
-          children: [(0, a.jsx)(s.Button, {
+        children: (0, a.jsxs)(l.NIo, {
+          children: [(0, a.jsx)(l.Button, {
             text: "Manual",
-            onClick: () => d.XK({
-              type: c.Bs.MANUAL
+            onClick: () => c.XK({
+              type: o.Bs.MANUAL
             })
-          }), (0, a.jsx)(s.Button, {
+          }), (0, a.jsx)(l.Button, {
             text: "Distributed",
-            onClick: () => d.XK({
-              type: c.Bs.DISTRIBUTED,
+            onClick: () => c.XK({
+              type: o.Bs.DISTRIBUTED,
               remoteTriggerUserId: "123",
               remoteTriggerClipId: "456"
             })
-          }), (0, a.jsx)(s.Button, {
+          }), (0, a.jsx)(l.Button, {
             text: "Phrase: Clip",
-            onClick: () => d.XK({
-              type: c.Bs.PHRASE,
+            onClick: () => c.XK({
+              type: o.Bs.PHRASE,
               text: "clip"
             })
-          }), (0, a.jsx)(s.Button, {
+          }), (0, a.jsx)(l.Button, {
             text: "Yelling",
-            onClick: () => d.XK({
-              type: c.Bs.YELLING,
+            onClick: () => c.XK({
+              type: o.Bs.YELLING,
               userId: "123"
             })
           })]
         })
-      }), (0, a.jsxs)(s.C3N, {
+      }), (0, a.jsxs)(l.C3N, {
         label: "Game Event Creator",
-        children: [(0, a.jsxs)(s.NIo, {
-          children: [(0, a.jsx)(l.y6, {
+        children: [(0, a.jsxs)(l.NIo, {
+          children: [(0, a.jsx)(l.PhF, {
             label: "Event Type",
-            value: p,
-            onChange: e => h(e),
+            value: m,
+            onSelectionChange: e => p(e),
             options: [{
+              id: "kill",
               label: "Kill",
-              value: c.x0.KILL
+              value: o.x0.KILL
             }, {
+              id: "multikill",
               label: "Multikill",
-              value: c.x0.MULTIKILL
+              value: o.x0.MULTIKILL
             }, {
+              id: "death",
               label: "Death",
-              value: c.x0.DEATH
+              value: o.x0.DEATH
             }, {
+              id: "assist",
               label: "Assist",
-              value: c.x0.ASSIST
+              value: o.x0.ASSIST
             }, {
+              id: "item",
               label: "Item",
-              value: c.x0.ITEM
+              value: o.x0.ITEM
             }, {
+              id: "victory",
               label: "Victory",
-              value: c.x0.VICTORY
+              value: o.x0.VICTORY
             }, {
+              id: "defeat",
               label: "Defeat",
-              value: c.x0.DEFEAT
+              value: o.x0.DEFEAT
             }, {
+              id: "level_up",
               label: "Level Up",
-              value: c.x0.LEVEL_UP
+              value: o.x0.LEVEL_UP
             }, {
+              id: "treasure",
               label: "Treasure",
-              value: c.x0.TREASURE
+              value: o.x0.TREASURE
             }, {
+              id: "objective_kill",
               label: "Objective Kill",
-              value: c.x0.OBJECTIVE_KILL
-            }]
-          }), (0, a.jsx)(l.y6, {
+              value: o.x0.OBJECTIVE_KILL
+            }],
+            selectionMode: "single",
+            fullWidth: true
+          }), (0, a.jsx)(l.PhF, {
             label: "Importance",
-            value: f,
-            onChange: x,
+            value: h,
+            onSelectionChange: f,
             options: [{
+              id: "low",
               label: "Low",
               value: 0
             }, {
+              id: "medium",
               label: "Medium",
               value: .5
             }, {
+              id: "high",
               label: "High",
               value: 1
-            }]
+            }],
+            selectionMode: "single",
+            fullWidth: true
           })]
-        }), (0, a.jsx)(s.oil, {
+        }), (0, a.jsx)(l.oil, {
           label: "Title (optional)",
           value: b,
-          onChange: g,
+          onChange: x,
           placeholder: "e.g., First Blood"
-        }), (0, a.jsx)(s.oil, {
+        }), (0, a.jsx)(l.oil, {
           label: "Description (optional)",
-          value: v,
-          onChange: j,
+          value: g,
+          onChange: v,
           placeholder: "e.g., Killed enemy ADC in bot lane"
-        }), (0, a.jsx)(s.Button, {
+        }), (0, a.jsx)(l.Button, {
           text: "Create Game Event",
           onClick: () => {
-            d.XK({
-              type: c.Bs.GAME_EVENT,
-              eventType: p,
-              importance: f,
+            c.XK({
+              type: o.Bs.GAME_EVENT,
+              eventType: m,
+              importance: h,
               title: b,
-              description: v
+              description: g
             })
           }
         })]
-      }), (0, a.jsx)(s.izJ, {}), (0, a.jsxs)(s.C3N, {
+      }), (0, a.jsx)(l.izJ, {}), (0, a.jsxs)(l.C3N, {
         label: "ML Pipelines Enabled",
-        children: [(0, a.jsx)(s.rsf, {
+        children: [(0, a.jsx)(l.rsf, {
           label: "Emotion Classifier",
           checked: e.emotionClassifier,
-          onChange: t => d.So(m(u({}, e), {
+          onChange: t => c.So(u(d({}, e), {
             emotionClassifier: t
           }))
-        }), (0, a.jsx)(s.rsf, {
+        }), (0, a.jsx)(l.rsf, {
           label: "Wake Word Detector",
           checked: e.wakeWordDetector,
-          onChange: t => d.So(m(u({}, e), {
+          onChange: t => c.So(u(d({}, e), {
             wakeWordDetector: t
           }))
-        }), (0, a.jsx)(s.rsf, {
+        }), (0, a.jsx)(l.rsf, {
           label: "Yell Detector",
           checked: e.yellDetector,
-          onChange: t => d.So(m(u({}, e), {
+          onChange: t => c.So(u(d({}, e), {
             yellDetector: t
           }))
-        }), (0, a.jsx)(s.rsf, {
+        }), (0, a.jsx)(l.rsf, {
           label: "Whisper Transcription",
           checked: e.whisperTranscription,
-          onChange: t => d.So(m(u({}, e), {
+          onChange: t => c.So(u(d({}, e), {
             whisperTranscription: t
           }))
         })]
-      }), (0, a.jsxs)(s.C3N, {
+      }), (0, a.jsxs)(l.C3N, {
         label: "ML Debug Logging (window.__CLIPS_DEBUG__)",
-        children: [(0, a.jsx)(s.rsf, {
+        children: [(0, a.jsx)(l.rsf, {
           label: "Wake Word Debug",
           description: "Log wake word detection events to console",
           checked: t.wakeWord,
-          onChange: () => y("wakeWord")
-        }), (0, a.jsx)(s.rsf, {
+          onChange: () => j("wakeWord")
+        }), (0, a.jsx)(l.rsf, {
           label: "Emotion Debug",
           description: "Log emotion classification events to console",
           checked: t.emotion,
-          onChange: () => y("emotion")
-        }), (0, a.jsx)(s.rsf, {
+          onChange: () => j("emotion")
+        }), (0, a.jsx)(l.rsf, {
           label: "Yell Debug",
           description: "Show yell classification events to console",
           checked: t.yell,
-          onChange: () => y("yell")
-        }), (0, a.jsx)(s.rsf, {
+          onChange: () => j("yell")
+        }), (0, a.jsx)(l.rsf, {
           label: "Whisper Debug",
           description: "Log whisper transcription events to console",
           checked: t.whisper,
-          onChange: () => y("whisper")
+          onChange: () => j("whisper")
         })]
       })]
     })

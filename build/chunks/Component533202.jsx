@@ -26,9 +26,9 @@ function C(e) {
     directoryGuildName: p,
     directoryGuildId: b,
     currentCategoryId: h
-  } = e, [L, v] = a.useState(C), [y, Z] = a.useState(null), [O, I] = a.useState(null), [S, T] = a.useState(null), [N, _] = a.useState(null), [E, H] = a.useState(""), [M, G] = a.useState(null != h ? h : g.AR.UNCATEGORIZED), [w, k] = a.useState(false), {
-    availableGuilds: U,
-    addedGuilds: P,
+  } = e, [L, v] = a.useState(C), [y, Z] = a.useState(null), [O, S] = a.useState(null), [I, T] = a.useState(null), [N, _] = a.useState(null), [E, H] = a.useState(""), [M, G] = a.useState(null != h ? h : g.AR.UNCATEGORIZED), [w, k] = a.useState(false), {
+    availableGuilds: P,
+    addedGuilds: U,
     loading: D
   } = (0, d.Z)(b, t);
   a.useEffect(() => {
@@ -38,7 +38,7 @@ function C(e) {
     let e = N;
     if (!w) {
       if (null == O || null == y) return;
-      let t = await r.Z.createGuildFromTemplate(O, S, y);
+      let t = await r.Z.createGuildFromTemplate(O, I, y);
       _(e = (0, o.R)(t))
     }
     null != e && (await c.bF(t, e.id, E, M), v(g.VX.CONFIRMATION))
@@ -54,8 +54,8 @@ function C(e) {
         handleChooseCreate: () => {
           k(false), v(g.VX.GUILD_TEMPLATES)
         },
-        availableGuilds: U,
-        addedGuilds: P,
+        availableGuilds: P,
+        addedGuilds: U,
         loading: D
       });
       break;
@@ -73,7 +73,7 @@ function C(e) {
         isSlideReady: true,
         guildTemplate: y,
         onHubGuildInfoSet: (e, t) => {
-          I(e), T(t), v(g.VX.CUSTOMIZE_EXISTING_GUILD)
+          S(e), T(t), v(g.VX.CUSTOMIZE_EXISTING_GUILD)
         },
         onBack: () => v(g.VX.GUILD_TEMPLATES)
       });

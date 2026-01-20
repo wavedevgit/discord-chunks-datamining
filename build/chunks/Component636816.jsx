@@ -22,14 +22,14 @@ function h(e) {
     guildProfile: p,
     fetchGuildProfile: g,
     fetchStatus: m
-  } = (0, o.u)(t), C = m !== a.a.FETCHED, f = null != p && l.Y.VISIBLE.has(p.visibility);
-  r.useEffect(() => {
+  } = (0, o.u)(t), f = m !== a.a.FETCHED, C = null != p && r.Y.VISIBLE.has(p.visibility);
+  l.useEffect(() => {
     g()
   }, [t, g]);
   let b = [];
   if (n === c.d4z.GUILD_ANNOUNCEMENT && (b.push(d.intl.format(d.t.tI7KNX, {
       documentationLink: u.Z.getArticleURL(c.BhN.ANNOUNCEMENT_CHANNELS)
-    })), !C && !f)) {
+    })), !f && !C)) {
     let e = d.intl.string(d.t["2Ab4Id"]);
     b.push(e)
   }

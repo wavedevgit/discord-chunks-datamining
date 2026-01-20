@@ -66,7 +66,7 @@ let C = function(e) {
         }
       })
     } catch (e) {
-      _(g.intl.string(b.default["/f++3g"]))
+      _(g.intl.string(x.default["/f++3g"]))
     } finally {
       f(false)
     }
@@ -81,7 +81,7 @@ let C = function(e) {
         };
         await (0, d.Wl)(t), T()
       } catch (e) {
-        _(g.intl.string(b.default["+QRSxc"]))
+        _(g.intl.string(x.default["+QRSxc"]))
       } finally {
         E(false)
       }
@@ -100,7 +100,7 @@ let C = function(e) {
     }), N ? (0, a.jsx)(o.default, {
       transitionState: i.Dvm.ENTERED,
       entryPoint: s.cU.SAFETY_FLOWS,
-      onClose: x.dG,
+      onClose: b.dG,
       onComplete: async () => {
         await O({
           type: m.rY.Empty

@@ -33,9 +33,9 @@ function C() {
     s = (0, i.e7)([u.Z], () => u.Z.hasLayers()),
     c = (0, i.e7)([m.Z], () => m.Z.getStatus()),
     p = d.P4.useSetting(),
-    b = (null == p ? true : p.value) != null ? Number(p.value) : null,
+    x = (null == p ? true : p.value) != null ? Number(p.value) : null,
     g = d.Cr.useSetting(),
-    C = c === x.Sk.DND && null != b && n - b > j && "0" === g,
+    C = c === b.Sk.DND && null != x && n - x > j && "0" === g,
     {
       enabled: _
     } = (0, h.a)({
@@ -44,7 +44,7 @@ function C() {
       disable: !C
     });
   return r.useEffect(() => {
-    if (c === x.Sk.DND) {
+    if (c === b.Sk.DND) {
       a(Date.now());
       let e = setInterval(() => a(Date.now()), v);
       return () => clearInterval(e)
@@ -71,17 +71,17 @@ function _(e) {
   return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
     children: [r, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: b.intl.string(l),
-      body: b.intl.string(o),
+      title: x.intl.string(l),
+      body: x.intl.string(o),
       caretConfig: {
         align: "start"
       },
       gradientColor: "purple",
       actions: [{
-        text: b.intl.string(b.t.fwPurU),
+        text: x.intl.string(x.t.fwPurU),
         onClick: () => {
           (0, c.Z)({
-            nextStatus: x.Sk.ONLINE
+            nextStatus: b.Sk.ONLINE
           }), null == n || n(f.L.PRIMARY)
         }
       }],

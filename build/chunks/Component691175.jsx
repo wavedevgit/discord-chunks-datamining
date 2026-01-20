@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk314897 = require("./314897.js"),
   Chunk158570 = require("./158570.js");
 let f = [Chunk657707.UserIcon, Chunk657707.ShieldIcon, Chunk657707.GiftIcon, Chunk657707.AchievementsIcon, Chunk657707.PiggyBankIcon, Chunk657707.TreehouseIcon, Chunk657707.SpeedometerIcon, Chunk657707.CompassIcon, Chunk657707.SignPostIcon, Chunk657707.CarIcon, Chunk657707.TrainIcon, Chunk657707.TeacupIcon, Chunk657707.InventoryIcon, Chunk657707.FoodIcon, Chunk657707.BurgerIcon, Chunk657707.MagicDoorIcon, Chunk657707.PawPrintIcon, Chunk657707.RecordPlayerIcon, Chunk657707.SettingsIcon],
-  x = ["text-default", "text-feedback-positive", "text-feedback-warning", "text-feedback-info", "text-feedback-critical"],
-  b = () => {
+  b = ["text-default", "text-feedback-positive", "text-feedback-warning", "text-feedback-info", "text-feedback-critical"],
+  x = () => {
     let [e, t] = r.useState(""), [n, i] = r.useState(""), [l, s] = r.useState(false);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)("form", {
@@ -87,7 +87,7 @@ let f = [Chunk657707.UserIcon, Chunk657707.ShieldIcon, Chunk657707.GiftIcon, Chu
     } = e, {
       id: n,
       summary: i
-    } = t, b = u.Z.getUsersForPool(n), g = (0, o.e7)([p.default], () => p.default.getId()), v = f[Number(n) % f.length], j = x[Number(n) % x.length], y = r.useCallback(() => {
+    } = t, x = u.Z.getUsersForPool(n), g = (0, o.e7)([p.default], () => p.default.getId()), v = f[Number(n) % f.length], j = b[Number(n) % b.length], y = r.useCallback(() => {
       (0, d.KZ)(n)
     }, [n]);
     return (0, a.jsx)(c.Kqy, {
@@ -108,7 +108,7 @@ let f = [Chunk657707.UserIcon, Chunk657707.ShieldIcon, Chunk657707.GiftIcon, Chu
         }),
         title: i,
         className: h.accordion,
-        subtitle: "".concat(b.length, " users"),
+        subtitle: "".concat(x.length, " users"),
         children: (0, a.jsxs)(c.Kqy, {
           direction: "vertical",
           gap: 4,
@@ -118,7 +118,7 @@ let f = [Chunk657707.UserIcon, Chunk657707.ShieldIcon, Chunk657707.GiftIcon, Chu
             bottom: 16
           },
           fullWidth: false,
-          children: [b.map((e, n) => (0, a.jsxs)(r.Fragment, {
+          children: [x.map((e, n) => (0, a.jsxs)(r.Fragment, {
             children: [0 !== n && (0, a.jsx)(c.izJ, {
               gap: 4
             }), (0, a.jsx)(c.P3F, {
@@ -201,7 +201,7 @@ function v() {
     gap: 16,
     fullWidth: false,
     className: h.container,
-    children: [(0, a.jsx)(b, {}), (0, a.jsx)(c.Ttm, {
+    children: [(0, a.jsx)(x, {}), (0, a.jsx)(c.Ttm, {
       className: h.poolsScroller,
       children: null == e ? true : e.map(e => (0, a.jsx)(g, {
         pool: e

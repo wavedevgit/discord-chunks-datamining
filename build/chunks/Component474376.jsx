@@ -29,7 +29,7 @@ function y(e) {
     y = (0, r.e7)([o.Z], () => (0, l.wj)(o.Z.theme)),
     {
       multiAccountUsers: C
-    } = (0, x.L)(),
+    } = (0, b.L)(),
     _ = C.map(r => {
       let l = new c.Z(r),
         o = l.id === (null == t ? true : t.id),
@@ -76,7 +76,7 @@ function y(e) {
           })
         },
         action: () => {
-          if (null == e || e(), d)(0, b.Z)();
+          if (null == e || e(), d)(0, x.Z)();
           else {
             var n;
             (n = l.id) !== (null == t ? true : t.id) && (m.default.track(g.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
@@ -93,7 +93,7 @@ function y(e) {
       id: "manage-accounts",
       label: v.intl.string(v.t.WbFpq4),
       action: () => {
-        null == e || e(), (0, b.Z)()
+        null == e || e(), (0, x.Z)()
       }
     })]
   })), _

@@ -25,7 +25,7 @@ function p() {
         autoTrackExposure: false
       }
     }),
-    [t, n] = (0, a.cv)(e ? [r.z.OVERLAY_KEYBIND_NOTIFICATION] : []);
+    [t, n] = (0, l.cv)(e ? [r.z.OVERLAY_KEYBIND_NOTIFICATION] : []);
   return {
     showKeybindIndicators: null != t && e,
     dismissKeybindNotification: n
@@ -38,7 +38,7 @@ function g(e) {
   } = e, {
     trackView: n,
     trackClick: r
-  } = (0, l.R)(d.n0.KeybindIndicatorsNotification, {
+  } = (0, a.R)(d.n0.KeybindIndicatorsNotification, {
     notif_type: d.n0.KeybindIndicatorsNotification
   });
   return {

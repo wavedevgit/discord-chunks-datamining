@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk668339 = require("./668339.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk70956 = require("./70956.js"),
   Chunk129724 = require("./129724.js"),
   Chunk981631 = require("./981631.js"),
@@ -23,6 +23,7 @@ function u(e) {
   } = e, [m, f] = l.useState(null), p = h.rateLimitPerUser, b = l.useMemo(() => {
     let e = [...null != m ? m : o.BiE];
     return e.includes(p) || e.unshift(p), e.map(e => ({
+      id: e.toString(),
       label: (0, s.A)(e, false),
       value: e
     }))
@@ -41,16 +42,19 @@ function u(e) {
   }, []), v = l.useCallback(() => {
     f(null)
   }, []);
-  return (0, i.jsx)(r.d, {
-    label: t,
-    hideLabel: u,
-    helperText: n,
+  return (0, i.jsx)("div", {
     className: d.marginBottom8,
-    value: p,
-    onChange: x,
-    onSearchChange: j,
-    options: b,
-    onBlur: v,
-    placeholder: c.intl.string(c.t.dBqQu4)
+    children: (0, i.jsx)(r.VcW, {
+      selectionMode: "single",
+      label: t,
+      hideLabel: u,
+      helperText: n,
+      value: p,
+      onSelectionChange: x,
+      onQueryChange: e => j(e.target.value),
+      options: b,
+      onBlur: v,
+      placeholder: c.intl.string(c.t.dBqQu4)
+    })
   })
 }

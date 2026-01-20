@@ -3,16 +3,17 @@
 "use strict";
 require.d(exports, {
   Bd: () => F,
-  C1: () => K,
-  CR: () => W,
+  C1: () => q,
+  CR: () => z,
   DD: () => Z,
   eQ: () => V,
   t5: () => N,
   vf: () => B
 }), require("./953529.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk706454 = require("./706454.js"),
+  Chunk442837 = require("./442837.js");
+require("./983695.js");
+var Chunk706454 = require("./706454.js"),
   Chunk594174 = require("./594174.js"),
   Chunk63063 = require("./63063.js"),
   Chunk930153 = require("./930153.js"),
@@ -511,35 +512,46 @@ function V(e) {
 }
 
 function H(e) {
-  return (0, _.$J)(e) || (0, _.pO)(e) ? 0 : (0, _.Dr)({
-    quest: e
-  }) ? 1 : (0, _.q8)(e) ? 2 : 3 * !!(0, _.Vl)(e)
+  return (0, _.PB)(e)
 }
 
 function Y(e) {
-  return r.useMemo(() => H(e), [e])
+  return (0, _.$J)(e) || (0, _.pO)(e) ? 0 : (0, _.Dr)({
+    quest: e
+  }) ? 1 : H(e) ? 2 : 3 * !!(0, _.Vl)(e)
 }
 
 function W(e) {
+  return r.useMemo(() => Y(e), [e])
+}
+
+function K(e, t) {
+  returntrue
+}
+
+function z(e) {
   let {
     quest: t,
-    shortText: n = false
+    application: n,
+    shortText: r = false
   } = e;
-  switch (Y(t)) {
+  switch (W(t)) {
     case 0:
-      if (t.config.features.includes(E.S7.CLOUD_GAMING_ACTIVITY)) return O.intl.string(O.t["+qoymD"]);
-      if (t.config.features.includes(E.S7.START_QUEST_CTA)) return O.intl.string(n ? O.t.E4kW5O : O.t["Ie9++s"]);
+      if (K(t, n)) {
+        if (t.config.features.includes(E.S7.CLOUD_GAMING_ACTIVITY)) return O.intl.string(O.t["+qoymD"]);
+        if (t.config.features.includes(E.S7.START_QUEST_CTA)) return O.intl.string(r ? O.t.E4kW5O : O.t["Ie9++s"])
+      }
       return O.intl.string(O.t.l7E81v);
     case 1:
       return O.intl.string(O.t.l7E81v);
     case 2:
       return O.intl.string(O.t.umdNin);
     case 3:
-      return t.config.features.includes(E.S7.START_QUEST_CTA) ? O.intl.string(n ? O.t.CkUzLd : O.t["hRIVy+"]) : O.intl.string(O.t.l7E81v)
+      return t.config.features.includes(E.S7.START_QUEST_CTA) && K(t, n) ? O.intl.string(r ? O.t.CkUzLd : O.t["hRIVy+"]) : O.intl.string(O.t.l7E81v)
   }
 }
 
-function K(e) {
+function q(e) {
   var t, n, r, i, a;
   let {
     quest: o,

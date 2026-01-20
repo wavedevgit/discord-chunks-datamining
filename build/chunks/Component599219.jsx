@@ -95,7 +95,7 @@ function S(e) {
   o.useEffect(() => {
     n(L ? j.F.COMPLETE : P)
   }, [n, P, L]);
-  let [Z, H] = o.useState(null), [W, z] = o.useState(null), [Y, V] = o.useState(false), J = (0, l.e7)([N.Z], () => N.Z.getType() === g.M5.INVITE_UNCLAIMED), K = o.useCallback(e => {
+  let [Z, H] = o.useState(null), [W, z] = o.useState(null), [Y, V] = o.useState(false), J = (0, l.e7)([N.Z], () => N.Z.getType() === C.M5.INVITE_UNCLAIMED), K = o.useCallback(e => {
     z(e), U(j.F.CREATION_INTENT), E.default.track(O.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
@@ -185,7 +185,7 @@ function S(e) {
     parentComponent: "NUFModal",
     children: [(0, a.jsx)("div", {
       className: G.sidebar,
-      children: (0, a.jsx)(C.Z, {
+      children: (0, a.jsx)(g.Z, {
         step: P
       })
     }), (0, a.jsx)(c.f6W, {

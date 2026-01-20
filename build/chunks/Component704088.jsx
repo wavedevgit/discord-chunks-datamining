@@ -1,14 +1,13 @@
 /** Chunk was on 22979 **/
 /** chunk id: 704088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => S
+  U: () => C
 }), require("./388685.js"), require("./49124.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk121168 = require("./121168.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk720553 = require("./720553.jsx"),
@@ -20,11 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk261538 = require("./261538.jsx"),
   Chunk868802 = require("./868802.jsx"),
   Chunk594174 = require("./594174.js"),
-  Chunk246992 = require("./246992.js"),
   Chunk474936 = require("./474936.js");
-let C = Chunk473749.forwardRef((e, t) => {
-  let [n, i] = r.useState(null), [l, o] = r.useState(null), [d, u] = r.useState(false), m = r.useCallback(async () => {
-    u(true), o(null), i(null);
+let j = Chunk473749.forwardRef((e, t) => {
+  let [n, i] = r.useState(null), [l, c] = r.useState(null), [d, u] = r.useState(false), m = r.useCallback(async () => {
+    u(true), c(null), i(null);
     try {
       let e = await s.tn.get({
         url: "/users/@me/debug/warp/license",
@@ -35,7 +33,7 @@ let C = Chunk473749.forwardRef((e, t) => {
       var e, t;
       let n = (null == r || null == (e = r.body) ? true : e.message) || (null == r ? true : r.message) || "Unknown error occurred",
         a = (null == r ? true : r.status) || (null == r || null == (t = r.body) ? true : t.code);
-      o("Error ".concat(a ? "(".concat(a, ")") : "", ": ").concat(n))
+      c("Error ".concat(a ? "(".concat(a, ")") : "", ": ").concat(n))
     } finally {
       u(false)
     }
@@ -48,7 +46,7 @@ let C = Chunk473749.forwardRef((e, t) => {
       flexDirection: "column",
       gap: "12px"
     },
-    children: [(0, a.jsx)(c.zxk, {
+    children: [(0, a.jsx)(o.zxk, {
       text: d ? "Loading..." : "Fetch WARP License Info",
       onClick: m,
       disabled: d
@@ -82,15 +80,15 @@ let C = Chunk473749.forwardRef((e, t) => {
     })]
   })
 });
-C.displayName = "DebugWarpLicenseInfo";
-let _ = e => {
+j.displayName = "DebugWarpLicenseInfo";
+let y = e => {
     let {
       onSuccess: t
-    } = e, [n, i] = r.useState(false), [l, o] = r.useState(0), [d, u] = r.useState(null);
+    } = e, [n, i] = r.useState(false), [l, c] = r.useState(0), [d, u] = r.useState(null);
     r.useEffect(() => {
       if (l > 0) {
         let e = setTimeout(() => {
-          o(l - 1), 1 === l && t()
+          c(l - 1), 1 === l && t()
         }, 1e3);
         return () => clearTimeout(e)
       }
@@ -101,7 +99,7 @@ let _ = e => {
         await s.tn.post({
           url: "/users/@me/debug/warp/license/extension-task",
           rejectWithError: true
-        }), o(5)
+        }), c(5)
       } catch (r) {
         var e, t;
         let n = (null == r || null == (e = r.body) ? true : e.message) || (null == r ? true : r.message) || "Unknown error occurred",
@@ -117,7 +115,7 @@ let _ = e => {
         flexDirection: "column",
         gap: "12px"
       },
-      children: [(0, a.jsx)(c.zxk, {
+      children: [(0, a.jsx)(o.zxk, {
         text: n ? "Triggering Task..." : l > 0 ? "Refreshing in ".concat(l, "s...") : "Trigger License Extension Task",
         onClick: m,
         disabled: n || l > 0
@@ -134,269 +132,282 @@ let _ = e => {
       })]
     })
   },
-  S = () => {
-    let [e, t] = r.useState(false), [n, s] = r.useState(false), [S, E] = r.useState(false), [T, O] = r.useState(5e3), [N, P] = r.useState(false), w = r.useRef(null), I = (0, l.e7)([v.default], () => v.default.getCurrentUser()), k = (0, f.u)(), [R] = r.useState(() => (0, x.o8)({
+  C = () => {
+    let [e, t] = r.useState(false), [n, s] = r.useState(false), [C, _] = r.useState(false), [S, E] = r.useState(5e3), [T, O] = r.useState(false), N = r.useRef(null), P = (0, l.e7)([g.default], () => g.default.getCurrentUser()), w = (0, h.u)(), [I] = r.useState(() => (0, f.o8)({
       finishSetup: async () => true,
-      perkAvailableToUser: k
+      perkAvailableToUser: w
     })), {
-      installationStatus: A,
-      setInstallationStatus: Z,
-      connectionStatus: D,
-      setConnectionStatus: L,
-      setConnect: M,
-      setDisconnect: U,
-      setInstall: B,
-      setIsWeb: F,
-      setIsSupportedPrivateBrowsingPerkPlatform: G,
-      isWeb: V,
-      isSupportedPrivateBrowsingPerkPlatform: z,
-      setGetWarpInstallationStatus: W,
-      perkAvailableToUser: H,
-      setPerkAvailableToUser: q
-    } = (0, i.o)(R), K = r.useCallback(async () => (L(p.Ij.INITIALIZING), t(setTimeout(() => {
-      L(p.Ij.CONNECTED)
-    }, 1e3)), true), [L, t]);
+      installationStatus: k,
+      setInstallationStatus: R,
+      connectionStatus: A,
+      setConnectionStatus: Z,
+      setConnect: D,
+      setDisconnect: M,
+      setInstall: L,
+      setIsWeb: U,
+      setIsSupportedPrivateBrowsingPerkPlatform: B,
+      isWeb: F,
+      isSupportedPrivateBrowsingPerkPlatform: G,
+      setGetWarpInstallationStatus: V,
+      perkAvailableToUser: W,
+      setPerkAvailableToUser: z
+    } = (0, i.o)(I), H = r.useCallback(async () => (Z(m.Ij.INITIALIZING), t(setTimeout(() => {
+      Z(m.Ij.CONNECTED)
+    }, 1e3)), true), [Z, t]);
     r.useEffect(() => {
-      M(K)
-    }, [K, M]);
-    let Q = r.useCallback(async () => p._n.INSTALLING, []);
+      D(H)
+    }, [H, D]);
+    let q = r.useCallback(async () => m._n.INSTALLING, []);
     r.useEffect(() => {
-      q(k)
-    }, [k, q]), r.useEffect(() => {
-      W(Q)
-    }, [W, Q]);
-    let Y = r.useCallback(async () => (clearTimeout(e), L(p.Ij.DISCONNECTED), true), [e, L]),
-      X = r.useCallback(() => new Promise((e, t) => {
-        Z(p._n.INSTALLING), s(setTimeout(() => {
-          if (S) return void t(Error("Installation failed"));
+      z(w)
+    }, [w, z]), r.useEffect(() => {
+      V(q)
+    }, [V, q]);
+    let K = r.useCallback(async () => (clearTimeout(e), Z(m.Ij.DISCONNECTED), true), [e, Z]),
+      Q = r.useCallback(() => new Promise((e, t) => {
+        R(m._n.INSTALLING), s(setTimeout(() => {
+          if (C) return void t(Error("Installation failed"));
           e()
-        }, T))
-      }), [S, T, Z, s]);
+        }, S))
+      }), [C, S, R, s]);
     r.useEffect(() => {
-      V && A !== p._n.UNKNOWN && Z(p._n.UNKNOWN)
-    }, [V, Z, A]), r.useEffect(() => {
-      U(Y)
-    }, [Y, U]), r.useEffect(() => {
-      B(X)
-    }, [X, B]), r.useEffect(() => {
-      A !== p._n.INSTALLING && clearTimeout(n)
-    }, [n, A]), r.useEffect(() => {
-      if (A !== p._n.INSTALLED && D !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
-    }, [A, D, L]);
+      F && k !== m._n.UNKNOWN && R(m._n.UNKNOWN)
+    }, [F, R, k]), r.useEffect(() => {
+      M(K)
+    }, [K, M]), r.useEffect(() => {
+      L(Q)
+    }, [Q, L]), r.useEffect(() => {
+      k !== m._n.INSTALLING && clearTimeout(n)
+    }, [n, k]), r.useEffect(() => {
+      if (k !== m._n.INSTALLED && A !== m.Ij.INITIALIZING) return void Z(m.Ij.INITIALIZING)
+    }, [k, A, Z]);
     let {
-      enabled: J
-    } = h.H.useConfig({
+      enabled: Y
+    } = p.H.useConfig({
       location: "private_browsing_perk_settings_page"
     });
-    return J ? (0, a.jsxs)("div", {
-      children: [(0, a.jsx)(c.X6q, {
+    return Y ? (0, a.jsxs)("div", {
+      children: [(0, a.jsx)(o.X6q, {
         variant: "heading-xl/semibold",
         style: {
           marginTop: "16px"
         },
         children: "Private Browsing Perk Components"
       }), (0, a.jsxs)(b.$0, {
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, a.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
           children: "Configure Private Browsing Perk State"
         }), (0, a.jsxs)(b.pg, {
           children: [(0, a.jsxs)(b.BZ, {
-            children: [(0, a.jsx)(c.xvT, {
+            children: [(0, a.jsx)(o.xvT, {
               variant: "text-md/semibold",
               children: "Is Nitro"
             }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, a.jsx)(c.rsf, {
+              children: (0, a.jsx)(o.rsf, {
                 onChange: () => {
-                  H ? (0, m.C)(null, I) : (0, m.C)(y.F_, I)
+                  W ? (0, u.C)(null, P) : (0, u.C)(v.F_, P)
                 },
-                checked: H
+                checked: W
               })
             })]
           }), (0, a.jsxs)(b.BZ, {
-            children: [(0, a.jsx)(c.xvT, {
+            children: [(0, a.jsx)(o.xvT, {
               variant: "text-md/semibold",
               children: "Is Web"
             }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, a.jsx)(c.rsf, {
-                onChange: () => F(!V),
-                checked: V
+              children: (0, a.jsx)(o.rsf, {
+                onChange: () => U(!F),
+                checked: F
               })
             })]
           }), (0, a.jsxs)(b.BZ, {
-            children: [(0, a.jsx)(c.xvT, {
+            children: [(0, a.jsx)(o.xvT, {
               variant: "text-md/semibold",
               children: "Is Supported Platform"
             }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, a.jsx)(c.rsf, {
-                onChange: () => G(!z),
-                checked: z
+              children: (0, a.jsx)(o.rsf, {
+                onChange: () => B(!G),
+                checked: G
               })
             })]
-          }), (0, a.jsxs)(b.BZ, {
-            children: [(0, a.jsx)(c.xvT, {
-              variant: "text-md/semibold",
-              children: "Installation Status"
-            }), (0, a.jsx)(o.B6, {
-              select: e => Z(e),
-              isSelected: e => e === A,
-              serialize: e => "".concat(e),
-              disabled: V,
+          }), (0, a.jsx)(b.BZ, {
+            children: (0, a.jsx)(c.PhF, {
+              label: "Installation Status",
+              onSelectionChange: R,
+              value: k,
+              disabled: F,
               options: [{
+                id: "unknown",
                 label: "Unknown",
-                value: p._n.UNKNOWN
+                value: m._n.UNKNOWN
               }, {
+                id: "notInstalled",
                 label: "Not Installed",
-                value: p._n.NOT_INSTALLED
+                value: m._n.NOT_INSTALLED
               }, {
+                id: "installed",
                 label: "Installed",
-                value: p._n.INSTALLED
+                value: m._n.INSTALLED
               }, {
+                id: "installing",
                 label: "Installing",
-                value: p._n.INSTALLING
+                value: m._n.INSTALLING
               }, {
+                id: "waitingForTerms",
                 label: "Accept Terms",
-                value: p._n.WAITING_FOR_TERMS
+                value: m._n.WAITING_FOR_TERMS
               }, {
+                id: "existingInstallation",
                 label: "Existing Installation",
-                value: p._n.EXISTING_INSTALLATION
+                value: m._n.EXISTING_INSTALLATION
               }, {
+                id: "zeroTrust",
                 label: "Unsupported (ZeroTrust)",
-                value: p._n.ZERO_TRUST
+                value: m._n.ZERO_TRUST
               }, {
+                id: "installingTimeout",
                 label: "Installing Timeout",
-                value: p._n.INSTALLING_TIMEOUT
+                value: m._n.INSTALLING_TIMEOUT
               }, {
+                id: "error",
                 label: "Error",
-                value: p._n.ERROR
+                value: m._n.ERROR
               }],
-              popoutLayerContext: j.O$
-            })]
-          }), A === p._n.INSTALLED && (0, a.jsxs)(b.BZ, {
-            children: [(0, a.jsx)(c.xvT, {
-              variant: "text-md/semibold",
-              children: "Connection Status"
-            }), (0, a.jsx)(o.B6, {
-              select: e => L(e),
-              isSelected: e => e === D,
-              serialize: e => "".concat(e),
+              selectionMode: "single",
+              fullWidth: true
+            })
+          }), k === m._n.INSTALLED && (0, a.jsx)(b.BZ, {
+            children: (0, a.jsx)(c.PhF, {
+              label: "Connection Status",
+              onSelectionChange: Z,
+              value: A,
               options: [{
+                id: "initializing",
                 label: "Initializing",
-                value: p.Ij.INITIALIZING
+                value: m.Ij.INITIALIZING
               }, {
+                id: "connected",
                 label: "Connected",
-                value: p.Ij.CONNECTED
+                value: m.Ij.CONNECTED
               }, {
+                id: "disconnected",
                 label: "Disconnected",
-                value: p.Ij.DISCONNECTED
+                value: m.Ij.DISCONNECTED
               }, {
+                id: "error",
                 label: "Error",
-                value: p.Ij.ERROR
+                value: m.Ij.ERROR
               }],
-              popoutLayerContext: j.O$
-            })]
+              selectionMode: "single",
+              fullWidth: true
+            })
           })]
-        }), A === p._n.NOT_INSTALLED && (0, a.jsxs)(b.pg, {
+        }), k === m._n.NOT_INSTALLED && (0, a.jsxs)(b.pg, {
           children: [(0, a.jsxs)(b.BZ, {
-            children: [(0, a.jsx)(c.xvT, {
+            children: [(0, a.jsx)(o.xvT, {
               variant: "text-md/semibold",
               children: "Install with error"
             }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, a.jsx)(c.rsf, {
-                onChange: () => E(!S),
-                checked: S
+              children: (0, a.jsx)(o.rsf, {
+                onChange: () => _(!C),
+                checked: C
               })
             })]
-          }), (0, a.jsxs)(b.BZ, {
-            children: [(0, a.jsx)(c.xvT, {
-              variant: "text-md/semibold",
-              children: "Install time"
-            }), (0, a.jsx)(o.B6, {
-              select: e => O(e),
-              isSelected: e => e === T,
-              serialize: e => "".concat(e),
+          }), (0, a.jsx)(b.BZ, {
+            children: (0, a.jsx)(c.PhF, {
+              label: "Install time",
+              onSelectionChange: E,
+              value: S,
               options: [{
+                id: "1second",
                 label: "1 second",
                 value: 1e3
               }, {
+                id: "5seconds",
                 label: "5 seconds",
                 value: 5e3
               }, {
+                id: "10seconds",
                 label: "10 seconds",
                 value: 1e4
               }, {
+                id: "1minute",
                 label: "1 minute",
                 value: 6e4
               }, {
+                id: "5minutes",
                 label: "5 minutes",
                 value: 3e5
               }, {
+                id: "10minutes",
                 label: "10 minutes",
                 value: 6e5
               }],
-              popoutLayerContext: j.O$
-            })]
+              selectionMode: "single",
+              fullWidth: true
+            })
           })]
         })]
-      }), (0, a.jsxs)(x.xz.Provider, {
-        value: R,
+      }), (0, a.jsxs)(f.xz.Provider, {
+        value: I,
         children: [(0, a.jsxs)(b.$0, {
-          children: [(0, a.jsx)(c.X6q, {
+          children: [(0, a.jsx)(o.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk Settings Component"
-          }), (0, a.jsx)(g.M, {})]
+          }), (0, a.jsx)(x.M, {})]
         }), (0, a.jsxs)(b.$0, {
-          children: [(0, a.jsx)(c.X6q, {
+          children: [(0, a.jsx)(o.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk Exit Modal Upsell"
-          }), (0, a.jsx)(c.zxk, {
+          }), (0, a.jsx)(o.zxk, {
             text: "Show exit modal",
             onClick: () => {
-              P(true)
+              O(true)
             }
-          }), N && (0, a.jsx)(u.default, {
+          }), T && (0, a.jsx)(d.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
-            onCancel: () => P(false),
+            onCancel: () => O(false),
             isProtocol: false,
             onConfirm: () => {},
             onClose: async () => {
-              P(false)
+              O(false)
             },
-            transitionState: d.Dvm.ENTERED
+            transitionState: c.Dvm.ENTERED
           })]
         }), (0, a.jsxs)(b.$0, {
-          children: [(0, a.jsx)(c.X6q, {
+          children: [(0, a.jsx)(o.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk License Extension Task"
-          }), (0, a.jsx)(_, {
+          }), (0, a.jsx)(y, {
             onSuccess: () => {
               var e;
-              null == (e = w.current) || e.refresh()
+              null == (e = N.current) || e.refresh()
             }
           })]
         }), (0, a.jsxs)(b.$0, {
-          children: [(0, a.jsx)(c.X6q, {
+          children: [(0, a.jsx)(o.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
-          }), (0, a.jsx)(C, {
-            ref: w
+          }), (0, a.jsx)(j, {
+            ref: N
           })]
         })]
       })]
     }) : (0, a.jsx)("div", {
-      children: (0, a.jsx)(c.X6q, {
+      children: (0, a.jsx)(o.X6q, {
         variant: "heading-xl/semibold",
         style: {
           marginTop: "16px"

@@ -2,49 +2,49 @@
 /** chunk id: 450474, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk456268 = require("./456268.js"),
   Chunk526429 = require("./526429.js"),
   Chunk203377 = require("./203377.js");
-let u = e => {
+let d = e => {
   let {
     label: t,
     description: n,
-    guild: u,
-    guildMetadata: g,
-    disabled: f
-  } = e, m = (0, l.Wu)([c.Z], () => c.Z.getAllCategories()), b = i.useMemo(() => m.map(e => {
+    guild: d,
+    guildMetadata: u,
+    disabled: g
+  } = e, f = (0, l.Wu)([o.Z], () => o.Z.getAllCategories()), m = i.useMemo(() => f.map(e => {
     let {
       categoryId: t,
       name: n
     } = e;
     return {
+      id: t.toString(),
       value: t,
       label: n
     }
-  }), [m]);
-  return 0 === b.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
+  }), [f]);
+  return 0 === m.length ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(a.VcW, {
+    selectionMode: "multiple",
     label: t,
     description: n,
-    value: g.secondaryCategoryIds,
-    options: b,
-    onChange: e => {
+    value: u.secondaryCategoryIds,
+    options: m,
+    onSelectionChange: e => {
       let {
         secondaryCategoryIds: t
-      } = g;
-      if (e.length < t.length) t.filter(t => !e.includes(t)).forEach(e => (0, o.K0)(u.id, e));
+      } = u;
+      if (e.length < t.length) t.filter(t => !e.includes(t)).forEach(e => (0, s.K0)(d.id, e));
       else {
-        if (t.length >= d.Pg) return;
-        e.filter(e => !t.includes(e)).forEach(e => (0, o.Kq)(u.id, e))
+        if (t.length >= c.Pg) return;
+        e.filter(e => !t.includes(e)).forEach(e => (0, s.Kq)(d.id, e))
       }
     },
-    isDisabled: f,
-    multi: true
+    disabled: g
   })
 }

@@ -72,15 +72,7 @@ let r = {
     },
     control: {
       INPUT_HEIGHT_MD: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 44;
-          for (let e of t)
-            if ("mana-text-inputs" === e) return 40;
-          return 44
-        }
+        resolve: () => 40
       },
       INPUT_HEIGHT_SM: {
         resolve: () => 32

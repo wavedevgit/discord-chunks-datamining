@@ -36,7 +36,7 @@ function b(e) {
   }, {
     label: u.intl.string(u.t.ryPKb7),
     value: o.C2.OTHER
-  }], y = i.useCallback(e => {
+  }], h = i.useCallback(e => {
     g(e)
   }, []);
   return null == t ? (b(), null) : (0, r.jsx)(l.Modal, {
@@ -62,7 +62,7 @@ function b(e) {
       gap: 8,
       children: [(0, r.jsx)(a.cOn, {
         selectedValues: p,
-        onChange: y,
+        onChange: h,
         options: O
       }), p.includes(o.C2.OTHER) && (0, r.jsx)("div", {
         className: d.textboxContainer,

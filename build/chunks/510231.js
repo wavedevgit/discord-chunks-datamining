@@ -19,6 +19,7 @@ function u(e) {
 function d() {
   let e = (0, a.e7)([c.Z], () => c.Z.games),
     t = r.useMemo(() => l()(e).filter(e => (0, o.pZ)(e)).map(e => ({
+      id: e.id,
       value: e.id,
       label: e.name
     })).sortBy(e => {

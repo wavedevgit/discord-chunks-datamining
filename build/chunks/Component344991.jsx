@@ -160,7 +160,7 @@ function S(e) {
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {
       className: h.container,
-      children: H ? (0, r.jsx)(c.d, E({
+      children: H ? (0, r.jsx)(c.d, y(E({
         value: Array.from(P.values()),
         onChange: K,
         multi: true,
@@ -168,11 +168,15 @@ function S(e) {
           [h.hidden]: !X
         }),
         closeOnSelect: false
-      }, J), j) : (0, r.jsx)(c.d, E({
+      }, J), {
+        "data-migration-pending": true
+      }), j) : (0, r.jsx)(c.d, y(E({
         value: [...P.values()][0],
         onChange: z,
         clearable: true
-      }, J), j)
+      }, J), {
+        "data-migration-pending": true
+      }), j)
     }), null == B || V ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(B)), {
       className: m.error
     }))]

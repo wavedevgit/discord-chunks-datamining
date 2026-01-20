@@ -33,7 +33,7 @@ function S(e) {
 }
 async function E() {
   let e = function() {
-      let e = b.default.getCurrentUser();
+      let e = x.default.getCurrentUser();
       return g.ZP.canUseClientThemes(e) ? Object.keys(j.qt).map(e => Number(e)) : []
     }(),
     t = e.length > 0 && Math.random() > .7;
@@ -76,7 +76,7 @@ async function T() {
       let e = S([...n, null]);
       (0, u.Wh)(e)
     }
-    let e = x.Z.getAllPending(),
+    let e = b.Z.getAllPending(),
       l = (0, m.ED)(e);
     await (0, i.Mn)(l).finally(i.si)
   } catch (e) {}
@@ -96,7 +96,7 @@ function O() {
 function N() {
   a.useEffect(() => {
     var e, t, n, a, r;
-    let g = b.default.getCurrentUser(),
+    let g = x.default.getCurrentUser(),
       v = h.L1.getSetting(),
       j = c.Z.purchases,
       y = (0, d.Ad)(j),
@@ -117,7 +117,7 @@ function N() {
           backgroundGradientPresetId: null != S ? S : true,
           customUserThemeSettings: true
         }, f.fy.INFREQUENT_USER_ACTION), (0, u.PO)(O), (0, u.Wh)(N);
-        let e = x.Z.getAllPending(),
+        let e = b.Z.getAllPending(),
           t = (0, m.ED)(e);
         (0, i.Mn)(t).finally(i.si), (0, s.oL)(P), (0, s.ZZ)(w), h.YC.updateSetting(I)
       } catch (e) {}

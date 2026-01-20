@@ -25,7 +25,7 @@ function N(e) {
     onComplete: n,
     onConnect: a,
     isSlideReady: o
-  } = e, [N, x] = s.useState(""), [T, A] = s.useState(false), [C, g] = s.useState(null), j = s.useRef(null);
+  } = e, [N, x] = s.useState(""), [T, A] = s.useState(false), [g, C] = s.useState(null), j = s.useRef(null);
   s.useEffect(() => {
     var e;
     o && (null == (e = j.current) || e.focus())
@@ -33,8 +33,8 @@ function N(e) {
   let O = s.useCallback(e => {
     e.preventDefault();
     let t = N.trim();
-    if ("" === t) return void g(_.intl.string(_.t.IRq5ah));
-    g(null), A(true);
+    if ("" === t) return void C(_.intl.string(_.t.IRq5ah));
+    C(null), A(true);
     let a = t.split("/"),
       o = a[a.length - 1];
     c.ZP.resolveInvite(o, "Join Guild", {
@@ -43,7 +43,7 @@ function N(e) {
       let {
         invite: t
       } = e;
-      if (A(false), null == t) return void g(_.intl.string(_.t["GEYI+Z"]));
+      if (A(false), null == t) return void C(_.intl.string(_.t["GEYI+Z"]));
       if (null != t.channel) {
         let e = c.ZP.getInviteContext("Join Guild", t);
         c.ZP.acceptInvite({
@@ -53,15 +53,15 @@ function N(e) {
             n(), c.ZP.transitionToInvite(e)
           }
         }).catch(e => {
-          e instanceof d.yZ || e instanceof d.Hx ? g((0, b.O)(e.code)) : g(_.intl.string(_.t.dDZRdy))
+          e instanceof d.yZ || e instanceof d.Hx ? C((0, b.O)(e.code)) : C(_.intl.string(_.t.dDZRdy))
         })
       }
     }, e => {
       A(false);
       let t = new d.yZ(e);
-      g((0, b.O)(t.code))
+      C((0, b.O)(t.code))
     })
-  }, [N, A, g, n]);
+  }, [N, A, C, n]);
   return {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(l.xBx, {
@@ -86,7 +86,7 @@ function N(e) {
           className: h.inputForm,
           children: (0, i.jsx)(l.oil, {
             label: _.intl.string(_.t.qreV25),
-            error: C,
+            error: g,
             value: N,
             onChange: x,
             inputRef: j

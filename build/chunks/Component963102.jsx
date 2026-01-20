@@ -68,7 +68,7 @@ function B(e) {
     }] : []], [N]),
     z = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
     V = l.useCallback(() => {
-      (0, h.Y)({
+      (0, m.Y)({
         pageType: z,
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
@@ -77,7 +77,7 @@ function B(e) {
       })
     }, [z]),
     G = l.useCallback(() => {
-      (null == B ? true : B.id) != null && (0, m.openUserProfileModal)({
+      (null == B ? true : B.id) != null && (0, h.openUserProfileModal)({
         userId: B.id,
         tabSection: I.oh.WISHLIST,
         showGuildProfile: false

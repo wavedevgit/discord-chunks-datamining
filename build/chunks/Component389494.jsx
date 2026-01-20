@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk199849 = require("./199849.jsx"),
+var Chunk481060 = require("./481060.js"),
   Chunk922699 = require("./922699.js"),
   Chunk492435 = require("./492435.js");
 
@@ -18,12 +18,14 @@ function s(e) {
     experimentId: l,
     overrideInfo: c
   } = e;
-  return (0, r.jsx)(i.y6, {
+  return (0, r.jsx)(i.PhF, {
     label: t,
     description: n,
-    value: null != c ? c.variantId : null,
+    value: null != c ? c.variantId : true,
     clearable: null != c,
     options: (0, a.ak)(s),
-    onChange: e => (0, o.rX)(s.system, l, e)
+    onSelectionChange: e => (0, o.rX)(s.system, l, e),
+    selectionMode: "single",
+    fullWidth: true
   })
 }

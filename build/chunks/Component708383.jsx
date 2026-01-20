@@ -41,7 +41,7 @@ class h extends Chunk473749.Component {
         messageId: i
       }
     }(e);
-    (0, c.Ss)(t) && (0, c.cq)(n) ? (o.Z.selectGuild(t), l.default.selectChannel({
+    (0, c.Ss)(t) && (0, c.cq)(n) ? (o.Z.selectGuild(t), a.default.selectChannel({
       guildId: t,
       channelId: n,
       messageId: i
@@ -52,12 +52,12 @@ class h extends Chunk473749.Component {
   }
 }
 let f = () => (0, i.jsxs)(s.rs, {
-  children: [(0, i.jsx)(a.Z, {
+  children: [(0, i.jsx)(l.Z, {
     path: u.Z5c.CHANNEL(c.Hw.guildId(), c.Hw.channelId({
       optional: true
     }), ":messageId?"),
     component: h
-  }), (0, i.jsx)(a.Z, {
+  }), (0, i.jsx)(l.Z, {
     component: h
   })]
 })

@@ -20,17 +20,17 @@ let p = e => {
     progressBarRef: p,
     percentComplete: h,
     activeScreen: f,
-    popoutTargetElementRef: x
+    popoutTargetElementRef: b
   } = e, {
-    quest: b,
+    quest: x,
     onGameSheetOpen: g,
     onGameSheetClose: v
-  } = r.useContext(u.A), j = (0, s.eQ)(b), y = (0, s.vf)({
-    quest: b,
+  } = r.useContext(u.A), j = (0, s.eQ)(x), y = (0, s.vf)({
+    quest: x,
     isExpanded: t,
     activeScreen: f,
     sourceQuestContent: l.jn.QUEST_BAR_V2,
-    popoutTargetElementRef: x,
+    popoutTargetElementRef: b,
     onGameSheetOpened: g,
     onGameSheetClosed: v
   });
@@ -42,13 +42,13 @@ let p = e => {
       ref: p,
       children: e => (0, a.jsx)(d.Z, {
         ref: e,
-        quest: b,
+        quest: x,
         percentComplete: h,
         size: 42,
         strokeWidth: 3,
         children: (0, a.jsx)(o.Z, {
           className: m.questProgressRewardTile,
-          quest: b,
+          quest: x,
           questContent: l.jn.QUEST_BAR_V2,
           autoplay: false,
           sourceQuestContent: l.jn.QUEST_BAR_V2

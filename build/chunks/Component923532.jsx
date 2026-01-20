@@ -19,8 +19,8 @@ function f(e) {
   let {
     streamerId: t,
     channelId: n
-  } = e, s = r.useRef(null), a = (0, l.e7)([u.default], () => u.default.getCurrentUser());
-  return o()(null != a, "user cannot be null"), (0, d.Z)(s, a, t, n), (0, i.jsx)("canvas", {
+  } = e, s = r.useRef(null), l = (0, a.e7)([u.default], () => u.default.getCurrentUser());
+  return o()(null != l, "user cannot be null"), (0, d.Z)(s, l, t, n), (0, i.jsx)("canvas", {
     className: h.canvas,
     ref: s
   })
@@ -33,12 +33,12 @@ function p(e) {
     streamerId: r
   } = e, {
     isSharedCanvasEnabled: s
-  } = a.Z.useExperiment({
+  } = l.Z.useExperiment({
     guildId: t,
     location: "f0d1b1_1"
   }, {
     autoTrackExposure: true
-  }), o = (0, l.e7)([c.Z], () => c.Z.visibleOverlayCanvas);
+  }), o = (0, a.e7)([c.Z], () => c.Z.visibleOverlayCanvas);
   return s && o ? (0, i.jsx)(f, {
     guildId: t,
     channelId: n,

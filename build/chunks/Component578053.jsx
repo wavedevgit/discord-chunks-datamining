@@ -147,6 +147,7 @@ function C(e) {
     onChange: a,
     renderOptionLabel: u,
     renderOptionValue: g,
-    layout: d
+    layout: d,
+    "data-migration-pending": true
   })
 }

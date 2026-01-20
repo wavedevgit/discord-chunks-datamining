@@ -26,7 +26,7 @@ function C(e) {
     isPremiumUser: n,
     prioritizeUserDiscounts: l,
     orbsSupportedOnly: C
-  } = e, E = (0, i.e7)([o.Z], () => o.Z.hasConsented(m.pjP.PERSONALIZATION)), v = r.useMemo(() => {
+  } = e, E = (0, i.e7)([o.Z], () => o.Z.hasConsented(h.pjP.PERSONALIZATION)), v = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[s.m.RECOMMENDED]) ? e : []
   }, [t]), x = r.useMemo(() => {
@@ -58,17 +58,17 @@ function C(e) {
     sortOptions: r.useMemo(() => {
       let e = [{
         value: s.m.POPULAR,
-        label: h.intl.string(h.t.Y68e5p)
+        label: m.intl.string(m.t.Y68e5p)
       }, {
         value: s.m.RECENT,
-        label: h.intl.string(h.t["51Bhiz"])
+        label: m.intl.string(m.t["51Bhiz"])
       }, {
         value: s.m.PRICE_LOW_TO_HIGH,
-        label: h.intl.string(h.t.m8RVU2)
+        label: m.intl.string(m.t.m8RVU2)
       }];
       return S && e.unshift({
         value: s.m.RECOMMENDED,
-        label: h.intl.string(h.t.zPWgFG)
+        label: m.intl.string(m.t.zPWgFG)
       }), e
     }, [S]),
     showRecommendationOption: S,

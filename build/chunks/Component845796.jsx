@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk497598 = require("./497598.js"),
   Chunk792091 = require("./792091.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk501431 = require("./501431.js"),
@@ -31,20 +31,25 @@ let E = () => {
       sortDirection: n
     } = e;
     return t === o.E.RECENCY ? {
-      label: m.intl.string(m.t["51Bhiz"]),
-      value: "recent"
+      label: h.intl.string(h.t["51Bhiz"]),
+      value: "recent",
+      id: "recent"
     } : t === o.E.PRICE ? n === i.F.ASC ? {
-      label: m.intl.string(m.t.m8RVU2),
-      value: "price-asc"
+      label: h.intl.string(h.t.m8RVU2),
+      value: "price-asc",
+      id: "price-asc"
     } : {
-      label: m.intl.string(m.t.zBwQJO),
-      value: "price-desc"
+      label: h.intl.string(h.t.zBwQJO),
+      value: "price-desc",
+      id: "price-desc"
     } : t === o.E.RELEVANCE ? {
-      label: m.intl.string(m.t["XoeT/z"]),
-      value: "relevance"
+      label: h.intl.string(h.t["XoeT/z"]),
+      value: "relevance",
+      id: "relevance"
     } : {
-      label: m.intl.string(m.t.Y68e5p),
-      value: "popularity"
+      label: h.intl.string(h.t.Y68e5p),
+      value: "popularity",
+      id: "popularity"
     }
   }, []), O = l.useCallback(e => ({
     recent: {
@@ -80,18 +85,17 @@ let E = () => {
     }), t(O(e))
   }, [a, S, O, t]), y = S(e);
   return (0, r.jsx)("div", {
-    className: s()(h.container, {
+    className: s()(m.container, {
       [C.customCursors]: E
     }),
-    children: (0, r.jsx)(c.B6, {
+    children: (0, r.jsx)(c.PhF, {
+      label: h.intl.string(h.t.uaX705),
+      hideLabel: true,
       options: x.map(S),
-      select: _,
-      isSelected: e => e === y.value,
-      serialize: e => e,
-      popoutWidth: 224,
-      popoutClassName: s()({
-        [C.customCursors]: E
-      })
+      onSelectionChange: _,
+      value: y.value,
+      selectionMode: "single",
+      fullWidth: true
     })
   })
 }

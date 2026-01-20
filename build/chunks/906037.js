@@ -4,7 +4,7 @@
 require.d(exports, {
   CR: () => o,
   eM: () => s,
-  m3: () => l
+  m3: () => a
 });
 var Chunk570140 = require("./570140.js"),
   Chunk449224 = require("./449224.js");
@@ -14,19 +14,19 @@ function s(e) {
 }
 
 function o(e, t, n) {
-  (e.locked !== t.locked || e.pinned !== t.pinned || n(e) !== n(t) || s(e) !== s(t)) && l(t, n(t))
+  (e.locked !== t.locked || e.pinned !== t.pinned || n(e) !== n(t) || s(e) !== s(t)) && a(t, n(t))
 }
 
-function l(e, t) {
+function a(e, t) {
   var n, o;
-  let l = s(e),
-    a = r.Z.getGame();
+  let a = s(e),
+    l = r.Z.getGame();
   i.Z.dispatch({
     type: "OVERLAY_WIDGET_CHANGED",
-    gameName: null != (n = null == a ? true : a.name) ? n : null,
-    gameId: null != (o = null == a ? true : a.id) ? o : null,
+    gameName: null != (n = null == l ? true : l.name) ? n : null,
+    gameId: null != (o = null == l ? true : l.id) ? o : null,
     widgetType: e.widget,
-    visible: l && t,
+    visible: a && t,
     locked: e.locked,
     pinned: e.pinned
   })

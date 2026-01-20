@@ -96,7 +96,7 @@ let g = {
       peaking: t,
       transitioning: n,
       style: a
-    } = e, g = window.innerHeight, [p, m] = l.useState(false), h = b.map(e => {
+    } = e, g = window.innerHeight, [p, h] = l.useState(false), m = b.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,7 +104,7 @@ let g = {
     });
     return l.useEffect(() => {
       n && setTimeout(() => {
-        m(true)
+        h(true)
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
@@ -119,8 +119,8 @@ let g = {
           left: c,
           rotation: b,
           size: p,
-          skuId: m
-        } = e, C = null == (l = h[t]) ? true : l.items[0], E = null == (a = h[t]) ? true : a.type, v = E === i.Z.AVATAR_DECORATION ? 384 : 512;
+          skuId: h
+        } = e, C = null == (l = m[t]) ? true : l.items[0], E = null == (a = m[t]) ? true : a.type, v = E === i.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: f.asset,
           style: {
@@ -138,7 +138,7 @@ let g = {
             skuId: C.skuId,
             isHighlighted: true
           })]
-        }, m + t)
+        }, h + t)
       })
     })
   }

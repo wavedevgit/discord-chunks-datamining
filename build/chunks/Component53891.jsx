@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 53891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => x,
+  $: () => b,
   f: () => f
 });
 var Chunk54381 = require("./54381.js");
@@ -34,18 +34,18 @@ function f(e) {
   }
   let {
     isAdopting: f,
-    onAdoptTag: x,
-    onEditProfile: b
+    onAdoptTag: b,
+    onEditProfile: x
   } = (0, u.Z)(null != (t = null == n ? true : n.id) ? t : null, () => o(m.L.TAKE_ACTION));
   if (null == n || !(0, d.jq)(n)) return h.error("GuildTagChangedCoachmark rendered without guildId for a guild with tags."), e.children;
   let g = [{
     text: p.intl.string(p.t.jwEaiX),
     loading: f,
-    onClick: x,
+    onClick: b,
     variant: "primary"
   }, {
     text: p.intl.string(p.t.s5vZlQ),
-    onClick: b,
+    onClick: x,
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
@@ -72,7 +72,7 @@ function f(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   var t;
   let n = (0, r.e7)([c.Z], () => c.Z.getGuild(e.guildId));
 
@@ -83,17 +83,17 @@ function x(e) {
   let {
     isAdopting: o,
     onAdoptTag: f,
-    onEditProfile: x
+    onEditProfile: b
   } = (0, u.Z)(null != (t = null == n ? true : n.id) ? t : null, () => s(m.L.TAKE_ACTION));
   if (null == n || !(0, d.jq)(n)) return h.error("GuildTagAvailableCoachmark rendered without guildId for a guild with tags."), e.children;
-  let b = [{
+  let x = [{
     text: p.intl.string(p.t.jwEaiX),
     loading: o,
     onClick: f,
     variant: "primary"
   }, {
     text: p.intl.string(p.t.s5vZlQ),
-    onClick: x,
+    onClick: b,
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
@@ -113,7 +113,7 @@ function x(e) {
         guildName: n.name
       }),
       body: p.intl.string(p.t.DrAXIr),
-      actions: b,
+      actions: x,
       size: "md",
       onRequestClose: () => s(m.L.USER_DISMISS)
     })]

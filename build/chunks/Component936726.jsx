@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => E
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +9,6 @@ var Chunk54381 = require("./54381.js"),
   a = require.n(Chunk120356),
   Chunk544891 = require("./544891.js"),
   Chunk846519 = require("./846519.js"),
-  Chunk668339 = require("./668339.jsx"),
   Chunk248514 = require("./248514.jsx"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,187 +28,199 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk191607 = require("./191607.js");
 
-function E(e, t) {
-  return null != t && /^data:/.test(t) ? t : (0, v.ov)({
+function T(e, t) {
+  return null != t && /^data:/.test(t) ? t : (0, j.ov)({
     id: e.id,
     avatar: t,
-    discriminator: S.fo$
+    discriminator: N.fo$
   })
 }
 
-function Z(e) {
+function E(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
-    channelOptions: v,
-    isExpanded: Z,
-    isNew: w,
-    errors: P,
-    onToggleExpand: _
-  } = e, [k, A] = r.useState(false), [D] = r.useState(new s.V7);
-  r.useEffect(() => () => D.stop(), [D]);
-  let R = r.useMemo(() => E(n, n.avatar), [n]),
-    L = r.useCallback(() => {
-      let e = "".concat((0, o.K0)(false)).concat(S.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
-      (0, O.JG)(e)
+    channelOptions: j,
+    isExpanded: E,
+    isNew: Z,
+    errors: w,
+    onToggleExpand: P
+  } = e, [_, k] = r.useState(false), [A] = r.useState(new s.V7);
+  r.useEffect(() => () => A.stop(), [A]);
+  let D = r.useMemo(() => T(n, n.avatar), [n]),
+    R = r.useCallback(() => {
+      let e = "".concat((0, o.K0)(false)).concat(N.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
+      (0, v.JG)(e)
     }, [n]),
-    M = r.useCallback(() => {
-      (0, d.Z)({
-        title: I.intl.formatToPlainString(I.t.QVFjHh, {
+    L = r.useCallback(() => {
+      (0, c.Z)({
+        title: S.intl.formatToPlainString(S.t.QVFjHh, {
           name: n.name
         }),
-        subtitle: I.intl.format(I.t["rIWe+5"], {
+        subtitle: S.intl.format(S.t["rIWe+5"], {
           name: n.name
         }),
-        confirmText: I.intl.string(I.t["W+K1Fs"]),
-        cancelText: I.intl.string(I.t.xNhj0O),
+        confirmText: S.intl.string(S.t["W+K1Fs"]),
+        cancelText: S.intl.string(S.t.xNhj0O),
         onConfirm: () => {
-          g.Z.delete(n.guild_id, n.id).catch(e => {
+          p.Z.delete(n.guild_id, n.id).catch(e => {
             let {
               status: t
             } = e;
-            429 === t ? b.Z.show({
-              title: I.intl.string(I.t.N5riYn),
-              body: I.intl.string(I.t.eAxcCc)
-            }) : b.Z.show({
-              title: I.intl.string(I.t.N5riYn),
-              body: I.intl.string(I.t["/4TwKf"])
+            429 === t ? m.Z.show({
+              title: S.intl.string(S.t.N5riYn),
+              body: S.intl.string(S.t.eAxcCc)
+            }) : m.Z.show({
+              title: S.intl.string(S.t.N5riYn),
+              body: S.intl.string(S.t["/4TwKf"])
             })
           })
         }
       })
     }, [n.guild_id, n.id, n.name]),
-    U = [];
-  null != n.user ? U.push({
-    icon: m.T39,
-    text: I.intl.formatToPlainString(I.t["7EcUbr"], {
+    M = [];
+  null != n.user ? M.push({
+    icon: u.T39,
+    text: S.intl.formatToPlainString(S.t["7EcUbr"], {
       user: (e => {
         if (null == e) return null;
-        let t = new x.Z(e);
-        return C.ZP.getUserTag(t)
+        let t = new h.Z(e);
+        return y.ZP.getUserTag(t)
       })(n.user),
-      timestamp: y.default.extractTimestamp(n.id)
+      timestamp: O.default.extractTimestamp(n.id)
     })
-  }) : U.push({
-    icon: m.T39,
-    text: I.intl.formatToPlainString(I.t["7mv59O"], {
-      timestamp: y.default.extractTimestamp(n.id)
+  }) : M.push({
+    icon: u.T39,
+    text: S.intl.formatToPlainString(S.t["7mv59O"], {
+      timestamp: O.default.extractTimestamp(n.id)
     })
   });
-  let B = null;
-  return Z && null != l && (B = (0, i.jsxs)("div", {
-    className: T.body,
-    children: [(0, i.jsx)(m.izJ, {
-      className: T.topDivider
-    }), (0, i.jsxs)(f.Z, {
-      children: [(0, i.jsx)(f.Z.Child, {
+  let U = null;
+  return E && null != l && (U = (0, i.jsxs)("div", {
+    className: I.body,
+    children: [(0, i.jsx)(u.izJ, {
+      className: I.topDivider
+    }), (0, i.jsxs)(g.Z, {
+      children: [(0, i.jsx)(g.Z.Child, {
         shrink: 1,
         grow: 0,
-        children: (0, i.jsxs)(f.Z, {
-          className: T.avatarWrapper,
-          direction: f.Z.Direction.VERTICAL,
-          children: [(0, i.jsx)(h.Z, {
+        children: (0, i.jsxs)(g.Z, {
+          className: I.avatarWrapper,
+          direction: g.Z.Direction.VERTICAL,
+          children: [(0, i.jsx)(f.Z, {
             image: l.avatar,
             onChange: e => {
-              p.Z.updateWebhook({
+              b.Z.updateWebhook({
                 avatar: e
               })
             },
-            makeURL: e => E(n, e),
-            imageClassName: T.avatarUploaderInner,
+            makeURL: e => T(n, e),
+            imageClassName: I.avatarUploaderInner,
             showIcon: true
-          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(m.Text, {
+          }), null != w.avatar && "" !== w.avatar ? (0, i.jsx)(u.Text, {
             color: "text-feedback-critical",
             variant: "text-sm/normal",
-            children: P.avatar
+            children: w.avatar
           }) : null]
         })
-      }), (0, i.jsxs)(f.Z, {
-        direction: f.Z.Direction.VERTICAL,
-        children: [(0, i.jsxs)(f.Z, {
-          children: [(0, i.jsx)(f.Z.Child, {
+      }), (0, i.jsxs)(g.Z, {
+        direction: g.Z.Direction.VERTICAL,
+        children: [(0, i.jsxs)(g.Z, {
+          children: [(0, i.jsx)(g.Z.Child, {
             wrap: true,
             basis: "50%",
-            children: (0, i.jsx)(m.oil, {
-              label: I.intl.string(I.t.ukdxuo),
+            children: (0, i.jsx)(u.oil, {
+              label: S.intl.string(S.t.ukdxuo),
               value: l.name,
               onChange: e => {
-                p.Z.updateWebhook({
+                b.Z.updateWebhook({
                   name: e
                 })
               },
               maxLength: 80,
-              error: P.name
+              error: w.name
             })
-          }), (0, i.jsx)(f.Z.Child, {
+          }), (0, i.jsx)(g.Z.Child, {
             basis: "50%",
             children: (0, i.jsx)("div", {
-              children: (0, i.jsx)(c.d, {
-                label: I.intl.string(I.t.GK18KJ),
+              children: (0, i.jsx)(u.VcW, {
+                label: S.intl.string(S.t.GK18KJ),
                 value: l.channel_id,
-                options: v,
-                onChange: e => {
-                  p.Z.updateWebhook({
+                options: j,
+                formatOption: e => {
+                  let {
+                    value: t,
+                    label: n
+                  } = e;
+                  return {
+                    id: t.toString(),
+                    value: t,
+                    label: n
+                  }
+                },
+                onSelectionChange: e => {
+                  b.Z.updateWebhook({
                     channelId: e
                   })
                 },
-                placeholder: I.intl.string(I.t.r2ptsz)
+                placeholder: S.intl.string(S.t.r2ptsz),
+                selectionMode: "single"
               })
             })
           })]
-        }), (0, i.jsx)(m.izJ, {
-          className: T.bottomDivider
-        }), (0, i.jsxs)(f.Z, {
-          children: [(0, i.jsx)(u.u, {
-            text: I.intl.string(I.t.wwdb3g),
-            shouldShow: k,
+        }), (0, i.jsx)(u.izJ, {
+          className: I.bottomDivider
+        }), (0, i.jsxs)(g.Z, {
+          children: [(0, i.jsx)(d.u, {
+            text: S.intl.string(S.t.wwdb3g),
+            shouldShow: _,
             children: (0, i.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: T.copyButton,
-              children: (0, i.jsx)(m.Button, {
+              className: I.copyButton,
+              children: (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: I.intl.string(I.t.Ae9rUW),
+                text: S.intl.string(S.t.Ae9rUW),
                 "aria-label": "",
                 onClick: () => {
-                  A(true), m.uvj.announce(I.intl.string(I.t.wwdb3g)), D.start(1e3, () => A(false)), L()
+                  k(true), u.uvj.announce(S.intl.string(S.t.wwdb3g)), A.start(1e3, () => k(false)), R()
                 },
                 disabled: null == n.token || "" === n.token
               })
             })
-          }), (0, i.jsx)(m.Button, {
+          }), (0, i.jsx)(u.Button, {
             variant: "critical-secondary",
             size: "sm",
-            text: I.intl.string(I.t.jVrUnC),
-            onClick: M
+            text: S.intl.string(S.t.jVrUnC),
+            onClick: L
           })]
         })]
       })]
     })]
-  })), (0, i.jsx)(m.Zbd, {
+  })), (0, i.jsx)(u.Zbd, {
     editable: true,
     id: t,
-    className: a()(T.card, w ? T.pulse : null),
-    children: (0, i.jsxs)(f.Z, {
-      direction: f.Z.Direction.VERTICAL,
-      children: [(0, i.jsx)(m.P3F, {
-        className: T.header,
-        "aria-expanded": Z,
-        onClick: _,
-        children: (0, i.jsxs)(f.Z, {
-          align: f.Z.Align.CENTER,
-          children: [(0, i.jsx)(N.Z, {
+    className: a()(I.card, Z ? I.pulse : null),
+    children: (0, i.jsxs)(g.Z, {
+      direction: g.Z.Direction.VERTICAL,
+      children: [(0, i.jsx)(u.P3F, {
+        className: I.header,
+        "aria-expanded": E,
+        onClick: P,
+        children: (0, i.jsxs)(g.Z, {
+          align: g.Z.Align.CENTER,
+          children: [(0, i.jsx)(C.Z, {
             name: n.name,
-            imageSrc: R,
-            details: U
-          }), (0, i.jsx)(j.Z, {
-            className: T.expandIcon,
-            expanded: Z,
+            imageSrc: D,
+            details: M
+          }), (0, i.jsx)(x.Z, {
+            className: I.expandIcon,
+            expanded: E,
             "aria-hidden": true
           })]
         })
-      }), B]
+      }), U]
     })
   })
 }

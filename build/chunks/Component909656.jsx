@@ -2,7 +2,7 @@
 /** chunk id: 909656, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => _
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,7 +12,6 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk392711),
   Chunk215569 = require("./215569.js"),
   Chunk796027 = require("./796027.jsx"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk885387 = require("./885387.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,162 +28,169 @@ var Chunk54381 = require("./54381.js"),
   Chunk333866 = require("./333866.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719096 = require("./719096.js");
-let _ = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
+let S = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
 
-function T(e) {
+function _(e) {
   var t;
   let {
     guild: n,
     isGuildProducts: l = false
   } = e, {
     format: s
-  } = (0, C.Z)(n.id), f = (0, v.YB)(n.id), j = i.useCallback(() => {
+  } = (0, y.Z)(n.id), g = (0, j.YB)(n.id), x = i.useCallback(() => {
     var e;
-    return (null == f || null == (e = f.cover_image_asset) ? true : e.application_id) == null ? null : (0, x._W)(f.cover_image_asset.application_id, f.cover_image_asset, _)
-  }, [f]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == f ? true : f.description) ? t : ""), [R, D] = i.useState(j), [A, L] = i.useState(null == f ? true : f.store_page_guild_products_default_sort), [k, G] = i.useState(null == f ? true : f.server_shop_tab_order), {
-    loading: M,
-    error: U,
-    updateSubscriptionsSettings: B
-  } = (0, v.QV)(), {
-    imageCTA: F,
-    imageAriaLabel: H,
-    setFilename: W
-  } = (0, y.Z)(null == f ? true : f.cover_image_asset), z = (0, b.Dt)();
+    return (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) == null ? null : (0, h._W)(g.cover_image_asset.application_id, g.cover_image_asset, S)
+  }, [g]), [_, T] = i.useState(s), [P, w] = i.useState(null != (t = null == g ? true : g.description) ? t : ""), [Z, R] = i.useState(x), [D, A] = i.useState(null == g ? true : g.store_page_guild_products_default_sort), [L, k] = i.useState(null == g ? true : g.server_shop_tab_order), {
+    loading: G,
+    error: M,
+    updateSubscriptionsSettings: U
+  } = (0, j.QV)(), {
+    imageCTA: B,
+    imageAriaLabel: F,
+    setFilename: H
+  } = (0, O.Z)(null == g ? true : g.cover_image_asset), W = (0, m.Dt)();
 
-  function V(e, t) {
-    a()(null != e, "Null value not allowed"), null != t && W(t.name), D(e)
+  function z(e, t) {
+    a()(null != e, "Null value not allowed"), null != t && H(t.name), R(e)
   }
-  let K = i.useMemo(() => {
+  let V = i.useMemo(() => {
       var e;
-      return null != w && w !== (null != (e = null == f ? true : f.description) ? e : "") || (null == R ? true : R.startsWith("data:")) === true || T !== s || (null == f ? true : f.store_page_guild_products_default_sort) !== A || (null == f ? true : f.server_shop_tab_order) !== k
-    }, [R, s, w, f, T, A, k]),
-    Y = null != w && "" !== w && null != R;
+      return null != P && P !== (null != (e = null == g ? true : g.description) ? e : "") || (null == Z ? true : Z.startsWith("data:")) === true || _ !== s || (null == g ? true : g.store_page_guild_products_default_sort) !== D || (null == g ? true : g.server_shop_tab_order) !== L
+    }, [Z, s, P, g, _, D, L]),
+    K = null != P && "" !== P && null != Z;
   i.useEffect(() => {
     var e;
-    (null == f || null == (e = f.cover_image_asset) ? true : e.application_id) != null && D((0, x._W)(f.cover_image_asset.application_id, f.cover_image_asset, _))
-  }, [null == f ? true : f.cover_image_asset]);
-  let q = (0, O.mY)(),
-    X = i.useMemo(() => E.kL.map(e => ({
-      label: (0, E.eJ)(e),
+    (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) != null && R((0, h._W)(g.cover_image_asset.application_id, g.cover_image_asset, S))
+  }, [null == g ? true : g.cover_image_asset]);
+  let Y = (0, v.mY)(),
+    q = i.useMemo(() => N.kL.map(e => ({
+      id: e.toString(),
+      label: (0, N.eJ)(e),
       value: e
     })), []),
-    J = i.useMemo(() => [{
-      label: I.intl.string(I.t.X6h2gz),
-      value: E.a3.PRODUCTS_FIRST
+    X = i.useMemo(() => [{
+      id: "products-first",
+      label: E.intl.string(E.t.X6h2gz),
+      value: N.a3.PRODUCTS_FIRST
     }, {
-      label: I.intl.string(I.t["KzCF/6"]),
-      value: E.a3.SUBS_FIRST
+      id: "subs-first",
+      label: E.intl.string(E.t["KzCF/6"]),
+      value: N.a3.SUBS_FIRST
     }], []);
   return (0, r.jsxs)("div", {
-    className: S.container,
-    children: [null != U && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.M14, {
+    className: I.container,
+    children: [null != M && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(f.M14, {
         type: "critical",
-        children: U.getAnyErrorMessage()
-      }), (0, r.jsx)(m.LZC, {
+        children: M.getAnyErrorMessage()
+      }), (0, r.jsx)(f.LZC, {
         size: 16
       })]
     }), l ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.FXm, {
-        label: I.intl.string(I.t["PAVi++"]),
-        description: I.intl.string(I.t.x87YqH),
-        value: T,
+      children: [(0, r.jsx)(f.FXm, {
+        label: E.intl.string(E.t["PAVi++"]),
+        description: E.intl.string(E.t.x87YqH),
+        value: _,
         onChange: e => {
-          s !== e && e === N.e3.ALL_CHANNELS && (0, g.Z)({
-            title: I.intl.string(I.t.dmVoOz),
-            subtitle: I.intl.string(I.t.mtwzdD),
-            confirmText: I.intl.string(I.t["NX+WJN"])
-          }), P(e)
+          s !== e && e === C.e3.ALL_CHANNELS && (0, u.Z)({
+            title: E.intl.string(E.t.dmVoOz),
+            subtitle: E.intl.string(E.t.mtwzdD),
+            confirmText: E.intl.string(E.t["NX+WJN"])
+          }), T(e)
         },
-        disabled: q,
+        disabled: Y,
         options: [{
-          name: I.intl.string(I.t.rXqxhF),
-          desc: I.intl.string(I.t.yQiJne),
-          value: N.e3.SOME_CHANNELS,
-          icon: m.VL1
+          name: E.intl.string(E.t.rXqxhF),
+          desc: E.intl.string(E.t.yQiJne),
+          value: C.e3.SOME_CHANNELS,
+          icon: f.VL1
         }, {
-          name: I.intl.string(I.t.WzC9s6),
-          desc: I.intl.string(I.t.WmagiB),
-          value: N.e3.ALL_CHANNELS,
-          icon: m._m8
+          name: E.intl.string(E.t.WzC9s6),
+          desc: E.intl.string(E.t.WmagiB),
+          value: C.e3.ALL_CHANNELS,
+          icon: f._m8
         }]
-      }), (0, r.jsx)(m.izJ, {
-        className: S.divider
+      }), (0, r.jsx)(f.izJ, {
+        className: I.divider
       })]
-    }), (0, r.jsx)(m.Kx8, {
-      label: I.intl.string(I.t["1+Ho1X"]),
-      placeholder: l ? I.intl.string(I.t.SD6LRZ) : I.intl.string(I.t["aVhW/W"]),
+    }), (0, r.jsx)(f.Kx8, {
+      label: E.intl.string(E.t["1+Ho1X"]),
+      placeholder: l ? E.intl.string(E.t.SD6LRZ) : E.intl.string(E.t["aVhW/W"]),
       maxLength: 1500,
-      value: w,
+      value: P,
       autosize: true,
-      onChange: Z,
-      "aria-labelledby": z,
-      disabled: q
-    }), (0, r.jsx)(m.izJ, {
-      className: S.divider
-    }), (0, r.jsxs)(m.gNt, {
-      label: I.intl.string(I.t["0kpTpM"]),
-      description: I.intl.string(I.t.i2rCwT),
-      children: [(0, r.jsx)(h.Z, {
-        image: R,
-        hint: F,
+      onChange: w,
+      "aria-labelledby": W,
+      disabled: Y
+    }), (0, r.jsx)(f.izJ, {
+      className: I.divider
+    }), (0, r.jsxs)(f.gNt, {
+      label: E.intl.string(E.t["0kpTpM"]),
+      description: E.intl.string(E.t.i2rCwT),
+      children: [(0, r.jsx)(p.Z, {
+        image: Z,
+        hint: B,
         showIcon: true,
         showRemoveButton: false,
         hideSize: true,
-        className: S.coverImageUploader,
-        iconWrapperClassName: S.coverImageUploaderIconWrapper,
-        imageClassName: S.coverImageUploaderInner,
-        iconClassName: S.coverImageUploaderIcon,
-        onChange: V,
-        "aria-label": H,
-        disabled: q
-      }), (0, r.jsx)(p.Z, {
-        onChange: V,
-        "aria-label": H,
-        disabled: q,
-        text: F,
+        className: I.coverImageUploader,
+        iconWrapperClassName: I.coverImageUploaderIconWrapper,
+        imageClassName: I.coverImageUploaderInner,
+        iconClassName: I.coverImageUploaderIcon,
+        onChange: z,
+        "aria-label": F,
+        disabled: Y
+      }), (0, r.jsx)(b.Z, {
+        onChange: z,
+        "aria-label": F,
+        disabled: Y,
+        text: B,
         variant: "secondary",
         size: "md"
       })]
     }), l ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.izJ, {
-        className: S.divider
-      }), (0, r.jsx)(u.y6, {
-        label: I.intl.string(I.t.aaZ9pE),
-        description: I.intl.string(I.t.TILN8u),
-        value: A,
-        placeholder: I.intl.string(I.t.XqMe3N),
-        options: X,
-        onChange: e => L(e)
+      children: [(0, r.jsx)(f.izJ, {
+        className: I.divider
+      }), (0, r.jsx)(f.PhF, {
+        label: E.intl.string(E.t.aaZ9pE),
+        description: E.intl.string(E.t.TILN8u),
+        value: D,
+        placeholder: E.intl.string(E.t.XqMe3N),
+        options: q,
+        onSelectionChange: A,
+        selectionMode: "single",
+        fullWidth: true
       })]
-    }) : null, J.length > 0 && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.izJ, {
-        className: S.divider
-      }), (0, r.jsx)(u.y6, {
-        label: I.intl.string(I.t["+dtmw+"]),
-        description: I.intl.string(I.t.n8WSWJ),
-        value: k,
-        placeholder: I.intl.string(I.t.XqMe3N),
-        options: J,
-        onChange: e => G(e)
+    }) : null, X.length > 0 && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(f.izJ, {
+        className: I.divider
+      }), (0, r.jsx)(f.PhF, {
+        label: E.intl.string(E.t["+dtmw+"]),
+        description: E.intl.string(E.t.n8WSWJ),
+        value: L,
+        placeholder: E.intl.string(E.t.XqMe3N),
+        options: X,
+        onSelectionChange: k,
+        selectionMode: "single",
+        fullWidth: true
       })]
     }), (0, r.jsx)(c.W, {
       component: "div",
-      className: S.contentRegion,
-      children: K && (0, r.jsx)(m.oXn, {
+      className: I.contentRegion,
+      children: V && (0, r.jsx)(f.oXn, {
         children: (0, r.jsx)(d.Z, {
-          submitting: M,
-          disabled: !Y,
+          submitting: G,
+          disabled: !K,
           onReset: () => {
             var e;
-            P(s), Z(null != (e = null == f ? true : f.description) ? e : ""), D(j), L(null == f ? true : f.store_page_guild_products_default_sort), G(null == f ? true : f.server_shop_tab_order)
+            T(s), w(null != (e = null == g ? true : g.description) ? e : ""), R(x), A(null == g ? true : g.store_page_guild_products_default_sort), k(null == g ? true : g.server_shop_tab_order)
           },
           onSave: () => {
-            a()(null != f, "Settings must be defined");
+            a()(null != g, "Settings must be defined");
             let e = {};
-            w !== f.description && (e.description = w), null != R && R.startsWith("data:") && (e.cover_image = R), T !== s && (e.full_server_gate = T === N.e3.ALL_CHANNELS), A !== f.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = A), k !== f.server_shop_tab_order && (e.server_shop_tab_order = k), o().isEmpty(e) || B(n.id, e)
+            P !== g.description && (e.description = P), null != Z && Z.startsWith("data:") && (e.cover_image = Z), _ !== s && (e.full_server_gate = _ === C.e3.ALL_CHANNELS), D !== g.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = D), L !== g.server_shop_tab_order && (e.server_shop_tab_order = L), o().isEmpty(e) || U(n.id, e)
           },
-          saveButtonTooltip: Y ? true : I.intl.string(I.t["6HRvit"])
+          saveButtonTooltip: K ? true : E.intl.string(E.t["6HRvit"])
         })
       })
     })]

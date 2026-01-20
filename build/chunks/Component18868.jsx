@@ -50,11 +50,11 @@ let m = () => {
       className: t,
       onDrop: n,
       children: i
-    } = e, [h, f] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
+    } = e, [h, f] = r.useState(false), b = r.useRef(null), x = r.useCallback(e => {
       p(e), f(true), (0, s.Mr3)(c.A)
     }, []), g = r.useCallback(e => {
       p(e);
-      let t = x.current,
+      let t = b.current,
         n = e.relatedTarget;
       null != n && (null == t || t.contains(n)) || f(false)
     }, []), v = r.useCallback(async e => {
@@ -68,9 +68,9 @@ let m = () => {
       a.length > 0 ? n(a) : m()
     }, [n]);
     return (0, a.jsxs)("div", {
-      ref: x,
+      ref: b,
       className: l()(t, u.wrapper),
-      onDragEnter: b,
+      onDragEnter: x,
       onDragOver: p,
       onDragLeave: g,
       onDrop: v,

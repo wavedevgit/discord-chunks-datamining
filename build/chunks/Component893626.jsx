@@ -1,15 +1,14 @@
 /** Chunk was on 36371 **/
 /** chunk id: 893626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
-  i = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk734893 = require("./734893.js"),
   Chunk271383 = require("./271383.js"),
@@ -20,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk609442 = require("./609442.js");
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +38,7 @@ function v(e) {
   return e
 }
 
-function j(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,84 +51,75 @@ function j(e, t) {
   }), e
 }
 
-function k(e) {
-  var t, n, a;
+function j(e) {
+  var t;
   let {
-    transitionState: k,
-    onClose: O,
-    guildId: y,
-    welcomeMessage: I,
-    onSave: P
-  } = e, [C, w] = l.useState(v({}, I)), Z = (0, s.e7)([m.Z], () => m.Z.getGuild(y)), S = l.useCallback(e => {
+    transitionState: n,
+    onClose: l,
+    guildId: j,
+    welcomeMessage: k,
+    onSave: y
+  } = e, [O, I] = a.useState(b({}, k)), C = (0, s.e7)([g.Z], () => g.Z.getGuild(j)), P = a.useCallback(e => {
     let t = {};
-    return Promise.resolve(g.ZP.getMembers(y).filter(n => {
+    return Promise.resolve(d.ZP.getMembers(j).filter(n => {
       var r;
-      let l = p.default.getUser(n.userId);
-      if (null != l && (t[n.userId] = l), null == Z || null == l || !(0, f.Y)(Z, l)) returnfalse;
-      let a = "".concat(null != (r = n.nick) ? r : "", " ").concat(null == l ? true : l.username);
-      return i()(e.toLowerCase(), a.toLowerCase())
+      let a = m.default.getUser(n.userId);
+      if (null != a && (t[n.userId] = a), null == C || null == a || !(0, p.Y)(C, a)) returnfalse;
+      let l = "".concat(null != (r = n.nick) ? r : "", " ").concat(null == a ? true : a.username);
+      return o()(e.toLowerCase(), l.toLowerCase())
     }).map(e => {
-      var n, r, l;
+      var n, a, l;
       return {
+        id: e.userId,
         value: e.userId,
-        label: null != (l = null != (r = e.nick) ? r : null == (n = t[e.userId]) ? true : n.username) ? l : ""
+        label: null != (l = null != (a = e.nick) ? a : null == (n = t[e.userId]) ? true : n.username) ? l : "",
+        leading: null != t[e.userId] ? (0, r.jsx)(c.Xo$, {
+          size: c.EFr.SIZE_20,
+          src: t[e.userId].getAvatarURL(j, 20),
+          "aria-hidden": true
+        }) : true
       }
     }))
-  }, [y, Z]), L = l.useCallback(e => {
-    if (null == y || null == e) return null;
-    let t = g.ZP.getMember(y, e.value);
-    if (null == t) return null;
-    let n = p.default.getUser(t.userId);
-    if (null == n) return null;
-    let l = n.getAvatarURL(y, 20);
-    return (0, r.jsx)(c.Xo$, {
-      size: c.EFr.SIZE_20,
-      src: l,
-      "aria-hidden": true
-    })
-  }, [y]), U = l.useCallback(e => {
-    let {
-      value: t
-    } = e;
-    w(e => j(v({}, e), {
-      authorIds: null != t ? [t] : []
+  }, [j, C]), w = a.useCallback(e => {
+    I(t => v(b({}, t), {
+      authorIds: null != e ? [e] : []
     }))
-  }, [w]), G = l.useCallback(e => {
-    w(t => j(v({}, t), {
+  }, [I]), S = a.useCallback(e => {
+    I(t => v(b({}, t), {
       message: null != e ? e : ""
     }))
-  }, [w]), M = l.useCallback(() => {
-    P(C), O()
-  }, [O, P, C]), T = l.useCallback(() => {
-    P(null), O()
-  }, [P, O]), E = null != (t = C.authorIds[0]) ? t : "", R = (0, s.e7)([g.ZP], () => null != y ? g.ZP.getMember(y, E) : null), H = (0, s.e7)([p.default], () => null != R ? p.default.getUser(R.userId) : null), N = null != (a = null != (n = null == R ? true : R.nick) ? n : null == H ? true : H.username) ? a : "", D = function(e) {
+  }, [I]), L = a.useCallback(() => {
+    y(O), l()
+  }, [l, y, O]), Z = a.useCallback(() => {
+    y(null), l()
+  }, [y, l]), G = null != (t = O.authorIds[0]) ? t : "", T = function(e) {
     if (null == e.message || 0 === e.message.length) return null;
     if (null == e.authorIds || 0 === e.authorIds.length)
-      if (e.message.length < d.ZR) return h.intl.formatToPlainString(h.t.Lj831L, {
-        minLength: d.ZR
+      if (e.message.length < u.ZR) return h.intl.formatToPlainString(h.t.Lj831L, {
+        minLength: u.ZR
       });
       else return h.intl.string(h.t["4m7gtn"]);
-    return e.message.length < d.ZR ? h.intl.formatToPlainString(h.t.TJGHXt, {
-      minLength: d.ZR
+    return e.message.length < u.ZR ? h.intl.formatToPlainString(h.t.TJGHXt, {
+      minLength: u.ZR
     }) : null
-  }(C), Q = l.useMemo(() => [{
+  }(O), E = a.useMemo(() => [{
     text: h.intl.string(h.t["ETE/oC"]),
-    onClick: O,
+    onClick: l,
     variant: "secondary"
   }, {
     text: h.intl.string(h.t["R3BPH+"]),
-    onClick: M,
+    onClick: L,
     variant: "primary",
-    disabled: 0 === C.message.length || null != D
-  }], [D, M, O, C.message.length]);
-  return (0, r.jsxs)(o.Modal, {
+    disabled: 0 === O.message.length || null != T
+  }], [T, L, l, O.message.length]);
+  return (0, r.jsxs)(i.Modal, {
     title: h.intl.string(h.t.UnLrit),
-    transitionState: k,
-    onClose: O,
-    actions: Q,
+    transitionState: n,
+    onClose: l,
+    actions: E,
     actionBarInput: (0, r.jsx)(c.Avr, {
       text: h.intl.string(h.t.N86XcP),
-      onClick: T,
+      onClick: Z,
       variant: "critical"
     }),
     children: [(0, r.jsxs)("div", {
@@ -137,20 +127,16 @@ function k(e) {
       children: [(0, r.jsxs)(c.Heading, {
         variant: "heading-md/semibold",
         color: "text-strong",
-        children: [h.intl.string(h.t.zNQfQy), (0, r.jsx)(b.Z, {})]
+        children: [h.intl.string(h.t.zNQfQy), (0, r.jsx)(f.Z, {})]
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: h.intl.string(h.t.mQHK2S)
-      }), (0, r.jsx)(u.d, {
-        value: {
-          value: E,
-          label: N
-        },
-        renderOptionPrefix: L,
-        options: S,
-        onChange: U,
-        filter: false
+      }), (0, r.jsx)(c.VcW, {
+        selectionMode: "single",
+        value: null != G ? G : true,
+        options: P,
+        onSelectionChange: w
       })]
     }), (0, r.jsx)("div", {
       className: x.separator
@@ -166,13 +152,13 @@ function k(e) {
         children: h.intl.format(h.t["6biC4R"], {})
       }), (0, r.jsx)(c.Kx8, {
         placeholder: h.intl.string(h.t["kX/Sbx"]),
-        value: C.message,
-        onChange: G,
-        maxLength: d.W4
-      }), null != D ? (0, r.jsx)(c.Text, {
+        value: O.message,
+        onChange: S,
+        maxLength: u.W4
+      }), null != T ? (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-feedback-critical",
-        children: D
+        children: T
       }) : null]
     })]
   })

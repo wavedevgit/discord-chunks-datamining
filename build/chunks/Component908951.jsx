@@ -170,18 +170,16 @@ function x(e) {
     return (0, r.jsxs)(r.Fragment, {
       children: [X(), null != t.paymentSourceId ? (0, r.jsx)(_.b, {
         currencies: n,
-        children: (0, r.jsxs)("div", {
+        children: (0, r.jsx)("div", {
           className: o()(A.currency, N.flex, N.alignCenter),
-          children: [(0, r.jsx)("div", {
-            children: C.intl.string(C.t["0YjaXf"])
-          }), (0, r.jsx)(_.Z, {
-            className: A.currencyDropdown,
+          children: (0, r.jsx)(_.Z, {
+            label: C.intl.string(C.t["0YjaXf"]),
             selectedCurrency: V,
             currencies: n,
             onChange: e => {
               W(true, e, Y)
             }
-          })]
+          })
         })
       }) : null]
     })

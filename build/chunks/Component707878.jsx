@@ -20,12 +20,12 @@ let g = Object.values(Chunk987650.wF).map(e => 100 * e),
   m = (0, Chunk313201.hQ)();
 class b extends Chunk473749.PureComponent {
   handleUpdateBackgroundOpacity(e) {
-    l.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), l.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
+    a.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), a.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
       text_opacity_slider: e
     })
   }
   handlePreviewBackgroundOpacity(e) {
-    l.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
+    a.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
   }
   render() {
     return (0, i.jsx)("div", {

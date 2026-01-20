@@ -2,22 +2,21 @@
 /** chunk id: 208113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
-  z: () => _
+  Z: () => _,
+  z: () => p
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk921801 = require("./921801.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk680924 = require("./680924.js"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk478411 = require("./478411.js");
+  Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   let r = [{
     id: d.iA.STANDARD,
     value: d.iA.STANDARD,
@@ -38,12 +37,12 @@ function _(e, t, n) {
   }), r
 }
 
-function h() {
+function _() {
   let {
     audioSubsystem: e,
     legacyAudioSubsystemSupported: t,
     experimentalAudioSubsystemSupported: n,
-    automaticAudioSubsystemSupported: h
+    automaticAudioSubsystemSupported: _
   } = (0, i.cj)([l.Z], () => ({
     audioSubsystem: l.Z.getAudioSubsystem(),
     legacyAudioSubsystemSupported: l.Z.supports(d.AN.LEGACY_AUDIO_SUBSYSTEM),
@@ -52,15 +51,16 @@ function h() {
   }));
   return (0, r.jsx)(s.F, {
     setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
-    children: (0, r.jsx)(a.y6, {
+    children: (0, r.jsx)(a.PhF, {
       label: f.intl.string(f.t.wVBHr0),
-      className: p.marginBottom20,
       value: e,
-      options: _(t, n, h),
-      onChange: e => {
+      options: p(t, n, _),
+      onSelectionChange: e => {
         let t = () => o.Z.setAudioSubsystem(e);
         (0, c.Z)(f.intl.string(f.t.uY7AcQ), f.intl.string(f.t.gBqik6), t)
-      }
+      },
+      selectionMode: "single",
+      fullWidth: true
     })
   })
 }

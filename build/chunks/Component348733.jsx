@@ -23,10 +23,10 @@ function b(e) {
   let {
     locked: t,
     keybind: n
-  } = e, s = r.useRef(null), h = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), b = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
-  if ((0, a.e7)([f.Z], () => f.Z.isNotificationDisabled(p.n0.TextChat)) || b === g._vf.DISABLED) return null;
+  } = e, s = r.useRef(null), h = (0, l.Wu)([c.Z], () => c.Z.getNotifications()), b = (0, l.e7)([d.default], () => d.default.getNotificationPositionMode());
+  if ((0, l.e7)([f.Z], () => f.Z.isNotificationDisabled(p.n0.TextChat)) || b === g._vf.DISABLED) return null;
   let v = h.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    O = (0, l.groupBy)(v, e => e.type);
+    O = (0, a.groupBy)(v, e => e.type);
   return (0, i.jsx)(u.Z, {
     contentDomRef: s,
     observeInterval: 200,

@@ -27,10 +27,9 @@ function o(e) {
       options: h,
       value: _,
       clearable: u,
-      onSelectionChange: e => {
-        d(e)
-      },
-      layout: c
+      onSelectionChange: d,
+      layout: c,
+      fullWidth: true
     })
   })
 }

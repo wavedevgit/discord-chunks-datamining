@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk668339 = require("./668339.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk556012 = require("./556012.js"),
   Chunk590433 = require("./590433.js"),
   Chunk388032 = require("./388032.jsx");
@@ -16,15 +16,16 @@ let o = t => {
     duration: e,
     onSelectDuration: r
   } = t, i = (0, s.tr)(), u = i.find(t => t.value === e);
-  return (0, l.jsx)(a.d, {
+  return (0, l.jsx)(a.VcW, {
     required: true,
     value: null != (n = null == u ? true : u.value) ? n : s.DisableCommunicationDuration.DURATION_60_SEC,
     options: i,
-    onChange: t => {
+    onSelectionChange: t => {
       let n = i.find(n => n.value === t);
       null != n && r(n.value)
     },
-    placeholder: c.intl.string(c.t.k7yo6p)
+    placeholder: c.intl.string(c.t.k7yo6p),
+    selectionMode: "single"
   })
 };
 
