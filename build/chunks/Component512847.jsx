@@ -37,19 +37,19 @@ function P(e, t, n, r) {
       l = new a.Fh(e, () => {
         let e = t(),
           l = n(i, e);
-        null == l || v.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
+        null == l || I.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
       });
     return l.attach("useSound"), () => l.detach()
   })
 }
 
 function A() {
-  return P([I.Z, C.Z], () => ({
+  return P([v.Z, C.Z], () => ({
     inVoiceChannel: null != C.Z.getVoiceChannelId(),
-    selfMute: I.Z.isSelfMute(),
-    selfDeaf: I.Z.isSelfDeaf(),
-    audioPermissionReady: I.Z.isNativeAudioPermissionReady(),
-    shouldSkipMuteUnmuteSound: I.Z.shouldSkipMuteUnmuteSound()
+    selfMute: v.Z.isSelfMute(),
+    selfDeaf: v.Z.isSelfDeaf(),
+    audioPermissionReady: v.Z.isNativeAudioPermissionReady(),
+    shouldSkipMuteUnmuteSound: v.Z.shouldSkipMuteUnmuteSound()
   }), (e, t) => {
     let {
       inVoiceChannel: n,
@@ -59,13 +59,13 @@ function A() {
       shouldSkipMuteUnmuteSound: a
     } = t;
     if (e.selfDeaf !== i) return i ? "deafen" : "undeafen";
-    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void I.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
+    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void v.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
   }), null
 }
 
 function Z() {
-  return P([I.Z, C.Z], () => ({
-    videoEnabled: I.Z.isVideoEnabled(),
+  return P([v.Z, C.Z], () => ({
+    videoEnabled: v.Z.isVideoEnabled(),
     inVoiceChannel: null != C.Z.getVoiceChannelId()
   }), (e, t) => {
     let {
@@ -118,14 +118,14 @@ function w() {
 function L() {
   return P([S.Z], () => S.Z.isCurrentUserPTTActive() || S.Z.isCurrentUserPTTLatched(), (e, t) => {
     if (e !== t) {
-      let e = I.Z.isSelfMute();
-      if (I.Z.getMode() === x.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = v.Z.isSelfMute();
+      if (v.Z.getMode() === x.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
 
 function R() {
-  return P([I.Z], () => I.Z.getActiveVoiceFilter(), (e, t) => {
+  return P([v.Z], () => v.Z.getActiveVoiceFilter(), (e, t) => {
     if (e !== t)
       if (null != t) return null != e ? "voice_filter_swap" : "voice_filter_on";
       else return "voice_filter_off"
@@ -133,10 +133,10 @@ function R() {
 }
 
 function D() {
-  return P([I.Z], () => I.Z.isSelfMutedTemporarily(), (e, t) => {
+  return P([v.Z], () => v.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
-      let e = I.Z.isSelfMute();
-      if (I.Z.getMode() === x.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
+      let e = v.Z.isSelfMute();
+      if (v.Z.getMode() === x.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
     }
   }), null
 }
@@ -144,8 +144,8 @@ function D() {
 function M() {
   return P([S.Z], () => S.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
     if (e !== t) {
-      let e = I.Z.isSelfMute();
-      if (I.Z.getMode() === x.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = v.Z.isSelfMute();
+      if (v.Z.getMode() === x.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }

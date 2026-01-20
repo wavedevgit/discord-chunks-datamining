@@ -69,12 +69,12 @@ function w(e) {
     }, t))
   });
   if (!M && !F && !k) {
-    var U;
+    var W;
     return R ? (0, r.jsx)(h.Uf, {
       onClose: T
     }) : (0, r.jsx)(h.P9, {
       user: t,
-      guildId: null != (U = null == w ? true : w.guildId) ? U : E,
+      guildId: null != (W = null == w ? true : w.guildId) ? W : E,
       channelId: S,
       onClose: T
     })

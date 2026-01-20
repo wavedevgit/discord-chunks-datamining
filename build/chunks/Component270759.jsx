@@ -53,11 +53,11 @@ let P = function(e) {
     d.Y(S.Z5c.FRIENDS), (0, _.e)("friends")
   }, []);
   let b = (0, s.e7)([O.Z], () => O.Z.theme),
-    P = (0, v.If)(),
+    P = (0, I.If)(),
     {
       section: A,
       rows: Z
-    } = (0, s.cj)([I.ZP], () => I.ZP.getState()),
+    } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
     w = (0, s.e7)([h.Z], () => h.Z.getSuggestionCount()),
     L = i.useMemo(() => Z.getRelationshipCounts(), [Z]);
   i.useEffect(() => {

@@ -1,51 +1,46 @@
 /** Chunk was on 22979 **/
 /** chunk id: 820400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk54381 = require("./54381.js"),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk592183 = require("./592183.js"),
   Chunk86419 = require("./86419.js"),
-  Chunk172416 = require("./172416.js"),
   Chunk87489 = require("./87489.js");
 
-function d() {
-  let e = (0, o.U)({
-      location: "DevToolsWidgetsPanel",
-      autoTrackExposure: false
-    }),
-    t = e => {
-      let t = (0, s.np)(e);
-      (0, s.ES)({
-        widgetType: e,
-        game: t
-      })
-    };
-  return e ? (0, a.jsxs)("div", {
-    className: c.container,
+function c() {
+  let e = e => {
+    let t = (0, s.np)(e);
+    (0, s.ES)({
+      widgetType: e,
+      game: t
+    })
+  };
+  return (0, a.jsxs)("div", {
+    className: o.container,
     children: [(0, a.jsx)(i.C3N, {
       label: "User Profile Widgets",
       description: "Generate and test different widget configurations for user profiles.",
       children: (0, a.jsxs)("div", {
-        className: c.buttonGroup,
+        className: o.buttonGroup,
         children: [(0, a.jsx)(i.Button, {
           variant: "primary",
           text: "Add Favorite Game",
-          onClick: () => t(r.l.FAVORITE_GAMES)
+          onClick: () => e(r.l.FAVORITE_GAMES)
         }), (0, a.jsx)(i.Button, {
           variant: "primary",
           text: "Add Current Game",
-          onClick: () => t(r.l.CURRENT_GAMES)
+          onClick: () => e(r.l.CURRENT_GAMES)
         }), (0, a.jsx)(i.Button, {
           variant: "primary",
           text: "Add Want to Play Game",
-          onClick: () => t(r.l.WANT_TO_PLAY_GAMES)
+          onClick: () => e(r.l.WANT_TO_PLAY_GAMES)
         }), (0, a.jsx)(i.Button, {
           variant: "primary",
           text: "Add Played Game",
-          onClick: () => t(r.l.PLAYED_GAMES)
+          onClick: () => e(r.l.PLAYED_GAMES)
         }), (0, a.jsx)(i.Button, {
           variant: "active",
           text: "Show Empty State",
@@ -72,5 +67,5 @@ function d() {
         onClick: () => (0, s.tk)()
       })]
     })]
-  }) : null
+  })
 }

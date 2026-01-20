@@ -1,7 +1,7 @@
 /** Chunk was on 89289 **/
 /** chunk id: 28130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => H
+  default: () => B
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk813197 = require("./813197.jsx"),
   Chunk222062 = require("./222062.js"),
   Chunk530329 = require("./530329.jsx"),
-  Chunk373230 = require("./373230.js"),
   Chunk72703 = require("./72703.js"),
   Chunk782818 = require("./782818.jsx"),
   Chunk442552 = require("./442552.js"),
@@ -35,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk570162 = require("./570162.js");
 
-function Z(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +52,7 @@ function Z(e) {
   }
   return e
 }
-let I = [{
+let Z = [{
   gif: require("./495682.js"),
   png: require("./458060.js")
 }, {
@@ -67,13 +66,13 @@ let I = [{
   png: require("./690695.js")
 }];
 
-function D(e) {
+function I(e) {
   let {
     shouldAnimate: t = true
   } = e;
   return (0, r.jsx)("div", {
     className: F.gifGrid,
-    children: I.map(e => (0, r.jsx)("div", {
+    children: Z.map(e => (0, r.jsx)("div", {
       className: F.gif,
       style: {
         backgroundImage: "url(".concat(t ? e.gif : e.png, ")")
@@ -82,24 +81,24 @@ function D(e) {
   })
 }
 
-function k(e) {
+function D(e) {
   let {
     guildFeature: t,
     guild: n
   } = e;
   if (null == t || null == n) return;
-  let r = (0, O._p)(t),
+  let r = (0, E._p)(t),
     a = n.features.has(t);
   if (null == r) return;
-  let l = (0, O.nW)(r);
-  return a ? _.intl.formatToPlainString(_.t.u3L3TX, {
+  let l = (0, E.nW)(r);
+  return a ? w.intl.formatToPlainString(w.t.u3L3TX, {
     levelName: l
-  }) : _.intl.formatToPlainString(_.t["r/v25U"], {
+  }) : w.intl.formatToPlainString(w.t["r/v25U"], {
     levelName: l
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     guildFeature: t,
     guild: n
@@ -114,7 +113,7 @@ function L(e) {
   })
 }
 
-function M(e) {
+function L(e) {
   let {
     icon: t,
     label: n,
@@ -136,7 +135,7 @@ function M(e) {
         }),
         children: [s && (0, r.jsx)(o.u, {
           asContainer: true,
-          text: _.intl.string(_.t["5AFxuK"]),
+          text: w.intl.string(w.t["5AFxuK"]),
           children: (0, r.jsx)(u.SrA, {
             size: "xs",
             color: "currentColor",
@@ -144,7 +143,7 @@ function M(e) {
           })
         }), n]
       })]
-    }), c && (0, r.jsx)(L, {
+    }), c && (0, r.jsx)(k, {
       guild: l,
       guildFeature: a
     })]
@@ -160,9 +159,9 @@ function U(e) {
     filters: s,
     handleOpenImageEditingModal: o,
     handleFileSizeError: c
-  } = e, d = (0, S.GY)(n), f = (0, S.C6)(n, {
+  } = e, d = (0, N.GY)(n), f = (0, N.C6)(n, {
     isGIF: false
-  }), p = k({
+  }), p = D({
     guildFeature: f,
     guild: a
   });
@@ -171,7 +170,7 @@ function U(e) {
       within: true,
       children: (0, r.jsxs)("div", {
         className: i()(F.option, F.imageUploadOption),
-        children: [(0, r.jsx)(M, {
+        children: [(0, r.jsx)(L, {
           icon: (0, r.jsx)(u.FmF, {
             size: "md",
             color: "currentColor"
@@ -196,7 +195,7 @@ function U(e) {
   })
 }
 
-function B(e) {
+function M(e) {
   let {
     uploadType: t,
     guild: n,
@@ -205,9 +204,9 @@ function B(e) {
     shouldAnimate: l,
     onMouseEnter: i,
     onMouseLeave: s
-  } = (0, j.Z)(), o = (0, S.Kq)(t), c = (0, S.C6)(t, {
+  } = (0, y.Z)(), o = (0, N.Kq)(t), c = (0, N.C6)(t, {
     isGIF: true
-  }), d = k({
+  }), d = D({
     guildFeature: c,
     guild: n
   });
@@ -215,17 +214,17 @@ function B(e) {
     children: [(0, r.jsxs)(u.P3F, {
       className: F.option,
       onClick: a,
-      "aria-label": _.intl.string(_.t["xsC+/y"]),
+      "aria-label": w.intl.string(w.t["xsC+/y"]),
       onMouseEnter: i,
       onMouseLeave: s,
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(I, {
         shouldAnimate: l
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(L, {
         icon: (0, r.jsx)(u.OUq, {
           size: "md",
           color: "currentColor"
         }),
-        label: _.intl.string(_.t["xsC+/y"]),
+        label: w.intl.string(w.t["xsC+/y"]),
         guildFeature: c,
         guild: n,
         shouldShowPremiumIcon: o
@@ -236,7 +235,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function B(e) {
   let {
     transitionState: t,
     onClose: l,
@@ -244,21 +243,19 @@ function H(e) {
     uploadType: o,
     maxFileSizeBytes: p,
     showUpsellHeader: g,
-    filters: j,
-    analyticsLocation: O,
-    analyticsLocations: S = [],
-    imageSpecifications: I,
-    modalTitle: D = _.intl.string(_.t.DToW4e),
-    uploadOptionTitle: k = _.intl.string(_.t["MsUY/S"]),
-    allowRecentAvatarsSelection: L = true
-  } = e, M = (0, s.e7)([x.default], () => x.default.getCurrentUser()), H = (0, s.e7)([v.Z], () => v.Z.getGuildId()), V = (0, s.e7)([C.Z], () => C.Z.getGuild(H)), G = (0, u.vRw)(), z = o === w.pC.AVATAR || o === w.pC.BANNER, q = !N.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, W = (0, m.M)(!z), X = (0, b.T)({
-    location: "NewSelectImageModal"
-  }) && L, {
-    analyticsLocations: Y,
-    newestAnalyticsLocation: J
-  } = (0, f.ZP)(S, d.Z.SELECT_IMAGE_MODAL), K = a.useCallback(e => {
+    filters: y,
+    analyticsLocation: E,
+    analyticsLocations: N = [],
+    imageSpecifications: Z,
+    modalTitle: I = w.intl.string(w.t.DToW4e),
+    uploadOptionTitle: D = w.intl.string(w.t["MsUY/S"]),
+    allowRecentAvatarsSelection: k = true
+  } = e, L = (0, s.e7)([v.default], () => v.default.getCurrentUser()), B = (0, s.e7)([C.Z], () => C.Z.getGuildId()), H = (0, s.e7)([j.Z], () => j.Z.getGuild(B)), V = (0, u.vRw)(), G = o === R.pC.AVATAR || o === R.pC.BANNER, z = !O.ZP.canUseAnimatedAvatar(L) && o === R.pC.AVATAR, q = (0, m.M)(!G), {
+    analyticsLocations: W,
+    newestAnalyticsLocation: X
+  } = (0, f.ZP)(N, d.Z.SELECT_IMAGE_MODAL), Y = a.useCallback(e => {
     let {
-      assetOrigin: t = A.q.NEW_ASSET,
+      assetOrigin: t = b.q.NEW_ASSET,
       imageUri: n,
       file: r,
       originalAsset: a,
@@ -271,8 +268,8 @@ function H(e) {
       originalAsset: a,
       isFromTenor: s
     })
-  }, [l, i]), Q = a.useCallback((e, t) => {
-    if (t.type === P.m.MP4) return K({
+  }, [l, i]), J = a.useCallback((e, t) => {
+    if (t.type === P.m.MP4) return Y({
       imageUri: e,
       file: t
     });
@@ -280,62 +277,62 @@ function H(e) {
       let {
         default: a
       } = await Promise.all([n.e("30409"), n.e("59732"), n.e("2624")]).then(n.bind(n, 712451));
-      return n => (0, r.jsx)(a, Z({
+      return n => (0, r.jsx)(a, _({
         imageUri: e,
         file: t,
-        onCrop: K,
+        onCrop: Y,
         uploadType: o,
         showUpsellHeader: g,
-        analyticsPage: null == O ? true : O.page
+        analyticsPage: null == E ? true : E.page
       }, n))
     }, {
-      contextKey: G
+      contextKey: V
     })
-  }, [null == O ? true : O.page, G, K, g, o]), $ = a.useCallback(() => {
-    (0, T.Z)(p)
-  }, [p]), ee = a.useCallback(() => {
+  }, [null == E ? true : E.page, V, Y, g, o]), K = a.useCallback(() => {
+    (0, S.Z)(p)
+  }, [p]), Q = a.useCallback(() => {
     (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("72891").then(n.bind(n, 195297));
-      return t => (0, r.jsx)(e, Z({
+      return t => (0, r.jsx)(e, _({
         uploadType: o,
         onComplete: e => {
           let {
             imageUri: t,
             file: n
           } = e;
-          return K({
+          return Y({
             imageUri: t,
             file: n,
             isFromTenor: true
           })
         },
         showUpsellHeader: g,
-        analyticsPage: null == O ? true : O.page
+        analyticsPage: null == E ? true : E.page
       }, t))
     }, {
-      contextKey: G
+      contextKey: V
     })
-  }, [null == O ? true : O.page, G, K, g, o]);
+  }, [null == E ? true : E.page, V, Y, g, o]);
   a.useEffect(() => {
-    q && E.default.track(R.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: R.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location_stack: Y
-    }), E.default.track(R.rMx.OPEN_MODAL, {
-      type: R.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location: O,
-      location_stack: Y,
+    z && x.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: T.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
+      location_stack: W
+    }), x.default.track(T.rMx.OPEN_MODAL, {
+      type: T.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
+      location: E,
+      location_stack: W,
       upload_type: o
     })
-  }, [q, O, Y, o]);
-  let et = g && W,
-    en = o === w.pC.AVATAR && X;
+  }, [z, E, W, o]);
+  let $ = g && q,
+    ee = k && o === R.pC.AVATAR;
   return (0, r.jsx)(c.u_l, {
     transitionState: t,
     onClose: l,
     size: "md",
-    title: D,
+    title: I,
     actions: [],
     children: (0, r.jsxs)("div", {
       className: F.modalContent,
@@ -343,35 +340,35 @@ function H(e) {
         className: F.imageSelectionSection,
         children: [(0, r.jsxs)("ul", {
           className: F.optionsList,
-          "aria-label": _.intl.string(_.t.iBnqtQ),
+          "aria-label": w.intl.string(w.t.iBnqtQ),
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(U, {
-              label: k,
+              label: D,
               uploadType: o,
-              guild: V,
-              handleOpenImageEditingModal: Q,
+              guild: H,
+              handleOpenImageEditingModal: J,
               maxFileSizeBytes: p,
-              filters: j,
-              handleFileSizeError: $
+              filters: y,
+              handleFileSizeError: K
             })
           }), (0, r.jsx)("li", {
-            children: (0, r.jsx)(B, {
+            children: (0, r.jsx)(M, {
               uploadType: o,
-              guild: V,
-              handleOpenGIFPickerModal: ee
+              guild: H,
+              handleOpenGIFPickerModal: Q
             })
           })]
-        }), null != I ? (0, r.jsx)(u.Text, {
+        }), null != Z ? (0, r.jsx)(u.Text, {
           className: F.imageSpecifications,
           variant: "text-sm/normal",
           color: "text-muted",
-          children: I
+          children: Z
         }) : null]
-      }), en && (0, r.jsx)(y.Z, {
-        onComplete: K
-      }), et && (0, r.jsx)(h.Z, {
+      }), ee && (0, r.jsx)(A.Z, {
+        onComplete: Y
+      }), $ && (0, r.jsx)(h.Z, {
         uploadType: o,
-        analyticsSource: J,
+        analyticsSource: X,
         showUpsell: true,
         position: "inline",
         className: F.premiumUpsell

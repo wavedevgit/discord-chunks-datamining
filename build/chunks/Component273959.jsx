@@ -36,7 +36,7 @@ function j(e) {
       focusSectionProps: x
     } = e,
     P = (0, o.TH)(),
-    A = (0, s.e7)([I.Z], () => I.Z.getGuildId()),
+    A = (0, s.e7)([v.Z], () => v.Z.getGuildId()),
     Z = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
     w = (0, s.e7)([E.Z], () => E.Z.getChannel(Z), [Z]),
     L = null != A ? A : null == w ? true : w.guild_id,
@@ -59,7 +59,7 @@ function j(e) {
         isFrameInFocusedMode: g.Z.getFrameLayoutMode() === C.U.FOCUSED
       }
     }),
-    B = null != G ? v.ZP.getApplicationIconURL({
+    B = null != G ? I.ZP.getApplicationIconURL({
       id: G.id,
       icon: G.icon,
       bot: G.bot

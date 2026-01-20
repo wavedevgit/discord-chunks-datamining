@@ -46,8 +46,8 @@ function j(e) {
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(v.z, {
+    let e = null == n ? I.J.NOT_GUILD_MEMBER : I.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(I.z, {
       errorType: e
     })
   }
@@ -70,7 +70,7 @@ function j(e) {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(I.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(v.Z, {
             guild: n
           })
         })

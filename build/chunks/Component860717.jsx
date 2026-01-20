@@ -260,7 +260,7 @@ function M(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return U(t);
+  if (Array.isArray(t)) return W(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -280,12 +280,12 @@ function M(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(W, L(R({}, i), {
-        body: U(n)
+      return (0, r.jsx)(U, L(R({}, i), {
+        body: W(n)
       }));
     case "GRID":
       return (0, r.jsx)(H, {
-        children: U(t.children)
+        children: W(t.children)
       });
     case "FIELD":
       return (0, r.jsx)(z, {
@@ -307,11 +307,11 @@ function F(e, t) {
   }, t)
 }
 
-function U(e) {
+function W(e) {
   return e.map((e, t) => F(e, t))
 }
 
-function W(e) {
+function U(e) {
   let {
     title: t,
     body: n,
@@ -532,15 +532,15 @@ let $ = Object.assign(function(e) {
     canStartAuthorization: B,
     startAuthorization: F
   } = (0, p.FG)(O), {
-    analyticsLocations: U
-  } = (0, g.ZP)(f.Z.USER_PROFILE_APPLICATION_WIDGET), W = i.useCallback(() => {
+    analyticsLocations: W
+  } = (0, g.ZP)(f.Z.USER_PROFILE_APPLICATION_WIDGET), U = i.useCallback(() => {
     B && (t({
       action: "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
       applicationId: l.applicationId
     }), F({
-      analyticsLocations: U
+      analyticsLocations: W
     }))
-  }, [B, F, t, l.applicationId, U]), H = null == o && P && !E && B, z = (0, r.jsxs)(r.Fragment, {
+  }, [B, F, t, l.applicationId, W]), H = null == o && P && !E && B, z = (0, r.jsxs)(r.Fragment, {
     children: [null != x ? (0, r.jsx)("img", {
       className: k.appIcon,
       src: x,
@@ -680,7 +680,7 @@ let $ = Object.assign(function(e) {
         content: D.intl.string(D.t["OW/2al"]),
         buttons: (0, r.jsx)(u.Button, {
           text: D.intl.string(D.t.S0W8Z5),
-          onClick: W
+          onClick: U
         })
       }) : o]
     })]

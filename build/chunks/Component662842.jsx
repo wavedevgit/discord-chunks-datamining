@@ -78,7 +78,7 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
       isStudyRoomNotice: m
-    } = e, E = null != n && null != i && !f, _ = null != t ? (0, I.DK)(t) : null;
+    } = e, E = null != n && null != i && !f, _ = null != t ? (0, v.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -307,7 +307,7 @@ function D(e) {
         size: "sm",
         text: J,
         onClick: () => {
-          if (Q) null != l && null != l.getGuildId() && ((0, y.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
+          if (Q) null != l && null != l.getGuildId() && ((0, y.Cq)(l), (0, I.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
             (0, f.bO)({

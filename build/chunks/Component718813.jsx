@@ -204,11 +204,11 @@ class D extends(r = Chunk473749.PureComponent) {
       "aria-label": f ? function(e) {
         switch (e) {
           case O.S9g.USER_SETTINGS:
-            return I.intl.string(I.t.cduTBL);
+            return v.intl.string(v.t.cduTBL);
           case O.S9g.CHANNEL_SETTINGS:
-            return I.intl.string(I.t.XPDhcc);
+            return v.intl.string(v.t.XPDhcc);
           case O.S9g.COLLECTIBLES_SHOP:
-            return I.intl.string(I.t.pWG4ze);
+            return v.intl.string(v.t.pWG4ze);
           case O.S9g.COMPONENT_PLAYGROUND:
             return "Component Playground";
           default:
@@ -216,9 +216,9 @@ class D extends(r = Chunk473749.PureComponent) {
         }
       }(n) : true,
       role: f ? "dialog" : true,
-      className: o()(v.layer, {
-        [v.baseLayer]: a,
-        [v.animating]: e,
+      className: o()(I.layer, {
+        [I.baseLayer]: a,
+        [I.animating]: e,
         "stop-animations": r === w
       }),
       style: p
@@ -296,7 +296,7 @@ class M extends Chunk473749.PureComponent {
     return (0, i.jsx)(d.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: o()(v.bg, e)
+        className: o()(I.bg, e)
       })
     })
   }
@@ -304,7 +304,7 @@ class M extends Chunk473749.PureComponent {
     return (0, i.jsxs)(i.Fragment, {
       children: [this.renderArtisanalHack(), (0, i.jsx)(u.W, {
         component: "div",
-        className: o()(v.layers, this.props.className),
+        className: o()(I.layers, this.props.className),
         children: this.renderLayers()
       })]
     })

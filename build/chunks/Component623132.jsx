@@ -288,7 +288,7 @@ function k(e) {
   } = (0, I.Z)(P), B = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, G = f.default.getCurrentUser(), M = (null == G ? true : G.id) === t.id, F = 1 === (0, m.Gv)(o), U = !s && M, W = U && (0, m.vI)(o), H = U && !F, {
+  }, G = f.default.getCurrentUser(), M = (null == G ? true : G.id) === t.id, F = 1 === (0, m.Gv)(o), W = !s && M, U = W && (0, m.vI)(o), H = W && !F, {
     registerDragHandleRef: z
   } = (0, y.C)();
   if (L) return (0, r.jsx)(j.i, {});
@@ -318,7 +318,7 @@ function k(e) {
           applicationId: P,
           userId: t.id,
           gameName: R
-        }, B)), W ? (0, r.jsx)(D, {
+        }, B)), U ? (0, r.jsx)(D, {
           text: N,
           user: t,
           guildId: n,

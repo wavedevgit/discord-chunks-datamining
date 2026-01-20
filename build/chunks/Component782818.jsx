@@ -111,7 +111,7 @@ function x(e) {
     onComplete: l,
     setFetchError: o,
     className: p
-  } = e, m = (0, s.e7)([u.default], () => u.default.getCurrentUser()), x = a.useRef([]), E = a.useRef(null), O = a.useRef(t.length), N = a.useRef(null), [S, T] = a.useState(false), [R, w] = a.useState(false), P = t.length, _ = Math.max(A.iZ - P, 0), F = (0, c.vRw)(), Z = a.useCallback(async e => {
+  } = e, m = (0, s.e7)([u.default], () => u.default.getCurrentUser()), x = a.useRef([]), E = a.useRef(null), O = a.useRef(t.length), N = a.useRef(null), [S, T] = a.useState(false), [R, P] = a.useState(false), w = t.length, F = Math.max(A.iZ - w, 0), _ = (0, c.vRw)(), Z = a.useCallback(async e => {
     if (null == m || S) return;
     T(true), o(null);
     let {
@@ -148,16 +148,16 @@ function x(e) {
           showUpsellHeader: true
         }, n))
       }, {
-        contextKey: F
+        contextKey: _
       })
     } catch (e) {
       o(y.intl.string(y.t.fZRH9P))
     } finally {
       T(false)
     }
-  }, [F, S, l, o, m]), I = a.useCallback((e, a, l, i, s) => {
+  }, [_, S, l, o, m]), I = a.useCallback((e, a, l, i, s) => {
     let o = a + 1 < t.length ? a + 1 : a - 1;
-    N.current = o >= 0 ? x.current[o] : E.current, e.shiftKey ? (0, f.B)(l) : (w(true), (0, c.ZDy)(async () => {
+    N.current = o >= 0 ? x.current[o] : E.current, e.shiftKey ? (0, f.B)(l) : (P(true), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70871").then(n.bind(n, 225525));
@@ -186,7 +186,7 @@ function x(e) {
           onConfirmDelete: () => (0, f.B)(l),
           onClose: async () => {
             await n(), requestAnimationFrame(() => {
-              w(false)
+              P(false)
             })
           }
         }, a))
@@ -202,7 +202,7 @@ function x(e) {
     className: i()(j.recentAvatarContainer, p),
     children: (0, r.jsxs)("div", {
       className: j.recentAvatarSlots,
-      children: [P > 0 && (0, r.jsx)("ul", {
+      children: [w > 0 && (0, r.jsx)("ul", {
         "aria-label": y.intl.string(y.t.lsU63N),
         className: j.recentAvatarList,
         children: t.map((e, t) => (0, r.jsx)("li", {
@@ -216,17 +216,17 @@ function x(e) {
             }
           })
         }, e.id))
-      }), _ > 0 && (0, r.jsxs)("div", {
+      }), F > 0 && (0, r.jsxs)("div", {
         className: j.emptyAvatarSlots,
         tabIndex: false,
         ref: E,
         children: [(0, r.jsxs)(c.nn4, {
-          children: [0 === P && (0, r.jsxs)(r.Fragment, {
+          children: [0 === w && (0, r.jsxs)(r.Fragment, {
             children: [y.intl.string(y.t.x0DsRS), " "]
           }), y.intl.format(y.t["8W2HO3"], {
-            numberOfEmptyAvatarSlots: _
+            numberOfEmptyAvatarSlots: F
           })]
-        }), [...Array(_)].map((e, t) => (0, r.jsx)(g.Z, {
+        }), [...Array(F)].map((e, t) => (0, r.jsx)(g.Z, {
           className: j.avatarPlaceholder
         }, t))]
       })]

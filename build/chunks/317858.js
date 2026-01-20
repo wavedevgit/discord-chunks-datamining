@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 317858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk166516 = require("./166516.js"),
@@ -21,20 +21,20 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let O = new Set(["Blink", "Gecko", "WebKit"]),
-  I = Chunk981631.dG4;
-if (Chunk358085.isPlatformEmbedded) I = e => m.ZP.setBadge(e);
+  v = Chunk981631.dG4;
+if (Chunk358085.isPlatformEmbedded) v = e => m.ZP.setBadge(e);
 else if (O.has(o().layout)) {
   let e = new(l())({
     animation: "none"
   });
-  I = t => {
+  v = t => {
     try {
       (0, b.PR)(t), e.badge(false === t ? "•" : t)
     } catch (e) {}
   }
 }
 
-function v() {
+function I() {
   let e = (0, s.e7)([g.Z], () => g.Z.hasIncomingCalls()),
     t = (0, s.e7)([d.default, f.Z, p.Z, c.Z], () => {
       let e = d.default.getTotalMentionCount(),
@@ -55,6 +55,6 @@ function v() {
       null == t || t(), n()
     }
   }, [e]), r.useEffect(() => {
-    I(t)
-  }, [t]), r.useEffect(() => () => I(0), [])
+    v(t)
+  }, [t]), r.useEffect(() => () => v(0), [])
 }

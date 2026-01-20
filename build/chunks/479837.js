@@ -26,19 +26,19 @@ function b() {
     E = false === (null == (t = null == b ? true : b.disabled) || t),
     _ = p.Z.supportsInApp(m.AN.VIDEO) && p.Z.supportsInApp(m.AN.DESKTOP_CAPTURE),
     O = d.Z.getChannel(f.Z.getChannelId()),
-    I = null == (e = g.default.getCurrentUser()) ? true : e.id;
-  if (null == O || null == I) return;
+    v = null == (e = g.default.getCurrentUser()) ? true : e.id;
+  if (null == O || null == v) return;
   let {
-    reachedLimit: v
+    reachedLimit: I
   } = (0, s.t)(O);
-  if (!v) {
+  if (!I) {
     if (O.isGuildStageVoice()) {
       let e = l.Z.getMutableParticipants(O.id, a.pV.SPEAKER),
         t = null == e ? true : e.find(e => {
           let {
             user: t
           } = e;
-          return t.id === I
+          return t.id === v
         });
       if (!(0, o.tu)(O.guild_id) || !_ || null == t || t.voiceState.suppress) return
     }

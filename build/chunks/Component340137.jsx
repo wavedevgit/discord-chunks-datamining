@@ -48,7 +48,7 @@ function N(e) {
     popoutProps: s,
     ref: h,
     focusSectionProps: b
-  } = e, [O, I] = i.useState(false), N = (0, E.D)(), j = o || N, x = o || j, {
+  } = e, [O, v] = i.useState(false), N = (0, E.D)(), j = o || N, x = o || j, {
     backForwardButtons: P,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -73,7 +73,7 @@ function N(e) {
     }), (0, r.jsx)(u.u, {
       asContainer: true,
       shouldShow: !x,
-      text: v.intl.string(v.t.HcoRu0),
+      text: I.intl.string(I.t.HcoRu0),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -98,10 +98,10 @@ function N(e) {
         })
       }, b, s), n = n = {
         onMouseEnter: () => {
-          I(true)
+          v(true)
         },
         onMouseLeave: () => {
-          I(false)
+          v(false)
         },
         onClick: () => {
           var e;
@@ -141,7 +141,7 @@ function j() {
     notificationCenterVariant: n
   } = (0, b.pN)({
     location: "NotificationsInboxButton"
-  }), l = (0, s.e7)([h.Z], () => h.Z.getChannelId()), a = i.useMemo(() => I.Z5c.CHANNEL(I.STv, null != l ? l : true), [l]), c = (0, _.mv)();
+  }), l = (0, s.e7)([h.Z], () => h.Z.getChannelId()), a = i.useMemo(() => v.Z5c.CHANNEL(v.STv, null != l ? l : true), [l]), c = (0, _.mv)();
   return n === b.jP.SIDEBAR ? (0, r.jsx)(N, {
     onClick: () => {
       c(), (0, o.uL)(a)

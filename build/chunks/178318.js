@@ -35,8 +35,8 @@ try {
     r = Chunk998502.ZP.requireModule("erlpack")
   } catch (e) {}
 }
-let I = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
-  v = window.GLOBAL_ENV.MARKETING_ENDPOINT,
+let v = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
+  I = window.GLOBAL_ENV.MARKETING_ENDPOINT,
   y = new Chunk710845.Z("RPCServer:WSS"),
   C = [];
 
@@ -136,7 +136,7 @@ class A extends Chunk836560.EventEmitter {
             protocol: i,
             host: l
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
-          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
+          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", I), t.writeHead(301), t.end()
         },
         s = new P(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
@@ -194,14 +194,14 @@ class A extends Chunk836560.EventEmitter {
     var e;
     super();
     let t = 0;
-    (i = I.http.createServer()).on("error", e => {
+    (i = v.http.createServer()).on("error", e => {
       y.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
     }), i.on("request", this.handleRequest.bind(this)), T(t);
     let n = {
       instanceId: null != (e = i.instanceId) ? e : 0,
       server: i
     };
-    new I.ws.Server(n).on("connection", e => this.handleConnection(e))
+    new v.ws.Server(n).on("connection", e => this.handleConnection(e))
   }
 }
 let Z = new A

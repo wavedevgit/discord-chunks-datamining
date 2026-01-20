@@ -67,11 +67,11 @@ function x(e) {
   let V = e => {
     e.stopPropagation();
     let t = E.Z.getUserAffinity(M.id);
-    I.default.track(S.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+    v.default.track(S.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
       gift_intent_type: k,
       affinity: null == t ? true : t.dmProbability,
       location_stack: U
-    }), B ? (0, v.Z)({
+    }), B ? (0, I.Z)({
       giftRecipient: M,
       analyticsLocations: U,
       analyticsLocation: S.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
@@ -142,7 +142,7 @@ function x(e) {
           icon: G,
           "aria-label": N.intl.string(N.t.I61IsE),
           onClick: () => {
-            I.default.track(S.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            v.default.track(S.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: k,
               cta_type: "send_message",
               location_stack: U

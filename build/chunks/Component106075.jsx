@@ -109,17 +109,17 @@ function C() {
         variant: "heading-lg/semibold",
         color: "text-strong",
         className: y.searchResultsHeader,
-        children: v.intl.format(v.t.zHdzqW, {
+        children: I.intl.format(I.t.zHdzqW, {
           query: G
         })
       }), x && (0, r.jsx)(u.Z, {
         query: P,
-        placeholder: v.intl.string(v.t["5h0QOP"]),
+        placeholder: I.intl.string(I.t["5h0QOP"]),
         onTextChange: A,
         onClear: Z,
         onSubmit: w,
         onCollapsedClick: M,
-        state: L ? I.GlobalDiscoverySearchBarState.DEFAULT : R,
+        state: L ? v.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: k
       })]
     }), L ? (0, r.jsx)(_.Z, {

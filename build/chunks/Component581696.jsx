@@ -23,8 +23,8 @@ let g = function(e) {
     data: E,
     loading: _,
     isRefreshing: O,
-    handleOnRefresh: I,
-    viewabilityConfigCallbackPairs: v
+    handleOnRefresh: v,
+    viewabilityConfigCallbackPairs: I
   } = (0, u.a)({
     showDot: g,
     notificationItem: n
@@ -34,7 +34,7 @@ let g = function(e) {
   }, [y]);
   let C = (0, l.e7)([a.Z], () => a.Z.hasNewContent(), []),
     S = (0, l.e7)([a.Z], () => a.Z.isHydrating(), []),
-    T = i.useMemo(() => v[0].onViewableItemsChanged, [v]),
+    T = i.useMemo(() => I[0].onViewableItemsChanged, [I]),
     {
       registerItemRef: N
     } = (0, p.m)(E, T, t),
@@ -64,8 +64,8 @@ let g = function(e) {
       })
     }, [t]),
     A = i.useCallback(() => {
-      I(), P()
-    }, [I, P]),
+      v(), P()
+    }, [v, P]),
     Z = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
       style: {
         padding: "32px",

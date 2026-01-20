@@ -161,7 +161,7 @@ function Z(e) {
         });
         eu(await Promise.all(t))
       } catch (e) {
-        v.Z.captureException(e), eu(x)
+        I.Z.captureException(e), eu(x)
       }
     };
     true !== ed.current && e(), ed.current = true
@@ -174,10 +174,10 @@ function Z(e) {
   }, [K, Q, X, ee, en]), i.useEffect(() => () => {
     if ("video" === Z.type || "embed" === Z.type) {
       let [e, t] = ep();
-      I.default.track(y.rMx.CHANGE_LOG_VIDEO_PLAYED, {
+      v.default.track(y.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: G,
         seconds_played: Math.round(e / 1e3)
-      }), I.default.track(y.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
+      }), v.default.track(y.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
         change_log_id: G,
         seconds_unmuted: Math.round(t / 1e3)
       })
@@ -185,10 +185,10 @@ function Z(e) {
   }, [G, Z.type]), i.useEffect(() => {
     (0, _.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
-    return I.default.track(y.rMx.CHANGE_LOG_OPENED, {
+    return v.default.track(y.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
     }), () => {
-      I.default.track(y.rMx.CHANGE_LOG_CLOSED, {
+      v.default.track(y.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), (0, _.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
@@ -222,7 +222,7 @@ function Z(e) {
           src: Z.src,
           poster: Z.poster,
           onPlay: e => {
-            I.default.track(y.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            v.default.track(y.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
             }), q(Date.now()), et(true), er(e.currentTarget.muted)
           },
@@ -259,7 +259,7 @@ function Z(e) {
           renderImageComponent: O.Yi,
           renderLinkComponent: O.iT,
           onPlay: () => {
-            I.default.track(y.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            v.default.track(y.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
             })
           }

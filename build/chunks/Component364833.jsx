@@ -120,7 +120,7 @@ function w(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: b.id
     })
-  }, [b.id, O]), V = (0, v.hf)({
+  }, [b.id, O]), V = (0, I.hf)({
     quest: b,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
@@ -150,7 +150,7 @@ function w(e) {
       className: P.utils,
       children: [F ? (0, r.jsx)(Z, {
         quest: b
-      }) : (0, r.jsx)(C.Z, {}), (0, r.jsx)(I.i, {
+      }) : (0, r.jsx)(C.Z, {}), (0, r.jsx)(v.i, {
         quest: b,
         questContent: f.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (l = b.userStatus) ? true : l.enrolledAt) == null,

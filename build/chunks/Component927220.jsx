@@ -31,9 +31,9 @@ let T = (0, Chunk112724.Z)(function(e) {
     width: t
   } = e, n = (0, b.b5)("ICYMIPage", false);
   i.useEffect(() => {
-    n || (0, o.uL)(v.Z5c.ME)
+    n || (0, o.uL)(I.Z5c.ME)
   }, [n]), i.useLayoutEffect(() => {
-    n && u.Y(v.Z5c.ICYMI)
+    n && u.Y(I.Z5c.ICYMI)
   }, [n]), (0, p.ZP)(() => {
     n && (0, h.e)("icymi")
   });
@@ -63,7 +63,7 @@ let T = (0, Chunk112724.Z)(function(e) {
       location: "icymi page"
     }).enabled,
     A = i.useCallback(async e => {
-      e.metaKey && P ? await (0, _.ye)(v.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await x()
+      e.metaKey && P ? await (0, _.ye)(I.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await x()
     }, [x, P]),
     Z = N && P ? y.intl.string(y.t.YplSn2) : y.intl.string(y.t.wzzjk9);
   return n ? (0, r.jsxs)("div", {
@@ -94,7 +94,7 @@ let T = (0, Chunk112724.Z)(function(e) {
     }), (0, r.jsx)("div", {
       ref: T,
       className: a()(S.content, C.content),
-      children: (0, r.jsx)(I.Z, {
+      children: (0, r.jsx)(v.Z, {
         scrollContainerRef: T
       })
     })]

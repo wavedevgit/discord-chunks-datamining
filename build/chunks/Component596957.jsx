@@ -88,7 +88,7 @@ function M(e) {
   } = e, l = i.useMemo(() => n ? D : t !== j.pJs.PENDING ? R : true, [n, t]);
   return (0, r.jsx)("div", {
     className: A.emptyStateContainer,
-    children: (0, r.jsx)(I.Z, {
+    children: (0, r.jsx)(v.Z, {
       type: t,
       onClick: l
     }, t)
@@ -132,7 +132,7 @@ let k = function(e) {
     }(e, ["key"]);
     switch (R) {
       case j.pJs.PENDING:
-        return (0, r.jsx)(v.Z, w(Z({}, i), {
+        return (0, r.jsx)(I.Z, w(Z({}, i), {
           isFocused: k
         }), n);
       case j.pJs.SUGGESTIONS:
@@ -304,8 +304,8 @@ let k = function(e) {
         }) : null
       }), es && (0, r.jsx)("div", {
         className: A.emptyStateContainer,
-        children: (0, r.jsx)(I.Z, {
-          type: I.j.SECTION_NO_RESULTS
+        children: (0, r.jsx)(v.Z, {
+          type: v.j.SECTION_NO_RESULTS
         }, R)
       })]
     })

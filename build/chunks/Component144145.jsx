@@ -84,7 +84,7 @@ function x(e) {
   }(e), P = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(I.AnalyticsContext);
+    } = e, n = i.useContext(v.AnalyticsContext);
     return (0, l.Wu)([f.ZP, _.Z, g.Z, O.Z, E.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
@@ -93,7 +93,7 @@ function x(e) {
       return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
-        canPlay: (0, v.t)({
+        canPlay: (0, I.t)({
           LibraryApplicationStore: _.Z,
           LaunchableGameStore: g.Z,
           DispatchApplicationStore: O.Z,

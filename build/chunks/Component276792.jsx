@@ -24,15 +24,15 @@ function h(e) {
     promotionId: E,
     content: _,
     renderModalProps: O,
-    analyticsLocations: I,
-    analyticsLocation: v,
+    analyticsLocations: v,
+    analyticsLocation: I,
     isLightTheme: y
   } = e, C = "AnnouncementModalVariant1_".concat(b), {
     onClose: S
   } = O, T = null != (m = null == (t = _.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = _.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
     buttonAction: null == (h = _.button) ? true : h.buttonAction,
-    analyticsLocations: I,
-    analyticsLocation: v,
+    analyticsLocations: v,
+    analyticsLocation: I,
     onClose: S
   }), x = "" !== _.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
     children: ["\xa0", (0, r.jsx)(o.eee, {

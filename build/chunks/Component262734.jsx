@@ -122,7 +122,7 @@ function w(e) {
         })
       }), (0, r.jsxs)("div", {
         className: A.footer,
-        children: [(0, r.jsx)(I.Z, {
+        children: [(0, r.jsx)(v.Z, {
           appContext: j.IlC.APP,
           applicationId: n.id,
           shouldPrioritizeGroupPlusIcon: true,
@@ -150,7 +150,7 @@ function w(e) {
             iconComponent: u.PBZ,
             color: "disconnect"
           })]
-        }), q ? (0, r.jsx)(v.Z, {
+        }), q ? (0, r.jsx)(I.Z, {
           popoutOpen: false,
           onOpenPopout: () => {
             (0, m.yw)(j.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, g.Z)({

@@ -753,35 +753,6 @@ let {
         opacity: 1
       }
     },
-    BG_SURFACE_OVERLAY_TMP: {
-      category: "background",
-      [r.DARK]: {
-        raw: "NEUTRAL_64",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_130",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_21",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "NEUTRAL_73",
-        opacity: 1
-      },
-      gradient: {
-        light: {
-          color: "WHITE_500",
-          opacity: .5
-        },
-        dark: {
-          color: "BLACK_500",
-          opacity: .5
-        }
-      }
-    },
     BG_SURFACE_RAISED: {
       category: "background",
       [r.DARK]: {

@@ -23,7 +23,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function v() {
+function I() {
   var e;
   let t = r;
   if (null == t || !h.Z.isOpen(t)) returnfalse;
@@ -37,7 +37,7 @@ function y() {
   if (function() {
       let e = m.Z.getChannelId(),
         t = b.Z.getChannelId();
-      if (!g.Z.supports(I.AN.VIDEO) || u.Z.getWindowOpen(O.KJ3.CHANNEL_CALL_POPOUT)) returntrue;
+      if (!g.Z.supports(v.AN.VIDEO) || u.Z.getWindowOpen(O.KJ3.CHANNEL_CALL_POPOUT)) returntrue;
       let n = null != e && d.Z.getAllActiveStreams().some(t => !s.Z.isParticipantPoppedOut(e, (0, c.V9)(t)));
       if (!(null != e && Object.values(_.Z.getVideoVoiceStatesForChannel(e)).some(t => {
           let {
@@ -47,8 +47,8 @@ function y() {
         }) || n)) returntrue;
       let r = f.Z.hasLayers();
       return !(r && f.Z.getLayers().includes(O.S9g.RTC_DEBUG)) && (!!r || e === t)
-    }()) return v();
-  if (n || v(), null == t) returnfalse;
+    }()) return I();
+  if (n || I(), null == t) returnfalse;
   let a = p.Z.getChannel(t);
   return !(null == a || h.Z.isOpen(t)) && (i.Z.wait(() => l.bA(a.id, O.NYg.VIDEO, {
     channel: a

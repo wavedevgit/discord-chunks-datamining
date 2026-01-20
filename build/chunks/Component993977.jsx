@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function I(e) {
+function v(e) {
   let {
     applicationViewItems: t,
     restoreApplication: n
@@ -82,7 +82,7 @@ function I(e) {
     }), i]
   })
 }
-class v extends Chunk473749.PureComponent {
+class I extends Chunk473749.PureComponent {
   handleToggleShortcutDesktop(e) {
     u.Xc.updateSetting(e)
   }
@@ -115,7 +115,7 @@ class v extends Chunk473749.PureComponent {
           checked: n,
           onChange: this.handleToggleShortcutStartMenu
         }), (0, r.jsx)(o.izJ, {}), (0, r.jsx)(h.Z, {})]
-      }) : null, (0, r.jsx)(I, {
+      }) : null, (0, r.jsx)(v, {
         restoreApplication: this.handleRestoreHiddenLibraryApplication,
         applicationViewItems: e
       })]
@@ -145,5 +145,5 @@ function y() {
     installShortcutStartMenu: u.Pe.useSetting(),
     hiddenLibraryApplicationViewItems: (0, a.e7)([d.Z], () => d.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, r.jsx)(v, O({}, e))
+  return (0, r.jsx)(I, O({}, e))
 }

@@ -128,7 +128,7 @@ class x extends Chunk473749.PureComponent {
               className: N.statusLink,
               href: S.yXt.STATUS,
               target: "_blank",
-              children: [(0, r.jsx)(I.Z, {
+              children: [(0, r.jsx)(v.Z, {
                 className: N.icon
               }), T.intl.string(T.t.AgXXyy)]
             })]
@@ -207,7 +207,7 @@ class x extends Chunk473749.PureComponent {
     }()), j(this, "handleReady", () => {
       this.setState({
         ready: true
-      }), (0, v.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+      }), (0, I.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
     }), j(this, "setVideoRef", e => {
       this.videoRef = e
     }), j(this, "setProblemsTimeout", () => {

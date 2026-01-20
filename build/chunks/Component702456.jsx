@@ -42,9 +42,9 @@ function Z(e) {
   } = e, {
     status: o,
     isMobile: c
-  } = (0, s.cj)([v.Z], () => ({
-    status: v.Z.getStatus(i.id),
-    isMobile: v.Z.isMobileOnline(i.id)
+  } = (0, s.cj)([I.Z], () => ({
+    status: I.Z.getStatus(i.id),
+    isMobile: I.Z.isMobileOnline(i.id)
   })), d = (0, s.e7)([C.Z, O.Z], () => {
     let e = O.Z.getDMFromUserId(i.id);
     return null != e && C.Z.isTyping(e, i.id)
@@ -91,7 +91,7 @@ function Z(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, E = 0 === l, I = E ? u.YqE : a ? u.XcD : true, y = E ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
+  }, E = 0 === l, v = E ? u.YqE : a ? u.XcD : true, y = E ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
   return (0, r.jsx)(u.P3F, {
     className: A.frequentFriendAvatarButton,
     onClick: b,
@@ -107,7 +107,7 @@ function Z(e) {
       isTyping: d,
       isMobile: c && !d,
       size: u.EFr.SIZE_32,
-      CutoutIcon: I,
+      CutoutIcon: v,
       avatarTooltipAsset: E ? "\uD83D\uDD25" : a ? "❄️" : true,
       avatarTooltipText: y,
       statusTooltip: true,
@@ -142,14 +142,14 @@ function w() {
       frequentFriends: t,
       showCompetitiveSpot: n
     }
-  }(), n = (0, s.e7)([I.Z], () => I.Z.hasConsented(x.pjP.PERSONALIZATION)), l = (0, s.e7)([S.default], () => {
+  }(), n = (0, s.e7)([v.Z], () => v.Z.hasConsented(x.pjP.PERSONALIZATION)), l = (0, s.e7)([S.default], () => {
     var e, t;
     return null != (t = null == (e = S.default.getCurrentUser()) ? true : e.nsfwAllowed) && t
   }), [p, h] = i.useState({
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), m = i.useRef(null), _ = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), v = i.useCallback(() => {
+  }), m = i.useRef(null), _ = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), I = i.useCallback(() => {
     var e;
     let t = null == (e = m.current) ? true : e.getScrollerNode();
     null != t && h({
@@ -159,9 +159,9 @@ function w() {
     })
   }, []);
   i.useEffect(() => {
-    (null == t ? true : t.frequentFriends.length) != null && v()
-  }, [null == t ? true : t.frequentFriends.length, null == t ? true : t.showCompetitiveSpot, v]);
-  let C = (0, f.y)(v, []),
+    (null == t ? true : t.frequentFriends.length) != null && I()
+  }, [null == t ? true : t.frequentFriends.length, null == t ? true : t.showCompetitiveSpot, I]);
+  let C = (0, f.y)(I, []),
     w = i.useCallback(e => {
       let t = e.currentTarget;
       h({

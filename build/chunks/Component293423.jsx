@@ -31,15 +31,15 @@ let b = e => {
   });
   let {
     activeSubscription: _
-  } = (0, o.Z)(null == E ? true : E.id), O = (0, l.YB)(b.id), I = null == O ? true : O.description, {
-    editStateIds: v
+  } = (0, o.Z)(null == E ? true : E.id), O = (0, l.YB)(b.id), v = null == O ? true : O.description, {
+    editStateIds: I
   } = a.B7(null != (t = null == E ? true : E.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.Z, {
       title: h.intl.format(h.t["rm+ojA"], {
         serverName: b.name
       }),
-      description: null != I ? I : null,
+      description: null != v ? v : null,
       coverImageAsset: null != (n = null == O ? true : O.cover_image_asset) ? n : null,
       guild: b,
       children: [null != E ? (0, r.jsx)(c.Z, {
@@ -52,7 +52,7 @@ let b = e => {
     }), (0, r.jsx)(i.y5t, {
       children: (0, r.jsx)(d.Z, {
         guildId: b.id,
-        children: v.map(e => {
+        children: I.map(e => {
           var t;
           return (0, r.jsx)(p.Z, {
             guildId: b.id,

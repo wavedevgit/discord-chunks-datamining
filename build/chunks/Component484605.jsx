@@ -25,7 +25,7 @@ let h = e => {
     children: E
   } = e, {
     analyticsLocations: _
-  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, m), I = (0, r.jsx)(i.Z, {
+  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, m), v = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -99,6 +99,6 @@ let h = e => {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       children: E
-    }), I]
+    }), v]
   })
 }

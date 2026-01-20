@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 910436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,18 +24,18 @@ var Chunk287734 = require("./287734.js"),
   Chunk817915 = require("./817915.js"),
   Chunk981631 = require("./981631.js");
 
-function v(e) {
+function I(e) {
   let {
     party: t,
     onChannelContextMenu: n,
-    quest: v
+    quest: I
   } = e, y = (0, _.L)(), {
     voiceChannels: C,
     currentActivities: S,
     partiedMembers: T,
     applicationStreams: N,
     guildContext: j
-  } = t, x = (0, p.z1)(v), P = [], A = e => {
+  } = t, x = (0, p.z1)(I), P = [], A = e => {
     let {
       length: t
     } = P;
@@ -96,7 +96,7 @@ function v(e) {
       activityUser: R
     } = e;
     if (null == Z || null == Z.type) return null;
-    if (Z.type === I.IIU.PLAYING)
+    if (Z.type === v.IIU.PLAYING)
       if (S.length > 1 && !(0, a.Z)(Z) && null != w) A((0, r.jsx)(E.Z.GameSection, {
         icon: w.getIconURL(O.Z),
         name: w.name,
@@ -133,7 +133,7 @@ function v(e) {
         user: e || n ? R : null,
         getAssetImage: m.xF
       }, "streaming-".concat(null != (_ = Z.session_id) ? _ : t)))
-    } else Z.type === I.IIU.LISTENING && ((0, s.Z)(Z) ? A((0, r.jsx)(E.Z.SpotifySection, {
+    } else Z.type === v.IIU.LISTENING && ((0, s.Z)(Z) ? A((0, r.jsx)(E.Z.SpotifySection, {
       activity: Z,
       isSolo: 1 === T.length,
       partySize: {
@@ -148,9 +148,9 @@ function v(e) {
       getAssetImage: m.xF,
       user: R
     }, "rich-presence-".concat(null != (N = Z.session_id) ? N : t, "-").concat(R.id))));
-    x && null != v && null != w && (0, g._D)(Z, v) && (null == v.userStatus || !(0, f.zE)(v.userStatus, d.jn.ACTIVITY_PANEL)) && A((0, r.jsx)(h.Z, {
-      quest: v
-    }, "quest-".concat(v.id, "-").concat(null != (P = Z.session_id) ? P : t)))
+    x && null != I && null != w && (0, g._D)(Z, I) && (null == I.userStatus || !(0, f.zE)(I.userStatus, d.jn.ACTIVITY_PANEL)) && A((0, r.jsx)(h.Z, {
+      quest: I
+    }, "quest-".concat(I.id, "-").concat(null != (P = Z.session_id) ? P : t)))
   }), P.length > 0 ? (0, r.jsx)(E.Z.Body, {
     children: P
   }) : null

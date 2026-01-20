@@ -23,24 +23,24 @@ var Chunk442837 = require("./442837.js"),
   Chunk81471 = require("./81471.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk68599 = require("./68599.js");
-let v = e => {
+let I = e => {
     let {
       userId: t
     } = e, n = (0, E.O)(t);
     return null == n || 0 === n.length ? (0, r.jsx)(a.Text, {
-      className: I.mutualGuilds,
+      className: v.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t.jpY0X5)
     }) : (0, r.jsxs)("div", {
-      className: I.mutualGuildsContainer,
+      className: v.mutualGuildsContainer,
       children: [(0, r.jsx)(l.Z, {
         guilds: n,
         maxGuilds: 3,
         size: u.Vj.Sizes.SMOL,
         hideOverflowCount: true
       }), (0, r.jsx)(a.Text, {
-        className: I.mutualGuilds,
+        className: v.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
         children: O.intl.format(O.t.eE3oep, {
@@ -66,24 +66,24 @@ function C(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y, {
-      className: I.avatar,
+      className: v.avatar,
       src: (0, f.x)(n, 40, C),
       avatarDecoration: T,
       size: a.EFr.SIZE_40,
       "aria-label": null != (t = null == l ? true : l.username) ? t : O.intl.string(O.t["30mdIx"])
     }), (0, r.jsxs)("div", {
-      className: I.userPreview,
+      className: v.userPreview,
       children: [(0, r.jsxs)("div", {
-        className: I.userContainerWithPreview,
+        className: v.userContainerWithPreview,
         children: [(0, r.jsx)(o.Z, {
           nick: E,
           user: l,
           showAccountIdentifier: true,
-          className: I.tagContainer,
-          usernameClass: I.username,
-          discriminatorClass: null != h.ZP.getGlobalName(l) ? I.globalName : I.discriminator
+          className: v.tagContainer,
+          usernameClass: v.username,
+          discriminatorClass: null != h.ZP.getGlobalName(l) ? v.globalName : v.discriminator
         }), (0, r.jsx)(a.Text, {
-          className: I.timestampWithPreview,
+          className: v.timestampWithPreview,
           color: "text-muted",
           variant: "text-xs/normal",
           children: S
@@ -93,7 +93,7 @@ function C(e) {
           channel: n
         }),
         forceHover: u,
-        children: (0, r.jsx)(v, {
+        children: (0, r.jsx)(I, {
           userId: l.id
         })
       })]

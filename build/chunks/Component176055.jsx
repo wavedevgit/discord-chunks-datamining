@@ -72,7 +72,7 @@ class N extends Chunk473749.PureComponent {
       pageSize: s
     } = this.props;
     if (t && n) return null;
-    let d = (0, I.B3)(e),
+    let d = (0, v.B3)(e),
       p = C.intl.string(C.t.pxwdrA),
       f = this.handleJoinOrView,
       b = c.zx.Looks.FILLED,
@@ -87,7 +87,7 @@ class N extends Chunk473749.PureComponent {
         className: S.joinedCheckmark
       })]
     })) : i && t && (p = C.intl.string(C.t.XpeFYr)) : (p = C.intl.string(C.t.dKhVQN), f = this.handleLogin), (0, r.jsxs)("div", {
-      className: a()(o, s === v.b.SMALL ? S.inviteSmall : S.inviteLarge),
+      className: a()(o, s === I.b.SMALL ? S.inviteSmall : S.inviteLarge),
       children: [(0, r.jsx)(g.Z, {
         children: C.intl.string(C.t.s1KcLo)
       }), (0, r.jsxs)("div", {

@@ -17,10 +17,10 @@ var r, i, l, Chunk442837 = require("./442837.js"),
   Chunk19780 = require("./19780.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js");
-let v = "ActivityTrackingStore",
+let I = "ActivityTrackingStore",
   y = 30 * Chunk70956.Z.Millis.MINUTE,
   C = 5 * Chunk70956.Z.Millis.MINUTE,
-  S = null != (r = Chunk433517.K.get(v)) ? r : {},
+  S = null != (r = Chunk433517.K.get(I)) ? r : {},
   T = {},
   N = false;
 
@@ -28,7 +28,7 @@ function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   t && x(e, true);
   let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(v, S)
+  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(I, S)
 }
 
 function x(e) {
@@ -42,7 +42,7 @@ function x(e) {
     c = _.Z.getMediaSessionId();
   u.Z.updateActivity({
     applicationId: e.applicationId,
-    distributor: e.isDiscordApplication ? I.GQo.DISCORD : e.distributor,
+    distributor: e.isDiscordApplication ? v.GQo.DISCORD : e.distributor,
     shareActivity: i,
     token: e.token,
     duration: Math.floor(r / 1e3),
@@ -53,7 +53,7 @@ function x(e) {
     mediaSessionId: c
   }), e.updatedAt = n;
   let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new s.Xp).start(y, () => x(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
+  null == d && (d = T[e.applicationId] = new s.Xp).start(y, () => x(e)), t || (S[e.applicationId] = e, o.K.set(I, S))
 }
 
 function P() {
@@ -113,13 +113,13 @@ class Z extends(i = Chunk442837.ZP.Store) {
       token: n
     } = e, r = S[t];
     if (null == r) returnfalse;
-    r.token = n, o.K.set(v, S)
+    r.token = n, o.K.set(I, S)
   },
   ACTIVITY_UPDATE_FAIL: function(e) {
     let {
       applicationId: t
     } = e, n = S[t];
     if (null == n) returnfalse;
-    n.token = null, n.updatedAt = null, o.K.set(v, S)
+    n.token = null, n.updatedAt = null, o.K.set(I, S)
   }
 })

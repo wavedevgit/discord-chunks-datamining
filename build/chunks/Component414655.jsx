@@ -109,7 +109,7 @@ function R(e) {
     analyticsLocations: B
   } = (0, d.ZP)(), {
     trackUserProfileWishlistAction: G
-  } = (0, x.KZ)(), M = (null == R ? true : R.id) === n.id, F = false === n.nsfwAllowed, U = N.t9, [W, H] = i.useState(true);
+  } = (0, x.KZ)(), M = (null == R ? true : R.id) === n.id, F = false === n.nsfwAllowed, W = N.t9, [U, H] = i.useState(true);
   i.useEffect(() => {
     (null == L ? true : L.visibility) != null && H(L.visibility === l.f.PUBLIC)
   }, [null == L ? true : L.visibility]);
@@ -141,13 +141,13 @@ function R(e) {
     productLines: null != (t = null == z ? true : z.getProductLines()) ? t : null
   }), Q = i.useCallback(() => {
     if (null == _) return;
-    let e = W ? l.f.PRIVATE : l.f.PUBLIC;
-    H(!W), h.Z.updateWishlistVisibility(_, e), G({
+    let e = U ? l.f.PRIVATE : l.f.PUBLIC;
+    H(!U), h.Z.updateWishlistVisibility(_, e), G({
       wishlistId: _,
-      action: W ? C.NW.WISHLIST_TOGGLE_PRIVATE : C.NW.WISHLIST_TOGGLE_PUBLIC,
+      action: U ? C.NW.WISHLIST_TOGGLE_PRIVATE : C.NW.WISHLIST_TOGGLE_PUBLIC,
       productLines: null == z ? true : z.getProductLines()
     })
-  }, [_, W, G, z]), $ = i.useCallback(() => {
+  }, [_, U, G, z]), $ = i.useCallback(() => {
     (0, o.closeAllModals)(), (0, f.mK)({
       analyticsLocations: B,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
@@ -188,7 +188,7 @@ function R(e) {
           variant: "primary",
           size: "sm",
           icon: s.EOn,
-          text: U === N.t9 ? Z.intl.string(Z.t["kq/75v"]) : Z.intl.string(Z.t.apFNLU),
+          text: W === N.t9 ? Z.intl.string(Z.t["kq/75v"]) : Z.intl.string(Z.t.apFNLU),
           onMouseDown: ee,
           onClick: et
         })]
@@ -217,7 +217,7 @@ function R(e) {
           children: Z.intl.format(Z.t.r6Y1Lg, {
             count: z.items.length
           })
-        }), !W && (0, r.jsx)(c.u, {
+        }), !U && (0, r.jsx)(c.u, {
           text: Z.intl.string(Z.t.RX7D9h),
           asContainer: true,
           children: (0, r.jsx)(s.tEY, {
@@ -231,7 +231,7 @@ function R(e) {
               })
             })
           })
-        }), W && F && (0, r.jsx)(c.u, {
+        }), U && F && (0, r.jsx)(c.u, {
           text: Z.intl.string(Z.t.d78ChW),
           asContainer: true,
           children: (0, r.jsx)(s.tEY, {
@@ -248,11 +248,11 @@ function R(e) {
         })]
       }), M ? (0, r.jsx)(k, {
         isSocialLayerStorefrontEnabled: q,
-        isWishlistPublic: W,
+        isWishlistPublic: U,
         handleOpenShop: $,
         handleOpenGameShop: et,
         handleToggleWishlistVisibility: Q,
-        socialLayerStorefrontApplicationId: U
+        socialLayerStorefrontApplicationId: W
       }) : (0, r.jsx)(D, {
         isSocialLayerStorefrontEnabled: q,
         handleOpenShop: $,

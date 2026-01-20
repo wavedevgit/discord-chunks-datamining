@@ -39,7 +39,7 @@ let g = function(e) {
       section: t
     } = e;
     return g(t)
-  }, [g]), I = i.useCallback(e => null == b ? null : b(e.section), [b]), v = i.useCallback(e => null == b ? 0 : null != b(e) ? u.lC : 0, [b]), y = (0, o.e7)([c.Z], () => c.Z.keyboardModeEnabled), C = i.useRef(null), S = i.useCallback(() => new Promise(e => {
+  }, [g]), v = i.useCallback(e => null == b ? null : b(e.section), [b]), I = i.useCallback(e => null == b ? 0 : null != b(e) ? u.lC : 0, [b]), y = (0, o.e7)([c.Z], () => c.Z.keyboardModeEnabled), C = i.useRef(null), S = i.useCallback(() => new Promise(e => {
     let t = C.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -114,8 +114,8 @@ let g = function(e) {
             rowHeight: _,
             renderSection: O,
             sectionHeight: u.aS,
-            renderFooter: I,
-            footerHeight: v,
+            renderFooter: v,
+            footerHeight: I,
             sections: x,
             className: f.peopleList
           }, n)), h]

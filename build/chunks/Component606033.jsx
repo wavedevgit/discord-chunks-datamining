@@ -23,8 +23,8 @@ let E = function(e) {
   let {
     questId: _,
     setQuestId: O,
-    quest: I,
-    refreshQuest: v
+    quest: v,
+    refreshQuest: I
   } = e, [y, C] = i.useState(false), [S, T] = i.useState(false), N = i.useRef(null), j = (0, p.MP)(), x = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), P = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), A = i.useMemo(() => {
     let e = j.map(e => {
       var t, n, r;
@@ -92,8 +92,8 @@ let E = function(e) {
                   value: t.trim()
                 }] : n
               }
-            }, "".concat(_, "-").concat(null != (E = null == I || null == (n = I.config) || null == (t = n.messages) ? true : t.questName) ? E : "")), (0, r.jsx)(o.hU, {
-              onClick: v,
+            }, "".concat(_, "-").concat(null != (E = null == v || null == (n = v.config) || null == (t = n.messages) ? true : t.questName) ? E : "")), (0, r.jsx)(o.hU, {
+              onClick: I,
               "aria-label": m.intl.string(m.t.wzzjk9),
               icon: o.DuK,
               loading: P
@@ -101,7 +101,7 @@ let E = function(e) {
           })]
         })
       })
-    }), null != _ && null != I && (0, r.jsx)("div", {
+    }), null != _ && null != v && (0, r.jsx)("div", {
       className: b.controlsSection,
       children: (0, r.jsxs)(o.ButtonGroup, {
         className: b.controlButtons,
