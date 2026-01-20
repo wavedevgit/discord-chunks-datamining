@@ -541,16 +541,20 @@ function ea(e) {
     switchPlanSelectComponent: ea(),
     warningComponent: eo()
   });
-  let ec = !C && !D && X && p;
+  let ec = !C && !D && X && p,
+    eu = !(C && es);
   return (0, r.jsxs)("div", {
     className: Y.stepBody,
     children: [es && (0, r.jsx)(L.n, {
       fractionalPremiumInfo: el,
-      enablePremiumBrandRefresh: true
+      enablePremiumBrandRefresh: true,
+      variant: C ? L.I.TRIAL : true,
+      trialPeriod: C ? G : true,
+      trialEnd: C ? f : true
     }), null != O && !es && !M && (0, r.jsx)("div", {
       className: Y.bodyText,
       children: J(O, g)
-    }), er(k, C, D), ea(), ec && null != b && null != q && (0, r.jsx)(et, {
+    }), eu && er(k, C, D), ea(), ec && null != b && null != q && (0, r.jsx)(et, {
       selectedPlan: b,
       selectedPlanPrice: q,
       intervalType: b.interval,

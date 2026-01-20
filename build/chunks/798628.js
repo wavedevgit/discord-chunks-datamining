@@ -5,7 +5,7 @@ require.d(exports, {
   cE: () => f,
   eu: () => p,
   fU: () => _
-});
+}), require("./388685.js");
 var Chunk524550 = require("./524550.js"),
   Chunk731965 = require("./731965.js"),
   Chunk902704 = require("./902704.js");
@@ -48,18 +48,24 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
+require("./709054.js");
 let u = {},
   d = (0, Chunk524550.F)(e => ({
-    polls: {},
+    pollsByChannelId: {},
+    pollsByMessageId: {},
     updatePollState(t, n, r) {
       (0, i.j)(() => {
         e(e => {
           var i;
+          let a = r(null == (i = e.pollsByChannelId[t]) ? true : i[n]);
           return {
-            polls: c(s({}, e.polls), {
-              [t]: c(s({}, e.polls[t]), {
-                [n]: r(null == (i = e.polls[t]) ? true : i[n])
+            pollsByChannelId: c(s({}, e.pollsByChannelId), {
+              [t]: c(s({}, e.pollsByChannelId[t]), {
+                [n]: a
               })
+            }),
+            pollsByMessageId: c(s({}, e.pollsByMessageId), {
+              [n]: a
             })
           }
         })
@@ -70,7 +76,7 @@ let u = {},
 function f(e) {
   return d(t => {
     var n;
-    return null != (n = t.polls[e]) ? n : u
+    return null != (n = t.pollsByChannelId[e]) ? n : u
   }, a.Z)
 }
 
@@ -80,5 +86,5 @@ function p(e, t, n) {
 
 function _(e, t) {
   var n;
-  return null == (n = d.getState().polls[e]) ? true : n[t]
+  return null == (n = d.getState().pollsByChannelId[e]) ? true : n[t]
 }
