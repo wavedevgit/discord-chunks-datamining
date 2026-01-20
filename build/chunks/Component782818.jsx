@@ -111,7 +111,7 @@ function x(e) {
     onComplete: l,
     setFetchError: o,
     className: p
-  } = e, m = (0, s.e7)([u.default], () => u.default.getCurrentUser()), x = a.useRef([]), E = a.useRef(null), O = a.useRef(t.length), N = a.useRef(null), [S, T] = a.useState(false), [R, P] = a.useState(false), w = t.length, F = Math.max(A.iZ - w, 0), _ = (0, c.vRw)(), Z = a.useCallback(async e => {
+  } = e, m = (0, s.e7)([u.default], () => u.default.getCurrentUser()), x = a.useRef([]), E = a.useRef(null), O = a.useRef(t.length), N = a.useRef(null), [S, T] = a.useState(false), [R, P] = a.useState(false), w = t.length, F = Math.max(A.i - w, 0), _ = (0, c.vRw)(), Z = a.useCallback(async e => {
     if (null == m || S) return;
     T(true), o(null);
     let {
@@ -250,7 +250,7 @@ function E(e) {
     children: (0, r.jsx)(c.gNt, {
       label: y.intl.string(y.t.Bnq9zK),
       description: y.intl.format(y.t["+CyJu3"], {
-        recentAvatarsLimit: A.iZ
+        recentAvatarsLimit: A.i
       }),
       errorMessage: g,
       children: s ? (0, r.jsx)(c.$jN, {

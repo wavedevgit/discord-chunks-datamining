@@ -57,7 +57,6 @@ function R(e) {
     case I.cd.AVATAR_DECORATION_MODAL_UPSELL:
     case I.cd.FOR_LATER_MODAL_UPSELL:
     case I.cd.VOICE_FILTERS_UPSELL:
-    case I.cd.RECENT_AVATARS_ROADBLOCK_UPSELL:
       returntrue;
     default:
       returnfalse
