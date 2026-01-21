@@ -93,7 +93,7 @@ class Z extends Chunk317770.Z {
       let e = b.Z.getGuild(A);
       null != e && (0, d.Dc)(e) && (o = true, (0, g.RM)(e.id))
     }
-    let Z = () => 0 === m.Z.totalGuilds && !v.isPlatformEmbedded,
+    let Z = () => 0 === m.Z.totalGuilds && !I.isPlatformEmbedded,
       w = s.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -147,7 +147,7 @@ class Z extends Chunk317770.Z {
       predicate: () => w && !Z() && !N.aA
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(v.isPlatformEmbedded, e),
+      open: e => c.j(I.isPlatformEmbedded, e),
       predicate: () => {
         var e;
         return !o && null != _.default.getCurrentUser() && !(null == (e = _.default.getCurrentUser()) ? true : e.isClaimed()) && !N.aA && !(0, p.g)()
@@ -173,7 +173,7 @@ class Z extends Chunk317770.Z {
       }),
       predicate: () => null != A && null != h.Z.get(A) && h.Z.get(A) !== h.a
     }], t = () => {
-      I.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
+      v.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
     }, [...e].reverse().forEach(e => {
       let n = t;
       t = () => {

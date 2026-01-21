@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 722835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk209739 = require("./209739.js"),
   i = require.n(Chunk209739),
@@ -22,20 +22,20 @@ var Chunk209739 = require("./209739.js"),
   Chunk989941 = require("./989941.js"),
   Chunk70722 = require("./70722.js");
 
-function v() {
+function I() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
   if (!(0, b.Z)(d.Z) || null != s.Z.getCurrentUserActiveStream()) returnfalse;
   let n = f.Z.getVoiceChannelId(),
     r = c.Z.getChannel(n);
   if (null == r) returnfalse;
-  let v = r.getGuildId();
+  let I = r.getGuildId();
   if (!(0, m.JL)(r, u.Z, p.Z, false)) returnfalse;
   if (d.Z.getUseSystemScreensharePicker())(0, h.isMac)() && i().satisfies(null === a.Z || true === a.Z ? true : a.Z.os.release, O.jR) ? (0, E.T)() : (0, E.T)("window");
   else {
     let n = (0, _.Z)(o.ZP, g.Z);
     if (null == n || n.isLauncher && !e) returnfalse;
-    (0, l.WH)(v, r.id, {
+    (0, l.WH)(I, r.id, {
       pid: n.pid,
       analyticsLocations: t
     })

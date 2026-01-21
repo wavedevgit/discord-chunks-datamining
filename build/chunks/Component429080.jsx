@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
 let b = function(e) {
   let {
     quest: t
-  } = e, [n, l] = i.useState(false), b = i.useRef(null), E = (0, o.e7)([u.default], () => u.default.getCurrentUser()), _ = d.ZP.useName(E), O = (0, c.Z)(null == E ? true : E.id), v = i.useCallback(e => {
+  } = e, [n, l] = i.useState(false), b = i.useRef(null), E = (0, o.e7)([u.default], () => u.default.getCurrentUser()), _ = d.ZP.useName(E), O = (0, c.Z)(null == E ? true : E.id), I = i.useCallback(e => {
     var n, i;
     return (0, r.jsx)(p.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -74,7 +74,7 @@ let b = function(e) {
         className: m.memberListContainer,
         children: (0, r.jsx)(s.yRy, {
           targetElementRef: b,
-          renderPopout: v,
+          renderPopout: I,
           position: "bottom",
           shouldShow: n,
           onRequestClose: () => l(false),

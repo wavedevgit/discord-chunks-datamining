@@ -376,8 +376,8 @@ let q = Chunk473749.memo(function(e) {
         isSpeaking: es,
         voiceDb: eE,
         speakingStylesConfig: {
-          spreadDirection: E.h.OUTSET_ONLY,
-          maxOuterSpreadRadius: 4,
+          spreadDirection: E.h.INSET_ONLY,
+          maxInnerSpreadRadius: 4,
           hideIfVolumeMissing: true
         },
         "aria-hidden": true
@@ -408,8 +408,8 @@ let q = Chunk473749.memo(function(e) {
         isSpeaking: es,
         voiceDb: eE,
         speakingStylesConfig: {
-          spreadDirection: E.h.OUTSET_ONLY,
-          maxOuterSpreadRadius: 4,
+          spreadDirection: E.h.INSET_ONLY,
+          maxInnerSpreadRadius: 4,
           hideIfVolumeMissing: true
         },
         "aria-hidden": true

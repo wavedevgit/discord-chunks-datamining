@@ -55,6 +55,7 @@ function I() {
     overridesInfo: a
   } = (0, h.sI)(), o = i.useMemo(() => S({}, n, e), [n, e]), s = i.useMemo(() => S({}, a, t), [a, t]), [c, u] = i.useState(""), d = (0, b.Ro)((0, b.Tc)((0, b.Cg)(o), s), c);
   return (0, r.jsxs)("div", {
+    "data-mtctest-ignore": "true",
     children: [(0, r.jsx)(l.E1j, {
       placeholder: "Search experiments",
       query: c,

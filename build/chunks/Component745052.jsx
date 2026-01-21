@@ -215,7 +215,7 @@ function ea(e) {
 let eo = e => {
   let t = (0, G.Z)();
   return (i.useEffect(() => {
-    (0, I.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+    (0, v.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
   }, []), null == e.targetElementRef.current || D.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(y.ZP, {
     contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
     children: n => {
@@ -296,10 +296,10 @@ let ec = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != h && !E && _ && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(L.uZ))
   }, [h, _, b, E]);
-  let [I, y] = i.useState(Q.pS.REQUESTS), A = e => {
+  let [v, y] = i.useState(Q.pS.REQUESTS), A = e => {
     y(e)
   };
-  return (0, v.Tt)({
+  return (0, I.Tt)({
     location: ee.intl.string(ee.t.e7GWjQ)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -323,7 +323,7 @@ let ec = (0, Chunk112724.Z)(function(e) {
             })
           }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
             "aria-label": ee.intl.string(ee.t.e7GWjQ),
-            selectedItem: I,
+            selectedItem: v,
             type: "top-pill",
             onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
@@ -342,7 +342,7 @@ let ec = (0, Chunk112724.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: en.content,
         children: (0, r.jsx)(es, {
-          section: I
+          section: v
         })
       })]
     }), b && (0, r.jsx)(ea, {

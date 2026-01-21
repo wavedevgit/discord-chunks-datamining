@@ -123,7 +123,7 @@ let eh = e => {
       l = (0, c.JA)("icymi");
     return i ? (0, r.jsx)("div", {
       className: ed.friendsButtonContainer,
-      children: (0, r.jsx)(v.Qj, ep({
+      children: (0, r.jsx)(I.Qj, ep({
         selected: t,
         route: el.Z5c.ICYMI,
         icon: E.qOE,
@@ -162,7 +162,7 @@ let eh = e => {
         }
       })
     }, [_]);
-    let I = () => {
+    let v = () => {
         let e;
         _ ? (er.default.track(el.rMx.GIFT_INTENT_BADGE_CLICKED, {
           gift_intent_type: es.hX.FRIEND_ANNIVERSARY
@@ -177,8 +177,8 @@ let eh = e => {
       P = () => {
         N(true)
       },
-      A = () => (0, r.jsx)(v.Qj, ef(ep({
-        onClick: I,
+      A = () => (0, r.jsx)(I.Qj, ef(ep({
+        onClick: v,
         interactiveClassName: _ ? ed.friendsBadge : true,
         selected: t,
         route: el.Z5c.FRIENDS,
@@ -232,7 +232,7 @@ let eh = e => {
       hideGameUpdateProgressIndicator: n
     } = e, i = eg(e, ["selected", "hideGameUpdateProgressIndicator"]);
     let l = (0, c.JA)("library");
-    return (0, r.jsx)(v.Qj, ef(ep({
+    return (0, r.jsx)(I.Qj, ef(ep({
       selected: t,
       route: el.Z5c.APPLICATION_LIBRARY,
       icon: E.vqy,
@@ -259,7 +259,7 @@ let eh = e => {
     } = (0, Z._)();
     if (!(0, L.a)()) return null;
     let l = null == i ? true : () => _.Z.preload(el.ME, i);
-    return (0, r.jsx)(v.Qj, ef(ep({
+    return (0, r.jsx)(I.Qj, ef(ep({
       selected: t,
       route: el.Z5c.MESSAGE_REQUESTS,
       icon: E._XJ,
@@ -273,7 +273,7 @@ let eh = e => {
     let {
       selected: t
     } = e, n = ec.intl.string(eu.default.Rkdixs), l = (0, c.JA)("family-center"), [a, o] = i.useState(true);
-    return (0, r.jsx)(v.Qj, ef(ep({
+    return (0, r.jsx)(I.Qj, ef(ep({
       selected: t,
       route: el.Z5c.FAMILY_CENTER,
       icon: E.BFJ,
@@ -286,18 +286,18 @@ let eh = e => {
       },
       interactiveClassName: ed.familyCenterLinkButton
     }, l), {
-      children: (0, r.jsx)(ev, {
+      children: (0, r.jsx)(eI, {
         isParentHovered: a
       })
     }))
   },
-  ev = e => {
+  eI = e => {
     let {
       isParentHovered: t
     } = e, i = (0, D.gU)();
     return t ? (0, r.jsx)("div", {
       className: ed.familyCenterButtonContainer,
-      children: (0, r.jsx)(v.bU, {
+      children: (0, r.jsx)(I.bU, {
         onClick: () => {
           (0, h.openModalLazy)(async () => {
             let {
@@ -330,7 +330,7 @@ let eh = e => {
       })
     })
   },
-  eI = () => (0, W.$Z)("DM_SEARCH");
+  ev = () => (0, W.$Z)("DM_SEARCH");
 
 function ey(e) {
   switch (e) {
@@ -356,11 +356,11 @@ let eC = Chunk473749.memo(function(e) {
     shouldShowFamilyCenterRow: f,
     selectedChannelId: g,
     path: h
-  } = e, b = i.useRef(null), _ = i.useRef(null), O = i.useRef(null), v = i.useRef(null), y = (0, A.b5)("PrivateChannels"), C = null;
+  } = e, b = i.useRef(null), _ = i.useRef(null), O = i.useRef(null), I = i.useRef(null), y = (0, A.b5)("PrivateChannels"), C = null;
   return c ? C = (0, r.jsx)(V.F, {
-    targetElementRef: v
+    targetElementRef: I
   }) : d && (C = (0, r.jsx)(G.d, {
-    targetElementRef: v
+    targetElementRef: I
   })), (0, r.jsxs)("nav", {
     className: ed.privateChannels,
     "aria-label": ec.intl.string(ec.t.ZH9aP4),
@@ -378,7 +378,7 @@ let eC = Chunk473749.memo(function(e) {
           fullWidth: true,
           variant: "secondary",
           size: "sm",
-          onClick: eI,
+          onClick: ev,
           text: ec.intl.format(ec.t.fH9FBy, {
             tooltipHook: (e, t) => (0, r.jsx)(m.Z, {
               children: e
@@ -386,7 +386,7 @@ let eC = Chunk473749.memo(function(e) {
           })
         })
       })
-    }), (0, r.jsxs)(I.Z, ef(ep({}, e), {
+    }), (0, r.jsxs)(v.Z, ef(ep({}, e), {
       version: h,
       selectedChannelId: g,
       listScrollerRef: O,
@@ -401,7 +401,7 @@ let eC = Chunk473749.memo(function(e) {
         selected: null == h ? null != l && l.startsWith(el.Z5c.MESSAGE_REQUESTS) : h === el.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(F.g, {
-          nitroTabButtonRef: v,
+          nitroTabButtonRef: I,
           selected: null == h ? o : h.startsWith(el.Z5c.APPLICATION_STORE),
           route: el.Z5c.APPLICATION_STORE,
           locationState: {

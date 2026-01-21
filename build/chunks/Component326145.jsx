@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 326145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,14 +22,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk337917 = require("./337917.js"),
   Chunk321347 = require("./321347.js");
 
-function v(e) {
+function I(e) {
   let {
     guildId: t,
     channelId: n
   } = e, {
     ref: l,
-    width: v,
-    height: I
+    width: I,
+    height: v
   } = (0, c.ZP)(), y = i.useCallback(() => {
     null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
@@ -47,8 +47,8 @@ function v(e) {
     children: [null != S ? (0, r.jsx)(u.Z, {
       className: O.artwork,
       src: S,
-      width: v,
-      height: I,
+      width: I,
+      height: v,
       imageClassName: O.cover
     }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: O.gradient,

@@ -173,8 +173,8 @@ let eR = (0, Chunk608787.Un)({
     var t, n;
     let {
       match: i
-    } = e, l = (0, C.l)(), a = (0, p.e7)([eE.Z, eI.Z], () => {
-      let e = eI.Z.getChannelId();
+    } = e, l = (0, C.l)(), a = (0, p.e7)([eE.Z, ev.Z], () => {
+      let e = ev.Z.getChannelId();
       return eE.Z.getChannel(e)
     }), {
       guildId: o,
@@ -183,7 +183,7 @@ let eR = (0, Chunk608787.Un)({
       threadId: d
     } = i.params, f = null != c ? c : true;
     null == f && null != i.params.gameShopPageIndex && (f = ex.oC.GAME_SHOP);
-    let g = (0, p.e7)([ev.Z], () => ev.Z.getGuild(o)),
+    let g = (0, p.e7)([eI.Z], () => eI.Z.getGuild(o)),
       h = (0, p.e7)([eO.ZP], () => null == o ? null : eO.ZP.getSelfMember(o)),
       b = (0, eo.BU)(o, "ChannelRenderer"),
       E = (null == g || null == (t = g.features) ? true : t.has(ej.GuildFeatures.GAME_SERVERS)) === true,
@@ -285,7 +285,7 @@ let eR = (0, Chunk608787.Un)({
       notificationCenterVariant: n
     } = (0, en.pN)({
       location: "Sidebar"
-    }), i = (0, p.e7)([eI.Z], () => null != t ? t : eI.Z.getChannelId(e));
+    }), i = (0, p.e7)([ev.Z], () => null != t ? t : ev.Z.getChannelId(e));
     return window.location.pathname.startsWith(ej.Z5c.CHANNEL(ej.STv)) ? ("sidebar" !== n && (0, em.dL)(e_.Z.defaultRoute), (0, r.jsx)(ei.Z, {
       includePanelSpacing: true
     })) : window.location.pathname.startsWith(ej.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(ej.Z5c.GUILD_DISCOVERY) || (0, ec.$V)() ? (0, r.jsx)(U.Z, {}) : null != e ? (0, r.jsx)(z.Z, {
@@ -447,13 +447,13 @@ function tt(e) {
     hideChannelList: o,
     isSidebarOpen: s
   } = e;
-  (0, I.t)(true);
+  (0, v.t)(true);
   let c = "app view user trigger debugging";
-  v.R6.useExperiment({
+  I.R6.useExperiment({
     location: c
   }, {
     autoTrackExposure: false
-  }), v.R6.trackExposure({
+  }), I.R6.trackExposure({
     location: c
   });
   let u = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),

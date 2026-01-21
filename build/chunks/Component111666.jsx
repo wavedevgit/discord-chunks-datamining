@@ -76,8 +76,8 @@ function S(e) {
           if (!h.Z.isFriend(n)) returnfalse;
           let _ = m.default.getUser(n);
           if (null == _) returnfalse;
-          let v = false,
-            I = null;
+          let I = false,
+            v = null;
           if (null != i) {
             let t = i.type;
             if (null != t && function(e) {
@@ -85,25 +85,25 @@ function S(e) {
                 return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
               }(i)) {
               let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (g = i.name) ? g : "");
-              (null == (c = r.current[n]) ? true : c.presence) !== l && (v = true, e(n, "presence", l), I = {
+              (null == (c = r.current[n]) ? true : c.presence) !== l && (I = true, e(n, "presence", l), v = {
                 user: _,
                 activity: i
               })
-            } else(null == (s = r.current[n]) ? true : s.presence) != null && (v = true, e(n, "presence", null))
+            } else(null == (s = r.current[n]) ? true : s.presence) != null && (I = true, e(n, "presence", null))
           }
           if (null != a) {
             let t = f.Z.getChannel(a);
             if (null != t) {
               let i = "voice-".concat(t.id);
-              (null == (b = r.current[n]) ? true : b.voice) !== i && (v = true, e(n, "voice", i), I = {
+              (null == (b = r.current[n]) ? true : b.voice) !== i && (I = true, e(n, "voice", i), v = {
                 user: _,
                 voiceChannel: t
               })
             }
-          } else(null == (o = r.current[n]) ? true : o.voice) != null && (v = true, e(n, "voice", null));
-          return v && null != I && (E = I, null != l.current && (window.clearTimeout(l.current), l.current = null), t(E), l.current = window.setTimeout(() => {
+          } else(null == (o = r.current[n]) ? true : o.voice) != null && (I = true, e(n, "voice", null));
+          return I && null != v && (E = v, null != l.current && (window.clearTimeout(l.current), l.current = null), t(E), l.current = window.setTimeout(() => {
             t(null), l.current = null
-          }, 1e4)), v
+          }, 1e4)), I
         },
         a = e => {
           for (let t of e.updates) {
@@ -144,7 +144,7 @@ function S(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: I.container,
+      className: v.container,
       children: N((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
         targetElementRef: T,
         position: "bottom",
@@ -154,7 +154,7 @@ function S(e) {
           var i;
           return (0, r.jsxs)(l.animated.div, C(y({
             ref: T,
-            className: I.activityWrapper,
+            className: v.activityWrapper,
             style: e
           }, n), {
             children: [(0, r.jsx)(o.Text, {
@@ -163,11 +163,11 @@ function S(e) {
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
               textVariant: "text-xs/medium",
-              textClassName: I.statusText
+              textClassName: v.statusText
             }) : (0, r.jsx)(c.Z, {
               activity: t.activity,
               textVariant: "text-xs/medium",
-              textClassName: I.statusText
+              textClassName: v.statusText
             })]
           }))
         }
@@ -181,8 +181,8 @@ function S(e) {
         onClick: e,
         icon: o.iFz,
         iconSize: b,
-        "aria-label": v.intl.string(v.t.TdEu5X),
-        tooltip: i ? null : v.intl.string(v.t.TdEu5X),
+        "aria-label": I.intl.string(I.t.TdEu5X),
+        tooltip: i ? null : I.intl.string(I.t.TdEu5X),
         selected: i,
         showBadge: n
       }))

@@ -40,7 +40,7 @@ function P(e) {
     },
     socket: n
   } = e, r = f.Z.getChannel(t);
-  if (null == r || !(0, v.zM)(r, n.application.id, n.authorization.scopes)) throw new O.Z({
+  if (null == r || !(0, I.zM)(r, n.application.id, n.authorization.scopes)) throw new O.Z({
     errorCode: j.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t));
   if ((0, s.ft)(r)) throw new O.Z({
@@ -124,7 +124,7 @@ let w = {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, I.aE)(a, l.id, e))), o
       }
     }
   },
@@ -157,7 +157,7 @@ let w = {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, I.aE)(a, l.id, e))), o
       }
     }
   },
@@ -184,7 +184,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(_.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
+          o = Object.values(_.Z.getVoiceStatesForChannel(l.id)).map(e => (0, I.aE)(a, l.id, e));
         return i().differenceWith(o, n, i().isEqual).forEach(e => r(e)), o
       }
     }
@@ -198,7 +198,7 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, v.zy)(b.Z.getState()),
+        state: (0, I.zy)(b.Z.getState()),
         hostname: b.Z.getHostname(),
         pings: b.Z.getPings(),
         average_ping: b.Z.getAveragePing(),

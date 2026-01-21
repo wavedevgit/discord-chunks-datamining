@@ -43,14 +43,14 @@ function C(e) {
           color: "currentColor"
         })
     }
-  })(t), [t]), I = i.useMemo(() => (0, b.s)(t), [t]), C = n === t, S = i.useCallback(() => {
+  })(t), [t]), v = i.useMemo(() => (0, b.s)(t), [t]), C = n === t, S = i.useCallback(() => {
     switch (t) {
       case _.GlobalDiscoveryTab.QUESTS:
         return C && g.Z.resetState(), h.default.track(O.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, c.Gy)().uuid
         }), (0, E.transitionToGlobalDiscovery)({
           tab: _.GlobalDiscoveryTab.QUESTS,
-          location: v.dr.DISCOVERY_SIDEBAR,
+          location: I.dr.DISCOVERY_SIDEBAR,
           questContent: o.j.DISCOVERY_SIDEBAR
         });
       case _.GlobalDiscoveryTab.APPS:
@@ -90,7 +90,7 @@ function C(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "none",
-      children: I
+      children: v
     })]
   })
 }
@@ -101,7 +101,7 @@ let S = function() {
       className: y.header,
       children: (0, r.jsx)(s.Heading, {
         variant: "text-lg/semibold",
-        children: I.intl.string(I.t["1KqYnl"])
+        children: v.intl.string(v.t["1KqYnl"])
       })
     }), (0, r.jsx)("nav", {
       className: y.nav,

@@ -98,7 +98,7 @@ function Z(e) {
       parentAnalyticsLocation: f
     } = (0, h.ZP)(),
     {
-      channel: v,
+      channel: I,
       user: Z,
       nick: w,
       mute: L,
@@ -106,13 +106,13 @@ function Z(e) {
       serverMute: D,
       serverDeaf: M
     } = e,
-    k = (0, o.e7)([I.Z], () => I.Z.isLocalMute(Z.id)),
+    k = (0, o.e7)([v.Z], () => v.Z.isLocalMute(Z.id)),
     U = (0, d.Z)({
       userId: Z.id,
       checkSoundSharing: true
     }),
-    G = null != (t = v.getGuildId()) ? t : true,
-    H = Z.getAvatarURL(v.guild_id, 24),
+    G = null != (t = I.getGuildId()) ? t : true,
+    H = Z.getAvatarURL(I.guild_id, 24),
     B = null != w ? w : C.ZP.getName(Z),
     {
       icon: V,
@@ -151,7 +151,7 @@ function Z(e) {
       return t => (0, r.jsx)(e, x(j({}, t), {
         user: Z,
         guildId: G,
-        channel: v,
+        channel: I,
         showMediaItems: true,
         onInteraction: (0, E.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
           targetUserId: Z.id
@@ -181,7 +181,7 @@ function Z(e) {
     targetElementRef: p,
     user: Z,
     guildId: G,
-    channelId: v.id,
+    channelId: I.id,
     position: "top",
     clickTrap: true,
     children: e => (0, r.jsx)(s.u, {
@@ -221,7 +221,7 @@ function w(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [u, d] = i.useState(false), g = (0, o.e7)([v.default], () => v.default.getId()), {
+  } = e, [u, d] = i.useState(false), g = (0, o.e7)([I.default], () => I.default.getId()), {
     containerRef: h,
     maxVisibleAvatars: m
   } = function(e) {
@@ -245,7 +245,7 @@ function w(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, g, m), _ = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), I = (0, r.jsx)(s.u, {
+  }(t, g, m), _ = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), v = (0, r.jsx)(s.u, {
     text: O,
     ariaHidden: true,
     children: (0, r.jsx)(c.hU, {
@@ -282,7 +282,7 @@ function w(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), E ? I : null]
+      }), E ? v : null]
     })
   })
 }

@@ -31,11 +31,11 @@ let h = {
   E = {},
   _ = {},
   O = {},
-  v = {
+  I = {
     id: null,
     justChanged: false
   },
-  I = {
+  v = {
     id: null,
     justChanged: false
   },
@@ -75,13 +75,13 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return E
   }
   get lastInputSystemDevice() {
-    return v
+    return I
   }
   get outputDevices() {
     return _
   }
   get lastOutputSystemDevice() {
-    return I
+    return v
   }
 }
 g(T, "displayName", "ConnectedDeviceStore"), g(T, "persistKey", "ConnectedDeviceStore"), g(T, "migrations", [e => {
@@ -119,19 +119,19 @@ let N = new T(Chunk570140.Z, {
       inputDevices: t,
       outputDevices: n
     } = e, r = {};
-    v.justChanged = false, t.forEach(e => {
+    I.justChanged = false, t.forEach(e => {
       if (r[C(e)] = e.id, e.id === f.w5) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
-        n !== v.id && (v.justChanged = true), v.id = n
+        n !== I.id && (I.justChanged = true), I.id = n
       }
     });
     let i = {};
-    if (I.justChanged = false, n.forEach(e => {
+    if (v.justChanged = false, n.forEach(e => {
         if (i[C(e)] = e.id, e.id === f.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
-          n !== I.id && (I.justChanged = true), I.id = n
+          n !== v.id && (v.justChanged = true), v.id = n
         }
       }), !b) {
       E = r, _ = i, b = true;

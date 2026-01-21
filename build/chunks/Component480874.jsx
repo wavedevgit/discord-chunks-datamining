@@ -61,7 +61,7 @@ function N() {
       let {
         row: o
       } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? true : n.id, u = s.channel.id;
-      return (0, r.jsx)(I.Z, {
+      return (0, r.jsx)(v.Z, {
         index: o,
         className: a()({
           [T.selected]: null != x && x === u,
@@ -91,7 +91,7 @@ function N() {
         })]
       }) : null]
     }, "message-requests-spam-title"), [n, Z, N]);
-  return 0 === t.length ? (0, r.jsx)(v.Z, {
+  return 0 === t.length ? (0, r.jsx)(I.Z, {
     section: y.pS.SPAM
   }) : (0, r.jsx)(o.bG, {
     navigator: j,

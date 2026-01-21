@@ -93,7 +93,7 @@ let G = {
         args: {
           user_id: t
         }
-      } = e, n = I.Z.getDMFromUserId(t);
+      } = e, n = v.Z.getDMFromUserId(t);
       null != n && (0, d.ack)(n, {
         section: M.jXE.CLOSE_ACTIVITY_JOIN_REQUEST_RPC_COMMAND,
         object: M.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
@@ -367,7 +367,7 @@ let G = {
           url: a.url,
           height: a.height,
           width: a.width
-        }]), n = new v.ZP({
+        }]), n = new I.ZP({
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
           applicationId: f,
           content: u,

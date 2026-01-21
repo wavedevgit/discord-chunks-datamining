@@ -2,9 +2,9 @@
 /** chunk id: 572995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P6: () => Q,
-  ZP: () => $,
-  y$: () => X
+  P6: () => ee,
+  ZP: () => er,
+  y$: () => et
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,10 +19,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk526167 = require("./526167.js"),
   Chunk63063 = require("./63063.js"),
   Chunk260720 = require("./260720.js"),
+  Chunk375527 = require("./375527.js"),
   Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk353149 = require("./353149.js"),
+  Chunk618435 = require("./618435.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk831989 = require("./831989.js"),
   Chunk143525 = require("./143525.js"),
@@ -46,13 +48,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk584470 = require("./584470.js"),
   Chunk810933 = require("./810933.js"),
   Chunk857245 = require("./857245.js"),
+  Chunk900303 = require("./900303.js"),
+  Chunk989448 = require("./989448.js"),
   Chunk383057 = require("./383057.js"),
   Chunk370026 = require("./370026.js"),
   Chunk120368 = require("./120368.js"),
   Chunk378325 = require("./378325.js"),
   Chunk962526 = require("./962526.js");
 
-function z(e, t, n) {
+function J(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,199 +65,230 @@ function z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function q(e) {
+function $(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      z(e, t, n[t])
+      J(e, t, n[t])
     })
   }
   return e
 }
-var Q = function(e) {
+var ee = function(e) {
     return e.CONTAINED = "contained", e.OVERLAY = "overlay", e
   }({}),
-  X = function(e) {
+  et = function(e) {
     return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e
   }({});
-let J = e => ({
+let en = e => ({
     premiumGroup: {
-      thumbnail: S,
-      assetUrl: S
+      thumbnail: T,
+      assetUrl: T
     },
     serverProfiles: {
-      thumbnail: I,
-      assetUrl: e ? W.ZP : K.ZP
+      thumbnail: C,
+      assetUrl: e ? Q.ZP : X.ZP
     },
     customThemes: {
-      thumbnail: H.Z,
-      assetUrl: e ? V.Z : Y.Z
+      thumbnail: z.Z,
+      assetUrl: e ? K.Z : q.Z
     },
     displayNameStyles: {
-      thumbnail: C.Z,
-      assetUrl: e ? T.Z : A.Z
+      thumbnail: N.Z,
+      assetUrl: e ? A.Z : P.Z
     },
     referralProgram: {
-      thumbnail: j.Z,
-      assetUrl: e ? L.Z : M.Z
+      thumbnail: k.Z,
+      assetUrl: e ? M.Z : U.Z
     },
     showYourStyle: {
-      thumbnail: U.Z,
-      assetUrl: e ? k.Z : G.Z
+      thumbnail: Z.Z,
+      assetUrl: e ? G.Z : F.Z
     },
     yourSpace: {
-      thumbnail: F.Z,
-      assetUrl: e ? Z.Z : B.Z
+      thumbnail: V.Z,
+      assetUrl: e ? B.Z : H.Z
     },
     emojis: {
-      thumbnail: P.Z,
-      assetUrl: e ? N.Z : w.Z
+      thumbnail: R.Z,
+      assetUrl: e ? w.Z : D.Z
     },
     noLimits: {
-      thumbnail: D.Z,
-      assetUrl: e ? R.Z : x.Z
+      thumbnail: L.Z,
+      assetUrl: e ? x.Z : j.Z
+    },
+    orbRewards: {
+      thumbnail: W.Z,
+      assetUrl: Y.Z
     }
   }),
-  $ = () => {
+  er = () => {
     let e, {
         analyticsLocations: t
       } = (0, s.ZP)(o.Z.PREMIUM_MARKETING_BENTO_BOX),
-      S = (0, u.Z)({
-        scrollPosition: E.Y_.TRY_IT_OUT,
+      T = (0, u.Z)({
+        scrollPosition: b.Y_.TRY_IT_OUT,
         analyticsLocations: t
       }),
-      I = (0, h.QL)(),
-      T = (0, i.useCallback)(() => {
+      C = (0, h.QL)(),
+      A = (0, i.useCallback)(() => {
         (0, f.openUserSettings)(d.n.PROFILE_PANEL, {
-          section: g.oAB.PROFILE_CUSTOMIZATION,
+          section: E.oAB.PROFILE_CUSTOMIZATION,
           analyticsLocations: t
         }, () => (0, c.I)({
           analyticsLocations: t
         }))
       }, [t]),
-      C = () => {
+      N = () => {
         {
           let {
             openUserSettings: e
           } = n(518596);
           e(d.n.APPEARANCE_PANEL, {
-            section: g.oAB.APPEARANCE,
+            section: E.oAB.APPEARANCE,
             analyticsLocations: t
           })
         }
       },
-      A = (0, p.rO)(),
-      N = _.Z.getArticleURL(g.BhN.REFERRAL_PROGRAM),
-      P = J(A),
-      w = {
-        name: "serverProfiles",
-        title: y.intl.string(y.t.I9TYMg),
-        description: y.intl.string(y.t.HMSHeH),
-        descriptionCta: y.intl.string(y.t.jVcuVY),
-        onClick: S,
-        previewImage: P.serverProfiles.thumbnail,
-        videoUrl: P.serverProfiles.assetUrl
-      },
-      R = {
-        name: "referralProgram",
-        title: y.intl.string(y.t.tPY4o9),
-        description: y.intl.format(y.t.jRPQUH, {
-          learnMoreLink: N
-        }),
-        previewImage: P.referralProgram.thumbnail,
-        videoUrl: P.referralProgram.assetUrl
-      },
+      P = (0, p.rO)(),
+      w = _.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM),
+      R = en(P),
       D = {
+        name: "serverProfiles",
+        title: v.intl.string(v.t.I9TYMg),
+        description: v.intl.string(v.t.HMSHeH),
+        descriptionCta: v.intl.string(v.t.jVcuVY),
+        onClick: T,
+        previewImage: R.serverProfiles.thumbnail,
+        videoUrl: R.serverProfiles.assetUrl
+      },
+      x = {
+        name: "referralProgram",
+        title: v.intl.string(v.t.tPY4o9),
+        description: v.intl.format(v.t.jRPQUH, {
+          learnMoreLink: w
+        }),
+        previewImage: R.referralProgram.thumbnail,
+        videoUrl: R.referralProgram.assetUrl
+      },
+      L = {
         name: "customThemes",
-        title: y.intl.string(O.default.XokIHM),
-        description: y.intl.string(O.default["7esQMC"]),
-        descriptionCta: y.intl.string(y.t.jVcuVY),
-        previewImage: P.customThemes.thumbnail,
+        title: v.intl.string(S.default.XokIHM),
+        description: v.intl.string(S.default["7esQMC"]),
+        descriptionCta: v.intl.string(v.t.jVcuVY),
+        previewImage: R.customThemes.thumbnail,
         onClick: () => {
           (0, l.XO)(l.wh.CUSTOM_THEME)
         },
-        videoUrl: P.customThemes.assetUrl
+        videoUrl: R.customThemes.assetUrl
       },
-      x = {
+      j = {
         name: "displayNameStyles",
-        title: y.intl.string(v.default.ABtBDQ),
-        description: y.intl.string(v.default.MFNXZh),
-        descriptionCta: y.intl.string(y.t.jVcuVY),
-        previewImage: P.displayNameStyles.thumbnail,
-        onClick: T,
-        badgeText: y.intl.string(y.t.y2b7CA).toLocaleUpperCase(),
-        videoUrl: P.displayNameStyles.assetUrl
+        title: v.intl.string(I.default.ABtBDQ),
+        description: v.intl.string(I.default.MFNXZh),
+        descriptionCta: v.intl.string(v.t.jVcuVY),
+        previewImage: R.displayNameStyles.thumbnail,
+        onClick: A,
+        badgeText: v.intl.string(v.t.y2b7CA).toLocaleUpperCase(),
+        videoUrl: R.displayNameStyles.assetUrl
       },
-      L = {
+      M = {
         name: "premiumGroup",
-        title: y.intl.formatToPlainString(b.default.VFEDDB, {
-          premiumGroupProductName: (0, m.sO)()
+        title: v.intl.formatToPlainString(y.default.VFEDDB, {
+          premiumGroupProductName: (0, g.sO)()
         }),
-        description: y.intl.formatToPlainString(b.default.WudmR3, {
-          totalSeats: m.Q5,
-          premiumGroupProductName: (0, m.sO)()
+        description: v.intl.formatToPlainString(y.default.WudmR3, {
+          totalSeats: g.Q5,
+          premiumGroupProductName: (0, g.sO)()
         }),
-        descriptionCta: y.intl.string(y.t.hvVgAZ),
-        previewImage: P.premiumGroup.thumbnail,
-        videoUrl: P.premiumGroup.assetUrl,
+        descriptionCta: v.intl.string(v.t.hvVgAZ),
+        previewImage: R.premiumGroup.thumbnail,
+        videoUrl: R.premiumGroup.assetUrl,
         onClick: () => {
           (0, a.openModalLazy)(async () => {
             let {
               default: e
             } = await n.e("33638").then(n.bind(n, 837244));
-            return t => (0, r.jsx)(e, q({}, t))
+            return t => (0, r.jsx)(e, $({}, t))
           })
         },
-        badgeText: y.intl.string(y.t.oW0eUd).toLocaleUpperCase(),
+        badgeText: v.intl.string(v.t.oW0eUd).toLocaleUpperCase(),
         badgeVariant: "expressive"
       },
-      j = {
-        name: "showYourStyle",
-        title: y.intl.string(y.t.Ij3Zmv),
-        description: y.intl.string(y.t.UsOUxY),
-        descriptionCta: y.intl.string(y.t.jVcuVY),
-        previewImage: P.showYourStyle.thumbnail,
-        onClick: S,
-        videoUrl: P.showYourStyle.assetUrl
-      },
-      M = {
-        name: "yourSpace",
-        title: y.intl.string(y.t.Wme3nX),
-        description: y.intl.string(y.t["/aAIqV"]),
-        descriptionCta: y.intl.string(y.t.jVcuVY),
-        previewImage: P.yourSpace.thumbnail,
-        onClick: C,
-        videoUrl: P.yourSpace.assetUrl
-      },
       k = {
-        name: "emojis",
-        title: y.intl.string(y.t.zY5PPb),
-        description: y.intl.string(y.t.R5Xag2),
-        previewImage: P.emojis.thumbnail,
-        videoUrl: P.emojis.assetUrl
+        name: "showYourStyle",
+        title: v.intl.string(v.t.Ij3Zmv),
+        description: v.intl.string(v.t.UsOUxY),
+        descriptionCta: v.intl.string(v.t.jVcuVY),
+        previewImage: R.showYourStyle.thumbnail,
+        onClick: T,
+        videoUrl: R.showYourStyle.assetUrl
       },
-      U = [
-        [j],
-        [M],
-        [k, {
-          name: "noLimits",
-          title: y.intl.string(y.t["6b3ydG"]),
-          description: y.intl.string(y.t["Y+IJyg"]),
-          previewImage: P.noLimits.thumbnail,
-          videoUrl: P.noLimits.assetUrl
-        }]
+      U = {
+        name: "yourSpace",
+        title: v.intl.string(v.t.Wme3nX),
+        description: v.intl.string(v.t["/aAIqV"]),
+        descriptionCta: v.intl.string(v.t.jVcuVY),
+        previewImage: R.yourSpace.thumbnail,
+        onClick: N,
+        videoUrl: R.yourSpace.assetUrl
+      },
+      G = {
+        name: "emojis",
+        title: v.intl.string(v.t.zY5PPb),
+        description: v.intl.string(v.t.R5Xag2),
+        previewImage: R.emojis.thumbnail,
+        videoUrl: R.emojis.assetUrl
+      },
+      Z = {
+        name: "noLimits",
+        title: v.intl.string(v.t["6b3ydG"]),
+        description: v.intl.string(v.t["Y+IJyg"]),
+        previewImage: R.noLimits.thumbnail,
+        videoUrl: R.noLimits.assetUrl
+      },
+      {
+        orbsRewardAmount: F,
+        isInTreatment: B
+      } = (0, m.er)("useBentoBoxes"),
+      V = {
+        name: "orbRewards",
+        title: v.intl.string(O.default["ZFJ/NU"]),
+        description: v.intl.formatToPlainString(O.default.VuvFfT, {
+          orbsCount: F
+        }),
+        descriptionCta: v.intl.string(v.t.hvVgAZ),
+        onClick: () => {
+          window.open(_.Z.getArticleURL(E.BhN.ORBS_REWARDS_FAQ), "_blank")
+        },
+        previewImage: R.orbRewards.thumbnail,
+        previewImageStyle: "overlay",
+        backgroundVideoUrl: R.orbRewards.assetUrl,
+        badgeText: v.intl.string(v.t.oW0eUd).toLocaleUpperCase(),
+        badgeVariant: "expressive"
+      },
+      H = [
+        [k],
+        [U],
+        [G, Z]
       ];
     return {
-      whatsNewBoxes: e = I ? [
-        [L],
-        [w, R]
+      whatsNewBoxes: e = C ? B ? [
+        [M],
+        [V, x]
       ] : [
-        [x],
-        [D, R]
+        [M],
+        [D, x]
+      ] : B ? [
+        [V],
+        [D, x]
+      ] : [
+        [j],
+        [L, x]
       ],
-      bestOfBoxes: U
+      bestOfBoxes: H
     }
   }

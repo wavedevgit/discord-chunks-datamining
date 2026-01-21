@@ -104,7 +104,7 @@ function em(e) {
       (null == d ? true : d.current) != null && (d.current.paused || o && c && !l ? d.current.paused && !l && c && o && d.current.play() : d.current.pause())
     }, [l, c, o]), n) {
     let e = (0, D.rO)();
-    return (0, r.jsx)(v.Z, {
+    return (0, r.jsx)(I.Z, {
       ref: e => {
         d.current = e, s.current = e
       },
@@ -214,7 +214,7 @@ let e_ = function(e) {
   } = e, n = (0, o.TH)(), l = (0, o.k6)(), g = i.useMemo(() => {
     var e;
     return (null == (e = (0, o.LX)(n.pathname, er.Z5c.QUEST_HOME)) ? true : e.isExact) === true
-  }, [n.pathname]), v = (0, u.e7)([E.Z], () => E.Z.getState("quests")), {
+  }, [n.pathname]), I = (0, u.e7)([E.Z], () => E.Z.getState("quests")), {
     selectedTab: T,
     onSelectTab: P,
     tabs: L
@@ -282,7 +282,7 @@ let e_ = function(e) {
     location: en.dr.QUEST_PREVIEW_TOOL_2
   });
   i.useEffect(() => {
-    if (null != v) return;
+    if (null != I) return;
     let e = new URLSearchParams(n.search),
       r = e.get(F.tR.TAB);
     if (ed && r === F.e5.PREVIEW_TOOL) {
@@ -311,8 +311,8 @@ let e_ = function(e) {
         }
       })
     }
-  }, [n.search, v, ed, l.action, n.hash, t]), i.useEffect(() => {
-    t && (0, I.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
+  }, [n.search, I, ed, l.action, n.hash, t]), i.useEffect(() => {
+    t && (0, v.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
   }, [t]);
   let ep = i.useCallback(() => {
       (0, Y.navigateToQuestHome)({

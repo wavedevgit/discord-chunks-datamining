@@ -32,8 +32,8 @@ let f = e => {
   i.useEffect(() => {
     null == E && null != b && s.Z.fetchJoinRequestCooldown(b.id)
   }, [E, b]);
-  let v = (null != E ? E : 0) > 0,
-    I = v && null != E ? Math.ceil((1e3 * E - Date.now()) / 864e5) : 0;
+  let I = (null != E ? E : 0) > 0,
+    v = I && null != E ? Math.ceil((1e3 * E - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: p.confirmation,
     children: [(0, r.jsx)("div", {
@@ -65,18 +65,18 @@ let f = e => {
       className: p.confirmationButtonRow,
       children: [_ || O ? (0, r.jsx)(a.u, {
         asContainer: true,
-        text: v ? d.intl.formatToPlainString(d.t.A0f0P7, {
-          days: I
+        text: I ? d.intl.formatToPlainString(d.t.A0f0P7, {
+          days: v
         }) : null,
-        "aria-label": v ? d.intl.formatToPlainString(d.t.A0f0P7, {
-          days: I
+        "aria-label": I ? d.intl.formatToPlainString(d.t.A0f0P7, {
+          days: v
         }) : true,
         children: (0, r.jsx)(o.Button, {
           onClick: f,
           variant: "secondary",
           size: "md",
           loading: null == E || O,
-          disabled: v || O,
+          disabled: I || O,
           text: n,
           fullWidth: true
         })

@@ -113,7 +113,7 @@ function B(e, t) {
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = I.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
+    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
       l = Object.values(y.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
@@ -167,7 +167,7 @@ function F(e, t, n) {
     selfDeaf: a,
     suppress: o,
     userId: s
-  } = n, c = I.default.getUser(s);
+  } = n, c = v.default.getUser(s);
   if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: S.ZP.getName(e, t, c),
@@ -190,7 +190,7 @@ function z(e, t) {
     type: e,
     user: (0, x.Z)(t),
     presence: {
-      status: v.Z.getStatus(t.id, null),
+      status: I.Z.getStatus(t.id, null),
       activity: null
     }
   }
@@ -200,7 +200,7 @@ function Y(e, t) {
   var n;
   return null == t ? e : w(Z({}, e), {
     presence: w(Z({}, e.presence), {
-      activity: null != (n = v.Z.getApplicationActivity(e.user.id, t)) ? n : null
+      activity: null != (n = I.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
 }

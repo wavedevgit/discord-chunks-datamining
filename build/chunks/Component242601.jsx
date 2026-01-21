@@ -219,7 +219,7 @@ class ed extends Chunk473749.PureComponent {
         animation: d.yRy.Animation.SCALE,
         shouldShow: n,
         onRequestClose: () => {
-          (0, I.l)(false)
+          (0, v.l)(false)
         },
         spacing: 4,
         children: i => {
@@ -333,7 +333,7 @@ class ed extends Chunk473749.PureComponent {
       let {
         isHeaderPopoutOpen: t
       } = this.props;
-      e.stopPropagation(), (0, I.l)(!t), this.closeAllHeaderNotices()
+      e.stopPropagation(), (0, v.l)(!t), this.closeAllHeaderNotices()
     }), el(this, "handleContextMenu", e => {
       let {
         guild: t
@@ -452,7 +452,7 @@ function ep(e) {
     selectedChannelId: c
   } = e, u = (0, o.e7)([G.Z], () => G.Z.getGuild(n));
   (0, g.J_)(n);
-  let p = (0, v.Z)(n),
+  let p = (0, I.Z)(n),
     f = (0, o.e7)([M.Z], () => M.Z.getGuildDimensions(n).scrollTo),
     T = (0, o.e7)([F.Z], () => F.Z.getChannelId()),
     x = (0, o.e7)([B.Z], () => B.Z.can($.Plq.MANAGE_GUILD, u)),
@@ -472,13 +472,13 @@ function ep(e) {
   }, [n, Q, W]);
   let [X, en] = (0, _.ZP)(e => [ee.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(et.R.GUILD_HEADER_TOOLTIPS)], a.X), er = (0, E.Z)(u), ei = (0, d.s9z)(d.JQI), el = (0, o.e7)([H.Z], () => H.Z.hasLayers()), ea = (0, o.e7)([R.Z], () => R.Z.shouldShow(ec)), eo = (0, S.Z)(n), es = (null == u ? true : u.features.has($.GuildFeatures.HUB)) === true, eu = x && (null == u ? true : u.features.has($.GuildFeatures.DISCOVERABLE)) === true, ep = (0, o.e7)([N.Z, H.Z], () => null != u && null != L && x && !H.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, o.e7)([D.Z], () => D.Z.getChannel(c)), {
     isPopoutOpen: eg
-  } = (0, I.y)(), eh = null != (t = null == u ? true : u.features.has($.GuildFeatures.COMMUNITY)) && t, em = Y.ZP.isNewUser(L), eb = K && !em;
+  } = (0, v.y)(), eh = null != (t = null == u ? true : u.features.has($.GuildFeatures.COMMUNITY)) && t, em = Y.ZP.isNewUser(L), eb = K && !em;
   (0, y.Z)(u);
   let eE = (0, O.Nj)(s.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     e_ = (0, P.Z)(n),
     eO = (0, C.Z)(n),
-    ev = (0, o.e7)([F.Z], () => F.Z.getChannelId()),
-    eI = (0, o.e7)([V.Z], () => V.Z.desyncedVoiceStatesCount),
+    eI = (0, o.e7)([F.Z], () => F.Z.getChannelId()),
+    ev = (0, o.e7)([V.Z], () => V.Z.desyncedVoiceStatesCount),
     ey = (0, Z.Z)(n),
     eC = (0, A.BU)(n, "GuildSidebar"),
     eS = eC && false === ey,
@@ -496,8 +496,8 @@ function ep(e) {
     selectedChannel: ef,
     selectedVoiceChannelId: T,
     voiceStates: p,
-    rtcConnectedChannelId: ev,
-    rtcDesyncedVoiceStatesCount: eI,
+    rtcConnectedChannelId: eI,
+    rtcDesyncedVoiceStatesCount: ev,
     isUnavailable: w,
     user: L,
     hasChannelNotice: null != er || X,

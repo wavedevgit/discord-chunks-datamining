@@ -36,7 +36,7 @@ function g(e) {
       type: f,
       dismiss_type: e
     }), await h()
-  }, v = async () => {
+  }, I = async () => {
     c.default.track(d.rMx.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
       application_id: n
     }), u.ZP.setEnableHardwareAcceleration(true), await O()
@@ -60,7 +60,7 @@ function g(e) {
     }, {
       variant: "primary",
       text: p.intl.string(p.t["/wlDqi"]),
-      onClick: v
+      onClick: I
     }],
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",

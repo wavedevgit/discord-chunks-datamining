@@ -109,12 +109,12 @@ class Z extends Chunk317770.Z {
     }), P(this, "mayShowAnnouncementModal", async () => {
       if (await (0, E.l2)(), m.s.isDisallowPopupsSet()) return;
       let e = this.getOfferFromStore(),
-        t = I.Z.getCurrentConfig({
+        t = v.Z.getCurrentConfig({
           location: "announcementManager"
         }, {
           autoTrackExposure: false
         }).enabled,
-        n = (0, v.$)({
+        n = (0, I.$)({
           location: "mayShowAnnouncementModal"
         }),
         r = (0, u.zu)(a.z.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL),

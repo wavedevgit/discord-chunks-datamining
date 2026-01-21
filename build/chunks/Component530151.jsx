@@ -261,8 +261,8 @@ class Y extends Chunk473749.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(g.Exd, {
         percent: t,
         size: g.Exd.Sizes.SMALL,
@@ -280,8 +280,8 @@ class Y extends Chunk473749.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(g.yGy, {
         percents: t,
         size: g.yGy.Sizes.SMALL,
@@ -490,8 +490,8 @@ let W = () => (0, r.jsx)(H, {
   J = [{
     key: "name",
     cellClassName: Chunk654069.nameCell,
-    render: e => (0, r.jsxs)(I.Z, {
-      align: I.Z.Align.CENTER,
+    render: e => (0, r.jsxs)(v.Z, {
+      align: v.Z.Align.CENTER,
       children: [(0, r.jsx)(C.Z, {
         game: e.application,
         className: M.__invalid_gameIcon,
@@ -527,8 +527,8 @@ let W = () => (0, r.jsx)(H, {
         item: e
       })) : i = (0, r.jsx)(Q, {
         item: e
-      }), (0, r.jsxs)(I.Z, {
-        justify: I.Z.Justify.END,
+      }), (0, r.jsxs)(v.Z, {
+        justify: v.Z.Justify.END,
         children: [n, i]
       })
     }
@@ -663,7 +663,7 @@ function $(e, t, n, r) {
   }, [])
 }
 let ee = (0, Chunk112724.Z)(Chunk442837.ZP.connectStores([Chunk812206.Z, Chunk417363.Z, Chunk941128.Z, Chunk210887.Z, Chunk451478.Z], () => ({
-  applications: [...$(x.Z.activeItems, false, v.Z, j.Z), ...$(x.Z.finishedItems, true, v.Z, j.Z)],
+  applications: [...$(x.Z.activeItems, false, I.Z, j.Z), ...$(x.Z.finishedItems, true, I.Z, j.Z)],
   paused: x.Z.paused,
   isFocused: P.Z.isFocused(),
   theme: T.Z.theme

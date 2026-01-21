@@ -80,16 +80,16 @@ let C = Chunk473749.memo(function() {
   } = (0, f.Z)();
   return (0, r.jsx)("section", {
     ref: e,
-    className: a()(I.panels, {
-      [I.disablePointersWhileSorting]: t
+    className: a()(v.panels, {
+      [v.disablePointersWhileSorting]: t
     }),
-    "aria-label": v.intl.string(v.t.StREWK),
+    "aria-label": I.intl.string(I.t.StREWK),
     children: (0, r.jsxs)(o.JcV, {
       containerRef: e,
       children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(c.Z, {
         section: O.jXE.ACTIVITY_PANEL,
         children: (0, r.jsx)(y, {
-          className: I.activityPanel
+          className: v.activityPanel
         })
       }), (0, r.jsx)(c.Z, {
         section: O.jXE.RTC_CONNECTION_PANEL,

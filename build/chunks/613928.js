@@ -8,14 +8,14 @@ require.d(exports, {
   NV: () => N,
   Rm: () => Z,
   _e: () => y,
-  aL: () => I,
+  aL: () => v,
   eO: () => L,
   em: () => S,
   es: () => T,
   jv: () => C,
   mV: () => A,
   rK: () => P,
-  y_: () => v,
+  y_: () => I,
   ye: () => D
 }), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./388685.js");
 var r, Chunk661869 = require("./661869.js"),
@@ -38,11 +38,11 @@ var Chunk306680 = require("./306680.js"),
   Chunk634773 = require("./634773.js"),
   Chunk981631 = require("./981631.js");
 
-function v(e, t) {
+function I(e, t) {
   return "hydration-".concat(e, "-").concat(t)
 }
 require("./388032.jsx");
-var I = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.MORE = 2] = "MORE", r[r.LESS = 3] = "LESS", r[r.MUTED = 4] = "MUTED", r);
+var v = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.MORE = 2] = "MORE", r[r.LESS = 3] = "LESS", r[r.MUTED = 4] = "MUTED", r);
 
 function y(e) {
   return e.type === E.Ni.MESSAGE || e.type === E.Ni.GENERATED_CANDIDATE || e.type === E.Ni.GUILD_EVENT
@@ -55,7 +55,7 @@ async function S(e, t, n) {
   let r = b.Z.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  g.Z.loadHydratedAttempt(v(t, n));
+  g.Z.loadHydratedAttempt(I(t, n));
   let l = i.filter(e => null == r[e.id]),
     a = l.filter(e => e.type === E.Ni.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,

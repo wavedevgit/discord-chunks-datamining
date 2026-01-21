@@ -132,7 +132,7 @@ let V = Chunk473749.memo(function() {
             focusSectionProps: "TITLEBAR_FAST_TRAVEL" === q ? e : true
           }),
           trailing: (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(v.Z, {
+            children: [(0, r.jsx)(I.Z, {
               className: Q
             }), H && (0, r.jsx)(h.Z, {
               className: Q
@@ -171,7 +171,7 @@ let V = Chunk473749.memo(function() {
               children: [(0, r.jsx)(C.H, {
                 focusSectionProps: "HELP" === q ? e : true,
                 className: Q
-              }), V ? (0, r.jsx)(I.M, {
+              }), V ? (0, r.jsx)(v.M, {
                 className: Q
               }) : null]
             }) : (0, r.jsx)(y.Z, {

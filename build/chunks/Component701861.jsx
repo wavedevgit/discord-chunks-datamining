@@ -77,7 +77,7 @@ function A(e) {
       cancelText: j.intl.string(j.t["ETE/oC"]),
       onConfirm: g
     })
-  }, [g, l, t]), m = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), E = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
+  }, [g, l, t]), m = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), E = t.isProvisional, I = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": j.intl.string(j.t.liqwPJ),
@@ -93,7 +93,7 @@ function A(e) {
       action: p
     }), (0, r.jsx)(s.sNh, {
       id: "remove-friend",
-      label: v,
+      label: I,
       action: h,
       color: "danger"
     })]
@@ -134,7 +134,7 @@ class Z extends Chunk473749.PureComponent {
       applicationStream: i,
       isMobile: a,
       isGameRelationship: o
-    }) : (0, r.jsx)(I.Z, {
+    }) : (0, r.jsx)(v.Z, {
       ref: this.peopleListItemRef,
       isFocused: t,
       isActive: m,
@@ -159,12 +159,12 @@ class Z extends Chunk473749.PureComponent {
           showAccountIdentifier: !o && !e.isProvisional
         }), (0, r.jsxs)("div", {
           className: x.actions,
-          children: [(0, r.jsx)(v.Z, {
+          children: [(0, r.jsx)(I.Z, {
             icon: s.kBi,
             tooltip: j.intl.string(j.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
-          }), (0, r.jsx)(v.Z, {
+          }), (0, r.jsx)(I.Z, {
             icon: s.Huf,
             tooltip: j.intl.string(j.t["UKOtz+"]),
             onClick: this.handleOpenActionsMenu,

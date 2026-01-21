@@ -42,7 +42,7 @@ let N = (0, Chunk663993.Un)({
 });
 
 function j(e) {
-  return e < I.x ? I.b.SMALL : I.b.LARGE
+  return e < v.x ? v.b.SMALL : v.b.LARGE
 }
 Chunk442837.ZP.initialize();
 class x extends Chunk473749.PureComponent {
@@ -97,7 +97,7 @@ class x extends Chunk473749.PureComponent {
       return (0, r.jsx)(u.Z, {
         page: y.ZY5.STORE_LISTING,
         root: true,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(I.Z, {
           skuId: t,
           applicationId: n,
           slug: i,
