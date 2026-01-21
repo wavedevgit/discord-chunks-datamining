@@ -2,7 +2,7 @@
 /** chunk id: 329816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => en
+  Z: () => er
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,6 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk248687 = require("./248687.jsx"),
   Chunk183641 = require("./183641.js"),
   Chunk690833 = require("./690833.js"),
+  Chunk638214 = require("./638214.js"),
   Chunk859678 = require("./859678.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk84615 = require("./84615.jsx"),
@@ -56,7 +57,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk111053 = require("./111053.js");
 require("./29973.jsx"), Promise.resolve().then(require.bind(require, 62883)).then(e => {
-  Y.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
+  W.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk335854.E)({
   getDefaultLinkInterceptor: Chunk315263.default
 }), (0, Chunk663993.Un)({
@@ -66,68 +67,71 @@ require("./29973.jsx"), Promise.resolve().then(require.bind(require, 62883)).the
   createPromise: () => Promise.all([n.e("50448"), n.e("82821"), n.e("30634"), n.e("58493")]).then(n.bind(n, 80753)),
   webpackId: 80753
 });
-let ee = (0, Chunk663993.Un)({
+let et = (0, Chunk663993.Un)({
     createPromise: () => n.e("67110").then(n.bind(n, 177741)),
     webpackId: 177741
   }),
-  et = Chunk473749.memo(function() {
-    let e = (0, u.e7)([H.Z], () => H.Z.hasLayers()),
+  en = Chunk473749.memo(function() {
+    let e = (0, u.e7)([Y.Z], () => Y.Z.hasLayers()),
       t = (0, p.s9z)(p.$sL),
-      n = (0, u.e7)([V.default], () => V.default.isAuthenticated());
-    return (0, r.jsx)(X.Dg, {
+      n = (0, u.e7)([H.default], () => H.default.isAuthenticated());
+    return (0, r.jsx)(J.Dg, {
       fixed: true,
       show: e || t || !n
     })
   }),
-  en = function(e) {
+  er = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, Y.getPlatform)(), f = s.tq || s.Em, g = (0, u.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), V = i.useRef(document.body), H = "".concat(g);
-    (0, N.G)(), (0, x.G)("AppSkeleton");
-    let W = (0, D.Co)("AppSkeleton"),
-      X = R.KA.useConfig({
+    } = e, a = (0, W.getPlatform)(), f = s.tq || s.Em, g = (0, u.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), H = i.useRef(document.body), Y = "".concat(g);
+    (0, N.G)(), (0, L.G)("AppSkeleton");
+    let K = (0, D.Co)("AppSkeleton"),
+      J = R.KA.useConfig({
         location: "AppSkeleton"
-      }).enableFastConnectEarlyIdentify;
+      }).enableFastConnectEarlyIdentify,
+      er = (0, x.k8)("AppSkeleton");
     return i.useEffect(() => {
-      Y.isPlatformEmbedded && (W ? d.K.set(D.j4, "json") : d.K.remove(D.j4))
-    }, [W]), i.useEffect(() => {
-      X ? d.K.set(R.bq, true) : d.K.remove(R.bq)
-    }, [X]), (0, r.jsx)(F.w, {
+      W.isPlatformEmbedded && (K ? d.K.set(D.j4, "json") : d.K.remove(D.j4))
+    }, [K]), i.useEffect(() => {
+      J ? d.K.set(R.bq, true) : d.K.remove(R.bq)
+    }, [J]), i.useEffect(() => {
+      er ? d.K.set(x.kQ, true) : d.K.remove(x.kQ)
+    }, [er]), (0, r.jsx)(B.w, {
       children: (0, r.jsxs)(b.Z, {
-        children: [(0, r.jsx)(K.Z, {
+        children: [(0, r.jsx)(z.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(m.T, {
           children: (0, r.jsx)(w.Z, {
             children: (0, r.jsxs)(p.JcV, {
-              containerRef: V,
-              children: [(0, r.jsx)(Q.Co, {}), (0, r.jsx)(q.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(k.Wu, {
-                appContext: J.IlC.APP,
+              containerRef: H,
+              children: [(0, r.jsx)(X.Co, {}), (0, r.jsx)(Q.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(U.Wu, {
+                appContext: $.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(L.yP, {
-                  children: [null != a ? (0, r.jsx)(et, {}) : null, (0, r.jsxs)("div", {
-                    className: o()($.appAsidePanelWrapper, f && $.mobileAppAsidePanelWrapper),
+                children: (0, r.jsxs)(j.yP, {
+                  children: [null != a ? (0, r.jsx)(en, {}) : null, (0, r.jsxs)("div", {
+                    className: o()(ee.appAsidePanelWrapper, f && ee.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
-                      className: $.notAppAsidePanel,
+                      className: ee.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
                       children: (0, r.jsx)(C.m, {
-                        children: (0, r.jsx)(M.OR, {
+                        children: (0, r.jsx)(k.OR, {
                           children: (0, r.jsx)(y.Z.Provider, {
                             value: O.Z,
                             children: (0, r.jsx)(T.p, {
-                              children: (0, r.jsxs)(G.ov, {
+                              children: (0, r.jsxs)(Z.ov, {
                                 children: [(0, r.jsx)("div", {
-                                  className: o()(f ? $.mobileApp : $.app),
+                                  className: o()(f ? ee.mobileApp : ee.app),
                                   children: t
-                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(B.Z, {}), (0, r.jsx)(j.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(L.Un, {}), (0, r.jsx)(M.ot, {}), (0, r.jsx)(p.Ixi, {
-                                  appContext: J.IlC.APP
-                                }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(U.Z, {}), (0, r.jsx)(ee, {}), (0, r.jsx)(Z.Z, {})]
+                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(V.Z, {}), (0, r.jsx)(M.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(j.Un, {}), (0, r.jsx)(k.ot, {}), (0, r.jsx)(p.Ixi, {
+                                  appContext: $.IlC.APP
+                                }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(G.Z, {}), (0, r.jsx)(et, {}), (0, r.jsx)(F.Z, {})]
                               })
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(z.Z, {
+                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(q.Z, {
                       mobile: f
                     }), (0, r.jsx)(P.Z, {
                       mobile: f
@@ -139,5 +143,5 @@ let ee = (0, Chunk663993.Un)({
           })
         })]
       })
-    }, H)
+    }, Y)
   }

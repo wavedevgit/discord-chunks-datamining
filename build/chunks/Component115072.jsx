@@ -69,7 +69,7 @@ function T(e) {
         return "Linux"
     }
     return ""
-  }((0, P.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, ec] = r.useState(""), [eu, ed] = r.useState(""), [em, ep] = r.useState(false), [ef, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
+  }((0, P.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, ec] = r.useState(""), [eu, ed] = r.useState(""), [em, ef] = r.useState(false), [ep, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     s.tn.get({
@@ -79,8 +79,8 @@ function T(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "b98e13e9aece4e6a88524e66285e96e3fc580968" !== e.body.hash) {
-        let e = new Date("1769009093844"),
+      if (null != e.body && "f80c6810794e078c3f478a7d7824d5f95a6b4115" !== e.body.hash) {
+        let e = new Date("1769015013347"),
           t = new Date,
           n = (0, S.TD)(t, e);
         n.hours > 6 && eb(n.hours)
@@ -91,9 +91,9 @@ function T(e) {
       let e = j.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    ej = (0, o.e7)([f.C], () => {
+    ej = (0, o.e7)([p.C], () => {
       var e;
-      return null == (e = f.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
+      return null == (e = p.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
       overridesInfo: eO
@@ -112,9 +112,9 @@ function T(e) {
     });
   async function ew() {
     var e, t;
-    if (eg(false), "" === R || "" === H || null == B) return void ep(true);
+    if (eg(false), "" === R || "" === H || null == B) return void ef(true);
     let r = null == F || null == (e = F.features) ? true : e.find(e => (0, w.pD)(e) === X);
-    ev(true), ep(false);
+    ev(true), ef(false);
     let l = (0, _.D)(U.map(e => {
         let {
           item: t
@@ -186,10 +186,10 @@ function T(e) {
           true !== n && Y(e => e.some(e => {
             var t;
             return e.filename === n.name && (null == (t = e.item.file) ? true : t.size) === n.size
-          }) ? e : [...e, new p.ZP({
+          }) ? e : [...e, new f.ZP({
             id: (0, l.Z)(),
             file: n,
-            platform: p.ow.WEB,
+            platform: f.ow.WEB,
             origin: "clipboard"
           })])
         }
@@ -216,7 +216,7 @@ function T(e) {
     }, {
       variant: "primary",
       text: ey ? "Submit and Open Report" : "Submit Report",
-      loading: ef,
+      loading: ep,
       onClick: ew,
       autoFocus: false
     }],
@@ -397,10 +397,10 @@ function T(e) {
             ref: M,
             onChange: e => {
               var t, n;
-              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && Y([...U, ...Array.from(e.currentTarget.files).map(e => new p.ZP({
+              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && Y([...U, ...Array.from(e.currentTarget.files).map(e => new f.ZP({
                 id: (0, l.Z)(),
                 file: e,
-                platform: p.ow.WEB,
+                platform: f.ow.WEB,
                 origin: "file_picker"
               }))])
             },
