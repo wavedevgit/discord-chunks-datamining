@@ -2,53 +2,62 @@
 /** chunk id: 44379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => c
-});
+  H: () => d
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk937615 = require("./937615.js"),
   Chunk576929 = require("./576929.jsx"),
   Chunk224319 = require("./224319.js");
 
-function c(e) {
+function d(e) {
   let {
     label: t,
-    lineItems: n,
-    intervalType: c,
-    intervalCount: u,
-    currency: d,
-    defaultExpanded: f = false
-  } = e, p = i.useMemo(() => n.reduce((e, t) => e + t.amount, 0), [n]), _ = (0, o.T4)(p, d), h = (0, o.og)(_, c, u);
-  return (0, r.jsxs)(s.O, {
+    totalLineItemLabel: n,
+    lineItems: a,
+    intervalType: d,
+    intervalCount: f,
+    currency: p,
+    defaultExpanded: _ = false
+  } = e, [h, m] = i.useState(_), g = i.useMemo(() => a.reduce((e, t) => e + t.amount, 0), [a]), E = (0, l.T4)(g, p), b = (0, l.og)(E, d, f), y = (0, r.jsxs)(c.O, {
     label: t,
-    defaultExpanded: f,
-    isDisabled: n.length <= 1,
-    collapsedContent: (0, r.jsx)(a.Text, {
+    defaultExpanded: _,
+    isDisabled: a.length <= 0,
+    onExpandedChange: m,
+    collapsedContent: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
-      children: h
+      children: b
     }),
-    children: [n.map(e => {
+    children: [a.map(e => {
       let {
         id: t,
         label: n,
         amount: i,
         icon: a,
-        tooltip: l
-      } = e, f = (0, o.T4)(i, d), p = (0, o.og)(f, c, u);
-      return (0, r.jsx)(s.r, {
+        tooltip: o
+      } = e, s = (0, l.T4)(i, p), u = (0, l.og)(s, d, f);
+      return (0, r.jsx)(c.r, {
         label: n,
-        value: p,
+        value: u,
         icon: a,
-        tooltip: l
+        tooltip: o
       }, t)
     }), (0, r.jsx)("div", {
-      className: l.separator
-    }), (0, r.jsx)(s.r, {
-      label: t,
-      value: h,
+      className: u.separator
+    }), (0, r.jsx)(c.r, {
+      label: null != n ? n : t,
+      value: b,
       color: "text-strong"
     })]
+  });
+  return (0, r.jsx)("div", {
+    className: o()({
+      [u.container]: h
+    }),
+    children: y
   })
 }

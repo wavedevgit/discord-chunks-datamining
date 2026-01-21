@@ -1,6 +1,6 @@
 /** Chunk was on 893 **/
-/** chunk id: 734452, original params: a,e,s (module,exports,require) **/
+/** chunk id: 734452, original params: e,r,a (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => t
 });
-let t = JSON.parse('{"Zxav97":["Total Due"],"pDVleg":["Total savings ",[1,"amount"]],"eoXh7B":["Order Summary"]}')
+let t = JSON.parse('{"Zxav97":["Total Due"],"pDVleg":["Total savings ",[1,"amount"]],"ajn5LL":["New Monthly Recurring"],"jxUJkZ":["New Recurring Amount"],"FNijW7":["New Yearly Recurring"],"Tt3O81":["Next renewal"],"57B1ks":["Next renewal ",[3,"renewalDate","short"]],"eoXh7B":["Order Summary"]}')
