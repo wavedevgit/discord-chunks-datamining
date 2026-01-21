@@ -139,15 +139,21 @@ let X = e => {
       ew === s.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eL(Q.L.TAKE_ACTION), O.default.track(q.rMx.NITRO_TAB_VISITED, {
         badge_decorator: I,
         has_premium: ed
-      }), null != eU && eG(Q.L.USER_DISMISS), null != ez && eY(Q.L.USER_DISMISS)
+      }), null != eU && eG(Q.L.USER_DISMISS), null != ez && eY(Q.L.USER_DISMISS), eH === s.z.PREMIUM_GROUP_POPOVER && eB(Q.L.USER_DISMISS)
     };
-    if (eP === K.a$.NONE || eb || (I = 7, n = (0, r.jsx)(N.Z, {
-        className: "",
-        startsAt: eA,
-        endsAt: eZ,
-        messageStyle: p.aj.SHORT_TIME,
-        upperCase: true
-      })), null != eV && "premiumTab" === eV.properties.properties.oneofKind) n = (0, r.jsx)(R.Z, {
+    eP === K.a$.NONE || eb || (I = 7, n = (0, r.jsx)(N.Z, {
+      className: "",
+      startsAt: eA,
+      endsAt: eZ,
+      messageStyle: p.aj.SHORT_TIME,
+      upperCase: true
+    }));
+    let eq = eO && eH === s.z.PREMIUM_GROUP_POPOVER;
+    if (eq) n = (0, r.jsx)(u.Cts, {
+      type: "new",
+      variant: "expressive"
+    }), I = 10;
+    else if (null != eV && "premiumTab" === eV.properties.properties.oneofKind) n = (0, r.jsx)(R.Z, {
       componentId: eV.id,
       badgeCopy: eV.properties.properties.premiumTab.badgeLabel,
       acknowledgedBadgeCopy: eV.properties.properties.premiumTab.acknowledgedBadgeLabel,
@@ -210,7 +216,7 @@ let X = e => {
         has_premium: ed
       }), (0, M.ZL)()
     });
-    let eq = (0, r.jsx)(d.Qj, ($ = function(e) {
+    let eQ = (0, r.jsx)(d.Qj, ($ = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -251,18 +257,18 @@ let X = e => {
       Object.defineProperty($, e, Object.getOwnPropertyDescriptor(ee, e))
     }), $));
     return eC ? (0, r.jsx)(B.C, {
-      children: eq
+      children: eQ
     }) : ex && eH === s.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === I ? (0, r.jsx)(k.Z, {
       targetElementRef: er,
       discountOffer: em,
       premiumSubscription: es,
       dismissCoachmark: eB,
-      children: eq
-    }) : eO && eH === s.z.PREMIUM_GROUP_POPOVER ? (0, r.jsx)(w.x, {
+      children: eQ
+    }) : eq ? (0, r.jsx)(w.x, {
       targetElementRef: er,
       dismissPopover: eB,
-      children: eq
+      children: eQ
     }) : eW ? (0, r.jsx)(V.Z, {
-      children: eq
-    }) : eq
+      children: eQ
+    }) : eQ
   }

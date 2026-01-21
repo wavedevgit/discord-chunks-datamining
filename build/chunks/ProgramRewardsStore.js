@@ -2,7 +2,7 @@
 /** chunk id: 468208, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => P
 }), require("./388685.js");
 var r, Chunk599582 = require("./599582.js"),
   Chunk995638 = require("./995638.js"),
@@ -15,9 +15,10 @@ var r, Chunk599582 = require("./599582.js"),
   Chunk594174 = require("./594174.js"),
   Chunk70956 = require("./70956.js"),
   Chunk111361 = require("./111361.js"),
-  Chunk165299 = require("./165299.js");
+  Chunk165299 = require("./165299.js"),
+  Chunk474936 = require("./474936.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,15 +26,15 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = 864e5,
-  E = 3e4,
-  b = 36e5,
-  y = new Chunk26842.j({
-    ttlMs: g
+let E = 864e5,
+  b = 3e4,
+  y = 36e5,
+  O = new Chunk26842.j({
+    ttlMs: E
   });
 
-function O() {
-  let e = y.getValue();
+function v() {
+  let e = O.getValue();
   if (null == e) returnfalse;
   let t = new Date;
   for (let n of e.values()) {
@@ -47,46 +48,46 @@ function O() {
   returnfalse
 }
 
-function v() {
-  (0, d.QI)(f.default.getCurrentUser()) ? y.setTtl(E): O() ? y.setTtl(b) : y.setTtl(g)
-}
-
 function S() {
-  y.setLoading()
+  (0, d.QI)(f.default.getCurrentUser()) ? O.setTtl(b): v() ? O.setTtl(y) : O.setTtl(E)
 }
 
-function I(e) {
+function I() {
+  O.setLoading()
+}
+
+function T(e) {
   let {
     programRewards: t
   } = e;
-  if (!y.isLoading()) returnfalse;
+  if (!O.isLoading()) returnfalse;
   let n = new Map;
   t.forEach(e => {
     n.set(e.reward_program, e)
-  }), y.setValue(n), v()
-}
-
-function T() {
-  if (!y.isLoading()) returnfalse;
-  y.setError()
+  }), O.setValue(n), S()
 }
 
 function C() {
-  y.clear()
+  if (!O.isLoading()) returnfalse;
+  O.setError()
 }
-class A extends(r = Chunk442837.ZP.PersistedStore) {
+
+function A() {
+  O.clear()
+}
+class N extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(f.default), (null == e ? true : e.cache) != null) {
       let t = new Map(e.cache.value);
-      y.restore({
+      O.restore({
         value: t,
         fetchedAt: e.cache.fetchedAt
       })
     }
-    v()
+    S()
   }
   getState() {
-    let e = y.serialize();
+    let e = O.serialize();
     return {
       cache: null != e ? {
         value: Array.from(e.value.entries()),
@@ -125,6 +126,9 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     }
     returntrue
   }
+  hasNecessaryPremiumSubscriptionStatus() {
+    return (0, _.M5)(f.default.getCurrentUser(), m.PremiumTypes.TIER_2)
+  }
   isInProperTreatments() {
     let {
       isInTreatment: e
@@ -132,40 +136,40 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     return e
   }
   isFetching() {
-    return y.isLoading()
+    return O.isLoading()
   }
   isFetched() {
-    return y.isValid()
+    return O.isValid()
   }
   hasCachedValue() {
-    return null != y.getValue()
+    return null != O.getValue()
   }
   isReady() {
-    return !this.isFetching() && (this.hasCachedValue() || !this.isInProperTreatments() || this.isError() || !(0, _.I5)(f.default.getCurrentUser()))
+    return !this.isFetching() && (this.hasCachedValue() || !this.isInProperTreatments() || this.isError() || !this.hasNecessaryPremiumSubscriptionStatus())
   }
   shouldFetch() {
-    return !!this.isInProperTreatments() && !!(0, _.I5)(f.default.getCurrentUser()) && y.shouldFetch()
+    return !!this.isInProperTreatments() && !!this.hasNecessaryPremiumSubscriptionStatus() && O.shouldFetch()
   }
   isError() {
-    return y.isError()
+    return O.isError()
   }
   getStatus() {
-    return y.getStatus()
+    return O.getStatus()
   }
   getRewardForProgram(e) {
     var t;
-    return null == (t = y.getValue()) ? true : t.get(e)
+    return null == (t = O.getValue()) ? true : t.get(e)
   }
   forceExpire() {
-    y.forceExpire()
+    O.forceExpire()
   }
 }
-m(A, "displayName", "ProgramRewardsStore"), m(A, "persistKey", "ProgramRewardsStore");
-let N = new A(Chunk570140.Z, {
-  LOGOUT: C,
-  PROGRAM_REWARDS_FETCH: S,
-  PROGRAM_REWARDS_FETCH_SUCCESS: I,
-  PROGRAM_REWARDS_FETCH_FAILURE: T,
-  CURRENT_USER_UPDATE: v,
-  CONNECTION_OPEN: v
+g(N, "displayName", "ProgramRewardsStore"), g(N, "persistKey", "ProgramRewardsStore");
+let P = new N(Chunk570140.Z, {
+  LOGOUT: A,
+  PROGRAM_REWARDS_FETCH: I,
+  PROGRAM_REWARDS_FETCH_SUCCESS: T,
+  PROGRAM_REWARDS_FETCH_FAILURE: C,
+  CURRENT_USER_UPDATE: S,
+  CONNECTION_OPEN: S
 })
