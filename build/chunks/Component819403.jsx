@@ -25,15 +25,15 @@ function m(e) {
   let n = (0, b.Z)(),
     m = null == n ? true : n.id,
     O = null == n ? true : n.guild_id,
-    h = (0, l.e7)([d.Z], () => d.Z.getGuild(O), [O]),
+    h = (0, l.e7)([u.Z], () => u.Z.getGuild(O), [O]),
     j = (0, l.e7)([s.Z], () => null != m ? s.Z.getVoiceStateForChannel(m, e.id) : null, [m, e.id]),
-    y = (null == (t = u.default.getCurrentUser()) ? true : t.id) === e.id,
+    y = (null == (t = d.default.getCurrentUser()) ? true : t.id) === e.id,
     P = (0, Z.Z)(),
     x = (0, l.e7)([g.ZP], () => g.ZP.getPermissionsForUser(e.id, m), [m, e.id]),
     S = (0, f.B)(m),
     E = (0, p.sP)();
   if (null == n || null == h || null == j || x.speaker) return null;
-  let I = () => {
+  let C = () => {
     if (y) {
       if ((0, p.u1)(n.id)) return void o.Z.showAgeVerificationGetStartedModal({
         entryPoint: a.cU.STAGE_CHANNEL_RAISE_HAND
@@ -44,10 +44,10 @@ function m(e) {
   return y && E ? null : S ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
     label: y ? v.intl.string(v.t["W6c/Vf"]) : v.intl.string(v.t.VUCWcO),
-    action: I
+    action: C
   }) : P && y ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
     label: v.intl.string(v.t["W6c/Vf"]),
-    action: I
+    action: C
   }) : null
 }

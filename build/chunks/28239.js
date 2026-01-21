@@ -22,40 +22,40 @@ var Chunk473749 = require("./473749.js"),
 
 function h(e, t) {
   var n, h, j, Z;
-  let C = (0, o.e7)([l.Z], () => l.Z.getGuild(e)),
-    _ = (0, o.e7)([a.Z], () => a.Z.hasLayers()),
+  let _ = (0, o.e7)([l.Z], () => l.Z.getGuild(e)),
+    C = (0, o.e7)([a.Z], () => a.Z.hasLayers()),
     w = null != (j = (0, c.Z)(e)) && j,
     I = (0, u.q8)(e, t),
     E = (0, o.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     P = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
     T = (0, d.ZP)(e, P),
     S = null == P ? true : P.storeRemovalDate,
-    N = null == E || null == (h = E.allPowerups) ? true : h[i.XW],
-    y = (0, o.e7)([l.Z], () => {
+    y = null == E || null == (h = E.allPowerups) ? true : h[i.XW],
+    N = (0, o.e7)([l.Z], () => {
       var t;
       return null == (t = l.Z.getGuild(e)) ? true : t.features
     }),
-    O = null != (Z = null == y ? true : y.has(g.GuildFeatures.PARTNERED)) && Z,
+    O = null != (Z = null == N ? true : N.has(g.GuildFeatures.PARTNERED)) && Z,
     {
       onActivate: A,
       error: R
-    } = (0, p.Z)(e, N);
+    } = (0, p.Z)(e, y);
   (0, m.Z)(R);
-  let L = !_ && w && I && null != P && !O && T.type === v.A3.POWERUP_ACTIVATED && null != S && null != N && null != C,
+  let L = !C && w && I && null != P && !O && T.type === v.A3.POWERUP_ACTIVATED && null != S && null != y && null != _,
     k = r.useCallback(e => {
       e.stopPropagation(), A()
     }, [A]),
     U = r.useMemo(() => {
       if (!L) return null;
       let e = (0, f.Z)(S),
-        t = C.premiumTier === g.Eu4.TIER_2 ? b.intl.string(x.default["0uo/LD"]) : true;
+        t = _.premiumTier === g.Eu4.TIER_2 ? b.intl.string(x.default["0uo/LD"]) : true;
       return {
         firstHeader: P.title,
         secondHeader: b.intl.formatToPlainString(x.default["8imxAq"], {
           dateString: e
         }),
         firstBody: b.intl.formatToPlainString(x.default["/bW9tW"], {
-          serverName: C.name
+          serverName: _.name
         }),
         secondBody: b.intl.formatToPlainString(x.default.D09fdi, {
           dateString: e,
@@ -65,7 +65,7 @@ function h(e, t) {
         primaryButtonText: t,
         onPrimaryClick: null != t ? k : true
       }
-    }, [L, P, S, C, k]);
+    }, [L, P, S, _, k]);
   return {
     shouldShow: L,
     modalConfig: U

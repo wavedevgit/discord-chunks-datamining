@@ -2,8 +2,9 @@
 /** chunk id: 620957, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Bm: () => a,
+  F7: () => s,
   Se: () => o,
-  X$: () => s
+  X$: () => c
 });
 var Chunk704215 = require("./704215.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -18,6 +19,10 @@ function o(e, t) {
 }
 
 function s(e) {
+  return (0, i.US)(e ? [r.z.GAME_SERVER_HOSTING_BATCH_RELEASE_V1_COACHMARK] : [])
+}
+
+function c(e) {
   return (0, i.bf)(e ? r.z.GUILD_POWERUP_NOTIFICATION : null, {
     cooldownDurationMs: l.dU
   })

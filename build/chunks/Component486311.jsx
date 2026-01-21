@@ -108,6 +108,11 @@ let C = {
             guildId: t,
             channelRowRef: _
           }, E.popout));
+        case f.Jk.GAME_SERVER_NEW_GAMES:
+          return (0, r.jsx)(m.f7, j({
+            guildId: t,
+            channelRowRef: _
+          }, E.popout));
         default:
           return (0, r.jsx)("div", {})
       }

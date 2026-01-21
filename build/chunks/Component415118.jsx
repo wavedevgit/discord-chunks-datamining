@@ -38,8 +38,8 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     guildId: n,
-    showModalItems: a = true,
-    showMediaItems: o = false,
+    showModalItems: o = true,
+    showMediaItems: a = false,
     showChatItems: u = true,
     context: T,
     onSelect: D
@@ -50,14 +50,14 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   }, L = (0, I.Z)({
     userId: t.id,
     guildId: n
-  }), w = (0, P.Z)(t, n, T), k = (0, p.Z)(t.id, T), R = (0, N.Z)(t.id), B = (0, E.Z)({
+  }), k = (0, P.Z)(t, n, T), w = (0, j.Z)(t.id, T), R = (0, N.Z)(t.id), V = (0, E.Z)({
     user: t,
     context: T
-  }), V = (0, m.Z)({
+  }), B = (0, m.Z)({
     user: t,
     guildId: n,
     context: T
-  }), q = (0, f.Z)({
+  }), q = (0, Z.Z)({
     user: t
   }), G = (0, x.Z)(t.id), F = (0, C.Z)(t.id), Y = (0, c.Z)({
     guildId: n,
@@ -67,14 +67,14 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   }), K = (0, g.Z)({
     user: t,
     guildId: n
-  }), Q = (0, j.Z)({
+  }), Q = (0, p.Z)({
     user: t,
     guildId: n
-  }), H = (0, s.Z)(null, t), W = (0, Z.Z)({
+  }), H = (0, s.Z)(null, t), W = (0, f.Z)({
     user: t
   }), X = (0, b.Z)({
     user: t
-  }), J = (0, y.Z)({
+  }), J = (0, S.Z)({
     user: t
   }), z = (0, h.Z)({
     user: t,
@@ -84,7 +84,7 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, O.Z)(t, n), et = (0, M.Z)(t.id, n), en = (0, S.Z)(t, n), el = (0, d.Z)({
+  }), ee = (0, O.Z)(t, n), et = (0, M.Z)(t.id, n), en = (0, y.Z)(t, n), el = (0, d.Z)({
     id: t.id,
     label: A.intl.string(A.t["/AXYnE"])
   }), ei = t.isNonUserBot();
@@ -95,13 +95,13 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onSelect: D,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [a && L, u && w, k, B, a && V, a && q, R]
-      }), o && (0, l.jsx)(i.kSQ, {
+        children: [o && L, u && k, w, V, o && B, o && q, R]
+      }), a && (0, l.jsx)(i.kSQ, {
         children: G
       }), (0, l.jsx)(i.kSQ, {
-        children: a && H
+        children: o && H
       }), (0, l.jsxs)(i.kSQ, {
-        children: [o && F, a && Y, a && Q, W, X, J, K, a && $, a && z]
+        children: [a && F, o && Y, o && Q, W, X, J, K, o && $, o && z]
       }), (0, l.jsx)(i.kSQ, {
         children: ee
       }), (0, l.jsxs)(i.kSQ, {

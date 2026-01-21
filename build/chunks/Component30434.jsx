@@ -2,51 +2,58 @@
 /** chunk id: 30434, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
-});
+  Z: () => p
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk782425 = require("./782425.js"),
+  Chunk907331 = require("./907331.js"),
   Chunk607070 = require("./607070.js"),
+  Chunk28682 = require("./28682.js"),
   Chunk996435 = require("./996435.js"),
   Chunk63224 = require("./63224.js");
 
-function c(e) {
+function p(e) {
   let {
     node: t,
     children: n
-  } = e, c = i.useRef(null), u = i.useRef(null), d = i.useCallback(() => {
-    null != u.current && (cancelAnimationFrame(u.current), u.current = null)
+  } = e, a = i.useRef(false), [p, _] = i.useState(false), h = (0, l.O)(e => {
+    a.current = e, e && _(false)
+  }, .5), m = i.useRef(null), g = i.useCallback(() => {
+    null != m.current && (cancelAnimationFrame(m.current), m.current = null)
   }, []);
   return i.useEffect(() => {
-    let e = s.Z.subscribe(e => {
+    let e = d.Z.subscribe(e => {
       let {
         navTransition: t
       } = e;
       return t
     }, e => {
-      d(), null != e && e.targetKey === t.key && null == e.targetAccordionKey && (u.current = requestAnimationFrame(() => {
-        var t, n;
-        let r = e.animateScroll && !o.Z.useReducedMotion,
-          i = null != (n = e.scrollBlock) ? n : "start";
-        null == (t = c.current) || t.scrollIntoView({
-          behavior: r ? "smooth" : "auto",
+      if (g(), null == e || e.targetKey !== t.key || null != e.targetAccordionKey) return;
+      let n = e.animateScroll && !c.Z.useReducedMotion;
+      n || t.type === u.Jq.CATEGORY || _(true), m.current = requestAnimationFrame(() => {
+        var t, r;
+        let i = null != (r = e.scrollBlock) ? r : "start";
+        null == (t = h.current) || t.scrollIntoView({
+          behavior: n ? "smooth" : "auto",
           block: i
-        }), s.Z.setState({
+        }), d.Z.setState({
           navTransition: true
-        })
-      }))
+        }), a.current && _(false)
+      })
     }, {
-      equalityFn: a.X,
+      equalityFn: s.X,
       fireImmediately: true
     });
     return () => {
-      e(), d()
+      e(), g()
     }
-  }, [d, t.key]), (0, r.jsx)("div", {
-    ref: c,
+  }, [g, t.key, t.type, h]), (0, r.jsx)("div", {
+    ref: h,
     "data-debug-key": t.key,
-    className: l.container,
+    className: o()(f.container, p && f.flash),
     children: n
   })
 }

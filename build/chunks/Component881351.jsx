@@ -1,7 +1,7 @@
 /** Chunk was on 69220 **/
 /** chunk id: 881351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => N
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -31,48 +31,48 @@ var Chunk481060 = require("./481060.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     channelId: o,
     showMediaItems: a = false,
-    mediaEngineContext: u,
-    onSelect: _,
+    mediaEngineContext: d,
+    onSelect: N,
     onInteraction: U,
-    appContext: N = C.IlC.APP,
-    friendGroupId: D
+    appContext: _ = I.IlC.APP,
+    friendGroupId: k
   } = e, {
-    enableTopNavButton: k
+    enableTopNavButton: D
   } = (0, c.Cq)({
     location: "user-context-menu"
   }), w = (0, S.Z)({
     userId: t.id,
     guildId: n,
     channelId: o
-  }), L = (0, y.Z)(t.id, N), T = (0, m.Z)({
+  }), L = (0, y.Z)(t.id, _), T = (0, m.Z)({
     user: t
   }), M = (0, p.Z)({
     user: t,
     guildId: n,
     channelId: o,
-    context: N
+    context: _
   }), V = (0, Z.Z)({
     user: t
   }), G = (0, j.Z)({
     user: t,
-    groupId: D
-  }), F = (0, I.Z)(t.id), R = (0, E.Z)(t.id), B = (0, x.Z)(t.id, u), W = (0, h.Z)({
+    groupId: k
+  }), F = (0, C.Z)(t.id), R = (0, E.Z)(t.id), B = (0, x.Z)(t.id, d), W = (0, h.Z)({
     user: t
-  }), H = (0, d.Z)(null, t), Q = (0, g.Z)({
+  }), H = (0, u.Z)(null, t), Q = (0, g.Z)({
     user: t
   }), q = (0, b.Z)({
     user: t
-  }), Y = (0, P.Z)({
+  }), K = (0, P.Z)({
     user: t
-  }), J = (0, v.Z)({
+  }), Y = (0, v.Z)({
     user: t
-  }), K = (0, O.Z)({
+  }), J = (0, O.Z)({
     user: t
   }), X = (0, s.Z)({
     id: t.id,
@@ -82,19 +82,19 @@ let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     navId: "user-context",
     onClose: r.Zy,
     "aria-label": A.intl.string(A.t.liqwPJ),
-    onSelect: _,
+    onSelect: N,
     onInteraction: U,
     children: [!$ && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.kSQ, {
         children: z
       }), (0, i.jsxs)(l.kSQ, {
-        children: [w, L, T, M, V, k ? G : null, F]
+        children: [w, L, T, M, V, D ? G : null, F]
       }), a && (0, i.jsx)(l.kSQ, {
         children: R
       }), (0, i.jsx)(l.kSQ, {
         children: H
       }), (0, i.jsxs)(l.kSQ, {
-        children: [a && B, W, Q, q, Y, K, J]
+        children: [a && B, W, Q, q, K, J, Y]
       })]
     }), (0, i.jsx)(l.kSQ, {
       children: X

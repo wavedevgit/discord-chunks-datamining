@@ -355,6 +355,10 @@ class S extends Chunk47770.Z {
     var n, r;
     null == (n = (r = (0, d.zS)()).setClipsMLPipelineTypeEnabled) || n.call(r, e, t)
   }
+  setClipsMaxPendingTasks(e) {
+    var t, n;
+    null == (t = (n = (0, d.zS)()).setClipsMaxPendingTasks) || t.call(n, e)
+  }
   saveClip(e, t) {
     let n = (0, d.zS)();
     return null == n.setClipBufferLength || null == n.saveClip ? Promise.reject("unsupported") : new Promise((r, i) => {

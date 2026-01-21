@@ -32,13 +32,13 @@ function w(e) {
     position: o
   } = e;
   return t = n && false !== i ? x.vW.FULL : n && false === i ? x.vW.HALF : x.vW.NONE, (0, r.jsxs)("div", {
-    className: _.progressContainer,
+    className: C.progressContainer,
     children: [(0, r.jsx)("div", {
-      className: l()(_.progress, _[o], _[t])
+      className: l()(C.progress, C[o], C[t])
     }), (0, r.jsx)("div", {
-      className: l()(_.boostContainer, C.boostProgressBackground, {
-        [_.boostContainerActive]: n,
-        [C.active]: n
+      className: l()(C.boostContainer, _.boostProgressBackground, {
+        [C.boostContainerActive]: n,
+        [_.active]: n
       }),
       children: (0, r.jsx)(u.Ucv, {
         size: "sm",
@@ -62,12 +62,12 @@ function I(e) {
     return null == t ? true : t.map((e, t) => {
       let i = (0, c.P)(e.perkIcon);
       return (0, r.jsxs)("div", {
-        className: _.perkRow,
+        className: C.perkRow,
         children: [(0, r.jsx)(i, {
           color: l,
           size: "sm"
         }), (0, r.jsx)(a.xvT, {
-          className: _.perkText,
+          className: C.perkText,
           color: o,
           variant: "text-sm/medium",
           children: e.getCopy()
@@ -76,9 +76,9 @@ function I(e) {
     })
   }, [n, l, o]);
   return (0, r.jsxs)("div", {
-    className: _.perkRowContainer,
+    className: C.perkRowContainer,
     children: [s, (0, r.jsx)("div", {
-      className: _.perkRow,
+      className: C.perkRow,
       children: (0, r.jsx)(a.xvT, {
         color: o,
         variant: "text-sm/medium",
@@ -103,21 +103,21 @@ function E(e) {
     [j, Z] = i.useState(true);
   (0, g.Z)(j), t = 0 === o ? x.m.START : null == a ? x.m.END : x.m.MIDDLE;
   let {
-    textColor: C
+    textColor: _
   } = (0, v.Z)(c);
   return (0, r.jsxs)(m.Z, {
     guildId: n,
     powerup: l,
-    className: _.card,
+    className: C.card,
     children: [(0, r.jsx)(w, {
       position: t,
       active: c,
       nextActive: null != a ? b : true
     }), (0, r.jsx)(f.Q9, {
       title: l.title,
-      textColor: C,
+      textColor: _,
       footer: !h && (0, r.jsx)(m.g, {
-        className: _.footer,
+        className: C.footer,
         guildId: n,
         powerup: l
       }),
