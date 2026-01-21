@@ -92,10 +92,15 @@ let C = {
       null != e && Object.entries(e).forEach(e => {
         let [t, n] = e;
         if (null != n) {
-          let e = (0, f.$j)(n.base64);
-          n.src = e, Z.current.push(e), A(e => y(j({}, e), {
+          if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) A(e => y(j({}, e), {
             [t]: n
-          }))
+          }));
+          else if ("" !== n.base64 && null != n.base64) {
+            let e = (0, f.$j)(n.base64);
+            n.src = e, Z.current.push(e), A(e => y(j({}, e), {
+              [t]: n
+            }))
+          }
         }
       })
     }, [t.config.stillFrames]);
@@ -168,8 +173,11 @@ let C = {
             src: O ? g : v,
             alt: "",
             width: 450
-          }), S && (0, a.jsx)(b.Z, {
-            config: U
+          }), S && (0, a.jsx)("div", {
+            className: x.profileEffectPreviewContent,
+            children: (0, a.jsx)(b.Z, {
+              config: U
+            })
           })]
         }), (0, a.jsxs)("div", {
           className: x.col,
@@ -316,10 +324,18 @@ let C = {
                   children: [(0, a.jsx)(c.Heading, {
                     variant: "heading-sm/bold",
                     children: t
-                  }), (0, a.jsx)("img", {
-                    src: null == n ? true : n.src,
-                    className: x.stillFramePreview,
-                    alt: ""
+                  }), (0, a.jsxs)("div", {
+                    className: x.stillFramePreviewWrapper,
+                    children: [(0, a.jsx)("img", {
+                      src: O ? g : v,
+                      alt: "",
+                      className: x.stillFramePlaceholder,
+                      "aria-hidden": true
+                    }), (null == n ? true : n.src) != null && "" !== n.src && (0, a.jsx)("img", {
+                      src: n.src,
+                      className: x.stillFramePreview,
+                      alt: ""
+                    })]
                   }), null != n && (0, a.jsx)(c.Button, {
                     variant: "critical-secondary",
                     size: "sm",
