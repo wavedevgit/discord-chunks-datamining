@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 512303, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +9,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk232567 = require("./232567.js"),
-  Chunk700582 = require("./700582.jsx"),
   Chunk906732 = require("./906732.jsx"),
   Chunk592180 = require("./592180.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -21,63 +20,63 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk327420 = require("./327420.js");
 
-function v(e) {
-  var t, n, v, j;
+function h(e) {
+  var t, n, h, v;
   let {
-    analyticsLocations: S
-  } = (0, u.ZP)(), E = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.Y.USER_INSTALL], P = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.Y.GUILD_INSTALL], I = null == (v = e.interactionMetadata) ? true : v.user.id, _ = (0, o.e7)([y.default], () => y.default.getUser(E)), T = (0, o.e7)([m.Z], () => m.Z.getGuild(P)), Z = p.Z.getChannel(e.channel_id), w = null == Z ? true : Z.getGuildId(), x = (0, o.e7)([y.default], () => y.default.getUser(I));
+    analyticsLocations: j
+  } = (0, c.ZP)(), S = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.Y.USER_INSTALL], E = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.Y.GUILD_INSTALL], P = null == (h = e.interactionMetadata) ? true : h.user.id, T = (0, o.e7)([m.default], () => m.default.getUser(S)), I = (0, o.e7)([b.Z], () => b.Z.getGuild(E)), _ = p.Z.getChannel(e.channel_id), Z = null == _ ? true : _.getGuildId(), A = (0, o.e7)([m.default], () => m.default.getUser(P));
   if (i.useEffect(() => {
-      null == _ && null != E && (0, s.PR)(E)
-    }, [_, E]), !(0, d.a)(e)) return null;
-  null == x && (x = new b.Z(null == (j = e.interactionMetadata) ? true : j.user));
-  let A = null;
-  return null != T ? A = (0, r.jsx)(a.sNh, {
-    className: h.interactionInfoMenuItem,
+      null == T && null != S && (0, s.PR)(S)
+    }, [T, S]), !(0, u.a)(e)) return null;
+  null == A && (A = new g.Z(null == (v = e.interactionMetadata) ? true : v.user));
+  let w = null;
+  return null != I ? w = (0, r.jsx)(a.sNh, {
+    className: O.interactionInfoMenuItem,
     disabled: true,
-    iconLeft: () => (0, r.jsx)(f.Z, {
-      guild: T,
-      size: f.Z.Sizes.MINI
+    iconLeft: () => (0, r.jsx)(d.Z, {
+      guild: I,
+      size: d.Z.Sizes.MINI
     }),
     id: "integration-owner",
-    label: T.name,
-    subtext: O.intl.formatToPlainString(O.t.ShLXXB, {
+    label: I.name,
+    subtext: y.intl.formatToPlainString(y.t.ShLXXB, {
       application: e.author.username
     })
-  }) : null != _ && (A = (0, r.jsx)(a.sNh, {
-    action: () => (0, g.openUserProfileModal)({
-      userId: _.id,
-      guildId: w,
+  }) : null != T && (w = (0, r.jsx)(a.sNh, {
+    action: () => (0, f.openUserProfileModal)({
+      userId: T.id,
+      guildId: Z,
       channelId: e.channel_id,
-      sourceAnalyticsLocations: S
+      sourceAnalyticsLocations: j
     }),
-    className: h.interactionInfoMenuItem,
-    iconLeft: () => (0, r.jsx)(c.Z, {
-      user: _,
-      size: a.EFr.SIZE_20
-    }),
+    className: O.interactionInfoMenuItem,
+    leadingAccessory: {
+      type: "avatar",
+      src: T.getAvatarURL(Z, 18)
+    },
     id: "integration-owner",
-    label: _.username,
-    subtext: O.intl.formatToPlainString(O.t.ShLXXB, {
+    label: T.username,
+    subtext: y.intl.formatToPlainString(y.t.ShLXXB, {
       application: e.author.username
     })
   })), (0, r.jsxs)(a.sNh, {
     id: "view-interaction-info",
-    label: O.intl.string(O.t.Rjezbz),
-    children: [A, null != x ? (0, r.jsx)(a.sNh, {
-      action: () => (0, g.openUserProfileModal)({
-        userId: x.id,
-        guildId: w,
+    label: y.intl.string(y.t.Rjezbz),
+    children: [w, null != A ? (0, r.jsx)(a.sNh, {
+      action: () => (0, f.openUserProfileModal)({
+        userId: A.id,
+        guildId: Z,
         channelId: e.channel_id,
-        sourceAnalyticsLocations: S
+        sourceAnalyticsLocations: j
       }),
-      className: h.interactionInfoMenuItem,
-      iconLeft: () => (0, r.jsx)(c.Z, {
-        user: x,
-        size: a.EFr.SIZE_20
-      }),
+      className: O.interactionInfoMenuItem,
+      leadingAccessory: {
+        type: "avatar",
+        src: A.getAvatarURL(Z, 18)
+      },
       id: "interaction-user",
-      label: x.username,
-      subtext: O.intl.string(O.t["04gxNg"])
+      label: A.username,
+      subtext: y.intl.string(y.t["04gxNg"])
     }) : null]
   })
 }

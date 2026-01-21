@@ -1,4 +1,4 @@
-/** Chunk was on 81985 **/
+/** Chunk was on 82124 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -306,12 +306,18 @@ function M(e) {
               children: [(0, r.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),
-                iconLeft: s.BFJ,
+                leadingAccessory: {
+                  type: "icon",
+                  icon: s.BFJ
+                },
                 action: () => v.Z.summarizeThread(t, false)
               }, "summarize_thread_for_everyone"), (0, r.jsx)(s.sNh, {
                 id: "summarize_thread_for_me",
                 label: A.intl.string(A.t["HOe+Hq"]),
-                iconLeft: s.tBG,
+                leadingAccessory: {
+                  type: "icon",
+                  icon: s.tBG
+                },
                 action: () => v.Z.summarizeThread(t)
               }, "summarize_thread_for_me")]
             })

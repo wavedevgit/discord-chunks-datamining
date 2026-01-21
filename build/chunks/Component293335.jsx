@@ -1,12 +1,9 @@
 /** Chunk was on 37220 **/
 /** chunk id: 293335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
-  Chunk473749 = require("./473749.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk543241 = require("./543241.js"),
@@ -15,108 +12,60 @@ var Chunk54381 = require("./54381.js"),
   Chunk665906 = require("./665906.js"),
   Chunk695346 = require("./695346.js"),
   Chunk496675 = require("./496675.js"),
-  Chunk768581 = require("./768581.js"),
   Chunk585483 = require("./585483.js"),
   Chunk176354 = require("./176354.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk438166 = require("./438166.js");
+  Chunk388032 = require("./388032.jsx");
 
-function S(e, t) {
-  let {
-    reducedMotion: n
-  } = i.useContext(s.Sfi), l = (0, f.$R)(t), o = (0, a.e7)([b.Z], () => (t.isPrivate() || b.Z.can(O.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
-  if (!g.nc.getSetting() || !o) return null;
-  let j = p.filter(e => !y.ZP.isEmojiFilteredOrLocked({
+function y(e, t) {
+  let n = (0, c.$R)(t),
+    y = (0, i.e7)([d.Z], () => (t.isPrivate() || d.Z.can(p.Plq.ADD_REACTIONS, t)) && n, [t, n]),
+    O = (0, o.MZ)(t.getGuildId());
+  if (!u.nc.getSetting() || !y) return null;
+  let h = O.filter(e => !g.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
-    intention: h.Hz.REACTION
-  })).slice(0, 12).map((i, l) => {
-    var o, a;
-    return (0, r.jsx)(s.sNh, {
+    intention: b.Hz.REACTION
+  })).slice(0, 12).map((n, i) => {
+    var o, c, u;
+    return (0, r.jsx)(l.sNh, {
       color: "default",
-      id: null != (a = null != (o = i.id) ? o : i.optionallyDiverseSequence) ? a : i.name,
-      label: ":".concat(i.name, ":"),
-      icon: e => {
-        var t, l;
-        return (0, r.jsx)(E, (t = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, e), l = l = {
-          reducedMotionEnabled: n.enabled,
-          emoji: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-        }), t))
+      id: null != (c = null != (o = n.id) ? o : n.optionallyDiverseSequence) ? c : n.name,
+      label: ":".concat(n.name, ":"),
+      leadingAccessory: {
+        type: "emoji",
+        emojiId: n.id,
+        src: null == n.id ? g.ZP.getURL(null != (u = n.optionallyDiverseSequence) ? u : "") : true,
+        animated: n.animated
       },
       action: () => {
-        (0, u.rU)(t.id, e.id, (0, d.g1)(i), u.TW.MESSAGE_CONTEXT_MENU)
+        (0, a.rU)(t.id, e.id, (0, s.g1)(n), a.TW.MESSAGE_CONTEXT_MENU)
       },
       dontCloseOnActionIfHoldingShiftKey: true
-    }, l)
+    }, i)
   });
-  return (0, r.jsx)(s.sNh, {
+  return (0, r.jsx)(l.sNh, {
     id: "add-reaction",
-    label: v.intl.string(v.t.lfIHs4),
+    label: m.intl.string(m.t.lfIHs4),
     action: () => {
-      m.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+      f.S.dispatchKeyed(p.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: true
       })
     },
     color: "default",
     children: (0, r.jsxs)(r.Fragment, {
-      children: [j, (0, r.jsx)(s.Clw, {}), (0, r.jsx)(s.sNh, {
+      children: [h, (0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         color: "default",
         id: "other-reactions",
-        label: v.intl.string(v.t["OBCR+p"]),
-        icon: s.EO4,
+        label: m.intl.string(m.t["OBCR+p"]),
+        icon: l.EO4,
         action: () => {
-          m.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+          f.S.dispatchKeyed(p.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: true
           })
         }
       })]
     })
-  })
-}
-
-function E(e) {
-  var t;
-  let {
-    emoji: n,
-    reducedMotionEnabled: i,
-    className: l = "",
-    isFocused: a = false
-  } = e;
-  return (0, r.jsx)("img", {
-    className: o()(l, j.emoji),
-    src: null != n.id ? p.ZP.getEmojiURL({
-      id: n.id,
-      animated: n.animated && (!i || a),
-      size: 18
-    }) : y.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
-    alt: ""
   })
 }

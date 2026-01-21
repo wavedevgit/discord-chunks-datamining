@@ -2,7 +2,7 @@
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => S,
-  eH: () => I,
+  eH: () => T,
   wY: () => P
 });
 var Chunk54381 = require("./54381.js");
@@ -28,7 +28,7 @@ var Chunk442837 = require("./442837.js"),
 
 function S(e) {
   let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
-    n = (0, p.Q_)(t);
+    n = (0, b.Q_)(t);
   return (0, O.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
     label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
@@ -58,7 +58,7 @@ function E() {
 
 function P(e) {
   let t = (0, i.e7)([g.Z], () => g.Z.hasReportedMessage(e.channel_id, e.id)),
-    n = (0, b.sP)(e);
+    n = (0, p.sP)(e);
   return ((0, s.zq)(() => {
     n && (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
       dismissAction: h.L.AUTO_DISMISS
@@ -76,7 +76,7 @@ function P(e) {
   }) : null
 }
 
-function I(e) {
+function T(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
     n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
   return (0, O.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {

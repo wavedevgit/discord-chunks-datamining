@@ -33,7 +33,7 @@ function S(e) {
     src: o,
     surrogates: s
   } = t;
-  return null == o && null != t.id ? o = p.ZP.getEmojiURL({
+  return null == o && null != t.id ? o = b.ZP.getEmojiURL({
     id: t.id,
     animated: !!i,
     size: 20
@@ -73,7 +73,7 @@ function E(e, t) {
   n.length > 4 && (n.length = 4);
   let i = g.nc.useSetting(),
     l = (0, f.$R)(t);
-  return (0, o.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
+  return (0, o.e7)([p.Z], () => i && l && (t.isPrivate() || p.Z.can(y.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
     className: v.wrapper,
     children: n.map((n, i) => {
       var l;

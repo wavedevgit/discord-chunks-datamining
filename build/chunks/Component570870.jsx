@@ -1,4 +1,4 @@
-/** Chunk was on 94207 **/
+/** Chunk was on 7150 **/
 /** chunk id: 570870, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk10718 = require("./10718.js"),
@@ -25,14 +25,14 @@ var Chunk54381 = require("./54381.js"),
 let y = e => {
   let n, {
       commandType: t,
-      commandTargetId: a,
+      commandTargetId: i,
       channel: y,
       guildId: C,
       onHeightUpdate: I,
       context: O
     } = e,
     Z = (0, o.e7)([h.Z], () => h.Z.getGuild(null != C ? C : y.guild_id)),
-    P = (0, o.e7)([m.default], () => m.default.getUser(a)),
+    P = (0, o.e7)([m.default], () => m.default.getUser(i)),
     E = (0, p.Z)({
       user: P,
       guildId: null == Z ? true : Z.id,
@@ -44,12 +44,12 @@ let y = e => {
     }), [y]),
     {
       newUIEnabled: N,
-      searchEnabled: _
+      searchEnabled: T
     } = g.Z.useConfig({
       location: "useAppsCommandItems"
     }),
-    [T, A] = r.useState(""),
-    M = "" !== T,
+    [_, A] = r.useState(""),
+    M = "" !== _,
     {
       commands: F,
       commandsByActiveSection: S,
@@ -58,7 +58,7 @@ let y = e => {
     } = s.wi({
       context: k,
       filters: {
-        text: M ? T : true,
+        text: M ? _ : true,
         commandTypes: [t]
       },
       options: {
@@ -86,7 +86,7 @@ let y = e => {
       let {
         showAppIcon: t
       } = n;
-      i()(null != y, "menu item should not show if channel is null");
+      a()(null != y, "menu item should not show if channel is null");
       let r = G[e.applicationId],
         o = t && null != r ? (0, f.ky)(r) : true;
       return (0, l.jsx)(c.sNh, {
@@ -108,11 +108,11 @@ let y = e => {
               channel: y,
               guild: Z
             },
-            commandTargetId: a
+            commandTargetId: i
           })
         }
       }, e.id)
-    }, [y, G, N, Z, a]),
+    }, [y, G, N, Z, i]),
     L = r.useCallback(e => {
       let {
         section: n,
@@ -167,7 +167,7 @@ let y = e => {
           }
           return e
         }({}, e), r = r = {
-          query: T,
+          query: _,
           onChange: A,
           placeholder: w.intl.string(w.t.m1UwbP),
           ref: n
@@ -218,7 +218,7 @@ let y = e => {
             return n.id !== x.bi.FRECENCY
           });
         n = (0, l.jsxs)(l.Fragment, {
-          children: [_ && Q, null != e && L(e), (0, l.jsx)(c.kSQ, {
+          children: [T && Q, null != e && L(e), (0, l.jsx)(c.kSQ, {
             label: w.intl.string(w.t.PHjkRE),
             children: t.map(e => Y(e))
           })]

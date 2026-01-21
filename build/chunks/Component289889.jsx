@@ -16,16 +16,16 @@ function d(e, t, n) {
   let d = (0, a.Z)(n),
     f = (0, c.Z)(e),
     g = (0, s.Z)(e, t),
-    b = (0, o.Z)({
+    p = (0, o.Z)({
       id: e.id,
       label: u.intl.string(u.t.zBoHlf),
       shiftId: "".concat(e.channel_id, "-").concat(e.id)
     }),
-    p = i.useMemo(() => [f, g, b, d].filter(Boolean), [d, f, g, b]);
-  return 0 === p.length ? null : (0, r.jsx)(l.sNh, {
+    b = i.useMemo(() => [f, g, p, d].filter(Boolean), [d, f, g, p]);
+  return 0 === b.length ? null : (0, r.jsx)(l.sNh, {
     id: "copy",
     label: u.intl.string(u.t.OpuAlK),
     icon: l.TIy,
-    children: p
+    children: b
   })
 }

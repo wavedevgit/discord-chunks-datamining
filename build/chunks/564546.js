@@ -22,6 +22,8 @@ var r = {
   iconContainerLarge: "c1e9c47c23f12ca3-iconContainerLarge",
   switchContainer: "c1e9c47c23f12ca3-switchContainer",
   icon: "c1e9c47c23f12ca3-icon",
+  avatarAccessory: "c1e9c47c23f12ca3-avatarAccessory",
+  imageAccessory: "c1e9c47c23f12ca3-imageAccessory",
   hintContainer: "c1e9c47c23f12ca3-hintContainer",
   caret: "c1e9c47c23f12ca3-caret",
   disabled: "c1e9c47c23f12ca3-disabled",

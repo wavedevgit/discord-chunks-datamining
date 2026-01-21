@@ -20,13 +20,13 @@ var Chunk54381 = require("./54381.js"),
 function m(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(o.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(b.Plq.MANAGE_MESSAGES, t) && f, [t, f]), m = e.reactions.reduce((e, t) => {
+  } = i.useContext(o.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(p.Plq.MANAGE_MESSAGES, t) && f, [t, f]), m = e.reactions.reduce((e, t) => {
     var n;
     return (null == (n = t.count_details) ? true : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
   }, []);
   return !g || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, s.eQ)(e) ? null : (0, r.jsx)(o.sNh, {
     id: "remove-emoji-reactions",
-    label: p.intl.string(p.t["zx/e4P"]),
+    label: b.intl.string(b.t["zx/e4P"]),
     color: "danger",
     children: m.map(i => {
       var l, s;
@@ -35,11 +35,11 @@ function m(e, t) {
         label: null == i.id ? i.name : ":".concat(i.name, ":"),
         action: n => {
           n.shiftKey ? (0, c.$E)(t.id, e.id, i) : a.Z.show({
-            title: p.intl.string(p.t["73GqTz"]),
-            body: p.intl.string(p.t.dmy5bn),
-            confirmText: p.intl.string(p.t.p89ACt),
+            title: b.intl.string(b.t["73GqTz"]),
+            body: b.intl.string(b.t.dmy5bn),
+            confirmText: b.intl.string(b.t.p89ACt),
             confirmVariant: "critical-primary",
-            cancelText: p.intl.string(p.t.gm1Vej),
+            cancelText: b.intl.string(b.t.gm1Vej),
             onConfirm: () => {
               (0, c.$E)(t.id, e.id, i)
             }

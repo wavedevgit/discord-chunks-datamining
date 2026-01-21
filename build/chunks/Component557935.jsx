@@ -19,8 +19,8 @@ function f(e) {
     itemId: n,
     type: f,
     imageSrc: g
-  } = e, b = s.Sb.useSetting(), {
-    tidaWebformEnabled: p
+  } = e, p = s.Sb.useSetting(), {
+    tidaWebformEnabled: b
   } = a.Z.useExperiment({
     location: "useMessageDetailsItem"
   }, {
@@ -34,7 +34,7 @@ function f(e) {
   }, [g]), h = i.useCallback(() => {
     null != g && (0, o.Z)(g)
   }, [g]), v = "sticker" === f;
-  if (!b || !c.wS || !p || "emoji" !== f && !v || null == n) return null;
+  if (!p || !c.wS || !b || "emoji" !== f && !v || null == n) return null;
   let j = v ? d.intl.string(d.t.SJ3249) : d.intl.string(d.t.Ap2oVy);
   return (0, r.jsxs)(l.sNh, {
     id: "message-details",

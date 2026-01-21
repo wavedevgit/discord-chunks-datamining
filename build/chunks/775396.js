@@ -1,4 +1,4 @@
-/** Chunk was on 81985 **/
+/** Chunk was on 82124 **/
 /** chunk id: 775396, original params: e,t,n (module,exports,require) **/
 module.exports = {
   carouselMaxWidth: "b8429c1614c324c5-carouselMaxWidth",

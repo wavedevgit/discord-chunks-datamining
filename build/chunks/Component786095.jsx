@@ -61,14 +61,14 @@ function S(e, t) {
     saveRule: E,
     errorMessage: P
   } = (0, d.w)(), {
-    createNewEditingRule: I
-  } = (0, d.V)(), [_, T] = i.useState(false), [Z, w] = (0, s.I2)(t), {
-    rulesByTriggerType: x,
-    updateRule: A
+    createNewEditingRule: T
+  } = (0, d.V)(), [I, _] = i.useState(false), [Z, A] = (0, s.I2)(t), {
+    rulesByTriggerType: w,
+    updateRule: x
   } = (0, s.pH)(t), N = i.useMemo(() => {
     var e;
-    return null != (e = x[j]) ? e : []
-  }, [x]), M = 0 === N.length, D = n > N.length && !M;
+    return null != (e = w[j]) ? e : []
+  }, [w]), M = 0 === N.length, D = n > N.length && !M;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let C = e.split(" "),
     L = C.length;
@@ -78,8 +78,8 @@ function S(e, t) {
     return null
   }
   let k = () => {
-      null != t && ((0, o.Zy)(), b.Z.open(t, p.pNK.GUILD_AUTOMOD), setTimeout(() => {
-        I(t, j, {
+      null != t && ((0, o.Zy)(), p.Z.open(t, b.pNK.GUILD_AUTOMOD), setTimeout(() => {
+        T(t, j, {
           triggerMetadata: {
             keywordFilter: [e],
             regexPatterns: [],
@@ -96,7 +96,7 @@ function S(e, t) {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? true : n.keywordFilter) ? r : [], e]
         })
       });
-      await E(i, N), A(i), null != P ? (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(y.intl.string(y.t["0rdYm2"]), l.ToastType.SUCCESS))
+      await E(i, N), x(i), null != P ? (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(y.intl.string(y.t["0rdYm2"]), l.ToastType.SUCCESS))
     }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
       label: y.intl.string(y.t.ZTNur7)
@@ -147,7 +147,7 @@ function S(e, t) {
       keywordCount: L
     }),
     onFocus: () => {
-      _ || (T(true), w())
+      I || (_(true), A())
     },
     children: G
   })

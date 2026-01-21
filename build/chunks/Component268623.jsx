@@ -29,7 +29,7 @@ function m(e) {
   });
   return t ? null != n || (0, f.Z)() ? (0, r.jsxs)(o.sNh, {
     id: "save-for-later",
-    label: p.intl.string(p.t.tpxJto),
+    label: b.intl.string(b.t.tpxJto),
     action: () => null == n ? (0, c.z)({
       channelId: e.channel_id,
       messageId: e.id,
@@ -42,7 +42,7 @@ function m(e) {
     }),
     children: [null != n ? (0, r.jsx)(o.sNh, {
       id: "remove-from-for-later",
-      label: p.intl.string(p.t.SvXS1Z),
+      label: b.intl.string(b.t.SvXS1Z),
       icon: o.plf,
       action: () => (0, c.x)({
         channelId: e.channel_id,
@@ -52,7 +52,7 @@ function m(e) {
       })
     }) : (0, r.jsx)(o.sNh, {
       id: "create-bookmark",
-      label: p.intl.string(p.t["9p3D9p"]),
+      label: b.intl.string(b.t["9p3D9p"]),
       icon: o.gt9,
       action: () => (0, c.z)({
         channelId: e.channel_id,
@@ -62,7 +62,7 @@ function m(e) {
     }), (0, r.jsx)(o.Clw, {}), i]
   }) : (0, r.jsx)(o.sNh, {
     id: "save-for-later-upsell",
-    label: p.intl.string(p.t.tpxJto),
+    label: b.intl.string(b.t.tpxJto),
     icon: o.SrA,
     iconProps: {
       color: a.JX.PREMIUM_TIER_2
@@ -81,7 +81,7 @@ function y(e) {
     savedMessage: n
   } = e, [l, a] = i.useState(new Date);
   i.useEffect(() => {
-    let e = setInterval(() => a(new Date), b.Z.Millis.MINUTE);
+    let e = setInterval(() => a(new Date), p.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
@@ -103,13 +103,13 @@ function y(e) {
       type: u.hQ.LONG
     });
   return (null == n ? true : n.saveData.dueAt) == null ? (0, r.jsx)(o.kSQ, {
-    label: p.intl.string(p.t.roMu1H),
+    label: b.intl.string(b.t.roMu1H),
     children: d
   }) : (0, r.jsxs)(o.kSQ, {
     label: f,
     children: [(0, r.jsx)(o.sNh, {
       id: "mark-complete",
-      label: p.intl.string(p.t.yjGtdJ),
+      label: b.intl.string(b.t.yjGtdJ),
       icon: o.kmB,
       action: () => (0, c.z)({
         channelId: t.channel_id,
@@ -118,7 +118,7 @@ function y(e) {
       })
     }), (0, r.jsx)(o.sNh, {
       id: "edit-reminder",
-      label: p.intl.string(p.t.vrbqs1),
+      label: b.intl.string(b.t.vrbqs1),
       children: d
     })]
   })
