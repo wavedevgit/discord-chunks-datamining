@@ -53,7 +53,8 @@ let y = e => {
       children: (0, r.jsx)(u.Eep, {
         src: I.assetUrl,
         width: 96,
-        height: 96
+        height: 96,
+        className: b.assetImage
       })
     }), (0, r.jsxs)("div", {
       className: b.bannerContent,

@@ -2,7 +2,7 @@
 /** chunk id: 223356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Tj: () => m,
-  WG: () => u,
+  WG: () => c,
   ZD: () => f,
   pD: () => d
 }), require("./953529.js"), require("./539854.js");
@@ -14,7 +14,7 @@ require("./358085.js");
 var Chunk573261 = require("./573261.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-async function u() {
+async function c() {
   return (await r.tn.get({
     url: s.ANM.BUG_REPORTS,
     rejectWithError: false
@@ -28,30 +28,30 @@ function d(e) {
 
 function m() {
   return [{
-    title: c.intl.string(c.t.VwIij9),
-    description: c.intl.format(c.t.DOP8yY, {}),
+    title: u.intl.string(u.t.VwIij9),
+    description: u.intl.format(u.t.DOP8yY, {}),
     emoji: "801497159479722084",
     value: 0
   }, {
-    title: c.intl.string(c.t.rYfJop),
-    description: c.intl.format(c.t["+LEfDL"], {}),
+    title: u.intl.string(u.t.rYfJop),
+    description: u.intl.format(u.t["+LEfDL"], {}),
     emoji: "410336837563973632",
     value: 1
   }, {
-    title: c.intl.string(c.t["9LSuy3"]),
-    description: c.intl.format(c.t.nC7pvx, {}),
+    title: u.intl.string(u.t["9LSuy3"]),
+    description: u.intl.format(u.t.nC7pvx, {}),
     emoji: "841420679643529296",
     value: 2
   }, {
-    title: c.intl.string(c.t.Ia0ska),
-    description: c.intl.format(c.t.D4rbgX, {}),
+    title: u.intl.string(u.t.Ia0ska),
+    description: u.intl.format(u.t.D4rbgX, {}),
     emoji: "827645852352512021",
     value: 3
   }]
 }
 async function f(e, t, n) {
-  var r, c;
-  let u = [{
+  var r, u;
+  let c = [{
     name: "name",
     value: e.name
   }, {
@@ -64,47 +64,47 @@ async function f(e, t, n) {
     name: "theme",
     value: a.Z.theme
   }];
-  "" !== e.description && u.push({
+  "" !== e.description && c.push({
     name: "description",
     value: e.description
-  }), "" !== e.url && u.push({
+  }), "" !== e.url && c.push({
     name: "external_url",
     value: e.url
-  }), null != e.buildOverride && u.push({
+  }), null != e.buildOverride && c.push({
     name: "build_override",
     value: e.buildOverride
-  }), null != e.experimentOverrides && u.push({
+  }), null != e.experimentOverrides && c.push({
     name: "experiment_overrides",
     value: e.experimentOverrides.map(e => "".concat(e.experimentId, ":").concat(e.variantId)).join(",")
   });
   let d = null == (r = e.feature) ? true : r.asana_inbox_id;
-  null != d && "" !== d && u.push({
+  null != d && "" !== d && c.push({
     name: "asana_inbox_id",
     value: "".concat(d)
   });
-  let m = null == (c = e.feature) ? true : c.name;
-  null != m && "" !== m && u.push({
+  let m = null == (u = e.feature) ? true : u.name;
+  null != m && "" !== m && c.push({
     name: "feature_name",
     value: m
-  }), t.overridePlatformInformation && (u.push({
+  }), t.overridePlatformInformation && (c.push({
     name: "device",
     value: t.device
-  }), u.push({
+  }), c.push({
     name: "os",
     value: t.operatingSystem
-  }), u.push({
+  }), c.push({
     name: "os_version",
     value: t.operatingSystemVersion
-  }), u.push({
+  }), c.push({
     name: "client_version",
     value: t.clientVersion
-  }), u.push({
+  }), c.push({
     name: "client_build_number",
     value: t.clientBuildNumber
-  }), u.push({
+  }), c.push({
     name: "release_channel",
     value: window.GLOBAL_ENV.RELEASE_CHANNEL
-  }), u.push({
+  }), c.push({
     name: "locale",
     value: t.locale
   })), (0, l.E)(s.GU0.WEB_APP);
@@ -112,7 +112,7 @@ async function f(e, t, n) {
     return await o.Z.post({
       url: s.ANM.BUG_REPORTS,
       attachments: n,
-      fields: u,
+      fields: c,
       trackedActionData: {
         event: i.NetworkActionNames.BUG_REPORT_SUBMIT,
         properties: {

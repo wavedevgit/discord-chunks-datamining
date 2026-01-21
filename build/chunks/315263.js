@@ -2,7 +2,7 @@
 /** chunk id: 315263, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => V
+  default: () => H
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js"), require("./784620.js"), require("./973216.js");
 var Chunk873546 = require("./873546.js"),
   Chunk636977 = require("./636977.js"),
@@ -38,20 +38,21 @@ var Chunk314897 = require("./314897.js"),
   Chunk914010 = require("./914010.js"),
   Chunk771845 = require("./771845.js"),
   Chunk626135 = require("./626135.js"),
+  Chunk455971 = require("./455971.js"),
   Chunk591759 = require("./591759.js"),
   Chunk782568 = require("./782568.js"),
   Chunk981631 = require("./981631.js");
 require("./215023.js");
 var Chunk324805 = require("./324805.js");
-async function Z(e, t) {
+async function F(e, t) {
   await a.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
     code: t,
-    context: U.IlC.APP
+    context: G.IlC.APP
   })
 }
-async function F(e) {
+async function B(e) {
   var t, n;
   let r = R.Z.getInvite(e.code);
   if (null == r) {
@@ -61,7 +62,7 @@ async function F(e) {
     r = t
   }
   if (null == r) return;
-  if (r.state === U.r2o.EXPIRED || r.state === U.r2o.BANNED || r.state === U.r2o.ERROR) return void await Z(r, e.code);
+  if (r.state === G.r2o.EXPIRED || r.state === G.r2o.BANNED || r.state === G.r2o.ERROR) return void await F(r, e.code);
   let i = L.ZP.getFlattenedGuildIds(),
     a = null == r || null == (t = r.guild) ? true : t.id,
     o = null != a && i.includes(a),
@@ -72,20 +73,20 @@ async function F(e) {
       i = new Set(null != (n = null == t ? true : t.roles) ? n : []);
     l = r.roles.some(e => !i.has(e.id))
   }
-  o && !l ? s.ZP.transitionToInviteSync(r) : await Z(r, e.code)
+  o && !l ? s.ZP.transitionToInviteSync(r) : await F(r, e.code)
 }
-let B = {
+let V = {
   skipExtensionCheck: true,
   analyticsLocations: []
 };
 
-function V(e) {
+function H(e) {
   var t;
   let {
     skipExtensionCheck: a,
     analyticsLocations: s
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : B, P = (0, g.zO)(e);
-  if (null != P && (P.type === m.g.INVITE || P.type === m.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), F(P), true);
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : V, P = (0, g.zO)(e);
+  if (null != P && (P.type === m.g.INVITE || P.type === m.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), B(P), true);
   if (null != P && (P.type === m.g.APP_DIRECTORY_PROFILE || P.type === m.g.APP_DIRECTORY_STOREFRONT || P.type === m.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
     var i, a;
     null == t || t.preventDefault();
@@ -101,7 +102,7 @@ function V(e) {
       applicationId: true,
       skuId: true
     }, c = null != (a = x.Z.getGuildId()) ? a : true;
-    return null == s ? (0, k.Z)(e) : (j.default.track(U.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
+    return null == s ? (0, U.Z)(e) : (j.default.track(G.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
@@ -190,14 +191,14 @@ function V(e) {
     }), true
   };
   if (null != P && P.type === m.g.QUESTS_EMBED && (0, S.c)({
-      location: G.dr.EMBED_MOBILE
-    })) return e => {
+      location: Z.dr.EMBED_MOBILE
+    }) && !(0, M.C)()) return e => {
     var t, r, a;
     let o, s;
     null == e || e.preventDefault();
     let {
       search: l
-    } = null != (t = M.Z.toURLSafe(P.url)) ? t : {};
+    } = null != (t = k.Z.toURLSafe(P.url)) ? t : {};
     if (null != l) {
       let e = new URLSearchParams(l);
       o = null != (r = e.get("sort")) ? r : true, s = null != (a = e.get("filter")) ? a : true
@@ -216,10 +217,10 @@ function V(e) {
     host: w,
     hostname: R,
     pathname: L,
-    search: Z,
-    hash: V
-  } = null != (t = M.Z.toURLSafe(e)) ? t : {}, H = M.Z.isDiscordHostname(null != R ? R : null) || M.Z.isDiscordLocalhost(null != w ? w : null, null != R ? R : null);
-  if (H && ((null == L ? true : L.startsWith("/application-directory")) || (null == L ? true : L.startsWith("/discovery/applications")))) {
+    search: F,
+    hash: H
+  } = null != (t = k.Z.toURLSafe(e)) ? t : {}, Y = k.Z.isDiscordHostname(null != R ? R : null) || k.Z.isDiscordLocalhost(null != w ? w : null, null != R ? R : null);
+  if (Y && ((null == L ? true : L.startsWith("/application-directory")) || (null == L ? true : L.startsWith("/discovery/applications")))) {
     let e = L.split("/"),
       t = null == L ? true : L.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
@@ -229,7 +230,7 @@ function V(e) {
       let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(Z);
+        let e = new URLSearchParams(F);
         r = null != (l = e.get("q")) ? l : true, o = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
       } else a && (o = e[4]);
       return Promise.resolve().then(n.bind(n, 749681)).then(e => {
@@ -247,45 +248,45 @@ function V(e) {
       }), true
     }
   }
-  if (null != L && H && M.Z.isAppRoute(L)) {
+  if (null != L && Y && k.Z.isAppRoute(L)) {
     let e = {
       navigationReplace: false,
       openChannel: true
     };
-    return null != Z && (e.search = Z), null != V && (e.hash = V), t => (null == t || t.preventDefault(), (0, v.Z)(L, e), true)
+    return null != F && (e.search = F), null != H && (e.hash = H), t => (null == t || t.preventDefault(), (0, v.Z)(L, e), true)
   }
-  if (null != L && H) {
+  if (null != L && Y) {
     let {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(69580), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != P && P.type === m.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(U.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != P && P.type === m.g.APP_OAUTH2_LINK && f.ZP.trackWithMetadata(G.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), true)
   }
-  let Y = (0, O.Ao)(L);
-  if (null != L && H && null != Y) return e => {
+  let W = (0, O.Ao)(L);
+  if (null != L && Y && null != W) return e => {
     null == e || e.preventDefault();
     let t = x.Z.getGuildId();
-    null != Y.guildId && "" !== Y.guildId && Y.guildId !== t && (0, v.Z)(U.Z5c.CHANNEL(Y.guildId));
-    let n = b.ZP.getGuildScheduledEvent(Y.guildEventId);
+    null != W.guildId && "" !== W.guildId && W.guildId !== t && (0, v.Z)(G.Z5c.CHANNEL(W.guildId));
+    let n = b.ZP.getGuildScheduledEvent(W.guildEventId);
     return null != n && (0, E.bO)({
       eventId: n.id
     }), true
   };
-  if (H && (null == L ? true : L.startsWith("/settings/"))) {
+  if (Y && (null == L ? true : L.startsWith("/settings/"))) {
     let {
       default: e
     } = n(722589), {
       openUserSettingsFromParsedUrl: t
-    } = n(518596), r = e(L, Z);
+    } = n(518596), r = e(L, F);
     if (null != r) return e => (null == e || e.preventDefault(), t({
       match: r,
       analyticsLocations: s,
       urlOrigin: "link_click"
     }), true)
   }
-  if (H && (null == L ? true : L.startsWith("/playground"))) {
+  if (Y && (null == L ? true : L.startsWith("/playground"))) {
     let {
       parsePlaygroundUrl: e
     } = n(857494), {
@@ -296,13 +297,13 @@ function V(e) {
     } = e(L);
     return e => (null == e || e.preventDefault(), t(r, i), true)
   }
-  return H && (null == L ? true : L.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
+  return Y && (null == L ? true : L.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
-  }), true) : H && (null == L ? true : L.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, C.uL)(U.Z5c.QUEST_HOME_V2 + (null != Z ? Z : "")), true) : H && (null == L ? true : L.startsWith("/quest-preview")) ? e => {
+  }), true) : Y && (null == L ? true : L.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, C.uL)(G.Z5c.QUEST_HOME_V2 + (null != F ? F : "")), true) : Y && (null == L ? true : L.startsWith("/quest-preview")) ? e => {
     if (null == e || e.preventDefault(), (0, I.T)({
-        location: G.dr.NAVIGATE_TO_QUEST_HOME_UTIL
-      })) return (0, C.uL)(U.Z5c.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(L.split("/").at(false))), true
-  } : H && (null == L ? true : L.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
+        location: Z.dr.NAVIGATE_TO_QUEST_HOME_UTIL
+      })) return (0, C.uL)(G.Z5c.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(L.split("/").at(false))), true
+  } : Y && (null == L ? true : L.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
     let {
       transitionToGlobalDiscovery: t
     } = e, {
