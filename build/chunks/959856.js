@@ -196,6 +196,7 @@ class N extends Chunk47770.Z {
     return Promise.reject(Error("UNSUPPORTED"))
   }
   setClipBufferLength(e) {}
+  setClipsBufferSize(e) {}
   setClipsMLPipelineEnabled(e) {}
   setClipsMLPipelineTypeEnabled(e, t) {}
   setClipsMaxPendingTasks(e) {}

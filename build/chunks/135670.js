@@ -96,6 +96,7 @@ class c extends Chunk47770.Z {
   }
   setClipBufferLength(e) {}
   setClipsMaxPendingTasks(e) {}
+  setClipsBufferSize(e) {}
   setClipsMLPipelineEnabled(e) {}
   setClipsMLPipelineTypeEnabled(e, t) {}
   saveClip(e, t) {

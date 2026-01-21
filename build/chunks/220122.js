@@ -2,13 +2,14 @@
 /** chunk id: 220122, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594190 = require("./594190.js"),
   Chunk199902 = require("./199902.js"),
   Chunk131951 = require("./131951.js"),
+  Chunk822742 = require("./822742.js"),
   Chunk474639 = require("./474639.js"),
   Chunk725547 = require("./725547.js"),
   Chunk435064 = require("./435064.js"),
@@ -18,26 +19,28 @@ var Chunk481060 = require("./481060.js"),
 require("./600349.js");
 var Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
-let m = "CLIPS_IN_CALL_WARNING";
-class g extends Chunk474639.Z {
+let g = "CLIPS_IN_CALL_WARNING";
+class E extends Chunk474639.Z {
   showClipsToast() {
     (0, r.showToast)({
-      id: m,
-      message: h.intl.string(h.t["d+41qJ"]),
+      id: g,
+      message: m.intl.string(m.t["d+41qJ"]),
       type: r.ToastType.CLIP,
       options: {
-        duration: _.G$
+        duration: h.G$
       }
     })
   }
   applyNativeClipsSettings(e) {
-    if (!(0, d.Z)(s.Z)) return;
-    let t = u.Z.getSettings(),
-      n = (0, f.LI)(),
+    if (!(0, f.Z)(s.Z)) return;
+    let t = d.Z.getSettings(),
+      n = (0, p.LI)(),
       r = s.Z.getMediaEngine();
-    if (r.setClipBufferLength(n ? t.clipsLength / 1e3 : 0), r.setClipsMaxPendingTasks(c.Z.getConfig({
+    if (r.setClipBufferLength(n ? t.clipsLength / 1e3 : 0), r.setClipsMaxPendingTasks(u.Z.getConfig({
         location: "applyNativeClipsSettings"
-      }).count), (null == e ? true : e.settings.decoupledClipsEnabled) === true && this.fireClipsInitEvent(), null == e || (null == e ? true : e.settings.clipsQuality) != null) {
+      }).count), r.setClipsBufferSize(l.Z.getConfig({
+        location: "applyNativeClipsSettings"
+      }).size), (null == e ? true : e.settings.decoupledClipsEnabled) === true && this.fireClipsInitEvent(), null == e || (null == e ? true : e.settings.clipsQuality) != null) {
       let {
         frameRate: n,
         resolution: i
@@ -51,13 +54,13 @@ class g extends Chunk474639.Z {
   }
   handleClipsInitOnGamesChange(e) {
     let t = a.ZP.getVisibleGame();
-    null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), _.jp) : this.fireClipsInitEvent())
+    null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), h.jp) : this.fireClipsInitEvent())
   }
   fireClipsInitEvent() {
-    if (!(0, f.LI)() || null != o.Z.getCurrentUserActiveStream()) return;
+    if (!(0, p.LI)() || null != o.Z.getCurrentUserActiveStream()) return;
     let e = a.ZP.getVisibleGame();
     if ((null == e ? true : e.pid) == null || (null == e ? true : e.windowHandle) == null || null == e.name || "" === e.name) return;
-    let t = u.Z.getSettings();
+    let t = d.Z.getSettings();
     i.Z.dispatch({
       type: "CLIPS_INIT",
       sourceId: "window:".concat(null == e ? true : e.windowHandle),
@@ -66,10 +69,10 @@ class g extends Chunk474639.Z {
     })
   }
   loadClipsFromStorage() {
-    let e = u.Z.getSettings().storageLocation;
-    "" !== e && p.jv(e).catch(e => {
-      _.jF.error("Failed to load clips directory on connection open", e)
+    let e = d.Z.getSettings().storageLocation;
+    "" !== e && _.jv(e).catch(e => {
+      h.jF.error("Failed to load clips directory on connection open", e)
     })
   }
 }
-let E = new g
+let b = new E
