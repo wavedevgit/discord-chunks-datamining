@@ -178,6 +178,30 @@ let k = (e, t, n) => t.map(t => {
       return {
         type: t.type, component: k(e, [t.component], n)[0]
       };
+    case u.re.RADIO_GROUP: {
+      let n = P.Z.getInteractionComponentState(e, t.id);
+      return {
+        type: t.type,
+        custom_id: t.customId,
+        value: (null == n ? true : n.type) === t.type ? n.value : null
+      }
+    }
+    case u.re.CHECKBOX_GROUP: {
+      let n = P.Z.getInteractionComponentState(e, t.id);
+      return {
+        type: t.type,
+        custom_id: t.customId,
+        values: (null == n ? true : n.type) === t.type ? n.values : null
+      }
+    }
+    case u.re.CHECKBOX: {
+      let n = P.Z.getInteractionComponentState(e, t.id);
+      return {
+        type: t.type,
+        custom_id: t.customId,
+        value: (null == n ? true : n.type) === t.type ? n.value : null
+      }
+    }
     default:
       a()(false, "unreachable")
   }

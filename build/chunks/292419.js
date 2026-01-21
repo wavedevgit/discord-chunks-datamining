@@ -67,9 +67,15 @@ let y = e => {
     case a.re.LABEL:
     case a.re.FILE_UPLOAD:
     case a.re.CHECKPOINT_CARD:
+    case a.re.RADIO_GROUP:
+    case a.re.CHECKBOX_GROUP:
+    case a.re.CHECKBOX:
       returntrue;
     case a.re.CONTENT_INVENTORY_ENTRY:
-      return (0, p.Io)("canShowComponent")
+      return (0, p.Io)("canShowComponent");
+    case a.re.UNKNOWN:
+    default:
+      returnfalse
   }
 };
 
@@ -149,6 +155,9 @@ function C(e) {
     case a.re.CONTENT_INVENTORY_ENTRY:
     case a.re.FILE_UPLOAD:
     case a.re.CHECKPOINT_CARD:
+    case a.re.RADIO_GROUP:
+    case a.re.CHECKBOX_GROUP:
+    case a.re.CHECKBOX:
       return [];
     default:
       return h.warn("getComponentChildren: Unknown component type", e.type), []
@@ -179,17 +188,17 @@ function P(e) {
 }
 
 function w(e, t) {
-  var n, r, o, s, c, p, _, g, E, b;
+  var n, r, o, s, c, p, _, g, E, b, O, v;
   if (!y(e.type)) return null;
 
-  function O(e, n) {
+  function S(e, n) {
     let r = w(e, [...t, n]);
     return null == r ? null : r
   }
-  let v = false;
+  let I = false;
   switch (e.type) {
     case a.re.ACTION_ROW: {
-      let n = e.components.map((e, t) => O(e, t)).filter(u.lm);
+      let n = e.components.map((e, t) => S(e, t)).filter(u.lm);
       return {
         type: a.re.ACTION_ROW,
         id: R(t),
@@ -197,7 +206,7 @@ function w(e, t) {
       }
     }
     case a.re.BUTTON: {
-      let n = null != e.emoji ? m(e.emoji, v) : true;
+      let n = null != e.emoji ? m(e.emoji, I) : true;
       return {
         type: a.re.BUTTON,
         id: R(t),
@@ -218,7 +227,7 @@ function w(e, t) {
           value: e.value,
           default: e.default,
           description: e.description,
-          emoji: null != e.emoji ? m(e.emoji, v) : true
+          emoji: null != e.emoji ? m(e.emoji, I) : true
         })), placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values
       };
     case a.re.TEXT_INPUT:
@@ -242,8 +251,8 @@ function w(e, t) {
         type: a.re.CHANNEL_SELECT, id: R(t), customId: e.custom_id, disabled: e.disabled, required: null != (p = e.required) && p, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
       };
     case a.re.SECTION: {
-      let n = e.components.map((e, t) => O(e, t)).filter(u.lm),
-        r = O(e.accessory, n.length);
+      let n = e.components.map((e, t) => S(e, t)).filter(u.lm),
+        r = S(e.accessory, n.length);
       if (0 === n.length || null == r) return null;
       return {
         type: a.re.SECTION,
@@ -282,7 +291,7 @@ function w(e, t) {
         type: a.re.CONTENT_INVENTORY_ENTRY, id: R(t), contentInventoryEntry: e.content_inventory_entry
       };
     case a.re.CONTAINER: {
-      let n = e.components.map((e, t) => O(e, t)).filter(u.lm);
+      let n = e.components.map((e, t) => S(e, t)).filter(u.lm);
       return {
         type: a.re.CONTAINER,
         id: R(t),
@@ -292,7 +301,7 @@ function w(e, t) {
       }
     }
     case a.re.LABEL: {
-      let n = O(e.component, 0);
+      let n = S(e.component, 0);
       if (null == n) return null;
       return {
         type: a.re.LABEL,
@@ -335,6 +344,19 @@ function w(e, t) {
         }
       }
     }
+    case a.re.RADIO_GROUP:
+      return {
+        type: e.type, id: R(t), customId: e.custom_id, options: e.options, required: null != (O = e.required) && O
+      };
+    case a.re.CHECKBOX_GROUP:
+      return {
+        type: e.type, id: R(t), customId: e.custom_id, options: e.options, minValues: e.min_values, maxValues: e.max_values, required: null != (v = e.required) && v
+      };
+    case a.re.CHECKBOX:
+      return {
+        type: e.type, id: R(t), customId: e.custom_id,
+          default: e.default
+      };
     default:
       return h.warn("transformComponent: Unknown component type", e.type), null
   }

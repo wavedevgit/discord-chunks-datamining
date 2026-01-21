@@ -50,13 +50,13 @@ function d(t, e) {
 let y = t => {
   let {
     subscribeButtonProps: e
-  } = (0, s.F)({
-    subscriptionTier: l.Si.TIER_2,
-    subscriptionPlanId: l.Xh.PREMIUM_GROUP_MONTH
+  } = (0, l.F)({
+    subscriptionTier: s.Si.TIER_2,
+    subscriptionPlanId: s.Xh.PREMIUM_GROUP_MONTH
   });
   return (0, n.jsx)(a.Z, {
-    subscriptionTier: l.Si.TIER_2,
-    initialPlanId: l.Xh.PREMIUM_GROUP_MONTH,
+    subscriptionTier: s.Si.TIER_2,
+    initialPlanId: s.Xh.PREMIUM_GROUP_MONTH,
     children: r => {
       let {
         onClick: a
@@ -81,12 +81,12 @@ let y = t => {
         actions: [{
           text: O.intl.string(b.default.z8re5H),
           variant: "secondary",
-          onClick: () => {
-            var e;
-            return e = t.onClose, void((0, o.Z)(c.Z.getArticleURL(p.BhN.PREMIUM_GROUP_ABOUT)), e())
-          }
+          onClick: () => void(0, o.Z)(c.Z.getArticleURL(p.BhN.PREMIUM_GROUP_ABOUT))
         }, d(P({}, e), {
-          onClick: a
+          onClick: e => {
+            var r;
+            null == a || a(e), null == (r = t.onClose) || r.call(t)
+          }
         })]
       }))
     }

@@ -103,12 +103,26 @@ let v = async e => {
 };
 
 function S(e) {
-  if (null == e || e.type === o.re.TEXT_INPUT || e.type === o.re.FILE_UPLOAD) return null;
-  if (e.type === o.re.STRING_SELECT) return e;
-  let t = e.selectedOptions.map(e => e.value);
-  return {
-    type: e.type,
-    values: t
+  if (null == e) return null;
+  switch (e.type) {
+    case o.re.TEXT_INPUT:
+    case o.re.FILE_UPLOAD:
+    case o.re.RADIO_GROUP:
+    case o.re.CHECKBOX_GROUP:
+    case o.re.CHECKBOX:
+      return null;
+    case o.re.STRING_SELECT:
+      return e;
+    case o.re.USER_SELECT:
+    case o.re.ROLE_SELECT:
+    case o.re.MENTIONABLE_SELECT:
+    case o.re.CHANNEL_SELECT:
+      let t = e.selectedOptions.map(e => e.value);
+      return {
+        type: e.type, values: t
+      };
+    default:
+      return null
   }
 }
 let I = (e, t, n) => {

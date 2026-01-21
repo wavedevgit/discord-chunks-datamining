@@ -101,6 +101,9 @@ function E(e) {
       }) : w.interval === h.rV.YEAR ? m.intl.formatToPlainString(m.t.rtLTJP, {
         percent: x
       }) : null
+    },
+    V = () => {
+      D || o(i)
     };
   return (0, r.jsxs)(c.P3F, {
     role: O ? "menuitem" : "radio",
@@ -114,7 +117,7 @@ function E(e) {
         bottom: 0
       }
     },
-    onClick: D ? true : () => o(i),
+    onClick: V,
     className: a()(g.planOptionClickableContainer, {
       [g.selectedPlan]: O && E,
       [g.selectionBox]: O
@@ -131,7 +134,8 @@ function E(e) {
             checked: E,
             value: E,
             label: "",
-            description: ""
+            description: "",
+            onChange: V
           })
         }), Z(), R && (0, r.jsxs)("span", {
           className: g.planOptionCurrentPlan,
