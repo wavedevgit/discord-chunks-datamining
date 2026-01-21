@@ -13,6 +13,9 @@ let r = (0, require("./427164.js").le)({
   variations: {
     1: {
       enabled: true
+    },
+    2: {
+      enabled: true
     }
   }
 })

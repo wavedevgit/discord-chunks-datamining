@@ -67,7 +67,7 @@ let v = t => {
     if (!k) return (0, n.jsx)(i.xvT, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: T.intl.format(N.default["0UfKTY"], {
+      children: T.intl.format(N.default.UDPKcX, {
         helpdeskArticle: C.w
       })
     });

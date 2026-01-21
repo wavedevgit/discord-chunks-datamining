@@ -40,15 +40,16 @@ function p(e) {
 function _(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = arguments.length > 4 && true !== arguments[4] && arguments[4];
+  if (e.isObfuscated()) return u.intl.string(u.t["/YzI63"]);
   switch (e.type) {
     case c.d4z.DM:
       var a;
       let [o] = e.recipients.map(t.getUser).filter(s.lm);
       if (null == o) return "???";
       if (o.isProvisional && null != o.globalName) return o.globalName;
-      let u = n.getNickname(o.id),
-        d = null != (a = null != u ? u : l.ZP.getName(o)) ? a : "???";
-      return r ? "@".concat(d) : d;
+      let d = n.getNickname(o.id),
+        p = null != (a = null != d ? d : l.ZP.getName(o)) ? a : "???";
+      return r ? "@".concat(p) : p;
     case c.d4z.GROUP_DM:
       if ("" !== e.name) return e.name;
       return f(e, t, n);

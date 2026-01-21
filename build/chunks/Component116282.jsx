@@ -15,8 +15,9 @@ let S = () => {
   let {
     isWeb: t,
     installationStatus: e,
-    connectionStatus: n
-  } = (0, a.xf)(), S = (0, l.useMemo)(() => {
+    connectionStatus: n,
+    perkAvailableToUser: S
+  } = (0, a.xf)(), c = (0, l.useMemo)(() => {
     switch (n) {
       case r.Ij.CONNECTED:
         return o.intl.format(T.default.EVQZqy, {
@@ -31,12 +32,15 @@ let S = () => {
           helpdeskArticle: u.w
         });
       default:
-        return o.intl.format(T.default["Rr+ah3"], {
+        return o.intl.format(T.default.yL6mvx, {
           helpdeskArticle: u.w
         })
     }
-  }, [n]), c = (0, l.useMemo)(() => {
+  }, [n]), E = (0, l.useMemo)(() => {
     if (t) return o.intl.format(T.default.z6v0w5, {
+      helpdeskArticle: u.w
+    });
+    if (!S) return o.intl.format(T.default.yL6mvx, {
       helpdeskArticle: u.w
     });
     switch (e) {
@@ -64,18 +68,18 @@ let S = () => {
       case r._n.ZERO_TRUST:
         return o.intl.string(T.default.KVSUDs);
       case r._n.INSTALLED:
-        return S;
+        return c;
       case r._n.NOT_INSTALLED:
       case r._n.UNKNOWN:
       default:
-        return o.intl.format(T.default["Rr+ah3"], {
+        return o.intl.format(T.default.yL6mvx, {
           helpdeskArticle: u.w
         })
     }
-  }, [t, e, S]);
+  }, [t, e, c, S]);
   return (0, i.jsx)(s.xvT, {
     variant: "text-sm/normal",
     color: "text-subtle",
-    children: c
+    children: E
   })
 }

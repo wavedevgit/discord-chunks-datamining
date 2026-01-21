@@ -18,12 +18,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk472057 = require("./472057.js");
 let g = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
-    useTitle: () => d.intl.string(_.default.bU5ANm),
+    useTitle: () => d.intl.string(_.default.UAA4V5),
     useBadge: () => (0, i.jsx)(s.Z, {}),
     buildLayout: () => [E.m]
   }),
   I = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
-    useTitle: () => d.intl.string(_.default.bU5ANm),
+    useTitle: () => d.intl.string(_.default.UAA4V5),
     icon: Chunk657707.GlobeEarthIcon,
     usePredicate: () => {
       let t = (0, u.m)(),

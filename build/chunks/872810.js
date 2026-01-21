@@ -112,7 +112,7 @@ function x(e, t) {
     type: "STREAM_WATCH",
     streamKey: a,
     allowMultiple: o || n
-  }), o || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, a)
+  }), (null == t ? true : t.forceFocus) !== true && (o || null != t && t.noFocus) || I.Z.selectParticipant(e.channelId, a)
 }
 
 function L(e, t) {

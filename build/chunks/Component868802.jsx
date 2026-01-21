@@ -1,10 +1,11 @@
 /** Chunk was on 77069 **/
 /** chunk id: 868802, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  M: () => M
+  M: () => Y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk547943 = require("./547943.js"),
   Chunk793030 = require("./793030.js"),
   Chunk952265 = require("./952265.js"),
   Chunk159691 = require("./159691.js"),
@@ -20,6 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk969521 = require("./969521.jsx"),
   Chunk773275 = require("./773275.jsx"),
   Chunk584197 = require("./584197.jsx"),
+  Chunk588529 = require("./588529.js"),
   Chunk703656 = require("./703656.js"),
   Chunk589072 = require("./589072.jsx"),
   Chunk626135 = require("./626135.js"),
@@ -36,109 +38,120 @@ var Chunk54381 = require("./54381.js"),
   Chunk93109 = require("./93109.js"),
   Chunk446818 = require("./446818.js"),
   Chunk932889 = require("./932889.js");
-let M = () => {
-    let t = (0, a.a)((0, T.ZP)()),
+let Y = () => {
+    let t = (0, o.a)((0, S.ZP)()),
       {
         analyticsLocations: e
-      } = (0, c.ZP)(S.Z.CF_WARP_SETTINGS);
+      } = (0, E.ZP)(c.Z.CF_WARP_SETTINGS);
     return (0, l.useEffect)(() => {
-      f.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: D.cd.PRIVACY_PERK_SETTINGS,
+      P.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: y.cd.PRIVACY_PERK_SETTINGS,
         location_stack: e
       })
     }, [e]), (0, i.jsxs)("div", {
-      className: V.settingsContainer,
-      children: [(0, i.jsxs)(s.$1m, {
+      className: Z.settingsContainer,
+      children: [(0, i.jsxs)(u.$1m, {
         color: "pink",
         children: [(0, i.jsx)("div", {
-          className: V.headerContainer,
+          className: Z.headerContainer,
           children: (0, i.jsxs)("div", {
-            className: V.header,
+            className: Z.header,
             children: [(0, i.jsxs)("div", {
-              className: V.headerLogos,
-              children: [(0, i.jsx)(C.Z, {
+              className: Z.headerLogos,
+              children: [(0, i.jsx)(L.Z, {
                 color: t ? "black" : "white"
               }), (0, i.jsx)("div", {
-                className: V.headerDivider
+                className: Z.headerDivider
               }), (0, i.jsx)("img", {
-                src: t ? Z : G,
+                src: t ? M : h,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
               })]
-            }), (0, i.jsx)(g.v, {})]
+            }), (0, i.jsx)(I.v, {})]
           })
         }), (0, i.jsxs)("div", {
-          className: V.contentContainer,
+          className: Z.contentContainer,
           children: [(0, i.jsx)("img", {
-            src: h,
+            src: U,
             width: "100",
             alt: "Private browsing perk logo"
           }), (0, i.jsxs)("div", {
-            className: V.content,
-            children: [(0, i.jsx)(P.C, {}), (0, i.jsx)(R.R, {})]
+            className: Z.content,
+            children: [(0, i.jsx)(m.C, {}), (0, i.jsx)(p.R, {})]
           }), (0, i.jsx)("div", {
-            className: V.contentSpacer
+            className: Z.contentSpacer
           }), (0, i.jsx)("div", {
-            className: V.ctaContainer,
-            children: (0, i.jsx)(U, {})
+            className: Z.ctaContainer,
+            children: (0, i.jsx)(k, {})
           })]
         })]
-      }), (0, i.jsx)(m.p, {})]
+      }), (0, i.jsx)(D.p, {})]
     })
   },
-  U = () => {
+  k = () => {
     let {
       installationStatus: t,
       isWeb: e,
       setInstallationStatus: n
-    } = (0, A.xf)(), l = (0, d.m)();
-    if (e) return (0, i.jsx)(I.U, {});
-    if (!l) return (0, i.jsxs)("div", {
-      className: V.subscribeBtnContainer,
-      children: [(0, i.jsx)(E.Z, {
-        buttonTextOverride: v.intl.string(v.t["8x0jKT"]),
-        subscriptionTier: D.Si.TIER_2,
+    } = (0, N.xf)(), o = (0, _.m)(), S = (0, l.useRef)(false);
+    if ((0, l.useEffect)(() => () => {
+        S.current || C.ZP.fireSurveyAction(o ? s.Y.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.Y.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
+      }, [S, o]), e) return (0, i.jsx)(A.U, {
+      onClick: () => {
+        S.current = true
+      }
+    });
+    if (!o) return (0, i.jsxs)("div", {
+      className: Z.subscribeBtnContainer,
+      children: [(0, i.jsx)(d.Z, {
+        buttonTextOverride: V.intl.string(V.t["8x0jKT"]),
+        subscriptionTier: y.Si.TIER_2,
         fullWidth: true,
         size: "sm",
         premiumModalAnalyticsLocation: {
-          page: S.Z.CF_WARP_SETTINGS
+          page: c.Z.CF_WARP_SETTINGS
+        },
+        onClick: () => {
+          S.current = true
         }
-      }), (0, i.jsx)(r.zxk, {
+      }), (0, i.jsx)(a.zxk, {
         variant: "secondary",
-        text: v.intl.string(v.t.ZnqyZ2),
+        text: V.intl.string(V.t.ZnqyZ2),
         size: "sm",
         onClick: () => {
-          (0, u.closeModal)(L.USER_SETTINGS_MODAL_KEY), (0, O.uL)(b.Z5c.APPLICATION_STORE)
+          (0, r.closeModal)(R.USER_SETTINGS_MODAL_KEY), (0, f.uL)(v.Z5c.APPLICATION_STORE), S.current = true
         }
       })]
     });
     switch (t) {
-      case _._n.ERROR:
-      case _._n.NOT_INSTALLED:
-        return (0, i.jsx)(p.R, {});
-      case _._n.INSTALLED:
-        return (0, i.jsx)(N.n, {});
-      case _._n.ZERO_TRUST:
+      case g._n.ERROR:
+      case g._n.NOT_INSTALLED:
+        return (0, i.jsx)(b.R, {
+          onClick: () => S.current = true
+        });
+      case g._n.INSTALLED:
+        return (0, i.jsx)(O.n, {});
+      case g._n.ZERO_TRUST:
         break;
-      case _._n.EXISTING_INSTALLATION:
-        return (0, i.jsx)(r.zxk, {
+      case g._n.EXISTING_INSTALLATION:
+        return (0, i.jsx)(a.zxk, {
           variant: "primary",
           onClick: () => {
-            (0, o.j)(b.rMx.NITRO_WARP_CTA_CLICKED, {
+            (0, T.j)(v.rMx.NITRO_WARP_CTA_CLICKED, {
               is_enable_warp: true
-            }), n(_._n.READY_FOR_LICENSE)
+            }), n(g._n.READY_FOR_LICENSE), S.current = true
           },
-          text: v.intl.string(y.default.J09UWz)
+          text: V.intl.string(G.default.J09UWz)
         });
-      case _._n.INSTALLING:
-      case _._n.READY_FOR_LICENSE:
-      case _._n.WAITING_FOR_TERMS:
-      case _._n.INSTALLING_TIMEOUT:
+      case g._n.INSTALLING:
+      case g._n.READY_FOR_LICENSE:
+      case g._n.WAITING_FOR_TERMS:
+      case g._n.INSTALLING_TIMEOUT:
         return (0, i.jsx)("div", {
-          className: V.spinner,
-          children: (0, i.jsx)(s.$jN, {
-            type: s.RAz.SPINNING_CIRCLE
+          className: Z.spinner,
+          children: (0, i.jsx)(u.$jN, {
+            type: u.RAz.SPINNING_CIRCLE
           })
         })
     }

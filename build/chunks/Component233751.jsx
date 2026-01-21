@@ -11,18 +11,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk773275 = require("./773275.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let S = () => {
-  let t = (0, a.xf)(t => t.setDoInstall),
-    e = (0, a.xf)(t => t.setInstallationStatus),
-    n = (0, a.xf)(t => t.installationStatus),
-    S = (0, l.useCallback)(() => {
-      (0, u.j)(o.rMx.NITRO_WARP_CTA_CLICKED, {
-        is_enable_warp: false
-      }), n === r._n.ERROR && e(r._n.NOT_INSTALLED), t(true)
-    }, [t, n, e]);
+let S = t => {
+  let {
+    onClick: e
+  } = t, n = (0, a.xf)(t => t.setDoInstall), S = (0, a.xf)(t => t.setInstallationStatus), c = (0, a.xf)(t => t.installationStatus), E = (0, l.useCallback)(() => {
+    null == e || e(), (0, u.j)(o.rMx.NITRO_WARP_CTA_CLICKED, {
+      is_enable_warp: false
+    }), c === r._n.ERROR && S(r._n.NOT_INSTALLED), n(true)
+  }, [n, c, S, e]);
   return (0, i.jsx)(s.zxk, {
     variant: "primary",
-    onClick: S,
+    onClick: E,
     text: T.intl.string(T.t["1WjMbC"])
   })
 }

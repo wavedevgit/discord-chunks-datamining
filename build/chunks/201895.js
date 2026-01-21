@@ -52,7 +52,7 @@ function d(e) {
       break;
     case l.d4z.GUILD_VOICE:
       let g = [c.intl.formatToPlainString(c.t.bkpadO, {
-        channelName: n.name
+        channelName: m
       })];
       if (d > 0 && g.push(c.intl.formatToPlainString(c.t["3l1GOx"], {
           mentionCount: d
