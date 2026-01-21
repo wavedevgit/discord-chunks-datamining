@@ -93,17 +93,25 @@ function q(e) {
     onMouseLeave: () => {
       s && o && u(false)
     },
-    children: [null != f && (0, a.jsx)("img", {
-      alt: "",
-      src: f.url,
-      className: z.assetBodyVideoPreviewMedia
-    }), null != p ? (0, a.jsx)(H, {
-      isHovered: o,
-      autoPlay: false,
-      asset: p,
-      poster: null == f ? true : f.url,
-      className: l()(z.assetBodyVideoPreviewVideo, {
-        [z.assetBodyVideoPreviewVisible]: g
+    children: [null != f && (0, a.jsx)(N.Fl, {
+      id: "QuestBarContentExpanded_videoThumbnail",
+      children: e => (0, a.jsx)("img", {
+        ref: e,
+        alt: "",
+        src: f.url,
+        className: z.assetBodyVideoPreviewMedia
+      })
+    }), null != p ? (0, a.jsx)(N.Fl, {
+      id: "QuestBarContentExpanded_video",
+      children: e => (0, a.jsx)(H, {
+        ref: e,
+        isHovered: o,
+        autoPlay: false,
+        asset: p,
+        poster: null == f ? true : f.url,
+        className: l()(z.assetBodyVideoPreviewVideo, {
+          [z.assetBodyVideoPreviewVisible]: g
+        })
       })
     }) : null, (0, a.jsx)("div", {
       className: z.previewPlayButtonCont,
