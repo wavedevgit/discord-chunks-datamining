@@ -51,7 +51,8 @@ function v(e) {
     className: n,
     id: i,
     ariaDescribedBy: a,
-    ariaLabelledBy: s
+    ariaLabelledBy: s,
+    disabled: l
   } = e;
   return (0, r.jsx)("div", {
     className: o()(g.inputSensitivitySlider, n),
@@ -60,7 +61,8 @@ function v(e) {
     "aria-labelledby": s,
     children: (0, r.jsx)("div", {
       className: o()(g.inputSensitivityBar, g.sliderBar, {
-        [g.speaking]: t
+        [g.speaking]: t && !l,
+        [g.disabled]: l
       })
     })
   })
@@ -71,17 +73,18 @@ function S(e) {
     volume: t,
     id: n,
     ariaDescribedBy: i,
-    ariaLabelledBy: a
+    ariaLabelledBy: a,
+    disabled: l
   } = e, {
-    threshold: l,
-    autoThreshold: c
+    threshold: c,
+    autoThreshold: p
   } = (0, s.cj)([_.Z], () => ({
     threshold: _.Z.getModeOptions().threshold,
     autoThreshold: _.Z.getModeOptions().autoThreshold
-  })), p = (0, s.e7)([_.Z], () => _.Z.getMode());
+  })), h = (0, s.e7)([_.Z], () => _.Z.getMode());
 
-  function h(e, t) {
-    f.Z.setMode(p, {
+  function m(e, t) {
+    f.Z.setMode(h, {
       threshold: e,
       autoThreshold: t
     })
@@ -92,9 +95,9 @@ function S(e) {
     "aria-describedby": i,
     "aria-labelledby": a,
     children: (0, r.jsx)(d.iRW, {
-      initialValue: l + 100,
+      initialValue: c + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => h(-((100 - e) * 1), c),
+      onValueChange: e => m(-((100 - e) * 1), p),
       barStyles: {
         background: u.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -102,12 +105,13 @@ function S(e) {
         background: u.Z.unsafe_rawColors.YELLOW_300.css
       },
       "aria-labelledby": y,
+      disabled: l,
       children: (0, r.jsxs)("div", {
         className: o()(g.sliderBar, g.microphone, g.inputSensitivityBar, E.bar),
         children: [(0, r.jsx)("div", {
           className: o()(g.fill, g.inputSensitivityBarFill),
           style: {
-            width: t + 100 + "%"
+            width: l ? 0 : t + 100 + "%"
           }
         }), (0, r.jsx)("div", {
           className: "grow"

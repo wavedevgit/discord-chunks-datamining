@@ -17,89 +17,88 @@ var Chunk54381 = require("./54381.js"),
   Chunk130081 = require("./130081.js");
 let _ = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
   useSearchTerms: () => [E.intl.string(E.t["sqUm+k"]), E.intl.string(E.t.I1Zuq0), E.intl.string(E.t.nuFtHH)],
-  usePredicate: () => (0, u.e7)([o.Z], () => {
-    let t = o.Z.getMode(),
-      e = o.Z.isInputProfileCustom();
-    return t === c.pM.VOICE_ACTIVITY && e
-  }),
+  usePredicate: () => (0, u.e7)([o.Z], () => o.Z.isInputProfileCustom()),
   Component: function() {
-    let t = (0, u.e7)([o.Z], () => o.Z.getModeOptions().autoThreshold),
-      e = l.useCallback(t => {
-        let e = o.Z.getMode(),
-          {
-            threshold: n
-          } = o.Z.getModeOptions();
-        r.Z.setMode(e, {
-          autoThreshold: t,
+    let {
+      autoThreshold: t,
+      disabled: e
+    } = (0, u.cj)([o.Z], () => ({
+      autoThreshold: o.Z.getModeOptions().autoThreshold,
+      disabled: o.Z.getMode() !== c.pM.VOICE_ACTIVITY
+    })), n = l.useCallback(t => {
+      let e = o.Z.getMode(),
+        {
           threshold: n
+        } = o.Z.getModeOptions();
+      r.Z.setMode(e, {
+        autoThreshold: t,
+        threshold: n
+      })
+    }, []), a = (0, u.e7)([o.Z], () => o.Z.supports(c.AN.AUTOMATIC_VAD)), {
+      volume: T,
+      isSpeaking: _
+    } = (0, S.Kq)(), g = (0, u.e7)([o.Z], () => o.Z.isEnabled()), I = l.useMemo(() => !g && (0, i.jsx)("div", {
+      className: d.noInputDevicesDetectedWarning,
+      children: (0, i.jsx)(s.M14, {
+        type: "warning",
+        children: E.intl.format(E.t["O13I+O"], {
+          onEnableClick: () => r.Z.enable(true)
         })
-      }, []),
-      n = (0, u.e7)([o.Z], () => o.Z.supports(c.AN.AUTOMATIC_VAD)),
-      {
-        volume: a,
-        isSpeaking: T
-      } = (0, S.Kq)(),
-      _ = (0, u.e7)([o.Z], () => o.Z.isEnabled()),
-      g = l.useMemo(() => !_ && (0, i.jsx)("div", {
-        className: d.noInputDevicesDetectedWarning,
-        children: (0, i.jsx)(s.M14, {
-          type: "warning",
-          children: E.intl.format(E.t["O13I+O"], {
-            onEnableClick: () => r.Z.enable(true)
-          })
-        })
-      }), [_]),
-      I = l.useMemo(() => t ? E.intl.string(E.t.JsbzjA) : E.intl.string(E.t.MLmyMY), [t]),
-      A = l.useId(),
-      N = l.useId();
-    return n ? (0, i.jsxs)("fieldset", {
-      "aria-describedby": N,
+      })
+    }), [g]), A = l.useMemo(() => t ? E.intl.string(E.t.JsbzjA) : E.intl.string(E.t.MLmyMY), [t]), N = l.useId(), O = l.useId();
+    return a ? (0, i.jsxs)("fieldset", {
+      "aria-describedby": O,
       children: [(0, i.jsx)(s.nn4, {
         tag: "legend",
-        id: A,
+        id: N,
         children: E.intl.string(E.t.GByLar)
       }), (0, i.jsx)(s.nn4, {
-        id: N,
-        children: I
+        id: O,
+        children: A
       }), (0, i.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
         children: [(0, i.jsx)(s.rsf, {
+          disabled: e,
           label: E.intl.string(E.t.lY6j47),
-          description: I,
+          description: A,
           checked: t,
-          onChange: e
+          onChange: n
         }), t ? (0, i.jsx)(S.NP, {
-          isSpeaking: T,
+          isSpeaking: _,
           className: d.autoThresholdSlider,
-          ariaDescribedBy: N,
-          ariaLabelledBy: A
+          ariaDescribedBy: O,
+          ariaLabelledBy: N,
+          disabled: e
         }) : (0, i.jsx)(S.t8, {
-          volume: a,
-          ariaDescribedBy: N,
-          ariaLabelledBy: A
-        }), g]
+          volume: T,
+          ariaDescribedBy: O,
+          ariaLabelledBy: N,
+          disabled: e
+        }), I]
       })]
     }) : (0, i.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 8,
       children: [(0, i.jsx)(s.gNt, {
         label: E.intl.string(E.t["sqUm+k"]),
-        description: I,
+        description: A,
         layout: "vertical",
-        children: e => t ? (0, i.jsx)(S.NP, {
-          isSpeaking: T,
+        children: n => t ? (0, i.jsx)(S.NP, {
+          isSpeaking: _,
           className: d.autoThresholdSlider,
-          id: e.controlId,
-          ariaDescribedBy: e.describedById,
-          ariaLabelledBy: e.labelId
+          id: n.controlId,
+          ariaDescribedBy: n.describedById,
+          ariaLabelledBy: n.labelId,
+          disabled: e
         }) : (0, i.jsx)(S.t8, {
-          volume: a,
-          id: e.controlId,
-          ariaDescribedBy: e.describedById,
-          ariaLabelledBy: e.labelId
+          volume: T,
+          id: n.controlId,
+          ariaDescribedBy: n.describedById,
+          ariaLabelledBy: n.labelId,
+          disabled: e
         })
-      }), g]
+      }), I]
     })
   }
 })

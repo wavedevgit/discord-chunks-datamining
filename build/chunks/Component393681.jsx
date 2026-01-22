@@ -130,15 +130,12 @@ class G extends Chunk473749.PureComponent {
   }
 }
 let Z = () => {
-  let e = (0, s.e7)([y.default], () => {
-      let e = y.default.getCurrentUser();
-      return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
-    }),
+  let e = (0, s.e7)([y.default], () => y.default.getCurrentUser()),
     t = (0, s.e7)([E.Z], () => E.Z.hidePersonalInformation),
     n = (0, s.e7)([S.Z], () => S.Z.theme),
     i = (0, s.e7)([v.default], () => v.default.locale),
     a = (0, s.e7)([b.Z], () => b.Z.getSubsection());
-  return (0, r.jsx)(G, {
+  return null == e ? null : (0, r.jsx)(G, {
     theme: n,
     currentUser: e,
     hide: t,
