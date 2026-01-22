@@ -142,86 +142,82 @@ function I(e) {
     label: n,
     icon: a,
     iconLeft: f,
-    iconLeftSize: m = "md",
-    leadingAccessory: E,
-    hint: y,
-    subtext: O,
-    subtextLineClamp: v,
-    hasSubmenu: I,
-    disabled: T,
-    isFocused: C,
-    menuItemProps: A,
-    action: N,
-    onClose: P,
-    onFocus: w,
-    className: R,
-    focusedClassName: D,
-    subMenuIconClassName: x,
-    dontCloseOnActionIfHoldingShiftKey: L,
-    dontCloseOnAction: j,
-    iconProps: M
+    leadingAccessory: m,
+    hint: E,
+    subtext: y,
+    subtextLineClamp: O,
+    hasSubmenu: v,
+    disabled: I,
+    isFocused: T,
+    menuItemProps: C,
+    action: A,
+    onClose: N,
+    onFocus: P,
+    className: w,
+    focusedClassName: R,
+    dontCloseOnActionIfHoldingShiftKey: D,
+    dontCloseOnAction: x,
+    iconProps: L
   } = e, {
-    onSelect: k,
-    onInteraction: U
+    onSelect: j,
+    onInteraction: M
   } = i.useContext(c.p), {
-    reducedMotion: G
-  } = i.useContext(s.Sfi), Z = i.useRef(null), F = i.useCallback(e => {
+    reducedMotion: k
+  } = i.useContext(s.Sfi), U = i.useRef(null), G = i.useCallback(e => {
     var t;
-    if (null == U || U({
+    if (null == M || M({
         type: c.U.DEFAULT
-      }), null == N) returnfalse;
-    e.shiftKey && L || j || P(), e.persist(), null == k || k(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => N(e))
-  }, [N, P, k, L, j, U]);
+      }), null == A) returnfalse;
+    e.shiftKey && D || x || N(), e.persist(), null == j || j(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
+  }, [A, N, j, D, x, M]);
   return i.useEffect(() => {
-    C && ((0, u.F)(Z), null == w || w())
-  }, [C, w]), (0, r.jsxs)(s.P3F, b(g({
-    innerRef: Z,
-    className: o()(h.item, h.labelContainer, _._e[t], R, {
-      [h.disabled]: T,
-      [h.focused]: C,
-      [null != D ? D : ""]: C
+    T && ((0, u.F)(U), null == P || P())
+  }, [T, P]), (0, r.jsxs)(s.P3F, b(g({
+    innerRef: U,
+    className: o()(h.item, h.labelContainer, _._e[t], w, {
+      [h.disabled]: I,
+      [h.focused]: T,
+      [null != R ? R : ""]: T
     }),
-    onClick: T ? true : F,
-    "aria-disabled": T
-  }, A), {
+    onClick: I ? true : G,
+    "aria-disabled": I
+  }, C), {
     "data-menu-item": "true",
     children: [null != f && (0, r.jsx)("div", {
-      className: o()(h.iconContainerLeft, {
-        [h.iconContainerLarge]: "lg" === m
-      }),
+      className: h.iconContainerLeft,
       children: (0, r.jsx)(f, b(g({
         color: "currentColor"
-      }, M), {
-        className: o()(h.icon, null == M ? true : M.className)
+      }, L), {
+        className: o()(h.icon, null == L ? true : L.className)
       }))
-    }), null != E && S(E, C, G.enabled), (0, r.jsxs)("div", {
+    }), null != m && S(m, T, k.enabled), (0, r.jsxs)("div", {
       className: h.label,
       children: [(0, r.jsx)(p.i, {
         children: (0, l.I)(n, e)
-      }), null != O && (0, r.jsx)(s.xvT, {
+      }), null != y && (0, r.jsx)(s.xvT, {
         variant: "text-xs/normal",
         className: o()(h.subtext, {
-          [h.subtextLineClamp]: null != v
+          [h.subtextLineClamp]: null != O
         }),
-        lineClamp: v,
-        children: O
+        lineClamp: O,
+        children: y
       })]
-    }), null != y && (0, r.jsx)("div", {
+    }), null != E && (0, r.jsx)("div", {
       className: h.hintContainer,
-      children: (0, l.I)(y, e)
+      children: (0, l.I)(E, e)
     }), (0, d.Y)(a) ? a : null != a && (0, r.jsx)("div", {
       className: h.iconContainer,
       children: (0, r.jsx)(a, b(g({
         color: "currentColor"
-      }, M), {
-        className: o()(h.icon, null == M ? true : M.className)
+      }, L), {
+        className: o()(h.icon, null == L ? true : L.className)
       }))
-    }), I && (0, r.jsx)("div", {
+    }), v && (0, r.jsx)("div", {
       className: h.iconContainer,
       children: (0, r.jsx)(s.Fbu, {
         size: "md",
         color: "currentColor",
-        className: o()(h.caret, x)
+        className: h.caret
       })
     })]
   }))
