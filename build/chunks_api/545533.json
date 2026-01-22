@@ -1,1 +1,1 @@
-{"id":"545533","type":"classes","data":{"classes":{"begin":"[+-]?\\b(?:0[Bb][01](?:'?[01])*|0[Xx][0-9A-Fa-f](?:'?[0-9A-Fa-f])*|0(?:'?[0-7])*|[1-9](?:'?[0-9])*)(?:[Uu](?:LL?|ll?)|[Uu][Zz]?|(?:LL?|ll?)[Uu]?|[Zz][Uu]|)","className":"string","end":{},"illegal":"."}},"fromModule":{"id":"web.js"}}
+{"id":"545533","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

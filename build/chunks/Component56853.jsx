@@ -130,14 +130,14 @@ function D(e) {
     day: "numeric"
   }), Q = (null == (i = _.userStatus) ? true : i.enrolledAt) != null, Y = (null == (s = _.userStatus) ? true : s.completedAt) != null, {
     onAssetLoadComplete: J
-  } = l.useContext(E.M), X = W ? "text-muted" : "always-white", $ = l.useCallback(() => {
+  } = l.useContext(E.M), X = W ? "text-muted" : "always-white", Z = l.useCallback(() => {
     V && (0, O.d5)({
       quest: _,
       questContent: b.uF.QUEST_HOME_DESKTOP,
       sourceQuestContent: F,
       sourceQuestContentCTA: f.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })
-  }, [V, _, F]), Z = (0, o.bG)([x.A], () => x.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != Z && (0, y.f0)(Z, _.id), [Z, _.id]);
+  }, [V, _, F]), $ = (0, o.bG)([x.A], () => x.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != $ && (0, y.f0)($, _.id), [$, _.id]);
   return (0, a.jsxs)("div", {
     className: k.kL,
     children: [(0, a.jsx)("div", {
@@ -183,7 +183,7 @@ function D(e) {
             children: (0, a.jsx)(u.DUT, {
               className: k.iI,
               "aria-label": w.intl.string(w.t.RscU7I),
-              onClick: $,
+              onClick: Z,
               children: (0, a.jsx)(u.udU, {
                 color: "currentColor",
                 className: k.A9

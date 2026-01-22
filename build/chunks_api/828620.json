@@ -1,1 +1,1 @@
-{"id":"828620","type":"classes","data":{"classes":{"LT":"HH:mm","LTS":"HH:mm:ss","L":"DD.MM.YYYY.","LL":"YYYY. [gada] D. MMMM","LLL":"YYYY. [gada] D. MMMM, HH:mm","LLLL":"YYYY. [gada] D. MMMM, dddd, HH:mm","sameDay":"[Šodien pulksten] LT","nextDay":"[Rīt pulksten] LT","nextWeek":"dddd [pulksten] LT","lastDay":"[Vakar pulksten] LT","lastWeek":"[Pagājušā] dddd [pulksten] LT","sameElse":"L","future":"pēc %s","past":"pirms %s"}},"fromModule":{"id":"web.js"}}
+{"id":"828620","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

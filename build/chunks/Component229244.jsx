@@ -172,7 +172,7 @@ function H() {
     H(M(D({}, e), {
       preview: true
     }))
-  }, []), [K, z] = l.useState(I.b.UNENROLLED), [q, Q] = l.useState(false), [Y, J] = l.useState(false), [X, $] = l.useState(null), Z = (R = F.config, (0, s.YW)(R).with({
+  }, []), [K, z] = l.useState(I.b.UNENROLLED), [q, Q] = l.useState(false), [Y, J] = l.useState(false), [X, Z] = l.useState(null), $ = (R = F.config, (0, s.YW)(R).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -293,7 +293,7 @@ function H() {
       className: P.OA,
       children: (0, a.jsx)(E.A, {
         onSelect: function(e) {
-          $(e), null == e || (z(function(e) {
+          Z(e), null == e || (z(function(e) {
             if (null == e.userStatus) return I.b.UNENROLLED;
             if (null != e.userStatus.claimedAt) return I.b.CLAIMED;
             if (null != e.userStatus.completedAt) return I.b.COMPLETED_100;
@@ -430,7 +430,7 @@ function H() {
           initialValue: null == eo ? true : eo.assets.video.thumbnail
         })]
       })]
-    }), Z.map((e, t) => (0, a.jsxs)("div", {
+    }), $.map((e, t) => (0, a.jsxs)("div", {
       children: [(0, a.jsxs)(m.Heading, {
         variant: "heading-md/semibold",
         className: P.fV,

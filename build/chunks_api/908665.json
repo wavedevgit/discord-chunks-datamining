@@ -1,1 +1,1 @@
-{"id":"908665","type":"classes","data":{"classes":{"description":"Interactive controls must not be nested","help":"Nested focusable elements are inaccessible to screen readers","id":"nested-interactive"}},"fromModule":{"id":"4787"}}
+{"id":"908665","type":"unknown","data":{},"fromModule":{"id":"4787"}}

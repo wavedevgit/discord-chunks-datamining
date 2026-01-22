@@ -1,1 +1,1 @@
-{"id":"992520","type":"classes","data":{"classes":{"description":"Only use supported ARIA attributes","help":"Using ARIA attributes in roles where they are not allowed can interfere with the accessibility of the web page.","id":"aria-allowed-attributes"}},"fromModule":{"id":"4787"}}
+{"id":"992520","type":"unknown","data":{},"fromModule":{"id":"4787"}}

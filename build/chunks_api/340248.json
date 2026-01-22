@@ -1,1 +1,1 @@
-{"id":"340248","type":"classes","data":{"classes":{"LT":"HH:mm","LTS":"HH:mm:ss","L":"DD.MM.YYYY","LL":"D MMMM YYYY թ.","LLL":"D MMMM YYYY թ., HH:mm","LLLL":"dddd, D MMMM YYYY թ., HH:mm","sameDay":"[այսօր] LT","nextDay":"[վաղը] LT","lastDay":"[երեկ] LT","sameElse":"L","future":"%s հետո","past":"%s առաջ","s":"մի քանի վայրկյան","ss":"%d վայրկյան","m":"րոպե","mm":"%d րոպե","h":"ժամ","hh":"%d ժամ","d":"օր","dd":"%d օր","M":"ամիս","MM":"%d ամիս","y":"տարի","yy":"%d տարի"}},"fromModule":{"id":"web.js"}}
+{"id":"340248","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

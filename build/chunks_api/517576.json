@@ -1,1 +1,1 @@
-{"id":"517576","type":"classes","data":{"classes":{"description":"ARIA roles used must conform to valid values","help":"Ensures all elements with a role attribute use a valid value","id":"aria-valid-roles","selector":"[role]"}},"fromModule":{"id":"4787"}}
+{"id":"517576","type":"unknown","data":{},"fromModule":{"id":"4787"}}

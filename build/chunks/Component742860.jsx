@@ -1,7 +1,7 @@
 /** Chunk was on 22477 **/
 /** chunk id: 742860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => $
+  A: () => Z
 }), require("./896048.js"), require("./228524.js"), require("./801541.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -342,7 +342,7 @@ async function X(e, t, n, a) {
     sourceQuestContent: a
   })
 }
-let $ = Chunk64700.forwardRef(function(e, t) {
+let Z = Chunk64700.forwardRef(function(e, t) {
   var n;
   let {
     children: i,

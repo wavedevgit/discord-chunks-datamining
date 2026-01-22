@@ -56,11 +56,11 @@ let E = Chunk64700.memo(function(e) {
       previewingVariantIndex: q,
       handleEntering: Q,
       handleLeaving: Y
-    } = (0, A.f)(t), J = (0, j.sC)(), X = (0, m.Mk)(), $ = null == X ? true : X.tab, Z = (0, C.ho)(t), ee = l.useRef(null), {
+    } = (0, A.f)(t), J = (0, j.sC)(), X = (0, m.Mk)(), Z = null == X ? true : X.tab, $ = (0, C.ho)(t), ee = l.useRef(null), {
       isHoveringOrFocusing: et
     } = (0, u.A)(ee), {
       handleCardVisibilityChange: en
-    } = (0, p.Z)(t.skuId, $ === S.G2.CATALOG ? "full" : $), ea = (0, j.ql)(t, d.A.COLLECTIBLES_SHOP_CARD, z, J), el = t.type === s.R.VARIANTS_GROUP && !E, ei = !T || !I, er = !(N && i) || el, es = er || ei, eo = ei || el;
+    } = (0, p.Z)(t.skuId, Z === S.G2.CATALOG ? "full" : Z), ea = (0, j.ql)(t, d.A.COLLECTIBLES_SHOP_CARD, z, J), el = t.type === s.R.VARIANTS_GROUP && !E, ei = !T || !I, er = !(N && i) || el, es = er || ei, eo = ei || el;
     return (0, a.jsx)(o.L, {
       innerRef: ee,
       onChange: en,
@@ -68,7 +68,7 @@ let E = Chunk64700.memo(function(e) {
       children: (0, a.jsx)(c.sqX, {
         ref: ee,
         onClick: null != P ? P : ea,
-        "aria-label": Z,
+        "aria-label": $,
         className: r()(W, O.ty, {
           [O.yo]: et
         }),

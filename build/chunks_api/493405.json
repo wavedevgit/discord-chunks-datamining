@@ -1,1 +1,1 @@
-{"id":"493405","type":"classes","data":{"classes":{"type":"BRAINTREE_TOKENIZE_PAYPAL_START","allowDesktop":true,"paymentMethodUsage":"multi_use","oldFormErrors":true,"rejectWithError":false,"flow":"vault"}},"fromModule":{"id":"web.js"}}
+{"id":"493405","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

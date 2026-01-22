@@ -310,7 +310,7 @@ function eo() {
       name: "Voice Filters",
       group: ei.fu.AUDIO_VIDEO,
       tags: ["soundboard", "effects"],
-      render: () => (0, a.jsx)($.A, {})
+      render: () => (0, a.jsx)(Z.A, {})
     }), e.push({
       id: "krisp_tester",
       name: "Krisp Tester",
@@ -338,7 +338,7 @@ function eo() {
       id: "word_frequency",
       name: "Word Frequency",
       group: ei.fu.DEVELOPMENT,
-      render: () => (0, a.jsx)(Z.A, {})
+      render: () => (0, a.jsx)($.A, {})
     }), e.push({
       id: "user_settings",
       name: "User Settings",

@@ -1,1 +1,1 @@
-{"id":"22263","type":"classes","data":{"classes":{"end":{},"subLanguage":"bash","beginKeywords":"run cmd entrypoint volume add copy workdir label healthcheck shell","name":"Dockerfile","case_insensitive":true,"illegal":"</"}},"fromModule":{"id":"web.js"}}
+{"id":"22263","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"391990","type":"classes","data":{"classes":{"literal":"true false","endsWithParent":true,"excludeEnd":true,"className":"class","beginKeywords":"struct enum service exception","end":">","illegal":{},"begin":"\\b(set|list|map)\\s*<","name":"Thrift"}},"fromModule":{"id":"web.js"}}
+{"id":"391990","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

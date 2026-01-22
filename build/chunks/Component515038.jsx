@@ -79,7 +79,7 @@ function O(e) {
   }), z = (null == (n = T.userStatus) ? true : n.completedAt) != null, q = (null == (i = T.userStatus) ? true : i.claimedAt) != null, Q = (0, x.ks)(T.config), Y = (0, x._Z)(T.config), {
     completedRatio: J,
     completedRatioDisplay: X
-  } = (0, h.O9)(T), $ = (0, p.gj)(T, M, L), Z = l.useMemo(() => q && Q ? A.intl.format(A.t["8Op4c4"], {
+  } = (0, h.O9)(T), Z = (0, p.gj)(T, M, L), $ = l.useMemo(() => q && Q ? A.intl.format(A.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(E, {
       questId: T.id,
       children: [(0, a.jsx)(m.A, {
@@ -106,13 +106,13 @@ function O(e) {
       children: B
     }, T.id)
   }), [U, q, B, T.id, Y, Q]), ee = l.useMemo(() => {
-    if (null != $) return (0, a.jsx)(c.Text, {
+    if (null != Z) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: C.h_,
-      children: $
+      children: Z
     })
-  }, [$]), et = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+  }, [Z]), et = (0, o.bG)([u.A], () => u.A.useReducedMotion);
   return (0, a.jsxs)("div", {
     className: C.kL,
     ref: L,
@@ -181,7 +181,7 @@ function O(e) {
           variant: "text-md/semibold",
           color: "text-strong",
           className: C.wx,
-          children: Z
+          children: $
         }), ee]
       }), H && (0, a.jsx)(s.animated.div, {
         style: {

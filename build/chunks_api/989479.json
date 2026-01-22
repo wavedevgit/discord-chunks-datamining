@@ -1,1 +1,1 @@
-{"id":"989479","type":"classes","data":{"classes":{"leftBoundary":"([^\\p{L}\\p{N}_]|^)","rightBoundary":"(?=[^\\p{L}\\p{N}_]|$)","flags":"iu"}},"fromModule":{"id":"web.js"}}
+{"id":"989479","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

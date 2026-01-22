@@ -37,9 +37,9 @@ let s = (e, t) => {
   g = (0, Chunk723702.isIOS)() ? _ : (0, Chunk723702.isAndroid)() ? h : m,
   E = e => null != e && g.test(e),
   b = /\.(webm)$/i,
-  y = /\.(mp4|mov)$/i,
-  O = /\.(mp4|webm|mov)$/i,
-  A = /\.(mp4|webm|mov)$/i,
+  y = /\.(mp4|mov|qt)$/i,
+  O = /\.(mp4|webm|mov|qt)$/i,
+  A = /\.(mp4|webm|mov|qt)$/i,
   v = /\.(riv)$/i,
   S = (0, Chunk723702.isIOS)() ? y : (0, Chunk723702.isAndroid)() ? O : A,
   I = e => (0, a.D)() && i.A.getConfig({

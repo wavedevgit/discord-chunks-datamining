@@ -1,1 +1,1 @@
-{"id":"783017","type":"classes","data":{"classes":{"begin":"\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}(:\\d{1,5})?\\b","className":"number","$pattern":{},"end":"\\s|\\{|;","endsWithParent":true,"excludeEnd":true,"returnEnd":true}},"fromModule":{"id":"web.js"}}
+{"id":"783017","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

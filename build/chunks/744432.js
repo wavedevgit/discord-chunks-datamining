@@ -73,7 +73,7 @@ function N(e, t, n) {
     case "media":
       return _({
         author_id: e,
-        attachment_extension: ["png", "jpg", "webp", "mov", "mp4", "gif", "mp3", "wav", "flac", "ogg", "opus"]
+        attachment_extension: ["png", "jpg", "webp", "mov", "mp4", "qt", "gif", "mp3", "wav", "flac", "ogg", "opus"]
       }, l);
     case "all_counts":
       return _({

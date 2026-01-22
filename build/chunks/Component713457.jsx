@@ -101,7 +101,7 @@ function I(e) {
     isClaiming: p.A.isClaimingReward(k.id) || p.A.isFetchingRewardCode(k.id),
     isEnrolling: p.A.isEnrolling(k.id),
     isQuestEnrollmentBlocked: null != p.A.questEnrollmentBlockedUntil
-  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, Q = (null == (n = k.userStatus) ? true : n.completedAt) != null, Y = Q && (null == (I = k.userStatus) ? true : I.claimedAt) == null, J = (0, g.if)(k), X = !(0, g.Ic)(k), $ = (0, b.In)(k), Z = (0, v.IO)(k), ee = (0, v.BS)(k), et = (0, v.Cr)(k), en = (0, b.fc)(k), [ea, el, ei] = (0, b.Qo)(k, en), er = X && $ === b.F3.ACCEPTED, es = er && ea === h.X0.SELECT, eo = er && !es && el.length > 1, ec = f.t$.useConfig({
+  })), q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, Q = (null == (n = k.userStatus) ? true : n.completedAt) != null, Y = Q && (null == (I = k.userStatus) ? true : I.claimedAt) == null, J = (0, g.if)(k), X = !(0, g.Ic)(k), Z = (0, b.In)(k), $ = (0, v.IO)(k), ee = (0, v.BS)(k), et = (0, v.Cr)(k), en = (0, b.fc)(k), [ea, el, ei] = (0, b.Qo)(k, en), er = X && Z === b.F3.ACCEPTED, es = er && ea === h.X0.SELECT, eo = er && !es && el.length > 1, ec = f.t$.useConfig({
     location: C.rE.QUEST_HOME_DESKTOP
   }).enabled, ed = l.useCallback(e => {
     ei(e), e === C.fO.DESKTOP && R([])
@@ -109,13 +109,13 @@ function I(e) {
     text: eu,
     onClick: em
   } = (0, y._c)({
-    progressState: $,
+    progressState: Z,
     quest: k,
     questContent: P,
     questContentPosition: D,
     questContentRowIndex: M,
     inGiftInventory: true,
-    isVideoQuest: Z,
+    isVideoQuest: $,
     inGameQuest: et,
     sourceQuestContent: L
   }), {
@@ -151,7 +151,7 @@ function I(e) {
       text: eu,
       fullWidth: true
     })
-  }) : Q ? eg = Z ? (0, a.jsxs)(s.e2v, {
+  }) : Q ? eg = $ ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.$nd, {
@@ -259,7 +259,7 @@ function I(e) {
       className: O.tn,
       children: [B.render(), S.intl.string(S.t.nPThNb)]
     })
-  }) : Z ? (0, a.jsx)("div", {
+  }) : $ ? (0, a.jsx)("div", {
     className: O.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",

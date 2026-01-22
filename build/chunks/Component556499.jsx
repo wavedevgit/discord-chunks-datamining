@@ -253,7 +253,7 @@ function E(e) {
         var e;
         F((null == (e = t.body) ? true : e.message) || t.message || "Failed to remove user from group")
       }
-    }, Y = (null == (t = v.hd[I.planIdFromItems]) ? true : t.premiumType) === v.PremiumTypes.TIER_0, J = null == (n = I.metadata) ? true : n.ended_at, X = null != J ? new Date(J).toISOString().substring(0, 10) : "", $ = [{
+    }, Y = (null == (t = v.hd[I.planIdFromItems]) ? true : t.premiumType) === v.PremiumTypes.TIER_0, J = null == (n = I.metadata) ? true : n.ended_at, X = null != J ? new Date(J).toISOString().substring(0, 10) : "", Z = [{
       id: "id",
       label: "ID: ".concat(I.id),
       isDisabled: false
@@ -261,20 +261,20 @@ function E(e) {
       id: "status",
       label: "Status: ".concat((null == N && (N = I.status), N in A) ? A[N] : "Unknown status ".concat(N)),
       isDisabled: false
-    }], Z = I.hasActiveTrial, ee = (null == (i = I.metadata) ? true : i.active_discount_id) != null;
-  return Z && $.push({
+    }], $ = I.hasActiveTrial, ee = (null == (i = I.metadata) ? true : i.active_discount_id) != null;
+  return $ && Z.push({
     id: "trial",
     label: "Has Trial",
     isDisabled: false
-  }), ee && $.push({
+  }), ee && Z.push({
     id: "active-discount",
     label: "Has Active Discount",
     isDisabled: false
-  }), I.status !== b.Dmq.ACTIVE && $.push({
+  }), I.status !== b.Dmq.ACTIVE && Z.push({
     id: "dates",
     label: "Dates: ".concat((0, p.i$)(I.createdAt, "LL"), " - ").concat((0, p.i$)(I.currentPeriodEnd, "LL")),
     isDisabled: false
-  }), I.status === b.Dmq.PAUSED && $.push({
+  }), I.status === b.Dmq.PAUSED && Z.push({
     id: "pause-reason",
     label: "Pause Reason: ".concat(I.pauseReason in C ? C[I.pauseReason] : "Unknown pause reason ".concat(I.pauseReason)),
     isDisabled: false
@@ -284,12 +284,12 @@ function E(e) {
       label: "Type: ".concat(null == (T = I.planIdFromItems) ? "No plan id" : T in v.hd ? v.hd[T].name : "Unknown plan id ".concat(T)),
       className: y.lI,
       children: [(0, a.jsx)(u.CR_, {
-        items: $,
+        items: Z,
         label: "Tags",
         selectionMode: "none",
         selectionBehavior: "replace",
         disabledKeys: new Set
-      }), Z && (0, a.jsxs)("div", {
+      }), $ && (0, a.jsxs)("div", {
         className: y.VK,
         children: [(0, a.jsxs)(u.DUT, {
           onClick: () => {
