@@ -2,9 +2,10 @@
 /** chunk id: 323484, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => u
+  $: () => d
 });
-var Chunk734057 = require("./734057.js"),
+var Chunk870383 = require("./870383.js"),
+  Chunk734057 = require("./734057.js"),
   Chunk287809 = require("./287809.js"),
   Chunk562153 = require("./562153.js"),
   Chunk427262 = require("./427262.js"),
@@ -12,53 +13,53 @@ var Chunk734057 = require("./734057.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk641131 = require("./641131.js");
 
-function u(e, t, n) {
-  var u;
-  let d = i.default.getUser(t),
-    f = r.A.getChannel(n),
-    p = null != (u = a.Ay.getName(null == f ? true : f.guild_id, null == f ? true : f.id, d)) ? u : s.Ay.getGlobalName(d);
+function d(e, t, n) {
+  var d;
+  let f = a.default.getUser(t),
+    p = i.A.getChannel(n),
+    _ = null != (d = s.Ay.getName(null == p ? true : p.guild_id, null == p ? true : p.id, f)) ? d : o.Ay.getGlobalName(f);
   switch (e) {
-    case o.OB.IGNORE_SUCCESS:
-      return l.intl.formatToPlainString(l.t["+joqrP"], {
-        username: p
+    case l.OB.IGNORE_SUCCESS:
+      return c.intl.formatToPlainString(c.t["+joqrP"], {
+        username: _
       });
-    case o.OB.UNIGNORE_SUCCESS:
-      return l.intl.formatToPlainString(l.t.THExKa, {
-        username: p
+    case l.OB.UNIGNORE_SUCCESS:
+      return c.intl.formatToPlainString(c.t.THExKa, {
+        username: _
       });
-    case o.OB.BLOCK_SUCCESS:
-      return l.intl.formatToPlainString(l.t.XXPrIs, {
-        username: p
+    case l.OB.BLOCK_SUCCESS:
+      return c.intl.formatToPlainString(c.t.XXPrIs, {
+        username: _
       });
-    case o.OB.UNBLOCK_SUCCESS:
-      return l.intl.formatToPlainString(l.t.uExcGX, {
-        username: p
+    case l.OB.UNBLOCK_SUCCESS:
+      return c.intl.formatToPlainString(c.t.uExcGX, {
+        username: _
       });
-    case o.OB.MUTE_SUCCESS:
-      return l.intl.formatToPlainString(l.t.X4NtYb, {
-        username: p
+    case l.OB.MUTE_SUCCESS:
+      return c.intl.formatToPlainString(c.t.X4NtYb, {
+        username: _
       });
-    case o.OB.UNMUTE_SUCCESS:
-      return l.intl.formatToPlainString(l.t.tRaBfY, {
-        username: p
+    case l.OB.UNMUTE_SUCCESS:
+      return c.intl.formatToPlainString(c.t.tRaBfY, {
+        username: _
       });
-    case o.OB.REPORT_SUCCESS:
-      return l.intl.formatToPlainString(l.t.FOptFU, {
-        username: p
+    case l.OB.REPORT_SUCCESS:
+      return c.intl.formatToPlainString(c.t.FOptFU, {
+        username: _
       });
-    case o.OB.TIGGER_PAWTECT_ERROR:
-      return l.intl.string(l.t.c6kn6F);
-    case o.OB.TIGGER_PAWTECT_VERIFIED:
-      return l.intl.string(l.t.XwKo1k);
-    case o.OB.GENERIC_ERROR:
-      return l.intl.string(l.t.zBpoc7);
-    case o.OB.REPORT_TO_MOD_SUCCESS:
-      return l.intl.string(c.default.iBypeZ);
-    case o.OB.SAFETY_FEEDBACK_SUCCESS:
-      return l.intl.string(l.t.TcFR5k);
-    case o.OB.EXISTING_USER_AGE_GATE_SUCCESS:
-      return l.intl.string(l.t["susqq/"]);
+    case l.OB.TIGGER_PAWTECT_ERROR:
+      return c.intl.string(c.t.c6kn6F);
+    case l.OB.TIGGER_PAWTECT_VERIFIED:
+      return (0, r.H)(c.intl.string(c.t.XwKo1k), c.intl.string(c.t["7nKAXx"]));
+    case l.OB.GENERIC_ERROR:
+      return c.intl.string(c.t.zBpoc7);
+    case l.OB.REPORT_TO_MOD_SUCCESS:
+      return c.intl.string(u.default.iBypeZ);
+    case l.OB.SAFETY_FEEDBACK_SUCCESS:
+      return c.intl.string(c.t.TcFR5k);
+    case l.OB.EXISTING_USER_AGE_GATE_SUCCESS:
+      return c.intl.string(c.t["susqq/"]);
     default:
-      return l.intl.string(l.t["+c5xtT"])
+      return c.intl.string(c.t["+c5xtT"])
   }
 }

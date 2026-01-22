@@ -1,7 +1,7 @@
 /** Chunk was on 35270 **/
 /** chunk id: 743461, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => M
+  default: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,6 +10,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk975807 = require("./975807.js"),
   Chunk935649 = require("./935649.jsx"),
   Chunk847599 = require("./847599.js"),
+  Chunk620715 = require("./620715.js"),
+  Chunk870383 = require("./870383.js"),
   Chunk36149 = require("./36149.js"),
   Chunk945276 = require("./945276.js"),
   Chunk780964 = require("./780964.js"),
@@ -20,20 +22,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk355097 = require("./355097.js"),
   Chunk985018 = require("./985018.jsx");
-let M = t => {
+let O = t => {
   let {
     channelId: e,
-    messageId: M,
-    transitionState: O,
-    onClose: f
-  } = t, g = (0, I.A)(), P = (0, _.yM)(), h = (0, d._R)(), v = i.useMemo(() => P && h, [P, h]), N = i.useCallback(t => {
-    (0, d.hv)({
+    messageId: O,
+    transitionState: f,
+    onClose: P
+  } = t, h = (0, u.A)(), p = (0, c.yM)(), v = (0, R._R)(), {
+    enabled: N
+  } = _.Y.useConfig({
+    location: "ExplicitMediaLearnMoreModal"
+  }), S = (0, I.W)(g.intl.string(g.t.KPGVWl), g.intl.string(g.t["9KiIz6"])), b = i.useMemo(() => p && v, [p, v]), D = i.useCallback(t => {
+    (0, R.hv)({
       action: t,
       channelId: e,
-      messageId: M
+      messageId: O
     })
-  }, [e, M]), p = i.useCallback(() => {
-    f(), N(d.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.mMO)(async () => {
+  }, [e, O]), m = i.useCallback(() => {
+    P(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.mMO)(async () => {
       let {
         default: t
       } = await n(652442);
@@ -56,58 +62,58 @@ let M = t => {
         return t
       }({
         channelId: e,
-        messageId: M
+        messageId: O
       }, n))
     })
-  }, [e, M, f, N]);
+  }, [e, O, P, D]);
   return i.useEffect(() => {
-    (0, d.hv)({
-      action: d.rY.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
+    (0, R.hv)({
+      action: R.rY.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
       channelId: e,
-      messageId: M
+      messageId: O
     })
-  }, [e, M]), (0, r.jsx)(l.Modal, {
-    title: T.intl.string(T.t.sGW77l),
+  }, [e, O]), (0, r.jsx)(l.Modal, {
+    title: g.intl.string(g.t.sGW77l),
     subtitle: function() {
-      if (v) return T.intl.format(T.t["1L0huf"], {
+      if (b) return g.intl.format(N ? g.t.KEPOlE : g.t["1L0huf"], {
         handleOnHelpUrlHook: () => {
-          E.A.openUrl(C.A.getArticleURL(L.MVz.TIGGER_PAWTECT_LEARN_MORE)), N(d.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
+          E.A.openUrl(L.A.getArticleURL(M.MVz.TIGGER_PAWTECT_LEARN_MORE)), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
         }
       });
-      let t = T.intl.string(T.t.RUw0ZC),
-        e = T.intl.string(T.t["E/oQYL"]);
-      return g ? t : e
+      let t = g.intl.string(g.t.RUw0ZC),
+        e = g.intl.string(g.t["E/oQYL"]);
+      return h ? t : e
     }(),
     actions: [function() {
-      if (!h && !v) return {
-        text: T.intl.string(T.t.ZH7P2h),
-        onClick: p,
+      if (!v && !b) return {
+        text: g.intl.string(g.t.ZH7P2h),
+        onClick: m,
         variant: "secondary"
       }
-    }(), v ? {
-      text: T.intl.string(T.t.KPGVWl),
+    }(), b ? {
+      text: S,
       onClick: function() {
-        f(), N(d.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), E.A.showAgeVerificationGetStartedModal({
+        P(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), E.A.showAgeVerificationGetStartedModal({
           entryPoint: s.q1.SENSITIVE_MEDIA_LEARN_MORE
         })
       }
-    } : g ? {
-      text: T.intl.string(T.t["9D+zGX"]),
+    } : h ? {
+      text: g.intl.string(g.t["9D+zGX"]),
       onClick: function() {
-        N(d.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS);
-        let t = (0, u.WJ)("ExplicitMediaLearnMoreModal");
-        (0, A.openUserSettings)(t ? c.X.CONTENT_AND_SOCIAL_CONTENT_FILTERS_SETTING : c.X.CONTENT_AND_SOCIAL_PANEL, {
-          section: L.nc_.CONTENT_AND_SOCIAL,
-          scrollPosition: t ? true : R.d1.EXPLICIT_MEDIA_REDACTION_V2
-        }), f()
+        D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS);
+        let t = (0, d.WJ)("ExplicitMediaLearnMoreModal");
+        (0, C.openUserSettings)(t ? A.X.CONTENT_AND_SOCIAL_CONTENT_FILTERS_SETTING : A.X.CONTENT_AND_SOCIAL_PANEL, {
+          section: M.nc_.CONTENT_AND_SOCIAL,
+          scrollPosition: t ? true : T.d1.EXPLICIT_MEDIA_REDACTION_V2
+        }), P()
       }
     } : {
-      text: T.intl.string(T.t.hvVgAZ),
+      text: g.intl.string(g.t.hvVgAZ),
       onClick: () => {
-        (0, a.A)(C.A.getArticleURL(L.MVz.EXPLICIT_MEDIA_REDACTION))
+        (0, a.A)(L.A.getArticleURL(M.MVz.EXPLICIT_MEDIA_REDACTION))
       }
     }].filter(t => true !== t),
-    onClose: () => (f(), N(d.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS), Promise.resolve()),
-    transitionState: O
+    onClose: () => (P(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS), Promise.resolve()),
+    transitionState: f
   })
 }

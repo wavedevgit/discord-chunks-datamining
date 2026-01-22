@@ -1,7 +1,7 @@
 /** Chunk was on 18467 **/
 /** chunk id: 297102, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => O
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,6 +12,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk975571 = require("./975571.js"),
   Chunk935649 = require("./935649.jsx"),
   Chunk847599 = require("./847599.js"),
+  Chunk870383 = require("./870383.js"),
   Chunk81091 = require("./81091.js"),
   Chunk36149 = require("./36149.js"),
   Chunk737567 = require("./737567.js"),
@@ -20,62 +21,62 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk935568 = require("./935568.js"),
   Chunk700129 = require("./700129.js");
-let x = function(t) {
+let O = function(t) {
   let {
     transitionState: e,
     entryPoint: n,
-    onClose: x
+    onClose: O
   } = t, {
-    loading: O,
-    initiateAgeVerification: T
-  } = (0, g.nn)({
-    onComplete: x,
+    loading: T,
+    initiateAgeVerification: h
+  } = (0, b.nn)({
+    onComplete: O,
     entryPoint: d.q1.RETRY_MODAL,
     isRetry: true
-  }), h = r.useMemo(() => (0, l.A)(), []), A = (0, b.I)("age_verification_retry_modal"), y = (0, p.t)("age_verification_retry_modal");
+  }), A = r.useMemo(() => (0, l.A)(), []), v = (0, m.I)("age_verification_retry_modal"), y = (0, p.t)("age_verification_retry_modal"), k = (0, g.W)(R.intl.string(R.t["5l3R/m"]), R.intl.string(R.t.JSdbBe)), L = (0, g.W)(R.intl.string(R.t.O7SO0D), R.intl.string(R.t.JNK1ue)), j = (0, g.W)(R.intl.string(R.t.RtOE1v), R.intl.string(R.t.mFvt9M));
   r.useEffect(() => {
-    (0, d.Bs)(h, d.WU.RETRY, n)
-  }, [h, n]);
-  let v = r.useMemo(() => {
+    (0, d.Bs)(A, d.WU.RETRY, n)
+  }, [A, n]);
+  let P = r.useMemo(() => {
     let t = [{
-      title: E.intl.string(E.t.FYkioq),
-      description: y ? null : E.intl.string(E.t.xMfbRz),
-      buttonText: E.intl.string(E.t.RtOE1v),
-      buttonLoading: O,
+      title: R.intl.string(R.t.FYkioq),
+      description: y ? null : R.intl.string(R.t.xMfbRz),
+      buttonText: j,
+      buttonLoading: T,
       onButtonPress: () => {
-        T(), (0, d.St)(h, d.WU.RETRY, d._7.GET_STARTED)
+        h(), (0, d.St)(A, d.WU.RETRY, d._7.GET_STARTED)
       }
     }];
-    return A || t.push({
-      title: E.intl.string(E.t["LZO+Hd"]),
-      description: E.intl.string(E.t.N2mHaK),
-      buttonText: E.intl.string(E.t["LZO+Hd"]),
-      buttonLoading: O,
+    return v || t.push({
+      title: R.intl.string(R.t["LZO+Hd"]),
+      description: R.intl.string(R.t.N2mHaK),
+      buttonText: R.intl.string(R.t["LZO+Hd"]),
+      buttonLoading: T,
       onButtonPress: () => {
-        u.A.openUrl(m.d$.APPEALS_LINK), (0, d.St)(h, d.WU.RETRY, d._7.MANUAL_REVIEW_REQUEST)
+        u.A.openUrl(E.d$.APPEALS_LINK), (0, d.St)(A, d.WU.RETRY, d._7.MANUAL_REVIEW_REQUEST)
       }
     }), t
-  }, [T, h, O, A, y]);
+  }, [h, A, T, v, y, j]);
   return (0, i.jsx)(o.ExpressiveModal, {
     transitionState: e,
-    onClose: x,
+    onClose: O,
     gradientColor: "blue",
     graphic: {
-      src: _.A,
+      src: x.A,
       type: "image"
     },
-    title: E.intl.string(E.t["5l3R/m"]),
-    subtitle: E.intl.string(E.t.O7SO0D),
-    children: (0, i.jsxs)(a.BJc, {
+    title: k,
+    subtitle: L,
+    children: (0, i.jsxs)(s.BJc, {
       direction: "vertical",
       gap: 16,
-      children: [(0, i.jsx)(a.po8, {
-        messageType: a.YCn.INFO,
-        className: R.e,
+      children: [(0, i.jsx)(s.po8, {
+        messageType: s.YCn.INFO,
+        className: _.e,
         textColor: "text-feedback-info",
         textVariant: "text-sm/medium",
-        children: E.intl.string(E.t.El4aXl)
-      }), v.map((t, e) => (0, i.jsx)(s.PQ, function(t) {
+        children: R.intl.string(R.t.El4aXl)
+      }), P.map((t, e) => (0, i.jsx)(a.PQ, function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
@@ -94,13 +95,13 @@ let x = function(t) {
         return t
       }({
         variant: "clickable"
-      }, t), e)), (0, i.jsx)(a.Text, {
+      }, t), e)), (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: R.Z,
-        children: E.intl.format(E.t["L+FgkZ"], {
+        className: _.Z,
+        children: R.intl.format(R.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            u.A.openUrl(c.A.getArticleURL(f.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, d.St)(h, d.WU.RETRY, d._7.LEARN_MORE)
+            u.A.openUrl(c.A.getArticleURL(f.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, d.St)(A, d.WU.RETRY, d._7.LEARN_MORE)
           }
         })
       })]
