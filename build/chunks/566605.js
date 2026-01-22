@@ -1,33 +1,47 @@
-/** Chunk was on 82821 **/
-/** chunk id: 566605, original params: e,r,t (module,exports,require) **/
-"use strict";
-require("./864733.js")(exports, "__esModule", {
-  value: true
-}), exports.default = true, exports.default = {
-  abstract: false,
-  accessibleNameRequired: false,
-  baseConcepts: [],
-  childrenPresentational: false,
-  nameFrom: ["author"],
-  prohibitedProps: [],
-  props: {
-    "aria-disabled": null,
-    "aria-errormessage": null,
-    "aria-expanded": null,
-    "aria-haspopup": null,
-    "aria-invalid": null
-  },
-  relatedConcepts: [{
-    concept: {
-      name: "epilogue [EPUB-SSV]"
-    },
-    module: "EPUB"
-  }],
-  requireContextRole: [],
-  requiredContextRole: [],
-  requiredOwnedElements: [],
-  requiredProps: {},
-  superClass: [
-    ["roletype", "structure", "section", "landmark"]
-  ]
+/** Chunk was on 38663 **/
+/** chunk id: 566605, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => f
+});
+var Chunk64700 = require("./64700.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk704824 = require("./704824.js"),
+  Chunk429913 = require("./429913.js"),
+  Chunk633075 = require("./633075.js"),
+  Chunk667049 = require("./667049.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk403362 = require("./403362.js"),
+  Chunk395332 = require("./395332.js");
+
+function f(e) {
+  let t = (0, l.bG)([c.default], () => c.default.getCurrentUser()),
+    n = (0, d.DB)({
+      location: e.location
+    }),
+    f = r.useMemo(() => null == n ? true : n.filter(e => e.isEligibleForSuggestions()), [n]),
+    p = r.useMemo(() => {
+      var e;
+      return null != (e = null == f ? true : f.map(e => e.applicationId)) ? e : []
+    }, [f]),
+    b = (0, a.A)(p),
+    {
+      tokens: g,
+      fetched: m
+    } = (0, i.j)(p),
+    y = (0, o.A)(null == t ? true : t.id),
+    O = null == t || null == f || null == g || !m;
+  return r.useMemo(() => O ? {
+    isLoading: O
+  } : {
+    isLoading: O,
+    suggestions: f.map(e => {
+      let t = b.find(t => (null == t ? true : t.id) === e.applicationId);
+      return null == t || null == g.find(t => t.application.id === e.applicationId) || null != y.find(t => t instanceof s.R && t.applicationId === e.applicationId) ? null : {
+        config: e,
+        application: t,
+        dismissibleContent: e.suggestedWidgetLinkedDc
+      }
+    }).filter(u.Vq),
+    currentUser: t
+  }, [O, f, t, b, g, y])
 }

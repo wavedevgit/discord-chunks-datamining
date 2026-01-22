@@ -1,1 +1,0 @@
-{"id":"58468","type":"store","data":{"name":"CollapsedVoiceChannelStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getCollapsed","args":[]},{"name":"isCollapsed","args":["e"]}],"events":["CONNECTION_OPEN","OVERLAY_INITIALIZE","CHANNEL_COLLAPSE"]},"fromModule":{"id":"web.js"}}

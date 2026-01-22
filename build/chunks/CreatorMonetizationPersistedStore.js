@@ -1,36 +1,37 @@
-/** Chunk was on 55942 **/
-/** chunk id: 709246, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 47841 **/
+/** chunk id: 448564, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
-}), require("./388685.js");
-var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => o
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function a(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[n] = t, e
+  }) : e[t] = n, e
 }
-let s = {
+let a = {
   canSeeEnableMonetizationForGuilds: new Set
 };
-class l extends(i = Chunk442837.ZP.PersistedStore) {
+class c extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (s.canSeeEnableMonetizationForGuilds = new Set(e.canSeeEnableMonetizationForGuilds))
+    null != e && (a.canSeeEnableMonetizationForGuilds = new Set(e.canSeeEnableMonetizationForGuilds))
   }
   getState() {
-    return s
+    return a
   }
   hasSeenCreatorOnboardingForGuild(e) {
-    return s.canSeeEnableMonetizationForGuilds.has(e)
+    return a.canSeeEnableMonetizationForGuilds.has(e)
   }
 }
-a(l, "displayName", "CreatorMonetizationPersistedStore"), a(l, "persistKey", "CreatorMonetizationPersistedStore"), a(l, "migrations", []);
-let u = new l(Chunk570140.Z, {
+s(c, "displayName", "CreatorMonetizationPersistedStore"), s(c, "persistKey", "CreatorMonetizationPersistedStore"), s(c, "migrations", []);
+let o = new c(Chunk73153.h, {
   CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD: function(e) {
-    s.canSeeEnableMonetizationForGuilds.has(e.guildId) || (s.canSeeEnableMonetizationForGuilds = new Set(s.canSeeEnableMonetizationForGuilds).add(e.guildId))
+    a.canSeeEnableMonetizationForGuilds.has(e.guildId) || (a.canSeeEnableMonetizationForGuilds = new Set(a.canSeeEnableMonetizationForGuilds).add(e.guildId))
   }
 })

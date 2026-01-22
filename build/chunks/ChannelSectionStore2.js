@@ -1,28 +1,28 @@
 /** Chunk was on web.js **/
-/** chunk id: 433355, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 761640, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D5: () => L,
-  ZP: () => J,
-  uZ: () => T
+  Ay: () => $,
+  JU: () => L,
+  fe: () => I
 });
-var r, Chunk873546 = require("./873546.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk353926 = require("./353926.js"),
-  Chunk171900 = require("./171900.js"),
-  Chunk897473 = require("./897473.js"),
-  Chunk585483 = require("./585483.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk914010 = require("./914010.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk176505 = require("./176505.js"),
-  Chunk231338 = require("./231338.js");
+var r, Chunk607399 = require("./607399.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk49463 = require("./49463.js"),
+  Chunk517381 = require("./517381.js"),
+  Chunk940382 = require("./940382.js"),
+  Chunk203982 = require("./203982.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk967198 = require("./967198.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk746080 = require("./746080.js"),
+  Chunk818348 = require("./818348.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function S(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,50 +57,50 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = "message_requests",
+let I = "message_requests",
+  T = false,
   C = false,
-  A = false,
   N = true,
-  P = {},
+  R = {},
   w = {},
-  R = false,
+  P = false,
   D = null;
 
 function x(e) {
   if (null == e) return null;
-  if ((0, b.AB)(e)) {
-    let t = m.Z.getGuildId();
-    return null == t ? null : (0, b.Qk)(e, t)
+  if ((0, b.jq)(e)) {
+    let t = m.A.getGuildId();
+    return null == t ? null : (0, b.Gr)(e, t)
   }
   return e
 }
 
 function L(e) {
-  return [c.tI.VIEW_CHANNEL, c.tI.VIEW_THREAD, c.tI.VIEW_MESSAGE_REQUEST, c.tI.VIEW_MOD_REPORT].includes(e.type)
+  return [c.PE.VIEW_CHANNEL, c.PE.VIEW_THREAD, c.PE.VIEW_MESSAGE_REQUEST, c.PE.VIEW_MOD_REPORT].includes(e.type)
 }
 
 function j(e) {
   let t = false;
-  R && (R = false, t = true);
-  let n = x(h.Z.getChannelId());
-  return null != n && n in P && (delete P[n], t = true), t && e ? e : !e
+  P && (P = false, t = true);
+  let n = x(h.A.getChannelId());
+  return null != n && n in R && (delete R[n], t = true), t && e ? e : !e
 }
 
 function M() {
-  R && u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), A && (A = j(A)), C = j(C)
+  P && u._.dispatch(E.jej.SEARCH_RESULTS_CLOSE), C && (C = j(C)), T = j(T)
 }
 
 function k() {
-  C && (C = j(C)), A = j(A)
+  T && (T = j(T)), C = j(C)
 }
 
 function U() {
-  N || u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), N = j(N)
+  N || u._.dispatch(E.jej.SEARCH_RESULTS_CLOSE), N = j(N)
 }
 
 function G(e) {
@@ -110,7 +110,7 @@ function G(e) {
     baseChannelId: r,
     details: i
   } = e;
-  R = false;
+  P = false;
   let a = x(r);
   return null != a && (w[n] = {
     type: t,
@@ -120,7 +120,7 @@ function G(e) {
   }, true)
 }
 
-function Z(e) {
+function V(e) {
   let {
     guildId: t
   } = e;
@@ -134,17 +134,17 @@ function F(e) {
     channelId: r,
     details: i
   } = e;
-  R = false;
+  P = false;
   let a = x(n);
   if (null == a) returnfalse;
-  let o = {
+  let s = {
     type: t,
     channelId: r,
     details: i
   };
-  return t === c.tI.VIEW_MOD_REPORT && (o = I(v({}, o), {
+  return t === c.PE.VIEW_MOD_REPORT && (s = S(A({}, s), {
     baseChannelId: n
-  })), P[a] = o, true
+  })), R[a] = s, true
 }
 
 function B(e) {
@@ -153,141 +153,141 @@ function B(e) {
     parentMessageId: n,
     location: r
   } = e;
-  R = false;
+  P = false;
   let i = x(t);
-  null != i && (P[i] = {
-    type: c.tI.CREATE_THREAD,
+  null != i && (R[i] = {
+    type: c.PE.CREATE_THREAD,
     parentChannelId: t,
     parentMessageId: n,
     location: r
   })
 }
 
-function V(e) {
+function H(e) {
   let {
     channel: t
   } = e;
-  if (t.id in P) return delete P[t.id], true;
+  if (t.id in R) return delete R[t.id], true;
   let n = false;
-  for (let e in P) {
-    let r = P[e];
-    null != r && r.type === c.tI.VIEW_CHANNEL && r.channelId === t.id && (delete P[e], n = true)
+  for (let e in R) {
+    let r = R[e];
+    null != r && r.type === c.PE.VIEW_CHANNEL && r.channelId === t.id && (delete R[e], n = true)
   }
   return n
 }
 
-function H(e) {
+function Y(e) {
   let {
     channel: t
-  } = e, n = P[t.parent_id];
-  if (null == n || n.type !== c.tI.VIEW_THREAD || n.channelId !== t.id) returnfalse;
-  delete P[t.parent_id]
+  } = e, n = R[t.parent_id];
+  if (null == n || n.type !== c.PE.VIEW_THREAD || n.channelId !== t.id) returnfalse;
+  delete R[t.parent_id]
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let {
     channel: n
   } = e;
   if (n.ownerId === (null == (t = g.default.getCurrentUser()) ? true : t.id)) returnfalse;
-  let r = P[n.parent_id];
-  null != r && r.type === c.tI.CREATE_THREAD && r.parentMessageId === d.default.castChannelIdAsMessageId(n.id) && (P[n.parent_id] = {
-    type: c.tI.VIEW_THREAD,
+  let r = R[n.parent_id];
+  null != r && r.type === c.PE.CREATE_THREAD && r.parentMessageId === d.default.castChannelIdAsMessageId(n.id) && (R[n.parent_id] = {
+    type: c.PE.VIEW_THREAD,
     channelId: n.id
   })
 }
 
-function W() {
+function K() {
   let e = false;
-  for (let t in P) {
-    let n = P[t];
-    if (n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL) {
-      let r = f.Z.getChannel(n.channelId);
-      null != r && _.Z.can(y.Pl.VIEW_CHANNEL, r) || (delete P[t], e = true)
+  for (let t in R) {
+    let n = R[t];
+    if (n.type === c.PE.VIEW_THREAD || n.type === c.PE.VIEW_CHANNEL) {
+      let r = f.A.getChannel(n.channelId);
+      null != r && _.A.can(y.xB.VIEW_CHANNEL, r) || (delete R[t], e = true)
     }
   }
   return e
 }
 
-function K(e) {
+function z(e) {
   let {
     baseChannelId: t
   } = e, n = x(t);
-  null != n && delete P[n]
-}
-
-function z() {
-  let e = null != D && l.Z.hasSearchState(D);
-  if (e === R) returnfalse;
-  R = e
+  null != n && delete R[n]
 }
 
 function q() {
-  i.tq && C && (C = false, A = false)
+  let e = null != D && l.A.hasSearchState(D);
+  if (e === P) returnfalse;
+  P = e
 }
 
-function Q(e) {
-  return D = e.searchContextId, z()
+function X() {
+  i.Fr && T && (T = false, C = false)
 }
-class X extends(r = Chunk442837.ZP.PersistedStore) {
+
+function Z(e) {
+  return D = e.searchContextId, q()
+}
+class Q extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, a;
-      C = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, P = null != (i = e.sidebars) ? i : {}, w = null != (a = e.guildSidebars) ? a : {}
+      T = null != (t = e.isMembersOpen) && t, C = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, w = null != (a = e.guildSidebars) ? a : {}
     }
-    this.syncWith([l.Z], z), this.syncWith([_.Z], W), this.waitFor(f.Z, s.Z, p.Z, _.Z, l.Z, h.Z, m.Z, g.default)
+    this.syncWith([l.A], q), this.syncWith([_.A], K), this.waitFor(f.A, o.A, p.A, _.A, l.A, h.A, m.A, g.default)
   }
   getState() {
     return {
-      isMembersOpen: C,
-      isSummariesOpen: A,
+      isMembersOpen: T,
+      isSummariesOpen: C,
       isProfileOpen: N,
-      sidebars: P,
+      sidebars: R,
       guildSidebars: w
     }
   }
   getSection(e, t) {
-    if (R) return E.ULH.SEARCH;
+    if (P) return E.YvQ.SEARCH;
     let n = x(e);
-    return null != n && null != P[n] ? E.ULH.SIDEBAR_CHAT : t && N ? E.ULH.PROFILE : A ? E.ULH.SUMMARIES : C ? E.ULH.MEMBERS : E.ULH.NONE
+    return null != n && null != R[n] ? E.YvQ.SIDEBAR_CHAT : t && N ? E.YvQ.PROFILE : C ? E.YvQ.SUMMARIES : T ? E.YvQ.MEMBERS : E.YvQ.NONE
   }
   getSidebarState(e) {
     let t = x(e);
-    return null == t ? true : P[t]
+    return null == t ? true : R[t]
   }
   getGuildSidebarState(e) {
     return null == e ? true : w[e]
   }
   getCurrentSidebarChannelId(e) {
     let t = x(e);
-    if (null == t || R) return null;
-    let n = P[t];
-    return null == n ? null : n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL || n.type === c.tI.VIEW_MOD_REPORT ? n.channelId : null
+    if (null == t || P) return null;
+    let n = R[t];
+    return null == n ? null : n.type === c.PE.VIEW_THREAD || n.type === c.PE.VIEW_CHANNEL || n.type === c.PE.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
     let n = x(e);
-    if (null == n || R) return null;
-    let r = P[n];
-    return null == r ? null : r.type === c.tI.VIEW_THREAD || r.type === c.tI.VIEW_CHANNEL || r.type === c.tI.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
+    if (null == n || P) return null;
+    let r = R[n];
+    return null == r ? null : r.type === c.PE.VIEW_THREAD || r.type === c.PE.VIEW_CHANNEL || r.type === c.PE.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
   }
   getCurrentSearchContextId() {
     return D
   }
 }
-O(X, "displayName", "ChannelSectionStore"), O(X, "persistKey", "ChannelSectionStore2");
-let J = new X(Chunk570140.Z, {
-  SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: Q,
+O(Q, "displayName", "ChannelSectionStore"), O(Q, "persistKey", "ChannelSectionStore2");
+let $ = new Q(Chunk73153.h, {
+  SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: Z,
   CHANNEL_TOGGLE_MEMBERS_SECTION: M,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: U,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: k,
   SIDEBAR_VIEW_CHANNEL: F,
   SIDEBAR_VIEW_GUILD: G,
   SIDEBAR_CREATE_THREAD: B,
-  SIDEBAR_CLOSE: K,
-  SIDEBAR_CLOSE_GUILD: Z,
-  CHANNEL_DELETE: V,
-  CHANNEL_SELECT: q,
-  THREAD_CREATE: Y,
-  THREAD_DELETE: H
+  SIDEBAR_CLOSE: z,
+  SIDEBAR_CLOSE_GUILD: V,
+  CHANNEL_DELETE: H,
+  CHANNEL_SELECT: X,
+  THREAD_CREATE: W,
+  THREAD_DELETE: Y
 })

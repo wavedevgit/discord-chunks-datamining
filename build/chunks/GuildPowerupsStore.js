@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 905128, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 645619, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
-}), require("./388685.js"), require("./467055.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk535396 = require("./535396.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => N
+}), require("./896048.js"), require("./446912.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk568065 = require("./568065.js"),
+  Chunk652215 = require("./652215.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,11 +82,11 @@ function E(e) {
 
 function b(e) {
   var t, n, r, i;
-  let a = o.Z.getGuild(e),
-    c = (null == a ? true : a.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.oCV[null != (t = null == a ? true : a.premiumTier) ? t : l.Eu4.NONE];
-  for (let [t, o] of Object.entries(s.Hk)) {
-    let s = t;
-    (null == a || null == (n = a.premiumFeatures) ? true : n.features.includes(s)) && (null == (i = null == (r = o.isEnabled) ? true : r.call(o, e)) || i) && (null == o.includedInLevel || a.premiumTier < o.includedInLevel) && (c += o.boostPrice)
+  let a = s.A.getGuild(e),
+    c = (null == a ? true : a.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.M2T[null != (t = null == a ? true : a.premiumTier) ? t : l.TVA.NONE];
+  for (let [t, s] of Object.entries(o.sy)) {
+    let o = t;
+    (null == a || null == (r = a.premiumFeatures) ? true : r.features.includes(o)) && (null == (n = null == (i = s.isEnabled) ? true : i.call(s, e)) || n) && (null == s.includedInLevel || a.premiumTier < s.includedInLevel) && (c += s.boostPrice)
   }
   return c
 }
@@ -117,7 +117,7 @@ function O(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     guildId: t,
     unlockedPowerups: n
@@ -132,7 +132,7 @@ function v(e) {
   })
 }
 
-function S(e, t) {
+function v(e, t) {
   let {
     guildId: n,
     entitlements: r
@@ -146,20 +146,20 @@ function S(e, t) {
   })
 }
 
+function S(e) {
+  v(e, true)
+}
+
 function I(e) {
-  S(e, true)
+  v(e, false)
 }
 
-function T(e) {
-  S(e, false)
-}
-
-function C() {
+function T() {
   h = {}
 }
-class A extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.Z), null != e && (h = e)
+    this.waitFor(s.A), null != e && (h = e)
   }
   getState() {
     return h
@@ -186,24 +186,24 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     return null != e && (null == (t = h[e]) ? true : t.hasFetchedUnlockedPowerups) === true
   }
 }
-c(A, "displayName", "GuildPowerupsStore"), c(A, "persistKey", "GuildPowerupsStore"), c(A, "migrations", [e => null == e ? e : Object.fromEntries(Object.entries(e).filter(e => {
+c(C, "displayName", "GuildPowerupsStore"), c(C, "persistKey", "GuildPowerupsStore"), c(C, "migrations", [e => null == e ? e : Object.fromEntries(Object.entries(e).filter(e => {
   let [t, n] = e;
   return null != n && "object" == typeof n
 }).map(e => {
   var t, n, r;
-  let [i, a] = e, o = a;
-  return [i, f(u({}, o), {
-    allPowerups: null != (t = o.allPowerups) ? t : {},
-    powerupCatalog: null != (n = o.powerupCatalog) ? n : {},
-    unlockedPowerups: null != (r = o.unlockedPowerups) ? r : {}
+  let [i, a] = e, s = a;
+  return [i, f(u({}, s), {
+    allPowerups: null != (t = s.allPowerups) ? t : {},
+    powerupCatalog: null != (n = s.powerupCatalog) ? n : {},
+    unlockedPowerups: null != (r = s.unlockedPowerups) ? r : {}
   })]
 }))]);
-let N = new A(Chunk570140.Z, {
-  LOGOUT: C,
+let N = new C(Chunk73153.h, {
+  LOGOUT: T,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: O,
-  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: v,
-  GUILD_POWERUP_ENTITLEMENTS_CREATE: I,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: T,
+  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: A,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: S,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: I,
   GUILD_UPDATE: g,
   GAME_SERVER_FETCH_INSTANCES_SUCCESS: E
 })

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 263937, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 397438, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk581883 = require("./581883.js");
+  A: () => y
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk617617 = require("./617617.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,11 +35,11 @@ let u = {},
 
 function f() {
   var e, t, n, r, i, a;
-  let o = s.Z.settings;
+  let s = o.A.settings;
   return {
-    gifAutoPlay: null == (t = o.textAndImages) || null == (e = t.gifAutoPlay) ? true : e.value,
-    animateEmoji: null == (r = o.textAndImages) || null == (n = r.animateEmoji) ? true : n.value,
-    animateStickers: null == (a = o.textAndImages) || null == (i = a.animateStickers) ? true : i.value
+    gifAutoPlay: null == (t = s.textAndImages) || null == (e = t.gifAutoPlay) ? true : e.value,
+    animateEmoji: null == (r = s.textAndImages) || null == (n = r.animateEmoji) ? true : n.value,
+    animateStickers: null == (a = s.textAndImages) || null == (i = a.animateStickers) ? true : i.value
   }
 }
 
@@ -78,9 +78,9 @@ function E() {
   }
   return t
 }
-class b extends(r = Chunk442837.ZP.PersistedStore) {
+class b extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    u = null != e ? e : {}, this.syncWith([s.Z], p)
+    u = null != e ? e : {}, this.syncWith([o.A], p)
   }
   getState() {
     return u
@@ -95,10 +95,10 @@ class b extends(r = Chunk442837.ZP.PersistedStore) {
 }
 l(b, "displayName", "UserSettingsOverridesStore"), l(b, "persistKey", "UserSettingsOverridesStore"), l(b, "migrations", [() => {
   var e;
-  let t = null != (e = a.K.get("UserSettingsStoreOverrides")) ? e : {};
-  return a.K.remove("UserSettingsStoreOverrides"), t
+  let t = null != (e = a.w.get("UserSettingsStoreOverrides")) ? e : {};
+  return a.w.remove("UserSettingsStoreOverrides"), t
 }]);
-let y = new b(Chunk570140.Z, {
+let y = new b(Chunk73153.h, {
   USER_SETTINGS_PROTO_UPDATE: E,
   USER_SETTINGS_OVERRIDE_APPLY: m,
   USER_SETTINGS_OVERRIDE_CLEAR: g,

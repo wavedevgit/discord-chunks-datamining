@@ -1,0 +1,98 @@
+/** Chunk was on 94503 **/
+/** chunk id: 547015, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => b
+}), require("./896048.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk503698 = require("./503698.js"),
+  i = require.n(Chunk503698),
+  Chunk311907 = require("./311907.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk686956 = require("./686956.js"),
+  Chunk475743 = require("./475743.js"),
+  Chunk736653 = require("./736653.js"),
+  Chunk80682 = require("./80682.js"),
+  Chunk793574 = require("./793574.js"),
+  Chunk688810 = require("./688810.jsx"),
+  Chunk221950 = require("./221950.js"),
+  Chunk950191 = require("./950191.js"),
+  Chunk454719 = require("./454719.js"),
+  Chunk946356 = require("./946356.jsx"),
+  Chunk696451 = require("./696451.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk985925 = require("./985925.js"),
+  Chunk295191 = require("./295191.jsx"),
+  Chunk586387 = require("./586387.jsx"),
+  Chunk12999 = require("./12999.js");
+
+function b(e) {
+  let {
+    userId: t,
+    guildId: n,
+    onClose: a,
+    className: b,
+    infoPanelClassName: G,
+    style: R,
+    moderatorReportId: D
+  } = e, L = (0, N.q)(n), x = (0, s.bG)([O.default], () => O.default.getUser(t), [t]), C = (0, s.bG)([I.Ay], () => I.Ay.getMember(n, t), [n, t]), [M, v] = r.useState(null == x || null == C), j = (0, u.A)(C), U = r.useRef(null), {
+    analyticsLocations: y
+  } = (0, g.Ay)(_.A.GUILD_MEMBER_MOD_VIEW), P = (0, T.Ay)(t, n), k = (0, E.Ay)();
+  return (r.useEffect(() => {
+    L || a()
+  }, [L, a]), r.useEffect(() => {
+    null == j || null != C || M || a()
+  }, [M, C, a, j]), r.useEffect(() => {
+    null != x && null != C && v(false)
+  }, [x, C]), r.useEffect(() => {
+    let e = null == C;
+    return !M && e && (U.current = window.setTimeout(a, 500)), () => {
+      null != U.current && window.clearTimeout(U.current)
+    }
+  }, [M, C, a]), (0, d.E)({
+    [n]: [t]
+  }, "GuildMemberModViewSidebar"), r.useEffect(() => {
+    !async function() {
+      let e = [c.A.requestMembersById(n, [t]), (0, A.jo)(n, [t]), (0, f.A)(t, true, {
+        guildId: n,
+        dispatchWait: true
+      })];
+      await Promise.all(e), v(false)
+    }()
+  }, [n, t]), L) ? M || null == x || null == C ? (0, l.jsx)("div", {
+    className: i()(p.so, p.g4, b),
+    style: R,
+    children: (0, l.jsx)(o.y$y, {
+      animated: true,
+      type: M ? o.y$y.Type.SPINNING_CIRCLE : o.y$y.Type.CHASING_DOTS
+    })
+  }) : (0, l.jsx)(g.f5, {
+    value: y,
+    children: (0, l.jsx)("div", {
+      className: i()(p.so, b),
+      style: R,
+      children: (0, l.jsx)(h.A, {
+        user: x,
+        displayProfile: P,
+        themeType: null,
+        themeOverride: k,
+        forceShowPremium: true,
+        className: p.a2,
+        children: (0, l.jsxs)("div", {
+          className: p.WH,
+          children: [(0, l.jsx)(S.Ay, {
+            userId: t,
+            guildId: n,
+            onClose: a,
+            moderatorReportId: D
+          }), (0, l.jsx)(m.A, {
+            userId: t,
+            guildId: n,
+            onClose: a,
+            className: G
+          })]
+        })
+      })
+    })
+  }) : null
+}

@@ -1,4 +1,26 @@
-/** Chunk was on web.js **/
-/** chunk id: 498057, original params: e (module,exports,re quire) **/
-"use strict";
-module.exports = "/assets/9fef6f57ac5cfc8a.svg"
+/** Chunk was on 97492 **/
+/** chunk id: 498057, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => r
+});
+let r = (0, require("./945810.js").mj)({
+  name: "2025-11-rtc-panel-entry-point-new-copy",
+  kind: "user",
+  defaultConfig: {
+    altTitle: false,
+    altBody: false,
+    altCta: false
+  },
+  variations: {
+    0: {
+      altTitle: false,
+      altBody: false,
+      altCta: false
+    },
+    1: {
+      altTitle: true,
+      altBody: false,
+      altCta: true
+    }
+  }
+})

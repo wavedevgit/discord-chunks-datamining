@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 737604, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 526162, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  A: () => S
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk550385 = require("./550385.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk74538 = require("./74538.js"),
-  Chunk997945 = require("./997945.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk921944 = require("./921944.js"),
-  Chunk474936 = require("./474936.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk793943 = require("./793943.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk927578 = require("./927578.js"),
+  Chunk350972 = require("./350972.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk49999 = require("./49999.js"),
+  Chunk788868 = require("./788868.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,21 +26,21 @@ function _(e, t, n) {
 let h = 2,
   m = {
     client: {
-      desktop: Chunk997945.aH.DEFAULT,
+      desktop: Chunk350972.LW.DEFAULT,
       coachmarkImpressions: 0
     }
   },
   g = true,
   E = () => {
-    (g = !c.ZP.canUsePremiumAppIcons(s.default.getCurrentUser())) && b(u.aH.DEFAULT)
+    (g = !c.Ay.canUsePremiumAppIcons(o.default.getCurrentUser())) && b(u.LW.DEFAULT)
   },
   b = e => {
     if (m.client.desktop = e, !g) {
       var t;
-      l.default.track(d.rMx.APP_ICON_UPDATED, {
+      l.default.track(d.HAw.APP_ICON_UPDATED, {
         icon_id: e,
-        user_premium_tier: null == (t = s.default.getCurrentUser()) ? true : t.premiumType,
-        icon_premium_tier: e !== u.aH.DEFAULT ? p.PremiumTypes.TIER_2 : null
+        user_premium_tier: null == (t = o.default.getCurrentUser()) ? true : t.premiumType,
+        icon_premium_tier: e !== u.LW.DEFAULT ? p.PremiumTypes.TIER_2 : null
       })
     }
   };
@@ -54,20 +54,20 @@ function y(e) {
 
 function O() {
   g && (m.client = {
-    desktop: u.aH.DEFAULT,
+    desktop: u.LW.DEFAULT,
     coachmarkImpressions: h
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     markAsDismissed: t
   } = e;
-  m.client.coachmarkImpressions += 1, m.client.coachmarkImpressions >= h && (null == t || t(f.L.UNKNOWN), O(), (0, o.Ll)())
+  m.client.coachmarkImpressions += 1, m.client.coachmarkImpressions >= h && (null == t || t(f.i.UNKNOWN), O(), (0, s.Jp)())
 }
-class S extends(r = Chunk442837.ZP.PersistedStore) {
+class v extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (m = e), this.waitFor(s.default), this.syncWith([s.default], E)
+    null != e && (m = e), this.waitFor(o.default), this.syncWith([o.default], E)
   }
   get isUpsellPreview() {
     return g
@@ -80,10 +80,10 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return null == m || null == (e = m.client) ? true : e.desktop
   }
 }
-_(S, "displayName", "AppIconPersistedStoreState"), _(S, "persistKey", "AppIconPersistedStoreState");
-let I = new S(Chunk570140.Z, {
+_(v, "displayName", "AppIconPersistedStoreState"), _(v, "persistKey", "AppIconPersistedStoreState");
+let S = new v(Chunk73153.h, {
   APP_ICON_UPDATED: y,
   APP_ICON_EDITOR_RESET: O,
-  APP_ICON_TRACK_IMPRESSION: v,
+  APP_ICON_TRACK_IMPRESSION: A,
   LOGOUT: O
 })

@@ -1,0 +1,126 @@
+/** Chunk was on web.js **/
+/** chunk id: 623671, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  d: () => g,
+  w: () => _
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk503698 = require("./503698.js"),
+  a = require.n(Chunk503698),
+  Chunk435371 = require("./435371.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk573435 = require("./573435.jsx"),
+  Chunk263577 = require("./263577.jsx"),
+  Chunk662010 = require("./662010.jsx"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk541567 = require("./541567.js");
+let p = {
+  none: true,
+  default: Chunk541567.cH,
+  crunchyroll: a()(Chunk541567.cH, Chunk541567.sl)
+};
+var _ = function(e) {
+  return e.SIZE_60 = "size-60", e.SIZE_72 = "size-72", e.SIZE_100 = "size-100", e
+}({});
+let h = {
+  "size-60": {
+    imageSize: 60,
+    smallImageSize: 24,
+    mask: Chunk573435.hW.CONTENT_IMAGE_60
+  },
+  "size-72": {
+    imageSize: 72,
+    smallImageSize: 32,
+    mask: Chunk573435.hW.CONTENT_IMAGE_72
+  },
+  "size-100": {
+    imageSize: 100,
+    smallImageSize: 32,
+    mask: Chunk573435.hW.CONTENT_IMAGE_100
+  }
+};
+
+function m(e) {
+  let {
+    children: t,
+    onClick: n
+  } = e;
+  return null == n ? t : (0, r.jsx)(o.DUT, {
+    onClick: n,
+    className: f.vk,
+    children: t
+  })
+}
+
+function g(e) {
+  var t, n, i;
+  let {
+    image: o,
+    smallImage: _,
+    aspectRatio: g,
+    onClick: E,
+    size: b,
+    className: y
+  } = e, {
+    imageSize: O,
+    smallImageSize: A,
+    mask: v
+  } = h[b];
+  if (null == o) return (0, r.jsx)(c.V, {
+    src: true,
+    alt: d.intl.string(d.t["2B/phM"]),
+    size: O,
+    className: a()(f.fO, p[null != g ? g : "default"], y),
+    constrain: "width"
+  });
+  let S = (0, r.jsx)(c.V, {
+    src: o.src,
+    alt: null != (t = null != (n = o.alt) ? n : o.text) ? t : d.intl.string(d.t["2B/phM"]),
+    size: O,
+    className: a()(f.fO, p[null != g ? g : "default"]),
+    constrain: "width"
+  });
+  return (0, r.jsxs)("div", {
+    className: a()(f.B_, y),
+    children: [(0, r.jsx)(m, {
+      onClick: E,
+      children: (0, r.jsx)(u.O, {
+        href: o.url,
+        children: null != _ ? (0, r.jsx)(s.m_, {
+          text: o.text,
+          asContainer: true,
+          children: (0, r.jsx)(l.Ay, {
+            className: f.ZS,
+            mask: v,
+            width: O,
+            height: O,
+            children: S
+          })
+        }) : (0, r.jsx)(s.m_, {
+          text: o.text,
+          children: (0, r.jsx)("div", {
+            className: f.ZS,
+            children: S
+          })
+        })
+      })
+    }), null != _ && (0, r.jsx)(u.O, {
+      href: _.url,
+      children: (0, r.jsx)(s.m_, {
+        text: _.text,
+        children: (0, r.jsx)("div", {
+          className: f.gn,
+          children: (0, r.jsx)(c.V, {
+            src: _.src,
+            alt: null != (i = _.alt) ? i : _.text,
+            size: A,
+            className: f.fO,
+            constrain: "width"
+          })
+        })
+      })
+    })]
+  })
+}

@@ -1,10 +1,10 @@
-/** Chunk was on 89289 **/
-/** chunk id: 482207, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 53653 **/
+/** chunk id: 218727, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  A: () => f
 });
-var r, a, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var n, l, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 let s = () => ({
     isFetching: false,
     lastFetchedAt: null,
@@ -12,7 +12,7 @@ let s = () => ({
   }),
   o = [],
   c = s();
-class u extends(a = Chunk442837.ZP.Store) {
+class u extends(l = Chunk311907.Ay.Store) {
   get isFetching() {
     return c.isFetching
   }
@@ -26,13 +26,13 @@ class u extends(a = Chunk442837.ZP.Store) {
   getAvatars() {
     return o
   }
-}(r = "displayName") in u ? Object.defineProperty(u, r, {
+}(n = "displayName") in u ? Object.defineProperty(u, n, {
   value: "RecentAvatarsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : u[r] = "RecentAvatarsStore";
-let d = new u(Chunk570140.Z, {
+}) : u[n] = "RecentAvatarsStore";
+let f = new u(Chunk73153.h, {
   RECENT_AVATARS_FETCH_START: function() {
     c.isFetching = true, c.error = null
   },

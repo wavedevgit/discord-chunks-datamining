@@ -1,1 +1,0 @@
-{"id":"198535","type":"experiment","data":{"id":"2024-03_quests_client_monitoring","kind":"user","label":"Quests client monitoring experiment","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"disabled","config":{"enabled":false}},{"id":1,"label":"enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

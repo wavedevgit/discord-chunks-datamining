@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 553795, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 962173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk457330 = require("./457330.js"),
-  Chunk726542 = require("./726542.js"),
-  Chunk368111 = require("./368111.js"),
-  Chunk411198 = require("./411198.js");
+  A: () => w
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk77468 = require("./77468.js"),
+  Chunk573648 = require("./573648.js"),
+  Chunk806374 = require("./806374.js"),
+  Chunk860689 = require("./860689.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,7 +49,7 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = new Set([require("./981631.js").ABu.CONTACTS]),
+let _ = new Set([require("./652215.js").fg2.CONTACTS]),
   h = true,
   m = [],
   g = [],
@@ -57,33 +57,33 @@ let _ = new Set([require("./981631.js").ABu.CONTACTS]),
   b = new Set,
   y = {},
   O = {},
-  v = e => {
-    m = e.filter(e => !_.has(e.type) && s.Z.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = false
+  A = e => {
+    m = e.filter(e => !_.has(e.type) && o.A.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = false
   };
 
-function S(e) {
-  v(e.connectedAccounts.map(e => new l.Z(e)))
+function v(e) {
+  A(e.connectedAccounts.map(e => new l.A(e)))
 }
 
-function I(e) {
-  e.local && null != e.accounts ? v(e.accounts.map(e => new l.Z(p(d({}, e), {
+function S(e) {
+  e.local && null != e.accounts ? A(e.accounts.map(e => new l.A(p(d({}, e), {
     integrations: e.integrations.map(e => p(d({}, e), {
-      guild: (0, c.yS)(p(d({}, e.guild), {
+      guild: (0, c.yF)(p(d({}, e.guild), {
         features: []
       }))
     }))
-  })))) : o.Z.fetch()
+  })))) : s.A.fetch()
 }
 
-function T(e) {
+function I(e) {
   E[e.integrationId] = e.joining
 }
 
-function C(e) {
+function T(e) {
   O[e.integrationId] = true !== e.error ? e.error : ""
 }
 
-function A(e) {
+function C(e) {
   let {
     platformType: t,
     id: n,
@@ -101,13 +101,13 @@ function N(e) {
     openid_params: r,
     provider: i
   } = e;
-  o.Z.callback(i, {
+  s.A.callback(i, {
     code: t,
     state: n,
     openid_params: r
   })
 }
-class P extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk311907.Ay.Store) {
   isJoining(e) {
     return E[e] || false
   }
@@ -142,12 +142,12 @@ class P extends(r = Chunk442837.ZP.Store) {
     return b.has(e)
   }
 }
-u(P, "displayName", "ConnectedAccountsStore");
-let w = new P(Chunk570140.Z, {
-  CONNECTION_OPEN: S,
-  USER_CONNECTIONS_UPDATE: I,
-  USER_CONNECTIONS_INTEGRATION_JOINING: T,
-  USER_CONNECTION_UPDATE: A,
-  USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: C,
+u(R, "displayName", "ConnectedAccountsStore");
+let w = new R(Chunk73153.h, {
+  CONNECTION_OPEN: v,
+  USER_CONNECTIONS_UPDATE: S,
+  USER_CONNECTIONS_INTEGRATION_JOINING: I,
+  USER_CONNECTION_UPDATE: C,
+  USER_CONNECTIONS_INTEGRATION_JOINING_ERROR: T,
   USER_CONNECTIONS_CALLBACK: N
 })

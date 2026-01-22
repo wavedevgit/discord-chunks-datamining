@@ -1,0 +1,86 @@
+/** Chunk was on web.js **/
+/** chunk id: 437290, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => d
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk503698 = require("./503698.js"),
+  a = require.n(Chunk503698),
+  Chunk397927 = require("./397927.js"),
+  Chunk854627 = require("./854627.js"),
+  Chunk429974 = require("./429974.js");
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function d(e) {
+  var t;
+  let {
+    user: n,
+    checked: i,
+    onChange: c,
+    disabled: d
+  } = e, {
+    avatarSrc: f,
+    eventHandlers: p
+  } = (0, o.A)({
+    userId: null == n ? true : n.id,
+    size: s._3J.SIZE_32
+  }), _ = null != (t = n.globalName) ? t : n.username;
+  return (0, r.jsxs)("div", {
+    className: l.kL,
+    children: [(0, r.jsx)("div", {
+      className: l.dj,
+      children: (0, r.jsx)(s.euF, u({
+        className: a()({
+          [l.SU]: d
+        }),
+        src: f,
+        "aria-label": _,
+        size: s._3J.SIZE_32
+      }, p))
+    }), (0, r.jsxs)("div", {
+      className: l.QV,
+      children: [(0, r.jsx)(s.Text, {
+        className: l.nT,
+        color: d ? "text-muted" : "text-default",
+        variant: "text-md/semibold",
+        children: _
+      }), (0, r.jsx)(s.Text, {
+        className: l.nT,
+        color: d ? "text-muted" : "text-subtle",
+        variant: "text-xs/normal",
+        children: n.username
+      })]
+    }), (0, r.jsx)("div", {
+      className: l.kv,
+      children: (0, r.jsx)(s.Checkbox, {
+        disabled: d,
+        checked: i,
+        onChange: e => c(n, e),
+        label: ""
+      })
+    })]
+  })
+}

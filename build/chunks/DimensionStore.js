@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 796974, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 72314, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  A: () => E
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk902704 = require("./902704.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk52133 = require("./52133.js"),
+  Chunk73153 = require("./73153.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,9 +36,9 @@ function f(e) {
     scrollTop: n,
     scrollHeight: r,
     offsetHeight: i
-  } = e, o = l[t];
+  } = e, s = l[t];
   if (null == n || null == r || null == i) {
-    if (null == o) returnfalse;
+    if (null == s) returnfalse;
     delete l[t]
   } else {
     let e = {
@@ -47,7 +47,7 @@ function f(e) {
       scrollHeight: r,
       offsetHeight: i
     };
-    if (null != o && (0, a.Z)(o, e)) returnfalse;
+    if (null != s && (0, a.A)(s, e)) returnfalse;
     l[t] = e
   }
 }
@@ -86,7 +86,7 @@ function m(e) {
   let i = false;
   return true !== r && (i = c[t].scrollTo !== r, c[t].scrollTo = r), null != r || i
 }
-class g extends(r = Chunk442837.ZP.Store) {
+class g extends(r = Chunk311907.Ay.Store) {
   percentageScrolled(e) {
     if (null != l[e]) {
       let {
@@ -111,8 +111,8 @@ class g extends(r = Chunk442837.ZP.Store) {
     return h(e)
   }
 }
-s(g, "displayName", "DimensionStore");
-let E = new g(Chunk570140.Z, {
+o(g, "displayName", "DimensionStore");
+let E = new g(Chunk73153.h, {
   UPDATE_CHANNEL_DIMENSIONS: f,
   UPDATE_CHANNEL_LIST_DIMENSIONS: m,
   UPDATE_GUILD_LIST_DIMENSIONS: p,

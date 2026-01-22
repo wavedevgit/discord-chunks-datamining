@@ -1,1 +1,0 @@
-{"id":"420439","type":"store","data":{"name":"VoiceFilterPersistedStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getLastInitAttemptMayHaveCrashed","args":[]}],"events":["VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE"]},"fromModule":{"id":"web.js"}}

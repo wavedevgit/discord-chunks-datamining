@@ -1,11 +1,11 @@
-/** Chunk was on 1272 **/
-/** chunk id: 336219, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 420936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => a
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk358085 = require("./358085.js");
-let l = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk723702 = require("./723702.js");
+let l = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-03_fast_travel",
   label: "Fast Travel",

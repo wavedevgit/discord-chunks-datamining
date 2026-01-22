@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
-/** chunk id: 272053, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 794383, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
-}), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./993155.js");
-var r, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
-  Chunk442837 = require("./442837.js"),
-  Chunk544891 = require("./544891.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk457330 = require("./457330.js"),
-  Chunk726542 = require("./726542.js"),
-  Chunk81063 = require("./81063.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk553795 = require("./553795.js"),
-  Chunk246946 = require("./246946.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => k
+}), require("./896048.js"), require("./747238.js"), require("./65821.js"), require("./321073.js"), require("./848778.js");
+var r, Chunk812729 = require("./812729.js"),
+  a = require.n(Chunk812729),
+  Chunk311907 = require("./311907.js"),
+  Chunk562465 = require("./562465.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk77468 = require("./77468.js"),
+  Chunk573648 = require("./573648.js"),
+  Chunk139675 = require("./139675.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk962173 = require("./962173.js"),
+  Chunk351906 = require("./351906.js"),
+  Chunk652215 = require("./652215.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,25 +26,25 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 let g = "33kozedd0zs6fbauka98psnc7zwom2s",
-  E = +Chunk70956.Z.Millis.MINUTE,
+  E = +Chunk927813.A.Millis.MINUTE,
   b = e => "https://youtube.com/watch?v=".concat(e),
-  y = 5 * Chunk70956.Z.Millis.MINUTE,
+  y = 5 * Chunk927813.A.Millis.MINUTE,
   O = "https://api.twitch.tv/helix",
-  v = /live_user_(.*)-\{width\}/,
-  S = 128,
-  I = null,
-  T = 0,
-  C = null,
-  A = new Set,
+  A = /live_user_(.*)-\{width\}/,
+  v = 128,
+  S = null,
+  I = 0,
+  T = null,
+  C = new Set,
   N = {};
 
-function P(e) {
+function R(e) {
   var t;
-  return null == (t = v.exec(e)) ? true : t[1]
+  return null == (t = A.exec(e)) ? true : t[1]
 }
 
 function w(e, t, n) {
-  return s.tn.get({
+  return o.Bo.get({
     url: "".concat(O).concat(e),
     query: t,
     headers: {
@@ -54,7 +54,7 @@ function w(e, t, n) {
     rejectWithError: false
   })
 }
-async function R(e, t) {
+async function P(e, t) {
   var n;
   let r = N[e];
   if (null != r) return r;
@@ -69,10 +69,10 @@ async function R(e, t) {
 }
 class D {
   start() {
-    this._started || (this._started = true, p.Z.isFetching() ? c.Z.fetch() : this._check())
+    this._started || (this._started = true, p.A.isFetching() ? c.A.fetch() : this._check())
   }
   stop() {
-    this._started = false, C = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.Z.dispatch({
+    this._started = false, T = null, I = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.h.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -89,17 +89,17 @@ class D {
       } = await w("/streams", {
         user_id: e.id,
         first: 1
-      }, t), o = a[0];
-      if (null == o || "live" !== o.type) throw Error("no stream");
+      }, t), s = a[0];
+      if (null == s || "live" !== s.type) throw Error("no stream");
       let {
-        thumbnail_url: s,
+        thumbnail_url: o,
         game_id: l,
         title: c
-      } = o, f = {
-        large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : true
-      }, p = await R(l, t), _ = u.Z.get(h.ABu.TWITCH), m = null != (i = P(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, S) : true, E = null != p && "" !== p ? p.slice(0, S) : true;
+      } = s, f = {
+        large_image: null != o && null != (n = (0, d.Di)(h.fg2.TWITCH, o)) ? n : true
+      }, p = await P(l, t), _ = u.A.get(h.fg2.TWITCH), m = null != (r = R(o)) ? r : e.name, g = null != c && "" !== c ? c.slice(0, v) : true, E = null != p && "" !== p ? p.slice(0, v) : true;
       return {
-        url: null == (n = _.getPlatformUserUrl) ? true : n.call(_, {
+        url: null == (i = _.getPlatformUserUrl) ? true : i.call(_, {
           id: e.id,
           name: m
         }),
@@ -109,20 +109,20 @@ class D {
         state: E
       }
     } catch (n) {
-      if (401 === n.status && null == t) return c.Z.refreshAccessToken(e.type, e.id).then(t => this._checkTwitch(e, t)).catch(() => null);
+      if (401 === n.status && null == t) return c.A.refreshAccessToken(e.type, e.id).then(t => this._checkTwitch(e, t)).catch(() => null);
       return null
     }
   }
   async _checkYouTube(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-    if (C = null, e.revoked || A.has(e.id)) return null;
+    if (T = null, e.revoked || C.has(e.id)) return null;
     try {
       var n;
       let {
         body: {
           items: r
         }
-      } = await s.tn.get({
+      } = await o.Bo.get({
         url: "https://www.googleapis.com/youtube/v3/liveBroadcasts",
         query: {
           part: "id,snippet",
@@ -140,34 +140,34 @@ class D {
         id: i,
         snippet: {
           title: a,
-          thumbnails: o
+          thumbnails: s
         }
       } = r[0], l = {
-        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, o.high.url)) ? n : true
-      }, c = null != a && "" !== a ? a.slice(0, S) : true;
-      return C = {
+        large_image: null != (n = (0, d.Di)(h.fg2.YOUTUBE, s.high.url)) ? n : true
+      }, c = null != a && "" !== a ? a.slice(0, v) : true;
+      return T = {
         url: b(i),
-        name: u.Z.get(h.ABu.YOUTUBE).name,
+        name: u.A.get(h.fg2.YOUTUBE).name,
         details: c,
         assets: l
       }
     } catch (n) {
-      if (401 === n.status && null == t) return c.Z.refreshAccessToken(e.type, e.id).then(t => this._checkYouTube(e, t)).catch(() => null);
-      return 403 === n.status && A.add(e.id), null
+      if (401 === n.status && null == t) return c.A.refreshAccessToken(e.type, e.id).then(t => this._checkYouTube(e, t)).catch(() => null);
+      return 403 === n.status && C.add(e.id), null
     }
   }
   _check() {
     if (!this._started) return;
-    let e = p.Z.getAccounts();
+    let e = p.A.getAccounts();
     if (null == e) return;
     null != this._nextCheck && clearTimeout(this._nextCheck);
-    let t = [h.ABu.TWITCH],
+    let t = [h.fg2.TWITCH],
       n = Date.now();
-    T <= n && (t.push(h.ABu.YOUTUBE), T = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    I <= n && (t.push(h.fg2.YOUTUBE), I = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.fg2.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? true : t.value;
-        null == n && null != C && (n = C), l.Z.dispatch({
+        null == n && null != T && (n = T), l.h.dispatch({
           type: "STREAMING_UPDATE",
           stream: n
         })
@@ -185,24 +185,24 @@ class D {
 let x = new D;
 
 function L() {
-  _.Z.enabled ? x.start() : x.stop()
+  _.A.enabled ? x.start() : x.stop()
 }
 
 function j(e) {
   var t;
-  if (a()(e.stream, I)) returnfalse;
-  I = null != (t = e.stream) ? t : null
+  if (a()(e.stream, S)) returnfalse;
+  S = null != (t = e.stream) ? t : null
 }
-class M extends(r = Chunk442837.ZP.Store) {
+class M extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    L(), this.waitFor(p.Z, _.Z), this.syncWith([_.Z], L)
+    L(), this.waitFor(p.A, _.A), this.syncWith([_.A], L)
   }
   getStream() {
-    return I
+    return S
   }
 }
 m(M, "displayName", "ExternalStreamingStore");
-let k = new M(Chunk570140.Z, {
+let k = new M(Chunk73153.h, {
   STREAMING_UPDATE: j,
   USER_CONNECTIONS_UPDATE: () => x._check()
 })

@@ -1,18 +1,18 @@
-/** Chunk was on 11010 **/
-/** chunk id: 362446, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 31748 **/
+/** chunk id: 572487, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  A: () => f
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk981631 = require("./981631.js");
-let c = {};
+var l, r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk652215 = require("./652215.js");
+let o = {};
 
-function s(e) {
-  let t = c[e = null != e ? e : "null"];
-  return null == t && (t = c[e] = {
-    state: o.hes.DISCONNECTED,
-    quality: o.IE4.UNKNOWN,
+function c(e) {
+  let t = o[e = null != e ? e : "null"];
+  return null == t && (t = o[e] = {
+    state: s.S7L.DISCONNECTED,
+    quality: s.bFR.UNKNOWN,
     pings: [],
     hostname: null,
     lossRate: null
@@ -20,17 +20,17 @@ function s(e) {
 }
 
 function u(e, t, n) {
-  let r = c[e = null != e ? e : "null"];
-  return null != r ? t(r) : n
+  let l = o[e = null != e ? e : "null"];
+  return null != l ? t(l) : n
 }
-class d extends(i = Chunk442837.ZP.Store) {
+class d extends(r = Chunk311907.Ay.Store) {
   getConnectionState(e) {
     return u(e, e => {
       let {
         state: t
       } = e;
       return t
-    }, o.hes.DISCONNECTED)
+    }, s.S7L.DISCONNECTED)
   }
   getQuality(e) {
     return u(e, e => {
@@ -38,7 +38,7 @@ class d extends(i = Chunk442837.ZP.Store) {
         quality: t
       } = e;
       return t
-    }, o.IE4.UNKNOWN)
+    }, s.bFR.UNKNOWN)
   }
   getHostname(e) {
     return u(e, e => {
@@ -73,26 +73,26 @@ class d extends(i = Chunk442837.ZP.Store) {
       return t
     }, null)
   }
-}(r = "displayName") in d ? Object.defineProperty(d, r, {
+}(l = "displayName") in d ? Object.defineProperty(d, l, {
   value: "OverlayRTCConnectionStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[r] = "OverlayRTCConnectionStore";
-let f = new d(Chunk570140.Z, {
+}) : d[l] = "OverlayRTCConnectionStore";
+let f = new d(Chunk73153.h, {
   OVERLAY_INITIALIZE: function(e) {
-    c = e.rtcConnectionStates
+    o = e.rtcConnectionStates
   },
   RTC_CONNECTION_STATE: function(e) {
     if (null != e.streamKey) returnfalse;
-    let t = s(e.lobbyId);
+    let t = c(e.lobbyId);
     t.state = e.state, t.hostname = e.hostname
   },
   RTC_CONNECTION_PING: function(e) {
-    let t = s(e.lobbyId);
+    let t = c(e.lobbyId);
     t.pings = e.pings, t.quality = e.quality
   },
   RTC_CONNECTION_LOSS_RATE: function(e) {
-    s(e.lobbyId).lossRate = e.lossRate
+    c(e.lobbyId).lossRate = e.lossRate
   }
 })

@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 563534, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 701785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => l,
-  Z: () => v
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => l,
+  h: () => A
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -91,7 +91,7 @@ function b(e) {
   if (null == i) returnfalse;
   i.resourceChannels = null != (t = i.resourceChannels) ? t : [];
   let a = i.resourceChannels.findIndex(e => e.channelId === r.channelId);
-  return false !== a && (i.resourceChannels[a] = s({}, r), true)
+  return false !== a && (i.resourceChannels[a] = o({}, r), true)
 }
 
 function y(e) {
@@ -103,9 +103,9 @@ function y(e) {
   if (null == i) returnfalse;
   i.newMemberActions = null != (t = i.newMemberActions) ? t : [];
   let a = i.newMemberActions.findIndex(e => e.channelId === r.channelId);
-  return false !== a && (i.newMemberActions[a] = s({}, r), true)
+  return false !== a && (i.newMemberActions[a] = o({}, r), true)
 }
-class O extends(r = Chunk442837.ZP.Store) {
+class O extends(r = Chunk311907.Ay.Store) {
   getSettings(e) {
     var t;
     return null == e ? null : null != (t = u[e]) ? t : l
@@ -124,7 +124,7 @@ class O extends(r = Chunk442837.ZP.Store) {
   }
   getResourceChannels(e) {
     var t, n;
-    return null != (n = null == (t = u[e]) ? true : t.resourceChannels) ? n : c
+    return null != (t = null == (n = u[e]) ? true : n.resourceChannels) ? t : c
   }
   getResourceForChannel(e, t) {
     if (null == e) return null;
@@ -143,15 +143,15 @@ class O extends(r = Chunk442837.ZP.Store) {
   }
   getEnabled(e) {
     var t, n;
-    return null != e && null != (n = null == (t = u[e]) ? true : t.enabled) && n
+    return null != e && null != (t = null == (n = u[e]) ? true : n.enabled) && t
   }
   getNewMemberAction(e, t) {
     var n, r, i;
-    return null == e || null == t ? null : null != (i = null == (r = u[e]) || null == (n = r.newMemberActions) ? true : n.find(e => e.channelId === t)) ? i : null
+    return null == e || null == t ? null : null != (n = null == (i = u[e]) || null == (r = i.newMemberActions) ? true : r.find(e => e.channelId === t)) ? n : null
   }
 }
-o(O, "displayName", "GuildOnboardingHomeSettingsStore");
-let v = new O(Chunk570140.Z, {
+s(O, "displayName", "GuildOnboardingHomeSettingsStore");
+let A = new O(Chunk73153.h, {
   GUILD_HOME_SETTINGS_FETCH_START: h,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: _,
   GUILD_HOME_SETTINGS_FETCH_FAIL: m,

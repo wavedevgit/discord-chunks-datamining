@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 812206, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 587895, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Q
-}), require("./388685.js"), require("./642613.js"), require("./539854.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk973616 = require("./973616.js");
+  A: () => Z
+}), require("./896048.js"), require("./638769.js"), require("./321073.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk611010 = require("./611010.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -63,7 +63,7 @@ function b(e) {
   let n = e;
   for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), f.set(e.id, n), _.set(e.name.toLowerCase(), n), e.aliases)) _.set(r.toLowerCase(), n);
   if (null != e.linkedGames)
-    for (let t of e.linkedGames) null != t.application && b(t.application instanceof o.ZP ? t.application : o.ZP.createFromServer(t.application));
+    for (let t of e.linkedGames) null != t.application && b(t.application instanceof s.Ay ? t.application : s.Ay.createFromServer(t.application));
   m.delete(e.id)
 }
 
@@ -81,14 +81,14 @@ function O(e) {
   for (let e of t) b(e)
 }
 
-function v(e) {
+function A(e) {
   let {
     application: t
   } = e;
   b(t)
 }
 
-function S(e) {
+function v(e) {
   let {
     storefront: {
       application: t
@@ -98,18 +98,25 @@ function S(e) {
   b(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     applications: t
   } = e;
-  for (let e of t) b(new o.ZP(e))
+  for (let e of t) b(new s.Ay(e))
 }
 
-function T(e) {
+function I(e) {
   let {
     applicationId: t
   } = e, n = m.get(t);
   return m.set(t, true), true !== n
+}
+
+function T(e) {
+  let {
+    application: t
+  } = e;
+  N(t)
 }
 
 function C(e) {
@@ -119,18 +126,11 @@ function C(e) {
   N(t)
 }
 
-function A(e) {
-  let {
-    application: t
-  } = e;
-  N(t)
-}
-
 function N(e) {
-  b(o.ZP.createFromServer(e))
+  b(s.Ay.createFromServer(e))
 }
 
-function P(e) {
+function R(e) {
   let {
     userId: t,
     applicationId: n
@@ -159,7 +159,7 @@ function w(e) {
   return m.set(t, false), false !== n
 }
 
-function R(e) {
+function P(e) {
   let {
     applicationIds: t
   } = e, n = false;
@@ -174,14 +174,14 @@ function D(e) {
   let {
     libraryApplications: t
   } = e;
-  for (let e of t) b(o.ZP.createFromServer(e.application))
+  for (let e of t) b(s.Ay.createFromServer(e.application))
 }
 
 function x(e) {
   let {
     applications: t
   } = e;
-  for (let e of t) b(o.ZP.createFromServer(e))
+  for (let e of t) b(s.Ay.createFromServer(e))
 }
 
 function L(e) {
@@ -191,7 +191,7 @@ function L(e) {
     user: n,
     application: r
   } = t;
-  n.bot && null != r && P({
+  n.bot && null != r && R({
     userId: n.id,
     applicationId: r.id
   })
@@ -224,7 +224,7 @@ function k(e) {
   for (let {
       sku: e
     }
-    of t)(null == e ? true : e.application) != null && (b(o.ZP.createFromServer(e.application)), n = true);
+    of t)(null == e ? true : e.application) != null && (b(s.Ay.createFromServer(e.application)), n = true);
   return n
 }
 
@@ -233,7 +233,7 @@ function U(e) {
     guildId: t,
     applications: n
   } = e, r = [];
-  for (let e of n) r.push(e.id), b(o.ZP.createFromServer(e));
+  for (let e of n) r.push(e.id), b(s.Ay.createFromServer(e));
   p.set(t, r)
 }
 
@@ -244,18 +244,18 @@ function G(e) {
   for (let e of t) {
     var r;
     let t = null == (r = e.sku) ? true : r.application;
-    null == t || n.has(t.id) || b(o.ZP.createFromServer(t))
+    null == t || n.has(t.id) || b(s.Ay.createFromServer(t))
   }
   return n.size > 0
 }
 
-function Z(e) {
+function V(e) {
   var t;
   let {
     payment: n
   } = e;
   if ((null == (t = n.sku) ? true : t.application) == null) returnfalse;
-  b(o.ZP.createFromServer(n.sku.application))
+  b(s.Ay.createFromServer(n.sku.application))
 }
 
 function F(e) {
@@ -264,7 +264,7 @@ function F(e) {
     giftCode: n
   } = e;
   if ((null == (t = n.store_listing) ? true : t.sku.application) == null) returnfalse;
-  b(o.ZP.createFromServer(n.store_listing.sku.application))
+  b(s.Ay.createFromServer(n.store_listing.sku.application))
 }
 
 function B(e) {
@@ -272,55 +272,55 @@ function B(e) {
     invite: t
   } = e;
   if (null == t.target_application) returnfalse;
-  b(o.ZP.createFromServer(t.target_application))
-}
-
-function V(e) {
-  let {
-    storeListing: t
-  } = e;
-  if (null == t.sku.application) returnfalse;
-  b(o.ZP.createFromServer(t.sku.application))
+  b(s.Ay.createFromServer(t.target_application))
 }
 
 function H(e) {
   let {
-    messages: t
+    storeListing: t
   } = e;
-  t.forEach(e => Y(e))
+  if (null == t.sku.application) returnfalse;
+  b(s.Ay.createFromServer(t.sku.application))
 }
 
 function Y(e) {
-  var t;
-  null == (t = e.attachments) || t.forEach(e => {
-    null != e.application && b(o.ZP.createFromServer(e.application))
-  })
+  let {
+    messages: t
+  } = e;
+  t.forEach(e => W(e))
 }
 
 function W(e) {
-  let {
-    application: t
-  } = e;
-  b(o.ZP.createFromServer(t))
+  var t;
+  null == (t = e.attachments) || t.forEach(e => {
+    null != e.application && b(s.Ay.createFromServer(e.application))
+  })
 }
 
 function K(e) {
+  let {
+    application: t
+  } = e;
+  b(s.Ay.createFromServer(t))
+}
+
+function z(e) {
   e.tokens.forEach(e => {
-    b(o.ZP.createFromServer(e.application));
+    b(s.Ay.createFromServer(e.application));
     let t = e.application.bot;
-    null != t && P({
+    null != t && R({
       userId: t.id,
       applicationId: e.application.id
     })
   })
 }
 
-function z(e) {
+function q(e) {
   e.items.forEach(e => {
-    null != e.application && b(o.ZP.createFromServer(e.application))
+    null != e.application && b(s.Ay.createFromServer(e.application))
   })
 }
-class q extends(r = Chunk442837.ZP.PersistedStore) {
+class X extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e && "object" == typeof e.botUserIdToAppUsage)
       for (let t in e.botUserIdToAppUsage) {
@@ -374,36 +374,36 @@ class q extends(r = Chunk442837.ZP.PersistedStore) {
     if (null != e) return null == (t = g.botUserIdToAppUsage[e]) ? true : t.applicationId
   }
 }
-s(q, "displayName", "ApplicationStore"), s(q, "persistKey", "ApplicationStore");
-let Q = new q(Chunk570140.Z, {
+o(X, "displayName", "ApplicationStore"), o(X, "persistKey", "ApplicationStore");
+let Z = new X(Chunk73153.h, {
   LOGOUT: y,
-  OVERLAY_INITIALIZE: I,
-  APPLICATION_FETCH: T,
-  APPLICATION_FETCH_SUCCESS: A,
+  OVERLAY_INITIALIZE: S,
+  APPLICATION_FETCH: I,
+  APPLICATION_FETCH_SUCCESS: C,
   APPLICATION_FETCH_FAIL: w,
-  APPLICATIONS_FETCH: R,
+  APPLICATIONS_FETCH: P,
   APPLICATIONS_FETCH_SUCCESS: x,
   APPLICATIONS_FETCH_FAIL: M,
-  APPLICATION_UPDATE: C,
+  APPLICATION_UPDATE: T,
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: k,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: k,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: k,
   GUILD_APPLICATIONS_FETCH_SUCCESS: U,
   BILLING_PAYMENTS_FETCH_SUCCESS: G,
-  PAYMENT_UPDATE: Z,
+  PAYMENT_UPDATE: V,
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: F,
   LIBRARY_FETCH_SUCCESS: D,
-  STORE_LISTING_FETCH_SUCCESS: V,
-  LOAD_MESSAGES_SUCCESS: H,
+  STORE_LISTING_FETCH_SUCCESS: H,
+  LOAD_MESSAGES_SUCCESS: Y,
   USER_PROFILE_FETCH_SUCCESS: L,
   APP_DM_OPEN: j,
-  USER_AUTHORIZED_APPS_UPDATE: K,
-  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: z,
-  OAUTH2_TOKEN_CREATE: W,
+  USER_AUTHORIZED_APPS_UPDATE: z,
+  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: q,
+  OAUTH2_TOKEN_CREATE: K,
   WISHLIST_FETCH_SUCCESS: O,
   WISHLIST_ADD_SKU_SUCCESS: O,
   WISHLIST_REMOVE_SKU_SUCCESS: O,
-  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: S,
-  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS: v
+  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: v,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS: A
 })

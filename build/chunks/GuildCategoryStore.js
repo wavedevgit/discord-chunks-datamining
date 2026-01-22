@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 324067, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 769765, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
-}), require("./539854.js"), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk740504 = require("./740504.js"),
-  Chunk853856 = require("./853856.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk984933 = require("./984933.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => M
+}), require("./321073.js"), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk999903 = require("./999903.js"),
+  Chunk181079 = require("./181079.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk808728 = require("./808728.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk652215 = require("./652215.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ function b(e, t) {
 }
 
 function y(e) {
-  let t = u.ZP.getChannels(e),
+  let t = u.Ay.getChannels(e),
     n = g(),
     r = e => {
       var t;
@@ -51,7 +51,7 @@ function y(e) {
         index: false
       })
     };
-  return t[f.d4z.GUILD_CATEGORY].forEach(e => {
+  return t[f.rbe.GUILD_CATEGORY].forEach(e => {
     let {
       channel: t
     } = e;
@@ -59,14 +59,14 @@ function y(e) {
       channel: t,
       index: false
     }), n[t.id] = []
-  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, o.Z)(n._categories, n).forEach(b), h[e] = n, n
+  }), t[u.I6].forEach(r), t[u.vM].forEach(r), (0, s.A)(n._categories, n).forEach(b), h[e] = n, n
 }
 
 function O() {
   h = {}, null != _ && y(_)
 }
 
-function v(e) {
+function A(e) {
   let {
     guild: {
       id: t
@@ -75,7 +75,7 @@ function v(e) {
   h[t] = true, _ === t && y(t)
 }
 
-function S(e) {
+function v(e) {
   let {
     guild: {
       id: t
@@ -84,7 +84,7 @@ function S(e) {
   delete h[t]
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: {
       guild_id: t
@@ -94,7 +94,7 @@ function I(e) {
   h[t] = true, _ === t && y(t)
 }
 
-function T(e) {
+function I(e) {
   let {
     channels: t
   } = e, n = false;
@@ -105,7 +105,7 @@ function T(e) {
   return n
 }
 
-function C(e) {
+function T(e) {
   let {
     guildId: t,
     user: n
@@ -114,7 +114,7 @@ function C(e) {
   h[t] = true, t === _ && y(t)
 }
 
-function A() {
+function C() {
   if (null == _) returnfalse;
   y(_)
 }
@@ -126,7 +126,7 @@ function N(e) {
   h[t] = true, t === _ && y(t)
 }
 
-function P(e, t) {
+function R(e, t) {
   if (m = t, null == e || null == e.getGuildId()) returnfalse;
   let n = e.getGuildId();
   return null != n && (h[n] = true, n === _ && y(n), true)
@@ -136,10 +136,10 @@ function w(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != m ? P(c.Z.getChannel(m), null) : P(c.Z.getChannel(t), t)
+  return null == t && null != m ? R(c.A.getChannel(m), null) : R(c.A.getChannel(t), t)
 }
 
-function R(e) {
+function P(e) {
   let {
     voiceStates: t
   } = e;
@@ -148,7 +148,7 @@ function R(e) {
       channelId: n,
       sessionId: r
     } = t;
-    return l.default.getSessionId() !== r ? e : P(c.Z.getChannel(n), n) || e
+    return l.default.getSessionId() !== r ? e : R(c.A.getChannel(n), n) || e
   }, false)
 }
 
@@ -161,40 +161,40 @@ function D(e) {
 }
 
 function x() {
-  y(f.I_8)
+  y(f.YYv)
 }
 
 function L(e) {
   let t = h[e];
   return null != t ? t : y(e)
 }
-class j extends(r = Chunk442837.ZP.Store) {
+class j extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.ZP, d.Z, l.default, c.Z, s.Z), this.syncWith([s.Z], x)
+    this.waitFor(u.Ay, d.A, l.default, c.A, o.A), this.syncWith([o.A], x)
   }
   getCategories(e) {
     return null != e ? L(e) : E
   }
 }
 p(j, "displayName", "GuildCategoryStore");
-let M = new j(Chunk570140.Z, {
+let M = new j(Chunk73153.h, {
   CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,
   CACHE_LOADED_LAZY: O,
-  GUILD_CREATE: v,
-  GUILD_UPDATE: v,
-  GUILD_DELETE: S,
-  CHANNEL_CREATE: I,
-  CHANNEL_DELETE: I,
-  CHANNEL_UPDATES: T,
-  GUILD_MEMBER_UPDATE: C,
-  CURRENT_USER_UPDATE: A,
+  GUILD_CREATE: A,
+  GUILD_UPDATE: A,
+  GUILD_DELETE: v,
+  CHANNEL_CREATE: S,
+  CHANNEL_DELETE: S,
+  CHANNEL_UPDATES: I,
+  GUILD_MEMBER_UPDATE: T,
+  CURRENT_USER_UPDATE: C,
   GUILD_ROLE_CREATE: N,
   GUILD_ROLE_UPDATE: N,
   GUILD_ROLE_DELETE: N,
   IMPERSONATE_UPDATE: N,
   IMPERSONATE_STOP: N,
   VOICE_CHANNEL_SELECT: w,
-  VOICE_STATE_UPDATES: R
+  VOICE_STATE_UPDATES: P
 })

@@ -1,26 +1,26 @@
 /** Chunk was on web.js **/
-/** chunk id: 238349, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 207777, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  U: () => F,
-  Z: () => X
-}), require("./388685.js"), require("./642613.js");
-var i, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
-  Chunk697988 = require("./697988.js"),
-  Chunk683860 = require("./683860.js"),
-  Chunk843991 = require("./843991.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk344185 = require("./344185.js"),
-  Chunk144140 = require("./144140.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk306680 = require("./306680.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk882252 = require("./882252.js");
+  A: () => Q,
+  S: () => F
+}), require("./896048.js"), require("./638769.js");
+var i, Chunk735438 = require("./735438.js"),
+  s = require.n(Chunk735438),
+  Chunk392421 = require("./392421.js"),
+  Chunk602137 = require("./602137.js"),
+  Chunk357758 = require("./357758.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk970278 = require("./970278.js"),
+  Chunk456874 = require("./456874.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk222823 = require("./222823.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk767581 = require("./767581.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,42 +31,42 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 let O = [],
+  A = null,
   v = null,
-  S = null,
-  I = new Set,
-  T = Chunk683860.z.LATEST_ACTIVITY,
-  C = Chunk697988.z.MATCH_SOME,
-  A = 0,
+  S = new Set,
+  I = Chunk602137.T.LATEST_ACTIVITY,
+  T = Chunk392421.n.MATCH_SOME,
+  C = 0,
   N = [],
-  P = false,
+  R = false,
   w = [],
-  R = o().chain(O),
-  D = o().chain(O),
+  P = s().chain(O),
+  D = s().chain(O),
   x = new Set,
   L = new Set;
 
 function j(e) {
   var t;
-  return null != (t = m.ZP.lastMessageId(e)) ? t : e
+  return null != (t = m.Ay.lastMessageId(e)) ? t : e
 }
 
 function M(e) {
-  let t = p.Z.getCount(e);
+  let t = p.A.getCount(e);
   return null === t || 0 === t
 }
 
 function k(e) {
   return function(t, n) {
-    return (0, b.yv)(t) ? false : (0, b.yv)(n) ? 1 : e === l.z.LATEST_ACTIVITY ? E.default.compare(j(n), j(t)) : E.default.compare(n, t)
+    return (0, b.yr)(t) ? false : (0, b.yr)(n) ? 1 : e === l.T.LATEST_ACTIVITY ? E.default.compare(j(n), j(t)) : E.default.compare(n, t)
   }
 }
 
 function U(e, t) {
   return function(n) {
     var r;
-    let i = null == (r = h.Z.getChannel(n)) ? true : r.appliedTags;
+    let i = null == (r = h.A.getChannel(n)) ? true : r.appliedTags;
     if (null == i || 0 === i.length) returnfalse;
-    if (t === s.z.MATCH_SOME) return i.some(t => e.has(t));
+    if (t === o.n.MATCH_SOME) return i.some(t => e.has(t));
     for (let t of e.values())
       if (!i.includes(t)) returnfalse;
     returntrue
@@ -74,59 +74,59 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, S = null, I = new Set, T = l.z.LATEST_ACTIVITY, C = s.z.MATCH_SOME, A = 0, w = [], R = o().chain(O), D = o().chain(O), L.clear(), x.clear()
+  N = [], r = null, v = null, S = new Set, I = l.T.LATEST_ACTIVITY, T = o.n.MATCH_SOME, C = 0, w = [], P = s().chain(O), D = s().chain(O), L.clear(), x.clear()
 }
 
-function Z() {
+function V() {
   var e;
-  let t = g.Z.getChannelId();
-  if (null == t || !(null == (e = h.Z.getChannel(t)) ? true : e.isForumLikeChannel())) return G(), false;
+  let t = g.A.getChannelId();
+  if (null == t || !(null == (e = h.A.getChannel(t)) ? true : e.isForumLikeChannel())) return G(), false;
   B({
     refreshThreadIds: true
   })
 }
 
 function F(e) {
-  let t = h.Z.getChannel(e);
-  return null == t ? [] : Object.values(f.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
+  let t = h.A.getChannel(e);
+  return null == t ? [] : Object.values(f.A.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
       id: t
     } = e;
     return t
-  }).sort(k(T))
+  }).sort(k(I))
 }
 
 function B(e) {
-  let t = h.Z.getChannel(S);
+  let t = h.A.getChannel(v);
   if (null == t) return;
-  (null == e ? true : e.refreshThreadIds) && (w = Object.values(f.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
+  (null == e ? true : e.refreshThreadIds) && (w = Object.values(f.A.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
       id: t
     } = e;
     return t
-  }), A = 0, P = true), 0 !== x.size && (w = w.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (w = Array.from(new Set([...w, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(w).sort(k(l.z.LATEST_ACTIVITY)), R = o().chain(w).sort(k(l.z.CREATION_DATE)));
-  let n = (T === l.z.LATEST_ACTIVITY ? D : R).value(),
-    i = (N = 0 === I.size ? n : n.filter(U(I, C))).find(e => M(e));
+  }), C = 0, R = true), 0 !== x.size && (w = w.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (w = Array.from(new Set([...w, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = s().chain(w).sort(k(l.T.LATEST_ACTIVITY)), P = s().chain(w).sort(k(l.T.CREATION_DATE)));
+  let n = (I === l.T.LATEST_ACTIVITY ? D : P).value(),
+    i = (N = 0 === S.size ? n : n.filter(U(S, T))).find(e => M(e));
   r = null == i ? null : i
 }
 
-function V(e) {
+function H(e) {
   var t;
   let {
     guildId: n
   } = e;
-  if (null == S || n !== (null == (t = h.Z.getChannel(S)) ? true : t.guild_id)) returnfalse;
+  if (null == v || n !== (null == (t = h.A.getChannel(v)) ? true : t.guild_id)) returnfalse;
   B({
     refreshThreadIds: true
   })
 }
 
-function H(e) {
+function Y(e) {
   let {
     channel: t
   } = e;
-  if (null == t.parent_id || t.parent_id !== S) returnfalse;
-  let n = (0, b.yv)(t.id),
+  if (null == t.parent_id || t.parent_id !== v) returnfalse;
+  let n = (0, b.yr)(t.id),
     r = L.has(t.id);
   if (n && !r) L.add(t.id), B({
     sortThreadIds: true
@@ -139,93 +139,93 @@ function H(e) {
   }
 }
 
-function Y(e) {
+function W(e) {
   let {
     channel: t,
     isNewlyCreated: n
   } = e;
-  if (null == t.parent_id || t.parent_id !== S || !n) returnfalse;
-  t.ownerId !== _.default.getId() ? A++ : v = t.id
-}
-
-function W(e) {
-  let {
-    channel: t
-  } = e;
-  if (null == t.parent_id || t.parent_id !== S) returnfalse;
-  x.add(t.id), B({
-    sortThreadIds: true
-  })
+  if (null == t.parent_id || t.parent_id !== v || !n) returnfalse;
+  t.ownerId !== _.default.getId() ? C++ : A = t.id
 }
 
 function K(e) {
   let {
     channel: t
   } = e;
-  if (null == t.parent_id || t.parent_id !== S) returnfalse;
-  G()
+  if (null == t.parent_id || t.parent_id !== v) returnfalse;
+  x.add(t.id), B({
+    sortThreadIds: true
+  })
 }
 
 function z(e) {
   let {
-    channelId: t
+    channel: t
   } = e;
-  if (null == t || t !== S) returnfalse;
-  B({
-    refreshThreadIds: true
-  })
+  if (null == t.parent_id || t.parent_id !== v) returnfalse;
+  G()
 }
 
 function q(e) {
   let {
     channelId: t
   } = e;
-  if (null == t || t !== S) returnfalse;
-  P = false
+  if (null == t || t !== v) returnfalse;
+  B({
+    refreshThreadIds: true
+  })
 }
-class Q extends(i = Chunk442837.ZP.Store) {
+
+function X(e) {
+  let {
+    channelId: t
+  } = e;
+  if (null == t || t !== v) returnfalse;
+  R = false
+}
+class Z extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(f.Z, _.default, h.Z, m.ZP, g.Z, p.Z)
+    this.waitFor(f.A, _.default, h.A, m.Ay, g.A, p.A)
   }
   getNewThreadCount() {
-    return A
+    return C
   }
   getCanAckThreads() {
-    return P
+    return R
   }
   getThreadIds(e, t, n, r) {
-    let i = e !== S,
-      a = !(0, c.O)(n, I),
-      o = t !== T,
-      s = r !== C;
-    return S = e, I = n, T = t, C = r, i ? B({
+    let i = e !== v,
+      a = !(0, c._)(n, S),
+      s = t !== I,
+      o = r !== T;
+    return v = e, S = n, I = t, T = r, i ? B({
       refreshThreadIds: true
-    }) : o ? B({
+    }) : s ? B({
       sortThreadIds: true
-    }) : (a || s) && B(), N
+    }) : (a || o) && B(), N
   }
   getCurrentThreadIds() {
     return N
   }
   getAndDeleteMostRecentUserCreatedThreadId() {
-    let e = v;
-    return v = null, e
+    let e = A;
+    return A = null, e
   }
   getFirstNoReplyThreadId() {
     return r
   }
 }
-y(Q, "displayName", "ForumActivePostStore");
-let X = new Q(Chunk570140.Z, {
-  CONNECTION_OPEN: Z,
-  OVERLAY_INITIALIZE: Z,
-  GUILD_CREATE: Z,
-  CHANNEL_SELECT: Z,
-  CHANNEL_DELETE: K,
-  THREAD_LIST_SYNC: V,
-  THREAD_CREATE: Y,
-  THREAD_UPDATE: H,
-  THREAD_DELETE: W,
-  RESORT_THREADS: z,
-  CHANNEL_ACK: q
+y(Z, "displayName", "ForumActivePostStore");
+let Q = new Z(Chunk73153.h, {
+  CONNECTION_OPEN: V,
+  OVERLAY_INITIALIZE: V,
+  GUILD_CREATE: V,
+  CHANNEL_SELECT: V,
+  CHANNEL_DELETE: z,
+  THREAD_LIST_SYNC: H,
+  THREAD_CREATE: W,
+  THREAD_UPDATE: Y,
+  THREAD_DELETE: K,
+  RESORT_THREADS: q,
+  CHANNEL_ACK: X
 })

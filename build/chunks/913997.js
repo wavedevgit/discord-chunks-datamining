@@ -1,5 +1,4 @@
-/** Chunk was on 6850 **/
-/** chunk id: 913997, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  noResultsContainer: "_9c6d0a4e6034f2b9-noResultsContainer"
-}
+/** Chunk was on web.js **/
+/** chunk id: 913997, original params: e (module,exports,re quire) **/
+"use strict";
+module.exports = "/assets/ad4588f59fde96aa.svg"

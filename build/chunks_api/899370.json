@@ -1,1 +1,0 @@
-{"id":"899370","type":"store","data":{"name":"AgeGateStore","functions":[{"name":"isUnderageAnonymous","args":[]}],"events":["AGE_GATE_PREVENT_UNDERAGE_REGISTRATION","LOGIN_SUCCESS"]},"fromModule":{"id":"27978"}}

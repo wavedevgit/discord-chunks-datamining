@@ -1,0 +1,135 @@
+/** Chunk was on web.js **/
+/** chunk id: 709382, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => g,
+  i: () => m
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk503698 = require("./503698.js"),
+  a = require.n(Chunk503698),
+  Chunk607470 = require("./607470.jsx"),
+  Chunk572808 = require("./572808.js"),
+  Chunk860923 = require("./860923.js"),
+  Chunk149505 = require("./149505.jsx"),
+  Chunk577632 = require("./577632.jsx"),
+  Chunk451772 = require("./451772.jsx"),
+  Chunk822768 = require("./822768.jsx"),
+  Chunk185014 = require("./185014.js");
+
+function _(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function h(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
+    })
+  }
+  return e
+}
+let m = {
+    width: 2180,
+    height: 1536
+  },
+  g = e => {
+    let {
+      roomSeats: t,
+      roomParticipants: n,
+      participants: i,
+      channel: _,
+      idle: m,
+      showAmbientEffects: g = true,
+      enableAnimations: E = true,
+      skipNewUserEducation: b = false,
+      onSeatClick: y,
+      disableInteractions: O = false
+    } = e, A = (0, l.A)();
+    return null == A ? null : (0, r.jsxs)("div", {
+      className: p.cA,
+      children: [(0, r.jsx)("img", {
+        className: p.Tp,
+        src: A.backgrounds.sky.static,
+        alt: "",
+        draggable: false
+      }), g && (0, r.jsx)(f.A, {}), (0, r.jsx)("img", {
+        className: p.Tp,
+        src: A.backgrounds.mountains.static,
+        alt: "",
+        draggable: false
+      }), g && (0, r.jsx)(c.A, {}), (0, r.jsx)("img", {
+        className: p.Tp,
+        src: A.backgrounds.river.static,
+        alt: "",
+        draggable: false
+      }), g && (0, r.jsx)(s.A, {
+        className: p.Ki,
+        style: {
+          transform: "translate(779px, 1009px)"
+        },
+        src: A.ambience.river.animated,
+        autoPlay: true,
+        controls: false,
+        loop: true
+      }), (0, r.jsx)("img", {
+        className: p.Tp,
+        src: A.backgrounds.camp.static,
+        alt: "",
+        draggable: false
+      }), o.dG.map(e => {
+        var n;
+        return (0, r.jsx)(d.A, h({
+          occupant: null == (n = t[e.id - 1]) ? true : n.claimedBy,
+          onClick: y,
+          skipNewUserEducation: b
+        }, e), e.id)
+      }), n.map(e => (0, r.jsx)(u.A, {
+        seats: t,
+        participant: e,
+        participants: i,
+        channel: _,
+        idle: m,
+        enableAnimations: E
+      }, e.userId)), g && (0, r.jsxs)("div", {
+        className: a()(p.cA, p.ey),
+        children: [(0, r.jsx)(s.A, {
+          className: p.Ki,
+          style: {
+            transform: "translate(1014px, 773px)"
+          },
+          src: A.ambience.fire.animated,
+          autoPlay: true,
+          controls: false,
+          loop: true
+        }), (0, r.jsx)(s.A, {
+          className: p.Ki,
+          src: A.ambience.fireflies.animated,
+          autoPlay: true,
+          controls: false,
+          loop: true
+        }), (0, r.jsx)(s.A, {
+          className: p.Ki,
+          style: {
+            transform: "translate(0, 1216px)"
+          },
+          src: A.ambience.foliage_front.animated,
+          autoPlay: true,
+          controls: false,
+          loop: true
+        })]
+      }), O && (0, r.jsx)("div", {
+        className: p.ps
+      })]
+    })
+  }

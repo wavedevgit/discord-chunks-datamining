@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 752048, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 21119, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk699516 = require("./699516.js"),
-  Chunk496232 = require("./496232.js");
+  A: () => O
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk994500 = require("./994500.js"),
+  Chunk755915 = require("./755915.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,7 +41,7 @@ let u = .5,
   _ = c({}, p);
 
 function h() {
-  d = new Map(_.userAffinities.filter(e => !o.Z.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
+  d = new Map(_.userAffinities.filter(e => !s.A.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
 }
 
 function m() {
@@ -63,16 +63,16 @@ function E() {
 function b() {
   _ = c({}, p), d = new Map, f = false
 }
-class y extends(r = Chunk442837.ZP.PersistedStore) {
+class y extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(o.Z), null != e) {
+    if (this.waitFor(s.A), null != e) {
       var t;
       _.userAffinities = e.userAffinities, _.userFlags = null != (t = e.userFlags) ? t : {}, _.lastFetched = e.lastFetched, h()
     }
-    this.syncWith([o.Z], h)
+    this.syncWith([s.A], h)
   }
   shouldFetch() {
-    if (!f) return Date.now() - _.lastFetched > s.K
+    if (!f) return Date.now() - _.lastFetched > o.e
   }
   isFetching() {
     return f
@@ -88,11 +88,11 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
   }
   compare(e, t) {
     var n, r, i, a;
-    return (null != (i = null == (n = d.get(t)) ? true : n.communicationProbability) ? i : 0) - (null != (a = null == (r = d.get(e)) ? true : r.communicationProbability) ? a : 0)
+    return (null != (n = null == (i = d.get(t)) ? true : i.communicationProbability) ? n : 0) - (null != (r = null == (a = d.get(e)) ? true : a.communicationProbability) ? r : 0)
   }
   compareByDmProbability(e, t) {
     var n, r, i, a;
-    return (null != (i = null == (n = d.get(t)) ? true : n.dmProbability) ? i : 0) - (null != (a = null == (r = d.get(e)) ? true : r.dmProbability) ? a : 0)
+    return (null != (n = null == (i = d.get(t)) ? true : i.dmProbability) ? n : 0) - (null != (r = null == (a = d.get(e)) ? true : a.dmProbability) ? r : 0)
   }
   getUserAffinity(e) {
     return d.get(e)
@@ -102,11 +102,11 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
   }
   isHighlyAffinedVCUser(e) {
     var t, n;
-    return (null != (n = null == (t = d.get(e)) ? true : t.vcProbability) ? n : 0) > u
+    return (null != (t = null == (n = d.get(e)) ? true : n.vcProbability) ? t : 0) > u
   }
 }
 l(y, "displayName", "UserAffinitiesV2Store"), l(y, "persistKey", "UserAffinitiesStoreV2");
-let O = new y(Chunk570140.Z, {
+let O = new y(Chunk73153.h, {
   LOAD_USER_AFFINITIES_V2: m,
   LOAD_USER_AFFINITIES_V2_SUCCESS: g,
   LOAD_USER_AFFINITIES_V2_FAILURE: E,

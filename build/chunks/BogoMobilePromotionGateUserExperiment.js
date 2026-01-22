@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
-/** chunk id: 84053, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 238000, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => a,
-  oW: () => i
+  Ay: () => a,
+  LB: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
     kind: "user",
     id: "2025-06_bogo_mobile_promotion_gate",
     label: "BOGO Mobile Promotion Manager",

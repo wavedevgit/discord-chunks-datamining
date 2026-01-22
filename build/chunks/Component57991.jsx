@@ -1,0 +1,280 @@
+/** Chunk was on web.js **/
+/** chunk id: 57991, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => j
+});
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk503698 = require("./503698.js"),
+  s = require.n(Chunk503698),
+  Chunk311907 = require("./311907.js"),
+  Chunk827734 = require("./827734.js"),
+  Chunk582754 = require("./582754.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk404374 = require("./404374.jsx"),
+  Chunk509536 = require("./509536.jsx"),
+  Chunk496885 = require("./496885.jsx"),
+  Chunk544028 = require("./544028.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk816166 = require("./816166.jsx"),
+  Chunk813098 = require("./813098.jsx"),
+  Chunk473145 = require("./473145.js"),
+  Chunk426983 = require("./426983.js"),
+  Chunk176128 = require("./176128.js"),
+  Chunk981883 = require("./981883.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk106967 = require("./106967.js");
+
+function T(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function C(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      T(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function N(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function w(e, t) {
+  if (null == e) return {};
+  var n, r, i, a = {};
+  if ("u" > typeof Reflect && Reflect.ownKeys) {
+    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    return a
+  }
+  if (a = P(e, t), Object.getOwnPropertySymbols)
+    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+  return a
+}
+
+function P(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.getOwnPropertyNames(e);
+  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+  return i
+}
+let D = {
+  [Chunk426983._.STAFF]: {
+    IconComponent: Chunk397927.VaJ,
+    foregroundDarkColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk827734.A.unsafe_rawColors.GREEN_360.css,
+    backgroundLightColor: Chunk827734.A.unsafe_rawColors.GREEN_360.css
+  },
+  [Chunk426983._.VERIFIED_AND_PARTNERED]: {
+    IconComponent: Chunk397927.Uzd,
+    foregroundDarkColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk827734.A.unsafe_rawColors.GREEN_360.css,
+    backgroundLightColor: Chunk827734.A.unsafe_rawColors.GREEN_360.css
+  },
+  [Chunk426983._.VERIFIED]: {
+    IconComponent: Chunk397927.Uzd,
+    foregroundDarkColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk827734.A.unsafe_rawColors.GREEN_360.css,
+    backgroundLightColor: Chunk827734.A.unsafe_rawColors.GREEN_360.css
+  },
+  [Chunk426983._.PARTNERED]: {
+    IconComponent: (0, Chunk397927.kHD)(Chunk816166.A),
+    foregroundDarkColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk827734.A.unsafe_rawColors.BRAND_500.css,
+    backgroundLightColor: Chunk827734.A.unsafe_rawColors.BRAND_500.css
+  },
+  [Chunk426983._.COMMUNITY]: {
+    IconComponent: Chunk397927.fAJ,
+    foregroundDarkColor: Chunk827734.A.unsafe_rawColors.PRIMARY_500.css,
+    foregroundLightColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundLightColor: Chunk827734.A.unsafe_rawColors.PRIMARY_500.css,
+    premiumBackgroundColor: Chunk404374.k0.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
+    premiumForegroundColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    sizeAdjustment: 2
+  },
+  [Chunk426983._.DISCOVERABLE]: {
+    IconComponent: Chunk397927.L_e,
+    foregroundDarkColor: Chunk827734.A.unsafe_rawColors.PRIMARY_500.css,
+    foregroundLightColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    backgroundLightColor: Chunk827734.A.unsafe_rawColors.PRIMARY_500.css,
+    premiumBackgroundColor: Chunk404374.k0.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
+    premiumForegroundColor: Chunk827734.A.unsafe_rawColors.WHITE.css,
+    sizeAdjustment: 2
+  },
+  [Chunk426983._.NONE]: {}
+};
+
+function x(e) {
+  let {
+    guildTraits: t
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: I.V8,
+    children: [(0, r.jsxs)("div", {
+      className: s()(I.f, I.N5),
+      children: [(0, r.jsx)(E.A, {
+        width: 18,
+        height: 18,
+        className: I.F8
+      }), (0, r.jsx)(u.Text, {
+        variant: "text-xs/semibold",
+        color: "always-white",
+        children: b.gb(t.premiumTier)
+      })]
+    }), (0, r.jsx)("div", {
+      className: I.f,
+      children: (0, r.jsx)(u.Text, {
+        variant: "text-xs/semibold",
+        color: "always-white",
+        children: S.intl.format(S.t["dR/SVH"], {
+          count: t.premiumSubscriberCount
+        })
+      })
+    })]
+  })
+}
+
+function L(e) {
+  let {
+    badgeType: t,
+    guildTraits: n
+  } = e, {
+    tooltipTitle: i,
+    tooltipSubtitle: a,
+    tooltipDescription: s
+  } = (0, A.V)(t, n.visibility);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: I.Rf,
+      children: [(0, r.jsx)(u.Text, {
+        color: "interactive-text-active",
+        variant: "text-xs/bold",
+        children: i
+      }), null != a ? (0, r.jsx)(u.Text, {
+        color: "text-muted",
+        variant: "text-xs/medium",
+        children: a
+      }) : null, null != s ? (0, r.jsx)(u.Text, {
+        color: "text-muted",
+        variant: "text-xs/medium",
+        children: s
+      }) : null]
+    }), n.premium ? (0, r.jsx)(x, {
+      guildTraits: n
+    }) : null]
+  })
+}
+
+function j(e) {
+  var t;
+  let n, a, {
+      guild: s,
+      tooltipColor: l = u.STz.Colors.BRAND,
+      tooltipPosition: d,
+      className: g,
+      flowerStarClassName: E,
+      iconClassName: b,
+      badgeStrokeColor: A,
+      badgeColor: S,
+      disableBoostClick: T,
+      "aria-label": N = false
+    } = e,
+    P = null != (t = w(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? t : 18,
+    x = (0, o.bG)([m.default, h.Ay], () => {
+      let e = m.default.getCurrentUser();
+      return h.Ay.isMember(null == s ? true : s.id, null == e ? true : e.id)
+    }),
+    j = (0, o.bG)([_.A], () => _.A.theme),
+    M = (0, O.Jp)(s),
+    k = (0, y.K)(M),
+    U = i.useMemo(() => M.premium && x && !T, [T, M.premium, x]),
+    G = i.useCallback(e => {
+      U && (e.stopPropagation(), e.preventDefault(), (0, f.K)({
+        guildId: s.id,
+        location: {
+          section: v.JJy.GUILD_HEADER,
+          object: v.ZSU.BOOST_GEM_ICON
+        }
+      }))
+    }, [U, s.id]);
+  if (k === y._.NONE) return null;
+  let {
+    IconComponent: V,
+    backgroundDarkColor: F,
+    backgroundLightColor: B,
+    foregroundDarkColor: H,
+    foregroundLightColor: Y,
+    premiumBackgroundColor: W,
+    premiumForegroundColor: K,
+    sizeAdjustment: z
+  } = D[k];
+  if (null == V) return null;
+  M.premium && (n = K, a = W);
+  let q = (0, c.Mw)(j) ? H : Y,
+    X = (0, c.Mw)(j) ? F : B;
+  n = null != n ? n : q, a = null != a ? a : X;
+  let Z = Math.floor(.75 * P) - (null != z ? z : 0);
+  return (0, r.jsx)(u.STz, {
+    color: l,
+    position: d,
+    "aria-label": N,
+    text: (0, r.jsx)(L, {
+      badgeType: k,
+      guildTraits: M
+    }),
+    tooltipContentClassName: I.Hj,
+    children: e => (0, r.jsx)(u.DUT, {
+      onClick: G,
+      tabIndex: U ? 0 : false,
+      children: (0, r.jsx)(p.A, R(C({}, e), {
+        className: g,
+        flowerStarClassName: E,
+        allowFullSizedIcon: true,
+        color: null != a ? a : S,
+        stroke: A,
+        size: P,
+        children: (0, r.jsx)(V, {
+          size: "custom",
+          width: Z,
+          height: Z,
+          className: b,
+          color: null != n ? n : "currentColor"
+        })
+      }))
+    })
+  })
+}

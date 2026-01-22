@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 799525, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 493364, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => i
+  B: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2024-09_test_child_2_safety_xp_holdout",
   label: "Holdout experiment",

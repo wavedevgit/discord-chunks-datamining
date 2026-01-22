@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
-/** chunk id: 831506, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 629016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
-}), require("./388685.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk699516 = require("./699516.js"),
-  Chunk885110 = require("./885110.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => D
+}), require("./896048.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk994500 = require("./994500.js"),
+  Chunk461213 = require("./461213.js"),
+  Chunk652215 = require("./652215.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ function g(e, t) {
 function E(e, t, n) {
   var r;
   let i = _[e];
-  if (null == i && (i = _[e] = {}), i[t] = n, c.Z.isBlocked(e) || c.Z.isIgnored(e)) return;
+  if (null == i && (i = _[e] = {}), i[t] = n, c.A.isBlocked(e) || c.A.isIgnored(e)) return;
   let a = null != (r = h.get(n)) ? r : new Set;
   h.set(n, a), a.add(e)
 }
@@ -62,10 +62,10 @@ function E(e, t, n) {
 function b(e, t, n, r) {
   let i = n.find(e => null != e.party && e.party.id),
     a = null != i && null != i.party ? i.party.id : null,
-    o = m(t, e);
-  if (null == a || r === d.Skl.OFFLINE) return null != o && void g(t, e);
-  if (null != o) {
-    if (o === a) returnfalse;
+    s = m(t, e);
+  if (null == a || r === d.clD.OFFLINE) return null != s && void g(t, e);
+  if (null != s) {
+    if (s === a) returnfalse;
     g(t, e)
   }
   E(t, e, a)
@@ -82,7 +82,7 @@ function y(e) {
       activities: i
     }
     of n) null != e && false !== b(d.ME, e.id, i, t) && (r = true);
-  for (let e of t) false !== v({
+  for (let e of t) false !== A({
     guild: e
   }) && (r = true);
   return r
@@ -96,7 +96,7 @@ function O(e) {
   h = new Map, _ = p({}, n), Object.keys(t).forEach(e => h.set(e, new Set(t[e])))
 }
 
-function v(e) {
+function A(e) {
   let {
     guild: t
   } = e, n = false;
@@ -109,7 +109,7 @@ function v(e) {
   return n
 }
 
-function S(e) {
+function v(e) {
   let {
     presences: t
   } = e, n = false;
@@ -121,7 +121,7 @@ function S(e) {
   return n
 }
 
-function I(e) {
+function S(e) {
   let {
     updates: t
   } = e;
@@ -136,23 +136,23 @@ function I(e) {
   }).some(e => e)
 }
 
-function T(e) {
+function I(e) {
   let {
     guildId: t,
     members: n
   } = e;
-  return A(t, n.map(e => e.presence))
+  return C(t, n.map(e => e.presence))
 }
 
-function C(e) {
+function T(e) {
   let {
     guildId: t,
     addedMembers: n
   } = e;
-  return null != n && A(t, n.map(e => e.presence))
+  return null != n && C(t, n.map(e => e.presence))
 }
 
-function A(e, t) {
+function C(e, t) {
   let n = false;
   return t.forEach(t => {
     null != t && b(e, t.user.id, t.activities, t.status) && (n = true)
@@ -161,15 +161,15 @@ function A(e, t) {
 
 function N() {
   let e = l.default.getId(),
-    t = u.Z.getActivities();
+    t = u.A.getActivities();
   return b(d.ME, e, t)
 }
 
-function P(e) {
+function R(e) {
   let {
     relationship: t
   } = e;
-  if (!c.Z.isBlocked(t.id) && !c.Z.isIgnored(t.id)) returnfalse;
+  if (!c.A.isBlocked(t.id) && !c.A.isIgnored(t.id)) returnfalse;
   let n = _[t.id];
   if (null == n) returnfalse;
   for (let e of a().values(n)) {
@@ -188,9 +188,9 @@ function w(e) {
     null != n && n.add(t.id)
   }
 }
-class R extends(r = Chunk442837.ZP.Store) {
+class P extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([u.Z], N), this.waitFor(l.default, c.Z, u.Z)
+    this.syncWith([u.A], N), this.waitFor(l.default, c.A, u.A)
   }
   getParty(e) {
     return null != e && h.has(e) ? h.get(e) : null
@@ -202,16 +202,16 @@ class R extends(r = Chunk442837.ZP.Store) {
     return h
   }
 }
-f(R, "displayName", "GamePartyStore");
-let D = new R(Chunk570140.Z, {
+f(P, "displayName", "GamePartyStore");
+let D = new P(Chunk73153.h, {
   CONNECTION_OPEN_SUPPLEMENTAL: y,
   OVERLAY_INITIALIZE: O,
-  GUILD_CREATE: v,
-  PRESENCES_REPLACE: S,
-  PRESENCE_UPDATES: I,
-  THREAD_MEMBER_LIST_UPDATE: T,
-  THREAD_MEMBERS_UPDATE: C,
-  RELATIONSHIP_ADD: P,
-  RELATIONSHIP_UPDATE: P,
+  GUILD_CREATE: A,
+  PRESENCES_REPLACE: v,
+  PRESENCE_UPDATES: S,
+  THREAD_MEMBER_LIST_UPDATE: I,
+  THREAD_MEMBERS_UPDATE: T,
+  RELATIONSHIP_ADD: R,
+  RELATIONSHIP_UPDATE: R,
   RELATIONSHIP_REMOVE: w
 })

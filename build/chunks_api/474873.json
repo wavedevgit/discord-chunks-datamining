@@ -1,1 +1,0 @@
-{"id":"474873","type":"store","data":{"name":"SoundpackStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getSoundpack","args":[]},{"name":"getLastSoundpackExperimentId","args":[]}],"events":["SET_SOUNDPACK"]},"fromModule":{"id":"web.js"}}

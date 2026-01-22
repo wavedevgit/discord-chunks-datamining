@@ -1,9 +1,10 @@
-/** Chunk was on 85342 **/
-/** chunk id: 109488, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 86142 **/
+/** chunk id: 916882, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  P: () => i
+  E: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
     kind: "user",
     label: "Pomelo Suggestions",
     id: "2023-04_pomelo_suggestions",

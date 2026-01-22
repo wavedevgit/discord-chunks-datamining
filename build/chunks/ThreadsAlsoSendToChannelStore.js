@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 315355, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 67259, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => d
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,29 +15,29 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Map;
+let o = new Map;
 
 function l(e) {
   let {
     channelId: t,
     enabled: n
   } = e;
-  s.set(t, n)
+  o.set(t, n)
 }
 
 function c(e) {
   let {
     channelId: t
   } = e;
-  s.delete(t)
+  o.delete(t)
 }
-class u extends(r = Chunk442837.ZP.Store) {
+class u extends(r = Chunk311907.Ay.Store) {
   getAlsoSendToChannel(e) {
-    return !!s.has(e) && s.get(e)
+    return !!o.has(e) && o.get(e)
   }
 }
-o(u, "displayName", "ThreadsAlsoSendToChannelStore");
-let d = new u(Chunk570140.Z, {
+s(u, "displayName", "ThreadsAlsoSendToChannelStore");
+let d = new u(Chunk73153.h, {
   SET_THREADS_ALSO_SEND_TO_CHANNEL: l,
   CREATE_PENDING_SCHEDULED_MESSAGE: c
 })

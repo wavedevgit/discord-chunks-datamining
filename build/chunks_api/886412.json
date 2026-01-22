@@ -1,1 +1,0 @@
-{"id":"886412","type":"experiment","data":{"id":"2025-05_safety_flows","label":"Safety Flows","kind":"user","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"1272"}}

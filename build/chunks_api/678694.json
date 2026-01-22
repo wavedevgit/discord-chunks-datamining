@@ -1,1 +1,0 @@
-{"id":"678694","type":"store","data":{"name":"ApplicationDirectoryCategoriesStore","functions":[{"name":"getLastFetchTimeMs","args":[]},{"name":"getCategories","args":[]},{"name":"getCategory","args":["e"]}],"events":["APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS"]},"fromModule":{"id":"web.js"}}

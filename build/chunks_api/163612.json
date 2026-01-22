@@ -1,1 +1,0 @@
-{"id":"163612","type":"experiment","data":{"kind":"guild","id":"2024-12_guild_voice_channel_ringing","label":"Guild Voice Ringing","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.VOICE_CALL","treatments":[{"id":1,"label":"Allow users to ring each other in Guild Voice Channels","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

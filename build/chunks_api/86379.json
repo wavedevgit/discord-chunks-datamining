@@ -1,0 +1,1 @@
+{"id":"86379","type":"experiment","data":{"kind":"user","id":"2022-03_block_russian_purchases_desktop","label":"Block purchases based on country (desktop specific flags)","defaultConfig":{"checkPaymentSource":false},"treatments":[{"id":1,"label":"Check Payment Source","config":{"checkPaymentSource":true}}]},"fromModule":{"id":"web.js"}}

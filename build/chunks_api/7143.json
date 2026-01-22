@@ -1,0 +1,1 @@
+{"id":"7143","type":"store","data":{"name":"DomainMigrationStore","functions":[{"name":"getMigrationStatus","args":[]}],"events":["DOMAIN_MIGRATION_START","DOMAIN_MIGRATION_FAILURE","DOMAIN_MIGRATION_SKIP"]},"fromModule":{"id":"web.js"}}

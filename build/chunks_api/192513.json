@@ -1,1 +1,0 @@
-{"id":"192513","type":"store","data":{"name":"GuildMFAWarningStore","functions":[{"name":"initialize","args":[]},{"name":"isVisible","args":["e"]}],"events":["CONNECTION_OPEN","GUILD_UPDATE"]},"fromModule":{"id":"1272"}}

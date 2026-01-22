@@ -1,18 +1,18 @@
-/** Chunk was on 82124 **/
-/** chunk id: 903223, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 717518, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  A: () => p
 });
-var r, i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk430824 = require("./430824.js");
+var r, l, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk71393 = require("./71393.js");
 let u = null,
   d = {};
-class p extends(i = Chunk442837.ZP.Store) {
+class f extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.Z)
+    this.waitFor(c.A)
   }
   getOptimalRegion() {
     var e;
@@ -43,13 +43,13 @@ class p extends(i = Chunk442837.ZP.Store) {
   getRegions(e) {
     return null != e ? d[e] : u
   }
-}(r = "displayName") in p ? Object.defineProperty(p, r, {
+}(r = "displayName") in f ? Object.defineProperty(f, r, {
   value: "RegionStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[r] = "RegionStore";
-let f = new p(Chunk570140.Z, {
+}) : f[r] = "RegionStore";
+let p = new f(Chunk73153.h, {
   LOAD_REGIONS: function(e) {
     let t = a().sortBy(e.regions, e => e.name);
     null != e.guildId ? d[e.guildId] = t : u = t

@@ -1,8 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 879443, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-module.exports = function(e) {
-  var t = this,
-    n = t.constructor;
-  return t.callbacks = {}, t.directMap = {}, t.sequenceLevels = {}, t.resetTimer, t.ignoreNextKeyup = false, t.ignoreNextKeypress = false, t.nextExpectedAction = false, t.element = e, t.addEvents(), n.instances.push(t), t
-}, module.exports.prototype.bind = require("./698577.js"), module.exports.prototype.bindMultiple = require("./41463.js"), module.exports.prototype.unbind = require("./201755.js"), module.exports.prototype.trigger = require("./191746.js"), module.exports.prototype.reset = require("./160801.js"), module.exports.prototype.stopCallback = require("./785757.js"), module.exports.prototype.handleKey = require("./760283.js"), module.exports.prototype.addEvents = require("./120448.js"), module.exports.prototype.bindSingle = require("./126838.js"), module.exports.prototype.getKeyInfo = require("./465232.js"), module.exports.prototype.pickBestAction = require("./676497.js"), module.exports.prototype.getReverseMap = require("./337829.js"), module.exports.prototype.getMatches = require("./109328.js"), module.exports.prototype.resetSequences = require("./795312.js"), module.exports.prototype.fireCallback = require("./808962.js"), module.exports.prototype.bindSequence = require("./527800.js"), module.exports.prototype.resetSequenceTimer = require("./970889.js"), module.exports.prototype.detach = require("./415364.js"), module.exports.instances = [], module.exports.reset = require("./211180.js"), module.exports.REVERSE_MAP = null

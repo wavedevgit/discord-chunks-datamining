@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 650774, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 498642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  A: () => E
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -41,7 +41,7 @@ function u(e) {
 }
 
 function d(e) {
-  l = s({}, e.guildMemberCounts)
+  l = o({}, e.guildMemberCounts)
 }
 
 function f(e) {
@@ -87,7 +87,7 @@ function m(e) {
   if (null == t || null == n) returnfalse;
   c[t] = n
 }
-class g extends(r = Chunk442837.ZP.Store) {
+class g extends(r = Chunk311907.Ay.Store) {
   getMemberCounts() {
     return l
   }
@@ -98,8 +98,8 @@ class g extends(r = Chunk442837.ZP.Store) {
     return null != e ? c[e] : null
   }
 }
-o(g, "displayName", "GuildMemberCountStore");
-let E = new g(Chunk570140.Z, {
+s(g, "displayName", "GuildMemberCountStore");
+let E = new g(Chunk73153.h, {
   CONNECTION_OPEN: u,
   OVERLAY_INITIALIZE: d,
   GUILD_CREATE: f,

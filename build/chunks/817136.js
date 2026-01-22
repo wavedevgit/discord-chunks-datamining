@@ -1,4 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 817136, original params: e (module,exports,re quire) **/
+/** Chunk was on 47841 **/
+/** chunk id: 817136, original params: e,t,n (module,exports,require) **/
 "use strict";
-module.exports = "/assets/f4efda2217ab7169.svg"
+require.d(exports, {
+  p: () => r
+});
+let r = {
+  authorIds: [],
+  message: ""
+}

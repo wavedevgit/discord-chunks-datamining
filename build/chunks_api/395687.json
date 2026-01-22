@@ -1,1 +1,0 @@
-{"id":"395687","type":"store","data":{"name":"FriendOnlineTimerStore","functions":[{"name":"initialize","args":[]},{"name":"isCooldownElapsed","args":[]},{"name":"getState","args":[]}],"events":["FRIEND_ONLINE_TIMER_REPORTED"]},"fromModule":{"id":"web.js"}}

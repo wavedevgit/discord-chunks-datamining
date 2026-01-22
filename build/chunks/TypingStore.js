@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 111583, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 741961, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => R
+  A: () => P
 });
-var i, Chunk442837 = require("./442837.js"),
-  Chunk544891 = require("./544891.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk333023 = require("./333023.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk300429 = require("./300429.js"),
-  Chunk981631 = require("./981631.js");
+var i, Chunk311907 = require("./311907.js"),
+  Chunk562465 = require("./562465.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk695870 = require("./695870.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk101392 = require("./101392.js"),
+  Chunk652215 = require("./652215.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,8 +35,8 @@ function _(e) {
   }
   return e
 }
-let h = 10 * Chunk70956.Z.Millis.SECOND,
-  m = 1.5 * Chunk70956.Z.Millis.SECOND,
+let h = 10 * Chunk927813.A.Millis.SECOND,
+  m = 1.5 * Chunk927813.A.Millis.SECOND,
   g = 5,
   E = {},
   b = Object.freeze({});
@@ -50,14 +50,14 @@ function O(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
-  if (null == n || t === l.V) returnfalse;
+  if (null == n || t === l.E) returnfalse;
   null != r && r.channelId !== t && (null != r.timeout && clearTimeout(r.timeout), r = null);
   let i = Date.now(),
     a = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + a > i)) returnfalse;
   let c = setTimeout(() => {
-    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, P(t) > g || o.tn.post({
-      url: f.ANM.TYPING(t),
+    null == r || r.channelId !== t || n !== u.default.getId() || null == r.timeout || (r.timeout = null, R(t) > g || s.Bo.post({
+      url: f.Rsh.TYPING(t),
       oldFormErrors: true,
       rejectWithError: true
     }).then(e => {
@@ -65,15 +65,15 @@ function O(e) {
         var n, r;
         let i = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
           a = null != (r = e.body.thread_create_cooldown_ms) ? r : 0;
-        i > 0 && s.Z.dispatch({
+        i > 0 && o.h.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
-          slowmodeType: d.S.SendMessage,
+          slowmodeType: d.R.SendMessage,
           cooldownMs: i
-        }), a > 0 && s.Z.dispatch({
+        }), a > 0 && o.h.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
-          slowmodeType: d.S.CreateThread,
+          slowmodeType: d.R.CreateThread,
           cooldownMs: a
         })
       }
@@ -83,30 +83,30 @@ function O(e) {
     channelId: t,
     timeout: c,
     prevSend: i
-  }, T({
+  }, I({
     channelId: t,
     userId: n
   })
 }
 
-function v(e) {
+function A(e) {
   if (null == r || r.channelId !== e) returnfalse;
   null != r.timeout && clearTimeout(r.timeout), r = null
 }
 
-function S(e) {
+function v(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
-  return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, C({
+  return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, T({
     channelId: t,
     userId: n
   }))
 }
 
-function I(e, t) {
+function S(e, t) {
   return setTimeout(() => {
-    s.Z.dispatch({
+    o.h.dispatch({
       type: "TYPING_STOP",
       channelId: e,
       userId: t
@@ -114,15 +114,15 @@ function I(e, t) {
   }, h)
 }
 
-function T(e) {
+function I(e) {
   let {
     channelId: t,
     userId: n
   } = e, r = _({}, y(t));
-  clearTimeout(r[n]), r[n] = I(t, n), E[t] = r
+  clearTimeout(r[n]), r[n] = S(t, n), E[t] = r
 }
 
-function C(e) {
+function T(e) {
   let {
     channelId: t,
     userId: n
@@ -132,7 +132,7 @@ function C(e) {
   clearTimeout(i[n]), delete i[n], E[t] = i
 }
 
-function A(e) {
+function C(e) {
   let {
     channelId: t,
     message: {
@@ -140,7 +140,7 @@ function A(e) {
     },
     optimistic: r
   } = e;
-  return r && v(t), null != n && C({
+  return r && A(t), null != n && T({
     channelId: t,
     userId: n.id
   })
@@ -150,11 +150,11 @@ function N() {
   E = {}
 }
 
-function P(e) {
+function R(e) {
   let t = y(e);
   return t === b ? 0 : Object.keys(t).length
 }
-class w extends(i = Chunk442837.ZP.Store) {
+class w extends(i = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -166,12 +166,12 @@ class w extends(i = Chunk442837.ZP.Store) {
   }
 }
 p(w, "displayName", "TypingStore");
-let R = new w(Chunk570140.Z, {
-  TYPING_START: T,
-  TYPING_STOP: C,
+let P = new w(Chunk73153.h, {
+  TYPING_START: I,
+  TYPING_STOP: T,
   TYPING_START_LOCAL: O,
-  TYPING_STOP_LOCAL: S,
+  TYPING_STOP_LOCAL: v,
   CONNECTION_OPEN: N,
   OVERLAY_INITIALIZE: N,
-  MESSAGE_CREATE: A
+  MESSAGE_CREATE: C
 })

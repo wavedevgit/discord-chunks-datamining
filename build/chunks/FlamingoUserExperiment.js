@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
-/** chunk id: 875527, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 996744, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hu: () => f,
-  wt: () => d
-}), require("./388685.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk818083 = require("./818083.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk358085 = require("./358085.js");
+  Cg: () => f,
+  Lb: () => d
+}), require("./896048.js");
+var Chunk311907 = require("./311907.js"),
+  Chunk600975 = require("./600975.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk723702 = require("./723702.js");
 let l = new Set(["943265993613008967"]),
-  c = (0, Chunk818083.B)({
+  c = (0, Chunk600975.C)({
     kind: "user",
     id: "2024-10_flamingo",
     label: "Flamingo",
@@ -49,7 +49,7 @@ let l = new Set(["943265993613008967"]),
       }
     }]
   }),
-  u = () => (0, s.isWindows)() || (0, s.isMac)();
+  u = () => (0, o.isWindows)() || (0, o.isMac)();
 
 function d(e) {
   let {
@@ -73,11 +73,11 @@ function f(e) {
     autoTrackExposure: n
   } = e, {
     enabled: i,
-    isTester: s
+    isTester: o
   } = c.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
-  }), d = (0, r.e7)([o.Z, a.Z], () => a.Z.getChannel(o.Z.getVoiceChannelId())), f = !s || null != d && l.has(d.guild_id);
+  }), d = (0, r.bG)([s.A, a.A], () => a.A.getChannel(s.A.getVoiceChannelId())), f = !o || null != d && l.has(d.guild_id);
   return !__OVERLAY__ && i && u() && f
 }

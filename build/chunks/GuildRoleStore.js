@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 485386, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 317525, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
-}), require("./415506.js"), require("./388685.js");
-var Chunk429091 = require("./429091.js"),
-  Chunk601964 = require("./601964.js"),
-  Chunk539600 = require("./539600.js"),
-  Chunk625137 = require("./625137.js");
+  A: () => u
+}), require("./65821.js"), require("./896048.js");
+var Chunk952526 = require("./952526.js"),
+  Chunk260509 = require("./260509.js"),
+  Chunk9865 = require("./9865.js"),
+  Chunk7864 = require("./7864.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,14 +25,14 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
-class c extends Chunk429091.d {
+class c extends Chunk952526.U {
   serializeAllGuildRoles() {
-    return this.mapPartitions(a.an)
+    return this.mapPartitions(a.cH)
   }
   getUnsafeMutableRoles(e) {
     return this.getPartition(e)
@@ -47,16 +47,16 @@ class c extends Chunk429091.d {
     return this.partitionLength(e)
   }
   getEveryoneRole(e) {
-    let t = (0, i.lV)(e),
+    let t = (0, i.af)(e),
       n = this.getRecord(e.id, t);
     if (null == n) throw Error("Guild ".concat(e.id, " does not have an @everyone role"));
     return n
   }
   constructor(...e) {
-    super(...e), s(this, "getSortedRoles", this.memoizedPartition((e, t) => o.BL(Object.values(t)))), s(this, "getRolesSnapshot", this.memoizedPartition((e, t) => l({}, t)))
+    super(...e), o(this, "getSortedRoles", this.memoizedPartition((e, t) => s.gE(Object.values(t)))), o(this, "getRolesSnapshot", this.memoizedPartition((e, t) => l({}, t)))
   }
 }
-s(c, "displayName", "GuildRoleStore");
+o(c, "displayName", "GuildRoleStore");
 let u = new c({
   BACKGROUND_SYNC: (e, t) => {
     let {
@@ -64,7 +64,7 @@ let u = new c({
     } = e;
     for (let e of n) {
       let n = t.getPartition(e.id);
-      null != n && "unavailable" !== e.data_mode && t.setPartition(e.id, "partial" === e.data_mode ? o.EO(e.id, n, e.partial_updates.roles, e.partial_updates.deleted_role_ids) : a.qt(e.id, e.roles))
+      null != n && "unavailable" !== e.data_mode && t.setPartition(e.id, "partial" === e.data_mode ? s.ly(e.id, n, e.partial_updates.roles, e.partial_updates.deleted_role_ids) : a.hd(e.id, e.roles))
     }
   },
   OVERLAY_INITIALIZE: (e, t) => {
@@ -73,7 +73,7 @@ let u = new c({
           partitionKey: n,
           values: r
         }
-        of e.serializedGuildRoles) t[n] = a.If(n, r)
+        of e.serializedGuildRoles) t[n] = a.lj(n, r)
     })
   },
   CONNECTION_OPEN: (e, t) => {
@@ -85,7 +85,7 @@ let u = new c({
           id: t,
           roles: r
         }
-        of n) e[t] = Array.isArray(r) ? a.qt(t, r) : r
+        of n) e[t] = Array.isArray(r) ? a.hd(t, r) : r
     })
   },
   CACHE_LOADED: (e, t) => {
@@ -97,7 +97,7 @@ let u = new c({
           id: t,
           roles: r
         }
-        of n) e[t] = a.If(t, r)
+        of n) e[t] = a.lj(t, r)
     })
   },
   CACHE_LOADED_LAZY: (e, t) => {
@@ -106,7 +106,7 @@ let u = new c({
           id: n,
           roles: r
         }
-        of e.guilds) t[n] = a.If(n, r)
+        of e.guilds) t[n] = a.lj(n, r)
     })
   },
   GUILD_CREATE: (e, t) => {
@@ -116,7 +116,7 @@ let u = new c({
         roles: r
       }
     } = e;
-    t.setPartition(n, Array.isArray(r) ? a.qt(n, r) : r)
+    t.setPartition(n, Array.isArray(r) ? a.hd(n, r) : r)
   },
   GUILD_UPDATE: (e, t) => {
     let {
@@ -125,7 +125,7 @@ let u = new c({
         roles: r
       }
     } = e;
-    t.setPartition(n, a.qt(n, r))
+    t.setPartition(n, a.hd(n, r))
   },
   GUILD_DELETE: (e, t) => {
     let {
@@ -137,10 +137,10 @@ let u = new c({
     r || t.removePartition(n)
   },
   GUILD_ROLE_CREATE: (e, t) => {
-    t.set(e.guildId, e.role.id, a.wD(e.guildId, e.role))
+    t.set(e.guildId, e.role.id, a.Wj(e.guildId, e.role))
   },
   GUILD_ROLE_UPDATE: (e, t) => {
-    t.set(e.guildId, e.role.id, a.wD(e.guildId, e.role))
+    t.set(e.guildId, e.role.id, a.Wj(e.guildId, e.role))
   },
   GUILD_ROLE_DELETE: (e, t) => {
     let {

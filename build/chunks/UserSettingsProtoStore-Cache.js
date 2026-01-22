@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
-/** chunk id: 581883, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 617617, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  A: () => x
 });
-var r, Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
-  Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk377108 = require("./377108.js"),
-  Chunk524437 = require("./524437.js"),
-  Chunk835913 = require("./835913.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk262847 = require("./262847.js"),
-  Chunk48481 = require("./48481.js"),
-  Chunk526761 = require("./526761.js");
+var r, Chunk284009 = require("./284009.js"),
+  a = require.n(Chunk284009),
+  Chunk735438 = require("./735438.js"),
+  o = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk803805 = require("./803805.js"),
+  Chunk873298 = require("./873298.js"),
+  Chunk335871 = require("./335871.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk405892 = require("./405892.js"),
+  Chunk761821 = require("./761821.js"),
+  Chunk355097 = require("./355097.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,24 +39,24 @@ function g(e) {
   return e
 }
 let E = {
-    ProtoClass: Chunk524437.o8,
-    proto: Chunk524437.o8.create(),
+    ProtoClass: Chunk873298.nT,
+    proto: Chunk873298.nT.create(),
     lazyLoaded: false,
-    editInfo: (0, Chunk526761.JC)()
+    editInfo: (0, Chunk355097.O9)()
   },
   b = {
-    ProtoClass: Chunk377108.ji,
-    proto: Chunk377108.ji.create(),
+    ProtoClass: Chunk803805.aw,
+    proto: Chunk803805.aw.create(),
     lazyLoaded: true,
-    editInfo: (0, Chunk526761.JC)()
+    editInfo: (0, Chunk355097.O9)()
   },
   y = {
-    [Chunk526761.yP.PRELOADED_USER_SETTINGS]: E,
-    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: b
+    [Chunk355097.oD.PRELOADED_USER_SETTINGS]: E,
+    [Chunk355097.oD.FRECENCY_AND_FAVORITES_SETTINGS]: b
   },
   O = false;
 
-function v(e) {
+function A(e) {
   let {
     userSettingsProto: t
   } = e;
@@ -65,40 +65,40 @@ function v(e) {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
-  } = (0, _.xt)(E.proto, p.Z[h.yP.PRELOADED_USER_SETTINGS]);
-  r && C(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
+  } = (0, _.vI)(E.proto, p.A[h.oD.PRELOADED_USER_SETTINGS]);
+  r && T(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
-  }), T()
+  }), I()
+}
+
+function v() {
+  I()
 }
 
 function S() {
-  T()
-}
-
-function I() {
-  T(), Object.values(y).forEach(e => {
-    e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
+  I(), Object.values(y).forEach(e => {
+    e.proto = e.ProtoClass.create(), e.editInfo = (0, h.O9)()
   })
 }
 
-function T() {
+function I() {
   Object.values(y).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
-      clearTimeout(e.editInfo.timeout), e.editInfo.timeout = true, e.editInfo.timeoutDelay = Number.MAX_SAFE_INTEGER, e.editInfo.rateLimited = false, e.editInfo.offlineEditDataVersion = null != (n = null == (t = e.proto.versions) ? true : t.dataVersion) ? n : 0
+      clearTimeout(e.editInfo.timeout), e.editInfo.timeout = true, e.editInfo.timeoutDelay = Number.MAX_SAFE_INTEGER, e.editInfo.rateLimited = false, e.editInfo.offlineEditDataVersion = null != (t = null == (n = e.proto.versions) ? true : n.dataVersion) ? t : 0
     }
   })
 }
 
-function C(e) {
-  null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, h.JC)()
+function T(e) {
+  null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, h.O9)()
 }
 
-function A(e) {
+function C(e) {
   let {
     userSettingsProto: t
   } = e;
-  E.proto = (0, _.ac)(t), a()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
+  E.proto = (0, _.Gd)(t), a()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
 }
 
 function N(e) {
@@ -109,14 +109,14 @@ function N(e) {
     },
     partial: r,
     resetEditInfo: i,
-    local: o
+    local: s
   } = e;
-  O = !o;
-  let s = y[n];
-  i && C(s), r ? (s.proto = (0, _.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
+  O = !s;
+  let o = y[n];
+  i && T(o), r ? (o.proto = (0, _.RK)(o.ProtoClass, o.proto, t), a()("string" != typeof o.proto, "UserSettingsProto cannot be a string")) : (o.proto = t, a()("string" != typeof o.proto, "UserSettingsProto cannot be a string"), o.editInfo.loaded = true, o.editInfo.loading = false)
 }
 
-function P(e) {
+function R(e) {
   let {
     settings: {
       type: t,
@@ -132,37 +132,37 @@ function w(e) {
   let {
     userSettings: t
   } = e;
-  R(t)
+  P(t)
 }
 
-function R(e) {
-  null != e && s().forEach(y, (t, n) => {
+function P(e) {
+  null != e && o().forEach(y, (t, n) => {
     var r, i;
-    let o = e[Number(n)];
-    if (null == o) return;
-    let s = null != (r = null == o ? true : o.proto) ? r : "",
-      l = (0, _.d5)(t.ProtoClass, s);
+    let s = e[Number(n)];
+    if (null == s) return;
+    let o = null != (r = null == s ? true : s.proto) ? r : "",
+      l = (0, _.ii)(t.ProtoClass, o);
     if (null == l) return;
     t.proto = l, a()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
-    let c = null != (i = null == o ? true : o.protoToSave) ? i : null;
-    if (null == c || null == o.offlineEditDataVersion) return;
-    let u = (0, _.d5)(t.ProtoClass, c);
-    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = o.offlineEditDataVersion)
+    let c = null != (i = null == s ? true : s.protoToSave) ? i : null;
+    if (null == c || null == s.offlineEditDataVersion) return;
+    let u = (0, _.ii)(t.ProtoClass, c);
+    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = s.offlineEditDataVersion)
   })
 }
-class D extends(r = Chunk442837.ZP.PersistedStore) {
+class D extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    R(e)
+    P(e)
   }
   getState() {
     return this.computeState()
   }
   computeState() {
-    return s().mapValues(y, e => {
+    return o().mapValues(y, e => {
       let t = {
-        proto: (0, _.xU)(e.ProtoClass, e.proto)
+        proto: (0, _.ob)(e.ProtoClass, e.proto)
       };
-      return null != e.editInfo.offlineEditDataVersion && null != e.editInfo.protoToSave && (t.protoToSave = (0, _.xU)(e.ProtoClass, e.editInfo.protoToSave), t.offlineEditDataVersion = e.editInfo.offlineEditDataVersion), t
+      return null != e.editInfo.offlineEditDataVersion && null != e.editInfo.protoToSave && (t.protoToSave = (0, _.ob)(e.ProtoClass, e.editInfo.protoToSave), t.offlineEditDataVersion = e.editInfo.offlineEditDataVersion), t
     })
   }
   hasLoaded(e) {
@@ -199,7 +199,7 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
     var t, n;
     if (null == e) return 0;
     let r = null == (n = this.settings.guilds) || null == (t = n.guilds[e]) ? true : t.guildRecentsDismissedAt;
-    return null == r ? 0 : d.E.toDate(r).getTime()
+    return null == r ? 0 : d.D.toDate(r).getTime()
   }
   getDismissedGuildContent(e) {
     var t, n, r;
@@ -211,18 +211,18 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getGuildsProto() {
     var e, t;
-    return null != (t = null == (e = this.settings.guilds) ? true : e.guilds) ? t : null
+    return null != (e = null == (t = this.settings.guilds) ? true : t.guilds) ? e : null
   }
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let x = new D(Chunk570140.Z, {
+let x = new D(Chunk73153.h, {
   CACHE_LOADED: w,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,
-  USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: P,
-  CONNECTION_OPEN: v,
-  CONNECTION_CLOSED: S,
-  CONNECTION_RESUMED: S,
-  OVERLAY_INITIALIZE: A,
-  LOGOUT: I
+  USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: R,
+  CONNECTION_OPEN: A,
+  CONNECTION_CLOSED: v,
+  CONNECTION_RESUMED: v,
+  OVERLAY_INITIALIZE: C,
+  LOGOUT: S
 })

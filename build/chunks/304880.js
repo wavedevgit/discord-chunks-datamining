@@ -1,4 +1,9 @@
 /** Chunk was on web.js **/
-/** chunk id: 304880, original params: e (module,exports,re quire) **/
+/** chunk id: 304880, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-module.exports = "/assets/b3a9ce9d2cf3ff2f.svg"
+var Chunk324988 = require("./324988.js"),
+  i = String;
+module.exports = function(e) {
+  if ("Symbol" === r(e)) throw TypeError("Cannot convert a Symbol value to a string");
+  return i(e)
+}

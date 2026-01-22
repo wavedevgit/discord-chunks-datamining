@@ -1,0 +1,31 @@
+/** Chunk was on 28979 **/
+/** chunk id: 623375, original params: t,e,i (module,exports,require) **/
+require.d(exports, {
+  u: () => T
+}), require("./65821.js"), require("./457529.js");
+var Chunk64700 = require("./64700.js"),
+  Chunk156186 = require("./156186.js"),
+  Chunk602450 = require("./602450.js"),
+  Chunk557571 = require("./557571.jsx"),
+  Chunk954571 = require("./954571.js"),
+  Chunk728458 = require("./728458.js"),
+  Chunk652215 = require("./652215.js");
+let T = () => {
+  let t = (0, r.lV)(t => t.doInstall),
+    e = (0, r.lV)(t => t.install),
+    i = (0, r.lV)(t => t.installationStatus),
+    T = (0, r.lV)(t => t.setDoInstall),
+    A = (0, r.lV)(t => t.setInstallationStatus);
+  return (0, n.useEffect)(() => {
+    t && i === s.Lk.NOT_INSTALLED && (T(false), A(s.Lk.INSTALLING), e().catch(t => {
+      A(s.Lk.ERROR), a.A.captureException(t, {
+        tags: {
+          source: l.q.WARP_INSTALL_HELPER
+        }
+      }), u.default.track(o.HAw.PREMIUM_FEATURE_ERROR, {
+        error_message: t instanceof Error ? t.message : JSON.stringify(t),
+        error_source: l.q.WARP_INSTALL_HELPER
+      })
+    }))
+  }, [t, T, e, i, A]), null
+}

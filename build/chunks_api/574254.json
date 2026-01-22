@@ -1,1 +1,0 @@
-{"id":"574254","type":"store","data":{"name":"ContextMenuStore","functions":[{"name":"isOpen","args":[]},{"name":"version","args":[]},{"name":"getContextMenu","args":[]},{"name":"close","args":[]}],"events":["CONTEXT_MENU_OPEN","LAYER_PUSH","CONTEXT_MENU_CLOSE","OVERLAY_SET_INPUT_LOCKED","OVERLAY_DEACTIVATE_ALL_REGIONS"]},"fromModule":{"id":"web.js"}}

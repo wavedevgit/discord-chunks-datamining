@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 356264, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 958340, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  A: () => p
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = 0,
+let o = 0,
   l = {};
 
 function c(e) {
@@ -25,7 +25,7 @@ function c(e) {
 }
 
 function u(e) {
-  l[e.guildId] = e.guildInfo, s++
+  l[e.guildId] = e.guildInfo, o++
 }
 
 function d(e) {
@@ -33,7 +33,7 @@ function d(e) {
     type: "failed"
   }, false
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk311907.Ay.Store) {
   getGuild(e) {
     let t = l[e];
     if (null != t && !("type" in t)) return t
@@ -46,11 +46,11 @@ class f extends(r = Chunk442837.ZP.Store) {
     return l[e]
   }
   getVersion() {
-    return s
+    return o
   }
 }
-o(f, "displayName", "BasicGuildStore");
-let p = new f(Chunk570140.Z, {
+s(f, "displayName", "BasicGuildStore");
+let p = new f(Chunk73153.h, {
   BASIC_GUILD_FETCH: c,
   BASIC_GUILD_FETCH_SUCCESS: u,
   BASIC_GUILD_FETCH_FAILURE: d

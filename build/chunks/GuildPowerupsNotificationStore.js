@@ -1,14 +1,14 @@
-/** Chunk was on 82124 **/
-/** chunk id: 608949, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 904560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk60482 = require("./60482.js"),
-  Chunk905128 = require("./905128.js"),
-  Chunk19394 = require("./19394.js");
+  A: () => p
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk522055 = require("./522055.js"),
+  Chunk645619 = require("./645619.js"),
+  Chunk904629 = require("./904629.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -19,28 +19,28 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = {};
-class p extends(r = Chunk442837.ZP.PersistedStore) {
+class f extends(r = Chunk311907.Ay.PersistedStore) {
   getState() {
     return d
   }
   initialize(e) {
-    this.waitFor(o.Z, s.Z, a.Z), null != e && (d = e)
+    this.waitFor(s.A, o.A, a.A), null != e && (d = e)
   }
   getNotificationStateForGuild(e) {
     return d[e]
   }
 }
-u(p, "displayName", "GuildPowerupsNotificationStore"), u(p, "persistKey", "GuildPowerupsNotificationStore"), u(p, "migrations", [e => (Object.entries(e).forEach(t => {
+u(f, "displayName", "GuildPowerupsNotificationStore"), u(f, "persistKey", "GuildPowerupsNotificationStore"), u(f, "migrations", [e => (Object.entries(e).forEach(t => {
   let [n, r] = t;
   e[n] = r
 }), e)]);
-let f = new p(Chunk570140.Z, {
+let p = new f(Chunk73153.h, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
-    var t, n, r, i, l, p, f, h;
+    var t, n, r, l, i, f, p, h;
     let {
-      guildId: g
-    } = e, m = null != (r = null == (t = a.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, b = s.Z.getStateForGuild(g), y = o.Z.getStateForGuild(g), v = (0, c.h)([...Object.values(null != (i = null == b ? true : b.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == y ? true : y.entitlements) ? l : {})]);
-    f = function(e) {
+      guildId: b
+    } = e, g = null != (t = null == (i = a.A.getGuild(b)) ? true : i.premiumSubscriberCount) ? t : 0, m = o.A.getStateForGuild(b), A = s.A.getStateForGuild(b), y = (0, c.k)([...Object.values(null != (n = null == m ? true : m.unlockedPowerups) ? n : {}), ...Object.values(null != (r = null == A ? true : A.entitlements) ? r : {})]);
+    p = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -52,11 +52,11 @@ let f = new p(Chunk570140.Z, {
       }
       return e
     }({}, d), h = h = {
-      [g]: {
-        lastSeenWarningNotification: new Date(null != (p = null == (n = v[v.length - 1]) ? true : n.ends_at) ? p : Date.now()).getTime(),
-        lastBoostCount: m
+      [b]: {
+        lastSeenWarningNotification: new Date(null != (l = null == (f = y[y.length - 1]) ? true : f.ends_at) ? l : Date.now()).getTime(),
+        lastBoostCount: g
       }
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(f, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(p, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ let f = new p(Chunk570140.Z, {
       }
       return n
     })(Object(h)).forEach(function(e) {
-      Object.defineProperty(f, e, Object.getOwnPropertyDescriptor(h, e))
-    }), d = f
+      Object.defineProperty(p, e, Object.getOwnPropertyDescriptor(h, e))
+    }), d = p
   },
   GUILD_POWERUPS_RESET_NOTIFICATIONS: function() {
     d = {}

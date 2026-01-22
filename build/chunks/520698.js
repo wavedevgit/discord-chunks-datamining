@@ -1,11 +1,18 @@
-/** Chunk was on 24028 **/
-/** chunk id: 520698, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  content: "_38377f52a071dad6-content",
-  logo: "_38377f52a071dad6-logo",
-  title: "_38377f52a071dad6-title",
-  description: "_38377f52a071dad6-description",
-  formItem: "_38377f52a071dad6-formItem",
-  footer: "_38377f52a071dad6-footer",
-  buttonWrapper: "_38377f52a071dad6-buttonWrapper"
+/** Chunk was on web.js **/
+/** chunk id: 520698, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => s
+});
+var Chunk806931 = require("./806931.js"),
+  Chunk731854 = require("./731854.js");
+let a = Object.freeze({
+  [Chunk806931.lp.STREAM]: Chunk731854.x.STREAM,
+  [Chunk806931.lp.HIDDEN_STREAM]: Chunk731854.x.STREAM,
+  [Chunk806931.lp.USER]: Chunk731854.x.DEFAULT,
+  [Chunk806931.lp.ACTIVITY]: Chunk731854.x.DEFAULT
+});
+
+function s(e) {
+  return a[e]
 }

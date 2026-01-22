@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 255333, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 82293, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => p,
-  Z: () => O
+  A: () => O,
+  e: () => p
 });
-var r, Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk635377 = require("./635377.js"),
+  a = require.n(Chunk635377),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,20 +88,20 @@ function E(e) {
     similarApplications: r,
     loadId: i,
     page: a,
-    totalPages: o
-  } = e, s = _({
+    totalPages: s
+  } = e, o = _({
     applicationId: t,
     guildId: n,
     page: a
   });
-  h.set(s, {
+  h.set(o, {
     lastFetchTimeMs: Date.now(),
     applications: r,
     loadId: i,
     page: a,
-    totalPages: o
+    totalPages: s
   }), m = d(c({}, m), {
-    [s]: 2
+    [o]: 2
   })
 }
 
@@ -119,7 +119,7 @@ function b(e) {
     [i]: 3
   })
 }
-class y extends(r = Chunk442837.ZP.Store) {
+class y extends(r = Chunk311907.Ay.Store) {
   getSimilarApplications(e) {
     let {
       applicationId: t,
@@ -148,7 +148,7 @@ class y extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(y, "displayName", "ApplicationDirectorySimilarApplicationsStore");
-let O = new y(Chunk570140.Z, {
+let O = new y(Chunk73153.h, {
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: g,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: E,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: b

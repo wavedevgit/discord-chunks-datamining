@@ -1,1 +1,1 @@
-{"id":"457421","type":"assets","data":{"assetUrl":"https://canary.discord.com/assets/745e9b4aec821fad.svg"},"fromModule":{"id":"web.js"}}
+{"id":"457421","type":"store","data":{"name":"CollectiblesMarketingsStore","functions":[{"name":"getMarketingBySurface","args":["e"]},{"name":"fetchState","args":[]}],"events":["COLLECTIBLES_MARKETING_FETCH","COLLECTIBLES_MARKETING_FETCH_SUCCESS","LOGOUT"]},"fromModule":{"id":"web.js"}}

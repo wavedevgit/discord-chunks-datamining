@@ -1,0 +1,1 @@
+{"id":"457699","type":"store","data":{"name":"SearchMessageStore","functions":[{"name":"getMessage","args":["e","t"]}],"events":["SEARCH_MESSAGES_SUCCESS","MOD_VIEW_SEARCH_MESSAGES_SUCCESS","MESSAGE_UPDATE","LOGOUT","CONNECTION_OPEN","MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT"]},"fromModule":{"id":"web.js"}}

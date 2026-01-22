@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 163612, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 164891, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  A: () => a
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk688151 = require("./688151.js");
+let a = (0, Chunk600975.C)({
   kind: "guild",
   id: "2024-12_guild_voice_channel_ringing",
   label: "Guild Voice Ringing",
   defaultConfig: {
     enabled: false
   },
-  commonTriggerPoint: Chunk987338.$P.VOICE_CALL,
+  commonTriggerPoint: Chunk688151.$G.VOICE_CALL,
   treatments: [{
     id: 1,
     label: "Allow users to ring each other in Guild Voice Channels",

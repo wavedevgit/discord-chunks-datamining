@@ -1,0 +1,1 @@
+{"id":"157257","type":"store","data":{"name":"OverlayRunningGameStore","functions":[{"name":"initialize","args":[]},{"name":"getGameForPID","args":["e"]},{"name":"getGame","args":[]}],"events":["OVERLAY_INITIALIZE","OVERLAY_SET_ASSOCIATED_GAME"]},"fromModule":{"id":"web.js"}}

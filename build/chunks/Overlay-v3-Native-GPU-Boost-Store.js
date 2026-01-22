@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
-/** chunk id: 76623, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 321090, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk579806 = require("./579806.js"),
-  Chunk710845 = require("./710845.js"),
-  Chunk998502 = require("./998502.js"),
-  Chunk837268 = require("./837268.js"),
-  Chunk509140 = require("./509140.js"),
-  Chunk987650 = require("./987650.js");
+  A: () => w
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk77729 = require("./77729.js"),
+  Chunk626584 = require("./626584.js"),
+  Chunk837921 = require("./837921.js"),
+  Chunk41984 = require("./41984.js"),
+  Chunk680243 = require("./680243.js"),
+  Chunk672396 = require("./672396.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,7 +21,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = new Chunk710845.Z("OverlayV3NativeGPUBoostManager"),
+let p = new Chunk626584.A("OverlayV3NativeGPUBoostManager"),
   _ = new Set,
   h = false,
   m = false;
@@ -45,45 +45,45 @@ async function O() {
   var e, t, n;
   try {
     let n = y();
-    if (h === n || !d.iP) return;
-    let r = await (null === o.Z || true === o.Z || null == (t = o.Z.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
+    if (h === n || !d.OX) return;
+    let r = await (null === s.A || true === s.A || null == (t = s.A.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
     if (null == r) return;
-    l.ZP.SetGPUBoostEnabledByPid(r, n) && (h = n), P.emitChange()
+    l.Ay.SetGPUBoostEnabledByPid(r, n) && (h = n), R.emitChange()
   } catch (e) {
     (null == (n = e.message) ? true : n.includes("IPC method called after context was released")) && b(), p.error("Error during GPU boost request flush:", e)
   }
 }
 
-function v(e) {
+function A(e) {
   g(e.reason, e.enabled)
 }
 
-function S(e) {
+function v(e) {
   let {
     enabled: t,
     mode: n
   } = e;
-  n === c.GO.DisabledGPUBoost && E(t), n === c.GO.ForceGPUBoost && g(c.zS.DEV_FORCED_GPU_BOOST, t)
+  n === c.x7.DisabledGPUBoost && E(t), n === c.x7.ForceGPUBoost && g(c.y7.DEV_FORCED_GPU_BOOST, t)
 }
 
-function I() {
+function S() {
   b()
 }
 
-function T(e) {
-  g(c.zS.OVERLAY_UNLOCKED, !e.locked)
+function I(e) {
+  g(c.y7.OVERLAY_UNLOCKED, !e.locked)
+}
+
+function T() {
+  l.Ay.IsHardwareAcceleratedGPUSchedulingEnabled() && g(c.y7.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED, true), g(c.y7.OVERLAY_RENDERING, true)
 }
 
 function C() {
-  l.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && g(c.zS.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED, true), g(c.zS.OVERLAY_RENDERING, true)
-}
-
-function A() {
   b()
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.Z)
+    this.waitFor(u.A)
   }
   getGPUBoostRequests() {
     return _
@@ -96,12 +96,12 @@ class N extends(r = Chunk442837.ZP.Store) {
   }
 }
 f(N, "displayName", "Overlay-v3-Native-GPU-Boost-Store");
-let P = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
-    OVERLAY_SET_GPU_BOOST_REQUESTED: v,
-    OVERLAY_RENDER_DEBUG_MODE: S,
-    OVERLAY_CRASHED: I,
-    OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: C,
-    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: A,
-    OVERLAY_SET_INPUT_LOCKED: T
+let R = new N(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
+    OVERLAY_SET_GPU_BOOST_REQUESTED: A,
+    OVERLAY_RENDER_DEBUG_MODE: v,
+    OVERLAY_CRASHED: S,
+    OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: T,
+    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: C,
+    OVERLAY_SET_INPUT_LOCKED: I
   }),
-  w = P
+  w = R

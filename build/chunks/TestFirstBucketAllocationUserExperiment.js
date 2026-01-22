@@ -1,18 +1,18 @@
-/** Chunk was on 1272 **/
-/** chunk id: 256023, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 164012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => l
+  O: () => l
 });
-var Chunk987170 = require("./987170.js"),
-  Chunk987338 = require("./987338.js");
-let l = (0, Chunk987170.Z)({
+var Chunk143770 = require("./143770.js"),
+  Chunk688151 = require("./688151.js");
+let l = (0, Chunk143770.A)({
   kind: "user",
   id: "2025-02_test_first_bucket_allocation",
   label: "Test First Bucket Allocation Experiment",
   defaultConfig: {
     enabled: false
   },
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
+  commonTriggerPoint: Chunk688151.$G.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Variation with first treatment enabled",

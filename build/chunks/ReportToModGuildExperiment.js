@@ -1,15 +1,15 @@
-/** Chunk was on 1272 **/
-/** chunk id: 592546, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 500094, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  A: () => l
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk987338 = require("./987338.js");
-let l = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk688151 = require("./688151.js");
+let l = (0, Chunk600975.C)({
   kind: "guild",
   id: "2025-04_report_to_mod",
   label: "Report to moderator",
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
+  commonTriggerPoint: Chunk688151.$G.CONNECTION_OPEN,
   defaultConfig: {
     enabled: false
   },

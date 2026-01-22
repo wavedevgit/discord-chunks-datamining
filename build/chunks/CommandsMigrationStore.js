@@ -1,13 +1,13 @@
-/** Chunk was on 22516 **/
-/** chunk id: 997787, original params: e,t,r (module,exports,require) **/
-let n;
+/** Chunk was on 14360 **/
+/** chunk id: 381616, original params: e,t,r (module,exports,require) **/
+let i;
 require.d(exports, {
-  Z: () => _
-}), require("./388685.js"), require("./539854.js");
-var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => _
+}), require("./896048.js"), require("./321073.js");
+var n, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function l(e, t, r) {
+function s(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -15,22 +15,22 @@ function l(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let s = {
+let l = {
     guildNoticeDismissed: []
   },
   c = new Map,
   d = new Set;
-class u extends(i = Chunk442837.ZP.PersistedStore) {
+class u extends(n = Chunk311907.Ay.PersistedStore) {
   initialize() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : s;
-    n = e
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : l;
+    i = e
   }
   getState() {
-    return n
+    return i
   }
   shouldShowChannelNotice(e) {
     var t, r;
-    return !n.guildNoticeDismissed.includes(e) && (null != (r = null == (t = c.get(e)) ? true : t.size) ? r : 0) > 0
+    return !i.guildNoticeDismissed.includes(e) && (null != (t = null == (r = c.get(e)) ? true : r.size) ? t : 0) > 0
   }
   canShowOverviewTooltip(e, t) {
     var r;
@@ -40,8 +40,8 @@ class u extends(i = Chunk442837.ZP.PersistedStore) {
     return d.has(e)
   }
 }
-l(u, "displayName", "CommandsMigrationStore"), l(u, "persistKey", "CommandsMigrationStore");
-let _ = new u(Chunk570140.Z, {
+s(u, "displayName", "CommandsMigrationStore"), s(u, "persistKey", "CommandsMigrationStore");
+let _ = new u(Chunk73153.h, {
   COMMANDS_MIGRATION_UPDATE_SUCCESS: function(e) {
     let {
       guildId: t,
@@ -53,15 +53,15 @@ let _ = new u(Chunk570140.Z, {
     let {
       guildId: t
     } = e;
-    n.guildNoticeDismissed.push(t)
+    i.guildNoticeDismissed.push(t)
   },
   COMMANDS_MIGRATION_OVERVIEW_TOOLTIP_DISMISSED: function(e) {
     var t;
     let {
       guildId: r,
-      integrationId: n
+      integrationId: i
     } = e;
-    null == (t = c.get(r)) || t.clear(), d.add(n)
+    null == (t = c.get(r)) || t.clear(), d.add(i)
   },
   COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED: function(e) {
     let {

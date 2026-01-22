@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 117530, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 522602, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
-}), require("./388685.js"), require("./539854.js"), require("./953529.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk668781 = require("./668781.js"),
-  Chunk141795 = require("./141795.js"),
-  Chunk596956 = require("./596956.js"),
-  Chunk703558 = require("./703558.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  A: () => w
+}), require("./896048.js"), require("./321073.js"), require("./228524.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk157559 = require("./157559.js"),
+  Chunk743445 = require("./743445.js"),
+  Chunk972711 = require("./972711.js"),
+  Chunk31717 = require("./31717.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk985018 = require("./985018.jsx");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ let h = new Map,
 
 function g(e, t) {
   var n, r;
-  return null != (r = null == (n = E(e)) ? true : n.get(t)) ? r : m
+  return null != (n = null == (r = E(e)) ? true : r.get(t)) ? n : m
 }
 
 function E(e) {
@@ -44,8 +44,8 @@ function b(e, t, n) {
 function y(e) {
   let {
     channelId: t
-  } = e, n = [...g(t, d.d.ChannelMessage)];
-  n.shift(), b(t, d.d.ChannelMessage, n)
+  } = e, n = [...g(t, d.C.ChannelMessage)];
+  n.shift(), b(t, d.C.ChannelMessage, n)
 }
 let O = e => {
   let {
@@ -53,32 +53,31 @@ let O = e => {
     channelId: n,
     draftType: r,
     allowOptimization: i
-  } = e, o = [...g(n, r)];
-  if (o.length + t.length > f.dN1 && r !== d.d.SlashCommand && r !== d.d.ApplicationLauncherCommand) return void l.Z.show({
+  } = e, s = [...g(n, r)];
+  s.length + t.length > f.XgB && r !== d.C.SlashCommand && r !== d.C.ApplicationLauncherCommand ? l.A.show({
     title: p.intl.string(p.t.wOr6hB),
     body: p.intl.formatToPlainString(p.t["qqyp/e"], {
-      limit: f.dN1
+      limit: f.XgB
     })
-  });
-  a().forEach(t, e => {
-    let t = new c.nH(e, n, o.length, i);
-    t.upload(), o.push(t)
-  }), b(n, r, o)
+  }) : (a().forEach(t, e => {
+    let t = new c.bK(e, n, s.length, i);
+    t.upload(), s.push(t)
+  }), b(n, r, s))
 };
 
-function v(e) {
+function A(e) {
   let {
     channelId: t,
     id: n,
     draftType: r
-  } = e, i = [...g(t, r)], a = i.findIndex(e => (0, u.TC)({
+  } = e, i = [...g(t, r)], a = i.findIndex(e => (0, u.ph)({
     uri: n,
     filename: n
   }, e));
   a > false && (i.splice(a, 1)[0].removeFromMsgDraft(), b(t, r, i))
 }
 
-function S(e) {
+function v(e) {
   let {
     channelId: t,
     attachmentIds: n,
@@ -90,31 +89,31 @@ function S(e) {
   }), b(t, r, i)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     id: n,
     filename: r,
     description: i,
     spoiler: a,
-    thumbnail: o,
-    draftType: s
-  } = e, l = [...g(t, s)].map(e => (e.id === n && (true !== r && (e.filename = r), true !== a && (e.spoiler = a), true !== i && (e.description = i), true !== o && (e.isThumbnail = o)), e));
-  b(t, s, l)
+    thumbnail: s,
+    draftType: o
+  } = e, l = [...g(t, o)].map(e => (e.id === n && (true !== r && (e.filename = r), true !== a && (e.spoiler = a), true !== i && (e.description = i), true !== s && (e.isThumbnail = s)), e));
+  b(t, o, l)
 }
 
-function T(e) {
+function I(e) {
   let {
     channelId: t,
     id: n,
     file: r,
     draftType: i,
     allowOptimization: a
-  } = e, o = [...g(t, i)].filter(e => e.id !== n), s = new c.nH(r, t, true, a);
-  s.upload(), o.push(s), b(t, i, o)
+  } = e, s = [...g(t, i)].filter(e => e.id !== n), o = new c.bK(r, t, true, a);
+  o.upload(), s.push(o), b(t, i, s)
 }
 
-function C(e) {
+function T(e) {
   let {
     channelId: t,
     uploads: n,
@@ -123,7 +122,7 @@ function C(e) {
   b(t, r, n)
 }
 
-function A(e) {
+function C(e) {
   let {
     channelId: t,
     draftType: n
@@ -135,9 +134,9 @@ function N(e) {
   let {
     baseChannelId: t
   } = e;
-  b(t, d.d.FirstThreadMessage, [])
+  b(t, d.C.FirstThreadMessage, [])
 }
-class P extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk311907.Ay.Store) {
   getFirstUpload(e, t) {
     let n = g(e, t);
     return n.length > 0 ? n[0] : null
@@ -160,15 +159,15 @@ class P extends(r = Chunk442837.ZP.Store) {
     return g(e, t).find(n)
   }
 }
-_(P, "displayName", "UploadAttachmentStore");
-let w = new P(Chunk570140.Z, {
+_(R, "displayName", "UploadAttachmentStore");
+let w = new R(Chunk73153.h, {
   UPLOAD_ATTACHMENT_POP_FILE: y,
   UPLOAD_ATTACHMENT_ADD_FILES: O,
-  UPLOAD_ATTACHMENT_UPDATE_FILE: I,
-  UPLOAD_ATTACHMENT_REMOVE_FILE: v,
-  UPLOAD_ATTACHMENT_REMOVE_FILES: S,
-  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: A,
-  UPLOAD_ATTACHMENT_SET_UPLOADS: C,
-  UPLOAD_ATTACHMENT_SET_FILE: T,
+  UPLOAD_ATTACHMENT_UPDATE_FILE: S,
+  UPLOAD_ATTACHMENT_REMOVE_FILE: A,
+  UPLOAD_ATTACHMENT_REMOVE_FILES: v,
+  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: C,
+  UPLOAD_ATTACHMENT_SET_UPLOADS: T,
+  UPLOAD_ATTACHMENT_SET_FILE: I,
   SIDEBAR_CLOSE: N
 })

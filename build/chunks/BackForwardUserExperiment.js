@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 719961, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 545167, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => s,
-  v: () => l
+  J: () => l,
+  p: () => o
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk358085 = require("./358085.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk723702 = require("./723702.js");
+let a = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-08_back_forward",
   label: "Back Forward",
@@ -41,20 +41,20 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o() {
+function s() {
   return {
     autoTrackExposure: true,
     disable: !(0, i.isDesktop)()
   }
 }
 
-function s(e) {
-  return a.useExperiment(e, o())
+function o(e) {
+  return a.useExperiment(e, s())
 }
 
 function l(e) {
   let {
     backForwardButtons: t
-  } = a.getCurrentConfig(e, o());
+  } = a.getCurrentConfig(e, s());
   return t
 }

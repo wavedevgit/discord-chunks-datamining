@@ -1,10 +1,10 @@
-/** Chunk was on 82124 **/
-/** chunk id: 662237, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 661470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => r,
-  S: () => i
+  L: () => r,
+  a: () => l
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2026-01_voice_channel_duration_mobile",
   label: "Voice Channel Duration (Mobile)",
@@ -20,7 +20,7 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e, t) {
+function l(e, t) {
   return r.useExperiment({
     guildId: e,
     location: t

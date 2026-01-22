@@ -1,1 +1,0 @@
-{"id":"255791","type":"store","data":{"name":"MaxMemberCountChannelNoticeStore","functions":[{"name":"initialize","args":[]},{"name":"isVisible","args":["e"]}],"events":["MAX_MEMBER_COUNT_NOTICE_DISMISS"]},"fromModule":{"id":"1272"}}

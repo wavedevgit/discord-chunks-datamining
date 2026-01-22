@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 291741, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 527269, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dl: () => s,
-  Mk: () => o,
-  fD: () => a,
-  mO: () => i
+  Do: () => i,
+  MM: () => a,
+  c9: () => o,
+  cv: () => s
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
     kind: "user",
     id: "2025-03_afk_timeout_default_experiment",
     label: "Afk timeout defaults",
@@ -48,12 +48,12 @@ let r = (0, require("./818083.js").B)({
   }, {
     autoTrackExposure: false
   }).defaultTimeout,
-  o = e => r.useExperiment({
+  s = e => r.useExperiment({
     location: e
   }, {
     autoTrackExposure: false
   }).enabled,
-  s = e => {
+  o = e => {
     r.trackExposure({
       location: e
     })

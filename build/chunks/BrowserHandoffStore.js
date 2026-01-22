@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
-/** chunk id: 117240, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 115036, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => P
+  A: () => R
 });
-var o, Chunk772848 = require("./772848.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk846519 = require("./846519.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk899742 = require("./899742.js"),
-  Chunk598077 = require("./598077.js"),
-  Chunk12647 = require("./12647.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk374023 = require("./374023.js");
+var s, Chunk835245 = require("./835245.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk451988 = require("./451988.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk6981 = require("./6981.js"),
+  Chunk427157 = require("./427157.js"),
+  Chunk353835 = require("./353835.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk536194 = require("./536194.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,48 +26,48 @@ function g(e, t, n) {
 }
 let E = "BrowserHandoffStore",
   b = false,
-  y = new Chunk846519.V7;
+  y = new Chunk451988.Ep;
 
 function O() {
-  null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), _.Z.focus(null, true))
+  null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), _.A.focus(null, true))
 }
 
-function v() {
-  i = null, y.stop(), b = false, c.K.set(E, b)
+function A() {
+  i = null, y.stop(), b = false, c.w.set(E, b)
 }
 
-function S(e) {
+function v(e) {
   r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), O()
 }
 
-function I(e) {
+function S(e) {
   if (null != i) returnfalse;
-  i = (0, s.Z)(), y.start(e.timeout, () => (0, f.lx)()), O()
+  i = (0, o.A)(), y.start(e.timeout, () => (0, f.mZ)()), O()
 }
 
-function T(e) {
+function I(e) {
   let {
     handoffKey: t,
     handoffToken: n,
     timeout: r
   } = e;
   if (null == t || null == n) returnfalse;
-  b = true, y.start(r, () => (0, f.lx)())
+  b = true, y.start(r, () => (0, f.mZ)())
 }
 
-function C(e) {
-  a = new p.Z(e.user)
+function T(e) {
+  a = new p.A(e.user)
 }
 
-function A() {
-  v()
+function C() {
+  A()
 }
-class N extends(o = Chunk442837.ZP.Store) {
+class N extends(s = Chunk311907.Ay.Store) {
   initialize() {
-    false !== c.K.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
+    false !== c.w.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
   isHandoffAvailable() {
-    return !m.s.isDisallowPopupsSet() && b
+    return !m.P.isDisallowPopupsSet() && b
   }
   get user() {
     return a
@@ -77,14 +77,14 @@ class N extends(o = Chunk442837.ZP.Store) {
   }
 }
 g(N, "displayName", "BrowserHandoffStore");
-let P = new N(Chunk570140.Z, {
-  RPC_SERVER_READY: S,
-  BROWSER_HANDOFF_BEGIN: I,
-  BROWSER_HANDOFF_FROM_APP: T,
-  BROWSER_HANDOFF_UNAVAILABLE: v,
-  BROWSER_HANDOFF_SET_USER: C,
-  LOGIN: A,
-  LOGIN_SUCCESS: A,
-  LOGOUT: A,
-  REGISTER: A
+let R = new N(Chunk73153.h, {
+  RPC_SERVER_READY: v,
+  BROWSER_HANDOFF_BEGIN: S,
+  BROWSER_HANDOFF_FROM_APP: I,
+  BROWSER_HANDOFF_UNAVAILABLE: A,
+  BROWSER_HANDOFF_SET_USER: T,
+  LOGIN: C,
+  LOGIN_SUCCESS: C,
+  LOGOUT: C,
+  REGISTER: C
 })

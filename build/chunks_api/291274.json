@@ -1,0 +1,1 @@
+{"id":"291274","type":"store","data":{"name":"HabitualDNDStore","functions":[{"name":"initialize","args":["e"]},{"name":"showNagBar","args":[]},{"name":"getState","args":[]},{"name":"getTemp","args":[]}],"events":["POST_CONNECTION_OPEN","HABITUAL_DND_CLEAR"]},"fromModule":{"id":"21738"}}

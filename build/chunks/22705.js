@@ -1,10 +1,14 @@
-/** Chunk was on 23357 **/
-/** chunk id: 22705, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 22705, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 
-function r() {
-  throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+function r(e) {
+  var t;
+  return null != e ? {
+    id: e.id,
+    name: null != (t = e.name) ? t : ""
+  } : null
 }
 require.d(exports, {
-  Z: () => r
+  A: () => r
 })

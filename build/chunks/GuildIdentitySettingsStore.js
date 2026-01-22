@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 778825, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 833336, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, p, _;
+let r, i, a, s, o, l, c, u, d, f, p, _;
 require.d(exports, {
-  Z: () => V
+  A: () => H
 });
-var h, Chunk979554 = require("./979554.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk981631 = require("./981631.js");
+var h, Chunk575593 = require("./575593.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk652215 = require("./652215.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -18,36 +18,36 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let O = Chunk981631.QZA.CLOSED,
-  v = {};
+let O = Chunk652215.XlH.CLOSED,
+  A = {};
 
-function S(e) {
-  p = e.guild, O = b.QZA.OPEN, v = {}, _ = e.source
+function v(e) {
+  p = e.guild, O = b.XlH.OPEN, A = {}, _ = e.source
+}
+
+function S() {
+  O = b.XlH.CLOSED, A = {}, _ = true
 }
 
 function I() {
-  O = b.QZA.CLOSED, v = {}, _ = true
+  O = b.XlH.SUBMITTING, A = {}
 }
 
-function T() {
-  O = b.QZA.SUBMITTING, v = {}
+function T(e) {
+  p = e.guild, A = {}
 }
 
 function C(e) {
-  p = e.guild, v = {}
-}
-
-function A(e) {
   var t;
-  if (O !== b.QZA.SUBMITTING) returnfalse;
-  O = b.QZA.OPEN, v = null != (t = e.errors) ? t : {}
+  if (O !== b.XlH.SUBMITTING) returnfalse;
+  O = b.XlH.OPEN, A = null != (t = e.errors) ? t : {}
 }
 
 function N(e) {
-  O = b.QZA.OPEN, v = e.errors
+  O = b.XlH.OPEN, A = e.errors
 }
 
-function P(e) {
+function R(e) {
   let {
     avatar: t
   } = e;
@@ -58,14 +58,14 @@ function w(e) {
   let {
     item: t
   } = e;
-  t.type === m.Z.AVATAR_DECORATION ? i = t.value : t.type === m.Z.PROFILE_EFFECT ? o = t.value : t.type === m.Z.NAMEPLATE && (a = t.value)
+  t.type === m.R.AVATAR_DECORATION ? i = t.value : t.type === m.R.PROFILE_EFFECT ? s = t.value : t.type === m.R.NAMEPLATE && (a = t.value)
 }
 
-function R(e) {
+function P(e) {
   let {
     banner: t
   } = e;
-  s = t
+  o = t
 }
 
 function D(e) {
@@ -104,7 +104,7 @@ function M(e) {
 }
 
 function k() {
-  U(), G(), v = {}, O = b.QZA.OPEN
+  U(), G(), A = {}, O = b.XlH.OPEN
 }
 
 function U() {
@@ -112,28 +112,28 @@ function U() {
 }
 
 function G() {
-  s = true, l = true, c = true, d = true, o = true
+  o = true, l = true, c = true, d = true, s = true
 }
 
-function Z() {
-  v = {}
+function V() {
+  A = {}
 }
 
 function F() {
-  k(), I()
+  k(), S()
 }
-class B extends(h = Chunk442837.ZP.Store) {
+class B extends(h = Chunk311907.Ay.Store) {
   getFormState() {
     return O
   }
   getErrors() {
-    return v
+    return A
   }
   showNotice() {
-    return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
+    return true !== r || true !== i || true !== s || true !== o || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
   }
   getIsSubmitDisabled() {
-    return true !== l && l.length > b.tPV
+    return true !== l && l.length > b.NA2
   }
   getPendingAvatar() {
     return r
@@ -142,10 +142,10 @@ class B extends(h = Chunk442837.ZP.Store) {
     return i
   }
   getPendingProfileEffect() {
-    return o
+    return s
   }
   getPendingBanner() {
-    return s
+    return o
   }
   getPendingBio() {
     return l
@@ -172,8 +172,8 @@ class B extends(h = Chunk442837.ZP.Store) {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffect: o,
-      pendingBanner: s,
+      pendingProfileEffect: s,
+      pendingBanner: o,
       pendingBio: l,
       pendingPronouns: c,
       pendingNickname: u,
@@ -190,17 +190,17 @@ class B extends(h = Chunk442837.ZP.Store) {
   }
 }
 y(B, "displayName", "GuildIdentitySettingsStore");
-let V = new B(Chunk570140.Z, {
-  GUILD_IDENTITY_SETTINGS_INIT: S,
+let H = new B(Chunk73153.h, {
+  GUILD_IDENTITY_SETTINGS_INIT: v,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
-  GUILD_IDENTITY_SETTINGS_SET_GUILD: C,
-  GUILD_IDENTITY_SETTINGS_SUBMIT: T,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: A,
+  GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
+  GUILD_IDENTITY_SETTINGS_SUBMIT: I,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
   USER_PROFILE_UPDATE_FAILURE: N,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: M,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: R,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: P,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
@@ -209,5 +209,5 @@ let V = new B(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: G,
   GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
   GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
-  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: Z
+  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: V
 })

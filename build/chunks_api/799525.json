@@ -1,1 +1,0 @@
-{"id":"799525","type":"experiment","data":{"kind":"user","id":"2024-09_test_child_2_safety_xp_holdout","label":"Holdout experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enables the holdout experiment","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

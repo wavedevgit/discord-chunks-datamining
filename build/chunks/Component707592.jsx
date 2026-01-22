@@ -1,61 +1,91 @@
-/** Chunk was on 95140 **/
-/** chunk id: 707592, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 707592, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Gi: () => o,
-  YJ: () => a,
-  zY: () => c
+  Py: () => _,
+  Ul: () => p,
+  uR: () => f
 });
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk481060 = require("./481060.js"),
-  Chunk489813 = require("./489813.jsx"),
-  Chunk592286 = require("./592286.js"),
-  Chunk388032 = require("./388032.jsx");
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk192308 = require("./192308.js"),
+  Chunk686956 = require("./686956.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk231723 = require("./231723.js");
 
-function o(e) {
-  let {
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
     value: n,
-    placeholder: t,
-    onChange: r,
-    disabled: u,
-    autofocus: o
-  } = e;
-  return (0, l.jsx)(i.oil, {
-    maxLength: s.tL,
-    value: null != n ? n : "",
-    placeholder: t,
-    onChange: r,
-    disabled: u,
-    autoFocus: o
-  })
-}
-
-function a(e) {
-  let {
-    formField: n
-  } = e;
-  return (0, l.jsx)(r.CA, {
-    title: n.label,
-    children: (0, l.jsx)(i.Kx8, {
-      value: n.response,
-      disabled: true
-    })
-  })
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
 }
 
 function c(e) {
-  let {
-    formField: n,
-    autofocus: t,
-    onChange: i
-  } = e;
-  return (0, l.jsx)(r.hK, {
-    title: n.label,
-    children: (0, l.jsx)(o, {
-      onChange: i,
-      value: n.response,
-      autofocus: t,
-      placeholder: u.intl.string(u.t["Sqn+Wh"])
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
     })
+  }
+  return e
+}
+
+function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function f(e) {
+  let {
+    eventId: t,
+    recurrenceId: a
+  } = e;
+  (0, i.openModalLazy)(async () => {
+    let {
+      default: e
+    } = await Promise.all([n.e("26589"), n.e("77986")]).then(n.bind(n, 324584));
+    return n => (0, r.jsx)(e, c({
+      guildScheduledEventId: t,
+      initialRecurrenceId: a
+    }, n))
+  })
+}
+async function p(e, t) {
+  let {
+    guild_id: n
+  } = e;
+  await a.A.transitionToGuildSync(n, t), f({
+    eventId: e.id,
+    event: e
+  })
+}
+
+function _(e, t) {
+  (0, i.openModalLazy)(async () => {
+    let {
+      default: t
+    } = await n.e("34526").then(n.bind(n, 521549));
+    return n => (0, r.jsx)(t, d(c({}, n), {
+      channel: e
+    }))
+  }, {
+    contextKey: t === s.BRT.POPOUT ? o.KX : o.SY
   })
 }

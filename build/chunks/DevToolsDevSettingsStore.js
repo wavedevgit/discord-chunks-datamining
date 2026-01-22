@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 432877, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 865116, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => f,
-  zU: () => s
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  Ay: () => f,
+  xW: () => o
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var s = function(e) {
+var o = function(e) {
   return e[e.MESSAGING = 0] = "MESSAGING", e[e.OVERLAYS = 1] = "OVERLAYS", e[e.PREMIUM = 2] = "PREMIUM", e[e.REPORTING = 3] = "REPORTING", e[e.APP_COLLECTIONS = 4] = "APP_COLLECTIONS", e[e.SHOP = 5] = "SHOP", e[e.LIBDISCORE = 6] = "LIBDISCORE", e
 }({});
 let l = {
@@ -88,10 +88,9 @@ let l = {
   c = {};
 
 function u(e) {
-  if (false === e.value) return void delete c[e.toggle];
-  c[e.toggle] = e.value
+  false === e.value ? delete c[e.toggle] : c[e.toggle] = e.value
 }
-class d extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class d extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   getUserAgnosticState() {
     return {
       toggleStates: c
@@ -100,7 +99,7 @@ class d extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
     for (var t in l) {
       var n, r;
-      let i = null != (r = null == e || null == (n = e.toggleStates) ? true : n[t]) && r;
+      let i = null != (n = null == e || null == (r = e.toggleStates) ? true : r[t]) && n;
       i && (c[t] = i)
     }
   }
@@ -122,7 +121,7 @@ class d extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     })
   }
 }
-o(d, "displayName", "DevToolsDevSettingsStore"), o(d, "persistKey", "DevToolsDevSettingsStore");
-let f = new d(Chunk570140.Z, {
+s(d, "displayName", "DevToolsDevSettingsStore"), s(d, "persistKey", "DevToolsDevSettingsStore");
+let f = new d(Chunk73153.h, {
   DEV_TOOLS_DEV_SETTING_SET: u
 })

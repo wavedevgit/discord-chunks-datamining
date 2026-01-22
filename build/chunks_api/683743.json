@@ -1,1 +1,0 @@
-{"id":"683743","type":"store","data":{"name":"InviteNoticeStore","functions":[{"name":"initialize","args":[]},{"name":"channelNoticePredicate","args":["e","t"]}],"events":[]},"fromModule":{"id":"1272"}}

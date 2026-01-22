@@ -1,16 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 910654, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-module.exports = {
-  container: "_5a8382cf5c9d77df-container",
-  labelContainer: "_5a8382cf5c9d77df-labelContainer",
-  control: "_5a8382cf5c9d77df-control",
-  helperTextContainer: "_5a8382cf5c9d77df-helperTextContainer",
-  description: "_5a8382cf5c9d77df-description",
-  icon: "_5a8382cf5c9d77df-icon",
-  label: "_5a8382cf5c9d77df-label",
-  required: "_5a8382cf5c9d77df-required",
-  slideDown: "_5a8382cf5c9d77df-slideDown",
-  statusMessageContainer: "_5a8382cf5c9d77df-statusMessageContainer",
-  badgeContainer: "_5a8382cf5c9d77df-badgeContainer"
+/** chunk id: 910654, original params: e (module,exports,re quire) **/
+module.exports = function(e) {
+  return {
+    name: "LDIF",
+    contains: [{
+      className: "attribute",
+      match: "^dn(?=:)",
+      relevance: 10
+    }, {
+      className: "attribute",
+      match: "^\\w+(?=:)"
+    }, {
+      className: "literal",
+      match: "^-"
+    }, e.HASH_COMMENT_MODE]
+  }
 }

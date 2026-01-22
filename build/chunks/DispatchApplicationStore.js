@@ -1,25 +1,25 @@
 /** Chunk was on web.js **/
-/** chunk id: 417363, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 194871, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => $
-}), require("./388685.js"), require("./415506.js"), require("./358797.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk579806 = require("./579806.js"),
-  Chunk632243 = require("./632243.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk283595 = require("./283595.js"),
-  Chunk129542 = require("./129542.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk780570 = require("./780570.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk804739 = require("./804739.js"),
-  Chunk941128 = require("./941128.js"),
-  Chunk391690 = require("./391690.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => J
+}), require("./896048.js"), require("./65821.js"), require("./142703.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk77729 = require("./77729.js"),
+  Chunk728071 = require("./728071.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk189081 = require("./189081.js"),
+  Chunk645243 = require("./645243.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk674378 = require("./674378.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk144914 = require("./144914.js"),
+  Chunk966846 = require("./966846.js"),
+  Chunk775228 = require("./775228.js"),
+  Chunk652215 = require("./652215.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,19 +54,19 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = 200,
-  T = 200,
-  C = +Chunk70956.Z.Millis.MINUTE,
-  A = {},
+let S = 200,
+  I = 200,
+  T = +Chunk927813.A.Millis.MINUTE,
+  C = {},
   N = "content",
-  P = "file://",
+  R = "file://",
   w = false,
-  R = 0,
+  P = 0,
   D = 0,
   x = 0,
   L = [],
@@ -82,14 +82,14 @@ function G(e, t) {
   return t.some(t => t.platforms.includes(e))
 }
 
-function Z(e) {
+function V(e) {
   let {
     build_id: t,
     target_build_id: n,
     manifest_ids: r,
     target_manifest_ids: i,
-    application_id: o,
-    branch_id: s,
+    application_id: s,
+    branch_id: o,
     launch_commands: c,
     launch_options: u,
     storage: d,
@@ -100,42 +100,42 @@ function Z(e) {
     should_patch: g
   } = e;
   switch (null == g && (g = true), e.state.type) {
-    case b.DJE.COMPLETE: {
+    case b.l6E.COMPLETE: {
       let e, E = {},
         y = null;
-      if (m) e = b.vxO.REPAIRING;
-      else if (null == t) e = b.vxO.INSTALL_REQUIRED;
-      else if (g && (t !== n || null != r && 0 !== a().difference(r, i).length)) e = b.vxO.UPDATE_REQUIRED;
-      else if (e = b.vxO.UP_TO_DATE, null != p) {
-        let e = l.Z.fileManager.join(p, N),
-          t = (0, f.D)();
+      if (m) e = b.WTw.REPAIRING;
+      else if (null == t) e = b.WTw.INSTALL_REQUIRED;
+      else if (g && (t !== n || null != r && 0 !== a().difference(r, i).length)) e = b.WTw.UPDATE_REQUIRED;
+      else if (e = b.WTw.UP_TO_DATE, null != p) {
+        let e = l.A.fileManager.join(p, N),
+          t = (0, f.O)();
         if (null != u && 0 !== u.length) {
-          for (let n of (t !== b.QR$.WIN64 || G(t, u) || (t = b.QR$.WIN32), u))
+          for (let n of (t !== b.lM6.WIN64 || G(t, u) || (t = b.lM6.WIN32), u))
             if (n.platforms.includes(t)) {
               let t, {
                   executable: r,
                   name: i,
                   working_dir: a
                 } = n,
-                o = i,
-                s = l.Z.fileManager.join(e, r);
-              (0, h.isMac)() && !s.startsWith(P) && (s = "".concat(P).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = S(O({}, n), {
-                id: o,
-                fullExecutablePath: s,
+                s = i,
+                o = l.A.fileManager.join(e, r);
+              (0, h.isMac)() && !o.startsWith(R) && (o = "".concat(R).concat(o)), t = null != a ? l.A.fileManager.join(e, a) : l.A.fileManager.dirname(o), E[s] = v(O({}, n), {
+                id: s,
+                fullExecutablePath: o,
                 fullWorkingDir: t
-              }), null == y && (y = o)
+              }), null == y && (y = s)
             }
         } else if (null != c) {
-          t === b.QR$.WIN64 && null == c[t] && (t = b.QR$.WIN32);
+          t === b.lM6.WIN64 && null == c[t] && (t = b.lM6.WIN32);
           let n = c[t];
           if (null != n) {
             let {
               executable: r
             } = n, i = "Default", a = i;
-            E[a] = S(O({}, n), {
+            E[a] = v(O({}, n), {
               name: i,
               id: a,
-              fullExecutablePath: l.Z.fileManager.join(e, r),
+              fullExecutablePath: l.A.fileManager.join(e, r),
               fullWorkingDir: e,
               platforms: [t]
             }), y = a
@@ -144,8 +144,8 @@ function Z(e) {
       }
       return {
         type: e,
-        applicationId: o,
-        branchId: s,
+        applicationId: s,
+        branchId: o,
         buildId: t,
         manifestIds: r,
         targetBuildId: n,
@@ -158,7 +158,7 @@ function Z(e) {
         storage: d
       }
     }
-    case b.DJE.TRANSITION: {
+    case b.l6E.TRANSITION: {
       let a, {
           stage: l,
           disk_progress: c,
@@ -170,10 +170,10 @@ function Z(e) {
         } = e.state,
         y = l.type;
       return {
-        type: a = y === b.f07.UNINSTALLING ? b.vxO.UNINSTALLING : m ? b.vxO.REPAIRING : null == t ? b.vxO.INSTALLING : b.vxO.UPDATING,
+        type: a = y === b.OQC.UNINSTALLING ? b.WTw.UNINSTALLING : m ? b.WTw.REPAIRING : null == t ? b.WTw.INSTALLING : b.WTw.UPDATING,
         stage: y,
-        applicationId: o,
-        branchId: s,
+        applicationId: s,
+        branchId: o,
         buildId: t,
         manifestIds: r,
         targetBuildId: n,
@@ -194,31 +194,31 @@ function Z(e) {
 }
 
 function F(e) {
-  return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.networkProgress : null
+  return e.type === b.WTw.INSTALLING || e.type === b.WTw.UPDATING || e.type === b.WTw.REPAIRING ? e.networkProgress : null
 }
 
 function B(e) {
-  return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.diskProgress : null
-}
-
-function V(e) {
-  return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.readerProgress : null
+  return e.type === b.WTw.INSTALLING || e.type === b.WTw.UPDATING || e.type === b.WTw.REPAIRING ? e.diskProgress : null
 }
 
 function H(e) {
-  j = (j = [{
-    bytes: e,
-    timestamp: Date.now()
-  }, ...j]).slice(0, T)
+  return e.type === b.WTw.INSTALLING || e.type === b.WTw.UPDATING || e.type === b.WTw.REPAIRING ? e.readerProgress : null
 }
 
 function Y(e) {
+  j = (j = [{
+    bytes: e,
+    timestamp: Date.now()
+  }, ...j]).slice(0, I)
+}
+
+function W(e) {
   let t = Date.now(),
-    n = t - C;
+    n = t - T;
   L = (L = [{
     bytes: e,
     timestamp: t
-  }, ...L]).slice(0, T).filter(e => {
+  }, ...L]).slice(0, I).filter(e => {
     let {
       timestamp: t
     } = e;
@@ -226,23 +226,23 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function K(e) {
   M = (M = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, T)
+  }, ...M]).slice(0, I)
 }
-let K = a().throttle(H, I),
-  z = a().throttle(Y, I),
-  q = a().throttle(W, I);
+let z = a().throttle(Y, S),
+  q = a().throttle(W, S),
+  X = a().throttle(K, S);
 
-function Q(e, t, n) {
-  let r = n(A[t]),
+function Z(e, t, n) {
+  let r = n(C[t]),
     i = n(e[t]);
   return null != r && null != i && 0 !== r ? Math.max(i - r, 0) : 0
 }
 
-function X(e) {
+function Q(e) {
   let {
     state: t
   } = e;
@@ -253,36 +253,36 @@ function X(e) {
     a = false;
   for (let e in r)
     for (let t in r[e]) {
-      let o = (0, _.Tu)(e, t);
-      if (n[o] = Z(r[e][t]), null != A[o]) {
-        let e = Q(n, o, F);
-        e > 0 && K(R += e);
-        let r = Q(n, o, B);
-        r > 0 && q(D += r);
-        let s = Q(n, o, V);
-        if (s > 0 && z(x += s), i === t) {
-          let e = n[o];
-          if (true !== e.paused && (e.type === b.vxO.UNINSTALLING || e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING)) switch (e.stage) {
-            case b.f07.PATCHING:
-            case b.f07.FINALIZING:
-            case b.f07.VERIFYING:
-            case b.f07.REPAIRING:
-            case b.f07.POST_INSTALL_SCRIPTS:
-              c.Z.setProgress("dispatch_application_progress", (0, _.xI)(e.progress, e.total) / 100), a = true
+      let s = (0, _.gW)(e, t);
+      if (n[s] = V(r[e][t]), null != C[s]) {
+        let e = Z(n, s, F);
+        e > 0 && z(P += e);
+        let r = Z(n, s, B);
+        r > 0 && X(D += r);
+        let o = Z(n, s, H);
+        if (o > 0 && q(x += o), i === t) {
+          let e = n[s];
+          if (true !== e.paused && (e.type === b.WTw.UNINSTALLING || e.type === b.WTw.INSTALLING || e.type === b.WTw.UPDATING)) switch (e.stage) {
+            case b.OQC.PATCHING:
+            case b.OQC.FINALIZING:
+            case b.OQC.VERIFYING:
+            case b.OQC.REPAIRING:
+            case b.OQC.POST_INSTALL_SCRIPTS:
+              c.A.setProgress("dispatch_application_progress", (0, _.uA)(e.progress, e.total) / 100), a = true
           }
         }
       }
       if (!k) {
-        let r = l.Z.fileManager.dirname(n[o].installPath);
-        E.Z.getInstallationPath(e, t) !== r && s.Z.wait(() => {
-          s.Z.dispatch({
+        let r = l.A.fileManager.dirname(n[s].installPath);
+        E.A.getInstallationPath(e, t) !== r && o.h.wait(() => {
+          o.h.dispatch({
             type: "DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS",
             applicationId: e,
             branchId: t,
             installationPath: r
           })
-        }), false === g.Z.getQueuePosition(e, t) && (n[o].type === b.vxO.INSTALLING || n[o].type === b.vxO.UPDATING) && d.Z.hasApplication(e, t) && E.Z.shouldBeInstalled(e, t) && s.Z.wait(() => {
-          s.Z.dispatch({
+        }), false === g.A.getQueuePosition(e, t) && (n[s].type === b.WTw.INSTALLING || n[s].type === b.WTw.UPDATING) && d.A.hasApplication(e, t) && E.A.shouldBeInstalled(e, t) && o.h.wait(() => {
+          o.h.dispatch({
             type: "DISPATCH_APPLICATION_UPDATE",
             applicationId: e,
             branchId: t,
@@ -291,39 +291,39 @@ function X(e) {
         })
       }
     }
-  a || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), A = n, k = true
+  a || "dispatch_application_progress" !== c.A.taskID || c.A.clearProgress("dispatch_application_progress"), C = n, k = true
 }
-class J extends(r = Chunk442837.ZP.Store) {
+class $ extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.default)
   }
   getState(e, t) {
-    return A[(0, _.Tu)(e, t)]
+    return C[(0, _.gW)(e, t)]
   }
   isUpToDate(e, t) {
-    let n = A[(0, _.Tu)(e, t)];
-    return null != n && n.type === b.vxO.UP_TO_DATE
+    let n = C[(0, _.gW)(e, t)];
+    return null != n && n.type === b.WTw.UP_TO_DATE
   }
   shouldPatch(e, t) {
-    let n = A[(0, _.Tu)(e, t)];
+    let n = C[(0, _.gW)(e, t)];
     return null != n && true === n.shouldPatch
   }
   isInstalled(e, t) {
-    let n = A[(0, _.Tu)(e, t)];
-    return null != n ? n.type !== b.vxO.UNINSTALLING : E.Z.shouldBeInstalled(e, t)
+    let n = C[(0, _.gW)(e, t)];
+    return null != n ? n.type !== b.WTw.UNINSTALLING : E.A.shouldBeInstalled(e, t)
   }
   supportsCloudSync(e, t) {
     null == t && (t = e);
-    let n = A[(0, _.Tu)(e, t)];
+    let n = C[(0, _.gW)(e, t)];
     return null != n && null != n.storage && !!n.storage.sync
   }
   isLaunchable(e, t) {
-    if (!(0, m.Q)()) returnfalse;
-    let n = A[(0, _.Tu)(e, t)];
-    return null != n && n.type === b.vxO.UP_TO_DATE && null != n.launchOptions && 0 !== n.launchOptions.length
+    if (!(0, m.S)()) returnfalse;
+    let n = C[(0, _.gW)(e, t)];
+    return null != n && n.type === b.WTw.UP_TO_DATE && null != n.launchOptions && 0 !== n.launchOptions.length
   }
   getDefaultLaunchOption(e, t) {
-    let n = A[(0, _.Tu)(e, t)];
+    let n = C[(0, _.gW)(e, t)];
     if (null == n) return null;
     let {
       defaultLaunchOptionId: r,
@@ -332,7 +332,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return null == r || null == i ? null : i[r]
   }
   getLaunchOptions(e, t) {
-    let n = A[(0, _.Tu)(e, t)];
+    let n = C[(0, _.gW)(e, t)];
     return null == n || null == n.launchOptions ? [] : Object.values(n.launchOptions)
   }
   getHistoricalTotalBytesRead() {
@@ -350,8 +350,8 @@ class J extends(r = Chunk442837.ZP.Store) {
     })
   }
 }
-y(J, "displayName", "DispatchApplicationStore");
-let $ = new J(Chunk570140.Z, {
+y($, "displayName", "DispatchApplicationStore");
+let J = new $(Chunk73153.h, {
   CONNECTION_OPEN: U,
-  DISPATCH_APPLICATION_STATE_UPDATE: X
+  DISPATCH_APPLICATION_STATE_UPDATE: Q
 })

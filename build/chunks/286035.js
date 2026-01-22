@@ -1,25 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 286035, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 97492 **/
+/** chunk id: 286035, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pg: () => o,
-  Te: () => i,
-  kb: () => a
+  Zp: () => r,
+  k: () => l,
+  l0: () => i
 });
-var Chunk570140 = require("./570140.js");
-
-function i() {
-  r.Z.wait(() => r.Z.dispatch({
-    type: "DOMAIN_MIGRATION_START"
-  }))
-}
-
-function a() {
-  r.Z.dispatch({
-    type: "DOMAIN_MIGRATION_FAILURE"
-  })
-}
-
-function o() {
-  window.location.reload()
-}
+let r = "#83DDC5",
+  l = "#F47FFF",
+  i = "#FFDE4D"

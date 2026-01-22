@@ -1,15 +1,12 @@
 /** Chunk was on web.js **/
 /** chunk id: 49691, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-
-function r(e) {
-  if (null == e) return window;
-  if ("[object Window]" !== e.toString()) {
-    var t = e.ownerDocument;
-    return t && t.defaultView || window
+var Chunk54647 = require("./54647.js"),
+  Chunk750615 = require("./750615.js");
+module.exports = function(e) {
+  for (var t = i(e), n = t.length; n--;) {
+    var a = t[n],
+      s = e[a];
+    t[n] = [a, s, r(s)]
   }
-  return e
+  return t
 }
-require.d(exports, {
-  Z: () => r
-})

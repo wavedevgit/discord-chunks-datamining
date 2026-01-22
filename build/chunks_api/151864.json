@@ -1,1 +1,0 @@
-{"id":"151864","type":"store","data":{"name":"LiveChannelNoticesStore","functions":[{"name":"initialize","args":["e"]},{"name":"isLiveChannelNoticeHidden","args":["e"]},{"name":"getState","args":[]}],"events":["LIVE_CHANNEL_NOTICE_HIDE","GUILD_SCHEDULED_EVENT_UPDATE","GUILD_SCHEDULED_EVENT_DELETE","STAGE_INSTANCE_DELETE"]},"fromModule":{"id":"1272"}}

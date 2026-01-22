@@ -1,26 +1,26 @@
-/** Chunk was on 1272 **/
-/** chunk id: 456065, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 731667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js");
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk810788 = require("./810788.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => h
+}), require("./896048.js");
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk891540 = require("./891540.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk652215 = require("./652215.js");
 let u = false;
 
 function d(e) {
-  let t = s.Z.getGuild(e);
+  let t = o.A.getGuild(e);
   return null != t && !!t.features.has(c.GuildFeatures.HUB) && (u = true, true)
 }
 
 function p() {
   returntrue
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.Z, o.Z), this.syncWith([o.Z], p)
+    this.waitFor(o.A, s.A), this.syncWith([s.A], p)
   }
   channelNoticePredicate(e) {
     return !!e.features.has(c.GuildFeatures.LINKED_TO_HUB) && !u
@@ -31,7 +31,7 @@ class f extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : f[i] = "HubLinkNoticeStore";
-let g = new f(Chunk570140.Z, {
+let h = new f(Chunk73153.h, {
   CONNECTION_OPEN: function(e) {
     for (let t of e.guilds)
       if (d(t.id)) returntrue;

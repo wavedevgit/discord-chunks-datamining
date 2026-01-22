@@ -1,19 +1,13 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 97492 **/
 /** chunk id: 431516, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  N: () => s
+  A: () => s
 });
-var Chunk399606 = require("./399606.js"),
-  Chunk999382 = require("./999382.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js");
+var Chunk397927 = require("./397927.js"),
+  Chunk790381 = require("./790381.jsx"),
+  Chunk266080 = require("./266080.jsx"),
+  Chunk544105 = require("./544105.js");
 
-function s() {
-  let e = (0, r.e7)([l.default], () => l.default.getCurrentUser()),
-    t = (0, r.e7)([i.Z], () => i.Z.getProps().mfaLevel);
-  return {
-    isUserMFAEnabled: (null == e ? true : e.mfaEnabled) === true,
-    isModerationMFAEnabled: t === a.BpS.ELEVATED
-  }
+function s(e) {
+  return null != e ? (0, r.kHD)(e === a.f$.XBOX ? i.A : l.A) : r.qo0
 }

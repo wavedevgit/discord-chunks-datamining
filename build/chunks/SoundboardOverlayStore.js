@@ -1,30 +1,30 @@
-/** Chunk was on 6164 **/
-/** chunk id: 352527, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 83898 **/
+/** chunk id: 528772, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  A: () => s
 });
-var n, o, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var n, o, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 let l = false,
-  c = false;
-class a extends(o = Chunk442837.ZP.Store) {
+  a = false;
+class c extends(o = Chunk311907.Ay.Store) {
   get keepOpen() {
-    return c
+    return a
   }
   get enabled() {
     return l
   }
-}(n = "displayName") in a ? Object.defineProperty(a, n, {
+}(n = "displayName") in c ? Object.defineProperty(c, n, {
   value: "SoundboardOverlayStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : a[n] = "SoundboardOverlayStore";
-let s = new a(Chunk570140.Z, {
+}) : c[n] = "SoundboardOverlayStore";
+let s = new c(Chunk73153.h, {
   SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
     if (l = e.enabled, e.enabled) {
       var t;
-      c = null != (t = e.keepOpen) && t
+      a = null != (t = e.keepOpen) && t
     }
   }
 })

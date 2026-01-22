@@ -1,1 +1,0 @@
-{"id":"425986","type":"store","data":{"name":"","functions":[{"name":"getLastFetchTimeMs","args":["e"]},{"name":"getFetchState","args":["e"]},{"name":"getCollections","args":["e"]}],"events":["APPLICATION_DIRECTORY_FETCH_COLLECTIONS","APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS","APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE"]},"fromModule":{"id":"web.js"}}

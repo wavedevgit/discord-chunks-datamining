@@ -1,0 +1,1 @@
+{"id":"794383","type":"store","data":{"name":"ExternalStreamingStore","functions":[{"name":"initialize","args":[]},{"name":"getStream","args":[]}],"events":["STREAMING_UPDATE","USER_CONNECTIONS_UPDATE"]},"fromModule":{"id":"web.js"}}

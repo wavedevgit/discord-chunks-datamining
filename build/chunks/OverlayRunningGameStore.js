@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 449224, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 157257, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => p
+  A: () => p
 });
-var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk404577 = require("./404577.js");
+var i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk760751 = require("./760751.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,21 +26,21 @@ function u(e) {
 function d(e) {
   r = e.associatedGame
 }
-class f extends(i = Chunk442837.ZP.Store) {
+class f extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.Z, s.ZP)
+    this.waitFor(l.A, o.Ay)
   }
   getGameForPID(e) {
     if (__OVERLAY__ || null == e) return null;
-    let t = s.ZP.getGameOrTransformedSubgameForPID(e);
-    return l.Z.getGameByName(null == t ? true : t.name)
+    let t = o.Ay.getGameOrTransformedSubgameForPID(e);
+    return l.A.getGameByName(null == t ? true : t.name)
   }
   getGame() {
     return r
   }
 }
 c(f, "displayName", "OverlayRunningGameStore");
-let p = new f(Chunk570140.Z, {
+let p = new f(Chunk73153.h, {
   OVERLAY_INITIALIZE: u,
   OVERLAY_SET_ASSOCIATED_GAME: d
 })

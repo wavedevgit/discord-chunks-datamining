@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 855674, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 718116, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => y
-}), require("./388685.js");
-var i, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk308063 = require("./308063.js");
+  A: () => y
+}), require("./896048.js");
+var i, Chunk735438 = require("./735438.js"),
+  s = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk824953 = require("./824953.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,12 +37,12 @@ function h(e) {
     webhooks: i,
     error: a
   } = e;
-  if (null == i) return void(null != a ? (r = a, delete f[p(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n)));
+  if (null == i) return void(null != a ? (r = a, delete f[p(t, n)]) : null != n && null != d[t] && (r = null, c.A.fetchForChannel(t, n)));
   r = null;
-  let s = [];
-  null != n && (s = o()(_(t)).values().filter(e => e.channel_id !== n).value());
+  let o = [];
+  null != n && (o = s()(_(t)).values().filter(e => e.channel_id !== n).value());
   let l = d[t] = {};
-  s.concat(i).forEach(e => l[e.id] = e), delete f[p(t, n)]
+  o.concat(i).forEach(e => l[e.id] = e), delete f[p(t, n)]
 }
 
 function m(e) {
@@ -68,22 +68,22 @@ function E(e) {
   } = e;
   delete _(t)[n]
 }
-class b extends(i = Chunk442837.ZP.Store) {
+class b extends(i = Chunk311907.Ay.Store) {
   isFetching(e, t) {
     return null != f[p(e, t)]
   }
   getWebhooksForGuild(e) {
-    return o().values(_(e))
+    return s().values(_(e))
   }
   getWebhooksForChannel(e, t) {
-    return o()(_(e)).values().filter(e => e.channel_id === t).value()
+    return s()(_(e)).values().filter(e => e.channel_id === t).value()
   }
   get error() {
     return r
   }
 }
 u(b, "displayName", "WebhooksStore");
-let y = new b(Chunk570140.Z, {
+let y = new b(Chunk73153.h, {
   WEBHOOKS_UPDATE: h,
   WEBHOOKS_FETCHING: m,
   WEBHOOK_CREATE: g,

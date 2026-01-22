@@ -1,1 +1,0 @@
-{"id":"467442","type":"experiment","data":{"kind":"user","id":"2025-07_age_verification_feedback","label":"Age Verification Feedback Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Age Verification Feedback Survey","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

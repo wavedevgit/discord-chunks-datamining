@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
-/** chunk id: 106301, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 242919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o;
+let r, i, a, s;
 require.d(exports, {
-  Z: () => U,
-  o: () => T
-}), require("./388685.js"), require("./539854.js");
-var s, Chunk348327 = require("./348327.js"),
-  c = require.n(Chunk348327),
-  Chunk512722 = require("./512722.js"),
-  d = require.n(Chunk512722),
-  Chunk392711 = require("./392711.js"),
-  p = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk574176 = require("./574176.js"),
-  Chunk54332 = require("./54332.js"),
-  Chunk505905 = require("./505905.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => U,
+  x: () => I
+}), require("./896048.js"), require("./321073.js");
+var o, Chunk812729 = require("./812729.js"),
+  c = require.n(Chunk812729),
+  Chunk284009 = require("./284009.js"),
+  d = require.n(Chunk284009),
+  Chunk735438 = require("./735438.js"),
+  p = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk140547 = require("./140547.js"),
+  Chunk60821 = require("./60821.js"),
+  Chunk708455 = require("./708455.js"),
+  Chunk652215 = require("./652215.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,7 +29,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function S(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,74 +53,74 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 6,
-  C = 7,
-  A = N();
+let I = 6,
+  T = 7,
+  C = N();
 
 function N() {
   return {
-    recentStatuses: b.ux,
+    recentStatuses: b.UO,
     favoritedStatuses: [],
     currentDefaultStatus: null
   }
 }
 
-function P() {
-  A = N()
+function R() {
+  C = N()
 }
 
 function w(e) {
   let {
     status: t,
     guildId: n,
-    saveAsDefault: s
+    saveAsDefault: o
   } = e;
-  if (d()(t !== b.tN.CUSTOM, "Hang Status cannot be custom"), r = t, i = null, o = null, null != t) {
-    let e = [...A.recentStatuses],
-      n = e.findIndex(e => (0, E.Z)(e) && e === t);
-    n >= 0 ? e.splice(n, 1) : e.length === C && e.splice(C - 1, 1), A.recentStatuses = [t, ...e]
+  if (d()(t !== b.Kk.CUSTOM, "Hang Status cannot be custom"), r = t, i = null, s = null, null != t) {
+    let e = [...C.recentStatuses],
+      n = e.findIndex(e => (0, E.A)(e) && e === t);
+    n >= 0 ? e.splice(n, 1) : e.length === T && e.splice(T - 1, 1), C.recentStatuses = [t, ...e]
   }
-  s && (A.currentDefaultStatus = {
+  o && (C.currentDefaultStatus = {
     status: t,
     customHangStatus: i,
-    gameActivityHangStatus: o
+    gameActivityHangStatus: s
   });
   let {
     defaultStatusVariant: l
-  } = (0, g.gx)({
+  } = (0, g.ko)({
     guildId: n,
     location: "UpdateHangStatus"
   });
   a = {
-    type: y.IIU.HANG_STATUS,
+    type: y.$pd.HANG_STATUS,
     name: "Hang Status",
     state: "".concat(r, ":").concat(l)
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     status: t,
     emoji: n,
-    saveAsDefault: s
+    saveAsDefault: o
   } = e;
-  r = b.tN.CUSTOM, o = null, i = {
+  r = b.Kk.CUSTOM, s = null, i = {
     status: t,
     emoji: n
   };
-  let l = [...A.recentStatuses],
-    c = l.findIndex(e => !(0, E.Z)(e) && e.status === t && p().isEqual(e.emoji, n));
-  c >= 0 ? l.splice(c, 1) : l.length === C && l.splice(C - 1, 1), A.recentStatuses = [i, ...l], s && (A.currentDefaultStatus = {
+  let l = [...C.recentStatuses],
+    c = l.findIndex(e => !(0, E.A)(e) && e.status === t && p().isEqual(e.emoji, n));
+  c >= 0 ? l.splice(c, 1) : l.length === T && l.splice(T - 1, 1), C.recentStatuses = [i, ...l], o && (C.currentDefaultStatus = {
     status: r,
     customHangStatus: i,
-    gameActivityHangStatus: o
+    gameActivityHangStatus: s
   }), a = {
-    type: y.IIU.HANG_STATUS,
+    type: y.$pd.HANG_STATUS,
     name: "Hang Status",
     state: r,
     details: t,
@@ -133,10 +133,10 @@ function D(e) {
     applicationId: t,
     saveAsDefault: n
   } = e;
-  o = t, r = null, i = null, a = null, n && (A.currentDefaultStatus = {
+  s = t, r = null, i = null, a = null, n && (C.currentDefaultStatus = {
     status: r,
     customHangStatus: i,
-    gameActivityHangStatus: o
+    gameActivityHangStatus: s
   })
 }
 
@@ -144,7 +144,7 @@ function x(e) {
   let {
     saveAsDefault: t
   } = e;
-  r = null, i = null, o = null, t && (A.currentDefaultStatus = {
+  r = null, i = null, s = null, t && (C.currentDefaultStatus = {
     status: null,
     customHangStatus: null,
     gameActivityHangStatus: null
@@ -155,18 +155,18 @@ function L(e) {
   let {
     status: t,
     emoji: n
-  } = e, r = false, i = [...A.favoritedStatuses], a = i.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && p().isEqual(e.emoji, n)), o = null == n ? t : {
+  } = e, r = false, i = [...C.favoritedStatuses], a = i.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, n)), s = null == n ? t : {
     status: t,
     emoji: n
   };
-  return false === a && i.length < T ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (A.favoritedStatuses = i, true)
+  return false === a && i.length < I ? (i.push(s), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
 }
 
 function j() {
-  if (null == o) returnfalse;
-  if (!m.ZP.getRunningVerifiedApplicationIds().includes(o)) {
+  if (null == s) returnfalse;
+  if (!m.Ay.getRunningVerifiedApplicationIds().includes(s)) {
     var e;
-    return o = null, (null == (e = A.currentDefaultStatus) ? true : e.gameActivityHangStatus) != null && (A.currentDefaultStatus.gameActivityHangStatus = null), true
+    return s = null, (null == (e = C.currentDefaultStatus) ? true : e.gameActivityHangStatus) != null && (C.currentDefaultStatus.gameActivityHangStatus = null), true
   }
   returnfalse
 }
@@ -174,21 +174,21 @@ function j() {
 function M(e) {
   let {
     statuses: t
-  } = e, n = [...A.recentStatuses], s = [...A.favoritedStatuses];
+  } = e, n = [...C.recentStatuses], o = [...C.favoritedStatuses];
   t.forEach(e => {
     let {
       status: t,
       emoji: l
-    } = e, c = n.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l)), u = s.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l));
-    c >= 0 && n.splice(c, 1), u >= 0 && s.splice(u, 1), t === (null == i ? true : i.status) && p().isEqual(l, null == i ? true : i.emoji) && (r = null, i = null, o = null, A.currentDefaultStatus = null, a = null)
-  }), A.recentStatuses = n, A.favoritedStatuses = s
+    } = e, c = n.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l)), u = o.findIndex(e => (0, E.A)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l));
+    c >= 0 && n.splice(c, 1), u >= 0 && o.splice(u, 1), t === (null == i ? true : i.status) && p().isEqual(l, null == i ? true : i.emoji) && (r = null, i = null, s = null, C.currentDefaultStatus = null, a = null)
+  }), C.recentStatuses = n, C.favoritedStatuses = o
 }
-class k extends(s = Chunk442837.ZP.PersistedStore) {
+class k extends(o = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    A = v({}, N(), null != e ? e : {}), this.waitFor(m.ZP), this.syncWith([m.ZP], j)
+    C = A({}, N(), null != e ? e : {}), this.waitFor(m.Ay), this.syncWith([m.Ay], j)
   }
   getState() {
-    return A
+    return C
   }
   getCurrentHangStatus() {
     return r
@@ -197,43 +197,43 @@ class k extends(s = Chunk442837.ZP.PersistedStore) {
     return i
   }
   getGameActivityHangStatus() {
-    return o
+    return s
   }
   getRecentStatuses() {
-    return A.recentStatuses
+    return C.recentStatuses
   }
   getFavoritedStatuses() {
-    return A.favoritedStatuses
+    return C.favoritedStatuses
   }
   getCurrentDefaultStatus() {
-    return A.currentDefaultStatus
+    return C.currentDefaultStatus
   }
   getHangStatusActivity() {
     return null == r ? null : a
   }
   isFavorited(e) {
-    let t = (0, E.Z)(e);
-    return A.favoritedStatuses.some(n => (0, E.Z)(n) && t && n === e || !(0, E.Z)(n) && !t && e.status === n.status && c()(e.emoji, n.emoji))
+    let t = (0, E.A)(e);
+    return C.favoritedStatuses.some(n => (0, E.A)(n) && t && n === e || !(0, E.A)(n) && !t && e.status === n.status && c()(e.emoji, n.emoji))
   }
 }
 O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O(k, "migrations", [e => {
   if (null != e.currentDefaultStatus && null == e.currentDefaultStatus.gameActivityHangStatus) {
-    let t = I(v({}, e.currentDefaultStatus), {
+    let t = S(A({}, e.currentDefaultStatus), {
       gameActivityHangStatus: null
     });
-    return I(v({}, e), {
+    return S(A({}, e), {
       currentDefaultStatus: t
     })
   }
   return e
 }, e => ("recentCustomStatuses" in e && delete e.recentCustomStatuses, e), e => (null != e.currentDefaultStatus && "expiresAt" in e.currentDefaultStatus && delete e.currentDefaultStatus.expiresAt, e)]);
-let U = new k(Chunk570140.Z, {
-  LOGOUT: P,
+let U = new k(Chunk73153.h, {
+  LOGOUT: R,
   UPDATE_HANG_STATUS: w,
-  UPDATE_HANG_STATUS_CUSTOM: R,
+  UPDATE_HANG_STATUS_CUSTOM: P,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
   DELETE_INVALID_HANG_STATUSES: M,
   CLEAR_HANG_STATUS: x,
   UPDATE_FAVORITE_HANG_STATUS: L,
-  RESET_HANG_STATUS_STATE: P
+  RESET_HANG_STATUS_STATE: R
 })

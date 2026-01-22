@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 866960, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 544180, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  A: () => h
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk931619 = require("./931619.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk209489 = require("./209489.js"),
+  Chunk652215 = require("./652215.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,17 +17,17 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = Chunk981631.IWh.UNKNOWN,
-  u = Chunk981631.IyS.UNKNOWN,
+let c = Chunk652215.wY_.UNKNOWN,
+  u = Chunk652215.NKC.UNKNOWN,
   d = null;
 
 function f(e) {
   var t;
-  c = null != e.type ? e.type : s.IWh.UNKNOWN, u = null != (t = e.effectiveSpeed) ? t : s.IyS.UNKNOWN, d = e.serviceProvider, _.emitChange()
+  c = null != e.type ? e.type : o.wY_.UNKNOWN, u = null != (t = e.effectiveSpeed) ? t : o.NKC.UNKNOWN, d = e.serviceProvider, _.emitChange()
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    o.Z.getNetworkInformation().then(f), o.Z.addChangeCallback(f)
+    s.A.getNetworkInformation().then(f), s.A.addChangeCallback(f)
   }
   getType() {
     return c
@@ -40,5 +40,5 @@ class p extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(p, "displayName", "NetworkStore");
-let _ = new p(Chunk570140.Z, {}),
+let _ = new p(Chunk73153.h, {}),
   h = _

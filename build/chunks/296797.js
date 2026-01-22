@@ -1,39 +1,39 @@
-/** Chunk was on 82124 **/
-/** chunk id: 296797, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 296797, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
-});
-var Chunk473749 = require("./473749.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk585483 = require("./585483.js"),
-  Chunk16609 = require("./16609.js"),
-  Chunk917107 = require("./917107.js"),
-  Chunk89425 = require("./89425.js"),
-  Chunk197386 = require("./197386.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => p
+}), require("./896048.js");
+var Chunk544420 = require("./544420.js"),
+  Chunk110782 = require("./110782.js"),
+  Chunk439372 = require("./439372.js"),
+  Chunk760751 = require("./760751.js"),
+  Chunk189081 = require("./189081.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk953384 = require("./953384.js");
 
-function p(e) {
-  let {
-    onTransition: t
-  } = e;
-  r.useEffect(() => {
-    async function e(e) {
-      let {
-        location: n
-      } = e, r = (0, o.p)(n);
-      if (null == r || !(0, s.Z)(r)) return;
-      l.Z.getVoiceChannelId() !== r && await (0, c.Z)({
-        channelId: r
-      });
-      let a = i.Z.getChannel(r),
-        d = null == a ? true : a.guild_id;
-      setTimeout(() => {
-        (0, u.Z)(d, n), null == t || t()
-      }, 0)
-    }
-    return a.S.subscribe(d.CkL.OPEN_EMBEDDED_ACTIVITY, e), () => {
-      a.S.unsubscribe(d.CkL.OPEN_EMBEDDED_ACTIVITY, e)
-    }
-  }, [t])
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
 }
+class f extends Chunk439372.A {
+  handlePostConnectionOpen() {
+    (0, c.isDesktop)() && !o.A.fetched && (0, i.Yq)(), r.A.getDetectableGames(), r.A.getDetectableBlocklist(), this.intervalId = setInterval(() => {
+      r.A.getDetectableGames(), r.A.getDetectableBlocklist()
+    }, s.A.detectableGamesTtl + Math.random() * l.A.Millis.HOUR), r.A.getDetectableNonGames(), this.nonGameIntervalId = setInterval(r.A.getDetectableNonGames, u.A.ttl + Math.random() * l.A.Millis.HOUR)
+  }
+  _terminate() {
+    null != this.intervalId && (clearInterval(this.intervalId), this.intervalId = true), null != this.nonGameIntervalId && (clearInterval(this.nonGameIntervalId), this.nonGameIntervalId = true)
+  }
+  constructor(...e) {
+    super(...e), d(this, "intervalId", true), d(this, "nonGameIntervalId", true), d(this, "actions", {
+      POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
+    })
+  }
+}
+let p = new f

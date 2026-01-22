@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 937111, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 212455, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w,
+  A: () => w,
   j: () => h
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk411198 = require("./411198.js"),
-  Chunk881952 = require("./881952.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk860689 = require("./860689.js"),
+  Chunk821124 = require("./821124.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ function E(e) {
   } = e;
   if (null == t) return void m(n);
   let r = h(t);
-  (0, l.d3)(r) ? m(n): d[n] = r
+  (0, l.NK)(r) ? m(n): d[n] = r
 }
 
 function b(e) {
@@ -75,9 +75,9 @@ function b(e) {
   } = e;
   if (null == n) return;
   let r = h(n),
-    i = o.default.getCurrentUser();
+    i = s.default.getCurrentUser();
   if (null != i && r.userId !== i.id) returnfalse;
-  (0, l.d3)(r) ? m(t): d[t] = r
+  (0, l.NK)(r) ? m(t): d[t] = r
 }
 
 function y(e) {
@@ -94,7 +94,7 @@ function O(e) {
   m(t.id)
 }
 
-function v(e) {
+function A(e) {
   let {
     invite: t
   } = e, {
@@ -110,20 +110,20 @@ function v(e) {
       id: t,
       name: i,
       icon: a,
-      features: o,
-      splash: s
+      features: s,
+      splash: o
     } = n;
     p[t] = {
       id: t,
       name: i,
       icon: a,
-      features: null != o ? o : [],
-      splash: s
+      features: null != s ? s : [],
+      splash: o
     }
   }
 }
 
-function S(e) {
+function v(e) {
   let {
     guilds: t
   } = e;
@@ -145,7 +145,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     cooldown: n
@@ -153,7 +153,7 @@ function I(e) {
   _[t] = null != n ? n : 0
 }
 
-function T(e) {
+function I(e) {
   let {
     form: t,
     guildId: n
@@ -164,26 +164,26 @@ function T(e) {
       name: r,
       icon: i,
       features: a,
-      splash: o
+      splash: s
     } = t.guild;
     p[n] = {
       id: e,
       name: r,
       icon: i,
       features: null != a ? a : [],
-      splash: o
+      splash: s
     }
   }
 }
 
-function C(e) {
+function T(e) {
   let {
     guildId: t
   } = e;
   m(t)
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t
   } = e;
@@ -193,9 +193,9 @@ function A(e) {
 function N() {
   u = null
 }
-class P extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default)
+    this.waitFor(s.default)
   }
   getRequest(e) {
     return d[e]
@@ -204,7 +204,7 @@ class P extends(r = Chunk442837.ZP.Store) {
     return Object.values(d).map(e => null == e ? true : e.guildId).filter(e => null != e)
   }
   getJoinRequestGuild(e) {
-    return null != p[e] ? (0, s.yS)(p[e]) : null
+    return null != p[e] ? (0, o.yF)(p[e]) : null
   }
   get hasFetchedRequestToJoinGuilds() {
     return f
@@ -216,19 +216,19 @@ class P extends(r = Chunk442837.ZP.Store) {
     return _[e]
   }
 }
-c(P, "displayName", "UserGuildJoinRequestStore");
-let w = new P(Chunk570140.Z, {
+c(R, "displayName", "UserGuildJoinRequestStore");
+let w = new R(Chunk73153.h, {
   CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: b,
   GUILD_JOIN_REQUEST_CREATE: b,
   GUILD_JOIN_REQUEST_DELETE: y,
   USER_GUILD_JOIN_REQUEST_UPDATE: E,
   GUILD_DELETE: O,
-  USER_JOIN_REQUEST_GUILDS_FETCH: S,
-  MEMBER_VERIFICATION_FORM_UPDATE: T,
-  INVITE_ACCEPT_SUCCESS: v,
-  ACK_APPROVED_GUILD_JOIN_REQUEST: C,
-  USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW: A,
+  USER_JOIN_REQUEST_GUILDS_FETCH: v,
+  MEMBER_VERIFICATION_FORM_UPDATE: I,
+  INVITE_ACCEPT_SUCCESS: A,
+  ACK_APPROVED_GUILD_JOIN_REQUEST: T,
+  USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW: C,
   USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR: N,
-  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: I
+  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: S
 })

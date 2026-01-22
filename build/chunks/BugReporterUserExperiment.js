@@ -1,9 +1,9 @@
-/** Chunk was on 1272 **/
-/** chunk id: 174556, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 770031, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  A: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2024-09_bug_reporter",
   label: "Bug Reporter",

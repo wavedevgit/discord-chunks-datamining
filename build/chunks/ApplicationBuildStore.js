@@ -1,26 +1,26 @@
 /** Chunk was on web.js **/
-/** chunk id: 173747, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 568004, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => z
-}), require("./388685.js"), require("./539854.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk846519 = require("./846519.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk274616 = require("./274616.js"),
-  Chunk57513 = require("./57513.js"),
-  Chunk51025 = require("./51025.js"),
-  Chunk812206 = require("./812206.js"),
-  Chunk695346 = require("./695346.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk283595 = require("./283595.js"),
-  Chunk417363 = require("./417363.js"),
-  Chunk391690 = require("./391690.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk780570 = require("./780570.js"),
-  Chunk804739 = require("./804739.js");
+  A: () => q
+}), require("./896048.js"), require("./321073.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk451988 = require("./451988.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk781763 = require("./781763.js"),
+  Chunk356645 = require("./356645.js"),
+  Chunk92077 = require("./92077.js"),
+  Chunk587895 = require("./587895.js"),
+  Chunk253932 = require("./253932.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk189081 = require("./189081.js"),
+  Chunk194871 = require("./194871.js"),
+  Chunk775228 = require("./775228.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk674378 = require("./674378.js"),
+  Chunk144914 = require("./144914.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,53 +30,53 @@ function O(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = new Set,
-  S = {},
-  I = new Set,
-  T = {},
-  C = new Set,
-  A = {},
-  N = 10 * Chunk70956.Z.Millis.MINUTE,
-  P = 6 * Chunk70956.Z.Millis.HOUR,
-  w = 10 * Chunk70956.Z.Millis.MINUTE,
-  R = new Chunk846519.V7;
+let A = new Set,
+  v = {},
+  S = new Set,
+  I = {},
+  T = new Set,
+  C = {},
+  N = 10 * Chunk927813.A.Millis.MINUTE,
+  R = 6 * Chunk927813.A.Millis.HOUR,
+  w = 10 * Chunk927813.A.Millis.MINUTE,
+  P = new Chunk451988.Ep;
 
 function D(e) {
-  R.start(e + Math.random() * N, c.o)
+  P.start(e + Math.random() * N, c.r)
 }
 
 function x() {
-  return !p.bm.getSetting() && (D(P), L())
+  return !p.l_.getSetting() && (D(R), L())
 }
 
 function L() {
-  if (!(0, y.Q)() || p.bm.getSetting()) returnfalse;
-  let e = h.Z.entitledBranchIds,
+  if (!(0, y.S)() || p.l_.getSetting()) returnfalse;
+  let e = h.A.entitledBranchIds,
     t = [];
-  for (let n of e) A.hasOwnProperty(n) || (A[n] = null, t.push(n));
+  for (let n of e) C.hasOwnProperty(n) || (C[n] = null, t.push(n));
   if (0 === t.length) returnfalse;
-  l.Z.wait(() => c.o(t))
+  l.h.wait(() => c.r(t))
 }
 
 function j() {
-  if (!(0, y.Q)()) returnfalse;
-  for (let e of C) {
+  if (!(0, y.S)()) returnfalse;
+  for (let e of T) {
     let {
       applicationId: t,
       branchId: n
-    } = (0, b.CP)(e);
-    null != f.Z.getApplication(t) && (C.delete(e), M(t, n))
+    } = (0, b.r0)(e);
+    null != f.A.getApplication(t) && (T.delete(e), M(t, n))
   }
 }
 
 function M(e, t) {
-  if (null != S[t] && g.Z.shouldBeInstalled(e, t)) {
-    let n = S[t],
+  if (null != v[t] && g.A.shouldBeInstalled(e, t)) {
+    let n = v[t],
       r = n.manifestIds,
-      i = m.Z.getState(e, t);
-    null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
-      let i = f.Z.getApplication(e);
-      null != i ? (C.delete((0, b.Tu)(e, t)), (0, d.li)(i, t, n.id, r, true)) : C.add((0, b.Tu)(e, t))
+      i = m.A.getState(e, t);
+    null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.h.wait(() => {
+      let i = f.A.getApplication(e);
+      null != i ? (T.delete((0, b.gW)(e, t)), (0, d.K3)(i, t, n.id, r, true)) : T.add((0, b.gW)(e, t))
     })
   }
 }
@@ -85,7 +85,7 @@ function k(e) {
   let {
     branchId: t
   } = e;
-  v.add(t)
+  A.add(t)
 }
 
 function U(e) {
@@ -95,16 +95,16 @@ function U(e) {
     locale: r,
     build: i
   } = e;
-  v.delete(n);
+  A.delete(n);
   let a = i.manifests.map(e => {
       let {
         id: t
       } = e;
       return t
     }),
-    o = i.id;
-  I.delete(n), S[n] = {
-    id: o,
+    s = i.id;
+  S.delete(n), v[n] = {
+    id: s,
     applicationId: t,
     branchId: n,
     locale: r,
@@ -116,14 +116,14 @@ function G(e) {
   let {
     branchId: t
   } = e;
-  v.delete(t), I.add(t)
+  A.delete(t), S.add(t)
 }
 
-function Z(e) {
+function V(e) {
   let {
     buildId: t
   } = e;
-  T.hasOwnProperty(t) || (T[t] = null)
+  I.hasOwnProperty(t) || (I[t] = null)
 }
 
 function F(e) {
@@ -131,22 +131,22 @@ function F(e) {
     buildId: t,
     sizeKB: n
   } = e;
-  T[t] = n
+  I[t] = n
 }
 
 function B(e) {
   let {
     buildId: t
   } = e;
-  null == T[t] && delete T[t]
+  null == I[t] && delete I[t]
 }
 
-function V(e) {
+function H(e) {
   let {
     branches: t
   } = e, n = {};
-  for (let e in h.Z.libraryApplications) {
-    let t = h.Z.libraryApplications[e];
+  for (let e in h.A.libraryApplications) {
+    let t = h.A.libraryApplications[e];
     n[t.branchId] = t
   }
   for (let e of t) {
@@ -154,71 +154,71 @@ function V(e) {
       id: t,
       liveBuildId: r
     } = e;
-    if (r !== A[t]) {
+    if (r !== C[t]) {
       let e = n[t];
-      null != e && l.Z.wait(() => u.l(e.id, e.branchId, true))
+      null != e && l.h.wait(() => u.n(e.id, e.branchId, true))
     }
-    A[t] = r
+    C[t] = r
   }
-  D(P)
-}
-
-function H() {
-  D(w)
+  D(R)
 }
 
 function Y() {
-  R.stop()
+  D(w)
 }
 
-function W(e) {
+function W() {
+  P.stop()
+}
+
+function K(e) {
   let {
     entitlements: t
   } = e;
-  if (!(0, y.Q)()) returnfalse;
+  if (!(0, y.S)()) returnfalse;
   let n = new Set;
   for (let e of t) n.add(e.application_id);
-  for (let e in h.Z.libraryApplications) {
-    let t = h.Z.libraryApplications[e];
-    n.has(t.id) && (0, b.Je)(t) && l.Z.wait(() => u.l(t.id, t.branchId))
+  for (let e in h.A.libraryApplications) {
+    let t = h.A.libraryApplications[e];
+    n.has(t.id) && (0, b.XZ)(t) && l.h.wait(() => u.n(t.id, t.branchId))
   }
 }
-class K extends(r = Chunk442837.ZP.Store) {
+class z extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([h.Z], L), this.waitFor(f.Z, m.Z, g.Z, h.Z, _.Z)
+    this.syncWith([h.A], L), this.waitFor(f.A, m.A, g.A, h.A, _.A)
   }
   getTargetBuildId(e, t) {
-    return null == S[t] ? null : S[t].id
+    return null == v[t] ? null : v[t].id
   }
   getTargetManifests(e, t) {
-    return null == S[t] ? null : S[t].manifestIds
+    return null == v[t] ? null : v[t].manifestIds
   }
   hasNoBuild(e, t) {
-    return I.has(t)
+    return S.has(t)
   }
   isFetching(e, t) {
-    return v.has(t)
+    return A.has(t)
   }
   needsToFetchBuildSize(e) {
-    return !T.hasOwnProperty(e)
+    return !I.hasOwnProperty(e)
   }
   getBuildSize(e) {
-    return T[e]
+    return I[e]
   }
 }
-O(K, "displayName", "ApplicationBuildStore");
-let z = new K(Chunk570140.Z, {
+O(z, "displayName", "ApplicationBuildStore");
+let q = new z(Chunk73153.h, {
   CONNECTION_OPEN: x,
   GAMES_DATABASE_UPDATE: j,
   APPLICATION_BUILD_FETCH_START: k,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
-  APPLICATION_BUILD_SIZE_FETCH_START: Z,
+  APPLICATION_BUILD_SIZE_FETCH_START: V,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: F,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
-  APPLICATION_BRANCHES_FETCH_FAIL: H,
-  CONNECTION_CLOSED: Y,
-  LOGOUT: Y,
-  SKU_PURCHASE_SUCCESS: W
+  APPLICATION_BRANCHES_FETCH_SUCCESS: H,
+  APPLICATION_BRANCHES_FETCH_FAIL: Y,
+  CONNECTION_CLOSED: W,
+  LOGOUT: W,
+  SKU_PURCHASE_SUCCESS: K
 })

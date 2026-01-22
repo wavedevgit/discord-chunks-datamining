@@ -1,26 +1,26 @@
-/** Chunk was on 1272 **/
-/** chunk id: 761781, original params: e,t,n (module,exports,require) **/
-require("./388685.js");
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
-let o = new Set;
+/** Chunk was on 21738 **/
+/** chunk id: 989937, original params: e,t,n (module,exports,require) **/
+require("./896048.js");
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
+let s = new Set;
 
-function s(e) {
+function o(e) {
   let {
     userActivities: t
   } = e;
-  null != t && (o = new Set(t.map(e => e.application_id)))
+  null != t && (s = new Set(t.map(e => e.application_id)))
 }
-class c extends(r = Chunk442837.ZP.Store) {
+class c extends(r = Chunk311907.Ay.Store) {
   get currentUserApplicationIds() {
-    return o
+    return s
   }
 }(i = "displayName") in c ? Object.defineProperty(c, i, {
   value: "RecentUserActivityStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : c[i] = "RecentUserActivityStore", new c(Chunk570140.Z, {
-  CONNECTION_OPEN_SUPPLEMENTAL: s,
-  CONNECTION_OPEN_STATE_UPDATE: s
+}) : c[i] = "RecentUserActivityStore", new c(Chunk73153.h, {
+  CONNECTION_OPEN_SUPPLEMENTAL: o,
+  CONNECTION_OPEN_STATE_UPDATE: o
 })

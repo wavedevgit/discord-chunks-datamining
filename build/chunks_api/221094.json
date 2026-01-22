@@ -1,0 +1,1 @@
+{"id":"221094","type":"experiment","data":{"kind":"guild","id":"2021-10_study_group","label":"Student hub study group","defaultConfig":{"enableStudyGroup":false},"treatments":[{"id":1,"label":"Enables study group sidebar","config":{"enableStudyGroup":true}}]},"fromModule":{"id":"21738"}}

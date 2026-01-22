@@ -1,1 +1,0 @@
-{"id":"621413","type":"experiment","data":{"kind":"user","id":"2025-07_krisp_background_voice_cancellation","label":"Krisp Background Voice Cancellation","defaultConfig":"l","treatments":[{"id":1,"label":"Use BVC for allowed devices","config":"s(a({}, l), { allowBVC: true })"}]},"fromModule":{"id":"web.js"}}

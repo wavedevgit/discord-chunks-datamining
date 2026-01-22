@@ -1,1 +1,0 @@
-{"id":"855674","type":"store","data":{"name":"WebhooksStore","functions":[{"name":"isFetching","args":["e","t"]},{"name":"getWebhooksForGuild","args":["e"]},{"name":"getWebhooksForChannel","args":["e","t"]},{"name":"error","args":[]}],"events":["WEBHOOKS_UPDATE","WEBHOOKS_FETCHING","WEBHOOK_CREATE","WEBHOOK_UPDATE","WEBHOOK_DELETE"]},"fromModule":{"id":"web.js"}}

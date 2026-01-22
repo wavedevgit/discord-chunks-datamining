@@ -1,0 +1,23 @@
+/** Chunk was on 23321 **/
+/** chunk id: 638242, original params: e,t,l (module,exports,require) **/
+require.d(exports, {
+  A: () => n
+});
+let n = (0, require("./945810.js").mj)({
+  name: "2025-09-lecinski-aa",
+  kind: "user",
+  defaultConfig: {
+    isEnabled: false
+  },
+  variations: {
+    1: {
+      isEnabled: true
+    },
+    2: {
+      isEnabled: false
+    },
+    3: {
+      isEnabled: false
+    }
+  }
+})

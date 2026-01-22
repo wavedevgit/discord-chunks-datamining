@@ -1,0 +1,1 @@
+{"id":"268988","type":"store","data":{"name":"SearchRecentMessageStore","functions":[{"name":"getRecentMessageAuthorIds","args":["e"]}],"events":["SEARCH_MESSAGES_SUCCESS","SEARCH_RECENT_MESSAGES_CLEAR","CONNECTION_OPEN"]},"fromModule":{"id":"web.js"}}

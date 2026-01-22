@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
-/** chunk id: 988965, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 50502, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => i
+  w: () => i
 });
-var Chunk818083 = require("./818083.js");
-(0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js");
+(0, Chunk600975.C)({
   kind: "user",
   id: "2022-09_mobile_account_switcher",
   label: "Mobile Account Switcher",
@@ -29,7 +29,7 @@ var Chunk818083 = require("./818083.js");
     }
   }]
 });
-let i = (0, Chunk818083.B)({
+let i = (0, Chunk600975.C)({
   kind: "user",
   id: "2022-11_mobile_account_switcher_notifications",
   label: "Mobile Account Switcher: Notifications",

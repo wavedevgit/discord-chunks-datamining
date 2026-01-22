@@ -1,0 +1,1 @@
+{"id":"359171","type":"experiment","data":{"kind":"user","id":"2024-03_clickstream_analytics","label":"Clickstream Analytics","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Clickstream Analytics","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

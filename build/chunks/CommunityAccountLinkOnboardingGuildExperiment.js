@@ -1,10 +1,10 @@
-/** Chunk was on 9536 **/
-/** chunk id: 641938, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 47841 **/
+/** chunk id: 949034, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => r
+  A: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2025-10_community_account_link_onboarding",
   label: "Community Account Linking",

@@ -1,32 +1,32 @@
 /** Chunk was on web.js **/
-/** chunk id: 565799, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 63995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => en
-}), require("./388685.js"), require("./539854.js");
-var r, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
-  Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk759174 = require("./759174.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk569545 = require("./569545.js"),
-  Chunk199902 = require("./199902.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk699516 = require("./699516.js"),
-  Chunk606304 = require("./606304.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk979651 = require("./979651.js"),
-  Chunk938475 = require("./938475.js"),
-  Chunk501655 = require("./501655.js"),
-  Chunk88751 = require("./88751.js"),
-  Chunk427679 = require("./427679.js");
+  A: () => en
+}), require("./896048.js"), require("./321073.js");
+var r, Chunk812729 = require("./812729.js"),
+  a = require.n(Chunk812729),
+  Chunk735438 = require("./735438.js"),
+  o = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk713402 = require("./713402.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk652896 = require("./652896.js"),
+  Chunk616356 = require("./616356.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk994500 = require("./994500.js"),
+  Chunk485296 = require("./485296.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk977997 = require("./977997.js"),
+  Chunk607567 = require("./607567.js"),
+  Chunk69407 = require("./69407.js"),
+  Chunk312006 = require("./312006.js"),
+  Chunk446600 = require("./446600.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,18 +34,18 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = "NO_GUILD",
-  A = new Chunk759174.h(e => [w(e)], e => e.id),
+let T = "NO_GUILD",
+  C = new Chunk713402.J(e => [w(e)], e => e.id),
   N = new Set,
-  P = {};
+  R = {};
 
 function w(e) {
   var t;
-  return null != (t = e.getGuildId()) ? t : C
+  return null != (t = e.getGuildId()) ? t : T
 }
 
-function R(e) {
-  return A.values(null != e ? e : true, true).map(e => {
+function P(e) {
+  return C.values(null != e ? e : true, true).map(e => {
     let {
       id: t
     } = e;
@@ -54,34 +54,34 @@ function R(e) {
 }
 
 function D(e) {
-  N.has(e) || (N.add(e), s()(_.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
-    j(e) && A.set(e.id, e)
+  N.has(e) || (N.add(e), o()(_.A.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
+    j(e) && C.set(e.id, e)
   }))
 }
 
 function x(e) {
-  let t = P[e];
+  let t = R[e];
   if (null != t) return t;
-  let n = _.Z.getChannel(e);
+  let n = _.A.getChannel(e);
   return null != n && n.isGuildStageVoice() && (D(n.guild_id), j(n)) ? L(e) : null
 }
 
 function L(e) {
-  let t = P[e];
-  return null == t && (t = new v.ZP(e), P[e] = t, t.rebuild()), t
+  let t = R[e];
+  return null == t && (t = new A.Ay(e), R[e] = t, t.rebuild()), t
 }
 
 function j(e) {
-  return null != e && e.isGuildStageVoice() && O.ZP.countVoiceStatesForChannel(e.id) > 0
+  return null != e && e.isGuildStageVoice() && O.Ay.countVoiceStatesForChannel(e.id) > 0
 }
 
 function M(e, t) {
-  let n = _.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? Z(n.id) : null == A.get(n.id) && A.set(n.id, n) : Z(e)
+  let n = _.A.getChannel(e);
+  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? V(n.id) : null == C.get(n.id) && C.set(n.id, n) : V(e)
 }
 
 function k(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : R();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : P();
   return t.reduce((t, n) => {
     let r = L(n);
     return e(r) ? (M(n, r), true) : t
@@ -89,30 +89,30 @@ function k(e) {
 }
 
 function U(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : R();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : P();
   return k(t => t.updateParticipant(e), t)
 }
 
 function G(e) {
-  for (let t of A.values(e)) A.delete(t.id), delete P[t.id];
+  for (let t of C.values(e)) C.delete(t.id), delete R[t.id];
   N.delete(e)
 }
 
-function Z(e) {
-  return null != e && (delete P[e], A.delete(e), true)
+function V(e) {
+  return null != e && (delete R[e], C.delete(e), true)
 }
 
 function F() {
-  N.clear(), A.clear(), P = {}
+  N.clear(), C.clear(), R = {}
 }
 
 function B(e, t, n) {
   if (null == n || e.has(n)) return;
-  let r = _.Z.getChannel(n);
-  (null == r ? true : r.isGuildStageVoice()) && (t.add(n), null == P[n] && e.add(n))
+  let r = _.A.getChannel(n);
+  (null == r ? true : r.isGuildStageVoice()) && (t.add(n), null == R[n] && e.add(n))
 }
 
-function V(e) {
+function H(e) {
   let {
     voiceStates: t
   } = e, n = new Set;
@@ -123,7 +123,7 @@ function V(e) {
   }, false)
 }
 
-function H(e) {
+function Y(e) {
   let {
     chunks: t
   } = e, n = false;
@@ -132,34 +132,34 @@ function H(e) {
   return n
 }
 
-function Y(e) {
+function W(e) {
   let t = false;
-  for (let n of R(e.guildId)) t = L(n).rebuild() || t;
+  for (let n of P(e.guildId)) t = L(n).rebuild() || t;
   return t
 }
 
-function W(e) {
+function K(e) {
   let {
     user: t
   } = e;
   return U(t.id)
 }
 
-function K(e) {
+function z(e) {
   let {
     relationship: t
   } = e;
   return U(t.id)
 }
 
-function z(e) {
+function q(e) {
   let {
     guild: t
   } = e;
   G(t.id)
 }
 
-function q(e) {
+function X(e) {
   let {
     channelId: t,
     guildId: n,
@@ -168,98 +168,98 @@ function q(e) {
   return null != n && !!N.has(n) && U(r, [t])
 }
 
-function Q(e) {
+function Z(e) {
   let {
     streamKey: t
   } = e, {
     channelId: n,
     guildId: r,
     ownerId: i
-  } = (0, d.my)(t);
+  } = (0, d.Iy)(t);
   return null != r && !!N.has(r) && U(i, [n])
 }
 
-function X(e) {
+function Q(e) {
   let {
     channel: {
       id: t
     }
   } = e;
-  return Z(t)
-}
-
-function J(e) {
-  let {
-    channels: t
-  } = e, n = t.reduce((e, t) => {
-    if (!t.isGuildStageVoice() || !N.has(t.guild_id)) return e;
-    let n = A.get(t.id);
-    return null == n || a()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), A.set(t.id, t)), e
-  }, []);
-  return k(e => e.rebuild(), n), n.length > 0
+  return V(t)
 }
 
 function $(e) {
   let {
+    channels: t
+  } = e, n = t.reduce((e, t) => {
+    if (!t.isGuildStageVoice() || !N.has(t.guild_id)) return e;
+    let n = C.get(t.id);
+    return null == n || a()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), C.set(t.id, t)), e
+  }, []);
+  return k(e => e.rebuild(), n), n.length > 0
+}
+
+function J(e) {
+  let {
     guildId: t
   } = e;
-  if (N.has(t)) return k(e => e.rebuild(), R(t))
+  if (N.has(t)) return k(e => e.rebuild(), P(t))
 }
 let ee = [];
-class et extends(r = Chunk442837.ZP.Store) {
+class et extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.default, b.default, _.Z, E.Z, y.Z, m.Z, O.ZP, h.Z, S.ZP, g.Z, I.Z, f.Z)
+    this.waitFor(p.default, b.default, _.A, E.A, y.A, m.A, O.Ay, h.A, v.Ay, g.A, S.A, f.A)
   }
   getParticipantsVersion(e) {
     var t, n;
-    return null == e ? false : null != (n = null == (t = x(e)) ? true : t.version) ? n : false
+    return null == e ? false : null != (t = null == (n = x(e)) ? true : n.version) ? t : false
   }
   getMutableParticipants(e, t) {
     var n, r;
-    return null == e ? ee : null != (r = null == (n = x(e)) ? true : n.toArray(t)) ? r : ee
+    return null == e ? ee : null != (n = null == (r = x(e)) ? true : r.toArray(t)) ? n : ee
   }
   getMutableRequestToSpeakParticipants(e) {
     var t, n;
-    return null != (n = null == (t = x(e)) ? true : t.getRequestToSpeakParticipants()) ? n : ee
+    return null != (t = null == (n = x(e)) ? true : n.getRequestToSpeakParticipants()) ? t : ee
   }
   getRequestToSpeakParticipantsVersion(e) {
     var t, n;
-    return null != (n = null == (t = x(e)) ? true : t.requestToSpeakVersion) ? n : false
+    return null != (t = null == (n = x(e)) ? true : n.requestToSpeakVersion) ? t : false
   }
   getParticipantCount(e, t) {
     var n, r;
-    return null != (r = null == (n = x(e)) ? true : n.size(t)) ? r : 0
+    return null != (n = null == (r = x(e)) ? true : r.size(t)) ? n : 0
   }
   getChannels(e) {
-    return D(null != e ? e : C), A.values(null != e ? e : C)
+    return D(null != e ? e : T), C.values(null != e ? e : T)
   }
   getChannelsVersion() {
-    return A.version
+    return C.version
   }
   getParticipant(e, t) {
     var n, r;
-    return null != (r = null == (n = x(e)) ? true : n.getParticipant(t)) ? r : null
+    return null != (n = null == (r = x(e)) ? true : r.getParticipant(t)) ? n : null
   }
 }
-T(et, "displayName", "StageChannelParticipantStore");
-let en = new et(Chunk570140.Z, {
+I(et, "displayName", "StageChannelParticipantStore");
+let en = new et(Chunk73153.h, {
   CONNECTION_OPEN: F,
   OVERLAY_INITIALIZE: F,
-  VOICE_STATE_UPDATES: V,
-  CHANNEL_DELETE: X,
-  GUILD_MEMBERS_CHUNK_BATCH: H,
-  USER_UPDATE: W,
-  GUILD_MEMBER_REMOVE: W,
-  GUILD_MEMBER_UPDATE: W,
-  CHANNEL_UPDATES: J,
-  GUILD_ROLE_UPDATE: $,
-  RTC_CONNECTION_VIDEO: q,
-  STREAM_CLOSE: Q,
-  STREAM_DELETE: Q,
-  RELATIONSHIP_ADD: K,
-  RELATIONSHIP_REMOVE: K,
-  RELATIONSHIP_UPDATE: K,
-  GUILD_CREATE: z,
-  GUILD_DELETE: z,
-  PASSIVE_UPDATE_V2: Y
+  VOICE_STATE_UPDATES: H,
+  CHANNEL_DELETE: Q,
+  GUILD_MEMBERS_CHUNK_BATCH: Y,
+  USER_UPDATE: K,
+  GUILD_MEMBER_REMOVE: K,
+  GUILD_MEMBER_UPDATE: K,
+  CHANNEL_UPDATES: $,
+  GUILD_ROLE_UPDATE: J,
+  RTC_CONNECTION_VIDEO: X,
+  STREAM_CLOSE: Z,
+  STREAM_DELETE: Z,
+  RELATIONSHIP_ADD: z,
+  RELATIONSHIP_REMOVE: z,
+  RELATIONSHIP_UPDATE: z,
+  GUILD_CREATE: q,
+  GUILD_DELETE: q,
+  PASSIVE_UPDATE_V2: W
 })

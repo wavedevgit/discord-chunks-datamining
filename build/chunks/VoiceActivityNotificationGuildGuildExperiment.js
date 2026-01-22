@@ -1,11 +1,11 @@
-/** Chunk was on 68294 **/
-/** chunk id: 729052, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 49107 **/
+/** chunk id: 718194, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  p2: () => r
+  YK: () => s
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk981631 = require("./981631.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk652215 = require("./652215.js");
+let l = (0, Chunk600975.C)({
     kind: "user",
     id: "2023-11_voice_activity_notification_user",
     label: "Voice Activity Notifications for User",
@@ -26,7 +26,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = (0, Chunk818083.B)({
+  a = (0, Chunk600975.C)({
     kind: "guild",
     id: "2023-11_voice_activity_notification_guild",
     label: "General Voice Channel Notifications for Guild",
@@ -42,23 +42,23 @@ let a = (0, Chunk818083.B)({
     }]
   });
 
-function r(t) {
+function s(t) {
   var e;
   let {
     voiceChannelActivityNotifsEnabled: n
-  } = s.useExperiment({
+  } = a.useExperiment({
     location: "useVoiceActivityNotificationSettingsExperiment",
-    guildId: null != (e = null == t ? true : t.getGuildId()) ? e : l.lds
+    guildId: null != (e = null == t ? true : t.getGuildId()) ? e : r.dJq
   }, {
-    disable: (null == t ? true : t.type) !== l.d4z.GUILD_VOICE,
+    disable: (null == t ? true : t.type) !== r.rbe.GUILD_VOICE,
     autoTrackExposure: false
   }), {
     enabled: i
-  } = a.useExperiment({
+  } = l.useExperiment({
     location: "useVoiceActivityNotificationSettingsExperiment"
   }, {
-    disable: (null == t ? true : t.type) !== l.d4z.GUILD_VOICE || !n,
+    disable: (null == t ? true : t.type) !== r.rbe.GUILD_VOICE || !n,
     autoTrackExposure: true
   });
-  return (null == t ? true : t.type) === l.d4z.GUILD_VOICE && n && i
+  return (null == t ? true : t.type) === r.rbe.GUILD_VOICE && n && i
 }

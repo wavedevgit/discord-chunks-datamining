@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 33039, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 803301, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk65154 = require("./65154.js");
+  A: () => T
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk731854 = require("./731854.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,18 +60,18 @@ function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
     r = _[e];
   if (null == r) return;
-  let i = r[null != t ? t : o.kod];
+  let i = r[null != t ? t : s.eGj];
   if (null != i) {
-    for (let t of Object.values(s.Yn))(n === t || null == n) && (delete i[t], delete h[m(null != n ? n : t, e)]);
-    _[e][null != t ? t : o.kod] = i
+    for (let t of Object.values(o.x))(n === t || null == n) && (delete i[t], delete h[m(null != n ? n : t, e)]);
+    _[e][null != t ? t : s.eGj] = i
   }
 }
 
 function E(e, t, n, r) {
   var i;
   e in _ || (_[e] = {});
-  let a = null != (i = _[e][null != t ? t : o.kod]) ? i : {};
-  _[e][null != t ? t : o.kod] = d(c({}, a), {
+  let a = null != (i = _[e][null != t ? t : s.eGj]) ? i : {};
+  _[e][null != t ? t : s.eGj] = d(c({}, a), {
     [r]: {
       streamId: n
     }
@@ -104,7 +104,7 @@ function O(e) {
   null != r ? E(t, n, r, i) : g(t, n, i)
 }
 
-function v(e) {
+function A(e) {
   let {
     voiceStates: t
   } = e;
@@ -114,20 +114,20 @@ function v(e) {
       userId: r,
       sessionId: i,
       channelId: a,
-      guildId: s
+      guildId: o
     } = t;
     if (null == a && r === f)
       if (i !== p) return e;
       else _ = {}, h = {};
     else {
-      if (null != a || (null == (n = _[r]) ? true : n[null != s ? s : o.kod]) == null) return e;
-      g(r, s)
+      if (null != a || (null == (n = _[r]) ? true : n[null != o ? o : s.eGj]) == null) return e;
+      g(r, o)
     }
     returntrue
   }, false)
 }
 
-function S(e) {
+function v(e) {
   let {
     videoStreamId: t,
     userId: n,
@@ -142,7 +142,7 @@ function S(e) {
   }
 }
 
-function I(e) {
+function S(e) {
   let {
     mediaContext: t,
     userId: n
@@ -150,16 +150,16 @@ function I(e) {
   if (null == h[r]) returnfalse;
   delete h[r]
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   getStreamId(e, t) {
     var n, r, i;
-    let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null == (i = _[e]) || null == (r = i[null != t ? t : o.kod]) || null == (n = r[a]) ? true : n.streamId
+    let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.x.DEFAULT;
+    return null == (i = _[e]) || null == (r = i[null != t ? t : s.eGj]) || null == (n = r[a]) ? true : n.streamId
   }
   getUserStreamData(e, t) {
     var n, r;
-    let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null == (r = _[e]) || null == (n = r[null != t ? t : o.kod]) ? true : n[i]
+    let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.x.DEFAULT;
+    return null == (r = _[e]) || null == (n = r[null != t ? t : s.eGj]) ? true : n[i]
   }
   getTimedoutVideos() {
     return h
@@ -168,12 +168,12 @@ class T extends(r = Chunk442837.ZP.Store) {
     return h[m(e, t)]
   }
 }
-l(T, "displayName", "VideoStreamStore");
-let C = new T(Chunk570140.Z, {
+l(I, "displayName", "VideoStreamStore");
+let T = new I(Chunk73153.h, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   RTC_CONNECTION_VIDEO: O,
-  VOICE_STATE_UPDATES: v,
-  VIDEO_STREAM_READY_TIMEOUT: S,
-  CLEAR_VIDEO_STREAM_READY_TIMEOUT: I
+  VOICE_STATE_UPDATES: A,
+  VIDEO_STREAM_READY_TIMEOUT: v,
+  CLEAR_VIDEO_STREAM_READY_TIMEOUT: S
 })

@@ -1,31 +1,31 @@
 /** Chunk was on web.js **/
-/** chunk id: 959457, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 162605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => J
-}), require("./388685.js");
-var i, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
-  Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk46973 = require("./46973.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk444852 = require("./444852.js"),
-  Chunk569545 = require("./569545.js"),
-  Chunk687516 = require("./687516.js"),
-  Chunk139656 = require("./139656.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk131951 = require("./131951.js"),
-  Chunk158776 = require("./158776.js"),
-  Chunk19780 = require("./19780.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk70722 = require("./70722.js");
+  A: () => $
+}), require("./896048.js");
+var i, Chunk284009 = require("./284009.js"),
+  s = require.n(Chunk284009),
+  Chunk735438 = require("./735438.js"),
+  l = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk205693 = require("./205693.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk13433 = require("./13433.js"),
+  Chunk652896 = require("./652896.js"),
+  Chunk834757 = require("./834757.js"),
+  Chunk254057 = require("./254057.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk430452 = require("./430452.js"),
+  Chunk290863 = require("./290863.js"),
+  Chunk383501 = require("./383501.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk502075 = require("./502075.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,24 +33,24 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = {},
+let I = {},
+  T = {},
   C = {},
-  A = {},
   N = {},
-  P = {},
+  R = {},
   w = {},
-  R = Chunk981631.hVg.THEATRE,
+  P = Chunk652215.SO9.THEATRE,
   D = {};
 
 function x(e, t, n, i) {
-  return o()(null != r, "Creating RTCConnection without session."), new p.Z({
+  return s()(null != r, "Creating RTCConnection without session."), new p.A({
     sessionId: r,
     streamKey: e,
     serverId: t,
     channelId: n,
-    initialLayout: R,
+    initialLayout: P,
     analyticsContext: i,
-    parentMediaSessionId: O.Z.getMediaSessionId()
+    parentMediaSessionId: O.A.getMediaSessionId()
   })
 }
 
@@ -74,40 +74,40 @@ function k(e) {
     streamType: r,
     guildId: i,
     channelId: a,
-    appContext: o,
-    pid: s,
+    appContext: s,
+    pid: o,
     sourceId: c,
     sourcePid: u,
     nativePickerStyleUsed: d,
     goLiveModalDurationMs: p,
     analyticsLocations: h
-  } = e, m = (0, _.V9)({
+  } = e, m = (0, _._z)({
     streamType: r,
     guildId: i,
     channelId: a,
     ownerId: E.default.getId()
   });
-  if (T[m] = {
-      appContext: o,
+  if (I[m] = {
+      appContext: s,
       analyticsLocations: h
     }, l().forEach(D, e => {
       let {
         analyticsContext: t,
         isOwner: n
       } = e;
-      t.setActionContext(o), t.setNativePickerStyleUsed(d), n && t.trackStart()
-    }), null == s && (s = u), N[m] = c, A[m] = s, null != s) {
-    let e = f.ZP.getGameForPID(s);
-    null != e && (C[m] = {
+      t.setActionContext(s), t.setNativePickerStyleUsed(d), n && t.trackStart()
+    }), null == o && (o = u), N[m] = c, C[m] = o, null != o) {
+    let e = f.Ay.getGameForPID(o);
+    null != e && (T[m] = {
       name: e.name,
       id: e.id,
       exe: e.exeName,
       distributor: e.distributor,
       sku: e.sku,
       gameMetadata: e.gameMetadata
-    }), null == (t = D[m]) || t.analyticsContext.updateStreamApplication(C[m])
+    }), null == (t = D[m]) || t.analyticsContext.updateStreamApplication(T[m])
   } else null == (n = D[m]) || n.analyticsContext.updateStreamApplication(null);
-  null != p ? P[m] = p : delete P[m]
+  null != p ? R[m] = p : delete R[m]
 }
 
 function U(e) {
@@ -115,7 +115,7 @@ function U(e) {
     appContext: t,
     streamKey: n
   } = e;
-  T[n] = {
+  I[n] = {
     appContext: t,
     analyticsLocations: true
   }, l().forEach(D, e => {
@@ -124,7 +124,7 @@ function U(e) {
       isOwner: r
     } = e;
     n.setActionContext(t), r && n.trackEnd()
-  }), N[n] = null, A[n] = null, delete P[n]
+  }), N[n] = null, C[n] = null, delete R[n]
 }
 
 function G(e) {
@@ -134,28 +134,28 @@ function G(e) {
     rtcChannelId: r,
     region: i,
     viewerIds: a
-  } = e, o = D[t], s = (0, _.my)(t);
-  if (null == o && null != n) {
+  } = e, s = D[t], o = (0, _.Iy)(t);
+  if (null == s && null != n) {
     var l, c;
-    null == A[t] && (C[t] = null), null == C[t] && null == N[t] && (C[t] = (0, h.L2)(s, y.Z));
-    let e = new p.A({
+    null == C[t] && (T[t] = null), null == T[t] && null == N[t] && (T[t] = (0, h.Ee)(o, y.A));
+    let e = new p.t({
       streamRegion: i,
-      streamApplication: C[t],
-      streamSourceType: Q(N[t]),
-      actionContext: null == (l = T[t]) ? true : l.appContext,
+      streamApplication: T[t],
+      streamSourceType: Z(N[t]),
+      actionContext: null == (l = I[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
-      goLiveModalDurationMs: P[t],
-      analyticsLocations: null == (c = T[t]) ? true : c.analyticsLocations
+      goLiveModalDurationMs: R[t],
+      analyticsLocations: null == (c = I[t]) ? true : c.analyticsLocations
     });
-    o = x(t, n, r, e), D[t] = o
+    s = x(t, n, r, e), D[t] = s
   }
-  delete w[t], d.Z.dispatch({
+  delete w[t], d.h.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
-    mediaEngineConnectionId: o.getMediaEngineConnectionId()
+    mediaEngineConnectionId: s.getMediaEngineConnectionId()
   })
 }
 
-function Z(e) {
+function V(e) {
   let t = D[e.streamKey];
   if (null == t) returnfalse;
   t.connect(e.endpoint, e.token)
@@ -180,53 +180,53 @@ function B(e) {
   null != n && i.analyticsContext.trackViewerCount(n.length), i.streamUpdate(r)
 }
 
-function V(e) {
+function H(e) {
   let {
     streamKey: t
   } = e, n = D[t];
   if (null == n) returnfalse;
-  d.Z.dispatch({
+  d.h.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: n.getMediaEngineConnectionId()
   }), n.destroy("stream-end"), delete D[t]
 }
 
-function H(e) {
+function Y(e) {
   let {
     layout: t
   } = e;
-  R = t, Object.values(D).forEach(e => e.layoutChange(t))
+  P = t, Object.values(D).forEach(e => e.layoutChange(t))
 }
 
-function Y() {
+function W() {
   returntrue
 }
 
-function W(e) {
+function K(e) {
   let {
     context: t,
     wants: n,
     userId: r,
     guildId: i,
     channelId: a
-  } = e, o = (0, _.V9)({
-    streamType: null == i ? S.lo.CALL : S.lo.GUILD,
+  } = e, s = (0, _._z)({
+    streamType: null == i ? v.U4.CALL : v.U4.GUILD,
     guildId: i,
     channelId: a,
     ownerId: r
   });
-  if (t !== u.Yn.STREAM || null == D[o] || !Object.entries(n).some(e => {
+  if (t !== u.x.STREAM || null == D[s] || !Object.entries(n).some(e => {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  w[o] = performance.now()
-}
-
-function K(e) {
-  return l().some(D, t => t === e.connection)
+  w[s] = performance.now()
 }
 
 function z(e) {
+  return l().some(D, t => t === e.connection)
+}
+
+function q(e) {
   let {
     userId: t,
     context: n,
@@ -237,7 +237,7 @@ function z(e) {
   })
 }
 
-function q(e) {
+function X(e) {
   let {
     streamId: t,
     dimensions: n,
@@ -248,7 +248,7 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function Z(e) {
   var t, n, r;
   if (null == e) return "unknown";
   if (g.isPlatformEmbedded || (null == (t = platform) ? true : t.name) === "Chrome") {
@@ -261,9 +261,9 @@ function Q(e) {
   else if ((null == (r = platform) ? true : r.name) === "Safari") return "window";
   return "unknown"
 }
-class X extends(i = Chunk442837.ZP.Store) {
+class Q extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(E.default, b.Z, O.Z, f.ZP)
+    this.waitFor(E.default, b.A, O.A, f.Ay)
   }
   getRTCConnections() {
     return D
@@ -276,7 +276,7 @@ class X extends(i = Chunk442837.ZP.Store) {
   }
   getQuality(e) {
     var t, n;
-    return (0, m.Z)(b.Z) && null != e && null != (n = null == (t = D[e]) ? true : t.quality) ? n : v.IE4.UNKNOWN
+    return (0, m.A)(b.A) && null != e && null != (t = null == (n = D[e]) ? true : n.quality) ? t : A.bFR.UNKNOWN
   }
   getMediaSessionId(e) {
     if (null == e) return null;
@@ -332,24 +332,24 @@ class X extends(i = Chunk442837.ZP.Store) {
     return null == r ? true : r.get(t)
   }
 }
-I(X, "displayName", "StreamRTCConnectionStore");
-let J = new X(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
+S(Q, "displayName", "StreamRTCConnectionStore");
+let $ = new Q(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: j,
   CONNECTION_CLOSED: M,
-  RTC_CONNECTION_STATE: Y,
-  RTC_CONNECTION_PING: Y,
-  RTC_CONNECTION_LOSS_RATE: Y,
-  RTC_CONNECTION_UPDATE_ID: K,
-  RTC_CONNECTION_SECURE_FRAMES_UPDATE: Y,
-  RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: W,
+  RTC_CONNECTION_STATE: W,
+  RTC_CONNECTION_PING: W,
+  RTC_CONNECTION_LOSS_RATE: W,
+  RTC_CONNECTION_UPDATE_ID: z,
+  RTC_CONNECTION_SECURE_FRAMES_UPDATE: W,
+  RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: K,
   STREAM_START: k,
   STREAM_STOP: U,
   STREAM_CREATE: G,
-  STREAM_SERVER_UPDATE: Z,
+  STREAM_SERVER_UPDATE: V,
   STREAM_UPDATE: B,
-  STREAM_DELETE: V,
+  STREAM_DELETE: H,
   MEDIA_ENGINE_CONNECTION_STATS: F,
-  STREAM_LAYOUT_UPDATE: H,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: z,
-  VIDEO_SIZE_UPDATE: q
+  STREAM_LAYOUT_UPDATE: Y,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: q,
+  VIDEO_SIZE_UPDATE: X
 })

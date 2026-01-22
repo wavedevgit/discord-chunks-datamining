@@ -1,1 +1,0 @@
-{"id":"615006","type":"store","data":{"name":"CollectiblesUserDiscountStore","functions":[{"name":"getUserDiscounts","args":[]}],"events":["COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS","COLLECTIBLES_CATEGORIES_FETCH_SUCCESS","SKU_PURCHASE_SUCCESS","COLLECTIBLES_USER_DISCOUNTS_EXPIRED","LOGOUT"]},"fromModule":{"id":"web.js"}}

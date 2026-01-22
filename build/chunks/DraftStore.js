@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 703558, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 31717, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j,
-  d: () => E
-}), require("./388685.js"), require("./781311.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk823379 = require("./823379.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk486472 = require("./486472.js");
+  A: () => j,
+  C: () => E
+}), require("./896048.js"), require("./733351.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk403362 = require("./403362.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk919638 = require("./919638.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,7 +53,7 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = require("./981631.js").en1 + 500;
+let g = require("./652215.js").CS1 + 500;
 var E = function(e) {
   return e[e.ChannelMessage = 0] = "ChannelMessage", e[e.ThreadSettings = 1] = "ThreadSettings", e[e.FirstThreadMessage = 2] = "FirstThreadMessage", e[e.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", e[e.Poll = 4] = "Poll", e[e.SlashCommand = 5] = "SlashCommand", e[e.ForwardContextMessage = 6] = "ForwardContextMessage", e[e.InteractionModal = 7] = "InteractionModal", e
 }({});
@@ -68,36 +68,36 @@ function O(e) {
   return null == t && (t = b[e] = {}), t
 }
 
-function v(e) {
+function A(e) {
   let {
     type: t,
     channelId: n,
     draft: r,
     draftType: i
-  } = e, a = d.Z.getChannel(n);
+  } = e, a = d.A.getChannel(n);
   r === (null == a ? true : a.template) && (r = "");
-  let o = u.default.getId();
-  if (null != o && null != r && "" !== r) {
-    var s;
-    let e = O(o),
+  let s = u.default.getId();
+  if (null != s && null != r && "" !== r) {
+    var o;
+    let e = O(s),
       t = e[n];
-    null == t && (t = e[n] = {}), (r = y(r)) !== (null == (s = t[i]) ? true : s.draft) && (t[i] = {
+    null == t && (t = e[n] = {}), (r = y(r)) !== (null == (o = t[i]) ? true : o.draft) && (t[i] = {
       timestamp: Date.now(),
       draft: r
     })
-  } else T(n, i);
+  } else I(n, i);
   return "DRAFT_SAVE" === t
 }
 
-function S(e) {
+function v(e) {
   let {
     channelId: t,
     draftType: n
   } = e;
-  return T(t, n)
+  return I(t, n)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     draft: n
@@ -112,7 +112,7 @@ function I(e) {
   })
 }
 
-function T(e, t) {
+function I(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : u.default.getId();
   if (null == n) returnfalse;
   let r = O(n),
@@ -121,23 +121,23 @@ function T(e, t) {
   delete i[t], a().isEmpty(i) && delete r[e]
 }
 
-function C() {
+function T() {
   let e = u.default.getId();
-  if (null == e || f.Z.totalUnavailableGuilds > 0) return;
+  if (null == e || f.A.totalUnavailableGuilds > 0) return;
   let t = O(e);
-  for (let e in t) null == d.Z.getChannel(e) && delete t[e]
+  for (let e in t) null == d.A.getChannel(e) && delete t[e]
 }
 
-function A() {
+function C() {
   let e = u.default.getId();
-  return e in b || (b[e] = {}), C(), false
+  return e in b || (b[e] = {}), T(), false
 }
 
 function N() {
-  return C(), false
+  return T(), false
 }
 
-function P(e) {
+function R(e) {
   let {
     channel: {
       id: t
@@ -159,7 +159,7 @@ function w(e) {
   let a = i[1];
   if (null == a || a.parentMessageId !== c.default.castChannelIdAsMessageId(t.id)) returnfalse;
   {
-    var o, s;
+    var s, o;
     let e = r[t.parent_id];
     if (null == e) returnfalse;
     let n = null != (s = null == (o = e[2]) ? true : o.draft) ? s : "";
@@ -168,11 +168,11 @@ function w(e) {
         timestamp: Date.now(),
         draft: n
       }
-    }), T(t.parent_id, 1), T(t.parent_id, 2)
+    }), I(t.parent_id, 1), I(t.parent_id, 2)
   }
 }
 
-function R(e) {
+function P(e) {
   e.isSwitchingAccount || (b = {})
 }
 
@@ -184,12 +184,12 @@ function x() {
   for (let [e, t] of c.default.entries(b))
     for (let [n, r] of c.default.entries(t)) {
       let t = r[0];
-      null != t && ("" === t.draft || "" === t.draft.trim()) && T(n, 0, e)
+      null != t && ("" === t.draft || "" === t.draft.trim()) && I(n, 0, e)
     }
 }
-class L extends(r = Chunk442837.ZP.PersistedStore) {
+class L extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : {}, x(), this.waitFor(u.default, d.Z, f.Z)
+    b = null != e ? e : {}, x(), this.waitFor(u.default, d.A, f.A)
   }
   getState() {
     return b
@@ -208,7 +208,7 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
     let t = u.default.getId();
     if (null == t) return [];
     let n = O(t);
-    return a()(n).mapValues(t => null == t ? true : t[e]).pickBy(l.lm).toPairs().map(e => {
+    return a()(n).mapValues(t => null == t ? true : t[e]).pickBy(l.Vq).toPairs().map(e => {
       let [t, {
         timestamp: n,
         draft: r
@@ -256,16 +256,16 @@ p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let j = new L(Chunk570140.Z, {
-  CONNECTION_OPEN: A,
-  LOGOUT: R,
+let j = new L(Chunk73153.h, {
+  CONNECTION_OPEN: C,
+  LOGOUT: P,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: N,
-  CHANNEL_DELETE: P,
-  THREAD_DELETE: P,
+  CHANNEL_DELETE: R,
+  THREAD_DELETE: R,
   THREAD_CREATE: w,
-  DRAFT_SAVE: v,
-  DRAFT_CHANGE: v,
-  DRAFT_CLEAR: S,
-  THREAD_SETTINGS_DRAFT_CHANGE: I
+  DRAFT_SAVE: A,
+  DRAFT_CHANGE: A,
+  DRAFT_CLEAR: v,
+  THREAD_SETTINGS_DRAFT_CHANGE: S
 })

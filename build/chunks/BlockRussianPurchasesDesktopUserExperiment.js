@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 211242, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 86379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => s,
-  Z: () => l
+  A: () => l,
+  H: () => o
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk847903 = require("./847903.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk477421 = require("./477421.js");
+let a = (0, Chunk600975.C)({
     kind: "user",
     id: "2022-03_block_russian_purchases",
     label: "Block purchases based on country",
@@ -22,7 +22,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  s = (0, Chunk600975.C)({
     kind: "user",
     id: "2022-03_block_russian_purchases_desktop",
     label: "Block purchases based on country (desktop specific flags)",
@@ -38,7 +38,7 @@ let a = (0, Chunk818083.B)({
     }]
   });
 
-function s() {
+function o() {
   let {
     paymentsBlocked: e
   } = a.useExperiment({
@@ -47,13 +47,13 @@ function s() {
     autoTrackExposure: false
   }), {
     checkPaymentSource: t
-  } = o.useExperiment({
+  } = s.useExperiment({
     location: "c519a9_2"
   }, {
     autoTrackExposure: false
   }), {
     defaultBillingCountryCode: n
-  } = (0, i.Z)();
+  } = (0, i.A)();
   return e || t && "RU" === n
 }
 let l = a

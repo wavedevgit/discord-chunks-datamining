@@ -1,0 +1,1 @@
+{"id":"275115","type":"store","data":{"name":"Overlay-v3-Native-Debug-Module-Store","functions":[{"name":"initialize","args":[]},{"name":"getClickZones","args":[]},{"name":"getFocusLostStoredClickZones","args":[]}],"events":["screenX","screenY","clientX","clientY","bubbles","view"]},"fromModule":{"id":"web.js"}}

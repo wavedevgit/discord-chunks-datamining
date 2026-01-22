@@ -1,1 +1,0 @@
-{"id":"91311","type":"store","data":{"name":"DevToolsDesignTogglesStore","functions":[{"name":"getUserAgnosticState","args":[]},{"name":"initialize","args":["e"]},{"name":"get","args":["e"]},{"name":"enabled","args":[]},{"name":"allWithDescriptions","args":[]}],"events":["DEV_TOOLS_DESIGN_TOGGLE_WEB_SET"]},"fromModule":{"id":"web.js"}}

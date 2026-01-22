@@ -1,1 +1,1 @@
-{"id":"24933","type":"store","data":{"name":"ActivityShelfStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]}],"events":["LOGOUT"]},"fromModule":{"id":"web.js"}}
+{"id":"24933","type":"component","data":{},"fromModule":{"id":"83898"}}

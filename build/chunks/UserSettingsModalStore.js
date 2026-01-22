@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 663389, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 628965, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  A: () => x
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,7 +30,7 @@ function c(e) {
   }
   return e
 }
-let u = Chunk981631.QZA.CLOSED,
+let u = Chunk652215.XlH.CLOSED,
   d = null,
   f = {},
   p = {},
@@ -43,15 +43,15 @@ let u = Chunk981631.QZA.CLOSED,
   y = null;
 
 function O(e) {
-  v(e)
+  A(e)
 }
 
-function v(e) {
+function A(e) {
   var t, n, r, i;
-  let a = o.default.getCurrentUser();
-  if (null == a) return S();
-  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.QZA.OPEN, _ = {}, m = c({}, h = {
-    [s.oAB.ACCOUNT]: {
+  let a = s.default.getCurrentUser();
+  if (null == a) return v();
+  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = o.XlH.OPEN, _ = {}, m = c({}, h = {
+    [o.nc_.ACCOUNT]: {
       userId: a.id,
       username: a.username,
       discriminator: a.discriminator,
@@ -64,46 +64,46 @@ function v(e) {
   }), E = null != (n = e.analyticsLocation) ? n : null, b = null != (r = e.analyticsLocations) ? r : [], y = null != (i = e.searchParams) ? i : null
 }
 
-function S() {
-  u = s.QZA.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, b = [], y = null
+function v() {
+  u = o.XlH.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, b = [], y = null
 }
 
-function I(e) {
+function S(e) {
   var t;
   d = e.section, E = null, b = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
 }
 
-function T(e) {
+function I(e) {
   let {
     forSection: t
   } = e;
   null != t ? delete f[t] : null != d && delete f[d]
 }
 
-function C(e) {
+function T(e) {
   let {
     forSection: t
   } = e;
   null != t ? delete p[t] : null != d && delete p[d]
 }
 
-function A(e) {
+function C(e) {
   let {
     settings: t
   } = e;
   null == m && (m = {});
-  let n = m[s.oAB.ACCOUNT];
-  m[s.oAB.ACCOUNT] = c({}, n, t)
+  let n = m[o.nc_.ACCOUNT];
+  m[o.nc_.ACCOUNT] = c({}, n, t)
 }
 
 function N() {
-  u = s.QZA.SUBMITTING
+  u = o.XlH.SUBMITTING
 }
 
-function P() {
-  let e = o.default.getCurrentUser();
+function R() {
+  let e = s.default.getCurrentUser();
   w(), null != e && (m = c({}, h = {
-    [s.oAB.ACCOUNT]: {
+    [o.nc_.ACCOUNT]: {
       userId: e.id,
       username: e.username,
       discriminator: e.discriminator,
@@ -117,17 +117,17 @@ function P() {
 }
 
 function w() {
-  u = s.QZA.OPEN, _ = {}
+  u = o.XlH.OPEN, _ = {}
 }
 
-function R(e) {
+function P(e) {
   var t;
-  if (u !== s.QZA.SUBMITTING) returnfalse;
-  u = s.QZA.OPEN, d = s.oAB.ACCOUNT, _ = null != (t = e.errors) ? t : {}
+  if (u !== o.XlH.SUBMITTING) returnfalse;
+  u = o.XlH.OPEN, d = o.nc_.ACCOUNT, _ = null != (t = e.errors) ? t : {}
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default)
+    this.waitFor(s.default)
   }
   getSection() {
     return d
@@ -148,7 +148,7 @@ class D extends(r = Chunk442837.ZP.Store) {
     return _
   }
   getSubmitting() {
-    return u === s.QZA.SUBMITTING
+    return u === o.XlH.SUBMITTING
   }
   getSettings() {
     return m
@@ -161,17 +161,17 @@ class D extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(D, "displayName", "UserSettingsModalStore");
-let x = new D(Chunk570140.Z, {
+let x = new D(Chunk73153.h, {
   USER_SETTINGS_MODAL_OPEN: O,
-  USER_SETTINGS_MODAL_INIT: v,
-  USER_SETTINGS_MODAL_CLOSE: S,
-  LOGOUT: S,
+  USER_SETTINGS_MODAL_INIT: A,
+  USER_SETTINGS_MODAL_CLOSE: v,
+  LOGOUT: v,
   USER_SETTINGS_MODAL_SUBMIT: N,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: R,
-  USER_SETTINGS_MODAL_SET_SECTION: I,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
-  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: C,
-  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: A,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: P,
+  USER_SETTINGS_MODAL_SET_SECTION: S,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: I,
+  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: T,
+  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: w,
-  USER_SETTINGS_MODAL_RESET: P
+  USER_SETTINGS_MODAL_RESET: R
 })

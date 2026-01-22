@@ -1,0 +1,217 @@
+/** Chunk was on web.js **/
+/** chunk id: 525313, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => j
+}), require("./747238.js"), require("./812715.js"), require("./866193.js"), require("./321073.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk205327 = require("./205327.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk52133 = require("./52133.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk172710 = require("./172710.js"),
+  Chunk655116 = require("./655116.js"),
+  Chunk763758 = require("./763758.jsx"),
+  Chunk286617 = require("./286617.js"),
+  Chunk533207 = require("./533207.jsx"),
+  Chunk961350 = require("./961350.js"),
+  Chunk121090 = require("./121090.jsx"),
+  Chunk562153 = require("./562153.js"),
+  Chunk939341 = require("./939341.js"),
+  Chunk583846 = require("./583846.js"),
+  Chunk405310 = require("./405310.js"),
+  Chunk434200 = require("./434200.js"),
+  Chunk176563 = require("./176563.js"),
+  Chunk363670 = require("./363670.jsx"),
+  Chunk910692 = require("./910692.jsx"),
+  Chunk693879 = require("./693879.jsx"),
+  Chunk18282 = require("./18282.jsx"),
+  Chunk809854 = require("./809854.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk272984 = require("./272984.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk388277 = require("./388277.js"),
+  Chunk187866 = require("./187866.js");
+
+function D(e, t) {
+  return R.intl.formatToPlainString(R.t.h2yWWX, {
+    username: t.username,
+    activity: e
+  })
+}
+let x = (e, t, n) => {
+  let {
+    artist: r,
+    media: i
+  } = e, a = R.t["6iNxrl"], s = m.Ay.getName(t.guild_id, t.id, n);
+  return R.intl.formatToMarkdownString(a, {
+    artist: r,
+    userName: s,
+    media: i
+  }).replaceAll("*", "")
+};
+
+function L(e) {
+  let {
+    activity: t
+  } = e, n = t.timestamps, {
+    now: a
+  } = (0, T.e)(), {
+    durationTimestamp: s,
+    seekBarStyles: o
+  } = i.useMemo(() => {
+    var e;
+    let {
+      start: n,
+      end: r
+    } = null != (e = t.timestamps) ? e : {};
+    if (null == n || null == r) return {};
+    let i = Math.min(r, a),
+      s = r - n,
+      o = Math.floor(Math.max(i - n, 0) / s * 100);
+    return {
+      seekBarStyles: {
+        width: "".concat(o, "%")
+      },
+      durationTimestamp: (0, E.W6)({
+        start: 0
+      }, s)
+    }
+  }, [t, a]);
+  return null == o ? null : (0, r.jsxs)("div", {
+    className: w.lu,
+    children: [(0, r.jsx)(S.z, {
+      entry: n
+    }), (0, r.jsx)("div", {
+      className: w.Lt,
+      children: (0, r.jsx)("div", {
+        className: w.Vp,
+        style: o
+      })
+    }), (0, r.jsx)(l.Text, {
+      className: w.vE,
+      variant: "text-xs/normal",
+      tabularNumbers: true,
+      color: true,
+      children: s
+    })]
+  })
+}
+
+function j(e) {
+  var t;
+  let n, m, S, {
+      channel: T,
+      entry: w,
+      closePopout: j,
+      onReaction: M,
+      onVoiceChannelPreview: k
+    } = e,
+    {
+      largeImage: U
+    } = (0, g.nO)({
+      entry: w
+    }),
+    {
+      activity: G,
+      currentEntry: V,
+      artist: F,
+      title: B,
+      user: H
+    } = (0, A.u7)(w),
+    {
+      primaryColor: Y,
+      secondaryColor: W
+    } = (0, O.A)(null == U ? true : U.src),
+    K = (0, y.A)(C.fg2.SPOTIFY),
+    z = (0, s.bG)([u.A, _.default], () => (null == G ? true : G.type) === C.$pd.LISTENING && null != H ? (0, f.A)(u.A, _.default, H, G) : true, [G, H], o.A),
+    q = i.useCallback(() => {
+      var e;
+      if (null == T || null == H) return;
+      let t = null == (e = G.timestamps) ? true : e.start,
+        n = (0, E.W6)(null != t ? {
+          start: t
+        } : w, Date.now());
+      return (0, b.Lu)({
+        user: H,
+        channel: T,
+        mediaImageSrc: null == U ? true : U.src,
+        artist: F,
+        description: x({
+          artist: F,
+          media: B
+        }, T, H),
+        colors: [Y, W],
+        badges: (0, b.N)({
+          timestamp: n
+        })
+      })
+    }, [G, F, T, w, null == U ? true : U.src, Y, W, B, H]);
+  if (null == G || null == V) return null;
+  let X = F,
+    Z = [];
+  if (V.media.provider === a.X.SPOTIFY) {
+    m = () => {
+      (0, c.Mp)(G)
+    }, S = () => {
+      (0, c.QX)(G, H.id)
+    }, n = () => {
+      var e;
+      null != (e = null == K ? true : K()) || (0, c.Mp)(G)
+    };
+    let e = e => {
+      (0, c.mN)(G, H.id, e)
+    };
+    if (X = (0, r.jsx)(d.A, {
+        artists: F,
+        canOpen: null != G.sync_id,
+        linkClassName: P.zA,
+        onOpenSpotifyArtist: e
+      }), (null == z ? true : z.syncDisabled) === false) {
+      let e = () => {
+        (0, p.A)(z, N.Qp.USER_ACTIVITY_SYNC), j()
+      };
+      Z.push((0, r.jsx)(l.Button, {
+        variant: "primary",
+        size: "md",
+        fullWidth: true,
+        text: R.intl.string(R.t.eU3inB),
+        icon: l.J2m,
+        onClick: e
+      }, "listen-along"))
+    }
+  }
+  let Q = (0, r.jsx)(v.BC, {
+    onClickThumbnail: S,
+    channel: T,
+    entry: w,
+    headerIcons: V.media.provider === a.X.SPOTIFY ? (0, r.jsx)(I.A, {
+      onClick: n,
+      "aria-label": R.intl.string(R.t.rRffNz),
+      Icon: h.A
+    }) : null,
+    userDescription: (0, E.JM)(w) ? R.t.Tzx5D2 : R.t.CcVI1T,
+    title: B,
+    onClickTitle: m,
+    subtitle: X,
+    badges: null,
+    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
+      activity: G
+    })
+  });
+  return (0, r.jsxs)(v.YN, {
+    children: [Q, (0, r.jsx)(v.Eh, {
+      children: (0, r.jsx)(v.fD, {
+        onReaction: M,
+        onVoiceChannelPreview: k,
+        user: H,
+        channel: T,
+        generateReactionImage: q,
+        reactionImageAltText: D(F, H),
+        entry: w,
+        buttons: Z
+      })
+    })]
+  })
+}

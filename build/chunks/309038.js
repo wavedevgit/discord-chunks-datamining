@@ -1,0 +1,34 @@
+/** Chunk was on 28979 **/
+/** chunk id: 309038, original params: t,e,i (module,exports,require) **/
+require.d(exports, {
+  L: () => T
+});
+var Chunk753806 = require("./753806.jsx"),
+  Chunk145331 = require("./145331.js"),
+  Chunk419954 = require("./419954.js"),
+  Chunk253932 = require("./253932.js"),
+  Chunk780964 = require("./780964.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk985018 = require("./985018.jsx");
+let T = (0, Chunk419954.Qx)(Chunk780964.X.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
+  useTitle: () => o.intl.string(o.t["NxjN+q"]),
+  useSearchTerms: () => [o.intl.string(o.t["t4+fbe"])],
+  useOptions: () => [{
+    name: o.intl.string(o.t["t+fGsk"]),
+    value: 0
+  }, {
+    name: o.intl.string(o.t.MwlEGN),
+    value: 1
+  }],
+  useValue: () => +!!r.Hu.useSetting(),
+  setValue: t => {
+    let e = 1 === t;
+    e ? n.A.cleanUpPrivateChannelSearchState() : n.A.cleanUpSearchState({
+      type: a.I4_.DMS
+    }), (0, l._k)({
+      prevIsCrossDMSettingEnabled: r.Hu.getSetting(),
+      isCrossDMSettingEnabled: e,
+      location: l.vy.USER_SETTINGS
+    }), r.Hu.updateSetting(e)
+  }
+})

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 682474, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 246943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk786761 = require("./786761.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk823379 = require("./823379.js"),
-  Chunk709054 = require("./709054.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk141468 = require("./141468.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk403362 = require("./403362.js"),
+  Chunk661191 = require("./661191.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,14 +51,14 @@ let h = {};
 
 function m(e) {
   var t;
-  let n = s.Z.getChannel(null == e ? true : e.channel_id);
+  let n = o.A.getChannel(null == e ? true : e.channel_id);
   if (null == n || !n.isForumPost()) returnfalse;
   let r = h[n.id];
   return u.default.compare(null == e ? true : e.id, null == r || null == (t = r.message) ? true : t.id) > false
 }
 
 function g(e, t) {
-  let n = null == t ? null : (0, o.e5)(t);
+  let n = null == t ? null : (0, s.rh)(t);
   return h[e] = {
     loaded: true,
     message: n
@@ -69,7 +69,7 @@ function E(e, t) {
   let n = y(e),
     r = O(e);
   return null != n && null != r && (h[e] = _(f({}, n), {
-    message: (0, o.wi)(r, t)
+    message: (0, s.IU)(r, t)
   }), true)
 }
 
@@ -87,43 +87,43 @@ function O(e) {
   return null == (t = y(e)) ? true : t.message
 }
 
-function v() {
+function A() {
   h = {}
 }
 
-function S(e) {
+function v(e) {
   let {
     threads: t
   } = e;
   for (let e in t) g(e, t[e].most_recent_message)
 }
 
-function I(e) {
+function S(e) {
   if (e.isPushNotification || !m(e.message)) returnfalse;
   e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? g(e.message.channel_id, null) : g(e.message.channel_id, e.message)
 }
 
-function T(e) {
+function I(e) {
   if (!m(e.message) || e.message.channel_id === e.message.id) returnfalse;
   E(e.message.channel_id, e.message)
 }
 
-function C(e) {
+function T(e) {
   return b(e.channelId, e.id)
 }
 
-function A(e) {
+function C(e) {
   let {
     threads: t,
     mostRecentMessages: n
   } = e;
-  t.forEach(e => g(e.id, null)), null == n || n.filter(c.lm).forEach(e => {
+  t.forEach(e => g(e.id, null)), null == n || n.filter(c.Vq).forEach(e => {
     g(e.channel_id, e)
   })
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.Z, l.default)
+    this.waitFor(o.A, l.default)
   }
   getMessageState(e) {
     return e in h || (h[e] = {
@@ -132,12 +132,12 @@ class N extends(r = Chunk442837.ZP.Store) {
     }), h[e]
   }
 }
-d(N, "displayName", "ForumPostRecentMessageStore"), new N(Chunk570140.Z, {
-  CONNECTION_OPEN: v,
-  MESSAGE_CREATE: I,
-  MESSAGE_UPDATE: T,
-  MESSAGE_DELETE: C,
-  LOAD_FORUM_POSTS: S,
-  LOAD_ARCHIVED_THREADS_SUCCESS: A,
-  LOAD_THREADS_SUCCESS: A
+d(N, "displayName", "ForumPostRecentMessageStore"), new N(Chunk73153.h, {
+  CONNECTION_OPEN: A,
+  MESSAGE_CREATE: S,
+  MESSAGE_UPDATE: I,
+  MESSAGE_DELETE: T,
+  LOAD_FORUM_POSTS: v,
+  LOAD_ARCHIVED_THREADS_SUCCESS: C,
+  LOAD_THREADS_SUCCESS: C
 })

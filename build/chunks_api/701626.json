@@ -1,0 +1,1 @@
+{"id":"701626","type":"store","data":{"name":"GuildBoostingNoticeStore","functions":[{"name":"initialize","args":[]},{"name":"channelNoticePredicate","args":["e","t"]}],"events":[]},"fromModule":{"id":"21738"}}

@@ -1,1 +1,0 @@
-{"id":"389458","type":"store","data":{"name":"WordFrequencyStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getMaxWordCount","args":[]},{"name":"getAllWordsSorted","args":[]},{"name":"isFrequentlyUsedWord","args":["e"]}],"events":["LOAD_MESSAGES_SUCCESS","MESSAGE_CREATE","DEV_TOOLS_WORD_FREQUENCY_RESET"]},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,0 @@
-{"id":"858340","type":"store","data":{"name":"HookErrorStore","functions":[{"name":"getHookError","args":["e"]}],"events":["MEDIA_ENGINE_SET_GO_LIVE_SOURCE","MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING","MEDIA_ENGINE_SOUNDSHARE_FAILED"]},"fromModule":{"id":"web.js"}}

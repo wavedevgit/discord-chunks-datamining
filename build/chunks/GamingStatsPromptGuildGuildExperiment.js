@@ -1,9 +1,9 @@
-/** Chunk was on 97368 **/
-/** chunk id: 52011, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97357 **/
+/** chunk id: 14197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => i
+  W: () => i
 });
-let i = (0, require("./818083.js").B)({
+let i = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2023-09_gaming_stats_prompt_guild",
   label: "Gaming stats prompt",

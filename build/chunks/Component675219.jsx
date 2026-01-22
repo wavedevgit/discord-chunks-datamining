@@ -1,0 +1,238 @@
+/** Chunk was on web.js **/
+/** chunk id: 675219, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  o: () => I
+}), require("./896048.js"), require("./321073.js"), require("./65821.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk835245 = require("./835245.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk166532 = require("./166532.js"),
+  Chunk546042 = require("./546042.jsx"),
+  Chunk721252 = require("./721252.jsx"),
+  Chunk310829 = require("./310829.js"),
+  Chunk285871 = require("./285871.js"),
+  Chunk945477 = require("./945477.js"),
+  Chunk302425 = require("./302425.js"),
+  Chunk982291 = require("./982291.jsx"),
+  Chunk684477 = require("./684477.jsx"),
+  Chunk331611 = require("./331611.jsx"),
+  Chunk69882 = require("./69882.jsx"),
+  Chunk652215 = require("./652215.js"),
+  Chunk985018 = require("./985018.jsx");
+
+function b(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      b(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function O(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let v = (e, t) => null != t && t.implemented && t.flowType === e,
+  S = {
+    [Chunk285871.C.ORB_CHECKOUT]: {
+      allowGiftCustomization: false,
+      disablePaymentAuthSteps: true,
+      predicateStepType: "unified"
+    },
+    [Chunk285871.C.COLLECTIBLES_CHECKOUT]: {
+      allowGiftCustomization: true,
+      predicateStepType: "one_time_payment"
+    },
+    [Chunk285871.C.SLAYER_STOREFRONT_CHECKOUT]: {
+      allowGiftCustomization: true,
+      predicateStepType: "one_time_payment"
+    },
+    [Chunk285871.C.PREMIUM_CHECKOUT]: {
+      allowGiftCustomization: false
+    }
+  };
+class I {
+  getUnifiedStepDefinition(e) {
+    return this.tenantCheckoutFlowConfig.UnifiedCheckoutStepDefinitions[e]
+  }
+  generateRenderHeader() {
+    let {
+      UnifiedCheckoutCustomHeader: e
+    } = this.tenantCheckoutFlowConfig;
+    if (null != e) return (t, n, i) => (0, r.jsx)(e, {
+      plan: t,
+      onClose: n,
+      step: i
+    })
+  }
+  getPredicateStepConfig() {
+    let {
+      predicateStepType: e
+    } = this.internalCheckoutFlowControls;
+    return "one_time_payment" === e ? l.kJ : "unified" === e ? {
+      key: null,
+      renderStep: e => (0, r.jsx)(h.e, {
+        paymentModalStepProps: e,
+        defaultStep: s.pn.REVIEW
+      })
+    } : {
+      key: null,
+      renderStep: e => (0, r.jsx)(o.I, y({}, e))
+    }
+  }
+  getAddPaymentStepConfig(e) {
+    let {
+      isGift: t
+    } = e, {
+      allowGiftCustomization: n
+    } = this.internalCheckoutFlowControls;
+    if (this.checkoutFlow !== u.C.ORB_CHECKOUT) return {
+      key: s.pn.ADD_PAYMENT_STEPS,
+      renderStep: e => (0, r.jsx)(p.c, {
+        paymentModalStepProps: e,
+        returnStep: s.pn.REVIEW,
+        returnStepIfNoPaymentSources: t && n ? s.pn.GIFT_CUSTOMIZATION : true
+      }),
+      options: {
+        renderHeader: true
+      }
+    }
+  }
+  getGiftCustomizationStepConfig(e) {
+    let {
+      isGift: t
+    } = e, {
+      allowGiftCustomization: n
+    } = this.internalCheckoutFlowControls;
+    return t && n ? {
+      key: s.pn.GIFT_CUSTOMIZATION,
+      renderStep: e => (0, r.jsx)(_.E, {
+        paymentModalStepProps: e,
+        unifiedStepDefinition: this.getUnifiedStepDefinition(s.pn.GIFT_CUSTOMIZATION)
+      }),
+      options: {
+        isLargeModal: true,
+        useBreadcrumbLabel: () => E.intl.string(E.t["W685+b"])
+      }
+    } : true
+  }
+  getReviewStepConfig() {
+    let e = this.getUnifiedStepDefinition(s.pn.REVIEW);
+    return (0, d.B)(e) ? l.r2 : {
+      key: s.pn.REVIEW,
+      renderStep: t => (0, r.jsx)(m.P, {
+        paymentModalStepProps: t,
+        unifiedStepDefinition: e
+      }),
+      options: {
+        useBreadcrumbLabel: () => E.intl.string(E.t.QBnNHq)
+      }
+    }
+  }
+  createDefinedStepConfigsArray(e) {
+    return e.filter(e => null != e)
+  }
+  generateCheckoutStepConfigs(e) {
+    let {
+      isGift: t
+    } = e, {
+      CUSTOM_CONFIRM_STEP_CONFIG: n
+    } = this.tenantCheckoutFlowConfig, {
+      disablePaymentAuthSteps: r
+    } = this.internalCheckoutFlowControls, i = this.getPredicateStepConfig(), a = this.getGiftCustomizationStepConfig({
+      isGift: t
+    }), o = this.getAddPaymentStepConfig({
+      isGift: t
+    }), c = this.getReviewStepConfig(), u = this.createDefinedStepConfigsArray([i, a, o, ...r ? [] : l.hh, c]);
+    return null != n && u.push({
+      key: s.pn.CONFIRM,
+      renderStep: n.renderStep,
+      options: n.options
+    }), u
+  }
+  getApplicationId(e) {
+    return this.checkoutFlow === u.C.ORB_CHECKOUT ? (0, c.p)(e) : this.checkoutFlow === u.C.COLLECTIBLES_CHECKOUT ? g.FYj : true
+  }
+  openCheckoutModal(e) {
+    let {
+      openModalOptions: t,
+      flowSpecificOptions: s,
+      giftContextProps: o,
+      onComplete: l,
+      onClose: c,
+      skuId: u,
+      loadId: d,
+      applicationId: f,
+      analyticsSourceLocation: p,
+      analyticsLocations: _
+    } = e, h = null != d ? d : (0, i.A)(), {
+      modalKey: m
+    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), b = false, O = null != s ? s : true;
+    return (0, a.mMO)(async () => {
+      let {
+        WrappedUnifiedPaymentModal: e
+      } = await n.e("87298").then(n.bind(n, 246681));
+      return t => (0, r.jsx)(e, {
+        checkoutFlow: this.checkoutFlow,
+        checkoutFlowConfiguration: this.checkoutFlowConfiguration,
+        tenantCheckoutFlowConfig: this.tenantCheckoutFlowConfig,
+        stepConfigs: this.generateCheckoutStepConfigs({
+          isGift: !!(null != o && o.isGift)
+        }),
+        onComplete: e => {
+          null != l && l(e), b = true
+        },
+        onClose: c,
+        renderHeader: g,
+        skuId: u,
+        loadId: h,
+        applicationId: E,
+        analyticsLocations: _,
+        analyticsSourceLocation: p,
+        renderModalProps: t,
+        giftContextProps: o,
+        flowSpecificOptions: O
+      })
+    }, A(y({}, t), {
+      onCloseRequest() {
+        null != t.onCloseRequest && t.onCloseRequest(b, h), (0, a.OoC)(m)
+      },
+      modalKey: m
+    }))
+  }
+  constructor({
+    checkoutFlow: e
+  }) {
+    b(this, "checkoutFlow", true), b(this, "checkoutFlowConfiguration", true), b(this, "tenantCheckoutFlowConfig", true), b(this, "internalCheckoutFlowControls", true), this.checkoutFlow = e;
+    const t = f.Y[e];
+    if (!v(e, t)) throw Error("Checkout flow ".concat(e, " is not implemented"));
+    this.checkoutFlowConfiguration = t, this.tenantCheckoutFlowConfig = t.TENANT_CHECKOUT_FLOW_CONFIG, this.internalCheckoutFlowControls = S[e]
+  }
+}

@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 571474, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 362790, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  A: () => m
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk699516 = require("./699516.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk994500 = require("./994500.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,21 +20,21 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = 10,
-  f = 180 * Chunk70956.Z.Millis.DAY,
+  f = 180 * Chunk927813.A.Millis.DAY,
   p = false;
 
 function _() {
-  return p !== (p = c.Z.getFriendIDs().length >= d && s.default.extractTimestamp(l.default.getId()) < Date.now() - f)
+  return p !== (p = c.A.getFriendIDs().length >= d && o.default.extractTimestamp(l.default.getId()) < Date.now() - f)
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.Z, l.default)
+    this.waitFor(c.A, l.default)
   }
   isEligible() {
     return p
   }
 }
 u(h, "displayName", "PremiumPromoStore");
-let m = new h(Chunk570140.Z, {
+let m = new h(Chunk73153.h, {
   CONNECTION_OPEN: _
 })

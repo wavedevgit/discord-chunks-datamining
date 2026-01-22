@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 577153, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 541185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => r
+  A: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-05_priority_vad",
   label: "Priority PTT keybind in VAD mode",

@@ -1,9 +1,9 @@
-/** Chunk was on 1272 **/
-/** chunk id: 986332, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 83241, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  o: () => i
+  P: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2022-12_channel_notice_redesign",
   label: "Channel Notice Redesign",

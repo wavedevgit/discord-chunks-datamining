@@ -1,0 +1,1 @@
+{"id":"494713","type":"experiment","data":{"kind":"user","id":"2024-09_friends_in_server","label":"Friends in Server","defaultConfig":{"guildFriendsEnabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"guildFriendsEnabled":true}}]},"fromModule":{"id":"97357"}}

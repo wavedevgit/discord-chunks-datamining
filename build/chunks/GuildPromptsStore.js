@@ -1,10 +1,10 @@
-/** Chunk was on 82124 **/
-/** chunk id: 420438, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 609511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => c
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -14,35 +14,35 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {};
-class s extends(r = Chunk442837.ZP.PersistedStore) {
+let s = {};
+class o extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     for (let t in e) {
       let n = e[t];
-      o[t] = new Set(n)
+      s[t] = new Set(n)
     }
   }
   hasViewedPrompt(e, t) {
-    let n = o[t];
+    let n = s[t];
     return null != n && !!n.has(e)
   }
   getState() {
-    return o
+    return s
   }
 }
-a(s, "displayName", "GuildPromptsStore"), a(s, "persistKey", "GuildPromptsStore");
-let c = new s(Chunk570140.Z, {
+a(o, "displayName", "GuildPromptsStore"), a(o, "persistKey", "GuildPromptsStore");
+let c = new o(Chunk73153.h, {
   GUILD_PROMPT_VIEWED: function(e) {
     let {
       prompt: t,
       guildId: n
-    } = e, r = o[n];
-    return null == r ? (o[n] = new Set, o[n].add(t), true) : !r.has(t) && (r.add(t), true)
+    } = e, r = s[n];
+    return null == r ? (s[n] = new Set, s[n].add(t), true) : !r.has(t) && (r.add(t), true)
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    return null != o[t.id] && !t.unavailable && (delete o[t.id], true)
+    return null != s[t.id] && !t.unavailable && (delete s[t.id], true)
   }
 })

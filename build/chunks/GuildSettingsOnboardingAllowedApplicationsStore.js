@@ -1,50 +1,50 @@
-/** Chunk was on 11798 **/
-/** chunk id: 987350, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 90194 **/
+/** chunk id: 549479, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  A: () => u
 });
-var l, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var n, i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 let a = null,
-  c = null,
-  s = false;
-class d extends(i = Chunk442837.ZP.Store) {
+  s = null,
+  c = false;
+class d extends(i = Chunk311907.Ay.Store) {
   getAllowedApplicationIds(e) {
-    return a === e ? c : null
+    return a === e ? s : null
   }
   isFetching(e) {
-    return a === e && s
+    return a === e && c
   }
   hasCachedData(e) {
-    return a === e && null !== c
+    return a === e && null !== s
   }
-}(l = "displayName") in d ? Object.defineProperty(d, l, {
+}(n = "displayName") in d ? Object.defineProperty(d, n, {
   value: "GuildSettingsOnboardingAllowedApplicationsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[l] = "GuildSettingsOnboardingAllowedApplicationsStore";
-let u = new d(Chunk570140.Z, {
+}) : d[n] = "GuildSettingsOnboardingAllowedApplicationsStore";
+let u = new d(Chunk73153.h, {
   GUILD_SETTINGS_ONBOARDING_ALLOWED_APPLICATIONS_FETCH_START: function(e) {
     let {
       guildId: t
     } = e;
-    a = t, s = true, c = []
+    a = t, c = true, s = []
   },
   GUILD_SETTINGS_ONBOARDING_ALLOWED_APPLICATIONS_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,
-      applicationIds: n
+      applicationIds: l
     } = e;
-    a === t && (c = n, s = false)
+    a === t && (s = l, c = false)
   },
   GUILD_SETTINGS_ONBOARDING_ALLOWED_APPLICATIONS_FETCH_FAILURE: function(e) {
     let {
       guildId: t
     } = e;
-    a === t && (c = [], s = false)
+    a === t && (s = [], c = false)
   },
   GUILD_SETTINGS_CLOSE: function() {
-    a = null, c = null, s = false
+    a = null, s = null, c = false
   }
 })

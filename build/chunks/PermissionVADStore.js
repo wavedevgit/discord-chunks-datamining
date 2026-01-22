@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 269647, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 237496, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  A: () => S
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk383451 = require("./383451.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk131951 = require("./131951.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk19780 = require("./19780.js"),
-  Chunk979651 = require("./979651.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk555444 = require("./555444.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk430452 = require("./430452.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk383501 = require("./383501.js"),
+  Chunk977997 = require("./977997.js"),
+  Chunk652215 = require("./652215.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -32,23 +32,23 @@ function E(e) {
 }
 
 function b() {
-  let e, t = d.Z.getChannelId(),
+  let e, t = d.A.getChannelId(),
     n = false;
   if (null == t) e = true;
   else {
-    let r = l.Z.getChannel(t),
-      i = f.Z.getVoiceState(null == r ? true : r.getGuildId(), s.default.getId());
-    n = c.Z.getMode() === p.pM4.VOICE_ACTIVITY;
-    let a = (0, o.f)({
+    let r = l.A.getChannel(t),
+      i = f.A.getVoiceState(null == r ? true : r.getGuildId(), o.default.getId());
+    n = c.A.getMode() === p.TBI.VOICE_ACTIVITY;
+    let a = (0, s.H)({
       location: "doPTT",
       autoTrackExposure: false
-    }).enableLatching && c.Z.getModeOptions().pttLatchingEnabled;
-    e = !(n || a) || null == r || r.isPrivate() || r.isGuildStageVoice() || u.Z.can(p.Plq.USE_VAD, r) || E(i)
+    }).enableLatching && c.A.getModeOptions().pttLatchingEnabled;
+    e = !(n || a) || null == r || r.isPrivate() || r.isGuildStageVoice() || u.A.can(p.xBc.USE_VAD, r) || E(i)
   }
   let r = e || !n,
     i = e || n;
   if (h === e && m === i) returnfalse;
-  g = r, h = r, m = i, a.Z.dispatch({
+  g = r, h = r, m = i, a.h.dispatch({
     type: "SET_VAD_PERMISSION",
     hasPermission: h,
     hasLatchPermission: m
@@ -63,7 +63,7 @@ function y(e) {
     let {
       userId: t
     } = e;
-    return t === s.default.getId() && b()
+    return t === o.default.getId() && b()
   })
 }
 
@@ -71,12 +71,12 @@ function O() {
   g = true
 }
 
-function v() {
+function A() {
   g = h
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.default, l.Z, c.Z, u.Z, d.Z, f.Z)
+    this.waitFor(o.default, l.A, c.A, u.A, d.A, f.A)
   }
   shouldShowWarning() {
     return !g
@@ -88,8 +88,8 @@ class S extends(r = Chunk442837.ZP.Store) {
     return m
   }
 }
-_(S, "displayName", "PermissionVADStore");
-let I = new S(Chunk570140.Z, {
+_(v, "displayName", "PermissionVADStore");
+let S = new v(Chunk73153.h, {
   RTC_CONNECTION_STATE: b,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: b,
   AUDIO_SET_MODE: b,
@@ -100,6 +100,6 @@ let I = new S(Chunk570140.Z, {
   IMPERSONATE_UPDATE: b,
   IMPERSONATE_STOP: b,
   VOICE_STATE_UPDATES: y,
-  AUDIO_TOGGLE_SELF_MUTE: v,
+  AUDIO_TOGGLE_SELF_MUTE: A,
   PERMISSION_CLEAR_VAD_WARNING: O
 })

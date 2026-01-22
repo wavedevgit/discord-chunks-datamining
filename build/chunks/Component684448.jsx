@@ -1,0 +1,76 @@
+/** Chunk was on web.js **/
+/** chunk id: 684448, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => h
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk503698 = require("./503698.js"),
+  a = require.n(Chunk503698),
+  Chunk3026 = require("./3026.jsx"),
+  Chunk397927 = require("./397927.js"),
+  Chunk140547 = require("./140547.js"),
+  Chunk886019 = require("./886019.js"),
+  Chunk559405 = require("./559405.jsx"),
+  Chunk890330 = require("./890330.js"),
+  Chunk51183 = require("./51183.jsx");
+require("./851883.js");
+var Chunk123511 = require("./123511.js");
+let _ = 14;
+
+function h(e) {
+  let {
+    customStatusActivity: t,
+    textClassName: n,
+    iconClassName: i,
+    tooltipClassName: h,
+    voiceChannel: m,
+    hangStatus: g,
+    userId: E,
+    textSize: b = "xs",
+    animateEmoji: y = true,
+    hideEmoji: O = false,
+    hideTooltip: A = false
+  } = e, v = (0, d.v)("ActivityStatus", m), {
+    defaultStatusVariant: S
+  } = (0, l.$j)({
+    guildId: null == m ? true : m.guild_id,
+    location: "CustomStatusActivityStatus"
+  });
+  if (null == t && null == g) return null;
+  let I = null != g && v,
+    T = I && null != E ? (0, c.Au)(E, g, S) : null,
+    C = null == t ? true : t.emoji,
+    N = null != T ? T : null == t ? true : t.state,
+    R = null != N && "" !== N,
+    w = null;
+  I && null != E ? w = (0, r.jsx)(u.A, {
+    userId: E,
+    size: _,
+    className: a()(i, p.W9),
+    hangStatusActivity: g
+  }) : null == C || O || (w = (0, r.jsx)(f.A, {
+    emoji: C,
+    animate: y,
+    className: i,
+    hideTooltip: A || R
+  }));
+  let P = R && (null != w ? " ".concat(N) : N),
+    D = () => {
+      let e = null != C && !O && !R;
+      return A || e ? (0, r.jsxs)(r.Fragment, {
+        children: [w, P]
+      }) : (0, r.jsxs)(s.A, {
+        delay: 150,
+        tooltipClassName: h,
+        children: [w, P]
+      })
+    };
+  return (0, r.jsx)(o.Text, {
+    variant: "text-".concat(b, "/medium"),
+    color: "none",
+    className: a()(p.ps, n),
+    children: D()
+  })
+}

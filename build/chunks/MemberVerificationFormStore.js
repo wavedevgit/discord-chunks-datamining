@@ -1,93 +1,93 @@
-/** Chunk was on 44686 **/
-/** chunk id: 944163, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 39579 **/
+/** chunk id: 60175, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
-  t: () => d
-}), require("./953529.js");
-var n, Chunk392711 = require("./392711.js"),
-  r = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk246364 = require("./246364.js");
+  A: () => p,
+  U: () => d
+}), require("./228524.js");
+var r, Chunk735438 = require("./735438.js"),
+  l = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk513461 = require("./513461.js");
 
-function o(e, i, t) {
-  return i in e ? Object.defineProperty(e, i, {
-    value: t,
+function o(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[i] = t, e
+  }) : e[t] = n, e
 }
 let d = {
     version: "",
     description: "",
     formFields: []
   },
-  c = {};
-class E extends(n = Chunk442837.ZP.Store) {
+  u = {};
+class f extends(r = Chunk311907.Ay.Store) {
   get(e) {
-    if (null != e) return c[e]
+    if (null != e) return u[e]
   }
   getRulesPrompt(e) {
-    var i;
-    return r().find(null == (i = c[e]) ? true : i.formFields, a.J)
+    var t;
+    return l().find(null == (t = u[e]) ? true : t.formFields, a.i7)
   }
 }
-o(E, "displayName", "MemberVerificationFormStore");
-let f = new E(Chunk570140.Z, {
+o(f, "displayName", "MemberVerificationFormStore");
+let p = new f(Chunk73153.h, {
   INVITE_ACCEPT_SUCCESS: function(e) {
     let {
-      invite: i
+      invite: t
     } = e, {
-      member_verification_form: t
-    } = i, {
-      guild: n
-    } = i;
-    if (null != n && null != t) {
-      var l;
-      return c[n.id] = {
-        version: t.version,
-        description: null != (l = t.description) ? l : "",
-        formFields: t.form_fields,
-        guild: n
+      member_verification_form: n
+    } = t, {
+      guild: r
+    } = t;
+    if (null != r && null != n) {
+      var i;
+      return u[r.id] = {
+        version: n.version,
+        description: null != (i = n.description) ? i : "",
+        formFields: n.form_fields,
+        guild: r
       }, true
     }
     returnfalse
   },
   MEMBER_VERIFICATION_FORM_UPDATE: function(e) {
     let {
-      form: i,
-      guildId: t
+      form: t,
+      guildId: n
     } = e;
-    if (null == i) c[t] = d;
+    if (null == t) u[n] = d;
     else {
-      var n;
-      let e = null != (n = c[t]) ? n : d;
-      c[t] = function(e) {
-        for (var i = 1; i < arguments.length; i++) {
-          var t = null != arguments[i] ? arguments[i] : {},
-            n = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), n.forEach(function(i) {
-            o(e, i, t[i])
+      var r;
+      let e = null != (r = u[n]) ? r : d;
+      u[n] = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            o(e, t, n[t])
           })
         }
         return e
-      }({}, e, i)
+      }({}, e, t)
     }
   },
   MEMBER_VERIFICATION_FORM_FETCH_FAIL: function(e) {
-    var i;
+    var t;
     let {
-      guildId: t
+      guildId: n
     } = e;
-    c[t] = null != (i = c[t]) ? i : d
+    u[n] = null != (t = u[n]) ? t : d
   },
   GUILD_DELETE: function(e) {
     let {
-      guild: i
+      guild: t
     } = e;
-    delete c[null == i ? true : i.id]
+    delete u[null == t ? true : t.id]
   }
 })

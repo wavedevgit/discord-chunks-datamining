@@ -1,0 +1,29 @@
+/** Chunk was on web.js **/
+/** chunk id: 883768, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => l,
+  t: () => o
+});
+var Chunk46802 = require("./46802.js");
+let i = ["input:not([disabled]):not([type=hidden])", "select:not([disabled])", "textarea:not([disabled])", "button:not([disabled])", "a[href]", "area[href]", "summary", "iframe", "object", "embed", "audio[controls]", "video[controls]", '[contenteditable]:not([contenteditable^="false"])', "permission"],
+  a = i.join(":not([hidden]),") + ",[tabindex]:not([disabled]):not([hidden])";
+i.push('[tabindex]:not([tabindex="-1"]):not([disabled])');
+let s = i.join(':not([hidden]):not([tabindex="-1"]),');
+
+function o(e) {
+  return e.matches(a) && (0, r.J)(e) && !c(e)
+}
+
+function l(e) {
+  return e.matches(s) && (0, r.J)(e) && !c(e)
+}
+
+function c(e) {
+  let t = e;
+  for (; null != t;) {
+    if (t instanceof t.ownerDocument.defaultView.HTMLElement && t.inert) returntrue;
+    t = t.parentElement
+  }
+  returnfalse
+}

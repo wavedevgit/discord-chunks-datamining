@@ -1,0 +1,20 @@
+/** Chunk was on web.js **/
+/** chunk id: 439174, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Xr: () => l,
+  cZ: () => o,
+  e0: () => s
+});
+var Chunk989349 = require("./989349.js"),
+  i = require.n(Chunk989349),
+  Chunk788868 = require("./788868.js");
+let s = e => a.VD[e],
+  o = e => null == s(e) ? null : e,
+  l = (e, t) => {
+    if (null == t) return null;
+    let n = s(e);
+    if (null == n) return null;
+    let r = i()(t);
+    return r.add(n.tenureReqNumMonths, "months"), r.add(1, "days"), r.toDate()
+  }

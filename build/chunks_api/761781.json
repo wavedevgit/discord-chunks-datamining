@@ -1,1 +1,0 @@
-{"id":"761781","type":"store","data":{"name":"RecentUserActivityStore","functions":[{"name":"currentUserApplicationIds","args":[]}],"events":["CONNECTION_OPEN_SUPPLEMENTAL","CONNECTION_OPEN_STATE_UPDATE"]},"fromModule":{"id":"1272"}}

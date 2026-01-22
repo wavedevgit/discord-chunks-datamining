@@ -1,1 +1,0 @@
-{"id":"20303","type":"store","data":{"name":"MaskedLinkStore","functions":[{"name":"initialize","args":[]},{"name":"isTrustedDomain","args":["e"]},{"name":"isTrustedProtocol","args":["e"]}],"events":["MASKED_LINK_ADD_TRUSTED_DOMAIN","MASKED_LINK_ADD_TRUSTED_PROTOCOL"]},"fromModule":{"id":"web.js"}}

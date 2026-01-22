@@ -1,1 +1,0 @@
-{"id":"757266","type":"store","data":{"name":"ConnectedAppsStore","functions":[{"name":"isConnected","args":["e"]},{"name":"connections","args":[]},{"name":"getApplication","args":["e"]},{"name":"getAllConnections","args":[]}],"events":["OVERLAY_INITIALIZE","RPC_APP_CONNECTED","RPC_APP_AUTHENTICATED","RPC_APP_DISCONNECTED"]},"fromModule":{"id":"web.js"}}

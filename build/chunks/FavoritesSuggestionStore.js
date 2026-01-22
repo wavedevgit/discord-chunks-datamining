@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 18036, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 240935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk9156 = require("./9156.js");
+  A: () => g
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk543465 = require("./543465.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,16 +24,16 @@ let u = 50,
   p = {};
 
 function _() {
-  let e = s.Z.getChannelId();
+  let e = o.A.getChannelId();
   if (null == e) return;
-  let t = o.Z.getChannel(e);
+  let t = s.A.getChannel(e);
   if (null == t || null == t.guild_id) return;
   let n = t.guild_id;
-  if (null == p[e] && (p[e] = 0), t.isThread() || l.ZP.isOptInEnabled(n) && !l.ZP.isChannelOrParentOptedIn(n, t.id)) {
+  if (null == p[e] && (p[e] = 0), t.isThread() || l.Ay.isOptInEnabled(n) && !l.Ay.isChannelOrParentOptedIn(n, t.id)) {
     delete p[e], null != d[n] && d[n].delete(e);
     return
   }
-  return (p[e]++, null == d[n] && (d[n] = new Set), l.ZP.isFavorite(n, e)) ? void d[n].delete(e) : (null == f[n] || !f[n].has(e)) && p[e] > u ? (d[n].add(e), true) : true
+  return (p[e]++, null == d[n] && (d[n] = new Set), l.Ay.isFavorite(n, e)) ? void d[n].delete(e) : (null == f[n] || !f[n].has(e)) && p[e] > u ? (d[n].add(e), true) : true
 }
 
 function h(e) {
@@ -43,10 +43,10 @@ function h(e) {
   } = e;
   return null == f[t] && (f[t] = new Set), f[t].add(n), d[t].delete(n), true
 }
-class m extends(r = Chunk442837.ZP.PersistedStore) {
+class m extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.waitFor(o.Z, s.Z, l.ZP), this.syncWith([s.Z], _), null == e) return;
+    if (this.waitFor(s.A, o.A, l.Ay), this.syncWith([o.A], _), null == e) return;
     let {
       suggestedChannels: r,
       dismissedSuggestions: i,
@@ -70,6 +70,6 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 c(m, "displayName", "FavoritesSuggestionStore"), c(m, "persistKey", "FavoritesSuggestionStore");
-let g = new m(Chunk570140.Z, {
+let g = new m(Chunk73153.h, {
   DISMISS_FAVORITE_SUGGESTION: h
 })

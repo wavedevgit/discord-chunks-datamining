@@ -1,0 +1,1 @@
+{"id":"186111","type":"store","data":{"name":"LayerStore","functions":[{"name":"hasLayers","args":[]},{"name":"getLayers","args":[]}],"events":["LAYER_PUSH","LAYER_POP","LAYER_POP_ALL","LOGOUT","NOTIFICATION_CLICK"]},"fromModule":{"id":"web.js"}}

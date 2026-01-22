@@ -1,1 +1,0 @@
-{"id":"799777","type":"store","data":{"name":"GameLibraryViewStore","functions":[{"name":"initialize","args":[]},{"name":"sortDirection","args":[]},{"name":"sortKey","args":[]},{"name":"activeRowKey","args":[]},{"name":"isNavigatingByKeyboard","args":[]}],"events":["LIBRARY_TABLE_SORT_UPDATE","LIBRARY_TABLE_ACTIVE_ROW_ID_UPDATE"]},"fromModule":{"id":"web.js"}}

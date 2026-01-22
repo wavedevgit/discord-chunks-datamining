@@ -1,1 +1,0 @@
-{"id":"54613","type":"store","data":{"name":"LocationMetadataStore","functions":[{"name":"getCountryCode","args":[]}],"events":["CONNECTION_OPEN","SET_LOCATION_METADATA"]},"fromModule":{"id":"web.js"}}

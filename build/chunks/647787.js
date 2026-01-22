@@ -1,0 +1,71 @@
+/** Chunk was on web.js **/
+/** chunk id: 647787, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  L: () => _,
+  c: () => p
+});
+var Chunk25611 = require("./25611.js"),
+  Chunk353563 = require("./353563.js"),
+  Chunk325691 = require("./325691.js"),
+  s = 0,
+  o = function() {
+    return !!s
+  },
+  l = 250,
+  c = {
+    attributes: true,
+    characterData: true,
+    childList: true,
+    subtree: true
+  },
+  u = ["resize", "load", "transitionend", "animationend", "animationstart", "animationiteration", "keyup", "keydown", "mouseup", "mousedown", "mouseover", "mouseout", "blur", "focus"],
+  d = function(e) {
+    return true === e && (e = 0), Date.now() + e
+  },
+  f = false,
+  p = new(function() {
+    function e() {
+      var e = this;
+      this.stopped = true, this.listener = function() {
+        return e.schedule()
+      }
+    }
+    return e.prototype.run = function(e) {
+      var t = this;
+      if (true === e && (e = l), !f) {
+        f = true;
+        var n = d(e);
+        (0, a.Y)(function() {
+          var i = false;
+          try {
+            i = (0, r.e)()
+          } finally {
+            if (f = false, e = n - d(), !o()) return;
+            i ? t.run(1e3) : e > 0 ? t.run(e) : t.start()
+          }
+        })
+      }
+    }, e.prototype.schedule = function() {
+      this.stop(), this.run()
+    }, e.prototype.observe = function() {
+      var e = this,
+        t = function() {
+          return e.observer && e.observer.observe(document.body, c)
+        };
+      document.body ? t() : i.S.addEventListener("DOMContentLoaded", t)
+    }, e.prototype.start = function() {
+      var e = this;
+      this.stopped && (this.stopped = false, this.observer = new MutationObserver(this.listener), this.observe(), u.forEach(function(t) {
+        return i.S.addEventListener(t, e.listener, true)
+      }))
+    }, e.prototype.stop = function() {
+      var e = this;
+      this.stopped || (this.observer && this.observer.disconnect(), u.forEach(function(t) {
+        return i.S.removeEventListener(t, e.listener, true)
+      }), this.stopped = true)
+    }, e
+  }()),
+  _ = function(e) {
+    !s && e > 0 && p.start(), (s += e) || p.stop()
+  }

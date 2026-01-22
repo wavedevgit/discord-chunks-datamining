@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 790642, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 630446, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Io: () => i
+  yC: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2024-06_content_entry_embed",
   label: "Content Inventory Embed",

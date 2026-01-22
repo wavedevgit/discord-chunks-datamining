@@ -1,0 +1,25 @@
+/** Chunk was on web.js **/
+/** chunk id: 566808, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => r
+});
+var r = {};
+r = {
+  calendar: "Kalender",
+  day: "dag",
+  dayPeriod: "a.m./p.m.",
+  endDate: "Sluttdato",
+  era: "tidsalder",
+  hour: "time",
+  minute: "minutt",
+  month: "m\xe5ned",
+  second: "sekund",
+  selectedDateDescription: e => `Valgt dato: ${e.date}`,
+  selectedRangeDescription: e => `Valgt omr\xe5de: ${e.startDate} til ${e.endDate}`,
+  selectedTimeDescription: e => `Valgt tid: ${e.time}`,
+  startDate: "Startdato",
+  timeZoneName: "tidssone",
+  weekday: "ukedag",
+  year: "\xe5r"
+}

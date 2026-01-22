@@ -1,91 +1,91 @@
-/** Chunk was on 11010 **/
-/** chunk id: 456631, original params: e,t,n (module,exports,require) **/
-let r;
+/** Chunk was on 31748 **/
+/** chunk id: 614518, original params: e,t,n (module,exports,require) **/
+let l;
 require.d(exports, {
-  H: () => b,
-  Z: () => _
-}), require("./388685.js"), require("./290780.js");
-var i, l, Chunk392711 = require("./392711.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk780384 = require("./780384.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk963838 = require("./963838.js"),
-  Chunk354459 = require("./354459.js");
-let p = [],
-  g = {},
-  m = [],
-  b = e => {
-    null != e && s.Z.dispatch({
+  A: () => _,
+  a: () => g
+}), require("./896048.js"), require("./667532.js");
+var r, i, Chunk735438 = require("./735438.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk582754 = require("./582754.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk667050 = require("./667050.js");
+require("./806931.js");
+let f = [],
+  p = {},
+  b = [],
+  g = e => {
+    null != e && c.h.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
       userId: e
     })
   },
-  h = [],
-  v = 10 * Chunk70956.Z.Millis.SECOND,
-  E = (0, Chunk392711.debounce)(() => {
-    let e = (0, d.cX)(m);
-    c.uv.announce(e, "polite"), m = []
+  m = [],
+  h = 10 * Chunk927813.A.Millis.SECOND,
+  A = (0, Chunk735438.debounce)(() => {
+    let e = (0, d.fr)(b);
+    o.OR.announce(e, "polite"), b = []
   }, 500);
-class y extends(i = Chunk442837.ZP.Store) {
+class y extends(r = Chunk311907.Ay.Store) {
   get recentlyUsedEmojis() {
-    return p
+    return f
   }
   get isOnCooldown() {
-    return null != r && new Date < r
+    return null != l && new Date < l
   }
   get effectCooldownEndTime() {
-    return r
+    return l
   }
   getEffectForUserId(e) {
-    return g[e]
+    return p[e]
   }
-}(l = "displayName") in y ? Object.defineProperty(y, l, {
+}(i = "displayName") in y ? Object.defineProperty(y, i, {
   value: "VoiceChannelEffectsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : y[l] = "VoiceChannelEffectsStore";
-let _ = new y(Chunk570140.Z, {
+}) : y[i] = "VoiceChannelEffectsStore";
+let _ = new y(Chunk73153.h, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t
     } = e;
-    null != g[t] && delete g[t]
+    null != p[t] && delete p[t]
   },
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: e => {
     let {
       emoji: t
     } = e;
-    null != t && (p.unshift(t), (p = (0, a.uniqBy)(p, "name")).length > f.e5 + 1 && p.pop())
+    null != t && (f.unshift(t), (f = (0, a.uniqBy)(f, "name")).length > 9 && f.pop())
   },
   VOICE_CHANNEL_EFFECT_SEND: e => {
     let {
       emoji: t,
       userId: n,
-      animationType: r
+      animationType: l
     } = e;
-    null != t && null != r && (g[n] = {
+    null != t && null != l && (p[n] = {
       emoji: t,
       sentAt: Date.now(),
-      animationType: r
-    }, m = [...m, {
+      animationType: l
+    }, b = [...b, {
       emojiName: t.name,
       userId: n
-    }], E())
+    }], A())
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
-    if ((h = [e, ...h].slice(0, 20)).length >= 20) {
-      let t = h[h.length - 1],
+    if ((m = [e, ...m].slice(0, 20)).length >= 20) {
+      let t = m[m.length - 1],
         n = e.getTime() - t.getTime();
-      n < v && (r = new Date(e.getTime() + v - n))
+      n < h && (l = new Date(e.getTime() + h - n))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {
     let {
       cooldownEndsAtMs: t
     } = e;
-    r = new Date(Date.now() + t)
+    l = new Date(Date.now() + t)
   }
 })

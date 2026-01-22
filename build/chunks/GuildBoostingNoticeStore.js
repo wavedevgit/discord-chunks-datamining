@@ -1,18 +1,18 @@
-/** Chunk was on 1272 **/
-/** chunk id: 421176, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 701626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  A: () => u
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk981631 = require("./981631.js");
-class c extends(i = Chunk442837.ZP.Store) {
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk652215 = require("./652215.js");
+class c extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.Z), this.syncWith([o.Z], s.dG4)
+    this.waitFor(s.A), this.syncWith([s.A], o.tEg)
   }
   channelNoticePredicate(e, t) {
-    return Date.now() - t >= s.Hqc && o.Z.can(s.Plq.MANAGE_GUILD, e)
+    return Date.now() - t >= o.D2K && s.A.can(o.xBc.MANAGE_GUILD, e)
   }
 }(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "GuildBoostingNoticeStore",
@@ -20,4 +20,4 @@ class c extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : c[r] = "GuildBoostingNoticeStore";
-let u = new c(Chunk570140.Z)
+let u = new c(Chunk73153.h)

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 696900, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 319191, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk353368 = require("./353368.js");
+var i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk194486 = require("./194486.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -18,12 +18,12 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 let c = () => {
-  r = r === s.q.BASIC ? s.q.PREMIUM : s.q.BASIC
+  r = r === o.B.BASIC ? o.B.PREMIUM : o.B.BASIC
 };
-class u extends(i = Chunk442837.ZP.PersistedStore) {
+class u extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    r = null != (t = null == e ? true : e.animationType) ? t : s.q.PREMIUM
+    r = null != (t = null == e ? true : e.animationType) ? t : o.B.PREMIUM
   }
   getState() {
     return {
@@ -32,6 +32,6 @@ class u extends(i = Chunk442837.ZP.PersistedStore) {
   }
 }
 l(u, "displayName", "VoiceChannelEffectsPersistedStore"), l(u, "persistKey", "VoiceChannelEffectsPersistedStore");
-let d = new u(Chunk570140.Z, {
+let d = new u(Chunk73153.h, {
   VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE: c
 })

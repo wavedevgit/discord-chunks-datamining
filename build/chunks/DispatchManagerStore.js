@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
-/** chunk id: 941128, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 966846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => J
-}), require("./388685.js"), require("./415506.js"), require("./539854.js"), require("./290780.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk51025 = require("./51025.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk173747 = require("./173747.js"),
-  Chunk780570 = require("./780570.js"),
-  Chunk830168 = require("./830168.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk417363 = require("./417363.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk186901 = require("./186901.js");
+  A: () => $
+}), require("./896048.js"), require("./65821.js"), require("./321073.js"), require("./667532.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk92077 = require("./92077.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk568004 = require("./568004.js"),
+  Chunk674378 = require("./674378.js"),
+  Chunk962052 = require("./962052.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk194871 = require("./194871.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk613057 = require("./613057.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,33 +28,33 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
+let y = [Chunk613057.Hi.AUTHENTICATION_FAILED, Chunk613057.Hi.NOT_ENTITLED],
   O = "DispatchManagerStore",
+  A = [],
   v = [],
-  S = [],
-  I = false,
+  S = false,
+  I = null,
   T = null,
-  C = null,
-  A = false,
+  C = false,
   N = new Map,
-  P = false,
+  R = false,
   w = null;
 
-function R() {
+function P() {
   let e = {
-    queue: v,
-    paused: I,
+    queue: A,
+    paused: S,
     userActions: Array.from(N)
   };
-  s.K.set(O, e)
+  o.w.set(O, e)
 }
 
 function D(e, t) {
-  return null != T && T.applicationId === e && T.branchId === t || null != C && C.applicationId === e && C.branchId === t
+  return null != I && I.applicationId === e && I.branchId === t || null != T && T.applicationId === e && T.branchId === t
 }
 
 function x() {
-  let e = v[0];
+  let e = A[0];
   if (null != e) {
     let {
       comboId: t,
@@ -62,39 +62,39 @@ function x() {
     } = e, {
       applicationId: r,
       branchId: i
-    } = (0, p.CP)(t);
+    } = (0, p.r0)(t);
     if (!D(r, i)) {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
-      P = !_.Z.setCurrentTask(r, i, n, t, e)
+      R = !_.A.setCurrentTask(r, i, n, t, e)
     }
   }
 }
 
 function L(e, t) {
-  let n = (0, p.Tu)(e, t);
-  return v.findIndex(e => e.comboId === n)
+  let n = (0, p.gW)(e, t);
+  return A.findIndex(e => e.comboId === n)
 }
 
 function j(e, t, n, r) {
-  let i = (0, p.Tu)(e, t),
+  let i = (0, p.gW)(e, t),
     a = {
       comboId: i,
       action: r
     },
-    o = S.indexOf(i);
-  false !== o && S.splice(o, 1);
-  let s = L(e, t);
-  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && I && _.Z.resume(), R()
+    s = v.indexOf(i);
+  false !== s && v.splice(s, 1);
+  let o = L(e, t);
+  0 !== o && (n ? false === o && (A.push(a), x()) : (o > 0 && A.splice(o, 1), A.unshift(a), x())), !n && S && _.A.resume(), P()
 }
 
 function M(e, t) {
-  let n = (0, p.Tu)(e, t),
-    r = S.indexOf(n);
-  false !== r && S.splice(r, 1);
+  let n = (0, p.gW)(e, t),
+    r = v.indexOf(n);
+  false !== r && v.splice(r, 1);
   let i = L(e, t);
-  false !== i && (v.splice(i, 1), R()), x()
+  false !== i && (A.splice(i, 1), P()), x()
 }
 
 function k(e) {
@@ -102,11 +102,11 @@ function k(e) {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, p.Tu)(t, n), "Install"), j(t, n, false, "Patch")
+  N.set((0, p.gW)(t, n), "Install"), j(t, n, false, "Patch")
 }
 
 function U(e) {
-  F(e), V(e)
+  F(e), H(e)
 }
 
 function G(e) {
@@ -114,10 +114,10 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, p.Tu)(t, n), "Repair"), j(t, n, false, "Repair")
+  N.set((0, p.gW)(t, n), "Repair"), j(t, n, false, "Repair")
 }
 
-function Z(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -140,64 +140,64 @@ function B(e) {
     branchId: n
   } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.Z.resume(), R()
-}
-
-function V(e) {
-  let {
-    applicationId: t,
-    branchId: n
-  } = e, r = (0, p.Tu)(t, n), i = S.indexOf(r);
-  false !== i && S.splice(i, 1)
+  A.splice(0, 0, A.splice(r, 1)[0]), x(), S && _.A.resume(), P()
 }
 
 function H(e) {
   let {
+    applicationId: t,
+    branchId: n
+  } = e, r = (0, p.gW)(t, n), i = v.indexOf(r);
+  false !== i && v.splice(i, 1)
+}
+
+function Y(e) {
+  let {
     state: t
   } = e;
-  !A && (A = true, x(), I || _.Z.resume());
-  let n = I;
-  I = t.paused, T = t.currentTask, C = t.nextTask;
+  !C && (C = true, x(), S || _.A.resume());
+  let n = S;
+  S = t.paused, I = t.currentTask, T = t.nextTask;
   let r = false;
-  v = v.filter(e => {
+  A = A.filter(e => {
     let {
       comboId: t
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, p.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
-    if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
-      if (S.push(t), N.has(t)) {
+    } = (0, p.r0)(t), s = m.A.getState(n, i), o = f.A.getTargetBuildId(n, i), l = f.A.getTargetManifests(n, i);
+    if (null != s && s.type === g.WTw.UP_TO_DATE && s.buildId === s.targetBuildId && s.buildId === o && a().isEqual(s.manifestIds, s.targetManifestIds) && a().isEqual(s.manifestIds, l)) {
+      if (v.push(t), N.has(t)) {
         switch (N.get(t)) {
           case "Install":
-            c.XT(n, o);
+            c.BK(n, s);
             break;
           case "Repair":
-            c.Wx(n, o)
+            c.jU(n, s)
         }
         N.delete(t)
       }
       return r = true, false
     }
     returntrue
-  }), x(), (r || n !== I) && R()
+  }), x(), (r || n !== S) && P()
 }
 
-function Y() {
+function W() {
   let e = d.default.getToken(),
     t = d.default.getId();
-  null != e && _.Z.setCredentials(t, e)
+  null != e && _.A.setCredentials(t, e)
 }
 
-function W(e) {
+function K(e) {
   let {
     error: t
   } = e, {
     code: n
   } = t;
   if (null != n) {
-    if (y.includes(n)) Y();
-    else if (n === E.ff.APPLICATION_NOT_FOUND) {
+    if (y.includes(n)) W();
+    else if (n === E.Hi.APPLICATION_NOT_FOUND) {
       let {
         context: e
       } = t;
@@ -212,68 +212,68 @@ function W(e) {
   }
 }
 
-function K() {
-  for (let e of u.ZP.getRunningDiscordApplicationIds()) c.al(e, e);
-  let e = u.ZP.getVisibleGame();
-  return I || null == e || e.pid === w || c.wO(), w = null == e ? null : e.pid, false
-}
-
 function z() {
-  (0, h.isDesktop)() && Y()
+  for (let e of u.Ay.getRunningDiscordApplicationIds()) c.ZT(e, e);
+  let e = u.Ay.getVisibleGame();
+  return S || null == e || e.pid === w || c.v7(), w = null == e ? null : e.pid, false
 }
 
 function q() {
-  s.K.remove(O), (0, h.isDesktop)() && _.Z.pause()
+  (0, h.isDesktop)() && W()
 }
 
-function Q(e) {
+function X() {
+  o.w.remove(O), (0, h.isDesktop)() && _.A.pause()
+}
+
+function Z(e) {
   return e.map(e => "string" == typeof e ? {
     comboId: e,
     action: "Patch"
   } : e)
 }
-class X extends(r = Chunk442837.ZP.Store) {
+class Q extends(r = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    let t = null != (e = s.K.get(O)) ? e : {
+    let t = null != (e = o.w.get(O)) ? e : {
       queue: null,
       paused: null,
       userActions: null
     };
-    null != t.queue && (v = Q(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(f.Z, d.default, m.Z)
+    null != t.queue && (A = Z(t.queue)), null != t.paused && (S = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(m.A, u.Ay), this.syncWith([u.Ay], z), this.waitFor(f.A, d.default, m.A)
   }
   get activeItems() {
-    return v.map(e => {
+    return A.map(e => {
       let {
         comboId: t
       } = e;
-      return (0, p.CP)(t)
+      return (0, p.r0)(t)
     })
   }
   get finishedItems() {
-    return S.map(p.CP)
+    return v.map(p.r0)
   }
   get paused() {
-    return I
+    return S
   }
   getQueuePosition(e, t) {
     return L(e, t)
   }
   isCorruptInstallation() {
-    return P
+    return R
   }
 }
-b(X, "displayName", "DispatchManagerStore");
-let J = new X(Chunk570140.Z, {
+b(Q, "displayName", "DispatchManagerStore");
+let $ = new Q(Chunk73153.h, {
   DISPATCH_APPLICATION_INSTALL: k,
-  DISPATCH_APPLICATION_UPDATE: Z,
+  DISPATCH_APPLICATION_UPDATE: V,
   DISPATCH_APPLICATION_UNINSTALL: U,
   DISPATCH_APPLICATION_CANCEL: F,
   DISPATCH_APPLICATION_REPAIR: G,
   DISPATCH_APPLICATION_MOVE_UP: B,
-  DISPATCH_APPLICATION_REMOVE_FINISHED: V,
-  DISPATCH_APPLICATION_STATE_UPDATE: H,
-  DISPATCH_APPLICATION_ERROR: W,
-  CONNECTION_OPEN: z,
-  LOGOUT: q
+  DISPATCH_APPLICATION_REMOVE_FINISHED: H,
+  DISPATCH_APPLICATION_STATE_UPDATE: Y,
+  DISPATCH_APPLICATION_ERROR: K,
+  CONNECTION_OPEN: q,
+  LOGOUT: X
 })

@@ -1,0 +1,1 @@
+{"id":"128319","type":"experiment","data":{"kind":"user","id":"2025-12_avholdout__mirror","label":"AV Holdout - H2 2025","defaultConfig":{"isInHoldout":false},"treatments":[{"id":1,"label":"Enables the holdout experiment","config":{"isInHoldout":true}}]},"fromModule":{"id":"web.js"}}

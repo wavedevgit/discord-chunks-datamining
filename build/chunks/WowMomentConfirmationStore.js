@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 453227, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 573359, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  A: () => f
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,13 +15,13 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {
+let o = {
   isDisplayingWowMomentConfirmation: false,
   isAnimated: false
 };
 
 function l() {
-  s = {
+  o = {
     isDisplayingWowMomentConfirmation: false,
     isAnimated: false
   }
@@ -36,21 +36,21 @@ function u(e) {
     value: t,
     isAnimated: n
   } = e;
-  s.isDisplayingWowMomentConfirmation = t, s.isAnimated = n
+  o.isDisplayingWowMomentConfirmation = t, o.isAnimated = n
 }
-class d extends(r = Chunk442837.ZP.Store) {
+class d extends(r = Chunk311907.Ay.Store) {
   getState() {
-    return s
+    return o
   }
   get isDisplayingWowMomentConfirmation() {
-    return s.isDisplayingWowMomentConfirmation
+    return o.isDisplayingWowMomentConfirmation
   }
   get isAnimated() {
-    return s.isAnimated
+    return o.isAnimated
   }
 }
-o(d, "displayName", "WowMomentConfirmationStore");
-let f = new d(Chunk570140.Z, {
+s(d, "displayName", "WowMomentConfirmationStore");
+let f = new d(Chunk73153.h, {
   LOGOUT: c,
   WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION: u
 })

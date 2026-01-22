@@ -1,0 +1,1 @@
+{"id":"267378","type":"experiment","data":{"kind":"user","name":"2025-11-dave-opt-in","defaultConfig":{"allowOptIn":false},"variations":{"undefined":{"allowOptIn":true}}},"fromModule":{"id":"web.js"}}

@@ -1,0 +1,1 @@
+{"id":"80422","type":"experiment","data":{"kind":"user","id":"2024-04_game_settings_merge","label":"Game Settings Merge","defaultConfig":{"shouldMergeGameSettings":false},"treatments":[{"id":1,"label":"Merge Game Settings","config":{"shouldMergeGameSettings":true}}]},"fromModule":{"id":"web.js"}}

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 486472, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 919638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk710845 = require("./710845.js"),
-  Chunk430824 = require("./430824.js");
+  A: () => g
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk626584 = require("./626584.js"),
+  Chunk71393 = require("./71393.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,7 +17,7 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = new Chunk710845.Z("GuildAvailabilityStore"),
+let c = new Chunk626584.A("GuildAvailabilityStore"),
   u = new Set;
 
 function d(e) {
@@ -31,7 +31,7 @@ function f(e) {
 
 function p(e) {
   if (u.has(e.guildId)) returnfalse;
-  let t = s.Z.getGuild(e.guildId),
+  let t = o.A.getGuild(e.guildId),
     n = "???";
   null != t && null != t.name && (n = t.name), c.warn("Guild has gone unavailable: ".concat(e.guildId, " (").concat(n, ")")), u.add(e.guildId)
 }
@@ -44,15 +44,15 @@ function _(e) {
 function h(e) {
   true !== e.guild.unavailable && u.delete(e.guild.id)
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.Z)
+    this.waitFor(o.A)
   }
   isUnavailable(e) {
     return null != e && u.has(e)
   }
   get totalGuilds() {
-    return s.Z.getGuildCount() + u.size
+    return o.A.getGuildCount() + u.size
   }
   get totalUnavailableGuilds() {
     return u.size
@@ -62,7 +62,7 @@ class m extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(m, "displayName", "GuildAvailabilityStore");
-let g = new m(Chunk570140.Z, {
+let g = new m(Chunk73153.h, {
   CONNECTION_OPEN: d,
   OVERLAY_INITIALIZE: d,
   GUILD_UNAVAILABLE: p,

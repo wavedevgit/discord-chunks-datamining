@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 687476, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 384684, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk601964 = require("./601964.js"),
-  Chunk345162 = require("./345162.js"),
-  Chunk271383 = require("./271383.js"),
-  Chunk485386 = require("./485386.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk973542 = require("./973542.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => R
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk260509 = require("./260509.js"),
+  Chunk34457 = require("./34457.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk317525 = require("./317525.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk98318 = require("./98318.js"),
+  Chunk652215 = require("./652215.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -32,32 +32,32 @@ let h = new Set,
 
 function O(e) {
   let t = d.default.getCurrentUser(),
-    n = u.Z.getGuild(e);
+    n = u.A.getGuild(e);
   if (null == n || null == t) returnfalse;
   let r = new Set,
     i = new Set,
     a = new Set;
-  if (b.set(e, (0, o.eM)(n, t)), n.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) {
+  if (b.set(e, (0, s.bM)(n, t)), n.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) {
     var _;
-    let o = l.ZP.getMember(e, t.id),
-      u = new Set(null != (_ = null == o ? true : o.roles) ? _ : []);
-    for (let t of c.Z.getSortedRoles(n.id))(0, f.Z)(t) && (r.add(t.id), (0, f.h)(t) && (i.add(t.id), u.has(t.id) && a.add(t.id))), u.has(t.id) && (0, s.Fs)(t, p.Plq.ADMINISTRATOR) && b.set(e, true)
+    let s = l.Ay.getMember(e, t.id),
+      u = new Set(null != (_ = null == s ? true : s.roles) ? _ : []);
+    for (let t of c.A.getSortedRoles(n.id))(0, f.U)(t) && (r.add(t.id), (0, f.X)(t) && (i.add(t.id), u.has(t.id) && a.add(t.id))), u.has(t.id) && (0, o._m)(t, p.xBc.ADMINISTRATOR) && b.set(e, true)
   }
   return m.set(e, r), E.set(e, a), g.set(e, i), true
 }
 
-function v() {
-  let e = u.Z.getGuildsArray(),
+function A() {
+  let e = u.A.getGuildsArray(),
     t = new Set;
   for (let n of e) n.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && t.add(n.id);
   return y = t, t
 }
 
-function S() {
+function v() {
   m.clear(), E.clear(), g.clear(), b.clear(), y = null
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: {
       id: t
@@ -68,14 +68,14 @@ function I(e) {
   n.delete(t), y = n
 }
 
-function T(e) {
+function I(e) {
   let {
     guild: {
       id: t
     }
   } = e;
   if (null == y) returnfalse;
-  let n = u.Z.getGuild(t);
+  let n = u.A.getGuild(t);
   if (null == n) returnfalse;
   let r = n.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
   if (r && !y.has(t)) {
@@ -89,26 +89,26 @@ function T(e) {
   returnfalse
 }
 
-function C(e) {
+function T(e) {
   let {
     guildId: t
   } = e;
   return !!m.has(t) && O(t)
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     user: n
   } = e, r = d.default.getCurrentUser();
   return !!(n.id === (null == r ? true : r.id) && m.has(t)) && O(t)
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.Z, c.Z, d.default, l.ZP)
+    this.waitFor(u.A, c.A, d.default, l.Ay)
   }
   getGuildIdsWithPurchasableRoles() {
-    return null == y ? v() : y
+    return null == y ? A() : y
   }
   buildRoles(e) {
     m.has(e) || O(e)
@@ -131,14 +131,14 @@ class N extends(r = Chunk442837.ZP.Store) {
   }
 }
 _(N, "displayName", "SubscriptionRoleStore");
-let P = new N(Chunk570140.Z, {
-  CONNECTION_OPEN: S,
-  LOGOUT: S,
-  GUILD_CREATE: T,
-  GUILD_DELETE: I,
-  GUILD_UPDATE: T,
-  GUILD_ROLE_CREATE: C,
-  GUILD_ROLE_UPDATE: C,
-  GUILD_ROLE_DELETE: C,
-  GUILD_MEMBER_UPDATE: A
+let R = new N(Chunk73153.h, {
+  CONNECTION_OPEN: v,
+  LOGOUT: v,
+  GUILD_CREATE: I,
+  GUILD_DELETE: S,
+  GUILD_UPDATE: I,
+  GUILD_ROLE_CREATE: T,
+  GUILD_ROLE_UPDATE: T,
+  GUILD_ROLE_DELETE: T,
+  GUILD_MEMBER_UPDATE: C
 })

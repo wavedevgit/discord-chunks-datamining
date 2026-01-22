@@ -1,12 +1,12 @@
-/** Chunk was on 1272 **/
-/** chunk id: 499137, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 221094, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  s: () => o
+  y: () => s
 });
-var Chunk473749 = require("./473749.js"),
-  Chunk818083 = require("./818083.js"),
-  Chunk981631 = require("./981631.js");
-let a = (0, Chunk818083.B)({
+var Chunk64700 = require("./64700.js"),
+  Chunk600975 = require("./600975.js"),
+  Chunk652215 = require("./652215.js");
+let a = (0, Chunk600975.C)({
     kind: "guild",
     id: "2021-10_study_group",
     label: "Student hub study group",
@@ -21,7 +21,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = e => {
+  s = e => {
     var t;
     return r.useEffect(() => {
       null != e && e.features.has(l.GuildFeatures.HUB) && a.trackExposure({
@@ -29,7 +29,7 @@ let a = (0, Chunk818083.B)({
         location: "467c32_1"
       })
     }, [e]), a.useExperiment({
-      guildId: null != (t = null == e ? true : e.id) ? t : l.lds,
+      guildId: null != (t = null == e ? true : e.id) ? t : l.dJq,
       location: "467c32_2"
     }, {
       autoTrackExposure: false,

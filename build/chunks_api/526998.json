@@ -1,1 +1,0 @@
-{"id":"526998","type":"experiment","data":{"kind":"user","id":"2025-02_reverse_trial_perk_access_kill_switch","label":"Reverse Trial Perk Access Kill Switch","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Prevent perk access for users with reverse trials","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

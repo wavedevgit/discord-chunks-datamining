@@ -1,14 +1,14 @@
-/** Chunk was on 82124 **/
-/** chunk id: 748902, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 401565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk786761 = require("./786761.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk355298 = require("./355298.js"),
-  Chunk333984 = require("./333984.js");
+  A: () => g
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk141468 = require("./141468.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk380335 = require("./380335.js"),
+  Chunk157550 = require("./157550.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -19,28 +19,28 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = {},
-  p = new Set;
+  f = new Set;
 
-function f(e) {
-  return s.Z.isMessageRequest(e) || c.Z.isSpam(e)
+function p(e) {
+  return o.A.isMessageRequest(e) || c.A.isSpam(e)
 }
 
 function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  if (!f(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
-  let r = null == t ? null : (0, a.e5)(t);
+  if (!p(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
+  let r = null == t ? null : (0, a.rh)(t);
   d[e] = {
     loaded: true,
     error: n,
     message: r
   }
 }
-class g extends(r = Chunk442837.ZP.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.Z, c.Z, o.default)
+    this.waitFor(o.A, c.A, s.default)
   }
   shouldLoadMessageRequestPreview(e) {
-    return !p.has(e)
+    return !f.has(e)
   }
   getMessageRequestPreview(e) {
     return e in d || (d[e] = {
@@ -50,28 +50,28 @@ class g extends(r = Chunk442837.ZP.Store) {
     }), d[e]
   }
 }
-u(g, "displayName", "MessageRequestPreviewStore");
-let m = new g(Chunk570140.Z, {
+u(b, "displayName", "MessageRequestPreviewStore");
+let g = new b(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    d = {}, p.clear()
+    d = {}, f.clear()
   },
   CHANNEL_CREATE: function(e) {
     let {
       channel: t
     } = e;
-    f(t.id) && p.add(t.id)
+    p(t.id) && f.add(t.id)
   },
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
     } = e;
-    for (let e of t) f(e.id) || (p.delete(e.id), delete d[e.id])
+    for (let e of t) p(e.id) || (f.delete(e.id), delete d[e.id])
   },
   CHANNEL_DELETE: function(e) {
     let {
       channel: t
     } = e;
-    p.delete(t.id), delete d[t.id]
+    f.delete(t.id), delete d[t.id]
   },
   MESSAGE_CREATE: function(e) {
     if (e.isPushNotification) returnfalse;
@@ -81,8 +81,8 @@ let m = new g(Chunk570140.Z, {
     var t, n;
     let r = e.message.channel_id;
     if (null == r) returnfalse;
-    let i = d[r];
-    if (null == i || null == i.message) returnfalse;
+    let l = d[r];
+    if (null == l || null == l.message) returnfalse;
     d[r] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -94,8 +94,8 @@ let m = new g(Chunk570140.Z, {
         })
       }
       return e
-    }({}, i), n = n = {
-      message: (0, a.wi)(i.message, e.message)
+    }({}, l), n = n = {
+      message: (0, a.IU)(l.message, e.message)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -108,7 +108,7 @@ let m = new g(Chunk570140.Z, {
     }), t)
   },
   MESSAGE_DELETE: function(e) {
-    if (!f(e.channelId)) returnfalse;
+    if (!p(e.channelId)) returnfalse;
     d[e.channelId] = {
       loaded: true,
       error: false,

@@ -2,77 +2,46 @@
 /** chunk id: 460597, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => s
-}), require("./388685.js"), require("./953529.js"), require("./467055.js");
-var Chunk754700 = require("./754700.js");
-require("./742635.js");
-var Chunk458708 = require("./458708.js"),
-  Chunk608591 = require("./608591.js");
-let o = e => {
-    switch (e.type) {
-      case r.X.WATCH_VIDEO:
-        return {
-          type: r.X.WATCH_VIDEO, target: e.target, assets: (0, a._c)(e.assets), messages: (0, a.I9)(e.messages)
-        };
-      case r.X.WATCH_VIDEO_ON_MOBILE:
-        return {
-          type: r.X.WATCH_VIDEO_ON_MOBILE, target: e.target, assets: (0, a.c1)(e.assets), messages: (0, a.jZ)(e.messages)
-        };
-      case r.X.PLAY_ON_DESKTOP:
-        return {
-          type: r.X.PLAY_ON_DESKTOP, target: e.target, applications: e.applications
-        };
-      case r.X.STREAM_ON_DESKTOP:
-        return {
-          type: r.X.STREAM_ON_DESKTOP, target: e.target, applications: e.applications
-        };
-      case r.X.PLAY_ACTIVITY:
-        return {
-          type: r.X.PLAY_ACTIVITY, target: e.target, applications: e.applications
-        };
-      case r.X.PLAY_ON_XBOX:
-        return {
-          type: r.X.PLAY_ON_XBOX, target: e.target, externalIds: e.external_ids, applications: e.applications
-        };
-      case r.X.PLAY_ON_PLAYSTATION:
-        return {
-          type: r.X.PLAY_ON_PLAYSTATION, target: e.target, externalIds: e.external_ids, applications: e.applications
-        };
-      case r.X.ACHIEVEMENT_IN_GAME:
-        return {
-          type: r.X.ACHIEVEMENT_IN_GAME, target: e.target, eventName: e.event_name, messages: {
-            taskTitle: e.messages.task_title,
-            taskDescription: e.messages.task_description
-          }, applications: e.applications
-        };
-      case r.X.ACHIEVEMENT_IN_ACTIVITY:
-        return {
-          type: r.X.ACHIEVEMENT_IN_ACTIVITY, target: e.target, eventName: e.event_name, messages: {
-            taskTitle: e.messages.task_title,
-            taskDescription: e.messages.task_description
-          }, applications: e.applications
-        };
-      default:
-        return null
-    }
-  },
-  s = e => {
-    try {
-      let t = Object.entries(e.tasks).map(e => {
-        let [t, n] = e;
-        return [t, o(n)]
-      }).filter(e => {
-        let [t, n] = e;
-        return null !== n
-      });
-      return {
-        tasks: Object.fromEntries(t),
-        joinOperator: e.join_operator
-      }
-    } catch (e) {
-      return {
-        tasks: {},
-        joinOperator: i.r.OR
-      }
-    }
-  }
+  A: () => u
+});
+var Chunk64700 = require("./64700.js"),
+  Chunk314116 = require("./314116.jsx"),
+  Chunk922590 = require("./922590.js"),
+  Chunk607272 = require("./607272.js"),
+  Chunk427262 = require("./427262.js"),
+  Chunk433880 = require("./433880.jsx"),
+  Chunk985018 = require("./985018.jsx");
+
+function u(e) {
+  let {
+    user: t
+  } = e, n = (0, a.f1)(t.id), u = o.Ay.useName(t), d = r.useCallback(e => {
+    let {
+      id: n,
+      name: r
+    } = e;
+    (0, i.A)({
+      title: c.intl.formatToPlainString(c.t["GOFk9+"], {
+        name: u
+      }),
+      subtitle: c.intl.format(c.t.dsU5bl, {
+        name: u,
+        gameName: r
+      }),
+      confirmText: c.intl.string(c.t["cY+Oob"]),
+      onConfirm: () => s.A.removeFriend({
+        userId: t.id,
+        applicationId: n,
+        location: "Context Menu"
+      })
+    })
+  }, [u, t]);
+  return (0, l.A)({
+    user: t,
+    gameRelationships: n,
+    menuItemId: "remove-game-friend",
+    label: c.intl.string(c.t.RLcE6x),
+    onClick: d,
+    color: "danger"
+  })
+}

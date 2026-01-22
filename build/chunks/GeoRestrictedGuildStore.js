@@ -1,40 +1,40 @@
-/** Chunk was on 82124 **/
-/** chunk id: 478738, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 543897, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
-}), require("./539854.js");
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
-let o = [];
-class s extends(r = Chunk442837.ZP.Store) {
+  A: () => c
+}), require("./321073.js");
+var r, l, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
+let s = [];
+class o extends(r = Chunk311907.Ay.Store) {
   getGeoRestrictedGuilds() {
-    return o
+    return s
   }
-}(i = "displayName") in s ? Object.defineProperty(s, i, {
+}(l = "displayName") in o ? Object.defineProperty(o, l, {
   value: "GeoRestrictedGuildStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : s[i] = "GeoRestrictedGuildStore";
-let c = new s(Chunk570140.Z, {
+}) : o[l] = "GeoRestrictedGuildStore";
+let c = new o(Chunk73153.h, {
   CONNECTION_OPEN: function(e) {
-    o = e.geoRestrictedGuilds
+    s = e.geoRestrictedGuilds
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    if (false === o.findIndex(e => e.id === t.id)) returnfalse;
-    o = o.filter(e => e.id !== t.id)
+    if (false === s.findIndex(e => e.id === t.id)) returnfalse;
+    s = s.filter(e => e.id !== t.id)
   },
   GUILD_GEO_RESTRICTED: function(e) {
-    let t = o.filter(t => t.id !== e.guildId);
+    let t = s.filter(t => t.id !== e.guildId);
     t.push({
       id: e.guildId,
       name: e.name,
       icon: e.icon,
       unavailable: true,
       geo_restricted: true
-    }), o = t
+    }), s = t
   }
 })

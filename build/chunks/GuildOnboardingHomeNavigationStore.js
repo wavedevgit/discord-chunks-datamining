@@ -1,14 +1,14 @@
-/** Chunk was on 82124 **/
-/** chunk id: 637271, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 220706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  A: () => f
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk176505 = require("./176505.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk746080 = require("./746080.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,10 +18,10 @@ function s(e, t, n) {
 }
 let c = {},
   u = {};
-class d extends(r = Chunk442837.ZP.PersistedStore) {
+class d extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(a.Z), c = null != (t = null == e ? true : e.selectedResourceChannelIdByGuildId) ? t : {}
+    this.waitFor(a.A), c = null != (t = null == e ? true : e.selectedResourceChannelIdByGuildId) ? t : {}
   }
   getState() {
     return {
@@ -36,18 +36,18 @@ class d extends(r = Chunk442837.ZP.PersistedStore) {
     return null == e ? null : null != (t = c[e]) ? t : u[e]
   }
 }
-s(d, "displayName", "GuildOnboardingHomeNavigationStore"), s(d, "persistKey", "GuildOnboardingHomeNavigationStore");
-let p = new d(Chunk570140.Z, {
+o(d, "displayName", "GuildOnboardingHomeNavigationStore"), o(d, "persistKey", "GuildOnboardingHomeNavigationStore");
+let f = new d(Chunk73153.h, {
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t,
       guildId: n
     } = e;
-    if (null == n || t === o.oC.GUILD_HOME) return;
-    let r = a.Z.getChannel(t),
-      i = c[n],
-      l = u[n];
-    (null == r ? true : r.isThread()) && (null == r ? true : r.parent_id) != null && [l, i].includes(null == r ? true : r.parent_id) || (t !== i && delete c[n], t !== l && delete u[n])
+    if (null == n || t === s.VV.GUILD_HOME) return;
+    let r = a.A.getChannel(t),
+      l = c[n],
+      i = u[n];
+    (null == r ? true : r.isThread()) && (null == r ? true : r.parent_id) != null && [i, l].includes(null == r ? true : r.parent_id) || (t !== l && delete c[n], t !== i && delete u[n])
   },
   SELECT_HOME_RESOURCE_CHANNEL: function(e) {
     let {

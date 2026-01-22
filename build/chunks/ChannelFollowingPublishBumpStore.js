@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 212342, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 572957, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
-}), require("./388685.js"), require("./997841.js");
-var r, Chunk95015 = require("./95015.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk110630 = require("./110630.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => S
+}), require("./896048.js"), require("./938796.js");
+var r, Chunk665260 = require("./665260.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk812930 = require("./812930.js"),
+  Chunk652215 = require("./652215.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,9 +35,9 @@ function E(e) {
     optimistic: a
   } = e;
   if (a || m.has(n)) returnfalse;
-  let o = c.Z.getChannel(n),
-    s = d.default.getCurrentUser();
-  if (!(null != o && o.type === p.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != s && (null == (t = r.author) ? true : t.id) === s.id ? u.Z.can(p.Plq.SEND_MESSAGES, o) : u.Z.can(p.Plq.MANAGE_MESSAGES, o)) && !i.yE(Number(r.flags), p.iLy.CROSSPOSTED))) returnfalse;
+  let s = c.A.getChannel(n),
+    o = d.default.getCurrentUser();
+  if (!(null != s && s.type === p.rbe.GUILD_ANNOUNCEMENT && (0, f.A)(r) && (null != o && (null == (t = r.author) ? true : t.id) === o.id ? u.A.can(p.xBc.SEND_MESSAGES, s) : u.A.can(p.xBc.MANAGE_MESSAGES, s)) && !i.Lt(Number(r.flags), p.pr7.CROSSPOSTED))) returnfalse;
   g.add(r.id)
 }
 
@@ -45,7 +45,7 @@ function b(e) {
   let {
     message: t
   } = e;
-  g.has(t.id) && i.yE(Number(t.flags), p.iLy.CROSSPOSTED) && g.delete(t.id)
+  g.has(t.id) && i.Lt(Number(t.flags), p.pr7.CROSSPOSTED) && g.delete(t.id)
 }
 
 function y(e) {
@@ -59,25 +59,25 @@ function O(e) {
   let {
     channelId: t
   } = e;
-  m.add(t), o.K.set(h, m), g.clear()
+  m.add(t), s.w.set(h, m), g.clear()
 }
 
-function v(e) {
+function A(e) {
   g.clear()
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.default, c.Z, u.Z, d.default), m = new Set(o.K.get(h))
+    this.waitFor(l.default, c.A, u.A, d.default), m = new Set(s.w.get(h))
   }
   shouldShowBump(e) {
     return g.has(e)
   }
 }
-_(S, "displayName", "ChannelFollowingPublishBumpStore");
-let I = new S(Chunk570140.Z, {
+_(v, "displayName", "ChannelFollowingPublishBumpStore");
+let S = new v(Chunk73153.h, {
   MESSAGE_CREATE: E,
   MESSAGE_UPDATE: b,
-  CHANNEL_SELECT: v,
+  CHANNEL_SELECT: A,
   CHANNEL_FOLLOWING_PUBLISH_BUMP_DISMISSED: y,
   CHANNEL_FOLLOWING_PUBLISH_BUMP_HIDE_PERMANENTLY: O
 })

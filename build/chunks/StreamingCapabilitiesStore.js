@@ -1,29 +1,29 @@
-/** Chunk was on 27601 **/
-/** chunk id: 653255, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 45565 **/
+/** chunk id: 2866, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  A: () => S
 });
-var n, l, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk998502 = require("./998502.js"),
-  Chunk869614 = require("./869614.js"),
-  Chunk281083 = require("./281083.js"),
-  Chunk672598 = require("./672598.js");
+var l, r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk837921 = require("./837921.js"),
+  Chunk857275 = require("./857275.js"),
+  Chunk214335 = require("./214335.js"),
+  Chunk625002 = require("./625002.js");
 let g = false,
-  Z = true,
+  c = true,
   f = false;
-class m extends(l = Chunk442837.ZP.Store) {
+class m extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    !s.isPlatformEmbedded || __OVERLAY__ || u.ZP.getGPUDriverVersions().then(e => {
-      g = (0, c.Z)(e), Z = (0, o.Z)(e), f = (0, d.Z)(e), this.emitChange()
+    !s.isPlatformEmbedded || __OVERLAY__ || u.Ay.getGPUDriverVersions().then(e => {
+      g = (0, d.A)(e), c = (0, o.A)(e), f = (0, A.A)(e), this.emitChange()
     })
   }
   get GPUDriversOutdated() {
     return g
   }
   get canUseHardwareAcceleration() {
-    return Z
+    return c
   }
   get problematicGPUDriver() {
     return f
@@ -31,21 +31,21 @@ class m extends(l = Chunk442837.ZP.Store) {
   getState() {
     return {
       GPUDriversOutdated: g,
-      canUseHardwareAcceleration: Z,
+      canUseHardwareAcceleration: c,
       problematicGPUDriver: f
     }
   }
-}(n = "displayName") in m ? Object.defineProperty(m, n, {
+}(l = "displayName") in m ? Object.defineProperty(m, l, {
   value: "StreamingCapabilitiesStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : m[n] = "StreamingCapabilitiesStore";
-let S = new m(Chunk570140.Z, {
+}) : m[l] = "StreamingCapabilitiesStore";
+let S = new m(Chunk73153.h, {
   OVERLAY_INITIALIZE: function(e) {
     let {
       streamingCapabilitiesStoreState: t
     } = e;
-    g = t.GPUDriversOutdated, Z = t.canUseHardwareAcceleration
+    g = t.GPUDriversOutdated, c = t.canUseHardwareAcceleration
   }
 })

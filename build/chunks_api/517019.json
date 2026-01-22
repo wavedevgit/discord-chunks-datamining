@@ -1,0 +1,1 @@
+{"id":"517019","type":"store","data":{"name":"GuildNSFWAgreeStore","functions":[{"name":"initialize","args":[]},{"name":"didAgree","args":["e"]}],"events":["GUILD_NSFW_AGREE"]},"fromModule":{"id":"web.js"}}

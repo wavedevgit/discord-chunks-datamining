@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
-/** chunk id: 649739, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 529020, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ku: () => i,
-  ZP: () => a
+  Ay: () => a,
+  Gf: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2024-01_voice_user_game_activity",
   label: "Voice User Game Activity",

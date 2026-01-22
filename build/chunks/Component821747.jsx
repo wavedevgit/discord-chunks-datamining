@@ -1,0 +1,53 @@
+/** Chunk was on 97492 **/
+/** chunk id: 821747, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => b
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk503698 = require("./503698.js"),
+  i = require.n(Chunk503698),
+  Chunk311907 = require("./311907.js"),
+  Chunk827343 = require("./827343.js"),
+  Chunk384059 = require("./384059.js"),
+  Chunk20504 = require("./20504.jsx"),
+  Chunk430452 = require("./430452.js"),
+  Chunk824744 = require("./824744.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk447404 = require("./447404.jsx"),
+  Chunk35204 = require("./35204.js");
+
+function b(e) {
+  let {
+    className: t,
+    iconClassName: n,
+    sliderClassName: l,
+    userId: b,
+    context: g,
+    currentWindow: m = window,
+    location: A
+  } = e, {
+    currentVolume: y,
+    muted: O
+  } = (0, a.cf)([u.A], () => ({
+    currentVolume: u.A.getLocalVolume(b, g),
+    muted: u.A.isLocalMute(b, g)
+  }));
+  return (0, r.jsx)(p.A, {
+    children: (0, r.jsx)(c.A, {
+      currentWindow: m,
+      iconClassName: i()(n, h.pd),
+      sliderClassName: l,
+      className: t,
+      value: (0, d.M)(y),
+      muted: O,
+      maxValue: f.isPlatformEmbedded ? 200 : 100,
+      onValueChange: e => {
+        e > 0 && O && s.A.toggleLocalMute(b, g), s.A.setLocalVolume(b, (0, d.w)(e), g)
+      },
+      onToggleMute: () => {
+        null != A && (0, o.X)(A, o.O.VOLUME, O), s.A.toggleLocalMute(b, g)
+      }
+    })
+  })
+}

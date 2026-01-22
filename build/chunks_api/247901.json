@@ -1,1 +1,1 @@
-{"id":"247901","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"247901","type":"experiment","data":{"kind":"user","id":"2023-03_aa_user_segment_filter","label":"AA test to validate segmentation filter","defaultConfig":{"isEnabled":false},"treatments":[{"id":1,"label":"AA test enabled. Noop on UI effect.","config":{"isEnabled":true}}]},"fromModule":{"id":"67878"}}

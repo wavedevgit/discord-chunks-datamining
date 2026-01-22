@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 160404, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 164956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
-}), require("./388685.js"), require("./997841.js");
-var r, Chunk95015 = require("./95015.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk485386 = require("./485386.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk251625 = require("./251625.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk225675 = require("./225675.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk526761 = require("./526761.js");
+  A: () => T
+}), require("./896048.js"), require("./938796.js");
+var r, Chunk665260 = require("./665260.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk317525 = require("./317525.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk583613 = require("./583613.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk209700 = require("./209700.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk355097 = require("./355097.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,7 +82,7 @@ function O(e) {
   delete E[t].roles[n]
 }
 
-function v(e) {
+function A(e) {
   var t;
   let {
     guildId: n,
@@ -90,16 +90,16 @@ function v(e) {
   } = e;
   if (null == n || null == E[n]) returnfalse;
   let a = E[n];
-  if (null == a || a.type !== d.z.NEW_MEMBER) returnfalse;
-  let o = null != (t = a.optInChannels) ? t : new Set;
+  if (null == a || a.type !== d._.NEW_MEMBER) returnfalse;
+  let s = null != (t = a.optInChannels) ? t : new Set;
   return u.default.keys(r).forEach(e => {
     var t;
     let n = r[e];
-    i.yE(null != (t = n.flags) ? t : 0, p.ic.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
-  }), a.optInChannels = o, true
+    i.Lt(null != (t = n.flags) ? t : 0, p.vv.OPT_IN_ENABLED) ? s.add(e) : s.delete(e)
+  }), a.optInChannels = s, true
 }
 
-function S(e) {
+function v(e) {
   var t;
   let {
     guildId: n,
@@ -108,13 +108,13 @@ function S(e) {
     removedOptionIds: a
   } = e;
   if (null == n || null == E[n]) returnfalse;
-  let o = E[n];
-  if (null == o || o.type !== d.z.NEW_MEMBER) returnfalse;
-  let s = null != (t = o.onboardingResponses) ? t : new Set;
-  return null != a && a.length > 0 && a.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), o.onboardingResponses = s, true
+  let s = E[n];
+  if (null == s || s.type !== d._.NEW_MEMBER) returnfalse;
+  let o = null != (t = s.onboardingResponses) ? t : new Set;
+  return null != a && a.length > 0 && a.forEach(e => o.delete(e)), i ? o.add(r) : o.delete(r), s.onboardingResponses = o, true
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     roles: n,
@@ -123,16 +123,16 @@ function I(e) {
   if (null == t) returnfalse;
   let i = E[t];
   return null != i && (null != n && (i.roles = n.reduce((e, n) => {
-    let r = s.Z.getRole(t, n);
+    let r = o.A.getRole(t, n);
     return null != r && (e[n] = r), e
-  }, {})), null != r && i.type === d.z.NEW_MEMBER && (i.memberOptions.flags = r), true)
+  }, {})), null != r && i.type === d._.NEW_MEMBER && (i.memberOptions.flags = r), true)
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.Z, s.Z)
+    this.waitFor(l.A, o.A)
   }
   hasViewingRoles() {
-    return !(0, c.ld)(E)
+    return !(0, c.DJ)(E)
   }
   isViewingRoles(e) {
     return null != e && null != E[e]
@@ -150,27 +150,27 @@ class T extends(r = Chunk442837.ZP.Store) {
   }
   isFullServerPreview(e) {
     var t;
-    return (null == (t = E[e]) ? true : t.type) === d.z.NEW_MEMBER
+    return (null == (t = E[e]) ? true : t.type) === d._.NEW_MEMBER
   }
   isOptInEnabled(e) {
     let t = E[e];
-    return null != t && t.type === d.z.NEW_MEMBER && t.optInEnabled
+    return null != t && t.type === d._.NEW_MEMBER && t.optInEnabled
   }
   isOnboardingEnabled(e) {
     let t = E[e];
-    return null != t && t.type === d.z.NEW_MEMBER && t.onboardingEnabled
+    return null != t && t.type === d._.NEW_MEMBER && t.onboardingEnabled
   }
   getViewingChannels(e) {
     let t = E[e];
-    return null == t || t.type !== d.z.NEW_MEMBER ? null : t.optInChannels
+    return null == t || t.type !== d._.NEW_MEMBER ? null : t.optInChannels
   }
   getOnboardingResponses(e) {
     let t = E[e];
-    return null == t || t.type !== d.z.NEW_MEMBER ? null : t.onboardingResponses
+    return null == t || t.type !== d._.NEW_MEMBER ? null : t.onboardingResponses
   }
   getMemberOptions(e) {
     let t = E[e];
-    return null == t || t.type !== d.z.NEW_MEMBER ? null : t.memberOptions
+    return null == t || t.type !== d._.NEW_MEMBER ? null : t.memberOptions
   }
   isChannelOptedIn(e, t) {
     let n = this.getViewingChannels(e);
@@ -178,7 +178,7 @@ class T extends(r = Chunk442837.ZP.Store) {
   }
   isViewingServerShop(e) {
     var t;
-    return null != e && (null == (t = E[e]) ? true : t.type) === d.z.SERVER_SHOP
+    return null != e && (null == (t = E[e]) ? true : t.type) === d._.SERVER_SHOP
   }
   getImpersonateType(e) {
     if (null == e) return null;
@@ -186,26 +186,26 @@ class T extends(r = Chunk442837.ZP.Store) {
     return null == t ? null : t.type
   }
   getBackNavigationSection(e) {
-    if (null == e) return f.pNK.ROLES;
+    if (null == e) return f.BEX.ROLES;
     let t = E[e];
-    if (null == t) return f.pNK.ROLES;
+    if (null == t) return f.BEX.ROLES;
     switch (t.type) {
-      case d.z.ROLES:
-      case d.z.SERVER_SHOP:
+      case d._.ROLES:
+      case d._.SERVER_SHOP:
         return t.returnToSection;
-      case d.z.NEW_MEMBER:
-        return f.pNK.ONBOARDING;
+      case d._.NEW_MEMBER:
+        return f.BEX.ONBOARDING;
       default:
-        return f.pNK.ROLES
+        return f.BEX.ROLES
     }
   }
 }
-_(T, "displayName", "ImpersonateStore");
-let C = new T(Chunk570140.Z, {
+_(I, "displayName", "ImpersonateStore");
+let T = new I(Chunk73153.h, {
   IMPERSONATE_UPDATE: b,
   IMPERSONATE_STOP: y,
   GUILD_ROLE_DELETE: O,
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: v,
-  GUILD_ONBOARDING_SELECT_OPTION: S,
-  GUILD_MEMBER_UPDATE_LOCAL: I
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: A,
+  GUILD_ONBOARDING_SELECT_OPTION: v,
+  GUILD_MEMBER_UPDATE_LOCAL: S
 })

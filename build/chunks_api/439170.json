@@ -1,1 +1,0 @@
-{"id":"439170","type":"store","data":{"name":"ChannelMemberStore","functions":[{"name":"initialize","args":[]},{"name":"getProps","args":["e","t"]},{"name":"getRows","args":["e","t"]}],"events":["CONNECTION_OPEN","OVERLAY_INITIALIZE","GUILD_MEMBER_LIST_UPDATE","GUILD_UPDATE","GUILD_DELETE","GUILD_ROLE_UPDATE","GUILD_MEMBER_UPDATE","CHANNEL_UPDATES"]},"fromModule":{"id":"web.js"}}

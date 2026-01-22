@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 230307, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 90165, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  A: () => b
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk827837 = require("./827837.js"),
-  Chunk627050 = require("./627050.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk661439 = require("./661439.js"),
+  Chunk352505 = require("./352505.js"),
+  Chunk652215 = require("./652215.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,9 +24,9 @@ let u = {},
   p = 36e5;
 
 function _() {
-  s.d.getCurrentConfig({
+  o.m.getCurrentConfig({
     location: "LibraryApplicationStatisticsStore.handleConnectionOpen"
-  }).enabled && (0, o.N)()
+  }).enabled && (0, s.X)()
 }
 
 function h() {
@@ -47,19 +47,19 @@ function g(e) {
     duration: t,
     applicationId: n,
     distributor: r
-  } = e, i = u[n], a = new Date().toISOString(), o = 0, s = 0;
+  } = e, i = u[n], a = new Date().toISOString(), s = 0, o = 0;
   if (null != i) {
     var c;
-    o = i.total_duration, s = null != (c = i.total_discord_sku_duration) ? c : 0
+    s = i.total_duration, o = null != (c = i.total_discord_sku_duration) ? c : 0
   }
-  o += t, r === l.GQo.DISCORD && (s += t), u[n] = {
+  s += t, r === l.d3x.DISCORD && (o += t), u[n] = {
     application_id: n,
-    total_duration: o,
+    total_duration: s,
     last_played_at: a,
-    total_discord_sku_duration: s
+    total_discord_sku_duration: o
   }
 }
-class E extends(r = Chunk442837.ZP.Store) {
+class E extends(r = Chunk311907.Ay.Store) {
   get applicationStatistics() {
     return u
   }
@@ -92,7 +92,7 @@ class E extends(r = Chunk442837.ZP.Store) {
   }
 }
 c(E, "displayName", "LibraryApplicationStatisticsStore");
-let b = new E(Chunk570140.Z, {
+let b = new E(Chunk73153.h, {
   USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: m,
   ACTIVITY_UPDATE_START: g,
   LOGOUT: h,

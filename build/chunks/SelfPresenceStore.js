@@ -1,30 +1,30 @@
 /** Chunk was on web.js **/
-/** chunk id: 885110, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 461213, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => K
-}), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./997841.js");
-var r, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
-  Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
-  Chunk95015 = require("./95015.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk503438 = require("./503438.js"),
-  Chunk768419 = require("./768419.js"),
-  Chunk695346 = require("./695346.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk780570 = require("./780570.js"),
-  Chunk404577 = require("./404577.js"),
-  Chunk517100 = require("./517100.js"),
-  Chunk283595 = require("./283595.js"),
-  Chunk293273 = require("./293273.js"),
-  Chunk158776 = require("./158776.js"),
-  Chunk797258 = require("./797258.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => z
+}), require("./321073.js"), require("./896048.js"), require("./638769.js"), require("./938796.js");
+var r, Chunk812729 = require("./812729.js"),
+  a = require.n(Chunk812729),
+  Chunk735438 = require("./735438.js"),
+  o = require.n(Chunk735438),
+  Chunk665260 = require("./665260.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk90644 = require("./90644.js"),
+  Chunk655116 = require("./655116.js"),
+  Chunk253932 = require("./253932.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk674378 = require("./674378.js"),
+  Chunk760751 = require("./760751.js"),
+  Chunk885576 = require("./885576.js"),
+  Chunk189081 = require("./189081.js"),
+  Chunk375492 = require("./375492.js"),
+  Chunk290863 = require("./290863.js"),
+  Chunk528767 = require("./528767.js"),
+  Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,14 +32,14 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let I = false,
-  T = Chunk981631.Skl.ONLINE,
-  C = Chunk981631.Skl.UNKNOWN,
-  A = 0,
+let S = false,
+  I = Chunk652215.clD.ONLINE,
+  T = Chunk652215.clD.UNKNOWN,
+  C = 0,
   N = [],
-  P = [],
+  R = [],
   w = false,
-  R = true,
+  P = true,
   D = Object.freeze([]),
   x = Object.freeze([]),
   L = [],
@@ -49,91 +49,91 @@ function M(e) {
   if (0 === e.length) return e;
   let t = [],
     n = [];
-  for (let r of e) r.type === v.IIU.PLAYING ? n.push(r) : t.push(r);
-  return 0 === n.length || 1 === n.length ? e : [...t, [...n].sort(y.f)[0]].sort(y.f)
+  for (let r of e) r.type === A.$pd.PLAYING ? n.push(r) : t.push(r);
+  return 0 === n.length || 1 === n.length ? e : [...t, [...n].sort(y.m)[0]].sort(y.m)
 }
 
 function k(e) {
-  return (0, h.OT)(e, E.Z)
+  return (0, h.kv)(e, E.A)
 }
 
 function U(e) {
-  let t = m.Z.getGameByName(e);
-  return null != t ? k(t.id) : p.G6.getSetting()
+  let t = m.A.getGameByName(e);
+  return null != t ? k(t.id) : p.tz.getSetting()
 }
 
 function G(e) {
   var t;
-  if ((0, l.yE)(null != (t = e.flags) ? t : 0, v.xjy.CONTEXTLESS)) returntrue;
+  if ((0, l.Lt)(null != (t = e.flags) ? t : 0, A.jUm.CONTEXTLESS)) returntrue;
   switch (e.type) {
-    case v.IIU.LISTENING:
-      if ((0, d.Z)(e)) return f.Z.shouldShowActivity();
+    case A.$pd.LISTENING:
+      if ((0, d.A)(e)) return f.A.shouldShowActivity();
       if (null != e.application_id) return k(e.application_id);
       returnfalse;
-    case v.IIU.PLAYING:
+    case A.$pd.PLAYING:
       return null != e.application_id ? k(e.application_id) : U(e.name);
-    case v.IIU.STREAMING:
-    case v.IIU.WATCHING:
+    case A.$pd.STREAMING:
+    case A.$pd.WATCHING:
     default:
       return null == e.application_id || k(e.application_id)
   }
 }
 
-function Z() {
-  R = true, C = T, F()
+function V() {
+  P = true, T = I, F()
 }
 
 function F() {
   var e;
-  if (A = null != (e = g.Z.getIdleSince()) ? e : 0, w = g.Z.isAFK(), R) T = C;
-  else if (I) T = v.Skl.INVISIBLE;
+  if (C = null != (e = g.A.getIdleSince()) ? e : 0, w = g.A.isAFK(), P) I = T;
+  else if (S) I = A.clD.INVISIBLE;
   else {
-    let e = p.co.getSetting();
-    T = e !== v.Skl.UNKNOWN ? e : v.Skl.ONLINE
+    let e = p.jP.getSetting();
+    I = e !== A.clD.UNKNOWN ? e : A.clD.ONLINE
   }
-  T === v.Skl.ONLINE && A > 0 && (T = v.Skl.IDLE);
+  I === A.clD.ONLINE && C > 0 && (I = A.clD.IDLE);
   let t = false,
-    n = R || T === v.Skl.INVISIBLE ? [] : b.Z.getActivities().filter(G);
-  a()(N, n) || (N = n, P = M(n), t = true);
-  let r = O.Z.getRemoteActivities();
+    n = P || I === A.clD.INVISIBLE ? [] : b.A.getActivities().filter(G);
+  a()(N, n) || (N = n, R = M(n), t = true);
+  let r = O.A.getRemoteActivities();
   D !== r && (D = r, t = true);
-  let i = O.Z.getHiddenActivities();
-  x !== i && (x = i), t && (j = M(L = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(y.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  let i = O.A.getHiddenActivities();
+  x !== i && (x = i), t && (j = M(L = o()([...N, ...D.filter(e => e.type !== A.$pd.CUSTOM_STATUS)].sort(y.m)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function B(e) {
-  return I = e.invisible, F()
-}
-
-function V() {
-  return I = false, F()
+  return S = e.invisible, F()
 }
 
 function H() {
-  R = false, C = v.Skl.UNKNOWN, F(), y.Z.setCurrentUserOnConnectionOpen(T, L)
+  return S = false, F()
 }
 
 function Y() {
-  H()
+  P = false, T = A.clD.UNKNOWN, F(), y.A.setCurrentUserOnConnectionOpen(I, L)
 }
-class W extends(r = Chunk442837.ZP.Store) {
+
+function W() {
+  Y()
+}
+class K extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(m.Z, g.Z, E.Z, b.Z, y.Z, O.Z, f.Z, _.Z), this.syncWith([b.Z], F)
+    this.waitFor(m.A, g.A, E.A, b.A, y.A, O.A, f.A, _.A), this.syncWith([b.A], F)
   }
   getLocalPresence() {
     return {
-      status: T,
-      since: A,
-      activities: P,
+      status: I,
+      since: C,
+      activities: R,
       afk: w
     }
   }
   getStatus() {
-    return T
+    return I
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return e ? j : P
+    return e ? j : R
   }
   getUnfilteredActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
@@ -155,12 +155,12 @@ class W extends(r = Chunk442837.ZP.Store) {
     return this.getActivities(t).find(e)
   }
 }
-S(W, "displayName", "SelfPresenceStore");
-let K = new W(Chunk570140.Z, {
+v(K, "displayName", "SelfPresenceStore");
+let z = new K(Chunk73153.h, {
   START_SESSION: F,
-  CONNECTION_OPEN: Y,
-  CONNECTION_OPEN_SUPPLEMENTAL: H,
-  OVERLAY_INITIALIZE: H,
+  CONNECTION_OPEN: W,
+  CONNECTION_OPEN_SUPPLEMENTAL: Y,
+  OVERLAY_INITIALIZE: Y,
   CONNECTION_CLOSED: F,
   IDLE: F,
   AFK: F,
@@ -175,7 +175,7 @@ let K = new W(Chunk570140.Z, {
   RPC_APP_DISCONNECTED: F,
   LIBRARY_FETCH_SUCCESS: F,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: F,
-  LOGOUT: Z,
+  LOGOUT: V,
   FORCE_INVISIBLE: B,
-  WINDOW_FOCUS: V
+  WINDOW_FOCUS: H
 })

@@ -1,21 +1,21 @@
-/** Chunk was on 1272 **/
-/** chunk id: 34828, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 868162, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => C,
-  Z: () => N
-}), require("./35282.js");
-var r, Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk846027 = require("./846027.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk131951 = require("./131951.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk533583 = require("./533583.js"),
-  Chunk65154 = require("./65154.js");
+  A: () => N,
+  x: () => v
+}), require("./747238.js");
+var r, Chunk735438 = require("./735438.js"),
+  l = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk827343 = require("./827343.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk430452 = require("./430452.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk792205 = require("./792205.js"),
+  Chunk731854 = require("./731854.js");
 
-function g(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,27 +23,27 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = {
+let A = {
     ignoredDevices: {}
   },
-  m = h,
-  b = false,
-  E = {},
+  g = A,
+  m = false,
+  b = {},
   _ = {},
-  O = {},
-  I = {
+  E = {},
+  O = {
     id: null,
     justChanged: false
   },
-  v = {
+  y = {
     id: null,
     justChanged: false
   },
-  y = /\(([^)]+)\)/;
+  I = /\(([^)]+)\)/;
 
-function C(e) {
+function v(e) {
   if ((0, d.getPlatform)() === d.PlatformTypes.WINDOWS) {
-    let t = e.name.match(y);
+    let t = e.name.match(I);
     if (null != t) return t[1]
   }
   return e.name
@@ -53,38 +53,38 @@ function S(e, t, n) {
   return null == e || e.displayName !== t ? {
     displayName: t,
     type: n
-  } : e.type === p.Q.INPUT && n === p.Q.OUTPUT || e.type === p.Q.OUTPUT && n === p.Q.INPUT ? {
+  } : e.type === p.E.INPUT && n === p.E.OUTPUT || e.type === p.E.OUTPUT && n === p.E.INPUT ? {
     displayName: t,
-    type: p.Q.INPUT_AND_OUTPUT
+    type: p.E.INPUT_AND_OUTPUT
   } : e
 }
-class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class C extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(u.Z, c.Z), m = null != e ? e : h
+    this.waitFor(u.A, c.A), g = null != e ? e : A
   }
   getUserAgnosticState() {
-    return m
+    return g
   }
   get initialized() {
-    return b
+    return m
   }
   get lastDeviceConnected() {
-    return O
-  }
-  get inputDevices() {
     return E
   }
+  get inputDevices() {
+    return b
+  }
   get lastInputSystemDevice() {
-    return I
+    return O
   }
   get outputDevices() {
     return _
   }
   get lastOutputSystemDevice() {
-    return v
+    return y
   }
 }
-g(T, "displayName", "ConnectedDeviceStore"), g(T, "persistKey", "ConnectedDeviceStore"), g(T, "migrations", [e => {
+h(C, "displayName", "ConnectedDeviceStore"), h(C, "persistKey", "ConnectedDeviceStore"), h(C, "migrations", [e => {
   if (null == e.ignoredDevices) {
     var t, n;
     return t = function(e) {
@@ -94,7 +94,7 @@ g(T, "displayName", "ConnectedDeviceStore"), g(T, "persistKey", "ConnectedDevice
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          g(e, t, n[t])
+          h(e, t, n[t])
         })
       }
       return e
@@ -113,41 +113,41 @@ g(T, "displayName", "ConnectedDeviceStore"), g(T, "persistKey", "ConnectedDevice
   }
   return e
 }]);
-let N = new T(Chunk570140.Z, {
+let N = new C(Chunk73153.h, {
   MEDIA_ENGINE_DEVICES: function(e) {
     let {
       inputDevices: t,
       outputDevices: n
     } = e, r = {};
-    I.justChanged = false, t.forEach(e => {
-      if (r[C(e)] = e.id, e.id === f.w5) {
+    O.justChanged = false, t.forEach(e => {
+      if (r[v(e)] = e.id, e.id === f.dx) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
-        n !== I.id && (I.justChanged = true), I.id = n
+        n !== O.id && (O.justChanged = true), O.id = n
       }
     });
     let i = {};
-    if (v.justChanged = false, n.forEach(e => {
-        if (i[C(e)] = e.id, e.id === f.w5) {
+    if (y.justChanged = false, n.forEach(e => {
+        if (i[v(e)] = e.id, e.id === f.dx) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
-          n !== v.id && (v.justChanged = true), v.id = n
+          n !== y.id && (y.justChanged = true), y.id = n
         }
-      }), !b) {
-      E = r, _ = i, b = true;
+      }), !m) {
+      b = r, _ = i, m = true;
       return
     }
-    let a = Object.keys(E),
-      o = Object.keys(r),
-      s = Object.keys(_),
+    let a = Object.keys(b),
+      s = Object.keys(r),
+      o = Object.keys(_),
       c = Object.keys(i),
-      u = l().difference(a, o),
-      d = l().difference(s, c);
-    return u.length > 0 || d.length > 0 ? O = {} : (l().difference(o, a).forEach(e => {
-      O[e] = S(O[e], e, p.Q.INPUT)
-    }), l().difference(c, s).forEach(e => {
-      O[e] = S(O[e], e, p.Q.OUTPUT)
-    })), !(l().isEqual(a, o) && l().isEqual(s, c)) && (E = r, _ = i, true)
+      u = l().difference(a, s),
+      d = l().difference(o, c);
+    return u.length > 0 || d.length > 0 ? E = {} : (l().difference(s, a).forEach(e => {
+      E[e] = S(E[e], e, p.E.INPUT)
+    }), l().difference(c, o).forEach(e => {
+      E[e] = S(E[e], e, p.E.OUTPUT)
+    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (b = r, _ = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
     let {
@@ -155,33 +155,33 @@ let N = new T(Chunk570140.Z, {
       connectedDevicePreference: n,
       location: r
     } = e;
-    if (n === p.a.INPUT || n === p.a.INPUT_AND_OUTPUT) {
-      let e = E[t];
-      null != e && o.Z.wait(() => s.Z.setInputDevice(e, {
+    if (n === p.f.INPUT || n === p.f.INPUT_AND_OUTPUT) {
+      let e = b[t];
+      null != e && s.h.wait(() => o.A.setInputDevice(e, {
         location: r
       }))
     }
-    if (n === p.a.OUTPUT || n === p.a.INPUT_AND_OUTPUT) {
+    if (n === p.f.OUTPUT || n === p.f.INPUT_AND_OUTPUT) {
       let e = _[t];
-      o.Z.wait(() => s.Z.setOutputDevice(e, {
+      s.h.wait(() => o.A.setOutputDevice(e, {
         location: r
       }))
     }
-    delete O[t]
+    delete E[t]
   },
   CONNECTED_DEVICE_DONT_SWITCH: function(e) {
     let {
       displayName: t
     } = e;
-    delete O[t]
+    delete E[t]
   },
   CONNECTED_DEVICE_IGNORE: function(e) {
     let {
       displayName: t
     } = e;
-    m.ignoredDevices[t] = true, delete O[t]
+    g.ignoredDevices[t] = true, delete E[t]
   },
   CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-    O = {}, m.neverShowModal = true
+    E = {}, g.neverShowModal = true
   }
 })

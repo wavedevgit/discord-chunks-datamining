@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 451478, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 531685, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
-}), require("./388685.js");
-var r, Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk830917 = require("./830917.js");
+  A: () => S
+}), require("./896048.js");
+var r, Chunk284009 = require("./284009.js"),
+  a = require.n(Chunk284009),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk365971 = require("./365971.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function m(e) {
     height: n,
     isElementFullscreen: r,
     focused: i,
-    visible: o
+    visible: s
   } = e;
   return _.set(e.windowId, {
     windowSize: {
@@ -80,7 +80,7 @@ function m(e) {
     },
     isElementFullscreen: r,
     focused: i,
-    visible: o
+    visible: s
   }), i && (p = e.windowId), true
 }
 
@@ -118,16 +118,16 @@ function y(e) {
 function O(e) {
   return _.delete(e.windowId), p === e.windowId && (p = null), true
 }
-class v extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   isFocused() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.Xg)();
     return h(e).focused
   }
   isAppFocused() {
     return null != this.getFocusedWindowId()
   }
   isVisible() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.Xg)();
     return h(e).visible
   }
   getFocusedWindowId() {
@@ -140,16 +140,16 @@ class v extends(r = Chunk442837.ZP.Store) {
     return p
   }
   isElementFullScreen() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.Xg)();
     return h(e).isElementFullscreen
   }
   windowSize() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.Xg)();
     return h(e).windowSize
   }
 }
-c(v, "displayName", "WindowStore");
-let S = new v(Chunk570140.Z, {
+c(A, "displayName", "WindowStore");
+let v = new A(Chunk73153.h, {
   WINDOW_INIT: m,
   WINDOW_FULLSCREEN_CHANGE: g,
   WINDOW_FOCUS: E,
@@ -157,16 +157,16 @@ let S = new v(Chunk570140.Z, {
   WINDOW_UNLOAD: O,
   WINDOW_VISIBILITY_CHANGE: b
 });
-Promise.resolve().then(require.bind(require, 626135)).then(e => {
+Promise.resolve().then(require.bind(require, 954571)).then(e => {
   let {
     addExtraAnalyticsDecorator: t
   } = e;
   t(e => {
     {
-      e.client_app_state = S.isAppFocused() ? "focused" : "unfocused";
-      let t = S.windowSize();
+      e.client_app_state = v.isAppFocused() ? "focused" : "unfocused";
+      let t = v.windowSize();
       e.client_viewport_width = t.width, e.client_viewport_height = t.height
     }
   })
 });
-let I = S
+let S = v

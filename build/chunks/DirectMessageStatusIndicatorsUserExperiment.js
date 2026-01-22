@@ -1,9 +1,9 @@
-/** Chunk was on 82124 **/
-/** chunk id: 37411, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 967978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => i
+  r: () => l
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-12_direct_message_status_indicators",
   label: "Voice/Video status indicators in direct messages",
@@ -19,7 +19,7 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e) {
+function l(e) {
   let {
     location: t
   } = e;

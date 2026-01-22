@@ -1,1 +1,0 @@
-{"id":"471411","type":"store","data":{"name":"LowPerformanceModeStore","functions":[{"name":"getState","args":[]},{"name":"optedOut","args":[]},{"name":"enabled","args":[]},{"name":"visible","args":[]},{"name":"active","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}

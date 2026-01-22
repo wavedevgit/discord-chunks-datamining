@@ -1,1 +1,0 @@
-{"id":"706454","type":"store","data":{"name":"LocaleStore","functions":[{"name":"initialize","args":[]},{"name":"locale","args":[]},{"name":"systemLocale","args":[]}],"events":["OVERLAY_INITIALIZE","CACHE_LOADED","CONNECTION_OPEN","USER_SETTINGS_PROTO_UPDATE","USER_SETTINGS_LOCALE_OVERRIDE"]},"fromModule":{"id":"web.js"}}

@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 246946, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 351906, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  A: () => O
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk652215 = require("./652215.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -33,7 +33,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  o.default.track(l.rMx.STREAMER_MODE_TOGGLE, {
+  s.default.track(l.HAw.STREAMER_MODE_TOGGLE, {
     enabled: e,
     automatic: t
   })
@@ -65,7 +65,7 @@ function g(e) {
 
 function E(e) {
   let t = u({}, _);
-  return _[e.key] = e.value, "enabled" === e.key ? d(e.value, false) : o.default.track(l.rMx.UPDATE_STREAMER_MODE_SETTINGS, {
+  return _[e.key] = e.value, "enabled" === e.key ? d(e.value, false) : s.default.track(l.HAw.UPDATE_STREAMER_MODE_SETTINGS, {
     enabled: _.enabled,
     automatic: _.autoToggle,
     disable_notifications: _.disableNotifications,
@@ -90,10 +90,10 @@ function b(e) {
     return _.enabled = t, d(t, true), true
   }
 }
-class y extends(r = Chunk442837.ZP.PersistedStore) {
+class y extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    Object.assign(p, e), this.syncWith([s.default], () => {
-      let e = s.default.getId();
+    Object.assign(p, e), this.syncWith([o.default], () => {
+      let e = o.default.getId();
       _ = null != e ? h(e) : u({}, f)
     })
   }
@@ -126,12 +126,12 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 c(y, "displayName", "StreamerModeStore"), c(y, "persistKey", "StreamerModeStore"), c(y, "migrations", [e => {
-  let t = s.default.getId();
+  let t = o.default.getId();
   return null == e || null == t ? {} : {
     [t]: u({}, e)
   }
 }]);
-let O = new y(Chunk570140.Z, {
+let O = new y(Chunk73153.h, {
   LOGOUT: m,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: g,
   STREAMER_MODE_UPDATE: E,

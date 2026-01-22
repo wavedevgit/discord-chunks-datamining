@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 5888, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 719718, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C,
-  p: () => c
+  $: () => c,
+  A: () => T
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk612776 = require("./612776.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk532294 = require("./532294.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -39,7 +39,7 @@ let u = {},
   p = {
     volume: 1,
     isMuted: false,
-    highestSlideSeen: Chunk612776.yD.WELCOME,
+    highestSlideSeen: Chunk532294.P7.WELCOME,
     hasSeenRewatchPopover: false
   },
   _ = l({}, p);
@@ -72,18 +72,18 @@ function O() {
   _.isMuted = !_.isMuted
 }
 
-function v(e) {
+function A(e) {
   _.highestSlideSeen = e.slide
 }
 
-function S() {
+function v() {
   f = true
 }
 
-function I() {
+function S() {
   _.hasSeenRewatchPopover = true
 }
-class T extends(r = Chunk442837.ZP.PersistedStore) {
+class I extends(r = Chunk311907.Ay.PersistedStore) {
   getState() {
     return _
   }
@@ -112,15 +112,15 @@ class T extends(r = Chunk442837.ZP.PersistedStore) {
     return f
   }
 }
-s(T, "displayName", "CheckpointStore"), s(T, "persistKey", "CheckpointStore");
-let C = new T(Chunk570140.Z, {
+o(I, "displayName", "CheckpointStore"), o(I, "persistKey", "CheckpointStore");
+let T = new I(Chunk73153.h, {
   CHECKPOINT_FETCH_START: g,
   CHECKPOINT_FETCH_SUCCESS: E,
   CHECKPOINT_FETCH_FAILED: b,
   CHECKPOINT_SET_VOLUME: y,
   CHECKPOINT_TOGGLE_MUTE: O,
-  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: v,
-  CHECKPOINT_AFTER_CLOSED: S,
-  CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: I,
+  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: A,
+  CHECKPOINT_AFTER_CLOSED: v,
+  CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: S,
   LOGOUT: m
 })

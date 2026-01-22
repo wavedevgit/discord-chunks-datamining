@@ -1,30 +1,30 @@
 /** Chunk was on web.js **/
-/** chunk id: 514361, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 47671, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => M
-}), require("./388685.js");
-var a, Chunk442837 = require("./442837.js"),
-  Chunk704215 = require("./704215.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk266454 = require("./266454.js"),
-  Chunk238514 = require("./238514.js"),
-  Chunk781391 = require("./781391.js"),
-  Chunk210887 = require("./210887.js"),
-  Chunk740492 = require("./740492.js"),
-  Chunk695346 = require("./695346.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk131704 = require("./131704.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk74538 = require("./74538.js"),
-  Chunk51144 = require("./51144.js"),
-  Chunk47760 = require("./47760.js"),
-  Chunk469115 = require("./469115.js"),
-  Chunk874893 = require("./874893.js");
+  A: () => M
+}), require("./896048.js");
+var a, Chunk311907 = require("./311907.js"),
+  Chunk554146 = require("./554146.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk826673 = require("./826673.js"),
+  Chunk284016 = require("./284016.js"),
+  Chunk973654 = require("./973654.js"),
+  Chunk544028 = require("./544028.js"),
+  Chunk964404 = require("./964404.js"),
+  Chunk253932 = require("./253932.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk95701 = require("./95701.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk927578 = require("./927578.js"),
+  Chunk427262 = require("./427262.js"),
+  Chunk644235 = require("./644235.js"),
+  Chunk385803 = require("./385803.js"),
+  Chunk185928 = require("./185928.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,9 +32,9 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = true,
-  C = false,
-  A = e => {
+let I = true,
+  T = false,
+  C = e => {
     let {
       presetId: t
     } = e;
@@ -42,7 +42,7 @@ let T = true,
       r = true;
       return
     }
-    r = v.qt[t]
+    r = A.ag[t]
   },
   N = e => {
     let {
@@ -54,7 +54,7 @@ let T = true,
     }
     i = t
   },
-  P = e => {
+  R = e => {
     r = true
   },
   w = e => {
@@ -62,48 +62,48 @@ let T = true,
       channelId: t,
       guildId: n
     } = e, r = E.default.getCurrentUser();
-    if (null == t || null == n || (0, c.zu)(s.z.CLIENT_THEMES_COACHMARK) || !(0, y.Fc)(r)) return;
-    let i = g.Z.getChannel(t);
-    null != i && (0, m.zi)(i.type) && (C = true)
+    if (null == t || null == n || (0, c.k8)(o.M.CLIENT_THEMES_COACHMARK) || !(0, y.G2)(r)) return;
+    let i = g.A.getChannel(t);
+    null != i && (0, m.ke)(i.type) && (T = true)
   };
 
-function R() {
-  T && (r = true), C = false
+function P() {
+  I && (r = true), T = false
 }
 let D = () => {
-    let e = !b.ZP.canUseClientThemes(E.default.getCurrentUser());
-    if (e === T) returnfalse;
-    T = e
+    let e = !b.Ay.canUseClientThemes(E.default.getCurrentUser());
+    if (e === I) returnfalse;
+    I = e
   },
   x = () => {
-    if (!u.Z.shouldSync("appearance")) returnfalse;
-    let e = _.L1.getSetting().backgroundGradientPresetId;
+    if (!u.A.shouldSync("appearance")) returnfalse;
+    let e = _.eh.getSetting().backgroundGradientPresetId;
     if (null == e) {
       if (null == r) returnfalse;
       r = true
     } else {
-      let t = v.qt[e];
+      let t = A.ag[e];
       if (t === r) returnfalse;
       r = t
     }
   },
   L = () => {
-    if (!u.Z.shouldSync("appearance")) returnfalse;
-    let e = _.L1.getSetting().backgroundGradientPresetId;
-    if (p.ZP.useSystemTheme === S.KW.ON && null != e && (0, d.hi)(S.KW.OFF), null == e) {
+    if (!u.A.shouldSync("appearance")) returnfalse;
+    let e = _.eh.getSetting().backgroundGradientPresetId;
+    if (p.Ay.useSystemTheme === v.Q_.ON && null != e && (0, d.k7)(v.Q_.OFF), null == e) {
       null != r && (r = true);
       return
     }
-    let t = v.qt[e],
+    let t = A.ag[e],
       n = (null == r ? true : r.id) === (null == t ? true : t.id);
     null == t || n || (r = t)
   };
-class j extends(a = Chunk442837.ZP.PersistedStore) {
+class j extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? v.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, p.ZP, h.Z, E.default), this.syncWith([E.default], D), this.syncWith([u.Z], x)
+    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? A.ag[e.gradientPresetId] : true), this.waitFor(g.A, u.A, f.A, p.Ay, h.A, E.default), this.syncWith([E.default], D), this.syncWith([u.A], x)
   }
   getState() {
-    return T ? {} : {
+    return I ? {} : {
       gradientPresetId: null == r ? true : r.id
     }
   }
@@ -111,19 +111,19 @@ class j extends(a = Chunk442837.ZP.PersistedStore) {
     return r
   }
   getLinearGradient() {
-    return null == this.gradientPreset ? null : (0, O.VK)(this.gradientPreset)
+    return null == this.gradientPreset ? null : (0, O.FK)(this.gradientPreset)
   }
   get isPreview() {
-    return T
+    return I
   }
   get isCoachmark() {
-    return C
+    return T
   }
   get mobilePendingThemeIndex() {
     return i
   }
   constructor(...e) {
-    super(...e), I(this, "migrations", [e => {
+    super(...e), S(this, "migrations", [e => {
       var t;
       return {
         gradientPresetId: null == e || null == (t = e.gradientPreset) ? true : t.id
@@ -131,14 +131,14 @@ class j extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-I(j, "displayName", "ClientThemesBackgroundStore"), I(j, "persistKey", "ClientThemesBackgroundStore");
-let M = new j(Chunk570140.Z, {
-  UPDATE_BACKGROUND_GRADIENT_PRESET: A,
+S(j, "displayName", "ClientThemesBackgroundStore"), S(j, "persistKey", "ClientThemesBackgroundStore");
+let M = new j(Chunk73153.h, {
+  UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: N,
-  RESET_PREVIEW_CLIENT_THEME: P,
-  CLIENT_THEMES_EDITOR_CLOSE: R,
+  RESET_PREVIEW_CLIENT_THEME: R,
+  CLIENT_THEMES_EDITOR_CLOSE: P,
   CHANNEL_SELECT: w,
-  LOGOUT: R,
+  LOGOUT: P,
   CACHE_LOADED: L,
   CONNECTION_OPEN: L,
   OVERLAY_INITIALIZE: L,

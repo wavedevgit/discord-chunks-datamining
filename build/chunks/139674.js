@@ -1,18 +1,13 @@
 /** Chunk was on web.js **/
 /** chunk id: 139674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  Z: () => s
-});
-var Chunk668757 = require("./668757.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk981631 = require("./981631.js");
-class o {
-  static isBlockedDomain(e) {
-    let t = (0, r.un)() ? (0, r.PJ)(e) : null;
-    return "" !== t && null !== t && i.default.track(a.rMx.LINK_SECURITY_CHECK_BLOCKED, {
-      blocked_domain: t
-    }), t
-  }
+module.exports = {
+  PN: "_4355b87657a932db",
+  Pm: "_9c2089db9d007d21",
+  aY: "f47874d329a356d3",
+  vN: "ed7bb69e78475906",
+  PA: "d5ef90ad1137ad46",
+  Uc: "a655ff99658f6de9",
+  s6: "_30a64e9a1dbfd2f1",
+  SZ: "b2f0477fdd4c24d6"
 }
-let s = o

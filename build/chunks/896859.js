@@ -1,4 +1,19 @@
 /** Chunk was on web.js **/
 /** chunk id: 896859, original params: e (module,exports,re quire) **/
-"use strict";
-module.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+module.exports = function(e) {
+  return {
+    name: "Backus–Naur Form",
+    contains: [{
+      className: "attribute",
+      begin: /</,
+      end: />/
+    }, {
+      begin: /::=/,
+      end: /$/,
+      contains: [{
+        begin: /</,
+        end: />/
+      }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
+    }]
+  }
+}

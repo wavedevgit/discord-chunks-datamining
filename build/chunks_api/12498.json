@@ -1,1 +1,0 @@
-{"id":"12498","type":"store","data":{"name":"ChannelStatusStore","functions":[{"name":"initialize","args":[]},{"name":"getChannelStatus","args":["e"]}],"events":["GUILD_CREATE","GUILD_DELETE","CONNECTION_RESUMED","CONNECTION_OPEN","VOICE_CHANNEL_STATUS_UPDATE","CHANNEL_STATUSES"]},"fromModule":{"id":"web.js"}}

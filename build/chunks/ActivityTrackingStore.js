@@ -1,48 +1,48 @@
-/** Chunk was on 1272 **/
-/** chunk id: 243852, original params: e,t,n (module,exports,require) **/
-require("./388685.js");
-var r, i, l, Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk846519 = require("./846519.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk278323 = require("./278323.js"),
-  Chunk581567 = require("./581567.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk780570 = require("./780570.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk404577 = require("./404577.js"),
-  Chunk283595 = require("./283595.js"),
-  Chunk19780 = require("./19780.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk981631 = require("./981631.js");
-let v = "ActivityTrackingStore",
-  y = 30 * Chunk70956.Z.Millis.MINUTE,
-  C = 5 * Chunk70956.Z.Millis.MINUTE,
-  S = null != (r = Chunk433517.K.get(v)) ? r : {},
-  T = {},
+/** Chunk was on 21738 **/
+/** chunk id: 140061, original params: e,t,n (module,exports,require) **/
+require("./896048.js");
+var r, i, l, Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk451988 = require("./451988.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk308368 = require("./308368.js"),
+  Chunk973522 = require("./973522.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk674378 = require("./674378.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk760751 = require("./760751.js"),
+  Chunk189081 = require("./189081.js"),
+  Chunk383501 = require("./383501.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk652215 = require("./652215.js");
+let y = "ActivityTrackingStore",
+  I = 30 * Chunk927813.A.Millis.MINUTE,
+  v = 5 * Chunk927813.A.Millis.MINUTE,
+  S = null != (r = Chunk506774.w.get(y)) ? r : {},
+  C = {},
   N = false;
 
-function j(e) {
+function T(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  t && x(e, true);
-  let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(v, S)
+  t && j(e, true);
+  let n = C[e.applicationId];
+  null != n && (n.stop(), delete C[e.applicationId]), delete S[e.applicationId], s.w.set(y, S)
 }
 
-function x(e) {
+function j(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
-  r > y + C && (r = 0);
-  let i = (0, h.OT)(e.applicationId, E.Z),
-    l = O.Z.getVoiceChannelId(),
-    a = m.default.getSessionId(),
-    c = _.Z.getMediaSessionId();
-  u.Z.updateActivity({
+  r > I + v && (r = 0);
+  let i = (0, A.kv)(e.applicationId, b.A),
+    l = E.A.getVoiceChannelId(),
+    a = g.default.getSessionId(),
+    c = _.A.getMediaSessionId();
+  u.A.updateActivity({
     applicationId: e.applicationId,
-    distributor: e.isDiscordApplication ? I.GQo.DISCORD : e.distributor,
+    distributor: e.isDiscordApplication ? O.d3x.DISCORD : e.distributor,
     shareActivity: i,
     token: e.token,
     duration: Math.floor(r / 1e3),
@@ -52,13 +52,13 @@ function x(e) {
     sessionId: a,
     mediaSessionId: c
   }), e.updatedAt = n;
-  let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new s.Xp).start(y, () => x(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
+  let d = C[e.applicationId];
+  null == d && (d = C[e.applicationId] = new o.IX).start(I, () => j(e)), t || (S[e.applicationId] = e, s.w.set(y, S))
 }
 
-function P() {
+function x() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-    t = p.ZP.getVisibleRunningGames(),
+    t = p.Ay.getVisibleRunningGames(),
     n = new Set;
   for (let {
       name: e,
@@ -66,60 +66,60 @@ function P() {
       exePath: i
     }
     of t) {
-    let t = b.Z.getGameByName(e);
-    null != t && (n.add(t.id), t.id in S || x({
+    let t = m.A.getGameByName(e);
+    null != t && (n.add(t.id), t.id in S || j({
       applicationId: t.id,
       updatedAt: Date.now(),
       distributor: r,
-      exePath: (0, d.N6)(null != i ? i : "")
+      exePath: (0, d.Ic)(null != i ? i : "")
     }))
   }
-  for (let t of Object.keys(S)) n.has(t) || j(S[t], e)
+  for (let t of Object.keys(S)) n.has(t) || T(S[t], e)
 }
 
-function A() {
-  for (let e of Object.keys(S)) j(S[e]);
+function P() {
+  for (let e of Object.keys(S)) T(S[e]);
   N = false
 }
-class Z extends(i = Chunk442837.ZP.Store) {
+class w extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(m.default, b.Z, E.Z, _.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], P)
+    this.waitFor(g.default, m.A, b.A, _.A, p.Ay, E.A, f.A), this.syncWith([f.A], x)
   }
   getActivities() {
     return S
   }
-}(l = "displayName") in Z ? Object.defineProperty(Z, l, {
+}(l = "displayName") in w ? Object.defineProperty(w, l, {
   value: "ActivityTrackingStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : Z[l] = "ActivityTrackingStore", new Z(Chunk570140.Z, {
-  RUNNING_GAMES_CHANGE: () => P(),
+}) : w[l] = "ActivityTrackingStore", new w(Chunk73153.h, {
+  RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (N) returnfalse;
-    for (let e of Object.keys(S)) x(S[e]);
-    P(false), N = true
+    for (let e of Object.keys(S)) j(S[e]);
+    x(false), N = true
   },
   CONNECTION_CLOSED: function(e) {
     let {
       code: t
     } = e;
-    4004 === t && A()
+    4004 === t && P()
   },
-  LOGOUT: A,
+  LOGOUT: P,
   ACTIVITY_UPDATE_SUCCESS: function(e) {
     let {
       applicationId: t,
       token: n
     } = e, r = S[t];
     if (null == r) returnfalse;
-    r.token = n, o.K.set(v, S)
+    r.token = n, s.w.set(y, S)
   },
   ACTIVITY_UPDATE_FAIL: function(e) {
     let {
       applicationId: t
     } = e, n = S[t];
     if (null == n) returnfalse;
-    n.token = null, n.updatedAt = null, o.K.set(v, S)
+    n.token = null, n.updatedAt = null, s.w.set(y, S)
   }
 })

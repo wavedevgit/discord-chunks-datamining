@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 479766, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 505274, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
+  A: () => l
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends(r = Chunk442837.ZP.Store) {
+class o extends(r = Chunk311907.Ay.Store) {
   get redeemError() {
     return this._redeemVirtualCurrencyError
   }
@@ -101,7 +101,7 @@ class s extends(r = Chunk442837.ZP.Store) {
     this._onboardingModalOpenedPrior = false
   }
   constructor() {
-    super(a.Z, {
+    super(a.h, {
       VIRTUAL_CURRENCY_REDEEM_START: e => this.handleRedeemVirtualCurrencyStart(e),
       VIRTUAL_CURRENCY_REDEEM_SUCCESS: e => this.handleRedeemVirtualCurrencySuccess(e),
       VIRTUAL_CURRENCY_REDEEM_FAIL: e => this.handleRedeemVirtualCurrencyFail(e),
@@ -115,8 +115,8 @@ class s extends(r = Chunk442837.ZP.Store) {
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
         this.setBalancePillOverlay(e.balancePillOverlay)
       }
-    }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", false), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", false), o(this, "_onboardingModalOpenedPrior", false), o(this, "_balancePillOverlay", false)
+    }), s(this, "_entitlements", null), s(this, "_redeemingSkuId", null), s(this, "_isRedeemingVirtualCurrency", false), s(this, "_redeemVirtualCurrencyError", null), s(this, "_balance", null), s(this, "_fetchBalanceError", null), s(this, "_isFetchingBalance", false), s(this, "_onboardingModalOpenedPrior", false), s(this, "_balancePillOverlay", false)
   }
 }
-o(s, "displayName", "VirtualCurrencyStore");
-let l = new s
+s(o, "displayName", "VirtualCurrencyStore");
+let l = new o

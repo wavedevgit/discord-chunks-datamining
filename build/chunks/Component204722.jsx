@@ -1,0 +1,275 @@
+/** Chunk was on 97492 **/
+/** chunk id: 204722, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  W: () => R,
+  f: () => D
+}), require("./896048.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk284009 = require("./284009.js"),
+  a = require.n(Chunk284009),
+  Chunk141628 = require("./141628.jsx"),
+  Chunk554146 = require("./554146.js"),
+  Chunk342494 = require("./342494.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk298990 = require("./298990.js"),
+  Chunk646865 = require("./646865.js"),
+  Chunk833349 = require("./833349.js"),
+  Chunk869003 = require("./869003.jsx"),
+  Chunk688810 = require("./688810.jsx"),
+  Chunk362490 = require("./362490.js"),
+  Chunk384059 = require("./384059.js"),
+  Chunk359348 = require("./359348.jsx"),
+  Chunk379848 = require("./379848.jsx"),
+  Chunk625180 = require("./625180.js"),
+  Chunk338771 = require("./338771.js"),
+  Chunk453774 = require("./453774.js"),
+  Chunk44724 = require("./44724.js"),
+  Chunk849134 = require("./849134.jsx"),
+  Chunk95701 = require("./95701.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk42473 = require("./42473.jsx"),
+  Chunk652215 = require("./652215.js"),
+  Chunk49999 = require("./49999.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk275540 = require("./275540.js");
+
+function R(e, t, n) {
+  if (null == e) returnfalse;
+  if (null != n) return n.applicationId === e.id;
+  if (null != t) {
+    var r;
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === N.$pd.PLAYING && (0, p.A)(t, N.jUm.JOIN)
+  }
+  returnfalse
+}
+let D = Chunk64700.memo(function(e) {
+    var t, i;
+    let {
+      stream: s,
+      canGoLive: o,
+      isStreaming: p,
+      channel: y,
+      canStream: x,
+      runningGame: E,
+      embeddedActivity: T,
+      frame: D,
+      activity: G,
+      application: k,
+      analyticsContext: U,
+      inviteButtonRef: V,
+      accountLinkButtonRef: F,
+      startAuthorization: H,
+      canStartAuthorization: B,
+      hasAlreadyLinked: K,
+      connectionApp: W
+    } = e, {
+      parentAnalyticsLocation: z,
+      analyticsLocations: Y
+    } = (0, b.Ay)(), q = (0, v.A)(k, "rtc-activity-panel"), X = R(k, G, T), J = l.useCallback(() => {
+      var e;
+      a()(null != G, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
+        action_type: "invite_to_game",
+        game_id: null != (e = null == E ? true : E.id) ? e : null,
+        application_id: G.application_id
+      }), (0, m.X)(z, m.O.INVITE), S.default.track(N.HAw.OPEN_MODAL, {
+        type: "Send Join Invite",
+        application_id: G.application_id,
+        location: U.location
+      }), (0, d.qf)(G, false)
+    }, [G, U, z, E]), Q = l.useCallback((e, t) => () => {
+      (0, m.X)(z, m.O.LEAVE_ACTIVITY), h.A.leaveActivity({
+        location: t,
+        applicationId: e,
+        showFeedback: true
+      })
+    }, [z]), Z = l.useCallback(e => () => {
+      (0, m.X)(z, m.O.LEAVE_ACTIVITY), O.A.stopFrame({
+        applicationId: e
+      })
+    }, [z]), $ = l.useCallback(() => {
+      (0, j.A)(s)
+    }, [s]), ee = l.useCallback(() => {
+      (0, u.mMO)(async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("96811"), n.e("13337")]).then(n.bind(n, 648230));
+        return t => {
+          var n, l;
+          return (0, r.jsx)(e, (n = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, t), l = l = {
+            sourcePID: null == E ? true : E.pid,
+            selectSource: null != C.A.getVoiceChannelId(),
+            analyticsLocations: Y
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+          }), n))
+        }
+      })
+    }, [E, Y]), et = l.useRef(null), [en, er] = l.useState(false);
+    l.useEffect(() => () => {
+      null != et.current && clearTimeout(et.current)
+    }, []), l.useEffect(() => {
+      K && (er(false), null != et.current && (clearTimeout(et.current), et.current = null))
+    }, [K]);
+    let el = (null == q ? true : q.guildId) == null || null == k ? null : (0, r.jsx)(L, {
+        guildId: q.guildId,
+        applicationId: q.id
+      }),
+      ei = function() {
+        let e, t, n;
+        if (null == E && null != T && !(0, f.f)() || !p && !o) return null;
+        let l = null;
+        return p ? (e = false, t = () => {
+          $(), (0, m.X)(z, m.O.STREAM, false)
+        }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : x ? (e = false, t = () => {
+          ee(), (0, m.X)(z, m.O.STREAM, true)
+        }, n = u.Fzq, l = null != E ? P.intl.formatToPlainString(P.t.AB5gTy, {
+          game: E.name
+        }) : P.intl.string(P.t.FeUKeA)) : (e = true, t = null, n = u.Fzq, null != y && (0, _.gV)(y.type) && (l = P.intl.string(P.t.uQn9B8))), (0, r.jsx)("div", {
+          className: w.IF,
+          children: (0, r.jsx)(I.A, {
+            tooltipText: l,
+            disabled: e,
+            onClick: t,
+            icon: n
+          })
+        })
+      }(),
+      ea = X && null == T ? (0, r.jsx)(I.A, {
+        ref: V,
+        tooltipText: P.intl.string(P.t["hC/Zey"]),
+        onClick: J,
+        icon: u.DpX
+      }) : null,
+      es = null == T ? null : (0, r.jsx)(I.A, {
+        tooltipText: P.intl.string(P.t["R/FK4A"]),
+        onClick: Q(T.applicationId, T.location),
+        icon: u.oLl
+      }),
+      eo = null == D ? null : (0, r.jsx)(I.A, {
+        tooltipText: P.intl.string(P.t["R/FK4A"]),
+        onClick: Z(D.applicationId),
+        icon: u.oLl
+      }),
+      ec = null == s ? null : (0, r.jsx)(A.A, {}),
+      eu = !B || K ? null : (0, r.jsx)(M, {
+        runningGame: E,
+        startAuthorization: () => {
+          H({
+            analyticsLocations: Y
+          }) === g._M.RPC && (er(true), null != et.current && clearTimeout(et.current), et.current = setTimeout(() => {
+            er(false)
+          }, 9e4))
+        },
+        connectionApp: W,
+        ref: F
+      }),
+      ed = !B || K ? null : (0, r.jsx)(c.AM, {
+        title: P.intl.string(P.t.ULvRFd),
+        body: P.intl.string(P.t["HJJDr+"]),
+        targetElementRef: F,
+        position: "top",
+        align: "center",
+        caretConfig: {
+          align: "center"
+        },
+        shouldShow: en,
+        onRequestClose: () => {
+          er(false), null != et.current && (clearTimeout(et.current), et.current = null)
+        }
+      });
+    return null == ei && null == ea && null == es && null == eo && null == eu && null == el ? null : (0, r.jsxs)("div", {
+      className: w.o1,
+      children: [null != (t = null != el ? el : eu) ? t : ea, ei, null != (i = null != es ? es : eo) ? i : ec, ed]
+    })
+  }),
+  M = Chunk64700.forwardRef(function(e, t) {
+    let {
+      runningGame: n,
+      startAuthorization: l,
+      connectionApp: i
+    } = e;
+    return (0, r.jsx)(I.A, {
+      ref: t,
+      onClick: () => {
+        var e, t;
+        S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
+          action_type: "link_account",
+          game_id: null != (e = null == n ? true : n.id) ? e : null,
+          application_id: null != (t = null == i ? true : i.id) ? t : null
+        }), l()
+      },
+      icon: s.A,
+      tooltipText: P.intl.string(P.t.sbdnpw)
+    })
+  });
+
+function L(e) {
+  let {
+    applicationId: t,
+    guildId: n
+  } = e, i = l.useRef(null);
+  l.useEffect(() => {
+    S.default.track(N.HAw.RTC_GAME_SHOP_BUTTON_VIEWED, {
+      application_id: t
+    })
+  }, [t]);
+  let [a, s] = (0, y.kn)([o.M.GAME_SHOP_RTC_POPOVER], T.m.ACCOUNT_NAME_ZONE, true), c = l.useCallback(() => {
+    (0, x.X)({
+      guildId: n
+    })
+  }, [n]), d = l.useCallback(() => {
+    (0, x.default)({
+      guildId: n
+    }), s(T.i.USER_DISMISS)
+  }, [n, s]), f = l.useCallback(() => {
+    S.default.track(N.HAw.RTC_GAME_SHOP_BUTTON_CLICKED, {
+      application_id: t
+    }), d()
+  }, [t, d]), p = l.useCallback(() => {
+    s(T.i.USER_DISMISS)
+  }, [s]);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(I.A, {
+      tooltipText: P.intl.string(P.t.vyaWs7),
+      onClick: f,
+      onMouseDown: c,
+      icon: u.U1X,
+      ref: i
+    }), a === o.M.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(E.A, {
+      onActionClick: d,
+      onRequestClose: p,
+      targetElementRef: i,
+      position: "top",
+      align: "center",
+      caretConfig: {
+        align: "center"
+      }
+    }) : null]
+  })
+}

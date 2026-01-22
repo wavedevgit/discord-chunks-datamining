@@ -1,10 +1,10 @@
-/** Chunk was on 53900 **/
-/** chunk id: 645792, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38763 **/
+/** chunk id: 664531, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l,
-  b: () => a
+  A: () => a,
+  a: () => l
 });
-let i = (0, require("./818083.js").B)({
+let i = (0, require("./600975.js").C)({
     kind: "user",
     id: "2022-08_back_to_school",
     label: "Back to School Event",
@@ -19,9 +19,9 @@ let i = (0, require("./818083.js").B)({
       }
     }]
   }),
-  l = i;
+  a = i;
 
-function a() {
+function l() {
   return i.getCurrentConfig({
     location: "68acbb_1"
   }, {

@@ -1,1 +1,0 @@
-{"id":"923834","type":"store","data":{"name":"ApplicationStoreLocationStore","functions":[{"name":"getCurrentPath","args":[]},{"name":"getCurrentRoute","args":[]},{"name":"reset","args":[]}],"events":["APPLICATION_STORE_LOCATION_CHANGE","APPLICATION_STORE_RESET_NAVIGATION"]},"fromModule":{"id":"web.js"}}

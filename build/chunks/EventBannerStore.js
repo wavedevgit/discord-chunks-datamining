@@ -1,13 +1,13 @@
-/** Chunk was on 82124 **/
-/** chunk id: 115648, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 87401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk765305 = require("./765305.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk988794 = require("./988794.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,20 +16,20 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 let c = {};
-class u extends(r = Chunk442837.ZP.PersistedStore) {
+class u extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;
@@ -45,14 +45,14 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-o(u, "displayName", "EventBannerStore"), o(u, "persistKey", "EventBanner");
-let d = new u(Chunk570140.Z, {
+s(u, "displayName", "EventBannerStore"), s(u, "persistKey", "EventBanner");
+let d = new u(Chunk73153.h, {
   EVENT_BANNER_DISMISS: function(e) {
     var t, n;
     let {
       eventId: r
     } = e;
-    t = s({}, c), n = n = {
+    t = o({}, c), n = n = {
       [r]: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -69,8 +69,8 @@ let d = new u(Chunk570140.Z, {
     let {
       guildScheduledEvent: t
     } = e;
-    if (t.status !== a.p1.CANCELED && t.status !== a.p1.COMPLETED || null == c[t.id]) returnfalse;
-    let n = s({}, c);
+    if (t.status !== a.XG.CANCELED && t.status !== a.XG.COMPLETED || null == c[t.id]) returnfalse;
+    let n = o({}, c);
     delete n[t.id], c = n
   },
   GUILD_SCHEDULED_EVENT_DELETE: function(e) {
@@ -78,7 +78,7 @@ let d = new u(Chunk570140.Z, {
       guildScheduledEvent: t
     } = e;
     if (null == c[t.id]) returnfalse;
-    let n = s({}, c);
+    let n = o({}, c);
     delete n[t.id], c = n
   }
 })

@@ -1,30 +1,30 @@
-/** Chunk was on 9536 **/
-/** chunk id: 103576, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 47841 **/
+/** chunk id: 396816, original params: e,t,n (module,exports,require) **/
 "use strict";
 let r, i, l;
 require.d(exports, {
-  Z: () => q,
-  g: () => S
-}), require("./388685.js"), require("./953529.js");
-var a, s, Chunk392711 = require("./392711.js"),
-  c = require.n(Chunk392711),
-  Chunk149765 = require("./149765.js"),
-  Chunk866442 = require("./866442.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk311929 = require("./311929.js"),
-  Chunk561654 = require("./561654.js"),
-  Chunk606318 = require("./606318.js"),
-  Chunk402235 = require("./402235.js"),
-  Chunk485386 = require("./485386.js"),
-  Chunk990492 = require("./990492.js"),
-  Chunk823379 = require("./823379.js"),
-  Chunk700785 = require("./700785.js"),
-  Chunk999382 = require("./999382.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk141006 = require("./141006.js");
+  A: () => J,
+  y: () => S
+}), require("./896048.js"), require("./228524.js");
+var s, a, Chunk735438 = require("./735438.js"),
+  o = require.n(Chunk735438),
+  Chunk136722 = require("./136722.js"),
+  Chunk317097 = require("./317097.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk867051 = require("./867051.js"),
+  Chunk145643 = require("./145643.js"),
+  Chunk176201 = require("./176201.js"),
+  Chunk676608 = require("./676608.js"),
+  Chunk317525 = require("./317525.js"),
+  Chunk111613 = require("./111613.js"),
+  Chunk403362 = require("./403362.js"),
+  Chunk488926 = require("./488926.js"),
+  Chunk555337 = require("./555337.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk178758 = require("./178758.js");
 
-function E(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,115 +33,115 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
 }
-var S = ((s = {}).SOLID = "solid", s.GRADIENT = "gradient", s.HOLOGRAPHIC = "holographic", s);
-let _ = new Set,
-  T = Chunk981631.QZA.CLOSED,
+var S = ((a = {}).SOLID = "solid", a.GRADIENT = "gradient", a.HOLOGRAPHIC = "holographic", a);
+let T = new Set,
+  I = Chunk652215.XlH.CLOSED,
+  C = false,
   P = false,
-  w = false,
-  Z = [],
+  w = [],
   R = [],
   D = false,
-  A = new Set,
+  G = new Set,
   L = new Map,
   k = new Map,
-  G = new Map;
+  M = new Map;
 
-function M() {
-  return null == r || null == Z ? [] : j.ZP.calculatePositionDeltas({
-    oldOrdering: x.Z.getSortedRoles(r.id),
-    newOrdering: Z,
+function U() {
+  return null == r || null == w ? [] : j.Ay.calculatePositionDeltas({
+    oldOrdering: h.A.getSortedRoles(r.id),
+    newOrdering: w,
     idGetter: e => e.id,
     existingPositionGetter: e => e.position,
     ascending: false
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     section: t
   } = e;
-  if (null != r || t !== C.pNK.ROLES) returnfalse;
+  if (null != r || t !== A.BEX.ROLES) returnfalse;
   B()
 }
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = y.Z.getProps().guild, P = false, w = false, l = true, _.clear(), G.clear(), T = C.QZA.OPEN, R = [...Z = null != r ? [...x.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, R), D = false, e && (k.clear(), L.forEach((e, t) => {
+  r = v.A.getProps().guild, C = false, P = false, l = true, T.clear(), M.clear(), I = A.XlH.OPEN, R = [...w = null != r ? [...h.A.getSortedRoles(r.id)] : []], H(null == r ? true : r.id, R), D = false, e && (k.clear(), L.forEach((e, t) => {
     k.set(t, [...e])
   }))
 }
 
-function F(e, t) {
+function H(e, t) {
   t.forEach(t => {
     let n = "solid",
-      r = (0, h.zI)(e, t);
+      r = (0, x.aF)(e, t);
     null != t.colors && r && (null != t.colors.tertiary_color ? n = "holographic" : null != t.colors.secondary_color && (n = "gradient"));
     let i = {
       solid: {
-        primary_color: C.p6O,
+        primary_color: A.TGz,
         secondary_color: null,
         tertiary_color: null
       },
       gradient: {
-        primary_color: N.Eg.primary_color,
-        secondary_color: N.Eg.secondary_color,
+        primary_color: E.lO.primary_color,
+        secondary_color: E.lO.secondary_color,
         tertiary_color: null
       },
       holographic: {
-        primary_color: N.SK.primary_color,
-        secondary_color: N.SK.secondary_color,
-        tertiary_color: N.SK.tertiary_color
+        primary_color: E.jl.primary_color,
+        secondary_color: E.jl.secondary_color,
+        tertiary_color: E.jl.tertiary_color
       }
     };
     if (null != t.colors) {
-      var l, a, s;
+      var l, s, a;
       i[n] = {
-        primary_color: null != (l = t.colors.primary_color) ? l : C.p6O,
-        secondary_color: null != (a = t.colors.secondary_color) ? a : null,
-        tertiary_color: null != (s = t.colors.tertiary_color) ? s : null
+        primary_color: null != (l = t.colors.primary_color) ? l : A.TGz,
+        secondary_color: null != (s = t.colors.secondary_color) ? s : null,
+        tertiary_color: null != (a = t.colors.tertiary_color) ? a : null
       }
     }
-    G.set(t.id, {
+    M.set(t.id, {
       currentStyle: n,
       styleColors: i
     })
   })
 }
-let H = c().debounce(() => {
+let V = o().debounce(() => {
   let e = false;
-  w && ((w = M().length > 0) || (e = true)), [..._].forEach(t => {
+  P && ((P = U().length > 0) || (e = true)), [...T].forEach(t => {
     var n;
-    c().isEqual(z(t), (n = t, R.find(e => {
+    o().isEqual(z(t), (n = t, R.find(e => {
       let {
         id: t
       } = e;
       return t === n
-    }))) && (_.delete(t), e = true)
-  }), 0 === _.size && (P = false), D && c().isEqual(L, k) && (e = true, D = false), e && Y.emitChange()
+    }))) && (T.delete(t), e = true)
+  }), 0 === T.size && (C = false), D && o().isEqual(L, k) && (e = true, D = false), e && X.emitChange()
 }, 500);
 
-function W(e, t) {
-  let n = Z.indexOf(e);
+function K(e, t) {
+  let n = w.indexOf(e);
   if (n < 0) returnfalse;
-  let r = I({}, e, t),
-    i = [...Z];
-  i[n] = r, Z = i, P = true, _.add(r.id), H()
+  let r = _({}, e, t),
+    i = [...w];
+  i[n] = r, w = i, C = true, T.add(r.id), V()
 }
 
 function z(e) {
-  return Z.find(t => {
+  return w.find(t => {
     let {
       id: n
     } = t;
@@ -149,13 +149,13 @@ function z(e) {
   })
 }
 
-function V(e) {
+function Y(e) {
   let {
     guildId: t
   } = e;
-  if (null == (r = y.Z.getProps().guild) || t !== r.id || T === C.QZA.SUBMITTING) returnfalse;
-  let n = [...x.Z.getSortedRoles(r.id)];
-  _.forEach(e => {
+  if (null == (r = v.A.getProps().guild) || t !== r.id || I === A.XlH.SUBMITTING) returnfalse;
+  let n = [...h.A.getSortedRoles(r.id)];
+  T.forEach(e => {
     let t = z(e),
       r = false;
     null == n.find((t, n) => {
@@ -163,31 +163,31 @@ function V(e) {
         id: i
       } = t;
       if (i === e) return r = n, true
-    }) || null == t ? _.delete(e) : n[r] = t
-  }), 0 === _.size && (P = false);
+    }) || null == t ? T.delete(e) : n[r] = t
+  }), 0 === T.size && (C = false);
   let i = new Map;
-  _.forEach(e => {
-    let t = G.get(e);
+  T.forEach(e => {
+    let t = M.get(e);
     null != t && i.set(e, t)
-  }), G.clear(), F(t, n), i.forEach((e, t) => {
-    G.set(t, e)
-  }), w = false, Z = [...n]
+  }), M.clear(), H(t, n), i.forEach((e, t) => {
+    M.set(t, e)
+  }), P = false, w = [...n]
 }
-class K extends(a = Chunk442837.ZP.Store) {
+class W extends(s = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(y.Z, b.Z, x.Z)
+    this.waitFor(v.A, m.A, h.A)
   }
   hasChanges() {
-    return P || w || D
+    return C || P || D
   }
   getRoleStyleData(e) {
-    return G.get(e)
+    return M.get(e)
   }
   get errorMessage() {
     return l
   }
   get hasSortChanges() {
-    return w
+    return P
   }
   get hasRoleConfigurationChanges() {
     return D
@@ -196,19 +196,19 @@ class K extends(a = Chunk442837.ZP.Store) {
     return r
   }
   get editedRoleIds() {
-    return Array.from(_)
+    return Array.from(T)
   }
   get editedRoleIdsForConfigurations() {
-    return A
+    return G
   }
   get roles() {
-    return Z
+    return w
   }
   get formState() {
-    return T
+    return I
   }
   getSortDeltas() {
-    return M()
+    return U()
   }
   showNotice() {
     return this.hasChanges()
@@ -223,17 +223,17 @@ class K extends(a = Chunk442837.ZP.Store) {
     return k
   }
 }
-E(K, "displayName", "GuildSettingsRolesStore");
-let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
+N(W, "displayName", "GuildSettingsRolesStore");
+let X = new W(Chunk73153.h, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_INIT: () => B(),
-    GUILD_SETTINGS_INIT: U,
-    GUILD_SETTINGS_SET_SECTION: U,
+    GUILD_SETTINGS_INIT: F,
+    GUILD_SETTINGS_SET_SECTION: F,
     GUILD_SETTINGS_ROLES_SORT_UPDATE: function(e) {
       let {
         roles: t
       } = e;
-      if (null != Z && t.length !== Z.length) returnfalse;
-      Z = t.map(e => z(e)).filter(v.lm), w = true, H()
+      if (null != w && t.length !== w.length) returnfalse;
+      w = t.map(e => z(e)).filter(O.Vq), P = true, V()
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function(e) {
       let {
@@ -245,8 +245,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         permissions: l
       } = i;
-      return W(i, {
-        permissions: l = r ? d.IH(l, n) : d.Od(l, n)
+      return K(i, {
+        permissions: l = r ? d.WQ(l, n) : d.TF(l, n)
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSION_SET: function(e) {
@@ -254,7 +254,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         permissions: n
       } = e, r = z(t);
-      return null != r && W(r, {
+      return null != r && K(r, {
         permissions: n
       })
     },
@@ -262,8 +262,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t
       } = e, n = z(t);
-      return null != n && W(n, {
-        permissions: O.Hn
+      return null != n && K(n, {
+        permissions: y.x3
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_NAME: function(e) {
@@ -271,7 +271,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         name: n
       } = e, r = z(t);
-      return null != r && W(r, {
+      return null != r && K(r, {
         name: n
       })
     },
@@ -280,7 +280,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         description: n
       } = e, r = z(t);
-      return null != r && W(r, {
+      return null != r && K(r, {
         description: n
       })
     },
@@ -288,14 +288,14 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = z(t);
+      } = e, r = 0 === n ? null : (0, u.Hl)(n), i = z(t);
       if (null == i) returnfalse;
-      let l = G.get(t);
+      let l = M.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {
         primary_color: n,
         secondary_color: null,
         tertiary_color: null
-      }, G.set(t, I({}, l)), W(i, {
+      }, M.set(t, _({}, l)), K(i, {
         color: n,
         colorString: r,
         colors: {
@@ -317,9 +317,9 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = z(t);
       if (null == i) returnfalse;
-      let l = (0, p.DX)(n),
-        a = G.get(t);
-      return null != a && (a.styleColors[r] = n, a.currentStyle = r, G.set(t, I({}, a)), W(i, {
+      let l = (0, p.K3)(n),
+        s = M.get(t);
+      return null != s && (s.styleColors[r] = n, s.currentStyle = r, M.set(t, _({}, s)), K(i, {
         color: n.primary_color,
         colors: n,
         colorString: l.primaryColor,
@@ -332,7 +332,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         hoist: n,
         mentionable: r
       } = e, i = z(t);
-      return null != i && W(i, {
+      return null != i && K(i, {
         hoist: n,
         mentionable: r
       })
@@ -343,7 +343,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         icon: n,
         unicodeEmoji: r
       } = e, i = z(t);
-      return null != i && W(i, {
+      return null != i && K(i, {
         icon: n,
         unicodeEmoji: r
       })
@@ -354,8 +354,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         searchQuery: n
       } = e;
       if (i = n, null != t) {
-        if (null != z(t.id)) return void W(t, t);
-        Z = [...Z, t], H()
+        if (null != z(t.id)) return void K(t, t);
+        w = [...w, t], V()
       }
     },
     GUILD_SETTINGS_ROLES_ROLE_STYLE_UPDATE: function(e) {
@@ -365,19 +365,19 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = z(n);
       if (null == i) returnfalse;
-      let l = G.get(n);
+      let l = M.get(n);
       if (null == l) returnfalse;
-      G.set(n, {
+      M.set(n, {
         currentStyle: r,
         styleColors: l.styleColors
       });
-      let a = l.styleColors[r],
-        s = (0, p.DX)(a);
-      return W(i, {
-        color: null != (t = a.primary_color) ? t : true,
-        colors: a,
-        colorString: s.primaryColor,
-        colorStrings: s
+      let s = l.styleColors[r],
+        a = (0, p.K3)(s);
+      return K(i, {
+        color: null != (t = s.primary_color) ? t : true,
+        colors: s,
+        colorString: a.primaryColor,
+        colorStrings: a
       })
     },
     GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: function(e) {
@@ -387,8 +387,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       } = e, r = z(t);
       if (null == r) returnfalse;
       let i = L.get(r.id);
-      if (c().isEqual(i, n)) returnfalse;
-      k.set(r.id, n), L.set(r.id, n), H()
+      if (o().isEqual(i, n)) returnfalse;
+      k.set(r.id, n), L.set(r.id, n), V()
     },
     GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS: function(e) {
       let {
@@ -396,24 +396,24 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         roleConnectionConfigurations: n
       } = e, r = z(t);
       if (null == r) returnfalse;
-      D = true, A.add(r.id), k.set(r.id, n), H()
+      D = true, G.add(r.id), k.set(r.id, n), V()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, R = Z = [], L.clear(), _.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = C.QZA.CLOSED
+      r = null, R = w = [], L.clear(), T.clear(), M.clear(), k.clear(), G = new Set, C = false, P = false, D = false, I = A.XlH.CLOSED
     },
-    GUILD_ROLE_CREATE: V,
-    GUILD_ROLE_UPDATE: V,
+    GUILD_ROLE_CREATE: Y,
+    GUILD_ROLE_UPDATE: Y,
     GUILD_ROLE_DELETE: function(e) {
-      return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), V(e)
+      return G.has(e.roleId) && (G.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), Y(e)
     },
     GUILD_SETTINGS_ROLES_SUBMITTING: function() {
-      T = C.QZA.SUBMITTING
+      I = A.XlH.SUBMITTING
     },
     GUILD_SETTINGS_ROLES_SAVE_FAIL: function(e) {
       let {
         message: t
       } = e;
-      T = C.QZA.OPEN, l = t
+      I = A.XlH.OPEN, l = t
     },
     GUILD_SETTINGS_ROLES_SAVE_SUCCESS: function() {
       B(false)
@@ -423,14 +423,14 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         guildId: t
       } = e;
       if (null == r || t !== r.id) returnfalse;
-      r = (0, m.t8)(r, "features", new Set([...r.features, C.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))
+      r = (0, b.hZ)(r, "features", new Set([...r.features, A.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))
     },
     GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED: function(e) {
       let {
         guildId: t
       } = e;
       if (null == r || t !== r.id) returnfalse;
-      r = (0, m.t8)(r, "features", new Set([...r.features, C.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
+      r = (0, b.hZ)(r, "features", new Set([...r.features, A.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
     }
   }),
-  q = Y
+  J = X

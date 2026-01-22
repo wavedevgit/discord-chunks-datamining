@@ -1,0 +1,143 @@
+/** Chunk was on web.js **/
+/** chunk id: 878360, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => I
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk537652 = require("./537652.jsx"),
+  Chunk155718 = require("./155718.js"),
+  Chunk166862 = require("./166862.js"),
+  Chunk861382 = require("./861382.js"),
+  Chunk545152 = require("./545152.js"),
+  Chunk580424 = require("./580424.jsx"),
+  Chunk248465 = require("./248465.js"),
+  Chunk634788 = require("./634788.jsx"),
+  Chunk374803 = require("./374803.js"),
+  Chunk73510 = require("./73510.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk570330 = require("./570330.js"),
+  Chunk911385 = require("./911385.js");
+let b = {
+    results: {
+      choices: []
+    }
+  },
+  y = {
+    results: {
+      choices: [],
+      isLoading: true
+    }
+  },
+  O = Array.from({
+    length: 5
+  }, () => ({
+    name: "",
+    displayName: "",
+    value: ""
+  })),
+  A = {
+    results: {
+      choices: [],
+      isError: true
+    }
+  },
+  v = a().debounce(Chunk545152.A, Chunk73510.$r, {
+    leading: true,
+    trailing: true
+  });
+
+function S(e) {
+  return e.displayName
+}
+let I = {
+  stores: [Chunk861382.A, Chunk166862.A],
+  showEmpty: true,
+  matches(e, t, n, r, i) {
+    let a = c.A.getActiveOption(e.id);
+    return i.commands !== _.Ze.DISABLED && null != a && (a.type === o.n4.BOOLEAN || !!(null == a ? true : a.autocomplete) || (null == a ? true : a.choices) != null && a.choices.length > 0)
+  },
+  queryResults(e, t, n, r, i) {
+    var a;
+    let s = c.A.getActiveOption(e.id);
+    if (null == s) return b;
+    if (s.autocomplete) {
+      if (i && v({
+          command: c.A.getActiveCommand(e.id),
+          optionValues: r.getCommandOptionValues(),
+          context: {
+            channel: e,
+            guild: t,
+            autocomplete: {
+              name: s.name,
+              query: n
+            }
+          }
+        }), l.A.getLastErrored(e.id)) return A;
+      let a = l.A.getAutocompleteChoices(e.id, s.name, n);
+      return null == a ? y : {
+        results: {
+          choices: a
+        }
+      }
+    }
+    return {
+      results: f.Ay.queryChoiceResults({
+        query: n,
+        choices: s.type === o.n4.BOOLEAN ? h.Ss : null != (a = s.choices) ? a : []
+      })
+    }
+  },
+  renderResults(e) {
+    let {
+      results: {
+        choices: t,
+        isLoading: n,
+        isError: i
+      },
+      selectedIndex: a,
+      query: o,
+      onHover: l,
+      onClick: c
+    } = e;
+    return i ? (0, r.jsx)(s.A, {
+      message: m.intl.string(m.t.rTAbPn),
+      noResultsImageURL: E,
+      className: g.k
+    }) : 0 !== t.length || n ? (0, p.GM)({
+      query: o,
+      selectedIndex: a,
+      autocompletes: n ? O : t,
+      onHover: l,
+      onClick: c,
+      titleWithQuery: m.t.pg0anB,
+      titleWithoutQuery: m.intl.string(m.t["+1H47t"]),
+      Component: n ? d.Ay.Loading : d.Ay.Generic,
+      getProps: (e, t) => ({
+        key: t.toString(),
+        text: e.displayName
+      }),
+      getQuery: e => e,
+      key: "choice"
+    }) : (0, r.jsx)(s.A, {
+      message: m.intl.string(m.t["41014u"]),
+      noResultsImageURL: E,
+      className: g.k
+    })
+  },
+  onSelect(e) {
+    let {
+      results: {
+        choices: t
+      },
+      index: n,
+      options: r
+    } = e, i = t[n];
+    return r.insertText(S(i)), {
+      type: _.kc.CHOICE
+    }
+  }
+}

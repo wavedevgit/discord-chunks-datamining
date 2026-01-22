@@ -1,0 +1,21 @@
+/** Chunk was on web.js **/
+/** chunk id: 346734, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  a: () => o
+});
+var Chunk311907 = require("./311907.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk309010 = require("./309010.js");
+
+function s() {
+  try {
+    return CSS.supports("selector(:has(*))")
+  } catch (e) {
+    returnfalse
+  }
+}
+
+function o() {
+  return null != (0, r.bG)([i.A, a.A], () => i.A.getChannel(a.A.getChannelId())) && !!s()
+}

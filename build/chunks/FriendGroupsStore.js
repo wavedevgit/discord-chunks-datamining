@@ -1,15 +1,15 @@
-/** Chunk was on 29709 **/
-/** chunk id: 643327, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46636 **/
+/** chunk id: 870391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js"), require("./642613.js"), require("./539854.js"), require("./290780.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk752048 = require("./752048.js"),
-  Chunk480294 = require("./480294.js"),
-  Chunk699516 = require("./699516.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => O
+}), require("./896048.js"), require("./638769.js"), require("./321073.js"), require("./667532.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk21119 = require("./21119.js"),
+  Chunk153488 = require("./153488.js"),
+  Chunk994500 = require("./994500.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,9 +47,9 @@ function g(e, t) {
 }
 let f = [],
   h = false;
-class O extends(r = Chunk442837.ZP.PersistedStore) {
+class m extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(o.Z, a.Z, s.Z, u.default), null != e) {
+    if (this.waitFor(o.A, a.A, s.A, u.default), null != e) {
       var t, n;
       f = null != (t = e.groups) ? t : [], h = null != (n = e.isInitialized) && n
     }
@@ -81,23 +81,23 @@ class O extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-d(O, "displayName", "FriendGroupsStore"), d(O, "persistKey", "FriendGroupsStore");
-let m = new O(Chunk570140.Z, {
+d(m, "displayName", "FriendGroupsStore"), d(m, "persistKey", "FriendGroupsStore");
+let O = new m(Chunk73153.h, {
   POST_CONNECTION_OPEN: function() {
     if (h || f.length > 0) returnfalse;
     f = [{
       id: "favorites",
       name: "Favorites",
       userIds: function() {
-        if (!o.Z.hasConsented(c.pjP.PERSONALIZATION)) return [];
-        let e = s.Z.getUserAffinities();
+        if (!o.A.hasConsented(c.YAq.PERSONALIZATION)) return [];
+        let e = s.A.getUserAffinities();
         if (0 === e.length) return [];
-        let t = [...e].sort((e, t) => s.Z.compare(e.otherUserId, t.otherUserId)),
+        let t = [...e].sort((e, t) => s.A.compare(e.otherUserId, t.otherUserId)),
           n = [];
         for (let e of t) {
           if (n.length >= 5) break;
           let t = e.otherUserId;
-          null != u.default.getUser(t) && a.Z.isFriend(t) && !a.Z.isIgnored(t) && !a.Z.isBlocked(t) && n.push(t)
+          null != u.default.getUser(t) && a.A.isFriend(t) && !a.A.isIgnored(t) && !a.A.isBlocked(t) && n.push(t)
         }
         return n
       }()

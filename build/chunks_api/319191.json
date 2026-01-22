@@ -1,0 +1,1 @@
+{"id":"319191","type":"store","data":{"name":"VoiceChannelEffectsPersistedStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]}],"events":["VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE"]},"fromModule":{"id":"web.js"}}

@@ -1,35 +1,35 @@
 /** Chunk was on web.js **/
-/** chunk id: 439170, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 963307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CR: () => P,
-  ZP: () => Q,
-  oL: () => w,
-  so: () => R
-}), require("./539854.js"), require("./642613.js"), require("./388685.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk108131 = require("./108131.js"),
-  s = require.n(Chunk108131),
-  Chunk149765 = require("./149765.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk353926 = require("./353926.js"),
-  Chunk700785 = require("./700785.js"),
-  Chunk199902 = require("./199902.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk650774 = require("./650774.js"),
-  Chunk271383 = require("./271383.js"),
-  Chunk485386 = require("./485386.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk158776 = require("./158776.js"),
-  Chunk885110 = require("./885110.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Ay: () => Z,
+  QP: () => R,
+  S9: () => P,
+  sN: () => w
+}), require("./321073.js"), require("./638769.js"), require("./896048.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk181370 = require("./181370.js"),
+  o = require.n(Chunk181370),
+  Chunk136722 = require("./136722.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk49463 = require("./49463.js"),
+  Chunk488926 = require("./488926.js"),
+  Chunk616356 = require("./616356.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk498642 = require("./498642.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk317525 = require("./317525.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk290863 = require("./290863.js"),
+  Chunk461213 = require("./461213.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk985018 = require("./985018.jsx");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,20 +38,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,36 +63,36 @@ function A(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = "everyone",
+let R = "everyone",
   w = 0;
-var R = function(e) {
+var P = function(e) {
   return e.GROUP = "GROUP", e.MEMBER = "MEMBER", e.CONTENT_INVENTORY = "CONTENT_INVENTORY", e.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", e.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY", e.CONTENT_INVENTORY_LEADERBOARD = "CONTENT_INVENTORY_LEADERBOARD", e
 }({});
 
 function D(e, t, n, r) {
   switch (t) {
-    case S.Skl.ONLINE:
-    case S.Skl.OFFLINE:
-    case S.Skl.UNKNOWN:
+    case v.clD.ONLINE:
+    case v.clD.OFFLINE:
+    case v.clD.UNKNOWN:
       return {
         type: "GROUP", key: t, id: t, get title() {
           switch (t) {
-            case S.Skl.ONLINE:
-              return I.intl.string(I.t.WbGtnH);
-            case S.Skl.OFFLINE:
-              return I.intl.string(I.t.Vv0abJ);
+            case v.clD.ONLINE:
+              return S.intl.string(S.t.WbGtnH);
+            case v.clD.OFFLINE:
+              return S.intl.string(S.t.Vv0abJ);
             default:
-              return I.intl.string(I.t["UQMV/E"])
+              return S.intl.string(S.t["UQMV/E"])
           }
         }, count: n, index: r
       };
     default:
-      let i = b.Z.getGuild(e),
-        a = null != i ? E.Z.getRole(i.id, t) : null;
+      let i = b.A.getGuild(e),
+        a = null != i ? E.A.getRole(i.id, t) : null;
       return {
         type: "GROUP", key: t, id: t, title: null != a ? a.name : "", count: n, index: r
       }
@@ -101,43 +101,43 @@ function D(e, t, n, r) {
 
 function x(e, t, n) {
   let r = n === _.default.getId(),
-    i = y.Z.isMobileOnline(n),
-    a = r ? O.Z.getStatus() : y.Z.getStatus(n, e),
-    o = r ? O.Z.getActivities() : y.Z.getActivities(n, e),
-    s = p.Z.getStreamForUser(n, e),
-    l = v.default.getUser(n);
-  return null == l ? null : N(C({
+    i = y.A.isMobileOnline(n),
+    a = r ? O.A.getStatus() : y.A.getStatus(n, e),
+    s = r ? O.A.getActivities() : y.A.getActivities(n, e),
+    o = p.A.getStreamForUser(n, e),
+    l = A.default.getUser(n);
+  return null == l ? null : N(T({
     type: "MEMBER"
-  }, g.ZP.getMember(e, n)), {
+  }, g.Ay.getMember(e, n)), {
     user: l,
     status: a,
-    activities: o,
-    applicationStream: s,
+    activities: s,
+    applicationStream: o,
     isOwner: t === n,
     isMobileOnline: i
   })
 }
 
 function L(e) {
-  let t = h.Z.getChannel(e);
-  return null == t ? P : null == t.memberListId ? j(t) : t.memberListId
+  let t = h.A.getChannel(e);
+  return null == t ? R : null == t.memberListId ? j(t) : t.memberListId
 }
 
 function j(e) {
-  return f.oz(S.Plq.VIEW_CHANNEL, e) ? P : s().v3(a()(e.permissionOverwrites).reduce((e, t) => {
+  return f.Ib(v.xBc.VIEW_CHANNEL, e) ? R : o().v3(a()(e.permissionOverwrites).reduce((e, t) => {
     let {
       id: n,
       allow: r,
       deny: i
     } = t;
-    return l.e$(r, S.Plq.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : l.e$(i, S.Plq.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
+    return l.zy(r, v.xBc.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : l.zy(i, v.xBc.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
   }, []).sort().join(",")).toString()
 }
 class M {
   updateOwnerId() {
-    let e = b.Z.getGuild(this.guildId);
+    let e = b.A.getGuild(this.guildId);
     if (null == e) returnfalse;
-    let t = f.iJ(e);
+    let t = f.wT(e);
     return this.ownerId !== t && (this.ownerId = t, true)
   }
   setGroups(e) {
@@ -209,7 +209,7 @@ class M {
     null != n && (this.groups.splice(t, 1, D(this.guildId, e, n.count, n.index)), this.version++)
   }
   constructor(e, t) {
-    T(this, "guildId", true), T(this, "listId", true), T(this, "ownerId", true), T(this, "rows", []), T(this, "groups", []), T(this, "members", {}), T(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
+    I(this, "guildId", true), I(this, "listId", true), I(this, "ownerId", true), I(this, "rows", []), I(this, "groups", []), I(this, "members", {}), I(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
   }
 }
 class k {
@@ -218,7 +218,7 @@ class k {
     null == n && (n = this._guildLists[e] = {});
     let r = n[t];
     return null == r && ((r = new M(e, t)).setGroups([{
-      id: S.Skl.UNKNOWN,
+      id: v.clD.UNKNOWN,
       count: 0
     }]), n[t] = r), r
   }
@@ -238,7 +238,7 @@ class k {
     this._guildLists = {}
   }
   constructor() {
-    T(this, "_guildLists", {})
+    I(this, "_guildLists", {})
   }
 }
 let U = new k;
@@ -265,7 +265,7 @@ function G(e) {
   }), t.setGroups(e.groups)
 }
 
-function Z() {
+function V() {
   U.reset()
 }
 
@@ -285,7 +285,7 @@ function B(e) {
   U.delete(t.id)
 }
 
-function V(e) {
+function H(e) {
   let {
     guildId: t,
     role: n
@@ -295,34 +295,34 @@ function V(e) {
   })
 }
 
-function H(e) {
+function Y(e) {
   let {
     guildId: t,
     user: n
   } = e;
   U.forEach(t, e => e.rebuildMember(n.id))
 }
-let Y = [];
+let W = [];
 
-function W() {
-  let e = p.Z.getAllApplicationStreams(),
-    t = Y.concat(e);
-  Y = e, t.forEach(e => {
+function K() {
+  let e = p.A.getAllApplicationStreams(),
+    t = W.concat(e);
+  W = e, t.forEach(e => {
     U.forEach(null, t => t.rebuildMember(e.ownerId))
   })
 }
 
-function K() {
+function z() {
   let e = _.default.getId();
   U.forEach(null, t => t.rebuildMember(e))
 }
 
-function z() {
+function q() {
   returntrue
 }
-class q extends(r = Chunk442837.ZP.Store) {
+class X extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(v.default, b.Z, E.Z, h.Z, g.ZP, y.Z, O.Z, _.default, m.Z, p.Z, d.Z), this.syncWith([O.Z], K), this.syncWith([p.Z], W)
+    this.waitFor(A.default, b.A, E.A, h.A, g.Ay, y.A, O.A, _.default, m.A, p.A, d.A), this.syncWith([O.A], z), this.syncWith([p.A], K)
   }
   getProps(e, t) {
     let n = U.get(e, L(t));
@@ -337,14 +337,14 @@ class q extends(r = Chunk442837.ZP.Store) {
     return U.get(e, L(t)).rows
   }
 }
-T(q, "displayName", "ChannelMemberStore");
-let Q = new q(Chunk570140.Z, {
-  CONNECTION_OPEN: Z,
-  OVERLAY_INITIALIZE: Z,
+I(X, "displayName", "ChannelMemberStore");
+let Z = new X(Chunk73153.h, {
+  CONNECTION_OPEN: V,
+  OVERLAY_INITIALIZE: V,
   GUILD_MEMBER_LIST_UPDATE: G,
   GUILD_UPDATE: F,
   GUILD_DELETE: B,
-  GUILD_ROLE_UPDATE: V,
-  GUILD_MEMBER_UPDATE: H,
-  CHANNEL_UPDATES: z
+  GUILD_ROLE_UPDATE: H,
+  GUILD_MEMBER_UPDATE: Y,
+  CHANNEL_UPDATES: q
 })

@@ -1,1 +1,0 @@
-{"id":"951806","type":"store","data":{"name":"OverlayRPCLogStore","functions":[{"name":"initialize","args":[]},{"name":"getAllLogs","args":[]},{"name":"getLogsByLevel","args":["e"]},{"name":"getErrorLogs","args":[]}],"events":["OVERLAY_RENDER_DEBUG_MODE","OVERLAY_ADD_LOGS_BATCH"]},"fromModule":{"id":"web.js"}}

@@ -1,41 +1,36 @@
-/** Chunk was on 92091 **/
-/** chunk id: 612856, original params: t,n,i (module,exports,require) **/
+/** Chunk was on 99041 **/
+/** chunk id: 612856, original params: n,l,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  default: () => o
 });
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk569471 = require("./569471.js"),
-  Chunk346479 = require("./346479.js"),
-  Chunk723170 = require("./723170.js"),
-  Chunk124368 = require("./124368.js"),
-  Chunk388032 = require("./388032.jsx");
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk397927 = require("./397927.js"),
+  Chunk442433 = require("./442433.js"),
+  Chunk50268 = require("./50268.jsx"),
+  Chunk687279 = require("./687279.jsx"),
+  Chunk985018 = require("./985018.jsx");
 
-function c(t) {
-  let n = (0, d.B)(t);
-  return (0, l.e7)([a.Z], () => a.Z.hasJoined(t.id)) ? (0, e.jsx)(r.sNh, {
-    id: "thread-notifications",
-    label: u.intl.string(u.t.h850Ss),
-    children: (0, o.zb)().map(i => {
-      let {
-        setting: l,
-        label: a
-      } = i;
-      return (0, e.jsx)(r.k5B, {
-        group: "thread-notifications",
-        id: "".concat(l),
-        label: a,
-        action: () => s.Z.setNotificationSettings(t, {
-          flags: l
-        }),
-        checked: l === n
-      }, l)
-    })
-  }) : (0, e.jsx)(r.sNh, {
-    id: "notifications-disabled",
-    label: u.intl.string(u.t.h850Ss),
-    disabled: true
+function o(n) {
+  let {
+    channel: l,
+    channelId: t,
+    originalLink: o,
+    messageId: d,
+    onSelect: u
+  } = n, h = (0, s.A)(l, o, d), p = (0, r.A)({
+    id: t,
+    label: c.intl.string(c.t.gFHI3k)
+  });
+  return (0, i.jsxs)(e.W1t, {
+    navId: "channel-mention-context",
+    onClose: a.Z_,
+    onSelect: u,
+    "aria-label": c.intl.string(c.t.feGACE),
+    children: [(0, i.jsx)(e.rXV, {
+      children: h
+    }, "channel-mention-actions"), (0, i.jsx)(e.rXV, {
+      children: p
+    }, "developer-actions")]
   })
 }

@@ -1,6 +1,12 @@
-/** Chunk was on 10667 **/
-/** chunk id: 421580, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  x: () => i
-}), require("./388685.js");
-var o, i = ((o = {}).PLAYSTATION = "https://discord.com/connections/playstation/link", o.PLAYSTATION_STAGING = "https://discord.com/connections/playstation-stg/link", o)
+/** Chunk was on web.js **/
+/** chunk id: 421580, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+var Chunk741623 = require("./741623.js"),
+  Chunk899204 = require("./899204.js"),
+  Chunk159367 = require("./159367.js"),
+  Chunk14665 = require("./14665.js");
+module.exports = function(e) {
+  if (true === e) returnfalse;
+  if (!s(e)) throw new r("Assertion failed: `Desc` must be a Property Descriptor");
+  return !(i(e) || a(e))
+}

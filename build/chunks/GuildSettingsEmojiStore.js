@@ -1,85 +1,84 @@
-/** Chunk was on 9536 **/
-/** chunk id: 471613, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** Chunk was on 76443 **/
+/** chunk id: 885617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  A: () => j
 });
-var r, i, Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk40572 = require("./40572.js"),
-  Chunk914010 = require("./914010.js"),
-  Chunk70956 = require("./70956.js");
-let g = {},
-  f = {},
-  m = 0,
-  b = new(a())({
+var l, r, Chunk635377 = require("./635377.js"),
+  a = require.n(Chunk635377),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk950762 = require("./950762.js"),
+  Chunk967198 = require("./967198.js"),
+  Chunk927813 = require("./927813.js");
+let m = {},
+  h = {},
+  g = 0,
+  f = new(a())({
     max: 5,
-    maxAge: Chunk70956.Z.Millis.HOUR
+    maxAge: Chunk927813.A.Millis.HOUR
   });
-class p extends(i = Chunk442837.ZP.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(d.Z)
+    this.waitFor(c.A)
   }
   isUploadingEmoji() {
-    return m > 0
+    return g > 0
   }
   getEmojiRevision(e) {
     var t;
-    return null != (t = g[e]) ? t : 0
+    return null != (t = m[e]) ? t : 0
   }
   getEmojis(e) {
-    return f[e]
+    return h[e]
   }
   getEmojiRawAsset(e) {
-    return b.get(e)
+    return f.get(e)
   }
-}(r = "displayName") in p ? Object.defineProperty(p, r, {
+}(l = "displayName") in b ? Object.defineProperty(b, l, {
   value: "GuildSettingsEmojiStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[r] = "GuildSettingsEmojiStore";
-let h = new p(Chunk570140.Z, {
+}) : b[l] = "GuildSettingsEmojiStore";
+let j = new b(Chunk73153.h, {
   EMOJI_DELETE: function(e) {
     let {
       guildId: t,
       emojiId: n
     } = e;
-    f[t] = f[t].filter(e => e.id !== n)
+    h[t] = h[t].filter(e => e.id !== n)
   },
   EMOJI_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,
       emojis: n
     } = e;
-    f[t] = n.map(e => new c.Z(e))
+    h[t] = n.map(e => new o.A(e))
   },
   EMOJI_FETCH_FAILURE: function(e) {
     let {
       guildId: t
     } = e;
-    f[t] = []
+    h[t] = []
   },
   EMOJI_UPLOAD_START: function() {
-    m++
+    g++
   },
   EMOJI_UPLOAD_STOP: function() {
-    m--
+    g--
   },
   EMOJI_CACHE_RAW_EMOJI_ASSET: function(e) {
     let {
       emojiId: t,
       userImage: n
     } = e;
-    b.set(t, n)
+    f.set(t, n)
   },
   GUILD_EMOJIS_UPDATE: function(e) {
     var t;
     let {
       guildId: n
     } = e;
-    g[n] = (null != (t = g[n]) ? t : 0) + 1
+    m[n] = (null != (t = m[n]) ? t : 0) + 1
   }
 })

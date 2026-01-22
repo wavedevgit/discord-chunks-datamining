@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 313261, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 177658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => r
+  P: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2024-08_new_gateway_dispatcher",
   label: "New Gateway Dispatcher",

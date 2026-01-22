@@ -1,35 +1,19 @@
-/** Chunk was on 53896 **/
-/** chunk id: 823894, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 823894, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => n
+  BJ: () => l,
+  GX: () => r,
+  LD: () => i,
+  Ny: () => o,
+  lq: () => a,
+  vX: () => s
 });
-var Chunk261168 = require("./261168.js");
-let n = {
-  date: (0, Chunk261168.Z)({
-    formats: {
-      full: "EEEE, d 'de' MMMM 'de' y",
-      long: "d 'de' MMMM 'de' y",
-      medium: "d MMM y",
-      short: "dd/MM/yyyy"
-    },
-    defaultWidth: "full"
-  }),
-  time: (0, Chunk261168.Z)({
-    formats: {
-      full: "HH:mm:ss zzzz",
-      long: "HH:mm:ss z",
-      medium: "HH:mm:ss",
-      short: "HH:mm"
-    },
-    defaultWidth: "full"
-  }),
-  dateTime: (0, Chunk261168.Z)({
-    formats: {
-      full: "{{date}} '\xe0s' {{time}}",
-      long: "{{date}} '\xe0s' {{time}}",
-      medium: "{{date}}, {{time}}",
-      short: "{{date}}, {{time}}"
-    },
-    defaultWidth: "full"
-  })
-}
+let r = "sticker-picker-tab-panel",
+  i = "sticker-picker-tab",
+  a = "sticker-picker-grid",
+  s = ["781323769960202280", "809209266556764241", "818597810047680532", "819129296374595614"],
+  o = 1572864;
+var l = function(e) {
+  return e[e.ALWAYS_ANIMATE = 0] = "ALWAYS_ANIMATE", e[e.ANIMATE_ON_INTERACTION = 1] = "ANIMATE_ON_INTERACTION", e[e.NEVER_ANIMATE = 2] = "NEVER_ANIMATE", e
+}({})

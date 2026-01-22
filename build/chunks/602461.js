@@ -1,0 +1,32 @@
+/** Chunk was on web.js **/
+/** chunk id: 602461, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => l
+}), require("./896048.js"), require("./321073.js");
+var Chunk64700 = require("./64700.js"),
+  Chunk805739 = require("./805739.js"),
+  Chunk500345 = require("./500345.js"),
+  Chunk320137 = require("./320137.js"),
+  Chunk985018 = require("./985018.jsx");
+
+function l(e) {
+  let {
+    includeFlairAsBenefit: t,
+    listing: n,
+    guildId: l
+  } = e, c = 0, u = 0;
+  for (let e of n.role_benefits.benefits)(0, a.B1)(e) ? c += 1 : (0, a.b1)(e) && (u += 1);
+  let d = n.role_id,
+    f = (0, s.A)(l).filter(e => e.roles.includes(d)).length;
+  return r.useMemo(() => {
+    let e = [];
+    returntrue === t && e.push(o.intl.string(o.t.EhdV2x)), 0 !== c && e.push(o.intl.formatToPlainString(o.t["p/l+BI"], {
+      channelCount: c
+    })), 0 !== u && e.push(o.intl.formatToPlainString(o.t.eXP5vt, {
+      benefitCount: u
+    })), 0 !== f && e.push(o.intl.formatToPlainString(o.t.YjmQwW, {
+      emojiCount: f
+    })), new i.A(e)
+  }, [c, u, f, t])
+}

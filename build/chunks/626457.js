@@ -1,0 +1,60 @@
+/** Chunk was on web.js **/
+/** chunk id: 626457, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => o
+}), require("./65821.js");
+var Chunk837921 = require("./837921.js");
+
+function i(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+let a = 256;
+
+function s(e, t) {
+  return r.Ay.ensureModule("discord_spellcheck").then(() => {
+    let {
+      cld: n
+    } = r.Ay.requireModule("discord_spellcheck");
+    return new Promise((r, i) => {
+      n.detect(e, {
+        httpHint: t,
+        encodingHint: "UTF8"
+      }, (e, t) => {
+        null != e ? i(Error(e.message)) : !t.reliable || t.languages[0].percent < 90 || t.languages[0].score < 500 ? i(Error("Not enough reliable text.")) : r(t.languages[0].code)
+      })
+    })
+  })
+}
+class o {
+  get language() {
+    return this._language
+  }
+  set language(e) {
+    this._language !== e && (this._language = e, this._onChange(e))
+  }
+  set languageHint(e) {
+    this._languageHint = e
+  }
+  process(e) {
+    this._processing || (this._processing = true, requestIdleCallback(t => {
+      t.timeRemaining() <= this._minimumTimeRemaining ? this._processEnd() : (e.length > a && (e = e.slice(0, a)), s(e, this._languageHint).then(e => {
+        this.language = e, this._processEnd(t.didTimeout)
+      }, () => {
+        this._processEnd(t.didTimeout)
+      }))
+    }))
+  }
+  _processEnd() {
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    this._processing = false, e && this._minimumTimeRemaining++
+  }
+  constructor(e, t) {
+    i(this, "_language", true), i(this, "_onChange", true), i(this, "_languageHint", true), i(this, "_shouldProcess", false), i(this, "_processing", false), i(this, "_minimumTimeRemaining", 5), this._language = e, this._languageHint = e, this._onChange = t, t(e)
+  }
+}

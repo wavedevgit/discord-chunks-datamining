@@ -1,0 +1,1 @@
+{"id":"50827","type":"store","data":{"name":"RecentlyActiveCollapseStore","functions":[{"name":"initialize","args":["e"]},{"name":"isCollapsed","args":["e"]},{"name":"getState","args":[]}],"events":["SET_RECENTLY_ACTIVE_COLLAPSED"]},"fromModule":{"id":"web.js"}}

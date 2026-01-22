@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 389458, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 236899, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => x
-}), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./642613.js"), require("./368063.js");
-var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk353926 = require("./353926.js"),
-  Chunk449908 = require("./449908.js"),
-  Chunk657871 = require("./657871.js"),
-  Chunk240458 = require("./240458.js");
+  A: () => x
+}), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./638769.js");
+var i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk49463 = require("./49463.js"),
+  Chunk215619 = require("./215619.js"),
+  Chunk968011 = require("./968011.js"),
+  Chunk369487 = require("./369487.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ function O(e) {
   return Array.from(e.entries()).sort((e, t) => t[1] - e[1])
 }
 
-function v(e, t) {
+function A(e, t) {
   if (e.size <= t) return;
   let n = O(e);
   e.clear();
@@ -50,56 +50,56 @@ function v(e, t) {
   }
 }
 
-function S() {
+function v() {
   let e = 1e3,
     t = 5e3,
     n = .05;
   return E < 1e3 || Math.random() < (1 - n) * Math.max(0, 1 - (E - e) / (t - e)) + n
 }
 
-function I(e) {
-  null == r && (r = l.t.createEstimate(_, h));
+function S(e) {
+  null == r && (r = l.M.createEstimate(_, h));
   let t = false;
   for (let n of e)
-    if (S())
+    if (v())
       for (let e of y(n.content.toLowerCase())) {
         if (0 === e.length || e.length > f) continue;
         r.update(e);
         let n = r.query(e);
         g.set(e, n), n > E && (E = n), t = true
       }
-  v(g, p), t && D.emitChange()
+  A(g, p), t && D.emitChange()
 }
 
-function T() {
-  let e = u.V.getCurrentConfig({
+function I() {
+  let e = u.R.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
       autoTrackExposure: true
     }).enabled,
-    t = (0, c.kB)("WordFrequencyStore", {
+    t = (0, c.sA)("WordFrequencyStore", {
       autoTrackExposure: false
     }).enabled;
   return e || t
 }
 
-function C() {
-  return !!s.Z.hasLoadedExperiments && u.V.getCurrentConfig({
+function T() {
+  return !!o.A.hasLoadedExperiments && u.R.getCurrentConfig({
     location: "WordFrequencyStore"
   }, {
     autoTrackExposure: false
   }).resetDataIfUnused
 }
-let A = () => {
+let C = () => {
   r = true, g.clear(), E = 0
 };
 
 function N(e) {
-  return T() ? (requestIdleCallback(() => {
-    I(e)
-  }), false) : !!C() && g.size > 0 && (A(), true)
+  return I() ? (requestIdleCallback(() => {
+    S(e)
+  }), false) : !!T() && g.size > 0 && (C(), true)
 }
-let P = e => {
+let R = e => {
     let {
       messages: t
     } = e;
@@ -111,12 +111,12 @@ let P = e => {
     } = e;
     return N([t])
   };
-class R extends(i = Chunk442837.ZP.PersistedStore) {
+class P extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(s.Z), null != e) {
+    if (this.waitFor(o.A), null != e) {
       var t;
       if (e.wordSketchData) try {
-        e.wordSketchData && (r = l.t.fromJSON(e.wordSketchData))
+        e.wordSketchData && (r = l.M.fromJSON(e.wordSketchData))
       } catch (e) {
         r = true
       }
@@ -145,10 +145,10 @@ class R extends(i = Chunk442837.ZP.PersistedStore) {
     return null != t && t > m
   }
 }
-d(R, "displayName", "WordFrequencyStore"), d(R, "persistKey", "WordFrequencyStore");
-let D = new R(Chunk570140.Z, {
-    LOAD_MESSAGES_SUCCESS: P,
+d(P, "displayName", "WordFrequencyStore"), d(P, "persistKey", "WordFrequencyStore");
+let D = new P(Chunk73153.h, {
+    LOAD_MESSAGES_SUCCESS: R,
     MESSAGE_CREATE: w,
-    DEV_TOOLS_WORD_FREQUENCY_RESET: A
+    DEV_TOOLS_WORD_FREQUENCY_RESET: C
   }),
   x = D

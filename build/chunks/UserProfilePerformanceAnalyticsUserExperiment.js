@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 468462, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 155087, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => i
+  i: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-04_user_profile_performance_analytics",
   label: "User Profile Performance Analytics Experiment",

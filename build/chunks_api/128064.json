@@ -1,1 +1,0 @@
-{"id":"128064","type":"experiment","data":{"kind":"user","id":"2025-06_settings_defaults_aggregate","label":"Settings Defaults Aggregate","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Aggregate Settings Default","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

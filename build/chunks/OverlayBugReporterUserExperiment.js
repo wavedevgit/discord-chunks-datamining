@@ -1,35 +1,35 @@
 /** Chunk was on web.js **/
-/** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 589051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => w,
-  KK: () => C,
-  RD: () => _,
-  Se: () => u,
-  Sy: () => I,
-  T_: () => P,
-  YB: () => p,
-  ZU: () => y,
-  aq: () => g,
-  dj: () => l,
-  eV: () => O,
-  hS: () => d,
-  hb: () => S,
-  lj: () => m,
-  mB: () => f,
-  tU: () => b,
-  td: () => c
+  E: () => w,
+  Fg: () => m,
+  H: () => v,
+  Jo: () => u,
+  LA: () => f,
+  QC: () => g,
+  X4: () => R,
+  Yz: () => d,
+  aS: () => S,
+  cB: () => l,
+  lR: () => y,
+  m5: () => b,
+  o0: () => T,
+  oA: () => p,
+  sq: () => O,
+  wD: () => _,
+  wG: () => c
 });
-var Chunk348327 = require("./348327.js"),
-  i = require.n(Chunk348327),
-  Chunk818083 = require("./818083.js"),
-  Chunk427164 = require("./427164.js"),
-  Chunk987338 = require("./987338.js");
-let l = (0, Chunk818083.B)({
+var Chunk812729 = require("./812729.js"),
+  i = require.n(Chunk812729),
+  Chunk600975 = require("./600975.js"),
+  Chunk945810 = require("./945810.js"),
+  Chunk688151 = require("./688151.js");
+let l = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-06_overlay_raf_manager",
   label: "Overlay RAF Manager",
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
+  commonTriggerPoint: Chunk688151.$G.CONNECTION_OPEN,
   defaultConfig: {
     enabled: false
   },
@@ -50,11 +50,11 @@ function c(e) {
     autoTrackExposure: t
   })
 }
-let u = (0, Chunk818083.B)({
+let u = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-06_overlay_render_timeout",
   label: "Overlay Render Timeout",
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
+  commonTriggerPoint: Chunk688151.$G.CONNECTION_OPEN,
   defaultConfig: {
     shortTimeout: 8e3,
     longTimeout: 12e3
@@ -91,11 +91,11 @@ function d(e) {
     autoTrackExposure: t
   })
 }
-let f = (0, Chunk818083.B)({
+let f = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-07_overlay_default_disable",
   label: "Overlay Default Disable",
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
+  commonTriggerPoint: Chunk688151.$G.CONNECTION_OPEN,
   defaultConfig: {
     enabled: false
   },
@@ -119,7 +119,7 @@ function p(e) {
 var _ = function(e) {
   return e[e.GREEN_BUTTON_WITH_TEXT = 0] = "GREEN_BUTTON_WITH_TEXT", e[e.GRAY_BUTTON_WITH_TEXT = 1] = "GRAY_BUTTON_WITH_TEXT", e[e.SINGLE_ICON_BUTTON = 2] = "SINGLE_ICON_BUTTON", e
 }({});
-let h = (0, Chunk427164.le)({
+let h = (0, Chunk945810.mj)({
   name: "2025-08-overlay-stream-watch-nudge",
   kind: "user",
   defaultConfig: {
@@ -153,7 +153,7 @@ function g(e) {
     location: e
   })
 }
-let E = (0, Chunk818083.B)({
+let E = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-10_overlay_v3_one_click_go_live",
   label: "Overlay V3 One Click Go Live",
@@ -186,7 +186,7 @@ function b(e) {
     autoTrackExposure: t
   })
 }
-let y = (0, Chunk818083.B)({
+let y = (0, Chunk600975.C)({
   id: "2025-10_overlay_default_keybind",
   label: "Overlay Default Keybind",
   kind: "user",
@@ -222,7 +222,7 @@ function O(e) {
     autoTrackExposure: t
   })
 }
-let v = (0, Chunk818083.B)({
+let A = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-10_overlay_negative_widget_testing",
   label: "Overlay Negative Widget Testing",
@@ -286,22 +286,22 @@ let v = (0, Chunk818083.B)({
   }]
 });
 
-function S(e) {
-  let t = I(e, false);
-  if (i()(v.definition.defaultConfig, t)) return "control";
-  let n = v.definition.treatments.find(e => i()(e.config, t));
+function v(e) {
+  let t = S(e, false);
+  if (i()(A.definition.defaultConfig, t)) return "control";
+  let n = A.definition.treatments.find(e => i()(e.config, t));
   return null == n ? "control" : "treatment-".concat(n.id)
 }
 
-function I(e) {
+function S(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return v.getCurrentConfig({
+  return A.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let T = (0, Chunk818083.B)({
+let I = (0, Chunk600975.C)({
   id: "2025-11_overlay_welcome_notification",
   label: "Overlay Welcome Notification",
   kind: "user",
@@ -317,15 +317,15 @@ let T = (0, Chunk818083.B)({
   }]
 });
 
-function C(e) {
+function T(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return T.getCurrentConfig({
+  return I.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let A = (0, Chunk818083.B)({
+let C = (0, Chunk600975.C)({
   id: "2025-11_overlay_bug_reporter",
   label: "Overlay Bug Reporter",
   kind: "user",
@@ -343,19 +343,19 @@ let A = (0, Chunk818083.B)({
 
 function N(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return A.getCurrentConfig({
+  return C.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
 
-function P(e) {
-  return A.useExperiment({
+function R(e) {
+  return C.useExperiment({
     location: e
   }).enabled
 }
 
 function w() {
-  m("OVERLAY_INITIALIZED"), b("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
+  m("OVERLAY_INITIALIZED"), b("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), T("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
 }

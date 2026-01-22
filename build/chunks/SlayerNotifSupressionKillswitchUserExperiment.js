@@ -1,14 +1,14 @@
-/** Chunk was on 11010 **/
-/** chunk id: 842619, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 31748 **/
+/** chunk id: 655237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  A: () => f
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk818083 = require("./818083.js"),
-  Chunk314897 = require("./314897.js");
-let s = {},
-  u = (0, Chunk818083.B)({
+var l, r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk600975 = require("./600975.js"),
+  Chunk961350 = require("./961350.js");
+let c = {},
+  u = (0, Chunk600975.C)({
     kind: "user",
     id: "2025-03_slayer_notif_supression_killswitch",
     label: "Disable suppressing notifications with slayer game active",
@@ -23,9 +23,9 @@ let s = {},
       }
     }]
   });
-class d extends(i = Chunk442837.ZP.Store) {
+class d extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.default)
+    this.waitFor(o.default)
   }
   areSlayerNotificationsSuppressed() {
     if (u.getCurrentConfig({
@@ -33,21 +33,21 @@ class d extends(i = Chunk442837.ZP.Store) {
       }, {
         autoTrackExposure: false
       }).enabled) returnfalse;
-    for (let e in s)
-      if (s[e] === c.default.getId()) returntrue;
+    for (let e in c)
+      if (c[e] === o.default.getId()) returntrue;
     returnfalse
   }
-}(r = "displayName") in d ? Object.defineProperty(d, r, {
+}(l = "displayName") in d ? Object.defineProperty(d, l, {
   value: "RpcNotificationSettingsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[r] = "RpcNotificationSettingsStore";
-let f = new d(Chunk570140.Z, {
+}) : d[l] = "RpcNotificationSettingsStore";
+let f = new d(Chunk73153.h, {
   RPC_APP_DISCONNECTED: function(e) {
-    delete s[e.socketId]
+    delete c[e.socketId]
   },
   SET_RPC_NOTIFICATION_SETTINGS: function(e) {
-    delete s[e.socketId], e.suppressNotifications && (s[e.socketId] = e.targetUserId)
+    delete c[e.socketId], e.suppressNotifications && (c[e.socketId] = e.targetUserId)
   }
 })

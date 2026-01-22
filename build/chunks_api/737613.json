@@ -1,0 +1,1 @@
+{"id":"737613","type":"store","data":{"name":"PermissionSpeakStore","functions":[{"name":"initialize","args":[]},{"name":"isAFKChannel","args":[]},{"name":"shouldShowWarning","args":[]}],"events":["CONNECTION_OPEN","CONNECTION_CLOSED","VOICE_STATE_UPDATES","PERMISSION_CLEAR_SUPPRESS_WARNING"]},"fromModule":{"id":"web.js"}}

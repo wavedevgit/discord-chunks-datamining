@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 863750, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 154323, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => d
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,50 +15,59 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {
-    enable_recently_active: "Enable recently active channels",
-    theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
-    nav_experiment_server_drawer_enabled: "[NavI] Enable expandable server drawer",
-    shop_include_unpublished: "[Shop] show unpublished items in shop",
-    show_icymi_debug_scores: "Show ICYMI debug scores",
-    channel_list_scrim: "Dim the channel list when chat appears"
+let o = {
+    highlight_mana_buttons: "Highlight mana buttons",
+    highlight_mana_components: "Highlight mana components",
+    highlight_void_toggleables: "Highlight toggleable components (Checkbox, VoidRadioGroup, Switch)",
+    highlight_void_buttons: "Highlight void buttons",
+    use_topic_dividers_in_chat: "Use summary topics as divider content in chat instead of string formatted dates.",
+    highlight_redesigned_icons: "Highlight redesigned icons",
+    alt_clips_1: "Use alt clip icon 1",
+    alt_clips_2: "Use alt clip icon 2",
+    shop_disable_cache: "Shop: Disable shop cache",
+    shop_include_unpublished: "Shop: Show unpublished items in the shop",
+    enable_avatar_decoration_uploads: "Shop: Enable avatar decoration uploads",
+    lottie_hover_multiple_loop: "Lotties - continue playing the hover animation after mouse enter",
+    ss01: "Italic - straight forms (K,R,k)",
+    ss02: "Italic - straight l",
+    ss03: "Italic - full height forms (W,M)",
+    ss04: "Italic - alternate figures (3,4,5,6,7,8,9)",
+    wishlist_user_profile_account_popout_upsell: "Show user profile account popout upsell (reset WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL DCF as well)"
   },
   l = {};
 
 function c(e) {
-  l[e.toggle] = e.value
+  false === e.value ? delete l[e.toggle] : l[e.toggle] = e.value
 }
-class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class u extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   getUserAgnosticState() {
     return {
       toggleStates: l
     }
   }
   initialize(e) {
-    for (var t in s) {
+    for (var t in o) {
       var n, r;
-      let i = null != (r = null == e || null == (n = e.toggleStates) ? true : n[t]) && r;
-      l[t] = i
+      let i = null != (n = null == e || null == (r = e.toggleStates) ? true : r[t]) && n;
+      i && (l[t] = i)
     }
   }
   get(e) {
     var t;
     return null != (t = l[e]) && t
   }
-  set(e, t) {
-    return l[e] = t, t
-  }
-  all() {
+  enabled() {
     return l
   }
   allWithDescriptions() {
-    return Object.entries(l).map(e => {
-      let [t, n] = e;
-      return [t, n, s[t]]
+    return Object.entries(o).map(e => {
+      var t;
+      let [n, r] = e;
+      return [n, null != (t = l[n]) && t, r]
     })
   }
 }
-o(u, "displayName", "DevToolsDesignTogglesStore"), o(u, "persistKey", "DevToolsDesignTogglesStore");
-let d = new u(Chunk570140.Z, {
-  DEV_TOOLS_DESIGN_TOGGLE_SET: c
+s(u, "displayName", "DevToolsDesignTogglesStore"), s(u, "persistKey", "DevToolsDesignTogglesStore");
+let d = new u(Chunk73153.h, {
+  DEV_TOOLS_DESIGN_TOGGLE_WEB_SET: c
 })

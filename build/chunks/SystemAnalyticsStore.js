@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 704806, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 851581, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => y
-}), require("./49124.js"), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk353926 = require("./353926.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk998502 = require("./998502.js");
+  w: () => y
+}), require("./457529.js"), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk49463 = require("./49463.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk837921 = require("./837921.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,8 +54,8 @@ let _ = {
 };
 async function h() {
   if (!l.isPlatformEmbedded || !(0, l.isWindows)()) return [];
-  await c.ZP.ensureModule("discord_media");
-  let e = c.ZP.requireModule("discord_media");
+  await c.Ay.ensureModule("discord_media");
+  let e = c.Ay.requireModule("discord_media");
   return await e.getSystemAnalyticsBlob() || []
 }
 async function m() {
@@ -71,7 +71,7 @@ async function m() {
       let t = p(d({}, i), {
         gpus: null == (e = i.gpus) ? true : e.map(e => JSON.stringify(e))
       });
-      s.default.track(n, t), (_ = {
+      o.default.track(n, t), (_ = {
         hashes: d({}, _.hashes)
       }).hashes[n] = r
     }
@@ -82,11 +82,11 @@ async function m() {
 function g() {
   return m(), false
 }
-class E extends(r = Chunk442837.ZP.PersistedStore) {
+class E extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     _ = null != e && "object" == typeof e.hashes ? e : {
       hashes: {}
-    }, this.waitFor(o.Z)
+    }, this.waitFor(s.A)
   }
   getState() {
     return _
@@ -100,7 +100,7 @@ class E extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 u(E, "displayName", "SystemAnalyticsStore"), u(E, "persistKey", "SystemAnalyticsStore");
-let b = new E(Chunk570140.Z, {
+let b = new E(Chunk73153.h, {
   START_SESSION: g
 });
 

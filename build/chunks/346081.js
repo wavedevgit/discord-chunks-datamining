@@ -1,4 +1,33 @@
-/** Chunk was on web.js **/
-/** chunk id: 346081, original params: e (module,exports,re quire) **/
+/** Chunk was on 896 **/
+/** chunk id: 346081, original params: e,r,t (module,exports,require) **/
 "use strict";
-module.exports = "/assets/92c18e6530ef9622.svg"
+require("./697509.js")(exports, "__esModule", {
+  value: true
+}), exports.default = true, exports.default = {
+  abstract: false,
+  accessibleNameRequired: false,
+  baseConcepts: [],
+  childrenPresentational: true,
+  nameFrom: ["author"],
+  prohibitedProps: [],
+  props: {
+    "aria-disabled": null,
+    "aria-valuetext": null,
+    "aria-orientation": "horizontal",
+    "aria-valuemax": "100",
+    "aria-valuemin": "0"
+  },
+  relatedConcepts: [{
+    concept: {
+      name: "hr"
+    },
+    module: "HTML"
+  }],
+  requireContextRole: [],
+  requiredContextRole: [],
+  requiredOwnedElements: [],
+  requiredProps: {},
+  superClass: [
+    ["roletype", "structure"]
+  ]
+}

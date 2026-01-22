@@ -1,1 +1,0 @@
-{"id":"293245","type":"store","data":{"name":"CloudSyncStore","functions":[{"name":"initialize","args":[]},{"name":"getState","args":["e","t"]},{"name":"isSyncing","args":["e","t"]}],"events":["GAME_CLOUD_SYNC_START","GAME_CLOUD_SYNC_UPDATE","GAME_CLOUD_SYNC_COMPLETE","GAME_CLOUD_SYNC_CONFLICT","GAME_CLOUD_SYNC_ERROR","RUNNING_GAMES_CHANGE"]},"fromModule":{"id":"web.js"}}

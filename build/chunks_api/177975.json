@@ -1,0 +1,1 @@
+{"id":"177975","type":"experiment","data":{"kind":"user","id":"2025-04_custom_status_clear_after_times","label":"Custom Status Clear After Times Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable custom status clear after times","config":{"enabled":true}}]},"fromModule":{"id":"41091"}}

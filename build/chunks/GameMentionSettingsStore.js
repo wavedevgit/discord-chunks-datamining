@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 893642, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 495756, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  A: () => _
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk627050 = require("./627050.js"),
-  Chunk406763 = require("./406763.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk352505 = require("./352505.js"),
+  Chunk894010 = require("./894010.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,21 +27,21 @@ function u(e) {
 }
 
 function d() {
-  o.d.getCurrentConfig({
+  s.m.getCurrentConfig({
     location: "GameMentionSettingsStore"
-  }).enabled && (0, s.Q)()
+  }).enabled && (0, o.G)()
 }
 
 function f() {
   c = {}
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk311907.Ay.Store) {
   getMute(e) {
     return c[e]
   }
 }
 l(p, "displayName", "GameMentionSettingsStore");
-let _ = new p(Chunk570140.Z, {
+let _ = new p(Chunk73153.h, {
   REPLACE_GAME_MENTION_SETTINGS: u,
   CONNECTION_OPEN: d,
   LOGOUT: f

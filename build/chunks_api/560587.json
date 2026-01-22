@@ -1,1 +1,0 @@
-{"id":"560587","type":"store","data":{"name":"ApplicationBranchStore","functions":[{"name":"getBranches","args":["e"]}],"events":["OWNED_APPLICATION_BRANCHES_FETCH_SUCCESS","LOGOUT"]},"fromModule":{"id":"29497"}}

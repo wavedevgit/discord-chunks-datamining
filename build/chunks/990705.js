@@ -1,7 +1,0 @@
-/** Chunk was on 45620 **/
-/** chunk id: 990705, original params: e,t,n (module,exports,require) **/
-"use strict";
-require.d(exports, {
-  x: () => l
-});
-var r, l = ((r = {}).BLUE = "COLLECTIBLES_COLOR_BLUE", r.GREEN = "COLLECTIBLES_COLOR_GREEN", r.PINK = "COLLECTIBLES_COLOR_PINK", r.RED = "COLLECTIBLES_COLOR_RED", r.YELLOW = "COLLECTIBLES_COLOR_YELLOW", r.ORANGE = "COLLECTIBLES_COLOR_ORANGE", r.PURPLE = "COLLECTIBLES_COLOR_PURPLE", r.BROWN = "COLLECTIBLES_COLOR_BROWN", r.BLACK = "COLLECTIBLES_COLOR_BLACK", r.WHITE = "COLLECTIBLES_COLOR_WHITE", r)

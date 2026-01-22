@@ -1,0 +1,1 @@
+{"id":"113677","type":"experiment","data":{"kind":"user","id":"2025-08_afk_timeout_immediate","label":"AFK timeout immediate option","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Allow afk_timeout value of 0","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

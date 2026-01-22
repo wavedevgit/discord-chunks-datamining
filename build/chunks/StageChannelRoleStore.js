@@ -1,23 +1,23 @@
 /** Chunk was on web.js **/
-/** chunk id: 88751, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 312006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => M
-}), require("./388685.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk271383 = require("./271383.js"),
-  Chunk485386 = require("./485386.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk979651 = require("./979651.js"),
-  Chunk700785 = require("./700785.js"),
-  Chunk146085 = require("./146085.js"),
-  Chunk590415 = require("./590415.js"),
-  Chunk430104 = require("./430104.js");
+  Ay: () => M
+}), require("./896048.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk317525 = require("./317525.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk977997 = require("./977997.js"),
+  Chunk488926 = require("./488926.js"),
+  Chunk233993 = require("./233993.js"),
+  Chunk105530 = require("./105530.js"),
+  Chunk418208 = require("./418208.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,55 +34,55 @@ let b = {},
   };
 
 function O(e, t) {
-  let n = p.Z.getVoiceStateForChannel(t, e);
-  return (0, m.gf)(n) === m.xO.ON_STAGE
+  let n = p.A.getVoiceStateForChannel(t, e);
+  return (0, m.eY)(n) === m.zF.ON_STAGE
 }
 
-function v(e, t, n) {
-  return _.BT({
-    permission: h.yP,
+function A(e, t, n) {
+  return _.$3({
+    permission: h.QY,
     user: e,
     context: t,
     overwrites: n.permissionOverwrites,
-    roles: u.Z.getUnsafeMutableRoles(t.id)
+    roles: u.A.getUnsafeMutableRoles(t.id)
   })
 }
 
-function S(e, t) {
+function v(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    r = l.Z.getChannel(t),
+    r = l.A.getChannel(t),
     i = null == r ? true : r.getGuildId(),
-    a = d.Z.getGuild(i);
+    a = d.A.getGuild(i);
   return null != a && null != r && r.isGuildStageVoice() ? {
     speaker: O(e, t),
-    moderator: n ? v(e, a, r) : null
+    moderator: n ? A(e, a, r) : null
   } : y
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   null == b[t] && (b[t] = {});
-  let r = S(e, t, n);
+  let r = v(e, t, n);
   return b[t][e] = r, r
 }
 
-function T(e, t) {
+function I(e, t) {
   var n;
   if (null == t) returnfalse;
-  let r = l.Z.getChannel(t);
+  let r = l.A.getChannel(t);
   return null != r && !!r.isGuildStageVoice() && (null == (n = b[t]) || delete n[e], true)
 }
 
-function C(e, t) {
+function T(e, t) {
   for (let n in b) {
-    let r = l.Z.getBasicChannel(n);
+    let r = l.A.getBasicChannel(n);
     null != r && r.guild_id === t && delete b[n][e]
   }
   returntrue
 }
 
-function A(e) {
-  let t = Object.values(l.Z.getMutableGuildChannelsForGuild(e)).filter(e => e.isGuildStageVoice());
+function C(e) {
+  let t = Object.values(l.A.getMutableGuildChannelsForGuild(e)).filter(e => e.isGuildStageVoice());
   for (let e of t) delete b[e.id];
   return t.length > 0
 }
@@ -94,11 +94,11 @@ function N(e) {
   for (let e of t) delete b[e.id]
 }
 
-function P(e) {
+function R(e) {
   let {
     guildId: t
   } = e;
-  A(t)
+  C(t)
 }
 
 function w(e) {
@@ -106,10 +106,10 @@ function w(e) {
     guildId: t,
     user: n
   } = e;
-  return null != n && null != t && C(n.id, t)
+  return null != n && null != t && T(n.id, t)
 }
 
-function R(e) {
+function P(e) {
   let {
     voiceStates: t
   } = e;
@@ -118,12 +118,12 @@ function R(e) {
       userId: n,
       channelId: r
     } = t;
-    return T(n, r) || e
+    return I(n, r) || e
   }, false)
 }
 
 function D(e) {
-  return A(e.guildId)
+  return C(e.guildId)
 }
 
 function x() {
@@ -135,13 +135,13 @@ function L(e) {
     guild: t
   } = e;
   for (let e in b) {
-    let n = l.Z.getBasicChannel(e);
+    let n = l.A.getBasicChannel(e);
     (null == n || n.guild_id === t.id) && delete b[e]
   }
 }
-class j extends(r = Chunk442837.ZP.Store) {
+class j extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.ZP, l.Z, d.Z, f.default, p.Z, u.Z)
+    this.waitFor(c.Ay, l.A, d.A, f.default, p.A, u.A)
   }
   isSpeaker(e, t) {
     return this.getPermissionsForUser(e, t).speaker
@@ -157,23 +157,23 @@ class j extends(r = Chunk442837.ZP.Store) {
   getPermissionsForUser(e, t) {
     var n, r;
     let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
-    if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.NE)()) return y;
+    if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.o$)()) return y;
     let a = null == (r = b[t]) ? true : r[e];
     if (null != a)
-      if (i && null == a.moderator) return I(e, t, true);
+      if (i && null == a.moderator) return S(e, t, true);
       else return a;
-    return I(e, t, i)
+    return S(e, t, i)
   }
 }
 E(j, "displayName", "StageChannelRoleStore");
-let M = new j(Chunk570140.Z, {
+let M = new j(Chunk73153.h, {
   CHANNEL_UPDATES: N,
   CONNECTION_OPEN: x,
   GUILD_MEMBER_REMOVE: w,
   GUILD_MEMBER_UPDATE: w,
-  GUILD_ROLE_UPDATE: P,
+  GUILD_ROLE_UPDATE: R,
   PASSIVE_UPDATE_V2: D,
-  VOICE_STATE_UPDATES: R,
+  VOICE_STATE_UPDATES: P,
   GUILD_CREATE: L,
   GUILD_DELETE: L
 })

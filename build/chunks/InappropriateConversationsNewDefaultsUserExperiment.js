@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 667172, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 639555, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v4: () => i
+  Rv: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-01_inappropriate_conversations_new_defaults",
   label: "Inappropriate Conversation Warning Default On",

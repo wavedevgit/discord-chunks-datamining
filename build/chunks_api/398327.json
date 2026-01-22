@@ -1,1 +1,0 @@
-{"id":"398327","type":"store","data":{"name":"SpellcheckStore","functions":[{"name":"initialize","args":[]},{"name":"isEnabled","args":[]},{"name":"hasLearnedWord","args":["e"]}],"events":["SPELLCHECK_TOGGLE","SPELLCHECK_LEARN_WORD","SPELLCHECK_UNLEARN_WORD"]},"fromModule":{"id":"web.js"}}

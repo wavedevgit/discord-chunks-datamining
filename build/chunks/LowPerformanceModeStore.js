@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 471411, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 31056, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
+  A: () => l
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends(r = Chunk442837.ZP.Store) {
+class o extends(r = Chunk311907.Ay.Store) {
   getState() {
     return {
       enabled: false,
@@ -35,5 +35,5 @@ class s extends(r = Chunk442837.ZP.Store) {
     returnfalse
   }
 }
-o(s, "displayName", "LowPerformanceModeStore");
-let l = new s(Chunk570140.Z, {})
+s(o, "displayName", "LowPerformanceModeStore");
+let l = new o(Chunk73153.h, {})

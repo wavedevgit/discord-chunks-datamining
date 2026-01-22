@@ -1,0 +1,1 @@
+{"id":"664531","type":"experiment","data":{"kind":"user","id":"2022-08_back_to_school","label":"Back to School Event","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Back to School experience enabled","config":{"enabled":true}}]},"fromModule":{"id":"38763"}}

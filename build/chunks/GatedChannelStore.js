@@ -1,23 +1,23 @@
 /** Chunk was on web.js **/
-/** chunk id: 430198, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 717125, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk738774 = require("./738774.js"),
-  Chunk973542 = require("./973542.js"),
-  Chunk790285 = require("./790285.js"),
-  Chunk160404 = require("./160404.js"),
-  Chunk131704 = require("./131704.js"),
-  Chunk345162 = require("./345162.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk271383 = require("./271383.js"),
-  Chunk485386 = require("./485386.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => L
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk836039 = require("./836039.js"),
+  Chunk98318 = require("./98318.js"),
+  Chunk855918 = require("./855918.js"),
+  Chunk164956 = require("./164956.js"),
+  Chunk95701 = require("./95701.js"),
+  Chunk34457 = require("./34457.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk317525 = require("./317525.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,75 +34,75 @@ function O(e, t) {
   if (null == e) returnfalse;
   let n = m.default.getCurrentUser();
   if (null == n) returnfalse;
-  let r = p.ZP.getMember(t, n.id);
+  let r = p.Ay.getMember(t, n.id);
   return null != r && r.roles.includes(e.id)
 }
 
-function v(e) {
+function A(e) {
   let {
     guildId: t,
     role: n,
     isPreviewingRoles: r
   } = e;
-  return !!(0, s.Z)(n) && !!(r || (0, s.h)(null != n ? n : true) || O(n, t))
+  return !!(0, o.U)(n) && !!(r || (0, o.X)(null != n ? n : true) || O(n, t))
 }
 
-function S(e, t) {
+function v(e, t) {
   if (!t.features.has(g.GuildFeatures.CREATOR_MONETIZABLE) && !t.features.has(g.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) returnfalse;
-  let n = c.Z.isViewingServerShop(t.id);
+  let n = c.A.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
-    let i = _.Z.getRole(t.id, r);
-    if (!v({
+    let i = _.A.getRole(t.id, r);
+    if (!A({
         guildId: t.id,
         role: i,
         isPreviewingRoles: n
       })) continue;
     let a = e.permissionOverwrites[r];
-    if ((0, l.TG)(e, a)) returntrue
+    if ((0, l.Uj)(e, a)) returntrue
   }
-  let r = _.Z.getEveryoneRole(t),
-    i = !(0, d.Fs)(r, g.Plq.VIEW_CHANNEL),
-    a = (0, l.wB)(e, e.permissionOverwrites[t.id]);
+  let r = _.A.getEveryoneRole(t),
+    i = !(0, d._m)(r, g.xBc.VIEW_CHANNEL),
+    a = (0, l.AN)(e, e.permissionOverwrites[t.id]);
   if (i && !a) {
-    for (let e of _.Z.getSortedRoles(t.id))
-      if (v({
+    for (let e of _.A.getSortedRoles(t.id))
+      if (A({
           guildId: t.id,
           role: e,
           isPreviewingRoles: n
-        }) && (0, l.yt)(e)) returntrue
+        }) && (0, l.iR)(e)) returntrue
   }
   returnfalse
 }
 
-function I(e) {
-  let t = h.Z.getGuild(e);
+function S(e) {
+  let t = h.A.getGuild(e);
   if (null == t) return;
   let n = b[e] = new Set;
   if (!t.features.has(g.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) return;
-  let r = f.Z.getMutableGuildChannelsForGuild(e);
+  let r = f.A.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
     let i = r[e];
-    S(i, t) && n.add(i.id)
+    v(i, t) && n.add(i.id)
   }
 }
 
-function T(e, t) {
+function I(e, t) {
   let n = b[e];
   if (null == n) returnfalse;
-  let r = f.Z.getChannel(t);
+  let r = f.A.getChannel(t);
   if (null == r) returnfalse;
-  let i = h.Z.getGuild(r.getGuildId());
+  let i = h.A.getGuild(r.getGuildId());
   if (null == i) returnfalse;
   let a = n.has(t),
-    o = S(r, i);
-  return a !== o && (o ? n.add(t) : n.delete(t), true)
+    s = v(r, i);
+  return a !== s && (s ? n.add(t) : n.delete(t), true)
 }
 
-function C() {
+function T() {
   b = {}, y.clear()
 }
 
-function A(e) {
+function C(e) {
   let {
     guild: t
   } = e;
@@ -116,27 +116,27 @@ function N(e) {
   delete b[t]
 }
 
-function P(e) {
+function R(e) {
   let {
     channel: t
   } = e;
-  return null != t.guild_id && T(t.guild_id, t.id)
+  return null != t.guild_id && I(t.guild_id, t.id)
 }
 
 function w(e) {
   let {
     channels: t
   } = e, n = false;
-  for (let e of t) null != e.guild_id && T(e.guild_id, e.id) && (n = true);
+  for (let e of t) null != e.guild_id && I(e.guild_id, e.id) && (n = true);
   return n
 }
 
-function R(e) {
+function P(e) {
   let {
     guildId: t,
     restrictions: n
   } = e;
-  (0, o.uq)(n) ? y.add(t): y.delete(t)
+  (0, s.Y5)(n) ? y.add(t): y.delete(t)
 }
 
 function D(e) {
@@ -145,14 +145,14 @@ function D(e) {
   } = e;
   y.add(t)
 }
-class x extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(f.Z, p.ZP, _.Z, h.Z, c.Z, m.default)
+    this.waitFor(f.A, p.Ay, _.A, h.A, c.A, m.default)
   }
   isChannelGated(e, t) {
     if (null == e) returnfalse;
     let n = b[e];
-    return null == n && (I(e), n = b[e]), null != n && n.has(t)
+    return null == n && (S(e), n = b[e]), null != n && n.has(t)
   }
   isChannelGatedAndVisible(e, t) {
     return null != e && this.isChannelGated(e, t) && !y.has(e)
@@ -160,26 +160,26 @@ class x extends(r = Chunk442837.ZP.Store) {
   isChannelOrThreadParentGated(e, t) {
     if (null == e) returnfalse;
     if (this.isChannelGated(e, t)) returntrue;
-    let n = f.Z.getChannel(t);
-    return !!(null != n && null != n.parent_id && u.Ec.has(null == n ? true : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
+    let n = f.A.getChannel(t);
+    return !!(null != n && null != n.parent_id && u.Le.has(null == n ? true : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
 E(x, "displayName", "GatedChannelStore");
-let L = new x(Chunk570140.Z, {
-  CONNECTION_OPEN: C,
-  OVERLAY_INITIALIZE: C,
-  CACHE_LOADED_LAZY: C,
-  GUILD_CREATE: A,
-  GUILD_UPDATE: A,
-  GUILD_DELETE: A,
+let L = new x(Chunk73153.h, {
+  CONNECTION_OPEN: T,
+  OVERLAY_INITIALIZE: T,
+  CACHE_LOADED_LAZY: T,
+  GUILD_CREATE: C,
+  GUILD_UPDATE: C,
+  GUILD_DELETE: C,
   GUILD_ROLE_CREATE: N,
   GUILD_ROLE_UPDATE: N,
   GUILD_ROLE_DELETE: N,
   IMPERSONATE_UPDATE: N,
   IMPERSONATE_STOP: N,
-  CHANNEL_CREATE: P,
-  CHANNEL_DELETE: P,
+  CHANNEL_CREATE: R,
+  CHANNEL_DELETE: R,
   CHANNEL_UPDATES: w,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: R,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: P,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: D
 })

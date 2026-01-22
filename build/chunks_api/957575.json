@@ -1,1 +1,0 @@
-{"id":"957575","type":"experiment","data":{"kind":"user","id":"2025-03_user_profile_voice_activity_card_status","label":"User Profile Voice Activity Card Status Experiment","defaultConfig":{"channelStatusEnabled":false},"treatments":[{"id":1,"label":"Channel status enabled","config":{"channelStatusEnabled":true}}]},"fromModule":{"id":"web.js"}}

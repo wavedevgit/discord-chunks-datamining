@@ -1,12 +1,12 @@
-/** Chunk was on 22979 **/
-/** chunk id: 864133, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 22477 **/
+/** chunk id: 334165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var a, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var a, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function l(e, t, n) {
+function r(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ let s = {
     lastSeenInfos: {}
   },
   o = s;
-class c extends(a = Chunk442837.ZP.PersistedStore) {
+class c extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     o = null != e ? e : s
   }
@@ -30,8 +30,8 @@ class c extends(a = Chunk442837.ZP.PersistedStore) {
     return null != (t = o.lastSeenInfos[e]) ? t : null
   }
 }
-l(c, "displayName", "GuildTagChangedCoachmarkStore"), l(c, "persistKey", "GuildTagChangedCoachmarkStore");
-let d = new c(Chunk570140.Z, {
+r(c, "displayName", "GuildTagChangedCoachmarkStore"), r(c, "persistKey", "GuildTagChangedCoachmarkStore");
+let d = new c(Chunk73153.h, {
   GUILD_TAG_CHANGED_COACHMARK_SEEN: function(e) {
     let {
       guildId: t,

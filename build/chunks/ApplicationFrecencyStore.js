@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 822245, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 630248, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
-}), require("./539854.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk911969 = require("./911969.js"),
-  Chunk704907 = require("./704907.js"),
-  Chunk317381 = require("./317381.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk674563 = require("./674563.js"),
-  Chunk526761 = require("./526761.js");
+  A: () => C
+}), require("./321073.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk155718 = require("./155718.js"),
+  Chunk283047 = require("./283047.js"),
+  Chunk933958 = require("./933958.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk705751 = require("./705751.js"),
+  Chunk355097 = require("./355097.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,15 +53,15 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = [Chunk911969.yU.CHAT, Chunk911969.yU.PRIMARY_ENTRY_POINT],
+let E = [Chunk155718.kc.CHAT, Chunk155718.kc.PRIMARY_ENTRY_POINT],
   b = {
     pendingUsages: []
   },
-  y = new Chunk704907.Z({
+  y = new Chunk283047.A({
     computeBonus: () => 100,
     lookupKey: e => e,
     afterCompute: () => {},
-    numFrequentlyItems: Chunk674563.yP
+    numFrequentlyItems: Chunk705751.h2
   });
 
 function O(e) {
@@ -71,43 +71,43 @@ function O(e) {
     },
     wasSaved: n
   } = e;
-  if (t !== p.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
+  if (t !== p.oD.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   b.pendingUsages = []
 }
 
-function v(e) {
+function A(e) {
   var t;
   let {
     command: n
   } = e;
-  if (!E.includes(n.type) || (null == (t = u.ZP.getLaunchState(n.applicationId)) ? true : t.isLaunching)) returnfalse;
-  I(n.applicationId)
+  if (!E.includes(n.type) || (null == (t = u.Ay.getLaunchState(n.applicationId)) ? true : t.isLaunching)) returnfalse;
+  S(n.applicationId)
 }
 
-function S(e) {
+function v(e) {
   let {
     applicationId: t
   } = e;
-  I(t)
+  S(t)
 }
 
-function I(e) {
+function S(e) {
   b.pendingUsages.push({
     key: e,
     timestamp: Date.now()
   }), y.track(e), y.compute()
 }
 
-function T() {
+function I() {
   var e, t;
-  let n = null != (t = null == (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) ? true : e.applications) ? t : {};
+  let n = null != (e = null == (t = d.A.frecencyWithoutFetchingLatest.applicationFrecency) ? true : t.applications) ? e : {};
   y.overwriteHistory(a().mapValues(n, e => g(h({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), b.pendingUsages)
 }
-class C extends(r = Chunk442837.ZP.PersistedStore) {
+class T extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (b = e), this.waitFor(u.ZP, d.Z), this.syncWith([d.Z], T)
+    null != e && (b = e), this.waitFor(u.Ay, d.A), this.syncWith([d.A], I)
   }
   getState() {
     return b
@@ -126,9 +126,9 @@ class C extends(r = Chunk442837.ZP.PersistedStore) {
     return y.frequently
   }
 }
-_(C, "displayName", "ApplicationFrecencyStore"), _(C, "persistKey", "ApplicationFrecency");
-let A = new C(Chunk570140.Z, {
-  APPLICATION_COMMAND_USED: v,
-  EMBEDDED_ACTIVITY_OPEN: S,
+_(T, "displayName", "ApplicationFrecencyStore"), _(T, "persistKey", "ApplicationFrecency");
+let C = new T(Chunk73153.h, {
+  APPLICATION_COMMAND_USED: A,
+  EMBEDDED_ACTIVITY_OPEN: v,
   USER_SETTINGS_PROTO_UPDATE: O
 })

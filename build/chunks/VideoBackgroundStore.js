@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
-/** chunk id: 634041, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 912630, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  A: () => R
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk46973 = require("./46973.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk131951 = require("./131951.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk647177 = require("./647177.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk205693 = require("./205693.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk430452 = require("./430452.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk965162 = require("./965162.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,45 +72,45 @@ function O(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     videoFilterAsset: t
   } = e;
   b = p({}, b), delete b[t.id]
 }
 
-function S(e) {
+function v(e) {
   var t;
   let n = u.default.getCurrentUser();
   if (null == n) returnfalse;
-  let r = null != e ? e : (0, d.Gx)(null == (t = s.Z.settings.voiceAndVideo) ? true : t.videoBackgroundFilterDesktop, n.id);
-  return null != c.Z.getVoiceChannelId() && l.Z.isVideoEnabled() && null != r
+  let r = null != e ? e : (0, d.Hk)(null == (t = o.A.settings.voiceAndVideo) ? true : t.videoBackgroundFilterDesktop, n.id);
+  return null != c.A.getVoiceChannelId() && l.A.isVideoEnabled() && null != r
+}
+
+function S(e) {
+  let {
+    backgroundOption: t
+  } = e;
+  v(t) && (E = true)
 }
 
 function I(e) {
   let {
-    backgroundOption: t
-  } = e;
-  S(t) && (E = true)
-}
-
-function T(e) {
-  let {
     settings: t
   } = e;
-  a.TO.CAMERA_BACKGROUND_LIVE in t && (m = true)
+  a.Tr.CAMERA_BACKGROUND_LIVE in t && (m = true)
+}
+
+function T() {
+  g !== c.A.getVoiceChannelId() && (E = false), v() && (E = true), g = c.A.getVoiceChannelId()
 }
 
 function C() {
-  g !== c.Z.getVoiceChannelId() && (E = false), S() && (E = true), g = c.Z.getVoiceChannelId()
-}
-
-function A() {
   m = false, E = false, g = null, b = {}
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.Z, c.Z, s.Z, u.default), this.syncWith([c.Z, l.Z], C)
+    this.waitFor(l.A, c.A, o.A, u.default), this.syncWith([c.A, l.A], T)
   }
   get videoFilterAssets() {
     return b
@@ -123,11 +123,11 @@ class N extends(r = Chunk442837.ZP.Store) {
   }
 }
 f(N, "displayName", "VideoBackgroundStore");
-let P = new N(Chunk570140.Z, {
+let R = new N(Chunk73153.h, {
   VIDEO_FILTER_ASSETS_FETCH_SUCCESS: y,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: O,
-  VIDEO_FILTER_ASSET_DELETE_SUCCESS: v,
-  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: I,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: T,
-  LOGOUT: A
+  VIDEO_FILTER_ASSET_DELETE_SUCCESS: A,
+  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: S,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: I,
+  LOGOUT: C
 })

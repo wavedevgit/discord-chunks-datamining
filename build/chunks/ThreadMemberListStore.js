@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
-/** chunk id: 159299, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 219065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
-}), require("./388685.js"), require("./642613.js"), require("./539854.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk271383 = require("./271383.js"),
-  Chunk797316 = require("./797316.js"),
-  Chunk158776 = require("./158776.js"),
-  Chunk885110 = require("./885110.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk823379 = require("./823379.js"),
-  Chunk700785 = require("./700785.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk51144 = require("./51144.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => M
+}), require("./896048.js"), require("./638769.js"), require("./321073.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk82057 = require("./82057.js"),
+  Chunk290863 = require("./290863.js"),
+  Chunk461213 = require("./461213.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk403362 = require("./403362.js"),
+  Chunk488926 = require("./488926.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk427262 = require("./427262.js"),
+  Chunk652215 = require("./652215.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -32,7 +32,7 @@ let y = {};
 class O {
   rebuild(e) {
     this.version++, this.sections = {}, null != e && (this.allUserIds = new Set(e));
-    let t = l.Z.getChannel(this.parentId);
+    let t = l.A.getChannel(this.parentId);
     a()(Array.from(this.allUserIds)).map(e => {
       let [n, r, i] = this.calculateNewState(e, t);
       return {
@@ -50,11 +50,11 @@ class O {
   }
   updateUserId(e) {
     if (!this.allUserIds.has(e)) returnfalse;
-    let [t, n, r] = this.findOldState(e), [i, a, o] = this.calculateNewState(e, l.Z.getChannel(this.parentId));
-    return (t !== i || n !== a || r !== o) && (this.removeUserId(e, t), this.addUser(e, i, a, o), true)
+    let [t, n, r] = this.findOldState(e), [i, a, s] = this.calculateNewState(e, l.A.getChannel(this.parentId));
+    return (t !== i || n !== a || r !== s) && (this.removeUserId(e, t), this.addUser(e, i, a, s), true)
   }
   addUserId(e) {
-    let [t, n, r] = this.calculateNewState(e, l.Z.getChannel(this.parentId));
+    let [t, n, r] = this.calculateNewState(e, l.A.getChannel(this.parentId));
     this.addUser(e, t, n, r)
   }
   removeUserId(e, t) {
@@ -72,15 +72,15 @@ class O {
       usersById: {},
       userIds: []
     });
-    let o = this.sections[t];
-    if (o.usersById[e] = {
+    let s = this.sections[t];
+    if (s.usersById[e] = {
         userId: e,
         displayName: n,
         canViewChannel: r
-      }, i) o.userIds.push(e);
+      }, i) s.userIds.push(e);
     else {
-      let t = this.findUserIdSortedPosition(o, e, n);
-      o.userIds.splice(t, 0, e)
+      let t = this.findUserIdSortedPosition(s, e, n);
+      s.userIds.splice(t, 0, e)
     }
     this.version++
   }
@@ -91,12 +91,12 @@ class O {
     } = e;
     for (let e = 0; e < r.length; e++) {
       let a = r[e],
-        o = i[a].displayName;
-      if (o === n) {
+        s = i[a].displayName;
+      if (s === n) {
         if (t < a) return e
-      } else if (null == o) {
+      } else if (null == s) {
         if (null != n) return e
-      } else if (null != n && n < o) return e
+      } else if (null != n && n < s) return e
     }
     return r.length
   }
@@ -116,17 +116,17 @@ class O {
   }
   calculateNewState(e, t) {
     var n, r;
-    let i = c.ZP.getMember(this.guildId, e),
+    let i = c.Ay.getMember(this.guildId, e),
       a = p.default.getUser(e),
-      o = p.default.getCurrentUser(),
-      s = (null == a ? true : a.id) === (null == o ? true : o.id) ? f.Z.getStatus() : d.Z.getStatus(e, this.guildId),
-      l = null != a && null != t && h.BT({
-        permission: E.Plq.VIEW_CHANNEL,
+      s = p.default.getCurrentUser(),
+      o = (null == a ? true : a.id) === (null == s ? true : s.id) ? f.A.getStatus() : d.A.getStatus(e, this.guildId),
+      l = null != a && null != t && h.$3({
+        permission: E.xBc.VIEW_CHANNEL,
         user: a,
         context: t
       }),
-      u = s !== E.Skl.OFFLINE && s !== E.Skl.INVISIBLE && s !== E.Skl.UNKNOWN ? null != (n = null == i ? true : i.hoistRoleId) ? n : "online" : "offline",
-      _ = null != (r = null == i ? true : i.nick) ? r : g.ZP.getName(a);
+      u = o !== E.clD.OFFLINE && o !== E.clD.INVISIBLE && o !== E.clD.UNKNOWN ? null != (n = null == i ? true : i.hoistRoleId) ? n : "online" : "offline",
+      _ = null != (r = null == i ? true : i.nick) ? r : g.Ay.getName(a);
     return [u, null == _ ? true : _.toLowerCase(), l]
   }
   constructor(e, t, n) {
@@ -134,11 +134,11 @@ class O {
   }
 }
 
-function v() {
+function A() {
   y = {}
 }
 
-function S(e) {
+function v(e) {
   var t, n;
   if (!(e.id in y)) returnfalse;
   null == (t = e.addedMembers) || t.forEach(t => {
@@ -149,20 +149,20 @@ function S(e) {
   }), null == (n = e.removedMemberIds) || n.forEach(t => y[e.id].removeUserId(t))
 }
 
-function I(e) {
+function S(e) {
   let {
     threadId: t,
     guildId: n,
     members: r
-  } = e, i = l.Z.getChannel(t), a = null == i ? true : i.parent_id;
+  } = e, i = l.A.getChannel(t), a = null == i ? true : i.parent_id;
   null != a && (y[t] = new O(n, a, t), y[t].rebuild(r.map(e => e.user_id)))
 }
 
-function T(e) {
+function I(e) {
   return N(e.user.id)
 }
 
-function C(e) {
+function T(e) {
   let {
     updates: t
   } = e;
@@ -174,7 +174,7 @@ function C(e) {
   }).some(e => e)
 }
 
-function A(e) {
+function C(e) {
   return e.members.reduce((e, t) => N(t.user.id) || e, false)
 }
 
@@ -185,13 +185,13 @@ function N(e) {
   return t
 }
 
-function P(e) {
+function R(e) {
   let {
     presences: t
   } = e, n = a()(t).map(e => {
     var t;
     return null == (t = e.user) ? true : t.id
-  }).filter(_.lm).uniq().value(), r = false;
+  }).filter(_.Vq).uniq().value(), r = false;
   for (let e in y) y[e].updateMultipleUserIds(n) && (r = true);
   return r
 }
@@ -211,7 +211,7 @@ function w(e) {
   return n
 }
 
-function R(e) {
+function P(e) {
   var t;
   let {
     channel: n
@@ -243,14 +243,14 @@ function L(e) {
   for (let e in y) n.has(y[e].parentId) && (y[e].rebuild(), r = true);
   return r
 }
-class j extends(r = Chunk442837.ZP.Store) {
+class j extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.Z, c.ZP, u.Z, d.Z, f.Z, p.default), this.syncWith([u.Z], () => {
-      let e = u.Z.getSubscribedThreadIds(),
+    this.waitFor(l.A, c.Ay, u.A, d.A, f.A, p.default), this.syncWith([u.A], () => {
+      let e = u.A.getSubscribedThreadIds(),
         t = false;
       for (let n in y) e.has(n) || (delete y[n], t = true);
       return t
-    }), this.syncWith([f.Z], () => {
+    }), this.syncWith([f.A], () => {
       var e;
       return N(null == (e = p.default.getCurrentUser()) ? true : e.id)
     })
@@ -267,26 +267,26 @@ class j extends(r = Chunk442837.ZP.Store) {
     var r, i;
     let a = y[e];
     if (null == a) returnfalse;
-    let o = null == (r = a.sections[t]) ? true : r.usersById[n];
-    return null != (i = null == o ? true : o.canViewChannel) && i
+    let s = null == (i = a.sections[t]) ? true : i.usersById[n];
+    return null != (r = null == s ? true : s.canViewChannel) && r
   }
 }
 b(j, "displayName", "ThreadMemberListStore");
-let M = new j(Chunk570140.Z, {
-  CONNECTION_OPEN: v,
-  THREAD_MEMBERS_UPDATE: S,
-  THREAD_UPDATE: R,
+let M = new j(Chunk73153.h, {
+  CONNECTION_OPEN: A,
+  THREAD_MEMBERS_UPDATE: v,
+  THREAD_UPDATE: P,
   THREAD_DELETE: D,
   CHANNEL_UPDATES: L,
-  THREAD_MEMBER_LIST_UPDATE: I,
-  USER_UPDATE: T,
-  PRESENCE_UPDATES: C,
-  GUILD_MEMBER_ADD: T,
-  GUILD_MEMBER_UPDATE: T,
-  GUILD_MEMBER_REMOVE: T,
-  PRESENCES_REPLACE: P,
+  THREAD_MEMBER_LIST_UPDATE: S,
+  USER_UPDATE: I,
+  PRESENCE_UPDATES: T,
+  GUILD_MEMBER_ADD: I,
+  GUILD_MEMBER_UPDATE: I,
+  GUILD_MEMBER_REMOVE: I,
+  PRESENCES_REPLACE: R,
   GUILD_MEMBERS_CHUNK_BATCH: w,
   GUILD_ROLE_UPDATE: x,
   GUILD_ROLE_DELETE: x,
-  PASSIVE_UPDATE_V2: A
+  PASSIVE_UPDATE_V2: C
 })

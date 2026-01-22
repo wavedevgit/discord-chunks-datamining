@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 292959, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 803224, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  A: () => O
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk652215 = require("./652215.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,10 +31,10 @@ function c(e) {
   return e
 }
 let u = {
-    desktopType: Chunk358085.isPlatformEmbedded ? Chunk981631.qrD.ALL : Chunk981631.qrD.NEVER,
+    desktopType: Chunk723702.isPlatformEmbedded ? Chunk652215.nRU.ALL : Chunk652215.nRU.NEVER,
     disableAllSounds: false,
     disabledSounds: [],
-    ttsType: Chunk981631.PrB.NEVER,
+    ttsType: Chunk652215.aVn.NEVER,
     disableUnreadBadge: false,
     taskbarFlash: true,
     notifyMessagesInSelectedChannel: false
@@ -91,13 +91,13 @@ function b(e) {
   let {
     enabled: t
   } = e;
-  t === s.$Ab.BLOCKED ? f({
-    desktopType: s.qrD.NEVER
-  }) : t === s.$Ab.ENABLED && f({
-    desktopType: s.qrD.ALL
+  t === o.kCE.BLOCKED ? f({
+    desktopType: o.nRU.NEVER
+  }) : t === o.kCE.ENABLED && f({
+    desktopType: o.nRU.ALL
   })
 }
-class y extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class y extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     d = c({}, u, e)
   }
@@ -131,9 +131,9 @@ class y extends(r = Chunk442837.ZP.DeviceSettingsStore) {
 }
 l(y, "displayName", "NotificationSettingsStore"), l(y, "persistKey", "notifications"), l(y, "migrations", [e => {
   let t = c({}, e);
-  return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || false, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || s.PrB.NEVER, null == t.desktopType && (t.desktopType = o.isPlatformEmbedded ? s.qrD.ALL : s.qrD.NEVER), t
+  return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || false, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || o.aVn.NEVER, null == t.desktopType && (t.desktopType = s.isPlatformEmbedded ? o.nRU.ALL : o.nRU.NEVER), t
 }]);
-let O = new y(Chunk570140.Z, {
+let O = new y(Chunk73153.h, {
   NOTIFICATIONS_SET_DESKTOP_TYPE: f,
   NOTIFICATIONS_SET_TTS_TYPE: h,
   NOTIFICATIONS_SET_DISABLED_SOUNDS: p,

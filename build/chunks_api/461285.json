@@ -1,0 +1,1 @@
+{"id":"461285","type":"experiment","data":{"kind":"user","id":"2025-06_audio_bitrate_adaptation","label":"Audio Bitrate Adaptation","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable audio bitrate adaptation","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

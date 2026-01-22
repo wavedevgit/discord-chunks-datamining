@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 914010, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 967198, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  A: () => N
 });
-var r, Chunk828700 = require("./828700.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk937111 = require("./937111.js"),
-  Chunk893607 = require("./893607.js"),
-  Chunk703656 = require("./703656.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk896797 = require("./896797.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk960488 = require("./960488.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk212455 = require("./212455.js"),
+  Chunk463347 = require("./463347.js"),
+  Chunk976860 = require("./976860.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk650048 = require("./650048.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk652215 = require("./652215.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,7 +29,7 @@ let h = false,
   E = {};
 
 function b() {
-  null != m && null == f.Z.getGuild(m) && null == s.Z.getRequest(m) && (m = null), null != g && null == f.Z.getGuild(g) && null == s.Z.getRequest(g) && (g = null), O(m)
+  null != m && null == f.A.getGuild(m) && null == o.A.getRequest(m) && (m = null), null != g && null == f.A.getGuild(g) && null == o.A.getRequest(g) && (g = null), O(m)
 }
 
 function y(e) {
@@ -40,7 +40,7 @@ function O(e) {
   null != e && (E[e] = Date.now())
 }
 
-function v(e) {
+function A(e) {
   let {
     guildId: t
   } = e;
@@ -48,41 +48,41 @@ function v(e) {
   O(m), O(t), null != t && (g = t), m = t
 }
 
-function S(e) {
+function v(e) {
   let t = false;
-  return delete E[e], g === e && (g = null, t = true), m === e && (f.Z.getGuildsArray().find(t => t.id !== e), m = null, (0, c.dL)(p.Z5c.ME), t = true), t
+  return delete E[e], g === e && (g = null, t = true), m === e && (f.A.getGuildsArray().find(t => t.id !== e), m = null, (0, c.bG)(p.BVt.ME), t = true), t
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: {
       id: t,
       unavailable: n
     }
   } = e;
-  returntrue !== n && S(t)
+  returntrue !== n && v(t)
 }
 
-function T(e) {
+function I(e) {
   let {
     guildId: t,
     user: n
   } = e;
-  return n.id === u.default.getId() && S(t)
+  return n.id === u.default.getId() && v(t)
 }
 
-function C() {
+function T() {
   m = null, g = null
 }
-class A extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t, n, r, a;
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.Z, f.Z, s.Z), E = null != (n = null == e ? true : e.selectedGuildTimestampMillis) ? n : {}, m = null != (r = null == e ? true : e.selectedGuildId) ? r : null, g = null != (a = null == e ? true : e.lastSelectedGuildId) ? a : null;
-    let o = d.Z.lastNonVoiceRoute,
-      c = (0, i.LX)(o, {
-        path: p.Z5c.CHANNEL(l.Hw.guildId())
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.A, f.A, o.A), E = null != (t = null == e ? true : e.selectedGuildTimestampMillis) ? t : {}, m = null != (n = null == e ? true : e.selectedGuildId) ? n : null, g = null != (r = null == e ? true : e.lastSelectedGuildId) ? r : null;
+    let s = d.A.lastNonVoiceRoute,
+      c = (0, i.B6)(s, {
+        path: p.BVt.CHANNEL(l.pv.guildId())
       });
-    null == c || null == (t = c.params) || t.guildId
+    null == c || null == (a = c.params) || a.guildId
   }
   getState() {
     return {
@@ -101,12 +101,12 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     return m === e ? h : E[e]
   }
 }
-_(A, "displayName", "SelectedGuildStore"), _(A, "persistKey", "SelectedGuildStore");
-let N = new A(Chunk570140.Z, {
+_(C, "displayName", "SelectedGuildStore"), _(C, "persistKey", "SelectedGuildStore");
+let N = new C(Chunk73153.h, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
-  CHANNEL_SELECT: v,
-  GUILD_MEMBER_REMOVE: T,
-  GUILD_DELETE: I,
-  LOGOUT: C
+  CHANNEL_SELECT: A,
+  GUILD_MEMBER_REMOVE: I,
+  GUILD_DELETE: S,
+  LOGOUT: T
 })

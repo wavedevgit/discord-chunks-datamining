@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 998698, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 861382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk433355 = require("./433355.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk581364 = require("./581364.js");
+  A: () => b
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk761640 = require("./761640.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk168186 = require("./168186.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function _(e) {
     command: r,
     section: i,
     initialValues: a,
-    location: o,
-    triggerSection: s,
+    location: s,
+    triggerSection: o,
     queryLength: c,
     sectionName: u,
     query: d,
@@ -75,10 +75,10 @@ function _(e) {
       lastValidationResult: null,
       optionValue: null
     }
-  }), m.optionStates = g, null != r && (0, l.qJ)({
+  }), m.optionStates = g, null != r && (0, l.my)({
     command: r,
-    location: o,
-    triggerSection: s,
+    location: s,
+    triggerSection: o,
     queryLength: c,
     sectionName: u,
     query: d,
@@ -93,7 +93,7 @@ function h(e) {
     channelId: r,
     commandId: i
   } = e, a = p(r);
-  return i !== a.preferredCommandId && (null !== a.preferredCommandId || i !== (null != (n = null == (t = a.activeCommand) ? true : t.id) ? n : null)) && (a.activeCommand = null, a.activeOptionName = null, a.preferredCommandId = i, a.optionStates = {}, true)
+  return i !== a.preferredCommandId && (null !== a.preferredCommandId || i !== (null != (t = null == (n = a.activeCommand) ? true : n.id) ? t : null)) && (a.activeCommand = null, a.activeOptionName = null, a.preferredCommandId = i, a.optionStates = {}, true)
 }
 
 function m(e) {
@@ -102,7 +102,7 @@ function m(e) {
     changedOptionStates: n
   } = e, r = p(t), i = u({}, r.optionStates);
   for (let [e, t] of Object.entries(n)) {
-    var a, o, s;
+    var a, s, o;
     if (!(e in r.optionStates)) continue;
     if (!(true !== t.hasValue ? t.hasValue : i[e].hasValue)) {
       i[e] = {
@@ -121,8 +121,8 @@ function m(e) {
       isActive: true !== t.isActive ? t.isActive : n.isActive,
       lastValidationResult: true !== t.lastValidationResult ? t.lastValidationResult : n.lastValidationResult,
       optionValue: null != (a = t.optionValue) ? a : n.optionValue,
-      location: null != (o = t.location) ? o : n.location,
-      length: null != (s = t.length) ? s : n.length
+      location: null != (s = t.location) ? s : n.location,
+      length: null != (o = t.length) ? o : n.length
     }, true !== t.isActive && (t.isActive ? (null != r.activeOptionName && r.activeOptionName !== e && (i[r.activeOptionName] = u({}, i[r.activeOptionName]), i[r.activeOptionName].isActive = false), r.activeOptionName = e) : e === r.activeOptionName && (r.activeOptionName = null))
   }
   return r.optionStates = i, true
@@ -135,8 +135,8 @@ function g(e) {
     command: r,
     section: i,
     location: a,
-    changedOptionStates: o
-  } = e, s = _({
+    changedOptionStates: s
+  } = e, o = _({
     type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
     channelId: t,
     command: r,
@@ -149,16 +149,16 @@ function g(e) {
   }), c = m({
     type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
     channelId: t,
-    changedOptionStates: o
+    changedOptionStates: s
   });
-  return s || l || c
+  return o || l || c
 }
-class E extends(r = Chunk442837.ZP.Store) {
+class E extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.ZP, s.Z), o.ZP.addChangeListener(() => {
-      let e = s.Z.getChannelId();
+    this.waitFor(s.Ay, o.A), s.Ay.addChangeListener(() => {
+      let e = o.A.getChannelId();
       if (null == e) return d = {}, true;
-      let t = o.ZP.getCurrentSidebarChannelId(e);
+      let t = s.Ay.getCurrentSidebarChannelId(e);
       if (null != t && t in d) returnfalse;
       d = e in d ? {
         [e]: d[e]
@@ -177,7 +177,7 @@ class E extends(r = Chunk442837.ZP.Store) {
   getActiveOption(e) {
     var t, n, r;
     let i = p(e);
-    return null != (r = null == (n = i.activeCommand) || null == (t = n.options) ? true : t.find(e => e.name === i.activeOptionName)) ? r : null
+    return null != (t = null == (r = i.activeCommand) || null == (n = r.options) ? true : n.find(e => e.name === i.activeOptionName)) ? t : null
   }
   getPreferredCommandId(e) {
     return p(e).preferredCommandId
@@ -203,7 +203,7 @@ class E extends(r = Chunk442837.ZP.Store) {
   }
 }
 c(E, "displayName", "ApplicationCommandStore");
-let b = new E(Chunk570140.Z, {
+let b = new E(Chunk73153.h, {
   CONNECTION_OPEN: f,
   CHANNEL_SELECT: f,
   LOGOUT: f,

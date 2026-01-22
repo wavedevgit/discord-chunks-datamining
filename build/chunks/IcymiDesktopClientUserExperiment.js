@@ -1,22 +1,22 @@
 /** Chunk was on web.js **/
-/** chunk id: 518929, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 335934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  VZ: () => u,
-  ZY: () => d,
-  b5: () => c,
-  q3: () => p
+  E2: () => d,
+  HF: () => u,
+  c: () => c,
+  o$: () => p
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk638395 = require("./638395.js"),
-  Chunk171393 = require("./171393.js"),
-  Chunk987338 = require("./987338.js");
-let s = "hide_icymi_tab",
-  l = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk303622 = require("./303622.js"),
+  Chunk735729 = require("./735729.js"),
+  Chunk688151 = require("./688151.js");
+let o = "hide_icymi_tab",
+  l = (0, Chunk600975.C)({
     kind: "user",
     id: "2024-07_icymi",
     label: "In-case-you-missed-it tab",
-    commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN_MOBILE,
+    commonTriggerPoint: Chunk688151.$G.CONNECTION_OPEN_MOBILE,
     defaultConfig: {
       enabled: false
     },
@@ -31,7 +31,7 @@ let s = "hide_icymi_tab",
 
 function c(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = (0, a.Z)(s),
+    n = (0, a.A)(o),
     r = l.useExperiment({
       location: e
     }, {
@@ -49,7 +49,7 @@ function c(e) {
 
 function u(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = i.Z.get(s),
+    n = i.A.get(o),
     r = l.getCurrentConfig({
       location: e
     }, {
@@ -66,7 +66,7 @@ function u(e) {
     return r.enabled && t.icymiDesktopEnabled
   }
 }
-let d = (0, Chunk818083.B)({
+let d = (0, Chunk600975.C)({
     kind: "user",
     id: "2024-07_icymi_negative_items",
     label: "icymi negative content (debugging only)",
@@ -81,7 +81,7 @@ let d = (0, Chunk818083.B)({
       }
     }]
   }),
-  f = (0, Chunk818083.B)({
+  f = (0, Chunk600975.C)({
     kind: "user",
     id: "2025-05_icymi_new_conversation_summaries",
     label: "New conversation summary in ICYMI",
@@ -107,7 +107,7 @@ function p(e) {
     disable: !n
   })
 }
-let _ = (0, Chunk818083.B)({
+let _ = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-10_icymi_desktop_client",
   label: "ICYMI desktop client",

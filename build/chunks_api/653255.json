@@ -1,1 +1,0 @@
-{"id":"653255","type":"store","data":{"name":"StreamingCapabilitiesStore","functions":[{"name":"initialize","args":[]},{"name":"GPUDriversOutdated","args":[]},{"name":"canUseHardwareAcceleration","args":[]},{"name":"problematicGPUDriver","args":[]},{"name":"getState","args":[]}],"events":["OVERLAY_INITIALIZE"]},"fromModule":{"id":"27601"}}

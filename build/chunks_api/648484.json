@@ -1,0 +1,1 @@
+{"id":"648484","type":"store","data":{"name":"InstanceIdStore","functions":[{"name":"getId","args":[]}],"events":["RPC_SERVER_READY"]},"fromModule":{"id":"web.js"}}

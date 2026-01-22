@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 19759, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 265059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p,
-  h: () => c
+  A: () => p,
+  q: () => c
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk906467 = require("./906467.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk540999 = require("./540999.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -44,11 +44,11 @@ let c = 460,
   };
 
 function d(e) {
-  o.Z.isDeveloper && (u = l({}, u, e.settings))
+  s.A.isDeveloper && (u = l({}, u, e.settings))
 }
-class f extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class f extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    u = null != e ? e : u, a.Z.actionLogger.persist = o.Z.isDeveloper
+    u = null != e ? e : u, a.h.actionLogger.persist = s.A.isDeveloper
   }
   getUserAgnosticState() {
     return u
@@ -61,10 +61,10 @@ class f extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return null != (e = u.lastOpenTabId) ? e : null
   }
   get displayTools() {
-    return o.Z.isDeveloper && u.displayTools
+    return s.A.isDeveloper && u.displayTools
   }
   get showDevWidget() {
-    return o.Z.isDeveloper && u.showDevWidget
+    return s.A.isDeveloper && u.showDevWidget
   }
   get devWidgetPosition() {
     return u.devWidgetPosition
@@ -73,7 +73,7 @@ class f extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return u.sortedScreenKeys
   }
 }
-s(f, "displayName", "DevToolsSettingsStore"), s(f, "persistKey", "DevToolsSettingsStore");
-let p = new f(Chunk570140.Z, {
+o(f, "displayName", "DevToolsSettingsStore"), o(f, "persistKey", "DevToolsSettingsStore");
+let p = new f(Chunk73153.h, {
   DEV_TOOLS_SETTINGS_UPDATE: d
 })

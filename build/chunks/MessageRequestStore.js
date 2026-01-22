@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 355298, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 380335, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
-}), require("./388685.js");
-var Chunk133080 = require("./133080.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk750041 = require("./750041.js");
+  A: () => A
+}), require("./896048.js");
+var Chunk518977 = require("./518977.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk536802 = require("./536802.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Set,
+let o = new Set,
   l = new Set,
   c = false,
   u = null;
@@ -27,16 +27,16 @@ function d(e) {
 
 function f(e) {
   let t = false;
-  return d(e) && !s.has(e.id) && (s.add(e.id), t = true), !d(e) && s.has(e.id) && (s.delete(e.id), t = true), !d(e) && l.has(e.id) && (l.delete(e.id), t = true), t
+  return d(e) && !o.has(e.id) && (o.add(e.id), t = true), !d(e) && o.has(e.id) && (o.delete(e.id), t = true), !d(e) && l.has(e.id) && (l.delete(e.id), t = true), t
 }
 
 function p(e) {
   var t;
-  null != e && (u = null != (t = (0, r.Zz)(e)) ? t : (0, r.K4)())
+  null != e && (u = null != (t = (0, r.XF)(e)) ? t : (0, r.rE)())
 }
 
 function _(e) {
-  "CONNECTION_OPEN" === e.type && p(e.countryCode), s.clear(), l.clear(), Object.values(i.Z.getMutablePrivateChannels()).forEach(e => {
+  "CONNECTION_OPEN" === e.type && p(e.countryCode), o.clear(), l.clear(), Object.values(i.A.getMutablePrivateChannels()).forEach(e => {
     f(e)
   }), c = true
 }
@@ -66,14 +66,14 @@ function E(e) {
   let {
     channel: t
   } = e;
-  return !!s.has(t.id) && (s.delete(t.id), true)
+  return !!o.has(t.id) && (o.delete(t.id), true)
 }
 
 function b(e) {
   let {
     messageRequestChannelIds: t
   } = e;
-  t.forEach(e => s.add(e))
+  t.forEach(e => o.add(e))
 }
 
 function y(e) {
@@ -82,28 +82,28 @@ function y(e) {
   } = e;
   p(t)
 }
-class O extends Chunk750041.Z {
+class O extends Chunk536802.A {
   initialize() {
-    this.waitFor(i.Z)
+    this.waitFor(i.A)
   }
   loadCache() {
     let e = this.readSnapshot(O.LATEST_SNAPSHOT_VERSION);
-    null != e && (s = new Set(e))
+    null != e && (o = new Set(e))
   }
   takeSnapshot() {
     return {
       version: O.LATEST_SNAPSHOT_VERSION,
-      data: Array.from(s)
+      data: Array.from(o)
     }
   }
   getMessageRequestChannelIds() {
-    return s
+    return o
   }
   getMessageRequestsCount() {
-    return s.size
+    return o.size
   }
   isMessageRequest(e) {
-    return s.has(e)
+    return o.has(e)
   }
   isAcceptedOptimistic(e) {
     return l.has(e)
@@ -128,5 +128,5 @@ class O extends Chunk750041.Z {
     })
   }
 }
-o(O, "displayName", "MessageRequestStore"), o(O, "LATEST_SNAPSHOT_VERSION", 1);
-let v = new O
+s(O, "displayName", "MessageRequestStore"), s(O, "LATEST_SNAPSHOT_VERSION", 1);
+let A = new O

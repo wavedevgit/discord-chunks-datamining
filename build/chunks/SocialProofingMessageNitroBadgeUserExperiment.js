@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 276554, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 101750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => i
+  E: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2023-10_social_proofing_message_nitro_badge",
   label: "Social Proofing Message Nitro Badge",

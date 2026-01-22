@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
-/** chunk id: 210887, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 544028, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  A: () => M
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk780384 = require("./780384.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk607070 = require("./607070.js"),
-  Chunk541049 = require("./541049.js"),
-  Chunk765287 = require("./765287.js"),
-  Chunk49214 = require("./49214.js"),
-  Chunk238514 = require("./238514.js"),
-  Chunk740492 = require("./740492.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk874893 = require("./874893.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk582754 = require("./582754.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk775602 = require("./775602.js"),
+  Chunk677313 = require("./677313.js"),
+  Chunk403528 = require("./403528.js"),
+  Chunk997579 = require("./997579.js"),
+  Chunk284016 = require("./284016.js"),
+  Chunk964404 = require("./964404.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk185928 = require("./185928.js"),
+  Chunk652215 = require("./652215.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,22 +56,22 @@ function b(e, t) {
   }), e
 }
 let y = 0,
-  O = Chunk874893.K2,
-  v = (0, Chunk541049.Z)(),
-  S = O[v],
-  I = null;
+  O = Chunk185928.qj,
+  A = (0, Chunk677313.A)(),
+  v = O[A],
+  S = null;
+
+function I() {
+  return __OVERLAY__ || null == S ? (0, c.A)(A, O) : S
+}
 
 function T() {
-  return __OVERLAY__ || null == I ? (0, c.Z)(v, O) : I
+  let e = I();
+  return e !== v && (v = e, (0, u.A)(v), true)
 }
-
-function C() {
-  let e = T();
-  return e !== S && (S = e, (0, u.Z)(S), true)
-}
-class A extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    (null == e ? true : e.theme) != null && (y = 1, S = e.theme, (0, u.Z)(S), null != e.preferences && (O = e.preferences), (0, a.wj)(S) && (O[_.zd.DARK] = S)), this.waitFor(f.ZP, d.Z, p.Z, s.Z)
+    (null == e ? true : e.theme) != null && (y = 1, v = e.theme, (0, u.A)(v), null != e.preferences && (O = e.preferences), (0, a.Mw)(v) && (O[_.Fc.DARK] = v)), this.waitFor(f.Ay, d.A, p.A, o.A)
   }
   getState() {
     return {
@@ -81,10 +81,10 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   get theme() {
-    return S
+    return v
   }
   get systemTheme() {
-    return v
+    return A
   }
   themePreferenceForSystemTheme(e) {
     return O[e]
@@ -93,57 +93,57 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
 
 function N() {
   return 0 === y && (O = b(g({}, O), {
-    [_.zd.DARK]: h.BRd.DARKER
-  }), y = 1), C()
+    [_.Fc.DARK]: h.NJ8.DARKER
+  }), y = 1), T()
 }
 
-function P() {
-  return (0, a.ap)(T())
+function R() {
+  return (0, a.qB)(I())
 }
 
 function w(e) {
-  return I = null, !e.isSwitchingAccount && S !== h.BRd.DARK && (S = h.BRd.DARK, (0, u.Z)(S), C())
+  return S = null, !e.isSwitchingAccount && v !== h.NJ8.DARK && (v = h.NJ8.DARK, (0, u.A)(v), T())
 }
 
-function R(e) {
+function P(e) {
   let {
     systemTheme: t
   } = e;
-  return v = t, C()
+  return A = t, T()
 }
 
 function D(e) {
-  return O = g({}, O, e.preferences), C()
+  return O = g({}, O, e.preferences), T()
 }
 
 function x(e) {
-  return I = e.theme, C()
+  return S = e.theme, T()
 }
 
 function L() {
-  return I = null, C()
+  return S = null, T()
 }
 
 function j() {
-  return C()
+  return T()
 }
-m(A, "displayName", "ThemeStore"), m(A, "persistKey", "ThemeStore"), m(A, "migrations", [e => {
+m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migrations", [e => {
   let t = e.theme;
   return "amoled" === t && (t = "midnight"), b(g({}, e), {
     theme: t
   })
 }, e => e]);
-let M = new A(Chunk570140.Z, {
-  CACHE_LOADED: C,
+let M = new C(Chunk73153.h, {
+  CACHE_LOADED: T,
   CONNECTION_OPEN: N,
   LOGOUT: w,
-  OVERLAY_INITIALIZE: C,
-  SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: C,
-  UNSYNCED_USER_SETTINGS_UPDATE: C,
-  USER_SETTINGS_PROTO_UPDATE: C,
-  RESET_PREVIEW_CLIENT_THEME: C,
-  SYSTEM_THEME_CHANGE: R,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: P,
+  OVERLAY_INITIALIZE: T,
+  SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: T,
+  UNSYNCED_USER_SETTINGS_UPDATE: T,
+  USER_SETTINGS_PROTO_UPDATE: T,
+  RESET_PREVIEW_CLIENT_THEME: T,
+  SYSTEM_THEME_CHANGE: P,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
   UPDATE_THEME_PREFERENCES: D,
   SET_THEME_OVERRIDE: x,
   CLEAR_THEME_OVERRIDE: L,

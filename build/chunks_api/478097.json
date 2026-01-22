@@ -1,0 +1,1 @@
+{"id":"478097","type":"experiment","data":{"kind":"user","id":"2024-06_bogo_promotion_marketing_materials","label":"Summer BOGO Marketing Materials","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable BOGO Promotion marketing materials","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

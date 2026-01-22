@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 41776, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 857071, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk601964 = require("./601964.js"),
-  Chunk271383 = require("./271383.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => C
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk260509 = require("./260509.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,14 +56,14 @@ function b(e) {
   } = e;
   if (n) {
     switch (g(t), E(t, a), r) {
-      case u.vtS.MOBILE_GUILD_DISCOVERY:
+      case u.Q4z.MOBILE_GUILD_DISCOVERY:
         _ = {
-          type: u.vtS.MOBILE_GUILD_DISCOVERY
+          type: u.Q4z.MOBILE_GUILD_DISCOVERY
         };
         break;
-      case u.vtS.DIRECTORY_ENTRY:
+      case u.Q4z.DIRECTORY_ENTRY:
         _ = {
-          type: u.vtS.DIRECTORY_ENTRY,
+          type: u.Q4z.DIRECTORY_ENTRY,
           directoryChannelId: i
         };
         break;
@@ -88,25 +88,25 @@ function O(e) {
     guildId: n,
     joinedAt: r,
     user: i
-  } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? true : t.id), o = null == r;
-  return !!a && !o && !!f.includes(n) && (m(n), _ = null, true)
+  } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? true : t.id), s = null == r;
+  return !!a && !s && !!f.includes(n) && (m(n), _ = null, true)
 }
 
-function v(e) {
+function A(e) {
   let {
     guild: t
   } = e;
   return !!f.includes(t.id) && (m(t.id), _ = null, true)
 }
 
-function S(e) {
+function v(e) {
   let {
     ignoredGuildIds: t
   } = e, n = h(t);
   return n && (_ = null), n
 }
 
-function I(e) {
+function S(e) {
   let {
     lurkingGuildId: t,
     lurkingSource: n
@@ -114,12 +114,12 @@ function I(e) {
   return g(t), _ = n, true
 }
 
-function T() {
-  f = l.Z.getGuildsArray().filter(e => (0, o.zN)(e)).map(e => e.id)
+function I() {
+  f = l.A.getGuildsArray().filter(e => (0, s.DG)(e)).map(e => e.id)
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.ZP, l.Z, c.default)
+    this.waitFor(o.Ay, l.A, c.default)
   }
   lurkingGuildIds() {
     return f
@@ -128,10 +128,10 @@ class C extends(r = Chunk442837.ZP.Store) {
     return 0 === f.length ? null : f[f.length - 1]
   }
   isLurking(e) {
-    let t = l.Z.getGuild(e);
+    let t = l.A.getGuild(e);
     if (null == t) returnfalse;
-    let n = s.ZP.isCurrentUserGuest(e),
-      r = (0, o.zN)(t);
+    let n = o.Ay.isCurrentUserGuest(e),
+      r = (0, s.DG)(t);
     return !!(!n && r)
   }
   getLurkingSource() {
@@ -141,13 +141,13 @@ class C extends(r = Chunk442837.ZP.Store) {
     return null != e ? p[e] : null
   }
 }
-d(C, "displayName", "LurkingStore");
-let A = new C(Chunk570140.Z, {
-  CONNECTION_OPEN: T,
+d(T, "displayName", "LurkingStore");
+let C = new T(Chunk73153.h, {
+  CONNECTION_OPEN: I,
   GUILD_JOIN: b,
-  GUILD_STOP_LURKING: S,
-  GUILD_STOP_LURKING_FAILURE: I,
+  GUILD_STOP_LURKING: v,
+  GUILD_STOP_LURKING_FAILURE: S,
   GUILD_CREATE: y,
-  GUILD_DELETE: v,
+  GUILD_DELETE: A,
   GUILD_MEMBER_ADD: O
 })

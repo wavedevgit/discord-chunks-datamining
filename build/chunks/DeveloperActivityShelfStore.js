@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 115130, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 10716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => p,
-  Z: () => I
-}), require("./997841.js");
-var r, Chunk95015 = require("./95015.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk695346 = require("./695346.js"),
-  Chunk981631 = require("./981631.js");
+  $: () => p,
+  A: () => S
+}), require("./938796.js");
+var r, Chunk665260 = require("./665260.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk253932 = require("./253932.js"),
+  Chunk652215 = require("./652215.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ function y(e) {
   let {
     applications: t
   } = e;
-  _ = "LOADED", h = t.filter(e => null != e.flags && (0, i.yE)(e.flags, l.udG.EMBEDDED))
+  _ = "LOADED", h = t.filter(e => null != e.flags && (0, i.Lt)(e.flags, l.gfo.EMBEDDED))
 }
 
 function O(e) {
@@ -86,13 +86,13 @@ function O(e) {
   _ = "ERROR"
 }
 
-function v(e) {
+function A(e) {
   let {
     filter: t
   } = e;
   f.filter = t
 }
-class S extends(r = Chunk442837.ZP.PersistedStore) {
+class v extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     f = u({}, d(), null != e ? e : {})
   }
@@ -100,7 +100,7 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return f
   }
   getIsEnabled() {
-    return s.Sb.getSetting() && h.length > 0
+    return o.Q_.getSetting() && h.length > 0
   }
   getLastUsedObject() {
     return f.lastUsedObject
@@ -124,8 +124,8 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return this.getIsEnabled() && null != h.find(t => t.id === e)
   }
 }
-c(S, "displayName", "DeveloperActivityShelfStore"), c(S, "persistKey", "DeveloperActivityShelfStore"), c(S, "migrations", [e => (delete e.isEnabled, u({}, e))]);
-let I = new S(Chunk570140.Z, {
+c(v, "displayName", "DeveloperActivityShelfStore"), c(v, "persistKey", "DeveloperActivityShelfStore"), c(v, "migrations", [e => (delete e.isEnabled, u({}, e))]);
+let S = new v(Chunk73153.h, {
   LOGOUT: m,
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
@@ -135,6 +135,6 @@ let I = new S(Chunk570140.Z, {
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: y,
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: O,
-  DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: v,
+  DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: A,
   USER_SETTINGS_PROTO_UPDATE() {}
 })

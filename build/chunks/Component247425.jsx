@@ -1,0 +1,157 @@
+/** Chunk was on web.js **/
+/** chunk id: 247425, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => S
+});
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk503698 = require("./503698.js"),
+  s = require.n(Chunk503698),
+  Chunk311907 = require("./311907.js"),
+  Chunk230109 = require("./230109.js"),
+  Chunk421380 = require("./421380.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk688810 = require("./688810.jsx"),
+  Chunk263063 = require("./263063.jsx"),
+  Chunk532794 = require("./532794.jsx"),
+  Chunk864310 = require("./864310.js"),
+  Chunk338548 = require("./338548.jsx"),
+  Chunk287809 = require("./287809.js"),
+  Chunk178368 = require("./178368.js"),
+  Chunk927578 = require("./927578.js"),
+  Chunk721923 = require("./721923.jsx"),
+  Chunk652215 = require("./652215.js"),
+  Chunk788868 = require("./788868.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk998465 = require("./998465.js");
+let S = function(e) {
+  let {
+    closeLayer: t,
+    guild: n,
+    onCtaVisibilityChange: a
+  } = e, S = i.useRef(null), I = (0, o.bG)([m.default], () => m.default.getCurrentUser()), T = (0, o.bG)([g.A], () => g.A.boostSlots), C = null == I ? true : I.isPremiumGroupMember(), {
+    analyticsLocations: N
+  } = (0, d.Ay)(), R = i.useMemo(() => Object.keys(T).filter(e => {
+    let t = T[e];
+    return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
+  }).length, [T, n.id]), w = (0, _.A)(e.guild.id).total;
+
+  function P() {
+    (0, p.A)({
+      initialPlanId: null,
+      subscriptionTier: O.pe.TIER_2,
+      analyticsLocations: N,
+      analyticsObject: {
+        page: y.liQ.PREMIUM_GUILD_USER_MODAL,
+        section: y.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
+        object: y.ZSU.BUTTON_ICON,
+        objectType: y.AnalyticsObjectTypes.BUY
+      },
+      onClose: e => e && t()
+    })
+  }
+
+  function D() {
+    (0, p.A)({
+      initialPlanId: null,
+      subscriptionTier: O.pe.TIER_2,
+      isGift: true,
+      analyticsLocations: N,
+      analyticsObject: {
+        page: y.liQ.PREMIUM_GUILD_USER_MODAL,
+        section: y.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
+        object: y.ZSU.BUTTON_ICON,
+        objectType: y.AnalyticsObjectTypes.GIFT
+      },
+      onClose: e => e && t()
+    })
+  }
+  return (0, r.jsxs)("div", {
+    className: v.yD,
+    children: [(0, r.jsx)(f.A, {
+      className: v.$f,
+      guild: n,
+      size: f.A.Sizes.LARGER
+    }), (0, r.jsx)(u.Heading, {
+      className: v.J5,
+      color: "always-white",
+      variant: "text-lg/bold",
+      children: n.name
+    }), (0, r.jsxs)("div", {
+      className: v.nx,
+      children: [(0, r.jsxs)("div", {
+        className: v.SJ,
+        children: [(0, r.jsx)(u._Jp, {
+          color: w > 0 ? u.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
+          className: s()(v.Me, {
+            [v.S3]: w > 0
+          })
+        }), (0, r.jsx)(u.Text, {
+          className: v.n,
+          variant: "text-md/bold",
+          children: A.intl.format(A.t["pob/cL"], {
+            subscriptions: w
+          })
+        })]
+      }), R > 0 ? (0, r.jsx)(u.Text, {
+        className: v.EV,
+        variant: "text-sm/normal",
+        children: A.intl.format(A.t.Jeto2u, {
+          numSubscriptions: R
+        })
+      }) : null]
+    }), C ? (0, r.jsx)(h.A, {
+      alwaysWhite: true
+    }) : null, (0, r.jsxs)("div", {
+      className: v.Sq,
+      children: [(0, r.jsx)(l.L, {
+        innerRef: S,
+        onChange: a,
+        threshold: .9,
+        children: (0, r.jsx)("div", {
+          ref: S,
+          className: s()(v.J$, v.$F),
+          children: (0, r.jsx)(b.A, {
+            className: v.E0,
+            innerClassName: v.J1,
+            buttonShineClassName: v.Vi,
+            guild: n,
+            analyticsLocation: {
+              page: y.liQ.PREMIUM_GUILD_USER_MODAL,
+              section: y.JJy.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
+              object: y.ZSU.BUTTON_CTA,
+              objectType: y.AnalyticsObjectTypes.BUY
+            },
+            closeLayer: t,
+            color: c.$n.Colors.WHITE,
+            size: c.$n.Sizes.LARGE,
+            fullWidth: true
+          })
+        })
+      }), E.Ay.hasFreeBoosts(I) || E.Ay.isPremium(I, O.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.$n, {
+        "data-migration-pending": true,
+        className: s()(v.J$, v.Rr),
+        innerClassName: v.yN,
+        look: c.$n.Looks.OUTLINED,
+        color: c.$n.Colors.WHITE,
+        onClick: D,
+        size: c.$n.Sizes.LARGE,
+        children: [(0, r.jsx)(u.okO, {
+          size: "md",
+          color: "currentColor",
+          className: v.MD
+        }), A.intl.string(A.t["8MYSQw"])]
+      }) : (0, r.jsx)(c.$n, {
+        "data-migration-pending": true,
+        className: s()(v.J$, v.Rr),
+        look: c.$n.Looks.OUTLINED,
+        color: c.$n.Colors.WHITE,
+        onClick: P,
+        size: c.$n.Sizes.LARGE,
+        disabled: C,
+        children: A.intl.string(A.t.Q43TvC)
+      })]
+    })]
+  })
+}

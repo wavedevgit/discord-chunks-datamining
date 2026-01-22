@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 725095, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 378729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EX: () => u,
-  sT: () => d
+  Vn: () => d,
+  e8: () => u
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk141537 = require("./141537.js");
+var Chunk600975 = require("./600975.js"),
+  Chunk428835 = require("./428835.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function o(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,11 +42,11 @@ function s(e, t) {
 }
 
 function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, Chunk818083.B)({
+let c = (0, Chunk600975.C)({
     id: "2025-11_game_update_notification",
     kind: "user",
     label: "Game Update Notification",
@@ -61,9 +61,9 @@ let c = (0, Chunk818083.B)({
       }
     }]
   }),
-  u = e => (0, i.sM)(c, l(o({}, e), {
+  u = e => (0, i.u5)(c, l(s({}, e), {
     autoTrackExposure: false
   })),
-  d = e => (0, i.cE)(c, l(o({}, e), {
+  d = e => (0, i.P2)(c, l(s({}, e), {
     autoTrackExposure: false
   })).showToggle

@@ -1,0 +1,1 @@
+{"id":"869968","type":"store","data":{"name":"CheckoutRecoveryStore","functions":[{"name":"getIsTargeted","args":[]},{"name":"shouldFetchCheckoutRecovery","args":[]}],"events":["CHECKOUT_RECOVERY_STATUS_FETCH_SUCCESS","CHECKOUT_RECOVERY_STATUS_FETCH_FAILURE","CHECKOUT_RECOVERY_STATUS_FETCH","LOGOUT"]},"fromModule":{"id":"web.js"}}

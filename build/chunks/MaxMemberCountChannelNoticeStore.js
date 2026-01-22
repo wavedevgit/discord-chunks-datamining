@@ -1,29 +1,29 @@
-/** Chunk was on 1272 **/
-/** chunk id: 255791, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 15438, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js");
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk650774 = require("./650774.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => h
+}), require("./896048.js");
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk498642 = require("./498642.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk652215 = require("./652215.js");
 let p = {
   MAX_MEMBER_COUNT: new Set
 };
-class f extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    this.waitFor(u.Z, c.Z, s.Z), this.syncWith([u.Z, c.Z, s.Z], d.dG4), a.K.remove(d.vID.MAX_MEMBER_COUNT_100), a.K.remove(d.vID.MAX_MEMBER_COUNT_250), e = new Set(a.K.get(d.vID.MAX_MEMBER_COUNT)), p[d.vID.MAX_MEMBER_COUNT] = true !== e ? e : new Set
+    this.waitFor(u.A, c.A, o.A), this.syncWith([u.A, c.A, o.A], d.tEg), a.w.remove(d.n5X.MAX_MEMBER_COUNT_100), a.w.remove(d.n5X.MAX_MEMBER_COUNT_250), e = new Set(a.w.get(d.n5X.MAX_MEMBER_COUNT)), p[d.n5X.MAX_MEMBER_COUNT] = true !== e ? e : new Set
   }
   isVisible(e) {
     var t;
     if (null == e) returnfalse;
-    let n = null != (t = s.Z.getMemberCount(e.id)) ? t : 0,
-      r = u.Z.can(d.Plq.ADMINISTRATOR, e);
-    return !p[d.vID.MAX_MEMBER_COUNT].has(e.id) && r && e.maxMembers > 0 && e.maxMembers - n <= 1e4
+    let n = null != (t = o.A.getMemberCount(e.id)) ? t : 0,
+      r = u.A.can(d.xBc.ADMINISTRATOR, e);
+    return !p[d.n5X.MAX_MEMBER_COUNT].has(e.id) && r && e.maxMembers > 0 && e.maxMembers - n <= 1e4
   }
 }(i = "displayName") in f ? Object.defineProperty(f, i, {
   value: "MaxMemberCountChannelNoticeStore",
@@ -31,9 +31,9 @@ class f extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : f[i] = "MaxMemberCountChannelNoticeStore";
-let g = new f(Chunk570140.Z, {
+let h = new f(Chunk73153.h, {
   MAX_MEMBER_COUNT_NOTICE_DISMISS: function(e) {
     let t = e.guildId;
-    if (!p[d.vID.MAX_MEMBER_COUNT].has(t)) return p[d.vID.MAX_MEMBER_COUNT].add(t), a.K.set(d.vID.MAX_MEMBER_COUNT, p[d.vID.MAX_MEMBER_COUNT]), true
+    if (!p[d.n5X.MAX_MEMBER_COUNT].has(t)) return p[d.n5X.MAX_MEMBER_COUNT].add(t), a.w.set(d.n5X.MAX_MEMBER_COUNT, p[d.n5X.MAX_MEMBER_COUNT]), true
   }
 })

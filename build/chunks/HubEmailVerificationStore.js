@@ -1,18 +1,18 @@
-/** Chunk was on 27978 **/
-/** chunk id: 844800, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 86142 **/
+/** chunk id: 341371, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
-let l = false,
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
+let a = false,
   o = null,
   c = null;
-class u extends(i = Chunk442837.ZP.Store) {
+class u extends(i = Chunk311907.Ay.Store) {
   getState() {
     return {
-      verifySuccess: l,
+      verifySuccess: a,
       verifyErrors: o,
       redirectGuildId: c
     }
@@ -23,17 +23,17 @@ class u extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : u[r] = "HubEmailVerificationStore";
-let d = new u(Chunk570140.Z, {
+let d = new u(Chunk73153.h, {
   HUB_VERIFY_EMAIL_SUCCESS: function(e) {
     let {
       guildId: t
     } = e;
-    l = true, o = null, c = t
+    a = true, o = null, c = t
   },
   HUB_VERIFY_EMAIL_FAILURE: function(e) {
     let {
       errors: t
     } = e;
-    l = false, o = t
+    a = false, o = t
   }
 })

@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 123937, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 81428, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk622026 = require("./622026.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk653741 = require("./653741.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,9 +19,9 @@ function s(e, t, n) {
 let l = null;
 
 function c(e) {
-  l = null != e.regionalFeatureConfig ? o.IC.fromConnectionOpen(e.regionalFeatureConfig) : null
+  l = null != e.regionalFeatureConfig ? s.wN.fromConnectionOpen(e.regionalFeatureConfig) : null
 }
-class u extends(r = Chunk442837.ZP.Store) {
+class u extends(r = Chunk311907.Ay.Store) {
   getRegionalFeatureConfig() {
     return l
   }
@@ -33,8 +33,16 @@ class u extends(r = Chunk442837.ZP.Store) {
     var t;
     return null != (t = null == l ? true : l.isFeatureTeenByDefault(e)) && t
   }
+  hasAgeGatedFeatures() {
+    var e;
+    return null != (e = null == l ? true : l.hasAgeGatedFeatures()) && e
+  }
+  hasTeenDefaults() {
+    var e;
+    return null != (e = null == l ? true : l.hasTeenDefaults()) && e
+  }
 }
-s(u, "displayName", "RegionalFeatureConfigStore");
-let d = new u(Chunk570140.Z, {
+o(u, "displayName", "RegionalFeatureConfigStore");
+let d = new u(Chunk73153.h, {
   CONNECTION_OPEN: c
 })

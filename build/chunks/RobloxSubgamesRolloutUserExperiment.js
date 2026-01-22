@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
-/** chunk id: 355281, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 477394, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => i
+  a: () => i
 });
-var Chunk818083 = require("./818083.js");
-let i = (0, require("./427164.js").le)({
+var Chunk600975 = require("./600975.js");
+let i = (0, require("./945810.js").mj)({
   name: "2025-08-view-roblox-subgames-in-rich-presence",
   kind: "user",
   defaultConfig: {
@@ -41,7 +41,7 @@ let i = (0, require("./427164.js").le)({
     }
   }
 });
-(0, Chunk818083.B)({
+(0, Chunk600975.C)({
   kind: "user",
   id: "2025-08_roblox_subgames_rollout",
   label: "Roblox subgames fetch rollout",

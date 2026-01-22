@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 273273, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 953384, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => v
-}), require("./388685.js");
-var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk642047 = require("./642047.js"),
-  Chunk973616 = require("./973616.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk358085 = require("./358085.js");
+  A: () => A
+}), require("./896048.js");
+var i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk194862 = require("./194862.js"),
+  Chunk611010 = require("./611010.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk723702 = require("./723702.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,8 +20,8 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = Chunk70956.Z.Millis.DAY,
-  p = new Chunk642047.Z,
+let f = Chunk927813.A.Millis.DAY,
+  p = new Chunk194862.A,
   _ = "",
   h = null,
   m = false;
@@ -31,7 +31,7 @@ function g(e) {
   return {
     id: e.id,
     name: e.name,
-    executables: (null != (t = e.executables) ? t : []).map(l.BA),
+    executables: (null != (t = e.executables) ? t : []).map(l.lg),
     aliases: null != (n = e.aliases) ? n : [],
     icon: null != (r = e.icon_hash) ? r : true,
     thirdPartySkus: null != (i = e.third_party_skus) ? i : []
@@ -54,7 +54,7 @@ function y(e) {
   for (let e of (null != n && _ !== n && (p.clear(), _ = n), t)) p.set(e.id, g(e));
   r = true, h = Date.now(), m = true
 }
-class O extends(i = Chunk442837.ZP.PersistedStore) {
+class O extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.etag && (_ = e.etag), null == (t = e.nonGames) || t.forEach(e => p.set(e.id, e)))
@@ -94,7 +94,7 @@ class O extends(i = Chunk442837.ZP.PersistedStore) {
   }
 }
 d(O, "displayName", "NonGameStore"), d(O, "persistKey", "NonGameStore");
-let v = new O(Chunk570140.Z, {
+let A = new O(Chunk73153.h, {
   NON_GAMES_DATABASE_FETCH: E,
   NON_GAMES_DATABASE_FETCH_FAIL: b,
   NON_GAMES_DATABASE_UPDATE: y

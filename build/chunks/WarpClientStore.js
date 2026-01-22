@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 646834, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 689194, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
-}), require("./388685.js"), require("./415506.js"), require("./49124.js");
-var r, Chunk818710 = require("./818710.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk323183 = require("./323183.js"),
-  Chunk299886 = require("./299886.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk960048 = require("./960048.js"),
-  Chunk998502 = require("./998502.js"),
-  Chunk669135 = require("./669135.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => y
+}), require("./896048.js"), require("./65821.js"), require("./457529.js");
+var r, Chunk574381 = require("./574381.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk156186 = require("./156186.js"),
+  Chunk967370 = require("./967370.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk728458 = require("./728458.js"),
+  Chunk837921 = require("./837921.js"),
+  Chunk410109 = require("./410109.js"),
+  Chunk652215 = require("./652215.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,7 +29,7 @@ let h = 10,
   },
   g = [],
   E = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
-class b extends(r = Chunk442837.ZP.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
@@ -39,19 +39,19 @@ class b extends(r = Chunk442837.ZP.Store) {
   async updateState() {
     try {
       var e, t, n;
-      this.logEvent(await (null === d.ZP || true === d.ZP || null == (n = d.ZP.getDiscordUtils) || null == (t = n.call(d.ZP)) || null == (e = t.runWarpCommand) ? true : e.call(t, "status")))
+      this.logEvent(await (null === d.Ay || true === d.Ay || null == (n = d.Ay.getDiscordUtils) || null == (t = n.call(d.Ay)) || null == (e = t.runWarpCommand) ? true : e.call(t, "status")))
     } catch (e) {}
   }
   addListener() {
     try {
       var e, t, n;
-      null === d.ZP || true === d.ZP || null == (n = d.ZP.getDiscordUtils) || null == (t = n.call(d.ZP)) || null == (e = t.onWarpEvent) || e.call(t, e => this.logEvent(e))
+      null === d.Ay || true === d.Ay || null == (n = d.Ay.getDiscordUtils) || null == (t = n.call(d.Ay)) || null == (e = t.onWarpEvent) || e.call(t, e => this.logEvent(e))
     } catch (e) {}
   }
   async runCommand(e) {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
     try {
-      return await d.ZP.getDiscordUtils().runWarpCommand(e, ...n)
+      return await d.Ay.getDiscordUtils().runWarpCommand(e, ...n)
     } catch (e) {
       throw this.logEvent({
         commandError: e.message
@@ -64,11 +64,11 @@ class b extends(r = Chunk442837.ZP.Store) {
     } = e, n = await this.runCommand("registration", "show");
     if ((null == n ? true : n.code) === "MissingRegistration") throw Error("MissingRegistration when configuring license");
     try {
-      if (l.H.getConfig({
+      if (l.S.getConfig({
           location: "configureLicense"
         }).enabled) {
         let e = n,
-          i = await (0, f.S)(null == e ? true : e.id, t);
+          i = await (0, f.R)(null == e ? true : e.id, t);
         if (null != i && "" !== i) {
           var r;
           if (i === (null == e || null == (r = e.account) ? true : r.license)) return;
@@ -76,13 +76,13 @@ class b extends(r = Chunk442837.ZP.Store) {
         } else throw Error("No license key returned from API when configuring license")
       }
     } catch (e) {
-      if (u.Z.captureException(e, {
+      if (u.A.captureException(e, {
           tags: {
             source: "PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE"
           }
-        }), c.default.track(p.rMx.PREMIUM_FEATURE_ERROR, {
+        }), c.default.track(p.HAw.PREMIUM_FEATURE_ERROR, {
           error_message: e instanceof Error ? e.message : JSON.stringify(e),
-          error_source: s.D.PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE
+          error_source: o.q.PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE
         }), !t) throw e
     }
   }
@@ -108,7 +108,7 @@ class b extends(r = Chunk442837.ZP.Store) {
     return g
   }
   get clientEnabled() {
-    return (0, i.nI)() && l.H.getConfig({
+    return (0, i.xl)() && l.S.getConfig({
       location: "WarpClientStore"
     }).enabled
   }
@@ -143,4 +143,4 @@ class b extends(r = Chunk442837.ZP.Store) {
   }
 }
 _(b, "displayName", "WarpClientStore");
-let y = new b(Chunk570140.Z, {})
+let y = new b(Chunk73153.h, {})

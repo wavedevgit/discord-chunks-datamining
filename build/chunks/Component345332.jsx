@@ -1,111 +1,71 @@
-/** Chunk was on web.js **/
-/** chunk id: 345332, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 52565 **/
+/** chunk id: 345332, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  F: () => p,
-  Y: () => f
+  default: () => d
 });
-var Chunk54381 = require("./54381.js"),
-  Chunk473749 = require("./473749.js"),
-  Chunk772848 = require("./772848.js"),
-  Chunk993365 = require("./993365.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk245216 = require("./245216.jsx"),
-  Chunk561466 = require("./561466.js"),
-  Chunk141291 = require("./141291.js");
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk417597 = require("./417597.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk442433 = require("./442433.js"),
+  Chunk58149 = require("./58149.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk147036 = require("./147036.js"),
+  Chunk957565 = require("./957565.js"),
+  Chunk634654 = require("./634654.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk746080 = require("./746080.js"),
+  Chunk985018 = require("./985018.jsx");
 
 function d(e) {
-  switch (e) {
-    case c.pC.SUCCESS:
-      return (0, r.jsx)(s.dz2, {
-        size: "md",
-        className: u.icon,
-        color: s.TVs.colors.STATUS_POSITIVE.css
-      });
-    case c.pC.FAILURE:
-      return (0, r.jsx)(s.Uz9, {
-        size: "md",
-        className: u.icon,
-        color: s.TVs.colors.ICON_FEEDBACK_CRITICAL.css
-      });
-    case c.pC.CLIP:
-      return (0, r.jsx)(s.AlX, {
-        size: "xs",
-        className: u.clipIcon,
-        color: s.TVs.colors.TEXT_STRONG.css
-      });
-    case c.pC.LINK:
-      return (0, r.jsx)(s.xPt, {
-        className: u.icon,
-        color: s.TVs.colors.TEXT_STRONG.css
-      });
-    case c.pC.FORWARD:
-      return (0, r.jsx)(l.Z, {
-        className: u.icon,
-        color: s.TVs.colors.STATUS_POSITIVE.css
-      });
-    case c.pC.INVITE:
-      return (0, r.jsx)(s._XJ, {
-        className: u.icon,
-        color: s.TVs.colors.TEXT_BRAND.css
-      });
-    case c.pC.BOOKMARK:
-      return (0, r.jsx)(s.plf, {
-        className: u.icon,
-        color: s.TVs.colors.TEXT_STRONG.css
-      });
-    case c.pC.CLOCK:
-      return (0, r.jsx)(s.T39, {
-        className: u.icon,
-        color: s.TVs.colors.TEXT_STRONG.css
-      });
-    case c.pC.AI:
-      return (0, r.jsx)(s.$2U, {
-        className: u.icon,
-        color: s.TVs.colors.TEXT_STRONG.css
-      });
-    default:
-      return null
-  }
-}
-
-function f(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : c.si,
-    {
-      position: r = c.si.position,
-      component: i = c.si.component,
-      duration: o = c.si.duration,
-      appContext: s = c.si.appContext
-    } = n;
-  return {
-    message: e,
-    id: (0, a.Z)(),
-    type: t,
-    options: {
-      position: r,
-      component: i,
-      duration: o,
-      appContext: s
-    }
-  }
-}
-let p = Chunk473749.memo(function(e) {
   let {
-    message: t,
-    type: n,
-    id: i,
-    options: {
-      component: a = c.si.component
-    } = c.si
-  } = e;
-  return null != a ? a : (0, r.jsxs)("div", {
-    id: i,
-    className: u.toast,
-    "data-type": n,
-    children: [d(n), (0, r.jsx)(o.x, {
-      className: u.content,
-      variant: "text-md/normal",
-      children: t
-    })]
+    guild: t,
+    onSelect: r
+  } = e, d = (0, o.bG)([a.A], () => null != t && a.A.can(u.xBc.ADMINISTRATOR, t));
+  return (0, n.jsx)(c.W1t, {
+    navId: "guild-shop-context",
+    "aria-label": f.intl.string(f.t.g3KvYF),
+    onClose: i.Z_,
+    onSelect: r,
+    children: (0, n.jsx)(c.rXV, {
+      children: (0, n.jsx)(c.Drp, {
+        id: "role-subscription-copy-link",
+        label: f.intl.string(f.t.WqhZss),
+        action: () => {
+          var e, r;
+          s.default.track(u.HAw.GUILD_SHOP_COPY_LINK, (e = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var r = null != arguments[t] ? arguments[t] : {},
+                n = Object.keys(r);
+              "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(r, e).enumerable
+              }))), n.forEach(function(t) {
+                var n;
+                n = r[t], t in e ? Object.defineProperty(e, t, {
+                  value: n,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = n
+              })
+            }
+            return e
+          }({}, (0, l.H$)(t.id)), r = r = {
+            is_admin_or_owner: d,
+            copy_location: O.lJ.CHANNEL_ROW_CONTEXT_MENU
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+            var r = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var n = Object.getOwnPropertySymbols(e);
+              r.push.apply(r, n)
+            }
+            return r
+          })(Object(r)).forEach(function(t) {
+            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+          }), e)), (0, b.C)((0, p.n)(t.id, y.VV.GUILD_SHOP))
+        }
+      })
+    })
   })
-})
+}

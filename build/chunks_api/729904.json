@@ -1,0 +1,1 @@
+{"id":"729904","type":"store","data":{"name":"BackForwardNavStore","functions":[{"name":"initialize","args":[]},{"name":"pastPlaces","args":[]},{"name":"canGoBack","args":[]},{"name":"canGoForward","args":[]},{"name":"backDestination","args":[]},{"name":"forwardDestination","args":[]}],"events":["ROUTE_CHANGED","GO_BACK","GO_FORWARD"]},"fromModule":{"id":"web.js"}}

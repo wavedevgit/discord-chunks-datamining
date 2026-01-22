@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
-/** chunk id: 774343, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 619921, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  A: () => S
 });
-var r, i, a, o, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk896797 = require("./896797.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk55589 = require("./55589.js"),
-  Chunk981631 = require("./981631.js");
+var r, i, a, s, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk650048 = require("./650048.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk645959 = require("./645959.js"),
+  Chunk652215 = require("./652215.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,12 +21,12 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = (null != (a = null == (i = window) || null == (r = i.location) ? true : r.pathname) ? a : "").startsWith(Chunk981631.Z5c.ACTIVITIES) ? Chunk981631.Z5c.ACTIVITIES : null;
+let m = (null != (r = null == (a = window) || null == (i = a.location) ? true : i.pathname) ? r : "").startsWith(Chunk652215.BVt.ACTIVITIES) ? Chunk652215.BVt.ACTIVITIES : null;
 
 function g() {
-  let e = p.Z.getPrivateChannelIds(),
-    t = f.Z.getChannelId(_.ME);
-  (null != t || null != e[0]) && (m = _.Z5c.CHANNEL(_.ME, null != t ? t : e[0]))
+  let e = p.A.getPrivateChannelIds(),
+    t = f.A.getChannelId(_.ME);
+  (null != t || null != e[0]) && (m = _.BVt.CHANNEL(_.ME, null != t ? t : e[0]))
 }
 
 function E(e) {
@@ -38,8 +38,8 @@ function E(e) {
 }
 
 function b() {
-  if (null == m || !m.startsWith(_.Z5c.APPLICATION_STORE)) returnfalse;
-  m = _.Z5c.APPLICATION_STORE
+  if (null == m || !m.startsWith(_.BVt.APPLICATION_STORE)) returnfalse;
+  m = _.BVt.APPLICATION_STORE
 }
 
 function y(e) {
@@ -58,32 +58,32 @@ function O(e) {
     channelId: n
   } = e;
   if (null == t && null != n) {
-    let e = _.Z5c.CHANNEL(_.ME, n);
+    let e = _.BVt.CHANNEL(_.ME, n);
     if (e !== m) return m = e, true
   }
   returnfalse
 }
 
-function v(e) {
+function A(e) {
   let {
     channel: t
   } = e;
-  null == t.guild_id && null != t.id && null != m && m === _.Z5c.CHANNEL(_.ME, t.id) && (m = null)
+  null == t.guild_id && null != t.id && null != m && m === _.BVt.CHANNEL(_.ME, t.id) && (m = null)
 }
-class S extends(o = Chunk442837.ZP.Store) {
+class v extends(s = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.Z, p.Z, f.Z, d.Z, c.Z)
+    this.waitFor(u.A, p.A, f.A, d.A, c.A)
   }
   getHomeLink() {
-    return null != m ? m : u.Z.fallbackRoute
+    return null != m ? m : u.A.fallbackRoute
   }
 }
-h(S, "displayName", "AppViewStore");
-let I = new S(Chunk570140.Z, {
+h(v, "displayName", "AppViewStore");
+let S = new v(Chunk73153.h, {
   OVERLAY_INITIALIZE: g,
   APP_VIEW_SET_HOME_LINK: E,
   APPLICATION_STORE_LOCATION_CHANGE: y,
   APPLICATION_STORE_RESET_NAVIGATION: b,
   CHANNEL_SELECT: O,
-  CHANNEL_DELETE: v
+  CHANNEL_DELETE: A
 })

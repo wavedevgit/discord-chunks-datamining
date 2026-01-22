@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
-/** chunk id: 333984, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 157550, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js");
-var Chunk592125 = require("./592125.js"),
-  Chunk750041 = require("./750041.js");
+  A: () => g
+}), require("./896048.js");
+var Chunk734057 = require("./734057.js"),
+  Chunk536802 = require("./536802.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -15,8 +15,8 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Set,
-  s = new Set,
+let s = new Set,
+  o = new Set,
   l = false;
 
 function c(e) {
@@ -25,11 +25,11 @@ function c(e) {
 
 function u(e) {
   let t = false;
-  return c(e) && !o.has(e.id) && (o.add(e.id), t = true), !c(e) && o.has(e.id) && (o.delete(e.id), t = true), !c(e) && s.has(e.id) && (s.delete(e.id), t = true), t
+  return c(e) && !s.has(e.id) && (s.add(e.id), t = true), !c(e) && s.has(e.id) && (s.delete(e.id), t = true), !c(e) && o.has(e.id) && (o.delete(e.id), t = true), t
 }
 
 function d() {
-  o.clear(), s.clear(), Object.values(r.Z.getMutablePrivateChannels()).forEach(e => {
+  s.clear(), o.clear(), Object.values(r.A.getMutablePrivateChannels()).forEach(e => {
     u(e)
   }), l = true
 }
@@ -38,7 +38,7 @@ function f(e) {
   let {
     channelId: t
   } = e;
-  s.add(t)
+  o.add(t)
 }
 
 function p(e) {
@@ -59,33 +59,33 @@ function h(e) {
   let {
     channel: t
   } = e, n = false;
-  return o.has(t.id) && (o.delete(t.id), n = true), n
+  return s.has(t.id) && (s.delete(t.id), n = true), n
 }
-class m extends Chunk750041.Z {
+class m extends Chunk536802.A {
   initialize() {
-    this.waitFor(r.Z)
+    this.waitFor(r.A)
   }
   loadCache() {
     let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
-    null != e && (o = new Set(e))
+    null != e && (s = new Set(e))
   }
   takeSnapshot() {
     return {
       version: m.LATEST_SNAPSHOT_VERSION,
-      data: Array.from(o)
+      data: Array.from(s)
     }
   }
   getSpamChannelIds() {
-    return o
+    return s
   }
   getSpamChannelsCount() {
-    return o.size
+    return s.size
   }
   isSpam(e) {
-    return o.has(e)
+    return s.has(e)
   }
   isAcceptedOptimistic(e) {
-    return s.has(e)
+    return o.has(e)
   }
   isReady() {
     return l

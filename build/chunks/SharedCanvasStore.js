@@ -1,18 +1,17 @@
-/** Chunk was on 11010 **/
-/** chunk id: 673125, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 31748 **/
+/** chunk id: 533117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
-}), require("./539854.js"), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk633302 = require("./633302.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk176354 = require("./176354.js"),
-  Chunk984063 = require("./984063.js"),
-  Chunk88315 = require("./88315.js"),
-  Chunk813900 = require("./813900.js");
+  A: () => _
+}), require("./321073.js"), require("./896048.js");
+var l, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk7584 = require("./7584.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk690521 = require("./690521.js"),
+  Chunk134753 = require("./134753.js"),
+  Chunk666717 = require("./666717.js");
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,131 +20,132 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      f(e, t, n[t])
+    }))), l.forEach(function(t) {
+      d(e, t, n[t])
     })
   }
   return e
 }
-let g = {},
-  m = {},
+require("./824217.js");
+let p = {},
   b = {},
-  h = true,
-  v = null;
+  g = {},
+  m = true,
+  h = null;
 
-function E(e) {
-  if (null == m[e]) {
-    let t = o.default.getUser(e);
+function A(e) {
+  if (null == b[e]) {
+    let t = s.default.getUser(e);
     if (null == t) return;
-    let n = t.getAvatarURL(null, d.Ks),
-      r = new Image;
-    r.src = n, m[e] = r
+    let n = t.getAvatarURL(null, 80),
+      l = new Image;
+    l.src = n, b[e] = l
   }
 }
-class y extends(r = Chunk442837.ZP.Store) {
+class y extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.default)
+    this.waitFor(s.default)
   }
   get visibleOverlayCanvas() {
-    return h
+    return m
   }
   getDrawables(e) {
-    return null != g[e] ? g[e] : []
+    return null != p[e] ? p[e] : []
   }
   getAvatarImage(e) {
-    return m[e]
-  }
-  getEmojiImage(e) {
     return b[e]
   }
+  getEmojiImage(e) {
+    return g[e]
+  }
   getDrawMode() {
-    return v
+    return h
   }
 }
-f(y, "displayName", "SharedCanvasStore");
-let _ = new y(Chunk570140.Z, {
+d(y, "displayName", "SharedCanvasStore");
+let _ = new y(Chunk73153.h, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
       newPoints: n,
-      userId: r,
-      streamerId: i
-    } = e, l = g[i];
-    if (null == l) g[i] = [{
-      type: s.W.LINE,
+      userId: l,
+      streamerId: r
+    } = e, i = p[r];
+    if (null == i) p[r] = [{
+      type: c.Z.LINE,
       id: t,
-      userId: r,
+      userId: l,
       points: n
     }];
     else {
-      let e = l.find(e => e.id === t);
-      null == e ? l.push({
-        type: s.W.LINE,
+      let e = i.find(e => e.id === t);
+      null == e ? i.push({
+        type: c.Z.LINE,
         id: t,
-        userId: r,
+        userId: l,
         points: n
-      }) : (0, u.P7)(e) && e.points.push(...n)
+      }) : (0, u.PA)(e) && e.points.push(...n)
     }
-    E(r)
+    A(l)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
-    var t, n, r, i, l;
+    var t, n, l, r, i;
     let {
-      emojiHose: o,
+      emojiHose: s,
       streamerId: u,
-      userId: f
-    } = e, m = (i = p({}, o), l = l = {
-      type: s.W.EMOJI_HOSE
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      userId: d
+    } = e, b = (r = f({}, s), i = i = {
+      type: c.Z.EMOJI_HOSE
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var l = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, l)
       }
       return n
-    })(Object(l)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-    }), i);
-    if (null == g[u]) g[u] = [m];
+    })(Object(i)).forEach(function(e) {
+      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+    }), r);
+    if (null == p[u]) p[u] = [b];
     else {
-      let e = g[u].findIndex(e => e.id === o.id);
-      e >= 0 ? g[u][e] = p({}, g[u][e], m) : g[u].push(m)
+      let e = p[u].findIndex(e => e.id === s.id);
+      e >= 0 ? p[u][e] = f({}, p[u][e], b) : p[u].push(b)
     }
-    let h = null != (n = null != (t = o.emojiId) ? t : o.emojiName) ? n : "";
-    if (null == b[h]) {
-      let e = null != o.emojiName ? a.ZP.convertNameToSurrogate(o.emojiName) : null;
-      b[h] = new Image, b[h].src = (0, c.qc)({
-        id: o.emojiId,
-        name: null != (r = null != e ? e : o.emojiName) ? r : "",
+    let m = null != (t = null != (n = s.emojiId) ? n : s.emojiName) ? t : "";
+    if (null == g[m]) {
+      let e = null != s.emojiName ? a.Ay.convertNameToSurrogate(s.emojiName) : null;
+      g[m] = new Image, g[m].src = (0, o.Ez)({
+        id: s.emojiId,
+        name: null != (l = null != e ? e : s.emojiName) ? l : "",
         animated: false
-      }, d.qh)
+      }, 48)
     }
-    E(f)
+    A(d)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {
       drawables: t,
       streamerId: n
     } = e;
-    if (null != g[n]) {
+    if (null != p[n]) {
       let e = new Set;
-      t.forEach(t => e.add(t.id)), g[n] = g[n].filter(t => !e.has(t.id))
+      t.forEach(t => e.add(t.id)), p[n] = p[n].filter(t => !e.has(t.id))
     }
   },
   SHARED_CANVAS_SET_DRAW_MODE: function(e) {
     let {
       drawMode: t
     } = e;
-    v = t
+    h = t
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;
-    h = !h
+    m = !m
   }
 })

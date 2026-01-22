@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 624864, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 592598, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
-}), require("./388685.js"), require("./467055.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk237997 = require("./237997.js"),
-  Chunk823379 = require("./823379.js"),
-  Chunk486016 = require("./486016.js"),
-  Chunk987650 = require("./987650.js");
+  A: () => v
+}), require("./896048.js"), require("./446912.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk256415 = require("./256415.js"),
+  Chunk403362 = require("./403362.js"),
+  Chunk93465 = require("./93465.js"),
+  Chunk672396 = require("./672396.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,33 +86,33 @@ function b(e) {
 
 function y(e) {
   switch (e) {
-    case c.n0.TextChat:
-      return l.i.TEXT_CHAT;
-    case c.n0.WelcomeNudge:
-      return l.i.WELCOME_GENERAL;
-    case c.n0.GoLiveNudge:
-    case c.n0.GoLiveNonVoiceNudge:
-      return l.i.GO_LIVE_NUDGE;
-    case c.n0.NowPlayingNotification:
-      return l.i.NOW_PLAYING;
-    case c.n0.StreamWatchNudge:
-      return l.i.FRIEND_STREAM_WATCH_NUDGE;
-    case c.n0.ClipsReminderNotification:
-    case c.n0.ClipsNotification:
-      return l.i.CLIPS;
-    case c.n0.RequestToStream:
-      return l.i.REQUEST_TO_STREAM;
-    case c.n0.ActivityUserJoin:
-    case c.n0.ActivityInvite:
-    case c.n0.SendGameInvitesNotification:
-      return l.i.GAME_ACTIVITY;
-    case c.n0.IncomingCall:
-    case c.n0.NewsNudge:
-    case c.n0.KeybindIndicatorsNotification:
-    case c.n0.OverlayCrashed:
+    case c.KS.TextChat:
+      return l.M.TEXT_CHAT;
+    case c.KS.WelcomeNudge:
+      return l.M.WELCOME_GENERAL;
+    case c.KS.GoLiveNudge:
+    case c.KS.GoLiveNonVoiceNudge:
+      return l.M.GO_LIVE_NUDGE;
+    case c.KS.NowPlayingNotification:
+      return l.M.NOW_PLAYING;
+    case c.KS.StreamWatchNudge:
+      return l.M.FRIEND_STREAM_WATCH_NUDGE;
+    case c.KS.ClipsReminderNotification:
+    case c.KS.ClipsNotification:
+      return l.M.CLIPS;
+    case c.KS.RequestToStream:
+      return l.M.REQUEST_TO_STREAM;
+    case c.KS.ActivityUserJoin:
+    case c.KS.ActivityInvite:
+    case c.KS.SendGameInvitesNotification:
+      return l.M.GAME_ACTIVITY;
+    case c.KS.IncomingCall:
+    case c.KS.NewsNudge:
+    case c.KS.KeybindIndicatorsNotification:
+    case c.KS.OverlayCrashed:
       return null;
     default:
-      (0, s.vE)(e)
+      (0, o.xb)(e)
   }
 }
 
@@ -133,13 +133,13 @@ function O(e) {
   }));
   m.gameSettings = d({}, m.gameSettings, n)
 }
-class v extends(r = Chunk442837.ZP.PersistedStore) {
+class A extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
     let n = h();
     m = p(d({}, n, null != e ? e : {}), {
       notificationSettings: new Set(null != (t = null == e ? true : e.notificationSettings) ? t : n.notificationSettings)
-    }), this.waitFor(o.default)
+    }), this.waitFor(s.default)
   }
   getInitialOverlayState() {
     return {
@@ -158,7 +158,7 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
   }
   isLimitedInteractionOverrideEnabled(e) {
     var t, n;
-    return null != e && null != (n = null == (t = m.gameSettings[e]) ? true : t.limitedInteractionOverride) && n
+    return null != e && null != (t = null == (n = m.gameSettings[e]) ? true : n.limitedInteractionOverride) && t
   }
   isNotificationDisabledBySetting(e) {
     return m.notificationSettings.has(e)
@@ -174,8 +174,8 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
     return y(e)
   }
 }
-u(v, "displayName", "OverlaySettingsStore"), u(v, "persistKey", "OverlaySettingsStore");
-let S = new v(Chunk570140.Z, {
+u(A, "displayName", "OverlaySettingsStore"), u(A, "persistKey", "OverlaySettingsStore");
+let v = new A(Chunk73153.h, {
   LOGOUT: _,
   OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: E,
   OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: b,

@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 293245, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 465797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => I
-}), require("./388685.js");
-var o, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk372123 = require("./372123.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk283595 = require("./283595.js"),
-  Chunk780570 = require("./780570.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk209492 = require("./209492.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => S
+}), require("./896048.js");
+var s, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk54827 = require("./54827.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk189081 = require("./189081.js"),
+  Chunk674378 = require("./674378.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk986120 = require("./986120.js"),
+  Chunk652215 = require("./652215.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,12 +25,12 @@ function m(e, t, n) {
 }
 
 function g() {
-  let e = u.ZP.getRunningDiscordApplicationIds();
+  let e = u.Ay.getRunningDiscordApplicationIds();
   for (let t of a.filter(t => !e.includes(t))) {
-    let e = d.Z.getActiveLibraryApplication(t);
-    null != e && l.Z.wait(() => {
+    let e = d.A.getActiveLibraryApplication(t);
+    null != e && l.h.wait(() => {
       try {
-        c.Z(e.id, e.branchId)
+        c.O(e.id, e.branchId)
       } catch (e) {}
     })
   }
@@ -41,7 +41,7 @@ function E(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = (0, f.Tu)(t, n);
+  } = e, r = (0, f.gW)(t, n);
   i.add(r)
 }
 
@@ -49,9 +49,9 @@ function b(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, a = (0, f.Tu)(t, n);
+  } = e, a = (0, f.gW)(t, n);
   return i.delete(a), r[a] = {
-    type: h.TzF.DONE,
+    type: h.VX0.DONE,
     timestamp: Date.now()
   }, true
 }
@@ -68,42 +68,42 @@ function O(e) {
     applicationId: t,
     branchId: n,
     next: a,
-    remote: o
-  } = e, s = (0, f.Tu)(t, n);
-  r[s] = {
-    type: h.TzF.CONFLICT,
+    remote: s
+  } = e, o = (0, f.gW)(t, n);
+  r[o] = {
+    type: h.VX0.CONFLICT,
     next: a,
-    remote: o
-  }, i.delete(s)
+    remote: s
+  }, i.delete(o)
 }
 
-function v(e) {
+function A(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, a = (0, f.Tu)(t, n);
+  } = e, a = (0, f.gW)(t, n);
   r[a] = {
-    type: h.TzF.ERROR
+    type: h.VX0.ERROR
   }, i.delete(a)
 }
-class S extends(o = Chunk442837.ZP.Store) {
+class v extends(s = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(d.Z, u.ZP), p.isPlatformEmbedded && _.S(), r = {}, i = new Set, a = []
+    this.waitFor(d.A, u.Ay), p.isPlatformEmbedded && _.T(), r = {}, i = new Set, a = []
   }
   getState(e, t) {
-    return r[(0, f.Tu)(e, t)]
+    return r[(0, f.gW)(e, t)]
   }
   isSyncing(e, t) {
-    let n = (0, f.Tu)(e, t);
+    let n = (0, f.gW)(e, t);
     return i.has(n)
   }
 }
-m(S, "displayName", "CloudSyncStore");
-let I = new S(Chunk570140.Z, {
+m(v, "displayName", "CloudSyncStore");
+let S = new v(Chunk73153.h, {
   GAME_CLOUD_SYNC_START: E,
   GAME_CLOUD_SYNC_UPDATE: y,
   GAME_CLOUD_SYNC_COMPLETE: b,
   GAME_CLOUD_SYNC_CONFLICT: O,
-  GAME_CLOUD_SYNC_ERROR: v,
+  GAME_CLOUD_SYNC_ERROR: A,
   RUNNING_GAMES_CHANGE: g
 })

@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 654455, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 26909, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  LU: () => E,
-  ZP: () => I
-}), require("./388685.js"), require("./35282.js"), require("./539854.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk704907 = require("./704907.js"),
-  Chunk581883 = require("./581883.js");
-require("./689079.js");
-var Chunk674563 = require("./674563.js"),
-  Chunk526761 = require("./526761.js");
+  Ay: () => S,
+  RG: () => E
+}), require("./896048.js"), require("./747238.js"), require("./321073.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk283047 = require("./283047.js"),
+  Chunk617617 = require("./617617.js");
+require("./73510.js");
+var Chunk705751 = require("./705751.js"),
+  Chunk355097 = require("./355097.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,11 +56,11 @@ function h(e, t) {
 let m = {
     pendingUsages: []
   },
-  g = new Chunk704907.Z({
+  g = new Chunk283047.A({
     computeBonus: () => 1,
     lookupKey: e => e,
     afterCompute: () => {},
-    numFrequentlyItems: Chunk674563.yP
+    numFrequentlyItems: Chunk705751.h2
   });
 
 function E(e, t) {
@@ -83,7 +83,7 @@ function y(e) {
     },
     wasSaved: n
   } = e;
-  if (t !== d.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
+  if (t !== d.oD.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   m.pendingUsages = []
 }
 
@@ -98,16 +98,16 @@ function O(e) {
   }), g.track(r), g.compute()
 }
 
-function v() {
+function A() {
   var e, t;
-  let n = null != (t = null == (e = c.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? true : e.applicationCommands) ? t : {};
+  let n = null != (e = null == (t = c.A.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? true : t.applicationCommands) ? e : {};
   g.overwriteHistory(a().mapValues(n, e => h(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), m.pendingUsages)
 }
-class S extends(r = Chunk442837.ZP.PersistedStore) {
+class v extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (m = e), this.syncWith([c.Z], v)
+    null != e && (m = e), this.syncWith([c.A], A)
   }
   getState() {
     return m
@@ -126,8 +126,8 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return g.frequently
   }
 }
-f(S, "displayName", "ApplicationCommandFrecencyStore"), f(S, "persistKey", "ApplicationCommandFrecencyV2");
-let I = new S(Chunk570140.Z, {
+f(v, "displayName", "ApplicationCommandFrecencyStore"), f(v, "persistKey", "ApplicationCommandFrecencyV2");
+let S = new v(Chunk73153.h, {
   APPLICATION_COMMAND_USED: O,
   USER_SETTINGS_PROTO_UPDATE: y
 })

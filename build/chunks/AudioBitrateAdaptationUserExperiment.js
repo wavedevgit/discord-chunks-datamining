@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 815644, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 461285, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => o
+  I: () => s
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk984134 = require("./984134.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk182828 = require("./182828.js");
+let a = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-06_audio_bitrate_adaptation",
   label: "Audio Bitrate Adaptation",
@@ -22,11 +22,11 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function s(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     {
       isInHoldout: n
-    } = i.Y.getCurrentConfig({
+    } = i.o.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: t

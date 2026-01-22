@@ -1,0 +1,1 @@
+{"id":"871431","type":"experiment","data":{"kind":"user","id":"2023-03_store_latest_message_data","label":"Store latest message data","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Use latest data from api/gateway","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

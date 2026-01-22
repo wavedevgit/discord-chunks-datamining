@@ -1,0 +1,1 @@
+{"id":"155087","type":"experiment","data":{"kind":"user","id":"2025-04_user_profile_performance_analytics","label":"User Profile Performance Analytics Experiment","defaultConfig":{"performanceAnalyticsEnabled":false},"treatments":[{"id":1,"label":"Performance analytics enabled","config":{"performanceAnalyticsEnabled":true}}]},"fromModule":{"id":"web.js"}}

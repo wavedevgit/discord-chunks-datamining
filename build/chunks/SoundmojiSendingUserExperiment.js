@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 125900, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 704591, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J2: () => a,
-  V2: () => s,
-  dX: () => o,
-  g2: () => l
+  AA: () => s,
+  Ym: () => l,
+  ks: () => a,
+  tj: () => o
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk688151 = require("./688151.js");
+let a = (0, Chunk600975.C)({
   id: "2024-11_soundmoji_sending",
   label: "Send soundmojis",
   kind: "user",
@@ -17,7 +17,7 @@ let a = (0, Chunk818083.B)({
     enabled: false,
     showSoundmojiInEmojiPicker: false
   },
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
+  commonTriggerPoint: Chunk688151.$G.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Enabled w/o emoji section",
@@ -35,7 +35,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function s(e) {
   let {
     location: t
   } = e;
@@ -46,7 +46,7 @@ function o(e) {
   }).enabled
 }
 
-function s(e) {
+function o(e) {
   let {
     location: t
   } = e;

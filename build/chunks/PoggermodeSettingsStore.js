@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 351780, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 3137, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  A: () => m
 });
-var r, Chunk392711 = require("./392711.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk524484 = require("./524484.js");
+var r, Chunk735438 = require("./735438.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk31408 = require("./31408.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,23 +39,23 @@ let u = false,
     comboSoundsEnabled: true,
     screenshakeEnabled: true,
     screenshakeEnabledLocations: {
-      [Chunk524484.oZ.CHAT_INPUT]: true,
-      [Chunk524484.oZ.VOICE_USER]: false,
-      [Chunk524484.oZ.MENTION]: false
+      [Chunk31408.uD.CHAT_INPUT]: true,
+      [Chunk31408.uD.VOICE_USER]: false,
+      [Chunk31408.uD.MENTION]: false
     },
     shakeIntensity: 1,
     confettiEnabled: true,
     confettiEnabledLocations: {
-      [Chunk524484.Hn.CHAT_INPUT]: true,
-      [Chunk524484.Hn.REACTION]: true,
-      [Chunk524484.Hn.MEMBER_USER]: true,
-      [Chunk524484.Hn.CALL_TILE]: true
+      [Chunk31408.k.CHAT_INPUT]: true,
+      [Chunk31408.k.REACTION]: true,
+      [Chunk31408.k.MEMBER_USER]: true,
+      [Chunk31408.k.CALL_TILE]: true
     },
     confettiSize: 16,
     confettiCount: 5,
     warningSeen: false
   },
-  f = (0, Chunk392711.cloneDeep)(d);
+  f = (0, Chunk735438.cloneDeep)(d);
 
 function p(e) {
   let {
@@ -67,7 +67,7 @@ function p(e) {
 function _() {
   u = true
 }
-class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class h extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     f = c({}, f, e)
   }
@@ -104,7 +104,7 @@ class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
 }
 l(h, "displayName", "PoggermodeSettingsStore"), l(h, "persistKey", "PoggermodeSettingsStore");
-let m = new h(Chunk570140.Z, {
+let m = new h(Chunk73153.h, {
   POGGERMODE_SETTINGS_UPDATE: p,
   POGGERMODE_TEMPORARILY_DISABLED: _
 })

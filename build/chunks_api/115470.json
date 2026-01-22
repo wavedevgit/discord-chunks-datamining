@@ -1,1 +1,0 @@
-{"id":"115470","type":"store","data":{"name":"FeedbackOverrideStore","functions":[{"name":"initialize","args":[]},{"name":"getFeedbackConfig","args":["e"]}],"events":["FEEDBACK_OVERRIDE_SET","FEEDBACK_OVERRIDE_CLEAR"]},"fromModule":{"id":"web.js"}}

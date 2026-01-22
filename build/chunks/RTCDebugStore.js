@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
-/** chunk id: 226961, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 412780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J$: () => C,
-  Pz: () => E,
-  ZP: () => H,
-  fZ: () => A
-}), require("./388685.js"), require("./35282.js"), require("./539854.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk46973 = require("./46973.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk304680 = require("./304680.js"),
-  Chunk131951 = require("./131951.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk65154 = require("./65154.js");
+  Ay: () => Y,
+  Bz: () => C,
+  Xi: () => T,
+  iA: () => E
+}), require("./896048.js"), require("./747238.js"), require("./321073.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk205693 = require("./205693.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk233545 = require("./233545.js"),
+  Chunk430452 = require("./430452.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk731854 = require("./731854.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,7 +37,7 @@ function p(e) {
   }
   return e
 }
-let _ = C(Chunk65154.Yn.DEFAULT, Chunk981631._s_.TRANSPORT, 0),
+let _ = T(Chunk731854.x.DEFAULT, Chunk652215.zWA.TRANSPORT, 0),
   h = _,
   m = {},
   g = new Map,
@@ -75,16 +75,16 @@ function y(e, t, n) {
 function O(e, t) {
   return "".concat(e, ":").concat(t)
 }
-class v {
+class A {
   static empty() {
-    return new v({})
+    return new A({})
   }
   put(e, t, n, r) {
     if ("" === r) {
       let r = p({}, this.state);
-      return delete r[y(e, t, n)], new v(r)
+      return delete r[y(e, t, n)], new A(r)
     }
-    return new v(p({
+    return new A(p({
       [y(e, t, n)]: r
     }, this.state))
   }
@@ -96,15 +96,15 @@ class v {
     f(this, "state", true), this.state = e
   }
 }
-let S = v.empty(),
-  I = false,
-  T = null;
+let v = A.empty(),
+  S = false,
+  I = null;
 
-function C(e, t, n) {
+function T(e, t, n) {
   return "".concat(e, ":").concat(t, ":").concat(n)
 }
 
-function A(e) {
+function C(e) {
   let [t, n] = e.split(":");
   return {
     context: t,
@@ -113,13 +113,13 @@ function A(e) {
 }
 
 function N() {
-  Object.values(d.Yn).forEach(e => {
+  Object.values(d.x).forEach(e => {
     m[e] = {}
   })
 }
 
-function P() {
-  null != T && (T.destroy(), T = null)
+function R() {
+  null != I && (I.destroy(), I = null)
 }
 
 function w(e) {
@@ -127,8 +127,8 @@ function w(e) {
   h = null != (t = e.section) ? t : _
 }
 
-function R() {
-  P()
+function P() {
+  R()
 }
 
 function D(e) {
@@ -138,7 +138,7 @@ function D(e) {
 function x(e) {
   if (null === e.streamId) {
     let t = O(e.userId, e.context);
-    g.set(t, d.Z.NO_OVERRIDE)
+    g.set(t, d.r8.NO_OVERRIDE)
   }
 }
 
@@ -155,11 +155,11 @@ function j(e) {
     if (Array.isArray(a))
       if ("object" == typeof a[0]) {
         let t = Array.isArray(e) ? e : [],
-          o = r[i] = [];
+          s = r[i] = [];
         for (let e = 0; e < a.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          o.push(j(a[e], i, n))
+          s.push(j(a[e], i, n))
         }
       } else r[i] = a;
     else if ("object" == typeof a && null !== a) {
@@ -180,7 +180,7 @@ function M(e) {
   let {
     connectionStats: t
   } = e;
-  Object.values(d.Yn).forEach(e => {
+  Object.values(d.x).forEach(e => {
     t.filter(t => {
       let {
         context: n
@@ -203,8 +203,8 @@ function k(e) {
     index: r
   } = e, i = m[t];
   if (null != n) {
-    let [e, a, o] = h.split(":");
-    if (e === t && parseInt(o) === r && null != c.default.getUser(a)) {
+    let [e, a, s] = h.split(":");
+    if (e === t && parseInt(s) === r && null != c.default.getUser(a)) {
       let {
         rtp: {
           inbound: e
@@ -217,35 +217,35 @@ function k(e) {
 }
 
 function U(e) {
-  s.gl()
+  o._w()
 }
 
 function G(e) {
   let {
     path: t
-  } = e, n = l.Z.getMediaEngine();
-  if (P(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
-  let r = n.createReplayConnection(d.Yn.DEFAULT, t);
-  null != r && (T = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
-    o.Z.dispatch({
+  } = e, n = l.A.getMediaEngine();
+  if (R(), !n.supports(d.O5.CONNECTION_REPLAY) || 0 === t.length) return;
+  let r = n.createReplayConnection(d.x.DEFAULT, t);
+  null != r && (I = r, r.on(a.yq.Video, (e, t, n, i, a) => {
+    s.h.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
       userId: e,
       videoSsrc: null != i ? i : 0,
       streamId: null != t ? t : ""
     })
-  }), o.Z.wait(() => s.bA()))
+  }), s.h.wait(() => o.ho()))
 }
 
-function Z(e) {
-  S = S.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
+function V(e) {
+  v = v.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
 function F(e) {
   let {
     value: t
   } = e;
-  I = t
+  S = t
 }
 
 function B(e) {
@@ -257,9 +257,9 @@ function B(e) {
   g.set(O(t, n), r)
 }
 N();
-class V extends(r = Chunk442837.ZP.Store) {
+class H extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.Z, c.default)
+    this.waitFor(l.A, c.default)
   }
   getSection() {
     return h
@@ -277,38 +277,38 @@ class V extends(r = Chunk442837.ZP.Store) {
   getOutboundStats(e) {
     var t, n, r;
     let i, a = this.getAllStats(e),
-      o = null == (t = a[0]) ? true : t.transport,
-      s = null == (r = a[0]) || null == (n = r.rtp) ? true : n.outbound,
-      l = null == s ? true : s.find(e => "video" === e.type);
-    return Array.isArray(null == o ? true : o.availableOutgoingBitrate) && o.availableOutgoingBitrate.length > 0 && (i = o.availableOutgoingBitrate[o.availableOutgoingBitrate.length - 1].value), {
+      s = null == (t = a[0]) ? true : t.transport,
+      o = null == (r = a[0]) || null == (n = r.rtp) ? true : n.outbound,
+      l = null == o ? true : o.find(e => "video" === e.type);
+    return Array.isArray(null == s ? true : s.availableOutgoingBitrate) && s.availableOutgoingBitrate.length > 0 && (i = s.availableOutgoingBitrate[s.availableOutgoingBitrate.length - 1].value), {
       codec: null == l ? true : l.codec.name,
       resolution: null == l ? true : l.resolution,
       bitrateEstimate: i
     }
   }
   getAllStats() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : d.Yn.DEFAULT;
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : d.x.DEFAULT;
     return Object.values(m[e])
   }
   getVideoStreams() {
-    return S
+    return v
   }
   shouldRecordNextConnection() {
-    return I
+    return S
   }
   getSimulcastDebugOverride(e, t) {
     let n = O(e, t);
-    return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
+    return g.has(n) ? g.get(n) : d.r8.NO_OVERRIDE
   }
 }
-f(V, "displayName", "RTCDebugStore");
-let H = new V(Chunk570140.Z, {
+f(H, "displayName", "RTCDebugStore");
+let Y = new H(Chunk73153.h, {
   RTC_DEBUG_MODAL_OPEN: w,
-  RTC_DEBUG_MODAL_CLOSE: R,
+  RTC_DEBUG_MODAL_CLOSE: P,
   RTC_DEBUG_MODAL_SET_SECTION: L,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
-  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: Z,
+  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: V,
   RTC_DEBUG_SET_RECORDING_FLAG: F,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: B,
   VOICE_CHANNEL_SELECT: D,

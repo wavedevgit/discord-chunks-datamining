@@ -1,104 +1,59 @@
-/** Chunk was on 9536 **/
-/** chunk id: 838324, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 838324, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js");
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk692547 = require("./692547.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk45966 = require("./45966.js"),
-  Chunk637853 = require("./637853.js"),
-  Chunk889369 = require("./889369.js"),
-  Chunk974513 = require("./974513.jsx"),
-  Chunk290511 = require("./290511.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk212781 = require("./212781.js");
+  A: () => g
+}), require("./896048.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk503698 = require("./503698.js"),
+  s = require.n(Chunk503698),
+  Chunk942381 = require("./942381.js"),
+  Chunk877991 = require("./877991.js"),
+  Chunk375499 = require("./375499.jsx"),
+  Chunk151271 = require("./151271.js"),
+  Chunk184761 = require("./184761.js"),
+  Chunk355622 = require("./355622.js"),
+  Chunk698279 = require("./698279.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk111314 = require("./111314.js");
 
-function m(e) {
+function m(e, t) {
   let {
-    guildId: t,
-    scrollToQuestions: n
-  } = e, m = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), b = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [p, h] = (0, o.VF)(t, b), [x, j] = (0, d.OA)(t, [...b]), v = m ? j.length : h.length, O = m ? x.length : p.length, y = O >= u.X, C = j.length - h.length, N = (0, r.jsx)(a.owK, {
-    size: "sm",
-    color: l.Z.unsafe_rawColors.BRAND_500.css,
-    secondaryColor: l.Z.unsafe_rawColors.WHITE.css,
-    className: f.icon
-  }), E = (0, r.jsx)(a.k$p, {
-    size: "sm",
-    className: f.icon,
-    color: l.Z.colors.WHITE.css,
-    secondaryColor: l.Z.colors.BACKGROUND_MOD_MUTED.css
-  }), I = [Math.min(u.X, O) / u.X * 100], S = y ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css];
-  return (0, r.jsxs)("div", {
-    className: f.container,
-    children: [(0, r.jsxs)("div", {
-      className: f.header,
-      children: [(0, r.jsx)(a.Text, {
-        variant: "text-xs/bold",
-        color: "text-brand",
-        children: g.intl.format(g.t.kvroKO, {
-          count: O
-        })
-      }), (0, r.jsx)(a.Text, {
-        variant: "text-xs/bold",
-        color: "text-muted",
-        children: g.intl.format(g.t["0MjxJ5"], {
-          count: v
-        })
-      })]
-    }), (0, r.jsx)(a.yGy, {
-      foregroundColors: S,
-      percents: I,
-      size: a.yGy.Sizes.XSMALL
-    }), (0, r.jsxs)("div", {
-      className: f.requiredItem,
-      children: [y ? N : E, (0, r.jsx)(a.Text, {
-        variant: "text-xs/normal",
-        color: "text-muted",
-        children: g.intl.format(g.t.PwXgSy, {
-          count: u.X
-        })
-      })]
-    }), m && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)("div", {
-        className: f.requiredItem,
-        children: [(0, r.jsx)(a.d3s, {
-          size: "sm",
-          color: l.Z.colors.WHITE.css,
-          secondaryColor: l.Z.colors.BACKGROUND_MOD_MUTED.css,
-          className: f.icon
-        }), (0, r.jsx)(a.Text, {
-          variant: "text-xs/normal",
-          color: "text-muted",
-          children: g.intl.string(g.t.AyvkOK)
-        })]
-      }), (0, r.jsxs)("div", {
-        className: f.requiredItem,
-        children: [(0, r.jsx)(a.d3s, {
-          size: "sm",
-          color: l.Z.colors.WHITE.css,
-          secondaryColor: l.Z.colors.BACKGROUND_MOD_MUTED.css,
-          className: f.icon
-        }), (0, r.jsx)(a.Text, {
-          variant: "text-xs/normal",
-          color: "text-muted",
-          children: g.intl.format(g.t["8Geut3"], {
-            count: C,
-            prejoinHook: e => (0, r.jsx)(a.eee, {
-              onClick: n,
-              children: (0, r.jsx)(a.Text, {
-                tag: "span",
-                variant: "text-xs/normal",
-                color: "text-link",
-                children: e
-              })
-            })
-          })
-        })]
-      })]
-    })]
+    disabled: n,
+    type: a,
+    channelId: m,
+    pickerView: g = p.kx.EMOJI
+  } = e, [E, b, y, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), A = (0, d.p)(l.L), v = a === f.oU.NORMAL, {
+    tooltipsWithKeybinds: S,
+    expressionsCombinedIntoEmojiButton: I
+  } = d.C.useConfig({
+    location: "EmojiButton"
+  }), T = I ? true : v ? A : true, C = S && I && v ? _.intl.string(_.t.DSBQ6F) : true, N = i.useCallback(() => {
+    (0, u.r$)(g, a, m)
+  }, [a, g, m]);
+  return n ? null : (0, r.jsx)("div", {
+    className: s()(p.VQ, h.UD),
+    ref: t,
+    children: (0, r.jsx)(c.A, {
+      "aria-label": C,
+      tooltipText: C,
+      className: h.Z8,
+      onClick: N,
+      active: E === g && b === a && O === m,
+      "aria-controls": y,
+      tabIndex: 0,
+      focusProps: {
+        offset: {
+          top: 4,
+          bottom: 4,
+          left: false,
+          right: false
+        }
+      },
+      keyboardShortcut: T,
+      canShowNUXPremiumTooltip: v
+    })
   })
 }
+let g = Chunk64700.memo(Chunk64700.forwardRef(m))

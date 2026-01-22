@@ -1,32 +1,34 @@
-/** Chunk was on 13873 **/
-/** chunk id: 756679, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 79023 **/
+/** chunk id: 430914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Lz: () => g,
-  cJ: () => O
-}), require("./388685.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk818083 = require("./818083.js"),
-  Chunk141537 = require("./141537.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk699516 = require("./699516.js"),
-  Chunk981631 = require("./981631.js");
+  Zs: () => b,
+  uS: () => O
+}), require("./896048.js");
+var Chunk311907 = require("./311907.js"),
+  Chunk600975 = require("./600975.js"),
+  Chunk428835 = require("./428835.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk994500 = require("./994500.js"),
+  Chunk652215 = require("./652215.js");
 
-function s(e, t) {
+function d(e, t) {
   if (null == e) return {};
-  var n, r, i = function(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-    return i
-  }(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  var n, r, i, l = {};
+  if ("u" > typeof Reflect && Reflect.ownKeys) {
+    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
   }
-  return i
+  if (l = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = {},
+        l = Object.getOwnPropertyNames(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+      return i
+    }(e, t), Object.getOwnPropertySymbols)
+    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+  return l
 }
-let d = (0, Chunk818083.B)({
+let s = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-11_invite_friend_members",
   label: "Show Friends in Server on Invite Modal",
@@ -65,7 +67,7 @@ function O(e) {
   var t, n;
   let {
     guild: i
-  } = e, c = s(e, ["guild"]), O = (0, r.e7)([o.default], () => o.default.isAuthenticated()), g = (0, r.e7)([u.Z], () => u.Z.getFriendCount() > 0), b = a(i), v = O && g && b, p = (0, l.sD)(d, (t = function(e) {
+  } = e, c = d(e, ["guild"]), O = (0, r.bG)([o.default], () => o.default.isAuthenticated()), b = (0, r.bG)([u.A], () => u.A.getFriendCount() > 0), g = a(i), p = O && b && g, y = (0, l.Dr)(s, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -83,7 +85,7 @@ function O(e) {
     }
     return e
   }({}, c), n = n = {
-    disable: !v
+    disable: !p
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -94,12 +96,12 @@ function O(e) {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t));
-  return v ? p : f
+  return p ? y : f
 }
 
-function g(e) {
+function b(e) {
   let {
     guild: t
-  } = e, n = s(e, ["guild"]), r = o.default.isAuthenticated(), i = u.Z.getFriendCount() > 0;
-  return r && i && a(t) ? (0, l.Z6)(d, n) : f
+  } = e, n = d(e, ["guild"]), r = o.default.isAuthenticated(), i = u.A.getFriendCount() > 0;
+  return r && i && a(t) ? (0, l.Kd)(s, n) : f
 }

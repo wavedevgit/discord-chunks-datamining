@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
-/** chunk id: 926491, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 679382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  A: () => A
 });
-var r, Chunk135273 = require("./135273.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk287328 = require("./287328.js"),
-  Chunk86670 = require("./86670.js"),
-  Chunk856472 = require("./856472.js"),
-  Chunk93093 = require("./93093.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk149694 = require("./149694.js"),
-  Chunk737406 = require("./737406.js");
+var r, Chunk61090 = require("./61090.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk723176 = require("./723176.js"),
+  Chunk154049 = require("./154049.js"),
+  Chunk351697 = require("./351697.js"),
+  Chunk184989 = require("./184989.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk41237 = require("./41237.js"),
+  Chunk514983 = require("./514983.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,11 +26,11 @@ function _(e, t, n) {
 let h = 2,
   m = async () => {
     if (0 !== h) return;
-    let e = s.Z.database();
+    let e = o.A.database();
     if (null == e) return;
     h = 2;
-    let t = await (0, l.gs)("StickerStore.loadSavedGuildStickers", () => i.Z.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => c.Z.getAsync(e)));
-    null != t && o.Z.dispatch({
+    let t = await (0, l.ES)("StickerStore.loadSavedGuildStickers", () => i.A.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => c.A.getAsync(e)));
+    null != t && s.h.dispatch({
       type: "CACHED_STICKERS_LOADED",
       stickers: t
     })
@@ -52,9 +52,9 @@ function b(e) {
 let y = () => {
   h = 0
 };
-class O extends(r = Chunk442837.ZP.Store) {
+class O extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.Z, f.Z, d.Z, p.Z), this.syncWith([f.Z, p.Z], () => true)
+    this.waitFor(u.A, f.A, d.A, p.A), this.syncWith([f.A, p.A], () => true)
   }
   get isLoaded() {
     return 0 !== h
@@ -63,42 +63,42 @@ class O extends(r = Chunk442837.ZP.Store) {
     return h
   }
   getStickerMetadataArrays() {
-    return m(), [f.Z.getStickerMetadataMap(), p.Z.getStickerMetadataMap()]
+    return m(), [f.A.getStickerMetadataMap(), p.A.getStickerMetadataMap()]
   }
   get hasLoadedStickerPacks() {
-    return p.Z.hasLoadedStickerPacks
+    return p.A.hasLoadedStickerPacks
   }
   get isFetchingStickerPacks() {
-    return p.Z.isFetchingStickerPacks
+    return p.A.isFetchingStickerPacks
   }
   getStickerById(e) {
     var t;
-    return m(), null != (t = f.Z.getStickerById(e)) ? t : p.Z.getStickerById(e)
+    return m(), null != (t = f.A.getStickerById(e)) ? t : p.A.getStickerById(e)
   }
   getStickerPack(e) {
-    return p.Z.getStickerPack(e)
+    return p.A.getStickerPack(e)
   }
   getPremiumPacks() {
-    return p.Z.getPremiumPacks()
+    return p.A.getPremiumPacks()
   }
   isPremiumPack(e) {
-    return p.Z.isPremiumPack(e)
+    return p.A.isPremiumPack(e)
   }
   getRawStickersByGuild() {
-    return f.Z.getAllGuildStickers()
+    return f.A.getAllGuildStickers()
   }
   getAllGuildStickers() {
-    return m(), f.Z.getAllGuildStickers()
+    return m(), f.A.getAllGuildStickers()
   }
   getAllPackStickers() {
-    return p.Z.getAllPackStickers()
+    return p.A.getAllPackStickers()
   }
   getStickersByGuildId(e) {
-    return m(), f.Z.getStickersByGuildId(e)
+    return m(), f.A.getStickersByGuildId(e)
   }
 }
 _(O, "displayName", "StickersStore");
-let v = new O(Chunk570140.Z, {
+let A = new O(Chunk73153.h, {
   BACKGROUND_SYNC: E,
   CONNECTION_OPEN: g,
   GUILD_CREATE: b,

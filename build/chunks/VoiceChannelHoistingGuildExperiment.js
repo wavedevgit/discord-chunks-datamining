@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
-/** chunk id: 526139, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 186369, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => o,
-  c: () => a
+  S: () => a,
+  b: () => s
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk688151 = require("./688151.js");
+let a = (0, Chunk600975.C)({
   kind: "guild",
   id: "2025-12_voice_channel_hoisting",
   label: "Voice Channel Hoisting",
-  commonTriggerPoint: Chunk987338.$P.VOICE_CALL,
+  commonTriggerPoint: Chunk688151.$G.VOICE_CALL,
   defaultConfig: {
     enableWaveformIcon: false,
     enableHighlight: false
@@ -33,7 +33,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e, t) {
+function s(e, t) {
   return a.useExperiment({
     guildId: e,
     location: t

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 396352, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 354430, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  A: () => _
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,14 +15,14 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {
+let o = {
     topEmojisByGuildId: {}
   },
-  l = s,
+  l = o,
   c = {};
 
 function u() {
-  l = s, c = {}
+  l = o, c = {}
 }
 
 function d(e) {
@@ -39,9 +39,9 @@ function f(e) {
   } = e;
   l.topEmojisByGuildId[t] = n.map(e => e.emojiId), c[t] = false
 }
-class p extends(r = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    l = null != e ? e : s
+    l = null != e ? e : o
   }
   getState() {
     return l
@@ -53,8 +53,8 @@ class p extends(r = Chunk442837.ZP.PersistedStore) {
     return c[e]
   }
 }
-o(p, "displayName", "TopEmojiStore"), o(p, "persistKey", "TopEmojiStore");
-let _ = new p(Chunk570140.Z, {
+s(p, "displayName", "TopEmojiStore"), s(p, "persistKey", "TopEmojiStore");
+let _ = new p(Chunk73153.h, {
   LOGOUT: u,
   TOP_EMOJIS_FETCH: d,
   TOP_EMOJIS_FETCH_SUCCESS: f

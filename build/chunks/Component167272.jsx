@@ -1,0 +1,96 @@
+/** Chunk was on web.js **/
+/** chunk id: 167272, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => w
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk311907 = require("./311907.js"),
+  Chunk833349 = require("./833349.js"),
+  Chunk765379 = require("./765379.js"),
+  Chunk141639 = require("./141639.js"),
+  Chunk61330 = require("./61330.js"),
+  Chunk960076 = require("./960076.js"),
+  Chunk359549 = require("./359549.js"),
+  Chunk373966 = require("./373966.jsx"),
+  Chunk793574 = require("./793574.js"),
+  Chunk688810 = require("./688810.jsx"),
+  Chunk308335 = require("./308335.js"),
+  Chunk82149 = require("./82149.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk790381 = require("./790381.jsx"),
+  Chunk266080 = require("./266080.jsx"),
+  Chunk939496 = require("./939496.jsx"),
+  Chunk934173 = require("./934173.jsx"),
+  Chunk502695 = require("./502695.jsx"),
+  Chunk691041 = require("./691041.jsx"),
+  Chunk793838 = require("./793838.jsx"),
+  Chunk668880 = require("./668880.jsx"),
+  Chunk72742 = require("./72742.jsx"),
+  Chunk312784 = require("./312784.jsx"),
+  Chunk985629 = require("./985629.jsx"),
+  Chunk652215 = require("./652215.js"),
+  Chunk996988 = require("./996988.js");
+
+function w(e) {
+  var t;
+  let {
+    user: n,
+    activity: w,
+    onAction: P,
+    onClose: D,
+    application: x,
+    containerClassName: L
+  } = e, {
+    themeType: j
+  } = (0, b.E)(), M = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(x), U = (0, _.o)(null != (t = null == w ? true : w.application_id) ? t : null == x ? true : x.id), {
+    analyticsLocations: G
+  } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), V = j === R.d.MODAL || j === R.d.MODAL_V2, F = j === R.d.POPOUT, B = (() => M ? F && (null == w ? true : w.type) === N.$pd.PLAYING && (null == x ? true : x.id) != null ? (0, r.jsx)(d.A, {
+    applicationId: x.id,
+    onAction: P,
+    onClose: D
+  }) : null : U || !k || null == x || V ? (0, l.A)(w) ? (0, r.jsx)(S.A, {
+    platformType: N.fg2.XBOX,
+    icon: () => (0, r.jsx)(E.A, {}),
+    onAction: P
+  }) : (0, o.A)(w) ? (0, r.jsx)(S.A, {
+    platformType: N.fg2.PLAYSTATION,
+    icon: () => (0, r.jsx)(g.A, {}),
+    onAction: P
+  }) : (0, c.A)(w) ? (0, r.jsx)(T.A, {
+    activity: w,
+    onAction: P
+  }) : (0, a.A)(w, N.jUm.JOIN) || (0, s.A)(w) ? (0, r.jsx)(A.A, {
+    user: n,
+    activity: w,
+    onAction: P,
+    onClose: D
+  }) : (null == w ? true : w.type) === N.$pd.HANG_STATUS ? (0, r.jsx)(O.A, {
+    user: n,
+    activity: w,
+    onAction: P,
+    onClose: D
+  }) : (null == w ? true : w.buttons) != null && (null == w ? true : w.buttons.length) >= 1 ? (0, r.jsx)(y.A, {
+    user: n,
+    activity: w,
+    onAction: P
+  }) : (0, a.A)(w, N.jUm.INSTANCE) ? (0, r.jsx)(v.A, {
+    user: n,
+    activity: w,
+    onAction: P
+  }) : (0, h.Cy)(w) ? (0, r.jsx)(I.A, {
+    activity: w,
+    onAction: P,
+    onClose: D
+  }) : null : (0, r.jsx)(C.A, {
+    application: x,
+    onAction: P,
+    onClose: D,
+    analyticsLocations: G
+  }))();
+  return null == B ? null : (0, r.jsx)("div", {
+    className: L,
+    children: B
+  })
+}

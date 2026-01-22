@@ -1,7 +1,4 @@
-/** Chunk was on 22979 **/
-/** chunk id: 13408, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  container: "aa69ccbefb0925a4-container",
-  content: "aa69ccbefb0925a4-content",
-  tabBar: "aa69ccbefb0925a4-tabBar"
-}
+/** Chunk was on web.js **/
+/** chunk id: 13408, original params: e (module,exports,re quire) **/
+"use strict";
+module.exports = "/assets/c89d234618179857.svg"

@@ -1,1 +1,0 @@
-{"id":"573196","type":"experiment","data":{"id":"2025-04_fetch_quests_on_postconnectionopen","kind":"user","label":"Fetch Quests ON_POST_CONNECTION_OPEN","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"Fetch quests during ON_POST_CONNECTION_OPEN","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

@@ -1,0 +1,54 @@
+/** Chunk was on 94503 **/
+/** chunk id: 950072, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => d,
+  C: () => E
+});
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk417454 = require("./417454.jsx"),
+  Chunk775602 = require("./775602.js"),
+  Chunk967144 = require("./967144.js"),
+  Chunk818348 = require("./818348.js");
+
+function E(e) {
+  var t;
+  let {
+    role: n,
+    guildId: r
+  } = e, s = (0, c.X_)(r, null != n ? n : true, null == n ? true : n.colorStrings), u = (0, a.bG)([o.A], () => o.A.roleStyle), E = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), d = null != (t = null == n ? true : n.colorString) ? t : E;
+  return null == n ? null : "dot" === u ? (0, l.jsx)(i.WYI, {
+    color: null != d ? d : true,
+    colors: s,
+    background: false,
+    tooltip: false
+  }) : (0, l.jsx)(i.RYH, {
+    color: null != d ? d : null,
+    colors: s
+  })
+}
+
+function d(e) {
+  var t;
+  let {
+    guildId: n,
+    role: a,
+    className: o,
+    canRemove: c = false,
+    onRemove: E = u.tE
+  } = e, d = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == a ? true : a.colorString) ? t : d, g = r.useMemo(() => ({
+    backgroundColor: "".concat(_, "27")
+  }), [_]);
+  return null == a ? null : (0, l.jsx)(i.DUT, {
+    children: (0, l.jsx)(s.b_, {
+      className: o,
+      style: g,
+      role: a,
+      guildId: n,
+      canRemove: c,
+      onRemove: E
+    })
+  })
+}

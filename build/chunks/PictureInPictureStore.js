@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 366050, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 334463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o;
+let r, i, a, s;
 require.d(exports, {
-  Z: () => w
-}), require("./388685.js");
-var s, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk354459 = require("./354459.js");
+  A: () => w
+}), require("./896048.js");
+var o, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk806931 = require("./806931.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,29 +50,29 @@ function h(e, t) {
 }
 let m = new Map,
   g = {},
-  E = Chunk981631.VD2.BOTTOM_RIGHT,
+  E = Chunk652215.CUs.BOTTOM_RIGHT,
   b = {
-    [Chunk354459.cL.VIDEO]: Chunk354459.l8[Chunk354459.cL.VIDEO],
-    [Chunk354459.cL.CAMERA_PREVIEW]: Chunk354459.l8[Chunk354459.cL.CAMERA_PREVIEW],
-    [Chunk354459.cL.HAVEN]: Chunk354459.l8[Chunk354459.cL.HAVEN]
+    [Chunk806931.R8.VIDEO]: Chunk806931.fG[Chunk806931.R8.VIDEO],
+    [Chunk806931.R8.CAMERA_PREVIEW]: Chunk806931.fG[Chunk806931.R8.CAMERA_PREVIEW],
+    [Chunk806931.R8.HAVEN]: Chunk806931.fG[Chunk806931.R8.HAVEN]
   };
 
 function y(e) {
   var t, n;
   let {
-    id: s,
+    id: o,
     component: l,
     props: c
   } = e;
-  if (null != m.get(s)) return;
+  if (null != m.get(o)) return;
   let d = {
-    id: s,
+    id: o,
     component: l,
     position: null != (t = c.position) ? t : E,
     props: c,
     docked: null != (n = c.docked) && n
   };
-  m.set(s, d), l === u.NYg.VIDEO ? null == r && (r = s) : l === u.NYg.ACTIVITY ? null == i && (i = s) : l === u.NYg.FRAME ? null == a && (a = s) : l === u.NYg.HAVEN && null == o && (o = s)
+  m.set(o, d), l === u.o1q.VIDEO ? null == r && (r = o) : l === u.o1q.ACTIVITY ? null == i && (i = o) : l === u.o1q.FRAME ? null == a && (a = o) : l === u.o1q.HAVEN && null == s && (s = o)
 }
 
 function O(e) {
@@ -85,26 +85,26 @@ function O(e) {
     let e = Array.from(m.keys());
     r === t ? r = e.find(e => {
       let t = m.get(e);
-      return null != t && t.component === u.NYg.VIDEO
+      return null != t && t.component === u.o1q.VIDEO
     }) : i === t ? i = e.find(e => {
       let t = m.get(e);
-      return null != t && t.component === u.NYg.ACTIVITY
+      return null != t && t.component === u.o1q.ACTIVITY
     }) : a === t ? a = e.find(e => {
       let t = m.get(e);
-      return null != t && t.component === u.NYg.FRAME
-    }) : o === t && (o = e.find(e => {
+      return null != t && t.component === u.o1q.FRAME
+    }) : s === t && (s = e.find(e => {
       let t = m.get(e);
-      return null != t && t.component === u.NYg.HAVEN
+      return null != t && t.component === u.o1q.HAVEN
     }))
   }
 }
 
-function v(e) {
+function A(e) {
   let {
     id: t,
     position: n
   } = e;
-  if (null == t || r !== t && i !== t && a !== t && o !== t) returnfalse;
+  if (null == t || r !== t && i !== t && a !== t && s !== t) returnfalse;
   {
     let e = new Map;
     m.forEach((t, r) => {
@@ -115,7 +115,7 @@ function v(e) {
   }
 }
 
-function S(e) {
+function v(e) {
   let {
     width: t,
     pipType: n
@@ -123,7 +123,7 @@ function S(e) {
   b[n] = t
 }
 
-function I(e) {
+function S(e) {
   let {
     id: t,
     rect: n
@@ -131,11 +131,11 @@ function I(e) {
   g[t] = n
 }
 
-function T(e) {
+function I(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t && o !== t) returnfalse;
+  if (r !== t && i !== t && a !== t && s !== t) returnfalse;
   {
     let e = m.get(t);
     if (null == e) returnfalse;
@@ -145,11 +145,11 @@ function T(e) {
   }
 }
 
-function C(e) {
+function T(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t && o !== t) returnfalse;
+  if (r !== t && i !== t && a !== t && s !== t) returnfalse;
   {
     let e = m.get(t);
     if (null == e) returnfalse;
@@ -159,24 +159,24 @@ function C(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   let {
     id: t
   } = e, n = m.get(t);
-  null != n && (n.component === u.NYg.VIDEO ? r = t : n.component === u.NYg.ACTIVITY ? i = t : n.component === u.NYg.FRAME ? a = t : n.component === u.NYg.HAVEN && (o = t))
+  null != n && (n.component === u.o1q.VIDEO ? r = t : n.component === u.o1q.ACTIVITY ? i = t : n.component === u.o1q.FRAME ? a = t : n.component === u.o1q.HAVEN && (s = t))
 }
 
 function N() {
-  r = null, i = null, a = null, o = null, m = new Map
+  r = null, i = null, a = null, s = null, m = new Map
 }
-class P extends(s = Chunk442837.ZP.PersistedStore) {
+class R extends(o = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null == e) {
       var t;
-      E = u.VD2.BOTTOM_RIGHT, b = {
-        [d.cL.VIDEO]: d.l8[d.cL.VIDEO],
-        [d.cL.CAMERA_PREVIEW]: d.l8[d.cL.CAMERA_PREVIEW],
-        [d.cL.HAVEN]: null != (t = d.l8[d.cL.HAVEN]) ? t : d.l8[d.cL.VIDEO]
+      E = u.CUs.BOTTOM_RIGHT, b = {
+        [d.R8.VIDEO]: d.fG[d.R8.VIDEO],
+        [d.R8.CAMERA_PREVIEW]: d.fG[d.R8.CAMERA_PREVIEW],
+        [d.R8.HAVEN]: null != (t = d.fG[d.R8.HAVEN]) ? t : d.fG[d.R8.VIDEO]
       };
       return
     }
@@ -184,7 +184,7 @@ class P extends(s = Chunk442837.ZP.PersistedStore) {
   }
   get pipWindow() {
     var e, t, n;
-    return null == r && null == i && null == a && null == o ? null : m.get(null != (n = null != (t = null != (e = null != r ? r : i) ? e : a) ? t : o) ? n : "")
+    return null == r && null == i && null == a && null == s ? null : m.get(null != (e = null != (t = null != (n = null != r ? r : i) ? n : a) ? t : s) ? e : "")
   }
   get pipVideoWindow() {
     return null == r ? null : m.get(r)
@@ -196,7 +196,7 @@ class P extends(s = Chunk442837.ZP.PersistedStore) {
     return null == a ? null : m.get(a)
   }
   get pipHavenWindow() {
-    return null == o ? null : m.get(o)
+    return null == s ? null : m.get(s)
   }
   get pipWindows() {
     return m
@@ -223,25 +223,25 @@ class P extends(s = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-f(P, "displayName", "PictureInPictureStore"), f(P, "persistKey", "PictureInPictureStore"), f(P, "migrations", [e => {
+f(R, "displayName", "PictureInPictureStore"), f(R, "persistKey", "PictureInPictureStore"), f(R, "migrations", [e => {
   var t, n, r;
   return {
     pipWidths: {
-      [d.cL.VIDEO]: null != (t = e.pipWidth) ? t : d.l8[d.cL.VIDEO],
-      [d.cL.CAMERA_PREVIEW]: d.l8[d.cL.CAMERA_PREVIEW],
-      [d.cL.HAVEN]: null != (n = d.l8[d.cL.HAVEN]) ? n : d.l8[d.cL.VIDEO]
+      [d.R8.VIDEO]: null != (t = e.pipWidth) ? t : d.fG[d.R8.VIDEO],
+      [d.R8.CAMERA_PREVIEW]: d.fG[d.R8.CAMERA_PREVIEW],
+      [d.R8.HAVEN]: null != (n = d.fG[d.R8.HAVEN]) ? n : d.fG[d.R8.VIDEO]
     },
-    openPosition: null != (r = e.openPosition) ? r : u.VD2.BOTTOM_RIGHT
+    openPosition: null != (r = e.openPosition) ? r : u.CUs.BOTTOM_RIGHT
   }
 }]);
-let w = new P(Chunk570140.Z, {
+let w = new R(Chunk73153.h, {
   PICTURE_IN_PICTURE_OPEN: y,
   PICTURE_IN_PICTURE_CLOSE: O,
-  PICTURE_IN_PICTURE_MOVE: v,
-  PICTURE_IN_PICTURE_RESIZE: S,
-  PICTURE_IN_PICTURE_HIDE: T,
-  PICTURE_IN_PICTURE_SHOW: C,
-  PICTURE_IN_PICTURE_UPDATE_RECT: I,
-  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: A,
+  PICTURE_IN_PICTURE_MOVE: A,
+  PICTURE_IN_PICTURE_RESIZE: v,
+  PICTURE_IN_PICTURE_HIDE: I,
+  PICTURE_IN_PICTURE_SHOW: T,
+  PICTURE_IN_PICTURE_UPDATE_RECT: S,
+  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: C,
   LOGOUT: N
 })

@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 574176, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 140547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  bN: () => o,
-  gx: () => s,
-  n5: () => a
+  $j: () => s,
+  Eh: () => a,
+  ko: () => o
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk688151 = require("./688151.js");
+let a = (0, Chunk600975.C)({
   kind: "guild",
   id: "2025-07_hang_status",
   label: "Hang Statuses",
@@ -19,7 +19,7 @@ let a = (0, Chunk818083.B)({
     allowPermanentClear: false,
     defaultStatusVariant: "twemoji"
   },
-  commonTriggerPoint: Chunk987338.$P.VOICE_CALL,
+  commonTriggerPoint: Chunk688151.$G.VOICE_CALL,
   treatments: [{
     id: 1,
     label: "Enable Hang Status with illocons - chilling default",
@@ -63,7 +63,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function s(e) {
   let {
     guildId: t,
     location: n
@@ -76,7 +76,7 @@ function o(e) {
   })
 }
 
-function s(e) {
+function o(e) {
   let {
     guildId: t,
     location: n

@@ -1,22 +1,22 @@
-/** Chunk was on 1272 **/
-/** chunk id: 683743, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 255161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk981631 = require("./981631.js");
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk652215 = require("./652215.js");
 
 function c() {
   returntrue
 }
-class u extends(i = Chunk442837.ZP.Store) {
+class u extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.Z), this.syncWith([o.Z], c)
+    this.waitFor(s.A), this.syncWith([s.A], c)
   }
   channelNoticePredicate(e, t) {
-    return Date.now() - t >= s.Hqc && o.Z.can(s.Plq.ADMINISTRATOR, e)
+    return Date.now() - t >= o.D2K && s.A.can(o.xBc.ADMINISTRATOR, e)
   }
 }(r = "displayName") in u ? Object.defineProperty(u, r, {
   value: "InviteNoticeStore",
@@ -24,4 +24,4 @@ class u extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : u[r] = "InviteNoticeStore";
-let d = new u(Chunk570140.Z)
+let d = new u(Chunk73153.h)

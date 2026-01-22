@@ -1,10 +1,10 @@
-/** Chunk was on 11010 **/
-/** chunk id: 967021, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 31748 **/
+/** chunk id: 253541, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  HM: () => i,
-  J_: () => l
+  B2: () => i,
+  dz: () => r
 });
-let r = (0, require("./818083.js").B)({
+let l = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-05_flamingo_prefetch",
   label: "Flamingo Prefetch (Download Experiments)",
@@ -29,33 +29,33 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e) {
+function r(e) {
   let {
     location: t,
     autoTrackExposure: n
   } = e, {
-    isPrefetchEnabled: i
-  } = r.useExperiment({
+    isPrefetchEnabled: r
+  } = l.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: __OVERLAY__
   });
-  return i
+  return r
 }
 
-function l(e) {
+function i(e) {
   let {
     location: t,
     autoTrackExposure: n,
-    disable: i
+    disable: r
   } = e, {
-    isDownloadIconEnabled: l
-  } = r.useExperiment({
+    isDownloadIconEnabled: i
+  } = l.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: __OVERLAY__ || i
+    disable: __OVERLAY__ || r
   });
-  return l
+  return i
 }

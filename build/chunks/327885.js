@@ -1,0 +1,225 @@
+/** Chunk was on 22477 **/
+/** chunk id: 327885, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  y: () => v
+}), require("./896048.js"), require("./747238.js");
+var Chunk64700 = require("./64700.js"),
+  Chunk559474 = require("./559474.js");
+
+function i(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = a
+    })
+  }
+  return e
+}
+
+function r(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let s = new Set([Chunk559474.RN.HERO_BANNER_STATIC, Chunk559474.RN.HERO_LOGO, Chunk559474.RN.PDP_BACKGROUND, Chunk559474.RN.LOGO, Chunk559474.RN.MOBILE_BANNER, Chunk559474.RN.MOBILE_BACKGROUND]),
+  o = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
+  c = {
+    max: 5e6,
+    warn: 2e6
+  },
+  d = {
+    max: 3e6,
+    warn: 1e6
+  },
+  u = {
+    max: 2e6,
+    warn: 1e6
+  },
+  m = {
+    max: 1e6,
+    warn: 5e5
+  },
+  p = {
+    max: 25e4,
+    warn: 5e4
+  },
+  h = {
+    [Chunk559474.Jn.PROFILE_EFFECT]: c,
+    [Chunk559474.Jn.AVATAR_DECORATION]: d,
+    [Chunk559474.RN.HERO_BANNER_ANIMATED]: c,
+    [Chunk559474.RN.HERO_BANNER_RIVE]: c,
+    [Chunk559474.RN.CATALOG_BANNER_RIVE]: c,
+    [Chunk559474.RN.SHOP_BUTTON_BG_HOVER]: d,
+    [Chunk559474.RN.SHOP_BUTTON_BG_HOVER_DARK]: d,
+    [Chunk559474.RN.SHOP_BUTTON_BG_HOVER_LIGHT]: d,
+    [Chunk559474.RN.SHOP_BUTTON_BG_RESTING]: d,
+    [Chunk559474.RN.SHOP_BUTTON_BG_RESTING_DARK]: d,
+    [Chunk559474.RN.SHOP_BUTTON_BG_RESTING_LIGHT]: d,
+    [Chunk559474.RN.HERO_BANNER_STATIC]: u,
+    [Chunk559474.RN.UPSELL_BANNER]: m,
+    [Chunk559474.RN.UPSELL_BANNER_POPOUT]: p,
+    [Chunk559474.RN.MOBILE_BANNER]: m,
+    [Chunk559474.RN.MOBILE_BACKGROUND]: p,
+    [Chunk559474.RN.MOBILE_HERO]: m,
+    [Chunk559474.RN.PDP_BACKGROUND]: p,
+    [Chunk559474.RN.LOGO]: p,
+    [Chunk559474.RN.COACHTIP_AVATAR]: p
+  },
+  f = async e => {
+    let t = Object.values(l.Kx),
+      n = new Set,
+      a = e.createReader();
+    for (let e of (await new Promise(e => a.readEntries(e)))) e.isDirectory && t.includes(e.name) && n.add(e.name);
+    return t.filter(e => !n.has(e))
+  }, x = e => {
+    let {
+      names: t,
+      addError: n
+    } = e, a = /^[a-z0-9]+(_[a-z0-9]+)*(\.[a-z0-9]+)?$/, l = t.filter(e => !a.test(e));
+    l.length > 0 && n("File names must be in lowercase snake case", l)
+  }, b = (e, t, n, a) => {
+    let l = t.size,
+      i = l > 1e6 ? "".concat((l / 1e6).toFixed(2), "MB") : "".concat((l / 1e3).toFixed(2), "KB"),
+      r = "".concat(t.name, " - ").concat(i);
+    if (l > e.max) {
+      let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
+      n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(r, " (max: ").concat(t, ")")])
+    } else l > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(r)])
+  }, g = (e, t, n, a) => {
+    let l = h[e];
+    if (null != l)
+      for (let e of t) e.name.endsWith(".txt") || b(l, e, n, a)
+  }, v = () => {
+    let [e, t] = a.useState(false), [n, c] = a.useState({}), [d, u] = a.useState({}), m = a.useCallback(function(e) {
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
+      u(n => {
+        var a;
+        let l = null != (a = n[e]) ? a : [];
+        return r(i({}, n), {
+          [e]: [...l, ...t]
+        })
+      })
+    }, []), p = a.useCallback(function(e) {
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
+      c(n => {
+        var a;
+        let l = null != (a = n[e]) ? a : [];
+        return r(i({}, n), {
+          [e]: [...l, ...t]
+        })
+      })
+    }, []), v = a.useCallback(() => {
+      t(false), u({}), c({})
+    }, []);
+    return {
+      validationComplete: e,
+      errors: d,
+      warnings: n,
+      validateShopAssetPackage: a.useCallback(async e => {
+        try {
+          var n;
+          if (0 === e.length) return void m("No files found");
+          if (e.length > 1) return void m("Uploaded multiple files. Expected 1 directory.");
+          let t = e[0];
+          if (!t.isDirectory) return void m("Uploaded a file. Expected a directory.");
+          let a = await f(t);
+          if (a.length > 0) return void m("Missing required directories", a);
+          n = await (0, l.eg)([t]), (e => {
+            let {
+              files: t,
+              addError: n,
+              addWarning: a
+            } = e;
+            for (let e of t.collectionFiles) {
+              let t = (0, l.pd)(e),
+                i = null != t ? h[t] : null;
+              null != i && b(i, e, n, a)
+            }
+            x({
+              names: t.collectionFiles.map(e => e.name),
+              addError: n
+            });
+            let i = new Set(t.collectionFiles.map(e => e.name)),
+              r = Array.from(s).filter(e => !i.has(e));
+            r.length > 0 && n("Missing required files", r);
+            let o = Object.values(l.RN).filter(e => !s.has(e)).filter(e => !i.has(e));
+            o.length > 0 && a("Missing optional assets", o)
+          })({
+            files: n,
+            addError: m,
+            addWarning: p
+          }), (e => {
+            let {
+              files: t,
+              addError: n,
+              addWarning: a
+            } = e;
+            x({
+              names: Object.keys(t.profileEffectFilesMap),
+              addError: n
+            }), Object.entries(t.profileEffectFilesMap).forEach(e => {
+              let [t, i] = e, r = i.map(e => e.name);
+              x({
+                names: r.map(e => {
+                  let t = e.indexOf("-");
+                  return e.substring(0, t > 0 ? t : e.length)
+                }),
+                addError: n
+              }), g(l.Jn.PROFILE_EFFECT, i, n, a);
+              let s = o.filter(e => !r.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
+              s.length > 0 && n("Missing required PFX files with prefix", s), r.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
+              let c = r.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
+              c.length > 0 && a("Contains unrecognized files", c)
+            })
+          })({
+            files: n,
+            addError: m,
+            addWarning: p
+          }), (e => {
+            let {
+              files: t,
+              addError: n,
+              addWarning: a
+            } = e;
+            x({
+              names: t.avatarDecorationFiles.map(e => e.name),
+              addError: n
+            }), g(l.Jn.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
+          })({
+            files: n,
+            addError: m,
+            addWarning: p
+          }), (e => {
+            let {
+              files: t,
+              addWarning: n
+            } = e;
+            t.ignoredFilenames.length > 0 && n("Contains unrecognized files", t.ignoredFilenames)
+          })({
+            files: n,
+            addError: m,
+            addWarning: p
+          })
+        } finally {
+          t(true)
+        }
+      }, [m, p]),
+      reset: v
+    }
+  }

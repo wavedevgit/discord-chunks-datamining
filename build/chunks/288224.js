@@ -1,7 +1,18 @@
-/** Chunk was on web.js **/
-/** chunk id: 288224, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 76443 **/
+/** chunk id: 288224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  X: () => r
 });
-let r = "https://cdn.discordapp.com/assets/content/67802e4ea1da5f87f7610d4143626979e6337d37d4e16c1eff2d45276dd70a89.mp4"
+var Chunk73153 = require("./73153.js");
+
+function r(e) {
+  let {
+    emojiId: t,
+    userImage: n
+  } = e;
+  l.h.dispatch({
+    type: "EMOJI_CACHE_RAW_EMOJI_ASSET",
+    emojiId: t,
+    userImage: n
+  })
+}

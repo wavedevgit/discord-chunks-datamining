@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 651941, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 787392, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
-}), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk974167 = require("./974167.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk709054 = require("./709054.js");
+  A: () => h
+}), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js"), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk149597 = require("./149597.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk661191 = require("./661191.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,7 +30,7 @@ function d(e) {
     userId: t,
     key: n
   } = e, r = u(t), i = new Uint8Array(n);
-  r[(0, a.MK)(i)] = Date.now()
+  r[(0, a.uo)(i)] = Date.now()
 }
 
 function f(e) {
@@ -50,7 +50,7 @@ function p(e) {
   } = e;
   return null != c[t] && delete c[t]
 }
-class _ extends(r = Chunk442837.ZP.PersistedStore) {
+class _ extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
     c = null != (t = null == e ? true : e.users) ? t : {}
@@ -62,21 +62,21 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getKeyTrustedAt(e, t) {
     var n;
-    let r = (0, a.MK)(t);
+    let r = (0, a.uo)(t);
     return null == (n = c[e]) ? true : n[r]
   }
   isKeyVerified(e, t) {
     return null != this.getKeyTrustedAt(e, t)
   }
   getUserIds() {
-    return s.default.keys(c)
+    return o.default.keys(c)
   }
   getUserVerifiedKeys(e) {
     return c[e]
   }
 }
 l(_, "displayName", "VerifiedKeyStore"), l(_, "persistKey", "VerifiedKeyStore");
-let h = new _(Chunk570140.Z, {
+let h = new _(Chunk73153.h, {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: d,
   SECURE_FRAMES_VERIFIED_KEY_DELETE: f,
   SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: p

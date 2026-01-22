@@ -1,10 +1,10 @@
-/** Chunk was on 9536 **/
-/** chunk id: 649179, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 47841 **/
+/** chunk id: 349327, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => r
+  A: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2025-06_new_emoji_who_dis",
   label: "New Emoji Who Dis",

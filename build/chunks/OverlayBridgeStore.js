@@ -1,51 +1,50 @@
 /** Chunk was on web.js **/
-/** chunk id: 808506, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 242286, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.r(exports), require.d(exports, {
   OverlayPIDStatus: () => W,
-  default: () => e1,
-  getOverlayURL: () => eI
-}), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./358797.js"), require("./415506.js"), require("./49124.js");
-var i, Chunk807864 = require("./807864.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk379649 = require("./379649.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk26151 = require("./26151.js"),
-  Chunk224706 = require("./224706.js"),
-  Chunk765250 = require("./765250.js"),
-  Chunk13245 = require("./13245.js"),
-  Chunk287734 = require("./287734.js"),
-  Chunk579806 = require("./579806.js"),
-  Chunk887278 = require("./887278.js"),
-  Chunk490029 = require("./490029.js"),
-  Chunk710845 = require("./710845.js"),
-  Chunk353926 = require("./353926.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk40766 = require("./40766.js"),
-  Chunk338388 = require("./338388.js"),
-  Chunk454991 = require("./454991.js"),
-  Chunk837268 = require("./837268.js"),
-  Chunk633565 = require("./633565.js"),
-  Chunk371651 = require("./371651.js"),
-  Chunk829907 = require("./829907.js"),
-  Chunk610394 = require("./610394.js"),
-  Chunk322155 = require("./322155.js"),
-  Chunk509140 = require("./509140.js"),
-  Chunk48481 = require("./48481.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk404577 = require("./404577.js"),
-  Chunk355863 = require("./355863.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk866119 = require("./866119.js"),
-  Chunk671999 = require("./671999.js"),
-  Chunk998502 = require("./998502.js"),
-  Chunk145597 = require("./145597.js"),
-  Chunk372679 = require("./372679.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk757744 = require("./757744.js");
+  default: () => e0,
+  getOverlayURL: () => ev
+}), require("./896048.js"), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js"), require("./801460.js"), require("./508300.js"), require("./650828.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./142703.js"), require("./65821.js"), require("./457529.js");
+var i, Chunk927429 = require("./927429.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk499979 = require("./499979.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk387755 = require("./387755.js"),
+  Chunk544420 = require("./544420.js"),
+  Chunk391973 = require("./391973.js"),
+  Chunk684013 = require("./684013.js"),
+  Chunk956793 = require("./956793.js"),
+  Chunk77729 = require("./77729.js"),
+  Chunk719129 = require("./719129.js"),
+  Chunk996308 = require("./996308.js"),
+  Chunk626584 = require("./626584.js"),
+  Chunk49463 = require("./49463.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk159551 = require("./159551.js"),
+  Chunk777334 = require("./777334.js"),
+  Chunk211753 = require("./211753.js"),
+  Chunk41984 = require("./41984.js"),
+  Chunk53733 = require("./53733.js"),
+  Chunk833551 = require("./833551.js"),
+  Chunk515183 = require("./515183.js"),
+  Chunk395011 = require("./395011.js"),
+  Chunk222506 = require("./222506.js"),
+  Chunk680243 = require("./680243.js"),
+  Chunk761821 = require("./761821.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk760751 = require("./760751.js"),
+  Chunk555528 = require("./555528.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk799112 = require("./799112.js"),
+  Chunk456797 = require("./456797.js"),
+  Chunk837921 = require("./837921.js"),
+  Chunk9302 = require("./9302.js"),
+  Chunk899699 = require("./899699.js"),
+  Chunk652215 = require("./652215.js");
 
-function B(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,14 +53,14 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      B(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -83,20 +82,21 @@ function Y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
+require("./644434.js");
 var W = function(e) {
   return e.ATTACHING = "ATTACHING", e.CONNECTING = "CONNECTING", e.CONNECTED = "CONNECTED", e.READY = "READY", e.CRASHED = "CRASHED", e.CONNECT_FAILED = "CONNECT_FAILED", e.HOOK_FAILED = "HOOK_FAILED", e.DISCONNECTING = "DISCONNECTING", e
 }({});
 let K = {},
   z = false,
   q = new Map,
-  Q = () => Array.from(q.values()).some(e => "READY" === e),
-  X = false,
-  J = false,
+  X = () => Array.from(q.values()).some(e => "READY" === e),
+  Z = false,
+  Q = false,
   $ = null,
-  ee = new Set,
-  et = "",
-  en = new Set;
-class er {
+  J = new Set,
+  ee = "",
+  et = new Set;
+class en {
   reset() {
     this.actionsToFlush.clear(), this.waitingActionsToFlush.clear(), this.isDispatching = false, this.timeout = null, null != this.timeout && clearTimeout(this.timeout), this.requestIdleCallback = null, null != this.requestIdleCallback && cancelIdleCallback(this.requestIdleCallback)
   }
@@ -105,20 +105,19 @@ class er {
     for (let t of (this.waitingActionsToFlush.clear(), e)) this.queueDispatch(t)
   }
   constructor() {
-    B(this, "isDispatching", false), B(this, "timeout", true), B(this, "requestIdleCallback", true), B(this, "actionsToFlush", new Set), B(this, "waitingActionsToFlush", new Set), B(this, "flush", () => {
-      if (null != this.timeout && (clearTimeout(this.timeout), this.timeout = null), null != this.requestIdleCallback && (cancelIdleCallback(this.requestIdleCallback), this.requestIdleCallback = null), !Q()) return void this.actionsToFlush.clear();
-      this.actionsToFlush.size > 0 && (m.lW({
-        type: Z.BmY.DISPATCH,
+    F(this, "isDispatching", false), F(this, "timeout", true), F(this, "requestIdleCallback", true), F(this, "actionsToFlush", new Set), F(this, "waitingActionsToFlush", new Set), F(this, "flush", () => {
+      (null != this.timeout && (clearTimeout(this.timeout), this.timeout = null), null != this.requestIdleCallback && (cancelIdleCallback(this.requestIdleCallback), this.requestIdleCallback = null), X()) ? (this.actionsToFlush.size > 0 && (m.tN({
+        type: V.kGV.DISPATCH,
         pid: null,
         token: null,
         payloads: Array.from(this.actionsToFlush)
-      }), this.actionsToFlush.clear()), this.waitingActionsToFlush.size > 0 && this.enqueueWaitingActions()
-    }), B(this, "dispatchPayloads", e => {
-      this.isDispatching = true, e.forEach(e => l.Z.dispatch(e)), this.isDispatching = false
-    }), B(this, "queueDispatch", e => !(!Q() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
+      }), this.actionsToFlush.clear()), this.waitingActionsToFlush.size > 0 && this.enqueueWaitingActions()) : this.actionsToFlush.clear()
+    }), F(this, "dispatchPayloads", e => {
+      this.isDispatching = true, e.forEach(e => l.h.dispatch(e)), this.isDispatching = false
+    }), F(this, "queueDispatch", e => !(!X() || ei.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(B({}, e), {
       settings: {
         type: e.settings.type,
-        proto: (0, w.cv)(e.settings.type, e.settings.proto)
+        proto: (0, w.aw)(e.settings.type, e.settings.proto)
       }
     })), this.actionsToFlush.add(e), null == this.timeout && null == this.requestIdleCallback && (this.timeout = setTimeout(() => {
       this.requestIdleCallback = requestIdleCallback(this.flush, {
@@ -127,31 +126,31 @@ class er {
     }, 100))), false))
   }
 }
-let ei = new er,
-  ea = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "PASSWORDLESS_START", "PASSWORDLESS_FAILURE", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "SHOW_KEYBOARD_SHORTCUTS", "DM_SETTINGS_UPSELL_SHOW", "USER_PROFILE_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "HIDE_KEYBOARD_SHORTCUTS", "USER_PROFILE_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_HISTORY_WEB_CLEAR_ITEMS", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED", "MEDIA_ENGINE_CONNECTION_STATS", "RTC_CONNECTION_UPDATE_ID", "ACTIVE_AV_ERRORS_CHANGED", "BURST_REACTION_ANIMATION_ADD", "ADYEN_CREATE_CASH_APP_PAY_COMPONENT_SUCCESS"]),
-  eo = new Set,
+let er = new en,
+  ei = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "PASSWORDLESS_START", "PASSWORDLESS_FAILURE", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "SHOW_KEYBOARD_SHORTCUTS", "DM_SETTINGS_UPSELL_SHOW", "USER_PROFILE_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "HIDE_KEYBOARD_SHORTCUTS", "USER_PROFILE_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_HISTORY_WEB_CLEAR_ITEMS", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED", "MEDIA_ENGINE_CONNECTION_STATS", "RTC_CONNECTION_UPDATE_ID", "ACTIVE_AV_ERRORS_CHANGED", "BURST_REACTION_ANIMATION_ADD", "ADYEN_CREATE_CASH_APP_PAY_COMPONENT_SUCCESS"]),
+  ea = new Set,
   es = false,
-  el = new Chunk710845.Z("OverlayBridgeStore"),
-  ec = {};
+  eo = new Chunk626584.A("OverlayBridgeStore"),
+  el = {};
 
-function eu(e) {
+function ec(e) {
   var t;
-  return null != (t = ec[e]) ? t : {}
+  return null != (t = el[e]) ? t : {}
 }
 
-function ed(e, t) {
+function eu(e, t) {
   var n, r;
-  let i = null == (n = ec[e]) ? true : n.error,
-    a = null == (r = ec[e]) ? true : r.error_description;
-  ec[e] = V({}, ec[e], t), null != i && (ec[e].error = i), null != a && (ec[e].error_description = a)
+  let i = null == (n = el[e]) ? true : n.error,
+    a = null == (r = el[e]) ? true : r.error_description;
+  el[e] = B({}, el[e], t), null != i && (el[e].error = i), null != a && (el[e].error_description = a)
 }
 
-function ef(e) {
+function ed(e) {
   var t, n;
-  if (null != ec[e]) return;
-  let r = b.ZP.getGameOrTransformedSubgameForPID(e);
-  ec[e] = {
-    overlay_method: S.gl[S.gl.Hook],
+  if (null != el[e]) return;
+  let r = b.Ay.getGameOrTransformedSubgameForPID(e);
+  el[e] = {
+    overlay_method: v.Ue[v.Ue.Hook],
     success: false,
     game_name: null != (t = null == r ? true : r.name) ? t : null,
     game_id: null != (n = null == r ? true : r.id) ? n : null,
@@ -167,223 +166,222 @@ function ef(e) {
     host_crash_count: 0
   }
 }
-let ep = "none",
-  e_ = (0, Chunk807864.H)({
-    onContention: (e, t) => el.verbose("overlayLock contention: lastMutexCall ".concat(ep)),
-    onContentionResolved: () => el.verbose("overlayLock contention: resolved."),
+let ef = "none",
+  ep = (0, Chunk927429.n)({
+    onContention: (e, t) => eo.verbose("overlayLock contention: lastMutexCall ".concat(ef)),
+    onContentionResolved: () => eo.verbose("overlayLock contention: resolved."),
     onTimeout: (e, t) => {
-      let n = "overlayLock: lastMutexCall ".concat(ep, "}");
-      el.error(n);
-      let r = eu((0, U.getPID)());
-      ed((0, U.getPID)(), Y(V({}, r), {
+      let n = "overlayLock: lastMutexCall ".concat(ef, "}");
+      eo.error(n);
+      let r = ec((0, U.getPID)());
+      eu((0, U.getPID)(), Y(B({}, r), {
         error_description: n,
         success: false
-      })), L.default.track(Z.rMx.OVERLAY_HOOK_RESULT, eu((0, U.getPID)()))
+      })), L.default.track(V.HAw.OVERLAY_HOOK_RESULT, ec((0, U.getPID)()))
     },
     timeoutMs: 18e4
   });
 
-function eh(e, t) {
+function e_(e, t) {
   return function() {
     for (var n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-    e_(() => t(...r), e)
+    ep(() => t(...r), e)
   }
 }
 
-function em() {
+function eh() {
   try {
     var e;
-    let t = null === _.Z || true === _.Z || null == (e = _.Z.fileManager) ? true : e.uploadDiscordHookCrashes;
+    let t = null === _.A || true === _.A || null == (e = _.A.fileManager) ? true : e.uploadDiscordHookCrashes;
     if (null == t) return;
     t().then(e => {
       if (Array.isArray(e) && 0 !== e.length)
-        for (let l of (el.log("transitionOverlayPIDStatus: Uploaded minidumps", e), e)) {
-          var t, n, r, i, a, o, s;
+        for (let l of (eo.log("transitionOverlayPIDStatus: Uploaded minidumps", e), e)) {
+          var t, n, r, i, a, s, o;
           if (null == l) continue;
-          let e = null != l.processName ? D.Z.getGameByExecutable(l.processName) : null;
-          L.default.track(Z.rMx.OVERLAY_HOOK_CRASHED, {
+          let e = null != l.processName ? D.A.getGameByExecutable(l.processName) : null;
+          L.default.track(V.HAw.OVERLAY_HOOK_CRASHED, {
             process_name: null == l ? true : l.processName,
             game_name: null != (t = null == e ? true : e.name) ? t : null,
             game_id: null != (n = null == e ? true : e.id) ? n : null,
             minidump_exception_type: null != (r = l.exceptionString) ? r : null,
             minidump_exception_module_name: null != (i = l.exceptionModuleName) ? i : null,
             minidump_relative_crash_address: null != (a = l.relativeCrashAddress) ? a : null,
-            minidump_exception_module_version: null != (o = l.exceptionModuleVersion) ? o : null,
-            minidump_exception_module_code_id: null != (s = l.exceptionModuleCodeId) ? s : null
+            minidump_exception_module_version: null != (s = l.exceptionModuleVersion) ? s : null,
+            minidump_exception_module_code_id: null != (o = l.exceptionModuleCodeId) ? o : null
           })
         }
     })
   } catch (e) {
-    el.error("tryUploadDiscordHookCrashes", e), (0, O.D1)(e)
+    eo.error("tryUploadDiscordHookCrashes", e), (0, O.pj)(e)
   }
 }
 
-function eg(e, t) {
+function em(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
     r = q.get(e);
-  (null === n || r === n) && r !== t && (null == t ? q.delete(e) : q.set(e, t), (null == t || "CRASHED" === t) && (f.Z.setFocusedPID(null, null), em()), en.delete(e), el.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), q))
+  (null === n || r === n) && r !== t && (null == t ? q.delete(e) : q.set(e, t), (null == t || "CRASHED" === t) && (f.A.setFocusedPID(null, null), eh()), et.delete(e), eo.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), q))
 }
-async function eE(e) {
+async function eg(e) {
   try {
-    if (k.ZP.supportsFeature(Z.eRX.CREATE_HOST_ON_ATTACH))
+    if (k.Ay.supportsFeature(V.BYE.CREATE_HOST_ON_ATTACH))
       if (q.size > 0) {
-        ep = "reconcile.getOverlayURL";
-        let t = await eI();
-        ep = "reconcile.createHostProcess", e.createHostProcess(t, eA, eC)
-      } else ep = "reconcile.destroyHostProcess", e.destroyHostProcess(), eS((0, U.getPID)());
-    else if (X) {
-      let t = await eI();
-      e.createHostProcess(t, eA, eC)
-    } else e.destroyHostProcess(), eS((0, U.getPID)())
+        ef = "reconcile.getOverlayURL";
+        let t = await ev();
+        ef = "reconcile.createHostProcess", e.createHostProcess(t, eT, eI)
+      } else ef = "reconcile.destroyHostProcess", e.destroyHostProcess(), eA((0, U.getPID)());
+    else if (Z) {
+      let t = await ev();
+      e.createHostProcess(t, eT, eI)
+    } else e.destroyHostProcess(), eA((0, U.getPID)())
   } catch (t) {
-    el.error("reconcileHostProcess", t), (0, O.D1)(t), eS((0, U.getPID)());
+    eo.error("reconcileHostProcess", t), (0, O.pj)(t), eA((0, U.getPID)());
     try {
       e.destroyHostProcess()
     } catch (e) {
-      el.error("reconcileHostProcess: destroyHostProcess", e), (0, O.D1)(e)
+      eo.error("reconcileHostProcess: destroyHostProcess", e), (0, O.pj)(e)
     }
   }
 }
-async function eb(e) {
+async function eE(e) {
   var t;
-  e_.isMutexHeld() || el.error("_attachPIDMustBeLocked: overlayMutex is not held.", e);
-  let n = null != (t = eu(e).mounting_started_at) ? t : new Date().getTime();
-  ed(e, {
+  ep.isMutexHeld() || eo.error("_attachPIDMustBeLocked: overlayMutex is not held.", e);
+  let n = null != (t = ec(e).mounting_started_at) ? t : new Date().getTime();
+  eu(e, {
     mounting_started_at: n
   });
   let r = q.get(e);
-  if (null != r) return void el.warn("Trying to attach to pid=".concat(e, ", that is already in status: ").concat(r));
-  await f.Z.updateOverlayState(e, S.mM.WAITING_FOR_OVERLAY_OPEN, "attachPID"), ep = "attach.getOverlayModule";
-  let i = await (0, G.K)();
-  if (null == i) return void el.error("Trying to attach to pid=".concat(e, ", but overlay module failed loaded"));
-  ep = "attach.transitionOverlayPIDStatus", eg(e, "ATTACHING"), ep = "attach.attachToProcess";
-  let a = await h.YT(e);
-  null == a ? (ep = "attach.transitionOverlayPIDStatus (CONNECTING)", eg(e, "CONNECTING", "ATTACHING"), ep = "attach.reconcileHostProcess", await eE(i), i.connectProcess(e)) : (ep = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", eg(e, "HOOK_FAILED", "ATTACHING"), el.warn("Could not hook to pid=".concat(e, ", error=").concat(a)))
+  if (null != r) return void eo.warn("Trying to attach to pid=".concat(e, ", that is already in status: ").concat(r));
+  await f.A.updateOverlayState(e, v.AR.WAITING_FOR_OVERLAY_OPEN, "attachPID"), ef = "attach.getOverlayModule";
+  let i = await (0, G.R)();
+  if (null == i) return void eo.error("Trying to attach to pid=".concat(e, ", but overlay module failed loaded"));
+  ef = "attach.transitionOverlayPIDStatus", em(e, "ATTACHING"), ef = "attach.attachToProcess";
+  let a = await h.GH(e);
+  null == a ? (ef = "attach.transitionOverlayPIDStatus (CONNECTING)", em(e, "CONNECTING", "ATTACHING"), ef = "attach.reconcileHostProcess", await eg(i), i.connectProcess(e)) : (ef = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", em(e, "HOOK_FAILED", "ATTACHING"), eo.warn("Could not hook to pid=".concat(e, ", error=").concat(a)))
 }
-async function ey(e) {
-  if (e_.isMutexHeld() || el.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !q.has(e)) return void el.warn("Trying to detach from pid ".concat(e, ", which is in an unknown state"));
-  eg(e, "DISCONNECTING");
+async function eb(e) {
+  if (ep.isMutexHeld() || eo.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !q.has(e)) return void eo.warn("Trying to detach from pid ".concat(e, ", which is in an unknown state"));
+  em(e, "DISCONNECTING");
   try {
-    ep = "detach.getOverlayModule";
-    let t = await (0, G.K)();
-    if (null == t) return void el.error("Trying to detach from pid=".concat(e, ", but overlay module failed loaded"));
-    e !== U.DEV_PID && (ep = "detach.cancelAttachToProcess", await h.pn(e), await (0, s._v)(16), ep = "detach.disconnectProcess", await t.disconnectProcess(e)), ep = "detach.transitionOverlayPIDStatus", eg(e, null), ep = "detach.reconcileHostProcess", await eE(t)
+    ef = "detach.getOverlayModule";
+    let t = await (0, G.R)();
+    if (null == t) return void eo.error("Trying to detach from pid=".concat(e, ", but overlay module failed loaded"));
+    e !== U.DEV_PID && (ef = "detach.cancelAttachToProcess", await h.c1(e), await (0, o.yy)(16), ef = "detach.disconnectProcess", await t.disconnectProcess(e)), ef = "detach.transitionOverlayPIDStatus", em(e, null), ef = "detach.reconcileHostProcess", await eg(t)
   } catch (t) {
-    (0, O.D1)(t, S.gl.Hook), el.error("Error during overlay detachment for pid ".concat(e, ":"), t), eg(e, null)
+    (0, O.pj)(t, v.Ue.Hook), eo.error("Error during overlay detachment for pid ".concat(e, ":"), t), em(e, null)
   }
 }
-async function eO(e) {
+async function ey(e) {
   var t, n;
-  if (el.verbose("updateIntendedOverlayPIDs", {
-      isConnectionOpened: J,
+  if (eo.verbose("updateIntendedOverlayPIDs", {
+      isConnectionOpened: Q,
       action: e
-    }), e_.isMutexHeld() || el.error("updateIntendedOverlayPIDs: overlayMutex is not held.", e), !J && null != e) return void el.verbose("updateIntendedOverlayPIDs: Connection is not opened while updating applications.", e);
+    }), ep.isMutexHeld() || eo.error("updateIntendedOverlayPIDs: overlayMutex is not held.", e), !Q && null != e) return void eo.verbose("updateIntendedOverlayPIDs: Connection is not opened while updating applications.", e);
   async function r(e) {
     if (!(e in K)) return;
     let t = K[e];
     delete K[e];
     try {
-      await t.deconstructor(), ee.delete(e)
+      await t.deconstructor(), J.delete(e)
     } catch (n) {
-      (0, O.D1)(n, S.gl.Hook), el.error("Failed to deconstruct tracked game ".concat(e), n), K[e] = t, ee.add(e)
+      (0, O.pj)(n, v.Ue.Hook), eo.error("Failed to deconstruct tracked game ".concat(e), n), K[e] = t, J.add(e)
     }
   }
   let i = false;
-  if (null == e || !X) {
-    for (let t of (el.verbose("updateIntendedOverlayPIDs: Removing all.", K, e), Object.keys(K))) await r(Number(t)), i = true;
+  if (null == e || !Z) {
+    for (let t of (eo.verbose("updateIntendedOverlayPIDs: Removing all.", K, e), Object.keys(K))) await r(Number(t)), i = true;
     return
   }
-  for (let n of ee) {
-    if (null == (t = e.added) ? true : t.includes(n)) {
-      el.warn("updateIntendedOverlayPIDs: Failed PID was re-added?");
+  for (let t of J) {
+    if (null == (n = e.added) ? true : n.includes(t)) {
+      eo.warn("updateIntendedOverlayPIDs: Failed PID was re-added?");
       continue
     }
-    el.verbose("updateIntendedOverlayPIDs: retrying failed overlay pid ".concat(n)), await r(n), i = true
+    eo.verbose("updateIntendedOverlayPIDs: retrying failed overlay pid ".concat(t)), await r(t), i = true
   }
-  for (let t of null != (n = e.added) ? n : []) {
-    let n = T.default.getTrackedGameByPid(t);
-    if (null == n) {
-      el.error("updateIntendedOverlayPIDs: Tracked game not found for pid=".concat(t));
+  for (let n of null != (t = e.added) ? t : []) {
+    let t = I.default.getTrackedGameByPid(n);
+    if (null == t) {
+      eo.error("updateIntendedOverlayPIDs: Tracked game not found for pid=".concat(n));
       continue
     }
-    if (el.verbose("updateIntendedOverlayPIDs: newGame", n), n.legacyEnabled) switch (n.pid in K ? el.error("Unexpected. ".concat(n.pid, " is being added twice?"), K, e) : ef(n.pid), n.overlayMethod) {
-      case S.gl.Hook:
+    if (eo.verbose("updateIntendedOverlayPIDs: newGame", t), t.legacyEnabled) switch (t.pid in K ? eo.error("Unexpected. ".concat(t.pid, " is being added twice?"), K, e) : ed(t.pid), t.overlayMethod) {
+      case v.Ue.Hook:
         let r = new Date().getTime();
-        ed(n.pid, {
+        eu(t.pid, {
           mounting_started_at: r,
-          fullscreen_type: await (0, C.hj)(n.pid, 0)
-        }), q.has(n.pid) || await eb(n.pid), K[n.pid] = {
-          method: n.overlayMethod,
+          fullscreen_type: await (0, T.E1)(t.pid, 0)
+        }), q.has(t.pid) || await eE(t.pid), K[t.pid] = {
+          method: t.overlayMethod,
           deconstructor: async () => {
-            await ey(n.pid)
+            await eb(t.pid)
           }
         }, i = true;
         break;
-      case S.gl.OutOfProcess:
-      case S.gl.OutOfProcessLimitedInteraction:
-        el.error("updateIntendedOverlayPIDs: out of process called for hook overlay", n);
+      case v.Ue.OutOfProcess:
+      case v.Ue.OutOfProcessLimitedInteraction:
+        eo.error("updateIntendedOverlayPIDs: out of process called for hook overlay", t);
         break;
-      case S.gl.Disabled:
-        el.verbose("updateIntendedOverlayPIDs: disabled", n);
+      case v.Ue.Disabled:
+        eo.verbose("updateIntendedOverlayPIDs: disabled", t);
         break;
       default:
-        el.error("updateIntendedOverlayPIDs: Unknown overlay method: ".concat(n.overlayMethod), n)
+        eo.error("updateIntendedOverlayPIDs: Unknown overlay method: ".concat(t.overlayMethod), t)
     }
   }
-  for (let t of e.removed) el.verbose("updateIntendedOverlayPIDs: removedGame", t), await r(t), i = true;
-  i && e0.emitChange()
+  for (let t of e.removed) eo.verbose("updateIntendedOverlayPIDs: removedGame", t), await r(t), i = true;
+  i && eJ.emitChange()
 }
-let ev = eh("updateIntendedOverlayPIDs", e => (el.info("updateIntendedOverlayPIDs", e), eO(e))),
-  eS = eh("clearPID", e => {
+let eO = e_("updateIntendedOverlayPIDs", e => (eo.info("updateIntendedOverlayPIDs", e), ey(e))),
+  eA = e_("clearPID", e => {
     if (null == e) return (0, U.setPID)(U.UNSET_PID);
-    A.Z.isOverlayV3EnabledForPID(e) || (0, U.setPID)(U.UNSET_PID)
+    C.A.isOverlayV3EnabledForPID(e) || (0, U.setPID)(U.UNSET_PID)
   });
 
-function eI() {
+function ev() {
   return new Promise(e => {
-    e0.addConditionalChangeListener(() => {
+    eJ.addConditionalChangeListener(() => {
       if (null != r) return e(r), false
     })
   })
 }
-let eT = eh("setOverlayEnabled", async e => {
+let eS = e_("setOverlayEnabled", async e => {
   if (!(0, U.supportsLegacy)()) return;
-  if (X === e) return void el.verbose("setOverlayEnabled: no change", {
+  if (Z === e) return void eo.verbose("setOverlayEnabled: no change", {
     newOverlayEnabled: e
   });
-  X = e, e0.emitChange();
-  let t = await (0, G.K)();
-  if (null == t) return void el.error("setOverlayEnabled: overlay module failed loaded");
-  X || await eO(true), q.size > 0 && await eE(t)
+  Z = e, eJ.emitChange();
+  let t = await (0, G.R)();
+  null == t ? eo.error("setOverlayEnabled: overlay module failed loaded") : (Z || await ey(true), q.size > 0 && await eg(t))
 });
 
-function eC(e) {
-  f.Z.setFocusedPID(0 === e ? null : e, null)
+function eI(e) {
+  f.A.setFocusedPID(0 === e ? null : e, null)
 }
 
-function eA(e, t, n) {
+function eT(e, t, n) {
   var r;
-  let i = null == (r = b.ZP.getGameForPID(e)) ? true : r.name,
-    a = D.Z.getGameByName(i),
-    o = V({
+  let i = null == (r = b.Ay.getGameForPID(e)) ? true : r.name,
+    a = D.A.getGameByName(i),
+    s = B({
       game_name: i,
       game_id: null == a ? null : a.id,
       success: t,
-      overlay_method: S.gl[S.gl.Hook]
+      overlay_method: v.Ue[v.Ue.Hook]
     }, n);
-  ed(e, V({}, o)), (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv, {
+  eu(e, B({}, s)), (0, d.Vz)(U.OVERLAY_LAYOUT_ID, x.A.getDefaultLayout(U.OVERLAY_LAYOUT_ID), 0, {
     width: n.graphics_width,
     height: n.graphics_height
   });
-  let s = eu(e);
-  L.default.track(Z.rMx.OVERLAY_HOOK_RESULT, s), el.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), s), t ? (f.Z.updateOverlayState(e, S.mM.OVERLAY_RENDERING, "onConnectComplete"), eg(e, "CONNECTED", "CONNECTING")) : (f.Z.updateOverlayState(e, S.mM.OVERLAY_CRASHED, "onConnectComplete"), eg(e, "CONNECT_FAILED", "CONNECTING"))
+  let o = ec(e);
+  L.default.track(V.HAw.OVERLAY_HOOK_RESULT, o), eo.info("Overlay connection to ".concat(e, " ").concat(t ? "succeeded" : "failed"), o), t ? (f.A.updateOverlayState(e, v.AR.OVERLAY_RENDERING, "onConnectComplete"), em(e, "CONNECTED", "CONNECTING")) : (f.A.updateOverlayState(e, v.AR.OVERLAY_CRASHED, "onConnectComplete"), em(e, "CONNECT_FAILED", "CONNECTING"))
 }
 
-function eN() {
-  let e = R.default.getToken(),
-    t = R.default.getId();
-  null != e && m.lW({
-    type: Z.BmY.DISPATCH,
+function eC() {
+  let e = P.default.getToken(),
+    t = P.default.getId();
+  null != e && m.tN({
+    type: V.kGV.DISPATCH,
     pid: null,
     token: null,
     payloads: [{
@@ -394,115 +392,115 @@ function eN() {
   })
 }
 
-function eP(e) {
-  return null != e && (0, j.y)(e, et)
+function eN(e) {
+  return null != e && (0, j.j)(e, ee)
 }
 
-function ew(e) {
-  switch (es && el.info("[app data received]", e), e.type) {
-    case Z.BmY.CONNECT:
-      let t = R.default.getToken();
+function eR(e) {
+  switch (es && eo.info("[app data received]", e), e.type) {
+    case V.kGV.CONNECT:
+      let t = P.default.getToken();
       if (null == t) break;
-      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv), Promise.all([(0, I.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
+      (0, d.Vz)(U.OVERLAY_LAYOUT_ID, x.A.getDefaultLayout(U.OVERLAY_LAYOUT_ID), 0), Promise.all([(0, S.A)(t, e.pid), s.Ay.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
           pid: i,
           token: a
         } = e;
-        m.lW({
-          type: Z.BmY.STORAGE_SYNC,
+        m.tN({
+          type: V.kGV.STORAGE_SYNC,
           pid: i,
           token: a,
           states: r
-        }), m.lW({
-          type: Z.BmY.DISPATCH,
+        }), m.tN({
+          type: V.kGV.DISPATCH,
           pid: i,
           token: a,
           payloads: [n]
-        }), eg(i, "READY"), (0, U.setPID)(i), f.Z.overlayReady(i);
-        let o = eu(i);
-        ed(i, Y(V({}, o), {
-          total_mount_time_ms: null != o.mounting_started_at ? new Date().getTime() - o.mounting_started_at : true
+        }), em(i, "READY"), (0, U.setPID)(i), f.A.overlayReady(i);
+        let s = ec(i);
+        eu(i, Y(B({}, s), {
+          total_mount_time_ms: null != s.mounting_started_at ? new Date().getTime() - s.mounting_started_at : true
         }))
       });
       break;
-    case Z.BmY.DISPATCH:
-      null != e.payloads && ei.dispatchPayloads(e.payloads);
+    case V.kGV.DISPATCH:
+      null != e.payloads && er.dispatchPayloads(e.payloads);
       break;
-    case Z.BmY.LOG_MESSAGES:
-      (0, y.K)(e.payload)
+    case V.kGV.LOG_MESSAGES:
+      (0, y.F)(e.payload)
   }
 }
-async function eR(e, t) {
-  let n = await (0, G.K)();
-  if (null == n) return void el.error("setInputLocked: overlay module failed loaded");
+async function ew(e, t) {
+  let n = await (0, G.R)();
+  if (null == n) return void eo.error("setInputLocked: overlay module failed loaded");
   let r = null != t ? t : $;
-  if (null != r && "DISCONNECTING" === q.get(r)) return void el.warn("Overlay module is no longer valid during input lock");
+  if (null != r && "DISCONNECTING" === q.get(r)) return void eo.warn("Overlay module is no longer valid during input lock");
   try {
     null != r && r !== U.DEV_PID && n.sendCommand(r, {
       message: "intercept_input",
       intercept: !e
     })
   } catch (e) {
-    (0, O.D1)(e, S.gl.Hook), el.error("Error during input lock", e)
+    (0, O.pj)(e, v.Ue.Hook), eo.error("Error during input lock", e)
   }
 }
 
-function eD(e, t) {
-  e ? setTimeout(() => eR(e, t), 200) : eR(e, t)
+function eP(e, t) {
+  e ? setTimeout(() => ew(e, t), 200) : ew(e, t)
 }
-let ex = null;
+let eD = null;
 
-function eL(e) {
+function ex(e) {
   let {
     locked: t,
     pid: n
   } = e, r = q.get(n);
-  if ((ee.has(n) && ev(true), null != r && null != K[n]) && (t || "READY" === r || "CRASHED" === r)) {
-    if (t ? en.delete(n) : en.add(n), eo.clear(), null != ex && (clearTimeout(ex), ex = null, t)) return;
-    t ? eD(t, n) : ex = setTimeout(() => {
-      eD(t, n), ex = null
+  if ((J.has(n) && eO(true), null != r && null != K[n]) && (t || "READY" === r || "CRASHED" === r)) {
+    if (t ? et.delete(n) : et.add(n), ea.clear(), null != eD && (clearTimeout(eD), eD = null, t)) return;
+    t ? eP(t, n) : eD = setTimeout(() => {
+      eP(t, n), eD = null
     }, 100)
   }
 }
 
-function ej(e) {
+function eL(e) {
   let {
     region: t
   } = e;
-  eo.add(t), eD(false, $)
+  ea.add(t), eP(false, $)
 }
 
-function eM() {
-  eo.clear(), eD(true, $)
+function ej() {
+  ea.clear(), eP(true, $)
 }
 
-function ek(e) {
+function eM(e) {
   let {
     port: t
   } = e;
-  et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
+  ee = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "dadfe78ad732e34bb181cd96cc143ffaf54d466a"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "a84d699bbc3d3394bedd276268a37552e87ec905"), n.append("rpc", String(t)), n.append("rpc_auth_token", ee), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
-function eU(e) {
+function ek(e) {
   let {
     channelId: t,
     ring: n
   } = e;
   setImmediate(() => {
-    p.default.selectPrivateChannel(t), c.Z.call(t, false, !!n)
+    p.default.selectPrivateChannel(t), c.A.call(t, false, !!n)
   })
 }
 
-function eG(e) {
+function eU(e) {
   let {
     pid: t
   } = e;
   $ = t
 }
 
-function eZ(e) {
+function eG(e) {
   var t;
   let {
     pid: n,
@@ -510,22 +508,22 @@ function eZ(e) {
   } = e;
   if (null == K[n]) return;
   let i = r instanceof Error ? r : Error(null != r ? r : "Unknown error");
-  eg(n, "CRASHED"), ed(n, {
-    renderer_crash_count: (null != (t = eu(n).renderer_crash_count) ? t : 0) + 1,
+  em(n, "CRASHED"), eu(n, {
+    renderer_crash_count: (null != (t = ec(n).renderer_crash_count) ? t : 0) + 1,
     error: r instanceof Error ? r.message : r,
     error_description: r instanceof Error ? r.stack : true
-  }), el.verbose("OverlayBridgeStore: handleOverlayCrashed: ".concat(n)), (0, O.V6)(i, S.gl.Hook)
-}
-
-function eF() {
-  J = true, z = false, eQ()
-}
-
-function eB() {
-  J = false, f.Z.setFocusedPID(null, null), ev(true), el.verbose("OverlayBridgeStore: handleConnectionClosed")
+  }), eo.verbose("OverlayBridgeStore: handleOverlayCrashed: ".concat(n)), (0, O.St)(i, v.Ue.Hook)
 }
 
 function eV() {
+  Q = true, z = false, eX()
+}
+
+function eF() {
+  Q = false, f.A.setFocusedPID(null, null), eO(true), eo.verbose("OverlayBridgeStore: handleConnectionClosed")
+}
+
+function eB() {
   returntrue
 }
 
@@ -533,7 +531,7 @@ function eH(e) {
   let {
     legacyEnabled: t
   } = e;
-  return eT(t), false
+  return eS(t), false
 }
 
 function eY(e) {
@@ -545,13 +543,13 @@ function eY(e) {
     messageId: a
   } = e;
   setImmediate(() => {
-    u.Z.join({
+    u.A.join({
       userId: t,
       sessionId: n,
       applicationId: r,
       channelId: i,
       messageId: a
-    }), null != $ && f.Z.setInputLocked(true, $)
+    }), null != $ && f.A.setInputLocked(true, $)
   })
 }
 
@@ -563,118 +561,118 @@ function eW(e) {
   setTimeout(() => {
     let e = Math.ceil(t * window.innerWidth),
       r = Math.ceil(n * window.innerHeight),
-      i = (0, M.B)("click", e, r);
-    (0, M.J)(i, e, r)
+      i = (0, M._)("click", e, r);
+    (0, M.K)(i, e, r)
   }, 50)
 }
 
 function eK(e) {
-  return ev({
+  return eO({
     added: [],
     removed: []
   }), true
 }
 
 function ez(e) {
-  return ev({
+  return eO({
     added: [],
     removed: []
   }), true
 }
 
 function eq(e) {
-  el.verbose("Updating OverlayMethod", {
+  eo.verbose("Updating OverlayMethod", {
     pid: e.pid,
     overlayMethod: e.overlayMethod,
-    overlayLabel: (0, C.P_)(e.overlayMethod)
-  }), e.overlayMethod === S.gl.Hook ? ev({
+    overlayLabel: (0, T.gK)(e.overlayMethod)
+  }), e.overlayMethod === v.Ue.Hook ? eO({
     added: [e.pid],
     removed: []
-  }) : ev({
+  }) : eO({
     added: [],
     removed: [e.pid]
   })
 }
 
-function eQ() {
-  E.Z.hasLoadedExperiments && !z && (z = true, eT(v.v.legacyEnabled))
-}
-
 function eX() {
+  E.A.hasLoadedExperiments && !z && (z = true, eS(A.x.legacyEnabled))
+}
+
+function eZ() {
   z = false
 }
 
-function eJ() {
+function eQ() {
   z = false
 }
-class e$ extends(i = Chunk442837.ZP.Store) {
+class e$ extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    !(0, U.supportsLegacy)() || __OVERLAY__ || (this.waitFor(R.default, E.Z, D.Z, x.Z, T.default, N.Z, P.Z, A.Z, b.ZP), this.syncWith([E.Z], eQ), m.sr(ew, eP), R.default.addChangeListener(eN), l.Z.addInterceptor(ei.queueDispatch))
+    !(0, U.supportsLegacy)() || __OVERLAY__ || (this.waitFor(P.default, E.A, D.A, x.A, I.default, N.A, R.A, C.A, b.Ay), this.syncWith([E.A], eX), m.Le(eR, eN), P.default.addChangeListener(eC), l.h.addInterceptor(er.queueDispatch))
   }
   isFocusedPidInputLocked() {
     let e = this.getFocusedPID();
     return null != e && this.isInputLocked(e)
   }
   isInputLocked(e) {
-    return T.default.isOverlayOOPEnabledForPid(e) ? N.Z.isInputLocked(e) : !en.has(e)
+    return I.default.isOverlayOOPEnabledForPid(e) ? N.A.isInputLocked(e) : !et.has(e)
   }
   DEV_isInputLockedV3(e) {
-    return N.Z.isInputLocked(e)
+    return N.A.isInputLocked(e)
   }
   DEV_isInputLocked(e) {
-    return !en.has(e)
+    return !et.has(e)
   }
   isSupported() {
     return (0, U.supportsLegacy)() || false
   }
   get enabled() {
-    let e = A.Z.getFocusedPID();
-    return null != e ? A.Z.isOverlayV3EnabledForPID(e) ? P.Z.isOverlayEnabled : X : P.Z.isOverlayEnabled || X
+    let e = C.A.getFocusedPID();
+    return null != e ? C.A.isOverlayV3EnabledForPID(e) ? R.A.isOverlayEnabled : Z : R.A.isOverlayEnabled || Z
   }
   getAnyGlobalEnabledOverlay() {
-    return T.default.getAnyGlobalEnabledOverlay()
+    return I.default.getAnyGlobalEnabledOverlay()
   }
   getFocusedPID() {
-    let e = A.Z.getFocusedPID();
-    return null != e && A.Z.isOverlayV3EnabledForPID(e) ? e : $
+    let e = C.A.getFocusedPID();
+    return null != e && C.A.isOverlayV3EnabledForPID(e) ? e : $
   }
   isFocusedPidOutOfProcess() {
     let e = this.getFocusedPID();
-    return null != e && T.default.isOverlayOOPEnabledForPid(e)
+    return null != e && I.default.isOverlayOOPEnabledForPid(e)
   }
   isCurrentPidOutOfProcess() {
-    return T.default.isOverlayOOPEnabledForPid((0, U.getPID)())
+    return I.default.isOverlayOOPEnabledForPid((0, U.getPID)())
   }
   isReady(e) {
-    return A.Z.isOverlayV3EnabledForPID(e) ? A.Z.isReady(e) : "READY" === q.get(e)
+    return C.A.isOverlayV3EnabledForPID(e) ? C.A.isReady(e) : "READY" === q.get(e)
   }
   isCrashed(e) {
-    return !A.Z.isOverlayV3EnabledForPID(e) && "CRASHED" === q.get(e)
+    return !C.A.isOverlayV3EnabledForPID(e) && "CRASHED" === q.get(e)
   }
   getOverlayPIDStatuses() {
     return q
   }
 }
-B(e$, "displayName", "OverlayBridgeStore");
-let e0 = new e$(Chunk570140.Z, __OVERLAY__ ? {
+F(e$, "displayName", "OverlayBridgeStore");
+let eJ = new e$(Chunk73153.h, __OVERLAY__ ? {
     OVERLAY_RELAY_CLICK_ZONE_CLICKED: eW
   } : {
-    LOGIN: eX,
-    LOGOUT: eJ,
-    CONNECTION_OPEN: eF,
-    CONNECTION_CLOSED: eB,
-    EXPERIMENT_OVERRIDE_BUCKET: eV,
+    LOGIN: eZ,
+    LOGOUT: eQ,
+    CONNECTION_OPEN: eV,
+    CONNECTION_CLOSED: eF,
+    EXPERIMENT_OVERRIDE_BUCKET: eB,
     RUNNING_GAME_TOGGLE_OVERLAY: ez,
     RUNNING_GAMES_CHANGE: eK,
     OVERLAY_SET_ENABLED: eH,
-    OVERLAY_FOCUSED: eG,
-    OVERLAY_SET_INPUT_LOCKED: eL,
-    OVERLAY_ACTIVATE_REGION: ej,
-    OVERLAY_DEACTIVATE_ALL_REGIONS: eM,
-    RPC_SERVER_READY: ek,
-    OVERLAY_CALL_PRIVATE_CHANNEL: eU,
+    OVERLAY_FOCUSED: eU,
+    OVERLAY_SET_INPUT_LOCKED: ex,
+    OVERLAY_ACTIVATE_REGION: eL,
+    OVERLAY_DEACTIVATE_ALL_REGIONS: ej,
+    RPC_SERVER_READY: eM,
+    OVERLAY_CALL_PRIVATE_CHANNEL: ek,
     OVERLAY_JOIN_GAME: eY,
-    OVERLAY_CRASHED: eZ,
+    OVERLAY_CRASHED: eG,
     OVERLAY_UPDATE_OVERLAY_METHOD: eq
   }),
-  e1 = e0
+  e0 = eJ

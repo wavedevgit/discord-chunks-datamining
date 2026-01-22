@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 109213, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 547065, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => o,
-  u: () => a
+  J: () => a,
+  P: () => s
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk987338 = require("./987338.js"),
+var Chunk600975 = require("./600975.js"),
+  Chunk688151 = require("./688151.js"),
   a = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.POPULAR = 1] = "POPULAR", e[e.RECENT = 2] = "RECENT", e
   }({});
-let o = (0, Chunk818083.B)({
+let s = (0, Chunk600975.C)({
   kind: "user",
   id: "2024-10_shop_skus_in_gift_flow",
   label: "Gift Collectibles in DM",
@@ -19,7 +19,7 @@ let o = (0, Chunk818083.B)({
     showBothNitroSkusInCategorySelect: false,
     giftRecommendationAlgorithm: 0
   },
-  commonTriggerPoint: Chunk987338.$P.DM_GDM_LIST_RENDER,
+  commonTriggerPoint: Chunk688151.$G.DM_GDM_LIST_RENDER,
   treatments: [{
     id: 1,
     label: "Gift Collectibles in DM, with existing Nitro flow, showing popular items",

@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 60482, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 522055, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk351721 = require("./351721.js");
+  A: () => T
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk532555 = require("./532555.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -118,8 +118,8 @@ function g(e) {
 
 function E(e, t) {
   return Object.values(t).reduce((e, t) => {
-    var n, r, i, a, o;
-    return e + (null != (o = null == (a = t.sku) || null == (i = a.tenant_metadata) || null == (r = i.guild_monetization) || null == (n = r.game_server) ? true : n.boost_price) ? o : 0)
+    var n, r, i, a, s;
+    return e + (null != (n = null == (s = t.sku) || null == (a = s.tenant_metadata) || null == (i = a.guild_monetization) || null == (r = i.game_server) ? true : r.boost_price) ? n : 0)
   }, 0)
 }
 
@@ -144,7 +144,7 @@ function y(e) {
   d = u(l({}, d), {
     [t]: u(l({}, r), {
       instances: u(l({}, r.instances), {
-        [n.id]: (0, o.Z)(n)
+        [n.id]: (0, s.A)(n)
       })
     })
   })
@@ -160,7 +160,7 @@ function O(e) {
   })
 }
 
-function v(e) {
+function A(e) {
   let {
     guildId: t,
     entitlements: n
@@ -170,20 +170,20 @@ function v(e) {
     return (null == (r = e.sku) || null == (n = r.tenant_metadata) || null == (t = n.guild_monetization) ? true : t.game_server) != null
   }).forEach(e => {
     r.entitlements[e.id] = e
-  }), I(t, r)
+  }), S(t, r)
 }
 
-function S(e) {
+function v(e) {
   let {
     guildId: t,
     entitlements: n
   } = e, r = p(t);
   n.forEach(e => {
     delete r.entitlements[e.id]
-  }), I(t, r)
+  }), S(t, r)
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = E(e, t.entitlements);
   d = u(l({}, d), {
     [e]: u(l({}, t), {
@@ -191,7 +191,7 @@ function I(e, t) {
     })
   })
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   getState() {
     return d
   }
@@ -214,8 +214,8 @@ class T extends(r = Chunk442837.ZP.Store) {
     return null != e && (null == (t = d[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-s(T, "displayName", "GameServerStore");
-let C = new T(Chunk570140.Z, {
+o(I, "displayName", "GameServerStore");
+let T = new I(Chunk73153.h, {
   LOGOUT: f,
   GAME_SERVER_FETCH_CATALOG_SUCCESS: _,
   GAME_SERVER_FETCH_INSTANCES_SUCCESS: h,
@@ -225,6 +225,6 @@ let C = new T(Chunk570140.Z, {
   GAME_SERVER_CREATE: y,
   GAME_SERVER_UPDATE: y,
   GAME_SERVER_DELETE: O,
-  GUILD_POWERUP_ENTITLEMENTS_CREATE: v,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: S
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: A,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: v
 })

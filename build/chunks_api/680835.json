@@ -1,1 +1,0 @@
-{"id":"680835","type":"experiment","data":{"kind":"user","id":"2025-07_announcement_composer","label":"announcement composer","defaultConfig":{"announcementComposer":false},"treatments":[{"id":1,"label":"show announcement composer","config":{"announcementComposer":true}}]},"fromModule":{"id":"82124"}}

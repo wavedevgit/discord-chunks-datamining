@@ -1,0 +1,1 @@
+{"id":"449000","type":"store","data":{"name":"ICYMIUnreadStateStore","functions":[{"name":"initialize","args":["e"]},{"name":"getReadTimestamp","args":["e"]},{"name":"getState","args":[]},{"name":"getUserAgnosticState","args":[]}],"events":["ICYMI_ACK_ITEMS","LOAD_ICYMI_DEHYDRATED","CLEAR_ICYMI_READ_STATES"]},"fromModule":{"id":"21738"}}

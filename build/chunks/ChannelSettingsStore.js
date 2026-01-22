@@ -1,25 +1,25 @@
 /** Chunk was on web.js **/
-/** chunk id: 388610, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 863036, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l;
+let r, i, a, s, o, l;
 require.d(exports, {
-  Z: () => ee
-}), require("./997841.js"), require("./388685.js");
-var c, Chunk392711 = require("./392711.js"),
-  d = require.n(Chunk392711),
-  Chunk913527 = require("./913527.js"),
-  p = require.n(Chunk913527),
-  Chunk442837 = require("./442837.js"),
-  Chunk544891 = require("./544891.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk131704 = require("./131704.js"),
-  Chunk758449 = require("./758449.js"),
-  Chunk598077 = require("./598077.js"),
-  Chunk411198 = require("./411198.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => ee
+}), require("./938796.js"), require("./896048.js");
+var c, Chunk735438 = require("./735438.js"),
+  d = require.n(Chunk735438),
+  Chunk989349 = require("./989349.js"),
+  p = require.n(Chunk989349),
+  Chunk311907 = require("./311907.js"),
+  Chunk562465 = require("./562465.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk95701 = require("./95701.js"),
+  Chunk671759 = require("./671759.js"),
+  Chunk427157 = require("./427157.js"),
+  Chunk860689 = require("./860689.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk652215 = require("./652215.js");
 
-function S(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +28,20 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,38 +52,38 @@ function T(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = Chunk981631.QZA.CLOSED,
+let C = Chunk652215.XlH.CLOSED,
   N = {},
-  P = {},
+  R = {},
   w = false,
-  R = false,
+  P = false,
   D = null,
   x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
 function L(e) {
   if (null == a || a.id !== e) returnfalse;
-  if (a === o) {
-    let t = O.Z.getChannel(e);
+  if (a === s) {
+    let t = O.A.getChannel(e);
     if (null == t) returnfalse;
-    o = a = t, s = O.Z.getChannel(o.parent_id)
+    s = a = t, o = O.A.getChannel(s.parent_id)
   } else {
-    let t = O.Z.getChannel(e);
+    let t = O.A.getChannel(e);
     if (null == t) returnfalse;
-    a = t, null != o && (o = o.set("permissionOverwrites", a.permissionOverwrites), s = O.Z.getChannel(o.parent_id))
+    a = t, null != s && (s = s.set("permissionOverwrites", a.permissionOverwrites), o = O.A.getChannel(s.parent_id))
   }
   returntrue
 }
 
 function j(e) {
-  let t = O.Z.getChannel(e.channelId);
+  let t = O.A.getChannel(e.channelId);
   if (null == t) return k();
-  A = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
-  let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
+  C = A.XlH.OPEN, s = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != s && (s = s.set("nsfw", s.isNSFW())), o = O.A.getChannel(s.parent_id), l = s.getGuildId();
+  let n = s.isModeratorReportChannel() ? A.p_A.PERMISSIONS : A.p_A.OVERVIEW;
   return N = {}, M({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: null != r ? r : n,
@@ -92,12 +92,12 @@ function j(e) {
 }
 
 function M(e) {
-  r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (w = true, h.tn.get({
-    url: v.ANM.INSTANT_INVITES(o.id),
+  r = e.section, i = e.subsection, null != s && r === A.p_A.INSTANT_INVITES && (w = true, h.Bo.get({
+    url: A.Rsh.INSTANT_INVITES(s.id),
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {
-    w = false, m.Z.dispatch({
+    w = false, m.h.dispatch({
       type: "CHANNEL_SETTINGS_LOADED_INVITES",
       invites: e.body
     })
@@ -105,29 +105,29 @@ function M(e) {
 }
 
 function k() {
-  R = false, A = v.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
+  P = false, C = A.XlH.CLOSED, r = null, s = a = null, o = null, R = {}
 }
 
 function U() {
-  A = v.QZA.SUBMITTING, N = {}
+  C = A.XlH.SUBMITTING, N = {}
 }
 
 function G() {
-  a = o, A = v.QZA.OPEN
+  a = s, C = A.XlH.OPEN
 }
 
-function Z(e) {
+function V(e) {
   var t;
-  A = v.QZA.OPEN, N = Object.keys(null != (t = e.errors) ? t : {}).reduce((t, n) => {
+  C = A.XlH.OPEN, N = Object.keys(null != (t = e.errors) ? t : {}).reduce((t, n) => {
     let r = e.errors[n];
     return (0, u.isArray)(r) ? t[n] = r.join("\n") : t[n] = r, t
   }, {})
 }
 let F = d().debounce(() => {
-  if (null == o || null == a) returnfalse;
-  let e = o.toJS(),
+  if (null == s || null == a) returnfalse;
+  let e = s.toJS(),
     t = a.toJS();
-  x.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
+  x.every(n => e[n] === t[n]) && s !== a && (s = a, J.emitChange())
 }, 500);
 
 function B(e) {
@@ -137,7 +137,7 @@ function B(e) {
     topic: r,
     bitrate: i,
     userLimit: a,
-    nsfw: s,
+    nsfw: o,
     flags: l,
     rateLimitPerUser: c,
     defaultThreadRateLimitPerUser: u,
@@ -152,28 +152,28 @@ function B(e) {
     availableTags: b,
     defaultSortOrder: y,
     defaultForumLayout: O,
-    defaultTagSetting: v,
-    iconEmoji: S,
-    themeColor: T
+    defaultTagSetting: A,
+    iconEmoji: v,
+    themeColor: I
   } = e;
-  if (null == o) returnfalse;
-  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
+  if (null == s) returnfalse;
+  null != t && (s = s.set("name", t)), null != r && (s = s.set("topic", r)), null != i && (s = s.set("bitrate", i)), null != a && (s = s.set("userLimit", a)), null != o && (s = s.set("nsfw", o)), null != l && (s = s.set("flags", l)), null != c && (s = s.set("rateLimitPerUser", c)), null != u && (s = s.set("defaultThreadRateLimitPerUser", u)), null != d && (s = s.set("threadMetadata", T(S({}, s.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != f && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
+  }))), null != f && (s = s.set("threadMetadata", T(S({}, s.threadMetadata), {
     locked: f
-  }))), null != p && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
+  }))), null != p && (s = s.set("threadMetadata", T(S({}, s.threadMetadata), {
     invitable: p
-  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== S && (o = o.set("iconEmoji", S)), null != T && (o = o.set("themeColor", T)), F()
+  }))), null != _ && (s = s.set("defaultAutoArchiveDuration", _)), null != h && (s = s.set("template", h)), null != n && (s = s.set("type", n)), true !== g && (s = s.set("rtcRegion", g)), null != E && (s = s.set("videoQualityMode", E)), true !== m && (s = s.set("defaultReactionEmoji", m)), null != b && (s = s.set("availableTags", b)), null != y && (s = s.set("defaultSortOrder", y)), null != A && (s = s.set("defaultTagSetting", A)), null != O && (s = s.set("defaultForumLayout", O)), true !== v && (s = s.set("iconEmoji", v)), null != I && (s = s.set("themeColor", I)), F()
 }
 
-function V(e) {
-  return new E.Z({
+function H(e) {
+  return new E.A({
     code: e.code,
     temporary: e.temporary,
     revoked: e.revoked,
-    inviter: null != e.inviter ? new b.Z(e.inviter) : null,
-    channel: (0, g.jD)(e.channel),
-    guild: null != e.guild ? (0, y.Qs)(e.guild) : null,
+    inviter: null != e.inviter ? new b.A(e.inviter) : null,
+    channel: (0, g.OY)(e.channel),
+    guild: null != e.guild ? (0, y.DY)(e.guild) : null,
     uses: e.uses,
     maxUses: e.max_uses,
     maxAge: e.max_age,
@@ -182,75 +182,75 @@ function V(e) {
   })
 }
 
-function H(e) {
-  P = {}, e.invites.forEach(e => {
-    P[e.code] = V(e)
-  })
-}
-
 function Y(e) {
-  P = I({}, P), delete P[e.code]
+  R = {}, e.invites.forEach(e => {
+    R[e.code] = H(e)
+  })
 }
 
 function W(e) {
-  P = C(I({}, P), {
-    [e.invite.code]: V(e.invite)
-  })
+  R = S({}, R), delete R[e.code]
 }
 
 function K(e) {
-  return !!L(e) && null != o && (null != l && null == o.permissionOverwrites[l] && (l = o.getGuildId()), true)
+  R = T(S({}, R), {
+    [e.invite.code]: H(e.invite)
+  })
 }
 
 function z(e) {
-  let {
-    channels: t
-  } = e;
-  if (null == o) returnfalse;
-  let n = false;
-  for (let e of t) n = K(e.id) || n;
-  return n
+  return !!L(e) && null != s && (null != l && null == s.permissionOverwrites[l] && (l = s.getGuildId()), true)
 }
 
 function q(e) {
   let {
-    channelId: t
+    channels: t
   } = e;
-  return K(t)
+  if (null == s) returnfalse;
+  let n = false;
+  for (let e of t) n = z(e.id) || n;
+  return n
 }
 
-function Q(e) {
+function X(e) {
+  let {
+    channelId: t
+  } = e;
+  return z(t)
+}
+
+function Z(e) {
   let {
     channel: {
       id: t
     }
   } = e;
-  if (null == o || o.id !== t) returnfalse;
-  A = v.QZA.CLOSED
+  if (null == s || s.id !== t) returnfalse;
+  C = A.XlH.CLOSED
 }
 
-function X(e) {
+function Q(e) {
   let {
     overwriteId: t
   } = e;
   l = t
 }
-class J extends(c = Chunk442837.ZP.Store) {
+class $ extends(c = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(O.Z)
+    this.waitFor(O.A)
   }
   hasChanges() {
-    return o !== a
+    return s !== a
   }
   isOpen() {
-    return R
+    return P
   }
   getSection() {
     return r
   }
   getInvites() {
     return {
-      invites: P,
+      invites: R,
       loading: w
     }
   }
@@ -258,44 +258,44 @@ class J extends(c = Chunk442837.ZP.Store) {
     return this.hasChanges()
   }
   getChannel() {
-    return o
+    return s
   }
   getFormState() {
-    return A
+    return C
   }
   getCategory() {
-    return s
+    return o
   }
   getProps() {
     return {
-      submitting: A === v.QZA.SUBMITTING,
+      submitting: C === A.XlH.SUBMITTING,
       errors: N,
-      channel: o,
+      channel: s,
       section: r,
       subsection: i,
-      invites: P,
+      invites: R,
       selectedOverwriteId: l,
       hasChanges: this.hasChanges(),
       analyticsLocation: D
     }
   }
 }
-S(J, "displayName", "ChannelSettingsStore");
-let $ = new J(Chunk570140.Z, {
+v($, "displayName", "ChannelSettingsStore");
+let J = new $(Chunk73153.h, {
     CHANNEL_SETTINGS_INIT: j,
     CHANNEL_SETTINGS_SUBMIT: U,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: G,
-    CHANNEL_SETTINGS_SUBMIT_FAILURE: Z,
+    CHANNEL_SETTINGS_SUBMIT_FAILURE: V,
     CHANNEL_SETTINGS_CLOSE: k,
-    CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: q,
-    CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
-    CHANNEL_SETTINGS_OVERWRITE_SELECT: X,
+    CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: X,
+    CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: X,
+    CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
     CHANNEL_SETTINGS_UPDATE: B,
     CHANNEL_SETTINGS_SET_SECTION: M,
-    CHANNEL_SETTINGS_LOADED_INVITES: H,
-    CHANNEL_UPDATES: z,
-    CHANNEL_DELETE: Q,
-    INSTANT_INVITE_REVOKE_SUCCESS: Y,
-    INSTANT_INVITE_CREATE_SUCCESS: W
+    CHANNEL_SETTINGS_LOADED_INVITES: Y,
+    CHANNEL_UPDATES: q,
+    CHANNEL_DELETE: Z,
+    INSTANT_INVITE_REVOKE_SUCCESS: W,
+    INSTANT_INVITE_CREATE_SUCCESS: K
   }),
-  ee = $
+  ee = J

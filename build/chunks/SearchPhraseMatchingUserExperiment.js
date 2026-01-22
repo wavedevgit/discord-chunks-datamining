@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 731267, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 353271, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => r
+  A: () => r
 });
-let r = (0, require("./987170.js").Z)({
+let r = (0, require("./143770.js").A)({
   kind: "user",
   id: "2025-08_search_phrase_matching",
   label: "Search Phrase Matching",

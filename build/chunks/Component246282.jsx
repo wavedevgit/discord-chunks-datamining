@@ -1,0 +1,139 @@
+/** Chunk was on 47841 **/
+/** chunk id: 246282, original params: e,t,n (module,exports,require) **/
+"use strict";
+require.d(exports, {
+  Et: () => c,
+  QS: () => u,
+  hz: () => o,
+  yP: () => d
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk397927 = require("./397927.js"),
+  Chunk527678 = require("./527678.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk837649 = require("./837649.js");
+
+function c() {
+  return (0, r.jsxs)("div", {
+    className: a.kL,
+    children: [(0, r.jsx)(i.Text, {
+      variant: "text-xs/semibold",
+      color: "text-default",
+      className: a.u1,
+      children: s.intl.format(s.t.tCQ3H8, {
+        number: 1
+      })
+    }), (0, r.jsx)(i.Heading, {
+      variant: "heading-lg/semibold",
+      color: "text-strong",
+      className: a.wx,
+      children: s.intl.string(s.t.e6spZv)
+    }), (0, r.jsx)(i.Text, {
+      variant: "text-sm/normal",
+      color: "text-default",
+      children: s.intl.string(s.t["8ega11"])
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": true,
+      className: a.x6,
+      children: (0, r.jsx)(i.Button, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK3w),
+        onClick: () => (0, l.Ay)("Safety Check")
+      })
+    })]
+  })
+}
+
+function o() {
+  return (0, r.jsxs)("div", {
+    className: a.kL,
+    children: [(0, r.jsx)(i.Text, {
+      variant: "text-xs/semibold",
+      color: "text-default",
+      className: a.u1,
+      children: s.intl.format(s.t.tCQ3H8, {
+        number: 2
+      })
+    }), (0, r.jsx)(i.Heading, {
+      variant: "heading-lg/semibold",
+      color: "text-strong",
+      className: a.wx,
+      children: s.intl.string(s.t.nRE3tc)
+    }), (0, r.jsx)(i.Text, {
+      variant: "text-sm/normal",
+      color: "text-default",
+      children: s.intl.string(s.t.y08PCJ)
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": true,
+      className: a.x6,
+      children: (0, r.jsx)(i.Button, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK3w),
+        onClick: () => (0, l.Ay)("Default Channels")
+      })
+    })]
+  })
+}
+
+function d() {
+  return (0, r.jsxs)("div", {
+    className: a.kL,
+    children: [(0, r.jsx)(i.Text, {
+      variant: "text-xs/semibold",
+      color: "text-default",
+      className: a.u1,
+      children: s.intl.format(s.t.tCQ3H8, {
+        number: 3
+      })
+    }), (0, r.jsx)(i.Heading, {
+      variant: "heading-lg/semibold",
+      color: "text-strong",
+      className: a.wx,
+      children: s.intl.string(s.t.VkaI6l)
+    }), (0, r.jsx)(i.Text, {
+      variant: "text-sm/normal",
+      color: "text-default",
+      children: s.intl.string(s.t.TVGk1c)
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": true,
+      className: a.x6,
+      children: (0, r.jsx)(i.Button, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK3w),
+        onClick: () => (0, l.Ay)("Customization Questions")
+      })
+    })]
+  })
+}
+
+function u() {
+  return (0, r.jsxs)("div", {
+    className: a.kL,
+    children: [(0, r.jsx)(i.Text, {
+      variant: "text-xs/semibold",
+      color: "text-default",
+      className: a.u1,
+      children: s.intl.format(s.t.tCQ3H8, {
+        number: 4
+      })
+    }), (0, r.jsx)(i.Heading, {
+      variant: "heading-lg/semibold",
+      color: "text-strong",
+      className: a.wx,
+      children: s.intl.string(s.t["3SM68F"])
+    }), (0, r.jsx)(i.Text, {
+      variant: "text-sm/normal",
+      color: "text-default",
+      children: s.intl.string(s.t["eamP2+"])
+    }), (0, r.jsx)("div", {
+      "data-button-hoisted-classname-wrapper": true,
+      className: a.x6,
+      children: (0, r.jsx)(i.Button, {
+        variant: "primary",
+        text: s.intl.string(s.t.TbzK3w),
+        onClick: () => (0, l.Ay)("Home Settings")
+      })
+    })]
+  })
+}

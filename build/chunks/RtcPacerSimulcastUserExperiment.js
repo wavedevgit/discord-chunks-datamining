@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 926951, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 641967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
-}), require("./388685.js"), require("./35282.js");
-var Chunk818083 = require("./818083.js");
+  A: () => s
+}), require("./896048.js"), require("./747238.js");
+var Chunk600975 = require("./600975.js");
 let i = "bandwidth_estimation",
-  a = (0, Chunk818083.B)({
+  a = (0, Chunk600975.C)({
     kind: "user",
     id: "2024-06_rtc_pacer__simulcast",
     label: "RTC Pacer & Golive Simulcast",
@@ -65,7 +65,7 @@ let i = "bandwidth_estimation",
       }
     }]
   }),
-  o = {
+  s = {
     getConfig(e, t) {
       let n = a.getCurrentConfig({
         location: "e1c55b_1"

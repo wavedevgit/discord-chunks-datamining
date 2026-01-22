@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 240458, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 369487, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => r
+  R: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-10_word_frequency_store_rollout",
   label: "Word Frequency Store",

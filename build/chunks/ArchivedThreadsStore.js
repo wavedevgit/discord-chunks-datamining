@@ -1,25 +1,25 @@
 /** Chunk was on web.js **/
-/** chunk id: 920303, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 45494, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  I: () => y,
-  Z: () => V
-}), require("./388685.js"), require("./642613.js"), require("./583741.js");
-var i, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
-  Chunk697988 = require("./697988.js"),
-  Chunk683860 = require("./683860.js"),
-  Chunk843991 = require("./843991.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk882252 = require("./882252.js"),
-  Chunk228392 = require("./228392.js"),
-  Chunk131704 = require("./131704.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk306680 = require("./306680.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk569471 = require("./569471.js");
+  A: () => H,
+  m: () => y
+}), require("./896048.js"), require("./638769.js"), require("./264879.js");
+var i, Chunk735438 = require("./735438.js"),
+  s = require.n(Chunk735438),
+  Chunk392421 = require("./392421.js"),
+  Chunk602137 = require("./602137.js"),
+  Chunk357758 = require("./357758.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk767581 = require("./767581.js"),
+  Chunk853742 = require("./853742.js"),
+  Chunk95701 = require("./95701.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk222823 = require("./222823.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk152007 = require("./152007.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,82 +31,82 @@ function b(e, t, n) {
 }
 let y = 25,
   O = false,
-  v = true,
+  A = true,
+  v = false,
   S = false,
-  I = false,
-  T = null,
-  C = Chunk683860.z.LATEST_ACTIVITY,
-  A = [],
+  I = null,
+  T = Chunk602137.T.LATEST_ACTIVITY,
+  C = [],
   N = 0,
-  P = Chunk697988.z.MATCH_SOME;
+  R = Chunk392421.n.MATCH_SOME;
 
 function w() {
-  O = false, v = true, S = false, I = false, T = null, C = l.z.LATEST_ACTIVITY, r = new Set, N = 0, A = [], P = s.z.MATCH_SOME
+  O = false, A = true, v = false, S = false, I = null, T = l.T.LATEST_ACTIVITY, r = new Set, N = 0, C = [], R = o.n.MATCH_SOME
 }
 
-function R(e, t) {
-  return t === l.z.LATEST_ACTIVITY ? m.ZP.lastMessageId(e.id) : e.id
+function P(e, t) {
+  return t === l.T.LATEST_ACTIVITY ? m.Ay.lastMessageId(e.id) : e.id
 }
 
 function D(e) {
-  e.channelId === T && e.sortOrder === C && (0, c.O)(e.tagFilter, r) && e.tagSetting === P || w(), T = e.channelId, C = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), P = e.tagSetting, O = true, v = false
+  e.channelId === I && e.sortOrder === T && (0, c._)(e.tagFilter, r) && e.tagSetting === R || w(), I = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, A = false
 }
 
 function x(e) {
-  if (e.channelId !== T || e.sortOrder !== C || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== P) returnfalse;
-  let t = e.threads.filter(e => _.AW.has(e.type)).map(e => e.id);
-  A = A.concat(t);
-  let n = h.Z.getChannel(T);
-  null != n && n.isForumLikeChannel() && (0, p.Hr)({
+  if (e.channelId !== I || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+  let t = e.threads.filter(e => _.A_.has(e.type)).map(e => e.id);
+  C = C.concat(t);
+  let n = h.A.getChannel(I);
+  null != n && n.isForumLikeChannel() && (0, p._Z)({
     guildId: n.guild_id,
     channelId: n.id,
-    numArchivedThreads: A.length,
+    numArchivedThreads: C.length,
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), j(), S = e.hasMore, N = e.offset + y, O = false, v = false
+  }), j(), v = e.hasMore, N = e.offset + y, O = false, A = false
 }
 
 function L(e) {
-  return (null == T || null == e.channelId || T === e.channelId) && j()
+  return (null == I || null == e.channelId || I === e.channelId) && j()
 }
 
 function j() {
-  if (null == T) returnfalse;
-  let e = !S,
-    t = h.Z.getChannel(A[A.length - 1]),
-    n = null == t ? null : R(t, C);
-  A = o()(h.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
+  if (null == I) returnfalse;
+  let e = !v,
+    t = h.A.getChannel(C[C.length - 1]),
+    n = null == t ? null : P(t, T);
+  C = s()(h.A.getAllThreadsForParent(I)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
-      if (P === s.z.MATCH_SOME) {
+      if (R === o.n.MATCH_SOME) {
         if ((null == (i = t.appliedTags) ? true : i.some(e => r.has(e))) !== true) returnfalse
-      } else if (P === s.z.MATCH_ALL) {
+      } else if (R === o.n.MATCH_ALL) {
         for (let e of r.values())
           if ((null == (a = t.appliedTags) ? true : a.includes(e)) !== true) returnfalse
       }
     }
     if (e || null == n) returntrue;
     {
-      let e = null == t ? null : R(t, C);
+      let e = null == t ? null : P(t, T);
       return null != e && g.default.compare(e, n) >= 0
     }
-  }).sort((e, t) => g.default.compare(R(e, C), R(t, C))).map(e => e.id).reverse().value()
+  }).sort((e, t) => g.default.compare(P(e, T), P(t, T))).map(e => e.id).reverse().value()
 }
 
 function M(e) {
-  if (e.channelId !== T || e.sortOrder !== C || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== P) returnfalse;
-  O = false, I = true, v = false
+  if (e.channelId !== I || e.sortOrder !== T || !(0, c._)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+  O = false, S = true, A = false
 }
 
 function k(e) {
-  if (e.channel.id !== T) returnfalse;
+  if (e.channel.id !== I) returnfalse;
   w()
 }
 
 function U(e) {
-  if (!(A.indexOf(e) >= 0)) returnfalse;
-  A = A.filter(t => t !== e)
+  if (!(C.indexOf(e) >= 0)) returnfalse;
+  C = C.filter(t => t !== e)
 }
 
 function G(e) {
@@ -116,38 +116,38 @@ function G(e) {
   return U(t.id)
 }
 
-function Z(e) {
+function V(e) {
   let {
     channel: t
   } = e;
-  return T === t.parent_id && !!(0, f.yv)(t.id) && void U(t.id)
+  return I === t.parent_id && !!(0, f.yr)(t.id) && void U(t.id)
 }
 let F = [];
-class B extends(i = Chunk442837.ZP.Store) {
+class B extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(h.Z, E.Z, m.ZP)
+    this.waitFor(h.A, E.A, m.Ay)
   }
   get canLoadMore() {
-    return S && !O && !I
+    return v && !O && !S
   }
   get nextOffset() {
     return N
   }
   get isInitialLoad() {
-    return v
+    return A
   }
   isLoading(e, t, n, i) {
-    return T === e && C === t && (0, c.O)(r, n) && P === i ? O : (w(), false)
+    return I === e && T === t && (0, c._)(r, n) && R === i ? O : (w(), false)
   }
   getThreads(e, t, n, i) {
-    return T === e && C === t && (0, c.O)(r, n) && P === i ? A : F
+    return I === e && T === t && (0, c._)(r, n) && R === i ? C : F
   }
 }
 b(B, "displayName", "ArchivedThreadsStore");
-let V = new B(Chunk570140.Z, {
+let H = new B(Chunk73153.h, {
   CONNECTION_OPEN: w,
   THREAD_DELETE: G,
-  THREAD_UPDATE: Z,
+  THREAD_UPDATE: V,
   CHANNEL_DELETE: k,
   LOAD_ARCHIVED_THREADS: D,
   LOAD_ARCHIVED_THREADS_SUCCESS: x,

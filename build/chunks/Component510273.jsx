@@ -1,123 +1,188 @@
-/** Chunk was on web.js **/
-/** chunk id: 510273, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-require.d(exports, {
-  Z: () => _
-}), require("./953529.js");
-var Chunk54381 = require("./54381.js"),
-  Chunk473749 = require("./473749.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
-  Chunk955204 = require("./955204.js"),
-  Chunk818765 = require("./818765.js"),
-  Chunk674680 = require("./674680.jsx"),
-  Chunk854161 = require("./854161.js");
-let f = e => {
+/** Chunk was on 3162 **/
+/** chunk id: 510273, original params: e,t,r (module,exports,require) **/
+require.r(exports), require.d(exports, {
+  default: () => N
+}), require("./896048.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk284009 = require("./284009.js"),
+  a = require.n(Chunk284009),
+  Chunk432022 = require("./432022.js"),
+  Chunk575593 = require("./575593.js"),
+  Chunk334279 = require("./334279.js"),
+  Chunk417597 = require("./417597.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk550111 = require("./550111.jsx"),
+  Chunk170887 = require("./170887.js"),
+  Chunk331402 = require("./331402.jsx"),
+  Chunk287809 = require("./287809.js"),
+  Chunk846957 = require("./846957.jsx"),
+  Chunk929283 = require("./929283.jsx"),
+  Chunk245068 = require("./245068.jsx"),
+  Chunk158216 = require("./158216.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk243821 = require("./243821.js"),
+  Chunk743102 = require("./743102.js"),
+  Chunk497451 = require("./497451.js"),
+  Chunk241988 = require("./241988.js");
+
+function E(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
+    })
+  }
+  return e
+}
+let S = e => {
     let {
-      color: t
-    } = e;
-    return (0, r.jsxs)("svg", {
-      width: "48",
-      height: "28",
-      viewBox: "0 0 55 34",
-      fill: "none",
-      xmlns: "http://www.w3.org/2000/svg",
-      children: [(0, r.jsx)("rect", {
-        x: "10.1968",
-        y: "7",
-        width: "14.4203",
-        height: "14.4203",
-        transform: "rotate(45 10.1968 7)",
-        className: d.__invalid_toastBG
-      }), (0, r.jsx)("rect", {
-        x: "27.3936",
-        y: "0.59021",
-        width: "23.4851",
-        height: "23.4851",
-        transform: "rotate(45 27.3936 0.59021)",
-        className: d.__invalid_toastBG
-      }), (0, r.jsx)("rect", {
-        x: "44.5903",
-        y: "7",
-        width: "14.4203",
-        height: "14.4203",
-        transform: "rotate(45 44.5903 7)",
-        className: d.__invalid_toastBG
-      }), (0, r.jsx)("rect", {
-        x: "10.1968",
-        y: "13",
-        width: "6",
-        height: "6",
-        transform: "rotate(45 10.1968 13)",
-        fill: t
-      }), (0, r.jsx)("path", {
-        d: "M27.3936 4.39355L34.1233 16.2873L27.3936 28.1811L20.6638 16.2873L27.3936 4.39355Z",
-        fill: t
-      }), (0, r.jsx)("rect", {
-        x: "44.5903",
-        y: "13",
-        width: "6",
-        height: "6",
-        transform: "rotate(45 44.5903 13)",
-        fill: t
+      product: t,
+      itemConsumed: r,
+      forCollectedModal: i
+    } = e, [s] = t.items, l = (0, u.bG)([g.default], () => {
+      let e = g.default.getCurrentUser();
+      return a()(null != e, "User cannot be undefined"), e
+    }), b = Object.values(c.j).includes(t.skuId), E = (0, p.A)({
+      location: "CollectiblesProductPreview"
+    });
+    if (t.type === o.R.PROFILE_EFFECT) return (0, n.jsx)("div", {
+      className: v.NM,
+      children: (0, n.jsx)(h.A, {
+        skuId: s.skuId,
+        delayProfileEffectIntro: i,
+        withScaleAnimation: i
+      })
+    });
+    if (t.type === o.R.AVATAR_DECORATION) return (0, n.jsx)(y.i, {
+      item: s,
+      user: l,
+      avatarSize: d._3J.SIZE_120,
+      isHighlighted: true
+    });
+    if (t.type === o.R.NAMEPLATE) return (0, n.jsx)("div", {
+      className: v.qF,
+      children: (0, n.jsx)(f.A, {
+        nameplate: s,
+        user: l,
+        nameplatePreviewSize: "large",
+        isHighlighted: true
+      })
+    });
+    if (t.type === o.R.BUNDLE) return (0, n.jsx)("div", {
+      className: v.hT,
+      children: (0, n.jsx)(j.X, {
+        product: t,
+        user: l,
+        isHighlighted: true,
+        forCollectedModal: i
+      })
+    });
+    if (t.type === o.R.EXTERNAL_SKU) {
+      if (b)
+        if (r) return (0, n.jsx)("img", {
+          src: E ? w : P,
+          alt: O.intl.string(O.t.t0xkSB),
+          style: {
+            width: "100%"
+          }
+        });
+        else return (0, n.jsx)("img", {
+          src: x,
+          alt: O.intl.string(O.t.g5W1g8)
+        });
+      return (0, n.jsx)(m.B, {
+        product: t
+      })
+    }
+    return null
+  },
+  k = e => {
+    let {
+      reducedMotion: t,
+      displayOptions: r
+    } = e, [s, a] = i.useState(false), o = (0, d.zhh)({
+      from: {
+        transform: "translateX(100%)",
+        right: "-100%"
+      },
+      to: {
+        transform: "translateX(50%)",
+        right: "50%"
+      },
+      config: {
+        duration: 1550
+      },
+      onRest: () => setTimeout(() => a(true), 100)
+    }), c = (0, d.zhh)({
+      from: {
+        transform: "translateX(100%)",
+        right: "-100%"
+      },
+      to: {
+        transform: "translateX(50%)",
+        right: "50%"
+      },
+      config: {
+        duration: 1550
+      },
+      reverse: s
+    }), u = (0, d.zhh)({
+      from: {
+        transform: "translateX(50%)",
+        right: "50%",
+        opacity: 1
+      },
+      to: {
+        transform: "translateX(50%)",
+        right: "50%",
+        opacity: 0
+      },
+      config: {
+        duration: 300
+      },
+      delay: 600
+    }, "animate-always");
+    return (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)(l.animated.div, {
+        className: v.VH,
+        style: o,
+        children: (0, n.jsx)(S, E({}, e))
+      }), (0, n.jsx)(l.animated.div, {
+        className: v.VH,
+        style: t ? u : c,
+        children: (0, n.jsx)("img", {
+          src: r.getSrc(),
+          style: r.style,
+          alt: "",
+          "aria-hidden": "true"
+        })
       })]
     })
-  },
-  p = 50;
+  };
 
-function _(e) {
-  let {
-    achievement: t,
-    unlocked: n
-  } = e, {
-    name: a,
-    description: _,
-    rarity: h,
-    hideDescriptionUntilUnlock: m,
-    onAction: g
-  } = t, {
-    color: E
-  } = (0, l.F7)(h);
-  i.useEffect(() => {
-    let e = setTimeout(() => {
-      c.Z.playAchievementUnlockSound()
-    }, p);
-    return () => {
-      clearTimeout(e)
+function N(e) {
+  var t, r;
+  let i = (0, b.K9)(e.product.categorySkuId);
+  return null != i ? (0, n.jsx)(k, (t = E({}, e), r = r = {
+    displayOptions: i
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-  }, []);
-  let b = null != g && n,
-    y = () => {
-      b && g()
-    },
-    O = b ? s.P3F : "div";
-  return (0, r.jsxs)(O, {
-    className: o()(d.container, b && d.actionable),
-    onClick: y,
-    children: [(0, r.jsx)("div", {
-      className: d.iconContainer,
-      children: (0, r.jsx)(u.Z, {
-        achievementId: t.id,
-        size: u.Z.Sizes.SIZE_40,
-        unlocked: n
-      })
-    }), (0, r.jsxs)("div", {
-      className: d.__invalid_nameContainer,
-      children: [(0, r.jsx)(s.Text, {
-        variant: "text-md/semibold",
-        color: "text-strong",
-        children: a()
-      }), (0, r.jsx)(s.Text, {
-        variant: "text-xs/medium",
-        color: "text-default",
-        children: m && !n ? "?????" : _()
-      })]
-    }), (0, r.jsx)("div", {
-      className: d.flair,
-      children: (0, r.jsx)(f, {
-        color: E
-      })
-    })]
-  })
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t)) : (0, n.jsx)(S, E({}, e))
 }

@@ -1,14 +1,14 @@
-/** Chunk was on 1272 **/
-/** chunk id: 769917, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 116127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk518929 = require("./518929.js"),
-  Chunk797394 = require("./797394.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk335934 = require("./335934.js"),
+  Chunk596720 = require("./596720.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 let c = {};
-class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class u extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
     c = null != e ? e : {}
   }
@@ -25,11 +25,11 @@ class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     returntrue === c.filterStaffContent
   }
   onlyShowRecentGeneratedCandidates() {
-    return !!(0, a.q3)("processRawItems", false).contentGenerationEnabled && true === c.onlyShowRecentGeneratedCandidates
+    return !!(0, a.o$)("processRawItems", false).contentGenerationEnabled && true === c.onlyShowRecentGeneratedCandidates
   }
   getDoubleTapBehavior() {
     var e;
-    return null != (e = c.doubleTapBehavior) ? e : o.m.DEFAULT
+    return null != (e = c.doubleTapBehavior) ? e : s.Ai.DEFAULT
   }
   getState() {
     return c
@@ -38,8 +38,8 @@ class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return c
   }
 }
-s(u, "displayName", "ICYMIFiltersStore"), s(u, "persistKey", "ICYMIFiltersStore");
-let d = new u(Chunk570140.Z, {
+o(u, "displayName", "ICYMIFiltersStore"), o(u, "persistKey", "ICYMIFiltersStore");
+let d = new u(Chunk73153.h, {
   SET_ICYMI_FILTERS: function(e) {
     c = e.filters
   }

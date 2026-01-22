@@ -1,34 +1,50 @@
-/** Chunk was on 1272 **/
-/** chunk id: 766219, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 766219, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  I: () => o,
-  s: () => a
-});
-var Chunk823379 = require("./823379.js"),
-  Chunk49898 = require("./49898.js"),
-  Chunk388032 = require("./388032.jsx");
+  A: () => d
+}), require("./896048.js");
+var Chunk73153 = require("./73153.js"),
+  Chunk272355 = require("./272355.js"),
+  Chunk854492 = require("./854492.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk967198 = require("./967198.js"),
+  Chunk403362 = require("./403362.js");
 
-function a(e) {
-  switch (e) {
-    case i.GlobalDiscoveryTab.SERVERS:
-      return l.intl.string(l.t["+Anbp9"]);
-    case i.GlobalDiscoveryTab.APPS:
-      return l.intl.string(l.t.bGwCoR);
-    case i.GlobalDiscoveryTab.QUESTS:
-      return l.intl.string(l.t.EcaD4e);
-    default:
-      (0, r.vE)(e)
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+class u extends Chunk272355.A {
+  _initialize() {
+    r.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.h.subscribe("LOGOUT", this.handleLogout)
+  }
+  _terminate() {
+    r.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.h.unsubscribe("LOGOUT", this.handleLogout)
+  }
+  constructor(...e) {
+    super(...e), c(this, "handleVoiceChannelSelect", e => {
+      let {
+        channelId: t,
+        guildId: n
+      } = e;
+      if (null != t) {
+        let e = s.A.getChannel(t);
+        if (null == e || e.isGuildStageVoice()) return
+      }
+      this.terminate();
+      let r = null == t ? null : null != n ? n : null;
+      this.handleDisconnectFromStageChannel(r)
+    }), c(this, "handleDisconnectFromStageChannel", e => {
+      let t = o.A.getGuildId();
+      (0, a.A)([t, e].filter(l.Vq))
+    }), c(this, "handleLogout", () => {
+      this.terminate(), this.handleDisconnectFromStageChannel(null)
+    })
   }
 }
-
-function o(e) {
-  if (e.startsWith("/discovery/applications")) return i.GlobalDiscoveryTab.APPS;
-  switch (e) {
-    case "/discovery/quests":
-      return i.GlobalDiscoveryTab.QUESTS;
-    case "/discovery/servers":
-      return i.GlobalDiscoveryTab.SERVERS;
-    default:
-      return i.GLOBAL_DISCOVERY_DEFAULT_TAB
-  }
-}
+let d = new u

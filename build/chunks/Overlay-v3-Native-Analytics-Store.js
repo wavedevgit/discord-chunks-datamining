@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
-/** chunk id: 381367, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 912865, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => G
-}), require("./415506.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk145597 = require("./145597.js"),
-  Chunk338388 = require("./338388.js"),
-  Chunk837268 = require("./837268.js"),
-  Chunk371651 = require("./371651.js"),
-  Chunk829907 = require("./829907.js"),
-  Chunk509140 = require("./509140.js"),
-  Chunk987650 = require("./987650.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => G
+}), require("./65821.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk9302 = require("./9302.js"),
+  Chunk777334 = require("./777334.js"),
+  Chunk41984 = require("./41984.js"),
+  Chunk833551 = require("./833551.js"),
+  Chunk515183 = require("./515183.js"),
+  Chunk680243 = require("./680243.js"),
+  Chunk672396 = require("./672396.js"),
+  Chunk652215 = require("./652215.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,23 +59,23 @@ let y = {};
 
 function O(e) {
   var t, n;
-  return null != (n = null == (t = d.default.getTrackedGameByPid(e)) ? true : t.overlayMethod) ? n : null
+  return null != (t = null == (n = d.default.getTrackedGameByPid(e)) ? true : n.overlayMethod) ? t : null
 }
 
-function v(e) {
+function A(e) {
   let t = O(e);
   y[e] = b(g({}, y[e]), {
-    overlay_method: null != t ? u.gl[t] : u.gl[u.gl.OutOfProcess]
+    overlay_method: null != t ? u.Ue[t] : u.Ue[u.Ue.OutOfProcess]
   })
 }
 
-function S(e) {
+function v(e) {
   var t, n;
   if (null != y[e]) return;
-  let r = o.ZP.getGameOrTransformedSubgameForPID(e),
+  let r = s.Ay.getGameOrTransformedSubgameForPID(e),
     i = O(e);
   y[e] = {
-    overlay_method: null != i ? u.gl[i] : u.gl[u.gl.OutOfProcess],
+    overlay_method: null != i ? u.Ue[i] : u.Ue[u.Ue.OutOfProcess],
     success: false,
     game_name: null != (t = null == r ? true : r.name) ? t : null,
     game_id: null != (n = null == r ? true : r.id) ? n : null,
@@ -92,24 +92,24 @@ function S(e) {
   }
 }
 
-function I(e) {
+function S(e) {
   var t;
   return null != (t = y[e]) ? t : {}
 }
 
-function T(e, t) {
+function I(e, t) {
   var n, r;
   let i = null == (n = y[e]) ? true : n.error,
     a = null == (r = y[e]) ? true : r.error_description;
   y[e] = g({}, y[e], t), null != i && (y[e].error = i), null != a && (y[e].error_description = a)
 }
 
-function C(e) {
-  s.default.track(h.rMx.OVERLAY_HOOK_RESULT, I(e))
+function T(e) {
+  o.default.track(h.HAw.OVERLAY_HOOK_RESULT, S(e))
 }
 
-function A(e, t) {
-  e !== l.UNSET_PID && T(e, {
+function C(e, t) {
+  e !== l.UNSET_PID && I(e, {
     host_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -117,34 +117,34 @@ function A(e, t) {
 }
 
 function N(e, t) {
-  e !== l.UNSET_PID && T(e, {
+  e !== l.UNSET_PID && I(e, {
     renderer_crash_count: 1,
     error: t.message,
     error_description: t.stack
   })
 }
 
-function P() {
+function R() {
   y = {}
 }
 
 function w(e, t) {
-  let n = o.ZP.getGameOrTransformedSubgameForPID(e);
+  let n = s.Ay.getGameOrTransformedSubgameForPID(e);
   return {
     crash_type: t,
     gameName: null == n ? true : n.name
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     pid: t,
     error: n,
     crashType: r
   } = e, i = n instanceof Error ? n : Error(null != n ? n : "Unknown error");
-  return "native" === r ? (A(t, i), (0, c.V6)(i, u.gl.OutOfProcess, {
+  return "native" === r ? (C(t, i), (0, c.St)(i, u.Ue.OutOfProcess, {
     extra: w(t, "host")
-  })) : (N(t, i), (0, c.V6)(i, u.gl.OutOfProcess, {
+  })) : (N(t, i), (0, c.St)(i, u.Ue.OutOfProcess, {
     extra: w(t, "renderer")
   })), true
 }
@@ -153,7 +153,7 @@ function D(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  return T(t, {
+  return I(t, {
     mounting_started_at: new Date().getTime()
   }), true
 }
@@ -162,20 +162,20 @@ function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
+  } = e, i = null != (t = null == (n = S(r)) ? true : n.mounting_started_at) ? t : new Date().getTime(), a = {
     renderer_started: true,
-    fullscreen_type: (0, f.hs)(r),
+    fullscreen_type: (0, f.ph)(r),
     graphics_info_after: new Date().getTime() - i
   };
-  return T(r, a), true
+  return I(r, a), true
 }
 
 function L(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return T(r, {
+  } = e, i = null != (t = null == (n = S(r)) ? true : n.mounting_started_at) ? t : new Date().getTime();
+  return I(r, {
     renderer_started_after: new Date().getTime() - i
   }), true
 }
@@ -184,44 +184,44 @@ function j(e) {
   let {
     pid: t
   } = e;
-  return S(t), true
+  return v(t), true
 }
 
 function M(e) {
   let {
     lastAssociatedPID: t
   } = e;
-  if (t !== l.UNSET_PID) return C(t), P(), true
+  if (t !== l.UNSET_PID) return T(t), R(), true
 }
 
 function k(e) {
   var t, n;
   let {
     pid: r
-  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return T(r, {
+  } = e, i = null != (t = null == (n = S(r)) ? true : n.mounting_started_at) ? t : new Date().getTime();
+  return I(r, {
     total_mount_time_ms: null != i ? new Date().getTime() - i : true,
     success: true
-  }), v(r), true
+  }), A(r), true
 }
-class U extends(r = Chunk442837.ZP.Store) {
+class U extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(d.default, p.Z, o.ZP)
+    this.waitFor(d.default, p.A, s.Ay)
   }
   getData(e) {
-    return I(e)
+    return S(e)
   }
   getCrashExtra(e, t) {
     return w(e, t)
   }
 }
 m(U, "displayName", "Overlay-v3-Native-Analytics-Store");
-let G = new U(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
+let G = new U(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
   OVERLAY_V3_PRE_CREATE_POPOUT: D,
   OVERLAY_V3_POST_CREATE_POPOUT: x,
   OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: L,
   OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: M,
   OVERLAY_SUCCESSFULLY_SHOWN: k,
-  OVERLAY_CRASHED: R,
+  OVERLAY_CRASHED: P,
   OVERLAY_V3_NATIVE_TRACK_GAME: j
 })

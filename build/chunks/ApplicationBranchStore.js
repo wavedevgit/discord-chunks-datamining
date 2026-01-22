@@ -1,12 +1,12 @@
-/** Chunk was on 29497 **/
-/** chunk id: 560587, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 64233 **/
+/** chunk id: 65204, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  A: () => u
 });
-var i, l, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var i, r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 let a = {};
-class o extends(l = Chunk442837.ZP.Store) {
+class o extends(r = Chunk311907.Ay.Store) {
   getBranches(e) {
     var t;
     return null != (t = a[e]) ? t : []
@@ -17,7 +17,7 @@ class o extends(l = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : o[i] = "ApplicationBranchStore";
-let u = new o(Chunk570140.Z, {
+let u = new o(Chunk73153.h, {
   OWNED_APPLICATION_BRANCHES_FETCH_SUCCESS: function(e) {
     let {
       applicationId: t,

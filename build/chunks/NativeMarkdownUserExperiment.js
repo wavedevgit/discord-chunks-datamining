@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 479398, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 536048, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => i
+  I: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   id: "2025-04_native_markdown",
   kind: "user",
   label: "Native Markdown",

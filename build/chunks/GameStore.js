@@ -1,26 +1,26 @@
 /** Chunk was on web.js **/
-/** chunk id: 404577, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 760751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => $,
-  m: () => B
-}), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
-var i, a, Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk911969 = require("./911969.js"),
-  Chunk642047 = require("./642047.js"),
-  Chunk180138 = require("./180138.js"),
-  Chunk189451 = require("./189451.js"),
-  Chunk695346 = require("./695346.js"),
-  Chunk973616 = require("./973616.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk358085 = require("./358085.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk674563 = require("./674563.js");
+  A: () => J,
+  M: () => B
+}), require("./896048.js"), require("./591487.js"), require("./727858.js"), require("./747238.js");
+var i, a, Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk155718 = require("./155718.js"),
+  Chunk194862 = require("./194862.js"),
+  Chunk690511 = require("./690511.js"),
+  Chunk223273 = require("./223273.js"),
+  Chunk253932 = require("./253932.js"),
+  Chunk611010 = require("./611010.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk723702 = require("./723702.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk705751 = require("./705751.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,7 +31,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function S(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,18 +55,18 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = "GameStoreReportedGames",
-  C = 0x80000000,
-  A = Chunk70956.Z.Millis.DAY,
-  N = new Chunk642047.Z,
-  P = {},
+let I = "GameStoreReportedGames",
+  T = 0x80000000,
+  C = Chunk927813.A.Millis.DAY,
+  N = new Chunk194862.A,
+  R = {},
   w = {},
-  R = null != (i = Chunk433517.K.get(T)) ? i : {},
+  P = null != (i = Chunk506774.w.get(I)) ? i : {},
   D = "",
   x = null,
   L = false,
@@ -75,29 +75,29 @@ let T = "GameStoreReportedGames",
   k = "",
   U = [],
   G = [],
-  Z = new Map,
-  F = Chunk70956.Z.Millis.HOUR;
+  V = new Map,
+  F = Chunk927813.A.Millis.HOUR;
 
 function B(e) {
-  var t, n, r, i, a, o, s, l, c, u;
+  var t, n, r, i, a, s, o, l, c, u;
   return {
     id: e.id,
     name: e.name,
-    executables: (null != (t = e.executables) ? t : []).map(_.BA),
+    executables: (null != (t = e.executables) ? t : []).map(_.lg),
     overlay: null != (n = e.overlay) && n,
     overlayWarn: null != (r = e.overlay_warn) && r,
     overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
     hook: null == (a = e.hook) || a,
-    aliases: null != (o = e.aliases) ? o : [],
-    supportsOutOfProcessOverlay: _.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
-    themes: null != (s = e.themes) ? s : [],
+    aliases: null != (s = e.aliases) ? s : [],
+    supportsOutOfProcessOverlay: _.Ay.supportsOutOfProcessOverlay(e.overlay_methods),
+    themes: null != (o = e.themes) ? o : [],
     icon: null != (l = e.icon_hash) ? l : true,
     thirdPartySkus: null != (c = e.third_party_skus) ? c : [],
     cover_image_hash: null != (u = e.cover_image_hash) ? u : true
   }
 }
 
-function V(e) {
+function H(e) {
   var t, n, r;
   return {
     id: e.id,
@@ -116,46 +116,46 @@ function V(e) {
   }
 }
 
-function H(e) {
-  let t = e instanceof f.ZP ? V(e) : e;
-  for (let n of (N.set(e.id, t), P[e.name.toLowerCase()] = t, e.aliases)) P[n.toLowerCase()] = t;
+function Y(e) {
+  let t = e instanceof f.Ay ? H(e) : e;
+  for (let n of (N.set(e.id, t), R[e.name.toLowerCase()] = t, e.aliases)) R[n.toLowerCase()] = t;
   if ((0, g.isDesktop)())
     for (let n of e.executables) w[n.name] = t
 }
 
-function Y(e) {
+function W(e) {
   let {
     detectableApplications: t
   } = e;
-  for (let e of (N.clear(), P = {}, w = {}, t)) H(e)
-}
-
-function W() {
-  r = true
+  for (let e of (N.clear(), R = {}, w = {}, t)) Y(e)
 }
 
 function K() {
+  r = true
+}
+
+function z() {
   r = false, L = true
 }
 
-function z(e) {
+function q(e) {
   let {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && D !== n && (N.clear(), P = {}, w = {}, D = n), t)) H(B(e));
+  for (let e of (null != n && D !== n && (N.clear(), R = {}, w = {}, D = n), t)) Y(B(e));
   r = true, x = Date.now(), L = true
 }
 
-function q() {
+function X() {
   M = true
 }
 
-function Q() {
+function Z() {
   M = false
 }
 
-function X(e) {
+function Q(e) {
   let {
     executables: t,
     patterns: n,
@@ -163,10 +163,10 @@ function X(e) {
   } = e;
   null != r && k !== r && (k = r, U = t.map(e => e.toLowerCase()), G = n.map(e => RegExp(e, "i"))), M = false, j = Date.now()
 }
-class J extends(a = Chunk442837.ZP.PersistedStore) {
+class $ extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t;
-    null != e && (null != e.detectableGamesEtag && (D = e.detectableGamesEtag), null != e.blocklistEtag && (k = e.blocklistEtag), null != e.blocklistExecutables && (U = e.blocklistExecutables), null != e.blocklistPatterns && (G = e.blocklistPatterns.map(e => RegExp(e, "i"))), null == (t = e.detectableGames) || t.forEach(e => H(e)))
+    null != e && (null != e.detectableGamesEtag && (D = e.detectableGamesEtag), null != e.blocklistEtag && (k = e.blocklistEtag), null != e.blocklistExecutables && (U = e.blocklistExecutables), null != e.blocklistPatterns && (G = e.blocklistPatterns.map(e => RegExp(e, "i"))), null == (t = e.detectableGames) || t.forEach(e => Y(e)))
   }
   getState() {
     return (0, g.isDesktop)() ? {
@@ -192,15 +192,15 @@ class J extends(a = Chunk442837.ZP.PersistedStore) {
   getGameByName(e) {
     if (null == e) return null;
     let t = e.toLowerCase();
-    return Object.prototype.hasOwnProperty.call(P, t) ? P[t] : null
+    return Object.prototype.hasOwnProperty.call(R, t) ? R[t] : null
   }
   getOfficialGame(e) {
     let t;
     if (null == e) return null;
-    if (e.type === y.wW.GAME) t = e.id;
+    if (e.type === y.S7.GAME) t = e.id;
     else {
       var n, r;
-      t = null == (r = e.linkedGames) || null == (n = r.find(e => e.type === c.tE.OFFICIAL)) ? true : n.id
+      t = null == (r = e.linkedGames) || null == (n = r.find(e => e.type === c.Mh.OFFICIAL)) ? true : n.id
     }
     return null == t ? null : this.getDetectableGame(t)
   }
@@ -214,7 +214,7 @@ class J extends(a = Chunk442837.ZP.PersistedStore) {
     return this.getGameByName(e.name)
   }
   isGameInDatabase(e) {
-    return null != this.getGameByName(e.name) || true !== e.nativeProcessObserverId && (e.nativeProcessObserverId & C) == 0
+    return null != this.getGameByName(e.name) || true !== e.nativeProcessObserverId && (e.nativeProcessObserverId & T) == 0
   }
   get fetching() {
     returntrue === r
@@ -232,15 +232,15 @@ class J extends(a = Chunk442837.ZP.PersistedStore) {
     return L
   }
   get detectableGamesTtl() {
-    return A
+    return C
   }
   canFetchDetectableGames() {
-    returntrue !== r && (null == x || Date.now() >= x + A)
+    returntrue !== r && (null == x || Date.now() >= x + C)
   }
   canFetchExecutableBlocklist() {
-    return !!d.x.getConfig({
+    return !!d.n.getConfig({
       location: "GameStore.shouldBlock"
-    }).enabled && !M && (null == j || Date.now() >= j + A)
+    }).enabled && !M && (null == j || Date.now() >= j + C)
   }
   getGameByExecutable(e) {
     return w[e]
@@ -257,10 +257,10 @@ class J extends(a = Chunk442837.ZP.PersistedStore) {
         if (e.includes(i) || e.includes(a)) return r
       } else if (null != r) return null
     }
-    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(a)) ? n : r
+    return null != (t = null != (n = this.getGameByExecutable(i)) ? n : this.getGameByExecutable(a)) ? t : r
   }
   shouldBlock(e) {
-    if (!d.x.getConfig({
+    if (!d.n.getConfig({
         location: "GameStore.shouldBlock"
       }).enabled || null == e.exePath || "" === e.exePath) returnfalse;
     let t = e.exePath.toLowerCase(),
@@ -272,9 +272,9 @@ class J extends(a = Chunk442837.ZP.PersistedStore) {
   maybeTrackBlock(e, t, n) {
     var r, i;
     let a = null != (r = e.exePath.split(/[/\\]/).pop()) ? r : "unknown",
-      o = Z.get(a),
-      s = Date.now();
-    (null == o || s - o >= F) && (Z.set(a, s), h.default.track(b.rMx.GAME_BLOCKLIST_TRIGGERED, {
+      s = V.get(a),
+      o = Date.now();
+    (null == s || o - s >= F) && (V.set(a, o), h.default.track(b.HAw.GAME_BLOCKLIST_TRIGGERED, {
       block_type: t,
       matched_entry: n,
       game_name: null != (i = e.gameName) ? i : e.origGameName,
@@ -284,21 +284,21 @@ class J extends(a = Chunk442837.ZP.PersistedStore) {
   shouldReport(e) {
     if (this.shouldBlock(e)) returnfalse;
     let t = null != this.getGameByName(e.name),
-      n = null != e.name && null != R[e.name];
-    return p.G6.getSetting() && !r && !(t || n)
+      n = null != e.name && null != P[e.name];
+    return p.tz.getSetting() && !r && !(t || n)
   }
   markGameReported(e) {
-    R[e] = true, s.K.set(T, R)
+    P[e] = true, o.w.set(I, P)
   }
 }
-O(J, "displayName", "GameStore"), O(J, "persistKey", "GameStore"), O(J, "migrations", [e => {
+O($, "displayName", "GameStore"), O($, "persistKey", "GameStore"), O($, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
     detectableGames: []
   } : {
     detectableGamesEtag: e.detectableGamesEtag,
-    detectableGames: null != (n = null == (t = e.detectableGames) ? true : t.map(e => V(new f.ZP(e)))) ? n : []
+    detectableGames: null != (t = null == (n = e.detectableGames) ? true : n.map(e => H(new f.Ay(e)))) ? t : []
   }
 }, e => (0, g.isDesktop)() ? e : {
   detectableGamesEtag: "",
@@ -308,18 +308,18 @@ O(J, "displayName", "GameStore"), O(J, "persistKey", "GameStore"), O(J, "migrati
   detectableGames: []
 }), e => {
   var t, n, r;
-  return I(v({}, e), {
+  return S(A({}, e), {
     blocklistEtag: null != (t = e.blocklistEtag) ? t : "",
     blocklistExecutables: null != (n = e.blocklistExecutables) ? n : [],
     blocklistPatterns: null != (r = e.blocklistPatterns) ? r : []
   })
 }]);
-let $ = new J(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: Y,
-  GAMES_DATABASE_FETCH: W,
-  GAMES_DATABASE_FETCH_FAIL: K,
-  GAMES_DATABASE_UPDATE: z,
-  GAMES_BLOCKLIST_FETCH: q,
-  GAMES_BLOCKLIST_FETCH_FAIL: Q,
-  GAMES_BLOCKLIST_UPDATE: X
+let J = new $(Chunk73153.h, {
+  OVERLAY_INITIALIZE: W,
+  GAMES_DATABASE_FETCH: K,
+  GAMES_DATABASE_FETCH_FAIL: z,
+  GAMES_DATABASE_UPDATE: q,
+  GAMES_BLOCKLIST_FETCH: X,
+  GAMES_BLOCKLIST_FETCH_FAIL: Z,
+  GAMES_BLOCKLIST_UPDATE: Q
 })

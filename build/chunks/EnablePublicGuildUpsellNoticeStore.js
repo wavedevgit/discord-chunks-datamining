@@ -1,37 +1,37 @@
-/** Chunk was on 1272 **/
-/** chunk id: 400271, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 788866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js");
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk650774 = require("./650774.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk135899 = require("./135899.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => g
+}), require("./896048.js");
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk498642 = require("./498642.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk124759 = require("./124759.js"),
+  Chunk652215 = require("./652215.js");
 let f = "publicUpsellChannelNoticeGuilds",
-  g = new Set;
-class h extends(r = Chunk442837.ZP.Store) {
+  h = new Set;
+class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    this.waitFor(u.Z, c.Z, s.Z), this.syncWith([u.Z, c.Z, s.Z], p.dG4), g = (e = new Set(a.K.get(f)), e)
+    this.waitFor(u.A, c.A, o.A), this.syncWith([u.A, c.A, o.A], p.tEg), h = (e = new Set(a.w.get(f)), e)
   }
   isVisible(e) {
     if (null == e) return;
-    let t = s.Z.getMemberCount(e.id);
-    return !g.has(e.id) && null != t && t >= d.U3 && u.Z.can(p.Plq.ADMINISTRATOR, e) && !e.features.has(p.GuildFeatures.COMMUNITY)
+    let t = o.A.getMemberCount(e.id);
+    return !h.has(e.id) && null != t && t >= d.dH && u.A.can(p.xBc.ADMINISTRATOR, e) && !e.features.has(p.GuildFeatures.COMMUNITY)
   }
-}(i = "displayName") in h ? Object.defineProperty(h, i, {
+}(i = "displayName") in A ? Object.defineProperty(A, i, {
   value: "EnablePublicGuildUpsellNoticeStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[i] = "EnablePublicGuildUpsellNoticeStore";
-let m = new h(Chunk570140.Z, {
+}) : A[i] = "EnablePublicGuildUpsellNoticeStore";
+let g = new A(Chunk73153.h, {
   PUBLIC_UPSELL_NOTICE_DISMISS: function(e) {
     let t = e.guildId;
-    if (!g.has(t)) return g.add(t), a.K.set(f, g), true
+    if (!h.has(t)) return h.add(t), a.w.set(f, h), true
   }
 })

@@ -1,0 +1,27 @@
+/** Chunk was on 28979 **/
+/** chunk id: 467758, original params: t,e,i (module,exports,require) **/
+require.d(exports, {
+  W: () => A
+});
+var Chunk734066 = require("./734066.js"),
+  Chunk419954 = require("./419954.js"),
+  Chunk780964 = require("./780964.js"),
+  Chunk764800 = require("./764800.js"),
+  Chunk464895 = require("./464895.js"),
+  Chunk729134 = require("./729134.js"),
+  Chunk766667 = require("./766667.js"),
+  Chunk985018 = require("./985018.jsx");
+let A = (0, Chunk419954.zZ)(Chunk780964.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
+  useTitle: () => T.intl.string(T.t.sA0WKL),
+  usePredicate: () => {
+    let {
+      enableAdvancedSignals: t
+    } = n.L_.useExperiment({
+      location: "ClipsAutomaticClippingCategory"
+    }, {
+      autoTrackExposure: false
+    });
+    return t
+  },
+  buildLayout: () => [r.$, u.X, a.C, o.p]
+})

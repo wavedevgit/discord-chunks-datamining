@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 951806, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 996283, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F0: () => h,
-  bk: () => p
-}), require("./539854.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk579092 = require("./579092.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk188274 = require("./188274.js"),
-  Chunk837268 = require("./837268.js"),
-  Chunk338949 = require("./338949.js");
+  VD: () => h,
+  sU: () => p
+}), require("./321073.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk118356 = require("./118356.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk635731 = require("./635731.js"),
+  Chunk41984 = require("./41984.js"),
+  Chunk127242 = require("./127242.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,12 +20,12 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let d = new Chunk579092.Yd("LegacyOverlayClient"),
+let d = new Chunk118356.Vy("LegacyOverlayClient"),
   f = 1e3,
   p = 1e4,
   _ = 2e4,
   h = "Heartbeat",
-  m = new Chunk188274.Z(f),
+  m = new Chunk635731.A(f),
   g = null,
   E = null;
 
@@ -36,7 +36,7 @@ function b(e) {
     timestamp: r,
     context: i
   } = e;
-  if (!c.Z.hasRenderDebugMode(l.GO.LegacyOverlayLogging) || __OVERLAY__) returnfalse;
+  if (!c.A.hasRenderDebugMode(l.x7.LegacyOverlayLogging) || __OVERLAY__) returnfalse;
   if (m.push({
       level: t,
       message: n,
@@ -72,23 +72,23 @@ function O() {
   null != E && (clearInterval(E), E = null)
 }
 
-function v(e) {
+function A(e) {
   let {
     enabled: t,
     mode: n
   } = e;
-  return n === l.GO.LegacyOverlayLogging && (t ? y() : O()), false
+  return n === l.x7.LegacyOverlayLogging && (t ? y() : O()), false
 }
 
-function S(e) {
+function v(e) {
   let {
     logs: t
   } = e;
   return t.forEach(e => b(e)), true
 }
-class I extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.Z), c.Z.hasRenderDebugMode(l.GO.LegacyOverlayLogging) && y()
+    this.waitFor(c.A), c.A.hasRenderDebugMode(l.x7.LegacyOverlayLogging) && y()
   }
   getAllLogs() {
     return m
@@ -100,7 +100,7 @@ class I extends(r = Chunk442837.ZP.Store) {
     return m.filter(e => "error" === e.level || "crash" === e.level)
   }
 }
-u(I, "displayName", "OverlayRPCLogStore"), new I(Chunk570140.Z, {
-  OVERLAY_RENDER_DEBUG_MODE: v,
-  OVERLAY_ADD_LOGS_BATCH: S
+u(S, "displayName", "OverlayRPCLogStore"), new S(Chunk73153.h, {
+  OVERLAY_RENDER_DEBUG_MODE: A,
+  OVERLAY_ADD_LOGS_BATCH: v
 })

@@ -1,5 +1,4 @@
-/** Chunk was on 82124 **/
-/** chunk id: 674463, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  actionBarButton: "_18c2e91d346707ab-actionBarButton"
-}
+/** Chunk was on web.js **/
+/** chunk id: 674463, original params: e (module,exports,re quire) **/
+"use strict";
+module.exports = "/assets/b2f5d4d002a97f3a.svg"

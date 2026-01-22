@@ -1,0 +1,15 @@
+/** Chunk was on web.js **/
+/** chunk id: 879378, original params: e,t,n (module,exports,re quire) **/
+var Chunk805353 = require("./805353.js"),
+  Chunk509185 = require("./509185.js"),
+  a = "Expected a function";
+module.exports = function(e, t, n) {
+  var s = true,
+    o = true;
+  if ("function" != typeof e) throw TypeError(a);
+  return i(n) && (s = "leading" in n ? !!n.leading : s, o = "trailing" in n ? !!n.trailing : o), r(e, t, {
+    leading: s,
+    maxWait: t,
+    trailing: o
+  })
+}

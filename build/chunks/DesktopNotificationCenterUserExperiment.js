@@ -1,25 +1,25 @@
 /** Chunk was on web.js **/
-/** chunk id: 821020, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 851109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ag: () => u,
-  jP: () => a,
-  pN: () => c,
-  u3: () => o,
-  v8: () => s
+  GE: () => u,
+  RK: () => s,
+  U5: () => a,
+  X8: () => c,
+  yF: () => o
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk141537 = require("./141537.js"),
+var Chunk600975 = require("./600975.js"),
+  Chunk428835 = require("./428835.js"),
   a = function(e) {
     return e.POPOUT = "popout", e.SIDEBAR = "sidebar", e.LEGACY = "legacy", e
   }({}),
-  o = function(e) {
+  s = function(e) {
     return e.SERVER_RAIL_TOP = "server-rail-top", e.SERVER_RAIL_BOTTOM = "server-rail-bottom", e.TITLE_BAR_LEFT = "title-bar-left", e
   }({}),
-  s = function(e) {
+  o = function(e) {
     return e.TABS = "tabs", e.DROPDOWN = "dropdown", e
   }({});
-let l = (0, Chunk818083.B)({
+let l = (0, Chunk600975.C)({
     kind: "user",
     id: "2025-04_desktop_notification_center",
     label: "New Notification Center (Desktop)",
@@ -62,5 +62,5 @@ let l = (0, Chunk818083.B)({
       }
     }]
   }),
-  c = e => (0, i.sM)(l, e),
-  u = e => (0, i.cE)(l, e)
+  c = e => (0, i.u5)(l, e),
+  u = e => (0, i.P2)(l, e)

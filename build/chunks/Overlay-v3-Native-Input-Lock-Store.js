@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 322155, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 222506, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk13245 = require("./13245.js"),
-  Chunk145597 = require("./145597.js"),
-  Chunk610394 = require("./610394.js"),
-  Chunk932404 = require("./932404.js"),
-  Chunk509140 = require("./509140.js"),
-  Chunk987650 = require("./987650.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => j
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk684013 = require("./684013.js"),
+  Chunk9302 = require("./9302.js"),
+  Chunk395011 = require("./395011.js"),
+  Chunk682763 = require("./682763.js"),
+  Chunk680243 = require("./680243.js"),
+  Chunk672396 = require("./672396.js"),
+  Chunk652215 = require("./652215.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,7 +29,7 @@ let _ = new Set,
 
 function E(e) {
   var t;
-  if (d.y3) returntrue;
+  if (d.ed) returntrue;
   if (null == m) returnfalse;
   let n = null != (t = null == m ? true : m.isCrashedDisabled) && t;
   return !!e || !n
@@ -38,10 +38,10 @@ function E(e) {
 function b(e) {
   if (e && null != g) {
     let e = Date.now() - g;
-    o.Z.track(f.rMx.OVERLAY_LOCKED, {
+    s.A.track(f.HAw.OVERLAY_LOCKED, {
       unlocked_duration: e
     }), g = null
-  } else e || null != g || (g = Date.now(), o.Z.track(f.rMx.OVERLAY_UNLOCKED))
+  } else e || null != g || (g = Date.now(), s.A.track(f.HAw.OVERLAY_UNLOCKED))
 }
 
 function y(e, t) {
@@ -52,57 +52,57 @@ function O(e, t) {
   return !!E(e) && (y(e, t), null == m || m.setInteractionEnabled(!e), L.emitChange(), true)
 }
 
-function v(e, t) {
+function A(e, t) {
   return !!E(e) && (y(e, t), null == h || (clearTimeout(h), h = null, !e)) && (e ? O(e, t) : h = setTimeout(() => {
-    O(e, t), S()
+    O(e, t), v()
   }, 100), true)
 }
 
-function S() {
+function v() {
   null != h && (clearTimeout(h), h = null)
 }
 
+function S() {
+  v(), _.clear(), _ = new Set, g = null
+}
+
 function I() {
-  S(), _.clear(), _ = new Set, g = null
+  return m = u.A.getNativeModule(), S(), true
 }
 
 function T() {
-  return m = u.Z.getNativeModule(), I(), true
+  return m = null, S(), true
 }
 
-function C() {
-  return m = null, I(), true
-}
-
-function A(e) {
+function C(e) {
   let {
     locked: t,
     pid: n
   } = e;
-  return (0, c.PY)(n, "setInputLocked called", {
+  return (0, c.dK)(n, "setInputLocked called", {
     locked: t
-  }), v(t, n), true
+  }), A(t, n), true
 }
 
 function N(e) {
   let {
     region: t
-  } = e, n = l.Z.getFocusedPID();
-  return (0, c.PY)(null != n ? n : null, "activate_region", {
+  } = e, n = l.A.getFocusedPID();
+  return (0, c.dK)(null != n ? n : null, "activate_region", {
     region: t
-  }), null != n && v(false, n), true
+  }), null != n && A(false, n), true
 }
 
-function P() {
-  let e = l.Z.getFocusedPID();
-  return (0, c.PY)(null != e ? e : null, "deactivate_all_regions"), null != e && O(true, e), true
+function R() {
+  let e = l.A.getFocusedPID();
+  return (0, c.dK)(null != e ? e : null, "deactivate_all_regions"), null != e && O(true, e), true
 }
 
 function w() {
-  return I(), true
+  return S(), true
 }
 
-function R(e) {
+function P(e) {
   let {
     lastAssociatedPID: t
   } = e;
@@ -110,27 +110,27 @@ function R(e) {
 }
 
 function D() {
-  I(), null == m || m.setInteractionEnabled(false)
+  S(), null == m || m.setInteractionEnabled(false)
 }
-class x extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.Z)
+    this.waitFor(u.A)
   }
   isInputLocked(e) {
-    return null == e || e === s.UNSET_PID || false === _.has(e)
+    return null == e || e === o.UNSET_PID || false === _.has(e)
   }
 }
 p(x, "displayName", "Overlay-v3-Native-Input-Lock-Store");
-let L = new x(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
-    OVERLAY_SET_INPUT_LOCKED: A
+let L = new x(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
+    OVERLAY_SET_INPUT_LOCKED: C
   } : {
-    OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: T,
-    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: C,
-    OVERLAY_SET_INPUT_LOCKED: A,
+    OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: I,
+    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: T,
+    OVERLAY_SET_INPUT_LOCKED: C,
     OVERLAY_ACTIVATE_REGION: N,
-    OVERLAY_DEACTIVATE_ALL_REGIONS: P,
+    OVERLAY_DEACTIVATE_ALL_REGIONS: R,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: D,
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: w,
-    OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: R
+    OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: P
   }),
   j = L

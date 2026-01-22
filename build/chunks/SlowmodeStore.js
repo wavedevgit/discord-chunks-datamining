@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
-/** chunk id: 300429, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 101392, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => p,
-  Z: () => T
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk846519 = require("./846519.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk923664 = require("./923664.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk496675 = require("./496675.js");
+  A: () => I,
+  R: () => p
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk451988 = require("./451988.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk960850 = require("./960850.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk576705 = require("./576705.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,15 +31,15 @@ let _ = {
 };
 
 function h(e, t, n) {
-  if (m(e, t), (0, s.t)(e, t) || n <= 0) return;
+  if (m(e, t), (0, o.F)(e, t) || n <= 0) return;
   let r = n + Date.now();
   _[t][e.id] = {
     rateLimitPerUser: e.rateLimitPerUser,
     cooldownMs: n,
     cooldownEndTimestamp: r,
-    timer: new a.V7
+    timer: new a.Ep
   }, _[t][e.id].timer.start(1e3, () => {
-    o.Z.dispatch({
+    s.h.dispatch({
       type: "SLOWMODE_SET_COOLDOWN",
       channelId: e.id,
       slowmodeType: t,
@@ -53,9 +53,9 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  let n = c.Z.getChannel(e);
+  let n = c.A.getChannel(e);
   if (null == n) returnfalse;
-  h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * l.Z.Millis.SECOND + f)
+  h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * l.A.Millis.SECOND + f)
 }
 
 function E(e) {
@@ -68,7 +68,7 @@ function E(e) {
 function b(e) {
   let {
     channelId: t
-  } = e, n = c.Z.getChannel(t);
+  } = e, n = c.A.getChannel(t);
   return null != n && h(n, 0, 0)
 }
 
@@ -85,12 +85,12 @@ function O(e) {
     channelId: t,
     slowmodeType: n,
     cooldownMs: r
-  } = e, i = c.Z.getChannel(t);
+  } = e, i = c.A.getChannel(t);
   if (null == i) returnfalse;
   h(i, n, 0 === r ? 0 : r + f)
 }
 
-function v(e) {
+function A(e) {
   let {
     channels: t
   } = e;
@@ -99,19 +99,19 @@ function v(e) {
       var n;
       let t = _[e][r.id],
         i = r.rateLimitPerUser;
-      null != t && t.rateLimitPerUser !== i && h(r, e, Math.min(null != (n = null == t ? true : t.cooldownMs) ? n : 0, i * l.Z.Millis.SECOND))
+      null != t && t.rateLimitPerUser !== i && h(r, e, Math.min(null != (n = null == t ? true : t.cooldownMs) ? n : 0, i * l.A.Millis.SECOND))
     }
   })
 }
 
-function S() {
+function v() {
   [0, 1].forEach(e => {
     Object.keys(_[e]).forEach(t => _[e][t].timer.stop()), _[e] = {}
   })
 }
-class I extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.Z, u.Z)
+    this.waitFor(c.A, u.A)
   }
   getSlowmodeCooldownGuess(e, t) {
     let n = _[null != t ? t : 0][e];
@@ -121,13 +121,13 @@ class I extends(r = Chunk442837.ZP.Store) {
     return this.getSlowmodeCooldownGuess(e.id, t) > 0 && e.rateLimitPerUser > 0
   }
 }
-d(I, "displayName", "SlowmodeStore");
-let T = new I(Chunk570140.Z, {
+d(S, "displayName", "SlowmodeStore");
+let I = new S(Chunk73153.h, {
   SLOWMODE_RESET_COOLDOWN: y,
   SLOWMODE_SET_COOLDOWN: O,
   UPLOAD_START: E,
   UPLOAD_FAIL: b,
   UPLOAD_CANCEL_REQUEST: b,
-  CHANNEL_UPDATES: v,
-  LOGOUT: S
+  CHANNEL_UPDATES: A,
+  LOGOUT: v
 })

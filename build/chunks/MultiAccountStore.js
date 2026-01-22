@@ -1,19 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 726745, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 274303, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => P,
-  q: () => m
-}), require("./539854.js");
-var a, Chunk213919 = require("./213919.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk990492 = require("./990492.js"),
-  Chunk988965 = require("./988965.js"),
-  Chunk71509 = require("./71509.js");
+  A: () => N,
+  U: () => h
+}), require("./321073.js");
+var a, Chunk247775 = require("./247775.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk111613 = require("./111613.js"),
+  Chunk50502 = require("./50502.js");
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +21,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,46 +45,47 @@ function _(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var m = function(e) {
+require("./573879.js");
+var h = function(e) {
   return e[e.INVALID = 0] = "INVALID", e[e.VALIDATING = 1] = "VALIDATING", e[e.VALID = 2] = "VALID", e
 }({});
-let g = [],
-  E = false;
+let m = [],
+  g = false;
 
-function b(e) {
+function E(e) {
   let {
     user: t
   } = e;
-  r = t.id, E = false;
-  let n = g.slice(),
+  r = t.id, g = false;
+  let n = m.slice(),
     i = n.findIndex(e => {
       let {
         id: n
       } = e;
       return n === t.id
     });
-  i > false ? (g[i].avatar = t.avatar, g[i].username = t.username, g[i].discriminator = t.discriminator, g[i].tokenStatus = 2) : n.push({
+  i > false ? (m[i].avatar = t.avatar, m[i].username = t.username, m[i].discriminator = t.discriminator, m[i].tokenStatus = 2) : n.push({
     id: t.id,
     avatar: t.avatar,
     username: t.username,
     discriminator: t.discriminator,
     tokenStatus: 2,
     pushSyncToken: null
-  }), (g = n).length > d.$H && g.splice(d.$H).forEach(e => {
+  }), (m = n).length > 5 && m.splice(5).forEach(e => {
     let {
       id: t
     } = e;
-    O(t)
+    y(t)
   })
 }
 
-function y(e) {
-  E = !!e.isSwitchingAccount, e.isSwitchingAccount || (g = g.filter(e => {
+function b(e) {
+  g = !!e.isSwitchingAccount, e.isSwitchingAccount || (m = m.filter(e => {
     let {
       id: t
     } = e;
@@ -93,76 +93,76 @@ function y(e) {
   })), r = null
 }
 
-function O(e) {
-  g = g.filter(t => {
+function y(e) {
+  m = m.filter(t => {
     let {
       id: n
     } = t;
     return n !== e
-  }), o.removeToken(e)
+  }), s.removeToken(e)
 }
 
-function v(e) {
+function O(e) {
   let {
     user: t
-  } = e, n = g.slice(), r = n.find(e => {
+  } = e, n = m.slice(), r = n.find(e => {
     let {
       id: n
     } = e;
     return n === t.id
   });
-  null != r && (r.avatar = t.avatar, r.username = t.username, r.discriminator = t.discriminator, g = n)
+  null != r && (r.avatar = t.avatar, r.username = t.username, r.discriminator = t.discriminator, m = n)
 }
 
-function S(e, t) {
-  let n = g.slice(),
+function A(e, t) {
+  let n = m.slice(),
     r = n.find(t => {
       let {
         id: n
       } = t;
       return n === e
     });
-  null != r && (r.tokenStatus = t, g = n)
+  null != r && (r.tokenStatus = t, m = n)
 }
 
-function I(e) {
+function v(e) {
   let {
     from: t,
     to: n
   } = e;
-  g = (0, c.aB)(g, t, n)
+  m = (0, c.E8)(m, t, n)
 }
 
-function T(e) {
+function S(e) {
   let {
     multiAccountMobileExperimentEnabled: t
   } = e;
   i = t
 }
 
-function C(e) {
+function I(e) {
   let {
     userId: t,
     pushSyncToken: n
   } = e;
-  g = g.map(e => e.id === t ? h(p({}, e), {
+  m = m.map(e => e.id === t ? _(f({}, e), {
     pushSyncToken: n
   }) : e)
 }
 
-function A(e) {
+function T(e) {
   let {
     invalidPushSyncTokens: t
   } = e;
-  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? h(p({}, e), {
+  m = m.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? _(f({}, e), {
     pushSyncToken: null
   }) : e)
 }
-class N extends(a = Chunk442837.ZP.PersistedStore) {
+class C extends(a = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;
-      g = null != (t = e.users) ? t : [], i = e.canUseMultiAccountMobile
+      m = null != (t = e.users) ? t : [], i = e.canUseMultiAccountMobile
     }
   }
   getCanUseMultiAccountMobile() {
@@ -170,15 +170,15 @@ class N extends(a = Chunk442837.ZP.PersistedStore) {
   }
   getState() {
     return {
-      users: g,
+      users: m,
       canUseMultiAccountMobile: i
     }
   }
   getUsers() {
-    return g
+    return m
   }
   getValidUsers() {
-    return g.filter(e => {
+    return m.filter(e => {
       let {
         tokenStatus: t
       } = e;
@@ -186,10 +186,10 @@ class N extends(a = Chunk442837.ZP.PersistedStore) {
     })
   }
   getHasLoggedInAccounts() {
-    return g.length > 0
+    return m.length > 0
   }
   getIsValidatingUsers() {
-    return g.some(e => {
+    return m.some(e => {
       let {
         tokenStatus: t
       } = e;
@@ -197,17 +197,17 @@ class N extends(a = Chunk442837.ZP.PersistedStore) {
     })
   }
   get canUseMultiAccountNotifications() {
-    return this.getCanUseMultiAccountMobile() && u.N.getCurrentConfig({
+    return this.getCanUseMultiAccountMobile() && u.w.getCurrentConfig({
       location: "09e468_1"
     }, {
       autoTrackExposure: false
     }).isMultiAccountMobileNotificationsEnabled
   }
   get isSwitchingAccount() {
-    return E
+    return g
   }
 }
-f(N, "displayName", "MultiAccountStore"), f(N, "persistKey", "MultiAccountStore"), f(N, "migrations", [e => {
+d(C, "displayName", "MultiAccountStore"), d(C, "persistKey", "MultiAccountStore"), d(C, "migrations", [e => {
   if (null != e) {
     var t;
     return {
@@ -220,16 +220,16 @@ f(N, "displayName", "MultiAccountStore"), f(N, "persistKey", "MultiAccountStore"
     canUseMultiAccountMobile: false
   }
 }]);
-let P = new N(Chunk570140.Z, {
-  CONNECTION_OPEN: b,
-  LOGOUT: y,
-  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => S(e.userId, 1),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => S(e.userId, 2),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => S(e.userId, 0),
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: e => O(e.userId),
-  MULTI_ACCOUNT_MOVE_ACCOUNT: I,
-  CURRENT_USER_UPDATE: v,
-  MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: T,
-  MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: C,
-  MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: A
+let N = new C(Chunk73153.h, {
+  CONNECTION_OPEN: E,
+  LOGOUT: b,
+  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => A(e.userId, 1),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => A(e.userId, 2),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => A(e.userId, 0),
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: e => y(e.userId),
+  MULTI_ACCOUNT_MOVE_ACCOUNT: v,
+  CURRENT_USER_UPDATE: O,
+  MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: S,
+  MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: I,
+  MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: T
 })

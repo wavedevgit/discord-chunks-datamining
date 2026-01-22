@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 669764, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 524799, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk591759 = require("./591759.js");
+  A: () => g
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk998218 = require("./998218.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,8 +47,8 @@ function _(e) {
       name: n,
       summary: i,
       websites: a,
-      themes: o,
-      genres: s,
+      themes: s,
+      genres: o,
       platforms: c,
       artwork_urls: u,
       screenshot_urls: d,
@@ -65,8 +65,8 @@ function _(e) {
       summary: i,
       summaryLocalized: h,
       websites: a,
-      themes: o,
-      genres: s,
+      themes: s,
+      genres: o,
       platforms: c,
       artwork: u,
       screenshots: d,
@@ -89,7 +89,7 @@ function h(e) {
     c.delete(e), u.add(e)
   })
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk311907.Ay.Store) {
   canFetch(e) {
     return !c.has(e) && !u.has(e) && !l.has(e) && !d.has(e)
   }
@@ -118,7 +118,7 @@ class m extends(r = Chunk442837.ZP.Store) {
     let r = null == (n = l.get(e)) ? true : n.coverImageUrl;
     if (null == r) return null;
     if (null == t) return r;
-    let i = o.Z.toURLSafe(r);
+    let i = s.A.toURLSafe(r);
     return null == i ? r : (i.searchParams.set("size", t.size.toString()), i.toString())
   }
   noDataAvailable(e) {
@@ -131,8 +131,8 @@ class m extends(r = Chunk442837.ZP.Store) {
     return l.size
   }
 }
-s(m, "displayName", "DetectableGameSupplementalStore");
-let g = new m(Chunk570140.Z, {
+o(m, "displayName", "DetectableGameSupplementalStore");
+let g = new m(Chunk73153.h, {
   LOGOUT: f,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH: p,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: _,

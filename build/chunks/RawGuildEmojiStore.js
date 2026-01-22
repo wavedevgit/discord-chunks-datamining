@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 714424, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 608960, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
-}), require("./388685.js");
-var Chunk732870 = require("./732870.js"),
-  Chunk894276 = require("./894276.js"),
-  Chunk429091 = require("./429091.js"),
-  Chunk906411 = require("./906411.js");
+  A: () => u
+}), require("./896048.js");
+var Chunk810531 = require("./810531.js"),
+  Chunk548965 = require("./548965.js"),
+  Chunk952526 = require("./952526.js"),
+  Chunk770335 = require("./770335.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +21,7 @@ function s(e, t, n) {
 function l(e, t) {
   let n = {};
   for (let i of t) n[i.id] = {
-    [r.O]: "RawGuildEmoji",
+    [r.L]: "RawGuildEmoji",
     guildId: e,
     id: i.id,
     animated: i.animated,
@@ -31,16 +31,16 @@ function l(e, t) {
     roles: i.roles,
     managed: i.managed,
     version: i.version,
-    type: o.B.GUILD
+    type: s.i.GUILD
   };
   return n
 }
-class c extends Chunk429091.d {
+class c extends Chunk952526.U {
   getGuildEmojis(e) {
     return this.getNullablePartition(e)
   }
 }
-s(c, "displayName", "RawGuildEmojiStore");
+o(c, "displayName", "RawGuildEmojiStore");
 let u = new c({
   LOGOUT: (e, t) => t.reset(),
   BACKGROUND_SYNC: (e, t) => t.reset(),
@@ -73,4 +73,4 @@ let u = new c({
   GUILD_DELETE: (e, t) => {
     t.removePartition(e.guild.id)
   }
-}, Chunk894276.fg.getCachedBridgedStoreMode())
+}, Chunk548965.ys.getCachedBridgedStoreMode())

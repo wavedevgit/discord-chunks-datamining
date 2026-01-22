@@ -1,0 +1,1 @@
+{"id":"937161","type":"experiment","data":{"kind":"guild","id":"2025-12_guild_permission_changes","label":"Guild permission breaking changes","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Guild permissions updated","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

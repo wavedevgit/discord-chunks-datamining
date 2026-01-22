@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 441729, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 8880, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  A: () => m
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ function f(e) {
     messageId: t,
     channelId: n
   } = e;
-  d = c(s({}, d), {
+  d = c(o({}, d), {
     currentMessage: {
       messageId: t,
       channelId: n
@@ -65,19 +65,19 @@ function f(e) {
 }
 
 function p() {
-  d = c(s({}, d), {
+  d = c(o({}, d), {
     currentMessage: null
   })
 }
 
 function _(e) {
-  d = c(s({}, d), {
+  d = c(o({}, d), {
     speechRate: e.speechRate
   })
 }
-class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class h extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    d = s({}, u, null != e ? e : null)
+    d = o({}, u, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
@@ -95,8 +95,8 @@ class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return d
   }
 }
-o(h, "displayName", "TTSStore"), o(h, "persistKey", "TTSStore"), o(h, "migrations", []);
-let m = new h(Chunk570140.Z, __OVERLAY__ ? {} : {
+s(h, "displayName", "TTSStore"), s(h, "persistKey", "TTSStore"), s(h, "migrations", []);
+let m = new h(Chunk73153.h, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: f,
   STOP_SPEAKING: p,
   SET_TTS_SPEECH_RATE: _

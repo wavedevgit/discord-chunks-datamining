@@ -1,0 +1,1 @@
+{"id":"871697","type":"store","data":{"name":"ViewHistoryStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"hasViewed","args":["e"]}],"events":["VIEW_HISTORY_MARK_VIEW"]},"fromModule":{"id":"97492"}}

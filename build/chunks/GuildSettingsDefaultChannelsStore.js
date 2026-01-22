@@ -1,29 +1,29 @@
-/** Chunk was on 58227 **/
-/** chunk id: 889369, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 50796 **/
+/** chunk id: 863694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
-}), require("./388685.js"), require("./642613.js");
-var l, i, Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk45966 = require("./45966.js"),
-  Chunk999382 = require("./999382.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => I
+}), require("./896048.js"), require("./638769.js");
+var l, r, Chunk735438 = require("./735438.js"),
+  s = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk591552 = require("./591552.js"),
+  Chunk555337 = require("./555337.js"),
+  Chunk652215 = require("./652215.js");
 let m = false,
   g = null,
   f = new Set;
 
 function h() {
-  m = false, g = null, null != (g = d.Z.getGuildId()) && d.Z.getSection() === u.pNK.ONBOARDING && (f = new Set(c.Z.getDefaultChannelIds(g)))
+  m = false, g = null, null != (g = d.A.getGuildId()) && d.A.getSection() === u.BEX.ONBOARDING && (f = new Set(c.A.getDefaultChannelIds(g)))
 }
-class N extends(l = Chunk442837.ZP.Store) {
+class N extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(d.Z, c.Z)
+    this.waitFor(d.A, c.A)
   }
   hasChanges() {
     if (null == g) returnfalse;
-    let e = c.Z.getDefaultChannelIds(g).sort(),
+    let e = c.A.getDefaultChannelIds(g).sort(),
       t = Array.from(f).sort();
     return !s().isEqual(e, t)
   }
@@ -36,13 +36,13 @@ class N extends(l = Chunk442837.ZP.Store) {
   get editedDefaultChannelIds() {
     return f
   }
-}(i = "displayName") in N ? Object.defineProperty(N, i, {
+}(r = "displayName") in N ? Object.defineProperty(N, r, {
   value: "GuildSettingsDefaultChannelsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : N[i] = "GuildSettingsDefaultChannelsStore";
-let I = new N(Chunk570140.Z, {
+}) : N[r] = "GuildSettingsDefaultChannelsStore";
+let I = new N(Chunk73153.h, {
   GUILD_SETTINGS_INIT: h,
   GUILD_SETTINGS_SET_SECTION: h,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: h,

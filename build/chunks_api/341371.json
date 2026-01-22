@@ -1,0 +1,1 @@
+{"id":"341371","type":"store","data":{"name":"HubEmailVerificationStore","functions":[{"name":"getState","args":[]}],"events":["HUB_VERIFY_EMAIL_SUCCESS","HUB_VERIFY_EMAIL_FAILURE"]},"fromModule":{"id":"86142"}}

@@ -1,1 +1,0 @@
-{"id":"869031","type":"experiment","data":{"kind":"user","id":"2024-10_block_user_feedback","label":"Block User Feedback Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Block User Feedback Survey","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

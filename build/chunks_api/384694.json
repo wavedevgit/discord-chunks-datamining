@@ -1,1 +1,1 @@
-{"id":"384694","type":"component","data":{},"fromModule":{"id":"2262"}}
+{"id":"384694","type":"experiment","data":{"kind":"user","id":"2024-02_desktop_animated_icons","label":"Desktop animated icons","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Animated icons enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

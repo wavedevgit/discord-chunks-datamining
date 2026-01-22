@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
-/** chunk id: 558724, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 274184, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jd: () => P,
-  ZP: () => X
-}), require("./388685.js");
-var r, Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
-  Chunk149765 = require("./149765.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk491428 = require("./491428.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk650774 = require("./650774.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk914010 = require("./914010.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js");
+  Ay: () => Q,
+  bh: () => R
+}), require("./896048.js");
+var r, Chunk989349 = require("./989349.js"),
+  a = require.n(Chunk989349),
+  Chunk136722 = require("./136722.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk246605 = require("./246605.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk498642 = require("./498642.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk967198 = require("./967198.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,33 +58,33 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = {
+let A = {
     hiddenSurveys: {},
     surveyOverride: null,
     lastFetched: null,
     lastSeen: null,
     lastActionTriggered: null
   },
-  S = v,
+  v = A,
+  S = false,
   I = false,
-  T = false,
-  C = {},
-  A = null,
+  T = {},
+  C = null,
   N = false,
-  P = Chunk70956.Z.Millis.DAY,
-  w = 10 * Chunk70956.Z.Millis.HOUR,
-  R = 7;
+  R = Chunk927813.A.Millis.DAY,
+  w = 10 * Chunk927813.A.Millis.HOUR,
+  P = 7;
 var D = function(e) {
   return e.IS_OWNER = "is_owner", e.IS_ADMIN = "is_admin", e.IS_COMMUNITY = "is_community", e.GUILD_SIZE = "guild_size", e.IS_HUB = "is_hub", e.IS_VIEWING = "is_viewing", e.GUILD_PERMISSIONS = "guild_permissions", e.GUILD_SIZE_ALL = "guild_size_all", e
 }(D || {});
 let x = new Set(Object.values(D));
 
 function L() {
-  return null == S.lastFetched || Date.now() - S.lastFetched >= P
+  return null == v.lastFetched || Date.now() - v.lastFetched >= R
 }
 
 function j() {
-  !N && (L() || null != S.surveyOverride) && (N = true, (0, u.wk)(S.surveyOverride, true))
+  !N && (L() || null != v.surveyOverride) && (N = true, (0, u.BC)(v.surveyOverride, true))
 }
 
 function M(e) {
@@ -102,21 +102,21 @@ function k(e) {
     if (!x.has(e)) returnfalse;
   let i = t.includes("guild_size_all"),
     a = true;
-  for (let s of p.Z.getGuildsArray()) {
+  for (let o of p.A.getGuildsArray()) {
     if (i || t.includes("guild_size")) {
-      let e = f.Z.getMemberCount(s.id);
+      let e = f.A.getMemberCount(o.id);
       if (null == e || null != n[0] && e < n[0] || null != n[1] && e > n[1]) {
         a = false;
         continue
       }
     }
-    if (t.includes("is_community") && !s.features.has(g.GuildFeatures.COMMUNITY) || t.includes("is_hub") && !s.features.has(g.GuildFeatures.HUB)) continue;
+    if (t.includes("is_community") && !o.features.has(g.GuildFeatures.COMMUNITY) || t.includes("is_hub") && !o.features.has(g.GuildFeatures.HUB)) continue;
     if (t.includes("guild_permissions")) {
       if (0 === r.length) continue;
       let e = false;
       for (let t of r) try {
-        let n = o.vB(t);
-        if (_.Z.can(n, s)) {
+        let n = s.iu(t);
+        if (_.A.can(n, o)) {
           e = true;
           break
         }
@@ -124,12 +124,12 @@ function k(e) {
       if (!e) continue
     }
     let l = m.default.getCurrentUser(),
-      c = (null == l ? true : l.id) === s.ownerId,
-      u = _.Z.can(g.Plq.ADMINISTRATOR, s);
+      c = (null == l ? true : l.id) === o.ownerId,
+      u = _.A.can(g.xBc.ADMINISTRATOR, o);
     if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
-    null == (C = null != C ? C : {})[e.key] && (C[e.key] = e);
-    let d = h.Z.getGuildId(),
-      p = null != d && d === s.id;
+    null == (T = null != T ? T : {})[e.key] && (T[e.key] = e);
+    let d = h.A.getGuildId(),
+      p = null != d && d === o.id;
     if ((!t.includes("is_viewing") || p) && !i) returntrue
   }
   return !!i && !!a
@@ -140,92 +140,92 @@ function U(e) {
 }
 
 function G(e) {
-  let t = l.K.get(g.z7k);
+  let t = l.w.get(g.gT8);
   return null == t || a()().diff(t, "day") < e
 }
 
-function Z(e) {
+function V(e) {
   let {
     survey: t,
     isActionTriggered: n
   } = e;
-  N = false, S.lastFetched = Date.now(), n && (S.lastActionTriggered = Date.now()), null == S.hiddenSurveys && (S.hiddenSurveys = {});
+  N = false, v.lastFetched = Date.now(), n && (v.lastActionTriggered = Date.now()), null == v.hiddenSurveys && (v.hiddenSurveys = {});
   let r = null != t,
-    i = r && null == S.hiddenSurveys[t.key],
+    i = r && null == v.hiddenSurveys[t.key],
     a = r && M(t);
-  G(R);
-  let o = false;
-  A = i && a && !o ? t : null
+  G(P);
+  let s = false;
+  C = i && a && !s ? t : null
 }
 
 function F(e) {
   let {
     id: t
   } = e;
-  S.surveyOverride = t, null != t && delete S.hiddenSurveys[t], (0, u.wk)(S.surveyOverride, true)
+  v.surveyOverride = t, null != t && delete v.hiddenSurveys[t], (0, u.BC)(v.surveyOverride, true)
 }
 
 function B() {
+  S = true
+}
+
+function H() {
   I = true
 }
 
-function V() {
-  T = true
-}
-
-function H(e) {
+function Y(e) {
   let {
     key: t
   } = e;
-  S.hiddenSurveys[t] = true, A = null, C = null != C ? C : {}, delete C[t]
+  v.hiddenSurveys[t] = true, C = null, T = null != T ? T : {}, delete T[t]
 }
 
-function Y() {
-  S.hiddenSurveys = {}
+function W() {
+  v.hiddenSurveys = {}
 }
 
-function W(e) {
-  return !!M(e) || (A = null, false)
-}
-
-function K() {
-  let e = Object.values(C = null != C ? C : {})[0];
-  return null != e && M(e) ? void Z({
-    type: "SURVEY_FETCHED",
-    survey: e
-  }) : null != A && void(A = null)
+function K(e) {
+  return !!M(e) || (C = null, false)
 }
 
 function z() {
-  if (null != A && W(A)) returnfalse;
-  K()
+  let e = Object.values(T = null != T ? T : {})[0];
+  return null != e && M(e) ? void V({
+    type: "SURVEY_FETCHED",
+    survey: e
+  }) : null != C && void(C = null)
 }
 
 function q() {
-  S.lastSeen = Date.now()
+  if (null != C && K(C)) returnfalse;
+  z()
 }
-class Q extends(r = Chunk442837.ZP.PersistedStore) {
+
+function X() {
+  v.lastSeen = Date.now()
+}
+class Z extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.Z, p.Z, _.Z, h.Z, m.default), S = null != e ? e : v, this.syncWith([h.Z], z)
+    this.waitFor(f.A, p.A, _.A, h.A, m.default), v = null != e ? e : A, this.syncWith([h.A], q)
   }
   getState() {
-    return S
+    return v
   }
   getCurrentSurvey() {
-    return L() ? null : A
+    return L() ? null : C
   }
   getSurveyOverride() {
-    return S.surveyOverride
+    return v.surveyOverride
   }
   getLastSeenTimestamp() {
-    return S.lastSeen
+    return v.lastSeen
   }
   shouldAllowSurveyAction() {
     var e;
-    return Date.now() - (null != (e = S.lastActionTriggered) ? e : 0) >= w
+    return Date.now() - (null != (e = v.lastActionTriggered) ? e : 0) >= w
   }
 }
-E(Q, "displayName", "SurveyStore"), E(Q, "persistKey", "SurveyStore"), E(Q, "migrations", [e => {
+E(Z, "displayName", "SurveyStore"), E(Z, "persistKey", "SurveyStore"), E(Z, "migrations", [e => {
   let t = b({}, e);
   return delete t.validSurveys, delete t.currentSurvey, delete t.iosIsPushNotificationClicked, delete t.iosIsInviteShown, delete t.iosFirstRunDate, t
 }, e => {
@@ -239,14 +239,14 @@ E(Q, "displayName", "SurveyStore"), E(Q, "persistKey", "SurveyStore"), E(Q, "mig
     hiddenSurveys: null != (t = e.hiddenSurveys) ? t : {}
   })
 }]);
-let X = new Q(Chunk570140.Z, {
+let Q = new Z(Chunk73153.h, {
   CONNECTION_OPEN: j,
   CONNECTION_RESUMED: j,
-  SURVEY_FETCHED: Z,
-  SURVEY_HIDE: H,
+  SURVEY_FETCHED: V,
+  SURVEY_HIDE: Y,
   SURVEY_OVERRIDE: F,
   PUSH_NOTIFICATION_CLICK: B,
-  DISPLAYED_INVITE_SHOW: V,
-  LOGOUT: Y,
-  SURVEY_SEEN: q
+  DISPLAYED_INVITE_SHOW: H,
+  LOGOUT: W,
+  SURVEY_SEEN: X
 })

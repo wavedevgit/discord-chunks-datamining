@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 535584, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 943849, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => l
+  L: () => l
 });
-var Chunk710845 = require("./710845.js"),
-  Chunk818083 = require("./818083.js"),
-  Chunk231338 = require("./231338.js");
-let o = (0, Chunk818083.B)({
+var Chunk626584 = require("./626584.js"),
+  Chunk600975 = require("./600975.js"),
+  Chunk818348 = require("./818348.js");
+let s = (0, Chunk600975.C)({
     id: "2024-04_quests_logging",
     kind: "user",
     label: "Quests Logging",
@@ -28,7 +28,7 @@ let o = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = () => o.getCurrentConfig({
+  o = () => s.getCurrentConfig({
     location: "quests_logging"
   }, {
     autoTrackExposure: false
@@ -38,13 +38,13 @@ function l() {
   let {
     quest: e,
     location: t
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = s(), i = null == e ? true : e.config.messages.questName, o = null != t ? "-".concat(t) : "", l = null != i ? "-".concat(i, ")") : "", c = "QuestLogger".concat(o).concat(l), u = new r.Z(c);
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = o(), i = null == e ? true : e.config.messages.questName, s = null != t ? "-".concat(t) : "", l = null != i ? "-".concat(i, ")") : "", c = "QuestLogger".concat(s).concat(l), u = new r.A(c);
   return {
-    log: n ? u.log : a.dG,
-    warn: n ? u.warn : a.dG,
-    error: n ? u.error : a.dG,
-    info: n ? u.info : a.dG,
-    verbose: n ? u.verbose : a.dG,
-    trace: n ? u.trace : a.dG
+    log: n ? u.log : a.tE,
+    warn: n ? u.warn : a.tE,
+    error: n ? u.error : a.tE,
+    info: n ? u.info : a.tE,
+    verbose: n ? u.verbose : a.tE,
+    trace: n ? u.trace : a.tE
   }
 }

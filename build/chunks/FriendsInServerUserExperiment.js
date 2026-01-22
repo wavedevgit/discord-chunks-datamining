@@ -1,9 +1,9 @@
-/** Chunk was on 97368 **/
-/** chunk id: 557239, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97357 **/
+/** chunk id: 494713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  A: () => i
 });
-let i = (0, require("./818083.js").B)({
+let i = (0, require("./600975.js").C)({
   kind: "user",
   id: "2024-09_friends_in_server",
   label: "Friends in Server",

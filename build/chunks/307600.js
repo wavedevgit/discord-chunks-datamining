@@ -1,0 +1,162 @@
+/** Chunk was on web.js **/
+/** chunk id: 307600, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  h: () => R,
+  m: () => N
+});
+var Chunk280230 = require("./280230.js"),
+  i = require.n(Chunk280230),
+  Chunk157559 = require("./157559.js"),
+  Chunk318972 = require("./318972.js"),
+  Chunk975807 = require("./975807.js"),
+  Chunk73539 = require("./73539.jsx"),
+  Chunk754450 = require("./754450.js"),
+  Chunk343328 = require("./343328.js"),
+  Chunk868582 = require("./868582.jsx"),
+  Chunk784947 = require("./784947.js"),
+  Chunk235393 = require("./235393.js"),
+  Chunk694403 = require("./694403.js"),
+  Chunk953866 = require("./953866.jsx"),
+  Chunk788995 = require("./788995.jsx"),
+  Chunk556022 = require("./556022.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk259439 = require("./259439.js"),
+  Chunk155078 = require("./155078.js"),
+  Chunk320501 = require("./320501.js"),
+  Chunk994500 = require("./994500.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk954571 = require("./954571.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk985018 = require("./985018.jsx");
+
+function N(e, t) {
+  var n;
+  let r = E.A.getChannel(S.A.getChannelId());
+  return (null == r || r.type !== T.rbe.DM || !!v.A.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
+}
+
+function R(e, t) {
+  let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
+    v = arguments.length > 3 ? arguments[3] : true,
+    {
+      trusted: S,
+      onClick: N,
+      onConfirm: R,
+      onCancel: w,
+      shouldConfirm: P,
+      messageId: D,
+      channelId: x
+    } = e,
+    L = i().sanitizeUrl(e.href);
+  if (null == L) {
+    null != t && t.preventDefault(), a.A.show({
+      title: C.intl.string(C.t.x87gan),
+      body: C.intl.format(C.t["9rqRwl"], {
+        url: e.href
+      }),
+      isDismissable: true,
+      contextKey: v
+    });
+    return
+  }
+  let j = L;
+  try {
+    decodeURI(L)
+  } catch (e) {
+    j = encodeURI(L)
+  }
+  let M = null,
+    k = false,
+    U = D,
+    G = x,
+    V = null;
+  if (null != D && null != x) {
+    var F, B, H;
+    let e = A.A.getMessage(x, D),
+      t = E.A.getBasicChannel(x);
+    M = null != (F = null == t ? true : t.guild_id) ? F : null;
+    let n = b.A.getGuild(M),
+      r = (null == e || null == (B = e.messageReference) ? true : B.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(T.pr7.IS_CROSSPOST)) && null != M;
+    r && (null == e || null == (H = e.messageReference) ? true : H.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, V = e.messageReference.guild_id) : V = M;
+    let i = (null == t ? true : t.type) === T.rbe.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(T.GuildFeatures.COMMUNITY)) === true,
+      a = (null == e ? true : e.hasFlag(T.pr7.EPHEMERAL)) === true;
+    k = null != e && !a && (r || i)
+  }
+  if (null != x) {
+    let e = E.A.getChannel(x),
+      t = b.A.getGuild(null == e ? true : e.getGuildId());
+    null != e && null != t && t.features.has(T.GuildFeatures.DISCOVERABLE) && I.default.track(T.HAw.URL_CLICKED, {
+      url_domain: (0, O.E)(j),
+      guild_id: t.id,
+      channel_id: e.id
+    }), (0, u.A)(x) && I.default.track(T.HAw.CHANGE_LOG_CTA_CLICKED, {
+      cta_type: "inline_link",
+      target: j
+    })
+  }
+  if (p.A.trackLinkClicked(j), null != N) {
+    if (N(t)) return
+  } else {
+    let {
+      default: e
+    } = n(352423), i = e(j, {
+      skipExtensionCheck: true,
+      analyticsLocations: r
+    });
+    if (null != i && i(t)) return
+  }
+  let Y = () => {
+      (k && p.A.trackAnnouncementMessageLinkClicked({
+        messageId: U,
+        channelId: x,
+        guildId: M,
+        sourceChannelId: G,
+        sourceGuildId: V
+      }), null != R) ? R(): (0, o.A)(j)
+    },
+    W = null != w ? w : () => {};
+  if (null !== c.A.isBlockedDomain(j)) {
+    null == t || t.preventDefault(), l.A.show(j);
+    return
+  }
+  if (null != (0, g.m)(j)) {
+    null == t || t.preventDefault(), m.A.show(j);
+    return
+  }
+  if ((0, f.Y)(j)) {
+    null == t || t.preventDefault(), d.A.show(j);
+    return
+  }
+  let K = "function" == typeof S ? S() : S,
+    z = (0, O.J)(j),
+    q = "http:" !== z && "https:" !== z;
+  if (!q && (K || y.A.isTrustedDomain(j)) || q && y.A.isTrustedProtocol(j)) return void(null == t || null != P && P ? Y() : k && p.A.trackAnnouncementMessageLinkClicked({
+    messageId: U,
+    channelId: x,
+    guildId: M,
+    sourceChannelId: G,
+    sourceGuildId: V
+  }));
+  if (null != t && t.preventDefault(), q) h.A.show({
+    url: j,
+    trustUrl: s.u,
+    onConfirm: Y,
+    onCancel: W,
+    isProtocol: true,
+    contextKey: v
+  });
+  else {
+    let e = (0, _.W1)(j),
+      t = null != e ? e.displayTarget : j;
+    h.A.show({
+      url: t,
+      trustUrl: s.b,
+      onConfirm: Y,
+      onCancel: W,
+      isProtocol: false,
+      contextKey: v
+    })
+  }
+}

@@ -1,0 +1,101 @@
+/** Chunk was on web.js **/
+/** chunk id: 503364, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => h
+});
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk990078 = require("./990078.jsx"),
+  Chunk397927 = require("./397927.js"),
+  Chunk442433 = require("./442433.js"),
+  Chunk50268 = require("./50268.jsx"),
+  Chunk67518 = require("./67518.jsx"),
+  Chunk985018 = require("./985018.jsx");
+
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function p(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function h(e) {
+  let {
+    applicationId: t,
+    className: n
+  } = e, d = i.useRef(null), p = (0, l.A)({
+    id: t,
+    label: u.intl.string(u.t["FfCL+6"])
+  }), h = (0, c.n)(t);
+  return null == p && null == h ? null : (0, r.jsx)(s.YNO, {
+    targetElementRef: d,
+    align: "top",
+    position: "right",
+    disablePointerEvents: false,
+    renderPopout: e => {
+      let {
+        closePopout: t
+      } = e;
+      return (0, r.jsx)(s.W1t, {
+        navId: "game-profile-context",
+        onClose: () => {
+          (0, o.Z_)(), t()
+        },
+        "aria-label": u.intl.string(u.t.PNeFgW),
+        onSelect: () => {},
+        children: (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(s.rXV, {
+            children: p
+          }), (0, r.jsx)(s.rXV, {
+            children: h
+          })]
+        })
+      })
+    },
+    children: e => (0, r.jsx)(a.m, {
+      text: u.intl.string(u.t["UKOtz+"]),
+      children: (0, r.jsx)(s.DUT, _(f({
+        innerRef: d,
+        className: n
+      }, e), {
+        children: (0, r.jsx)(s.jNK, {
+          size: "xs",
+          color: s.LU0.colors.WHITE
+        })
+      }))
+    })
+  })
+}

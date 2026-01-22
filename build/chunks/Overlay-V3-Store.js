@@ -1,32 +1,32 @@
 /** Chunk was on web.js **/
-/** chunk id: 610394, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 395011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eT
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk13245 = require("./13245.js"),
-  Chunk710845 = require("./710845.js"),
-  Chunk594190 = require("./594190.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk355863 = require("./355863.js"),
-  Chunk145597 = require("./145597.js"),
-  Chunk837268 = require("./837268.js"),
-  Chunk378020 = require("./378020.js"),
-  Chunk932404 = require("./932404.js"),
-  Chunk381367 = require("./381367.js"),
-  Chunk670785 = require("./670785.js"),
-  Chunk76623 = require("./76623.js"),
-  Chunk322155 = require("./322155.js"),
-  Chunk338949 = require("./338949.js"),
-  Chunk509140 = require("./509140.js"),
-  Chunk575140 = require("./575140.js"),
-  Chunk886189 = require("./886189.js"),
-  Chunk987650 = require("./987650.js"),
-  Chunk757744 = require("./757744.js");
+  A: () => eI
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk684013 = require("./684013.js"),
+  Chunk626584 = require("./626584.js"),
+  Chunk15285 = require("./15285.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk555528 = require("./555528.js"),
+  Chunk9302 = require("./9302.js"),
+  Chunk41984 = require("./41984.js"),
+  Chunk870507 = require("./870507.js"),
+  Chunk682763 = require("./682763.js"),
+  Chunk912865 = require("./912865.js"),
+  Chunk275115 = require("./275115.js"),
+  Chunk321090 = require("./321090.js"),
+  Chunk222506 = require("./222506.js"),
+  Chunk127242 = require("./127242.js"),
+  Chunk680243 = require("./680243.js"),
+  Chunk96175 = require("./96175.js"),
+  Chunk905555 = require("./905555.js"),
+  Chunk672396 = require("./672396.js"),
+  Chunk644434 = require("./644434.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +35,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,13 +60,13 @@ function A(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = new Chunk710845.Z("OverlayV3Store"),
+let R = new Chunk626584.A("OverlayV3Store"),
   w = new Set,
-  R = new Set,
+  P = new Set,
   D = null,
   x = null,
   L = null,
@@ -75,116 +75,116 @@ let P = new Chunk710845.Z("OverlayV3Store"),
   k = null,
   U = null,
   G = null,
-  Z = {},
+  V = {},
   F = {},
   B = {};
 
-function V(e, t) {
+function H(e, t) {
   null == B[e] && (B[e] = new Set), B[e].add(t)
 }
 
-function H(e) {
+function Y(e) {
   null != B[e] && (B[e] = new Set)
 }
-let Y = (0, Chunk575140.r4)();
+let W = (0, Chunk96175.I2)();
 
-function W() {
-  Y = (0, O.r4)()
+function K() {
+  W = (0, O.I2)()
 }
 
-function K(e, t) {
+function z(e, t) {
   if (null != D) {
     null != t && (F[e] = t);
     try {
       if (D.trackGame(e), w.has(e)) return;
-      w.add(e), (0, _.PY)(e, "maybeTrackGame", {
-        newOverlayMethod: null != t ? f.gl[t] : null
-      }), o.Z.updateOverlayState(e, f.mM.WAITING_FOR_POPOUT_OPEN, "OverlayStore.maybeTrackGame")
+      w.add(e), (0, _.dK)(e, "maybeTrackGame", {
+        newOverlayMethod: null != t ? f.Ue[t] : null
+      }), s.A.updateOverlayState(e, f.AR.WAITING_FOR_POPOUT_OPEN, "OverlayStore.maybeTrackGame")
     } catch (t) {
-      P.error("Error tracking game:", t), (0, _.PV)(e, t, {
+      R.error("Error tracking game:", t), (0, _.mD)(e, t, {
         crashType: "renderer"
       })
     }
   }
 }
 
-function z(e) {
+function q(e) {
   if (!w.has(e)) return;
   let t = F[e],
-    n = Z[e];
-  (0, _.PY)(e, "removeTrackedGame", {
-    overlayMethod: null != t ? f.gl[t] : null,
+    n = V[e];
+  (0, _.dK)(e, "removeTrackedGame", {
+    overlayMethod: null != t ? f.Ue[t] : null,
     overlayState: n
-  }), w.delete(e), delete Z[e], delete F[e], R.delete(e);
+  }), w.delete(e), delete V[e], delete F[e], P.delete(e);
   try {
     if (null == D) return;
-    D.untrackGame(e), P.verbose("Removing tracked game ".concat(e));
+    D.untrackGame(e), R.verbose("Removing tracked game ".concat(e));
     let t = w.values().next().value;
     U === e && (U = null != t ? t : null)
   } catch (t) {
-    P.error("Error removing tracked game:", t), (0, _.PV)(e, t, {
+    R.error("Error removing tracked game:", t), (0, _.mD)(e, t, {
       crashType: "native"
     })
   }
 }
 
-function q() {
+function X() {
   try {
     for (let e of w) null == D || D.untrackGame(e);
-    w.clear(), (0, _.bs)(null, "clearTrackedGames"), Z = {}, F = {}, R.clear(), P.verbose("Cleared all tracked games")
+    w.clear(), (0, _._r)(null, "clearTrackedGames"), V = {}, F = {}, P.clear(), R.verbose("Cleared all tracked games")
   } catch (e) {
-    P.error("Error clearing tracked games:", e), (0, _.PV)(d.UNSET_PID, e, {
+    R.error("Error clearing tracked games:", e), (0, _.mD)(d.UNSET_PID, e, {
       crashType: "native"
     })
   }
 }
-async function Q() {
-  if (!y.Z.isOverlayEnabled) return void q();
+async function Z() {
+  if (!y.A.isOverlayEnabled) return void X();
   await ei();
-  let e = new Set(l.ZP.getRunningGames().filter(e => l.ZP.getOverlayEnabledForGame(e)).map(e => e.pid));
-  for (let t of new Set([...w].filter(t => !e.has(t)))) z(t);
-  for (let e of w) K(e)
+  let e = new Set(l.Ay.getRunningGames().filter(e => l.Ay.getOverlayEnabledForGame(e)).map(e => e.pid));
+  for (let t of new Set([...w].filter(t => !e.has(t)))) q(t);
+  for (let e of w) z(e)
 }
 
-function X(e) {
-  let t = l.ZP.getGameOrTransformedSubgameForPID(e);
-  o.Z.setAssociatedGame(null != U ? U : d.UNSET_PID, e, t)
+function Q(e) {
+  let t = l.Ay.getGameOrTransformedSubgameForPID(e);
+  s.A.setAssociatedGame(null != U ? U : d.UNSET_PID, e, t)
 }
 
-function J() {
+function $() {
   var e;
-  null != k && M === k && null != D && (k = null, (0, _.PY)(M, "renderer_window_refreshing_finished"), null == (e = D.readyToShow) || e.call(D, M), o.Z.updateOverlayState(M, f.mM.OVERLAY_RENDERING, "checkPopoutRefresh"), P.verbose("Showing overlay v3 for pid ".concat(M)))
+  null == k || M !== k || null != D && (k = null, (0, _.dK)(M, "renderer_window_refreshing_finished"), null == (e = D.readyToShow) || e.call(D, M), s.A.updateOverlayState(M, f.AR.OVERLAY_RENDERING, "checkPopoutRefresh"), R.verbose("Showing overlay v3 for pid ".concat(M)))
 }
 
-function $(e, t) {
+function J(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null != e) {
-    let t = F[e] === f.gl.OutOfProcessLimitedInteraction;
+    let t = F[e] === f.Ue.OutOfProcessLimitedInteraction;
     if (t !== G) {
       G = t;
       try {
-        "function" == typeof(null == D ? true : D.setLimitedInteraction) ? (P.info("Setting limited interaction", t), (0, _.bs)(e, "focus_and_interaction_set", {
+        "function" == typeof(null == D ? true : D.setLimitedInteraction) ? (R.info("Setting limited interaction", t), (0, _._r)(e, "focus_and_interaction_set", {
           isLimitedInteraction: t,
           focusable: !t
-        }), D.setLimitedInteraction(t)) : P.info("No setLimitedInteraction function found, skipping")
+        }), D.setLimitedInteraction(t)) : R.info("No setLimitedInteraction function found, skipping")
       } catch (t) {
-        P.error("Error setting limited interaction mode:", t), (0, _.PV)(e, t, {
+        R.error("Error setting limited interaction mode:", t), (0, _.mD)(e, t, {
           crashType: "native"
         })
       }
     }
   }
-  o.Z.setFocusedPID(0 === e ? null : e, t, n)
+  s.A.setFocusedPID(0 === e ? null : e, t, n)
 }
 
 function ee() {
-  $(null, null, true)
+  J(null, null, true)
 }
 
 function et(e) {
-  if (Y.allDone) {
-    if (!R.has(e)) return void o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "maybeTrackSuccessfullyShown");
-    o.Z.successfullyShown(e)
+  if (W.allDone) {
+    if (!P.has(e)) return void s.A.updateOverlayState(e, f.AR.WAITING_FOR_SUCCESSFUL_SHOW, "maybeTrackSuccessfullyShown");
+    s.A.successfullyShown(e)
   }
 }
 
@@ -192,38 +192,38 @@ function en(e) {
   let {
     pid: t
   } = e;
-  R.add(t), et(t)
+  P.add(t), et(t)
 }
 
 function er(e) {
   let {
     initialized: t
   } = e;
-  if (Y = N(C({}, Y), {
+  if (W = N(T({}, W), {
       windowHandleSentToNative: t
     }), t) {
     let e = null != j ? j : d.UNSET_PID;
-    Y.reactInitializationStarted ? o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "handleOverlayV3WindowHandleInitialized") : o.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION, "handleOverlayV3WindowHandleInitialized"), (0, _.bs)(e, "window_handle_initialized")
+    W.reactInitializationStarted ? s.A.updateOverlayState(e, f.AR.WAITING_FOR_SUCCESSFUL_SHOW, "handleOverlayV3WindowHandleInitialized") : s.A.updateOverlayState(e, f.AR.WAITING_FOR_REACT_INITIALIZATION, "handleOverlayV3WindowHandleInitialized"), (0, _._r)(e, "window_handle_initialized")
   }
 }
 async function ei() {
-  y.Z.isModuleLoaded || y.Z.isModuleLoading || await (0, _.Nk)(), D = await (0, v.H)()
+  y.A.isModuleLoaded || y.A.isModuleLoading || await (0, _.P_)(), D = await (0, A.N)()
 }
 async function ea(e) {
-  e.overlayMethod === f.gl.OutOfProcess || e.overlayMethod === f.gl.OutOfProcessLimitedInteraction ? (await ei(), K(e.pid, e.overlayMethod)) : z(e.pid), eI.emitChange()
+  e.overlayMethod === f.Ue.OutOfProcess || e.overlayMethod === f.Ue.OutOfProcessLimitedInteraction ? (await ei(), z(e.pid, e.overlayMethod)) : q(e.pid), eS.emitChange()
 }
 
-function eo() {
-  W(), G = null
+function es() {
+  K(), G = null
 }
 
-function es(e) {
+function eo(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  Y = N(C({}, Y), {
+  W = N(T({}, W), {
     popoutOpened: true
-  }), X(t), U = t, j = t, (0, d.setPID)(t)
+  }), Q(t), U = t, j = t, (0, d.setPID)(t)
 }
 
 function el(e) {
@@ -231,7 +231,7 @@ function el(e) {
     createWindowTriggeringPID: t,
     nativeWindowHandle: n
   } = e;
-  o.Z.updateOverlayState(t, f.mM.WAITING_FOR_MODULE_POPOUT_CAPTURE, "handleOverlayCreateWindowHandleSuccess")
+  s.A.updateOverlayState(t, f.AR.WAITING_FOR_MODULE_POPOUT_CAPTURE, "handleOverlayCreateWindowHandleSuccess")
 }
 
 function ec(e) {
@@ -240,23 +240,23 @@ function ec(e) {
     error: n,
     nativeWindowHandle: r
   } = e;
-  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), Y = N(C({}, Y), {
+  s.A.updateOverlayState(t, f.AR.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), W = N(T({}, W), {
     errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + n
-  }), (0, _.bs)(t, "renderer_window_mounting_failed", {
+  }), (0, _._r)(t, "renderer_window_mounting_failed", {
     error: n,
-    popoutInitializationStages: Y
+    popoutInitializationStages: W
   })
 }
 
 function eu() {
-  ee(), null != U && H(U), U = null, j = null, (0, d.setPID)(d.UNSET_PID), W()
+  ee(), null != U && Y(U), U = null, j = null, (0, d.setPID)(d.UNSET_PID), K()
 }
 
 function ed(e) {
   let {
     refreshingPID: t
   } = e;
-  return P.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, U = t, j = t, (0, d.setPID)(t), X(t), J(), true
+  return R.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, U = t, j = t, (0, d.setPID)(t), Q(t), $(), true
 }
 
 function ef(e) {
@@ -265,8 +265,7 @@ function ef(e) {
     windowHandle: n,
     windowClass: r
   } = e;
-  if (null != r && p.$.has(r)) return void ee();
-  $(t, null != n ? (0, O.rd)(n) : null), t !== x && P.info("OverlayStore: Focused new PID", t)
+  null != r && p.C.has(r) ? ee() : (J(t, null != n ? (0, O.Oy)(n) : null), t !== x && R.info("OverlayStore: Focused new PID", t))
 }
 
 function ep() {
@@ -278,9 +277,9 @@ function e_(e) {
     pid: t,
     windowHandle: n
   } = e;
-  if (null != n && null != t && V(t, (0, O.rd)(n)), x !== t || L !== n) {
+  if (null != n && null != t && H(t, (0, O.Oy)(n)), x !== t || L !== n) {
     var r;
-    (0, _.bs)(null != (r = null != t ? t : x) ? r : d.UNSET_PID, "overlay_focused", {
+    (0, _._r)(null != (r = null != t ? t : x) ? r : d.UNSET_PID, "overlay_focused", {
       focusedPID: t,
       focusedWindowHandle: L,
       windowHandle: n
@@ -291,13 +290,13 @@ function e_(e) {
 
 function eh() {
   var e;
-  Y = N(C({}, Y), {
+  W = N(T({}, W), {
     showInactiveCalled: true
   }), null == D || null == (e = D.onNativePopoutShowInactiveSuccess) || e.call(D)
 }
 
 function em() {
-  Y = N(C({}, Y), {
+  W = N(T({}, W), {
     allDone: true
   }), w.forEach(e => {
     et(e)
@@ -308,7 +307,7 @@ function eg(e) {
   let {
     update: t
   } = e;
-  Y = C({}, Y, t)
+  W = T({}, W, t)
 }
 
 function eE(e) {
@@ -317,41 +316,41 @@ function eE(e) {
     pid: r,
     windowHandle: i
   } = e;
-  M = r, J(), null != i && null != r && V(r, (0, O.rd)(i)), null != D && (null != i || (null == (t = D.version) ? true : t.call(D)) > 0) && (null == (n = D.setRenderingWindowHandle) || n.call(D, (0, O.rd)(null != i ? i : "0"), r))
+  M = r, $(), null != i && null != r && H(r, (0, O.Oy)(i)), null != D && (null != i || (null == (t = D.version) ? true : t.call(D)) > 0) && (null == (n = D.setRenderingWindowHandle) || n.call(D, (0, O.Oy)(null != i ? i : "0"), r))
 }
 
 function eb(e) {
-  P.verbose("Updating OverlayMethod", e), ea(e)
+  R.verbose("Updating OverlayMethod", e), ea(e)
 }
 
 function ey(e) {
-  Z[e.pid] = e.overlayState
+  V[e.pid] = e.overlayState
 }
 
 function eO() {
-  D = y.Z.getNativeModule(), Q()
+  D = y.A.getNativeModule(), Z()
 }
 
-function ev() {
+function eA() {
   D = null
 }
-class eS extends(r = Chunk442837.ZP.Store) {
+class ev extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.default, u.Z, h.Z, m.Z, g.Z, E.Z, b.Z, y.Z, l.ZP)
+    this.waitFor(c.default, u.A, h.A, m.A, g.A, E.A, b.A, y.A, l.Ay)
   }
   isOverlayV3EnabledForPID(e) {
     return w.has(e)
   }
   getWidgetByType(e) {
-    let t = u.Z.getLayout(I.$S);
+    let t = u.A.getLayout(S.G);
     if (null != t) {
       let r = t.widgets.find(t => {
-        let n = u.Z.getWidget(t);
+        let n = u.A.getWidget(t);
         return null != n && n.type === e ? t : null
       });
       if (null != r) {
         var n;
-        return null != (n = u.Z.getWidget(r)) ? n : null
+        return null != (n = u.A.getWidget(r)) ? n : null
       }
     }
     return null
@@ -361,7 +360,7 @@ class eS extends(r = Chunk442837.ZP.Store) {
     return null != t && t.pinned
   }
   getTargetPID() {
-    return S.y3 && (j === d.UNSET_PID || null == j) ? d.DEV_PID : null != j ? j : d.UNSET_PID
+    return v.ed && (j === d.UNSET_PID || null == j) ? d.DEV_PID : null != j ? j : d.UNSET_PID
   }
   getFocusedPID() {
     return x
@@ -377,32 +376,32 @@ class eS extends(r = Chunk442837.ZP.Store) {
   }
   getFocusedRunningGame() {
     var e;
-    return null == x ? null : null != (e = l.ZP.getGameOrTransformedSubgameForPID(x)) ? e : null
+    return null == x ? null : null != (e = l.Ay.getGameOrTransformedSubgameForPID(x)) ? e : null
   }
   getPopoutInitializationStages() {
-    return Y
+    return W
   }
   isWindowHandleInitialized() {
-    return Y.windowHandleSentToNative
+    return W.windowHandleSentToNative
   }
   isReady(e) {
-    return !!w.has(e) && Z[e] === f.mM.OVERLAY_RENDERING
+    return !!w.has(e) && V[e] === f.AR.OVERLAY_RENDERING
   }
   getOverlayState(e) {
     var t;
-    return null != (t = Z[e]) ? t : null
+    return null != (t = V[e]) ? t : null
   }
   getIsOverlayPreShown(e) {
-    let t = Z[e];
-    return null != t && O.FX.has(t)
+    let t = V[e];
+    return null != t && O.Ms.has(t)
   }
   getOverlayMethod(e) {
     var t;
     return null != (t = F[e]) ? t : null
   }
 }
-T(eS, "displayName", "Overlay-V3-Store");
-let eI = new eS(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
+I(ev, "displayName", "Overlay-V3-Store");
+let eS = new ev(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {
     OVERLAY_FOCUSED: e_
   } : {
     OVERLAY_UPDATE_OVERLAY_METHOD: eb,
@@ -412,12 +411,12 @@ let eI = new eS(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
     OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS: eh,
     OVERLAY_OOP_POPOUT_INITIALIZATION_STAGE_CHANGED: eg,
     OVERLAY_UI_FOCUSED_PID: eE,
-    OVERLAY_V3_PRE_CREATE_POPOUT: eo,
-    OVERLAY_V3_POST_CREATE_POPOUT: es,
+    OVERLAY_V3_PRE_CREATE_POPOUT: es,
+    OVERLAY_V3_POST_CREATE_POPOUT: eo,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: el,
     OVERLAY_V3_WINDOW_CREATION_FAILURE: ec,
     OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: eO,
-    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: ev,
+    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: eA,
     OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: ed,
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: eu,
     OVERLAY_V3_NATIVE_FOCUS_GAINED: ef,
@@ -425,4 +424,4 @@ let eI = new eS(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
     OVERLAY_V3_NATIVE_SUCCESSFULLY_SHOWN: en,
     OVERLAY_V3_NATIVE_WINDOW_HANDLE_INITIALIZED: er
   }),
-  eT = eI
+  eI = eS

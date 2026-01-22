@@ -1,4 +1,9 @@
 /** Chunk was on web.js **/
-/** chunk id: 181729, original params: e (module,exports,re quire) **/
+/** chunk id: 181729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-module.exports = "/assets/ee9728bf83716149.svg"
+require.d(exports, {
+  A: () => r
+});
+let r = {
+  disabled: false
+}

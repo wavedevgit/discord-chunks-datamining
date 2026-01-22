@@ -1,0 +1,65 @@
+/** Chunk was on 47950 **/
+/** chunk id: 872342, original params: e,t,r (module,exports,require) **/
+"use strict";
+require.d(exports, {
+  A: () => l
+});
+var Chunk64700 = require("./64700.js"),
+  Chunk205662 = require("./205662.js"),
+  Chunk708005 = require("./708005.js"),
+  i = function(e) {
+    var t = e.color,
+      r = e.onClick,
+      i = e.onSwatchHover,
+      l = e.hover,
+      s = e.active,
+      u = e.circleSize,
+      c = e.circleSpacing,
+      p = (0, o.default)({
+        default: {
+          swatch: {
+            width: u,
+            height: u,
+            marginRight: c,
+            marginBottom: c,
+            transform: "scale(1)",
+            transition: "100ms transform ease"
+          },
+          Swatch: {
+            borderRadius: "50%",
+            background: "transparent",
+            boxShadow: "inset 0 0 0 " + (u / 2 + 1) + "px " + t,
+            transition: "100ms box-shadow ease"
+          }
+        },
+        hover: {
+          swatch: {
+            transform: "scale(1.2)"
+          }
+        },
+        active: {
+          Swatch: {
+            boxShadow: "inset 0 0 0 3px " + t
+          }
+        }
+      }, {
+        hover: l,
+        active: s
+      });
+    return n.createElement("div", {
+      style: p.swatch
+    }, n.createElement(a.rp, {
+      style: p.Swatch,
+      color: t,
+      onClick: r,
+      onHover: i,
+      focusStyle: {
+        boxShadow: p.Swatch.boxShadow + ", 0 0 5px " + t
+      }
+    }))
+  };
+i.defaultProps = {
+  circleSize: 28,
+  circleSpacing: 14
+};
+let l = (0, Chunk205662.handleHover)(i)

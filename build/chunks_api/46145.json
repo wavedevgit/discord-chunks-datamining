@@ -1,1 +1,0 @@
-{"id":"46145","type":"store","data":{"name":"RecentVoiceChannelStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getChannelHistory","args":[]}],"events":["POST_CONNECTION_OPEN","VOICE_CHANNEL_SELECT"]},"fromModule":{"id":"29709"}}

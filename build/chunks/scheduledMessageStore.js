@@ -1,10 +1,10 @@
-/** Chunk was on 82124 **/
-/** chunk id: 156012, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 199160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => b
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -15,7 +15,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,7 +28,7 @@ function o(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,12 +43,12 @@ function s(e, t) {
 let c = false,
   u = {},
   d = new Set,
-  p = {};
+  f = {};
 
-function f() {
-  p = {}
+function p() {
+  f = {}
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk311907.Ay.Store) {
   getMessagesPendingDeletion() {
     return d
   }
@@ -56,28 +56,28 @@ class h extends(r = Chunk442837.ZP.Store) {
     return u
   }
   getPendingScheduledMessage(e) {
-    return p[e]
+    return f[e]
   }
   get loading() {
     return c
   }
 }
 a(h, "displayName", "scheduledMessageStore");
-let g = new h(Chunk570140.Z, {
+let b = new h(Chunk73153.h, {
   SCHEDULED_MESSAGES_CREATE_SUCCESS: function(e) {
     let {
       channelId: t,
       scheduledMessageSend: n
     } = e;
-    u = s(o({}, u), {
+    u = o(s({}, u), {
       [n.scheduledMessageId]: n
-    }), p = o({}, p), delete p[t]
+    }), f = s({}, f), delete f[t]
   },
   SCHEDULED_MESSAGES_UPDATE_SUCCESS: function(e) {
     let {
       scheduledMessageSend: t
     } = e;
-    u = s(o({}, u), {
+    u = o(s({}, u), {
       [t.scheduledMessageId]: t
     })
   },
@@ -93,7 +93,7 @@ let g = new h(Chunk570140.Z, {
       scheduledMessageId: t
     } = e;
     if (!d.has(t)) returnfalse;
-    (d = new Set(d)).delete(t), u = o({}, u), delete u[t]
+    (d = new Set(d)).delete(t), u = s({}, u), delete u[t]
   },
   SCHEDULED_MESSAGES_DELETE_FAILURE: function(e) {
     let {
@@ -122,7 +122,7 @@ let g = new h(Chunk570140.Z, {
       channelId: t,
       scheduledTimestamp: n
     } = e;
-    p = s(o({}, p), {
+    f = o(s({}, f), {
       [t]: {
         channelId: t,
         scheduledTimestamp: n
@@ -133,8 +133,8 @@ let g = new h(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    p = o({}, p), delete p[t]
+    f = s({}, f), delete f[t]
   },
-  LOGOUT: f,
-  CONNECTION_OPEN: f
+  LOGOUT: p,
+  CONNECTION_OPEN: p
 })

@@ -1,0 +1,30 @@
+/** Chunk was on web.js **/
+/** chunk id: 492381, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => d
+});
+var Chunk683958 = require("./683958.js"),
+  Chunk476858 = require("./476858.js"),
+  Chunk355418 = require("./355418.js"),
+  Chunk1673 = require("./1673.js");
+let o = RegExp(`(?:(?:\\,|\\(|\\（)\\s*)?(?:(este|esta|passado|pr[o\xf3]ximo)\\s*)?(${(0,Chunk476858.uJ)(Chunk683958.CV)})(?:\\s*(?:\\,|\\)|\\）))?(?:\\s*(este|esta|passado|pr[\xf3o]ximo)\\s*semana)?(?=\\W|\\d|$)`, "i"),
+  l = 1,
+  c = 2,
+  u = 3;
+class d extends Chunk355418.c {
+  innerPattern() {
+    return o
+  }
+  innerExtract(e, t) {
+    let n = t[c].toLowerCase(),
+      i = r.CV[n];
+    if (true === i) return null;
+    let a = t[l],
+      o = t[u],
+      d = a || o || "";
+    d = d.toLowerCase();
+    let f = null;
+    return "passado" == d ? f = "this" : "pr\xf3ximo" == d || "proximo" == d ? f = "next" : "este" == d && (f = "this"), (0, s.Y5)(e.reference, i, f)
+  }
+}

@@ -1,0 +1,1 @@
+{"id":"99066","type":"experiment","data":{"kind":"user","id":"2024-08_content_inventory_analytics_sampling","label":"Content Inventory Analytics Sampling","defaultConfig":{"trackingEnabled":true},"treatments":[{"id":1,"label":"Tracking disabled","config":{"trackingEnabled":false}}]},"fromModule":{"id":"web.js"}}

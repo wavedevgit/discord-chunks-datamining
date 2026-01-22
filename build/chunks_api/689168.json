@@ -1,0 +1,1 @@
+{"id":"689168","type":"store","data":{"name":"ActivityLauncherStore","functions":[{"name":"initialize","args":[]},{"name":"getState","args":["e","t"]},{"name":"getStates","args":[]}],"events":["OVERLAY_INITIALIZE","ACTIVITY_JOIN_LOADING","ACTIVITY_JOIN_FAILED","ACTIVITY_JOIN","EMBEDDED_ACTIVITY_CLOSE","ACTIVITY_LAUNCH_FAIL"]},"fromModule":{"id":"web.js"}}

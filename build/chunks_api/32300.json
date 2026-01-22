@@ -1,1 +1,0 @@
-{"id":"32300","type":"experiment","data":{"id":"2025-11_overlay_bug_reporter","label":"Overlay Bug Reporter","kind":"user","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Bug Reporter","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

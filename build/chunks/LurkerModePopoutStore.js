@@ -1,21 +1,21 @@
-/** Chunk was on 82124 **/
-/** chunk id: 652730, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 158476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  A: () => f
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk41776 = require("./41776.js");
-let s = null,
+var r, l, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk857071 = require("./857071.js");
+let o = null,
   c = null;
 
 function u() {
-  let e = o.Z.mostRecentLurkedGuildId();
-  null != e ? (s = e, c = null) : (c = null != s ? s : null, s = null)
+  let e = s.A.mostRecentLurkedGuildId();
+  null != e ? (o = e, c = null) : (c = null != o ? o : null, o = null)
 }
-class d extends(i = Chunk442837.ZP.Store) {
+class d extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([o.Z], u)
+    this.syncWith([s.A], u)
   }
   shouldShowPopout(e) {
     return c === e
@@ -26,4 +26,4 @@ class d extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : d[r] = "LurkerModePopoutStore";
-let p = new d(Chunk570140.Z)
+let f = new d(Chunk73153.h)

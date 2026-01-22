@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
-/** chunk id: 843693, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 559908, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => M,
-  wU: () => D
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk759174 = require("./759174.js"),
-  Chunk846519 = require("./846519.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk585483 = require("./585483.js"),
-  Chunk351780 = require("./351780.js"),
-  Chunk641033 = require("./641033.js"),
-  Chunk524484 = require("./524484.js"),
-  Chunk981631 = require("./981631.js");
+  Ay: () => M,
+  gN: () => D
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk713402 = require("./713402.js"),
+  Chunk451988 = require("./451988.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk203982 = require("./203982.js"),
+  Chunk3137 = require("./3137.js"),
+  Chunk103640 = require("./103640.js"),
+  Chunk31408 = require("./31408.js"),
+  Chunk652215 = require("./652215.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,25 +58,27 @@ function E(e, t) {
 
 function b(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  var n, r, i, a = {};
+  if ("u" > typeof Reflect && Reflect.ownKeys) {
+    for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    return a
   }
-  return i
+  if (a = y(e, t), Object.getOwnPropertySymbols)
+    for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+  return a
 }
 
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.getOwnPropertyNames(e);
+  for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
 let O = 7,
-  v = 1e3,
-  S = new Set,
-  I = new Chunk759174.h(function(e) {
+  A = 1e3,
+  v = new Set,
+  S = new Chunk713402.J(function(e) {
     let {
       userId: t,
       channelId: n
@@ -90,10 +92,10 @@ let O = 7,
     return "".concat(n, "-").concat(t)
   });
 
-function T(e) {
+function I(e) {
   return null != e && (e.value > 0 || (null == e ? true : e.multiplier) > 1)
 }
-let C = new Chunk759174.h(function(e) {
+let T = new Chunk713402.J(function(e) {
     let {
       messageId: t,
       channelId: n,
@@ -112,7 +114,7 @@ let C = new Chunk759174.h(function(e) {
     } = e;
     return "".concat(n, "-").concat(r, "-").concat(t)
   }),
-  A = e => {
+  C = e => {
     let {
       userId: t,
       channelId: n
@@ -121,16 +123,16 @@ let C = new Chunk759174.h(function(e) {
   };
 
 function N(e) {
-  var t, n, r, i, a, s;
+  var t, n, r, i, a, o;
   let l = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    c = I.get(A(e)),
+    c = S.get(C(e)),
     u = E(m({}, c, e), {
-      value: null != (n = null != (t = e.value) ? t : null == c ? true : c.value) ? n : 0,
-      multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? true : c.multiplier) ? i : 1, O),
-      decayInterval: null != (a = null == c ? true : c.decayInterval) ? a : new o.Xp
+      value: null != (t = null != (n = e.value) ? n : null == c ? true : c.value) ? t : 0,
+      multiplier: Math.min(null != (r = null != (i = e.multiplier) ? i : null == c ? true : c.multiplier) ? r : 1, O),
+      decayInterval: null != (a = null == c ? true : c.decayInterval) ? a : new s.IX
     });
-  I.set(A(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
-    let e = I.get(A(u));
+  S.set(C(e), u), l && (null == (o = u.decayInterval) || o.start(A, () => {
+    let e = S.get(C(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
@@ -146,24 +148,24 @@ function N(e) {
   }))
 }
 
-function P(e) {
-  C.set(e.messageId, e)
+function R(e) {
+  T.set(e.messageId, e)
 }
 
 function w(e) {
-  var {
+  let {
     type: t
   } = e, n = b(e, ["type"]);
-  if (!d.Z.isEnabled()) returnfalse;
+  if (!d.A.isEnabled()) returnfalse;
   N(n)
 }
 
-function R(e) {
+function P(e) {
   let {
     comboMessage: t
   } = e;
-  if (!d.Z.isEnabled()) returnfalse;
-  P(t)
+  if (!d.A.isEnabled()) returnfalse;
+  R(t)
 }
 
 function D(e, t, n, r) {
@@ -177,64 +179,64 @@ function x(e) {
     message: {
       mentions: i,
       author: a,
-      nonce: o
+      nonce: s
     }
   } = e;
-  if (!d.Z.isEnabled()) returnfalse;
-  let s = l.default.getId();
-  if (!D(null == a ? true : a.id, s, o, S)) returnfalse;
-  let c = I.get(A({
+  if (!d.A.isEnabled()) returnfalse;
+  let o = l.default.getId();
+  if (!D(null == a ? true : a.id, o, s, v)) returnfalse;
+  let c = S.get(C({
     userId: null != (t = null == a ? true : a.id) ? t : "???",
     channelId: r
   }));
-  if (d.Z.screenshakeEnabled && d.Z.screenshakeEnabledLocations[p.oZ.MENTION] && null != i && null != i.find(e => e.id === s)) {
-    let e = null != c ? null != (n = (0, f.KH)(c, p.qi.LEVEL_4)) ? n : .001 : 4 * Math.random();
-    return u.S.dispatch(_.CkL.SHAKE_APP, {
+  if (d.A.screenshakeEnabled && d.A.screenshakeEnabledLocations[p.uD.MENTION] && null != i && null != i.find(e => e.id === o)) {
+    let e = null != c ? null != (n = (0, f.U$)(c, p.fZ.LEVEL_4)) ? n : .001 : 4 * Math.random();
+    return u._.dispatch(_.jej.SHAKE_APP, {
       duration: 1e3,
       intensity: e
     }), true
   }
   returnfalse
 }
-class L extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.default, d.Z, c.Z)
+    this.waitFor(l.default, d.A, c.A)
   }
   getComboScore(e, t) {
-    let n = I.get(A({
+    let n = S.get(C({
       userId: e,
       channelId: t
     }));
-    return null == n ? 0 : (0, f.Eo)(n)
+    return null == n ? 0 : (0, f.RL)(n)
   }
   getUserCombo(e, t) {
-    return I.get(A({
+    return S.get(C({
       userId: e,
       channelId: t
     }))
   }
   isComboing(e, t) {
     let n = this.getUserCombo(e, t);
-    return null != n && n.value >= d.Z.combosRequiredCount && T(n)
+    return null != n && n.value >= d.A.combosRequiredCount && I(n)
   }
   getMessageCombo(e) {
     var t;
-    let n = C.get(e);
+    let n = T.get(e);
     return null != (t = null == n ? true : n.combo) ? t : true
   }
   getMostRecentMessageCombo(e) {
-    let t = C.values(e);
+    let t = T.values(e);
     return t[t.length - 1]
   }
   getUserComboShakeIntensity(e, t, n, r) {
     let i = this.getUserCombo(e, t);
-    return null != i ? (0, f.KH)(i, r) * n : 0
+    return null != i ? (0, f.U$)(i, r) * n : 0
   }
 }
 h(L, "displayName", "PoggermodeStore");
-let j = new L(Chunk570140.Z, {
+let j = new L(Chunk73153.h, {
     POGGERMODE_UPDATE_COMBO: w,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: R,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: P,
     MESSAGE_CREATE: x
   }),
   M = j

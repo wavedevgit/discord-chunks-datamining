@@ -1,0 +1,71 @@
+/** Chunk was on 99583 **/
+/** chunk id: 332352, original params: e,t,l (module,exports,require) **/
+require.d(exports, {
+  A: () => g
+});
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk503698 = require("./503698.js"),
+  s = require.n(Chunk503698),
+  Chunk432022 = require("./432022.js"),
+  Chunk417597 = require("./417597.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk343969 = require("./343969.js"),
+  Chunk266047 = require("./266047.js"),
+  Chunk189552 = require("./189552.js"),
+  Chunk508160 = require("./508160.jsx"),
+  Chunk749060 = require("./749060.jsx"),
+  Chunk374963 = require("./374963.jsx"),
+  Chunk663282 = require("./663282.js");
+
+function h(e) {
+  let {
+    guild: t
+  } = e, l = (0, o.Ms)(t.id), r = (0, d.zhh)({
+    height: 3 * !!l,
+    config: a.config.stiff
+  });
+  return (0, n.jsx)("div", {
+    className: f.NQ,
+    children: (0, n.jsx)(a.animated.div, {
+      className: f.b0,
+      style: r
+    })
+  })
+}
+
+function g(e) {
+  let {
+    guild: t,
+    className: l,
+    onPageChange: i,
+    onMemberSelect: a
+  } = e, g = t.id, v = (0, c.bG)([u.A], () => u.A.getEstimatedMemberSearchCountByGuildId(g), [g]), A = (0, o.Ms)(g), p = (0, o.Wl)(g), E = r.useCallback(e => {
+    null != e && (null == a || a(e))
+  }, [a]), S = (0, x.ii)(p, A, v), T = r.useRef(null), y = r.useRef(null), _ = r.useCallback(() => {
+    var e;
+    null == (e = T.current) || e.resetSearchText()
+  }, []);
+  return (0, n.jsx)("div", {
+    className: s()(f.FV, l),
+    children: (0, n.jsxs)(d.T7Y, {
+      className: f.A0,
+      ref: y,
+      orientation: "horizontal",
+      children: [(0, n.jsx)(b.A, {
+        guild: t,
+        ref: T
+      }), (0, n.jsx)(h, {
+        guild: t
+      }), (0, n.jsx)(m.A, {
+        guild: t,
+        onSelectRow: E,
+        searchState: S,
+        onResetForNewMembers: _
+      }), S !== x.IY.SUCCESS_STILL_INDEXING && (0, n.jsx)(j.A, {
+        guildId: t.id,
+        onPageChange: i
+      })]
+    })
+  })
+}

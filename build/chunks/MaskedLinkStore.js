@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 20303, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 259439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
-}), require("./388685.js"), require("./704826.js"), require("./35282.js");
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk433517 = require("./433517.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk591759 = require("./591759.js"),
-  Chunk902676 = require("./902676.js"),
-  Chunk616922 = require("./616922.js");
+  A: () => O
+}), require("./896048.js"), require("./747238.js"), require("./812715.js");
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk506774 = require("./506774.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk998218 = require("./998218.js"),
+  Chunk155078 = require("./155078.js"),
+  Chunk272984 = require("./272984.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,7 +25,7 @@ let f = "MaskedLinkStore",
   h = null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.replace("//", "");
 
 function m(e) {
-  let t = (0, c.F)(e);
+  let t = (0, c.E)(e);
   switch (t) {
     case window.GLOBAL_ENV.INVITE_HOST:
     case window.GLOBAL_ENV.GIFT_CODE_HOST:
@@ -34,12 +34,12 @@ function m(e) {
     case location.hostname:
       returntrue;
     default:
-      return u.SD.includes(t) || l.Z.isDiscordHostname(t) || p.has(t)
+      return u.UN.includes(t) || l.A.isDiscordHostname(t) || p.has(t)
   }
 }
 
 function g(e) {
-  let t = (0, c.E)(e);
+  let t = (0, c.J)(e);
   return _.has(t)
 }
 
@@ -48,7 +48,7 @@ function E(e) {
     url: t
   } = e;
   if (m(t)) returnfalse;
-  p.add((0, c.F)(t)), o.K.set(f, {
+  p.add((0, c.E)(t)), s.w.set(f, {
     trustedDomains: p,
     trustedProtocols: _
   })
@@ -59,15 +59,15 @@ function b(e) {
     url: t
   } = e;
   if (g(t)) returnfalse;
-  _.add((0, c.E)(t)), o.K.set(f, {
+  _.add((0, c.J)(t)), s.w.set(f, {
     trustedDomains: p,
     trustedProtocols: _
   })
 }
-class y extends(i = Chunk442837.ZP.Store) {
+class y extends(i = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    let t = null != (e = o.K.get(f)) ? e : {};
+    let t = null != (e = s.w.get(f)) ? e : {};
     if (Array.isArray(t)) p = new Set(null != t ? Array.from(t) : null), _ = new Set;
     else {
       let {
@@ -85,7 +85,7 @@ class y extends(i = Chunk442837.ZP.Store) {
   }
 }
 d(y, "displayName", "MaskedLinkStore");
-let O = new y(Chunk570140.Z, {
+let O = new y(Chunk73153.h, {
   MASKED_LINK_ADD_TRUSTED_DOMAIN: E,
   MASKED_LINK_ADD_TRUSTED_PROTOCOL: b
 })

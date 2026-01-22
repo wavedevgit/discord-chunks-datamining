@@ -1,1 +1,0 @@
-{"id":"785697","type":"experiment","data":{"kind":"guild","id":"2022-11_default_disable_mass_mention","label":"Disable mass mentions for communities by default","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"51218"}}

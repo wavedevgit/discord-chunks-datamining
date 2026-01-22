@@ -1,9 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 59809, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-require.d(exports, {
-  O: () => r
-});
-var r = function(e) {
-  return e[e.INVALID_PLACEMENT = 0] = "INVALID_PLACEMENT", e[e.DESKTOP_ACCOUNT_PANEL_AREA = 1] = "DESKTOP_ACCOUNT_PANEL_AREA", e[e.MOBILE_HOME_DOCK_AREA = 2] = "MOBILE_HOME_DOCK_AREA", e
-}({})

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 23434, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 870570, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  A: () => u
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,21 +15,21 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = null;
-class l extends(r = Chunk442837.ZP.Store) {
+let o = null;
+class l extends(r = Chunk311907.Ay.Store) {
   hasAction() {
-    return null != s
+    return null != o
   }
   getAction() {
-    return s
+    return o
   }
 }
 
 function c(e) {
-  s = e.requiredAction
+  o = e.requiredAction
 }
-o(l, "displayName", "UserRequiredActionStore");
-let u = new l(Chunk570140.Z, {
+s(l, "displayName", "UserRequiredActionStore");
+let u = new l(Chunk73153.h, {
   CONNECTION_OPEN: c,
   USER_REQUIRED_ACTION_UPDATE: c
 })

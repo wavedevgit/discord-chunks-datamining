@@ -1,15 +1,15 @@
-/** Chunk was on 29709 **/
-/** chunk id: 649974, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 46636 **/
+/** chunk id: 783592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  A: () => v
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk656063 = require("./656063.js"),
-  Chunk752048 = require("./752048.js"),
-  Chunk158776 = require("./158776.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk294857 = require("./294857.js"),
+  Chunk21119 = require("./21119.js"),
+  Chunk290863 = require("./290863.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk652215 = require("./652215.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,39 +47,39 @@ function g(e, t) {
 }
 let f = false,
   h = {},
-  O = {};
+  m = {};
 
-function m(e) {
+function O(e) {
   let t = false;
   return e.forEach(e => {
-    t = false !== I(e) || t
+    t = false !== A(e) || t
   }), t
 }
 
 function E(e) {
-  let t = O[e];
+  let t = m[e];
   if (null == t) returnfalse;
   let n = t.gameId;
-  return null != h[n] && (h = p({}, h), delete h[n][e], 0 === Object.values(h[n]).length && delete h[n]), O = p({}, O), delete O[e], true
+  return null != h[n] && (h = p({}, h), delete h[n][e], 0 === Object.values(h[n]).length && delete h[n]), m = p({}, m), delete m[e], true
 }
 
-function I(e) {
+function A(e) {
   let {
     user: t,
     activities: n
   } = e;
   if (null == t) returnfalse;
-  let r = n.filter(e => e.type !== c.IIU.CUSTOM_STATUS);
+  let r = n.filter(e => e.type !== c.$pd.CUSTOM_STATUS);
   if (0 === r.length) return E(t.id);
   let i = false;
   return r.forEach(e => {
     (function(e, t) {
       var n, r;
-      let i = (0, s.Z)(e);
+      let i = (0, s.A)(e);
       if (null == i) return E(t.id);
-      let l = O[t.id];
+      let l = m[t.id];
       null != l && l.gameId !== i && E(t.id);
-      let o = null != (r = null == (n = e.timestamps) ? true : n.start) ? r : Date.now(),
+      let o = null != (n = null == (r = e.timestamps) ? true : r.start) ? n : Date.now(),
         a = {
           userId: t.id,
           activity: e,
@@ -89,7 +89,7 @@ function I(e) {
         [i]: g(p({}, h[i]), {
           [a.userId]: a
         })
-      }), O = g(p({}, O), {
+      }), m = g(p({}, m), {
         [a.userId]: {
           gameId: i,
           startedPlaying: a.startedPlaying
@@ -99,25 +99,25 @@ function I(e) {
   }), i
 }
 
-function S() {
+function y() {
   let e, t = false;
-  return o.Z.shouldFetch() || f || (h = {}, O = {}, e = false, a.Z.getUserIds().forEach(t => {
+  return o.A.shouldFetch() || f || (h = {}, m = {}, e = false, a.A.getUserIds().forEach(t => {
     let n = u.default.getUser(t);
-    null != n && (e = I({
+    null != n && (e = A({
       user: n,
-      activities: a.Z.getActivities(t)
+      activities: a.A.getActivities(t)
     }) || e)
-  }), t = e), f = !o.Z.shouldFetch(), t
+  }), t = e), f = !o.A.shouldFetch(), t
 }
-class N extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(a.Z, o.Z, u.default), this.syncWith([o.Z], S)
+    this.waitFor(a.A, o.A, u.default), this.syncWith([o.A], y)
   }
   get games() {
     return h
   }
   get usersPlaying() {
-    return O
+    return m
   }
   get gameIds() {
     return Object.keys(h)
@@ -126,13 +126,13 @@ class N extends(r = Chunk442837.ZP.Store) {
     return h[e]
   }
   getUserGame(e) {
-    return O[e]
+    return m[e]
   }
 }
 d(N, "displayName", "NowPlayingStore");
-let y = new N(Chunk570140.Z, {
+let v = new N(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    h = {}, O = {}
+    h = {}, m = {}
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
@@ -140,22 +140,22 @@ let y = new N(Chunk570140.Z, {
       presences: n
     } = e, r = false;
     return t.forEach(e => {
-      m(e.presences) && (r = true)
-    }), m(n) && (r = true), r
+      O(e.presences) && (r = true)
+    }), O(n) && (r = true), r
   },
   LOGOUT: function() {
-    h = {}, O = {}
+    h = {}, m = {}
   },
   PRESENCE_UPDATES: function(e) {
     let {
       updates: t
     } = e;
-    return t.map(e => I(e)).some(e => e)
+    return t.map(e => A(e)).some(e => e)
   },
   PRESENCES_REPLACE: function(e) {
     let {
       presences: t
     } = e;
-    return m(t)
+    return O(t)
   }
 })

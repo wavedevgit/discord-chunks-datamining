@@ -1,1 +1,0 @@
-{"id":"872549","type":"experiment","data":{"kind":"user","id":"2025-09_one_time_login_client","label":"One Time Login","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"27978"}}

@@ -1,1 +1,0 @@
-{"id":"392885","type":"store","data":{"name":"GuildSettingsSafetyStore","functions":[{"name":"initialize","args":[]},{"name":"getCurrentPage","args":[]}],"events":["GUILD_SETTINGS_INIT","GUILD_SETTINGS_SET_SECTION","GUILD_SETTINGS_SAFETY_SET_SUBSECTION","GUILD_SETTINGS_SAFETY_PAGE"]},"fromModule":{"id":"9536"}}

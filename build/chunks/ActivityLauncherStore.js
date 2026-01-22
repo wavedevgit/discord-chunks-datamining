@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 181106, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 689168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk846519 = require("./846519.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk293273 = require("./293273.js"),
-  Chunk885110 = require("./885110.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => v
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk451988 = require("./451988.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk375492 = require("./375492.js"),
+  Chunk461213 = require("./461213.js"),
+  Chunk652215 = require("./652215.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,8 +48,8 @@ function m(e) {
 
 function g(e, t, n) {
   null != p[e] && p[e].stop();
-  let r = new a.V7;
-  r.start(n, () => o.Z.dispatch({
+  let r = new a.Ep;
+  r.start(n, () => s.h.dispatch({
     type: "ACTIVITY_LAUNCH_FAIL",
     applicationId: e,
     activityType: t
@@ -60,17 +60,17 @@ function E(e, t, n) {
   var r, i;
   let {
     applicationId: a,
-    remotePartyId: o
+    remotePartyId: s
   } = n;
-  if (e === c.OcF.COMPLETE) {
-    null == (r = f[a]) || delete r[t], null != p[a] && (p[a].stop(), delete p[a]);
+  if (e === c.eAD.COMPLETE) {
+    null == (i = f[a]) || delete i[t], null != p[a] && (p[a].stop(), delete p[a]);
     return
   }
-  let s = null != (i = f[a]) ? i : {};
-  s[t] = {
+  let o = null != (r = f[a]) ? r : {};
+  o[t] = {
     state: e,
-    remotePartyId: o
-  }, f[a] = s, __OVERLAY__ || e !== c.OcF.FAILED ? e === c.OcF.LOADING && null != o && g(a, t, h) : g(a, t, _)
+    remotePartyId: s
+  }, f[a] = o, __OVERLAY__ || e !== c.eAD.FAILED ? e === c.eAD.LOADING && null != s && g(a, t, h) : g(a, t, _)
 }
 
 function b(e) {
@@ -81,7 +81,7 @@ function b(e) {
 }
 
 function y(e) {
-  return E(c.OcF.COMPLETE, c.mFx.JOIN, e)
+  return E(c.eAD.COMPLETE, c.xL.JOIN, e)
 }
 
 function O() {
@@ -90,7 +90,7 @@ function O() {
       let [n, r] = e;
       return {
         applicationId: n,
-        remotePartyId: null == (t = r[c.mFx.JOIN]) ? true : t.remotePartyId
+        remotePartyId: null == (t = r[c.xL.JOIN]) ? true : t.remotePartyId
       }
     }).filter(e => {
       let {
@@ -104,16 +104,16 @@ function O() {
     let {
       applicationId: i,
       remotePartyId: a
-    } = e, o = s.Z.getApplicationActivity(i), u = l.Z.getApplicationActivity(i);
-    ((null == o || null == (n = o.party) ? true : n.id) === a || (null == u || null == (r = u.party) ? true : r.id) === a) && (E(c.OcF.COMPLETE, c.mFx.JOIN, {
+    } = e, s = o.A.getApplicationActivity(i), u = l.A.getApplicationActivity(i);
+    ((null == s || null == (n = s.party) ? true : n.id) === a || (null == u || null == (r = u.party) ? true : r.id) === a) && (E(c.eAD.COMPLETE, c.xL.JOIN, {
       applicationId: i,
       remotePartyId: a
     }), t = true)
   }), t
 }
-class v extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.syncWith([s.Z, l.Z], O)
+    this.syncWith([o.A, l.A], O)
   }
   getState(e, t) {
     var n;
@@ -124,11 +124,11 @@ class v extends(r = Chunk442837.ZP.Store) {
     return f
   }
 }
-u(v, "displayName", "ActivityLauncherStore");
-let S = new v(Chunk570140.Z, {
+u(A, "displayName", "ActivityLauncherStore");
+let v = new A(Chunk73153.h, {
   OVERLAY_INITIALIZE: b,
-  ACTIVITY_JOIN_LOADING: e => E(c.OcF.LOADING, c.mFx.JOIN, e),
-  ACTIVITY_JOIN_FAILED: e => E(c.OcF.FAILED, c.mFx.JOIN, e),
+  ACTIVITY_JOIN_LOADING: e => E(c.eAD.LOADING, c.xL.JOIN, e),
+  ACTIVITY_JOIN_FAILED: e => E(c.eAD.FAILED, c.xL.JOIN, e),
   ACTIVITY_JOIN: y,
   EMBEDDED_ACTIVITY_CLOSE: y,
   ACTIVITY_LAUNCH_FAIL: m

@@ -1,1 +1,0 @@
-{"id":"313261","type":"experiment","data":{"kind":"user","id":"2024-08_new_gateway_dispatcher","label":"New Gateway Dispatcher","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

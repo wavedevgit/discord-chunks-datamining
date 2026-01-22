@@ -1,0 +1,56 @@
+/** Chunk was on web.js **/
+/** chunk id: 401705, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+
+function r(e) {
+  if (a()) e.focus({
+    preventScroll: true
+  });
+  else {
+    let t = s(e);
+    e.focus(), o(t)
+  }
+}
+require.d(exports, {
+  e: () => r
+});
+let i = null;
+
+function a() {
+  if (null == i) {
+    i = false;
+    try {
+      document.createElement("div").focus({
+        get preventScroll() {
+          return i = true, true
+        }
+      })
+    } catch {}
+  }
+  return i
+}
+
+function s(e) {
+  let t = e.parentNode,
+    n = [],
+    r = document.scrollingElement || document.documentElement;
+  for (; t instanceof HTMLElement && t !== r;)(t.offsetHeight < t.scrollHeight || t.offsetWidth < t.scrollWidth) && n.push({
+    element: t,
+    scrollTop: t.scrollTop,
+    scrollLeft: t.scrollLeft
+  }), t = t.parentNode;
+  return r instanceof HTMLElement && n.push({
+    element: r,
+    scrollTop: r.scrollTop,
+    scrollLeft: r.scrollLeft
+  }), n
+}
+
+function o(e) {
+  for (let {
+      element: t,
+      scrollTop: n,
+      scrollLeft: r
+    }
+    of e) t.scrollTop = n, t.scrollLeft = r
+}

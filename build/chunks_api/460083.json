@@ -1,1 +1,0 @@
-{"id":"460083","type":"experiment","data":{"kind":"guild","id":"2022-12_mention_raid_limit","label":"Automod Mention Raid Limit","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Automod Mention Raid Limit","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

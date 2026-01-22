@@ -1,0 +1,14 @@
+/** Chunk was on web.js **/
+/** chunk id: 244777, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  kL: "adfd26bfe1733421",
+  G: "_9b701dca225ff5b5",
+  TR: "_99e11ce9e90d54a9",
+  PP: "_5471f4be5882617e",
+  Ph: "f7abe2b86587f655",
+  _: "bf00a95097355921",
+  a2: "_4773880e0766f1ce bf00a95097355921",
+  l2: "a89e0bf52451fdfa bf00a95097355921",
+  Ye: "_288d245308153686"
+}

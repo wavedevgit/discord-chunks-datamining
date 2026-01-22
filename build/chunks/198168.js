@@ -2,33 +2,26 @@
 /** chunk id: 198168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DynamicGraphicComponent: () => i,
-  _: () => o,
-  a: () => a
+  N: () => o
 });
-var Chunk473749 = require("./473749.js"),
-  i = function(e) {
-    return e[e.DEMO = 0] = "DEMO", e[e.COLLECTIBLES_PREVIEW = 1] = "COLLECTIBLES_PREVIEW", e[e.GUILD_TAG_COACHMARK_ASSET = 2] = "GUILD_TAG_COACHMARK_ASSET", e[e.ACCOUNT_LINK_DISPLAY = 3] = "ACCOUNT_LINK_DISPLAY", e[e.GAME_SERVER_GAME_INSTRUCTIONS_ASSET = 4] = "GAME_SERVER_GAME_INSTRUCTIONS_ASSET", e[e.APPLICATION_IMAGE_HEADER = 5] = "APPLICATION_IMAGE_HEADER", e[e.SOCIAL_LAYER_SKU_PREVIEW = 6] = "SOCIAL_LAYER_SKU_PREVIEW", e[e.GUILD_POWERUPS_COACHMARK_ASSET = 7] = "GUILD_POWERUPS_COACHMARK_ASSET", e[e.BADGE_IMAGE_WITH_PROGRESS_CIRCLE = 8] = "BADGE_IMAGE_WITH_PROGRESS_CIRCLE", e
-  }({});
-let a = {
-    0: () => Promise.resolve().then(n.bind(n, 564172)),
-    1: () => n.e("96887").then(n.bind(n, 669636)),
-    2: () => n.e("8124").then(n.bind(n, 413915)),
-    3: () => n.e("72261").then(n.bind(n, 718717)),
-    4: () => n.e("99726").then(n.bind(n, 839427)),
-    5: () => n.e("11909").then(n.bind(n, 255111)),
-    6: () => n.e("30474").then(n.bind(n, 995348)),
-    7: () => n.e("21844").then(n.bind(n, 492391)),
-    8: () => n.e("84735").then(n.bind(n, 558592))
-  },
-  o = {
-    0: Chunk473749.lazy(a[0]),
-    1: Chunk473749.lazy(a[1]),
-    2: Chunk473749.lazy(a[2]),
-    3: Chunk473749.lazy(a[3]),
-    4: Chunk473749.lazy(a[4]),
-    5: Chunk473749.lazy(a[5]),
-    6: Chunk473749.lazy(a[6]),
-    7: Chunk473749.lazy(a[7]),
-    8: Chunk473749.lazy(a[8])
+var Chunk837057 = require("./837057.js"),
+  Chunk310419 = require("./310419.js"),
+  Chunk967198 = require("./967198.js"),
+  Chunk488995 = require("./488995.js");
+let o = {
+  binds: ["mod+ctrl+a"],
+  comboKeysBindGlobal: true,
+  action() {
+    var e;
+    let t = null != (e = a.A.getGuildId()) ? e : true;
+    (0, r.transitionToGlobalDiscovery)({
+      tab: s.GlobalDiscoveryTab.APPS,
+      newSessionState: {
+        guildId: null != t ? t : null,
+        entrypoint: {
+          name: i.sW.KEYBOARD_SHORTCUT
+        }
+      }
+    })
   }
+}

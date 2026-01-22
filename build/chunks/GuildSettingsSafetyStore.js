@@ -1,59 +1,59 @@
-/** Chunk was on 9536 **/
-/** chunk id: 392885, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 47841 **/
+/** chunk id: 982832, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  A: () => b
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk999382 = require("./999382.js"),
-  Chunk740903 = require("./740903.js"),
-  Chunk981631 = require("./981631.js");
-let d = Chunk740903.u.OVERVIEW,
+var r, i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk555337 = require("./555337.js"),
+  Chunk660496 = require("./660496.js"),
+  Chunk652215 = require("./652215.js");
+let d = Chunk660496.C.OVERVIEW,
   u = null;
 
-function g(e) {
+function f(e) {
   let {
     subsection: t
   } = e;
   switch (t) {
-    case c.KsC.SAFETY_AUTOMOD:
-      d = o.u.AUTOMOD;
+    case o.nd0.SAFETY_AUTOMOD:
+      d = c.C.AUTOMOD;
       break;
-    case c.KsC.SAFETY_DM_AND_SPAM_PROTECTION:
-      d = o.u.DM_AND_SPAM_PROTECTION;
+    case o.nd0.SAFETY_DM_AND_SPAM_PROTECTION:
+      d = c.C.DM_AND_SPAM_PROTECTION;
       break;
-    case c.KsC.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
-      d = o.u.CAPTCHA_AND_RAID_PROTECTION;
+    case o.nd0.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
+      d = c.C.CAPTCHA_AND_RAID_PROTECTION;
       break;
-    case c.KsC.SAFETY_PERMISSIONS:
-      d = o.u.PERMISSIONS;
+    case o.nd0.SAFETY_PERMISSIONS:
+      d = c.C.PERMISSIONS;
       break;
-    case c.KsC.SAFETY_OVERVIEW:
+    case o.nd0.SAFETY_OVERVIEW:
     default:
-      d = o.u.OVERVIEW
+      d = c.C.OVERVIEW
   }
 }
-class f extends(i = Chunk442837.ZP.Store) {
+class g extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.Z)
+    this.waitFor(a.A)
   }
   getCurrentPage() {
     return d
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
+}(r = "displayName") in g ? Object.defineProperty(g, r, {
   value: "GuildSettingsSafetyStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[r] = "GuildSettingsSafetyStore";
-let m = new f(Chunk570140.Z, {
+}) : g[r] = "GuildSettingsSafetyStore";
+let b = new g(Chunk73153.h, {
   GUILD_SETTINGS_INIT: function() {
-    if (s.Z.getGuildId() === u) returnfalse;
-    u = s.Z.getGuildId()
+    if (a.A.getGuildId() === u) returnfalse;
+    u = a.A.getGuildId()
   },
-  GUILD_SETTINGS_SET_SECTION: g,
-  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,
+  GUILD_SETTINGS_SET_SECTION: f,
+  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: f,
   GUILD_SETTINGS_SAFETY_PAGE: function(e) {
     let {
       page: t

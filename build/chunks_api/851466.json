@@ -1,0 +1,1 @@
+{"id":"851466","type":"store","data":{"name":"ChannelSKUStore","functions":[{"name":"getSkuIdForChannel","args":["e"]}],"events":["CONNECTION_OPEN","STORE_LISTING_FETCH_SUCCESS"]},"fromModule":{"id":"21738"}}

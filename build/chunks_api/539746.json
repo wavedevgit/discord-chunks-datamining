@@ -1,1 +1,0 @@
-{"id":"539746","type":"experiment","data":{"kind":"user","id":"2024-06_game_profile_experiment","label":"Enables the Game Profile","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

@@ -1,9 +1,9 @@
-/** Chunk was on 1272 **/
-/** chunk id: 886412, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 159329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  bu: () => i
+  P3: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   id: "2025-05_safety_flows",
   label: "Safety Flows",
   kind: "user",

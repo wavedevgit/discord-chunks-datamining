@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 987032, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 887555, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ul: () => u,
-  YE: () => l,
-  ZP: () => o
-}), require("./388685.js");
-var Chunk818083 = require("./818083.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
-let o = (0, Chunk818083.B)({
+  Ay: () => s,
+  jK: () => u,
+  o0: () => l
+}), require("./896048.js");
+var Chunk600975 = require("./600975.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk985018 = require("./985018.jsx");
+let s = (0, Chunk600975.C)({
     kind: "user",
     id: "2021-08_regional_payment_methods",
     label: "Regional Payment Methods",
@@ -30,7 +30,7 @@ let o = (0, Chunk818083.B)({
       id: 2,
       label: "Regional Payment Method for US",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.VENMO, Chunk981631.HeQ.CASH_APP],
+        enabledPaymentTypes: [Chunk652215.hes.VENMO, Chunk652215.hes.CASH_APP],
         forceCountryCode: "US",
         validCountryCodes: ["US"]
       }
@@ -54,7 +54,7 @@ let o = (0, Chunk818083.B)({
       id: 5,
       label: "Regional Payment Method for Poland",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.PRZELEWY24],
+        enabledPaymentTypes: [Chunk652215.hes.PRZELEWY24],
         forceCountryCode: "PL",
         validCountryCodes: ["PL"]
       }
@@ -62,7 +62,7 @@ let o = (0, Chunk818083.B)({
       id: 6,
       label: "Enable paysafecard",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.PAYSAFE_CARD],
+        enabledPaymentTypes: [Chunk652215.hes.PAYSAFE_CARD],
         forceCountryCode: "DE",
         validCountryCodes: ["BG", "CZ", "DK", "HU", "RO", "SE", "DE"]
       }
@@ -70,7 +70,7 @@ let o = (0, Chunk818083.B)({
       id: 7,
       label: "Regional Payment Method for Philippines",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.GCASH],
+        enabledPaymentTypes: [Chunk652215.hes.GCASH],
         forceCountryCode: "PH",
         validCountryCodes: ["PH"]
       }
@@ -78,7 +78,7 @@ let o = (0, Chunk818083.B)({
       id: 8,
       label: "Regional Payment Method for Malaysia",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.GRABPAY_MY],
+        enabledPaymentTypes: [Chunk652215.hes.GRABPAY_MY],
         forceCountryCode: "MY",
         validCountryCodes: ["MY"]
       }
@@ -86,7 +86,7 @@ let o = (0, Chunk818083.B)({
       id: 9,
       label: "Regional Payment Method for Vietnam",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.MOMO_WALLET],
+        enabledPaymentTypes: [Chunk652215.hes.MOMO_WALLET],
         forceCountryCode: "VN",
         validCountryCodes: ["VN"]
       }
@@ -94,7 +94,7 @@ let o = (0, Chunk818083.B)({
       id: 10,
       label: "Regional Payment Method for Indonesia",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.GOPAY_WALLET],
+        enabledPaymentTypes: [Chunk652215.hes.GOPAY_WALLET],
         forceCountryCode: "ID",
         validCountryCodes: ["ID"]
       }
@@ -102,7 +102,7 @@ let o = (0, Chunk818083.B)({
       id: 11,
       label: "Regional Payment Method for South Korea",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.KAKAOPAY],
+        enabledPaymentTypes: [Chunk652215.hes.KAKAOPAY],
         forceCountryCode: "KR",
         validCountryCodes: ["KR"]
       }
@@ -110,7 +110,7 @@ let o = (0, Chunk818083.B)({
       id: 12,
       label: "Regional Payment Method for Belgium",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.PAYSAFE_CARD, Chunk981631.HeQ.BANCONTACT],
+        enabledPaymentTypes: [Chunk652215.hes.PAYSAFE_CARD, Chunk652215.hes.BANCONTACT],
         forceCountryCode: "BE",
         validCountryCodes: ["BE"]
       }
@@ -118,7 +118,7 @@ let o = (0, Chunk818083.B)({
       id: 13,
       label: "Regional Payment Method for Austria",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.PAYSAFE_CARD, Chunk981631.HeQ.EPS],
+        enabledPaymentTypes: [Chunk652215.hes.PAYSAFE_CARD, Chunk652215.hes.EPS],
         forceCountryCode: "AT",
         validCountryCodes: ["AT"]
       }
@@ -126,7 +126,7 @@ let o = (0, Chunk818083.B)({
       id: 14,
       label: "Regional Payment Method for Netherlands",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.PAYSAFE_CARD, Chunk981631.HeQ.IDEAL],
+        enabledPaymentTypes: [Chunk652215.hes.PAYSAFE_CARD, Chunk652215.hes.IDEAL],
         forceCountryCode: "NL",
         validCountryCodes: ["NL"]
       }
@@ -134,7 +134,7 @@ let o = (0, Chunk818083.B)({
       id: 15,
       label: "Launch Paysafecard",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.PAYSAFE_CARD],
+        enabledPaymentTypes: [Chunk652215.hes.PAYSAFE_CARD],
         forceCountryCode: "ES",
         validCountryCodes: ["ES", "IT"]
       }
@@ -142,13 +142,13 @@ let o = (0, Chunk818083.B)({
       id: 16,
       label: "Launch Cash App",
       config: {
-        enabledPaymentTypes: [Chunk981631.HeQ.CASH_APP],
+        enabledPaymentTypes: [Chunk652215.hes.CASH_APP],
         forceCountryCode: "US",
         validCountryCodes: ["US"]
       }
     }]
   }),
-  s = new Map([
+  o = new Map([
     ["abn_amro", "ABN AMRO"],
     ["asn_bank", "ASN Bank"],
     ["bunq", "Bunq"],
@@ -167,7 +167,7 @@ let o = (0, Chunk818083.B)({
   ]);
 
 function l(e) {
-  return true !== e && s.has(e) ? s.get(e) : a.intl.string(a.t.jdPblk)
+  return true !== e && o.has(e) ? o.get(e) : a.intl.string(a.t.jdPblk)
 }
 let c = new Map([
   ["arzte_und_apotheker_bank", "\xc4rzte- und Apothekerbank"],

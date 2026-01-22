@@ -2,42 +2,24 @@
 /** chunk id: 927057, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  x: () => s
 });
-var Chunk54381 = require("./54381.js"),
-  Chunk473749 = require("./473749.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk471445 = require("./471445.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk970184 = require("./970184.jsx"),
-  Chunk811654 = require("./811654.js"),
-  Chunk344991 = require("./344991.jsx"),
-  Chunk981631 = require("./981631.js"),
-  Chunk792386 = require("./792386.js");
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk397927 = require("./397927.js"),
+  Chunk281077 = require("./281077.js");
 
-function _(e) {
+function s(e) {
   let {
-    channelTypes: t
-  } = e, n = (0, c.CJ)(), _ = null == n ? true : n.channelId, h = s.Z.getChannel(_), m = l.Z.getGuild(null == h ? true : h.getGuildId()), g = e => (0, u.af)(e, _, t), E = (e, t) => {
-    let n = s.Z.getChannel(null == e ? true : e.value);
-    if (null == n) return null;
-    let i = n.type === f.d4z.GUILD_CATEGORY ? a.ROc : (0, o.KS)(n);
-    return null != i ? (0, r.jsx)(i, {
-      size: "custom",
+    onClick: t
+  } = e;
+  return (0, r.jsx)(i.DUT, {
+    className: a.b,
+    onClick: t,
+    children: (0, r.jsx)(i.aXh, {
+      size: "md",
       color: "currentColor",
-      width: t,
-      height: t
-    }) : null
-  }, b = e => (0, r.jsx)("span", {
-    className: p.label,
-    children: e.label
-  }), y = i.useMemo(() => (0, u.tx)(e.defaultValues, null == m ? true : m.id, t), [e.defaultValues, m, t]);
-  return (0, r.jsx)(d.ZP, {
-    selectActionComponent: e,
-    queryOptions: g,
-    renderIcon: E,
-    renderOptionLabel: b,
-    defaultValues: y
+      className: a.u
+    })
   })
 }

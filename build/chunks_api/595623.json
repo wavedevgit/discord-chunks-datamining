@@ -1,1 +1,1 @@
-{"id":"595623","type":"assets","data":{"assetUrl":"https://canary.discord.com/assets/5858650deafc10c8.svg"},"fromModule":{"id":"web.js"}}
+{"id":"595623","type":"store","data":{"name":"FriendsStore","functions":[{"name":"initialize","args":[]},{"name":"getState","args":[]}],"events":["CONNECTION_OPEN","FRIENDS_SET_SECTION","CHANNEL_SELECT","LOAD_RELATIONSHIPS_SUCCESS","LOAD_RELATIONSHIPS_FAILURE","FRIENDS_SET_INITIAL_SECTION"]},"fromModule":{"id":"71853"}}

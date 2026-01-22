@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 61196, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 196042, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Am: () => r,
-  ZP: () => a,
-  aW: () => i
+  Ay: () => a,
+  fy: () => i,
+  oy: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
     kind: "user",
     id: "2023-06_bogo_promotion_gate",
     label: "BOGO Promotion Manager",

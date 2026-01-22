@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 58468, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 945886, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk592125 = require("./592125.js");
+  A: () => h
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk734057 = require("./734057.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,13 +41,13 @@ function f(e) {
 }
 
 function p() {
-  o.default.keys(d).forEach(e => {
-    null == s.Z.getChannel(e) && delete d[e]
+  s.default.keys(d).forEach(e => {
+    null == o.A.getChannel(e) && delete d[e]
   })
 }
-class _ extends(r = Chunk442837.ZP.PersistedStore) {
+class _ extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(s.Z), d = null != e ? e : u
+    this.waitFor(o.A), d = null != e ? e : u
   }
   getState() {
     return d
@@ -60,7 +60,7 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 l(_, "displayName", "CollapsedVoiceChannelStore"), l(_, "persistKey", "collapsedChannels");
-let h = new _(Chunk570140.Z, {
+let h = new _(Chunk73153.h, {
   CONNECTION_OPEN: p,
   OVERLAY_INITIALIZE: p,
   CHANNEL_COLLAPSE: f

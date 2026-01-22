@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 541099, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 989837, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  A: () => _
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk827498 = require("./827498.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk500049 = require("./500049.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,11 +18,11 @@ function s(e, t, n) {
 }
 let l = {
   show: false,
-  entrypoint: Chunk827498._b.NONE,
-  lastShownEntrypoint: Chunk827498._b.NONE,
+  entrypoint: Chunk500049.s4.NONE,
+  lastShownEntrypoint: Chunk500049.s4.NONE,
   activeViewType: null,
   activeChannelId: null,
-  closeReason: Chunk827498.ti.DISMISSED,
+  closeReason: Chunk500049.Se.DISMISSED,
   initialState: true
 };
 
@@ -33,22 +33,22 @@ function c(e) {
     initialState: r,
     activeChannelId: i
   } = e;
-  return l.show = true, l.entrypoint = t, l.lastShownEntrypoint = t, l.closeReason = o.ti.DISMISSED, l.activeViewType = n, l.activeChannelId = i, l.initialState = r, true
+  return l.show = true, l.entrypoint = t, l.lastShownEntrypoint = t, l.closeReason = s.Se.DISMISSED, l.activeViewType = n, l.activeChannelId = i, l.initialState = r, true
 }
 
 function u(e) {
   let {
-    closeReason: t = o.ti.DISMISSED
+    closeReason: t = s.Se.DISMISSED
   } = e;
-  return l.show = false, l.entrypoint = o._b.NONE, l.closeReason = t, l.initialState = true, l.activeChannelId = null, true
+  return l.show = false, l.entrypoint = s.s4.NONE, l.closeReason = t, l.initialState = true, l.activeChannelId = null, true
 }
-class d extends(r = Chunk442837.ZP.Store) {
+class d extends(r = Chunk311907.Ay.Store) {
   initialize() {}
   shouldShowPopup() {
-    return l.show && l.entrypoint === o._b.TEXT
+    return l.show && l.entrypoint === s.s4.TEXT
   }
   shouldShowModal() {
-    return l.show && l.entrypoint === o._b.VOICE
+    return l.show && l.entrypoint === s.s4.VOICE
   }
   entrypoint() {
     return l.entrypoint
@@ -73,17 +73,17 @@ class d extends(r = Chunk442837.ZP.Store) {
 
 function f() {
   u({
-    closeReason: o.ti.DISMISSED
+    closeReason: s.Se.DISMISSED
   })
 }
 
 function p() {
   u({
-    closeReason: o.ti.COMMAND
+    closeReason: s.Se.COMMAND
   })
 }
-s(d, "displayName", "AppLauncherStore");
-let _ = new d(Chunk570140.Z, {
+o(d, "displayName", "AppLauncherStore");
+let _ = new d(Chunk73153.h, {
   APP_LAUNCHER_SHOW: c,
   APP_LAUNCHER_DISMISS: u,
   CONNECTION_OPEN: f,

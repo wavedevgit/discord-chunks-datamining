@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 276444, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 851746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Y
-}), require("./388685.js");
-var r, Chunk275726 = require("./275726.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk281494 = require("./281494.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => W
+}), require("./896048.js");
+var r, Chunk448761 = require("./448761.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk326084 = require("./326084.js"),
+  Chunk652215 = require("./652215.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,20 +30,20 @@ let d = 5,
   b = 0,
   y = null,
   O = [],
-  v = false,
-  S = 0,
+  A = false,
+  v = 0,
+  S = false,
   I = false,
-  T = false,
-  C = null;
+  T = null;
 
-function A() {
-  f = null, p = new Set, h = false, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = false, S = 0, I = false, T = false, C = null, _ = new Map
+function C() {
+  f = null, p = new Set, h = false, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], A = false, v = 0, S = false, I = false, T = null, _ = new Map
 }
 let N = () => true;
 
-function P(e) {
+function R(e) {
   let {} = e;
-  C = null, h = true
+  T = null, h = true
 }
 
 function w(e) {
@@ -54,26 +54,26 @@ function w(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  I = true, T = a, h = false, f = t, p = new Set(n), C = r, _ = i
+  S = true, I = a, h = false, f = t, p = new Set(n), T = r, _ = i
 }
 
-function R(e) {
+function P(e) {
   let {} = e;
-  I = false, T = false, C = null, h = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
+  S = false, I = false, T = null, h = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
 
 function D(e) {
   let {
     userTrialOffer: t
   } = e;
-  (0, l.C$)(), E.set(t.id, t), p.add(t.user_id)
+  (0, l.xM)(), E.set(t.id, t), p.add(t.user_id)
 }
 
 function x(e) {
   let {
     userTrialOffers: t
   } = e;
-  for (let e of ((0, l.C$)(), t)) E.set(e.id, e), p.add(e.user_id)
+  for (let e of ((0, l.xM)(), t)) E.set(e.id, e), p.add(e.user_id)
 }
 
 function L(e) {
@@ -98,31 +98,31 @@ function k(e) {
   let {
     message: t
   } = e;
-  Z(t)
+  V(t)
 }
 
 function U(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => Z(e))
+  t.forEach(e => V(e))
 }
 
 function G(e) {
   let {
     userTrialOfferId: t
   } = e;
-  h || (0, l.C$)(), m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  h || (0, l.xM)(), m.has(t) || (L(t), s.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
 }
 
-function Z(e) {
-  let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
+function V(e) {
+  let t = e.type === i.l.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
-  g.has(t) || m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  g.has(t) || m.has(t) || (L(t), s.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
 }
 
 function F() {
-  v = true
+  A = true
 }
 
 function B(e) {
@@ -130,18 +130,18 @@ function B(e) {
     users: t,
     nextIndex: n
   } = e;
-  v = false, O = t, S = n
+  A = false, O = t, v = n
 }
 
-function V() {
-  v = false
+function H() {
+  A = false
 }
-class H extends(r = Chunk442837.ZP.Store) {
+class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.default), this.syncWith([s.default], N)
+    this.waitFor(o.default), this.syncWith([o.default], N)
   }
   checkAndFetchReferralsRemaining() {
-    null == f && !h && b < d && (null == y || y < Date.now()) && (0, l.C$)()
+    null == f && !h && b < d && (null == y || y < Date.now()) && (0, l.xM)()
   }
   getReferralsRemaining() {
     return this.checkAndFetchReferralsRemaining(), f
@@ -162,19 +162,19 @@ class H extends(r = Chunk442837.ZP.Store) {
     return O
   }
   getFetchingEligibleUsers() {
-    return v
+    return A
   }
   getNextIndexOfEligibleUsers() {
-    return S
+    return v
   }
   getIsEligibleToSendReferrals() {
-    return I
+    return S
   }
   getHasEligibleFriends() {
-    return T
+    return I
   }
   getRefreshAt() {
-    return C
+    return T
   }
   getAllRelevantReferralTrialOffers() {
     return Array.from(E.values())
@@ -183,21 +183,21 @@ class H extends(r = Chunk442837.ZP.Store) {
     return _
   }
 }
-u(H, "displayName", "ReferralTrialStore");
-let Y = new H(Chunk570140.Z, {
+u(Y, "displayName", "ReferralTrialStore");
+let W = new Y(Chunk73153.h, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: G,
-  BILLING_REFERRALS_REMAINING_FETCH_START: P,
+  BILLING_REFERRALS_REMAINING_FETCH_START: R,
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: w,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: R,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: P,
   BILLING_CREATE_REFERRAL_SUCCESS: D,
   CREATE_REFERRALS_SUCCESS: x,
   BILLING_REFERRAL_RESOLVE_SUCCESS: j,
   BILLING_REFERRAL_RESOLVE_FAIL: M,
   REFERRALS_FETCH_ELIGIBLE_USER_START: F,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: B,
-  REFERRALS_FETCH_ELIGIBLE_USER_FAIL: V,
+  REFERRALS_FETCH_ELIGIBLE_USER_FAIL: H,
   LOAD_MESSAGES_SUCCESS: U,
   MESSAGE_CREATE: k,
   LOAD_MESSAGES_AROUND_SUCCESS: U,
-  LOGOUT: A
+  LOGOUT: C
 })

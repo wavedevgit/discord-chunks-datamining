@@ -1,1 +1,0 @@
-{"id":"839392","type":"store","data":{"name":"GameProfileStore","functions":[{"name":"getSimilarGames","args":["e"]},{"name":"getSimilarGamesError","args":["e"]}],"events":["GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS","GAME_PROFILE_GET_SIMILAR_GAMES_ERROR"]},"fromModule":{"id":"89311"}}

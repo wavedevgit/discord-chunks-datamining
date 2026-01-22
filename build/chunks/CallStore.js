@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 523746, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 470710, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  A: () => D
 });
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk544891 = require("./544891.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk914010 = require("./914010.js"),
-  Chunk981631 = require("./981631.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk562465 = require("./562465.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk309010 = require("./309010.js"),
+  Chunk967198 = require("./967198.js"),
+  Chunk652215 = require("./652215.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,14 +57,14 @@ let g = {},
 
 function b() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.Z.getChannelId(),
-    n = c.Z.getChannel(t);
+    t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.A.getChannelId(),
+    n = c.A.getChannel(t);
   if (null != n && null == n.getGuildId() && null != t && (null == g[t] || e)) {
     var r;
     return g[t] = null != (r = g[t]) ? r : {
       channelId: t,
       ringing: []
-    }, l.Z.dispatch({
+    }, l.h.dispatch({
       type: "CALL_CONNECT",
       channelId: t
     }), true
@@ -83,22 +83,22 @@ function O(e) {
   g = _({}, t.calls), E = _({}, t.enqueuedRings)
 }
 
-function v() {
+function A() {
   g = {}, E = {}
 }
 
-function S() {
+function v() {
   return b(true)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t
   } = e;
   return b(false, t)
 }
 
-function T(e) {
+function I(e) {
   let {
     channel: t
   } = e;
@@ -106,7 +106,7 @@ function T(e) {
   delete g[t.id]
 }
 
-function C(e) {
+function T(e) {
   let {
     channelId: t,
     messageId: n,
@@ -122,8 +122,8 @@ function C(e) {
       regionUpdated: false
     }, null != E[t]) {
     let e = E[t];
-    delete E[t], 1 !== e.indexOf("all") && (e = null), s.tn.post({
-      url: f.ANM.CALL_RING(t),
+    delete E[t], 1 !== e.indexOf("all") && (e = null), o.Bo.post({
+      url: f.Rsh.CALL_RING(t),
       body: {
         recipients: e
       },
@@ -133,7 +133,7 @@ function C(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   var t;
   let {
     channelId: n,
@@ -148,16 +148,16 @@ function N(e) {
     messageId: n,
     region: r,
     ringing: i
-  } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
+  } = e, a = g[t], s = null != a && (a.regionUpdated || a.region !== r);
   g[t] = m(_({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
-    regionUpdated: o
+    regionUpdated: s
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t,
     unavailable: n
@@ -180,9 +180,9 @@ function w(e) {
   } = e;
   null == t && (E = {})
 }
-class R extends(r = Chunk442837.ZP.Store) {
+class P extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(c.Z, u.Z, d.Z)
+    this.waitFor(c.A, u.A, d.A)
   }
   getCall(e) {
     return g[e]
@@ -209,17 +209,17 @@ class R extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-p(R, "displayName", "CallStore");
-let D = new R(Chunk570140.Z, {
+p(P, "displayName", "CallStore");
+let D = new P(Chunk73153.h, {
   CONNECTION_OPEN: y,
-  CONNECTION_CLOSED: v,
+  CONNECTION_CLOSED: A,
   OVERLAY_INITIALIZE: O,
-  CONNECTION_RESUMED: S,
-  CHANNEL_SELECT: I,
-  CHANNEL_DELETE: T,
-  CALL_CREATE: C,
+  CONNECTION_RESUMED: v,
+  CHANNEL_SELECT: S,
+  CHANNEL_DELETE: I,
+  CALL_CREATE: T,
   CALL_UPDATE: N,
-  CALL_DELETE: P,
-  CALL_ENQUEUE_RING: A,
+  CALL_DELETE: R,
+  CALL_ENQUEUE_RING: C,
   VOICE_CHANNEL_SELECT: w
 })

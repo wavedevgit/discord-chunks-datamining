@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 664915, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 383394, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk581883 = require("./581883.js");
+  A: () => _
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk617617 = require("./617617.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +19,7 @@ function s(e, t, n) {
 let l = new Set;
 
 function c() {
-  let e = o.Z.getGuildFolders();
+  let e = s.A.getGuildFolders();
   if (null == e) returnfalse;
   let t = false;
   for (let n of l) e.some(e => e.folderId === n) || ((l = new Set(l)).delete(n), t = true);
@@ -45,9 +45,9 @@ function f() {
   if (0 === l.size) returnfalse;
   l = new Set
 }
-class p extends(r = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (l = new Set(e.expandedFolders)), this.waitFor(o.Z)
+    null != e && (l = new Set(e.expandedFolders)), this.waitFor(s.A)
   }
   getState() {
     return {
@@ -61,8 +61,8 @@ class p extends(r = Chunk442837.ZP.PersistedStore) {
     return l.has(e)
   }
 }
-s(p, "displayName", "ExpandedGuildFolderStore"), s(p, "persistKey", "ExpandedGuildFolderStore");
-let _ = new p(Chunk570140.Z, {
+o(p, "displayName", "ExpandedGuildFolderStore"), o(p, "persistKey", "ExpandedGuildFolderStore");
+let _ = new p(Chunk73153.h, {
   TOGGLE_GUILD_FOLDER_EXPAND: u,
   SET_GUILD_FOLDER_EXPANDED: d,
   USER_SETTINGS_PROTO_UPDATE: c,

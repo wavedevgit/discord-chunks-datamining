@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 406066, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 668731, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
-}), require("./539854.js"), require("./388685.js");
-var r, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  A: () => p
+}), require("./321073.js"), require("./896048.js");
+var r, Chunk812729 = require("./812729.js"),
+  a = require.n(Chunk812729),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,7 +17,7 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = [require("./742738.js").Z],
+let c = [require("./732755.js").A],
   u = [];
 
 function d() {
@@ -28,7 +28,7 @@ function d() {
   }
   return !a()(e, u) && (u = e, true)
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.syncWith(c, d)
   }
@@ -37,4 +37,4 @@ class f extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(f, "displayName", "FirstPartyRichPresenceStore");
-let p = new f(Chunk570140.Z)
+let p = new f(Chunk73153.h)

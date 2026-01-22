@@ -1,0 +1,107 @@
+/** Chunk was on 97492 **/
+/** chunk id: 379600, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => v
+});
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk503698 = require("./503698.js"),
+  i = require.n(Chunk503698),
+  Chunk110259 = require("./110259.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk732955 = require("./732955.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk387755 = require("./387755.js"),
+  Chunk139286 = require("./139286.js"),
+  Chunk313961 = require("./313961.js"),
+  Chunk325909 = require("./325909.js"),
+  Chunk573435 = require("./573435.jsx"),
+  Chunk378570 = require("./378570.js"),
+  Chunk260509 = require("./260509.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk47167 = require("./47167.js"),
+  Chunk806931 = require("./806931.js"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk287278 = require("./287278.js");
+
+function v(e) {
+  let {
+    recipientUser: t,
+    voiceChannel: n
+  } = e, l = (0, A.Ay)(n), o = (0, p.o)(t, "RingToVoiceBanner", n.id), {
+    userIsInCall: u,
+    isUserRinging: b
+  } = (0, s.cf)([f.A], () => {
+    let e = null;
+    return o && null != n.id && (e = f.A.getParticipant(n.id, t.id)), {
+      userIsInCall: null != e,
+      isUserRinging: null != e && e.type === y.lp.USER && e.ringing
+    }
+  }), v = (0, s.bG)([m.A], () => m.A.getGuild(n.guild_id)), E = null != v ? (0, g.Iv)(v, 32, true) : null, _ = !o || u && !b;
+  return ((0, d.A)({
+    type: a.ImpressionTypes.PAGE,
+    name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
+    properties: {
+      voice_channel_id: null == n ? true : n.id,
+      voice_guild_id: null == n ? true : n.guild_id
+    }
+  }, {
+    disableTrack: _
+  }, [t.id]), _) ? null : (0, r.jsxs)("div", {
+    className: i()(j.Sp, j.JD),
+    children: [(0, r.jsxs)("div", {
+      className: j.hP,
+      children: [(0, r.jsx)(h.Ay, {
+        className: j.dK,
+        mask: h.hW.SQUIRCLE,
+        width: 24,
+        height: 24,
+        children: null == E ? (0, r.jsx)("div", {
+          className: i()(j.$f, j.Gc),
+          children: (0, r.jsx)("div", {
+            className: j.Hj,
+            children: null != v ? (0, g.Rb)(v) : null
+          })
+        }) : (0, r.jsx)("img", {
+          alt: null == v ? true : v.name,
+          src: E,
+          className: j.$f
+        })
+      }), (0, r.jsx)(c.Text, {
+        className: j.E5,
+        variant: "text-md/medium",
+        color: "text-default",
+        children: O.intl.format(O.t.f2tNxH, {
+          username: null == t ? true : t.globalName,
+          channelName: (0, r.jsx)(c.Text, {
+            variant: "text-md/semibold",
+            color: "text-strong",
+            children: l
+          }, n.id)
+        })
+      })]
+    }), (0, r.jsx)(x, {
+      channelId: n.id,
+      recipientUserId: t.id,
+      isUserRinging: b
+    })]
+  })
+}
+
+function x(e) {
+  let {
+    channelId: t,
+    recipientUserId: n,
+    isUserRinging: l
+  } = e, i = l ? O.intl.string(O.t.ygslb0) : O.intl.string(O.t["3Hv9qQ"]), a = l ? () => u.A.stopRinging(t, [n]) : () => {
+    u.A.ring(t, [n], "dm_banner"), (0, b.iN)(t)
+  };
+  return (0, r.jsx)(o.$nd, {
+    variant: l ? "critical-secondary" : "secondary",
+    size: "sm",
+    text: i,
+    iconPosition: "start",
+    icon: c.HKD,
+    onClick: a
+  })
+}

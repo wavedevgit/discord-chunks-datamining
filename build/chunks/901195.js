@@ -1,9 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 901195, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-module.exports = {
-  flex: "_48a9c1ba881795e8-flex",
-  flexChild: "_48a9c1ba881795e8-flexChild",
-  flexGutterSmall: "_48a9c1ba881795e8-flexGutterSmall",
-  flexGutterLarge: "_48a9c1ba881795e8-flexGutterLarge"
-}

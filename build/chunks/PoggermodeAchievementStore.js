@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 882029, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 874486, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  A: () => y
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk57562 = require("./57562.jsx"),
-  Chunk351780 = require("./351780.js"),
-  Chunk843693 = require("./843693.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk414736 = require("./414736.jsx"),
+  Chunk3137 = require("./3137.js"),
+  Chunk559908 = require("./559908.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,7 +62,7 @@ function g(e) {
       dateUnlocked: Date.now()
     }
   }), setTimeout(() => {
-    (0, s.D)(e, true)
+    (0, o.U)(e, true)
   }, _), true)
 }
 
@@ -70,12 +70,12 @@ function E(e) {
   let {
     achievementId: t
   } = e;
-  if (!l.Z.isEnabled()) returnfalse;
+  if (!l.A.isEnabled()) returnfalse;
   g(t)
 }
-class b extends(r = Chunk442837.ZP.PersistedStore) {
+class b extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.default, l.Z, c.ZP);
+    this.waitFor(s.default, l.A, c.Ay);
     let t = null != e ? e : d({}, h);
     for (let e in t) m[e] = t[e]
   }
@@ -91,6 +91,6 @@ class b extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 u(b, "displayName", "PoggermodeAchievementStore"), u(b, "persistKey", "PoggermodeAchievementStore");
-let y = new b(Chunk570140.Z, {
+let y = new b(Chunk73153.h, {
   POGGERMODE_ACHIEVEMENT_UNLOCK: E
 })

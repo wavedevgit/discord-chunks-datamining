@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 91896, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 800828, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
-}), require("./539854.js"), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk759174 = require("./759174.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk699516 = require("./699516.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => N
+}), require("./321073.js"), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk713402 = require("./713402.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk994500 = require("./994500.js"),
+  Chunk652215 = require("./652215.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,7 +37,7 @@ function h(e) {
   let t = [];
   return t.push(f(e.applicationId)), t.push(p(e.id)), t.push(_(e.type)), t
 }
-let m = new Chunk759174.h(h, e => "".concat(e.since)),
+let m = new Chunk713402.J(h, e => "".concat(e.since)),
   g = 0,
   E = 0,
   b = 0;
@@ -51,10 +51,10 @@ function y() {
       type: i,
       id: a
     } = r;
-    if (i === l.OGo.FRIEND) n += 1;
-    else if (i === l.OGo.PENDING_OUTGOING) t += 1;
-    else if (i === l.OGo.PENDING_INCOMING) {
-      if (s.Z.isSpam(a) || s.Z.isIgnored(a)) return;
+    if (i === l.eA$.FRIEND) n += 1;
+    else if (i === l.eA$.PENDING_OUTGOING) t += 1;
+    else if (i === l.eA$.PENDING_INCOMING) {
+      if (o.A.isSpam(a) || o.A.isIgnored(a)) return;
       e += 1
     }
   }), g = e, E = t, b = n
@@ -64,37 +64,37 @@ function O(e) {
   m.set(d(e.id, e.applicationId), e)
 }
 
-function v(e, t) {
+function A(e, t) {
   m.delete(d(e, t))
 }
 
-function S(e) {
+function v(e) {
   let {
     unknownApplicationIds: t
   } = e;
   if (null != t) {
     for (let e of t)
-      for (let t of m.values(f(e)))(t.type === l.OGo.PENDING_INCOMING || t.type === l.OGo.PENDING_OUTGOING) && v(t.id, e);
+      for (let t of m.values(f(e)))(t.type === l.eA$.PENDING_INCOMING || t.type === l.eA$.PENDING_OUTGOING) && A(t.id, e);
     y()
   }
 }
 
-function I(e) {
+function S(e) {
   m.clear(), e.gameRelationships.forEach(e => {
     O(u(e))
   }), y()
 }
 
-function T(e) {
+function I(e) {
   O(e.gameRelationship), y()
 }
 
-function C(e) {
-  v(e.userId, e.applicationId), y()
+function T(e) {
+  A(e.userId, e.applicationId), y()
 }
-class A extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.Z)
+    this.waitFor(o.A)
   }
   getPendingIncomingCount() {
     return g
@@ -106,7 +106,7 @@ class A extends(r = Chunk442837.ZP.Store) {
     return b
   }
   getGameFriendsForApplication(e) {
-    return m.values(f(e), true).filter(e => e.type === l.OGo.FRIEND)
+    return m.values(f(e), true).filter(e => e.type === l.eA$.FRIEND)
   }
   getGameRelationshipsForUser(e) {
     return m.values(p(e), true)
@@ -115,7 +115,7 @@ class A extends(r = Chunk442837.ZP.Store) {
     return this.getGameRelationshipsForUser(e).filter(e => e.type === t)
   }
   getGameFriendsForUser(e) {
-    return this.getGameRelationshipsForUserByType(e, l.OGo.FRIEND)
+    return this.getGameRelationshipsForUserByType(e, l.eA$.FRIEND)
   }
   getGameRelationshipCount() {
     return m.size()
@@ -130,10 +130,10 @@ class A extends(r = Chunk442837.ZP.Store) {
     return m.version
   }
 }
-c(A, "displayName", "GameRelationshipStore");
-let N = new A(Chunk570140.Z, {
-  CONNECTION_OPEN: I,
-  GAME_RELATIONSHIP_ADD: T,
-  GAME_RELATIONSHIP_REMOVE: C,
-  APPLICATIONS_FETCH_SUCCESS: S
+c(C, "displayName", "GameRelationshipStore");
+let N = new C(Chunk73153.h, {
+  CONNECTION_OPEN: S,
+  GAME_RELATIONSHIP_ADD: I,
+  GAME_RELATIONSHIP_REMOVE: T,
+  APPLICATIONS_FETCH_SUCCESS: v
 })

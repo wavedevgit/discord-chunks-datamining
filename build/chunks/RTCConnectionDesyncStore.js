@@ -1,23 +1,23 @@
 /** Chunk was on web.js **/
-/** chunk id: 878884, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 584569, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk46973 = require("./46973.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk642047 = require("./642047.js"),
-  Chunk541638 = require("./541638.js"),
-  Chunk189786 = require("./189786.js"),
-  Chunk5192 = require("./5192.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk19780 = require("./19780.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk979651 = require("./979651.js"),
-  Chunk938475 = require("./938475.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk354459 = require("./354459.js");
+  A: () => D
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk205693 = require("./205693.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk194862 = require("./194862.js"),
+  Chunk357046 = require("./357046.js"),
+  Chunk288737 = require("./288737.js"),
+  Chunk562153 = require("./562153.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk383501 = require("./383501.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk977997 = require("./977997.js"),
+  Chunk607567 = require("./607567.js"),
+  Chunk652215 = require("./652215.js"),
+  Chunk806931 = require("./806931.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,19 +27,19 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = new Chunk642047.Z,
-  y = new Chunk642047.Z,
+let b = new Chunk194862.A,
+  y = new Chunk194862.A,
   O = new Set;
 
-function v(e, t, n) {
-  let r = new c.Z({
+function A(e, t, n) {
+  let r = new c.A({
       userId: e.id,
       channelId: n
     }),
-    i = (0, h.PH)(r, null != t ? t : m.ME, e.id);
+    i = (0, h.RQ)(r, null != t ? t : m.ME, e.id);
   b.set(e.id, i);
   let a = {
-    type: g.fO.USER,
+    type: g.lp.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -50,75 +50,75 @@ function v(e, t, n) {
     lastSpoke: 0,
     soundsharing: false,
     ringing: false,
-    userNick: u.ZP.getName(t, n, e),
-    userAvatarDecoration: (0, l.o)(e, t),
+    userNick: u.Ay.getName(t, n, e),
+    userAvatarDecoration: (0, l.U)(e, t),
     localVideoDisabled: false,
     isPoppedOut: false
   };
   y.set(e.id, a)
 }
 
-function S(e) {
+function v(e) {
   let t = b.delete(e),
     n = y.delete(e),
     r = O.delete(e);
   return t || n || r
 }
 
-function I() {
+function S() {
   var e;
-  let t = f.Z.getChannelId();
+  let t = f.A.getChannelId();
   if (null == t) returnfalse;
-  let n = null == (e = d.Z.getChannel(t)) ? true : e.getGuildId(),
+  let n = null == (e = d.A.getChannel(t)) ? true : e.getGuildId(),
     r = false;
   return O.forEach(e => {
-    if (null != _.Z.getVoiceStateForChannel(t, e)) return void O.delete(e);
+    if (null != _.A.getVoiceStateForChannel(t, e)) return void O.delete(e);
     let i = p.default.getUser(e);
-    null != i && (r = true, O.delete(e), v(i, n, t))
+    null != i && (r = true, O.delete(e), A(i, n, t))
   }), r
 }
 
-function T() {
+function I() {
   b.clear(), y.clear(), O.clear()
 }
 
-function C() {
-  T()
+function T() {
+  I()
 }
 
-function A(e) {
+function C(e) {
   let {
     state: t,
     context: n
   } = e;
-  if (n !== a.Yn.DEFAULT || t !== m.hes.DISCONNECTED) returnfalse;
-  T()
+  if (n !== a.x.DEFAULT || t !== m.S7L.DISCONNECTED) returnfalse;
+  I()
 }
 
 function N(e) {
   let {
     voiceStates: t
-  } = e, n = f.Z.getChannelId();
+  } = e, n = f.A.getChannelId();
   return null != n && t.reduce((e, t) => {
     let {
       userId: r,
       channelId: i
     } = t;
-    return i === n && !!S(r) || e
+    return i === n && !!v(r) || e
   }, false)
 }
 
-function P(e) {
+function R(e) {
   let {
     userIds: t,
     guildId: n,
     channelId: r,
     context: i
   } = e;
-  return i === a.Yn.DEFAULT && t.reduce((e, t) => {
-    if (null != _.Z.getVoiceStateForChannel(r, t)) return e;
+  return i === a.x.DEFAULT && t.reduce((e, t) => {
+    if (null != _.A.getVoiceStateForChannel(r, t)) return e;
     let i = p.default.getUser(t);
-    return null == i ? (O.add(t), e) : (v(i, n, r), true)
+    return null == i ? (O.add(t), e) : (A(i, n, r), true)
   }, false)
 }
 
@@ -127,11 +127,11 @@ function w(e) {
     userId: t,
     context: n
   } = e;
-  return n === a.Yn.DEFAULT && S(t)
+  return n === a.x.DEFAULT && v(t)
 }
-class R extends(r = Chunk442837.ZP.Store) {
+class P extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(_.Z, p.default, d.Z, f.Z), this.syncWith([p.default], I)
+    this.waitFor(_.A, p.default, d.A, f.A), this.syncWith([p.default], S)
   }
   get desyncedVoiceStatesCount() {
     return b.size()
@@ -146,12 +146,12 @@ class R extends(r = Chunk442837.ZP.Store) {
     return y.values()
   }
 }
-E(R, "displayName", "RTCConnectionDesyncStore");
-let D = new R(Chunk570140.Z, {
-  CONNECTION_OPEN: C,
-  VOICE_CHANNEL_SELECT: T,
-  RTC_CONNECTION_STATE: A,
+E(P, "displayName", "RTCConnectionDesyncStore");
+let D = new P(Chunk73153.h, {
+  CONNECTION_OPEN: T,
+  VOICE_CHANNEL_SELECT: I,
+  RTC_CONNECTION_STATE: C,
   VOICE_STATE_UPDATES: N,
-  RTC_CONNECTION_CLIENT_CONNECT: P,
+  RTC_CONNECTION_CLIENT_CONNECT: R,
   RTC_CONNECTION_CLIENT_DISCONNECT: w
 })

@@ -1,0 +1,1 @@
+{"id":"477394","type":"experiment","data":{"kind":"user","id":"2025-08_roblox_subgames_rollout","label":"Roblox subgames fetch rollout","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enables fetching roblox subgame application info","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

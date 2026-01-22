@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 943881, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 403727, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  A: () => d
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk411198 = require("./411198.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk860689 = require("./860689.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,14 +23,14 @@ function c(e) {
     invite: t
   } = e, n = t.guild;
   if (null == n) returnfalse;
-  l[n.id] = (0, o.Qs)(n)
+  l[n.id] = (0, s.DY)(n)
 }
-class u extends(r = Chunk442837.ZP.Store) {
+class u extends(r = Chunk311907.Ay.Store) {
   getGuild(e) {
     return l[e]
   }
 }
-s(u, "displayName", "AuthInviteStore");
-let d = new u(Chunk570140.Z, {
+o(u, "displayName", "AuthInviteStore");
+let d = new u(Chunk73153.h, {
   AUTH_INVITE_UPDATE: c
 })

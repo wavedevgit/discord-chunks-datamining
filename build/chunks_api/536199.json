@@ -1,0 +1,1 @@
+{"id":"536199","type":"experiment","data":{"kind":"user","id":"2025-07_desktop_high_contrast_mode","label":"Desktop High Contrast Mode","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

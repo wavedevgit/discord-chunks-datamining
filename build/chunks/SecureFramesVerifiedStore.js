@@ -1,123 +1,123 @@
-/** Chunk was on 33397 **/
-/** chunk id: 98369, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 31748 **/
+/** chunk id: 707890, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
-}), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
-var n, l, Chunk442837 = require("./442837.js"),
-  Chunk46973 = require("./46973.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk569545 = require("./569545.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk19780 = require("./19780.js"),
-  Chunk959457 = require("./959457.js"),
-  Chunk630759 = require("./630759.js"),
-  Chunk729303 = require("./729303.js"),
-  Chunk651941 = require("./651941.js"),
-  Chunk981631 = require("./981631.js");
-let p = new Map,
-  b = new Map,
-  m = false,
-  O = null;
+  A: () => S
+}), require("./896048.js"), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js");
+var l, r, Chunk311907 = require("./311907.js"),
+  Chunk205693 = require("./205693.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk652896 = require("./652896.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk383501 = require("./383501.js"),
+  Chunk162605 = require("./162605.js"),
+  Chunk814278 = require("./814278.js"),
+  Chunk440976 = require("./440976.js"),
+  Chunk787392 = require("./787392.js"),
+  Chunk652215 = require("./652215.js");
+let m = new Map,
+  h = new Map,
+  A = false,
+  y = null;
 
-function S() {
-  return f.Z.getAllActiveStreamKeys().reduce((e, t) => {
+function _() {
+  return d.A.getAllActiveStreamKeys().reduce((e, t) => {
     let {
-      ownerId: r
-    } = (0, o.my)(t), n = true === p.get(r), l = b.get(t) !== n;
-    return b.set(t, n), !!l || e
+      ownerId: n
+    } = (0, o.Iy)(t), l = true === m.get(n), r = h.get(t) !== l;
+    return h.set(t, l), !!r || e
   }, false)
 }
 
-function T() {
+function E() {
   var e;
-  let t = null != (e = a.Z.getUserIds()) ? e : new Set,
-    r = s.default.getId(),
-    n = true;
+  let t = null != (e = u.A.getUserIds()) ? e : new Set,
+    n = c.default.getId(),
+    l = true;
   for (let e of t)
-    if (r !== e && true !== p.get(e)) {
-      n = false;
+    if (n !== e && true !== m.get(e)) {
+      l = false;
       break
-    } let l = n !== m;
-  return m = n, l
+    } let r = l !== A;
+  return A = l, r
 }
 
-function N(e) {
+function v(e) {
   let {
     userId: t
   } = e;
-  if (s.default.getId() === t) returnfalse;
-  let r = function(e) {
-      let t = a.Z.getSecureFramesRosterMapEntry(e);
+  if (c.default.getId() === t) returnfalse;
+  let n = function(e) {
+      let t = u.A.getSecureFramesRosterMapEntry(e);
       if (null == t) returnfalse;
-      let r = new Uint8Array(t),
-        n = g.Z.isKeyVerified(e, r) || E.Z.isKeyVerified(e, r),
-        l = (0, d.UB)(e, [a.Z, f.Z]),
-        u = n && !l,
-        i = u !== p.get(e);
-      return p.set(e, u), i
+      let n = new Uint8Array(t),
+        l = b.A.isKeyVerified(e, n) || p.A.isKeyVerified(e, n),
+        r = (0, f.m8)(e, [u.A, d.A]),
+        i = l && !r,
+        a = i !== m.get(e);
+      return m.set(e, i), a
     }(t),
-    n = S(),
-    l = T();
-  return r || n || l
+    l = _(),
+    r = E();
+  return n || l || r
 }
 
-function j() {
-  p.clear(), b.clear(), m = false
+function O() {
+  m.clear(), h.clear(), A = false
 }
-class C extends(n = Chunk442837.ZP.Store) {
+class x extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.default, a.Z, f.Z, E.Z, g.Z)
+    this.waitFor(c.default, u.A, d.A, p.A, b.A)
   }
   isCallVerified() {
-    return m
+    return A
   }
   isStreamVerified(e) {
-    return b.get(e)
+    return h.get(e)
   }
   isUserVerified(e) {
-    return p.get(e)
+    return m.get(e)
   }
-}(l = "displayName") in C ? Object.defineProperty(C, l, {
+}(r = "displayName") in x ? Object.defineProperty(x, r, {
   value: "SecureFramesVerifiedStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : C[l] = "SecureFramesVerifiedStore";
-let _ = new C(Chunk570140.Z, {
-  CONNECTION_OPEN: j,
+}) : x[r] = "SecureFramesVerifiedStore";
+let S = new x(Chunk73153.h, {
+  CONNECTION_OPEN: O,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
-    if (t === O) returnfalse;
-    O = t, j()
+    if (t === y) returnfalse;
+    y = t, O()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
       streamKey: t,
-      state: r,
-      context: n
+      state: n,
+      context: l
     } = e;
-    if (r !== y.hes.DISCONNECTED) returnfalse;
-    switch (n) {
-      case i.Yn.STREAM:
+    if (n !== g.S7L.DISCONNECTED) returnfalse;
+    switch (l) {
+      case a.x.STREAM:
         if (null == t) returnfalse;
-        return b.delete(t), T();
-      case i.Yn.DEFAULT:
-        j()
+        return h.delete(t), E();
+      case a.x.DEFAULT:
+        O()
     }
   },
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, r = s.default.getId(), n = t.reduce((e, t) => r === t ? e : !!N({
+    } = e, n = c.default.getId(), l = t.reduce((e, t) => n === t ? e : !!v({
       userId: t
-    }) || e, false), l = S(), u = T();
-    return n || l || u
+    }) || e, false), r = _(), i = E();
+    return l || r || i
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: N,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: N,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: N,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: N,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: N
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: v,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: v,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: v,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: v,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: v
 })

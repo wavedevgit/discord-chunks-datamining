@@ -1,1 +1,0 @@
-{"id":"896797","type":"store","data":{"name":"DefaultRouteStore","functions":[{"name":"initialize","args":[]},{"name":"defaultRoute","args":[]},{"name":"lastNonVoiceRoute","args":[]},{"name":"fallbackRoute","args":[]},{"name":"getState","args":[]}],"events":["SAVE_LAST_ROUTE","SAVE_LAST_NON_VOICE_ROUTE"]},"fromModule":{"id":"web.js"}}

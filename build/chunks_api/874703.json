@@ -1,1 +1,0 @@
-{"id":"874703","type":"store","data":{"name":"CollectiblesMarketingsStore","functions":[{"name":"getMarketingBySurface","args":["e"]},{"name":"fetchState","args":[]}],"events":["COLLECTIBLES_MARKETING_FETCH","COLLECTIBLES_MARKETING_FETCH_SUCCESS","LOGOUT"]},"fromModule":{"id":"web.js"}}

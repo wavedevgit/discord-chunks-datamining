@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 737406, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 514983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
-}), require("./388685.js"), require("./953529.js"), require("./781311.js"), require("./539854.js");
-var Chunk732870 = require("./732870.js"),
-  Chunk429091 = require("./429091.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk373228 = require("./373228.js");
+  A: () => E
+}), require("./896048.js"), require("./228524.js"), require("./733351.js"), require("./321073.js");
+var Chunk810531 = require("./810531.js"),
+  Chunk952526 = require("./952526.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk842086 = require("./842086.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +21,7 @@ let l = new Map,
   c = new Map,
   u = false,
   d = null,
-  f = Chunk70956.Z.Millis.HOUR;
+  f = Chunk927813.A.Millis.HOUR;
 
 function p(e) {
   return {
@@ -32,7 +32,7 @@ function p(e) {
     description: e.description,
     format_type: e.format_type,
     pack_id: e.pack_id,
-    [r.O]: "PackSticker"
+    [r.L]: "PackSticker"
   }
 }
 
@@ -45,14 +45,14 @@ function _(e) {
 function h(e, t) {
   let n = [];
   return n.push({
-    type: o.MO.STICKER_NAME,
+    type: s.cG.STICKER_NAME,
     value: e.name.trim().toLocaleLowerCase()
   }), null != t && n.push({
-    type: o.MO.PACK_NAME,
+    type: s.cG.PACK_NAME,
     value: t.name
   }), n
 }
-class m extends Chunk429091.d {
+class m extends Chunk952526.U {
   get isFetchingStickerPacks() {
     return u
   }
@@ -66,11 +66,11 @@ class m extends Chunk429091.d {
     return l.get(e)
   }
   constructor(...e) {
-    super(...e), s(this, "getAllPackStickers", this.memoized(e => {
+    super(...e), o(this, "getAllPackStickers", this.memoized(e => {
       let t = new Map;
       for (let n in e) t.set(n, Object.values(e[n].root));
       return t
-    })), s(this, "getStickerMetadataMap", this.memoized(e => {
+    })), o(this, "getStickerMetadataMap", this.memoized(e => {
       let t = new Map;
       for (let n in e)
         for (let [r, i] of Object.entries(e[n].root)) {
@@ -78,14 +78,14 @@ class m extends Chunk429091.d {
           t.set(r, h(i, e))
         }
       return t
-    })), s(this, "getStickerById", this.memoizedSecondaryIndex()), s(this, "getPremiumPacks", this.memoized(e => Array.from(c.values())))
+    })), o(this, "getStickerById", this.memoizedSecondaryIndex()), o(this, "getPremiumPacks", this.memoized(e => Array.from(c.values())))
   }
 }
 
 function g(e, t, n) {
   l.set(e.id, e), n && c.set(e.id, e), t.setPartition(e.id, _(e.stickers))
 }
-s(m, "displayName", "StickersPackStore");
+o(m, "displayName", "StickersPackStore");
 let E = new m({
   LOGOUT: (e, t) => {
     l.clear(), c.clear(), t.reset()

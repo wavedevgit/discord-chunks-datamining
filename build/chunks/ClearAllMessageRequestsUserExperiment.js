@@ -1,9 +1,9 @@
-/** Chunk was on 1272 **/
-/** chunk id: 183126, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21738 **/
+/** chunk id: 55400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => i
+  w: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2023-01_clear_all_message_requests",
   label: "Safety Experience Reject All Message Requests",

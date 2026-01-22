@@ -1,0 +1,1 @@
+{"id":"916882","type":"experiment","data":{"kind":"user","label":"Pomelo Suggestions","id":"2023-04_pomelo_suggestions","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"enabled","config":{"enabled":true}}]},"fromModule":{"id":"86142"}}

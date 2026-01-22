@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 906467, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 540999, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk168232 = require("./168232.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk987338 = require("./987338.js"),
-  Chunk48541 = require("./48541.js");
+  A: () => h
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk572009 = require("./572009.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk688151 = require("./688151.js"),
+  Chunk115093 = require("./115093.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,14 +20,14 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = "production" === Chunk48541.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk48541.C.STAGING;
+let f = "production" === Chunk115093.B.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk115093.B.STAGING;
 
 function p() {
-  f = (0, o.QI)(l.default.getCurrentUser())
+  f = (0, s.I9)(l.default.getCurrentUser())
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class _ extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.default, s.Z), Object.defineProperties(this, {
+    this.waitFor(l.default, o.A), Object.defineProperties(this, {
       isDeveloper: {
         configurable: false,
         get: () => f,
@@ -41,7 +41,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
       name: "discord_dev_testing",
       revision: 1,
       override: true,
-      bucket: c.NZ.TREATMENT_1
+      bucket: c.RE.TREATMENT_1
     } : null
   }
   constructor(...e) {
@@ -49,7 +49,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
   }
 }
 d(_, "displayName", "DeveloperExperimentStore");
-let h = new _(Chunk570140.Z, {
+let h = new _(Chunk73153.h, {
   CONNECTION_OPEN: p,
   OVERLAY_INITIALIZE: p,
   CURRENT_USER_UPDATE: p

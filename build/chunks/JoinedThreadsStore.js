@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 569471, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 152007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
-}), require("./388685.js"), require("./997841.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk798140 = require("./798140.js"),
-  Chunk131704 = require("./131704.js"),
-  Chunk314897 = require("./314897.js");
+  A: () => j
+}), require("./896048.js"), require("./938796.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk544743 = require("./544743.js"),
+  Chunk95701 = require("./95701.js"),
+  Chunk961350 = require("./961350.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function _(e, t) {
   }), e
 }
 let h = {},
-  m = new Chunk798140.ZP,
+  m = new Chunk544743.Ay,
   g = new Set;
 
 function E(e) {
@@ -64,7 +64,7 @@ function b(e) {
 }
 
 function y(e) {
-  c.AW.has(e.type) && null != e.member && (h[e.id] = {
+  c.A_.has(e.type) && null != e.member && (h[e.id] = {
     threadId: e.id,
     guildId: e.guild_id,
     flags: e.member.flags,
@@ -81,13 +81,13 @@ function O(e) {
   }) && (h[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
-function v(e) {
+function A(e) {
   m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
     b(e)
   })
 }
 
-function S(e) {
+function v(e) {
   let {
     joinedThreads: t
   } = e;
@@ -96,28 +96,28 @@ function S(e) {
   })).keyBy("threadId").value()
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: t
   } = e;
   E(t.id), b(t)
 }
 
-function T(e) {
+function I(e) {
   let {
     guild: t
   } = e;
   E(t.id)
 }
 
-function C(e) {
+function T(e) {
   let {
     channel: t
   } = e;
   y(t)
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     members: n
@@ -156,7 +156,7 @@ function N(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     channel: t
   } = e;
@@ -176,7 +176,7 @@ function w(e) {
   }, O(e.id)
 }
 
-function R(e) {
+function P(e) {
   let {
     id: t,
     userId: n,
@@ -210,7 +210,7 @@ function D(e) {
     }, O(e.id), r = true)
   }), r
 }
-class x extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -240,20 +240,20 @@ class x extends(r = Chunk442837.ZP.Store) {
   }
 }
 d(x, "displayName", "JoinedThreadsStore");
-let L = new x(Chunk570140.Z, {
-    CONNECTION_OPEN: v,
-    OVERLAY_INITIALIZE: S,
-    GUILD_CREATE: I,
-    GUILD_DELETE: T,
-    THREAD_CREATE: C,
-    THREAD_LIST_SYNC: A,
+let L = new x(Chunk73153.h, {
+    CONNECTION_OPEN: A,
+    OVERLAY_INITIALIZE: v,
+    GUILD_CREATE: S,
+    GUILD_DELETE: I,
+    THREAD_CREATE: T,
+    THREAD_LIST_SYNC: C,
     SEARCH_MESSAGES_SUCCESS: N,
     MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
-    LOAD_THREADS_SUCCESS: A,
-    LOAD_ARCHIVED_THREADS_SUCCESS: A,
-    THREAD_DELETE: P,
+    LOAD_THREADS_SUCCESS: C,
+    LOAD_ARCHIVED_THREADS_SUCCESS: C,
+    THREAD_DELETE: R,
     THREAD_MEMBER_UPDATE: w,
-    THREAD_MEMBER_LOCAL_UPDATE: R,
+    THREAD_MEMBER_LOCAL_UPDATE: P,
     THREAD_MEMBERS_UPDATE: D
   }),
   j = L

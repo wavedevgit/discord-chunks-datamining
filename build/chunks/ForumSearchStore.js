@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 208970, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 768953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  A: () => v
 });
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk592125 = require("./592125.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk734057 = require("./734057.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function l(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function u(e, t) {
 let d = {};
 
 function f(e) {
-  let t = o.Z.getChannel(e);
+  let t = s.A.getChannel(e);
   return null != t && !!t.isForumLikeChannel()
 }
 
@@ -141,9 +141,9 @@ function y(e) {
 function O() {
   d = {}
 }
-class v extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.Z)
+    this.waitFor(s.A)
   }
   getSearchQuery(e) {
     let t = d[e];
@@ -163,8 +163,8 @@ class v extends(r = Chunk442837.ZP.Store) {
     return (null == t ? true : t.results) != null && t.results.length > 0
   }
 }
-s(v, "displayName", "ForumSearchStore");
-let S = new v(Chunk570140.Z, {
+o(A, "displayName", "ForumSearchStore");
+let v = new A(Chunk73153.h, {
   CONNECTION_OPEN: O,
   THREAD_DELETE: b,
   CHANNEL_DELETE: y,

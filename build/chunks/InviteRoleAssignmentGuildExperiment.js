@@ -1,9 +1,9 @@
-/** Chunk was on 7654 **/
-/** chunk id: 156953, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 43600 **/
+/** chunk id: 540683, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => i
+  E: () => i
 });
-let l = (0, require("./818083.js").B)({
+let l = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2025-08_invite_role_assignment",
   label: "Invite Role Assignment",

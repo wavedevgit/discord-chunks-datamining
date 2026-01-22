@@ -1,0 +1,1 @@
+{"id":"335934","type":"experiment","data":{"kind":"user","id":"2025-10_icymi_desktop_client","label":"ICYMI desktop client","defaultConfig":{"icymiDesktopEnabled":false},"treatments":[{"id":1,"label":"Enable ICYMI desktop client","config":{"icymiDesktopEnabled":true}}]},"fromModule":{"id":"web.js"}}

@@ -1,13 +1,13 @@
-/** Chunk was on 9414 **/
-/** chunk id: 905753, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 21968 **/
+/** chunk id: 803378, original params: e,t,n (module,exports,require) **/
 let i, r, l;
 require.d(exports, {
-  Z: () => h
-}), require("./467055.js"), require("./388685.js");
-var a, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk581364 = require("./581364.js"),
-  Chunk399860 = require("./399860.js");
+  A: () => h
+}), require("./446912.js"), require("./896048.js");
+var a, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk168186 = require("./168186.js"),
+  Chunk200662 = require("./200662.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,22 +17,22 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = {},
-  b = {},
+let b = {},
+  f = {},
   p = false;
 
-function g() {
-  i = true, m = {}, b = {}, r = true, l = true, p = false
+function m() {
+  i = true, b = {}, f = {}, r = true, l = true, p = false
 }
-class f extends(a = Chunk442837.ZP.Store) {
+class g extends(a = Chunk311907.Ay.Store) {
   getApplicationPermissions() {
-    return m
-  }
-  getCommands() {
     return b
   }
+  getCommands() {
+    return f
+  }
   getCommand(e) {
-    return null == b ? true : b[e]
+    return null == f ? true : f[e]
   }
   getEditedApplication() {
     return r
@@ -47,9 +47,9 @@ class f extends(a = Chunk442837.ZP.Store) {
     return i
   }
 }
-u(f, "displayName", "IntegrationPermissionStore");
-let h = new f(Chunk570140.Z, {
-  LOGOUT: g,
+u(g, "displayName", "IntegrationPermissionStore");
+let h = new g(Chunk73153.h, {
+  LOGOUT: m,
   INTEGRATION_PERMISSION_SETTINGS_APPLICATION_PERMISSIONS_FETCH_FAILURE: function(e) {
     let {
       applicationId: t
@@ -57,12 +57,12 @@ let h = new f(Chunk570140.Z, {
     if (t !== i) returnfalse;
     p = true
   },
-  INTEGRATION_PERMISSION_SETTINGS_CLEAR: g,
+  INTEGRATION_PERMISSION_SETTINGS_CLEAR: m,
   INTEGRATION_PERMISSION_SETTINGS_INIT: function(e) {
     let {
       applicationId: t
     } = e;
-    g(), i = t
+    m(), i = t
   },
   INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE: function(e) {
     var t, n;
@@ -73,12 +73,12 @@ let h = new f(Chunk570140.Z, {
     } = e;
     if (r !== i) returnfalse;
     if (l === i) {
-      m = (0, d.tk)(a);
+      b = (0, d.UZ)(a);
       return
     }
-    let o = b[l];
-    if (null == o) returnfalse;
-    b[l] = (t = function(e) {
+    let s = f[l];
+    if (null == s) returnfalse;
+    f[l] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -89,8 +89,8 @@ let h = new f(Chunk570140.Z, {
         })
       }
       return e
-    }({}, o), n = n = {
-      permissions: (0, d.tk)(a)
+    }({}, s), n = n = {
+      permissions: (0, d.UZ)(a)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -138,13 +138,13 @@ let h = new f(Chunk570140.Z, {
       a = {};
     for (let e of n)
       if (e.application_id === i) {
-        let t = (0, c.Z8)({
+        let t = (0, c.Oe)({
             rootCommand: e,
             command: e,
             applicationId: e.application_id
           }),
           n = l[e.id];
-        null != n && (t.permissions = (0, d.tk)(n)), a[e.id] = t
-      } b = a
+        null != n && (t.permissions = (0, d.UZ)(n)), a[e.id] = t
+      } f = a
   }
 })

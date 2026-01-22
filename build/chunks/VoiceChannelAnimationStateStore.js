@@ -1,15 +1,15 @@
-/** Chunk was on 39206 **/
-/** chunk id: 454135, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 60989 **/
+/** chunk id: 25639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p,
-  i: () => f
-}), require("./388685.js");
-var l, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk914010 = require("./914010.js"),
-  Chunk979651 = require("./979651.js");
+  A: () => O,
+  s: () => f
+}), require("./896048.js");
+var l, r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk967198 = require("./967198.js"),
+  Chunk977997 = require("./977997.js");
 
-function s(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function c(e) {
     "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), l.forEach(function(t) {
-      s(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
@@ -43,71 +43,71 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var f = ((i = {}).GENTLE_AMBIENT = "GENTLE_AMBIENT", i.GENTLE_AMBIENT_WITH_INTRO = "GENTLE_AMBIENT_WITH_INTRO", i.HIGH_CONTRAST = "HIGH_CONTRAST", i);
+var f = ((r = {}).GENTLE_AMBIENT = "GENTLE_AMBIENT", r.GENTLE_AMBIENT_WITH_INTRO = "GENTLE_AMBIENT_WITH_INTRO", r.HIGH_CONTRAST = "HIGH_CONTRAST", r);
 let g = {},
   h = {},
   m = null;
 
-function N(e) {
+function b(e) {
   null != h[e] && (clearTimeout(h[e]), delete h[e])
 }
 
-function E(e) {
-  N(e), h[e] = setTimeout(() => {
+function y(e) {
+  b(e), h[e] = setTimeout(() => {
     let t = g[e];
     null != t && (g[e] = d(c({}, t), {
       style: "GENTLE_AMBIENT"
-    }), O.emitChange()), delete h[e]
+    }), p.emitChange()), delete h[e]
   }, 2e3)
 }
 
-function y() {
+function N() {
   for (let e of Object.keys(h)) clearTimeout(h[e]);
   h = {}, g = {}
 }
 
-function v() {
-  return y(), true
+function A() {
+  return N(), true
 }
-class T extends(l = Chunk442837.ZP.Store) {
+class E extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.Z, o.Z)
+    this.waitFor(o.A, s.A)
   }
   getAnimationStyle(e) {
     var t, n;
-    return null != (n = null == (t = g[e]) ? true : t.style) ? n : "GENTLE_AMBIENT"
+    return null != (t = null == (n = g[e]) ? true : n.style) ? t : "GENTLE_AMBIENT"
   }
   getUserCount(e) {
     var t, n;
-    return null != (n = null == (t = g[e]) ? true : t.userCount) ? n : 0
+    return null != (t = null == (n = g[e]) ? true : n.userCount) ? t : 0
   }
 }
-s(T, "displayName", "VoiceChannelAnimationStateStore");
-let O = new T(Chunk570140.Z, {
+u(E, "displayName", "VoiceChannelAnimationStateStore");
+let p = new E(Chunk73153.h, {
     VOICE_STATE_UPDATES: function(e) {
       let {
         voiceStates: t
-      } = e, n = o.Z.getGuildId();
+      } = e, n = s.A.getGuildId();
       n !== m && null != n && (m = n);
       let l = {};
       for (let e of t) {
-        var i, r;
-        e.guildId === n && (null != e.oldChannelId && (l[e.oldChannelId] = (null != (i = l[e.oldChannelId]) ? i : 0) - 1), null != e.channelId && (l[e.channelId] = (null != (r = l[e.channelId]) ? r : 0) + 1))
+        var r, i;
+        e.guildId === n && (null != e.oldChannelId && (l[e.oldChannelId] = (null != (r = l[e.oldChannelId]) ? r : 0) - 1), null != e.channelId && (l[e.channelId] = (null != (i = l[e.channelId]) ? i : 0) + 1))
       }
       let a = false;
       for (let [e, t] of Object.entries(l))(function(e, t) {
         var n;
         let l = g[e],
-          i = null != (n = null == l ? true : l.userCount) ? n : 0,
-          r = Math.max(0, i + t);
-        return 0 === i && r > 0 ? (g[e] = {
+          r = null != (n = null == l ? true : l.userCount) ? n : 0,
+          i = Math.max(0, r + t);
+        return 0 === r && i > 0 ? (g[e] = {
           style: "GENTLE_AMBIENT_WITH_INTRO",
-          userCount: r
-        }, E(e), true) : i > 0 && r > i ? (g[e] = {
+          userCount: i
+        }, y(e), true) : r > 0 && i > r ? (g[e] = {
           style: "HIGH_CONTRAST",
-          userCount: r
-        }, E(e), true) : 0 === r ? (N(e), delete g[e], true) : null != l && r !== i && (g[e] = d(c({}, l), {
-          userCount: r
+          userCount: i
+        }, y(e), true) : 0 === i ? (b(e), delete g[e], true) : null != l && i !== r && (g[e] = d(c({}, l), {
+          userCount: i
         }), true)
       })(e, t) && (a = true);
       return a
@@ -117,20 +117,20 @@ let O = new T(Chunk570140.Z, {
         guildId: t
       } = e;
       if (t === m || null == t) returnfalse;
-      m = t, y();
-      let n = u.Z.getVoiceStates(t),
+      m = t, N();
+      let n = o.A.getVoiceStates(t),
         l = {};
       for (let e of Object.values(n))
         if (null != e.channelId) {
-          var i;
-          l[e.channelId] = (null != (i = l[e.channelId]) ? i : 0) + 1
+          var r;
+          l[e.channelId] = (null != (r = l[e.channelId]) ? r : 0) + 1
         } for (let [e, t] of Object.entries(l)) t > 0 && (g[e] = {
         style: "GENTLE_AMBIENT",
         userCount: t
       });
       returntrue
     },
-    CONNECTION_OPEN: v,
-    LOGOUT: v
+    CONNECTION_OPEN: A,
+    LOGOUT: A
   }),
-  p = O
+  O = p

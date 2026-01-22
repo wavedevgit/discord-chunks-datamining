@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 543882, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 384200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
-}), require("./388685.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk569545 = require("./569545.js"),
-  Chunk70722 = require("./70722.js");
+  A: () => v
+}), require("./896048.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk652896 = require("./652896.js"),
+  Chunk502075 = require("./502075.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,19 +72,19 @@ function O(e) {
       selfStream: a
     } = t;
     if (a) return e;
-    let o = (0, l.V9)({
-      streamType: null != r ? c.lo.GUILD : c.lo.CALL,
+    let s = (0, l._z)({
+      streamType: null != r ? c.U4.GUILD : c.U4.CALL,
       guildId: r,
       channelId: i,
       ownerId: n
     });
-    return delete _[o], delete h[o], true
+    return delete _[s], delete h[s], true
   }, false)
 }
-class v extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   getPreviewURL(e, t, n) {
-    let r = _[(0, l.V9)({
-      streamType: null != e ? c.lo.GUILD : c.lo.CALL,
+    let r = _[(0, l._z)({
+      streamType: null != e ? c.U4.GUILD : c.U4.CALL,
       guildId: e,
       channelId: t,
       ownerId: n
@@ -93,28 +93,28 @@ class v extends(r = Chunk442837.ZP.Store) {
   }
   shouldFetchPreview(e, t, n) {
     var r;
-    let i = (0, l.V9)({
-        streamType: null != e ? c.lo.GUILD : c.lo.CALL,
+    let i = (0, l._z)({
+        streamType: null != e ? c.U4.GUILD : c.U4.CALL,
         guildId: e,
         channelId: t,
         ownerId: n
       }),
       a = _[i],
-      o = null != (r = h[i]) ? r : 0,
-      s = null != a && Date.now() > a.expires;
-    return (null == a && o < p || s) && !m.has(i)
+      s = null != (r = h[i]) ? r : 0,
+      o = null != a && Date.now() > a.expires;
+    return (null == a && s < p || o) && !m.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {
       guildId: t,
       channelId: n,
       ownerId: r
-    } = (0, l.my)(e);
+    } = (0, l.Iy)(e);
     return this.getPreviewURL(t, n, r)
   }
   getIsPreviewLoading(e, t, n) {
-    let r = (0, l.V9)({
-      streamType: null != e ? c.lo.GUILD : c.lo.CALL,
+    let r = (0, l._z)({
+      streamType: null != e ? c.U4.GUILD : c.U4.CALL,
       guildId: e,
       channelId: t,
       ownerId: n
@@ -122,8 +122,8 @@ class v extends(r = Chunk442837.ZP.Store) {
     return m.has(r)
   }
 }
-u(v, "displayName", "ApplicationStreamPreviewStore");
-let S = new v(Chunk570140.Z, {
+u(A, "displayName", "ApplicationStreamPreviewStore");
+let v = new A(Chunk73153.h, {
   CONNECTION_OPEN: g,
   LOGOUT: g,
   STREAM_PREVIEW_FETCH_START: y,

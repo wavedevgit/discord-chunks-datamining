@@ -1,14 +1,14 @@
-/** Chunk was on 51218 **/
-/** chunk id: 785697, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 92853 **/
+/** chunk id: 15073, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  D2: () => c,
-  SE: () => o
+  TZ: () => d,
+  zi: () => c
 });
-var Chunk442837 = require("./442837.js"),
-  Chunk818083 = require("./818083.js"),
-  Chunk496675 = require("./496675.js"),
-  Chunk981631 = require("./981631.js");
-let r = (0, Chunk818083.B)({
+var Chunk311907 = require("./311907.js"),
+  Chunk600975 = require("./600975.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk652215 = require("./652215.js");
+let r = (0, Chunk600975.C)({
   kind: "guild",
   id: "2022-11_default_disable_mass_mention",
   label: "Disable mass mentions for communities by default",
@@ -33,18 +33,18 @@ function c(e) {
   })
 }
 
-function o(e) {
+function d(e) {
   var t;
-  let i = (0, l.e7)([s.Z], () => s.Z.can(a.Plq.MANAGE_GUILD, e)),
+  let i = (0, s.bG)([n.A], () => n.A.can(a.xBc.MANAGE_GUILD, e)),
     {
-      enabled: n
+      enabled: l
     } = r.useExperiment({
-      guildId: null != (t = null == e ? true : e.id) ? t : a.lds,
+      guildId: null != (t = null == e ? true : e.id) ? t : a.dJq,
       location: "dd4beb_3"
     }, {
       autoTrackExposure: true
     });
   if (null == e) returnfalse;
   let c = e.features.has(a.GuildFeatures.COMMUNITY);
-  return i && c && n
+  return i && c && l
 }

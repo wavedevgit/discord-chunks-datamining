@@ -1,1 +1,0 @@
-{"id":"238514","type":"store","data":{"name":"UserSettingsStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"shouldSync","args":["e"]},{"name":"getTextSettings","args":[]},{"name":"getAppearanceSettings","args":[]}],"events":["SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE","LOGOUT"]},"fromModule":{"id":"web.js"}}

@@ -1,0 +1,1 @@
+{"id":"246943","type":"store","data":{"name":"ForumPostRecentMessageStore","functions":[{"name":"initialize","args":[]},{"name":"getMessageState","args":["e"]}],"events":["CONNECTION_OPEN","MESSAGE_CREATE","MESSAGE_UPDATE","MESSAGE_DELETE","LOAD_FORUM_POSTS","LOAD_ARCHIVED_THREADS_SUCCESS","LOAD_THREADS_SUCCESS"]},"fromModule":{"id":"web.js"}}

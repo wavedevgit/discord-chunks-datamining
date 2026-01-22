@@ -1,1 +1,0 @@
-{"id":"581036","type":"store","data":{"name":"ForumPostUnreadCountStore","functions":[{"name":"initialize","args":[]},{"name":"getCount","args":["e"]},{"name":"getThreadIdsMissingCounts","args":["e","t"]}],"events":["CONNECTION_OPEN","THREAD_CREATE","MESSAGE_CREATE","FORUM_UNREADS","MESSAGE_ACK","REQUEST_FORUM_UNREADS"]},"fromModule":{"id":"90508"}}

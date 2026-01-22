@@ -1,0 +1,311 @@
+/** Chunk was on 97492 **/
+/** chunk id: 889806, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => F
+}), require("./896048.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk503698 = require("./503698.js"),
+  a = require.n(Chunk503698),
+  Chunk311907 = require("./311907.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk308528 = require("./308528.js"),
+  Chunk442433 = require("./442433.js"),
+  Chunk676002 = require("./676002.jsx"),
+  Chunk811024 = require("./811024.js"),
+  Chunk685399 = require("./685399.js"),
+  Chunk323073 = require("./323073.js"),
+  Chunk963027 = require("./963027.js"),
+  Chunk5932 = require("./5932.js"),
+  Chunk721592 = require("./721592.js"),
+  Chunk454058 = require("./454058.js"),
+  Chunk406704 = require("./406704.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk696451 = require("./696451.js"),
+  Chunk71393 = require("./71393.js"),
+  Chunk576705 = require("./576705.js"),
+  Chunk383501 = require("./383501.js"),
+  Chunk222823 = require("./222823.js"),
+  Chunk543465 = require("./543465.js"),
+  Chunk287809 = require("./287809.js"),
+  Chunk964918 = require("./964918.jsx"),
+  Chunk557534 = require("./557534.jsx"),
+  Chunk68437 = require("./68437.jsx"),
+  Chunk166444 = require("./166444.jsx"),
+  Chunk813513 = require("./813513.jsx"),
+  Chunk652215 = require("./652215.js"),
+  Chunk349828 = require("./349828.js"),
+  Chunk728444 = require("./728444.js");
+
+function L(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function G(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      L(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+class U extends Chunk557534.Ay {
+  componentWillUnmount() {
+    this.resetTextChannelPopoutTimers()
+  }
+  resetTextChannelPopoutTimers() {
+    clearTimeout(this.enterTimer), clearTimeout(this.exitTimer)
+  }
+  renderChannelInfo() {
+    let {
+      channelInfo: e
+    } = this.props;
+    return null == e ? null : (0, r.jsx)("div", {
+      className: M.yW,
+      children: e
+    })
+  }
+  render() {
+    let {
+      channel: e,
+      guild: t,
+      selected: n,
+      muted: l,
+      unread: i,
+      hasActiveThreads: s,
+      hasMoreActiveThreads: c,
+      mentionCount: u,
+      connectChannelDropTarget: d,
+      connectChannelDragSource: f,
+      connectDragPreview: p,
+      canReorderChannel: h,
+      isSubscriptionGated: m,
+      isFavoriteSuggestion: A,
+      subtitle: y,
+      forceTopLevelThread: O,
+      embeddedApps: j,
+      resolvedUnreadSetting: v,
+      withGuildIcon: x,
+      enableActivities: E
+    } = this.props, _ = E && null != j && j.length > 0, C = (0, g.M)(y), S = (0, r.jsx)("li", {
+      className: a()(this.getClassName(), {
+        [M.r9]: this.isDisabled(),
+        [M.wH]: n
+      }),
+      "data-dnd-name": e.name,
+      onMouseEnter: c || _ ? this.handleMouseEnter : true,
+      onMouseLeave: c || _ ? this.handleMouseLeave : true,
+      children: (0, r.jsx)(o.YNO, {
+        targetElementRef: this.channelItemRef,
+        position: "right",
+        renderPopout: this.renderPopout,
+        onRequestClose: this.handleClosePopout,
+        shouldShow: c && this.state.shouldShowThreadsPopout || _ && this.state.shouldShowActivities,
+        children: () => (0, r.jsxs)(P.Ay, {
+          ref: this.channelItemRef,
+          className: M.Ki,
+          channel: e,
+          guild: t,
+          selected: !A && n,
+          muted: l,
+          unread: i,
+          mentionCount: u,
+          hasActiveThreads: s,
+          subtitle: null == C ? true : C.subtitle,
+          subtitleColor: null == C ? true : C.color,
+          onMouseDown: this.handleMouseDown,
+          onContextMenu: this.handleContextMenu,
+          connectDragPreview: h ? p : null,
+          isFavoriteSuggestion: A,
+          channelTypeOverride: O ? R.rbe.GUILD_TEXT : true,
+          resolvedUnreadSetting: v,
+          withGuildIcon: x,
+          "aria-label": (0, b.Ay)({
+            channel: e,
+            unread: i,
+            mentionCount: u,
+            isSubscriptionGated: m
+          }),
+          children: [A && (0, r.jsxs)(r.Fragment, {
+            children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
+          }), !A && (0, r.jsxs)(r.Fragment, {
+            children: [this.renderChannelInfo(), this.renderInviteButton(), this.renderEditButton()]
+          })]
+        })
+      })
+    });
+    return h ? d(f(S)) : S
+  }
+  constructor(...e) {
+    super(...e), L(this, "state", {
+      shouldShowThreadsPopout: false,
+      shouldShowActivities: false
+    }), L(this, "channelItemRef", l.createRef()), L(this, "enterTimer", 0), L(this, "exitTimer", 0), L(this, "handleMouseEnter", () => {
+      this.props.channelIsContentGated && null == this.props.embeddedApps || (this.resetTextChannelPopoutTimers(), this.enterTimer = setTimeout(() => {
+        null != this.props.embeddedApps && this.props.embeddedApps.length > 0 ? this.setState({
+          shouldShowActivities: true
+        }) : this.props.channelIsContentGated || this.setState({
+          shouldShowThreadsPopout: true
+        })
+      }, 200))
+    }), L(this, "handleMouseLeave", () => {
+      this.resetTextChannelPopoutTimers(), this.exitTimer = setTimeout(() => {
+        this.state.shouldShowActivities && this.setState({
+          shouldShowActivities: false
+        }), this.state.shouldShowThreadsPopout && this.setState({
+          shouldShowThreadsPopout: false
+        })
+      }, 250)
+    }), L(this, "handleThreadsPopoutClose", () => {
+      this.resetTextChannelPopoutTimers(), this.setState({
+        shouldShowThreadsPopout: false
+      })
+    }), L(this, "handleActivitiesPopoutClose", () => {
+      this.resetTextChannelPopoutTimers(), this.setState({
+        shouldShowActivities: false
+      })
+    }), L(this, "handleClosePopout", () => {
+      this.state.shouldShowActivities && this.handleActivitiesPopoutClose(), this.state.shouldShowThreadsPopout && this.handleThreadsPopoutClose()
+    }), L(this, "handleMouseDown", () => {
+      this.handleActivitiesPopoutClose(), this.handleThreadsPopoutClose();
+      let {
+        channel: e
+      } = this.props, t = e.getGuildId();
+      c.A.preload(null != t ? t : R.ME, e.id)
+    }), L(this, "renderPopout", e => {
+      let {
+        channel: t,
+        sorting: n,
+        embeddedApps: l,
+        channelIsContentGated: i
+      } = this.props, {
+        shouldShowActivities: a
+      } = this.state;
+      return t.isModeratorReportChannel() || i ? null : null != l && l.length > 0 && a && !n ? (0, r.jsx)(w.A, {
+        onAction: this.handleActivitiesPopoutClose,
+        channel: t
+      }) : (0, r.jsx)(I.A, k(G({}, e), {
+        channel: this.props.channel
+      }))
+    }), L(this, "handleContextMenu", e => {
+      let {
+        channel: t
+      } = this.props;
+      if (t.type === R.rbe.GROUP_DM) return void(0, u.L3)(e, async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
+        return n => (0, r.jsx)(e, k(G({}, n), {
+          channel: t,
+          selected: true
+        }))
+      });
+      if (t.type === R.rbe.DM) {
+        let l = S.default.getUser(t.getRecipientId());
+        null != l && (0, u.L3)(e, async () => {
+          let {
+            default: e
+          } = await Promise.all([n.e("97262"), n.e("29534"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
+          return n => (0, r.jsx)(e, k(G({}, n), {
+            user: l,
+            channel: t,
+            showModalItems: false
+          }))
+        });
+        return
+      }
+      if (t.isModeratorReportChannel()) return void(0, u.L3)(e, async () => {
+        let {
+          default: e
+        } = await n.e("78580").then(n.bind(n, 907647));
+        return n => (0, r.jsx)(e, k(G({}, n), {
+          channel: t
+        }))
+      });
+      let l = v.A.getGuild(t.getGuildId());
+      null != l && (0, u.L3)(e, async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
+        return n => (0, r.jsx)(e, k(G({}, n), {
+          channel: t,
+          guild: l
+        }))
+      })
+    })
+  }
+}
+let V = (0, Chunk676002.a)(U);
+
+function F(e) {
+  let {
+    channel: t,
+    guild: n,
+    disableSorting: l,
+    isFavoriteCategory: i,
+    muted: a,
+    selected: o
+  } = e, {
+    hasActiveThreads: c,
+    hasMoreActiveThreads: u
+  } = (0, y.NR)(t), d = (0, s.cf)([_.Ay], () => ({
+    unread: _.Ay.hasUnread(t.id),
+    ackMessageId: _.Ay.ackMessageId(t.id),
+    isLowImportanceMention: _.Ay.getIsMentionLowImportance(t.id)
+  })), b = (0, s.bG)([C.Ay], () => C.Ay.resolveUnreadSetting(t)), g = (0, s.cf)([O.A, x.A], () => {
+    let e = O.A.getChannel(t.parent_id);
+    return {
+      canManageChannel: x.A.can(R.xBc.MANAGE_CHANNELS, t),
+      canReorderChannel: true !== l && (n.id === D.V || (null != e ? x.A.can(R.xBc.MANAGE_CHANNELS, e) : x.A.can(R.xBc.MANAGE_CHANNELS, n)))
+    }
+  }), v = (0, s.bG)([A.A], () => A.A.shouldIndicateNewChannel(n.id, t.id)), {
+    needSubscriptionToAccess: S,
+    isSubscriptionGated: I
+  } = (0, m.A)(t.id), N = (0, s.bG)([C.Ay], () => C.Ay.isFavorite(n.id, t.id)), P = (0, h.vL)(t), w = (0, f.Gp)(t.id), M = (0, T.A)({
+    channel: t,
+    isChannelCollapsed: false,
+    isChannelSelected: o,
+    isSubscriptionGated: I,
+    needSubscriptionToAccess: S,
+    isNewChannel: v,
+    muted: a,
+    enableActivities: w,
+    resolvedUnreadSetting: b
+  }), L = (0, p.Ay)(t);
+  return (0, s.bG)([E.A, j.Ay], () => E.A.getChannelId() !== t.id && j.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, r.jsx)(V, k(G({}, d, g, e), {
+    hasActiveThreads: c,
+    hasMoreActiveThreads: u,
+    isSubscriptionGated: I,
+    needSubscriptionToAccess: S,
+    isNewChannel: v && e.canBeNewChannel,
+    isFavoriteSuggestion: i && !N,
+    channelIsContentGated: P,
+    channelInfo: M,
+    embeddedApps: L,
+    resolvedUnreadSetting: b,
+    hasChannelInfo: null != M,
+    enableActivities: w
+  }))
+}

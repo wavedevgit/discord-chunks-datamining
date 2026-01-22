@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
-/** chunk id: 703995, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 59784, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
-}), require("./388685.js");
-var r, Chunk275726 = require("./275726.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk80721 = require("./80721.js"),
-  Chunk282793 = require("./282793.js"),
-  Chunk981631 = require("./981631.js");
+  A: () => L
+}), require("./896048.js");
+var r, Chunk448761 = require("./448761.js"),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk677185 = require("./677185.js"),
+  Chunk88001 = require("./88001.js"),
+  Chunk652215 = require("./652215.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,7 +67,7 @@ function y(e) {
     invites: t
   } = e;
   for (let e of (g = false, m = true, t)) h.set(e.id, {
-    state: S(e),
+    state: v(e),
     invite: e,
     errorStatus: null
   })
@@ -77,42 +77,56 @@ function O() {
   g = false
 }
 
-function v(e) {
+function A(e) {
   let {
     subscriptionGroupMemberId: t
   } = e;
   h.set(t, {
-    state: c.bZ.FETCHING,
+    state: c.xI.FETCHING,
     invite: null,
     errorStatus: null
   })
 }
 
-function S(e) {
-  return null != e.removed_at ? c.bZ.REMOVED : null != e.accepted_at ? c.bZ.ACCEPTED : c.bZ.PENDING
+function v(e) {
+  return null != e.removed_at ? c.xI.REMOVED : null != e.accepted_at ? c.xI.ACCEPTED : c.xI.PENDING
 }
 
-function I(e) {
+function S(e) {
   let {
     subscriptionGroupMemberId: t,
     invite: n
   } = e;
   h.set(t, {
-    state: S(n),
+    state: v(n),
     invite: n,
     errorStatus: null
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     subscriptionGroupMemberId: t,
     status: n
-  } = e, r = 404 === n ? c.bZ.NOT_FOUND : c.bZ.ERROR;
+  } = e, r = 404 === n ? c.xI.NOT_FOUND : c.xI.ERROR;
   h.set(t, {
     state: r,
     invite: null,
     errorStatus: n
+  })
+}
+
+function T(e) {
+  let {
+    subscriptionGroupMemberId: t
+  } = e, n = h.get(t);
+  if ((null == n ? true : n.invite) == null) returnfalse;
+  h.set(t, {
+    state: c.xI.ACCEPTED,
+    invite: _(f({}, n.invite), {
+      accepted_at: new Date().toISOString()
+    }),
+    errorStatus: null
   })
 }
 
@@ -122,21 +136,7 @@ function C(e) {
   } = e, n = h.get(t);
   if ((null == n ? true : n.invite) == null) returnfalse;
   h.set(t, {
-    state: c.bZ.ACCEPTED,
-    invite: _(f({}, n.invite), {
-      accepted_at: new Date().toISOString()
-    }),
-    errorStatus: null
-  })
-}
-
-function A(e) {
-  let {
-    subscriptionGroupMemberId: t
-  } = e, n = h.get(t);
-  if ((null == n ? true : n.invite) == null) returnfalse;
-  h.set(t, {
-    state: c.bZ.PENDING,
+    state: c.xI.PENDING,
     invite: _(f({}, n.invite), {
       accepted_at: null
     }),
@@ -152,7 +152,7 @@ function N(e) {
   let n = h.get(t);
   if ((null == n ? true : n.invite) == null) returnfalse;
   h.set(t, {
-    state: c.bZ.REMOVED,
+    state: c.xI.REMOVED,
     invite: _(f({}, n.invite), {
       removed_at: new Date().toISOString()
     }),
@@ -160,21 +160,21 @@ function N(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     subscriptionGroupMemberId: t,
     errorCode: n
   } = e;
   if (null == t) returnfalse;
   let r = h.get(t);
-  return (null == r ? true : r.invite) != null && (n === c.YW.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED ? (h.set(t, {
-    state: c.bZ.ACCEPTED,
+  return (null == r ? true : r.invite) != null && (n === c.Hy.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED ? (h.set(t, {
+    state: c.xI.ACCEPTED,
     invite: _(f({}, r.invite), {
       accepted_at: new Date().toISOString()
     }),
     errorStatus: null
   }), true) : void h.set(t, {
-    state: c.bZ.PENDING,
+    state: c.xI.PENDING,
     invite: _(f({}, r.invite), {
       removed_at: null
     }),
@@ -189,7 +189,7 @@ function w(e) {
   return D(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     messages: t
   } = e;
@@ -197,17 +197,17 @@ function R(e) {
 }
 
 function D(e) {
-  if (e.type !== i.u.PREMIUM_GROUP_INVITE) returnfalse;
+  if (e.type !== i.l.PREMIUM_GROUP_INVITE) returnfalse;
   let t = e.content;
-  if (null == t || "" === t || !s.default.isProbablyAValidSnowflake(t)) returnfalse;
+  if (null == t || "" === t || !o.default.isProbablyAValidSnowflake(t)) returnfalse;
   let n = h.get(t);
-  return (null == n || n.state === c.bZ.UNKNOWN) && (h.set(t, {
-    state: c.bZ.FETCHING,
+  return (null == n || n.state === c.xI.UNKNOWN) && (h.set(t, {
+    state: c.xI.FETCHING,
     invite: null,
     errorStatus: null
-  }), o.Z.wait(() => (0, l.hH)(t).catch(u.VqG)), true)
+  }), s.h.wait(() => (0, l.el)(t).catch(u.FXj)), true)
 }
-class x extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk311907.Ay.Store) {
   getInvite(e) {
     var t;
     return null != (t = h.get(e)) ? t : null
@@ -221,15 +221,15 @@ class x extends(r = Chunk442837.ZP.Store) {
   }
   getInviteState(e) {
     var t, n;
-    return null != (n = null == (t = h.get(e)) ? true : t.state) ? n : c.bZ.UNKNOWN
+    return null != (t = null == (n = h.get(e)) ? true : n.state) ? t : c.xI.UNKNOWN
   }
   shouldFetch(e) {
     let t = h.get(e);
-    return null == t || t.state === c.bZ.UNKNOWN
+    return null == t || t.state === c.xI.UNKNOWN
   }
   isFetching(e) {
     var t;
-    return (null == (t = h.get(e)) ? true : t.state) === c.bZ.FETCHING
+    return (null == (t = h.get(e)) ? true : t.state) === c.xI.FETCHING
   }
   hasFetchedAllInvites() {
     return m
@@ -239,20 +239,20 @@ class x extends(r = Chunk442837.ZP.Store) {
   }
 }
 d(x, "displayName", "PremiumGroupInviteStore");
-let L = new x(Chunk570140.Z, {
+let L = new x(Chunk73153.h, {
   PREMIUM_GROUP_INVITES_FETCH_START: b,
   PREMIUM_GROUP_INVITES_FETCH_SUCCESS: y,
   PREMIUM_GROUP_INVITES_FETCH_FAIL: O,
-  PREMIUM_GROUP_INVITE_FETCH_START: v,
-  PREMIUM_GROUP_INVITE_FETCH_SUCCESS: I,
-  PREMIUM_GROUP_INVITE_FETCH_FAIL: T,
-  PREMIUM_GROUP_ACCEPT_INVITE_START: C,
-  PREMIUM_GROUP_ACCEPT_INVITE_FAIL: A,
+  PREMIUM_GROUP_INVITE_FETCH_START: A,
+  PREMIUM_GROUP_INVITE_FETCH_SUCCESS: S,
+  PREMIUM_GROUP_INVITE_FETCH_FAIL: I,
+  PREMIUM_GROUP_ACCEPT_INVITE_START: T,
+  PREMIUM_GROUP_ACCEPT_INVITE_FAIL: C,
   PREMIUM_GROUP_REMOVE_INVITE_START: N,
-  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: P,
+  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: R,
   MESSAGE_CREATE: w,
-  LOCAL_MESSAGES_LOADED: R,
-  LOAD_MESSAGES_SUCCESS: R,
-  LOAD_MESSAGES_AROUND_SUCCESS: R,
+  LOCAL_MESSAGES_LOADED: P,
+  LOAD_MESSAGES_SUCCESS: P,
+  LOAD_MESSAGES_AROUND_SUCCESS: P,
   LOGOUT: E
 })

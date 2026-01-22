@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 755458, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 488803, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => a,
-  u7: () => r,
-  v$: () => i
+  C$: () => a,
+  TS: () => i,
+  x1: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2025-08_portkey_enabled",
   label: "GameServer Enabled",

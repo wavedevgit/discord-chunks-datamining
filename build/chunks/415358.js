@@ -1,4 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 415358, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 47841 **/
+/** chunk id: 415358, original params: e (module,exports,require) **/
 "use strict";
-require("./54381.js"), require("./473749.js"), require("./796497.js")
+module.exports = "/assets/6e989612eab7e1c3.svg"

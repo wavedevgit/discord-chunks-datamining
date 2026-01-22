@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 822179, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 931959, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
-}), require("./539854.js");
-var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk704907 = require("./704907.js"),
-  Chunk581883 = require("./581883.js"),
-  Chunk70956 = require("./70956.js"),
-  Chunk926491 = require("./926491.js"),
-  Chunk526761 = require("./526761.js");
+  A: () => T
+}), require("./321073.js");
+var r, Chunk735438 = require("./735438.js"),
+  a = require.n(Chunk735438),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk283047 = require("./283047.js"),
+  Chunk617617 = require("./617617.js"),
+  Chunk927813 = require("./927813.js"),
+  Chunk679382 = require("./679382.js"),
+  Chunk355097 = require("./355097.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,16 +55,16 @@ function m(e, t) {
 let g = {
   pendingUsages: []
 };
-Chunk70956.Z.Millis.DAY;
+Chunk927813.A.Millis.DAY;
 let E = 20,
-  b = new Chunk704907.Z({
+  b = new Chunk283047.A({
     computeBonus: () => 100,
-    lookupKey: e => d.Z.getStickerById(e),
+    lookupKey: e => d.A.getStickerById(e),
     afterCompute: () => {},
     numFrequentlyItems: E
   }),
   y = () => {
-    d.Z.isLoaded && b.compute()
+    d.A.isLoaded && b.compute()
   },
   O = e => {
     let {
@@ -77,32 +77,32 @@ let E = 20,
       })
     }), y()
   },
-  v = () => {
+  A = () => {
     y()
   };
 
-function S() {
+function v() {
   var e;
-  let t = null == (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? true : e.stickers;
+  let t = null == (e = c.A.frecencyWithoutFetchingLatest.stickerFrecency) ? true : e.stickers;
   if (null == t) returnfalse;
   b.overwriteHistory(a().mapValues(t, e => m(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }
 
-function I(e) {
+function S(e) {
   let {
     settings: {
       type: t
     },
     wasSaved: n
   } = e;
-  if (t !== f.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
+  if (t !== f.oD.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   g.pendingUsages = []
 }
-class T extends(r = Chunk442837.ZP.PersistedStore) {
+class I extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(d.Z, c.Z), null != e && (g = e), this.syncWith([d.Z], v), this.syncWith([c.Z], S)
+    this.waitFor(d.A, c.A), null != e && (g = e), this.syncWith([d.A], A), this.syncWith([c.A], v)
   }
   getState() {
     return g
@@ -114,8 +114,8 @@ class T extends(r = Chunk442837.ZP.PersistedStore) {
     return b
   }
 }
-p(T, "displayName", "StickersPersistedStore"), p(T, "persistKey", "StickersPersistedStoreV2");
-let C = new T(Chunk570140.Z, {
+p(I, "displayName", "StickersPersistedStore"), p(I, "persistKey", "StickersPersistedStoreV2");
+let T = new I(Chunk73153.h, {
   STICKER_TRACK_USAGE: O,
-  USER_SETTINGS_PROTO_UPDATE: I
+  USER_SETTINGS_PROTO_UPDATE: S
 })

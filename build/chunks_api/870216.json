@@ -1,0 +1,1 @@
+{"id":"870216","type":"store","data":{"name":"CollectiblesShopStore","functions":[{"name":"analyticsLocations","args":[]},{"name":"analyticsSource","args":[]},{"name":"initialProductSkuId","args":[]},{"name":"getAnalytics","args":[]}],"events":["COLLECTIBLES_SHOP_OPEN","COLLECTIBLES_SHOP_CLOSE","COLLECTIBLES_PRODUCT_DETAILS_OPEN","LOGOUT"]},"fromModule":{"id":"web.js"}}

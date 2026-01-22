@@ -1,0 +1,113 @@
+/** Chunk was on 28636 **/
+/** chunk id: 487953, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  A: () => h
+}), require("./896048.js"), require("./228524.js");
+var Chunk627968 = require("./627968.js"),
+  Chunk64700 = require("./64700.js"),
+  Chunk230109 = require("./230109.js"),
+  Chunk397927 = require("./397927.js"),
+  Chunk735991 = require("./735991.js"),
+  Chunk635350 = require("./635350.jsx"),
+  Chunk486020 = require("./486020.js"),
+  Chunk841985 = require("./841985.jsx"),
+  Chunk985018 = require("./985018.jsx"),
+  Chunk286453 = require("./286453.js");
+let h = function(e) {
+  var t, n, h;
+  let {
+    application: m,
+    onSelectApplication: b,
+    showCategory: f = false
+  } = e, g = a.useRef(null), x = null == (n = m.categories) ? true : n[0], [v, j] = a.useState(false), A = a.useCallback(e => {
+    e && j(true)
+  }, []), _ = (0, s.NO)(m), y = a.useCallback(() => {
+    b(m.id)
+  }, [b, m.id]), O = a.useMemo(() => v ? o.Ay.getApplicationIconURL({
+    id: m.id,
+    icon: m.icon,
+    size: 48
+  }) : true, [v, m]), S = f && null != x;
+  return (0, l.jsx)(r.L, {
+    innerRef: g,
+    onChange: A,
+    active: !v,
+    children: (0, l.jsx)("div", {
+      ref: g,
+      className: p.kL,
+      children: (0, l.jsxs)(c.A, {
+        className: p.Nr,
+        onClick: y,
+        onContextMenu: () => {},
+        "aria-label": u.intl.string(u.t.np1Wru),
+        children: [(0, l.jsxs)("div", {
+          className: p.wx,
+          children: [(0, l.jsx)("div", {
+            style: {
+              width: "100%",
+              display: "block",
+              aspectRatio: 16 / 9
+            },
+            children: v ? (0, l.jsx)(d.A, {
+              application: m,
+              bannerType: "card",
+              iconURL: O
+            }) : null
+          }), (0, l.jsx)("div", {
+            className: p.H,
+            style: {
+              height: 28
+            },
+            children: v ? (0, l.jsx)("img", {
+              src: O,
+              alt: "",
+              className: p.my,
+              height: 48,
+              width: 48,
+              style: {
+                borderWidth: 4,
+                marginLeft: 12
+              }
+            }) : null
+          })]
+        }), (0, l.jsxs)("div", {
+          className: p.eV,
+          children: [(0, l.jsx)("div", {
+            className: p.gn,
+            children: (0, l.jsx)("div", {
+              className: p.DD,
+              children: (0, l.jsx)(i.Heading, {
+                variant: "heading-md/semibold",
+                color: "text-strong",
+                className: p.JB,
+                children: m.name
+              })
+            })
+          }), S || _ ? (0, l.jsxs)("div", {
+            className: p.op,
+            children: [S ? (0, l.jsx)(i.Text, {
+              className: p.m4,
+              variant: "text-xs/medium",
+              color: "text-default",
+              children: x.name
+            }) : null, S && _ ? (0, l.jsx)(i.Text, {
+              variant: "text-xs/medium",
+              color: "text-subtle",
+              children: "•"
+            }) : null, _ ? (0, l.jsx)(i.Text, {
+              variant: "text-xs/medium",
+              color: "text-subtle",
+              children: u.intl.string(u.t["/eVltv"])
+            }) : null]
+          }) : null, (0, l.jsx)(i.Text, {
+            className: p.h_,
+            variant: "text-sm/medium",
+            color: "text-default",
+            lineClamp: S || _ ? 2 : 3,
+            children: null != (t = null == (h = m.directory_entry) ? true : h.short_description) ? t : m.description
+          })]
+        })]
+      })
+    })
+  })
+}

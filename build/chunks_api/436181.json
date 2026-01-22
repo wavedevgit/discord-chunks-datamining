@@ -1,1 +1,0 @@
-{"id":"436181","type":"store","data":{"name":"DispatchApplicationLaunchSetupStore","functions":[{"name":"getLastProgress","args":[]},{"name":"isRunning","args":[]}],"events":["DISPATCH_APPLICATION_LAUNCH_SETUP_START","DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE","DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE"]},"fromModule":{"id":"web.js"}}

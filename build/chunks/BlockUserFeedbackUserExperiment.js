@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 869031, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 609415, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  nZ: () => i
+  Bv: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2024-10_block_user_feedback",
   label: "Block User Feedback Experiment",

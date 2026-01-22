@@ -1,48 +1,48 @@
-/** Chunk was on 82124 **/
-/** chunk id: 78332, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 366251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  A: () => h
 });
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk19780 = require("./19780.js");
-let s = {},
+var r, l, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk383501 = require("./383501.js");
+let o = {},
   c = false,
   u = null;
 
 function d(e) {
-  e in s && delete s[e]
+  e in o && delete o[e]
 }
 
-function p() {
-  if (!c && o.Z.isConnected()) {
-    let e = o.Z.getChannelId();
+function f() {
+  if (!c && s.A.isConnected()) {
+    let e = s.A.getChannelId();
     if (null != e) return d(e), u = e, c = true, true
-  } else if (c && !o.Z.isConnected() && null != u) return d(u), u = null, c = false, true;
+  } else if (c && !s.A.isConnected() && null != u) return d(u), u = null, c = false, true;
   returnfalse
 }
-class f extends(i = Chunk442837.ZP.Store) {
+class p extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.Z), this.syncWith([o.Z], p)
+    this.waitFor(s.A), this.syncWith([s.A], f)
   }
   getIsPopoverDismissed(e) {
     var t;
-    return null != e && null != (t = s[e]) && t
+    return null != e && null != (t = o[e]) && t
   }
   getShouldShowPopover(e) {
-    return null != e && o.Z.isConnected() && o.Z.getChannelId() === e && !this.getIsPopoverDismissed(e)
+    return null != e && s.A.isConnected() && s.A.getChannelId() === e && !this.getIsPopoverDismissed(e)
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
+}(r = "displayName") in p ? Object.defineProperty(p, r, {
   value: "VoiceInvitesuggestionsStore ",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[r] = "VoiceInvitesuggestionsStore ";
-let h = new f(Chunk570140.Z, {
+}) : p[r] = "VoiceInvitesuggestionsStore ";
+let h = new p(Chunk73153.h, {
   VOICE_INVITE_SUGGESTIONS_DISMISS_POPOVER: function(e) {
     let {
       channelId: t
     } = e;
-    return !s[t] && (s[t] = true, true)
+    return !o[t] && (o[t] = true, true)
   }
 })

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 258609, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 643501, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.r(exports), require.d(exports, {
-  default: () => I
-}), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk797258 = require("./797258.js"),
-  Chunk979651 = require("./979651.js");
+require.d(exports, {
+  default: () => S
+}), require("./896048.js");
+var r, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk528767 = require("./528767.js"),
+  Chunk977997 = require("./977997.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,10 +86,10 @@ function O(e) {
   } = e;
   p[t] = n
 }
-let v = Object.freeze({});
-class S extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+let A = Object.freeze({});
+class v extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(o.Z, s.Z)
+    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(s.A, o.A)
   }
   getUserAgnosticState() {
     return {
@@ -98,7 +98,7 @@ class S extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   getDevicesForPlatform(e) {
     var t;
-    return null != (t = f[e]) ? t : v
+    return null != (t = f[e]) ? t : A
   }
   getLastSelectedDeviceByPlatform(e) {
     return p[e]
@@ -120,8 +120,8 @@ class S extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return u
   }
 }
-l(S, "displayName", "GameConsoleStore"), l(S, "persistKey", "GameConsoleStore");
-let I = new S(Chunk570140.Z, {
+l(v, "displayName", "GameConsoleStore"), l(v, "persistKey", "GameConsoleStore");
+let S = new v(Chunk73153.h, {
   REMOTE_SESSION_CONNECT: h,
   REMOTE_SESSION_DISCONNECT: m,
   WAIT_FOR_REMOTE_SESSION: g,

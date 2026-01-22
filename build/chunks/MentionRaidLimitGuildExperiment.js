@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
-/** chunk id: 460083, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 853066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => r
+  R: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2022-12_mention_raid_limit",
   label: "Automod Mention Raid Limit",

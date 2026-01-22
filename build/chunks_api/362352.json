@@ -1,1 +1,0 @@
-{"id":"362352","type":"experiment","data":{"name":"2025-11-guild-activity-aggregate-carve-out","kind":"user","defaultConfig":{"aggregateDefaultEnabled":true},"variations":{"undefined":{"aggregateDefaultEnabled":false}}},"fromModule":{"id":"web.js"}}

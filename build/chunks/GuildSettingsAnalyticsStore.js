@@ -1,15 +1,15 @@
-/** Chunk was on 9536 **/
-/** chunk id: 743676, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 47841 **/
+/** chunk id: 907445, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  A: () => m
 });
-var r, Chunk877921 = require("./877921.js"),
-  l = require.n(Chunk877921),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+var r, Chunk133977 = require("./133977.js"),
+  l = require.n(Chunk133977),
+  Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js");
 
-function o(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,11 +17,11 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = ["pct_retained", "new_members", "visitors", "communicators"],
+let o = ["pct_retained", "new_members", "visitors", "communicators"],
   d = {},
   u = null;
 
-function g(e) {
+function f(e) {
   let {
     guildId: t,
     stats: n
@@ -29,12 +29,12 @@ function g(e) {
   u = null;
   let r = {},
     i = {},
-    a = n[0],
-    s = n[1];
-  null != a && c.forEach(e => {
-    if (null != a[e]) {
+    s = n[0],
+    a = n[1];
+  null != s && o.forEach(e => {
+    if (null != s[e]) {
       let t = l()(e);
-      null != s && 0 !== s[e] && (r["".concat(t, "Change")] = (a[e] - s[e]) * 100 / s[e]), i[t] = a[e]
+      null != a && 0 !== a[e] && (r["".concat(t, "Change")] = (s[e] - a[e]) * 100 / a[e]), i[t] = s[e]
     }
   }), d[t] = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -43,20 +43,20 @@ function g(e) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        o(e, t, n[t])
+        c(e, t, n[t])
       })
     }
     return e
   }({}, i, r, d[t])
 }
 
-function f(e) {
+function g(e) {
   let {
     error: t
   } = e;
   u = t.code
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class b extends(r = Chunk311907.Ay.Store) {
   getOverviewAnalytics(e) {
     return d[e]
   }
@@ -64,12 +64,12 @@ class m extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-o(m, "displayName", "GuildSettingsAnalyticsStore");
-let b = new m(Chunk570140.Z, {
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: g,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: g,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: g,
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: f,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: f,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: f
+c(b, "displayName", "GuildSettingsAnalyticsStore");
+let m = new b(Chunk73153.h, {
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: f,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: f,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: f,
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: g,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: g,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: g
 })

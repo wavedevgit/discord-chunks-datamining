@@ -1,1 +1,0 @@
-{"id":"107484","type":"store","data":{"name":"GuildRoleConnectionEligibilityStore","functions":[{"name":"getGuildRoleConnectionEligibility","args":["e"]}],"events":["GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS"]},"fromModule":{"id":"web.js"}}

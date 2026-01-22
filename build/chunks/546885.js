@@ -1,0 +1,78 @@
+/** Chunk was on web.js **/
+/** chunk id: 546885, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  A: () => l
+}), require("./321073.js"), require("./896048.js");
+var Chunk735438 = require("./735438.js"),
+  i = require.n(Chunk735438),
+  Chunk451988 = require("./451988.js");
+
+function s(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+class o {
+  acknowledge(e) {
+    this._unacknowledgedRequests.delete(e), this._pendingRequests.delete(e)
+  }
+  flushRequests(e) {
+    if (0 === this._pendingRequests.size) return;
+    let t = [];
+    this._pendingRequests.forEach(e => {
+      this._guildMemberExists(e) || (this._unacknowledgedRequests.add(e), this._sentRequests.add(e), t.push(e))
+    }), t.length > 0 && e(this._guildId, t), this._pendingRequests.clear()
+  }
+  requestUnacknowledged() {
+    return 0 !== this._unacknowledgedRequests.size && (this._unacknowledgedRequests.forEach(e => {
+      this._guildMemberExists(e) ? this._unacknowledgedRequests.delete(e) : this._pendingRequests.add(e)
+    }), 0 !== this._pendingRequests.size && true)
+  }
+  request(e) {
+    if (this._guildMemberExists(e) || this._sentRequests.has(e) || this._pendingRequests.has(e)) returnfalse;
+    this._pendingRequests.add(e)
+  }
+  constructor(e, t) {
+    s(this, "_guildId", true), s(this, "_pendingRequests", new Set), s(this, "_sentRequests", new Set), s(this, "_unacknowledgedRequests", new Set), s(this, "_guildMemberExists", true), this._guildId = e, this._guildMemberExists = n => t(e, n)
+  }
+}
+class l {
+  reset() {
+    this._guildStates = {}, this._flush.cancel()
+  }
+  request(e, t) {
+    false !== this._getGuildState(e).request(t) && this._flush.delay(false)
+  }
+  acknowledge(e, t) {
+    this._getGuildState(e).acknowledge(t)
+  }
+  flushRequests() {
+    i().forEach(this._guildStates, e => e.flushRequests(this._onChange))
+  }
+  requestUnacknowledged() {
+    i().reduce(this._guildStates, (e, t) => false !== t.requestUnacknowledged() || t, false) && this._flush.delay()
+  }
+  _getGuildState(e) {
+    let t = this._guildStates[e];
+    return null == t && (t = this._guildStates[e] = new o(e, this._guildMemberExists)), t
+  }
+  getDebugState(e) {
+    let t = [],
+      n = [],
+      r = [];
+    return i().forEach(this._guildStates, i => {
+      i._pendingRequests.has(e) && t.push(i._guildId), i._unacknowledgedRequests.has(e) && n.push(i._guildId), i._sentRequests.has(e) && r.push(i._guildId)
+    }), {
+      pendingRequestGuildIds: t,
+      unacknowledgedRequestGuildIds: n,
+      sentRequestGuildIds: r
+    }
+  }
+  constructor(e, t) {
+    s(this, "_onChange", true), s(this, "_guildMemberExists", true), s(this, "_guildStates", {}), s(this, "_flush", new a.J_(0, () => this.flushRequests())), this._guildMemberExists = e, this._onChange = t
+  }
+}

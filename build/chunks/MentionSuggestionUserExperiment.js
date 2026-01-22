@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
-/** chunk id: 657871, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 968011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  kB: () => i,
-  zM: () => a
+  sA: () => i,
+  us: () => a
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-09_mention_suggestion",
   label: "Mention Suggestions",

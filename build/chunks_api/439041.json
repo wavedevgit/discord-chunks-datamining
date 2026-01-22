@@ -1,1 +1,0 @@
-{"id":"439041","type":"store","data":{"name":"AdyenStore","functions":[{"name":"client","args":[]},{"name":"cashAppPayComponent","args":[]}],"events":["ADYEN_CREATE_CLIENT_SUCCESS","ADYEN_TEARDOWN_CLIENT","ADYEN_CREATE_CASH_APP_PAY_COMPONENT_SUCCESS"]},"fromModule":{"id":"web.js"}}

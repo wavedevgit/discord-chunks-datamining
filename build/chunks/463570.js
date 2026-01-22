@@ -1,8 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 463570, original params: e,t,n (module,exports,re quire) **/
-var Chunk909306 = require("./909306.js"),
-  Chunk900013 = require("./900013.js");
-module.exports = function(e, t, n, a) {
-  var o = null == e ? 0 : e.length;
-  return o ? (n && "number" != typeof n && i(e, t, n) && (n = 0, a = o), r(e, t, n, a)) : []
-}
+/** Chunk was on 28979 **/
+/** chunk id: 463570, original params: t,e,i (module,exports,require) **/
+require.d(exports, {
+  y: () => u
+});
+var Chunk419954 = require("./419954.js"),
+  Chunk780964 = require("./780964.js"),
+  Chunk604095 = require("./604095.js"),
+  Chunk985018 = require("./985018.jsx");
+let u = (0, Chunk419954.zD)(Chunk780964.X.OS_MINIMIZE_TO_TRAY, {
+  useTitle: () => r.intl.string(r.t.abLFes),
+  useSubtitle: () => r.intl.string(r.t["mVuX+j"]),
+  useValue: () => s.fk.useState(t => t.minimizeToTray),
+  setValue: Chunk604095.tA
+})

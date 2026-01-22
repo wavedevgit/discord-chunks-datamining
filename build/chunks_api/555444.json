@@ -1,0 +1,1 @@
+{"id":"555444","type":"experiment","data":{"kind":"user","id":"2025-05_push_to_talk_latching","label":"Push to Talk Latching","defaultConfig":{"enableLatching":false},"treatments":[{"id":1,"label":"Enable latching feature","config":{"enableLatching":true}}]},"fromModule":{"id":"web.js"}}

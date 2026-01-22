@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
-/** chunk id: 670785, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 275115, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
-}), require("./388685.js");
-var r, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
-  Chunk442837 = require("./442837.js"),
-  Chunk579092 = require("./579092.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk522474 = require("./522474.js"),
-  Chunk145597 = require("./145597.js"),
-  Chunk932404 = require("./932404.js"),
-  Chunk509140 = require("./509140.js"),
-  Chunk575140 = require("./575140.js"),
-  Chunk987650 = require("./987650.js"),
-  Chunk501787 = require("./501787.js");
+  A: () => B
+}), require("./896048.js");
+var r, Chunk812729 = require("./812729.js"),
+  a = require.n(Chunk812729),
+  Chunk311907 = require("./311907.js"),
+  Chunk118356 = require("./118356.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk87001 = require("./87001.js"),
+  Chunk9302 = require("./9302.js"),
+  Chunk682763 = require("./682763.js"),
+  Chunk680243 = require("./680243.js"),
+  Chunk96175 = require("./96175.js"),
+  Chunk672396 = require("./672396.js"),
+  Chunk392164 = require("./392164.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,21 +25,21 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = new Chunk579092.Yd("OverlayV3NativeClickZoneStore"),
+let g = new Chunk118356.Vy("OverlayV3NativeClickZoneStore"),
   E = 3e4,
   b = null,
   y = [],
   O = [],
-  v = {},
-  S = false;
+  A = {},
+  v = false;
 
-function I(e) {
+function S(e) {
   return !a()(e, y)
 }
 
-function T(e) {
+function I(e) {
   let t = setTimeout(() => {
-    P(t)
+    R(t)
   }, E);
   return e.map(e => {
     let n = {
@@ -49,18 +49,18 @@ function T(e) {
         right: e.right,
         bottom: e.bottom
       },
-      r = v[e.name];
-    return null != r && clearTimeout(r), v[e.name] = t, n
+      r = A[e.name];
+    return null != r && clearTimeout(r), A[e.name] = t, n
   })
 }
 
-function C(e, t) {
+function T(e, t) {
   var n;
   if (null == b) return void g.error("Overlay module not found");
   let r = null != (n = null == b ? true : b.getLastAssociatedPID()) ? n : u.UNSET_PID;
   try {
-    let n = T(e);
-    I(e) && (0, d.bs)(r, "capture_zones_set", {
+    let n = I(e);
+    S(e) && (0, d._r)(r, "capture_zones_set", {
       source: t,
       capture_zones: n,
       rawZones: e
@@ -70,62 +70,62 @@ function C(e, t) {
   }
 }
 
-function A(e) {
-  return Object.keys(v).filter(t => v[t] === e)
+function C(e) {
+  return Object.keys(A).filter(t => A[t] === e)
 }
 
 function N() {
   return O.length > 0 && 0 === y.length
 }
 
-function P(e) {
-  let t = A(e);
-  for (let n of (null != e && clearTimeout(e), t)) delete v[n];
+function R(e) {
+  let t = C(e);
+  for (let n of (null != e && clearTimeout(e), t)) delete A[n];
   let n = O.filter(e => !t.includes(e.name));
-  N() || (y = n, C(n, "timer_expired")), O = [...n]
+  N() || (y = n, T(n, "timer_expired")), O = [...n]
 }
 
 function w(e, t) {
-  if (!f.Z.isOverlayEnabled) {
+  if (!f.A.isOverlayEnabled) {
     if (0 === y.length) return;
-    R("overlay_disabled");
+    P("overlay_disabled");
     return
   }
-  C(e, t), y = e, O = [...e]
+  T(e, t), y = e, O = [...e]
 }
 
-function R(e) {
-  for (let e of Object.values(v)) null != e && clearTimeout(e);
-  v = {}, y = [], O = [], C([], e)
+function P(e) {
+  for (let e of Object.values(A)) null != e && clearTimeout(e);
+  A = {}, y = [], O = [], T([], e)
 }
 
 function D() {
-  0 !== y.length && (O = [...y], y = [], C([], "store_click_zones"))
+  0 !== y.length && (O = [...y], y = [], T([], "store_click_zones"))
 }
 
 function x() {
-  y.length > 0 || C(y = [...O], "refresh_click_zones")
+  y.length > 0 || T(y = [...O], "refresh_click_zones")
 }
 
 function L(e, t, n, r) {
-  let i = c.Z.getWindow(h.$J);
+  let i = c.A.getWindow(h.f);
   if (null == i) return;
   let a = Math.ceil(n * i.innerWidth),
-    o = Math.ceil(r * i.innerHeight),
-    s = new MouseEvent((0, p.oc)(t), {
+    s = Math.ceil(r * i.innerHeight),
+    o = new MouseEvent((0, p.Br)(t), {
       screenX: a,
-      screenY: o,
+      screenY: s,
       clientX: a,
-      clientY: o,
+      clientY: s,
       bubbles: true,
       view: i
     }),
-    l = i.document.elementFromPoint(a, o);
-  null != l && l.dispatchEvent(s)
+    l = i.document.elementFromPoint(a, s);
+  null != l && l.dispatchEvent(o)
 }
 
 function j(e) {
-  return R("crashed"), true
+  return P("crashed"), true
 }
 
 function M(e) {
@@ -136,26 +136,26 @@ function M(e) {
 }
 
 function k() {
-  return R("refresh_host_window"), true
+  return P("refresh_host_window"), true
 }
 
 function U() {
-  return null == (b = f.Z.getNativeModule()) || !!S || (S = true, b.setCaptureZoneCallback(L), true)
+  return null == (b = f.A.getNativeModule()) || !!v || (v = true, b.setCaptureZoneCallback(L), true)
 }
 
 function G() {
   return b = null, true
 }
 
-function Z(e) {
+function V(e) {
   let {
     pid: t
   } = e;
   return 0 === t ? D() : x(), true
 }
-class F extends(r = Chunk442837.ZP.Store) {
+class F extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(f.Z, c.Z)
+    this.waitFor(f.A, c.A)
   }
   getClickZones() {
     return y
@@ -165,11 +165,11 @@ class F extends(r = Chunk442837.ZP.Store) {
   }
 }
 m(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let B = new F(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
+let B = new F(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
   OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
   OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
   OVERLAY_SET_CLICK_ZONES: M,
-  OVERLAY_FOCUSED: Z,
+  OVERLAY_FOCUSED: V,
   OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: k,
   OVERLAY_CRASHED: j
 })

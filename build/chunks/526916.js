@@ -1,3 +1,9 @@
-/** Chunk was on 10778 **/
-/** chunk id: 526916, original params: e (module,exports,require) **/
-module.exports = "/assets/31ffb06838f6c40d.svg"
+/** Chunk was on web.js **/
+/** chunk id: 526916, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  E: () => r
+});
+var r = function(e) {
+  return e.GENERIC_SUBSCRIPTION = "api_generic_subscription", e.GENERIC_CONSUMABLE = "api_generic_consumable", e.ACOM_GENERIC_SUBSCRIPTION = "acom_generic_subscription", e.ACOM_GENERIC_CONSUMABLE = "acom_generic_consumable", e.ACOM_GENERIC_GIFT_CONSUMABLE = "acom_generic_gift_consumable", e
+}({})

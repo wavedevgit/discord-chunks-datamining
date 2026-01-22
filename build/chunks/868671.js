@@ -1,120 +1,89 @@
 /** Chunk was on web.js **/
 /** chunk id: 868671, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  H: () => I,
-  T: () => v
-}), require("./388685.js");
-var Chunk473749 = require("./473749.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk439170 = require("./439170.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk430824 = require("./430824.js"),
-  Chunk451478 = require("./451478.js"),
-  Chunk626135 = require("./626135.js"),
-  Chunk162461 = require("./162461.js"),
-  Chunk71585 = require("./71585.js"),
-  Chunk34586 = require("./34586.js"),
-  Chunk69259 = require("./69259.js"),
-  Chunk590026 = require("./590026.js"),
-  Chunk178762 = require("./178762.jsx"),
-  Chunk206583 = require("./206583.js"),
-  Chunk809017 = require("./809017.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
-let O = 3,
-  v = 0,
-  S = 3e3;
-
-function I(e) {
-  let {
-    memberStoreProps: {
-      groups: t,
-      rows: n,
-      version: v
-    },
-    channelId: I,
-    guildId: T
-  } = e, [C, A] = r.useState(false), {
-    requestId: N,
-    entries: P,
-    impressionCappedEntryIds: w
-  } = (0, h.Z)(I), R = (0, i.e7)([f.Z], () => f.Z.hidden), D = (0, i.e7)([c.Z], () => c.Z.isFocused()), x = (0, i.e7)([s.Z], () => s.Z.getChannel(I)), L = (0, i.e7)([l.Z], () => l.Z.getGuild(T), [T]), j = (0, p.E)(L), M = null != j && j && (null == x ? true : x.isForumChannel()) === false, [k, U, G, Z] = r.useMemo(() => {
-    let e;
-    if (null == P || 0 === P.length || null == N || !M) return [t, n, v];
-    let r = O,
-      i = C ? P.length : r,
-      a = P.slice(0, i);
-    e = R ? [{
-      type: o.so.HIDDEN_CONTENT_INVENTORY
-    }] : a.map(e => ({
-      type: o.so.CONTENT_INVENTORY,
-      entry: e,
-      requestId: N
-    }));
-    let s = () => {
-        A(e => {
-          let t = !e;
-          return u.default.track(b.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
-            channel_id: I,
-            guild_id: T,
-            expanded: t
-          }), t
-        })
-      },
-      l = {
-        id: E.G,
-        type: o.so.CONTENT_INVENTORY_GROUP,
-        key: E.G,
-        count: e.length,
-        index: n.length,
-        title: y.intl.string(y.t["6gwSFY"]),
-        onToggleExpand: s,
-        expanded: C,
-        expandedCount: P.length,
-        feedHeight: e.map(m.iZ).reduce((e, t) => e + t, 0)
-      };
-    return [
-      [l, ...t],
-      [...n, l, ...e], Math.random(), e
-    ]
-  }, [I, P, C, t, T, N, n, v, R, M]), F = r.useRef(0), B = r.useRef(P), V = r.useRef(true), H = r.useRef({
-    impressionCappedEntryIds: w
-  }), Y = r.useCallback(e => {
-    var t;
-    let n = Math.floor(e / m.YN),
-      r = Math.min(null != (t = null == Z ? true : Z.length) ? t : 0, n);
-    F.current = Math.max(F.current, r)
-  }, [Z]);
-  return r.useEffect(() => {
-    B.current = P
-  }, [P]), r.useEffect(() => {
-    H.current = {
-      impressionCappedEntryIds: w
+var r = function() {
+  function e(e, t) {
+    for (var n = 0; n < t.length; n++) {
+      var r = t[n];
+      r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
     }
-  }, [w]), r.useEffect(() => (F.current = 0, V.current = Date.now(), () => {
-    var e, t;
-    if (null == N || null == V.current || Date.now() - V.current < S) return;
-    let n = null != (t = null == (e = B.current) ? true : e.map(e => e.id)) ? t : [],
-      r = n.slice(0, F.current);
-    !R && D && M && ((0, _.e)(b.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
-      request_id: N,
-      first_shown_at: V.current,
-      item_ids: r,
-      surface_type: g.Kd.GUILD_MEMBER_LIST,
-      channel_id: I,
-      guild_id: T,
-      all_item_ids: n,
-      impression_capped_item_ids: [...H.current.impressionCappedEntryIds]
-    }), (0, d.wm)("useInjectContentInventoryFeed") && a.Z.dispatch({
-      type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
-      itemIds: r
-    }))
-  }), [N, I, T, R, D, M]), {
-    groups: k,
-    rows: U,
-    version: G,
-    updateMaxRowSeen: Y
   }
+  return function(t, n, r) {
+    return n && e(t.prototype, n), r && e(t, r), t
+  }
+}();
+
+function i(e, t) {
+  if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
+
+function a(e, t) {
+  if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
+  return t && ("object" == typeof t || "function" == typeof t) ? t : e
+}
+
+function s(e, t) {
+  if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
+  e.prototype = Object.create(t && t.prototype, {
+    constructor: {
+      value: e,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+}
+var Chunk698380 = require("./698380.js");
+require("./313319.js");
+var Chunk958554 = require("./958554.js"),
+  Chunk82322 = require("./82322.js"),
+  Chunk731841 = require("./731841.js");
+module.exports = function(e) {
+  function t(e, n) {
+    i(this, t);
+    var r = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+    return r._a = "number" == typeof e ? new l(e) : e, r._b = "number" == typeof n ? new l(n) : n, r._listeners = {}, r
+  }
+  return s(t, e), r(t, [{
+    key: "__getValue",
+    value: function() {
+      return this._a.__getValue() + this._b.__getValue()
+    }
+  }, {
+    key: "addListener",
+    value: function(e) {
+      var t = this;
+      !this._aListener && this._a.addListener && (this._aListener = this._a.addListener(function() {
+        for (var e in t._listeners) t._listeners[e]({
+          value: t.__getValue()
+        })
+      })), !this._bListener && this._b.addListener && (this._bListener = this._b.addListener(function() {
+        for (var e in t._listeners) t._listeners[e]({
+          value: t.__getValue()
+        })
+      }));
+      var n = guid();
+      return this._listeners[n] = e, n
+    }
+  }, {
+    key: "removeListener",
+    value: function(e) {
+      delete this._listeners[e]
+    }
+  }, {
+    key: "interpolate",
+    value: function(e) {
+      return new u(this, c.create(e))
+    }
+  }, {
+    key: "__attach",
+    value: function() {
+      this._a.__addChild(this), this._b.__addChild(this)
+    }
+  }, {
+    key: "__detach",
+    value: function() {
+      this._a.__removeChild(this), this._b.__removeChild(this)
+    }
+  }]), t
+}(Chunk698380)

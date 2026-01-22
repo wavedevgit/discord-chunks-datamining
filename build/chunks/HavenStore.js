@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 805422, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 998740, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => E
+  A: () => E
 });
-var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk594174 = require("./594174.js");
+var i, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk287809 = require("./287809.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,7 +53,7 @@ let f = {},
   },
   _ = e => {
     if (console.log("HAVEN_DISCONNECT", e), null == f[e.roomId]) returnfalse;
-    let t = s.default.getCurrentUser();
+    let t = o.default.getCurrentUser();
     if (e.userId === (null == t ? true : t.id)) return void delete f[e.roomId];
     let n = c({}, f[e.roomId]);
     n.participants = n.participants.filter(t => t.userId !== e.userId), n.seats = n.seats.map(t => t.claimedBy === e.userId ? d(c({}, t), {
@@ -66,9 +66,9 @@ let f = {},
   m = e => {
     r = e.assets
   };
-class g extends(i = Chunk442837.ZP.Store) {
+class g extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.default)
+    this.waitFor(o.default)
   }
   get state() {
     return f
@@ -88,7 +88,7 @@ class g extends(i = Chunk442837.ZP.Store) {
   }
 }
 l(g, "displayName", "HavenStore");
-let E = new g(Chunk570140.Z, {
+let E = new g(Chunk73153.h, {
   HAVEN_CONNECT: p,
   HAVEN_DISCONNECT: _,
   HAVEN_UPDATE: h,

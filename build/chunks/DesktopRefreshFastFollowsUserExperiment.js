@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 591146, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 534409, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CL: () => a,
-  Ml: () => i,
-  VM: () => o
+  k5: () => a,
+  lV: () => s,
+  qK: () => i
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-04_desktop_refresh_fast_follows",
   label: "Desktop Refresh Fast Follows",
@@ -68,7 +68,7 @@ function a(e) {
   }).darkerGuildListBackground
 }
 
-function o(e) {
+function s(e) {
   return r.useExperiment({
     location: e
   }).distinctBorders

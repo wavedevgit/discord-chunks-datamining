@@ -1,48 +1,48 @@
-/** Chunk was on 82124 **/
-/** chunk id: 48929, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 97492 **/
+/** chunk id: 390395, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
-}), require("./388685.js");
-var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js"),
-  Chunk430198 = require("./430198.js"),
-  Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
-  Chunk709054 = require("./709054.js"),
-  Chunk522579 = require("./522579.js");
-let p = new Set;
-class f extends(r = Chunk442837.ZP.Store) {
+  A: () => h
+}), require("./896048.js");
+var r, l, Chunk311907 = require("./311907.js"),
+  Chunk73153 = require("./73153.js"),
+  Chunk717125 = require("./717125.js"),
+  Chunk961350 = require("./961350.js"),
+  Chunk734057 = require("./734057.js"),
+  Chunk661191 = require("./661191.js"),
+  Chunk306680 = require("./306680.js");
+let f = new Set;
+class p extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(s.default, c.Z, o.Z)
+    this.waitFor(o.default, c.A, s.A)
   }
   shouldDisplayPrompt(e) {
-    return p.has(e)
+    return f.has(e)
   }
-}(i = "displayName") in f ? Object.defineProperty(f, i, {
+}(l = "displayName") in p ? Object.defineProperty(p, l, {
   value: "MediaPostSharePromptStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[i] = "MediaPostSharePromptStore";
-let h = new f(Chunk570140.Z, {
+}) : p[l] = "MediaPostSharePromptStore";
+let h = new p(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    p = new Set
+    f = new Set
   },
   MESSAGE_CREATE: function(e) {
     var t;
     if (e.isPushNotification) return;
     let n = e.message;
-    if (s.default.getId() !== (null == (t = n.author) ? true : t.id) || !(0, d.z9)(n.id, n.channel_id)) return;
-    let r = c.Z.getChannel(n.channel_id);
-    null != r && null != r.parent_id && o.Z.isChannelGated(r.guild_id, r.parent_id) && p.add(u.default.castMessageIdAsChannelId(e.message.id))
+    if (o.default.getId() !== (null == (t = n.author) ? true : t.id) || !(0, d.Co)(n.id, n.channel_id)) return;
+    let r = c.A.getChannel(n.channel_id);
+    null == r || null == r.parent_id || s.A.isChannelGated(r.guild_id, r.parent_id) && f.add(u.default.castMessageIdAsChannelId(e.message.id))
   },
   DISMISS_MEDIA_POST_SHARE_PROMPT: function(e) {
     let {
       threadId: t
     } = e;
-    p.delete(t)
+    f.delete(t)
   },
   LOGOUT: function(e) {
-    p.clear()
+    f.clear()
   }
 })

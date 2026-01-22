@@ -1,0 +1,1 @@
+{"id":"8880","type":"store","data":{"name":"TTSStore","functions":[{"name":"initialize","args":["e"]},{"name":"isSpeakingMessage","args":["e","t"]},{"name":"currentMessage","args":[]},{"name":"speechRate","args":[]},{"name":"getUserAgnosticState","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}

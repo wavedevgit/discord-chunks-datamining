@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 171638, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 547927, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => o
+  N: () => s
 });
-var Chunk818083 = require("./818083.js"),
-  Chunk480218 = require("./480218.js");
-let a = (0, Chunk818083.B)({
+var Chunk600975 = require("./600975.js"),
+  Chunk332628 = require("./332628.js");
+let a = (0, Chunk600975.C)({
   kind: "user",
   id: "2025-08_detected_file_size",
   label: "Detected File Size",
@@ -28,12 +28,12 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function s(e) {
   let {
     location: t
   } = e, {
     isInHoldout: n
-  } = i._.getCurrentConfig({
+  } = i.i.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
