@@ -463,7 +463,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
               let {
                 guild_id: e
               } = r, t = G({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = R.we(e)), await (0, j.u)(a, t[e].deny, t[e].allow) && (0, g.wk)(a.id, {
+              null != e && null == t[e] && (t[e] = R.we(e)), await (0, j.R)(a, t[e].deny, t[e].allow) && (0, g.wk)(a.id, {
                 permissionOverwrites: Object.values(t)
               })
             }

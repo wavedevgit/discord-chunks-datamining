@@ -4,8 +4,8 @@ require.d(exports, {
   Aj: () => a,
   S1: () => s,
   d$: () => o,
-  hw: () => c,
-  kU: () => d,
+  hw: () => d,
+  kU: () => c,
   kY: () => u
 });
 var Chunk570140 = require("./570140.js"),
@@ -13,7 +13,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk493683 = require("./493683.js");
 async function u(e, t, n, l) {
   let u = e.getGuildId();
-  if (null != u && t === u && !await (0, i.u)(e, l, n)) returnfalse;
+  if (null != u && t === u && !await (0, i.R)(e, l, n)) returnfalse;
   r.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION",
     id: t,
@@ -42,11 +42,11 @@ function s() {
   })
 }
 
-function c(e, t, n) {
-  return d(e, t, [], n)
+function d(e, t, n) {
+  return c(e, t, [], n)
 }
 
-function d(e, t, n, i) {
+function c(e, t, n, i) {
   return r.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING"
   }), new Promise(r => {

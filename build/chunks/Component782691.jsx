@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => P
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./49124.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,9 +19,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk189 = require("./189.jsx"),
   Chunk75266 = require("./75266.js"),
   Chunk346537 = require("./346537.js"),
-  Chunk830318 = require("./830318.js");
+  Chunk830318 = require("./830318.js"),
+  Chunk678718 = require("./678718.js"),
+  Chunk405733 = require("./405733.js");
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -40,7 +42,7 @@ function j(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,82 +54,170 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = {
+let S = {
     [Chunk489495.cq.THUMBNAIL]: null,
     [Chunk489495.cq.STATIC]: null,
     [Chunk489495.cq.REDUCED_MOTION]: null
   },
-  _ = "debug",
-  S = e => {
+  E = "debug",
+  T = "reduced-motion-preview-modal",
+  O = e => {
+    let {
+      transitionState: t,
+      onClose: n,
+      frameSrc: r,
+      placeholderSrc: i
+    } = e;
+    return (0, a.jsx)(c.Y0X, {
+      transitionState: t,
+      size: c.CgR.MEDIUM,
+      parentComponent: "ReducedMotionPreviewModal",
+      children: (0, a.jsxs)(c.hzk, {
+        className: x.reducedMotionModalContent,
+        children: [(0, a.jsx)("div", {
+          className: x.reducedMotionModalCloseButton,
+          children: (0, a.jsx)(c.hU, {
+            "aria-label": "Close",
+            onClick: n,
+            icon: c.Uz9,
+            variant: "overlay-secondary",
+            size: "sm"
+          })
+        }), (0, a.jsxs)("div", {
+          className: x.reducedMotionModalWrapper,
+          children: [(0, a.jsx)("img", {
+            src: i,
+            alt: "",
+            className: x.reducedMotionModalPlaceholder,
+            "aria-hidden": true
+          }), null != r && "" !== r && (0, a.jsx)("img", {
+            src: r,
+            className: x.reducedMotionModalFrame,
+            alt: "Reduced motion preview"
+          })]
+        })]
+      })
+    })
+  },
+  N = e => {
+    let {
+      type: t,
+      frame: n,
+      showDarkTheme: r,
+      onClear: i
+    } = e, s = t === f.cq.REDUCED_MOTION, o = s ? r ? j : y : r ? g : v, d = (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)("img", {
+        src: o,
+        alt: "",
+        className: x.stillFramePlaceholder,
+        "aria-hidden": true
+      }), (null == n ? true : n.src) != null && "" !== n.src && (0, a.jsx)("img", {
+        src: n.src,
+        className: x.stillFramePreview,
+        alt: ""
+      })]
+    });
+    return (0, a.jsxs)("div", {
+      className: x.stillFramePreviewContainer,
+      children: [(0, a.jsx)(c.Heading, {
+        variant: "heading-sm/bold",
+        children: t
+      }), s ? (0, a.jsx)(c.P3F, {
+        className: l()(x.stillFramePreviewWrapper, x.stillFramePreviewClickable),
+        onClick: () => {
+          (0, c.nfh)(T) ? (0, c.Mr3)(T) : (0, c.ZDy)(() => Promise.resolve(e => {
+            var t;
+            return (0, a.jsx)(O, _(C({}, e), {
+              frameSrc: null != (t = null == n ? true : n.src) ? t : null,
+              placeholderSrc: o
+            }))
+          }), {
+            modalKey: T,
+            onCloseRequest: () => (0, c.Mr3)(T)
+          })
+        },
+        children: d
+      }) : (0, a.jsx)("div", {
+        className: x.stillFramePreviewWrapper,
+        children: d
+      }), null != n && (0, a.jsx)(c.Button, {
+        variant: "critical-secondary",
+        size: "sm",
+        text: "Clear",
+        onClick: i
+      })]
+    })
+  },
+  P = e => {
     let {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), Z = r.useRef([]), [D, M] = r.useState(t.name), L = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
-      id: _,
-      skuId: _,
-      title: _,
-      description: _,
-      accessibilityLabel: _,
+    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [j, y] = r.useState(true), T = r.useRef({}), [O, P] = r.useState(false), [w, I] = r.useState(false), [k, R] = r.useState([]), [A, Z] = r.useState(S), D = r.useRef([]), [M, L] = r.useState(t.name), U = M.toLowerCase().replace(/\s+/g, "_"), B = r.useMemo(() => ({
+      id: E,
+      skuId: E,
+      title: E,
+      description: E,
+      accessibilityLabel: E,
       reducedMotionSrc: "",
       thumbnailPreviewSrc: "",
-      effects: I,
+      effects: k,
       animationType: s.y.ANIMATION_TYPE_UNSPECIFIED
-    }), [I]), B = e => {
+    }), [k]), F = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
-    }, F = (e, t) => {
-      let n = B(t);
+    }, G = (e, t) => {
+      let n = F(t);
       null != n && (0, f.i0)(n, t => {
-        A(a => y(j({}, a), {
+        Z(a => _(C({}, a), {
           [e]: (0, f.z)(t, n)
         }))
       })
     };
     r.useEffect(() => {
       let e = t.config.effects;
-      e.length > 0 && k(e)
+      e.length > 0 && R(e)
     }, [t.config.effects]), r.useEffect(() => {
       let e = t.config.stillFrames;
       null != e && Object.entries(e).forEach(e => {
         let [t, n] = e;
         if (null != n) {
-          if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) A(e => y(j({}, e), {
+          if ("" !== n.src && null != n.src && ("" === n.base64 || null == n.base64)) Z(e => _(C({}, e), {
             [t]: n
           }));
           else if ("" !== n.base64 && null != n.base64) {
             let e = (0, f.$j)(n.base64);
-            n.src = e, Z.current.push(e), A(e => y(j({}, e), {
+            n.src = e, D.current.push(e), Z(e => _(C({}, e), {
               [t]: n
             }))
           }
         }
       })
     }, [t.config.stillFrames]);
-    let G = {
+    let V = {
         effect: t,
         upsertConfig: n
       },
-      V = r.useRef(G);
+      W = r.useRef(V);
     return (r.useEffect(() => {
-      V.current = G
+      W.current = V
     }), r.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
-      } = V.current;
+      } = W.current;
       e.readonly || t({
         skuId: e.skuId,
-        name: D,
+        name: M,
         config: {
-          effects: I,
-          stillFrames: R
+          effects: k,
+          stillFrames: A
         }
       })
-    }, [I, R, D]), r.useEffect(() => () => {
-      Z.current.forEach(e => {
+    }, [k, A, M]), r.useEffect(() => () => {
+      D.current.forEach(e => {
         URL.revokeObjectURL(e)
-      }), Z.current = []
+      }), D.current = []
     }, []), null == i) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
       className: x.root,
       children: [(0, a.jsxs)("div", {
@@ -139,10 +229,10 @@ let C = {
             T.current.animated = e
           },
           onChange: e => {
-            let t = B(e);
+            let t = F(e);
             null != t && (0, f.i0)(t, async e => {
-              let n = await (0, f.Xv)(e, t, I.length);
-              k(e => [...e, n])
+              let n = await (0, f.Xv)(e, t, k.length);
+              R(e => [...e, n])
             })
           },
           multiple: false
@@ -150,19 +240,19 @@ let C = {
           ref: e => {
             T.current.thumbnail = e
           },
-          onChange: e => F(f.cq.THUMBNAIL, e),
+          onChange: e => G(f.cq.THUMBNAIL, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
             T.current.static = e
           },
-          onChange: e => F(f.cq.STATIC, e),
+          onChange: e => G(f.cq.STATIC, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
             T.current.reducedMotion = e
           },
-          onChange: e => F(f.cq.REDUCED_MOTION, e),
+          onChange: e => G(f.cq.REDUCED_MOTION, e),
           multiple: false
         })]
       }), (0, a.jsxs)("div", {
@@ -173,10 +263,10 @@ let C = {
             src: O ? g : v,
             alt: "",
             width: 450
-          }), S && (0, a.jsx)("div", {
+          }), j && (0, a.jsx)("div", {
             className: x.profileEffectPreviewContent,
             children: (0, a.jsx)(b.Z, {
-              config: U
+              config: B
             })
           })]
         }), (0, a.jsxs)("div", {
@@ -188,10 +278,10 @@ let C = {
               children: "Profile Effect Name"
             }), (0, a.jsx)("input", {
               type: "text",
-              value: D,
+              value: M,
               className: x.input,
               onChange: e => {
-                M(e.target.value)
+                L(e.target.value)
               }
             })]
           }), (0, a.jsxs)("div", {
@@ -206,7 +296,7 @@ let C = {
                 checked: O,
                 className: x.checkBox,
                 onChange: () => {
-                  N(!O)
+                  P(!O)
                 }
               })]
             }), (0, a.jsxs)("div", {
@@ -216,10 +306,10 @@ let C = {
                 children: "Show User Profile"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: P,
+                checked: w,
                 className: x.checkBox,
                 onChange: () => {
-                  w(!P)
+                  I(!w)
                 }
               })]
             })]
@@ -268,7 +358,7 @@ let C = {
                 variant: "primary",
                 text: "Replay Animation",
                 onClick: () => {
-                  E(false), setTimeout(() => E(true), 100)
+                  y(false), setTimeout(() => y(true), 100)
                 }
               })
             })
@@ -284,25 +374,25 @@ let C = {
             }), (0, a.jsxs)("div", {
               className: x.row,
               children: [(0, a.jsx)(d.Z, {
-                fileContents: () => (0, f.yR)(t.name, I),
+                fileContents: () => (0, f.yR)(t.name, k),
                 contentType: "text/plain",
-                fileName: "".concat(L, "_timing_config.txt"),
+                fileName: "".concat(U, "_timing_config.txt"),
                 children: (0, a.jsx)(c.Button, {
                   variant: "primary",
                   size: "sm",
                   text: "Download Timing Config"
                 })
               }), (0, a.jsx)(d.Z, {
-                fileContents: () => JSON.stringify(y(j({}, t), {
-                  name: D,
+                fileContents: () => JSON.stringify(_(C({}, t), {
+                  name: M,
                   readonly: false,
-                  config: y(j({}, t.config), {
-                    effects: I,
-                    stillFrames: R
+                  config: _(C({}, t.config), {
+                    effects: k,
+                    stillFrames: A
                   })
                 })),
                 contentType: "text/plain",
-                fileName: "".concat(L, "_config.txt"),
+                fileName: "".concat(U, "_config.txt"),
                 children: (0, a.jsx)(c.Button, {
                   variant: "primary",
                   size: "sm",
@@ -317,39 +407,21 @@ let C = {
               children: "Still Frames"
             }), (0, a.jsx)("div", {
               className: x.stillFramesContainer,
-              children: Object.entries(R).map(e => {
+              children: Object.entries(A).map(e => {
                 let [t, n] = e;
-                return (0, a.jsxs)("div", {
-                  className: x.stillFramePreviewContainer,
-                  children: [(0, a.jsx)(c.Heading, {
-                    variant: "heading-sm/bold",
-                    children: t
-                  }), (0, a.jsxs)("div", {
-                    className: x.stillFramePreviewWrapper,
-                    children: [(0, a.jsx)("img", {
-                      src: O ? g : v,
-                      alt: "",
-                      className: x.stillFramePlaceholder,
-                      "aria-hidden": true
-                    }), (null == n ? true : n.src) != null && "" !== n.src && (0, a.jsx)("img", {
-                      src: n.src,
-                      className: x.stillFramePreview,
-                      alt: ""
-                    })]
-                  }), null != n && (0, a.jsx)(c.Button, {
-                    variant: "critical-secondary",
-                    size: "sm",
-                    text: "Clear",
-                    onClick: () => {
-                      A(e => y(j({}, e), {
-                        [t]: null
-                      }))
-                    }
-                  })]
+                return (0, a.jsx)(N, {
+                  type: t,
+                  frame: n,
+                  showDarkTheme: O,
+                  onClear: () => {
+                    Z(e => _(C({}, e), {
+                      [t]: null
+                    }))
+                  }
                 }, t)
               })
             })]
-          }), I.some(e => {
+          }), k.some(e => {
             var t;
             return (null != (t = e.randomizedSources) ? t : []).length > 0
           }) && (0, a.jsxs)("div", {
@@ -369,7 +441,7 @@ let C = {
               })]
             })]
           }), (0, a.jsx)("div", {
-            children: P && (0, a.jsxs)("div", {
+            children: w && (0, a.jsxs)("div", {
               className: l()(x.userProfilePreview, x.preview),
               children: [(0, a.jsx)(m.Z, {
                 user: i,
@@ -378,7 +450,7 @@ let C = {
                 canUsePremiumCustomization: true,
                 isTryItOut: true
               }), (0, a.jsx)(b.Z, {
-                config: U
+                config: B
               })]
             })
           })]
@@ -390,10 +462,10 @@ let C = {
               variant: "critical-secondary",
               text: "Clear Assets",
               onClick: () => {
-                k([]), A(C)
+                R([]), Z(S)
               }
             })
-          }), I.map((e, t) => (0, a.jsxs)("div", {
+          }), k.map((e, t) => (0, a.jsxs)("div", {
             className: x.layerForm,
             children: [(0, a.jsxs)("div", {
               className: x.layerPreviewContainer,
@@ -434,7 +506,7 @@ let C = {
                   value: e.start,
                   className: x.input,
                   onChange: e => {
-                    k(n => {
+                    R(n => {
                       let a = [...n],
                         r = n[t];
                       return r.start = +e.target.value, a[t] = r, a
@@ -452,7 +524,7 @@ let C = {
                   value: e.duration,
                   className: x.input,
                   onChange: e => {
-                    k(n => {
+                    R(n => {
                       let a = [...n],
                         r = n[t];
                       return r.duration = +e.target.value, a[t] = r, a
@@ -473,7 +545,7 @@ let C = {
                   checked: e.loop,
                   className: x.checkBox,
                   onChange: e => {
-                    k(n => {
+                    R(n => {
                       let a = [...n],
                         r = n[t];
                       return r.loop = e.target.checked, a[t] = r, a
@@ -491,7 +563,7 @@ let C = {
                     value: e.loopDelay,
                     className: x.input,
                     onChange: e => {
-                      k(n => {
+                      R(n => {
                         let a = [...n],
                           r = n[t];
                         return r.loopDelay = +e.target.value, a[t] = r, a
@@ -510,13 +582,13 @@ let C = {
                   T.current["randomized-".concat(t)] = e
                 },
                 onChange: e => ((e, t) => {
-                  let n = B(e);
+                  let n = F(e);
                   null != n && (0, f.i0)(n, e => {
-                    k(a => {
+                    R(a => {
                       let r = [...a],
                         i = a[t];
                       if (null == i) return a;
-                      let l = j({}, i);
+                      let l = C({}, i);
                       return null == l.randomizedSources && (l.randomizedSources = []), l.randomizedSources.push({
                         src: e,
                         filename: n.name
@@ -539,7 +611,7 @@ let C = {
                 variant: "critical-secondary",
                 text: "Remove Layer",
                 onClick: () => {
-                  k(t => t.filter(t => t !== e))
+                  R(t => t.filter(t => t !== e))
                 }
               })]
             })]

@@ -867,6 +867,7 @@ function e8(e) {
       tooltipPositionKey: n,
       onClick: s,
       onContextMenu: o,
+      "aria-label": ez.intl.string(ez.t.cduTBL),
       icon: (0, a.jsx)(b, {
         size: "refresh_sm",
         color: "currentColor",

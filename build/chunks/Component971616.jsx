@@ -160,7 +160,7 @@ function E(e) {
         variant: "text-md/normal",
         color: E ? "text-default" : "interactive-text-default",
         className: a()(g.planOptionSubtext, {
-          [g.discountPlanOptionSubtext]: C
+          [g.planWithOfferOptionSubtext]: C || N
         }),
         children: B()
       })

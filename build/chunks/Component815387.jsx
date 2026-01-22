@@ -853,7 +853,8 @@ let ti = Object.freeze({
   [Chunk981631.uaV.REPORT_TO_MOD_DELETED_MESSAGE]: Chunk917318.Z,
   [Chunk981631.uaV.REPORT_TO_MOD_CLOSED_REPORT]: Chunk917318.Z,
   [Chunk981631.uaV.PREMIUM_GROUP_INVITE]: tr,
-  65: tn
+  [Chunk981631.uaV.VOICE_SESSION]: true,
+  66: tn
 });
 
 function ta(e) {

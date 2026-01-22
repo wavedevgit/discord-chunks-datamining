@@ -418,6 +418,10 @@ let q = {
       h.isPlatformEmbedded && S.clipboard.paste()
     },
     readClipboard: () => h.isPlatformEmbedded ? S.clipboard.read() : "",
+    clipboardHasMixedContent() {
+      var e, t, n;
+      return !!h.isPlatformEmbedded && null != (n = null == (e = (t = S.clipboard).hasMixedContent) ? true : e.call(t)) && n
+    },
     on(e, t) {
       S.ipc.on(e, t)
     },

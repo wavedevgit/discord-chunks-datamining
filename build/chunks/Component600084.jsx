@@ -2,7 +2,7 @@
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
-});
+}), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -98,24 +98,28 @@ function B(e) {
   });
   if (y === D.d4z.DM) {
     let e;
-    return null != O && null != R ? null != B && (e = (0, r.jsxs)("div", {
-      className: L.buttonContainer,
-      children: [(0, r.jsx)(Z.W, {
+    if (null != O && null != R) {
+      let t = [];
+      null != B && (t.push((0, r.jsx)(Z.W, {
         channel: n,
         user: O
-      }), (0, r.jsx)(P.n, {
+      }, "mute")), t.push((0, r.jsx)(P.n, {
         user: O,
         application: R,
         channel: n,
         oauth2Token: B
-      }), H && (0, r.jsx)(h.Z, {
+      }, "manage"))), H && t.push((0, r.jsx)(h.Z, {
         channel: n
-      })]
-    })) : e = (0, r.jsx)(E.Z, {
+      }, "report")), t.length > 0 && (e = (0, r.jsx)("div", {
+        className: L.buttonContainer,
+        children: t
+      }))
+    } else e = (0, r.jsx)(E.Z, {
       userId: n.getRecipientId(),
       channel: n,
       showingBanner: p
-    }), (0, r.jsxs)(N.Z, {
+    });
+    return (0, r.jsxs)(N.Z, {
       channel: n,
       user: O,
       children: [null != O && !O.isProvisional && (0, r.jsx)(a.Heading, {

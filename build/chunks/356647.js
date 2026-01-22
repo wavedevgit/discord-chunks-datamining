@@ -71,7 +71,7 @@ function h(e, t) {
     var p = t.id;
     let f = (0, u.ZP)({
         channelId: p,
-        type: 65,
+        type: 66,
         content: "",
         author: e.author,
         state: d.yb.SENT

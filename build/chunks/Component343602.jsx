@@ -1,10 +1,11 @@
 /** Chunk was on 41984 **/
 /** chunk id: 343602, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk327432 = require("./327432.js"),
   Chunk685578 = require("./685578.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,89 +23,102 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(t) {
-  var e, n, T, x, E, k, O, C, v, N, P, L;
+function x(t) {
+  var e, n, x, C, E, k, O, v, N, P, L, Z;
   let {
     text: A,
     editor: w,
-    target: Z,
-    onHeightUpdate: I,
-    onSelect: M
-  } = t, D = (0, d.zM)("SlateTextAreaContextMenu", {
+    target: I,
+    onHeightUpdate: M,
+    onSelect: D
+  } = t, H = (0, b.zM)("SlateTextAreaContextMenu", {
     autoTrackExposure: false
-  }).enabled, _ = a.useCallback(() => {
-    (0, o.Zy)(() => {
-      i.F3.focus(w), setTimeout(() => y.bN.focus(w), 0)
+  }).enabled, R = a.useCallback(t => {
+    r.F3.focus(w), setTimeout(() => {
+      null == t || t(), m.bN.focus(w)
+    }, 0)
+  }, [w]), _ = a.useCallback(() => {
+    (0, c.Zy)(R)
+  }, [R]), G = a.useCallback(() => {
+    let t = y.ZP.readClipboard();
+    0 !== t.length && R(() => {
+      i.YR.insertText(w, t)
     })
-  }, [w]), [H, R] = (0, b.Z)({
+  }, [R, w]), [K, U] = (0, p.Z)({
     text: A,
-    target: Z,
-    onHeightUpdate: I
-  }), G = (0, m.Z)(w), K = (0, r.e7)([u.Z], () => u.Z.isSubmitButtonEnabled), U = p.Xk.useSetting(), V = p.HV.useSetting();
-  if (!f.isPlatformEmbedded) return null;
-  let X = null != (v = null == (n = w.chatInputType) || null == (e = n.commands) ? true : e.enabled) && v,
-    F = null != (N = null == (x = w.chatInputType) || null == (T = x.stickers) ? true : T.autoSuggest) && N,
-    W = null != (P = null == (k = w.chatInputType) || null == (E = k.submit) ? true : E.button) && P,
-    Y = null != (L = null == (C = w.chatInputType) || null == (O = C.autocomplete) ? true : O.mentionSuggestions) && L,
-    Q = X || F,
-    q = "" !== A ? [(0, l.jsx)(s.sNh, {
+    target: I,
+    onHeightUpdate: M
+  }), V = (0, S.Z)(w), X = (0, s.e7)([d.Z], () => d.Z.isSubmitButtonEnabled), F = g.Xk.useSetting(), Y = g.HV.useSetting();
+  if (!h.isPlatformEmbedded) return null;
+  let W = null != (N = null == (n = w.chatInputType) || null == (e = n.commands) ? true : e.enabled) && N,
+    Q = null != (P = null == (C = w.chatInputType) || null == (x = C.stickers) ? true : x.autoSuggest) && P,
+    q = null != (L = null == (k = w.chatInputType) || null == (E = k.submit) ? true : E.button) && L,
+    z = null != (Z = null == (v = w.chatInputType) || null == (O = v.autocomplete) ? true : O.mentionSuggestions) && Z,
+    B = W || Q,
+    J = h.isPlatformEmbedded && y.ZP.clipboardHasMixedContent(),
+    $ = "" !== A ? [(0, l.jsx)(o.sNh, {
       id: "cut",
-      label: j.intl.string(j.t.pNPVhe),
-      hint: (0, f.isMac)() ? "⌘X" : "Ctrl+X",
-      action: () => setTimeout(() => h.ZP.cut(), 0)
-    }, "cut"), (0, l.jsx)(s.sNh, {
+      label: T.intl.string(T.t.pNPVhe),
+      hint: (0, h.isMac)() ? "⌘X" : "Ctrl+X",
+      action: () => setTimeout(() => y.ZP.cut(), 0)
+    }, "cut"), (0, l.jsx)(o.sNh, {
       id: "copy",
-      label: j.intl.string(j.t.OpuAlK),
-      hint: (0, f.isMac)() ? "⌘C" : "Ctrl+C",
-      action: () => setTimeout(() => h.ZP.copy(), 0)
+      label: T.intl.string(T.t.OpuAlK),
+      hint: (0, h.isMac)() ? "⌘C" : "Ctrl+C",
+      action: () => setTimeout(() => y.ZP.copy(), 0)
     }, "copy")] : null,
-    z = (0, l.jsx)(s.S89, {
+    tt = (0, l.jsx)(o.S89, {
       id: "command-suggestions",
-      label: j.intl.string(j.t["9rJKF7"]),
-      checked: U,
+      label: T.intl.string(T.t["9rJKF7"]),
+      checked: F,
       action: () => {
-        let t = !U;
-        p.Xk.updateSetting(t), g.default.track(S.rMx.SLASH_COMMAND_SUGGESTIONS_TOGGLED, {
+        let t = !F;
+        g.Xk.updateSetting(t), f.default.track(j.rMx.SLASH_COMMAND_SUGGESTIONS_TOGGLED, {
           enabled: t,
           location: {
-            object: S.qAy.CONTEXT_MENU
+            object: j.qAy.CONTEXT_MENU
           }
         })
       }
     });
-  return (0, l.jsxs)(s.v2r, {
+  return (0, l.jsxs)(o.v2r, {
     navId: "textarea-context",
     onClose: _,
-    "aria-label": j.intl.string(j.t.NWlDSI),
-    onSelect: M,
-    children: [Q && (0, l.jsxs)(s.sNh, {
+    "aria-label": T.intl.string(T.t.NWlDSI),
+    onSelect: D,
+    children: [B && (0, l.jsxs)(o.sNh, {
       id: "suggestions",
-      label: j.intl.string(j.t.zgxg7v),
-      children: [X && z, D && Y && (0, l.jsx)(s.S89, {
+      label: T.intl.string(T.t.zgxg7v),
+      children: [W && tt, H && z && (0, l.jsx)(o.S89, {
         id: "mention-suggestions",
-        label: j.intl.string(j.t.cpmP4L),
-        checked: V,
+        label: T.intl.string(T.t.cpmP4L),
+        checked: Y,
         action: () => {
-          p.HV.updateSetting(!V)
+          g.HV.updateSetting(!Y)
         }
       })]
-    }), W && (0, l.jsx)(s.S89, {
+    }), q && (0, l.jsx)(o.S89, {
       id: "submit-button",
-      label: j.intl.string(j.t.G8XDyj),
-      checked: K,
+      label: T.intl.string(T.t.G8XDyj),
+      checked: X,
       action: () => {
-        (0, c.eN)()
+        (0, u.eN)()
       }
-    }), (0, l.jsx)(s.kSQ, {
-      children: H
-    }), (0, l.jsxs)(s.kSQ, {
-      children: [R, G]
-    }), (0, l.jsxs)(s.kSQ, {
-      children: [q, (0, l.jsx)(s.sNh, {
+    }), (0, l.jsx)(o.kSQ, {
+      children: K
+    }), (0, l.jsxs)(o.kSQ, {
+      children: [U, V]
+    }), (0, l.jsxs)(o.kSQ, {
+      children: [$, (0, l.jsx)(o.sNh, {
         id: "paste",
-        label: j.intl.string(j.t.lMUxVi),
-        hint: (0, f.isMac)() ? "⌘V" : "Ctrl+V",
-        action: () => setTimeout(() => h.ZP.paste(), 0)
+        label: T.intl.string(T.t.lMUxVi),
+        hint: (0, h.isMac)() ? "⌘V" : "Ctrl+V",
+        action: () => setTimeout(() => y.ZP.paste(), 0)
+      }), J && (0, l.jsx)(o.sNh, {
+        id: "paste-as-plain-text",
+        label: T.intl.string(T.t.X92Qnr),
+        hint: (0, h.isMac)() ? "⌘⇧V" : "Ctrl+Shift+V",
+        action: G
       })]
     })]
   })
