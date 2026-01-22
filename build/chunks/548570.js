@@ -37,7 +37,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk508569 = require("./508569.js"),
   Chunk183139 = require("./183139.js"),
   Chunk645436 = require("./645436.js"),
-  Chunk742151 = require("./742151.js"),
+  Chunk638214 = require("./638214.js"),
   Chunk866483 = require("./866483.js"),
   Chunk833508 = require("./833508.js"),
   Chunk981631 = require("./981631.js");
@@ -429,7 +429,7 @@ class ea extends Chunk183139.Z {
     let u = {
         token: s,
         capabilities: (0, N.t)({
-          useChannelObfuscation: (0, M.n)()
+          useChannelObfuscation: (0, M.Pp)("GatewaySocket")
         }),
         properties: l,
         presence: c,

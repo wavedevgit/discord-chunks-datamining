@@ -2,7 +2,8 @@
 /** chunk id: 638214, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k8: () => o,
+  Pp: () => o,
+  k8: () => s,
   kQ: () => i.k
 });
 var Chunk818083 = require("./818083.js"),
@@ -33,6 +34,12 @@ let a = (0, Chunk818083.B)({
 });
 
 function o(e) {
+  return a.getCurrentConfig({
+    location: e
+  }).enableObfuscation
+}
+
+function s(e) {
   return a.useExperiment({
     location: e
   }).enableObfuscation

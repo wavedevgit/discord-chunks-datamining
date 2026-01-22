@@ -199,7 +199,7 @@ let k = (e, t, n) => t.map(t => {
       return {
         type: t.type,
         custom_id: t.customId,
-        value: (null == n ? true : n.type) === t.type ? n.value : null
+        value: (null == n ? true : n.type) === t.type && n.value
       }
     }
     default:
