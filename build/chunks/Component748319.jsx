@@ -633,7 +633,7 @@ function e1(e) {
   return (0, a.jsxs)("div", {
     className: ez.Uo,
     style: S,
-    children: [(0, a.jsx)(e7, {
+    children: [(0, a.jsx)(e2, {
       accountContainerRef: y,
       selfMute: n,
       serverMute: i,
@@ -658,7 +658,7 @@ function e1(e) {
       nameplate: j,
       shouldShowOutputDeviceChangedTooltip: A,
       dismissTooltips: C
-    }), (0, a.jsx)(e2, {
+    }), (0, a.jsx)(e7, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
       onClick: b,
@@ -844,7 +844,7 @@ function e9() {
   })
 }
 
-function e2(e) {
+function e7(e) {
   let t, n, {
       webBuildOverride: i,
       isEligibleForPomelo: r,
@@ -892,7 +892,7 @@ function e2(e) {
   })
 }
 
-function e7(e) {
+function e2(e) {
   let {
     selfMute: t,
     serverMute: n,

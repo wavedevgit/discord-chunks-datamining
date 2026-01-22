@@ -332,7 +332,7 @@ function ee(e) {
   (0, o.mMO)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("43887"), n.e("77828")]).then(n.bind(n, 491390));
+    } = await Promise.all([n.e("14882"), n.e("77828")]).then(n.bind(n, 491390));
     return n => (0, r.jsx)(t, M(L({}, n), {
       questId: e.id
     }))
