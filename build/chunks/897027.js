@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 897027, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  H: () => d
+  H: () => E
 });
 var Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
@@ -14,8 +14,8 @@ var Chunk419954 = require("./419954.js"),
   Chunk334218 = require("./334218.js"),
   Chunk803119 = require("./803119.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.FW)(Chunk780964.X.NOTIFICATION_SELECTION_FIELD_SET, {
-  useTitle: () => E.intl.string(E.t.FEVRDV),
+let E = (0, Chunk419954.FW)(Chunk780964.X.NOTIFICATION_SELECTION_FIELD_SET, {
+  useTitle: () => S.intl.string(S.t.FEVRDV),
   variant: "separators",
-  buildLayout: () => [a.L, S.q, s.Z, r.E, A.N, u.M, o.q, T.q]
+  buildLayout: () => [a.L, d.q, s.Z, r.E, A.N, u.M, o.q, T.q]
 })

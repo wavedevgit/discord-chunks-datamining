@@ -16,10 +16,10 @@ var Chunk419954 = require("./419954.js"),
   Chunk31118 = require("./31118.js"),
   Chunk985018 = require("./985018.jsx");
 let _ = (0, Chunk419954.zZ)(Chunk780964.X.ACCESSIBILITY_OVERVIEW, {
-  useSubnavLabel: () => d.intl.string(d.t.fTNxW7),
+  useSubnavLabel: () => E.intl.string(E.t.fTNxW7),
   useNotice: () => ({
     type: l.W.STRONGLY_DISCOURAGED_CUSTOM,
     notice: r.YD
   }),
-  buildLayout: () => [S.V, u.E, E.k, o.j, A.G, T.b, a.w]
+  buildLayout: () => [d.V, u.E, S.k, o.j, A.G, T.b, a.w]
 })

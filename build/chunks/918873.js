@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 918873, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  W: () => E
+  W: () => S
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,13 +13,13 @@ var Chunk64700 = require("./64700.js"),
   Chunk593942 = require("./593942.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.Hn)(Chunk780964.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
-  useTitle: () => S.intl.string(S.t.wVBHr0),
+let S = (0, Chunk419954.Hn)(Chunk780964.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
+  useTitle: () => d.intl.string(d.t.wVBHr0),
   useValue: function() {
     return (0, l.bG)([u.A], () => u.A.getAudioSubsystem())
   },
   setValue: function(t) {
-    (0, T.A)(S.intl.string(S.t.uY7AcQ), S.intl.string(S.t.gBqik6), () => s.A.setAudioSubsystem(t))
+    (0, T.A)(d.intl.string(d.t.uY7AcQ), d.intl.string(d.t.gBqik6), () => s.A.setAudioSubsystem(t))
   },
   useOptions: function() {
     let {

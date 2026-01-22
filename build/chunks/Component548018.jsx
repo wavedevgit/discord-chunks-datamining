@@ -2,7 +2,7 @@
 /** chunk id: 548018, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   c: () => _,
-  f: () => d
+  f: () => E
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk545214 = require("./545214.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d() {
+function E() {
   return (0, l.bG)([a.default], () => {
     let t = a.default.getCurrentUser();
     return null != t && t.mfaEnabled
@@ -25,13 +25,13 @@ function d() {
 let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
   useSearchTerms: function() {
     let t = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled()),
-      e = [E.intl.string(E.t.m0FidJ), E.intl.string(E.t.xZEzbu)];
-    return t ? e.push(E.intl.string(E.t["D+aE7g"])) : e.push(E.intl.string(E.t.cDgKte)), e
+      e = [S.intl.string(S.t.m0FidJ), S.intl.string(S.t.xZEzbu)];
+    return t ? e.push(S.intl.string(S.t["D+aE7g"])) : e.push(S.intl.string(S.t.cDgKte)), e
   },
   usePredicate: function() {
     let t = (0, A.b)(),
-      e = (0, S.A)(),
-      i = d();
+      e = (0, d.A)(),
+      i = E();
     return !t && !e && i
   },
   Component: function() {

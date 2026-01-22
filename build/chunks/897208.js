@@ -35,7 +35,7 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       hideInstantInvites: t
     })
   }),
-  S = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_SOUNDS, {
+  d = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_SOUNDS, {
     useTitle: () => o.intl.string(o.t.OrqYDP),
     useValue: () => (0, n.bG)([u.A], () => {
       let {
@@ -47,7 +47,7 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       disableSounds: t
     })
   }),
-  E = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
+  S = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
     useTitle: () => o.intl.string(o.t.sUAbLd),
     useValue: () => (0, n.bG)([u.A], () => {
       let {
@@ -59,7 +59,7 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       disableNotifications: t
     })
   }),
-  d = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
+  E = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
     useTitle: () => o.intl.string(o.t["iA81+a"]),
     useSubtitle: () => o.intl.string(o.t.P4vj0h),
     useValue: () => (0, n.bG)([u.A], () => {
@@ -79,5 +79,5 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
   _ = (0, Chunk419954.FW)(Chunk780964.X.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => o.intl.string(o.t.UtW8R6),
     variant: "separators",
-    buildLayout: () => [T, A, S, E, d]
+    buildLayout: () => [T, A, d, S, E]
   })

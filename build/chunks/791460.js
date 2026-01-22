@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 791460, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  U: () => g
+  U: () => c
 });
 var Chunk311907 = require("./311907.js"),
   Chunk419117 = require("./419117.jsx"),
@@ -17,9 +17,9 @@ var Chunk311907 = require("./311907.js"),
   Chunk985667 = require("./985667.js"),
   Chunk580997 = require("./580997.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk419954.bd)(Chunk780964.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
+let c = (0, Chunk419954.bd)(Chunk780964.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
   useTitle: function(t) {
-    return t ? I.intl.string(I.t.KHsSWK) : I.intl.string(I.t.PPDo5V)
+    return t ? g.intl.string(g.t.KHsSWK) : g.intl.string(g.t.PPDo5V)
   },
   useCollapsedSubtitle: () => {
     var t;
@@ -28,5 +28,5 @@ let g = (0, Chunk419954.bd)(Chunk780964.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION
       limit: e ? 3 : 2
     })
   },
-  buildLayout: () => [a.C, S.$, T.l, _.A, A.Q, o.e, E.W, d.i]
+  buildLayout: () => [a.C, d.$, T.l, _.A, A.Q, o.e, S.W, E.i]
 })

@@ -16,8 +16,8 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk536482 = require("./536482.js");
 let _ = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
-  useTitle: () => E.intl.string(d.default.WhdCGP),
-  useSubtitle: () => E.intl.string(d.default.UQ9RHJ),
+  useTitle: () => S.intl.string(E.default.WhdCGP),
+  useSubtitle: () => S.intl.string(E.default.UQ9RHJ),
   useValue: () => {
     let t = (0, o.Tx)();
     return !r.JG.useSetting().includes(t)
@@ -25,7 +25,7 @@ let _ = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVIT
   setValue: t => {
     let e = a.xk.getState().selectedGuildId,
       i = (0, s.Kk)();
-    t ? i.delete(e) : i.add(e), r.JG.updateSetting([...i]), l.default.track(S.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    t ? i.delete(e) : i.add(e), r.JG.updateSetting([...i]), l.default.track(d.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: T.m.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: A.bf.USER_SETTINGS_PRIVACY_SAFETY,
       guild_id: e

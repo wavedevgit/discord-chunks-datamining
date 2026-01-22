@@ -1,7 +1,7 @@
 /** Chunk was on 95153 **/
 /** chunk id: 264124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,11 +11,11 @@ var Chunk311907 = require("./311907.js"),
   Chunk351906 = require("./351906.js"),
   Chunk985018 = require("./985018.jsx");
 
-function c() {
-  let e = (0, l.bG)([s.A], () => s.A.enabled, []);
-  return (0, i.jsx)(r.sLh, {
+function s() {
+  let e = (0, i.bG)([o.A], () => o.A.enabled, []);
+  return (0, r.jsx)(l.sLh, {
     id: "streamer-mode-toggle",
-    label: o.intl.string(o.t.p9ZAJZ),
+    label: c.intl.string(c.t.p9ZAJZ),
     action: () => {
       a.A.setEnabled(!e)
     },

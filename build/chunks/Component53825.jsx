@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 53825, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  N: () => c
+  N: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,12 +18,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk280973 = require("./280973.js");
-let c = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_SCREENSHOT_KEYBIND, {
-  useSearchTerms: () => [I.intl.string(I.t["0U/hj7"]), I.intl.string(I.t["5zxkdo"])],
+let I = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_SCREENSHOT_KEYBIND, {
+  useSearchTerms: () => [g.intl.string(g.t["0U/hj7"]), g.intl.string(g.t["5zxkdo"])],
   usePredicate: Chunk734066.BW,
   Component: () => {
-    let t = (0, u.bG)([E.Ay], () => E.Ay.getKeybindForAction(_.hCu.SAVE_CLIP, true)),
-      e = (0, u.bG)([E.Ay], () => E.Ay.getKeybindForAction(_.hCu.SAVE_SCREENSHOT, true));
+    let t = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(_.hCu.SAVE_CLIP, true)),
+      e = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(_.hCu.SAVE_SCREENSHOT, true));
     r()(null != t, "Save clip keybind unset"), r()(null != e, "Save screenshot keybind unset");
     let i = l.useCallback(t => {
       var i, n;
@@ -58,11 +58,11 @@ let c = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_SCREENSHOT_KEYBIND, {
       }), i))
     }, [e]);
     return (0, n.jsx)(a.D0$, {
-      label: I.intl.string(I.t["0U/hj7"]),
-      description: I.intl.string(I.t["5zxkdo"]),
+      label: g.intl.string(g.t["0U/hj7"]),
+      description: g.intl.string(g.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, n.jsx)("div", {
-        className: g.g,
+        className: c.g,
         children: (0, n.jsx)(T.A, {
           defaultValue: e.shortcut,
           onChange: i

@@ -14,19 +14,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
-let d = "".concat(Chunk975571.A.getArticleURL(Chunk652215.MVz.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm"),
+let E = "".concat(Chunk975571.A.getArticleURL(Chunk652215.MVz.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm"),
   _ = (0, Chunk419954.E2)(Chunk780964.X.VOICE_MICROPHONE_TEST_SETTING, {
-    useSearchTerms: () => [E.intl.string(E.t.nuFtHH)],
+    useSearchTerms: () => [S.intl.string(S.t.nuFtHH)],
     usePredicate: function() {
-      return (0, l.bG)([u.A], () => u.A.supports(S.O5.LOOPBACK))
+      return (0, l.bG)([u.A], () => u.A.supports(d.O5.LOOPBACK))
     },
     Component: function() {
       return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(T.A, {}), (0, n.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: E.intl.format(E.t["V+B3FH"], {
-            guideURL: d
+          children: S.intl.format(S.t["V+B3FH"], {
+            guideURL: E
           })
         })]
       })

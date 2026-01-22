@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 945928, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Q: () => b
+  Q: () => R
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -23,12 +23,12 @@ var Chunk64700 = require("./64700.js"),
   Chunk903427 = require("./903427.js"),
   Chunk509381 = require("./509381.js"),
   Chunk985018 = require("./985018.jsx");
-let R = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
+let b = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
     useTitle: () => L.intl.string(L.t.LM3U3k),
     usePredicate: function() {
       let {
         enabledInputProfiles: t
-      } = (0, S._)({
+      } = (0, d._)({
         location: "SettingsRendererConfig"
       });
       return t.length > 0
@@ -49,7 +49,7 @@ let R = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
     useOptions: function() {
       let {
         enabledInputProfiles: t
-      } = (0, S.d)({
+      } = (0, d.d)({
         location: "InputProfileCategory"
       });
       return [{
@@ -72,7 +72,7 @@ let R = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
       })
     }
   }),
-  b = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_INPUT_PROFILE_CATEGORY, {
+  R = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_INPUT_PROFILE_CATEGORY, {
     useNotice: function() {
       let t = (0, l.bG)([o.A, T.A], () => {
         let t = T.A.getInputDeviceId();
@@ -86,5 +86,5 @@ let R = (0, Chunk419954.Qx)(Chunk780964.X.VOICE_INPUT_PROFILE_SETTING, {
         }
       }, [t])
     },
-    buildLayout: () => [R, _.O, I.w, d.h, O.K, g.C, N.m, c.A, E.U]
+    buildLayout: () => [b, _.O, g.w, E.h, N.K, c.C, O.m, I.A, S.U]
   })

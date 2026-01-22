@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 744344, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  r: () => S
+  r: () => d
 }), require("./228524.js");
 var Chunk311907 = require("./311907.js"),
   Chunk684013 = require("./684013.js"),
@@ -23,7 +23,7 @@ function A(t) {
     usePredicate: t.usePredicate
   })
 }
-let S = (0, Chunk419954.FW)(Chunk780964.X.OVERLAY_NOTIFICATIONS_LIST, {
+let d = (0, Chunk419954.FW)(Chunk780964.X.OVERLAY_NOTIFICATIONS_LIST, {
   variant: "separators",
   buildLayout: () => T.map(A)
 })

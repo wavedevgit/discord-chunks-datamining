@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 929548, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  L: () => c
+  L: () => I
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,31 +16,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk991793 = require("./991793.jsx"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
-let I = (0, Chunk839214.D)(() => ({
+let g = (0, Chunk839214.D)(() => ({
   isUploading: false,
   isDisabled: false
 }));
-async function g() {
-  await (0, E.q5)({
-    onUploadStart: () => I.setState({
+async function c() {
+  await (0, S.q5)({
+    onUploadStart: () => g.setState({
       isUploading: true
     }),
-    onUploadFinish: () => I.setState({
+    onUploadFinish: () => g.setState({
       isUploading: false,
       isDisabled: true
     })
   })
 }
-let c = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let I = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
   useSearchTerms: () => [_.intl.string(_.t["726JHL"]), _.intl.string(_.t.EbwFfR), _.intl.string(_.t.nuPtYi)],
   usePredicate: function() {
-    let t = (0, u.bG)([A.A], () => A.A.supports(d.O5.DEBUG_LOGGING));
+    let t = (0, u.bG)([A.A], () => A.A.supports(E.O5.DEBUG_LOGGING));
     return s.Av && t && null != a.A.fileManager.readLogFiles
   },
   Component: function() {
     let t = (0, u.bG)([A.A], () => A.A.getDebugLogging()),
-      e = I.useField("isUploading"),
-      i = I.useField("isDisabled"),
+      e = g.useField("isUploading"),
+      i = g.useField("isDisabled"),
       s = l.useId();
     return (0, n.jsxs)("fieldset", {
       children: [(0, n.jsx)(r.AC4, {
@@ -54,7 +54,7 @@ let c = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
           label: _.intl.string(_.t["726JHL"]),
           description: _.intl.string(_.t["/7ak9Q"]),
           checked: t,
-          onChange: E.p9
+          onChange: S.p9
         }), (0, n.jsx)("div", {
           role: "group",
           "aria-labelledby": s,
@@ -62,14 +62,14 @@ let c = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
             children: [(0, n.jsx)(r.$nd, {
               variant: "secondary",
               text: _.intl.string(_.t.EbwFfR),
-              onClick: g,
+              onClick: c,
               loading: e,
               disabled: i,
               "aria-label": _.intl.string(_.t.aY1OH2)
             }), (0, n.jsx)(r.$nd, {
               variant: "secondary",
               text: _.intl.string(_.t.nuPtYi),
-              onClick: E.G0,
+              onClick: S.G0,
               "aria-label": _.intl.string(_.t["L/hFOe"])
             })]
           })

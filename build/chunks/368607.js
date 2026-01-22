@@ -19,17 +19,17 @@ let A = {
     useDisabled: Chunk970931.kB,
     useDisabledMessage: () => (0, s.kB)() ? T.intl.string(T.t.cIRG0s) : true
   },
-  S = {
+  d = {
     useTitle: () => T.intl.string(T.t.XBrJT6),
     sound: "call_ringing"
   },
-  E = (0, Chunk419954.zD)(Chunk780964.X.SELECTED_CHANNEL_NOTIFICATIONS, {
+  S = (0, Chunk419954.zD)(Chunk780964.X.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => T.intl.string(T.t.TzjwV9),
     useValue: () => (0, n.bG)([u.A], () => u.A.getNotifyMessagesInSelectedChannel() && !u.A.getDisableAllSounds()),
     setValue: t => l.default.setNotifyMessagesInSelectedChannel(t),
     useDisabled: () => (0, n.bG)([u.A], () => u.A.getDisableAllSounds())
   }),
-  d = (0, Chunk419954.zD)(Chunk780964.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  E = (0, Chunk419954.zD)(Chunk780964.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => T.intl.string(T.t["2ZhCOd"]),
     useSubtitle: () => T.intl.string(T.t.EAKdPr),
     useValue: () => (0, n.bG)([u.A], () => u.A.getDisableAllSounds()),
@@ -43,5 +43,5 @@ let A = {
         (0, o.vd)()
       }
     },
-    buildLayout: () => [(0, o.i)(A), E, (0, o.i)(S), d]
+    buildLayout: () => [(0, o.i)(A), S, (0, o.i)(d), E]
   })

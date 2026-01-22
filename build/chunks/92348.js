@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 92348, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  w: () => E
+  w: () => S
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -17,14 +17,14 @@ let A = (0, Chunk419954.t_)(Chunk780964.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk224515.A,
     buildLayout: () => []
   }),
-  S = (0, Chunk419954.t_)(Chunk780964.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+  d = (0, Chunk419954.t_)(Chunk780964.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
     usePredicate: () => (0, r.dk)("PremiumGuildSubscriptionsPanel"),
     useTitle: () => T.intl.string(T.t["+CbP2v"]),
     buildLayout: () => [a.t]
   }),
-  E = (0, Chunk419954.i4)(Chunk780964.X.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
+  S = (0, Chunk419954.i4)(Chunk780964.X.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t["+CbP2v"]),
     getLegacySearchKey: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? true : o.H.GUILD_BOOSTING,
     icon: Chunk934551.BoostGemIcon,
-    buildLayout: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? [S] : [A]
+    buildLayout: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? [d] : [A]
   })

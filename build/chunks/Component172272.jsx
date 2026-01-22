@@ -2,8 +2,9 @@
 /** chunk id: 172272, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => d,
-  O: () => u
+  C1: () => d,
+  Or: () => u,
+  YR: () => c
 });
 var Chunk627968 = require("./627968.js"),
   Chunk353640 = require("./353640.js"),
@@ -15,8 +16,6 @@ let l = 4,
   u = (0, Chunk353640.v)(e => ({
     horizontalSpacing: l,
     verticalSpacing: l,
-    maxHorizontalSpacing: c,
-    maxVerticalSpacing: c,
     setHorizontalSpacing: t => {
       e({
         horizontalSpacing: Math.round(Math.min(Math.max(t, 0), c))

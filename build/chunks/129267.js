@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 129267, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  X: () => S
+  X: () => d
 });
 var Chunk419117 = require("./419117.jsx"),
   Chunk419954 = require("./419954.js"),
@@ -26,7 +26,7 @@ let T = Chunk780964.X.NOTIFICATIONS_ADVANCED_ACCORDION,
     },
     buildLayout: () => [r.z, u.m, a.j]
   }),
-  S = (0, Chunk419954.zZ)(Chunk780964.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
+  d = (0, Chunk419954.zZ)(Chunk780964.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
     useTitle: () => o.intl.string(o.t["31DySj"]),
     buildLayout: () => [A]
   })

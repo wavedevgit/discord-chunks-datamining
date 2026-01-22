@@ -52,11 +52,11 @@ function f(e, t) {
     },
     rejectWithError: false
   }).then(e => {
-    var t;
-    a.h.dispatch({
+    var t, n;
+    return a.h.dispatch({
       type: "SURVEY_FETCHED",
       survey: null == e || null == (t = e.body) ? true : t.survey
-    })
+    }), null == e || null == (n = e.body) ? true : n.survey
   }, () => {
     a.h.dispatch({
       type: "SURVEY_FETCHED",

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 830842, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  _: () => E
+  _: () => S
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -17,14 +17,14 @@ let A = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk69435.Ay,
     buildLayout: () => []
   }),
-  S = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
+  d = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
     useTitle: () => T.intl.string(T.t["8/udY0"]),
     usePredicate: () => (0, r.dk)("AdvancedPanel"),
     buildLayout: () => [a.J]
   }),
-  E = (0, Chunk419954.i4)(Chunk780964.X.ADVANCED_SIDEBAR_ITEM, {
+  S = (0, Chunk419954.i4)(Chunk780964.X.ADVANCED_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t["8/udY0"]),
     getLegacySearchKey: () => (0, r.WJ)("AdvancedPanel") ? true : o.H.SETTINGS_ADVANCED,
     icon: Chunk934551.MoreHorizontalIcon,
-    buildLayout: () => (0, r.WJ)("AdvancedPanel") ? [S] : [A]
+    buildLayout: () => (0, r.WJ)("AdvancedPanel") ? [d] : [A]
   })

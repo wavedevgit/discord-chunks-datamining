@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 784959, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => d
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -23,7 +23,7 @@ let o = (0, Chunk419954.zZ)(Chunk780964.X.EXPERIMENTS_CATEGORY, {
     useTitle: () => "Experiments",
     buildLayout: () => [o]
   }),
-  S = (0, Chunk419954.i4)(Chunk780964.X.EXPERIMENTS_SIDEBAR_ITEM, {
+  d = (0, Chunk419954.i4)(Chunk780964.X.EXPERIMENTS_SIDEBAR_ITEM, {
     useTitle: () => "Experiments",
     icon: Chunk934551.BeakerIcon,
     buildLayout: () => (0, r.WJ)("ExperimentsPanel") ? [A] : [T]

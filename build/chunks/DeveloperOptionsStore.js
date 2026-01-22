@@ -80,7 +80,6 @@ let m = (() => {
     axeEnabled: false,
     cssDebuggingEnabled: false,
     layoutDebuggingEnabled: false,
-    analyticsDebuggerEnabled: false,
     bugReporterEnabled: true,
     idleStatusIndicatorEnabled: false,
     onlyShowPreviewAppCollections: false,
@@ -149,9 +148,6 @@ class S extends(r = Chunk311907.Ay.Store) {
   }
   get sourceMapsEnabled() {
     return b.sourceMapsEnabled
-  }
-  get isAnalyticsDebuggerEnabled() {
-    return b.analyticsDebuggerEnabled
   }
   get isBugReporterEnabled() {
     return b.bugReporterEnabled

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 211639, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  TC: () => O
+  TC: () => N
 });
 var Chunk934551 = require("./934551.js"),
   Chunk824552 = require("./824552.js"),
@@ -16,31 +16,31 @@ var Chunk934551 = require("./934551.js"),
   Chunk570874 = require("./570874.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let I = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
+let g = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
     useTitle: () => _.intl.string(_.t["+o1pDZ"]),
     StronglyDiscouragedCustomComponent: Chunk130066.A,
     usePredicate: () => !(0, u.dk)("ContentAndSocialPanel"),
     buildLayout: () => []
   }),
-  g = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_MAIN_TAB, {
+  c = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_MAIN_TAB, {
     getTitle: () => _.intl.string(_.t["/7xJCF"]),
-    buildLayout: () => [T.e, E.q, A.N, S.Y]
+    buildLayout: () => [T.e, S.q, A.N, d.Y]
   }),
-  c = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
+  I = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
     initialize: () => {
       l.A.fetch()
     },
     getTitle: () => _.intl.string(_.t.YpCiMt),
     buildLayout: () => [o.j]
   }),
-  N = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
+  O = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
     useTitle: () => _.intl.string(_.t["+o1pDZ"]),
     usePredicate: () => (0, u.dk)("ContentAndSocialPanel"),
-    buildLayout: () => [g, c]
+    buildLayout: () => [c, I]
   }),
-  O = (0, Chunk419954.i4)(Chunk780964.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
+  N = (0, Chunk419954.i4)(Chunk780964.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["+o1pDZ"]),
-    getLegacySearchKey: () => (0, u.WJ)("ContentAndSocialPanel") ? true : d.H.CONTENT_SOCIAL,
+    getLegacySearchKey: () => (0, u.WJ)("ContentAndSocialPanel") ? true : E.H.CONTENT_SOCIAL,
     icon: Chunk934551.ShieldUserIcon,
-    buildLayout: () => (0, u.WJ)("ContentAndSocialPanel") ? [N] : [I]
+    buildLayout: () => (0, u.WJ)("ContentAndSocialPanel") ? [O] : [g]
   })

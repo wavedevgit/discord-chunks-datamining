@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 338145, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  w: () => O
+  w: () => N
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,69 +20,69 @@ var Chunk627968 = require("./627968.js"),
 let Chunk993830 = require("./993830.js"),
   Chunk413142 = require("./413142.js");
 
-function N() {
-  let t = (0, r.bG)([S.A], () => (0, s.qB1)(S.A.theme));
+function O() {
+  let t = (0, r.bG)([d.A], () => (0, s.qB1)(d.A.theme));
   return (0, n.jsx)("img", {
-    src: t ? g : c,
+    src: t ? c : I,
     width: 48,
     height: 32,
     alt: ""
   })
 }
-let O = (0, Chunk419954.E2)(Chunk780964.X.VOICE_NOISE_SUPPRESSION_SETTING, {
-  useSearchTerms: () => [I.intl.string(I.t.t8Qhib), I.intl.string(I.t.hmfkCi)],
+let N = (0, Chunk419954.E2)(Chunk780964.X.VOICE_NOISE_SUPPRESSION_SETTING, {
+  useSearchTerms: () => [g.intl.string(g.t.t8Qhib), g.intl.string(g.t.hmfkCi)],
   usePredicate: function() {
     return (0, r.bG)([T.A], () => T.A.isInputProfileCustom() && T.A.isNoiseSuppressionSupported())
   },
   Component: function() {
     let t = l.useCallback(t => {
-        a.A.setNoiseCancellation(t === d.ls.KRISP, d.Us), a.A.setNoiseSuppression(t === d.ls.STANDARD, d.Us)
+        a.A.setNoiseCancellation(t === E.ls.KRISP, E.Us), a.A.setNoiseSuppression(t === E.ls.STANDARD, E.Us)
       }, []),
       {
         noiseCancellation: e,
         noiseSuppression: i,
         isNoiseSuppressionSupported: o,
-        isNoiseCancellationSupported: S
+        isNoiseCancellationSupported: d
       } = (0, r.cf)([T.A], () => ({
         noiseCancellation: T.A.getNoiseCancellation(),
         noiseSuppression: T.A.getNoiseSuppression(),
         isNoiseSuppressionSupported: T.A.isNoiseSuppressionSupported(),
         isNoiseCancellationSupported: T.A.isNoiseCancellationSupported()
       })),
-      E = i ? d.ls.STANDARD : d.ls.NONE,
-      g = e ? d.ls.KRISP : E,
-      c = l.useMemo(() => {
+      S = i ? E.ls.STANDARD : E.ls.NONE,
+      c = e ? E.ls.KRISP : S,
+      I = l.useMemo(() => {
         let t = [];
-        return S && t.push({
+        return d && t.push({
           id: "krisp",
-          label: I.intl.string(I.t.rdoNzt),
-          value: d.ls.KRISP
+          label: g.intl.string(g.t.rdoNzt),
+          value: E.ls.KRISP
         }), o && t.push({
           id: "standard",
-          label: I.intl.string(I.t.qXeYHw),
-          value: d.ls.STANDARD
+          label: g.intl.string(g.t.qXeYHw),
+          value: E.ls.STANDARD
         }), t.push({
           id: "disabled",
-          label: I.intl.string(I.t.wkYAlz),
-          value: d.ls.NONE
+          label: g.intl.string(g.t.wkYAlz),
+          value: E.ls.NONE
         }), t
-      }, [S, o]),
-      O = S ? I.intl.format(I.t["1q5aTp"], {
+      }, [d, o]),
+      N = d ? g.intl.format(g.t["1q5aTp"], {
         helpArticle: A.A.getArticleURL(_.MVz.NOISE_SUPPRESSION)
-      }) : I.intl.string(I.t.OWKjw5);
+      }) : g.intl.string(g.t.OWKjw5);
     return (0, n.jsxs)(s.BJc, {
       direction: "vertical",
       gap: 0,
       children: [(0, n.jsx)(u.l6P, {
-        label: I.intl.string(I.t.t8Qhib),
-        description: O,
+        label: g.intl.string(g.t.t8Qhib),
+        description: N,
         layout: "horizontal",
-        value: g,
+        value: c,
         onSelectionChange: t,
-        options: c,
+        options: I,
         selectionMode: "single",
         fullWidth: true
-      }), S && (0, n.jsx)(N, {})]
+      }), d && (0, n.jsx)(O, {})]
     })
   }
 })

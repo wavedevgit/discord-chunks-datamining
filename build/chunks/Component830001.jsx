@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 830001, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  f: () => G
+  f: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk934551 = require("./934551.js"),
@@ -28,41 +28,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk722125 = require("./722125.js");
 let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
-    usePredicate: () => !(0, O.dk)("LegacyProfilePanel"),
+    usePredicate: () => !(0, N.dk)("LegacyProfilePanel"),
     useTitle: () => D.intl.string(D.t["vi7f+q"]),
     notice: {
       stores: [Chunk833336.A, Chunk752319.A],
       element: Chunk103738.A
     },
     initialize: () => () => u.h.wait(() => {
-      (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(b.nc_.PROFILE_CUSTOMIZATION)
+      (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(R.nc_.PROFILE_CUSTOMIZATION)
     }),
     StronglyDiscouragedCustomComponent: Chunk745109.A,
     buildLayout: () => []
   }),
   m = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
-    usePredicate: () => (0, O.dk)("ProfilePanel"),
+    usePredicate: () => (0, N.dk)("ProfilePanel"),
     useTitle: () => D.intl.string(D.t["vi7f+q"]),
     notice: {
       stores: [Chunk833336.A, Chunk752319.A],
       element: Chunk103738.A
     },
     initialize: () => () => u.h.wait(() => {
-      (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(b.nc_.PROFILE_CUSTOMIZATION)
+      (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(R.nc_.PROFILE_CUSTOMIZATION)
     }),
     buildLayout: () => [L.I]
   }),
-  G = (0, Chunk419954.i4)(Chunk780964.X.PROFILE_SIDEBAR_ITEM, {
+  v = (0, Chunk419954.i4)(Chunk780964.X.PROFILE_SIDEBAR_ITEM, {
     useTitle: () => D.intl.string(D.t["vi7f+q"]),
-    getLegacySearchKey: () => (0, O.WJ)("ProfilePanel") ? true : R.H.PROFILE_CUSTOMIZATION,
+    getLegacySearchKey: () => (0, N.WJ)("ProfilePanel") ? true : b.H.PROFILE_CUSTOMIZATION,
     icon: Chunk934551.UserIcon,
     stronglyDiscouragedCustomComponent: () => {
       var t;
-      let e = (0, s.bG)([c.default], () => c.default.getCurrentUser()),
+      let e = (0, s.bG)([I.default], () => I.default.getCurrentUser()),
         {
           avatarSrc: i,
           avatarDecorationSrc: u
-        } = (0, I.A)({
+        } = (0, g.A)({
           userId: null == e ? true : e.id,
           size: r._3J.SIZE_48
         });
@@ -99,5 +99,5 @@ let p = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: Chunk368631.Jn
     },
-    buildLayout: () => (0, O.WJ)("ProfilePanel") ? [m] : [p]
+    buildLayout: () => (0, N.WJ)("ProfilePanel") ? [m] : [p]
   })

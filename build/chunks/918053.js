@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 918053, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  $: () => E
+  $: () => S
 });
 var Chunk391973 = require("./391973.js"),
   Chunk395011 = require("./395011.js"),
@@ -14,13 +14,13 @@ var Chunk391973 = require("./391973.js"),
 require("./392164.js");
 var Chunk985018 = require("./985018.jsx");
 
-function S() {
+function d() {
   let t = l.A.getWidgetByType(T.uss.VOICE_V3);
   if (null == t) return null;
   let e = u.A.getWidget(t.id);
   return null != e && (0, s.ZO)(e) ? e : null
 }
-let E = (0, Chunk419954.sN)(Chunk780964.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
+let S = (0, Chunk419954.sN)(Chunk780964.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
   fieldLayout: "horizontal",
   useTitle: () => A.intl.string(A.t["X/Uyzc"]),
   minValue: Chunk790076.G6 - 1,
@@ -29,14 +29,14 @@ let E = (0, Chunk419954.sN)(Chunk780964.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
   onMarkerRender: t => t < o.G6 ? A.intl.string(A.t.nrUzFL) : t,
   getInitialValue: () => {
     var t;
-    let e = S();
+    let e = d();
     return null != (t = null == e ? true : e.meta.voiceStatesMaxShown) ? t : 8
   },
   onValueRender: function(t) {
     return t < o.G6 ? A.intl.string(A.t.nrUzFL) : "".concat(Math.floor(t))
   },
   setValue: t => {
-    let e = S();
+    let e = d();
     null != e && (t < o.G6 ? (0, n.cC)(e.id, {
       voiceStatesMaxShown: false
     }) : (0, n.cC)(e.id, {

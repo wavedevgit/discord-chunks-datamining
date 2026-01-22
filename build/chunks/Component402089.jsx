@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 402089, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  s: () => S
+  s: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -28,6 +28,6 @@ let A = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_REMOVAL_SETTING, {
       })
     }
   }),
-  S = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_REMOVAL_CATEGORY, {
+  d = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_REMOVAL_CATEGORY, {
     buildLayout: () => [A]
   })

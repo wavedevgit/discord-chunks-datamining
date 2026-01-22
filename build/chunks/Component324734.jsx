@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 324734, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => S
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,9 +14,9 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk912615 = require("./912615.jsx"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.zD)(Chunk780964.X.ADVANCED_APPLICATION_TEST_MODE, {
-  useTitle: () => S.intl.string(S.t.erOqlh),
-  useSubtitle: () => S.intl.string(S.t["52hMnD"]),
+let S = (0, Chunk419954.zD)(Chunk780964.X.ADVANCED_APPLICATION_TEST_MODE, {
+  useTitle: () => d.intl.string(d.t.erOqlh),
+  useSubtitle: () => d.intl.string(d.t["52hMnD"]),
   usePredicate: Chunk253932.Q_.useSetting,
   useValue: () => (0, l.bG)([a.A], () => null != a.A.testModeApplicationId),
   setValue: t => {

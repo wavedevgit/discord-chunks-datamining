@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 773140, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  q: () => O
+  q: () => N
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -18,19 +18,19 @@ var Chunk934551 = require("./934551.js"),
   Chunk475061 = require("./475061.jsx"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let c = (0, Chunk419954.t_)(Chunk780964.X.VOICE_AND_VIDEO_PANEL, {
-    useTitle: () => g.intl.string(g.t.B1fFpf),
+let I = (0, Chunk419954.t_)(Chunk780964.X.VOICE_AND_VIDEO_PANEL, {
+    useTitle: () => c.intl.string(c.t.B1fFpf),
     StronglyDiscouragedCustomComponent: Chunk71995.A,
     buildLayout: () => []
   }),
-  N = (0, Chunk419954.t_)(Chunk780964.X.VOICE_AND_VIDEO_PANEL, {
-    useTitle: () => g.intl.string(g.t.B1fFpf),
-    buildLayout: () => [_.p, A.Q, o.i, d.H, E.t, S.U, T.r]
+  O = (0, Chunk419954.t_)(Chunk780964.X.VOICE_AND_VIDEO_PANEL, {
+    useTitle: () => c.intl.string(c.t.B1fFpf),
+    buildLayout: () => [_.p, A.Q, o.i, E.H, S.t, d.U, T.r]
   }),
-  O = (0, Chunk419954.i4)(Chunk780964.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
-    useTitle: () => g.intl.string(g.t.B1fFpf),
+  N = (0, Chunk419954.i4)(Chunk780964.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
+    useTitle: () => c.intl.string(c.t.B1fFpf),
     usePredicate: () => s.A.isSupported(),
     icon: Chunk934551.MicrophoneIcon,
-    getLegacySearchKey: () => (0, u.qz)("VoiceAndVideoPanel") ? true : I.H.VOICE_AND_VIDEO,
-    buildLayout: () => [(0, u.qz)("VoiceAndVideoPanel") ? N : c]
+    getLegacySearchKey: () => (0, u.qz)("VoiceAndVideoPanel") ? true : g.H.VOICE_AND_VIDEO,
+    buildLayout: () => [(0, u.qz)("VoiceAndVideoPanel") ? O : I]
   })

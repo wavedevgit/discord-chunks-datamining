@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 662826, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  g: () => E
+  g: () => S
 });
 var Chunk311907 = require("./311907.js"),
   Chunk274372 = require("./274372.js"),
@@ -13,9 +13,9 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk358776 = require("./358776.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
-  useTitle: () => S.intl.string(S.t.NWw7kY),
-  useSubtitle: () => S.intl.string(S.t["0vjy8N"]),
+let S = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
+  useTitle: () => d.intl.string(d.t.NWw7kY),
+  useSubtitle: () => d.intl.string(d.t["0vjy8N"]),
   useValue: function() {
     return (0, n.bG)([l.A], () => l.A.getSettings().viewerClipsEnabled)
   },

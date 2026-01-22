@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 814870, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  u: () => g
+  u: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,13 +17,13 @@ var Chunk934551 = require("./934551.js"),
   Chunk410166 = require("./410166.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk895431 = require("./895431.js");
-let I = (0, Chunk419954.t_)(Chunk780964.X.PRIVATE_BROWSING_PANEL, {
-    useTitle: () => d.intl.string(_.default.UAA4V5),
+let g = (0, Chunk419954.t_)(Chunk780964.X.PRIVATE_BROWSING_PANEL, {
+    useTitle: () => E.intl.string(_.default.UAA4V5),
     useBadge: () => (0, n.jsx)(s.A, {}),
-    buildLayout: () => [E.r]
+    buildLayout: () => [S.r]
   }),
-  g = (0, Chunk419954.i4)(Chunk780964.X.PRIVATE_BROWSING_SIDEBAR_ITEM, {
-    useTitle: () => d.intl.string(_.default.UAA4V5),
+  c = (0, Chunk419954.i4)(Chunk780964.X.PRIVATE_BROWSING_SIDEBAR_ITEM, {
+    useTitle: () => E.intl.string(_.default.UAA4V5),
     icon: Chunk934551.GlobeEarthIcon,
     usePredicate: () => {
       let t = (0, r.L)(),
@@ -34,7 +34,7 @@ let I = (0, Chunk419954.t_)(Chunk780964.X.PRIVATE_BROWSING_PANEL, {
         } = (0, a.lV)();
       return (0, u.lM)("private_browsing_perk_settings_page") && (e || i) && (!t || n)
     },
-    buildLayout: () => [I],
+    buildLayout: () => [g],
     trailing: {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: Chunk368631.Tq

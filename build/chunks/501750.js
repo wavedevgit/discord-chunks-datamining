@@ -13,24 +13,24 @@ var Chunk934551 = require("./934551.js"),
   Chunk485079 = require("./485079.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.t_)(Chunk780964.X.NITRO_PANEL, {
+let S = (0, Chunk419954.t_)(Chunk780964.X.NITRO_PANEL, {
     usePredicate: () => !(0, u.dk)("LegacyNitroPanel"),
-    useTitle: () => S.intl.string(S.t.Ipxkog),
+    useTitle: () => d.intl.string(d.t.Ipxkog),
     StronglyDiscouragedCustomComponent: Chunk517235.A,
     buildLayout: () => []
   }),
-  d = (0, Chunk419954.t_)(Chunk780964.X.NITRO_PANEL, {
+  E = (0, Chunk419954.t_)(Chunk780964.X.NITRO_PANEL, {
     usePredicate: () => (0, u.dk)("NitroPanel"),
-    useTitle: () => S.intl.string(S.t.Ipxkog),
+    useTitle: () => d.intl.string(d.t.Ipxkog),
     buildLayout: () => [T.r]
   }),
   _ = (0, Chunk419954.i4)(Chunk780964.X.NITRO_SIDEBAR_ITEM, {
-    useTitle: () => S.intl.string(S.t.Ipxkog),
+    useTitle: () => d.intl.string(d.t.Ipxkog),
     getLegacySearchKey: () => (0, u.WJ)("NitroPanel") ? true : A.H.PREMIUM,
     icon: Chunk934551.NitroWheelIcon,
     trailing: {
       type: Chunk933297.S.STRONGLY_DISCOURAGED_CUSTOM,
       useCustomDecoration: (t, e) => (0, o.e)(e)
     },
-    buildLayout: () => (0, u.WJ)("NitroPanel") ? [d] : [E]
+    buildLayout: () => (0, u.WJ)("NitroPanel") ? [E] : [S]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 863671, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  $: () => N
+  $: () => O
 });
 var Chunk64700 = require("./64700.js"),
   Chunk934551 = require("./934551.js"),
@@ -16,8 +16,8 @@ var Chunk64700 = require("./64700.js"),
   Chunk766761 = require("./766761.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let I = (0, Chunk419954.zZ)(Chunk780964.X.SESSIONS_CATEGORY, {
-    buildLayout: () => [S.I, E.A],
+let g = (0, Chunk419954.zZ)(Chunk780964.X.SESSIONS_CATEGORY, {
+    buildLayout: () => [d.I, S.A],
     initialize: () => ((0, r.GY)(), () => {
       (0, r.ZQ)()
     }),
@@ -28,26 +28,26 @@ let I = (0, Chunk419954.zZ)(Chunk780964.X.SESSIONS_CATEGORY, {
       }), [])
     }
   }),
-  g = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
+  c = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
     usePredicate: () => !(0, T.dk)("LegacySessionsPanel"),
     useTitle: () => _.intl.string(_.t["+1h0k/"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk119762.Ay,
     buildLayout: () => []
   }),
-  c = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
+  I = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
     usePredicate: () => (0, T.dk)("SessionsPanel"),
     useTitle: () => _.intl.string(_.t["+1h0k/"]),
     hideInStreamerMode: true,
-    buildLayout: () => [I]
+    buildLayout: () => [g]
   }),
-  N = (0, Chunk419954.i4)(Chunk780964.X.SESSIONS_SIDEBAR_ITEM, {
+  O = (0, Chunk419954.i4)(Chunk780964.X.SESSIONS_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["+1h0k/"]),
-    getLegacySearchKey: () => (0, T.WJ)("SessionsPanel") ? true : d.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
+    getLegacySearchKey: () => (0, T.WJ)("SessionsPanel") ? true : E.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     icon: Chunk934551.LaptopPhoneIcon,
     trailing: {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: () => [s.M.AUTH_SESSIONS_NEW]
     },
-    buildLayout: () => (0, T.WJ)("SessionsPanel") ? [c] : [g]
+    buildLayout: () => (0, T.WJ)("SessionsPanel") ? [I] : [c]
   })

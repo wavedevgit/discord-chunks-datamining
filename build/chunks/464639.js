@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 464639, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  e: () => E
+  e: () => S
 });
 var Chunk311907 = require("./311907.js"),
   Chunk827343 = require("./827343.js"),
@@ -22,14 +22,14 @@ let T = (0, Chunk419954.sN)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useValue: () => (0, n.bG)([r.A], () => r.A.getAttenuateWhileSpeakingSelf()),
     setValue: t => l.A.setAttenuation(r.A.getAttenuation(), t, r.A.getAttenuateWhileSpeakingOthers())
   }),
-  S = (0, Chunk419954.zD)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
+  d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
     useTitle: () => o.intl.string(o.t.SMt0Gr),
     useValue: () => (0, n.bG)([r.A], () => r.A.getAttenuateWhileSpeakingOthers()),
     setValue: t => l.A.setAttenuation(r.A.getAttenuation(), r.A.getAttenuateWhileSpeakingSelf(), t)
   }),
-  E = (0, Chunk419954.FW)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
+  S = (0, Chunk419954.FW)(Chunk780964.X.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
     useTitle: () => o.intl.string(o.t.oSdBvW),
     useSubtitle: () => o.intl.string(o.t["0A/8Rt"]),
     usePredicate: () => (0, n.bG)([r.A], () => r.A.supports(a.O5.ATTENUATION)),
-    buildLayout: () => [T, A, S]
+    buildLayout: () => [T, A, d]
   })

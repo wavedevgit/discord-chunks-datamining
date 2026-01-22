@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 890801, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  $: () => d
+  $: () => E
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -14,20 +14,20 @@ var Chunk934551 = require("./934551.js"),
 let A = (0, Chunk419954.zZ)(Chunk780964.X.KEYBINDS_CATEGORY, {
     buildLayout: () => [a.O]
   }),
-  S = (0, Chunk419954.t_)(Chunk780964.X.KEYBINDS_PANEL, {
+  d = (0, Chunk419954.t_)(Chunk780964.X.KEYBINDS_PANEL, {
     usePredicate: () => !(0, r.dk)("LegacyKeybindsPanel"),
     useTitle: () => T.intl.string(T.t.T9DA2K),
     StronglyDiscouragedCustomComponent: Chunk490510.A,
     buildLayout: () => []
   }),
-  E = (0, Chunk419954.t_)(Chunk780964.X.KEYBINDS_PANEL, {
+  S = (0, Chunk419954.t_)(Chunk780964.X.KEYBINDS_PANEL, {
     usePredicate: () => (0, r.dk)("KeybindsPanel"),
     useTitle: () => T.intl.string(T.t.T9DA2K),
     buildLayout: () => [A]
   }),
-  d = (0, Chunk419954.i4)(Chunk780964.X.KEYBINDS_SIDEBAR_ITEM, {
+  E = (0, Chunk419954.i4)(Chunk780964.X.KEYBINDS_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t.T9DA2K),
     getLegacySearchKey: () => (0, r.WJ)("KeybindsPanel") ? true : o.H.KEYBINDS,
     icon: Chunk934551.KeyboardIcon,
-    buildLayout: () => (0, r.WJ)("KeybindsPanel") ? [E] : [S]
+    buildLayout: () => (0, r.WJ)("KeybindsPanel") ? [S] : [d]
   })

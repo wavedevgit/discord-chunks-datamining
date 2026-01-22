@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 560861, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  g: () => E
+  g: () => S
 });
 var Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
@@ -13,11 +13,11 @@ var Chunk284009 = require("./284009.js"),
   Chunk780964 = require("./780964.js"),
   Chunk235079 = require("./235079.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.zD)(Chunk780964.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
+let S = (0, Chunk419954.zD)(Chunk780964.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   useTitle: () => {
     let t = r.A.useHolidaySoundpack();
-    return null == t ? "" : S.intl.format(S.t["E/OyBr"], {
-      soundpack: S.intl.string(t.soundpackLabel)
+    return null == t ? "" : d.intl.format(d.t["E/OyBr"], {
+      soundpack: d.intl.string(t.soundpackLabel)
     })
   },
   useValue: function() {

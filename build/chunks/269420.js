@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 269420, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  K: () => g
+  K: () => c
 });
 var Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
@@ -17,7 +17,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk782000 = require("./782000.js"),
   Chunk509725 = require("./509725.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk419954.zZ)(Chunk780964.X.CLIPS_RECORDING_CATEGORY, {
-  useTitle: () => I.intl.string(I.t.iIwmV5),
-  buildLayout: () => [o.e, r.X, E.T, d.B, _.Z, a.R, T.j, s.k, u.t, A.N, S.$]
+let c = (0, Chunk419954.zZ)(Chunk780964.X.CLIPS_RECORDING_CATEGORY, {
+  useTitle: () => g.intl.string(g.t.iIwmV5),
+  buildLayout: () => [o.e, r.X, S.T, E.B, _.Z, a.R, T.j, s.k, u.t, A.N, d.$]
 })

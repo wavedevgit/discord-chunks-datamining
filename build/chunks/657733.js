@@ -13,18 +13,18 @@ var Chunk934551 = require("./934551.js"),
   Chunk121616 = require("./121616.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.t_)(Chunk780964.X.DATA_AND_PRIVACY_PANEL, {
-    useTitle: () => S.intl.string(S.t.OAuOHD),
+let S = (0, Chunk419954.t_)(Chunk780964.X.DATA_AND_PRIVACY_PANEL, {
+    useTitle: () => d.intl.string(d.t.OAuOHD),
     StronglyDiscouragedCustomComponent: Chunk195548.A,
     buildLayout: () => []
   }),
-  d = (0, Chunk419954.t_)(Chunk780964.X.DATA_AND_PRIVACY_PANEL, {
-    useTitle: () => S.intl.string(S.t.OAuOHD),
+  E = (0, Chunk419954.t_)(Chunk780964.X.DATA_AND_PRIVACY_PANEL, {
+    useTitle: () => d.intl.string(d.t.OAuOHD),
     buildLayout: () => [o.u, a.w, T.d]
   }),
   _ = (0, Chunk419954.i4)(Chunk780964.X.DATA_AND_PRIVACY_SIDEBAR_ITEM, {
-    useTitle: () => S.intl.string(S.t.OAuOHD),
+    useTitle: () => d.intl.string(d.t.OAuOHD),
     icon: Chunk934551.ShieldLockIcon,
     getLegacySearchKey: () => (0, r.WJ)("DataAndPrivacyPanel") ? true : A.H.DATA_PRIVACY,
-    buildLayout: () => [(0, r.WJ)("DataAndPrivacyPanel") ? d : E]
+    buildLayout: () => [(0, r.WJ)("DataAndPrivacyPanel") ? E : S]
   })

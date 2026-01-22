@@ -58,18 +58,21 @@ let u = {
     })
   },
   async fetchChangelog(e, t) {
-    if (arguments.length > 2 && true !== arguments[2] && arguments[2], null != a.A.getChangelog(e, t)) return null;
-    let n = l.V5.DESKTOP;
+    arguments.length > 2 && true !== arguments[2] && arguments[2];
+    let n = arguments.length > 3 && true !== arguments[3] && arguments[3];
+    if (null != a.A.getChangelog(e, t)) return null;
+    let s = l.V5.DESKTOP,
+      o = n ? "" : "?".concat(c());
     try {
-      let a = await r.Bo.get({
-        url: "https://cdn.discordapp.com/changelogs/".concat(n, "/").concat(e, "/").concat(t, ".json?").concat(c()),
+      let n = await r.Bo.get({
+        url: "https://cdn.discordapp.com/changelogs/".concat(s, "/").concat(e, "/").concat(t, ".json").concat(o),
         rejectWithError: true
       });
       return i.h.dispatch({
         type: "CHANGE_LOG_FETCH_SUCCESS",
         id: e,
-        changelog: a.body
-      }), a.body
+        changelog: n.body
+      }), n.body
     } catch (n) {
       if (i.h.dispatch({
           type: "CHANGE_LOG_FETCH_FAILED",

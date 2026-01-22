@@ -1,7 +1,7 @@
 /** Chunk was on 95153 **/
 /** chunk id: 50120, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => L
+  default: () => D
 }), require("./896048.js"), require("./667532.js"), require("./321073.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,82 +28,82 @@ var Chunk627968 = require("./627968.js"),
   Chunk466410 = require("./466410.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let L = (0, Chunk358367.A)(function(e) {
+let D = (0, Chunk358367.A)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
-    onInteraction: o
-  } = e, [c, L] = l.useState(false), T = (0, h.A)(), I = (0, P.A)(), w = (0, f.A)(), C = (0, y.A)(), N = (0, j.A)(), m = (0, A.A)(), R = (0, v.A)(), V = (0, _.A)(), k = (0, S.A)(), {
+    onInteraction: c
+  } = e, [s, D] = i.useState(false), _ = (0, E.A)(), m = (0, j.A)(), T = (0, f.A)(), L = (0, v.A)(), I = (0, P.A)(), N = (0, S.A)(), k = (0, h.A)(), V = (0, x.A)(), R = (0, A.A)(), {
     analyticsLocations: M
-  } = (0, u.Ay)(), U = l.useMemo(() => (0, g.H)(), []);
+  } = (0, u.Ay)(), U = i.useMemo(() => (0, g.H)(), []);
   async function G() {
     try {
-      L(true), await (0, d.iD)(), window.location.reload(true)
+      D(true), await (0, d.iD)(), window.location.reload(true)
     } catch (e) {
-      L(false)
+      D(false)
     }
   }
-  let H = (0, b.t0)("UserSettingsCogContextMenu"),
-    X = (0, E.getWebUserSettingsByUserSettingsSections)(),
-    B = (0, O.Lu)(),
-    F = l.useMemo(() => {
+  let X = (0, b.t0)("UserSettingsCogContextMenu"),
+    H = (0, O.getWebUserSettingsByUserSettingsSections)(),
+    F = (0, y.Lu)(),
+    Y = i.useMemo(() => {
       let e = [];
-      if (B.forEach(t => {
+      if (F.forEach(t => {
           let {
             section: n,
-            predicate: i
+            predicate: r
           } = t;
-          n !== s.Fq.HEADER && n !== s.Fq.CUSTOM && n !== s.Fq.DIVIDER && "logout" !== n && (null == i || i()) && null != X.get(n) && (n === x.nc_.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
-        }), H) {
-        let t = e.findIndex(e => e.section === x.nc_.NOTIFICATIONS),
-          n = e.findIndex(e => e.section === x.nc_.CONNECTIONS);
+          n !== o.Fq.HEADER && n !== o.Fq.CUSTOM && n !== o.Fq.DIVIDER && "logout" !== n && (null == r || r()) && null != H.get(n) && (n === w.nc_.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
+        }), X) {
+        let t = e.findIndex(e => e.section === w.nc_.NOTIFICATIONS),
+          n = e.findIndex(e => e.section === w.nc_.CONNECTIONS);
         if (false !== t && false !== n && t > n) {
-          let [i] = e.splice(t, 1);
-          e.splice(n + 1, 0, i)
+          let [r] = e.splice(t, 1);
+          e.splice(n + 1, 0, r)
         }
       }
       return e
-    }, [B, X, H]);
-  return (0, i.jsx)(u.f5, {
+    }, [F, H, X]);
+  return (0, r.jsx)(u.f5, {
     value: M,
-    children: (0, i.jsxs)(r.W1t, {
+    children: (0, r.jsxs)(l.W1t, {
       navId: "user-settings-cog",
       onClose: a.Z_,
-      "aria-label": D.intl.string(D.t.opYYHn),
+      "aria-label": C.intl.string(C.t.opYYHn),
       onSelect: n,
-      onInteraction: o,
-      children: [F.map(e => {
+      onInteraction: c,
+      children: [Y.map(e => {
         var t, n;
         let {
-          section: l,
+          section: i,
           label: a,
-          onClick: s
-        } = e, o = l.replace(/\W/gi, "_");
-        return (0, i.jsx)(r.Drp, (t = function(e) {
+          onClick: o
+        } = e, c = i.replace(/\W/gi, "_");
+        return (0, r.jsx)(l.Drp, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[t] = r
             })
           }
           return e
         }({
-          id: o
+          id: c
         }, {
           label: a,
           action: () => {
             var e, t;
             let n;
-            return null != s ? s() : (t = null != (e = X.get(l)) ? e : p.X.ACCOUNT_PANEL, void(null != (n = Object.values(x.nc_).filter(e => e === l)[0]) && (0, E.openUserSettings)(t, {
+            return null != o ? o() : (t = null != (e = H.get(i)) ? e : p.X.ACCOUNT_PANEL, void(null != (n = Object.values(w.nc_).filter(e => e === i)[0]) && (0, O.openUserSettings)(t, {
               section: n,
               analyticsLocations: M
             })))
@@ -111,41 +111,41 @@ let L = (0, Chunk358367.A)(function(e) {
         }), n = n = {
           children: (e => {
             switch (e) {
-              case x.nc_.GAMES:
-                return T;
-              case x.nc_.STREAMER_MODE:
-                return I;
-              case x.nc_.APPEARANCE:
-                return w;
-              case x.nc_.ACCESSIBILITY:
-                return C;
-              case x.nc_.VOICE:
-                return N;
-              case x.nc_.TEXT:
+              case w.nc_.GAMES:
+                return _;
+              case w.nc_.STREAMER_MODE:
                 return m;
-              case x.nc_.EXPERIMENTS:
-                return R;
-              case x.nc_.DEVELOPER_OPTIONS:
+              case w.nc_.APPEARANCE:
+                return T;
+              case w.nc_.ACCESSIBILITY:
+                return L;
+              case w.nc_.VOICE:
+                return I;
+              case w.nc_.TEXT:
+                return N;
+              case w.nc_.EXPERIMENTS:
+                return k;
+              case w.nc_.DEVELOPER_OPTIONS:
                 return V;
               default:
                 return null
             }
-          })(l)
+          })(i)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t), o)
-      }), e.user.isStaff() && k, e.user.isStaff() && U.length > 0 ? (0, i.jsx)(r.Drp, {
+        }), t), c)
+      }), e.user.isStaff() && R, e.user.isStaff() && U.length > 0 ? (0, r.jsx)(l.Drp, {
         label: "Build Overrides",
         id: "build_overrides",
-        children: (0, i.jsx)(r.rXV, {
-          children: U.map(e => (0, i.jsx)(r.iDA, {
+        children: (0, r.jsx)(l.rXV, {
+          children: U.map(e => (0, r.jsx)(l.iDA, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -155,11 +155,11 @@ let L = (0, Chunk358367.A)(function(e) {
             }
           }, "input-".concat(e.payload)))
         })
-      }) : null, null != t ? (0, i.jsx)(r.rXV, {
-        children: (0, i.jsx)(r.Drp, {
+      }) : null, null != t ? (0, r.jsx)(l.rXV, {
+        children: (0, r.jsx)(l.Drp, {
           id: "clear-build-override",
-          disabled: c,
-          label: D.intl.string(D.t["/Nz9rY"]),
+          disabled: s,
+          label: C.intl.string(C.t["/Nz9rY"]),
           action: G,
           color: "danger"
         })

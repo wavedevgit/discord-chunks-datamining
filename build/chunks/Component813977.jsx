@@ -14,16 +14,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function d(e) {
-  let t = !o.isPlatformEmbedded,
-    n = (0, l.bG)([s.A], () => s.A.getMode()),
-    d = (t, l) => (0, i.jsx)(r.iDA, {
+  let t = !c.isPlatformEmbedded,
+    n = (0, i.bG)([o.A], () => o.A.getMode()),
+    d = (t, i) => (0, r.jsx)(l.iDA, {
       id: t,
       group: "input-modes",
-      label: l,
+      label: i,
       checked: n === t,
       action: () => a.A.setMode(t, true, true, {
         analyticsLocations: e
       })
     }, t);
-  return [d(c.TBI.VOICE_ACTIVITY, u.intl.string(u.t.cHCEOJ)), d(c.TBI.PUSH_TO_TALK, t ? u.intl.string(u.t["1AINrB"]) : u.intl.string(u.t.Q8gkVL))]
+  return [d(s.TBI.VOICE_ACTIVITY, u.intl.string(u.t.cHCEOJ)), d(s.TBI.PUSH_TO_TALK, t ? u.intl.string(u.t["1AINrB"]) : u.intl.string(u.t.Q8gkVL))]
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 317014, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  t: () => E
+  t: () => S
 });
 var Chunk945276 = require("./945276.js"),
   Chunk639555 = require("./639555.js"),
@@ -13,9 +13,9 @@ var Chunk945276 = require("./945276.js"),
   Chunk780964 = require("./780964.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
-  useTitle: () => S.intl.string(S.t.qFsx5q),
-  useSubtitle: () => S.intl.format(S.t.lunaRv, {
+let S = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
+  useTitle: () => d.intl.string(d.t.qFsx5q),
+  useSubtitle: () => d.intl.format(d.t.lunaRv, {
     learnMoreLink: o.A.getArticleURL(A.MVz.SAFETY_ALERTS)
   }),
   useValue: Chunk546140.L,

@@ -20,18 +20,18 @@ var Chunk934551 = require("./934551.js"),
   Chunk411476 = require("./411476.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let O = (0, Chunk419954.t_)(Chunk780964.X.CHAT_PANEL, {
-    useTitle: () => N.intl.string(N.t["/VQax8"]),
-    buildLayout: () => [T.M, a.f, o.z, _.J, E.n, I.p, g.U, S.W, d.o, A.B]
+let N = (0, Chunk419954.t_)(Chunk780964.X.CHAT_PANEL, {
+    useTitle: () => O.intl.string(O.t["/VQax8"]),
+    buildLayout: () => [T.M, a.f, o.z, _.J, S.n, g.p, c.U, d.W, E.o, A.B]
   }),
   C = (0, Chunk419954.t_)(Chunk780964.X.CHAT_PANEL, {
-    useTitle: () => N.intl.string(N.t["/VQax8"]),
+    useTitle: () => O.intl.string(O.t["/VQax8"]),
     StronglyDiscouragedCustomComponent: Chunk16986.A,
     buildLayout: () => []
   }),
   L = (0, Chunk419954.i4)(Chunk780964.X.CHAT_SIDEBAR_ITEM, {
-    useTitle: () => N.intl.string(N.t["/VQax8"]),
-    getLegacySearchKey: () => (0, r.WJ)("ChatPanel") ? true : c.H.CHAT,
+    useTitle: () => O.intl.string(O.t["/VQax8"]),
+    getLegacySearchKey: () => (0, r.WJ)("ChatPanel") ? true : I.H.CHAT,
     icon: Chunk934551.ChatIcon,
-    buildLayout: () => [(0, r.WJ)("ChatPanel") ? O : C]
+    buildLayout: () => [(0, r.WJ)("ChatPanel") ? N : C]
   })

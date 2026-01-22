@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk15267 = require("./15267.js");
 let _ = (0, Chunk419954.E2)(Chunk780964.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
-  useSearchTerms: () => [E.intl.string(E.t["sqUm+k"]), E.intl.string(E.t.I1Zuq0), E.intl.string(E.t.nuFtHH)],
+  useSearchTerms: () => [S.intl.string(S.t["sqUm+k"]), S.intl.string(S.t.I1Zuq0), S.intl.string(S.t.nuFtHH)],
   usePredicate: () => (0, r.bG)([o.A], () => o.A.isInputProfileCustom()),
   Component: function() {
     let {
@@ -24,7 +24,7 @@ let _ = (0, Chunk419954.E2)(Chunk780964.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
       disabled: e
     } = (0, r.cf)([o.A], () => ({
       autoThreshold: o.A.getModeOptions().autoThreshold,
-      disabled: o.A.getMode() !== S.TB.VOICE_ACTIVITY
+      disabled: o.A.getMode() !== d.TB.VOICE_ACTIVITY
     })), i = l.useCallback(t => {
       let e = o.A.getMode(),
         {
@@ -34,59 +34,59 @@ let _ = (0, Chunk419954.E2)(Chunk780964.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
         autoThreshold: t,
         threshold: i
       })
-    }, []), a = (0, r.bG)([o.A], () => o.A.supports(S.O5.AUTOMATIC_VAD)), {
+    }, []), a = (0, r.bG)([o.A], () => o.A.supports(d.O5.AUTOMATIC_VAD)), {
       volume: T,
       isSpeaking: _
-    } = (0, A.lm)(), I = (0, r.bG)([o.A], () => o.A.isEnabled()), g = l.useMemo(() => !I && (0, n.jsx)("div", {
-      className: d.B,
+    } = (0, A.lm)(), g = (0, r.bG)([o.A], () => o.A.isEnabled()), c = l.useMemo(() => !g && (0, n.jsx)("div", {
+      className: E.B,
       children: (0, n.jsx)(s.wx6, {
         type: "warning",
-        children: E.intl.format(E.t["O13I+O"], {
+        children: S.intl.format(S.t["O13I+O"], {
           onEnableClick: () => u.A.enable(true)
         })
       })
-    }), [I]), c = l.useMemo(() => t ? E.intl.string(E.t.JsbzjA) : E.intl.string(E.t.MLmyMY), [t]), N = l.useId(), O = l.useId();
+    }), [g]), I = l.useMemo(() => t ? S.intl.string(S.t.JsbzjA) : S.intl.string(S.t.MLmyMY), [t]), O = l.useId(), N = l.useId();
     return a ? (0, n.jsxs)("fieldset", {
-      "aria-describedby": O,
+      "aria-describedby": N,
       children: [(0, n.jsx)(s.AC4, {
         tag: "legend",
-        id: N,
-        children: E.intl.string(E.t.GByLar)
-      }), (0, n.jsx)(s.AC4, {
         id: O,
-        children: c
+        children: S.intl.string(S.t.GByLar)
+      }), (0, n.jsx)(s.AC4, {
+        id: N,
+        children: I
       }), (0, n.jsxs)(s.BJc, {
         direction: "vertical",
         gap: 8,
         children: [(0, n.jsx)(s.dOG, {
           disabled: e,
-          label: E.intl.string(E.t.lY6j47),
-          description: c,
+          label: S.intl.string(S.t.lY6j47),
+          description: I,
           checked: t,
           onChange: i
         }), t ? (0, n.jsx)(A.Uz, {
           isSpeaking: _,
-          className: d.U,
-          ariaDescribedBy: O,
-          ariaLabelledBy: N,
+          className: E.U,
+          ariaDescribedBy: N,
+          ariaLabelledBy: O,
           disabled: e
         }) : (0, n.jsx)(A.xu, {
           volume: T,
-          ariaDescribedBy: O,
-          ariaLabelledBy: N,
+          ariaDescribedBy: N,
+          ariaLabelledBy: O,
           disabled: e
-        }), g]
+        }), c]
       })]
     }) : (0, n.jsxs)(s.BJc, {
       direction: "vertical",
       gap: 8,
       children: [(0, n.jsx)(s.D0$, {
-        label: E.intl.string(E.t["sqUm+k"]),
-        description: c,
+        label: S.intl.string(S.t["sqUm+k"]),
+        description: I,
         layout: "vertical",
         children: i => t ? (0, n.jsx)(A.Uz, {
           isSpeaking: _,
-          className: d.U,
+          className: E.U,
           id: i.controlId,
           ariaDescribedBy: i.describedById,
           ariaLabelledBy: i.labelId,
@@ -98,7 +98,7 @@ let _ = (0, Chunk419954.E2)(Chunk780964.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
           ariaLabelledBy: i.labelId,
           disabled: e
         })
-      }), g]
+      }), c]
     })
   }
 })

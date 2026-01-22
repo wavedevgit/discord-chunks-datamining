@@ -17,7 +17,7 @@ let A = () => {
     installationStatus: e,
     connectionStatus: i,
     perkAvailableToUser: A
-  } = (0, a.lV)(), S = (0, l.useMemo)(() => {
+  } = (0, a.lV)(), d = (0, l.useMemo)(() => {
     switch (i) {
       case u.l7.CONNECTED:
         return o.intl.format(T.default.EVQZqy, {
@@ -36,7 +36,7 @@ let A = () => {
           helpdeskArticle: r.V
         })
     }
-  }, [i]), E = (0, l.useMemo)(() => {
+  }, [i]), S = (0, l.useMemo)(() => {
     if (t) return o.intl.format(T.default.z6v0w5, {
       helpdeskArticle: r.V
     });
@@ -68,7 +68,7 @@ let A = () => {
       case u.Lk.ZERO_TRUST:
         return o.intl.string(T.default.KVSUDs);
       case u.Lk.INSTALLED:
-        return S;
+        return d;
       case u.Lk.NOT_INSTALLED:
       case u.Lk.UNKNOWN:
       default:
@@ -76,10 +76,10 @@ let A = () => {
           helpdeskArticle: r.V
         })
     }
-  }, [t, e, S, A]);
+  }, [t, e, d, A]);
   return (0, n.jsx)(s.EYj, {
     variant: "text-sm/normal",
     color: "text-subtle",
-    children: E
+    children: S
   })
 }

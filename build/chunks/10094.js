@@ -2,20 +2,23 @@
 /** chunk id: 10094, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => i,
-  Y: () => a
+  O: () => a,
+  Y: () => s
 });
-var Chunk73153 = require("./73153.js");
-let i = (e, t) => {
+var Chunk73153 = require("./73153.js"),
+  Chunk287809 = require("./287809.js");
+let a = (e, t) => {
     r.h.dispatch({
       type: "SET_PREMIUM_TYPE_OVERRIDE",
       premiumType: e
-    }), r.h.dispatch({
+    });
+    let n = null != t ? t : i.default.getCurrentUser();
+    null != n && r.h.dispatch({
       type: "UPDATE_CLIENT_PREMIUM_TYPE",
-      user: t
+      user: n
     })
   },
-  a = e => {
+  s = e => {
     r.h.dispatch({
       type: "SET_CREATED_AT_OVERRIDE",
       createdAt: e

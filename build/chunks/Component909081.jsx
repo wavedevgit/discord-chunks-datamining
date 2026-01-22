@@ -16,10 +16,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk545214 = require("./545214.js"),
   Chunk985018 = require("./985018.jsx");
 let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
-  useSearchTerms: () => [d.intl.string(d.t.uHAJ5v)],
+  useSearchTerms: () => [E.intl.string(E.t.uHAJ5v)],
   usePredicate: function() {
-    let t = (0, S.b)(),
-      e = (0, E.A)(),
+    let t = (0, d.b)(),
+      e = (0, S.A)(),
       i = (0, A.f)(),
       n = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled());
     return !t && !e && i && n

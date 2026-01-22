@@ -14,14 +14,14 @@ var Chunk627968 = require("./627968.js"),
 let A = t => {
   let {
     onClick: e
-  } = t, i = (0, a.lV)(t => t.setDoInstall), A = (0, a.lV)(t => t.setInstallationStatus), S = (0, a.lV)(t => t.installationStatus), E = (0, l.useCallback)(() => {
+  } = t, i = (0, a.lV)(t => t.setDoInstall), A = (0, a.lV)(t => t.setInstallationStatus), d = (0, a.lV)(t => t.installationStatus), S = (0, l.useCallback)(() => {
     null == e || e(), (0, r.u)(o.HAw.NITRO_WARP_CTA_CLICKED, {
       is_enable_warp: false
-    }), S === u.Lk.ERROR && A(u.Lk.NOT_INSTALLED), i(true)
-  }, [i, S, A, e]);
+    }), d === u.Lk.ERROR && A(u.Lk.NOT_INSTALLED), i(true)
+  }, [i, d, A, e]);
   return (0, n.jsx)(s.$nd, {
     variant: "primary",
-    onClick: E,
+    onClick: S,
     text: T.intl.string(T.t["1WjMbC"])
   })
 }

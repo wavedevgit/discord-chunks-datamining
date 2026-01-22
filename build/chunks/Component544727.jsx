@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 544727, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  $: () => S
+  $: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,7 +13,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let S = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_STORAGE_LOCATION, {
+let d = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_STORAGE_LOCATION, {
   useSearchTerms: () => [A.intl.string(A.t.s4773E), A.intl.string(A.t.svjwGh)],
   Component: () => {
     let t = (0, l.bG)([u.A], () => u.A.getSettings().storageLocation),

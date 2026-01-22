@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 12508, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  n: () => S
+  n: () => d
 });
 var Chunk64700 = require("./64700.js"),
   Chunk665260 = require("./665260.js"),
@@ -12,7 +12,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk780964 = require("./780964.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let S = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
+let d = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
   useTitle: () => A.intl.string(A.t.qsMfsH),
   useValue: () => {
     let t = a.FA.useSetting(),

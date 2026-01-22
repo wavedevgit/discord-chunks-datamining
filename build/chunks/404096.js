@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 404096, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  w: () => b
+  w: () => R
 });
 var Chunk421380 = require("./421380.js"),
   Chunk935649 = require("./935649.jsx"),
@@ -23,59 +23,59 @@ var Chunk421380 = require("./421380.js"),
   Chunk355097 = require("./355097.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let R = (t, e) => {
+let b = (t, e) => {
     o.default.track(C.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
       default_guilds_restricted: t,
       applied_to_existing_guilds: e
     })
   },
-  b = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+  R = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: () => L.intl.string(L.t["3o2ojh"]),
-    useSubtitle: () => (0, g.q9)() ? L.intl.format(L.t.WpnWLc, {
+    useSubtitle: () => (0, c.q9)() ? L.intl.format(L.t.WpnWLc, {
       helpdeskArticle: T.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
     }) : L.intl.format(L.t.wkm9a3, {
       helpdeskArticle: T.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
     }),
     useValue: () => {
-      let t = (0, g.Tx)(),
-        e = (0, E.K)(),
-        i = d.$s.useSetting().includes(t),
-        n = d.YX.useSetting(),
-        l = d.Zr.useSetting().includes(t);
-      return t === I.YG ? !e && !n : !i && !l
+      let t = (0, c.Tx)(),
+        e = (0, S.K)(),
+        i = E.$s.useSetting().includes(t),
+        n = E.YX.useSetting(),
+        l = E.Zr.useSetting().includes(t);
+      return t === g.YG ? !e && !n : !i && !l
     },
     useDisabled: () => {
-      let t = (0, g.Tx)(),
+      let t = (0, c.Tx)(),
         e = (0, r.uM)(),
-        i = (0, E.K)(),
-        n = d.$s.useSetting().includes(t);
-      return t === I.YG ? i || e : n
+        i = (0, S.K)(),
+        n = E.$s.useSetting().includes(t);
+      return t === g.YG ? i || e : n
     },
     setValue: t => {
-      let e = I.xk.getState().selectedGuildId;
-      if (!t && (0, S.w)()) return void l.A.showAgeVerificationGetStartedModal({
+      let e = g.xk.getState().selectedGuildId;
+      if (!t && (0, d.w)()) return void l.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.MESSAGE_REQUESTS_SETTINGS
       });
-      if (e === I.YG) {
+      if (e === g.YG) {
         var i;
-        i = !t, (0, c.O)({
+        i = !t, (0, I.O)({
           header: L.intl.string(L.t.yAfu1p),
           body: L.intl.string(L.t.Ry2z74),
           confirmText: L.intl.string(L.t.gm1Vej),
           cancelText: L.intl.string(L.t.p89ACt),
           confirmButtonColor: n.$n.Colors.BRAND,
           onConfirm: () => {
-            d.YX.updateSetting(i), R(i, false)
+            E.YX.updateSetting(i), b(i, false)
           },
           onCancel: () => {
-            d.YX.updateSetting(i), d.Zr.updateSetting(i ? a.A.getGuildIds() : []), R(i, true)
+            E.YX.updateSetting(i), E.Zr.updateSetting(i ? a.A.getGuildIds() : []), b(i, true)
           }
         })
       } else {
         let i = (0, A.xo)();
-        t ? i.delete(e) : i.add(e), d.Zr.updateSetting(Array.from(i)), o.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-          action: N.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
-          ingress: O.bf.USER_SETTINGS_PRIVACY_SAFETY,
+        t ? i.delete(e) : i.add(e), E.Zr.updateSetting(Array.from(i)), o.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+          action: O.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
+          ingress: N.bf.USER_SETTINGS_PRIVACY_SAFETY,
           guild_id: e
         })
       }

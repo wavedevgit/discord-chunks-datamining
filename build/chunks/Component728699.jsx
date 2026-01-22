@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 728699, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  T: () => N
+  T: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk934551 = require("./934551.js"),
@@ -17,20 +17,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
-let g = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
-    usePredicate: () => !(0, S.dk)("LegacyFamilyCenterPanel"),
-    useTitle: () => _.intl.string(I.default.RZqaJn),
+let c = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
+    usePredicate: () => !(0, d.dk)("LegacyFamilyCenterPanel"),
+    useTitle: () => _.intl.string(g.default.RZqaJn),
     StronglyDiscouragedCustomComponent: Chunk793998.p,
     buildLayout: () => []
   }),
-  c = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
-    usePredicate: () => (0, S.dk)("FamilyCenterPanel"),
-    useTitle: () => _.intl.string(I.default.RZqaJn),
-    buildLayout: () => [E.g]
+  I = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
+    usePredicate: () => (0, d.dk)("FamilyCenterPanel"),
+    useTitle: () => _.intl.string(g.default.RZqaJn),
+    buildLayout: () => [S.g]
   }),
-  N = (0, Chunk419954.i4)(Chunk780964.X.FAMILY_CENTER_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(I.default.RZqaJn),
-    getLegacySearchKey: () => (0, S.WJ)("FamilyCenterPanel") ? true : d.H.PRIVACY_FAMILY_CENTER,
+  O = (0, Chunk419954.i4)(Chunk780964.X.FAMILY_CENTER_SIDEBAR_ITEM, {
+    useTitle: () => _.intl.string(g.default.RZqaJn),
+    getLegacySearchKey: () => (0, d.WJ)("FamilyCenterPanel") ? true : E.H.PRIVACY_FAMILY_CENTER,
     icon: Chunk934551.GroupIcon,
     trailing: {
       type: Chunk933297.S.STRONGLY_DISCOURAGED_CUSTOM,
@@ -44,5 +44,5 @@ let g = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
         }) : null
       }
     },
-    buildLayout: () => (0, S.WJ)("FamilyCenterPanel") ? [c] : [g]
+    buildLayout: () => (0, d.WJ)("FamilyCenterPanel") ? [I] : [c]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 828797, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  o: () => c
+  o: () => I
 });
 var Chunk311907 = require("./311907.js"),
   Chunk419954 = require("./419954.js"),
@@ -18,8 +18,8 @@ var Chunk311907 = require("./311907.js"),
   Chunk32096 = require("./32096.js"),
   Chunk545214 = require("./545214.js"),
   Chunk985018 = require("./985018.jsx");
-let c = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
-  useTitle: () => g.intl.string(g.t.pKSjEj),
+let I = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
+  useTitle: () => c.intl.string(c.t.pKSjEj),
   useNotice: function() {
     return (0, n.bG)([r.default], () => {
       var t, e;
@@ -29,5 +29,5 @@ let c = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
       notice: a.A
     } : null
   },
-  buildLayout: () => [S.L, _.A, I.k, A.v, o.c, T.g, E.T, d.C]
+  buildLayout: () => [d.L, _.A, g.k, A.v, o.c, T.g, S.T, E.C]
 })

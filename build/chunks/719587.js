@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 719587, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  L: () => E
+  L: () => S
 });
 var Chunk311907 = require("./311907.js"),
   Chunk290595 = require("./290595.js"),
@@ -13,9 +13,9 @@ var Chunk311907 = require("./311907.js"),
   Chunk997913 = require("./997913.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.zD)(Chunk780964.X.DATA_USAGE_STATISTICS_SETTING, {
-  useTitle: () => S.intl.string(S.t.XuADY2),
-  useSubtitle: () => S.intl.format(S.t["igTSG/"], {
+let S = (0, Chunk419954.zD)(Chunk780964.X.DATA_USAGE_STATISTICS_SETTING, {
+  useTitle: () => d.intl.string(d.t.XuADY2),
+  useSubtitle: () => d.intl.format(d.t["igTSG/"], {
     helpdeskArticle: a.A.getArticleURL(A.MVz.DATA_PRIVACY_CONTROLS)
   }),
   useValue: function() {
@@ -23,13 +23,13 @@ let E = (0, Chunk419954.zD)(Chunk780964.X.DATA_USAGE_STATISTICS_SETTING, {
   },
   setValue: function(t) {
     t ? (0, l.U)([A.YAq.USAGE_STATISTICS], []).catch(T.i) : (0, T.O)({
-      header: S.intl.string(S.t.OdPCbN),
-      body: S.intl.string(S.t.MGWabA),
-      confirmText: S.intl.string(S.t["D3+rU4"]),
-      cancelText: S.intl.string(S.t.kYpG0u),
+      header: d.intl.string(d.t.OdPCbN),
+      body: d.intl.string(d.t.MGWabA),
+      confirmText: d.intl.string(d.t["D3+rU4"]),
+      cancelText: d.intl.string(d.t.kYpG0u),
       onConfirm: () => (0, l.U)([], [A.YAq.USAGE_STATISTICS]).catch(T.i)
     })
   },
-  useSearchTerms: () => [S.intl.string(S.t.XuADY2)],
+  useSearchTerms: () => [d.intl.string(d.t.XuADY2)],
   useDisabled: Chunk171316.uM
 })

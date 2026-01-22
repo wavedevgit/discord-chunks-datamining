@@ -36,7 +36,7 @@ let A = () => {
         case r.Lk.ZERO_TRUST:
           return a.intl.string(o.default["7zgDRR"]);
         case r.Lk.INSTALLED:
-          return (0, n.jsx)(S, {})
+          return (0, n.jsx)(d, {})
       }
     }, [t, e, i]);
     return (0, n.jsx)(s.DZT, {
@@ -44,7 +44,7 @@ let A = () => {
       children: T
     })
   },
-  S = () => {
+  d = () => {
     switch ((0, u.lV)(t => t.connectionStatus)) {
       case r.l7.INITIALIZING:
         return (0, n.jsxs)("span", {
