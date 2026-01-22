@@ -212,6 +212,13 @@ class x extends(r = Chunk442837.ZP.Store) {
     var t;
     return null != (t = h.get(e)) ? t : null
   }
+  getInviteByUserId(e) {
+    var t;
+    return null != (t = Array.from(h.values()).find(t => {
+      var n;
+      return (null == (n = t.invite) ? true : n.user_id) === e
+    })) ? t : null
+  }
   getInviteState(e) {
     var t, n;
     return null != (n = null == (t = h.get(e)) ? true : t.state) ? n : c.bZ.UNKNOWN
