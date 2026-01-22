@@ -1,5 +1,5 @@
 /** Chunk was on 78250 **/
-/** chunk id: 983665, original params: t,e,s (module,exports,require) **/
+/** chunk id: 983665, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => h
 }), require("./896048.js"), require("./492834.js"), require("./228524.js");
@@ -16,19 +16,19 @@ var Chunk627968 = require("./627968.js"),
 
 function u(t) {
   let {
-    name: e,
-    value: s
-  } = t, [a, r] = i.useState(l.qCr.DEFAULT);
-  return (0, n.jsx)("div", {
+    name: n,
+    value: e
+  } = t, [s, r] = a.useState(l.qCr.DEFAULT);
+  return (0, i.jsx)("div", {
     className: m.lj,
-    children: (0, n.jsx)(l.D0$, {
-      label: e,
-      children: (0, n.jsx)(l.e2O, {
-        value: s,
-        mode: a,
-        supportsCopy: c.p5,
+    children: (0, i.jsx)(l.D0$, {
+      label: n,
+      children: (0, i.jsx)(l.e2O, {
+        value: e,
+        mode: s,
+        supportsCopy: d.p5,
         onCopy: () => {
-          (0, c.C)(s, () => r(l.qCr.SUCCESS), () => r(l.qCr.ERROR))
+          (0, d.C)(e, () => r(l.qCr.SUCCESS), () => r(l.qCr.ERROR))
         }
       })
     })
@@ -37,199 +37,208 @@ function u(t) {
 
 function h(t) {
   let {
-    onClose: e,
-    transitionState: s
-  } = t, [c, h] = i.useState(""), [j, p] = i.useState(""), [v, N] = i.useState(null), [g, _] = i.useState(false), [f, C] = i.useState("DOMAIN"), O = () => {
-    _(true), N(null), a.Bo.post({
-      url: o.Rsh.CONNECTION(o.fg2.DOMAIN, c),
+    onClose: n,
+    transitionState: e
+  } = t, [d, h] = a.useState(""), [j, g] = a.useState(""), [p, v] = a.useState(null), [N, _] = a.useState(false), [f, C] = a.useState("DOMAIN"), O = () => {
+    _(true), v(null), s.Bo.post({
+      url: o.Rsh.CONNECTION(o.fg2.DOMAIN, d),
       body: {},
       rejectWithError: false
     }).then(() => {
-      e()
+      n()
     }).catch(t => {
-      var e, s, n, i, a, l, r;
-      (null == (e = t.body) ? true : e.proof) && "DOMAIN" === f ? (p(t.body.proof), C("PROOF_DNS")) : N((null == (l = t.body) || null == (a = l.errors) || null == (i = a.domain) || null == (n = i._errors) || null == (s = n[0]) ? true : s.message) || (null == (r = t.body) ? true : r.message) || t.message)
+      var n, e, i, a, s, l, r;
+      (null == (n = t.body) ? true : n.proof) && "DOMAIN" === f ? (g(t.body.proof), C("PROOF_DNS")) : v((null == (l = t.body) || null == (s = l.errors) || null == (a = s.domain) || null == (i = a._errors) || null == (e = i[0]) ? true : e.message) || (null == (r = t.body) ? true : r.message) || t.message)
     }).finally(() => {
       _(false)
     })
   };
-  return (0, n.jsxs)(l.EOs, {
-    transitionState: s,
+  return (0, i.jsxs)(l.EOs, {
+    "data-migration-pending": true,
+    transitionState: e,
     className: m.__invalid_modal,
     parentComponent: "DomainVerifyModal",
-    children: [(0, n.jsxs)(l.rQ0, {
+    children: [(0, i.jsxs)(l.rQ0, {
+      "data-migration-pending": true,
       direction: r.A.Direction.VERTICAL,
       className: m.wx,
       separator: false,
-      children: [(0, n.jsx)(l.Heading, {
+      children: [(0, i.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         children: x.intl.string(x.t["7lo8+e"])
-      }), (0, n.jsx)(l.s_y, {
+      }), (0, i.jsx)(l.s_y, {
+        "data-migration-pending": true,
         className: m.b,
-        onClick: e
+        onClick: n
       })]
-    }), (0, n.jsxs)(l.tN_, {
+    }), (0, i.jsxs)(l.tN_, {
       activeSlide: f,
       width: 440,
-      children: [(0, n.jsx)(l.q7S, {
+      children: [(0, i.jsx)(l.q7S, {
         id: "DOMAIN",
-        children: (0, n.jsxs)("form", {
+        children: (0, i.jsxs)("form", {
           onSubmit: t => {
             t.preventDefault(), O()
           },
-          children: [(0, n.jsxs)(l.$mQ, {
+          children: [(0, i.jsxs)(l.$mQ, {
+            "data-migration-pending": true,
             className: m.Qs,
-            children: [(0, n.jsx)(l.Text, {
+            children: [(0, i.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "text-default",
               className: m.h_,
               children: x.intl.string(x.t.NxPUqY)
-            }), (0, n.jsx)(l.ksK, {
+            }), (0, i.jsx)(l.ksK, {
               label: x.intl.string(x.t["4jIAa+"]),
-              error: v,
+              error: p,
               onChange: h,
-              placeholder: d.Ai,
+              placeholder: c.Ai,
               maxLength: 253,
-              value: c,
-              disabled: g,
+              value: d,
+              disabled: N,
               autoFocus: true
             })]
-          }), (0, n.jsx)(l.jlY, {
+          }), (0, i.jsx)(l.jlY, {
+            "data-migration-pending": true,
             className: m.qr,
-            children: (0, n.jsxs)(l.ButtonGroup, {
+            children: (0, i.jsxs)(l.ButtonGroup, {
               direction: "horizontal-reverse",
-              children: [(0, n.jsx)(l.Button, {
+              children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 text: x.intl.string(x.t.PDTjLN),
                 type: "submit",
-                loading: g,
-                disabled: "" === c
-              }), (0, n.jsx)(l.Button, {
+                loading: N,
+                disabled: "" === d
+              }), (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 text: x.intl.string(x.t["ETE/oC"]),
-                onClick: e
+                onClick: n
               })]
             })
           })]
         })
-      }), (0, n.jsxs)(l.q7S, {
+      }), (0, i.jsxs)(l.q7S, {
         id: "PROOF_DNS",
-        children: [(0, n.jsxs)(l.$mQ, {
+        children: [(0, i.jsxs)(l.$mQ, {
+          "data-migration-pending": true,
           className: m.Qs,
-          children: [(0, n.jsxs)("ol", {
+          children: [(0, i.jsxs)("ol", {
             className: m.p_,
-            children: [(0, n.jsx)("li", {
-              children: (0, n.jsx)(l.Text, {
+            children: [(0, i.jsx)("li", {
+              children: (0, i.jsx)(l.Text, {
                 tag: "span",
                 variant: "text-md/normal",
                 children: x.intl.string(x.t["yOxxA+"])
               })
-            }), (0, n.jsxs)("li", {
-              children: [(0, n.jsx)(l.Text, {
+            }), (0, i.jsxs)("li", {
+              children: [(0, i.jsx)(l.Text, {
                 tag: "span",
                 variant: "text-md/normal",
                 children: x.intl.string(x.t.cSURbq)
-              }), (0, n.jsxs)("div", {
+              }), (0, i.jsxs)("div", {
                 className: m.st,
-                children: [(0, n.jsx)(u, {
+                children: [(0, i.jsx)(u, {
                   name: x.intl.string(x.t.GL3q7k),
-                  value: (0, d.hE)(c)
-                }), (0, n.jsx)(u, {
+                  value: (0, c.hE)(d)
+                }), (0, i.jsx)(u, {
                   name: x.intl.string(x.t.Ccmixu),
                   value: "TXT"
-                }), (0, n.jsx)(u, {
+                }), (0, i.jsx)(u, {
                   name: x.intl.string(x.t.PVLriT),
                   value: j
                 })]
               })]
             })]
-          }), (0, n.jsx)(l.po8, {
+          }), (0, i.jsx)(l.po8, {
             messageType: l.YCn.INFO,
             className: m.Qq,
             children: x.intl.string(x.t.CUBxDB)
-          }), null != v && (0, n.jsx)(l.Text, {
+          }), null != p && (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
             className: m.Qq,
-            children: v
+            children: p
           })]
-        }), (0, n.jsxs)(l.jlY, {
+        }), (0, i.jsxs)(l.jlY, {
+          "data-migration-pending": true,
           className: m.qr,
           direction: r.A.Direction.HORIZONTAL,
-          children: [(0, n.jsx)(l.Button, {
+          children: [(0, i.jsx)(l.Button, {
             variant: "secondary",
             text: x.intl.string(x.t["13/7kX"]),
             onClick: () => {
-              C("DOMAIN"), N(null)
+              C("DOMAIN"), v(null)
             }
-          }), (0, n.jsxs)("div", {
+          }), (0, i.jsxs)("div", {
             className: m.Um,
-            children: [(0, n.jsx)("div", {
+            children: [(0, i.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: m.__invalid_switchButton,
-              children: (0, n.jsx)(l.Button, {
+              children: (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 text: x.intl.string(x.t.CkfdNx),
                 onClick: () => {
-                  C("PROOF_HTTP"), N(null)
+                  C("PROOF_HTTP"), v(null)
                 }
               })
-            }), (0, n.jsx)(l.Button, {
+            }), (0, i.jsx)(l.Button, {
               variant: "primary",
               text: x.intl.string(x.t["13ofGu"]),
-              loading: g,
+              loading: N,
               onClick: O
             })]
           })]
         })]
-      }), (0, n.jsxs)(l.q7S, {
+      }), (0, i.jsxs)(l.q7S, {
         id: "PROOF_HTTP",
-        children: [(0, n.jsxs)(l.$mQ, {
+        children: [(0, i.jsxs)(l.$mQ, {
+          "data-migration-pending": true,
           className: m.Qs,
-          children: [(0, n.jsx)(l.Text, {
+          children: [(0, i.jsx)(l.Text, {
             tag: "span",
             variant: "text-md/normal",
             children: x.intl.string(x.t.p4ql7y)
-          }), (0, n.jsxs)("div", {
+          }), (0, i.jsxs)("div", {
             className: m.eX,
-            children: [(0, n.jsx)(u, {
+            children: [(0, i.jsx)(u, {
               name: x.intl.string(x.t.GL3q7k),
-              value: (0, d.uu)(c)
-            }), (0, n.jsx)(u, {
+              value: (0, c.uu)(d)
+            }), (0, i.jsx)(u, {
               name: x.intl.string(x.t.PVLriT),
               value: j
             })]
-          }), null != v && (0, n.jsx)(l.Text, {
+          }), null != p && (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-feedback-critical",
             className: m.Qq,
-            children: v
+            children: p
           })]
-        }), (0, n.jsxs)(l.jlY, {
+        }), (0, i.jsxs)(l.jlY, {
+          "data-migration-pending": true,
           className: m.qr,
           direction: r.A.Direction.HORIZONTAL,
-          children: [(0, n.jsx)(l.Button, {
+          children: [(0, i.jsx)(l.Button, {
             variant: "secondary",
             text: x.intl.string(x.t["13/7kX"]),
             onClick: () => {
-              C("DOMAIN"), N(null)
+              C("DOMAIN"), v(null)
             }
-          }), (0, n.jsxs)("div", {
+          }), (0, i.jsxs)("div", {
             className: m.Um,
-            children: [(0, n.jsx)("div", {
+            children: [(0, i.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: m.__invalid_switchButton,
-              children: (0, n.jsx)(l.Button, {
+              children: (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 text: x.intl.string(x.t.RhJMVQ),
                 onClick: () => {
-                  C("PROOF_DNS"), N(null)
+                  C("PROOF_DNS"), v(null)
                 }
               })
-            }), (0, n.jsx)(l.Button, {
+            }), (0, i.jsx)(l.Button, {
               variant: "primary",
               text: x.intl.string(x.t["13ofGu"]),
-              loading: g,
+              loading: N,
               onClick: O
             })]
           })]
