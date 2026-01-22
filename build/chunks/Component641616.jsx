@@ -194,7 +194,7 @@ function eo() {
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
       group: ei.fu.UI,
-      render: () => (0, a.jsx)(W.A, {})
+      render: () => (0, a.jsx)(H.A, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",
@@ -219,7 +219,7 @@ function eo() {
       id: "permissions",
       name: "Permissions",
       group: ei.fu.USERS,
-      render: () => (0, a.jsx)(H.A, {})
+      render: () => (0, a.jsx)(W.A, {})
     }), e.push({
       id: "modals",
       name: "Modals",
@@ -316,7 +316,7 @@ function eo() {
       name: "Krisp Tester",
       group: ei.fu.AUDIO_VIDEO,
       tags: ["noise cancellation", "audio", "vad"],
-      render: () => (0, a.jsx)(w.A, {})
+      render: () => (0, a.jsx)(k.A, {})
     }), e.push({
       id: "skill_trees",
       name: "Skill Trees",
@@ -333,7 +333,7 @@ function eo() {
       name: "Language",
       group: ei.fu.UI,
       tags: ["locale"],
-      render: () => (0, a.jsx)(k.A, {})
+      render: () => (0, a.jsx)(w.A, {})
     }), e.push({
       id: "word_frequency",
       name: "Word Frequency",

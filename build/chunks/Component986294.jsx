@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk424994 = require("./424994.js"),
   Chunk750100 = require("./750100.js"),
   Chunk661251 = require("./661251.js");
-let w = [{
+let k = [{
   key: "type",
   cellClassName: r()(Chunk750100.Hn, Chunk750100.T$),
   render(e) {
@@ -64,13 +64,13 @@ let w = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(k, {
+    return (0, a.jsx)(w, {
       type: t
     })
   }
 }];
 
-function k(e) {
+function w(e) {
   var t, n;
   let {
     type: l
@@ -96,7 +96,7 @@ function P() {
   let i, r = (0, u.bG)([C.A], () => C.A.getFeed(N.X1.GLOBAL_FEED)),
     s = (0, u.bG)([C.A], () => C.A.getDebugImpressionCappingDisabled()),
     c = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
-    k = (n = null == r || null == (t = r.entries) ? true : t.map(e => e.content), Object.keys(i = o().groupBy(n, e => e.content_type)).map(e => {
+    w = (n = null == r || null == (t = r.entries) ? true : t.map(e => e.content), Object.keys(i = o().groupBy(n, e => e.content_type)).map(e => {
       let t = i[e];
       return {
         key: "".concat(e),
@@ -136,9 +136,9 @@ function P() {
         children: [(0, a.jsx)(p.Text, {
           variant: "text-md/semibold",
           children: "Inventory"
-        }), k.length > 0 && (0, a.jsx)(b.A, {
-          columns: w,
-          data: k
+        }), w.length > 0 && (0, a.jsx)(b.A, {
+          columns: k,
+          data: w
         }), (0, a.jsx)(E.A, {}), (0, a.jsx)(p.Button, {
           variant: "primary",
           text: "Refresh Now",

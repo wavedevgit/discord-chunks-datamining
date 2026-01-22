@@ -32,8 +32,8 @@ function O(e) {
   let {
     quest: T,
     questContent: I,
-    isHovering: w,
-    contentPosition: k,
+    isHovering: k,
+    contentPosition: w,
     rowIndex: P,
     isVisibleInViewport: R,
     onReceiveErrorHints: D,
@@ -41,12 +41,12 @@ function O(e) {
   } = e, L = l.useRef(null), U = (0, x.mq)(T.config), B = (0, x.mH)(T.config), G = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, {
     ref: F,
     scrollHeight: V
-  } = (0, d.wR)(), H = 104 !== V, {
-    onAssetLoadComplete: W
+  } = (0, d.wR)(), W = 104 !== V, {
+    onAssetLoadComplete: H
   } = l.useContext(v.M), {
     expansionSpring: K
   } = (0, c.zhh)({
-    expansionSpring: +!!w,
+    expansionSpring: +!!k,
     config: (O = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -141,15 +141,15 @@ function O(e) {
               quest: T,
               size: 76,
               percentComplete: J,
-              percentCompleteText: w && !(0, f.Ic)(T) ? X : true,
+              percentCompleteText: k && !(0, f.Ic)(T) ? X : true,
               children: (0, a.jsx)("div", {
                 className: C.yv,
                 children: (0, a.jsx)(g.A, {
                   quest: T,
                   questContent: I,
                   className: C.ve,
-                  autoplay: w,
-                  onLoadComplete: W,
+                  autoplay: k,
+                  onLoadComplete: H,
                   lazyLoad: true,
                   sourceQuestContent: M
                 })
@@ -157,10 +157,10 @@ function O(e) {
             })]
           }) : (0, a.jsx)(g.A, {
             quest: T,
-            autoplay: w,
+            autoplay: k,
             questContent: I,
             className: C.eB,
-            onLoadComplete: W,
+            onLoadComplete: H,
             lazyLoad: true,
             sourceQuestContent: M
           })]
@@ -168,7 +168,7 @@ function O(e) {
       }), (0, a.jsxs)("div", {
         ref: F,
         className: r()(C.FS, {
-          [C.wq]: !H
+          [C.wq]: !W
         }),
         children: [(0, a.jsx)(c.Heading, {
           variant: "eyebrow",
@@ -183,7 +183,7 @@ function O(e) {
           className: C.wx,
           children: $
         }), ee]
-      }), H && (0, a.jsx)(s.animated.div, {
+      }), W && (0, a.jsx)(s.animated.div, {
         style: {
           opacity: K.to([0, 1], [1, 0])
         },
@@ -192,7 +192,7 @@ function O(e) {
     }), (0, a.jsx)(y.A, {
       quest: T,
       questContent: I,
-      contentPosition: k,
+      contentPosition: w,
       rowIndex: P,
       onReceiveErrorHints: D,
       sourceQuestContent: M

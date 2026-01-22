@@ -99,9 +99,9 @@ function el(e) {
   } = (0, h.A)(eu);
   l.useEffect(() => {
     null == el || el(eu.current)
-  }, [eu, el]), l.useEffect(() => (H.A.setState({
+  }, [eu, el]), l.useEffect(() => (W.A.setState({
     isOpen: true
-  }), () => H.A.setState({
+  }), () => W.A.setState({
     isOpen: false
   })), []);
   let ef = (0, s.bG)([U.A], () => U.A.getStatus(t.id)),
@@ -111,7 +111,7 @@ function el(e) {
     ev = (0, g.kB)(),
     ej = L.Q_.useSetting(),
     ey = (0, Y.T)(ef),
-    e_ = (0, W.j)(n),
+    e_ = (0, H.j)(n),
     eA = (0, j.A)({
       analyticsLocations: ec
     }),
@@ -121,15 +121,15 @@ function el(e) {
     }),
     eO = l.useRef(null),
     eE = l.useRef(null),
-    eN = l.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
+    eN = l.useRef((0, W.A)(e => e.shouldRenderTenureLevelUp)),
     eT = l.useMemo(() => (0, x.A)(), []),
-    [eI, ew] = l.useState(true);
+    [eI, ek] = l.useState(true);
   l.useEffect(() => {
     setTimeout(() => {
-      ew(false)
+      ek(false)
     }, 500)
   }, []);
-  let ek = e => {
+  let ew = e => {
       null == n || n(), (0, C.openUserProfileModal)(ea({
         customStatusPrompt: eT,
         sourceAnalyticsLocations: ec
@@ -166,9 +166,9 @@ function el(e) {
         "data-layer": "base",
         children: [(0, a.jsx)(Q.A, {
           displayProfile: eo,
-          handleOpenUserProfileModal: ek,
+          handleOpenUserProfileModal: ew,
           height: em
-        }), (0, a.jsxs)(k.A, {
+        }), (0, a.jsxs)(w.A, {
           className: et.BK,
           user: t,
           displayProfile: eo,
@@ -183,7 +183,7 @@ function el(e) {
               user: t,
               displayProfile: eo,
               themeType: $.d.POPOUT,
-              onOpenProfile: es ? true : ek
+              onOpenProfile: es ? true : ew
             }), (0, a.jsx)(D.A, {
               ref: eO,
               user: t,
@@ -202,7 +202,7 @@ function el(e) {
               user: t,
               className: et.Xh,
               nickname: F.Ay.getName(true, null, t),
-              onOpenProfile: es ? true : ek,
+              onOpenProfile: es ? true : ew,
               pronouns: null == eo ? true : eo.pronouns,
               tags: (0, a.jsx)(O.A, {
                 displayProfile: eo,
@@ -220,21 +220,21 @@ function el(e) {
               bio: null == eo ? true : eo.bio,
               hidePersonalInformation: eg,
               onClose: n
-            }), eP && (0, a.jsx)(w.A, {
+            }), eP && (0, a.jsx)(k.A, {
               user: t,
               widgets: null == eo ? true : eo.widgets,
-              onOpenUserProfileModal: ek
+              onOpenUserProfileModal: ew
             }), (0, a.jsx)(N.A, {
               isPremiumUser: eC,
               onInteraction: n
             }), (0, a.jsx)(I.A, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: ek,
+              onOpenUserProfileModal: ew,
               onClose: n
             }), (0, a.jsxs)("div", {
               className: et.T_,
-              children: [(0, a.jsx)(k.A.Overlay, {
+              children: [(0, a.jsx)(w.A.Overlay, {
                 className: et.g0,
                 children: (0, a.jsxs)(z.Gs, {
                   children: [(0, a.jsx)(z.N3, {
@@ -320,7 +320,7 @@ function el(e) {
                     } : true
                   })]
                 })
-              }), (0, a.jsx)(k.A.Overlay, {
+              }), (0, a.jsx)(w.A.Overlay, {
                 className: et.g0,
                 children: (0, a.jsxs)(z.Gs, {
                   children: [(0, a.jsx)(z.N3, {

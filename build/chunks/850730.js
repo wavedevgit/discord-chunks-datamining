@@ -106,7 +106,7 @@ function N() {
       N = null != O && null != (t = _.find(e => e.skuId === O)) ? t : null,
       T = o.A.fontSize,
       I = o.A.messageGroupSpacing,
-      w = h.Xi.getSetting();
+      k = h.Xi.getSetting();
     return () => {
       try {
         r.u_({
@@ -116,7 +116,7 @@ function N() {
         }, f.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(E), (0, u.pX)(N);
         let e = x.A.getAllPending(),
           t = (0, m.Sk)(e);
-        (0, i.yu)(t).finally(i.pZ), (0, s.XS)(T), (0, s.AC)(I), h.Xi.updateSetting(w)
+        (0, i.yu)(t).finally(i.pZ), (0, s.XS)(T), (0, s.AC)(I), h.Xi.updateSetting(k)
       } catch (e) {}
     }
   }, [])

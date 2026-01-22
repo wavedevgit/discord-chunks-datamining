@@ -79,14 +79,14 @@ function D(e) {
   }) : null
 }
 let M = function() {
-  let [e, t] = l.useState(w.pe.TIER_2), [n, j] = l.useState(null), y = (0, o.yK)([N.A], () => N.A.getGuildsArray()), [M] = (0, o.yK)([T.A], () => [T.A.getPremiumSubscription()]), L = y.map(e => ({
+  let [e, t] = l.useState(k.pe.TIER_2), [n, j] = l.useState(null), y = (0, o.yK)([N.A], () => N.A.getGuildsArray()), [M] = (0, o.yK)([T.A], () => [T.A.getPremiumSubscription()]), L = y.map(e => ({
     id: e.id,
     value: e,
     label: e.name
-  })), [U, B] = l.useState(L.length > 0 ? L[0].value : null), [G, F] = l.useState(""), [V, H] = l.useState({
-    plan_id: w.gD.PREMIUM_MONTH_TIER_2,
+  })), [U, B] = l.useState(L.length > 0 ? L[0].value : null), [G, F] = l.useState(""), [V, W] = l.useState({
+    plan_id: k.gD.PREMIUM_MONTH_TIER_2,
     gift: "true"
-  }), W = "true" !== V.gift && null != M, [K, z] = l.useState(L.length > 0 ? L[0].value : null), {
+  }), H = "true" !== V.gift && null != M, [K, z] = l.useState(L.length > 0 ? L[0].value : null), {
     analyticsLocations: q
   } = (0, x.Ay)(f.A.PAYMENT_FLOW_TEST_PAGE), [Q, Y] = l.useState(""), [J, X] = l.useState(I.dJq), {
     balance: Z,
@@ -100,7 +100,7 @@ let M = function() {
   return (0, a.jsx)(x.f5, {
     value: q,
     children: (0, a.jsx)(u.IpV, {
-      className: k.XG,
+      className: w.XG,
       children: (0, a.jsxs)(u.BJc, {
         direction: "vertical",
         gap: 24,
@@ -113,15 +113,15 @@ let M = function() {
             value: e,
             options: [{
               id: "tier_2",
-              value: w.pe.TIER_2,
+              value: k.pe.TIER_2,
               label: "Nitro"
             }, {
               id: "tier_1",
-              value: w.pe.TIER_1,
+              value: k.pe.TIER_1,
               label: "Nitro Classic"
             }, {
               id: "tier_0",
-              value: w.pe.TIER_0,
+              value: k.pe.TIER_0,
               label: "Nitro Basic"
             }, {
               id: "none",
@@ -146,15 +146,15 @@ let M = function() {
             value: n,
             options: [{
               id: "tier_2",
-              value: w.pe.TIER_2,
+              value: k.pe.TIER_2,
               label: "Nitro"
             }, {
               id: "tier_1",
-              value: w.pe.TIER_1,
+              value: k.pe.TIER_1,
               label: "Nitro Classic"
             }, {
               id: "tier_0",
-              value: w.pe.TIER_0,
+              value: k.pe.TIER_0,
               label: "Nitro Basic"
             }, {
               id: "none",
@@ -223,19 +223,19 @@ let M = function() {
             value: V.plan_id,
             options: [{
               id: "tier_2",
-              value: w.gD.PREMIUM_MONTH_TIER_2,
+              value: k.gD.PREMIUM_MONTH_TIER_2,
               label: "Nitro"
             }, {
               id: "tier_1",
-              value: w.gD.PREMIUM_MONTH_TIER_1,
+              value: k.gD.PREMIUM_MONTH_TIER_1,
               label: "Nitro Classic"
             }, {
               id: "tier_0",
-              value: w.gD.PREMIUM_MONTH_TIER_0,
+              value: k.gD.PREMIUM_MONTH_TIER_0,
               label: "Nitro Basic"
             }],
             onSelectionChange: e => {
-              H(t => R(P({}, t), {
+              W(t => R(P({}, t), {
                 plan_id: e
               }))
             },
@@ -254,7 +254,7 @@ let M = function() {
               label: "Not Gift"
             }],
             onSelectionChange: e => {
-              H(t => R(P({}, t), {
+              W(t => R(P({}, t), {
                 gift: e
               }))
             },
@@ -263,11 +263,11 @@ let M = function() {
           })]
         }), (0, a.jsx)(c.m_, {
           text: "Already subscribed",
-          shouldShow: W,
+          shouldShow: H,
           children: (0, a.jsx)(u.Button, {
             variant: "primary",
             text: "Open Link",
-            disabled: W,
+            disabled: H,
             onClick: () => {
               window.open(I.BVt.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(P({}, V)))
             }
@@ -282,12 +282,12 @@ let M = function() {
               variant: "text-sm/normal",
               children: "Virtual Currency Balance:"
             }), $ ? (0, a.jsx)("div", {
-              className: k.wG,
+              className: w.wG,
               children: (0, a.jsx)(u.y$y, {
                 type: u.tVU.SPINNING_CIRCLE
               })
             }) : (0, a.jsxs)("div", {
-              className: k.dB,
+              className: w.dB,
               children: [null !== ee && (0, a.jsxs)(u.Text, {
                 variant: "text-sm/normal",
                 children: ["Error fetching Virtual Currency Balance: ", ee.message]

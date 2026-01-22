@@ -56,10 +56,10 @@ function S() {
       var e, t;
       return null != (e = null == T || null == (t = T.linkedGames) ? true : t.map(e => f.A.getApplication(e.id)).filter(e => null != e)) ? e : []
     }),
-    w = (0, h.RD)(T, {
+    k = (0, h.RD)(T, {
       allowedFlows: [h._M.RPC]
     }),
-    k = (0, h.RD)(T, {
+    w = (0, h.RD)(T, {
       allowedFlows: [h._M.WEB]
     }),
     P = (0, h.RD)(T),
@@ -128,15 +128,15 @@ function S() {
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, a.jsx)(c.Button, {
-        disabled: !w.canStartAuthorization,
-        onClick: () => w.startAuthorization({
+        disabled: !k.canStartAuthorization,
+        onClick: () => k.startAuthorization({
           analyticsLocations: o
         }),
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, a.jsx)(c.Button, {
-        disabled: !k.canStartAuthorization,
-        onClick: () => k.startAuthorization({
+        disabled: !w.canStartAuthorization,
+        onClick: () => w.startAuthorization({
           analyticsLocations: o
         }),
         variant: "secondary",

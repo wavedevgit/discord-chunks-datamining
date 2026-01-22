@@ -36,8 +36,8 @@ let E = Chunk64700.memo(function(e) {
       hidePrice: N,
       hidePrimaryCTA: T,
       hideSecondaryCTA: I,
-      badgeOverride: w,
-      skipLimitedTimeCheck: k,
+      badgeOverride: k,
+      skipLimitedTimeCheck: w,
       onClickCard: P,
       onClickPrimaryCTA: R,
       onClickSecondaryCTA: D,
@@ -48,8 +48,8 @@ let E = Chunk64700.memo(function(e) {
       primaryCTAText: G,
       secondaryCTAIcon: F,
       productNameClassName: V,
-      badgeClassName: H,
-      cardClassName: W,
+      badgeClassName: W,
+      cardClassName: H,
       prioritizedCurrency: K,
       onClickAnalytics: z
     } = e, {
@@ -69,7 +69,7 @@ let E = Chunk64700.memo(function(e) {
         ref: ee,
         onClick: null != P ? P : ea,
         "aria-label": $,
-        className: r()(W, O.ty, {
+        className: r()(H, O.ty, {
           [O.yo]: et
         }),
         onFocus: () => null == U ? true : U(t.skuId),
@@ -91,10 +91,10 @@ let E = Chunk64700.memo(function(e) {
             className: O.N1,
             children: [(0, a.jsx)(h.A, {
               skuId: t.skuId,
-              badgeOverride: w,
-              className: H,
+              badgeOverride: k,
+              className: W,
               prioritizedCurrency: K,
-              skipLimitedTimeCheck: k
+              skipLimitedTimeCheck: w
             }), !n && (0, a.jsx)(_.A, {
               skuId: t.skuId,
               isCardHovered: et

@@ -151,7 +151,7 @@ function Y(e) {
     taskDetails: f
   } = l.useContext(L.T), {
     expansionSpring: x
-  } = l.useContext(k.PW), b = l.useRef(null), j = (0, c.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), A = l.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), S = (0, _.NA)({
+  } = l.useContext(w.PW), b = l.useRef(null), j = (0, c.bG)([g.A], () => g.A.isEnrolling(o.id), [o]), A = l.useMemo(() => (0, C.tW)(o, C.fY.QUEST_BAR_HERO), [o]), S = (0, _.NA)({
     quest: o
   }), O = l.useMemo(() => (0, C.tW)(o, C.fY.HERO_IMAGE), [o]), E = l.useMemo(() => null == O ? {} : {
     backgroundImage: "url(".concat(O.url, ")")
@@ -181,7 +181,7 @@ function Y(e) {
             className: K.DD,
             color: "text-strong",
             variant: "heading-md/medium",
-            children: W.intl.format(W.t.EQa7os, {
+            children: H.intl.format(H.t.EQa7os, {
               questName: o.config.messages.questName
             })
           }), (0, a.jsx)(m.Text, {
@@ -202,7 +202,7 @@ function Y(e) {
             loading: j,
             text: S,
             size: "sm",
-            icon: (0, w.Oz)(o),
+            icon: (0, k.Oz)(o),
             fullWidth: true
           })
         })]
@@ -257,10 +257,10 @@ function J(e) {
     taskDetails: d
   } = l.useContext(L.T), {
     expansionSpring: u
-  } = l.useContext(k.PW), m = (null == (t = c.userStatus) ? true : t.completedAt) != null, p = d.percentComplete > 0, h = (0, A.Vn)(c), [f, x, g] = (0, A.Qo)(c, d), j = l.useRef(null), y = l.useRef(null), _ = (0, A.RR)({
+  } = l.useContext(w.PW), m = (null == (t = c.userStatus) ? true : t.completedAt) != null, p = d.percentComplete > 0, h = (0, A.Vn)(c), [f, x, g] = (0, A.Qo)(c, d), j = l.useRef(null), y = l.useRef(null), _ = (0, A.RR)({
     quest: c
   }), C = (0, O.vv)(c), E = (0, A.I3)(c), N = l.useCallback(() => {
-    (0, w.d5)({
+    (0, k.d5)({
       quest: c,
       questContent: v.uF.QUEST_BAR_V2,
       sourceQuestContent: v.uF.QUEST_BAR_V2,
@@ -271,7 +271,7 @@ function J(e) {
     children: [(0, a.jsx)(s.animated.div, {
       className: r()(K.tv, K.ag),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(H.V, ", ").concat(H.u, ")"),
+        backgroundImage: "linear-gradient(90deg, ".concat(W.V, ", ").concat(W.u, ")"),
         opacity: u.to({
           range: [0, 1],
           output: [1, 0]
@@ -321,13 +321,13 @@ function J(e) {
     }), (0, a.jsx)("div", {
       className: r()(K.tv, K.Sx),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(H.V, ", ").concat(H.u, ")")
+        backgroundImage: "linear-gradient(90deg, ".concat(W.V, ", ").concat(W.u, ")")
       }
     })]
   })
 }
 async function X(e, t, n, a) {
-  (0, O.vv)(e) ? await (0, w.e0)(e, {
+  (0, O.vv)(e) ? await (0, k.e0)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: a,
@@ -355,7 +355,7 @@ let Z = Chunk64700.forwardRef(function(e, t) {
     quest: p
   } = l.useContext(L.T), {
     expansionSpring: h
-  } = l.useContext(k.PW), {
+  } = l.useContext(w.PW), {
     launchInGameActivity: f
   } = (0, A.zW)(p), x = (0, E.vA)(p), g = l.useCallback(async () => {
     let e = x ? b.Cy.START_QUEST : b.Cy.ACCEPT_QUEST;

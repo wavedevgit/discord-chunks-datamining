@@ -30,7 +30,7 @@ let g = Chunk64700.forwardRef(function(e, t) {
     taskDetails: _,
     isExpanded: A,
     isExpansionAnimationComplete: C
-  } = l.useContext(p.T), S = (null == (n = y.userStatus) ? true : n.completedAt) != null, O = (0, c.I3)(y), E = l.useRef(null), N = (null == (i = y.userStatus) ? true : i.enrolledAt) != null, T = null != O ? O.percentComplete : _.percentComplete, [I, w] = l.useState(false);
+  } = l.useContext(p.T), S = (null == (n = y.userStatus) ? true : n.completedAt) != null, O = (0, c.I3)(y), E = l.useRef(null), N = (null == (i = y.userStatus) ? true : i.enrolledAt) != null, T = null != O ? O.percentComplete : _.percentComplete, [I, k] = l.useState(false);
   return (0, a.jsxs)(a.Fragment, {
     children: [S && (0, a.jsx)(m.A, {
       overlayRef: v,
@@ -50,8 +50,8 @@ let g = Chunk64700.forwardRef(function(e, t) {
         }),
         backgroundImage: S ? "linear-gradient(90deg, ".concat(x.V, ", ").concat(x.u, ")") : true
       },
-      onMouseEnter: () => w(true),
-      onMouseLeave: () => w(false),
+      onMouseEnter: () => k(true),
+      onMouseLeave: () => k(false),
       children: (0, a.jsxs)("div", {
         className: b.o8,
         children: [S && (0, a.jsxs)(a.Fragment, {

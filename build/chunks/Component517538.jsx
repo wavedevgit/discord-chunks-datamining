@@ -103,8 +103,8 @@ function y() {
     krispModelOverride: N,
     inputMode: T,
     echoCancellation: I,
-    autoThreshold: w,
-    vadUseKrisp: k,
+    autoThreshold: k,
+    vadUseKrisp: w,
     vadKrispActivationThreshold: P,
     noiseCancellation: R,
     noiseSuppression: D,
@@ -131,12 +131,12 @@ function y() {
     null == (e = A.current) || e.stop(), A.current = null, _(null)
   }, []);
 
-  function H() {
+  function W() {
     f.A.getMediaEngine().stopRecordingRawSamples()
   }
 
-  function W(e) {
-    if (t && H(), V(), null == F) return;
+  function H(e) {
+    if (t && W(), V(), null == F) return;
     let n = F.createBufferSource();
     n.buffer = e.audioBuffer, C.current = F.createGain(), C.current.gain.value = S, n.connect(C.current), C.current.connect(F.destination), n.loop = true, n.start(), A.current = n, _(e)
   }
@@ -210,18 +210,18 @@ function y() {
       }), T === x.TB.VOICE_ACTIVITY && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(c.dOG, {
           label: "Auto Threshold",
-          checked: w,
+          checked: k,
           onChange: e => d.A.setMode(x.TB.VOICE_ACTIVITY, {
             autoThreshold: e
           })
-        }), w && (0, a.jsxs)(a.Fragment, {
+        }), k && (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(c.dOG, {
             label: "Use Krisp VAD",
-            checked: k,
+            checked: w,
             onChange: e => d.A.setMode(x.TB.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
-          }), k && (0, a.jsx)(c.Apm, {
+          }), w && (0, a.jsx)(c.Apm, {
             label: "Krisp VAD Activation Threshold",
             initialValue: P,
             onValueChange: e => d.A.setMode(x.TB.VOICE_ACTIVITY, {
@@ -248,7 +248,7 @@ function y() {
           children: "Recorder"
         }), (0, a.jsx)(o.$n, {
           color: t ? o.$n.Colors.RED : o.$n.Colors.BRAND,
-          onClick: t ? H : function() {
+          onClick: t ? W : function() {
             V(), n(true), d.A.setLoopback("krisp_test", true), f.A.getMediaEngine().startRecordingRawSamples((t, a, l) => {
               n(false), d.A.setLoopback("krisp_test", false);
               let i = new AudioBuffer({
@@ -289,7 +289,7 @@ function y() {
         }), i.map((e, t) => (0, a.jsx)(j, {
           recording: e,
           playing: e === y,
-          onPlay: W,
+          onPlay: H,
           onStop: V
         }, t))]
       })]

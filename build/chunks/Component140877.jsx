@@ -33,8 +33,8 @@ let y = e => {
       isRented: S,
       rentalExpiresAt: O
     } = (0, p.h)(t), E = (0, u.G0)(t), N = (0, u.tt)(t), T = l.useMemo(() => (0, u.fT)(t, y), [t, y]), I = (0, b.V_)(t), {
-      checkoutEligiblePrices: w,
-      hasSufficientOrbs: k,
+      checkoutEligiblePrices: k,
+      hasSufficientOrbs: w,
       shouldCheckoutWithOrbs: P
     } = (0, g.FI)({
       product: t,
@@ -81,13 +81,13 @@ let y = e => {
       color: "text-strong",
       lineClamp: 1,
       children: v.intl.string(v.t.rt69oo)
-    }) : 0 === w.length ? null : (0, a.jsx)(h.x, {
-      price: w[0],
+    }) : 0 === k.length ? null : (0, a.jsx)(h.x, {
+      price: k[0],
       discount: T,
       nitroIconType: y ? "default" : true,
       nitroIconSize: "sm",
       discountOfferAmount: I,
-      className: P && !k ? j.c : true,
+      className: P && !w ? j.c : true,
       variant: "text-md/bold"
     })
   },

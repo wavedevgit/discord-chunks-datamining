@@ -78,7 +78,7 @@ function y() {
       palette: e,
       preview: true
     }))
-  }, []), w = (0, l.useCallback)(e => {
+  }, []), k = (0, l.useCallback)(e => {
     E(e)
   }, [E]);
   return (0, a.jsxs)(a.Fragment, {
@@ -138,7 +138,7 @@ function y() {
             return (0, a.jsx)(A, {
               src: t,
               onSetStatic: T,
-              removeAsset: w
+              removeAsset: k
             }, t)
           })
         }), (0, a.jsx)(S, {

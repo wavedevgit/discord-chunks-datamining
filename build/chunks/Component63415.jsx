@@ -133,11 +133,11 @@ let y = e => {
     })
   },
   _ = () => {
-    let [e, t] = l.useState(false), [n, s] = l.useState(false), [_, A] = l.useState(false), [C, S] = l.useState(5e3), [O, E] = l.useState(false), N = l.useRef(null), T = (0, r.bG)([g.default], () => g.default.getCurrentUser()), I = (0, h.L)(), [w] = l.useState(() => (0, f.YQ)({
+    let [e, t] = l.useState(false), [n, s] = l.useState(false), [_, A] = l.useState(false), [C, S] = l.useState(5e3), [O, E] = l.useState(false), N = l.useRef(null), T = (0, r.bG)([g.default], () => g.default.getCurrentUser()), I = (0, h.L)(), [k] = l.useState(() => (0, f.YQ)({
       finishSetup: async () => true,
       perkAvailableToUser: I
     })), {
-      installationStatus: k,
+      installationStatus: w,
       setInstallationStatus: P,
       connectionStatus: R,
       setConnectionStatus: D,
@@ -148,10 +148,10 @@ let y = e => {
       setIsSupportedPrivateBrowsingPerkPlatform: G,
       isWeb: F,
       isSupportedPrivateBrowsingPerkPlatform: V,
-      setGetWarpInstallationStatus: H,
-      perkAvailableToUser: W,
+      setGetWarpInstallationStatus: W,
+      perkAvailableToUser: H,
       setPerkAvailableToUser: K
-    } = (0, i.P)(w), z = l.useCallback(async () => (D(m.l7.INITIALIZING), t(setTimeout(() => {
+    } = (0, i.P)(k), z = l.useCallback(async () => (D(m.l7.INITIALIZING), t(setTimeout(() => {
       D(m.l7.CONNECTED)
     }, 1e3)), true), [D, t]);
     l.useEffect(() => {
@@ -161,8 +161,8 @@ let y = e => {
     l.useEffect(() => {
       K(I)
     }, [I, K]), l.useEffect(() => {
-      H(q)
-    }, [H, q]);
+      W(q)
+    }, [W, q]);
     let Q = l.useCallback(async () => (clearTimeout(e), D(m.l7.DISCONNECTED), true), [e, D]),
       Y = l.useCallback(() => new Promise((e, t) => {
         P(m.Lk.INSTALLING), s(setTimeout(() => {
@@ -170,16 +170,16 @@ let y = e => {
         }, C))
       }), [_, C, P, s]);
     l.useEffect(() => {
-      F && k !== m.Lk.UNKNOWN && P(m.Lk.UNKNOWN)
-    }, [F, P, k]), l.useEffect(() => {
+      F && w !== m.Lk.UNKNOWN && P(m.Lk.UNKNOWN)
+    }, [F, P, w]), l.useEffect(() => {
       L(Q)
     }, [Q, L]), l.useEffect(() => {
       U(Y)
     }, [Y, U]), l.useEffect(() => {
-      k !== m.Lk.INSTALLING && clearTimeout(n)
-    }, [n, k]), l.useEffect(() => {
-      if (k !== m.Lk.INSTALLED && R !== m.l7.INITIALIZING) return void D(m.l7.INITIALIZING)
-    }, [k, R, D]);
+      w !== m.Lk.INSTALLING && clearTimeout(n)
+    }, [n, w]), l.useEffect(() => {
+      if (w !== m.Lk.INSTALLED && R !== m.l7.INITIALIZING) return void D(m.l7.INITIALIZING)
+    }, [w, R, D]);
     let {
       enabled: J
     } = p.S.useConfig({
@@ -207,9 +207,9 @@ let y = e => {
               },
               children: (0, a.jsx)(o.dOG, {
                 onChange: () => {
-                  W ? (0, u.O)(null, T) : (0, u.O)(v.$I, T)
+                  H ? (0, u.O)(null, T) : (0, u.O)(v.$I, T)
                 },
-                checked: W
+                checked: H
               })
             })]
           }), (0, a.jsxs)(x.MG, {
@@ -242,7 +242,7 @@ let y = e => {
             children: (0, a.jsx)(c.l6P, {
               label: "Installation Status",
               onSelectionChange: P,
-              value: k,
+              value: w,
               disabled: F,
               options: [{
                 id: "unknown",
@@ -284,7 +284,7 @@ let y = e => {
               selectionMode: "single",
               fullWidth: true
             })
-          }), k === m.Lk.INSTALLED && (0, a.jsx)(x.MG, {
+          }), w === m.Lk.INSTALLED && (0, a.jsx)(x.MG, {
             children: (0, a.jsx)(c.l6P, {
               label: "Connection Status",
               onSelectionChange: D,
@@ -310,7 +310,7 @@ let y = e => {
               fullWidth: true
             })
           })]
-        }), k === m.Lk.NOT_INSTALLED && (0, a.jsxs)(x.LB, {
+        }), w === m.Lk.NOT_INSTALLED && (0, a.jsxs)(x.LB, {
           children: [(0, a.jsxs)(x.MG, {
             children: [(0, a.jsx)(o.EYj, {
               variant: "text-md/semibold",
@@ -360,7 +360,7 @@ let y = e => {
           })]
         })]
       }), (0, a.jsxs)(f.y0.Provider, {
-        value: w,
+        value: k,
         children: [(0, a.jsxs)(x.wn, {
           children: [(0, a.jsx)(o.DZT, {
             variant: "heading-lg/medium",

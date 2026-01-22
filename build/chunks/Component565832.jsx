@@ -32,6 +32,7 @@ function c(e) {
     hidePrivateData: false,
     premiumSubscription: true,
     speakingWhileMuted: false,
+    speakingWhilePTTInactive: false,
     occluded: false,
     dismissibleContents: {
       avatar: [],

@@ -84,7 +84,7 @@ function I(e) {
     text: (0, j.WM)(l)
   })
 }
-let w = e => {
+let k = e => {
     let {
       quest: t,
       sourceQuestContent: n
@@ -101,7 +101,7 @@ let w = e => {
       text: r
     })
   },
-  k = e => {
+  w = e => {
     var t;
     let {
       quest: n,
@@ -232,7 +232,7 @@ let w = e => {
       taskDetails: h
     }) : (0, v.vA)(d) ? j = (0, a.jsx)(P, {
       quest: d
-    }) : o === m.X0.CONSOLE && i ? j = (0, a.jsx)(k, {
+    }) : o === m.X0.CONSOLE && i ? j = (0, a.jsx)(w, {
       quest: d,
       sourceQuestContent: n
     }) : b && (0, v.ui)(d) ? j = (0, a.jsx)(R, {
@@ -242,7 +242,7 @@ let w = e => {
       popoutTargetElementRef: c,
       onGameSheetOpened: u,
       onGameSheetClosed: p
-    }) : b && (j = (0, a.jsx)(w, {
+    }) : b && (j = (0, a.jsx)(k, {
       quest: d,
       sourceQuestContent: n
     })), null == j ? null : (0, a.jsx)("div", {

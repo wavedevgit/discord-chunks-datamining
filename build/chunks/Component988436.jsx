@@ -36,7 +36,7 @@ function O(e) {
     transitionState: y,
     onClose: O,
     sourceQuestContent: N
-  } = e, [T, I] = (0, l.useState)(i), w = (0, b.UX)(), k = (0, h.Ut)(), P = null == (t = (0, f.vU)()) ? true : t.getId(), R = (0, o.bG)([m.A], () => m.A.useReducedMotion), D = (0, _.Xf)({
+  } = e, [T, I] = (0, l.useState)(i), k = (0, b.UX)(), w = (0, h.Ut)(), P = null == (t = (0, f.vU)()) ? true : t.getId(), R = (0, o.bG)([m.A], () => m.A.useReducedMotion), D = (0, _.Xf)({
     useReducedMotion: R,
     className: S.Zf
   }), M = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.YL)(n), U = (0, o.bG)([p.A], () => p.A.getState().theme), B = (0, d.Mw)(U) ? A.NJ.DARK : A.NJ.LIGHT, {
@@ -45,7 +45,7 @@ function O(e) {
   } = (0, b.Wj)({
     questId: n.id,
     beforeRequest: () => {
-      D.startAnimation(), k({
+      D.startAnimation(), w({
         questId: n.id,
         questContent: x.uF.CONNECTIONS_MODAL,
         questContentCTA: h.Cy.DEFIBRILLATOR,
@@ -60,7 +60,7 @@ function O(e) {
     transitionState: y,
     onClose: O,
     title: C.intl.string(C.t.W5lmKt),
-    subtitle: w.message,
+    subtitle: k.message,
     actions: [{
       variant: "secondary",
       onClick: () => void(O(), (0, v.b6)({

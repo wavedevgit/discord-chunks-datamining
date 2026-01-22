@@ -153,7 +153,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.wu)(), i = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, y] = l.useState(true), O = l.useRef({}), [E, T] = l.useState(false), [I, w] = l.useState(false), [k, P] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
+    } = (0, h.wu)(), i = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [j, y] = l.useState(true), O = l.useRef({}), [E, T] = l.useState(false), [I, k] = l.useState(false), [w, P] = l.useState([]), [R, D] = l.useState(C), M = l.useRef([]), [L, U] = l.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), G = l.useMemo(() => ({
       id: S,
       skuId: S,
       title: S,
@@ -161,9 +161,9 @@ let C = {
       accessibilityLabel: S,
       reducedMotionSrc: "",
       thumbnailPreviewSrc: "",
-      effects: k,
+      effects: w,
       animationType: s.l.ANIMATION_TYPE_UNSPECIFIED
-    }), [k]), F = e => {
+    }), [w]), F = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
     }, V = (e, t) => {
@@ -194,27 +194,27 @@ let C = {
         }
       })
     }, [t.config.stillFrames]);
-    let H = {
+    let W = {
         effect: t,
         upsertConfig: n
       },
-      W = l.useRef(H);
+      H = l.useRef(W);
     return (l.useEffect(() => {
-      W.current = H
+      H.current = W
     }), l.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
-      } = W.current;
+      } = H.current;
       e.readonly || t({
         skuId: e.skuId,
         name: L,
         config: {
-          effects: k,
+          effects: w,
           stillFrames: R
         }
       })
-    }, [k, R, L]), l.useEffect(() => () => {
+    }, [w, R, L]), l.useEffect(() => () => {
       M.current.forEach(e => {
         URL.revokeObjectURL(e)
       }), M.current = []
@@ -231,7 +231,7 @@ let C = {
           onChange: e => {
             let t = F(e);
             null != t && (0, f.Mz)(t, async e => {
-              let n = await (0, f.Ay)(e, t, k.length);
+              let n = await (0, f.Ay)(e, t, w.length);
               P(e => [...e, n])
             })
           },
@@ -309,7 +309,7 @@ let C = {
                 checked: I,
                 className: b.OO,
                 onChange: () => {
-                  w(!I)
+                  k(!I)
                 }
               })]
             })]
@@ -374,7 +374,7 @@ let C = {
             }), (0, a.jsxs)("div", {
               className: b.nM,
               children: [(0, a.jsx)(d.A, {
-                fileContents: () => (0, f.rs)(t.name, k),
+                fileContents: () => (0, f.rs)(t.name, w),
                 contentType: "text/plain",
                 fileName: "".concat(B, "_timing_config.txt"),
                 children: (0, a.jsx)(c.Button, {
@@ -387,7 +387,7 @@ let C = {
                   name: L,
                   readonly: false,
                   config: A(_({}, t.config), {
-                    effects: k,
+                    effects: w,
                     stillFrames: R
                   })
                 })),
@@ -421,7 +421,7 @@ let C = {
                 }, t)
               })
             })]
-          }), k.some(e => {
+          }), w.some(e => {
             var t;
             return (null != (t = e.randomizedSources) ? t : []).length > 0
           }) && (0, a.jsxs)("div", {
@@ -465,7 +465,7 @@ let C = {
                 P([]), D(C)
               }
             })
-          }), k.map((e, t) => (0, a.jsxs)("div", {
+          }), w.map((e, t) => (0, a.jsxs)("div", {
             className: b.ec,
             children: [(0, a.jsxs)("div", {
               className: b.D1,

@@ -40,14 +40,14 @@ function P(e) {
     variant: n = "default"
   } = e;
   return (0, a.jsx)("div", {
-    className: r()(k.Io, {
-      [k.tV]: "brand" === n,
+    className: r()(w.Io, {
+      [w.tV]: "brand" === n,
       "theme-light": "default" === n
     }),
     children: (0, a.jsx)(u.Text, {
       variant: "eyebrow",
       color: "brand" === n ? "always-white" : "text-default",
-      className: k.Xi,
+      className: w.Xi,
       children: t
     })
   })
@@ -88,9 +88,9 @@ function R(e) {
     style: j,
     children: (0, a.jsxs)("div", {
       ref: d,
-      className: k.XZ,
+      className: w.XZ,
       children: [(0, a.jsxs)("div", {
-        className: k.M5,
+        className: w.M5,
         children: [(0, a.jsx)(y, {
           size: "xs",
           color: C
@@ -100,7 +100,7 @@ function R(e) {
           children: b.at(0)
         })]
       }), 0 === x && (0, a.jsx)(u.QWc, {
-        text: w.intl.string(w.t["yKJi+/"]),
+        text: k.intl.string(k.t["yKJi+/"]),
         onClick: () => (0, _.i)({
           quest: n,
           errorHints: i,
@@ -125,12 +125,12 @@ function D(e) {
     onCtxMenuOpen: B,
     onCtxMenuSelect: G,
     sourceQuestContent: F
-  } = e, V = (0, j.IO)(_), H = (0, p.Ay)(), W = ((0, d.Mw)(H) ? I.NJ8.DARK : I.NJ8.LIGHT) === I.NJ8.DARK, K = (0, g.LS)(_), z = (null == (n = _.userStatus) ? true : n.claimedAt) != null, q = (0, g.S5)(_.config.expiresAt, {
+  } = e, V = (0, j.IO)(_), W = (0, p.Ay)(), H = ((0, d.Mw)(W) ? I.NJ8.DARK : I.NJ8.LIGHT) === I.NJ8.DARK, K = (0, g.LS)(_), z = (null == (n = _.userStatus) ? true : n.claimedAt) != null, q = (0, g.S5)(_.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), Q = (null == (i = _.userStatus) ? true : i.enrolledAt) != null, Y = (null == (s = _.userStatus) ? true : s.completedAt) != null, {
     onAssetLoadComplete: J
-  } = l.useContext(E.M), X = W ? "text-muted" : "always-white", Z = l.useCallback(() => {
+  } = l.useContext(E.M), X = H ? "text-muted" : "always-white", Z = l.useCallback(() => {
     V && (0, O.d5)({
       quest: _,
       questContent: b.uF.QUEST_HOME_DESKTOP,
@@ -139,9 +139,9 @@ function D(e) {
     })
   }, [V, _, F]), $ = (0, o.bG)([x.A], () => x.A.getQuestHomeTakeoverConfig()), ee = l.useMemo(() => null != $ && (0, y.f0)($, _.id), [$, _.id]);
   return (0, a.jsxs)("div", {
-    className: k.kL,
+    className: w.kL,
     children: [(0, a.jsx)("div", {
-      className: k.IC,
+      className: w.IC,
       children: (0, a.jsx)(A.A, {
         quest: _,
         isInteracting: T,
@@ -150,43 +150,43 @@ function D(e) {
           width: 1320,
           height: 370
         },
-        containerClassName: k.l1
+        containerClassName: w.l1
       })
     }), (0, a.jsx)("div", {
-      className: r()(k.Lw, {
-        [k.So]: H === I.NJ8.LIGHT,
-        [k.en]: H === I.NJ8.DARK,
-        [k.FN]: H === I.NJ8.DARKER,
-        [k.QQ]: H === I.NJ8.MIDNIGHT
+      className: r()(w.Lw, {
+        [w.So]: W === I.NJ8.LIGHT,
+        [w.en]: W === I.NJ8.DARK,
+        [w.FN]: W === I.NJ8.DARKER,
+        [w.QQ]: W === I.NJ8.MIDNIGHT
       })
     }), (0, a.jsxs)("div", {
-      className: k.nX,
+      className: w.nX,
       children: [(0, a.jsxs)("div", {
-        className: k.PG,
+        className: w.PG,
         children: [(0, a.jsxs)("div", {
-          className: k.mY,
+          className: w.mY,
           children: [(ee || _.preview) && (0, a.jsxs)(u.BJc, {
-            className: k.Bv,
+            className: w.Bv,
             direction: "horizontal",
             fullWidth: false,
             gap: 8,
             children: [ee && !(0, v.Ic)(_) && (0, a.jsx)(P, {
-              children: w.intl.string(w.t.Jt6u7B)
+              children: k.intl.string(k.t.Jt6u7B)
             }), _.preview && (0, a.jsx)(P, {
               variant: "brand",
-              children: w.intl.string(w.t.SKNnqq)
+              children: k.intl.string(k.t.SKNnqq)
             })]
           }), V && (0, a.jsx)(c.m, {
-            text: Y ? w.intl.string(w.t.YsCuyF) : Q ? w.intl.string(w.t["74KqrR"]) : (0, v.Ic)(_) ? w.intl.string(w.t.I6JG46) : w.intl.string(w.t.umdNin),
+            text: Y ? k.intl.string(k.t.YsCuyF) : Q ? k.intl.string(k.t["74KqrR"]) : (0, v.Ic)(_) ? k.intl.string(k.t.I6JG46) : k.intl.string(k.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, a.jsx)(u.DUT, {
-              className: k.iI,
-              "aria-label": w.intl.string(w.t.RscU7I),
+              className: w.iI,
+              "aria-label": k.intl.string(k.t.RscU7I),
               onClick: Z,
               children: (0, a.jsx)(u.udU, {
                 color: "currentColor",
-                className: k.A9
+                className: w.A9
               })
             })
           }), (0, a.jsx)(C.C, {
@@ -219,12 +219,12 @@ function D(e) {
                 }
                 return e
               }({}, e), n = n = {
-                className: k.iI,
-                "aria-label": w.intl.string(w.t.DEoVWZ),
+                className: w.iI,
+                "aria-label": k.intl.string(k.t.DEoVWZ),
                 children: (0, a.jsx)(u.jNK, {
                   size: "md",
                   color: "currentColor",
-                  className: k.A9
+                  className: w.A9
                 })
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -242,25 +242,25 @@ function D(e) {
           showPlaceholder: !L,
           width: 100,
           height: 30,
-          className: k.Iu,
+          className: w.Iu,
           children: (0, a.jsx)(S.Ay, {
-            className: k.Iu,
-            logotypeClassName: k.ND,
+            className: w.Iu,
+            logotypeClassName: w.ND,
             quest: _,
             separatorSpacing: S.C8.MEDIUM,
             withGameTile: false,
             onLoadComplete: J
           })
         }), (0, a.jsxs)("div", {
-          className: k.E_,
+          className: w.E_,
           children: [(0, a.jsxs)("span", {
-            className: k.O,
+            className: w.O,
             children: [(0, a.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: X,
-              children: w.intl.string(w.t.VAbKhK)
+              children: k.intl.string(k.t.VAbKhK)
             }), (0, a.jsx)(h.A, {
-              className: k.w$,
+              className: w.w$,
               size: 16,
               color: u.LU0.unsafe_rawColors.GREEN_360.css,
               allowFullSizedIcon: true,
@@ -278,7 +278,7 @@ function D(e) {
           }), K || z ? null : (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: X,
-            children: w.intl.format(w.t["7D8r4F"], {
+            children: k.intl.format(k.t["7D8r4F"], {
               expiryDate: q
             })
           })]
@@ -287,7 +287,7 @@ function D(e) {
         quest: _,
         errorHints: D,
         warningHints: M,
-        isDarkTheme: W,
+        isDarkTheme: H,
         sourceQuestContent: F
       })]
     })]

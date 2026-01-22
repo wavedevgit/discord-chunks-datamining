@@ -72,7 +72,7 @@ function U(e) {
   } = (0, y.TQ)({
     quest: i,
     location: R.rE.QUESTS_BAR
-  }), F = (0, o.bG)([u.A], () => u.A.hasLayers()), V = l.useRef(null), H = l.useMemo(() => (0, g.vv)(i), [i]), W = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, K = (0, c.A)(W), z = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+  }), F = (0, o.bG)([u.A], () => u.A.hasLayers()), V = l.useRef(null), W = l.useMemo(() => (0, g.vv)(i), [i]), H = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, K = (0, c.A)(H), z = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: q,
     isLoading: Q
   } = (0, v.Gk)(), Y = l.useContext(T.Z) || h && B && !Q && !U, {
@@ -84,8 +84,8 @@ function U(e) {
     expansionSpring: et,
     visibilitySpring: en,
     springConfig: ea
-  } = (0, w.w)({
-    isQuestAccepted: W,
+  } = (0, k.w)({
+    isQuestAccepted: H,
     isQuestCompleted: z,
     isQuestBarVisible: Y
   }), {
@@ -98,13 +98,13 @@ function U(e) {
     handleBlur: ed,
     handleMouseEnter: eu,
     handleMouseLeave: em
-  } = (0, k.m)({
+  } = (0, w.m)({
     quest: i,
     isExpanded: J,
     setIsExpanded: X,
     expandQuestBar: Z,
     isQuestCompleted: z,
-    isQuestAccepted: W,
+    isQuestAccepted: H,
     prevIsQuestAccepted: K,
     impressionRef: V
   });
@@ -125,8 +125,8 @@ function U(e) {
     ef = l.useRef(null),
     ex = (0, b.fc)(i);
   if (l.useEffect(() => {
-      H && (0, _.l9)()
-    }, [H]), !h || !Y && ee && !Q || q) return q ? d.log("Not rendered due to asset error") : h || d.log("Not rendered due to ineligibility"), null;
+      W && (0, _.l9)()
+    }, [W]), !h || !Y && ee && !Q || q) return q ? d.log("Not rendered due to asset error") : h || d.log("Not rendered due to ineligibility"), null;
   let eb = 70 + 78 * !!z;
   return (0, a.jsx)(j.R, {
     questOrQuests: i,
@@ -159,7 +159,7 @@ function U(e) {
         children: (0, a.jsx)(s.animated.div, {
           className: r()(D.FG, {
             [D.E$]: J,
-            [D.KA]: W
+            [D.KA]: H
           }),
           children: (0, a.jsx)(E.R, {
             springConfig: ea,
@@ -188,7 +188,7 @@ function U(e) {
                   overlayRef: ef,
                   ref: ep,
                   children: (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(I.A, {}), !W && (0, a.jsx)(A.A, {})]
+                    children: [(0, a.jsx)(I.A, {}), !H && (0, a.jsx)(A.A, {})]
                   })
                 }), (0, a.jsx)("div", {
                   ref: ef,

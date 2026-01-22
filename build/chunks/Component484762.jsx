@@ -480,7 +480,7 @@ let ec = Chunk64700.memo(function(e) {
     let n = (0, d.cf)([S.default], () => S.default.getTrackedGames()),
       l = (0, V.getPID)(),
       i = (0, d.bG)([S.default], () => S.default.isOverlayOOPEnabledForPid(l), [l]),
-      [r, s] = (0, d.yK)([k.A], () => [k.A.enabled, k.A.keepOpen]),
+      [r, s] = (0, d.yK)([w.A], () => [w.A.enabled, w.A.keepOpen]),
       o = (0, d.bG)([M.default], () => M.default.getFocusedPID()),
       c = (0, d.bG)([M.default], () => M.default.isFocusedPidOutOfProcess());
     return (0, a.jsxs)("div", {
@@ -885,9 +885,9 @@ let e_ = ["__webpack_require__", "fn"],
             tooltip: "Close",
             onClick: c
           })]
-        }), (0, a.jsxs)(H.OA, {
+        }), (0, a.jsxs)(W.OA, {
           className: J.ZK,
-          children: [(0, a.jsx)(H.mA, {
+          children: [(0, a.jsx)(W.mA, {
             name: "Timestamp",
             copyValue: v.toISOString(),
             children: (0, a.jsx)("time", {
@@ -895,31 +895,31 @@ let e_ = ["__webpack_require__", "fn"],
               title: (0, U.i$)(v, "LLLL"),
               children: (0, U.i$)(v, "L h:mm:ss.SSS")
             })
-          }), (0, a.jsx)(H.mA, {
+          }), (0, a.jsx)(W.mA, {
             name: "Log Type",
             copyValue: m,
             children: (0, a.jsx)("code", {
               children: m
             })
-          }), (0, a.jsx)(H.mA, {
+          }), (0, a.jsx)(W.mA, {
             name: "PID",
             copyValue: null != (t = null == g ? true : g.toString()) ? t : "null",
             children: (0, a.jsx)("code", {
               children: null != (n = null == g ? true : g.toString()) ? n : "null"
             })
-          }), (0, a.jsx)(H.mA, {
+          }), (0, a.jsx)(W.mA, {
             name: "Native ID",
             copyValue: null != (l = null == h ? true : h.toString()) ? l : "null",
             children: (0, a.jsx)("code", {
               children: null != (i = null == h ? true : h.toString()) ? i : "null"
             })
-          }), (0, a.jsx)(H.mA, {
+          }), (0, a.jsx)(W.mA, {
             name: "Data",
             copyValue: ey(x),
             children: (0, a.jsx)("code", {
               children: ey(x)
             })
-          }), null != f && (0, a.jsx)(H.mA, {
+          }), null != f && (0, a.jsx)(W.mA, {
             name: "Stack Trace",
             copyValue: f,
             children: (0, a.jsx)("code", {
@@ -981,14 +981,14 @@ function eO() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [_, h, u, o, A]), [E, T] = l.useState(O), [I, k] = l.useState(null), P = l.useMemo(() => _.find(e => e.key === I), [_, I]), R = l.useCallback(e => {
+  }), [_, h, u, o, A]), [E, T] = l.useState(O), [I, w] = l.useState(null), P = l.useMemo(() => _.find(e => e.key === I), [_, I]), R = l.useCallback(e => {
     T(e)
   }, []), {
     renderSelectedTab: D
   } = (0, z.Ay)({
     tabs: eC
   }, []);
-  (0, w.RT)(C, O, R, eS, [_]);
+  (0, k.RT)(C, O, R, eS, [_]);
   let M = l.useCallback(e => {
       s(e), x.A.setModuleLogging(e)
     }, []),
@@ -1004,7 +1004,7 @@ function eO() {
       null != F.current && clearTimeout(F.current)
     }
   }, [U]);
-  let H = l.useCallback(e => {
+  let W = l.useCallback(e => {
       y(null != e ? JSON.parse(e) : null)
     }, []),
     q = l.useCallback(e => {
@@ -1012,12 +1012,12 @@ function eO() {
       (0, p.qfG)(e => (0, a.jsx)(ex, {
         modalProps: e,
         onClose: t => {
-          H(t), e.onClose()
+          W(t), e.onClose()
         }
       }), {
         modalKey: "breadcrumb-import-panel"
       }, p.SYi)
-    }, [H]);
+    }, [W]);
   return (0, a.jsxs)("div", {
     ref: e,
     className: J.rh,
@@ -1095,15 +1095,15 @@ function eO() {
         columns: ev,
         data: E,
         selectedRowKey: null != I ? I : true,
-        onClickRow: e => k(e.key)
+        onClickRow: e => w(e.key)
       })
-    }), null != P && (0, a.jsx)(W.A, {
+    }), null != P && (0, a.jsx)(H.A, {
       className: r()(J.st, J.rf),
       minHeight: 100,
       initialHeight: null != t ? t / 3 : 300,
       children: D({
         breadcrumb: P,
-        onClose: () => k(null)
+        onClose: () => w(null)
       })
     })]
   })
@@ -1170,8 +1170,8 @@ let eI = e => {
         returntrue
     }
   },
-  ew = e => null == e ? "Disabled" : e ? "True" : "False",
-  ek = Chunk64700.memo(function() {
+  ek = e => null == e ? "Disabled" : e ? "True" : "False",
+  ew = Chunk64700.memo(function() {
     let e = (0, C.wW)(),
       t = (0, d.bG)([D.Ay], () => D.Ay.getOverlayKeybind());
     return (0, a.jsxs)("div", {
@@ -1196,7 +1196,7 @@ let eI = e => {
       }), (0, a.jsx)(p.l6P, {
         label: "Overlay User Status",
         description: "Override whether the current user was a new or existing user",
-        value: ew(e.overrideIsNewOverlayUser),
+        value: ek(e.overrideIsNewOverlayUser),
         options: [{
           label: "Disabled (no override)",
           value: "Disabled",
@@ -1218,7 +1218,7 @@ let eI = e => {
       }), (0, a.jsx)(p.l6P, {
         label: "Override Previous Keybind Status",
         description: "Override whether the user's pre-experiment keybind was the default keybind",
-        value: ew(e.overrideIsUsingDefaultOverlayKeybind),
+        value: ek(e.overrideIsUsingDefaultOverlayKeybind),
         options: [{
           label: "Disabled (no override)",
           value: "Disabled",
@@ -1256,7 +1256,7 @@ function eP() {
   return (0, a.jsx)(p.ArX, {
     children: (0, a.jsx)("div", {
       className: r()(X.nd, J.rf),
-      children: (0, a.jsx)(ek, {})
+      children: (0, a.jsx)(ew, {})
     })
   })
 }

@@ -166,10 +166,10 @@ let F = "1193992107035983872",
     targetedContent: []
   };
 
-function H() {
+function W() {
   var e, t, i, d, u, R;
-  let [F, H] = l.useState(V), W = l.useCallback(e => {
-    H(M(D({}, e), {
+  let [F, W] = l.useState(V), H = l.useCallback(e => {
+    W(M(D({}, e), {
       preview: true
     }))
   }, []), [K, z] = l.useState(I.b.UNENROLLED), [q, Q] = l.useState(false), [Y, J] = l.useState(false), [X, Z] = l.useState(null), $ = (R = F.config, (0, s.YW)(R).with({
@@ -179,7 +179,7 @@ function H() {
   function ee(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, a;
-      W(M(D({}, F), {
+      H(M(D({}, F), {
         config: (n = F.config, a = {
           [e]: t
         }, (0, s.YW)(n).with({
@@ -215,7 +215,7 @@ function H() {
       default:
         return
     }
-    W(M(D({}, F), {
+    H(M(D({}, F), {
       config: M(D({}, F.config), {
         taskConfigV2: M(D({}, F.config.taskConfigV2), {
           tasks: M(D({}, n), {
@@ -231,7 +231,7 @@ function H() {
   function en(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, a;
-      W(M(D({}, F), {
+      H(M(D({}, F), {
         config: (n = F.config, a = {
           [e]: t
         }, (0, s.YW)(n).with({
@@ -246,7 +246,7 @@ function H() {
   function ea(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var a, l;
-      W(M(D({}, F), {
+      H(M(D({}, F), {
         config: (a = F.config, l = {
           [e]: t
         }, (0, s.YW)(a).with({
@@ -263,7 +263,7 @@ function H() {
   }
 
   function el(e, t) {
-    W(M(D({}, F), {
+    H(M(D({}, F), {
       config: M(D({}, F.config), {
         colors: M(D({}, F.config.colors), {
           [e]: t
@@ -273,12 +273,12 @@ function H() {
   }
 
   function ei() {
-    (0, h.tU)(F.config) && (0, w.hJ)(F, p.uF.GIFT_INVENTORY_FOR_YOU, p.uF.INTERNAL_PREVIEW_TOOL, true)
+    (0, h.tU)(F.config) && (0, k.hJ)(F, p.uF.GIFT_INVENTORY_FOR_YOU, p.uF.INTERNAL_PREVIEW_TOOL, true)
   }
   let er = l.useMemo(() => {
       for (let [e, t] of Object.entries(F.config.taskConfigV2.tasks))
         if (null != t.target) return t.target;
-      return 10 * k.A.Seconds.MINUTE
+      return 10 * w.A.Seconds.MINUTE
     }, [F.config.taskConfigV2.tasks]),
     es = l.useMemo(() => o.n.WATCH_VIDEO in F.config.taskConfigV2.tasks, [F.config.taskConfigV2.tasks]);
   r()(false !== F.preview && null != F.preview, "Preview config must have property preview: true");
@@ -301,7 +301,7 @@ function H() {
               n = t.progressSeconds,
               a = t.targetSeconds;
             return n / a >= 1 ? I.b.COMPLETED_100 : n / a >= .75 ? I.b.COMPLETED_75 : n / a >= .5 ? I.b.COMPLETED_50 : n / a >= .25 ? I.b.COMPLETED_25 : I.b.ENROLLED
-          }(e)), W(e))
+          }(e)), H(e))
         },
         quest: X
       })
@@ -315,7 +315,7 @@ function H() {
         taskDuration: er,
         taskConfigV2: F.config.taskConfigV2,
         onSelect: function(e) {
-          W(M(D({}, F), {
+          H(M(D({}, F), {
             config: M(D({}, F.config), {
               taskConfigV2: e
             })
@@ -353,7 +353,7 @@ function H() {
           let l = M(D({}, a.messages), {
             [e]: t
           });
-          W(M(D({}, F), {
+          H(M(D({}, F), {
             config: M(D({}, F.config), {
               taskConfigV2: M(D({}, F.config.taskConfigV2), {
                 tasks: M(D({}, n), {
@@ -453,7 +453,7 @@ function H() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var a;
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 config: (a = F.config, (0, s.YW)(a).with({
                   configVersion: 2
                 }, e => M(D({}, e), {
@@ -511,19 +511,19 @@ function H() {
         onChange: function(e) {
           switch (z(e), e) {
             case I.b.UNENROLLED:
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 userStatus: null
               }));
               break;
             case I.b.ENROLLED:
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case I.b.COMPLETED_25:
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * er
@@ -531,7 +531,7 @@ function H() {
               }));
               break;
             case I.b.COMPLETED_50:
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * er
@@ -539,7 +539,7 @@ function H() {
               }));
               break;
             case I.b.COMPLETED_75:
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 userStatus: G({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * er
@@ -547,7 +547,7 @@ function H() {
               }));
               break;
             case I.b.COMPLETED_100:
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 userStatus: G({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -556,7 +556,7 @@ function H() {
               }));
               break;
             case I.b.CLAIMED:
-              W(M(D({}, F), {
+              H(M(D({}, F), {
                 userStatus: G({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -702,7 +702,7 @@ function H() {
     })]
   })
 }
-class W extends Chunk64700.Component {
+class H extends Chunk64700.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -731,7 +731,7 @@ class W extends Chunk64700.Component {
           children: e.message
         })
       })]
-    }) : (0, a.jsx)(H, {}, t)
+    }) : (0, a.jsx)(W, {}, t)
   }
   constructor(...e) {
     super(...e), R(this, "state", {
@@ -745,4 +745,4 @@ class W extends Chunk64700.Component {
     })
   }
 }
-let K = W
+let K = H

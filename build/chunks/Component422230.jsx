@@ -36,16 +36,16 @@ let O = e => {
     isWeb: T,
     connectionStatus: I
   } = (0, v.lV)(), {
-    enabled: w
+    enabled: k
   } = b.S.useConfig({
     location: "private_browsing_perk_settings_page"
-  }), k = (0, l.useCallback)(() => {
+  }), w = (0, l.useCallback)(() => {
     (0, c.A)(j.BVt.NITRO_HOME), t()
   }, [t]), P = (0, l.useCallback)(() => {
     (0, p.openUserSettings)(m.X.PRIVATE_BROWSING_PANEL, {
       section: j.nc_.PRIVATE_BROWSING
     })
-  }, []), R = [x.l7.CONNECTED].includes(I), D = N && w && ![x.Lk.ZERO_TRUST, x.Lk.ERROR].includes(O) && !T && (!n || E), M = (0, l.useMemo)(() => {
+  }, []), R = [x.l7.CONNECTED].includes(I), D = N && k && ![x.Lk.ZERO_TRUST, x.Lk.ERROR].includes(O) && !T && (!n || E), M = (0, l.useMemo)(() => {
     switch (I) {
       case x.l7.CONNECTED:
         return A.intl.string(_.default.FBu3XJ);
@@ -79,7 +79,7 @@ let O = e => {
           color: "text-subtle",
           children: R ? A.intl.format(_.default.zwW10o, {
             onClick: () => {
-              (0, r.u)(j.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), k()
+              (0, r.u)(j.HAw.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), w()
             }
           }) : A.intl.format(_.default.D4hu0v, {
             onClick: () => {
@@ -98,7 +98,7 @@ let O = e => {
           })
         })
     }
-  }, [O, E, R, P, k]), {
+  }, [O, E, R, P, w]), {
     analyticsLocations: B
   } = (0, o.Ay)(s.A.MASKED_LINK);
   return ((0, l.useEffect)(() => {
