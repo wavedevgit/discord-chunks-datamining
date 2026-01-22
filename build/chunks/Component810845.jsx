@@ -1,5 +1,5 @@
 /** Chunk was on 84841 **/
-/** chunk id: 810845, original params: e,t,l (module,exports,require) **/
+/** chunk id: 810845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
 });
@@ -17,18 +17,18 @@ var Chunk627968 = require("./627968.js"),
 
 function p(e, t) {
   let {
-    enabled: l
+    enabled: n
   } = o.A.useConfig({
     location: "useCallTilePopoutItem"
-  }), p = (0, r.bG)([u.A], () => u.A.getParticipant(e, t)), b = (0, r.bG)([u.A], () => u.A.isParticipantPoppedOut(e, t)), h = i.useCallback(() => {
+  }), p = (0, r.bG)([u.A], () => u.A.getParticipant(e, t)), b = (0, r.bG)([u.A], () => u.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
     null != p && ((0, A.Ay)(p) && (0, s.A9)(p.stream, {
       forceMultiple: true
     }), d.A.popoutParticipant(e, p.id), c.openCallTilePopout(e, p.id))
   }, [p, e]);
-  return b || null == p || !l || p.type === A.lp.ACTIVITY ? null : (0, n.jsx)(a.Drp, {
+  return b || null == p || !n || p.type === A.lp.ACTIVITY ? null : (0, l.jsx)(a.Drp, {
     id: "call-tile-popout",
     label: (0, A.Ay)(p) ? g.intl.string(g.t.Cm4aDQ) : null != p.streamId ? g.intl.string(g.t["8Xyas9"]) : g.intl.string(g.t.ifpl2s),
-    action: h,
+    action: f,
     icon: a.tfB
   })
 }

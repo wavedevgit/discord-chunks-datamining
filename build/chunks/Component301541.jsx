@@ -16,11 +16,11 @@ var Chunk311907 = require("./311907.js"),
 
 function A(e, t, n) {
   let A = (0, o.aL)();
-  return (0, i.bG)([d.default], () => d.default.getId() === e) || t === u.BRT.POPOUT ? null : (0, l.jsx)(r.Drp, {
+  return (0, i.bG)([s.default], () => s.default.getId() === e) || t === u.BRT.POPOUT ? null : (0, l.jsx)(r.Drp, {
     id: "message-user",
     label: c.intl.string(c.t.OAJQlP),
     action: () => {
-      (0, s.A)(t, true), a.A.openPrivateChannel({
+      (0, d.A)(t, true), a.A.openPrivateChannel({
         recipientIds: e
       }), A.dispatch(u.jej.POPOUT_CLOSE), (0, r.s7G)()
     },

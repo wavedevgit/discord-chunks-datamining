@@ -26,21 +26,21 @@ function p(e) {
       var t;
       return (null == (t = A.default.getCurrentUser()) ? true : t.id) === e
     }),
-    p = (0, i.bG)([s.A], () => s.A.isLocalSoundboardMuted(e)),
+    p = (0, i.bG)([d.A], () => d.A.isLocalSoundboardMuted(e)),
     {
       muted: y,
       deafened: E = false,
       localVideoDisabled: v = false,
       localVideoAutoDisabled: h = false
-    } = (0, i.cf)([d.A], () => n ? {
-      muted: d.A.isSelfMute(t),
-      deafened: d.A.isSelfDeaf(t)
+    } = (0, i.cf)([s.A], () => n ? {
+      muted: s.A.isSelfMute(t),
+      deafened: s.A.isSelfDeaf(t)
     } : {
-      muted: d.A.isLocalMute(e, t),
-      localVideoDisabled: d.A.isLocalVideoDisabled(e, t),
-      localVideoAutoDisabled: d.A.isLocalVideoAutoDisabled(e, t)
+      muted: s.A.isLocalMute(e, t),
+      localVideoDisabled: s.A.isLocalVideoDisabled(e, t),
+      localVideoAutoDisabled: s.A.isLocalVideoAutoDisabled(e, t)
     }, [n, t, e]),
-    j = d.A.supports(f.O5.DISABLE_VIDEO) && !n ? (0, l.jsx)(r.sLh, {
+    j = s.A.supports(f.O5.DISABLE_VIDEO) && !n ? (0, l.jsx)(r.sLh, {
       id: "disable-video",
       label: m.intl.string(m.t["4MMsWF"]),
       action: () => {

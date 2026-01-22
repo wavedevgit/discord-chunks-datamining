@@ -132,7 +132,7 @@ function D(e) {
     null != i && (0, u.L3)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("97262"), n.e("91042"), n.e("23215")]).then(n.bind(n, 365689));
+      } = await Promise.all([n.e("97262"), n.e("91042"), n.e("62841")]).then(n.bind(n, 365689));
       return t => (0, r.jsx)(e, w(P({}, t), {
         user: i,
         guildId: l,

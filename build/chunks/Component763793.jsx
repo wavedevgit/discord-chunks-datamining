@@ -224,7 +224,7 @@ let k = 16 / 9,
             (0, d.L3)(t, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("91609")]).then(n.bind(n, 107632));
+              } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("25623")]).then(n.bind(n, 107632));
               return t => (0, r.jsx)(e, G(L({}, t), {
                 user: v,
                 guildId: y,

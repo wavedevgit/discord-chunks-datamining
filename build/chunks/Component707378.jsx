@@ -26,7 +26,7 @@ function m(e) {
     joinCallVideo: p,
     id: y,
     onCall: E
-  } = e, v = (0, s.aL)(), h = (0, i.bG)([u.default], () => u.default.getId() === t.id), j = (0, i.bG)([A.A], () => A.A.isBlocked(t.id)), x = (0, i.bG)([b.A, c.A], () => b.A.getVoiceChannelId() === c.A.getDMFromUserId(t.id)), {
+  } = e, v = (0, d.aL)(), h = (0, i.bG)([u.default], () => u.default.getId() === t.id), j = (0, i.bG)([A.A], () => A.A.isBlocked(t.id)), x = (0, i.bG)([b.A, c.A], () => b.A.getVoiceChannelId() === c.A.getDMFromUserId(t.id)), {
     copyVariant: S
   } = o.o.useConfig({
     location: "useCallUserItem"
@@ -39,7 +39,7 @@ function m(e) {
         joinCallVideo: p
       }), v.dispatch(g.jej.POPOUT_CLOSE), (0, r.s7G)()
     },
-    C = !d.Ay.disableCallUserConfirmationPrompt;
+    C = !s.Ay.disableCallUserConfirmationPrompt;
   return (0, l.jsx)(r.Drp, {
     id: null != y ? y : "call",
     label: null != O ? O : "control" !== S ? f.intl.string(f.t["ZeP+kK"]) : f.intl.string(f.t.JJogjm),

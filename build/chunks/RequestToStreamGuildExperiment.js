@@ -1,7 +1,7 @@
-/** Chunk was on 86246 **/
+/** Chunk was on 43144 **/
 /** chunk id: 159426, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => c
+  m: () => l
 });
 var Chunk600975 = require("./600975.js");
 
@@ -42,7 +42,7 @@ let i = {
     enableOpenTIVForPing: false,
     enableRequestToStreamOverlayNotification: false
   },
-  c = (0, Chunk600975.C)({
+  l = (0, Chunk600975.C)({
     kind: "guild",
     id: "2025-08_request_to_stream",
     label: "Request to Stream",

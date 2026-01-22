@@ -1,7 +1,7 @@
 /** Chunk was on 67447 **/
 /** chunk id: 146359, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -50,26 +50,26 @@ function m(e, t) {
   }), e
 }
 
-function j(e, t, j) {
-  let h = l.useMemo(() => ({
+function y(e, t, y) {
+  let j = l.useMemo(() => ({
     [t]: [e.id]
   }), [t, e.id]);
-  (0, o.E)(h, "useThreadAdminActionItems"), (0, i.bG)([g.A], () => g.A.getGuildVersion(t), [t]);
-  let y = (0, i.bG)([A.A], () => A.A.getChannel(j)),
+  (0, o.E)(j, "useThreadAdminActionItems"), (0, i.bG)([g.A], () => g.A.getGuildVersion(t), [t]);
+  let h = (0, i.bG)([A.A], () => A.A.getChannel(y)),
     E = (0, i.bG)([b.A], () => b.A.getGuild(t), [t]),
-    x = (0, i.bG)([O.default], () => O.default.getCurrentUser()),
-    P = (0, s.A)(y, "Context Menu"),
-    v = (0, d.qi)(null == y ? true : y.id);
-  return (null == x ? true : x.id) === e.id ? [P] : null == E || null == y || null == x ? [] : [v ? (0, r.jsx)(a.Drp, {
+    P = (0, i.bG)([O.default], () => O.default.getCurrentUser()),
+    x = (0, u.A)(h, "Context Menu"),
+    v = (0, c.qi)(null == h ? true : h.id);
+  return (null == P ? true : P.id) === e.id ? [x] : null == E || null == h || null == P ? [] : [v ? (0, r.jsx)(a.Drp, {
     id: "remove",
-    label: y.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
+    label: h.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
       user: e.username
     }) : f.intl.formatToPlainString(f.t["27xWaT"], {
       user: e.username
     }),
     color: "danger",
-    action: () => c.A.removeMember(y.id, e.id, "Context Menu")
-  }) : null, (0, u.L7)(e, E) ? (0, r.jsx)(a.Drp, {
+    action: () => s.A.removeMember(h.id, e.id, "Context Menu")
+  }) : null, (0, d.L7)(e, E) ? (0, r.jsx)(a.Drp, {
     id: "kick",
     label: v ? f.intl.formatToPlainString(f.t["1Ie87p"], {
       user: e.username
@@ -86,7 +86,7 @@ function j(e, t, j) {
         user: e
       }))
     })
-  }) : null, (0, u.EZ)(e, E) ? (0, r.jsx)(a.Drp, {
+  }) : null, (0, d.EZ)(e, E) ? (0, r.jsx)(a.Drp, {
     id: "ban",
     label: v ? f.intl.formatToPlainString(f.t.i62APf, {
       user: e.username

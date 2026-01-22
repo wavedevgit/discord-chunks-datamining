@@ -38,13 +38,13 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     context: P,
     onSelect: I,
     moderationAlertId: D,
-    analyticsLocation: x,
-    analyticsLocations: T,
+    analyticsLocation: T,
+    analyticsLocations: x,
     onCloseContextMenu: N,
     showTransferOwnershipItem: w
   } = e, {
     analyticsLocations: G
-  } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == T ? true : T[0]) ? t : G[0], B = (0, O.$9)(u, {
+  } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? true : x[0]) ? t : G[0], B = (0, O.$9)(u, {
     location: U,
     targetUserId: n.id
   }), L = (0, i.bG)([y.A], () => {
@@ -55,14 +55,14 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }, [B]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, S.A)({
     userId: n.id,
     guildId: u,
-    sourceAnalyticsLocations: T
-  }), H = (0, m.A)(n.id, P), Y = (0, f.A)({
+    sourceAnalyticsLocations: x
+  }), H = (0, m.A)(n.id, P), K = (0, f.A)({
     guildId: u,
     userId: n.id,
-    analyticsLocation: null != x ? x : R.location,
+    analyticsLocation: null != T ? T : R.location,
     analyticsLocations: [U],
     context: P
-  }), K = (0, E.A)({
+  }), Y = (0, E.A)({
     user: n,
     guildId: u,
     location: U,
@@ -88,7 +88,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       children: [(0, r.jsxs)(a.rXV, {
         children: [F, H]
       }), (0, r.jsxs)(a.rXV, {
-        children: [Y, W, K]
+        children: [K, W, Y]
       }), V && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.rXV, {
           children: X

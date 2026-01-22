@@ -31,7 +31,7 @@ function h(e, t) {
       return u.A.getChannel(n)
     }, [t, e.id]);
   if ((0, i.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, e.id), [t, e.id]) || null == h) return null;
-  let j = e.id === d.default.getId();
+  let j = e.id === s.default.getId();
   if (!j && !g.A.can(E.xBc.MOVE_MEMBERS, h)) return null;
   let x = n.filter(t => {
     let {
@@ -53,9 +53,9 @@ function h(e, t) {
       return (0, l.jsx)(r.Drp, {
         id: i.id,
         action: () => {
-          e.id === d.default.getId() ? o.default.selectVoiceChannel(i.id) : a.A.setChannel(t, e.id, i.id)
+          e.id === s.default.getId() ? o.default.selectVoiceChannel(i.id) : a.A.setChannel(t, e.id, i.id)
         },
-        label: (0, s.m1)(i, m.default, f.A)
+        label: (0, d.m1)(i, m.default, f.A)
       }, i.id)
     })
   })

@@ -131,7 +131,7 @@ function f(e) {
               return s()(null != e, "GuildID null for guild voice channel"), (0, a.L3)(l, async () => {
                 let {
                   default: l
-                } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("91609")]).then(n.bind(n, 107632));
+                } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("25623")]).then(n.bind(n, 107632));
                 return n => (0, r.jsx)(l, b(w({}, n), {
                   showMediaItems: true,
                   showChannelCallItems: true,

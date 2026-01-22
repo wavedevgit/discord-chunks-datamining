@@ -31,8 +31,8 @@ function h(e) {
     location: j,
     onAction: x,
     appContext: S
-  } = e, M = i.useContext(O.AnalyticsContext), C = (0, u.aL)(), D = (0, r.bG)([m.A], () => null != h ? h : m.A.getChannelId(n, true), [h, n]), I = (0, r.bG)([f.Ay], () => null == n ? null : f.Ay.getMember(n, t), [n, t]), P = (0, d.q)(n);
-  return null != n && null != I && P ? (0, l.jsx)(a.Drp, {
+  } = e, M = i.useContext(O.AnalyticsContext), C = (0, u.aL)(), D = (0, r.bG)([m.A], () => null != h ? h : m.A.getChannelId(n, true), [h, n]), P = (0, r.bG)([f.Ay], () => null == n ? null : f.Ay.getMember(n, t), [n, t]), I = (0, s.q)(n);
+  return null != n && null != P && I ? (0, l.jsx)(a.Drp, {
     id: "mod-view",
     label: v.intl.string(v.t.kj3tz2),
     action: () => {
@@ -46,9 +46,9 @@ function h(e) {
         b.Ay.getCurrentSidebarChannelId(e.parent_id) === e.id && (o.h.dispatch({
           type: "SIDEBAR_CLOSE",
           baseChannelId: e.parent_id
-        }), (0, A.iN)(e.id)), (0, s.z)(n, t, e.parent_id, l);
+        }), (0, A.iN)(e.id)), (0, d.z)(n, t, e.parent_id, l);
         return
-      }(0, s.z)(n, t, null != D ? D : y.VV.MEMBER_SAFETY, l)
+      }(0, d.z)(n, t, null != D ? D : y.VV.MEMBER_SAFETY, l)
     }
   }) : null
 }
