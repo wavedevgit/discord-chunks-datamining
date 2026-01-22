@@ -1,1 +1,1 @@
-{"id":"278407","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"278407","type":"classes","data":{"classes":{"rangeReversed":"Дата початку має передувати даті завершення.","unavailableDate":"Вибрана дата недоступна."}},"fromModule":{"id":"web.js"}}

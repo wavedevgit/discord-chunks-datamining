@@ -1,1 +1,1 @@
-{"id":"40876","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"40876","type":"classes","data":{"classes":{"hasStoreChangeListeners":true,"neverLoadBeforeConnectionOpen":false,"loadAfterConnectionOpen":true,"loadRightBeforeConnectionOpen":true}},"fromModule":{"id":"web.js"}}

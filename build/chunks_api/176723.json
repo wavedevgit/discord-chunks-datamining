@@ -1,1 +1,1 @@
-{"id":"176723","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"176723","type":"classes","data":{"classes":{"rangeReversed":"Η ημερομηνία έναρξης πρέπει να είναι πριν από την ημερομηνία λήξης.","unavailableDate":"Η επιλεγμένη ημερομηνία δεν είναι διαθέσιμη."}},"fromModule":{"id":"web.js"}}

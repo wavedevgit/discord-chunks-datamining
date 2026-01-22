@@ -1,1 +1,1 @@
-{"id":"342393","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"342393","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"tag":"sync","name":"react-stripe-js","version":"3.7.0","url":"https://stripe.com/docs/stripe-js/react"}},"fromModule":{"id":"web.js"}}

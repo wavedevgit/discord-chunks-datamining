@@ -1,1 +1,1 @@
-{"id":"990007","type":"unknown","data":{},"fromModule":{"id":"21738"}}
+{"id":"990007","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"authorize":true,"oldFormErrors":true,"rejectWithError":false,"type":"RPC_APP_AUTHENTICATED","response_type":"token"}},"fromModule":{"id":"21738"}}

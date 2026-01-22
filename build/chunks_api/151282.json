@@ -1,1 +1,1 @@
-{"id":"151282","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"151282","type":"classes","data":{"classes":{"type":"DELETE_PENDING_SCHEDULED_MESSAGE","rejectWithError":true}},"fromModule":{"id":"web.js"}}

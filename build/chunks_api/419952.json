@@ -1,1 +1,1 @@
-{"id":"419952","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"419952","type":"classes","data":{"classes":{"className":"meta","begin":"<%{1,2}={0,2}","end":"={0,1}%>","subLanguage":"xml","excludeBegin":true,"excludeEnd":true,"name":"Mojolicious"}},"fromModule":{"id":"web.js"}}

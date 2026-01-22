@@ -1,1 +1,1 @@
-{"id":"354138","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"354138","type":"classes","data":{"classes":{"type":"FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_FAILURE","rejectWithError":false,"isInvalidApplication":true}},"fromModule":{"id":"web.js"}}

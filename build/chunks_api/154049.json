@@ -1,1 +1,1 @@
-{"id":"154049","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"154049","type":"classes","data":{"classes":{"clearCache":true,"type":"RESET_SOCKET"}},"fromModule":{"id":"web.js"}}

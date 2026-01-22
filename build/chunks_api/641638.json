@@ -1,1 +1,1 @@
-{"id":"641638","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"641638","type":"classes","data":{"classes":{"ascending":"tõusev järjestus","descending":"laskuv järjestus","resizerDescription":"Suuruse muutmise alustamiseks vajutage klahvi Enter","select":"Vali","selectAll":"Vali kõik","sortable":"sorditav veerg"}},"fromModule":{"id":"web.js"}}

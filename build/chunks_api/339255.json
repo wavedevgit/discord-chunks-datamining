@@ -1,1 +1,1 @@
-{"id":"339255","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"339255","type":"classes","data":{"classes":{"calendar":"Календарь","day":"день","dayPeriod":"AM/PM","endDate":"Дата окончания","era":"эра","hour":"час","minute":"минута","month":"месяц","second":"секунда","startDate":"Дата начала","timeZoneName":"часовой пояс","weekday":"день недели","year":"год"}},"fromModule":{"id":"web.js"}}

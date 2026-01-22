@@ -1,1 +1,1 @@
-{"id":"794967","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"794967","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"include_applications":true,"include_role_connections_metadata":true,"oldFormErrors":true,"rejectWithError":true,"type":"GUILD_SETTINGS_SET_WIDGET"}},"fromModule":{"id":"web.js"}}

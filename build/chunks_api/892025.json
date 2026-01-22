@@ -1,1 +1,1 @@
-{"id":"892025","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"892025","type":"classes","data":{"classes":{"rangeReversed":"De startdatum moet voor de einddatum liggen.","unavailableDate":"Geselecteerde datum niet beschikbaar."}},"fromModule":{"id":"web.js"}}

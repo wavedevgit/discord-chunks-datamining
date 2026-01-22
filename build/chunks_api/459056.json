@@ -1,1 +1,1 @@
-{"id":"459056","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"459056","type":"classes","data":{"classes":{"keyword":"BEGIN END if else while do for in break continue delete next nextfile function func exit|10","begin":{},"className":"variable"}},"fromModule":{"id":"web.js"}}

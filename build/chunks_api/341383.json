@@ -1,1 +1,1 @@
-{"id":"341383","type":"unknown","data":{},"fromModule":{"id":"21738"}}
+{"id":"341383","type":"classes","data":{"classes":{"location":"Custom Keybind","autoTrackExposure":false,"keyup":true,"keydown":false,"isPressed":false,"usedKeybind":true,"focused":true,"blurred":true,"type":"KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS"}},"fromModule":{"id":"21738"}}

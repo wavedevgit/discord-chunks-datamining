@@ -1,1 +1,1 @@
-{"id":"256275","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"256275","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"انقر لإنهاء عملية تحديد نطاق التاريخ","maximumDate":"آخر تاريخ متاح","minimumDate":"أول تاريخ متاح","next":"التالي","previous":"السابق","startRangeSelectionPrompt":"انقر لبدء عملية تحديد نطاق التاريخ"}},"fromModule":{"id":"web.js"}}

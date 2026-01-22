@@ -1,1 +1,1 @@
-{"id":"343969","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"343969","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"abortController":null,"query":null,"cursor":null,"previousPagination":null,"sort":null,"elasticSearchCursor":null}},"fromModule":{"id":"web.js"}}

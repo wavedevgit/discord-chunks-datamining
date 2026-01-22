@@ -1,1 +1,1 @@
-{"id":"850524","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"850524","type":"classes","data":{"classes":{"_error":"Context not serializable","level":"crash","type":"resource_error"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"445462","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"445462","type":"classes","data":{"classes":{"calendar":"Koledar","day":"dan","dayPeriod":"dop/pop","endDate":"Datum konca","era":"doba","hour":"ura","minute":"minuta","month":"mesec","second":"sekunda","startDate":"Datum začetka","timeZoneName":"časovni pas","weekday":"dan v tednu","year":"leto"}},"fromModule":{"id":"web.js"}}

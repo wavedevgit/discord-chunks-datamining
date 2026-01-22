@@ -1,1 +1,1 @@
-{"id":"828293","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"828293","type":"classes","data":{"classes":{"rangeReversed":"A data inicial deve ser anterior à data final.","unavailableDate":"Data selecionada indisponível."}},"fromModule":{"id":"web.js"}}

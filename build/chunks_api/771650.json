@@ -1,1 +1,1 @@
-{"id":"771650","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"771650","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"location":"getGuildChannelAutocompletions","request":false,"fuzzy":true,"allowEmptyQueries":true,"allowSnowflake":true,"componentType":"ANSWER","mutable":true,"queryKey":"author_type"}},"fromModule":{"id":"web.js"}}

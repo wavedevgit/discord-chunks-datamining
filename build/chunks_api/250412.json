@@ -1,1 +1,1 @@
-{"id":"250412","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"250412","type":"classes","data":{"classes":{"calendar":"التقويم","day":"يوم","dayPeriod":"ص/م","endDate":"تاريخ الانتهاء","era":"العصر","hour":"الساعات","minute":"الدقائق","month":"الشهر","second":"الثواني","startDate":"تاريخ البدء","timeZoneName":"التوقيت","weekday":"اليوم","year":"السنة"}},"fromModule":{"id":"web.js"}}

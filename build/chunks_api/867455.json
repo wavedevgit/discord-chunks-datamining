@@ -1,1 +1,1 @@
-{"id":"867455","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"867455","type":"classes","data":{"classes":{"rejectWithError":false,"type":"LOAD_ARCHIVED_THREADS","archived":true,"locked":false,"isPrivate":false,"command":null,"section":null,"sort_by":"last_message_time","sort_order":"desc"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"953683","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"953683","type":"classes","data":{"classes":{"passive":true,"name":"eventListeners","enabled":true,"phase":"write"}},"fromModule":{"id":"web.js"}}

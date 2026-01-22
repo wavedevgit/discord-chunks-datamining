@@ -1,1 +1,1 @@
-{"id":"249214","type":"unknown","data":{},"fromModule":{"id":"4787"}}
+{"id":"249214","type":"classes","data":{"classes":{"description":"Form inputs require a label","help":"Please provide a name for this input with a HTML label, aria-label, or aria-labelledby.","id":"input-label","selector":"input, textarea, select, [role=\"checkbox\"], [role=\"radio\"], [role=\"radiogroup\"], [role=\"searchbox\"], [role=\"slider\"], [role=\"textbox\"], [role=\"combobox\"]"}},"fromModule":{"id":"4787"}}

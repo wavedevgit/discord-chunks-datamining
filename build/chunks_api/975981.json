@@ -1,1 +1,1 @@
-{"id":"975981","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"975981","type":"classes","data":{"classes":{"className":"symbol","begin":"#[a-zA-Z_]\\w*\\$?","end":"\"","illegal":"\\n"}},"fromModule":{"id":"web.js"}}

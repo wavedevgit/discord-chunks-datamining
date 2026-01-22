@@ -1,1 +1,1 @@
-{"id":"848030","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"848030","type":"classes","data":{"classes":{"select":"Select","selectAll":"Select All","sortable":"sortable column","ascending":"ascending","descending":"descending","resizerDescription":"Press Enter to start resizing"}},"fromModule":{"id":"web.js"}}

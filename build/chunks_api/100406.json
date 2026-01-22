@@ -1,1 +1,1 @@
-{"id":"100406","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"100406","type":"classes","data":{"classes":{"value":false,"enumerable":true,"configurable":true,"writable":true,"rejectWithError":true,"type":"EMAIL_SETTINGS_UPDATE_FAILURE","category":"marketing","t":false}},"fromModule":{"id":"web.js"}}

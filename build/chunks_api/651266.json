@@ -1,1 +1,1 @@
-{"id":"651266","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"651266","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Haga clic para terminar de seleccionar rango de fechas","maximumDate":"Última fecha disponible","minimumDate":"Primera fecha disponible","next":"Siguiente","previous":"Anterior","startRangeSelectionPrompt":"Haga clic para comenzar a seleccionar un rango de fechas"}},"fromModule":{"id":"web.js"}}

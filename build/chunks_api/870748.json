@@ -1,1 +1,1 @@
-{"id":"870748","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"870748","type":"classes","data":{"classes":{"type":"applicationCommandOption","command":null,"section":null,"validateAll":false,"allowEmpty":false,"mode":"plain","voids":true}},"fromModule":{"id":"web.js"}}

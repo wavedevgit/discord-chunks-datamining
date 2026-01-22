@@ -1,1 +1,1 @@
-{"id":"446632","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"446632","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Натисніть, щоб завершити вибір діапазону дат","maximumDate":"Остання доступна дата","minimumDate":"Перша доступна дата","next":"Наступний","previous":"Попередній","startRangeSelectionPrompt":"Натисніть, щоб почати вибір діапазону дат"}},"fromModule":{"id":"web.js"}}

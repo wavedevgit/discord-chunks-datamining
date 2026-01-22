@@ -1,1 +1,1 @@
-{"id":"98308","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"98308","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Натиснете, за да довършите избора на времеви интервал","maximumDate":"Последна налична дата","minimumDate":"Първа налична дата","next":"Напред","previous":"Назад","startRangeSelectionPrompt":"Натиснете, за да пристъпите към избора на времеви интервал"}},"fromModule":{"id":"web.js"}}

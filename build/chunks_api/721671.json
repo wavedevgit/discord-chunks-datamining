@@ -1,1 +1,1 @@
-{"id":"721671","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"721671","type":"classes","data":{"classes":{"rangeReversed":"A kezdő dátumnak a befejező dátumnál korábbinak kell lennie.","unavailableDate":"A kiválasztott dátum nem érhető el."}},"fromModule":{"id":"web.js"}}

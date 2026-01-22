@@ -1,1 +1,1 @@
-{"id":"388713","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"388713","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Kliknite za dokončanje izbire datumskega obsega","maximumDate":"Zadnji razpoložljivi datum","minimumDate":"Prvi razpoložljivi datum","next":"Naprej","previous":"Nazaj","startRangeSelectionPrompt":"Kliknite za začetek izbire datumskega obsega"}},"fromModule":{"id":"web.js"}}

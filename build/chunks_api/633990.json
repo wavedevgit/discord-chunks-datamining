@@ -1,1 +1,1 @@
-{"id":"633990","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"633990","type":"classes","data":{"classes":{"rangeReversed":"Alguskuupäev peab olema enne lõppkuupäeva.","unavailableDate":"Valitud kuupäev pole saadaval."}},"fromModule":{"id":"web.js"}}

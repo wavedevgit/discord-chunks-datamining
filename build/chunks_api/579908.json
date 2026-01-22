@@ -1,1 +1,1 @@
-{"id":"579908","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"579908","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"type":"GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE","includeArchivedListings":true}},"fromModule":{"id":"web.js"}}

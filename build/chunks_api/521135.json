@@ -1,1 +1,1 @@
-{"id":"521135","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"521135","type":"classes","data":{"classes":{"rangeReversed":"Data de început trebuie să fie anterioară datei de sfârșit.","unavailableDate":"Data selectată nu este disponibilă."}},"fromModule":{"id":"web.js"}}

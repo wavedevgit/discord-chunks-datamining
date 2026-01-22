@@ -1,1 +1,1 @@
-{"id":"86070","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"86070","type":"classes","data":{"classes":{"rejectWithError":false,"type":"CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_FAILURE"}},"fromModule":{"id":"web.js"}}

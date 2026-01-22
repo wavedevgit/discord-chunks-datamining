@@ -1,1 +1,1 @@
-{"id":"737784","type":"unknown","data":{},"fromModule":{"id":"23768"}}
+{"id":"737784","type":"classes","data":{"classes":{"full":"{{date}} 'saat' {{time}}","long":"{{date}} 'saat' {{time}}","medium":"{{date}}, {{time}}","short":"{{date}}, {{time}}","defaultWidth":"full"}},"fromModule":{"id":"23768"}}

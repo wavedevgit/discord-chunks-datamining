@@ -24,7 +24,7 @@ function u(e) {
   })
 }
 let d = [{
-  icon: Chunk397927.vRF,
+  icon: Chunk397927._Jp,
   getText: () => o.intl.string(o.t.TZigSO)
 }, {
   icon: u,

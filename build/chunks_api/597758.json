@@ -1,1 +1,1 @@
-{"id":"597758","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"597758","type":"classes","data":{"classes":{"location":"maybeFetchActivePromotions","autoTrackExposure":false,"type":"OUTBOUND_PROMOTIONS_SEEN","oldFormErrors":true,"rejectWithError":true}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"724122","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"724122","type":"classes","data":{"classes":{"forceEnableVideoHardwareAcceleration":true,"forceEnableAppHardwareAcceleration":true,"kind":"user","name":"2025-08-negative-hardware-acceleration"}},"fromModule":{"id":"web.js"}}

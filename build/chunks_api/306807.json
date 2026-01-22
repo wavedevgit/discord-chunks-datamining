@@ -1,1 +1,1 @@
-{"id":"306807","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"306807","type":"classes","data":{"classes":{"calendar":"Calendar","day":"zi","dayPeriod":"a.m/p.m.","endDate":"Dată final","era":"eră","hour":"oră","minute":"minut","month":"lună","second":"secundă","startDate":"Dată început","timeZoneName":"fus orar","weekday":"ziua din săptămână","year":"an"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"410417","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"410417","type":"classes","data":{"classes":{"previous":"Previous","next":"Next","startRangeSelectionPrompt":"Click to start selecting date range","finishRangeSelectionPrompt":"Click to finish selecting date range","minimumDate":"First available date","maximumDate":"Last available date"}},"fromModule":{"id":"web.js"}}

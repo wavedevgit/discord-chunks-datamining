@@ -1,1 +1,1 @@
-{"id":"253005","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"253005","type":"classes","data":{"classes":{"calendar":"Takvim","day":"gün","dayPeriod":"ÖÖ/ÖS","endDate":"Bitiş Tarihi","era":"çağ","hour":"saat","minute":"dakika","month":"ay","second":"saniye","startDate":"Başlangıç Tarihi","timeZoneName":"saat dilimi","weekday":"haftanın günü","year":"yıl"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"740829","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"740829","type":"classes","data":{"classes":{"calendar":"Kalendar","day":"dan","dayPeriod":"AM/PM","endDate":"Datum završetka","era":"era","hour":"sat","minute":"minuta","month":"mjesec","second":"sekunda","startDate":"Datum početka","timeZoneName":"vremenska zona","weekday":"dan u tjednu","year":"godina"}},"fromModule":{"id":"web.js"}}

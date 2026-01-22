@@ -1,1 +1,1 @@
-{"id":"37274","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"37274","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Noklikšķiniet, lai pabeigtu datumu diapazona atlasi","maximumDate":"Pēdējais pieejamais datums","minimumDate":"Pirmais pieejamais datums","next":"Tālāk","previous":"Atpakaļ","startRangeSelectionPrompt":"Noklikšķiniet, lai sāktu datumu diapazona atlasi"}},"fromModule":{"id":"web.js"}}

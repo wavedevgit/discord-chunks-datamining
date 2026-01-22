@@ -1,1 +1,1 @@
-{"id":"669953","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"669953","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"rejectWithError":false,"type":"GUILD_ONBOARDING_SET_STEP","back":false,"in_onboarding":true,"is_final_step":true,"optInEnabled":true}},"fromModule":{"id":"web.js"}}

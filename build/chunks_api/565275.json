@@ -1,1 +1,1 @@
-{"id":"565275","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"565275","type":"classes","data":{"classes":{"top":"auto","right":"auto","bottom":"auto","left":"auto","position":"absolute","adaptive":false,"name":"computeStyles","enabled":true,"phase":"beforeWrite"}},"fromModule":{"id":"web.js"}}

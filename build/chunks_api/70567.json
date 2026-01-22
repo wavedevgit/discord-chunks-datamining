@@ -1,1 +1,1 @@
-{"id":"70567","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"70567","type":"classes","data":{"classes":{"calendar":"Календар","day":"ден","dayPeriod":"пр.об./сл.об.","endDate":"Крайна дата","era":"ера","hour":"час","minute":"минута","month":"месец","second":"секунда","startDate":"Начална дата","timeZoneName":"часова зона","weekday":"ден от седмицата","year":"година"}},"fromModule":{"id":"web.js"}}

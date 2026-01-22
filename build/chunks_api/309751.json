@@ -1,1 +1,1 @@
-{"id":"309751","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"309751","type":"classes","data":{"classes":{"calendar":"Kalenteri","day":"päivä","dayPeriod":"vuorokaudenaika","endDate":"Päättymispäivä","era":"aikakausi","hour":"tunti","minute":"minuutti","month":"kuukausi","second":"sekunti","startDate":"Alkamispäivä","timeZoneName":"aikavyöhyke","weekday":"viikonpäivä","year":"vuosi"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"843472","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"843472","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"trackGuildAndChannelMetadata":true,"replied_user":false,"messageName":"BOT_GUILD_EXPLICIT_CONTENT","type":"LOAD_MESSAGES_SUCCESS_CACHED","isPushNotification":false,"message_author":"Clyde","content":"","username":"Gifting Prompt","avatar":"gifting_prompt","bot":true,"isDM":false,"isGDM":true,"present":true}},"fromModule":{"id":"web.js"}}

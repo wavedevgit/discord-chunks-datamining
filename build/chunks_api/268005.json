@@ -1,1 +1,1 @@
-{"id":"268005","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"268005","type":"classes","data":{"classes":{"rangeReversed":"Başlangıç tarihi bitiş tarihinden önce olmalıdır.","unavailableDate":"Seçilen tarih kullanılamıyor."}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"333405","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"333405","type":"classes","data":{"classes":{"done":false,"html":"text/html","json":"application/json","xml":"text/xml","urlencoded":"application/x-www-form-urlencoded","form":"application/x-www-form-urlencoded"}},"fromModule":{"id":"web.js"}}

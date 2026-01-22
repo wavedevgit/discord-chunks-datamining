@@ -1,1 +1,1 @@
-{"id":"624458","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"624458","type":"classes","data":{"classes":{"rejectWithError":false,"type":"USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH","cooldown":null}},"fromModule":{"id":"web.js"}}

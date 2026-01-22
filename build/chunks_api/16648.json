@@ -1,1 +1,1 @@
-{"id":"16648","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"16648","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"location":"FriendOnlineTimer","rejectWithError":true,"type":"FRIEND_ONLINE_TIMER_REPORTED","app_context":"session_timer"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"426567","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"426567","type":"classes","data":{"classes":{"LT":"H:mm","LTS":"H:mm:ss","L":"DD.MM.YYYY","LL":"D. MMMM YYYY","LLL":"D. MMMM YYYY H:mm","LLLL":"dddd, D. MMMM YYYY H:mm","sameDay":"[danas u] LT","nextDay":"[sutra u] LT","lastDay":"[juče u] LT","sameElse":"L","future":"za %s","past":"pre %s","s":"nekoliko sekundi","d":"dan","M":"mesec","y":"godinu"}},"fromModule":{"id":"web.js"}}

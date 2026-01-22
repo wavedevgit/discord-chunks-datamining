@@ -1,1 +1,1 @@
-{"id":"31031","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"31031","type":"classes","data":{"classes":{"calendar":"Calendario","day":"giorno","dayPeriod":"AM/PM","endDate":"Data finale","era":"era","hour":"ora","minute":"minuto","month":"mese","second":"secondo","startDate":"Data iniziale","timeZoneName":"fuso orario","weekday":"giorno della settimana","year":"anno"}},"fromModule":{"id":"web.js"}}

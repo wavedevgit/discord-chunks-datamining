@@ -1,1 +1,1 @@
-{"id":"609907","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"609907","type":"classes","data":{"classes":{"className":"subst","begin":"[a-z]+\"","end":"\"","illegal":"\\n"}},"fromModule":{"id":"web.js"}}

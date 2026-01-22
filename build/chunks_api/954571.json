@@ -1,1 +1,1 @@
-{"id":"954571","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"954571","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"deduplicate":true,"TRACK_ACTION_NAME":"TRACK","category":"analytics","type":"action"}},"fromModule":{"id":"web.js"}}

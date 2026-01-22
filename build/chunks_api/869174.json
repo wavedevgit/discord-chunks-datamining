@@ -1,1 +1,1 @@
-{"id":"869174","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"869174","type":"classes","data":{"classes":{"LT":"HH.mm","LTS":"HH.mm.ss","L":"DD.MM.YYYY","LL":"D. MMMM [dallas] YYYY","LLL":"D. MMMM [dallas] YYYY HH.mm","LLLL":"dddd, [li] D. MMMM [dallas] YYYY HH.mm","sameDay":"[oxhi à] LT","nextDay":"[demà à] LT","nextWeek":"dddd [à] LT","lastDay":"[ieiri à] LT","lastWeek":"[sür el] dddd [lasteu à] LT","sameElse":"L","future":"osprei %s","past":"ja%s"}},"fromModule":{"id":"web.js"}}

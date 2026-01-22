@@ -1,1 +1,1 @@
-{"id":"786953","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"786953","type":"classes","data":{"classes":{"type":"VIRTUAL_CURRENCY_REDEEM_FAIL","rejectWithError":false,"app_context":"virtual_currency"}},"fromModule":{"id":"web.js"}}

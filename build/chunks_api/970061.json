@@ -1,1 +1,1 @@
-{"id":"970061","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"970061","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"leading":true,"action":"VIEW","ping":true,"banner":true,"badge":true,"location":"showNotification","autoTrackExposure":true,"isPreview":true}},"fromModule":{"id":"web.js"}}

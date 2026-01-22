@@ -1,1 +1,1 @@
-{"id":"822151","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"822151","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Klicka för att avsluta val av datumintervall","maximumDate":"Sista tillgängliga datum","minimumDate":"Första tillgängliga datum","next":"Nästa","previous":"Föregående","startRangeSelectionPrompt":"Klicka för att välja datumintervall"}},"fromModule":{"id":"web.js"}}

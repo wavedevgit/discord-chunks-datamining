@@ -1,1 +1,1 @@
-{"id":"827372","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"827372","type":"classes","data":{"classes":{"calendar":"Kalender","day":"dag","dayPeriod":"fm/em","endDate":"Slutdatum","era":"era","hour":"timme","minute":"minut","month":"månad","second":"sekund","startDate":"Startdatum","timeZoneName":"tidszon","weekday":"veckodag","year":"år"}},"fromModule":{"id":"web.js"}}

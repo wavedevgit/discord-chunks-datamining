@@ -1,1 +1,1 @@
-{"id":"727759","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"727759","type":"classes","data":{"classes":{"isFormat":{},"LT":"HH:mm","LTS":"HH:mm:ss","L":"DD.MM.YYYY","LL":"D MMMM YYYY г.","LLL":"D MMMM YYYY г., HH:mm","LLLL":"dddd, D MMMM YYYY г., HH:mm","sameDay":"[Сёння ў] LT","nextDay":"[Заўтра ў] LT","lastDay":"[Учора ў] LT","sameElse":"L","future":"праз %s","past":"%s таму","s":"некалькі секунд","d":"дзень","M":"месяц","y":"год"}},"fromModule":{"id":"web.js"}}

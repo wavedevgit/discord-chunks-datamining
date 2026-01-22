@@ -1,1 +1,1 @@
-{"id":"324880","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"324880","type":"classes","data":{"classes":{"rangeReversed":"Datum zahájení musí předcházet datu ukončení.","unavailableDate":"Vybrané datum není k dispozici."}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"134274","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"134274","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Kliknij, aby zakończyć wybór zakresu dat","maximumDate":"Ostatnia dostępna data","minimumDate":"Pierwsza dostępna data","next":"Dalej","previous":"Wstecz","startRangeSelectionPrompt":"Kliknij, aby rozpocząć wybór zakresu dat"}},"fromModule":{"id":"web.js"}}

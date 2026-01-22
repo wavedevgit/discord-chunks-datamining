@@ -1,1 +1,1 @@
-{"id":"686956","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"686956","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"type":"GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS","source":"sidebar","oldFormErrors":true,"rejectWithError":false,"secondary_color":null,"tertiary_color":null,"navigationReplace":false,"openChannel":true}},"fromModule":{"id":"web.js"}}

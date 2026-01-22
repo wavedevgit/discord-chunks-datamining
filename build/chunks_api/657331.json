@@ -1,1 +1,1 @@
-{"id":"657331","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"657331","type":"classes","data":{"classes":{"location":"UserProfileModalActionCreators","type":"USER_PROFILE_MODAL_CLOSE","withMutualFriends":false,"withMutualGuilds":true}},"fromModule":{"id":"web.js"}}

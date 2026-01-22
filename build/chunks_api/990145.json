@@ -1,1 +1,1 @@
-{"id":"990145","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"990145","type":"classes","data":{"classes":{"LT":"H:mm","LTS":"H:mm:ss","L":"YYYY.MM.DD.","LL":"YYYY. MMMM D.","LLL":"YYYY. MMMM D. H:mm","LLLL":"YYYY. MMMM D., dddd H:mm","sameDay":"[ma] LT[-kor]","nextDay":"[holnap] LT[-kor]","lastDay":"[tegnap] LT[-kor]","sameElse":"L","future":"%s múlva","past":"%s"}},"fromModule":{"id":"web.js"}}

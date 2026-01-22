@@ -1,1 +1,1 @@
-{"id":"201718","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"201718","type":"classes","data":{"classes":{"type":"USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE","with_profiles":true,"rejectWithError":true}},"fromModule":{"id":"web.js"}}

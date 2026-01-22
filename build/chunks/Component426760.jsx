@@ -2,158 +2,156 @@
 /** chunk id: 426760, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => N
+  A: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
   Chunk230109 = require("./230109.js"),
   Chunk397927 = require("./397927.js"),
-  Chunk684136 = require("./684136.jsx"),
   Chunk444927 = require("./444927.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk665171 = require("./665171.js"),
   Chunk488803 = require("./488803.js"),
   Chunk522055 = require("./522055.js"),
   Chunk645619 = require("./645619.js"),
-  Chunk427854 = require("./427854.jsx"),
-  Chunk796780 = require("./796780.jsx"),
   Chunk954571 = require("./954571.js"),
-  Chunk247425 = require("./247425.jsx"),
-  Chunk965826 = require("./965826.jsx"),
-  Chunk141614 = require("./141614.jsx"),
-  Chunk217639 = require("./217639.jsx"),
   Chunk917064 = require("./917064.jsx"),
+  Chunk787001 = require("./787001.jsx"),
   Chunk232122 = require("./232122.jsx"),
+  Chunk340195 = require("./340195.jsx"),
+  Chunk244027 = require("./244027.jsx"),
+  Chunk286188 = require("./286188.jsx"),
+  Chunk278115 = require("./278115.jsx"),
   Chunk527113 = require("./527113.jsx"),
+  Chunk250493 = require("./250493.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk200430 = require("./200430.js");
 
-function N(e) {
+function C(e) {
   let {
     analyticsLocation: t,
     guild: n,
-    onClose: N,
-    scrollToPowerupCards: R
-  } = e, [w, P] = i.useState(true), D = i.useRef(false), x = (0, c.A)(() => Date.now()), {
-    analyticsLocations: L
-  } = (0, u.Ay)(), j = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useCallback(() => {
-    null != k.current && null != M.current && M.current.scrollTo({
-      to: k.current.offsetTop,
-      animate: true
+    onClose: C,
+    scrollToPowerupCards: N
+  } = e, [R, w] = i.useState(true), P = i.useRef(false), D = (0, l.A)(() => Date.now()), {
+    analyticsLocations: x
+  } = (0, c.Ay)(), L = i.useRef(null), j = i.useRef(null), M = i.useRef(null), k = i.useCallback(() => {
+    null != M.current && null != j.current && j.current.scrollIntoViewNode({
+      node: M.current,
+      animate: true,
+      shouldScrollToStart: true
     })
-  }, []), G = i.useCallback(() => {
-    U()
-  }, [U]), V = i.useCallback(() => {
-    null == N || N(), g.default.track(I.HAw.MODAL_DISMISSED, {
-      type: I.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: L,
+  }, []), U = i.useCallback(() => {
+    k()
+  }, [k]), G = i.useCallback(() => {
+    null == C || C(), _.default.track(S.HAw.MODAL_DISMISSED, {
+      type: S.liQ.PREMIUM_GUILD_USER_MODAL,
+      location_stack: x,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id,
-      duration_open_ms: Date.now() - x
+      duration_open_ms: Date.now() - D
     })
-  }, [N, t, L, x, n.id]), F = i.useCallback(e => {
-    e && !D.current && (g.default.track(I.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-      type: I.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: L,
+  }, [C, t, x, D, n.id]), V = i.useCallback(e => {
+    e && !P.current && (_.default.track(S.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+      type: S.liQ.PREMIUM_GUILD_USER_MODAL,
+      location_stack: x,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
-    }), D.current = true)
-  }, [t, L, n.id]);
+    }), P.current = true)
+  }, [t, x, n.id]);
   i.useEffect(() => {
-    g.default.track(I.HAw.OPEN_MODAL, {
-      type: I.liQ.PREMIUM_GUILD_USER_MODAL,
-      location_stack: L,
+    _.default.track(S.HAw.OPEN_MODAL, {
+      type: S.liQ.PREMIUM_GUILD_USER_MODAL,
+      location_stack: x,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
     })
-  }, [n.id, t, L]), i.useEffect(() => {
+  }, [n.id, t, x]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && V()
+      "Escape" === e.key && G()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [V]);
-  let B = (0, f.C$)(n.id, "GuildBoostingMarketingRefresh"),
-    H = (0, a.bG)([p.A], () => p.A.hasFetchedCatalog(n.id)),
-    Y = (0, a.bG)([_.A], () => _.A.hasFetchedPowerupCatalog(n.id));
+  }, [G]);
+  let F = (0, d.C$)(n.id, "GuildBoostingMarketingRefresh"),
+    B = (0, a.bG)([f.A], () => f.A.hasFetchedCatalog(n.id));
+  i.useEffect(() => {
+    F && !B && (0, u.z9)(n.id)
+  }, [n.id, F, B]);
+  let H = (0, a.bG)([p.A], () => p.A.hasFetchedPowerupCatalog(n.id));
   return i.useEffect(() => {
-    B && !H && (0, d.z9)(n.id)
-  }, [n.id, B, H]), i.useEffect(() => {
-    if (R && Y) {
+    if (N && H) {
       let e = setTimeout(() => {
-        U()
+        k()
       }, 100);
       return () => clearTimeout(e)
     }
-  }, [R, U, Y]), (0, r.jsxs)(r.Fragment, {
-    children: [null != N && (0, r.jsx)("div", {
-      className: C.bn,
-      children: (0, r.jsx)(l.A, {
-        className: C.ut,
-        closeAction: V,
-        keybind: "ESC",
-        variant: l.A.Variants.BOLD
+  }, [N, k, H]), (0, r.jsxs)(r.Fragment, {
+    children: [null != C && (0, r.jsx)("div", {
+      className: T.Yk,
+      children: (0, r.jsx)(o.DUT, {
+        className: T.b,
+        onClick: G,
+        "aria-label": I.intl.string(I.t.cpT0Cq),
+        children: (0, r.jsx)(o.PGe, {
+          size: "md",
+          color: "currentColor"
+        })
       })
     }), (0, r.jsxs)(o.GtU, {
-      ref: M,
-      className: C.XG,
-      children: [(0, r.jsx)("div", {
-        className: C.wx,
-        children: (0, r.jsxs)("div", {
-          className: C.AZ,
-          children: [(0, r.jsx)(h.A, {
-            guild: e.guild,
-            themeResponsive: false,
-            onButtonClick: G
-          }), (0, r.jsx)(o.Heading, {
-            className: C.R_,
-            color: "always-white",
-            variant: "display-lg",
-            children: T.intl.string(T.t.N4sqzL)
-          }), (0, r.jsx)(E.A, {
+      ref: j,
+      className: T.XG,
+      children: [(0, r.jsxs)("div", {
+        className: T.wx,
+        children: [(0, r.jsx)(E.A, {
+          className: T.y2
+        }), (0, r.jsxs)("div", {
+          className: T.AZ,
+          children: [(0, r.jsx)(y.A, {
+            guildId: e.guild.id,
+            onButtonClick: U
+          }), (0, r.jsx)(m.A, {
             guild: n,
-            closeLayer: V,
-            onCtaVisibilityChange: P
-          }), (0, r.jsx)(y.A, {
-            guild: n
-          }), (0, r.jsx)(O.A, {
+            closeLayer: G,
+            onCtaVisibilityChange: w
+          }), (0, r.jsx)(b.A, {
             guild: n
           })]
-        })
+        })]
       }), (0, r.jsx)("div", {
-        className: C.uE,
-        children: (0, r.jsx)(m.A, {
-          ref: k,
+        className: T.uE,
+        children: (0, r.jsx)(O.A, {
+          ref: M,
           guild: e.guild,
-          onClose: V
+          onClose: G
         })
       }), (0, r.jsx)("div", {
-        className: C.o6,
+        className: T.o6,
         children: (0, r.jsxs)("div", {
-          className: C.y$,
-          children: [(0, r.jsx)(S.A, {
-            className: C.Q,
+          className: T.y$,
+          children: [(0, r.jsx)(A.A, {
+            className: T.Q,
             guild: n
-          }), (0, r.jsx)(A.A, {}), (0, r.jsx)(v.A, {})]
+          }), (0, r.jsx)(h.A, {}), (0, r.jsx)(g.A, {})]
         })
       }), (0, r.jsx)(s.L, {
-        innerRef: j,
-        onChange: F,
+        innerRef: L,
+        onChange: V,
         children: (0, r.jsx)("div", {
-          ref: j,
-          className: C.mR
+          ref: L,
+          className: T.mR
         })
       })]
-    }), (0, r.jsx)(b.A, {
+    }), (0, r.jsx)(v.A, {
       guild: n,
-      isVisible: !w,
-      closeLayer: V
+      isVisible: !R,
+      closeLayer: G
     })]
   })
 }

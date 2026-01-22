@@ -1,1 +1,1 @@
-{"id":"711844","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"711844","type":"classes","data":{"classes":{"rangeReversed":"Startdatumet måste vara före slutdatumet.","unavailableDate":"Det valda datumet är inte tillgängligt."}},"fromModule":{"id":"web.js"}}

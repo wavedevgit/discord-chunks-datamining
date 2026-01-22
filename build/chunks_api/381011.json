@@ -1,1 +1,1 @@
-{"id":"381011","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"381011","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"按一下以完成選取日期範圍","maximumDate":"最後一個可用日期","minimumDate":"第一個可用日期","next":"下一頁","previous":"上一頁","startRangeSelectionPrompt":"按一下以開始選取日期範圍"}},"fromModule":{"id":"web.js"}}

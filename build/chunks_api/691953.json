@@ -1,1 +1,1 @@
-{"id":"691953","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"691953","type":"classes","data":{"classes":{"calendar":"Kalendorius","day":"diena","dayPeriod":"iki pietų / po pietų","endDate":"Pabaigos data","era":"era","hour":"valanda","minute":"minutė","month":"mėnuo","second":"sekundė","startDate":"Pradžios data","timeZoneName":"laiko juosta","weekday":"savaitės diena","year":"metai"}},"fromModule":{"id":"web.js"}}

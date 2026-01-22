@@ -1,1 +1,1 @@
-{"id":"123319","type":"unknown","data":{},"fromModule":{"id":"21269"}}
+{"id":"123319","type":"classes","data":{"classes":{"matchPattern":{},"parsePattern":{},"narrow":{},"abbreviated":{},"wide":{},"defaultMatchWidth":"wide","defaultParseWidth":"any","am":{},"pm":{},"midnight":{},"noon":{},"morning":{},"afternoon":{},"evening":{},"night":{}}},"fromModule":{"id":"21269"}}

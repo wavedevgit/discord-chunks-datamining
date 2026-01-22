@@ -1,1 +1,1 @@
-{"id":"616004","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"616004","type":"classes","data":{"classes":{"built_in":"Int Real Char Bool","literal":"True False","begin":"->|<-[|:]?|#!?|>>=|\\{\\||\\|\\}|:==|=:|<>","name":"Clean"}},"fromModule":{"id":"web.js"}}

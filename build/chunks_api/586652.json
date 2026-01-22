@@ -1,1 +1,1 @@
-{"id":"586652","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"586652","type":"classes","data":{"classes":{"location":"useSoundmojiGuildInfoData","hasSoundmojiPermissions":false,"isInGuild":false,"isGuildDiscoverable":true,"isSoundFromDifferentGuild":true,"canSendSoundmojis":true,"isDefaultSound":true}},"fromModule":{"id":"web.js"}}

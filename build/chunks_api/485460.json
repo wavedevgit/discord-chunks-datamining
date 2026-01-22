@@ -1,1 +1,1 @@
-{"id":"485460","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"485460","type":"classes","data":{"classes":{"ascending":"오름차순","descending":"내림차순","resizerDescription":"크기 조정을 시작하려면 Enter를 누르세요.","select":"선택","selectAll":"모두 선택","sortable":"정렬 가능한 열"}},"fromModule":{"id":"web.js"}}

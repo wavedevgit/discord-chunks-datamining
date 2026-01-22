@@ -1,1 +1,1 @@
-{"id":"832220","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"832220","type":"classes","data":{"classes":{"ascending":"升序","descending":"降序","resizerDescription":"按“输入”键开始调整大小。","select":"选择","selectAll":"全选","sortable":"可排序的列"}},"fromModule":{"id":"web.js"}}

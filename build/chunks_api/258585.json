@@ -1,1 +1,1 @@
-{"id":"258585","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"258585","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"allowAutoQuality":true,"defaultAutoQuality":true,"migrateAutoQuality":true,"name":"2025-10-go-live-auto-quality","kind":"user","location":"maybeMigrateToAutoQuality","autoTrackExposure":true,"noTrack":true}},"fromModule":{"id":"web.js"}}

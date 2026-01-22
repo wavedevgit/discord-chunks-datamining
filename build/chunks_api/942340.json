@@ -1,1 +1,1 @@
-{"id":"942340","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"942340","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"location":"stripe_payment_element_options","source":"payment_elements","paymentMethodCreation":"manual"}},"fromModule":{"id":"web.js"}}

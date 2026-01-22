@@ -1,1 +1,1 @@
-{"id":"86126","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"86126","type":"classes","data":{"classes":{"undefined":"선택된 항목이 없습니다","longPressToSelect":"선택 모드로 들어가려면 길게 누르십시오.","select":"선택","selectedAll":"모든 항목이 선택되었습니다."}},"fromModule":{"id":"web.js"}}

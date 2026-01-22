@@ -1,1 +1,1 @@
-{"id":"202370","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"202370","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Kliknite da dovršite raspon odabranih datuma","maximumDate":"Posljednji raspoloživi datum","minimumDate":"Prvi raspoloživi datum","next":"Sljedeći","previous":"Prethodni","startRangeSelectionPrompt":"Kliknite da započnete raspon odabranih datuma"}},"fromModule":{"id":"web.js"}}

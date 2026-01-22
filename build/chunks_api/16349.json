@@ -1,1 +1,1 @@
-{"id":"16349","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"16349","type":"classes","data":{"classes":{"LT":"HH:mm","LTS":"HH:mm:ss","L":"YYYY-MM-DD","LL":"YYYY оны MMMMын D","LLL":"YYYY оны MMMMын D HH:mm","LLLL":"dddd, YYYY оны MMMMын D HH:mm","sameDay":"[Өнөөдөр] LT","nextDay":"[Маргааш] LT","nextWeek":"[Ирэх] dddd LT","lastDay":"[Өчигдөр] LT","lastWeek":"[Өнгөрсөн] dddd LT","sameElse":"L","future":"%s дараа","past":"%s өмнө","monthsParseExact":true,"weekdaysParseExact":true,"meridiemParse":{},"dayOfMonthOrdinalParse":{}}},"fromModule":{"id":"web.js"}}

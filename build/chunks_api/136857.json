@@ -1,1 +1,1 @@
-{"id":"136857","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"136857","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"address_line1":"line1","address_line2":"line2","address_city":"city","address_state":"state","address_zip":"postalCode","address_country":"country","number":"cardNumber","exp":"expirationDate","exp_month":"expirationDate","exp_year":"expirationDate","line_1":"line1","line_2":"line2","postal_code":"postalCode"}},"fromModule":{"id":"web.js"}}

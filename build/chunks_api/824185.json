@@ -1,1 +1,1 @@
-{"id":"824185","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"824185","type":"classes","data":{"classes":{"calendar":"Kalendarz","day":"dzień","dayPeriod":"rano / po południu / wieczorem","endDate":"Data końcowa","era":"era","hour":"godzina","minute":"minuta","month":"miesiąc","second":"sekunda","startDate":"Data początkowa","timeZoneName":"strefa czasowa","weekday":"dzień tygodnia","year":"rok"}},"fromModule":{"id":"web.js"}}

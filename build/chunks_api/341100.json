@@ -1,1 +1,1 @@
-{"id":"341100","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"341100","type":"classes","data":{"classes":{"begin":"[a-zA-Z_][\\da-zA-Z_]+\\.[\\da-zA-Z_]{1,3}","end":":","excludeEnd":true}},"fromModule":{"id":"web.js"}}

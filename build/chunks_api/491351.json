@@ -1,1 +1,1 @@
-{"id":"491351","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"491351","type":"classes","data":{"classes":{"LT":"A h:mm [vazta]","LTS":"A h:mm:ss [vazta]","L":"DD-MM-YYYY","LL":"D MMMM YYYY","LLL":"D MMMM YYYY A h:mm [vazta]","LLLL":"dddd, MMMM[achea] Do, YYYY, A h:mm [vazta]","llll":"ddd, D MMM YYYY, A h:mm [vazta]","sameDay":"[Aiz] LT","nextDay":"[Faleam] LT","nextWeek":"[Ieta to] dddd[,] LT","lastDay":"[Kal] LT","lastWeek":"[Fatlo] dddd[,] LT","sameElse":"L","future":"%s","past":"%s adim"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"534436","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"534436","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Κάντε κλικ για να ολοκληρώσετε την επιλογή εύρους ημερομηνιών","maximumDate":"Τελευταία διαθέσιμη ημερομηνία","minimumDate":"Πρώτη διαθέσιμη ημερομηνία","next":"Επόμενο","previous":"Προηγούμενο","startRangeSelectionPrompt":"Κάντε κλικ για να ξεκινήσετε την επιλογή εύρους ημερομηνιών"}},"fromModule":{"id":"web.js"}}

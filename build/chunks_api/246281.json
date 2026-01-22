@@ -1,1 +1,1 @@
-{"id":"246281","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"246281","type":"classes","data":{"classes":{"rangeReversed":"Pradžios data turi būti ankstesnė nei pabaigos data.","unavailableDate":"Pasirinkta data nepasiekiama."}},"fromModule":{"id":"web.js"}}

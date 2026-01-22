@@ -1,1 +1,1 @@
-{"id":"832798","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"832798","type":"classes","data":{"classes":{"className":"string","begin":"\\$\\{(::)?[a-zA-Z_]((::)?[a-zA-Z0-9_])*","end":"\\}","endsWithParent":true,"excludeEnd":true,"beginKeywords":"proc","illegal":null,"name":"Tcl"}},"fromModule":{"id":"web.js"}}

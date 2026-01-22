@@ -1,1 +1,1 @@
-{"id":"343509","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"343509","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"location":"MessageRemindersNotificationManager","autoTrackExposure":false,"type":"MESSAGE_REMINDER_DUE"}},"fromModule":{"id":"web.js"}}

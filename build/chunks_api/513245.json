@@ -1,1 +1,1 @@
-{"id":"513245","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"513245","type":"classes","data":{"classes":{"className":"symbol","begin":"`","end":{},"beginKeywords":"build create index delete drop explain infer|10 insert merge prepare select update upsert|10","name":"N1QL","case_insensitive":true}},"fromModule":{"id":"web.js"}}

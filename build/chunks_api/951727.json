@@ -1,1 +1,1 @@
-{"id":"951727","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"951727","type":"classes","data":{"classes":{"editing":false,"showResults":true,"canRemoveVote":true,"isEditingVote":true,"tapShouldOpenVotersModal":true,"presentation":"textButton","enabled":true,"type":"showVotes","containerStyle":"normal"}},"fromModule":{"id":"web.js"}}

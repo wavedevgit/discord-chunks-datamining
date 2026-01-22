@@ -1,1 +1,1 @@
-{"id":"576418","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"576418","type":"classes","data":{"classes":{"LT":"H:mm","LTS":"H:mm:ss","L":"DD/MM/YYYY","LL":"D [de] MMMM [de] YYYY","LLL":"D [de] MMMM [de] YYYY H:mm","LLLL":"dddd, D [de] MMMM [de] YYYY H:mm","sameElse":"L","future":"en %s","past":"hace %s","s":"unos segundos","ss":"%d segundos","m":"un minuto","mm":"%d minutos","h":"una hora","hh":"%d horas","d":"un día","dd":"%d días","M":"un mes","MM":"%d meses","y":"un año","yy":"%d años"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"285056","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"285056","type":"classes","data":{"classes":{"LT":"H:mm","LTS":"H:mm:ss","L":"DD.MM.YYYY","LL":"D. MMMM YYYY","LLL":"D. MMMM YYYY H:mm","LLLL":"dddd D. MMMM YYYY H:mm","l":"D. M. YYYY","sameDay":"[dnes v] LT","nextDay":"[zítra v] LT","lastDay":"[včera v] LT","sameElse":"L","future":"za %s","past":"před %s"}},"fromModule":{"id":"web.js"}}

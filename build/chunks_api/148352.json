@@ -1,1 +1,1 @@
-{"id":"148352","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"148352","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Щелкните, чтобы завершить выбор диапазона дат","maximumDate":"Последняя доступная дата","minimumDate":"Первая доступная дата","next":"Далее","previous":"Назад","startRangeSelectionPrompt":"Щелкните, чтобы начать выбор диапазона дат"}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,1 @@
-{"id":"113144","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"113144","type":"classes","data":{"classes":{"childContextTypes":true,"contextTypes":true,"defaultProps":true,"displayName":true,"getDefaultProps":true,"mixins":true,"propTypes":true,"type":true,"name":true,"length":true,"prototype":true,"caller":true,"arguments":true,"arity":true}},"fromModule":{"id":"web.js"}}

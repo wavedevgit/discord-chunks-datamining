@@ -1,1 +1,1 @@
-{"id":"203477","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"203477","type":"classes","data":{"classes":{"rangeReversed":"Datum početka mora biti prije datuma završetka.","unavailableDate":"Odabrani datum nije dostupan."}},"fromModule":{"id":"web.js"}}

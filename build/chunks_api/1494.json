@@ -1,1 +1,1 @@
-{"id":"1494","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"1494","type":"classes","data":{"classes":{"rangeReversed":"開始日は終了日より前にする必要があります。","unavailableDate":"選択した日付は使用できません。"}},"fromModule":{"id":"web.js"}}

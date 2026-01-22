@@ -1,1 +1,1 @@
-{"id":"902553","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"902553","type":"classes","data":{"classes":{"rangeReversed":"Dátum začiatku musí byť skorší ako dátum konca.","unavailableDate":"Vybratý dátum je nedostupný."}},"fromModule":{"id":"web.js"}}

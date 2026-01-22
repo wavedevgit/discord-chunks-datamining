@@ -1,1 +1,1 @@
-{"id":"199940","type":"unknown","data":{},"fromModule":{"id":"47841"}}
+{"id":"199940","type":"classes","data":{"classes":{"type":"GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET","oldFormErrors":true,"rejectWithError":false,"message":"Error saving home settings","enumerable":true,"configurable":true,"writable":true,"emoji":null}},"fromModule":{"id":"47841"}}

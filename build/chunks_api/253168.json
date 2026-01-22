@@ -1,1 +1,1 @@
-{"id":"253168","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"253168","type":"classes","data":{"classes":{"settings_updates":false,"power_events":false,"system_wide_input":false,"generic_inputs":true,"name":"2025-09-idle-detection-adjustments","kind":"user"}},"fromModule":{"id":"web.js"}}

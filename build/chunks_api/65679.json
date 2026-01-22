@@ -1,1 +1,1 @@
-{"id":"65679","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"65679","type":"classes","data":{"classes":{"rangeReversed":"La data di inizio deve essere antecedente alla data di fine.","unavailableDate":"Data selezionata non disponibile."}},"fromModule":{"id":"web.js"}}

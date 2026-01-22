@@ -1,1 +1,1 @@
-{"id":"283336","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"283336","type":"classes","data":{"classes":{"rangeReversed":"開始日期必須在結束日期之前。","unavailableDate":"所選日期無法使用。"}},"fromModule":{"id":"web.js"}}

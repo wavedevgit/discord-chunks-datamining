@@ -1,1 +1,1 @@
-{"id":"348365","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"348365","type":"classes","data":{"classes":{"rangeReversed":"Startdatoen skal være før slutdatoen.","unavailableDate":"Den valgte dato er ikke tilgængelig."}},"fromModule":{"id":"web.js"}}

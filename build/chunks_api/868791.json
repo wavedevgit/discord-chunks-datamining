@@ -1,1 +1,1 @@
-{"id":"868791","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"868791","type":"classes","data":{"classes":{"value":true,"extension":"pcap","mimeType":"application/vnd.tcpdump.pcap","description":"Libpcap File Format"}},"fromModule":{"id":"web.js"}}

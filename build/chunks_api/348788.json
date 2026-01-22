@@ -1,1 +1,1 @@
-{"id":"348788","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"348788","type":"classes","data":{"classes":{"weekday":"long","day":"numeric","month":"long","year":"numeric"}},"fromModule":{"id":"web.js"}}

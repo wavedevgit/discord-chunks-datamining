@@ -1,1 +1,1 @@
-{"id":"835686","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"835686","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Klik om de selectie van het datumbereik te voltooien","maximumDate":"Laatste beschikbare datum","minimumDate":"Eerste beschikbare datum","next":"Volgende","previous":"Vorige","startRangeSelectionPrompt":"Klik om het datumbereik te selecteren"}},"fromModule":{"id":"web.js"}}

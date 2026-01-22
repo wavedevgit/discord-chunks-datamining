@@ -1,1 +1,1 @@
-{"id":"126208","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"126208","type":"classes","data":{"classes":{"enumerable":true,"configurable":true,"writable":true,"voiceActivityDetection":true,"offerToReceiveAudio":true,"offerToReceiveVideo":false,"iceRestart":false}},"fromModule":{"id":"web.js"}}

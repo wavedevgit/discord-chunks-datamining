@@ -1,1 +1,1 @@
-{"id":"129486","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"129486","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"חץ כדי לסיים את בחירת טווח התאריכים","maximumDate":"תאריך פנוי אחרון","minimumDate":"תאריך פנוי ראשון","next":"הבא","previous":"הקודם","startRangeSelectionPrompt":"לחץ כדי להתחיל בבחירת טווח התאריכים"}},"fromModule":{"id":"web.js"}}

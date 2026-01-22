@@ -1,1 +1,1 @@
-{"id":"162644","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"162644","type":"classes","data":{"classes":{"finishRangeSelectionPrompt":"Apăsaţi pentru a finaliza selecţia razei pentru dată","maximumDate":"Ultima dată disponibilă","minimumDate":"Prima dată disponibilă","next":"Următorul","previous":"Înainte","startRangeSelectionPrompt":"Apăsaţi pentru a începe selecţia razei pentru dată"}},"fromModule":{"id":"web.js"}}

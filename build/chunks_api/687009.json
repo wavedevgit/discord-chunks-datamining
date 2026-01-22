@@ -1,1 +1,1 @@
-{"id":"687009","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"687009","type":"classes","data":{"classes":{"undefined":"Нет выбранных элементов","longPressToSelect":"Нажмите и удерживайте для входа в режим выбора.","select":"Выбрать","selectedAll":"Выбраны все элементы."}},"fromModule":{"id":"web.js"}}

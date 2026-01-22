@@ -1,1 +1,1 @@
-{"id":"545868","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"545868","type":"classes","data":{"classes":{"type":"GUILD_ROLE_MEMBER_COUNT_FETCH_FAILURE","rejectWithError":true}},"fromModule":{"id":"web.js"}}

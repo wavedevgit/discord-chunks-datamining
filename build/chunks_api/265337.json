@@ -1,1 +1,1 @@
-{"id":"265337","type":"unknown","data":{},"fromModule":{"id":"4787"}}
+{"id":"265337","type":"classes","data":{"classes":{"description":"Ensures buttons have discernible text","help":"","id":"button-name","selector":"button, [role=\"button\"], [role=\"link\"], [role=\"menuitem\"], [role=\"tab\"]"}},"fromModule":{"id":"4787"}}
