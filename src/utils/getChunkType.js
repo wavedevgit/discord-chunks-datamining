@@ -264,12 +264,14 @@ function getClasses(code) {
         walk.simple(ast, {
             ObjectExpression(node) {
                 if (
-                    !node.properties.every(
-                        (prop) =>
-                            prop.value?.value?.includes?.(prop.key.name) &&
-                            (prop.value?.value?.includes?.('-') ||
-                                prop.value?.value?.includes?.('_')),
-                    ) && !node.properties.every(prop=>!/^[a-f0-9_\-]+$/.test(prop?.value?.value))
+                    !node.properties.every((prop) => {
+                        return (
+                            (prop.value?.value?.includes?.(prop.key.name) &&
+                                (prop.value?.value?.includes?.('-') ||
+                                    prop.value?.value?.includes?.('_'))) ||
+                            /^[a-f0-9_\-]{16,17}$/.test(prop?.value?.value)
+                        );
+                    })
                 )
                     isClasses = false;
 
@@ -389,7 +391,7 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
         ];
     }
     // this is json chunk (.json file)
-    if (code.includes('module.exports=JSON.parse(')) {
+    if (code.includes('=JSON.parse(')) {
         return ['json', { content: getJsonParseExportContent(code) }];
     }
     return ['unknown', {}];
