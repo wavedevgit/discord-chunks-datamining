@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk45474 = require("./45474.js"),
   Chunk981631 = require("./981631.js");
 let s = (t, e, n) => {
-  let [s, c] = a.useState(t), [u, d] = a.useState(Date.now()), [m] = a.useState(Date.now()), O = a.useCallback(t => {
+  let [s, c] = a.useState(t), [u, d] = a.useState(Date.now()), [m] = a.useState(Date.now()), f = a.useCallback(t => {
     r.default.track(o.rMx.CANCELLATION_FLOW_STEP, function(t) {
       for (var e = 1; e < arguments.length; e++) {
         var n = null != arguments[e] ? arguments[e] : {},
@@ -35,5 +35,5 @@ let s = (t, e, n) => {
       location_stack: n
     }, (0, i.v)(e))), c(t), d(Date.now())
   }, [n, m, u, s, e]);
-  return [s, O, u, m]
+  return [s, f, u, m]
 }

@@ -1,8 +1,8 @@
 /** Chunk was on 26526 **/
 /** chunk id: 398775, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  PremiumSubscriptionPauseModalSelect: () => C,
-  Sz: () => P
+  PremiumSubscriptionPauseModalSelect: () => S,
+  Sz: () => C
 }), require("./539854.js"), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk99945 = require("./99945.js"),
   Chunk793030 = require("./793030.js"),
   Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
   Chunk493773 = require("./493773.js"),
   Chunk74538 = require("./74538.js"),
@@ -21,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk278900 = require("./278900.js");
-async function S(t) {
+async function y(t) {
   let {
     premiumSubscription: e,
     pauseDuration: n,
@@ -32,18 +31,18 @@ async function S(t) {
     analyticsLocation: o
   } = t;
   try {
-    i(true), r(false), await (0, d.Mg)(e, {
+    i(true), r(false), await (0, u.Mg)(e, {
       pauseDuration: n
     }, {
       amount: 0,
       currency: e.currency
-    }, (0, O.UX)(e.items, e.currency, e.paymentSourceId), l, o), a()
+    }, (0, m.UX)(e.items, e.currency, e.paymentSourceId), l, o), a()
   } catch (t) {
     r(true), i(false)
   }
 }
 
-function C() {
+function S() {
   let {
     transitionState: t,
     onClose: e,
@@ -51,13 +50,13 @@ function C() {
     setPauseDuration: i,
     pauseDuration: l,
     premiumSubscription: u
-  } = (0, E.a)(), d = r.useCallback(t => {
+  } = (0, _.a)(), m = r.useCallback(t => {
     let {
       value: e
     } = t;
     i(e)
-  }, [i]), O = u.status === p.O0b.PAUSED ? b.intl.string(b.t.Lp9WoG) : b.intl.string(b.t.eSR83U), S = function(t) {
-    let e = t.status === p.O0b.PAUSED ? b.t.o3upfT : b.t.dBXZEm,
+  }, [i]), y = u.status === E.O0b.PAUSED ? p.intl.string(p.t.Lp9WoG) : p.intl.string(p.t.eSR83U), S = function(t) {
+    let e = t.status === E.O0b.PAUSED ? p.t.o3upfT : p.t.dBXZEm,
       {
         durations: n,
         currentDaysPaused: a
@@ -66,50 +65,51 @@ function C() {
     for (let t of n) {
       let n = o.T[t];
       r.push({
-        name: b.intl.formatToPlainString(e, {
+        name: p.intl.formatToPlainString(e, {
           days: n - a
         }),
         value: n,
-        radioItemIconClassName: y.radioOption
+        radioItemIconClassName: b.radioOption
       })
     }
     return r.sort((t, e) => t.value - e.value), r.push({
-      name: b.intl.string(b.t.OCPUM6),
+      name: p.intl.string(p.t.OCPUM6),
       value: 0,
-      radioBarClassName: y.cancelText,
-      radioItemIconClassName: y.cancelText
+      radioBarClassName: b.cancelText,
+      radioItemIconClassName: b.cancelText
     }), r
   }(u);
-  return (0, m.ZP)(() => {
+  return (0, d.ZP)(() => {
     S.length < 1 || i(S[0].value)
   }), (0, a.jsx)(s.Modal, {
     transitionState: t,
-    title: b.intl.string(b.t["f3nnB/"]),
-    subtitle: O,
+    title: p.intl.string(p.t["f3nnB/"]),
+    subtitle: y,
     onClose: async () => {
       await e()
     },
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t.h9tkAK),
+      text: p.intl.string(p.t.h9tkAK),
       onClick: e
     }, {
       variant: "primary",
       disabled: null === l,
-      text: b.intl.string(b.t["3PatSz"]),
+      text: p.intl.string(p.t["3PatSz"]),
       onClick: () => {
-        0 === l ? n(_.R.WHAT_YOU_LOSE) : n(_.R.PAUSE_CONFIRM)
+        0 === l ? n(O.R.WHAT_YOU_LOSE) : n(O.R.PAUSE_CONFIRM)
       }
     }],
     children: (0, a.jsx)(c.Gu, {
+      "data-migration-pending": true,
       options: S,
-      onChange: d,
+      onChange: m,
       value: l
     })
   })
 }
 
-function P() {
+function C() {
   let {
     transitionState: t,
     onClose: e,
@@ -117,50 +117,50 @@ function P() {
     premiumSubscription: i,
     analyticsLocation: o,
     setStep: c,
-    analyticsLocations: d
-  } = (0, E.a)(), [m, O] = r.useState(false), [f, C] = r.useState(false);
-  if (null == n) return void c(_.R.PAUSE_SELECT);
-  let P = null,
-    T = [p.O0b.PAST_DUE, p.O0b.PAUSED].includes(i.status) ? i.currentPeriodStart : i.currentPeriodEnd,
-    v = l()(T).add(n, "days").toDate();
+    analyticsLocations: u
+  } = (0, _.a)(), [d, m] = r.useState(false), [f, S] = r.useState(false);
+  if (null == n) return void c(O.R.PAUSE_SELECT);
+  let C = null,
+    P = [E.O0b.PAST_DUE, E.O0b.PAUSED].includes(i.status) ? i.currentPeriodStart : i.currentPeriodEnd,
+    v = l()(P).add(n, "days").toDate();
   switch (i.status) {
-    case p.O0b.PAST_DUE:
-      P = b.intl.format(b.t["xaS18/"], {
+    case E.O0b.PAST_DUE:
+      C = p.intl.format(p.t["xaS18/"], {
         pauseDuration: n,
         resumeDate: v
       });
       break;
-    case p.O0b.PAUSED:
-      P = b.intl.format(b.t.Vur3Fc, {
+    case E.O0b.PAUSED:
+      C = p.intl.format(p.t.Vur3Fc, {
         resumeDate: v
       });
       break;
     default:
-      P = b.intl.format(b.t.W85vFA, {
-        pauseDate: T,
+      C = p.intl.format(p.t.W85vFA, {
+        pauseDate: P,
         resumeDate: v,
         pauseDuration: n
       })
   }
   return (0, a.jsxs)(s.Modal, {
-    title: b.intl.string(b.t.AnMG5x),
+    title: p.intl.string(p.t.AnMG5x),
     transitionState: t,
     actions: [{
-      text: b.intl.string(b.t.h9tkAK),
+      text: p.intl.string(p.t.h9tkAK),
       variant: "primary",
       onClick: e
     }, {
-      text: b.intl.string(b.t["cY+Oob"]),
+      text: p.intl.string(p.t["cY+Oob"]),
       variant: "critical-primary",
       disabled: f || null == n,
       onClick: async () => {
-        await S({
+        await y({
           premiumSubscription: i,
           pauseDuration: n,
-          setIsCancelling: C,
-          setHasError: O,
+          setIsCancelling: S,
+          setHasError: m,
           onClose: e,
-          analyticsLocations: d,
+          analyticsLocations: u,
           analyticsLocation: o
         })
       }
@@ -168,13 +168,15 @@ function P() {
     onClose: async () => {
       await e()
     },
-    children: [m ? (0, a.jsx)(u.Wn, {
-      messageType: u.QYI.ERROR,
-      className: y.errorBlock,
-      children: b.intl.string(b.t["5mlOCW"])
+    children: [d ? (0, a.jsx)("div", {
+      className: b.errorBlock,
+      children: (0, a.jsx)(s.M14, {
+        type: "critical",
+        children: p.intl.string(p.t["5mlOCW"])
+      })
     }) : null, (0, a.jsx)("div", {
-      className: y.body,
-      children: P
+      className: b.body,
+      children: C
     })]
   })
 }
