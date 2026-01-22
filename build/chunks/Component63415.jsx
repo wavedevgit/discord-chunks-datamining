@@ -169,7 +169,7 @@ let y = e => {
           _ ? t(Error("Installation failed")) : e()
         }, C))
       }), [_, C, P, s]);
-    l.useEffect(() => {
+    return (l.useEffect(() => {
       F && w !== m.Lk.UNKNOWN && P(m.Lk.UNKNOWN)
     }, [F, P, w]), l.useEffect(() => {
       L(Q)
@@ -179,13 +179,7 @@ let y = e => {
       w !== m.Lk.INSTALLING && clearTimeout(n)
     }, [n, w]), l.useEffect(() => {
       if (w !== m.Lk.INSTALLED && R !== m.l7.INITIALIZING) return void D(m.l7.INITIALIZING)
-    }, [w, R, D]);
-    let {
-      enabled: J
-    } = p.S.useConfig({
-      location: "private_browsing_perk_settings_page"
-    });
-    return J ? (0, a.jsxs)("div", {
+    }, [w, R, D]), (0, p.lM)("private_browsing_perk_settings_page")) ? (0, a.jsxs)("div", {
       children: [(0, a.jsx)(o.DZT, {
         variant: "heading-xl/semibold",
         style: {

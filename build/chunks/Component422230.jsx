@@ -35,11 +35,7 @@ let O = e => {
     isSupportedPrivateBrowsingPerkPlatform: N,
     isWeb: T,
     connectionStatus: I
-  } = (0, v.lV)(), {
-    enabled: k
-  } = b.S.useConfig({
-    location: "private_browsing_perk_settings_page"
-  }), w = (0, l.useCallback)(() => {
+  } = (0, v.lV)(), k = (0, b.lM)("private_browsing_perk_settings_page"), w = (0, l.useCallback)(() => {
     (0, c.A)(j.BVt.NITRO_HOME), t()
   }, [t]), P = (0, l.useCallback)(() => {
     (0, p.openUserSettings)(m.X.PRIVATE_BROWSING_PANEL, {

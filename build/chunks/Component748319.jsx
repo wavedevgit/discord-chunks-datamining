@@ -748,9 +748,7 @@ function e9() {
       location: "Account"
     }),
     K = (0, $.C)(t, "Account"),
-    z = ee.S.useConfig({
-      location: "Account"
-    }).enabled,
+    z = (0, ee.lM)("Account"),
     {
       analyticsLocations: q
     } = (0, O.Ay)(S.A.ACCOUNT),

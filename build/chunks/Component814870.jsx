@@ -31,13 +31,8 @@ let I = (0, Chunk419954.t_)(Chunk780964.X.PRIVATE_BROWSING_PANEL, {
           isSupportedPrivateBrowsingPerkPlatform: e,
           isWeb: i,
           perkAvailableToUser: n
-        } = (0, a.lV)(),
-        {
-          enabled: l
-        } = u.S.useConfig({
-          location: "private_browsing_perk_settings_page"
-        });
-      return l && (e || i) && (!t || n)
+        } = (0, a.lV)();
+      return (0, u.lM)("private_browsing_perk_settings_page") && (e || i) && (!t || n)
     },
     buildLayout: () => [I],
     trailing: {
