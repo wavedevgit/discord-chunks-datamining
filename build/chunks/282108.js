@@ -2,20 +2,21 @@
 /** chunk id: 282108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $V: () => R,
+  $V: () => w,
   Fg: () => b,
   KM: () => A,
-  LE: () => P,
-  M: () => T,
+  LE: () => D,
+  M: () => C,
   O8: () => O,
-  b: () => C,
-  c2: () => x,
-  f: () => U,
-  gh: () => w,
+  b: () => N,
+  c2: () => L,
+  f: () => G,
+  gh: () => P,
   ku: () => E,
   mS: () => I,
-  nx: () => G,
-  qo: () => N,
+  nx: () => V,
+  qo: () => R,
+  s9: () => T,
   y5: () => v
 }), require("./896048.js"), require("./114821.js"), require("./339614.js"), require("./938796.js"), require("./321073.js");
 var Chunk665260 = require("./665260.js"),
@@ -41,18 +42,18 @@ let g = false,
     let {
       channelId: t,
       authorId: n
-    } = G(e);
+    } = V(e);
     return null == t || null == e ? m.LO.NONE : y(t, n)
   },
   y = (e, t) => {
     let n = f.default.getCurrentUser();
     if (null == n || t === n.id) return m.LO.NONE;
-    let r = x(e, t, [c.A, d.A]);
+    let r = L(e, t, [c.A, d.A]);
     return null == r ? m.LO.NONE : O(r)
   },
   O = e => {
     let t = E();
-    return null == e ? m.LO.NONE : P(t.map(t => U(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(p.Vq))
+    return null == e ? m.LO.NONE : D(t.map(t => G(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(p.Vq))
   };
 
 function A(e) {
@@ -63,10 +64,10 @@ function A(e) {
 function v(e, t) {
   var n, r;
   if (t === m.LO.NONE || null == e) returnfalse;
-  if ((null == (n = e.attachments) ? true : n.some(e => C({
+  if ((null == (n = e.attachments) ? true : n.some(e => N({
       type: _.D.Attachment,
       media: e
-    }, t).length > 0)) || (null == (r = e.embeds) ? true : r.some(e => C({
+    }, t).length > 0)) || (null == (r = e.embeds) ? true : r.some(e => N({
       type: _.D.Embed,
       media: e
     }, t).length > 0))) returntrue;
@@ -99,13 +100,13 @@ function I(e, t) {
   var n, r;
   let i = null != t ? t : b(e);
   if (i === m.LO.NONE) returnfalse;
-  if ((null == (n = e.attachments) ? true : n.some(e => R({
+  if ((null == (n = e.attachments) ? true : n.some(e => w({
       type: _.D.Attachment,
       media: e
-    }, i))) || (null == (r = e.embeds) ? true : r.some(e => R({
+    }, i))) || (null == (r = e.embeds) ? true : r.some(e => w({
       type: _.D.Embed,
       media: e
-    }, i))) || null != e.components && S(e.components).some(e => R({
+    }, i))) || null != e.components && S(e.components).some(e => w({
       type: _.D.GenericMedia,
       media: e
     }, i))) returntrue;
@@ -117,17 +118,21 @@ function I(e, t) {
 }
 
 function T(e) {
+  return !(null != e.components && S(e.components).some(e => e.loadingState === a.TD.LOADING)) && true
+}
+
+function C(e) {
   var t, n, r, i;
   let a = b(e);
   if (a === m.LO.NONE) return {
     attachmentIds: [],
     embedIds: []
   };
-  let s = null == (r = e.attachments) ? true : r.filter(e => R({
+  let s = null == (r = e.attachments) ? true : r.filter(e => w({
       type: _.D.Attachment,
       media: e
     }, a)),
-    o = null == (i = e.embeds) ? true : i.filter(e => R({
+    o = null == (i = e.embeds) ? true : i.filter(e => w({
       type: _.D.Embed,
       media: e
     }, a));
@@ -137,35 +142,35 @@ function T(e) {
   }
 }
 
-function C(e, t) {
-  if (t === m.LO.NONE) return [];
-  let n = D(t);
-  return 0 === n.length ? [] : n.filter(t => w(t, e)).map(e => m.Jn[e].obscureReason)
-}
-
 function N(e, t) {
-  if (t === m.LO.NONE) returnfalse;
-  let n = D(t);
-  return 0 !== n.length && n.filter(t => w(t, e)).length > 0
+  if (t === m.LO.NONE) return [];
+  let n = x(t);
+  return 0 === n.length ? [] : n.filter(t => P(t, e)).map(e => m.Jn[e].obscureReason)
 }
 
 function R(e, t) {
+  if (t === m.LO.NONE) returnfalse;
+  let n = x(t);
+  return 0 !== n.length && n.filter(t => P(t, e)).length > 0
+}
+
+function w(e, t) {
   if (t === m.LO.NONE || s.Ay.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
-  let n = D(t);
+  let n = x(t);
   if (0 === n.length) returnfalse;
   switch (e.type) {
     case _.D.Embed:
-      return L(e.media, n);
-    case _.D.Attachment:
       return j(e.media, n);
-    case _.D.GenericMedia:
+    case _.D.Attachment:
       return M(e.media, n);
+    case _.D.GenericMedia:
+      return k(e.media, n);
     default:
       returnfalse
   }
 }
 
-function w(e, t) {
+function P(e, t) {
   var n, i, a, o;
   if (null == e) returnfalse;
   let l = m.Jn[e];
@@ -182,7 +187,7 @@ function w(e, t) {
   }
 }
 
-function P(e) {
+function D(e) {
   let t = m.LO.NONE;
   for (let n of e) switch (n) {
     case m.kn.EXPLICIT:
@@ -197,14 +202,14 @@ function P(e) {
   return t
 }
 
-function D(e) {
+function x(e) {
   if (e === m.LO.NONE) return [];
   let t = [];
   for (let n of E())(e & n.bitmask) > 0 && t.push(n.harmType);
   return t
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [c.A, d.A],
     [r, i] = n,
     a = r.getChannel(e),
@@ -212,40 +217,40 @@ function x(e, t) {
   return null == s || t === s.id || null == a ? null : a.isDM() || a.isGroupDM() ? null != t && i.getFriendIDs().includes(t) ? _.v.FRIEND_DM : _.v.NON_FRIEND_DM : _.v.GUILD
 }
 
-function L(e, t) {
+function j(e, t) {
   var n, r, i, a, s, o, l;
-  return !(0 === t.length || null == e || 0 === t.filter(t => !w(t, {
+  return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
     type: _.D.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (s = e.image) ? true : s.width) === 0 && (null == (o = e.image) ? true : o.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(V(e), t)
-}
-
-function j(e, t) {
-  var n;
-  return 0 !== t.length && 0 !== t.filter(t => !w(t, {
-    type: _.D.Attachment,
-    media: e
-  })).length && k(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (s = e.image) ? true : s.width) === 0 && (null == (o = e.image) ? true : o.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && U(F(e), t)
 }
 
 function M(e, t) {
   var n;
-  return 0 !== t.length && 0 !== t.filter(t => !w(t, {
-    type: _.D.GenericMedia,
+  return 0 !== t.length && 0 !== t.filter(t => !P(t, {
+    type: _.D.Attachment,
     media: e
-  })).length && k(null == (n = e.contentScanMetadata) ? true : n.version, t)
+  })).length && U(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
 }
 
 function k(e, t) {
+  var n;
+  return 0 !== t.length && 0 !== t.filter(t => !P(t, {
+    type: _.D.GenericMedia,
+    media: e
+  })).length && U(null == (n = e.contentScanMetadata) ? true : n.version, t)
+}
+
+function U(e, t) {
   let n = h.A.validContentScanVersion;
   return e !== g && (t.includes(m.kn.GORE) || t.includes(m.kn.SELF_HARM) ? null == e || e < n : null == e)
 }
 
-function U(e) {
+function G(e) {
   return null != e && [i.TO.BLOCK, i.TO.BLUR].includes(e)
 }
 
-function G(e) {
+function V(e) {
   var t, n;
   let r = null,
     i = null;
@@ -263,6 +268,6 @@ function G(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   return null != e.content_scan_version ? e.content_scan_version : null != e.contentScanVersion || null != e.contentScanVersion ? e.contentScanVersion : null
 }
