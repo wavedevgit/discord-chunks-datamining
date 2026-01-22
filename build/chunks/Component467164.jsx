@@ -32,7 +32,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk737782 = require("./737782.js"),
   Chunk973324 = require("./973324.js");
 
-function N(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -51,7 +51,7 @@ function N(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function E(e) {
   } = e, a = (0, c.bG)([g.A], () => g.A.getGuild(t.guild_id));
   return (r.useEffect(() => {
     null == a && n()
-  }, [a, n]), null == a) ? null : (0, l.jsx)(R, {
+  }, [a, n]), null == a) ? null : (0, l.jsx)(I, {
     transitionState: i,
     guild: a,
     channel: t,
@@ -111,7 +111,7 @@ function G(e) {
   })
 }
 
-function R(e) {
+function I(e) {
   var t, n;
   let {
     channel: i,
@@ -121,12 +121,12 @@ function R(e) {
     transitionState: m,
     isEvent: E = false
   } = e, {
-    loading: R,
-    error: I,
+    loading: I,
+    error: R,
     onSave: z
-  } = (0, D.A)(i, g), M = r.useMemo(() => v.A.getStageInstanceByChannel(i.id), [i.id]), [U, B] = r.useState(null != (t = null == M ? true : M.topic) ? t : ""), [L, F] = r.useState(""), [Z] = r.useState(E), [q, K] = r.useState({
+  } = (0, D.A)(i, g), M = r.useMemo(() => v.A.getStageInstanceByChannel(i.id), [i.id]), [B, U] = r.useState(null != (t = null == M ? true : M.topic) ? t : ""), [L, F] = r.useState(""), [Z] = r.useState(E), [q, K] = r.useState({
     startDate: (0, f.jd)()
-  }), [Q, X] = r.useState(false), V = (0, p.Z)(i), J = (0, p.K)(i), W = null == M && V && !Z, [Y, H] = r.useState(W && J), $ = w.dD.GUILD_ONLY, [ee] = r.useState(null != (n = null == M ? true : M.privacy_level) ? n : $), [et, en] = r.useState(null), el = (0, y.D3)(i.id), er = (0, y.Xk)(i.id), [ei, ea] = r.useState(false), es = (0, d.Ay)(i), ec = (0, x.A)(c), eo = null != h, eu = ec.length > 1;
+  }), [Q, V] = r.useState(false), X = (0, p.Z)(i), J = (0, p.K)(i), W = null == M && X && !Z, [Y, H] = r.useState(W && J), $ = w.dD.GUILD_ONLY, [ee] = r.useState(null != (n = null == M ? true : M.privacy_level) ? n : $), [et, en] = r.useState(null), el = (0, y.D3)(i.id), er = (0, y.Xk)(i.id), [ei, ea] = r.useState(false), es = (0, d.Ay)(i), ec = (0, x.A)(c), eo = null != h, eu = ec.length > 1;
   (0, u.Ay)(() => {
     b.default.track(P.HAw.START_STAGE_OPENED, {
       stage_instance_id: null == M ? true : M.id,
@@ -135,8 +135,8 @@ function R(e) {
     })
   });
   let ed = e => {
-      (e.preventDefault(), ee === w.dD.PUBLIC && U.length < 20 && !ei) ? ea(true): Z || null == z || z({
-        topic: U,
+      (e.preventDefault(), ee === w.dD.PUBLIC && B.length < 20 && !ei) ? ea(true): Z || null == z || z({
+        topic: B,
         privacyLevel: ee,
         sendStartNotification: Y
       })
@@ -158,13 +158,13 @@ function R(e) {
         className: _.Zd,
         children: [(0, l.jsx)(o.ksK, {
           required: true,
-          error: null != I ? I.getAnyErrorMessage() : true,
+          error: null != R ? R.getAnyErrorMessage() : true,
           label: E ? C.intl.string(C.t["0HbEQ6"]) : C.intl.string(C.t["5FPBOB"]),
-          onChange: e => B(e),
+          onChange: e => U(e),
           helperText: ei ? C.intl.string(C.t.AqTyaR) : true,
           placeholder: C.intl.string(C.t.ZwWruY),
           maxLength: S.RY,
-          value: U,
+          value: B,
           autoComplete: "off",
           inputRef: ex
         }), eo && eu ? (0, l.jsx)(G, {
@@ -182,7 +182,7 @@ function R(e) {
             schedule: q,
             recurrenceRule: et,
             timeSelected: Q,
-            onTimeChange: X
+            onTimeChange: V
           }), null != q.startDate && q.startDate < a()() ? (0, l.jsx)(o.Text, {
             color: "text-feedback-critical",
             variant: "text-xs/normal",
@@ -210,7 +210,8 @@ function R(e) {
             }, t)
           })
         }) : null, (0, l.jsx)(A.A, {
-          className: _.XI
+          className: _.XI,
+          channelId: i.id
         })]
       })]
     }),
@@ -227,8 +228,8 @@ function R(e) {
         variant: "primary",
         text: Z ? C.intl.string(C.t["60lJ0C"]) : null == M ? C.intl.string(C.t.s8mM8A) : C.intl.string(C.t.K344S7),
         onClick: ed,
-        disabled: "" === U || null == ee || E && !ef,
-        loading: R
+        disabled: "" === B || null == ee || E && !ef,
+        loading: I
       }],
       actionBarInput: W ? (0, l.jsxs)(o.DUT, {
         onClick: () => H(!Y),
@@ -242,14 +243,14 @@ function R(e) {
         })]
       }) : true
     };
-  return null == M ? (0, l.jsx)(s.ExpressiveModal, T(N({
+  return null == M ? (0, l.jsx)(s.ExpressiveModal, N(k({
     graphic: {
       type: "image",
-      src: k.A
+      src: T.A
     }
   }, eg), {
     children: ej
-  })) : (0, l.jsx)(s.Modal, T(N({}, eg), {
+  })) : (0, l.jsx)(s.Modal, N(k({}, eg), {
     children: ej
   }))
 }

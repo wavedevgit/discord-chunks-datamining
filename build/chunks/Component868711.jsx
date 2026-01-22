@@ -1,7 +1,7 @@
 /** Chunk was on 7453 **/
 /** chunk id: 868711, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,44 +15,44 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk563959 = require("./563959.js");
 
-function g(e) {
+function p(e) {
   let {
     guildId: n,
     onClose: t
-  } = e, g = (0, l.bG)([c.A, o.A], () => {
+  } = e, p = (0, r.bG)([c.A, s.A], () => {
     let e = c.A.getGuild(n);
-    return o.A.can(u.xBc.MANAGE_ROLES, e)
+    return s.A.can(u.xBc.MANAGE_ROLES, e)
   }, [n]);
-  return (0, r.jsxs)("div", {
-    className: m.kL,
-    children: [(0, r.jsx)(a.A, {
-      children: (0, r.jsx)("div", {
-        className: m.n1,
-        children: (0, r.jsx)(i.CTc, {
+  return (0, l.jsxs)("div", {
+    className: g.kL,
+    children: [(0, l.jsx)(o.A, {
+      children: (0, l.jsx)("div", {
+        className: g.n1,
+        children: (0, l.jsx)(i.CTc, {
           size: "custom",
           color: "currentColor",
           height: 40,
           width: 40,
-          className: m.Kk
+          className: g.Kk
         })
       })
-    }), (0, r.jsx)(i.Heading, {
+    }), (0, l.jsx)(i.Heading, {
       color: "text-strong",
       variant: "heading-xl/semibold",
-      className: m.DD,
+      className: g.DD,
       children: d.intl.string(d.t["WgZ+3D"])
-    }), (0, r.jsx)(i.Text, {
+    }), (0, l.jsx)(i.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      className: m.VA,
+      className: g.VA,
       children: d.intl.string(d.t["v/S/PG"])
-    }), g && (0, r.jsx)(i.Text, {
+    }), p && (0, l.jsx)(i.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      className: m.Ec,
+      className: g.Ec,
       children: d.intl.format(d.t["K+DH2o"], {
         onClick: () => {
-          s.A.open(n, u.BEX.ROLES), t()
+          a.A.open(n, u.BEX.ROLES), t()
         }
       })
     })]

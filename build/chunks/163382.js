@@ -9,20 +9,20 @@ var Chunk64700 = require("./64700.js"),
   Chunk988794 = require("./988794.js");
 
 function a(e, t) {
-  let n = (0, r.yK)([s.Ay], () => Object.values(s.Ay.getUsersForGuildEvent(e, null)), [e]),
-    a = (0, r.yK)([s.Ay], () => Object.values(s.Ay.getUsersForGuildEvent(e, t)), [e, t]);
+  let n = (0, r.yK)([i.Ay], () => Object.values(i.Ay.getUsersForGuildEvent(e, null)), [e]),
+    a = (0, r.yK)([i.Ay], () => Object.values(i.Ay.getUsersForGuildEvent(e, t)), [e, t]);
   return (0, l.useMemo)(() => {
     let e = a.reduce((e, t) => (e[t.user_id] = t, e), {}),
       t = n.filter(t => {
         let n = e[t.user_id];
-        return null == n || n.response === i.Qi.INTERESTED
+        return null == n || n.response === s.Qi.INTERESTED
       }),
-      l = a.filter(e => e.response === i.Qi.INTERESTED),
+      l = a.filter(e => e.response === s.Qi.INTERESTED),
       r = new Set,
-      s = [],
+      i = [],
       c = e => {
-        r.has(e.user_id) || (s.push(e), r.add(e.user_id))
+        r.has(e.user_id) || (i.push(e), r.add(e.user_id))
       };
-    return t.forEach(c), l.forEach(c), s
+    return t.forEach(c), l.forEach(c), i
   }, [n, a])
 }

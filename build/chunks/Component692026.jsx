@@ -1,7 +1,7 @@
 /** Chunk was on 342 **/
 /** chunk id: 692026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => f
 }), require("./228524.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,30 +19,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk330156 = require("./330156.js");
 
-function p(e) {
+function f(e) {
   var t, n;
   let {
-    guildId: p,
-    guildEvent: f,
+    guildId: f,
+    guildEvent: p,
     guildEventId: b,
     error: y
-  } = e, O = r.useMemo(() => (0, g.hQ)(f, p), [f, p]), {
+  } = e, O = r.useMemo(() => (0, x.hQ)(p, f), [p, f]), {
     channel_id: A,
-    name: N,
-    image: E,
-    description: C
-  } = O, P = (0, i.bG)([c.A], () => c.A.getChannel(A), [A]), S = (0, i.bG)([u.A], () => u.A.getGuild(p), [p]), T = (0, x.oF)(O), w = (0, i.bG)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), I = (0, i.bG)([o.A], () => o.A.isLurking(p), [p]), D = (0, a.gU)(P, S);
+    name: E,
+    image: N,
+    description: P
+  } = O, C = (0, i.bG)([c.A], () => c.A.getChannel(A), [A]), S = (0, i.bG)([u.A], () => u.A.getGuild(f), [f]), T = (0, g.oF)(O), w = (0, i.bG)([d.default], () => null != p.creatorId ? d.default.getUser(p.creatorId) : d.default.getCurrentUser(), [p.creatorId]), I = (0, i.bG)([o.A], () => o.A.isLurking(f), [f]), D = (0, a.gU)(C, S);
   return (0, l.jsxs)("div", {
     className: v.Qs,
     children: [(0, l.jsx)(h.A, {
       className: v.B0,
       guild: S,
-      channel: P,
+      channel: C,
       location: null != T ? T : true,
       creator: w,
-      name: N,
-      description: C,
-      imageSource: (n = (0, g.hQ)(f, p, b), null == E && null == n.image ? null : null != E && /^data:/.test(E) ? E : (0, m.A)(n)),
+      name: E,
+      description: P,
+      imageSource: (n = (0, x.hQ)(p, f, b), null == N && null == n.image ? null : null != N && /^data:/.test(N) ? N : (0, m.A)(n)),
       isActive: false,
       isUserLurking: I,
       speakers: [],
@@ -61,7 +61,7 @@ function p(e) {
         variant: "text-md/normal",
         className: v.m_,
         children: null != location ? j.intl.string(j.t.KDPFi9) : j.intl.format(j.t.f55NX0, {
-          channelName: null != (t = null == P ? true : P.name) ? t : "",
+          channelName: null != (t = null == C ? true : C.name) ? t : "",
           channelHook: () => {
             var e;
             return (0, l.jsxs)("div", {
@@ -78,7 +78,7 @@ function p(e) {
                 height: 18,
                 width: 18,
                 className: v.NR
-              }), null != (e = null == P ? true : P.name) ? e : T]
+              }), null != (e = null == C ? true : C.name) ? e : T]
             })
           }
         })

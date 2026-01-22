@@ -1,7 +1,7 @@
 /** Chunk was on 7453 **/
 /** chunk id: 961022, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk311907 = require("./311907.js"),
   Chunk113783 = require("./113783.js"),
@@ -10,26 +10,26 @@ var Chunk311907 = require("./311907.js"),
   Chunk734057 = require("./734057.js"),
   Chunk71393 = require("./71393.js");
 
-function o(e) {
+function s(e) {
   let {
     id: n,
     data: {
       guild: t,
-      instance: o,
+      instance: s,
       speakers: u,
       participantCount: d
     },
-    context: m
-  } = e, g = (0, r.bG)([c.A, a.A], () => {
+    context: g
+  } = e, p = (0, l.bG)([c.A, o.A], () => {
     var e;
-    return c.A.getGuild(null == (e = a.A.getChannel(n)) ? true : e.getGuildId())
-  }, [n]), h = (0, r.bG)([s.A], () => s.A.getStageInstanceByChannel(n), [n]), j = (0, l.E5)(n, i.ip.SPEAKER), x = (0, l.zy)(n), v = null != h ? j : u, p = (null != h ? x : d) - v.length;
+    return c.A.getGuild(null == (e = o.A.getChannel(n)) ? true : e.getGuildId())
+  }, [n]), m = (0, l.bG)([a.A], () => a.A.getStageInstanceByChannel(n), [n]), v = (0, r.E5)(n, i.ip.SPEAKER), f = (0, r.zy)(n), h = null != m ? v : u, b = (null != m ? f : d) - h.length;
   return {
     channelId: n,
-    guild: null != g ? g : t,
-    stage: null != h ? h : o,
-    speakers: v,
-    audienceCount: p,
-    context: m
+    guild: null != p ? p : t,
+    stage: null != m ? m : s,
+    speakers: h,
+    audienceCount: b,
+    context: g
   }
 }

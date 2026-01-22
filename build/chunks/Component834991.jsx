@@ -1,12 +1,12 @@
 /** Chunk was on 77986 **/
 /** chunk id: 834991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => w
+  A: () => k
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk442433 = require("./442433.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk939947 = require("./939947.js");
 
-function p(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -41,7 +41,7 @@ function p(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,77 +59,77 @@ function A(e) {
     children: t
   } = e;
   return (0, l.jsxs)("div", {
-    className: _.do,
+    className: m.do,
     children: [(0, l.jsx)(o.A, {
       children: (0, l.jsx)("div", {
-        className: _.n1,
+        className: m.n1,
         children: (0, l.jsx)(c.nFg, {
           size: "custom",
           color: "currentColor",
           height: 40,
           width: 40,
-          className: _.Kk
+          className: m.Kk
         })
       })
     }), t]
   })
 }
 
-function N() {
+function O() {
   return (0, l.jsx)(A, {
     children: (0, l.jsx)(c.Heading, {
       color: "text-strong",
       variant: "heading-xl/semibold",
-      className: _.DD,
-      children: m.intl.string(m.t.hW0mBR)
+      className: m.DD,
+      children: p.intl.string(p.t.hW0mBR)
     })
   })
 }
 
-function O() {
+function N() {
   return (0, l.jsx)(A, {
     children: (0, l.jsx)(c.Heading, {
       color: "text-default",
       variant: "heading-md/semibold",
-      className: _.JU,
-      children: m.intl.string(m.t.obChXk)
+      className: m.JU,
+      children: p.intl.string(p.t.obChXk)
     })
   })
 }
 
-function k(e) {
+function E(e) {
   let {
     count: t
   } = e;
   return (0, l.jsxs)("div", {
-    className: _.f0,
+    className: m.f0,
     children: [(0, l.jsx)("div", {
-      className: i()(_.Pc, _.uY),
+      className: s()(m.Pc, m.uY),
       children: (0, l.jsx)(c.nFg, {
         size: "custom",
         color: "currentColor",
         height: 14,
         width: 14,
-        className: _.Kk
+        className: m.Kk
       })
     }), (0, l.jsx)(c.Text, {
       color: "text-default",
       variant: "text-md/normal",
-      children: m.intl.format(m.t.BdQTfR, {
+      children: p.intl.format(p.t.BdQTfR, {
         userRemainCount: t
       })
     })]
   })
 }
 
-function I(e) {
+function C(e) {
   let {
     eventUser: t,
     guildId: n,
-    onContextMenu: s
-  } = e, d = r.useRef(null), o = (0, a.bG)([g.default], () => g.default.getUser(t.user_id)), j = (0, a.bG)([h.A, x.A, b.default], () => t.user_id === b.default.getId() ? h.A.getStatus() : x.A.getStatus(t.user_id, n), [t.user_id, n]);
+    onContextMenu: i
+  } = e, u = r.useRef(null), o = (0, a.bG)([v.default], () => v.default.getUser(t.user_id)), j = (0, a.bG)([h.A, b.A, g.default], () => t.user_id === g.default.getId() ? h.A.getStatus() : b.A.getStatus(t.user_id, n), [t.user_id, n]);
   return null == o ? null : (0, l.jsx)(f.A, {
-    targetElementRef: d,
+    targetElementRef: u,
     userId: t.user_id,
     guildId: n,
     position: "left",
@@ -139,23 +139,23 @@ function I(e) {
       let {
         isShown: f
       } = r;
-      return (0, l.jsxs)(c.DUT, y(p({
-        innerRef: d,
-        className: i()(_.f0, _.fv, {
-          [_.wH]: f
+      return (0, l.jsxs)(c.DUT, _(y({
+        innerRef: u,
+        className: s()(m.f0, m.fv, {
+          [m.wH]: f
         }),
-        onContextMenu: e => s(e, o)
+        onContextMenu: e => i(e, o)
       }, e), {
         children: [(0, l.jsx)(c.euF, {
           src: o.getAvatarURL(n, 24),
           "aria-label": o.username,
           size: c._3J.SIZE_24,
-          className: _.uY,
+          className: m.uY,
           status: j
-        }), (0, l.jsx)(u.A, {
+        }), (0, l.jsx)(d.A, {
           user: o,
-          className: _.sY,
-          discriminatorClass: _.XU,
+          className: m.sY,
+          discriminatorClass: m.XU,
           nick: null == (a = t.member) ? true : a.nick
         })]
       }))
@@ -163,43 +163,43 @@ function I(e) {
   })
 }
 
-function S(e) {
+function P(e) {
   let {
     eventUsers: t,
     guildId: n,
     usersNotShownCount: r = 0,
-    onContextMenu: s
+    onContextMenu: i
   } = e;
   return (0, l.jsxs)(c.IpV, {
-    className: _.DK,
-    children: [t.map(e => (0, l.jsx)(I, {
+    className: m.DK,
+    children: [t.map(e => (0, l.jsx)(C, {
       guildId: n,
       eventUser: e,
-      onContextMenu: s
-    }, e.user_id)), r > 0 && (0, l.jsx)(k, {
+      onContextMenu: i
+    }, e.user_id)), r > 0 && (0, l.jsx)(E, {
       count: r
     })]
   })
 }
 
-function C(e) {
+function I(e) {
   let {
     children: t,
     style: n
   } = e;
   return (0, l.jsx)("div", {
-    className: _.kL,
+    className: m.kL,
     style: null != n ? n : {},
     children: t
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     children: t,
     height: n
   } = e;
-  return (0, l.jsx)(C, {
+  return (0, l.jsx)(I, {
     style: {
       height: n
     },
@@ -207,40 +207,40 @@ function E(e) {
   })
 }
 
-function w(e) {
+function k(e) {
   let {
     guildEvent: t,
     recurrenceId: r,
-    eventUsers: s,
-    loading: i,
+    eventUsers: i,
+    loading: s,
     error: a,
-    containerHeight: u
+    containerHeight: d
   } = e, o = (0, j.A)(t.guild_id, t.id, r);
-  if (i && 0 === s.length) return (0, l.jsx)(E, {
-    height: u,
+  if (s && 0 === i.length) return (0, l.jsx)(S, {
+    height: d,
     children: (0, l.jsx)(c.y$y, {
       type: c.y$y.Type.SPINNING_CIRCLE,
-      className: _.u1
+      className: m.u1
     })
   });
-  if (null != a && 0 === s.length) return (0, l.jsx)(E, {
-    height: u,
-    children: (0, l.jsx)(O, {})
+  if (null != a && 0 === i.length) return (0, l.jsx)(S, {
+    height: d,
+    children: (0, l.jsx)(N, {})
   });
   let f = 0;
-  return s.length >= v.C1 && o > v.C1 && (f = Math.max(o - s.length, 0)), 0 === s.length ? (0, l.jsx)(E, {
-    height: u,
-    children: (0, l.jsx)(N, {})
-  }) : (0, l.jsx)(C, {
-    children: (0, l.jsx)(S, {
-      eventUsers: s,
+  return i.length >= x.C1 && o > x.C1 && (f = Math.max(o - i.length, 0)), 0 === i.length ? (0, l.jsx)(S, {
+    height: d,
+    children: (0, l.jsx)(O, {})
+  }) : (0, l.jsx)(I, {
+    children: (0, l.jsx)(P, {
+      eventUsers: i,
       guildId: t.guild_id,
       onContextMenu: function(e, t) {
-        (0, d.L3)(e, async () => {
+        (0, u.L3)(e, async () => {
           let {
             default: e
           } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
-          return n => (0, l.jsx)(e, y(p({}, n), {
+          return n => (0, l.jsx)(e, _(y({}, n), {
             user: t
           }))
         })

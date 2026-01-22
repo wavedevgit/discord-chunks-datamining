@@ -65,7 +65,7 @@ function A(e) {
     await (0, a.mMO)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("26589"), n.e("7453"), n.e("90041")]).then(n.bind(n, 926956));
+      } = await Promise.all([n.e("51354"), n.e("7453"), n.e("90041")]).then(n.bind(n, 926956));
       return n => (0, r.jsx)(e, m(g({}, n), {
         guildId: t.id
       }))

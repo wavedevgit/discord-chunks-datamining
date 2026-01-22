@@ -1,7 +1,7 @@
 /** Chunk was on 342 **/
 /** chunk id: 105253, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => w
+  A: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,6 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk47167 = require("./47167.js"),
+  Chunk841937 = require("./841937.jsx"),
   Chunk734057 = require("./734057.js"),
   Chunk71393 = require("./71393.js"),
   Chunk576705 = require("./576705.js"),
@@ -34,51 +35,51 @@ let C = e => {
       onSelectChannel: i,
       disabled: s,
       entityType: a
-    } = e, d = n === A.rbe.GUILD_STAGE_VOICE, g = (0, f.D)(r, a), h = (0, v.pW)(t, n);
+    } = e, u = n === E.rbe.GUILD_STAGE_VOICE, x = (0, b.D)(r, a), g = (0, f.pW)(t, n);
     return (0, l.jsx)(o.ZiE, {
       selectionMode: "single",
-      label: d ? N.intl.string(N.t.S7GjDz) : N.intl.string(N.t["7RYWCP"]),
+      label: u ? N.intl.string(N.t.S7GjDz) : N.intl.string(N.t["7RYWCP"]),
       required: true,
-      helperText: g ? true : N.intl.string(N.t.F3bDaX),
+      helperText: x ? true : N.intl.string(N.t.F3bDaX),
       value: null == r ? true : r.id,
-      options: h.map(e => ({
+      options: g.map(e => ({
         id: e.id,
         value: e.id,
-        label: (0, c.m1)(e, m.default, x.A, true),
+        label: (0, c.m1)(e, h.default, m.A, true),
         leading: ((e, t) => {
-          let n = u.A.getChannel(e);
+          let n = d.A.getChannel(e);
           if (null == n) return null;
-          let r = n.type === A.rbe.GUILD_STAGE_VOICE,
-            i = (0, f.D)(n, t),
+          let r = n.type === E.rbe.GUILD_STAGE_VOICE,
+            i = (0, b.D)(n, t),
             s = i ? o.HKD : o.trU,
             a = i ? o.qux : o.DC;
           return (0, l.jsx)(r ? a : s, {
             color: "currentColor",
             size: "md",
-            className: E.sr
+            className: P.sr
           })
         })(e.id, a)
       })),
       onSelectionChange: e => {
-        let t = h.find(t => t.id === e);
+        let t = g.find(t => t.id === e);
         i(null != t ? t : true)
       },
       disabled: s
     })
   },
-  P = (e, t) => n => {
+  S = (e, t) => n => {
     let l = {
       entityType: n,
       scheduledEndTime: true
     };
-    if (n === O.Ps.EXTERNAL) {
+    if (n === A.Ps.EXTERNAL) {
       var r;
       l.scheduledEndTime = (null != (r = s()(t.scheduledStartTime)) ? r : s()()).add(2, "hour").toISOString()
     }
     e(l)
   };
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     guildEvent: n,
@@ -86,12 +87,12 @@ function S(e) {
     isFocusReady: s
   } = e, {
     entityType: c,
-    channelId: d
-  } = n, g = (0, a.bG)([u.A], () => u.A.getChannel(d), [d]), x = r.useRef(null);
+    channelId: u
+  } = n, x = (0, a.bG)([d.A], () => d.A.getChannel(u), [u]), g = r.useRef(null);
   r.useEffect(() => {
-    if (s && c === O.Ps.EXTERNAL) {
+    if (s && c === A.Ps.EXTERNAL) {
       var e;
-      null == (e = x.current) || e.focus()
+      null == (e = g.current) || e.focus()
     }
   }, [s, c]);
   let m = e => {
@@ -100,10 +101,10 @@ function S(e) {
         channelId: null != (t = null == e ? true : e.id) ? t : null
       })
     },
-    j = (0, b.k5)(n),
-    v = (0, b.dy)(c),
-    p = (0, h.Fd)(n);
-  return null == c || c === O.Ps.NONE ? null : c === O.Ps.EXTERNAL ? (0, l.jsx)(o.ksK, {
+    h = (0, y.k5)(n),
+    v = (0, y.dy)(c),
+    f = (0, j.Fd)(n);
+  return null == c || c === A.Ps.NONE ? null : c === A.Ps.EXTERNAL ? (0, l.jsx)(o.ksK, {
     label: N.intl.string(N.t.yx785A),
     required: true,
     onChange: e => {
@@ -114,63 +115,63 @@ function S(e) {
       })
     },
     placeholder: N.intl.string(N.t.mkCMia),
-    maxLength: O.vj,
-    value: null != j ? j : "",
-    inputRef: x
+    maxLength: A.vj,
+    value: null != h ? h : "",
+    inputRef: g
   }) : null == v ? null : (0, l.jsx)(C, {
     guildId: t,
     channelType: v,
     onSelectChannel: m,
-    channel: g,
+    channel: x,
     entityType: c,
-    disabled: p
+    disabled: f
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     guildId: t,
     guildEvent: n,
     onChange: i
-  } = e, s = (0, a.bG)([d.A], () => d.A.getGuild(t), [t]), c = (0, j.A)(t, true), u = (0, j.A)(t, A.rbe.GUILD_VOICE), g = (0, j.A)(t, A.rbe.GUILD_STAGE_VOICE), x = (0, v.pW)(t, A.rbe.GUILD_VOICE), m = (0, p.A)(s), f = null == s ? true : s.features.has(A.GuildFeatures.COMMUNITY), b = (0, h.Fd)(n), y = P(i, n), E = r.useMemo(() => {
-    let e = !u || 0 === x.length,
+  } = e, s = (0, a.bG)([x.A], () => x.A.getGuild(t), [t]), c = (0, v.A)(t, true), u = (0, v.A)(t, E.rbe.GUILD_VOICE), d = (0, v.A)(t, E.rbe.GUILD_STAGE_VOICE), g = (0, f.pW)(t, E.rbe.GUILD_VOICE), m = (0, p.A)(s), h = null == s ? true : s.features.has(E.GuildFeatures.COMMUNITY), b = (0, j.Fd)(n), y = S(i, n), O = r.useMemo(() => {
+    let e = !u || 0 === g.length,
       t = u ? N.intl.string(N.t["DkY+cO"]) : N.intl.string(N.t.HeF1kV),
       n = [{
         name: N.intl.string(N.t.BVZqJl),
-        value: O.Ps.VOICE,
+        value: A.Ps.VOICE,
         desc: e ? t : N.intl.string(N.t["EV//4f"]),
         leadingIcon: o.HKD,
         disabled: e
       }, {
         name: N.intl.string(N.t.w7ipbz),
-        value: O.Ps.EXTERNAL,
+        value: A.Ps.EXTERNAL,
         desc: c ? N.intl.string(N.t.DYxrHm) : N.intl.string(N.t.HeF1kV),
         leadingIcon: o.BT6,
         disabled: !c
       }];
-    if (f) {
-      let e = !g || 0 === m.length,
-        t = g ? N.intl.string(N.t["DkY+cO"]) : N.intl.string(N.t.HeF1kV);
+    if (h) {
+      let e = !d || 0 === m.length,
+        t = d ? N.intl.string(N.t["DkY+cO"]) : N.intl.string(N.t.HeF1kV);
       return [{
         name: N.intl.string(N.t.EErMzA),
-        value: O.Ps.STAGE_INSTANCE,
+        value: A.Ps.STAGE_INSTANCE,
         desc: e ? t : N.intl.string(N.t.LgALpp),
         leadingIcon: o.qux,
         disabled: e
       }, ...n]
     }
     return n
-  }, [c, u, g, f, x.length, m.length]);
+  }, [c, u, d, h, g.length, m.length]);
   return (0, l.jsx)(o.z6M, {
     value: n.entityType,
-    options: E,
+    options: O,
     onChange: y,
     disabled: b,
     helperText: b ? N.intl.string(N.t.yutP5U) : true
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     guildId: t,
     guildEvent: r,
@@ -178,10 +179,10 @@ function w(e) {
     onChange: s,
     isSlideReady: c = false
   } = e, {
-    entityType: u
-  } = r, x = (0, a.bG)([d.A], () => d.A.getGuild(t), [t]), m = (0, p.A)(x), h = (0, a.bG)([g.A], () => g.A.can(A.xBc.MANAGE_CHANNELS, x)), j = null == x ? true : x.features.has(A.GuildFeatures.COMMUNITY), v = P(s, r), f = j && u !== O.Ps.EXTERNAL && 0 === m.length && h && null != u;
+    entityType: d
+  } = r, m = (0, a.bG)([x.A], () => x.A.getGuild(t), [t]), h = (0, p.A)(m), j = (0, a.bG)([g.A], () => g.A.can(E.xBc.MANAGE_CHANNELS, m)), v = null == m ? true : m.features.has(E.GuildFeatures.COMMUNITY), f = S(s, r), b = v && d !== A.Ps.EXTERNAL && 0 === h.length && j && null != d;
   return (0, l.jsxs)("div", {
-    className: E.kL,
+    className: P.kL,
     children: [(0, l.jsxs)(o.BJc, {
       gap: 4,
       children: [(0, l.jsx)(o.Heading, {
@@ -192,18 +193,18 @@ function w(e) {
         variant: "text-sm/normal",
         children: N.intl.string(N.t.IwmXLP)
       })]
-    }), (0, l.jsx)(T, {
+    }), (0, l.jsx)(w, {
       guildId: t,
       guildEvent: r,
       onChange: s
-    }), (0, l.jsx)(S, {
+    }), (0, l.jsx)(T, {
       guildId: t,
       guildEvent: r,
       isFocusReady: c,
       onChange: s
-    }), f ? (0, l.jsx)(y.A, {
+    }), b ? (0, l.jsx)(O.A, {
       onClick: () => {
-        v(O.Ps.STAGE_INSTANCE), (0, o.mMO)(async () => {
+        f(A.Ps.STAGE_INSTANCE), (0, o.mMO)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("72271"), n.e("8018"), n.e("64233"), n.e("29592")]).then(n.bind(n, 409200));
@@ -227,7 +228,7 @@ function w(e) {
               }
               return e
             }({}, n), i = i = {
-              channelType: A.rbe.GUILD_STAGE_VOICE,
+              channelType: E.rbe.GUILD_STAGE_VOICE,
               guildId: t
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
@@ -242,6 +243,6 @@ function w(e) {
           }
         })
       }
-    }) : null]
+    }) : null, A.Tn.has(r.entityType) && (0, l.jsx)(u.A, {})]
   })
 }

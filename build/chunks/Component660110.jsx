@@ -1,9 +1,10 @@
 /** Chunk was on 86317 **/
 /** chunk id: 660110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => b,
+  V: () => m
 });
-var Chunk627968 = require("./627968.js");
+var l, Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk975807 = require("./975807.js"),
@@ -15,20 +16,20 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f() {
-  return (0, c.yM)() ? x.intl.format(x.t.iWGjcg, {
-    hook: e => (0, l.jsx)(r.MzZ, {
+function j() {
+  return (0, o.yM)() ? f.intl.format(f.t.iWGjcg, {
+    hook: e => (0, r.jsx)(i.MzZ, {
       onClick: e => {
-        e.preventDefault(), e.stopPropagation(), (0, i.A)(o.A.getArticleURL(d.MVz.TIGGER_PAWTECT_LEARN_MORE))
+        e.preventDefault(), e.stopPropagation(), (0, a.A)(u.A.getArticleURL(x.MVz.TIGGER_PAWTECT_LEARN_MORE))
       },
       useDefaultUnderlineStyles: false,
       children: e.join("")
     })
-  }) : x.intl.format(x.t.edpbxy, {
-    hook: e => (0, l.jsx)(r.MzZ, {
+  }) : f.intl.format(f.t.edpbxy, {
+    hook: e => (0, r.jsx)(i.MzZ, {
       onClick: e => {
-        e.preventDefault(), e.stopPropagation(), a.A.showAgeVerificationGetStartedModal({
-          entryPoint: s.q1.START_STAGE_PROMPT
+        e.preventDefault(), e.stopPropagation(), s.A.showAgeVerificationGetStartedModal({
+          entryPoint: c.q1.START_STAGE_PROMPT
         })
       },
       useDefaultUnderlineStyles: false,
@@ -37,56 +38,62 @@ function f() {
   })
 }
 
-function j(e) {
-  let {
-    className: t
-  } = e, n = (0, c.yM)();
-  return (0, l.jsx)("div", {
-    className: t,
-    children: (0, l.jsx)(r.wx6, {
-      type: n ? "info" : "warning",
-      children: (0, l.jsx)(f, {})
-    })
-  })
-}
-
 function g(e) {
   let {
     className: t
-  } = e, n = (0, c.yM)();
-  return (0, l.jsx)("div", {
+  } = e, n = (0, o.yM)();
+  return (0, r.jsx)("div", {
     className: t,
-    children: (0, l.jsxs)(r.BJc, {
-      direction: "horizontal",
-      gap: 4,
-      align: "center",
-      children: [n ? (0, l.jsx)(r.mir, {
-        size: "refresh_sm",
-        color: "var(--text-default)"
-      }) : (0, l.jsx)(r.id, {
-        size: "refresh_sm",
-        color: "var(--text-default)"
-      }), (0, l.jsx)(r.Text, {
-        color: "text-default",
-        variant: "text-sm/medium",
-        children: (0, l.jsx)(f, {})
-      })]
+    children: (0, r.jsx)(i.wx6, {
+      type: n ? "info" : "warning",
+      children: (0, r.jsx)(j, {})
     })
   })
 }
 
 function h(e) {
   let {
+    className: t
+  } = e, n = (0, o.yM)();
+  return (0, r.jsx)("div", {
+    className: t,
+    children: (0, r.jsxs)(i.BJc, {
+      direction: "horizontal",
+      gap: 4,
+      align: "center",
+      children: [n ? (0, r.jsx)(i.mir, {
+        size: "refresh_sm",
+        color: "var(--text-default)"
+      }) : (0, r.jsx)(i.id, {
+        size: "refresh_sm",
+        color: "var(--text-default)"
+      }), (0, r.jsx)(i.Text, {
+        color: "text-default",
+        variant: "text-sm/medium",
+        children: (0, r.jsx)(j, {})
+      })]
+    })
+  })
+}
+var m = ((l = {})[l.TOP = 0] = "TOP", l[l.BOTTOM = 1] = "BOTTOM", l);
+
+function b(e) {
+  let {
     className: t,
     noBackground: n,
-    divider: i
+    divider: l,
+    channelId: a
   } = e;
-  return (0, u.Vv)() ? (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)("div", {
+  if (!(0, d.Vv)(null != a ? a : true)) return null;
+  let s = Array.isArray(l) ? l : null != l ? [l] : [];
+  return (0, r.jsxs)(r.Fragment, {
+    children: [s.includes(0) && (0, r.jsx)(i.cGx, {
+      gap: 16
+    }), (0, r.jsx)("div", {
       className: t,
-      children: n ? (0, l.jsx)(g, {}) : (0, l.jsx)(j, {})
-    }), i && (0, l.jsx)(r.cGx, {
+      children: n ? (0, r.jsx)(h, {}) : (0, r.jsx)(g, {})
+    }), (null == s ? true : s.includes(1)) && (0, r.jsx)(i.cGx, {
       gap: 16
     })]
-  }) : null
+  })
 }

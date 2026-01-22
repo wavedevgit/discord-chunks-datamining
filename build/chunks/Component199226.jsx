@@ -1,7 +1,7 @@
 /** Chunk was on 77223 **/
-/** chunk id: 199226, original params: e,n,t (module,exports,require) **/
+/** chunk id: 199226, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => j
 }), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,56 +21,56 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk587880 = require("./587880.js");
 
-function f(e) {
+function j(e) {
   var n;
   let {
-    transitionState: t,
-    event: f,
-    onSuccess: N,
-    onClose: p
+    transitionState: l,
+    event: j,
+    onSuccess: p,
+    onClose: k
   } = e, {
     guild_id: y,
-    privacy_level: k
-  } = f, E = (0, r.bG)([h.A], () => h.A.getChannel(f.channel_id), [f]), _ = (0, r.bG)([x.A], () => x.A.getGuild(y), [y]), {
-    canManageGuildEvent: T
-  } = (0, o.nr)(null != E ? E : _), w = T(f), G = (0, r.bG)([c.A], () => c.A.isLurking(y), [y]), P = f.entity_type === g.Ps.STAGE_INSTANCE, [b, S] = i.useState(P), [I, {
+    privacy_level: f
+  } = j, E = (0, a.bG)([h.A], () => h.A.getChannel(j.channel_id), [j]), w = (0, a.bG)([m.A], () => m.A.getGuild(y), [y]), {
+    canManageGuildEvent: _
+  } = (0, o.nr)(null != E ? E : w), T = _(j), b = (0, a.bG)([c.A], () => c.A.isLurking(y), [y]), I = j.entity_type === g.Ps.STAGE_INSTANCE, [G, P] = i.useState(I), [S, {
     loading: L,
-    error: M
-  }] = (0, m.A)();
-  if (!w) return null;
-  let U = k === g.dD.PUBLIC ? A.intl.string(A.t.HhlaLP) : A.intl.string(A.t.GI3xXd),
-    O = () => {
-      null == N || N(), p(), (0, u.ek)(false)
+    error: O
+  }] = (0, v.A)();
+  if (!T) return null;
+  let U = f === g.dD.PUBLIC ? A.intl.string(A.t.HhlaLP) : A.intl.string(A.t.GI3xXd),
+    M = () => {
+      null == p || p(), k(), (0, u.ek)(false)
     },
-    D = async () => {
-      await I(f, b, {
-        onSuccess: O
+    B = async () => {
+      await S(j, G, {
+        onSuccess: M
       })
     };
-  return (0, l.jsxs)(s.Modal, {
-    transitionState: t,
-    onClose: p,
-    title: f.name,
+  return (0, t.jsxs)(s.Modal, {
+    transitionState: l,
+    onClose: k,
+    title: j.name,
     subtitle: A.intl.format(A.t.UMajol, {
       privacyLevel: U,
-      privacyLevelHook: (e, n) => k !== g.dD.PUBLIC ? null : (0, l.jsxs)("div", {
-        className: C.ro,
-        children: [(0, l.jsx)(a.L_e, {
+      privacyLevelHook: (e, n) => f !== g.dD.PUBLIC ? null : (0, t.jsxs)("div", {
+        className: N.ro,
+        children: [(0, t.jsx)(r.L_e, {
           size: "xs",
           color: "currentColor",
-          className: C.HJ
-        }), (0, l.jsx)(a.Text, {
+          className: N.HJ
+        }), (0, t.jsx)(r.Text, {
           variant: "text-md/normal",
           children: e
         })]
       }, n)
     }),
-    actionBarInput: P ? (0, l.jsxs)(s.DUT, {
-      onClick: () => S(!b),
-      className: C.Qy,
-      children: [(0, l.jsx)(s.P7L, {
-        checked: b
-      }), (0, l.jsx)(a.Text, {
+    actionBarInput: I ? (0, t.jsxs)(s.DUT, {
+      onClick: () => P(!G),
+      className: N.Qy,
+      children: [(0, t.jsx)(s.P7L, {
+        checked: G
+      }), (0, t.jsx)(r.Text, {
         color: "text-default",
         variant: "text-sm/normal",
         children: A.intl.string(A.t["Pe+Pwp"])
@@ -79,29 +79,30 @@ function f(e) {
     actions: [{
       variant: "active",
       text: A.intl.string(A.t.cK1GGY),
-      onClick: D,
+      onClick: B,
       loading: L
     }],
-    children: [(0, l.jsx)(j.A, {
-      guild: _,
+    children: [(0, t.jsx)(C.A, {
+      guild: w,
       channel: E,
-      name: f.name,
-      description: null != (n = f.description) ? n : true,
-      imageSource: (0, v.A)(f),
+      name: j.name,
+      description: null != (n = j.description) ? n : true,
+      imageSource: (0, x.A)(j),
       isActive: false,
-      isUserLurking: G,
+      isUserLurking: b,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
-      guildEvent: f,
+      guildEvent: j,
       hideAgeVerificationNotice: true
-    }), g.Tn.has(f.entity_type) && (0, l.jsx)(d.A, {
-      className: C.XI
-    }), null != M && null != M.getAnyErrorMessage() ? (0, l.jsx)(a.Text, {
+    }), g.Tn.has(j.entity_type) && (0, t.jsx)(d.A, {
+      className: N.XI,
+      channelId: j.channel_id
+    }), null != O && null != O.getAnyErrorMessage() ? (0, t.jsx)(r.Text, {
       color: "text-feedback-critical",
       variant: "text-sm/normal",
-      className: C.gJ,
-      children: M.getAnyErrorMessage()
+      className: N.gJ,
+      children: O.getAnyErrorMessage()
     }) : null]
   })
 }

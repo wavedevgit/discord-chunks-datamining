@@ -1,7 +1,7 @@
-/** Chunk was on 81899 **/
-/** chunk id: 485394, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96110 **/
+/** chunk id: 485394, original params: e,c,a (module,exports,require) **/
 require.d(exports, {
-  Ay: () => m,
+  Ay: () => x,
   K7: () => _
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
@@ -17,26 +17,26 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function _(e) {
-  let [t, n, l, _] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [r.Ay, i.A, s.A, c.A];
-  if ((0, u.AZ)(e)) returnfalse;
+  let [c, a, n, _] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [r.Ay, d.A, f.A, t.A];
+  if ((0, o.AZ)(e)) returnfalse;
   let {
-    guild_id: m,
+    guild_id: x,
     channel_id: h
-  } = e, x = e.entity_type === f.Ps.EXTERNAL ? t.getDefaultChannel(e.guild_id) : n.getChannel(h), v = l.getGuild(m), g = _.getStageInstanceByChannel(h);
-  return !!(0, a.K)(d.A, v, x, g) && null != x && function(e) {
-    let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.A], {
-      entityType: n,
-      channelId: l
+  } = e, m = e.entity_type === b.Ps.EXTERNAL ? c.getDefaultChannel(e.guild_id) : a.getChannel(h), v = n.getGuild(x), p = _.getStageInstanceByChannel(h);
+  return !!(0, l.K)(s.A, v, m, p) && null != m && function(e) {
+    let [c] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [d.A], {
+      entityType: a,
+      channelId: n
     } = "entity_type" in e ? {
       entityType: e.entity_type,
       channelId: e.channel_id
     } : e;
-    if (n === f.Ps.EXTERNAL) returntrue;
-    let a = t.getChannel(l);
-    return null != a && o.MJ(b.xBc.VIEW_CHANNEL, a)
-  }(e, [n])
+    if (a === b.Ps.EXTERNAL) returntrue;
+    let l = c.getChannel(n);
+    return null != l && i.MJ(u.xBc.VIEW_CHANNEL, l)
+  }(e, [a])
 }
 
-function m(e) {
-  return (0, l.bG)([r.Ay, i.A, s.A, c.A], () => _(e, [r.Ay, i.A, s.A, c.A]), [e])
+function x(e) {
+  return (0, n.bG)([r.Ay, d.A, f.A, t.A], () => _(e, [r.Ay, d.A, f.A, t.A]), [e])
 }

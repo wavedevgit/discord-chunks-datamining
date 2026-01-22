@@ -1,7 +1,7 @@
 /** Chunk was on 342 **/
 /** chunk id: 181961, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => x
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -36,7 +36,7 @@ let d = () => (0, l.jsxs)(l.Fragment, {
   })]
 });
 
-function g(e) {
+function x(e) {
   let {
     onClick: t
   } = e;

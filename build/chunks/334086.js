@@ -1,5 +1,5 @@
 /** Chunk was on 77223 **/
-/** chunk id: 334086, original params: e,n,t (module,exports,require) **/
+/** chunk id: 334086, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
   $: () => d,
   c: () => h
@@ -14,28 +14,28 @@ var Chunk284009 = require("./284009.js"),
   Chunk988794 = require("./988794.js");
 async function d(e, n) {
   let {
-    entity_type: t
+    entity_type: l
   } = e;
-  switch (t) {
+  switch (l) {
     case u.Ps.STAGE_INSTANCE: {
       let n = o.A.getChannelId(),
-        t = c.A.getChannel(e.channel_id);
-      i()(null != t, "could not find channel"), n !== t.id && (await a.cy(t, true), await a.jA(t, null)), await (0, r.e7)(t, false, true);
+        l = c.A.getChannel(e.channel_id);
+      i()(null != l, "could not find channel"), n !== l.id && (await r.cy(l, true), await r.jA(l, null)), await (0, a.e7)(l, false, true);
       break
     }
     case u.Ps.VOICE: {
       let n = o.A.getChannelId(),
-        t = c.A.getChannel(e.channel_id);
-      i()(null != t, "could not find channel"), n !== t.id && s.default.selectVoiceChannel(t.id)
+        l = c.A.getChannel(e.channel_id);
+      i()(null != l, "could not find channel"), n !== l.id && s.default.selectVoiceChannel(l.id)
     }
   }
 }
 
 function h(e, n) {
   let {
-    entity_type: t
+    entity_type: l
   } = e;
-  switch (t) {
+  switch (l) {
     case u.Ps.STAGE_INSTANCE:
     case u.Ps.VOICE:
     case u.Ps.EXTERNAL:
