@@ -269,7 +269,7 @@ function getClasses(code) {
                             prop.value?.value?.includes?.(prop.key.name) &&
                             (prop.value?.value?.includes?.('-') ||
                                 prop.value?.value?.includes?.('_')),
-                    )
+                    ) && !node.properties.every(prop=>!/^[a-f0-9_\-]+$/.test(prop?.value?.value))
                 )
                     isClasses = false;
 
