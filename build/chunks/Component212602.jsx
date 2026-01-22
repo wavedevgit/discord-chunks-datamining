@@ -31,23 +31,23 @@ let v = () => {
       sortDirection: l
     } = e;
     return t === o.$.RECENCY ? {
-      label: m.intl.string(m.t["51Bhiz"]),
+      label: p.intl.string(p.t["51Bhiz"]),
       value: "recent",
       id: "recent"
     } : t === o.$.PRICE ? l === i.A.ASC ? {
-      label: m.intl.string(m.t.m8RVU2),
+      label: p.intl.string(p.t.m8RVU2),
       value: "price-asc",
       id: "price-asc"
     } : {
-      label: m.intl.string(m.t.zBwQJO),
+      label: p.intl.string(p.t.zBwQJO),
       value: "price-desc",
       id: "price-desc"
     } : t === o.$.RELEVANCE ? {
-      label: m.intl.string(m.t["XoeT/z"]),
+      label: p.intl.string(p.t["XoeT/z"]),
       value: "relevance",
       id: "relevance"
     } : {
-      label: m.intl.string(m.t.Y68e5p),
+      label: p.intl.string(p.t.Y68e5p),
       value: "popularity",
       id: "popularity"
     }
@@ -74,7 +74,7 @@ let v = () => {
     }
   })[e], []), O = r.useCallback(e => {
     let l = S(C(e));
-    u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    u.default.track(m.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == s ? true : s.sessionId,
       page_section: null == s ? true : s.pageSection,
       page_category: null == s ? true : s.pageCategory,
@@ -89,7 +89,7 @@ let v = () => {
       [E.T3]: v
     }),
     children: (0, n.jsx)(c.l6P, {
-      label: m.intl.string(m.t.uaX705),
+      label: p.intl.string(p.t.uaX705),
       hideLabel: true,
       options: x.map(S),
       onSelectionChange: O,

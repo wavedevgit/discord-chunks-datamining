@@ -43,10 +43,10 @@ let N = e => {
     tab: P,
     buttonContainerClassName: D,
     orbsSupportedOnly: w
-  } = e, B = (0, i.bG)([f.default], () => f.default.getCurrentUser()), M = m.Ay.canUseCollectibles(B), H = (0, _.y)("FeedBlock"), {
+  } = e, B = (0, i.bG)([f.default], () => f.default.getCurrentUser()), M = p.Ay.canUseCollectibles(B), H = (0, _.y)("FeedBlock"), {
     sortType: G,
-    setSortType: F,
-    sortedItems: U,
+    setSortType: U,
+    sortedItems: F,
     sortOptions: z,
     shuffleProducts: V,
     showRecommendationOption: K
@@ -55,18 +55,18 @@ let N = e => {
     isPremiumUser: M,
     prioritizeUserDiscounts: R,
     orbsSupportedOnly: w
-  }), W = (0, O.od)(U), Y = (0, i.bG)([d.A], () => d.A.useReducedMotion), q = (0, i.bG)([b.A], () => b.A.isFocused()), Z = !Y && q, {
+  }), W = (0, O.od)(F), Y = (0, i.bG)([d.A], () => d.A.useReducedMotion), q = (0, i.bG)([b.A], () => b.A.isFocused()), Z = !Y && q, {
     animationPhase: X,
     startAnimation: J
   } = (0, S.s)(), Q = (0, h.uM)(), $ = null != (t = null == Q ? true : Q.sessionId) ? t : "", ee = r.useRef(null), et = r.useCallback(e => {
     J({
       isShuffling: false,
-      onOutroComplete: () => F(e)
+      onOutroComplete: () => U(e)
     }), g.default.track(j.HAw.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: $,
       sort_type: e
     })
-  }, [J, F, $]);
+  }, [J, U, $]);
   return null == B ? null : (0, n.jsxs)("div", {
     className: a()(I.lD, I.YB),
     children: [(0, n.jsxs)("div", {
@@ -81,7 +81,7 @@ let N = e => {
           position: "top",
           "aria-label": L.intl.string(L.t["3taPdj"]),
           children: (0, n.jsx)(c.DUT, {
-            onClick: () => (0, u.A)(p.A.getArticleURL(j.MVz.DATA_USED_FOR_RECOMMENDED)),
+            onClick: () => (0, u.A)(m.A.getArticleURL(j.MVz.DATA_USED_FOR_RECOMMENDED)),
             className: I.sT,
             children: (0, n.jsx)(c.mir, {
               size: "sm"

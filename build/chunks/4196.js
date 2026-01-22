@@ -26,7 +26,7 @@ function E(e) {
     isPremiumUser: l,
     prioritizeUserDiscounts: r,
     orbsSupportedOnly: E
-  } = e, v = (0, i.bG)([o.A], () => o.A.hasConsented(m.YAq.PERSONALIZATION)), A = n.useMemo(() => {
+  } = e, v = (0, i.bG)([o.A], () => o.A.hasConsented(p.YAq.PERSONALIZATION)), A = n.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.i.RECOMMENDED]) ? e : []
   }, [t]), x = n.useMemo(() => {
@@ -49,7 +49,7 @@ function E(e) {
       let t = L(x);
       e = r ? (0, d.Bs)(t, j) : t
     } else C === a.i.RANDOM && (e = I);
-    return E ? (0, p.ex)(T(e)) : T(e)
+    return E ? (0, m.ex)(T(e)) : T(e)
   }, [C, E, T, l, y, L, A, r, j, x, I]);
   return {
     sortType: C,

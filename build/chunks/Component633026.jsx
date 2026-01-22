@@ -19,7 +19,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk695413 = require("./695413.jsx"),
   Chunk201073 = require("./201073.js");
 (0, Chunk993408.$b)(90);
-let m = {
+let p = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -45,12 +45,12 @@ let m = {
       heroBannerStatic: S,
       heroBannerAnimated: C
     } = (0, f.Kk)(r), O = null != (t = null == v ? true : v.responsive) && t, _ = null == v ? true : v.backgroundStyle;
-    return null != E && (l || r !== m) ? (0, n.jsxs)("div", {
+    return null != E && (l || r !== p) ? (0, n.jsxs)("div", {
       ref: h,
-      className: p.os,
+      className: m.os,
       children: [(0, n.jsx)("div", {
-        className: s()(p.vK, {
-          [p.no]: O
+        className: s()(m.vK, {
+          [m.no]: O
         }),
         style: null != _ ? {
           background: _
@@ -61,30 +61,30 @@ let m = {
           isResponsive: O
         })
       }), (0, n.jsxs)("div", {
-        className: p.xX,
+        className: m.xX,
         children: [(0, n.jsx)("div", {
-          className: s()(p.bC, {
-            [p.no]: O
+          className: s()(m.bC, {
+            [m.no]: O
           }),
           children: l ? (0, n.jsx)("div", {
-            className: p.Hw
+            className: m.Hw
           }) : (0, n.jsx)("div", {
-            className: p.Hw,
+            className: m.Hw,
             children: (0, n.jsxs)("div", {
-              className: p.Wq,
+              className: m.Wq,
               children: [null != x && (0, n.jsx)("img", {
-                className: p.rm,
+                className: m.rm,
                 src: x,
                 alt: r.name,
                 style: null == A ? true : A.toDesktopStyles()
               }), null != r.title && (0, n.jsx)(c.Heading, {
                 variant: "heading-xxl/bold",
-                className: p.DD,
+                className: m.DD,
                 color: "text-strong",
                 children: r.title
               }), "" !== r.summary && (0, n.jsx)(c.Text, {
                 variant: "text-md/normal",
-                className: p.Tm,
+                className: m.Tm,
                 style: null != r.bannerTextColor ? {
                   color: r.bannerTextColor
                 } : true,

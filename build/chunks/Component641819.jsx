@@ -120,7 +120,7 @@ function S(e) {
       children: (0, l.jsx)(o.jlY, {
         "data-migration-pending": true,
         className: P.Hx,
-        children: (0, l.jsx)(g.Z, {
+        children: (0, l.jsx)(g.Z3, {
           onStepChange: e => {
             null != L && null != M && y.default.track(x.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: L.id,

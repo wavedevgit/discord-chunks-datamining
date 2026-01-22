@@ -2,7 +2,7 @@
 /** chunk id: 196231, original params: e,t,l (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  S: () => p
+  S: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,16 +16,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk201073 = require("./201073.js");
-let p = e => {
-  var t, l, p;
-  let m, {
+let m = e => {
+  var t, l, m;
+  let p, {
     category: h,
     subblock: E,
     badgeText: v,
     handleTransition: A
   } = e;
-  null != E && (m = null == (p = c.A.getCategoryByStoreListingId(null == E ? true : E.categoryStoreListingId)) ? true : p.skuId);
-  let x = null != (t = null != m ? m : null == h ? true : h.skuId) ? t : "",
+  null != E && (p = null == (m = c.A.getCategoryByStoreListingId(null == E ? true : E.categoryStoreListingId)) ? true : m.skuId);
+  let x = null != (t = null != p ? p : null == h ? true : h.skuId) ? t : "",
     {
       handleCardVisibilityChange: S
     } = (0, u.Z)(x, "home", "marketing featured block"),

@@ -39,7 +39,7 @@ let b = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
           className: m.u1
         })
       }) : (0, r.jsx)(p.A, {
-        entrypoint: g.tU.ApplicationStoreHome
+        entrypoint: g.Mf.ApplicationStoreHome
       })
     })]
   }) : (0, r.jsx)(i.rd, {

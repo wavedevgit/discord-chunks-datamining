@@ -97,7 +97,7 @@ let S = e => {
       children: [...Array(null != a ? a : 4)].map((e, t) => (0, n.jsx)(h.A, {}, t))
     });
     let b = null != a ? r.slice(0, a) : r;
-    return (0, n.jsx)(m.v3.Provider, {
+    return (0, n.jsx)(p.v3.Provider, {
       value: {
         rentalDuration: o ? f : true,
         flattenProductVariants: o
@@ -110,10 +110,10 @@ let S = e => {
             pageSection: "top 4",
             categoryPosition: 0
           },
-          children: (0, n.jsx)(p.A, {
+          children: (0, n.jsx)(m.A, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: s === v.G2.ORBS ? m.Hi.ORBS : true,
-            onClickAnalytics: (0, m.UU)(e, s, i)
+            prioritizedCurrency: s === v.G2.ORBS ? p.Hi.ORBS : true,
+            onClickAnalytics: (0, p.UU)(e, s, i)
           }, e.skuId)
         }, e.skuId)
       })
@@ -127,35 +127,35 @@ let S = e => {
         isBlockLoading: d = false
       } = e,
       {
-        products: p
+        products: m
       } = (t = (0, b.A)(), l = r.useMemo(() => d ? [] : t(i.rankedSkuIds), [d, t, i.rankedSkuIds]), s = (0, f.p)()(l), a = (0, g.X)(s), {
         products: (0, E.od)(a)
       }),
-      m = r.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(p.length > 0) && i.rankedSkuIds.every(e => {
+      p = r.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(m.length > 0) && i.rankedSkuIds.every(e => {
         var t;
         return (null == (t = u.A.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-      }), [d, i.rankedSkuIds, p.length]),
-      h = d || m;
+      }), [d, i.rankedSkuIds, m.length]),
+      h = d || p;
     switch (o) {
       case "row":
         return (0, n.jsx)(S, {
           heroBlockRecord: i,
           isLoading: h,
-          products: p,
+          products: m,
           tab: c
         });
       case "feed":
         return (0, n.jsx)(C, {
           heroBlockRecord: i,
           isLoading: h,
-          products: p,
+          products: m,
           tab: c
         });
       case "hscroll":
         return (0, n.jsx)(O, {
           heroBlockRecord: i,
           isLoading: h,
-          products: p,
+          products: m,
           tab: c
         })
     }

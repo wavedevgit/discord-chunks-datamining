@@ -87,16 +87,16 @@ function C(e) {
     label: l,
     selected: s,
     handleTransition: i
-  } = e, c = r.useRef(null), p = r.useRef(false), {
-    isHovered: m,
+  } = e, c = r.useRef(null), m = r.useRef(false), {
+    isHovered: p,
     setIsHovered: h,
     onMouseEnter: E,
     onMouseLeave: S,
     cancelTimers: C
   } = (0, b.A)(100, 100), O = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(), h(true), p.current = d.A.keyboardModeEnabled)
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(), h(true), m.current = d.A.keyboardModeEnabled)
   }, _ = r.useCallback(() => {
-    p.current = d.A.keyboardModeEnabled, E()
+    m.current = d.A.keyboardModeEnabled, E()
   }, [E]);
   return (0, n.jsx)("div", {
     className: v.iV,
@@ -104,15 +104,15 @@ function C(e) {
     onMouseLeave: S,
     children: (0, n.jsx)(o.YNO, {
       targetElementRef: c,
-      shouldShow: m,
+      shouldShow: p,
       position: "bottom",
       align: "left",
       onRequestOpen: () => {
-        C(), h(true), p.current = d.A.keyboardModeEnabled
+        C(), h(true), m.current = d.A.keyboardModeEnabled
       },
       onRequestClose: () => {
         var e;
-        p.current && !d.A.keyboardModeEnabled && (0, u.uS)(), h(false), null == (e = c.current) || e.focus()
+        m.current && !d.A.keyboardModeEnabled && (0, u.uS)(), h(false), null == (e = c.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -159,16 +159,16 @@ function O(e) {
     selectedTab: s,
     selected: i,
     showOrbRentalNewBadge: c
-  } = e, g = r.useRef(null), m = r.useRef(false), {
+  } = e, g = r.useRef(null), p = r.useRef(false), {
     isHovered: E,
     setIsHovered: S,
     onMouseEnter: C,
     onMouseLeave: O,
     cancelTimers: _
   } = (0, b.A)(100, 100), y = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(), S(true), m.current = d.A.keyboardModeEnabled)
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(), S(true), p.current = d.A.keyboardModeEnabled)
   }, j = r.useCallback(() => {
-    m.current = d.A.keyboardModeEnabled, C()
+    p.current = d.A.keyboardModeEnabled, C()
   }, [C]);
   return (0, n.jsx)("div", {
     className: v.iV,
@@ -180,11 +180,11 @@ function O(e) {
       position: "bottom",
       align: "left",
       onRequestOpen: () => {
-        _(), S(true), m.current = d.A.keyboardModeEnabled
+        _(), S(true), p.current = d.A.keyboardModeEnabled
       },
       onRequestClose: () => {
         var e;
-        m.current && !d.A.keyboardModeEnabled && (0, u.uS)(), S(false), null == (e = g.current) || e.focus()
+        p.current && !d.A.keyboardModeEnabled && (0, u.uS)(), S(false), null == (e = g.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -193,7 +193,7 @@ function O(e) {
         return (0, n.jsx)("div", {
           onMouseEnter: C,
           onMouseLeave: O,
-          children: (0, n.jsx)(p.A, {
+          children: (0, n.jsx)(m.A, {
             selectedTab: s,
             onClose: r,
             tabs: l,
@@ -228,7 +228,7 @@ function O(e) {
 
 function _(e, t, l) {
   var n;
-  return e === l || null != (n = t.hasSubmenu) && n && (0, m.dF)(l) && e === m.G2.CATALOG
+  return e === l || null != (n = t.hasSubmenu) && n && (0, p.dF)(l) && e === p.G2.CATALOG
 }
 
 function y(e) {
@@ -240,7 +240,7 @@ function y(e) {
     showOrbRentalNewBadge: u
   } = e, [d, f] = r.useState(0), b = r.useRef(d), {
     lastVisibleIndex: g,
-    onItemLayout: p,
+    onItemLayout: m,
     overflowItemsRef: h
   } = (0, i.Wv)({
     items: s,
@@ -263,14 +263,14 @@ function y(e) {
         var r;
         return (0, n.jsx)(i.Ae, {
           index: t,
-          onItemLayout: p,
+          onItemLayout: m,
           children: (0, n.jsx)(S, {
             tab: e.tab,
             label: e.label,
             selected: _(e.tab, e, l),
             handleTransition: o,
             hasSubmenu: null != (r = e.hasSubmenu) && r,
-            showNewBadge: e.tab === m.G2.ORBS && u
+            showNewBadge: e.tab === p.G2.ORBS && u
           })
         }, e.tab)
       }), (0, n.jsx)("div", {
@@ -293,7 +293,7 @@ function y(e) {
           selected: _(e.tab, e, l),
           handleTransition: o,
           hasSubmenu: null != (t = e.hasSubmenu) && t,
-          showNewBadge: e.tab === m.G2.ORBS && u
+          showNewBadge: e.tab === p.G2.ORBS && u
         }, e.tab)
       }), 0 !== A.length ? (0, n.jsx)(O, {
         tabs: A,

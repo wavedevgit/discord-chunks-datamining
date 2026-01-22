@@ -51,11 +51,11 @@ function N(e) {
   let B = (0, x.rR)("CollectiblesShopHeaderBar"),
     M = B ? [c.M.ORB_RENTAL_NEW_BADGE] : [],
     [H, G] = (0, b.kn)(M),
-    F = B && H === c.M.ORB_RENTAL_NEW_BADGE;
+    U = B && H === c.M.ORB_RENTAL_NEW_BADGE;
   r.useEffect(() => () => {
-    F && G(j.i.USER_DISMISS)
-  }, [F, G]);
-  let U = r.useMemo(() => [{
+    U && G(j.i.USER_DISMISS)
+  }, [U, G]);
+  let F = r.useMemo(() => [{
       tab: _.G2.HOME,
       label: T.intl.string(T.t.ijDDwz)
     }, {
@@ -72,20 +72,20 @@ function N(e) {
         pageType: z,
         sectionType: y.JJy.ORBS_BALANCE_MENU,
         ctaObject: y.ZSU.CTA_TO_QUEST_HOME
-      }), (0, p.navigateToQuestHome)({
+      }), (0, m.navigateToQuestHome)({
         fromContent: i.u.ORBS_BALANCE_MENU
       })
     }, [z]),
     K = r.useCallback(() => {
-      (null == N ? true : N.id) != null && (0, m.openUserProfileModal)({
+      (null == N ? true : N.id) != null && (0, p.openUserProfileModal)({
         userId: N.id,
         tabSection: L.RP.WISHLIST,
         showGuildProfile: false
       })
     }, [null == N ? true : N.id]),
     W = r.useCallback(e => {
-      l(e), e === _.G2.ORBS && F && G(j.i.USER_DISMISS)
-    }, [l, F, G]);
+      l(e), e === _.G2.ORBS && U && G(j.i.USER_DISMISS)
+    }, [l, U, G]);
   return (0, n.jsx)(u.NPJ, {
     theme: s,
     children: e => (0, n.jsx)("div", {
@@ -103,10 +103,10 @@ function N(e) {
             color: u.LU0.colors.TEXT_DEFAULT
           })
         }), (0, n.jsx)(O.A, {
-          tabs: U,
+          tabs: F,
           selectedTab: t,
           onTabSelect: W,
-          showOrbRentalNewBadge: F
+          showOrbRentalNewBadge: U
         }), (0, n.jsxs)("div", {
           className: I.sZ,
           children: [(0, n.jsx)(C.A, {

@@ -183,7 +183,7 @@ function X(e) {
         negativeMarginTop: true
       }), (0, r.jsx)(v.P, {
         planSkuId: ef.skuId
-      }), (0, r.jsx)(M.$, {
+      }), (0, r.jsx)(M.$p, {
         planOptions: eb,
         eligibleForMultiMonthPlans: false,
         selectedPlanId: P,

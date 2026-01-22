@@ -56,11 +56,11 @@ function v(e) {
     {
       searchError: L
     } = (0, d.S)();
-  return null != L ? (0, n.jsx)(m.A, {}) : null != g ? (0, n.jsx)(b.h, {
+  return null != L ? (0, n.jsx)(p.A, {}) : null != g ? (0, n.jsx)(b.h, {
     onRetry: u,
     errorMessage: g,
     errorOrigin: b.A.SHOP_PAGE
-  }) : E.includes(t) ? (0, n.jsx)(p.A, {
+  }) : E.includes(t) ? (0, n.jsx)(m.A, {
     handleTransition: j,
     tab: t,
     transitionState: o

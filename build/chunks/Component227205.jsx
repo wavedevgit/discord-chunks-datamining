@@ -51,7 +51,7 @@ let I = {
       onVisibilityChange: P
     } = e, D = (0, i.K)(e => {
       null == P || P(e)
-    }, .1, null != P), w = r.useRef(null), B = (0, C.y)("HeroBlock"), M = (0, u.bG)([p.default], () => p.default.getCurrentUser()), H = (0, h.uM)(), G = r.useMemo(() => {
+    }, .1, null != P), w = r.useRef(null), B = (0, C.y)("HeroBlock"), M = (0, u.bG)([m.default], () => m.default.getCurrentUser()), H = (0, h.uM)(), G = r.useMemo(() => {
       var e;
       return null != k ? k : null == N ? I : {
         rankedSkuIds: null != (e = N.heroRanking) ? e : [],
@@ -67,15 +67,15 @@ let I = {
         heroBannerUrl: N.heroBannerUrl,
         heroBannerAnimatedUrl: N.heroBannerAnimatedUrl
       }
-    }, [k, N]), F = (0, v.rR)("HeroBlock") && G.categorySkuId === y.op, {
-      bannerDisplayConfig: U,
+    }, [k, N]), U = (0, v.rR)("HeroBlock") && G.categorySkuId === y.op, {
+      bannerDisplayConfig: F,
       logoDisplayConfig: z,
       heroLogo: V,
       heroBannerStatic: K,
       heroBannerAnimated: W,
       heroBannerRive: Y
-    } = (0, A.Kk)(G), q = null != (t = null == U ? true : U.responsive) && t, Z = null == U ? true : U.backgroundStyle, X = null != Y, J = R === y.G2.ORBS, Q = null != N && N.isOrbsExclusive, $ = J ? L.intl.string(L.t["1CdL8d"]) : L.intl.string(L.t.xYKa1T);
-    J && F && ($ = L.intl.string(L.t.dVz4hi));
+    } = (0, A.Kk)(G), q = null != (t = null == F ? true : F.responsive) && t, Z = null == F ? true : F.backgroundStyle, X = null != Y, J = R === y.G2.ORBS, Q = null != N && N.isOrbsExclusive, $ = J ? L.intl.string(L.t["1CdL8d"]) : L.intl.string(L.t.xYKa1T);
+    J && U && ($ = L.intl.string(L.t.dVz4hi));
     let {
       analyticsLocations: ee
     } = (0, f.Ay)(), et = () => {
@@ -83,7 +83,7 @@ let I = {
         pageType: j.liQ.SHOP_ORBS_TAB,
         sectionType: j.JJy.ORBS_SHOP_HERO_BLOCK,
         ctaObject: j.ZSU.CTA_TO_QUEST_HOME
-      }), F ? (0, x.A)({
+      }), U ? (0, x.A)({
         analyticsLocations: ee
       }) : (0, b.navigateToQuestHome)({
         fromContent: o.u.ORBS_SHOP_HERO_CTA
@@ -92,7 +92,7 @@ let I = {
         categorySkuId: Q ? G.categorySkuId : true,
         isInternalShopDeeplink: true,
         isOrbsExclusive: Q
-      }), m.default.track(j.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      }), p.default.track(j.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == H ? true : H.sessionId,
         sku_id: G.categorySkuId,
         page_type: R,
@@ -177,7 +177,7 @@ let I = {
           heroBlockRecord: G,
           tab: R,
           isBlockLoading: l,
-          layout: R === y.G2.HOME ? "hscroll" : F ? "row" : "feed"
+          layout: R === y.G2.HOME ? "hscroll" : U ? "row" : "feed"
         })]
       })]
     }) : null

@@ -45,7 +45,7 @@ let P = e => {
     } = e, {
       noCache: L,
       includeUnpublished: N
-    } = (0, A.A)(), P = (0, p.rR)("CollectiblesFeedShop") && v === I.G2.ORBS, D = (l = function(e) {
+    } = (0, A.A)(), P = (0, m.rR)("CollectiblesFeedShop") && v === I.G2.ORBS, D = (l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var l = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(l);
@@ -85,10 +85,10 @@ let P = e => {
     }, [v]);
     let {
       isFetchingShopHome: G,
-      fetchShopHomeError: F,
-      shopBlocks: U,
+      fetchShopHomeError: U,
+      shopBlocks: F,
       refreshShopHome: z
-    } = (0, m.y)(v, {
+    } = (0, p.y)(v, {
       noCache: L,
       includeUnpublished: N,
       includeBundles: true,
@@ -100,18 +100,18 @@ let P = e => {
       z()
     }, [z]);
     return (r.useEffect(() => {
-      null != F || G || 0 === U.length || (0, h.z)({
+      null != U || G || 0 === F.length || (0, h.z)({
         sessionId: H,
         checkpoint: h.t.SHOP_RENDERED,
         tab: v,
         unpublishedCategoriesShown: N,
         cacheDisabled: L
       })
-    }, [F, G, U.length, N, L, H, v]), null != F) ? (0, n.jsx)(E.h, {
+    }, [U, G, F.length, N, L, H, v]), null != U) ? (0, n.jsx)(E.h, {
       onRetry: V,
       errorOrigin: E.A.SHOP_PAGE,
-      errorMessage: F.message
-    }) : G || 0 === U.length ? (0, n.jsxs)("div", {
+      errorMessage: U.message
+    }) : G || 0 === F.length ? (0, n.jsxs)("div", {
       className: a()(R.g4, R.Of),
       children: [(0, n.jsx)(O.A, {
         isLoading: G,
@@ -128,7 +128,7 @@ let P = e => {
         tab: v
       })]
     }) : (0, n.jsx)(n.Fragment, {
-      children: U.map((e, t) => ((e, t, l) => {
+      children: F.map((e, t) => ((e, t, l) => {
         if (null == e) return null;
         let r = null,
           s = false;
@@ -163,8 +163,8 @@ let P = e => {
             break;
           case i.g.WIDE_BANNER:
             if (e.isDismissible) {
-              var p;
-              let t = null != (p = e.dismissibleContentVersion) ? p : 0,
+              var m;
+              let t = null != (m = e.dismissibleContentVersion) ? m : 0,
                 {
                   isDismissed: l
                 } = (0, d.En)(o.M.COLLECTIBLES_SHOP_WIDE_BANNER, t);
@@ -214,7 +214,7 @@ let P = e => {
             children: r
           }, l)
         })
-      })(e, t > 0 ? U[t - 1] : null, t))
+      })(e, t > 0 ? F[t - 1] : null, t))
     })
   },
   D = e => {
@@ -224,20 +224,20 @@ let P = e => {
       transitionState: s
     } = e, a = r.useRef(null), {
       handleScroll: i
-    } = (0, u.X)(a, l), o = (0, v.U)(), d = (0, b.uM)(), [g, p] = r.useState(I.md), [m, h] = r.useState(false);
+    } = (0, u.X)(a, l), o = (0, v.U)(), d = (0, b.uM)(), [g, m] = r.useState(I.md), [p, h] = r.useState(false);
     return r.useEffect(() => {
       if (null != a.current) {
         let e = () => {
             if (null == a.current) return;
             let e = a.current.getDistanceFromBottom();
-            g >= 36 ? h(e < 20) : e <= 200 && p(e => e + I.md)
+            g >= 36 ? h(e < 20) : e <= 200 && m(e => e + I.md)
           },
           t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, g, p, h]), (0, n.jsx)(c.T7Y, {
+    }, [a, g, m, h]), (0, n.jsx)(c.T7Y, {
       className: R.OW,
       ref: a,
       onScroll: i,
@@ -273,13 +273,13 @@ let P = e => {
             })]
           })]
         }), (0, n.jsx)(L.A, {
-          peaking: m,
+          peaking: p,
           transitioning: s === I.Pf.OUT
         }), (0, n.jsx)(L.A, {
           style: {
             left: 1850
           },
-          peaking: m,
+          peaking: p,
           transitioning: s === I.Pf.OUT
         })]
       })

@@ -44,7 +44,7 @@ function R(e) {
   } = e, D = (0, f.uM)(), w = null != (t = null == D ? true : D.sessionId) ? t : "", {
     noCache: B,
     includeUnpublished: M
-  } = (0, A.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([b.A], () => b.A.productsWithVariantsAsGroup), [F, U] = r.useState(1), z = (0, c.DP)(), V = (0, i.qB)(z), [K, W, Y] = r.useMemo(() => {
+  } = (0, A.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([b.A], () => b.A.productsWithVariantsAsGroup), [U, F] = r.useState(1), z = (0, c.DP)(), V = (0, i.qB)(z), [K, W, Y] = r.useMemo(() => {
     switch (P) {
       case x.G2.AVATAR_DECORATIONS:
         return [C.intl.string(C.t.dRZYNE), V ? L.A : j.A, s.R.AVATAR_DECORATION];
@@ -63,19 +63,19 @@ function R(e) {
       } = t;
       return l === e.categorySkuId
     })
-  })), [G, Y, q]), X = (0, p.X)(Z);
+  })), [G, Y, q]), X = (0, m.X)(Z);
   return (r.useEffect(() => {
-    (0, m.z)({
+    (0, p.z)({
       sessionId: w,
-      checkpoint: m.t.SHOP_MOUNTED,
+      checkpoint: p.t.SHOP_MOUNTED,
       tab: P,
       unpublishedCategoriesShown: M,
       cacheDisabled: B
     })
   }, []), r.useEffect(() => {
-    l || (0, m.z)({
+    l || (0, p.z)({
       sessionId: w,
-      checkpoint: m.t.SHOP_RENDERED,
+      checkpoint: p.t.SHOP_RENDERED,
       tab: P,
       unpublishedCategoriesShown: M,
       cacheDisabled: B
@@ -92,7 +92,7 @@ function R(e) {
       })
     }), (0, n.jsx)("div", {
       className: O.ZE,
-      children: X.slice(40 * (F - 1), 40 * F).map((e, t) => null == b.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(f.R9, {
+      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => null == b.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(f.R9, {
         newValue: {
           tilePosition: t
         },
@@ -105,7 +105,7 @@ function R(e) {
       className: O.Ej,
       children: (0, n.jsx)("div", {
         children: (0, n.jsx)(o.mgR, {
-          currentPage: F,
+          currentPage: U,
           totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
@@ -118,7 +118,7 @@ function R(e) {
               page_size: 40,
               cta_name: "".concat(P, " page ").concat(e),
               page_type: P
-            }), U(e), null == R || null == (t = R.current) || t.scrollToTop({
+            }), F(e), null == R || null == (t = R.current) || t.scrollToTop({
               animate: true
             })
           },

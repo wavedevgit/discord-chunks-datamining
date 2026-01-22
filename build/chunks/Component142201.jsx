@@ -40,7 +40,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk887069 = require("./887069.js");
 let k = function(e) {
   let {
-    entrypoint: t = L.tU.UserSettings
+    entrypoint: t = L.Mf.UserSettings
   } = e;
   (0, y.P)(b.b);
   let n = (0, m.H)(),
@@ -78,7 +78,7 @@ let k = function(e) {
     n && (null != B || null != H) && (0, N.u1)(B, H)
   }, [n, B, H]);
   let Q = (0, o.bG)([O.A], () => O.A.enabled),
-    $ = t === L.tU.ApplicationStoreHome,
+    $ = t === L.Mf.ApplicationStoreHome,
     J = Q ? (0, r.jsx)(f.A, {}) : n ? (0, r.jsx)(E.uK, {}) : $ && q ? (0, r.jsx)(h.f5, {
       value: k,
       children: (0, r.jsx)(x.A, {

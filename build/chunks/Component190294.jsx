@@ -44,14 +44,14 @@ function b(e) {
     onClose: b,
     showOrbRentalNewBadge: g
   } = e, {
-    itemTypeFilters: p
-  } = (0, i.v)(), m = r.useMemo(() => {
-    if (l === o.G2.CATALOG && p.size > 0) {
-      let e = f[Array.from(p)[0]];
+    itemTypeFilters: m
+  } = (0, i.v)(), p = r.useMemo(() => {
+    if (l === o.G2.CATALOG && m.size > 0) {
+      let e = f[Array.from(m)[0]];
       if (null != e) return e
     }
     return l
-  }, [l, p]);
+  }, [l, m]);
   return (0, n.jsx)(a.W1t, {
     navId: "collectibles-shop-tabs-overflow-menu",
     "aria-label": c.intl.string(c.t["UKOtz+"]),
@@ -76,7 +76,7 @@ function b(e) {
               let {
                 tab: t,
                 labelKey: l
-              } = e, r = t === m;
+              } = e, r = t === p;
               return (0, n.jsx)(a.Drp, {
                 id: t,
                 label: c.intl.string(l),
@@ -89,7 +89,7 @@ function b(e) {
           }, t)
         }
         let f = t === o.G2.ORBS && g,
-          p = (0, n.jsxs)("span", {
+          m = (0, n.jsxs)("span", {
             style: {
               display: "flex",
               alignItems: "center",
@@ -102,7 +102,7 @@ function b(e) {
           });
         return (0, n.jsx)(a.Drp, {
           id: t,
-          label: p,
+          label: m,
           icon: t === l ? a.yr3 : true,
           action: () => s(t)
         }, t)

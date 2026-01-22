@@ -41,13 +41,13 @@ function O(e) {
     } = (0, o.X)(u, t),
     {
       setCategoryRef: b,
-      handleScrollToCategory: p
+      handleScrollToCategory: m
     } = (0, g.k0)(u.current),
     [h, E] = r.useState(a),
     [v, A] = r.useState(false);
   return r.useEffect(() => {
-    null != s && p(s)
-  }, [s, p]), r.useEffect(() => () => {
+    null != s && m(s)
+  }, [s, m]), r.useEffect(() => () => {
     null != c && c()
   }, []), r.useEffect(() => {
     let e = () => {
@@ -76,7 +76,7 @@ function O(e) {
         className: C.yF
       }), h && !v && (0, n.jsx)(i.HOs, {
         className: C.kT,
-        children: (0, n.jsx)(m.A, {})
+        children: (0, n.jsx)(p.A, {})
       })]
     })
   })
@@ -138,7 +138,7 @@ let _ = e => {
             children: [(0, n.jsx)(i.Text, {
               variant: "text-md/semibold",
               children: S.intl.string(S.t.uaX705)
-            }), (0, n.jsx)(p.A, {})]
+            }), (0, n.jsx)(m.A, {})]
           }), (0, n.jsx)("div", {
             ref: R,
             children: (0, n.jsx)(i.Button, {
@@ -165,7 +165,7 @@ let _ = e => {
           ref: j,
           children: (0, n.jsx)(i.T7Y, {
             className: C.Qo,
-            children: (0, n.jsx)(m.A, {})
+            children: (0, n.jsx)(p.A, {})
           })
         })]
       }), L ? (0, A.dF)(o) ? (0, n.jsx)(v.A, {

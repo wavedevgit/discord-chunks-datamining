@@ -34,7 +34,7 @@ let E = e => {
         children: t.name
       }), (0, n.jsx)(o.Button, {
         variant: "secondary",
-        text: m.intl.formatToPlainString(m.t.bc9RBE, {
+        text: p.intl.formatToPlainString(p.t.bc9RBE, {
           category_name: t.name
         }),
         onClick: () => {
@@ -42,7 +42,7 @@ let E = e => {
             sourceButton: "shelf block see all",
             categorySkuId: t.categorySkuId,
             isInternalShopDeeplink: true,
-            isOrbsExclusive: (null == v ? true : v.isOrbsExclusive) && s !== p.G2.ORBS
+            isOrbsExclusive: (null == v ? true : v.isOrbsExclusive) && s !== m.G2.ORBS
           })
         }
       })]
@@ -60,7 +60,7 @@ let E = e => {
             },
             children: (0, n.jsx)(b.A, {
               skuId: r,
-              prioritizedCurrency: s === p.G2.ORBS ? g.Hi.ORBS : true,
+              prioritizedCurrency: s === m.G2.ORBS ? g.Hi.ORBS : true,
               onClickAnalytics: (0, g.UU)(e, s, A)
             }, r)
           }, r)

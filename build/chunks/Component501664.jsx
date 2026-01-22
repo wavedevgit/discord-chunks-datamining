@@ -32,8 +32,8 @@ function u(e) {
       price: g
     })
   });
-  let j = (0, i.yt)(l, o.lid.PREMIUM_TIER_2),
-    v = (0, i.aw)(l) && u ? (t = function(e) {
+  let v = (0, i.yt)(l, o.lid.PREMIUM_TIER_2),
+    j = (0, i.aw)(l) && u ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -62,14 +62,14 @@ function u(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t) : g,
-    O = u && null != j;
+    O = u && null != v;
   return (0, r.jsxs)("div", {
     className: a()(d.kG, f),
     children: [p ? null : (0, r.jsx)(s.a, {
-      price: v,
+      price: j,
       className: d.q9
     }), (0, r.jsx)(c.x, {
-      price: O ? j : v,
+      price: O ? v : j,
       discount: m,
       className: a()({
         [d.q9]: null == b

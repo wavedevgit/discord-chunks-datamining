@@ -47,7 +47,7 @@ let A = e => {
   return (0, n.jsx)(a.A, {
     gap: "xl",
     children: I ? (0, n.jsx)(n.Fragment, {
-      children: [true, true, true, true, true].map((e, t) => (0, n.jsx)(p.A, {}, t))
+      children: [true, true, true, true, true].map((e, t) => (0, n.jsx)(m.A, {}, t))
     }) : (0, n.jsxs)(n.Fragment, {
       children: [k && N && (0, n.jsx)(i.R9, {
         newValue: {
@@ -55,7 +55,7 @@ let A = e => {
           pageSection: "top 4",
           categoryPosition: 0
         },
-        children: (0, n.jsx)(m.A, {
+        children: (0, n.jsx)(p.A, {
           category: y,
           rewardSkuId: C.rewardSkuId
         })

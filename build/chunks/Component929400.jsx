@@ -231,16 +231,16 @@ let eD = e => {
       onClose: d,
       returnRef: h,
       previewingVariantIndexProps: g,
-      selectedVariantIndex: v,
+      selectedVariantIndex: j,
       activeBundleSlide: O,
       rentalDuration: A
     } = e, {
       analyticsLocations: y
-    } = (0, j.Ay)(), N = (0, m.bG)([w.default], () => w.default.locale), _ = V.Ay.canUseCollectibles(n), {
+    } = (0, v.Ay)(), N = (0, m.bG)([w.default], () => w.default.locale), _ = V.Ay.canUseCollectibles(n), {
       previewingVariantIndex: R,
       handleEntering: S,
       handleLeaving: T
-    } = g, C = (0, ej.q)(t, R), k = (0, ev.r)(t, v);
+    } = g, C = (0, ev.q)(t, R), k = (0, ej.r)(t, j);
     c()(null != k, "Selected product should not be null");
     let B = (0, J.h)(t),
       {
@@ -586,7 +586,7 @@ let eD = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: ek.mV,
-      children: (0, r.jsx)(v.A, {
+      children: (0, r.jsx)(j.A, {
         avatar: (0, r.jsx)(p.euF, {
           src: t.avatarSrc,
           size: p._3J.SIZE_32,
@@ -677,15 +677,15 @@ let eD = e => {
       image: u
     }), p = t.type === o.R.AVATAR_DECORATION, [x] = t.items, {
       firstAvatarDecoration: g,
-      firstProfileEffect: j,
-      firstNameplate: v
-    } = (0, Y.f5)(t), O = null != j, A = () => (0, r.jsxs)(r.Fragment, {
+      firstProfileEffect: v,
+      firstNameplate: j
+    } = (0, Y.f5)(t), O = null != v, A = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(S.A, eL(ew({}, f), {
         pendingAvatar: b,
         user: n,
         canUsePremiumCustomization: c,
         pendingAvatarDecoration: g,
-        pendingProfileEffect: j,
+        pendingProfileEffect: v,
         disabledInputs: true,
         hideMessageInput: !O,
         hideCustomStatus: true,
@@ -722,9 +722,9 @@ let eD = e => {
         })
       }
     }
-    return null != v ? (0, r.jsx)("div", {
+    return null != j ? (0, r.jsx)("div", {
       className: ek.Zj,
-      children: y(v)
+      children: y(j)
     }) : (0, r.jsx)("div", {
       className: (null == x ? true : x.type) === o.R.AVATAR_DECORATION ? ek.RA : ek.Ak,
       children: A()
@@ -787,14 +787,14 @@ let eD = e => {
       analyticsLocations: b,
       shouldCheckoutWithOrbs: x,
       tab: h,
-      rentalDuration: v
+      rentalDuration: j
     } = e, O = (0, m.bG)([U.default], () => U.default.getCurrentUser()), A = (0, eN.f)(a), {
       previewingVariantIndex: y
-    } = A, N = (0, q.Q)(a), _ = (0, ej.q)(a, y), R = (0, ev.r)(a, N);
+    } = A, N = (0, q.Q)(a), _ = (0, ev.q)(a, y), R = (0, ej.r)(a, N);
     c()(null != R, "Selected product should not be null");
     let {
       analyticsLocations: E
-    } = (0, j.Ay)([...b, g.A.COLLECTIBLES_SHOP_DETAILS_MODAL, ...null != v ? [g.A.COLLECTIBLES_SHOP_DETAILS_RENTAL_MODAL] : []]);
+    } = (0, v.Ay)([...b, g.A.COLLECTIBLES_SHOP_DETAILS_MODAL, ...null != j ? [g.A.COLLECTIBLES_SHOP_DETAILS_RENTAL_MODAL] : []]);
     (0, er.Yr)(R.skuId);
     let P = (0, eA.U1)(s);
     l.useEffect(() => {
@@ -814,15 +814,16 @@ let eD = e => {
       T = t === p.ip4.EXITING,
       C = (0, eO.$R)(a),
       w = null == C ? true : C.amount,
-      L = l.useMemo(() => (0, K.aw)(R) ? R.items.length : 0, [R]),
+      L = null != w && ((null == C ? true : C.discountId) === eS.eR || (null == C ? true : C.discountId) === eS.Qz),
+      B = l.useMemo(() => (0, K.aw)(R) ? R.items.length : 0, [R]),
       {
-        activeSlide: B,
-        isTransitioning: G
+        activeSlide: G,
+        isTransitioning: V
       } = (0, $.X)({
-        slideCount: L,
+        slideCount: B,
         intervalMs: 5e3
       });
-    return null == O ? null : (0, r.jsx)(j.f5, {
+    return null == O ? null : (0, r.jsx)(v.f5, {
       value: E,
       children: (0, r.jsxs)(p.EOs, {
         "data-migration-pending": true,
@@ -843,8 +844,8 @@ let eD = e => {
             previewingVariantIndexProps: A,
             selectedVariantIndex: N,
             shouldCheckoutWithOrbs: x,
-            activeBundleSlide: B,
-            rentalDuration: v
+            activeBundleSlide: G,
+            rentalDuration: j
           }), (0, r.jsxs)("div", {
             className: i()(ek.i1, R.skuId === d.j.PREMIUM_TIER_2_3_DAY ? ek.bF : R.type === o.R.AVATAR_DECORATION ? ek.Jq : ek.eF),
             style: {
@@ -858,8 +859,8 @@ let eD = e => {
             }) : (0, r.jsx)(eF, {
               user: O,
               product: null != _ ? _ : R,
-              activeBundleSlide: B,
-              isTransitioning: G
+              activeBundleSlide: G,
+              isTransitioning: V
             }), (0, r.jsxs)("div", {
               className: ek.VG,
               children: [(0, r.jsx)(eh.R, {
@@ -880,7 +881,7 @@ let eD = e => {
               })]
             })]
           })]
-        }), null != w && (0, r.jsx)(r.Fragment, {
+        }), L && (0, r.jsx)(r.Fragment, {
           children: (0, r.jsxs)(p.jlY, {
             "data-migration-pending": true,
             className: ek.Hx,

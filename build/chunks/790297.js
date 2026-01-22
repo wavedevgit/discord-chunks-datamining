@@ -2,7 +2,7 @@
 /** chunk id: 790297, original params: e,t,l (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  N0: () => p,
+  N0: () => m,
   lC: () => b,
   uS: () => g
 }), require("./896048.js");
@@ -67,7 +67,7 @@ let b = e => {
       })
     }, [a, e, t, l, c, r, s, o, f])
   },
-  p = (e, t) => {
+  m = (e, t) => {
     let {
       analyticsLocations: l
     } = b(e);

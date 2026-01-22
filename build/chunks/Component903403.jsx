@@ -29,8 +29,8 @@ function h(e) {
   } = (0, g.MV)(t), v = r.useRef(null), A = null != E;
   return (0, n.jsxs)("div", {
     ref: v,
-    className: a()(m.sW, {
-      [m.by]: A
+    className: a()(p.sW, {
+      [p.by]: A
     }),
     children: [A ? (0, n.jsx)(o._, {
       src: E,
@@ -44,19 +44,19 @@ function h(e) {
       autoplay: true
     }) : (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("img", {
-        className: m.ze,
+        className: p.ze,
         src: f,
         alt: t.name
       }), null != h && !l && s && (0, n.jsx)(u.A, {
         src: h,
-        className: m.tr,
+        className: p.tr,
         autoPlay: true,
         loop: true
       })]
     }), (0, n.jsx)(b.A, {
       category: t,
-      className: m.v0,
-      daysRemainingText: p.t["8gsP5M"]
+      className: p.v0,
+      daysRemainingText: m.t["8gsP5M"]
     })]
   })
 }(0, Chunk993408.$b)(90)

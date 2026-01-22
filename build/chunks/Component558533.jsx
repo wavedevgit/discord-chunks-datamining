@@ -21,5 +21,5 @@ let f = e => {
   }), _ = (0, l.Tp)();
   return (i.useEffect(() => {
     true === p && (0, l.QG)(), true === _ && (0, l.ne)(), (null != n || null != f) && (0, a.u1)(n, f)
-  }, [n, f, p, _]), t === d.tU.UserSettings) ? (0, r.jsx)(u.A, {}) : t === d.tU.ApplicationStoreHome ? (0, r.jsx)(c.A, {}) : null
+  }, [n, f, p, _]), t === d.Mf.UserSettings) ? (0, r.jsx)(u.A, {}) : t === d.Mf.ApplicationStoreHome ? (0, r.jsx)(c.A, {}) : null
 }

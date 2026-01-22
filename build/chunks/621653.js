@@ -26,7 +26,7 @@ function i() {
             type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
             discountIds: [e.discountId]
           }), l.delete(e.discountId)
-        }, t);
+        }, Math.min(0x7fffffff, t));
         l.set(e.discountId, n)
       }
     }), r.length > 0 && s.h.dispatch({

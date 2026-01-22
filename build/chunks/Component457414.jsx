@@ -41,9 +41,9 @@ let f = e => {
   }, .33, null != l), {
     bannerUrl: b,
     bannerAnimatedUrl: g
-  } = (0, i.qY)(t), p = null != t.textColor ? {
+  } = (0, i.qY)(t), m = null != t.textColor ? {
     color: t.textColor
-  } : true, m = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, p = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, n.jsxs)("div", {
     ref: f,
     className: u.BX,
@@ -64,15 +64,15 @@ let f = e => {
           variant: "heading-xxl/bold",
           className: u.DD,
           color: "text-strong",
-          style: d({}, p),
+          style: d({}, m),
           children: t.title
-        }), m || h ? (0, n.jsxs)(s.Text, {
+        }), p || h ? (0, n.jsxs)(s.Text, {
           variant: "text-md/medium",
-          style: d({}, p),
-          children: [m && t.body, m && h && " ", h && (0, n.jsx)(s.MzZ, {
+          style: d({}, m),
+          children: [p && t.body, p && h && " ", h && (0, n.jsx)(s.MzZ, {
             href: t.helpCenterUrl,
             className: u.CU,
-            style: d({}, p),
+            style: d({}, m),
             children: c.intl.string(c.t.O7ADgv)
           })]
         }) : null]

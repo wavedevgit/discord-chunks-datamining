@@ -39,7 +39,7 @@ let y = Chunk64700.memo(function(e) {
     readyToClaim: L,
     collectibleProductSkuIds: T,
     collectedSkuIds: I
-  } = (0, v.K)(t, l), N = (0, o.bG)([m.A], () => m.A.isClaiming === l);
+  } = (0, v.K)(t, l), N = (0, o.bG)([p.A], () => p.A.isClaiming === l);
   return (0, n.jsx)(c.L, {
     onChange: s,
     threshold: 0,
@@ -131,7 +131,7 @@ let y = Chunk64700.memo(function(e) {
                 variant: "primary",
                 onClick: e => {
                   e.stopPropagation(), L && (0, g.BX)(t.skuId, l).then(() => {
-                    let e = p.A.getProduct(l);
+                    let e = m.A.getProduct(l);
                     null != e && (0, E.A)({
                       product: e,
                       analyticsLocations: [],

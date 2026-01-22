@@ -34,10 +34,10 @@ function S(e) {
       newValue: {
         tilePosition: t
       },
-      children: (0, n.jsx)(p.A, {
+      children: (0, n.jsx)(m.A, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
-        onClickAnalytics: (0, m.UU)(e, A.G2.CATALOG, f)
+        onClickAnalytics: (0, p.UU)(e, A.G2.CATALOG, f)
       }, e.skuId)
     }, e.skuId))
   })
@@ -68,8 +68,8 @@ function O(e) {
     currentPage: a,
     handlePageChange: o,
     initialCategoryId: u
-  } = e, d = (0, c.uM)(), b = (0, h.U)(), p = null != (t = null == d ? true : d.sessionId) ? t : "", {
-    noCache: m,
+  } = e, d = (0, c.uM)(), b = (0, h.U)(), m = null != (t = null == d ? true : d.sessionId) ? t : "", {
+    noCache: p,
     includeUnpublished: v
   } = (0, E.A)(), S = r.useMemo(() => l.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
@@ -94,21 +94,21 @@ function O(e) {
   }, [S, a]);
   return (r.useEffect(() => {
     (0, f.z)({
-      sessionId: p,
+      sessionId: m,
       checkpoint: f.t.SHOP_MOUNTED,
       tab: A.G2.CATALOG,
       unpublishedCategoriesShown: v,
-      cacheDisabled: m
+      cacheDisabled: p
     })
   }, []), r.useEffect(() => {
     b || 0 === _.length || (0, f.z)({
-      sessionId: p,
+      sessionId: m,
       checkpoint: f.t.SHOP_RENDERED,
       tab: A.G2.CATALOG,
       unpublishedCategoriesShown: v,
-      cacheDisabled: m
+      cacheDisabled: p
     })
-  }, [p, v, m, b, _.length]), b) ? (0, n.jsx)(g.A, {}) : (0, n.jsxs)("div", {
+  }, [m, v, p, b, _.length]), b) ? (0, n.jsx)(g.A, {}) : (0, n.jsxs)("div", {
     className: x.LZ,
     children: [_.map((e, t) => (0, n.jsx)("div", {
       ref: t => s(e.skuId, t),

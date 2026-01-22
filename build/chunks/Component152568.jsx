@@ -31,7 +31,7 @@ let _ = e => {
   let {
     wideBannerBlock: _,
     tab: y
-  } = e, j = m.A.getCategoryByStoreListingId(_.categoryStoreListingId), L = r.useRef(null), T = r.useRef(null), [I, N] = r.useState(), [k, R] = r.useState(false);
+  } = e, j = p.A.getCategoryByStoreListingId(_.categoryStoreListingId), L = r.useRef(null), T = r.useRef(null), [I, N] = r.useState(), [k, R] = r.useState(false);
   r.useEffect(() => {
     let e = T.current;
     if (null == e) return;
@@ -46,15 +46,15 @@ let _ = e => {
     {
       handleCardVisibilityChange: D
     } = (0, h.Z)(P, "home", "marketing wide banner"),
-    w = (0, p.uM)(),
+    w = (0, m.uM)(),
     {
       bannerURL: B
     } = (0, E.w$)(_),
     M = y === v.G2.ORBS,
     H = null != _.ctaRoute && "" !== _.ctaRoute,
     G = true !== _.disableCta && (null != _.ctaText && "" !== _.ctaText || H),
-    F = null != _.logoURL && "" !== _.logoURL,
-    U = r.useCallback(() => {
+    U = null != _.logoURL && "" !== _.logoURL,
+    F = r.useCallback(() => {
       if (R(true), _.isDismissible) {
         var e;
         let t = null != (e = _.dismissibleContentVersion) ? e : 0;
@@ -103,7 +103,7 @@ let _ = e => {
         children: (0, n.jsx)(c.JnF, {
           size: "sm",
           onClick: e => {
-            e.stopPropagation(), U()
+            e.stopPropagation(), F()
           },
           "aria-label": C.intl.string(C.t.WAI6xu)
         })
@@ -156,7 +156,7 @@ let _ = e => {
                 e.stopPropagation(), V(null != (t = _.ctaText) ? t : C.intl.string(C.t.jVcuVY))
               },
               text: null != (s = _.ctaText) ? s : C.intl.string(C.t.jVcuVY)
-            }), F && (0, n.jsx)("img", {
+            }), U && (0, n.jsx)("img", {
               src: _.logoURL,
               alt: "",
               className: O.bU

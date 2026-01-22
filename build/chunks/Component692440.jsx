@@ -2,12 +2,13 @@
 /** chunk id: 692440, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DP: () => G,
+  DP: () => V,
+  Lw: () => G,
   _J: () => x,
   m0: () => U,
   mT: () => L,
   sw: () => D,
-  tC: () => V,
+  tC: () => F,
   wP: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -72,18 +73,20 @@ function P(e) {
   } = e, p = (0, O.V)(l), h = (0, c.bG)([_.A], () => _.A.get(t.subscriptionPlanId)), {
     subscriptionPlan: m,
     label: g,
-    value: E
+    value: E,
+    subscriptionDiscount: b,
+    entitlementDiscount: y
   } = (0, S.Ol)(t, {
     subscriptionPlan: h,
     premiumTrialOffer: p,
     overrideAmount: n,
     isPrepaidPaymentSource: o,
     currency: a
-  }), b = g;
-  returntrue === i && (b = (0, r.jsxs)("div", {
+  }), v = g;
+  returntrue === i && (v = (0, r.jsxs)("div", {
     className: N._H,
     children: [(0, r.jsxs)("div", {
-      children: [b, " "]
+      children: [v, " "]
     }), (0, r.jsx)(u.m_, {
       text: C.intl.format(C.t.UDop9c, {}),
       ariaHidden: true,
@@ -95,10 +98,11 @@ function P(e) {
       })
     })]
   })), (0, r.jsx)(A.f0, {
-    label: b,
+    label: v,
     value: E,
     originalAmount: t.subscriptionPlanPrice * t.quantity,
-    discounts: t.discounts,
+    subscriptionDiscount: b,
+    entitlementDiscount: y,
     interval: m.interval,
     intervalCount: m.intervalCount,
     currency: a,
@@ -349,59 +353,64 @@ function U(e) {
     })]
   })
 }
+let G = (e, t) => {
+  let {
+    isCustomGift: n,
+    isPrepaidPaymentSource: r
+  } = t;
+  return n ? (0, g.D8)(e.interval, true, true, true, true, (0, g.m6)(e.id)) : C.intl.formatToPlainString(C.t.LQLxkW, {
+    planName: (0, g.Mn)(e.id, false, r)
+  })
+};
 
-function G(e) {
-  let t, {
-      plan: n,
-      className: i,
-      isPrepaidPaymentSource: a = false,
-      isCustomGift: s = false,
-      invoicePreview: o
-    } = e,
-    {
-      tax: l,
-      taxInclusive: c,
-      currency: u
-    } = o,
-    f = o.total,
-    p = f - l,
-    _ = (0, E.$g)(p, u),
-    h = (0, E.$g)(f, u);
-  return t = s ? (0, g.D8)(n.interval, true, true, true, true, (0, g.m6)(n.id)) : C.intl.formatToPlainString(C.t.LQLxkW, {
-    planName: (0, g.Mn)(n.id, false, a)
-  }), (0, r.jsxs)("div", {
-    className: i,
+function V(e) {
+  let {
+    plan: t,
+    className: n,
+    isPrepaidPaymentSource: i = false,
+    isCustomGift: a = false,
+    invoicePreview: s
+  } = e, {
+    tax: o,
+    taxInclusive: l,
+    currency: c
+  } = s, u = s.total, f = u - o, p = (0, E.$g)(f, c), _ = (0, E.$g)(u, c), h = G(t, {
+    isCustomGift: a,
+    isPrepaidPaymentSource: i
+  });
+  return (0, r.jsxs)("div", {
+    className: n,
     children: [(0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       children: C.intl.string(C.t.PEjaCx)
-    }), l >= 0 && false === c ? (0, r.jsxs)(r.Fragment, {
+    }), o >= 0 && false === l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         className: N.Uc,
-        children: t
+        children: h
       }), (0, r.jsxs)(A.Yx, {
-        className: i,
+        className: n,
         children: [(0, r.jsx)(A.Xd, {
           children: C.intl.string(C.t.sail9P)
         }), (0, r.jsx)(A.oR, {
-          label: t,
-          value: _
+          label: h,
+          value: p
         }), (0, r.jsx)(v.A, {
-          invoice: o
+          invoice: s
         }), (0, r.jsx)(A.pK, {}), (0, r.jsx)(A.oR, {
           label: C.intl.string(C.t.txajQG),
-          value: h,
+          value: _,
           className: N.RV
         })]
       })]
     }) : (0, r.jsx)(d.Heading, {
       variant: "text-md/normal",
-      children: "".concat(t, " - ").concat(h)
+      children: "".concat(h, " - ").concat(_)
     })]
   })
 }
 
-function V(e) {
+function F(e) {
   let t, {
       invoice: n,
       plan: i

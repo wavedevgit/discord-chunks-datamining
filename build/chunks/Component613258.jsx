@@ -2,7 +2,7 @@
 /** chunk id: 613258, original params: e,t,l (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -91,12 +91,12 @@ let b = {
     size: b,
     skuId: "1217625794382401577"
   }],
-  p = e => {
+  m = e => {
     let {
       peaking: t,
       transitioning: l,
       style: s
-    } = e, b = window.innerHeight, [p, m] = r.useState(false), h = g.map(e => {
+    } = e, b = window.innerHeight, [m, p] = r.useState(false), h = g.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,13 +104,13 @@ let b = {
     });
     return r.useEffect(() => {
       l && setTimeout(() => {
-        m(true)
+        p(true)
       }, d.H1)
     }, [l]), (0, n.jsx)("div", {
       style: s,
       className: a()(f.rA, {
         [f.Kb]: t,
-        [f.pp]: p
+        [f.pp]: m
       }),
       children: g.map((e, t) => {
         var r, s;
@@ -118,8 +118,8 @@ let b = {
           top: a,
           left: c,
           rotation: g,
-          size: p,
-          skuId: m
+          size: m,
+          skuId: p
         } = e, E = null == (r = h[t]) ? true : r.items[0], v = null == (s = h[t]) ? true : s.type, A = v === i.R.AVATAR_DECORATION ? 384 : 512;
         return (0, n.jsxs)("div", {
           className: f.LY,
@@ -127,8 +127,8 @@ let b = {
             top: l ? -b - A : a,
             left: l ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(g, "deg)"),
-            height: p.y,
-            width: p.x,
+            height: m.y,
+            width: m.x,
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.H1 - 200 * Math.random(), "ms")
           },
@@ -138,7 +138,7 @@ let b = {
             skuId: E.skuId,
             isHighlighted: true
           })]
-        }, m + t)
+        }, p + t)
       })
     })
   }

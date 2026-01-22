@@ -43,7 +43,7 @@ function _(e) {
     currentPage: k,
     totalCount: R,
     isFetchingResults: P
-  } = (0, p.S)(), D = (0, i.yK)([f.A], () => f.A.getProductsBySkus(N)), w = r.useCallback(() => {
+  } = (0, m.S)(), D = (0, i.yK)([f.A], () => f.A.getProductsBySkus(N)), w = r.useCallback(() => {
     var e;
     null == s || null == (e = s.current) || e.scrollToTop({
       animate: true
@@ -55,9 +55,9 @@ function _(e) {
   let M = (0, b.p)(),
     H = r.useMemo(() => M(D), [M, D]);
   r.useEffect(() => {
-    l || (0, m.z)({
+    l || (0, p.z)({
       sessionId: j,
-      checkpoint: m.t.SHOP_RENDERED,
+      checkpoint: p.t.SHOP_RENDERED,
       tab: _,
       unpublishedCategoriesShown: T,
       cacheDisabled: L
@@ -65,8 +65,8 @@ function _(e) {
   }, [j, T, L, l, _]);
   let G = r.useRef(null),
     {
-      setQueryPageSize: F,
-      setQueryPageOffset: U,
+      setQueryPageSize: U,
+      setQueryPageOffset: F,
       queryPageSize: z
     } = (0, g.v)(),
     [V, K] = r.useState(false),
@@ -77,10 +77,10 @@ function _(e) {
   let Y = z > 0 && !W && 0 === H.length;
   r.useEffect(() => {
     let e = new ResizeObserver(() => {
-      null == G.current || F(Math.floor(5 * getComputedStyle(G.current).gridTemplateColumns.split(/\s+/).length))
+      null == G.current || U(Math.floor(5 * getComputedStyle(G.current).gridTemplateColumns.split(/\s+/).length))
     });
     if (null != G.current) return e.observe(G.current), () => e.disconnect()
-  }, [F]);
+  }, [U]);
   let q = r.useCallback(e => {
     u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == y ? true : y.sessionId,
@@ -90,8 +90,8 @@ function _(e) {
       page_size: z,
       cta_name: "filter results page ".concat(e),
       page_type: "catalog"
-    }), U((e - 1) * z)
-  }, [y, z, U]);
+    }), F((e - 1) * z)
+  }, [y, z, F]);
   return (0, n.jsxs)(E.v3.Provider, {
     value: O,
     children: [(0, n.jsxs)("div", {

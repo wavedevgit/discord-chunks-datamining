@@ -21,12 +21,12 @@ let f = e => {
     bannerRive: r,
     isResponsive: f = false,
     eventTargetRef: b
-  } = e, g = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = (0, a.bG)([u.A], () => u.A.isFocused()), m = null != l && !g && p;
+  } = e, g = (0, a.bG)([o.A], () => o.A.useReducedMotion), m = (0, a.bG)([u.A], () => u.A.isFocused()), p = null != l && !g && m;
   return null != r ? (0, n.jsx)(i._, {
     src: r,
     fit: "fit-width",
     eventTargetRef: b
-  }) : m ? (0, n.jsx)(c.A, {
+  }) : p ? (0, n.jsx)(c.A, {
     className: s()({
       [d.no]: f
     }, d.BW, d.ud),

@@ -35,7 +35,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
     let e = (0, g.U)(),
       t = n.useRef(null),
       l = (0, r.zy)(),
-      a = l.pathname === m.BVt.COLLECTIBLES_SHOP ? i.A.HOME_PAGE_SHOP_TAB : i.A.COLLECTIBLES_SHOP,
+      a = l.pathname === p.BVt.COLLECTIBLES_SHOP ? i.A.HOME_PAGE_SHOP_TAB : i.A.COLLECTIBLES_SHOP,
       {
         analyticsLocations: h
       } = (0, o.Ay)(a),
@@ -59,7 +59,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
             } = e, s = c.A.getProduct(t), a = c.A.getCategoryForProduct(t);
             if (null != s && null != a) {
               let e = s,
-                o = (0, p.Ak)({
+                o = (0, m.Ak)({
                   product: s
                 }),
                 u = document.getElementById("shop-item-".concat(e.skuId));
