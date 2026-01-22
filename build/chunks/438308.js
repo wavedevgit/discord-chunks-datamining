@@ -10,6 +10,6 @@ let a = {
   collections: [{
     id: "cms",
     name: "CMS",
-    groups: [Chunk108542.B, Chunk39584.V]
+    groups: [require("./799369.jsx").n, Chunk108542.B, Chunk39584.V]
   }]
 }

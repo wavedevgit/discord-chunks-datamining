@@ -141,12 +141,15 @@ function G(e) {
           width: 40,
           height: 40
         }), (0, r.jsxs)("div", {
+          className: D.headerContentText,
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
+            lineClamp: 1,
             children: null != (o = null == K ? true : K.name) ? o : R.intl.string(R.t["7kqy7W"])
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "text-default",
+            lineClamp: 1,
             children: null != (l = null == x ? true : x.name) ? l : R.intl.string(R.t.sqkbMK)
           })]
         })]
