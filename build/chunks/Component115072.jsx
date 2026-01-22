@@ -69,7 +69,7 @@ function T(e) {
         return "Linux"
     }
     return ""
-  }((0, P.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, ec] = r.useState(""), [eu, ed] = r.useState(""), [em, ef] = r.useState(false), [ep, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
+  }((0, P.getOS)())), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ef] = r.useState(false), [ep, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     s.tn.get({
@@ -79,8 +79,8 @@ function T(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "67cbc51c48bafb1e434f1c7c65b364a6bff280d4" !== e.body.hash) {
-        let e = new Date("1769055386213"),
+      if (null != e.body && "40c9a67af30db2eb0a96fa7d8a9a5e4851529bad" !== e.body.hash) {
+        let e = new Date("1769058235390"),
           t = new Date,
           n = (0, S.TD)(t, e);
         n.hours > 6 && eb(n.hours)
@@ -115,13 +115,13 @@ function T(e) {
     if (eg(false), "" === R || "" === H || null == B) return void ef(true);
     let r = null == F || null == (e = F.features) ? true : e.find(e => (0, w.pD)(e) === X);
     ev(true), ef(false);
-    let l = (0, _.D)(U.map(e => {
+    let a = (0, _.D)(U.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      a = await (0, w.ZD)({
+      l = await (0, w.ZD)({
         name: R,
         description: H,
         priority: B,
@@ -134,20 +134,20 @@ function T(e) {
         device: ee,
         operatingSystem: en,
         operatingSystemVersion: er,
-        clientVersion: ea,
+        clientVersion: el,
         clientBuildNumber: es,
-        locale: eu
+        locale: ec
       } : {
         overridePlatformInformation: Q
-      }, l).catch(() => eg(true));
-    ev(false), null != a && a.ok ? (ey && window.open(a.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
+      }, a).catch(() => eg(true));
+    ev(false), null != l && l.ok ? (ey && window.open(l.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = k({}, t), r = r = {
-          asanaTask: a.body
+          asanaTask: l.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -187,7 +187,7 @@ function T(e) {
             var t;
             return e.filename === n.name && (null == (t = e.item.file) ? true : t.size) === n.size
           }) ? e : [...e, new f.ZP({
-            id: (0, l.Z)(),
+            id: (0, a.Z)(),
             file: n,
             platform: f.ow.WEB,
             origin: "clipboard"
@@ -195,7 +195,7 @@ function T(e) {
         }
       }
       let r = document.activeElement;
-      if (!((0, a.kK)(r, HTMLInputElement) || (0, a.kK)(r, HTMLTextAreaElement))) {
+      if (!((0, l.kK)(r, HTMLInputElement) || (0, l.kK)(r, HTMLTextAreaElement))) {
         let t = null == (n = e.clipboardData) ? true : n.getData("text");
         null != t && (e.preventDefault(), e.stopPropagation(), V(H.concat(t)))
       }
@@ -203,7 +203,7 @@ function T(e) {
     return document.addEventListener("paste", e, true), () => {
       document.removeEventListener("paste", e, true)
     }
-  }, [H]), (0, i.jsx)(u.u_l, {
+  }, [H]), (0, i.jsx)(c.u_l, {
     size: "md",
     transitionState: N,
     "aria-label": C.intl.string(C.t.mCCdwi),
@@ -282,7 +282,7 @@ function T(e) {
           value: H,
           onChange: V,
           description: ey ? "You can add additional information/media on the ticket after submitting" : true
-        }), (0, i.jsx)(c.y6, {
+        }), (0, i.jsx)(u.y6, {
           label: C.intl.string(C.t.xMXLda),
           errorMessage: em && true === B ? C.intl.string(C.t.EkokLy) : null,
           renderOptionLabel: e => (function(e) {
@@ -366,21 +366,21 @@ function T(e) {
             label: C.intl.string(C.t.rEtxdg),
             placeholder: "Operating System Version",
             value: er,
-            onChange: e => el(e)
+            onChange: e => ea(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t["wy1M/t"]),
             placeholder: "Client Version",
-            value: ea,
+            value: el,
             onChange: e => eo(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t.f7kbVu),
             placeholder: "Client Build Number",
             value: es,
-            onChange: e => ec(e)
+            onChange: e => eu(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t["4Z5+zg"]),
             placeholder: "Locale",
-            value: eu,
+            value: ec,
             onChange: e => ed(e)
           })]
         }) : null, (0, i.jsx)(d.Button, {
@@ -398,7 +398,7 @@ function T(e) {
             onChange: e => {
               var t, n;
               (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && Y([...U, ...Array.from(e.currentTarget.files).map(e => new f.ZP({
-                id: (0, l.Z)(),
+                id: (0, a.Z)(),
                 file: e,
                 platform: f.ow.WEB,
                 origin: "file_picker"

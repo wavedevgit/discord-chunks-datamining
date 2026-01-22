@@ -165,7 +165,10 @@ function v(e) {
     guildId: t,
     entitlements: n
   } = e, r = p(t);
-  n.forEach(e => {
+  n.filter(e => {
+    var t, n, r;
+    return (null == (r = e.sku) || null == (n = r.tenant_metadata) || null == (t = n.guild_monetization) ? true : t.game_server) != null
+  }).forEach(e => {
     r.entitlements[e.id] = e
   }), I(t, r)
 }
