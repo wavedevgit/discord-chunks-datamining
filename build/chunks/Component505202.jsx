@@ -69,50 +69,51 @@ function b(e) {
     subtext: v,
     subtextLineClamp: A,
     hasSubmenu: I,
-    disabled: S,
-    isFocused: T,
-    menuItemProps: C,
-    action: N,
-    onClose: w,
-    onFocus: R,
-    className: P,
-    focusedClassName: D,
-    dontCloseOnActionIfHoldingShiftKey: x,
-    dontCloseOnAction: L,
-    iconProps: j
+    loading: S,
+    disabled: T,
+    isFocused: C,
+    menuItemProps: N,
+    action: w,
+    onClose: R,
+    onFocus: P,
+    className: D,
+    focusedClassName: x,
+    dontCloseOnActionIfHoldingShiftKey: L,
+    dontCloseOnAction: j,
+    iconProps: M
   } = e, {
-    onSelect: M,
-    onInteraction: k
-  } = i.useContext(c.x), U = i.useRef(null), G = i.useCallback(e => {
+    onSelect: k,
+    onInteraction: U
+  } = i.useContext(c.x), G = i.useRef(null), V = i.useCallback(e => {
     var t;
-    if (null == k || k({
+    if (null == U || U({
         type: c.Q.DEFAULT
-      }), null == N) returnfalse;
-    e.shiftKey && x || L || w(), e.persist(), null == M || M(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => N(e))
-  }, [N, w, M, x, L, k]);
+      }), null == w) returnfalse;
+    e.shiftKey && L || j || R(), e.persist(), null == k || k(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => w(e))
+  }, [w, R, k, L, j, U]);
   return i.useEffect(() => {
-    T && ((0, u.Y)(U), null == R || R())
-  }, [T, R]), (0, r.jsxs)(o.DUT, y(g({
-    innerRef: U,
-    className: s()(h.item, h.labelContainer, _.jV[t], P, {
-      [h.disabled]: S,
-      [h.focused]: T,
-      [null != D ? D : ""]: T
+    C && ((0, u.Y)(G), null == P || P())
+  }, [C, P]), (0, r.jsxs)(o.DUT, y(g({
+    innerRef: G,
+    className: s()(h.item, h.labelContainer, _.jV[t], D, {
+      [h.disabled]: T,
+      [h.focused]: C,
+      [null != x ? x : ""]: C
     }),
-    onClick: S ? true : G,
-    "aria-disabled": S
-  }, C), {
+    onClick: T ? true : V,
+    "aria-disabled": T
+  }, N), {
     "data-menu-item": "true",
     children: [null != E && (0, r.jsx)("div", {
       className: h.iconContainerLeft,
       children: (0, r.jsx)(E, y(g({
         color: "currentColor"
-      }, j), {
-        className: s()(h.icon, null == j ? true : j.className)
+      }, M), {
+        className: s()(h.icon, null == M ? true : M.className)
       }))
     }), null != b && (0, r.jsx)(p.B, {
       accessory: b,
-      isFocused: T
+      isFocused: C
     }), (0, r.jsxs)("div", {
       className: h.label,
       children: [(0, r.jsx)(f.V, {
@@ -128,12 +129,17 @@ function b(e) {
     }), null != O && (0, r.jsx)("div", {
       className: h.hintContainer,
       children: (0, l.J)(O, e)
+    }), S && (0, r.jsx)("div", {
+      className: h.iconContainer,
+      children: (0, r.jsx)(o.y$y, {
+        type: o.y$y.Type.PULSING_ELLIPSIS
+      })
     }), (0, d.O)(m) ? m : null != m && (0, r.jsx)("div", {
       className: h.iconContainer,
       children: (0, r.jsx)(m, y(g({
         color: "currentColor"
-      }, j), {
-        className: s()(h.icon, null == j ? true : j.className)
+      }, M), {
+        className: s()(h.icon, null == M ? true : M.className)
       }))
     }), I && (0, r.jsx)("div", {
       className: h.iconContainer,

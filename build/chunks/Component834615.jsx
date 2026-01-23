@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 834615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => D
+  A: () => M
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -9,6 +9,7 @@ var Chunk627968 = require("./627968.js"),
   a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
+  Chunk409626 = require("./409626.js"),
   Chunk544028 = require("./544028.js"),
   Chunk829219 = require("./829219.js"),
   Chunk859703 = require("./859703.js"),
@@ -33,7 +34,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk502511 = require("./502511.js");
 
-function w(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,31 +53,31 @@ function w(e) {
   return e
 }
 
-function L(e) {
+function R(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, f.S5)(n.config.expiresAt), l = (0, f.S5)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.bG)([c.A], () => c.A.getState().theme), u = (0, o.Mwr)(a) ? j.NJ8.DARK : j.NJ8.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, m.S5)(n.config.expiresAt), l = (0, m.S5)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.bG)([u.A], () => u.A.getState().theme), c = (0, o.Mwr)(a) ? x.NJ8.DARK : x.NJ8.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
-    className: P.R_,
+    className: w.R_,
     children: [(0, r.jsx)("img", {
-      className: P.tb,
+      className: w.tb,
       alt: "",
-      src: (0, m.tW)(n, m.fY.GAME_TILE, u).url
+      src: (0, A.tW)(n, A.fY.GAME_TILE, c).url
     }), (0, r.jsxs)("div", {
-      className: P.UD,
+      className: w.UD,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         color: "text-strong",
-        children: d ? x.intl.string(x.t.XBboAK) : x.intl.formatToPlainString(x.t.EQa7os, {
+        children: d ? P.intl.string(P.t.XBboAK) : P.intl.formatToPlainString(P.t.EQa7os, {
           questName: n.config.messages.questName
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-default",
-        children: d ? x.intl.formatToPlainString(x.t.APddvF, {
+        children: d ? P.intl.formatToPlainString(P.t.APddvF, {
           expirationDate: l
-        }) : x.intl.formatToPlainString(x.t["pX+fmn"], {
+        }) : P.intl.formatToPlainString(P.t["pX+fmn"], {
           expirationDate: i
         })
       })]
@@ -84,87 +85,88 @@ function L(e) {
   })
 }
 
-function R(e) {
+function D(e) {
   var t, n, l;
   let {
-    nodeRef: c,
-    quest: m
-  } = e, O = (0, A.Ut)(), j = (0, s.bG)([d.A], () => d.A.isEnrolling(m.id), [m]), [R, D] = i.useState(false), M = i.useCallback(() => D(true), []), k = i.useCallback(() => D(false), []), {
-    launchInGameActivity: U
-  } = (0, f.zW)(m), G = h.t$.useConfig({
-    location: T.rE.ACTIVITY_PANEL
-  }).enabled, V = i.useCallback(e => {
+    nodeRef: u,
+    quest: A
+  } = e, y = (0, _.Ut)(), x = (0, s.bG)([p.A], () => p.A.isEnrolling(A.id), [A]), [D, M] = i.useState(false), k = i.useCallback(() => M(true), []), U = i.useCallback(() => M(false), []), {
+    launchInGameActivity: G
+  } = (0, m.zW)(A), V = g.t$.useConfig({
+    location: j.rE.ACTIVITY_PANEL
+  }).enabled, B = i.useCallback(e => {
     e.stopPropagation()
-  }, []), B = i.useCallback(() => {
-    (0, u.Oy)(m.id, {
-      questContent: p.uF.ACTIVITY_PANEL,
-      questContentCTA: _.Cy.ACCEPT_QUEST,
-      sourceQuestContent: p.uF.ACTIVITY_PANEL
-    }), (0, E.vA)(m) && U()
-  }, [m, U]), H = i.useCallback(() => {
-    null != m && (O({
-      questId: m.id,
-      questContent: p.uF.ACTIVITY_PANEL,
-      questContentCTA: _.Cy.TRACK_PROGRESS,
-      sourceQuestContent: p.uF.ACTIVITY_PANEL
-    }), (0, N.navigateToQuestHome)({
-      fromContent: p.uF.ACTIVITY_PANEL,
-      questId: m.id
+  }, []), H = i.useCallback(() => {
+    (0, d.Oy)(A.id, {
+      questContent: h.uF.ACTIVITY_PANEL,
+      questContentCTA: b.Cy.ACCEPT_QUEST,
+      sourceQuestContent: h.uF.ACTIVITY_PANEL
+    }), (0, O.vA)(A) && G()
+  }, [A, G]), F = i.useCallback(() => {
+    null != A && (y({
+      questId: A.id,
+      questContent: h.uF.ACTIVITY_PANEL,
+      questContentCTA: b.Cy.TRACK_PROGRESS,
+      sourceQuestContent: h.uF.ACTIVITY_PANEL
+    }), (0, T.navigateToQuestHome)({
+      fromContent: h.uF.ACTIVITY_PANEL,
+      questId: A.id
     }))
-  }, [m, O]), F = i.useCallback(() => {
-    O({
-      questId: m.id,
-      questContent: p.uF.ACTIVITY_PANEL,
-      questContentCTA: _.Cy.LEARN_MORE,
-      sourceQuestContent: p.uF.ACTIVITY_PANEL
-    }), (0, N.navigateToQuestHome)({
-      fromContent: p.uF.ACTIVITY_PANEL,
-      questId: m.id
+  }, [A, y]), Y = i.useCallback(() => {
+    y({
+      questId: A.id,
+      questContent: h.uF.ACTIVITY_PANEL,
+      questContentCTA: b.Cy.LEARN_MORE,
+      sourceQuestContent: h.uF.ACTIVITY_PANEL
+    }), (0, T.navigateToQuestHome)({
+      fromContent: h.uF.ACTIVITY_PANEL,
+      questId: A.id
     })
-  }, [m.id, O]), Y = (0, I.ix)({
-    quest: m,
-    questContent: p.uF.ACTIVITY_PANEL,
-    sourceQuestContent: p.uF.ACTIVITY_PANEL
-  }), K = (null == (t = m.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = m.userStatus) ? true : n.completedAt) != null, q = (0, f.fc)(m), z = (0, g.mU)({
-    quest: m,
-    taskDetails: q,
-    location: T.rE.ACTIVITY_PANEL,
-    questContent: p.uF.ACTIVITY_PANEL,
-    sourceQuestContent: p.uF.ACTIVITY_PANEL
-  }), Q = (0, E.vA)(m), X = (0, g.NA)({
-    quest: m
-  }), Z = Q ? X : x.intl.string(x.t.l7E81v);
+  }, [A.id, y]), K = (0, v.ix)({
+    quest: A,
+    questContent: h.uF.ACTIVITY_PANEL,
+    sourceQuestContent: h.uF.ACTIVITY_PANEL
+  }), W = (null == (t = A.userStatus) ? true : t.enrolledAt) != null, q = (null == (n = A.userStatus) ? true : n.completedAt) != null, z = (0, m.fc)(A), Q = (0, f.mU)({
+    quest: A,
+    taskDetails: z,
+    location: j.rE.ACTIVITY_PANEL,
+    questContent: h.uF.ACTIVITY_PANEL,
+    sourceQuestContent: h.uF.ACTIVITY_PANEL,
+    gameProfileSource: c.Ob.QuestActivityPanel
+  }), X = (0, O.vA)(A), Z = (0, f.NA)({
+    quest: A
+  }), J = X ? Z : P.intl.string(P.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
-      c.current = e
+      u.current = e
     },
-    className: a()(P.iE, {
-      [P.tJ]: K
+    className: a()(w.iE, {
+      [w.tJ]: W
     }),
-    onClick: V,
-    onKeyPress: V,
-    onFocus: M,
-    onMouseEnter: M,
-    onBlur: k,
-    onMouseLeave: k,
+    onClick: B,
+    onKeyPress: B,
+    onFocus: k,
+    onMouseEnter: k,
+    onBlur: U,
+    onMouseLeave: U,
     children: [(0, r.jsxs)("div", {
-      className: P.Wp,
-      children: [K ? (0, r.jsx)(L, {
-        quest: m
-      }) : (0, r.jsx)(S.A, {}), (0, r.jsx)(y.C, {
-        quest: m,
-        questContent: p.uF.ACTIVITY_PANEL,
-        shouldShowDisclosure: (null == (l = m.userStatus) ? true : l.enrolledAt) == null,
+      className: w.Wp,
+      children: [W ? (0, r.jsx)(R, {
+        quest: A
+      }) : (0, r.jsx)(C.A, {}), (0, r.jsx)(I.C, {
+        quest: A,
+        questContent: h.uF.ACTIVITY_PANEL,
+        shouldShowDisclosure: (null == (l = A.userStatus) ? true : l.enrolledAt) == null,
         showShareLink: true,
-        sourceQuestContent: p.uF.ACTIVITY_PANEL,
+        sourceQuestContent: h.uF.ACTIVITY_PANEL,
         children: e => {
           var t, n;
-          return (0, r.jsx)(o.DUT, (t = w({}, e), n = n = {
-            "aria-label": x.intl.string(x.t.DEoVWZ),
+          return (0, r.jsx)(o.DUT, (t = L({}, e), n = n = {
+            "aria-label": P.intl.string(P.t.DEoVWZ),
             children: (0, r.jsx)(o.jNK, {
               size: "md",
               color: "currentColor",
-              className: P.Bx
+              className: w.Bx
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -178,69 +180,70 @@ function R(e) {
           }), t))
         }
       })]
-    }), !K && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(L, {
-        quest: m
+    }), !W && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(R, {
+        quest: A
       }), (0, r.jsx)("div", {
-        className: P.GA,
+        className: w.GA,
         children: (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: z
+          children: Q
         })
       })]
-    }), K && !W && (0, r.jsx)(C.A, {
-      autoplay: R,
-      className: P.t3,
-      quest: m,
-      questContent: p.uF.ACTIVITY_PANEL,
-      location: T.rE.ACTIVITY_PANEL,
-      taskDetails: q,
-      sourceQuestContent: p.uF.ACTIVITY_PANEL
+    }), W && !q && (0, r.jsx)(N.A, {
+      autoplay: D,
+      className: w.t3,
+      quest: A,
+      questContent: h.uF.ACTIVITY_PANEL,
+      location: j.rE.ACTIVITY_PANEL,
+      taskDetails: z,
+      sourceQuestContent: h.uF.ACTIVITY_PANEL,
+      gameProfileSource: c.Ob.QuestActivityPanel
     }), (0, r.jsxs)("div", {
-      className: P.uz,
-      children: [!K && (0, r.jsxs)(o.ButtonGroup, {
+      className: w.uz,
+      children: [!W && (0, r.jsxs)(o.ButtonGroup, {
         size: "sm",
-        direction: Q ? "vertical" : "horizontal",
+        direction: X ? "vertical" : "horizontal",
         fullWidth: true,
         children: [(0, r.jsx)(o.Button, {
           variant: "secondary",
-          text: x.intl.string(x.t.LLLLPD),
-          onClick: F
-        }), G && !(0, b.Ic)(m) ? (0, r.jsx)(v.A, {
-          quest: m,
+          text: P.intl.string(P.t.LLLLPD),
+          onClick: Y
+        }), V && !(0, E.Ic)(A) ? (0, r.jsx)(S.A, {
+          quest: A,
           size: "md",
-          analyticsCtxQuestContent: p.uF.ACTIVITY_PANEL,
-          analyticsCtxSourceQuestContent: p.uF.ACTIVITY_PANEL
+          analyticsCtxQuestContent: h.uF.ACTIVITY_PANEL,
+          analyticsCtxSourceQuestContent: h.uF.ACTIVITY_PANEL
         }) : (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: Z,
-          onClick: B,
-          loading: j,
-          icon: (0, N.Oz)(m)
+          text: J,
+          onClick: H,
+          loading: x,
+          icon: (0, T.Oz)(A)
         })]
-      }), K && !W && (0, r.jsx)(o.Button, {
+      }), W && !q && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: x.intl.string(x.t.VN1Ajl),
-        onClick: H
-      }), W && (0, r.jsx)(o.Button, {
+        text: P.intl.string(P.t.VN1Ajl),
+        onClick: F
+      }), q && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: x.intl.string(x.t.cfY4PE),
-        onClick: Y
+        text: P.intl.string(P.t.cfY4PE),
+        onClick: K
       })]
     })]
   })
 }
-let D = function(e) {
-  return (0, r.jsx)(O.R, {
+let M = function(e) {
+  return (0, r.jsx)(y.R, {
     questOrQuests: e.quest,
-    questContent: p.uF.ACTIVITY_PANEL,
-    sourceQuestContent: p.uF.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(R, w({
+    questContent: h.uF.ACTIVITY_PANEL,
+    sourceQuestContent: h.uF.ACTIVITY_PANEL,
+    children: t => (0, r.jsx)(D, L({
       nodeRef: t
     }, e))
   })

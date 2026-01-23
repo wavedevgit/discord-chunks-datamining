@@ -28,8 +28,9 @@ let l = {
         showSubtext: h,
         showDisabledItems: m,
         showColoredItems: g,
-        dangerItemColor: E
-      } = e, [y, b] = i.useState(true), [O, v] = i.useState(false), [A, I] = i.useState("text"), [S, T] = i.useState("cozy"), [C, N] = i.useState(true), w = e => (0, r.jsxs)(s.W1t, {
+        showLoading: E,
+        dangerItemColor: y
+      } = e, [b, O] = i.useState(true), [v, A] = i.useState(false), [I, S] = i.useState("text"), [T, C] = i.useState("cozy"), [N, w] = i.useState(true), R = e => (0, r.jsxs)(s.W1t, {
         navId: "menu-story",
         "aria-label": "Story Menu",
         variant: t,
@@ -47,9 +48,7 @@ let l = {
           label: "Pin Message",
           icon: p ? s.tsw : true,
           subtext: h ? "Pin this message to the channel" : true,
-          hint: (0, r.jsx)(s.y$y, {
-            type: s.y$y.Type.PULSING_ELLIPSIS
-          }),
+          loading: E,
           action: () => {}
         }), (0, r.jsx)(s.Drp, {
           id: "copy",
@@ -105,20 +104,20 @@ let l = {
           children: [(0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.sLh, {
             id: "notifications",
             label: "Enable Notifications Enable Notifications Enable Notifications",
-            checked: y,
-            action: () => b(!y)
+            checked: b,
+            action: () => O(!b)
           }), (0, r.jsx)(s.sLh, {
             id: "mute",
             label: "Mute Channel",
-            checked: O,
-            action: () => v(!O)
+            checked: v,
+            action: () => A(!v)
           })]
         }), d && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.fPC, {
             id: "switch-notifications",
             label: "Push Notifications",
-            checked: y,
-            action: () => b(!y)
+            checked: b,
+            action: () => O(!b)
           })]
         }), u && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.bXX, {}), (0, r.jsxs)(s.rXV, {
@@ -127,14 +126,14 @@ let l = {
               id: "radio-text",
               group: "channel-type",
               label: "Text Channel Text Channel Text Channel Text Channel Text Channel Text Channel ",
-              checked: "text" === A,
-              action: () => I("text")
+              checked: "text" === I,
+              action: () => S("text")
             }), (0, r.jsx)(s.iDA, {
               id: "radio-voice",
               group: "channel-type",
               label: "Voice Channel",
-              checked: "voice" === A,
-              action: () => I("voice")
+              checked: "voice" === I,
+              action: () => S("voice")
             })]
           }), (0, r.jsx)(s.bXX, {}), (0, r.jsxs)(s.rXV, {
             label: "View Mode",
@@ -142,14 +141,14 @@ let l = {
               id: "radio-cozy",
               group: "view-mode",
               label: "Cozy",
-              checked: "cozy" === S,
-              action: () => T("cozy")
+              checked: "cozy" === T,
+              action: () => C("cozy")
             }), (0, r.jsx)(s.iDA, {
               id: "radio-compact",
               group: "view-mode",
               label: "Compact",
-              checked: "compact" === S,
-              action: () => T("compact")
+              checked: "compact" === T,
+              action: () => C("compact")
             })]
           })]
         }), l && (0, r.jsxs)(r.Fragment, {
@@ -172,30 +171,30 @@ let l = {
         }), (0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.Drp, {
           id: "delete",
           label: "Delete Message",
-          color: E,
+          color: y,
           icon: p ? s.ucK : true,
           action: () => {}
         })]
-      }), R = i.useRef(null);
+      }), P = i.useRef(null);
       return (0, r.jsxs)("div", {
         className: o.k,
-        children: [!C && (0, r.jsx)(a.$nd, {
+        children: [!N && (0, r.jsx)(a.$nd, {
           text: "Open Menu",
-          onClick: () => N(true)
+          onClick: () => w(true)
         }), (0, r.jsx)(s.YNO, {
           renderPopout: e => {
             let {
               closePopout: t
             } = e;
-            return w(t)
+            return R(t)
           },
           position: "bottom",
           align: "center",
           shouldShow: true,
-          targetElementRef: R,
-          onRequestClose: () => N(false),
+          targetElementRef: P,
+          onRequestClose: () => w(false),
           children: () => (0, r.jsx)("div", {
-            ref: R,
+            ref: P,
             style: {
               width: 1,
               height: 1,
@@ -273,6 +272,11 @@ let l = {
         type: "boolean",
         label: "Show Colored Items",
         defaultValue: true
+      },
+      showLoading: {
+        type: "boolean",
+        label: "Show Loading",
+        defaultValue: false
       },
       dangerItemColor: {
         type: "select",

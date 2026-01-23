@@ -5,6 +5,7 @@ require.d(exports, {
   Bw: () => i,
   L5: () => s,
   LO: () => l,
+  RJ: () => f,
   XM: () => o,
   qd: () => c,
   t$: () => d,
@@ -122,6 +123,21 @@ let c = (0, Chunk945810.mj)({
       enabled: false
     },
     variations: {
+      1: {
+        enabled: true
+      }
+    }
+  }),
+  f = (0, Chunk945810.mj)({
+    name: "2026-01-business-profile-linking",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      0: {
+        enabled: false
+      },
       1: {
         enabled: true
       }
