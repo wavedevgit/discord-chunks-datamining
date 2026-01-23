@@ -20,7 +20,7 @@ let m = t => {
     channelId: m,
     applicationId: v,
     transitionState: p
-  } = t, b = (0, a.bG)([o.Ay], () => o.Ay.getChannelMuteConfig(null, m)), _ = l.useMemo(() => (0, s.gv)().map(t => {
+  } = t, _ = (0, a.bG)([o.Ay], () => o.Ay.getChannelMuteConfig(null, m)), b = l.useMemo(() => (0, s.gv)().map(t => {
     let {
       label: e,
       value: n
@@ -40,11 +40,11 @@ let m = t => {
       onClick: n
     }],
     children: (0, i.jsx)(u.z6M, {
-      options: _,
+      options: b,
       onChange: t => {
         d.A.updateAppDMOverrideSettings(null, m, v, (0, s.pB)(t), g.fd.Muted)
       },
-      value: null != (e = null == b ? true : b.selected_time_window) ? e : true
+      value: null != (e = null == _ ? true : _.selected_time_window) ? e : true
     })
   })
 }

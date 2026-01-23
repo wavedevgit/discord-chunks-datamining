@@ -18,12 +18,12 @@ var Chunk627968 = require("./627968.js"),
 function p(e, t) {
   let {
     enabled: n
-  } = u.A.useConfig({
+  } = o.A.useConfig({
     location: "useCallTilePopoutItem"
-  }), p = (0, r.bG)([o.A], () => o.A.getParticipant(e, t)), b = (0, r.bG)([o.A], () => o.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
-    null != p && ((0, A.Ay)(p) && (0, s.A9)(p.stream, {
+  }), p = (0, r.bG)([s.A], () => s.A.getParticipant(e, t)), b = (0, r.bG)([s.A], () => s.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
+    null != p && ((0, A.Ay)(p) && (0, c.A9)(p.stream, {
       forceMultiple: true
-    }), d.A.popoutParticipant(e, p.id), c.openCallTilePopout(e, p.id))
+    }), d.A.popoutParticipant(e, p.id), u.openCallTilePopout(e, p.id))
   }, [p, e]);
   return b || null == p || !n || p.type === A.lp.ACTIVITY ? null : (0, l.jsx)(a.Drp, {
     id: "call-tile-popout",

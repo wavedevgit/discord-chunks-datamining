@@ -54,7 +54,7 @@ function p(e) {
         } = e;
         return (0, l.jsx)(o.Drp, {
           id: t,
-          label: n,
+          void_label: n,
           icon: t === i ? o.yr3 : true,
           action: () => r(t)
         }, t)

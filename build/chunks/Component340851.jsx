@@ -181,7 +181,7 @@ let V = (0, Chunk296216.J)(function(e) {
       (0, u.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("39271")]).then(n.bind(n, 107632));
+        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("52458")]).then(n.bind(n, 107632));
         return t => (0, r.jsx)(e, G(k({}, t), {
           user: h,
           guildId: U.guild_id,

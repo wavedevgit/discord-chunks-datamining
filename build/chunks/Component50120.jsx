@@ -105,7 +105,7 @@ let D = (0, Chunk358367.A)(function(e) {
         }({
           id: c
         }, {
-          label: a,
+          void_label: a,
           action: () => {
             var e, t;
             let n;

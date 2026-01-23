@@ -49,8 +49,8 @@ function T(e) {
     selectedTab: a,
     isPhantomPreview: u,
     categoryTabs: p
-  } = (0, y.k)(), f = !o || null == l;
-  return null == s || !u && f ? (0, n.jsx)(d.y$y, {}) : (0, n.jsx)(x.A, {
+  } = (0, x.k)(), f = !o || null == l;
+  return null == s || !u && f ? (0, n.jsx)(d.y$y, {}) : (0, n.jsx)(y.A, {
     defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : A.p$.NAME,
     children: (0, n.jsxs)("div", {
       className: N.hQ,
@@ -83,13 +83,13 @@ function V(e) {
     guildId: t,
     productId: r
   } = e, o = (0, c.bG)([f.A], () => f.A.isConnected()), g = (0, c.bG)([O.A], () => O.A.getGuild(t)), {
-    shouldHideGuildPurchaseEntryPoints: x,
+    shouldHideGuildPurchaseEntryPoints: y,
     restrictionsLoading: m
   } = (0, p.MH)(t), {
     selectedTab: v,
     isPhantomPreview: _,
     categoryTabs: w
-  } = (0, y.k)(), P = o && (null == g || 0 === w.length && !_ || x && !m);
+  } = (0, x.k)(), P = o && (null == g || 0 === w.length && !_ || y && !m);
   return i.useEffect(() => {
     P && (0, h.B)(t, D.VV.GUILD_SHOP)
   }, [t, P]), (0, u.A)({
@@ -104,12 +104,12 @@ function V(e) {
   }), (0, n.jsxs)("div", {
     "data-has-border": true,
     className: l()(k.TE, N.kL),
-    children: [(0, n.jsxs)(b.A, {
-      children: [(0, n.jsx)(b.A.Icon, {
+    children: [(0, n.jsxs)(j.A, {
+      children: [(0, n.jsx)(j.A.Icon, {
         icon: (0, d.kHD)(S.h),
         "aria-hidden": true,
         color: a.A.colors.INTERACTIVE_TEXT_ACTIVE.css
-      }), (0, n.jsx)(b.A.Title, {
+      }), (0, n.jsx)(j.A.Title, {
         children: E.intl.string(E.t.al5EXL)
       }), (0, n.jsx)(L.A, {})]
     }), (0, n.jsx)(d.d_W, {
@@ -118,7 +118,7 @@ function V(e) {
         guildId: t,
         productId: r
       }) : (0, n.jsx)(d.y$y, {})
-    }), (0, n.jsx)(j.A, {
+    }), (0, n.jsx)(b.A, {
       className: N.Dv
     }), (0, n.jsx)(C.A, {
       className: N.xC
@@ -132,7 +132,7 @@ function U(e) {
     productId: r,
     initialTab: i
   } = e;
-  return null == i && null != r && (i = m.B.GUILD_PRODUCTS), (0, n.jsx)(y.A, {
+  return null == i && null != r && (i = m.B.GUILD_PRODUCTS), (0, n.jsx)(x.A, {
     initialTab: i,
     guildId: t,
     children: (0, n.jsx)(V, {

@@ -69,7 +69,7 @@ function x(e) {
     (0, c.L3)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("97262"), n.e("29534"), n.e("67447"), n.e("37432")]).then(n.bind(n, 708202));
+      } = await Promise.all([n.e("97262"), n.e("29534"), n.e("67447"), n.e("10905")]).then(n.bind(n, 708202));
       return t => (0, r.jsx)(e, v(j({}, t), {
         user: E,
         guildId: y.guild_id,

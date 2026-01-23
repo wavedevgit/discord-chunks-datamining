@@ -46,7 +46,7 @@ function d(e) {
       action: n
     }), (0, r.jsx)(i.Drp, {
       id: "browse-social-layer-storefront",
-      label: y,
+      void_label: y,
       iconLeft: null != b ? true : i.U1X,
       action: d
     })]

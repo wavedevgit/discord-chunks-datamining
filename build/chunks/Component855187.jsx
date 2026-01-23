@@ -2,7 +2,7 @@
 /** chunk id: 855187, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -11,10 +11,9 @@ var Chunk311907 = require("./311907.js"),
   Chunk952572 = require("./952572.js"),
   Chunk961350 = require("./961350.js"),
   Chunk430452 = require("./430452.js"),
-  Chunk985018 = require("./985018.jsx"),
-  Chunk809119 = require("./809119.js");
+  Chunk985018 = require("./985018.jsx");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +22,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,44 +46,41 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
-  let d = (0, a.k34)(),
+function _(e, t) {
+  let u = (0, a.k34)(),
     {
-      videoEnabled: p,
-      hasVideoDevice: h
+      videoEnabled: f,
+      hasVideoDevice: _
     } = (0, i.cf)([l.A], () => ({
       videoEnabled: l.A.isVideoEnabled(),
       hasVideoDevice: l.A.isVideoAvailable()
     })),
-    m = (0, i.bG)([o.default], () => o.default.getId() === e),
-    g = (0, s.A)();
+    h = (0, i.bG)([o.default], () => o.default.getId() === e),
+    m = (0, s.A)();
 
-  function E() {
+  function g() {
     (0, a.mMO)(async () => {
       let {
         default: e
       } = await n.e("10534").then(n.bind(n, 308229));
-      return t => (0, r.jsx)(e, _(f({}, t), {
-        videoEnabled: p
+      return t => (0, r.jsx)(e, p(d({}, t), {
+        videoEnabled: f
       }))
     }, {
       modalKey: "camera-preview",
-      contextKey: null != t ? (0, a.TId)(t) : d
+      contextKey: null != t ? (0, a.TId)(t) : u
     })
   }
-  return (!p || g) && m && h ? (0, r.jsx)(a.Drp, {
+  return (!f || m) && h && _ ? (0, r.jsx)(a.Drp, {
     id: "change-video-background",
-    label: (0, r.jsx)("div", {
-      className: u.A,
-      children: p ? c.intl.string(c.t.mZKxHb) : c.intl.string(c.t["vkV93/"])
-    }),
-    action: E,
-    icon: p ? a.fBX : a.bMW
+    label: f ? c.intl.string(c.t.mZKxHb) : c.intl.string(c.t["vkV93/"]),
+    action: g,
+    icon: f ? a.fBX : a.bMW
   }) : null
 }

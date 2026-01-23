@@ -196,32 +196,32 @@ function L(e) {
         case I.v.UPLOAD_A_FILE:
           return (0, r.jsx)(o.Drp, {
             id: "upload-file",
-            label: n,
+            void_label: n,
             action: b
           }, "upload-file");
         case I.v.UPLOAD_TEXT_AS_FILE:
           if ("" === G) return null;
           return (0, r.jsx)(o.Drp, {
             id: "upload-text-as-file",
-            label: n,
+            void_label: n,
             action: J
           }, "upload-text-as-file");
         case I.v.CLIPS:
           return (0, r.jsx)(o.Drp, {
             id: "clips",
-            label: n,
+            void_label: n,
             action: Y
           }, "clips");
         case I.v.POLL:
           return (0, r.jsx)(o.Drp, {
             id: "poll",
-            label: n,
+            void_label: n,
             action: q
           }, "poll");
         case I.v.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(o.Drp, {
             id: "play",
-            label: n,
+            void_label: n,
             action: () => {
               var n;
               return n = e.activity, void c.A.sendActivityInvite({
@@ -235,7 +235,7 @@ function L(e) {
         case I.v.INVITE_TO_LISTEN:
           return (0, r.jsx)(o.Drp, {
             id: "listen",
-            label: n,
+            void_label: n,
             action: () => {
               var n;
               return n = e.activity, void c.A.sendActivityInvite({
@@ -249,7 +249,7 @@ function L(e) {
         case I.v.INVITE_TO_WATCH:
           return (0, r.jsx)(o.Drp, {
             id: "watch",
-            label: n,
+            void_label: n,
             action: () => {
               var n;
               return n = e.activity, void c.A.sendActivityInvite({
@@ -263,32 +263,32 @@ function L(e) {
         case I.v.CREATE_THREAD:
           return (0, r.jsx)(o.Drp, {
             id: "THREAD",
-            label: n,
+            void_label: n,
             action: W
           }, "THREAD");
         case I.v.SLASH_COMMAND:
           return (0, r.jsx)(o.Drp, {
             id: "SLASH_COMMAND",
-            label: n,
+            void_label: n,
             action: z
           }, "SLASH_COMMAND");
         case I.v.APP_LAUNCHER:
           return (0, r.jsx)(o.Drp, {
             id: "APP_LAUNCHER",
-            label: n,
+            void_label: n,
             action: () => (0, p.R)(h.s4.TEXT, a, true, t.id)
           }, "APP_LAUNCHER");
         case I.v.ACTIVITY:
           return (0, r.jsx)(o.Drp, {
             id: "activity",
-            label: n,
+            void_label: n,
             action: X,
             hint: (0, r.jsx)(M, {})
           }, "activity");
         case I.v.SCHEDULED_MESSAGE:
           return (0, r.jsx)(o.Drp, {
             id: "scheduled_message",
-            label: n,
+            void_label: n,
             action: () => (0, A.e0)({
               channel: t
             }),
@@ -297,7 +297,7 @@ function L(e) {
         case I.v.SUMMARIZE_THREAD:
           return (0, r.jsx)(o.Drp, {
             id: "summarize_thread",
-            label: n,
+            void_label: n,
             action: () => y.A.summarizeThread(t),
             icon: K ? (0, r.jsx)(o.y$y, {
               type: o.tVU.PULSING_ELLIPSIS

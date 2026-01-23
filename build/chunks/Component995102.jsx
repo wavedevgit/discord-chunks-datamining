@@ -82,7 +82,7 @@ function O(e, t) {
   }
   return i ? (0, r.jsx)(o.Drp, {
     id: "unmute-channel",
-    label: _,
+    void_label: _,
     subtext: p,
     action: () => m(false)
   }) : (0, r.jsx)(o.Drp, {

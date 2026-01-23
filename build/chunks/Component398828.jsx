@@ -25,20 +25,20 @@ function O() {
     r = (0, i.bG)([l.A], () => l.A.useReducedMotion),
     o = t && e && !r ? (0, s.n)("server_products/storefront/question-mark.gif") : (0, s.n)("server_products/storefront/question-mark.png");
   return (0, n.jsxs)("div", {
-    className: b.Xq,
+    className: j.Xq,
     children: [(0, n.jsx)(c.A, {
       role: true,
       ctaComponent: null,
       imageUrl: (0, s.n)("server_products/storefront/preview-thumbnail.png"),
-      name: j.intl.string(j.t.U2hvDo),
-      description: j.intl.string(j.t["w/TNGT"]),
+      name: b.intl.string(b.t.U2hvDo),
+      description: b.intl.string(b.t["w/TNGT"]),
       formattedPrice: (0, d.$g)(0, C.Yri.USD, {
         localeMatcher: "best fit",
         style: "currency",
         maximumSignificantDigits: 1
       }),
       shouldShowFullDescriptionButton: false,
-      productType: j.intl.string(j.t.ih4QMU),
+      productType: b.intl.string(b.t.ih4QMU),
       onTapCard: () => null,
       hideRoleTag: true,
       lineClamp: 3,
@@ -46,7 +46,7 @@ function O() {
       cardWidth: 332,
       descriptionTextVariant: "text-xs/normal"
     }), (0, n.jsx)("img", {
-      className: b.kz,
+      className: j.kz,
       alt: "",
       src: o
     })]
@@ -55,15 +55,15 @@ function O() {
 
 function g() {
   return (0, n.jsxs)("div", {
-    className: b.od,
+    className: j.od,
     children: [(0, n.jsx)(o.mir, {
       size: "md",
       color: "currentColor",
-      className: b.ZC
+      className: j.ZC
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: j.intl.format(j.t.umfZ8q, {
+      children: b.intl.format(b.t.umfZ8q, {
         learnMoreLink: f.rv
       })
     })]
@@ -75,9 +75,9 @@ function h(e) {
     guildId: t
   } = e;
   return (0, n.jsxs)("div", {
-    className: b.Bh,
+    className: j.Bh,
     children: [(0, n.jsxs)("div", {
-      className: b.gp,
+      className: j.gp,
       children: [(0, n.jsx)(O, {}), (0, n.jsx)(p.A, {
         guildId: t,
         showCTA: true

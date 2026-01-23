@@ -56,13 +56,13 @@ function b(e) {
                 }
               })
             },
-            label: a
+            void_label: a
           }, n);
         default:
           return (0, i.jsx)(r.Drp, {
             id: n,
             action: () => b(n),
-            label: a
+            void_label: a
           }, n)
       }
     })

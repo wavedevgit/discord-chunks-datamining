@@ -32,32 +32,32 @@ var Chunk503698 = require("./503698.js"),
 
 function C(n, t) {
   let e = (0, o.bG)([O.A], () => O.A.getVoiceChannelId()),
-    l = (0, o.bG)([y.A], () => {
+    i = (0, o.bG)([y.A], () => {
       var n, t;
       return null != (n = null == (t = y.A.getChannel(e)) ? true : t.getGuildId()) ? n : true
     }),
     {
-      enabled: i
+      enabled: l
     } = x.A.useExperiment({
-      guildId: l,
+      guildId: i,
       location: t
     });
-  return i ? e : n
+  return l ? e : n
 }
 
 function E(n, t) {
-  let [e, i] = (0, o.yK)([p.A], () => [null != t ? p.A.getParticipants(t) : null, null != t ? p.A.getParticipant(t, n.id) : null], [t, n.id]), s = (0, o.bG)([y.A], () => y.A.getChannel(t)), m = (0, f.o)(n, "context_menu", t), {
+  let [e, l] = (0, o.yK)([p.A], () => [null != t ? p.A.getParticipants(t) : null, null != t ? p.A.getParticipant(t, n.id) : null], [t, n.id]), u = (0, o.bG)([y.A], () => y.A.getChannel(t)), v = (0, f.o)(n, "context_menu", t), {
     enabled: O
   } = x.A.useExperiment({
-    guildId: null == s ? true : s.guild_id,
+    guildId: null == u ? true : u.guild_id,
     location: "useRingHangupItem"
   }), {
     copyVariant: C
   } = b.o.useConfig({
     location: "useRingHangupItem"
-  }), E = !m || (null == e ? true : e.length) === 0 || null == t, T = O && (null == s ? true : s.guild_id) != null, k = null == i, D = null != i && i.type === j.lp.USER && i.ringing, R = [];
-  T && !E && (k || D) && R.push(u.M.RING_USER_TO_VC_NEW_BADGE);
-  let [S, U] = (0, v.kn)(R), w = S === u.M.RING_USER_TO_VC_NEW_BADGE, {
+  }), E = !v || (null == e ? true : e.length) === 0 || null == t, T = O && (null == u ? true : u.guild_id) != null, k = null == l, D = null != l && l.type === j.lp.USER && l.ringing, R = [];
+  T && !E && (k || D) && R.push(s.M.RING_USER_TO_VC_NEW_BADGE);
+  let [S, U] = (0, m.kn)(R), w = S === s.M.RING_USER_TO_VC_NEW_BADGE, {
     analyticsLocations: V
   } = (0, A.Ay)();
   return ((0, g.A)({
@@ -65,36 +65,36 @@ function E(n, t) {
     name: a.ImpressionNames.RING_TO_GUILD_VC_MENU_ITEM_SHOWN,
     properties: {
       voice_channel_id: t,
-      voice_guild_id: null == s ? true : s.guild_id,
+      voice_guild_id: null == u ? true : u.guild_id,
       location_stack: V
     }
   }, {
     disableTrack: E || !T
-  }, [n.id]), E) ? null : k ? (0, l.jsx)(d.Drp, {
+  }, [n.id]), E) ? null : k ? (0, i.jsx)(d.Drp, {
     id: "ring",
-    label: T ? (0, l.jsxs)("div", {
+    void_label: T ? (0, i.jsxs)("div", {
       className: I.Pf,
-      children: [N.intl.string(N.t["3Hv9qQ"]), w && (0, l.jsx)(G, {})]
+      children: [N.intl.string(N.t["3Hv9qQ"]), w && (0, i.jsx)(G, {})]
     }) : "add" === C ? N.intl.string(N.t.xlwRY6) : N.intl.string(N.t.bHa9kN),
-    subtext: T || "control" !== C ? (0, l.jsx)(P, {
-      channel: s
+    subtext: T || "control" !== C ? (0, i.jsx)(P, {
+      channel: u
     }) : null,
     action: () => {
       w && U(h.i.TAKE_ACTION), c.A.ring(t, [n.id], "user_context_menu"), T && null != t && (0, _.iN)(t)
     },
     className: I.j$
-  }) : D ? (0, l.jsx)(d.Drp, {
+  }) : D ? (0, i.jsx)(d.Drp, {
     id: "stop-ringing",
-    label: (0, l.jsxs)("div", {
+    void_label: (0, i.jsxs)("div", {
       className: I.Pf,
-      children: [N.intl.string(N.t.ygslb0), w && (0, l.jsx)(G, {})]
+      children: [N.intl.string(N.t.ygslb0), w && (0, i.jsx)(G, {})]
     }),
-    subtext: T ? (0, l.jsx)(d.Text, {
+    subtext: T ? (0, i.jsx)(d.Text, {
       variant: "text-xs/medium",
       className: r()(I.W$, I.DF),
       children: N.intl.format(N.t.dwfzZi, {
-        channelName: (0, l.jsx)(P, {
-          channel: s
+        channelName: (0, i.jsx)(P, {
+          channel: u
         })
       })
     }) : null,
@@ -107,19 +107,19 @@ function E(n, t) {
 let P = n => {
     let {
       channel: t
-    } = n, e = (0, m.Ay)(t);
-    return (0, l.jsxs)("div", {
+    } = n, e = (0, v.Ay)(t);
+    return (0, i.jsxs)("div", {
       className: I.W$,
-      children: [(0, l.jsx)(d.HKD, {
+      children: [(0, i.jsx)(d.HKD, {
         size: "xs"
-      }), (0, l.jsx)(d.Text, {
+      }), (0, i.jsx)(d.Text, {
         variant: "text-xs/medium",
         className: I.HA,
         children: e
       })]
     })
   },
-  G = () => (0, l.jsx)(d.LpS, {
-    color: s.A.colors.BACKGROUND_BRAND.css,
+  G = () => (0, i.jsx)(d.LpS, {
+    color: u.A.colors.BACKGROUND_BRAND.css,
     text: N.intl.string(N.t.y2b7CA)
   })

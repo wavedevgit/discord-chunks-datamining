@@ -47,13 +47,13 @@ function O(e) {
     return c().orderBy(e, [r], [n])
   })(s, g), [s, g]);
   return o ? (0, n.jsx)("ul", {
-    className: b.Ui,
-    "aria-label": j.intl.string(j.t.qe4kTa),
+    className: j.Ui,
+    "aria-label": b.intl.string(b.t.qe4kTa),
     children: h.map(e => (0, n.jsx)("li", {
-      className: b.Nr,
+      className: j.Nr,
       children: (0, n.jsx)("div", {
-        className: l()(b.Ux, {
-          [b.Oj]: e.id === r
+        className: l()(j.Ux, {
+          [j.Oj]: e.id === r
         }),
         ref: e.id === r ? O : true,
         onLoad: () => {
@@ -62,7 +62,7 @@ function O(e) {
             behavior: "smooth",
             block: "center"
           }), setTimeout(() => {
-            t.classList.remove(b.Oj)
+            t.classList.remove(j.Oj)
           }, 2e3))
         },
         children: (0, n.jsx)(p.i, {

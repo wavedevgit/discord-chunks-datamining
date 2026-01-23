@@ -64,11 +64,11 @@ function v(e) {
     }), u && (0, n.jsx)(c.LpS, {
       color: c.LU0.unsafe_rawColors.BRAND_260.css,
       className: m.Ad,
-      text: y.intl.string(y.t.y2b7CA)
+      text: x.intl.string(x.t.y2b7CA)
     }), null != d && (0, n.jsx)(c.DUT, {
       className: m.EP,
       onClick: d,
-      "aria-label": y.intl.string(y.t.WAI6xu),
+      "aria-label": x.intl.string(x.t.WAI6xu),
       children: (0, n.jsx)(c.aXh, {
         size: "xs",
         color: "currentColor"
@@ -89,24 +89,24 @@ function _(e) {
     switch (e) {
       case C.B.GUILD_PRODUCTS:
         return (0, n.jsx)(v, {
-          icon: (0, n.jsx)(j.A, {
+          icon: (0, n.jsx)(b.A, {
             width: 20,
             height: 20
           }),
-          title: y.intl.string(y.t.odvTUp),
-          body: y.intl.string(y.t["0JFpRW"]),
+          title: x.intl.string(x.t.odvTUp),
+          body: x.intl.string(x.t["0JFpRW"]),
           selected: i === C.B.GUILD_PRODUCTS,
           onClick: () => o(C.B.GUILD_PRODUCTS)
         }, e);
       case C.B.GUILD_ROLE_SUBSCRIPTIONS:
         return (0, n.jsx)(v, {
-          icon: (0, n.jsx)(b.A, {
+          icon: (0, n.jsx)(j.A, {
             width: 20,
             height: 20
           }),
-          title: y.intl.string(y.t["KzCF/6"]),
-          body: r ? y.intl.string(y.t["jqz+ly"]) : y.intl.format(y.t.ycs4oO, {
-            openRoleSubPage: () => (0, u.pX)(h.BVt.CHANNEL(t.id, x.VV.ROLE_SUBSCRIPTIONS))
+          title: x.intl.string(x.t["KzCF/6"]),
+          body: r ? x.intl.string(x.t["jqz+ly"]) : x.intl.format(x.t.ycs4oO, {
+            openRoleSubPage: () => (0, u.pX)(h.BVt.CHANNEL(t.id, y.VV.ROLE_SUBSCRIPTIONS))
           }),
           disabled: !r,
           selected: i === C.B.GUILD_ROLE_SUBSCRIPTIONS,
@@ -124,8 +124,8 @@ function _(e) {
             width: 20,
             height: 20
           }),
-          title: y.intl.string(y.t.odvTUp),
-          body: y.intl.string(y.t["827i8I"]),
+          title: x.intl.string(x.t.odvTUp),
+          body: x.intl.string(x.t["827i8I"]),
           selected: i === C.B.GUILD_PRODUCTS_PREVIEW,
           onClick: () => {
             o(C.B.GUILD_PRODUCTS_PREVIEW), s.w.set(g.Db, "true")
@@ -142,7 +142,7 @@ function _(e) {
     children: [(0, n.jsx)(c.Heading, {
       variant: "heading-sm/bold",
       className: m.wx,
-      children: y.intl.string(y.t.GF433I)
+      children: x.intl.string(x.t.GF433I)
     }), (0, n.jsx)(c.hKd, {
       size: 12
     }), (0, n.jsxs)("div", {

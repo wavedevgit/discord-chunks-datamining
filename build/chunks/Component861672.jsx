@@ -100,6 +100,7 @@ function I(e) {
       key: t.props.id,
       navigable: true,
       label: t.props.label,
+      void_label: t.props.void_label,
       children: t.props.children ? I(t.props.children) : true,
       onChildrenScroll: t.props.onChildrenScroll,
       props: t.props,
@@ -174,8 +175,11 @@ function T(e, t, n, i) {
           subMenuClassName: d
         } = o, f = null != e, p = [...n, o.key], _ = t.isFocused(p), h = null != e ? {
           "aria-haspopup": true
-        } : {}, g = (0, r.jsx)(m.q7, v(b({}, o.props), {
-          label: o.label,
+        } : {}, g = (0, r.jsx)(m.q7, v(b({}, o.props, null != o.label ? {
+          label: o.label
+        } : {
+          void_label: o.void_label
+        }), {
           hasSubmenu: null != e,
           isFocused: _,
           menuItemProps: b({}, t.getItemProps({
@@ -325,7 +329,7 @@ function C(e) {
         className: E.scroller,
         children: [0 === N.length && (0, r.jsx)(m.q7, {
           disabled: true,
-          label: () => (0, r.jsx)(w, {}),
+          void_label: () => (0, r.jsx)(w, {}),
           menuItemProps: L.getItemProps({
             path: ["empty"]
           }),

@@ -1,9 +1,10 @@
-/** Chunk was on 97357 **/
+/** Chunk was on 47841 **/
 /** chunk id: 149305, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  c: () => i
+  c: () => r
 });
-let i = (0, require("./600975.js").C)({
+let r = (0, require("./600975.js").C)({
   kind: "guild",
   id: "2023-08_deadchat_simple_prompt_guild",
   label: "Simple deadchat prompt",

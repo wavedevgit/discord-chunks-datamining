@@ -104,8 +104,8 @@ function w(e) {
   var n, l, v, b, w, D;
   let {
     transitionState: P,
-    onClose: R,
-    guildId: _,
+    onClose: _,
+    guildId: R,
     action: H,
     onSave: G,
     onDelete: L
@@ -145,10 +145,10 @@ function w(e) {
       actionType: $,
       emoji: null != en ? en : null,
       icon: null != et ? et : null
-    }, t, (i || a) && !e), R()
-  }, [G, R, X, $, U, en, et, er, es, ec, ei, ea]), eh = i.useCallback(() => {
-    null == L || L(), R()
-  }, [L, R]), eg = i.useCallback(e => {
+    }, t, (i || a) && !e), _()
+  }, [G, _, X, $, U, en, et, er, es, ec, ei, ea]), eh = i.useCallback(() => {
+    null == L || L(), _()
+  }, [L, _]), eg = i.useCallback(e => {
     Z(e), Q(I({
       channelId: null != U ? U : true,
       title: e,
@@ -172,8 +172,8 @@ function w(e) {
       actionType: e,
       emoji: null != en ? en : true
     }))
-  }, [ee, Q, U, X, en]), ej = i.useMemo(() => x.Ay.getSelectableChannels(_).filter(e => !q.has(e.channel.id) && (0, m.Rc)(e.channel)).map(e => {
-    let n = p.A.getGuild(_),
+  }, [ee, Q, U, X, en]), ej = i.useMemo(() => x.Ay.getSelectableChannels(R).filter(e => !q.has(e.channel.id) && (0, m.Rc)(e.channel)).map(e => {
+    let n = p.A.getGuild(R),
       l = (0, u.gU)(e.channel, n);
     return {
       id: e.channel.id,
@@ -181,7 +181,7 @@ function w(e) {
       label: e.channel.name,
       leading: null != l ? l : true
     }
-  }), [_, q]), ev = i.useCallback(function(e) {
+  }), [R, q]), ev = i.useCallback(function(e) {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     el(n), eo(e)
   }, []), eb = i.useCallback(() => null != er ? er : null, [er, en])(), ey = i.useCallback(e => {
@@ -220,18 +220,18 @@ function w(e) {
   });
   let eA = i.useMemo(() => [{
     text: S.intl.string(S.t["ETE/oC"]),
-    onClick: R,
+    onClick: _,
     variant: "secondary"
   }, {
     text: S.intl.string(S.t["R3BPH+"]),
     variant: "primary",
     onClick: em,
     disabled: eu || ed
-  }], [em, ed, eu, R]);
+  }], [em, ed, eu, _]);
   return (0, t.jsxs)(a.Modal, {
     title: S.intl.string(S.t.ncTLSo),
     transitionState: P,
-    onClose: R,
+    onClose: _,
     actions: eA,
     actionBarInput: null != H ? (0, t.jsx)(o.QWc, {
       text: S.intl.string(S.t.N86XcP),
@@ -349,12 +349,12 @@ function w(e) {
               onSelect: () => false,
               children: [(0, t.jsx)(o.Drp, {
                 id: "emoji",
-                label: i,
+                void_label: i,
                 icon: o.nm2
               }), (0, t.jsx)(o.Drp, {
                 className: T.K8,
                 id: "upload",
-                label: l,
+                void_label: l,
                 icon: o.JMY
               }), null != eb || null != en ? (0, t.jsx)(o.Drp, {
                 id: "clear",

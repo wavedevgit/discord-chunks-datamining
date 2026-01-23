@@ -94,7 +94,7 @@ function d(e, t) {
         } = n;
         return e.push((0, a.jsx)(i.Drp, {
           id: l,
-          label: (0, a.jsx)(c, {
+          void_label: (0, a.jsx)(c, {
             label: r
           }),
           action: () => t(l)
@@ -108,13 +108,13 @@ function d(e, t) {
           });
           "" === n.trim() ? e.push((0, a.jsx)(i.Drp, {
             id: "devtools-".concat(l),
-            label: (0, a.jsx)(c, {
+            void_label: (0, a.jsx)(c, {
               label: l
             }),
             children: (0, a.jsx)(i.rXV, {
               children: o.map(e => (0, a.jsx)(i.Drp, {
                 id: "devtools-".concat(e.id),
-                label: (0, a.jsx)(c, {
+                void_label: (0, a.jsx)(c, {
                   label: e.name
                 }),
                 action: () => t(e.id)
@@ -124,7 +124,7 @@ function d(e, t) {
             label: l,
             children: o.map(e => (0, a.jsx)(i.Drp, {
               id: "devtools-filtered-".concat(e.id),
-              label: (0, a.jsx)(c, {
+              void_label: (0, a.jsx)(c, {
                 label: e.name
               }),
               action: () => t(e.id)

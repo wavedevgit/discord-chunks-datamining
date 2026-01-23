@@ -51,8 +51,8 @@ let F = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     user: t,
     guildId: n,
     channel: d,
-    showMediaItems: s = false,
-    showChatItems: o = true,
+    showMediaItems: c = false,
+    showChatItems: s = true,
     showChannelCallItems: F = false,
     showModalItems: J = true,
     showStageChannelItems: Q = false,
@@ -78,13 +78,13 @@ let F = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     guildId: n,
     channelId: z,
     context: W
-  }), ed = (0, M.A)({
+  }), ed = (0, x.A)({
     user: t
-  }), es = (0, X.A)(t.id), ec = (0, B.A)(t.id), eu = (0, f.u)({
+  }), ec = (0, X.A)(t.id), eu = (0, B.A)(t.id), eo = (0, f.u)({
     userId: t.id,
     channelId: z,
     guildId: d.getGuildId()
-  }), eo = (0, O.A)({
+  }), es = (0, O.A)({
     guildId: n,
     userId: t.id,
     analyticsLocation: ee,
@@ -92,9 +92,9 @@ let F = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }), eA = (0, S.A)({
     user: t,
     guildId: n
-  }), eg = (0, u.A)(null, t), ep = (0, x.A)({
+  }), eg = (0, o.A)(null, t), ep = (0, M.A)({
     user: t
-  }), eb = (0, I.A)({
+  }), eb = (0, P.A)({
     user: t,
     guildId: n,
     channelId: z,
@@ -104,17 +104,17 @@ let F = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     guildId: n,
     channelId: z,
     location: "GuildChannelUserContextMenu"
-  }), eh = (0, G.A)(t, n, z), eO = (0, w.A)(t.id, n), ey = (0, D.A)(t, n), ej = (0, h.A)({
+  }), eh = (0, G.A)(t, n, z), eO = (0, w.A)(t.id, n), ey = (0, D.A)(t, n), eC = (0, h.A)({
     id: t.id,
     label: K.intl.string(K.t["/AXYnE"])
-  }), eC = (0, U.A)(t.id, z), eE = (0, p.A)(t.id), em = (0, g.A)(z), ex = (0, j.A)(t), eM = (0, C.A)(t, n, z), eN = (0, A.A)(z, t.id), eG = (0, i.bG)([E.A], () => null != q ? E.A.getChannel(q) : null), eP = (0, P.A)({
-    commandType: c.kc.USER,
+  }), eE = (0, U.A)(t.id, z), ej = (0, p.A)(t.id), em = (0, g.A)(z), eM = (0, C.A)(t), ex = (0, E.A)(t, n, z), eN = (0, A.A)(z, t.id), eG = (0, i.bG)([j.A], () => null != q ? j.A.getChannel(q) : null), eI = (0, I.A)({
+    commandType: u.kc.USER,
     commandTargetId: t.id,
     channel: null != eG ? eG : d,
     guildId: n,
     onHeightUpdate: Z,
     context: W
-  }), eI = (0, b.A)(t.id), ev = (0, i.bG)([m.A], () => m.A.getVoiceChannelId()), eU = (0, V.A)(t, ev), e_ = (0, y.A)(t.id, d), eS = t.isNonUserBot();
+  }), eP = (0, b.A)(t.id), ev = (0, i.bG)([m.A], () => m.A.getVoiceChannelId()), eU = (0, V.A)(t, ev), e_ = (0, y.A)(t.id, d), eS = t.isNonUserBot();
   return (0, l.jsxs)(r.W1t, {
     "data-menu-mixed": true,
     navId: "user-context",
@@ -124,24 +124,24 @@ let F = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onInteraction: $,
     children: [!eS && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(r.rXV, {
-        children: [ex, s && !Q && e_, Q && eM]
+        children: [eM, c && !Q && e_, Q && ex]
       }), (0, l.jsxs)(r.rXV, {
-        children: [J && et, o && en, el, er, eU, J && ea, J && ed, ei]
-      }), s && (0, l.jsx)(r.rXV, {
-        children: es
+        children: [J && et, s && en, el, er, eU, J && ea, J && ed, ei]
+      }), c && (0, l.jsx)(r.rXV, {
+        children: ec
       }), (0, l.jsx)(r.rXV, {
         children: J && eg
       }), (0, l.jsxs)(r.rXV, {
-        children: [s && ec, s && eu, s && eC, J && eo, eP, J && eA, ep, J && ef, J && eb, F && eI]
+        children: [c && eu, c && eo, c && eE, J && es, eI, J && eA, ep, J && ef, J && eb, F && eP]
       }), (0, l.jsx)(r.rXV, {
         children: eh
       }), (0, l.jsxs)(r.rXV, {
         children: [eO, ey]
       }), F && (0, l.jsxs)(r.rXV, {
-        children: [eN, em, eE]
+        children: [eN, em, ej]
       })]
     }), (0, l.jsx)(r.rXV, {
-      children: ej
+      children: eC
     })]
   })
 }, {

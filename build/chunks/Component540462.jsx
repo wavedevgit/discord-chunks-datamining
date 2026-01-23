@@ -476,7 +476,7 @@ class eq extends Chunk64700.PureComponent {
                 return o()(null != i, "GuildID null for guild voice channel"), (0, m.L3)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("39271")]).then(n.bind(n, 107632));
+                  } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("52458")]).then(n.bind(n, 107632));
                   return n => (0, r.jsx)(t, eW(eK({}, n), {
                     showMediaItems: true,
                     showChannelCallItems: true,

@@ -38,7 +38,7 @@ function _(e) {
       return (0, a.jsx)(s.Drp, {
         id: i.id,
         focusedClassName: j.in,
-        label: e => {
+        void_label: e => {
           let {
             isFocused: t
           } = e;

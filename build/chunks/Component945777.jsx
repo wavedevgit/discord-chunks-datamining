@@ -157,7 +157,7 @@ let I = Chunk64700.memo(function(e) {
       }), (0, h.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("25623")]).then(n.bind(n, 107632));
+        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
         return t => (0, r.jsx)(e, S(C({}, t), {
           user: a,
           guildId: j,

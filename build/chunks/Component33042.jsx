@@ -66,7 +66,7 @@ function f(e) {
     className: h.pn,
     keepItemStyles: true,
     hasSubmenu: i,
-    label: e => {
+    void_label: e => {
       let {
         isFocused: n
       } = e;
@@ -175,7 +175,7 @@ function v(e) {
         className: h.pn,
         keepItemStyles: true,
         hasSubmenu: true,
-        label: () => (0, a.jsxs)("div", {
+        void_label: () => (0, a.jsxs)("div", {
           className: h.Oq,
           children: [(0, a.jsx)(l.a_I, {
             size: "xxs",

@@ -103,7 +103,7 @@ function f(e) {
           });
         return (0, r.jsx)(a.Drp, {
           id: t,
-          label: p,
+          void_label: p,
           icon: t === n ? a.yr3 : true,
           action: () => s(t)
         }, t)

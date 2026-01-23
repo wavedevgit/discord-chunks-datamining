@@ -59,7 +59,7 @@ function y(e, t, y) {
     E = (0, i.bG)([b.A], () => b.A.getGuild(t), [t]),
     P = (0, i.bG)([O.default], () => O.default.getCurrentUser()),
     x = (0, u.A)(h, "Context Menu"),
-    v = (0, c.qi)(null == h ? true : h.id);
+    v = (0, s.qi)(null == h ? true : h.id);
   return (null == P ? true : P.id) === e.id ? [x] : null == E || null == h || null == P ? [] : [v ? (0, r.jsx)(a.Drp, {
     id: "remove",
     label: h.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
@@ -68,7 +68,7 @@ function y(e, t, y) {
       user: e.username
     }),
     color: "danger",
-    action: () => s.A.removeMember(h.id, e.id, "Context Menu")
+    action: () => c.A.removeMember(h.id, e.id, "Context Menu")
   }) : null, (0, d.L7)(e, E) ? (0, r.jsx)(a.Drp, {
     id: "kick",
     label: v ? f.intl.formatToPlainString(f.t["1Ie87p"], {

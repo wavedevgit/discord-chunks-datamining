@@ -1,4 +1,4 @@
-/** Chunk was on 97357 **/
+/** Chunk was on 19418 **/
 /** chunk id: 82770, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -14,9 +14,7 @@ var Chunk397927 = require("./397927.js"),
 function d(e) {
   return (0, i.jsx)(r.Drp, {
     id: "application-directory",
-    label: (0, i.jsx)(i.Fragment, {
-      children: c.intl.string(c.t.AKcFUj)
-    }),
+    label: c.intl.string(c.t.AKcFUj),
     icon: r.k9F,
     action: () => {
       (0, l.transitionToGlobalDiscovery)({

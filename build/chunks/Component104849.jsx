@@ -40,8 +40,8 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     moderationAlertId: D,
     analyticsLocation: T,
     analyticsLocations: x,
-    onCloseContextMenu: N,
-    showTransferOwnershipItem: w
+    onCloseContextMenu: w,
+    showTransferOwnershipItem: N
   } = e, {
     analyticsLocations: G
   } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? true : x[0]) ? t : G[0], B = (0, f.$9)(u, {
@@ -81,7 +81,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     "data-menu-mixed": true,
     navId: "user-context",
     onClose: () => {
-      (0, o.Z_)(), null == N || N()
+      (0, o.Z_)(), null == w || w()
     },
     "aria-label": C.intl.string(C.t.liqwPJ),
     onSelect: I,
@@ -96,7 +96,7 @@ let I = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
         }), (0, r.jsxs)(a.rXV, {
           children: [q, Q]
         })]
-      }), null != D ? Z : null, w && null != $ ? (0, r.jsx)(a.rXV, {
+      }), null != D ? Z : null, N && null != $ ? (0, r.jsx)(a.rXV, {
         children: $
       }) : null]
     }), (0, r.jsx)(a.rXV, {
